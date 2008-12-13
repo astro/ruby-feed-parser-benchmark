@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" 
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+    xmlns:admin="http://webns.net/mvcb/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/">
+
+  <channel>
+    <title>Dave Shea's mezzoblue</title>
+    <link>http://mezzoblue.com/</link>
+    <description></description>
+    <dc:language>en-us</dc:language>
+    <dc:creator>dave@shea.net</dc:creator>
+    <dc:rights>Copyright 2008</dc:rights>
+    <dc:date>2008-12-11T14:35:57-08:00</dc:date>
+    <admin:generatorAgent rdf:resource="http://www.movabletype.org/?v=3.35" />
+    <admin:errorReportsTo rdf:resource="mailto:dave@mezzoblue.com"/>
+    <sy:updatePeriod>hourly</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
+    <sy:updateBase>2000-01-01T12:00+00:00</sy:updateBase>
+
+    <item>
+      <title>Authenticating the Google Reader API</title>
+      <link>http://mezzoblue.com/archives/2008/12/11/authenticati/</link>
+      <description>
+       Reader API. It's been in an unofficial state for a whole three years now, with no sign of an actual release, so documentation is sparse at best. Unless my Google-fu has weakened, there doesn't appear to be much publicly-available code for using the API, and virtually nothing in PHP. So I figured I'd share what I came up with.]]>
+      </description>
+      <guid isPermaLink="false">1436@http://mezzoblue.com/</guid>
+      <content:encoded><![CDATA[
+       <p>Last week I finally got around to doing something I've long intended: I moved all my RSS feeds into <a href="http://http://www.google.com/reader/">Google Reader</a> and finally said goodbye to Bloglines. More interesting things have been coming from Google's direction lately, and though there's a public beta of a new version of Bloglines it's been feeling stagnant. The final tipping points for me were the ASP errors the mobile version's byte-trimming service has been issuing up for the past few weeks. So I switched, and after a very brief learning curve, I'm glad I did.</p>
+
+<p>Aside from a nice iPhone-optimized version, one of the new toys I picked up in the switch is an unofficial <a href="http://code.google.com/p/pyrfeed/wiki/GoogleReaderAPI">Google Reader API</a>. It's been in an unofficial state for a whole <a href="http://www.niallkennedy.com/blog/2005/12/google-reader-api.html">three years now</a>, with no sign of an actual release, so documentation is sparse at best. This <a href="http://code.google.com/p/pyrfeed/wiki/GoogleReaderAPI">wiki</a> seems to be the definitive source, and for non-programmers like myself, it's mind-bendingly vague.</p>
+
+<p>One of the speculative reasons for the lack of an official release is the authentication currently necessary to log in and start using the API, and that proved to be exactly what I've spent the past few days banging my head against. Unless my Google-fu has weakened, there doesn't appear to be much publicly-available code for using the API, and virtually nothing in PHP. So I figured I'd share what I came up with.</p>
+
+<p>This is a script for logging in with your own account and pulling out your latest unread items in the form of an Atom feed. Drop the script on your server, change the login id and password, and it should work as intended. I haven't explored much yet, and probably will never do anything beyond read-only, so you're on your own past this point. But hopefully it'll save someone a few hours anyway.</p>
+
+
+<pre><code class="php">// ----------------------------------------
+// Google Reader Authentication in PHP
+// a basic script to get you in the door of 
+// Google's unofficial Reader API
+// by Dave Shea, mezzoblue.com
+// ----------------------------------------
+
+// cobbled together from notes on:
+// http://code.google.com/p/pyrfeed/wiki/GoogleReaderAPI
+
+// these are the urls we'll need to access various services
+$urlAuth = "https://www.google.com/accounts/ClientLogin";
+$urlAtom = "http://www.google.com/reader/atom";
+
+// our array of login data
+$login = array(
+  "service" =&gt; "reader",
+  "continue" =&gt; "http://www.google.com/",
+
+  // Google id-only of the account holder
+  // ie. for example@gmail.com, just use example
+  "Email" =&gt; "google-id", 
+
+  // the account's password in plaintext
+  "Passwd" =&gt; "password",
+
+  // an identifying name for your script, can be anything
+  "source" =&gt; "my reader script",
+);
+
+
+// first step is to authenticae
+// let's build a POST request using the login data array
+$postRequest = "";
+foreach($login as $field =&gt; $value) {
+  $postRequest .= $field . "=" . $value . "&amp;";
+}
+
+// start buffering what we get back
+ob_start();
+$ch = curl_init($urlAuth);
+curl_setopt ($ch, CURLOPT_POST, true);
+curl_setopt ($ch, CURLOPT_POSTFIELDS, $postRequest);
+curl_setopt ($ch, CURLOPT_FOLLOWLOCATION, true);
+curl_exec ($ch);
+curl_close ($ch);
+// throw the buffer into a variable
+$loginResult = ob_get_contents(); 
+ob_end_clean();
+
+// we just received three lines of ugliness to contend with.
+// each line is a huge string preceded with an ID
+// the IDs are: SID, LSID, and Auth; we only want SID
+// let's use some string parsing to weed it out
+if ($i = strstr($loginResult, "LSID")) {
+  $SID = substr($loginResult, 0, 
+    (strlen($loginResult) - strlen($i)));
+  $SID = rtrim(substr($SID, 4, (strlen($SID) - 4)));
+}
+// so we've found the SID
+// now we can build the cookie that gets us in the door
+$cookie = "SID=" . $SID . 
+  "; domain=.google.com; path=/; expires=1600000000";
+
+
+// this builds the action we'd like the API to perform
+// in this case, it's getting our list of unread items
+$action = $urlAtom . 
+  "/user/-/state/com.google/reading-list";
+  // note that the hyphen above is a shortcut
+  // for "the currently logged-in user"
+
+
+// start buffering what we get back
+ob_start(); 
+$ch = curl_init();
+curl_setopt ($ch, CURLOPT_URL, $action);
+curl_setopt ($ch, CURLOPT_HTTPGET, true);
+curl_setopt ($ch, CURLOPT_COOKIE, $cookie);
+curl_exec ($ch);
+curl_close ($ch);
+// throw the buffer into a variable
+$xml = ob_get_contents();
+ob_end_clean();
+
+// and finally, let's take a look.
+echo $xml;</code></pre>
+       
+      ]]></content:encoded>
+      <dc:subject></dc:subject>
+      <dc:date>2008-12-11T14:35:57-08:00</dc:date>
+    </item>
+    <item>
+      <title>Now Boarding</title>
+      <link>http://mezzoblue.com/archives/2008/11/24/now_boarding/</link>
+      <description>
+       Before committing this past Friday evening to a flight down the west coast, I spent a bit of time preparing to try out something that I&apos;d been curious about for a while. Could I get through US immigration and airport security both without a paper boarding pass?
+      </description>
+      <guid isPermaLink="false">1435@http://mezzoblue.com/</guid>
+      <content:encoded><![CDATA[
+       <p>Before committing this past Friday evening to a flight down the west coast, I spent a bit of time preparing to try out something that I'd been curious about for a while. Could I get through US immigration and airport security both without a paper boarding pass?</p>
+
+<div class="image-holder-left medium">
+<img width="420" height="210" alt="Alaska Boarding Pass on an iPhone" src="http://mezzoblue.com/i/articles/2008/nov/boarding.jpg"/>
+</div>
+
+<p>Of course these days it's becoming more common to check in for a flight from a browser window and print out your own boarding pass before leaving for the airport, but I've been wondering why the printing part is necessary. I've heard reports of varying success from others who have attempted going purely electronically, so I made sure to have a paper backup in my bag for this one. Just in case.</p>
+
+
+
+<h3>At Home</h3>
+
+<p>There's an iPhone application called <a href="http://www.avatron.com/products/">AirSharing</a> that acts as a basic file server as well as a document viewer for a lot of common file formats, all on your phone. I managed to grab a free copy during a promo months back and though I hadn't yet put it to use, this seemed like the best way to get a nicely-formatted boarding pass onto my phone's large screen.</p>
+
+<p>At the end of the web check-in you're asked to print your boarding pass, which I did, but I also "printed" a second time to PDF. For those not familiar, OS X has a built-in PDF generator that acts as a virtual printer; anything that you can print to a piece paper, you can also save to an identically-formatted PDF straight from the operating system's standard print dialogue.</p>
+
+<p>Connecting to my phone was a simple matter of hitting a button in AirSharing to find out my phone's IP address, opening it as a server from my Mac (<kbd>Cmd + K</kbd> in the Finder), and there is no step three. Once I had my phone's shared folders showing up in Finder just like any other computer on the network, I dragged my boarding pass PDF into one of them and verified it would render properly on the phone's screen. The text and scanner codes were legible, if a little small, but it otherwise looked exactly like my print-out.</p>
+
+<p><ins>Update</ins>: why didn't I just mail the PDF to myself and open it in Mail? That question was posed in the comments, and the answer is because I just didn't think of it, not being a regular Mail user myself. So that's another way of having a local copy of the PDF on your iPhone.</p>
+
+<p>Giving myself an extra hour just in case, off to the airport I went.</p>
+
+
+
+<h3>At the Airport</h3>
+
+<p>Upon reaching the web check-in counter I presented my ID and flashed my screen-based pass at the gate agent, asking whether this was going to work or not. She didn't have a clue, no one had tried it before (that she knew of). Since I'd already checked in online it didn't need to be verified at this stage, but she helpfully offered to try running the scanner over the bar code and see if it registered. It didn't. I suspect it wasn't the screen that was the problem here, it was the software. I couldn't zoom the code up to full life size, so the resolution was definitely less than optimal. Possible feature request for the next version of AirSharing: a higher zoom level.</p>
+
+<p>Anyway, one checkpoint down, a bunch to go. Most major Canadian airports &#8212; Vancouver included &#8212; have on-site US immigration and customs booths you're required to clear since many flights between the two countries are treated as domestic flights on the US side. So this means more places I need to show my boarding pass.</p>
+
+<p>Before customs a fairly redundant document parser stopped us all to check documentation, just to make sure we've got everything we need to make it through the next few steps. I showed my phone, and hit my first speed bump. A confused stare and a moment's hesitant pause, and I was asked if I had a paper pass? This <em>is</em> the paper pass, I countered with. Exactly the same as what would have printed out, just on a screen. Well, he wasn't at all sure about that, and as soon as I helpfully mentioned I had my paper pass in my bag if it was absolutely necessary, he decided it was, indeed, absolutely necessary. After fishing out my printed pass, I showed him paper and screen side by side to prove the point, and continued on. </p>
+
+<p>The next step was US immigration control. I presented my passport and customs form, and was asked to produce my boarding pass. Handing over the phone, the only comment I got was "boy, I'm getting old" as he squinted to make out the tiny font. A bit of banter about the difference between Canadian and US thanksgiving later, and I'm on to customs, which is a freebie for the purposes of this experiment since they only needed my customs form.</p>
+
+<p>Security was up next. The first checkpoint happens as I enter the line, where a women with a highlighter walks through the line to verify everyone standing there actually has a flight to catch. When she got to me I once again handed over the phone. A bit of a pause, an exclamation of interested surprise that this was possible, and a bit of confusion over the next step ("You may not want to circle this one with your marker" I jokingly cautioned), and she let me through.</p>
+
+<p>As I reached the front of the security line and started the disembarking process of my personal effects for screening, the guy on the other side of the conveyor belt started asking for my boarding pass, halted, and grabbed a folded up piece of paper I had set down. That was the paper backup I had pulled out earlier, so I started to explain that I had... oh forget it, I thought, this one was a miss. But then he noticed that it hadn't been circled back in line, so I pulled out my phone and continued the explanation. He seemed to get it, but thought maybe it was more common on the domestic side since he hadn't seen anyone do this on his watch. Either way, I was let through, and that got me to the gate.</p>
+
+<p>A few hours of delays and inedible airport food later, and it was finally time to board. I decided to be at the front of the line, in the "may need extra time boarding" group since I was worried that the too-small-to-scan barcode would end up holding up the line. Instead, as I handed over my phone to the ticketing agent, I got an amused "this is so cool!", a verification of my seat number, and a wave on through.</p>
+
+<p>So I made my flight, and finished this post in a Starbucks in LA.</p>
+
+
+
+<h3>Conclusions</h3>
+
+<p>Out of the six checkpoints I encountered on my way through the airport, the only one who forced me to fish out my paper pass was a relatively inessential precursory check. And now that I have some actual experience to back me up, I expect that's one I can talk my way through by showing a bit of confidence in my electronic pass next time.</p>
+
+<p>Still, though I have no doubt we'll all regularly use electronic passes in the fairly near future, this feels like the early days. I decided to play my experiment as a light-hearted attempt at something new, rather than insisting this was a legitimate method. If it doesn't work, no big deal, I have paper in my bag I can also show. This attitude likely helped, and will help in the future until this is more common and those working the various checkpoints have encountered screen-based passes a few times, checked with their supervisor, and made sure they're not doing something wrong by letting the holders through.</p>
+
+<p>Before each checkpoint I made sure I had AirSharing loaded and the pass up on screen and shown in the right orientation (landscape worked better than portrait since the type was larger). Wasting time by messing around with a screen after being asked to produce documentation feels like a great way to stack the odds against acceptance of the electronic pass, so I jumped out of line a few times to ensure it was ready to go.</p>
+
+<p>Though I didn't really think of it at the time, it may be that I dove into the deep end by testing this on an international flight. Domestic flights have fewer checkpoints, and presumably there's a little more leniency for new methods of ID and boarding. At the very least you're only dealing with a single country's regulations. I probably would have tried domestically a few times before attempting an international flight, were I in the habit of regularly flying within my own country. Which I'm sadly not.</p>
+
+<p>I also think a more capable zoom function in AirSharing (or some other PDF viewer) would make things a bit easier. Not being able to read what's on screen likely doesn't help sell the electronic boarding pass. I flew Alaska, whose web-printed passes have tiny type to begin with.</p>
+
+<p>Will I attempt it again? Sure, but I'll keep covering my bases for now by having a paper boarding pass on hand and only trying this in airports where I speak the predominant language.</p>
+       
+      ]]></content:encoded>
+      <dc:subject></dc:subject>
+      <dc:date>2008-11-24T12:16:26-08:00</dc:date>
+    </item>
+    <item>
+      <title>New in Chalkwork</title>
+      <link>http://mezzoblue.com/archives/2008/11/03/new_in_chalk/</link>
+      <description>
+       The pixel factory sitting on my desktop has been busy this fall. I have not one but three new Chalkwork sets to announce today: Flags, Editing Controls, and the free Chalkwork HTML.
+      </description>
+      <guid isPermaLink="false">1434@http://mezzoblue.com/</guid>
+      <content:encoded><![CDATA[
+       <p>The pixel factory sitting on my desktop has been busy this fall. I have not one but three new Chalkwork sets to announce today (discounting the <a href="http://twitter.com/mezzoblue/statuses/986069661">weekend heads-up</a> on Twitter, of course).</p>
+
+<h3>Chalkwork Flags</h3>
+
+<div class="block-img">
+<a href="http://www.mezzoblue.com/icons/chalkwork/flags/"><img src="http://www.mezzoblue.com/i/articles/2008/nov/chalkwork-fl.gif" width="347" height="72" alt="Chalkwork Flags Preview" /></a>
+</div>
+
+<p>First up, a set that was quietly launched back in September but not really announced at the time, <a href="http://www.mezzoblue.com/icons/chalkwork/flags/">Chalkwork Flags</a>. Just prior to this summer's Olympics I was working on a project that required a small set of flag icons, so I spent the rest of the games cranking out my own set of every sovereign nation on the planet.</p>
+
+<p>I'll admit, these flag icons were the most fun I've had creating icons so far. Having existing source material with many common elements and a pre-defined style and palette made the design decision-making a lot easier, so they came together awfully quickly, which was a nice change of pace.</p>
+
+
+<h3>Chalkwork Editing Controls</h3>
+
+<div class="block-img">
+<a href="http://www.mezzoblue.com/icons/chalkwork/editing-controls/"><img src="http://www.mezzoblue.com/i/articles/2008/nov/chalkwork-ec.gif" width="347" height="72" alt="Chalkwork Editing Controls Preview" /></a>
+</div>
+
+<p>Next, just finished last week is <a href="http://www.mezzoblue.com/icons/chalkwork/editing-controls/">Chalkwork Editing Controls</a>, a set of WYSIWYG-like icons for text and graphical editing. I trolled the toolbars of popular design and word processing software to put together a list of the most commonly-used controls.</p>
+
+<p>The first pass seemed awfully grey; a lot of the icons didn't have an inherent colour, so I stuck with a common palette to make sure they'd sit well next to each other within a toolbar. But the <a href="http://www.mezzoblue.com/icons/chalkwork/editing-controls/">result</a> ended up a little too monochromatic for my liking so I went insane and produced 11 different colour variations for most of them, making this the largest set I've produced by a long shot. I don't recommend doing this.</p>
+
+<p>(A special thanks to <a href="http://antonpeck.com/">Anton</a>, <a href="http://juliemelton.com/">Juliette</a>, <a href="http://www.johnwilliams713.com/">John</a> and Sam for responding to my Twitter request for a bit of critiquing, your input definitely made for a better set.)</p>
+
+
+<h3>Chalkwork HTML</h3>
+
+<div class="block-img">
+<a href="http://www.mezzoblue.com/icons/chalkwork/html/"><img src="http://www.mezzoblue.com/i/icons/cwh/row1.gif" width="596" height="32" alt="Chalkwork HTML Preview" />
+<img src="http://www.mezzoblue.com/i/icons/cwh/row3.gif" width="596" height="32" alt="Chalkwork HTML Preview" />
+<img src="http://www.mezzoblue.com/i/icons/cwh/row6.gif" width="596" height="32" alt="Chalkwork HTML Preview" /></a>
+</div>
+
+<p>And finally, to show my appreciation for your putting up with this purely commercial post, I have an entirely free set that you can download right now. <a href="http://www.mezzoblue.com/icons/chalkwork/html/">Chalkwork HTML</a> might even be useful, too. It contains 31 icons that cover common markup elements and actions. Plug 'em into your wireframes, use them on your web sites, or anything else you can think of. They're yours for the taking, and available in all sizes and file formats that the rest of the Chalkwork family comes in.</p>
+
+<p>There are colour variations of this one too, but you only get those if you buy Editing Controls or the Collection. Freemium, baby.</p>
+
+
+<h3>Chalkwork Collection</h3>
+
+<p>As always, you can get every single Chalkwork icon I've produced thus far (almost 1,800 in total at 3 different sizes) in the <a href="http://www.mezzoblue.com/icons/chalkwork/collection/">Collection</a>, which at a revised price of $249 is still a lot cheaper than buying them individually.</p>
+       
+      ]]></content:encoded>
+      <dc:subject></dc:subject>
+      <dc:date>2008-11-03T09:36:39-08:00</dc:date>
+    </item>
+    <item>
+      <title>WDN09</title>
+      <link>http://mezzoblue.com/archives/2008/10/30/wdn09/</link>
+      <description>
+       Web Directions North returns for another year, but things are a little different.
+      </description>
+      <guid isPermaLink="false">1433@http://mezzoblue.com/</guid>
+      <content:encoded><![CDATA[
+       <p>It's that time again, but things are a little different. <a href="http://north.webdirections.org/">Web Directions North</a> returns for another year of conferencing and skiing in early February, but it's now taking place in Denver, Colorado. And I'm not involved. Well I am, kind of, but...</p>
+
+<p>One day I intend to sit down and write up the trials and tribulations, the things I've learned, and some of the fantastic experiences I've had over the past few years as one of the primary organizers of what, by almost all accounts, was a fantastic set of web conferences. Suffice it to say that building WDN with <a href="http://westciv.typepad.com/dog_or_higher/">John</a>, <a href="http://twitter.com/maxine">Maxine</a>, and <a href="http://boxofchocolates.ca/">Derek</a> was one of the highlights of my professional career thus far.</p>
+
+<p>But it was also a lot of work. So much work. After the first year in 2007 I had suspicions, then the frenzy of activity leading up to the second year in early 2008 really confirmed it: running an event of this size is a full time job, and it's not the sort of work I want to be doing long term. Though it turns out I'm actually quite good at event planning (who knew?), that alone didn't feel like enough reason to ignore the stress of making ticket sales or the difficulty in turning away long term clients for a few months out of every year. So, I had an honest talk with the others, wished them luck, and decided to bow out for future years.</p>
+
+<p>And that's it really. Sorry to be boring, there wasn't a big dramatic falling out and we still get along great. In fact John asked me to come speak in Denver, and I'm happy to be doing so. At the very least it should prove an interesting reversal to sit back and enjoy the conference this year, without the prior stress of putting it all together.</p>
+
+<p>So if you want to come join us, and I think you should because John has pulled out all the stops to build a <a href="http://north.webdirections.org/program">really compelling program</a> with a lot of exciting speakers, go sign up now and take an additional $50 off the ticket price you're at it with the code WDN09DSh.</p>
+       
+      ]]></content:encoded>
+      <dc:subject>Events</dc:subject>
+      <dc:date>2008-10-30T09:22:47-08:00</dc:date>
+    </item>
+    <item>
+      <title>Shutter</title>
+      <link>http://mezzoblue.com/archives/2008/10/15/shutter/</link>
+      <description>
+       Here&apos;s an idea. Take a great product with one glaringly flawed feature, put together an application that exploits the awfulness of that feature in a few brilliantly simple ways, and then sell it for a few bucks. Something like a...
+      </description>
+      <guid isPermaLink="false">1432@http://mezzoblue.com/</guid>
+      <content:encoded><![CDATA[
+       <p>Here's an idea. Take a great product with one glaringly flawed feature, put together an application that exploits the awfulness of that feature in a few brilliantly simple ways, and then sell it for a few bucks.</p>
+
+<p>Something like a month ago, a $5 app called <a href="http://www.nevercenter.com/camerabag/">CameraBag</a> hit the iPhone app store. I read the description, took the risk and bought it. I turns out it's no more complicated than a few pre-built filters that will take a typically crappy photo with the iPhone's camera (or let you choose one from your library) and make it look as if it were taken from one of a variety of classic low-quality cameras. You've got your Lomo, Holga, 1970's faded and yellowing print, high-contrast B&W, infrared, and a few more (though you'll find the first two as "Lolo" and "Helga" in the menu, for trademarks reasons naturally).</p>
+
+<p>It's basic, it's slow (the filters take a while to render), the already-low iPhone image quality doesn't hold up at large sizes after the filter, and it's nothing I couldn't do on my own in Photoshop. But I love it for being so simple, and doing such a good job at making lemonade out of the iPhone's lemon. It turns one of the phone's most obvious flaws into a desirable feature. Almost.</p>
+
+<p>I put CameraBag to the test on my way out for lunch in Vancouver's Chinatown last week. Here are some selected photos from the <a href="http://www.flickr.com/photos/mezzoblue/sets/72157608059627216/">full set on Flickr</a>.</p>
+
+
+<div class="image-holder-grid">
+	<a href="http://www.flickr.com/photos/mezzoblue/2944893757/">
+		<img src="/i/articles/2008/oct/camerabag6.jpg" width="196" height="147" alt="Bamboo with Helga effect" />
+	</a>
+	<a href="http://www.flickr.com/photos/mezzoblue/2944893801/">
+		<img src="/i/articles/2008/oct/camerabag2.jpg" width="196" height="147" alt="Pagoda in the trees with 1974 effect" />
+	</a>
+	<a href="http://www.flickr.com/photos/mezzoblue/2944893629/">
+		<img src="/i/articles/2008/oct/camerabag4.jpg" width="196" height="147" alt="Grandpa and grandson eating with Helga effect" />
+	</a>
+
+	<a href="http://www.flickr.com/photos/mezzoblue/2945757592/">
+		<img src="/i/articles/2008/oct/camerabag5.jpg" width="196" height="147" alt="Overhead wires with 1974 effect" />
+	</a>
+	<a href="http://www.flickr.com/photos/mezzoblue/2945757158/">
+		<img src="/i/articles/2008/oct/camerabag3.jpg" width="196" height="147" alt="Store display with 1962 effect" />
+	</a>
+	<a href="http://www.flickr.com/photos/mezzoblue/2945757374/">
+		<img src="/i/articles/2008/oct/camerabag1.jpg" width="196" height="147" alt="Chinese signage with cinema effect" />
+	</a>
+</div>
+       
+      ]]></content:encoded>
+      <dc:subject></dc:subject>
+      <dc:date>2008-10-15T14:51:26-08:00</dc:date>
+    </item>
+
+
+  </channel>
+</rss>

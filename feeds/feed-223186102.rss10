@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:admin="http://webns.net/mvcb/"
+>
+
+<channel rdf:about="http://use.perl.org/">
+<title>use Perl</title>
+<link>http://use.perl.org/</link>
+<description>All the Perl that's Practical to Extract and Report</description>
+<dc:language>en-us</dc:language>
+<dc:rights>use Perl; is Copyright 1998-2006, Chris Nandor. Stories, comments, journals, and other submissions posted on use Perl; are Copyright their respective owners.</dc:rights>
+<dc:date>2008-12-11T20:30:14+00:00</dc:date>
+<dc:publisher>pudge</dc:publisher>
+<dc:creator>pudge@perl.org</dc:creator>
+<dc:subject>Technology</dc:subject>
+<syn:updatePeriod>hourly</syn:updatePeriod>
+<syn:updateFrequency>1</syn:updateFrequency>
+<syn:updateBase>1970-01-01T00:00+00:00</syn:updateBase>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://use.perl.org/article.pl?sid=08/12/11/2010210&amp;from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/article.pl?sid=08/12/07/2125239&amp;from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/article.pl?sid=08/12/05/2032246&amp;from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/article.pl?sid=08/12/05/2032240&amp;from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/article.pl?sid=08/12/03/1242258&amp;from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/article.pl?sid=08/12/03/1242224&amp;from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/article.pl?sid=08/11/18/2317238&amp;from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/article.pl?sid=08/11/13/0050206&amp;from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/article.pl?sid=08/11/11/2310231&amp;from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/article.pl?sid=08/11/11/1842248&amp;from=rss" />
+ </rdf:Seq>
+</items>
+<image rdf:resource="http://use.perl.org/images/topics/useperl.gif" />
+<textinput rdf:resource="http://use.perl.org/search.pl" />
+</channel>
+
+<image rdf:about="http://use.perl.org/images/topics/useperl.gif">
+<title>use Perl</title>
+<url>http://use.perl.org/images/topics/useperl.gif</url>
+<link>http://use.perl.org/</link>
+</image>
+
+<item rdf:about="http://use.perl.org/article.pl?sid=08/12/11/2010210&amp;from=rss">
+<title>Bulgarian Perl Workshop</title>
+<link>http://use.perl.org/article.pl?sid=08/12/11/2010210&amp;from=rss</link>
+<description>I am (very) proud to announce the first ever Perl Workshop in Bulgaria.It is on 31st of January 2009 (Saturday) in Sofia.Official language is Bulgarian, but as I was informed, Bulgarians are good in English, thus English talks are welcome.Alex, Jonathan and myself are already on the way to make up the itinerary.The workshop is organized by OpenFest conferences and DeepText.&lt;p&gt;&lt;a href="http://use.perl.org/article.pl?sid=08/12/11/2010210&amp;amp;from=rss"&gt;Read more of this story&lt;/a&gt; at use Perl.&lt;/p&gt;</description>
+<dc:creator>andy.sh (posted by brian_d_foy)</dc:creator>
+<dc:date>2008-12-11T20:30:00+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+<slash:section>mainpage</slash:section>
+<slash:comments>1</slash:comments>
+<slash:hit_parade>1,1,1,0,0,0,0</slash:hit_parade>
+</item>
+
+<item rdf:about="http://use.perl.org/article.pl?sid=08/12/07/2125239&amp;from=rss">
+<title>5.8.9 RC2 is out</title>
+<link>http://use.perl.org/article.pl?sid=08/12/07/2125239&amp;from=rss</link>
+<description>nicholas writes "Perl 5.8.9 Release Candidate 2 has been uploaded to CPAN. This is a maintenance release for perl 5.8.x, providing bug fixes and integrating module updates from CPAN. Download the source from ftp://ftp.cpan.org/pub/CPAN/authors/id/N/NW/NWCLARK/perl-5.8.9-RC2.tar.bz2 (or as .tar.gz ); read what's changed in perldelta.pod. "&lt;p&gt;&lt;a href="http://use.perl.org/article.pl?sid=08/12/07/2125239&amp;amp;from=rss"&gt;Read more of this story&lt;/a&gt; at use Perl.&lt;/p&gt;</description>
+<dc:creator>rafael</dc:creator>
+<dc:date>2008-12-07T21:44:00+00:00</dc:date>
+<dc:subject>releases</dc:subject>
+<slash:section>mainpage</slash:section>
+<slash:hit_parade>0,0,0,0,0,0,0</slash:hit_parade>
+</item>
+
+<item rdf:about="http://use.perl.org/article.pl?sid=08/12/05/2032246&amp;from=rss">
+<title>The Perl Advent Calendar 2008 is up!</title>
+<link>http://use.perl.org/article.pl?sid=08/12/05/2032246&amp;from=rss</link>
+<description>Did anybody yet mention that the Perl Advent Calendar 2008 is live? Take a look: one article a introducing a module that is not as well known as it deserves, per day, until Christmas. Thanks to the hard work of belg4mit and several volunteers, with support from the Boston.pm group.&lt;p&gt;&lt;a href="http://use.perl.org/article.pl?sid=08/12/05/2032246&amp;amp;from=rss"&gt;Read more of this story&lt;/a&gt; at use Perl.&lt;/p&gt;</description>
+<dc:creator>bart (posted by brian_d_foy)</dc:creator>
+<dc:date>2008-12-05T20:52:00+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+<slash:section>mainpage</slash:section>
+<slash:hit_parade>0,0,0,0,0,0,0</slash:hit_parade>
+</item>
+
+<item rdf:about="http://use.perl.org/article.pl?sid=08/12/05/2032240&amp;from=rss">
+<title>2009 QA Hackathon - The Dates</title>
+<link>http://use.perl.org/article.pl?sid=08/12/05/2032240&amp;from=rss</link>
+<description>Following the initial announcement at YAPC::Europe, Birmingham Perl Mongers are pleased to announce that the 2009 QA Hackathon will be held over 3 days from Saturday March 28th to Monday March 30th 2009.&lt;p&gt;&lt;a href="http://use.perl.org/article.pl?sid=08/12/05/2032240&amp;amp;from=rss"&gt;Read more of this story&lt;/a&gt; at use Perl.&lt;/p&gt;</description>
+<dc:creator>barbie (posted by brian_d_foy)</dc:creator>
+<dc:date>2008-12-05T20:52:00+00:00</dc:date>
+<dc:subject>events</dc:subject>
+<slash:section>mainpage</slash:section>
+<slash:hit_parade>0,0,0,0,0,0,0</slash:hit_parade>
+</item>
+
+<item rdf:about="http://use.perl.org/article.pl?sid=08/12/03/1242258&amp;from=rss">
+<title>The Catalyst Advent Calendar 2008</title>
+<link>http://use.perl.org/article.pl?sid=08/12/03/1242258&amp;from=rss</link>
+<description>Kieren writes "The Catalyst Advent Calendar is running again this year (2008). The first entry is a summary of the results from the short Catalyst usage survey that we ran a few weeks ago, and there should be a new entry up at mid-day UTC every day between now and the 24th of December."&lt;p&gt;&lt;a href="http://use.perl.org/article.pl?sid=08/12/03/1242258&amp;amp;from=rss"&gt;Read more of this story&lt;/a&gt; at use Perl.&lt;/p&gt;</description>
+<dc:creator>davorg</dc:creator>
+<dc:date>2008-12-03T12:30:00+00:00</dc:date>
+<dc:subject>news</dc:subject>
+<slash:section>news</slash:section>
+<slash:hit_parade>0,0,0,0,0,0,0</slash:hit_parade>
+</item>
+
+<item rdf:about="http://use.perl.org/article.pl?sid=08/12/03/1242224&amp;from=rss">
+<title>Ukrainian Perl Workshop 2009</title>
+<link>http://use.perl.org/article.pl?sid=08/12/03/1242224&amp;from=rss</link>
+<description>Second Ukrainian Perl Workshop &amp;#8220;Perl Mova &amp;#8212; 2&amp;#8221; takes place on 7th of March, 2009 in Kiev.The registration and talk submission are open. Please consider attending the event!Official languages are Ukrainian and Russian, talks are accepted in English as well. An experience from last year tells that English talks were well accepted by local people, thus we are very interested in more speakers from other countries. People from the EU, USA, Canada, Switzerland, Liechtenstein, Japan, Andorra, Vatican, Iceland, Monaco, Norway and San Marino may visit Ukraine without getting a visa.We&amp;#8217;ve already booked the venue: it is the press centre of &amp;#8220;Ukrainian News&amp;#8221; agency, where we hosted our previous workshop.Look how it was last year.&lt;p&gt;&lt;a href="http://use.perl.org/article.pl?sid=08/12/03/1242224&amp;amp;from=rss"&gt;Read more of this story&lt;/a&gt; at use Perl.&lt;/p&gt;</description>
+<dc:creator>andy.sh (posted by davorg)</dc:creator>
+<dc:date>2008-12-03T12:30:00+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+<slash:section>mainpage</slash:section>
+<slash:hit_parade>0,0,0,0,0,0,0</slash:hit_parade>
+</item>
+
+<item rdf:about="http://use.perl.org/article.pl?sid=08/11/18/2317238&amp;from=rss">
+<title>This Week on perl5-porters - 3-9 November 2008</title>
+<link>http://use.perl.org/article.pl?sid=08/11/18/2317238&amp;from=rss</link>
+<description> This Week on perl5-porters - 3-9 November 2008 &amp;quot;PS: Hi, guys. Been a while. How you been?&amp;quot; -- Chip Salzenberg, back on the chain gang.&lt;p&gt;&lt;a href="http://use.perl.org/article.pl?sid=08/11/18/2317238&amp;amp;from=rss"&gt;Read more of this story&lt;/a&gt; at use Perl.&lt;/p&gt;</description>
+<dc:creator>grinder</dc:creator>
+<dc:date>2008-11-18T23:16:00+00:00</dc:date>
+<dc:subject>summaries</dc:subject>
+<slash:section>mainpage</slash:section>
+<slash:comments>1</slash:comments>
+<slash:hit_parade>1,1,1,1,0,0,0</slash:hit_parade>
+</item>
+
+<item rdf:about="http://use.perl.org/article.pl?sid=08/11/13/0050206&amp;from=rss">
+<title>TPF announces grant to David Mitchell for the release of Perl 5.10.1</title>
+<link>http://use.perl.org/article.pl?sid=08/11/13/0050206&amp;from=rss</link>
+<description>It is with considerable pleasure that TPF announces today a Perl development grant to David Mitchell for the release of Perl 5.10.1. David's work through this grant will be: The vetting and application of 400+ outstanding patches to the Perl 5.10 codebase;A rework of the "smart match" feature semantics to address known issues;Packaging of a Perl 5.10.1 release distribution.The funding amount of this grant is USD $5000, which is meant to provide support for David at a half-time level over the 2-3 calendar months it is anticipated this work will require. David has been a Perl core hacker since 2001, and is the release manager (a.k.a. "pumpking") for the 5.10 series maintenance branch.This grant is supported by Rafael Garcia-Suarez, the Perl 5.10 series development branch release manager, and Nicholas Clark, the Perl 5.8 series release manager. Nicholas will also be the grant manager for this grant, which means he will maintain communication with David to ascertain the continuing process of the grant work and will determine when the work milestones of the grant have been achieved.Funding for this grant has been generously provided by Dijkmat BV, The Netherlands. Link To Original Source&lt;p&gt;&lt;a href="http://use.perl.org/article.pl?sid=08/11/13/0050206&amp;amp;from=rss"&gt;Read more of this story&lt;/a&gt; at use Perl.&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-11-13T01:09:00+00:00</dc:date>
+<dc:subject>news</dc:subject>
+<slash:section>mainpage</slash:section>
+<slash:hit_parade>0,0,0,0,0,0,0</slash:hit_parade>
+</item>
+
+<item rdf:about="http://use.perl.org/article.pl?sid=08/11/11/2310231&amp;from=rss">
+<title>This Week on perl5-porters - 27 October-2 November 2008</title>
+<link>http://use.perl.org/article.pl?sid=08/11/11/2310231&amp;from=rss</link>
+<description> This Week on perl5-porters - 27 October-2 November 2008 &amp;quot;So we're doing things at BEGIN time in UNIVERSAL with source filters. With a garnish of messing with @ISA in some other classes. What could possibly go wrong?&amp;quot; -- Nicholas Clark, trying to address serious bugs lurking somewhere in code this funky.&lt;p&gt;&lt;a href="http://use.perl.org/article.pl?sid=08/11/11/2310231&amp;amp;from=rss"&gt;Read more of this story&lt;/a&gt; at use Perl.&lt;/p&gt;</description>
+<dc:creator>grinder</dc:creator>
+<dc:date>2008-11-11T23:08:00+00:00</dc:date>
+<dc:subject>summaries</dc:subject>
+<slash:section>mainpage</slash:section>
+<slash:hit_parade>0,0,0,0,0,0,0</slash:hit_parade>
+</item>
+
+<item rdf:about="http://use.perl.org/article.pl?sid=08/11/11/1842248&amp;from=rss">
+<title>5.8.9 RC1 is out</title>
+<link>http://use.perl.org/article.pl?sid=08/11/11/1842248&amp;from=rss</link>
+<description>nicholas writes "Perl 5.8.9 Release Candidate 1 has been uploaded to CPAN. This is a maintenance release for perl 5.8.x, providing bug fixes and integrating module updates from CPAN. Download the source from ftp://ftp.cpan.org/pub/CPAN/authors/id/N/NW/NWCLARK/perl-5.8.9-RC1.tar.bz2 (or as .tar.gz ); read what's changed in perldelta.pod."&lt;p&gt;&lt;a href="http://use.perl.org/article.pl?sid=08/11/11/1842248&amp;amp;from=rss"&gt;Read more of this story&lt;/a&gt; at use Perl.&lt;/p&gt;</description>
+<dc:creator>rafael</dc:creator>
+<dc:date>2008-11-11T19:01:00+00:00</dc:date>
+<dc:subject>releases</dc:subject>
+<slash:section>mainpage</slash:section>
+<slash:hit_parade>0,0,0,0,0,0,0</slash:hit_parade>
+</item>
+
+<textinput rdf:about="http://use.perl.org/search.pl">
+<title>Search use Perl</title>
+<description>Search use Perl stories</description>
+<name>query</name>
+<link>http://use.perl.org/search.pl</link>
+</textinput>
+
+</rdf:RDF>

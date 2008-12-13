@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+xmlns:admin="http://webns.net/mvcb/"
+xmlns:cc="http://web.resource.org/cc/"
+xmlns="http://purl.org/rss/1.0/">
+
+<channel rdf:about="http://www.gskinner.com/blog/">
+<title>gBlog</title>
+<link>http://www.gskinner.com/blog/</link>
+<description>News, views and source code from Grant Skinner &amp; Company. Including information on OOP / OOAD, user experience and RIA development.</description>
+<dc:creator></dc:creator>
+<dc:date>2008-12-10T10:44:15-07:00</dc:date>
+<admin:generatorAgent rdf:resource="http://www.movabletype.org/?v=3.14" />
+
+
+<items>
+<rdf:Seq><rdf:li rdf:resource="http://www.gskinner.com/blog/archives/2008/12/making_dispatch.html" />
+<rdf:li rdf:resource="http://www.gskinner.com/blog/archives/2008/12/always_export_a.html" />
+<rdf:li rdf:resource="http://www.gskinner.com/blog/archives/2008/12/upcoming_confer_2.html" />
+<rdf:li rdf:resource="http://www.gskinner.com/blog/archives/2008/12/adobe_company_w.html" />
+<rdf:li rdf:resource="http://www.gskinner.com/blog/archives/2008/11/curly_braces_to.html" />
+<rdf:li rdf:resource="http://www.gskinner.com/blog/archives/2008/11/gpsd08_results.html" />
+<rdf:li rdf:resource="http://www.gskinner.com/blog/archives/2008/11/gtween_beta_3_a.html" />
+<rdf:li rdf:resource="http://www.gskinner.com/blog/archives/2008/11/the_great_pumpk_2.html" />
+<rdf:li rdf:resource="http://www.gskinner.com/blog/archives/2008/10/simple_flash_pl.html" />
+<rdf:li rdf:resource="http://www.gskinner.com/blog/archives/2008/10/gproject_and_th.html" />
+<rdf:li rdf:resource="http://www.gskinner.com/blog/archives/2008/10/new_player_10_f.html" />
+<rdf:li rdf:resource="http://www.gskinner.com/blog/archives/2008/09/beware_the_air.html" />
+<rdf:li rdf:resource="http://www.gskinner.com/blog/archives/2008/09/gtween_beta_2_a.html" />
+<rdf:li rdf:resource="http://www.gskinner.com/blog/archives/2008/09/five_year_bloga.html" />
+<rdf:li rdf:resource="http://www.gskinner.com/blog/archives/2008/08/gtween_a_new_tw.html" />
+</rdf:Seq>
+</items>
+
+</channel>
+
+<item rdf:about="http://www.gskinner.com/blog/archives/2008/12/making_dispatch.html">
+<title>Making dispatchEvent More Efficient</title>
+<link>http://www.gskinner.com/blog/archives/2008/12/making_dispatch.html</link>
+<description>In most projects there are tons of events that are dispatched, but have no listeners subscribed to them. This shouldn&apos;t be an issue, but it turns out that the Flash Player deals with these events inefficiently. Luckily it&apos;s pretty easy to patch this for specific situations. The code below will run about 5X faster than a standard dispatchEvent call when...</description>
+<dc:subject>Flex</dc:subject>
+<dc:creator>Grant</dc:creator>
+<dc:date>2008-12-10T10:44:15-07:00</dc:date>
+</item>
+<item rdf:about="http://www.gskinner.com/blog/archives/2008/12/always_export_a.html">
+<title>Always Export a Release Build</title>
+<link>http://www.gskinner.com/blog/archives/2008/12/always_export_a.html</link>
+<description>When preparing a Flex project for deployment, always make sure to export a release build. I think most people know about this feature of FlexBuilder, but I&apos;m not sure everyone is aware of just how important it is. The SWF that is generated when you run or debug your project contains a lot of extra byte code used for debugging and profiling your content.</description>
+<dc:subject></dc:subject>
+<dc:creator>Grant</dc:creator>
+<dc:date>2008-12-10T09:47:45-07:00</dc:date>
+</item>
+<item rdf:about="http://www.gskinner.com/blog/archives/2008/12/upcoming_confer_2.html">
+<title>Upcoming Conferences You Should Check Out</title>
+<link>http://www.gskinner.com/blog/archives/2008/12/upcoming_confer_2.html</link>
+<description>Two of my favourite conferences are running events across the pond this year, and I&apos;m totally stoked about it. FitC Amsterdam and FotB Miami.</description>
+<dc:subject>Events</dc:subject>
+<dc:creator>Grant</dc:creator>
+<dc:date>2008-12-09T11:02:48-07:00</dc:date>
+</item>
+<item rdf:about="http://www.gskinner.com/blog/archives/2008/12/adobe_company_w.html">
+<title>Adobe Company Wide Layoffs, Pulls out of Macworld Expo</title>
+<link>http://www.gskinner.com/blog/archives/2008/12/adobe_company_w.html</link>
+<description>Breaking news: Adobe has announced company wide layoffs, and has pulled out of Macworld Expo. Among the cuts, Mike Downey, who was a Flash evangelist and well known by the general community.</description>
+<dc:subject>Flash</dc:subject>
+<dc:creator>Grant</dc:creator>
+<dc:date>2008-12-03T15:06:13-07:00</dc:date>
+</item>
+<item rdf:about="http://www.gskinner.com/blog/archives/2008/11/curly_braces_to.html">
+<title>Curly Braces: To Cuddle or Not?</title>
+<link>http://www.gskinner.com/blog/archives/2008/11/curly_braces_to.html</link>
+<description>Should you place curly braces on the same line as the statement (cuddle), or on the next line? It&apos;s a debate that has raged for years, and is unlikely to be resolved until curly braces in code become obsolete. Despite that, I thought I would share my opinion on the topic.</description>
+<dc:subject>Flash</dc:subject>
+<dc:creator>Grant</dc:creator>
+<dc:date>2008-11-24T10:17:15-07:00</dc:date>
+</item>
+<item rdf:about="http://www.gskinner.com/blog/archives/2008/11/gpsd08_results.html">
+<title>GPSD&apos;08 Results are in!</title>
+<link>http://www.gskinner.com/blog/archives/2008/11/gpsd08_results.html</link>
+<description>Another year is gone, and another gPumpkin contest has come to a close. Many a beer and chocolate was consumed, and overall it was a great break from our normal routine.</description>
+<dc:subject>Events</dc:subject>
+<dc:creator>Lanny</dc:creator>
+<dc:date>2008-11-11T13:39:36-07:00</dc:date>
+</item>
+<item rdf:about="http://www.gskinner.com/blog/archives/2008/11/gtween_beta_3_a.html">
+<title>gTween beta 3: AS3 Code Tweening Library</title>
+<link>http://www.gskinner.com/blog/archives/2008/11/gtween_beta_3_a.html</link>
+<description>I&apos;ve just wrapped up beta 3 of gTween. The main feature additions are support for 3D rotation with smartRotation (always rotates in the shortest direction), a rewrite of custom progress points to make them more robust and reliable, the addition of a global defaultEase property, and the ability to globally control what properties will be rounded.</description>
+<dc:subject></dc:subject>
+<dc:creator>Grant</dc:creator>
+<dc:date>2008-11-04T17:04:04-07:00</dc:date>
+</item>
+<item rdf:about="http://www.gskinner.com/blog/archives/2008/11/the_great_pumpk_2.html">
+<title>The Great Pumpkin Showdown, 2008</title>
+<link>http://www.gskinner.com/blog/archives/2008/11/the_great_pumpk_2.html</link>
+<description>Keeping with our yearly tradition of squash mutilation here at gskinner.com, I&apos;m happy to present this year&apos;s Great Pumpkin Showdown. We broke into teams of two, based on seniority, and hacked the crap out of a bunch of defenseless pumpkins while drinking beer, eating pizza, and gorging on candy.  Also keeping with tradition, we made the most recent hires build out the pumpkin voting team.</description>
+<dc:subject>Flash</dc:subject>
+<dc:creator>Grant</dc:creator>
+<dc:date>2008-11-03T13:47:57-07:00</dc:date>
+</item>
+<item rdf:about="http://www.gskinner.com/blog/archives/2008/10/simple_flash_pl.html">
+<title>Simple Flash Player 10 3D Demo w/ Source</title>
+<link>http://www.gskinner.com/blog/archives/2008/10/simple_flash_pl.html</link>
+<description>Simple tech demo showing a 3D music visualizer using the flash player 10&apos;s new 3D APIs. Nothing too complex, but the result is kind of neat, and it is simple enough to serve as a quick entry into using the new APIs if you&apos;re getting started. It also uses the new Vector type in player 10...</description>
+<dc:subject>Flash</dc:subject>
+<dc:creator>Grant</dc:creator>
+<dc:date>2008-10-30T10:14:50-07:00</dc:date>
+</item>
+<item rdf:about="http://www.gskinner.com/blog/archives/2008/10/gproject_and_th.html">
+<title>gProject and the Flash CS4 Project Panel</title>
+<link>http://www.gskinner.com/blog/archives/2008/10/gproject_and_th.html</link>
+<description>In May I blogged about Adobe acquiring gProject from us. At the time, I wasn&apos;t allowed to talk about what it was going to be used for. Still, it probably doesn&apos;t come as a huge surprise to anyone that the new Project Panel in Flash CS4 is based on gProject. Some of the key features...</description>
+<dc:subject>Flash</dc:subject>
+<dc:creator>Grant</dc:creator>
+<dc:date>2008-10-20T11:31:32-07:00</dc:date>
+</item>
+<item rdf:about="http://www.gskinner.com/blog/archives/2008/10/new_player_10_f.html">
+<title>New Player 10 Feature Tour</title>
+<link>http://www.gskinner.com/blog/archives/2008/10/new_player_10_f.html</link>
+<description>We&apos;ve been able to spend some time polishing the Flash player 10 feature tour we built with Adobe, adding more demos, integrating videos, and redesigning it with Adobe&apos;s Double Identity theme. It shows some basic demos for a few of the new features, with downloadable source code - including a simple coverflow sample.</description>
+<dc:subject>Flash</dc:subject>
+<dc:creator>Grant</dc:creator>
+<dc:date>2008-10-17T09:37:10-07:00</dc:date>
+</item>
+<item rdf:about="http://www.gskinner.com/blog/archives/2008/09/beware_the_air.html">
+<title>Beware the AIR Badger!!</title>
+<link>http://www.gskinner.com/blog/archives/2008/09/beware_the_air.html</link>
+<description>A while back, I thought it would be a neat idea to build an AIR application that made it easier to configure and deploy badge installers. Adobe agreed, and the Badger application was created... Badger allows you to load a template install badge, configure all of its options, preview it live (via the HTML control in AIR), and then export it for deployment. Badger also takes the pain out of configuring badges by...</description>
+<dc:subject>Flash</dc:subject>
+<dc:creator>Grant</dc:creator>
+<dc:date>2008-09-23T11:06:57-07:00</dc:date>
+</item>
+<item rdf:about="http://www.gskinner.com/blog/archives/2008/09/gtween_beta_2_a.html">
+<title>gTween beta 2: ActionScript 3 Tweening Library</title>
+<link>http://www.gskinner.com/blog/archives/2008/09/gtween_beta_2_a.html</link>
+<description>I&apos;m happy to announce gTween beta 2. I&apos;ve tweaked the API slightly, added some feature enhancements, and fixed a couple of minor bugs. Here&apos;s a list of the specific changes... To download the latest beta, view demos, or access the API documentation, please visit...</description>
+<dc:subject>Flash</dc:subject>
+<dc:creator>Grant</dc:creator>
+<dc:date>2008-09-03T09:32:36-07:00</dc:date>
+</item>
+<item rdf:about="http://www.gskinner.com/blog/archives/2008/09/five_year_bloga.html">
+<title>Five Year Blogaversary</title>
+<link>http://www.gskinner.com/blog/archives/2008/09/five_year_bloga.html</link>
+<description>Time sure flies fast when you&apos;re having fun! Today marks five years of blogging. There have been a lot of changes in the industry during that time... I want to take this opportunity to thank the Flash community for being such an awesome and open group of people. I&apos;ve had so many stimulating conversations, made so many great friends...</description>
+<dc:subject>Flash</dc:subject>
+<dc:creator>Grant</dc:creator>
+<dc:date>2008-09-01T12:57:38-07:00</dc:date>
+</item>
+<item rdf:about="http://www.gskinner.com/blog/archives/2008/08/gtween_a_new_tw.html">
+<title>gTween: A New Tweening Engine for AS3 Developers</title>
+<link>http://www.gskinner.com/blog/archives/2008/08/gtween_a_new_tw.html</link>
+<description>gTween is a new programmatic tweening engine built for ActionScript 3 developers from the ground up: instance-oriented, standard event model, multiple timing modes, proxy interface, interruptible, sequencing, resource managed, global and per instance pausing, and a whole lot more.</description>
+<dc:subject>Flash</dc:subject>
+<dc:creator>Grant</dc:creator>
+<dc:date>2008-08-18T11:07:04-07:00</dc:date>
+</item>
+
+
+</rdf:RDF>

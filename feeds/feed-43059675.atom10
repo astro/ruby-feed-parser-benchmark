@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+
+<channel>
+	<title>defuze.org</title>
+	<atom:link href="http://www.defuze.org/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.defuze.org</link>
+	<description></description>
+	<pubDate>Mon, 01 Dec 2008 22:13:13 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6.2</generator>
+	<language>en</language>
+			<item>
+		<title>Geolocalization and microblogging</title>
+		<link>http://www.defuze.org/archives/137-geolocalization-and-microblogging.html</link>
+		<comments>http://www.defuze.org/archives/137-geolocalization-and-microblogging.html#comments</comments>
+		<pubDate>Mon, 01 Dec 2008 22:13:13 +0000</pubDate>
+		<dc:creator>Sylvain Hellegouarch</dc:creator>
+		
+		<category><![CDATA[headstock]]></category>
+
+		<category><![CDATA[python]]></category>
+
+		<category><![CDATA[xmpp]]></category>
+
+		<category><![CDATA[atom]]></category>
+
+		<category><![CDATA[geo]]></category>
+
+		<category><![CDATA[microblogging]]></category>
+
+		<category><![CDATA[notification]]></category>
+
+		<guid isPermaLink="false">http://www.defuze.org/?p=137</guid>
+		<description><![CDATA[I&#8217;ve been working recently with Adrian Hornsby who&#8217;s been interested in using the microblogging example I had setup to demonstrate headstock, amplee and some ideas about microblogging in general. Today Adrian asked me how to add some gelocalization information to a message flowing through the system. It took me just a couple of hours to [...]]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve been working recently with Adrian Hornsby who&#8217;s been interested in using the <a href="http://trac.defuze.org/wiki/headstock/Microblogging"  target="_blank">microblogging example</a> I had setup to demonstrate headstock, amplee and some ideas about microblogging in general. Today Adrian asked me how to add some gelocalization information to a message flowing through the system. It took me just a couple of hours to implement it so that now you can push a message like: <strong>GEO text [lat,long]</strong> through your IM client. This will tell the demo to add a <strong>georss:point</strong> element to the generate atom entry which will eventually lead to a Google map to be displayed in the web page mapping the atom entry.<a href="http://www.linkedin.com/e/uiXyTlA_n2oqGnvQge8An-d/blk/871980115_2/cBYRcj4Me3ANdPwLqnpPbOYWrSlI/svi/" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.linkedin.com');"></a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.defuze.org/archives/137-geolocalization-and-microblogging.html/feed</wfw:commentRss>
+		</item>
+		<item>
+		<title>Notifixious - A notification platform</title>
+		<link>http://www.defuze.org/archives/57-notifixious-a-notification-platform.html</link>
+		<comments>http://www.defuze.org/archives/57-notifixious-a-notification-platform.html#comments</comments>
+		<pubDate>Tue, 04 Nov 2008 20:30:36 +0000</pubDate>
+		<dc:creator>Sylvain Hellegouarch</dc:creator>
+		
+		<category><![CDATA[python]]></category>
+
+		<category><![CDATA[xmpp]]></category>
+
+		<category><![CDATA[pubsub]]></category>
+
+		<category><![CDATA[social]]></category>
+
+		<guid isPermaLink="false">http://www.defuze.org/archives/28-guid.html</guid>
+		<description><![CDATA[I&#8217;ve recently registered to Notifixious home page, a notification platform that integrates XMPP natively. Though the application is not looking as polished as one might hope it already provides interesting features.
+Overall I think any work towards better notification system is the right idea. We need better ways to notify people or get notified about relevant [...]]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve recently registered to <a href="http://notifixio.us/" onclick="javascript:pageTracker._trackPageview('/outbound/article/notifixio.us');" target="_blank">Notifixious home page</a>, a notification platform that integrates XMPP natively. Though the application is not looking as polished as one might hope it already provides interesting features.</p>
+<p>Overall I think any work towards better notification system is the right idea. We need better ways to notify people or get notified about relevant piece of information. From a technology&#8217;s perspective transport protocols (well at the application&#8217;s level) already exist to perform the task of carrying the information, they are namely HTTP and XMPP. However there is still quite a large gap to fill about <strong>what</strong> to carry exactly. Notifixious doesn&#8217;t solve that gap per se but offers at least a good base for playing around with some floating ideas. For instance <a href="http://twitter.com/lawouach/status/990004060" onclick="javascript:pageTracker._trackPageview('/outbound/article/twitter.com');" target="_blank">I&#8217;ve introduced today the Notifixious&#8217;s crowd</a> to <a href="http://dev.lup.org" onclick="javascript:pageTracker._trackPageview('/outbound/article/dev.lup.org');" target="_blank">LLUP</a> which has been initiated and carried on for a few years now to answer that specific problem. Perhaps it&#8217;ll make it way through.</p>
+<p>Update: The guys at Notifixious just posted a <a href="http://blog.notifixio.us/post/57976776/a-pubsub-implementation" onclick="javascript:pageTracker._trackPageview('/outbound/article/blog.notifixio.us');" target="_blank">message</a> about how PubSub is heavily used by their service.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.defuze.org/archives/57-notifixious-a-notification-platform.html/feed</wfw:commentRss>
+		</item>
+		<item>
+		<title>amplee 0.6.1</title>
+		<link>http://www.defuze.org/archives/56-amplee-061.html</link>
+		<comments>http://www.defuze.org/archives/56-amplee-061.html#comments</comments>
+		<pubDate>Mon, 20 Oct 2008 20:48:33 +0000</pubDate>
+		<dc:creator>Sylvain Hellegouarch</dc:creator>
+		
+		<category><![CDATA[atompub]]></category>
+
+		<category><![CDATA[python]]></category>
+
+		<category><![CDATA[atom]]></category>
+
+		<guid isPermaLink="false">http://www.defuze.org/archives/27-guid.html</guid>
+		<description><![CDATA[I&#8217;ve just released amplee 0.6.1.
+This release is a minor release that fixes a few annoying defects and improves overall performances of the internal of amplee:
+
+removes many of the usage of the copy.copy function (thanks to Mohanara Gopala Krishnan for his previous help)
+drops the cmemcache module in favor the python-memcached one
+adds a prune(member) method to the [...]]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve just released <a href="http://trac.defuze.org/wiki/amplee"  target="_blank">amplee 0.6.1</a>.<br />
+This release is a minor release that fixes a few annoying defects and improves overall performances of the internal of amplee:</p>
+<ul>
+<li>removes many of the usage of the copy.copy function (thanks to Mohanara Gopala Krishnan for his previous help)</li>
+<li>drops the cmemcache module in favor the python-memcached one</li>
+<li>adds a prune(member) method to the indexer API</li>
+<li>extends with a few helpful functions the atompub API</li>
+<li>adds more unit tests</li>
+<li>drops the graph subpackage from the egg distribution (and I will remove it altogether for license issue in the next release)</li>
+</ul>
+<p>If you&#8217;re using 0.6.0 I would advise to upgrade. The API is fully compatible and you&#8217;ll experience a more stable product.</p>
+<p>I really wish to thank Mohan for his feedback, patience and will to send patches.</p>
+<p>I will release a next version to clean out some remaining issue and than I will move toward amplee 0.7 that&#8217;ll support <a href="http://wiki.xml3k.org/Amara2" onclick="javascript:pageTracker._trackPageview('/outbound/article/wiki.xml3k.org');" target="_blank">Amara 2.0</a> and will see some internal refactoring.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.defuze.org/archives/56-amplee-061.html/feed</wfw:commentRss>
+		</item>
+		<item>
+		<title>Maintenance and time zone</title>
+		<link>http://www.defuze.org/archives/55-maintenance-and-time-zone.html</link>
+		<comments>http://www.defuze.org/archives/55-maintenance-and-time-zone.html#comments</comments>
+		<pubDate>Tue, 09 Sep 2008 08:16:19 +0000</pubDate>
+		<dc:creator>Sylvain Hellegouarch</dc:creator>
+		
+		<category><![CDATA[python]]></category>
+
+		<category><![CDATA[xmpp]]></category>
+
+		<guid isPermaLink="false">http://www.defuze.org/archives/26-guid.html</guid>
+		<description><![CDATA[I have recently subscribed to the excellent Good Reads network and today I went to it only to see a message saying:
+
+The system is down for maintenance as of 00:51 PDT.
+It&#8217;ll be back shortly.
+That&#8217;s okay, I mean it&#8217;s not such an essential website in my life that I have to get connected to it. I&#8217;ll [...]]]></description>
+			<content:encoded><![CDATA[<p>I have recently subscribed to the excellent <a href="http://www.goodreads.com/review/list/1506388" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.goodreads.com');" target="_blank">Good Reads</a> network and today I went to it only to see a message saying:</p>
+<blockquote><p>
+The system is down for maintenance as of 00:51 PDT.<br />
+It&#8217;ll be back shortly.</p></blockquote>
+<p>That&#8217;s okay, I mean it&#8217;s not such an essential website in my life that I have to get connected to it. I&#8217;ll visit it back. That being said I realised that if you plan on creating the next social network that everyone speaks about [1], make sure that you do your maintenance on a per-time zone basis. It&#8217;s cool to wait night in the USA to be the as little disruptive as you can but the rest of the World might not appreciate being put off in such fashion.</p>
+<p>Of course scheduling maintenance based on a time zone means your infrastructure is designed to support it. Well, you said you wanted to be the next D.<br />
+[1] I don&#8217;t believe that&#8217;s something Good Reads is after mind you.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.defuze.org/archives/55-maintenance-and-time-zone.html/feed</wfw:commentRss>
+		</item>
+		<item>
+		<title>Freebase Parallax</title>
+		<link>http://www.defuze.org/archives/54-freebase-parallax.html</link>
+		<comments>http://www.defuze.org/archives/54-freebase-parallax.html#comments</comments>
+		<pubDate>Sun, 17 Aug 2008 08:54:11 +0000</pubDate>
+		<dc:creator>Sylvain Hellegouarch</dc:creator>
+		
+		<category><![CDATA[python]]></category>
+
+		<guid isPermaLink="false">http://www.defuze.org/archives/25-guid.html</guid>
+		<description><![CDATA[I knew Freebase was great but this rules.
+]]></description>
+			<content:encoded><![CDATA[<p>I knew <a href="http://www.freebase.com/" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.freebase.com');" target="_blank">Freebase</a> was great but this <a href="http://mqlx.com/~david/parallax/" onclick="javascript:pageTracker._trackPageview('/outbound/article/mqlx.com');" target="_blank">rules</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.defuze.org/archives/54-freebase-parallax.html/feed</wfw:commentRss>
+		</item>
+		<item>
+		<title>Release day: bridge, headstock and jlib</title>
+		<link>http://www.defuze.org/archives/53-release-day-bridge-headstock-and-jlib.html</link>
+		<comments>http://www.defuze.org/archives/53-release-day-bridge-headstock-and-jlib.html#comments</comments>
+		<pubDate>Sun, 03 Aug 2008 13:47:15 +0000</pubDate>
+		<dc:creator>Sylvain Hellegouarch</dc:creator>
+		
+		<category><![CDATA[python]]></category>
+
+		<category><![CDATA[xmpp]]></category>
+
+		<guid isPermaLink="false">http://www.defuze.org/archives/24-guid.html</guid>
+		<description><![CDATA[I&#8217;ve decided to make an official release of a few of my currently most active projects so that it&#8217;ll be easier for anyone to try out. So today I&#8217;ve released:
+
+bridge 0.3.6: Simple library for handling XML. This one is just a fix release and won&#8217;t break any of your application if you were using it.
+headstock [...]]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve decided to make an official release of a few of my currently most active projects so that it&#8217;ll be easier for anyone to try out. So today I&#8217;ve released:</p>
+<ul>
+<li><a href="http://trac.defuze.org/wiki/bridge"  target="_blank">bridge</a> 0.3.6: Simple library for handling XML. This one is just a fix release and won&#8217;t break any of your application if you were using it.</li>
+<li><a href="http://trac.defuze.org/wiki/headstock"  target="_blank">headstock</a> 0.2.0: XMPP library using <a href="http://kamaelia.sourceforge.net/Home" onclick="javascript:pageTracker._trackPageview('/outbound/article/kamaelia.sourceforge.net');" target="_blank">Kamaelia</a> and bridge. My main focus on this release was the support of PubSub.</li>
+<li><a href="http://trac.defuze.org/wiki/jlib"  target="_blank">jlib</a> 0.1.0: Python library of <a href="http://www.riverbankcomputing.co.uk/software/pyqt/intro" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.riverbankcomputing.co.uk');" target="_blank">PyQt4</a> widgets to add XMPP to your applications. This one is rather new and still pretty limited but <a href="http://www.defuze.org/oss/jlib/screenshots/"  target="_blank">it&#8217;s already fun to use</a>.</li>
+</ul>
+<p>There you go, neither headstock nor jlib are considered to be production ready but are stable enough in terms of design and implementation so that you may already start playing with them. I hope you&#8217;ll have fun.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.defuze.org/archives/53-release-day-bridge-headstock-and-jlib.html/feed</wfw:commentRss>
+		</item>
+		<item>
+		<title>jlib preview - PyQt4 library for XMPP</title>
+		<link>http://www.defuze.org/archives/52-jlib-preview-pyqt4-library-for-xmpp.html</link>
+		<comments>http://www.defuze.org/archives/52-jlib-preview-pyqt4-library-for-xmpp.html#comments</comments>
+		<pubDate>Sun, 20 Jul 2008 12:35:23 +0000</pubDate>
+		<dc:creator>Sylvain Hellegouarch</dc:creator>
+		
+		<category><![CDATA[python]]></category>
+
+		<category><![CDATA[xmpp]]></category>
+
+		<category><![CDATA[gui]]></category>
+
+		<category><![CDATA[pubsub]]></category>
+
+		<guid isPermaLink="false">http://www.defuze.org/archives/23-guid.html</guid>
+		<description><![CDATA[I&#8217;ve been recently working on a library called jlib that providing PyQt4 objects and widgets that can be integrated to a PyQt4 application. In other words jlib is not a new Jabber client but a toolbox to enjoy the benefit of XMPP. The XMPP work is performed by headstock, jlib only glues headstock to PyQt4 [...]]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve been recently working on a library called <a href="http://trac.defuze.org/browser/oss/jlib"  target="_blank">jlib</a> that providing PyQt4 objects and widgets that can be integrated to a PyQt4 application. In other words jlib is not a new Jabber client but a toolbox to enjoy the benefit of XMPP. The XMPP work is performed by <a href="http://trac.defuze.org/wiki/headstock"  target="_blank">headstock</a>, jlib only glues headstock to PyQt4 through the use of signals/slots.<br />
+jlib is not ready yet but here is a <a href="http://www.defuze.org/oss/jlib/screenshots/"  target="_blank">preview</a> of a few widgets I&#8217;ve already started working on. Ultimately my main interests is in creating a decent toolbox of widgets centered towards XMPP PubSub.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.defuze.org/archives/52-jlib-preview-pyqt4-library-for-xmpp.html/feed</wfw:commentRss>
+		</item>
+		<item>
+		<title>CherryPy 3.1 has been released</title>
+		<link>http://www.defuze.org/archives/51-cherrypy-31-has-been-released.html</link>
+		<comments>http://www.defuze.org/archives/51-cherrypy-31-has-been-released.html#comments</comments>
+		<pubDate>Tue, 01 Jul 2008 19:46:28 +0000</pubDate>
+		<dc:creator>Sylvain Hellegouarch</dc:creator>
+		
+		<category><![CDATA[python]]></category>
+
+		<category><![CDATA[cherrypy]]></category>
+
+		<guid isPermaLink="false">http://www.defuze.org/archives/22-guid.html</guid>
+		<description><![CDATA[Yesterday Robert Brewer released version 3.1 of the CherryPy product and I think this calls for a hurray! For those who&#8217;ve been using 3.0 they&#8217;ll be happy to know that the upgrade will be rather smooth and straightforward. The main API changes have taken place on the engine thanks to the new process bus but [...]]]></description>
+			<content:encoded><![CDATA[<p>Yesterday <a href="http://aminus.org/blogs/index.php/fumanchu" onclick="javascript:pageTracker._trackPageview('/outbound/article/aminus.org');" target="_blank">Robert Brewer</a> <a href="http://groups.google.com/group/cherrypy-users/msg/5f3db867a2ca20f0" onclick="javascript:pageTracker._trackPageview('/outbound/article/groups.google.com');" target="_blank">released</a> version 3.1 of the CherryPy product and I think this calls for a hurray! For those who&#8217;ve been using 3.0 they&#8217;ll be happy to know that the <a href="http://www.cherrypy.org/wiki/UpgradeTo31" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.cherrypy.org');" target="_blank">upgrade</a> will be rather smooth and straightforward. The main API changes have taken place on the engine thanks to the new <a href="http://www.cherrypy.org/wiki/WebSiteProcessBus" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.cherrypy.org');" target="_blank">process bus</a> but the rest of the API is pretty much identical. Overall the fantastic work Robert and many contributors have done was to fix remaining and new bugs making this release the most stable and high-performance of the CherryPy releases. <a href="http://www.cherrypy.org/wiki/CherryPyDownload" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.cherrypy.org');" target="_blank">Get it</a> while it&#8217;s hot.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.defuze.org/archives/51-cherrypy-31-has-been-released.html/feed</wfw:commentRss>
+		</item>
+		<item>
+		<title>AtomPub data model for music metadata storage and indexing</title>
+		<link>http://www.defuze.org/archives/50-atompub-data-model-for-music-metadata-storage-and-indexing.html</link>
+		<comments>http://www.defuze.org/archives/50-atompub-data-model-for-music-metadata-storage-and-indexing.html#comments</comments>
+		<pubDate>Mon, 30 Jun 2008 18:27:46 +0000</pubDate>
+		<dc:creator>Sylvain Hellegouarch</dc:creator>
+		
+		<category><![CDATA[atompub]]></category>
+
+		<category><![CDATA[python]]></category>
+
+		<category><![CDATA[social]]></category>
+
+		<guid isPermaLink="false">http://www.defuze.org/archives/21-guid.html</guid>
+		<description><![CDATA[Noah Gift described a cool project he had started recently named Pylesystem. The idea was to monitor the filesystem for events regarding the creation and deletion of files, more specifically media files like music audio files. Noah explained he wanted to provide a simple metadata storage so that he could query it for getting information [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://noahgift.com/" onclick="javascript:pageTracker._trackPageview('/outbound/article/noahgift.com');" target="_blank">Noah Gift</a> described a cool project he had started recently named <a href="http://news.oreilly.com/2008/06/pylesystem-a-realtime-metadata.html" onclick="javascript:pageTracker._trackPageview('/outbound/article/news.oreilly.com');" target="_blank">Pylesystem</a>. The idea was to monitor the filesystem for events regarding the creation and deletion of files, more specifically media files like music audio files. Noah explained he wanted to provide a simple metadata storage so that he could query it for getting information about his media library. He decided to use <a href="http://www.sqlalchemy.org/" onclick="javascript:pageTracker._trackPageview('/outbound/article/www.sqlalchemy.org');" target="_blank">SQLAlchemy</a> to abstract the storage as well as the query mechanism as much as possible whilst providing an easy and high level query interface.</p>
+<p>I thought it&#8217;d be cool to give it a go using the <a href="http://bitworking.org/projects/atom/rfc5023.html" onclick="javascript:pageTracker._trackPageview('/outbound/article/bitworking.org');" target="_blank">AtomPub</a> data model to store metadata. I therefore hacked a small example within a few hours this weekend using <a href="http://trac.defuze.org/wiki/amplee"  target="_blank">amplee</a>.</p>
+<p>I was quickly able to associate a collection per artist and album and a member per track. I used <a href="http://hachoir.org/wiki/hachoir-metadata" onclick="javascript:pageTracker._trackPageview('/outbound/article/hachoir.org');" target="_blank">hachoir-metadata</a> to get a few basic metadata about tracks as well as a couple of simple queries to the <a href="http://musicbrainz.org/doc/WebService" onclick="javascript:pageTracker._trackPageview('/outbound/article/musicbrainz.org');" target="_blank">Musicbrainz web service</a> to get more advanced information like tags, related URLs, etc.<br />
+Finally I used the basic indexing mechanism provided in amplee to perform simple query on the AtomPub store and then generate atom feeds on the fly based on the query result.<br />
+Overall it was really fun and I&#8217;m happy that it shows how to use AtomPub and amplee in a context that is not directly related to the web. The source code is of course available <a href="https://svn.defuze.org/oss/amplee/amplee/examples/musicindexer/"  target="_blank">here</a>.</p>
+<p>Note that if you wish to run the code you&#8217;ll need the latest trunk of amplee. Otherwise you&#8217;ll need the current stable release of amara, hachoir-metadata and pyinotify.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.defuze.org/archives/50-atompub-data-model-for-music-metadata-storage-and-indexing.html/feed</wfw:commentRss>
+		</item>
+		<item>
+		<title>Microblogging with XMPP and AtomPub. Dumping code.</title>
+		<link>http://www.defuze.org/archives/49-microblogging-with-xmpp-and-atompub-dumping-code.html</link>
+		<comments>http://www.defuze.org/archives/49-microblogging-with-xmpp-and-atompub-dumping-code.html#comments</comments>
+		<pubDate>Thu, 19 Jun 2008 21:59:40 +0000</pubDate>
+		<dc:creator>Sylvain Hellegouarch</dc:creator>
+		
+		<category><![CDATA[python]]></category>
+
+		<category><![CDATA[xmpp]]></category>
+
+		<category><![CDATA[microblogging]]></category>
+
+		<guid isPermaLink="false">http://www.defuze.org/archives/20-guid.html</guid>
+		<description><![CDATA[Alright I haven&#8217;t been able to move as fast as I wanted on this one for a whole set of reason but if you&#8217;re interested in having a look at where I&#8217;m heading at please read this.
+]]></description>
+			<content:encoded><![CDATA[<p>Alright I haven&#8217;t been able to move as fast as I wanted on this one for a whole set of reason but if you&#8217;re interested in having a look at where I&#8217;m heading at please read <a href="http://trac.defuze.org/wiki/headstock/Microblogging"  target="_blank">this</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.defuze.org/archives/49-microblogging-with-xmpp-and-atompub-dumping-code.html/feed</wfw:commentRss>
+		</item>
+	</channel>
+</rss>

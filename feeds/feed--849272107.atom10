@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:media="http://search.yahoo.com/mrss/"
+	>
+
+<channel>
+	<title>Paying Attention</title>
+	<atom:link href="http://chrissaad.wordpress.com/feed/" rel="self" type="application/rss+xml" />
+	<link>http://chrissaad.wordpress.com</link>
+	<description>Personal Blog - Chris Saad</description>
+	<pubDate>Mon, 08 Dec 2008 08:26:06 +0000</pubDate>
+	<generator>http://wordpress.org/?v=MU</generator>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+			<item>
+		<title>Proposal: OpenID Connect</title>
+		<link>http://chrissaad.wordpress.com/2008/12/08/proposal-openid-connect/</link>
+		<comments>http://chrissaad.wordpress.com/2008/12/08/proposal-openid-connect/#comments</comments>
+		<pubDate>Mon, 08 Dec 2008 04:53:27 +0000</pubDate>
+		<dc:creator>Chris Saad</dc:creator>
+		
+		<category><![CDATA[Me]]></category>
+
+		<category><![CDATA[Technology]]></category>
+
+		<category><![CDATA[Work]]></category>
+
+		<category><![CDATA[dataportability]]></category>
+
+		<category><![CDATA[data portability]]></category>
+
+		<category><![CDATA[facebook]]></category>
+
+		<category><![CDATA[faebook connect]]></category>
+
+		<category><![CDATA[openID]]></category>
+
+		<category><![CDATA[user experience]]></category>
+
+		<guid isPermaLink="false">http://chrissaad.wordpress.com/?p=235</guid>
+		<description><![CDATA[OpenID needs to be as simple as Facebook Connect if it has any chance of competing. The problem is User Experience. It&#8217;s a nightmare.
+My proposal:
+
+All Email providers and OpenID Consumers (particularly Gmail, Hotmail and Yahoo Mail) implement: http://eaut.org/
+Until we have critical mass with step 1, a 3rd party, community controled &#8220;Email to OpenID mapping service&#8221; [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p>OpenID needs to be as simple as Facebook Connect if it has any chance of competing. The problem is User Experience. It&#8217;s a nightmare.</p>
+<p><strong>My proposal:</strong></p>
+<ol>
+<li>All Email providers and OpenID Consumers (particularly Gmail, Hotmail and Yahoo Mail) implement: <a href="http://eaut.org/">http://eaut.org/</a></li>
+<li>Until we have critical mass with step 1, a 3rd party, community controled &#8220;Email to OpenID mapping service&#8221; should be provided. Vidoop runs a related service at <a href="http://emailtoid.net/">http://emailtoid.net/</a>. It&#8217;s quite good but it should be donated to the OpenID foundation for independent control.</li>
+<li>OpenID Connect login prompts ask for your email address on 3rd party sites.</li>
+<li>When you hit &#8216;connect&#8217; it generates a popup much like the FB Connect popup.</li>
+<li>The contents of the popup is either:
+<ul>
+<li>The password screen of the OpenID provider as resolved via <a href="http://eaut.org/">EAUT</a> OR</li>
+<li>The password screen of the OpenID provider as resolved via the community EmailtoID service OR</li>
+<li>A prompt from the EmailToID service that walks you through creating a new OpenID or mapping an exiting OpenID to this email address.Here&#8217;s the important part: In all cases, the screens MUST conform to a strict UX Design Guideline set forth by the OpenID Foundation to ensure the process is as simple as Facebook Connect.Only providers that confirm to this OpenID Connect UX standard (as certified by the OpenID Foundation?) may have their OpenIDs validated in this popup. This is a harsh rule but it ensures a smooth UX for all involved.</li>
+</ul>
+</li>
+<li>This initial Email to OpenID mapping through a 3rd party service is painful since most email providers and OpenID consumers do not use EAUT yet.</li>
+<li>This can be overcome if we get a series of OpenID Consumers and OpenID Providers involved as launch partners. A major email provider (Gmail, Hotmail and/or Yahoo) would also be be helpful but not a blocker.</li>
+</ol>
+<p><strong>Potential Concerns:</strong></p>
+<ol>
+<li>How do we deter phishing? Does this work-flow make phishing worse because of the predictable UX? Does it matter? Is there a way to ensure a distributed karma system is included in the work flow?</li>
+<li>This only solves the login problem and does not go into the issue of connecting to, accessing and manipulating data as the full <a href="http://www.dataportability.org">data portability</a> vision describes. This is a conversation for another thread.</li>
+</ol>
+<p><strong>Bonus:</strong></p>
+<ul>
+<li>If you provide OpenID but do not consume it you need to be named and shamed. There should be a 2 month grace period, then The OpenID Foundation, the DataPortability Project and everyone else who is interested should participate.</li>
+<li>&#8220;OpenID Connect&#8221; should be a new brand with a fresh batch of announcements with strict implementation guidelines (not just around UX but also around things like consumption).</li>
+</ul>
+<p><strong>To summarize, my proposal world:</strong></p>
+<ol>
+<li>Allow users to use their email address for OpenID</li>
+<li>Standardize the User Experience for OpenID</li>
+<li>Provide a stop gap while Email providers catch up with Email to OpenID mapping.</li>
+</ol>
+<p><strong>Get involved:</strong></p>
+<p>I&#8217;d love to do mockups for this - but I&#8217;m busy. Anyone interested in learning from the Facebook Connect UX and drafting OpenID Connect Mockups from which we can draw the strict UX guidelines I mentioned?</p>
+<p>Could this work?</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/chrissaad.wordpress.com/235/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/chrissaad.wordpress.com/235/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/chrissaad.wordpress.com/235/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/chrissaad.wordpress.com/235/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/chrissaad.wordpress.com/235/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/chrissaad.wordpress.com/235/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/chrissaad.wordpress.com/235/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/chrissaad.wordpress.com/235/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/chrissaad.wordpress.com/235/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/chrissaad.wordpress.com/235/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chrissaad.wordpress.com&blog=354903&post=235&subd=chrissaad&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://chrissaad.wordpress.com/2008/12/08/proposal-openid-connect/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/2d9567a5dc6d38988355ee3e8c0429f2?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Chris Saad</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Facebook Connect AKA Hailstorm 2.0</title>
+		<link>http://chrissaad.wordpress.com/2008/12/01/facebook-connect-aka-hailstorm-20/</link>
+		<comments>http://chrissaad.wordpress.com/2008/12/01/facebook-connect-aka-hailstorm-20/#comments</comments>
+		<pubDate>Mon, 01 Dec 2008 07:29:18 +0000</pubDate>
+		<dc:creator>Chris Saad</dc:creator>
+		
+		<category><![CDATA[Personal]]></category>
+
+		<category><![CDATA[Politics]]></category>
+
+		<category><![CDATA[Technology]]></category>
+
+		<category><![CDATA[Work]]></category>
+
+		<category><![CDATA[dataportability]]></category>
+
+		<guid isPermaLink="false">http://chrissaad.wordpress.com/?p=225</guid>
+		<description><![CDATA[Have you seen this?
+Let me quote the highlights for you:
+If the initial development race of Web 2.0 centered around &#8220;building a better social network&#8221; then the next phase will certainly focus on extending the reach of existing social networks beyond their current domain. How? By using the elements of the social graph as the foundational [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p><a href="http://www.readwriteweb.com/archives/facebook_connect_readies.php">Have you seen this</a>?</p>
+<p>Let me quote the highlights for you:</p>
+<blockquote><p>If the initial development race of Web 2.0 centered around &#8220;building a better social network&#8221; then the next phase will certainly focus on extending the reach of existing social networks beyond their current domain. How? By using the elements of the <a href="http://www.readwriteweb.com/archives/social_graph_concepts_and_issues.php">social graph</a> as the foundational components that will drive the social Web. Where we once focused on going to a destination - particular social network to participate - we will now begin to carry components of social networks along with us, wherever we go. In the next phase of the social Web, every site will become social.</p></blockquote>
+<p>Agreed. That&#8217;s been the vision and promise of much of my work for more than a year.</p>
+<p>Here&#8217;s the scary part</p>
+<blockquote><p>Facebook Connect proposes to make data and friend connections currently held within the walled garden of Facebook accessible to other services. This has two distinct benefits, one for the sites and one for Facebook.</p>
+<p>For the participating sites, Facebook Connect provides more social functionality without a great deal of additional development. A new user can opt to share the profile information in Facebook instead of developing a new account. This gives the user access to the site and its services without the tedium of developing yet another profile on yet another site. In addition, users can use the relationship information in Facebook to connect to their friends on the other services. In short, it makes the new partner site an extension of Facebook.</p></blockquote>
+<p>Essentially, Facebook is trying to replace all logins with their own, and control the creation, distribution and application of the social graph using their proprietary platform.</p>
+<p>The most scary part of this, is that while Facebook is quietly and methodically building out this vision with massive partners, the standards community is busy squabbling about naming the open alternative.</p>
+<p>Is it Data Portability? Is the Open Web? is it Open Social? Is it Federated Identity?</p>
+<p>At the start of this year one would have thought that the open standards movement got a huge boost by the massive explosion of the DataPortability project. It&#8217;s set of high profile endorsements catapulted the geeky standards conversation into the mainstream consciousness and helped provide a rallying cry for the community to embrace.</p>
+<p>Instead of embracing it, though, many of the leaders in the community decided to squabble about form and style. They argued about the name, about the organization, about the merits of the people involved - on and on it went.</p>
+<p>Instead of embracing the opportunity, they squandered it by trying to coin new phrases, new organizations and new initiatives.</p>
+<p>The result is a series of mixed messages that have largely diluted the value of DataPortability&#8217;s promise this year. The promise of making the conversation tangible for the mainstream - the executives who are now partnering with FaceBook.</p>
+<p>Will we let this continue into 2009? Will we continue to allow our egos to get in the way of mounting a real alternative to Hailstorm 2.0? Are we more interested in the theater of it, the cool kids vs. the real world or will we be able to reach the mainstream once again and help them to understand that entire social web is at stake?</p>
+<p>I&#8217;ve not lost hope. There are countless reasons why Facebook and it&#8217;s Hailstorm 2.0 are not inevitable.</p>
+<p>I have, however, lost a lot of respect for a lot of people I once admired. Maybe they can clean up their act and we can work together once again in the new year.</p>
+<p>I put a call out to all those who are interested - technologists, early adopters, bloggers (especially bloggers), conference organizers, conference speakers, media executives - let&#8217;s get our act together and take this party to the next level.</p>
+<p>I, for one, am looking forward to it.</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/chrissaad.wordpress.com/225/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/chrissaad.wordpress.com/225/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/chrissaad.wordpress.com/225/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/chrissaad.wordpress.com/225/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/chrissaad.wordpress.com/225/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/chrissaad.wordpress.com/225/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/chrissaad.wordpress.com/225/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/chrissaad.wordpress.com/225/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/chrissaad.wordpress.com/225/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/chrissaad.wordpress.com/225/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chrissaad.wordpress.com&blog=354903&post=225&subd=chrissaad&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://chrissaad.wordpress.com/2008/12/01/facebook-connect-aka-hailstorm-20/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/2d9567a5dc6d38988355ee3e8c0429f2?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Chris Saad</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Internet Wish: Twitter Bot</title>
+		<link>http://chrissaad.wordpress.com/2008/11/30/internet-wish-twitter-bot/</link>
+		<comments>http://chrissaad.wordpress.com/2008/11/30/internet-wish-twitter-bot/#comments</comments>
+		<pubDate>Sun, 30 Nov 2008 03:30:27 +0000</pubDate>
+		<dc:creator>Chris Saad</dc:creator>
+		
+		<category><![CDATA[Personal]]></category>
+
+		<category><![CDATA[Technology]]></category>
+
+		<category><![CDATA[bot]]></category>
+
+		<category><![CDATA[idea]]></category>
+
+		<category><![CDATA[media 2.0]]></category>
+
+		<category><![CDATA[twitter]]></category>
+
+		<guid isPermaLink="false">http://chrissaad.wordpress.com/?p=220</guid>
+		<description><![CDATA[I would love it if someone would write a TwitterBot service. It would:
+
+Allow you to give it the Username and Password of a given Twitter Account (let&#8217;s say JSKitSupport)
+Auto-follow people when they followed it
+Auto-unfollow people when they unfollow it
+Allow you to register one or more &#8216;Bot Owners&#8217; (Both Twitter account and Email Address)
+Forward any @replies [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p>I would love it if someone would write a TwitterBot service. It would:</p>
+<ul>
+<li>Allow you to give it the Username and Password of a given Twitter Account (let&#8217;s say <a href="http://www.twitter.com/jskitsupport">JSKitSupport</a>)</li>
+<li>Auto-follow people when they followed it</li>
+<li>Auto-unfollow people when they unfollow it</li>
+<li>Allow you to register one or more &#8216;Bot Owners&#8217; (Both Twitter account and Email Address)</li>
+<li>Forward any @replies or references to given keywords to Bot Owners</li>
+<li>Allow bot owners to direct message it and have it relay those messages to its followers (perhaps optionally auto-append the Owner&#8217;s twitter name to the end of the message)</li>
+<li>Allows Bot Owners to direct message it commands</li>
+<li>One of those commands could be &#8216;d tag last&#8217; which ques up the last @reply in some sort of &#8216;follow up&#8217; queue for the bot owners.</li>
+</ul>
+<p>Can you think of any other features? Add them in comments and if I like them I will append them here!</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/chrissaad.wordpress.com/220/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/chrissaad.wordpress.com/220/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/chrissaad.wordpress.com/220/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/chrissaad.wordpress.com/220/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/chrissaad.wordpress.com/220/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/chrissaad.wordpress.com/220/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/chrissaad.wordpress.com/220/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/chrissaad.wordpress.com/220/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/chrissaad.wordpress.com/220/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/chrissaad.wordpress.com/220/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chrissaad.wordpress.com&blog=354903&post=220&subd=chrissaad&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://chrissaad.wordpress.com/2008/11/30/internet-wish-twitter-bot/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/2d9567a5dc6d38988355ee3e8c0429f2?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Chris Saad</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Is Data Portability Safe?</title>
+		<link>http://chrissaad.wordpress.com/2008/11/20/dealing-with-data-portability-privacy-issues/</link>
+		<comments>http://chrissaad.wordpress.com/2008/11/20/dealing-with-data-portability-privacy-issues/#comments</comments>
+		<pubDate>Thu, 20 Nov 2008 13:43:55 +0000</pubDate>
+		<dc:creator>Chris Saad</dc:creator>
+		
+		<category><![CDATA[Technology]]></category>
+
+		<category><![CDATA[dataportability]]></category>
+
+		<category><![CDATA[dataportbility]]></category>
+
+		<category><![CDATA[oauth]]></category>
+
+		<category><![CDATA[openID]]></category>
+
+		<category><![CDATA[prviacy]]></category>
+
+		<guid isPermaLink="false">http://chrissaad.wordpress.com/?p=215</guid>
+		<description><![CDATA[&#8216;What about privacy and security&#8217; is a question that comes up regularly when discussing Data Portability. I&#8217;d like to address some of the reasons why Data Portability is actually good for privacy.
+More safe than today.
+Data Portability is not about putting more personal data in the cloud. We&#8217;re dealing with data that&#8217;s already out there. The [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p>&#8216;What about privacy and security&#8217; is a question that comes up regularly when discussing Data Portability. I&#8217;d like to address some of the reasons why Data Portability is actually good for privacy.</p>
+<p><strong>More safe than today.</strong></p>
+<p>Data Portability is not about putting more personal data in the cloud. We&#8217;re dealing with data that&#8217;s already out there. The goal is to provide the ability to give access to your data to applications you trust.</p>
+<p>Using proper protocols and formats to move the data such as oAuth and OpenID is safer than allowing sites to scrape your mail account by giving it your username and password. They are safer because you are not giving your username and password away and because the access is scoped. Scoped access mean that you can grant specific and precise access to only the data you want to share with the requesting application (e.g. just your address book) as apposed to giving them complete access to your entire gmail account (address book, email, account history, google searches etc).</p>
+<p><strong>Federated Karma - Market Forces made Explicit</strong></p>
+<p>It may be possible to build a distributed trust or Karma system that sites and services can expose on Authorization Screens so that users can make informed decisions before trusting an application.</p>
+<p>Users could rate services and the ratings would be normalized and made available via trusted Karma aggregation services.</p>
+<p>This would provide an explicit meta layer of market sentiment at the point of permitting a data portability transaction.</p>
+<p>This solution is far better than the <a href="http://chrissaad.wordpress.com/2008/11/19/facebook-charging-a-protection-fee/">Facebook Protection Fee</a> solution.</p>
+<p><strong>Privacy is the wrong word</strong></p>
+<p>The real issue should not be labeled Privacy. Privacy is an idea but it&#8217;s not actionable. It can not be converted into &#8216;functionality&#8217;. We should be discussing &#8216;access controls&#8217;, &#8216;portable permission metadata&#8217; and &#8216;universal privacy models&#8217;. These ideas combined allow us to define and implement privacy preferences in concrete terms.</p>
+<p><strong>Hyper Transparency</strong></p>
+<p>Privacy advocates can never and should never come to peace with it, but it&#8217;s clear that traditional ideas of privacy are changing.</p>
+<p>Remember that It was once thought unconscionable to share you photos, daily activities, location, relationship status and other personal information for the world to see. Now it&#8217;s standard practice for young people around the world.</p>
+<p>What taboos of personal privacy will fade next? It&#8217;s quite possible the question asked by future generations of Internet users will ask not why their data is available for everyone to see, but rather why it isn&#8217;t.</p>
+<blockquote><p>&#8220;I think therefore I am&#8221;.</p></blockquote>
+<p>Maybe now it&#8217;s</p>
+<blockquote><p>&#8220;I tweet therefore I am&#8221;.</p></blockquote>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/chrissaad.wordpress.com/215/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/chrissaad.wordpress.com/215/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/chrissaad.wordpress.com/215/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/chrissaad.wordpress.com/215/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/chrissaad.wordpress.com/215/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/chrissaad.wordpress.com/215/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/chrissaad.wordpress.com/215/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/chrissaad.wordpress.com/215/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/chrissaad.wordpress.com/215/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/chrissaad.wordpress.com/215/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chrissaad.wordpress.com&blog=354903&post=215&subd=chrissaad&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://chrissaad.wordpress.com/2008/11/20/dealing-with-data-portability-privacy-issues/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/2d9567a5dc6d38988355ee3e8c0429f2?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Chris Saad</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>The web-wide social network</title>
+		<link>http://chrissaad.wordpress.com/2008/11/19/the-web-wide-social-network/</link>
+		<comments>http://chrissaad.wordpress.com/2008/11/19/the-web-wide-social-network/#comments</comments>
+		<pubDate>Wed, 19 Nov 2008 06:56:36 +0000</pubDate>
+		<dc:creator>Chris Saad</dc:creator>
+		
+		<category><![CDATA[Personal]]></category>
+
+		<category><![CDATA[apml]]></category>
+
+		<category><![CDATA[atom]]></category>
+
+		<category><![CDATA[Attention]]></category>
+
+		<category><![CDATA[dataportability]]></category>
+
+		<category><![CDATA[faradaymeda]]></category>
+
+		<category><![CDATA[js-kit]]></category>
+
+		<category><![CDATA[media 2.0]]></category>
+
+		<category><![CDATA[microformats]]></category>
+
+		<category><![CDATA[oauth]]></category>
+
+		<category><![CDATA[openID]]></category>
+
+		<category><![CDATA[opml]]></category>
+
+		<category><![CDATA[portablecontacts]]></category>
+
+		<category><![CDATA[rss]]></category>
+
+		<category><![CDATA[xmpp]]></category>
+
+		<guid isPermaLink="false">http://chrissaad.wordpress.com/?p=207</guid>
+		<description><![CDATA[Ross Dawson has an excellent summary of a Gartner presentation on the Distributed Social Web by  David Cearley. A web where each participant is their own central node on a web-wide social network.
+It is the only natural conclusion of the vision of Data Portability.
+It will be made possible by a series of futurists, technologists, [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p>Ross Dawson has an excellent summary of a <a href="http://rossdawsonblog.com/weblog/archives/2008/11/gartner_on_the.html">Gartner presentation on the Distributed Social Web</a> by  <a href="http://blogs.gartner.com/david_cearley/">David Cearley</a>. A web where each participant is their own central node on a web-wide social network.</p>
+<p>It is the only natural conclusion of the vision of <a href="http://www.dataportability.org">Data Portability</a>.</p>
+<p>It will be made possible by a series of futurists, technologists, philanthropists and engineers developing core building blocks like OpenID, oAuth, APML, PortableContacts, XMPP, RSS/ATOM, OPML, Microformats and more.</p>
+<p>It will be commercialized by a series of entrepreneurial start ups with stars in their eyes running in and around the feet of the giants who are each fighting each other to keep up. Startups like <a href="http://www.js-kit.com">JS-Kit</a>.</p>
+<p>It will be fueled by traditional and not so traditional media companies, steered by young, idealistic intrapraneurs, who are willing to take a bet in order to stake their claim on the next generation of social networking and human communication.</p>
+<p>It will be monetized by a recognition that one can&#8217;t monetize word-of-mouth. Instead <a href="http://www.apml.org">Attention</a> will emerge as the ultimate way to measure, discover and interact with participants. See <a href="http://www.faradaymedia.com">Faraday Media</a>.</p>
+<p>It will be popularized by bloggers, smart IT journalists and conference organizers who understand the importance of open over closed.</p>
+<p>We have already started to see a preview of the world to come via the early attempts at rudimentary aggregators and proprietary data portability implementations. This is just the beginning of the beginning.</p>
+<p>For a more details around the emerging trends, check out <a href="http://rossdawsonblog.com/weblog/archives/2008/11/gartner_on_the.html">Ross&#8217; post</a>.</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/chrissaad.wordpress.com/207/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/chrissaad.wordpress.com/207/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/chrissaad.wordpress.com/207/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/chrissaad.wordpress.com/207/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/chrissaad.wordpress.com/207/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/chrissaad.wordpress.com/207/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/chrissaad.wordpress.com/207/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/chrissaad.wordpress.com/207/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/chrissaad.wordpress.com/207/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/chrissaad.wordpress.com/207/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chrissaad.wordpress.com&blog=354903&post=207&subd=chrissaad&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://chrissaad.wordpress.com/2008/11/19/the-web-wide-social-network/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/2d9567a5dc6d38988355ee3e8c0429f2?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Chris Saad</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Facebook charging a protection fee?</title>
+		<link>http://chrissaad.wordpress.com/2008/11/19/facebook-charging-a-protection-fee/</link>
+		<comments>http://chrissaad.wordpress.com/2008/11/19/facebook-charging-a-protection-fee/#comments</comments>
+		<pubDate>Wed, 19 Nov 2008 06:06:50 +0000</pubDate>
+		<dc:creator>Chris Saad</dc:creator>
+		
+		<category><![CDATA[Me]]></category>
+
+		<category><![CDATA[Technology]]></category>
+
+		<category><![CDATA[Work]]></category>
+
+		<category><![CDATA[dataportability]]></category>
+
+		<category><![CDATA[facebook]]></category>
+
+		<category><![CDATA[media 2.0]]></category>
+
+		<category><![CDATA[open standards]]></category>
+
+		<guid isPermaLink="false">http://chrissaad.wordpress.com/?p=205</guid>
+		<description><![CDATA[According to CNet, Facebook is going to start charging app developers a fee to achieve &#8216;Verified Application&#8217; status. The fee is optional, but that doesn&#8217;t matter. Apps that are not &#8216;verified&#8217; will quickly get buried by those that are.
+I think in hindsight people will recognize this move as one of the final death knels of [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p><a href="http://blogs.zdnet.com/BTL/?p=10905">According to CNet</a>, Facebook is going to start charging app developers a fee to achieve &#8216;Verified Application&#8217; status. The fee is optional, but that doesn&#8217;t matter. Apps that are not &#8216;verified&#8217; will quickly get buried by those that are.</p>
+<p>I think in hindsight people will recognize this move as one of the final death knels of the Facebook platform as we know it today.</p>
+<p>First, they de-emphasized applications all together by relegating them to a &#8216;boxes&#8217; page and making the stream their primary interaction metaphor (Read: FriendFeed clone). Now they are trying to lock down the platform further, raising the bar for participation and charging what amounts to a protection fee for app developers to get any real attention at all.</p>
+<p>The fact of the matter is, an increasing number of people are finally realizing that Facebook looks very similar to Pre Internet networks, AOL, Passport/Hailstorm, and any other proprietary implementation of a platform that can and must be open.</p>
+<p>The only platform that matters on the web is the web itself, and Facebook through its actions and inactions is helping us all learn this lesson faster than ever.</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/chrissaad.wordpress.com/205/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/chrissaad.wordpress.com/205/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/chrissaad.wordpress.com/205/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/chrissaad.wordpress.com/205/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/chrissaad.wordpress.com/205/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/chrissaad.wordpress.com/205/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/chrissaad.wordpress.com/205/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/chrissaad.wordpress.com/205/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/chrissaad.wordpress.com/205/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/chrissaad.wordpress.com/205/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chrissaad.wordpress.com&blog=354903&post=205&subd=chrissaad&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://chrissaad.wordpress.com/2008/11/19/facebook-charging-a-protection-fee/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/2d9567a5dc6d38988355ee3e8c0429f2?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Chris Saad</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Who owns your comment data?</title>
+		<link>http://chrissaad.wordpress.com/2008/11/11/who-owns-your-comment-data/</link>
+		<comments>http://chrissaad.wordpress.com/2008/11/11/who-owns-your-comment-data/#comments</comments>
+		<pubDate>Tue, 11 Nov 2008 23:27:49 +0000</pubDate>
+		<dc:creator>Chris Saad</dc:creator>
+		
+		<category><![CDATA[Media]]></category>
+
+		<category><![CDATA[Work]]></category>
+
+		<category><![CDATA[dataportability]]></category>
+
+		<category><![CDATA[data ownership]]></category>
+
+		<category><![CDATA[js-kit]]></category>
+
+		<category><![CDATA[media 2.0]]></category>
+
+		<guid isPermaLink="false">http://chrissaad.wordpress.com/?p=203</guid>
+		<description><![CDATA[We have started a conversation over on the JS-Kit blog about data ownership when it comes to comments. This is one of the Data Portability grey areas that needs a resolution in the ongoing journey to create the data web.
+This is also an important question for social media. If we are all participants, who owns [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p>We have started a conversation over on the JS-Kit blog about data ownership when it comes to comments. This is one of the Data Portability grey areas that needs a resolution in the ongoing journey to create the data web.</p>
+<p>This is also an important question for social media. If we are all participants, who owns the space inside which we are particiapting?</p>
+<p><a href="http://blog.js-kit.com/?p=31">I would love your input!</a></p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/chrissaad.wordpress.com/203/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/chrissaad.wordpress.com/203/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/chrissaad.wordpress.com/203/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/chrissaad.wordpress.com/203/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/chrissaad.wordpress.com/203/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/chrissaad.wordpress.com/203/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/chrissaad.wordpress.com/203/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/chrissaad.wordpress.com/203/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/chrissaad.wordpress.com/203/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/chrissaad.wordpress.com/203/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chrissaad.wordpress.com&blog=354903&post=203&subd=chrissaad&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://chrissaad.wordpress.com/2008/11/11/who-owns-your-comment-data/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/2d9567a5dc6d38988355ee3e8c0429f2?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Chris Saad</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Tim O&#8217;reilly talks about Data Portability</title>
+		<link>http://chrissaad.wordpress.com/2008/11/07/tim-oreilly-talks-about-data-portability/</link>
+		<comments>http://chrissaad.wordpress.com/2008/11/07/tim-oreilly-talks-about-data-portability/#comments</comments>
+		<pubDate>Fri, 07 Nov 2008 10:17:54 +0000</pubDate>
+		<dc:creator>Chris Saad</dc:creator>
+		
+		<category><![CDATA[Media]]></category>
+
+		<category><![CDATA[Work]]></category>
+
+		<category><![CDATA[dataportability]]></category>
+
+		<category><![CDATA[media 2.0]]></category>
+
+		<category><![CDATA[timoreilly]]></category>
+
+		<category><![CDATA[web 2.0]]></category>
+
+		<guid isPermaLink="false">http://chrissaad.wordpress.com/?p=198</guid>
+		<description><![CDATA[In this video, Tim O&#8217;reilly speaks about Data Portability. He suggests that it will be much like Open Source software in that it will never truly be adopted. I don&#8217;t know if I agree. 
+Data Portability is less like Open Source software and more like the Internet and the Web itself. The standardized and interoperable protocals [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p><a href="http://www.andreavascellari.com/?p=1236">In this video</a>, Tim O&#8217;reilly speaks about Data Portability. He suggests that it will be much like Open Source software in that it will never truly be adopted. I don&#8217;t know if I agree. </p>
+<p>Data Portability is less like Open Source software and more like the Internet and the Web itself. The standardized and interoperable protocals that make up the web - TCP/IP, HTTP, HTML etc - are adopted by anyone who wants access to Internet users. In much the same way, anyone who wants access to user data from the emerging web-wide data ecosystem will need to adopt emerging data portability formats and protocals.</p>
+<p>Later in the video he goes on to say that data portabilty will actually be adopted, but not through legislation, but rather through organic mechanisms that gravitate towards open solutions that &#8216;just work&#8217;.</p>
+<p>On this front, I agree. But Tim does not mention how we might help the process along. He does not mention that organic processes can and should include incentives. How the <a href="http://www.dataportability.org">DataPortability project</a>, through its definition of the problem and ongoing work to highlight good work towards an open data ecosystem actually encourages our collective desired outcomes.</p>
+<p>Data Portability will indeed occur organically. The building blocks themselves were born out of organic efforts. An <a href="http://www.dataportability.org">accellerant</a> in the form of community, media and support documentation, however, has already helped push things along.</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/chrissaad.wordpress.com/198/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/chrissaad.wordpress.com/198/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/chrissaad.wordpress.com/198/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/chrissaad.wordpress.com/198/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/chrissaad.wordpress.com/198/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/chrissaad.wordpress.com/198/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/chrissaad.wordpress.com/198/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/chrissaad.wordpress.com/198/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/chrissaad.wordpress.com/198/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/chrissaad.wordpress.com/198/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chrissaad.wordpress.com&blog=354903&post=198&subd=chrissaad&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://chrissaad.wordpress.com/2008/11/07/tim-oreilly-talks-about-data-portability/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/2d9567a5dc6d38988355ee3e8c0429f2?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Chris Saad</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Time to get started</title>
+		<link>http://chrissaad.wordpress.com/2008/10/19/time-to-get-started/</link>
+		<comments>http://chrissaad.wordpress.com/2008/10/19/time-to-get-started/#comments</comments>
+		<pubDate>Sun, 19 Oct 2008 19:00:17 +0000</pubDate>
+		<dc:creator>Chris Saad</dc:creator>
+		
+		<category><![CDATA[Business]]></category>
+
+		<category><![CDATA[Personal]]></category>
+
+		<category><![CDATA[Work]]></category>
+
+		<category><![CDATA[change]]></category>
+
+		<category><![CDATA[economy]]></category>
+
+		<category><![CDATA[opportunity]]></category>
+
+		<category><![CDATA[startup]]></category>
+
+		<category><![CDATA[timing]]></category>
+
+		<guid isPermaLink="false">http://chrissaad.wordpress.com/?p=192</guid>
+		<description><![CDATA[In times of change, new opportunity is always created. Always.
+Many have written on the opportunity created by this economic downturn. Here are some of the excerpts:
+Mick from Pollenizer writes:
+1. You don&#8217;t need a boom to grow.
+2. Better access to great people.
+3. A slump doesn&#8217;t stop spending, and it increases in some areas.
+4. There is still [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p>In times of change, new opportunity is always created. Always.</p>
+<p>Many have written on the opportunity created by this economic downturn. Here are some of the excerpts:</p>
+<p><a href="http://www.pollenizer.com/?p=25">Mick from Pollenizer writes</a>:</p>
+<blockquote><p>1. You don&#8217;t need a boom to grow.<br />
+2. Better access to great people.<br />
+3. A slump doesn&#8217;t stop spending, and it increases in some areas.<br />
+4. There is still money available if you look hard, and you deserve it.<br />
+5. The community is still here to support you.<br />
+6. The big guys cut back on R&amp;D letting you do the innovating. </p></blockquote>
+<p>Paul Graham <a href="http://www.paulgraham.com/badeconomy.html">writes</a>:</p>
+<blockquote><p><span style="font-family:verdana;font-size:x-small;">The economic situation is apparently so grim that some experts fear we may be in for a stretch as bad as the mid seventies.</span></p>
+<p><span style="font-family:verdana;font-size:x-small;">When Microsoft and Apple were founded.</span><br />
+&#8230;<br />
+<span style="font-family:verdana;font-size:x-small;">If we&#8217;ve learned one thing from funding so many startups, it&#8217;s that they succeed or fail based on the qualities of the founders. The economy has some effect, certainly, but as a predictor of success it&#8217;s rounding error compared to the founders.</span><br />
+&#8230;<br />
+<span style="font-family:verdana;font-size:x-small;">So maybe a recession is a good time to start a startup. It&#8217;s hard to say whether advantages like lack of competition outweigh disadvantages like reluctant investors. But it doesn&#8217;t matter much either way. It&#8217;s the people that matter. And for a given set of people working on a given technology, the time to act is always now.</span></p></blockquote>
+<p>And <a href="http://emergic.org/2008/10/17/vernture-craziness/">Rajesh Jain writes</a>:</p>
+<blockquote><p>For entrepreneurs, they need to forget about the craziness around and just focus on the business and market. The stuff that&#8217;s happening has little or no impact on the business of most early stage companies — in most cases, their revenue base is too small to see any negative impact from &#8220;market conditions.&#8221; So, any sales person giving market slowdown as a reason for not meeting targets needs to be given a talking to!</p>
+<p>I also think this is a great time to get alternative / disruptive ideas to consumers and businesses. Everyone is much more receptive to  discussions about solutions which provide better ROI. (And without a simpler, cheaper solution, entrepreneurs don&#8217;t really have much of a chance anyways.)</p></blockquote>
+<div>Getting started today with the right idea is indeed an attractive prospect. If, however, you are two years in to your company and looking for extra funding without real traction or poof points, times are going to get very tough.</div>
+<div> </div>
+<div>For startups in this category, I would suggest taking a long hard look at the value you bring to the table, and finding a partner who can absorb and propel your assets through these tough times.</div>
+<div>  </div>
+<div>I was interviewed fo the NYT on Friday on this very subject. I suggested the same thing to the reporter.</div>
+<div> </div>
+<div>More conversation <a href="http://groups.google.com/group/silicon-beach-australia/browse_thread/thread/b2f1216dea9c0092?hl=en">over on Silicon Beach</a> as well (I got many of my snippets from there).</div>
+<div> </div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/chrissaad.wordpress.com/192/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/chrissaad.wordpress.com/192/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/chrissaad.wordpress.com/192/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/chrissaad.wordpress.com/192/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/chrissaad.wordpress.com/192/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/chrissaad.wordpress.com/192/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/chrissaad.wordpress.com/192/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/chrissaad.wordpress.com/192/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/chrissaad.wordpress.com/192/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/chrissaad.wordpress.com/192/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chrissaad.wordpress.com&blog=354903&post=192&subd=chrissaad&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://chrissaad.wordpress.com/2008/10/19/time-to-get-started/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/2d9567a5dc6d38988355ee3e8c0429f2?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Chris Saad</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Who is JS-Kit?</title>
+		<link>http://chrissaad.wordpress.com/2008/10/14/who-is-js-kit/</link>
+		<comments>http://chrissaad.wordpress.com/2008/10/14/who-is-js-kit/#comments</comments>
+		<pubDate>Tue, 14 Oct 2008 15:53:33 +0000</pubDate>
+		<dc:creator>Chris Saad</dc:creator>
+		
+		<category><![CDATA[Business]]></category>
+
+		<category><![CDATA[Me]]></category>
+
+		<category><![CDATA[Personal]]></category>
+
+		<category><![CDATA[Work]]></category>
+
+		<category><![CDATA[dataportability]]></category>
+
+		<category><![CDATA[announcement]]></category>
+
+		<category><![CDATA[faradaymedia]]></category>
+
+		<category><![CDATA[js-kit]]></category>
+
+		<category><![CDATA[khrisloux]]></category>
+
+		<category><![CDATA[media 2.0]]></category>
+
+		<category><![CDATA[personal reality]]></category>
+
+		<category><![CDATA[personal web]]></category>
+
+		<category><![CDATA[web 2.0]]></category>
+
+		<guid isPermaLink="false">http://chrissaad.wordpress.com/?p=167</guid>
+		<description><![CDATA[The news today is that JS-Kit just closed a $3.6m round of funding and I have joined the company as a Strategic Advisor.
+I&#8217;d like to take this moment to explain who JS-Kit is, what it could be, and why I decided to get involved.
+First, I get offered a lot of advisory roles or full time [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p>The <a href="http://www.techmeme.com/081014/p58#a081014p58">news today</a> is that <a href="http://js-kit.com/blog/2008/10/13/funding/">JS-Kit just closed a $3.6m round</a> of funding and I have joined the company as a Strategic Advisor.</p>
+<p>I&#8217;d like to take this moment to explain who JS-Kit is, what it <em>could </em>be, and why I decided to get involved.</p>
+<p>First, I get offered a lot of advisory roles or full time jobs. It&#8217;s always very tempting to help entrepreneurs pursuing their dreams.</p>
+<p>The reality is, however, between my company <a href="http://www.faradaymedia.com">Faraday Media</a>, my work at the <a href="http://www.dataportability.org">DataPortability project</a>, <a href="http://www.apml.org">APML Workgroup</a>, <a href="http://media2.0workgroup.org">Media 2.0 Workgroup</a> and other projects there simply isn&#8217;t enough bandwidth left to give the attention required.</p>
+<p>The JS-Kit opportunity is different. When I <a href="http://blip.tv/file/798908">first met Khris Loux</a> (The CEO of JS-Kit) it was clear very quickly that we had a unique connection and a shared vision for a distributed <a href="http://chrissaad.wordpress.com/2008/06/01/my-vision-for-social-media-personal-reality/">Personal Web</a>. As a result I have broken my own rule and accepted the offer to consult with/advise the company on a formal basis. It will be a significant commitment and take up a large part of my time.</p>
+<p>The company he has quietly built over the last 2 years reflects our shared vision and its success is unmatched in the marketplace. With more than 550,000 registered sites, JS-Kit is the largest provider of light-weight plug in social features on the web. More importantly, though, it has no destination site. A philosophical choice that allows it to execute on a strategy of powering the edge to get more social - and more personal - without siphoning traffic back to a proprietary center.</p>
+<p>JS-Kit technology powers some of the biggest sites on the web - with more to be announced soon.</p>
+<p>This combination of scale and a focus on the edge makes the company uniquely placed to build something very special.</p>
+<p>There are a number of challenges ahead for the company though - challenges of which Khris and the team are all too aware.</p>
+<p>The name is not great! It was the name of a prototype product that became very successful very quickly despite not being ready for prime time so it sorta stuck. Blame Nick Gonzalez for writing it up in Techcrunch only days after it was put live for preliminary testing (just kidding I love Nick in a manly platonic sort of way)</p>
+<p>Adoption is easy, but customization (it&#8217;s possible to make the widgets unrecognizable from the default style) is far too hard to do for average users.</p>
+<p>The design is Web 1.0 at best. The site, brand and products lack a cohesive visual language and a modern look and feel.</p>
+<p>These are just some of the things I will be helping to change over the coming months. The funding round also allows the team to execute on these opportunities quickly. These changes will be a precursor to a much broader strategy that we hope will delight users, empower publishers and surprise the industry.</p>
+<p>In the mean time though, <a href="http://www.faradaymedia.com">Faraday Media</a> is still very much alive and kicking with both my involvement and the involvement of my best friend and co-founder <a href="http://www.twitter.com/ashleyangell">Ashley Angell</a>. I believe the core technologies developed in its labs will change the web. Faraday Media and JS-Kit will continue their business development activities and my role will help to shepherd the process.</p>
+<p>So too is the <a href="http://www.dataportability.org">DataPortability project</a> under the stewardship of the stellar new steering group lead by none other than <a href="http://danielabarbosa.blogspot.com/">Daniela Barbosa</a>.</p>
+<p>So in this time of Economic woes, failing companies, staff layoffs and uncertain times I am proud and honored to be part of a team that is continuing to have a sustainable and positive impact on the web and actually growing the opportunity for a distributed personal ecosystem.</p>
+<p>So now I&#8217;m involved, I&#8217;d like to encourage you to <a href="http://www.js-kit.com">try out the tools</a> on your sites and blogs and <a href="mailto:me@chrissaad.com">send me feedback directly</a>. I&#8217;d like to start a conversation with you to improve the company and the web together.</p>
+<p>Also follow <a href="http://www.twitter.com/chrissaad">Me</a>, <a href="http://www.twitter.com/khrisloux">Khris</a> and <a href="http://www.twitter.com/nancycole">Nancy</a> on Twitter!</p>
+<p> </p>
+<p><strong>Coverage has already started</strong></p>
+<ul>
+<li><a href="http://www.techcrunch.com/2008/10/14/widget-maker-js-kit-closes-36-million-series-b-round/">Techcrunch</a></li>
+<li><a href="http://thenextweb.org/2008/10/14/js-kit-raises-36m-and-welcomes-chris-saad-as-advisor/">Next Web</a></li>
+<li><a href="http://www.informationweek.com/blog/main/archives/2008/10/blog_comment_re.html?cid=RSSfeed_IWK_ALL">InformationWeek</a></li>
+<li><a href="http://news.cnet.com/8301-13577_3-10065274-36.html?tag=mncol;title">Cnet</a></li>
+<li><a href="http://www.downloadsquad.com/2008/10/14/js-kit-raises-3-6m-in-series-b-funding/">Download Squad</a></li>
+<li><a href="http://news.cnet.com/8301-17939_109-10065274-2.html?part=rss&amp;tag=feed&amp;subj=Webware">Web Ware</a></li>
+<li><a href="http://www.readwriteweb.com/archives/bringing_data_portability_to_a.php">Read/Write Web</a></li>
+<li><a href="http://redherring.com/Home/25234">RedHerring</a></li>
+</ul>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/chrissaad.wordpress.com/167/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/chrissaad.wordpress.com/167/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/chrissaad.wordpress.com/167/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/chrissaad.wordpress.com/167/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/chrissaad.wordpress.com/167/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/chrissaad.wordpress.com/167/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/chrissaad.wordpress.com/167/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/chrissaad.wordpress.com/167/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/chrissaad.wordpress.com/167/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/chrissaad.wordpress.com/167/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=chrissaad.wordpress.com&blog=354903&post=167&subd=chrissaad&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://chrissaad.wordpress.com/2008/10/14/who-is-js-kit/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/2d9567a5dc6d38988355ee3e8c0429f2?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Chris Saad</media:title>
+		</media:content>
+	</item>
+	</channel>
+</rss>

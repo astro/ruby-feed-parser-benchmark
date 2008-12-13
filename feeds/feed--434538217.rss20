@@ -1,0 +1,409 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+<channel>
+	<title>Planet Jabber</title>
+	<link>http://planet.jabber.org/</link>
+	<language>en</language>
+	<description>Planet Jabber - http://planet.jabber.org/</description>
+
+<item>
+	<title>Stefan Strigler: JWChat 1.0</title>
+	<guid>http://blog.jwchat.org/?p=117</guid>
+	<link>http://blog.jwchat.org/2008/12/10/jwchat-10/</link>
+	<description>&lt;p&gt;After releasing JSJaC and MUCkl today I’m proud to announce another long awaited release: JWChat v1.0. JWChat is a web based yet full fledged jabber client. It supports most modern browsers like MSIE 6 and 7, Firefox 2.x, Firefox 3.x, Opera, Safari and many more.&lt;br /&gt;
+Just like meebo you can do instant messaging with a variety of different networks by use of jabber transports. JWChat also has full support for MUC built in which lets you take part at groupchats.&lt;br /&gt;
+There is a demo site at &lt;a href=&quot;http://jwchat.org&quot;&gt;http://jwchat.org&lt;/a&gt; where you can give it a first try. Downloads can be found at &lt;a href=&quot;http://blog.jwchat.org/jwchat/download/&quot;&gt;http://blog.jwchat.org/jwchat/download/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I appologize that there is no war file for this release yet. I’ll try to upload one ASAP but I have to fix my tomcat setup here first.&lt;/p&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 16:51:49 +0000</pubDate>
+	<dc:creator>Steve</dc:creator>
+</item>
+<item>
+	<title>Remko Tronçon: Rough cuts of XMPP book now available</title>
+	<guid>http://el-tramo.be/?p=248</guid>
+	<link>http://el-tramo.be/blog/xmppbook-roughcuts</link>
+	<description>&lt;p&gt;While we are working very hard to finish the first draft of our &lt;a href=&quot;http://el-tramo.be/blog/xmppbook-intro&quot;&gt;upcoming book&lt;/a&gt; &lt;em&gt;‘XMPP: The Definitive Guide&lt;/em&gt;’, O’Reilly has recently released early versions of most of the chapters of the book as &lt;a href=&quot;http://oreilly.com/catalog/9780596157197/&quot;&gt;Rough Cuts&lt;/a&gt;. People interested in learning about XMPP &lt;em&gt;today&lt;/em&gt; can now get a preliminary version of the book, and get updates as the book progresses.&lt;/p&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 16:25:10 +0000</pubDate>
+	<dc:creator>Remko Tronçon</dc:creator>
+</item>
+<item>
+	<title>Stefan Strigler: MUCkl 0.4.4 is out</title>
+	<guid>http://blog.jwchat.org/?p=116</guid>
+	<link>http://blog.jwchat.org/2008/12/10/muckl-044-is-out/</link>
+	<description>&lt;p&gt;A new release of &lt;a href=&quot;http://blog.jwchat.org/muckl/&quot;&gt;MUCkl&lt;/a&gt; is available. MUCkl is a lightweight spin off project of &lt;a href=&quot;http://jwchat.org&quot;&gt;JWChat&lt;/a&gt;. It offers web based access to Jabber/XMPP groupchats/conferences based on the MUC protocol without having to register for a jabber account (just enter your nickname and off you go!).&lt;br /&gt;
+This release mainly fixes support for Firefox 3 plus some minor bugs.&lt;br /&gt;
+Try out MUCkl at &lt;a href=&quot;http://muckl.org&quot;&gt;http://muckl.org&lt;/a&gt; or download it from &lt;a href=&quot;http://blog.jwchat.org/muckl/&quot;&gt;http://blog.jwchat.org/muckl/&lt;/a&gt;.&lt;/p&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 12:25:37 +0000</pubDate>
+	<dc:creator>Steve</dc:creator>
+</item>
+<item>
+	<title>Extended Conversation: Privacy Policy Approved</title>
+	<guid>http://blog.xmpp.org/?p=129</guid>
+	<link>http://blog.xmpp.org/?p=129</link>
+	<description>&lt;p&gt;In its meeting today, the XSF’s &lt;a href=&quot;http://xmpp.org/xsf/board/&quot;&gt;Board of Directors&lt;/a&gt; approved the &lt;a href=&quot;http://xmpp.org/xsf/privacy.shtml&quot;&gt;privacy policy&lt;/a&gt; for xmpp.org and jabber.org, including the &lt;a href=&quot;http://www.jabber.org/web/Jabber.org&quot;&gt;jabber.org IM service&lt;/a&gt;. Many thanks to everyone who provided feedback on the draft policy.&lt;/p&gt;</description>
+	<pubDate>Tue, 09 Dec 2008 21:30:46 +0000</pubDate>
+	<dc:creator>stpeter</dc:creator>
+</item>
+<item>
+	<title>Stefan Strigler: JSJaC v1.3.2 released</title>
+	<guid>http://blog.jwchat.org/?p=111</guid>
+	<link>http://blog.jwchat.org/2008/12/09/jsjac-v132-released/</link>
+	<description>&lt;p&gt;A new release of &lt;a href=&quot;http://blog.jwchat.org/jsjac/&quot;&gt;JSJaC&lt;/a&gt; is available. JSJaC is a jabber/xmpp library for web based clients written in JavaScript. It supports BOSH and HTTP Polling for connecting to a jabber server. This release mainly fixes issues with Firefox 3.&lt;/p&gt;</description>
+	<pubDate>Tue, 09 Dec 2008 14:19:10 +0000</pubDate>
+	<dc:creator>Steve</dc:creator>
+</item>
+<item>
+	<title>Jack Moffitt: code.stanziq.com Switching to Git</title>
+	<guid>tag:metajack.im,2008://1.129</guid>
+	<link>http://feeds.feedburner.com/~r/metajack/~3/479201442/</link>
+	<description>&lt;p&gt;My team and I have been talking about switching to distributed version control for some time now.  We’ve had a lot of great contributions from the community, but we’ve felt the barriers to participation could have been much lower.  After investigating several different systems, we finally settled on &lt;a href=&quot;http://git.or.cz&quot;&gt;Git&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I’m still in the process of converting all the &lt;a href=&quot;http://subversion.tigris.org&quot;&gt;Subversion&lt;/a&gt; history, but we’ve already got our internal projects up and running on the new system.  The only other change is that Web repository browsing will be done via &lt;a href=&quot;http://hjemli.net/git/cgit/&quot;&gt;cgit&lt;/a&gt; instead of &lt;a href=&quot;http://trac.edgewall.com&quot;&gt;Trac’s&lt;/a&gt; internal browser.  cgit turns out to be much, much faster than the git plugin for Trac, or Trac’s Subversion browser, and it looks pretty nice to boot.&lt;/p&gt;
+
+&lt;p&gt;At some point I’d like to write up a list of pros and cons of the various distributed version control systems that we found during our research.  Most of the reviews we found were from people who compared them only to Subversion and not to each other, and sites like &lt;a href=&quot;http://whygitisbetterthanx.com&quot;&gt;whygitisbetterthanx.com&lt;/a&gt; are a little one sided.&lt;/p&gt;
+
+        
+
+    &lt;img src=&quot;http://feeds.feedburner.com/~r/metajack/~4/479201442&quot; height=&quot;1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Tue, 09 Dec 2008 12:40:49 +0000</pubDate>
+	<dc:creator>Jack Moffitt</dc:creator>
+</item>
+<item>
+	<title>Peter Saint-Andre: FLOSSing</title>
+	<guid>https://stpeter.im/?p=2363</guid>
+	<link>https://stpeter.im/?p=2363</link>
+	<description>&lt;p&gt;I’ve been so busy lately that I forgot to mention that I’ll be interviewed on &lt;a href=&quot;http://twit.tv/FLOSS&quot;&gt;FLOSS Weekly&lt;/a&gt; later today (to be exact, at 22:00 UTC, i.e. T-4 hours). You can listen live at &lt;a href=&quot;http://twit.am/&quot;&gt;twit.am&lt;/a&gt; and send me questions in the &lt;a href=&quot;xmpp:jdev@conference.jabber.org&quot;&gt;jdev@conference.jabber.org&lt;/a&gt; chatroom. :)&lt;/p&gt;
+&lt;p&gt;UPDATE: The podcast has been posted at &lt;a href=&quot;http://twit.tv/floss49&quot;&gt;http://twit.tv/floss49&lt;/a&gt;!&lt;/p&gt;</description>
+	<pubDate>Mon, 08 Dec 2008 04:21:37 +0000</pubDate>
+	<dc:creator>stpeter</dc:creator>
+</item>
+<item>
+	<title>Jack Moffitt: Great Peter Saint-Andre Interview on FLOSS Weekly</title>
+	<guid>tag:metajack.im,2008://1.128</guid>
+	<link>http://feeds.feedburner.com/~r/metajack/~3/478068841/</link>
+	<description>&lt;p&gt;&lt;a href=&quot;http://stpeter.im&quot;&gt;Peter Saint-Andre&lt;/a&gt; was interviewed this week on &lt;a href=&quot;http://twit.tv/FLOSS&quot;&gt;FLOSS Weekly&lt;/a&gt;.  I’m not sure how I missed this podcast series before, but it is quite excellent, and I’ve been making up for lost time listening to back episodes.  Several of us listened to &lt;a href=&quot;http://twit.tv/floss49&quot;&gt;Peter’s interview&lt;/a&gt; live, but in case you missed it, it is now available on the main site and through iTunes.&lt;/p&gt;
+
+        
+
+    &lt;img src=&quot;http://feeds.feedburner.com/~r/metajack/~4/478068841&quot; height=&quot;1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Mon, 08 Dec 2008 03:41:09 +0000</pubDate>
+	<dc:creator>Jack Moffitt</dc:creator>
+</item>
+<item>
+	<title>Jack Moffitt: Web Hooks Notifications For Git</title>
+	<guid>tag:metajack.im,2008://1.127</guid>
+	<link>http://feeds.feedburner.com/~r/metajack/~3/477157661/</link>
+	<description>&lt;p&gt;A few days ago I posted about my &lt;a href=&quot;http://github.com/metajack/commitbot/tree/master&quot;&gt;commitbot&lt;/a&gt; code which notifies XMPP multi-user chat rooms about &lt;a href=&quot;http://git.or.cz&quot;&gt;Git&lt;/a&gt; repository changes.  The script used &lt;a href=&quot;http://github.com&quot;&gt;GitHub’s&lt;/a&gt; &lt;a href=&quot;http://github.com/guides/post-receive-hooks&quot;&gt;Web hook API&lt;/a&gt;.  For those of you not using GitHub, I’ve also written a Web hook notifier post-receive hook script.&lt;/p&gt;
+
+&lt;p&gt;You can find the Python code in my &lt;a href=&quot;http://github.com/metajack/notify-webhook/tree/master&quot;&gt;notify-webhook&lt;/a&gt; GitHub repository.  It will allow any Git repository to use Web hook enabled services, and it follows the GitHub API as closely as possible.  &lt;/p&gt;
+
+&lt;p&gt;For example, you could use notify-webhook along with any of the service integration scripts that GitHub provides in its &lt;a href=&quot;http://github.com/github/github-services/tree/master&quot;&gt;github-services&lt;/a&gt; to provide things like XMPP, IRC, Campfire, or Twitter integration for arbitrary Git repositories, not just those hosted on GitHub.&lt;/p&gt;
+
+        
+
+    &lt;img src=&quot;http://feeds.feedburner.com/~r/metajack/~4/477157661&quot; height=&quot;1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Sun, 07 Dec 2008 02:55:10 +0000</pubDate>
+	<dc:creator>Jack Moffitt</dc:creator>
+</item>
+<item>
+	<title>Jack Moffitt: My Identi.ca Wishlist</title>
+	<guid>tag:metajack.im,2008://1.126</guid>
+	<link>http://feeds.feedburner.com/~r/metajack/~3/476407292/</link>
+	<description>&lt;p&gt;&lt;a href=&quot;htt://identi.ca&quot;&gt;Identi.ca&lt;/a&gt; has come a long way in a short time.  Although I don’t agree with all the technical decisions &lt;a href=&quot;http://identi.ca/evan&quot;&gt;Evan&lt;/a&gt; makes, by and large, he’s created a useful service and a community that I enjoy participating in.  Having been a regular user or some time, I have accumulated a number of wishlist items that I would love to see implemented.&lt;/p&gt;
+
+        &lt;h2&gt;More XMPP Integration&lt;/h2&gt;
+
+&lt;p&gt;While I would love for Identi.ca to use XMPP on the back end, that is not what I mean in this case.  The XMPP chat interface to Identi.ca works quite well, but it is limited to receiving and posting dents, and posting private dents.  Here are some of the missing pieces I’m waiting for:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Direct messages should go to my IM client; currently I have to use the Web site to receive direct messages, even though I can send them right from my IM client.  It would be even better if the XMPP bot was rewritten as a component so that it could make direct messages appears in new tabs like &lt;a href=&quot;http://tweet.im&quot;&gt;Tweet.im&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Subscribing and unsubscribing from contacts is only available on the Web site.  I would love to be able to type &lt;code&gt;follow tetsuo&lt;/code&gt; when I notice someone having an interesting conversation with someone I don’t know.  This would go perfect with the unsubscribed @-reply support that was recently added.&lt;/li&gt;
+&lt;li&gt;Notices of favorites should get sent to my IM client as well, perhaps as a configurable option.  I don’t want to keep switching back and forth between e-mail, the Web browser, and my IM client.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://enjit.com&quot;&gt;Enjit&lt;/a&gt; has a great reply system in their real time &lt;a href=&quot;http://www.friendfeed.com&quot;&gt;FriendFeed&lt;/a&gt; interface.  It would be nice to have something like this in Identi.ca, and one use of it would be to allow marking favorites right from the IM client.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Stop Teasing Me&lt;/h2&gt;
+
+&lt;p&gt;Why does Identi.ca tease me so?  Everytime someone favorites one of my dents, I get a e-mail notice about it.  That notice however doesn’t include the text of the dent I sent, so I have no idea which dent amused them without clicking through to the Web site.  &lt;/p&gt;
+
+&lt;p&gt;I feel like Identi.ca does not respect my time when it makes me jump through this hoop.  Just give me the data I want already; it’s not like Evan has ads to sell on the Web site.&lt;/p&gt;
+
+&lt;h2&gt;IM Interface Polish&lt;/h2&gt;
+
+&lt;p&gt;The Web interface has lots of polish that does not exist yet in the IM interface.  For example, the Web interface will shorten URLs automatically.  It will also put the real URL in the tooltip.  The IM interface has none of this.  I have to manually shorten my URLs, and I never know what kind of link I’m clicking on.&lt;/p&gt;
+
+&lt;h2&gt;Out Of Band Information&lt;/h2&gt;
+
+&lt;p&gt;I like tags, but rarely use them because they eat up a lot of my 140 character allotment.  These should be transmitted out of band in the Atom payload and not count against my character limit.  I think they would be a lot more useful this way.&lt;/p&gt;
+
+&lt;p&gt;The IM interface could just append them to the end of dents, just as if the person had typed them there.  It could also append any of the automatic tags that are not supported at Identi.ca.&lt;/p&gt;
+
+&lt;h2&gt;Changelogs and Documentation&lt;/h2&gt;
+
+&lt;p&gt;Evan and others are adding new features all the time, but half the time I never know about them until I see someone else using them or discussing them.  Identi.ca really needs a small blog that posts all the updates and new features.  I want to play with new stuff, but I can’t if I don’t know about it.&lt;/p&gt;
+
+&lt;p&gt;It would also be great if all the features were documented somewhere.  i see peole talking about the new &lt;code&gt;@#tag&lt;/code&gt; type group support, but I can’t find anything about how this works.  New people coming to the service are going to have a steeper and steeper learning curve.&lt;/p&gt;
+
+&lt;p&gt;At least the thriving community makes it easy to pick up these things by osmosis, but it could be better.&lt;/p&gt;
+
+&lt;h2&gt;What About You?&lt;/h2&gt;
+
+&lt;p&gt;What are your wishlist features?  Even if you use some other microblogging server, I’d love to know what you find lacking.  The ideas are still young, and I’m excited to see all the experimentation.&lt;/p&gt;
+
+&lt;p&gt;If you aren’t on Identi.ca, give it a try.  You can follow me at &lt;a href=&quot;http://identi.ca/metajack&quot;&gt;identi.ca/metajack&lt;/a&gt;.&lt;/p&gt;
+
+    &lt;img src=&quot;http://feeds.feedburner.com/~r/metajack/~4/476407292&quot; height=&quot;1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Sat, 06 Dec 2008 06:28:45 +0000</pubDate>
+	<dc:creator>Jack Moffitt</dc:creator>
+</item>
+<item>
+	<title>Fabio Forno: Update on the Lampiro release</title>
+	<guid>http://blog.bluendo.com/ff/update-on-the-lampiro-release</guid>
+	<link>http://blog.bluendo.com/ff/update-on-the-lampiro-release</link>
+	<description>&lt;p&gt;Differently from what written yesterday, TLS and compression weren't enabled in the build since it was meant to be just a preview release (the official &quot;stable&quot; one will be announced here &lt;a href=&quot;http://lampiro.bluendo.com/&quot;&gt;http://lampiro.bluendo.com&lt;/a&gt;). Now we provide these three different builds:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Light, with no TLS and compression&lt;/li&gt;&lt;li&gt;With compression only&lt;/li&gt;&lt;li&gt;With TLS and compression (side note: if you use TLS compression doesn't work since there is no purpose in compressing an already encrypted stream, and Bouncy Castle doesn't support compression in the mobile version yet)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;You may &lt;a href=&quot;http://code.google.com/p/lampiro/downloads/list&quot;&gt;download them from the usual address&lt;/a&gt;.&lt;/p&gt;&lt;p&gt; And, finally, for any discussion about the client you can find us in this chatroom lampiro@conference.jabber.bluendo.com (if we don't sleep ;) ) &lt;/p&gt;</description>
+	<pubDate>Fri, 05 Dec 2008 16:38:19 +0000</pubDate>
+	<dc:creator>Fabio Forno</dc:creator>
+</item>
+<item>
+	<title>Jack Moffitt: Send GitHub Commits to XMPP Chat Rooms</title>
+	<guid>tag:metajack.im,2008://1.125</guid>
+	<link>http://feeds.feedburner.com/~r/metajack/~3/475422407/</link>
+	<description>&lt;p&gt;We’re in the process of switching our development workflow from &lt;a href=&quot;http://subversion.tigris.org&quot;&gt;Subversion&lt;/a&gt; to &lt;a href=&quot;http://git.or.cz&quot;&gt;git&lt;/a&gt;.  As part of this transition, we wanted to put notifications in our development group chat room.  &lt;a href=&quot;http://github.com&quot;&gt;GitHub&lt;/a&gt; has already standardized &lt;a href=&quot;http://github.com/guides/post-receive-hooks&quot;&gt;Web hooks&lt;/a&gt; and provides integration with IRC and other services.  I decided to implement an XMPP bot that listened for these HTTP push notifications and send commit information to the room.  &lt;/p&gt;
+
+&lt;p&gt;The code is available in my &lt;a href=&quot;http://github.com/metajack/commitbot/tree/master&quot;&gt;commitbot repository&lt;/a&gt;.  Thanks to &lt;a href=&quot;http://twistedmatrix.com&quot;&gt;Twisted&lt;/a&gt; and &lt;a href=&quot;http://wokkel.ik.nu&quot;&gt;Wokkel&lt;/a&gt; this was surprisingly simple and occupies less than a hundred lines of code.  Commitbot will send both plain text and &lt;a href=&quot;http://www.xmpp.org/extensions/xep-0071.html&quot;&gt;XHTML-IM&lt;/a&gt; formatted messages.  The plain ones look like this:&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;center&gt;&lt;img src=&quot;http://metajack.im/code/gitbot-plain.png&quot; alt=&quot;gitbot-plain.png&quot; height=&quot;66&quot; border=&quot;0&quot; width=&quot;680&quot; /&gt;&lt;/center&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;The next part of this project is to implement a git hook script that can send these notifications just like GitHub does.&lt;/p&gt;
+
+        
+
+    &lt;img src=&quot;http://feeds.feedburner.com/~r/metajack/~4/475422407&quot; height=&quot;1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Fri, 05 Dec 2008 06:16:48 +0000</pubDate>
+	<dc:creator>Jack Moffitt</dc:creator>
+</item>
+<item>
+	<title>Fabio Forno: Hooray!</title>
+	<guid>http://blog.bluendo.com/ff/hooray</guid>
+	<link>http://blog.bluendo.com/ff/hooray</link>
+	<description>&lt;p&gt;Christmas is approaching and it's bringing you a gift: after a very long and hard work Lampiro, our mobile XMPP client, has been completely rewritten with the addition of many many features:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Compression&lt;br /&gt;&lt;/li&gt;&lt;li&gt;TLS &lt;br /&gt;&lt;/li&gt;&lt;li&gt;Groupchats&lt;/li&gt;&lt;li&gt;Gateway support&lt;/li&gt;&lt;li&gt;Improved dataforms &lt;/li&gt;&lt;li&gt;New graphical UI with many tweaks for improving usability&lt;/li&gt;&lt;li&gt;Support for touch screens&lt;br /&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt; But there are two more technical &quot;&lt;em&gt;features&lt;/em&gt;&quot; which make us even more excited:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;the new graphical UI with the support of layouts is just the first enabling step in our vision of an XMPP client as the preferred developement platforms for mobiles; yes we strongly believe that the right choice for delivering applications to mobiles is not the browser, but a rich IM client, supplying asynchronous messaging and presence (more on this in the next days) &lt;/li&gt;&lt;li&gt;and last but not least, now the code is completely opensourced under GPL, so you can get and hack it, contributing to build the best IM client! &lt;/li&gt;&lt;/ul&gt;&lt;p&gt; And before closing the link where you can download both the compiled jar and the source code: http://code.google.com/p/lampiro/&lt;/p&gt;&lt;p&gt;Happy messaging! &lt;br /&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 04 Dec 2008 23:10:37 +0000</pubDate>
+	<dc:creator>Fabio Forno</dc:creator>
+</item>
+<item>
+	<title>Hal Rottenberg: Psi Keeps Rollin’</title>
+	<guid>http://halr9000.com/article/657</guid>
+	<link>http://halr9000.com/article/657</link>
+	<description>&lt;a href=&quot;http://halr9000.com/article/category/software/instant-messaging/jabber&quot; title=&quot;Jabber&quot;&gt;&lt;img src=&quot;http://halr9000.com/wp-content/icons/topic_jabber.png&quot; align=&quot;right&quot; height=&quot;87&quot; alt=&quot;Jabber&quot; width=&quot;64&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://halr9000.com/article/category/software/instant-messaging/psi&quot; title=&quot;Psi&quot;&gt;&lt;img src=&quot;http://halr9000.com/wp-content/icons/topic_psi.png&quot; align=&quot;right&quot; height=&quot;64&quot; alt=&quot;Psi&quot; width=&quot;64&quot; /&gt;&lt;/a&gt;
+&lt;p&gt;We’ve averaged 1,500 downloads a day of &lt;a href=&quot;http://psi-im.org&quot;&gt;Psi&lt;/a&gt; for years. It truly amazes me. We’re almost at 2.4 MILLION downloads, can you believe it? &lt;/p&gt;
+&lt;p&gt;I whipped up this chart from Sourceforge data:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://halr9000.com/stuff/PsiKeepsRollin_9AAD/image.png&quot;&gt;&lt;img src=&quot;http://halr9000.com/stuff/PsiKeepsRollin_9AAD/image_thumb.png&quot; style=&quot;border-top-width: 0px; display: inline; border-left-width: 0px; border-bottom-width: 0px; border-right-width: 0px;&quot; title=&quot;image&quot; height=&quot;427&quot; width=&quot;659&quot; alt=&quot;image&quot; border=&quot;0&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 04 Dec 2008 17:00:00 +0000</pubDate>
+	<dc:creator>halr9000</dc:creator>
+</item>
+<item>
+	<title>Artur Hefczyc: Managing virtual domains using Psi client</title>
+	<guid>http://www.tigase.org/1475 at http://www.tigase.org</guid>
+	<link>http://www.tigase.org/en/content/managing-virtual-domains-using-psi-client</link>
+	<description>&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;This is a simple presentation showing how to manage virtual hosts on the Tigase server from the XMPP client.&lt;/p&gt;</description>
+	<pubDate>Thu, 04 Dec 2008 01:57:16 +0000</pubDate>
+	<dc:creator>kobit</dc:creator>
+</item>
+<item>
+	<title>Jack Moffitt: BOSH As Interoperable Transport Solution</title>
+	<guid>tag:metajack.im,2008://1.124</guid>
+	<link>http://feeds.feedburner.com/~r/metajack/~3/473995404/</link>
+	<description>&lt;p&gt;Over on the &lt;a href=&quot;http://nih.blogspot.com/&quot;&gt;Not Invented Here&lt;/a&gt; blog, Lisa &lt;a href=&quot;http://nih.blogspot.com/2008/12/im-following-up-on-my-last-rant-on.html&quot;&gt;talks&lt;/a&gt; about &lt;a href=&quot;http://www.xmpp.org/extensions/xep-0124.html&quot;&gt;BOSH&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;If it really becomes universally supported in servers, then we could write any new application on top of XMPP and it will work over HTTP as well as natively over TCP. Now that’s interoperability! &lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Many people are starting to do exactly this.  Why provide two transports when one will do?  You can even use the same API to interact with XMPP over TCP as with HTTP; just see &lt;a href=&quot;http://code.stanziq.com/strophe&quot;&gt;Strophe&lt;/a&gt; for an example.&lt;/p&gt;
+
+&lt;p&gt;Another thing to note is that BOSH is split up into two parts.  One part just sets up a two way XML stream; the second part puts XMPP semantics on top of this.  I don’t believe any of the BOSH implementations currently support the non-XMPP BOSH, but I’m sure they could be easily modified to do so.&lt;/p&gt;
+
+&lt;p&gt;This is yet another reason to use BOSH and XMPP over other Comet-y techniques.&lt;/p&gt;
+
+        
+
+    &lt;img src=&quot;http://feeds.feedburner.com/~r/metajack/~4/473995404&quot; height=&quot;1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Wed, 03 Dec 2008 21:24:11 +0000</pubDate>
+	<dc:creator>Jack Moffitt</dc:creator>
+</item>
+<item>
+	<title>Artur Hefczyc: Virtual Hosts in the Tigase server</title>
+	<guid>http://www.tigase.org/1470 at http://www.tigase.org</guid>
+	<link>http://www.tigase.org/en/content/virtual-hosts-tigase-server</link>
+	<description>&lt;p&gt;The Tigase server supports multiple virtual hosts for a single server installation. This is supported via &lt;a href=&quot;http://projects.tigase.org/server/trac/browser/trunk/src/main/java/tigase/vhosts/VHostManagerIfc.java&quot;&gt;VHostManager&lt;/a&gt; - the new Tigase server component added recently to the implementation. Virtual hosts can be added or removed, enabled or disabled at the server runtime without restarting the service or disrupting normal operation.&lt;/p&gt;
+&lt;p&gt;This document describes how virtual hosts work in the Tigase server and how to take the most of this feature in your installation.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.tigase.org/files/image/vhost-manager/tigase-basic-config-vhosts.png&quot;&gt;&lt;img src=&quot;http://www.tigase.org/files/image/vhost-manager/tigase-basic-config-vhosts-small.png&quot; align=&quot;left&quot; height=&quot;150&quot; width=&quot;200&quot; vspace=&quot;5&quot; alt=&quot;Virtual hosts property in the GUI installer&quot; hspace=&quot;5&quot; /&gt;&lt;/a&gt; The simplest and default way to set virtual hosts is the server configuration. You can either edit manually the &lt;a href=&quot;http://www.tigase.org/content/initproperties&quot;&gt;init.properties&lt;/a&gt; file or use the graphical installer/configuration program to set the property. If you want to edit it manually &lt;a href=&quot;http://www.tigase.org/content/initproperties&quot;&gt;search for&lt;/a&gt; '&lt;strong&gt;--virt-hosts&lt;/strong&gt;' property for more detailed description.&lt;/p&gt;
+&lt;p&gt;Alternatively you can use the GUI installer as shown on the left hand side to set a list of virtual hosts.&lt;/p&gt;
+&lt;p&gt;This method however has many disadvantages. It requires the server restart after each change, the configuration file is not the best place to store long list of virtual domains and you can not actually set any additional parameters for the domain other than it does exist or not.&lt;/p&gt;
+&lt;p&gt;There is another way to store and control virtual domains in the Tigase server. They can be put in the database and managed using ad-hoc commands. List of domains can be modified outside the Tigase server through any third-party system or web application and the server reloads the list of when received &lt;strong&gt;VHOSTS_RELOAD&lt;/strong&gt; ad-hoc command.&lt;/p&gt;
+&lt;p&gt;There are 2 more ad-hoc commands which allow you to add/update and remove virtual hosts via XMPP protocol:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;VHOSTS_UPDATE&lt;/strong&gt; - for adding new virtual host or changing parameters of the existing domain&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;VHOSTS_REMOVE&lt;/strong&gt; - for removing existing virtual domain from the list of the server domains.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;By default, both commands cause vhosts list update in the permanent repository. This is however &lt;a href=&quot;http://projects.tigase.org/server/trac/browser/trunk/src/main/java/tigase/vhosts/VHostRepository.java&quot;&gt;VHostRepository&lt;/a&gt; implementation dependent feature and can be changed in your repository implementation.&lt;/p&gt;
+&lt;p&gt;Commands for virtual domains management can be executed using any XMPP client with a good support for service discovery and ad-hoc commands, for example &lt;a href=&quot;http://psi-im.org/&quot;&gt;Psi&lt;/a&gt;. Commands are accepted only when they are sent by the service administrator.&lt;/p&gt;
+&lt;p&gt;Please refer to documents listed below for more detailed information on the following topics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.tigase.org/content/managing-virtual-domains-using-psi-client&quot;&gt;Managing virtual domains using Psi client&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.tigase.org/content/specification-ad-hoc-commands-used-manage-virtual-domains&quot;&gt;Specification for ad-hoc commands used to manage virtual domains&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.tigase.org/content/api-description-virtual-domains-management-tigase-server&quot;&gt;API description for virtual domains management in the Tigase server&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.tigase.org/en/content/virtual-hosts-tigase-server&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Wed, 03 Dec 2008 15:03:21 +0000</pubDate>
+	<dc:creator>kobit</dc:creator>
+</item>
+<item>
+	<title>Extended Conversation: XMPP Roundup 3</title>
+	<guid>http://blog.xmpp.org/?p=88</guid>
+	<link>http://blog.xmpp.org/?p=88</link>
+	<description>&lt;p&gt;&lt;strong&gt;Is There a New Successor to SIP?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Is XMPP is set to overthrow SIP as the VoIP signaling king? &lt;a href=&quot;http://blog.radvision.com/voipsurvivor/2008/11/27/is-there-a-new-successor-to-sip/&quot; target=&quot;_blank&quot;&gt;Tsahi  Levent-Levi, a system architect at RADVISION&lt;/a&gt;, thinks it’s a possibility.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Codebits 2008 &lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.simplicidade.org/notes/archives/2008/11/codebits_2008_x.html&quot; target=&quot;_blank&quot;&gt;XSF Member Pedro Melo has posted the content of his “XMPP - Hands On”&lt;/a&gt; presentation  at Codebits 2008 (a Portuguese event hosted by Portuguese Telecoms company &lt;a href=&quot;http://www.sapo.pt/&quot; target=&quot;_blank&quot;&gt;Sapo.pt&lt;/a&gt; ). The presentation itself  is in Portuguese, the code accompanying it is, obviously, not &lt;span class=&quot;moz-smiley-s1&quot;&gt;&lt;span&gt; :-) &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;XMPP &amp;amp; Groupware&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Another XSF Member, &lt;a href=&quot;http://nyco.wordpress.com/2008/11/27/jabberxmpp-dans-les-groupwares-obm-et-zimbra/&quot; target=&quot;_blank&quot;&gt;Nicolas Vérité, alerts us to a piece of XMPP groupware news&lt;/a&gt; -  that Thomas Cataldo has integrated XMPP instant messaging into  MiniG, a webmail client for the OBM groupware solution (&lt;a href=&quot;http://tcataldo.blogspot.com/&quot; target=&quot;_blank&quot;&gt;there’s a short video demo on Thomas’ blog)&lt;/a&gt;. and notes that &lt;a href=&quot;http://www.zimbra.com/&quot; target=&quot;_blank&quot;&gt;Zimbra&lt;/a&gt;, another groupware product also integrates Openfire.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Mingle&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Sjoerd Simons has announced on the Jingle ML a new spec called Mingle, describing Multi-User Jingle Voice sessions :&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://mail.jabber.org/pipermail/jingle/2008-December/000285.html&quot; target=&quot;_blank&quot;&gt;http://mail.jabber.org/pipermail/jingle/2008-December/000285.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://telepathy.freedesktop.org/mingle/mingle.html&quot; target=&quot;_blank&quot;&gt;http://telepathy.freedesktop.org/mingle/mingle.html&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://telepathy.freedesktop.org/wiki/Mingle&quot; target=&quot;_blank&quot;&gt;http://telepathy.freedesktop.org/wiki/Mingle&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Cloud Standardization: Unified Cloud Interface (UCI)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;XMPP as a unified cloud interface component? Reuvan Cohen, of &lt;a href=&quot;http://www.enomaly.com/&quot; target=&quot;_blank&quot;&gt;Enomaly&lt;/a&gt;, &lt;a href=&quot;http://www.elasticvapor.com/2008/11/cloud-standardization-unified-cloud.html&quot; target=&quot;_blank&quot;&gt;talks enthusiastically about implementing the Unified Cloud Interface (UCI) as  a XEP&lt;/a&gt;. Reuvan doesn’t appear to be on the XSF members list, perhaps he should be?&lt;/p&gt;</description>
+	<pubDate>Tue, 02 Dec 2008 21:52:39 +0000</pubDate>
+	<dc:creator>willsheward</dc:creator>
+</item>
+<item>
+	<title>Extended Conversation: XMPP Roundup 2</title>
+	<guid>http://blog.xmpp.org/?p=82</guid>
+	<link>http://blog.xmpp.org/?p=82</link>
+	<description>&lt;p&gt;In a relatively slow week for XMPP-related news:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Deadline&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://webworkerdaily.com/2008/11/10/deadline-simple-reminders/&quot; target=&quot;_blank&quot;&gt;Web Worker Daily&lt;/a&gt;, amongst others, reported on the launch of ‘&lt;a href=&quot;http://deadlineapp.com&quot; target=&quot;_blank&quot;&gt;Deadline&lt;/a&gt;‘ a web-based reminder service with a plain english interface which uses email and XMPP IM to send reminders of appointments and tasks.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;FriendFeed&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://gillmorgang.techcrunch.com/2008/11/10/gillmor-gang-111008/&quot; target=&quot;_blank&quot;&gt;FriendFeed co-founder Bret Taylor joined the Gilmore Gang podcast&lt;/a&gt; to talk about their release of XMPP realtime services. The podcast is worth a listen, with the XMPP specific discussions starting at 15:30 into the show.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IBM Blue Spruce&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.readwriteweb.com/archives/ibm_blue_spruce_first_look.php&quot; target=&quot;_blank&quot;&gt;IBM gave ReadWriteWeb a first look at Blue Spruce&lt;/a&gt;, a complete browser-based application development platform that the company has been working on for the last 5 months and plans to launch around 2010. Blue Spruce combines a Co-Web Server and a Client Toolkit, which together provide a development platform that enables developers to push their applications to the browser. Server and Client communicate using XMPP. Slightly &lt;a href=&quot;http://www.cmswire.com/cms/enterprise-20/ibms-blue-spruce-shifts-development-to-web-browsers-003510.php&quot; target=&quot;_blank&quot;&gt;more detail can be found in an article on CMS Wire&lt;/a&gt;.&lt;/p&gt;</description>
+	<pubDate>Tue, 02 Dec 2008 19:42:16 +0000</pubDate>
+	<dc:creator>willsheward</dc:creator>
+</item>
+<item>
+	<title>Jack Moffitt: Exploring XMPP</title>
+	<guid>tag:metajack.im,2008://1.123</guid>
+	<link>http://feeds.feedburner.com/~r/metajack/~3/472563948/</link>
+	<description>&lt;p&gt;A few weeks ago I gave a presentation called &lt;em&gt;Exploring XMPP&lt;/em&gt; at &lt;a href=&quot;http://codebits.sapo.pt&quot;&gt;SAPO Codebits ‘08&lt;/a&gt;.  My new friends at SAPO have just informed me that a video version of the talk is available now for all to enjoy.  You can &lt;a href=&quot;http://codebits.sapo.pt/intra/s/speaker/11&quot;&gt;watch it here&lt;/a&gt;; the video is about half way down the page.&lt;/p&gt;
+
+&lt;p&gt;The talk explorers a hypothetical application similar to &lt;a href=&quot;http://oss.oetiker.ch/mrtg/&quot;&gt;MRTG&lt;/a&gt; but built on top of &lt;a href=&quot;http://www.xmpp.org&quot;&gt;XMPP&lt;/a&gt; instead of SNMP.  I start with XMPP basics including the network, addressing, and a small primer on the three main stanza types.  After that, I jump write into the various bits of protocol to build the application.  I talk about presence, &lt;a href=&quot;http://www.xmpp.org/extensions/xep-0030.html&quot;&gt;service discovery&lt;/a&gt;, &lt;a href=&quot;http://www.xmpp.org/extensions/xep-0050.html&quot;&gt;ad-hoc commands&lt;/a&gt;, and &lt;a href=&quot;http://www.xmpp.org/extensions/xep-0060.html&quot;&gt;pubsub&lt;/a&gt;; all of these pieces are used for various parts of the application.&lt;/p&gt;
+
+&lt;p&gt;I’d love to know what you think of the talk or if you have any suggestions.  I’ll use the feedback to improve future talks.&lt;/p&gt;
+
+        
+
+    &lt;img src=&quot;http://feeds.feedburner.com/~r/metajack/~4/472563948&quot; height=&quot;1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Tue, 02 Dec 2008 15:07:16 +0000</pubDate>
+	<dc:creator>Jack Moffitt</dc:creator>
+</item>
+<item>
+	<title>Artur Hefczyc: Tigase with 10MB RAM</title>
+	<guid>http://www.tigase.org/1469 at http://www.tigase.org</guid>
+	<link>http://www.tigase.org/en/content/tigase-10mb-ram</link>
+	<description>&lt;p&gt;Java is still known as the environment with high resources consumption and programs written in Java as being very slow. When I talk to some people or developers I hear that you need at least 10MB of memory just to start Java Virtual Machine and if you want to run non-trivial application you need hundreds of megs.&lt;/p&gt;
+&lt;p&gt;This is something which seems to be verifiable quite easily. Let's write a few lines of identical code in C, C++ and Java. Compile it, run and measure time and memory usage. Java stays way behind even if you measure just code execution and omit application startup time.&lt;/p&gt;
+&lt;p&gt;In my Tigase server development I run lots of tests to ensure not only that all functions work correctly but also to ensure good performance, to check the server limits on certain hardware and... to test resources consumption.&lt;/p&gt;
+&lt;p&gt;Below is a table with tests reports I've run for the Tigase server with only 10MB of memory assigned to JVM. This is a full server installation with all typical components: &lt;span style=&quot;font-weight: bold;&quot; class=&quot;Apple-style-span&quot;&gt;SM&lt;/span&gt;, &lt;span style=&quot;font-weight: bold;&quot; class=&quot;Apple-style-span&quot;&gt;c2s&lt;/span&gt;, &lt;span style=&quot;font-weight: bold;&quot; class=&quot;Apple-style-span&quot;&gt;Bosh&lt;/span&gt;, &lt;span style=&quot;font-weight: bold;&quot; class=&quot;Apple-style-span&quot;&gt;MUC&lt;/span&gt;, &lt;span style=&quot;font-weight: bold;&quot; class=&quot;Apple-style-span&quot;&gt;PubSub&lt;/span&gt;, &lt;span style=&quot;font-weight: bold;&quot; class=&quot;Apple-style-span&quot;&gt;StanzaReceiver&lt;/span&gt;, &lt;span style=&quot;font-weight: bold;&quot; class=&quot;Apple-style-span&quot;&gt;VHostManager&lt;/span&gt; and even one external protocol component (&lt;span style=&quot;font-weight: bold;&quot; class=&quot;Apple-style-span&quot;&gt;XEP-0114&lt;/span&gt;) for connecting transport or &lt;span style=&quot;font-weight: bold;&quot; class=&quot;Apple-style-span&quot;&gt;Yate&lt;/span&gt; server. All tests passed fine for all supported databases.&lt;/p&gt;
+&lt;table cellpadding=&quot;1&quot; width=&quot;700&quot; border=&quot;1&quot; cellspacing=&quot;1&quot; summary=&quot;Tigase server tests with 10MB memory&quot;&gt;
+&lt;caption&gt;Tigase-4.0.2-b1256 with 10MB RAM&lt;/caption&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;th&gt;Derby&lt;/th&gt;
+&lt;th&gt;Derby SP&lt;/th&gt;
+&lt;th&gt;Derby SQL&lt;/th&gt;
+&lt;th&gt;MySQL&lt;/th&gt;
+&lt;th&gt;MySQL SP&lt;/th&gt;
+&lt;th&gt;MySQL SQL&lt;/th&gt;
+&lt;th&gt;PgSQL&lt;/th&gt;
+&lt;th&gt;PgSQL SP&lt;/th&gt;
+&lt;th&gt;PgSQL SQL&lt;/th&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.tigase.org/files/static/tests/4.0.2-b1256/lmem/derby/low-memory-tests.html&quot;&gt;00:00:37&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.tigase.org/files/static/tests/4.0.2-b1256/lmem/derby-auth/low-memory-tests.html&quot;&gt;00:00:38&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.tigase.org/files/static/tests/4.0.2-b1256/lmem/derby-custom/low-memory-tests.html&quot;&gt;00:00:37&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.tigase.org/files/static/tests/4.0.2-b1256/lmem/mysql/low-memory-tests.html&quot;&gt;00:00:19&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.tigase.org/files/static/tests/4.0.2-b1256/lmem/mysql-auth/low-memory-tests.html&quot;&gt;00:00:17&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.tigase.org/files/static/tests/4.0.2-b1256/lmem/mysql-custom/low-memory-tests.html&quot;&gt;00:00:18&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.tigase.org/files/static/tests/4.0.2-b1256/lmem/pgsql/low-memory-tests.html&quot;&gt;00:00:18&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.tigase.org/files/static/tests/4.0.2-b1256/lmem/pgsql-auth/low-memory-tests.html&quot;&gt;00:00:18&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;&lt;a href=&quot;http://www.tigase.org/files/static/tests/4.0.2-b1256/lmem/pgsql-custom/low-memory-tests.html&quot;&gt;00:00:19&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt; &lt;/p&gt;
+&lt;p&gt;Obviously you can not expect high performance from such installation and you can not connect too many users but it is perfectly usable and functional. It seems to be an ideal solution for small installations if there are just a few people using it for local communication. It can be put on old machine laying around or can be used as an embedded XMPP server for routers or other small devices.&lt;/p&gt;
+&lt;p&gt;An interesting conclusion from this test is that while Java seems to be slow and use lot's of resources for trivial applications it might be quite opposite for a big and complex programs. I think it is actually easier to implement high performance complex software in Java than it is in C. And I say this as a developer with 8 years of experience at programming in C and ASM on Linux. You have just to count every single bit while programming in Java as you would do this while programming in C or Assembler.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.tigase.org/en/content/tigase-10mb-ram&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Tue, 02 Dec 2008 10:28:04 +0000</pubDate>
+	<dc:creator>kobit</dc:creator>
+</item>
+<item>
+	<title>Jack Moffitt: Why You Should Drop Out Of School</title>
+	<guid>tag:metajack.im,2008://1.122</guid>
+	<link>http://feeds.feedburner.com/~r/metajack/~3/472035078/</link>
+	<description>&lt;p&gt;There are a thousand stories of startup founders dropping out of school.  Some of these stories end with giant successes, and some of them end with failure.  I dropped out of school in 1999 to join an Internet startup, and my story is a happy one.  Even if one were to change the outcome, I would still have dropped out.  Here’s why you should think about it.&lt;/p&gt;
+
+&lt;p&gt;School will always be an option, at least in most circumstances.  Perhaps your situation is special, and you have some specific financial reason to be locked into school.  In my case, I was on a full scholarship to a private university I could not otherwise afford.  It certainly wasn’t a decision I made lightly, but it was still a good one.  Years later, it wasn’t very difficult to go back and finish up.  If I had not gotten excited about new projects, I would probably have started a graduate degree.  It’s alright that I didn’t; I can go back and do that in a few years.&lt;/p&gt;
+
+&lt;p&gt;Opportunity will not always be an option.  While you may have many opportunities available in your lifetime, you must make a decision whether to act on them.  You can always go back to school, but you can’t always be a founder of some company or help invent some new gadget.  You may have a lifetime of regret if you miss some interesting opportunity, but with school, you can always resume where you left off.&lt;/p&gt;
+
+&lt;p&gt;It is much easier to take risks when you are young.  This is not because older people are not as clever, but because they have formed families and collected obligations.  It’s certainly possible for them to take risks, but the amount of responsibility wrangling they have to do is often considerably greater.  Why should you spend the easiest years of your life in terms of taking on risk, doing the safest possible thing?&lt;/p&gt;
+
+&lt;p&gt;I think that everyone gets a lot of chances in life to do wonderful things, but too few people recognize them or fail to act.  If you see one of these chances, I urge you to take it; you can always resume your safer life if it doesn’t work out.&lt;/p&gt;
+
+        
+
+    &lt;img src=&quot;http://feeds.feedburner.com/~r/metajack/~4/472035078&quot; height=&quot;1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Tue, 02 Dec 2008 03:52:41 +0000</pubDate>
+	<dc:creator>Jack Moffitt</dc:creator>
+</item>
+<item>
+	<title>Sylvain Hellegouarch: Geolocalization and microblogging</title>
+	<guid>http://www.defuze.org/?p=137</guid>
+	<link>http://www.defuze.org/archives/137-geolocalization-and-microblogging.html</link>
+	<description>&lt;p&gt;I’ve been working recently with Adrian Hornsby who’s been interested in using the &lt;a href=&quot;http://trac.defuze.org/wiki/headstock/Microblogging&quot; target=&quot;_blank&quot;&gt;microblogging example&lt;/a&gt; I had setup to demonstrate headstock, amplee and some ideas about microblogging in general. Today Adrian asked me how to add some gelocalization information to a message flowing through the system. It took me just a couple of hours to implement it so that now you can push a message like: &lt;strong&gt;GEO text [lat,long]&lt;/strong&gt; through your IM client. This will tell the demo to add a &lt;strong&gt;georss:point&lt;/strong&gt; element to the generate atom entry which will eventually lead to a Google map to be displayed in the web page mapping the atom entry.&lt;a href=&quot;http://www.linkedin.com/e/uiXyTlA_n2oqGnvQge8An-d/blk/871980115_2/cBYRcj4Me3ANdPwLqnpPbOYWrSlI/svi/&quot;&gt;&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Mon, 01 Dec 2008 22:13:13 +0000</pubDate>
+	<dc:creator>Sylvain Hellegouarch</dc:creator>
+</item>
+<item>
+	<title>Hal Rottenberg: PowerShell Script: Decode Psi Passwords</title>
+	<guid>http://halr9000.com/article/653</guid>
+	<link>http://halr9000.com/article/653</link>
+	<description>&lt;a href=&quot;http://halr9000.com/article/category/software/instant-messaging/jabber&quot; title=&quot;Jabber&quot;&gt;&lt;img src=&quot;http://halr9000.com/wp-content/icons/topic_jabber.png&quot; align=&quot;right&quot; height=&quot;87&quot; alt=&quot;Jabber&quot; width=&quot;64&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://halr9000.com/article/category/programming/scripting/powershell&quot; title=&quot;Powershell&quot;&gt;&lt;img src=&quot;http://halr9000.com/wp-content/icons/topic_powershell.png&quot; align=&quot;right&quot; height=&quot;53&quot; alt=&quot;Powershell&quot; width=&quot;70&quot; /&gt;&lt;/a&gt;
+&lt;a href=&quot;http://halr9000.com/article/category/software/instant-messaging/psi&quot; title=&quot;Psi&quot;&gt;&lt;img src=&quot;http://halr9000.com/wp-content/icons/topic_psi.png&quot; align=&quot;right&quot; height=&quot;64&quot; alt=&quot;Psi&quot; width=&quot;64&quot; /&gt;&lt;/a&gt;
+&lt;p&gt;This came out of a question in the &lt;a href=&quot;http://psi-im.org&quot;&gt;Psi&lt;/a&gt; chat room this morning. A user wanted to retrieve a password which was saved in the Psi config file. We don’t use any strong crypto here on the basis that if someone has access to your user profile, you have bigger problems than your IM accounts. There was a Perl script around which did the trick.  I couldn’t wrap my head around that, so pulled in a buddy (&lt;a href=&quot;http://huddledmasses.org/&quot;&gt;Joel Bennett&lt;/a&gt;) who did the porting to &lt;a href=&quot;http://www.microsoft.com/windowsserver2003/technologies/management/powershell/default.mspx&quot; target=&quot;_blank&quot; title=&quot;Microsoft Windows PowerShell command line shell and scripting language&quot;&gt;PowerShell&lt;/a&gt;.  Here it is:&lt;/p&gt;
+&lt;p&gt;  &lt;/p&gt;</description>
+	<pubDate>Mon, 01 Dec 2008 17:38:55 +0000</pubDate>
+	<dc:creator>halr9000</dc:creator>
+</item>
+<item>
+	<title>Kevin Smith: Sleek Migrate - A server migration tool.</title>
+	<guid>http://www.kismith.co.uk/wordpress/?p=94</guid>
+	<link>http://www.kismith.co.uk/wordpress/index.php/2008/11/30/sleek-migrate/</link>
+	<description>&lt;p&gt;Taking a quick break from writing on &lt;a href=&quot;http://www.kismith.co.uk/wordpress/index.php/2008/08/21/xmpp-the-almost-definitive-guide-to-be/&quot;&gt;XMPP: The Definitive Guide&lt;/a&gt;, someone in the jdev room reminded me that I started on a project a while ago to make migrating xmpp server software easier.&lt;/p&gt;
+&lt;p&gt;I wanted to migrate from ejabberd to another server, and didn’t fancy writing yet another one-way conversion script, so threw some code together that lets you plug multiple import/export filters in. Currently it supports two filters for getting data in to servers, &lt;a href=&quot;http://www.tigase.org/&quot;&gt;Tigase&lt;/a&gt;’s (quite limited) import filter (roster entries only), and the &lt;a href=&quot;http://xmpp.org/extensions/xep-0227.html&quot;&gt;XEP-0227&lt;/a&gt; generic format. Ideally, all servers will support XEP-0227 for both import and export natively at some point, but at the moment not many servers support even import with it (although some do!), and thanks to &lt;a href=&quot;http://dave.cridland.net/&quot;&gt;Dave Cridland&lt;/a&gt; for finding and fixing some of my bugs in this. The only filter I have for getting data out of a server at the moment does it over the wire (and so should work for any server implementation) - it takes a list of uname/password pairs (which can be sucked out of most servers quite easily), and then connects an IM-less session for each of these to extract their roster (including subscription states), their vcard, some iq:private nodes (useful for muc bookmarks etc) etc. &lt;/p&gt;
+&lt;p&gt;It’s based on &lt;a href=&quot;http://nathan.fritzclan.com/&quot;&gt;Nathan Fritz&lt;/a&gt;’s excellent &lt;a href=&quot;http://code.google.com/p/sleekxmpp/&quot;&gt;SleekXMPP&lt;/a&gt; library (Python) to drive it, and the code’s currently available from &lt;a href=&quot;http://github.com/Kev/sleekmigrate/tree/master&quot;&gt;http://github.com/Kev/sleekmigrate/tree/master&lt;/a&gt; - I may set up a more permanent home for it some day, if it starts to see real-world use. It’s quite raw, so if you want to use it, either use the source, or contact me and I’ll see about cleaning it up a bit or helping.&lt;/p&gt;</description>
+	<pubDate>Sun, 30 Nov 2008 16:55:18 +0000</pubDate>
+	<dc:creator>Kev</dc:creator>
+</item>
+
+</channel>
+</rss>

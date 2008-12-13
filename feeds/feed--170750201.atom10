@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+
+<channel>
+	<title>Babelmonkeys: Anything may appear given enough time and color ribbon.</title>
+	<atom:link href="http://blog.babelmonkeys.de/?feed=rss2" rel="self" type="application/rss+xml" />
+	<link>http://blog.babelmonkeys.de</link>
+	<description>Just another WordPress weblog</description>
+	<pubDate>Sun, 30 Nov 2008 18:13:41 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6.5</generator>
+	<language>en</language>
+			<item>
+		<title>Trying out strophejs</title>
+		<link>http://blog.babelmonkeys.de/?p=25</link>
+		<comments>http://blog.babelmonkeys.de/?p=25#comments</comments>
+		<pubDate>Sun, 30 Nov 2008 18:13:41 +0000</pubDate>
+		<dc:creator>Florob</dc:creator>
+		
+		<category><![CDATA[Jabber/XMPP]]></category>
+
+		<category><![CDATA[JsJaC]]></category>
+
+		<category><![CDATA[social networking]]></category>
+
+		<category><![CDATA[strophejs]]></category>
+
+		<guid isPermaLink="false">http://blog.babelmonkeys.de/?p=25</guid>
+		<description><![CDATA[
+So I&#8217;m going to the 25C3 in Berlin this year (my first time actually). So obviously I looked through the Schedule and found a XMPP related talk that sounded interesting:
+Privacy in the social semantic web: Social networks based on XMPP.
+Well, turns out they seem to do some things I&#8217;d do different (but I won&#8217;t talk [...]]]></description>
+			<content:encoded><![CDATA[<p><insert usual long time no blog stuff here></p>
+<p>So I&#8217;m going to the <a href="http://events.ccc.de/congress/2008/wiki/Main_Page">25C3</a> in Berlin this year (my first time actually). So obviously I looked through the <a href="http://events.ccc.de/congress/2008/Fahrplan/">Schedule</a> and found a XMPP related talk that sounded interesting:<br />
+<a href="http://events.ccc.de/congress/2008/Fahrplan/events/2873.en.html">Privacy in the social semantic web: Social networks based on XMPP</a>.<br />
+Well, turns out they seem to do some things I&#8217;d do different (but I won&#8217;t talk about that in detail before I actually heard the talk).<br />
+Anyway at that point the idea to possibly try to write a XMPP based social networking solution was born (I actually had tried to write a social networking solution using some amount of XMPP, but it turns out that it will probably be a lot easier the other way around). I&#8217;ve some ideas on how to do that I&#8217;ll sketch out in a later blog post.<br />
+One of the ideas is to have a basic web based interface using <a href="http://xmpp.org/extensions/xep-0124.html">BOSH</a>. I&#8217;ve only used BOSH for a <a href="https://jabber.babelmonkeys.de/">very basic web-chat</a> until now and used JsJaC back then and didn&#8217;t really like it.<br />
+Now there has been some buzz about <a href="http://code.stanziq.com/strophe/">strophejs</a> lately, so I decided to try to port my web-chat over to that to see how well that&#8217;d work.<br />
+And I have to say it worked out great. strophejs still lacks some tutorials /examples, but it was pretty trivial to find the equivalent strophejs functions for the JsJaC calls.<br />
+In case anybody is interested in the code (Disclaimer: It is probably anything but good, because as I said it&#8217;s the second time using BOSH, first time using strophejs and generally I&#8217;m not a JavaScript person) you can find it at git://babelmonkeys.de/xmppchat.git, or try it under <a href="http://jabber.babelmonkeys.de">http://jabber.babelmonkeys.de</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.babelmonkeys.de/?feed=rss2&amp;p=25</wfw:commentRss>
+		</item>
+		<item>
+		<title>YAPWMF</title>
+		<link>http://blog.babelmonkeys.de/?p=24</link>
+		<comments>http://blog.babelmonkeys.de/?p=24#comments</comments>
+		<pubDate>Sun, 17 Aug 2008 01:37:48 +0000</pubDate>
+		<dc:creator>Florob</dc:creator>
+		
+		<category><![CDATA[Life]]></category>
+
+		<category><![CDATA[friends]]></category>
+
+		<category><![CDATA[melancholic]]></category>
+
+		<category><![CDATA[random]]></category>
+
+		<guid isPermaLink="false">http://blog.babelmonkeys.de/?p=24</guid>
+		<description><![CDATA[YAPWMF? What&#8217;s that? Well that is my stupid acronym for Yet Another Problem When Making Friends. So this post is going to be about something I recently (tonight) though/had to think about. It&#8217;s late where I am, so bear with me if all this won&#8217;t make a lot of sense.
+So suppose there is a person [...]]]></description>
+			<content:encoded><![CDATA[<p>YAPWMF? What&#8217;s that? Well that is my stupid acronym for Yet Another Problem When Making Friends. So this post is going to be about something I recently (tonight) though/had to think about. It&#8217;s late where I am, so bear with me if all this won&#8217;t make a lot of sense.</p>
+<p>So suppose there is a person you really like and would like to be friends with. Now let&#8217;s assume three things about this person:</p>
+<ol>
+<li>the person has a reasonable amount of (very) good friends</li>
+<li>The person is pretty busy in his/her everyday life and therefore has only few free time</li>
+</ol>
+<p>So let&#8217;s state the obvious:</p>
+<p>If that person is going to spend his/her free time with anybody it&#8217;s going to be her good friends and not you.</p>
+<p>The premise for being able to build a friendship is spending time together. You fail. Find somebody else and forget you like that person. Or at your oppinion become insane.</p>
+<p>Which reminds me that I really want a recording of Insane by <a href="http://www.myspace.com/velvetplastic">The Velvet Plastic</a>.<br />
+*Wanders of singing: &#8220;I am insane, I am insane, I am insane, I am insaaaaaane[...]&#8220;*</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.babelmonkeys.de/?feed=rss2&amp;p=24</wfw:commentRss>
+		</item>
+		<item>
+		<title>Proof enough?</title>
+		<link>http://blog.babelmonkeys.de/?p=23</link>
+		<comments>http://blog.babelmonkeys.de/?p=23#comments</comments>
+		<pubDate>Mon, 23 Jun 2008 18:34:06 +0000</pubDate>
+		<dc:creator>Florob</dc:creator>
+		
+		<category><![CDATA[Jabber/XMPP]]></category>
+
+		<category><![CDATA[bashing]]></category>
+
+		<category><![CDATA[ICQ]]></category>
+
+		<category><![CDATA[stupidity]]></category>
+
+		<guid isPermaLink="false">http://blog.babelmonkeys.de/?p=23</guid>
+		<description><![CDATA[Today (actually for some people as early as 3+ days ago it seems) a new buddy appeared on almost everybody&#8217;s ICQ contact list called &#8220;ICQ System&#8221; with the number 12111. This has been added by ICQ themselves. Their site states:
+As part of the process of upgrading ICQ users to our newest, most advanced version, ICQ6, [...]]]></description>
+			<content:encoded><![CDATA[<p>Today (actually for some people as early as 3+ days ago it seems) a new buddy appeared on almost everybody&#8217;s ICQ contact list called &#8220;ICQ System&#8221; with the number 12111. This has been added by ICQ themselves. Their site <a href="http://www.icq.com/help/">states</a>:</p>
+<blockquote><p>As part of the process of upgrading ICQ users to our newest, most advanced version, ICQ6, we have added a new user name to your contact list &#8220;ICQ System&#8221;. The newly added user is intended to improve ICQ&#8217;s line of communication with our users and assure you continue to enjoy talking to everybody, everywhere</p></blockquote>
+<p>Of course they did <em>not</em> tell anybody they would do that. So some people thought it would be funny to spread the rumour that ICQ has been hacked by some <q>superhackers</q> and (of course) everybody believed them.</p>
+<p>For me personally this shows how unprofessional ICQ does business and what Jabber/XMPP, due to it&#8217;s decentralized character, does a lot better then proprietary IM services.<br />
+In Jabber/XMPP world</p>
+<ul>
+<li>most server admins wouldn&#8217;t do such a thing without telling their users</li>
+<li>it would be pretty easy to contact your server admin, because (if you choose a server the way you should) you trust him and know at least that he is responsive and friendly</li>
+</ul>
+<p>&lt;/ICQ bashing&gt;</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.babelmonkeys.de/?feed=rss2&amp;p=23</wfw:commentRss>
+		</item>
+		<item>
+		<title>Wikia Search</title>
+		<link>http://blog.babelmonkeys.de/?p=21</link>
+		<comments>http://blog.babelmonkeys.de/?p=21#comments</comments>
+		<pubDate>Wed, 04 Jun 2008 14:33:32 +0000</pubDate>
+		<dc:creator>Florob</dc:creator>
+		
+		<category><![CDATA[Fun]]></category>
+
+		<category><![CDATA[Web]]></category>
+
+		<category><![CDATA[open]]></category>
+
+		<category><![CDATA[user generated content]]></category>
+
+		<category><![CDATA[Wikia Search]]></category>
+
+		<guid isPermaLink="false">http://blog.babelmonkeys.de/?p=21</guid>
+		<description><![CDATA[Yay, Wikia Search opened its gates today.
+I personally like the idea of user rated results a lot. It is not yet as complete as Google or Yahoo or whatever, but the new version alows adding results directly from the web interface, so it doesn&#8217;t relly completely on a (slow) crawler anymore. Results should be getting [...]]]></description>
+			<content:encoded><![CDATA[<p>Yay, <a href="http://search.wikia.com">Wikia Search</a> opened its gates today.</p>
+<p>I personally like the idea of user rated results a lot. It is not yet as complete as Google or Yahoo or whatever, but the new version alows adding results directly from the web interface, so it doesn&#8217;t relly completely on a (slow) crawler anymore. Results should be getting there if enough people use it.</p>
+<p>I think it&#8217;s fun to use it. Now I only need to get it in my Firefox search box so I remember to use it&#8230;</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.babelmonkeys.de/?feed=rss2&amp;p=21</wfw:commentRss>
+		</item>
+		<item>
+		<title>Open Discussion Day: The aftermath</title>
+		<link>http://blog.babelmonkeys.de/?p=20</link>
+		<comments>http://blog.babelmonkeys.de/?p=20#comments</comments>
+		<pubDate>Tue, 20 May 2008 03:10:15 +0000</pubDate>
+		<dc:creator>Florob</dc:creator>
+		
+		<category><![CDATA[FreeSoftware]]></category>
+
+		<category><![CDATA[Jabber/XMPP]]></category>
+
+		<category><![CDATA[Life]]></category>
+
+		<category><![CDATA[evangelism]]></category>
+
+		<category><![CDATA[Open Discussion Day]]></category>
+
+		<category><![CDATA[rant]]></category>
+
+		<category><![CDATA[TLA]]></category>
+
+		<guid isPermaLink="false">http://blog.babelmonkeys.de/?p=20</guid>
+		<description><![CDATA[As some people might have noticed, yesterday was the Open Discussion Day. On that day people are encouraged to not use any legacy IM services (see my (german) reasoning, or google for more details). Of course you should tell your friends about that some days before and encourage them to switch to a open IM [...]]]></description>
+			<content:encoded><![CDATA[<p>As some people might have noticed, yesterday was the Open Discussion Day. On that day people are encouraged to not use any legacy IM services (see <a href="http://florobs.babelmonkeys.de/odd.xml">my (german) reasoning</a>, or google for more details). Of course you should tell your friends about that some days before and encourage them to switch to a open IM protocol like Jabber/XMPP, or at least start using that additionally to everything else until they can drop their legacy IM service.</p>
+<p>This year I totally failed to remember to do that, because I was busy studying for my Abitur. Actually I noticed it was Open Discussion Day 3 hours into the day reading a blog post on <a href="http://planet.jabber.org">Planet Jabber</a>. So all I did this year was to set my Jabber Servers <a href="http://en.wikipedia.org/wiki/MOTD">Message Of The Day (MOTD)</a> to tell all my users about the Open Discussion Day.</p>
+<p>So I didn&#8217;t actually expect to have any success or converters this year (the people I talk to most actually already use Jabber/XMPP, but there are some people I really enjoy talking to that are not, so there would have been some potential <img src='http://blog.babelmonkeys.de/wp-includes/images/smilies/icon_sad.gif' alt=':(' class='wp-smiley' /> ). <em>But</em> I had a small success. Setting the MOTD actually got one of my friends to do some work trying to convince people to use open protocols. From what he told me he wasn&#8217;t very successful, but for me it is a success to see that I have convinced someone in a way that he starts spreading the word.</p>
+<p>So I said he wasn&#8217;t very successful. Neither was I in the last years. I&#8217;ve been asking myself a lot why that is. I have to different theories on this.</p>
+<h3>1. People are resistant to change</h3>
+<p>For some reason people really don&#8217;t want to switch from what they know as long as it more or less does it&#8217;s job. This is true even if they are not really satisfied (I have heard a lot of Windows users get very angry about how bad their Operating System is and how many errors and problems they&#8217;ve had, but most of them didn&#8217;t even <em>try</em> an alternative system).</p>
+<p>The problem is you can&#8217;t really convince this people by reasoning with them about the benefits of open protocols, because their solution works well enough for them. To convince those users one would have to first create a killer-feature and then create a demand for it amongst those users. Note that this would probably convince them to switch to open protocols, but they&#8217;d do it for the wrong reasons. If a legacy IM implements the same feature they might be gone again very fast.</p>
+<h3>2. People don&#8217;t want freedom</h3>
+<p>While I personally think it&#8217;s relatively easy to grasp, many people don&#8217;t understand why openness/freedom is desirable. Many people just want to be told how to do things, they don&#8217;t <em>want</em> to have a choice or freedom. Life is a lot easier if someone else tells you what to do.</p>
+<p>Where I live what you should do on the internet is (according to what the majority will tell you to do) &#8220;Get a <a href="http://www.schuelervz.net">schülerVZ</a>/<a href="http://studivz.net">studiVZ</a> account, get <a href="http://icq.com">ICQ</a>/<a href="http://im.live.com">MSN</a>, use <a href="http://google.com">Google</a> and look for bands on <a href="http://myspace.com">MySpace</a>&#8221; (side note: Maybe Jabber/XMPP just lacks a catchy <a href="http://en.wikipedia.org/wiki/Three-letter_acronym">TLA</a>? <img src='http://blog.babelmonkeys.de/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' /> ). So that&#8217;s what people will do. If the majority does it, it must be good, no individuality needed, right?</p>
+<p>Of course I need to put the FreeSoftware/free culture evangelists (my <img src='http://blog.babelmonkeys.de/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' /> ) point of view here to: &#8220;Get a <a href="http://noserub.org">noserub</a> account (if you really want social networking, maybe you&#8217;d actually rather write a weblog or a maintain a homepage), use <a href="http://jabber.org">Jabber/XMPP</a> and <a href="http://en.wikipedia.org/wiki/Internet_Relay_Chat">IRC</a>, support <a href="http://search.wikia.com">Wikia Search</a> and look for bands on <a href="http://en.wikipedia.org/wiki/Netlabel">netlabels</a> and <a href="http://jamendo.com">Jamendo</a>&#8220;</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.babelmonkeys.de/?feed=rss2&amp;p=20</wfw:commentRss>
+		</item>
+		<item>
+		<title>Social Networks</title>
+		<link>http://blog.babelmonkeys.de/?p=19</link>
+		<comments>http://blog.babelmonkeys.de/?p=19#comments</comments>
+		<pubDate>Sat, 17 May 2008 23:16:06 +0000</pubDate>
+		<dc:creator>Florob</dc:creator>
+		
+		<category><![CDATA[Jabber/XMPP]]></category>
+
+		<category><![CDATA[Life]]></category>
+
+		<category><![CDATA[jabber]]></category>
+
+		<category><![CDATA[MeinVZ]]></category>
+
+		<category><![CDATA[MySpace]]></category>
+
+		<category><![CDATA[oppinion]]></category>
+
+		<category><![CDATA[SchülerVZ]]></category>
+
+		<category><![CDATA[social networking]]></category>
+
+		<category><![CDATA[StudiVZ]]></category>
+
+		<category><![CDATA[XMPP]]></category>
+
+		<guid isPermaLink="false">http://blog.babelmonkeys.de/?p=19</guid>
+		<description><![CDATA[I just watched a very interesting video of the Panel &#8220;Die Zukunft der Social Networks&#8221; from the re:publica08 conference (MP4).
+Here are some things I learned:
+
+social networking really is only a replacement for not being able to design/write a webpage yourself
+Facebook implements something like Privacy Lists and calls it Friend Lists
+There is something called MeinVZ. Which [...]]]></description>
+			<content:encoded><![CDATA[<p>I just watched a very interesting video of the Panel &#8220;<a href="http://programm.re-publica.de/2008/events/181.de.html">Die Zukunft der Social Networks</a>&#8221; from the re:publica08 conference (<a href="http://www.netzpolitik.org/wp-upload/republica08_Tag01_Panel03_networks_pt01.mp4">MP4</a>)<a href="http://programm.re-publica.de/2008/events/181.de.html">.</a></p>
+<p>Here are some things I learned:</p>
+<ul>
+<li>social networking really is only a <a href="http://chaosradio.ccc.de/cr134.html">replacement for not being able to design/write a webpage yourself</a></li>
+<li>Facebook implements something like <a href="http://www.xmpp.org/extensions/xep-0016.html">Privacy Lists</a> and calls it <a href="http://www.facebook.com/help.php?page=15">Friend Lists</a></li>
+<li>There is something called MeinVZ. Which IMHO should be called YAVZ (Yet Another VZ)</li>
+<li>AsteriskVZ (as in StudiVZ, SchülerVZ and MeinVZ) really believe requiring registration to be able to see profiles is a protection (Yes they don&#8217;t claim it&#8217;s a very good one, but I think claiming it is one at all is bogus in the first place)</li>
+<li>I learned about myself that one of the real reasons I dislike Social Networks is that they have a bad user interface (and allow to make it worse (at least in MySpace case <img src='http://blog.babelmonkeys.de/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' /> ))</li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.babelmonkeys.de/?feed=rss2&amp;p=19</wfw:commentRss>
+		</item>
+		<item>
+		<title>Making my day</title>
+		<link>http://blog.babelmonkeys.de/?p=18</link>
+		<comments>http://blog.babelmonkeys.de/?p=18#comments</comments>
+		<pubDate>Wed, 07 May 2008 16:42:43 +0000</pubDate>
+		<dc:creator>Florob</dc:creator>
+		
+		<category><![CDATA[Life]]></category>
+
+		<guid isPermaLink="false">http://blog.babelmonkeys.de/?p=18</guid>
+		<description><![CDATA[Sometimes even idiots can make your day.
+I was just listening to Friedenspanzer by Die Ärzte and that moment I got a spam mail titled &#8220;More rod, more action&#8221;.
+]]></description>
+			<content:encoded><![CDATA[<p>Sometimes even idiots can make your day.</p>
+<p>I was just listening to Friedenspanzer by Die Ärzte and that moment I got a spam mail titled &#8220;More rod, more action&#8221;.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.babelmonkeys.de/?feed=rss2&amp;p=18</wfw:commentRss>
+		</item>
+		<item>
+		<title>Feeling down</title>
+		<link>http://blog.babelmonkeys.de/?p=17</link>
+		<comments>http://blog.babelmonkeys.de/?p=17#comments</comments>
+		<pubDate>Sat, 03 May 2008 23:40:14 +0000</pubDate>
+		<dc:creator>Florob</dc:creator>
+		
+		<category><![CDATA[Life]]></category>
+
+		<category><![CDATA[private]]></category>
+
+		<guid isPermaLink="false">http://blog.babelmonkeys.de/?p=17</guid>
+		<description><![CDATA[I originally intended to not use this blog for any personal stuff, but I have to get this from my heart right now and it seems okay and general enough to write it in this moment. Maybe I&#8217;ll withdraw this post again after I wake up, we&#8217;ll see.
+I&#8217;ve come back from a party about half [...]]]></description>
+			<content:encoded><![CDATA[<p>I originally intended to not use this blog for any personal stuff, but I have to get this from my heart right now and it seems okay and general enough to write it in this moment. Maybe I&#8217;ll withdraw this post again after I wake up, we&#8217;ll see.</p>
+<p>I&#8217;ve come back from a party about half an hour ago, I can&#8217;t really say it was not fun. A lot of people I really like were there, I laughed more than I normally do and it overall was a relatively nice atmosphere.</p>
+<p>Still while being there I somehow sometimes felt a bit out of place and now I&#8217;m home I&#8217;m really feeling down. I can&#8217;t really make out why though.</p>
+<p>I know I will eventually not see a lot of the people that have been there for some time, but that&#8217;s not the problem (or at least I think it ain&#8217;t).</p>
+<p>I also learned something about a person I have some kind of crush on (obviously neither what I learned nor who that is will go here) that could be a reason enough to feel down, but somehow I also noticed today that this crush has mostly faded so that probably ain&#8217;t the reason either.</p>
+<p>Can you actually just feel down because? Doesn&#8217;t make a lot of sense to me. Maybe it&#8217;s the two above mentioned facts combined which makes it hard to make out. Maybe I&#8217;ll eventually find out, or I wont care anymore as soon as I feel better. We&#8217;ll see.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.babelmonkeys.de/?feed=rss2&amp;p=17</wfw:commentRss>
+		</item>
+		<item>
+		<title>Ashtray Cohesively Four Riot</title>
+		<link>http://blog.babelmonkeys.de/?p=9</link>
+		<comments>http://blog.babelmonkeys.de/?p=9#comments</comments>
+		<pubDate>Mon, 18 Feb 2008 15:00:57 +0000</pubDate>
+		<dc:creator>Florob</dc:creator>
+		
+		<category><![CDATA[Poetry]]></category>
+
+		<category><![CDATA[love]]></category>
+
+		<category><![CDATA[sad]]></category>
+
+		<guid isPermaLink="false">http://blog.babelmonkeys.de/?p=9</guid>
+		<description><![CDATA[ So close but yet I can not touch
+So far but yet inside me, inside my mind
+So warm just in my imagination
+So cold in the ashtray here on the desk
+]]></description>
+			<content:encoded><![CDATA[<p> So close but yet I can not touch<br />
+So far but yet inside me, inside my mind<br />
+So warm just in my imagination<br />
+So cold in the ashtray here on the desk</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.babelmonkeys.de/?feed=rss2&amp;p=9</wfw:commentRss>
+		</item>
+		<item>
+		<title>Got laptop?</title>
+		<link>http://blog.babelmonkeys.de/?p=8</link>
+		<comments>http://blog.babelmonkeys.de/?p=8#comments</comments>
+		<pubDate>Tue, 29 Jan 2008 18:48:36 +0000</pubDate>
+		<dc:creator>Florob</dc:creator>
+		
+		<category><![CDATA[FreeSoftware]]></category>
+
+		<category><![CDATA[GNU/Linux]]></category>
+
+		<category><![CDATA[Hardware]]></category>
+
+		<guid isPermaLink="false">http://blog.babelmonkeys.de/?p=8</guid>
+		<description><![CDATA[Well, since yesterday I do. My very first laptop ever and it works under GNU/Linux.
+I&#8217;m actually very pleased with this.  Everything works. Yes you read that correctly I got myself a laptop and everything is functional, under GNU/Linux (Ubuntu 7.10). This includes SD Card Reader,WLAN, suspend and hibernate, fingerprint reader, multimedia keys, sound…
+Now you [...]]]></description>
+			<content:encoded><![CDATA[<p>Well, since yesterday I do. My very first laptop ever and <strong>it works under GNU/Linux</strong>.</p>
+<p>I&#8217;m actually very pleased with this.  Everything works. Yes you read that correctly I got myself a laptop and everything is functional, under GNU/Linux (Ubuntu 7.10). This includes SD Card Reader,WLAN, suspend and hibernate, fingerprint reader, multimedia keys, sound…<br />
+Now you might want to know what this wonder is called. It&#8217;s a HP 6715b, but wait here is the catch:<br />
+This does <strong>not</strong> all work out of the box.</p>
+<ol>
+<li>X didn&#8217;t start at all (not even using vesa as driver) until I installed the proprietary ATI drivers (fglrx).</li>
+<li>WLAN (a Broadcom chip) does only work properly (as in &#8220;Can connect to WLANs&#8221; and &#8220;Doesn&#8217;t put high CPU load on the system&#8221;) using ndiswrapper.</li>
+<li>The fingerprint reader can only be used after installing <a href="http://www.reactivated.net/fprint/">fprint</a>, but the actual driver seems to be OpenSource and in the kernel from what I read *yay*</li>
+</ol>
+<p>On the other hand for the graphics card there will hopefully soon be radeonhd, which even supports cool things like xrandr 1.2 and the Broadcom drivers which are still relatively new will probably improve a lot in the next time (maybe it&#8217;s aready working fine Linux 2.6.24, I only tried 2.6.22)</p>
+<p><strong>Update:</strong><br />
+Yay, waiting helps.</p>
+<p>I&#8217;m now using Ubuntu 8.04 beta (Hardy Heron) on my Laptop and I&#8217;m in FreeSoftware land now. My graphics card works using the &#8220;ati&#8221; driver (not the commercial, but what you get if you put &#8216;Driver &#8220;ati&#8221;&#8216; in your xorg.conf) and my WLAN works using the new b43 driver that is in Linux since 2.24.</p>
+<p>As an added bonus b43 does Monitor-mode and injection (or at least that is what is claimed, Monitor-mode does work, not so sure about injection), so I can use aircrack-ng now. Okay, actually I don&#8217;t really use it and especially not in any illegal way (on second though probably §202c is vague enough that I shouldn&#8217;t even have it installed), but I think it&#8217;s cool.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.babelmonkeys.de/?feed=rss2&amp;p=8</wfw:commentRss>
+		</item>
+	</channel>
+</rss>

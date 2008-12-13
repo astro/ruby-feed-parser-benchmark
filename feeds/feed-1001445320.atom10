@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Propellerhead Feed Creator (070124)" -->
+<?xml-stylesheet href="http://www.propellerheads.se/library/xsl/atombrowser.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US">
+    <title>Propellerhead .plan files</title>
+    <subtitle>Follow the everyday life of the Propellerhead Software crew, as told by the Propellerheads themselves.</subtitle>
+    <link rel="alternate" type="text/html" href="http://www.propellerheads.se/company/crew/"/>
+    <id>http://www.propellerheads.se/company/crew/</id>
+    <updated>2008-12-12T18:52:01+00:00</updated>
+    <rights>Propellerhead Software (c) 2008</rights>
+    <generator>Propellerhead Feed Creator (070124)</generator>
+    <link rel="self" type="application/atom+xml" href="http://www.propellerheads.se/feeds/plans.xml" />
+    <icon>/favicon.ico</icon>
+    <logo>http://www.propellerheads.se/feeds/propellerhead_software_rss_logo.gif</logo>
+    <entry>
+        <title>Drawing boxes and lines (Dan Engelbrecht)</title>
+        <link rel="alternate" type="text/html" href="http://www.propellerheads.se/company/crew/index.cfm?fuseaction=dsp_plan&amp;PID=4&amp;from=rss"/>
+        <published>2008-12-12T08:43:09Z</published>
+        <updated>2008-12-12T08:43:09Z</updated>
+        <id>urn:plans-propellerheads-se:1672</id>
+        <author>
+            <name>Dan Engelbrecht</name>
+        </author>
+        <content type="html"><![CDATA[<p>Thinking hard and drawing boxes to figure out how things should be organized so its easy to use. Complex data structures that gets boiled down in multiple steps to be useful in a different context.</p>
+<p>It's hard work, but somebody has to do it, right?</p>
+<p>Or, using my dads favourite expression when I complain about hard stuff:</p>
+<p>"If it was easy, anybody could do it"</p>
+<p>Just what you need to hear when you are frustrated and trying to fix things. :)</p>
+<p>Weekend coming up, which is good, because I need some sleep...</p>
+<p>Later,</p>
+<p>Dan</p>]]></content>
+        <summary type="html"><![CDATA[<p>Thinking hard and drawing boxes to figure out how things should be organized so its easy to use. Complex data structures that gets boiled down in multiple steps to be useful in a different context.</p>
+<p>It's hard work, but somebody has to do it, right?</p>
+<p>Or, using my dads favourite expression when I complain about hard stuff:</p>
+<p>"If it was easy, anybody could do it"</p>
+<p>Just what you need to hear when you are frustrated and trying to fix things. :)</p>
+<p>Weekend coming up, which is good, because I need some sleep...</p>
+<p>Later,</p>
+<p>Dan</p>]]></summary>
+    </entry>
+    <entry>
+        <title>Christmas parties make you tired (Dan Engelbrecht)</title>
+        <link rel="alternate" type="text/html" href="http://www.propellerheads.se/company/crew/index.cfm?fuseaction=dsp_plan&amp;PID=4&amp;from=rss"/>
+        <published>2008-12-11T09:11:33Z</published>
+        <updated>2008-12-11T09:11:33Z</updated>
+        <id>urn:plans-propellerheads-se:1671</id>
+        <author>
+            <name>Dan Engelbrecht</name>
+        </author>
+        <content type="html"><![CDATA[<p>Very tierd.</p>
+<p>I need to make some coffee so I can focus and my normal fantastic self...</p>
+<p>Currently I have no bugs to take care of for the current milestone, we'll see if that holds true or if something crops up. I'll be focusing on stuff for the next milestone again.</p>
+<p>Julbord makes you nauseous. Ate till I was very full at dinner and when I came home last night I was hungry again.</p>
+<p>Thank god I'm only having one julbord this year.</p>
+<p>Dan</p>]]></content>
+        <summary type="html"><![CDATA[<p>Very tierd.</p>
+<p>I need to make some coffee so I can focus and my normal fantastic self...</p>
+<p>Currently I have no bugs to take care of for the current milestone, we'll see if that holds true or if something crops up. I'll be focusing on stuff for the next milestone again.</p>
+<p>Julbord makes you nauseous. Ate till I was very full at dinner and when I came home last night I was hungry again.</p>
+<p>Thank god I'm only having one julbord this year.</p>
+<p>Dan</p>]]></summary>
+    </entry>
+    <entry>
+        <title>Can of worms (Dan Engelbrecht)</title>
+        <link rel="alternate" type="text/html" href="http://www.propellerheads.se/company/crew/index.cfm?fuseaction=dsp_plan&amp;PID=4&amp;from=rss"/>
+        <published>2008-12-10T07:25:23Z</published>
+        <updated>2008-12-10T07:25:23Z</updated>
+        <id>urn:plans-propellerheads-se:1670</id>
+        <author>
+            <name>Dan Engelbrecht</name>
+        </author>
+        <content type="html"><![CDATA[<p>Yes, the second bug turned out to be a can of worms. Some very old code governing timeouts in the UI was acting up again.</p>
+<p>It is used at a few select places, so I fixed some stuff and close the can, taped it shut with lots of tape and put a big sign on it saying "Can of worms, do not use! If you need it consider throwing this can away and build something better".</p>
+<p>This was a time-saving measure, If I had all the time in the world it would be better if I just replaced it right now but as always You need to factor in "bang for the buck" - is the return worth the effort?</p>
+<p>The second bug was also in that area, it was a two part bug where the first part was an obvious bug that needed fixing, the second part was also a bug but not as critical - the program did not crash and it was a detail in the data model that was lost.</p>
+<p>The second part was split out to a separate bug report and lowered in priority and will be taken care of if time permits. Fixing it would require som rewrite of a bit of complex code and that was deemed to expensive and risky to do right now. Neither me or Mr project manager (Ludde) was to happy in doing this compromise but sometimes you need to be pragmatic.</p>
+<p>Peter F. found a bug last night when doing the old "monkey-test" by clicking madly in the UI which made the data model code triggered an ASSERT (an error detection that we built into the code). I will look into it this morning.</p>
+<p>So, I'm down to one bug for this milestone. Keep you fingers crossed...</p>
+<p>Dan</p>]]></content>
+        <summary type="html"><![CDATA[<p>Yes, the second bug turned out to be a can of worms. Some very old code governing timeouts in the UI was acting up again.</p>
+<p>It is used at a few select places, so I fixed some stuff and close the can, taped it shut with lots of tape and put a big sign on it saying "Can of worms, do not use! If you need it consider throwing this can away and build something better".</p>
+<p>This was a time-saving measure, If I had all the time in the world it would be better if I just replaced it right now but as always You need to factor in "bang for the buck" - is the return worth the effort?</p>
+<p>The second bug was also in that area, it was a two part bug where the first part was an obvious bug that needed fixing, the second part was also a bug but not as critical - the program did not crash and it was a detail in the data model that was lost.</p>
+<p>The second part was split out to a separate bug report and lowered in priority and will be taken care of if time permits. Fixing it would require som rewrite of a bit of complex code and that was deemed to expensive and risky to do right now. Neither me or Mr project manager (Ludde) was to happy in doing this compromise but sometimes you need to be pragmatic.</p>
+<p>Peter F. found a bug last night when doing the old "monkey-test" by clicking madly in the UI which made the data model code triggered an ASSERT (an error detection that we built into the code). I will look into it this morning.</p>
+<p>So, I'm down to one bug for this milestone. Keep you fingers crossed...</p>
+<p>Dan</p>]]></summary>
+    </entry>
+    <entry>
+        <title>Short and sweet (Dan Engelbrecht)</title>
+        <link rel="alternate" type="text/html" href="http://www.propellerheads.se/company/crew/index.cfm?fuseaction=dsp_plan&amp;PID=4&amp;from=rss"/>
+        <published>2008-12-09T09:17:51Z</published>
+        <updated>2008-12-09T09:17:51Z</updated>
+        <id>urn:plans-propellerheads-se:1669</id>
+        <author>
+            <name>Dan Engelbrecht</name>
+        </author>
+        <content type="html"><![CDATA[<p>Working on two bugs today, one which is a bit hard due to how data changes and keeping track of what has been done to apply new changes correctly. Always a hassle.</p>
+<p>Second should be pretty short but has potential of turning into a can of worms.</p>
+<p>The fun never ends!</p>
+<p>D</p>]]></content>
+        <summary type="html"><![CDATA[<p>Working on two bugs today, one which is a bit hard due to how data changes and keeping track of what has been done to apply new changes correctly. Always a hassle.</p>
+<p>Second should be pretty short but has potential of turning into a can of worms.</p>
+<p>The fun never ends!</p>
+<p>D</p>]]></summary>
+    </entry>
+    <entry>
+        <title>A bit worn out today... (Dan Engelbrecht)</title>
+        <link rel="alternate" type="text/html" href="http://www.propellerheads.se/company/crew/index.cfm?fuseaction=dsp_plan&amp;PID=4&amp;from=rss"/>
+        <published>2008-12-08T09:21:40Z</published>
+        <updated>2008-12-08T09:21:40Z</updated>
+        <id>urn:plans-propellerheads-se:1668</id>
+        <author>
+            <name>Dan Engelbrecht</name>
+        </author>
+        <content type="html"><![CDATA[<p>Had some friends over for "adventsfika" yesterday and quite a few showed up, so I'm a little tired today.</p>
+<p>About the atomic swap lock thingie, <span style="color: #666666;"><strong>presiato</strong> <span style="color: #000000;">commented on that post that a lock free queue is the only safe lock free data structure. That is more or less true, but you may have some other circumstances that helps out so you can make compromises.</span></span></p>
+<p>First, are you working with a queue of messages where every message must be sent and received or are you working with a "state" where only the last is the most up to date and contain all relevant data? If you have a full-blown state you can dismiss all the intermediate states and just get the last.</p>
+<p>Secondly, if the producer and consumer are unbalanced in priority you can make more assumptions. Even better if the producer is allowed to block but not the consumer, then you can get away with even more. This is the case in the code I was working with, the audio thread was not allowed to block but the UI thread was (however not indefinitely).</p>
+<p>Third, do you know the call patterns of the consumer and producer you can do even more compromises. In the code I have written the producer tries to lock, if it fails it waits a short time and tries again until it locks. The consumer tires to lock the latest state and if it fails for some reason it tries again in a tight loop. This is ok due to the locking structure - it will very seldom fail at the first lock and never at the second attempt due to the call patterns of the producer.</p>
+<p>The atomic swap lock works with two states and an atomic value that points out which state is the most current, which one is locked for writing (by the consumer) and which one is locked for reading (by the consumer). For the specific needs where I needed to thread safe stuff this worked out perfectly, the overhead is that you need duplicate states so you can update one state while the other is being read.</p>
+<p>Hope this helps getting you some ideas <span style="color: #666666;"><strong>presiato.</strong> </span></p>
+<p>Dan</p>]]></content>
+        <summary type="html"><![CDATA[<p>Had some friends over for "adventsfika" yesterday and quite a few showed up, so I'm a little tired today.</p>
+<p>About the atomic swap lock thingie, <span style="color: #666666;"><strong>presiato</strong> <span style="color: #000000;">commented on that post that a lock free queue is the only safe lock free data structure. That is more or less true, but you may have some other circumstances that helps out so you can make compromises.</span></span></p>
+<p>First, are you working with a queue of messages where every message must be sent and received or are you working with a "state" where only the last is the most up to date and contain all relevant data? If you have a full-blown state you can dismiss all the intermediate states and just get the last.</p>
+<p>Secondly, if the producer and consumer are unbalanced in priority you can make more assumptions. Even better if the producer is allowed to block but not the consumer, then you can get away with even more. This is the case in the code I was working with, the audio thread was not allowed to block but the UI thread was (however not indefinitely).</p>
+<p>Third, do you know the call patterns of the consumer and producer you can do even more compromises. In the code I have written the producer tries to lock, if it fails it waits a short time and tries again until it locks. The consumer tires to lock the latest state and if it fails for some reason it tries again in a tight loop. This is ok due to the locking structure - it will very seldom fail at the first lock and never at the second attempt due to the call patterns of the producer.</p>
+<p>The atomic swap lock works with two states and an atomic value that points out which state is the most current, which one is locked for writing (by the consumer) and which one is locked for reading (by the consumer). For the specific needs where I needed to thread safe stuff this worked out perfectly, the overhead is that you need duplicate states so you can update one state while the other is being read.</p>
+<p>Hope this helps getting you some ideas <span style="color: #666666;"><strong>presiato.</strong> </span></p>
+<p>Dan</p>]]></summary>
+    </entry>
+    <entry>
+        <title>Good afternoon (Dan Engelbrecht)</title>
+        <link rel="alternate" type="text/html" href="http://www.propellerheads.se/company/crew/index.cfm?fuseaction=dsp_plan&amp;PID=4&amp;from=rss"/>
+        <published>2008-12-05T14:35:06Z</published>
+        <updated>2008-12-05T14:35:06Z</updated>
+        <id>urn:plans-propellerheads-se:1666</id>
+        <author>
+            <name>Dan Engelbrecht</name>
+        </author>
+        <content type="html"><![CDATA[<p>I had some stuff to take care at home this morning so I worked from there and got into the office by lunch. Made for a late plan update today.</p>
+<p>Yesterday we visitied <a href="http://www.dice.se/">DICE</a>, the games company, and had a chat with the audio crew. David M&#246;llerstedt (he used to work at <a href="http://www.elektron.se/">Elektron</a>) did a short presentation about DICE and the audio team and we fired annoying questions the whole time. After the presentation a few of the team members showed up and we discussed everything from project planning, release schedules (in general), tools and other fun stuff.</p>
+<p>It was more of a social event, so no, we have no secret project which involves DICE, but they happen to be a cool software company that have their offices not far from us.</p>
+<p>And talk about offices! Ours are cool and quirky being an old factory, but theirs is as flash as they get. Really nice, with perfect temperature and a low noise level, something we can't quite brag about today.</p>
+<p>All the guys we met from the audio group was really nice guys and we had interesting discussions. We are planning to have a table tennis tournament sometime in the future and maybe some other social events.</p>
+<p>Dan</p>]]></content>
+        <summary type="html"><![CDATA[<p>I had some stuff to take care at home this morning so I worked from there and got into the office by lunch. Made for a late plan update today.</p>
+<p>Yesterday we visitied <a href="http://www.dice.se/">DICE</a>, the games company, and had a chat with the audio crew. David M&#246;llerstedt (he used to work at <a href="http://www.elektron.se/">Elektron</a>) did a short presentation about DICE and the audio team and we fired annoying questions the whole time. After the presentation a few of the team members showed up and we discussed everything from project planning, release schedules (in general), tools and other fun stuff.</p>
+<p>It was more of a social event, so no, we have no secret project which involves DICE, but they happen to be a cool software company that have their offices not far from us.</p>
+<p>And talk about offices! Ours are cool and quirky being an old factory, but theirs is as flash as they get. Really nice, with perfect temperature and a low noise level, something we can't quite brag about today.</p>
+<p>All the guys we met from the audio group was really nice guys and we had interesting discussions. We are planning to have a table tennis tournament sometime in the future and maybe some other social events.</p>
+<p>Dan</p>]]></summary>
+    </entry>
+    <entry>
+        <title>Better late than never, or? (Dan Engelbrecht)</title>
+        <link rel="alternate" type="text/html" href="http://www.propellerheads.se/company/crew/index.cfm?fuseaction=dsp_plan&amp;PID=4&amp;from=rss"/>
+        <published>2008-12-04T10:36:35Z</published>
+        <updated>2008-12-04T10:36:35Z</updated>
+        <id>urn:plans-propellerheads-se:1665</id>
+        <author>
+            <name>Dan Engelbrecht</name>
+        </author>
+        <content type="html"><![CDATA[<p>Almost forgot to update today!</p>
+<p>Yesterday was spent fixing a very nasty bug that has been lurking for quite some time in our codebase. It did not trigger problems on a regular basis but once it did it could wreak havok and crasch the engine thread.</p>
+<p>It was a concurrencly problem where the UI thread updated a data structure that the audio thread was reading without any syncronisation protection whatsoever. It was a "holy crap" moment when I realized that it slipped unnoticed this long.</p>
+<p>One problem that makes it impractical to solve with a simple mutex is that the audio thread must not block waiting to get the mutex, and the way this particular structure is used it can not just skip it if it can not be locked, it need access to it.</p>
+<p>I solved it with my magical AtomicSwapLock class and now it seems to work good. Need some thorough testing though.</p>
+<p>Today I'm working on fixing a feature that I wrote for the fifty-seventh time. Tricky logic in this one. Will take at least a couple of hours more.</p>
+<p>Dan</p>]]></content>
+        <summary type="html"><![CDATA[<p>Almost forgot to update today!</p>
+<p>Yesterday was spent fixing a very nasty bug that has been lurking for quite some time in our codebase. It did not trigger problems on a regular basis but once it did it could wreak havok and crasch the engine thread.</p>
+<p>It was a concurrencly problem where the UI thread updated a data structure that the audio thread was reading without any syncronisation protection whatsoever. It was a "holy crap" moment when I realized that it slipped unnoticed this long.</p>
+<p>One problem that makes it impractical to solve with a simple mutex is that the audio thread must not block waiting to get the mutex, and the way this particular structure is used it can not just skip it if it can not be locked, it need access to it.</p>
+<p>I solved it with my magical AtomicSwapLock class and now it seems to work good. Need some thorough testing though.</p>
+<p>Today I'm working on fixing a feature that I wrote for the fifty-seventh time. Tricky logic in this one. Will take at least a couple of hours more.</p>
+<p>Dan</p>]]></summary>
+    </entry>
+    <entry>
+        <title>Nothing much (Dan Engelbrecht)</title>
+        <link rel="alternate" type="text/html" href="http://www.propellerheads.se/company/crew/index.cfm?fuseaction=dsp_plan&amp;PID=4&amp;from=rss"/>
+        <published>2008-12-03T09:26:33Z</published>
+        <updated>2008-12-03T09:26:33Z</updated>
+        <id>urn:plans-propellerheads-se:1664</id>
+        <author>
+            <name>Dan Engelbrecht</name>
+        </author>
+        <content type="html"><![CDATA[<p>Not a very exciting day today, I had a bug that I passed along to the product manager, we'll see when it bounces back.</p>
+<p>Sync meeting in five.</p>
+<p>Still evaluating defrag options, but O&amp;O Defrag is my favourite so far even though I'm not 100% happy with the UI.</p>
+<p>Dan</p>]]></content>
+        <summary type="html"><![CDATA[<p>Not a very exciting day today, I had a bug that I passed along to the product manager, we'll see when it bounces back.</p>
+<p>Sync meeting in five.</p>
+<p>Still evaluating defrag options, but O&amp;O Defrag is my favourite so far even though I'm not 100% happy with the UI.</p>
+<p>Dan</p>]]></summary>
+    </entry>
+    <entry>
+        <title>Nailed two out of three (Dan Engelbrecht)</title>
+        <link rel="alternate" type="text/html" href="http://www.propellerheads.se/company/crew/index.cfm?fuseaction=dsp_plan&amp;PID=4&amp;from=rss"/>
+        <published>2008-12-02T09:03:27Z</published>
+        <updated>2008-12-02T09:03:27Z</updated>
+        <id>urn:plans-propellerheads-se:1663</id>
+        <author>
+            <name>Dan Engelbrecht</name>
+        </author>
+        <content type="html"><![CDATA[<p>Still got one bug left and it might take a while. Looking into it right now...</p>
+<p>Worked from home yesterday afternoon, waiting for a couch to be delivered somewhere between 13:00 and 19.00. They showed up at 19.30. Sigh.</p>
+<p>At least they where friendly and helpful, I've had my share of not so friendly delivery guys with huge amounts of attitude. But of course no delivery can be without its troubles. When they drove away with their big lorry they slammed my mailbox so now it is severely dented and leans heavily to the side...</p>
+<p>For some reason my computer is taking forever to link again... I think my hard drive is severly fragmented. I'm close to buying a defragmenting program for my own money. Yes, I've tried the built in defragment program in XP, but it does only a so-so job compared to a couple of commercial ones I've tried. What we do on a daily basis with files; compiling, editing, syncing from Perforce, linking etc seem to put a very big strain on the file system.</p>
+<p>I'll nag Erik and Tomas about buying a few copies since I tend to spend a good five minutes waiting for linking for every little change I do. The edit, build, debug cycle is much slower than it needs to be.</p>
+<p>Yes, I'm waiting for the linking right now and it's been running three minutes so far.</p>
+<p>Laters,</p>
+<p>Dan</p>]]></content>
+        <summary type="html"><![CDATA[<p>Still got one bug left and it might take a while. Looking into it right now...</p>
+<p>Worked from home yesterday afternoon, waiting for a couch to be delivered somewhere between 13:00 and 19.00. They showed up at 19.30. Sigh.</p>
+<p>At least they where friendly and helpful, I've had my share of not so friendly delivery guys with huge amounts of attitude. But of course no delivery can be without its troubles. When they drove away with their big lorry they slammed my mailbox so now it is severely dented and leans heavily to the side...</p>
+<p>For some reason my computer is taking forever to link again... I think my hard drive is severly fragmented. I'm close to buying a defragmenting program for my own money. Yes, I've tried the built in defragment program in XP, but it does only a so-so job compared to a couple of commercial ones I've tried. What we do on a daily basis with files; compiling, editing, syncing from Perforce, linking etc seem to put a very big strain on the file system.</p>
+<p>I'll nag Erik and Tomas about buying a few copies since I tend to spend a good five minutes waiting for linking for every little change I do. The edit, build, debug cycle is much slower than it needs to be.</p>
+<p>Yes, I'm waiting for the linking right now and it's been running three minutes so far.</p>
+<p>Laters,</p>
+<p>Dan</p>]]></summary>
+    </entry>
+    <entry>
+        <title>Bug count up to three (for this milestone) (Dan Engelbrecht)</title>
+        <link rel="alternate" type="text/html" href="http://www.propellerheads.se/company/crew/index.cfm?fuseaction=dsp_plan&amp;PID=4&amp;from=rss"/>
+        <published>2008-12-01T08:51:15Z</published>
+        <updated>2008-12-01T08:51:15Z</updated>
+        <id>urn:plans-propellerheads-se:1662</id>
+        <author>
+            <name>Dan Engelbrecht</name>
+        </author>
+        <content type="html"><![CDATA[<p>Fixing bugs friday didn't go as fast or good as I had hoped, so they still have to be fixed. And I got another one during friday as well as finding a bunch more in the stuff I'm doing for the next milestone. Not counting bugs showing up in the stuff I do for Eriks team.</p>
+<p>Almost all of the development team is doing bug-fixing right now, so its just not me doing this. We also continue to do testing of the milestone. Testing reveals more bugs so we continue to fight to make the bug-count reach zero and stays there for a full 24 hours so we can move on to the next milestone fully.</p>
+<p>And of course I still have a number of tech designs ahead of me. Seems like I got a bit of work to do, right?</p>
+<p>Hope your day will be as fun-packed as mine. :)</p>
+<p>&#160;</p>
+<p>Dan</p>]]></content>
+        <summary type="html"><![CDATA[<p>Fixing bugs friday didn't go as fast or good as I had hoped, so they still have to be fixed. And I got another one during friday as well as finding a bunch more in the stuff I'm doing for the next milestone. Not counting bugs showing up in the stuff I do for Eriks team.</p>
+<p>Almost all of the development team is doing bug-fixing right now, so its just not me doing this. We also continue to do testing of the milestone. Testing reveals more bugs so we continue to fight to make the bug-count reach zero and stays there for a full 24 hours so we can move on to the next milestone fully.</p>
+<p>And of course I still have a number of tech designs ahead of me. Seems like I got a bit of work to do, right?</p>
+<p>Hope your day will be as fun-packed as mine. :)</p>
+<p>&#160;</p>
+<p>Dan</p>]]></summary>
+    </entry>
+    <entry>
+        <title>Ugh (Dan Engelbrecht)</title>
+        <link rel="alternate" type="text/html" href="http://www.propellerheads.se/company/crew/index.cfm?fuseaction=dsp_plan&amp;PID=4&amp;from=rss"/>
+        <published>2008-11-28T07:49:15Z</published>
+        <updated>2008-11-28T07:49:15Z</updated>
+        <id>urn:plans-propellerheads-se:1661</id>
+        <author>
+            <name>Dan Engelbrecht</name>
+        </author>
+        <content type="html"><![CDATA[<p>I did a classic thing this morning.</p>
+<p>I woke up (from the alarm clock ringing) and snoozed a bit and the got up, took a shower, feed the dog, fixed breakfast and was halfway through it when I look at the clock again to see if it was time get moving.</p>
+<p>Of course it was an hour before I was supposed to get up. And I was shure the alarm clock rang at least twice before I got up. As I was pretty ready I just decided to go to work anyway, so here I am.</p>
+<p>Yesterday was "Anything you want, you can't have"-day. I tried not to make it go out over my co-worker to much. Two days in a row with not to good a mood. Hopefully today is better. I might be to tired to be grumpy. :)</p>
+<p>I have two bugs to look at today, it should take a good part of the day to fix them.</p>
+<p>First, coffe.</p>
+<p>D</p>]]></content>
+        <summary type="html"><![CDATA[<p>I did a classic thing this morning.</p>
+<p>I woke up (from the alarm clock ringing) and snoozed a bit and the got up, took a shower, feed the dog, fixed breakfast and was halfway through it when I look at the clock again to see if it was time get moving.</p>
+<p>Of course it was an hour before I was supposed to get up. And I was shure the alarm clock rang at least twice before I got up. As I was pretty ready I just decided to go to work anyway, so here I am.</p>
+<p>Yesterday was "Anything you want, you can't have"-day. I tried not to make it go out over my co-worker to much. Two days in a row with not to good a mood. Hopefully today is better. I might be to tired to be grumpy. :)</p>
+<p>I have two bugs to look at today, it should take a good part of the day to fix them.</p>
+<p>First, coffe.</p>
+<p>D</p>]]></summary>
+    </entry>
+    <entry>
+        <title>No (Dan Engelbrecht)</title>
+        <link rel="alternate" type="text/html" href="http://www.propellerheads.se/company/crew/index.cfm?fuseaction=dsp_plan&amp;PID=4&amp;from=rss"/>
+        <published>2008-11-27T09:14:03Z</published>
+        <updated>2008-11-27T09:14:03Z</updated>
+        <id>urn:plans-propellerheads-se:1660</id>
+        <author>
+            <name>Dan Engelbrecht</name>
+        </author>
+        <content type="html"><![CDATA[<p>I won't.</p>]]></content>
+        <summary type="html"><![CDATA[<p>I won't.</p>]]></summary>
+    </entry>
+    <entry>
+        <title>Bad mood (Dan Engelbrecht)</title>
+        <link rel="alternate" type="text/html" href="http://www.propellerheads.se/company/crew/index.cfm?fuseaction=dsp_plan&amp;PID=4&amp;from=rss"/>
+        <published>2008-11-26T09:29:57Z</published>
+        <updated>2008-11-26T09:29:57Z</updated>
+        <id>urn:plans-propellerheads-se:1659</id>
+        <author>
+            <name>Dan Engelbrecht</name>
+        </author>
+        <content type="html"><![CDATA[<p>I obviously woke up on the wrong side of the bed this morning.</p>
+<p>I'm drinking coffe right now and it seems to help a little. Hopefully I don't bite somebodys head of today when they ask an innocent question. Non-innocent questions can not be guarranteed to be safe. :)</p>
+<p>Today:</p>
+<p>Testing<br />Bug hunting<br />Bug fixing (hopefully)<br />Feature adding<br />Sync Meeting</p>
+<p>Pretty much a regular day.</p>]]></content>
+        <summary type="html"><![CDATA[<p>I obviously woke up on the wrong side of the bed this morning.</p>
+<p>I'm drinking coffe right now and it seems to help a little. Hopefully I don't bite somebodys head of today when they ask an innocent question. Non-innocent questions can not be guarranteed to be safe. :)</p>
+<p>Today:</p>
+<p>Testing<br />Bug hunting<br />Bug fixing (hopefully)<br />Feature adding<br />Sync Meeting</p>
+<p>Pretty much a regular day.</p>]]></summary>
+    </entry>
+    <entry>
+        <title>Exercise in futility (Dan Engelbrecht)</title>
+        <link rel="alternate" type="text/html" href="http://www.propellerheads.se/company/crew/index.cfm?fuseaction=dsp_plan&amp;PID=4&amp;from=rss"/>
+        <published>2008-11-25T10:10:05Z</published>
+        <updated>2008-11-25T10:10:05Z</updated>
+        <id>urn:plans-propellerheads-se:1658</id>
+        <author>
+            <name>Dan Engelbrecht</name>
+        </author>
+        <content type="html"><![CDATA[<p>If you look that up in the dictionary I'm sure you would see a picture of me shoveling snow. Two hours yesterday evening, and then it started snowing again...</p>
+<p>Today I'll try to fidget a little with the delivery that showed up on friday. Should be interesting.</p>
+<p>I'm a little all over the place today, working in four different branches and one or two components. I probably need to add a "Cancel" function to one of our new components and that requires a little bit of thought.</p>
+<p>I don't know how much more Eriks team needs from me right now except for a bug fix that I will take care of in a minute or two. It seems like the specification for the feature I'm helping with is in for another change. It never ends. Joy.</p>
+<p>Hopefully I made enough progress on the stuff for John so he can continue his prototype code which builds on my prototype code. A recepie for disaster I'm sure. :)</p>
+<p>This afternoon there will be a milestone demo and all us developers crosses our fingers hoping it holds together. After that we hope to see a lot of testing in house to flesh out bugs before the next milestone is begun for Jockes team.</p>
+<p>Dan</p>]]></content>
+        <summary type="html"><![CDATA[<p>If you look that up in the dictionary I'm sure you would see a picture of me shoveling snow. Two hours yesterday evening, and then it started snowing again...</p>
+<p>Today I'll try to fidget a little with the delivery that showed up on friday. Should be interesting.</p>
+<p>I'm a little all over the place today, working in four different branches and one or two components. I probably need to add a "Cancel" function to one of our new components and that requires a little bit of thought.</p>
+<p>I don't know how much more Eriks team needs from me right now except for a bug fix that I will take care of in a minute or two. It seems like the specification for the feature I'm helping with is in for another change. It never ends. Joy.</p>
+<p>Hopefully I made enough progress on the stuff for John so he can continue his prototype code which builds on my prototype code. A recepie for disaster I'm sure. :)</p>
+<p>This afternoon there will be a milestone demo and all us developers crosses our fingers hoping it holds together. After that we hope to see a lot of testing in house to flesh out bugs before the next milestone is begun for Jockes team.</p>
+<p>Dan</p>]]></summary>
+    </entry>
+    <entry>
+        <title>Ben Burtt (Leo Nathorst-BÃ¶Ã¶s)</title>
+        <link rel="alternate" type="text/html" href="http://www.propellerheads.se/company/crew/index.cfm?fuseaction=dsp_plan&amp;PID=10&amp;from=rss"/>
+        <published>2008-11-24T16:06:19Z</published>
+        <updated>2008-11-24T16:06:19Z</updated>
+        <id>urn:plans-propellerheads-se:1657</id>
+        <author>
+            <name>Leo Nathorst-BÃ¶Ã¶s</name>
+        </author>
+        <content type="html"><![CDATA[<p>While having breakfast this morning, I watched some <a title="Ben Burtt @ Collider.com" href="http://www.collider.com/entertainment/interviews/article.asp/aid/9762/tcid/1">videos of Ben Burtt</a>,&#160;demonstrating how he created the sounds for Wall-E. You really need to watch at least the first one. If there are such things as wizards, I'm sure Ben Burtt is one of them.</p>
+<p>Oh, and while I'm updating my plan file anyway (for the first time in seven months!); please don't submit more basslines. I'm the one who has to go through all submissions, and my ears can't take more low-end! :)</p>]]></content>
+        <summary type="html"><![CDATA[<p>While having breakfast this morning, I watched some <a title="Ben Burtt @ Collider.com" href="http://www.collider.com/entertainment/interviews/article.asp/aid/9762/tcid/1">videos of Ben Burtt</a>,&#160;demonstrating how he created the sounds for Wall-E. You really need to watch at least the first one. If there are such things as wizards, I'm sure Ben Burtt is one of them.</p>
+<p>Oh, and while I'm updating my plan file anyway (for the first time in seven months!); please don't submit more basslines. I'm the one who has to go through all submissions, and my ears can't take more low-end! :)</p>]]></summary>
+    </entry>
+</feed>

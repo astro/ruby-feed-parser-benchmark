@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule"
+>
+
+<channel>
+	<title>one small voice &#187; jabber</title>
+	<atom:link href="http://stpeter.im/?feed=rss2&#038;cat=6" rel="self" type="application/rss+xml" />
+	<link>https://stpeter.im</link>
+	<description>stpeter's blog on jabber, technology, history, philosophy, language, music, et al.</description>
+	<pubDate>Tue, 09 Dec 2008 16:22:16 +0000</pubDate>
+	<generator>http://wordpress.org/?v=abc</generator>
+	<language>en</language>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+		<item>
+		<title>FLOSSing</title>
+		<link>https://stpeter.im/?p=2363</link>
+		<comments>https://stpeter.im/?p=2363#comments</comments>
+		<pubDate>Wed, 03 Dec 2008 18:00:17 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2363</guid>
+		<description><![CDATA[I&#8217;ve been so busy lately that I forgot to mention that I&#8217;ll be interviewed on FLOSS Weekly later today (to be exact, at 22:00 UTC, i.e. T-4 hours). You can listen live at twit.am and send me questions in the jdev@conference.jabber.org chatroom. :)
+UPDATE: The podcast has been posted at http://twit.tv/floss49!
+]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve been so busy lately that I forgot to mention that I&#8217;ll be interviewed on <a href='http://twit.tv/FLOSS'>FLOSS Weekly</a> later today (to be exact, at 22:00 UTC, i.e. T-4 hours). You can listen live at <a href='http://twit.am/'>twit.am</a> and send me questions in the <a href='xmpp:jdev@conference.jabber.org'>jdev@conference.jabber.org</a> chatroom. :)</p>
+<p>UPDATE: The podcast has been posted at <a href='http://twit.tv/floss49'>http://twit.tv/floss49</a>!</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2363</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Maturity and Diversity in the XMPP Ecosystem</title>
+		<link>https://stpeter.im/?p=2351</link>
+		<comments>https://stpeter.im/?p=2351#comments</comments>
+		<pubDate>Wed, 05 Nov 2008 16:55:48 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2351</guid>
+		<description><![CDATA[Eric Marcoullier of Gnip recently announced that they were winding down their XMPP support. Both Marshall Kirkpatrick and Stowe Boyd found this surprising, given that Gnip&#8217;s customers seem to be crying for the real-time data that an XMPP firehose would provide (and despite the fact that services like Yahoo Fire Eagle are busy ramping up [...]]]></description>
+			<content:encoded><![CDATA[<p>Eric Marcoullier of <a href='http://gnipcentral.com/'>Gnip</a> recently <a href='http://blog.gnipcentral.com/2008/11/03/winding-down-xmpp-for-now/'>announced</a> that they were winding down their XMPP support. Both <a href='http://www.readwriteweb.com/archives/gnip_says_xmpp_ecosytem_too_ha.php'>Marshall Kirkpatrick</a> and <a href='http://www.stoweboyd.com/message/2008/11/gnip-dropping-x.html'>Stowe Boyd</a> found this surprising, given that Gnip&#8217;s customers seem to be crying for the real-time data that an XMPP firehose would provide (and despite the fact that services like Yahoo Fire Eagle are busy <a href='http://www.readwriteweb.com/archives/gnip_says_xmpp_ecosytem_too_ha.php#comment-115822'>ramping up</a> their XMPP support).</p>
+<p>I find Eric&#8217;s reasoning to be a bit flawed. First he says that the XMPP ecosystem is immature because there are too many XMPP server implementations, in contrast to the simpler world of HTTP servers where <a href='http://news.netcraft.com/archives/web_server_survey.html'>Apache dominates</a>. Yet the email ecosystem is quite mature and has <a href='http://www.mailradar.com/mailstat/'>no one dominant server implementation</a> (the current stats at mailradar.com are Sendmail 24%, Postfix 20%, qmail 17%, Microsoft Mail 15%, and exim 13%).</p>
+<p>It&#8217;s true that there are <a href='http://xmpp.org/software/servers.shtml'>quite a few XMPP server implementations</a>, but only about half a dozen of them are serious players and some <a href='http://www.process-one.net/en/imtrends/article/usage_estimation_of_public_xmpp_servers_per_domain/'>rough estimates of deployment</a> indicate that there is no one dominant implementation (not very different from the email landscape). Furthermore, there is strong interoperability between these implementations because we run an open and growing network of servers and most people are happily unaware of which implementation is running at any particular domain.</p>
+<p>A bit further along in Eric&#8217;s post, we learn why they are experiencing problems:</p>
+<blockquote>
+<p>From Gnip’s perspective, XMPP is causing us pain and eating cycles.  More than half of all customer service requests are about XMPP and in many cases, the receiving party isn’t standing up their own server.  They’re running off of Google or Jabber.org and there’s not much we can do when they get throttled.</p>
+</blockquote>
+<p>So here&#8217;s the problem: it&#8217;s not that the XMPP ecosystem is immature, it&#8217;s that Gnip&#8217;s customers are immature. They are attempting to run high-throughput data services via end-user accounts or bots running at open IM services like Google Talk and jabber.org. Then they are surprised when their accounts get rate-limited for excessive usage! The solution is for them to run their own XMPP servers. As mentioned there are plenty of such servers to choose from, and you can have most of them up and running in a few minutes.</p>
+<p>My conclusion: diversity and maturity can go hand-in-hand, but you need to choose the right tool for the job.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2351</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>A Sign of the Times</title>
+		<link>https://stpeter.im/?p=2348</link>
+		<comments>https://stpeter.im/?p=2348#comments</comments>
+		<pubDate>Tue, 04 Nov 2008 16:24:29 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2348</guid>
+		<description><![CDATA[I&#8217;m happy to say that Cisco has completed its acquisition of Jabber, Inc. My start date at Webb Interactive Services (original parent of Jabber, Inc.) was November 1, 1999, and my start date at Cisco was October 31, 2008. Just a day shy of 9 years! I&#8217;m looking forward to many more years of working [...]]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m happy to say that Cisco has <a href='http://newsroom.cisco.com/dlls/2008/corp_110308.html'>completed its acquisition</a> of Jabber, Inc. My start date at Webb Interactive Services (original parent of Jabber, Inc.) was November 1, 1999, and my start date at Cisco was October 31, 2008. Just a day shy of 9 years! I&#8217;m looking forward to many more years of working on Jabber, XMPP, and real-time communication.</p>
+<p>For auld lange syne I figured I&#8217;d post a photo of the lobby sign at the Jabber Inc. offices. :)</p>
+<p><img src='/images/jabber-sign.jpg'/></p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2348</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Jabber.org Privacy Policy</title>
+		<link>https://stpeter.im/?p=2338</link>
+		<comments>https://stpeter.im/?p=2338#comments</comments>
+		<pubDate>Wed, 15 Oct 2008 20:26:15 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2338</guid>
+		<description><![CDATA[We&#8217;ve never had a privacy policy regarding the jabber.org IM service, but I&#8217;m trying to change that. A draft policy is at http://xmpp.org/xsf/privacy.shtml and your feedback is welcome before the Board of the XMPP Standards Foundation votes on it.
+]]></description>
+			<content:encoded><![CDATA[<p>We&#8217;ve never had a privacy policy regarding the jabber.org IM service, but I&#8217;m trying to change that. A draft policy is at <a href='http://xmpp.org/xsf/privacy.shtml'>http://xmpp.org/xsf/privacy.shtml</a> and your feedback is welcome before the Board of the XMPP Standards Foundation votes on it.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2338</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Open is Better</title>
+		<link>https://stpeter.im/?p=2331</link>
+		<comments>https://stpeter.im/?p=2331#comments</comments>
+		<pubDate>Mon, 13 Oct 2008 03:14:09 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2331</guid>
+		<description><![CDATA[The Free Software Foundation has added the following to its high priority list:
+
+Free software replacement for Skype
+Skype is a proprietary Voice-over-IP program that uses a proprietary protocol. Skype is seducing free software users into using proprietary software, often two users at a time. We do not want to encourage the creation of a Skype compatible [...]]]></description>
+			<content:encoded><![CDATA[<p>The <a href='http://www.fsf.org/'>Free Software Foundation</a> has added the following to its <a href='http://www.fsf.org/campaigns/priority.html'>high priority list</a>:</p>
+<blockquote>
+<p>Free software replacement for Skype</p>
+<p>Skype is a proprietary Voice-over-IP program that uses a proprietary protocol. Skype is seducing free software users into using proprietary software, often two users at a time. We do not want to encourage the creation of a Skype compatible client, but instead, we want to encourage you to create, contribute to, or promote the use of free software alternatives to Skype, such as Ekiga, and to encourage to adoption and use of free VoIP, video, and chat protocols such as SIP and XMPP/Jingle.</p>
+</blockquote>
+<p>Hmm, maybe <a href='http://www.michaelrobertson.com/archive.php?minute_id=275'>this is why</a>?</p>
+<p>In the XMPP community we&#8217;ve been making quite a bit of progress lately on <a href='http://xmpp.org/tech/jingle.shtml'>Jingle</a>, so I&#8217;m looking forward to building open replacements for black-box technologies like Skype.</p>
+<p>Open is better.</li>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2331</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Jabber Comes Alive!</title>
+		<link>https://stpeter.im/?p=2309</link>
+		<comments>https://stpeter.im/?p=2309#comments</comments>
+		<pubDate>Thu, 02 Oct 2008 21:30:23 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2309</guid>
+		<description><![CDATA[For years, Doc Searls and his son Allen have been talking about the live web. Sadly, one of the most dynamic corners of the &#8216;net &#8212; the real-time developer community centered around jabber.org &#8212; has been old and static (at least when it comes to the web). That&#8217;s about to change. Today in the webteam [...]]]></description>
+			<content:encoded><![CDATA[<p>For years, Doc Searls and his son Allen have been talking about the <a href='http://blogs.law.harvard.edu/doc/2008/09/26/the-live-web/'>live web</a>. Sadly, one of the most dynamic corners of the &#8216;net &#8212; the real-time developer community centered around jabber.org &#8212; has been old and static (at least when it comes to the web). That&#8217;s about to change. Today in the <a href='http://speeqe.com/room/webteam@conference.jabber.org/'>webteam</a> chatroom we had a <a href='http://logs.jabber.org/webteam@conference.jabber.org/2008-10-02.html#14:50:26'>lively discussion</a> (pardon the pun) about how to enliven the jabber.org web experience. Expect a radically dynamic new interface soon, with live chatrooms powered by <a href='http://speeqe.com/'>speeqe</a>, microblogging feeds, and just a few static pages for reference purposes. The design is still emerging, but I really like the ideas we&#8217;re working to make real. Join the conversation!</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2309</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Jabber, Cisco, XMPP, and You</title>
+		<link>https://stpeter.im/?p=2282</link>
+		<comments>https://stpeter.im/?p=2282#comments</comments>
+		<pubDate>Sat, 20 Sep 2008 04:21:32 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2282</guid>
+		<description><![CDATA[The technology websites have been abuzz today about Cisco&#8217;s acquisition of Jabber, Inc., where I have worked since October 2000. Because a number of folks seem to be confused about the impact of this news on the XMPP developer community, I&#8217;d like to answer a few of today&#8217;s frequently asked questions.
+
+Will I still be able [...]]]></description>
+			<content:encoded><![CDATA[<p>The technology websites have been <a href='http://delicious.com/tag/ciscojabber'>abuzz</a> today about Cisco&#8217;s <a href='http://blogs.cisco.com/news/comments/jabber_acquisition_and_cisco_collaboration/'>acquisition</a> of <a href='http://www.jabber.com/'>Jabber, Inc.</a>, where I have worked since October 2000. Because a number of folks <a href='http://logs.jabber.org/jdev@conference.jabber.org/2008-09-19.html#13:40:19'>seem to be confused</a> about the impact of this news on the XMPP developer community, I&#8217;d like to answer a few of today&#8217;s <a href='http://metajack.im/2008/09/19/xmpp-is-hotter-than-ever/'>frequently asked questions</a>.</p>
+<ul>
+<li><strong>Will I still be able to run my Jabber server at mydomain.com?</strong> Of course! All Jabber/XMPP software projects and products implement the <a href='http://www.xmpp.org/'>Extensible Messaging and Presence Protocol</a>, which is an open standard that anyone can implement or deploy.</li>
+<li><strong>Will open-source projects be prevented from using the word &#8220;Jabber&#8221; in their project names?</strong> No, because the <a href='http://www.xmpp.org/xsf/'>XMPP Standards Foundation</a> (XSF) has a legal agreement with Jabber, Inc. regarding the <a href='http://www.xmpp.org/trademark/'>Jabber trademark</a>, which Cisco has inherited through this acquisition.</li>
+<li><strong>Is Cisco going to shut down the <a href='http://www.xmpp.org/xsf/'>XSF</a>?</strong> No. They couldn&#8217;t do that even if they wanted to, because the XSF is a legally independent, non-profit organization that is not controlled or owned by Jabber, Inc. But they don&#8217;t want to. Indeed, they think the presence of a strong, independent standards development organization is a good thing.</li>
+<li><strong>Will Cisco continue Jabber, Inc.&#8217;s support of the XSF, in particular by sponsoring you (Peter Saint-Andre) to keep writing all those XMPP specifications?</strong> Yes. Cisco wants to be very supportive of XMPP standardization, and I am a big factor in XMPP standardization, therefore Cisco wants to be very supportive of me. :)</li>
+</ul>
+<p>I&#8217;m excited to be part of the Cisco team, and I think the whole community will see even more good things happening because of their support.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2282</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>XMPP Reports</title>
+		<link>https://stpeter.im/?p=2280</link>
+		<comments>https://stpeter.im/?p=2280#comments</comments>
+		<pubDate>Tue, 16 Sep 2008 15:46:45 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2280</guid>
+		<description><![CDATA[We&#8217;ve started publishing a new series of &#8220;XMPP Reports&#8221; over at Extended Conversation (the official blog of the XMPP Standards Foundation). Hopefully this series will replace the old Jabber Journal, and I&#8217;ve got help this time so perhaps we&#8217;ll be able to publish on a regular basis. The first installment is here. Enjoy!
+]]></description>
+			<content:encoded><![CDATA[<p>We&#8217;ve started publishing a new series of &#8220;XMPP Reports&#8221; over at <a href='http://blog.xmpp.org/'>Extended Conversation</a> (the official blog of the <a href='http://www.xmpp.org/xsf/'>XMPP Standards Foundation</a>). Hopefully this series will replace the old <a href='http://www.saint-andre.com/jabber/journal/'>Jabber Journal</a>, and I&#8217;ve got help this time so perhaps we&#8217;ll be able to publish on a regular basis. The first installment is <a href='http://blog.xmpp.org/?p=41'>here</a>. Enjoy!</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2280</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Lighty-ing the Load</title>
+		<link>https://stpeter.im/?p=2265</link>
+		<comments>https://stpeter.im/?p=2265#comments</comments>
+		<pubDate>Mon, 08 Sep 2008 17:49:14 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2265</guid>
+		<description><![CDATA[Matthew Wild and I just completed the transition of &#8220;apollo&#8221; (the jabber.org/xmpp.org webserver) from Apache to lighttpd. Concurrently we also migrated jabber.org and xmpp.net from Drupal to MediaWiki. So far everything seems to be working great. If you find any website problems, please let us know!
+]]></description>
+			<content:encoded><![CDATA[<p><a href='http://matthewstechnologyblog.blogspot.com/'>Matthew Wild</a> and I just completed the transition of &#8220;apollo&#8221; (the jabber.org/xmpp.org webserver) from Apache to lighttpd. Concurrently we also migrated jabber.org and xmpp.net from Drupal to MediaWiki. So far everything seems to be working great. If you find any website problems, please let us know!</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2265</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Don&#8217;t Wait For The Movie!</title>
+		<link>https://stpeter.im/?p=2249</link>
+		<comments>https://stpeter.im/?p=2249#comments</comments>
+		<pubDate>Thu, 21 Aug 2008 18:21:30 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2249</guid>
+		<description><![CDATA[In case you hadn&#8217;t noticed, I like to write. In fact, it&#8217;s pretty much all I do, whether professionally or recreationally. So when Kevin Smith and Remko Tronçon said they were interested in writing a book about XMPP, I was intrigued. And when the folks at O&#8217;Reilly said they were interested too, I was doubly [...]]]></description>
+			<content:encoded><![CDATA[<p>In case you hadn&#8217;t noticed, I like to write. In fact, it&#8217;s pretty much all I do, whether professionally or recreationally. So when <a href='http://www.kismith.co.uk/wordpress/'>Kevin Smith</a> and <a href='http://el-tramo.be/'>Remko Tronçon</a> said they were interested in writing a book about <a href='http://www.xmpp.org/'>XMPP</a>, I was intrigued. And when the folks at <a href='http://www.oreilly.com/'>O&#8217;Reilly</a> said they were interested too, I was doubly intrigued. So Kevin, Remko, and I have committed to writing <cite>XMPP: The Definitive Guide</cite> for O&#8217;Reilly, and we&#8217;re now hard at work. Expect to see it published sometime in 2009. And remember: don&#8217;t wait for the movie!</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2249</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Where Is All The Jabber Spam?</title>
+		<link>https://stpeter.im/?p=2237</link>
+		<comments>https://stpeter.im/?p=2237#comments</comments>
+		<pubDate>Mon, 11 Aug 2008 03:13:42 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2237</guid>
+		<description><![CDATA[Over on the JUser discussion list, someone asked why there&#8217;s less spam on the Jabber network than there is on the email network. I answered as follows:
+
+I&#8217;ll have to write a paper about this sometime, but here are some points
+to consider:
+
+
+In XMPP, the sender&#8217;s address is not asserted by the sender&#8217;s client  but instead [...]]]></description>
+			<content:encoded><![CDATA[<p>Over on the <a href='http://mail.jabber.org/mailman/listinfo/juser'>JUser discussion list</a>, someone <a href='http://mail.jabber.org/pipermail/juser/2008-August/002152.html'>asked</a> why there&#8217;s less spam on the Jabber network than there is on the email network. I <a href='http://mail.jabber.org/pipermail/juser/2008-August/002155.html'>answered</a> as follows:</p>
+<blockquote>
+<p>I&#8217;ll have to write a paper about this sometime, but here are some points<br />
+to consider:</p>
+<ol>
+<li>
+<p>In XMPP, the sender&#8217;s address is not asserted by the sender&#8217;s client  but instead is stamped by the sender&#8217;s server. So a client can&#8217;t fake  the &#8220;from&#8221; address. (Naturally if you run the server you could fake  addresses at your domain, so as the admin of jabber.org I could send  messages from any address at jabber.org &#8212; but I can&#8217;t fake messages  from other domains, see #2.)</p>
+</li>
+<li>
+<p>In XMPP, servers check each other&#8217;s identities, either through a  DNS-based &#8220;dialback&#8221; protocol (<a href='http://www.xmpp.org/rfcs/rfc3920.html'>RFC 3920</a> / <a href='http://www.xmpp.org/extensions/xep-0220.html'>XEP-0220</a>) or real server certificates. So if I run a server at jabber.org I can&#8217;t send messages  putatively &#8220;from&#8221; microsoft.com or whitehouse.gov or whatever. (Also we  don&#8217;t have multi-hop routing, so modifications to the addresses can&#8217;t  happen between the sending server and receiving server.)</p>
+</li>
+<li>
+<p>So far, server dialback has been sufficient to prevent most address spoofing on the network, but we have a certificate authority in place  (visit <a href='https://www.xmpp.net/'>https://www.xmpp.net/</a> for details) and we could fairly easily upgrade the network to certificate-based authentication between servers  if needed.</p>
+</li>
+<li>
+<p>XMPP is pure XML, and attackers can&#8217;t easily attach malware like scripts and viruses to Jabber messages. This helps us avoid the unholy alliance between virus writers and spammers that has occurred on the email network.</p>
+</li>
+<li>
+<p>A great deal of email spam (or spam+malware) is directed against a  single platform: Outlook running on Windows. In the XMPP world we have a  much more diverse software ecosystem.</p>
+</li>
+<li>
+<p>In IM systems, people are accustomed to sharing presence / adding someone to their buddy list. There&#8217;s less of a culture of &#8220;I must be able to accept messages from anyone in the world&#8221; as in email. You can say this is good or bad, but that&#8217;s how it is &#8212; so if someone bothers you, you can delete them from your friend list or block them at the server side (see <a href='http://www.xmpp.org/rfcs/rfc3921.html'>RFC 3921</a> / <a href='http://www.xmpp.org/extensions/xep-0016.html'>XEP-0016</a>) or the client side.</p>
+</li>
+<li>
+<p>All XMPP server codebases have rate limiting in place to prevent a single client from sending a large number of messages (especially a large number of large messages) in a short period of time.</p>
+</li>
+<li>
+<p>Although we have not seen very much one-to-one spam on the Jabber network (our biggest problem so far is abusive behavior in groupchat rooms), we are actively planning for the arrival of spam and have designed some spam-fighting measures such as challenge-response (CAPTCHA) forms to join groupchat rooms or add someone to your contact list &#8212; see <a href='http://www.xmpp.org/extensions/xep-0158.html'>XEP-0158</a>.</p>
+</li>
+<li>
+<p>IM systems have traditionally been quite fragmented (and in many ways still are &#8212; as witness ICQ, AIM, MSN, Yahoo!, Skype, etc.) so there isn&#8217;t the expectation that you&#8217;ll necessarily be able to send a message to any random person on the Internet. This probably makes IM less appealing to spammers than email is. (Remember, spam is a matter of economics, and there may simply not be enough money to be made via IM.)</p>
+</li>
+</ol>
+<p>XMPP is not perfect. Spam is possible on our network, but it&#8217;s not very  easy. By design, spam is harder on the XMPP network than it is on the  SMTP network, and if spam does start to occur more widely we will design  and deploy even better spam-fighting tools (or, for instance, tighten up or turn off in-band registration, which is user-friendly but also makes  it possible to create lots of accounts at multiple servers).</p>
+<p>However, XMPP does not need to be perfect. You don&#8217;t need to be the  fastest antelope in the herd to avoid being eaten by the lion, you just  need to be faster than the slow antelope who get caught.</p>
+<p>Peter</p>
+</blockquote>
+<p>UPDATE: A lively discussion has ensued on the list &#8212; you can participate even without joining the list by visiting <a href='http://www.jabberforum.org/forumdisplay.php?f=21'>JabberForum.org</a>. I&#8217;ve also received a number of private messages about the topic, so I may post about it again soon. :)</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2237</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>What About BoB?</title>
+		<link>https://stpeter.im/?p=2236</link>
+		<comments>https://stpeter.im/?p=2236#comments</comments>
+		<pubDate>Sat, 09 Aug 2008 04:34:24 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2236</guid>
+		<description><![CDATA[Jabber technologies have always been optimized for sending many small pieces of structured data, which we call XML stanzas. As a result we&#8217;ve struggled with ways to send binary data &#8212; even small bits of binary. Out of that need emerged XEP-0231, which I recently renamed &#8220;bits of binary&#8221; (a.k.a. &#8220;BoB&#8221;) because I like catchy [...]]]></description>
+			<content:encoded><![CDATA[<p>Jabber technologies have always been optimized for sending many small pieces of structured data, which we call XML stanzas. As a result we&#8217;ve struggled with ways to send binary data &#8212; even small bits of binary. Out of that need emerged <a href='http://www.xmpp.org/extensions/xep-0231.html'>XEP-0231</a>, which I recently renamed &#8220;bits of binary&#8221; (a.k.a. &#8220;BoB&#8221;) because I like catchy spec titles (hey, it&#8217;s one of the things that keep me going). Folks like <a href='http://ralphm.net/blog/'>Ralph Meijer</a> have had vague worries about the approach we&#8217;d taken in that spec, but we needed it for anti-spam <a href='http://www.xmpp.org/extensions/xep-0158.html'>CAPTCHA forms</a> so we kind of brushed those aside because we need to fight spam, right?</p>
+<p>Then over the last few weeks <a href='http://pavlix.net/'>Pavel &#352;imerda</a> raised some further concerns and, more productively, suggested solutions. So Pavel and I have been collaborating on revisions in a longish <a href='http://mail.jabber.org/pipermail/standards/2008-July/019344.html'>email thread</a>, in a <a href='http://logs.jabber.org/jdev@conference.jabber.org/2008-08-06.html#12:56:16'>groupchat</a> the other day, and in <a href='http://mail.jabber.org/pipermail/standards/2008-August/019470.html'>follow-up email thread</a>. Pavel has been a pleasure to work with and it was fun to make such significant progress in such a short period of time.</p>
+<p>Best of all, I think &#8220;BoB&#8221; is one of those building block technologies that we&#8217;ll be able to use for features like emoticons, thumbnails for file transfer, in-line images in messages and whiteboarding sessions, and yes those CAPTCHA forms for joining chatrooms or initiating presence subscriptions.</p>
+<p>So here&#8217;s to BoB! :-)</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2236</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Got Examples?</title>
+		<link>https://stpeter.im/?p=2235</link>
+		<comments>https://stpeter.im/?p=2235#comments</comments>
+		<pubDate>Sat, 09 Aug 2008 02:53:22 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2235</guid>
+		<description><![CDATA[I try to put a lot of examples in the protocol specs I write (as I like to say, &#8220;we put the example in example.com&#8221;). So when Jeff Williams of Gadgetworks recently noted on the jingle@xmpp.org discussion list that a number of the examples in the Jingle specs are not valid in accordance with the [...]]]></description>
+			<content:encoded><![CDATA[<p>I try to put a lot of examples in the protocol specs I write (as I like to say, &#8220;we put the example in example.com&#8221;). So when Jeff Williams of <a href='http://www.gadgetworks.com/'>Gadgetworks</a> recently <a href='http://mail.jabber.org/pipermail/jingle/2008-July/000127.html'>noted</a> on the <a href='http://mail.jabber.org/mailman/listinfo/jingle'>jingle@xmpp.org</a> discussion list that a number of the examples in the Jingle specs are not valid in accordance with the XML schemas (or even well-formed), I was chagrined but also intrigued. Off-list, Jeff and I have worked a bit on the Jingle examples and schemas, but he&#8217;s found it painful to manually extract all the examples from the specs for testing purposes. So late this afternoon I wrote a <a href='http://svn.xmpp.org:18080/browse/~raw,r=2147/XMPP/trunk/extensions/examples.xsl'>small XSLT</a> to automatically extract all the examples from a <a href='http://www.xmpp.org/extensions/'>XEP</a> (wrapped by a &lt;stream&gt;&lt;/stream&gt; element) and write them to a file. I&#8217;ve run the transformation on all the XMPP extensions we&#8217;ve published so far, and the results are available at &lt;<a href='http://www.xmpp.org/extensions/examples/'>http://www.xmpp.org/extensions/examples/</a>&gt;. I&#8217;m sure there are many errors to be found (e.g., I know some examples don&#8217;t parse because they include things like &#8220;[...]&#8221; in place of elided markup), but we&#8217;ll work to clean those up over time. Feel free to report any errors to me <a href='https://stpeter.im/?page_id=1968'>directly</a>, or on the appropriate <a href='http://www.xmpp.org/about/discuss.shtml'>discussion list</a>. Have fun!</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2235</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>OAuth over XMPP</title>
+		<link>https://stpeter.im/?p=2234</link>
+		<comments>https://stpeter.im/?p=2234#comments</comments>
+		<pubDate>Sat, 09 Aug 2008 02:06:34 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2234</guid>
+		<description><![CDATA[The results of the XMPP Summit a few weeks ago continue to leak out. I&#8217;ve been so busy with action items that I haven&#8217;t had time to blog about it all, but I did want to note that over the last few days we&#8217;ve worked out the remaining details about how to use OAuth to [...]]]></description>
+			<content:encoded><![CDATA[<p>The results of the <a href='http://www.xmpp.org/summit/summit5.shtml'>XMPP Summit</a> a few weeks ago continue to leak out. I&#8217;ve been so busy with action items that I haven&#8217;t had time to blog about it all, but I did want to note that over the last few days we&#8217;ve worked out the remaining details about how to use <a href='http://oauth.net/'>OAuth</a> to access protected resources over <a href='http://www.xmpp.org/'>XMPP</a>. Read all about it in the latest version of <a href='http://www.xmpp.org/extensions/xep-0235.html'>XEP-0235</a>. Special thanks to Ralph Meijer and Blaine Cook for setting me straight about a number of issues on the <a href='http://mail.jabber.org/mailman/listinfo/social'>social@xmpp.org</a> discussion list.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2234</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Jingle Updates</title>
+		<link>https://stpeter.im/?p=2233</link>
+		<comments>https://stpeter.im/?p=2233#comments</comments>
+		<pubDate>Fri, 01 Aug 2008 04:27:43 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2233</guid>
+		<description><![CDATA[As posted on the jingle@xmpp.org discussion list, I&#8217;ve just published new versions of the three core specifications for negotiating multimedia sessions over XMPP: XEP-0166 (the Jingle core), XEP-0167 (the RTP sessions application type), and XEP-0176 (the ICE-UDP transport method). These modifications incorporate our consensus from the XMPP Summit last week and bring us a few [...]]]></description>
+			<content:encoded><![CDATA[<p>As <a href='http://mail.jabber.org/pipermail/jingle/2008-July/000143.html'>posted</a> on the <a href='http://mail.jabber.org/mailman/listinfo/jingle'>jingle@xmpp.org</a> discussion list, I&#8217;ve just published new versions of the three core specifications for negotiating multimedia sessions over XMPP: <a href='http://www.xmpp.org/extensions/xep-0166.html'>XEP-0166</a> (the Jingle core), <a href='http://www.xmpp.org/extensions/xep-0167.html'>XEP-0167</a> (the RTP sessions application type), and <a href='http://www.xmpp.org/extensions/xep-0176.html'>XEP-0176</a> (the ICE-UDP transport method). These modifications incorporate our consensus from the <a href='http://www.xmpp.org/summit/summit5.shtml'>XMPP Summit</a> last week and bring us a few steps closer to finalization of the Jingle technologies. Enjoy!</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2233</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>OSCON is People and&#8230;</title>
+		<link>https://stpeter.im/?p=2232</link>
+		<comments>https://stpeter.im/?p=2232#comments</comments>
+		<pubDate>Wed, 30 Jul 2008 16:25:31 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2232</guid>
+		<description><![CDATA[Steve O&#8217;Grady observes that OSCON is people. And, naturally, beer:
+
+From left to right that&#8217;s Jack Erwin, Christopher Zorn, me, Justin Karneges (nearly invisible because of the glare), Ralph Meijer (with his trademark Hoegaarden), Joe Hildebrand, and SaraD (photo taken by Steve at Kells). Except I skipped the beer &#8212; I was sipping a fine Balvenie [...]]]></description>
+			<content:encoded><![CDATA[<p><a href='http://redmonk.com/sogrady/'>Steve O&#8217;Grady</a> observes that <a href='http://www.conferences.oreilly.com/oscon/'>OSCON</a> is <a href='http://redmonk.com/sogrady/2008/07/29/oscon-is-people/'>people</a>. And, naturally, beer:</p>
+<p><img src='/images/kells.jpg'/></p>
+<p>From left to right that&#8217;s Jack Erwin, Christopher Zorn, me, Justin Karneges (nearly invisible because of the glare), Ralph Meijer (with his trademark Hoegaarden), Joe Hildebrand, and SaraD (photo taken by Steve at <a href='http://www.kellsirish.com/portland/index.html'>Kells</a>). Except I skipped the beer &#8212; I was sipping a fine Balvenie right around then, and having a long philosophical conversation with Chris and Justin about the meaning of <a href='http://www.jabber.org/'>Jabber</a> and the future of <a href='http://psi-im.org/'>Psi</a>. :)</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2232</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Exchanging Cell ID Data Over XMPP</title>
+		<link>https://stpeter.im/?p=2231</link>
+		<comments>https://stpeter.im/?p=2231#comments</comments>
+		<pubDate>Wed, 30 Jul 2008 04:30:04 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2231</guid>
+		<description><![CDATA[My Jabber friend kael poked me today about the possibility of exchanging mobile network Cell IDs over XMPP (probably via personal eventing). This is desirable because, as the Google Gears project explains it, &#8220;many devices do not have native access to GPS or other location data&#8221; and &#8220;GPS can take a long time to get [...]]]></description>
+			<content:encoded><![CDATA[<p>My Jabber friend kael poked me today about the possibility of exchanging mobile network Cell IDs over XMPP (probably via <a href='http://www.xmpp.org/extensions/xep-0163.html'>personal eventing</a>). This is desirable because, as the Google Gears project <a href='http://code.google.com/p/gears/wiki/GeolocationAPI#Network_Location_Provider_Protocol'>explains it</a>, &#8220;many devices do not have native access to GPS or other location data&#8221; and &#8220;GPS can take a long time to get an accurate location fix, drains battery, and does not work indoors.&#8221; So that means we either need to add Cell IDs to <a href='http://www.xmpp.org/extensions/xep-0080.html'>XEP-0080</a> or define a separate XMPP extension (I vote for the latter). The parameters seem pretty straightforward (check out the XML format at <a href='http://celldb.org/aboutapi.php'>celldb.org</a>) and Cell ID payloads could be used by all sorts of mobile XMPP clients and applications such as <a href='http://blog.buddycloud.com/node/1'>Buddycloud</a>, <a href='http://www.nokia.com/betalabs/chat'>Nokia Chat</a>, <a href='http://bombus-im.org/'>Bombus</a>, <a href='http://lampiro.bluendo.com/'>Lampiro</a>, and many more.</p>
+<p>If you&#8217;re interested in discussing this idea, join the <a href='http://mail.jabber.org/mailman/listinfo/mobile'>mobile@xmpp.org</a> email list.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2231</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Quick OAuth Notes</title>
+		<link>https://stpeter.im/?p=2228</link>
+		<comments>https://stpeter.im/?p=2228#comments</comments>
+		<pubDate>Wed, 23 Jul 2008 14:45:43 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2228</guid>
+		<description><![CDATA[I got an email from rabble overnight asking for some quick notes about our consensus on OAuth + XMPP from yesterday&#8217;s discussion at the XMPP Summit, so here goes&#8230;
+Scenario: I want my Twhirl client to receive Kellan&#8217;s tune stream from last.fm via XMPP.
+
+
+My Twhirl client asks last.fm for an OAuth token.
+
+
+If last.fm considers me a [...]]]></description>
+			<content:encoded><![CDATA[<p>I got an email from <a href='http://anarchogeek.com/'>rabble</a> overnight asking for some quick notes about our consensus on OAuth + XMPP from yesterday&#8217;s discussion at the <a href='http://www.xmpp.org/summit/summit5.shtml'>XMPP Summit</a>, so here goes&#8230;</p>
+<p>Scenario: I want my <a href='http://www.twhirl.org/'>Twhirl</a> client to receive <a href='http://www.last.fm/music/Kellan+Elliott-McCrea'>Kellan&#8217;s tune stream</a> from <a href='http://last.fm/'>last.fm</a> via XMPP.</p>
+<ol>
+<li>
+<p>My Twhirl client asks last.fm for an OAuth token.</p>
+</li>
+<li>
+<p>If last.fm considers me a friend of Kellan&#8217;s, it grants a token.</p>
+</li>
+<li>My Twhirl client sends an XMPP pubsub subscription request to last.fm, with appropriate OAuth bits:</p>
+<pre>
+&lt;iq type='set'
+    from='random-id@twhirl.org'
+    to='last.fm'
+    id='sub1'&gt;
+  &lt;pubsub xmlns='http://jabber.org/protocol/pubsub'&gt;
+    &lt;subscribe jid='random-id@twhirl.org'
+               node='/music/Kellan+Elliott-McCrea'/&gt;
+    &lt;oauth xmlns='urn:xmpp:oauth'&gt;
+      &lt;oauth_consumer_key>0685bd9184jfhq22&lt;/oauth_consumer_key&gt;
+      &lt;oauth_token>ad180jjd733klru7&lt;/oauth_token>
+      &lt;oauth_signature_method&gt;PLAINTEXT+HMAC-SHA1&gt;/oauth_signature_method&gt;
+      &lt;oauth_signature&gt;wOJIO9A2W5mFwDgiDvZbTSMK%2FPY%3D&lt;/oauth_signature>
+    &lt;/oauth&gt;
+  &lt;/pubsub&gt;
+&lt;/iq&gt;
+</pre>
+<p>Where oath_signature is:</p>
+<p>sign(consumer key,consumer secret,token,token secret)</p>
+</li>
+<li>
+<p>If the token and signature are verified, access is granted.</p>
+</li>
+<li>
+<p>Whee, I receive real-time last.fm updates in my Twhirl client!</p>
+</li>
+</ol>
+<p>I&#8217;ll be updating <a href='http://www.xmpp.org/extensions/xep-0235.html'>XEP-0235</a> along these lines later today, but I might not get those revisions done before rabble&#8217;s talk at 11:30. :)</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2228</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Over the Summit</title>
+		<link>https://stpeter.im/?p=2227</link>
+		<comments>https://stpeter.im/?p=2227#comments</comments>
+		<pubDate>Wed, 23 Jul 2008 09:08:27 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2227</guid>
+		<description><![CDATA[Whew! The fifth XMPP Summit wrapped up earlier today (well, actually yesterday as I write this). It&#8217;s always difficult for me to tell if folks find these events worthwhile, because they are a bit of a whirlwind for me, as the person who&#8217;s &#8220;in charge&#8221; (hah!). But I&#8217;ve received positive feedback from everyone I&#8217;ve talked [...]]]></description>
+			<content:encoded><![CDATA[<p>Whew! The <a href='http://www.xmpp.org/summit/summit5.shtml'>fifth XMPP Summit</a> wrapped up earlier today (well, actually yesterday as I write this). It&#8217;s always difficult for me to tell if folks find these events worthwhile, because they are a bit of a whirlwind for me, as the person who&#8217;s &#8220;in charge&#8221; (hah!). But I&#8217;ve received positive feedback from everyone I&#8217;ve talked with &#8212; at least the core Jabber geeks and a few other folks I polled. In particular, I think we made good progress on two fronts:</p>
+<ol>
+<li>
+<p>Jingle. Rob McQueen of <a href='http://collabora.co.uk/'>Collabora</a> and Diana Cionoiu of <a href='http://yate.null.ro/'>Yate</a> reached consensus on a number of issues, with input from me, Justin Uberti of the Google Talk team, and a few interested others. Rob has started posting emails to the <a href='http://mail.jabber.org/mailman/listinfo/jingle'>jingle@xmpp.org</a> discussion list, and we&#8217;ll be updating various specs and publishing one or two new ones in the near future.</p>
+</li>
+<li>
+<p>OAuth. We&#8217;ve been talking for a while about ways to build hybrid HTTP+XMPP technologies, and use of <a href='http://oauth.net/'>OAuth</a> is a big part of that. During a collaborative brainstorming session between Blaine Cook, Kellan Elliott-McCrea, Evan Henshaw-Plath (rabble), Joe Hildebrand, and Ralph Meijer, we worked out some details for how we can send OAuth tokens and signatures over XMPP and therefore authorize access to resources on the Jabber network. I&#8217;ll be updating and renaming <a href='http://www.xmpp.org/extensions/xep-0235.html'>XEP-0235</a> real soon now (maybe even tomorrow) to reflect that consensus.</p>
+</li>
+</ol>
+<p>There are other actions as well, but I see those two as the big ones.</p>
+<p>Anyway it&#8217;s past 2 AM here and my brain is fried from all my work on the Summit these past days and weeks, so I think I&#8217;ll sign off now and post more soon about all the interesting stuff happening in the wonderful world of XMPP.</p>
+<p>Until then, Jabber on!</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2227</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Approaching the Summit</title>
+		<link>https://stpeter.im/?p=2226</link>
+		<comments>https://stpeter.im/?p=2226#comments</comments>
+		<pubDate>Fri, 18 Jul 2008 18:24:28 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[jabber]]></category>
+
+		<guid isPermaLink="false">https://stpeter.im/?p=2226</guid>
+		<description><![CDATA[Sorry for the deathly quiet, I&#8217;ve been busy preparing for the XMPP Summit next week. See you in Portland!
+]]></description>
+			<content:encoded><![CDATA[<p>Sorry for the deathly quiet, I&#8217;ve been busy preparing for the <a href='http://www.xmpp.org/summit/summit5.shtml'>XMPP Summit</a> next week. See you in Portland!</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=2226</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+	</channel>
+</rss>

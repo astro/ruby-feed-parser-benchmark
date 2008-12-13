@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:admin="http://webns.net/mvcb/"
+>
+
+<channel rdf:about="http://use.perl.org/journal.pl?op=top">
+<title>use Perl Journals</title>
+<link>http://use.perl.org/journal.pl?op=top</link>
+<description>Top 20 Journals</description>
+<dc:language>en-us</dc:language>
+<dc:rights>use Perl; is Copyright 1998-2006, Chris Nandor. Stories, comments, journals, and other submissions posted on use Perl; are Copyright their respective owners.</dc:rights>
+<dc:date>2008-12-12T17:43:27+00:00</dc:date>
+<dc:publisher>pudge</dc:publisher>
+<dc:creator>pudge@perl.org</dc:creator>
+<dc:subject>Technology</dc:subject>
+<syn:updatePeriod>hourly</syn:updatePeriod>
+<syn:updateFrequency>1</syn:updateFrequency>
+<syn:updateBase>1970-01-01T00:00+00:00</syn:updateBase>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://use.perl.org/~pmichaud/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Ovid/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~sir_lichtkind/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~chromatic/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~lachoy/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~gabor/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Eric+Wilhelm/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~JonathanWorthington/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~hex/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~drhyde/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~perigrin/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~andy.sh/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Ron+Savage/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Alias/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Whiteknight/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~fw/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dagolden/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~BinGOs/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~barbie/journal/?from=rss" />
+ </rdf:Seq>
+</items>
+<image rdf:resource="http://use.perl.org/images/topics/useperl.gif" />
+</channel>
+
+<image rdf:about="http://use.perl.org/images/topics/useperl.gif">
+<title>use Perl Journals</title>
+<url>http://use.perl.org/images/topics/useperl.gif</url>
+<link>http://use.perl.org/journal.pl?op=top</link>
+</image>
+
+<item rdf:about="http://use.perl.org/~pmichaud/journal/?from=rss">
+<title>[pmichaud] It's sort of like...</title>
+<link>http://use.perl.org/~pmichaud/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Ovid/journal/?from=rss">
+<title>[Ovid] for file in @frack!</title>
+<link>http://use.perl.org/~Ovid/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~sir_lichtkind/journal/?from=rss">
+<title>[sir_lichtkind] why Kephra 0.4 gets better afterwards</title>
+<link>http://use.perl.org/~sir_lichtkind/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~chromatic/journal/?from=rss">
+<title>[chromatic] I Have a Secret Too</title>
+<link>http://use.perl.org/~chromatic/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~lachoy/journal/?from=rss">
+<title>[lachoy] Perl webapp frameworks: what to explore?</title>
+<link>http://use.perl.org/~lachoy/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~gabor/journal/?from=rss">
+<title>[gabor] Plans for Integrating Padre with Parrot and Rakudo</title>
+<link>http://use.perl.org/~gabor/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Eric+Wilhelm/journal/?from=rss">
+<title>[Eric Wilhelm] Module::Build maintenance</title>
+<link>http://use.perl.org/~Eric+Wilhelm/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~JonathanWorthington/journal/?from=rss">
+<title>[JonathanWorthington] Planning for my Hague Grant</title>
+<link>http://use.perl.org/~JonathanWorthington/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~hex/journal/?from=rss">
+<title>[hex] Retiring this journal</title>
+<link>http://use.perl.org/~hex/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~drhyde/journal/?from=rss">
+<title>[drhyde] Purity bugfix in CPANdeps: argh /x!</title>
+<link>http://use.perl.org/~drhyde/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~perigrin/journal/?from=rss">
+<title>[perigrin] One Week Left for Perl Oasis CfS</title>
+<link>http://use.perl.org/~perigrin/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~andy.sh/journal/?from=rss">
+<title>[andy.sh] Bulgarian Perl Workshop</title>
+<link>http://use.perl.org/~andy.sh/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Ron+Savage/journal/?from=rss">
+<title>[Ron Savage] Even wanted to see a web page's HTML rather than the content</title>
+<link>http://use.perl.org/~Ron+Savage/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Alias/journal/?from=rss">
+<title>[Alias] If you are keeping an eye on Padre...</title>
+<link>http://use.perl.org/~Alias/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Whiteknight/journal/?from=rss">
+<title>[Whiteknight] The Tuesday Release</title>
+<link>http://use.perl.org/~Whiteknight/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~fw/journal/?from=rss">
+<title>[fw] First Perl6 program</title>
+<link>http://use.perl.org/~fw/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/?from=rss">
+<title>[acme] Perl and Git</title>
+<link>http://use.perl.org/~acme/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dagolden/journal/?from=rss">
+<title>[dagolden] Putting CPAN modules on github</title>
+<link>http://use.perl.org/~dagolden/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~BinGOs/journal/?from=rss">
+<title>[BinGOs] Playing with WWW::UsePerl::Journal</title>
+<link>http://use.perl.org/~BinGOs/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~barbie/journal/?from=rss">
+<title>[barbie] NEW CPAN Testers site - Preferences Administration</title>
+<link>http://use.perl.org/~barbie/journal/?from=rss</link>
+</item>
+
+</rdf:RDF>

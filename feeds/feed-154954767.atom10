@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+
+<channel>
+	<title>Coffee Powered</title>
+	<atom:link href="http://www.coffeepowered.net/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.coffeepowered.net</link>
+	<description>code and content</description>
+	<pubDate>Fri, 10 Oct 2008 05:30:21 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6.2</generator>
+	<language>en</language>
+			<item>
+		<title>Quick tip - use anonymous blocks!</title>
+		<link>http://www.coffeepowered.net/2008/10/09/quick-tip-use-anonymous-blocks/</link>
+		<comments>http://www.coffeepowered.net/2008/10/09/quick-tip-use-anonymous-blocks/#comments</comments>
+		<pubDate>Fri, 10 Oct 2008 05:30:21 +0000</pubDate>
+		<dc:creator>Chris Heald</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<category><![CDATA[blocks]]></category>
+
+		<category><![CDATA[memory]]></category>
+
+		<category><![CDATA[performance]]></category>
+
+		<category><![CDATA[Rails]]></category>
+
+		<category><![CDATA[Ruby]]></category>
+
+		<guid isPermaLink="false">http://www.coffeepowered.net/?p=75</guid>
+		<description><![CDATA[In tracking down a memory leak in one of our Rails apps today, I ran across an interesting post detailing the difference between anonymous and named blocks in Ruby, and the performance differences therein.
+It&#8217;s definitely worth a look, especially if you&#8217;re running in a complex environment, where new closures will be large and unwieldy. It&#8217;s [...]]]></description>
+			<content:encoded><![CDATA[<p>In tracking down a memory leak in one of our Rails apps today, I ran across an <a href="http://blog.pluron.com/2008/02/rails-faster-as.html">interesting post</a> detailing the difference between anonymous and named blocks in Ruby, and the performance differences therein.</p>
+<p>It&#8217;s definitely worth a look, especially if you&#8217;re running in a complex environment, where new closures will be large and unwieldy. It&#8217;s very easy, too. Any time you use:</p>
+<pre class="syntax-highlight:ruby">
+def note(text, options = {}, &amp;block)
+  options[:class] = ((options[:class] || &quot;&quot;) + &quot; form-note&quot;).strip
+  content_tag(:div, text, options, &amp;block)
+end
+</pre>
+<p>Instead, don&#8217;t explicitly name the block parameter; just yield to it, and you prevent all the messiness of creating a new Proc object.</p>
+<pre class="syntax-highlight:ruby">
+def note(text, options = {})
+  options[:class] = ((options[:class] || &quot;&quot;) + &quot; form-note&quot;).strip
+  content_tag(:div, text, options) {|*block_args| yield(*block_args) if block_given? }
+end
+</pre>
+<p>I don&#8217;t have benchmarks just yet, but anecdotally it has definitely slowed instance memory consumption in my apps. It&#8217;s worth taking a look at!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.coffeepowered.net/2008/10/09/quick-tip-use-anonymous-blocks/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Re: Simple RoR+MySQL optimization</title>
+		<link>http://www.coffeepowered.net/2008/09/30/re-simple-rormysql-optimization/</link>
+		<comments>http://www.coffeepowered.net/2008/09/30/re-simple-rormysql-optimization/#comments</comments>
+		<pubDate>Tue, 30 Sep 2008 21:42:44 +0000</pubDate>
+		<dc:creator>Chris Heald</dc:creator>
+		
+		<category><![CDATA[Rails]]></category>
+
+		<category><![CDATA[Ruby]]></category>
+
+		<category><![CDATA[garabge collector]]></category>
+
+		<category><![CDATA[mysql]]></category>
+
+		<category><![CDATA[optimization]]></category>
+
+		<category><![CDATA[orm]]></category>
+
+		<guid isPermaLink="false">http://www.coffeepowered.net/?p=58</guid>
+		<description><![CDATA[I recently ran across a rather bare post espousing some generic &#8220;optimization&#8221; techniques for Rails apps. It offered no education, no explanation, no benchmarks. So, I thought, why not put those claims to the test?
+
+find_by_sql versus find_by_x
+First, Konstantin claims that Model#find_by_field is slower than Model#find_by_sql. This one is hard to dispute; the first will invoke [...]]]></description>
+			<content:encoded><![CDATA[<p>I recently ran across a <a href="http://guruonrails.com/blog/simple-ror-mysql-optimization">rather bare post</a> espousing some generic &#8220;optimization&#8221; techniques for Rails apps. It offered no education, no explanation, no benchmarks. So, I thought, why not put those claims to the test?<br />
+<span id="more-58"></span></p>
+<h2>find_by_sql versus find_by_x</h2>
+<p>First, Konstantin claims that <code>Model#find_by_field</code> is slower than <code>Model#find_by_sql</code>. This one is hard to dispute; the first will invoke method_missing and spend time generating SQL, while the latter simply executes a statement. Is cutting the knees out from under your ORM worth the time saved? Let&#8217;s see!</p>
+<pre class="syntax-highlight:ruby">
+require &#039;benchmark&#039;
+
+def measure_find_by_sql_vs_orm(num = 1000)
+  puts &quot;find_by_sql (#{num}x)&quot;
+  puts Benchmark.measure {
+    num.times { User.find_by_sql &quot;select * from users where id = 123&quot; }
+  }
+
+  puts &quot;find_by_id (#{num}x)&quot;
+  puts Benchmark.measure {
+    num.times { User.find_by_id 123 }
+  }
+end
+
+measure_find_by_sql_vs_orm(10000)
+</pre>
+<p>Let&#8217;s run this a few times.</p>
+<pre><code>
+[chris@polaris benchmarks]$ script/runner benchmark.rb
+find_by_sql (10000x)
+  2.290000   0.540000   2.830000 (  4.452150)
+find_by_id (10000x)
+  4.660000   0.400000   5.060000 (  6.766629)
+
+[chris@polaris benchmarks]$ script/runner benchmark.rb
+find_by_sql (10000x)
+  2.300000   0.480000   2.780000 (  4.473950)
+find_by_id (10000x)
+  4.520000   0.560000   5.080000 (  6.837272)
+
+[chris@polaris benchmarks]$ script/runner benchmark.rb
+find_by_sql (10000x)
+  2.170000   0.540000   2.710000 (  4.419207)
+find_by_id (10000x)
+  4.580000   0.540000   5.120000 (  6.881676)
+
+find_by_sql: Averages 4.44 sec for 10,000 queries
+find_by_id: Averages 6.83 sec for 10,000 queries
+</code></pre>
+<p>Conclusion the first: Using the ORM to build SQL adds some overhead; in my tests, 2.47 sec/10,000 queries, or 0.000247 seconds per query. Is this worth optimizing out? Yeah, probably not. In fact, the productivity lost by using <code>find_by_sql</code> is likely going to end up costing the project more.</p>
+<h2>IDs and numbers in quotes</h2>
+<p>Second, they claim that quoting values in your SQL statements slows down your queries. This one struck me as just a <em>little</em> out there. Let&#8217;s see what the benchmarks say.</p>
+<pre class="syntax-highlight:ruby">
+require &#039;benchmark&#039;
+
+def measure_select_with_quotes(num = 1000)
+  puts &quot;Without quotes (#{num}x):&quot;
+  db = ActiveRecord::Base.connection.instance_variable_get :@connection
+  puts Benchmark.measure {
+    num.times { db.query(&quot;select * from users where id = 123&quot;) {} }
+  }
+
+  puts &quot;With quotes (#{num}x):&quot;
+  puts Benchmark.measure {
+    num.times { db.query(&quot;select * from users where id = \&quot;123\&quot;&quot;) {} }
+  }
+end
+
+measure_select_with_quotes(10000)
+</pre>
+<p>And the results:</p>
+<pre><code>
+[chris@polaris benchmarks]$ script/runner benchmark.rb
+Without quotes (10000x):
+  0.690000   0.340000   1.030000 (  2.639554)
+With quotes (10000x):
+  0.670000   0.290000   0.960000 (  2.655049)
+
+[chris@polaris benchmarks]$ script/runner benchmark.rb
+Without quotes (10000x):
+  0.570000   0.320000   0.890000 (  2.654003)
+With quotes (10000x):
+  0.550000   0.400000   0.950000 (  2.617369)
+</code></pre>
+<p>Well, that&#8217;s certainly interesting. In 10,000 queries, an average difference of about 3/100ths of a second. Certainly not worth combing through your codebase as an optimization point.</p>
+<p>Conclusion the second: The performance gain from quoted versus non-quoted field values is so small to be inconsequential.</p>
+<p>On a side note, there is a <b>very</b> interesting subtlety here. Observe the difference between</p>
+<pre class="syntax-highlight:ruby">
+num.times { db.query(&quot;select * from users where id = 123&quot;) {} }
+</pre>
+<p>and </p>
+<pre class="syntax-highlight:ruby">
+num.times { db.query(&quot;select * from users where id = 123&quot;) }
+</pre>
+<p>The former passes the <code>Mysql::Result</code> object to a block, and frees it after the block terminates. The latter does not, and the returned <code>Mysql::Result</code> object remains in scope for the entire pass of the benchmark. This subtlety makes a massive difference.</p>
+<pre class="syntax-highlight:ruby">
+def measure_select_with_free(num = 1000)
+  db = ActiveRecord::Base.connection.instance_variable_get :@connection
+
+  puts &quot;Query with block, result immediately freed&quot;
+  puts Benchmark.measure {
+    num.times { db.query(&quot;select * from users where id = 123&quot;) {} }
+  }
+
+  puts &quot;Query without block, result remains in scope&quot;
+  puts Benchmark.measure {
+    num.times { db.query(&quot;select * from users where id = 123&quot;) }
+  }
+end
+</pre>
+<pre><code>
+[chris@polaris benchmarks]$ script/runner benchmark.rb
+Query with block, result immediately freed
+  0.060000   0.040000   0.100000 (  0.267983)
+Query without block, result remains in scope
+  5.040000   0.050000   5.090000 (  5.266476)
+</code></pre>
+<p>Whoa damn. Ruby&#8217;s GC is <i>slaughtering</i> performance there. Just adding a pair of curly braces makes the benchmark run <i>20 times faster</i>.</p>
+<h2>It&#8217;s better to request only specific column</h2>
+<p>Finally, Konstantin mentions that selecting only specific fields from a table is faster. This is a truth in both MySQL and in the ActiveRecord ORM, for a number of reasons. However, he says that</p>
+<blockquote><p>Person.find_by_name(&#8221;Name&#8221;).phone_number. It would be much faster if you use: Person.find_by_sql(&#8221;SELECT persons.phone_number WHERE persons.name = &#8216;Name&#8217;&#8221;) </p></blockquote>
+<p>Why not just use the :select option that ActiveRecord provides?</p>
+<pre class="syntax-highlight:ruby">
+Person.find_by_name(&quot;Name&quot;, :select =&gt; &quot;phone_number&quot;)
+</pre>
+<p>Let&#8217;s test those assumptions.</p>
+<pre class="syntax-highlight:ruby">
+def measure_single_field_select(num = 1000)
+  puts &quot;Find with all fields&quot;
+  puts Benchmark.measure {
+    num.times { User.find_by_id(123)}
+  }
+
+  puts &quot;Find with one field, with :select&quot;
+  puts Benchmark.measure {
+    num.times { User.find_by_id(123, :select =&gt; &quot;email&quot;)}
+  }
+end
+</pre>
+<pre><code>
+[chris@polaris benchmarks]$ script/runner benchmark.rb
+Find with all fields
+  0.720000   0.060000   0.780000 (  0.963273)
+Find with one field, with :select
+  0.310000   0.010000   0.320000 (  0.364554)
+
+[chris@polaris benchmarks]$ script/runner benchmark.rb
+Find with all fields
+  0.710000   0.110000   0.820000 (  1.014548)
+Find with one field, with :select
+  0.260000   0.020000   0.280000 (  0.351761)
+</code></pre>
+<p>Very significant difference there&#8230;and we didn&#8217;t have to bypass the ORM to get it, either.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.coffeepowered.net/2008/09/30/re-simple-rormysql-optimization/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Your friendly neighborhood DNS man</title>
+		<link>http://www.coffeepowered.net/2008/09/29/your-friendly-neighborhood-dns-man/</link>
+		<comments>http://www.coffeepowered.net/2008/09/29/your-friendly-neighborhood-dns-man/#comments</comments>
+		<pubDate>Mon, 29 Sep 2008 11:39:44 +0000</pubDate>
+		<dc:creator>Chris Heald</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<category><![CDATA[dns]]></category>
+
+		<category><![CDATA[domains]]></category>
+
+		<category><![CDATA[mccain]]></category>
+
+		<category><![CDATA[palin]]></category>
+
+		<category><![CDATA[politics]]></category>
+
+		<category><![CDATA[social media]]></category>
+
+		<guid isPermaLink="false">http://www.coffeepowered.net/?p=55</guid>
+		<description><![CDATA[So there&#8217;s been this gossipy story making the rounds on the social news sites, that the McCain camp has unbelievably registered voteforthemilf.com and are redirecting it to their site! They&#8217;ve got traceroutes and everything! Oh! The sexism! Oh! The gall! Oh! The huge manatee!
+Or, wait, no, maybe everyone running around screaming about this just doesn&#8217;t [...]]]></description>
+			<content:encoded><![CDATA[<p>So there&#8217;s been this gossipy story making the rounds on the social news sites, that the McCain camp has unbelievably registered <a href="http://voteforthemilf.com">voteforthemilf.com</a> and are redirecting it to their site! They&#8217;ve got traceroutes and everything! Oh! The sexism! Oh! The gall! Oh! The huge manatee!</p>
+<p>Or, wait, no, maybe everyone running around screaming about this just doesn&#8217;t have a clue as to what that really means.</p>
+<p>To be perfectly clear, I write this without any intent to provide any political bias, but to explain a technical subtlety that is apparently lost on many people, and which therefore bears a need for some edumacation.</p>
+<p>Domain names are like nicknames. They&#8217;re for our convenience, since we remember <a href="http://google.com">google.com</a>, but we&#8217;d have a hard time remembering <a href="http://64.233.187.99">64.233.187.99</a> every time we wanted to search for something. However, we have to have systems in place that translate those nicknames into IP addresses. They&#8217;re like phone numbers for computers. To place a call to someone, you would look up their name in a phone book, and then get their phone number, and then dial the phone number on your phone. This is, in effect, what DNS is - a giant phone book.</p>
+<p>First, a few terms.</p>
+<ul>
+<li>DNS - Domain Name Server. A system that turns domain names into IP addresses. Think of it like your cell phone&#8217;s phone book. You look up &#8220;Mom&#8221; and it knows which phone number you want to call.</li>
+<li>Top Level Domain Name Server - The servers that all computers get in contact with to find out which Authoritative Server holds the information they&#8217;re looking for</li>
+<li>Authoritative Domain Name Server - The server that actually holds the IP address you&#8217;re looking for.</li>
+</ul>
+<p>So, what happens when you type in a domain name?</p>
+<ol>
+<li>Your computer issues a request to a top level DNS server, asking for the DNS server that holds information for that domain.</li>
+<li>The DNS server you&#8217;re pointed to says &#8220;Oh, I know what IP this domain belongs to, here&#8217;s the IP address&#8221;</li>
+<li>Your computer makes a connection to the IP address specified by the Authoritative DNS Server</li>
+</ol>
+<p>Imagine this scenario, then. You need a phone number for your friend, Joe. You don&#8217;t have it, but you know that Jenny, your socialite friend, would know someone who does. So, you call Jenny and say &#8220;Hey, do you know who has Joe&#8217;s phone number?&#8221; Jenny gives you Jane&#8217;s phone number. You then call Jane and say, &#8220;Hey, do you have Joe&#8217;s phone number?&#8221; Jane does, and gives it to you. You can then call Joe directly. This is basically how a DNS lookup works.</p>
+<p>Now, the trick here is that IP addresses don&#8217;t get to decide what domain names point to them. So, I can register any domain name I want, and tell the DNS server responsible for that domain name that &#8220;Hey, this domain points to this IP address&#8221;. Then, that DNS server will return that IP address any time someone asks what IP address that domain belongs to.</p>
+<p>It&#8217;s this subtlety that lets the above smear work. I can register any domain I want, and make it seamlessly redirect to any IP address I want. I could register <code>diggsucks.com</code> and point it to <a href="http://reddit.com">reddit.com</a>, and as far as anyone could tell, diggsucks.com would go to <code>reddit.com</code>.</p>
+<p>To go back to the <code>voteforthemilf.com</code> issue, if I may return to the phone book analogy, this is as if I called up the phone company and said &#8220;Hey, my name is voteforthemilf.com and my phone number is 555-123-4567&#8243;. They print it, and someone discovers it. They dial the number, and are connected to McCain campaign headquarters. The story here is that people immediately assume that because the phone number is that for the McCain campaign, it must have been the McCain campaign that put it there - a logical leap that is both bold and wrong.</p>
+<p>For kicks, check out this domain that I&#8217;ve told my DNS server to redirect to John McCain&#8217;s website:</p>
+<p><code><a href="http://clearlymccain.coffeepowered.net">http://clearlymccain.coffeepowered.net</a></code></p>
+<p>This is a subdomain, obviously, but it&#8217;s just as trivial to do it with any real domain.</p>
+<p>And now you know how doman names work.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.coffeepowered.net/2008/09/29/your-friendly-neighborhood-dns-man/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Stop using social information as passwords and security questions!</title>
+		<link>http://www.coffeepowered.net/2008/09/29/stop-using-social-information-as-passwords-and-security-questions/</link>
+		<comments>http://www.coffeepowered.net/2008/09/29/stop-using-social-information-as-passwords-and-security-questions/#comments</comments>
+		<pubDate>Mon, 29 Sep 2008 08:09:48 +0000</pubDate>
+		<dc:creator>Chris Heald</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<category><![CDATA[accounts]]></category>
+
+		<category><![CDATA[email]]></category>
+
+		<category><![CDATA[passwords]]></category>
+
+		<category><![CDATA[security]]></category>
+
+		<category><![CDATA[social engineering]]></category>
+
+		<guid isPermaLink="false">http://www.coffeepowered.net/?p=49</guid>
+		<description><![CDATA[ I have a friend who recently had several of his online accounts compromised. The attackers weren&#8217;t particularly clever, didn&#8217;t use any special tools, didn&#8217;t install any viruses on his computer. All they needed was to see his public Facebook profile. From that, they were able to divine his birthday and security question answer - [...]]]></description>
+			<content:encoded><![CDATA[<p><img alt="Hacked!" src="http://intercodes.files.wordpress.com/2007/10/hacked.jpg" title="Hacked" width="270"  align="right" /> I have a friend who recently had several of his online accounts compromised. The attackers weren&#8217;t particularly clever, didn&#8217;t use any special tools, didn&#8217;t install any viruses on his computer. All they needed was to see his public Facebook profile. From that, they were able to divine his birthday and security question answer - all that was needed to get into the mail account - and from there, they had access to every account online that he&#8217;d registered to that email address.</p>
+<p>The problem is this: Your email is a <em>de facto</em> master password for everything you do online that&#8217;s tied to it. This means your MySpace account, your instant messenger account, maybe even your bank account. Once someone knows your email, they can start to attack weak points in your account. Hiding your email isn&#8217;t practical, so you need to make sure that your passwords and security question are rock solid secure.</p>
+<p>A &#8220;security question&#8221; is a question that you provide an answer to, so that you can recover your password if you ever forget it. For example, a site might ask you to answer the question &#8220;What is your favorite color?&#8221; in order to start the password reset process. The concept is that by providing an answer to a question that only you would know, you create a &#8220;backup&#8221; password that you&#8217;ll be able to remember. </p>
+<p>An extremely common &#8220;security question&#8221; might be something like &#8220;What is your mother&#8217;s middle name?&#8221; or &#8220;What street did you grow up on?&#8221; While these might have been reasonably secure in the past, they&#8217;re horribly insecure these days. The saturation of social information on the web makes it extremely easy to research these answers and arrive at questions in seconds. Facebook notes connections between yourself and your relatives, so how hard would it be to find your mom on Facebook, and then Google her name, or find one of her parents on Facebook?</p>
+<p>In the case of a &#8220;favorite color&#8221; question, this one isn&#8217;t going to show up on your social networking profiles - maybe not explicitly, but an attacker has two direct attacks: First, look at how you&#8217;ve customized colors on your profile page. Do you use purple heavily? Maybe you have a fondness for green text. That has a strong potential to betray your answer. If that fails, the attacker has a pretty small set of potential answers - most people would answer that question with one answer in the set &#8220;black, blue, green, orange, pink, purple, red, yellow, or white&#8221;. 9 attempts and an attacker will be into the account in no time.</p>
+<p>Famously, <a href="http://en.wikipedia.org/wiki/Sarah_palin">Sarah Palin</a>, the Republican vice presidential nominee <a href="http://news.bbc.co.uk/2/hi/americas/7622726.stm">recently had her Yahoo! email account compromised</a>. The attacker simply had to answer a single security question to gain access to her account: &#8220;What is my zip code?&#8221; How hard do you think it would be to find the address of a government official with Google? Might take six, maybe seven seconds top?</p>
+<p>If you&#8217;re at all active online, there&#8217;s a lot of info about your social connections, family, pets, housing history, the works. Someone determined to get into one of your accounts won&#8217;t have a hard time finding your dog&#8217;s name (Ever put their name into a caption on one of your Facebook or Photobucket pictures?). Many, many people use pet names, pastimes, relatives&#8217; names, and other social information as passwords and security questions. It&#8217;s no longer secure.</p>
+<p>The solution is to choose passwords and security questions that are nonsensical. The best passwords are 8+ characters, and consist of upper and lower case letters, and a number, and even possibly some punctuation. If you have problems remembering nonsensical passwords, then use an transformation scheme. Presume that your password is &#8220;jeremy&#8221;, your brother-in-law&#8217;s name. Maybe your rule is that you shift each letter two down, and capitalize the third letter.</p>
+<pre><code>j -> l
+e -> g
+r -> t
+e -> g
+m -> o
+y -> z</code></pre>
+<p>Your new password is &#8220;lgtgoz&#8221;, and if you capitalize the third letter, that becomes &#8220;lgTgoz&#8221;. It&#8217;s still not optimally secure, but it&#8217;s far, far better than it was before. Nobody is going to guess it, and you can still remember it by just remembering &#8220;jeremy&#8221; and your rule.</p>
+<p>Ideally, you&#8217;ll use a different password for every login, always pick 8+ character passwords with a diverse character set, and have them be completely randomized. In reality, people don&#8217;t want to bother with that kind of maintenance, but at the very least, stop using social information for your security questions, passwords, and the like.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.coffeepowered.net/2008/09/29/stop-using-social-information-as-passwords-and-security-questions/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Powerful, easy, DRY, multi-format REST APIs</title>
+		<link>http://www.coffeepowered.net/2008/09/27/powerful-easy-dry-multi-format-rest-apis/</link>
+		<comments>http://www.coffeepowered.net/2008/09/27/powerful-easy-dry-multi-format-rest-apis/#comments</comments>
+		<pubDate>Sun, 28 Sep 2008 03:53:48 +0000</pubDate>
+		<dc:creator>Chris Heald</dc:creator>
+		
+		<category><![CDATA[Rails]]></category>
+
+		<category><![CDATA[Ruby]]></category>
+
+		<category><![CDATA[api]]></category>
+
+		<category><![CDATA[json]]></category>
+
+		<category><![CDATA[jsonp]]></category>
+
+		<category><![CDATA[rest]]></category>
+
+		<category><![CDATA[xml]]></category>
+
+		<category><![CDATA[yaml]]></category>
+
+		<guid isPermaLink="false">http://www.coffeepowered.net/?p=38</guid>
+		<description><![CDATA[Rails&#8217; baked-in REST support is great. Build your app right, and you can expose a programmatic interface to your users for free.
+That said, many times providing views in non-HTML formats tends to be bulky and unwieldy. You end up with either very brittle representations of your data, or extremely bulky respond_to blocks in your controllers.
+Fortunately, [...]]]></description>
+			<content:encoded><![CDATA[<p>Rails&#8217; baked-in REST support is great. Build your app right, and you can expose a programmatic interface to your users for free.</p>
+<p>That said, many times providing views in non-HTML formats tends to be bulky and unwieldy. You end up with either very brittle representations of your data, or extremely bulky respond_to blocks in your controllers.</p>
+<p>Fortunately, there&#8217;s a better way! We&#8217;re going to provide two new render targets, <code>:to_yaml</code> and <code>:to_json</code> which will let us write a single XML builder view, and then provide that view in XML, YAML, and JSON formats according to the consuming developer&#8217;s preferences.</p>
+<p>In <code>application.rb</code> you&#8217;ll want to override the render method.</p>
+<pre class="syntax-highlight:ruby">
+def render(opts = {}, &amp;block)
+  if opts[:to_yaml] then
+    headers[&quot;Content-Type&quot;] = &quot;text/plain;&quot;
+    render :text =&gt; Hash.from_xml(render_to_string(:template =&gt; opts[:to_yaml], :layout =&gt; false)).to_yaml, :layout =&gt; false
+  elsif opts[:to_json] then
+    content = Hash.from_xml(render_to_string(:template =&gt; opts[:to_json], :layout =&gt; false)).to_json
+    cbparam = params[:callback] || params[:jsonp]
+    content = &quot;#{cbparam}(#{content})&quot; unless cbparam.blank?
+    render :json =&gt; content, :layout =&gt; false
+  else
+    super opts, &amp;block
+  end
+end
+</pre>
+<p>As you can see, we render a single XML view, and then load it to a hash from XML, and use Rails&#8217; built-in <code>Hash#to_json</code> and <code>Hash#to_yaml</code> methods to provide the data in the desired format. There is a single glaring problem with this approach, though - <code>Hash#from_xml</code> is <em>dog slow</em> because it uses REXML. There&#8217;s a fantastic solution, though!</p>
+<p>Courtesy of a blog post over at <a href="http://www.visnup.com/entries/423-cobravsmongoose-not-slow-vs-hashfrom_xml-slow-vs-faster_xml_simple-fast">cobravsmongoose</a>, we have a libxml drop-in for <code>Hash#from_xml</code></p>
+<p>First, install <a href="http://libxml.rubyforge.org/">libxml</a> and then <a href="http://code.google.com/p/faster-xml-simple/">faster_xml_simple</a>.</p>
+<p>Second, include a monkeypatch to <code>Hash#from_xml</code> with the following:</p>
+<pre class="syntax-highlight:ruby">
+require &#039;faster_xml_simple&#039;
+class Hash
+  def self.from_xml(xml)
+    undasherize_keys(typecast_xml_value(FasterXmlSimple.xml_in(xml,
+      &#039;forcearray&#039;   =&gt; false,
+      &#039;forcecontent&#039; =&gt; true,
+      &#039;keeproot&#039;     =&gt; true,
+      &#039;contentkey&#039;   =&gt; &#039;__content__&#039;)
+    ))
+  end
+end
+</pre>
+<p>You can run the benchmarks if you&#8217;d like, but it&#8217;s orders of magnitude faster than REXML. Seriously. Don&#8217;t use REXML. It&#8217;s like trying to run a Ferrari off of a 9-volt battery.</p>
+<p>Now, let&#8217;s say you have an action you want to provide HTML, XML, JSON, and YAML views for.</p>
+<pre class="syntax-highlight:ruby">
+def index
+  ...
+  respond_to do |wants|
+    wants.html
+    wants.xml  { render :layout =&gt; false }
+    wants.json { render :to_json =&gt; &quot;posts/index.xml.builder&quot; }
+    wants.yaml { render :to_yaml =&gt; &quot;posts/index.xml.builder&quot; }
+  end
+end
+</pre>
+<p>Finally, throw together your <code>index.xml.builder</code> file as you best see fit.</p>
+<pre class="syntax-highlight:ruby">
+xml.instruct! :xml, :version=&gt;&quot;1.0&quot;, :encoding=&gt;&quot;UTF-8&quot;
+xml.posts do
+  @posts.each do |post|
+    xml.post(:id =&gt; post.id) do
+      xml.user(:id =&gt; post.user.id) +
+      xml.content do
+        post.post_body
+      end
+    end
+  end
+end
+</pre>
+<p>And all of a sudden, bam! You&#8217;ve got your posts available in HTML&#8230;</p>
+<pre><code>/posts/index</code></pre>
+<p>&#8230;and in XML, YAML, and JSON, along with the associated User. By using an XML builder, you can make the serialized data as complex and customized as you&#8217;d like. No more funky respond_to blocks, no more exposing data you don&#8217;t want to. Expose what you want, and just what you want, in several formats.</p>
+<pre><code>
+/posts/index.xml
+/posts/index.yml
+/posts/index.json
+</code></pre>
+<p>One final trick is that the JSON views accept an optional <code>callback</code> or <code>jsonp</code> parameter, which will cause the content to be passed to a Javascript function matching the passed parameter, as per the <a href="http://ajaxian.com/archives/jsonp-json-with-padding">JSONP</a> spec.</p>
+<p>For example, if you have a <code>/foo/bar.json</code> view that would render the following JSON:</p>
+<pre><code>"{\"foo\":\"bar\"}"</code></pre>
+<p>Calling <code>/foo/bar.json?jsonp=returnFunc</code> would return the following:</p>
+<pre><code>returnFunc("{\"foo\":\"bar\"}")</code></pre>
+<p>Check out the <a href="http://ajaxian.com/archives/jsonp-json-with-padding">JSONP</a> spec for more.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.coffeepowered.net/2008/09/27/powerful-easy-dry-multi-format-rest-apis/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Hold the RJS, please.</title>
+		<link>http://www.coffeepowered.net/2008/09/26/hold-the-rjs-please/</link>
+		<comments>http://www.coffeepowered.net/2008/09/26/hold-the-rjs-please/#comments</comments>
+		<pubDate>Sat, 27 Sep 2008 00:00:35 +0000</pubDate>
+		<dc:creator>Chris Heald</dc:creator>
+		
+		<category><![CDATA[Rails]]></category>
+
+		<category><![CDATA[Ruby]]></category>
+
+		<category><![CDATA[erb]]></category>
+
+		<category><![CDATA[javascript]]></category>
+
+		<category><![CDATA[rjs]]></category>
+
+		<guid isPermaLink="false">http://www.coffeepowered.net/?p=30</guid>
+		<description><![CDATA[Rails does a great job at many things, but one of the most consistent stumbling blocks I see in #rubyonrails is RJS. It complicates many things that just don&#8217;t need to be that complex, especially when using a Javascript helper library like Prototype or jQuery.
+Keep things simple! One little helper, and your AJAX requests get [...]]]></description>
+			<content:encoded><![CDATA[<p>Rails does a great job at many things, but one of the most consistent stumbling blocks I see in <a href="http://wiki.rubyonrails.org/rails/pages/IRC">#rubyonrails</a> is RJS. It complicates many things that just don&#8217;t need to be that complex, especially when using a Javascript helper library like <a href="http://prototypejs.org/">Prototype</a> or <a href="http://jquery.com/">jQuery</a>.</p>
+<p>Keep things simple! One little helper, and your AJAX requests get a whole lot easier to manage. This was inspired by the now-defunct <a href="http://www.danwebb.net/2006/11/24/minusmor-released">MinusMOR</a>.</p>
+<pre class="syntax-highlight:ruby">
+def js(data)
+  data.respond_to?(:to_json) &amp;&amp; data.to_json || data.inspect.to_json
+end
+</pre>
+<p>Now, when you want to render a Javascript view, you can use just straight Javascript. For example, if you would like to update a given element in your page with the contents of a partial, save a template, something like <code>update.js.erb</code>, with the following:</p>
+<pre class="syntax-highlight:javascript">$(&quot;div#post_&lt;%=@post.id%&gt;&quot;).update(&lt;%=js render(:partial =&gt; &quot;post.html.erb&quot;, :object =&gt; @post) %&gt;);</pre>
+<p>This is admittedly more complex than RJS in the simple case, but what about when you want to do more complex stuff, like this <code>vote.js.erb</code> template?</p>
+<pre class="syntax-highlight:javascript">
+&lt;% unless @msg.nil? %&gt;
+statusMessage(&lt;%=js @msg%&gt;);
+&lt;% end %&gt;
+var obj = $$(&#039;div#post_&lt;%=@post.id%&gt; span.vote a&#039;);
+for(var i=0; i&lt;obj.length; i++) {
+	var e = obj[i];
+	e.update(&lt;%=js &quot;+#{@post.vote_score}&quot;%&gt;);
+	e.addClassName(&quot;voted_post&quot;);
+}
+</pre>
+<p>Just as easy as writing any of your other views, and won&#8217;t get in your way when you need to go some fancy Javascript gymnastics without requiring ugly heredocs cluttering up the code all over.</p>
+<p>How about passing an <code>Array</code> to a client-side Javascript function?</p>
+<pre class="syntax-highlight:javascript">
+runSomeUpdateFunctionThatTakesAJavascriptArray(&lt;%=js @list_of_values %&gt;)
+</pre>
+<p>No worries about malformed Javascript!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.coffeepowered.net/2008/09/26/hold-the-rjs-please/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Stupid attachment_fu tricks, part 1</title>
+		<link>http://www.coffeepowered.net/2008/09/25/stupid-attachment_fu-tricks-part-1/</link>
+		<comments>http://www.coffeepowered.net/2008/09/25/stupid-attachment_fu-tricks-part-1/#comments</comments>
+		<pubDate>Thu, 25 Sep 2008 23:16:23 +0000</pubDate>
+		<dc:creator>Chris Heald</dc:creator>
+		
+		<category><![CDATA[Rails]]></category>
+
+		<category><![CDATA[Ruby]]></category>
+
+		<category><![CDATA[attachment_fu]]></category>
+
+		<category><![CDATA[imagemagick]]></category>
+
+		<guid isPermaLink="false">http://www.coffeepowered.net/?p=27</guid>
+		<description><![CDATA[attachment_fu is fantastic, but it&#8217;s a bit limited for some purposes. Ever wanted to upload data from a URL instead of making people upload files? It&#8217;s a common problem!
+Presume that we have a model named Image, which is our target for attachment_fu. Adding URL upload capability is surprisingly simple:
+
+class Image &#60; ActiveRecord::Base
+
+	# Standard attachment_fu inclusion [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://svn.techno-weenie.net/projects/plugins/attachment_fu/">attachment_fu</a> is fantastic, but it&#8217;s a bit limited for some purposes. Ever wanted to upload data from a URL instead of making people upload files? It&#8217;s a common problem!</p>
+<p>Presume that we have a model named Image, which is our target for attachment_fu. Adding URL upload capability is surprisingly simple:</p>
+<pre class="syntax-highlight:ruby">
+class Image &lt; ActiveRecord::Base
+
+	# Standard attachment_fu inclusion here
+	has_attachment :storage =&gt; :file_system,
+		:content_type =&gt; :image,
+		:resize_to =&gt; &quot;1024x1024&gt;&quot;,
+		:path_prefix =&gt; &quot;public/images/cache/attached&quot;,
+		:format =&gt; &quot;jpg&quot;
+
+	# Allows the direct assignment of a URL to this image, which is the source image to save from
+	def url=(v)
+		self.uploaded_data = UrlUpload.new(v)
+	end
+
+	# Or, we can just pass a URL to Image#uploaded_data
+	def uploaded_data=(filedata_or_url)
+		if filedata_or_url.is_a? String and filedata_or_url.match /^http(s)?:\/\// then
+			file = open(filedata_or_url)
+			file.extend(UrlUpload)
+			super(file)
+		else
+			super(filedata_or_url)
+		end
+	end
+end
+
+module UrlUpload
+	def filename
+		base_uri.to_s.split(&quot;/&quot;).last
+	end
+
+	def original_filename
+		base_uri.to_s.split(&quot;/&quot;).last
+	end
+end
+</pre>
+<p>There you go. All you need now is <code>Image.create(:url => "http://some.url/to/an/image.png")</code> and when the model is saved, the image will be sucked down and saved. Easy!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.coffeepowered.net/2008/09/25/stupid-attachment_fu-tricks-part-1/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Jabberish: making Rails talk back</title>
+		<link>http://www.coffeepowered.net/2008/09/25/jabberish-making-rails-talk-back/</link>
+		<comments>http://www.coffeepowered.net/2008/09/25/jabberish-making-rails-talk-back/#comments</comments>
+		<pubDate>Thu, 25 Sep 2008 11:45:49 +0000</pubDate>
+		<dc:creator>Chris Heald</dc:creator>
+		
+		<category><![CDATA[Rails]]></category>
+
+		<category><![CDATA[Ruby]]></category>
+
+		<category><![CDATA[drb]]></category>
+
+		<category><![CDATA[google talk]]></category>
+
+		<category><![CDATA[jabber]]></category>
+
+		<category><![CDATA[xmpp]]></category>
+
+		<guid isPermaLink="false">http://www.coffeepowered.net/?p=19</guid>
+		<description><![CDATA[Ever wanted to do IM from Rails? xmpp4r-simple makes it really easy to talk to Jabber clients (such as Google Talk users) from Ruby, but it&#8217;s not quite a cut-and-dried solution for your Rails apps. Fortunately, there&#8217;s Jabberish.
+Jabberish is a DRb-backed Jabber client designed for use in multi-server Rails apps. Just drop in the plugin, [...]]]></description>
+			<content:encoded><![CDATA[<p>Ever wanted to do IM from Rails? <a href="http://code.google.com/p/xmpp4r-simple/">xmpp4r-simple</a> makes it really easy to talk to Jabber clients (such as <a href="http://www.google.com/talk/">Google Talk</a> users) from Ruby, but it&#8217;s not quite a cut-and-dried solution for your Rails apps. Fortunately, there&#8217;s <a href="http://github.com/cheald/jabberish/tree/master">Jabberish</a>.</p>
+<p>Jabberish is a DRb-backed Jabber client designed for use in multi-server Rails apps. Just drop in the plugin, configure, start the daemon, and off you go.</p>
+<p>Installation is painless, as you&#8217;d expect.</p>
+<pre><code> script/plugin install git://github.com/cheald/jabberish.git</code></pre>
+<p>Jabberish calls in your code will fail silently if the Jabberish DRb process isn&#8217;t running, so if the daemon goes missing, it won&#8217;t bring your app crashing down around your shoulders - you just won&#8217;t get IMs.</p>
+<p>Once it&#8217;s installed, it&#8217;s very easy to get it up and running.</p>
+<ol>
+<li>Pop open <code>config/jabberish.yml</code> and set your preferences as you best see fit.</li>
+<li>run <code>rake jabberish:start</code> - this will start up your DRb daemon, and connect to your configured account to your Jabber network</li>
+<li>Call Jabberish from your code!</li>
+</ol>
+<pre class="syntax-highlight:ruby">
+JabberishAgent.deliver(&quot;your-email@gmail.com&quot;, &quot;Hi there!&quot;)
+</pre>
+<p>There are many potential applications. For example, to send yourself IMs when your app has an error, in application.rb:</p>
+<pre class="syntax-highlight:ruby">
+def rescue_action(e)
+  # The third parameter is &quot;throttle&quot;, which will cause Jabberish to refuse
+  # to send the same message to a given recipient twice in a row
+  msg = sprintf(&quot;[#%s] %s (%s)&quot;, Time.now.to_i, e, e.backtrace.first)
+  JabberishAgent.deliver(&quot;your-email@gmail.com&quot;, msg, true)
+end
+</pre>
+<p>And lickety split, you&#8217;re IMing error reports to yourself in realtime. I&#8217;m sure others will find much more interesting things to do with it!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.coffeepowered.net/2008/09/25/jabberish-making-rails-talk-back/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>site_config - painless custom configuration for your Rails project</title>
+		<link>http://www.coffeepowered.net/2008/09/25/site_config-painless-config-variables-for-rails-projects/</link>
+		<comments>http://www.coffeepowered.net/2008/09/25/site_config-painless-config-variables-for-rails-projects/#comments</comments>
+		<pubDate>Thu, 25 Sep 2008 11:31:59 +0000</pubDate>
+		<dc:creator>Chris Heald</dc:creator>
+		
+		<category><![CDATA[Rails]]></category>
+
+		<category><![CDATA[Ruby]]></category>
+
+		<category><![CDATA[configuration]]></category>
+
+		<category><![CDATA[plugin]]></category>
+
+		<guid isPermaLink="false">http://www.coffeepowered.net/?p=14</guid>
+		<description><![CDATA[site_config is a little plugin that addresses a problem lots of people seem to need to solve in their Rails apps: per-environment configuration variables.
+It&#8217;s very simple, but makes configuration dead-easy. To install it:
+script/plugin install git://github.com/cheald/site_config.git
+Once you have it installed, check out config/site_config.yml - there&#8217;s your config file.
+You&#8217;ll notice that it has some dummy data in [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://github.com/cheald/site_config/tree/master">site_config</a> is a little plugin that addresses a problem lots of people seem to need to solve in their Rails apps: per-environment configuration variables.</p>
+<p>It&#8217;s very simple, but makes configuration dead-easy. To install it:</p>
+<pre><code>script/plugin install git://github.com/cheald/site_config.git</code></pre>
+<p>Once you have it installed, check out <code>config/site_config.yml</code> - there&#8217;s your config file.</p>
+<p>You&#8217;ll notice that it has some dummy data in there to begin with. It&#8217;s much like your <code>database.yml</code> file; just specify the environment, and under that, specify the key:value pairs you want to have available in your app. site_config has one little trick up its sleeve, though - the key &#8220;inherit&#8221; is special, and tells it to pull values from another environment. This helps you DRY up your configs, and makes it quite easy to maintain.</p>
+<p>For example, if you had the following <code>site_config.yml</code>:</p>
+<pre class="syntax-highlight:ruby">
+development:
+  page_title: &quot;my development site&quot;
+  admin_user: chris
+
+production:
+  inherit: development
+  page_title: &quot;my production site&quot;
+</pre>
+<p>You can then use those configured values in your site like so:</p>
+<pre class="syntax-highlight:html">
+&lt;title&gt;&lt;%=config_option :page_title %&gt;&lt;/title&gt;
+Your friendly admin is &lt;%=config_option :admin_user %&gt;
+</pre>
+<p>site_config will pull values defined for your current environment. If you don&#8217;t have a value defined for a given environment, but do have an <code>inherit</code> defined, site_config will then look to the inherited config to pull values from.</p>
+<p>Additionally, if you want a value from a specific environment, <code>config_option</code> accepts a second parameter, which specifies the environment to pull from.</p>
+<pre class="syntax-highlight:ruby">
+config_option :page_title, :development
+</pre>
+<p>There&#8217;s more at the github page. Check it out.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.coffeepowered.net/2008/09/25/site_config-painless-config-variables-for-rails-projects/feed/</wfw:commentRss>
+		</item>
+	</channel>
+</rss>

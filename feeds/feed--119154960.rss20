@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- generator="wordpress/2.3.2" -->
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	>
+<channel>
+	<title>Comments for Leah Culver</title>
+	<link>http://leahculver.com</link>
+	<description>leahculver.com</description>
+	<pubDate>Fri, 12 Dec 2008 17:33:16 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.3.2</generator>
+		<item>
+		<title>Comment on CouchDB documents -&gt; Python objects by Andrew Tunnell-Jones</title>
+		<link>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1329</link>
+		<dc:creator>Andrew Tunnell-Jones</dc:creator>
+		<pubDate>Tue, 25 Nov 2008 22:53:04 +0000</pubDate>
+		<guid>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1329</guid>
+		<description>I hope you keep up your candid approach to blogging - it's refreshing</description>
+		<content:encoded><![CDATA[<p>I hope you keep up your candid approach to blogging - it&#8217;s refreshing</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on CouchDB documents -&gt; Python objects by Nathan Youngman</title>
+		<link>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1328</link>
+		<dc:creator>Nathan Youngman</dc:creator>
+		<pubDate>Tue, 25 Nov 2008 17:14:51 +0000</pubDate>
+		<guid>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1328</guid>
+		<description>Thanks for the writeup and sample code. Looks like a suitable alternative to BigTable if trying to prevent lock-in to App Engine.
+
+How about "Leah Culver's candid blog"?</description>
+		<content:encoded><![CDATA[<p>Thanks for the writeup and sample code. Looks like a suitable alternative to BigTable if trying to prevent lock-in to App Engine.</p>
+<p>How about &#8220;Leah Culver&#8217;s candid blog&#8221;?</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on CouchDB documents -&gt; Python objects by Sean B. Palmer</title>
+		<link>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1327</link>
+		<dc:creator>Sean B. Palmer</dc:creator>
+		<pubDate>Tue, 25 Nov 2008 14:18:33 +0000</pubDate>
+		<guid>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1327</guid>
+		<description>This should work in lieu of the exec stuff, I think:
+
+for field_name in self.all_fields(): 
+   setattr(self, field_name, kwargs.get(field_name))
+
+Haven't looked at it all that closely. But you should never really be "scared" of exec, because even if you do have to do something odd with it (you certainly don't need to use it here), you can match inputs against regular expressions and use .isalpha() and so on.
+
+P.S. I... no, nevermind.</description>
+		<content:encoded><![CDATA[<p>This should work in lieu of the exec stuff, I think:</p>
+<p>for field_name in self.all_fields():<br />
+   setattr(self, field_name, kwargs.get(field_name))</p>
+<p>Haven&#8217;t looked at it all that closely. But you should never really be &#8220;scared&#8221; of exec, because even if you do have to do something odd with it (you certainly don&#8217;t need to use it here), you can match inputs against regular expressions and use .isalpha() and so on.</p>
+<p>P.S. I&#8230; no, nevermind.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on CouchDB documents -&gt; Python objects by Noah Slater</title>
+		<link>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1326</link>
+		<dc:creator>Noah Slater</dc:creator>
+		<pubDate>Tue, 25 Nov 2008 14:13:05 +0000</pubDate>
+		<guid>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1326</guid>
+		<description>Hey Leah,
+
+It's great to see you're still playing with CouchDB!
+
+Just some comments on the code you posted.
+
+Instead of this:
+
+  if field_name in kwargs and kwargs[field_name] is not None:
+
+You could do this:
+
+  if kwargs.get(field_name, None) is not None:
+
+Instead of doing this:
+
+  type(kwargs[field_name]) is types.StringType
+
+Try:
+
+  isinstance(kwargs[field_name], basestring)
+
+This is really unsafe:
+
+  exec "self.%s = None" % field_name
+
+Do this instead:
+
+  setattr(self, field_name, None)
+
+This is also unsafe:
+
+  exec 'value = self.%s' % field_name
+
+Try this:
+
+  value = getattr(self, field_name)
+
+There are a few instance where you've used exec like above. You should always use getattr or setattr instead.
+
+Hope this helps!
+
+Noah</description>
+		<content:encoded><![CDATA[<p>Hey Leah,</p>
+<p>It&#8217;s great to see you&#8217;re still playing with CouchDB!</p>
+<p>Just some comments on the code you posted.</p>
+<p>Instead of this:</p>
+<p>  if field_name in kwargs and kwargs[field_name] is not None:</p>
+<p>You could do this:</p>
+<p>  if kwargs.get(field_name, None) is not None:</p>
+<p>Instead of doing this:</p>
+<p>  type(kwargs[field_name]) is types.StringType</p>
+<p>Try:</p>
+<p>  isinstance(kwargs[field_name], basestring)</p>
+<p>This is really unsafe:</p>
+<p>  exec &#8220;self.%s = None&#8221; % field_name</p>
+<p>Do this instead:</p>
+<p>  setattr(self, field_name, None)</p>
+<p>This is also unsafe:</p>
+<p>  exec &#8216;value = self.%s&#8217; % field_name</p>
+<p>Try this:</p>
+<p>  value = getattr(self, field_name)</p>
+<p>There are a few instance where you&#8217;ve used exec like above. You should always use getattr or setattr instead.</p>
+<p>Hope this helps!</p>
+<p>Noah</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on CouchDB documents -&gt; Python objects by Éric St-Jean</title>
+		<link>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1325</link>
+		<dc:creator>Éric St-Jean</dc:creator>
+		<pubDate>Tue, 25 Nov 2008 14:03:19 +0000</pubDate>
+		<guid>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1325</guid>
+		<description>maybe i'm missing something, but can't you change:
+exec 'value = self.%s' % field_name
+to:
+value = self.__dict__[field_name]
+? 
+
+and similar constructs for your other 2 uses of exec.
+
+In fact, to_dict could be:
+return [self.__dict__[fn] for fn in self.all_fields() if fn in self.__dict__ and self.__dict__[fn] is not None]</description>
+		<content:encoded><![CDATA[<p>maybe i&#8217;m missing something, but can&#8217;t you change:<br />
+exec &#8216;value = self.%s&#8217; % field_name<br />
+to:<br />
+value = self.__dict__[field_name]<br />
+? </p>
+<p>and similar constructs for your other 2 uses of exec.</p>
+<p>In fact, to_dict could be:<br />
+return [self.__dict__[fn] for fn in self.all_fields() if fn in self.__dict__ and self.__dict__[fn] is not None]</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on CouchDB documents -&gt; Python objects by Joey</title>
+		<link>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1324</link>
+		<dc:creator>Joey</dc:creator>
+		<pubDate>Tue, 25 Nov 2008 14:00:00 +0000</pubDate>
+		<guid>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1324</guid>
+		<description>Is there any reason you can't use the objects __dict__ to set the attributes?
+
+Look at lines 34 and 36 in my slightly modified version of your code: http://dpaste.com/hold/93619/
+
+I think this should work and avoids the unpleasantness of exec.</description>
+		<content:encoded><![CDATA[<p>Is there any reason you can&#8217;t use the objects __dict__ to set the attributes?</p>
+<p>Look at lines 34 and 36 in my slightly modified version of your code: <a href="http://dpaste.com/hold/93619/" rel="nofollow">http://dpaste.com/hold/93619/</a></p>
+<p>I think this should work and avoids the unpleasantness of exec.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on CouchDB documents -&gt; Python objects by Andrew</title>
+		<link>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1323</link>
+		<dc:creator>Andrew</dc:creator>
+		<pubDate>Tue, 25 Nov 2008 13:49:37 +0000</pubDate>
+		<guid>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1323</guid>
+		<description>You do realize that Python allows you to avoid exec here with, getattr, hasattr, setattr functions right? See also: http://www.python.org/doc/2.2/ref/attribute-access.html</description>
+		<content:encoded><![CDATA[<p>You do realize that Python allows you to avoid exec here with, getattr, hasattr, setattr functions right? See also: <a href="http://www.python.org/doc/2.2/ref/attribute-access.html" rel="nofollow">http://www.python.org/doc/2.2/ref/attribute-access.html</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on CouchDB documents -&gt; Python objects by Bob Ippolito</title>
+		<link>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1322</link>
+		<dc:creator>Bob Ippolito</dc:creator>
+		<pubDate>Tue, 25 Nov 2008 12:08:12 +0000</pubDate>
+		<guid>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1322</guid>
+		<description>You should be scared :)
+
+getattr and setattr are your friend. Code generation is dangerous and slow for this sort of purpose.</description>
+		<content:encoded><![CDATA[<p>You should be scared <img src='http://leahculver.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+<p>getattr and setattr are your friend. Code generation is dangerous and slow for this sort of purpose.</p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on CouchDB documents -&gt; Python objects by Fabien</title>
+		<link>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1321</link>
+		<dc:creator>Fabien</dc:creator>
+		<pubDate>Tue, 25 Nov 2008 11:14:39 +0000</pubDate>
+		<guid>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1321</guid>
+		<description>Isn't getattr a better solution than exec ?
+
+http://effbot.org/zone/python-getattr.htm</description>
+		<content:encoded><![CDATA[<p>Isn&#8217;t getattr a better solution than exec ?</p>
+<p><a href="http://effbot.org/zone/python-getattr.htm" rel="nofollow">http://effbot.org/zone/python-getattr.htm</a></p>
+]]></content:encoded>
+	</item>
+	<item>
+		<title>Comment on CouchDB documents -&gt; Python objects by Cam MacRae</title>
+		<link>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1320</link>
+		<dc:creator>Cam MacRae</dc:creator>
+		<pubDate>Tue, 25 Nov 2008 11:11:42 +0000</pubDate>
+		<guid>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comment-1320</guid>
+		<description>Late here also so I may have missed the point, but  why the execs and not setattr / getattr?
+
+In [13]: class A(object):
+   ....:     pass
+   ....: 
+
+In [14]: a = A()
+
+In [15]: setattr(a, 'myvar', 12)
+
+In [16]: a.myvar
+Out[16]: 12
+
+In the class you'd do setattr(self, 'myvar', 12)
+
+c.</description>
+		<content:encoded><![CDATA[<p>Late here also so I may have missed the point, but  why the execs and not setattr / getattr?</p>
+<p>In [13]: class A(object):<br />
+   &#8230;.:     pass<br />
+   &#8230;.: </p>
+<p>In [14]: a = A()</p>
+<p>In [15]: setattr(a, &#8216;myvar&#8217;, 12)</p>
+<p>In [16]: a.myvar<br />
+Out[16]: 12</p>
+<p>In the class you&#8217;d do setattr(self, &#8216;myvar&#8217;, 12)</p>
+<p>c.</p>
+]]></content:encoded>
+	</item>
+</channel>
+</rss>

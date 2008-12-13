@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+
+<channel>
+	<title>symbolsystem</title>
+	<atom:link href="http://symbolsystem.com/blog/feed" rel="self" type="application/rss+xml" />
+	<link>http://symbolsystem.com/blog</link>
+	<description>not just another ____ blog</description>
+	<pubDate>Mon, 27 Oct 2008 00:11:54 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6.3</generator>
+	<language>en</language>
+			<item>
+		<title>test</title>
+		<link>http://symbolsystem.com/blog/2008/10/test</link>
+		<comments>http://symbolsystem.com/blog/2008/10/test#comments</comments>
+		<pubDate>Mon, 27 Oct 2008 00:11:19 +0000</pubDate>
+		<dc:creator>kevin</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://symbolsystem.com/blog/?p=5</guid>
+		<description><![CDATA[this is just a test.
+a test this is, just.
+test just this is a.
+a this is just test.
+a just test this is.
+]]></description>
+			<content:encoded><![CDATA[<p>this is just a test.</p>
+<p>a test this is, just.</p>
+<p>test just this is a.</p>
+<p>a this is just test.</p>
+<p>a just test this is.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://symbolsystem.com/blog/2008/10/test/feed</wfw:commentRss>
+		</item>
+	</channel>
+</rss>

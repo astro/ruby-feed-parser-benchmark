@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:admin="http://webns.net/mvcb/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns="http://purl.org/rss/1.0/">
+
+<channel rdf:about="http://www.webrankinfo.com/">
+  <title>WebRankInfo : Referencement Google</title>
+  <description><![CDATA[WebRankInfo : portail communautaire sur le référencement]]></description>
+  <link>http://www.webrankinfo.com/</link>
+  <dc:language>fr</dc:language>
+  <dc:creator></dc:creator>
+  <dc:rights></dc:rights>
+  <dc:date>2008-12-12T08:55:55+01:00</dc:date>
+  <admin:generatorAgent rdf:resource="http://www.dotclear.net/" />
+  
+  <sy:updatePeriod>daily</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
+  <sy:updateBase>2008-12-12T08:55:55+01:00</sy:updateBase>
+  
+  <items>
+  <rdf:Seq>
+    <rdf:li rdf:resource="http://www.webrankinfo.com/actualites/200812-codes-http-et-referencement.htm" />
+  <rdf:li rdf:resource="http://www.webrankinfo.com/actualites/200812-parts-marche-moteurs-france-novembre-2008.htm" />
+  <rdf:li rdf:resource="http://www.webrankinfo.com/actualites/200812-mesurer-visites-google-searchwiki.htm" />
+  <rdf:li rdf:resource="http://www.webrankinfo.com/actualites/200812-backlinks-et-404.htm" />
+  <rdf:li rdf:resource="http://www.webrankinfo.com/actualites/200812-vitesse-exploration-google.htm" />
+  <rdf:li rdf:resource="http://www.webrankinfo.com/actualites/200812-le-referencement-en-2009.htm" />
+  <rdf:li rdf:resource="http://www.webrankinfo.com/actualites/200811-google-search-based-keyword-tool.htm" />
+  <rdf:li rdf:resource="http://www.webrankinfo.com/actualites/200811-100000-membres-webrankinfo.htm" />
+  <rdf:li rdf:resource="http://www.webrankinfo.com/actualites/200811-parts-marche-moteurs-france-octobre-2008.htm" />
+  <rdf:li rdf:resource="http://www.webrankinfo.com/actualites/200810-2-millions-de-serveurs-google.htm" />
+  </rdf:Seq>
+  </items>
+</channel>
+
+<item rdf:about="http://www.webrankinfo.com/actualites/200812-codes-http-et-referencement.htm">
+  <title>Optimiser ses codes HTTP pour le référencement</title>
+  <link>http://www.webrankinfo.com/actualites/200812-codes-http-et-referencement.htm</link>
+  <dc:date>2008-12-12T08:55:55+01:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>Olivier Duffez</dc:creator>
+  <dc:subject>Techniques de référencement</dc:subject>
+  <description>Le protocole HTTP prévoit un certain nombre de codes que le serveur web doit renvoyer en fonction de la situation : la page demandée a bien été trouvée, elle a disparu, elle est déplacée, elle est indisponible, etc. Même si ça peut paraitre compliqué ou anecdotique par certains, il est très important de s'assurer que votre site renvoie les bons codes HTTP. Voici de quoi vous aider à y voir plus clair... &lt;p&gt;&lt;i&gt;Article publié sur &lt;a href="http://www.olivier-duffez.fr/webrankinfo"&gt;WebRankInfo (communauté du référencement)&lt;/a&gt; par &lt;a href="http://www.webrankexpert.com/"&gt;Olivier Duffez&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;</description>
+  <content:encoded><![CDATA[Le protocole HTTP prévoit un certain nombre de codes que le serveur web doit renvoyer en fonction de la situation&nbsp;: la page demandée a bien été trouvée, elle a disparu, elle est déplacée, elle est indisponible, etc. Même si ça peut paraitre compliqué ou anecdotique par certains, il est très important de s'assurer que votre site renvoie les bons codes HTTP. Voici de quoi vous aider à y voir plus clair...]]></content:encoded>
+</item>
+<item rdf:about="http://www.webrankinfo.com/actualites/200812-parts-marche-moteurs-france-novembre-2008.htm">
+  <title>Parts de marché des moteurs en France (Novembre 2008)</title>
+  <link>http://www.webrankinfo.com/actualites/200812-parts-marche-moteurs-france-novembre-2008.htm</link>
+  <dc:date>2008-12-10T21:40:28+01:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>Olivier Duffez</dc:creator>
+  <dc:subject>Autres moteurs de recherche</dc:subject>
+  <description>En Novembre 2008 en France, Google repart à la hausse, après une courte pause en octobre dernier. Il atteint 91,20% de part de marché. Lo.st, intégré dans ce classement pour le 2ème mois, poursuit sa progression tandis que les principaux challengers chutent tous (Yahoo, Live, Orange)... &lt;p&gt;&lt;i&gt;Article publié sur &lt;a href="http://www.olivier-duffez.fr/webrankinfo"&gt;WebRankInfo (communauté du référencement)&lt;/a&gt; par &lt;a href="http://www.webrankexpert.com/"&gt;Olivier Duffez&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;</description>
+  <content:encoded><![CDATA[En Novembre 2008 en France, Google repart à la hausse, après une courte pause en octobre dernier. Il atteint 91,20% de part de marché. Lo.st, intégré dans ce classement pour le 2ème mois, poursuit sa progression tandis que les principaux challengers chutent tous (Yahoo, Live, Orange)...]]></content:encoded>
+</item>
+<item rdf:about="http://www.webrankinfo.com/actualites/200812-mesurer-visites-google-searchwiki.htm">
+  <title>Comment analyser les visites provenant de Google SearchWiki</title>
+  <link>http://www.webrankinfo.com/actualites/200812-mesurer-visites-google-searchwiki.htm</link>
+  <dc:date>2008-12-09T14:22:20+01:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>Olivier Duffez</dc:creator>
+  <dc:subject>Google Analytics</dc:subject>
+  <description>Maintenant que Google SearchWiki est sorti, ça devient intéressant de savoir mesurer le trafic généré. Voici comment faire pour analyser les clics sur les résultats de Google Search Wiki, à l'aide des options avancées de filtrage de Google Analytics. &lt;p&gt;&lt;i&gt;Article publié sur &lt;a href="http://www.olivier-duffez.fr/webrankinfo"&gt;WebRankInfo (communauté du référencement)&lt;/a&gt; par &lt;a href="http://www.webrankexpert.com/"&gt;Olivier Duffez&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;</description>
+  <content:encoded><![CDATA[Maintenant que Google SearchWiki est sorti, ça devient intéressant de savoir mesurer le trafic généré. Voici comment faire pour analyser les clics sur les résultats de Google Search Wiki, à l'aide des options avancées de filtrage de Google Analytics.]]></content:encoded>
+</item>
+<item rdf:about="http://www.webrankinfo.com/actualites/200812-backlinks-et-404.htm">
+  <title>Un moyen très simple et gratuit d'obtenir des backlinks</title>
+  <link>http://www.webrankinfo.com/actualites/200812-backlinks-et-404.htm</link>
+  <dc:date>2008-12-08T08:46:10+01:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>Olivier Duffez</dc:creator>
+  <dc:subject>Stratégies de liens</dc:subject>
+  <description>Pour ceux qui ont raté le truc quand c'est sorti (en octobre 2008), voici un petit rappel sur cette technique très simple qui permet de récupérer de très nombreux backlinks gratuitement et simplement. &lt;p&gt;&lt;i&gt;Article publié sur &lt;a href="http://www.olivier-duffez.fr/webrankinfo"&gt;WebRankInfo (communauté du référencement)&lt;/a&gt; par &lt;a href="http://www.webrankexpert.com/"&gt;Olivier Duffez&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;</description>
+  <content:encoded><![CDATA[Pour ceux qui ont raté le truc quand c'est sorti (en octobre 2008), voici un petit rappel sur cette technique très simple qui permet de récupérer de très nombreux backlinks gratuitement et simplement.]]></content:encoded>
+</item>
+<item rdf:about="http://www.webrankinfo.com/actualites/200812-vitesse-exploration-google.htm">
+  <title>Configurer les options de passage de Googlebot sur son site</title>
+  <link>http://www.webrankinfo.com/actualites/200812-vitesse-exploration-google.htm</link>
+  <dc:date>2008-12-05T12:34:39+01:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>Olivier Duffez</dc:creator>
+  <dc:subject>Techniques de référencement</dc:subject>
+  <description>Jusqu'à présent, Google permettait au webmaster de choisir entre 2 niveaux de vitesse de crawl (parfois un 3ème niveau était accessible). L'objectif est de demander au robot Googlebot de venir plus ou moins souvent sur le site, en fonction de la charge du serveur. Google vient d'annoncer que le réglage de la vitesse d'exploration est désormais plus fin. &lt;p&gt;&lt;i&gt;Article publié sur &lt;a href="http://www.olivier-duffez.fr/webrankinfo"&gt;WebRankInfo (communauté du référencement)&lt;/a&gt; par &lt;a href="http://www.webrankexpert.com/"&gt;Olivier Duffez&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;</description>
+  <content:encoded><![CDATA[Jusqu'à présent, Google permettait au webmaster de choisir entre 2 niveaux de vitesse de crawl (parfois un 3ème niveau était accessible). L'objectif est de demander au robot Googlebot de venir plus ou moins souvent sur le site, en fonction de la charge du serveur. Google vient d'annoncer que le réglage de la vitesse d'exploration est désormais plus fin.]]></content:encoded>
+</item>
+<item rdf:about="http://www.webrankinfo.com/actualites/200812-le-referencement-en-2009.htm">
+  <title>Les tendances du référencement en 2009</title>
+  <link>http://www.webrankinfo.com/actualites/200812-le-referencement-en-2009.htm</link>
+  <dc:date>2008-12-01T18:05:51+01:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>Olivier Duffez</dc:creator>
+  <dc:subject>Techniques de référencement</dc:subject>
+  <description>L'année 2008 se termine, les ventes en ligne pour les fêtes de fin d'année montent en flèche - en tout cas c'est ce qu'espèrent tous ceux qui ont travaillé dur pour optimiser le référencement et les web analytics de leur site. De toute façon, c'est en général un peu tard pour faire encore des améliorations, à part sans doute la recherche de nouveaux backlinks. C'est donc l'occasion de s'intéresser à ce qui nous attend pour 2009 : quelles seront les tendances des moteurs de recherche et du référencement en 2009 ? Comment devez-vous vous préparer pour être devant vos concurrents, pour ne pas laisser passer des évolutions marquantes ? Voici quelques pistes pour vous aider... &lt;p&gt;&lt;i&gt;Article publié sur &lt;a href="http://www.olivier-duffez.fr/webrankinfo"&gt;WebRankInfo (communauté du référencement)&lt;/a&gt; par &lt;a href="http://www.webrankexpert.com/"&gt;Olivier Duffez&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;</description>
+  <content:encoded><![CDATA[L'année 2008 se termine, les ventes en ligne pour les fêtes de fin d'année montent en flèche - en tout cas c'est ce qu'espèrent tous ceux qui ont travaillé dur pour optimiser le référencement et les web analytics de leur site. De toute façon, c'est en général un peu tard pour faire encore des améliorations, à part sans doute la recherche de nouveaux backlinks. C'est donc l'occasion de s'intéresser à ce qui nous attend pour 2009&nbsp;: quelles seront les tendances des moteurs de recherche et du référencement en 2009 ? Comment devez-vous vous préparer pour être devant vos concurrents, pour ne pas laisser passer des évolutions marquantes&nbsp;? Voici quelques pistes pour vous aider...]]></content:encoded>
+</item>
+<item rdf:about="http://www.webrankinfo.com/actualites/200811-google-search-based-keyword-tool.htm">
+  <title>Google Search-based Keyword Tool : outil de recherche de mots-clés</title>
+  <link>http://www.webrankinfo.com/actualites/200811-google-search-based-keyword-tool.htm</link>
+  <dc:date>2008-11-24T18:17:19+01:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>Olivier Duffez</dc:creator>
+  <dc:subject>Stratégies de liens</dc:subject>
+  <description>Google vient de sortir encore un nouvel outil de recherche de mots-clés, intitulé Google Search-based Keyword Tool. Destiné principalement aux utilisateurs des campagnes de liens sponsorisés AdWords, cet outil est très utile également pour les stratégies de mots-clés du référencement naturel, en complément de Google Insights for Search ou Google Trends. &lt;p&gt;&lt;i&gt;Article publié sur &lt;a href="http://www.olivier-duffez.fr/webrankinfo"&gt;WebRankInfo (communauté du référencement)&lt;/a&gt; par &lt;a href="http://www.webrankexpert.com/"&gt;Olivier Duffez&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;</description>
+  <content:encoded><![CDATA[Google vient de sortir encore un nouvel outil de recherche de mots-clés, intitulé Google Search-based Keyword Tool. Destiné principalement aux utilisateurs des campagnes de liens sponsorisés AdWords, cet outil est très utile également pour les stratégies de mots-clés du référencement naturel, en complément de Google Insights for Search ou Google Trends.]]></content:encoded>
+</item>
+<item rdf:about="http://www.webrankinfo.com/actualites/200811-100000-membres-webrankinfo.htm">
+  <title>WebRankInfo fête son 100.000 ème membre</title>
+  <link>http://www.webrankinfo.com/actualites/200811-100000-membres-webrankinfo.htm</link>
+  <dc:date>2008-11-13T15:05:22+01:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>Olivier Duffez</dc:creator>
+  <dc:subject>WebRankInfo</dc:subject>
+  <description>WebRankInfo, créé en 2002 par Olivier Duffez (consultant indépendant en référencement), est désormais une grande communauté de 100.000 membres, faisant d'elle le premier portail francophone dédié au référencement ainsi qu'à d'autres thématiques proches (e-marketing, développement web, Google, droit d'Internet, etc.). C'est l'occasion de fournir quelques chiffres sur les entrailles du site WebRankInfo... &lt;p&gt;&lt;i&gt;Article publié sur &lt;a href="http://www.olivier-duffez.fr/webrankinfo"&gt;WebRankInfo (communauté du référencement)&lt;/a&gt; par &lt;a href="http://www.webrankexpert.com/"&gt;Olivier Duffez&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;</description>
+  <content:encoded><![CDATA[WebRankInfo, créé en 2002 par Olivier Duffez (consultant indépendant en référencement), est désormais une grande communauté de 100.000 membres, faisant d'elle le premier portail francophone dédié au référencement ainsi qu'à d'autres thématiques proches (e-marketing, développement web, Google, droit d'Internet, etc.). C'est l'occasion de fournir quelques chiffres sur les entrailles du site WebRankInfo...]]></content:encoded>
+</item>
+<item rdf:about="http://www.webrankinfo.com/actualites/200811-parts-marche-moteurs-france-octobre-2008.htm">
+  <title>Parts de marché des moteurs en France (Octobre 2008)</title>
+  <link>http://www.webrankinfo.com/actualites/200811-parts-marche-moteurs-france-octobre-2008.htm</link>
+  <dc:date>2008-11-12T10:09:49+01:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>Olivier Duffez</dc:creator>
+  <dc:subject>Autres moteurs de recherche</dc:subject>
+  <description>En Octobre 2008 en France, Google maintient une part de marché de 91% malgré sa première baisse depuis 6 mois. Les autres moteurs baissent aussi, sans doute à cause de l'intégration d'un nouveau moteur dans ce baromètre. &lt;p&gt;&lt;i&gt;Article publié sur &lt;a href="http://www.olivier-duffez.fr/webrankinfo"&gt;WebRankInfo (communauté du référencement)&lt;/a&gt; par &lt;a href="http://www.webrankexpert.com/"&gt;Olivier Duffez&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;</description>
+  <content:encoded><![CDATA[En Octobre 2008 en France, Google maintient une part de marché de 91% malgré sa première baisse depuis 6 mois. Les autres moteurs baissent aussi, sans doute à cause de l'intégration d'un nouveau moteur dans ce baromètre.]]></content:encoded>
+</item>
+<item rdf:about="http://www.webrankinfo.com/actualites/200810-2-millions-de-serveurs-google.htm">
+  <title>2 millions de serveurs dans les data centers Google ?</title>
+  <link>http://www.webrankinfo.com/actualites/200810-2-millions-de-serveurs-google.htm</link>
+  <dc:date>2008-10-31T18:23:47+01:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>Olivier Duffez</dc:creator>
+  <dc:subject>Google l'entreprise</dc:subject>
+  <description>L'infrastructure technique impressionnante de Google est certainement un des éléments clés de sa réussite d'une part, et des difficultés des concurrents pour le rattraper. The Economist estime aujourd'hui à 2 millions le nombre de serveurs utilisés par Google dans ses différents data centers. &lt;p&gt;&lt;i&gt;Article publié sur &lt;a href="http://www.olivier-duffez.fr/webrankinfo"&gt;WebRankInfo (communauté du référencement)&lt;/a&gt; par &lt;a href="http://www.webrankexpert.com/"&gt;Olivier Duffez&lt;/a&gt;&lt;/i&gt;&lt;/p&gt;</description>
+  <content:encoded><![CDATA[L'infrastructure technique impressionnante de Google est certainement un des éléments clés de sa réussite d'une part, et des difficultés des concurrents pour le rattraper. The Economist estime aujourd'hui à 2 millions le nombre de serveurs utilisés par Google dans ses différents data centers.]]></content:encoded>
+</item>
+
+</rdf:RDF>

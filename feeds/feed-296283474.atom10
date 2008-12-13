@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/rss2full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>Ajaxian » Front Page</title>
+	
+	<link>http://ajaxian.com</link>
+	<description>Cleaning up the web with Ajax</description>
+	<pubDate>Thu, 11 Dec 2008 17:00:49 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6</generator>
+	<language>en</language>
+			<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://ajaxian.com/index.xml" type="application/rss+xml" /><feedburner:browserFriendly>This is an XML content feed. It is intended to be viewed in a newsreader or syndicated to another site, subject to copyright and fair use.</feedburner:browserFriendly><item>
+		<title>SmartMarkUp: Universal Markup Editor</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/481829888/smartmarkup-universal-markup-editor</link>
+		<comments>http://ajaxian.com/archives/smartmarkup-universal-markup-editor#comments</comments>
+		<pubDate>Thu, 11 Dec 2008 17:00:34 +0000</pubDate>
+		<dc:creator>Ben Galbraith</dc:creator>
+		
+		<category><![CDATA[Component]]></category>
+
+		<category><![CDATA[Front Page]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5369</guid>
+		<description><![CDATA[
+Joseph Woods of PHPCow sent us a note about SmartMarkUP, a &#8220;universal markup editor&#8221;:
+
+SmartMarkUP is a lightweight and powerful JavaScript library that allows you to turn any textarea into a fancy markup editor. HTML, CSS, XML, Wiki syntax, BBCode or any other desired markup language can be implemented and/or adjusted to your preferences and business [...]]]></description>
+			<content:encoded><![CDATA[<p><img src="http://ajaxian.com/wp-content/uploads/smartmarkup.jpg" alt="" title="SmartMarkUP" width="470" height="237" class="alignnone size-full wp-image-5371" /></p>
+<p>Joseph Woods of <a href="http://www.phpcow.com/">PHPCow</a> sent us a note about <a href="http://www.phpcow.com/smartmarkup/">SmartMarkUP</a>, a &#8220;universal markup editor&#8221;:</p>
+<blockquote><p>
+SmartMarkUP is a lightweight and powerful JavaScript library that allows you to turn any textarea into a fancy markup editor. HTML, CSS, XML, Wiki syntax, BBCode or any other desired markup language can be implemented and/or adjusted to your preferences and business needs. SmartMarkUP doesn&#8217;t depend on any other JavaScript library and can be integrated with any already existing JavaScript library or code.
+</p></blockquote>
+<p>Although SmartMarkUP is stand-alone, they&#8217;ve created a jQuery plug-in wrapper for it. The documentation is quite extensive and includes detailed notes on how to use the editor to edit your own markup.</p>
+<p>While the editor has buttons and such to make it easier to manipulate the markup (a la Wordpress&#8217; own code editor) the editor itself doesn&#8217;t have any kind of syntax highlighting or auto-indent / auto-complete features.</p>
+<p>Still, it&#8217;s a pretty neat little package:</p>
+<blockquote><p>
+    * SmartMarkUP is completely free and open source<br />
+    * SmartMarkUP is a small script, compressed version weights only 10kb<br />
+    * SmartMarkUP is completely skin-able you can fit it&#8217;s design with your applications easily<br />
+    * SmartMarkUP can be used from any other script<br />
+    * SmartMarkUP is self contained and doesn&#8217;t depend on any third party scripts. You can use it with Prototype, jQuery, Mootools or any other JavaScript libraries.<br />
+    * SmartMarkUP doesn&#8217;t requires changing of already existing markup or code infrastructure.<br />
+    * SmartMarkUP degrades gracefully, that means your application will continue working in browsers with disabled JavaScript.
+</p></blockquote>
+<p>What do you think?</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=oCytO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=oCytO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=w36pO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=w36pO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=supio"><img src="http://feeds.feedburner.com/~f/ajaxian?i=supio" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/smartmarkup-universal-markup-editor/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/smartmarkup-universal-markup-editor</feedburner:origLink></item>
+		<item>
+		<title>CSS Spriting without background-image</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/481826768/css-spriting-without-background-image</link>
+		<comments>http://ajaxian.com/archives/css-spriting-without-background-image#comments</comments>
+		<pubDate>Thu, 11 Dec 2008 16:55:40 +0000</pubDate>
+		<dc:creator>Dion Almaer</dc:creator>
+		
+		<category><![CDATA[CSS]]></category>
+
+		<category><![CDATA[Front Page]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5364</guid>
+		<description><![CDATA[Jennifer Semter has published an article on CSS spriting, and a cross-browser technique that uses divs, anchors, and clipping to get the same effect as background image clipping. The reason for the new technique is due to the issues with the current approach:
+
+
+You can’t attach alternate text to divs for accessibility purposes
+CSS Spriting and the [...]]]></description>
+			<content:encoded><![CDATA[<p>Jennifer Semter has <a href="http://www.jennifersemtner.com/css/101/extending-css-spriting/">published an article</a> on CSS spriting, and a cross-browser technique that uses divs, anchors, and clipping to get the same effect as background image clipping. The reason for the new technique is due to the issues with the current approach:</p>
+<blockquote>
+<ol>
+<li>You can’t attach alternate text to divs for accessibility purposes</li>
+<li>CSS Spriting and the <a href="http://www.twinhelix.com/css/iepngfix/" target="_blank">IE6 PNG fix</a> are incompatible</li>
+<li>The images will not print out on printouts unless the client option to print background images is selected (this is bad for logos and menus, etc)</li>
+<li>For images in pages (that are not actually background images), it seems semantically bad to hide the image in CSS.</li>
+</ol>
+</blockquote>
+<p>And example code shows how it works:</p>
+<div class="igBar"><a href="javascript:showCodeTxt('css-3');">PLAIN TEXT</a></div>
+<div class="syntax_hilite"><span style="color:#000000; font-weight:bold;">CSS:</span>
+<div id="css-3">
+<div class="css">
+<ol>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;"><span style="color: #6666ff;">.menu-about </span><span style="color:#006600; font-weight:bold;">&#123;</span> <span style="color: #000000; font-weight: bold;">width</span>: 106px; <span style="color: #000000; font-weight: bold;">height</span>: 29px; <span style="color: #000000; font-weight: bold;">position</span>: <span style="color: #993333;">relative</span>; <span style="color: #000000; font-weight: bold;">top</span>: <span style="color:#800000;">0</span>; <span style="color: #000000; font-weight: bold;">left</span>: -293px; <span style="color:#006600; font-weight:bold;">&#125;</span></div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;"><span style="color: #6666ff;">.menu-about </span>img <span style="color:#006600; font-weight:bold;">&#123;</span> <span style="color: #000000; font-weight: bold;">position</span>: <span style="color: #993333;">absolute</span>; <span style="color: #000000; font-weight: bold;">clip</span>: rect<span style="color:#006600; font-weight:bold;">&#40;</span><span style="color:#800000;">0</span> 399px 29px 293px<span style="color:#006600; font-weight:bold;">&#41;</span>; <span style="color:#006600; font-weight:bold;">&#125;</span></div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="igBar"><a href="javascript:showCodeTxt('html-4');">PLAIN TEXT</a></div>
+<div class="syntax_hilite"><span style="color:#000000; font-weight:bold;">HTML:</span>
+<div id="html-4">
+<div class="html">
+<ol>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;"><span style="color: #009900;"><a href="http://december.com/html/4/element/div.html"><span style="color: #000000; font-weight: bold;">&lt;div</span></a> <span style="color: #000066;">class</span>=<span style="color: #ff0000;">"menu-about"</span><span style="color: #000000; font-weight: bold;">&gt;</span></a></span></div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; &nbsp; &nbsp;<span style="color: #009900;"><a href="http://december.com/html/4/element/img.html"><span style="color: #000000; font-weight: bold;">&lt;img</span></a> <span style="color: #000066;">class</span>=”transparent_png” <span style="color: #000066;">src</span>=”http://www.jennifersemtner.com/wp-<span style="color: #000066;">content</span>/uploads/<span style="color:#800000;">2008</span>/<span style="color:#800000;">12</span>/company-menu.png” <span style="color: #000066;">alt</span>=”About” <span style="color: #000066;">title</span>=”About Us” <span style="color: #000066;">width</span>=”<span style="color:#800000;">611</span>? <span style="color: #000066;">height</span>=”<span style="color:#800000;">39</span>? /<span style="color: #000000; font-weight: bold;">&gt;</span></a></span></div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;"><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/div&gt;</span></span></div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=rRsrO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=rRsrO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=dKPRO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=dKPRO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=cvgYo"><img src="http://feeds.feedburner.com/~f/ajaxian?i=cvgYo" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/css-spriting-without-background-image/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/css-spriting-without-background-image</feedburner:origLink></item>
+		<item>
+		<title>IE8 December Release and Accessibility</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/481805824/ie8-december-release-and-accessibility</link>
+		<comments>http://ajaxian.com/archives/ie8-december-release-and-accessibility#comments</comments>
+		<pubDate>Thu, 11 Dec 2008 16:35:09 +0000</pubDate>
+		<dc:creator>Dion Almaer</dc:creator>
+		
+		<category><![CDATA[Browsers]]></category>
+
+		<category><![CDATA[Front Page]]></category>
+
+		<category><![CDATA[IE]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5362</guid>
+		<description><![CDATA[The IE8 team let their partners know about a December "Partner Build" that contains the following changes since IE8b2:
+Accessibility-ARIA
+ARIA attribute names containing dashes, such as “aria-checked”, no longer have to be referenced by their camelCased equivalent (ariaChecked) in IE 7 Mode and Quirks Mode. As a consequence of this change, the camelCased syntax no longer [...]]]></description>
+			<content:encoded><![CDATA[<p>The IE8 team let their partners know about a December "Partner Build" that contains the following changes since IE8b2:</p>
+<p><b>Accessibility-ARIA</b></p>
+<p>ARIA attribute names containing dashes, such as “aria-checked”, no longer have to be referenced by their camelCased equivalent (ariaChecked) in IE 7 Mode and Quirks Mode. As a consequence of this change, the camelCased syntax no longer exists for these attributes.</p>
+<p>Another article was recently published on <a href="http://blogs.msdn.com/ie/archive/2008/12/10/new-accessibility-features-in-ie8.aspx">new accessibility features in IE8</a>.</p>
+<p><b>AJAX-XDR</b></p>
+<p>XDR now checks Access-Control-Allow-Origin header for specific URLs as well as wildcards.</p>
+<p><b>Developer Tools</b></p>
+<p>The Developer Tools now has a menu option to let the user choose the view source app. In IE7 the only choice was Notepad and in IE8 Beta 2, the built-in viewer was the only choice. Now users can choose Notepad, built-in viewer, or another application.</p>
+<p><b>CSS</b></p>
+<p>Syntactically valid filter declarations are applied in standards mode, even if unquoted Starting with IE8 Beta 1, the following filter declaration was not applied in standards mode:</p>
+<div class="igBar"><a href="javascript:showCodeTxt('css-7');">PLAIN TEXT</a></div>
+<div class="syntax_hilite"><span style="color:#000000; font-weight:bold;">CSS:</span>
+<div id="css-7">
+<div class="css">
+<ol>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">filter: progid:DXImageTransform.Microsoft.Alpha<span style="color:#006600; font-weight:bold;">&#40;</span>Opacity=<span style="color:#800000;">80</span>, FinishOpacity=<span style="color:#800000;">70</span>,Style=<span style="color:#800000;">2</span><span style="color:#006600; font-weight:bold;">&#41;</span>;</div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<p>Instead, IE8 standards mode required the following declaration:</p>
+<div class="igBar"><a href="javascript:showCodeTxt('css-8');">PLAIN TEXT</a></div>
+<div class="syntax_hilite"><span style="color:#000000; font-weight:bold;">CSS:</span>
+<div id="css-8">
+<div class="css">
+<ol>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">-ms-filter: “progid:DXImageTransform.Microsoft.Alpha<span style="color:#006600; font-weight:bold;">&#40;</span>Opacity=<span style="color:#800000;">80</span>,FinishOpacity=<span style="color:#800000;">70</span>, Style=<span style="color:#800000;">2</span><span style="color:#006600; font-weight:bold;">&#41;</span>”;</div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<p>For web applications supporting both IE7 and earlier as well as IE8 standards mode, this meant maintaining both declarations and possible a third for other browsers in the case of opacity.</p>
+<p>Starting with IE8 Partner Build, the first declaration above will be applied in standards mode if and only if its syntax is valid. If it is not e.g. the final parenthesis is missing then the declaration will not be applied and our CSS parser fails per the standard.</p>
+<p>CSS style sheet encoding detection complies with CSS 2.1 e.g. including @charset directive, charset attribute on link element etc.</p>
+<p><b>Compatibility View List</b></p>
+<p>Check box added in Tools->Compatibility View Settings to receive updates from Microsoft. At the moment, the functionality of this feature works but our list will not be activated until the next release of IE.</p>
+<p><b>Filter Syntax Property</b></p>
+<p>IE8 will accept the current filter syntax as well as the fully quoted syntax (“–ms” prefix) previously announced for IE8.</p>
+<p><b>Links Bar</b></p>
+<p>A new option allows users to put as many items on the Favorites bar as they want. The size of Links bar items can now be set to long (default), short (5 characters), or simply the favicon.</p>
+<p><b>InPrivate Blocking</b></p>
+<p>New InPrivate Blocking button on the status bar. This can be pressed to turn InPrivate Blocking on and off.</p>
+<p>InPrivate Blocking now has a quick on/off entry in the Safety menu (or Ctrl-Shift-B).</p>
+<p>The InPrivate Blocking on/off setting is now a session-specific option. InPrivate Blocking will be off by default each time users launch Internet Explorer.</p>
+<p>InPrivate Blocking can now be turned on for all browsing sessions, not just InPrivate Browsing sessions.</p>
+<p>UI Improvements to the InPrivate Blocking settings dialog.</p>
+<p>New feature first-run dialog box.</p>
+<p>InPrivate Subscriptions have been removed.</p>
+<p>Add-ons are now disabled while in InPrivate Browsing.</p>
+<p><b>Smart Address Bar</b></p>
+<p>Increased number of typed addresses (up to 12 by default, up to 25 if History and Favorites are turned off).</p>
+<p>Removed AutoComplete Suggestions.</p>
+<p>Turned off Feeds by default. Feeds can be turned on through the AutoComplete Settings dialog in Tools->Internet Options->Content->AutoComplete Settings’.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=lfcnO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=lfcnO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=4rzLO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=4rzLO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=sqmFo"><img src="http://feeds.feedburner.com/~f/ajaxian?i=sqmFo" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/ie8-december-release-and-accessibility/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/ie8-december-release-and-accessibility</feedburner:origLink></item>
+		<item>
+		<title>nib2cib: Use Interface Builder to design your Ajax apps</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/481321047/nib2cib-use-interface-builder-to-design-your-ajax-apps</link>
+		<comments>http://ajaxian.com/archives/nib2cib-use-interface-builder-to-design-your-ajax-apps#comments</comments>
+		<pubDate>Thu, 11 Dec 2008 05:38:03 +0000</pubDate>
+		<dc:creator>Dion Almaer</dc:creator>
+		
+		<category><![CDATA[Apple]]></category>
+
+		<category><![CDATA[Front Page]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5360</guid>
+		<description><![CDATA[Tom Robinson has created an interesting new tool called nib2cib that could lead to you being able to use Interface Builder to create Ajax frontends.
+
+nib2cib is a command line tool designed for converting Cocoa’s nibs and xibs to Cappuccino’s cibs. It is still very much a work in progress, but is a good foundation for [...]]]></description>
+			<content:encoded><![CDATA[<p>Tom Robinson has created an interesting new tool called <a href="http://github.com/280north/cappuccino/wikis/nib2cib">nib2cib</a> that could lead to you being able to use Interface Builder to create Ajax frontends.</p>
+<blockquote><p>
+nib2cib is a command line tool designed for converting Cocoa’s nibs and xibs to Cappuccino’s cibs. It is still very much a work in progress, but is a good foundation for starting to fully support nib-style development on Cappuccino.</p>
+<p>nib2cib converts nibs and xib that you supply to it on the command line to cibs.  Given the new nature of this program, a good place to try it out is with NibApp:</p>
+<ol>
+<li>$ cd /path/to/Cappuccino/Tools/NibApp</li>
+<li>Copy or symlink the Cappuccino Frameworks to this directory</li>
+<li>$ nib2cib HelloWorld.xib</li>
+<li>Open /path/to/Cappuccino/Tools/NibApp/index.html in your favorite browser.</li>
+</ol>
+<p>The basic task behind nib2cib is to convert NS-classes to CP-classes. When you give it a nib or xib file, nib2cib open the file, unarchives the actual NS-objects, converts them, and then archives the CP-equivalents.
+</p></blockquote>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=NmkpO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=NmkpO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=OKzUO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=OKzUO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=mBNHo"><img src="http://feeds.feedburner.com/~f/ajaxian?i=mBNHo" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/nib2cib-use-interface-builder-to-design-your-ajax-apps/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/nib2cib-use-interface-builder-to-design-your-ajax-apps</feedburner:origLink></item>
+		<item>
+		<title>Common Feature Tests</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/480579658/common-feature-tests</link>
+		<comments>http://ajaxian.com/archives/common-feature-tests#comments</comments>
+		<pubDate>Wed, 10 Dec 2008 13:34:46 +0000</pubDate>
+		<dc:creator>Dion Almaer</dc:creator>
+		
+		<category><![CDATA[Front Page]]></category>
+
+		<category><![CDATA[Testing]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5343</guid>
+		<description><![CDATA[Kangax has written about his new Common Feature Tests project:
+
+I have been working on a little personal project of mine for the past couple of months. It’s called CFT and stands for Common Feature Tests. There’s nothing really ground-breaking about it; CFT is simply a set of so-called feature tests for Javascript (or rather for [...]]]></description>
+			<content:encoded><![CDATA[<p>Kangax has <a href="http://thinkweb2.com/projects/prototype/feature-detection-all-the-way/">written about</a> his new <a href="http://yura.thinkweb2.com/cft/">Common Feature Tests</a> project:</p>
+<blockquote>
+<p>I have been working on a little personal project of mine for the past couple of months. It’s called <a href="http://yura.thinkweb2.com/cft/">CFT</a> and stands for Common Feature Tests. There’s nothing really ground-breaking about it; CFT is simply a set of so-called feature tests for Javascript (or rather for any ECMAScript-compliant flavor - be it Microsoft’s JScript, Mozilla’s JavaScript or WebKit’s JavaScriptCore engines).
+</p>
+<p>
+These tests aim to detect all kinds of quirks that modern (and not so modern) browsers exhibit and detect those quirks in the most straight-forward way - using feature detection rather than browser sniffing.  There are <a href="http://www.jibbering.com/faq/faq_notes/not_browser_detect.html">quite</a> <a href="http://peter.michaux.ca/articles/feature-detection-state-of-the-art-browser-scripting">few</a> <a href="https://developer.mozilla.org/En/Browser_Feature_Detection">excellent</a> resources out there on a subject of “browser sniffing vs. feature detection”. It’s definitely worth checking them out.
+</p>
+<p>
+CFT started as an initiative to replace as many unnecessary browser sniffing from <a href="http://prototypejs.org/">Prototype.js</a> as possible (now that I’m part of the core, I feel bound to do something useful for the library :)). The suite was then extended with other tests that seemed not quite trivial to implement.
+</p>
+<p>
+I really hope CFT helps developers eliminate browser sniffing code plaguing their scripts. The project is under an MIT license and is <a href="http://github.com/kangax/cft/">hosted on github</a> (although is still in its infancy).
+</p>
+</blockquote>
+<p>You can walk through the tests to see results, and show the code, such as "WINDOW_EVAL_EVALUATES_IN_GLOBAL_SCOPE":</p>
+<div class="igBar"><a href="javascript:showCodeTxt('javascript-10');">PLAIN TEXT</a></div>
+<div class="syntax_hilite"><span style="color:#000000; font-weight:bold;">JAVASCRIPT:</span>
+<div id="javascript-10">
+<div class="javascript">
+<ol>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;"><span style="color: #003366; font-weight: bold;">function</span> <span style="color:#006600; font-weight:bold;">&#40;</span><span style="color:#006600; font-weight:bold;">&#41;</span> <span style="color:#006600; font-weight:bold;">&#123;</span></div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; <span style="color: #003366; font-weight: bold;">var</span> fnId = <span style="color: #3366CC;">"__eval"</span> + Number<span style="color:#006600; font-weight:bold;">&#40;</span><span style="color: #003366; font-weight: bold;">new</span> Date<span style="color:#006600; font-weight:bold;">&#41;</span>, passed = <span style="color: #003366; font-weight: bold;">false</span>;</div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; window.<span style="color: #006600;">eval</span><span style="color:#006600; font-weight:bold;">&#40;</span><span style="color: #3366CC;">"function "</span> + fnId + <span style="color: #3366CC;">"(){}"</span><span style="color:#006600; font-weight:bold;">&#41;</span>;</div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; passed = fnId <span style="color: #000066; font-weight: bold;">in</span> window;</div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; <span style="color: #000066; font-weight: bold;">if</span> <span style="color:#006600; font-weight:bold;">&#40;</span>passed<span style="color:#006600; font-weight:bold;">&#41;</span> <span style="color:#006600; font-weight:bold;">&#123;</span></div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; &nbsp; &nbsp; <span style="color: #000066; font-weight: bold;">delete</span> window<span style="color:#006600; font-weight:bold;">&#91;</span>fnId<span style="color:#006600; font-weight:bold;">&#93;</span>;</div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; <span style="color:#006600; font-weight:bold;">&#125;</span></div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; <span style="color: #000066; font-weight: bold;">return</span> passed;</div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;"><span style="color:#006600; font-weight:bold;">&#125;</span></div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<p><img src="http://ajaxian.com/wp-content/uploads/cft.png" alt="" title="Common Features Tests Output" width="500" height="248" class="alignnone size-full wp-image-5344" /></p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=OxvKO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=OxvKO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=t0t8O"><img src="http://feeds.feedburner.com/~f/ajaxian?i=t0t8O" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=gdBAo"><img src="http://feeds.feedburner.com/~f/ajaxian?i=gdBAo" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/common-feature-tests/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/common-feature-tests</feedburner:origLink></item>
+		<item>
+		<title>Psych Desktop soon to become more Lucid</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/480503554/psych-desktop-soon-to-become-more-lucid</link>
+		<comments>http://ajaxian.com/archives/psych-desktop-soon-to-become-more-lucid#comments</comments>
+		<pubDate>Wed, 10 Dec 2008 11:43:33 +0000</pubDate>
+		<dc:creator>Dion Almaer</dc:creator>
+		
+		<category><![CDATA[Dojo]]></category>
+
+		<category><![CDATA[Front Page]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5349</guid>
+		<description><![CDATA[We heard from Will of the Psych Desktop project as he ran across our coverage of other Web desktop apps. He shared with us his project that is part of the Dojo Foundation which you can check out here.
+He had some good thoughts, so I thought I would pass them along below:
+
+Psych Desktop is an [...]]]></description>
+			<content:encoded><![CDATA[<p>We heard from Will of the <a href="http://www.psychdesktop.net/">Psych Desktop</a> project as he ran across our coverage of other Web desktop apps. He shared with us his project that is part of the Dojo Foundation <a href="http://www.psychdesktop.net/desktopdev/desktop/index.html">which you can check out here</a>.</p>
+<p>He had some good thoughts, so I thought I would pass them along below:</p>
+<blockquote><p>
+Psych Desktop is an open source web desktop licensed under the AFL. We're a part of the Dojo Foundation, and have been around for around two years I believe. We're going to rename the project as Lucid when we finish our new site.</p>
+<p> Anyways, there are two main ideas behind Lucid. The first is that we aren't just building a clone of a desktop environment, but rather a desktop that was built for the web. For example, in 1.1 we plan on providing an alternate UI made for mobile devices such as an iPhone. Another example of what we want to accomplish would be a photo manager that would easily allow you to publish photos to a public photo gallery. We also want to do the typical things, like a word processor and email, but that's not the main idea behind the desktop.</p>
+<p> The second idea behind it is that we should provide a nice, clean set of APIs for developers to use in their apps. For example, we've got a Registry that is based off of a dojo.data store, so you can plug it directly into a dojox.grid.DataGrid, and you instantly have an editable grid that writes back to the store. Another neat API is the crosstalk API, which allows intercommunication between users. The Messenger app is using this. There's also a sound API that can be used to playback audio. The apps are written in javascript, and don't require any server-side code at all. And of course, there's also a filesystem.</p>
+<p> Right now we're in beta, but we're coming close to our 1.0 release. There's still a bit of work to be done, but it's stable enough for developers to start playing with it. 1.1 is going to be a lot more innovative, but I think 1.0 will be good starting grounds for our expedition.
+</p></blockquote>
+<p>It is cool to see the Will is passionate about the area and is "in it for the long term."</p>
+<p><img src="http://ajaxian.com/wp-content/uploads/luciddesktop.png" alt="" title="luciddesktop" width="500" height="527" class="alignnone size-full wp-image-5350" /></p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=M7CSO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=M7CSO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=rnWXO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=rnWXO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=1gfao"><img src="http://feeds.feedburner.com/~f/ajaxian?i=1gfao" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/psych-desktop-soon-to-become-more-lucid/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/psych-desktop-soon-to-become-more-lucid</feedburner:origLink></item>
+		<item>
+		<title>Pegs: Automate display: fixed++</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/480402072/pegs-automate-display-fixed</link>
+		<comments>http://ajaxian.com/archives/pegs-automate-display-fixed#comments</comments>
+		<pubDate>Wed, 10 Dec 2008 09:16:08 +0000</pubDate>
+		<dc:creator>Dion Almaer</dc:creator>
+		
+		<category><![CDATA[CSS]]></category>
+
+		<category><![CDATA[Front Page]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5341</guid>
+		<description><![CDATA[
+Chris Wetherell (the chap who kicked off Google Reader in his apartment) has posted about Pegs a pattern for having one scrollbar but independent scrolling areas.
+It is more than display: fixed in that it can be smart. If you visit the demo you will see it in action. After the first time, click around on [...]]]></description>
+			<content:encoded><![CDATA[<p><img src="http://massless.org/_imgs/2008/pegs.gif" /></p>
+<p>Chris Wetherell (the chap who kicked off Google Reader in his apartment) has <a href="http://massless.org/pegs/">posted about Pegs</a> a pattern for having one scrollbar but independent scrolling areas.</p>
+<p>It is more than <code>display: fixed</code> in that it can be smart. If you <a href="http://massless.org/pegs">visit the demo</a> you will see it in action. After the first time, click around on the other items such as flipping between sizes of areas. You will see that different areas scroll depending on the config.</p>
+<p>This is definitely something that people will be skeptical about. It feels weird. It isn't what we are used too. The demo app also is jumpy and acts a little strange, but it is interesting to play with these ideas.</p>
+<p>This implementation uses jQuery, and you can <a href="http://massless.org/pegs/scroller-0.9.mini.js">enjoy some minified source</a>.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=ZYxRO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=ZYxRO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=2MnsO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=2MnsO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=OhP0o"><img src="http://feeds.feedburner.com/~f/ajaxian?i=OhP0o" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/pegs-automate-display-fixed/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/pegs-automate-display-fixed</feedburner:origLink></item>
+		<item>
+		<title>YUI3 PR2 now available - extendable with own widgets and plugins</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/480387161/yui3-pr2-now-available-extendable-with-own-widgets-and-plugins</link>
+		<comments>http://ajaxian.com/archives/yui3-pr2-now-available-extendable-with-own-widgets-and-plugins#comments</comments>
+		<pubDate>Wed, 10 Dec 2008 08:53:16 +0000</pubDate>
+		<dc:creator>Chris Heilmann</dc:creator>
+		
+		<category><![CDATA[Framework]]></category>
+
+		<category><![CDATA[Front Page]]></category>
+
+		<category><![CDATA[Section]]></category>
+
+		<category><![CDATA[Yahoo!]]></category>
+
+		<category><![CDATA[Widgets]]></category>
+
+		<category><![CDATA[yui]]></category>
+
+		<category><![CDATA[yui3]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5352</guid>
+		<description><![CDATA[Over at the YUI blog Satyen Desai just announced the release of YUI3 PR2. The main changes are that the widgets from YUI2 are now all getting ported over to the new, leaner YUI3 architecture and that the team made it much easier to write your own YUI widgets and plugins extending the existing ones.
+
+Those [...]]]></description>
+			<content:encoded><![CDATA[<p>Over at the <a href="http://yuiblog.com/blog/2008/12/09/yui3pr2-2/">YUI blog</a> Satyen Desai just announced the release of <a href="http://yuilibrary.com/downloads/">YUI3 PR2</a>. The main changes are that the widgets from YUI2 are now all getting ported over to the new, leaner YUI3 architecture and that the team made it much easier to write your own YUI widgets and plugins extending the existing ones.</p>
+<p><img src="http://ajaxian.com/wp-content/uploads/terms-yui3-20081209-142330.png" alt="YUI3 widget architecture" title="terms-yui3-20081209-142330" width="189" height="300" class="aligncenter size-medium wp-image-5353" /></p>
+<p>Those who played with the YUI2 Rich Text Editor already got a flavour of how that works. If you are interested in the overall direction of YUI3, <a href="http://video.yahoo.com/watch/3711767/10207432">check out the video explaining YUI3's ideas and plans</a>.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=no9TO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=no9TO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=5tpxO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=5tpxO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=o96yo"><img src="http://feeds.feedburner.com/~f/ajaxian?i=o96yo" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/yui3-pr2-now-available-extendable-with-own-widgets-and-plugins/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/yui3-pr2-now-available-extendable-with-own-widgets-and-plugins</feedburner:origLink></item>
+		<item>
+		<title>WaveMaker IDE offers deployment to Amazon</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/480322501/wavemaker-ide-offers-deployment-to-amazon</link>
+		<comments>http://ajaxian.com/archives/wavemaker-ide-offers-deployment-to-amazon#comments</comments>
+		<pubDate>Wed, 10 Dec 2008 07:40:35 +0000</pubDate>
+		<dc:creator>Dion Almaer</dc:creator>
+		
+		<category><![CDATA[Dojo]]></category>
+
+		<category><![CDATA[Front Page]]></category>
+
+		<category><![CDATA[Utility]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5347</guid>
+		<description><![CDATA[WaveMaker, the IDE that Dojo helped build (with a ton of work from the team) has added support for cloud deployment to Amazon:
+
+The biggest problem with cloud development platforms to date has been lack of portability. For example, what if I want to move my cloud application from Coghead to some other platform? Answer - [...]]]></description>
+			<content:encoded><![CDATA[<p>WaveMaker, the IDE that Dojo helped build (with a ton of work from the team) has <a href="http://www.keeneview.com/2008/12/wavemaker-launches-first-open-source.html">added support for cloud deployment to Amazon</a>:</p>
+<blockquote><p>
+The biggest problem with cloud development platforms to date has been lack of portability. For example, what if I want to move my cloud application from <a href="http://www.coghead.com/">Coghead</a> to some other platform? Answer - you can't.</p>
+<p>WaveMaker changed that today by releasing the first open-source IDE for the cloud. With WaveMaker, you are no longer locked in to developing for a particular cloud. You can access our studio by downloading our open source version or access the cloud version of the studio directly (hosted on <a href="http://aws.amazon.com/ec2/">Amazon EC2</a>).</p>
+<p>On EC2, we are using <a href="http://www.rightscale.com/">Rightscale</a> to manage scaling, load balancing and failover for our multi-tenant studio. We have also integrated with <a href="http://www.elastra.com/">Elastra</a> to provide scalable database connectivity.</p>
+<p>Here are some things you can do with WaveMaker's cloud edition
+<ul>
+<li><span style="font-weight: bold;">On-site or on demand development</span>: create applications with the open source studio (download to your desktop).</li>
+<li><span style="font-weight: bold;">Portable cloud deployment</span>: with one click, deploy applications to the cloud, to the desktop or to the data center.</li>
+<li><span style="font-weight: bold;">Open source cloud IDE</span>: migrate applications from the hosted cloud version to the free open source version whenever you want.</li>
+</ul>
+<p>The WaveMaker cloud edition beta is free for development. Deployment will be through a paid Amazon machine image (AMI), with pricing starting at $0.30 per hour.
+</p></blockquote>
+<p>Very nice indeed! <a href="http://www.wavemaker.com/cloud">Give it a butchers!</a></p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=KQN2O"><img src="http://feeds.feedburner.com/~f/ajaxian?i=KQN2O" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=VJ6RO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=VJ6RO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=XcnQo"><img src="http://feeds.feedburner.com/~f/ajaxian?i=XcnQo" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/wavemaker-ide-offers-deployment-to-amazon/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/wavemaker-ide-offers-deployment-to-amazon</feedburner:origLink></item>
+		<item>
+		<title>You Leaked on my JavaScript!</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/479480558/you-leaked-on-my-javascript</link>
+		<comments>http://ajaxian.com/archives/you-leaked-on-my-javascript#comments</comments>
+		<pubDate>Tue, 09 Dec 2008 12:26:24 +0000</pubDate>
+		<dc:creator>Dion Almaer</dc:creator>
+		
+		<category><![CDATA[Front Page]]></category>
+
+		<category><![CDATA[JavaScript]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5339</guid>
+		<description><![CDATA[As soon as I read John's post on  JavaScript Language Abstractions I knew that it would draw a lot of chatter and fuzz. John started with:
+
+Pyjamas, GWT, and Objective-J all hinge around a central concept: Abstracting away the authoring of JavaScript-heavy web applications by allowing the developer to program entirely in their natively language [...]]]></description>
+			<content:encoded><![CDATA[<p>As soon as I read John's post on <a href="http://ejohn.org/blog/javascript-language-abstractions/"> JavaScript Language Abstractions</a> I knew that it would draw a lot of chatter and fuzz. John started with:</p>
+<blockquote><p>
+Pyjamas, GWT, and Objective-J all hinge around a central concept: Abstracting away the authoring of JavaScript-heavy web applications by allowing the developer to program entirely in their natively language (be it Python, Java, or an Objective-C-like-language accordingly).</p>
+<p>This is a large abstraction - much more so than what is provided by most JavaScript libraries - you are programming in another language which is outputting JavaScript code. You are likely to never see a DOM object or any pieces of the native JavaScript language.</p>
+<p>I worry about large abstractions like this for a number of reasons.</p>
+<p>When you use a pure-JavaScript library (such as jQuery, Prototype, Dojo, Yahoo UI, etc.) you are still programming using the JavaScript language. In the case of jQuery a large number of users, who have either never programmed JavaScript before or never programmed before, acquire a good grasp of how to use JavaScript - accented by the use of the library. A pure JavaScript library makes annoying tasks simple, the largest of which being cross-browser support. It does nothing to dilute the quality of the JavaScript-authoring experience. In fact I would argue that JavaScript libraries do much to give JavaScript a particular style and feel. Code written with Prototype feels very different from code written with jQuery - and this is fine since it's giving the user the option to develop in the JavaScript language how they best see fit.
+</p></blockquote>
+<p>Charles Jolley of SproutCore <a href="http://www.okito.net/post/63581631/john-resig-javascript-language-abstractions">came out with support</a>:</p>
+<blockquote><p>
+I’ve written about this myself on the SproutCore blog before, but I think it bears repeating:  The native programming language of the web browser is JavaScript.  To write the best software possible, you need to embrace the native tools of the platform you are working on.</p>
+<p>Michealangelo said that to him a sculpture already existed within a piece of marble.  His job was to simply remove the parts that didn’t belong.</p>
+<p>Like any creative endeavor, writing great software is as much about embracing the material you are working with as it is about building something new.
+</p></blockquote>
+<p><b>Everybody is writing “abstractions” around JavaScript</b></p>
+<p>That came from Francisco of 280 North / Objective-J in  <a href="http://cappuccino.org/discuss/2008/12/08/on-leaky-abstractions-and-objective-j/">On Leaky Abstractions and Objective-J</a>.</p>
+<p>This is a great, very thoughful post that argues that even Ajax libraries are JS abstractions too. He doesn't just talk about it, he shows jQuery, Prototype, and Dojo code, as well as his own Objective-J to get his point across. He then goes on to talk about why they took the JavaScript++ approach (adding actual syntax), concluding with:</p>
+<blockquote><p>
+To me what we’ve done with Objective-J and Cappuccino seems inevitable.  Even the most conservative major JavaScript libraries can’t get away without adding features to the language, and we’ve simply taken the next logical step with Objective-J.  Similarly, Cappuccino is a tool that allows you to stop thinking about web pages and browser incompatibilities, and instead focus on the complex problems presented by the challenge of creating full-on applications on the web. As we’ve said <a href="http://cappuccino.org/discuss/2008/10/21/web-pages/">countless</a> <a href="http://cappuccino.org/learn/">times</a>, Cappuccino isn’t for everything. All of this abstraction isn’t necessary if you’re simply trying to add dynamic elements to a site like bankofamerica or digg. Cappuccino is for building rich applications in the browser, a small minority in the web world today. We believe that this is where things are headed, and we designed Cappuccino specifically to get <em>us</em> there.
+</p></blockquote>
+<p>JavaScript is a malleable language. One that lends itself to the creation of DSLs. This is why Dojo code can look so different to jQuery code. The lack of a class system and an import system means that a lot of libraries reinvent the wheel, in their own way.</p>
+<p>Abstractions are an interesting beast. Go with what feels right to you. I personally like the "create a DSL in the language itself and allow me to sneak out" style versus a new language, but that is just me.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=7p06O"><img src="http://feeds.feedburner.com/~f/ajaxian?i=7p06O" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=tv6zO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=tv6zO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=uJYyo"><img src="http://feeds.feedburner.com/~f/ajaxian?i=uJYyo" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/you-leaked-on-my-javascript/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/you-leaked-on-my-javascript</feedburner:origLink></item>
+		<item>
+		<title>Appcelerator Titanium: Breathing AIR for the Open Web</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/479466717/appcelerator-titanium-breathing-air-for-the-open-web</link>
+		<comments>http://ajaxian.com/archives/appcelerator-titanium-breathing-air-for-the-open-web#comments</comments>
+		<pubDate>Tue, 09 Dec 2008 12:00:53 +0000</pubDate>
+		<dc:creator>Dion Almaer</dc:creator>
+		
+		<category><![CDATA[Appcelerator]]></category>
+
+		<category><![CDATA[Front Page]]></category>
+
+		<category><![CDATA[Podcasts]]></category>
+
+		<category><![CDATA[Runtime]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5328</guid>
+		<description><![CDATA[The Appcelerator folks have a big announcement today. They are announcing an early release of Appcelerator Titanium which is easiest if you think of it as an "Open Web version of Adobe AIR" in that it is a runtime that has extended APIs that allows developers to create applications using Web technology.
+It is built glueing [...]]]></description>
+			<content:encoded><![CDATA[<p>The Appcelerator folks have a big announcement today. They are announcing an early release of <a href="http://titaniumapp.com/">Appcelerator Titanium</a> which is easiest if you think of it as an "Open Web version of Adobe AIR" in that it is a runtime that has extended APIs that allows developers to create applications using Web technology.</p>
+<p>It is built glueing and moulding WebKit, Chromium, and Gears in very interesting ways indeed. A lot of tough work was done in getting the glue to bind to graphics toolkits on various platforms, and then the work to tear apart Gears and allow it to take in new modules which implement APIs such as:</p>
+<ul>
+<li>Native windowing (transparent custom chrome)</li>
+<li>Direct file system access</li>
+<li>Database integration and storage</li>
+<li>Desktop notifications</li>
+<li>Application and system menu control</li>
+<li>Geo-location</li>
+</ul>
+<p>Examples that show off the <code>ti</code> APIs are <a href="http://titaniumapp.com/demo">available</a>. You will note that some of these do not use the Appcelerator Ajax library. This shows that Titanium does not rely on the Appcelerator SDK itself (although you can of course do so!).</p>
+<p><b>Listen to the podcast</b></p>
+<p>We sat down with some of the Appcelerator team, Jeff Haynie and Nolan Wright, and had a detailed conversation with them about why they did this, how they did it, and what it means for developers. </p>
+<p>We walk through the implementation, and how developers actually create applications.</p>
+<p>We have the <a href="http://media.ajaxian.com/podcasts/audibleajax-32-titanium.mp3">audio directly available</a>, or you can <a href="http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=79427931">subscribe to the podcast</a>.</p>
+<p><b>Some details</b></p>
+<p>A good way to really delve into the details is looking at a sample application. There are some good demos as we mentioned, but the Web 2.0 hello world has to be <a href="http://tweetanium.com/">Tweetanium</a> a twitter client.</p>
+<p><img src="http://ajaxian.com/wp-content/uploads/tweetanium.png" alt="" title="Tweetanium" width="362" height="764" class="alignnone size-full wp-image-5333" /></p>
+<p><a href="http://titaniumapp.com/tweetanium_source.zip">Download the source</a> and let's walk through it quick.</p>
+<p>Firstly, you will notice the Rakefile, which gives away the Ruby side of the house here. In fact, the build system feels rails-like. If you open <code>config/tiapp.xml</code> you will see a file that is like the Adobe AIR manifest, describing the application. The windows for the app are defined here, for example:</p>
+<div class="igBar"><a href="javascript:showCodeTxt('xml-14');">PLAIN TEXT</a></div>
+<div class="syntax_hilite"><span style="color:#000000; font-weight:bold;">XML:</span>
+<div id="xml-14">
+<div class="xml">
+<ol>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;"><span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;window<span style="font-weight: bold; color: black;">&gt;</span></span></span></div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; &nbsp;<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;id<span style="font-weight: bold; color: black;">&gt;</span></span></span>main<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;/id<span style="font-weight: bold; color: black;">&gt;</span></span></span></div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; &nbsp;<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;title<span style="font-weight: bold; color: black;">&gt;</span></span></span>Tweetanium<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;/title<span style="font-weight: bold; color: black;">&gt;</span></span></span></div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; &nbsp;<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;url<span style="font-weight: bold; color: black;">&gt;</span></span></span>app://main.html<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;/url<span style="font-weight: bold; color: black;">&gt;</span></span></span></div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; &nbsp;<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;width<span style="font-weight: bold; color: black;">&gt;</span></span></span>350<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;/width<span style="font-weight: bold; color: black;">&gt;</span></span></span></div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; &nbsp;<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;height<span style="font-weight: bold; color: black;">&gt;</span></span></span>750<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;/height<span style="font-weight: bold; color: black;">&gt;</span></span></span></div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; &nbsp;<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;maximizable<span style="font-weight: bold; color: black;">&gt;</span></span></span>false<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;/maximizable<span style="font-weight: bold; color: black;">&gt;</span></span></span></div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; &nbsp;<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;minimizable<span style="font-weight: bold; color: black;">&gt;</span></span></span>false<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;/minimizable<span style="font-weight: bold; color: black;">&gt;</span></span></span></div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; &nbsp;<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;closeable<span style="font-weight: bold; color: black;">&gt;</span></span></span>false<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;/closeable<span style="font-weight: bold; color: black;">&gt;</span></span></span></div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; &nbsp;<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;resizable<span style="font-weight: bold; color: black;">&gt;</span></span></span>false<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;/resizable<span style="font-weight: bold; color: black;">&gt;</span></span></span></div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; &nbsp;<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;chrome</span> <span style="color: #000066;">scrollbars</span>=<span style="color: #ff0000;">"false"</span><span style="font-weight: bold; color: black;">&gt;</span></span>true<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;/chrome<span style="font-weight: bold; color: black;">&gt;</span></span></span></div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp; &nbsp;<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;transparency<span style="font-weight: bold; color: black;">&gt;</span></span></span>1.0<span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;/transparency<span style="font-weight: bold; color: black;">&gt;</span></span></span></div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;"><span style="color: #009900;"><span style="font-weight: bold; color: black;">&lt;/window<span style="font-weight: bold; color: black;">&gt;</span></span></span></div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<p>Now, let's open up <code>public/javascripts/main.js</code> to see the bulk of the application logic itself.</p>
+<p>Here you will see usage of some of the APIs. Here is how it ties into the Growl (or equivilent) notification system:</p>
+<div class="igBar"><a href="javascript:showCodeTxt('javascript-15');">PLAIN TEXT</a></div>
+<div class="syntax_hilite"><span style="color:#000000; font-weight:bold;">JAVASCRIPT:</span>
+<div id="javascript-15">
+<div class="javascript">
+<ol>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;"><span style="color: #003366; font-weight: bold;">var</span> notification = <span style="color: #003366; font-weight: bold;">new</span> ti.<span style="color: #006600;">Notification</span>;</div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">notification.<span style="color: #006600;">setTitle</span><span style="color:#006600; font-weight:bold;">&#40;</span><span style="color: #3366CC;">'Favorite'</span><span style="color:#006600; font-weight:bold;">&#41;</span>;</div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">notification.<span style="color: #006600;">setMessage</span><span style="color:#006600; font-weight:bold;">&#40;</span><span style="color: #3366CC;">'Your favorite request was successful'</span><span style="color:#006600; font-weight:bold;">&#41;</span>;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; notification.<span style="color: #006600;">setIcon</span><span style="color:#006600; font-weight:bold;">&#40;</span><span style="color: #3366CC;">'app://images/notification.png'</span><span style="color:#006600; font-weight:bold;">&#41;</span>;</div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">notification.<span style="color: #006600;">show</span><span style="color:#006600; font-weight:bold;">&#40;</span><span style="color:#006600; font-weight:bold;">&#41;</span>;</div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<p>The database API will look very similar to you (like Gears), but you access it via <code>var db = new ti.Database;</code>.</p>
+<p>The app plays sounds when you get Tweets, all via <code>var sound = ti.Media.createSound(path);</code>.</p>
+<p>Then you have the tray menu access via <code>var menu = ti.Menu.createTrayMenu(trayIcon,null,function(sysmenu) { ... });</code>.</p>
+<p>And you can get access to the native windows, such as <code>i.Window.currentWindow.isVisible())</code>.</p>
+<p>For fine control over dragging you simple tie into <code>ti.Extras.setDraggableRegionHandler(..)</code>.</p>
+<p>This is exciting stuff, and I know that the team is listening to hear your thoughts.</p>
+<p>In a related note, I just <a href="http://almaer.com/blog/appdiscover">posted</a> on an <a href="http://almaer.com/firefox/appdiscover/">App Discover</a> add-on that shows how we could add discoverability of applications like Titanium apps (as well as Greasemonkey, add-ons, plugins, and more).</p>
+<p>To link to a Titanium app such as Tweetanium you would simple add a link tag like this:</p>
+<div class="igBar"><a href="javascript:showCodeTxt('html-16');">PLAIN TEXT</a></div>
+<div class="syntax_hilite"><span style="color:#000000; font-weight:bold;">HTML:</span>
+<div id="html-16">
+<div class="html">
+<ol>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;"><span style="color: #009900;"><a href="http://december.com/html/4/element/link.html"><span style="color: #000000; font-weight: bold;">&lt;link</span></a> <span style="color: #000066;">rel</span>=<span style="color: #ff0000;">"application"</span> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">"application/vnd.appcelerator-titanium-app-package+zip"</span> <span style="color: #000066;">title</span>=<span style="color: #ff0000;">"Tweetanium Appcelerator Titanium Twitter App"</span> <span style="color: #000066;">href</span>=<span style="color: #ff0000;">"http://titaniumapp.com/tweetanium.dmg"</span> /<span style="color: #000000; font-weight: bold;">&gt;</span></a></span></div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<p><img src="http://ajaxian.com/wp-content/uploads/tweetaniuminstall.png" alt="" title="Easy to install" width="444" height="396" class="alignnone size-full wp-image-5334" /></p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=Tf22O"><img src="http://feeds.feedburner.com/~f/ajaxian?i=Tf22O" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=2VwGO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=2VwGO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=BaQjo"><img src="http://feeds.feedburner.com/~f/ajaxian?i=BaQjo" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/appcelerator-titanium-breathing-air-for-the-open-web/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/appcelerator-titanium-breathing-air-for-the-open-web</feedburner:origLink></item>
+		<item>
+		<title>YUI Library, YUI Doc, and Github</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/479343207/yui-library-yui-doc-and-github</link>
+		<comments>http://ajaxian.com/archives/yui-library-yui-doc-and-github#comments</comments>
+		<pubDate>Tue, 09 Dec 2008 09:15:07 +0000</pubDate>
+		<dc:creator>Dion Almaer</dc:creator>
+		
+		<category><![CDATA[Front Page]]></category>
+
+		<category><![CDATA[Yahoo!]]></category>
+
+		<category><![CDATA[opensource]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5337</guid>
+		<description><![CDATA[
+Eric Miraglia and our friends at Yahoo! have announced YUI Doc, "a python-based documentation tool that generates API documentation for JavaScript code. YUI Doc was developed by Adam Moore, one of the principal engineers on the YUI project since its inception, to support YUI’s API-level documentation."
+
+It is a comment-driven system in which documentation is parsed [...]]]></description>
+			<content:encoded><![CDATA[<p><img src="http://yuiblog.com/assets/yui-git-by-davglass-20081208-135921.jpg" style="border: none; padding: 8px; float: right;" /></p>
+<p>Eric Miraglia and our friends at Yahoo! have announced <a href="http://yuiblog.com/blog/2008/12/08/yuidoc/">YUI Doc</a>, "a python-based documentation tool that generates API documentation for JavaScript code. YUI Doc was developed by Adam Moore, one of the principal engineers on the YUI project since its inception, to support YUI’s API-level documentation."</p>
+<blockquote><p>
+It is a comment-driven system in which documentation is parsed from comment blocks that describe the structure of your code. Unlike some analagous systems, YUI Doc is designed to work purely from comments; as a result, there is no idiom or code pattern with which the tool is incompatible.
+</p></blockquote>
+<p>But, there is more. <a href="http://yuilibrary.com/">YUI Library</a> is out there, and it includes a <a href="http://yuilibrary.com/gitfaq/">link to the Git documentation for how to get the YUI source</a>. Congrats to the YUI team for getting their code into a public repository for us to enjoy. This is a big deal for the project, and the community.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=2TSHO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=2TSHO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=csv7O"><img src="http://feeds.feedburner.com/~f/ajaxian?i=csv7O" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=STUqo"><img src="http://feeds.feedburner.com/~f/ajaxian?i=STUqo" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/yui-library-yui-doc-and-github/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/yui-library-yui-doc-and-github</feedburner:origLink></item>
+		<item>
+		<title>Native Client: Open ActiveX?</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/479185048/native-client-open-activex</link>
+		<comments>http://ajaxian.com/archives/native-client-open-activex#comments</comments>
+		<pubDate>Tue, 09 Dec 2008 05:10:54 +0000</pubDate>
+		<dc:creator>Dion Almaer</dc:creator>
+		
+		<category><![CDATA[Front Page]]></category>
+
+		<category><![CDATA[Google]]></category>
+
+		<category><![CDATA[c]]></category>
+
+		<category><![CDATA[nativeclient]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5331</guid>
+		<description><![CDATA[
+Google has released a cool research project called Native Client, a new browser plugin (how many plugins now? gears, toolbar, lively [for awhile], earth, ...) that allows you to compile with a special GCC compiler down to x86 that can run in the browser. IE is missing so far, but remember this is a research [...]]]></description>
+			<content:encoded><![CDATA[<p><img src="http://nativeclient.googlecode.com/svn/data/site/xaos-200.png" /></p>
+<p>Google has released a cool research project called <a href="http://google-code-updates.blogspot.com/2008/12/native-client-technology-for-running.html">Native Client</a>, a new browser plugin (how many plugins now? gears, toolbar, lively [for awhile], earth, ...) that allows you to compile with a special GCC compiler down to x86 that can run in the browser. IE is missing so far, but remember this is a research preview (not sure how 64 bit comes in here etc).</p>
+<p>Joel Webber had an interesting comment:</p>
+<blockquote><p>
+"We ported an internal implementation of H.264 video decoding [...] Performance of the original and NaCl versions were comparable and limited by video frame-rate". Think about this for a second -- it makes it entirely feasible to download untrusted software video codecs (among other things) to the browser. I don't care how fast you make Javascript; I'm pretty sure it will never be able to do this.
+</p></blockquote>
+<p>Others are talking about a marketplace for addons. It seems like the first demos are always the porting of games. We saw the same thing with <a href="http://labs.adobe.com/technologies/alchemy/">Alchemy</a> which allows C/C++ to run in the Flash VM.</p>
+<p>With JavaScript speeding up, and our abstractions getting better and better, I don't see people writing entire Web applications in C, however this is a new extension mechanism that has been added to the toolbox. If you need to integrate with legacy code, or need access in a way you couldn't get done before, this could be for you.</p>
+<p>Maybe it will be a good bridge technology that we can use, at least before we get richer and richer APIs into the browser itself (e.g. implement some of HTML 5 and new APIs using this until browser support).</p>
+<p>What do you think?</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=F7ULO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=F7ULO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=amIOO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=amIOO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=zPIgo"><img src="http://feeds.feedburner.com/~f/ajaxian?i=zPIgo" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/native-client-open-activex/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/native-client-open-activex</feedburner:origLink></item>
+		<item>
+		<title>pyQuery: Same API, but with a snake.</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/478423618/pyquery</link>
+		<comments>http://ajaxian.com/archives/pyquery#comments</comments>
+		<pubDate>Mon, 08 Dec 2008 12:45:26 +0000</pubDate>
+		<dc:creator>Dion Almaer</dc:creator>
+		
+		<category><![CDATA[Front Page]]></category>
+
+		<category><![CDATA[Python]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5320</guid>
+		<description><![CDATA[jQuery came first, but then we have seen others such as pQuery.
+Now we have pyQuery which brings the same great taste API to Python. The author Olivier Lauzanne explains:
+
+yquery allows you to make jquery queries on xml documents. The API is as much as possible the similar to jquery. pyquery uses lxml for fast xml [...]]]></description>
+			<content:encoded><![CDATA[<p>jQuery came first, but then we have seen others such as <a href="http://ajaxian.com/archives/pquery-where-p-perl">pQuery</a>.</p>
+<p>Now we have <a href="http://pypi.python.org/pypi/pyquery">pyQuery</a> which brings the same great <strike>taste</strike> API to Python. The author Olivier Lauzanne explains:</p>
+<blockquote><p>
+yquery allows you to make jquery queries on xml documents. The API is as much as possible the similar to jquery. pyquery uses lxml for fast xml and html manipulation.</p>
+<p>This is not (or at least not yet) a library to produce or interact with javascript code. I just liked the jquery API and I missed it in python so I told myself "Hey let's make jquery in python". This is the result.</p>
+<p>It can be used for many purposes, one idea that I might try in the future is to use it for templating with pure http templates that you modify using pyquery.</p>
+<p>You can use the PyQuery class to load an xml document from a string, a lxml document, from a file or from an url:</p>
+<div class="igBar"><a href="javascript:showCodeTxt('python-18');">PLAIN TEXT</a></div>
+<div class="syntax_hilite"><span style="color:#000000; font-weight:bold;">PYTHON:</span>
+<div id="python-18">
+<div class="python">
+<ol>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&gt;&gt;&gt; <span style="color: #ff7700;font-weight:bold;">from</span> pyquery <span style="color: #ff7700;font-weight:bold;">import</span> PyQuery</div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&gt;&gt;&gt; <span style="color: #ff7700;font-weight:bold;">from</span> lxml <span style="color: #ff7700;font-weight:bold;">import</span> etree</div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&gt;&gt;&gt; d = PyQuery<span style="color:#000000; font-weight:bold;">&#40;</span><span style="color: #483d8b;">"&lt;html&gt;&lt;/html&gt;"</span><span style="color:#000000; font-weight:bold;">&#41;</span></div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&gt;&gt;&gt; d = PyQuery<span style="color:#000000; font-weight:bold;">&#40;</span>etree.<span style="color: black;">fromstring</span><span style="color:#000000; font-weight:bold;">&#40;</span><span style="color: #483d8b;">"&lt;html&gt;&lt;/html&gt;"</span><span style="color:#000000; font-weight:bold;">&#41;</span><span style="color:#000000; font-weight:bold;">&#41;</span></div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&gt;&gt;&gt; d = PyQuery<span style="color:#000000; font-weight:bold;">&#40;</span>url=<span style="color: #483d8b;">'http://google.com/'</span><span style="color:#000000; font-weight:bold;">&#41;</span></div>
+</li>
+<li style="font-family: 'Courier New', Courier, monospace; color: black; font-weight: normal; font-style: normal;color:#3A6A8B;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&gt;&gt;&gt; d = PyQuery<span style="color:#000000; font-weight:bold;">&#40;</span>filename=path_to_html_file<span style="color:#000000; font-weight:bold;">&#41;</span></div>
+</li>
+<li style="font-weight: bold;color:#26536A;">
+<div style="color:#000000; font-family: 'Courier New', Courier, monospace; font-weight: normal;">&nbsp;</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<blockquote>
+<p>We also saw new posts on <a href="http://pyjs.org/">pyjamas</a>, the JS emitter (a la GWT for Java) that <a href="http://ajaxian.com/archives/pyjamas-pythons-answer-to-gwt">we covered awhile back</a>.</p>
+<p>Add to that the fantastic week that the pythonistas have had as they laud over us with <a href="http://www.python.org/download/releases/3.0/">Python 3000</a> having a final release (which will kick in updates to libraries that are needed to make this backwards not so compatible upgrade viable). It gives a kick in the backside to Perl, Ruby, Java, and even us JS folk :)</p></blockquote>
+</blockquote>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=O4HAO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=O4HAO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=QtKtO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=QtKtO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=lmzgo"><img src="http://feeds.feedburner.com/~f/ajaxian?i=lmzgo" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/pyquery/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/pyquery</feedburner:origLink></item>
+		<item>
+		<title>Open Web Podcast 6: Sizzling Open FX</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/478353110/open-web-podcast6</link>
+		<comments>http://ajaxian.com/archives/open-web-podcast6#comments</comments>
+		<pubDate>Mon, 08 Dec 2008 11:01:31 +0000</pubDate>
+		<dc:creator>Dion Almaer</dc:creator>
+		
+		<category><![CDATA[Front Page]]></category>
+
+		<category><![CDATA[OpenWebPodcast]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5326</guid>
+		<description><![CDATA[re-posted from the Open Web Podcast blog
+I have moved to Mozilla along with my long time friend cohort and collaborator, Ben Galbraith. He joins us on this podcast, along with Alex, who joins us as a Noogler.
+You can download the podcast directly (OGG format too), or subscribe to the series, including via iTunes).
+We get back [...]]]></description>
+			<content:encoded><![CDATA[<p><em><a href="http://openwebpodcast.com/sizzling-open-fx">re-posted from the Open Web Podcast blog</a></em></p>
+<p>I have moved to Mozilla along with my long time friend cohort and collaborator, Ben Galbraith. He joins us on this podcast, along with Alex, who joins us as a Noogler.</p>
+<p>You can <a href="http://open-web-podcast.googlecode.com/files/openwebpodcast-20081207.mp3">download the podcast directly</a> (<a href="http://open-web-podcast.googlecode.com/files/openwebpodcast-20081207.ogg">OGG format too</a>), or <a href="http://feeds.feedburner.com/OpenWebPodcast">subscribe to the series</a>, including via <a href="http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=287711499">iTunes</a>).</p>
+<p>We get back in the saddle as we discuss:</p>
+<ul>
+<li>Alex's move to Google, and the Chrome team</li>
+<li>John's work with Sizzle and working the various JavaScript libraries</li>
+<li>JavaFX and the lack of buzz</li>
+<li>Whether Java itself, now it is more open source, can be part of the Open Web family</li>
+<li>The video problem, and what we can do.</li>
+</ul>
+<p>It was interesting to have Alex talk about how the Java plugin itself is far from Open, and what that means, as well as the issue with patents and video, which has a way of depressing me every time I think about it. I don't want to meet a piranha.</p>
+<p>What are your thoughts?</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=jTGOO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=jTGOO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=jil8O"><img src="http://feeds.feedburner.com/~f/ajaxian?i=jil8O" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=J6Fno"><img src="http://feeds.feedburner.com/~f/ajaxian?i=J6Fno" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/open-web-podcast6/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/open-web-podcast6</feedburner:origLink></item>
+		<item>
+		<title>Massively parallel crowd sourced JavaScript app server; SETI for JS</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/478346224/massively-parallel-crowd-sourced-javascript-app-server-seti-for-js</link>
+		<comments>http://ajaxian.com/archives/massively-parallel-crowd-sourced-javascript-app-server-seti-for-js#comments</comments>
+		<pubDate>Mon, 08 Dec 2008 10:56:27 +0000</pubDate>
+		<dc:creator>Dion Almaer</dc:creator>
+		
+		<category><![CDATA[Front Page]]></category>
+
+		<category><![CDATA[JavaScript]]></category>
+
+		<category><![CDATA[Server]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5322</guid>
+		<description><![CDATA[Malte Ubl is having a lot of fun here :)  He has created a "massively parallel crowd-sourced JavaScript app server cloud" a.k.a. SETI for running JavaScript code.
+This is how it works:
+
+When a user makes a request to the site
+...the request is handled by a Google App Engine application
+...that puts the request into a request [...]]]></description>
+			<content:encoded><![CDATA[<p>Malte Ubl is having a lot of fun here :)  He has created a <a href="http://joose-js.blogspot.com/2008/12/massively-parallel-crowd-sourced.html">"massively parallel crowd-sourced JavaScript app server cloud"</a> a.k.a. SETI for running JavaScript code.</p>
+<p>This is how it works:</p>
+<ul>
+<li>When a user makes a request to the site</li>
+<li>...the request is handled by a Google App Engine application</li>
+<li>...that puts the request into a request queue</li>
+<li>Meanwhile on another computer that runs the JavaScript app server within a <a href="http://code.google.com/apis/gears/api_workerpool.html">Gears worker</a> within the browser</li>
+<li>...a <a href="http://en.wikipedia.org/wiki/Comet_%28programming%29#Ajax_with_long_polling">comet-client</a> maintains a pseudo permanent connection to the App Engine app</li>
+<li>...looks into the request queue and starts to process the request</li>
+<li>...when it is finished it sends the response to the App Engine app</li>
+<li>...which immediately send the request back to the client that originated the request in the first place.</li>
+</ul>
+<p>Now he just needs to wrap it in a screen saver, so your machine can be acting as a service endpoint while you are not using the cycles. Wow ;)</p>
+<p><a href="http://js-cloud.appspot.com/static/client.html">Run the client</a> and become a server.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=1yzqO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=1yzqO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=TjGwO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=TjGwO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=KvMQo"><img src="http://feeds.feedburner.com/~f/ajaxian?i=KvMQo" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/massively-parallel-crowd-sourced-javascript-app-server-seti-for-js/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/massively-parallel-crowd-sourced-javascript-app-server-seti-for-js</feedburner:origLink></item>
+		<item>
+		<title>The IE 6 Equation. Finally some math to mask the pain</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/478184571/ie6-equation</link>
+		<comments>http://ajaxian.com/archives/ie6-equation#comments</comments>
+		<pubDate>Mon, 08 Dec 2008 06:59:48 +0000</pubDate>
+		<dc:creator>Dion Almaer</dc:creator>
+		
+		<category><![CDATA[Browsers]]></category>
+
+		<category><![CDATA[Front Page]]></category>
+
+		<category><![CDATA[IE]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5324</guid>
+		<description><![CDATA[
+That is the equation that Jeremy Keith shares with us on his article for this years 24ways. He is discussing IE6, which he sets to the variable of $web_designer_nemesis (variable used to equal NN4).
+He looks at the sliding scale of support for the browser:
+
+
+Block IE6 users from your site.
+Develop with web standards and don’t spend [...]]]></description>
+			<content:encoded><![CDATA[<p><img src="http://media.24ways.org/2008/08/equation.gif" /></p>
+<p>That is the equation that Jeremy Keith shares with us on his <a href="http://24ways.org/2008/the-ie6-equation">article for this years 24ways</a>. He is discussing IE6, which he sets to the variable of <code>$web_designer_nemesis</code> (variable used to equal NN4).</p>
+<p>He looks at the sliding scale of support for the browser:</p>
+<blockquote>
+<ul>
+<li>Block IE6 users from your site.</li>
+<li>Develop with web standards and don’t spend any development time testing in IE6.</li>
+<li>Use the Dean Edwards IE7 script to bootstrap <span class="caps">CSS</span> support in IE6.</li>
+<li>Write an IE6 stylesheet to address layout issues.</li>
+<li>Make your site look exactly the same in IE6 as in any other browser.</li>
+</ul>
+</blockquote>
+<p>And, gives some weight behind what you may or may not want to do. We all keep running into the highs and lows of Web development. As we look to the amazing features that current gen browsers give us we think about apps we could build. Then we come back to reality as we think about getting these apps working on browsers that people use.</p>
+<p>A smart man just told me:</p>
+<blockquote><p>
+The Ajax applications that we rave about now are running on 1997 technology. Take a look at what current browsers can do, and then you will get a glimpse of where we are going.
+</p></blockquote>
+<p>I want to see as many forces as possible trying their best to get IE 6 users to upgrade (again: to IE.latest is fine!). One way is to develop applications that have amazing functionality that they can't use unless they upgrade.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=XaxTO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=XaxTO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=7RfnO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=7RfnO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=et5bo"><img src="http://feeds.feedburner.com/~f/ajaxian?i=et5bo" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/ie6-equation/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/ie6-equation</feedburner:origLink></item>
+		<item>
+		<title>JSOS: jQuery based desktop</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/475966204/jsos-jquery-based-desktop</link>
+		<comments>http://ajaxian.com/archives/jsos-jquery-based-desktop#comments</comments>
+		<pubDate>Fri, 05 Dec 2008 19:16:08 +0000</pubDate>
+		<dc:creator>Dion Almaer</dc:creator>
+		
+		<category><![CDATA[Front Page]]></category>
+
+		<category><![CDATA[Showcase]]></category>
+
+		<category><![CDATA[jQuery]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5316</guid>
+		<description><![CDATA[
+There have been plenty of JavaScript desktop in the browsers of the years (ah WebOS!).
+James Luterek has posted about the latest jQuery based desktop environment.
+
+I started creating an operating system like user interface in JavaScript.  I had intended to use it for the admin sections of my content management system(that runs this website), but [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://ajaxian.com/wp-content/uploads/jsdesktop.png"><img src="http://ajaxian.com/wp-content/uploads/jsdesktop.png" alt="" title="jsdesktop" width="300" height="168" class="alignnone size-medium wp-image-5317" /></a></p>
+<p>There have been plenty of JavaScript desktop in the browsers of the years (ah WebOS!).</p>
+<p>James Luterek has <a href="http://james.luterek.com/post/61-39/JavaScript-Operating-System.aspx">posted about</a> the latest <a href="http://dev.luterek.com/jsos/">jQuery based desktop environment</a>.</p>
+<blockquote>
+<p>I started creating an operating system like user interface in JavaScript.  I had intended to use it for the admin sections of my content management system(that runs this website), but through developing it I started to question it's usability and decided to discontinue development.</p>
+<p>Features in it's current state:</p>
+<ul>
+<li>Start Button</li>
+<li>Task Bar - view open windows and set focus/minimize</li>
+<li>Windows (Create, move, maximize, minimize, resize, etc.)</li>
+<li>Show Desktop on right click</li>
+<li>Properties (Theme Color, Text Color, Background Color, Background Image)</li>
+<li>Properties saved in cookies for next visit</li>
+</ul>
+</blockquote>
+<p>Still don't know how to create a new window other than a Google one, and I am never quite sure when people will use these (even fully baked). I am sure it will happen, but not until the browser platform has gotten to a point where it actually can. Calling this an "OS" is funny too ;)</p>
+<p>Happy Friday!</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=hMOqO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=hMOqO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=facgO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=facgO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=uqt5o"><img src="http://feeds.feedburner.com/~f/ajaxian?i=uqt5o" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/jsos-jquery-based-desktop/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/jsos-jquery-based-desktop</feedburner:origLink></item>
+		<item>
+		<title>Mozilla, Zazzle, and UIZE</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/475904520/mozilla-zazzle-and-uize</link>
+		<comments>http://ajaxian.com/archives/mozilla-zazzle-and-uize#comments</comments>
+		<pubDate>Fri, 05 Dec 2008 18:01:11 +0000</pubDate>
+		<dc:creator>Ben Galbraith</dc:creator>
+		
+		<category><![CDATA[Examples]]></category>
+
+		<category><![CDATA[Framework]]></category>
+
+		<category><![CDATA[Front Page]]></category>
+
+		<category><![CDATA[Mozilla]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5307</guid>
+		<description><![CDATA[
+Mozilla is big on tinkering--making things your own. They recently released a marketplace for their community to upload its own shirt designs. But because they based it on the Ajax-heavy Zazzle platform, consumers can customize the shirts in a variety of ways. We thought this made for a good opportunity to take a closer look [...]]]></description>
+			<content:encoded><![CDATA[<p><img src="http://ajaxian.com/wp-content/uploads/moz.jpg" alt="Moz Community Store" title="Storezilla" width="422" height="188" class="size-full wp-image-5308" /></p>
+<p>Mozilla is big on tinkering--making things your own. They recently released a <a href="http://communitystore.mozilla.org/">marketplace for their community to upload its own shirt designs</a>. But because they based it on the Ajax-heavy <a href="http://www.zazzle.com/">Zazzle</a> platform, consumers can customize the shirts in a variety of ways. We thought this made for a good opportunity to take a closer look at Zazzle.</p>
+<p><b>Easy Zooming</b></p>
+<p>In the overview page showing different shirt designs, simply mousing over a shirt lets you zoom in on it in a smooth, easy motion.</p>
+<p><img src="http://ajaxian.com/wp-content/uploads/zaz1.jpg" alt="" title="Mouse-over shirt" width="470" height="216" class="alignnone size-full wp-image-5309" /></p>
+<p>Clicking into a shirt gives more Ajax goodness, like an alternate zooming interface showing the full-view and the detail simultaneously:</p>
+<p><img src="http://ajaxian.com/wp-content/uploads/zaz2.jpg" alt="" title="Zazzle Zooming" width="470" height="256" class="alignnone size-full wp-image-5310" /></p>
+<p>And finally, it has a shirt manipulation interface, though most of the design manipulation occurs on the server, it is sent back without a page reload, as we would expect:</p>
+<p><img src="http://ajaxian.com/wp-content/uploads/zaz3.jpg" alt="" title="Zazzle Design Manipulator" width="470" height="305" class="alignnone size-full wp-image-5311" /></p>
+<p><img src="http://ajaxian.com/wp-content/uploads/uize.png" alt="" title="UIZE" width="233" height="38" class="alignnone size-full wp-image-5312" /></p>
+<p>Zazzle is built on the <a href="http://www.uize.com/">UIZE</a> (pronounced "you-eyes") Ajax framework which we <a href="http://ajaxian.com/archives/uize-javascript-ui-toolkit">covered briefly in 2006</a> and have yet to revisit. We're not sure if UIZE is used by anyone but Zazzle, but it's got a pretty nice website, docs, widgets, basic effects, an event system, and an inheritance system. We'll have to give it a closer look!</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=4W24O"><img src="http://feeds.feedburner.com/~f/ajaxian?i=4W24O" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=c1SZO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=c1SZO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=ASf6o"><img src="http://feeds.feedburner.com/~f/ajaxian?i=ASf6o" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/mozilla-zazzle-and-uize/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/mozilla-zazzle-and-uize</feedburner:origLink></item>
+		<item>
+		<title>MooTools and Sizzle</title>
+		<link>http://feeds.feedburner.com/~r/ajaxian/~3/475785780/mootools-and-sizzle</link>
+		<comments>http://ajaxian.com/archives/mootools-and-sizzle#comments</comments>
+		<pubDate>Fri, 05 Dec 2008 15:30:48 +0000</pubDate>
+		<dc:creator>Dion Almaer</dc:creator>
+		
+		<category><![CDATA[CSS]]></category>
+
+		<category><![CDATA[Front Page]]></category>
+
+		<guid isPermaLink="false">http://ajaxian.com/?p=5305</guid>
+		<description><![CDATA[Valerio Proietti has written a thoughtful post on why MooTools won't use Sizzle (and tries to argue why other libraries shouldn't).
+He cites the advantages of having one code base that your project can tweak at will, and competition being a good thing to move things forward:
+
+There are several reasons why a project like MooTools would [...]]]></description>
+			<content:encoded><![CDATA[<p>Valerio Proietti has written a thoughtful post on <a href="http://mootools.net/blog/2008/12/04/sizzle/#more-115">why MooTools won't use Sizzle</a> (and tries to argue why other libraries shouldn't).</p>
+<p>He cites the advantages of having one code base that your project can tweak at will, and competition being a good thing to move things forward:</p>
+<blockquote><p>
+There are several reasons why a project like MooTools would never include a third party library like Sizzle in its codebase. First of all, we already have a very fast, very manageable and solid CSS selector engine in place. I worked on it a lot, I know how it works, and I know that if it ever needs a fix, every MooTools collaborator can just git it and fix it, right away. Every Mootools collaborator knows how MooTools works, what our code practices are, and how to submit either a patch (if they don’t have Git credentials), or patching the code themselves.
+</p></blockquote>
+<p>I don't expect every library will drop its own engine and plugin Sizzle right away. However, if done correctly, Sizzle can be an area of collaboration. If it becomes "John's Library" that is one thing, but you will note that there have already been patches from the Prototype folks and maybe others. Sizzle could be a playground for innovation itself.</p>
+<p>I believe by collaborating on core items like the CSS engine everyone benefits. It wouldn't feel "less MooTools" as Valerio cites, because it is hidden. We see this across industries. People come together to work on infrastructure pieces, and then go off and offer value adds and different APIs and ways of looking at things. Right now our Ajax libraries are duplicating effort.  Imagine if Sizzle doesn't become used by many engines in the future? Maybe it could be included in browsers, and optimized in some way. Who knows. Either way, I think it is a fine experiment that I am excited to see, and at the same time I value Valerio's thoughts, and that is why it is great that he has the choice to not use it :)</p>
+<p>What do you think?</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/ajaxian?a=c1xfO"><img src="http://feeds.feedburner.com/~f/ajaxian?i=c1xfO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=2il8O"><img src="http://feeds.feedburner.com/~f/ajaxian?i=2il8O" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/ajaxian?a=qufto"><img src="http://feeds.feedburner.com/~f/ajaxian?i=qufto" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://ajaxian.com/archives/mootools-and-sizzle/feed</wfw:commentRss>
+		<feedburner:origLink>http://ajaxian.com/archives/mootools-and-sizzle</feedburner:origLink></item>
+	</channel>
+</rss>

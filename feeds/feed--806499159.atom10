@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:media="http://search.yahoo.com/mrss/"
+	>
+
+<channel>
+	<title>SeventySeven</title>
+	<atom:link href="http://sevenseven.wordpress.com/feed/" rel="self" type="application/rss+xml" />
+	<link>http://sevenseven.wordpress.com</link>
+	<description>Procedures and Techniques in Advertising and Design</description>
+	<pubDate>Thu, 19 Jun 2008 16:21:51 +0000</pubDate>
+	<generator>http://wordpress.org/?v=MU</generator>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+			<item>
+		<title>Video Alpha Channel To Flash CS3</title>
+		<link>http://sevenseven.wordpress.com/2008/03/31/video-alpha-channel-to-flash-cs3/</link>
+		<comments>http://sevenseven.wordpress.com/2008/03/31/video-alpha-channel-to-flash-cs3/#comments</comments>
+		<pubDate>Mon, 31 Mar 2008 17:58:14 +0000</pubDate>
+		<dc:creator>Dóri</dc:creator>
+		
+		<category><![CDATA[After Effects]]></category>
+
+		<category><![CDATA[Flash]]></category>
+
+		<guid isPermaLink="false">http://sevenseven.wordpress.com/?p=54</guid>
+		<description><![CDATA[Been a while since I&#8217;ve posted some tips, but here is a quick one for all you Flash &#38; AfterEffects developers out there.
+When exporting .flv with an alpha channel from After Effects to use within Flash on different color bakcgrounds, make sure to set your comp&#8217;s background color to 50% gray for best resaults within [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p>Been a while since I&#8217;ve posted some tips, but here is a quick one for all you Flash &amp; AfterEffects developers out there.</p>
+<p>When exporting .flv with an alpha channel from After Effects to use within Flash on different color bakcgrounds, make sure to set your comp&#8217;s background color to 50% gray for best resaults within Flash. If you use a black or white background, the alpha channel will leave artifacts in these colors on the edges of the alpha. Somehow the 50% gray blends better when using various background colors in Flash.</p>
+<p>Otherwise, simply try matching the color of the background you will end up using in Flash before pulling the alpha. You can set the composition background color by pressing  <span style="font-style:italic;" class="Apple-style-span">CMD+SHIFT+B (MAC)</span> or <span style="font-style:italic;" class="Apple-style-span">CTRL+SHIFT+B (PC)</span> or going to <span style="font-style:italic;" class="Apple-style-span">Composition › Background Color.</span></p>
+<img alt="" border="0" src="http://feeds.wordpress.com/1.0/categories/sevenseven.wordpress.com/54/" /> <img alt="" border="0" src="http://feeds.wordpress.com/1.0/tags/sevenseven.wordpress.com/54/" /> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/sevenseven.wordpress.com/54/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/sevenseven.wordpress.com/54/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/sevenseven.wordpress.com/54/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/sevenseven.wordpress.com/54/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/sevenseven.wordpress.com/54/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/sevenseven.wordpress.com/54/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/sevenseven.wordpress.com/54/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/sevenseven.wordpress.com/54/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/sevenseven.wordpress.com/54/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/sevenseven.wordpress.com/54/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=sevenseven.wordpress.com&blog=571941&post=54&subd=sevenseven&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://sevenseven.wordpress.com/2008/03/31/video-alpha-channel-to-flash-cs3/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/ce604a679396e81a3f4c96f129ee4d60?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Dóri</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>AI: Exporting a layered PSD from Illustrator</title>
+		<link>http://sevenseven.wordpress.com/2007/02/26/ai-exporting-a-layered-psd-from-illustrator/</link>
+		<comments>http://sevenseven.wordpress.com/2007/02/26/ai-exporting-a-layered-psd-from-illustrator/#comments</comments>
+		<pubDate>Mon, 26 Feb 2007 21:43:03 +0000</pubDate>
+		<dc:creator>Dóri</dc:creator>
+		
+		<category><![CDATA[Illustrator]]></category>
+
+		<category><![CDATA[Photoshop]]></category>
+
+		<guid isPermaLink="false">http://sevenseven.wordpress.com/2007/02/26/ai-exporting-a-layered-psd-from-illustrator/</guid>
+		<description><![CDATA[
+Illustrator has an option to export a file as a .psd file while keeping layers intact. First, you need to keep one thing in mind, you need to decide first if you will be working on it in RGB or CMYK colorspace in photoshop. Illustrator only lets you export layered psd&#8217;s from RGB to RGB [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p><a title="titill_layered.jpg" rel="attachment wp-att-24" href="http://sevenseven.wordpress.com/2006/11/25/guide-snapping/guides/"><img src="http://naflaskodun.files.wordpress.com/2007/02/titill_layered.jpg" alt="titill_layered.jpg" /></a></p>
+<p>Illustrator has an option to export a file as a .psd file while keeping layers intact. First, you need to keep one thing in mind, you need to decide first if you will be working on it in RGB or CMYK colorspace in photoshop. Illustrator only lets you export layered psd&#8217;s from RGB to RGB or from CMYK to CMYK, not across colorspaces.</p>
+<p>For instance, to export a file as a layered RGB file you first need to check if your <em>Document Color Mode</em> within Illustrator is set to the correct value. Go to <em>File&gt;Document Color Mode</em> and make shure it is set to RGB.</p>
+<p><img src="http://sevenseven.files.wordpress.com/2007/02/ailayered1.jpg" alt="ailayered1.jpg" /></p>
+<p>Then make sure you have a few layers to export, and keep in mind that multiple objects on the same layer will export as one layer. If you need to break down your illustration to a few layers you can use the Layers palette to create new layers and cut/paste your objects on the new layers (keep in mind that the Paste in Front &amp; Paste in Back functions in the Edit menu will paste objects in exactly the same location on a new layer as they were cut from).</p>
+<p><img src="http://sevenseven.files.wordpress.com/2007/02/ailayered2.jpg" alt="ailayered2.jpg" /></p>
+<p>After you make shure you have some layers to export, go to <em>File&gt;Export</em>&#8230; and in the dialog box select <em>Photoshop (psd)</em> from the <em>Format</em> dropdown list. Then name your file and click <em>Export.</em></p>
+<p>Now, <em>&#8220;Photoshop Export Options&#8221;</em> should pop up and you can select a variety of options. At the top of the dialog box you should see a <em>Color Model</em> dropdown list. <strong>Make shure this is set to the same setting as the <em>Document Color Mode </em>setting if you want to export as layers.</strong> We are now looking at RGB, so select that from the list. The same dropdown menu also has an option to export to <em>Grayscale</em>, using that setting will have the option to export to layers no matter what <em>Document Color Mode</em> you are working on.</p>
+<p><img src="http://sevenseven.files.wordpress.com/2007/02/ailayered3.jpg" alt="ailayered3.jpg" /></p>
+<p>Make sure you select <em>Photoshop CS</em>2 from the <em>&#8220;Export As&#8221; </em>dropdown list (or<em> CS </em>depending on your version), and also make sure<em> Write Layers</em> is selected. If you have some text you can choose to keep it editable within Photoshop by selecting <em>Preserve Text Editability.</em></p>
+<p><img src="http://sevenseven.files.wordpress.com/2007/02/ailayered4.jpg" alt="ailayered4.jpg" /></p>
+<p>Click <em>OK</em> and you&#8217;re done.</p>
+<p>Now open your exported file in Photoshop and make sure it has your layers intact.</p>
+<p>CMYK exporting works the same way, just make sure you have it set correctly in <em>Document Color Mode</em> and select CMYK in the <em>Color Model</em> dropdown list.</p>
+<p>UPDATED: It has come to my attention that in some cases Illustrator will give an error while exporting or Photoshop will give an error while opening such a file. In this case it may be that you have a bunch of items around your artboard that you don&#8217;t want to export but Illustrator will try to do it anyway.</p>
+<p>It is important to remember that Illustrator will not only confine the PSD export to the artboard, but will export everything within the file. Before exporting a PSD you could try cleaning up your file and get rid of things you don&#8217;t need to export that are perhaps around the artboard. If not, chances are you&#8217;ll get an export error.</p>
+<p><strong>UPDATE 2:</strong> Since this post has been quite popular and people are having trouble with this I have gone through this process again with CS3.<br />
+Illustrator CS3 will export a single layer to PSD to a photoshop layer group. That means all of your art on a single layer in illustrator will export as a layer group with sublayers intact. However if you have compound paths or open shapes on some layers, exporting will likely merge those layers. To export your elements to layers, simply group the ones you want to have as a layer (yes group single shapes too), ann export as shown above. I will post a revised version of this with step by step images soon.</p>
+<img alt="" border="0" src="http://feeds.wordpress.com/1.0/categories/sevenseven.wordpress.com/47/" /> <img alt="" border="0" src="http://feeds.wordpress.com/1.0/tags/sevenseven.wordpress.com/47/" /> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/sevenseven.wordpress.com/47/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/sevenseven.wordpress.com/47/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/sevenseven.wordpress.com/47/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/sevenseven.wordpress.com/47/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/sevenseven.wordpress.com/47/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/sevenseven.wordpress.com/47/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/sevenseven.wordpress.com/47/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/sevenseven.wordpress.com/47/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/sevenseven.wordpress.com/47/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/sevenseven.wordpress.com/47/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=sevenseven.wordpress.com&blog=571941&post=47&subd=sevenseven&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://sevenseven.wordpress.com/2007/02/26/ai-exporting-a-layered-psd-from-illustrator/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/ce604a679396e81a3f4c96f129ee4d60?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Dóri</media:title>
+		</media:content>
+
+		<media:content url="http://naflaskodun.files.wordpress.com/2007/02/titill_layered.jpg" medium="image">
+			<media:title type="html">titill_layered.jpg</media:title>
+		</media:content>
+
+		<media:content url="http://sevenseven.files.wordpress.com/2007/02/ailayered1.jpg" medium="image">
+			<media:title type="html">ailayered1.jpg</media:title>
+		</media:content>
+
+		<media:content url="http://sevenseven.files.wordpress.com/2007/02/ailayered2.jpg" medium="image">
+			<media:title type="html">ailayered2.jpg</media:title>
+		</media:content>
+
+		<media:content url="http://sevenseven.files.wordpress.com/2007/02/ailayered3.jpg" medium="image">
+			<media:title type="html">ailayered3.jpg</media:title>
+		</media:content>
+
+		<media:content url="http://sevenseven.files.wordpress.com/2007/02/ailayered4.jpg" medium="image">
+			<media:title type="html">ailayered4.jpg</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>AI: Snapshot Common Actions</title>
+		<link>http://sevenseven.wordpress.com/2007/02/22/ai-snapshot-common-actions/</link>
+		<comments>http://sevenseven.wordpress.com/2007/02/22/ai-snapshot-common-actions/#comments</comments>
+		<pubDate>Thu, 22 Feb 2007 22:00:00 +0000</pubDate>
+		<dc:creator>Dóri</dc:creator>
+		
+		<category><![CDATA[Illustrator]]></category>
+
+		<guid isPermaLink="false">http://sevenseven.wordpress.com/2007/02/22/ai-snapshot-common-actions/</guid>
+		<description><![CDATA[
+Often I find myself having to do the same action over and over again within Illustrator. But some effects have no way of saving a preset or keeping their settings intact. Of course If you are working on a bunch of items and applying the same effect from the effects list over and over again [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p><a href="http://www.77.is" title="Illustrator Effect Presets"><img src="http://sevenseven.files.wordpress.com/2007/02/aisnapshot.jpg" alt="Illustrator Effect Presets" /></a></p>
+<p>Often I find myself having to do the same action over and over again within Illustrator. But some effects have no way of saving a preset or keeping their settings intact. Of course If you are working on a bunch of items and applying the same effect from the effects list over and over again you have the option to reuse the last effect. But what If you use other effects in between or turn off your computer, you have no way of saving a preset within the effects dialog boxes and revisit your old settings.</p>
+<p>A handy workaround I found is fairly simple for keeping your settings with your document. Simply <strong>take a screen-shot</strong> of the desired dialog box with your preferred settings and paste it within your Illustrator document. That way an image of the dialog box is embedded within the document and you can follow those settings when you need them again, weather it is tomorrow or in a few weeks/months. You can keep them on a separate layer and collect a few common settings. Just remember to delete them before print production.</p>
+<p>Open your dialog box and set your preferred settings and then follow this procedure:<br />
+<span style="font-weight:bold;">MacOSX:</span>  Hold <span style="font-style:italic;">Command+Shift+Ctrl+4</span>, when the crosshair appears press <span style="font-style:italic;">Space</span> and then select the dialog box to grab it. After grabbing, close the dialog box and paste your image on the Illustrator Artboard using <span style="font-style:italic;">Command+v</span>.<br />
+<span style="font-weight:bold;">XP/Vista:</span> Select the dialog box, Hold <span style="font-style:italic;">ALT+PrntScr</span> to grab an image, close the dialog box and paste your image on the Illustrator Artboard using <span style="font-style:italic;">Ctrl+v</span>.</p>
+<img alt="" border="0" src="http://feeds.wordpress.com/1.0/categories/sevenseven.wordpress.com/45/" /> <img alt="" border="0" src="http://feeds.wordpress.com/1.0/tags/sevenseven.wordpress.com/45/" /> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/sevenseven.wordpress.com/45/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/sevenseven.wordpress.com/45/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/sevenseven.wordpress.com/45/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/sevenseven.wordpress.com/45/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/sevenseven.wordpress.com/45/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/sevenseven.wordpress.com/45/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/sevenseven.wordpress.com/45/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/sevenseven.wordpress.com/45/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/sevenseven.wordpress.com/45/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/sevenseven.wordpress.com/45/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=sevenseven.wordpress.com&blog=571941&post=45&subd=sevenseven&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://sevenseven.wordpress.com/2007/02/22/ai-snapshot-common-actions/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/ce604a679396e81a3f4c96f129ee4d60?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Dóri</media:title>
+		</media:content>
+
+		<media:content url="http://sevenseven.files.wordpress.com/2007/02/aisnapshot.jpg" medium="image">
+			<media:title type="html">Illustrator Effect Presets</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Illustrator Crashes using Pathfinder</title>
+		<link>http://sevenseven.wordpress.com/2007/02/11/illustrator-crashes-using-pathfinder/</link>
+		<comments>http://sevenseven.wordpress.com/2007/02/11/illustrator-crashes-using-pathfinder/#comments</comments>
+		<pubDate>Sun, 11 Feb 2007 13:32:40 +0000</pubDate>
+		<dc:creator>Dóri</dc:creator>
+		
+		<category><![CDATA[General design]]></category>
+
+		<guid isPermaLink="false">http://sevenseven.wordpress.com/2007/02/11/illustrator-crashes-using-pathfinder/</guid>
+		<description><![CDATA[
+After you first install Illustrator on MacOSX you may be faced with the problem of Illustrator crashing without warning. This usually occurs when Illustrator is performing complex actions such as in the Pathfinder. There is a solution to this problem, which I found on the Adobe support page. Follow this routine and your problem should [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p><img src="http://sevenseven.files.wordpress.com/2007/02/illustratorcrash.jpg" alt="Appearance Palette Crashes Illustrator" /></p>
+<p>After you first install Illustrator on MacOSX you may be faced with the problem of Illustrator crashing without warning. This usually occurs when Illustrator is performing complex actions such as in the Pathfinder. There is a solution to this problem, which I found on the Adobe support page. Follow this routine and your problem should be solved:</p>
+<p>Run Illustrator.<br />
+Close the Appearance palette.<br />
+Quit Illustrator.<br />
+Run Illustrator again.</p>
+<p>And now when you run Illustrator it should be fixed, and you can now use pathfinder to your liking. The Adobe support page does not explain what the problem is, but it seems to be a software bug related to the Appearance palette and perhaps Intel based Macs. However you should not be afraid of using the appearance palette, because after your crashing problem is fixed for the first time, you can open up your appearance palette again and use it as you normally would.</p>
+<img alt="" border="0" src="http://feeds.wordpress.com/1.0/categories/sevenseven.wordpress.com/35/" /> <img alt="" border="0" src="http://feeds.wordpress.com/1.0/tags/sevenseven.wordpress.com/35/" /> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/sevenseven.wordpress.com/35/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/sevenseven.wordpress.com/35/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/sevenseven.wordpress.com/35/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/sevenseven.wordpress.com/35/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/sevenseven.wordpress.com/35/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/sevenseven.wordpress.com/35/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/sevenseven.wordpress.com/35/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/sevenseven.wordpress.com/35/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/sevenseven.wordpress.com/35/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/sevenseven.wordpress.com/35/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=sevenseven.wordpress.com&blog=571941&post=35&subd=sevenseven&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://sevenseven.wordpress.com/2007/02/11/illustrator-crashes-using-pathfinder/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/ce604a679396e81a3f4c96f129ee4d60?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Dóri</media:title>
+		</media:content>
+
+		<media:content url="http://sevenseven.files.wordpress.com/2007/02/illustratorcrash.jpg" medium="image">
+			<media:title type="html">Appearance Palette Crashes Illustrator</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Scrubby Sliders</title>
+		<link>http://sevenseven.wordpress.com/2007/02/09/scrubby-sliders/</link>
+		<comments>http://sevenseven.wordpress.com/2007/02/09/scrubby-sliders/#comments</comments>
+		<pubDate>Fri, 09 Feb 2007 10:24:09 +0000</pubDate>
+		<dc:creator>Dóri</dc:creator>
+		
+		<category><![CDATA[General design]]></category>
+
+		<category><![CDATA[Illustrator]]></category>
+
+		<category><![CDATA[InDesign]]></category>
+
+		<category><![CDATA[Photoshop]]></category>
+
+		<guid isPermaLink="false">http://sevenseven.wordpress.com/2007/02/09/scrubby-sliders/</guid>
+		<description><![CDATA[
+In all Adobe programs scrubby sliders let you have the option of setting a value or dragging a slider without having to actually grab the slider. Simply place your mouse over the name of the value (for instance the Opacity value in the Layers palette), click and drag from left to right to set the [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p><a href="http://sevenseven.files.wordpress.com/2007/02/scrubbyslider.jpg" title="Scrubby Sliders"><img src="http://sevenseven.files.wordpress.com/2007/02/scrubbyslider.jpg" alt="Scrubby Sliders" /></a></p>
+<p>In all Adobe programs <em><strong>scrubby sliders</strong></em> let you have the option of setting a value or dragging a slider without having to actually grab the slider. Simply place your mouse over the name of the value (for instance the <em>Opacity</em> value in the Layers palette), click and drag from left to right to set the value. This works with most values, not all, and is really a great time saver if you get the hang of it. You can also hold <em>SHIFT</em> while dragging to set the value by ten.</p>
+<p><em>And a related tip:  To set the value of a setting using the keyboard simply click the name to highlight it (or click the number), and use the<strong> up &amp; down arrows </strong>on your keyboard to increment the value up and down. Hold SHIFT to increment values by ten.</em></p>
+<img alt="" border="0" src="http://feeds.wordpress.com/1.0/categories/sevenseven.wordpress.com/34/" /> <img alt="" border="0" src="http://feeds.wordpress.com/1.0/tags/sevenseven.wordpress.com/34/" /> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/sevenseven.wordpress.com/34/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/sevenseven.wordpress.com/34/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/sevenseven.wordpress.com/34/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/sevenseven.wordpress.com/34/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/sevenseven.wordpress.com/34/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/sevenseven.wordpress.com/34/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/sevenseven.wordpress.com/34/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/sevenseven.wordpress.com/34/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/sevenseven.wordpress.com/34/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/sevenseven.wordpress.com/34/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=sevenseven.wordpress.com&blog=571941&post=34&subd=sevenseven&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://sevenseven.wordpress.com/2007/02/09/scrubby-sliders/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/ce604a679396e81a3f4c96f129ee4d60?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Dóri</media:title>
+		</media:content>
+
+		<media:content url="http://sevenseven.files.wordpress.com/2007/02/scrubbyslider.jpg" medium="image">
+			<media:title type="html">Scrubby Sliders</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Dragging in place</title>
+		<link>http://sevenseven.wordpress.com/2006/12/06/dragging-in-place/</link>
+		<comments>http://sevenseven.wordpress.com/2006/12/06/dragging-in-place/#comments</comments>
+		<pubDate>Wed, 06 Dec 2006 13:02:16 +0000</pubDate>
+		<dc:creator>Dóri</dc:creator>
+		
+		<category><![CDATA[Photoshop]]></category>
+
+		<guid isPermaLink="false">http://sevenseven.wordpress.com/2006/12/06/dragging-in-place/</guid>
+		<description><![CDATA[Try holding SHIFT while dragging a layer, or a set of layers, between two open documents to have it place itself in exactly the same place in the target document. This may be an obvious tip, but it&#8217;s quite useful.
+       ]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p>Try holding <em>SHIFT</em> while dragging a layer, or a set of layers, between two open documents to have it place itself in exactly the same place in the target document. This may be an obvious tip, but it&#8217;s quite useful.</p>
+<img alt="" border="0" src="http://feeds.wordpress.com/1.0/categories/sevenseven.wordpress.com/32/" /> <img alt="" border="0" src="http://feeds.wordpress.com/1.0/tags/sevenseven.wordpress.com/32/" /> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/sevenseven.wordpress.com/32/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/sevenseven.wordpress.com/32/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/sevenseven.wordpress.com/32/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/sevenseven.wordpress.com/32/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/sevenseven.wordpress.com/32/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/sevenseven.wordpress.com/32/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/sevenseven.wordpress.com/32/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/sevenseven.wordpress.com/32/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/sevenseven.wordpress.com/32/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/sevenseven.wordpress.com/32/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=sevenseven.wordpress.com&blog=571941&post=32&subd=sevenseven&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://sevenseven.wordpress.com/2006/12/06/dragging-in-place/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/ce604a679396e81a3f4c96f129ee4d60?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Dóri</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Selecting Layers</title>
+		<link>http://sevenseven.wordpress.com/2006/11/28/selecting-layers/</link>
+		<comments>http://sevenseven.wordpress.com/2006/11/28/selecting-layers/#comments</comments>
+		<pubDate>Tue, 28 Nov 2006 23:12:01 +0000</pubDate>
+		<dc:creator>Dóri</dc:creator>
+		
+		<category><![CDATA[Photoshop]]></category>
+
+		<guid isPermaLink="false">http://sevenseven.wordpress.com/2006/11/28/selecting-layers/</guid>
+		<description><![CDATA[
+You probably know by now that you can Right Click (Option+Click) on a layer to select it directly on your photoshop canvas. But if you Right Click AGAIN and hold SHIFT while selecting another layer you can add that layer to your selection, selecting multiple layers at once.
+       ]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p><a href='http://sevenseven.wordpress.com/2006/11/28/selecting-layers/selectjpg/' rel='attachment wp-att-30' title='select.jpg'><img src='http://sevenseven.files.wordpress.com/2006/11/select.jpg' alt='select.jpg' /></a></p>
+<p>You probably know by now that you can <em>Right Click (Option+Click)</em> on a layer to select it directly on your photoshop canvas. But if you<em> Right Click</em> <strong><em>AGAIN</em></strong> and hold <em>SHIFT</em> while selecting another layer you can add that layer to your selection, selecting multiple layers at once.</p>
+<img alt="" border="0" src="http://feeds.wordpress.com/1.0/categories/sevenseven.wordpress.com/28/" /> <img alt="" border="0" src="http://feeds.wordpress.com/1.0/tags/sevenseven.wordpress.com/28/" /> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/sevenseven.wordpress.com/28/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/sevenseven.wordpress.com/28/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/sevenseven.wordpress.com/28/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/sevenseven.wordpress.com/28/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/sevenseven.wordpress.com/28/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/sevenseven.wordpress.com/28/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/sevenseven.wordpress.com/28/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/sevenseven.wordpress.com/28/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/sevenseven.wordpress.com/28/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/sevenseven.wordpress.com/28/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=sevenseven.wordpress.com&blog=571941&post=28&subd=sevenseven&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://sevenseven.wordpress.com/2006/11/28/selecting-layers/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/ce604a679396e81a3f4c96f129ee4d60?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Dóri</media:title>
+		</media:content>
+
+		<media:content url="http://sevenseven.files.wordpress.com/2006/11/select.jpg" medium="image">
+			<media:title type="html">select.jpg</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Guide Snapping</title>
+		<link>http://sevenseven.wordpress.com/2006/11/25/guide-snapping/</link>
+		<comments>http://sevenseven.wordpress.com/2006/11/25/guide-snapping/#comments</comments>
+		<pubDate>Sat, 25 Nov 2006 20:24:36 +0000</pubDate>
+		<dc:creator>Dóri</dc:creator>
+		
+		<category><![CDATA[Photoshop]]></category>
+
+		<guid isPermaLink="false">http://sevenseven.wordpress.com/2006/11/25/guide-snapping/</guid>
+		<description><![CDATA[
+PhotoShop: To have guides snap to the ruler&#8217;s units while dragging, hold SHIFT while dragging a guide. To have it snap accutately to every pixel of an image, set the ruler units to pixels and zoom in about 500% so you can see every pixel in the ruler.
+To have the guides snap to a layer, [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p><a href="http://sevenseven.files.wordpress.com/2006/11/guides1.jpg" title="Guides title"><img src="http://sevenseven.files.wordpress.com/2006/11/guides1.jpg" alt="Guides title" /></a><a href="http://sevenseven.files.wordpress.com/2006/11/guides.jpg" title="guides"></a></p>
+<p><strong>PhotoShop: </strong>To have guides snap to the ruler&#8217;s units while dragging, hold <em>SHIFT</em> while dragging a guide. To have it snap accutately to every pixel of an image, set the <em>ruler units</em> to <em>pixels </em>and zoom in about 500% so you can see every pixel in the ruler.</p>
+<p>To have the guides snap to a layer, just select that layer and drag the guide over it. The guide will snap to the left/right sides, and the top/bottom sides. Plus, the guides will also snap to the horizontal and vertical middle of the layer. However if you have a selection, the guides will snap to the selection  in the same way by default, and ignore the layer boundraries.</p>
+<p>To have the guides completely ignore all snapping (like snapping to guides, layers and selections) hold the <em>ALT</em> key while dragging a guide.</p>
+<img alt="" border="0" src="http://feeds.wordpress.com/1.0/categories/sevenseven.wordpress.com/23/" /> <img alt="" border="0" src="http://feeds.wordpress.com/1.0/tags/sevenseven.wordpress.com/23/" /> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/sevenseven.wordpress.com/23/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/sevenseven.wordpress.com/23/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/sevenseven.wordpress.com/23/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/sevenseven.wordpress.com/23/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/sevenseven.wordpress.com/23/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/sevenseven.wordpress.com/23/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/sevenseven.wordpress.com/23/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/sevenseven.wordpress.com/23/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/sevenseven.wordpress.com/23/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/sevenseven.wordpress.com/23/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=sevenseven.wordpress.com&blog=571941&post=23&subd=sevenseven&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://sevenseven.wordpress.com/2006/11/25/guide-snapping/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/ce604a679396e81a3f4c96f129ee4d60?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Dóri</media:title>
+		</media:content>
+
+		<media:content url="http://sevenseven.files.wordpress.com/2006/11/guides1.jpg" medium="image">
+			<media:title type="html">Guides title</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Layer masks using Channels</title>
+		<link>http://sevenseven.wordpress.com/2006/09/23/ps-layer-masks-using-channels/</link>
+		<comments>http://sevenseven.wordpress.com/2006/09/23/ps-layer-masks-using-channels/#comments</comments>
+		<pubDate>Sat, 23 Sep 2006 23:01:00 +0000</pubDate>
+		<dc:creator>Dóri</dc:creator>
+		
+		<category><![CDATA[Photoshop]]></category>
+
+		<guid isPermaLink="false">http://sevenseven.wordpress.com/2005/06/23/ps-layer-masks-using-channels/</guid>
+		<description><![CDATA[PhotoShop: In this example I will show you how you can make a background of an image transparent, for instance if you want to make a path around a product but still use it&#8217;s shadow to overlay underlying images. This is also known as an &#8220;Alpha channel&#8221;.
+This first image is the image I want to [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p><strong>PhotoShop:</strong> In this example I will show you how you can make a background of an image transparent, for instance if you want to make a path around a product but still use it&#8217;s shadow to overlay underlying images. This is also known as an <a href="http://www.webopedia.com/TERM/A/alpha_channel.html">&#8220;Alpha channel&#8221;</a>.</p>
+<p>This first image is the image I want to use, and as you can see it has a white background with an overlying shadow of the product.</p>
+<p><a href="http://www.77.is/blogrfx/tp01.jpg"><img border="0" src="http://www.77.is/blogrfx/tp01.jpg" style="display:block;width:305px;cursor:hand;text-align:center;margin:0 auto 10px;" /></a><br />
+Start by selecting a path around the product using your masking tool of choice, preferably the pen tool. But also note that some supplied product images have already an embedded path, you can find those in the Paths palette in most cases.</p>
+<p><a href="http://www.77.is/blogrfx/tp02.jpg"><img border="0" src="http://www.77.is/blogrfx/tp02.jpg" style="display:block;width:305px;cursor:hand;text-align:center;margin:0 auto 10px;" /></a></p>
+<p>With the path selected, create a new layer by pressing CTRL+J, this will create a new layer from your selection.</p>
+<p>Now create a &#8220;Solid Color&#8221; adjustment layer and select black for the base color. Your layers palette should now look something like this:</p>
+<p><a href="http://www.77.is/blogrfx/tp03.jpg"><img border="0" src="http://www.77.is/blogrfx/tp03.jpg" style="display:block;width:212px;cursor:hand;text-align:center;margin:0 auto 10px;" /></a></p>
+<p>Select the backbround layer and press CTRL+A (select all) and then copy it (CTRL+C). You now have the original image in the clipboard. Select the black adjustment layer again.<br />
+Now go to the Channels palette which should be right next to the layers palette and you can see in the bottom of the palette there is a hidden channel called &#8220;Color Fill 1 Mask&#8221;, select it and make it visible by pressing the &#8220;eye&#8221; icon.<br />
+With the channel selected, paste your clipboard by pressing CTRL+V. Right after pasting, press CTRL+I to invert the image you pasted into the channel. Your channels palette should now look something like this:</p>
+<p><a href="http://www.77.is/blogrfx/tp04.jpg"><img border="0" src="http://www.77.is/blogrfx/tp04.jpg" style="display:block;width:212px;cursor:hand;text-align:center;margin:0 auto 10px;" /></a></p>
+<p>Still in the Channels palette, select the eye icon next to the &#8220;Color Fill 1 Mask&#8221; layer to hide it.<br />
+Now select the Layers palette and you will see that an image mask has been created for the black adjustment layer. You can now just delete the background layer as you will not need it anymore. Now your layer palette should look something like this:</p>
+<p><a href="http://www.77.is/blogrfx/tp05.jpg"><img border="0" src="http://www.77.is/blogrfx/tp05.jpg" style="display:block;width:212px;cursor:hand;text-align:center;margin:0 auto 10px;" /></a></p>
+<p>And your finished image should look something like this:</p>
+<p><a href="http://www.77.is/blogrfx/tp06.jpg"><img border="0" src="http://www.77.is/blogrfx/tp06.jpg" style="display:block;width:305px;cursor:hand;text-align:center;margin:0 auto 10px;" /></a></p>
+<p>As you can see the shadow is transparent, so to finish it up, link the two layers together or merge them (a good rule is to have these layers seperate and select a Multiply blending mode for the shadow layer). You can now drag these layers to another open image and see the effect of your overlaying transparent shadow.</p>
+<img alt="" border="0" src="http://feeds.wordpress.com/1.0/categories/sevenseven.wordpress.com/22/" /> <img alt="" border="0" src="http://feeds.wordpress.com/1.0/tags/sevenseven.wordpress.com/22/" /> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/sevenseven.wordpress.com/22/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/sevenseven.wordpress.com/22/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/sevenseven.wordpress.com/22/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/sevenseven.wordpress.com/22/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/sevenseven.wordpress.com/22/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/sevenseven.wordpress.com/22/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/sevenseven.wordpress.com/22/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/sevenseven.wordpress.com/22/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/sevenseven.wordpress.com/22/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/sevenseven.wordpress.com/22/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=sevenseven.wordpress.com&blog=571941&post=22&subd=sevenseven&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://sevenseven.wordpress.com/2006/09/23/ps-layer-masks-using-channels/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/ce604a679396e81a3f4c96f129ee4d60?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Dóri</media:title>
+		</media:content>
+
+		<media:content url="http://www.77.is/blogrfx/tp01.jpg" medium="image" />
+
+		<media:content url="http://www.77.is/blogrfx/tp02.jpg" medium="image" />
+
+		<media:content url="http://www.77.is/blogrfx/tp03.jpg" medium="image" />
+
+		<media:content url="http://www.77.is/blogrfx/tp04.jpg" medium="image" />
+
+		<media:content url="http://www.77.is/blogrfx/tp05.jpg" medium="image" />
+
+		<media:content url="http://www.77.is/blogrfx/tp06.jpg" medium="image" />
+	</item>
+		<item>
+		<title>Color space copy</title>
+		<link>http://sevenseven.wordpress.com/2006/09/06/ps-color-space-copy/</link>
+		<comments>http://sevenseven.wordpress.com/2006/09/06/ps-color-space-copy/#comments</comments>
+		<pubDate>Wed, 06 Sep 2006 01:24:00 +0000</pubDate>
+		<dc:creator>Dóri</dc:creator>
+		
+		<category><![CDATA[Photoshop]]></category>
+
+		<guid isPermaLink="false">http://sevenseven.wordpress.com/2005/06/06/ps-color-space-copy/</guid>
+		<description><![CDATA[ 
+Photoshop: When copying from illustrator or freehand and pasting into photoshop and your color comes out differently than you intended, try to change the color space of Illustrator into the colorspace you have currently set in Photoshop. Matching colorspace (RGB to RGB or CMYK to CMYK) copying will produce better results for your designs in [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p><strong> <a href="http://sevenseven.files.wordpress.com/2006/11/colorspace.jpg" title="Colorspace title"><img src="http://sevenseven.files.wordpress.com/2006/11/colorspace.jpg" alt="Colorspace title" /></a></strong></p>
+<p><strong>Photoshop: </strong>When copying from illustrator or freehand and pasting into photoshop and your color comes out differently than you intended, try to change the color space of Illustrator into the colorspace you have currently set in Photoshop. Matching colorspace (RGB to RGB or CMYK to CMYK) copying will produce better results for your designs in photoshop.</p>
+<img alt="" border="0" src="http://feeds.wordpress.com/1.0/categories/sevenseven.wordpress.com/21/" /> <img alt="" border="0" src="http://feeds.wordpress.com/1.0/tags/sevenseven.wordpress.com/21/" /> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/sevenseven.wordpress.com/21/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/sevenseven.wordpress.com/21/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/sevenseven.wordpress.com/21/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/sevenseven.wordpress.com/21/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/sevenseven.wordpress.com/21/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/sevenseven.wordpress.com/21/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/sevenseven.wordpress.com/21/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/sevenseven.wordpress.com/21/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/sevenseven.wordpress.com/21/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/sevenseven.wordpress.com/21/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=sevenseven.wordpress.com&blog=571941&post=21&subd=sevenseven&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://sevenseven.wordpress.com/2006/09/06/ps-color-space-copy/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/ce604a679396e81a3f4c96f129ee4d60?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">Dóri</media:title>
+		</media:content>
+
+		<media:content url="http://sevenseven.files.wordpress.com/2006/11/colorspace.jpg" medium="image">
+			<media:title type="html">Colorspace title</media:title>
+		</media:content>
+	</item>
+	</channel>
+</rss>

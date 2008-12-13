@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/rss2full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:openSearch="http://a9.com/-/spec/opensearchrss/1.0/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0"><channel><atom:id>tag:blogger.com,1999:blog-9991642</atom:id><lastBuildDate>Sat, 06 Dec 2008 06:28:14 +0000</lastBuildDate><title>ILoggable</title><description>A place to keep my thoughts on programming</description><link>http://www.claassen.net/geek/blog/</link><managingEditor>noreply@blogger.com (ether)</managingEditor><generator>Blogger</generator><openSearch:totalResults>158</openSearch:totalResults><openSearch:startIndex>1</openSearch:startIndex><openSearch:itemsPerPage>25</openSearch:itemsPerPage><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://feeds.feedburner.com/Iloggable" type="application/rss+xml" /><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-1252489835838080403</guid><pubDate>Mon, 03 Nov 2008 00:36:00 +0000</pubDate><atom:updated>2008-11-02T17:45:25.690-08:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">java</category><category domain="http://www.blogger.com/atom/ns#">linq</category><category domain="http://www.blogger.com/atom/ns#">c#</category><title>Saying LINQ is about databases is missing its true benefits</title><description>Just came across a &lt;a href="http://www.odbms.org/blog/2008/08/linq-is-best-option-for-future-java.html#comments"&gt;long discussion&lt;/a&gt; about &lt;a href="http://www.odbms.org/blog/labels/LINQ.html"&gt;LINQ in Java&lt;/a&gt; on the ODBMS blog (thanks to &lt;a href="http://tirania.org/blog/"&gt;Miguel&lt;/a&gt;'s tweet). There is some excellent discussion in there, but aside from a couple of people the discussion seemed to largely center on
+&lt;ol&gt;
+&lt;li&gt;It's from MS so it's a bad idea to copy, and &lt;/li&gt;
+&lt;li&gt;I don't think it adds anything over normal SQL syntax&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The first is an unfortunate dismissal of a very powerful functional language construct because of its origin. And the second illustrates that the commenter does not truly understand what LINQ brings to the language in the first place.
+
+&lt;p&gt;Of course, I'd bet that 90% of .NET developers, if polled, would also equate LINQ with "&lt;em&gt;type-safe SQL in the language&lt;/em&gt;", so this isn't a dig against Java people. Hopefully as &lt;a href="http://en.wikipedia.org/wiki/Parallel_FX_Library"&gt;Parallel LINQ&lt;/a&gt; gains some traction, this simplification will loose it's hold on people.
+
+&lt;p&gt;LINQ or &lt;em&gt;Language INtegrated Query&lt;/em&gt; is really a functional way of expression operations on collections. And if you decompose a lot of code, anywhere where you are using loops to manipulating collections, LINQ is likely to create a more concise and powerful expression for the same operation. And being functional, the implementation of how LINQ does this is opaque to the caller. The caller simply describes what operations should be done on the data sources, allowing for optimization of the operations based on the data sources. That means they could be in a database, they could come from XML, or REST calls or simply exist as an in-memory object graph. But none of these things change the transformations desired.
+
+&lt;p&gt;I've only used LINQ once for SQL, although I use LINQ to objects, i.e. against &lt;code&gt;IEnumerable&amp;lt;T&amp;gt;&lt;/code&gt;, almost daily and it's done away with a lot of &lt;code&gt;foreach&lt;/code&gt; with temporary variables, temporary lists, etc. But even that scenario against the &lt;a href="http://blogs.msdn.com/adonet/archive/2008/10/29/update-on-linq-to-sql-and-linq-to-entities-roadmap.aspx"&gt;apparently now deprecated&lt;/a&gt; DLINQ or Linq2Sql illustrated how it wasn't just about replacing SQL with type-safe syntax, it allowed me to use one syntax for both database and local operations.&lt;/p&gt;
+
+&lt;p&gt;This project included doing a bunch of analytical processing against the data, including projection combining a number data sources. Not all of this was expressible in SQL and some of it wasn't a wise use of live DB queries, and performing the additional work in memory was a lot more efficient. Traditionally this type of work would exhibit a fairly obvious syntactic break between the local and the DB operations. And moving some part (say a sort of a sub-set) from SQL to local or vice versa would be a significant re-write. But using LINQ, the syntax was identical, it was merely a matter of deciding at what point the query should be turned into concrete data vs. a cursor against the DB. This is simply done by turning any &lt;code&gt;IEnumerable&lt;/code&gt; to a List, forcing immediate execution of the query represented by the &lt;code&gt;IEnumerable&lt;/code&gt; source. Either way, local or remote, the syntax stayed the same the power of where processing should happen was in my hands.
+
+&lt;p&gt;I do support the goal of getting something akin to LINQ in java, but I sure hope they don't attack the problem by creating some DB-centric query DSL. The greatest benefit of LINQ in .NET, imho, is that instead of hacking its syntax into the language, the building blocks of &lt;a href="http://msdn.microsoft.com/en-us/library/0yw3tz5k(VS.80).aspx"&gt;anonymous delegates&lt;/a&gt;, &lt;a href="http://msdn.microsoft.com/en-us/library/bb397687.aspx"&gt;lambda expressions&lt;/a&gt;, &lt;a href="http://msdn.microsoft.com/en-us/library/bb397696.aspx"&gt;anonymous types&lt;/a&gt;, &lt;a href="http://msdn.microsoft.com/en-us/library/bb383973.aspx"&gt;var&lt;/a&gt; syntax and &lt;a href="http://msdn.microsoft.com/en-us/library/bb384062.aspx"&gt;object initializers&lt;/a&gt;. Each one of these pieces is a fundamental part of C# 3.0 and can be used independently, but together they allow LINQ to exist. Discussion of common fluent APIs for databases or whole new languages like SBQL miss the benefit of "Language Integrated" in LINQ.
+
+&lt;p&gt;Going to be interesting to follow how this evolves, since I personally think that LINQ is one of the key differentiators between Java and C# that isn't just syntactic sugar (even though many think it is just that).</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/440482449/saying-linq-is-about-databases-is.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">2</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/11/saying-linq-is-about-databases-is.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-8715926871292651552</guid><pubDate>Tue, 28 Oct 2008 20:15:00 +0000</pubDate><atom:updated>2008-10-28T13:26:32.988-07:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">rest</category><category domain="http://www.blogger.com/atom/ns#">c#</category><category domain="http://www.blogger.com/atom/ns#">mindtouch</category><category domain="http://www.blogger.com/atom/ns#">dream</category><title>Dream access control</title><description>Just finished an &lt;a href="http://www.mindtouch.com/blog/2008/10/28/dynamically-modifying-dream-feature-access/"&gt;article&lt;/a&gt; over on the &lt;a href="http://www.mindtouch.com/blog/"&gt;MindTouch blog&lt;/a&gt; about tweaking Dream's default access patterns. I really like how Dream uses cookies, something you don't often see in REST services. Generally it's all about &lt;i&gt;X-My-Cool-Auth-Header&lt;/i&gt; business, which is yet another manual burden for developers. Not sure if this originated because people did raw http requests and either didn't know that most http request mechanisms have cookie support (even curl has a cookie jar), or whether it was a dislike of cookies.
+
+&lt;p&gt;The article also briefly touches on Prologues and Epilogues, a topic I need go into with more detail some time in the future. Basically every Feature call can have &lt;i&gt;n&lt;/i&gt; pre and post actions that can do anything from checking authentication to mutating the request (think accepting data in json or Xml and having a prologue and epilogue do transformations on the way in and out so that the feature itself doesn't have to worry about the data format but can assume that it always gets Xml. The system kind of reminds me of apache handler chaining from mod_perl.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/435091892/dream-access-control.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/10/dream-access-control.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-6662868146097400998</guid><pubDate>Tue, 28 Oct 2008 04:32:00 +0000</pubDate><atom:updated>2008-10-27T21:35:54.720-07:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">async programming</category><category domain="http://www.blogger.com/atom/ns#">notify.me</category><category domain="http://www.blogger.com/atom/ns#">c#</category><title>High Scalability article about notify.me</title><description>Today, &lt;a href="http://highscalability.com/"&gt;High Scalability&lt;/a&gt; ran an &lt;a href="http://highscalability.com/notify-me-architecture-synchronicity-kills"&gt;interview&lt;/a&gt; with myself about the architecture behind notify.me. The interview covers a general overview of what I will cover in more detail over on the &lt;a href="http://techblog.notify.me/"&gt;notify.me tech&lt;/a&gt; blog.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/434324040/high-scalability-article-about-notifyme.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/10/high-scalability-article-about-notifyme.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-6065272617888667213</guid><pubDate>Mon, 27 Oct 2008 17:43:00 +0000</pubDate><atom:updated>2008-10-27T11:01:07.886-07:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">rest</category><category domain="http://www.blogger.com/atom/ns#">async programming</category><category domain="http://www.blogger.com/atom/ns#">c#</category><category domain="http://www.blogger.com/atom/ns#">mindtouch</category><category domain="http://www.blogger.com/atom/ns#">dream</category><title>Dream for REST and async</title><description>I've been doing a lot of work inside of &lt;a href="http://wiki.developer.mindtouch.com/Dream"&gt;MindTouch Dream&lt;/a&gt; as of late over at &lt;a href="http://www.mindtouch.com/"&gt;MindTouch&lt;/a&gt; and i'm really digging it. Steve's put together an awesome framework for doing asynchronous programming on .NET and for being able to treat all access as RESTful resources in your server side code.
+
+&lt;p&gt;Now, coming from a very Dependency Injection heavy design philosophy, Dream has been a bit of an adjustment for me, but the capabilities of Dream, especially the coroutine approach for dealing with requests, is very powerful and fairly intuitive, once you get your head around it.
+
+&lt;p&gt;In an effort to ease the Dream learning curve and cement my understanding of the code base, I'll be blogging articles about it as I go along, and cross-posting them to the &lt;a href="http://wiki.developer.mindtouch.com"&gt;MindTouch developer wiki&lt;/a&gt; as well. My first article was a continuation of Steve's &lt;a href="http://www.mindtouch.com/blog/2007/10/08/dream-asynchronicity-basics/"&gt;Asynchronicity&lt;/a&gt; &lt;a href="http://www.mindtouch.com/blog/2007/10/11/dream-timers/"&gt;library&lt;/a&gt; &lt;a href="http://www.mindtouch.com/blog/2007/10/17/dream-asynchronicity-results/"&gt;series&lt;/a&gt;, &lt;a href="http://www.mindtouch.com/blog/2008/10/21/dream-asynchronicity-coroutines/"&gt;this one about coroutines&lt;/a&gt; (read: yield) in Dream.
+
+&lt;p&gt;I've been using the C# Web Server project for my REST work up until recently, but I'm currently in the process of migrating it over to Dream. It just removes all the legwork and fits much better into the async workflow of the rest of &lt;a href="http://notify.me/"&gt;notify.me&lt;/a&gt;.
+
+&lt;p&gt;Clearly I am biased, but seriously, if you need to build REST interfaces in .NET, Dream beats anything you can roll on your own in a reasonable amount of time, and definitely is about 1000% more powerful than trying to force WCF down the REST or even POX path.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/433832586/dream-for-rest-and-async.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/10/dream-for-rest-and-async.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-460810763233801511</guid><pubDate>Mon, 06 Oct 2008 16:31:00 +0000</pubDate><atom:updated>2008-10-06T23:13:27.123-07:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">java</category><category domain="http://www.blogger.com/atom/ns#">grasshopper</category><category domain="http://www.blogger.com/atom/ns#">ikvm</category><category domain="http://www.blogger.com/atom/ns#">c#</category><title>C# 3.0 language features vs. Java's OS community</title><description>I've been in a constant struggle for a number of years and it's a battle between wanting to program in C# but envying the variety of open source projects available on the JVM.
+
+&lt;p&gt;And this isn't so much a windows/linux thing, because mono vs. native .NET is really the least of my problems. The mono team has done an amazing job letting me write code without worry in Visual Studio and deploy on linux. With &lt;a href="http://tirania.org/blog/archive/2008/Oct-06.html"&gt;mono 2.0 just out&lt;/a&gt;, i have no code left that doesn't just work when i copy the dll's over. The fact that i do a lot of .NET on linux is not a pain point for me.
+
+&lt;p&gt;But when it comes to open source libraries, the eco-system on java is just so much richer. Think of an API or protocol and google it for java and you'll find it. Do the same for .NET and your chances are much smaller. And if you find it, chances are it's a port of J&lt;i&gt;foo&lt;/i&gt; to N&lt;i&gt;foo&lt;/i&gt;. So you could say, I've got library envy.
+
+&lt;p&gt;So why not just go java? Well, there are a number of C# language features that many might accuse of being &lt;i&gt;"sugar"&lt;/i&gt;, but i find them incredibly useful to express my intent in code. Here are the things that keep me in C# 3.0:
+
+&lt;ul&gt;
+&lt;li&gt;Delegates, especially anonymous delegates. For concurrent programming, they are essential
+&lt;li&gt;Events. Sure, they are just more sugar on top of delegates, but for async, having the ability to easily declare, subscribe and fire events are a god sent.
+&lt;li&gt;Properties. Public fields can't be part of an interface and if you ever need to attach observation to the value change, then fields are a dead end. And seriously, &lt;i&gt;getFoo()/setFoo()&lt;/i&gt; is busy work for the compiler. It's less readable and more error prone.
+&lt;li&gt;Lambda expressions. Yes, i want a taste of functional with my imperative
+&lt;li&gt;LINQ. And i don't mean LINQ to SQL. This isn't about databases, this is dealing with collections, doing map, reduce, filter and projection. Yeah, you can loop by hand, but it's so much less expressive or readable.
+&lt;li&gt;&lt;b&gt;var&lt;/b&gt;. Type inference is the way to go for static type languages. Less clutter, still strongly typed. You can get most of the benefits of dynamic languages with type inference and not have to give up type safety. I hope that we get closer to duck typing tho.
+&lt;li&gt;Dead easy interop with native processes. No, my VM is not some abstract world that shan't know about its environment. It's just a better way to code, so let me do machine specific things without making me pay penance in blood for it.
+&lt;li&gt;A language with much more innovation. &lt;i&gt;Ugh&lt;/i&gt;, I know MS made innovation a dirty word in their anti-trust battles, but it's really true for C#. C#2.0's best features were aped by Java 5 and C#3.0 is once again miles ahead in new capabilities. People might argue whether that's a good thing, but it can't be disputed that C# is innovating much more rapidly.
+&lt;/ul&gt;
+
+&lt;p&gt;So there you go, I'm a C# fan boy. I admit it. But still, i got this library envy. What's a guy to do? I see two possible paths, C# on the JVM or java libs on mono. Both are mostly possible, but I really need to do some spikes to know where the pain starts with the two options.
+
+&lt;h2&gt;C# on the JVM: Mainsoft Grasshopper&lt;/h2&gt;
+
+Author in C#, cross-compile IL into java byte code. Mainsoft is apparently collaborating with the mono guys, so generally what makes it into mono in terms of language features will make it into &lt;a href="http://dev.mainsoft.com/Default.aspx?tabid=130"&gt;Grasshopper&lt;/a&gt;. Need to take some of my projects and see what happens when i try this.
+
+&lt;h2&gt;Java on C#: IKVM&lt;/h2&gt;
+
+Compile java code into .NET IL using &lt;a href="http://www.ikvm.net/"&gt;IKVM&lt;/a&gt;. This is dependent on the state and compatibility of IKVM and Java. Need to take some popular java open source projects and see what happens when i try to build them using IKVM.
+
+&lt;p&gt;Either sounds like inviting a life of debugging edge cases that no one else cares about. But I don't see a better option. Am I overlooking some other path? Should i stop whining and just go java? Is the OS situation not nearly as bad on .NET as i make it out to be and I can just continue as is? Things that keep me up at night.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/413467048/c-30-language-features-vs-javas-os.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/10/c-30-language-features-vs-javas-os.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-4113369814420831470</guid><pubDate>Sat, 04 Oct 2008 07:34:00 +0000</pubDate><atom:updated>2008-10-04T00:42:31.797-07:00</atom:updated><title>Synchronicity Kills</title><description>Finally got around to starting my blogging about the &lt;a href="http://techblog.notify.me/post/53013683/synchronicity-kills"&gt;technology being built&lt;/a&gt; for &lt;a href="http://notify.me"&gt;notify.me&lt;/a&gt;.
+
+It's pretty funny that both my &lt;a href="http://wiki.mindtouch.com/"&gt;Mindtouch&lt;/a&gt; and my &lt;a href="http://notify.me"&gt;notify.me&lt;/a&gt; coding revolve around heterogenous, asynchronous programming to achieve highly scalable concurrency. Since i started working on notify.me before I started at Mindtouch and dug deep into &lt;a href="http://wiki.developer.mindtouch.com/Dream"&gt;Dream&lt;/a&gt;, the approaches are currently rather different, although I think i can bring lessons learned from either to the other as things progress.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/410937257/synchronicity-kills.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/10/synchronicity-kills.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-7757773122999651233</guid><pubDate>Fri, 03 Oct 2008 04:44:00 +0000</pubDate><atom:updated>2008-10-02T21:48:30.666-07:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">.net</category><category domain="http://www.blogger.com/atom/ns#">Extension method</category><category domain="http://www.blogger.com/atom/ns#">c#</category><category domain="http://www.blogger.com/atom/ns#">.NET 3.5</category><title>IEnumerable.ForEach()</title><description>I keep wanting to do ForEach() on a collection, and noticed that it was inconsistent whether that extension method was available or not. I always figured that i wasn't importing the right namespace, and blamed ReSharper for not being smart enough to figure out what namespace I was missing. So I finally googled the problem only to find &lt;a href="http://davesquared.blogspot.com/2008/03/ienumerable-and-foreach.html"&gt;this&lt;/a&gt;. Turns out ForEach() isn't on IEnumerable&lt;T&gt;, only on Array and List&lt;T&gt;. Meh. But thanks to &lt;a href="http://davesquared.blogspot.com/"&gt;Dave&lt;/a&gt;, i now have it in my core assembly.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/409934356/ienumerable-foreach.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/10/ienumerable-foreach.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-3237929572866341051</guid><pubDate>Thu, 02 Oct 2008 04:45:00 +0000</pubDate><atom:updated>2008-10-01T21:59:48.146-07:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">tdd</category><category domain="http://www.blogger.com/atom/ns#">resharper</category><category domain="http://www.blogger.com/atom/ns#">notify.me</category><category domain="http://www.blogger.com/atom/ns#">c#</category><category domain="http://www.blogger.com/atom/ns#">mindtouch</category><title>A case for TDD</title><description>I know, it's been rather quiet here lately. I've just been slammed with coding, so writing things up is falling behind. In addition, my blogging time's going to be split between &lt;a href="http://techblog.notify.me/"&gt;techblog.notify.me&lt;/a&gt; and &lt;a href="http://www.mindtouch.com/blog/"&gt;www.mindtouch.com/blog&lt;/a&gt;. And I'm behind on both of those as well. I should have some fun &lt;a href="http://wiki.developer.mindtouch.com/Dream"&gt;Dream&lt;/a&gt; and &lt;a href="http://wiki.developer.mindtouch.com/DekiScript"&gt;DekiScript&lt;/a&gt; stuff for the mindtouch blog and some asynchronous programming for the &lt;a href="http://notify.me"&gt;notify.me&lt;/a&gt; blog soon. As soon as i can get myself to stop coding again.
+
+&lt;p&gt;So what makes me stop coding for a minute to babble on? It's just a quick case studio of why TDD is important.
+
+&lt;p&gt;I've been an Inversion of Control/Dependency Injection for about a year and a half, and while I've eased my way into it, I'm pretty much at the "an interface for every class" stage of having everything abstracted so i can easily mock things. But here and there, I take in third party assemblies for my projects. And most of the time, they are not well interfaced. And generally I try to create a facade that is interfaced, so i can test my interaction in isolation. But depending on how many secondary classes their code uses, sometimes my facade gets lazy leaving places i can't mock.
+
+&lt;p&gt;Now, i'm pretty religious about test coverage, but i do have holes where my facade leaves untestable bits. And this is where TDD shows it's worth. Because when a feature is added or a refactor happens, almost with 100% certainty, the bugs that manage to get into production are in the code that doesn't have test coverage.
+
+&lt;p&gt;The lesson here is that the time saved in not building a properly mockable facade, thereby torpedoing my testability, is repaid manyfold in debugging later as bugs make it into production. meh.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/408939658/case-for-tdd.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/10/case-for-tdd.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-9173023483145492820</guid><pubDate>Mon, 14 Jul 2008 02:08:00 +0000</pubDate><atom:updated>2008-07-13T19:18:35.693-07:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">braindead</category><category domain="http://www.blogger.com/atom/ns#">appleTV</category><category domain="http://www.blogger.com/atom/ns#">apple</category><title>OMFG AppleTV, seriously? Wipe yourself clean, why don't you?</title><description>Ok, here's a feature of AppleTV that can only have it's origin in some devils bargain with Content industry: Once you associate an iTunes instance with AppleTV for sync, you better not ever want to change it, because in the blink of an eye, you will staring a freshly wiped HD.
+
+See, syncing means that whatever is on your PC/Mac is also on your AppleTV. So if you remove it from the PC, it disappears from your AppleTV. Ok, fine, a bit stupid a way to do content management on the AppleTV, but maybe i'll buy that it simplifies things, since all you have to do it keep things organized in AppleTV and all is good.
+
+But here' the kicker, you ever change your AppleTV association to another iTunes, all is wiped of the AppleTV after one quick dialog. And no, oh, it's only hidden in case you re-associate because you realize that was not what you meant to do. No, you now get to re-synch 150GB back to your AppleTV. All for a second of misreading a dialog and clicking the wrong button. Wow! Really? That's great UI simplification. User makes mistake, gets to sit around for a couple of hours while AppleTV re-synch.
+
+Any you cannot tell me that the brilliant minds at Apple came up with this scheme because it was just the most intuitive UI they could think of. No, this is all about the content industry being deathly afraid that someone might take their AppleTV to a friends house, copy all his content and then take it back home. As if this assinine sync behavior prevents something like that.
+
+Grrr.. This is just stupid. 8 out of 450 items synced.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/334707349/omfg-appletv-seriously-wipe-yourself.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/07/omfg-appletv-seriously-wipe-yourself.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-8874106704392264964</guid><pubDate>Wed, 02 Jul 2008 20:56:00 +0000</pubDate><atom:updated>2008-07-02T14:03:09.925-07:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">wpf</category><category domain="http://www.blogger.com/atom/ns#">c#</category><title>The riddle of the disappearing WPF databinding</title><description>I'm currently on a custom control that has a bunch of panels slaved to each other via databinding. And I ran into a bug where moving an element around would suddenly break the sync with the other panels. Nothing in the Output about data-binding failing, so i inspected it with &lt;a href="http://www.blois.us/Snoop/"&gt;Snoop&lt;/a&gt; to see that my data-binding had just up and gone away. So I tracked down the suspect code and monitored the data source with &lt;a href="http://joshsmithonwpf.wordpress.com/mole/"&gt;Mole&lt;/a&gt; as i stepped through and saw that the data-binding went away right after I set the dependency property.
+
+&lt;p&gt;Yeah, not really magic at all. A quick look at the Xaml showed that I had left this particular binding as default (i.e. OneWay). And if you have a OneWay binding and manually set the dependency property, the binding gets overwritten and goes away. Switching the binding to &lt;b&gt;Mode=TwoWay&lt;/b&gt; restored my sync.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/325201473/riddle-of-disappearing-wpf-databinding.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/07/riddle-of-disappearing-wpf-databinding.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-7357609757117296002</guid><pubDate>Wed, 02 Jul 2008 05:28:00 +0000</pubDate><atom:updated>2008-07-01T22:39:47.977-07:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">wpf</category><category domain="http://www.blogger.com/atom/ns#">c#</category><title>WPF Custom Panel layout and Dependency Properties</title><description>Just a quick note I learned the hard way when creating custom panels in WPF: &lt;b&gt;If your panel has dependency properties or attached properties on its children that affect measure and/or arrange, calling &lt;i&gt;InvalidateMeasure&lt;/i&gt; or &lt;i&gt;InvalidateArrange&lt;/i&gt; won't necessarily do the trick.&lt;/b&gt; For that matter, calling these methods isn't even necessary. Instead use the &lt;b&gt;FrameworkPropertyMetadata&lt;/b&gt; Metadata class to set appropriate &lt;b&gt;&lt;a href="http://msdn.microsoft.com/en-us/library/system.windows.frameworkpropertymetadataoptions.aspx"&gt;FrameworkPropertyMetadataOptions&lt;/a&gt;&lt;/b&gt;.
+
+&lt;p&gt;So if you have a Dependency Property on your panel that affects the measure or arrange of its children, make sure it has &lt;b&gt;FrameworkPropertyMetadataOptions.AffectsMeasure&lt;/b&gt; and/or &lt;b&gt;FrameworkPropertyMetadataOptions.AffectsArrange&lt;/b&gt; set.
+
+&lt;p&gt;Similarily, if your panel has an attached property for its children, whose modification affects how that child is laid out, set &lt;b&gt;FrameworkPropertyMetadataOptions.AffectsParentMeasure&lt;/b&gt; and/or &lt;b&gt;FrameworkPropertyMetadataOptions.AffectsParentArrange&lt;/b&gt;.
+
+&lt;p&gt;Now layout and arrange are properly invalidated and called for you.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/324625475/wpf-custom-panel-layout-and-dependency.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/07/wpf-custom-panel-layout-and-dependency.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-7817596628256634821</guid><pubDate>Wed, 19 Mar 2008 16:13:00 +0000</pubDate><atom:updated>2008-03-19T09:18:15.864-07:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">asp.net</category><category domain="http://www.blogger.com/atom/ns#">iis6</category><category domain="http://www.blogger.com/atom/ns#">xp64</category><title>XP 64, IIS 6 and ASP.NET</title><description>My current dev machine is running XP 64, which is a first for me. In the default setup IIS was not installed, so I went through Add/Remove Programs and installed it, which gave me IIS 6. This in turn has several tabs for ASP.NET, but try as you might none of these are what actually turns on ASP.NET and you just end up with mysterious 404s on a application enabled directory that's configured just like the working ASP.NET on your other machine.
+
+&lt;p&gt;Well, it turns out that ASP.NET (even though it shows up in the Properties tabs) is not installed by default and if you go to Web Service Extensions you won't see it there. So next, track down aspnet_regiis which is in the Framework directory and run
+
+&lt;pre&gt;aspnet_regiis -i&lt;/pre&gt;
+
+Then go back to IIS Manager -&gt; Web Service Extensions where ASP.NET should now be an available extension. Enable it and finally ASP.NET works.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/254376009/xp-64-iis-6-and-aspnet.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/03/xp-64-iis-6-and-aspnet.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-1667043524583665771</guid><pubDate>Wed, 12 Mar 2008 06:12:00 +0000</pubDate><atom:updated>2008-03-11T23:57:35.416-07:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">silverlight</category><category domain="http://www.blogger.com/atom/ns#">.net</category><category domain="http://www.blogger.com/atom/ns#">c#</category><title>Sharing code between Silverlight and .NET</title><description>Currently, a Silverlight Class Library cannot be loaded by the server side project and vice versa. This despite there being very close parity in the BCL on either side. Now, I agree that sharing actual business logic between client and server is a bit of an edge case, but when it comes to data interchange, having a single codebase for you DTOs would be very useful.
+
+&lt;p&gt;Luckily, with a bit of trickery, this can be accomplished, although it would be nice if Visual Studio could just do this for you. I've done this on two different projects, once creating DTOs that were then serialized using the JSON DataContract serializer and other other time using the normal XmlSerializer.
+
+&lt;p&gt;The basic trick is this: Two separate projects can point at the same source code files (and even the integrated source control providers will play along with this game). However, playing by Visual studio rules you can't just create two projects in the same directory because the wizards treats &lt;b&gt;ProjectName == DirectoryName&lt;/b&gt;. Here's how you get around this:
+
+&lt;ol&gt;
+
+&lt;li&gt;Create a new server side Class Library, say &lt;b&gt;Server.Dto&lt;/b&gt;.
+&lt;li&gt;Create a new Silverlight Class Library, say &lt;b&gt;Silverlight.Dto&lt;/b&gt;.
+&lt;li&gt;Clean out that default Class.cs and update both to have the same default namespace &lt;b&gt;Foo.Dto&lt;/b&gt;. Your solution should look something like this:
+&lt;br&gt;&lt;img src="http://www.claassen.net/images/mutantassembly1.jpg"/&gt;
+&lt;li&gt;Now, right-click on &lt;b&gt;Silverlight.Dto&lt;/b&gt; and choose &lt;b&gt;Remove&lt;/b&gt;
+&lt;li&gt;Close Visual Studio
+&lt;li&gt;Rename the &lt;b&gt;Silverlight.Dto/Properties&lt;/b&gt; directory to &lt;b&gt;Silverlight.Dto/Silverlight.Properties&lt;/b&gt;
+&lt;li&gt;Copy &lt;b&gt;Silverlight.Properties&lt;/b&gt; and &lt;b&gt;Silverlight.Dto.csproj&lt;/b&gt; to the &lt;b&gt;Server.Dto&lt;/b&gt; directory
+&lt;li&gt;Now, &lt;i&gt;and this is the tricky bit&lt;/i&gt;, open &lt;b&gt;Silverlight.Dto.csproj&lt;/b&gt; in some text-editor (notepad works, but &lt;b&gt;don't&lt;/b&gt; try to use Visual studio for this) and change the line
+
+&lt;pre&gt;&amp;lt;Compile Include="Properties\AssemblyInfo.cs" /&amp;gt;&lt;/pre&gt;
+
+to
+
+&lt;pre&gt;&amp;lt;Compile Include="Silverlight.Properties\AssemblyInfo.cs" /&amp;gt;&lt;/pre&gt;
+
+&lt;li&gt; Re-open your solution, right-click on the Solution in the Solution Explorer and choose &lt;b&gt;Add -&amp;gt; Existing Project...&lt;/b&gt;, browse to &lt;b&gt;Server.Dto&lt;/b&gt; and select &lt;b&gt;Silverlight.Dto.csproj&lt;/b&gt;
+&lt;li&gt; Add your first shared class &lt;b&gt;FooDto.cs&lt;/b&gt; to Server.Dto (if you add it on the Silverlight side, you need to clean up a bunch of &lt;i&gt;using&lt;/i&gt; statements).
+&lt;li&gt; Select &lt;b&gt;Silverlight.Dto&lt;/b&gt; and click the &lt;b&gt;Show All Files&lt;/b&gt; button at the top of the panel. You should see &lt;b&gt;FooDto.cs&lt;/b&gt; in &lt;b&gt;Silverlight.Dto&lt;/b&gt; now
+&lt;li&gt; Right-click &lt;b&gt;FooDto.cs&lt;/b&gt; and choose &lt;b&gt;Include in Project&lt;/b&gt;, like this:
+&lt;br&gt;&lt;img src="http://www.claassen.net/images/mutantassembly2.jpg"/&gt;
+&lt;li&gt; &lt;i&gt;Voila,&lt;/i&gt; you now have two assemblies referencing the same code so that you can use the same code on both client and server sides. Just repeat the last couple of steps for every new class you want to share.
+&lt;/ol&gt;
+
+&lt;p&gt;I know you could use a Web Service from within Silverlight and would automatically generate you the proxy on the client side. And I'd recommend that if your payload is dynamic. However, if your payload is generated occasionally by a server side program or periodic service, this methods lets you create Dto's, serialized in your favorite manner that can be consumed as static files with &lt;b&gt;WebClient&lt;/b&gt;.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/249962437/sharing-code-between-silverlight-and.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">1</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/03/sharing-code-between-silverlight-and.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-5244199178167071559</guid><pubDate>Sat, 08 Mar 2008 19:42:00 +0000</pubDate><atom:updated>2008-03-08T12:12:23.791-08:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">epoch</category><category domain="http://www.blogger.com/atom/ns#">Extension method</category><category domain="http://www.blogger.com/atom/ns#">unix time</category><category domain="http://www.blogger.com/atom/ns#">c#</category><title>Epoch DateTime conversion Extension Methods</title><description>Interop with unix often requires dealing with Epoch or &lt;a href="http://en.wikipedia.org/wiki/Unix_time"&gt;Unix time&lt;/a&gt;, or the number of seconds since January 1st, 1970 UTC. And if you throw java in the mix, then epoch becomes milliseconds, since they define &lt;b&gt;System.currentTimeMillis()&lt;/b&gt; as the number &lt;i&gt;milli&lt;/i&gt;seconds since the Epoch. Anyway, i figured, this was the perfect use of Extension methods. Well, almost... There's still the issue that getting a DateTime object from seconds requires a static method added to DateTime, which extension methods do not currently support. This means that instead of
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+DateTime utcDateTime = DateTime.FromEpochSeconds(seconds)&lt;/pre&gt;
+&lt;/div&gt;
+
+we have to be content with
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+DateTime utcDateTime = DateTimeEx.FromEpochSeconds(seconds)&lt;/pre&gt;
+&lt;/div&gt;
+
+Now i also added extensions on long and int but, really, that falls into the realm of stupid extension method tricks. I left them in there, only because they are part of DateTimeEx, therefore will only be available if the appropriate namespace is included and so is at least tangentially relevant in the current scope. Well, that's my rationalization, at least. With this extra extension method you now can do
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+DateTime utcDateTime = 1205003848.DateTimeFromEpochSeconds();&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The one thing to be aware of with all these helpers is that it always deals with UTC time, i.e. the DateTime that you convert to epoch time needs to have a &lt;b&gt;DateTimeKind&lt;/b&gt; that is not &lt;i&gt;Unspecified&lt;/i&gt;. Conversely, the DateTime you get back is UTC and if you want to deal with it with localtime, you need to call &lt;b&gt;ToLocalTime()&lt;/b&gt; on it first.
+
+&lt;p&gt;Anyway, here's the class: 
+
+&lt;p&gt;
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+&lt;span class="kwrd"&gt;using&lt;/span&gt; System;
+
+&lt;span class="kwrd"&gt;namespace&lt;/span&gt; Droog.DateTime
+{
+  &lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;static&lt;/span&gt; &lt;span class="kwrd"&gt;class&lt;/span&gt; DateTimeEx
+  {
+    &lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;static&lt;/span&gt; DateTime FromEpochMilliseconds(&lt;span class="kwrd"&gt;long&lt;/span&gt; milliseconds)
+    {
+      &lt;span class="kwrd"&gt;return&lt;/span&gt; &lt;span class="kwrd"&gt;new&lt;/span&gt; DateTime(1970, 1, 1,0,0,0,DateTimeKind.Utc).AddMilliseconds(milliseconds);
+    }
+
+    &lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;static&lt;/span&gt; DateTime FromEpochSeconds(&lt;span class="kwrd"&gt;int&lt;/span&gt; seconds)
+    {
+      &lt;span class="kwrd"&gt;return&lt;/span&gt; FromEpochMilliseconds((&lt;span class="kwrd"&gt;long&lt;/span&gt;)seconds * 1000);
+    }
+
+    &lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;static&lt;/span&gt; DateTime DateTimeFromEpochMilliSeconds(&lt;span class="kwrd"&gt;this&lt;/span&gt; &lt;span class="kwrd"&gt;long&lt;/span&gt; milliseconds)
+    {
+      &lt;span class="kwrd"&gt;return&lt;/span&gt; FromEpochMilliseconds(milliseconds);
+    }
+
+    &lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;static&lt;/span&gt; DateTime DateTimeFromEpochSeconds(&lt;span class="kwrd"&gt;this&lt;/span&gt; &lt;span class="kwrd"&gt;int&lt;/span&gt; seconds)
+    {
+      &lt;span class="kwrd"&gt;return&lt;/span&gt; FromEpochSeconds(seconds);
+    }
+
+    &lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;static&lt;/span&gt; &lt;span class="kwrd"&gt;int&lt;/span&gt; ToEpochSeconds(&lt;span class="kwrd"&gt;this&lt;/span&gt; DateTime dt)
+    {
+      &lt;span class="kwrd"&gt;return&lt;/span&gt; (&lt;span class="kwrd"&gt;int&lt;/span&gt;)(ToEpochMilliseconds(dt)/1000);
+    }
+
+    &lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;static&lt;/span&gt; &lt;span class="kwrd"&gt;long&lt;/span&gt; ToEpochMilliseconds(&lt;span class="kwrd"&gt;this&lt;/span&gt; DateTime dt)
+    {
+      &lt;span class="kwrd"&gt;return&lt;/span&gt; (&lt;span class="kwrd"&gt;long&lt;/span&gt;)(dt.ToUniversalTime() - &lt;span class="kwrd"&gt;new&lt;/span&gt; DateTime(1970, 1, 1)).TotalMilliseconds;
+    }
+  }
+}
+&lt;/pre&gt;&lt;/div&gt;
+&lt;div id="csharpcode"&gt;
+&lt;/div&gt;
+&lt;div id="csharpcode"&gt;
+&lt;/div&gt;
+&lt;div id="csharpcode"&gt;
+&lt;/div&gt;
+&lt;div id="csharpcode"&gt;
+&lt;/div&gt;</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/248037586/epoch-datetime-conversion-extension.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/03/epoch-datetime-conversion-extension.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-3376130681961991649</guid><pubDate>Wed, 05 Mar 2008 06:05:00 +0000</pubDate><atom:updated>2008-03-04T22:28:48.052-08:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">synergy</category><title>Synergy</title><description>I used to run x2vnc and win2vnc back in the MP3 days to let me control my Windows and linux boxen. Later I used the same setup with my old MacBook 15" and a Linux box. The other day, my friend n8 &lt;a href="http://www.mybrainhurts.com/blog/2008/02/my-synergy-setup.html"&gt;posted about his Synergy setup&lt;/a&gt;, which came perfectly timed. I just started a new gig at &lt;a href="http://www.bunkspeed.com/"&gt;Bunkspeed&lt;/a&gt; and I'm using a dedicated desktop for dev instead of my MacBook Pro, but i don't want my Mac to be wasted. So i set up &lt;a href="http://synergy2.sourceforge.net/"&gt;Synergy&lt;/a&gt; on both my home and work desktops and have the Mac on a stand running two Synergy clients (only one of which ever finds a server to connect to. This setup rules!
+
+&lt;p&gt;&lt;b&gt;Update:&lt;/b&gt; Don't know if this is something i'll find a way around, but apparently logging on to the VPN killed the connectivity between my desktop and mac :(
+
+&lt;p&gt;&lt;b&gt;Update 2:&lt;/b&gt; Ok, as simple as going into the Advanced config and telling it what local IP to listen for connections on. All good again</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/245944920/synergy.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/03/synergy.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-5639112727615663715</guid><pubDate>Mon, 03 Mar 2008 21:30:00 +0000</pubDate><atom:updated>2008-03-03T13:32:54.609-08:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">wpf</category><category domain="http://www.blogger.com/atom/ns#">.net</category><title>VS2k5 &amp; WPF</title><description>After having tried a bunch of different iterations to get the WPF tools installed for VS2k5, here's what finally worked"
+
+&lt;ul&gt;
+&lt;li&gt;Install .NET 3.0
+&lt;li&gt;Install Visual Studio Tools for WCF/WPF
+&lt;li&gt;And only then install .NET 3.0 SP1
+&lt;/ul&gt;
+
+Talk about annoying dependencies.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/245100515/vs2k5-wpf.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/03/vs2k5-wpf.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-8162955168915056533</guid><pubDate>Wed, 27 Feb 2008 00:17:00 +0000</pubDate><atom:updated>2008-02-26T16:20:14.241-08:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">mono</category><category domain="http://www.blogger.com/atom/ns#">c#</category><title>Use .NET/Mono, it's the environmentally friendly choice</title><description>I just read what's got to be my favorite &lt;a href="http://tirania.org/blog/archive/2008/Feb-26.html"&gt;Miguel De Icaza quote&lt;/a&gt; to date:
+
+&lt;blockquote&gt;&lt;i&gt;In a world that is increasingly green, it is a waste of perfectly healthy computer cycles to interpret your code when you can use an optimizing JIT compiler to run your code.&lt;/i&gt;&lt;/blockquote&gt;
+
+I'm going to presume that's with tongue firmly implanted in cheek.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/241794742/use-netmono-its-environmentally.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/02/use-netmono-its-environmentally.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-4853458234567358959</guid><pubDate>Mon, 18 Feb 2008 22:43:00 +0000</pubDate><atom:updated>2008-02-18T15:21:57.574-08:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">c#</category><category domain="http://www.blogger.com/atom/ns#">.NET 3.5</category><title>Addicted to .Net 3.5</title><description>Outside of LINQ, i thought that 3.5 was a lot of cool but not vital syntactic sugar. This weekend marks the first time since November that I fired up VS.NET 2k5 to build an app targeting the 2.0 framework and I was amazed how much I'd already come to rely on that sugar. Now this might be seen as an invalidation of my preference of explicit, verbose syntax versus the terse syntax of many scripting languages. I'd like to point out that terseness and expressiveness in sytnax are two separate things. Syntactic sugar that let's me express my action in more concise code that easily conveys the meaning is not the same thing as using a terse vocabulary to keep the typing down and requiring memorization of abbreviated keywords to understand the code. Anyway, here are the parts of 3.5 I've missed more than once this weekend.
+
+&lt;h2&gt;Extension Methods on IEnumerable&lt;/h2&gt;
+
+The plethora of extension methods on all things IEnumerable is largely due to LINQ, but the &lt;i&gt;To*&lt;/i&gt; methods have become just a basic part of my vocubulary. Taking the Values of a Dictionary into an Array of the same type now is seems just painfully verbose without the ToArray() method. Compare
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+FileInfo[] f = &lt;span class="kwrd"&gt;new&lt;/span&gt; FileInfo[files.Count];
+files.Values.CopyTo(f,0);
+&lt;span class="kwrd"&gt;return&lt;/span&gt; f;
+&lt;/pre&gt;
+&lt;/div&gt;
+
+with
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+&lt;span class="kwrd"&gt;return&lt;/span&gt; files.Values.ToArray();
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Object/List initializer syntax&lt;/h2&gt;
+
+Now this I really thought of as frivolous. However, using objects that use DTOs as their initializer/storage, initialization does become rather awkward without loops or  long constructors:
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+      FileInfoData[] remoteFileData = &lt;span class="kwrd"&gt;new&lt;/span&gt; FileInfoData[]
+      {
+        &lt;span class="kwrd"&gt;new&lt;/span&gt; FileInfoData(),
+        &lt;span class="kwrd"&gt;new&lt;/span&gt; FileInfoData(),
+        &lt;span class="kwrd"&gt;new&lt;/span&gt; FileInfoData()
+      };
+      remoteFileData[0].name = &lt;span class="str"&gt;"test1.mpg"&lt;/span&gt;;
+      remoteFileData[1].name = &lt;span class="str"&gt;"test2.mpg"&lt;/span&gt;;
+      remoteFileData[2].name = &lt;span class="str"&gt;"test10.mpg"&lt;/span&gt;;
+      FileInfo[] remoteFiles = &lt;span class="kwrd"&gt;new&lt;/span&gt; FileInfo[]
+      {
+        &lt;span class="kwrd"&gt;new&lt;/span&gt; FileInfo(remoteFileData[0]),
+        &lt;span class="kwrd"&gt;new&lt;/span&gt; FileInfo(remoteFileData[1]),
+        &lt;span class="kwrd"&gt;new&lt;/span&gt; FileInfo(remoteFileData[2]),
+      };
+&lt;/pre&gt;&lt;/div&gt;
+
+versus
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+      FileInfo[] remoteFiles = &lt;span class="kwrd"&gt;new&lt;/span&gt; FileInfo[]
+      {
+        &lt;span class="kwrd"&gt;new&lt;/span&gt; FileInfo(&lt;span class="kwrd"&gt;new&lt;/span&gt; FileInfoData()
+        {
+          Name = &lt;span class="str"&gt;"test1.mpg"&lt;/span&gt;
+        }),
+        &lt;span class="kwrd"&gt;new&lt;/span&gt; FileInfo(&lt;span class="kwrd"&gt;new&lt;/span&gt; FileInfoData()
+        {
+          Name = &lt;span class="str"&gt;"test2.mpg"&lt;/span&gt;
+        }),
+        &lt;span class="kwrd"&gt;new&lt;/span&gt; FileInfo(&lt;span class="kwrd"&gt;new&lt;/span&gt; FileInfoData()
+        {
+          Name = &lt;span class="str"&gt;"test10.mpg"&lt;/span&gt;
+        }),
+      };
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Anonymous delegates are a pain and hard to read&lt;/h2&gt;
+
+I needed to pass in a delegate to a function as a factory callback. Perfect scenario for a nice concise lambda. But I was in 2.0, so that meant defining a delegate and anonymous delegate syntax resulting ing
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+  &lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;delegate&lt;/span&gt; ILocalFileSystemManager LocalCreateDelegate(&lt;span class="kwrd"&gt;string&lt;/span&gt; localPath, &lt;span class="kwrd"&gt;string&lt;/span&gt; extension);
+
+  &lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;class&lt;/span&gt; FileSystemManagerFactory
+  {
+    &lt;span class="kwrd"&gt;public&lt;/span&gt; FileSystemManagerFactory( LocalCreateDelegate localFactory )
+    {
+      &lt;span class="kwrd"&gt;this&lt;/span&gt;.localFactory = localFactory;
+    }
+  }
+
+FileSystemManagerFactory factory = &lt;span class="kwrd"&gt;new&lt;/span&gt; FileSystemManagerFactory(
+  &lt;span class="kwrd"&gt;delegate&lt;/span&gt;(&lt;span class="kwrd"&gt;string&lt;/span&gt; localPath, &lt;span class="kwrd"&gt;string&lt;/span&gt; extension)
+  {
+    &lt;span class="kwrd"&gt;return&lt;/span&gt; &lt;span class="kwrd"&gt;new&lt;/span&gt; MockLocalFileSystemManager(localPath, extension);
+  });&lt;/pre&gt;&lt;/div&gt;
+
+instead of 
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+  &lt;span class="kwrd"&gt;public&lt;/span&gt; FileSystemManagerFactory( Func&amp;lt;&lt;span class="kwrd"&gt;string&lt;/span&gt;,&lt;span class="kwrd"&gt;string&lt;/span&gt;,ILocalFileSystemManager&amp;gt; localFactory )
+  {
+    &lt;span class="kwrd"&gt;this&lt;/span&gt;.localFactory = localFactory;
+  }
+
+FileSystemManagerFactory factory = &lt;span class="kwrd"&gt;new&lt;/span&gt; FileSystemManagerFactory(
+  (localPath, extension)
+  =&amp;gt;
+  &lt;span class="kwrd"&gt;return&lt;/span&gt; &lt;span class="kwrd"&gt;new&lt;/span&gt; MockLocalFileSystemManager(localPath, extension);
+  );&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Automatic Properties&lt;/h2&gt;
+If there is one feature of C# (well and java as well) that is the most code generated, it's getters and setters. I've never liked how code generation tools created those for me, since i liked having my private members in one place and Properties in another. So i've been typing them out for years. But with C# 3.0, we got automatic properties. The two patterns, read/write properties and read-only properties are oft repeated like this
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+&lt;span class="kwrd"&gt;string&lt;/span&gt; readwriteMember;
+&lt;span class="kwrd"&gt;string&lt;/span&gt; readonlyMember;
+
+&lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;string&lt;/span&gt; ReadWrite
+{
+  get { &lt;span class="kwrd"&gt;return&lt;/span&gt; readwriteMember; }
+  set { readwriteMember = &lt;span class="kwrd"&gt;value&lt;/span&gt;; }
+}
+
+&lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;string&lt;/span&gt; ReadOnly { get { &lt;span class="kwrd"&gt;return&lt;/span&gt; readonlyMember; }
+
+&lt;/pre&gt;&lt;/div&gt;
+
+Not a ton of code, but certainly takes more time to write than
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+&lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;string&lt;/span&gt; ReadWrite { get; set; }
+
+&lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;string&lt;/span&gt; ReadOnly { get; &lt;span class="kwrd"&gt;private&lt;/span&gt; set; }
+&lt;/pre&gt;&lt;/div&gt;
+
+Ho hum.. I'm in 2.0, so i'll have to deal, but I certainly hope that 3.5 has a fast pick-up rate on the client (on the server, I can still control my environment).</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/237244714/addicted-to-net-35.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/02/addicted-to-net-35.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-4736683988001109373</guid><pubDate>Fri, 01 Feb 2008 18:05:00 +0000</pubDate><atom:updated>2008-02-02T11:47:47.203-08:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">lambda</category><category domain="http://www.blogger.com/atom/ns#">linq</category><category domain="http://www.blogger.com/atom/ns#">c#</category><title>LINQ: Immutability vs. Deferred execution</title><description>The last couple of nights I've been playing with some &lt;b&gt;Linq to Sql&lt;/b&gt; and a whole lot of &lt;b&gt;Linq to Objects&lt;/b&gt; and I have to say where coming up with complex Regular Expressions used to be one of my favorite puzzles, coming up with complex projections and transformations through Linq is quickly taking its place. Simple Linq is well documented, but when it comes to aggregation, it's a lot sparser. I expect to write more of that up once I feel more comfortable with the syntax.
+
+&lt;p&gt;In the meantime, I wanted to write up some non-obvious observation about deferred execution with Linq. Considering the gotchas with lambdas, it's easy to extend the lessons learned to linq, since it is after all deferred execution. But what's different with Linq is that, while execution is deferred, the expression tree built via a query is also immutable. I came across this trying to do some simple query re-use.
+
+&lt;p&gt;Let's start with a simple DTO:
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+&lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;class&lt;/span&gt; Order
+{
+  &lt;span class="kwrd"&gt;public&lt;/span&gt; Order(&lt;span class="kwrd"&gt;int&lt;/span&gt; id, &lt;span class="kwrd"&gt;int&lt;/span&gt; val, &lt;span class="kwrd"&gt;bool&lt;/span&gt; buyOrder)
+  {
+    Id = id;
+    Value = val;
+    IsBuyOrder = buyOrder;
+  }
+  &lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;int&lt;/span&gt; Id { get; set; }
+  &lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;int&lt;/span&gt; Value { get; set; }
+  &lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;bool&lt;/span&gt; IsBuyOrder { get; set; }
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+
+And a set of this data:
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+Order[] orders = &lt;span class="kwrd"&gt;new&lt;/span&gt; Order[]
+{
+  &lt;span class="kwrd"&gt;new&lt;/span&gt; Order(1,2,&lt;span class="kwrd"&gt;true&lt;/span&gt;),
+  &lt;span class="kwrd"&gt;new&lt;/span&gt; Order(2,2,&lt;span class="kwrd"&gt;false&lt;/span&gt;),
+  &lt;span class="kwrd"&gt;new&lt;/span&gt; Order(3,4,&lt;span class="kwrd"&gt;true&lt;/span&gt;),
+  &lt;span class="kwrd"&gt;new&lt;/span&gt; Order(4,4,&lt;span class="kwrd"&gt;false&lt;/span&gt;),
+  &lt;span class="kwrd"&gt;new&lt;/span&gt; Order(5,6,&lt;span class="kwrd"&gt;true&lt;/span&gt;),
+  &lt;span class="kwrd"&gt;new&lt;/span&gt; Order(6,6,&lt;span class="kwrd"&gt;false&lt;/span&gt;),
+};
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Let's split those into buy and sell orders:
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+var buyOrders = from order &lt;span class="kwrd"&gt;in&lt;/span&gt; orders
+          &lt;span class="kwrd"&gt;where&lt;/span&gt; order.IsBuyOrder
+          select order;
+
+var sellOrders = from order &lt;span class="kwrd"&gt;in&lt;/span&gt; orders
+                 &lt;span class="kwrd"&gt;where&lt;/span&gt; !order.IsBuyOrder
+                 select order;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;If we want to find the buy and the sell order with a value of 2, you'd think we could write one query and re-use it for both of those queries. Since both queries results in &lt;b&gt;IEnumerable&amp;lt;Order&amp;gt;&lt;/b&gt;, how about we define a query source and assign the value of either above query. 
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+IEnumerable&amp;lt;Order&amp;gt; orders2 = &lt;span class="kwrd"&gt;null&lt;/span&gt;;
+
+var orderAtTwo = from order &lt;span class="kwrd"&gt;in&lt;/span&gt; orders2
+                 &lt;span class="kwrd"&gt;where&lt;/span&gt; order.Value == 2
+                 select order;
+
+orders2 = buyOrders;
+&lt;span class="kwrd"&gt;int&lt;/span&gt; buyOrderId = orderAtTwo.First().Id;
+
+orders2 = sellOrders;
+&lt;span class="kwrd"&gt;int&lt;/span&gt; sellOrderId = orderAtTwo.First().Id;
+
+Console.WriteLine(&lt;span class="str"&gt;"buy Id: {0}, sell Id: {1}"&lt;/span&gt;, buyOrderId, sellOrderId);
+&lt;/pre&gt;&lt;/div&gt;
+
+Since the query is deferred until we call &lt;b&gt;.First()&lt;/b&gt; on it, that seems like a reasonable syntax. Except this will result in an &lt;b&gt;System.ArgumentNullException&lt;/b&gt; because our query grabbed a reference to &lt;i&gt;orders2&lt;/i&gt; at query definition, even though the query won't be executed until later. Giving &lt;i&gt;orders2&lt;/i&gt; a new value does not change the original reference in the immutable expression tree.
+
+&lt;p&gt;A way around this is to replace the actual contents of &lt;i&gt;orders2&lt;/i&gt;. However, for us to do that, we have to turn it into the query source into a collection first.
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+orders2.Clear();
+orders2.AddRange(buyOrders);
+&lt;span class="kwrd"&gt;int&lt;/span&gt; buyOrderId = orderAtTwo.First().Id;
+
+orders2.Clear();
+orders2.AddRange(sellOrders);
+&lt;span class="kwrd"&gt;int&lt;/span&gt; sellOrderId = orderAtTwo.First().Id;
+
+Console.WriteLine(&lt;span class="str"&gt;"buy Id: {0}, sell Id: {1}"&lt;/span&gt;, buyOrderId, sellOrderId);
+&lt;/pre&gt;&lt;/div&gt;
+
+This gives us the expected
+&lt;div id="csharpcode"&gt;&lt;pre class="csharpcode"&gt;
+buy Id: 1, sell Id: 2
+&lt;/pre&gt;&lt;/div&gt;
+
+Let's put aside the awkwardness of clearing out a list and stuffing data back in, this code has another unfortunate sideeffect. &lt;b&gt;.AddRange()&lt;/b&gt; actually executes the query passed to it, so we execute our buy and sell queries to populate &lt;i&gt;orders2&lt;/i&gt; and then execute &lt;b&gt;orderAtTwo&lt;/b&gt; twice against those collections.
+The beauty of linq is that if you create a query from a query, your not running multiple queries, but building a more complex query to be executed. So, what we really want is query "re-use" that results in single expression trees at execution time.
+
+&lt;p&gt;To achieve this, we need to move the shared query into a separate method such as:
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+&lt;span class="kwrd"&gt;private&lt;/span&gt; IEnumerable&amp;lt;Order&amp;gt; GetTwo(IEnumerable&amp;lt;Order&amp;gt; source)
+{
+  &lt;span class="kwrd"&gt;return&lt;/span&gt; from order &lt;span class="kwrd"&gt;in&lt;/span&gt; source
+         &lt;span class="kwrd"&gt;where&lt;/span&gt; order.Value == 2
+         select order;
+}
+&lt;/pre&gt;&lt;/div&gt;
+
+and the code becomes:
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+&lt;span class="kwrd"&gt;int&lt;/span&gt; buyOrderId = GetTwo(buyOrders).First().Id;
+&lt;span class="kwrd"&gt;int&lt;/span&gt; sellOrderId = GetTwo(sellOrders).First().Id;
+
+Console.WriteLine(&lt;span class="str"&gt;"buy Id: {0}, sell Id: {1}"&lt;/span&gt;, buyOrderId, sellOrderId);
+&lt;/pre&gt;&lt;/div&gt;
+
+This gives the same output as above, and we're only running two queries, each against the original collection. The method call means that we don't get to re-use an expression tree, since it builds a new one, combining the expression tree passed to it with the one it builds itself.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/227992953/linq-immutability-vs-deferred-execution.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/02/linq-immutability-vs-deferred-execution.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-4086050904740585632</guid><pubDate>Tue, 15 Jan 2008 23:39:00 +0000</pubDate><atom:updated>2008-01-15T15:57:05.257-08:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">automatic property</category><category domain="http://www.blogger.com/atom/ns#">c#</category><title>Struct's via Automatic Properties can be tricky</title><description>Here's a bit of code i just got through debugging...
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+&lt;span class="kwrd"&gt;public&lt;/span&gt; Point Point { get; &lt;span class="kwrd"&gt;private&lt;/span&gt; set; }
+
+&lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;void&lt;/span&gt; Offset(Point origin)
+{
+  Point.Offset(-origin.X, -origin.Y);
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+
+Can you tell what's wrong here? Let's just say that the Offset won't take.
+
+&lt;code&gt;struct&lt;/code&gt;s are value types, which means anytime you pass one around you get a new copy. So far so good. And that means when you expose a struct value via a property,  the accessing party always is looking at a copy. Again, fine, after all when you do a set you change the stored value and if you need to manipulate it, you just manipulate the actual struct.
+
+&lt;p&gt;Enter Automatic properties and you might forget about this last detail and not realize that you never get access to the underlying value, even from within the class. I.e. when I call &lt;b&gt;Point.Offset&lt;/b&gt;, i'm calling it on the copy that was passed to me and the resulting value is immediately thrown away. So i just went back to using the property to facade a private &lt;b&gt;Point&lt;/b&gt;, which i can now manipulate inside of &lt;b&gt;Offset&lt;/b&gt;. Duh.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/217343901/structs-via-automatic-properties-can-be.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/01/structs-via-automatic-properties-can-be.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-9143749385085242818</guid><pubDate>Fri, 11 Jan 2008 20:50:00 +0000</pubDate><atom:updated>2008-01-11T13:56:06.428-08:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">lambda</category><category domain="http://www.blogger.com/atom/ns#">foreach</category><category domain="http://www.blogger.com/atom/ns#">.net</category><category domain="http://www.blogger.com/atom/ns#">c#</category><category domain="http://www.blogger.com/atom/ns#">delegate</category><title>More Deferred Execution Fun: foreach and delegation scope</title><description>This is closely related to my &lt;a href="http://www.claassen.net/geek/blog/2007/12/dangers-of-deferred-execution.html"&gt;last post on deferred execution&lt;/a&gt; gotchas and its basically more "if you inline delegated code, you may easily overlook scope side-effects". This time it's about dealing with foreach and using the local each item for deferred execution.
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+&lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;void&lt;/span&gt; SpawnActions()
+{
+  &lt;span class="kwrd"&gt;foreach&lt;/span&gt; (ActionContext context &lt;span class="kwrd"&gt;in&lt;/span&gt; contexts)
+  {
+    &lt;span class="kwrd"&gt;int&lt;/span&gt; id = context.Id;
+    Action&amp;lt;&lt;span class="kwrd"&gt;int&lt;/span&gt;&amp;gt; callback =  
+      (workerNumber) =&amp;gt;
+      {
+        Console.WriteLine(&lt;span class="str"&gt;"{0} Id: {1}/{2}"&lt;/span&gt;, workerNumber, id, context.Id);
+      };
+    ThreadPool.QueueUserWorkItem(&lt;span class="kwrd"&gt;new&lt;/span&gt; WaitCallback(FutureExecute), callback);
+  }
+}
+
+&lt;span class="kwrd"&gt;public&lt;/span&gt; &lt;span class="kwrd"&gt;void&lt;/span&gt; FutureExecute(&lt;span class="kwrd"&gt;object&lt;/span&gt; state)
+{
+  &lt;span class="kwrd"&gt;int&lt;/span&gt; id = worker++;
+  Action&amp;lt;&lt;span class="kwrd"&gt;int&lt;/span&gt;&amp;gt; callback = state &lt;span class="kwrd"&gt;as&lt;/span&gt; Action&amp;lt;&lt;span class="kwrd"&gt;int&lt;/span&gt;&amp;gt;;
+  Thread.Sleep(500);
+  callback(id);
+}
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The output looks like this:
+&lt;div id="csharpcode"&gt;
+&lt;pre class="csharpcode"&gt;
+0 Id: 0/9
+1 Id: 1/9
+2 Id: 2/9
+3 Id: 3/9
+4 Id: 4/9
+5 Id: 5/9
+6 Id: 6/9
+7 Id: 7/9
+8 Id: 8/9
+9 Id: 9/9
+&lt;/pre&gt;
+&lt;/div&gt;
+
+So while the foreach scope variable context is kept alive for the deferred execution, it turns out that foreach re-uses the variable on each pass through the loop and therefore when the Action&lt;int&gt; is later executed, each one has a reference to the last context. So what we need to do is create a true local variable for context so that the lambda's scope can hold on to the reference we want.
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+  &lt;span class="kwrd"&gt;foreach&lt;/span&gt; (ActionContext context &lt;span class="kwrd"&gt;in&lt;/span&gt; contexts)
+  {
+    &lt;span class="kwrd"&gt;int&lt;/span&gt; id = context.Id;
+    &lt;span class="rem"&gt;// locally scoped variable&lt;/span&gt;
+    &lt;span class="kwrd"&gt;ActionContext&lt;/span&gt; c2 = context;
+    Action&amp;lt;&lt;span class="kwrd"&gt;int&lt;/span&gt;&amp;gt; callback =  
+      (workerNumber) =&amp;gt;
+      {
+        Console.WriteLine(&lt;span class="str"&gt;"{0} Id: {1}/{2}"&lt;/span&gt;, workerNumber, id, c2.Id);
+      };
+    ThreadPool.QueueUserWorkItem(&lt;span class="kwrd"&gt;new&lt;/span&gt; WaitCallback(FutureExecute), callback);
+  }
+
+&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;And now our results are a bit more what we expected:
+
+&lt;div id="csharpcode"&gt;
+&lt;pre class="csharpcode"&gt;
+0 Id: 0/0
+1 Id: 1/1
+2 Id: 2/2
+3 Id: 3/3
+4 Id: 4/4
+5 Id: 5/5
+6 Id: 6/6
+7 Id: 7/7
+8 Id: 8/8
+9 Id: 9/9
+&lt;/pre&gt;
+&lt;/div&gt;</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/215223483/more-deferred-execution-fun-foreach-and.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/01/more-deferred-execution-fun-foreach-and.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-3731104409054129969</guid><pubDate>Thu, 03 Jan 2008 22:17:00 +0000</pubDate><atom:updated>2008-01-03T14:26:15.662-08:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">usercontrol</category><category domain="http://www.blogger.com/atom/ns#">silverlight</category><category domain="http://www.blogger.com/atom/ns#">AG_E_INVALID_ARGUMENT</category><title>Copying a Silverlight User Control from one project to another</title><description>Here's something I tracked down with no help from error messages:
+
+&lt;p&gt;When you copy a user control in Silverlight 1.1 from one project to another the Xaml that the control loads will have it's &lt;b&gt;Build Action&lt;/b&gt; set to &lt;b&gt;&lt;i&gt;SilverlightPage&lt;/i&gt;&lt;/b&gt;. When you then run your project and try to create an instance of that control you'll get the ever so informative &lt;b&gt;AG_E_INVALID_ARGUMENT&lt;/b&gt;. All you need to do to fix it, is set the &lt;b&gt;Build Action&lt;/b&gt; to &lt;b&gt;&lt;i&gt;Embedded Resource&lt;/i&gt;&lt;/b&gt; again. &lt;i&gt;Tada!&lt;/i&gt;
+
+&lt;p&gt;I love declarative definition of UI with behavior wired to static code. But man, at its current state, the debugging support for it just isn't there. I mean it's bad enough that having strings in the declarative side to link to actions that won't be updated by normal refactoring, nor will they show up as references, but at this state Xaml brings the worst part of scripting languages to compile-time checked coding:
+
+&lt;p&gt;&lt;b&gt;Vague runtime errors without a stacktrace&lt;/b&gt;
+
+&lt;p&gt;Bah.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/210785741/copying-silverlight-user-control-from.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/01/copying-silverlight-user-control-from.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-4862263197364566727</guid><pubDate>Thu, 03 Jan 2008 16:45:00 +0000</pubDate><atom:updated>2008-01-03T09:23:48.013-08:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">activation</category><category domain="http://www.blogger.com/atom/ns#">boot camp</category><category domain="http://www.blogger.com/atom/ns#">vmware fusion</category><title>XP on Bootcamp &amp; VMWare Fusion, take 2</title><description>&lt;h2&gt;Time to re-install XP&lt;/h2&gt;
+
+&lt;p&gt;My setup until yesterday was Bootcamp partion that was running as a VM using VMWare Fusion. The Bootcamp partition was set up as FAT32, because I NTFS came up as readonly when mounted under Mac OS.
+
+&lt;p&gt;Then I started up another VM (Fedora Core 7, although i have since noticed it's not what OS you run, but just a second VM). Maybe it's not enough memory, maybe it's a VM running from bootcamp plus a VM running from a disk image, but while it had worked previously, this time, it locked up my Mac hard. I finally had to hard boot the Mac. When I got back into th VM, I noticed things were broken. Now, I've had to hard boot XP many times and I've never seen this. An indeterminate number of files were corrupted. I noticed one XML file that halfway through turned into binary garbage, so I assume that the other systems failing were suffering from similar corruption. Basically it was hosed, because there was no way to determine what had been corrupted. Time to re-install.
+
+&lt;h2&gt;Bootcamp &amp; VMware install&lt;/h2&gt;
+
+Looking at my post from last time, it was clearly written with the frazzled recollection of a day of trying to make things work, since i once again ran into problems. This time I'm making sure I write the resolution down.
+
+&lt;ol&gt;
+&lt;li&gt;Imaged the old partition, because you always realize that you forgot to back up some vital file.
+
+&lt;li&gt;Removed the old partition and created a new one (using the Bootcamp tool), this time large enough for more than just fallback use (since it's used daily under VMWare). This creates a FAT32 partition.
+
+&lt;li&gt;Inserted my install disk and Bootcamp restarted to fire up the windows install. Important note here, this has to be a real XP install disk. I first tried to use my MSDN DVD with the chooser for picking what OS to install. However, the Mac keyboard doesn't seem to work when you get to the menu. So I used an XP Pro w/ SP2 CD and rebooted. Now the installer ran just fine
+
+&lt;li&gt;Formatted the partition using NTFS. Even if you use FAT32, re-format, don't use the Bootcamp formatted partition. At least for me, using that prepared partition didn't work and created an unbootable image. I know NTFS cannot be written to by MacOS, but it doesn't really matter, since once I boot it as a VM, i can always transfer files via loopback file sharing. I'm going NTFS to get a journaling file system. Theoretically that should prevent the corruption I got last time.
+
+&lt;li&gt;After the install completes, pop in the Mac OS disk and let it install the Bootcamp utilities. This gives you full support for the Macbook Pro hardware.
+
+&lt;li&gt;Activate Windows and reboot into Mac OS X.
+
+&lt;li&gt;Fire up VMWare Fusion. Bootcamp partition should be listed as a VM. Since I previously had a bootcamp partition, I had to go into &lt;b&gt;Library::VMWare Fusion::Application Support::Virtual Machines&lt;/b&gt; and remove the old Bootcamp partition folder. Fusion will then do its magic and prep the Bootcamp partition to run as a VMWare Image.
+
+&lt;li&gt;Activate Windows again. That should be the last time you have to do it.
+
+&lt;/ol&gt;
+
+&lt;p&gt;Let's hope this doesn't turn into a bi-monthly process :)</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/210626324/xp-on-bootcamp-vmware-fusion-take-2.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">4</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2008/01/xp-on-bootcamp-vmware-fusion-take-2.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-1373429173464221732</guid><pubDate>Sun, 30 Dec 2007 21:39:00 +0000</pubDate><atom:updated>2007-12-30T14:03:31.650-08:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">lambda</category><category domain="http://www.blogger.com/atom/ns#">.net</category><category domain="http://www.blogger.com/atom/ns#">c#</category><category domain="http://www.blogger.com/atom/ns#">delegate</category><title>The dangers of deferred execution</title><description>I recently wrote about &lt;a href="http://www.claassen.net/geek/blog/2007/12/action-func-never-write-another.html"&gt;Action &amp; Func&lt;/a&gt;, which along with Lambda expression let you do easy inline callbacks like this:
+
+&lt;div id="csharpcode"&gt;
+&lt;!-- code formatted by http://manoli.net/csharpformat/ --&gt;
+&lt;pre class="csharpcode"&gt;
+Utility.ActionDownloader.Download(
+  Configuration.GetAssetUri(dto.Url),
+  (Downloader d) =&amp;gt;
+  {
+    FloatContainer c = (FloatContainer)XamlReader.Load(d.ResponseText);
+    c.Initialize(dto);
+  });
+&lt;/pre&gt;
+&lt;/div&gt;
+
+i.e. I can call a downloader and inline pass it a bit of code to execute once the download completes. But the catch of course is that looking at the code, and following the usual visual tracing of flow hides the fact that &lt;b&gt;c.Initialize(dto)&lt;/b&gt; doesn't get called until some asynchronous time in the future. Now, that's always been a side-effect of delegates, but until they became anonymous and inline, the visual deception of code &lt;i&gt;that looks like it's in the current flow scope but isn't&lt;/i&gt; wasn't there.
+
+&lt;p&gt;What happened was that I needed my main routine to execute some code after &lt;b&gt;FloatContainer&lt;/b&gt; was initialized, and by habit i created an &lt;b&gt;Initialized&lt;/b&gt; event on &lt;b&gt;FloatContainer&lt;/b&gt;. Of course this was superfluous, since my lambda expression called the synchronous &lt;b&gt;Initialize&lt;/b&gt;, i.e my action could be placed inline after that call to &lt;b&gt;c.Initialize(dto)&lt;/b&gt; and be guaranteed to be called after initialization had completed.
+
+&lt;p&gt;This scenario just meant I created some superfluous code. However, I'm sure as I use lambda expression more, there will be more pitfalls of writing code that doesn't consider that its execution time is unknown, as is the state of the objects tied to the scope of the expression.
+
+&lt;p&gt;This last bit about objects tied to the expression scope is especially tricky and I think we will see some help in terms of Immutable concepts weaving their way into C# 3.x or 4.0, as the whole functional aspect of lambda expressions really work best when dealing with objects that cannot change state. Eric Lippert's been laying the groundwork in a number of posts on the &lt;a href="http://blogs.msdn.com/ericlippert/archive/2007/11/13/immutability-in-c-part-one-kinds-of-immutability.aspx"&gt;subject&lt;/a&gt; and while he constantly disclaims that his ponderings are not a roadmap for C#, I am still going to assume that his interest and recognition of the subject of Immutables will have some impact in a future revision of the language. Well, I at least hope it does.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/208651454/dangers-of-deferred-execution.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2007/12/dangers-of-deferred-execution.html</feedburner:origLink></item><item><guid isPermaLink="false">tag:blogger.com,1999:blog-9991642.post-2927176555355174897</guid><pubDate>Fri, 14 Dec 2007 18:50:00 +0000</pubDate><atom:updated>2007-12-14T11:00:43.538-08:00</atom:updated><category domain="http://www.blogger.com/atom/ns#">activation</category><category domain="http://www.blogger.com/atom/ns#">boot camp</category><category domain="http://www.blogger.com/atom/ns#">vmware fusion</category><title>Software Activation vs. Virtualization, Part 3</title><description>Part of an &lt;a href="http://www.claassen.net/geek/blog/2007/12/software-activation-vs-virtualization.html"&gt;ongoing&lt;/a&gt; &lt;a href="http://www.claassen.net/geek/blog/2007/10/my-new-visual-studio-dev-workhorse.html"&gt;saga&lt;/a&gt;.
+
+&lt;p&gt;Rebooted back into VMWare Fusion and yeah, Illustrator Activation was indeed screwed there as well. Office 2007 too, but at least it just let's me reactivate (no doubt noting me as a repeat offender somewhere). So I called Adobe and was told that "it's a sensitive piece of software". No it's not. Illustrator can take any beating you give it.. It's the "anti-piracy" crap that's sensitive. I got an "emergency activation code" to get it going again and was advised to &lt;i&gt;Deactivate&lt;/i&gt; before i switch VM setups and then re-activate after the reboot. &lt;i&gt;OMFG&lt;/i&gt;. Seriously, just give me USB dongle if you are so sensitive about it. That would be inifintely more convenient.
+
+&lt;p&gt;Dug around the net a bit and it seems that if i fake my mac address to be the same between boot camp and the VM boot, it'll not invalidate my activation. Might try that next. Of course, the same board i found that on also noted that if I just got a crack for my legally purchased product, all troubles would be gone as well. Yes, once again, anti-piracy crap is not stopping pirates but legitimate customers. You'd figure someone  might have spotted the pattern here, but may those DRM-colored glasses filter reality a bit too well.</description><link>http://feeds.feedburner.com/~r/Iloggable/~3/200429616/software-activation-vs-virtualization_14.html</link><author>noreply@blogger.com (ether)</author><thr:total xmlns:thr="http://purl.org/syndication/thread/1.0">0</thr:total><feedburner:origLink>http://www.claassen.net/geek/blog/2007/12/software-activation-vs-virtualization_14.html</feedburner:origLink></item></channel></rss>

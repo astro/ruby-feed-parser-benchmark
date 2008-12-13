@@ -1,0 +1,1732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xml:lang="fr">
+  
+  <title type="html">Blog Bang Bang</title>
+  <subtitle type="html" />
+  <link href="http://blogbangbang.com/feed/atom" rel="self" type="application/atom+xml" />
+  <link href="http://blogbangbang.com/" rel="alternate" type="text/html" title="" />
+  <updated>2008-12-11T10:43:50+01:00</updated>
+  <author>
+    <name>Jonathan Blanchet</name>
+  </author>
+  <id>urn:md5:931c2a30cb56825e5d213c78ae910509</id>
+  <generator uri="http://www.dotclear.net/">Dotclear</generator>
+  
+    
+  <entry>
+    <title>En vrac</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/459943049/En-vrac" rel="alternate" type="text/html" title="En vrac" />
+    <id>urn:md5:63c70bacfb22f75366d8b4435ebbd08c</id>
+    <updated>2008-11-20T20:40:00+01:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>en vrac</dc:subject>
+        <dc:subject>accessibilité</dc:subject><dc:subject>flash</dc:subject><dc:subject>ruby</dc:subject><dc:subject>RubyOnRails</dc:subject><dc:subject>standards</dc:subject>    
+    <content type="html">    &lt;p&gt;
+Des nouvelles de l'open web, il va bien merci pour lui !&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.biologeek.com/conferences,web-semantique/le-web-semantique-ou-limportance-des-donnees-liees"&gt;Le Web sémantique&lt;/a&gt;, que le sujet vous parle ou non, si vous tenez à vos données, lisez cet article !.&lt;br /&gt;
+Soyez sympas, lisez aussi la suite mais vraiment cet article aurait valu un en vrac à lui tout seul !&lt;/li&gt;
+&lt;li&gt;
+De la &lt;a href="http://ajaxian.com/archives/canvas-in-3d"&gt;3D avec Canvas&lt;/a&gt;, hop encore un terrain ou les technos libres viennent concurrencer Flash.
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="http://ajaxian.com/archives/twih-video-tag-changes"&gt;La vidéo libre sur le net&lt;/a&gt;, oui oui ça avance...&lt;br /&gt;
+Prenez le temps, d'essayer, on peut déjà bien s'amuser en mettant par exemple du HTML en overlay, un peu de transparence CSS et un peu d'animation JS et faire pourquoi pas un petit player avancé...&lt;/li&gt;
+&lt;li&gt;Le son aussi, regardez cette open &lt;a href="http://ajaxian.com/archives/js-909-drum-machine-no-flash"&gt;drum machine&lt;/a&gt; !&lt;/li&gt;
+&lt;li&gt;Des applications web plus réactives, du temps réel, du push server, ça aussi on sait désormais faire avec des technologies et protocoles ouverts comme le &lt;a href="http://www.kaazing.org/confluence/display/KAAZING/What+is+Kaazing+Gateway"&gt;Kaazing Gateway&lt;/a&gt; et HTML 5 et ses WebSockets.&lt;br /&gt;
+Cela permet notamment de faire du chat, sans vérifier sans cesse s'il y a de nouveaux messages sur le serveur, ceux si &amp;quot;viendront&amp;quot; a vous automatiquement.&lt;/li&gt;
+&lt;li&gt;Même le web &amp;quot;clos&amp;quot; &lt;a href="http://www.theinquirer.fr/2008/11/17/adobe-ouvre-flash-64-bits-aux-open-sorciers.html"&gt;s'améliore&lt;/a&gt;, mais il peut faire &lt;a href="http://www.ajax-blog.com/how-flash-can-join-the-open-web.html"&gt;mieux&lt;/a&gt;, &lt;a href="http://codinginparadise.org/weblog/2008/11/how-flash-can-integrate-with-open-web.html"&gt;beaucoup mieux&lt;/a&gt;&lt;br /&gt;Ce dernier lien est lui aussi une lecture indispensable, pour comprendre ce qu'apporterait une libération du player Fash, mais également pourquoi cela n'est pas encore possible (n'oubliez pas de lire les commentaires).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Des nouvelles de Ruby et de ses frameworks, tout le monde va bien !
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://guides.rubyonrails.org/2_2_release_notes.html"&gt;Rails arrive en version 2.2&lt;/a&gt; avec plein de nouvelles features, notamment l'internationalisation dans le framework et le support de Jruby.&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://merbivore.com/"&gt;Merb 1.0&lt;/a&gt; : L'autre framework Ruby (en tout cas le deuxième plus connu) débarque en version 1.0. Merb est un framework agnostique, que ce soit pour les ORM(Active Record, Datamapper, Sequel...), les framework javascripts (JQuery, Prototype)...&lt;/li&gt;
+&lt;li&gt;Et ne venez plus me dire que Ruby/Rails/Merb/UnTrucAvecDuRubyDedans &lt;a href="http://www.slideshare.net/wycats/merb-camp-keynote-presentation"&gt;c'est lent&lt;/a&gt; (j'aurais bien aimé voir Symfony dans ces benchmarks, je pense qu'ils s'en sortirais mieux que ses compères PHP mais par rapport à Rails ou Merb ?).&lt;/li&gt;
+&lt;/ul&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/459943049" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/11/20/En-vrac#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/94</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/11/20/En-vrac</feedburner:origLink></entry>
+    
+  <entry>
+    <title>Flash player 10, caramba encore raté !</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/422429074/Flash-player-10-caramba-encore-rate" rel="alternate" type="text/html" title="Flash player 10, caramba encore raté !" />
+    <id>urn:md5:0770e99972dbba5f9714a8c52ccd4ce4</id>
+    <updated>2008-10-15T22:12:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>geeks</dc:subject>
+            
+    <content type="html">&lt;p&gt;
+La dernière version (10) du Flash PLayer est sortie aujourd'hui.&lt;br /&gt;
+Au menu des réjouissances, gestion de la 3D, utilisation partielle de la carte graphique, meilleure gestion des textes...&lt;br /&gt;
+Malheureusement tant de nouveauté ne saurait cacher la triste réalité cachée derrière cette sortie.
+&lt;/p&gt;
+&lt;p&gt;
+&lt;strong&gt;Flash n'as pas amélioré ses problèmes de compatibilité.&lt;/strong&gt;
+&lt;/p&gt;    &lt;p&gt;
+Compatibilité avec les plateformes tout d'abord : Même si le player est sorti pour la deuxième fois sur les 3 OS principaux en même temps, il faudra repasser pour les versions 64bits, pour les architectures mobiles...
+&lt;/p&gt;
+&lt;p&gt;
+Mais le pire reste la compatibilité avec &lt;strong&gt;lui-même&lt;/strong&gt;, ou rétro-compatibilité.
+&lt;/p&gt;
+&lt;p&gt;
+En effet, essayez d'installer la nouvelle version et d'aller uploader une nouvelle vidéo sur votre joli Wordpress ou tout autre outil utilisant SWFUpload, vous ne serez pas déçu ! Que dis-je, vous serez très déçu puisque SWFUpload, ne fonctionne plus avec la version 10 du Flash Player.
+&lt;/p&gt;
+&lt;p&gt;
+Raison invoquée : la sécurité, j'en déduis donc que les 95% actuels de la version 9 sont en danger ?
+&lt;/p&gt;
+&lt;p&gt;
+Bref, je ne vais pas encore m'acharner sur mon meilleur ennemi, mais encore une fois, reposer sur le logiciel montre ses limites, espérons simplement que les alternatives libres s'imposeront aussi vite que possible !
+&lt;/p&gt;
+&lt;p&gt;
+Allez puisque je suis un gros Troll :D, je ne résiste pas à l'idée de vous mettre ici quelques commentaires d'un article écrit il y a un an et demi :
+&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;
+la v9 du player lit sans problème un anim en Flash 3 faite en 98. La retro-compatibilité est et sera toujours assurée par Adobe pour des raisons commerciales évidentes. Maintenant, Flash est une techno qui évolue vite, l'AS est un langage qui évolue vite, et c'est bien. Et ça ne t'oblige en rien à modifier ton code à chaque release de Flash. A titre de comparaison, quand pourra-t-on utiliser les CSS 3?
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;&lt;p&gt;
+Pour ce qui est de la rétro compatibilité, Adobe ne risquera pas de se mettre à dos une bonne partie des développeurs (et des utilisateurs) de Flash en la faisant sauter.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;&lt;p&gt;
+Il faut aussi noter le fait que les swf ne &amp;quot;vieillissent&amp;quot; pas...
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Et pour se remonter le moral :
+&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;
+&amp;quot;Flash n'est pas selon moi, un format adapté à d'autres usages que ceux auxquels il est actuellement employé (vidéo et son), et il ne le deviendra pas&amp;quot;. OLOLOLOL
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Peut-on encore dire ceci à l'heure des balises audio et video ? &lt;a href="http://webkit.org/blog/140/html5-media-support/"&gt;HTML5 Balises Audio et Video&lt;/a&gt;&lt;br /&gt;
+ou encore :
+&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;
+Des belles polices c'est &amp;quot;joli tout plein&amp;quot; et c'est aussi précisément ce que ton client te demande. Si des grafeux, des DA, des typographes on choisi telle police pour pour le print, c'est pas pour voir une Verdana dégeu sur le site de l'annonceur. Et là, désolé, mais Flash est la seule et unique alternative. Il était question, à l'époque de l'apparition des CSS, de la possibilité d'encapsuler des polices à une page html. Ca n'a jamais abouti. Dommage. Flash, point barre.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a href="http://www.css3.info/font-face-in-the-wild/"&gt;CSS3 : c'est là, sous nos yeux ! Go go go !&lt;/a&gt;&lt;br /&gt;
+Oh punaise N*r*k va encore me tapper :D
+&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/422429074" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/10/15/Flash-player-10-caramba-encore-rate#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/93</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/10/15/Flash-player-10-caramba-encore-rate</feedburner:origLink></entry>
+    
+  <entry>
+    <title>Du neuf dans mon  PC  !</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/378945541/Du-neuf-dans-mon-PC" rel="alternate" type="text/html" title="Du neuf dans mon  PC  !" />
+    <id>urn:md5:877ff0cccc05959910f1f426fb7c5833</id>
+    <updated>2008-08-30T15:57:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>geeks</dc:subject>
+        <dc:subject>logiciels libres</dc:subject>    
+    <content type="html">    &lt;p&gt;
+Quand on est Developpeur Web, et par-dessus le tout un peu Geek,
+on passe pas mal de temps devant un PC.
+&lt;/p&gt;
+&lt;p&gt;
+De ce fait, on s'habitue à ses outils, ses logiciels et il est assez rare de
+voir un logiciel modifier en profondeur ses habitudes.
+&lt;/p&gt;
+&lt;p&gt;
+Pourtant, récemment, deux découvertes ont vraiment changé ma façon de travailler
+et de me servir de mon PC.
+&lt;/p&gt;
+&lt;h3&gt;Gnome-DO&lt;/h3&gt;
+&lt;p&gt;
+La première est le logiciel &lt;a hreflang="en" href="http://do.davebsd.com/"&gt;Gnome-Do&lt;/a&gt;, équivalent dans Gnome (Linux) de &lt;a hreflang="en" href="http://docs.blacktree.com/quicksilver/what_is_quicksilver"&gt;Quicksilver&lt;/a&gt;
+sous Mac ou &lt;a hreflang="en" href="http://humanized.com/enso/"&gt;Enso&lt;/a&gt; sous Windows.
+&lt;/p&gt;
+&lt;p&gt;
+Depuis toujours, pour lancer une application il fallait soit réduire les fenêtres
+gênantes pour aller cliquer sur le bureau, soit aller la chercher
+dans un menu sous 2 niveaux d'arborescence obscures (Last FM c'est dans Musique ou Internet ? )
+&lt;/p&gt;
+&lt;p&gt;
+Certes il y a aussi la barre des tâches ou le Dock mais ceux-ci s'encombrent très, très vite.
+&lt;/p&gt;
+&lt;p&gt;
+Avec Gnome-Do, tout est plus simple, une combinaison de touche et la fenêtre suivante apparait
+&lt;/p&gt;
+&lt;img title="do_1_small.png, aoû 2008" style="margin: 0 auto; display: block;" alt="" src="http://blogbangbang.com/public/do_1_small.png" /&gt;&lt;br /&gt;&lt;p&gt;
+Tapez ensuite les premières lettres de l'application à démarrer &amp;quot;Fil&amp;quot; pour Filezilla par exemple et
+Gnome-Do va deviner seul ce que vous souhaitez faire, un appui sur la touche Entrée plus tard, Filezilla est lancé.
+&lt;/p&gt;
+&lt;img title="do_3_small.png, aoû 2008" style="margin: 0 auto; display: block;" alt="" src="http://blogbangbang.com/public/do_3_small.png" /&gt;&lt;br /&gt;&lt;p&gt;
+Mais Gnome-Do va plus loin, tapez mail, ou chat et celui-ci vous affichera la liste des contacts correspondant à l'application choisie et démarrera automatiquement l'application correspondante (une fenêtre de chat Pidgin par exemple)
+&lt;/p&gt;
+&lt;img title="do_2_small.png, aoû 2008" style="margin: 0 auto; display: block;" alt="" src="http://blogbangbang.com/public/do_2_small.png" /&gt;&lt;br /&gt;&lt;p&gt;
+Des tas de plugins, pour gérer votre musique, Twitter... sont déjà disponibles et le gain de temps est tout simplement sidérant !
+&lt;/p&gt;
+&lt;p&gt;
+Seul défaut, l'application se base sur les mots, la langue... mais elle n'est pas pour autant localisée, pour rechercher une adresse sur Google il vous faudra donc taper &lt;br /&gt;
+&lt;code&gt;&lt;strong&gt;map&lt;/strong&gt; Rue de Tolbiac, Paris&lt;/code&gt;&lt;br /&gt;
+et pas &lt;br /&gt;
+&lt;code&gt;&lt;strong&gt;Carte&lt;/strong&gt; Rue de Tolbiac, Paris&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Pour les &amp;quot;Power users&amp;quot;, c'est plutôt une bonne nouvelle, l'anglais est souvent plus court et l'on chat plus régulièrement que l'on ne clavarde...
+&lt;/p&gt;
+&lt;p&gt;
+Par contre, pour le commun des mortels, ce sera surement un obstacle à une large adoption.
+&lt;/p&gt;
+&lt;h3&gt;Synergy&lt;/h3&gt;
+&lt;p&gt;
+Le deuxième logiciel à avoir changé ma façon de travailler récemment est &lt;a hreflang="en" href="http://synergy2.sourceforge.net/"&gt;Synergy&lt;/a&gt;.
+&lt;/p&gt;
+&lt;img title="synergy.gif, aoû 2008" style="margin: 0 auto; display: block;" alt="" src="http://blogbangbang.com/public/synergy.gif" /&gt;&lt;br /&gt;&lt;p&gt;
+Là pas de jaloux, les utilisateurs de Windows, de Mac, de Linux sont concernés, à condition d'avoir au moins deux machines.
+&lt;/p&gt;
+&lt;p&gt;
+En effet, Synergy vous permet en trois clics et avec une configuration du genre&amp;quot;plus simple tu meurs&amp;quot;, de partager le clavier et la souris de votre PC principal sur vos PC secondaires.
+&lt;/p&gt;
+&lt;p&gt;
+Vous pouvez préciser ou ceux-ci se place par rapport au PC &amp;quot;serveur&amp;quot; (droite, gauche, dessus dessous) et même effectuer des copier-coller de texte entre les PC.
+&lt;/p&gt;
+&lt;p&gt;
+Synergy s'accommode de ces tâches sous tous les environnements cités précémment mais également quand ceux-ci se &amp;quot;mélangent&amp;quot;, un PC Linux, le portable Windows à gauche, le MAC à droite et avec Synergy tout cela se contrôle avec 1 seul clavier et une seule souris !
+&lt;/p&gt;
+&lt;p&gt;Du bonheur à l'état pur ! &lt;/p&gt;
+&lt;p&gt;Une application ? &lt;/p&gt;
+&lt;p&gt;Vous êtes développeur Web, vous travaillez sous Linux, mais 60 % des personnes de ce monde utilisant encore un navigateur plus qu'obsolète,
+il vous faut tester tout vos sites sous IE6, IE7 et sous une résolution différente. &lt;/p&gt;
+&lt;p&gt;Une autre ? &lt;/p&gt;
+&lt;p&gt;
+Toujours développeur Web, vous développer une application dont le serveur est en RubyOnRails et vous avez l'habitude de coder tout cela sous Linux.
+&lt;br /&gt;Un des clients possible est une application, Flash, Flex ou AIR, là vos habitudes sont sous Windows...
+&lt;br /&gt;Avec Synergy, vous passez de l'un à l'autre en un subtil mouvement de poignet &lt;img src="/themes/john/smilies/smile.png" alt=":)" class="smiley" /&gt;
+&lt;/p&gt;
+&lt;p&gt; Testez, vous verrez ! &lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/378945541" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/08/30/Du-neuf-dans-mon-PC#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/92</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/08/30/Du-neuf-dans-mon-PC</feedburner:origLink></entry>
+    
+  <entry>
+    <title>ActionView : Imprimeur de son état</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/356831451/ActionView-%3A-Imprimeur-de-son-etat" rel="alternate" type="text/html" title="ActionView : Imprimeur de son état" />
+    <id>urn:md5:7194a5b66f789ccf00710e3937f348c2</id>
+    <updated>2008-08-06T00:37:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>tout public</dc:subject>
+        <dc:subject>ruby</dc:subject><dc:subject>RubyOnRails</dc:subject><dc:subject>vulgarisation</dc:subject>    
+    <content type="html">&lt;p&gt;
+3ème et dernière partie du Modèle M.V.C. dans Rails, la Vue.
+&lt;/p&gt;
+&lt;p&gt;
+Comme vous l'avez compris dans la partie précédente, Ruby on Rails est capable de produire ou de servir
+bien plus que des pages HTML et notamment du XML, du JSON, des images, du PDF... ...
+&lt;br /&gt;
+Toutefois, Rails a été particulièrement bien prévu pour la génération de HTML et en facilite grandement l'écriture...
+&lt;/p&gt;    &lt;p&gt;
+  Pour commencer sachez que le langage de templates inclus par défaut dans Rails se nomme &lt;strong&gt;erb&lt;/strong&gt;.
+  &lt;br /&gt;
+  D'autres existent (Builder, HAML... et ont leur intérêt, mais je m'attarderais ici seulement sur erb).
+&lt;/p&gt;
+
+&lt;p&gt;
+  Celui-ci vous permet d'intégrer du code Ruby dans votre code HTML comme vous le faites avec les balises &amp;lt;? et ?&amp;gt; de PHP.
+&lt;/p&gt;
+
+&lt;p&gt;
+  En Ruby deux types de balises existent : 
+  &lt;ul&gt; 
+    &lt;li&gt;Le code placé entre &amp;lt;% et %&amp;gt; sera interprété, mais pas affiché.&lt;/li&gt;
+    &lt;li&gt;Le code placé entre &amp;lt;%= et %&amp;gt; sera interprété et affiché.&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  On écrira par exemple pour afficher les informations d'un étudiant (méthode show) 
+&lt;/p&gt;
+
+&lt;code class="Ruby"&gt;&amp;lt;h1&amp;gt;Présentation&amp;lt;/h1&amp;gt;&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp; Prénom: &amp;lt;%= h &lt;span style="color:#0066ff; font-weight:bold;"&gt;@student&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;firstname&lt;/span&gt; %&amp;gt;&amp;lt;br /&amp;gt;&lt;br /&gt;
+&amp;nbsp; Nom: &amp;lt;%= h &lt;span style="color:#0066ff; font-weight:bold;"&gt;@student&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;lastname&lt;/span&gt; %&amp;gt;&amp;lt;br /&amp;gt; &lt;br /&gt;
+&amp;nbsp; &amp;nbsp;&lt;br /&gt;
+&amp;nbsp; &amp;lt;% &lt;span style="color:#9966CC; font-weight:bold;"&gt;if&lt;/span&gt; &lt;span style="color:#0066ff; font-weight:bold;"&gt;@student&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;major&lt;/span&gt;? %&amp;gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; Age : &amp;lt;%= &lt;span style="color:#0066ff; font-weight:bold;"&gt;@student&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;age&lt;/span&gt; %&amp;gt;&lt;br /&gt;
+&amp;nbsp; &amp;lt;% &lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt; %&amp;gt;&lt;/code&gt;
+
+&lt;p&gt;
+  &lt;code&gt;@student&lt;/code&gt; étant la variable passée par notre controller dans la méthode &lt;code&gt;show&lt;/code&gt; dans la partie ActionController de ce tutoriel.
+&lt;/p&gt;
+
+&lt;p class="info"&gt;
+  N.B. : Je n'ai pas écrit les méthodes major? et age dans mon modèle Student dans le tutoriel sur ActiveRecord mais l'intégralité de cette 
+  mini-application (absolument pas fonctionnelle) est disponible sur &lt;a href="http://github.com/" hreflang="en"&gt;Github&lt;/a&gt; sur &lt;a href="http://github.com/jblanche/tutoriel_ruby_rails/tree/master"&gt;mon dépot&lt;/a&gt;.
+  &lt;br /&gt;
+  Vous trouverez ce modèle &lt;a href="http://github.com/jblanche/tutoriel_ruby_rails/tree/master/app/models/student.rb"&gt;ici&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  Vous vous souvenez que l'on avait également une méthode update, censée mettre à jour les données d'un utilisateur provenant d'un formulaire.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Écrivons ce formulaire : 
+&lt;/p&gt;
+
+&lt;code class="Ruby"&gt;&amp;lt;% form_for &lt;span style="color:#0066ff; font-weight:bold;"&gt;@student&lt;/span&gt; &lt;span style="color:#9966CC; font-weight:bold;"&gt;do&lt;/span&gt; |s| %&amp;gt;&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp; &amp;lt;%= s.&lt;span style="color:#9900CC;"&gt;label&lt;/span&gt; &lt;span style="color:#ff3333; font-weight:bold;"&gt;:firstname&lt;/span&gt;, &lt;span style="color:#996600;"&gt;&amp;quot;Prénom&amp;quot;&lt;/span&gt; %&amp;gt;&amp;lt;br /&amp;gt;&lt;br /&gt;
+&amp;nbsp; &amp;lt;%= s.&lt;span style="color:#9900CC;"&gt;text_field&lt;/span&gt; &lt;span style="color:#ff3333; font-weight:bold;"&gt;:firstname&lt;/span&gt; %&amp;gt;&amp;lt;br /&amp;gt;&lt;br /&gt;
+&amp;nbsp; &lt;br /&gt;
+&amp;nbsp; &amp;lt;%= s.&lt;span style="color:#9900CC;"&gt;label&lt;/span&gt; &lt;span style="color:#ff3333; font-weight:bold;"&gt;:lastname&lt;/span&gt;, &lt;span style="color:#996600;"&gt;&amp;quot;Nom&amp;quot;&lt;/span&gt; %&amp;gt;&amp;lt;br /&amp;gt;&lt;br /&gt;
+&amp;nbsp; &amp;lt;%= s.&lt;span style="color:#9900CC;"&gt;text_field&lt;/span&gt; &lt;span style="color:#ff3333; font-weight:bold;"&gt;:lastname&lt;/span&gt; %&amp;gt;&amp;lt;br /&amp;gt;&lt;br /&gt;
+&amp;nbsp; &lt;br /&gt;
+&amp;nbsp; &amp;lt;%= s.&lt;span style="color:#9900CC;"&gt;label&lt;/span&gt; &lt;span style="color:#ff3333; font-weight:bold;"&gt;:date_of_birth&lt;/span&gt;, &lt;span style="color:#996600;"&gt;&amp;quot;Date de naissance&amp;quot;&lt;/span&gt; %&amp;gt;&amp;lt;br /&amp;gt;&lt;br /&gt;
+&amp;nbsp; &amp;lt;%= s.&lt;span style="color:#9900CC;"&gt;date_select&lt;/span&gt; &lt;span style="color:#ff3333; font-weight:bold;"&gt;:date_of_birth&lt;/span&gt; %&amp;gt;&amp;lt;br /&amp;gt;&lt;br /&gt;
+&amp;nbsp; &lt;br /&gt;
+&amp;nbsp; &amp;lt;%= submit_tag &lt;span style="color:#996600;"&gt;&amp;quot;Enregistrer&amp;quot;&lt;/span&gt; %&amp;gt;&lt;br /&gt;
+&amp;lt;% &lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt; %&amp;gt;&lt;/code&gt;
+
+&lt;p&gt;
+  Pas mal non &lt;img src="/themes/john/smilies/smile.png" alt=":)" class="smiley" /&gt;&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Oui ok un coup de CSS ne ferait pas de mal, mais là n'est pas le sujet&lt;/p&gt;
+
+&lt;p&gt;
+  En passant le @student à la méthode &lt;code&gt;form_for&lt;/code&gt;, 
+  celle-ci sait que le formulaire va modifier l'utilisateur existant et grâce à l'utilisation REST, elle peut aisément générer la balise &lt;code&gt;form&lt;/code&gt;correspondante.
+&lt;/p&gt;
+
+&lt;p&gt;
+De même, l'utilisation du &lt;code&gt;|s|&lt;/code&gt; permet d'appeler les méthodes de rails pour construire un formulaire ( &lt;code&gt;text_field&lt;/code&gt;, &lt;code&gt;date_select&lt;/code&gt;, &lt;code&gt;hidden_field&lt;/code&gt;...)
+en les associant à notre étudiant et donc de générer le code du formulaire avec les propriété &lt;code&gt;name&lt;/code&gt; des &lt;code&gt;input&lt;/code&gt; correctement renseignées.
+&lt;/p&gt;
+
+&lt;p&gt;
+Regardez plutôt le code généré : 
+&lt;/p&gt;
+
+&lt;pre class="pre_code"&gt;
+&amp;lt;form action=&amp;quot;/students/1-Jonathan_Blanchet&amp;quot; class=&amp;quot;edit_student&amp;quot; id=&amp;quot;edit_student_1&amp;quot; method=&amp;quot;post&amp;quot;&amp;gt;
+  &amp;lt;div style=&amp;quot;margin:0;padding:0&amp;quot;&amp;gt;
+  &amp;lt;input name=&amp;quot;_method&amp;quot; type=&amp;quot;hidden&amp;quot; value=&amp;quot;put&amp;quot; /&amp;gt;
+  &amp;lt;input name=&amp;quot;authenticity_token&amp;quot; type=&amp;quot;hidden&amp;quot; value=&amp;quot;c810f8897fcc7bab36a440cb4653b4f87de89d6e&amp;quot; /&amp;gt;
+  &amp;lt;/div&amp;gt;
+
+  &amp;lt;label for=&amp;quot;student_firstname&amp;quot;&amp;gt;Prénom&amp;lt;/label&amp;gt;&amp;lt;br /&amp;gt;
+  &amp;lt;input id=&amp;quot;student_firstname&amp;quot; name=&amp;quot;student[firstname]&amp;quot; size=&amp;quot;30&amp;quot; type=&amp;quot;text&amp;quot; value=&amp;quot;Jonathan&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+
+  &amp;lt;label for=&amp;quot;student_lastname&amp;quot;&amp;gt;Nom&amp;lt;/label&amp;gt;&amp;lt;br /&amp;gt;
+  &amp;lt;input id=&amp;quot;student_lastname&amp;quot; name=&amp;quot;student[lastname]&amp;quot; size=&amp;quot;30&amp;quot; type=&amp;quot;text&amp;quot; value=&amp;quot;Blanchet&amp;quot; /&amp;gt;&amp;lt;br /&amp;gt;
+  ...
+&amp;lt;/form&amp;gt;
+&lt;/pre&gt;
+
+&lt;p&gt;
+  Les inputs &lt;code&gt;_method&lt;/code&gt; et &lt;code&gt;authenticity_token&lt;/code&gt; sont automatiquement renseignés par Rails.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Le premier informe Rails sur le type de requête a utiliser selon la méthode REST (ici PUT) en attendant que les navigateurs 
+  implémentent les méthodes &lt;code&gt;PUT&lt;/code&gt; et &lt;code&gt;DELETE&lt;/code&gt; (seulement &lt;code&gt;GET&lt;/code&gt; ET &lt;code&gt;POST&lt;/code&gt; sont actuellement supportées).
+&lt;/p&gt;
+
+&lt;p&gt;
+  Le deuxième sert à protéger le formulaire contre des ataques extérieures mais comme le premier, vous n'aurez jamais à vous en soucier
+&lt;/p&gt;
+
+&lt;p&gt;
+  Pour le reste, vous noterez la forme &lt;code&gt;student[propriété]&lt;/code&gt; de tous les inputs qui nous permettra de récupérer un tableau student contenant tous les attributs de notre étudiant.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Vous noterez également que les propriétés &lt;code&gt;value&lt;/code&gt; ont été automatiquement proprement remplies.
+&lt;/p&gt;
+
+&lt;p&gt;
+Voilà pour notre formulaire.
+&lt;/p&gt;
+
+&lt;img title="Formulaire généré, aoû 2008" style="margin: 0 auto; display: block;" alt="" src="http://blogbangbang.com/public/ActionView_updateForm.png" /&gt;&lt;br /&gt;
+
+&lt;p&gt;
+  Vous vous souvenez surement que nos étudiants doivent avoir un nom et un prénom sous peine d'être &amp;quot;invalides&amp;quot; pour ActiveRecord.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Rajoutons en haut de notre page le code suivant : 
+&lt;/p&gt;
+
+&lt;code class="Ruby"&gt;&amp;lt;%= error_messages_for &lt;span style="color:#996600;"&gt;'student'&lt;/span&gt; %&amp;gt;&lt;/code&gt;
+&lt;p&gt;
+  Si on essaye désormais de sauvegarder notre utilisateur sans nom, nous aurons droit à ceci :
+&lt;/p&gt;
+
+&lt;img title="Erreurs de validation, aoû 2008" style="margin: 0 auto; display: block;" alt="" src="http://blogbangbang.com/public/./.ActionView_errorsDisplay_m.jpg" /&gt;&lt;br /&gt;
+
+&lt;p&gt;Évidemment, tous ces messages sont personnalisables très facilement &lt;img src="/themes/john/smilies/smile.png" alt=":)" class="smiley" /&gt; &lt;/p&gt;
+
+&lt;p&gt;
+  Je ne vous parlerais pas ici d'AJAX car même si la facilité de mise en place de fonctionnalités AJAX avec Rails est souvent mise en avant dans les tutoriels,
+  le code généré par Rails dans sa version actuelle n'est vraiment pas parfait et ne respecte pas le principe de séparation du contenu, de la présentation et du comportement (HTML - CSS - Javascript)
+&lt;/p&gt;
+
+&lt;p&gt;
+  Pour les plus curieux, je vous invite à regarder du côté de &lt;a href="http://ujs4rails.com/" hreflang="en"&gt;UJS&lt;/a&gt; un plugin permettant d'écrire ce genre de choses : 
+&lt;/p&gt;
+
+&lt;code class="Ruby"&gt;apply_behaviour &lt;span style="color:#996600;"&gt;'.list_item:click'&lt;/span&gt; &lt;span style="color:#9966CC; font-weight:bold;"&gt;do&lt;/span&gt; |page, element, event|&lt;br /&gt;
+&amp;nbsp; element.&lt;span style="color:#9900CC;"&gt;replace_html&lt;/span&gt; &lt;span style="color:#996600;"&gt;&amp;quot;Deleted.&amp;quot;&lt;/span&gt; &lt;br /&gt;
+&amp;nbsp; event.&lt;span style="color:#9900CC;"&gt;stop&lt;/span&gt;&lt;br /&gt;
+&lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;/code&gt;
+
+&lt;p&gt;
+  Pour en savoir plus sur la notion de &lt;a href="http://en.wikipedia.org/wiki/Progressive_Enhancement" hreflang="en"&gt;Progressive Enhancement&lt;/a&gt; (utilisation propre du Javascript) 
+  et sur les &lt;a href="http://alternateidea.com/event-selectors/" hreflang="en"&gt;CSS-based Selectors&lt;/a&gt;, je vous invite à lire &lt;a href="http://www.slideshare.net/matta/unobtrusive-javascript-sdrb-2007?src=embed" hreflang="en"&gt;cette excellente présentation&lt;/a&gt; (c'est court mais excellent) :
+&lt;/p&gt;
+
+&lt;p&gt;
+  Voilà, c'est terminé pour la partie vue et plus largement, pour cette série d'articles.
+&lt;/p&gt;
+
+&lt;p&gt;
+  J'espère vous avoir convaincu de l'intérêt de Ruby et de Ruby On Rails pour écrire vos applications Web.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Pour ma part, je m'étonne encore régulièrement de la facilité à écrire certaines choses en Ruby ! [private joke]Même une mamie Molette blonde pourrait le faire...[/private joke].
+&lt;/p&gt;
+
+&lt;p&gt;
+  Je vous invite maintenant à me laisser en commentaire, toutes vos questions, réflexions, demandes sur cette série d'articles et/ou sur Ruby/Ruby On Rails en général.
+  &lt;br /&gt;
+  J'y répondrais avec plaisir et peut-être sous la forme d'une FAQ qui pourrait faire office de billet de clôture de cette série. 
+&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/356831451" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/08/06/ActionView-%3A-Imprimeur-de-son-etat#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/91</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/08/06/ActionView-%3A-Imprimeur-de-son-etat</feedburner:origLink></entry>
+    
+  <entry>
+    <title>Maintenance : Dotclear2</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/352870157/Maintenance-%3A-Dotclear2" rel="alternate" type="text/html" title="Maintenance : Dotclear2" />
+    <id>urn:md5:5901ffcfb7f6442747fb5abea0be7568</id>
+    <updated>2008-08-01T20:28:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>en vrac</dc:subject>
+            
+    <content type="html">    &lt;p&gt;Ce blog est maintenant propulsé par la version 2 finale de Dotclear, le moteur de blog bien de chez nous.&lt;/p&gt;
+&lt;p&gt;Pas mal de nouveautés et d'amélioriotations dont une que j'attendais
+depuis très longtemps, la pré-visualisation des billets dans leur
+contexte (avec la présentation du blog final).&lt;/p&gt;
+&lt;p&gt;Le système d'importation des médias a été revu et amélioré, bref ça m'a l'air pas mal du tout &lt;img src="/themes/john/smilies/smile.png" alt=":)" class="smiley" /&gt; &lt;/p&gt;
+L'ensemble des caractéristiques de cette version est disponible &lt;a href="http://www.dotclear.net/blog/post/2008/08/01/Sortie-de-Dotclear-20"&gt;sur le site officiel&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;J'ai plusieurs fois été tenté par une migration vers Wordpress ou un moteur de blog écrit avec RubyonRails (Typo ou Méphisto) mais à priori je vais trainer encore un peu sous Dotclear. &lt;img src="/themes/john/smilies/smile.png" alt=":)" class="smiley" /&gt;&lt;br /&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/352870157" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/08/01/Maintenance-%3A-Dotclear2#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/90</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/08/01/Maintenance-%3A-Dotclear2</feedburner:origLink></entry>
+    
+  <entry>
+    <title>ActionController : Monsieur Circulation</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/350883418/ActionController-%3A-Monsieur-Circulation" rel="alternate" type="text/html" title="ActionController : Monsieur Circulation" />
+    <id>urn:md5:1fc0572cc9cd4717ecf5213e6cbd8326</id>
+    <updated>2008-07-30T23:10:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>tout public</dc:subject>
+        <dc:subject>ruby</dc:subject><dc:subject>RubyOnRails</dc:subject><dc:subject>vulgarisation</dc:subject>    
+    <content type="html">&lt;p&gt;
+Dans Rails, ActionController fait la circulation, il va à chaque requête, appeler les modèles nécessaires pour récupérer les données, puis appeler la méthode render pour afficher une vue, un XML... et vous renvoyer le tout.
+&lt;/p&gt;
+&lt;p&gt;
+La politique Rails veut que les controllers soient légers.
+&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;
+&amp;quot;Skinny Controller, Fat Model&amp;quot;&lt;br /&gt;
+&lt;cite&gt;Jamis Buck, 37signals employee&lt;/cite&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Et ça tombe bien Rails fourni tout ce qu'il faut pour vous simplifier la vie...
+&lt;/p&gt;    &lt;p&gt;
+  Imaginez par exemple que vous vouliez une interface de gestion de nos étudiants précédemment crées.
+  &lt;br /&gt;
+  Si nos souhaits se limitent à l'ajout, modification, suppression, le scaffold de Rails ferait l'affaire,
+  mais on va ici partir &amp;quot;from scratch&amp;quot; pour vous montrer à quel point tout ceci est aisé.
+&lt;/p&gt;
+
+&lt;p&gt;
+  On créera alors un Controller StudentsController 
+&lt;/p&gt;
+
+&lt;code class="Ruby"&gt;script/generate controller Students&lt;/code&gt;
+
+&lt;p&gt;
+Rails2.1 permet de faire très facilement des controllers dit &amp;quot;Restful&amp;quot;.
+&lt;/p&gt;
+&lt;p&gt;
+  Si vous ne savez pas ce dont il s'agit je vous invite à lire l'excellente traduction de Biologeek d'un article de Softies on Rails :
+  &lt;br /&gt;
+  &lt;a href="http://www.biologeek.com/rest,traduction,web-semantique/pour-ne-plus-etre-en-rest-comprendre-cette-architecture/"&gt;Pour ne plus être en REST, comprendre cette architecture&lt;/a&gt;
+  &lt;br /&gt;
+  et/ou celle-ci de pompage.net :
+  &lt;br /&gt;
+  &lt;a href="http://www.pompage.net/pompe/comment-j-ai-explique-rest-a-ma-femme/"&gt;Comment j'ai expliqué REST à ma femme&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+Si vous avez lu et compris, vous aurez retenu qu'avec REST on utilise tous les verbes du protocole HTTP et qu'on parle de ressources plutôt que de pages web ou d'images... 
+&lt;/p&gt;
+&lt;p&gt;
+Les ressources, dans notre cas, ce sont des étudiants et voici quelques URLs qui vont nous intéresser 
+&lt;/p&gt;
+
+&lt;code class="Ruby"&gt;GET &amp;nbsp; &amp;nbsp;/students &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:action&lt;/span&gt;=&amp;gt;&lt;span style="color:#996600;"&gt;&amp;quot;index&amp;quot;&lt;/span&gt;&lt;br /&gt;
+POST &amp;nbsp; /students &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:action&lt;/span&gt;=&amp;gt;&lt;span style="color:#996600;"&gt;&amp;quot;create&amp;quot;&lt;/span&gt;&lt;br /&gt;
+GET &amp;nbsp; &amp;nbsp;/students/new &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:action&lt;/span&gt;=&amp;gt;&lt;span style="color:#996600;"&gt;&amp;quot;new&amp;quot;&lt;/span&gt;&lt;br /&gt;
+GET &amp;nbsp; &amp;nbsp;/students/:id/edit &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color:#ff3333; font-weight:bold;"&gt;:action&lt;/span&gt;=&amp;gt;&lt;span style="color:#996600;"&gt;&amp;quot;edit&amp;quot;&lt;/span&gt;&lt;br /&gt;
+GET &amp;nbsp; &amp;nbsp;/students/:id &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:action&lt;/span&gt;=&amp;gt;&lt;span style="color:#996600;"&gt;&amp;quot;show&amp;quot;&lt;/span&gt;&lt;br /&gt;
+PUT &amp;nbsp; &amp;nbsp;/students/:id &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:action&lt;/span&gt;=&amp;gt;&lt;span style="color:#996600;"&gt;&amp;quot;update&amp;quot;&lt;/span&gt;&lt;br /&gt;
+DELETE /students/:id &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:action&lt;/span&gt;=&amp;gt;&lt;span style="color:#996600;"&gt;&amp;quot;destroy&amp;quot;&lt;/span&gt;&lt;/code&gt;
+
+&lt;p&gt;
+  Vous aurez compris que pour afficher un utilisateur on fera /students/:id, 
+  mais et c'est là où REST intervient, on utilisera la même adresse pour le supprimer et le modifier.
+&lt;/p&gt;
+&lt;p&gt;
+  En effet une ressource = une URI, donc un utilisateur =&amp;gt; &amp;quot;/students/:id&amp;quot;
+&lt;/p&gt;
+
+&lt;p&gt;
+  Par contre, le type de requête HTTP, respectivement GET, DELETE ET PUT nous informera sur ce que l'on souhaite faire.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Avec Rails, les actions appelées sont les méthodes publiques des controllers, écrivons donc la méthode qui va afficher un utilisateur 
+&lt;/p&gt;
+
+&lt;code class="Ruby"&gt;&lt;span style="color:#9966CC; font-weight:bold;"&gt;def&lt;/span&gt; show&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#0066ff; font-weight:bold;"&gt;@student&lt;/span&gt; = Student.&lt;span style="color:#9900CC;"&gt;find&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;params&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#91;&lt;/span&gt;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:id&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#93;&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#41;&lt;/span&gt;&lt;br /&gt;
+&lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;/code&gt;
+
+&lt;p&gt;
+  &lt;strong&gt;Et voilà...&lt;/strong&gt;
+  &lt;br /&gt;
+  Quoi c'est tout :D
+&lt;/p&gt;
+&lt;p&gt;
+Oui, pour l'instant cela peut suffire, en effet Rails a récupéré notre ressource (l'utilisateur désiré) grâce au find et par défaut, il va appeler la méthode render avec la vue correspondante (show) dans le dossier des vues.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Cette dernière aura accès aux variables d'instance de notre classe et donc à l'objet @student et toutes ses propriétés.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Essayons maintenant d'écrire la méthode nécessaire à la modification (update) d'un utilisateur.
+&lt;/p&gt;
+
+&lt;code class="Ruby"&gt;&lt;span style="color:#9966CC; font-weight:bold;"&gt;def&lt;/span&gt; update&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#0066ff; font-weight:bold;"&gt;@student&lt;/span&gt; = Student.&lt;span style="color:#9900CC;"&gt;find&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;params&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#91;&lt;/span&gt;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:id&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#93;&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#41;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#0066ff; font-weight:bold;"&gt;@student&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;update_attributes&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;params&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#91;&lt;/span&gt;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:student&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#93;&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#41;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; redirect_to &lt;span style="color:#0066ff; font-weight:bold;"&gt;@student&lt;/span&gt;&lt;br /&gt;
+&lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;/code&gt;
+
+&lt;p&gt;  
+  Dans la première ligne, je récupère l'étudiant à créer.
+  &lt;br /&gt;
+  Dans la seconde j'update ses attributs (donc propriétés) avec les paramètres passés par le formulaire.
+  &lt;br /&gt;
+  Dans la dernière je redirige l'utilisateur vers le student modifié (cela appellera la méthode show précédemment créée)
+&lt;/p&gt;
+
+&lt;p&gt;
+  En réalité il faudrait gérer le fait que la sauvegarde se soit ou non bien passée, cela donnerait donc : 
+&lt;/p&gt;
+
+&lt;code class="Ruby"&gt;&lt;span style="color:#9966CC; font-weight:bold;"&gt;def&lt;/span&gt; update&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#0066ff; font-weight:bold;"&gt;@student&lt;/span&gt; = Student.&lt;span style="color:#9900CC;"&gt;find&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;params&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#91;&lt;/span&gt;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:id&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#93;&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#41;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;if&lt;/span&gt; &lt;span style="color:#0066ff; font-weight:bold;"&gt;@student&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;update_attributes&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;params&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#91;&lt;/span&gt;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:student&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#93;&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#41;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; redirect_to&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;@student&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#41;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;else&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; render &lt;span style="color:#ff3333; font-weight:bold;"&gt;:action&lt;/span&gt; =&amp;gt; &lt;span style="color:#996600;"&gt;&amp;quot;edit&amp;quot;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;br /&gt;
+&lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;/code&gt;
+
+&lt;p&gt;
+  C'est presque la même chose sauf que si la sauvegarde n'a pas fonctionné, on revient sur la page d'édition.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Voilà pour la version HTML, mais si vous avez compris REST, vous savez que l'on aimerait pouvoir 
+  avoir d'autre représentation de notre ressource qu'une page web ! 
+  &lt;br /&gt;
+  Pourquoi pas par exemple,  une représentation XML que l'on pourrait passer à un webservice distant ou je ne sais quel autre usage.
+&lt;/p&gt;
+
+&lt;p&gt;
+Ré-écrivons notre méthode show dans ce but 
+&lt;/p&gt;
+
+&lt;code class="Ruby"&gt;&lt;span style="color:#9966CC; font-weight:bold;"&gt;def&lt;/span&gt; show&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#0066ff; font-weight:bold;"&gt;@student&lt;/span&gt; = Student.&lt;span style="color:#9900CC;"&gt;find&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;params&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#91;&lt;/span&gt;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:id&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#93;&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#41;&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp; respond_to &lt;span style="color:#9966CC; font-weight:bold;"&gt;do&lt;/span&gt; |format|&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color:#CC0066; font-weight:bold;"&gt;format&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;html&lt;/span&gt; &lt;span style="color:#008000; font-style:italic;"&gt;# show.html.erb&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color:#CC0066; font-weight:bold;"&gt;format&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;xml&lt;/span&gt; &amp;nbsp;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#123;&lt;/span&gt; render &lt;span style="color:#ff3333; font-weight:bold;"&gt;:xml&lt;/span&gt; =&amp;gt; &lt;span style="color:#0066ff; font-weight:bold;"&gt;@student&lt;/span&gt; &lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#125;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;br /&gt;
+&lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;/code&gt;
+
+&lt;p&gt;
+  Et voilà, notre controller répondra désormais à la demande générée.
+  &lt;br /&gt;
+  Si vous lui demandez du HTML, celui là réagira comme précédemment, si vous le voulez en XML, il exécutera la ligne : 
+&lt;/p&gt;
+
+&lt;code class="Ruby"&gt;&lt;span style="color:#CC0066; font-weight:bold;"&gt;format&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;xml&lt;/span&gt; &amp;nbsp;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#123;&lt;/span&gt; render &lt;span style="color:#ff3333; font-weight:bold;"&gt;:xml&lt;/span&gt; =&amp;gt; &lt;span style="color:#0066ff; font-weight:bold;"&gt;@student&lt;/span&gt; &lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#125;&lt;/span&gt;&lt;/code&gt;  
+
+&lt;p&gt;
+  et renverra donc notre objet student converti en XML.
+&lt;/p&gt;
+
+&lt;p&gt;
+Vous voulez discuter avec une application Flash/Flex/AIR..., installez &lt;a href="http://www.rubyamf.org/" hreflang="en"&gt;RubyAMF&lt;/a&gt; 
+(l'équivalent Ruby de &lt;a href="http://www.amfphp.org/" hreflang="en"&gt;AMFPHP&lt;/a&gt;) et il vous suffira de rajouter : 
+&lt;/p&gt;
+
+&lt;code class="Ruby"&gt;&lt;span style="color:#CC0066; font-weight:bold;"&gt;format&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;amf&lt;/span&gt; &lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#123;&lt;/span&gt; render &lt;span style="color:#ff3333; font-weight:bold;"&gt;:amf&lt;/span&gt; =&amp;gt; &lt;span style="color:#0066ff; font-weight:bold;"&gt;@student&lt;/span&gt; &lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#125;&lt;/span&gt;&lt;/code&gt;
+
+&lt;p&gt;
+  Et voilà vous avez côté ActionScript votre objet tout chaud sans nécessité de désérialisation.
+  &lt;br /&gt;
+  Et vous n'avez presque rien eu à faire côté Rails et finalement, c'est normal, la logique et la ressource sont les mêmes, seul le rendu change ! 
+&lt;/p&gt;
+
+&lt;p&gt;
+  Comme vous pouvez le voir, ActionController se débrouille donc très bien pour faire la circulation entre la vue et les modèles. 
+&lt;/p&gt;
+
+
+&lt;img src="http://blogbangbang.com/public/./.carrefour_m.jpg" alt="carrefour" style="margin: 0 auto; display: block;" title="Spaghetti Junction, Chris Gin" /&gt;
+
+&lt;p&gt;
+  Une des rares autres tâches qui incombe au controller est le contrôle des accès, 
+  si vous souhaitez vérifier que l'utilisateur connecté peut accéder à telle ou telle ressource, c'est à lui de s'en charger.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Imaginons dans notre exemple, que les étudiants puissent consulter les informations les concernant, 
+  mais que seul l'intendance puisse les éditer, ajouter, supprimer.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Ajoutons à notre controller la ligne suivante : 
+&lt;/p&gt;
+
+&lt;code class="Ruby"&gt;before_filter &lt;span style="color:#ff3333; font-weight:bold;"&gt;:authenticate&lt;/span&gt; , &lt;span style="color:#ff3333; font-weight:bold;"&gt;:exept&lt;/span&gt; =&amp;gt; &lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#91;&lt;/span&gt;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:index&lt;/span&gt;, &lt;span style="color:#ff3333; font-weight:bold;"&gt;:show&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#93;&lt;/span&gt;&lt;/code&gt;
+
+&lt;p&gt;
+  Cela signifie qu'avant toutes les méthodes sauf index et show,
+  on exécutera la méthode authenticate et que l'on ne fera la suite que si cette méthode renvoi &lt;code&gt;true&lt;/code&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+On peut donc rajouter à la fin de notre controller la méthode authenticate :
+&lt;/p&gt;
+
+&lt;code class="Ruby"&gt;private&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style="color:#9966CC; font-weight:bold;"&gt;def&lt;/span&gt; authenticate&lt;br /&gt;
+&amp;nbsp; authenticate_or_request_with_http_basic &lt;span style="color:#9966CC; font-weight:bold;"&gt;do&lt;/span&gt; |username, password|&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; username == &lt;span style="color:#996600;"&gt;&amp;quot;foo&amp;quot;&lt;/span&gt; &amp;amp;&amp;amp; password == &lt;span style="color:#996600;"&gt;&amp;quot;bar&amp;quot;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;br /&gt;
+&lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;/code&gt;
+
+&lt;p&gt;
+  On notera que la méthode a été placée après le mot clé private afin de signifier 
+  que celle-ci n'est pas une action exécutable par le navigateur.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Notre action va ouvrir une boite de dialogue (si l'utilisateur n'est pas encore authentifier)
+  nous demandant notre login et mot de passe et renverra true si et seulement si ceux-ci sont &amp;quot;foo&amp;quot; et &amp;quot;bar&amp;quot;
+  &lt;br /&gt;
+  N.B. : Evidement, en réalité, cette vérification s'effectuerait en base de donnée &lt;img src="/themes/john/smilies/smile.png" alt=":)" class="smiley" /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+  Et voilà, désormais seul les personnes connaissant les logins et mot de passe ont accès à l'intégralité de l'application. 
+&lt;/p&gt;
+
+&lt;p&gt;
+Ce sera tout pour ce soir, nous avons désormais vu &lt;a href="http://blogbangbang.com/post/2008/07/15/ruby_cest_quoi_comme_langage"&gt;comment écrire&lt;/a&gt; &lt;a href="http://blogbangbang.com/post/2008/07/19/Un-peu-de-syntaxe-Ruby"&gt;du Ruby&lt;/a&gt;, puis, comment fonctionnent les parties &lt;a href="http://blogbangbang.com/post/2008/07/25/ActiveRecord-%3A-Vos-donnees-c-est-mon-dada"&gt;Model&lt;/a&gt; et Controller de Rails.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Il ne nous reste donc plus qu'une partie à aborder : les vues. 
+  &lt;br /&gt;
+  A bientôt pour ce dernier chapitre. 
+&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/350883418" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/07/30/ActionController-%3A-Monsieur-Circulation#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/89</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/07/30/ActionController-%3A-Monsieur-Circulation</feedburner:origLink></entry>
+    
+  <entry>
+    <title>Maintenance : Déménagement</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/347685255/Maintenance-%3A-Demenagement" rel="alternate" type="text/html" title="Maintenance : Déménagement" />
+    <id>urn:md5:d687b0195d0483c9c27020da013f3e54</id>
+    <updated>2008-07-27T12:08:00+02:00</updated>
+    <author><name>jblanche</name></author>
+            
+    <content type="html">    &lt;p&gt;  Cette nuit, ce blog &lt;span title="" class="verupdated"&gt;a changé&lt;/span&gt; de serveur, vous avez vu &lt;span title="" class="modupdated"&gt;quelque chose&lt;/span&gt; ?  &lt;/p&gt;
+&lt;p&gt; &lt;span title="" class="ver"&gt;Non, et&lt;/span&gt; bien c'est tant mieux &lt;img src="/themes/john/smilies/smile.png" alt=":)" class="smiley" /&gt;  &lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/347685255" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/07/27/Maintenance-%3A-Demenagement#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/88</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/07/27/Maintenance-%3A-Demenagement</feedburner:origLink></entry>
+    
+  <entry>
+    <title>ActiveRecord : Vos données, c'est mon dada.</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/346011864/ActiveRecord-%3A-Vos-donnees-c-est-mon-dada" rel="alternate" type="text/html" title="ActiveRecord : Vos données, c'est mon dada." />
+    <id>urn:md5:95127ed41e1bfcfd8b64485c06e3940a</id>
+    <updated>2008-07-25T22:24:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>tout public</dc:subject>
+        <dc:subject>ruby</dc:subject><dc:subject>RubyOnRails</dc:subject><dc:subject>vulgarisation</dc:subject>    
+    <content type="html">&lt;p&gt;
+Nous allons donc commencer par le M du M.V.C., le modèle :
+&lt;br /&gt;
+ActiveRecord c'est le gestionnaire de vos données et donc la plupart du temps, de votre Base de données dans Rails
+&lt;br /&gt;
+Ça tombe bien, la partie Base de données est surement la plus magique de Rails...
+&lt;/p&gt;    &lt;p&gt;
+Question à 100 piasses : Qui aime écrire du SQL ?
+&lt;br /&gt;
+Ceux qui ont répondu OUI peuvent s'en aller :D
+&lt;/p&gt;
+&lt;p&gt;
+En effet que ce soit à la création ou au traitement de vos données, vous n'écrirez pratiquement jamais de SQL avec Rails.
+&lt;br /&gt;
+Mais alors comment on les crée nos bases ?
+&lt;/p&gt;
+&lt;p&gt;
+La réponse de Rails s'appelle les migrations.
+&lt;br /&gt;
+Quand vous voulez créer une nouvelle table, vous créez (ou faite faire à Rails) une nouvelle migration, celle-ci comporte deux méthodes &amp;quot;up&amp;quot; et &amp;quot;down&amp;quot;.
+&lt;/p&gt;
+&lt;p&gt;
+De cette manière, il sera aisé pour Rails de revenir en arrière si finalement votre implémentation de la base ne vous plait pas.
+&lt;/p&gt;
+&lt;p&gt;
+La création de ce modèle s'écrira : (à exécuter en console ou dans l'interface de votre IDE)
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;script/generate model Student firstname:&lt;span style="color:#CC0066; font-weight:bold;"&gt;string&lt;/span&gt; lastname:&lt;span style="color:#CC0066; font-weight:bold;"&gt;string&lt;/span&gt; date_of_birth:date section:&lt;span style="color:#CC0066; font-weight:bold;"&gt;string&lt;/span&gt; promotion_id:&lt;span style="color:#CC0066; font-weight:bold;"&gt;integer&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+On précise que l'on veut créer un modèle, on donne ensuite son nom, puis les colonnes de la base de données avec leur types.
+&lt;/p&gt;
+&lt;p&gt;
+En exécutant ceci, vous créer tous les fichiers de votre modèle dont une migration ressemblant à ceci, dans le up, on crée notre table, dans le down on la supprime.
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;&lt;span style="color:#9966CC; font-weight:bold;"&gt;class&lt;/span&gt; AddStudents &amp;lt; &lt;span style="color:#6666ff; font-weight:bold;"&gt;ActiveRecord::Migration&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;def&lt;/span&gt; &lt;span style="color:#0000FF; font-weight:bold;"&gt;self&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;up&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; create_table &lt;span style="color:#ff3333; font-weight:bold;"&gt;:students&lt;/span&gt; &lt;span style="color:#9966CC; font-weight:bold;"&gt;do&lt;/span&gt; |t|&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; t.&lt;span style="color:#CC0066; font-weight:bold;"&gt;string&lt;/span&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:firstname&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; t.&lt;span style="color:#CC0066; font-weight:bold;"&gt;string&lt;/span&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:lastname&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; t.&lt;span style="color:#9900CC;"&gt;date&lt;/span&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:date_of_birth&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; t.&lt;span style="color:#CC0066; font-weight:bold;"&gt;string&lt;/span&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:section&lt;/span&gt; &lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color:#008000; font-style:italic;"&gt;#S pour Scientifique, L pour Littéraire, ES pour Economique et Social&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; t.&lt;span style="color:#CC0066; font-weight:bold;"&gt;integer&lt;/span&gt; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color:#ff3333; font-weight:bold;"&gt;:promotion_id&lt;/span&gt; &amp;nbsp;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; t.&lt;span style="color:#9900CC;"&gt;timestamps&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;def&lt;/span&gt; &lt;span style="color:#0000FF; font-weight:bold;"&gt;self&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;down&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; drop_table &lt;span style="color:#ff3333; font-weight:bold;"&gt;:students&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+Plutôt simple n'est-ce pas ? Et avec ça Rails s'adaptera à votre base de données, qu'elle soit Mysql, Postgresql, Oracle, SQLite...
+&lt;/p&gt;
+&lt;p&gt;
+Et si demain vous changez Mysql pour Postgres, il suffira de faire un petit
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;rake db:migrate&lt;/code&gt;
+&lt;p&gt;
+pour récréer toutes vos tables (En réalité, Ruby éxécutera à la suite toutes les méthodes up de vos migrations).
+&lt;/p&gt;
+&lt;p&gt;
+Vous aurez surement remarqué le promotion_id, on supposera dans ce tutorial que l'on a ailleurs une table Promotion avec notamment l'année de la promo et que ce champ servira à faire le lien
+entre un étudiant et sa promotion.
+&lt;/p&gt;
+&lt;p&gt;
+Ok, mais cette liaison elle est définie où ? On a pas écrit les contraintes dans notre SQL là ?
+&lt;br /&gt;
+Oui c'est vrai, allons donc modifier nos modèles pour changer ça.
+Et puisque nous y somme, nous indiquerons qu'un étudiant doit forcément avoir un nom et un prénom (lignes not null en quelque sorte)
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;&lt;span style="color:#9966CC; font-weight:bold;"&gt;class&lt;/span&gt; Promotion &amp;lt; &lt;span style="color:#6666ff; font-weight:bold;"&gt;ActiveRecord::Base&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; has_many &lt;span style="color:#ff3333; font-weight:bold;"&gt;:students&lt;/span&gt;&lt;br /&gt;
+&lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;/code&gt;
+&lt;br /&gt;
+&lt;code class="Ruby"&gt;&lt;span style="color:#9966CC; font-weight:bold;"&gt;class&lt;/span&gt; Student &amp;lt; &lt;span style="color:#6666ff; font-weight:bold;"&gt;ActiveRecord::Base&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; belongs_to &lt;span style="color:#ff3333; font-weight:bold;"&gt;:promotion&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; validates_presence_of &lt;span style="color:#ff3333; font-weight:bold;"&gt;:firstname&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; validates_presence_of &lt;span style="color:#ff3333; font-weight:bold;"&gt;:lastname&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+Difficile de faire plus clair non ?
+&lt;/p&gt;
+&lt;p&gt;
+Oui mais dans le code après comment ça se passe ?
+&lt;/p&gt;
+&lt;p&gt;
+Imaginez que vous souhaitiez récupérer tous les étudiants (en gros un &lt;code&gt;SELECT * FROM students&lt;/code&gt;)
+&lt;br /&gt;
+vous ferez simplement
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;Student.&lt;span style="color:#9900CC;"&gt;all&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+Si vous voulez récupérer la ligne correspondant à la promotion de 2006 :
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;promo_2006 = Promotion.&lt;span style="color:#9900CC;"&gt;find_by_year&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color:#006666;"&gt;2006&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#41;&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+Les étudiants de cette promo :
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;promo_2006.&lt;span style="color:#9900CC;"&gt;students&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+Allez compliquons un peu, il n'y a pas de &lt;code&gt;where&lt;/code&gt;, pas de conditions dans nos requête actuelles, ajoutons les :
+&lt;/p&gt;
+&lt;p&gt;
+Disons que l'on ne veut récupérer que les étudiants Scientifiques.
+&lt;br /&gt;
+Ajoutons à notre modèle la ligne suivante :
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;named_scope &lt;span style="color:#ff3333; font-weight:bold;"&gt;:scientists&lt;/span&gt;, &lt;span style="color:#ff3333; font-weight:bold;"&gt;:conditions&lt;/span&gt; =&amp;gt; &lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#123;&lt;/span&gt;:section =&amp;gt; &lt;span style="color:#996600;"&gt;&amp;quot;S&amp;quot;&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#125;&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+En francais : on nommera &amp;quot;scientists&amp;quot; les étudiants ayant comme section &amp;quot;S&amp;quot;
+&lt;br /&gt;
+On peut désormais écrire
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;Student.&lt;span style="color:#9900CC;"&gt;scientists&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+pour récupérer tous les étudiants scientifiques
+&lt;/p&gt;
+&lt;p&gt;
+Ces &lt;code&gt;named_scope&lt;/code&gt; sont géniaux, ajoutons-en deux pour trouver les étudiant majeurs et mineurs.
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;named_scope &lt;span style="color:#ff3333; font-weight:bold;"&gt;:majors&lt;/span&gt;, &lt;span style="color:#ff3333; font-weight:bold;"&gt;:conditions&lt;/span&gt; =&amp;gt; &lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#91;&lt;/span&gt;&lt;span style="color:#996600;"&gt;'date_of_birth &amp;lt; ?'&lt;/span&gt;, &lt;span style="color:#006666;"&gt;18&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;years&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;ago&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#93;&lt;/span&gt;&lt;br /&gt;
+named_scope &lt;span style="color:#ff3333; font-weight:bold;"&gt;:minors&lt;/span&gt;, &lt;span style="color:#ff3333; font-weight:bold;"&gt;:conditions&lt;/span&gt; =&amp;gt; &lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#91;&lt;/span&gt;&lt;span style="color:#996600;"&gt;'date_of_birth &amp;gt; ?'&lt;/span&gt;, &lt;span style="color:#006666;"&gt;18&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;years&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;ago&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#93;&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+On peut maintenant faire dans tous nos Controllers :
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;Student.&lt;span style="color:#9900CC;"&gt;majors&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+Pour récupérer les étudiants majeurs.
+&lt;/p&gt;
+&lt;p&gt;
+Et si l'on veut, dans la promo 2006, les étudiants à la fois majeurs et scientifiques :
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;promo_2006.&lt;span style="color:#9900CC;"&gt;students&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;majors&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;scientists&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+Et le tour est joué !
+&lt;br /&gt;
+Incroyable non ? (qui me l'écrit en SQL avec la jointure et tout et tout ?)
+&lt;/p&gt;
+&lt;p&gt;
+C'est le moment de citer DHH  :
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+Beautiful code makes happy programmers.&lt;br /&gt;
+&lt;cite&gt;David Heinemeier Hansson, Créateur de Rails&lt;/cite&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Voilà pour les requêtes, pour créer un enregistrement, c'est tout aussi simple :
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;jb = Student.&lt;span style="color:#9900CC;"&gt;create&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:firstname&lt;/span&gt; =&amp;gt; &lt;span style="color:#996600;"&gt;&amp;quot;Jonathan&amp;quot;&lt;/span&gt;, &lt;span style="color:#ff3333; font-weight:bold;"&gt;:lastname&lt;/span&gt; =&amp;gt; &lt;span style="color:#996600;"&gt;&amp;quot;Blanchet&amp;quot;&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#41;&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+La création précédente fonctionnera puisqu'elle remplie bien les conditions décrites précédemment (un étudiant à forcément un nom et un prénom).
+&lt;/p&gt;
+&lt;p&gt;
+Allez un dernier exemple pour la route, imaginez que la personne utilisant cette application souhaite,
+dans l'interface de création des utilisateurs, pouvoir les lier à une promotion en tapant simplement l'année de celle-ci.
+&lt;/p&gt;
+&lt;p&gt;
+Côté modèle, cela veut dire qu'il va falloir trouver la promotion si elle existe, la crée sinon.
+&lt;/p&gt;
+&lt;p&gt;
+Une fois traduit en Rails cela donne :
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;Promotion.&lt;span style="color:#9900CC;"&gt;find_or_create_by_year&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;params&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#91;&lt;/span&gt;&lt;span style="color:#ff3333; font-weight:bold;"&gt;:year&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#93;&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#41;&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+Simple non &lt;img src="/themes/john/smilies/smile.png" alt=":)" class="smiley" /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Allez je vous attend pour la suite, on verra le rôle du Controller.
+&lt;/p&gt;
+&lt;p&gt;Les autres articles : &lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://blogbangbang.com/post/2008/07/15/ruby_cest_quoi_comme_langage"&gt;Ruby, c'est quoi comme langage ?&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://blogbangbang.com/post/2008/07/19/Un-peu-de-syntaxe-Ruby"&gt;Un peu de syntaxe Ruby...&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://blogbangbang.com/post/2008/07/25/Rails-la-locomotive-de-Ruby"&gt;Rails, la locomotive de Ruby !&lt;/a&gt;&lt;br /&gt;
+ActiveRecord : Vos données, c'est mon dada.&lt;br /&gt;
+&lt;a href="http://blogbangbang.com/post/2008/07/30/ActionController-%3A-Monsieur-Circulation"&gt;ActionController : Monsieur Circulation&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://blogbangbang.com/post/2008/08/06/ActionView-%3A-Imprimeur-de-son-etat"&gt;ActionView : Imprimeur de son état&lt;/a&gt;
+&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/346011864" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/07/25/ActiveRecord-%3A-Vos-donnees-c-est-mon-dada#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/87</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/07/25/ActiveRecord-%3A-Vos-donnees-c-est-mon-dada</feedburner:origLink></entry>
+    
+  <entry>
+    <title>Rails, la locomotive de Ruby !</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/346011865/Rails-la-locomotive-de-Ruby" rel="alternate" type="text/html" title="Rails, la locomotive de Ruby !" />
+    <id>urn:md5:3767570209b7ca63d0e55f91a11e7c04</id>
+    <updated>2008-07-25T22:20:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>tout public</dc:subject>
+        <dc:subject>ruby</dc:subject><dc:subject>RubyOnRails</dc:subject><dc:subject>vulgarisation</dc:subject>    
+    <content type="html">&lt;p&gt;
+On a vu dans les deux &lt;a href="http://blogbangbang.com/post/2008/07/15/ruby_cest_quoi_comme_langage"&gt;articles&lt;/a&gt; &lt;a href="http://blogbangbang.com/post/2008/07/19/Un-peu-de-syntaxe-Ruby"&gt;précédents&lt;/a&gt; les rudiments de la syntaxe Ruby.
+&lt;br /&gt;
+Normalement, vous êtes déjà séduit par ces débuts, mais vous n'avez encore rien vu !
+&lt;br /&gt;
+Alors ? Ce Ruby on Rails, qu'est ce donc ?
+&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;
+Rails is the killer app for Ruby.&lt;br /&gt;
+&lt;cite&gt;Yukihiro Matsumoto, Createur de Ruby&lt;/cite&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;    &lt;p&gt;
+Ruby on Rails, ou Rails, en fait, est un framework dédié au développement d'application Web.
+&lt;br /&gt;
+Un framework, c'est selon Wikipedia, un ensemble de bibliothèques, d'outils et de conventions permettant le développement d'applications.
+&lt;br /&gt;
+Ceux-ci permettent donc de donner un socle commun à toutes vos applications et en facilite du même coup le développement et la maintenance.
+&lt;/p&gt;
+&lt;p&gt;
+Rails a été à l'origine développé pour les besoins de la société américaine 37signals qui devant le succès et l'engouement remporté par l'application au sein de son activité, a décidé d'en extraire un framework qu'elle &amp;quot;donnerait&amp;quot; à la communauté du logiciel libre.
+&lt;/p&gt;
+&lt;p&gt;
+Rails suit les principes déjà énoncés dans les articles sur Ruby et y ajoute deux grandes règles :
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;strong&gt;La convention plutôt que la configuration&lt;/strong&gt;&lt;br /&gt;
+Le principal défaut des frameworks Java était souvent leur configuration au travers de 18 fichiers XML tous plus flous les uns que les autres !
+Avec Rails, c'est tout l'inverse : votre table s'appelle Students, votre modèle s'appellera Student...
+C'est également pour cette raison que Rails vient avec une architecture de fichiers et de dossiers bien précise, l'application ira dans app, les tests dans test...
+&lt;/li&gt;
+&lt;li&gt;
+&lt;strong&gt;DRY ou Don't Repeat Yourself&lt;/strong&gt;&lt;br /&gt;
+Le code doit être écrit de façon à éviter toute redondance qui compliquerait les phases de maintenances, de test, de debuggage...
+Les modifications doivent se faire à un endroit et n'impacter que les objets concernés.
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+En plus de ces deux règles, Rails comme la majorité des frameworks dédié au Web s'articule autour du modèle MVC ou Modèle-Vue-Controller.
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Les modèles sont les classes assurent la gestion des données, ils sont habituellement liés à la base de données.&lt;/li&gt;
+&lt;li&gt;Les vues déterminent comment sont affichées les informations à l'utilisateur. Il s'agit généralement d'une combinaison de code HTML et de Ruby.&lt;/li&gt;
+&lt;li&gt;Les contrôleurs réagissent aux requêtes utilisateur et répondent d'ordinaire à l'aide des vues.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Pour faire simple, voici le chemin d'une requête web avec Rails : &lt;/p&gt;
+&lt;p&gt;&lt;img title="requete_rails.png, juil 2008" style="margin: 0 auto; display: block;" alt="" src="http://blogbangbang.com/public/./.testSchema_m.jpg" /&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Vous appelez une page, celle-ci correspond à une méthode, dans un controller.&lt;/li&gt;
+&lt;li&gt;Celui-ci appelle un ou plusieurs modèles pour récupérer les informations nécessaires pour vous répondre.&lt;/li&gt;
+&lt;li&gt;Il envoie ces données données à la vue qui va interpréter et renvoyer le code HTML (ou autre) désiré.&lt;/li&gt;
+&lt;li&gt;La réponse vous est envoyée. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+On trouve partout sur internet, des tutoriels vous expliquant comment construire un blog fonctionnel en 10mn, un site en une demi-heure et Youtube en 2 jours &lt;img src="/themes/john/smilies/smile.png" alt=":)" class="smiley" /&gt;
+&lt;br /&gt;
+Ces tutoriels, mêmes s'ils incitent souvent les débutants à essayer Ruby et Rails, restent trop basique et trop axé sur un exemple particulier pour vraiment montrer les avantages de Rails.
+&lt;br /&gt;
+Je vais donc pour ma part vous parler de chaque grande partie de Rails (selon le MVC) en vous montrant ce qui selon moi, fait la différence entre Rails et le reste du monde &lt;img src="/themes/john/smilies/smile.png" alt=":)" class="smiley" /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+On commence tout de suite avec celui qui va gérer vos données, le modèle de Rails, nommé ActiveRecord, &lt;a href="http://blogbangbang.com/post/2008/07/25/ActiveRecord-%3A-Vos-donnees-c-est-mon-dada"&gt;suivez-moi...
+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Les autres articles : &lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://blogbangbang.com/post/2008/07/15/ruby_cest_quoi_comme_langage"&gt;Ruby, c'est quoi comme langage ?&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://blogbangbang.com/post/2008/07/19/Un-peu-de-syntaxe-Ruby"&gt;Un peu de syntaxe Ruby...&lt;/a&gt;&lt;br /&gt;
+Rails, la locomotive de Ruby !&lt;br /&gt;
+&lt;a href="http://blogbangbang.com/post/2008/07/25/ActiveRecord-%3A-Vos-donnees-c-est-mon-dada"&gt;ActiveRecord : Vos données, c'est mon dada.&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://blogbangbang.com/post/2008/07/30/ActionController-%3A-Monsieur-Circulation"&gt;ActionController : Monsieur Circulation&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://blogbangbang.com/post/2008/08/06/ActionView-%3A-Imprimeur-de-son-etat"&gt;ActionView : Imprimeur de son état&lt;/a&gt;
+&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/346011865" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/07/25/Rails-la-locomotive-de-Ruby#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/86</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/07/25/Rails-la-locomotive-de-Ruby</feedburner:origLink></entry>
+    
+  <entry>
+    <title>Un peu de syntaxe Ruby...</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/340112002/Un-peu-de-syntaxe-Ruby" rel="alternate" type="text/html" title="Un peu de syntaxe Ruby..." />
+    <id>urn:md5:b321fcff2130283e52e18ff69d7bb514</id>
+    <updated>2008-07-19T22:05:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>tout public</dc:subject>
+        <dc:subject>ruby</dc:subject><dc:subject>RubyOnRails</dc:subject><dc:subject>vulgarisation</dc:subject>    
+    <content type="html">&lt;p&gt;
+Vous avez apprécier &lt;a href="http://blogbangbang.com/post/2008/07/15/ruby_cest_quoi_comme_langage"&gt;l'article précédent&lt;/a&gt; ?
+&lt;br /&gt;
+Alors, essayons d'écrire un peu plus de Ruby...
+&lt;/p&gt;
+&lt;p class="info"&gt;
+Pour commencer, si vous souhaitez tester ces exemples sur votre poste je vous invite à installer Ruby sur votre machine.&lt;br /&gt;
+Pour les autres, vous pouvez tester &lt;a href="http://tryruby.hobix.com/" hreflang="en"&gt;en ligne&lt;/a&gt; ou vous contenter de lire :).
+&lt;br /&gt;&lt;br /&gt;
+Pour l'installation, les Linuxiens se débrouillerons avec leur gestionnaire de paquets pour installer les paquets ruby irb et rdoc.&lt;br /&gt;
+&lt;br /&gt;
+Pour les utilisateurs de Windows, je vous invite à utiliser le &lt;a href="http://Rubyforge.org/frs/?group_id=167" hreflang="en"&gt;one-click install&lt;/a&gt; qui vous donnera
+tout ce qu'il faut pour commencer.
+&lt;/p&gt;    &lt;p&gt;
+Comme je le disais dans le précédent article, la syntaxe de Ruby peut étonner au premier abord, mais sa lisibilité en est fortement améliorée.
+Regardons ces quelques lignes tirées ou inspirés du fameux &amp;quot;&lt;a href="http://poignantguide.net/ruby/" hreflang="en"&gt;Why's (poignant) guide to Ruby&lt;/a&gt;&amp;quot; et de
+&lt;a href="http://www.softiesonrails.com/" hreflang="en"&gt;Softiesonrails&lt;/a&gt; pour s'en convaincre.
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;&lt;span style="color:#006666;"&gt;5&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;times&lt;/span&gt; &lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#123;&lt;/span&gt; &lt;span style="color:#CC0066; font-weight:bold;"&gt;print&lt;/span&gt; &lt;span style="color:#996600;"&gt;&amp;quot;Hello!&amp;quot;&lt;/span&gt; &lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#125;&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+Essayons de lire ce bout de code en anglais, &lt;strong&gt;Five times print Hello&lt;/strong&gt;, je vous laisse deviner ce qu'il fait &lt;img src="/themes/john/smilies/smile.png" alt=":)" class="smiley" /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Un autre exemple :
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;&lt;span style="color:#CC0066; font-weight:bold;"&gt;exit&lt;/span&gt; &lt;span style="color:#9966CC; font-weight:bold;"&gt;unless&lt;/span&gt; &lt;span style="color:#996600;"&gt;&amp;quot;restaurant&amp;quot;&lt;/span&gt;.&lt;span style="color:#9966CC; font-weight:bold;"&gt;include&lt;/span&gt;? &lt;span style="color:#996600;"&gt;&amp;quot;aura&amp;quot;&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+En anglais lu : &lt;strong&gt;Exit unless restaurant includes aura&lt;/strong&gt;
+&lt;br /&gt;
+Avec cette ligne, notre programme va se terminer (exit) sauf si (unless) le mot &amp;quot;restaurant&amp;quot; contient (include?) le mot &amp;quot;aura&amp;quot;.
+&lt;/p&gt;
+&lt;p&gt;
+On retiendra de cette ligne le &lt;code&gt; unless &lt;/code&gt;, assez rare dans les autres langages qui est en
+fait l'inverse du &lt;code&gt;if&lt;/code&gt; ainsi que l'utilisation très judicieuse du point d'interrogation dans le nom
+de méthode include? pour signifier une question, un test (est-ce que &amp;quot;restaurant&amp;quot; contient &amp;quot;aura&amp;quot; &lt;strong&gt;?&lt;/strong&gt;.
+&lt;br /&gt;
+Vous aurez déduis que les méthodes ce terminant par un point d'interrogation retourneront normalement &lt;code&gt;true&lt;/code&gt; ou &lt;code&gt;false&lt;/code&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+Allez écrivons maintenant une petite méthode (ou fonction si vous préférez, mais normalement en Programmation Orientée Objet on dit méthode).
+&lt;/p&gt;
+&lt;p&gt;
+Imaginez un appareil photo, écrivons la méthode qui prend une photo.
+&lt;br /&gt;
+Celle-ci vérifiera si l'appareil est allumé et s'il reste de la place sur la carte mémoire.
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;&lt;span style="color:#9966CC; font-weight:bold;"&gt;def&lt;/span&gt; capture_clicked&lt;br /&gt;
+&amp;nbsp; capture_image &lt;span style="color:#9966CC; font-weight:bold;"&gt;if&lt;/span&gt; &lt;span style="color:#0066ff; font-weight:bold;"&gt;@camera&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;on&lt;/span&gt;? &amp;amp;&amp;amp; &lt;span style="color:#0066ff; font-weight:bold;"&gt;@camera&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;memory_available&lt;/span&gt;? &lt;br /&gt;
+&lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+Comme vous pouvez le constater, une méthode Ruby s'écrit avec &lt;code&gt;def&lt;/code&gt; et &lt;code&gt;end&lt;/code&gt;.
+&lt;br /&gt;
+Pour le reste c'est encore une fois plutôt standard, vous remarquerez toutefois qu'en Ruby, on peut écrire la clause &lt;code&gt;if&lt;/code&gt; à la fin de l'instruction ce qui améliore la lisibilité.
+&lt;br /&gt;
+En effet, ce que l'on veut faire dans notre cas (99% du temps) c'est &lt;strong&gt;capture_screen&lt;/strong&gt;,
+il est donc logique de le voir tout dès le début de la méthode et pas encadré par un &lt;code&gt;if&lt;/code&gt; comme ce serait le cas dans beaucoup d'autres langages.
+&lt;/p&gt;
+&lt;p&gt;
+Imaginons maintenant qu'on vous demande une méthode qui prendrai des photos en mode rafale tant qu'il y a de place, vous écrieriez alors simplement :
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;&lt;span style="color:#9966CC; font-weight:bold;"&gt;def&lt;/span&gt; rafale&lt;br /&gt;
+&amp;nbsp; capture_image &lt;span style="color:#9966CC; font-weight:bold;"&gt;while&lt;/span&gt; &lt;span style="color:#0066ff; font-weight:bold;"&gt;@camera&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;memory_available&lt;/span&gt;?&lt;br /&gt;
+&lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+Allez un dernier exemple pour la route, écrivons une petite classe Etudiant.
+&lt;br /&gt;
+Celui-ci aura un nom, un prénom et un âge.
+&lt;br /&gt;
+on a déjà tous écrit un truc du style avec une classe avec trois propriétés et leurs &amp;quot;getters&amp;quot;.
+&lt;/p&gt;
+&lt;code class="PHP"&gt;&amp;lt;br /&amp;gt;class Etudiant&lt;br /&gt;
+&lt;span style="color: #66cc66;"&gt;&amp;#123;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color: #000000; font-weight: bold;"&gt;private&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;$prenom&lt;/span&gt;;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color: #000000; font-weight: bold;"&gt;private&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;$nom&lt;/span&gt;;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color: #000000; font-weight: bold;"&gt;private&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;$age&lt;/span&gt;;&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color: #000000; font-weight: bold;"&gt;function&lt;/span&gt; Etudiant&lt;span style="color: #66cc66;"&gt;&amp;#40;&lt;/span&gt;prenom, nom, age&lt;span style="color: #66cc66;"&gt;&amp;#41;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color: #66cc66;"&gt;&amp;#123;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #0000ff;"&gt;$this&lt;/span&gt;-&amp;gt;&lt;span style="color: #006600;"&gt;prenom&lt;/span&gt; = prenom;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #0000ff;"&gt;$this&lt;/span&gt;-&amp;gt;&lt;span style="color: #006600;"&gt;nom&lt;/span&gt; = nom;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #0000ff;"&gt;$this&lt;/span&gt;-&amp;gt;&lt;span style="color: #006600;"&gt;age&lt;/span&gt; = age;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color: #66cc66;"&gt;&amp;#125;&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color: #000000; font-weight: bold;"&gt;function&lt;/span&gt; prenom&lt;span style="color: #66cc66;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #66cc66;"&gt;&amp;#41;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color: #66cc66;"&gt;&amp;#123;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #b1b100;"&gt;return&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;$this&lt;/span&gt;-&amp;gt;&lt;span style="color: #006600;"&gt;prenom&lt;/span&gt;;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color: #66cc66;"&gt;&amp;#125;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color: #000000; font-weight: bold;"&gt;function&lt;/span&gt; nom&lt;span style="color: #66cc66;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #66cc66;"&gt;&amp;#41;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color: #66cc66;"&gt;&amp;#123;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #b1b100;"&gt;return&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;$this&lt;/span&gt;-&amp;gt;&lt;span style="color: #006600;"&gt;nom&lt;/span&gt;;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color: #66cc66;"&gt;&amp;#125;&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color: #000000; font-weight: bold;"&gt;function&lt;/span&gt; age&lt;span style="color: #66cc66;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #66cc66;"&gt;&amp;#41;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color: #66cc66;"&gt;&amp;#123;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;span style="color: #b1b100;"&gt;return&lt;/span&gt; &lt;span style="color: #0000ff;"&gt;$this&lt;/span&gt;-&amp;gt;&lt;span style="color: #006600;"&gt;age&lt;/span&gt;;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color: #66cc66;"&gt;&amp;#125;&lt;/span&gt; &amp;nbsp; &lt;br /&gt;
+&lt;span style="color: #66cc66;"&gt;&amp;#125;&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+C'est moche n'est-ce pas !
+&lt;br /&gt;
+Et bien en Ruby cela nous donne :
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;&lt;span style="color:#9966CC; font-weight:bold;"&gt;class&lt;/span&gt; Etudiant&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp; attr_reader &lt;span style="color:#ff3333; font-weight:bold;"&gt;:prenom&lt;/span&gt;, &lt;span style="color:#ff3333; font-weight:bold;"&gt;:nom&lt;/span&gt;, &lt;span style="color:#ff3333; font-weight:bold;"&gt;:age&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;def&lt;/span&gt; initialize&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;prenom, nom, age&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#41;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color:#0066ff; font-weight:bold;"&gt;@prenom&lt;/span&gt;, &lt;span style="color:#0066ff; font-weight:bold;"&gt;@nom&lt;/span&gt;, &lt;span style="color:#0066ff; font-weight:bold;"&gt;@age&lt;/span&gt; = prenom, nom, age&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+Alors, vous voyez bien que le mot sexy n'était pas exagéré pour décrire la syntaxe de Ruby &lt;img src="/themes/john/smilies/smile.png" alt=":)" class="smiley" /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Pour information, si l'on veut aussi les &amp;quot;setters&amp;quot;, en PHP ce sera trois nouvelles fonctions en Ruby on remplacera juste :
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;attr_reader &lt;span style="color:#ff3333; font-weight:bold;"&gt;:prenom&lt;/span&gt;, &lt;span style="color:#ff3333; font-weight:bold;"&gt;:nom&lt;/span&gt;, &lt;span style="color:#ff3333; font-weight:bold;"&gt;:age&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+par
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;attr_accessor &lt;span style="color:#ff3333; font-weight:bold;"&gt;:prenom&lt;/span&gt;, &lt;span style="color:#ff3333; font-weight:bold;"&gt;:nom&lt;/span&gt;, &lt;span style="color:#ff3333; font-weight:bold;"&gt;:age&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+et si l'on veut mettre un peu de logique dans le getter, pour récupérer le prénom avec une majuscule au début, il suffira de l'écrire à la main
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;&lt;span style="color:#9966CC; font-weight:bold;"&gt;def&lt;/span&gt; prenom&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#0066ff; font-weight:bold;"&gt;@prenom&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;capitalize&lt;/span&gt;&lt;br /&gt;
+&lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+Vous vous demandez quand même surement ce que sont ces &lt;code&gt;@&lt;/code&gt; que l'on peut voir devant certaines variables.
+&lt;br /&gt;
+Ce signe sert à distinguer les variables d'instances (les attributs d'un objet) des variables locales (à une méthode ou autre).
+&lt;br /&gt;
+Il existe également des variables notées &lt;code&gt;@@ma_variable&lt;/code&gt;, celles-ci sont des variables de classes, elles sont donc attachées à la classe et non à son instance.
+&lt;/p&gt;
+&lt;p&gt;
+Regardez ce petit exemple pour mieux comprendre :
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;&lt;span style="color:#9966CC; font-weight:bold;"&gt;class&lt;/span&gt; Voiture&lt;br /&gt;
+&amp;nbsp; @@nom = &lt;span style="color:#996600;"&gt;&amp;quot;Renault Clio&amp;quot;&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp; attr_accessor &lt;span style="color:#ff3333; font-weight:bold;"&gt;:nom&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;def&lt;/span&gt; initialize&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;nom&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#41;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color:#0066ff; font-weight:bold;"&gt;@nom&lt;/span&gt; = nom&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;def&lt;/span&gt; nom&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color:#0066ff; font-weight:bold;"&gt;@nom&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;capitalize&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;def&lt;/span&gt; se_presente&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; &lt;span style="color:#CC0066; font-weight:bold;"&gt;puts&lt;/span&gt; &lt;span style="color:#996600;"&gt;&amp;quot;Je suis une &amp;quot;&lt;/span&gt;+@@nom+&lt;span style="color:#996600;"&gt;&amp;quot; surnomée &amp;quot;&lt;/span&gt;+nom&lt;br /&gt;
+&amp;nbsp; &lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;br /&gt;
+&lt;span style="color:#9966CC; font-weight:bold;"&gt;end&lt;/span&gt;&lt;/code&gt;
+&lt;br /&gt;
+&lt;code class="Ruby"&gt;ma_voiture = Voiture.&lt;span style="color:#9900CC;"&gt;new&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color:#996600;"&gt;&amp;quot;titine&amp;quot;&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#41;&lt;/span&gt;&lt;br /&gt;
+ma_voiture.&lt;span style="color:#9900CC;"&gt;se_presente&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+Cet exemple va afficher &lt;br /&gt;
+&lt;strong&gt;Je suis une Renault Clio surnommée Titine.&lt;/strong&gt; &lt;br /&gt;
+Vous remarquerez au passage que je peux appeler les méthodes sans les parenthèses,
+celles-ci sont optionnelles et les conventions veulent qu'on ne les écrive pas quand il n'y a pas de paramètres.
+&lt;/p&gt;
+&lt;p&gt;
+Pour résumer pour les habitués à PHP :
+&lt;br /&gt;
+&lt;code&gt;nom&lt;/code&gt; équivaut à &lt;code&gt;$nom&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;@nom&lt;/code&gt; équivaut à &lt;code&gt;$this-&amp;gt;nom&lt;/code&gt;&lt;br /&gt;
+&lt;code&gt;@@nom&lt;/code&gt; équivaut à &lt;code&gt;self::$nom&lt;/code&gt;
+&lt;/p&gt;
+&lt;p&gt;
+Alors, c'est qui qui a la plus &lt;del&gt;grosse&lt;/del&gt; belle syntaxe ?
+&lt;br /&gt;
+Voilà pour ce soir, j'espère que vous avez encore appris plein de belles choses sur Ruby
+[troll]et je m'excuse d'avance pour les larmes versées lors de votre prochaine tentative de codage en PHP, ActionScript, Cobol ou Fortran :D [/troll] &lt;/p&gt;
+&lt;p&gt;Les autres articles : &lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://blogbangbang.com/post/2008/07/15/ruby_cest_quoi_comme_langage"&gt;Ruby, c'est quoi comme langage ?&lt;/a&gt;&lt;br /&gt;
+Un peu de syntaxe Ruby...&lt;br /&gt;
+&lt;a href="http://blogbangbang.com/post/2008/07/25/Rails-la-locomotive-de-Ruby"&gt;Rails, la locomotive de Ruby !&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://blogbangbang.com/post/2008/07/25/ActiveRecord-%3A-Vos-donnees-c-est-mon-dada"&gt;ActiveRecord : Vos données, c'est mon dada.&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://blogbangbang.com/post/2008/07/30/ActionController-%3A-Monsieur-Circulation"&gt;ActionController : Monsieur Circulation&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://blogbangbang.com/post/2008/08/06/ActionView-%3A-Imprimeur-de-son-etat"&gt;ActionView : Imprimeur de son état&lt;/a&gt;
+&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/340112002" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/07/19/Un-peu-de-syntaxe-Ruby#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/85</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/07/19/Un-peu-de-syntaxe-Ruby</feedburner:origLink></entry>
+    
+  <entry>
+    <title>Ruby, c'est quoi comme langage ?</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/336442931/ruby_cest_quoi_comme_langage" rel="alternate" type="text/html" title="Ruby, c'est quoi comme langage ?" />
+    <id>urn:md5:225d4351f86913d3c41775127618029e</id>
+    <updated>2008-07-15T22:35:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>tout public</dc:subject>
+        <dc:subject>ruby</dc:subject><dc:subject>RubyOnRails</dc:subject><dc:subject>vulgarisation</dc:subject>    
+    <content type="html">&lt;p&gt;
+Let's go...
+&lt;/p&gt;
+&lt;p&gt;
+Dans Ruby on Rails, il y a avant tout Ruby !
+&lt;/p&gt;
+&lt;p&gt;
+Ruby c'est un langage informatique, au même titre que PHP, Python, Java, C, C++, l'ActionScript...
+&lt;/p&gt;
+&lt;p&gt;
+Parmis tous ces langages, trois familles existent, les langages compilés, les langages interprétés et les langages intermédiaires.
+&lt;br /&gt;
+Pour information voici comment se répartissent certains langages que vous connaissez surement :
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Langages compilés : C, C++...&lt;/li&gt;
+&lt;li&gt;Langages interprétés : PHP, PERL...&lt;/li&gt;
+&lt;li&gt;Langages intermédiaires : Java, ActionScript...&lt;/li&gt;
+&lt;/ul&gt;    &lt;p&gt;
+Pour en savoir plus sur les différences entre ces trois familles de langages, je vous invite à lire &lt;a href="http://www.commentcamarche.net/langages/langages.php3#interprete"&gt;l'explication de commentcamarche.net&lt;/a&gt; dont la vulgarisation est excellente (je m'étais lancé dans une explication, mais faire clair, simple et concis à ce sujet est vraiment compliqué).
+Puisque que c'est de lui qu'il s'agit, Ruby est un langage interprété, donc de la même famille que PHP, c'est d'ailleurs lui que j'utiliserais dans les comparaisons à venir puisqu'il est surement le langage interpreté le plus connu (au moins des lecteurs de ce blog).
+&lt;/p&gt;
+&lt;p&gt;
+D'ailleurs contrairement à la croyance qui veut que Ruby soit un truc tout nouveau qui tombera bientôt à l'eau, Ruby est en fait aussi &amp;quot;vieux&amp;quot; que PHP, leur première publication ayant toutes les deux eu lieu en 1995.
+&lt;/p&gt;
+&lt;p&gt;
+Attention toutefois, Ruby est très différent de PHP !
+&lt;/p&gt;
+&lt;h3&gt;Pourquoi ?&lt;/h3&gt;
+&lt;h4&gt; Orienté Web / Peut tout faire &lt;/h4&gt;
+&lt;p&gt;
+PHP a été crée par un développeur Web pour le développement Web, les bases de PHP viennent de la nécessité pour son créateur &lt;a href="http://fr.wikipedia.org/wiki/Rasmus_Lerdorf"&gt;Rasmus Lerdorf&lt;/a&gt;, d'enregistrer la fréquentation sur son CV...
+&lt;/p&gt;
+&lt;p&gt;
+Ruby quant à lui, a été crée par &lt;a href="http://fr.wikipedia.org/wiki/Yukihiro_Matsumoto"&gt;Yukihiro Matsumotow&lt;/a&gt; dit &amp;quot;Matz&amp;quot; en s'inspirant notamment de &lt;a href="http://fr.wikipedia.org/wiki/Perl_%28langage%29"&gt;PERL&lt;/a&gt; et &lt;a href="http://fr.wikipedia.org/wiki/Smalltalk"&gt;Smalltalk&lt;/a&gt;, cela veut principalement dire que Ruby a été écrit pour être un langage applicatif &amp;quot;à tout faire&amp;quot; en allant du petit script de classement de vos images aux bibliothèques d'interfaces graphiques (il est en cela comparable au C, C++, Java...).
+&lt;/p&gt;
+&lt;h4&gt; Non-Objet / Objet &lt;/h4&gt;
+&lt;p&gt;
+Dans un langage objet, les objets répondent à des messages.
+&lt;br /&gt;
+&lt;strong&gt;exemple&lt;/strong&gt; : l'objet maVoiture reçoit un message lui demandant d'avancer donne
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;ma_voiture.&lt;span style="color:#9900CC;"&gt;avance&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#41;&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+PHP, lui, n'est pas un langage (entièrement) orienté objet.
+&lt;br /&gt;
+D'ailleurs à l'origine PHP n'est pas du tout un langage objet.
+&lt;br /&gt;
+Même si depuis la version 5, tout cela a bien évolué.
+&lt;/p&gt;
+&lt;p&gt;
+Toutefois, en PHP, pour mettre en majuscule un mot ou une phrase, on écrira :
+&lt;/p&gt;
+&lt;code class="PHP"&gt;&lt;a href="http://www.php.net/strtoupper"&gt;&lt;span style="color: #000066;"&gt;strtoupper&lt;/span&gt;&lt;/a&gt;&lt;span style="color: #66cc66;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #ff0000;"&gt;&amp;quot;jonathan&amp;quot;&lt;/span&gt;&lt;span style="color: #66cc66;"&gt;&amp;#41;&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+On voit bien ici que &amp;quot;l'objet&amp;quot; traité est passé à une méthode au lieu de recevoir un message.
+&lt;/p&gt;
+&lt;p&gt;
+Si vous n'avez pas encore compris, regardez ce que cela donne en Ruby.
+&lt;/p&gt;
+&lt;code class="Ruby"&gt;&lt;span style="color:#996600;"&gt;&amp;quot;jonathan&amp;quot;&lt;/span&gt;.&lt;span style="color:#9900CC;"&gt;uppercase&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#41;&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+Ici c'est bien l'objet (le string) qui reçoit le message lui indiquant de se mettre en majuscule.
+&lt;/p&gt;
+&lt;p&gt;
+Une des particularités de Ruby est qu'absolument tout (ou presque) est Objet.
+&lt;/p&gt;
+&lt;p&gt;
+C'est la raison pour laquelle j'ai pu écrire &amp;quot;jonathan&amp;quot;.uppercase() sans avoir auparavant créé une instance de String...
+&lt;/p&gt;
+&lt;p&gt;
+Ruby &amp;quot;comprend&amp;quot; automatiquement que ce qui est entre deux guillemets est un string et répond donc aux méthodes de cette classe.
+&lt;/p&gt;
+&lt;p&gt;
+On touche là une autre particularité de Ruby, le &amp;quot;&lt;a href="http://en.wikipedia.org/wiki/Duck_Typing" hreflang="en"&gt;Duck Typing&lt;/a&gt;&amp;quot; ou &amp;quot;Typage Canard&amp;quot; (si ça marche comme un canard et si ça cancane comme un canard, alors ce doit être un canard&amp;quot; ).
+&lt;br /&gt;
+Le principe est donc de ne pas forcer le programmeur à utiliser une classe donnée, mais de l'obliger à mettre les données dans le format que nous voulons utiliser.
+&lt;br /&gt;
+J'ai écrit &amp;quot;jonathan&amp;quot; entre guillemets, Ruby comprends que cet objet est un String.
+&lt;br /&gt;
+Si j'écris [1, 14, 15] ce sera un Array (Tableau), {1=&amp;gt;&amp;quot;aaa&amp;quot;, 2=&amp;gt;&amp;quot;b&amp;quot;} sera un Hash (ou tableau associatif)...
+&lt;/p&gt;
+&lt;h4&gt;Bizarreries / P.O.L.S.&lt;/h4&gt;
+&lt;p&gt;
+Une autre particularité de Ruby est de suivre au maximum le P.O.L.S ou &amp;quot;Principle of Least Surprise&amp;quot; (&amp;quot;Principe de moindre surprise&amp;quot;).
+&lt;/p&gt;
+&lt;p&gt;
+Cela peut sembler une évidence, mais en gros cela veut dire que les méthodes font ce que leur nom laisse penser qu'elles font.
+&lt;/p&gt;
+&lt;p&gt;
+Pourtant, lorsque l'on lit la documentation de PHP, on se rend compte que ce n'est pas toujours le cas :
+&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;
+array_merge( array $array1  [, array $array2  [, array $...  ]] ) &lt;/p&gt;
+&lt;p&gt;Merges the elements of one or more arrays together so that the values of one are appended to the end of the previous one. It returns the resulting array. &lt;/p&gt;
+&lt;p&gt;If the input arrays have the same string keys, then the later value for that key will overwrite the previous one. &lt;/p&gt;
+&lt;p&gt;If, however, the arrays contain numeric keys, the later value will not overwrite the original value, but will be appended. &lt;/p&gt;
+&lt;p&gt;If only one array is given and the array is numerically indexed, the keys get reindexed in a continuous way.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+La même chose en Ruby (méthode merge de la classe Hash) :
+&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;
+hsh.merge(other_hash) &lt;/p&gt;
+&lt;p&gt;Returns a new hash containing the contents of other_hash and the contents of hsh, overwriting entries in hsh with duplicate keys with those from other_hash.
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+Vous voyez la différence, n'est ce pas &lt;img src="/themes/john/smilies/smile.png" alt=":)" class="smiley" /&gt;
+&lt;/p&gt;
+&lt;p&gt;
+[private joke]&lt;br /&gt;
+On peut aussi en faire la démonstration avec AS3 et Ruby pour retourner un string  : &lt;/p&gt;
+&lt;h4&gt;AS3 :&lt;/h4&gt;
+&lt;code class="Actionscript"&gt;myString.&lt;span style="color: #0066CC;"&gt;split&lt;/span&gt;&lt;span style="color: #66cc66;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #ff0000;"&gt;''&lt;/span&gt;&lt;span style="color: #66cc66;"&gt;&amp;#41;&lt;/span&gt;.&lt;span style="color: #0066CC;"&gt;reverse&lt;/span&gt;&lt;span style="color: #66cc66;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #66cc66;"&gt;&amp;#41;&lt;/span&gt;.&lt;span style="color: #0066CC;"&gt;join&lt;/span&gt;&lt;span style="color: #66cc66;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color: #ff0000;"&gt;''&lt;/span&gt;&lt;span style="color: #66cc66;"&gt;&amp;#41;&lt;/span&gt;&lt;/code&gt;
+&lt;h4&gt;Ruby &lt;/h4&gt;
+&lt;code class="Ruby"&gt;my_string.&lt;span style="color:#9900CC;"&gt;reverse&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#40;&lt;/span&gt;&lt;span style="color:#006600; font-weight:bold;"&gt;&amp;#41;&lt;/span&gt;&lt;/code&gt;
+&lt;p&gt;
+[/private joke]
+&lt;/p&gt;
+&lt;p&gt;
+Voilà pour la première introduction, j'espère vous avoir donner envie d'en savoir un peu plus et je vous monterais bientot les rudiments de la syntaxe Ruby (certes un peu étrange pour un développeur PHP ou Flash, mais tellement sexy à l'usage !)
+&lt;/p&gt;
+&lt;p&gt;Les autres articles : &lt;/p&gt;
+&lt;p&gt;
+Ruby, c'est quoi comme langage ?&lt;br /&gt;
+&lt;a href="http://blogbangbang.com/post/2008/07/19/Un-peu-de-syntaxe-Ruby"&gt;Un peu de syntaxe Ruby...&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://blogbangbang.com/post/2008/07/25/Rails-la-locomotive-de-Ruby"&gt;Rails, la locomotive de Ruby !&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://blogbangbang.com/post/2008/07/25/ActiveRecord-%3A-Vos-donnees-c-est-mon-dada"&gt;ActiveRecord : Vos données, c'est mon dada.&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://blogbangbang.com/post/2008/07/30/ActionController-%3A-Monsieur-Circulation"&gt;ActionController : Monsieur Circulation&lt;/a&gt;&lt;br /&gt;
+&lt;a href="http://blogbangbang.com/post/2008/08/06/ActionView-%3A-Imprimeur-de-son-etat"&gt;ActionView : Imprimeur de son état&lt;/a&gt;
+&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/336442931" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/07/15/ruby_cest_quoi_comme_langage#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/84</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/07/15/ruby_cest_quoi_comme_langage</feedburner:origLink></entry>
+    
+  <entry>
+    <title>Mais Ruby, Ruby On Rails, c'est quoi en fait ?</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/336442933/Mais-Ruby-Ruby-On-Rails-c-est-quoi-en-fait" rel="alternate" type="text/html" title="Mais Ruby, Ruby On Rails, c'est quoi en fait ?" />
+    <id>urn:md5:e50a37085a0c6fb45a41464a3e04601c</id>
+    <updated>2008-07-15T21:57:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>tout public</dc:subject>
+        <dc:subject>ruby</dc:subject><dc:subject>RubyOnRails</dc:subject><dc:subject>vulgarisation</dc:subject>    
+    <content type="html">    &lt;p&gt;
+Comme souvent quand quelque chose vous passionne, vous ne pouvez pas vous empêcher d'en faire la promotion autour de vous.
+&lt;/p&gt;
+&lt;p&gt;
+La plupart temps il s'agit d'un groupe de musique, d'une équipe de foot, d'un réalisateur ou d'un acteur et il est assez facile d'expliquer autour de vous
+pourquoi votre préféré est selon vous meilleur que tous les autres.
+&lt;br /&gt;
+Mais quand l'une de vos passions est le Web, vous êtes déjà un peu plus étrange.
+&lt;br /&gt;
+Si vous précisez que c'est du développement Web qu'il s'agit, vous devenez carrément bizare.
+&lt;br /&gt;
+Et si vous finissez en expliquant que c'est plus particulièrement de Ruby ou Ruby et Ruby on Rails qu'il s'agit, vous devenez aux yeux de votre interlocuteur un extraterrestre !
+&lt;/p&gt;
+&lt;p&gt;
+Et pourtant, c'est mon cas.  &lt;br /&gt;
+Je suis &amp;quot;accroc&amp;quot; à Ruby et Ruby on Rails et je vais donc essayer d'expliquer en quelques billets ce dont il s'agit avec des mots simples.
+&lt;/p&gt;
+&lt;p&gt;
+Ce tutoriel est désormais terminé, en voici toutes les parties : &lt;/p&gt;
+&lt;p&gt;&lt;a href="http://blogbangbang.com/post/2008/07/15/ruby_cest_quoi_comme_langage"&gt;Ruby, c'est quoi comme langage ?&lt;/a&gt;&lt;br /&gt;&lt;a href="http://blogbangbang.com/post/2008/07/19/Un-peu-de-syntaxe-Ruby"&gt;Un peu de syntaxe Ruby...&lt;/a&gt;&lt;br /&gt;&lt;a href="http://blogbangbang.com/post/2008/07/25/Rails-la-locomotive-de-Ruby"&gt;Rails, la locomotive de Ruby !&lt;/a&gt;&lt;br /&gt;&lt;a href="http://blogbangbang.com/post/2008/07/25/ActiveRecord-%3A-Vos-donnees-c-est-mon-dada"&gt;ActiveRecord : Vos données, c'est mon dada.&lt;/a&gt;&lt;br /&gt;&lt;a href="http://blogbangbang.com/post/2008/07/30/ActionController-%3A-Monsieur-Circulation"&gt;ActionController : Monsieur Circulation&lt;/a&gt;&lt;br /&gt;&lt;a href="http://blogbangbang.com/post/2008/08/06/ActionView-%3A-Imprimeur-de-son-etat"&gt;ActionView : Imprimeur de son état&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/336442933" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/07/15/Mais-Ruby-Ruby-On-Rails-c-est-quoi-en-fait#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/83</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/07/15/Mais-Ruby-Ruby-On-Rails-c-est-quoi-en-fait</feedburner:origLink></entry>
+    
+  <entry>
+    <title>En vrac et souvent en retard !</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/322618608/En-vrac-et-souvent-en-retard" rel="alternate" type="text/html" title="En vrac et souvent en retard !" />
+    <id>urn:md5:7c09c663d3193d86d91221aaad8cad74</id>
+    <updated>2008-06-29T16:43:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>en vrac</dc:subject>
+            
+    <content type="html">    &lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.aful.org/communiques/coup-tonnerre-judiciaire-vente-liee"&gt;La vente liée prend un coup-de-pied au c**&lt;/a&gt; : Désormais quand vous achèterez un ordinateur chez Darty (et surement partout ailleurs bientôt), vous connaîtrez le prix du système d'exploitations pré-installé ! A quand la possibilité d'acheter ces mêmes ordinateurs vierges ? &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.lemondeinformatique.fr/actualites/lire-l-icann-pose-les-premieres-pierres-des-noms-de-domaine-elargis-26447.html"&gt;Tous les noms de domaines du monde&lt;/a&gt; : Je connais un collectif sans nom à qui cela aurait peut-être facilité l'existence &lt;img src="/themes/john/smilies/smile.png" alt=":)" class="smiley" /&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.toolinux.com/news/logiciels/nokia_rachete_les_parts_manquantes_de_symbian_pour_en_faire_un_systeme_ouvert_ar10767.html"&gt;Nokia rachète Symbian, qui devient libre&lt;/a&gt; : un nouvel acteur fort dans le web mobile ! &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.sproutcore.com/"&gt;SproutCore&lt;/a&gt; : Construire des applications client en Javacript : Pourquoi pas ! &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.echosdunet.net/dossiers/dossier_2375_bill+gates+quitte+microsoft.html"&gt;Bill Gates à la retraite&lt;/a&gt; : on dit quoi à un mec qui a démocratisé l'informatique personnelle, avant de la pourrir ? &lt;/li&gt;
+&lt;li&gt;&lt;a href="http://linuxfr.org/2008/06/18/24225.html"&gt;Wine en version 1.0&lt;/a&gt; : L'émulateur qui n'en est pas un, sort enfin (15 ans de développement) en version 1.0 ! De plus en plus d'applications Windows fonctionnent sous Wine et donc sous Linux [troll]mais pourquoi utiliser des applications windows[/troll] ? &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;PS : Un détail a changé sur Blogbangbang, vous avez remarqué ? Mais si regardez mieux.. Non encore un peu plus haut... Voilà, vous y êtes ! &lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/322618608" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/06/29/En-vrac-et-souvent-en-retard#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/82</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/06/29/En-vrac-et-souvent-en-retard</feedburner:origLink></entry>
+    
+  <entry>
+    <title>john.life_steps.go_forward</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/319784332/johnlife_stepsgo_forward" rel="alternate" type="text/html" title="john.life_steps.go_forward" />
+    <id>urn:md5:7136a17948aa00bef60996f4a5e926e9</id>
+    <updated>2008-06-25T17:15:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>humeur</dc:subject>
+        <dc:subject>emploi</dc:subject><dc:subject>Gobelins</dc:subject><dc:subject>études</dc:subject>    
+    <content type="html">    &lt;p&gt;
+Voilà cette fois-ci il semblerait bien que ce soit la fin !&lt;br /&gt;
+Pas de ce blog non rassurez vous il devrait même repartir de plus belle dans les jours à venir.
+&lt;/p&gt;
+&lt;p&gt;
+Je vous parlais plutôt de mes études.
+Après 20 ans d'études (23 - 3), en passant notamment par La Rochelle (DUT Informatique), l'Irlande (&amp;quot;Bachelor of science in computing&amp;quot;) et Paris aux Gobelins (formation de Concepteur Réalisateur Multimédia en apprentissage) cette fois-ci, c'est terminé.
+&lt;/p&gt;
+&lt;p&gt;
+Au lendemain de mon dernier jour en tant qu'étudiant, les impressions sont mitigées.&lt;br /&gt;
+Le soulagement (les derniers mois ont été intenses), la joie et la curiosité de découvrir la suite priment.
+&lt;/p&gt;
+&lt;p&gt;
+Mais on connait tous, la réaction des autres devant les étudiants, le fameux : &amp;quot;Ah c'était le bon temps, profites-en bien&amp;quot; qui vient un peu tempérer ces impressions plus que positives.
+&lt;br /&gt;
+D'autant plus que même si la fin d'année dernière avait été &lt;a href="http://blogbangbang.com/post/2007/06/21/Un-bon-copain"&gt;quelque peu difficile&lt;/a&gt;, ces deux dernières années resteront quoiqu'il arrive un souvenir extraordinaire.
+&lt;/p&gt;
+&lt;p&gt;
+En effet, être étudiant aux Gobelins est déjà plutôt sympathique en soit, mais ce qui a fait la différence avec les autres années étudiantes, c'est la promotion.&lt;br /&gt;
+20 personnes au départ et presque autant de très bons amis à l'arrivée[&lt;a id="rev-pnote-1" href="http://blogbangbang.com/post/2008/06/25/#pnote-1"&gt;1&lt;/a&gt;], bilan exceptionnel !
+&lt;/p&gt;
+&lt;p&gt;
+Maintenant c'est un autre challenge qui s'offre à moi.&lt;br /&gt;
+Après avoir effectué mes deux ans d'apprentissage dans la société &lt;a href="http://a-g.fr"&gt;Abstrakt Graphics&lt;/a&gt;[&lt;a id="rev-pnote-2" href="http://blogbangbang.com/post/2008/06/25/#pnote-2"&gt;2&lt;/a&gt;], comme Développeur PHP, je m'envole vers d'autres aventures en tant que développeur Ruby / Ruby on Rails dans la société &lt;a href="http://www.eyeka.com/"&gt;Eyeka&lt;/a&gt;.
+&lt;br /&gt;
+Le challenge s'annonce passionnant !
+&lt;/p&gt;
+&lt;p&gt;
+Les conséquences de ce changement, j'avoue ne pas toutes les maitriser pour l'instant, mais dans un premier temps, j'espère avoir un peu plus de temps (et d'argent) à consacrer aux activités annexes (sports, concerts, cinéma...) que j'avais un peu mis de côté depuis quelques temps.
+&lt;/p&gt;
+&lt;p&gt;
+Pour ce qui est de ce blog, attendez vous a voir fleurir les articles concernant Ruby / Ruby on Rails, car à partir du 15 juillet, ce ne sera plus le sujet préféré du &amp;quot;geek&amp;quot; que je suis, mais mon métier !
+&lt;/p&gt;
+&lt;p&gt;
+[&lt;a id="pnote-1" href="http://blogbangbang.com/post/2008/06/25/#rev-pnote-1"&gt;1&lt;/a&gt;] Je vous reparlerais surement de certains d'entre eux dans un futur très proche.
+&lt;br /&gt;
+[&lt;a id="pnote-2" href="http://blogbangbang.com/post/2008/06/25/#rev-pnote-2"&gt;2&lt;/a&gt;] Qui n'est pas étrangère non plus à l'excellent bilan de ces deux dernières année puisque travailler dans cette entreprise a été quelquechose de très agréable !
+&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/319784332" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/06/25/johnlife_stepsgo_forward#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/81</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/06/25/johnlife_stepsgo_forward</feedburner:origLink></entry>
+    
+  <entry>
+    <title>En vrac</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/304845697/En-vrac" rel="alternate" type="text/html" title="En vrac" />
+    <id>urn:md5:f32760b1125e2178ecc3a7fb64ec68b7</id>
+    <updated>2008-06-04T23:47:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>en vrac</dc:subject>
+        <dc:subject>Linux</dc:subject><dc:subject>ruby</dc:subject><dc:subject>RubyOnRails</dc:subject><dc:subject>Systèmes dexploitation</dc:subject><dc:subject>ubuntu</dc:subject><dc:subject>Ubuntu</dc:subject><dc:subject>Umpc</dc:subject>    
+    <content type="html">    &lt;p&gt;Pas beaucoup de temps en ce moment (pris par le projet de fin d'année de ma dernière année d'étude), donc je vous livre sans grands discours ce qu'il faut lire, voir, savoir en ce moment : &lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;Yahoo fournit un &lt;a href="http://developer.yahoo.com/ypatterns/wireframes/" hreflang="en"&gt;kit d'éléments d'interfaces&lt;/a&gt; Web afin de faciliter la création de Wireframes.&lt;/li&gt;
+&lt;li&gt;Les UltraPortables fourmillent &lt;a href="http://fr.wikipedia.org/wiki/Asus_Eee_PC"&gt;Eeepc700, 900, 1000&lt;/a&gt;, &lt;a href="http://www.blogeee.net/2008/06/04/le-gigabyte-m912-se-devoile-au-computex/"&gt;Gigabyte M912&lt;/a&gt;,  &lt;a href="http://www.blogeee.net/2008/06/04/des-images-du-wind-u90-la-version-89-du-bebe-de-msi/"&gt;Wind U90&lt;/a&gt;... Et quel OS choisit t-on le plus souvent pour faire tourner ce beau monde : Linux ( Et pourquoi mettre autre chose puisque c'est celui qui vous coûtera le moins cher à configuration matérielle égale, qu'il offre un meilleur confort d'utilisation et une meilleure autonomie !)&lt;/li&gt;
+&lt;li&gt;Ubuntu va développer &lt;a hreflang="en" href="http://www.engadget.com/2008/06/03/canonical-makes-ubuntu-netbook-remix-official-at-computex/"&gt;Ubuntu Netbook Remix&lt;/a&gt; : des interfaces dédiées à ces matériels. &lt;/li&gt;
+&lt;li&gt;Les PC de salon à bas prix débarquent eux aussi (&lt;a hreflang="en" href="http://www.electronista.com/articles/08/06/02/final.asus.eee.box.specs/"&gt;EeeBox&lt;/a&gt;) et là encore si vous voulez le moins cher ou mieux pour le même prix, c'est la version Linux qu'il vous faudra choisir.&lt;/li&gt;
+&lt;li&gt;Facebook &lt;a href="http://www.lemondeinformatique.fr/actualites/lire-facebook-ouvre-les-sources-de-sa-plateforme-de-developpement-26236.html"&gt;libère sa plateforme de développement&lt;/a&gt; et encourage du même coup les développeurs à utiliser leur plateforme.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br /&gt;Et pour Ruby, Rails : &lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Rails2.1 est sorti accompagné de son &lt;a hreflang="en" href="http://ryandaigle.com/articles/2008/6/2/rails-2-1-released-summary-of-features"&gt;lot de nouveautés&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;La Railsconf avait lieu la semaine dernière et les présentations sont &lt;a hreflang="en" href="http://en.oreilly.com/rails2008/public/schedule/proceedings"&gt;disponibles&lt;/a&gt;. &lt;br /&gt;
+On regardera particulièrement celles-ci (liens vers les PDF) :&lt;br /&gt;&lt;ul&gt;&lt;li&gt;&lt;a hreflang="en" href="http://en.oreilly.com/rails2008/public/asset/attachment/2850"&gt;Les bons conseils pour les tests&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a hreflang="en" href="http://en.oreilly.com/rails2008/public/asset/attachment/2855"&gt;Fuzed&lt;/a&gt; : une solution intérressante pour gérer la montée en charge derrière Rails (ou autre...).&lt;/li&gt;
+&lt;li&gt;La gestion des processus longs grâce aux &lt;a hreflang="en" href="http://railspikes.com/2008/6/3/asynchronous-railsconf-2008"&gt;processus asynchrones&lt;/a&gt; avec Ruby et Rails.&lt;/li&gt;
+&lt;li&gt;&lt;a hreflang="en" href="http://en.oreilly.com/rails2008/public/asset/attachment/2858"&gt;La méta-programmation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Bonne Lecture.&lt;/p&gt;
+&lt;p&gt;PS : Je ne vous oublie pas pour la dernière partie de ma série sur nos ressources et le &amp;quot;HomeServer&amp;quot;, elle arrive bientôt. &lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/304845697" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/06/04/En-vrac#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/80</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/06/04/En-vrac</feedburner:origLink></entry>
+    
+  <entry>
+    <title>OK pour le HomeServer mais comment ? (3/4)</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/293824095/4" rel="alternate" type="text/html" title="OK pour le HomeServer mais comment ? (3/4)" />
+    <id>urn:md5:a74662b31bc3d428848a455892785f9b</id>
+    <updated>2008-05-20T00:39:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>geeks</dc:subject>
+            
+    <content type="html">&lt;p&gt;
+Que gère t'on :
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;De la musique&lt;/li&gt;
+&lt;li&gt;Des photos&lt;/li&gt;
+&lt;li&gt;Des vidéos&lt;/li&gt;
+&lt;li&gt;Des (cercles d') amis&lt;/li&gt;
+&lt;li&gt;Des mails &lt;/li&gt;
+&lt;li&gt;Des bookmarks &lt;/li&gt;
+&lt;li&gt;Un frigo&lt;/li&gt;
+&lt;li&gt;Une Télé&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Et pourquoi pas
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Des noms de domaines et des sites Web&lt;/li&gt;
+&lt;li&gt;Des flux RSS&lt;/li&gt;
+&lt;li&gt;Les stores de la maison&lt;/li&gt;
+&lt;li&gt;les lumières d'ambiance&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Que va t-on utiliser pour gérer tout cela ?
+&lt;/p&gt;    &lt;p&gt;
+Pour ce qui est du matériel, le &amp;quot;HomeServer&amp;quot; ne sera rien de plus qu'un PC, avec de gros disques durs (mais vu les prix du stockage actuellement, on peut se le permettre, d'autant plus qu'avec suffisamment de place, le serveur pourra également contenir des sauvegardes de vos données).
+&lt;/p&gt;
+&lt;p&gt;
+Pour le reste un PC bon marché suffira amplement à nos besoins.
+&lt;/p&gt;
+&lt;p&gt;
+Je dis HomeServer mais après tout rien n'empêche de placer l'application que j'aimerais développer sur un hébergement dédié.
+&lt;/p&gt;
+&lt;p&gt;
+La seule différence se situe dans le fait que certains préfèrent avoir cela vraiment &amp;quot;à la maison&amp;quot; et qu'il sera plus difficile &amp;quot;d'augmenter&amp;quot; cet objet avec les fonctions décrites précédemment (table interactive...).
+&lt;/p&gt;
+&lt;p&gt;
+Par contre, le dédié amènera des débits plus intéressant !
+&lt;/p&gt;
+&lt;p&gt;
+Il faut bien garder en tête que cette méthode vise à fournir à tout un chacun de multiples services dans le même produit, mais à destination d'un public restreint !
+&lt;/p&gt;
+&lt;p&gt;
+Si vous souhaitez faire 20.000 visites jours sur votre serveur web, gérer 50 comptes mails et streamer de la vidéo pour le monde entier, vous feriez mieux de vous tourner vers des solutions professionnelles !
+&lt;/p&gt;
+&lt;p&gt;
+Par contre, si vous souhaitez gérer vos quatre comptes mails uploader vos photos du week end en Bretagne et proposer à votre famille et vos amis de regarder la vidéo du petit dernier qui souffle sa première bougie, nul besoin d'un serveur professionnel !
+&lt;/p&gt;
+&lt;p&gt;
+Passons aux logiciels :
+&lt;/p&gt;
+&lt;p&gt;
+Actuellement, pour que vous puissiez lire et écrire des mails partout et depuis beaucoup de terminaux différents(PC, téléphone portable notamment), l'industrie s'appuie sur des &lt;strong&gt;formats&lt;/strong&gt; et &lt;strong&gt;protocoles&lt;/strong&gt; qui ont la sympathique particularité d'être &lt;strong&gt;ouverts&lt;/strong&gt; !
+&lt;/p&gt;
+&lt;p&gt;
+Pour les moins initiés, cela veut dire qu'il est possible à tout un chacun de connaitre l'intégralité de leur fonctionnement et donc de concevoir facilement des applications utilisant ces formats.
+&lt;/p&gt;
+&lt;p&gt;
+Si l'on veut pouvoir gérer sa musique, ses vidéos, ses bookmarks, mais aussi ses cercles d'amis ou son frigo, il est impératifs de tirer les enseignements des problèmes du passé et de s'appuyer sur des protocoles et standards ouverts !
+&lt;/p&gt;
+&lt;p&gt;
+Comparons à nos besoins et regardons ce qu'il existe de ce côté-là :
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pour la musique, la vidéo, la photo aucun problème du côté des formats de fichiers, les formats sont déjà reconnus (ogg vorbis, ogg theora, Jpeg) et ne demandent qu'à se généraliser.&lt;/li&gt;
+&lt;li&gt;Pour les protocoles de streaming, on citera notamment le  &lt;abbr title="Real-time Transport Protocol"&gt;RTP&lt;/abbr&gt; &lt;/li&gt;
+&lt;li&gt;Pour gérer ses cercles d'amis, des solutions existent également, notamment &lt;abbr title="Friend of a Friend"&gt;FOAF&lt;/abbr&gt; mais aussi des initiatives comme opensocial de Google .&lt;/li&gt;
+&lt;li&gt;Pour vos mails, là aussi les solutions existent et sont plus que rodées !  &lt;/li&gt;
+&lt;li&gt;Pour vos noms de domaines et vos sites web tout est près.  &lt;/li&gt;
+&lt;li&gt;Pour les bookmarks, il n'y a pas à ma connaissance de format officiel même si plusieurs sites se sont calqués sur Del.icio.us pour leur formats d'import et d'export de vos bookmarks (donc un format HTML).  &lt;/li&gt;
+&lt;li&gt;Pour les collections de flux RSS (ou Atom), le format de description le plus répandu est l'&lt;abbr title="Outline Processor Markup Language"&gt;OPML&lt;/abbr&gt;. &lt;/li&gt;
+&lt;li&gt;Pour décrire le contenu de votre frigo, tout reste à faire...  &lt;/li&gt;
+&lt;li&gt;Pour dialoguer avec ce même frigo, la TV, les stores et vos lampes d'ambiances, on rentre dans le cadre de la domotique et là encore des gens se penchent sur le problème depuis quelques années et des standards existent.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Comme vous pouvez le constater nous avons entre les mains tout le nécessaire pour mener à bien notre mission !
+&lt;br /&gt;
+Avec le nouveau HomeServer, vous avez accès à tout, partout, sur tout vos appareils, tout le temps !
+&lt;/p&gt;
+&lt;p&gt;
+Alors il y a plus qu'à ?
+&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/293824095" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/05/20/OK-pour-le-HomeServer-mais-comment-3/4#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/79</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/05/20/OK-pour-le-HomeServer-mais-comment-3/4</feedburner:origLink></entry>
+    
+  <entry>
+    <title>Mes données m'appartiennent (2/4)</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/291201831/Mes-donnees-mappartiennent" rel="alternate" type="text/html" title="Mes données m'appartiennent (2/4)" />
+    <id>urn:md5:8638cc70297d74048deebcdd26af5f0c</id>
+    <updated>2008-05-15T23:20:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>geeks</dc:subject>
+            
+    <content type="html">&lt;p&gt;
+Le ton de mon premier billet trahissait déjà surement ma retenue sur le fait d'offrir à des sociétés tierces l'intégralité de ma vie numérique.
+&lt;/p&gt;
+&lt;p&gt;
+De plus, j'aimerais pouvoir gérer plus finement les contenus que je mets à disposition de ces plateformes (qui peut voir telle ou telle photo), pouvoir supprimer facilement une vidéo, un profil...
+&lt;/p&gt;    &lt;p&gt;
+Pourtant, je suis moi aussi un grand fan du 'tout-en-ligne', je rêve du jour où ma &lt;strong&gt;musique&lt;/strong&gt;, mes &lt;strong&gt;vidéos&lt;/strong&gt;... seront accessibles aussi facilement &lt;strong&gt;au travail ou à la maison, depuis un PC, un téléphone portable, un baladeur numérique ou sur mon frigo&lt;/strong&gt; :D (oui j'aime bien le principe du frigo connecté).
+&lt;/p&gt;
+&lt;p&gt;
+Mais à y regarder de plus près ces deux approches, sont elles vraiment incompatibles ?
+&lt;/p&gt;
+&lt;p&gt;
+Imaginez, que plutôt que de placer vos contenus (musique, photo...) sur votre PC principal, vous déléguiez cette tâche à un autre appareil de la maison (que j'appellerai par la suite &amp;quot;&lt;strong&gt;HomeServer&lt;/strong&gt;&amp;quot;), cet appareil se ferait tout discret, mais aurait la lourde tâche d'héberger tout vos contenus.
+&lt;/p&gt;
+&lt;p&gt;
+Comme nous sommes gourmands, imaginons que nous connections cet appareil à votre réseau &amp;quot;local&amp;quot; (en wifi tant qu'à faire ça évite les câbles qui courent partout) : vous voilà désormais avec des médias disponibles&lt;strong&gt; pour tous les PC de la maison &lt;/strong&gt;et sur votre téléphone portable quand vous êtes chez vous.
+&lt;/p&gt;
+&lt;p&gt;
+Maintenant imaginons que nous relions cet appareil au web, nous voilà en un clin d'oeil, avec la possibilité d'accéder à tout nos contenus depuis la maison mais également &lt;strong&gt;depuis l'extérieur&lt;/strong&gt; ! vous pouvez enfin lire le dernier album de Cyndy Sanders du travail même si les chansons sont hébergées dans votre petit nid douillet.
+&lt;/p&gt;
+&lt;p&gt;
+Tiens et puisque nous avons là un HomeServer connecté au web, pourquoi ne pas lui faire également gérer nos &lt;strong&gt;mails&lt;/strong&gt; et nos &lt;strong&gt;bookmarks&lt;/strong&gt; ?
+&lt;/p&gt;
+&lt;p&gt;
+Maintenant, plongeons nous en 2010 ou 2015, ce n'est pas si loin ! Pourtant, nombre d'entre vous bénéficierons alors déjà de la fibre optique, votre HomeServer serait alors capable d'envoyer les données vers l'extérieur beaucoup plus vite et vous pourrez alors non plus écouter le dernier single mais également regarder le dernier clip de Cyndy Sanders depuis votre lieu de vacances !
+&lt;/p&gt;
+&lt;p&gt;
+Et puisque ces contenus sont disponibles sur le web, pourquoi en limiter l'accès à votre petite personne ? Vos grands parents canadiens seraient surement ravis de découvrir cette perle musicale (à moins qu'ils ne préferent la vidéo du petit dernier qui souffle sa première bougie)...
+&lt;/p&gt;
+&lt;p&gt;
+En maîtrisant de A à Z ce &amp;quot;HomeServer&amp;quot;, vous pourrez gérer très finement qui peut consulter quelle photo.
+&lt;/p&gt;
+&lt;p&gt;
+Vous pourriez même prévenir automatiquement certaines personnes de l'ajout de nouvelles ressources sur votre &amp;quot;HomeServer&amp;quot;.
+&lt;/p&gt;
+&lt;p&gt;
+J'entends d'ici les ronchons qui se disent &amp;quot;oui mais bon moi je partage mon dossier musique de chez moi, j'ai configuré mon routeur et je peux y accéder de partout !&amp;quot; ou les plus geeks &amp;quot;Avec Music Player Daemon et Icecast chez moi je fais la même chose pour la musique&amp;quot;.
+&lt;/p&gt;
+&lt;p&gt;
+Certes la plupart des choses annoncées sont d'ores et déjà possibles, mais le but est d'en facilité la mise en place en fournissant à terme un
+&amp;quot;HomeServer&amp;quot; PlugAndPlay qui permettrait toutes les choses énoncées ci-dessus pour tout le monde et même plus...
+&lt;/p&gt;
+&lt;p&gt;
+Allez poussons le bouchon encore un peu plus loin Maurice !
+&lt;/p&gt;
+&lt;p&gt;
+On va intégrer ce PC à votre table de salon.&lt;br /&gt;
+Vous arrivez chez vous, vous posez votre téléphone portable sur la table et celle-ci se charge toute seule d'aller récupérer les dernières
+photo prises pour les mettre sur votre &amp;quot;HomeServer&amp;quot; puis elle synchronise vos différents &lt;strong&gt;Agenda&lt;/strong&gt; et puisqu'elle converse régulièrement avec votre &lt;strong&gt;frigo&lt;/strong&gt; et votre &lt;strong&gt;TV&lt;/strong&gt;, elle vous rappelle que demain, Julien et Anthony viennent regarder le foot et qu'il n'y a plus de bières au frais[&lt;a id="rev-pnote-1" href="http://blogbangbang.com/post/2008/05/15/#pnote-1"&gt;1&lt;/a&gt;] !
+&lt;/p&gt;
+&lt;p&gt;
+Alors, si ce &amp;quot;HomeServer&amp;quot; existait, ça ne vous tenterait pas ?
+&lt;/p&gt;
+&lt;p&gt;
+Le but pour dire vrai n'est pas forcement de créer des clones open sources de Youtube ou FlickR mais plutôt de créer un ensemble de &lt;strong&gt;WebServices&lt;/strong&gt; et d'&lt;strong&gt;API&lt;/strong&gt; permettant à chacun de créer des applications (web ou non et de préférence open sources &lt;img src="/themes/john/smilies/smile.png" alt=":)" class="smiley" /&gt; ) pouvant se connecter aux webservices via l'API pour réaliser les différentes tâches.
+&lt;/p&gt;
+&lt;p&gt;
+De cette manière, la communauté de développeurs Java pourra faire une application mobile, les web-addicts se feront leur FlickR like et les Iphone lovers une application de lecture de vidéos...&lt;br /&gt;
+A terme tout cela serait préinstallé sur un serveur adapté et pourquoi pas installé dans un dispositif bien intégré à la maison (table basse ou autre...)
+&lt;/p&gt;
+&lt;p&gt;
+[&lt;a id="pnote-1" href="http://blogbangbang.com/post/2008/05/15/#rev-pnote-1"&gt;1&lt;/a&gt;] C'est mieux que Surface de Microsoft et puis est ce Microsoft ou Google ont vraiment besoin de savoir que vous préférez la Leffe à la Kro ?
+&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/291201831" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/05/15/Mes-donnees-mappartiennent#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/78</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/05/15/Mes-donnees-mappartiennent</feedburner:origLink></entry>
+    
+  <entry>
+    <title>Maintenance : Retour des commentaires</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/289779047/Maintenance-%3A-Retour-des-commentaires" rel="alternate" type="text/html" title="Maintenance : Retour des commentaires" />
+    <id>urn:md5:b4f6754853a3b3569626c6768a451b19</id>
+    <updated>2008-05-14T01:22:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>en vrac</dc:subject>
+            
+    <content type="html">    &lt;p&gt;Un bug trainait depuis quelques jours qui empechait de poster des commentaires.&lt;br /&gt;Le problème est résolu donc lachez vous ...&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/289779047" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/05/14/Maintenance-%3A-Retour-des-commentaires#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/77</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/05/14/Maintenance-%3A-Retour-des-commentaires</feedburner:origLink></entry>
+    
+  <entry>
+    <title>Et mes données, j'en fais quoi ? (1/4)</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/289728651/4" rel="alternate" type="text/html" title="Et mes données, j'en fais quoi ? (1/4)" />
+    <id>urn:md5:c8b2efc7a612830af695ea9f823cbbdb</id>
+    <updated>2008-05-13T00:23:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>tout public</dc:subject>
+            
+    <content type="html">&lt;p&gt;
+Quand on parle du futur du web, deux choses (parmi tant d'autres) reviennent régulièrement...
+&lt;/p&gt;    &lt;p&gt;
+Premièrement les adeptes du web sont pratiquement tous fan du &lt;strong&gt;&amp;quot;tout-en-ligne&amp;quot;&lt;/strong&gt;, on commence par mettre en ligne ses mails(Gmail, YahooMail, Hotmail...), ses bookmarks (del.icio.us, Diigo), puis on met en ligne ses photos (FlickR, Picassa), ses vidéos (Youtube, Dailymotion), sa musique (Deezer, LastFM)...
+&lt;/p&gt;
+&lt;p&gt;
+Cette possibilité d'avoir tout en distant revêt aux yeux des &amp;quot;geeks&amp;quot; d'énormes avantages : &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt; Le premier étant bien sûr d'avoir accès à ses contenus de &lt;strong&gt;partout&lt;/strong&gt; dans le monde et sur un maximum de&lt;strong&gt; terminaux différents&lt;/strong&gt; (aux questions de formats près). &lt;/li&gt;
+&lt;li&gt; Le deuxième avantage à externaliser ses données est que beaucoup ont plus confiance (à tort ?) envers les serveurs des géants du web qu'en leurs disques durs quand aux questions de la sauvegarde de ses contenus (en plus c'est souvent plus économique).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+Mais, à coté de cela, quand les geeks parlent du web de demain, il y a toujours quelques rabat-joie (dont je fais partie) pour nuancer les bienfaits du &amp;quot;tout-en-ligne&amp;quot;.
+&lt;/p&gt;
+&lt;p&gt;
+En effet, en adoptant cette solution, vous abandonnez à 2-3 grands groupes (même seulement 1 si vous choisissez un combo Gmail, GoogleDocs, Picassa, YouTube) l'intégralité de vos données.
+&lt;/p&gt;
+&lt;p&gt;
+Cette concentration des données à de gros désavantages. En effet, même si l'on voit mal Google faire faillite l'an prochain, il est impossible d'avoir une vision à 10ans (il y a 10 ans Google naissait) voir 20ans (il y a 20 ans les premiers navigateurs web n'était pas nés) des grands du web.
+&lt;/p&gt;
+&lt;p&gt;
+Que deviendront alors vos données le jour ou Google et Yahoo suite à des problèmes financiers ne pourrons plus financer leurs millions de serveurs ?
+&lt;/p&gt;
+&lt;p&gt;
+Et dès aujourd'hui, combien on déjà &amp;quot;perdu&amp;quot; l'intégralité de leurs mails suite à un &amp;quot;bug&amp;quot; de leurs webmails (cherchez un peu sur le web et vous verrez que ça arrive plus souvent qu'on ne le croit).
+&lt;/p&gt;
+&lt;p&gt;
+De plus, cette concentration des données permet aux grands groupes du web, d'en savoir énormément (trop ?) sur vous.
+&lt;/p&gt;
+&lt;p&gt;
+Google (ça retombe souvent sur lui), analyse vos mails, vos visites (via son moteur de recherche), les pubs sur lesquelles vous cliquez (AdSense, Cibleclick), les tags de vos photos, de vos vidéos... Tout cela afin de &amp;quot;mieux&amp;quot; coller à vos désirs et de vendre toujours plus cher ses espaces de pubs aux annonceurs.
+&lt;/p&gt;
+&lt;p&gt;
+Quand vous &amp;quot;offrez&amp;quot; votre identité numérique à Facebook, vous mettez entre les mains d'une entreprise vos goûts cinématographiques, musicaux, votre liste d'amis, des photos...
+&lt;/p&gt;
+&lt;p&gt;
+Depuis quelque temps, cette concentration fait peur et de plus en plus de monde voit en google et les autres un Big Brother qui serais susceptible de savoir absolument tout sur vous !
+&lt;/p&gt;
+&lt;p&gt;
+Alors, ou aller ? Doit-on forcément se priver des avantages du &amp;quot;tout-en-ligne&amp;quot; si l'on souhaite garder un minimum de dépendance vis-à-vis des grandes entreprises du Web ou doit-on céder à leur règles au nom du progrès ?
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;
+N'est-il pas possible de concilier les avantages de ces deux mondes ?
+&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;
+Vos idées sont les bienvenues mais pour être franc, j'ai déjà la mienne et je vais vous la faire partager dans le billet suivant (Il est écrit mais je suis curieux de connaitre votre sentiment sur ce problème avant de vous donner le mien).
+&lt;/p&gt;
+&lt;p&gt;
+Un problème fait que les commentaires ne fonctionnent plus en ce moment.&lt;br /&gt;
+Je vous invite donc à m'envoyer vos avis à jblanche [at] gmail [point] com&lt;br /&gt;
+Je les posterais ici dès le problème résolu et à la suite de ce billet en attendant.
+&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/289728651" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/05/13/Et-mes-donnees-jen-fais-quoi-1/4#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/76</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/05/13/Et-mes-donnees-jen-fais-quoi-1/4</feedburner:origLink></entry>
+    
+  <entry>
+    <title>Et mes données, j'en fais quoi ? - Avant propos</title>
+    <link href="http://feeds.feedburner.com/~r/BlogBangBang/~3/289728653/Et-mes-donnees-jen-fais-quoi-Avant-propos" rel="alternate" type="text/html" title="Et mes données, j'en fais quoi ? - Avant propos" />
+    <id>urn:md5:8c819ab38a88b15a42e9b0b9e74f5cce</id>
+    <updated>2008-05-13T00:17:00+02:00</updated>
+    <author><name>jblanche</name></author>
+        <dc:subject>tout public</dc:subject>
+            
+    <content type="html">    &lt;p&gt;
+Le train est propice à la réflexion et au travail, j'ai donc profité de mes récents voyages pour écrire une série de billets sur des thèmes et un projet qui me tiennent à coeur.
+&lt;strong&gt;La mise en ligne&lt;/strong&gt; de l'ensemble de nos &lt;strong&gt;ressources&lt;/strong&gt; et notre &lt;strong&gt;contrôle&lt;/strong&gt; sur celles-ci.
+&lt;/p&gt;
+&lt;p&gt;
+Cette série se divise en quatre articles (plus celui ci) sous la forme suivante :
+&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href="http://blogbangbang.com/post/2008/05/13/Et-mes-donnees-jen-fais-quoi-1/4"&gt;Description de la situation et du problème ?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Peut-on solutionner le problème ?&lt;/li&gt;
+&lt;li&gt;Comment ?&lt;/li&gt;
+&lt;li&gt;Le projet &lt;/li&gt;
+&lt;/ol&gt;&lt;img src="http://feeds.feedburner.com/~r/BlogBangBang/~4/289728653" height="1" width="1"/&gt;</content>
+    
+          <wfw:comment>http://blogbangbang.com/post/2008/05/13/Et-mes-donnees-jen-fais-quoi-Avant-propos#comment-form</wfw:comment>
+      <wfw:commentRss>http://blogbangbang.com/feed/atom/comments/75</wfw:commentRss>
+      <feedburner:origLink>http://blogbangbang.com/post/2008/05/13/Et-mes-donnees-jen-fais-quoi-Avant-propos</feedburner:origLink></entry>
+  
+</feed>

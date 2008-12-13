@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:clearspace="http://www.jivesoftware.com/xmlns/clearspace/rss" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" version="2.0">
+  <channel>
+    <title>Clearspace Recent Blog Comments Syndication Feed</title>
+    <link>http://www.igniterealtime.org/community/blogs</link>
+    <description>A syndication feed of new blog post comments on this system</description>
+    <pubDate>Thu, 11 Dec 2008 14:53:39 GMT</pubDate>
+    <generator>Clearspace 2.5.5 beta (http://jivesoftware.com/products/clearspace/)</generator>
+    <dc:date>2008-12-11T14:53:39Z</dc:date>
+    <item>
+      <title>RE: Igniterealtime.org Moving Servers</title>
+      <link>http://www.igniterealtime.org/community/blogs/ignite/2008/12/10/igniterealtimeorg-moving-servers#comment-4814</link>
+      <description>&lt;!-- [DocumentBodyStart:d523168a-a239-4486-a015-4956c7b5b601] --&gt;&lt;div class='jive-rendered-content'&gt;&lt;p&gt;I hope Apache server's issue (that i have to login 3 times) will be fixed along with that.&lt;/p&gt;&lt;/div&gt;&lt;!-- [DocumentBodyEnd:d523168a-a239-4486-a015-4956c7b5b601] --&gt;</description>
+      <pubDate>Thu, 11 Dec 2008 14:53:39 GMT</pubDate>
+      <author>wroot</author>
+      <guid>http://www.igniterealtime.org/community/blogs/ignite/2008/12/10/igniterealtimeorg-moving-servers#comment-4814</guid>
+      <dc:date>2008-12-11T14:53:39Z</dc:date>
+    </item>
+    <item>
+      <title>RE: Develop your own Plugins for Red5 SparkWeb</title>
+      <link>http://www.igniterealtime.org/community/blogs/ignite/2008/12/08/develop-your-own-plugins-for-red5-sparkweb#comment-4804</link>
+      <description>&lt;!-- [DocumentBodyStart:fffb498f-f9c5-45eb-a477-b42f466181ae] --&gt;&lt;div class='jive-rendered-content'&gt;&lt;p&gt;Did you do this?&lt;/p&gt;&lt;p style="min-height: 8pt; height: 8pt; padding: 0px;"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;lt;?xml version="1.0" encoding="utf-8"?&amp;gt;&lt;/p&gt;&lt;p&gt;&amp;lt;views&amp;gt;&lt;br/&gt; &amp;lt;!--&lt;br/&gt;  &amp;lt;view&amp;gt; - Represents a tab.&lt;br/&gt;   id - Must be unique so state can be saved properly.&lt;br/&gt;   label - The label of the tab.&lt;br/&gt;  &lt;br/&gt;   &amp;lt;pod&amp;gt;&lt;br/&gt;    id - Must be unique per view so state can be saved properly.&lt;br/&gt;    title - The title of the pod.&lt;br/&gt;    dataSource - The xml to load for the pod.&lt;br/&gt; &lt;br/&gt;  Remove comments from &amp;lt;view&amp;gt; tag below to activate plugins in SparkWeb&lt;/p&gt;&lt;p&gt;--&amp;gt;&lt;/p&gt;&lt;p style="min-height: 8pt; height: 8pt; padding: 0px;"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;br/&gt; &amp;lt;view id="view0" label="Plugin Demo"&amp;gt;&lt;br/&gt;  &amp;lt;pod id="app01" title="User Moods" dataSource="plugins/moods.swf" /&amp;gt;&lt;br/&gt;  &amp;lt;pod id="app02" title="User Tunes" dataSource="plugins/usertunes.swf" /&amp;gt; &lt;br/&gt;  &amp;lt;pod id="app03" title="Demo" dataSource="plugins/demo.swf" /&amp;gt; &lt;br/&gt; &amp;lt;/view&amp;gt;&lt;/p&gt;&lt;p style="min-height: 8pt; height: 8pt; padding: 0px;"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&amp;lt;/views&amp;gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- [DocumentBodyEnd:fffb498f-f9c5-45eb-a477-b42f466181ae] --&gt;</description>
+      <pubDate>Tue, 09 Dec 2008 12:37:32 GMT</pubDate>
+      <author>dele</author>
+      <guid>http://www.igniterealtime.org/community/blogs/ignite/2008/12/08/develop-your-own-plugins-for-red5-sparkweb#comment-4804</guid>
+      <dc:date>2008-12-09T12:37:32Z</dc:date>
+    </item>
+    <item>
+      <title>RE: Develop your own Plugins for Red5 SparkWeb</title>
+      <link>http://www.igniterealtime.org/community/blogs/ignite/2008/12/08/develop-your-own-plugins-for-red5-sparkweb#comment-4803</link>
+      <description>&lt;!-- [DocumentBodyStart:9db297b1-9741-41d6-81cd-74507900c668] --&gt;&lt;div class='jive-rendered-content'&gt;&lt;p&gt;&lt;span style="text-decoration: line-through;"&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;yes that worked.  changing socket to http in plugins/red5/sparkweb/index.html file.&lt;/p&gt;&lt;p style="min-height: 8pt; height: 8pt; padding: 0px;"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;problem #1&lt;/p&gt;&lt;p&gt;when I uncommented the your new plugins, in sparkweb it did not like it.  said "unable to ___ at plugins/plugins.xml.  It might be a linux thing.&lt;/p&gt;&lt;p style="min-height: 8pt; height: 8pt; padding: 0px;"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;problem #2&lt;/p&gt;&lt;p&gt;in spark under Red5, for all 3 features - open audio/video roster, view audio/video messages and publish desktop screen are not working&lt;/p&gt;&lt;p&gt;RequestURI=/chat/video/videoConf.html&lt;/p&gt;&lt;p&gt;RequestURI=/chat/video/videomailplayer.html&lt;/p&gt;&lt;p&gt;chat/viewer?username={JID}&lt;/p&gt;&lt;p style="min-height: 8pt; height: 8pt; padding: 0px;"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;through spark, is there a way to use secure http bind port instead of unsecure http bind port?&lt;/p&gt;&lt;/div&gt;&lt;!-- [DocumentBodyEnd:9db297b1-9741-41d6-81cd-74507900c668] --&gt;</description>
+      <pubDate>Tue, 09 Dec 2008 03:06:03 GMT</pubDate>
+      <author>hosdes</author>
+      <guid>http://www.igniterealtime.org/community/blogs/ignite/2008/12/08/develop-your-own-plugins-for-red5-sparkweb#comment-4803</guid>
+      <dc:date>2008-12-09T03:06:03Z</dc:date>
+    </item>
+    <item>
+      <title>RE: Develop your own Plugins for Red5 SparkWeb</title>
+      <link>http://www.igniterealtime.org/community/blogs/ignite/2008/12/08/develop-your-own-plugins-for-red5-sparkweb#comment-4801</link>
+      <description>&lt;!-- [DocumentBodyStart:6a61b8e0-a9b4-48b9-af6d-f134ab554e14] --&gt;&lt;div class='jive-rendered-content'&gt;&lt;p&gt;I just remembered. Red5 SparkWeb version 0.1.05 and above use TLS for socket connections which don't login with Openfire 3.6.2. Either use the patch I supplied at _&lt;a class="jive-link-external-small" href="http://red5.4ng.net/openfire.jar"&gt;&lt;span style="color: #f06500;"&gt;http://red5.4ng.net/openfire.jar&lt;/span&gt;&lt;/a&gt; or switch to http-bind.&lt;/p&gt;&lt;/div&gt;&lt;!-- [DocumentBodyEnd:6a61b8e0-a9b4-48b9-af6d-f134ab554e14] --&gt;</description>
+      <pubDate>Tue, 09 Dec 2008 00:43:33 GMT</pubDate>
+      <author>dele</author>
+      <guid>http://www.igniterealtime.org/community/blogs/ignite/2008/12/08/develop-your-own-plugins-for-red5-sparkweb#comment-4801</guid>
+      <dc:date>2008-12-09T00:43:33Z</dc:date>
+    </item>
+    <item>
+      <title>RE: Develop your own Plugins for Red5 SparkWeb</title>
+      <link>http://www.igniterealtime.org/community/blogs/ignite/2008/12/08/develop-your-own-plugins-for-red5-sparkweb#comment-4800</link>
+      <description>&lt;!-- [DocumentBodyStart:b08b5e1e-6e38-41b7-b8ad-5a5660cd5247] --&gt;&lt;div class='jive-rendered-content'&gt;&lt;p&gt;One of these days, I will setup a Linux box and understand why the Red5 plugin in Linux is such a pain. For now there not much I can do without seeing any logs. &lt;img height="16px" src="http://www.igniterealtime.org/community/images/emoticons/sad.gif" width="16px"/&gt;&lt;/p&gt;&lt;p style="min-height: 8pt; height: 8pt; padding: 0px;"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;I have this working on my Windows PCs with no problems.&lt;/p&gt;&lt;/div&gt;&lt;!-- [DocumentBodyEnd:b08b5e1e-6e38-41b7-b8ad-5a5660cd5247] --&gt;</description>
+      <pubDate>Tue, 09 Dec 2008 00:17:09 GMT</pubDate>
+      <author>dele</author>
+      <guid>http://www.igniterealtime.org/community/blogs/ignite/2008/12/08/develop-your-own-plugins-for-red5-sparkweb#comment-4800</guid>
+      <dc:date>2008-12-09T00:17:09Z</dc:date>
+    </item>
+    <item>
+      <title>RE: Develop your own Plugins for Red5 SparkWeb</title>
+      <link>http://www.igniterealtime.org/community/blogs/ignite/2008/12/08/develop-your-own-plugins-for-red5-sparkweb#comment-4799</link>
+      <description>&lt;!-- [DocumentBodyStart:713d8d2c-6723-40db-835a-a48b954ba8f5] --&gt;&lt;div class='jive-rendered-content'&gt;&lt;p&gt;I now got the sparkweb main page but that was it.  when I copied red5.war over to openfire/plugins directory I made sure openfire was stopped before copying.  Still working on a few issues.&lt;/p&gt;&lt;p style="min-height: 8pt; height: 8pt; padding: 0px;"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;In spark, our red5 plugin is not working. it is verion 0.0.6. I'd downloaded from latest red5 but it is still not working is spark.&lt;/p&gt;&lt;p style="min-height: 8pt; height: 8pt; padding: 0px;"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Please provide some instructions.  Like to try this.&lt;/p&gt;&lt;/div&gt;&lt;!-- [DocumentBodyEnd:713d8d2c-6723-40db-835a-a48b954ba8f5] --&gt;</description>
+      <pubDate>Mon, 08 Dec 2008 23:25:06 GMT</pubDate>
+      <author>hosdes</author>
+      <guid>http://www.igniterealtime.org/community/blogs/ignite/2008/12/08/develop-your-own-plugins-for-red5-sparkweb#comment-4799</guid>
+      <dc:date>2008-12-08T23:25:06Z</dc:date>
+    </item>
+    <item>
+      <title>RE: Develop your own Plugins for Red5 SparkWeb</title>
+      <link>http://www.igniterealtime.org/community/blogs/ignite/2008/12/08/develop-your-own-plugins-for-red5-sparkweb#comment-4798</link>
+      <description>&lt;!-- [DocumentBodyStart:a173b7ce-4b6e-4815-82a9-c99225e781ea] --&gt;&lt;div class='jive-rendered-content'&gt;&lt;p&gt;we are using openfire 3.6.2 and downloaded your latest red5-0.1.o6.zip.  excellent job.&lt;/p&gt;&lt;p style="min-height: 8pt; height: 8pt; padding: 0px;"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;unfortunately we cannot get our sparkweb or anything else working.  I can see red5.html page but that is it.  any suggestions?&lt;/p&gt;&lt;/div&gt;&lt;!-- [DocumentBodyEnd:a173b7ce-4b6e-4815-82a9-c99225e781ea] --&gt;</description>
+      <pubDate>Mon, 08 Dec 2008 23:06:38 GMT</pubDate>
+      <author>hosdes</author>
+      <guid>http://www.igniterealtime.org/community/blogs/ignite/2008/12/08/develop-your-own-plugins-for-red5-sparkweb#comment-4798</guid>
+      <dc:date>2008-12-08T23:06:38Z</dc:date>
+    </item>
+    <item>
+      <title>RE: Fastpath added to SparkWeb with Red5 video and desktop sharing</title>
+      <link>http://www.igniterealtime.org/community/blogs/ignite/2008/11/23/fastpath-added-to-sparkweb-with-red5-video-and-desktop-sharing#comment-4794</link>
+      <description>&lt;!-- [DocumentBodyStart:3cc5eab2-29f4-43e9-9d83-58048f645154] --&gt;&lt;div class='jive-rendered-content'&gt;&lt;/div&gt;&lt;!-- [DocumentBodyEnd:3cc5eab2-29f4-43e9-9d83-58048f645154] --&gt;</description>
+      <pubDate>Tue, 02 Dec 2008 19:16:30 GMT</pubDate>
+      <author>jperez3</author>
+      <guid>http://www.igniterealtime.org/community/blogs/ignite/2008/11/23/fastpath-added-to-sparkweb-with-red5-video-and-desktop-sharing#comment-4794</guid>
+      <dc:date>2008-12-02T19:16:30Z</dc:date>
+    </item>
+    <item>
+      <title>RE: Fastpath added to SparkWeb with Red5 video and desktop sharing</title>
+      <link>http://www.igniterealtime.org/community/blogs/ignite/2008/11/23/fastpath-added-to-sparkweb-with-red5-video-and-desktop-sharing#comment-4785</link>
+      <description>&lt;!-- [DocumentBodyStart:887fcdd3-da3b-4917-9d5a-13cc4a21ce10] --&gt;&lt;div class='jive-rendered-content'&gt;&lt;p&gt;Hi Gato, Happy thanksgiving. Yes, I had to implement the mandatory parts of  XEP-0142: Workgroup Queues in XIFF, extend some base Sparkweb classes and make cosmetic changes to the UI.&lt;/p&gt;&lt;p style="min-height: 8pt; height: 8pt; padding: 0px;"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;It is a very good idea and if I recall correctly, Armando is planning on doing that&lt;/p&gt;&lt;p style="min-height: 8pt; height: 8pt; padding: 0px;"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;&lt;span&gt;_&lt;/span&gt;&lt;a class="jive-link-external-small" href="http://www.igniterealtime.org/community/blogs/ignite/2008/08/17/roadmap-updates-for-sparkweb"&gt;http://www.igniterealtime.org/community/blogs/ignite/2008/08/17/roadmap-updates- for-sparkweb&lt;/a&gt;&lt;/p&gt;&lt;p style="min-height: 8pt; height: 8pt; padding: 0px;"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;He did mention that he would use the Red5 version of Sparkweb to identify plugin touchpoints &lt;img height="16px" src="http://www.igniterealtime.org/community/images/emoticons/wink.gif" width="16px"/&gt;&lt;/p&gt;&lt;/div&gt;&lt;!-- [DocumentBodyEnd:887fcdd3-da3b-4917-9d5a-13cc4a21ce10] --&gt;</description>
+      <pubDate>Fri, 28 Nov 2008 00:07:30 GMT</pubDate>
+      <author>dele</author>
+      <guid>http://www.igniterealtime.org/community/blogs/ignite/2008/11/23/fastpath-added-to-sparkweb-with-red5-video-and-desktop-sharing#comment-4785</guid>
+      <dc:date>2008-11-28T00:07:30Z</dc:date>
+    </item>
+    <item>
+      <title>RE: Fastpath added to SparkWeb with Red5 video and desktop sharing</title>
+      <link>http://www.igniterealtime.org/community/blogs/ignite/2008/11/23/fastpath-added-to-sparkweb-with-red5-video-and-desktop-sharing#comment-4784</link>
+      <description>&lt;!-- [DocumentBodyStart:36348cdb-9f4d-4370-ad9a-0ec16ae02e0c] --&gt;&lt;div class='jive-rendered-content'&gt;&lt;p&gt;Hey Dele,&lt;/p&gt;&lt;p style="min-height: 8pt; height: 8pt; padding: 0px;"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;This is just IMPRESSIVE. What an excellent job! I guess that you had to modify the source code of Sparkweb to include this functionality. Would you be intersted in building a plugin-mechanishm in Sparkweb so that this functionality could be a plugin just like your red5 integration? We could list in the site the list of plugins available for SparkWeb.&lt;/p&gt;&lt;p style="min-height: 8pt; height: 8pt; padding: 0px;"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Just an idea.&lt;/p&gt;&lt;p style="min-height: 8pt; height: 8pt; padding: 0px;"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;Thanks,&lt;/p&gt;&lt;p style="min-height: 8pt; height: 8pt; padding: 0px;"&gt;&amp;nbsp;&lt;/p&gt;&lt;p&gt;  -- Gato&lt;/p&gt;&lt;/div&gt;&lt;!-- [DocumentBodyEnd:36348cdb-9f4d-4370-ad9a-0ec16ae02e0c] --&gt;</description>
+      <pubDate>Thu, 27 Nov 2008 18:59:58 GMT</pubDate>
+      <author>dombiak_gaston</author>
+      <guid>http://www.igniterealtime.org/community/blogs/ignite/2008/11/23/fastpath-added-to-sparkweb-with-red5-video-and-desktop-sharing#comment-4784</guid>
+      <dc:date>2008-11-27T18:59:58Z</dc:date>
+    </item>
+  </channel>
+</rss>
+

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:admin="http://webns.net/mvcb/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:cc="http://web.resource.org/cc/"
+  xmlns="http://purl.org/rss/1.0/">
+
+<channel rdf:about="http://ross.typepad.com/blog/">
+<title>Ross Mayfield&#39;s Weblog</title>
+<link>http://ross.typepad.com/blog/</link>
+<description>Markets, Technology &amp; Musings</description>
+<dc:language>en-US</dc:language>
+<dc:creator></dc:creator>
+<dc:date>2008-12-11T16:56:45-08:00</dc:date>
+<admin:generatorAgent rdf:resource="http://www.typepad.com/" />
+
+
+<items>
+<rdf:Seq><rdf:li rdf:resource="http://ross.typepad.com/blog/2008/12/forums-are-full.html" />
+<rdf:li rdf:resource="http://ross.typepad.com/blog/2008/12/twitter-is-repl.html" />
+<rdf:li rdf:resource="http://ross.typepad.com/blog/2008/12/asymmetrical-fo.html" />
+<rdf:li rdf:resource="http://ross.typepad.com/blog/2008/12/see-100-million.html" />
+</rdf:Seq>
+</items>
+
+</channel>
+
+<item rdf:about="http://ross.typepad.com/blog/2008/12/forums-are-full.html">
+<title>Forums are Full Frontal Symmetry</title>
+<link>http://ross.typepad.com/blog/2008/12/forums-are-full.html</link>
+<description>Continuing the thread of Asymmetrical Follow, Asymmetry and Privacy and Continuous Partial Asymmetry I had two brief thoughts to share. One is how very different this 2.0 stuff is and the other is what makes it actually works. Consider a...</description>
+<content:encoded>&lt;p&gt;Continuing the thread of &lt;a href=&quot;http://www.redmonk.com/jgovernor/2008/12/05/assymetrical-follow-a-core-web-20-pattern/&quot;&gt;Asymmetrical Follow&lt;/a&gt;, &lt;a href=&quot;http://ross.typepad.com/blog/2008/12/asymmetrical-fo.html&quot;&gt;Asymmetry and Privacy&lt;/a&gt; and &lt;a href=&quot;http://confusedofcalcutta.com/2008/12/08/musing-about-politeness-and-continuous-partial-asymmetry/&quot;&gt;Continuous Partial Asymmetry&lt;/a&gt; I had two brief thoughts to share.&amp;nbsp; One is how very different this 2.0 stuff is and the other is what makes it actually works. &lt;/p&gt;
+
+&lt;p&gt;Consider a 1.0 community feature, Forums. Forums are topic-centric instead of people-centric. There isn&#39;t the notion of following people, or leveraging the social network as a filter. You have to sift through what everyone is saying regardless of who they are, which I find tremendously inefficient. This also means that if someone is truly obnoxious you can&#39;t unsubscribe from them.&amp;nbsp; When people can manage their subscriptions to people, the effect is generally self correcting. &lt;/p&gt;
+
+&lt;p&gt;Not being subscribed to everyone is a default that leads to &lt;a href=&quot;http://ross.typepad.com/blog/2008/12/twitter-is-repl.html&quot;&gt;reply-optional&lt;/a&gt; norms. At first, not being subscribed to everybody makes it difficult for some people to follow the thread when they are accustomed to other conversational tools like email and Forums.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;What makes these people-centric conversations work is something simple, links.&amp;nbsp; If someone happens upon this post, they can see the links in the first paragraph and follow them to pick up the thread.&amp;nbsp; Links, by form of URL or @reply, pull them all together.&lt;/p&gt;</content:encoded>
+
+
+
+<dc:creator>Ross Mayfield</dc:creator>
+<dc:date>2008-12-11T16:56:45-08:00</dc:date>
+</item>
+<item rdf:about="http://ross.typepad.com/blog/2008/12/twitter-is-repl.html">
+<title>Twitter is Reply-Optional</title>
+<link>http://ross.typepad.com/blog/2008/12/twitter-is-repl.html</link>
+<description>Replying on Twitter is optional, and is part of what makes it scale, even socially, quite well. It is a small part of how letting go helps you cope with overload. Following a few posts on Asymmetric Follow, JP blogged...</description>
+<content:encoded>&lt;p&gt;Replying on Twitter is optional, and is part of what makes it scale, even socially, quite well. It is a small part of how letting go helps you cope with overload. Following a few posts on &lt;a href=&quot;http://ross.typepad.com/blog/2008/12/asymmetrical-fo.html&quot;&gt;Asymmetric Follow&lt;/a&gt;, JP blogged on &lt;a href=&quot;http://confusedofcalcutta.com/2008/12/08/musing-about-politeness-and-continuous-partial-asymmetry/&quot;&gt;continuous partial asymmetry&lt;/a&gt;. Its Sunday, I&#39;ve quit smoking for a month, blogged twice now, and the present isn&#39;t evenly distributed, but I&#39;ll comment.&amp;nbsp; JP plucked three things from the thread:&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;Three in particular are worth emphasizing:&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;People in a Web 2.0 network are not uniformly connected; some have more connections than others&lt;/li&gt;
+
+&lt;li&gt;Connections have directions; the number of inbound connections may
+far exceed the number of outbound connections, creating an asymmetric
+environment&lt;/li&gt;
+
+&lt;li&gt;This is particularly true of “default-public” networks such as Twitter; Flickr is also likely to evince similar behavior.&lt;/li&gt;&lt;/ul&gt;&lt;/blockquote&gt;
+&lt;p&gt;I spell checked the British out of the blockquote just to fuck with him.&lt;/p&gt;
+
+&lt;p&gt;He quoted Stu Berwick that &amp;quot;In IM, it&#39;s polite to be silent.&amp;quot; True that. Jerry Michalski taught me the power of silence online, Steve Gillmor did online. Then Steve chided me for apostrophe usage, which I still see as blurred a line as post-enlightenment serfdom. That and how my English teacher aunt derided how email destroyed English.&lt;/p&gt;
+
+&lt;p&gt;But, really.&lt;/p&gt;
+
+&lt;p&gt;What makes Asymmetic Follow scalable technically is that its easier. Scalable businessmodelly, if that it is a word, is that its good for adoption. Scalable socially in that it doesn&#39;t create non-casual attention burdens.&amp;nbsp; Twitter is reply-optional in the &#39;verse. &lt;/p&gt;
+
+&lt;p&gt;JP: &lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;What is this thing that works? Asymmetric follow. Why? Because I am
+no longer expected to reply to everything that comes in. People who
+receive a lot of snail mail or e-mail don’t reply to everything that
+comes in either, so what’s the difference? The difference is in the
+perception of polite behaviour.&lt;/p&gt;
+
+&lt;p&gt;The politeness issue alone is not enough either. This whole thing is
+exacerbated, beautifully exacerbated, by the 140 character limit of
+Twitter. Because we can now have “continuous partial asymmetry”.
+Someone who has 4000 followers can &lt;em&gt;&lt;strong&gt;choose&lt;/strong&gt;&lt;/em&gt; to reply to the @s of 400 of the followers, because of two critical things. One, the &lt;em&gt;&lt;strong&gt;cost&lt;/strong&gt;&lt;/em&gt; of replying to the @ is low. And two, you can &lt;em&gt;&lt;strong&gt;vary&lt;/strong&gt;&lt;/em&gt;
+the particular 400 you’re replying to. Yes you’re constrained,
+ostensibly by personal bandwidth, from replying to everyone all the
+time. But because you manage to reply to some of the people some of the
+time, nobody feels left out, the weak ties remain in place and
+everything works.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;There is another thing that works. DMs. I don&#39;t subscribe to Scoble&#39;s linkbait raint on how &lt;a href=&quot;http://scobleizer.com/2008/12/06/10-reasons-why-twitter-direct-messages-suck-and-so-do-facebooks/&quot;&gt;Direct Messages suck&lt;/a&gt;. DMs blow. DMs are push attention modelled messages within confirmed ties.&amp;nbsp; What that actually means is they are like having IM between two people in that both parties confirmed the relationship (tie), but the modality is still new enough that you don&#39;t have to reply soon.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;Hell, Stowe is right that Scoble would like it all to &lt;a href=&quot;http://www.stoweboyd.com/message/2008/12/scoble-doesnt-l.html&quot;&gt;turn into email&lt;/a&gt;. So familliar and comfort. &lt;a href=&quot;http://friendfeed.com/bengross&quot;&gt;Ben Gross&lt;/a&gt; might pipe in with media displacement theory (you can&#39;t completely displace a modality of communication, it stays with us, those habits and tools last waaay to long) here, but let&#39;s try to appreciate what is new.&lt;/p&gt;
+
+&lt;p&gt;Maybe the tools, and burden from tools, have created actually productive practices, and tools.&amp;nbsp; Where some channels have different burdens of reply.&amp;nbsp; Twitter has a near zero burden of reply.&amp;nbsp; DMs have a slightly less burden of reply, but still a cost to the sender in the form of relationship, initial and retention.&amp;nbsp; Some of the best and busiest people say to me today that DMs are the best way to get ahold of them, when &#39;elst fails.&lt;/p&gt;
+
+&lt;p&gt;But what is interesting implementing a Twitter for the Enterprise is the practices to encourage use of Socialtext Signals as reply-optional. As a toolmaker, you cast a tool into the world, but people can use it differently. You try to set the right defaults, but don&#39;t want to assume intelligent design. There will be a manager that will demand reply in the new modality, but the conversation that makes things really work is what modality works best for what kind of attention.&lt;/p&gt;
+
+
+&lt;script src=&quot;http://triggit.com/i?kw=social+network+attention&quot;&gt;&lt;/script&gt;
+</content:encoded>
+
+
+<dc:subject>twitter</dc:subject>
+
+<dc:creator>Ross Mayfield</dc:creator>
+<dc:date>2008-12-07T22:58:35-08:00</dc:date>
+</item>
+<item rdf:about="http://ross.typepad.com/blog/2008/12/asymmetrical-fo.html">
+<title>Asymmetrical Follow and Privacy</title>
+<link>http://ross.typepad.com/blog/2008/12/asymmetrical-fo.html</link>
+<description>James Governor is right to highlight Asymmetrical Follow as a core social software design pattern.Asymmetric Follow is a core pattern for Web 2.0, in which a social network user can have many people following them without a need for reciprocity....</description>
+<content:encoded>&lt;p&gt;James Governor is right to highlight &lt;a href=&quot;http://www.redmonk.com/jgovernor/2008/12/05/assymetrical-follow-a-core-web-20-pattern/&quot;&gt;Asymmetrical Follow&lt;/a&gt; as a core social software design pattern.&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;Asymmetric Follow is a core pattern for Web 2.0, in which a social
+network user can have many people following them without a need for
+reciprocity. Asymmetric Follow is unlike email for example, which tends
+to be within small groups, with all users knowing each other
+(newsletters are a clear exception here). If you see a social network
+where someone has 5000 followers and only follows 150 back - that’s
+Asymmetric Follow.&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;His post explores the concept I&#39;ve described as &lt;a href=&quot;http://ross.typepad.com/blog/2007/03/attention_abund.html&quot;&gt;pull&lt;/a&gt; &lt;a href=&quot;http://ross.typepad.com/blog/2007/03/twitter_tips_th.html&quot;&gt;attention&lt;/a&gt; management vs. push (email), and gets enterprisey with &lt;a href=&quot;http://twitter.com/jobsworth&quot;&gt;@jobsworth&lt;/a&gt;:&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;...The technical approach that is most appropriate to support
+Asymmetrical Follow is well known in the world of high scale enterprise
+messaging- its called Publish And Subscribe.&lt;/p&gt;
+
+&lt;p&gt;But Publish and Subscribe also talks to the social aspects of Asymmetrical Follow. As @Jobsworth &lt;a href=&quot;http://confusedofcalcutta.com/2007/12/27/thinking-about-push-and-pull-and-twitter-in-the-enterprise/&quot;&gt;puts it&lt;/a&gt;:&lt;br /&gt;
+&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;“I think we would be far better off considering Twitter
+as neither Pull nor Push, but instead as Pub-Sub, as Publish-Subscribe.
+The first and most beautiful thing about Twitter, as far as I am
+concerned, is that I only see the tweets of people I follow, people
+whose tweets I subscribe to. It is up to me to decide how many people I
+can follow. For some people this may be a Dunbar number, stabilising
+around 150, perhaps finding a Twitter adjustment to that number and
+raising it. Others may be Scoblesque in their reach, dissatisfied
+unless they push the 5000 limit (as in Facebook; I must admit I have no
+idea what the Twitter limit is).
+&lt;/p&gt;
+
+&lt;p&gt;So one way of avoiding increasing noise levels is to avoid
+increasing the network beyond one’s capacity. I can choose to “follow”
+(or subscribe to tweets from) just as many people as I am able to cope
+with. This is not something you can do easily with BlackBerry or with
+e-mail in general.”&lt;/p&gt;&lt;/blockquote&gt;&lt;/blockquote&gt;
+&lt;p&gt;James explored further in his next post, getting &lt;a href=&quot;http://www.hackdiary.com/&quot;&gt;Matt Biddulph&lt;/a&gt; to comment on if this pattern arose in &lt;a href=&quot;http://www.dopplr.com/&quot;&gt;Dopplr&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;
+&lt;a href=&quot;http://www.flickr.com/photos/mbiddulph/3083859057/&quot;&gt;&lt;img width=&quot;206&quot; height=&quot;185&quot; border=&quot;0&quot; class=&quot;alignnone&quot; title=&quot;symmetrical follow &quot; src=&quot;http://farm4.static.flickr.com/3202/3083859057_925d331851.jpg?v=0&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;This graph shows the distribution of how many people
+share with more people than share with them, or vice versa. The hump is
+slightly higher on the right, indicating that there’s a bias towards
+sharing with more people than share back.&lt;/p&gt;
+&lt;p&gt;The peak is centred on zero, indicating that the average traveller
+shares with about the same number of people that share with them.&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;I think the hump is on the right because Dopplr is private by default, while Twitter is public by default. &lt;a href=&quot;http://ross.typepad.com/blog/2006/03/pc_forum_the_pa.html&quot;&gt;Defaults matter&lt;/a&gt; for social dynamics than any other designer intent. &lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/ross/3090079650/&quot; title=&quot;assisted lurking by Ross Mayfield, on Flickr&quot;&gt;&lt;img width=&quot;254&quot; height=&quot;500&quot; border=&quot;0&quot; align=&quot;right&quot; src=&quot;http://farm4.static.flickr.com/3115/3090079650_1e1e3ec163.jpg&quot; alt=&quot;assisted lurking&quot; /&gt;&lt;/a&gt;With a default-private network, you share as a gesture, perhaps in
+hopes of getting sharing back to form a confirmed tie.&amp;nbsp; With a
+default-public network, you share by default, and you follow as a
+commitment of attention. With default-public, the hump is on the left,
+in the form of a power law. Both networks follow the Asymmetric Follow
+pattern, but they have different defaults reflecting the nature of the
+objects shared and how people socialized around them.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://socialtext.com&quot;&gt;Socialtext&lt;/a&gt; also employs Asymmetric Follow, where people follow other people&#39;s Update Feeds to subscribe to events like edits, posts, comments and tags.&amp;nbsp; I actually think Asymmetric Follow emerged as a pattern designed for adoption, when you consider the alternative -- requiring a confirmed tie before sharing information.&lt;/p&gt;
+
+&lt;p&gt;One thing I&#39;ve found fascinating about how this pattern works out in an organization, with its pre-existing social network and context, is what you can learn about someone from how attention is spent by them and to them.&lt;/p&gt;
+
+&lt;p&gt;To the right is how this feature shows up on a Profile in Socialtext People. Unlike Twitter, we needed to make it visually easy to discover who is following who (&lt;a href=&quot;http://www.alevin.com/weblog/&quot;&gt;Adina&lt;/a&gt; would describe the design decisions better than me). What I can say is one of the greatest values is on-boarding new employees.&amp;nbsp; Being a new employee is joining a new social network and the greatest challenge is understanding how information actually flows and how work actually gets done.&amp;nbsp; By having a default-public network like this in place, on-boarding is accelerated and the strength of weak ties is leveraged.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Side note: yes, this should have been two blog posts&lt;/em&gt;&lt;/p&gt;</content:encoded>
+
+
+<dc:subject>socialnetworking</dc:subject>
+
+<dc:creator>Ross Mayfield</dc:creator>
+<dc:date>2008-12-07T09:44:30-08:00</dc:date>
+</item>
+<item rdf:about="http://ross.typepad.com/blog/2008/12/see-100-million.html">
+<title>See 100 Million People Thrive</title>
+<link>http://ross.typepad.com/blog/2008/12/see-100-million.html</link>
+<description>My friend Matt Mahoney launched his startup today, Daily Endeavor. As the name implies, its just the beginning of a journey to empower 100 Million Millennials/NetGens to find their way in the world. From his first blog post, Don&#39;t Settle,...</description>
+<content:encoded>&lt;p&gt;My friend &lt;a href=&quot;http://node.typepad.com/&quot;&gt;Matt Mahoney&lt;/a&gt; launched his startup today, Daily Endeavor.&amp;nbsp; As the name implies, its just the beginning of a journey to empower 100 Million Millennials/NetGens to find their way in the world.&amp;nbsp; From his first blog post, Don&#39;t Settle, &lt;a href=&quot;http://blog.endeavorprep.com/2008/12/dont-settle-do-what-you-love/&quot;&gt;Do What You Love&lt;/a&gt;:&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;Here’s where the story starts. There are three parts that you need to know.&lt;/p&gt;
+
+&lt;p&gt;First, who? There is a tremendous force arriving on the scene, and
+at just about the right time. It’s the sheer creative force of people
+coming into their own. Maybe they’re 24, or maybe they’re 19. Maybe
+they’re your friend, your brother or daughter. Or maybe it’s you. This
+great wave of individuals goes by many names (Millennials, Gen Y, Net
+Gens, you name it). The labels are not so important, it’s the
+individuals that are at the center of the story — who they are, and
+what they choose to do. This generation is going to re-shape the world
+as we know it. &lt;a href=&quot;http://www.facebook.com/&quot;&gt;It’s already begun&lt;/a&gt;, and it’s fantastic.&lt;/p&gt;
+
+&lt;p&gt;Second, have you ever wondered why is it some people truly thrive in
+their work life, while others do not? This is the question we set out
+to answer as part of a research project at Harvard over three years
+ago. The pattern we found isn’t a lack of talent (there is tons) or
+opportunity (there are more types of jobs today than ever before). We
+found most people never discover what they truly want to do. Too many
+people settle. That’s a problem — not only is there great cost to the
+individual (”wow, my job really sucks”), but also to their companies,
+colleagues and the economy.&lt;/p&gt;
+
+&lt;p&gt;Consider the alternative. What if more people found a career path of
+genuine interest, however they define it? What if more people were able
+to find work that lit them up — how would their lives be different?&lt;/p&gt;
+
+&lt;p&gt;In our experience, these people excel, and not just economically.
+These people have more opportunities to grow and more ways to — dare we
+say it — be happy. They make better colleagues, managers,
+entrepreneurs, and probably neighbors too. Because they’re working from
+abundance, not scarcity, there’s an unmistakable productivity that’s
+unleashed.&lt;/p&gt;
+
+&lt;p&gt;As a result, we set about addressing the unmet need — helping people
+answer the question “What do I want to do?” –&amp;nbsp; which led us to develop &lt;a href=&quot;http://www.endeavorprep.com/&quot;&gt;Endeavor Prep&lt;/a&gt;, the &lt;a href=&quot;http://www.endeavorprep.com/how-it-works/&quot;&gt;career search prep course&lt;/a&gt;.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+
+
+
+
+
+
+
+&lt;p&gt;If you know people just entering the workforce, please have them check out the service. It offers unparalleled depth and connecting with real industry experts.&amp;nbsp; Many of you may have met Matt when he worked at Socialtext and I&#39;m really happy about the good he is doing in this world.&lt;/p&gt;&lt;p&gt;e &lt;/p&gt;</content:encoded>
+
+
+<dc:subject>dailyendeavor</dc:subject>
+
+<dc:creator>Ross Mayfield</dc:creator>
+<dc:date>2008-12-04T17:22:51-08:00</dc:date>
+</item>
+
+
+</rdf:RDF>
+<!-- ph=1 -->
+<!-- nhm:dynamic-ssi -->

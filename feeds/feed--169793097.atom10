@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns:g="http://base.google.com/ns/1.0" xmlns="http://www.w3.org/2005/Atom" xmlns:georss="http://www.georss.org/georss" xml:lang="fr"><title>Latest memos from API meal</title><link href="http://api-meal.eu/" rel="alternate"></link><link href="http://api-meal.eu/feeds/latest/" rel="self"></link><id>http://api-meal.eu/</id><updated>2008-11-24T01:42:42-06:00</updated><subtitle>Updates on changes and additions to api-meal.eu.</subtitle><generator>API Meal</generator><entry><title>Installer LXML sur mac OS X 10.5</title><link href="http://api-meal.eu/memo/82-installer-lxml-sur-mac-os-x-105/" rel="alternate"></link><updated>2008-11-24T01:42:42-06:00</updated><author><name>Xavier</name><email>no-reply@john-noone.com</email></author><id>http://api-meal.eu/memo/82-installer-lxml-sur-mac-os-x-105/</id><summary type="html">
+assuming your python is the mac os x default…
+   make sure no traces of other pythons in your $PATH
+
+
+télécharger et installer libxml2:
+   ./configure --prefix=/usr/local/libxml2-2.7.0
+      make
+      sudo make install
+      cd /Library/Python/2.5/site-packages
+      sudo ln -s /usr/local/libxml2-2.7.0/lib/python2.5/site-packages/* .
+   
+
+
+télécharger et installer libxslt:
+   ./configure --prefix=/usr/local/libxslt-1.1.24 --with-libxml-prefix=/usr/local/libxml2-2.7.0
+      make
+      sudo make install
+      cd /Library/Python/2.5/site-packages
+      sudo ln -s /usr/local/libxslt-1.1.24/lib/python2.5/site-packages/* .
+   
+
+
+télécharger et installer lxml:
+   sudo python setup.py install 
+        --with-xml2-config=/usr/local/libxml2-2.7.0/bin/xml2-config 
+        --with-xslt-config=/usr/local/libxslt-1.1.24/bin/xslt-config
+   
+</summary><rights>Copyright © 2008, API Meal</rights><g:publish_date>2008-12-12</g:publish_date><published>2008-11-24T01:41:23Z</published><g:reviewer_type>user</g:reviewer_type></entry><entry><title>Paris et jeux d'argent en ligne</title><link href="http://api-meal.eu/memo/79-paris-et-jeux-dargent-en-ligne/" rel="alternate"></link><updated>2008-11-21T04:11:58-06:00</updated><author><name>Anne</name><email>no-reply@superficelle.fr</email></author><id>http://api-meal.eu/memo/79-paris-et-jeux-dargent-en-ligne/</id><summary type="html">
+
+
+Eric Woerth, ministre du budget, a annoncé l'ouverture partielle à la concurrence du marché français des paris et des jeux d'argent en lignes. Cette ouverture devrait être effective fin 2009 voire début 2010 et annonce la fin du monopole de la Française des Jeux. Cela concerne les paris hippiques (seuls les paris mutuels seront autorisés, en échange de la fin du monopole du PMU), les paris sportifs et les jeux de casino tels que le poker ou la roulette.
+
+Cette ouverture est demandée par Bruxelles. Elle résulte aussi d'une volonté du ministre de réguler cette activité qui existe de toute façon, afin de mieux l'encadrer.
+
+
+Nécessité d'encadrer cette activité :
+Parallèlement, pour encadrer cette ouverture, et protéger l'ordre public et social (fraudes, addiction des joueurs), le gouvernement français va mettre sur pied une "autorité de régulation" début 2009. Cette autorité sera chargée de "définir un cahier des charges" et d'accorder des agréments aux opérateurs qui s'y conformeront, à l'issue d'appels d'offres lancés pour chaque segment de jeux. La délivrance des agréments sera effective à partir du deuxième semestre 2009, a affirmé M. Woerth. "D'ici là, c'est la loi qui s'applique et les paris sportifs en ligne (gérés par des opérateurs autres que la Française des Jeux ou le PMU, ndlr) sont interdits", a-t-il insisté.
+
+Les jeux resteront interdits aux mineurs et des mécanismes seront mis en place pour empêcher addictions et dépendances aux jeux. Un système d'alerte est à l'étude, de même que les publicités seront encadrées, les transactions financières contrôlées etc... 
+
+
+Estimation chiffrée de l'activité jeux/paris en ligne :
+On  peut difficilement quantifier les sommes qu'engendrent les jeux d'argent en ligne : poker en ligne , paris sportifs, etc, de même que le nombre de joueurs. Il semblerait, selon la Française des jeux, qu'on atteindrait le montant de 500 millions d'euros de chiffre d'affaires pour une année et que le nombre de parieurs serait d'un demi million. Pour autant, ces données ne peuvent être vérifiées et confirmées, par voie de conséquence, car nous sommes encore pour le moment dans une sphère illégale. 
+
+D'après le Figaro (06/06/2008), les paris sportifs en ligne illégaux fleurissent. Ils représenteraient déjà 5 à 7 milliards d'euros. Sur le seul Masters Series de tennis de Bercy, en novembre 2007, il y a eu 230 millions d'euros de paris illégaux et sur Roland-Garros, 600 millions d'euros auraient été engagés.
+
+
+Profil des joueurs français (en ligne) :
+Etude réalisée par l'Agence française des jeux en ligne (AFJL), en collaboration avec Concours.fr, auprès de 21.000 internautes joueurs (chiffres cités par le JDN le 23/03/2007).
+
+Âge :Les joueurs en ligne français sont relativement jeunes. 
+    42 % d'entre eux ont entre 31 et 45 ans
+ br /&amp;gt;28 % ont entre 18 et 30 ans.
+    Les plus de 45 ans ne représentent donc que 30 % des joueurs en ligne.
+ Une sur-représentation des moins de 45 ans directement liée à la structure socio-démographique de la population des internautes, celle-ci étant plus jeune que la moyenne de la population française. 
+
+Habitudes de jeu :La plupart d'entre eux jouent sur des sites de jeux concours ou sur ceux de la française des jeux et du PMU. 
+
+
+ 
+     8,91 % des joueurs français interrogés se rendent sur des sites de jeux d'argent situés à l'étranger. 
+ 
+
+
+     20,2% des internautes qui sont des joueurs sur le site de la Française des Jeux jouent sur des sites de jeux d'argent étrangers.
+ 
+
+
+     39,1% des internautes qui sont des joueurs sur le site du PMU jouent sur des sites de jeux d'argent étrangers.
+ 
+
+Motivations de jeu :
+ 
+     Gagner de l'argent : 43,9%
+ 
+
+
+     Besoin de se divertir : 33,6%
+ 
+
+
+     Goût du jeu : 20,45%
+ 
+
+
+     Praticité d'Internet (casinos en ligne évitent de se déplacer) : 2%
+ 
+
+Connaissance des législations sur le jeu sur Internet :
+ 
+     60 % des personnes interrogées pensent en effet qu'il est légal de jouer sur un site d'argent autre que ceux proposés par la Française des Jeux ou le PMU.
+ 
+
+
+     83,9 % d'entre eux estiment qu'il faut légaliser et encadrer les jeux d'argent en ligne hors monopoles.
+ 
+
+
+Groupes / sites de jeux et paris en ligne :
+
+ 
+     SportingBet société britannique reconnue au pays des bookmakers, cotée sur la Bourse de Londres et auditée par PriceWaterHouseCoopers. Sites parisprestige.com, parier.net, pariersurlefoot.com, 
+ 
+
+
+     Bwin : site de paris sportifs autrichien
+ 
+
+
+     Unibet : paris sportifs en ligne
+ 
+
+
+     ZeTurf : paris sur les courses de chevaux
+ 
+
+
+     BetOnSports
+ 
+
+
+     PokerStars
+ 
+
+
+     FullTilt
+ 
+
+
+     Ladbroke
+ 
+
+
+     TokenWin
+ 
+
+
+Problèmes actuels liés au monopole de la FDJ et du PMU sur Internet :
+Les jeux d’argents et paris sont l’exclusivité de la Française des Jeux et du PMU, cette exclusivité ne souffrant aucune exception. 
+   Hors depuis des années ces même jeux (les jeux de casino, poker en ligne, bingo…) sont disponibles en ligne pour tous les internautes, via des société étrangères…
+   Se posent alors plusieurs problèmes:
+
+Le monopole :Le monopole sur ce secteur est total. C’est l’Etat qui délivre des licences et seuls certains acteurs y sont autorisés, ce qui constitue une violation manifeste du droit européen, qui autorise les sociétés des pays membres à proposer leurs services de jeux en ligne en France (comme dans tous les pays de l’Union Européenne).
+
+La redistribution :Il existe de grandes disparités entre les taux de reversement des acteurs traditionnels et les acteurs virtuels.
+   Le taux de redistribution de la Française Des Jeux est de 59.7% contre 96 à 98% pour un casino en ligne.
+   On voit là une disparité flagrante entre les acteurs traditionnel et ses concurrents qui proposent des jeux d’argent en ligne.
+
+Les taxes :Aujourd’hui les jeux d’argent en ligne sont rentrés dans les mœurs (les français adorent les machines à sous et le poker), mais vu qu’aucun acteur n’est autorisé légalement à opérer en France, ce sont des sociétés domiciliées à l’étranger qui profitent de cette manne. Peut être est-ce une tentative de récupérer une partie des taxes sur les jeux d’argent non perçues par l’Etat français?
+
+
+La question de la fiscalité :
+À ce stade, des questions importantes restent sans réponse. Comme celle de la fiscalité. Éric Woerth ne s'en est d'ailleurs pas caché : « Les choses ne sont pas du tout arrêtées. » Priorité des priorités, l'État veut préserver ses recettes : plus de 5 milliards d'euros. Mais une fiscalité trop élevée risquerait de détourner les joueurs des sites autorisés. Le niveau des taxes « tiendra compte de l'environnement économique et budgétaire », assure Éric Woerth.
+
+
+Les acteurs intéressés par l'ouverture de ce marché : (liste en vrac)
+
+ 
+     La ligue de football professionnelle.
+     Frédéric Thiriez, président de la ligue de football professionnelle à propos de l'ouverture du marché des paris sportifs en ligne : "il faut s'occuper des problèmes éventuels de blanchiment et de corruption. Nous voulons donc pouvoir accorder notre feu vert aux paris qui existeront. Au niveau financier, cela fait des années que la Française des Jeux, qui génère 300 millions d'euros sur le foot, nous spolie de nos droits. Nous voulons récupérer le droit de propriété, pour toucher des royalties sur les mises et négocier des contrats de sponsoring avec les sociétés de paris."
+ 
+
+
+     Les chaînes de télévision.
+      Selon Les Echos, TF1 et M6 souhaitent profiter de cette ouverture à la concurrence pour investir le marché des jeux en ligne. Un marché très prometteur : en 2007, son chiffre d'affaires a atteint 580 millions d'euros (PMU + Française des jeux) et il devrait doubler lors de la libéralisation du marché selon les spécialistes. Une aubaine pour TF1 et M6 qui cherchent à se diversifier en raison de la morosité des investissements publicitaires. « Le nom de France Télévisions circule également » note le quotidien économique.
+« Nous réfléchissons en ce moment à un engagement fort dans le domaine des jeux en ligne », a déclaré Nicolas de Tavernost, patron de M6, au quotidien allemand Handelsblatt. « Nous privilégions un partenariat car nous avons un certain savoir-faire dans ce domaine », a indiqué pour sa part la secrétaire générale de M6 Web aux Echos. Allusion au partenariat M6/Orange et du succès de l'offre "M6 Mobile by Orange". La chaîne privilégierait « plutôt » des paris en ligne dans le domaine du divertissement.
+ Du côté de TF1, la chaîne plancherait sur des paris sportifs proposés sur le site internet de sa filiale Eurosport, 1er portail sportif en Europe.
+ 
+
+
+La FDJ est favorable à l'ouverture à la concurrence des paris sportifs en ligne :
+
+ 
+     En position de monopole en théorie, la FDJ ne détient en vérité que 2% du marché du jeu en ligne.
+ 
+
+
+     Ce sont les opérateurs étrangers qui détiennent ce monopole
+ 
+
+
+     Hors paris hippiques, le marché du jeu sur Internet en France représente 460 millions d’euros dont seulement 10 millions pour la FDJ. [Pour exemple, un site comme Unibet enregistre 100 000 transactions par jour, contre 10 000 par semaine pour la FDJ ndlr]. La concurrence existe mais est préjudiciable à la FDJ car non régulée.
+ 
+
+
+     Fiscalité : il faut un cadre juridique qui vienne harmoniser la fiscalité, car c’est de là que découle l’aspect compétitif. En France elle est de 20 %, alors que certains opérateurs bénéficient de la fiscalité maltaise à 1 %.
+ 
+
+
+     Conditions pour une ouverture à la concurrence qui soit réussie pour la FDJ : "La maîtrise du calendrier est essentielle. En France, tous les secteurs qui se sont ouverts à la concurrence ont eu le temps de se préparer. Il faut qu’on nous laisse du temps. Je pense notamment aux plates-formes : aujourd’hui la FDJ ne propose que 5 sports sur lesquels parier, quand les opérateurs étrangers en proposent en moyenne 80. Ce genre de considération doit être pris en compte si l’on veut que la FDJ trouve sa place sur le marché. Mais la sauvegarde des opérateurs nationaux est de toute façon dans l’intérêt de l’économie française : nous représentons des emplois."
+ 
+</summary><rights>Copyright © 2008, API Meal</rights><g:publish_date>2008-12-12</g:publish_date><published>2008-11-15T07:47:29Z</published><g:reviewer_type>user</g:reviewer_type></entry><entry><title>Jerry Yang quitte Yahoo</title><link href="http://api-meal.eu/memo/81-jerry-yang-quitte-yahoo/" rel="alternate"></link><updated>2008-11-18T15:52:15-06:00</updated><author><name>Anne</name><email>no-reply@superficelle.fr</email></author><id>http://api-meal.eu/memo/81-jerry-yang-quitte-yahoo/</id><summary type="html">
+Le PDG de Yahoo, co-fondateur du site, va quitter le groupe.
+
+L'annonce a été saluée à Wall Street, où l'action Yahoo! a progressé de 4 % dans les transactions enregistrées après la clôture.
+
+Certains pensent que le départ devrait permettre de relancer les discussion avec Microsoft (Microsoft, qui a jeté l'éponge en mai, proposait en effet de racheter Yahoo! pour 47,5 milliards de dollars , soit 37,6 milliards d'euros, valorisant fortement l'action de l'entreprise Internet).
+
+Parallèlement, Google, rival de Yahoo!, avait renoncé début novembre à la recherche d'un partenariat en matière de publicité. 
+
+Et les discussions menées plusieurs mois durant avec Time Warner sur un rapprochement avec AOL avaient également échoué.
+
+xx
+</summary><rights>Copyright © 2008, API Meal</rights><g:publish_date>2008-12-12</g:publish_date><published>2008-11-18T03:43:57Z</published><g:reviewer_type>user</g:reviewer_type></entry><entry><title>Un ancien agent de la Stasi fait fermer Wikipedia Allemagne pour trois jours</title><link href="http://api-meal.eu/memo/80-un-ancien-agent-de-la-stasi-fait-fermer-wikipedia-allemagne-pour-trois-jours/" rel="alternate"></link><updated>2008-11-18T03:34:11-06:00</updated><author><name>Anne</name><email>no-reply@superficelle.fr</email></author><id>http://api-meal.eu/memo/80-un-ancien-agent-de-la-stasi-fait-fermer-wikipedia-allemagne-pour-trois-jours/</id><summary type="html">
+Lutz Heilmann, député au Parlement fédéral du parti d'extrême gauche Die Linke (La Gauche), avait obtenu le 13 novembre une injonction en justice obligeant Wikipédia Allemagne à fermer l'ensemble de son site tant que sa notice biographique contiendrait des affirmations qu'il juge diffamatoires.
+
+M. Heilmann contestait les passages indiquant qu'il avait occulté ses états de services à la Stasi de 1985 à 1990, ainsi que des références de presse à sa vie sexuelle. Le plaignant, qui avait déjà fait l'objet d'une polémique en 2005 pour avoir caché son passé à la Stasi avant d'être élu député, a renoncé à ses poursuites dimanche et autorisé la réouverture de Wikipédia après que le site allemand a modifié certains aspects de sa notice. 
+
+Source : Le Monde, 18/11/2008
+</summary><rights>Copyright © 2008, API Meal</rights><g:publish_date>2008-12-12</g:publish_date><published>2008-11-18T03:33:36Z</published><g:reviewer_type>user</g:reviewer_type></entry><entry><title>Française des Jeux</title><link href="http://api-meal.eu/memo/78-francaise-des-jeux/" rel="alternate"></link><updated>2008-11-15T07:33:45-06:00</updated><author><name>Anne</name><email>no-reply@superficelle.fr</email></author><id>http://api-meal.eu/memo/78-francaise-des-jeux/</id><summary type="html">
+Entreprise française d'Etat créée en 1976.
+
+A le monopole des jeux de loterie et de paris sportifs sur tout le territoire national, départements d'outre-mer inclus, ainsi que dans la collectivité territoriale de Saint-Pierre-et-Miquelon, la collectivité d'outre-mer de la Polynésie française et la principauté de Monaco.
+
+Actionnaires :La Française des Jeux est une entreprise publique, société anonyme dont le capital de 76 M€ est détenu  à 
+
+
+ 
+     72 % par l'État
+ 
+
+
+     20% par les émetteurs historiques de la Loterie Nationale :
+ 
+     Union des Blessés de la Face et de la Tête (9,2%)
+ 
+
+
+     Fédération Maginot (4,2%), ISUD (2,6%)
+ 
+
+
+     Confédération des débitants de tabac (2%)
+ 
+
+
+     Mutuelle du Trésor (1%)
+ 
+
+
+     Comalo (0,6%)
+ 
+
+
+     Emissions Berger (0,4%)
+ 
+
+
+
+
+
+     5% par les salariés (Fonds Commun de Placement des salariés)
+ 
+
+
+     3% par la Soficoma (groupement de courtiers), ces derniers ayant pour mission d'accompagner la Française des Jeux dans la distribution et la commercialisation des produits auprès des détaillants d'une zone géographique précise. 
+ 
+
+Noms :Héritière de la Loterie Nationale 
+   * Société de la Loterie Nationale et du Loto National » (SLNLN) en 1976
+    France Loto en 1989 - ce changement de nom, cette année là, marque aussi une profonde restructuration de l'entreprise. La participation de l'État passe de 51 à 72 %, celle des émetteurs de billets de 49 à 20 % et les salariés et les courtiers sont autorisés à entrer dans le capital à hauteur de 5 et 3 %. Le capital est augmenté de 20 à 500 millions de francs (3 à 76 millions €) ce qui permet des investissements importants. 
+ La Française des Jeux en 1991
+
+Chiffres-clés 2007 :
+ 
+     28,5 millions de joueurs
+ 
+
+
+     CA de 9,3 milliards d'euros
+ 
+
+
+     Résultat net : 114 millions d'euros
+ 
+
+Dirigeants :
+ 
+     Christophe Blanchard-Dignac (PDG)
+ 
+
+
+     Charles Lantieri (directeur général délégué)
+ 
+
+Jeux :Répartition du CA par jeux :Les joueurs de la française des jeux :Réseau de distribution :Concurrence :
+Les enjeux et attaques :
+Internet :Eric Woerth, ministre du budget, a annoncé l'ouverture du marché français des paris et des jeux en lignes à la concurrence. Cette ouverture devrait être effective fin 2009 voire début 2010 et annonce la fin du monopole de la Française des Jeux. Cela concerne les paris hippiques, les paris sportifs et les jeux de casino tels que le poker ou la roulette.
+
+Cette ouverture est demandée par Bruxelles. Elle résulte aussi d'une volonté du ministre de réguler cette activité qui existe de toute façon, afin de mieux l'encadrer.
+
+Voir l'article api-meal sur ce sujet (lien à venir)
+
+Fin du monopole ?Le jeu responsable :Répartition des gains</summary><rights>Copyright © 2008, API Meal</rights><g:publish_date>2008-12-12</g:publish_date><published>2008-11-15T06:58:55Z</published><g:reviewer_type>user</g:reviewer_type></entry><entry><title>Implémentation de l'Atom Publishing Protocol en Python</title><link href="http://api-meal.eu/memo/76-implementation-de-latom-publishing-protocol-en-python/" rel="alternate"></link><updated>2008-11-12T03:09:15-06:00</updated><author><name>Xavier</name><email>no-reply@john-noone.com</email></author><id>http://api-meal.eu/memo/76-implementation-de-latom-publishing-protocol-en-python/</id><summary type="html">
+
+ 
+     http://trac.defuze.org/wiki/amplee
+ 
+
+
+     http://www.xml.com/pub/a/2006/07/19/implementing-atom-publishing-protocol-python-wsgi.html?page=1
+ 
+
+
+     http://bitworking.org/news/285/atompubbase-An-AtomPub-Python-Client-Library
+ 
+
+Valider le flux Atom
+
+
+ 
+     http://feedvalidator.org/
+ 
+</summary><rights>Copyright © 2008, API Meal</rights><g:publish_date>2008-12-12</g:publish_date><published>2008-11-11T05:01:47Z</published><g:reviewer_type>user</g:reviewer_type></entry><entry><title>Filtres photographiques</title><link href="http://api-meal.eu/memo/77-filtres-photographiques/" rel="alternate"></link><updated>2008-11-12T02:38:31-06:00</updated><author><name>Anne</name><email>no-reply@superficelle.fr</email></author><id>http://api-meal.eu/memo/77-filtres-photographiques/</id><summary type="html">
+Les principales marques de filtres photographiques :
+
+
+ 
+     Cokin
+ 
+
+
+     Schneider Kreuznach
+ 
+
+
+     Hoya
+ 
+</summary><rights>Copyright © 2008, API Meal</rights><g:publish_date>2008-12-12</g:publish_date><published>2008-11-12T02:35:57Z</published><g:reviewer_type>user</g:reviewer_type></entry><entry><title>Magnésium</title><link href="http://api-meal.eu/memo/74-magnesium/" rel="alternate"></link><updated>2008-11-11T04:38:30-06:00</updated><author><name>Xavier</name><email>no-reply@john-noone.com</email></author><id>http://api-meal.eu/memo/74-magnesium/</id><summary type="html">
+De nombreux troubles peuvent être consécutifs à un manque de magnésium : dépression et angoisse, diabètes, spasmes musculaires, crampes, troubles cardio-vasculaires, pression artérielle élevée et ostéoporose. Il participe activement à la transmission des influx nerveux entre les neurones. L'apport recommandé quotidien est estimé à 300 mg de magnésium par jour (le double pour les sportifs ou les femmes enceintes) ou encore 6 mg/kg de poids corporel.
+
+
+Teneur en magnésium des aliments
+
+ 
+     Algue marine   2 500
+ 
+
+
+     Germe de maïs  550
+ 
+
+
+     Buccin bouilli
+ 
+
+
+     Cacao en poudre    410 à 415
+ 
+
+
+     Germe de blé   400
+ 
+
+
+     Pois sec cassé     300
+ 
+
+
+     Noix d'Amazonie    318
+ 
+
+
+     Noix de cajou  167
+ 
+
+
+     Amande sèche
+ 
+
+
+     Escargot   250 à 255
+ 
+
+
+     Germe d'orge
+ 
+
+
+     Noix du Brésil     225 à 230
+ 
+
+
+     Arachide   175 à 180
+ 
+
+
+     Noisette
+ 
+
+
+     Flocon d'avoine    145 à 150
+ 
+
+
+     Haricot blanc sec  140
+ 
+
+
+     Noix   129
+ 
+
+
+     Grain de maïs  120
+ 
+
+
+     Cassis frais   105
+ 
+
+
+     Figue sèche    77
+ 
+
+
+     Farine de blé  73
+ 
+
+
+     Aubergine  60 à 65
+ 
+
+
+     Datte fraîche ou sèche     60 à 65
+ 
+
+
+     Abricot frais ou sec   60 à 65
+ 
+
+
+     Noix de coco sèche     60 à 65
+ 
+
+
+     Eaux minérales    3 à 11
+ 
+</summary><rights>Copyright © 2008, API Meal</rights><g:publish_date>2008-12-12</g:publish_date><published>2008-11-11T03:41:57Z</published><g:reviewer_type>user</g:reviewer_type></entry><entry><title>Eau de Paris</title><link href="http://api-meal.eu/memo/75-eau-de-paris/" rel="alternate"></link><updated>2008-11-11T04:37:51-06:00</updated><author><name>Xavier</name><email>no-reply@john-noone.com</email></author><id>http://api-meal.eu/memo/75-eau-de-paris/</id><summary type="html">
+Composition minéralogique (en mg/l)
+
+ 
+     Sodium    6 à 14
+ 
+
+
+     Potassium 1 à 3
+ 
+
+
+     Bicarbonates  170 à 300
+ 
+
+
+     Sulfates  10 à 50
+ 
+
+
+     Chlorures 12 à 35
+ 
+
+
+     Nitrates  15 à 48
+ 
+
+
+     Calcium   80 à 100
+ 
+
+
+     Fluor 0.1 à 0.25
+ 
+</summary><rights>Copyright © 2008, API Meal</rights><g:publish_date>2008-12-12</g:publish_date><published>2008-11-11T04:37:51Z</published><g:reviewer_type>user</g:reviewer_type></entry><entry><title>L'Opportuniste</title><link href="http://api-meal.eu/memo/7-lopportuniste/" rel="alternate"></link><updated>2008-11-09T12:51:43-06:00</updated><author><name>Anne</name><email>no-reply@superficelle.fr</email></author><id>http://api-meal.eu/memo/7-lopportuniste/</id><summary type="html">
+Restaurant traditionnel
+
+65 AV HENRI GINOUX
+   92120 MONTROUGE
+   01 42 53 47 17
+
+Cuisine traditionnelle assez sympa 
+   Déco très chouette
+   Patron sympa qui papotera avec vous s'il a le temps
+   Serveuse parfois débordée quand elle est seule
+   Souvent plein, ne pas arriver trop tard le we, réserver, ou être prêt à attendre. Gérable d'arriver à l'arrache pour un couple, mais pas plus
+   Petite terrasse en été
+   Salle très chaude
+</summary><category term="reviews"></category><category term="locations"></category><rights>Copyright © 2008, API Meal</rights><g:expiration_date>2008-09-27</g:expiration_date><g:location>65, Avenue Henri Ginoux, 92120 Montrouge, France</g:location><g:name_of_item_reviewed>L'Opportuniste</g:name_of_item_reviewed><g:publish_date>2008-09-27</g:publish_date><published>2008-09-27T13:22:18Z</published><g:rating>4</g:rating><g:review_type>Restaurant</g:review_type><g:reviewer_type>user</g:reviewer_type><georss:point>48.817134 2.321691</georss:point><georss:featuretypetag>locality</georss:featuretypetag><georss:relationshiptag>is-centered-at</georss:relationshiptag><georss:featurename>65, Avenue Henri Ginoux, 92120 Montrouge, France</georss:featurename></entry></feed>

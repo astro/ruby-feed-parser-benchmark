@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+
+<channel>
+	<title>yalla ya!</title>
+	<atom:link href="http://www.yalla-ya.com/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.yalla-ya.com</link>
+	<description>chilling applications with creative technology</description>
+	<pubDate>Wed, 10 Dec 2008 19:24:37 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6.3</generator>
+	<language>en</language>
+			<item>
+		<title>SIP Connection on your Nokia Mobile (Deltathree/ iconnecthere)</title>
+		<link>http://www.yalla-ya.com/sip-connection-on-your-nokia-mobile-deltathree-iconnecthere/</link>
+		<comments>http://www.yalla-ya.com/sip-connection-on-your-nokia-mobile-deltathree-iconnecthere/#comments</comments>
+		<pubDate>Wed, 03 Dec 2008 04:10:29 +0000</pubDate>
+		<dc:creator>ido</dc:creator>
+		
+		<category><![CDATA[security]]></category>
+
+		<category><![CDATA[deltathree]]></category>
+
+		<category><![CDATA[iconnecthere]]></category>
+
+		<category><![CDATA[mobile]]></category>
+
+		<category><![CDATA[nokia]]></category>
+
+		<category><![CDATA[sip]]></category>
+
+		<category><![CDATA[voip]]></category>
+
+		<guid isPermaLink="false">http://www.yalla-ya.com/?p=508</guid>
+		<description><![CDATA[Look no more, here is the shortest way to connect you iconnecthere (or deltatheree) VoIP account on you Nokia mobile phone.
+You will need:
+WIFI / GPRS Internet Connection
+iconnecthere / deltathree username (8 digits) and password (4 digits).
+On your Nokia phone go to Setting &#62; Connection &#62;SIP Setting
+
+Create a new profile: iconnecthere
+Service profile - leave on default: [...]]]></description>
+			<content:encoded><![CDATA[<p>Look no more, here is the shortest way to connect you iconnecthere (or deltatheree) VoIP account on you Nokia mobile phone.</p>
+<p>You will need:</p>
+<p>WIFI / GPRS Internet Connection</p>
+<p>iconnecthere / deltathree username (8 digits) and password (4 digits).</p>
+<p>On your Nokia phone go to Setting &gt; Connection &gt;SIP Setting</p>
+<ol>
+<li>Create a new profile: iconnecthere</li>
+<li>Service profile - leave on default: IETF</li>
+<li>Default access point - a previously defined wifi or gprs internet connection</li>
+<li>Public user name: {username}@deltathree.com</li>
+<li>Use compression: No</li>
+<li>Registration: Always On</li>
+<li>Use security: No</li>
+<li>Proxy server - leave on defaults - no proxy server needed</li>
+<li>Registrar server address: natrelay.deltathree.com</li>
+<li>Relam: deltathree.com</li>
+<li>User name: {username}@deltathree.com</li>
+<li>Password: 4 digit account password</li>
+<li>Transport type: Auto</li>
+<li>Port: 5060</li>
+</ol>
+<p>And thats it, you are ready to make VoIP calls from your mobile, enjoy.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.yalla-ya.com/sip-connection-on-your-nokia-mobile-deltathree-iconnecthere/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Office LAN using two different ISP</title>
+		<link>http://www.yalla-ya.com/office-lan-using-two-different-isp/</link>
+		<comments>http://www.yalla-ya.com/office-lan-using-two-different-isp/#comments</comments>
+		<pubDate>Wed, 03 Dec 2008 03:15:49 +0000</pubDate>
+		<dc:creator>samuel</dc:creator>
+		
+		<category><![CDATA[Blog]]></category>
+
+		<category><![CDATA[Firewall]]></category>
+
+		<category><![CDATA[iptables]]></category>
+
+		<category><![CDATA[linux]]></category>
+
+		<category><![CDATA[Networking]]></category>
+
+		<category><![CDATA[Router]]></category>
+
+		<category><![CDATA[TCP/IP]]></category>
+
+		<guid isPermaLink="false">http://www.yalla-ya.com/?p=505</guid>
+		<description><![CDATA[So we have in the office a small LAN and two ISPs. Both kind of suck.
+ISP1 doesn&#8217;t allow SMTP (weird, eh?) and is *very* slow, and with frequent disconects.  ISP2 doesn&#8217;t allow VoIP and SSH sessions cannot last more than a few minutes.
+We needed a solution where we could route certain type of traffic to [...]]]></description>
+			<content:encoded><![CDATA[<p>So we have in the office a small LAN and two ISPs. Both kind of suck.</p>
+<p>ISP1 doesn&#8217;t allow SMTP (weird, eh?) and is *very* slow, and with frequent disconects.  ISP2 doesn&#8217;t allow VoIP and SSH sessions cannot last more than a few minutes.</p>
+<p>We needed a solution where we could route certain type of traffic to the correct ISP.  This post is about how we made it.</p>
+<ol>
+<li>First, we need a Linux machine (Fedora 10) with three network cards. We needed to buy two of them, but they&#8217;re very cheap and very straightforward to install. One of them will go to the LAN (eth2) and the other two will go to the WAN (Cablemodem and DSL) routers. Let&#8217;s call them eth0 and eth1.</li>
+<li>We need to set the kernel to manage routing by having the line:
+<pre>net.ipv4.ip_forward = 1</pre>
+<p>in the /etc/sysctl.conf file</li>
+<li>Next, we need to create two independent routing tables, one for each WAN network interface, with their respective default gateway. This default gateway is assigned by the WAN modem/router.  We modify the file /etc/iproute2/rt_tables and add the following lines at the end of the file.
+<pre>200 T1</pre>
+<pre>201 T2</pre>
+</li>
+<li>Let&#8217;s assume that our network configuration is as follows:
+<ul>
+<li>The LAN is on the 192.168.0.0/16 with a default gateway 192.168.3.1 (also being the address of the Linux machine, because this machine will work as a default gateway for the LAN).</li>
+<li>WAN1 is on the 10.0.0.0/24 network with 10.0.0.1 as a default gateway and we have the IP address 10.0.0.2 assigned in the eth0 card.</li>
+<li>WAN2 is on the 172.16.0.0/16 with 172.16.0.1 as a default gateway. The IP assigned to the eth1 card is 172.16.1.33</li>
+</ul>
+</li>
+<li>The following script will create the routing tables and NAT configuration so the local network can access the internet.  HTTP, HTTPS, FTP and SMTP will go through WAN1 and SSH, Torrent, and VoIP through WAN2.
+<pre>#Default gateway:</pre>
+<pre>export DEFAULT=eth0</pre>
+<pre>#Erase the route</pre>
+<pre>ip route flush cache</pre>
+<pre>ip route flush table T1</pre>
+<pre>ip route flush table T2</pre>
+<pre>ip route del default</pre>
+<pre>#Erase the firewall rules</pre>
+<pre>iptables -F</pre>
+<pre>iptables -X</pre>
+<pre>iptables -Z</pre>
+<pre>iptables -t nat -F</pre>
+<pre>#Interfaces</pre>
+<pre>export LAN_IF=eth2</pre>
+<pre>#eth0 = motorola</pre>
+<pre>export WAN1_IF=eth0</pre>
+<pre>#eth1 = 2wire</pre>
+<pre>export WAN2_IF=eth1</pre>
+<pre>#IP addresses</pre>
+<pre>export LAN_IP=192.168.3.1</pre>
+<pre>export WAN_IP1=10.0.0.2</pre>
+<pre>export WAN_IP2=172.16.1.33</pre>
+<pre>#Gateways</pre>
+<pre>export GW1=10.0.0.1</pre>
+<pre>export GW2=172.16.0.1</pre>
+<pre>#Networks</pre>
+<pre>export LAN_NET=192.168.0.0/16</pre>
+<pre>export WAN1_NET=10.0.0.0/24</pre>
+<pre>export WAN2_NET=172.16.0.0/16</pre>
+<pre>if [ $DEFAULT == "eth0" ]</pre>
+<pre>then</pre>
+<pre>  export DEFAULTGW=$GW1</pre>
+<pre>  export DEFAULTIF=$WAN1_IF</pre>
+<pre>else</pre>
+<pre>  export DEFAULTGW=$GW2</pre>
+<pre>  export DEFAULTIF=$WAN2_IF</pre>
+<pre>fi</pre>
+<pre>#Main routing table</pre>
+<pre>ip route add $WAN1_NET dev $WAN1_IF src $WAN_IP1 table T1</pre>
+<pre>ip route add default via $GW1 table T1</pre>
+<pre>ip route add $WAN2_NET dev $WAN2_IF src $WAN_IP2 table T2</pre>
+<pre>ip route add default via $GW2 table T2</pre>
+<pre>#Default gateway</pre>
+<pre>ip route add default via $DEFAULTGW</pre>
+<pre>#Or maybe we want to have one packet to each to be sent in round-robin to each interface</pre>
+<pre>#ip route add default scope global nexthop via $GW1 dev $WAN1_IF weight 1 nexthop via $GW2 dev $WAN2_IF weight 1</pre>
+<pre>#Routing rules. Choose a routing table</pre>
+<pre>ip rule add from $WAN_IP1 table T1</pre>
+<pre>ip rule add from $WAN_IP2 table T2</pre>
+<pre>#Other recomended rules</pre>
+<pre>ip route add $LAN_NET     dev $LAN_IF table T1</pre>
+<pre>ip route add $WAN2_NET     dev $WAN2_IF table T1</pre>
+<pre>ip route add 127.0.0.0/8 dev lo   table T1</pre>
+<pre>ip route add $LAN_NET     dev $LAN_IF table T2</pre>
+<pre>ip route add $WAN1_NET     dev $WAN1_IF table T2</pre>
+<pre>ip route add 127.0.0.0/8 dev lo   table T2</pre>
+<pre>#At this point we can see the tables with the command ip route show table T1 (or T2 or main)</pre>
+<pre>#Firewall marks</pre>
+<pre>ip rule add fwmark 1 table T1</pre>
+<pre>ip rule add fwmark 2 table T2</pre>
+<pre>#Setup default policies to handle unmatched traffic</pre>
+<pre>iptables -P INPUT ACCEPT</pre>
+<pre>iptables -P OUTPUT ACCEPT</pre>
+<pre>iptables -P FORWARD DROP</pre>
+<pre>#Then we lock our services so they only work from the LAN</pre>
+<pre>iptables -I INPUT 1 -i ${LAN_IF} -j ACCEPT</pre>
+<pre>iptables -I INPUT 1 -i lo -j ACCEPT</pre>
+<pre>iptables -A INPUT -p UDP --dport bootps -i ! ${LAN_IF} -j REJECT</pre>
+<pre>iptables -A INPUT -p UDP --dport domain -i ! ${LAN_IF} -j REJECT</pre>
+<pre>#(Optional) Allow access to our ssh server from the WAN1_IF</pre>
+<pre>iptables -A INPUT -p TCP --dport ssh -i ${WAN1_IF} -j ACCEPT</pre>
+<pre>iptables -A INPUT -p TCP --dport ssh -i ${WAN2_IF} -j ACCEPT</pre>
+<pre>#Drop TCP / UDP packets to privileged ports</pre>
+<pre>iptables -A INPUT -p TCP -i ! ${LAN_IF} -d 0/0 --dport 0:1023 -j DROP</pre>
+<pre>iptables -A INPUT -p UDP -i ! ${LAN_IF} -d 0/0 --dport 0:1023 -j DROP</pre>
+<pre>#We add the rules for NAT</pre>
+<pre>iptables -I FORWARD -i ${LAN_IF} -d ${LAN_NET} -j DROP</pre>
+<pre>iptables -A FORWARD -i ${LAN_IF} -s ${LAN_NET} -j ACCEPT</pre>
+<pre>iptables -A FORWARD -i ${WAN1_IF} -d ${LAN_NET} -j ACCEPT</pre>
+<pre>iptables -A FORWARD -i ${WAN2_IF} -d ${LAN_NET} -j ACCEPT</pre>
+<pre>iptables -t nat -A POSTROUTING -o ${WAN1_IF} -j MASQUERADE</pre>
+<pre>iptables -t nat -A POSTROUTING -o ${WAN2_IF} -j MASQUERADE</pre>
+<pre>#Finally, we make the rules to redirect the traffic to the appropriate interface</pre>
+<pre>#HTTP and HTTPS via Motorola</pre>
+<pre>iptables -t mangle -A PREROUTING -p tcp --dport http  -s ${LAN_NET} -j MARK --set-mark 1</pre>
+<pre>iptables -t mangle -A PREROUTING -p tcp --dport https -s ${LAN_NET} -j MARK --set-mark 1</pre>
+<pre>#FTP via Motorola</pre>
+<pre>iptables -t mangle -A PREROUTING -p tcp --dport ftp  -s ${LAN_NET} -j MARK --set-mark 1</pre>
+<pre>#SMTP via Motorola</pre>
+<pre>iptables -t mangle -A PREROUTING -p tcp --dport smtp  -s ${LAN_NET} -j MARK --set-mark 1</pre>
+<pre>#SSH via 2Wire</pre>
+<pre>iptables -t mangle -A PREROUTING -p tcp --dport ssh  -s ${LAN_NET} -j MARK --set-mark 2</pre>
+<pre>#Torrent via 2Wire</pre>
+<pre>iptables -t mangle -A PREROUTING -p tcp --dport 50000:60000  -s ${LAN_NET} -j MARK --set-mark 2</pre>
+<pre>iptables -t mangle -A PREROUTING -p udp --dport 50000:60000  -s ${LAN_NET} -j MARK --set-mark 2</pre>
+<pre>#IConnectHere via 2Wire</pre>
+<pre>iptables -t mangle -A PREROUTING -p tcp --dport 5060:5063  -s ${LAN_NET} -j MARK --set-mark 2</pre>
+<pre>iptables -t mangle -A PREROUTING -p udp --dport 5060:5063  -s ${LAN_NET} -j MARK --set-mark 2</pre>
+<pre>iptables -t mangle -A PREROUTING -p tcp --dport 16384:16400  -s ${LAN_NET} -j MARK --set-mark 2</pre>
+<pre>iptables -t mangle -A PREROUTING -p udp --dport 16384:16400  -s ${LAN_NET} -j MARK --set-mark 2</pre>
+<pre>iptables -t mangle -A PREROUTING -p tcp --dport 5723  -s ${LAN_NET} -j MARK --set-mark 2</pre>
+<pre>iptables -t mangle -A PREROUTING -p udp --dport 5723  -s ${LAN_NET} -j MARK --set-mark 2</pre>
+<pre>iptables -t mangle -A PREROUTING -p tcp --dport 69  -s ${LAN_NET} -j MARK --set-mark 2</pre>
+<pre>iptables -t mangle -A PREROUTING -p udp --dport 69  -s ${LAN_NET} -j MARK --set-mark 2</pre>
+</li>
+<li>We also need to configure the DHCP, SAMBA and DNS services so the users of the LAN will get a full experience.</li>
+</ol>
+]]></content:encoded>
+			<wfw:commentRss>http://www.yalla-ya.com/office-lan-using-two-different-isp/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>y-spot</title>
+		<link>http://www.yalla-ya.com/y-spot/</link>
+		<comments>http://www.yalla-ya.com/y-spot/#comments</comments>
+		<pubDate>Wed, 19 Nov 2008 19:43:35 +0000</pubDate>
+		<dc:creator>kim</dc:creator>
+		
+		<category><![CDATA[Projects]]></category>
+
+		<guid isPermaLink="false">http://www.yalla-ya.com/?p=501</guid>
+		<description><![CDATA[y-spot urban wireless communities is a new project from yalla ya! y-spot, is an innovative new project that focuses on information for people who want access to information regarding their community. The wifi platform and front page social network for urban and local information provides users with local news, music events, art expositions and word [...]]]></description>
+			<content:encoded><![CDATA[<p><strong>y-spot </strong>urban wireless communities is a new project from <strong>yalla ya!</strong> y-spot, is an innovative new project that focuses on information for people who want access to information regarding their community. The wifi platform and front page social network for urban and local information provides users with local news, music events, art expositions and word of mouth recommendations on restaurants, bars, parks and movies, all based on the geographical location, or community of the user. y-spot essentially provides a personal bubble for users within the Internet based on the information they are interested in, and want to receive. In essence y-spot provides the accessing user with relevant news and information within a 10km radius of their current location. Content is tagged geogrpahically and is also done so according the user&#8217;s personal interests. The basis of y-spot focuses on Internet being a free and open forum as opposed to one that is locked or profit driven.</p>
+<p>Because of yalla ya!&#8217;s extensive experience with web 2.0 technologies, creating social networks and working on Internet communities, yalla ya! was able to build a prototype model for y-spot that provided them with the technological solutions for the challenges this particular project faced. yalla ya! successfully tracked wifi markets, usage and cultural information for Mexico City, where the first y-spot communities are planned to be launched.</p>
+<p><span id="ctl25_MetaData_655" class="answer"><br />
+</span></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.yalla-ya.com/y-spot/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Web Development</title>
+		<link>http://www.yalla-ya.com/web-development/</link>
+		<comments>http://www.yalla-ya.com/web-development/#comments</comments>
+		<pubDate>Tue, 04 Nov 2008 22:00:21 +0000</pubDate>
+		<dc:creator>kim</dc:creator>
+		
+		<category><![CDATA[Blog]]></category>
+
+		<category><![CDATA[web development]]></category>
+
+		<guid isPermaLink="false">http://www.yalla-ya.com/?p=451</guid>
+		<description><![CDATA[In the area of web development, yalla ya! is one of the best in the industry. The quality and service yalla ya! aims to deliver means professional web development at low-costs with fast delivery to all clients.
+By understanding the needs of start up projects and businesses, yalla ya! is able to structure functioning prototypes with [...]]]></description>
+			<content:encoded><![CDATA[<p>In the area of web development, yalla ya! is one of the best in the industry. The quality and service yalla ya! aims to deliver means professional web development at low-costs with fast delivery to all clients.</p>
+<p>By understanding the needs of start up projects and businesses, yalla ya! is able to structure functioning prototypes with a strong code base allowing for future growth. One of yalla ya!&#8217;s highest areas of expertise is in web development owning to yalla ya!&#8217;s intimate knowledge of internet business. Because of yalla ya!&#8217;s understanding of the Internet and how businesses ultimately interact and use the Internet, our clients get more than just development. yalla ya! clients receive expertise regarding social networks, security, SEO, technologies, hosting, user interface programs and web development based on only the closest understanding of Internet users.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.yalla-ya.com/web-development/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Contact Details</title>
+		<link>http://www.yalla-ya.com/contact-details/</link>
+		<comments>http://www.yalla-ya.com/contact-details/#comments</comments>
+		<pubDate>Mon, 27 Oct 2008 15:38:39 +0000</pubDate>
+		<dc:creator>amit</dc:creator>
+		
+		<category><![CDATA[Blog]]></category>
+
+		<category><![CDATA[contactDetails]]></category>
+
+		<guid isPermaLink="false">http://www.yalla-ya.com/?p=346</guid>
+		<description><![CDATA[
+Catch Us on:
+
+Skype
+Gtalk
+MSN Messenger
+
+
+
+Our Details:
+
+Iztaccihuatl 36-203
+Hipodromo Condesa, Mexico DF
+06170, MEXICO
+Telephone:(in Mexico) +52 55 5553 8152
+ Telephone:(in Israel) +972 2 640 9369
+Email:info[the at sign]yalla-ya.com
+
+]]></description>
+			<content:encoded><![CDATA[<ul id="imLinks">
+<li>
+<h3 class="sifr">Catch Us on:</h3>
+</li>
+<li id="skype-Link"><a  href="skype:yallaya?call" title="Call Yalla-Ya! on Skype">Skype</a></li>
+<li id="gtalk-Link"><a  href="gtalk:chat?jid=yallaya@gmail.com" title="Gtalk with Yalla-Ya!">Gtalk</a></li>
+<li id="msn-Link"><a  href="msnim:chat?contact=yallaya@hotmail.com" title="Start a chat with Yalla-Ya!">MSN Messenger</a></li>
+</ul>
+<ul id="addressDetails">
+<li>
+<h3 class="sifr">Our Details:</h3>
+</li>
+<li>Iztaccihuatl 36-203</li>
+<li>Hipodromo Condesa, Mexico DF</li>
+<li>06170, MEXICO</li>
+<li><span>Telephone:</span>(in Mexico) +52 55 5553 8152</li>
+<li><span> Telephone:</span>(in Israel) +972 2 640 9369</li>
+<li><span>Email:</span><a href="mailto:info@yalla-ya.com?subject=website inquiry" title="click to email us">info[the at sign]yalla-ya.com</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://www.yalla-ya.com/contact-details/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Our team wins a Nokia Widget application contest</title>
+		<link>http://www.yalla-ya.com/our-team-wins-a-nokia-widget-application-contest/</link>
+		<comments>http://www.yalla-ya.com/our-team-wins-a-nokia-widget-application-contest/#comments</comments>
+		<pubDate>Mon, 20 Oct 2008 23:38:40 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[Blog]]></category>
+
+		<category><![CDATA[code camp]]></category>
+
+		<category><![CDATA[mobile]]></category>
+
+		<category><![CDATA[nokia]]></category>
+
+		<category><![CDATA[web 2.0]]></category>
+
+		<guid isPermaLink="false">http://www.yalla-ya.com/?p=497</guid>
+		<description><![CDATA[we are just back from a seminar of Nokia Forum Code Camp; the code camp talks about the new technologies of nokia of creating widgets, applications, for mobile phones.
+This technology is very similar to known web 2.0 technologies, adapted to mobile application development. Nokia has preseted their new SDK version of the WRT 1.1 which [...]]]></description>
+			<content:encoded><![CDATA[<p>we are just back from a seminar of Nokia Forum Code Camp; the code camp talks about the new technologies of nokia of creating widgets, applications, for mobile phones.</p>
+<p>This technology is very similar to known web 2.0 technologies, adapted to mobile application development. Nokia has preseted their new SDK version of the WRT 1.1 which allows interaction with the phone system and data.</p>
+<p><img class="alignright" style="border: 0pt none;" title="Nokia E71" src="http://tbn0.google.com/images?q=tbn:EB18USOoMMZ-IM:http://www.celularfull.com/wp-content/uploads/2008/08/nokia_e71_smartphone.jpg" alt="Nokia E71" width="124" height="118" align="right" /></p>
+<p>During the code camp, Nokia reserved some time to a code competition - opening opportunity to the invited to participate and win two Nokia E71 phones. yalla ya! team on the spot decided to participate.</p>
+<p>As experienced web developers, yalla ya! team easily adapted to this techonolgy and developed a Widget Application; MyIM - a mobile application that allows the user to logon to his Windows Live Messenger, Yahoo!, Gmail accounts and import his buddy lists to the phone address book.</p>
+<p>as a result of this code camp, yalla ya! and Nokia is examining new opportuinites.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.yalla-ya.com/our-team-wins-a-nokia-widget-application-contest/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>our new offices with a great view</title>
+		<link>http://www.yalla-ya.com/our-new-offices-with-a-great-view/</link>
+		<comments>http://www.yalla-ya.com/our-new-offices-with-a-great-view/#comments</comments>
+		<pubDate>Thu, 16 Oct 2008 19:36:16 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[Blog]]></category>
+
+		<category><![CDATA[condesa]]></category>
+
+		<category><![CDATA[new offices]]></category>
+
+		<guid isPermaLink="false">http://www.yalla-ya.com/?p=250</guid>
+		<description><![CDATA[yalla ya! has just moved, not far from our old spot - just a few blocks away. we are now half a block from Mexico Park in the nice, green Condesa area on the Amsterdam avenue.
+yes we have an amazing view; fountain, tree tops and just infront of the round about where we can watch [...]]]></description>
+			<content:encoded><![CDATA[<p>yalla ya! has just moved, not far from our old spot - just a few blocks away. we are now half a block from Mexico Park in the nice, green Condesa area on the Amsterdam avenue.</p>
+<p>yes we have an amazing view; fountain, tree tops and just infront of the round about where we can watch people walk their dogs, ride bike or just having their walk in the park moment.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.yalla-ya.com/our-new-offices-with-a-great-view/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>El Greco Hotel</title>
+		<link>http://www.yalla-ya.com/el-greco-hotel/</link>
+		<comments>http://www.yalla-ya.com/el-greco-hotel/#comments</comments>
+		<pubDate>Thu, 16 Oct 2008 19:07:43 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[Projects]]></category>
+
+		<category><![CDATA[crm]]></category>
+
+		<category><![CDATA[online reservation]]></category>
+
+		<category><![CDATA[website]]></category>
+
+		<guid isPermaLink="false">http://www.yalla-ya.com/?p=104</guid>
+		<description><![CDATA[A CRM &#38; website was developed for Hotel El Greco. Hotel El Greco is located in the center of Mexico City just a few steps away from the World Trade Center. While a focal point for business travelers, the hotel offers amenities perfect for any traveler or occasion. Using a CRM which is linked with [...]]]></description>
+			<content:encoded><![CDATA[<p>A CRM &amp; website was developed for Hotel El Greco. Hotel El Greco is located in the center of Mexico City just a few steps away from the World Trade Center. While a focal point for business travelers, the hotel offers amenities perfect for any traveler or occasion. Using a CRM which is linked with their online reservation system, the hotel’s room availability and maintenance information is accessible and easy to use.</p>
+<p>yalla ya! developed and integrated several aspects regarding the El Greco Hotel website and administration system. With factors that integrate for easy use, an internal reservation system was developed for the hotel. The system provided by yalla ya! also included integration for Credit Card processing with Banamex. Work such as this is an excellent example of the professional quality and servcies provided by yalla ya!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.yalla-ya.com/el-greco-hotel/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Producteev API</title>
+		<link>http://www.yalla-ya.com/producteev-api/</link>
+		<comments>http://www.yalla-ya.com/producteev-api/#comments</comments>
+		<pubDate>Sun, 28 Sep 2008 19:24:55 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[Projects]]></category>
+
+		<category><![CDATA[frameworks]]></category>
+
+		<category><![CDATA[api]]></category>
+
+		<guid isPermaLink="false">http://www.yalla-ya.com/?p=114</guid>
+		<description><![CDATA[Producteev API developed for www.producteev.com, is a start-up company in the United States. Producteev.com provides a social management application that allows team members to follow each other&#8217;s activity to facilitate the completion of projects. Managing the work of a team through Producteev.com is an innovative way to communicate as a group. Producteev API and the [...]]]></description>
+			<content:encoded><![CDATA[<p><strong>Producteev API</strong> developed for <a href="http://www.producteev.com" onclick="javascript:urchinTracker ('/outbound/article/www.producteev.com');">www.producteev.com</a>, is a start-up company in the United States. Producteev.com provides a social management application that allows team members to follow each other&#8217;s activity to facilitate the completion of projects. Managing the work of a team through Producteev.com is an innovative way to communicate as a group. Producteev API and the API documentation site, provide integration points for developers to mash into Producteev’s collaborative web task management system. The API was developed under secure RESTful, JSON and RSS standards.</p>
+<p>The API interface created for Producteev.com was developed in a dynamic way, allowing for the use of different integration formats (RESTful, JSON and RSS), all while the main site was still being developed. yalla ya! developed the API so it could be adjusted according to the needs of producteev.com over time, and was developed quickly and efficiently in order for it to be fully functional by the time the site was launched.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.yalla-ya.com/producteev-api/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Greenlander</title>
+		<link>http://www.yalla-ya.com/greenlander/</link>
+		<comments>http://www.yalla-ya.com/greenlander/#comments</comments>
+		<pubDate>Wed, 27 Aug 2008 19:06:18 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[Projects]]></category>
+
+		<category><![CDATA[crm]]></category>
+
+		<category><![CDATA[sms]]></category>
+
+		<category><![CDATA[website]]></category>
+
+		<guid isPermaLink="false">http://www.yalla-ya.com/?p=102</guid>
+		<description><![CDATA[GREENLANDER is a Mexican company that imports and commercializes textile products. Most popularly known as a leading provider for fashion clothing companies, GREENLANDER manages national and foreign fabrication and importation to achieve the best cost-value in order to offer high quality products.
+ yalla ya! implemented a CRM system for GREENLANDER. This multifaceted process, mediated by [...]]]></description>
+			<content:encoded><![CDATA[<p><strong>GREENLANDER</strong> is a Mexican company that imports and commercializes textile products. Most popularly known as a leading provider for fashion clothing companies, GREENLANDER manages national and foreign fabrication and importation to achieve the best cost-value in order to offer high quality products.</p>
+<p><strong> yalla ya!</strong> implemented a CRM system for GREENLANDER. This multifaceted process, mediated by a set of information technologies focuses on creating two-way exchanges with customers so that firms have an intimate knowledge of customer needs, wants, and buying patterns. In this way, the CRM developed for GREENLANDER maintains the company&#8217;s internal control and sales. This provides GREENLANDER with better organization and higher productivity in being able to anticipate the needs of current and potential customers. In addition to this, yalla ya! developed the company&#8217;s website which links an online catalog to GREENLANDER&#8217;S CRM, automatically updating information on the site about product availability for customers.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.yalla-ya.com/greenlander/feed/</wfw:commentRss>
+		</item>
+	</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.424 seconds -->
+<!-- Cached page served by WP-Super-Cache -->

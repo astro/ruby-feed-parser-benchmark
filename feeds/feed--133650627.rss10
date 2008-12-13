@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:admin="http://webns.net/mvcb/"
+>
+
+<channel rdf:about="http://use.perl.org/~Ovid/journal/friends/">
+<title>Ovid's Friends' Journals</title>
+<link>http://use.perl.org/~Ovid/journal/friends/</link>
+<description>Ovid's Friends' use Perl Journals</description>
+<dc:language>en-us</dc:language>
+<dc:rights>use Perl; is Copyright 1998-2006, Chris Nandor. Stories, comments, journals, and other submissions posted on use Perl; are Copyright their respective owners.</dc:rights>
+<dc:date>2008-12-12T18:00:30+00:00</dc:date>
+<dc:publisher>pudge</dc:publisher>
+<dc:creator>pudge@perl.org</dc:creator>
+<dc:subject>Technology</dc:subject>
+<syn:updatePeriod>hourly</syn:updatePeriod>
+<syn:updateFrequency>1</syn:updateFrequency>
+<syn:updateBase>1970-01-01T00:00+00:00</syn:updateBase>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://use.perl.org/~pmichaud/journal/38080?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~chromatic/journal/38077?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~gabor/journal/38075?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Eric+Wilhelm/journal/38074?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~JonathanWorthington/journal/38073?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~hex/journal/38072?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~JonathanWorthington/journal/38070?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Eric+Wilhelm/journal/38068?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~pmichaud/journal/38067?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~chromatic/journal/38066?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~andy.sh/journal/38064?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~JonathanWorthington/journal/38063?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Alias/journal/38060?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~gabor/journal/38059?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~pmichaud/journal/38058?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~JonathanWorthington/journal/38056?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/38054?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dagolden/journal/38053?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Alias/journal/38050?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~barbie/journal/38049?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~chromatic/journal/38046?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~andy.sh/journal/38045?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~gabor/journal/38043?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~chromatic/journal/38041?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~barbie/journal/38040?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Alias/journal/38036?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~JonathanWorthington/journal/38035?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~pudge/journal/38031?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~barbie/journal/38030?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~bart/journal/38029?from=rss" />
+ </rdf:Seq>
+</items>
+<image rdf:resource="http://use.perl.org/images/topics/useperl.gif" />
+</channel>
+
+<image rdf:about="http://use.perl.org/images/topics/useperl.gif">
+<title>Ovid's Friends' Journals</title>
+<url>http://use.perl.org/images/topics/useperl.gif</url>
+<link>http://use.perl.org/~Ovid/journal/friends/</link>
+</image>
+
+<item rdf:about="http://use.perl.org/~pmichaud/journal/38080?from=rss">
+<title>It's sort of like...</title>
+<link>http://use.perl.org/~pmichaud/journal/38080?from=rss</link>
+<description>&lt;p&gt;Earlier in the week, &lt;a href="http://use.perl.org/~fw/"&gt;fw&lt;/a&gt; wrote a journal post about his &lt;a href="http://use.perl.org/~fw/journal/38055"&gt;First Perl6 program&lt;/a&gt;.  I was quite excited to see this, but then read a &lt;a href="http://use.perl.org/comments.pl?sid=41791&amp;amp;cid=66378"&gt;a comment from educated_foo&lt;/a&gt; that pointed out that the Perl 5 version is actually shorter to write.&lt;/p&gt;&lt;p&gt;That didn't sit too well with me, because we really ought to make common things simpler, not harder.  What really bugged me (about Perl 6, not about fw's post) was the following for sorting a hash by values:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;for %words.pairs.sort: { $^b.value &amp;lt;=&amp;gt; $^a.value } -&amp;gt; $pair {&lt;br&gt;&amp;nbsp; &amp;nbsp; say $pair&lt;br&gt;}&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;Sorting hashes by value is a common operation, and although I can shorten the above a little bit&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt;&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;&lt;tt&gt;.say for %words.sort: { $^b.value &amp;lt;=&amp;gt; $^a.value };&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;it's still a bit long for my taste.  That &lt;code&gt;{ $^b.value  $^a.value }&lt;/code&gt;&lt;br&gt;just bugs me.&lt;/p&gt;&lt;p&gt;Then Moritz Lenz made a comment on #perl6 that perhaps sort should do something different with arity-1 blocks, and I then had an epiphany that led to the following pattern for sorting hashes by value:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;%hash.sort: {&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.value }&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;I like this so much, I've gone ahead and implemented it in Rakudo, even though it's not officially part of the spec.  (I'm hoping it'll be adopted as such.)  So now in Rakudo we have the following:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;&amp;gt; my %hash = { c=&amp;gt;5, b=&amp;gt;7, a=&amp;gt;-4, e=&amp;gt;9, d=&amp;gt;0 };&lt;br&gt;&amp;gt;&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.say for %hash.sort: {&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.value }&lt;br&gt;a&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-4&lt;br&gt;d&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;0&lt;br&gt;c&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;5&lt;br&gt;b&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;7&lt;br&gt;e&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;9&lt;br&gt;
+&amp;nbsp; &lt;br&gt;&amp;gt;&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.say for %hash.sort: {&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.key }&lt;br&gt;a&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-4&lt;br&gt;b&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;7&lt;br&gt;c&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;5&lt;br&gt;d&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;0&lt;br&gt;e&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;9&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;That seems much nicer.  The general principal is that if the comparison argument to "sort" takes less than two arguments, then it's used to generate the &lt;i&gt;values&lt;/i&gt; to be compared instead of the result of a comparison.&lt;/p&gt;&lt;p&gt;Of course, we aren't limited to just keys or values -- any operation we want to perform on the items being sorted will work.  To sort by the &lt;i&gt;magnitude&lt;/i&gt; of the values of the hash:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;&amp;gt;&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.say for %hash.sort: {&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.value.abs }&lt;br&gt;d&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;0&lt;br&gt;a&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;-4&lt;br&gt;c&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;5&lt;br&gt;b&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;7&lt;br&gt;e&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;9&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;And of course this generalizes to more than just hashes; if &lt;code&gt;@dogs&lt;/code&gt; contains a list of Dog objects we want to sort:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;@dogs.sort: {&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.name }&amp;nbsp; &amp;nbsp; &amp;nbsp; # sort dogs by name&lt;br&gt;@dogs.sort: {&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.age }&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;# sort dogs by age&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;This works because the ".name" and ".age" methods are invoked on each of the objects in the list to determine the value to use for that object in the sort.&lt;/p&gt;&lt;p&gt;Or for a simplistic case-insensitive sort:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;&amp;gt; my @a = &amp;lt;Fruit CHERRY danish Apple berry BaNaNa apricot&amp;gt;;&lt;br&gt;&amp;gt;&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.say for @a.sort: {&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.lc }&lt;br&gt;Apple&lt;br&gt;apricot&lt;br&gt;BaNaNa&lt;br&gt;berry&lt;br&gt;CHERRY&lt;br&gt;danish&lt;br&gt;Fruit&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;Besides clarity, another big advantage of&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;@a.sort: {&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.lc }&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;over&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;@a.sort: { $^a.lc leg $^b.lc }&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;is that in the first version we compute&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.lc on each element only once for the entire sort, whereas in the second version it's computed once for each comparison.  And since we're typically doing O(n^2) comparisons, the first version can save a lot of method or function calls.&lt;/p&gt;&lt;p&gt;So, that was my fun for the morning.  Implementing this behavior turned out to be really easy -- in fact, I wrote the algorithm first as Perl 6 before translating it into PIR:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;multi method sort(@values: &amp;amp;by) {&lt;br&gt;&amp;nbsp; &amp;nbsp;&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;...&lt;br&gt;&amp;nbsp; &amp;nbsp; if &amp;amp;by.arity &amp;lt; 2 {&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; my @v&amp;nbsp; &amp;nbsp; &amp;nbsp;= @values.map(&amp;amp;by);&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; my @slice = (0..^@v).sort: { @v[$^a] cmp @v[$^b] };&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; return @values[ @slice ];&lt;br&gt;&amp;nbsp; &amp;nbsp; }&lt;br&gt;&amp;nbsp; &amp;nbsp;&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;...&lt;br&gt;}&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;The code just uses &amp;amp;by to compute the values (@v) to be used in the sort, does a sort on the indexes based on a comparison of those values, and uses the resulting sorted index list to return the (sorted) slice of the original list.  Note that the items in the result list are themselves unchanged from the original list -- they simply have a new sequence according to the &amp;amp;by criteria.&lt;/p&gt;&lt;p&gt;Since then PerlJam++ has suggested that we should do similar things for &lt;code&gt;min&lt;/code&gt; and &lt;code&gt;max&lt;/code&gt;:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;my $longest_string = @strings.max( {&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.chars } );&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;This would use&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.chars as the criteria for determining the longest string but returns the longest string itself.&lt;/p&gt;&lt;p&gt;Perl 6 is very cool.&lt;/p&gt;&lt;p&gt;Pm&lt;/p&gt;&lt;p&gt;P.S.:  By the way, this means that the solution to the problem in fw's original post becomes:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;my %words;&lt;br&gt;$*IN.slurp.comb.map: { %words{$_}++ };&lt;br&gt;.say for reverse %words.sort: {&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.values };&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;Not all of the above works in Rakudo yet (I think&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;&lt;code&gt;.comb&lt;/code&gt; is not yet implemented), but at least it's getting closer to what we'd really like to see here.&lt;/p&gt;</description>
+<dc:creator>pmichaud</dc:creator>
+<dc:date>2008-12-12T17:34:36+00:00</dc:date>
+<dc:subject>perl6</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~chromatic/journal/38077?from=rss">
+<title>I Have a Secret Too</title>
+<link>http://use.perl.org/~chromatic/journal/38077?from=rss</link>
+<description>&lt;p&gt;What do you think this code should produce?&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;use Test::More tests =&amp;gt; 6;&lt;br&gt; &lt;br&gt;{&lt;br&gt;&amp;nbsp; &amp;nbsp; class Foo;&lt;br&gt; &lt;br&gt;&amp;nbsp; &amp;nbsp; sub new { bless {}, shift }&lt;br&gt;&amp;nbsp; &amp;nbsp; sub WHO { 'foo' }&lt;br&gt;}&lt;br&gt; &lt;br&gt;class Bar {&lt;br&gt;&amp;nbsp; &amp;nbsp; sub new { bless {}, shift }&lt;br&gt;&amp;nbsp; &amp;nbsp; sub WHO { 'bar' }&lt;br&gt; &lt;br&gt;&amp;nbsp; &amp;nbsp;&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;::is( __PACKAGE__, 'Bar',&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 'class name block should set package name in block'&amp;nbsp; );&lt;br&gt;}&lt;br&gt; &lt;br&gt;is( __PACKAGE__, 'main', 'class name should not leak out of block' );&lt;br&gt; &lt;br&gt;my $foo = Foo-&amp;gt;new();&lt;br&gt;my $bar = Bar-&amp;gt;new();&lt;br&gt; &lt;br&gt;is( $foo-&amp;gt;isa( 'Foo' ), 1, 'Foo constructor should work' );&lt;br&gt;is( $foo-&amp;gt;WHO(), 'foo', '... in the right package' );&lt;br&gt;is( $bar-&amp;gt;isa( 'Bar' ), 1, 'Bar constructor should work' );&lt;br&gt;is( $bar-&amp;gt;WHO(), 'bar', '... in the right package' );&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;Oh, yes.  This is Perl 5 code.&lt;/p&gt;</description>
+<dc:creator>chromatic</dc:creator>
+<dc:date>2008-12-12T02:55:16+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~gabor/journal/38075?from=rss">
+<title>Plans for Integrating Padre with Parrot and Rakudo</title>
+<link>http://use.perl.org/~gabor/journal/38075?from=rss</link>
+<description>read there: &lt;a href="http://szabgab.com/blog/2008/12/1229032305.html"&gt;Plans for Integrating Padre with Parrot and Rakudo&lt;/a&gt; but comment here.</description>
+<dc:creator>gabor</dc:creator>
+<dc:date>2008-12-11T22:05:24+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~Eric+Wilhelm/journal/38074?from=rss">
+<title>Module::Build maintenance</title>
+<link>http://use.perl.org/~Eric+Wilhelm/journal/38074?from=rss</link>
+<description>&lt;p&gt;Today I'm going to try again to do some work on Module::Build.  I have one straightforward patch to apply, one very non-straightforward patch to consider, and in the nearly 3 months since the last release there are 15 new bugs in RT.&lt;/p&gt;&lt;p&gt;Given that I can manage to fix one or two bugs per session and only get about one session of hacking on this per month, I can see that this is going to go permanently pear-shaped if I'm alone.&lt;/p&gt;</description>
+<dc:creator>Eric Wilhelm</dc:creator>
+<dc:date>2008-12-11T19:17:53+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~JonathanWorthington/journal/38073?from=rss">
+<title>Planning for my Hague Grant</title>
+<link>http://use.perl.org/~JonathanWorthington/journal/38073?from=rss</link>
+<description>&lt;p&gt;Yesterday I was delighted to hear that my request for a Hague Grant to work on various aspsects of Rakudo has been &lt;a href="http://news.perlfoundation.org/2008/12/jonathan_worthingtons_hague_gr.html"&gt;accepted&lt;/a&gt;. Jesse asked me to blog a project plan, and this post is my attempt at that. It's not going to be exhaustive and detailed everywhere, especially because some parts of this involve me working out how to do things rather than just doing them, and thus I don't know the exact details of all that has to be done yet. I'm going to break this down into what I hope to achieve over the three months this grant is scheduled for - this one and the next two.&lt;/p&gt;&lt;p&gt; &lt;strong&gt;December&lt;/strong&gt; &lt;br&gt;
+This month from an implementation angle will be mostly about getting us registering symbols in the namespace at compile time and then reaping the various benefits of doing so. Thus a (probably quite complete) list of the implementation tasks will be:&lt;/p&gt;&lt;ul&gt;
+  &lt;li&gt;Modifications to Rakudo actions/guts so that we registering classes, roles, subset types and routines in the namespace as we are compiling. These will be stub insertions that will be replaced by the Real Thing once we have it.&lt;/li&gt;&lt;li&gt;Switching us to really do "use" at compile time; last time I tried this, it broke things in pre-compiled modules, but now this needs to be figured out properly.&lt;/li&gt;&lt;li&gt;Elimination of the hack that restricts us to using only type names that start with an uppercase character.&lt;/li&gt;&lt;li&gt;Fix up nested classes and namespaces - this isn't really needed here, but I'd rather do it now to make sure we get the things that follow correct.&lt;/li&gt;
+  &lt;li&gt;Detection at compile-time of re-declaration of symbols and giving of errors in such situations.&lt;/li&gt;&lt;li&gt;Make a proto being in scope make all other subs/methods without a plurality declarator be multis.&lt;/li&gt;&lt;li&gt;Make a proto in a class turn any non-multis on roles that the class does also be multis if they were not declared that way (but see below for "only" caveat).&lt;/li&gt;&lt;li&gt;Detection of "only" conflicting with "multi" and reporting of such errors.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;I will also be spending some time thinking through various issues and doing some design work, to see how I'm going to do various things. Of note I want to spend time pondering:&lt;/p&gt;&lt;ul&gt;
+  &lt;li&gt;How dispatch is going to look. I have a lot of ideas here, many discussed with Patrick already. But we need to be in line with the metaclass interface too (which needs to make it into S12). Basically I just need to spend some time working out all of the requirements and then trying to come up with the Right Solution.&lt;/li&gt;&lt;li&gt;Class construction/build things.&lt;/li&gt;&lt;li&gt;Representation of parametric types, in signatures and elsewhere. We will want to be able to introspect them, enforce them, and so on.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt; &lt;strong&gt;January&lt;/strong&gt; &lt;br&gt;
+In this month I plan to do two of the big changes/refactors and start building some stuff around them. The first will be changes to the dispatcher. The second will be refactoring roles to handle parameters, and the selection of what role to do based upon a multiple dispatch on the provided parameters. Since the design work this month will determine exactly what tasks will be needed, I'll instead list the things that I will expect to work by the end of the month.&lt;/p&gt;&lt;ul&gt;
+  &lt;li&gt;Working submethod dispatch.&lt;/li&gt;&lt;li&gt;Junctions are handled in the dispatcher for both single and multiple dispatch (built-ins by this stage will be done in the Perl 6 prelude, so the special-case code that makes Junctions kinda work for operators now can be removed).&lt;/li&gt;&lt;li&gt;Declaration of roles with parameters.&lt;/li&gt;&lt;li&gt;Ability to specify values for those parameters when doing the role and ending up with the correct role being done, both for compile time composition and runtime mix-in.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;And some nice-to-haves that can slip to February if needed will be:&lt;/p&gt;&lt;ul&gt;
+  &lt;li&gt;Complete filling out the various other cases of the handles trait verb.&lt;/li&gt;&lt;li&gt;Test cases for writing a different dispatcher in a meta-class, to check that we've done it right (note that this means implementing knowhow, which isn't really part of this grant, but I do hope to have done this by January).&lt;/li&gt;&lt;/ul&gt;&lt;p&gt; &lt;strong&gt;February&lt;/strong&gt; &lt;br&gt;
+This month the nice-to-haves from January must be completed if they weren't already. The rest of the work will focus on parametric roles. Of note, by the end of this month, and thus the grant, I expect the following to work.&lt;/p&gt;&lt;ul&gt;
+  &lt;li&gt;Ability to and use parameters passed to a role when deciding to do it in the role body.&lt;/li&gt;&lt;li&gt;The 'of' keyword for declaring parametric types, e.g. List of Int.&lt;/li&gt;
+  &lt;li&gt;Typed arrays and hashes implemented using parametric roles, usable and working.&lt;/li&gt;&lt;li&gt;Declaring an "of" type for subroutines.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt; &lt;strong&gt;Extra Notes&lt;/strong&gt; &lt;br&gt;
+There is a plan to create a Synopsis 14 that focuses on generics/type parameterization. Since I will be reviewing all of this material and will probably have some clarifications to seek/make and various things to flesh out, I plan to talk with Larry about me producing a draft of this as I am working on the grant.&lt;/p&gt;&lt;p&gt;So, to work I go!&lt;/p&gt;</description>
+<dc:creator>JonathanWorthington</dc:creator>
+<dc:date>2008-12-11T16:58:05+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~hex/journal/38072?from=rss">
+<title>Retiring this journal</title>
+<link>http://use.perl.org/~hex/journal/38072?from=rss</link>
+<description>From now on, on the rare occasions that I actually blog something about Perl, it'll be at &lt;a href="http://downlode.org/Creative/Writing/Notebook/"&gt;Earle's Notebook&lt;/a&gt; rather than here - although I'll still be reading and commenting on use.perl, of course. Ciao!</description>
+<dc:creator>hex</dc:creator>
+<dc:date>2008-12-11T16:24:00+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~JonathanWorthington/journal/38070?from=rss">
+<title>Final Report on DeepText Multi-Dispatch Grant</title>
+<link>http://use.perl.org/~JonathanWorthington/journal/38070?from=rss</link>
+<description>&lt;p&gt;In May, DeepText offered to fund me to work 40 hours on implementing some features of my choosing from the Perl 6 specification in Rakudo. I chose to use the grant to work on multiple dispatch. This post is my closing report on the work done under this grant, now that the 40 hours have been spent.&lt;/p&gt;&lt;p&gt; &lt;strong&gt;Work Done Under The Grant&lt;/strong&gt; &lt;br&gt;
+When proposing the topic of multiple dispatch, I wrote:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt;At present, we have a sorta-working-ish multiple dispatch, apart from it only sort of works. For example, it doesn&amp;#8217;t pay any attention to roles and constraints. But more serious, I think the candidate sorting is also different from what S12 specifies, which means at the moment we probably sometimes would dispatch to the wrong thing. Then there&amp;#8217;s no support for &amp;#8220;is default,&amp;#8221; proto, and so forth. So there&amp;#8217;s a lot of (in places I expect quite tricky) work to do here.&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;p&gt;Using the grant, I have resolved every one of the isues I mentioned in this part of the proposal, and more. Here is a list of all the things that have been implemented.&lt;/p&gt;&lt;ul&gt;
+  &lt;li&gt;Correct sorting of candidates, using a topological sort on a DAG constructed after analysing type narrowness of the signatures of the candidates, as specified in S12.&lt;/li&gt;&lt;li&gt;Dispatch on both class and role types.&lt;/li&gt;&lt;li&gt;Tie-breaking on constraints. There is some work remaining here on constraints that reference paramters other than the one they are constraining and that rely on being run in the correct lexical context, but the case where the constraint just checks the block paramter it is passed work fine.&lt;/li&gt;&lt;li&gt;The 'is default' trait.&lt;/li&gt;&lt;li&gt;Declaration of proto routines, and their acting as a fallback if all else fails in the dispatch.&lt;/li&gt;&lt;li&gt;The use of&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;;; to indicate some parameters do not participate in multiple dispatch.&lt;/li&gt;&lt;li&gt;Muchly improved signature objects, which are introspectable. You can also&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.perl them, which prints a Perl representation of a routine's signature.&lt;/li&gt;&lt;li&gt;Improved diagnostics: if you get an ambiguous dispatch, it tells you the signatures of the routines that were in conflict. (Once we've got some missing Parrot functionality in place, we can add line/file numbers easily too.)&lt;/li&gt;&lt;li&gt;A first cut of multi methods. We don't get inheritance and multis used together correct yet, but other than that they work.&lt;/li&gt;&lt;li&gt;The&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.?,&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.+ and&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.* operators are now multi-aware and will now call all applicable multi-subs up the hierarchy. The work done here probably helps pave the way for implementing&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.WALK also.&lt;/li&gt;&lt;li&gt;Improvements to subtypes (constraint types), because we needed them fixed to do dispatch on them correctly; this makes them better generally and more what the spec wants, however.&lt;/li&gt;&lt;li&gt;A multiple dispatch cache, which can vastly improve dispatch performance. I implemented this generic enough not just to be usable with Rakudo's dispatcher, but also applied it to Parrot's multi-dispatch in opcodes, yielding some notable benchmark improvements there too. With some further Parrot refactoring, it can be applied to Parrot's own multi-sub dispatch for a probable performance win there too.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;I believe that this grant has led to a lot of progress in Rakudo's implementation of multiple dispatch. In the future, we will have a Perl 6 prelude and will then use this dispatcher not just for user defined routines, but for all of the built-ins (operators too, since they are also multi-dispatch).&lt;/p&gt;&lt;p&gt;As well as implementation, there has also been many tests unfudged and written to make sure that the things that have been made to work here keep on working.&lt;/p&gt;&lt;p&gt; &lt;strong&gt;Reporting&lt;/strong&gt; &lt;br&gt;
+As part of the grant, I was to make at least four blog posts about the things I implemented as part of it. I exceeded this and wrote seven, published on both use.perl.org and rakudo.org.&lt;/p&gt;&lt;p&gt; &lt;strong&gt;Delivery Time&lt;/strong&gt; &lt;br&gt;
+The initial grant specified that I should do this work in July and August. Given I am writing this report in December, I have massively failed to do this. I held off working on the grant while some issues surrounding signatures worked out, knowing they were a dependency. As a result, I didn't log any time on it during July. In August I unblocked the process by writing the first cut of the dispatcher and some tests in PIR for it that faked up signatures, but in reality I could have done this much earlier. Late August was swallowed up with other distractions, and it was September before I got Rakudo using the new dispatcher. Then I spent a month offline, backpacking accross Russia (part of the reason I didn't get more done in September was general demotivation and really needing a break from things). It was November before I dug back in, adding many features; the start of December saw the last few bits.&lt;/p&gt;&lt;p&gt;The blame for failing to deliver on time lies entirely with me - for bad scheduling early on, being in the wrong frame of mind in September, and not working as much as I could have to clear this up in November. For this, I apologise to both DeepText and the community, and I will try to do better on future grants.&lt;/p&gt;&lt;p&gt; &lt;strong&gt;Conclusion&lt;/strong&gt; &lt;br&gt;
+Despite going over-schedule, this grant did suceed in greatly improving the state of multiple dispatch in Rakudo, and as a side-effect aided various other parts of Rakudo and also led to an improvement to Parrot. At the start of the grant, I went through the Perl 6 specification and extracted all of the parts relating to multiple dispatch. At the end, I went through and deleted all of the extracts relating to things that now worked. A lot was removed, and a lot of what remains relates to protos and the interaction of multiple dispatch with features that we have not yet implemented for the single dispatch case yet in Rakudo.&lt;/p&gt;&lt;p&gt;I would like to thank, first and foremost, &lt;a href="http://www.deeptext.ru/"&gt;DeepText&lt;/a&gt; for providing this grant and being patient while I worked on it. Many other people from #parrot and #perl6 contributed ideas and suggestions as I worked on this grant; I'd like to thank (this is not a complete list, just people who most come to mind who have said or done helpful stuff along the way) chromatic, moritz, particle, pmichaud and TimToady.&lt;/p&gt;</description>
+<dc:creator>JonathanWorthington</dc:creator>
+<dc:date>2008-12-11T12:11:45+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~Eric+Wilhelm/journal/38068?from=rss">
+<title>pdx.pm adds warn() to rakudo</title>
+<link>http://use.perl.org/~Eric+Wilhelm/journal/38068?from=rss</link>
+<description>&lt;p&gt;Our &lt;a href="http://pdx.pm.org/kwiki/index.cgi?December2008Meeting"&gt;December Meeting&lt;/a&gt; was a rakudo workshop, where we realized that rakudo had no implementation of warn().  While the implementation that got checked-in by the end of the meeting is not fully compliant with the spec's requirement that warn() throws a certain sort of resumable exception, it does now at least exist, and prints your message on stderr.&lt;/p&gt;&lt;p&gt;Update:  read more in &lt;a href="http://leto.net/dukeleto.pl/2008/12/warning-pdxpm-wrapup.html"&gt;Jonathan's blog&lt;/a&gt;.&lt;/p&gt;</description>
+<dc:creator>Eric Wilhelm</dc:creator>
+<dc:date>2008-12-11T09:08:45+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~pmichaud/journal/38067?from=rss">
+<title>Out of the office</title>
+<link>http://use.perl.org/~pmichaud/journal/38067?from=rss</link>
+<description>&lt;p&gt;I'm out on business travel today and tomorrow (Wed/Thu), so I'm a bit limited on writing a detailed  post of the day's developments.  I should be back to longer posts by Friday.&lt;/p&gt;&lt;p&gt;For today I think I'll just advertise that we have a Twitter feed set up at &lt;a href="http://twitter.com/rakudoperl"&gt;http://twitter.com/rakudoperl&lt;/a&gt; where I've been posting update headlines on Rakudo progress as they occur.  The various Rakudo developers will continue to make the longer blog posts on use.perl, rakudo.org, and other locations; I figure this is just another easy (and fun) way to provide even more views and insight into how Rakudo is progressing.&lt;/p&gt;</description>
+<dc:creator>pmichaud</dc:creator>
+<dc:date>2008-12-11T05:45:59+00:00</dc:date>
+<dc:subject>perl6</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~chromatic/journal/38066?from=rss">
+<title>This is Why We Can't Have Anything Nice!</title>
+<link>http://use.perl.org/~chromatic/journal/38066?from=rss</link>
+<description>&lt;p&gt;I'd say I &lt;em&gt;love&lt;/em&gt; the responses to &lt;a href="http://broadcast.oreilly.com/2008/12/five-features-perl-5-needs-now.html"&gt;Five Features Perl 5 Needs Now&lt;/a&gt;, but only Schwern seems to understand that my one sentence quips rank 11 out of 10 on the 0 to 10 sarcasm scale.&lt;/p&gt;&lt;p&gt;The idea that &lt;a href="http://search.cpan.org/perldoc?Class::Accessor"&gt;Class::Accessor&lt;/a&gt; is a substitute for a full and complete object system should debunk itself.  The notion that modules in the core can't evolve is silly.&lt;/p&gt;&lt;p&gt;"Oh, that will never work!" is exactly &lt;em&gt;why&lt;/em&gt; these things never work.&lt;/p&gt;&lt;p&gt;Thanks for the stop energy.  Let's have this discussion again next year.  Someone else can start it.&lt;/p&gt;</description>
+<dc:creator>chromatic</dc:creator>
+<dc:date>2008-12-11T03:14:23+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~andy.sh/journal/38064?from=rss">
+<title>Bulgarian Perl Workshop</title>
+<link>http://use.perl.org/~andy.sh/journal/38064?from=rss</link>
+<description>&lt;p&gt;I am (very) proud to announce the first ever &lt;a href="http://event.perlbulgaria.org/sofia2009"&gt;Perl Workshop in Bulgaria&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;It is on 31st of January 2009 (Saturday) in Sofia.&lt;/p&gt;&lt;p&gt;Official language is Bulgarian, but as I was informed, Bulgarians are good in English, thus English talks are welcome.&lt;/p&gt;&lt;p&gt;Alex, Jonathan and myself are already on the way to make up the itinerary.&lt;/p&gt;&lt;p&gt;The workshop is organized by OpenFest conferences and DeepText.&lt;/p&gt;</description>
+<dc:creator>andy.sh</dc:creator>
+<dc:date>2008-12-10T23:53:13+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~JonathanWorthington/journal/38063?from=rss">
+<title>;; works, making illegal things illegal</title>
+<link>http://use.perl.org/~JonathanWorthington/journal/38063?from=rss</link>
+<description>&lt;p&gt;Today I have done a couple more things on multiple dispatch in Perl 6. The major one is that&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;;; now works (it's been parsed for a while, but now it has the expected effects). The idea is that you put&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;;; in a signature in place of a comma to separate two parameters. Any paramters after this are not considered by the multi-dispatcher. For example, the following two multis:&lt;/p&gt;&lt;p&gt;
+&lt;code&gt;multi foo(Int $a, Num $b) { 1 }&lt;br&gt;
+multi foo(Num $a, Int $b) { 2 }&lt;br&gt; &lt;/code&gt;
+&lt;/p&gt;&lt;p&gt;Will, when invoked as foo(1,1), give an ambiguous dispatch error, since neither of these subs is narrower than the other - they are tied. However, if you instead wrote:&lt;/p&gt;&lt;p&gt;
+&lt;code&gt;multi foo(Int $a;; Num $b) { 1 }&lt;br&gt;
+multi foo(Num $a;; Int $b) { 2 }&lt;br&gt; &lt;/code&gt;
+&lt;/p&gt;&lt;p&gt;Then foo(1,1) will call the first of these multis, since it only looks at the signatures so far as the&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;;; and Int is a narrower type than Num, so the bit of the signature it cares about is narrower, so the ambiguity is gone. Of course, foo(1, "x") will fail because while the multi-dispatcher doesn't care about the second parameter, you still have to meet its signature requirements.&lt;/p&gt;&lt;p&gt;The more minor one is that multi, only and proto may only be used, according to the spec, on named routines, not anonymous ones. Rakudo now meets this bit of the spec (it will give a compile time error), and I've put in some spec tests to check this too.&lt;/p&gt;&lt;p&gt;And with these two additions, the grant from &lt;a href="http://www.deeptext.ru/"&gt;Deep Text&lt;/a&gt; draws to an end. I'll be posting a final report soon - thanks to Deep Text for funding this, and many other bits of, hacking on Rakudo's multiple dispatch!&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;:-)&lt;/p&gt;</description>
+<dc:creator>JonathanWorthington</dc:creator>
+<dc:date>2008-12-10T23:22:28+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~Alias/journal/38060?from=rss">
+<title>If you are keeping an eye on Padre...</title>
+<link>http://use.perl.org/~Alias/journal/38060?from=rss</link>
+<description>&lt;p&gt;For the curious onlookers, the next release of Padre (0.21) should be an excellent candidate for your inspection.&lt;/p&gt;&lt;p&gt;Since my last recommended release (0.14) we've taken large strides forwards. Padre is now FAR superior to Windows notepad, and we're starting to get close to having the family of Windows-based "programmers editors" (Ultraedit, Notepad++, etc) come into our sights now.&lt;/p&gt;&lt;p&gt;For starters, the development team has somewhere between doubled and tripled in the last 5 weeks.&lt;/p&gt;&lt;p&gt;As far as new features, we've added the following.&lt;/p&gt;&lt;p&gt;- A shiny new Plugin API which supports enable/disable, upgrading, compatibility detection, document type registration, and high-quality menus with context refresh support.&lt;/p&gt;&lt;p&gt;- "My Plugin" support, making it trivial to start hacking on your own plugins.&lt;/p&gt;&lt;p&gt;- Better support for PAR Padre and PAR Plugins&lt;/p&gt;&lt;p&gt;- A far more robust document model.&lt;/p&gt;&lt;p&gt;- Document type-aware menu options, so "Comment these lines" does the right thing on different document types (at least theoretically).&lt;/p&gt;&lt;p&gt;- Code folding support.&lt;/p&gt;&lt;p&gt;- Auto-indent support in 3 different flavours.&lt;/p&gt;&lt;p&gt;- Show/Hide for tabs, newlines and other white space.&lt;/p&gt;&lt;p&gt;- Word wrapping support.&lt;/p&gt;&lt;p&gt;- Tab to Space conversion support.&lt;/p&gt;&lt;p&gt;- Internationalisation support, with translations to French, Hebrew, Hungarian, Italian, Korean and Russian. The default language is now English (The Queen's). Support for English (American) has not yet been contributed.&lt;/p&gt;&lt;p&gt;- GUI upgrade to the prettier AUI panes.&lt;/p&gt;&lt;p&gt;- perl -c syntax checking&lt;/p&gt;&lt;p&gt;- Option to highlight the current line in high-visibility day-glow yellow.&lt;/p&gt;&lt;p&gt;- Drag and drop files onto Padre to open them.&lt;/p&gt;&lt;p&gt;- Full Screen support (not maximize, actual fullscreen)&lt;/p&gt;&lt;p&gt;- Background-detection of open files changing on disk.&lt;/p&gt;&lt;p&gt;- Printing support.&lt;/p&gt;&lt;p&gt;- Snippit insertion support.&lt;/p&gt;&lt;p&gt;- Threaded backgrounding analysis support.&lt;/p&gt;&lt;p&gt;For only 5 weeks difference, this is a monumental amount of functionality to add.&lt;/p&gt;&lt;p&gt;As you can imagine, this pace means some of the new functionality is a little fragile, but features do seem to be stabilising within a month or two after they first appear.&lt;/p&gt;&lt;p&gt;For example, startup, shutdown, save all, close all and so on actions are now much much crisper. They've been tweaked out extensively with GUI do-not-render hints and other hints to show windows late, and destroy windows early.&lt;/p&gt;&lt;p&gt;As a result, Padre now FEELS a LOT faster and crisper than 5 or 6 releases ago.&lt;/p&gt;&lt;p&gt;Still to do, alas, Project support, but that's next on the hit list.&lt;/p&gt;&lt;p&gt;But 0.21 should be a great "next look", I highly recommend it.&lt;/p&gt;&lt;p&gt;P.S. That was not The Other Sekrit.&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;:)&lt;/p&gt;</description>
+<dc:creator>Alias</dc:creator>
+<dc:date>2008-12-10T09:59:57+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~gabor/journal/38059?from=rss">
+<title>TPF needs more transparency</title>
+<link>http://use.perl.org/~gabor/journal/38059?from=rss</link>
+<description>I have already tried to initiate several projects that need the support of TPF, some of them around getting more money for the activities of TPF such as the grants.
+&lt;p&gt;
+Every time I had to privately chat with one or more TPF officers.
+&lt;/p&gt;&lt;p&gt;
+Why is there no public mailing list of TPF with all of its officers subscribed where outsiders like me could start discussing possible
+projects (e.g. fund drive) and where everyone could see the issues that need to be resolved
+for such project to take off?
+&lt;/p&gt;&lt;p&gt;
+Why not provide a forum to people who would want to get involved some of the work you are doing?
+&lt;/p&gt;&lt;p&gt;
+Oh I think I have d&amp;#233;j&amp;#224; vu I just don't have time to dig out my earlier posts about this.
+&lt;/p&gt;&lt;p&gt;
+Anyway, further ranting &lt;a href="http://szabgab.com/blog/2008/12/1228898258.html"&gt;here&lt;/a&gt;
+&lt;/p&gt;&lt;p&gt;
+And the hard part with this is that I know at least some of the people in TPF personally and I think very highly of their work. At least the part I see &lt;b&gt;outside of TPF&lt;/b&gt;. So why do I feel the urge to criticize them or TPF?&lt;/p&gt;</description>
+<dc:creator>gabor</dc:creator>
+<dc:date>2008-12-10T08:56:39+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~pmichaud/journal/38058?from=rss">
+<title>"It's beginning to look a lot like Christmas..."</title>
+<link>http://use.perl.org/~pmichaud/journal/38058?from=rss</link>
+<description>&lt;p&gt;A &lt;i&gt;lot&lt;/i&gt; has happened with Rakudo Perl over the past few days.  The biggest news is that Rakudo is now supporting list assignment and list slices.  (Hash slices will show up in a day or two.)  Now that we have those features working, I can finally start to say that Rakudo Perl is starting to feel to me like, well, &lt;i&gt;Perl&lt;/i&gt;.&lt;/p&gt;&lt;p&gt;So, while we're still a good distance from an true Perl 6 release (a.k.a. "Christmas"), today we at least seem to have a tree with some shiny ornaments on it and even a few presents under the tree.&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;:-)&lt;/p&gt;&lt;p&gt;Getting slices and assignment to work required a fair bit of refactoring of the base classes and operations, and I also did a lot of code cleanup which really needed to be done anyway.  While cleaning up assignment code I also fixed up the assignment metaoperators (things like +=, *=, etc.) so that most of them are automatically generated instead of written by hand.  Then for fun I went ahead and added some basic Perl 6 reduction operators.&lt;/p&gt;&lt;p&gt;I'm sure some are asking "What in the world are 'reduction operators'?"  Well, they are another of the many shiny new presents Perl 6 is bringing us.  A reduction operator is indicated by square brackets, and it turns an infix operator into a list operator.  For example, while infix:&amp;lt;+&amp;gt; adds only two operands, the [+] operator will add together all of the elements of a list.  Similarly, [*] means "multiply all of the elements of the list", and [&amp;lt;=] returns true if the elements of a list are numerically sorted.&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;&amp;nbsp; &amp;nbsp; $sum = [+] @x;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; # sum all elements of @x&lt;br&gt;&amp;nbsp; &amp;nbsp; $smallest = [min] $a, $b, $c, $d;&amp;nbsp; &amp;nbsp;# minimum of $a, $b, $c or $d&lt;br&gt;&amp;nbsp; &amp;nbsp; $issorted = [&amp;lt;=] @x;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; # true if @x is numerically sorted&lt;br&gt;&amp;nbsp; &amp;nbsp; $fact = [*] 1..$n;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; # $n factorial&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;Today Jonathan extended some of the work I did on reduction operators to add more of them, and then added many of the infix hyperoperators (e.g., &amp;gt;&amp;gt;+&amp;lt;&amp;lt;) and cross operators.  See &lt;a href="http://use.perl.org/~JonathanWorthington/journal/38056"&gt;Jonathan's post&lt;/a&gt; for more details about those.&lt;/p&gt;&lt;p&gt;All of us working with Parrot and Rakudo are excited at the progress being made with Rakudo -- as of tonight we're closing in on 4,900 passing spectests, and I'm hoping we can make it to 5,000 by Tuesday's Parrot release.  It really means I need to find a day to review the existing tests and RT tickets for things we're really passing or could be passing with just a little bit of effort.&lt;/p&gt;&lt;p&gt;I'll also be working to update our milestone and roadmap documents, and try to present a much clearer picture of where things presently stand for Rakudo.&lt;/p&gt;&lt;p&gt;On a Parrot note, this past weekend I also made some improvements to PGE and Parrot that give us a ~20% improvement in parsing and code generation speed.&lt;/p&gt;&lt;p&gt;Pm&lt;/p&gt;</description>
+<dc:creator>pmichaud</dc:creator>
+<dc:date>2008-12-10T06:14:31+00:00</dc:date>
+<dc:subject>perl6</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~JonathanWorthington/journal/38056?from=rss">
+<title>Hyper/cross/reduction operators, IO tweaks and more</title>
+<link>http://use.perl.org/~JonathanWorthington/journal/38056?from=rss</link>
+<description>&lt;p&gt;It's been an exciting few days in the Rakudo world. Patrick has landed some great stuff, which I'm sure he'll blog about soon. We're approaching the 5,000 passing spectests mark, and I'd not be surprised if we passed it before the next Parrot/Rakudo release on Tuesday.&lt;/p&gt;&lt;p&gt;First I spent some time on IO. I'd done a few bits before, but there were various issues and, as we'd made other bits of Rakudo better, IO hadn't always caught up. Then, last night, some Parrot IO improvements landed that meant a couple of things needed tweaking. Also, the state of IO testing is far from great. First I applied a couple of patches from bacek++. One fixed readline so it met up with the Parrot changes; at this point, I realized we must have no tests for it. The other implemented the lines method on an IO handle, which gets an array of all lines in the file.&lt;/p&gt;&lt;p&gt;
+&lt;code&gt;my $fh = open("README",&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;:r);&lt;br&gt;
+my @lines = $fh.lines; # or lines($fh) - it's exported&lt;br&gt; &lt;/code&gt;
+
+&lt;/p&gt;&lt;p&gt;Then I set about fixing up using =$fh in a loop, which I think we may have had working for a short time at one point before, but other muchly needed list handling refactors broke it. You can now write things like:&lt;/p&gt;&lt;p&gt;
+&lt;code&gt;my $fh = open("README",&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;:r);&lt;br&gt;
+my $count = 1;&lt;br&gt;
+for =$fh -&amp;gt; $line { print "$count $line"; $count++ }&lt;br&gt; &lt;/code&gt;
+&lt;/p&gt;&lt;p&gt;And unlike before, it should give the correct number of lines back too, rather than one too many. While I was fixing this, I also made chomp Win32 aware, and implemented auto-chomping, as specified in S29. I also added another S16 test that we now pass fully, so we won't regress unknowingly on this again.&lt;/p&gt;&lt;p&gt;One of the things pmichaud++ had done was some work on reduction operators. These are awesome - you can write factorial $n as just:&lt;/p&gt;&lt;p&gt;
+&lt;code&gt;my $fact = [*] 1..$n;&lt;br&gt; &lt;/code&gt;
+&lt;/p&gt;&lt;p&gt;It's just like taking every value in the list after the reduction operator and sticking the * operator between it, e.g. 1 * 2 * 3 *&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;... * $n. However, it only worked for some infix operators. The biggest missing ones were comparrision operators, which I have now implemented. For example, you can check if a list is sorted with:&lt;/p&gt;&lt;p&gt;
+&lt;code&gt;if [&amp;lt;=] @list { say "Sorted, like!" }&lt;br&gt; &lt;/code&gt;
+&lt;/p&gt;&lt;p&gt;Which is just like doing a &amp;lt;= between each element of the array @a.&lt;/p&gt;&lt;p&gt;Now we'd got one sort of meta-operator, I wanted more! So, I went on and did a first cut of hyper operators. Some examples of what you can do now.&lt;/p&gt;&lt;p&gt;
+&lt;code&gt;say ((1,2,3) &amp;gt;&amp;gt;+&amp;lt;&amp;lt; (3,2,1)).perl; # [4, 4, 4]&lt;br&gt;
+say ((1,2,3) &amp;gt;&amp;gt;*&amp;lt;&amp;lt; (3,2,1)).perl; # [3, 4, 3]&lt;br&gt;
+say ((1,2,3) &amp;gt;&amp;gt;+&amp;gt;&amp;gt; 1).perl; # [2, 3, 4]&lt;br&gt;
+say ((1,[2,3]) &amp;gt;&amp;gt;+&amp;lt;&amp;lt; (1,[2,3])).perl; # [2, [4, 6]]&lt;br&gt;
+say (10 &amp;lt;&amp;lt;*&amp;lt;&amp;lt; (1,[2,3])).perl; # [10, [20, 30]]&lt;br&gt; &lt;/code&gt;
+&lt;/p&gt;&lt;p&gt;Note that if you want a side to auto-upgrade, you point the angle brackets towards it. Not doing so will give an exception. There are also unicode variants of the hyper operators, which in theory are implemented, but in practice fail to parse because of a Parrot bug (happily, Patrick was able to quickly narrow it down and produce a very short test case to pass on to Parrot folks who might be able to help fix it up).&lt;/p&gt;&lt;p&gt;For a while people have wanted to be able to set initial values for attributes at the point of declaration. Tonight I've put in some basic support for this (just for constants so far - there are some issues with lexicals declared outside of a class not being visible inside the class, plus there is also the "is build" trait to do to implement for more complex initialization). You can now write at least:&lt;/p&gt;&lt;p&gt;
+&lt;code&gt;class Universe {&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;has $.answer = 42;&lt;br&gt;
+}&lt;br&gt; &lt;/code&gt;
+&lt;/p&gt;&lt;p&gt;And have it work, though.&lt;/p&gt;&lt;p&gt;For my final trick, realizing that we now had reduction and hyper ops, that left cross operators. These produce each permutation of the lists and then combine them using the operator between them. It turns out that since they can be expressed in terms of infix:X - which we already had - and reduction operators, which we also have - it was trivial to implement also. So, I did it, and unfudged some more tests. So we now have:&lt;/p&gt;&lt;p&gt;
+&lt;code&gt;say (&amp;lt;a b&amp;gt; X~X &amp;lt;1 2&amp;gt;).perl; # ['a1', 'a2', 'b1', 'b2']&lt;br&gt;
+say (1,2 X*X 3,4).perl; # [3, 4, 6, 8]&lt;br&gt; &lt;/code&gt;
+
+&lt;/p&gt;&lt;p&gt;While there's more to do on all of the things I've been working on here today - IO, OO, and meta-operators - hopefully there's some nice things in here that will make hacking on Rakudo a better experience. Thanks to Vienna.pm for funding my work today.&lt;/p&gt;</description>
+<dc:creator>JonathanWorthington</dc:creator>
+<dc:date>2008-12-09T23:36:03+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/38054?from=rss">
+<title>Perl and Git</title>
+<link>http://use.perl.org/~acme/journal/38054?from=rss</link>
+<description>&lt;p&gt;&amp;quot;Like Perl, &lt;a href="http://git.or.cz/"&gt;Git&lt;/a&gt; has lots of flexibility, &lt;a href="http://www.perlfoundation.org/perl5/index.cgi?tmtowtdi"&gt;TMTOWTDI&lt;/a&gt;, and extensibility&amp;quot;, points out the &lt;a href="http://www.perlfoundation.org/perl5/index.cgi?git"&gt;Perl 5 Wiki page on Git&lt;/a&gt;. I&amp;#39;ve been looking at Git in somewhat detail recently. I even wrote &lt;a href="http://search.cpan.org/dist/Git-PurePerl/"&gt;Git::PurePerl&lt;/a&gt; to understand Git&amp;#39;s repository format in slightly more depth. I think Git is a very flexible way to develop and I particularly like &lt;a href="http://github.com/"&gt;github&lt;/a&gt; as a way to socially share repositories (and forks). See &lt;a href="http://github.com/acme/git-pureperl/tree/master"&gt;the Git::PurePerl repository&lt;/a&gt; for example.&lt;/p&gt;&lt;p&gt;Why should you look at Git now? Well, I &lt;a href="http://use.perl.org/~Alias/journal/38050"&gt;also&lt;/a&gt; have a secret...&lt;/p&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-12-09T16:04:07+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~dagolden/journal/38053?from=rss">
+<title>Putting CPAN modules on github</title>
+<link>http://use.perl.org/~dagolden/journal/38053?from=rss</link>
+<description>&lt;p&gt;I saw in Ovid's &lt;a href="http://use.perl.org/~Ovid/journal/38051"&gt;post about App::Prove::History&lt;/a&gt; that he's hosting it on &lt;a href="http://github.com/"&gt;Github&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;I've recently started &lt;a href="http://github.com/dagolden/"&gt;mirroring my git repositories to Github&lt;/a&gt; as well.  It has some nice eye candy and tracking tools.&lt;/p&gt;&lt;p&gt;One thing that made it easy to migrate was brian d foy's &lt;a href="http://search.cpan.org/~bdfoy/github_creator-0.13/"&gt;github-creator&lt;/a&gt;  package, which is a command-line tool to create a new repository on Github.  You just run it from a distribution directory and it figures out a name and so on.&lt;/p&gt;&lt;p&gt;It's not a module (yet), so installing with CPAN requires an explicit distribution name:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;cpan&amp;gt; install BDFOY/github_creator-0.13.tar.gz&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;If you're thinking of putting your CPAN modules on github, definitely try it out.&lt;/p&gt;&lt;p&gt;-- dagolden&lt;/p&gt;</description>
+<dc:creator>dagolden</dc:creator>
+<dc:date>2008-12-09T14:37:45+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~Alias/journal/38050?from=rss">
+<title>Why I still can't write my grant report...</title>
+<link>http://use.perl.org/~Alias/journal/38050?from=rss</link>
+<description>&lt;p&gt;You see, there's another Sekrit&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;:)&lt;/p&gt;</description>
+<dc:creator>Alias</dc:creator>
+<dc:date>2008-12-08T23:43:42+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~barbie/journal/38049?from=rss">
+<title>NEW CPAN Testers site - Preferences Administration</title>
+<link>http://use.perl.org/~barbie/journal/38049?from=rss</link>
+<description>&lt;p&gt;With no little amount of fanfare the CPAN Testers would like to unveil a new site to accompany the rest of the family. &lt;/p&gt;&lt;p&gt; &lt;a href="https://prefs.cpantesters.org/"&gt;The CPAN Testers Preferences Administration website&lt;/a&gt; is now available for authors to specify the preferences they would like to set for the receipt of reports and summaries. The site now drives the Daily Summary Reports that are produced by the Author Notification System. Currently only Daily Summaries are available, but as the system settles in, the ability to provide individual reports and Weekly Summaries will also be available.&lt;/p&gt;&lt;p&gt;The preferences are separated into two sections, the default preferences and the distribution preferences. The default preferences are applied when you have no specific distribution preferences defined. It is here you can also switch off the ability to receive reports at all, if you wish not to be bothered with CPAN Testers. The distribution preferences can be defined for each distribution which you have released to CPAN. If you choose to only define specific preferences for some of your distributions, the remainder will use the default preferences.&lt;/p&gt;&lt;p&gt;The preferences themselves allow you to specify which grades you are interested in, whether you wish to just be alerted to the first or all tuples, where a tuple is an instance of Distribution version, Perl version and Operating System. You can elect to just be notified about the latest release of a distribution or all versions, as well as the Perl versions and operating systems which you wish to be alerted to, or conversely not be alerted to.&lt;/p&gt;&lt;p&gt;As the system is only meant for CPAN authors, the backend is driven by your PAUSE credentials. However, please note that your password is never stored by the system, and is only used to verify your login with PAUSE itself (all over SSL).&lt;/p&gt;&lt;p&gt;One important note I would like to make authors aware of, is that if you are not receiving summaries, then login to the site and find all notifications have been disabled without you previously asking me to, you may want to check your PAUSE account directly. The system uses your 'PAUSEID at cpan.org' mailing address to send reports, and as such if you haven't correctly set up a forwarding mail address within PAUSE (it doesn't appear to be a default setting), then persistant bounces will disable all notifications within your account. Once you correct the PAUSE forwarding, you can then enable notifications and should then begin receiving summaries, as per your preferences.&lt;/p&gt;&lt;p&gt;If you find any problems in using the system. please me know.&lt;/p&gt;</description>
+<dc:creator>barbie</dc:creator>
+<dc:date>2008-12-08T13:24:00+00:00</dc:date>
+<dc:subject>cpan</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~chromatic/journal/38046?from=rss">
+<title>Back of the Envelope Hazy Cold Medicine Math</title>
+<link>http://use.perl.org/~chromatic/journal/38046?from=rss</link>
+<description>&lt;p&gt;I have a degree in music, so obviously I like numbers.  (What?  Music is math.)&lt;/p&gt;&lt;p&gt;Suppose you had ten million dollars.  Suppose you invested that ten million dollars in such a way that you could guarantee a return of ten percent per year.  That's a reasonable rate of return, producing a million dollars, before taxes.&lt;/p&gt;&lt;p&gt;Let's take off 40% for taxes.  Now you have $600,000 coming in every year.&lt;/p&gt;&lt;p&gt;Suppose you hired 5 programmers at $90k annually.  They can work from home, so $90k is a solid developer salary in the US for anywhere but Silicon Valley or New York City.  Suppose you spent the other $30k for administrative expenses, including insurance and 401(k).&lt;/p&gt;&lt;p&gt;What could you do with five full-time developers?  (That's an order of magnitude more paid full-time developers than Parrot and Perl 6 have, combined.)&lt;/p&gt;</description>
+<dc:creator>chromatic</dc:creator>
+<dc:date>2008-12-07T19:54:17+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~andy.sh/journal/38045?from=rss">
+<title>Use Perl or die;</title>
+<link>http://use.perl.org/~andy.sh/journal/38045?from=rss</link>
+<description>&lt;p&gt;One of the most massive Russian websites with HD video, Russia.ru, published a video promotion of Perl which was recorded at South Perl workshop earlier this year.&lt;/p&gt;&lt;p&gt;Here is a link to the video with English subtitles: &lt;a href="http://yapcrussia.org/southperl/"&gt;http://yapcrussia.org/southperl/&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;(Original video: &lt;a href="http://www.russia.ru/video/use_perl_or_die/"&gt;http://www.russia.ru/video/use_perl_or_die/&lt;/a&gt;.)&lt;/p&gt;</description>
+<dc:creator>andy.sh</dc:creator>
+<dc:date>2008-12-07T19:30:54+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~gabor/journal/38043?from=rss">
+<title>There is no "standard perl distribution"</title>
+<link>http://use.perl.org/~gabor/journal/38043?from=rss</link>
+<description>Students often ask me what modules are in standard perl that they can be sure will be on &lt;b&gt;every&lt;/b&gt; machine they want to deploy their code.
+&lt;p&gt;
+The only answer I can give them is not care about that but to prepare for installing things.
+&lt;/p&gt;&lt;p&gt;
+Not only that the list of core modules is changing from version to version of perl releases but it also depends on the downstream distribution they use.
+&lt;/p&gt;&lt;p&gt;
+On many systems perldoc is in a separate package and does not come with the main perl package.
+&lt;/p&gt;&lt;p&gt;
+I just found out that Red Hat also separates CPAN.pm into its own package so their &lt;b&gt;standard perl&lt;/b&gt; does not even include CPAN.pm&lt;/p&gt;</description>
+<dc:creator>gabor</dc:creator>
+<dc:date>2008-12-07T11:03:02+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~chromatic/journal/38041?from=rss">
+<title>A Very Modest Gloat, Historical Context Considered</title>
+<link>http://use.perl.org/~chromatic/journal/38041?from=rss</link>
+<description>&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;em&gt;The Python core developers value the evolutionary approach, and don't tend to get carried away by ambitious projects like a massive revision of the language and interpreter infrastructure (Parrot).&lt;/em&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt; Martijn Faassen, in a comment on Titus Brown's &lt;a href="http://ivory.idyll.org/blog/dec-08/perl-is-dying"&gt;Perl is Dying?&lt;/a&gt; &lt;/p&gt;&lt;p&gt;If I'd spent eight and a three-quarters years designing and implementing a backwards-incompatible revision of a programming language (see &lt;a href="http://mail.python.org/pipermail/python-list/2000-February/023047.html"&gt;Will Python 3000 Break My Code?&lt;/a&gt;, from &lt;em&gt;February 2000&lt;/em&gt; -- and that's not the earliest reference to Python 3000, either), I'd set my sights on goals slightly more ambitious than shuffling around the core library, changing the syntax slightly, and improving Unicode.&lt;/p&gt;&lt;p&gt;I'm not criticizing Python 3.0 by any means.  It's a decent, modest improvement on a decent, modern language.  Just don't mistake it for anything revolutionary, and don't pretend that it didn't also take almost a decade, even with Googlebucks-funded development.&lt;/p&gt;</description>
+<dc:creator>chromatic</dc:creator>
+<dc:date>2008-12-07T01:53:26+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~barbie/journal/38040?from=rss">
+<title>CPAN Testers Stats - November Summary - London Calling</title>
+<link>http://use.perl.org/~barbie/journal/38040?from=rss</link>
+<description>&lt;p&gt; &lt;a href="http://stats.cpantesters.org/"&gt;CPAN Testers Statistics&lt;/a&gt; &lt;/p&gt;&lt;p&gt;November was very much a development period for CPAN Testers. There has been a lot of work going on in the backend, with Ask working on the new backend database and HTTP submission process, and myself working on several sites, including 2 new ones. There has also been some work by David Golden and Chris Williams on the smoker tools, so although we may have been publicly quiet, there has been a lot of effort being put in to push CPAN Testers forward.&lt;/p&gt;&lt;p&gt;One of the new sites, The CPAN Testers Preferences site is now ready to go. We finally got the SSL Certifcate approved, signed and installed, so look for a bigger announcement next week about that. The site will allow authors to set preference filters for the reporting they currently receive via the Author Notification Service. Currently only Daily Summary Reports are available, but this will be extended to the individual reports as well as Weekly Summary Reports, as soon as I have some time to add those reports in.&lt;/p&gt;&lt;p&gt;The more interesting site to be worked on is the main CPAN Testers Reports site. Following on from my use.perl post regarding Sorting CPAN, the backend code now uses the new database to correctly sort distribution versions. However, the biggest change to be made will be to make the site very dependant on Javascript. There is already Javascript on the site at the moment, but it wasn't written well enough to cope with some of the HUGE pages, and as such some author and distribution pages suffer from popups asking the user whether they wish to continue a long running script. This has now been resolved, and the new pages load a lot faster. In addition the filter mechanism has now been extended to include the ability to filter on the perl version and/or OS name. There is still a bit of work still be done, but again expect an announcement regarding the site in the next couple of weeks.&lt;/p&gt;&lt;p&gt;One thing to note about the Reports site, is that I am not currently coding it as I would a static site. If you don't have javascript enabled, then you will not be able to see the data. Once the dynamic site is available then a flat HTML version will be possible, together with the provision for AJAX requests to view specific results on your site.&lt;/p&gt;&lt;p&gt;At the London Perl Workshop, both Chris Williams and myself gave CPAN Testers related talks. Chris gave a more up to date version of the talk he present at YAPC::Europe in Copenhagen during the summer, while I presented a behind the scenes look at the files used to present CPAN, BACKPAN and parts of the CPAN Testers site, finishing up with the new Uploads Database. The event went very well and by all accounts all the talks were very well received. No doubt a few CPAN Testers talks will feature in some of the workshops and conferences during 2009 too.&lt;/p&gt;&lt;p&gt;One event that will be featuring the CPAN Testers project, will be the &lt;a href="http://qa-hackathon.org/"&gt;2009 QA Hackathon&lt;/a&gt;. This is being held in Birmingham, and although this is a very dedicated event to bring together the developers involved in QA projects, if you have suggestions for attendees, would like to nominate a person we should contact, or even better still have a sponsor contact, then please visit the wiki and add a post to the site.&lt;/p&gt;&lt;p&gt;We topped 133 testers submitting reports last month, our highest ever, so thank you very much to everyone involved. This included 17 new addresses mapped, of which 6 new testers were identified.&lt;/p&gt;&lt;p&gt;Expect more news and announcements in the coming weeks as we move ever closer to CT2.0&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;:)&lt;/p&gt;</description>
+<dc:creator>barbie</dc:creator>
+<dc:date>2008-12-06T19:26:36+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~Alias/journal/38036?from=rss">
+<title>Microsoft partners with Strawberry Perl to improve the CPAN</title>
+<link>http://use.perl.org/~Alias/journal/38036?from=rss</link>
+<description>&lt;p&gt;&lt;i&gt;It would appear I have finally I achieved my long-time goal of slashdotting pudge's private Slashdot beta testing site&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;:)&lt;/i&gt;&lt;/p&gt;&lt;p&gt;For the last 2 years, starting with the Vertical Metre of Beer competition, I've been working to make Win32 a truly first class citizen of the Perl platform world.&lt;/p&gt;&lt;p&gt;The goal, as I keep repeating on the Strawbery Perl website, is Complete Platform Equality. Not different, or "better", just equal and identical. When writing Perl code, your platform should ideally be irrelevant.&lt;/p&gt;&lt;p&gt;I feel that Strawberry Perl has managed to achieve this for the Perl core.&lt;/p&gt;&lt;p&gt;In the year since it was released, the community has used it to help fix many of the largest and most important CPAN modules as well. Modules that have improved their release process and are now reliably problem-free on Windows include Bundle::CPAN, the DateTime family, Template Toolkit, POE, Wx, and a number of XML modules.&lt;/p&gt;&lt;p&gt;Unfortunately, we are now reaching the end of the large important modules that have big teams and are relatively well resourced. For smaller modules, and many individual CPAN authors, problems accessing legal licenses or the hardware to run it on, is now becomming a critical limiting factor. Some authors have simply never used Windows before, and don't want the hassle of learning how to set it up.&lt;/p&gt;&lt;p&gt;So it's time to remove that problem.&lt;/p&gt;&lt;p&gt;At YAPC::NA this year, at the beginning of my world tour, I was introduced to an attendee from the Microsoft Open Source Software Lab. He was interested in finding out if there was anything Microsoft could do to help with Strawberry.&lt;/p&gt;&lt;p&gt;Later in my tour, after diverting my first week in Portland over to Seattle,  with Ingy and I took a trip out to Redmond to visit the Microsoft OSSL. After some discussions there, lunch, and a look at what they are doing for people like the Samba team, one interesting very possibility started to emerge.&lt;/p&gt;&lt;p&gt;A week or two later at OSCON, I managed to catch up with Sam Ramji (the head of the OSSL) briefly in the hallway track after his keynote, and bounced the idea off him directly. He was extremely positive about it, so after I returned to Australia I polished the idea into a formal proposal and sent it off for consideration.&lt;/p&gt;&lt;p&gt;The proposal was accepted about 3 weeks later, and last night at OSDC we announced a new partnership between Microsoft and Strawberry Perl.&lt;/p&gt;&lt;p&gt;So, finally, I can now stop with the waffling around and just unveil The Sekrit.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Commencing this month, Microsoft will be providing every CPAN author with free access to a centrally-hosted virtual machine environment containing every major version of Windows.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The result is now practically the entire Perl community has a zero-cost and zero-setup way to doing light development, problem replication, debugging, and ad-hoc hesting on every version of Windows.&lt;/p&gt;&lt;p&gt;This arrangement is particularly amazing because it is, to my knowledge, several orders of magnitude larger than anything of this nature ever attempted before with the Open Source community.&lt;/p&gt;&lt;p&gt;Neither the Microsoft guys nor I know quite what is going to happen once we turn this baby on. With 7,000 potential users and endless possible use cases, I expect at the very least something of an adventure.&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;:)&lt;/p&gt;&lt;p&gt;So as a result, we are treating the initial implementation as completely experimental. Within Microsoft, the partnership is being lead directly by the locals in Microsoft Australia.&lt;/p&gt;&lt;p&gt;They have already procured and installed the hardware, and the OSSL guys in Redmond have prepared the Windows system images.&lt;/p&gt;&lt;p&gt;The actual hosting service itself needs to be provided by a non-Microsoft Sydney-based hosting company, due to some legal wrinkles relating to the Australian Trade Practices Act.&lt;/p&gt;&lt;p&gt;Once some final paperwork issues are resolved (which should happen over the next few business days) the admin passwords will be handed over to me, and then we have to work out the specific mechanics for how to manage everyone@cpan.org, and how we'll be dealing with instancing and rollback of the environments.&lt;/p&gt;&lt;p&gt;The launch set of Windows system images is currently exoected to be the following:&lt;br&gt;&lt;code&gt;&lt;br&gt;Windows XP Professional&lt;br&gt;Windows Server 2003 32-bit&lt;br&gt;Windows Server 2003 64-bit&lt;br&gt;Windows Vista Ultimate&lt;br&gt;Windows Server 2008 32-bit&lt;br&gt;Windows Server 2008 64-bit&lt;br&gt;&lt;/code&gt;&lt;/p&gt;&lt;p&gt;All environments will be updated to the current service packs, and are (I believe) the default English (American) versions.&lt;/p&gt;&lt;p&gt;It's worth nothing that this initial set is based on the MINIMUM useful variations I identified as necesary. Once the environment is running, it's likely that more environments will be added.&lt;/p&gt;&lt;p&gt;I've already suggested we add internationalisation as the next major priority, so hopefully we can also shortly see localised instanced that represent typical install configurations from Germany, Japan and China.&lt;/p&gt;&lt;p&gt;As for types of activities you can use the environment for, initially I want to contain it to relatively light activities to prevent over-loading the servers.&lt;/p&gt;&lt;p&gt;Ad-hoc testing, debugging and experimentation is fine. Resource-intensive CPAN Testers installs and other heavy smoke testing activities will initially not be allowed, until I have some idea of just what the resource implications of this whole exercise will be.&lt;/p&gt;&lt;p&gt;I'd very much like to avoid melting the servers for at LEAST the first week&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;:)&lt;/p&gt;&lt;p&gt;More information (and press releases) will follow, the entire program under which this partnership will be run is so new it's only just been given a name, so some of the organisational details will ironed out as we go.&lt;/p&gt;&lt;p&gt;But for now, to all the CPAN authors, all I have to add is...&lt;/p&gt;&lt;p&gt;Merry Christmas&lt;/p&gt;&lt;p&gt;Adam K&lt;/p&gt;&lt;p&gt;P.S. Or your appropriate equivalent religious or non-religious event, if any, occuring during the month of December, etc etc&lt;/p&gt;</description>
+<dc:creator>Alias</dc:creator>
+<dc:date>2008-12-06T06:32:40+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~JonathanWorthington/journal/38035?from=rss">
+<title>Fixes for Rakudo, and Parrot too</title>
+<link>http://use.perl.org/~JonathanWorthington/journal/38035?from=rss</link>
+<description>&lt;p&gt;This week's Rakudo day arrived, and I dug in to RT to see what I could
+
+do.&lt;/p&gt;&lt;p&gt;First, I ran accross a ticket that reported a problem with assignment of
+
+match objects. I thought we'd have fixed it while doing the assignment
+
+refactors, and after a quick check I found that we had. However, it seemed we
+
+didn't have any tests for that (unless I missed them), so I added some more. In
+
+doing so, I noticed that a test that relied on being able to check a Match
+
+object was of type Match failed. A one-line patch to Rakudo soon resolved that
+
+one, and later in the day I found a second ticket explicitly about that issue
+
+that the same fix also resolved.&lt;/p&gt;&lt;p&gt;I then dug into a something that I thought would be a short job, but that
+
+then ended up swallowing up much of the day. Such are things when you end up in
+
+Parrot guts. For a variety of reasons, we've ended up with Perl6Str - a PMC -
+
+along with Str - the actual string class. There's not that much that we
+
+implement in C that is Rakudo-specific, but there is the odd thing that we do
+
+that way, and thus the PMC's existence. It subclasses the default Parrot String
+
+PMC, and Str subclasses Perl6String and also Any. From the Rakudo point of view,
+
+the fact it inherits from anything other than Any is really an implementation
+
+detail, hidden away. The problem I was aiming to resolve was that, in a bunch of
+
+places - in fact most of them - we were creating Perl6Str rather than Str.&lt;/p&gt;&lt;p&gt;Simply switching them over caused a bunch of test failures. Loads of them. The first thing I discovered was that isa didn't always give the right answers when you inherited from a PMC. That was an easy fix, and then showed up a small bug in P6Object (our implementation of the Perl 6 metamodel) that had relied on isa being broken. I did an initial fix that I thought would deal with it, later realized it wasn't quite right and then did the correct one (was all a bit subtle). More serious bugs lay ahead, however: not only had Parrot not always been giving correct results for 'isa', but also it got MMD wrong when you were using a high level class that inherited from more than one level of PMC. It partly boiled down to a bit of implementation marked TODO in the code that makes PMCs feel more like high level classes. I got that working, but the fact that we were now building the correct MRO exposed some more code that relied on that bug. Wondering if it would ever end, I patched that, and found myself back with a working Parrot and Rakudo, with Perl6Str references now replaced with Str. Needless to say, Parrot has done pretty well out of today's fixes. Of course, Rakudo depends on Parrot working well, so diving in to sort things like this out now and then is worthwhile (I could have tried to paper over this lot, but it would only have bit us another month or two down the road in a different way anyway, I'd expect). I also found and deleted some now-useless code in object initialization, which will maybe shave just a little time from it.&lt;/p&gt;&lt;p&gt;One side-effect of the changes is that the previously failing test for using the 'is also' trait on the Str class now passes: you can add a new method and then do "foo".my_extra_method. Resolving this bug is another reason I set out on switching to using Str in the first place - I just hadn't expected it to lead that that many other fixes.&lt;/p&gt;&lt;p&gt;With much of my day sucked up by that, I dug into the RT queue. I found some tickets that had already had the issues they described solved, and closed them up, to keep the queue a bit cleaner. I then took on a segfault that Simon Cozens (who has been doing some great work on Perl 6 database interaction) discovered. Fixing up the problem in Rakudo was a one-line addition (it was a bug using attributes declared without a twigil).&lt;/p&gt;&lt;p&gt;However, Parrot really shouldn't segfault and I wanted to make sure it failed more gracefully next time. Looking in the debugger showed we were looking at
+garbage data, but didn't help me see why. Then I found that if I got the compiler to just spit out PIR, then tried to compile that PIR, it turned out it was invalid. A trace later, I realized that even if the PIR compiler bailed out at some point, it still tried to run the&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;:init subs in the not-finished-compiling-yet bytecode. We now check if the compile actually succeeded before trying to run the resulting maybe-code!&lt;/p&gt;&lt;p&gt;I'd wanted to do more in Rakudo itself today, but ran out of time to finish anything more after that lot. I did, however, start work on a patch to get a much wanted feature:&lt;/p&gt;&lt;p&gt;
+&lt;code&gt;class Foo {&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;has $.x = 42;&lt;br&gt;
+}&lt;br&gt; &lt;/code&gt;
+&lt;/p&gt;&lt;p&gt;In place. That is, being able to set the initial value for an attribute. I'm not done yet, and I'm really too tired to finish it off properly today (having a bit of a cold doesn't help either), but maybe I can get it done over the weekend.&lt;/p&gt;&lt;p&gt;Thanks to Vienna.pm for funding today's fixes.&lt;/p&gt;</description>
+<dc:creator>JonathanWorthington</dc:creator>
+<dc:date>2008-12-06T00:44:57+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~pudge/journal/38031?from=rss">
+<title>"Christmas Time is Here" by Vince Guaraldi</title>
+<link>http://use.perl.org/~pudge/journal/38031?from=rss</link>
+<description>&lt;p&gt;This time I peform &lt;a href="http://www.youtube.com/watch?v=4VcwzSQO0JU"&gt;Vince Guaraldi's classic from "A Charlie Brown Christmas."&lt;/a&gt;  As a chipmunk.&lt;/p&gt;</description>
+<dc:creator>pudge</dc:creator>
+<dc:date>2008-12-05T09:10:47+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~barbie/journal/38030?from=rss">
+<title>2009 QA Hackathon - The Dates</title>
+<link>http://use.perl.org/~barbie/journal/38030?from=rss</link>
+<description>&lt;p&gt;Following the initial announcement at &lt;a href="http://www.yapceurope2008.org/"&gt;YAPC::Europe&lt;/a&gt;, &lt;a href="http://birmingham.pm.org/"&gt;Birmingham Perl Mongers&lt;/a&gt; are pleased to announce that the &lt;a href="http://qa-hackathon.org/"&gt;2009 QA Hackathon&lt;/a&gt; will be held over 3 days from &lt;b&gt;Saturday March 28th&lt;/b&gt; to &lt;b&gt;Monday March 30th 2009&lt;/b&gt;.&lt;/p&gt;&lt;p&gt;Our wiki - &lt;a href="http://qa-hackathon.org/"&gt;http://qa-hackathon.org&lt;/a&gt; - is now live, so please feel free to sign-up and add details about yourself if you want to be involved, suggest projects or people for the event. We are hoping to attract about 15-20 people with plans to hack on various QA/testing projects, so if you think you can contribute something, or would like to nominate someone, please feel free to update the &lt;a href="http://qa-hackathon.org/wiki/Attendees"&gt;Attendees&lt;/a&gt; page with contact details, etc. Also if you think a particular project should be covered, please add a page for it and tell us about it.&lt;/p&gt;&lt;p&gt;We are also looking for &lt;a href="http://qa-hackathon.org/wiki/Sponsors"&gt;sponsors&lt;/a&gt; for the event, and although we have already contacted a few, we are eager to have more in the event we are able to provide funding for more attendees, particularly from overseas. If you have a contact for us, please send an email to organisers@qa-hackathon.org with details. We are delighted to have &lt;a href="http://www.perl-magazin.de/"&gt;$foo Magazin&lt;/a&gt; sponsor us, as well &lt;a href="http://birmingham.pm.org/"&gt;Birmingham Perl Mongers&lt;/a&gt;, who are underwriting the complete event.&lt;/p&gt;&lt;p&gt;Negotiations for venue and accommodation are ongoing, so we'll make those known once they are finalised. We would like to have everyone together, so if you're planning to bring your partner/family with you, please add a note to your entry in the &lt;a href="http://qa-hackathon.org/wiki/Attendees"&gt;Attendees&lt;/a&gt; page, so we can make sure we allocate rooms for everyone. Expect more news regarding the venue and accommodation in the new year.&lt;/p&gt;</description>
+<dc:creator>barbie</dc:creator>
+<dc:date>2008-12-05T08:17:25+00:00</dc:date>
+<dc:subject>events</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~bart/journal/38029?from=rss">
+<title>The Perl Advent Calendar 2008 is up!</title>
+<link>http://use.perl.org/~bart/journal/38029?from=rss</link>
+<description>Did anybody yet mention that the &lt;a href="http://www.perladvent.org/2008/"&gt;Perl Advent Calendar 2008&lt;/a&gt; is live? Take a look: one article a introducing a module that is not as well known as it deserves, per day, until Christmas.
+&lt;p&gt;Thanks to the hard work of belg4mit and several volunteers, with support from the Boston.pm group.&lt;/p&gt;</description>
+<dc:creator>bart</dc:creator>
+<dc:date>2008-12-05T07:49:27+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+</rdf:RDF>

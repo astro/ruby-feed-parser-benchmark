@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/rss2full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>I'm Mike</title>
+	
+	<link>http://immike.net/blog</link>
+	<description>What else do you need to know?</description>
+	<pubDate>Mon, 08 Sep 2008 21:04:26 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.7-hemorrhage</generator>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+			<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://feeds.feedburner.com/ImMike" type="application/rss+xml" /><item>
+		<title>OAuth on the iPhone</title>
+		<link>http://feeds.feedburner.com/~r/ImMike/~3/387019533/</link>
+		<comments>http://immike.net/blog/2008/09/08/oauth-on-the-iphone/#comments</comments>
+		<pubDate>Mon, 08 Sep 2008 21:04:26 +0000</pubDate>
+		<dc:creator>mike</dc:creator>
+		
+		<category><![CDATA[Programming]]></category>
+
+		<category><![CDATA[Security]]></category>
+
+		<category><![CDATA[Software]]></category>
+
+		<category><![CDATA[Web Development]]></category>
+
+		<category><![CDATA[iphone]]></category>
+
+		<category><![CDATA[oauth]]></category>
+
+		<guid isPermaLink="false">http://immike.net/blog/?p=111</guid>
+		<description><![CDATA[Anyone who&#8217;s interested in security on the web has probably already heard of OAuth. I&#8217;ll skip the details of how OAuth works, since that information is available elsewhere, but here&#8217;s the short version (OAuth veterans may choose to skip the next three paragraphs):
+Before we get started, let me define a bit of terminology from the [...]]]></description>
+			<content:encoded><![CDATA[<p>Anyone who&#8217;s interested in security on the web has probably already heard of <a href="http://oauth.net/">OAuth</a>. I&#8217;ll skip the details of how OAuth works, since that information is <a href="http://oauth.net/about">available</a> <a href="http://oauth.net/core/1.0/">elsewhere</a>, but here&#8217;s the short version (OAuth veterans may choose to skip the next three paragraphs):</p>
+<p>Before we get started, let me define a bit of terminology from the <a href="http://oauth.net/core/1.0/#anchor3">OAuth Spec</a>:</p>
+<ul style="margin-top: -0.5em">
+<li><strong>Service Provider</strong>: A web application that allows access via OAuth.</li>
+<li><strong>User</strong>: An individual who has an account with the Service Provider.</li>
+<li><strong>Consumer</strong>: A website or application that uses OAuth to access the Service Provider on behalf of the User.</li>
+<li><strong>Protected Resource(s)</strong>: Data controlled by the Service Provider, which the Consumer can access through authentication.</li>
+</ul>
+<p>API authentication is tricky. The naive approach is to have third party (Consumer) applications ask the User for their credentials, and pass them along to the Service Provider for authentication. This is bad. Even if the User trusts the Consumer, you&#8217;re telling people that it&#8217;s Ok to give out their secret credentials. Think how much more successful phishing would be if users were legitimately asked on a regular basis to provide account information via email. There are more subtle problems, too: it&#8217;s impossible to give Consumers different access levels, impossible to revoke access for a particular Consumer, and there&#8217;s no central place that tells a User which Consumers have access to their account.</p>
+<p>OAuth solves all these problems by having the Consumer authenticate with the Service Provider, and allowing the User to grant Consumers access to their Protected Resources. Consumers never touch User credentials. In fact, they don&#8217;t even need to know who the user is. The level of access the Consumer has is entirely up to the Service Provider and the User. Access control can be managed at the Service Provider, where a central list of linked Consumers can be displayed. Since each Consumer is given a unique access token, different permissions can be granted to each.</p>
+<h4>OAuth on the iPhone</h4>
+<p>For the past couple months, I&#8217;ve been working on and off building a <a href="http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=284540392&#038;mt=8">native iPhone application</a> for <a href="http://pownce.com">Pownce</a>. The <a href="http://pownce.pbwiki.com/API%20Documentation2-0">Pownce API</a> uses OAuth for authentication, which I wanted to use on the iPhone. But for the OAuth flow to work, the User must be directed to an authorization page on the Service Provider&#8217;s web site. This poses a problem for native iPhone applications &#8212; the iPhone can only run one application at a time, so opening the authorization URL in Safari terminates the Consumer application.</p>
+<p>But there&#8217;s a solution. The iPhone allows native applications to register with the OS to handle certain URL schemes. By registering <code>pownce://</code> and instructing the Service Provider to redirect the User to <code>pownce://access_token</code> after authorization, the native Pownce application is automatically relaunched. The flow looks something like this:</p>
+<p><a href="http://www.flickr.com/photos/mjmalone/2840022931/" title="Pownce - Pre-Authorization by mjmalone, on Flickr" style="float: left; margin-right: 3px;"><img src="http://farm4.static.flickr.com/3213/2840022931_63f2c3515a_m.jpg" width="160" height="240" alt="Pownce - Pre-Authorization" /></a><a href="http://www.flickr.com/photos/mjmalone/2840023027/" title="Pownce - Mobile Auth Screen by mjmalone, on Flickr" style="float: left; margin-right: 3px;"><img src="http://farm4.static.flickr.com/3213/2840023027_fbfb9d2d1d_m.jpg" width="160" height="240" alt="Pownce - Mobile Auth Screen" /></a><a href="http://www.flickr.com/photos/mjmalone/2840023161/" title="Pownce - Post-Authorization by mjmalone, on Flickr"><img src="http://farm4.static.flickr.com/3163/2840023161_0deb647f67_m.jpg" width="160" height="240" alt="Pownce - Post-Authorization" /></a></p>
+<p>A couple of days before the app store opened, I demoed the soon-to-be-released Pownce iPhone app to a group of folks at the <a href="http://wiki.oauth.net/OAuthSummit2008">OAuth Summit</a>. Following the summit, <a href="http://factoryjoe.com/blog/2008/07/11/oauth-for-the-iphone-pownceapp/">Chris Messina</a>, <a href="http://www.flickr.com/photos/simon/2752665067/">Simon Willison</a>, and others pointed to Pownce as an example of &#8220;the right way&#8221; to use OAuth on the iPhone. Everything seemed great&#8230; until the app store launched.</p>
+<h5>The Problem&#8230;</h5>
+<p>Turns out Chris Messina and Simon Willison aren&#8217;t your average User. They understood why Safari was being launched. The average User didn&#8217;t. We started getting <a href="http://simonwillison.net/2008/Aug/12/reviews/">reviews in the app store</a> complaining about the auth flow, and early statistics show that nearly <em>40% of users</em> who downloaded the Pownce application <em>never linked it with a Pownce account</em> (there are other reasons a user might never link their account, but I&#8217;m sure the auth flow contributed &#8212; if anyone has stats for another app as a point of comparison, I&#8217;d love to see them). Needless to say, this situation is not good.</p>
+<h5>The Solution?</h5>
+<p>The naive solution is simple. The iPhone SDK provides a <a href="http://developer.apple.com/iphone/library/documentation/UIKit/Reference/UIWebView_Class/Reference/Reference.html">UIWebView</a> control that lets applications integrate a web page with their UI. Instead of launching Safari, a Consumer could use a UIWebView to integrate the authorization page with the rest of their application. But this solution <strong>is not ideal</strong> because the User has no way of knowing whether they&#8217;re actually looking at the Service Provider&#8217;s site, or a fake. (In reality, as <a href="http://hyalineskies.com">Eston Bond</a> pointed out to me, the entire OAuth flow from the Pownce app to Safari and back could be faked fairly easily too, but I&#8217;ll conveniently ignore that for now).</p>
+<p>The solution here, I think, is to have some mechanism (other than the URL and browser chrome) that gives the User a clear indication as to whether or not they&#8217;re on the Service Provider&#8217;s site. Something like Bank of America&#8217;s <a href="http://en.wikipedia.org/wiki/Sitekey">SiteKey</a> would work perfectly. The Service Provider could split the authorization process into two steps. The first step would simply ask for a username and display a <a href="http://en.wikipedia.org/wiki/Captcha">CAPTCHA</a>. The second step would display an image that the User has previously selected, and prompt for a password. If the User doesn&#8217;t recognize the image in the second step, they should be suspicious.</p>
+<p>The obvious downside is that the Service Provider needs to ask every User to choose a security image prior to the authorization process. SiteKey is also <a href="http://paranoia.dubfire.net/2007/04/deceit-augmented-man-in-middle-attack.html">susceptible to man-in-the-middle attacks</a>, but that might be solvable using a CAPTCHA in the first step of the authorization process (I haven&#8217;t thought too hard about it). In any case, I&#8217;d love to hear what the community has to say on this particular topic. There&#8217;s an obvious balancing act going on here between usability and security. What&#8217;s the optimal mix?</p>
+<img src="http://feeds.feedburner.com/~r/ImMike/~4/387019533" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://immike.net/blog/2008/09/08/oauth-on-the-iphone/feed/</wfw:commentRss>
+		<feedburner:origLink>http://immike.net/blog/2008/09/08/oauth-on-the-iphone/</feedburner:origLink></item>
+		<item>
+		<title>XHTML 2 vs. HTML 5</title>
+		<link>http://feeds.feedburner.com/~r/ImMike/~3/230452016/</link>
+		<comments>http://immike.net/blog/2008/02/06/xhtml-2-vs-html-5/#comments</comments>
+		<pubDate>Wed, 06 Feb 2008 18:36:46 +0000</pubDate>
+		<dc:creator>mike</dc:creator>
+		
+		<category><![CDATA[Programming]]></category>
+
+		<category><![CDATA[Software]]></category>
+
+		<category><![CDATA[Web Development]]></category>
+
+		<category><![CDATA[ajax]]></category>
+
+		<category><![CDATA[html]]></category>
+
+		<category><![CDATA[html5]]></category>
+
+		<category><![CDATA[javascript]]></category>
+
+		<category><![CDATA[standards]]></category>
+
+		<category><![CDATA[W3C]]></category>
+
+		<category><![CDATA[xhtml]]></category>
+
+		<category><![CDATA[xhtml2]]></category>
+
+		<guid isPermaLink="false">http://immike.net/blog/2008/02/06/xhtml-2-vs-html-5/</guid>
+		<description><![CDATA[
+Rewind a little more than 10 years to December 18, 1997. Internet Explorer 4 had been released 3 months earlier. The Mozilla Foundation had not yet formed, and their Firefox web browser was years away from public release. There was no XMLHttpRequest&#8230; there wasn&#8217;t even XML. On that day, over a decade ago, HTML 4.0 [...]]]></description>
+			<content:encoded><![CDATA[<p>
+Rewind a little more than 10 years to December 18, 1997. Internet Explorer 4 had been released 3 months earlier. The Mozilla Foundation had not yet formed, and their Firefox web browser was years away from public release. There was no XMLHttpRequest&#8230; there wasn&#8217;t even XML. On that day, over a decade ago, <a href="http://www.w3.org/TR/REC-html40-971218/">HTML 4.0</a> was published as a W3C recommendation.</p>
+<p>
+That&#8217;s the environment in which our current web standards were developed. Sure, improvements have been made. XHTML 1.0 became a recommendation in 2000, and CSS 2 has (<a href="http://en.wikipedia.org/wiki/Comparison_of_layout_engines_%28CSS%29">kind of</a>) been implemented by the major browser vendors. But the foundation of the Web &#8212; the common denominator that every web site is built on, from simple brochures to complex applications &#8212; has stayed essentially unchanged.
+</p>
+<p>
+Until now, anyways. After a long lull, things seem to be changing at the W3C &#8212; there are two competing specifications under development to replace the aging HTML 4.x and XHTML 1.x standards. Both initiatives are working under the auspices of the W3C (although this was not always the case) and both are, in my opinion, vastly superior to the current crop of web markup languages. They are <strong><a href="http://www.w3.org/html/wg/html5/">HTML 5</a></strong> and <strong><a href="http://www.w3.org/TR/xhtml2/">XHTML 2.0</a></strong>. And if you&#8217;re reading this, you&#8217;ll probably become very familiar with one (or both) of them over the next couple of years.
+</p>
+<h4>Some History</h4>
+<p>
+Work on XHTML 2.0 began shortly after XHTML 1.1 became a recommendation in 2001. The first XHTML 2.0 working draft was released in 2002, but much of the document was in a <a href="http://blogs.msdn.com/dave_welsh/archive/2004/09/09/227600.aspx">non-normative</a>, incomplete state (some still is). By 2004, some prominent industry stakeholders &#8212; browser vendors, web developers, designers, and content owners &#8212; had grown unhappy with the direction of the <a href="http://www.w3.org/MarkUp/">XHTML2 working group</a>. Citing the closed nature of the W3C process, they decided to start over and develop their own standard.
+</p>
+</p>
+<p>So, in 2004 an independent coalition called <a href="http://www.whatwg.org/">WHATWG</a> (Web Hypertext Application Technology Working Group) was formed. The group began working on a specification called Web Applications 1.0. In April 2007, the W3C voted overwhelmingly in favor of a proposal to adopt the group&#8217;s specification for review. The original WHATWG members began operating within the W3C as the <a href="http://www.w3.org/html/wg/">HTML working group</a>, and continued developing their proposal, which was renamed HTML 5. Thus, the HTML 5 working draft may one day become a W3C recommendation along with XHTML 2.0 (although that day is still far away, and <a href="http://wiki.whatwg.org/wiki/FAQ#When_will_HTML_5_be_finished.3F">the W3C has already missed several key project milestones</a>).
+</p>
+<h4>Overview of XHTML 2.0</h4>
+<p>
+XHTML 2.0 is based solely on XML, forgoing the SGML heritage and syntax peculiarities present in current web markup.  XHTML 2.0 is supposed to be a &#8220;general-purpose language,&#8221; with a minimal default feature set that is easy to extend using CSS and other technologies (XForms, XML Events, etc). It&#8217;s a modular approach that allows the XHTML2 group to focus on generic document markup, while others develop mechanisms for presentation, interactivity, document construction, etc.
+</p>
+<p>
+Priority one for the <a href="http://www.w3.org/MarkUp/">XHTML2 working group</a> is to further separate document content and structure from document presentation. Other goals include increased usability and accessibility, improved internationalization, more device independence, less scripting, and better integration with the Semantic Web. The group has been less concerned with backward compatibility than their predecessors (and the HTML working group), which has led them to drop some of the syntactic baggage present in earlier incarnations of HTML. The result is a cleaner, more concise language that corrects many of Web markup&#8217;s past indiscretions.
+</p>
+<h4>Overview of HTML 5</h4>
+<p>
+While XHTML 2.0 aims to be revolutionary, the HTML working group has taken a more pragmatic approach and designed HTML 5 as an evolutionary technology. That is to say, HTML 5 is an incremental step forward that remains mostly compatible with the current HTML 4/XHTML 1 standards. However, HTML 5 offers <a href="http://www.w3.org/TR/2008/WD-html5-diff-20080122/">a host of changes and extensions to HTML 4/XHTML 1</a> that address many of the faults in these earlier specifications.
+</p>
+<p>
+HTML 5 is about moving HTML away from document markup, and turning it into a language for web applications. To that end, much of the specification focuses on creating a more robust, feature-ful client side environment for web application development by providing <a href="http://www.w3.org/TR/2008/WD-html5-diff-20080122/#apis">a variety of APIs</a>. Among other things, the spec stipulates that complying implementations must provide client-side persistent storage (both key/value and SQL storage engines), audio and video playback APIs, 2D drawing through the <code>canvas</code> element, cross-document messaging, server-sent events, and a networking API.
+</p>
+<p>
+The HTML 5 specification maintains an SGML-like syntax that is compatible with the current HTML specifications (though some of the more esoteric features of SGML are <a href="http://www.w3.org/TR/2008/WD-html5-diff-20080122/#apis/S">no longer supported</a>). Also included in the specification is a second &#8220;XML Serialization&#8221; which allows developers to serve valid XML documents as well. Again, by maintaining an SGML-like serialization the HTML 5 working group has struck a balance between pragmatism and progress. Developers can choose to markup content using either the HTML serialization (which looks more like HTML 4.x) or the XML serialization (which looks more like XHTML 1.x).
+</p>
+<h4>Similar Features</h4>
+<p>
+It shouldn&#8217;t be too surprising that both working groups are proposing a number of similar features. These features address familiar pain points for web developers, and should be welcome additions to the next generation of markup languages.
+</p>
+<h5>Removal of Presentational Elements</h5>
+<p>
+A number of elements have been removed from both XHTML 2.0 and HTML 5 because they are considered purely presentational. The consensus is that presentation should be handled using style sheets.
+</p>
+<p>
+HTML 5 and XHTML 2.0 documents cannot contain these elements: <code>basefont</code>, <code>big</code>, <code>font</code>, <code>s</code>, <code>strike</code>, <code>tt</code>, and <code>u</code>. XHTML 2.0 also removes the <code>small</code>, <code>b</code>, <code>i</code>, and <code>hr</code> elements, while HTML 5 redefines them with non-presentational meanings. In XHTML 2.0, the <code>hr</code> element has been replaced with <code>separator</code> in an attempt to reduce confusion (since the <code>hr</code> element, which stands for <em>horizontal rule</em>, is not necessarily either of those things).
+</p>
+<h5>Navigation Lists</h5>
+<p>
+Navigation lists have been introduced in both XHTML 2.0 and HTML 5. In XHTML 2.0, navigation is marked up using the new <a href="http://www.w3.org/TR/xhtml2/mod-list.html#edef_list_nl"><code>nl</code> element</a>. <em>Navigation lists</em> must start with a child <code>label</code> element that defines the list title. Following the title, one or more <code>li</code> elements are used to markup links. Also new in XHTML 2.0 is the ability to create a hyperlink from <em>any element</em> using the <code>href</code> attribute. Combining these features produces simple, lightweight navigation markup:
+</p>
+<pre>
+&lt;nl&gt;
+  &lt;label&gt;Category&lt;/label&gt;
+  &lt;li href=&quot;/&quot;&gt;All&lt;/li&gt;
+  &lt;li href=&quot;/news&quot;&gt;News&lt;/li&gt;
+  &lt;li href=&quot;/videos&quot;&gt;Videos&lt;/li&gt;
+  &lt;li href=&quot;/images&quot;&gt;Images&lt;/li&gt;
+&lt;/nl&gt;
+</pre>
+<p>
+In HTML 5, the new <a href="http://www.w3.org/html/wg/html5/#the-nav"><code>nav</code> element</a> has been introduced for this purpose. Unfortunately, <code>nav</code> is not a list element, so it cannot contain child <code>li</code> elements to logically organize links (perhaps a new idiom will develop). And since anchor tags are still required to create hyperlinks in HTML 5, navigation markup is not quite as elegant:
+</p>
+<pre>
+&lt;nav&gt;
+  &lt;h1&gt;Category&lt;/h1&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;/&quot;&gt;All&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/news&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/videos&quot;&gt;Videos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/images&quot;&gt;Images&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+</pre>
+<h5>Enhanced Forms</h5>
+<p>
+Both specifications have new features to create more robust, consistent forms with less scripting. In XHTML 2.0, standard HTML forms are dropped completely in favor of the more comprehensive <a href="http://www.w3.org/TR/2004/WD-xforms11-20041115/">XForms standard</a>. The XHTML2 working group does not control this standard, but <a href="http://www.w3.org/TR/xhtml2/mod-xforms.html#s_xformsmodule">references it</a> from the XHTML 2.0 specification. To facilitate reuse, XForms separates the data being collected from the markup of the controls. It&#8217;s a robust and powerful language, but a full description is way beyond the scope of this post. Suffice it to say, there will be a bit of a learning curve for web developers trying to get up to speed with this technology.
+</p>
+<p>
+HTML 5 retains the familiar HTML forms, but adds several new data types to simplify development and improve usability. In HTML 5, several new types of <code>input</code> elements have been introduced for email addresses, URLs, dates and times, and numeric data. This will allow user agents to provide more sophisticated user interfaces (e.g., calendar date pickers), integrate with other applications (e.g., pulling addresses from Outlook or Address Book), and validate user input before posting data to the server (less client-side javascript validation).
+</p>
+<h5>Semantic Markup</h5>
+<p>
+Both working groups have embraced the coming <a href="http://en.wikipedia.org/wiki/Semantic_Web">Semantic Web</a> by allowing developers to embed richer metadata in their documents. As with forms,  the XHTML2 working group has embraced a more sophisticated technology, while the HTML working group has kept things simple.
+</p>
+<p>
+In XHTML 2.0, metadata can be embedded by using several new global attributes from the <a href="http://www.w3.org/TR/xhtml2/mod-metaAttributes.html#s_metaAttributesmodule">Metainformation Attributes Module</a>. In particular, the new global <code>role</code> attribute is intended to describe the meaning of a given element in the context of the document. The technical term is <a href="http://www.w3.org/TR/xhtml-rdfa-primer/">Embedding Structured Data in Web Pages</a>. Again, the group leverages an existing standard by referencing <a href="http://www.w3.org/RDF/">RDF</a>. The technology is extremely powerful, but it&#8217;s also complicated.</p>
+<p>
+The HTML working group has taken an approach that feels more like <a href="http://microformats.org">microformats</a> by overloading the <code>class</code> attribute with a predefined set of reserved classes to represent various types of data. The specification currently lists seven reserved classes: <em>copyright</em>, <em>error</em>, <em>example</em>, <em>issue</em>, <em>note</em>, <em>search</em>, and <em>warning</em>. While overloading the class attribute like this might be confusing, it&#8217;s unlikely that user agents will render elements with these classes differently. And the class names are specific enough that there&#8217;s little worry:  if an element has its class set to copyright, it&#8217;s probably a copyright whether the developer knew about the reserved classes or not.
+</p>
+<h4>Only in HTML 5</h4>
+<p>
+There are several new features that the HTML 5 specification describes that have no counterparts in XHTML 2.0.
+</p>
+<h5>Web Application APIs</h5>
+<p style="padding-bottom: 0px;">
+HTML 5 introduces several APIs that will drastically improve the client-side web development environment. These APIs are what set HTML 5 apart as a proposal for a technology stack for Web Applications, rather than simply a markup language for documents. It should be noted that the details of these APIs are being worked out by the <a href="http://www.w3.org/2006/webapi/">Web API working group</a>, so they may be adopted with or without the rest of HTML 5. The new APIs, and corresponding elements are:
+</p>
+<ul style="margin-top: 0.2em;">
+<li>A 2D drawing API using the <code>canvas</code> element.</li>
+<li>An audio and video playback API, supporting the ability to offer multiple formats to user agents, which can be used with the new <code>video</code> and <code>audio</code> elements.</li>
+<li>Persistent storage on the client-side with support for both key/value and SQL databases.</li>
+<li>An offline web application API (similar to <a href="http://immike.net/blog/2007/05/31/getting-started-with-google-gears/">Google Gears</a>).</li>
+<li>An API that allows Web Applications to register themselves for certain protocols or MIME types.</li>
+<li>An editing API that can be used in combination with the global <code>contenteditable</code> attribute.</li>
+<li>A drag &#038; drop API that can be used with the <code>draggable</code> attribute.</li>
+<li>A network API allowing Web applications to communicate using TCP.</li>
+<li>An API that exposes the browser history, allowing applications to add to it so they don&#8217;t break the back button.</li>
+<li>A cross-document messaging API.</li>
+<li>Server-sent events in combination with the new <code>event-source</code> element.</li>
+</ul>
+<h5>New Elements</h5>
+<p style="padding-bottom: 0px;">
+Several new elements are being introduced by HTML 5 that aren&#8217;t available in XHTML 2.0:
+</p>
+<ul style="margin-top: 0.2em;">
+<li><code>figure</code> represents an image or graphic with a caption. A nested <code>legend</code> represents the caption, while a normal <code>img</code> element is used for the image.</li>
+<li><code>m</code> represents text that has been marked in some way. It could be used to highly search terms in resulting documents, for example.</li>
+<li><code>time</code> represents dates and time.</li>
+<li><code>meter</code> represents a measurement.</li>
+<li><code>datagrid</code> represents an interactive tree list or tabular data.</li>
+<li><code>command</code> represents a command that the user can invoke.</li>
+<li><code>event-source</code> is used to &#8220;catch&#8221; server sent events.</li>
+<li><code>output</code> represents some type of output, such as from a calculation done through scripting.</li>
+<li><code>progress</code> represents a completion of a task, such as downloading or when performing a series of expensive operations.</li>
+</ul>
+<p>
+In addition, several new elements will help semantically markup the parts of a document. They&#8217;re fairly self explanatory: <code>section</code>, <code>article</code>, <code>header</code>, <code>footer</code>, and <code>aside</code>. And a new <code>dialog</code> element is designed to represent conversations using child <code>dt</code> elements for the speaker&#8217;s name and <code>dd</code> elements for the text.
+</p>
+<h5>Track Users by Pinging URIs</h5>
+<p>
+The new <code>ping</code> attribute can be used on the <code>a</code> and <code>area</code> elements to do user tracking. Rather than using redirects, or relying on javascript, the <code>ping</code> attribute allows you to specify a space separated list of URIs that should be <em>pinged</em> when the hyperlink is followed.
+</p>
+<h4>Only in XHTML 2.0</h4>
+<p>
+Also notable are the following new features that are available only in XHTML 2.0.
+</p>
+<h5>Any Element can be a Hyperlink</h5>
+<p>
+In XHTML 2.0, any element can be the source of a hyperlink &#8212; the <code>href</code> attribute can appear on any element. With this change the <code>a</code> element is no longer necessary, but it is retained.
+</p>
+<h5>Any Element can be an Image (or other resource)</h5>
+<p>
+In XHTML 2.0, the <code>img</code> element has been dropped. No worries, though &#8212; any element can now be an image. The idea is that all images have a &#8220;long description&#8221; that is equivalent to the image itself. By placing a <code>src</code> attribute on <em>any</em> element, you&#8217;re telling the user agent to load that resource in place of the element. If, for whatever reason, the resource is unavailable, the element is used instead. This allows developers to provide multiple equivalent resources using different file formats and representations by nesting elements within one another.
+</p>
+<h5>Lines Replace Line Breaks</h5>
+<p>
+The venerable <code>br</code> element, used to insert <em>line breaks</em>, has also been dropped from XHTML 2.0. The new <code>l</code> element is being introduced to replace it. <code>l</code> represents a <em>line</em> of text, and behaves like a <code>span</code> followed by a <code>br</code> in today&#8217;s markup.
+</p>
+<h5>New Heading Construct</h5>
+<p>
+The new <code>h</code> and <code>section</code> elements have been introduced to replace the numbered <code>h1</code> through <code>h6</code> elements. The goal is to accurately represent the hierarchical structure of a document. The current numbered headings are linear, not nested. By nesting <code>section</code> and <code>h</code> elements within parent <code>section</code>s the document structure is made explicit.
+</p>
+<h5>New Elements</h5>
+<p style="padding-bottom: 0px;">
+The XHTML2 working group has focused on creating a more generic, simplified language. To that end, they&#8217;ve refrained from adding numerous specialized elements to represent different types of content. They argue that the new <code>role</code> attribute provides a mechanism for including rich metadata, making specialized elements unnecessary. That said, a couple new elements were included:
+</p>
+<ul style="margin-top: 0.2em;">
+<li><code>blockcode</code> represents computer code.</li>
+<li><code>di</code> represents a group of related terms and definitions in a <code>dl</code> (definition list). This is useful for words with multiple definitions, or multiple spellings.</li>
+<li><code>handler</code> represents a scripted event handler, with a type attribute specifying the handler language. If the user agent doesn&#8217;t understand the language, the handler&#8217;s children are processed (otherwise they&#8217;re ignored). Handlers may be nested to provide multiple implementations in various languages.</li>
+</ul>
+<h4>Conclusion</h4>
+<p>
+Both proposals look promising, with lots of new features that address common web development problems. But neither specification is an official recommendation, and it&#8217;s likely to stay that way for some time.
+</p>
+<p>
+Despite its late start, the HTML 5 working group seems to have more industry support, and is further along in the recommendation process. Their goal is to have a complete spec, with multiple interoperable implementations, by late 2010 (as I said before, though, the W3C has already missed some milestones in the approval process). With industry support from most of the major browser vendors (the only notable exception being Microsoft) it&#8217;s likely that this specification will be implemented quickly and consistently once it&#8217;s reached a stable state.
+</p>
+<p>
+What everyone wants to avoid is another standards war. Fortunately, since both languages support XML namespaces (or, in the case of the HTML serialization of HTML 5, DOCTYPE switching) it&#8217;s unlikely that we&#8217;ll see the sort of browser dependent behavior we did in the 1990s. Standards wars aside, the future looks bright for web development. These new markup features and APIs will provide a rich environment for web development that should narrow the gap between Web and Desktop applications.</p>
+<img src="http://feeds.feedburner.com/~r/ImMike/~4/230452016" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://immike.net/blog/2008/02/06/xhtml-2-vs-html-5/feed/</wfw:commentRss>
+		<feedburner:origLink>http://immike.net/blog/2008/02/06/xhtml-2-vs-html-5/</feedburner:origLink></item>
+		<item>
+		<title>Why is VoIP cheaper than a standard telephone line?</title>
+		<link>http://feeds.feedburner.com/~r/ImMike/~3/145335726/</link>
+		<comments>http://immike.net/blog/2007/08/17/why-is-voip-cheaper-than-a-standard-telephone-line/#comments</comments>
+		<pubDate>Fri, 17 Aug 2007 23:35:25 +0000</pubDate>
+		<dc:creator>mike</dc:creator>
+		
+		<category><![CDATA[Networking]]></category>
+
+		<category><![CDATA[Random]]></category>
+
+		<category><![CDATA[ARPANET]]></category>
+
+		<category><![CDATA[ATM]]></category>
+
+		<category><![CDATA[Comcast]]></category>
+
+		<category><![CDATA[Internet]]></category>
+
+		<category><![CDATA[POTS]]></category>
+
+		<category><![CDATA[PSTN]]></category>
+
+		<category><![CDATA[VoIP]]></category>
+
+		<guid isPermaLink="false">http://immike.net/blog/2007/08/17/why-is-voip-cheaper-than-a-standard-telephone-line/</guid>
+		<description><![CDATA[Yesterday, Comcast came by to install their digital voice package at my apartment. Comcast has a special deal going on now: $24.95/month for 6 months, unlimited long distance. Skype&#8217;s even cheaper &#8212; $3/month for outgoing calls and $5/month for incoming (when they&#8217;re up). But here&#8217;s what I&#8217;m wondering: why&#8217;s it so cheap? Why is VoIP [...]]]></description>
+			<content:encoded><![CDATA[<p>Yesterday, Comcast came by to install their digital voice package at my apartment. Comcast has a special deal going on now: $24.95/month for 6 months, unlimited long distance. Skype&#8217;s even cheaper &#8212; $3/month for outgoing calls and $5/month for incoming (<a href="http://valleywag.com/tech/breakdowns/skype-experiencing-major-outage-290296.php">when they&#8217;re up</a>). But here&#8217;s what I&#8217;m wondering: why&#8217;s it so cheap? Why is VoIP cheaper than a traditional <em>plain old telephone service</em> (POTS) line? Or, put another way, why is a POTS line more expensive than a VoIP line? </p>
+<p>Let me take a moment to clarify. I understand why VoIP is cheaper for enterprise applications. Network convergence lowers the fixed cost of infrastructure, and commodity TCP/IP telecommunications equipment is a lot less expensive than specialized <em>Public Switched Telephone Network</em> (PSTN) equipment. What I&#8217;m wondering is why a single, residential POTS line (where fixed costs are already sunk, and there&#8217;s very little marginal cost) costs more than a VoIP connection.</p>
+<h4>In the beginning there was voice</h4>
+<p>Usually when I bring this up the first response people have is &#8220;duh, it&#8217;s the Internet &#8212; everything is cheaper online.&#8221; Competition, low overhead, etc, etc. But these people usually don&#8217;t know much about the history of the telcos, their relationship with computer networks, and the way data actually gets around the Internet. Even I had to go <a href="http://www.amazon.com/Computer-Networks-Internets-Fourth-Douglas/dp/0131433512">back to the books</a> for some of this stuff. But keep reading: understanding this history is critical to fully appreciating the mystery behind the VoIP vs. POTS pricing riddle. </p>
+<p>Long before computer networks became important, telephone companies were using digital communication. The <a href="http://en.wikipedia.org/wiki/Time-division_multiplexing#History">first digital voice circuit</a> was used in Chicago in 1962 (<a href="http://en.wikipedia.org/wiki/ARPANET">ARPANET</a>, the predecessor to today&#8217;s Internet, wasn&#8217;t up and running until 1969). The telcos used these digital circuits to send lots of voice connections over long distances &#8212; something that analog circuits were no good at &#8212; and they continue to use them for this purpose today.</p>
+<p>Voice communication has a few special characteristics. For one thing, it&#8217;s inherently real-time. You&#8217;d get annoyed if phone calls consisted of long periods of silence followed by several seconds of high-speed playback to catch up with the conversation on the other end. To prevent this from happening, digital voice circuits provide guaranteed <a href="http://en.wikipedia.org/wiki/Quality_of_service">Quality of Service</a> (QoS). Once a connection is provisioned, you&#8217;ll always get exactly the amount of bandwidth you need. It&#8217;s not just bandwidth though, <a href="http://en.wikipedia.org/wiki/Latency">latency</a> and <a href="http://en.wikipedia.org/wiki/Jitter">jitter</a> are also carefully controlled by using small, fixed sized data packets. The point is, these networks were specially designed to facilitate voice communication.</p>
+<h4>Then along came the Internet</h4>
+<p>When computer networks began popping up in the 1980s, the telcos wanted in. They already had a lot of infrastructure so they started looking at how they could send data over their existing trunk lines. They came up with a number of technologies with varying levels of success. But there was (and is) a problem: data networks are fundamentally different than voice networks. </p>
+<p>First, data doesn&#8217;t have the same real-time constraints voice has. Computers can handle bursty connections, so latency and jitter aren&#8217;t a big issue. Packets can arrive out of order, long after they&#8217;re requested, without causing problems. And in most cases bandwidth guarantees aren&#8217;t needed; it makes more sense to let a single computer consume all available bandwidth if it&#8217;s the only one active. </p>
+<p>With these things in mind, the <em>Internet Protocol</em> (IP) was designed to provide <a href="http://en.wikipedia.org/wiki/Best_effort_delivery">best effort delivery</a>. That means it doesn&#8217;t guarantee bandwidth, data frequently arrives out of order (or not at all), and latency and jitter are accepted. Sending real-time data (like voice communication) over IP is <em>very</em> inefficient, and a <em>huge</em> pain. But it&#8217;s great for sending normal data like web sites and email.</p>
+<p>Despite these differences, the telcos had infrastructure in place, so there was a lot of incentive to use it. After a few misses, <a href="http://en.wikipedia.org/wiki/Asynchronous_Transfer_Mode">Asynchronous Transfer Mode</a> (ATM) was designed as a compromise technology that could carry both voice and data. But, in reality, it&#8217;s much less efficient than a pure data network. The overhead for data transfers on ATM is more than 10%, compared to about one percent for an ethernet link running full-throttle. While gigabit ethernet is challenging the technology, to this day ATM is used on most Internet backbones. And here&#8217;s the clencher: long distance telephone calls go over the same lines.</p>
+<h4>Wrapping things up</h4>
+<p>So in the end, PSTN and VoIP phone calls go over the same network. Yet, for some reason, the technology that makes more efficient use of existing network resources (PSTN) is <em>more expensive</em>. VoIP layers voice on top of IP, which is not ideal for transmitting real-time data (no QoS, high jitter). IP is then layered on top of ATM, which is not ideal for transmitting data packets (high overhead). Despite all that inefficiency, VoIP providers still manage to charge less than their old school telco counterparts. What gives?</p>
+<img src="http://feeds.feedburner.com/~r/ImMike/~4/145335726" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://immike.net/blog/2007/08/17/why-is-voip-cheaper-than-a-standard-telephone-line/feed/</wfw:commentRss>
+		<feedburner:origLink>http://immike.net/blog/2007/08/17/why-is-voip-cheaper-than-a-standard-telephone-line/</feedburner:origLink></item>
+		<item>
+		<title>5 tools every PHP programmer should know about</title>
+		<link>http://feeds.feedburner.com/~r/ImMike/~3/144606292/</link>
+		<comments>http://immike.net/blog/2007/08/15/5-tools-every-php-programmer-should-know-about/#comments</comments>
+		<pubDate>Thu, 16 Aug 2007 01:21:44 +0000</pubDate>
+		<dc:creator>mike</dc:creator>
+		
+		<category><![CDATA[Lists]]></category>
+
+		<category><![CDATA[Web Development]]></category>
+
+		<category><![CDATA[MySQL]]></category>
+
+		<category><![CDATA[Phing]]></category>
+
+		<category><![CDATA[php]]></category>
+
+		<category><![CDATA[PHPUnit]]></category>
+
+		<category><![CDATA[tools]]></category>
+
+		<category><![CDATA[Xdebug]]></category>
+
+		<guid isPermaLink="false">http://immike.net/blog/2007/08/15/5-tools-every-php-programmer-should-know-about/</guid>
+		<description><![CDATA[After working on several large scale PHP projects, and writing a lot of PHP code, I&#8217;ve discovered a number of tools that improve code quality, streamline rollouts, and generally make life as a PHP developer a whole lot easier. Many of these tools probably deserve a post of their own. But, since some people aren&#8217;t [...]]]></description>
+			<content:encoded><![CDATA[<p><img src='http://immike.s3.amazonaws.com/wp-content/uploads/2007/08/php-tools.png' alt='PHP Tools' style='float: right; margin: 0.5em;' />After working on several large scale PHP projects, and writing a lot of PHP code, I&#8217;ve discovered a number of tools that improve code quality, streamline rollouts, and generally make life as a PHP developer a whole lot easier. Many of these tools probably deserve a post of their own. But, since some people aren&#8217;t even aware that these tools exist, I figured I&#8217;d start there. So, without further ado, here&#8217;s my list of tools that every PHP programmer should know about. </p>
+<h4>Phing - a project build system</h4>
+<p><img src='http://immike.s3.amazonaws.com/wp-content/uploads/2007/08/phing-logo.gif' alt='Phing Logo' style='float: left; margin: 0.5em;' /><a href="http://phing.info/trac/">Phing</a> is a project build system based on <a href="http://ant.apache.org/">Apache ANT</a>. The name is a recursive acronym, of sorts, that stands for <strong>PH</strong>ing <strong>I</strong>s <strong>N</strong>ot <strong>G</strong>NU make. Phing can do anything a traditional build system like <a href="http://www.gnu.org/software/make/">GNU make</a> can do, but without the steep learning curve.</p>
+<p>The idea behind phing (and other build tools) is to evaluate a set of dependencies, then execute a set of PHP classes to properly install and configure an application. The build process is controlled by a simple XML configuration file. Out of the box, phing can perform token replacement (e.g., to change include paths on your development and production systems), execute SQL, move and copy files, run shell scripts, and more. You can also create your own custom tasks by extending the &#8220;task&#8221; class included with the package. </p>
+<p>Phing is an invaluable tool for anyone who needs to deploy large scale PHP applications on more than a single server. But I&#8217;ve found it useful for simple scripts, too.</p>
+<h4>Xdebug - debugger and profiler tool</h4>
+<p><img src='http://immike.s3.amazonaws.com/wp-content/uploads/2007/08/xdebug-logo.png' alt='Xdebug Logo' style='float: left; margin: 0.5em;' /><a href="http://xdebug.org/">Xdebug</a> is a PHP extension that helps you debug and profile scripts. Among the most useful features of Xdebug are the new notice, warning, and error messages that are displayed after activation. If a script fails to execute properly, Xdebug will print a full <a href="http://xdebug.org/docs/stack_trace">stack trace</a> in the error message, along with function names, parameter values, source files, and line numbers. A welcome feature for developers who are tired of the skimpy error reports from a default PHP install. </p>
+<p>The extension has a number of more advanced features that allow developers to perform code coverage analysis, collect profiling information, and debug scripts interactively. The <a href="http://xdebug.org/docs/profiler">profiling functionality</a> is particularly useful. The profiler uses a common output file format, allowing you to use tools like <a href="http://kcachegrind.sourceforge.net/cgi-bin/show.cgi">KCacheGrind</a> to quickly find bottlenecks in your code. A good profiler is an essential tool for any serious developer, as it allows you to properly optimize your code while avoiding <a href="http://immike.net/blog/2007/05/30/premature-optimization-a-serious-problem/">the hazards of premature optimization</a>.</p>
+<h4>PHPUnit - unit testing framework</h4>
+<p><img src='http://immike.s3.amazonaws.com/wp-content/uploads/2007/08/phpunit-logo.gif' alt='PHPUnit logo' style='float: left; margin: 0.5em;' /><a href="http://www.phpunit.de/">PHPUnit</a> is a lightweight testing framework for PHP. It&#8217;s a complete port of <a href="http://www.junit.org/index.htm">JUnit 3.8.1</a> for PHP5, and is a member of the <a href="http://en.wikipedia.org/wiki/XUnit">xUnit</a> family of testing frameworks (which are based on a design by <a href="http://immike.net/blog/category/software-patterns/">software patterns</a> pioneer <a href="http://en.wikipedia.org/wiki/Kent_Beck">Kent Beck</a>).</p>
+<p>Unit tests form the foundation of several modern <a href="http://en.wikipedia.org/wiki/Agile_software_development">agile development methodologies</a>, making PHPUnit a vital tool for many large scale PHP projects. The tool can also be used to generate <a href="http://www.phpunit.de/pocket_guide/3.1/en/code-coverage-analysis.html">code coverage reports</a> using the Xdebug extension discussed earlier, and <a href="http://www.phpunit.de/pocket_guide/3.1/en/phing.html">integrates with phing</a> to automate testing.</p>
+<h4>Propel - object-relational mapping framework</h4>
+<p><img src='http://immike.s3.amazonaws.com/wp-content/uploads/2007/08/propel-logo.gif' alt='Propel Logo' style='float: left; margin: 0.5em;' /><a href="http://propel.phpdb.org/trac/">Propel</a> is an <a href="http://en.wikipedia.org/wiki/Object-relational_mapping">Object-Relational Mapping</a> (ORM) framework for PHP5 that was originally based on the <a href="http://db.apache.org/torque/">Apache Torque</a> project. It provides a sophisticated, but easy to use database abstraction layer that allows you to work with database entities the same way you work with normal classes and objects in PHP. Propel allows you to define your database in a simple XML format which it uses to construct the database, and generate static classes for use in your application.</p>
+<p>Propel is integrated into the popular <a href="http://www.symfony-project.com/">Symfony PHP framework</a> (<a href="http://propel.phpdb.org/trac/wiki/Propelled">among others</a>), which has helped keep the code base flexible, modular, and portable. The project has <a href="http://propel.phpdb.org/trac/wiki/Users/Documentation/1.2">excellent documentation</a>, and a great support community.</p>
+<h4>phpMyAdmin / phpPgAdmin - web-based database administration</h4>
+<p><img src='http://immike.s3.amazonaws.com/wp-content/uploads/2007/08/phpmyadmin-logo.gif' alt='phpMyAdmin Logo' style='float: left; margin: 0.5em;' />An oldy but a goody, <a href="http://www.phpmyadmin.net/home_page/index.php">phpMyAdmin</a> is one of the most useful administrative tools available for any database (along with it&#8217;s PostgreSQL and SQLite cousins <a href="http://phppgadmin.sourceforge.net/">phpPgAdmin</a> and <a href="http://www.phpguru.org/static/phpSQLiteAdmin.html">phpSQLiteAdmin</a>) . It&#8217;s useful for everything from constructing and altering databases to debugging applications and making backups. This is often the first thing I install after Apache, PHP and MySQL on a LAMP server. If you use MySQL, and somehow you haven&#8217;t heard of it, <a href="http://wiki.cihar.com/pma/Quick_Install">install it now</a>.</p>
+<h4>Other Stuff</h4>
+<p>There are tons of excellent tools that fill all sorts of niches, and help provide a rich environment for PHP developers &#8212; I wish I could mention them all. A few more that I&#8217;ve found useful myself are <a href="http://pear.php.net/package/PHP_Beautifier">PHP Beautifier</a>, <a href="http://spyc.sourceforge.net/">Spyc</a>, <a href="http://creole.phpdb.org/trac/">Creole</a>, and <a href="http://smarty.php.net/">Smarty</a>. I&#8217;m sure there are tons more that I either forgot, or have never heard of. So if you know of a great PHP development tool that I left out, please post a comment and let me (and everyone else) know about it!</p>
+<img src="http://feeds.feedburner.com/~r/ImMike/~4/144606292" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://immike.net/blog/2007/08/15/5-tools-every-php-programmer-should-know-about/feed/</wfw:commentRss>
+		<feedburner:origLink>http://immike.net/blog/2007/08/15/5-tools-every-php-programmer-should-know-about/</feedburner:origLink></item>
+		<item>
+		<title>Database Design: Choosing a Primary Key</title>
+		<link>http://feeds.feedburner.com/~r/ImMike/~3/144192830/</link>
+		<comments>http://immike.net/blog/2007/08/14/database-design-choosing-a-primary-key/#comments</comments>
+		<pubDate>Tue, 14 Aug 2007 23:10:53 +0000</pubDate>
+		<dc:creator>mike</dc:creator>
+		
+		<category><![CDATA[Database]]></category>
+
+		<category><![CDATA[Tutorials]]></category>
+
+		<category><![CDATA[Web Development]]></category>
+
+		<category><![CDATA[DBA]]></category>
+
+		<category><![CDATA[development]]></category>
+
+		<category><![CDATA[modeling]]></category>
+
+		<guid isPermaLink="false">http://immike.net/blog/2007/08/14/database-design-choosing-a-primary-key/</guid>
+		<description><![CDATA[A good model and a proper database design form the foundation of an information system. Building the data layer is often the first critical step towards implementing a new system, and getting it right requires attention to detail and a whole lot of careful planning. A database, like any computer system, is a model of [...]]]></description>
+			<content:encoded><![CDATA[<p><img src='http://immike.s3.amazonaws.com/wp-content/uploads/2007/08/erd.jpeg' alt='Entity-Relationship Diagram' style='float: right; margin: 0.5em;' />A good model and a proper database design form the foundation of an information system. Building the data layer is often the first critical step towards implementing a new system, and getting it right requires attention to detail and a whole lot of careful planning. A database, like any computer system, is a model of a small piece of the real world. And, like any model, it&#8217;s a narrow representation that disregards much of the complexity of the real thing. </p>
+<p>Modern database systems rely on the <a href="http://en.wikipedia.org/wiki/Relational_model">relational model</a> to store and retrieve data. The name comes from the relationship between columns <em>in a table</em> (not because you can relate tables to one another). In other words, <em>relational</em> means that several values that belong to the same row in a table are <em>related</em>. </p>
+<p>The primary key is an attribute (or a combination of attributes) that uniquely identifies a row. Though not strictly required by <a href="http://en.wikipedia.org/wiki/Relational_algebra">relational mathematics</a>, primary keys make it reasonably easy to deal with relational data programmatically. They make mapping relational data to an object-oriented model feasible, and allow applications to uniquely identify and manipulate each entity (row) in the database.</p>
+<h4>Natural Keys</h4>
+<p>The concept of a unique identifier is familiar in the real world &#8212; you use account numbers to identify credit cards, addresses to identify buildings or houses, etc. These are examples of <em>natural keys</em>, real-world identifiers that are used to uniquely identify real-world objects.</p>
+<p>In general, if the data you are modeling has a decent natural identifier you should use it as the primary key. That said, not all natural keys make good primary keys. The goal of the primary key is to uniquely <em>identify</em> an entity in your database. It does not have to <em>describe</em> the entity. The fact that a particular identifier can be used to describe an object in the real world doesn&#8217;t mean it&#8217;s a good primary key.</p>
+<p>There are a number of desirable (not necessarily required) primary key characteristics that natural identifiers sometimes lack:</p>
+<ul style='margin-top: -0.5em;'>
+<li><strong>Unique values</strong>: The primary key must uniquely identify each row in a table.</li>
+<li><strong>Non-intelligent</strong>: The primary key should not have <em>embedded semantic meaning</em>. In other words, it should not describe characteristics of the entity. A customer ID of <code>398237</code> is typically preferred over <code>Michael J. Malone</code>.</li>
+<li><strong>No change over time</strong>: The value of a primary key should never change. Changing a primary key value means you&#8217;re changing the identity of an entity, which doesn&#8217;t make sense. Non-intelligent keys are preferred because they are less likely to change.</li>
+<li><strong>Single-attribute</strong>: A primary key should have the minimum number of attributes possible. Single-attribute primary keys are desirable, because they&#8217;re easier for applications to work with, and they simplify the implementation of foreign keys.</li>
+<li><strong>Numeric</strong>: It&#8217;s easier to manage unique values when they are numeric. Most database systems have internal routines that facilitate auto-incrementing primary key attributes. While these facilities are useful, be careful not to use them as a crutch.</li>
+</ul>
+<p>For each of these rules, there are exceptions. For example, composite primary keys are particularly useful as identifiers in join tables, <a href="http://www.tonymarston.net/php-mysql/many-to-many.html">modeling a many-to-many relationship</a>. And an otherwise suitable single-value natural key should not be disregarded simply because it&#8217;s not numeric.</p>
+<h4>Surrogate Keys</h4>
+<p>When a natural key doesn&#8217;t exist, or when the natural key isn&#8217;t up to snuff, it&#8217;s time to consider using a <em>surrogate key</em> (also called a <em>synthetic key</em>) to uniquely identify entities. A surrogate primary key is typically a numeric, single-attribute key and is often auto-generated by the database system. While some DBAs continue to debate their use, surrogate primary keys are <a href="http://articles.techrepublic.com.com/5100-22-1045050.html">pretty much accepted practice</a> these days.</p>
+<p>A surrogate key is meaningless by itself. Thus, it has no embedded semantic meaning. The sole purpose of a surrogate key is to uniquely identify entities, and to facilitate relational operations like joins and filters. It&#8217;s a single, unique value that never has to change (because its only job is to identify the entity). Thus, it&#8217;s an ideal primary key.</p>
+<p>Because surrogate keys always consist of a single attribute, they can simplify business logic. If the column name for the primary key of a table can be derived from the table name, for example, a code generator can be used to built a primitive database abstraction layer. These keys, in combination with the table name, act as a globally unique identifier at runtime. This identifier can be used to build sophisticated caching mechanisms, facilitate <a href="http://www.martinfowler.com/eaaCatalog/lazyLoad.html">lazy-loading</a>, and simplify <a href="http://en.wikipedia.org/wiki/Serialization">serialization</a>.</p>
+<h4>Conclusion</h4>
+<p>As the foundation of many information systems, database design should be carefully planned and properly implemented. Choosing the proper primary key is a critical task in modeling relational data. If possible, entities should have a unique identifier that has meaning rather than some obscure sequential integer. But the natural identifier need not be the primary key &#8212; it&#8217;s perfectly acceptable to use a synthetic, or surrogate key as a tables primary key. That said, don&#8217;t use auto-generated primary keys in order to avoid identifying and properly handling the natural keys present in your data.</p>
+<img src="http://feeds.feedburner.com/~r/ImMike/~4/144192830" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://immike.net/blog/2007/08/14/database-design-choosing-a-primary-key/feed/</wfw:commentRss>
+		<feedburner:origLink>http://immike.net/blog/2007/08/14/database-design-choosing-a-primary-key/</feedburner:origLink></item>
+		<item>
+		<title>Scaling WordPress</title>
+		<link>http://feeds.feedburner.com/~r/ImMike/~3/143872914/</link>
+		<comments>http://immike.net/blog/2007/08/13/scaling-wordpress/#comments</comments>
+		<pubDate>Tue, 14 Aug 2007 02:47:16 +0000</pubDate>
+		<dc:creator>mike</dc:creator>
+		
+		<category><![CDATA[Blogging]]></category>
+
+		<category><![CDATA[Web Development]]></category>
+
+		<category><![CDATA[apache]]></category>
+
+		<category><![CDATA[digg]]></category>
+
+		<category><![CDATA[scaling]]></category>
+
+		<category><![CDATA[wordpress]]></category>
+
+		<category><![CDATA[WP-Cache]]></category>
+
+		<guid isPermaLink="false">http://immike.net/blog/2007/08/13/scaling-wordpress/</guid>
+		<description><![CDATA[WordPress seems to have a bad reputation when it comes to scalability. Maybe it&#8217;s deserved, since a default WordPress installation doesn&#8217;t really scale well. But making WordPress scale isn&#8217;t hard. I recently hit the Digg home page and got roughly 70,000 pageviews in under 12 hours. Another post hit the home page later the same [...]]]></description>
+			<content:encoded><![CDATA[<p><img src='http://immike.s3.amazonaws.com/wp-content/uploads/2007/08/wp-digg.png' alt='WordPress vs. Digg' style='float: right; margin: 0.5em;' />WordPress seems to have a bad reputation when it comes to scalability. Maybe it&#8217;s deserved, since a default WordPress installation doesn&#8217;t really scale well. But making WordPress scale isn&#8217;t hard. I recently <a href="http://digg.com/programming/Why_Flash_Sucks">hit the Digg home page</a> and got roughly 70,000 pageviews in under 12 hours. <a href="http://digg.com/linux_unix/What_is_the_Completely_Fair_Scheduler">Another post</a> hit the home page later the same day, and another 10,000 clickthroughs followed. As a result, I&#8217;ve <a href="http://immike.net/blog/2007/08/01/what-is-the-completely-fair-scheduler/#comment-2423">been asked</a> by a few people how I managed to keep my site up under that sort of stress. Honestly, I haven&#8217;t done anything that fancy. But for future reference I figured I&#8217;d document my configuration, and let people in on one trick that saved my butt. </p>
+<p>First, I run <a href="http://mnm.uib.es/gallir/wp-cache-2/">WP-Cache</a>. I started using WP-Cache after <a href="http://immike.net/blog/2007/04/11/measuring-the-digg-effect/">my first Digg experience</a> and, for me, <a href="http://immike.net/blog/2007/05/07/the-showdown-apache-vs-lighttpd/">the performance improvements</a> far outweigh the <a href="http://immike.net/blog/2007/05/03/making-popularity-contest-play-nice-with-wp-cache/">compatibility issues</a> that may arise. If you&#8217;re a real <a href="http://paulstamatiou.com/2007/07/17/on-being-a-website-performance-junkie/">performance junkie</a> you may be interested in a <a href="http://chrisstormer.com/2006/07/08/bad-behavior-wp-cache-gzip-solution/">simple hack to enable gzip</a> with WP-Cache. </p>
+<p>If you have some content that must be fully dynamic (like the pageview counters that I recently added here under the post title) you can take advantage of the <em>mfunc</em> functionality built into WP-Cache. To include some dynamic code in a cached page, use the following syntax:</p>
+<pre>
+&lt;!--mfunc function_name(&#39;parameter&#39;); --&gt;
+&lt;?php function_name(&#39;parameter&#39;); ?&gt;
+&lt;!--/mfunc--&gt;
+</pre>
+<p>Caching a page, then selectively adding dynamic functionality where it&#8217;s necessary will drastically reduce <a href="http://immike.net/blog/2007/07/27/what-exactly-is-a-load-average/">the load</a> on your server.</p>
+<p>This site is hosted on a dedicated server, along with <a href="http://vino2vino.com">another project</a> I&#8217;m working on. A second server handles the database back-end for both sites. This setup is capable of handling a tremendous amount of traffic. The bottleneck, surprisingly enough, is the front-end web server (not the database). </p>
+<p>In retrospect, it probably would have been wise to upgrade the front-end server to at least 1GB of ram (it currently has only 512MB). With Apache processes running upwards of 20MB each, RAM limits the number of child processes that can be spawned before the system starts <a href="http://en.wikipedia.org/wiki/Thrash_%28computer_science%29">thrashing</a>. And since an Apache process can only handle one connection at a time, the number of Apache child processes places an upper bound on the number of concurrent requests the server can handle. Additional requests are backlogged, and when the backlog builds up system performance suffers.</p>
+<p>I&#8217;ve been experimenting with using <a href="http://www.backhand.org/mod_backhand/">mod_backhand</a> in combination with <a href="http://aws.amazon.com/ec2">Amazon EC2</a> to offload some traffic from my primary web server to an elastic compute cloud during periods of heavy traffic. My success with <a href="http://aws.amazon.com/s3">Amazon S3</a> has fueled my interest in EC2, but I&#8217;m still skeptical of EC2&#8217;s ability scale rapidly enough to handle traffic spikes (it takes a minute or two to provision an EC2 server &#8212; in that time, a front page story on Digg could send upwards of 1,000 page requests your way).</p>
+<p>Finally, my little trick. If you&#8217;re not running WP-Cache, and one of your posts is about to go viral, try caching the post manually. It&#8217;s a simple process:</p>
+<ol>
+<li>Create a static version of your post using a tool like <a href="http://www.gnu.org/software/wget/">wget</a>, or by saving the page in your browser.</li>
+<li>Duplicate the directory structure that you see in the post URL under the root web directory on your server (e.g., <code>http://immike.net/blog/08/13/post-title</code> would be something like <code>/var/www/blog/08/13/post-title</code>).</li>
+<li>Name the static copy of the post <code>index.html</code> and store it in your newly created directory.</li>
+</ol>
+<p>If you&#8217;re using the <a href="http://codex.wordpress.org/Using_Permalinks">standard WordPress rewrite rules</a> (the ones WordPress auto-generates), static HTML files will override dynamically generated content. Thus, as soon as the static copy of your post is in place, Apache will start serving it instead of passing requests off to WordPress. Even on modest hardware Apache can handle <a href="http://immike.net/blog/2007/05/07/the-showdown-apache-vs-lighttpd/">hundreds of requests for static content per second</a>, so this trick should keep your server up through the storm. Once things calm down, simply remove the files/directories and WordPress will take over once again.</p>
+<img src="http://feeds.feedburner.com/~r/ImMike/~4/143872914" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://immike.net/blog/2007/08/13/scaling-wordpress/feed/</wfw:commentRss>
+		<feedburner:origLink>http://immike.net/blog/2007/08/13/scaling-wordpress/</feedburner:origLink></item>
+		<item>
+		<title>SCO Doesn’t Own UNIX</title>
+		<link>http://feeds.feedburner.com/~r/ImMike/~3/142939956/</link>
+		<comments>http://immike.net/blog/2007/08/10/sco-doesnt-own-unix/#comments</comments>
+		<pubDate>Sat, 11 Aug 2007 01:53:06 +0000</pubDate>
+		<dc:creator>mike</dc:creator>
+		
+		<category><![CDATA[Linux]]></category>
+
+		<category><![CDATA[*nix]]></category>
+
+		<category><![CDATA[IBM]]></category>
+
+		<category><![CDATA[lawsuit]]></category>
+
+		<category><![CDATA[legal]]></category>
+
+		<category><![CDATA[Novell]]></category>
+
+		<category><![CDATA[SCO]]></category>
+
+		<guid isPermaLink="false">http://immike.net/blog/2007/08/10/sco-doesnt-own-unix/</guid>
+		<description><![CDATA[Following nearly five years of FUD and barratry, Judge Dale Kimball has issued a 102-page ruling [via Groklaw] concluding that &#8220;Novell is the owner of the UNIX and UnixWare copyrights.&#8221; Furthermore, the court found that SCO owes Novell quite a bit of money &#8212; &#8220;[B]ecause a portion of SCO&#8217;s 2003 Sun and Microsoft Agreements indisputably [...]]]></description>
+			<content:encoded><![CDATA[<p>Following nearly <a href="http://en.wikipedia.org/wiki/SCO-Linux_controversies"><em>five years</em> of FUD and barratry</a>, Judge Dale Kimball has issued a <a href="http://www.groklaw.net/pdf/Novell-377.pdf">102-page ruling</a> [via <a href="http://www.groklaw.net/article.php?story=20070810165237718">Groklaw</a>] concluding that &#8220;Novell is the owner of the UNIX and UnixWare copyrights.&#8221; Furthermore, the court found that SCO owes Novell quite a bit of money &#8212; &#8220;[B]ecause a portion of SCO&#8217;s 2003 Sun and Microsoft Agreements indisputably licenses SVRX products&#8230; SCO is obligated&#8230; to account for and pass through to Novell the appropriate portion relating to the license of SVRX products.&#8221; </p>
+<p>While this judgement essentially renders all of SCO&#8217;s claims against Novell moot, the battle continues in the ongoing <a href="http://en.wikipedia.org/wiki/SCO_v._IBM">SCO vs. IBM</a> case. That said, SCO is suing IBM for copyright infringement. And since today&#8217;s ruling found Novell the rightful owner of UNIX IP the case against IBM is pretty much over too (it&#8217;ll be hard for SCO to win a copyright infringement suite when they don&#8217;t actually own the copyright in question).</p>
+<p>The amazing thing is, after all this time SCO hasn&#8217;t shown any convincing evidence to back up their claims. After raising <a href="http://www.linux-watch.com/news/NS6700440248.html">millions of dollars from Sun and Microsoft</a> SCO had a large enough war chest to drag a baseless lawsuit out for years. I&#8217;m glad it&#8217;s (mostly) over, but it&#8217;s still frustrating that it happened at all!</p>
+<img src="http://feeds.feedburner.com/~r/ImMike/~4/142939956" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://immike.net/blog/2007/08/10/sco-doesnt-own-unix/feed/</wfw:commentRss>
+		<feedburner:origLink>http://immike.net/blog/2007/08/10/sco-doesnt-own-unix/</feedburner:origLink></item>
+		<item>
+		<title>DNS Rebinding Revisited</title>
+		<link>http://feeds.feedburner.com/~r/ImMike/~3/142158941/</link>
+		<comments>http://immike.net/blog/2007/08/08/dns-rebinding-revisited/#comments</comments>
+		<pubDate>Wed, 08 Aug 2007 22:58:39 +0000</pubDate>
+		<dc:creator>mike</dc:creator>
+		
+		<category><![CDATA[Security]]></category>
+
+		<category><![CDATA[Web Development]]></category>
+
+		<guid isPermaLink="false">http://immike.net/blog/2007/08/08/dns-rebinding-revisited/</guid>
+		<description><![CDATA[I wrote last week about how DNS rebinding can bypass browser same origin policies. Since then I found a paper titled Protecting Browsers from DNS Rebinding Attacks that describes rebinding attacks in greater detail. It turns out that there are several varieties of rebinding attacks, and a couple of proof-of-concept DNS rebinding demonstrations already exist. [...]]]></description>
+			<content:encoded><![CDATA[<p>I wrote last week about how <a href="http://immike.net/blog/2007/08/02/dns-rebinding-can-bypass-browser-same-origin-policy/">DNS rebinding can bypass browser same origin policies</a>. Since then I found a paper titled <em><a href="http://crypto.stanford.edu/dns/">Protecting Browsers from DNS Rebinding Attacks</a></em> that describes rebinding attacks in greater detail. It turns out that there are several varieties of rebinding attacks, and a couple of proof-of-concept <a href="http://crypto.stanford.edu/dns/#links">DNS rebinding demonstrations</a> already exist. </p>
+<p>To perform a DNS rebinding attack, an attacker initially answers DNS queries for their domain with the IP address of their server, and a very short time-to-live (TTL). Using javascript, or some other mechanism, the attacker initiates a second request to their domain from the victim&#8217;s machine. Since the TTL has expired, another DNS query is sent to the attacker&#8217;s DNS server. This time, the server responds with the IP address of a target server that the attacker wishes to connect to (e.g., an internal web server).</p>
+<p>Modern browsers implement a security mechanism called <em>DNS pinning</em> as a partial defense against DNS rebinding attacks. Once a browser resolves a host name to an IP address, the browser caches the result for a fixed duration regardless of the TTL (the cache duration varies quite a bit: 1 second for Safari 2, 120 seconds for Firefox 2, and 30 minutes for IE7). </p>
+<p>But browser <strong>plug-ins maintain their own pin databases</strong>, creating a new class of <em>multi-pin</em> vulnerabilities. After the browser resolves an attackers host name, subsequent network connections from Flash or Java LiveConnect will trigger additional DNS queries. Thus, an attacker can pin one IP address to the browser, while pinning a second address to Java or Flash. Browsers allow inter-technology communication between plug-ins and the browser, so transmitting data between components is trivial.</p>
+<p>Moreover, the <a href="http://crypto.stanford.edu/dns/">Stanford research paper</a> describes a number of techniques for bypassing the browser&#8217;s internal pinning mechanism, and performing rebinding attacks without relying on third-party plug-ins. It turns out that an attacker &#8220;can cause the browser to release its pin after as little as <em>one second</em> by forcing a connection to the current IP to fail, for example by including the element &lt;img src=&#8221;http://attacker.com:81/&#8221;&gt;.&#8221;</p>
+<p>If you&#8217;re still questioning whether this sort of attack could be carried out in the real-world, the researchers at Stanford &#8220;tested DNS rebinding experimentally by running a Flash 9 advertisement on a minor advertising network&#8230; The experiment used two machines in our laboratory, an attacker and a target. The attacker ran a custom authoritative DNS server for <strong>dnsrebinding.net</strong>, a custom Flash policy server, and an Apache web server hosting the advertisement. The target ran an Apache web server to log successful attacks.&#8221; The results show that the experiment was &#8220;successful on 30,636 (60.1%) impressions and 27,480 unique IP addresses.&#8221; After running the experiment for three nights, the researchers &#8220;obtained 100.3 machine-days of network access.&#8221;</p>
+<p>That&#8217;s proof enough for me, but for you seeing-is-believing folks, make sure you check out the proof of concept attacks for <a href="http://www.jumperz.net/index.php?i=2&#038;a=1&#038;b=7">your browser</a>, <a href="http://www.jumperz.net/index.php?i=2&#038;a=1&#038;b=9">Java LiveConnect</a>, and <a href="http://www.jumperz.net/index.php?i=2&#038;a=3&#038;b=3">Flash 9</a>.</p>
+<img src="http://feeds.feedburner.com/~r/ImMike/~4/142158941" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://immike.net/blog/2007/08/08/dns-rebinding-revisited/feed/</wfw:commentRss>
+		<feedburner:origLink>http://immike.net/blog/2007/08/08/dns-rebinding-revisited/</feedburner:origLink></item>
+		<item>
+		<title>Site Redesign</title>
+		<link>http://feeds.feedburner.com/~r/ImMike/~3/141713492/</link>
+		<comments>http://immike.net/blog/2007/08/07/site-redesign/#comments</comments>
+		<pubDate>Tue, 07 Aug 2007 19:21:05 +0000</pubDate>
+		<dc:creator>mike</dc:creator>
+		
+		<category><![CDATA[Blogging]]></category>
+
+		<category><![CDATA[Random]]></category>
+
+		<guid isPermaLink="false">http://immike.net/blog/2007/08/07/site-redesign/</guid>
+		<description><![CDATA[I&#8217;ve had &#8220;redesign blog&#8221; on my to-do list for more than a month now. Over the weekend I finally got around to doing something about it [screenshot]. The stock WordPress theme I&#8217;ve been using since I launched my blog is great, but I&#8217;ve noticed it showing up on more and more sites and I wanted [...]]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve had &#8220;redesign blog&#8221; on my to-do list for more than a month now. Over the weekend I finally got around to doing something about it [<a href='http://immike.s3.amazonaws.com/wp-content/uploads/2007/08/immike_screenshot.png' title='I’m Mike Screenshot'>screenshot</a>]. The <a href="http://www.ndesign-studio.com/resources/wp-themes/glossyblue/">stock WordPress theme</a> I&#8217;ve been using since I launched my blog is great, but I&#8217;ve noticed it showing up on more and more sites and I wanted something unique. The changes I made are evolutionary, not revolutionary. And I&#8217;m the first to admit that I&#8217;m not the best designer around, but I think it&#8217;ll do for now. </p>
+<p><a href='http://immike.s3.amazonaws.com/wp-content/uploads/2007/08/immike_screenshot.png' title='I’m Mike Screenshot'><img src='http://immike.s3.amazonaws.com/wp-content/uploads/2007/08/immike_cropped_sized.png' alt='I’m Mike Screenshot' style="border: none; margin: 0 auto;" /></a></p>
+<p>I&#8217;ll probably be making more changes in the near future. I have some ideas for post stats I&#8217;d like to show, and other navigational features I&#8217;d like to implement. In the meantime I&#8217;ll be working out any issues that come up with the changes that have already been made. If you notice any bugs with the CSS/XHTML please let me know in a comment or via <a href="http://immike.net/blog/contact/">my contact page</a>.</p>
+<p>Finally, I&#8217;d like to thank <a href="http://ryanjpowell.com/">Ryan Powell</a> for creating the header image (and helping me out with design ideas for the Twitter bar), <a href="http://paulstamatiou.com/">Paul Stamatiou</a> for helpful feedback and comments as I worked through creating the new layout, and <a href="http://andrewmager.com/">Andrew Mager</a> (and everyone else who has seen the new design) for not being too critical when I asked for their opinions!</p>
+<img src="http://feeds.feedburner.com/~r/ImMike/~4/141713492" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://immike.net/blog/2007/08/07/site-redesign/feed/</wfw:commentRss>
+		<feedburner:origLink>http://immike.net/blog/2007/08/07/site-redesign/</feedburner:origLink></item>
+		<item>
+		<title>Single line of HTML crashes IE 6</title>
+		<link>http://feeds.feedburner.com/~r/ImMike/~3/141361983/</link>
+		<comments>http://immike.net/blog/2007/08/06/single-line-of-html-crashes-ie-6/#comments</comments>
+		<pubDate>Mon, 06 Aug 2007 22:05:23 +0000</pubDate>
+		<dc:creator>mike</dc:creator>
+		
+		<category><![CDATA[Web Development]]></category>
+
+		<category><![CDATA[Microsoft]]></category>
+
+		<guid isPermaLink="false">http://immike.net/blog/2007/08/06/single-line-of-html-crashes-ie-6/</guid>
+		<description><![CDATA[A Japanese blogger who goes by the name Hamachiya2 has discovered a single line of HTML and CSS that crashes IE 6. The line is:
+
+&#60;style&#62;&#42;{position:relative}&#60;/style&#62;&#60;table&#62;&#60;input&#62;&#60;/table&#62;
+
+If you&#8217;re brave, you can click here to try it out. The code is rendered correctly in Firefox, Safari and Opera (didn&#8217;t get a chance to try any other browsers, but [...]]]></description>
+			<content:encoded><![CDATA[<p>A Japanese blogger who goes by the name <a href="http://d.hatena.ne.jp/Hamachiya2/20070804/browser_crasher">Hamachiya2</a> has discovered a single line of HTML and CSS that crashes IE 6. The line is:</p>
+<pre>
+&lt;style&gt;&#42;{position:relative}&lt;/style&gt;&lt;table&gt;&lt;input&gt;&lt;/table&gt;
+</pre>
+<p>If you&#8217;re brave, you can <a href="http://immike.net/scripts/ie_crash.html">click here to try it out</a>. The code is rendered correctly in Firefox, Safari and Opera (didn&#8217;t get a chance to try any other browsers, but presumably they work too). But in IE 6 it raises a fatal error in mshtml.dll.</p>
+<img src="http://feeds.feedburner.com/~r/ImMike/~4/141361983" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://immike.net/blog/2007/08/06/single-line-of-html-crashes-ie-6/feed/</wfw:commentRss>
+		<feedburner:origLink>http://immike.net/blog/2007/08/06/single-line-of-html-crashes-ie-6/</feedburner:origLink></item>
+		<item>
+		<title>Password free remote login and other SSH tips</title>
+		<link>http://feeds.feedburner.com/~r/ImMike/~3/141322628/</link>
+		<comments>http://immike.net/blog/2007/08/06/password-free-remote-login-and-other-ssh-tips/#comments</comments>
+		<pubDate>Mon, 06 Aug 2007 19:35:40 +0000</pubDate>
+		<dc:creator>mike</dc:creator>
+		
+		<category><![CDATA[Linux]]></category>
+
+		<category><![CDATA[Security]]></category>
+
+		<category><![CDATA[*nix]]></category>
+
+		<guid isPermaLink="false">http://immike.net/blog/2007/08/06/password-free-remote-login-and-other-ssh-tips/</guid>
+		<description><![CDATA[I typically have four or five terminal windows open, and I&#8217;m almost always logged in to at least three servers (my dev box, production box, and database server). It&#8217;s a huge pain to log back into all these sessions whenever my connection is dropped. To keep myself sane, I use a couple of tricks to [...]]]></description>
+			<content:encoded><![CDATA[<p>I typically have four or five terminal windows open, and I&#8217;m almost always logged in to at least three servers (my dev box, production box, and database server). It&#8217;s a huge pain to log back into all these sessions whenever my connection is dropped. To keep myself sane, I use a couple of tricks to keep timeouts from occurring, and to streamline the login process when they do. </p>
+<h4>Keep connections alive</h4>
+<p>My home network consists of a cheap <a href="http://en.wikipedia.org/wiki/Network_address_translation">NAT</a> firewall/wireless access point connected to a cable modem. In order to route incoming traffic properly, NAT devices keep a table of active connections in memory. As a result, NAT firewalls have a nasty habit of timing out idle sessions to keep their state tables clean. Thankfully, SSH has a built in keepalive mechanism that solves the problem.</p>
+<p>You can turn SSH keepalives on at the system level, or on a per user basis. Single user configuration options are stored in <code>~/.ssh/config</code>. The system wide configuration options are typically found in <code>/etc/ssh_config</code> (on Debian systems, it&#8217;s <code>/etc/ssh/ssh_config</code>). To enable keepalives, open the config file in your favorite text editor and add the following lines:</p>
+<pre>
+Host *
+  ServerAliveInterval 60
+</pre>
+<p>The numeric argument specifies the number of seconds between keepalive requests on idle connections. The Host line lets you restrict declarations to a particular host, or group of hosts. A single &#8216;*&#8217; is a wildcard pattern that matches any host, so keepalive requests will be sent for all sessions.</p>
+<h4>Password free login</h4>
+<p>Even with keepalive requests turned on, your session will time out occasionally (e.g., when you lose your internet connection). You can save yourself a bit of time by adding your workstation&#8217;s SSH key to the <code>authorized_keys</code> file on each remote system you login to.</p>
+<p>First, generate an SSH public/private key pair on your local system (if you already have a key pair you can skip this step). When prompted for a passphrase, leave it blank.</p>
+<pre>
+local$ ssh-keygen -t rsa
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/mmalone/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /Users/mmalone/.ssh/id_rsa.
+Your public key has been saved in /Users/mmalone/.ssh/id_rsa.pub.
+The key fingerprint is:
+4d:d0:f4:f2:6c:3a:ac:b4:dc:c7:71:2b:b8:b7:5a:7c
+mmalone@michael-malones-computer.local
+</pre>
+<p>Next, copy the public key from your local system to the system you&#8217;re logging into (if the ~/.ssh directory does not exist on the remote system, you may have to create it: <code>mkdir ~/.ssh</code>).</p>
+<pre>
+local$ cat ~/.ssh/id_rsa.pub | ssh mmalone@immike.net \\
+> 'cat >> .ssh/authorized_keys'
+Password:
+</pre>
+<p>All done. Now you can log into your remote system without a password:</p>
+<pre>
+local$ ssh mmalone@immike.net
+Linux www 2.6.18-3-686 #1 SMP Sun Dec 10 19:37:06 UTC 2006 i686
+
+mmalone@www:~$
+</pre>
+<p>The same public key can be used on any number of remote servers, so you can repeat steps two and three on any other servers you regularly use.</p>
+<img src="http://feeds.feedburner.com/~r/ImMike/~4/141322628" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://immike.net/blog/2007/08/06/password-free-remote-login-and-other-ssh-tips/feed/</wfw:commentRss>
+		<feedburner:origLink>http://immike.net/blog/2007/08/06/password-free-remote-login-and-other-ssh-tips/</feedburner:origLink></item>
+		<item>
+		<title>Threads vs. Processes: They’re not the same thing!</title>
+		<link>http://feeds.feedburner.com/~r/ImMike/~3/140735475/</link>
+		<comments>http://immike.net/blog/2007/08/04/threads-vs-processes-theyre-not-the-same-thing/#comments</comments>
+		<pubDate>Sat, 04 Aug 2007 22:10:57 +0000</pubDate>
+		<dc:creator>mike</dc:creator>
+		
+		<category><![CDATA[Linux]]></category>
+
+		<category><![CDATA[Programming]]></category>
+
+		<category><![CDATA[*nix]]></category>
+
+		<guid isPermaLink="false">http://immike.net/blog/2007/08/04/threads-vs-processes-theyre-not-the-same-thing/</guid>
+		<description><![CDATA[I read a lot of tech-related blogs and other tech-news, and I&#8217;ve caught a number of very talented programmers and intelligent technologists using the terms thread and process interchangibly. Forgive me for being pedantic, but they&#8217;re not the same thing! It&#8217;s true that threads and processes are very similar: they&#8217;re both methods of parallelizing an [...]]]></description>
+			<content:encoded><![CDATA[<p><img src='http://immike.s3.amazonaws.com/wp-content/uploads/2007/08/process-vs-thread-cropped.png' alt='Process vs. Thread' style='margin: 0.5em; float: right;' />I read a lot of tech-related blogs and other tech-news, and I&#8217;ve caught a number of very talented programmers and intelligent technologists using the terms <em>thread</em> and <em>process</em> interchangibly. Forgive me for being pedantic, but they&#8217;re not the same thing! It&#8217;s true that threads and processes are very similar: they&#8217;re both methods of parallelizing an application. But the similarities pretty much stop there. </p>
+<p>A process is usually defined as an instance of a program that is being executed, including all variables and other information describing the program&#8217;s state.  Processes have a life cycle: they are spawned, optionally generate one or more child processes, and eventually die. Each process is an independent entity to which system resources (CPU time, memory, etc.) are allocated. And each processes is executed in a separate <a href="http://en.wikipedia.org/wiki/Address_space">address space</a>. Thus, one process cannot access variables or other data structures that are defined in another process. If two processes want to communicate, they have to use <a href="http://en.wikipedia.org/wiki/Inter-process_communication">inter-process communication</a> mechanisms like <a href="http://en.wikipedia.org/wiki/Computer_file">files</a>, <a href="http://en.wikipedia.org/wiki/Pipeline_%28Unix%29">pipes</a>, or <a href="http://en.wikipedia.org/wiki/Berkeley_sockets">sockets</a>.</p>
+<p>The term <em>thread</em> is short for a <em>thread of execution</em>, and refers to a particular execution path through a process. Threads and processes work differently on different operating systems but, in general, multiple threads can share the state information of a single process. Since threads share memory and other system resources, they can communicate directly via variables and other memory structures. And because threads can share a single address space, context switching between threads is faster than switching between processes.</p>
+<p>Many modern applications take advantage of multithreading. In particular, applications that perform a lot of I/O &#8212; like web servers and databases &#8212; can drastically improve performance by implementing a multithreaded execution model. On a multiprocessor system, multiple threads of execution can even run simultaneously within a single process. Unfortunately, the threading abstractions in modern operating systems can be <a href="http://blogs.sun.com/rvs/entry/the_problem_with_threads">hard to understand</a>, and are <a href="http://immike.net/blog/2007/04/08/fork-php-and-speed-up-your-scripts/">unavailable in certain programming languages</a>.</p>
+<p>So, one more time. A process can be thought of as a thread, plus an address space, file descriptors, and a bunch of other data. A single process can consist of multiple threads, and when one thread modifies a process resource, the change is immediately visible to sibling threads. On the other hand, processes have their own address spaces, and are unable to communicate directly. Processes and threads are not the same thing.</p>
+<img src="http://feeds.feedburner.com/~r/ImMike/~4/140735475" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://immike.net/blog/2007/08/04/threads-vs-processes-theyre-not-the-same-thing/feed/</wfw:commentRss>
+		<feedburner:origLink>http://immike.net/blog/2007/08/04/threads-vs-processes-theyre-not-the-same-thing/</feedburner:origLink></item>
+		<item>
+		<title>DNS rebinding can bypass browser same origin policy</title>
+		<link>http://feeds.feedburner.com/~r/ImMike/~3/140112633/</link>
+		<comments>http://immike.net/blog/2007/08/02/dns-rebinding-can-bypass-browser-same-origin-policy/#comments</comments>
+		<pubDate>Thu, 02 Aug 2007 23:28:55 +0000</pubDate>
+		<dc:creator>mike</dc:creator>
+		
+		<category><![CDATA[Security]]></category>
+
+		<category><![CDATA[Web Development]]></category>
+
+		<guid isPermaLink="false">http://immike.net/blog/2007/08/02/dns-rebinding-can-bypass-browser-same-origin-policy/</guid>
+		<description><![CDATA[Artur Bergman posted an interesting story yesterday on O&#8217;Reilly Radar titled Your browser is a tcp/ip relay. In the post, Bergman explains a new technique that could allow malicious code to bypass the same origin browser security model. The article credits security researcher Dan Kaminsky with discovering the loophole, though it appears to have been [...]]]></description>
+			<content:encoded><![CDATA[<p>Artur Bergman posted an interesting story yesterday on O&#8217;Reilly Radar titled <a href="http://radar.oreilly.com/archives/2007/08/your_web_browse.html">Your browser is a tcp/ip relay</a>. In the post, Bergman explains a new technique that could allow malicious code to bypass the <a href="http://en.wikipedia.org/wiki/Same_origin_policy">same origin</a> browser security model. The article credits security researcher <a href="http://www.doxpara.com/">Dan Kaminsky</a> with discovering the loophole, though it appears to have <a href="http://sla.ckers.org/forum/read.php?6,4511#msg-4539">been around for a while</a>. </p>
+<p>The attack is fairly simple (to explain, at least). The attacker first configures their <a href="http://en.wikipedia.org/wiki/Domain_name_system">DNS</a> server so that query results have a very short time to live (TTL) &#8212; say 10 seconds. The victim connects to attacker.com, and loads the site as usual. The DNS server is immediately reconfigured to resolve attacker.com to a different IP address (say, 10.0.0.1). After the TTL expires, JavaScript on the victim&#8217;s browser makes another request to attacker.com, in compliance with the same origin policy. But this time attacker.com resolves to an internal IP address (10.0.0.1), allowing the attacker to remotely access a private network.</p>
+<p>I spoke briefly to <a href="http://www.opendns.com/">OpenDNS</a> founder <a href="http://www.substantiated.info/">David Ulevitch</a> about the exploit. Though the concept is fairly simple, we agreed that it would be difficult to perform this sort of attack in practice. An attacker would need to have intimate knowledge of the victims internal network, or rely on Flash or other web technologies to perform a network scan. Moreover, an attack would end as soon as the victim closed their web browser.</p>
+<p>Nevertheless, a vulnerability clearly exists, and it could be difficult to resolve. Many web sites rely on <a href="http://en.wikipedia.org/wiki/Round_robin_DNS">round robin DNS</a> configurations for load distribution. Since round robin configurations may legitimately return different IP addresses for the same host name, distinguishing malicious DNS rebinding attacks from round robin configurations will be difficult, if not impossible to do.</p>
+<img src="http://feeds.feedburner.com/~r/ImMike/~4/140112633" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://immike.net/blog/2007/08/02/dns-rebinding-can-bypass-browser-same-origin-policy/feed/</wfw:commentRss>
+		<feedburner:origLink>http://immike.net/blog/2007/08/02/dns-rebinding-can-bypass-browser-same-origin-policy/</feedburner:origLink></item>
+		<item>
+		<title>What is the Completely Fair Scheduler?</title>
+		<link>http://feeds.feedburner.com/~r/ImMike/~3/139763980/</link>
+		<comments>http://immike.net/blog/2007/08/01/what-is-the-completely-fair-scheduler/#comments</comments>
+		<pubDate>Thu, 02 Aug 2007 00:54:53 +0000</pubDate>
+		<dc:creator>mike</dc:creator>
+		
+		<category><![CDATA[Linux]]></category>
+
+		<category><![CDATA[Programming]]></category>
+
+		<guid isPermaLink="false">http://immike.net/blog/2007/08/01/what-is-the-completely-fair-scheduler/</guid>
+		<description><![CDATA[If you&#8217;ve been following Linux kernel news then you&#8217;ve probably heard about the new Completely Fair Scheduler that has been merged into the upcoming 2.6.23 kernel release. It&#8217;s been a while since I&#8217;ve done much Linux kernel hacking, so the initial announcement was mostly over my head. After reading about the new scheduler in several [...]]]></description>
+			<content:encoded><![CDATA[<p><img src='http://immike.s3.amazonaws.com/wp-content/uploads/2007/08/linux-penguin.png' alt='Linux Penguin Logo' style='float: right; margin: 0.5em;' />If you&#8217;ve been following Linux kernel news then you&#8217;ve probably heard about the new <a href="http://kerneltrap.org/node/8059">Completely Fair Scheduler</a> that has been merged into the <a href="http://kerneltrap.org/node/13981">upcoming 2.6.23 kernel release</a>. It&#8217;s been a while since I&#8217;ve done much Linux kernel hacking, so the initial announcement was mostly over my head. After reading about the new scheduler in <a href="http://linux.slashdot.org/article.pl?sid=07/07/31/1457207">several</a> <a href="http://digg.com/linux_unix/CFS_scheduler_to_appear_in_Linux_kernel_2_6_23?t=7724682">places</a>, I decided to do a bit of research into how the current Linux scheduler works, and what makes the new scheduling algorithm so interesting. Here&#8217;s what I learned. </p>
+<h4>What is a scheduler?</h4>
+<p>Like every multitasking operating system, Linux achieves the illusion of simultaneous execution of multiple processes (or programs) by rapidly cycling through processes that are ready to run, giving each one a short amount of time to execute on the CPU. Determining when to switch between processes, and which process should be allowed to run next is called <em>scheduling</em>. The kernel code that performs process scheduling is called the <em>scheduler</em>.</p>
+<p>Implementing a scheduling algorithm is tricky for a couple of reasons. First, an acceptable algorithm has to ration CPU time such that higher priority tasks (e.g., interactive applications like a web browser) are given preference over low priority processes (e.g., non-interactive batch processes like program compilation). At the same time, the scheduler must protect against low priority process <em>starvation</em>. In other words, low priority processes must eventually be allowed to run, regardless of how many high priority processes are vying for CPU time.</p>
+<p>Schedulers must also be carefully crafted so that processes appear to be running simultaneously, without having too large an impact on system <a href="http://en.wikipedia.org/wiki/Throughput">throughput</a>. For interactive processes like GUIs, the ideal scheduler would give each process a very small amount of time on the CPU and rapidly cycle between processes. </p>
+<p>A process can only respond to user input when it has control over the CPU. Because users expect interactive processes to respond immediately to input, the delay between user input and process execution should ideally be imperceptible to a human (somewhere between 50 and 150ms is usually sufficient).</p>
+<p>For non-interactive processes the situation is reversed. Switching between processes, or <a href="http://en.wikipedia.org/wiki/Context_switch">context switching</a>, is a relatively expensive operation. Thus, larger slices of time on the processor, and fewer context switches can improve system performance and throughput. The scheduling algorithm must strike a balance between all of these competing needs.</p>
+<h4>The O(1) Scheduler</h4>
+<p>The current Linux scheduler uses a complicated set of heuristics to provide adequate performance to nearly every type of process. The algorithm tries to identify interactive processes by analyzing average sleep time (e.g., the amount of time the process spends waiting for input). Processes that sleep for long periods of time are probably waiting for user input, so the scheduler assumes they&#8217;re interactive. </p>
+<p>Each process is given a <em>time quantum</em> based on a static priority (set via the <a href="http://kerneltrap.org/man/linux/man2/nice.2">nice system call</a>). The time quantum determines how long the process can execute on the CPU before it is preempted and another context switch occurs.</p>
+<p>The scheduler maintains a list of <em>active</em> and <em>expired</em> processes. When a new process is spawned, it starts in the active list. Non-interactive processes move from the active list to the expired list once their time quantum is exhausted. Expired processes are forbidden to run until all active processes expire.</p>
+<p>Interactive processes generally remain active: after execution, the scheduler refills their time quantum and leaves them in the set of active processes. However, if the oldest expired process has waited for a long time, or if an expired process has a higher static priority than the interactive process, the scheduler moves the interactive process to the expired process list. Thus, the scheduler gives interactive processes priority while preventing process starvation by guaranteeing that all processes will eventually have a chance to run.</p>
+<p>The defining characteristics of the current scheduler is the algorithm&#8217;s running time. If you&#8217;re not familiar with <a href="http://en.wikipedia.org/wiki/Big_O_notation">Big O notation</a>, it&#8217;s a simple system for describing how the size of the input data set affects the length of time it takes an algorithm to execute. An <code>O(n^2)</code> algorithm would take 1 unit of time to run if the input data contained a single item, 4 units of time for 2 units of input, etc. The current Linux scheduler is an <a href="http://en.wikipedia.org/wiki/O(1)_scheduler">O(1) scheduler</a>. In other words, the algorithm takes the same amount of time to run regardless of the input data size (in this case, the number of processes being run on the system).</p>
+<p>If you think all of that sounds way more complicated than it has to be, you&#8217;ll be happy to know that the new <em>Completely Fair Scheduler</em> is far simpler, and may prove to be a superior scheduler.</p>
+<h4>The Completely Fair Scheduler</h4>
+<p>The <em>Completely Fair Scheduler</em> (CFS) has replaced the current <em>O(1) Scheduler</em> in the upcoming 2.6.23 kernel release. The CFS uses a far simpler scheduling algorithm, completely ignoring sleep time, interactive process identification, time slices, etc. Author <a href="http://en.wikipedia.org/wiki/Ingo_Molnar">Ingo Molnar</a> describes the CFS as &#8220;basically [modeling] an &#8216;ideal, precise, multi-tasking CPU&#8217; on real hardware.&#8221; It took a bit of homework to figure out what the heck he was talking about, but it turns out that the concept is actually quite simple.</p>
+<p>An &#8220;ideal, precise, multi-tasking CPU&#8221; is one that can run multiple processes at the same time (which is, of course, impossible), giving each process an equal share of processor power. If a single process is running, that process would be given 100% of the processor&#8217;s power. With two processes, each would have 50% of the physical power (in parallel). </p>
+<p><a href="http://people.redhat.com/mingo/cfs-scheduler/sched-design-CFS.txt">Molnar notes</a> that &#8220;on real hardware, we can run only a single task at once, so while that one task runs, the other tasks that are waiting for the CPU are at a disadvantage - the current task gets an unfair amount of CPU time.&#8221; </p>
+<p>With CFS, this &#8220;fairness imbalance&#8221; is tracked on a per-process basis. As a process waits for the CPU, the scheduler tracks the amount of time it would have used on our ideal processor. This time is calculated by dividing the wait time (in nanoseconds) by the total number of processes waiting. The resulting value is the amount of CPU time the process is entitled to, and is used to rank processes for scheduling and to determine the amount of time the process is allowed to execute before being preempted.</p>
+<h4>Controversy</h4>
+<p>Red Hat employee and Linux kernel hacker Ingo Molnar caused quite a stir when he sent the <em>Completely Fair Scheduler</em> patch out over the Linux kernel mailing list. Before Molnar announced CFS, <a href="http://kerneltrap.org/blog/con">Con Kolivas&#8217;</a> <a href="http://lwn.net/Articles/224865/">RSDL scheduler</a> was positioned to be merged into the kernel. Another scheduler written by Nick Piggin called <em>nicksched</em> had also been considered. </p>
+<p><a href="http://kerneltrap.org/node/8059#comment-232742">Some onlookers</a> felt that Molnar co-opted ideas that Con and Nick pioneered, re-implemented them, and called them his own. While <a href="http://en.wikipedia.org/wiki/Not_Invented_Here">NIH syndrome</a> may have contributed to the creation of CFS, Molnar&#8217;s ideas are novel enough to discredit any claimed impropriety. In any case, CFS has been <a href="http://kerneltrap.org/node/11737">merged into the Linux kernel</a> and will be included in the upcoming 2.6.23 release. That said, I doubt the debate is over.</p>
+<img src="http://feeds.feedburner.com/~r/ImMike/~4/139763980" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://immike.net/blog/2007/08/01/what-is-the-completely-fair-scheduler/feed/</wfw:commentRss>
+		<feedburner:origLink>http://immike.net/blog/2007/08/01/what-is-the-completely-fair-scheduler/</feedburner:origLink></item>
+		<item>
+		<title>Flash Sucks</title>
+		<link>http://feeds.feedburner.com/~r/ImMike/~3/139345443/</link>
+		<comments>http://immike.net/blog/2007/07/31/flash-sucks/#comments</comments>
+		<pubDate>Tue, 31 Jul 2007 21:21:30 +0000</pubDate>
+		<dc:creator>mike</dc:creator>
+		
+		<category><![CDATA[Web Development]]></category>
+
+		<guid isPermaLink="false">http://immike.net/blog/2007/07/31/flash-sucks/</guid>
+		<description><![CDATA[The Adobe Flash Player is a multimedia application created by Macromedia (now a division of Adobe Systems). Flash Player features support for both vector and raster graphics, along with a scripting language and bidirectional streaming of video and audio content. The player is a virtual machine that runs Flash files, which are often embedded in [...]]]></description>
+			<content:encoded><![CDATA[<p><img src='http://immike.s3.amazonaws.com/wp-content/uploads/2007/07/flash-sucks.png' alt='Flash Sucks' style='float: right; margin: 0.5em;' />The Adobe Flash Player is a multimedia application created by Macromedia (now a division of Adobe Systems). Flash Player features support for both <a href="http://en.wikipedia.org/wiki/Vector_graphics">vector</a> and <a href="http://en.wikipedia.org/wiki/Raster_graphics">raster graphics</a>, along with <a href="http://en.wikipedia.org/wiki/ActionScript">a scripting language</a> and bidirectional streaming of video and audio content. The player is a virtual machine that runs Flash files, which are often embedded in websites to present animations, games, GUIs, or other visual interestingness. If you&#8217;re reading this website, you probably know all of this. What you might not know is that Flash sucks. It is the bane of the Internet, and it needs to go away. </p>
+<h4>Usability and Accessibility</h4>
+<p>The ironic thing about Flash is that its use is so frequently self-defeating. Flash is often used in an attempt to make sites more user friendly. But replacing familiar browser components with custom Flash garbage only <a href="http://www.useit.com/alertbox/20001029.html">hurts usability</a>. Consistency is imperative for a UI &#8212; users learn how to do something once, and can apply that knowledge in tons of places. But with Flash, overzealous designers try to &#8220;fix&#8221; what they see as bad interface models by creating custom Flash crap. This sucks.</p>
+<p>While we&#8217;re on usability, let&#8217;s talk about people who are disabled. Flash sucks at <a href="http://en.wikipedia.org/wiki/Accessibility">accessibility</a>. Though Flash has <a href="http://www.adobe.com/resources/accessibility/flash8/author.html">some features</a> that are supposed to improve accessibility, they&#8217;re weak and almost never used. The fact of the matter is that Flash is pretty much inherently inaccessible. If you want to use Flash, and remain accessible (and indexable &#8212; web spiders can&#8217;t understand Flash binaries either), your only real option is to create a second version of your site that uses standard technologies. That sucks.</p>
+<p>Technically, the accessibility and usability issues apply only to poorly designed Flash sites. Someone could (and probably will) counter that it&#8217;s not Flash that sucks, but people who are using Flash the wrong way. I&#8217;d argue that a tool that encourages suckiness is itself inherently sucky, but I&#8217;ll spare you that schpeel and move on to the one thing that makes Flash incontrovertibly sucky, regardless of how you use it.</p>
+<h4>Closed Specification</h4>
+<p>Call me idealistic, but I <em>hate</em> companies that use closed specifications to stifle competition. And that may be my biggest issue with Flash. Sure, Adobe provides the <a href="http://www.adobe.com/licensing/developer/">SWF and FLV Specifications</a> to developers who want to create Flash content. But first you have to agree to the <a href="http://www.adobe.com/licensing/developer/fileformat/license/">SWF File Format Specification License</a> where you promise that you will &#8220;not use the Specification in any way to create or develop a runtime, client, player, executable or other program that reads or renders SWF files.&#8221; That sucks.</p>
+<p>Don&#8217;t care about the closed specification issues? Well, you should. As more and more content is stored in Adobe&#8217;s proprietary format, the company is gaining a tremendous amount of power. They&#8217;ve already announced a version of Flash that <a href="http://news.bbc.co.uk/1/hi/business/6558979.stm">includes DRM support</a>, allowing &#8220;copyright holders&#8221; to prevent users from skipping advertisements and restrict copying. Heck, digital rights management (DRM), combined with the overly restrictive anti-circumvention legislation in the <a href="http://en.wikipedia.org/wiki/DMCA">DMCA</a>, could make it illegal to download and save your own damned YouTube videos! That would definitely suck.</p>
+<p>Glad to see Adobe has it&#8217;s priorities straight. While they rushed to include DRM support, the company has been dragging it&#8217;s feet on <a href="http://kb.adobe.com/selfservice/viewContent.do?externalId=6b3af6c9&#038;sliceId=1">Flash support for 64-bit operating systems</a> (there is none). This problem is <em>years</em> old. And it&#8217;s not like the advent of 64-bit CPUs was a surprise. They should have been working on 64-bit Flash in the late 1990s &#8212; or they should have at least given it some thought! And, seriously, it&#8217;s taken a team of coders more than <em>two years</em> to port a <em>plugin</em> from 32-bit to 64-bit? Christ, Apple <a href="http://en.wikipedia.org/wiki/Apple_Intel_transition">ported an entire operating system</a> from a RISC to a CISC chipset in less time than that. Sounds like the Flash code-base sucks too.</p>
+<h4>So what&#8217;s the alternative?</h4>
+<p>Yea, you got me. That&#8217;s what really sucks. <a href="http://www.microsoft.com/silverlight/default_ns.aspx">Microsoft Silverlight</a> might provide a viable alternative once it&#8217;s released. But chances are it will suck at least as much as Flash. Maybe if the <a href="http://www.w3.org/">W3C</a> standards for <a href="http://www.w3.org/Graphics/SVG/">SVG</a> and <a href="http://www.w3.org/AudioVideo/">SMIL</a> are ever fully implemented a decent open solution will exist and the problem will go away (if you&#8217;re in Firefox, <a href="http://www.croczilla.com/svg/samples/">check out some of the SVG samples</a>, they&#8217;re pretty cool). But until then, we&#8217;re stuck with Adobe&#8217;s crap. So I implore you: use it right, and only when absolutely, positively, unquestionably and undeniably necessary.</p>
+<img src="http://feeds.feedburner.com/~r/ImMike/~4/139345443" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://immike.net/blog/2007/07/31/flash-sucks/feed/</wfw:commentRss>
+		<feedburner:origLink>http://immike.net/blog/2007/07/31/flash-sucks/</feedburner:origLink></item>
+	</channel>
+</rss>

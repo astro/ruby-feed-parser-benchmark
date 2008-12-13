@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rss version="2.0">
+  <channel>
+    <title>DLFP - Dépêches</title>
+    <link>http://linuxfr.org/</link>
+     
+    <description>LinuxFr</description>
+    <language>fr</language>
+    <image>
+      <title>DLFP - Dépêches</title>
+      <link>http://linuxfr.org/</link>
+      <url>http://linuxfr.org/images/favicon.png</url>
+    </image>
+    <ttl>30</ttl>
+    
+
+    <item>
+      <title>Causerie sur l'April, sa campagne d'adhésion, ses actions passées et à venir (2/2)</title>
+      <author>null@linuxfr.org (Benoît Sibaud)</author>
+      <pubDate>Fri, 12 Dec 2008 16:41:39 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/12/24786.html</link>
+      <guid>http://linuxfr.org/2008/12/12/24786.html</guid>
+      <category>Communaute</category>
+      <description>La suite et fin (voir la &lt;a href=&quot;http://linuxfr.org/2008/12/11/24782.html&quot;&gt;première partie publiée&lt;/a&gt; hier) de la treizième causerie April sur le thème « l'April, sa &lt;a href=&quot;http://www.april.org/adherer?referent=LinuxFr&quot;&gt;campagne d'adhésion&lt;/a&gt;, ses actions passées et à venir » avec Benoît Sibaud, président de l'April, Frédéric Couchet délégué général, Alix Cazenave chargée des affaires publiques. Trois heures de questions/réponses pour un compte-rendu (disponible dans la suite de la dépêche et sur le site de l'April) qui couvre de très nombreux points.&lt;br /&gt;
+&lt;br /&gt;
+Les « Causeries April » sont des entretiens ou des discussions organisées régulièrement, d'une durée d'une heure ou plus, sur un sujet donné. Elles sont réalisées techniquement via &lt;a href=&quot;http://fr.wikipedia.org/wiki/Internet_Relay_Chat&quot;&gt;IRC&lt;/a&gt; et/ou &lt;a href=&quot;http://wiki.jabberfr.org/Jabber&quot;&gt;Jabber&lt;/a&gt;. Les compte-rendus sont publics ou privés suivant les sujets abordés.&lt;br /&gt;
+&lt;br /&gt;
+Cette causerie a utilisé le &lt;a href=&quot;http://linuxfr.org/interviews/14.html&quot;&gt;système de propositions d'entretiens&lt;/a&gt; de LinuxFr.org (pour une partie des questions).&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://www.april.org&quot;&gt;April - Promouvoir et défendre le Logiciel LIbre&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://www.april.org/fr/causerie-du-9-decembre-2008-sur-lapril-sa-campagne-dadhesion-ses-actions-passees-et-a-venir&quot;&gt;April : compte-rendu de cette causerie&lt;/a&gt;&lt;br /&gt;
+lien 3 : &lt;a href=&quot;http://linuxfr.org/2008/11/12/24673.html&quot;&gt;DLFP : Campagne d'adhésion April : Tristan Nitot appelle à adhérer&lt;/a&gt;&lt;br /&gt;
+lien 4 : &lt;a href=&quot;http://april.org/groupes/causeries/index.html&quot;&gt;April : page des causeries&lt;/a&gt;&lt;br /&gt;
+lien 5 : &lt;a href=&quot;http://linuxfr.org/2007/10/19/23232.html&quot;&gt;DLFP : causerie Jabber/XMPP&lt;/a&gt;&lt;br /&gt;
+lien 6 : &lt;a href=&quot;http://linuxfr.org/2008/05/21/24119.html&quot;&gt;DLFP : douzième causerie April sur les RMLL 2008&lt;/a&gt;&lt;br /&gt;
+(...)
+</description>
+    </item>
+    <item>
+      <title>Nouvelle version CodingTeam estampillée 0.9</title>
+      <author>null@linuxfr.org (MsieurHappy)</author>
+      <pubDate>Fri, 12 Dec 2008 01:11:59 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/12/24784.html</link>
+      <guid>http://linuxfr.org/2008/12/12/24784.html</guid>
+      <category>Communaute</category>
+      <description>CodingTeam est un système de forge pour logiciel, libre, léger et extensible. Après plus d'un an de travail, voici la nouvelle mouture, estampillée 0.9, qui est une complète réécriture. Ceci a été l'occasion d'en améliorer nettement la conception et l'interface.&lt;br /&gt;
+&lt;br /&gt;
+La forge se veut pratique, légère, multilingue et innovante, avec notamment l'utilisation de &lt;a href=&quot;http://fr.wikipedia.org/wiki/Jabber&quot; title=&quot;Définition Wikipédia&quot;&gt;Jabber&lt;/a&gt;/&lt;a href=&quot;http://fr.wikipedia.org/wiki/Extensible_messaging_and_presence_protocol&quot;&gt;XMPP&lt;/a&gt;, &lt;a href=&quot;http://fr.wikipedia.org/wiki/Scalable_Vector_Graphics&quot;&gt;SVG&lt;/a&gt; ou encore l'API OpenForge.&lt;br /&gt;
+&lt;br /&gt;
+CodingTeam offre comme outils :&lt;ul&gt;&lt;li&gt;La gestion des sources (&lt;a href=&quot;http://fr.wikipedia.org/wiki/Subversion_(logiciel)&quot;&gt;SVN&lt;/a&gt;) ;&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Timeline et roadmap ;&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;La gestion des rapport de bugs et de demandes de fonctionnalité ;&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Suivi de l'activité du projet par flux (&lt;a href=&quot;http://fr.wikipedia.org/wiki/RSS_(format)&quot;&gt;RSS&lt;/a&gt;/&lt;a href=&quot;http://fr.wikipedia.org/wiki/Atom&quot;&gt;Atom&lt;/a&gt;) ;&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;La gestion des téléchargements ;&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Pages de documentations ;&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Forums de discussion ;&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Intégration des salons de discussion Jabber ;&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Statistiques SVG ;&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Un notepad (appelé communément pastebin ou nopaste).&lt;/li&gt;&lt;/ul&gt;et bien plus encore.&lt;br /&gt;
+&lt;br /&gt;
+CodingTeam.net est le site du projet, mais également un service de forge gratuit, destinée aux logiciels libres et fonctionne dès à présent avec CodingTeam 0.9.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://codingteam.net/project/codingteam/news/show/294-codingteam_09_released&quot;&gt;Annnonce officielle&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://codingteam.net&quot;&gt;CodingTeam.net&lt;/a&gt;&lt;br /&gt;
+lien 3 : &lt;a href=&quot;http://codingteam.net/project/codingteam&quot;&gt;Le projet CodingTeam&lt;/a&gt;&lt;br /&gt;
+lien 4 : &lt;a href=&quot;https://linuxfr.org/2007/06/22/22649.html&quot;&gt;Article sur LinuxFR relatant la sortie de la première version&lt;/a&gt;&lt;br /&gt;
+lien 5 : &lt;a href=&quot;http://fr.wikipedia.org/wiki/CodingTeam&quot;&gt;CodingTeam sur Wikipédia&lt;/a&gt;&lt;br /&gt;
+lien 6 : &lt;a href=&quot;http://openforge.info&quot;&gt;OpenForge&lt;/a&gt;&lt;br /&gt;
+(...)
+</description>
+    </item>
+    <item>
+      <title>Barack Obama et l'Open Source</title>
+      <author>null@linuxfr.org (akauffmann)</author>
+      <pubDate>Fri, 12 Dec 2008 00:48:48 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/12/24785.html</link>
+      <guid>http://linuxfr.org/2008/12/12/24785.html</guid>
+      <category>Internet</category>
+      <description>	La campagne de futur président des États-Unis a impressionné par son usage massif d'internet et des nouvelles technologies. Les différents sites mis en place auront en effet permis de créer une dynamique, communiquer, échanger, faire adhérer au projet, coordonner les manifestations locales, etc. sans oublier lever des fonds.&lt;br /&gt;
+&lt;br /&gt;
+Certains n'hésitent pas, comme le journaliste Alex Castellanos sur CNN, à évoquer une stratégie &lt;a href=&quot;http://fr.wikipedia.org/wiki/Technologie_bottom-up&quot;&gt;bottom-up&lt;/a&gt; sur le mode &lt;em&gt;bazar&lt;/em&gt; en référence au livre d'Eric Raymond &lt;a href=&quot;http://fr.wikipedia.org/wiki/La_cath%C3%A9drale_et_le_bazar&quot;&gt;La Cathédrale et le Bazar&lt;/a&gt;. D'autres évoquent la dynamique &lt;em&gt;Open Source&lt;/em&gt; de la campagne, comme Doc Searls (Linux Journal) qui, partant de la précédente campagne d'&lt;a href=&quot;http://fr.wikipedia.org/wiki/Howard_Dean&quot;&gt;Howard Dean&lt;/a&gt;, nous gratifie d'un long article à l'intérieur des équipes techniques de la campagne d'Obama.&lt;br /&gt;
+&lt;br /&gt;
+On notera enfin que le site de transition d'Obama, &lt;a href=&quot;http://www.change.gov/&quot;&gt;change.gov&lt;/a&gt;, est récemment passé sous licence Creative Commons By et qu'un texte signé par de grandes figures d'Internet (dont &lt;a href=&quot;http://fr.wikipedia.org/wiki/Lawrence_Lessig&quot;&gt;Lawrence Lessig&lt;/a&gt;, la &lt;a href=&quot;http://fr.wikipedia.org/wiki/Mozilla_Foundation&quot;&gt;Mozilla Foundation&lt;/a&gt;, &lt;a href=&quot;http://fr.wikipedia.org/wiki/Jimmy_Wales&quot;&gt;Jimmy Wales&lt;/a&gt;, &lt;a href=&quot;http://fr.wikipedia.org/wiki/Tim_O%27Reilly&quot;&gt;Tim O'Reilly&lt;/a&gt;, &lt;a href=&quot;http://fr.wikipedia.org/wiki/Cory_Doctorow&quot;&gt;Cory Doctorow&lt;/a&gt; ou encore &lt;a href=&quot;http://fr.wikipedia.org/wiki/Mitch_Kapor&quot;&gt;Mitch Kapor&lt;/a&gt;) invite Barack Obama à aller encore plus loin en adoptant trois grands principes pour assurer un gouvernement ouvert : l'absence d'obstacles légaux au partage, l'absence d'obstacles technologiques au partage et la libre concurrence.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://www.linuxjournal.com/content/open-source-force-behind-obama-campaign&quot;&gt;The Open Source Force Behind the Obama Campaign&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://www.framablog.org/index.php/post/2008/12/11/obama-open-source&quot;&gt;La dynamique Open Source derrière la campagne d'Obama (trad. Framablog + vidéo CNN sous-titrée)&lt;/a&gt;&lt;br /&gt;
+lien 3 : &lt;a href=&quot;http://www.framablog.org/index.php/post/2008/12/02/obama-change-gov-creative-commons-by&quot;&gt;Le site Change.gov d'Obama embrasse la licence Creative Commons By&lt;/a&gt;&lt;br /&gt;
+lien 4 : &lt;a href=&quot;http://open-government.us/&quot;&gt;Principles for an Open Transition&lt;/a&gt;&lt;br /&gt;
+lien 5 : &lt;a href=&quot;http://www.framablog.org/index.php/post/2008/12/03/usa-obama-3-principes-pour-un-gouvernement-ouvert&quot;&gt;Principes pour une transition ouverte (trad. Framablog)&lt;/a&gt;&lt;br /&gt;
+
+</description>
+    </item>
+    <item>
+      <title>Cake automnal</title>
+      <author>null@linuxfr.org (Christophe (rOotix) GUILLOUX)</author>
+      <pubDate>Thu, 11 Dec 2008 22:02:39 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/11/24771.html</link>
+      <guid>http://linuxfr.org/2008/12/11/24771.html</guid>
+      <category>Cuisine</category>
+      <description>&lt;p&gt;À l'occasion des 10 ans de l'association Gulliver, des gâteaux dont la recette est libre (le gâteau un peu moins maintenant ;-) ) ont été préparés. Voici la première recette réalisée par Étienne Locks et publiée sous licence &lt;a href=&quot;http://fr.wikipedia.org/wiki/WTFPL&quot; title=&quot;Définition Wikipédia&quot;&gt;WTFPL&lt;/a&gt;. La photo est publiée sous licence &lt;a href=&quot;http://creativecommons.org/licenses/by-sa/3.0/deed.fr&quot;&gt;CC-BY-SA&lt;/a&gt;.&lt;/p&gt;&lt;br /&gt;
+&lt;b&gt;Le résultat :&lt;/b&gt;&lt;br /&gt;
+(Le temps de prendre la photo et il manque déjà un morceau)&lt;br /&gt;
+&lt;center&gt;&lt;a href=&quot;/images/cuisine/cake_automnal.jpg&quot;&gt;&lt;img src=&quot;/images/cuisine/cake_automnal.jpg&quot; width=&quot;250&quot; height=&quot;333&quot; alt=&quot;Le cake vu de l'extérieur (cliquer pour agrandir)&quot; /&gt;&lt;/a&gt;&lt;/center&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://linuxfr.org/2008/12/02/24756.html&quot;&gt;Gulliver a 10 ans&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://linuxfr.org/images/cuisine/cake_automnal.tex&quot;&gt;Source de la recette&lt;/a&gt;&lt;br /&gt;
+lien 3 : &lt;a href=&quot;http://linuxfr.org/images/cuisine/cake_automnal.pdf&quot;&gt;Fichier imprimable de la recette&lt;/a&gt;&lt;br /&gt;
+(...)
+</description>
+    </item>
+    <item>
+      <title>[Toulibre] Présentation d'OpenEmbedded et rencontre</title>
+      <author>null@linuxfr.org (Hugo Mercier)</author>
+      <pubDate>Thu, 11 Dec 2008 16:02:01 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/11/24783.html</link>
+      <guid>http://linuxfr.org/2008/12/11/24783.html</guid>
+      <category>Lug</category>
+      <description>&lt;a href=&quot;http://www.toulibre.org/&quot;&gt;Toulibre&lt;/a&gt; organise une rencontre autour des Logiciels Libres le mercredi 17 décembre, de 19h à 23h au &lt;a href=&quot;http://www.toulibre.org/CentreCulturelBellegarde&quot;&gt;Centre Culturel Bellegarde&lt;/a&gt;, 17 rue Bellegarde à Toulouse.&lt;br /&gt;
+&lt;br /&gt;
+À 20 heures, Cyril Romain présentera  &lt;a href=&quot;http://www.openembedded.org/&quot;&gt;OpenEmbedded&lt;/a&gt;, un outil de cross-compilation et de création de distributions GNU/Linux pour l'embarqué. La présentation vous permettra de découvrir OpenEmbedded et bitbake, son exécuteur de tâches. Vous verrez la flexibilité qu'OpenEmbedded apporte en terme de cross-compilation et de packaging d'applications pour l'embarqué. Cette présentation plutôt technique est accessible à tous les développeurs. Il est cependant fortement conseillé d'avoir de bonnes bases des systèmes GNU/Linux.&lt;br /&gt;
+&lt;br /&gt;
+La présentation sera filmée et les vidéos seront par la suite mises à disposition sur le site de Toulibre.&lt;br /&gt;
+&lt;br /&gt;
+Par ailleurs, comme lors de chaque rencontre, le centre Bellegarde sera ouvert à partir de 19h et pendant toute la soirée pour accueillir toute personne désireuse d'échanger ou de trouver de l'aide sur des Logiciels Libres. Vous pouvez si besoin apporter votre ordinateur. Dans ce cas ainsi que pour toute demande d'aide particulière, merci de nous adresser un courrier électronique au préalable à contact at toulibre.org en décrivant vos besoins pour que nous puissions vous répondre efficacement.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://www.toulibre.org&quot;&gt;Toulibre&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://www.openembedded.org&quot;&gt;OpenEmbedded&lt;/a&gt;&lt;br /&gt;
+lien 3 : &lt;a href=&quot;http://www.agendadulibre.org/showevent.php?id=2353&quot;&gt;Événement sur l'Agenda du Libre&lt;/a&gt;&lt;br /&gt;
+lien 4 : &lt;a href=&quot;http://openstreetmap.org/?mlat=43.6082&amp;amp;mlon=1.44384&amp;amp;zoom=16&quot;&gt;Centre Bellegarde sur OpenStreetMap&lt;/a&gt;&lt;br /&gt;
+
+</description>
+    </item>
+    <item>
+      <title>Causerie sur l'April, sa campagne d'adhésion, ses actions passées et à venir (1/2)</title>
+      <author>null@linuxfr.org (Benoît Sibaud)</author>
+      <pubDate>Thu, 11 Dec 2008 12:37:13 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/11/24782.html</link>
+      <guid>http://linuxfr.org/2008/12/11/24782.html</guid>
+      <category>Communaute</category>
+      <description>Les « Causeries April » sont des entretiens ou des discussions organisées régulièrement, d'une durée d'une heure ou plus, sur un sujet donné. Elles sont réalisées techniquement via &lt;a href=&quot;http://fr.wikipedia.org/wiki/Internet_Relay_Chat&quot;&gt;IRC&lt;/a&gt; et/ou &lt;a href=&quot;http://wiki.jabberfr.org/Jabber&quot;&gt;Jabber&lt;/a&gt;. Les comptes-rendus sont publics ou privés suivant les sujets abordés.&lt;br /&gt;
+&lt;br /&gt;
+Les précédentes causeries ont abordé des sujets variés (histoire et évolution de l'April, brevets sur les logiciels, extension des droits de la « &lt;i&gt;propriété intellectuelle&lt;/i&gt; », vote électronique, Wikipédia, April et les entreprises, Jabber/&lt;a href=&quot;http://fr.wikipedia.org/wiki/Extensible_messaging_and_presence_protocol&quot;&gt;XMPP&lt;/a&gt;, traduction de la philosophie GNU, groupe d'utilisateurs Chtinux, Rencontres Mondiales du Logiciel Libre, etc.).&lt;br /&gt;
+&lt;br /&gt;
+Le 9 décembre dernier a eu lieu la treizième causerie April sur le thème « l'April, sa &lt;a href=&quot;http://www.april.org/adherer?referent=LinuxFr&quot;&gt;campagne d'adhésion&lt;/a&gt;, ses actions passées et à venir » avec Benoît Sibaud, président de l'April, Frédéric Couchet délégué général, Alix Cazenave chargée des affaires publiques. Trois heures de questions/réponses pour un compte-rendu (disponible dans la suite de la dépêche et sur le site de l'April) qui couvre de très nombreux points - tellement qu'il sera publié en deux fois. À noter que l'association a dépassé les 3500 adhérents (individus, associations, entreprises, collectivités) durant la causerie.&lt;br /&gt;
+&lt;br /&gt;
+Cette causerie a utilisé le &lt;a href=&quot;http://linuxfr.org/interviews/14.html&quot;&gt;système de propositions d'entretiens&lt;/a&gt; de LinuxFr.org (pour une partie des questions).&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://www.april.org&quot;&gt;April - Promouvoir et défendre le Logiciel LIbre&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://www.april.org/fr/causerie-du-9-decembre-2008-sur-lapril-sa-campagne-dadhesion-ses-actions-passees-et-a-venir&quot;&gt;April : compte-rendu de cette causerie&lt;/a&gt;&lt;br /&gt;
+lien 3 : &lt;a href=&quot;http://linuxfr.org/2008/11/12/24673.html&quot;&gt;DLFP : Campagne d'adhésion April : Tristan Nitot appelle à adhérer&lt;/a&gt;&lt;br /&gt;
+lien 4 : &lt;a href=&quot;http://april.org/groupes/causeries/index.html&quot;&gt;April : page des causeries&lt;/a&gt;&lt;br /&gt;
+lien 5 : &lt;a href=&quot;http://linuxfr.org/2007/10/19/23232.html&quot;&gt;DLFP : causerie Jabber/XMPP&lt;/a&gt;&lt;br /&gt;
+lien 6 : &lt;a href=&quot;http://linuxfr.org/2008/05/21/24119.html&quot;&gt;DLFP : douzième causerie April sur les RMLL 2008&lt;/a&gt;&lt;br /&gt;
+(...)
+</description>
+    </item>
+    <item>
+      <title>Slackware 12.2 est disponible</title>
+      <author>null@linuxfr.org (asteroid)</author>
+      <pubDate>Thu, 11 Dec 2008 11:37:08 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/11/24780.html</link>
+      <guid>http://linuxfr.org/2008/12/11/24780.html</guid>
+      <category>Slackware</category>
+      <description>En ce froid 11 décembre 2008, Patrick Volkerding est content de nous présenter la Slackware nouvelle, à savoir Slackware 12.2. Après une seule RC, une nouvelle mouture de la plus ancienne des distributions Linux  est sortie. Cette nouvelle version est d'ailleurs plus une évolution qu'une révolution.&lt;br /&gt;
+&lt;br /&gt;
+Au chapitre des vrais nouveautés :&lt;ul&gt;&lt;li&gt;Slackpkg fait son apparition dans la branche officielle. C'est un gestionnaire de paquets semi-automatisé qui, rassurons les puristes, ne gère pas les dépendances mais facilite certaines tâches comme la vérification des paquets, leur mise à jour, la &quot;purge&quot; du système, etc. ;&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;KDE4 ! Rassurons-nous aussi, il n'est que dans extra. Slackware ayant pour raison première la stabilité il ne peut en être autrement. C'est donc KDE 3.5.10 qui est fourni &quot;de base&quot; ;&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Le serveur Xorg 1.4.2 ;&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Wicd pour simplifier la gestion du réseau ;&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;pm-utils pour gérer l'hibernation avec HAL ;&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Le noyau Linux-2.6.27.7 pour une meilleure prise en charge du matériel et autres fonctionnalités sympathiques.&lt;/li&gt;&lt;/ul&gt;Comme on peut le constater GNOME reste encore et toujours le grand absent de cette distribution. D'autre part Patrick Volkerding rappelle que même si cette distribution est disponible gratuitement, si vous aimez cette distribution pensez à la soutenir en achetant  des CD et DVD qui seront prochainement disponibles sur sa boutique en ligne.&lt;br /&gt;
+&lt;br /&gt;
+&lt;i&gt;&lt;acronym title=&quot;Note des modérateurs&quot;&gt;NdM&lt;/acronym&gt; : Merci également à Unixfix le Gaulois pour sa proposition de dépêche.&lt;/i&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://slackware.com/announce/12.2.php&quot;&gt;Annonce officielle&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;ftp://ftp.slackware.com/pub/slackware/slackware-12.2/CHANGES_AND_HINTS.TXT&quot;&gt;Liste officielles des nouveautés&lt;/a&gt;&lt;br /&gt;
+lien 3 : &lt;a href=&quot;ftp://ftp.slackware.com/pub/slackware/slackware-12.2/RELEASE_NOTES&quot;&gt;Note de version&lt;/a&gt;&lt;br /&gt;
+lien 4 : &lt;a href=&quot;http://store.slackware.com&quot;&gt;Boutique en ligne&lt;/a&gt;&lt;br /&gt;
+lien 5 : &lt;a href=&quot;http://www.dmoz.org/World/Fran%C3%A7ais/Informatique/Logiciels/Syst%C3%A8mes_d%27exploitation/Linux/Distributions/Slackware/&quot;&gt;Slackware sur dmoz&lt;/a&gt;&lt;br /&gt;
+
+</description>
+    </item>
+    <item>
+      <title>Amarok 2.0 &quot;Ce n'est que le début&quot;</title>
+      <author>null@linuxfr.org (Xavier Claude)</author>
+      <pubDate>Thu, 11 Dec 2008 09:26:12 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/11/24779.html</link>
+      <guid>http://linuxfr.org/2008/12/11/24779.html</guid>
+      <category>KDE</category>
+      <description>Quatre ans et demi après la naissance d'&lt;a href=&quot;http://fr.wikipedia.org/wiki/Amarok&quot; title=&quot;Définition Wikipédia&quot;&gt;Amarok&lt;/a&gt;, la présentation du logiciel n'est plus à faire et qu'on l'aime ou pas, il ne laisse personne indifférent..&lt;br /&gt;
+&lt;br /&gt;
+Après deux ans de développement, voici la version 2.0 d'Amarok (pas du web), le lecteur et gestionnaire musical de &lt;a href=&quot;http://fr.wikipedia.org/wiki/KDE&quot; title=&quot;Définition Wikipédia&quot;&gt;KDE&lt;/a&gt;. Cette version constitue la première version stable du passage de KDE3 à &lt;a href=&quot;http://fr.wikipedia.org/wiki/KDE4&quot; title=&quot;Définition Wikipédia&quot;&gt;KDE4&lt;/a&gt; et comme pour KDE4, toutes les fonctionnalités précédentes ne sont pas encore présentes.&lt;br /&gt;
+&lt;br /&gt;
+Il faut aussi noter qu'Amarok est disponible, tout comme KDE, en version bêta pour &lt;a href=&quot;http://fr.wikipedia.org/wiki/Windows&quot; title=&quot;Définition Wikipédia&quot;&gt;Windows&lt;/a&gt; et &lt;a href=&quot;http://fr.wikipedia.org/wiki/MacOS&quot; title=&quot;Définition Wikipédia&quot;&gt;MacOS&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://amarok.kde.org/fr&quot;&gt;L'annonce officielle&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://amarok.kde.org/wiki/Fr:Download&quot;&gt;La page de téléchargement&lt;/a&gt;&lt;br /&gt;
+lien 3 : &lt;a href=&quot;http://amarok.kde.org/files/Amarok-2_0_0-Overview_1.png&quot;&gt;Une capture d'écran&lt;/a&gt;&lt;br /&gt;
+(...)
+</description>
+    </item>
+    <item>
+      <title>VideoLAN Dev Days '08</title>
+      <author>null@linuxfr.org (Antoine Lejeune)</author>
+      <pubDate>Thu, 11 Dec 2008 07:02:48 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/11/24778.html</link>
+      <guid>http://linuxfr.org/2008/12/11/24778.html</guid>
+      <category>Audiovisuel</category>
+      <description>	L'équipe derrière &lt;a href=&quot;http://www.videolan.org&quot;&gt;VideoLAN&lt;/a&gt; se rencontre à Paris pour une conférence entre les développeurs et la communauté.&lt;br /&gt;
+&lt;br /&gt;
+Pendant deux jours, le 20 et 21 décembre 2008, à Paris, certaines décisions seront prises sur l'évolution du projet et sur les évolutions de &lt;a href=&quot;http://fr.wikipedia.org/wiki/VLC_media_player&quot;&gt;VLC Media Player&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+L'évènement est principalement focalisé pour les développeurs qui travaillent autour de VLC mais si des curieux sont intéressés pour rencontrer l'équipe, ils sont les bienvenus.&lt;br /&gt;
+&lt;br /&gt;
+Il faut noter que l'évènement est sponsorisé par plusieurs entreprises à savoir Free, Uniways et Anevia.&lt;br /&gt;
+&lt;br /&gt;
+Si vous êtes donc intéressés de participer aux VideoLAN Dev Days, vous pouvez contacter &lt;a href=&quot;mailto:videolan -AT- videolan.org&quot;&gt;l'équipe VideoLAN&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://www.videolan.org&quot;&gt;VideoLAN&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://agendadulibre.org/?year=2008&amp;amp;month=12&amp;amp;region=all&quot;&gt;L'agenda du libre en décembre&lt;/a&gt;&lt;br /&gt;
+
+</description>
+    </item>
+    <item>
+      <title>OpenCL, en version 1.0</title>
+      <author>null@linuxfr.org (Antoine Mercadal)</author>
+      <pubDate>Wed, 10 Dec 2008 08:39:17 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/10/24777.html</link>
+      <guid>http://linuxfr.org/2008/12/10/24777.html</guid>
+      <category>Technologie</category>
+      <description>OpenCL (Open Computing Langage) est un projet ambitieux, initialement lancé par Apple. Les spécifications ont été proposées et acceptées par le consortium Khronos, qui par ailleurs s'occupe aussi d'&lt;a href=&quot;http://fr.wikipedia.org/wiki/OpenGL&quot; title=&quot;Définition Wikipédia&quot;&gt;OpenGL&lt;/a&gt;, en juin 2008. La version 1.0 est sortie aujourd'hui (09/12/2008) et est disponible sur &lt;a href=&quot;http://www.khronos.org/registry/cl/&quot;&gt;http://www.khronos.org/registry/cl/&lt;/a&gt; (spécification et headers).&lt;br /&gt;
+&lt;br /&gt;
+Le but de ce projet est de permettre aux développeurs de tirer parti des énormes capacités de calcul des processeurs graphiques (&lt;a href=&quot;http://fr.wikipedia.org/wiki/Processeur_graphique&quot;&gt;GPU&lt;/a&gt;s) d'aujourd'hui. En effet, sauf quand une application graphique est lancée (un jeu par exemple), cette puissance de calcul reste inutilisée pour la plupart du temps. On appelle ce genre de technique, qui consiste finalement à détourner l'utilisation principale d'un processeur graphique, « &lt;i&gt;General Purpose Computing on Graphics processing Units&lt;/i&gt; » ou tout simplement, &lt;a href=&quot;http://fr.wikipedia.org/wiki/GPGPU&quot; title=&quot;Définition Wikipédia&quot;&gt;GPGPU&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;a href=&quot;http://fr.wikipedia.org/wiki/OpenCL&quot; title=&quot;Définition Wikipédia&quot;&gt;OpenCL&lt;/a&gt; permet donc de consolider la puissance de calcul absolue des machines en utilisant le GPU comme un simple &lt;a href=&quot;http://fr.wikipedia.org/wiki/Processeur&quot;&gt;CPU&lt;/a&gt;, et donc d'utiliser ce CPU « &lt;i&gt;virtuel&lt;/i&gt; » pour les besoins de n'importe quel type d'application. Cette technologie sera incluse dans Mac OS X v10.6 (Snow Leopard) et normalement strictement transparente pour les applications. Le package OpenCL + transparence pour les programmes répond au doux nom marketing « &lt;i&gt;Grand central&lt;/i&gt; », et ce regroupement ne sera évidemment pas libre. Cependant, rien n'empêchera au monde du libre de l'adapter dans un « &lt;i&gt;Grand Central&lt;/i&gt; » complètement libre.&lt;br /&gt;
+&lt;br /&gt;
+La spécification est définie comme ouverte et libre de droit. Malheureusement, il m'a été impossible de trouver une quelconque licence ou de quelconques démos. Confidentialité sur Snow Leopard oblige...&lt;br /&gt;
+&lt;br /&gt;
+Cependant, un grand nombre d'acteurs se sont joints au projet et aujourd'hui on trouve, entre autres : Apple, AMD, NVIDIA, Intel, Broadcom, Blizzard, EA, Ericsson, IBM, Movidia, Nokia, Sony, Symbian, Texas Instruments. Bref, on ne trouve que du beau monde.&lt;br /&gt;
+&lt;br /&gt;
+Cette technologie, définie comme indépendante du matériel, pourra potentiellement donner un grand coup de fouet aux capacités de calcul de nos machines actuelles. Il ne reste plus qu'à espérer qu'elle soit réellement « &lt;i&gt;open and royalty-free&lt;/i&gt; ».&lt;br /&gt;
+&lt;br /&gt;
+&lt;i&gt;NdM : Afin d'éviter que &lt;a href=&quot;http://fr.wikipedia.org/wiki/CUDA&quot;&gt;CUDA&lt;/a&gt; (la  technologie propriétaire qui est soutenue par NVidia) ne s'empare totalement de ce nouveau marché, les autres acteurs se sont regroupés derrière la bannière d'OpenCL. Cette technologie va donc bien au delà de MacOS X et elle va sans doute devenir &quot;la&quot; technologie de GPGPU sur les systèmes libres.&lt;/i&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://www.khronos.org/registry/cl/&quot;&gt;Version 1.0 d'OpenCL&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://en.wikipedia.org/wiki/OpenCL&quot;&gt;Sur wikipedia&lt;/a&gt;&lt;br /&gt;
+lien 3 : &lt;a href=&quot;http://www.khronos.org/opencl/&quot;&gt;Sur le site du Khronos Group&lt;/a&gt;&lt;br /&gt;
+
+</description>
+    </item>
+    <item>
+      <title>Point sur les TL09</title>
+      <author>null@linuxfr.org (TL09)</author>
+      <pubDate>Tue, 09 Dec 2008 21:20:50 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/09/24776.html</link>
+      <guid>http://linuxfr.org/2008/12/09/24776.html</guid>
+      <category>Communaute</category>
+      <description>Voici 45 jours que les appels à projets pour les Trophées 2009 sont ouverts. Près de 30 projets sont candidats à ce jour. Notre objectif est de dépasser pour la session 2009 le total de 150 projets atteint en 2007. Nous sommes relayés par 30 sites partenaires des Trophées.&lt;br /&gt;
+&lt;br /&gt;
+La remise des Trophées est prévue pour le début du mois de Juin 2009. Notre objectif - comme lors des années précédentes - reste de mettre en exergue les innovations les plus intéressantes parmi les solutions de Logiciels Libres dans 8 catégories.&lt;br /&gt;
+&lt;br /&gt;
+Nous souhaitons également faire des Trophées un moment de rencontre entre des utilisateurs potentiels dans l'entreprise et en dehors. Nous vous annoncerons bientôt de quelle façon.&lt;br /&gt;
+ &lt;br /&gt;
+La liste des membres du jury ainsi que les principales références de ses différents membres peuvent être consultées sur le site à la rubrique Le Jury.&lt;br /&gt;
+&lt;br /&gt;
+ Pour le Comité d'organisation, Gérard Roullot et JB. Traversac&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://www.trophees-du-libre.org&quot;&gt;Trophees du Libre 2009&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://www.trophees-du-libre.org/content/view/5/27/lang,fr/&quot;&gt;Le Jury&lt;/a&gt;&lt;br /&gt;
+
+</description>
+    </item>
+    <item>
+      <title>Grenoble – conférence sur la virtualisation</title>
+      <author>null@linuxfr.org (Ellendhel)</author>
+      <pubDate>Tue, 09 Dec 2008 09:29:45 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/09/24775.html</link>
+      <guid>http://linuxfr.org/2008/12/09/24775.html</guid>
+      <category>Lug</category>
+      <description>La Guilde (Guilde des Utilisateurs d'Informatique Libre du Dauphiné) propose une conférence sur la virtualisation.&lt;br /&gt;
+&lt;br /&gt;
+Par Xavier Belanger&lt;br /&gt;
+&lt;br /&gt;
+Mardi 16 décembre de 19h30 à 22h,&lt;br /&gt;
+ENSIMAG, campus de Saint-Martin d'Hères.&lt;br /&gt;
+Entrée libre et gratuite pour tous publics&lt;br /&gt;
+&lt;br /&gt;
+La &lt;a href=&quot;http://fr.wikipedia.org/wiki/virtualisation&quot; title=&quot;Définition Wikipédia&quot;&gt;virtualisation&lt;/a&gt; permet d'utiliser plusieurs systèmes d'exploitation sur un même ordinateur. Étant donné la puissance actuelle des ordinateurs personnels, cela permet par exemple de tester plusieurs systèmes (GNU/Linux en même temps que Microsoft Windows ou inversement). On peut ainsi disposer de programmes n'existant normalement que sur un seul système.&lt;br /&gt;
+&lt;br /&gt;
+La conférence présentera un comparatif des solutions techniques et les principaux logiciels du domaine (&lt;a href=&quot;http://fr.wikipedia.org/wiki/Qemu&quot; title=&quot;Définition Wikipédia&quot;&gt;Qemu&lt;/a&gt;, &lt;a href=&quot;http://fr.wikipedia.org/wiki/Xen&quot; title=&quot;Définition Wikipédia&quot;&gt;Xen&lt;/a&gt;, &lt;a href=&quot;http://fr.wikipedia.org/wiki/Kernel-based_Virtual_Machine&quot; title=&quot;Définition Wikipédia&quot;&gt;KVM&lt;/a&gt;, &lt;a href=&quot;http://fr.wikipedia.org/wiki/Virtualbox&quot; title=&quot;Définition Wikipédia&quot;&gt;Virtualbox&lt;/a&gt;...).&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://www.guilde.asso.fr/&quot;&gt;La Guilde&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://www.openstreetmap.org/export/embed.html?bbox=5.76293,45.19083,5.77276,45.19615&amp;amp;layer=mapnik&amp;amp;marker=45.19321,5.76801&quot;&gt;Adresse de la conférence sur OpenStreetMap&lt;/a&gt;&lt;br /&gt;
+lien 3 : &lt;a href=&quot;http://agendadulibre.org/?year=2008&amp;amp;month=12&amp;amp;region=all&quot;&gt;Agenda du libre en décembre&lt;/a&gt;&lt;br /&gt;
+
+</description>
+    </item>
+    <item>
+      <title>Cooperation-iws 0.7.0 est disponible</title>
+      <author>null@linuxfr.org (Avenel Olivier)</author>
+      <pubDate>Tue, 09 Dec 2008 09:29:37 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/09/24774.html</link>
+      <guid>http://linuxfr.org/2008/12/09/24774.html</guid>
+      <category>Internet</category>
+      <description>Cooperation-iws, projet de serveur web intranet nomade libre (GPLv2), vient de sortir en version 0.7.0. &lt;br /&gt;
+&lt;br /&gt;
+Un serveur web intranet nomade est un système d'exploitation qui propose les services d'applications web tels que les blogs, wiki, portail eLearning, portail de gestion de données, gestion du code source, vidéo conférence, messagerie instantanée, serveur de courriels et de groupware...&lt;br /&gt;
+&lt;br /&gt;
+Intranet signifie également que vous pouvez utiliser le serveur à des fins privées et que vous pouvez stocker du contenu sous un format web et ne le diffuser que si vous le souhaitez. Cooperation-iws est destiné aux Intranet familiaux, associatifs ou des petites entreprises.&lt;br /&gt;
+&lt;br /&gt;
+Nomade signifie que vous pouvez emmener votre serveur dans votre poche sur un disque ou une clef USB et utiliser n'importe quelle machine à votre disposition pour amorcer votre serveur.&lt;br /&gt;
+&lt;br /&gt;
+Cooperation-iws est un Live CD installable sur une clef ou un disque dur USB et qui sauvegarde les changements des applications web. Il est destiné à toute personne sachant naviguer sur le web et administrer une application web ; pas besoin d'être un Geek ou un Gourou Linux. Marche / Arrêt c'est suffisant !&lt;br /&gt;
+&lt;br /&gt;
+Cooperation-iws est un système d'applications libres et essaie de référencer les meilleures applications web libres.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://www.cooperation-iws.eu&quot;&gt;Adresse du site&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://www.cooperation-iws.eu/CMS/wp-content/plugins/download-monitor/download.php?id=23&quot;&gt;Rapide introduction (PDF)&lt;/a&gt;&lt;br /&gt;
+lien 3 : &lt;a href=&quot;http://www.cooperation-iws.eu/CMS/wp-content/plugins/download-monitor/download.php?id=40&quot;&gt;Présentation complète (PDF)&lt;/a&gt;&lt;br /&gt;
+lien 4 : &lt;a href=&quot;http://www.cooperation-iws.eu/CMS/?page_id=31&quot;&gt;Page de téléchargement&lt;/a&gt;&lt;br /&gt;
+
+</description>
+    </item>
+    <item>
+      <title>Lettre d’information Libre Accès de décembre</title>
+      <author>null@linuxfr.org (Benoît Sibaud)</author>
+      <pubDate>Mon, 08 Dec 2008 10:37:40 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/08/24772.html</link>
+      <guid>http://linuxfr.org/2008/12/08/24772.html</guid>
+      <category>Audiovisuel</category>
+      <description>« Libre Accès est une coopérative de soutien au mouvement artistique des licences de libre diffusion ayant pour objectif de fournir un cadre économique juste assurant une bonne rémunération des artistes. »&lt;br /&gt;
+&lt;br /&gt;
+Au sommaire de la lettre d’information Libre Accès de décembre 2008 :&lt;br /&gt;
+&lt;ul&gt;&lt;li&gt;L’Art ne devrait plus dépendre des normes en vigueur de la propriété privée&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;L’Art Libre au cœur de la métamorphose&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;La culture libre ou l’art de l’économie éthique&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Plus tout seul avec le collectif SOLO&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Bonom_3.0 [Croquemitaine] fait du vélib’ !&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Une livraison. L’activité opératoire, du Livre à l’internet.&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Ghislain Mollet-Viéville à Nantes : Rencontre entre spect’acteur et art libre&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Une nouvelle renaissance pour l’industrie cinématographique&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Régulation de la création sur Internet: sanction étatique liberticide ou solidarité entre internautes?&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;AUTOMAZIC, la borne d’accès à la culture libre&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Éducation populaire&lt;br /&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://www.libreacces.org&quot;&gt;Libre Accès&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://libreacces.org/IMG/pdf/LA_newsletter_12_08_WEB_A4.pdf&quot;&gt;Lettre d’information Libre Accès de décembre 2008&lt;/a&gt;&lt;br /&gt;
+lien 3 : &lt;a href=&quot;http://linuxfr.org/2008/06/08/24185.html&quot;&gt;DLFP : Libre Accès&lt;/a&gt;&lt;br /&gt;
+lien 4 : &lt;a href=&quot;http://linuxfr.org/interviews/7.html&quot;&gt;DLFP : Proposition d'entretien avec l'équipe Libre Accès&lt;/a&gt;&lt;br /&gt;
+
+</description>
+    </item>
+    <item>
+      <title>Conférence Racketiciel</title>
+      <author>null@linuxfr.org (Emmanuel Seyman)</author>
+      <pubDate>Sat, 06 Dec 2008 20:09:03 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/06/24770.html</link>
+      <guid>http://linuxfr.org/2008/12/06/24770.html</guid>
+      <category>Communaute</category>
+      <description>Cyprien Gay et Alain Coulais, deux membres du groupe Racketiciel de l'Aful animeront une conférence sur la vente liée des ordinateurs et des logiciels.&lt;br /&gt;
+&lt;br /&gt;
+La vente liée Logiciels/Matériels reste le frein majeur à une explosion de l'usage grand public des Logiciels Libres, comme le prouve le succès des systèmes GNU/Linux sur les mini-pc, s'y accaparant plus du tiers du marché.&lt;br /&gt;
+&lt;br /&gt;
+Deux ans et demi après la première invitation de Parinux sur ce sujet de la vente liée logiciels/matériels, le paysage a énormément évolué. Ils feront le point, tant sur les plans juridique, économique et politique.&lt;br /&gt;
+&lt;br /&gt;
+Ils finiront par une présentation du Guide du Remboursement, dont l'objectif n'est autre que d'aider les consommateurs à obtenir un juste et légitime remboursement, face à des vendeurs et constructeurs majoritairement réfractaires à appliquer avec diligence certaines clauses de certains CLUF...&lt;br /&gt;
+&lt;br /&gt;
+La conférence se déroulera à l' Espace Loisirs et Multimédia, 105 avenue de La Bourdonnais, 75007 Paris (Métro : École Militaire) le mardi 9 décembre de 19h15 à 20h45.&lt;br /&gt;
+&lt;br /&gt;
+L'entrée est  libre, dans la limite des places disponibles. Cependant, il est conseillé de s'inscrire.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://www.parinux.org/content/conference-racketiciel&quot;&gt;Inscription à l'évènement&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://www.racketiciel.info/guide/index&quot;&gt;Guide du remboursementtnt&lt;/a&gt;&lt;br /&gt;
+lien 3 : &lt;a href=&quot;http://www.parinux.org/&quot;&gt;Parinux&lt;/a&gt;&lt;br /&gt;
+lien 4 : &lt;a href=&quot;http://www.racketiciel.info/&quot;&gt;Racketiciel&lt;/a&gt;&lt;br /&gt;
+lien 5 : &lt;a href=&quot;http://openstreetmap.org/?mlat=48.855115&amp;amp;mlon=2.303889&amp;amp;zoom=14&amp;amp;layers=B000FTF&quot;&gt;Adresse de la conférence sur OpenStreetMap&lt;/a&gt;&lt;br /&gt;
+
+</description>
+    </item>
+    <item>
+      <title>Gestion de configuration distribuée avec Mercurial</title>
+      <author>null@linuxfr.org (stephane jeannenot)</author>
+      <pubDate>Sat, 06 Dec 2008 11:43:32 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/06/24769.html</link>
+      <guid>http://linuxfr.org/2008/12/06/24769.html</guid>
+      <category>Python</category>
+      <description>&lt;a href=&quot;http://fr.wikipedia.org/wiki/Mercurial&quot; title=&quot;Définition Wikipédia&quot;&gt;Mercurial&lt;/a&gt; est un système de gestion de version distribué léger écrit en &lt;a href=&quot;http://fr.wikipedia.org/wiki/Python_(langage)&quot;&gt;Python&lt;/a&gt;. Il est multiplateforme (merci Python), rapide, facile à utiliser, propose des outils de migration/conversion des autres systèmes de &lt;a href=&quot;http://fr.wikipedia.org/wiki/Logiciel_de_gestion_de_versions&quot;&gt;gestion de configuration&lt;/a&gt; et est proposé sous licence GPL.&lt;br /&gt;
+&lt;br /&gt;
+La version 1.1 sortie le 2 décembre apporte de nouvelles fonctionnalités, des améliorations et des corrections de bugs.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://www.selenic.com/mercurial/wiki/index.cgi/Mercurial&quot;&gt;Page principale&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://www.selenic.com/mercurial/wiki/index.cgi/WhatsNew&quot;&gt;La liste des changements&lt;/a&gt;&lt;br /&gt;
+lien 3 : &lt;a href=&quot;http://www.selenic.com/mercurial/wiki/index.cgi/FrenchReleaseNotes&quot;&gt;La liste des changements (traduction)&lt;/a&gt;&lt;br /&gt;
+lien 4 : &lt;a href=&quot;http://hg.xavamedia.nl/mercurial/crew/?style=monoblue&quot;&gt;Page de présentation de l'interface web&lt;/a&gt;&lt;br /&gt;
+(...)
+</description>
+    </item>
+    <item>
+      <title>Sortie d'Opensolaris 2008.11</title>
+      <author>null@linuxfr.org (PsychoFox)</author>
+      <pubDate>Sat, 06 Dec 2008 11:42:38 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/06/24768.html</link>
+      <guid>http://linuxfr.org/2008/12/06/24768.html</guid>
+      <category>Technologie</category>
+      <description>La version 2008.11 du système d'exploitation libre de Sun Microsystem vient de sortir. Cette deuxième mouture officielle est encore une fois fournie sous la forme d'un live CD installable.&lt;br /&gt;
+&lt;br /&gt;
+Cette version reçoit bien sûr un grand nombre d'améliorations concernant le support matériel, ses technologies phares (&lt;a href=&quot;http://fr.wikipedia.org/wiki/Dtrace&quot; title=&quot;Définition Wikipédia&quot;&gt;Dtrace&lt;/a&gt;, &lt;a href=&quot;http://fr.wikipedia.org/wiki/ZFS&quot; title=&quot;Définition Wikipédia&quot;&gt;ZFS&lt;/a&gt;) ainsi que des corrections de bugs.&lt;br /&gt;
+&lt;br /&gt;
+Le bureau reçoit un grand nombre d'améliorations avec la mise à jour de ses applications les plus populaires, ainsi que l'ajout de Time Slider, le pendant libre à Time Machine reposant sur la technologie ZFS.&lt;br /&gt;
+&lt;br /&gt;
+L'autre grand champ d'amélioration est la personnalisation de OpenSolaris, grâce à des outils facilitant la création de distributions et de miroirs tiers comme le Distribution Constructor.&lt;br /&gt;
+&lt;br /&gt;
+On voit ainsi fleurir de plus en plus de dérivées, preuve de la bonne santé du projet.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://www.opensolaris.org&quot;&gt;Le projet Indiana/Opensolaris&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://www.opensolaris.org/os/downloads/&quot;&gt;Downloads&lt;/a&gt;&lt;br /&gt;
+lien 3 : &lt;a href=&quot;http://www.opensolaris.org/os/project/caiman/Constructor/&quot;&gt;Le Distribution Constructor&lt;/a&gt;&lt;br /&gt;
+lien 4 : &lt;a href=&quot;http://blogs.sun.com/erwann/entry/zfs_on_the_desktop_zfs&quot;&gt;ZFS Time Slider&lt;/a&gt;&lt;br /&gt;
+lien 5 : &lt;a href=&quot;http://opensolaris.org/os/community/zfs/&quot;&gt;Zetabyte File System&lt;/a&gt;&lt;br /&gt;
+(...)
+</description>
+    </item>
+    <item>
+      <title>Sortie de Python 3.0 version finale</title>
+      <author>null@linuxfr.org (Juno &amp; Haypo)</author>
+      <pubDate>Fri, 05 Dec 2008 22:29:14 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/05/24764.html</link>
+      <guid>http://linuxfr.org/2008/12/05/24764.html</guid>
+      <category>Python</category>
+      <description>Le 3 décembre 2008, la version finale du langage interprété &lt;a href=&quot;http://fr.wikipedia.org/wiki/Python&quot; title=&quot;Définition Wikipédia&quot;&gt;Python&lt;/a&gt; est sortie en version 3.0, après deux &lt;i&gt;Release candidates&lt;/i&gt;. Cette version représente une évolution majeure du langage, brisant la compatibilité avec les versions précédentes pour corriger les erreurs de conception.&lt;br /&gt;
+&lt;br /&gt;
+Selon &lt;a href=&quot;https://linuxfr.org/~haypo/&quot;&gt;Haypo&lt;/a&gt;, le changement majeur de Python3 est le passage intégral à &lt;a href=&quot;http://fr.wikipedia.org/wiki/Unicode&quot; title=&quot;Définition Wikipédia&quot;&gt;Unicode&lt;/a&gt; : par défaut les fichiers sont ouverts en mode texte en Unicode, un script Python est en &lt;a href=&quot;http://fr.wikipedia.org/wiki/UTF-8&quot; title=&quot;Définition Wikipédia&quot;&gt;UTF-8&lt;/a&gt; (Unicode), on peut utiliser des identifiants en Unicode (libre à vous d'écrire en japonais, français ou anglais, après ça dépend avec qui vous souhaitez travailler), et utilisation d'Unicode dans la grande majorité des modules (la bibliothèque standard).&lt;br /&gt;
+&lt;br /&gt;
+Pour celles et ceux qui s'interrogeraient quelle version de la 2 (2.6) ou de la 3 (3.0) ils devraient choisir, il est préférable de commencer par la 2 car de nombreux modules additionnels sont directement disponibles et testés pour cette version. Ensuite avec l'outil 2to3, il est possible de tester son code avec la version supérieure. On peut noter que quelques améliorations prévues pour Python 3 ont été rétropropagées dans Python 2.6, permettant une transition plus facile.&lt;br /&gt;
+&lt;br /&gt;
+Python 3.0 a pris beaucoup de retard sur son planning. L'équipe Python a préféré corriger tous les bugs plutôt que de sortir une version boguée qui dégoûterait les gens de Python 3.&lt;br /&gt;
+&lt;br /&gt;
+&lt;i&gt;&lt;acronym title=&quot;Note des modérateurs&quot;&gt;NdM&lt;/acronym&gt; : Merci à Haypo pour son journal publié précédemment à ce sujet&lt;/i&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://docs.python.org/3.0/&quot;&gt;Documentation officielle&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://www.python.org/download/&quot;&gt;Page des téléchargements&lt;/a&gt;&lt;br /&gt;
+lien 3 : &lt;a href=&quot;http://docs.python.org/dev/3.0/whatsnew/3.0.html&quot;&gt;Liste des nouveautés&lt;/a&gt;&lt;br /&gt;
+lien 4 : &lt;a href=&quot;http://developers.slashdot.org/article.pl?sid=08/12/04/0420219&quot;&gt;La nouvelle sur Slashdot&lt;/a&gt;&lt;br /&gt;
+lien 5 : &lt;a href=&quot;http://docs.python.org/library/2to3.html&quot;&gt;2to3 : traduction automatique de code&lt;/a&gt;&lt;br /&gt;
+lien 6 : &lt;a href=&quot;http://linuxfr.org/~haypo/27459.html&quot;&gt;Journal traitant de la RC2&lt;/a&gt;&lt;br /&gt;
+
+</description>
+    </item>
+    <item>
+      <title>Soirée internet et logiciels libres mercredi 17 décembre 2008 à Sisteron avec l'association Linux-Alpes</title>
+      <author>null@linuxfr.org (Jean-Christophe BECQUET)</author>
+      <pubDate>Fri, 05 Dec 2008 12:33:58 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/05/24763.html</link>
+      <guid>http://linuxfr.org/2008/12/05/24763.html</guid>
+      <category>Lug</category>
+      <description>	L'association &lt;a href=&quot;http://www.linux-alpes.org/&quot;&gt;Linux-Alpes&lt;/a&gt; vous invite à participer à sa prochaine soirée sur le thème &lt;b&gt;internet et logiciels libres&lt;/b&gt;, le mercredi 17 décembre 2008 à &lt;b&gt;Sisteron&lt;/b&gt;.&lt;br /&gt;
+&lt;br /&gt;
+Dès 20H00 : point d'actualité suivi d'un échange sur le thème &lt;b&gt;libertés numériques et internet&lt;/b&gt;&lt;br /&gt;
+&lt;br /&gt;
+À Partir de 21H00 : présentation et ateliers de découverte / installation de logiciels libres&lt;ul&gt;&lt;li&gt;Surfez en toute liberté et en sécurité avec Firefox&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Consultez vos e-mails avec Thunderbird&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Produisez vos documents avec la suite bureautique OpenOffice.org&lt;br /&gt;
+&lt;/li&gt;&lt;li&gt;Découvrez un système d'exploitation libre : Ubuntu Linux &lt;/li&gt;&lt;/ul&gt;La soirée a lieu dans les locaux des Mutuelles de France, 16 avenue des Arcades à Sisteron. Accès par la porte située sous l'arcade (montez les escaliers). Voir le plan sur &lt;a href=&quot;http://www.linux-alpes.org/&quot;&gt;http://www.linux-alpes.org/&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+Entrée libre et gratuite pour tous&lt;br /&gt;
+&lt;br /&gt;
+Linux-Alpes est un LUG actif dans les &lt;b&gt;Alpes du sud&lt;/b&gt; (Gap, Digne-les-Bains) et membre de l'&lt;a href=&quot;http://www.april.org/&quot;&gt;April&lt;/a&gt;. L'association fête ses &lt;b&gt;10 ans&lt;/b&gt; l'année prochaine et va publier très bientôt son pré-programme pour le &lt;b&gt;&lt;a href=&quot;http://www.libre-en-fete.net/&quot;&gt;Libre en fête 2009&lt;/a&gt;&lt;/b&gt;.&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://www.linux-alpes.org/&quot;&gt;Linux-Alpes&lt;/a&gt;&lt;br /&gt;
+lien 2 : &lt;a href=&quot;http://www.libre-en-fete.net/&quot;&gt;Libre en fête&lt;/a&gt;&lt;br /&gt;
+lien 3 : &lt;a href=&quot;http://www.agendadulibre.org/showevent.php?id=2759&quot;&gt;L'Agenda du Libre&lt;/a&gt;&lt;br /&gt;
+lien 4 : &lt;a href=&quot;http://openstreetmap.org/?mlat=44.19396&amp;amp;mlon=5.94265&amp;amp;zoom=15&amp;amp;layers=B000FTF&quot;&gt;Sisteron sur OpenStreetMap&lt;/a&gt;&lt;br /&gt;
+
+</description>
+    </item>
+    <item>
+      <title>Calendrier de l'Avent du libre</title>
+      <author>null@linuxfr.org (Olivier Paillet)</author>
+      <pubDate>Thu, 04 Dec 2008 22:24:59 +0100</pubDate>
+      <link>http://linuxfr.org/2008/12/04/24766.html</link>
+      <guid>http://linuxfr.org/2008/12/04/24766.html</guid>
+      <category>Linux</category>
+      <description>ByteCode – informatique libre (entreprise suisse romande de services en informatique libre) a ouvert un &lt;a href=&quot;http://fr.wikipedia.org/wiki/Calendrier_de_l%27Avent&quot;&gt;calendrier de l'Avent&lt;/a&gt; dont le thème est les logiciels libres : une façon originale et ludique de faire découvrir notre passion/combat au grand public.&lt;br /&gt;
+&lt;br /&gt;
+Comme dans un calendrier classique, vous pouvez cliquer chaque jour sur une case ouvrant sur un thème, personnalité ou logiciel lié au monde du libre.&lt;br /&gt;
+&lt;br /&gt;
+Le calendrier est basé sur &lt;a href=&quot;http://fr.wikipedia.org/wiki/Syst%C3%A8me_de_publication_pour_l%27internet_partag%C3%A9&quot;&gt;SPIP&lt;/a&gt; et les squelettes seront disponibles sous licence GPL en début d'année prochaine sur les serveurs de ByteCode (ainsi que d'autres logiciels sous licence libre !).&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+lien 1 : &lt;a href=&quot;http://www.bytecode.ch/-Calendrier-de-l-Avent.html&quot;&gt;Site du calendrier&lt;/a&gt;&lt;br /&gt;
+
+</description>
+    </item>  </channel>
+</rss>

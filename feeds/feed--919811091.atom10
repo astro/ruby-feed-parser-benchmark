@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xml:lang="en-US">
+  <title>Riding Rails - home</title>
+  <id>tag:weblog.rubyonrails.org,2008:mephisto/</id>
+  <generator uri="http://mephistoblog.com" version="0.7.3">Mephisto Noh-Varr</generator>
+  <link href="http://weblog.rubyonrails.org/feed/atom.xml" rel="self" type="application/atom+xml" />
+  <link href="http://weblog.rubyonrails.org/" rel="alternate" type="text/html" />
+  <updated>2008-12-10T16:15:48Z</updated>
+  <entry xml:base="http://weblog.rubyonrails.org/">
+    <author>
+      <name>Gregg Pollack</name>
+    </author>
+    <id>tag:weblog.rubyonrails.org,2008-12-10:23792</id>
+    <published>2008-12-10T16:08:00Z</published>
+    <updated>2008-12-10T16:15:48Z</updated>
+    <link href="http://feeds.feedburner.com/~r/RidingRails/~3/480715917/railsway-german-rails-magazine" rel="alternate" type="text/html" />
+    <title>RailsWay - German Rails Magazine</title>
+<content type="html">
+            &lt;p&gt;&lt;a href="http://it-republik.de/railsway/magazin-ausgaben/Ruby-on-Rails-000281.html" title="RailsWay"&gt;&lt;img src="/assets/2008/12/10/RailsWay_1.png" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;If you can read German and you develop with Rails you’ll be happy to know that &lt;a href="http://it-republik.de"&gt;it republik&lt;/a&gt;, the same company that also produces a Java, .NET, and &lt;span class="caps"&gt;PHP&lt;/span&gt; magazine, is about to release a Ruby on Rails Magazine called &lt;a href="http://it-republik.de/railsway/magazin-ausgaben/Ruby-on-Rails-000281.html" title="RailsWay"&gt;RailsWay&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;The magazine is in print and will be out in Germany, Switzerland and Austria by December 17, 2008. For 2009 they plan to release six issues (in the German language), and I hear they’re planning on an English version, but no &lt;span class="caps"&gt;ETA&lt;/span&gt; on that.  The content of the first issue includes:&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;Getting started with Ruby on Rails&lt;/li&gt;
+		&lt;li&gt;&lt;span class="caps"&gt;AJAX&lt;/span&gt; and Rails&lt;/li&gt;
+		&lt;li&gt;&lt;span class="caps"&gt;RAILS 2&lt;/span&gt;.2 – what’s new&lt;/li&gt;
+		&lt;li&gt;&lt;span class="caps"&gt;IDE&lt;/span&gt;’s for &lt;span class="caps"&gt;RAILS&lt;/span&gt;&lt;/li&gt;
+		&lt;li&gt;Behaviour Driven Development&lt;/li&gt;
+		&lt;li&gt;Metaprogramming With &lt;span class="caps"&gt;RUBY&lt;/span&gt;&lt;/li&gt;
+		&lt;li&gt;RESTFull Web Services&lt;/li&gt;
+		&lt;li&gt;Featured Website: Qype.com&lt;/li&gt;
+		&lt;li&gt;Tips, Tricks, Performance &amp; Security&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;&lt;span class="caps"&gt;A DVD&lt;/span&gt; comes with the magazine which includes tutorials, videos, free rails books, and a bunch of IDEs.  The Editor in Chief is &lt;a href="http://www.rails-experts.com/"&gt;Michael Johann&lt;/a&gt;, who has done a great deal to promote Rails in Germany.&lt;/p&gt;
+          </content>  <feedburner:origLink>http://weblog.rubyonrails.org/2008/12/10/railsway-german-rails-magazine</feedburner:origLink></entry>
+  <entry xml:base="http://weblog.rubyonrails.org/">
+    <author>
+      <name>David</name>
+    </author>
+    <id>tag:weblog.rubyonrails.org,2008-12-05:23674</id>
+    <published>2008-12-05T17:07:00Z</published>
+    <updated>2008-12-05T17:14:54Z</updated>
+    <category term="Releases" />
+    <link href="http://feeds.feedburner.com/~r/RidingRails/~3/475872174/new-ree-with-os-x-64-bit-solaris-support-and-gc-patches" rel="alternate" type="text/html" />
+    <title>New REE with OS X, 64-bit, Solaris support and GC patches</title>
+<content type="html">
+            &lt;p&gt;&lt;a href="http://www.phusion.nl/"&gt;Phusion&lt;/a&gt; is on a roll today. Not only did we just get a new Passenger, they’ve also just dropped a &lt;a href="http://blog.phusion.nl/2008/12/05/ruby-enterprise-edition-186-20081205-released-thank-you-sponsors/"&gt;new &lt;span class="caps"&gt;REE&lt;/span&gt;&lt;/a&gt; (the Ruby patches for copy-on-write) that includes 64-bit support as well as compatibility with &lt;span class="caps"&gt;OS X&lt;/span&gt; and Solaris. They’ve also fitted the excellent RailsBench patches from Stefan Kaes that allows you to tweak the GC settings in Ruby if you need to.&lt;/p&gt;
+
+
+	&lt;p&gt;This edition was sponsored by &lt;a href="http://www.37signals.com/"&gt;37signals&lt;/a&gt;, &lt;a href="http://www.curve21.com/"&gt;Curve21&lt;/a&gt;, &lt;a href="http://www.drdispatch.com/"&gt;Dr Dispatch Transportation Software&lt;/a&gt;, &lt;a href="http://infoether.com"&gt;InfoEther&lt;/a&gt;, &lt;a href="http://www.martianinteractive.com/"&gt;Martian Interactive&lt;/a&gt;, &lt;a href="http://www.nytimes.com/"&gt;New York Times&lt;/a&gt;, &lt;a href="http://www.shopify.com/"&gt;Shopify&lt;/a&gt;, Trevor Turk, and &lt;a href="http://www.utahimaging.com/"&gt;Utah Imaging&lt;/a&gt;.&lt;/p&gt;
+          </content>  <feedburner:origLink>http://weblog.rubyonrails.org/2008/12/5/new-ree-with-os-x-64-bit-solaris-support-and-gc-patches</feedburner:origLink></entry>
+  <entry xml:base="http://weblog.rubyonrails.org/">
+    <author>
+      <name>Mike Gunderloy</name>
+    </author>
+    <id>tag:weblog.rubyonrails.org,2008-12-05:23660</id>
+    <published>2008-12-05T14:51:00Z</published>
+    <updated>2008-12-05T14:52:44Z</updated>
+    <category term="Edge" />
+    <category term="edge" />
+    <link href="http://feeds.feedburner.com/~r/RidingRails/~3/475761451/this-week-in-edge-rails" rel="alternate" type="text/html" />
+    <title>This Week in Edge Rails</title>
+<content type="html">
+            &lt;h3&gt;November 29-December 5, 2008 Edition&lt;/h3&gt;
+
+
+	&lt;p&gt;Rails 2.3 development is still continuing at a healthy clip. Here’s an overview of what’s happened this week.&lt;/p&gt;
+
+
+	&lt;h2&gt;Application Templates&lt;/h2&gt;
+
+
+	&lt;p&gt;Rails now incorporates Jeremy McAnally’s &lt;a href="http://github.com/jeremymcanally/rg/tree/master"&gt;rg&lt;/a&gt; application generator. What this means is that we now have template-based application generation built right into Rails; if you have a set of plugins you include in every application (among many other use cases), you can just set up a template once and use it over and over again when you run the &lt;code&gt;rails&lt;/code&gt; command. Pratik Naik provided a &lt;a href="http://m.onkey.org/2008/12/4/rails-templates"&gt;thorough writeup&lt;/a&gt; of this feature over on his blog. &lt;a href="http://github.com/rails/rails/commit/e8cc4b116c460c524961a07da92da3f323854c15"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;Find Improvements&lt;/h2&gt;
+
+
+	&lt;p&gt;Even the venerable code used by Active Record to talk to databases can be improved, and we had a couple of improvements checked in this week. First, the &lt;span class="caps"&gt;SQL&lt;/span&gt; generated for preloading records in has_and_belongs_to_many associations has had an extra “AS” excised, which makes it work better with some databases. Also, we now have a &lt;code&gt;:having&lt;/code&gt; option on find (as well as on has_many and has_and_belongs_to_many associations) for filtering records in grouped finds. As those with heavy &lt;span class="caps"&gt;SQL&lt;/span&gt; backgrounds know, this allows filtering based on grouped results:&lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code&gt;
+developers =  Developer.find(:all, :group =&amp;gt; "salary", 
+  :having =&amp;gt; "sum(salary) &amp;gt;  10000", :select =&amp;gt; "salary")
+&lt;/code&gt;&lt;/pre&gt;
+
+	&lt;p&gt;&lt;a href="http://github.com/rails/rails/commit/0c4ba90aa1ea6a8d386c724a55a31e63a13c46ab"&gt;commit&lt;/a&gt; &lt;a href="http://github.com/rails/rails/commit/97403ad5fdfcdfb2110c6f8fd0ebf43b7afc4859"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;Rack Integration&lt;/h2&gt;
+
+
+	&lt;p&gt;The tighter integration of Rails with &lt;a href="http://rack.rubyforge.org/"&gt;Rack&lt;/a&gt; continues. This week saw the death of the venerable &lt;span class="caps"&gt;CGI&lt;/span&gt; processor within Rails, as well as the use of Rack to handle &lt;span class="caps"&gt;FCGI&lt;/span&gt;. There was also some refactoring down in the Rails tests to make them play nicer with Rack. &lt;a href="http://github.com/rails/rails/commit/9c9da6c892d715ca22c3cf51f50deb1d80029c66"&gt;commit&lt;/a&gt; &lt;a href="http://github.com/rails/rails/commit/926844e869b747fa1e9474fd95f9b97fa04ae092"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;Configuration File Cleanup&lt;/h2&gt;
+
+
+	&lt;p&gt;Over the years, the default environment.rb file had gotten a bit cluttered with comments, random documentation, and settings that mot people don’t need. &lt;span class="caps"&gt;DHH&lt;/span&gt; took a few minutes to clean up the mess, and the &lt;a href="http://github.com/rails/rails/tree/master/railties/environments/environment.rb"&gt;current state&lt;/a&gt; of this file is much leaner. As part of the cleanup, session store configuration has been moved out to its own file. &lt;a href="http://github.com/rails/rails/commit/6e66e7d6460b99bb0877a891aa3fbb789b563123"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;No More Process Scripts&lt;/h2&gt;
+
+
+	&lt;p&gt;If you’re one of the (fairly rare) Rails developers who deploys in a fashion that depends on the inspector, reaper, and spawner scripts, you’ll need to know that those scripts are no longer included in core Rails. For Rails applications that are reployed with current alternatives like Passenger, these are just unnecessary baggage. But if you need them, you’ll be able to pick up copies via the &lt;a href="http://github.com/rails/irs_process_scripts/tree"&gt;irs_process_scripts&lt;/a&gt; plugin. &lt;a href="http://github.com/rails/rails/commit/3b3c0507e2f67a0f64dc04b396c1d13411ab5890"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;Odds and Ends&lt;/h2&gt;
+
+
+	&lt;p&gt;The fact that Rails checks for IP spoofing can be a nuisance for sites that do heavy traffic with cell phones, because their proxies don’t generally set things up right. If that’s you, you can now set &lt;code&gt;ActionController::Base.ip_spoofing_check = false&lt;/code&gt; to disable the check entirely. &lt;a href="http://github.com/rails/rails/commit/0a4a5f3129a137fc357e8444a08b135f0ad4fbe8"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Rails.root now returns a Pathname object, which means you can use it directly with the join method to &lt;a href="http://afreshcup.com/2008/12/05/a-little-rails_root-tidiness/"&gt;clean up existing code&lt;/a&gt; that uses File.join. &lt;a href="http://github.com/rails/rails/commit/be140e8c6be966349c6fa35a87f84d5a73995b9a"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;ActionController::Dispatcher now implements its own middleware stack, which you can see by running &lt;code&gt;rake middleware&lt;/code&gt;. &lt;a href="http://github.com/rails/rails/commit/06ed8e451198b2296d8b2752741e259b4f995081"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Gem loading is smarter about missing dependencies. &lt;a href="http://github.com/rails/rails/commit/3c07a8828ede3d41000513af29c293ae2e2a49d4"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;auto_link now properly applies options (such as :target and :class) to generated e-mail links. &lt;a href="http://github.com/rails/rails/commit/bda55f82c687920807f606a2b024f1882094ef1e"&gt;commit&lt;/a&gt;&lt;/p&gt;
+          </content>  <feedburner:origLink>http://weblog.rubyonrails.org/2008/12/5/this-week-in-edge-rails</feedburner:origLink></entry>
+  <entry xml:base="http://weblog.rubyonrails.org/">
+    <author>
+      <name>David</name>
+    </author>
+    <id>tag:weblog.rubyonrails.org,2008-12-05:23655</id>
+    <published>2008-12-05T13:20:00Z</published>
+    <updated>2008-12-05T13:28:01Z</updated>
+    <category term="Releases" />
+    <link href="http://feeds.feedburner.com/~r/RidingRails/~3/475691557/phusion-passenger-2-0-5-now-compatible-with-edge-rails" rel="alternate" type="text/html" />
+    <title>Phusion Passenger 2.0.5 now compatible with Edge Rails</title>
+<content type="html">
+            &lt;p&gt;The Phusion team keeps blazing ahead with &lt;a href="http://www.modrails.com/"&gt;Passenger&lt;/a&gt; and improving it rapidly. They’ve just &lt;a href="http://blog.phusion.nl/2008/12/05/phusion-passenger-205-released-mentioned-on-live37signalscom/"&gt;released version 2.0.5&lt;/a&gt;, which includes a few fixes and introduces compatibility with the Rack-based Edge Rails.&lt;/p&gt;
+
+
+	&lt;p&gt;At 37signals, we’ve already switched over &lt;a href="http://www.tadalist.com/"&gt;Ta-da List&lt;/a&gt; and are busy working on getting the rest of our suite running on Passenger. It’s just so much easier to deal with and the memory savings you get through &lt;a href="http://www.rubyenterpriseedition.com/"&gt;&lt;span class="caps"&gt;REE&lt;/span&gt;&lt;/a&gt; are a nice cherry on top.&lt;/p&gt;
+
+
+	&lt;p&gt;I keep getting a steady stream of success reports from all over the world as well. I’ve even read of a few people getting back into Rails development because Passenger finally took out the inconvenience of deploying.&lt;/p&gt;
+
+
+	&lt;p&gt;It’s hard to argue with the usability. I’ve personally been setting up a new server running Ubuntu 8.10 and using Apache 2 with Passenger. The time it took me to go from a fresh install to a complete production setup was ridiculously low. There’s just so much less to worry about.&lt;/p&gt;
+
+
+	&lt;p&gt;If you haven’t given Passenger a chance yet, now is definitely the time.&lt;/p&gt;
+          </content>  <feedburner:origLink>http://weblog.rubyonrails.org/2008/12/5/phusion-passenger-2-0-5-now-compatible-with-edge-rails</feedburner:origLink></entry>
+  <entry xml:base="http://weblog.rubyonrails.org/">
+    <author>
+      <name>Mike Gunderloy</name>
+    </author>
+    <id>tag:weblog.rubyonrails.org,2008-11-28:23474</id>
+    <published>2008-11-28T17:33:00Z</published>
+    <updated>2008-11-28T17:34:34Z</updated>
+    <category term="Edge" />
+    <link href="http://feeds.feedburner.com/~r/RidingRails/~3/468831537/this-week-in-edge-rails" rel="alternate" type="text/html" />
+    <title>This Week in Edge Rails</title>
+<content type="html">
+            &lt;p&gt;Yesterday was Thanksgiving holiday for US-based developers – but it certainly hasn’t looked like a holiday week in edge Rails. Things are moving fast, with some major changes afoot for version 2.3 of Rails.&lt;/p&gt;
+
+
+	&lt;h2&gt;Rack integration&lt;/h2&gt;
+
+
+	&lt;p&gt;The underpinnings of script/server have been simplified and rewritten somewhat. The explicit list of supported servers that used to be in script/server is gone. Instead, Rails now depends on the installation of &lt;a href="http://rack.rubyforge.org/"&gt;Rack&lt;/a&gt;, and &lt;a href="http://github.com/rails/rails/commit/708f4c3ae6a41a46ab36a05ea4e126392b81511b"&gt;script/server goes through this&lt;/a&gt; – which means that Rails supports any server that Rack does.&lt;/p&gt;
+
+
+	&lt;h2&gt;Efficient routes&lt;/h2&gt;
+
+
+	&lt;p&gt;Routing sees a couple of big changes this week. The &lt;code&gt;formatted_&lt;/code&gt; route helpers are gone, in favor just passing in &lt;code&gt;:format&lt;/code&gt; as an option. This cuts down the route generation process by 50% for any resource – and can save a substantial amount of memory (up to 100MB on large applications, according to the &lt;a href="http://rails.lighthouseapp.com/projects/8994/tickets/1359"&gt;Lighthouse ticket&lt;/a&gt; ) If your code uses the &lt;code&gt;formatted_&lt;/code&gt; helpers, it will still work for the time being – but that behavior is deprecated and your application will be more efficient if you rewrite those routes using the new standard. Another big change is that Rails now supports multiple routing files, not just routes.rb. You can use &lt;code&gt;RouteSet#add_configuration_file&lt;/code&gt; to bring in more routes at any time – without clearing the currently-loaded routes. &lt;a href="http://github.com/rails/rails/commit/fef6c32afe2276dffa0347e25808a86e7a101af1"&gt;commit&lt;/a&gt; &lt;a href="http://github.com/rails/rails/commit/40b40c487040d9c721d486e8ec8cfbc53a8cd79a"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;Better support for engine plugins&lt;/h2&gt;
+
+
+	&lt;p&gt;The second routing change enables better support for Rails Engines: routing files in engines are automatically loaded and reloaded now (as are those in other plugins). Engines are getting some love other than routing. If your plugin has an app folder, then app/[models|controllers|helpers] will automatically be added to the Rails load path. There’s &lt;a href="http://github.com/rails/rails/commit/63d8f56774dcb1ea601928c3eb6c119d359fae10#comments"&gt;active discussion&lt;/a&gt; of just how this should work, and how much to pick up from the current engines plugins, so it’s likely we haven’t seen the last commits in this area. Engines also support adding view paths now. &lt;a href="http://github.com/rails/rails/commit/4999d52e08a02ebba344f6c318f0af4b5b18f0e5"&gt;commit&lt;/a&gt; &lt;a href="http://github.com/rails/rails/commit/63d8f56774dcb1ea601928c3eb6c119d359fae10"&gt;commit&lt;/a&gt; &lt;a href="http://github.com/rails/rails/commit/3cc9d1c5ad1639283b43ee2b6099cb4f3b19bf23"&gt;commit&lt;/a&gt; &lt;a href="http://github.com/rails/rails/commit/f2ee056873b84f8917e72d87181e1a9f5f653342"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;Sensible backtraces for your tests&lt;/h2&gt;
+
+
+	&lt;p&gt;If you’re a fan of the Thoughtbot &lt;a href="http://www.thoughtbot.com/projects/quietbacktrace"&gt;Quiet Backtrace&lt;/a&gt; plugin, which allows you to selectively remove lines from Test::Unit backtraces, you’ll be happy to find &lt;code&gt;ActiveSupport::BacktraceCleaner&lt;/code&gt; and &lt;code&gt;Rails::BacktraceCleaner&lt;/code&gt; in core. This supports both filters (to perform regex-based substitutions on backtrace lines) and silencers (to remove backtrace lines entirely). Rails automatically adds silencers to get rid of the most common noise in a new application, and builds a &lt;code&gt;config/backtrace_silencers.rb&lt;/code&gt; file to hold your own additions. &lt;a href="http://github.com/rails/rails/commit/f42c77f927eb49b00e84d355e07de48723d03fcb"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;Ruby 1.9 integration&lt;/h2&gt;
+
+
+	&lt;p&gt;A variety of commits continue the drive towards Ruby 1.9 and &lt;a href="http://blog.zenspider.com/minitest/"&gt;minitest&lt;/a&gt; compatibility. This should ensure that Rails 2.3 is ready to handle the latest Ruby underpinnings when it’s released. Those on the bleeding edge at the moment need to beware, though: one of the &lt;a href="http://github.com/rails/rails/commit/e7208d382a3d8bae9ab13d8a380b1a2a05fd99b0"&gt;changes&lt;/a&gt; in edge Rails depends on a &lt;a href="http://redmine.ruby-lang.org/issues/show/771"&gt;ruby-core patch&lt;/a&gt; that hasn’t yet been applied there. You’ll also (temporarily) need to pick up Jeremy Kemper’s &lt;a href="http://github.com/jeremy/mocha/tree/master"&gt;fork of Mocha&lt;/a&gt; for MiniTest compatability as required by &lt;a href="http://github.com/rails/rails/commit/e931012287df0bca83cae04d95c2e0835ae08758"&gt;this commit&lt;/a&gt; .&lt;/p&gt;
+
+
+	&lt;h2&gt;Faster boot time in development mode with lazy loading/autoload&lt;/h2&gt;
+
+
+	&lt;p&gt;Jeremy Kemper and Josh Peek have been doing a ton of work on making sure that bits of Rails (and its dependencies) are only brought into memory when they’re actually needed. Check out the commits from November 23 for a bunch of lazy-loading changes. The core frameworks – Active Support, Active Record, Action Controller, Action Mailer and Action View – are now using &lt;code&gt;autoload&lt;/code&gt; to lazy-load their individual classes. This work should help keep the memory footprint down and improve overall Rails performance. &lt;a href="http://github.com/rails/rails/commit/e201fc750bf4b7dff1875b7fcdd47f1686ef2052"&gt;commit&lt;/a&gt; &lt;a href="http://github.com/rails/rails/commit/2c01f2b4e9d4a95bb2baca8ae57209eb10aa78b2"&gt;commit&lt;/a&gt; &lt;a href="http://github.com/rails/rails/commit/31ce92f7b5784bc5b6a441e88cd734c7b8b1c58f"&gt;commit&lt;/a&gt; &lt;a href="http://github.com/rails/rails/commit/7254d23764f7abe8023f3daeb07d99ea1c8e777a"&gt;commit&lt;/a&gt; &lt;a href="http://github.com/rails/rails/commit/368117c0411a636a0cbfdc33fbf679c3e9233da7"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;Misc&lt;/h2&gt;
+
+
+	&lt;p&gt;You can specify using the new &lt;code&gt;preload_frameworks&lt;/code&gt; option whether the core libraries should be autoloaded at startup. This defaults to &lt;code&gt;false&lt;/code&gt; so that Rails autoloads itself piece-by-piece, but there are some circumstances where you still need to bring in everything at once – Passenger and JRuby both want to see all of Rails loaded together. &lt;a href="http://github.com/rails/rails/commit/104f3a57768602289299b3be0fab5b1ed21d7653"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Asset hosts get more flexible in edge Rails with the ability to declare an asset host as a specific object that responds to a call. &lt;span class="caps"&gt;DHH&lt;/span&gt; has supplied a sample project, &lt;a href="http://github.com/dhh/asset-hosting-with-minimum-ssl/tree/master"&gt;asset-hosting-with-minimum-ssl&lt;/a&gt; , that demonstrates one good use for this functionality. &lt;a href="http://github.com/rails/rails/commit/229f959d15e451890db60dbb73f8565079977814"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;You can now configure the location of the helpers folder for a Rails application by setting &lt;code&gt;ActionController::Base.helpers_dir&lt;/code&gt;. This will be a boon in some unusual circumstances – the original &lt;a href="http://rails.lighthouseapp.com/projects/8994/tickets/1424"&gt;use case&lt;/a&gt; is for building a Rails application that encourages extension via plugin rather than by altering the application itself. &lt;a href="http://github.com/rails/rails/commit/bdf995bc5da016e99d1636e62b39c92384263a9c"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Token generation for &lt;span class="caps"&gt;CSRF&lt;/span&gt; protection has been simplified; now Rails uses a simple random string generated by &lt;code&gt;ActiveSupport::SecureRandom&lt;/code&gt; rather than mucking around with session IDs. As a result, the &lt;code&gt;:digest&lt;/code&gt; and &lt;code&gt;:secret&lt;/code&gt; options to &lt;code&gt;protect_from_forgery&lt;/code&gt; are deprecated and have no effect on edge. &lt;a href="http://github.com/rails/rails/commit/9fdb15e60f4d4e37916e5354c50d559773bbe014"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;While we’re on the subject of secrets, some people will find novel uses for &lt;code&gt;ActiveSupport::MessageEncryptor&lt;/code&gt;, which provides a simple way to encrypt information for storage in an untrusted location (like cookies). &lt;a href="http://github.com/rails/rails/commit/07abc5efe1bc71902b0c517ef97dcb36564f2336"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Active Support’s &lt;code&gt;from_xml&lt;/code&gt; no longer depends on XmlSimple. Instead, Rails now includes its own XmlMini implementation, with just the functionality that it requires. This lets Rails dispense with the bundled copy of XmlSimple that it’s been carting around. &lt;a href="http://github.com/rails/rails/commit/fea8d9d06ffaf85eb9e590ae3ac7cf082ad0c420"&gt;commit&lt;/a&gt; &lt;a href="http://github.com/rails/rails/commit/b7fef2610b239db923909cc0fbfc33e6080fe0c4"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;As you probably recall, last week’s improvements included the renaming of application.rb to application_controller.rb. This week there’s a new rake task, &lt;code&gt;rake rails:update:application_controller&lt;/code&gt; to do this automatically for you – and it will be run as part of the normal &lt;code&gt;rake rails:update&lt;/code&gt; process. &lt;a href="http://github.com/rails/rails/commit/9e08a3bb1d47f79b6953056e72eee58e86d83ead"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Good news if you’re using &lt;code&gt;ActiveSupport::OrderedHash&lt;/code&gt;: it now implements &lt;code&gt;each_key&lt;/code&gt; and &lt;code&gt;each_value&lt;/code&gt;. &lt;a href="http://github.com/rails/rails/commit/05a938c5f7804fd59c76c45df096e6ebff871a18"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;One more bit of core Rails is open to I18n: the units used by &lt;code&gt;number_to_human_size&lt;/code&gt;. If you’re maintaining a translation file, you need to add the &lt;code&gt;storage_units: [Bytes, KB, MB, GB, TB]&lt;/code&gt; to your translations. &lt;a href="http://github.com/rails/rails/commit/d36158794b19ee8ea49d74061218b37d4301f0f9"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Support for Rails components – which were famously called “a shining example of what happens when eagerness overtakes prudence” in Agile Web Development With Rails – is finally gone. If a couple of years of warning about this deprecation wasn’t enough for you, then it’s time to find an alternate solution at last. &lt;a href="http://github.com/rails/rails/commit/36dcfcf126b7e7ba33ebe0d7148c9023e7494464"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Various files in /public that deal with &lt;span class="caps"&gt;CGI&lt;/span&gt; and &lt;span class="caps"&gt;FCGI&lt;/span&gt; dispatching are no longer generated in every Rails application by default (you can still get them if you need them by adding &lt;code&gt;--with-dispatches&lt;/code&gt; when you run the rails command, or add them later with &lt;code&gt;rake rails:generate_dispatchers&lt;/code&gt;). &lt;a href="http://github.com/rails/rails/commit/5b5730cc6e9194fb5f67fe79d2c7849e200ba6ed"&gt;commit&lt;/a&gt; &lt;a href="http://github.com/rails/rails/commit/1cbdd53bd383e7d1dc34cad50c22ff5a330bbf91"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Just a reminder: I’m not providing pointers to every single commit here, just trying to highlight things. This week’s edge changes actually included 136 commits from a wide variety of contributors.&lt;/p&gt;
+          </content>  <feedburner:origLink>http://weblog.rubyonrails.org/2008/11/28/this-week-in-edge-rails</feedburner:origLink></entry>
+  <entry xml:base="http://weblog.rubyonrails.org/">
+    <author>
+      <name>David</name>
+    </author>
+    <id>tag:weblog.rubyonrails.org,2008-11-27:23436</id>
+    <published>2008-11-27T11:06:00Z</published>
+    <updated>2008-11-27T11:11:35Z</updated>
+    <category term="Documentation" />
+    <link href="http://feeds.feedburner.com/~r/RidingRails/~3/468831540/new-15-minute-blog-video-on-rails-2-2" rel="alternate" type="text/html" />
+    <title>New 15-minute blog video on Rails 2.2</title>
+<content type="html">
+            &lt;p&gt;The old 15-minute blog video was getting really long in the tooth, so it’s with great pleasure that I can present &lt;a href="http://rubyonrails.org/screencasts"&gt;the new video made with Rails 2.2&lt;/a&gt; and done by Ryan Bates. It really takes it all up a notch by showing the creation of a blog with comments, ajax, feed, api, admin interface, and more.&lt;/p&gt;
+
+
+	&lt;p&gt;Ryan Bates is also the author of the wonderful &lt;a href="http://railscasts.com"&gt;Railscasts.com&lt;/a&gt; site that features video explanations on Rails features. It’s a fantastic resource and now properly recognized on the screencasting page.&lt;/p&gt;
+
+
+	&lt;p&gt;I’ve also linked up the commercial Rails screencasters. The amount of material available for people interested in learning by video is simply staggering.&lt;/p&gt;
+          </content>  <feedburner:origLink>http://weblog.rubyonrails.org/2008/11/27/new-15-minute-blog-video-on-rails-2-2</feedburner:origLink></entry>
+  <entry xml:base="http://weblog.rubyonrails.org/">
+    <author>
+      <name>David</name>
+    </author>
+    <id>tag:weblog.rubyonrails.org,2008-11-21:23108</id>
+    <published>2008-11-21T17:22:00Z</published>
+    <updated>2008-11-21T19:45:35Z</updated>
+    <category term="Releases" />
+    <link href="http://feeds.feedburner.com/~r/RidingRails/~3/468831541/rails-2-2-i18n-http-validators-thread-safety-jruby-1-9-compatibility-docs" rel="alternate" type="text/html" />
+    <title>Rails 2.2: i18n, HTTP validators, thread safety, JRuby/1.9 compatibility, docs</title>
+<content type="html">
+            &lt;p&gt;Rails 2.2 is finally done after we cleared the last issues from the release candidate program. This release contains an long list of fixes, improvements, and additions that’ll make everything Rails smoother and better, but we also have a number of star player features to parade this time.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;b&gt;Internationalization by default&lt;/b&gt;&lt;br /&gt;
+The most important is that Rails now includes a full-on internationalization framework and that it’s &lt;a href="http://weblog.rubyonrails.org/2008/11/18/new-rails-2-2-i18n-defaults"&gt;pre-wired from start&lt;/a&gt;. The work of the i18n group has been very impressive and it’s great to see that Rails finally ships with a solution in the box that’s both simple and extensible. Great job, guys!&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;b&gt;Stronger etag and last-modified support&lt;/b&gt;&lt;br /&gt;
+We’ve also added much better support for &lt;span class="caps"&gt;HTTP&lt;/span&gt; validators in the form of etag and last-modified. Making it so much easier to skip expensive procesesing if the client already has the latest stuff. This also makes it even easier to use Rails with &lt;a href="http://tomayko.com/writings/things-caches-do"&gt;gateway proxies&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;b&gt;Thread safety and a connection pool&lt;/b&gt;&lt;br /&gt;
+Josh Peek has added thread safety to Rails and Nick Sieger from &lt;a href="http://jruby.codehaus.org/"&gt;JRuby&lt;/a&gt; worked on getting Active Record a proper connection pool. So now all elements of Rails are thread safe, which is a big boon for the JRuby guys in particular. For C Ruby, we still need a bunch of dependent libraries to go non-blocking before it’ll make much of a difference, but work on that is forth coming.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;b&gt;Ruby 1.9 and JRuby compatibility&lt;/b&gt;&lt;br /&gt;
+Jeremy Kemper has been rocking on both Ruby 1.9 and JRuby compatibility. Rails 2.2 is fully compatible with both, but again, there might be supporting libraries and gems that are not. Again, lots of work is going into making everything else fully compatible as well.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;b&gt;Better &lt;span class="caps"&gt;API&lt;/span&gt; docs, great guides&lt;/b&gt;&lt;br /&gt;
+Finally, the last big push has been with the documentation of Rails. Pratik’s &lt;a href="http://github.com/lifo/docrails/tree/master"&gt;docrails&lt;/a&gt; project has made immense progress. Not only are the &lt;a href="http://api.rubyonrails.org/"&gt;&lt;span class="caps"&gt;API&lt;/span&gt; docs&lt;/a&gt; much improved, but we also have a whole &lt;a href="http://guides.rubyonrails.org/"&gt;new guides section&lt;/a&gt; generated from documentation that now lives with the source. A true community project with lots of contributors. I’m sure both those new and old to Rails will greatly appreciate the strong focus on documentation.&lt;/p&gt;
+
+
+	&lt;p&gt;To read about all these features and more in details, checkout &lt;a href="http://guides.rubyonrails.org/2_2_release_notes.html"&gt;the Rails 2.2 release notes&lt;/a&gt;—another one of those guides from the docrails project.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;b&gt;How to install&lt;/b&gt;&lt;br /&gt;
+As always, you can install Rails 2.2 through RubyGems. We now require RubyGems 1.3.1, so be sure to update that first: &lt;code&gt;gem update --system&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Then you can install Rails: &lt;code&gt;gem install rails&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;If you’re updating an existing application, you can run &lt;code&gt;rake rails:update&lt;/code&gt; to get the latest JavaScript files and scripts.&lt;/p&gt;
+
+
+	&lt;p&gt;From all of us to all of you, we hope you enjoy this release. It’s a true pleasure to see Rails make such big steps forward once again. Dig in, have fun, and we’ll be back with Rails 2.3 with even more before you know it.&lt;/p&gt;
+          </content>  <feedburner:origLink>http://weblog.rubyonrails.org/2008/11/21/rails-2-2-i18n-http-validators-thread-safety-jruby-1-9-compatibility-docs</feedburner:origLink></entry>
+  <entry xml:base="http://weblog.rubyonrails.org/">
+    <author>
+      <name>Mike Gunderloy</name>
+    </author>
+    <id>tag:weblog.rubyonrails.org,2008-11-21:23091</id>
+    <published>2008-11-21T15:19:00Z</published>
+    <updated>2008-11-21T15:25:55Z</updated>
+    <category term="Edge" />
+    <category term="edge" />
+    <category term="rails" />
+    <link href="http://feeds.feedburner.com/~r/RidingRails/~3/468831544/this-week-in-edge-rails" rel="alternate" type="text/html" />
+    <title>This Week in Edge Rails</title>
+<content type="html">
+            &lt;p&gt;First up this week, a warning for those who don’t closely follow the state of the &lt;a href="http://github.com/rails/rails/tree/master"&gt;Rails repository&lt;/a&gt; – “edge” really means edge now. The bits for 2.2 are getting locked down for release, and the repository has been forked; for the moment, edge Rails is being identified as &lt;a href="http://github.com/rails/rails/commit/51a19ae2bf33e66b23ff5c91bf584b2efa9e669f"&gt;2.3&lt;/a&gt; , though that projected version number might change later. If you’re trying to install almost-released 2.2 bits on your machine, make sure you’re using the 2-2-stable branch, and not edge, which is currently seeing some major changes.&lt;/p&gt;
+
+
+	&lt;p&gt;The 2-2-stable code is still seeing changes, but they’re either bug fixes or very small things. This week, that includes fixing &lt;a href="http://github.com/rails/rails/commit/d3fd9971093101712e4cc97ccc534631888b673d"&gt;a bug in assignment to has_one :through associations&lt;/a&gt; , some further tuning of &lt;a href="http://github.com/rails/rails/commit/8c197fb4ab4fa432a6e9421e0339a17a7ec296f1"&gt;&lt;span class="caps"&gt;CSRF&lt;/span&gt; protection&lt;/a&gt; , a fix to handling of &lt;a href="http://github.com/rails/rails/commit/337c361e26fe5647036f94556fe792535a921f93"&gt;checkboxes for Boolean attributes&lt;/a&gt; , updating the bundled copies of TZInfo, Prototype, and script.aculo.us, and some Ruby 1.9 compatibility work (though currently full Ruby 1.9 compatibility is targeted for Rails 2.3).&lt;/p&gt;
+
+
+	&lt;p&gt;The biggest feature change in the 2.2 branch is the addition of explicit I18n support to newly-generated Rails projects, including a sample locale file, auto-loading all locales in config/locales, and sample settings in config/environment.rb. &lt;a href="http://github.com/rails/rails/commit/d9b92ee11b33fed5c7a94a91415fa846705f7dd3"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Also worth noting in 2.2 is a chunk of code removal: a whole mess of special case tests for the &lt;span class="caps"&gt;SQL&lt;/span&gt; Server adapter have been chopped out of the Active Record test cases. That’s because Ken Collins has done tremendous work in making the &lt;a href="http://github.com/rails-sqlserver/2000-2005-adapter/tree/master"&gt;&lt;span class="caps"&gt;SQL&lt;/span&gt; Server adapter&lt;/a&gt; work the way that Rails expects data adapters to work, giving us a big step in the area of backend portability. &lt;a href="http://github.com/rails/rails/commit/8e4624be9e55cd0865b307be70a1e6287ec033ca"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;On the actual edge code (the master branch in the repository), there’s a lot more action. With that branch just opened, some pent-up code has been checked in, and some big changes are being made. It’s an exciting time, and edge is definitely worth checking out. Here are some of the most notable changes in the past week.&lt;/p&gt;
+
+
+	&lt;p&gt;One big set of changes has come from Jeremy Kemper, who has been overhauling the internal Rails testing to switch from &lt;code&gt;Test::Unit::TestCase&lt;/code&gt; to &lt;code&gt;ActiveSupport::TestCase&lt;/code&gt;. This work also includes requiring Mocha to test Rails (in the 2.2 code, some tests are skipped if you don’t have Mocha installed) and generally making the Rails testing strategy (both within core and for generated applications) more consistent moving forward.&lt;/p&gt;
+
+
+	&lt;p&gt;If you’re one of the people who has always been bothered by the special-case naming of application.rb, rejoice! It’s been reworked to be application_controller.rb in the edge code. More info &lt;a href="http://afreshcup.com/2008/11/17/rails-2x-the-death-of-applicationrb/"&gt;here&lt;/a&gt; and &lt;a href="http://ryandaigle.com/articles/2008/11/19/what-s-new-in-edge-rails-application-rb-duality-is-no-more"&gt;here&lt;/a&gt; . &lt;a href="http://github.com/rails/rails/commit/fcce1f17eaf9993b0210fe8e2a8117b61a1f0f69"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Rails 2.3 will introduce the notion of &lt;a href="http://ryandaigle.com/articles/2008/11/18/what-s-new-in-edge-rails-default-scoping"&gt;default scopes&lt;/a&gt; : similar to named scopes, but applying to all named scopes or find methods within the class. For example, you can write &lt;code&gt;default_scope :order =&amp;gt; 'name ASC'&lt;/code&gt; and any time you retrieve records from that class they’ll come out sorted by name (unless you override the option, of course). &lt;a href="http://github.com/rails/rails/commit/2530d0eea8eaecd2c61f99225f050ff47973e9a0"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;A lot of folks have adopted the notion of using try() to attempt operations on objects – Here’s Chris Wanstrath’s &lt;a href="http://ozmm.org/posts/try.html"&gt;blog post&lt;/a&gt; introducing it. It’s especially helpful in views where you can avoid nil-checking by writing code like &lt;code&gt;&amp;lt;%= @person.try(:name) %&amp;gt;&lt;/code&gt;. Well, now it’s baked right into Rails. &lt;a href="http://github.com/rails/rails/commit/51730792ca930a896361eb92354a42bc56903de1"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Also new on the syntactic sugar front is &lt;code&gt;Enumerable#none?&lt;/code&gt; to check that none of the elements match the supplied block. &lt;a href="http://github.com/rails/rails/commit/f451f0e5cfa358e88ac9d03d813a9c84facd6648"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;The render method has been getting smarter over the years, and it’s going to be even smarter in 2.3. If you have an object or a collection and the naming matches up, you can now just do &lt;code&gt;&amp;lt;% render @article %&amp;gt;&lt;/code&gt; or &lt;code&gt;&amp;lt;% render @articles %&amp;gt;&lt;/code&gt; and things will just work. Ryan Daigle has some more &lt;a href="http://ryandaigle.com/articles/2008/11/20/what-s-new-in-edge-rails-render-stops-being-high-maintenance"&gt;examples&lt;/a&gt; on this. &lt;a href="http://github.com/rails/rails/commit/e442448fa3f706062ef9c89912c1fd95e1119f67"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;On a somewhat similar note, render_component goes from “deprecated” to “nonexistent” in 2.3. If you still need it, you can install the &lt;a href="http://github.com/rails/render_component/tree/master"&gt;plugin&lt;/a&gt; . &lt;a href="http://github.com/rails/rails/commit/27c03e69e94655482b0d77d3ae0ca902ce537f8c"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;The &lt;code&gt;autolink&lt;/code&gt; helper has been refactored to make it a bit less messy and more intuitive. &lt;a href="http://github.com/rails/rails/commit/c6c5cd554110f6e62290de3e3008076b2f69e7cb"&gt;commit&lt;/a&gt; &lt;a href="http://github.com/rails/rails/commit/4f984c9d0e66601a81cb5ae6e3b50582e6dc0c2d"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;There’s a fix to a memory leak connected to thread safety and asset tags, that could bite sites that were referencing a lot of external images. Aaron Batalion contributed the fix, as well as a &lt;a href="http://blog.hungrymachine.com/2008/11/19/are-your-mongrels-growing-to-600mb-blame-assettag"&gt;blog post&lt;/a&gt; explaining the issue. &lt;a href="http://github.com/rails/rails/commit/e54c33bfc8eab7ac482d571ab6bb0285b40fa56b"&gt;commit&lt;/a&gt; and &lt;a href="http://github.com/rails/rails/commit/d7f4921a9a852da7c1075275eaf73822edb7acff"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Finally, it’s worth mentioning that some controversy has erupted over a change made to the 2.2 code &lt;a href="http://github.com/rails/rails/commit/22af62cf486721ee2e45bb720c42ac2f4121faf4"&gt;five months ago&lt;/a&gt; – the addition of &lt;code&gt;Array#second&lt;/code&gt; through &lt;code&gt;Array#tenth&lt;/code&gt; as aliases for &lt;code&gt;Array#[1]&lt;/code&gt; through &lt;code&gt;Array#[9]&lt;/code&gt;. Without taking a stand on the controversy (I’ve done that &lt;a href="http://afreshcup.com/2008/11/20/a-modest-proposal/"&gt;elsewhere&lt;/a&gt;), I’ll just note that the most recent edge checkin as I write this trims this down to only support &lt;code&gt;Array#second&lt;/code&gt; through &lt;code&gt;Array#fifth&lt;/code&gt; – and uses the savings in overhead to implement &lt;code&gt;Array#forty-two&lt;/code&gt;. &lt;a href="http://github.com/rails/rails/commit/e50530ca3ab5db53ebc74314c54b62b91b932389"&gt;commit&lt;/a&gt;&lt;/p&gt;
+          </content>  <feedburner:origLink>http://weblog.rubyonrails.org/2008/11/21/this-week-in-edge-rails</feedburner:origLink></entry>
+  <entry xml:base="http://weblog.rubyonrails.org/">
+    <author>
+      <name>michael</name>
+    </author>
+    <id>tag:weblog.rubyonrails.org,2008-11-18:22844</id>
+    <published>2008-11-18T18:13:00Z</published>
+    <updated>2008-11-26T18:35:33Z</updated>
+    <category term="announcement" />
+    <category term="csrf" />
+    <category term="security" />
+    <link href="http://feeds.feedburner.com/~r/RidingRails/~3/468831545/potential-circumvention-of-csrf-protection-in-rails-2-1" rel="alternate" type="text/html" />
+    <title>Potential Circumvention of CSRF Protection in Rails 2.1</title>
+<content type="html">
+            &lt;p&gt;There is a bug in all 2.1.x versions of Ruby on Rails which affects the effectiveness of the &lt;span class="caps"&gt;CSRF&lt;/span&gt; protection given by protect_from_forgery.&lt;/p&gt;
+
+
+	&lt;p&gt;By design rails does not perform token verification on requests with certain content types not typically generated by browsers.  Unfortunately this list also included ‘text/plain’ which can be generated by browsers.&lt;/p&gt;
+
+
+	&lt;h2&gt;Impact&lt;/h2&gt;
+
+
+	&lt;p&gt;Requests can be crafted which will circumvent the &lt;span class="caps"&gt;CSRF&lt;/span&gt; protection entirely.  Rails does not parse the parameters provided with these requests, but that may not be enough to protect your application.&lt;/p&gt;
+
+
+	&lt;h2&gt;Affected Versions&lt;/h2&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;All releases in the 2.1 series&lt;/li&gt;
+		&lt;li&gt;All 2.2 Pre Releases&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;h2&gt;Fixes&lt;/h2&gt;
+
+
+	&lt;p&gt;The upcoming 2.1.3 and 2.2.2 releases will contain a fix for this issue.&lt;/p&gt;
+
+
+	&lt;h2&gt;Interim Workarounds&lt;/h2&gt;
+
+
+	&lt;p&gt;Users of 2.1.x releases are advised to insert the following code into a file in config/initializers/&lt;/p&gt;
+
+
+&lt;blockquote&gt;
+	&lt;p&gt;Mime::Type.unverifiable_types.delete(:text)&lt;/p&gt;
+
+&lt;/blockquote&gt;
+
+
+
+
+	&lt;p&gt;Users of Edge Rails after 2.2.1, should upgrade to the latest code in 2-2-stable.&lt;/p&gt;
+
+
+	&lt;p&gt;The patch for the 2.1.x series is available on &lt;a href="http://github.com/rails/rails/commit/099a98e9b7108dae3e0f78b207e0a7dc5913bd1a"&gt;github&lt;/a&gt;. This will also apply cleanly to 2.2 pre-releases prior to &lt;a href="http://github.com/rails/rails/commit/f1ad8b48aae3ee26613b3e77bc0056e120096846"&gt;this changeset&lt;/a&gt; released on Thursday November 13th at 11:19:53 2008 &lt;span class="caps"&gt;CET&lt;/span&gt;.  Users with edge-rails checkouts after that date, are advised to upgrade to the latest code in 2-2-stable.&lt;/p&gt;
+
+
+	&lt;p&gt;Thanks to &lt;a href="http://coderrr.wordpress.com/"&gt;Steve from Coderrr&lt;/a&gt; for reporting this issue.&lt;/p&gt;
+          </content>  <feedburner:origLink>http://weblog.rubyonrails.org/2008/11/18/potential-circumvention-of-csrf-protection-in-rails-2-1</feedburner:origLink></entry>
+  <entry xml:base="http://weblog.rubyonrails.org/">
+    <author>
+      <name>David</name>
+    </author>
+    <id>tag:weblog.rubyonrails.org,2008-11-18:22826</id>
+    <published>2008-11-18T13:44:00Z</published>
+    <updated>2008-11-18T13:44:54Z</updated>
+    <category term="Documentation" />
+    <link href="http://feeds.feedburner.com/~r/RidingRails/~3/468831546/new-rails-2-2-i18n-defaults" rel="alternate" type="text/html" />
+    <title>New Rails 2.2 i18n defaults</title>
+<content type="html">
+            &lt;p&gt;I just reduced the housework needed to setup a new Rails application with i18n. All new applications will ship with a config/locales directory that’s automatically wired up in the load path for i18n. So you can just drop .yml or .rb locale files in there and they’ll be instantly available for translation.&lt;/p&gt;
+
+
+	&lt;p&gt;There’s also a sample config/locales/en.yml file in there to give you a starting point. In addition, the initializer is now wired up through the Rails config. The new default environment.rb provides these pointers:&lt;/p&gt;
+
+
+&lt;pre&gt;# The internationalization framework can be changed 
+# to have another default locale (standard is :en) or more load paths.
+# All files from config/locales/*.rb,yml are added automatically.
+# config.i18n.load_path &amp;lt;&amp;lt; Dir[File.join(RAILS_ROOT, 'my', 'locales', '*.{rb,yml}')]
+# config.i18n.default_locale = :de&lt;/pre&gt;
+
+	&lt;p&gt;So on a fresh Rails 2.2 application, you’ll be able to do see it all wired up out of the box (the :hello key is from the config/locales/en.yml demo file):&lt;/p&gt;
+
+
+&lt;pre&gt;$ ./script/console
+&amp;gt;&amp;gt; I18n.t :hello
+=&amp;gt; "Hello world"&lt;/pre&gt;
+
+	&lt;p&gt;Rails 2.2 final is just around the corner. We’ve been ironing out the last bugs and added the last amount of polish to make this a kick ass release. Also, work on 2.3 / 3.0 has already begun in master as well since we’ve branched for 2.2 a while back.&lt;/p&gt;
+          </content>  <feedburner:origLink>http://weblog.rubyonrails.org/2008/11/18/new-rails-2-2-i18n-defaults</feedburner:origLink></entry>
+  <entry xml:base="http://weblog.rubyonrails.org/">
+    <author>
+      <name>David</name>
+    </author>
+    <id>tag:weblog.rubyonrails.org,2008-11-14:22513</id>
+    <published>2008-11-14T15:55:00Z</published>
+    <updated>2008-11-14T16:06:51Z</updated>
+    <category term="Releases" />
+    <link href="http://feeds.feedburner.com/~r/RidingRails/~3/468831547/rails-2-2-rc2-last-stop-before-final" rel="alternate" type="text/html" />
+    <title>Rails 2.2 RC2: Last stop before final</title>
+<content type="html">
+            &lt;p&gt;Rails 2.2 has been baking for long enough now. This is the last taste before the goodies are served. So please install and check it out. See if you can find any regressions or bugs in any of the new stuff, so we can have it all delicious by the time we ring the dinner bell (ok, ok, I’ll put down the food metaphor now).&lt;/p&gt;
+
+
+	&lt;p&gt;This release also conciedes with the fact that we’ve branches &lt;a href="http://github.com/rails/rails/tree/2-2-stable"&gt;2-2-stable&lt;/a&gt;, which means that master is now actually targeting Rails 2.3/3.0. There’s also a tag available for this RC as &lt;a href="http://github.com/rails/rails/tree/v2.2.1"&gt;v2.2.1&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;If you missed &lt;span class="caps"&gt;RC1&lt;/span&gt;, have a look at &lt;a href="http://guides.rubyonrails.org/2_2_release_notes.html"&gt;the Rails 2.2 release notes&lt;/a&gt; to see the major additions. You can see what’s new since &lt;span class="caps"&gt;RC1&lt;/span&gt; in &lt;a href="http://weblog.rubyonrails.org/2008/11/7/this-week-in-edge-rails"&gt;these&lt;/a&gt; &lt;a href="http://weblog.rubyonrails.org/2008/11/14/this-week-in-edge-rails"&gt;two&lt;/a&gt; This Week in Edge Rails.&lt;/p&gt;
+
+
+	&lt;p&gt;To install, you must first have RubyGems 1.3.1:&lt;br /&gt;&lt;code&gt;gem update --system&lt;/code&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;Then you can:&lt;br /&gt;&lt;code&gt;gem install rails -s http://gems.rubyonrails.org&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Enjoy!&lt;/p&gt;
+          </content>  <feedburner:origLink>http://weblog.rubyonrails.org/2008/11/14/rails-2-2-rc2-last-stop-before-final</feedburner:origLink></entry>
+  <entry xml:base="http://weblog.rubyonrails.org/">
+    <author>
+      <name>Mike Gunderloy</name>
+    </author>
+    <id>tag:weblog.rubyonrails.org,2008-11-14:22512</id>
+    <published>2008-11-14T15:29:00Z</published>
+    <updated>2008-11-14T15:50:24Z</updated>
+    <category term="Edge" />
+    <category term="edge" />
+    <link href="http://feeds.feedburner.com/~r/RidingRails/~3/468831548/this-week-in-edge-rails" rel="alternate" type="text/html" />
+    <title>This Week in Edge Rails</title>
+<content type="html">
+            &lt;p&gt;The important news in edge Rails this week is the imminent release of Rails 2.2.1 – otherwise known as Rails 2.2 &lt;span class="caps"&gt;RC2&lt;/span&gt;. Getting ready for this release did lead to some significant changes in the Rails codebase.&lt;/p&gt;
+
+
+	&lt;p&gt;First, it’s very likely that you’ll need to upgrade rubygems to run &lt;span class="caps"&gt;RC2&lt;/span&gt;: the required version of rubygems is now 1.3.1, which was &lt;a href="http://blog.segment7.net/articles/2008/11/13/rubygems-1-3-1"&gt;just released yesterday&lt;/a&gt;. This dependency is part of the continued work to make vendored gems useful and stable. You may find that updating rubygems is less than smooth, depending on your current version; check out &lt;a href="http://afreshcup.com/2008/10/25/rails-212-and-22rc1-update-your-rubygems/"&gt;this article&lt;/a&gt; if you have any trouble. &lt;a href="http://github.com/rails/rails/commit/549b18c9286b6cccf4978093576325fd711dc421"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;The Rails routing engine has seen some serious work over the past week as well.  For starters, Jeremy Kemper committed several fixes to the core routing engine that cut down on object creation and RegExp creation, trimming memory use. &lt;a href="http://github.com/rails/rails/commit/5db9f9b3ad47fadf0b3f12ada1c2ea7b9c15ded5"&gt;commit&lt;/a&gt; &lt;a href="http://github.com/rails/rails/commit/278b6cd9529f33286449a9be18f1903687814d3f"&gt;commit&lt;/a&gt; There are also new &lt;code&gt;:only&lt;/code&gt; and &lt;code&gt;:except&lt;/code&gt; options for &lt;code&gt;map.resources&lt;/code&gt;, which can help cut down memory use if you have a lot of resource routes – see &lt;a href="http://ryandaigle.com/articles/2008/11/13/what-s-new-in-edge-rails-except-and-only-routing-options"&gt;these&lt;/a&gt; &lt;a href="http://afreshcup.com/2008/11/12/rails-22-change-limited-resource-routes/"&gt;articles&lt;/a&gt; for details (though there have been some tweaks in the way nested limited routes work after those were written). &lt;a href="http://github.com/rails/rails/commit/2ecec6052f7f290252a9fd9cc27ec804c7aad36c"&gt;commit&lt;/a&gt; &lt;a href="http://github.com/rails/rails/commit/4c0921024471c0463d67f8b8fb6a115a94d343aa"&gt;commit&lt;/a&gt; &lt;a href="http://github.com/rails/rails/commit/44a3009ff068bf080de6764a8c884fbf0ceb920e"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;The new ActiveRecord connection pooling code has seen some tuning as well, making it more efficient in development model and avoiding some issues with the Oracle adapter. &lt;a href="http://github.com/rails/rails/commit/d20955f889223b6035dbc7d61acba9091bf7b7ed"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Polymorphic URLs now behave more intuitively if one of their parameters is nil. For example, a call to &lt;code&gt;polymorphic_path([@project, @filter, @issue])&lt;/code&gt; with a nil filter now returns &lt;code&gt;project_issue_url&lt;/code&gt; instead of a NoMethodError. &lt;a href="http://github.com/rails/rails/commit/94d6716324126028b89dde886f160474049b1b0c"&gt;commit&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;The request forgery protection feature in Rails has been tightened up so that it only applies to &lt;span class="caps"&gt;HTML&lt;/span&gt;-formatted content requests. There is substantial discussion on the &lt;a href="http://rails.lighthouseapp.com/projects/8994/tickets/1145-bug-invalidauthenticitytoken-incorrectly-raised-for-xml-controllerdestroy-request"&gt;Lighthouse ticket&lt;/a&gt; that led to this change, but the bottom line is that the old implementation had some bugs, notably making destroy actions inaccessible via &lt;span class="caps"&gt;XML&lt;/span&gt;. Other types of requests are protected by other means – for instance, the same origin policy on &lt;span class="caps"&gt;AJAX&lt;/span&gt; requests substitutes for request forgery protection there. &lt;a href="http://github.com/rails/rails/commit/fbbcd6f29aeccc938b97b5c01717365f8b67912c"&gt;commit&lt;/a&gt;&lt;/p&gt;
+          </content>  <feedburner:origLink>http://weblog.rubyonrails.org/2008/11/14/this-week-in-edge-rails</feedburner:origLink></entry>
+  <entry xml:base="http://weblog.rubyonrails.org/">
+    <author>
+      <name>David</name>
+    </author>
+    <id>tag:weblog.rubyonrails.org,2008-11-09:22405</id>
+    <published>2008-11-09T17:49:00Z</published>
+    <updated>2008-11-10T04:28:57Z</updated>
+    <category term="Sightings" />
+    <link href="http://feeds.feedburner.com/~r/RidingRails/~3/468831549/official-db2-adapter-from-ibm-for-rails" rel="alternate" type="text/html" />
+    <title>Official DB2 adapter from IBM for Rails</title>
+<content type="html">
+            &lt;p&gt;&lt;span class="caps"&gt;IBM&lt;/span&gt; have just wrapped up a new &lt;span class="caps"&gt;DB2&lt;/span&gt; adapter that fixes a bunch of bugs, adds support for a range of features, and works with the rails -d setup to create a new Rails application straight for &lt;span class="caps"&gt;DB2&lt;/span&gt;. Check it out: &lt;a href="http://db2onrails.com/2008/11/08/a-major-milestone-for-db2-on-rails/"&gt;A major milestone for &lt;span class="caps"&gt;DB2&lt;/span&gt; on Rails&lt;/a&gt;.&lt;/p&gt;
+          </content>  <feedburner:origLink>http://weblog.rubyonrails.org/2008/11/9/official-db2-adapter-from-ibm-for-rails</feedburner:origLink></entry>
+  <entry xml:base="http://weblog.rubyonrails.org/">
+    <author>
+      <name>Mike Gunderloy</name>
+    </author>
+    <id>tag:weblog.rubyonrails.org,2008-11-07:22381</id>
+    <published>2008-11-07T13:22:00Z</published>
+    <updated>2008-11-07T14:02:44Z</updated>
+    <category term="Edge" />
+    <category term="edge" />
+    <link href="http://feeds.feedburner.com/~r/RidingRails/~3/468831551/this-week-in-edge-rails" rel="alternate" type="text/html" />
+    <title>This Week in Edge Rails</title>
+<content type="html">
+            &lt;p&gt;Rails, as you probably know, is under active development. So, for those of you who don’t have time to read every commit to the source, we’ve decided to revive this section of the weblog. This time around, I’m covering 3 weeks of commits: the time since &lt;a href="http://weblog.rubyonrails.org/2008/10/24/rails-2-2-rc1-i18n-thread-safety-docs-etag-last-modified"&gt;Rails 2.2 &lt;span class="caps"&gt;RC1&lt;/span&gt;&lt;/a&gt; (otherwise known as Rails 2.2.0) was released. Though there aren’t any major new features being added as Rails drives towards the 2.2 release, that doesn’t mean the source has been completely quiet: there have been about 75 commits in that three-week period. Here’s a look at some of those changes.&lt;/p&gt;
+
+
+	&lt;p&gt;In the run-up to 2.2, we’re seeing a batch of little bug fixes, as people try to ensure quality in the release. These include:&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;Squashing a binary data corruption bug that surfaced in the PostgreSQL adapter. &lt;a href="http://github.com/rails/rails/commit/932dffc559ef188eb31d0223116e9da361833488"&gt;commit&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;The regex behind redirect_to can now accept a wider variety of &lt;span class="caps"&gt;URL&lt;/span&gt; schemes, making it possible to redirect to some destinations that were previously inaccessible. &lt;a href="http://github.com/rails/rails/commit/47b4fa4a621ee48ab17545b1e9fb38efef53b28e"&gt;commit&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;A regression in date_select and datetime_select that could raise a Null Pointer Exception under some circumstances has been fixed.  &lt;a href="http://github.com/rails/rails/commit/b2cd318c2e3f4d19813a5c62903319a6683aa561"&gt;commit&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;The sanitize helper has been fixed to avoid double escaping already properly escaped entities. &lt;a href="http://github.com/rails/rails/commit/a358d87e16fa876de29286b69474ab6aaee4a80b"&gt;commit&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;FormTagHelper has been stopped from generating illegal &lt;span class="caps"&gt;HTML&lt;/span&gt; if the name contains square brackets. &lt;a href="http://github.com/rails/rails/commit/5fad229e43e2b2541ed39c6ef571975176e6a8d2"&gt;commit&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;A memory leak was squashed in Active Record scoped methods. &lt;a href="http://github.com/rails/rails/commit/77697e03353ec06a4b12f42a32d7569797d1eb8f"&gt;commit&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;Some of the major features for 2.2 have been getting fine-tuned as well. There’s been work to clean up some loose ends in the thread safety department, and changes to make the I18n backend reload its translations in development mode. The included Prototype bits were bumped to the latest 1.6.0.3 release. The code for configuring, loading, and vendoring gems has had some attention, and the code for maintaining database connection pools has come in for some fine-tuning as well.&lt;/p&gt;
+
+
+Just because we’re in feature freeze doesn’t mean that a few new features can’t sneak in:
+	&lt;ul&gt;
+	&lt;li&gt;The current_page method is a bit more reliable now in that it ignores options you don’t explicitly supply (making it more friendly to URLs that use the query string for pagination and the like). &lt;a href="http://github.com/rails/rails/commit/ef9b6b5cba08f13dcbf7095226b78aaf22df13f7"&gt;commit&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;The default logging has been cleaned up to be less chatty: you’ll see fewer duplicate log messages as Rails goes about its business. &lt;a href="http://github.com/rails/rails/commit/62ffc6e4db1eecfe5c5a5f7471a9c39d665ada56"&gt;commit&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;The render method now takes a &lt;code&gt;:js&lt;/code&gt; option to allow you to directly render inline JavaScript without using &lt;span class="caps"&gt;RJS&lt;/span&gt;. &lt;a href="http://github.com/rails/rails/commit/cbeac93310a7e95453bea3f2d4551288fd455d07"&gt;commit&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;If you’ve got a current (Ruby 1.8.7 or greater) version of Ruby, Action Mailer turns on &lt;code&gt;STARTTLS&lt;/code&gt; if the server supports it; this makes Action Mailer compatible with GMail without the need for plugins. &lt;a href="http://github.com/rails/rails/commit/732c724df61bc8b780dc42817625b25a321908e4"&gt;commit&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;One final note: I’m deliberately not trying to cover every single commit here; just those ones that struck me as most interesting. But if I left out something that &lt;em&gt;you&lt;/em&gt; think is highly significant, feel free to add a pointer in the comments!&lt;/p&gt;
+          </content>  <feedburner:origLink>http://weblog.rubyonrails.org/2008/11/7/this-week-in-edge-rails</feedburner:origLink></entry>
+  <entry xml:base="http://weblog.rubyonrails.org/">
+    <author>
+      <name>Mike Gunderloy</name>
+    </author>
+    <id>tag:weblog.rubyonrails.org,2008-11-03:22343</id>
+    <published>2008-11-03T19:30:00Z</published>
+    <updated>2008-11-03T21:07:53Z</updated>
+    <category term="Documentation" />
+    <link href="http://feeds.feedburner.com/~r/RidingRails/~3/468831553/rails-guides-wants-you" rel="alternate" type="text/html" />
+    <title>Rails Guides Wants You</title>
+<content type="html">
+            &lt;p&gt;If you haven’t looked at the state of Rails documentation lately, it’s time to look again. The new &lt;a href="http://guides.rubyonrails.org/"&gt;Ruby on Rails Guides&lt;/a&gt; page includes 14 separate guides for Rails developers, with topics ranging from “Getting Started” to routing, security, testing, and debugging. That’s over 70,000 words of help content for Rails users that didn’t exist two months ago when we launched the &lt;a href="http://hackfest.rubyonrails.org/guide"&gt;Rails Guides project&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;But we’re not done yet! We’re starting phase 2 of the Guides project, and planning a fresh batch of content to add to what’s already there. Our goal is to have a single page where you can find all of the information you need to be an effective Rails developer. Remember, though: this is open source. That means we want &lt;em&gt;your&lt;/em&gt; help too!&lt;/p&gt;
+
+
+	&lt;p&gt;Here’s what you can do to get involved:&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;Read about the process of and rewards for contributing on the &lt;a href="http://hackfest.rubyonrails.org/guide"&gt;Hackfest page&lt;/a&gt;.&lt;/li&gt;
+		&lt;li&gt;Check the list of &lt;a href="http://rails.lighthouseapp.com/projects/16213-rails-guides/tickets?q=state%3Aavailable"&gt;available tickets&lt;/a&gt; in our Lighthouse project, and sign up to write a guide.&lt;/li&gt;
+		&lt;li&gt;Submit corrections, suggestion, bugs, or patches for the existing guides. You’ll find a link to the relevant Lighthouse ticket at the bottom of each guide.&lt;/li&gt;
+		&lt;li&gt;Let us know what other guides you think should be added – whether you want to write them, or just hope that someone else will. Just leave a note in the comments here and we’ll get your idea into the process.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;You’ll usually find some of the documentation team hanging around in #docrails on &lt;span class="caps"&gt;IRC&lt;/span&gt;. Come join us and help the community!&lt;/p&gt;
+          </content>  <feedburner:origLink>http://weblog.rubyonrails.org/2008/11/3/rails-guides-wants-you</feedburner:origLink></entry>
+</feed>

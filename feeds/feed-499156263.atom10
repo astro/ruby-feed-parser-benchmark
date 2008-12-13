@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/rss2frenchfull.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>mrboo - François de Rochebouët - Fondateur de Hellotipi.com</title>
+	
+	<link>http://www.mrboo.fr</link>
+	<description>mrboo - François de Rochebouët - Fondateur de Hellotipi.com</description>
+	<pubDate>Thu, 11 Dec 2008 15:30:16 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.7</generator>
+	<language>fr</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+		<!-- podcast_generator="podPress/8.8" -->
+		<copyright>© </copyright>
+		<managingEditor>me@mrboo.fr ()</managingEditor>
+		<webMaster>me@mrboo.fr()</webMaster>
+		<category />
+		<ttl>1440</ttl>
+		<itunes:keywords />
+		<itunes:subtitle />
+		<itunes:summary>mrboo - Franccedil;ois de Rocheboueuml;t - Fondateur de Hellotipi.com</itunes:summary>
+		<itunes:author />
+		<itunes:category text="Society &amp; Culture" />
+		<itunes:owner>
+			<itunes:name />
+			<itunes:email>me@mrboo.fr</itunes:email>
+		</itunes:owner>
+		<itunes:block>No</itunes:block>
+		<itunes:explicit>no</itunes:explicit>
+		<itunes:image href="http://www.mrboo.fr/wp-content/plugins/podpress/images/powered_by_podpress_large.jpg" />
+		<image>
+			<url>http://www.mrboo.fr/wp-content/plugins/podpress/images/powered_by_podpress.jpg</url>
+			<title>mrboo - François de Rochebouët - Fondateur de Hellotipi.com</title>
+			<link>http://www.mrboo.fr</link>
+			<width>144</width>
+			<height>144</height>
+		</image>
+		<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://feeds.feedburner.com/LeBlogDeMrboo" type="application/rss+xml" /><feedburner:emailServiceId>520495</feedburner:emailServiceId><feedburner:feedburnerHostname>http://www.feedburner.com</feedburner:feedburnerHostname><feedburner:feedFlare href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=http%3A%2F%2Ffeeds.feedburner.com%2FLeBlogDeMrboo" src="http://www.newsgator.com/images/ngsub1.gif">Subscribe with NewsGator</feedburner:feedFlare><feedburner:feedFlare href="http://www.rojo.com/add-subscription?resource=http%3A%2F%2Ffeeds.feedburner.com%2FLeBlogDeMrboo" src="http://blog.rojo.com/RojoWideRed.gif">Subscribe with Rojo</feedburner:feedFlare><feedburner:feedFlare href="http://www.bloglines.com/sub/http://feeds.feedburner.com/LeBlogDeMrboo" src="http://www.bloglines.com/images/sub_modern11.gif">Subscribe with Bloglines</feedburner:feedFlare><feedburner:feedFlare href="http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Ffeeds.feedburner.com%2FLeBlogDeMrboo" src="http://www.netvibes.com/img/add2netvibes.gif">Subscribe with Netvibes</feedburner:feedFlare><feedburner:feedFlare href="http://fusion.google.com/add?feedurl=http%3A%2F%2Ffeeds.feedburner.com%2FLeBlogDeMrboo" src="http://buttons.googlesyndication.com/fusion/add.gif">Subscribe with Google</feedburner:feedFlare><feedburner:feedFlare href="http://www.pageflakes.com/subscribe.aspx?url=http%3A%2F%2Ffeeds.feedburner.com%2FLeBlogDeMrboo" src="http://www.pageflakes.com/ImageFile.ashx?instanceId=Static_4&amp;fileName=ATP_blu_91x17.gif">Subscribe with Pageflakes</feedburner:feedFlare><feedburner:feedFlare href="http://add.my.yahoo.com/content?lg=fr&amp;url=http%3A%2F%2Ffeeds.feedburner.com%2FLeBlogDeMrboo" src="http://us.i1.yimg.com/us.yimg.com/i/us/my/bn/intatm_fr_1.gif">Subscribe with Mon Yahoo!</feedburner:feedFlare><feedburner:browserFriendly>Grâce à ce flux RSS vous pouvez suivre facilement et gratuitement les nouvelles d'Hellotipi.</feedburner:browserFriendly><item>
+		<title>Utiliser un cache en ram pour Wordpress</title>
+		<link>http://feeds.feedburner.com/~r/LeBlogDeMrboo/~3/481810546/</link>
+		<comments>http://www.mrboo.fr/utiliser-un-cache-en-ram-pour-wordpress/#comments</comments>
+		<pubDate>Thu, 11 Dec 2008 14:52:28 +0000</pubDate>
+		<dc:creator>mrboo</dc:creator>
+		
+		<category><![CDATA[barbu]]></category>
+
+		<category><![CDATA[debian]]></category>
+
+		<category><![CDATA[memcached]]></category>
+
+		<category><![CDATA[wordpress]]></category>
+
+		<guid isPermaLink="false">http://www.mrboo.fr/?p=1726</guid>
+		<description><![CDATA[Je sais, c&#8217;est du bien barbu comme sujet, mais bon on ne se refait pas et je trouve le bousin efficace donc je vous livre l&#8217;info cela peut en intéresser certain(e)s
+Si vous voulez héberger un blog Wordpress avec votre propre serveur et sans que cela vous coûte un bras, vous avez surement jeté un oeil [...]]]></description>
+			<content:encoded><![CDATA[<p>Je sais, c&#8217;est du bien barbu comme sujet, mais bon on ne se refait pas et je trouve le bousin efficace donc je vous livre l&#8217;info cela peut en intéresser certain(e)s</p>
+<p>Si vous voulez héberger un blog <a href="http://wordpress.org" target="_blank">Wordpress</a> avec votre propre serveur et sans que cela vous coûte un bras, vous avez surement jeté un oeil aux offres de type RPS (real private server)</p>
+<p>Il s&#8217;agit de petits serveurs économiques ayant pour principal point faible l&#8217;absence de disque dur intégré: Ils partagent un disque réseau avec les autres serveurs du même type.<br />
+Dès qu&#8217;il y a un peu de monde sur un blog il est recommandé de mettre en œuvre un système de cache (<a href="http://wordpress.org/extend/plugins/wp-super-cache/" target="_blank">super cache</a> par ex)<br />
+Malheureusement <strong>le gain habituel du cache est (quasi) perdu par le temps d&#8217;accès au disque réseau</strong> du serveur RPS.</p>
+<p>Voici comment on peut contourner le problème et s&#8217;offrir un blog qui dépote bien pour ~10€ par mois:<br />
+Une fois le blog installé et fonctionnel,</p>
+<p>- installez un serveur memcached sur le serveur RPS:<br />
+&#8220;apt-get install memcached&#8221; (commande Debian)</p>
+<p>- placez <a href="http://plugins.trac.wordpress.org/browser/memcached/branches/1.0" target="_blank">ces deux fichiers </a>dans le répertoire wp-content de votre blog.</p>
+<p>- démarrez le serveur memcached (si cela n&#8217;est pas déjà le cas) :<br />
+&#8220;/etc/init.d/memcached start&#8221;</p>
+<p>Et voilà !<br />
+<strong>Désormais le cache de votre blog se trouve en mémoire vive</strong> (RAM) et ne demande plus d&#8217;accès au très lent disque réseau de votre serveur RPS.</p>
+<p>2 tips :<br />
+- Memcached demande de temps en temps un redémarrage &#8220;/etc/init.d/memcached restart&#8221; (cela videra le contenu du cache)<br />
+- Lors d&#8217;une mise à jour de Wordpress faites gaffe à ne pas écraser les 2 fichiers de cette méthode + redémarrez memcache car la version de WP y est stockée: du coup WP est persuadé que la maj n&#8217;est pas effective.</p>
+<p>PS: Je viens d&#8217;effectuer la mise à jour vers <a href="http://wordpress.org/download/">Wordpress 2.7</a> et cela semble parfaitement fonctionner.</p>
+<p><img src="http://www.mrboo.fr/wp-content/uploads/2008/12/blog-ram-memcached.jpg" alt="blog-ram-memcached" title="blog-ram-memcached" class="alignnone size-full wp-image-1727" /></p>
+
+<p><a href="http://feeds.feedburner.com/~a/LeBlogDeMrboo?a=y68r1k"><img src="http://feeds.feedburner.com/~a/LeBlogDeMrboo?i=y68r1k" border="0"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=73raO"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=73raO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=aZbvO"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=aZbvO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=aVMho"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=aVMho" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/LeBlogDeMrboo/~4/481810546" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.mrboo.fr/utiliser-un-cache-en-ram-pour-wordpress/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=LeBlogDeMrboo&amp;itemurl=http%3A%2F%2Fwww.mrboo.fr%2Futiliser-un-cache-en-ram-pour-wordpress%2F</feedburner:awareness><feedburner:origLink>http://www.mrboo.fr/utiliser-un-cache-en-ram-pour-wordpress/</feedburner:origLink></item>
+		<item>
+		<title>Leweb deuxième et dernier jour</title>
+		<link>http://feeds.feedburner.com/~r/LeBlogDeMrboo/~3/480880928/</link>
+		<comments>http://www.mrboo.fr/leweb-deuxieme-et-dernier-jour/#comments</comments>
+		<pubDate>Wed, 10 Dec 2008 19:20:09 +0000</pubDate>
+		<dc:creator>mrboo</dc:creator>
+		
+		<category><![CDATA[Non classé]]></category>
+
+		<category><![CDATA[Leweb]]></category>
+
+		<guid isPermaLink="false">http://www.mrboo.fr/?p=1723</guid>
+		<description><![CDATA[Un rapide billet dans le métro en rentrant.
+Si je devais résumer ces 3 jours de rencontre je dirais: Intenses !
+Depuis la before before d&#8217;avant le web et jusqu&#8217;à l&#8217;apéro dont je sors je n&#8217;ai jamais rencontré et discuté avec autant de monde.
+Surtout, je n&#8217;avais jamais eu l&#8217;occasion de parler autant de passion / de projets [...]]]></description>
+			<content:encoded><![CDATA[<p>Un rapide billet dans le métro en rentrant.</p>
+<p>Si je devais résumer ces 3 jours de rencontre je dirais: Intenses !<br />
+Depuis la before before d&#8217;avant le web et jusqu&#8217;à l&#8217;apéro dont je sors je n&#8217;ai jamais rencontré et discuté avec autant de monde.<br />
+Surtout, je n&#8217;avais jamais eu l&#8217;occasion de parler autant de passion / de projets / d&#8217;entrepreneuriat.<br />
+C&#8217;est magique leweb <img src='http://www.mrboo.fr/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+<p>Alors vous allez surement entendre bruisser les grincheux et les blasés: &#8220;il faisait froid&#8221;, &#8220;il n&#8217;y avait rien à manger&#8221; etc.<br />
+C&#8217;est vrai.<br />
+Mais quand je vois la qualité des contacts que j&#8217;ai noué je me dis que mon estomac et mon épiderme auront l&#8217;occasion de se rattraper <img src='http://www.mrboo.fr/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' /> </p>
+<p>Alors merci à Géraldine et <a href="http://loiclemeur.com/france/">Loïc</a> et Vivement l&#8217;année prochaine !</p>
+<p><img src="http://www.mrboo.fr/wp-content/uploads/2008/12/leweb_jour2.jpg" alt="" title="leweb_jour2" class="alignnone size-full wp-image-1724" /></p>
+
+<p><a href="http://feeds.feedburner.com/~a/LeBlogDeMrboo?a=a9URNr"><img src="http://feeds.feedburner.com/~a/LeBlogDeMrboo?i=a9URNr" border="0"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=zyh9O"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=zyh9O" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=guQfO"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=guQfO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=VzbMo"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=VzbMo" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/LeBlogDeMrboo/~4/480880928" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.mrboo.fr/leweb-deuxieme-et-dernier-jour/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=LeBlogDeMrboo&amp;itemurl=http%3A%2F%2Fwww.mrboo.fr%2Fleweb-deuxieme-et-dernier-jour%2F</feedburner:awareness><feedburner:origLink>http://www.mrboo.fr/leweb-deuxieme-et-dernier-jour/</feedburner:origLink></item>
+		<item>
+		<title>Leweb J1</title>
+		<link>http://feeds.feedburner.com/~r/LeBlogDeMrboo/~3/479307373/</link>
+		<comments>http://www.mrboo.fr/leweb-j1/#comments</comments>
+		<pubDate>Tue, 09 Dec 2008 08:19:44 +0000</pubDate>
+		<dc:creator>mrboo</dc:creator>
+		
+		<category><![CDATA[General]]></category>
+
+		<guid isPermaLink="false">http://www.mrboo.fr/?p=1703</guid>
+		<description><![CDATA[Let&#8217;s go !
+En 10min j&#8217;ai déjà eu l&#8217;occasion de passer ma carte à mr Vinvin, saluer Ouriel et dire bonjour à 10 personnes&#8230; sacrée cadence en prévision 
+
+l&#8217;autre coté (c&#8217;est maous !)
+
+
+
+
+
+
+
+
+]]></description>
+			<content:encoded><![CDATA[<p>Let&#8217;s go !<br />
+En 10min j&#8217;ai déjà eu l&#8217;occasion de passer ma carte à mr <a href="http://cdelasteyrie.typepad.com/">Vinvin</a>, saluer <a href="http://fr.techcrunch.com/">Ouriel</a> et dire bonjour à 10 personnes&#8230; sacrée cadence en prévision <img src='http://www.mrboo.fr/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /><br />
+<img src="http://www.mrboo.fr/wp-content/uploads/2008/12/leweb_welcome.jpg" alt="" title="leweb_welcome" class="alignnone size-full wp-image-1704" /></p>
+<p>l&#8217;autre coté (c&#8217;est maous !)<br />
+<a href="http://www.mrboo.fr/wp-content/uploads/2008/12/l-640-480-2a4926c0-c4b4-4697-9ebf-45fccf44a4df.jpeg"><img src="http://www.mrboo.fr/wp-content/uploads/2008/12/l-640-480-2a4926c0-c4b4-4697-9ebf-45fccf44a4df.jpeg" alt="" width="300" height="225" class="alignnone size-full wp-image-364" /></a></p>
+<p><a href="http://www.mrboo.fr/wp-content/uploads/2008/12/l-640-480-ca70948c-3f0c-4a60-926b-8a622fc4b6d6.jpeg"><img src="http://www.mrboo.fr/wp-content/uploads/2008/12/l-640-480-ca70948c-3f0c-4a60-926b-8a622fc4b6d6.jpeg" alt="" width="300" height="225" class="alignnone size-full wp-image-364" /></a></p>
+<p><a href="http://www.mrboo.fr/wp-content/uploads/2008/12/l-640-480-d412835e-522b-445a-8b6c-4ea2ebb740bb.jpeg"><img src="http://www.mrboo.fr/wp-content/uploads/2008/12/l-640-480-d412835e-522b-445a-8b6c-4ea2ebb740bb.jpeg" alt="" width="300" height="225" class="alignnone size-full wp-image-364" /></a></p>
+<p><a href="http://www.mrboo.fr/wp-content/uploads/2008/12/l-640-480-d467e720-ba7b-4f5a-a35c-2efe49d5c55c.jpeg"><img src="http://www.mrboo.fr/wp-content/uploads/2008/12/l-640-480-d467e720-ba7b-4f5a-a35c-2efe49d5c55c.jpeg" alt="" width="300" height="225" class="alignnone size-full wp-image-364" /></a></p>
+<p><a href="http://www.mrboo.fr/wp-content/uploads/2008/12/l-640-480-bd930b11-fa3e-4550-8c2b-49e2c070f83a.jpeg"><img src="http://www.mrboo.fr/wp-content/uploads/2008/12/l-640-480-bd930b11-fa3e-4550-8c2b-49e2c070f83a.jpeg" alt="" width="300" height="225" class="alignnone size-full wp-image-364" /></a></p>
+<p><a href="http://www.mrboo.fr/wp-content/uploads/2008/12/l-640-480-01689f6f-9c90-4efc-a40a-8d168b75e1ca.jpeg"><img src="http://www.mrboo.fr/wp-content/uploads/2008/12/l-640-480-01689f6f-9c90-4efc-a40a-8d168b75e1ca.jpeg" alt="" width="300" height="225" class="alignnone size-full wp-image-364" /></a></p>
+<p><a href="http://www.mrboo.fr/wp-content/uploads/2008/12/l-640-480-b6fc4466-d853-44b4-8bfb-303b46edf7c7.jpeg"><img src="http://www.mrboo.fr/wp-content/uploads/2008/12/l-640-480-b6fc4466-d853-44b4-8bfb-303b46edf7c7.jpeg" alt="" width="300" height="225" class="alignnone size-full wp-image-364" /></a></p>
+<p><a href="http://www.mrboo.fr/wp-content/uploads/2008/12/l-640-480-cff0b26c-9e43-4ac7-82e5-fc399cce5006.jpeg"><img src="http://www.mrboo.fr/wp-content/uploads/2008/12/l-640-480-cff0b26c-9e43-4ac7-82e5-fc399cce5006.jpeg" alt="" width="300" height="225" class="alignnone size-full wp-image-364" /></a></p>
+
+<p><a href="http://feeds.feedburner.com/~a/LeBlogDeMrboo?a=gIlWdZ"><img src="http://feeds.feedburner.com/~a/LeBlogDeMrboo?i=gIlWdZ" border="0"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=CjoWO"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=CjoWO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=wwykO"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=wwykO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=8yFMo"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=8yFMo" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/LeBlogDeMrboo/~4/479307373" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.mrboo.fr/leweb-j1/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=LeBlogDeMrboo&amp;itemurl=http%3A%2F%2Fwww.mrboo.fr%2Fleweb-j1%2F</feedburner:awareness><feedburner:origLink>http://www.mrboo.fr/leweb-j1/</feedburner:origLink></item>
+		<item>
+		<title>Before before d’avant Leweb’08</title>
+		<link>http://feeds.feedburner.com/~r/LeBlogDeMrboo/~3/478997196/</link>
+		<comments>http://www.mrboo.fr/before-before-davant-leweb08/#comments</comments>
+		<pubDate>Tue, 09 Dec 2008 00:34:53 +0000</pubDate>
+		<dc:creator>mrboo</dc:creator>
+		
+		<category><![CDATA[General]]></category>
+
+		<category><![CDATA[Leweb]]></category>
+
+		<guid isPermaLink="false">http://www.mrboo.fr/?p=1696</guid>
+		<description><![CDATA[Rapidement, histoire de dormir un peu avant d&#8217;attaquer Leweb&#8217;08 demain 8h.
+Je me suis pointé beaucoup trop tôt à la première ambiance (ils étaient planqués dans la cale de la péniche  )
+Beaucoup de beau monde à bord, notamment les sudistes comme Philippe que l&#8217;on n&#8217;a que trop rarement l&#8217;occasion de voir sous nos latitudes.
+J&#8217;ai enfin [...]]]></description>
+			<content:encoded><![CDATA[<p>Rapidement, histoire de dormir un peu avant d&#8217;attaquer Leweb&#8217;08 demain 8h.</p>
+<p>Je me suis pointé beaucoup trop tôt à la première ambiance (ils étaient planqués dans la cale de la péniche <img src='http://www.mrboo.fr/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' /> )<br />
+Beaucoup de beau monde à bord, notamment les sudistes comme <a href="http://www.accessoweb.com/">Philippe</a> que l&#8217;on n&#8217;a que trop rarement l&#8217;occasion de voir sous nos latitudes.<br />
+J&#8217;ai enfin rencontré IRL mr <a href="http://www.valvert.net/">Valvert</a> qui s&#8217;est trimballé sa valise toute la soirée.</p>
+<p>Vers 21h taxi à 4 direction la before Leweb&#8217;08: la megadose de monde (et encore il parait que ça s&#8217;était déjà un peu vidé) plein de têtes connues me donnent l&#8217;occasion de rencontrer plein de nouvelle têtes.<br />
+Gentiment Baptiste de <a href="http://www.comboutique.com/shop/tshirtminute.php">Comboutique</a> m&#8217;avait apporté les jolis badges Hellotipi réalisés dans la journée ! (on m&#8217;en a déjà piqué la moitié)</p>
+<p>Rapidement nous sommes parti diner &#8220;chez papa&#8221; avec <a href="http://www.valvert.net/">Valvert</a>, <a href="http://www.presse-citron.net">Eric</a> et mr <a href="http://www.blogg.org/">Blogg</a></p>
+<p>Retour @home sur les coups d&#8217;une heure.<br />
+Je file pioncer histoire d&#8217;être en forme demain pour la suite des festivités <img src='http://www.mrboo.fr/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /><br />
+En espérant que mon iphone pourra de nouveau fonctionner correctement&#8230;</p>
+<p><img class="alignnone size-full wp-image-1697" title="peniche" src="http://www.mrboo.fr/wp-content/uploads/2008/12/peniche.jpg" alt="" /><br />
+<img class="alignnone size-full wp-image-1698" title="eric" src="http://www.mrboo.fr/wp-content/uploads/2008/12/eric.jpg" alt="" /></p>
+
+<p><a href="http://feeds.feedburner.com/~a/LeBlogDeMrboo?a=wmxrF2"><img src="http://feeds.feedburner.com/~a/LeBlogDeMrboo?i=wmxrF2" border="0"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=qTX6O"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=qTX6O" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=vkCMO"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=vkCMO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=WuYXo"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=WuYXo" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/LeBlogDeMrboo/~4/478997196" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.mrboo.fr/before-before-davant-leweb08/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=LeBlogDeMrboo&amp;itemurl=http%3A%2F%2Fwww.mrboo.fr%2Fbefore-before-davant-leweb08%2F</feedburner:awareness><feedburner:origLink>http://www.mrboo.fr/before-before-davant-leweb08/</feedburner:origLink></item>
+		<item>
+		<title>La bonne blague d’Orange…</title>
+		<link>http://feeds.feedburner.com/~r/LeBlogDeMrboo/~3/478509633/</link>
+		<comments>http://www.mrboo.fr/la-bonne-blague-dorange/#comments</comments>
+		<pubDate>Mon, 08 Dec 2008 14:41:26 +0000</pubDate>
+		<dc:creator>mrboo</dc:creator>
+		
+		<category><![CDATA[General]]></category>
+
+		<guid isPermaLink="false">http://www.mrboo.fr/?p=1693</guid>
+		<description><![CDATA[Depuis quelques heures (et jusqu&#8217;à demain d&#8217;aprés le service client Orange) je n&#8217;ai plus d&#8217;accès data&#8230; le temps de passer au forfait iphone.
+Pour le live blogging ça risque d&#8217;être chaud  
+A l&#8217;inverse les ptits gars de comboutique m&#8217;ont promis la préparation en mode ultra flash 2000 de mes badges avec un tipi dessus:
+Ce sera [...]]]></description>
+			<content:encoded><![CDATA[<p>Depuis quelques heures (et jusqu&#8217;à demain d&#8217;aprés le service client Orange) je n&#8217;ai plus d&#8217;accès data&#8230; le temps de passer au forfait iphone.<br />
+Pour le live blogging ça risque d&#8217;être chaud <img src='http://www.mrboo.fr/wp-includes/images/smilies/icon_sad.gif' alt=':(' class='wp-smiley' /> </p>
+<p>A l&#8217;inverse les ptits gars de <a href="http://www.comboutique.com/">comboutique</a> m&#8217;ont promis la préparation en mode ultra flash 2000 de mes badges avec un tipi dessus:<br />
+Ce sera plus facile pour me repérer + c&#8217;est plus original qu&#8217;une carte de visite.<br />
+Je devrais en avoir une quarantaine cet aprem: premier arrivé premier servi !</p>
+<p><img class="alignnone size-full wp-image-1694" title="photo" src="http://www.mrboo.fr/wp-content/uploads/2008/12/photo.jpg" alt="" /></p>
+
+<p><a href="http://feeds.feedburner.com/~a/LeBlogDeMrboo?a=X0bfpC"><img src="http://feeds.feedburner.com/~a/LeBlogDeMrboo?i=X0bfpC" border="0"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=EuIBO"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=EuIBO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=qUm8O"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=qUm8O" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=kD7Lo"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=kD7Lo" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/LeBlogDeMrboo/~4/478509633" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.mrboo.fr/la-bonne-blague-dorange/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=LeBlogDeMrboo&amp;itemurl=http%3A%2F%2Fwww.mrboo.fr%2Fla-bonne-blague-dorange%2F</feedburner:awareness><feedburner:origLink>http://www.mrboo.fr/la-bonne-blague-dorange/</feedburner:origLink></item>
+		<item>
+		<title>Un apéro entre utilisateurs d’Hellotipi ça vous dit ?</title>
+		<link>http://feeds.feedburner.com/~r/LeBlogDeMrboo/~3/478407097/</link>
+		<comments>http://www.mrboo.fr/un-apero-entre-utilisateurs-dhellotipi-ca-vous-dit/#comments</comments>
+		<pubDate>Mon, 08 Dec 2008 12:23:37 +0000</pubDate>
+		<dc:creator>mrboo</dc:creator>
+		
+		<category><![CDATA[General]]></category>
+
+		<guid isPermaLink="false">http://www.mrboo.fr/?p=1691</guid>
+		<description><![CDATA[C&#8217;est organisé par l&#8217;un d&#8217;eux et ça me fait bien plaisir (j&#8217;y serais), plus d&#8217;infos sur le blog d&#8217;Hellotipi.
+
+par ratexla
+]]></description>
+			<content:encoded><![CDATA[<p>C&#8217;est organisé par l&#8217;un d&#8217;eux et ça me fait bien plaisir (j&#8217;y serais), plus d&#8217;infos <a href="http://www.hellotipi.com/blog/premiere-rencontre-utilisateurs-dhellotipi-o/">sur le blog d&#8217;Hellotipi</a>.</p>
+<p><img class="alignnone" src="http://farm4.static.flickr.com/3240/3085570432_25a1f9a470.jpg" alt="" width="480" height="309" /><br />
+par <a title="Lien vers la galerie de photos de ratexla" href="http://www.flickr.com/photos/72616463@N00/">ratexla</a></p>
+
+<p><a href="http://feeds.feedburner.com/~a/LeBlogDeMrboo?a=87tuh6"><img src="http://feeds.feedburner.com/~a/LeBlogDeMrboo?i=87tuh6" border="0"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=7BGwO"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=7BGwO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=w8HWO"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=w8HWO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=tp08o"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=tp08o" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/LeBlogDeMrboo/~4/478407097" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.mrboo.fr/un-apero-entre-utilisateurs-dhellotipi-ca-vous-dit/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=LeBlogDeMrboo&amp;itemurl=http%3A%2F%2Fwww.mrboo.fr%2Fun-apero-entre-utilisateurs-dhellotipi-ca-vous-dit%2F</feedburner:awareness><feedburner:origLink>http://www.mrboo.fr/un-apero-entre-utilisateurs-dhellotipi-ca-vous-dit/</feedburner:origLink></item>
+		<item>
+		<title>Like a Leweb monday</title>
+		<link>http://feeds.feedburner.com/~r/LeBlogDeMrboo/~3/478299580/</link>
+		<comments>http://www.mrboo.fr/like-a-leweb-monday/#comments</comments>
+		<pubDate>Mon, 08 Dec 2008 09:38:35 +0000</pubDate>
+		<dc:creator>mrboo</dc:creator>
+		
+		<category><![CDATA[General]]></category>
+
+		<category><![CDATA[entrepreneur]]></category>
+
+		<category><![CDATA[Leweb]]></category>
+
+		<category><![CDATA[Paris]]></category>
+
+		<guid isPermaLink="false">http://www.mrboo.fr/?p=1683</guid>
+		<description><![CDATA[Cette semaine c&#8217;est Leweb&#8217;08 à toutes les sauces !
+Comme dirait l&#8217;ami Patrice, Leweb c&#8217;est notre salon de l&#8217;agriculture à nous: gigantesque, passionnant et épuisant  
+Au programme :
+- Lundi 8/12 vers 16h : Sur la péniche de Goojet et Chauffeur de buzz : Google street view
+- Lundi 8/12 vers 22h : Soirée before Leweb organisée [...]]]></description>
+			<content:encoded><![CDATA[<p>Cette semaine c&#8217;est <a href="http://www.lewebparis.com/">Leweb&#8217;08</a> à toutes les sauces !<br />
+Comme dirait l&#8217;ami <a href="http://www.patricecassard.com/">Patrice</a>, Leweb c&#8217;est notre salon de l&#8217;agriculture à nous: gigantesque, passionnant et épuisant <img src='http://www.mrboo.fr/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+<p>Au programme :</p>
+<p>- Lundi 8/12 vers 16h : Sur la péniche de <a href="http://www.goojet.com/index.html">Goojet</a> et <a href="http://www.chauffeurdebuzz.com/">Chauffeur de buzz</a> : <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;q=Notre-Dame+de+Paris+,+Paris,+France&amp;sll=48.858726,2.358701&amp;sspn=0.094417,0.289764&amp;ie=UTF8&amp;layer=c&amp;cbll=48.851537,2.350059&amp;panoid=6q6Kbrrv1wBiZ-VXYYQC7g&amp;cbp=11,11.583993264714593,,0,1.400549698118431&amp;ll=48.851748,2.35101&amp;spn=0.001391,0.009055&amp;z=17&amp;g=Notre-Dame+de+Paris+,+Paris,+France&amp;iwloc=addr">Google street view</a></p>
+<p>- Lundi 8/12 vers 22h : Soirée before Leweb organisée par les amis de  l&#8217;Open Coffee Paris : <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;q=167+quai+de+Valmy+75010+Paris+France+&amp;sll=48.883626,-12.18122&amp;sspn=0,359.947472&amp;ie=UTF8&amp;ll=48.879224,2.366695&amp;spn=0.005899,0.052528&amp;z=15&amp;g=167+quai+de+Valmy+75010+Paris+France&amp;iwloc=addr&amp;layer=c&amp;cbll=48.879231,2.366716&amp;panoid=3-hM6O3fKJ55kSEpM0Pq5A&amp;cbp=11,227.16835151263365,,0,7.12396353388408">Google street view</a></p>
+<p>- Mardi 9/12 8h : Leweb organisé par Géraldine et Loïc Le Meur au Centquatre très fraichement rénové : <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;q=5+rue+Curial+,+Paris,+France&amp;sll=48.851748,2.348971&amp;sspn=0.001391,0.013132&amp;g=Notre-Dame+de+Paris+,+Paris,+France&amp;ie=UTF8&amp;ll=48.889933,2.371566&amp;spn=0.002949,0.026221&amp;z=16&amp;iwloc=addr&amp;layer=c&amp;cbll=48.88993,2.371574&amp;panoid=GBhuxMJlcBd0wjHo_teSig&amp;cbp=11,302.26035178837265,,0,-1.7392894074017426">Google street view</a> (il faudrait que les voitures de Google repassent prendre des photos <img src='http://www.mrboo.fr/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' /> )</p>
+<p>- Mardi 9/12 22h : Soirée Leweb&#8217;08 organisée par Myspace : <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;q=Palais+Maillot,+Place+de+la+Porte+Maillot+75017+Paris&amp;sll=48.8788,2.283354&amp;sspn=0.01112,0.052443&amp;ie=UTF8&amp;ll=48.878462,2.283354&amp;spn=0.005899,0.052443&amp;z=15&amp;layer=c&amp;cbll=48.877617,2.283477&amp;panoid=jo5APjrQfA0vCrhWuDYr5g&amp;cbp=11,72.83960720130943,,0,-4.279869067103109">Google street view</a></p>
+<p>- Mercredi 10/12 8h : Leweb&#8217;08</p>
+<p>- Mercredi 10/12 22h : Closing party organisée par Techcrunch : <a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;geocode=&amp;q=8+Boulevard+de+la+Madeleine+75009+Paris&amp;sll=48.878462,2.291508&amp;sspn=0.011797,0.036135&amp;ie=UTF8&amp;ll=48.869613,2.32599&amp;spn=0.00295,0.026221&amp;z=16&amp;layer=c&amp;cbll=48.869703,2.326759&amp;panoid=D1MALI_vdBQDx-d4l3XMvQ&amp;cbp=11,8.275531997167434,,0,2.8641571194762676">Google street view</a></p>
+<p><strong>Si vous passez à l&#8217;un de ces événements n&#8217;hésitez pas à me faire signe :</strong><br />
+Mon portable: +336 30 25 64 11<br />
+Mon Twitter (ou j&#8217;indiquerai régulièrement où je suis): <a href="http://twitter.com/mrboo">Twitter.com/mrboo</a><br />
+J&#8217;essayerai de poster quelques billets aussi sur ce blog.</p>
+<p>Bonne semaine tout le monde <img src='http://www.mrboo.fr/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+<p><img class="alignnone" src="http://farm4.static.flickr.com/3278/2865512870_f84773a36f.jpg" alt="" width="500" height="281" /><br />
+<a href="http://www.flickr.com/photos/altaide/2865512870/sizes/m/">Photo by Altaïde</a></p>
+
+<p><a href="http://feeds.feedburner.com/~a/LeBlogDeMrboo?a=nQihSc"><img src="http://feeds.feedburner.com/~a/LeBlogDeMrboo?i=nQihSc" border="0"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=8Nb2O"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=8Nb2O" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=g8kIO"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=g8kIO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=UkMIo"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=UkMIo" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/LeBlogDeMrboo/~4/478299580" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.mrboo.fr/like-a-leweb-monday/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=LeBlogDeMrboo&amp;itemurl=http%3A%2F%2Fwww.mrboo.fr%2Flike-a-leweb-monday%2F</feedburner:awareness><feedburner:origLink>http://www.mrboo.fr/like-a-leweb-monday/</feedburner:origLink></item>
+		<item>
+		<title>Un tweet qui fait plaisir</title>
+		<link>http://feeds.feedburner.com/~r/LeBlogDeMrboo/~3/476641737/</link>
+		<comments>http://www.mrboo.fr/un-tweet-qui-fait-plaisir/#comments</comments>
+		<pubDate>Sat, 06 Dec 2008 13:34:27 +0000</pubDate>
+		<dc:creator>mrboo</dc:creator>
+		
+		<category><![CDATA[General]]></category>
+
+		<category><![CDATA[feedback]]></category>
+
+		<category><![CDATA[Vu ici et là]]></category>
+
+		<guid isPermaLink="false">http://www.mrboo.fr/?p=1680</guid>
+		<description><![CDATA[
+Si vous ne connaissez pas encore Twitter je vous invite à lire ce très bon article du Monde sur le sujet.
+Mon twitter: twitter.com/mrboo
+]]></description>
+			<content:encoded><![CDATA[<p><img src="http://www.mrboo.fr/wp-content/uploads/2008/12/image-13.png" alt="" title="tweet" class="alignnone size-full wp-image-1681" /><br />
+Si vous ne connaissez pas encore Twitter je vous invite à lire <a href="http://www.lemonde.fr/le-monde-2/article/2008/11/14/twitter-media-de-l-ere-obama_1118891_1004868.html">ce très bon article</a> du Monde sur le sujet.<br />
+Mon twitter: <a href="http://twitter.com/mrboo">twitter.com/mrboo</a></p>
+
+<p><a href="http://feeds.feedburner.com/~a/LeBlogDeMrboo?a=8mMsIh"><img src="http://feeds.feedburner.com/~a/LeBlogDeMrboo?i=8mMsIh" border="0"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=eyamO"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=eyamO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=RBSTO"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=RBSTO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=al2yo"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=al2yo" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/LeBlogDeMrboo/~4/476641737" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.mrboo.fr/un-tweet-qui-fait-plaisir/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=LeBlogDeMrboo&amp;itemurl=http%3A%2F%2Fwww.mrboo.fr%2Fun-tweet-qui-fait-plaisir%2F</feedburner:awareness><feedburner:origLink>http://www.mrboo.fr/un-tweet-qui-fait-plaisir/</feedburner:origLink></item>
+		<item>
+		<title>Concours de start-up</title>
+		<link>http://feeds.feedburner.com/~r/LeBlogDeMrboo/~3/476468959/</link>
+		<comments>http://www.mrboo.fr/concours-de-start-up/#comments</comments>
+		<pubDate>Sat, 06 Dec 2008 08:12:45 +0000</pubDate>
+		<dc:creator>mrboo</dc:creator>
+		
+		<category><![CDATA[General]]></category>
+
+		<category><![CDATA[entrepreneur]]></category>
+
+		<category><![CDATA[concours]]></category>
+
+		<category><![CDATA[start-up]]></category>
+
+		<guid isPermaLink="false">http://www.mrboo.fr/?p=1674</guid>
+		<description><![CDATA[Hier soir étaient donnés les résultats de la start-up academy, un concours regroupant 91 start-up, un jury composé d&#8217;experts et quelques généreux sponsors (Sun France et leur programme Startup Essentials, AR Systems, Planet Work)
+En première position on trouve Alenty et Affiz à la deuxième place.
+Deux start-up dans le domaine des statistiques et de la monétisation [...]]]></description>
+			<content:encoded><![CDATA[<p>Hier soir étaient donnés les résultats de la start-up academy, un concours regroupant <a href="http://www.webdeux.info/91-participations-la-startup-academy" target="_blank">91 start-up</a>, <a href="http://startup-academy.net/jury-et-experts-accompagnateurs" target="_blank">un jury composé d&#8217;experts</a> et quelques généreux sponsors (<a href="http://fr.sun.com/startupessentials/" target="_blank">Sun France</a> et leur programme Startup Essentials, <a href="http://www.arsystemes.fr/ar/" target="_blank">AR Systems</a>, <a href="http://www.planet-work.fr/" target="_blank">Planet Work</a>)</p>
+<p>En première position on trouve <a title="alenty" href="http://www.alenty.com/" target="_blank">Alenty</a> et <a title="affiz" href="http://blog.affiz.com/" target="_blank">Affiz</a> à la deuxième place.<br />
+Deux start-up dans le domaine des statistiques et de la monétisation (avec le gros temps qui s&#8217;annonce le choix de projets avec un business model solide n&#8217;est pas étonnant)<br />
+La bonne nouvelle pour moi, c&#8217;est qu&#8217;<strong><a href="http://www.hellotipi.com">Hellotipi</a> a décroché la troisième place du podium</strong> <img src='http://www.mrboo.fr/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+<p>S&#8217;en est suivie une très bonne soirée pleine de discussions passionnantes (de très bon augure pour la semaine prochain avec <a href="http://www.lewebparis.com/">Le web</a> de mr <a href="http://loiclemeur.com/france/">Loïc</a> !)</p>
+<p>Ce type de concours de startup sont beaucoup trop rares en France.<br />
+C&#8217;est dommage car ils apportent énormément aux entrepreneurs (cela nous oblige à présenter notre projet, à le défendre à corriger ses faiblesses etc.) et ne coutent finalement pas grand chose aux grands groupes à la recherche d&#8217;idées innovantes et de visibilité.</p>
+<p>Voici ce que j&#8217;aimerai bien voir émerger:<br />
+Une sorte de concours régulier (tout les deux mois par exemple)<br />
+Un business angel prêt à sélectionner une start-up et à y investir ses billes.<br />
+Un panel d&#8217;experts feront une sélection de 5 ou 10 start-up pour aider l&#8217;investisseur dans son choix.<br />
+Chaque start-up participante recevrait un récap des points forts et faibles que le jury lui aurait trouvé (de manière à s&#8217;améliorer)</p>
+<p>Aujourd&#8217;hui il y a de nombreux projets (mais pas assez) et des business angels qui ont du mal à trouver de bons dossiers: faisons les se rencontrer !</p>
+<p>En tout cas <strong>bravo aux organisateurs de l&#8217;événement d&#8217;hier</strong> et vivement la prochaine édition !</p>
+<p><img class="alignnone size-full wp-image-1675" title="badge-startup" src="http://www.mrboo.fr/wp-content/uploads/2008/12/badge-startup.jpg" alt="" /><br />
+Même <a href="http://www.lagrottedubarbu.com/">le barbu</a> était sorti de sa grotte hier: <a href="http://twitpic.com/qdrw">http://twitpic.com/qdrw</a> <img src='http://www.mrboo.fr/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' /> </p>
+
+<p><a href="http://feeds.feedburner.com/~a/LeBlogDeMrboo?a=1G9YMX"><img src="http://feeds.feedburner.com/~a/LeBlogDeMrboo?i=1G9YMX" border="0"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=RRzCO"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=RRzCO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=7TWcO"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=7TWcO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=Kqtbo"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=Kqtbo" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/LeBlogDeMrboo/~4/476468959" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.mrboo.fr/concours-de-start-up/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=LeBlogDeMrboo&amp;itemurl=http%3A%2F%2Fwww.mrboo.fr%2Fconcours-de-start-up%2F</feedburner:awareness><feedburner:origLink>http://www.mrboo.fr/concours-de-start-up/</feedburner:origLink></item>
+		<item>
+		<title>Windows sous les 90% et Firefox au dessus des 20%</title>
+		<link>http://feeds.feedburner.com/~r/LeBlogDeMrboo/~3/474533516/</link>
+		<comments>http://www.mrboo.fr/windows-sous-les-90-et-firefox-au-dessus-des-20/#comments</comments>
+		<pubDate>Thu, 04 Dec 2008 10:22:30 +0000</pubDate>
+		<dc:creator>mrboo</dc:creator>
+		
+		<category><![CDATA[General]]></category>
+
+		<category><![CDATA[navigateur]]></category>
+
+		<category><![CDATA[os]]></category>
+
+		<category><![CDATA[statistiques]]></category>
+
+		<guid isPermaLink="false">http://www.mrboo.fr/?p=1670</guid>
+		<description><![CDATA[Des stats ont été fournies par Net Applications (boite d&#8217;analyses US) indiquant deux phénomènes intéressants pour tout ceux qui s&#8217;intéressent au web:
+Windows (toutes versions confondues) passe pour le première fois depuis la nuit de temps sous la barre symbolique des 90% de part de marché (89,62 % exactement).
+On doit cela à deux phénomènes conjugués: La [...]]]></description>
+			<content:encoded><![CDATA[<p>Des stats ont été fournies par Net Applications (boite d&#8217;analyses US) indiquant deux phénomènes intéressants pour tout ceux qui s&#8217;intéressent au web:</p>
+<p>Windows (toutes versions confondues) passe pour le première fois depuis la nuit de temps sous la barre symbolique des 90% de part de marché (89,62 % exactement).<br />
+On doit cela à deux phénomènes conjugués: La croissance des Mac (un peu moins de 9% de parts de marché) et la progression de Linux (quasi 1% du marché) qui semble porté par le succès des netbook.</p>
+<p>Concernant les navigateurs, Firefox passe la barre des 20% de parts de marché, Internet Explorer quand à lui passe sous les 70%.<br />
+j&#8217;en connais <a href="http://standblog.org/blog/">un</a> qui doit être content <img src='http://www.mrboo.fr/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+<p>Je viens de regarder les stats au niveau d&#8217;<a href="http://www.hellotipi.com">Hellotipi</a> (grand public francophone donc) et j&#8217;obtiens ceci pour le mois de novembre :</p>
+<p><img src="http://www.mrboo.fr/wp-content/uploads/2008/12/stats-novembre-hellotipi.jpg" alt="" title="stats-novembre-hellotipi" class="alignnone size-full wp-image-1671" /></p>
+<p>Pour info au mois de septembre IE était à ~58% et FF à ~34%.<br />
+A quand le passage sous les 50% de IE sur <a href="http://www.hellotipi.com">Hellotipi</a> ?</p>
+<p>Du coté des système d&#8217;exploitation <a href="http://www.hellotipi.com">Hellotipi</a> est très proches des chiffres annoncés par Net Applications (sauf concernant Linux). Voici les chiffres de novembre :</p>
+<p><img src="http://www.mrboo.fr/wp-content/uploads/2008/12/stats-novembre-hellotipi-os.jpg" alt="" title="stats-novembre-hellotipi-os" class="alignnone size-full wp-image-1672" /></p>
+<p>En septembre MacOS était un peu en dessous des 10%.</p>
+<p>Une donnée que l&#8217;on a pas eu et qui me semble utile: qu&#8217;en est-il de cette vieille bouse de Internet Explorer 6 ? (les développeurs web me comprendrons <img src='http://www.mrboo.fr/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' /> )</p>
+
+<p><a href="http://feeds.feedburner.com/~a/LeBlogDeMrboo?a=2rI5iv"><img src="http://feeds.feedburner.com/~a/LeBlogDeMrboo?i=2rI5iv" border="0"></img></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=c6kLO"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=c6kLO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=DZcHO"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=DZcHO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/LeBlogDeMrboo?a=YX5Po"><img src="http://feeds.feedburner.com/~f/LeBlogDeMrboo?i=YX5Po" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/LeBlogDeMrboo/~4/474533516" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.mrboo.fr/windows-sous-les-90-et-firefox-au-dessus-des-20/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=LeBlogDeMrboo&amp;itemurl=http%3A%2F%2Fwww.mrboo.fr%2Fwindows-sous-les-90-et-firefox-au-dessus-des-20%2F</feedburner:awareness><feedburner:origLink>http://www.mrboo.fr/windows-sous-les-90-et-firefox-au-dessus-des-20/</feedburner:origLink></item>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetFeedData?uri=LeBlogDeMrboo</feedburner:awareness></channel>
+</rss>

@@ -1,0 +1,844 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/rss2full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><!-- generator="wordpress/1.5" --><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>John Resig</title>
+	<link>http://ejohn.org</link>
+	<description>Blog, Projects, and Links</description>
+	<pubDate>Mon, 08 Dec 2008 06:10:37 +0000</pubDate>
+	<generator>http://wordpress.org/?v=1.5</generator>
+	<language>en</language>
+
+		<geo:lat>42.381929</geo:lat><geo:long>-71.099084</geo:long><image><link>http://ejohn.org/</link><url>http://ejohn.org/files/jeresig-wordpress-sm.jpg</url><title>John Resig (ejohn.org)</title></image><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://feeds.feedburner.com/JohnResig" type="application/rss+xml" /><feedburner:emailServiceId>189497</feedburner:emailServiceId><feedburner:feedburnerHostname>http://www.feedburner.com</feedburner:feedburnerHostname><feedburner:browserFriendly>This is an XML content feed. It is intended to be viewed in a newsreader or syndicated to another site, subject to copyright and fair use.</feedburner:browserFriendly><item>
+		<title>Recent Podcasts, Talks, and Interviews</title>
+		<link>http://ejohn.org/blog/recent-podcasts-talks-and-interviews/</link>
+		<comments>http://ejohn.org/blog/recent-podcasts-talks-and-interviews/#comments</comments>
+		<pubDate>Mon, 08 Dec 2008 01:10:17 +0000</pubDate>
+		<dc:creator>John Resig</dc:creator>
+		                <category>interviews</category>
+                <category>presentations</category>
+                <category>podcasts</category>
+		<guid>http://ejohn.org/blog/recent-podcasts-talks-and-interviews/</guid>
+		<description><![CDATA[
+New Open Web Podcast: Sizzling Open FX
+Ben and Dion (now at Mozilla), Alex Russel (now at Google), and I talked about Chrome, Sizzle, JavaFX, and the Open Web.
+
+
+
+
+In November I had the opportunity to speak at Mexico Web 2.0, talking about jQuery 1.3 and jQuery UI.
+
+
+
+I gave another variation of this talk for the Irish [...]]]></description>
+			<content:encoded><![CDATA[	<p><img src="http://ejohn.org/files/openweb.png" style="float:left; margin-right: 10px;"/><br />
+<b>New Open Web Podcast: <a href="http://openwebpodcast.com/sizzling-open-fx">Sizzling Open FX</a></b><br/><br />
+Ben and Dion (now at Mozilla), Alex Russel (now at Google), and I talked about Chrome, Sizzle, JavaFX, and the Open Web.<br />
+<br style="clear:both;"/></p>
+	<hr/>
+	<p>In November I had the opportunity to speak at <a href="http://mexicoweb2.com/">Mexico Web 2.0</a>, talking about jQuery 1.3 and jQuery UI.</p>
+	<p><center><a href="http://www.slideshare.net/jeresig/jquery-13-and-jquery-ui-presentation/"><img src="http://ejohn.org/files/preso-mx2.png"/></a></center></p>
+	<p>I gave another variation of this talk for the Irish .Net group: <a href="http://developers.ie/">Developers.ie</a>. You can view a recording of the show in the <a href="http://developers.ie/webcasts.aspx">webcasts</a> section of their site.</p>
+	<hr/>
+	<p>In late September I gave a number of talks at the Ajax Experience - one of which was on Learning jQuery. A <a href="http://onflash.org/ted/2008/11/ajax-experience-2008-intro-to-jquery.php">video</a> of that talk is now online. This was a variation of <a href="http://ejohn.org/blog/adv-javascript-and-processingjs/">the talk</a> that I gave at Boston IxDA (<a href="http://ejohn.org/blog/adv-javascript-and-processingjs/">Code, Slides, and Demos</a>).</p>
+	<hr/>
+	<p><a href="http://arapehlivanian.com/">Ara Pehlivanian</a> <a href="http://www.sitepoint.com/article/interview-john-resig/">interviewed me</a> for the online publication <a href="http://www.sitepoint.com/">Sitepoint</a> the other day.</p>
+	<p><a href="http://www.riccardodegni.it/">Riccardo Degni</a> <a href="http://www.html.it/articoli/johnresig/index.html">interviewed</a> me for the Italian web design site HTML.it.</p>
+	<p>Finally, I was <a href="http://www.maestrosdelweb.com/editorial/john-resig-de-jquery/">interviewed</a> by <a href="http://www.maestrosdelweb.com/">Maestros del Web</a> while I was in Cancun speaking at Mexico Web 2.0.</p>
+	<hr/>
+	<p>For something a little fun: Chris Hoffman, over at <a href="http://www.bluestatedigital.com/">Blue State Digital</a>, built an <a href="http://www.outstandingelephant.com/jcquard/">excellent little JavaScript library</a> for making punchcards in JavaScript using Canvas.</p>
+	<p><center><a href="http://www.outstandingelephant.com/jcquard/"><img src="http://ejohn.org/files/jquard.png"/></a></center></p>
+	<p>JavaScript really does run everywhere!
+</p>
+		<img src="http://ejohn.org/apps/rss/?from=rss&id=5667" style="width:0px;height:0px;"/><img src="http://feeds.feedburner.com/~r/JohnResig/~4/478160895" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRSS>http://ejohn.org/blog/recent-podcasts-talks-and-interviews/feed/</wfw:commentRSS>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=JohnResig&amp;itemurl=http%3A%2F%2Fejohn.org%2Fblog%2Frecent-podcasts-talks-and-interviews%2F</feedburner:awareness></item>
+		<item>
+		<title>JavaScript Language Abstractions</title>
+		<link>http://ejohn.org/blog/javascript-language-abstractions/</link>
+		<comments>http://ejohn.org/blog/javascript-language-abstractions/#comments</comments>
+		<pubDate>Sat, 06 Dec 2008 01:05:38 +0000</pubDate>
+		<dc:creator>John Resig</dc:creator>
+		                <category>pyjamas</category>
+                <category>gwt</category>
+                <category>javascript</category>
+                <category>objectivej</category>
+		<guid>http://ejohn.org/blog/javascript-language-abstractions/</guid>
+		<description><![CDATA[The other day I was looking at pyjamas (which bills itself as a GWT-like tool for Python). I was also reminded of the semi-recent release of Objective-J.
+
+Pyjamas, GWT, and Objective-J all hinge around a central concept: Abstracting away the authoring of JavaScript-heavy web applications by allowing the developer to program entirely in their natively language [...]]]></description>
+			<content:encoded><![CDATA[	<p>The other day I was looking at <a href="http://pyjs.org/">pyjamas</a> (which bills itself as a <a href="http://code.google.com/webtoolkit/">GWT</a>-like tool for Python). I was also reminded of the semi-recent release of <a href="http://cappuccino.org/">Objective-J</a>.</p>
+	<p>Pyjamas, GWT, and Objective-J all hinge around a central concept: Abstracting away the authoring of JavaScript-heavy web applications by allowing the developer to program entirely in their natively language (be it Python, Java, or an Objective-C-like-language accordingly).</p>
+	<p>This is a large abstraction - much more so than what is provided by most JavaScript libraries - you are programming in another language which is outputting JavaScript code. You are likely to never see a DOM object or any pieces of the native JavaScript language.</p>
+	<p>I worry about large abstractions like this for a number of reasons.</p>
+	<p>When you use a pure-JavaScript library (such as jQuery, Prototype, Dojo, Yahoo UI, etc.) you are still programming using the JavaScript language. In the case of jQuery a large number of users, who have either never programmed JavaScript before or never programmed before, acquire a good grasp of how to use JavaScript - accented by the use of the library. A pure JavaScript library makes annoying tasks simple, the largest of which being cross-browser support. It does nothing to dilute the quality of the JavaScript-authoring experience. In fact I would argue that JavaScript libraries do much to give JavaScript a particular style and feel. Code written with Prototype <i>feels</i> very different from code written with jQuery - and this is fine since it's giving the user the option to develop in the JavaScript language how they best see fit.</p>
+	<p>In the case of these language abstractions you are gaining none of the benefit of learning the JavaScript language. When a leak in the abstraction occurs (and it will occur - just as it's bound to occur in any abstraction) what resources do you have, as a developer, to correct the problem? If you've learned nothing about JavaScript then you stand no chance in trying to repair, or work around, the issue.</p>
+	<p>It could be stated that these tools could work well if a developer already has some knowledge of JavaScript but neither pyjamas nor GWT sell themselves as such (Objective-J recommends, but does not require, some basic JavaScript knowledge). I think such a developer (one that has strong knowledge of both JavaScript and Java/Python/Objective-C and still feels compelled to use one of the abstractions) doesn't really exist - at least not in any significant numbers. A developer who is capable of authoring JavaScript code should naturally gravitate towards authoring as close to the final product as possible. It will give them greater flexibility when developing and allow for the greatest amount of control.</p>
+	<p>A huge benefit of JavaScript is that it's a proverbial melting pot of experience. Developers from all backgrounds code in it (those who program Java, PHP, Perl, Ruby, .NET, or any other server-side language) and it lends a lot to the style of JavaScript code that you see in the wild. By writing in a single-language stack you miss out on this collaboration with other developers. Java developers now only communicate other Java developers (for example). While this may be fine for some projects it certainly limits your range of experience that you can draw from.</p>
+	<p>All of this being said these stacks have some excellent features that you can draw on. In the case of GWT you can use all of the normal Java-debugging techniques and continue to develop in your IDE of choice (even including Eclipse integration). Additionally since the framework has full control (both client and server-side) it can selectively send parts of the codebase depending on the browser. This is very interesting and having this full stack for development makes it quite lucrative. </p>
+	<p>I should mention here that I'm a creator of a JavaScript language abstraction: <a href="http://ejohn.org/blog/processingjs/">Processing.js</a>. You can write Canvas visualization using the Processing language (no apparent JavaScript involved). I included support for the straight Processing language for a single reason: Because it would allow for all the Processing demos to be able to run unchanged. Beyond that I don't really see a good use for using the Processing language abstraction to author scripts. Some people have done it but I don't really encourage it.</p>
+	<p>Instead you can use the full Processing API from JavaScript:</p>
+	<div class="syntax_hilite">
+<div id="js-1">
+	<div><span style="color: #003366; font-weight: bold;">var</span> p = Processing<span style="color:#008800; font-weight:bold;">&#40;</span>CanvasElement<span style="color:#008800; font-weight:bold;">&#41;</span>;<br />
+p.<span style="color: #006600;">size</span><span style="color:#008800; font-weight:bold;">&#40;</span><span style="color: #CC0000;">100</span>, <span style="color: #CC0000;">100</span><span style="color:#008800; font-weight:bold;">&#41;</span>;<br />
+p.<span style="color: #006600;">background</span><span style="color:#008800; font-weight:bold;">&#40;</span><span style="color: #CC0000;">0</span><span style="color:#008800; font-weight:bold;">&#41;</span>;<br />
+p.<span style="color: #006600;">fill</span><span style="color:#008800; font-weight:bold;">&#40;</span><span style="color: #CC0000;">255</span><span style="color:#008800; font-weight:bold;">&#41;</span>;<br />
+p.<span style="color: #006600;">ellipse</span><span style="color:#008800; font-weight:bold;">&#40;</span><span style="color: #CC0000;">50</span>, <span style="color: #CC0000;">50</span>, <span style="color: #CC0000;">50</span>, <span style="color: #CC0000;">50</span><span style="color:#008800; font-weight:bold;">&#41;</span>;</div>
+	</div>
+</div>
+	<p>I consider this to be a good compromise: Take the good parts from one language and bring them to JavaScript to allow for the greatest amount of flexibility and control - without a massive abstraction.
+</p>
+		<img src="http://ejohn.org/apps/rss/?from=rss&id=5666" style="width:0px;height:0px;"/><img src="http://feeds.feedburner.com/~r/JohnResig/~4/476393227" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRSS>http://ejohn.org/blog/javascript-language-abstractions/feed/</wfw:commentRSS>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=JohnResig&amp;itemurl=http%3A%2F%2Fejohn.org%2Fblog%2Fjavascript-language-abstractions%2F</feedburner:awareness></item>
+		<item>
+		<title>Genetic A/B Testing with JavaScript</title>
+		<link>http://ejohn.org/blog/genetic-ab-testing-with-javascript/</link>
+		<comments>http://ejohn.org/blog/genetic-ab-testing-with-javascript/#comments</comments>
+		<pubDate>Tue, 25 Nov 2008 21:54:41 +0000</pubDate>
+		<dc:creator>John Resig</dc:creator>
+		                <category>javascript</category>
+                <category>usability</category>
+		<guid>http://ejohn.org/blog/genetic-ab-testing-with-javascript/</guid>
+		<description><![CDATA[I've long been interested in the concept of A/B testing (Also called split testing). It's a simple concept that should sit will with most mathematically-inclined types: You have a baseline interface in which you adjust a single variable, at random, for each user that visits your application. After a given amount of time you should [...]]]></description>
+			<content:encoded><![CDATA[	<p>I've long been interested in the concept of <a href="http://en.wikipedia.org/wiki/A/B_testing">A/B testing</a> (Also called split testing). It's a simple concept that should sit will with most mathematically-inclined types: You have a baseline interface in which you adjust a single variable, at random, for each user that visits your application. After a given amount of time you should be able to see if certain variables affect how your users behave (either negatively or positively).</p>
+	<p>A product was recently released called <a href="http://www.techcrunch.com/2008/11/25/snapads-survival-of-the-fittest-meets-madison-avenue/">SnapAds</a> which allows its users (advertisers) to permute different variations of an ad and display different versions to users, based upon how well they perform over time.</p>
+	<p>But that's not what I was interested in, specifically (even though it is a cool idea). The team that created this also created another product a while back that never saw a full release: <a href="http://genetify.com/">Genetify</a>. Genetify provides developers with a JavaScript library for doing any number of A/B tests on a site (tweaking CSS, JavaScript, or HTML elements) all trained over time using a <a href="http://en.wikipedia.org/wiki/Genetic_algorithm">Genetic algorithm</a> backend.</p>
+	<p>This means that no matter how many different A/B tests you have on a page the genetic algorithm will adapt to the input (users visiting the page and hopefully achieving some pre-defined goal) and slowly show a more-optimal page layout to the user.</p>
+	<p>Genetify provides a <a href="http://demo.genetify.com/">demo</a> on their site showing the basics of how it works along with a simple <a href="http://demo.genetify.com/genetify.txt">text tutorial</a>.</p>
+	<p>To get started with Genetify you will need to include the library in the head of your page along with a couple CSS rules.</p>
+	<div class="syntax_hilite">
+<div id="html-3">
+	<div><span style="color: #009900;"><a href="http://december.com/html/4/element/script.html"><span style="color: #000000; font-weight: bold;">&lt;script</span></a> <span style="color: #000066;">src</span>=<span style="color: #ff0000;">"genetify.js"</span><a href="http://december.com/html/4/element/.html"><span style="color: #000000; font-weight: bold;">&gt;</span></a></span><span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/script&gt;</span></span><br />
+<span style="color: #009900;"><a href="http://december.com/html/4/element/style.html"><span style="color: #000000; font-weight: bold;">&lt;style&gt;</span></a></span> <br />
+&nbsp; .v { display: none; }<br />
+&nbsp; .genetify_disabled { display: none !important; } <br />
+&nbsp; .genetify_enabled { display: block !important; } <br />
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/style&gt;</span></span></div>
+	</div>
+</div>
+	<p>And then before the closing body tag on your site include the following:</p>
+	<div class="syntax_hilite">
+<div id="html-4">
+	<div><span style="color: #009900;"><a href="http://december.com/html/4/element/script.html"><span style="color: #000000; font-weight: bold;">&lt;script&gt;</span></a></span>genetify.vary();<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/script&gt;</span></span></div>
+	</div>
+</div>
+	<p>Here are some examples of different ways in which a page layout can be changed using Genetify.</p>
+	<p><b>HTML Elements / CSS Classes</b></p>
+	<p>The easiest technique is one which allows you to simply toggle HTML using some inline CSS classes.</p>
+	<div class="syntax_hilite">
+<div id="html-5">
+	<div><span style="color: #009900;"><a href="http://december.com/html/4/element/div.html"><span style="color: #000000; font-weight: bold;">&lt;div</span></a> <span style="color: #000066;">class</span>=<span style="color: #ff0000;">"sentence"</span><a href="http://december.com/html/4/element/.html"><span style="color: #000000; font-weight: bold;">&gt;</span></a></span>One way of saying something<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/div&gt;</span></span>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <br />
+<span style="color: #009900;"><a href="http://december.com/html/4/element/div.html"><span style="color: #000000; font-weight: bold;">&lt;div</span></a> <span style="color: #000066;">class</span>=<span style="color: #ff0000;">"sentence v anotherway"</span><a href="http://december.com/html/4/element/.html"><span style="color: #000000; font-weight: bold;">&gt;</span></a></span>Another way of saying something<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/div&gt;</span></span></div>
+	</div>
+</div>
+	<p>The first class specified ends up becoming the name of one of the "genes" which is used to train the genetic algorithm. Thus if the user completes a specified goal while the "anotherway" element is toggled then the algorithm is trained to recognize that showing the "anotherway" element might be more desirable and will show it more over time.</p>
+	<p>A goal can be recorded by specifying a goal name and a weight for completing the goal. You'll need to call a JavaScript method that records the completion of a goal wherever in your code you think the goal was completed (such as the user signing up for something).</p>
+	<div class="syntax_hilite">
+<div id="js-6">
+	<div>genetify.<span style="color: #006600;">record</span>.<span style="color: #006600;">goal</span><span style="color:#008800; font-weight:bold;">&#40;</span><span style="color: #3366CC;">'signup'</span>, <span style="color: #CC0000;">100</span><span style="color:#008800; font-weight:bold;">&#41;</span>;</div>
+	</div>
+</div>
+	<p>The next-most-common technique will likely be that of toggling CSS rules. Multiple rules are defined using a similar name but with the addition of a simple alphabetical name on the end which is used for categorization.</p>
+	<div class="syntax_hilite">
+<div id="css-2">
+	<div><span style="color: #cc00cc;">#navbar <span style="color:#008800; font-weight:bold;">&#123;</span></span> <span style="color:#CC0033; font-weight: bold;">color</span>: <span style="color:#CC0099;">red</span>; <span style="color:#008800; font-weight:bold;">&#125;</span><br />
+#navbar_vA <span style="color:#008800; font-weight:bold;">&#123;</span> <span style="color:#CC0033; font-weight: bold;">color</span>: <span style="color:#CC0099;">green</span>; <span style="color:#008800; font-weight:bold;">&#125;</span><br />
+#navbar_vB <span style="color:#008800; font-weight:bold;">&#123;</span> <span style="color:#CC0033; font-weight: bold;">color</span>: <span style="color:#CC0033; font-weight: bold;">blue</span>; <span style="color:#008800; font-weight:bold;">&#125;</span></div>
+	</div>
+</div>
+	<p>Note that you can have any number of rules - you aren't limited to the traditional "A/B" style of testing where there's only two options - specifying any number of rules will continue to yield results.</p>
+	<p>Finally Genetify provides the developer with the ability to toggle JavaScript variables.</p>
+	<div class="syntax_hilite">
+<div id="js-7">
+	<div>highlight = <span style="color: #003366; font-weight: bold;">function</span><span style="color:#008800; font-weight:bold;">&#40;</span>elem<span style="color:#008800; font-weight:bold;">&#41;</span><span style="color:#008800; font-weight:bold;">&#123;</span><br />
+&nbsp; elem.<span style="color: #006600;">style</span>.<span style="color: #006600;">borderColor</span> = <span style="color: #3366CC;">'green'</span>;<br />
+<span style="color:#008800; font-weight:bold;">&#125;</span><br />
+highlight_vRed = <span style="color: #003366; font-weight: bold;">function</span><span style="color:#008800; font-weight:bold;">&#40;</span>elem<span style="color:#008800; font-weight:bold;">&#41;</span><span style="color:#008800; font-weight:bold;">&#123;</span><br />
+&nbsp; elem.<span style="color: #006600;">style</span>.<span style="color: #006600;">borderColor</span> = <span style="color: #3366CC;">'red'</span>;<br />
+<span style="color:#008800; font-weight:bold;">&#125;</span></div>
+	</div>
+</div>
+	<p>I'm less excited about this particular technique - it's kind of clumsy to clutter the global namespace with variables and to expect a changed output. I think a better technique would be to toggle a property value within the genetify object and check how that's changed, instead.</p>
+	<p>Perhaps the biggest question that surrounds Genetify, right now, is over its longevity and openness. It seems like the project has taken the backburner in favor of the team's other project, SnapAds (and understandably so - since that has an obvious revenue stream). Although a <a href="http://news.ycombinator.com/item?id=376331">recent comment</a> by its creator, over at <a href="http://news.ycombinator.com/">Hacker News</a> has fueled speculation: He's looking for interest in the possibility of open sourcing the codebase for anyone to use.</p>
+	<p>Right now Genetify is two components:</p>
+	<ol>
+	<li>The JavaScript frontend that does the A/B rotation of site components. Currently this file is only available on the Genetify demo site as a <a href="http://demo.genetify.com/genetify.js">doubly-packed file</a> (using <a href="http://dean.edwards.name/packer">Dean Edwards' Packer</a>). It wasn't too hard to un-pack it and run it through a <a href="http://elfz.laacz.lv/beautify/">JavaScript beautifier</a> in order to get some <a href="http://ejohn.org/files/genetify.js">sane output</a>. Of course that doesn't make it any more "open source" - just developer-readable. You can now tweak the code to communicate with the server of your choosing, instead.</li>
+	<li>The Genetify backend is unclear at this point. It appears to only exist on the Genetify servers and it's not clear if the backend will accept input from non-Genetify domains. If <a href="http://news.ycombinator.com/item?id=376331">the intent</a> of the team holds true then should probably see this code become available soon.</li>
+	</ol>
+	<p>I'm already quite excited about this utility. I think it shows a lot of promise for developers who want to roll their own A/B testing solutions. I hope the team comes through and releases an Open Source solution that developers can really start to hack on it.
+</p>
+		<img src="http://ejohn.org/apps/rss/?from=rss&id=5665" style="width:0px;height:0px;"/><img src="http://feeds.feedburner.com/~r/JohnResig/~4/465712458" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRSS>http://ejohn.org/blog/genetic-ab-testing-with-javascript/feed/</wfw:commentRSS>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=JohnResig&amp;itemurl=http%3A%2F%2Fejohn.org%2Fblog%2Fgenetic-ab-testing-with-javascript%2F</feedburner:awareness></item>
+		<item>
+		<title>DOM insertAdjacentHTML</title>
+		<link>http://ejohn.org/blog/dom-insertadjacenthtml/</link>
+		<comments>http://ejohn.org/blog/dom-insertadjacenthtml/#comments</comments>
+		<pubDate>Mon, 24 Nov 2008 22:39:22 +0000</pubDate>
+		<dc:creator>John Resig</dc:creator>
+		                <category>dom</category>
+                <category>w3c</category>
+                <category>html5</category>
+                <category>ie</category>
+		<guid>http://ejohn.org/blog/dom-insertadjacenthtml/</guid>
+		<description><![CDATA[While looking for improvements to injecting HTML fragments into a document (which I mentioned, in passing, when I looked at using Document Fragments) I decided to spend some more time with Internet Explorer's insertAdjacentHTML method.
+
+This method has been in Internet Explorer since version 4.0 - as well as is in the current release of Opera [...]]]></description>
+			<content:encoded><![CDATA[	<p>While looking for improvements to injecting HTML fragments into a document (which I mentioned, in passing, when I looked at using <a href="http://ejohn.org/blog/dom-documentfragments/">Document Fragments</a>) I decided to spend some more time with Internet Explorer's <a href="http://msdn.microsoft.com/en-us/library/ms536452.aspx">insertAdjacentHTML</a> method.</p>
+	<p>This method has been in Internet Explorer since version 4.0 - as well as is in the current release of Opera - and allows you to inject fragments of well-formed HTML into a variety of locations in a document.</p>
+	<p>The locations work as such (I list the equivalent terminology):</p>
+	<table>
+	<tr>
+<td><code>.insertAdjacentHTML("beforeBegin", ...)</code></td>
+	<td>before</td>
+</tr>
+	<tr>
+<td><code>.insertAdjacentHTML("afterBegin", ...)</code></td>
+	<td>prepend</td>
+</tr>
+	<tr>
+<td><code>.insertAdjacentHTML("beforeEnd", ...)</code></td>
+	<td>append</td>
+</tr>
+	<tr>
+<td><code>.insertAdjacentHTML("afterEnd", ...)</code></td>
+	<td>after</td>
+</tr>
+	</table>
+	<p>The method is only available on DOM elements (which makes sense) and is easy to use:</p>
+	<div class="syntax_hilite">
+<div id="js-8">
+	<div><span style="color: #003366; font-weight: bold;">var</span> ul = document.<span style="color: #006600;">getElementById</span><span style="color:#008800; font-weight:bold;">&#40;</span><span style="color: #3366CC;">"list"</span><span style="color:#008800; font-weight:bold;">&#41;</span>;<br />
+ul.<span style="color: #006600;">insertAdjacentHTML</span><span style="color:#008800; font-weight:bold;">&#40;</span><span style="color: #3366CC;">"beforeEnd"</span>, <span style="color: #3366CC;">"&lt;li&gt;A new li on the list.&lt;/li&gt;"</span><span style="color:#008800; font-weight:bold;">&#41;</span>;<br />
+ul.<span style="color: #006600;">insertAdjacentHTML</span><span style="color:#008800; font-weight:bold;">&#40;</span><span style="color: #3366CC;">"beforeEnd"</span>, <span style="color: #3366CC;">"&lt;li&gt;Another li!&lt;/li&gt;"</span><span style="color:#008800; font-weight:bold;">&#41;</span>;</div>
+	</div>
+</div>
+	<p>At first glance the method appeared to work well and seemed to be relatively fast. Two questions remained, though: How fast is it in comparison to using the <a href="http://ejohn.org/blog/dom-documentfragments/">Document Fragment technique</a> I outlined before and does it work for all the strange use-cases that exist?</p>
+	<ul>
+	<li>I created a <a href="http://dev.jquery.com/~john/ticket/append/">test case</a> to compare the three types of injection: The type we've been using in jQuery prior to the upcoming 1.3 release, the new Document Fragment technique we'll be using in jQuery 1.3, and a case using insertAdjacentHTML (where applicable). While both the Document Fragment and insertAdjacentHTML cases were significantly faster than the old techniques used in jQuery the Document Fragment technique ended up being marginally faster in IE 6 (50ms vs. 80ms for insertAdjacentHTML).</li>
+	<li>There's a huge problem with insertAdjacentHTML: It doesn't work on all HTML elements in IE 6 (specifically it doesn't work on table, tbody, thead, or tr elements). Having gaps in the functionality is very undesirable (attempting to use insertAdjacentHTML on those elements causes an exception to pop up in IE 6).</li>
+	<li>It doesn't work on XML documents. Of course neither does innerHTML (at least not until browsers start to implement HTML 5 more completely). We're stuck doing the traditional techniques used in libraries like jQuery.</li>
+	</ul>
+	<p>So why spend all this time talking about a method that is relatively half-baked in the main browser that implements it? Because it's <a href="http://www.w3.org/html/wg/html5/#dom-insertadjacenthtml-html">going to be part</a> of the HTML 5 specification. This means that we're going to see a larger number of browsers start to implement this method (and hopefully it'll encourage existing vendors to implement it more completely and efficiently).</p>
+	<p>Having browsers implement this method will dramatically reduce the amount of code needed to write a respectable JavaScript library. I'm looking forward to the day in which this method is more-widely available (along with querySelectorAll) so that we can really buckle down and do some serious code simplification.
+</p>
+		<img src="http://ejohn.org/apps/rss/?from=rss&id=5664" style="width:0px;height:0px;"/><img src="http://feeds.feedburner.com/~r/JohnResig/~4/464612676" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRSS>http://ejohn.org/blog/dom-insertadjacenthtml/feed/</wfw:commentRSS>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=JohnResig&amp;itemurl=http%3A%2F%2Fejohn.org%2Fblog%2Fdom-insertadjacenthtml%2F</feedburner:awareness></item>
+		<item>
+		<title>Browser Page Load Performance</title>
+		<link>http://ejohn.org/blog/browser-page-load-performance/</link>
+		<comments>http://ejohn.org/blog/browser-page-load-performance/#comments</comments>
+		<pubDate>Mon, 24 Nov 2008 10:44:13 +0000</pubDate>
+		<dc:creator>John Resig</dc:creator>
+		                <category>browser</category>
+                <category>performance</category>
+                <category>network</category>
+		<guid>http://ejohn.org/blog/browser-page-load-performance/</guid>
+		<description><![CDATA[Steve Souders is currently doing more to improve the performance of web pages and web browsers than anyone else out there. When he worked at Yahoo! he was responsible for YSlow (a great tool for measuring ways to improve the performance of your site) and he wrote the book on improving page performance: High Performance [...]]]></description>
+			<content:encoded><![CDATA[	<p><a href="http://stevesouders.com/">Steve Souders</a> is currently doing more to improve the performance of web pages and web browsers than anyone else out there. When he worked at Yahoo! he was responsible for <a href="http://developer.yahoo.com/yslow/">YSlow</a> (a great tool for measuring ways to improve the performance of your site) and he wrote the book on improving page performance: <a href="http://stevesouders.com/hpws/">High Performance Web Sites</a>. Now he works for Google but much of what he's up to is the same: Making web pages load faster.</p>
+	<p>I've been really excited about one of his recent project releases: <a href="http://stevesouders.com/ua/">UA Profiler</a>. The profiler is a tool that you can run in your browser to determine the status of a number of network-performance-specific features that tie heavily to browser page load performance.</p>
+	<p>Here's a look at the current breakdown:</p>
+	<p><center><a href="http://stevesouders.com/ua/"><img src="http://ejohn.org/files/ua-profiler.sm.png"/></a></center></p>
+	<p>We can see Firefox 3.1 taking a lead, fixing 9 out of 11 of the issues tested for. Firefox 3, Chrome, and Safari 4 all come after with 8 fixed. Firefox 2, Safari 3.1, and IE 8 next at 7. Those numbers help to give you an overall feel of the page load performance that you'll see in a browser. (Naturally these tests don't take any rendering or JavaScript performance numbers into account but network performance generally trumps their total runtime anyway.)</p>
+	<p>Information about network performance is important for two reasons:</p>
+	<ol>
+	<li>It informs browser vendors as to the quality of their browser. A browser fixing any of the points specified by the test will yield faster page loads.</li>
+	<li>It informs web site developers as to the problems they should be taking into consideration when developing a site. For example if a browser they support doesn't handle simultaneous stylesheet downloading perhaps their page should be re-worked.</li>
+	</ol>
+	<p>The tests themselves can be broken down into a couple categories (Steve <a href="http://stevesouders.com/ua/faq.php#question2">explains them all, in detail</a> in the FAQ):</p>
+	<p><b>Network Connections</b></p>
+	<p>Two big things are tested here: The number of simultaneous connections that can be opened to a hostname (sub-domains count as different hostnames) and how many connections can be opened to any number of hostnames, simultaneously. These numbers can give you a good indicator of how many parallel downloads can occur (most commonly seen for downloading multiple images, simultaneously).</p>
+	<p>Additionally there is a check to see if the browser supports Gzip compression. The results aren't too exciting here as all modern browsers support Gzip compression at this point.</p>
+	<p><b>Parallel Downloads</b></p>
+	<p>All browsers are capable of downloading images in parallel (multiple images downloading simultaneously) but what about other resources (like scripts or stylesheets)?</p>
+	<p>Unfortunately it's much harder to get scripts and stylesheets to load in parallel since their contents may dramatically change the rest of the page. The loading of these resources occur in three steps:</p>
+	<ol>
+	<li>Downloading (can be parallelized)</li>
+	<li>Parsing</li>
+	<li>Execution</li>
+	</ol>
+	<p>The load order breaks down like so (sort of an advanced game of rock-paper-scissors): Scripts prevent other scripts from parsing and executing, stylesheets prevent scripts from parsing and executing.</p>
+	<p>It's been hard for browsers to implement the parallelization of script downloading since scripts are capable of changing the contents of the page - and possibly removing adding new scripts or stylesheets to the page. Because of this browsers are starting to get better at opportunistically looking ahead in the document and pre-loading stylesheets and scripts - even if their actual use may be delayed.</p>
+	<p>Changes in this area will yield some of the largest benefits to browser page load performance, going forward, as it's still one of the most untapped areas of improvement.</p>
+	<p><b>Caching</b></p>
+	<p>While all modern browsers support caching of resources, caching of page redirects is much less common. For example, consider the case where a user types in "http://google.com/" - Google redirects the user to "http://www.google.com/" but only a couple browsers cache that redirect as to not retry it later.</p>
+	<p>A similar case of redirect caching occurs for resources, for example with stylesheets, images, or scripts. Since these occur much more frequently it becomes that much more important for browsers to cache every action that they can.</p>
+	<p><b>Prefetching</b></p>
+	<p>This is <a href="http://www.whatwg.org/specs/web-apps/current-work/#link-type-prefetch">part of the HTML 5 specification</a> and allows for pages to specify resources which should be opportunistically downloaded in case they should be used in the future (the common example of image rollovers could be used here).</p>
+	<p>There's a <a href="https://developer.mozilla.org/en/Link_prefetching_FAQ">full page</a> describing how to use them on the <a href="https://developer.mozilla.org/">Mozilla developer wiki</a> but it isn't that hard to get started. It's as simple as including a new link element in the top of your site:</p>
+	<div class="syntax_hilite">
+<div id="html-9">
+	<div><span style="color: #009900;"><a href="http://december.com/html/4/element/link.html"><span style="color: #000000; font-weight: bold;">&lt;link</span></a> <span style="color: #000066;">rel</span>=<span style="color: #ff0000;">"prefetch"</span> <span style="color: #000066;">href</span>=<span style="color: #ff0000;">"/images/big.jpeg"</span><a href="http://december.com/html/4/element/.html"><span style="color: #000000; font-weight: bold;">&gt;</span></a></span></div>
+	</div>
+</div>
+	<p>And that resource will be downloaded preemptively.</p>
+	<p><b>Inline Images</b></p>
+	<p>The final case that the profiler tests for is the ability of a browser to support inline images using a <a href="http://en.wikipedia.org/wiki/Data_URI_scheme">data: URI</a>. Data URIs give developers the ability to include the image data directly within the page itself. While this saves an extra HTTP request it's important to note that the resource will not be cached (at least not as external resource - it may be cached as part of the complete page). The use of this technique will vary on a case-by-case basis but having a browser support it is absolutely important.</p>
+	<hr/>
+	<p>Going forward it will become increasingly important to have publicly-visible tests like the <a href="http://stevesouders.com/ua/">UA Profiler</a> that are able to encourage browser vendors to act quicker at implementing critical browser functionality. Anything that's able to, even indirectly, improve the performance of the browsing experience for users of the web is absolutely critical, in my book.
+</p>
+		<img src="http://ejohn.org/apps/rss/?from=rss&id=5663" style="width:0px;height:0px;"/><img src="http://feeds.feedburner.com/~r/JohnResig/~4/463996155" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRSS>http://ejohn.org/blog/browser-page-load-performance/feed/</wfw:commentRSS>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=JohnResig&amp;itemurl=http%3A%2F%2Fejohn.org%2Fblog%2Fbrowser-page-load-performance%2F</feedburner:awareness></item>
+		<item>
+		<title>Clickjacking iPhone Attack</title>
+		<link>http://ejohn.org/blog/clickjacking-iphone-attack/</link>
+		<comments>http://ejohn.org/blog/clickjacking-iphone-attack/#comments</comments>
+		<pubDate>Sun, 23 Nov 2008 22:05:15 +0000</pubDate>
+		<dc:creator>John Resig</dc:creator>
+		                <category>security</category>
+                <category>iphone</category>
+                <category>css</category>
+		<guid>http://ejohn.org/blog/clickjacking-iphone-attack/</guid>
+		<description><![CDATA[A couple months ago, while attending the recent iPhoneDevCamp 2, I had the opportunity to speak with a number of developers who were doing JavaScript development on the iPhone.
+
+One developer, Wayne Pan, showed me this weird bug that he kept encountering: He was using CSS Transforms to change the positioning of some elements that were [...]]]></description>
+			<content:encoded><![CDATA[	<p>A couple months ago, while attending the recent <a href="http://www.iphonedevcamp.org/">iPhoneDevCamp 2</a>, I had the opportunity to speak with a number of developers who were doing JavaScript development on the iPhone.</p>
+	<p>One developer, <a href="http://waynepan.com/">Wayne Pan</a>, showed me this weird bug that he kept encountering: He was using <a href="http://webkit.org/blog/130/css-transforms/">CSS Transforms</a> to change the positioning of some elements that were contained within an iframe - but when he did this the elements would 'jump' outside the iframe and overlay its contents over the parent page.</p>
+	<p>I asked him to prepare a simple test case for me so that I could explore it further - anything jumping outside of an iframes' confines is a <b>huge</b> no-no in browsers - it could lead to a form of a <a href="http://ha.ckers.org/blog/20081007/clickjacking-details/">Clickjacking attack</a>.</p>
+	<p>I did some more testing - I needed to confirm two things:</p>
+	<ol>
+	<li>Could a CSS transform, in fact, position an element outside of an iframe.</li>
+	<li>Could one interact with the items that were placed outside the iframe.</li>
+	</ol>
+	<p>I created two tests - <a href="http://ejohn.org/files/bugs/oops/link.html">one which utilized a link</a> that I wanted to spoof and another that <a href="http://ejohn.org/files/bugs/oops/pass.html">had a password input</a> that I wanted to spoof. Both had the same basic principal: Assume that an iframe on a page (maybe a banner ad?) was malicious and wanted to trick the user into providing information, or visiting a certain page, when they interacted with the element's contents.</p>
+	<p>The contents of the iframe'd page looked something like this (this is the link spoofing case):</p>
+	<div class="syntax_hilite">
+<div id="html-10">
+	<div><span style="color: #009900;"><a href="http://december.com/html/4/element/html.html"><span style="color: #000000; font-weight: bold;">&lt;html&gt;</span></a></span><br />
+<span style="color: #009900;"><a href="http://december.com/html/4/element/head.html"><span style="color: #000000; font-weight: bold;">&lt;head&gt;</span></a></span><br />
+<span style="color: #009900;"><a href="http://december.com/html/4/element/style.html"><span style="color: #000000; font-weight: bold;">&lt;style&gt;</span></a></span><br />
+.expand-with-transform {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; -webkit-transform: translateY(-30px) translateX(-20px);<br />
+&nbsp; &nbsp; &nbsp; &nbsp; height: 400px;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; width: 320px;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; padding: 8px;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; background: white;<br />
+}<br />
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/style&gt;</span></span><br />
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/head&gt;</span></span><br />
+<span style="color: #009900;"><a href="http://december.com/html/4/element/body.html"><span style="color: #000000; font-weight: bold;">&lt;body&gt;</span></a></span><br />
+&nbsp; I'm a banner ad.<br />
+&nbsp; <span style="color: #009900;"><a href="http://december.com/html/4/element/div.html"><span style="color: #000000; font-weight: bold;">&lt;div</span></a> <span style="color: #000066;">class</span>=<span style="color: #ff0000;">"expand-with-transform"</span><a href="http://december.com/html/4/element/.html"><span style="color: #000000; font-weight: bold;">&gt;</span></a></span><br />
+&nbsp; &nbsp; <span style="color: #009900;"><a href="http://december.com/html/4/element/a.html"><span style="color: #000000; font-weight: bold;">&lt;a</span></a> <span style="color: #000066;">href</span>=<span style="color: #ff0000;">"http://google.com/"</span> <br />
+&nbsp; &nbsp; &nbsp; <span style="color: #000066;">onclick</span>=<span style="color: #ff0000;">"alert('Oops! Trust is broken.');"</span><a href="http://december.com/html/4/element/.html"><span style="color: #000000; font-weight: bold;">&gt;</span></a></span>You can trust me<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/a&gt;</span></span><br />
+&nbsp; <span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/div&gt;</span></span><br />
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/body&gt;</span></span><br />
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/html&gt;</span></span></div>
+	</div>
+</div>
+	<p>This is what the pages should look like (or look similar to them, at least) in MobileSafari - if the bug <i>did not exist</i>:</p>
+	<div style="width:645px;"><img src="http://ejohn.org/files/bugs/oops/link-3.png" style="margin-right: 5px;"/><img src="http://ejohn.org/files/bugs/oops/pass-4.png"/></div>
+	<p>But this is what it looked like on the iPhone OS 2.0 (no other WebKit engine was effected):</p>
+	<div style="width:645px;"><img src="http://ejohn.org/files/bugs/oops/link-1.png" style="margin-right: 5px;"/><img src="http://ejohn.org/files/bugs/oops/pass-1.png"/></div>
+	<p>Note that the iframe banner ad isn't even visible when this bug is in play: The shifted iframe contents have completely overwritten the parent page. The user is oblivious to what is happening: The URL looks correct - and so does the link/password input - but it's all being spoofed by the malicious iframe.</p>
+	<p>Interaction with the elements yields the spoofed results:</p>
+	<div style="width:645px;"><img src="http://ejohn.org/files/bugs/oops/link-2.png" style="margin-right: 5px;"/><img src="http://ejohn.org/files/bugs/oops/pass-2.png"/></div>
+	<p>So while it's obviously possible to override the complete pages' contents it's important to note that the contents shifted outside the iframe are not able to be interacted with -- only the contents that still remain within the confines of the iframe boundaries. This makes it an 'imperfect' attack but certainly one that is still very potent. A smart phisher could easily work some magic to trick the user.</p>
+	<p>I should note that after I discovered all of the above I quickly submitted my findings to the Apple Security team. They deemed it to be very important and asked me to not write about it - which I did.</p>
+	<p>The other day they finally released iPhone 2.2 which <a href="http://support.apple.com/kb/HT3318">included</a> a fix for my specific issue.</p>
+	<blockquote><p>CVE-ID: CVE-2008-4232</p>
+	<p>Available for: iPhone OS 1.0 through 2.1, iPhone OS for iPod touch 1.1 through 2.1</p>
+	<p>Impact: Websites with embedded iframe elements may be vulnerable to user interface spoofing</p>
+	<p>Description: Safari allows an iframe element to display content outside its boundaries, which may lead to user interface spoofing. This update addresses the issue by not allowing iframe elements to display content outside their boundaries. This issue does not affect systems prior to iPhone OS 2.0 or iPhone OS for iPod touch 2.0. Credit to John Resig of Mozilla Corporation for reporting this issue.</p></blockquote>
+	<p>It's great to see a fix for this problem come about quickly and efficiently - and if you're still running an old version of the iPhone OS please be sure to upgrade!
+</p>
+		<img src="http://ejohn.org/apps/rss/?from=rss&id=5662" style="width:0px;height:0px;"/><img src="http://feeds.feedburner.com/~r/JohnResig/~4/463424168" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRSS>http://ejohn.org/blog/clickjacking-iphone-attack/feed/</wfw:commentRSS>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=JohnResig&amp;itemurl=http%3A%2F%2Fejohn.org%2Fblog%2Fclickjacking-iphone-attack%2F</feedburner:awareness></item>
+		<item>
+		<title>EtherPad: Real-time Editing with JavaScript</title>
+		<link>http://ejohn.org/blog/etherpad-real-time-editing-with-javascript/</link>
+		<comments>http://ejohn.org/blog/etherpad-real-time-editing-with-javascript/#comments</comments>
+		<pubDate>Wed, 19 Nov 2008 08:56:08 +0000</pubDate>
+		<dc:creator>John Resig</dc:creator>
+		                <category>rhino</category>
+                <category>javascript</category>
+		<guid>http://ejohn.org/blog/etherpad-real-time-editing-with-javascript/</guid>
+		<description><![CDATA[I had the opportunity, last year, to talk with the team behind AppJet. They're building something quite cool: A simple platform for developing reusable server-side applications written completely in JavaScript.
+
+They've come a long way since I originally wrote about them late last year. They now even provide a copy of their server-side software along with [...]]]></description>
+			<content:encoded><![CDATA[	<p>I had <a href="http://ejohn.org/blog/instant-javascript-apps/">the opportunity</a>, last year, to talk with the team behind <a href="http://appjet.com/">AppJet</a>. They're building something quite cool: A simple platform for developing reusable server-side applications written completely in JavaScript.</p>
+	<p>They've come a long way since I <a href="http://ejohn.org/blog/instant-javascript-apps/">originally wrote about them</a> late last year. They now even provide a copy of their <a href="http://appjet.com/download">server-side software</a> along with the full source. This, together with Aptana's <a href="http://www.aptana.com/jaxer">Jaxer</a>, means that there is, at least, two  high-powered, Open Source, JavaScript server platforms.</p>
+	<p><a href="http://etherpad.com/">EtherPad</a> is something new altogether. Building upon their existing platform, and adding in <a href="http://en.wikipedia.org/wiki/Comet_(programming)">Comet</a> streaming, they've constructed a <b>completely real-time, multi-user, text and JavaScript editor</b>.</p>
+	<p>I use two editors in my day-to-day work: <a href="http://www.vim.org/">vim</a> and <a href="http://www.codingmonkeys.de/subethaedit/">SubEthaEdit</a> (in fact I'm writing this blog post in SubEthaEdit, at the moment) - and I can say pretty definitively that EtherPad is <i>just</i> like SubEthaEdit.</p>
+	<p><center><a href="http://ejohn.org/files/etherpad.png"><img src="http://ejohn.org/files/etherpad.sm.png"/></a></center></p>
+	<p>I had the opportunity to use it last week with four people all simultaneously editing a document. It has the characteristic SubEthaEdit feature: All changes, by any user, occur in near-real-time and are highlighted with that user's chosen color.</p>
+	<p>Some may wonder how this is different from Google Docs. Let me just say that SubEthaEdit and EtherPad are in a completely different league from Google Docs: I've used all three pieces of software for multiple-editing a document and the responsiveness that you get from SubEthaEdit/EtherPad makes for an unparalleled experience. It's really common to see users start chat discussions within a document simply because it's so easy to see their response and get a discussion going.</p>
+	<p>EtherPad does have one major distinction from SubEthaEdit, though: The ability to save and restore page revisions. At any point you can hit a large 'Save Now' button on the page to tag a revision - and then go back and restore from it at any point. In many ways this makes the software more like a real-time, multi-user editable, Wiki.</p>
+	<p>The most exciting thing for me though, and a point which I think is unparalleled, the entire application is built using JavaScript from the bottom up. The server code is in JavaScript, the database is in JavaScript, and the frontend is in JavaScript - it's a complete JavaScript stack. The AppJet team plans on releasing this new server-side software (similar to their previous release but with the addition of Comet functionality and other pieces) completely Open Source as well. I look forward to being able to give it a spin when the time comes.
+</p>
+		<img src="http://ejohn.org/apps/rss/?from=rss&id=5661" style="width:0px;height:0px;"/><img src="http://feeds.feedburner.com/~r/JohnResig/~4/458458215" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRSS>http://ejohn.org/blog/etherpad-real-time-editing-with-javascript/feed/</wfw:commentRSS>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=JohnResig&amp;itemurl=http%3A%2F%2Fejohn.org%2Fblog%2Fetherpad-real-time-editing-with-javascript%2F</feedburner:awareness></item>
+		<item>
+		<title>The March of Access Control</title>
+		<link>http://ejohn.org/blog/the-march-of-access-control/</link>
+		<comments>http://ejohn.org/blog/the-march-of-access-control/#comments</comments>
+		<pubDate>Wed, 19 Nov 2008 00:21:30 +0000</pubDate>
+		<dc:creator>John Resig</dc:creator>
+		                <category>browsers</category>
+                <category>w3c</category>
+		<guid>http://ejohn.org/blog/the-march-of-access-control/</guid>
+		<description><![CDATA[The web is changing. Historically it's been painfully easy to request resources from remote locations (such as stylesheets, scripts, images, and loading pages in iframes) - but this has brought along a whole world of security issues that browsers are continuing to try and resolve. 
+
+This openness has come to define what web development is [...]]]></description>
+			<content:encoded><![CDATA[	<p>The web is changing. Historically it's been painfully easy to request resources from remote locations (such as stylesheets, scripts, images, and loading pages in iframes) - but this has brought along a whole world of security issues that browsers are continuing to try and resolve. </p>
+	<p>This openness has come to define what web development is all about: Dead simple sharing of resources and ability to get started. It's very likely that the lack of restrictions placed on these historical page elements will continue to plague browser developers for many years to come.</p>
+	<p>That doesn't mean that browsers have to make the same "mistakes" going forward.</p>
+	<p>This is where the new <a href="http://www.w3.org/TR/access-control/">W3C Access Control</a> specification comes into play.</p>
+	<p>All the new cross-domain-capable technologies that are coming to browsers will be requiring the use of Access Controls from the get-go, including:</p>
+	<ul>
+	<li><a href="http://ejohn.org/blog/cross-site-xmlhttprequest/">Cross-Domain XMLHttpRequest</a></li>
+	<li><a href="http://www.bluishcoder.co.nz/2008/11/video-audio-and-cross-domain-usage.html">&lt;video/&gt; and &lt;audio/&gt; elements</a></li>
+	</ul>
+	<p>The Access Control specification has been one of the most-rapidly-changing specifications that I've seen. I <a href="http://ejohn.org/blog/cross-site-xmlhttprequest/">wrote a demo</a> early this year and have had to update it at least twice since then in order to match the updated APIs - and it appears as if they may have even changed again.</p>
+	<p>Right now the specification requires that any resource that you wish to make accessible in a cross-domain manner must include an extra header specifying which site(s) are allowed to access it.</p>
+	<p>If you wish to allow any site to access your resource you would use:</p>
+	<pre>Access-Control-Allow-Origin: *</pre>
+	<p>and if you only wanted one other domain to access it you would use:</p>
+	<pre>Access-Control-Allow-Origin: http://ejohn.org</pre>
+	<p>This is important: It now means that site owners <b>must</b> make a conscious decision to enable cross-domain access of their resources (in contrast to images, stylesheets, and scripts which are always made available cross-domain with no way to disable it).</p>
+	<p>(There are a number of <a href="http://www.w3.org/TR/access-control/#syntax">other headers</a> specified by the Access Control specification, for more fine-grained access.)</p>
+	<p>There is going to be a lot of confusion and anger regarding this large, fundamental, change to the style of these upcoming APIs: They aren't like the web that we know and love!</p>
+	<p>The best write-up that I've seen, to date, was by Jonas Sicking of Mozilla on the <a href="http://lists.xiph.org/pipermail/theora/2008-November/001958.html">Ogg Mailing lists</a>. This one section, in particular, is particularly poignant:</p>
+	<blockquote><p><b>Why not use the same policy as for &lt;img&gt;?</b></p>
+	<p>Yes, we could definitely do the same for &lt;video&gt; as we have for &lt;img&gt;. But it will come with the same downsides. It will mean that we will have to be much more cautious with how we develop the API for <video>.</p>
+	<p>There are already discussions about API features that we could not allow if we allowed cross-site video without Access-Control (or similar) protection. We would not be allowed to have callbacks for captions where the captions are handed to page javascript to be displayed in the page. This would allow an internet site to get captions from board presentation videos hosted on intranet sites, something that is obviously not acceptable.</p>
+	<p>We could say that the captions callback would work, but only if the video was loaded from same site, or if had the Access-Control-Allow-Origin:* header set. However this will likely result in random bugs like captions sometimes failing since the developer had perfect hearing and so didn't do a lot of testing with captions. In general accessibility is hard enough to get people to do correct that I'm reluctant to add features that work great as long as you don't take accessibility into account, but where you have to take extra steps to get accessibility to work.</p>
+	<p>Similar arguments goes for accessing the size of the video file (for example through progress events). We can not allow that to work for cross-site loads unless the site has opted in. This is because we likely won't know that it's actually a video that is being downloaded until after the first progress events have been fired. This means that you could use &lt;video&gt; to measure file sizes for arbitrary files that are otherwise protected by firewalls and/or logins.</p>
+	<p>If we always restrict usage of &lt;video&gt; to the cases when we know that the video is private data we will be much more free to develop APIs and functionality since we won't have to worry about protecting the data inside it, or deal with error conditions when someone tries to use sensitive APIs from a cross-site loaded video that didn't have Access-Control-Allow-Origin:*.</p></blockquote>
+	<p>I recommend that you take the time to read his whole piece as it's worth it to gain a full understanding of the problems at play here (especially related to the &lt;video/&gt; tag).</p>
+	<p>One thing is clear: Security is being addressed center-stage in the new web APIs. This is going to be good as it'll prevent horrible security bugs going forward while, at the same time, change the landscape of web development in a very fundamental way. The web had its fun but now reality is starting to set in - it's time to get to work.</p>
+	<hr/><br />
+<small>I'm reminded of the recent release of a crazy hack: transmitting data via URL encoded strings in stylesheets, named <a href="http://nb.io/hacks/csshttprequest/">CSSHttpRequest</a>. It's an insane technique (in the best possible sense of the word) and well outside the realm of most users. Even though the syntax and technique is different, the security/information-leak implications of this are every-bit as real as those presented by <a href="http://bob.pythonmac.org/archives/2005/12/05/remote-json-jsonp/">JSONP</a>.</small>
+</p>
+		<img src="http://ejohn.org/apps/rss/?from=rss&id=5660" style="width:0px;height:0px;"/><img src="http://feeds.feedburner.com/~r/JohnResig/~4/458007330" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRSS>http://ejohn.org/blog/the-march-of-access-control/feed/</wfw:commentRSS>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=JohnResig&amp;itemurl=http%3A%2F%2Fejohn.org%2Fblog%2Fthe-march-of-access-control%2F</feedburner:awareness></item>
+		<item>
+		<title>JavaScript iPhone Apps</title>
+		<link>http://ejohn.org/blog/iphone-javascript-apps/</link>
+		<comments>http://ejohn.org/blog/iphone-javascript-apps/#comments</comments>
+		<pubDate>Tue, 18 Nov 2008 02:11:51 +0000</pubDate>
+		<dc:creator>John Resig</dc:creator>
+		                <category>iphone</category>
+                <category>javascript</category>
+                <category>apple</category>
+		<guid>http://ejohn.org/blog/iphone-javascript-apps/</guid>
+		<description><![CDATA[I've been watching, with interest, developers create new applications for the iPhone. Owning one myself - and being knowledgeable in JavaScript - I've been wondering what options there were for creating downloadable JavaScript applications or the iPhone. In doing some research I found a number of solutions, some simpler than others, some requiring more knowledge [...]]]></description>
+			<content:encoded><![CDATA[	<p>I've been watching, with interest, developers create new applications for the iPhone. Owning one myself - and being knowledgeable in JavaScript - I've been wondering what options there were for creating downloadable JavaScript applications or the iPhone. In doing some research I found a number of solutions, some simpler than others, some requiring more knowledge of Objective-C than others.</p>
+	<p>Before looking at the options I should note that given the requirements of the platform if you're really serious about getting in to iPhone development you should learn Objective-C. None of the options appear to provide the full range of functionality that a normally-written application would.</p>
+	<p><b><a href="http://www.jiggyapp.com/">JiggyApp</a></b></p>
+	<p>This was an early entry to the JavaScript iPhone application market - arriving back in 2007. It requires a Jailbroken iPhone (likely running version 1.1 of the Operating System).</p>
+	<p>JiggyApp provides a full API for developing an application - apparently separate from most of the typical APIs. Arguably, though, the code ends up being relatively usable.</p>
+	<div class="syntax_hilite">
+<div id="js-11">
+	<div>Plugins.<span style="color: #006600;">load</span><span style="color:#008800; font-weight:bold;">&#40;</span> <span style="color: #3366CC;">"UIKit"</span> <span style="color:#008800; font-weight:bold;">&#41;</span>;</p>
+	<p><span style="color: #003366; font-weight: bold;">var</span> window = <span style="color: #003366; font-weight: bold;">new</span> UIWindow<span style="color:#008800; font-weight:bold;">&#40;</span> UIHardware.<span style="color: #006600;">fullScreenApplicationContentRect</span> <span style="color:#008800; font-weight:bold;">&#41;</span>;<br />
+window.<span style="color: #006600;">setHidden</span><span style="color:#008800; font-weight:bold;">&#40;</span> <span style="color: #003366; font-weight: bold;">false</span> <span style="color:#008800; font-weight:bold;">&#41;</span>;<br />
+window.<span style="color: #006600;">orderFront</span><span style="color:#008800; font-weight:bold;">&#40;</span><span style="color:#008800; font-weight:bold;">&#41;</span>;<br />
+window.<span style="color: #006600;">makeKey</span><span style="color:#008800; font-weight:bold;">&#40;</span><span style="color:#008800; font-weight:bold;">&#41;</span>;<br />
+window.<span style="color: #006600;">backgroundColor</span> = <span style="color:#008800; font-weight:bold;">&#91;</span> <span style="color: #CC0000;">0</span>.<span style="color: #CC0000;">8</span> , <span style="color: #CC0000;">0</span> , <span style="color: #CC0000;">0</span>, <span style="color: #CC0000;">1</span> <span style="color:#008800; font-weight:bold;">&#93;</span>;</p>
+	<p><span style="color: #003366; font-weight: bold;">var</span> mainView = <span style="color: #003366; font-weight: bold;">new</span> UIScroller<span style="color:#008800; font-weight:bold;">&#40;</span><span style="color:#008800; font-weight:bold;">&#41;</span>;<br />
+mainView.<span style="color: #006600;">contentSize</span> = <span style="color:#008800; font-weight:bold;">&#91;</span> window.<span style="color: #006600;">bounds</span><span style="color:#008800; font-weight:bold;">&#91;</span> <span style="color: #CC0000;">2</span> <span style="color:#008800; font-weight:bold;">&#93;</span> * <span style="color: #CC0000;">2</span> , window.<span style="color: #006600;">bounds</span><span style="color:#008800; font-weight:bold;">&#91;</span> <span style="color: #CC0000;">3</span> <span style="color:#008800; font-weight:bold;">&#93;</span> * <span style="color: #CC0000;">2</span> <span style="color:#008800; font-weight:bold;">&#93;</span>;<br />
+mainView.<span style="color: #006600;">backgroundColor</span> = <span style="color:#008800; font-weight:bold;">&#91;</span> <span style="color: #CC0000;">0</span> , <span style="color: #CC0000;">0</span> , <span style="color: #CC0000;">0</span> , <span style="color: #CC0000;">0</span> <span style="color:#008800; font-weight:bold;">&#93;</span>;</p>
+	<p>window.<span style="color: #006600;">setContentView</span><span style="color:#008800; font-weight:bold;">&#40;</span> mainView <span style="color:#008800; font-weight:bold;">&#41;</span>;</p>
+	<p><span style="color: #003366; font-weight: bold;">var</span> hello = <span style="color: #003366; font-weight: bold;">new</span> UITextLabel<span style="color:#008800; font-weight:bold;">&#40;</span> <span style="color:#008800; font-weight:bold;">&#91;</span> <span style="color: #CC0000;">20</span> , <span style="color: #CC0000;">20</span> , window.<span style="color: #006600;">bounds</span><span style="color:#008800; font-weight:bold;">&#91;</span> <span style="color: #CC0000;">2</span> <span style="color:#008800; font-weight:bold;">&#93;</span> - <span style="color: #CC0000;">40</span> , <span style="color: #CC0000;">100</span> <span style="color:#008800; font-weight:bold;">&#93;</span> <span style="color:#008800; font-weight:bold;">&#41;</span>;</p>
+	<p>hello.<span style="color: #006600;">text</span> = <span style="color: #3366CC;">"Hello World!"</span>;<br />
+hello.<span style="color: #006600;">backgroundColor</span> = <span style="color:#008800; font-weight:bold;">&#91;</span> <span style="color: #CC0000;">0</span> , <span style="color: #CC0000;">0</span> , <span style="color: #CC0000;">0</span> , <span style="color: #CC0000;">0</span>.<span style="color: #CC0000;">25</span> <span style="color:#008800; font-weight:bold;">&#93;</span>;<br />
+hello.<span style="color: #006600;">setFont</span><span style="color:#008800; font-weight:bold;">&#40;</span> <span style="color: #003366; font-weight: bold;">new</span> Font<span style="color:#008800; font-weight:bold;">&#40;</span> <span style="color: #3366CC;">"Trebuchet MS"</span> , <span style="color: #CC0000;">2</span> , <span style="color: #CC0000;">46</span> <span style="color:#008800; font-weight:bold;">&#41;</span> <span style="color:#008800; font-weight:bold;">&#41;</span>;<br />
+hello.<span style="color: #006600;">color</span> = <span style="color:#008800; font-weight:bold;">&#91;</span> <span style="color: #CC0000;">1</span> , <span style="color: #CC0000;">1</span> , <span style="color: #CC0000;">1</span> , <span style="color: #CC0000;">1</span> <span style="color:#008800; font-weight:bold;">&#93;</span>;<br />
+hello.<span style="color: #006600;">centersHorizontally</span> = <span style="color: #003366; font-weight: bold;">true</span>;</p>
+	<p>mainView.<span style="color: #006600;">addSubview</span><span style="color:#008800; font-weight:bold;">&#40;</span> hello <span style="color:#008800; font-weight:bold;">&#41;</span>;</div>
+	</div>
+</div>
+	<p>The above snippet was from the <a href="http://www.jiggyapp.com/develop">Getting Started with Jiggy</a> page.</p>
+	<p><b><a href="http://inexdo.com/JSCocoa">JSCocoa</a></b></p>
+	<p>JSCocoa is a full bridge that maps Cocoa development into JavaScript (instead of the typical Objective-C/Cocoa mapping). The result ends up working in both OS X and on the iPhone.</p>
+	<p>It's a pretty-clear port of Objective-C style and mannerisms but with a JavaScript syntax. Note some of the differences:</p>
+	<p>Objective-C/Cocoa:</p>
+	<div class="syntax_hilite">
+<div id="js-12">
+	<div><span style="color:#008800; font-weight:bold;">&#91;</span><span style="color:#008800; font-weight:bold;">&#91;</span>NSButton alloc<span style="color:#008800; font-weight:bold;">&#93;</span> initWithFrame:NSMakeRect<span style="color:#008800; font-weight:bold;">&#40;</span><span style="color: #CC0000;">0</span>, <span style="color: #CC0000;">0</span>, <span style="color: #CC0000;">100</span>, <span style="color: #CC0000;">40</span><span style="color:#008800; font-weight:bold;">&#41;</span><span style="color:#008800; font-weight:bold;">&#93;</span>;</div>
+	</div>
+</div>
+	<p>JSCocoa:</p>
+	<div class="syntax_hilite">
+<div id="js-13">
+	<div>NSButton.<span style="color: #006600;">instance</span><span style="color:#008800; font-weight:bold;">&#40;</span><span style="color:#008800; font-weight:bold;">&#123;</span> withFrame:NSMakeRect<span style="color:#008800; font-weight:bold;">&#40;</span><span style="color: #CC0000;">0</span>, <span style="color: #CC0000;">0</span>, <span style="color: #CC0000;">100</span>, <span style="color: #CC0000;">40</span><span style="color:#008800; font-weight:bold;">&#41;</span> <span style="color:#008800; font-weight:bold;">&#125;</span><span style="color:#008800; font-weight:bold;">&#41;</span>&nbsp;</div>
+	</div>
+</div>
+	<p>Right now it seems like JSCocoa is more usable for developing OS X applications but the progress moving forward is certainly promising.</p>
+	<p><b>"Applications" in MobileSafari</b></p>
+	<p>While it's not, technically, a true iPhone application one option is to adapt your existing web applications to be used in a more application-centric manner.</p>
+	<p>Apple provides a <a href="http://developer.apple.com/webapps/docs/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/chapter_8_section_1.html#//apple_ref/doc/uid/TP40002051-CH3-SW3">number of tips</a> for improving the style of your web application. The most important points of which are:</p>
+	<ol>
+	<li>Providing a tray icon for the application (to be used when the user saves it).</li>
+	<li>Providing a full-screen view of the application (with no MobileSafari toolbars showing).</li>
+	</ol>
+	<p>This will give the full appearance of a regular iPhone application (after using some more styling and setup from <a href="http://code.google.com/p/iui/">iui</a>, or similar).</p>
+	<p><b><a href="http://phonegap.com/">PhoneGap</a></b></p>
+	<p>The next step to making your iPhone web application more native-like is to tap into some of the underlying native APIs. One recent release that will help is that of <a href="http://phonegap.com/">PhoneGap</a>.</p>
+	<p>PhoneGap is an application that exposes a few JavaScript APIs to pages running MobileSafari. Right now this includes Geolocation and access to the Accelerometer.</p>
+	<p>Geolocation:</p>
+	<div class="syntax_hilite">
+<div id="js-14">
+	<div>getLocation<span style="color:#008800; font-weight:bold;">&#40;</span><span style="color:#008800; font-weight:bold;">&#41;</span>;</p>
+	<p><span style="color: #003366; font-weight: bold;">function</span> gotLocation<span style="color:#008800; font-weight:bold;">&#40;</span>lat,lon<span style="color:#008800; font-weight:bold;">&#41;</span><span style="color:#008800; font-weight:bold;">&#123;</span><br />
+&nbsp; document.<span style="color: #006600;">body</span>.<span style="color: #006600;">innerHTML</span> = <span style="color: #3366CC;">"latitude: "</span> + lat +<br />
+&nbsp; &nbsp; <span style="color: #3366CC;">" longitude: "</span> + lon;<br />
+<span style="color:#008800; font-weight:bold;">&#125;</span></div>
+	</div>
+</div>
+	<p>Accelerometer:</p>
+	<div class="syntax_hilite">
+<div id="js-15">
+	<div><span style="color: #003366; font-weight: bold;">function</span> updateAccel<span style="color:#008800; font-weight:bold;">&#40;</span><span style="color:#008800; font-weight:bold;">&#41;</span><span style="color:#008800; font-weight:bold;">&#123;</span><br />
+&nbsp; document.<span style="color: #006600;">body</span>.<span style="color: #006600;">innerHTML</span> = <span style="color: #3366CC;">"accel: "</span> + accelX + <span style="color: #3366CC;">" "</span> + accelY + <span style="color: #3366CC;">" "</span> + accelZ;&nbsp; &nbsp; <br />
+&nbsp; setTimeout<span style="color:#008800; font-weight:bold;">&#40;</span>updateAccel, <span style="color: #CC0000;">100</span><span style="color:#008800; font-weight:bold;">&#41;</span>;<br />
+<span style="color:#008800; font-weight:bold;">&#125;</span></div>
+	</div>
+</div>
+	<p>They're also working on access to the camera, sound, and vibration tools of the phone.</p>
+	<p><b>WebTouch</b></p>
+	<p>The other day "Dr Nic" wrote up an article on how he had used <a href="http://drnicwilliams.com/2008/11/10/to-webkit-or-not-to-webkit-within-your-iphone-app/">a WebKit instance</a> (along with HTML, CSS, and JavaScript) to render a portion of his iPhone application.</p>
+	<p>I contacted him about the project and wondered if he'd be willing to provide some of the code that backs it. Written up by his co-worker at <a href="http://www.mocra.com">Mocra</a>, Anthony Mittaz, the result is called <b><a href="http://ejohn.org/files/WebTouch.zip">WebTouch</a></b>.</p>
+	<p>Right now it's just a <a href="http://ejohn.org/files/WebTouch.zip">zip file</a> of sample code but hopefully it'll be expanded at some point.</p>
+	<p>It's really simple and gives you a good entry point into the world of hybrid HTML/CSS/JavaScript/Objective-C/Cocoa development. If you've been interested in Objective-C this might make for a good starting point, as well.</p>
+	<p><b>Bonus</b></p>
+	<p>While this isn't something that you can actually use, I think it's pretty cool. This guy ported my <a href="http://ejohn.org/blog/processingjs/">Processing.js</a> work <a href="http://www.youtube.com/watch?v=0UN2iYrZmEY">to the iPhone</a>, writing his own Canvas implementation using OpenGL ES hooking in to SpiderMonkey.</p>
+	<p><center><object width="425" height="344"><br />
+<param name="movie" value="http://www.youtube.com/v/0UN2iYrZmEY&#038;hl=en&#038;fs=1"></param>
+<param name="allowFullScreen" value="true"></param>
+<param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/0UN2iYrZmEY&#038;hl=en&#038;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object></center></p>
+	<p>There are a lot of options available for the discerning JavaScript developer - the most promising of which is, I think, WebTouch. It's pretty obvious that in order to be able to build the best possible iPhone application you would have to know Objective-C. Having a clear path, paved with JavaScript, to that end result should be any JavaScript developer's goal.
+</p>
+		<img src="http://ejohn.org/apps/rss/?from=rss&id=5659" style="width:0px;height:0px;"/><img src="http://feeds.feedburner.com/~r/JohnResig/~4/456869089" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRSS>http://ejohn.org/blog/iphone-javascript-apps/feed/</wfw:commentRSS>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=JohnResig&amp;itemurl=http%3A%2F%2Fejohn.org%2Fblog%2Fiphone-javascript-apps%2F</feedburner:awareness></item>
+		<item>
+		<title>MiniAjax.com For Sale</title>
+		<link>http://ejohn.org/blog/miniajaxcom-for-sale/</link>
+		<comments>http://ejohn.org/blog/miniajaxcom-for-sale/#comments</comments>
+		<pubDate>Tue, 18 Nov 2008 00:36:35 +0000</pubDate>
+		<dc:creator>John Resig</dc:creator>
+		                <category>domains</category>
+                <category>ajax</category>
+		<guid>http://ejohn.org/blog/miniajaxcom-for-sale/</guid>
+		<description><![CDATA[Last fall I had the opportunity to acquire a great domain - one that was already quite popular within the Ajax realm: MiniAjax.com. It made a splash when it was released in early 2007 - and while it, literally, hasn't been updated since it first came out, it continues to draw a large audience.
+
+
+
+It embodies [...]]]></description>
+			<content:encoded><![CDATA[	<p>Last fall I had the opportunity to acquire a great domain - one that was already quite popular within the Ajax realm: <a href="http://miniajax.com/">MiniAjax.com</a>. It made a splash when it was released in early 2007 - and while it, literally, hasn't been updated since it first came out, it continues to draw a large audience.</p>
+	<p><center><a href="http://miniajax.com/"><img src="http://ejohn.org/files/miniajax.sm.png"/></a></center></p>
+	<p>It embodies a simple concept: Show nice screenshots and simple descriptions of eye-catching JavaScript/Ajax libraries.</p>
+	<p>That simple premise has drawn some phenomenal numbers:</p>
+	<ul>
+	<li><a href="http://delicious.com/url/7adbc7a4e66fede0c5946cb084158acb">20,900 adds on Delicious</a> (One of the most popular sites on Delicious)</li>
+	<li>41,400 Monthly Visitors (Google Analytics access available upon request.)</li>
+	<li><a href="http://feeds.feedburner.com/~fc/miniajax">4,500 - 5,000 Daily Feed Subscribers</a></li>
+	<li><a href="http://www.prchecker.info/check_page_rank.php?action=docheck&#038;do_it_now=%20Check%20PR&#038;urlo=http://miniajax.com/">Google PageRank of 5</a></li>
+	<li><a href="http://technorati.com/blogs/miniajax.com?reactions">Technorati Authority of 93</a></li>
+	<li>At least 5 site submissions per month.</li>
+	</ul>
+	<p>Any sort of update to the site would be sure to dramatically increase the, already substantial, traffic. There is nothing "powering" the site at the moment - it's just a static HTML landing page, some images, and a static RSS file.</p>
+	<p>Unfortunately, after owning the domain for just over a year and doing absolutely nothing with it, I've decided to pass it on. I've already received a couple offers by email but I'm open to more. My email address is: <a href="mailto:jeresig@gmail.com">jeresig@gmail.com</a>.
+</p>
+		<img src="http://ejohn.org/apps/rss/?from=rss&id=5658" style="width:0px;height:0px;"/><img src="http://feeds.feedburner.com/~r/JohnResig/~4/456805279" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRSS>http://ejohn.org/blog/miniajaxcom-for-sale/feed/</wfw:commentRSS>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=JohnResig&amp;itemurl=http%3A%2F%2Fejohn.org%2Fblog%2Fminiajaxcom-for-sale%2F</feedburner:awareness></item>
+		<item>
+		<title>Accuracy of JavaScript Time</title>
+		<link>http://ejohn.org/blog/accuracy-of-javascript-time/</link>
+		<comments>http://ejohn.org/blog/accuracy-of-javascript-time/#comments</comments>
+		<pubDate>Wed, 12 Nov 2008 22:52:49 +0000</pubDate>
+		<dc:creator>John Resig</dc:creator>
+		                <category>time</category>
+                <category>date</category>
+                <category>javascript</category>
+                <category>browsers</category>
+		<guid>http://ejohn.org/blog/accuracy-of-javascript-time/</guid>
+		<description><![CDATA[There were two events recently that made me quite concerned.
+
+First, I was looking through some of the results from the Dromaeo test suite and I noticed a bunch of zero millisecond times being returned from tests. This was quite odd since the tests should've taken, at least, a couple milliseconds to run and getting consistent [...]]]></description>
+			<content:encoded><![CDATA[	<p>There were two events recently that made me quite concerned.</p>
+	<p>First, I was looking through some of the results from the <a href="http://dromaeo.com/">Dromaeo</a> test suite and I noticed a bunch of zero millisecond times being returned from tests. This was quite odd since the tests should've taken, at least, a couple milliseconds to run and getting consistent times of "0" is rather infeasible, especially for non-trivial code.</p>
+	<p>Second, I was running some performance tests, on Internet Explorer, in the <a href="http://mootools.net/slickspeed/">SlickSpeed</a> selector test suite and noticed the result times drastically fluctuating. When trying to figure out if changes that you've made are beneficial, or not, it's incredibly difficult to have the times constantly shifting by 15 - 60ms every page reload.</p>
+	<p>Both of these cases set me out to do some investigating. All JavaScript performance-measuring tools utilize something like this to measure their results:</p>
+	<div class="syntax_hilite">
+<div id="js-16">
+	<div><span style="color: #003366; font-weight: bold;">var</span> start = <span style="color:#008800; font-weight:bold;">&#40;</span><span style="color: #003366; font-weight: bold;">new</span> Date<span style="color:#008800; font-weight:bold;">&#41;</span>.<span style="color: #006600;">getTime</span><span style="color:#008800; font-weight:bold;">&#40;</span><span style="color:#008800; font-weight:bold;">&#41;</span>;<br />
+<span style="color: #009900; font-style: italic;">/* Run a test. */</span><br />
+<span style="color: #003366; font-weight: bold;">var</span> diff = <span style="color:#008800; font-weight:bold;">&#40;</span><span style="color: #003366; font-weight: bold;">new</span> Date<span style="color:#008800; font-weight:bold;">&#41;</span>.<span style="color: #006600;">getTime</span><span style="color:#008800; font-weight:bold;">&#40;</span><span style="color:#008800; font-weight:bold;">&#41;</span> - start;</div>
+	</div>
+</div>
+	<p>The exact syntax differs but the crux of the matter is that they're querying the Date object for the current time, in milliseconds, and finding the difference to get to total run time of the test.</p>
+	<p>There are a lot of extenuating circumstances that take place every time a piece of code is run. There could be other things running in another thread, maybe another process is consuming more resources - whatever it is it's possible that the total run time of a test could fluctuate. How much that test fluctuates is largely consistent, following somewhere along a <a href="http://en.wikipedia.org/wiki/Normal_distribution">normal distribution</a>:</p>
+	<p><center><a href="http://en.wikipedia.org/wiki/Normal_distribution"><img src="http://ejohn.org/files/standard.png" style="border:0px;"/></a></center></p>
+	<p>(Performance test suites like <a href="http://www2.webkit.org/perf/sunspider-0.9/sunspider.html">SunSpider</a> and <a href="http://dromaeo.com/">Dromaeo</a> use a <a href="http://en.wikipedia.org/wiki/T-distribution">T-distribution</a> to get a better picture of the distribution of the test times.)</p>
+	<p>To better understand the results I was getting I built a <a href="http://ejohn.org/files/bugs/timer/">little tool</a> that runs a number of tests: Running an empty function, looping 10,000 times, querying and looping over a couple thousand divs, and finally looping over and modifying those divs. I ran all of these tests back-t0-back and constructed a <a href="http://en.wikipedia.org/wiki/Histogram">histogram</a> of the results.</p>
+	<p>Here's what the results look like for the major browsers on OS X:</p>
+	<p><center><a href="http://ejohn.org/files/gettime-osx.png"><img src="http://ejohn.org/files/gettime-osx.sm.png" style="border:0px;"/></a></center></p>
+	<p>The results here are terrific: There's some clumping around 0ms (with some results spread to 1-4ms - which is to be expected) and a bunch of normal-looking distributions for each of the browsers at around 7ms, 13ms, and 22ms. This is exactly what we should expect, nothing out of the ordinary taking place.</p>
+	<p>I then fired up <a href="http://www.vmware.com/products/fusion/">VMware Fusion</a> to peek at the browsers running in Windows XP:</p>
+	<p><center><a href="http://ejohn.org/files/gettime-vmxp.png"><img src="http://ejohn.org/files/gettime-vmxp.sm.png" style="border:0px;"/></a></center></p>
+	<p>Huh. The results are much stranger here. There aren't any, immediately, pretty clumps of results. It looks like Firefox 3 and Chrome both have a nice distribution tucked in there amongst the other results, but it isn't completely obvious. What would happen if we removed those two browsers to see what the distribution looked like?</p>
+	<p><center><a href="http://ejohn.org/files/gettime-vmxp2.png"><img src="http://ejohn.org/files/gettime-vmxp2.sm.png" style="border:0px;"/></a></center></p>
+	<p>Wow. And there it is! Internet Explorer 8 (I also tested 6, for good measure, with the same results), Opera, Safari, and WebKit Nightly all bin their results. There is no 'normal distribution' whatsoever. Effectively these browsers are only updating their internal getTime representations every 15 milliseconds. This means that if you attempt to query for an updated time it'll always be rounded down to the last time the timer was updated (which, on average, will have been about 7.5 milliseconds ago).</p>
+	<p>I was worried that these results were from the virtual machine (I also loaded up Parallels but saw similar results to running VMware) so I just loaded Windows XP proper:</p>
+	<p><center><a href="http://ejohn.org/files/gettime-xp.png"><img src="http://ejohn.org/files/gettime-xp.sm.png" style="border:0px;"/></a></center></p>
+	<p>Nope, the results are the same as using the VM.</p>
+	<p>Let's think about what this means, for a moment:</p>
+	<ol>
+	<li>Any test that takes less than 15ms will always round down to 0ms in these browsers. It becomes impossible to determine how much time the tests are taking with consistently zeroed out results.</li>
+	<li>The error rate for any test run in these browsers would be huge. If you had a simple test that ran in under 15ms the error rate would be a whopping <b>50-750%</b>! You would need to have tests running for, at least, 750ms before you could safely reduce the error overhead of the browser to 1%. That's insane, to say the least.</li>
+	</ol>
+	<p>What test suites are affected by this? Nearly all of the major ones. <a href="http://www2.webkit.org/perf/sunspider-0.9/sunspider.html">SunSpider</a>, <a href="http://dromaeo.com/">Dromaeo</a>, and <a href="http://mootools.net/slickspeed/">SlickSpeed</a> are all predominantly populated by tests that'll be dramatically effected by the error rate presented by these browser timers.</p>
+	<p>I talked about <a href="http://ejohn.org/blog/javascript-benchmark-quality/">JavaScript Benchmark Quality</a> before and the conclusion that I came to still holds true: The technique of measuring tests used by SunSpider, Dromaeo, and SlickSpeed does not hold. Currently only a variation of the style utilized by Google's <a href="http://code.google.com/apis/v8/run.html">V8 Benchmark</a> will be sufficient in reducing the error (since the tests are only run in aggregate, running for at least 1 second - reducing the error level to less than 1%).</p>
+	<p>All of this research still left me in a rough place, though. While I now knew why I was getting bad results in Dromaeo I had no solution for getting stable times in Internet Explorer. I did a little digging, tried a couple more solutions, and stumbled across <a href="http://www.kronenberg.org/ies4osx/">ies4osx</a>. Ies4osx is a copy of Internet Explorer 6 running in Wine, running in X11, on OS X. It works 'ok', although I've been able to get it crash every so often. Disregarding that, though, it's stable enough to do testing on.</p>
+	<p>Running the numbers on it yielded some fascinating results:</p>
+	<p><center><a href="http://ejohn.org/files/gettime-ies.png"><img src="http://ejohn.org/files/gettime-ies.sm.png" style="border:0px;"/></a></center></p>
+	<p>ies4osx provides some surprisingly stable results - we even have something that looks like a normal distribution! This is completely unlike the normal version of IE 6/8 running on Windows. It's pretty obvious that the Wine layer is tapping into some higher-quality timer mechanism and is providing it to IE - giving us a result that is even more accurate than what the browser normally provides.</p>
+	<p>This is fantastic and it's dramatically changed my personal performance testing of Internet Explorer. While I'm not keen on using anything less than "IE running on XP with no VM" for actual testing - this layer of higher-detailed numbers has become invaluable for testing the quality of specific methods or routines in IE.</p>
+	<p><b>In Summary:</b> Testing JavaScript performance on Windows XP (<b>Update:</b> <a href="http://ejohn.org/blog/accuracy-of-javascript-time/#comment-322134">and Vista</a>) is a crapshoot, at best. With the system times constantly being rounded down to the last queried time (each about 15ms apart) the quality of performance results is seriously compromised. Dramatically <a href="http://ejohn.org/blog/javascript-benchmark-quality/">improved performance test suites</a> are going to be needed in order to filter out these impurities, going forward.</p>
+	<p><b>Update:</b> I've put the raw data up on <a href="http://spreadsheets.google.com/ccc?key=pFIHldY_CkswYvi9ETmfNHA">Google Spreadsheets</a> if you're interested in seeing the full breakdown.
+</p>
+		<img src="http://ejohn.org/apps/rss/?from=rss&id=5657" style="width:0px;height:0px;"/><img src="http://feeds.feedburner.com/~r/JohnResig/~4/451396067" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRSS>http://ejohn.org/blog/accuracy-of-javascript-time/feed/</wfw:commentRSS>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=JohnResig&amp;itemurl=http%3A%2F%2Fejohn.org%2Fblog%2Faccuracy-of-javascript-time%2F</feedburner:awareness></item>
+		<item>
+		<title>CSS Animations and JavaScript</title>
+		<link>http://ejohn.org/blog/css-animations-and-javascript/</link>
+		<comments>http://ejohn.org/blog/css-animations-and-javascript/#comments</comments>
+		<pubDate>Tue, 11 Nov 2008 11:12:05 +0000</pubDate>
+		<dc:creator>John Resig</dc:creator>
+		                <category>jquery</category>
+                <category>javascript</category>
+                <category>animations</category>
+                <category>css</category>
+		<guid>http://ejohn.org/blog/css-animations-and-javascript/</guid>
+		<description><![CDATA[Apple, and the WebKit team, have recently proposed two different additions to CSS: CSS Transitions and CSS Animations.
+
+The two specifications are confusingly named - and it's hard to tell what the difference is between them at first glance. However, to put it simply: CSS Transitions are easy to use, while CSS Animations are made for [...]]]></description>
+			<content:encoded><![CDATA[	<p>Apple, and the WebKit team, have recently proposed two different additions to CSS: <a href="http://webkit.org/specs/CSSVisualEffects/CSSTransitions.html">CSS Transitions</a> and <a href="http://webkit.org/specs/CSSVisualEffects/CSSAnimation.html">CSS Animations</a>.</p>
+	<p>The two specifications are confusingly named - and it's hard to tell what the difference is between them at first glance. However, to put it simply: CSS Transitions are easy to use, while CSS Animations are made for programmers.</p>
+	<p><b>CSS Transitions</b></p>
+	<p><a href="http://webkit.org/specs/CSSVisualEffects/CSSTransitions.html">CSS Transitions</a> provide you with the ability to force CSS property changing to occur smoothly over a period of time, rather than immediately and coarsely.</p>
+	<p><center><img src="http://ejohn.org/files/transition.png"/></center></p>
+	<p>For example if you were to set <code>elem.style.width = "500px";</code>, and its current width was 100px then the element would, normally, jump up to 500px wide. With a CSS Transition it would smoothly move from 100px to 500px - the full CSS required would look something like this:</p>
+	<div class="syntax_hilite">
+<div id="css-17">
+	<div><span style="color: #cc00cc;">#elem <span style="color:#008800; font-weight:bold;">&#123;</span></span><br />
+&nbsp; transition-property: <span style="color:#CC0033; font-weight: bold;">width</span>;<br />
+&nbsp; transition-duration: 1s;<br />
+<span style="color:#008800; font-weight:bold;">&#125;</span></div>
+	</div>
+</div>
+	<p>This would make it such that any manipulation of that element's width would be done as a smooth transition. Note that no other properties are listed and, thus, are not affected. You can list as many properties as you wish, in a list: "width, heigh, opacity" (for example).</p>
+	<p>CSS Transitions complement the existing tools that we have for working with CSS from JavaScript. Any changes to a CSS property still work - they just happen much more smoothly.</p>
+	<p>Of course transitions can also be injected dynamically from JavaScript, like so:</p>
+	<div class="syntax_hilite">
+<div id="js-19">
+	<div>elem.<span style="color: #006600;">style</span>.<span style="color: #006600;">transitionProperty</span> = <span style="color: #3366CC;">"width"</span>;<br />
+elem.<span style="color: #006600;">style</span>.<span style="color: #006600;">transitionDuration</span>: <span style="color: #3366CC;">"1000ms"</span>;</div>
+	</div>
+</div>
+	<p>Since you can hook in these custom transitions it makes it possible to use them directly from JavaScript and within frameworks. Which leads to the question: Can the core of JavaScript animation frameworks be replaced with CSS Transitions, if they exist?</p>
+	<p>We had this discussion recently on the jQuery dev list and one user, <a href="http://www.parkerfox.co.uk/">Jonah</a>, implemented a quick <a href="http://www.parkerfox.co.uk/labs/css-webkit-animation-jquery-proof-of-concept.html">proof of concept</a> to demonstrate how it CSS Transitions would work within jQuery. He also wrote up a <a href="http://www.parkerfox.co.uk/labs/css-webkit-animation-jquery-stress-test.html">stress test</a> to see how it scaled.</p>
+	<p>Give the <a href="http://www.parkerfox.co.uk/labs/css-webkit-animation-jquery-stress-test.html">stress test</a> a try in WebKit (or on the iPhone, if you have access to one) and you'll definitely note an increase in animation smoothness - especially when a large number of animations are being run.</p>
+	<p>So why not just add in the CSS Transition code today?</p>
+	<p>There are a large number deal-breaking gotchas:</p>
+	<ol>
+	<li>You can't stop an animation that's already running.</li>
+	<li>You get no feedback as to how the animation is running - only an event callback once it has completed.</li>
+	<li>There's no way to synchronize multiple animations.</li>
+	<li>There's no way to specify custom easing functions.</li>
+	</ol>
+	<p>The inability to stop an animation is absolutely killer - and a huge requirement for any JavaScript framework that would be looking to adapt this as part of their code base.</p>
+	<p>That being said, the current transition code does have its place (namely within iPhone development) so I wouldn't be surprised to see a solid jQuery plugin popup that iPhone devs start to use.</p>
+	<p><b>CSS Animations</b></p>
+	<p><a href="http://webkit.org/specs/CSSVisualEffects/CSSAnimation.html">CSS Animations</a> are a second proposal from Apple/WebKit that embodies a much-more-complex way of doing animations. To give you an idea of the level of power that's provided observe this quote from the proposal:</p>
+	<blockquote><p>"Many aspects of the animation can be controlled, including how many times the animation iterates, whether or not it alternates between the begin and end values, and whether or not the animation should be running or paused. An animation can also delay its start time."</p></blockquote>
+	<p>The ability to pause animations is crucial - and immediately makes CSS Animations a more-viable candidate for use from JavaScript frameworks.</p>
+	<p>Here's an example of how you would set up a CSS Animation, from the proposal:</p>
+	<div class="syntax_hilite">
+<div id="css-18">
+	<div>div <span style="color:#008800; font-weight:bold;">&#123;</span><br />
+&nbsp; animation-name: <span style="color: #ff0000;">'diagonal-slide'</span>;<br />
+&nbsp; animation-duration: 5s;<br />
+&nbsp; animation-iteration-count: <span style="color: #800000;">10</span>;<br />
+<span style="color:#008800; font-weight:bold;">&#125;</span></p>
+	<p><span style="color: #a1a100;">@keyframes 'diagonal-slide' {</span><br />
+&nbsp; from <span style="color:#008800; font-weight:bold;">&#123;</span><br />
+&nbsp; &nbsp; <span style="color:#CC0033; font-weight: bold;">left</span>: <span style="color: #800000;">0</span>;<br />
+&nbsp; &nbsp; <span style="color:#CC0033; font-weight: bold;">top</span>: <span style="color: #800000;">0</span>;<br />
+&nbsp; <span style="color:#008800; font-weight:bold;">&#125;</span><br />
+&nbsp; to <span style="color:#008800; font-weight:bold;">&#123;</span><br />
+&nbsp; &nbsp; <span style="color:#CC0033; font-weight: bold;">left</span>: 100px;<br />
+&nbsp; &nbsp; <span style="color:#CC0033; font-weight: bold;">top</span>: 100px;<br />
+&nbsp; <span style="color:#008800; font-weight:bold;">&#125;</span><br />
+<span style="color:#008800; font-weight:bold;">&#125;</span></div>
+	</div>
+</div>
+	<p>CSS Animations also provide a greater number of callbacks (letting you know when an animation has started, every step of the animation, and when it has ended) which can be important for doing animation synchronization.</p>
+	<p>Although the CSS Animation proposal has a number of things going against it:</p>
+	<ol>
+	<li>Its syntax and usability is far more confusing than that of the, relatively simple, CSS Transitions.</li>
+	<li>It includes the concept of keyframes - while I'm sure this might be useful for someone I just can't see a large enough benefit for such a large feature.</li>
+	</ol>
+	<p>Honestly, at this point, I'd prefer to see CSS Transitions come around, but with a few additions:</p>
+	<ol>
+	<li>The ability to pause or stop transitions.</li>
+	<li>Animation start, step, and end callbacks (along with information about how far along the animation is).</li>
+	<li>The ability to provide a custom JavaScript function which would provide a custom easing function.</li>
+	</ol>
+	<p>#1 and #2 are much more important here - but seeing both of those additions would help to make CSS Transitions actually a viable tool for web developers (not to mention that it would provide the best of both worlds - ease of use for non-framework-using developers and power and control for those using frameworks).
+</p>
+		<img src="http://ejohn.org/apps/rss/?from=rss&id=5656" style="width:0px;height:0px;"/><img src="http://feeds.feedburner.com/~r/JohnResig/~4/449682953" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRSS>http://ejohn.org/blog/css-animations-and-javascript/feed/</wfw:commentRSS>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=JohnResig&amp;itemurl=http%3A%2F%2Fejohn.org%2Fblog%2Fcss-animations-and-javascript%2F</feedburner:awareness></item>
+		<item>
+		<title>Picking Time</title>
+		<link>http://ejohn.org/blog/picking-time/</link>
+		<comments>http://ejohn.org/blog/picking-time/#comments</comments>
+		<pubDate>Tue, 11 Nov 2008 10:07:52 +0000</pubDate>
+		<dc:creator>John Resig</dc:creator>
+		                <category>javascript</category>
+                <category>jquery</category>
+                <category>ui</category>
+		<guid>http://ejohn.org/blog/picking-time/</guid>
+		<description><![CDATA[It's not often that new user interface conventions are born - or popularized. Even less so within the realm of web development. I'd argue that Sparklines and Lightbox are two of the best examples of UI conventions that were popularized on the web.
+
+Recently Maxime Haineault announced a simple jQuery plugin for inputting a new time [...]]]></description>
+			<content:encoded><![CDATA[	<p>It's not often that new user interface conventions are born - or popularized. Even less so within the realm of web development. I'd argue that <a href="http://en.wikipedia.org/wiki/Sparkline">Sparklines</a> and <a href="http://www.lokeshdhakar.com/projects/lightbox2/">Lightbox</a> are two of the best examples of UI conventions that were popularized on the web.</p>
+	<p>Recently <a href="http://haineault.com/">Maxime Haineault</a> announced a simple jQuery plugin for inputting a new time of day called <a href="http://haineault.com/media/jquery/ui-timepickr/page/">jQuery.timepickr.js</a>. Its principles are very similar to jQuery itself: Get users to input the time as simply as possible with as little input as possible.</p>
+	<p>To achieve this he made a "two click" time picker. The first click is within the time field. This activates the display and allows the user to choose the time - all of which is done by moving the mouse over the times that you desire. The final click is anywhere - filling in the time that was chosen. It's hard to explain, you simply have to try it.</p>
+	<p><center><a href="http://haineault.com/media/jquery/ui-timepickr/page/"><img src="http://ejohn.org/files/timepicker.png" style="border:0px;"/></a></center></p>
+	<p>One thing that you'll notice using it is that it's fast. Very fast. I'd argue much faster than clicking into the input area, moving to the keyboard for entering the time, typing the time, then moving back to mouse.</p>
+	<p>But not only is it faster, but it's also quite intuitive - which is rather rare for something that utilizes a completely new user interface convention.</p>
+	<p>A nice extra point is that the input is completely styled using the jQuery UI style conventions - which means that you'll be able to customize it completely with the <a href="http://ui.jquery.com/themeroller">jQuery UI Themeroller</a>.</p>
+	<p><center><a href="http://ui.jquery.com/themeroller"><img src="http://ejohn.org/files/themeroller.png" style="border:0px;"/></a></center></p>
+	<p>I love the Themeroller and use it all the time to customize UI controls. It beats the pants off of any other UI customization tool that I've seen. Definitely give it a whirl. Consistently styling JavaScript user interface components can be incredibly annoying, but the Themeroller helps to make it sane - which is just perfect.
+</p>
+		<img src="http://ejohn.org/apps/rss/?from=rss&id=5655" style="width:0px;height:0px;"/><img src="http://feeds.feedburner.com/~r/JohnResig/~4/449619479" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRSS>http://ejohn.org/blog/picking-time/feed/</wfw:commentRSS>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=JohnResig&amp;itemurl=http%3A%2F%2Fejohn.org%2Fblog%2Fpicking-time%2F</feedburner:awareness></item>
+		<item>
+		<title>Deadly Expandos</title>
+		<link>http://ejohn.org/blog/deadly-expandos/</link>
+		<comments>http://ejohn.org/blog/deadly-expandos/#comments</comments>
+		<pubDate>Mon, 10 Nov 2008 12:46:18 +0000</pubDate>
+		<dc:creator>John Resig</dc:creator>
+		                <category>dom</category>
+                <category>browsers</category>
+                <category>ie</category>
+		<guid>http://ejohn.org/blog/deadly-expandos/</guid>
+		<description><![CDATA[If I had to rate my least favorite browser bugs I'd have to put this one near the top. A holdover from the old DOM0 days it's a practice where elements with a given name or ID are added as an expando property to another DOM node.
+
+Here are my two favorite examples of this bug [...]]]></description>
+			<content:encoded><![CDATA[	<p>If I had to rate my least favorite browser bugs I'd have to put this one near the top. A holdover from the old DOM0 days it's a practice where elements with a given name or ID are added as an expando property to another DOM node.</p>
+	<p>Here are my two favorite examples of this bug in action:</p>
+	<p>The first is a simple form that does a search on a site. Additionally a link is provided that, when clicked, fills in a search value and submits the form.</p>
+	<div class="syntax_hilite">
+<div id="html-20">
+	<div><span style="color: #009900;"><a href="http://december.com/html/4/element/form.html"><span style="color: #000000; font-weight: bold;">&lt;form</span></a> <span style="color: #000066;">action</span>=<span style="color: #ff0000;">""</span> <span style="color: #000066;">method</span>=<span style="color: #ff0000;">"POST"</span> <span style="color: #000066;">id</span>=<span style="color: #ff0000;">"form"</span><a href="http://december.com/html/4/element/.html"><span style="color: #000000; font-weight: bold;">&gt;</span></a></span><br />
+&nbsp; Search: <span style="color: #009900;"><a href="http://december.com/html/4/element/input.html"><span style="color: #000000; font-weight: bold;">&lt;input</span></a> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">"text"</span> <span style="color: #000066;">name</span>=<span style="color: #ff0000;">"search"</span> <span style="color: #000066;">id</span>=<span style="color: #ff0000;">"search"</span>/<a href="http://december.com/html/4/element/.html"><span style="color: #000000; font-weight: bold;">&gt;</span></a></span><br />
+&nbsp; <span style="color: #009900;"><a href="http://december.com/html/4/element/input.html"><span style="color: #000000; font-weight: bold;">&lt;input</span></a> <span style="color: #000066;">type</span>=<span style="color: #ff0000;">"submit"</span> <span style="color: #000066;">id</span>=<span style="color: #ff0000;">"submit"</span>/<a href="http://december.com/html/4/element/.html"><span style="color: #000000; font-weight: bold;">&gt;</span></a></span><br />
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/form&gt;</span></span><br />
+<span style="color: #009900;"><a href="http://december.com/html/4/element/a.html"><span style="color: #000000; font-weight: bold;">&lt;a</span></a> <span style="color: #000066;">href</span>=<span style="color: #ff0000;">"#"</span> <span style="color: #000066;">id</span>=<span style="color: #ff0000;">"quick"</span><a href="http://december.com/html/4/element/.html"><span style="color: #000000; font-weight: bold;">&gt;</span></a></span>Quick Search 'JavaScript'<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/a&gt;</span></span><br />
+<span style="color: #009900;"><a href="http://december.com/html/4/element/script.html"><span style="color: #000000; font-weight: bold;">&lt;script&gt;</span></a></span><br />
+document.getElementById(&quot;quick&quot;).onclick = function(){<br />
+&nbsp; document.getElementById(&quot;search&quot;).value = &quot;JavaScript&quot;;<br />
+&nbsp; document.getElementById(&quot;form&quot;).submit();<br />
+};<br />
+<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/script&gt;</span></span></div>
+	</div>
+</div>
+	<p>Before running the example you can spot the problem with a quick run to the address bar:</p>
+	<div class="syntax_hilite">
+<div id="js-22">
+	<div>javascript:<span style="color: #000066;">alert</span><span style="color:#008800; font-weight:bold;">&#40;</span>document.<span style="color: #006600;">getElementById</span><span style="color:#008800; font-weight:bold;">&#40;</span><span style="color: #3366CC;">"form"</span><span style="color:#008800; font-weight:bold;">&#41;</span>.<span style="color: #006600;">submit</span><span style="color:#008800; font-weight:bold;">&#41;</span><br />
+<span style="color: #3366CC;">"[object HTMLInputElement]"</span></div>
+	</div>
+</div>
+	<p>The .submit() method (which is available on all Form elements) is overwritten by the input element of the same name. This ends up being a very common problem - with frameworks using id="submit" as a default in their code.</p>
+	<p>Worst of all this fails in all browsers (preventing you from accessing the overwritten method).</p>
+	<p>The second example is even more devious. In this case we're going to loop over all the DOM elements in the page and alert out their contents.</p>
+	<div class="syntax_hilite">
+<div id="html-21">
+	<div><span style="color: #009900;"><a href="http://december.com/html/4/element/div.html"><span style="color: #000000; font-weight: bold;">&lt;div</span></a> <span style="color: #000066;">id</span>=<span style="color: #ff0000;">"length"</span><a href="http://december.com/html/4/element/.html"><span style="color: #000000; font-weight: bold;">&gt;</span></a></span>12 stories<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/div&gt;</span></span><br />
+<span style="color: #009900;"><a href="http://december.com/html/4/element/div.html"><span style="color: #000000; font-weight: bold;">&lt;div</span></a> <span style="color: #000066;">id</span>=<span style="color: #ff0000;">"makeup"</span><a href="http://december.com/html/4/element/.html"><span style="color: #000000; font-weight: bold;">&gt;</span></a></span>radiation<span style="color: #009900;"><span style="color: #000000; font-weight: bold;">&lt;/div&gt;</span></span><br />
+<span style="color: #009900;"><a href="http://december.com/html/4/element/script.html"><span style="color: #000000; font-weight: bold;">&lt;script&gt;</span></a></span><br />
+var all = document.getElementsByTagName(&quot;*&quot;);<br />
+for ( var i = 0; i <span style="color: #009900;"><a href="http://december.com/html/4/element/.html"><span style="color: #000000; font-weight: bold;">&lt;</span></a> all.length; i++ <span style="color: #66cc66;">&#41;</span> <span style="color: #66cc66;">&#123;</span><br />
+&nbsp; alert<span style="color: #66cc66;">&#40;</span> all<span style="color: #66cc66;">&#91;</span>i<span style="color: #66cc66;">&#93;</span>.innerHTML <span style="color: #66cc66;">&#41;</span>;<br />
+<span style="color: #66cc66;">&#125;</span><br />
+<span style="color: #000000; font-weight: bold;">&lt;/script&gt;</span></span></div>
+	</div>
+</div>
+	<p>This will work in most browsers - but not Internet Explorer. To understand why we return to the address bar.</p>
+	<div class="syntax_hilite">
+<div id="js-23">
+	<div>javascript:<span style="color: #000066;">alert</span><span style="color:#008800; font-weight:bold;">&#40;</span>document.<span style="color: #006600;">getElementsByTagName</span><span style="color:#008800; font-weight:bold;">&#40;</span><span style="color: #3366CC;">"*"</span><span style="color:#008800; font-weight:bold;">&#41;</span>.<span style="color: #006600;">makeup</span><span style="color:#008800; font-weight:bold;">&#41;</span><br />
+<span style="color: #3366CC;">"[object]"</span><br />
+javascript:<span style="color: #000066;">alert</span><span style="color:#008800; font-weight:bold;">&#40;</span>document.<span style="color: #006600;">getElementsByTagName</span><span style="color:#008800; font-weight:bold;">&#40;</span><span style="color: #3366CC;">"*"</span><span style="color:#008800; font-weight:bold;">&#41;</span>.<span style="color: #006600;">length</span><span style="color:#008800; font-weight:bold;">&#41;</span><br />
+<span style="color: #3366CC;">"[object]"</span></div>
+	</div>
+</div>
+	<p>Oops. All browsers turn elements with specific IDs into expandos of the returned NodeSet. But Internet Explorer goes a step farther and decides to overwrite the built-in .length property as well, breaking current forms of iterating over the DOM elements.</p>
+	<p>At least within jQuery you'll see a number of cases where, instead of doing the normal array traversal, we do the following in order to work around the issue:</p>
+	<div class="syntax_hilite">
+<div id="js-24">
+	<div><span style="color: #000066; font-weight: bold;">for</span> <span style="color:#008800; font-weight:bold;">&#40;</span> <span style="color: #003366; font-weight: bold;">var</span> i = <span style="color: #CC0000;">0</span>; elems<span style="color:#008800; font-weight:bold;">&#91;</span>i<span style="color:#008800; font-weight:bold;">&#93;</span>; i++ <span style="color:#008800; font-weight:bold;">&#41;</span> <span style="color:#008800; font-weight:bold;">&#123;</span><br />
+&nbsp; <span style="color: #009900; font-style: italic;">// Do stuff with elems[i]</span><br />
+<span style="color:#008800; font-weight:bold;">&#125;</span></div>
+	</div>
+</div>
+	<p>It's a little more obtuse but at least it's guaranteed to work against cases of broken NodeSet iteration.</p>
+	<p>Garrett Smith has a highly technical <a href="http://jibbering.com/faq/names/">write-up</a> on the variety of issues that stem from this form of expansion. In short: No browser is immune from these problems. It's unfortunate that this whole system couldn't just be done away with (to avoid these types of issues in the first place) but legacy pages will likely necessitate their inclusion for many, many, years to come.
+</p>
+		<img src="http://ejohn.org/apps/rss/?from=rss&id=5654" style="width:0px;height:0px;"/><img src="http://feeds.feedburner.com/~r/JohnResig/~4/448639701" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRSS>http://ejohn.org/blog/deadly-expandos/feed/</wfw:commentRSS>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=JohnResig&amp;itemurl=http%3A%2F%2Fejohn.org%2Fblog%2Fdeadly-expandos%2F</feedburner:awareness></item>
+		<item>
+		<title>CSS3 Template Layout</title>
+		<link>http://ejohn.org/blog/css3-template-layout/</link>
+		<comments>http://ejohn.org/blog/css3-template-layout/#comments</comments>
+		<pubDate>Mon, 10 Nov 2008 12:05:35 +0000</pubDate>
+		<dc:creator>John Resig</dc:creator>
+		                <category>css3</category>
+                <category>css</category>
+                <category>w3c</category>
+		<guid>http://ejohn.org/blog/css3-template-layout/</guid>
+		<description><![CDATA[Like many developers who had seen the work-in-progress CSS3 Layout specification I was immediately horrified. As one commenter on Reddit said: "Argh. ASCII-art drawing for columns?" which summarizes my initial feeling pretty well.
+
+Now I felt that way until seeing this example from the CSS3 Layout spec document:
+
+[js]"a   .   b   [...]]]></description>
+			<content:encoded><![CDATA[	<p>Like many developers who had seen the work-in-progress <a href="http://www.w3.org/TR/css3-layout/">CSS3 Layout specification</a> I was immediately horrified. As one commenter on Reddit said: "<a href="http://www.reddit.com/r/programming/comments/7cesa/the_way_web_layout_should_have_always_been/c06a4qq">Argh. ASCII-art drawing for columns?</a>" which summarizes my initial feeling pretty well.</p>
+	<p>Now I felt that way until seeing this example from the CSS3 Layout spec document:</p>
+	<div class="syntax_hilite">
+<div id="js-25">
+	<div><span style="color: #3366CC;">"a&nbsp; &nbsp;.&nbsp; &nbsp;b&nbsp; &nbsp;.&nbsp; &nbsp;c"</span>&nbsp; /2em<br />
+<span style="color: #3366CC;">".&nbsp; &nbsp;.&nbsp; &nbsp;.&nbsp; &nbsp;.&nbsp; &nbsp;."</span>&nbsp; /1em<br />
+<span style="color: #3366CC;">"d&nbsp; &nbsp;.&nbsp; &nbsp;e&nbsp; &nbsp;.&nbsp; &nbsp;f"</span><br />
+<span style="color: #3366CC;">".&nbsp; &nbsp;.&nbsp; &nbsp;.&nbsp; &nbsp;.&nbsp; &nbsp;."</span>&nbsp; /1em<br />
+<span style="color: #3366CC;">"g&nbsp; &nbsp;.&nbsp; &nbsp;h&nbsp; &nbsp;.&nbsp; &nbsp;i"</span>&nbsp; /2em<br />
+5em 1em&nbsp; *&nbsp; 1em 10em</div>
+	</div>
+</div>
+	<p>I could immediately determine what the template was trying to do and how the document was going to look. Even if it is kind of crazy at first glance I'm dying for something like this to be implemented. To create an equivalent document using the CSS that we have now - or even Tables - would absolutely futile.</p>
+	<p>Even the syntax isn't that bad when you look at it. When examining the example I can see that there are three significant rows of content (two of which are 2em high and one of which will expand to fill the full height) and two spacer rows (each are 1em high). Thinking about how to implement something like this using normal CSS now makes my mind explode in frustration - especially in cross-browser manner.</p>
+	<p>So while this templating layout is still, very much, in the pipe dream category (no one will even touch it until IE implements it) I think it has a lot of merit and should be strongly examined - especially beyond the initial shock of the new syntax.</p>
+	<p>Honestly, this is just a goldmine waiting for some enterprising developer to come along and use the syntax to build a solution that'll work in all current browsers (maybe a server-side, or JavaScript, tool that'll process the template and inject the right style rules using a grid <a href="http://en.wikipedia.org/wiki/List_of_CSS_frameworks">CSS framework</a>).
+</p>
+		<img src="http://ejohn.org/apps/rss/?from=rss&id=5653" style="width:0px;height:0px;"/><img src="http://feeds.feedburner.com/~r/JohnResig/~4/448587750" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRSS>http://ejohn.org/blog/css3-template-layout/feed/</wfw:commentRSS>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=JohnResig&amp;itemurl=http%3A%2F%2Fejohn.org%2Fblog%2Fcss3-template-layout%2F</feedburner:awareness></item>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetFeedData?uri=JohnResig</feedburner:awareness></channel>
+</rss>

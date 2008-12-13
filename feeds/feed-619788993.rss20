@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="/css/rss20.xsl" type="text/xsl"?>
+<rss xmlns:pheedo="http://www.pheedo.com/namespace/pheedo" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>MacOSXHints.com</title>
+		<link>http://www.macosxhints.com</link>
+		<description>Macosxhints.com RSS feed</description>
+		<managingEditor>robg@macosxhints.com</managingEditor>
+		<webMaster>robg@macosxhints.com</webMaster>
+		<copyright>Copyright 2008 macosxhints.com</copyright>
+		<generator>GeekLog</generator>
+		<pubDate>Fri, 12 Dec 2008 09:25:02 -0800</pubDate>
+		<language>en-gb</language>
+		<item>
+			<title>Fix a VirtualBox Windows crash-on-pause issue</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=44cbc7045fe46efc5e0d938691b957da</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081211053815499</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081211053815499</guid>
+			<pubDate>Fri, 12 Dec 2008 07:30:00 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081211053815499#comments</comments>
+			<dc:subject>Apps</dc:subject>
+			<description>I've recently been spending a &lt;em&gt;lot&lt;/em&gt; of time in the various virtualization apps -- &lt;a href=&quot;http://www.vmware.com/mac&quot;&gt;VMware Fusion&lt;/a&gt;, &lt;a href=&quot;http://www.parallels.com/products/desktop/&quot;&gt;Parallels Desktop&lt;/a&gt;, and Sun &lt;a href=&quot;http://www.virtualbox.org&quot;&gt;VirtualBox&lt;/a&gt;. VirtualBox was recently upgraded to version 2.0.6, and after upgrading, I had issues with my Vista guest OS on my Mac Pro, which was previously working fine.&lt;br&gt;&lt;br&gt;Whenever I chose to sleep or shut down Vista, the progress bar would move a bit at first, then jump back to the main VirtualBox window, where the Vista VM's status would read &quot;Aborted.&quot; (Somewhat interestingly, the exact same installation of Vista on my MacBook Pro doesn't exhibit this issue under 2.0.6.)&lt;br&gt;&lt;br&gt;After some searching, I found &lt;a href=&quot;http://forums.virtualbox.org/viewtopic.php?p=48153&amp;amp;sid=47b2bda5d305660c7bc0bbc5477595e3&quot;&gt;this thread&lt;/a&gt; on the VirtualBox forums that described the exact same problem. User withfries2, who poste...&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:acb380c0a93a97fb65facbba6e48c315:dowO8iHdMkErQoa0GmySRUMg5v7l1jGjoKcsIyp8QXGqrjyIt3E0jLns8BqlMGZeBRMrhAkyhqVR'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:06a828b4c850708778d944b45ca8f306:1gqMHBVNxT%2B3XTi%2B%2BC2YmG1MKsS%2BgJAqQN8X%2FGZtaJPl48JG0hL%2Bwg%2BjJs0CSNg3dVzVJP%2F1N%2BS3'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:d16dea89d096d0c61081895248e9de2e:fdpR%2BuQMg1pVIcPA9Qm3CCy69mRET7Bv0JwP8D2zf0EuxiRTeJLUqs1QPE2v1kPg4sHio5QTZ%2FqYow%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:156370053700bdcf42e5f6290fce3918:jCq1OEVowz0IZucMlndVCbMs%2B1vONLOxu04UCK3bS843p1KICppg%2BSJzTwdQuRBkWw0g4pXMsW01'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:0effcada8de04164de81d6b593f97a9f:wNjEwp6vXDtGcF2173rJuCtKoHcj1Wvi2LthVz80ZoNySrtFC8O7OcDNhSgH7UXc9nqbw7Zp5aiTIw%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=44cbc7045fe46efc5e0d938691b957da&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=44cbc7045fe46efc5e0d938691b957da&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=44cbc7045fe46efc5e0d938691b957da&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>Resole problems with Office 2008 update installation</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=dd10f19c9a2253d4b42f5502939b96f4</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081211165537704</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081211165537704</guid>
+			<pubDate>Fri, 12 Dec 2008 07:30:00 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081211165537704#comments</comments>
+			<dc:subject>Apps</dc:subject>
+			<description>I've had a hard time updating Office 2008, getting an error that states &quot;You cannot install Office 2008 12.1.x on this volume. The version of the software required to install this update was not found on this volume.&quot; Even a clean reinstall from the source Office disk did not fix this issue. After several back-and-forths with Microsoft, the following solution worked.&lt;ol&gt;&lt;li&gt;Run the Remove Office app, which is located in /Applications » Microsoft Office 2008 » Additional Tools.&lt;/li&gt;&lt;li&gt;Delete the following files and folders:&lt;ul&gt;&lt;li&gt;/Users/(me)/Library/Preferences/(all files that start &lt;em&gt;com.microsoft&lt;/em&gt;)&lt;/li&gt;&lt;li&gt;/Users/(me)/Library/Preferences/Microsoft&lt;/li&gt;&lt;li&gt;/Users/(me)/Library/Application Support/Microsoft&lt;/li&gt;&lt;li&gt;/Users/(me)/Microsoft User Data&lt;/li&gt;&lt;li&gt;/Users/(me)/Documents/Microsoft User Data&lt;/li&gt;&lt;li&gt;/Users/(me)/Documents/Office Projects&lt;/li&gt;&lt;li&gt;/Library/Receipts/(all files that begin with &lt;em&gt;Office 2008&lt;/em&gt;)&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;Reinstall from the Office source disk and u...&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:a40840e21951d9a025976753a59fd6a4:XsDcPPZndkaCB6rmzWz9RnV%2FBK6YieowMo0DWmsC8cUCh%2FYXuGBn9%2Fgfo1J%2F%2B%2F%2BYtmdE9KJ%2FXWC9'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:005e3366467e835b3b1dbeff6f09c9ad:hLqeEVygpJxYnp9sPfC%2Fne2jffFFj86La9IoaBIerkt4prbiB3qUzhig2DXbaWXl%2FdbCHjpaHdji'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:f42b475f6fadfb4d10d90fa1743ac25f:2PpheimRpPRjHAzaLgW5mTCoOjzOl0K%2BmsztPyrjvSrBtxD2nN0NB3EPjbuHpD4Lj5eojRqNeFyxZw%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:42ffdb5bcdd90a10061c05f023968f79:gEW3iIuVh175MGIdxLtn%2FxuPWtxv8TYEFYDhgX%2FbYsGpKhuSUCkRt6fKBjX9RQDkpQzw7vX8vH5c'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:23602a82faa7bf2c14155ffd762e0c0f:3DsI7bkddBGcLhw5UmIJ%2FuM0IbGrJla7InDBLk3B%2F%2F4H7AqVY2EntGPCi5ELE7xifPMfxNPKG2IbUQ%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br clear=&quot;both&quot; style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=dd10f19c9a2253d4b42f5502939b96f4&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=dd10f19c9a2253d4b42f5502939b96f4&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=dd10f19c9a2253d4b42f5502939b96f4&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>Fix an IMAP path prefix problem with Mail</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=b9c2a76caf9a298a5c5f6491fd2c0c17</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081209021330682</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081209021330682</guid>
+			<pubDate>Thu, 11 Dec 2008 07:30:00 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081209021330682#comments</comments>
+			<dc:subject>Apps</dc:subject>
+			<description>I have just switched hosts for my domain, including my email. My new host supports IMAP, where my old one did not, so I wanted to make the most of this to transfer all my mail folders to the server. I set up the account on my work MacBook Pro, and everything was fine. I made a directory on the server, then filled in that directory as the 'IMAP Path Prefix' in Mail’s preferences for the account, and I could successfully create mailboxes and move messages in.&lt;br&gt;&lt;br&gt;When I set up the account on my MacBook at home, however, Mail was completely ignoring the IMAP Path Prefix I set, and insisted on listing the entire contents of my home directory, including all the invisible files (.bash_history and so on) and, even worse, the whole public_html tree where my Web site is stored. Looking at a trace of the IMAP communication between Mail and the server, it was clearly a problem on my local machine rather than an error on the server, because Mail was asking for mailbox listings without ment...&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:d4e60a4f0fe8ff7e798165cdbf0edf27:rIfjZKmBpdOG8VD13Y%2FLXYHzjlyg%2BKINLI%2FtDCI3njV%2BKeuXLlVAA%2BEdvIvjpdJxBF2iH1DKnjQX'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:796aad185c0bf2058f661036c92d31c9:dCGgJd4E4ZOtSj6jv5lP9TQ0HNKoczZnc08t6oA74PFgFDRy1RQouDmsm2i9VJpZwZccjGDTPjVs'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:2444ba6826c3fd435f225c0c8cad995a:19ly4zglyFpWGT15Tl%2BFuMQmWU6TpId05ba8q9XyzPc2DuL33ZXpNKchXiWOdYYJ5a%2FlcZ6OyGeGWw%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:d5c82b71ba403afb91c1e2e7c3b4c60a:VmpXd7Z6aL6b7q2WFmAzX%2FvX3GfsaQ2%2BN8eSqGQriPgIR%2FK%2F1JDf2CoKf67XxStzeDhkBK74Reg6'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:93f97d859d0794c3fc2253f1c1718a91:WpDaQ%2FN8WQkSDeRxHvgAV3us2myyK2Ay%2Fq16M339Hz4gyLqaO1Q9AId%2BMNeOIQ5mi%2B17StxIYpjU3A%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=b9c2a76caf9a298a5c5f6491fd2c0c17&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=b9c2a76caf9a298a5c5f6491fd2c0c17&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=b9c2a76caf9a298a5c5f6491fd2c0c17&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>Where to find Flash Player 9 for older versions of OS X</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=0307e54238276f1e8fc1aa20d38a3729</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081211051105830</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081211051105830</guid>
+			<pubDate>Thu, 11 Dec 2008 07:30:00 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081211051105830#comments</comments>
+			<dc:subject>Web Browsers</dc:subject>
+			<description>Over on our forums, user &lt;em&gt;shawbeg&lt;/em&gt; writes:&lt;blockquote&gt;A couple of sites I use are asking for an upgrade to Flash Player 9.0.115 to run certain apps (Snapfish &amp;amp; Facebook, for example). I'm running OS X 10.3.9 which is not compatible with Flash Player 10. Can I still get Flash Player 9.0.115? I've got 9.0.47 now. Not finding what I want digging around on the Adobe site.&lt;/blockquote&gt;As it turns out, it is available, but apparently not on the Adobe site. User &lt;em&gt;macosnoob&lt;/em&gt; found it on macromedia.com -- caution, this is a 134MB download link: &lt;a href=&quot;http://fpdownload.macromedia.com/get/flashplayer/installers/archive/fp9_archive.zip&quot;&gt;Adobe Flash Player 9.0.115&lt;/a&gt;. If you're running an older Mac and need the last version of Flash Player 9, the above link should get the job done.&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:a4df07b294eaf6fd13eb3d07c03cb226:NL%2F%2BLtFxKssucN%2BByZSTVNV73HDHjzAsrfc38OI3gVKlxkDixyXJ4vVWtGRFVhEC8sktr156yFk%2B'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:5626ca11519128fec4ae2238003146f9:DwwCT5WgYomaZsmzaBNP0UlgKj9iT9EiHgSOuFyqhV0u0JEcIV7LQTz6DGZctGOje%2F9A80ElHTx9'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:507453a8e5a2aadeead9dc755bd6c158:nAzFwlQwuUyBRwUpHUlmQfwLRpVMwO4XHORIO1quPaXdB8JIL%2Fn3rFAaciO%2Bmf%2FV6DitMr1AfaEGSw%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:34ab9d084f6a0c5fed5695b4b530e7c8:EG4hZ%2FMyRo1rbiUrTmi1Nm0LeAZUD%2BQ4G83rvYgw%2BP7g0e77r7cRDyt7FsEIVTcIiLLwWJ8hV%2FGp'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:5164e1dd6a2712af8a819801b36503ab:C42pDTUnIZZe6AvDU7cyzp1mRXf9W5N%2FlbVbP1d25f4Qom83O%2BH0kSIDUns3wW0Mf1WMpPf2W5%2BBtQ%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=0307e54238276f1e8fc1aa20d38a3729&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=0307e54238276f1e8fc1aa20d38a3729&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=0307e54238276f1e8fc1aa20d38a3729&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>A script to retain a copy of outgoing faxes</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=ee3082c8385fcb3ff79f1ac282ed8c48</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081205225217399</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081205225217399</guid>
+			<pubDate>Wed, 10 Dec 2008 07:30:00 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081205225217399#comments</comments>
+			<dc:subject>System 10.5</dc:subject>
+			<description>For the few times I need to send a fax, I'm not going to mess with getting one of my broken third-party fax applications to run again. But the built-in OS X fax capability has some annoying limitations. One of the more annoying ones is that it doesn't save a copy of outgoing faxes. I wrote the following script as a kluge, to grab a copy of outgoing faxes and store them in /Users/Shared/Faxes/Outbox. The fax is saved (complete with the cover page) as a multi-page TIFF file.&lt;div style=&quot;margin-left: 20px; margin-top:10px; margin-bottom:10px; padding: 5px; border:1px solid; width:520px; height:120px; overflow:scroll;white-space:nowrap&quot;&gt;&lt;pre&gt;&lt;code&gt;!/bin/zshif &amp;#91; &amp;#36;EUID -ne 0 &amp;#93;; then	echo YOU MUST SUDO TO ROOT TO RUN THIS	exitfidt=`date '+%Y%m%d-%H%M%S'`t=''echo Waiting for efax to run.while &amp;#91; x&amp;#36;t = x'' &amp;#93;; do	t=`ps -ef|grep efax|grep -v grep`	sleep 1donels -al /var/spool/cups/tmpf=`echo &amp;#36;t|sed -e 's#.*&amp;#92;(/private.*&amp;#92;)#&amp;#92;1#'`if &amp;#91; -r &amp;#36;f &amp;#93;; then...&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:5d959694e6229030fb08815d52f7698b:LkEZBTdVm%2BgvfiZB86tptZbOcDfoRBxty5DpUIy8zhtJFKLUsZqqFxP%2FyFDOg5nFL504ZMnWfXSm'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:9509d1b92915a6d854485d78bf8796f8:Lzxj%2BLqbp3V%2Fxb6BeEVXG85uK%2BvjTuXAyFhrLNXCmOdBasO5qe63ZFj41yq7nfBv5MhFIaZGpVgt'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:3416abbaf1e296f21ab8f46ed1b5cf20:kDO%2BQT1zPlddhAwzjfjLRpeqvT%2BQIkjKSAwff5ETU9OY1UK16EPMBXq6T7qLfAlX1wxf6yrlKtD%2FLQ%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:5bb6792711c8f3d057b598eacae2265a:dv29DkZH%2BYYOXym6bz1Id0bGTAeAQM7AG8D99Ml%2BTCXTRBOrpyiT6Y3q4b9RDawSY8KIvZMJ8h%2BD'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:b0a42bc62f4612c6df383310e0237d0d:ZHsl7vuw51ZYqGwWl9pYMf1Dx6yyxfrq5BDRCAd0cwtxqrQAeeJfJAQhMnO8j%2FEQhbleNfEUJK5s9A%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=ee3082c8385fcb3ff79f1ac282ed8c48&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=ee3082c8385fcb3ff79f1ac282ed8c48&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=ee3082c8385fcb3ff79f1ac282ed8c48&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>Open Finder Inspector panel at login</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=f2eb605872bb03a98d7626abce70bb91</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081207162534405</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081207162534405</guid>
+			<pubDate>Wed, 10 Dec 2008 07:30:00 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081207162534405#comments</comments>
+			<dc:subject>Desktop</dc:subject>
+			<description>I really love Finder's Inspector window, specially on a large screen like an iMac's, but I'd prefer to have it open when my Mac starts. (Yes, it is just three keystrokes, but I prefer to have it already on automatically.) So, as Finder doesn't have this option, I've created an AppleScript to do it:&lt;pre&gt;&lt;code&gt;try  tell application &quot;Finder&quot;    activate  end tell  tell application &quot;System Events&quot;    tell process &quot;Finder&quot;      tell menu bar 1        tell menu bar item &quot;File&quot;          tell menu &quot;File&quot;            click menu item &quot;Show Inspector&quot;          end tell        end tell      end tell    end tell  end tellend try&lt;/code&gt;&lt;/pre&gt;Paste the above into Script Editor, save it as an application, and then I add it to your login items. You must have enabled Access for Assistive Devices, which can be found in the Universal Access System Preferences panel.&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:b5dbd5f6ceceeb79d3dc1fe596a9dbad:hO75plrDUkO4BJK6TySdVlNVHC%2FEyCB5aPHr35ah4CXlAywWeLmMhSh%2FGSzHc9WpZ%2B3VtuvrYDfw'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:886ac83c0fcc236127416101d723c094:CaJr4uQ%2FNi8RDdJA6fwF5RIFyKbdZ6ZAtYao28x5SaB5WqI3420zIiLS0Vei5lAnAZdm5X3wjZB2'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:2416debe8cdfeee51930d5c5beccccb1:zC3Y2ZLx50S8rbcE1MAM6%2BuP6lUssXoNOWKKZ%2Bhr4KMXiZ069CmHLxObB9fr4jGOnd8xsbUd79yyoQ%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:10ec71bda4aaa41ae15ec1d7fe245df6:Iq2tilNZdY24UtR1n3BxEsTXlqx9cb7399WjGZrsKDQBtPuu4Ke5gTMnFqaBUi2G0E0DRbirFcu3'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:a10aa4e18455617eab3345eba2e3c397:lIIwog2CM8VThM3Z%2FRoNXKXddyNDcfhEqtjrB4ACPG7AplzeM9qMetCITUww1fJ3n%2Bu17SNCRypGVw%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=f2eb605872bb03a98d7626abce70bb91&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=f2eb605872bb03a98d7626abce70bb91&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=f2eb605872bb03a98d7626abce70bb91&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>10.5: Enable X11 listening on port 6000</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=094fe7fbb4cea31b87cad5196cd79b09</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081208062918906</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081208062918906</guid>
+			<pubDate>Wed, 10 Dec 2008 07:30:00 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081208062918906#comments</comments>
+			<dc:subject>Network</dc:subject>
+			<description>Are you having difficulty redirecting X11 to your Mac running Leopard without using &lt;tt&gt;ssh -X&lt;/tt&gt;? Someone figured out that Leopard turns off listening to X11 traffic on TCP port 6000 by default. The following steps will TCP listening back on, so that the X11 server will service a client request. &lt;br&gt;&lt;br&gt;First see if your server has TCP listening turned off by executing the following command: &lt;tt&gt;defaults read org.x.X11 | grep nolisten&lt;/tt&gt;. The output will read either &lt;tt&gt;&quot;nolisten_tcp&quot; = 1;&lt;/tt&gt; which is bad, or &lt;tt&gt;&quot;nolisten_tcp&quot; = 0;&lt;/tt&gt; which is good. If TCP listening is off, turn it back on. I did this both as root and my default non-root username, as I didn't know which one took precedence:&lt;pre&gt;&lt;code&gt;sudo defaults write org.x.X11 nolisten_tcp 0defaults write org.x.X11 nolisten_tcp 0&lt;/code&gt;&lt;/pre&gt;Shut down your X11.app, then in Terminal, type &lt;tt&gt;xterm&lt;/tt&gt;, and as normal, the X11 terminal should pop-up. In the xterm, enable all remote users by typing &lt;tt&gt;xhost +&lt;/tt&gt;. Back ...&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:4c0e98c268ef5f1bb65f906eb8b6dcd5:UW193HK7xNDYPVfEjLF%2BsaO5QgUc6sdau3vq8eSKJESw4CaCUURat1Zfq2d3EDzf7csgjAveTzc3'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:410fe7b2b6d878134dd87c5ff9aed0ce:vq4eXVIvYoby8Zz7eZ0xz6YJGJG68LslzZ2sw2ZpOm1J4Q%2BYldVCR6A9luJ0Qpg5Mr9zjZ%2F5e%2F%2BR'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:803809d6c05ab40d6f6851a68762972d:qx%2Bt19mwRkEalhI9HB%2B1xFZPDqyqKExw3l7QgnNaNP6osUXj4QVo0ZhdpUtPt0u5Yv%2FSJbBBx9SlSA%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:5cf5d5a7a88b71c58d6871e0e5a1857b:D7jv6I3VZ5Tyidv%2FbnbiLvoFdpm%2FnuBmhGAEuTGXSTvYtdWYn2RwDGOlaRXeykqRTxuVRURX2%2BHM'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:44a7bd80cab6ebe0eee6a803c15796be:EtLExAvo4vXUylAdTdc4MGHOkCX6UBTv2rhuJ17KsyfsQj4QCP%2BiSMjlOPrV2V3YtlM8MQol4vsB8A%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=094fe7fbb4cea31b87cad5196cd79b09&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=094fe7fbb4cea31b87cad5196cd79b09&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=094fe7fbb4cea31b87cad5196cd79b09&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>New poll posted on Apple hardware surprises at Expo</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=cd1c02b1779ee08c7b0217d48203d87e</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=2008120921350485</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=2008120921350485</guid>
+			<pubDate>Wed, 10 Dec 2008 07:15:00 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=2008120921350485#comments</comments>
+			<dc:subject>Site News</dc:subject>
+			<description>We're now less than a month from the 2009 Macworld Expo keynote address, so I thought it'd be interesting to gauge what everyone's expecting in the way of hardware surprises from the keynote. Hence &lt;a href=&quot;http://www.macosxhints.com/polls/index.php?qid=expo09&amp;amp;aid=0&quot;&gt;this new poll&lt;/a&gt; asking how certain (or not certain) you are about any new hardware announcements coming from Mr. Jobs during the keynote.&lt;br&gt;&lt;br&gt;Just so everyone's clear, a 32gb iPhone or a 16-core Mac Pro wouldn't count as a new hardware announcement. A netbook, a video game console, a large-screen television...those would all count as new hardware.&lt;br&gt;&lt;br&gt;So how about it, do you think we'll be seeing any &quot;one more thing&quot; announcments in January?&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:1af278320ef59891efe254e570a6e2d7:J%2FtaRVbrMS%2BWMOPWQdLEmHcWvqC6zgp1PWjMdnyIyTd4jWlji1w9I2LECgzK9tf8S2spqGpp4fFg'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:bbfa5a148e9d6582cb1f6f70be2d1c35:LGtU2v9cna045UyW8il4wBOvXTQX2nt7xzVGJyKMryrr9xOfPj4kp3O9%2F4Iy%2FWDcbpkiWDDjO4Vz'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:39deca34c0c0bf320526728871eb16ba:Z6IYGO0nv6es3H5DjmqOzKL4hGpedq1M2Kycs6uib7ahtUigOROvNW2f5JZtuTNYxKP2fMJEFptjtA%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:6c28acaab4b0fda9cf0d34b0fa50bfe4:bmJwEKjGm8f89CRRA3hwhs9cWTxt8AN7%2Bvz54WYCOxf7DAtNYPnqn4Mw9jZl159yvo5fHqLAfjKA'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:c77c3f833b9bbd7c4c34bfa9ac0926a1:%2FeNWMSxZBsZqfJZAcBRK3V0KFWX9KOB%2Bqad4zpjMs2txrE2iog1LtYePUZ2BNiSb2tuO38JqL8chCg%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=cd1c02b1779ee08c7b0217d48203d87e&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=cd1c02b1779ee08c7b0217d48203d87e&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=cd1c02b1779ee08c7b0217d48203d87e&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>Rescue garbled attachments sent from 10.4 to Gmail</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=c72b9b39cdf828fb8d9dc2745faa46fb</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081205094435159</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081205094435159</guid>
+			<pubDate>Tue, 09 Dec 2008 07:30:00 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081205094435159#comments</comments>
+			<dc:subject>Apps</dc:subject>
+			<description>There seems to be some issue with the way IMAP in Gmail handles attachments sent via Tiger's Mail.app -- they often appear as generic &quot;mime-attachments&quot; with no apparent way to decode them on the receiving end. While I'm not sure of where exactly the problem is being introduced, I have found a way to rescue these attachments.&lt;br&gt;&lt;br&gt;The key comes from &lt;a href=&quot;http://www.macosxhints.com/article.php?story=20030721010526390&quot;&gt;this hint&lt;/a&gt;. However, trying to use &lt;tt&gt;openssl&lt;/tt&gt; on the mime-attachment will fail until you remove the headers. You need to delete the parts above the encoded data that look like this:&lt;pre&gt;&lt;code&gt;--Apple-Mail-3-1071339734Content-Transfer-Encoding: base64Content-Type: application/applefile;	name=file.docContent-Disposition: attachment;	filename=&quot;file.doc&quot;&lt;/code&gt;&lt;/pre&gt;	Take note of the filename, and then use it in the command referenced in the earlier hint like this:&lt;pre&gt;&lt;code&gt;openssl base64 -d -in mime-attachment -out file.doc&lt;/code&gt;&lt;/pre&gt;[&lt;b&gt;robg adds:&lt;/b&gt; I ...&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:a332783717eadd18bfe61486a13d6d94:uX8gNRnQyCjk1bN96GjcBDorz%2BBxH7TVlpPlDBiKXkcxz5OrRfMgxmUL5TKOVjNbnRe%2F2%2BjicYfl'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:ccf09da3db34f9f63e3acbd94ae3b02c:4miSiSvcGwmnv%2BwLfu94JS0USYsMExUbhYq1rXrb%2FWVcGMb%2BJ5T1ljVeusQ9MGcUB2mipo9hgmyp'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:c0a17488835936ef55325f70298bc499:s8KHeOm4nCh3yzJGZIDGZkXti5Gr9P72TsT0zwq62yMCYj52eCLo2k3eRUV2OgKmWJcdELe36z2pqQ%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:2b2578a519767b066e2f0e41fe97b77a:%2F4M0cB22oQadQsDUdZp%2BQBDDga9nH8CiLt4y1IKhLU5vJJFtU1mXCApvf1xkzTLO9DpSj28RKSuV'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:8eaaffa916d5d52b9f583c48bb973f30:Lf5MTuHal4vEWfTdCbYfuqRVQYBRk9qgz%2FJ7T78xv8DU%2BgQDx7DRswo1vWImzg1tZldrNUxPcwgPQg%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=c72b9b39cdf828fb8d9dc2745faa46fb&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=c72b9b39cdf828fb8d9dc2745faa46fb&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=c72b9b39cdf828fb8d9dc2745faa46fb&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>Toggle 'Show Cover Page During 2-up' in Acrobat</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=5323b15c5ee5caab4501d7e495a0d542</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081205121929624</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081205121929624</guid>
+			<pubDate>Tue, 09 Dec 2008 07:30:00 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081205121929624#comments</comments>
+			<dc:subject>Apps</dc:subject>
+			<description>When viewing book PDFs with the facing-pages (two-up) view option, one usually wants left-facing pages to be on the left so that spreads are viewed as they would be in a printed copy. Unfortunately, Acrobat 8 often defaults to the opposite. This simple AppleScript toggles the View menu option &lt;em&gt;Show Cover Page During 2-up&lt;/em&gt;:&lt;div style=&quot;margin-left: 20px; margin-top:10px; margin-bottom:10px; padding: 5px; border:1px solid; width:520px; height:120px; overflow:scroll;white-space:nowrap&quot;&gt;&lt;a title=&quot;Drag-select from top-to-bottom, then copy, and paste into Script Editor&quot;&gt;&lt;pre&gt;&lt;code&gt;--Toggle 'Show Cover Page During 2-up' optiontell application &quot;Adobe Acrobat Professional&quot;  activate  tell front document    tell application &quot;System Events&quot;      tell process &quot;Adobe Acrobat Professional&quot;                tell menu bar 1          tell menu bar item &quot;View&quot;            tell menu 1              tell menu item &quot;Page Display&quot;                tell menu 1                  click menu item &quot;Show Cover ...&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:efd357dd7c9c0eb50f6061e8d0bf3ed1:7XN87vikTsMCGvGvfO3eNR6OBi2xa5W9PamnR7a1NKXX9m%2FMyvs8naAFbHdHMhB9wVBcSKIpcHoz'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:fb7a0a2ca2e60768d82801f05abcb999:KlrstO%2Fg08mcPTHBopjkyy9EvT9tCldz06kZHxQDOWqgPpQq9%2FmJER3mKhxnNbRCFNcLVcur%2FZHq'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:9df6d806141ee2c5be319a3ccc4f6d1e:8UNEKOefwK3KuijEt%2FTQDmUV6QvH%2FN2w%2FQ%2ByNJtR2BJ7Z6Uq%2FtYFR7NUj1sLEcX5nYMwXWWlVwAW4g%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:ce0f0311f742255e87199183c480d599:hvowovxY1ZgIzgIv3sK%2BNSY0t7UlgrvuJD76LzSaUMn5RLNxTVYCIDFPP8glQfQ3mZaxld7tFUso'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:9f611136c09eee42ce9a7716e51c31fc:%2BuaByGTR%2FrJC9Hh9nD4kskVekG8KGlBGrD4ImOproQUCWnej3XLSpEw0SsI%2B%2FH0DAJAuibDUYzV99w%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=5323b15c5ee5caab4501d7e495a0d542&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=5323b15c5ee5caab4501d7e495a0d542&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=5323b15c5ee5caab4501d7e495a0d542&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>Prevent HDMI signal drops from Apple TV to Samsung TV</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=9c4c12bf15f6af9cccf822bcceb6463d</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081207011101698</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081207011101698</guid>
+			<pubDate>Tue, 09 Dec 2008 07:30:00 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081207011101698#comments</comments>
+			<dc:subject>Other Hardware</dc:subject>
+			<description>If you have a Samsung LCD TV and an Apple TV connected to it, it's possible you'll occasionally lose the HDMI signal from the Apple TV -- in particular when you turn off/on the TV. I corrected this problem on my set as follows (thanks to Marco in Apple's Discussion Forum for the help). Note that you'll have to access the Service Menu on your TV.&lt;br&gt;&lt;br&gt;&lt;b&gt;&lt;span style=&quot;red&quot;&gt;IMPORTANT: Be careful!&lt;/span&gt; This Menu has very important parameters which you should not change at all. You could 'brick' your TV if you change the wrong parameter!&lt;/b&gt;&lt;ol&gt;&lt;li&gt;Turn off the TV&lt;/li&gt;&lt;li&gt;If you have a 52&quot; Series 6 model (my case), press 'Mute -- 1 -- 8 -- 2 -- Power.' If you have a Series 5 model, try 'INFO MENU MUTE POWER.'&lt;/li&gt;&lt;li&gt;The TV will start and you will be in the service menu (give it a few extra seconds to get there).&lt;/li&gt;&lt;li&gt;Using the arrows/enter buttons, go into 'Option Table (Service)'&lt;/li&gt;&lt;li&gt;Turn &lt;em&gt;off&lt;/em&gt; the following parameters: &lt;em&gt;hotplug&lt;/em&gt; and &lt;em&gt;hotplugctr&lt;/em&gt;.&lt;/li ...&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:2a947082714a486272bfff48b793f2ff:zEebikTnLuhmLpfXFnTCxv73K687XnMce9duyAVPVZ6lhGxdaA0U6NFIfEaxmAOqfMj%2BJHIcklSB'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:9748fa100062c6d62ab8063a45195e16:P%2FyNdfMXy3GEXxVLN%2Fmt72Qd5B70Q65uR2W0zKgHaNhRvgyW9H2mQGMFTBFgkQZ6GIKIQZ9woSBT'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:f39e0fbf8740822b8139e5833c44d06e:Qmejp9IRKVf1naEADQiGJQ%2B4pVhDUoKvPsS3U%2BPojGtNB360SXXy1Ii8VXoHBujjiFL7lm1gkh5Dpg%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:88c8aaaaf4ed5da046ba8fc8233db9b8:nMmHiTw1Lg6%2F1NXkhYejbu8LJouEzp4OQ4SO6SrVhydUrH%2FLqIrOMFe2EM0D9vLgDclGpjQe%2BtOT'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:674d79346d5280d7f3422b77cdef62d1:v%2B2kwHNIUkJx05XP5QG4Usm5Ig%2BWG0uHBv1UuwxZjUOQuMLwJjRrH%2FZIPkIwv1AT%2FOi0drOp6puXrg%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=9c4c12bf15f6af9cccf822bcceb6463d&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=9c4c12bf15f6af9cccf822bcceb6463d&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=9c4c12bf15f6af9cccf822bcceb6463d&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>Change Google Gmail Notifier check interval</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=9aeea8649fcb366e8a31723dd142fad3</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081204143710211</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081204143710211</guid>
+			<pubDate>Mon, 08 Dec 2008 07:30:00 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081204143710211#comments</comments>
+			<dc:subject>Internet</dc:subject>
+			<description>If you're using Google's Notifier in your menu bar to check your Gmail, you might have noticed that there is no longer an option to change the check interval (or maybe I'm crazy, but I swore it was there before). I think it is currently set to 10 minutes, but I like it to update more often, especially if I've already gone through the mail that is new.  &lt;br&gt;&lt;br&gt;You can adjust the interval by clicking on the mail icon and then holding down the Command and Option keys while clicking on Preferences. This will pop open a box for a key/value pair. Use &lt;em&gt;AutocheckInterval&lt;/em&gt; as the key (case-sensitive) and then set the interval (in minutes) for it to check as the value.&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:10920e0e90b67150832eb7670a7a136d:tYgIJz2EJRR%2FhKfUmxzlcnrsjq3QUhux3AJecQfHWNvDmh1Ew3yFGiiItHm6BjEVZ8IVwJtaxS%2BD'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:372df54b5683cc83065cf2e4c1751f7a:6jAjMuvV02RREVe1UgA%2FkcLIiuMd%2B%2FHDfS6Ca6t8MVwNltdlW1ssFf1dv7wLVf8%2FfLn7ccUyaAbP'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:bf70d476dc7533f3b351f63a9b722ebe:HhMqa7yK8Z%2FvRrPvvMnT4t1aF8vg2VC1q9aHn6Q1iBSioSpitIOsGNs%2F3uHqA6n4S%2FmZ0nB1gYD07w%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:7016d5d49d86285cdf5c2cd612977106:1vWDJMXdHReMIBG%2FacQVxggIU9zBSg63HwXyxhLvLkGH6AUy7xgVPp6vaw4QxZ9%2BUETN%2Fz535R%2FW'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:1734edc81a6e622b02dacf2665925f5e:NON4vHxHguika6%2BBx610GEyvwoYXtFchE3r9U3diXYlYfJUVzY5gIPZtnm0XnH7q5uEovQvwIg2bUg%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=9aeea8649fcb366e8a31723dd142fad3&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=9aeea8649fcb366e8a31723dd142fad3&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=9aeea8649fcb366e8a31723dd142fad3&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>Save PDF attachments directly to Yojimbo</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=f28dc4b8139744d16fcde393604d9cb8</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081203175829498</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081203175829498</guid>
+			<pubDate>Mon, 08 Dec 2008 07:30:00 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081203175829498#comments</comments>
+			<dc:subject>Apps</dc:subject>
+			<description>I stumbled upon this tip today after being frustrated by the two-step process of getting PDF email attachments from Mail into Yojimbo: First save the PDF to disk, then add the PDF to Yojimbo.&lt;br&gt;&lt;br&gt;Instead, Control-clcik the PDF icon or preview that appears in the body of your email message and select Open With, and then pick Yojimbo from the submenu that appears.&lt;br&gt;&lt;br&gt;The PDF is imported into Yojimbo, ready for you to re-name and add tags.&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:40c881fd6ff3f247f7c3ac2710e5670a:f0sKJ%2FOHeTdWpwa%2Bz7PQPkmU8WQdYRJATTj4MhxJaLF8u43GDx0jGXFSt%2BntZmF2Bn23yZwupQFF'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:f569bf084159fb7e1a0c958d759fc1db:0bRiapt3AqHdoWTyq7T3Tozx3WkdtgHmtdt9WUXlpFOCytklSCeEEMEYIaGxXu9JR%2B%2FlEH2ABoxP'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:5e283b4d2d4396db669f0c5add81da5b:mA%2BUc6Mk3OhFeobG2A0Yht1RNLn9VwLxZp98sNY5XpNQDmaATLtxSDORavKpLEZLVyY%2FOn9U4JLMNg%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:c5854d5b68a9ebf79c060493955cb5da:dnhyaBtlSeoUTSnF5pDpisihLxSxKQJkT03OD%2FwzVqBxT9I%2B5bi1xIOtdxRP49rxDa8L1BGkj7T%2B'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:35fc3781fcca47f7180053e634225cfa:aHqpcHLlyuNlc3CXKAJ5uBPfSUhLf95gY9VXb0wascen%2BVNep%2Bn1r%2B5ug5iPfns4tvqZHsPGi2FBMA%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=f28dc4b8139744d16fcde393604d9cb8&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=f28dc4b8139744d16fcde393604d9cb8&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=f28dc4b8139744d16fcde393604d9cb8&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>Access iDisk via Cyberduck to avoid Finder issues</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=6f64616fef9791c6711435c6df7d872a</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081203103957517</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081203103957517</guid>
+			<pubDate>Mon, 08 Dec 2008 07:30:00 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081203103957517#comments</comments>
+			<dc:subject>Internet</dc:subject>
+			<description>I have nothing but constant trouble with Finder's WebDAV access with iDisk -- every other hour I'm logging in and out of MobileMe, or waiting five minutes to simply copy a file. It's slow, unreliable, and almost unusable.&lt;br&gt;&lt;br&gt;One solution? Access it using the open source &lt;a href=&quot;http://cyberduck.ch/&quot;&gt;Cyberduck&lt;/a&gt; program's WebDAV support. If you use QuickConnect from the toolbar, just enter &lt;em&gt;https://idisk.mac.com/membername&lt;/em&gt; in the dialog box to connect. For use in a bookmark or from the Open Connection dialog, select &lt;em&gt;WebDAV (HTTP/SSL)&lt;/em&gt; as the Protocol and enter &lt;em&gt;/membername&lt;/em&gt; in the More Options section.&lt;br&gt;&lt;br&gt;[&lt;b&gt;robg adds:&lt;/b&gt; Many years back, &lt;a href=&quot;http://www.macosxhints.com/article.php?story=20020324114517559&quot;&gt;we covered&lt;/a&gt; using Goliath for iDisk access. Goliath hasn't been updated since 2002, however. I've not had too much trouble with the iDisk in 10.5, but my use is pretty light (mainly for backups). Another alternative is ...&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:6f5654862b37f68fff4825f3dca0f30c:nEYvMfznGKN4KUmVsAuP1E8zlcx%2BOWW19BEOxO1kqOJTzdXZ785UL49mX%2FDZlQwrHx5KfFOewU9n'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:7173decb0be8fa0e883ee0428fe10483:dDqeRP%2BPG%2Bu%2FQbiioBu36LHv0SqqWcx%2FryJoYCct5TUXNIGkC9D4aP2QuF75Sqrnhc6AKe1meCEn'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:5e01fc00fb899015a1957d002be5c8fc:OhGALOpaW%2BDbzlJOuRG1%2Bx1iqMqu92%2FMWsybqJA6%2B10hs2NBJnbZu6XDfp3%2FdXWFEG9raCwhrXYsqw%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:e46eab915da28bc72138ef96a45ba1c3:0KYk0xXddfM7rgbhYAoCSfqRCEIGcbP1L6Q137uFEVMvOxLEfmtde%2FTZCf2%2F2XcyelErrqV3kUvK'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:71d09f6164c6fe91e5213db8a4effe45:9fB9F%2BjsMLLfcPCTk4GFqFHjgwbObwoKVEOfyeaGmCnV0tvIPYgdCv4zLTT3xdNUhwtOY5z3S1Iwww%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=6f64616fef9791c6711435c6df7d872a&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=6f64616fef9791c6711435c6df7d872a&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=6f64616fef9791c6711435c6df7d872a&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>Use simple URLs for some iTunes Store item links</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=4d6c8858087aa75517bcc9567cd1d0f3</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081203035939859</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081203035939859</guid>
+			<pubDate>Fri, 05 Dec 2008 07:30:05 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081203035939859#comments</comments>
+			<dc:subject>Internet</dc:subject>
+			<description>I found out that you can use a simple (and more intuitive) URL format to link to various items on the iTunes Store, at least for some categories. For example:&lt;ul&gt;&lt;li&gt;Artist or App Store developer: &lt;tt&gt;http://itunes.com/ArtistOrDeveloperName&lt;/tt&gt;&lt;/li&gt;&lt;li&gt;iPhone/iPod touch app: &lt;tt&gt;http://itunes.com/app/AppName&lt;/tt&gt;&lt;/li&gt;&lt;li&gt;Movie: &lt;tt&gt;http://itunes.com/movie/MovieTitle&lt;/tt&gt;&lt;/li&gt;&lt;li&gt;TV show: &lt;tt&gt;http://itunes.com/tv/ShowTitle&lt;/tt&gt;&lt;/li&gt;&lt;/ul&gt;URLs are case-insensitive. For multi-word titles, you should remove the spaces, for example, &lt;a href=&quot;http://itunes.com/kanyewest&quot;&gt;http://itunes.com/kanyewest&lt;/a&gt;. I couldn't, however, figure out a more intuitive way to link to individual songs or albums.&lt;br&gt;&lt;br&gt;[&lt;b&gt;robg adds:&lt;/b&gt; This worked for the handful of movies, artists, and App Store apps and developers I tested it with. I had mixed luck with TV -- you can link to series, like &lt;a href=&quot;http://itunes.com/tv/30rock&quot;&gt;30 Rock&lt;/a&gt;, but I couldn't figure out how to link to a particular show, or to ...&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:f5a68904987ae4607646a9fb91b7e682:MKANSAV7RmTMDl%2BMYXVoweaY4Ckebr0QoBEZ735x3vAtOeeL4Y0xGvYElyuT3wtV2mn1W95HUb8t'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:7025c686ea51578c82c59af11cde6ea2:N5pVnnzzDAEKbZVLt4F9dG3Ud3OHVanh%2FxOCuBZGnsvrftlkJMu%2F07PQXRbNUNmKUkPY1xJ%2BvX0v'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:087702c20f315a3cd979be7044153bc5:25gXFbFr%2Fe05HgGWigA5Mi843ghGBzdjMuX0NOXdrJ1GdeNJ8B98Stra9kBfStZZn8FVVk1eyf1Rxw%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:d0d39e0fd7ea098da9b08927aa9f8c76:xO5kLZQVkoLyiPQBo1j%2BzvkuTHVjhKOKBj9tpsDKTYzpoMrkGmT1mWoxZh1B9ydXClBJHc8tilJ6'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:f17872afb944806bd031f57746b87541:gpefhudTgTwT4Gh5YsSUsbfUM0i5C92MiTkTOwGQY8OPFw%2F12wFQ%2FRvz5ZXcmSBzzd45ofEylqQ%2Buw%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=4d6c8858087aa75517bcc9567cd1d0f3&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=4d6c8858087aa75517bcc9567cd1d0f3&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=4d6c8858087aa75517bcc9567cd1d0f3&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>A caution on MobileMe outbound email domain filtering</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=92f176c9d5009a63a7e38965e75aa0d3</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081202062609244</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081202062609244</guid>
+			<pubDate>Fri, 05 Dec 2008 07:30:04 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081202062609244#comments</comments>
+			<dc:subject>Internet</dc:subject>
+			<description>This is a hint regarding a serious problem for MobileMe users: Outgoing mail via smtp.me.com may not actually be sent if it is sent to certain domains. If a message is caught in this domain filter, it is silently dropped without notification to the user. None of the recipients of the message will receive it, even if they are not in the filtered domain. This problem occurs with mail sent through Apple's Mail app, on the iPhone or on Mac computers. It does &lt;em&gt;not&lt;/em&gt; happen when sending via the MobileMe webmail interface. So far, only spamcop.net has been identified as a domain filtered by smtp.me.com, but there may be others.
+&lt;br&gt;&lt;br&gt;
+This problem is testable and repeatable as of this writing; you can test it yourself as follows. On a Mac or iPhone, use Mail to create a new message using your MobileMe account. In the To field, put &lt;em&gt;support@spamcop.net&lt;/em&gt;, in the CC field, enter a valid personal email address, and in the Subject field, put &lt;em&gt;test&lt;/em&gt;, then send the message. ...&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:56389d8efdc9635ea72e473f759826c9:xsOgY6IlYCGR3C%2FcOtN4HBg5%2BzIhy9UzsBe2o2buLnA3UP8lv44cuaAl3ctz67RDBqZtSrYlZb26'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:52ac47c148f75febbd5456e18149a8b2:Uf7lKu2T4yTQkvdeMcPyxQHosis3e7QT8srhu%2Fy3%2BQysT2rKp3sW2fE0NHz7DFqZ30j2X4%2Fh7oEo'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:efba6b3d42f6de39f3cd11c5e20dc600:Cq3%2Bqciuo4kgJectlZ2LjiHaC9sJZ3ur0qTd%2F3wAndff9R76duRlmuka%2Bn2MlYrDpzpjUNAwKIl2aQ%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:ae712e369a83959221f7c5c3a15f5d73:8TFbs%2B2ecicnziY%2FqZuAVEkS7KkgeH7915Ns9Dp3SfvIF1anpoI1ygbmo6220ToGxqOf0gdrdsAo'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:c5de3c4bd0622d879debd55901888b2f:aGe0ideiNS2PTwz5uk6rQOB7olxuOOPWFo6YWELAjWCWHfqFPO1UDHGqlGTi5cf6H0yC6cI01dHgJg%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=92f176c9d5009a63a7e38965e75aa0d3&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=92f176c9d5009a63a7e38965e75aa0d3&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=92f176c9d5009a63a7e38965e75aa0d3&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>Build non-modified PDF files with texmaker</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=e59be1687e5b3cad2f0d3a5b792cd065</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081203092237254</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081203092237254</guid>
+			<pubDate>Fri, 05 Dec 2008 07:30:03 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081203092237254#comments</comments>
+			<dc:subject>Apps</dc:subject>
+			<description>If you use &lt;a href=&quot;http://www.xm1math.net/texmaker/&quot;&gt;texmaker&lt;/a&gt; to compile LaTeX files, you must have experienced the issue where PDF files generated with the Quick Build option are marked as modified, and you must save them (or refuse) even if you simply wanted to see a preview of the document.
+&lt;br&gt;&lt;br&gt;
+This is due to the fact that, by default, the Quick Build creates a PostScript file which is then converted to PDF by Preview -- that's why Preview marks it as modified (as new, actually, to be more specific). The solution is change the Quick Build command: Preferences » Quick Build » LaTeX + dvipdfm + View PDF, or the next option, LaTeX + dvips + ps2pdf + View PDF. As I don't use the PostScript file, I only create the PDF file. I've had some problems with the PdfLaTeX, so I'm not mentioning it here.&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:43061672d2d631b82330f78c34bde820:96SPSy77CWIipBf90Jbnwhn2ZNa1kKk7WYnCUrqSBR9T%2F7GIuApeo0RUy9AMZHWEvwghktSSvrQT'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:7da76bcb8eaa1cd20a65ccc7a8ee63fd:UOxwv761HNHkuQL%2FfOZGYn6pIDLyCWPxZ2056XSrSozAYzJi4%2FW16Bk3FqQSrJym8J34sSXsLF1P'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:c4730e6ab4e61f4ba95de8b18ae463f9:%2F7S%2FKVck3uKbZhKjqKbT0aCt6mTDo2ugBWC7mkj8ewm9tnJWr8W290e9AUPrz0RiPaDumdd6XoaL0g%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:1f7084797beb9e403a83ccecdfeb74b6:zL%2F8u2pK4pF%2FbgkFYDkiqQLr%2FwoVUAv8wvRK%2Bbd2NnWtLHBQHz%2BBFdyFXg%2BfR0qS2R%2FqcjmmSM%2B9'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:fcccbd287f92f082d8ea8c47c533dabe:Ezrps2%2BavV5ak2DrbdbrBd%2BWWVN7D9i%2FGGeFI2KxkX%2BFTv2O9SZIjHdTzx3VF%2BkBKdHSxolxalealw%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=e59be1687e5b3cad2f0d3a5b792cd065&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=e59be1687e5b3cad2f0d3a5b792cd065&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=e59be1687e5b3cad2f0d3a5b792cd065&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>A new way to synchronize iCal across several computers</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=56bd23eb180266e382db03f6b0b432b4</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081203061203644</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081203061203644</guid>
+			<pubDate>Fri, 05 Dec 2008 07:30:02 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081203061203644#comments</comments>
+			<dc:subject>Apps</dc:subject>
+			<description>Google has recently posted a new application, &lt;a href=&quot;http://code.google.com/p/calaboration/&quot;&gt;Calaboration&lt;/a&gt;, which gives one full access to a Google calendar through iCal. By using the same tool on all your computers, you will be able to access the same calendar from any place.&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:095a2f022f6f24bbdf579b7b4a0ba74c:k3brsohI7W9C4TqI0WytTmd1VPNZfuo%2B1NyIbCJroEPUCWyuPxXUc%2B15K4YjjfOCp8Kgghl1nS2y'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:9df71d989584f174178c2921ac8d0730:SQawv%2B%2BjVg6TDUgTKyp0qw%2Bc9UwdUzoQHCWfEHQq%2BqI0bBB38A0NU0egHxNbEkrn7%2FPu3CMK7amB'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:355098909959818bdc8eb527910db3aa:hlpjRLoq9E%2FuUnHbXo8zWIYAQgBeuObWljHpCxqp3OISOz3Bnndw55nh5g%2FUbQsNIKlg9wR%2BUR5pwg%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:195a23d7e8fcdb0ac662e5e0e8ff16fc:o3B7pCs%2BkJtxvLZCj0TWKxsjTeAtu9ybB6GRPnEVV9jxk1zFv8Yk%2B%2BBsHxaM9CdTA9rYQmCDrQW8'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:b630b08d798ce0b5c6374ef2b28ab758:lyAiiE2x8H7kWMbujL1rrLFWg%2BjA%2FRBYqIHBnac9oaRcMIOCHFgy%2FSC7AiOUJdQofHjoOApLE0aBnA%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=56bd23eb180266e382db03f6b0b432b4&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=56bd23eb180266e382db03f6b0b432b4&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=56bd23eb180266e382db03f6b0b432b4&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>Holiday-friendly iTunes music sharing</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=205fb76a88003947ce2b9cfa5495b7a6</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081202191437774</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081202191437774</guid>
+			<pubDate>Fri, 05 Dec 2008 07:30:01 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081202191437774#comments</comments>
+			<dc:subject>Apps</dc:subject>
+			<description>If you're like me, you keep your music organized on one central Mac set up to share the music library to the household using iTunes music sharing. But when the Christmas season comes along, there is a collection of holiday music to be shared, yet who wants to have that cluttering up the main music library all year long?
+&lt;br&gt;&lt;br&gt;
+The simple solution is to add a new user to the &quot;server&quot; Mac, then load all the holiday music into iTunes running under that user. Share the music using a distinct name, like &quot;Christmas Music.&quot; You can share the music from multiple copies of iTunes on the same Mac under different users, so it won't interfere with the usual music library sharing.
+&lt;br&gt;&lt;br&gt;
+At the end of the Christmas season, back up the music (or the entire user), delete it, and then put it away until next year!
+&lt;br&gt;&lt;br&gt;
+[&lt;b&gt;robg adds:&lt;/b&gt; I haven't tested this one (with &quot;this&quot; being multiple users sharing music from one Mac at the same time). Here I just keep the holiday music unchecked in th...&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:9ded7317638f540acad4d6f0e950382b:1Sb%2FdrV9uw3C%2FDYbdcnJPtA6tJiFMILtJ6sBLkhJzBz3LR7RtqBGasEcgGKlGfAPqpAzpWfcgHvM'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:c78141ee733ac73d458073f5912f0afe:xIV0h6Q4uH8rjXY8duPXivHTd8KCfgPb8DoQXI%2BT3Dn0SfpcaeWcqG1HAqtgPr3B6oeqBM315W1R'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:3e3b22109d4d814ca6be5fb04920fb01:khAav0Qx8CQd2alwVucs518dujoZnNow7tpBl2ut8YWpG2PCFs%2BZzk9TCsqUdL8IGK2cRPnimPkHWQ%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:d217758066ba88e8daeeeab4a8c3a3f5:5%2FrbeHlkvnOFDTu638stckRtitrpxWjMgOzgMKRWVWndlv7VR9BbmwL1SiAlczoK%2ByaoTRJ8f9mn'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:c8e0be02c7d4d75c7f6a2f1cd3ef063f:PASe%2FY95oEsVPPCTzyYk0vRlC6ku0T91mdlKYiZxUXFMrdOGbHOreSYyKzedEv4yrBWeWyvYpeZfFA%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=205fb76a88003947ce2b9cfa5495b7a6&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=205fb76a88003947ce2b9cfa5495b7a6&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=205fb76a88003947ce2b9cfa5495b7a6&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+		<item>
+			<title>Control how iTunes 8 handles playback in Grid view</title>
+			<link>http://feeds.macosxhints.com/click.phdo?i=18511e693049a336f8a2358003949c6d</link>
+			<pheedo:origLink>http://www.macosxhints.com/article.php?story=20081128113948899</pheedo:origLink>
+			<guid isPermaLink="false">http://www.macosxhints.com/article.php?story=20081128113948899</guid>
+			<pubDate>Thu, 04 Dec 2008 07:30:04 -0800</pubDate>
+			<comments>http://www.macosxhints.com/article.php?story=20081128113948899#comments</comments>
+			<dc:subject>Apps</dc:subject>
+			<description>There is a new feature in iTunes 8 grid view that allows you to determine whether music in a given playlist or library will continue to play after the selected artist (or album, genre, composer, or selection) is finished. In grid view, you can play an Album (assuming Grid view is set to Albums) by clicking the Play Album button that appears when you mouse over an album cover.
+&lt;br&gt;&lt;br&gt;
+Now, by default, when the chosen album is finished playing, iTunes will stop. But what if you want iTunes to continue playing the other albums in your playlist/library? Then instead of clicking Play Album, hold down the Option key first. When you do, the Play Album button changes to read just Play. Option-click on Play, and once your album is finished, iTunes will go to the next album in your playlist/library.
+&lt;br&gt;&lt;br&gt;
+This is also handy if you want to shuffle between albums in Grid view. If you have shuffle enabled and click Play Album, iTunes will just shuffle and play songs from that album. If you O...&lt;br style=&quot;clear: both;&quot;/&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:12840bb36a016817d87a20088338a1fc:W6gKj8nzNQDIloKmQ23YSKbVsAzxWWtzbptaW2FzA%2FUstM6bvjbsBes%2Bd2OQ49hGP%2BsAw8GRRAyR'&gt;&lt;img border='0' title='Add to digg' alt='Add to digg' src='http://www.pheedo.com/images/mm/digg.gif'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:d56889d582ad7d5c5027324f2845f926:sg8wO970Y5LKWbPLNCAF30jyuOHXVBWwSp2oe3c%2FEQLAKdAFqkejlKo6q3gLxM9bOe%2Bdn5Qm3o59'&gt;&lt;img border='0' title='Add to Reddit' alt='Add to Reddit' src='http://www.pheedo.com/images/mm/reddit.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:614926cdf458c4777e63c87cf05731da:P12vnYmduwD%2FQONsj%2Fi4BUWK959sqqxEiSj9LNO2ffG9eMVf7kj94kXZgcT6dm1aGiteA85mmo2T4g%3D%3D'&gt;&lt;img border='0' title='Add to Slashdot' alt='Add to Slashdot' src='http://www.pheedo.com/images/mm/slashdot.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:01b0bac1ce5e91e0a347fc60bd222e6a:4zV7I%2FUC7suwuAipfE7%2B46MPduxIr7fukDdjuK6mnY3qaTWNxVDpMc0t3HYfnNFehuPLaUr%2BrNGn'&gt;&lt;img border='0' title='Email this Article' alt='Email this Article' src='http://www.pheedo.com/images/mm/emailthis.png'/&gt;&lt;/a&gt;
+  &lt;a style='font-size: 10px; color: maroon;' href='http://www.pheedo.com/hostedMorselClick.php?hfmm=v3:4c022d57e6921d9b5d5985190e2231b0:3mcBSbAcwoBbGK1XgnVJZklWGAc%2FlebZ5zcNpFuHf%2B12Bf2mAf2KLCnbOtgLoOuNrGgN0uxkG%2F4qkg%3D%3D'&gt;&lt;img border='0' title='Add to StumbleUpon' alt='Add to StumbleUpon' src='http://www.pheedo.com/images/mm/stumbleit.gif'/&gt;&lt;/a&gt;
+&lt;br style=&quot;clear: both;&quot;/&gt;
+&lt;a href=&quot;http://www.pheedo.com/click.phdo?s=18511e693049a336f8a2358003949c6d&amp;p=1&quot;&gt;&lt;img alt=&quot;&quot; style=&quot;border: 0;&quot; border=&quot;0&quot; src=&quot;http://www.pheedo.com/img.phdo?s=18511e693049a336f8a2358003949c6d&amp;p=1&quot;/&gt;&lt;/a&gt;
+&lt;img src=&quot;http://www.pheedo.com/feeds/tracker.php?i=18511e693049a336f8a2358003949c6d&quot; style=&quot;display: none;&quot; border=&quot;0&quot; height=&quot;1&quot; width=&quot;1&quot; alt=&quot;&quot;/&gt;
+</description>
+		</item>
+	</channel>
+</rss>

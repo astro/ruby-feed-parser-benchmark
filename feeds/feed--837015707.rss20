@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generator="wordpress/2.2" -->
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	>
+
+<channel>
+	<title>Guillaume's blog</title>
+	<link>http://lebleu.org/blog</link>
+	<description>For the record.</description>
+	<pubDate>Fri, 12 Dec 2008 03:21:29 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.2</generator>
+	<language>en</language>
+			<item>
+		<title>BarterCard offers SMS-based POS solution to cashless trade exchange members</title>
+		<link>http://lebleu.org/blog/2008/12/11/bartercard-offers-sms-based-pos-solution-to-cashless-trade-exchange-members/</link>
+		<comments>http://lebleu.org/blog/2008/12/11/bartercard-offers-sms-based-pos-solution-to-cashless-trade-exchange-members/#comments</comments>
+		<pubDate>Fri, 12 Dec 2008 03:21:29 +0000</pubDate>
+		<dc:creator>Guillaume</dc:creator>
+		
+		<category><![CDATA[bartercard]]></category>
+
+		<category><![CDATA[complementarycurrency]]></category>
+
+		<guid isPermaLink="false">http://lebleu.org/blog/2008/12/11/bartercard-offers-sms-based-pos-solution-to-cashless-trade-exchange-members/</guid>
+		<description><![CDATA[From Wikipedia:
+ Bartercard is the world&#8217;s largest barter trading exchange. Bartercard enables member businesses to exchange goods and services with other member businesses without using cash or cash equivalents, or having to engage in the direct two-way swap of goods and/or services. It was established in Australia in 1991 and operates in over 13 countries [...]]]></description>
+			<content:encoded><![CDATA[<p>From Wikipedia:</p>
+<blockquote><p> <a href="http://www.bartercard.com/">Bartercard</a> is the world&#8217;s largest barter trading exchange. Bartercard enables member businesses to exchange goods and services with other member businesses without using cash or cash equivalents, or having to engage in the direct two-way swap of goods and/or services. It was established in Australia in 1991 and operates in over 13 countries with a member database of over 55000.</p>
+<p>Members earn Bartercard Trade Dollars for the goods and services they sell and this value is recorded electronically in the member’s account database.</p></blockquote>
+<p>In January 2008, BarterCard introduced a SMS-based service that allows merchants to process transactions immediately with funds being transferred into their account at point of sale. The service also supports balance inquiry. The user guide can be found <a href="http://members.bartercard.com/OnlineForms/SMSPOS.pdf">here</a>. I also put some screenshots below from their <a href="http://www.bartercard.com/uploads/smspos/index.htm">online demo</a>.</p>
+<p>Although the balance inquiry is pretty standard in mobile banking, the SMS-based POS transaction processing is I think really unique.</p>
+<p>To process a sale to a BarterCard , the merchant simply types &#8220;Pur [Amount] [BarterCard number]&#8221;, sends it to the BarterCard phone number (saved as contact) and if the transaction is successful, receives a 10 digit reference number composed of a 4 digit BarterCard SMSPOS reference number and a 6 digit BarterCard Authorization number.</p>
+<p>Of course, one might ask the kind of protection provided against fraud and the user guide only mentions:</p>
+<blockquote><p> We do advise you that you retain a proof of sale from the purchaser in the form of a signed receipt of invoice. If the sale is ever contested, you will be required to provide this proof.</p></blockquote>
+<p>The other security feature is that at registration, members can register to be notified whenever they make a purchase that&#8217;s processed via the SMSPOS service (as opposed to processing a purchase).</p>
+<p>So, what&#8217;s interesting here is that a very low-tech solution in terms of fraud prevention. It seems that fraud policing is done by members and resolved by BarterCard employees. It would be interested to hear from BarterCard about their fraud statistics, if any. This would be a great demonstration of how social capital can be used to prevent fraud.</p>
+<p>Going back to the functionality of the SMSPOS service, there are two other advanced features:</p>
+<ul>
+<li>A previous transaction can be retried by typing and sending &#8220;Retry [Amount] [BarterCard Number]&#8221;</li>
+<li>A transaction can be reversed (1 hour window) by typing and sending &#8220;Rev [Amount] [previously received 4 digit BarterCard SMSPOS reference number], for instance &#8220;Rev 40.50 0022&#8243;.</li>
+</ul>
+<p><img src="http://farm4.static.flickr.com/3015/3100995313_6001a6383c.jpg" title="Registration part 1" alt="Registration part 1" width="500" height="302" /></p>
+<p><img src="http://farm4.static.flickr.com/3061/3101831764_86348911ed.jpg" title="Registration part 2" alt="Registration part 2" width="500" height="302" /></p>
+<p><img src="http://farm4.static.flickr.com/3286/3101831808_f26717c79d.jpg?v=0" title="POS Transaction Processing" alt="POS Transaction Processing" width="251" height="500" /></p>
+<p><img src="http://farm4.static.flickr.com/3011/3101831858_2809dff05e.jpg?v=0" title="Balance Inquiry" alt="Balance Inquiry" width="251" height="500" /></p>
+
+<span class="slashdigglicious">
+<a href="http://slashdot.org/bookmark.pl?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F11%2Fbartercard-offers-sms-based-pos-solution-to-cashless-trade-exchange-members%2F&amp;title=BarterCard+offers+SMS-based+POS+solution+to+cashless+trade+exchange+members" title="Slashdot It!"><img src="http://slashdot.org/favicon.ico" height="16" width="16" alt="[Slashdot]" /></a>
+<a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F11%2Fbartercard-offers-sms-based-pos-solution-to-cashless-trade-exchange-members%2F&amp;title=BarterCard+offers+SMS-based+POS+solution+to+cashless+trade+exchange+members" title="Digg This Story"><img src="http://digg.com/favicon.ico" width="16" height="16" alt="[Digg]" /></a>
+<a href="http://reddit.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F11%2Fbartercard-offers-sms-based-pos-solution-to-cashless-trade-exchange-members%2F&amp;title=BarterCard+offers+SMS-based+POS+solution+to+cashless+trade+exchange+members" title="Reddit"><img src="http://reddit.com/favicon.ico" width="16" height="16" alt="[Reddit]" /></a>
+<a href="http://del.icio.us/post?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F11%2Fbartercard-offers-sms-based-pos-solution-to-cashless-trade-exchange-members%2F&amp;title=BarterCard+offers+SMS-based+POS+solution+to+cashless+trade+exchange+members" title="Save to del.icio.us" onclick="window.open('http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F11%2Fbartercard-offers-sms-based-pos-solution-to-cashless-trade-exchange-members%2F&amp;title=BarterCard+offers+SMS-based+POS+solution+to+cashless+trade+exchange+members', 'delicious', 'toolbar=no,width=700,height=400'); return false;"><img src="http://del.icio.us/favicon.ico" width="16" height="16" alt="[del.icio.us]" /></a>
+<a href="http://www.facebook.com/share.php?u=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F11%2Fbartercard-offers-sms-based-pos-solution-to-cashless-trade-exchange-members%2F" title="Share on Facebook"><img src="http://www.facebook.com/favicon.ico" width="16" height="16" alt="[Facebook]" /></a>
+<a href="http://technorati.com/faves?add=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F11%2Fbartercard-offers-sms-based-pos-solution-to-cashless-trade-exchange-members%2F" title="Add to my Technorati Favorites"><img src="http://technorati.com/favicon.ico" width="16" height="16" alt="[Technorati]" /></a>
+<a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F11%2Fbartercard-offers-sms-based-pos-solution-to-cashless-trade-exchange-members%2F&amp;title=BarterCard+offers+SMS-based+POS+solution+to+cashless+trade+exchange+members" title="Save to Google Bookmarks"><img src="http://www.google.com/favicon.ico" width="16" height="16" alt="[Google]" /></a>
+<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F11%2Fbartercard-offers-sms-based-pos-solution-to-cashless-trade-exchange-members%2F&amp;title=BarterCard+offers+SMS-based+POS+solution+to+cashless+trade+exchange+members" title="Stumble it!"><img src="http://www.stumbleupon.com/favicon.ico" width="16" height="16" alt="[StumbleUpon]" /></a>
+</span>]]></content:encoded>
+			<wfw:commentRss>http://lebleu.org/blog/2008/12/11/bartercard-offers-sms-based-pos-solution-to-cashless-trade-exchange-members/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Interacting with Digital Money</title>
+		<link>http://lebleu.org/blog/2008/12/10/interacting-with-digital-money/</link>
+		<comments>http://lebleu.org/blog/2008/12/10/interacting-with-digital-money/#comments</comments>
+		<pubDate>Wed, 10 Dec 2008 07:01:49 +0000</pubDate>
+		<dc:creator>Guillaume</dc:creator>
+		
+		<category><![CDATA[userinterface]]></category>
+
+		<category><![CDATA[design]]></category>
+
+		<category><![CDATA[money]]></category>
+
+		<guid isPermaLink="false">http://lebleu.org/blog/2008/12/10/interacting-with-digital-money/</guid>
+		<description><![CDATA[Chris Woebken has created some pretty curious new ways of interacting physically with digital or plastic money.
+
+
+
+
+
+
+
+
+
+
+
+]]></description>
+			<content:encoded><![CDATA[<p><a href="http://www.woebken.net">Chris Woebken</a> has created some pretty curious new ways of interacting physically with digital or plastic money.</p>
+<p><a href="http://lebleu.org/blog/2008/12/10/interacting-with-digital-money/chris-woebken-future-of-money-video/" rel="attachment wp-att-155" title="Chris Woebken Future of Money video"><img src="http://lebleu.org/blog/wp-content/uploads/2008/12/picture-7.png" alt="Chris Woebken Future of Money video" /></a></p>
+
+<span class="slashdigglicious">
+<a href="http://slashdot.org/bookmark.pl?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F10%2Finteracting-with-digital-money%2F&amp;title=Interacting+with+Digital+Money" title="Slashdot It!"><img src="http://slashdot.org/favicon.ico" height="16" width="16" alt="[Slashdot]" /></a>
+<a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F10%2Finteracting-with-digital-money%2F&amp;title=Interacting+with+Digital+Money" title="Digg This Story"><img src="http://digg.com/favicon.ico" width="16" height="16" alt="[Digg]" /></a>
+<a href="http://reddit.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F10%2Finteracting-with-digital-money%2F&amp;title=Interacting+with+Digital+Money" title="Reddit"><img src="http://reddit.com/favicon.ico" width="16" height="16" alt="[Reddit]" /></a>
+<a href="http://del.icio.us/post?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F10%2Finteracting-with-digital-money%2F&amp;title=Interacting+with+Digital+Money" title="Save to del.icio.us" onclick="window.open('http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F10%2Finteracting-with-digital-money%2F&amp;title=Interacting+with+Digital+Money', 'delicious', 'toolbar=no,width=700,height=400'); return false;"><img src="http://del.icio.us/favicon.ico" width="16" height="16" alt="[del.icio.us]" /></a>
+<a href="http://www.facebook.com/share.php?u=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F10%2Finteracting-with-digital-money%2F" title="Share on Facebook"><img src="http://www.facebook.com/favicon.ico" width="16" height="16" alt="[Facebook]" /></a>
+<a href="http://technorati.com/faves?add=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F10%2Finteracting-with-digital-money%2F" title="Add to my Technorati Favorites"><img src="http://technorati.com/favicon.ico" width="16" height="16" alt="[Technorati]" /></a>
+<a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F10%2Finteracting-with-digital-money%2F&amp;title=Interacting+with+Digital+Money" title="Save to Google Bookmarks"><img src="http://www.google.com/favicon.ico" width="16" height="16" alt="[Google]" /></a>
+<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F10%2Finteracting-with-digital-money%2F&amp;title=Interacting+with+Digital+Money" title="Stumble it!"><img src="http://www.stumbleupon.com/favicon.ico" width="16" height="16" alt="[StumbleUpon]" /></a>
+</span>]]></content:encoded>
+			<wfw:commentRss>http://lebleu.org/blog/2008/12/10/interacting-with-digital-money/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Study finds that shopping near you is better for you</title>
+		<link>http://lebleu.org/blog/2008/12/09/study-finds-that-shopping-near-you-is-better-for-you/</link>
+		<comments>http://lebleu.org/blog/2008/12/09/study-finds-that-shopping-near-you-is-better-for-you/#comments</comments>
+		<pubDate>Wed, 10 Dec 2008 02:22:53 +0000</pubDate>
+		<dc:creator>Guillaume</dc:creator>
+		
+		<category><![CDATA[local]]></category>
+
+		<category><![CDATA[nearmoney]]></category>
+
+		<category><![CDATA[socialmoney]]></category>
+
+		<category><![CDATA[sustainability]]></category>
+
+		<category><![CDATA[money]]></category>
+
+		<guid isPermaLink="false">http://lebleu.org/blog/2008/12/09/study-finds-that-shopping-near-you-is-better-for-you/</guid>
+		<description><![CDATA[In May 2007, Civil Economics, an economics research company specialized in sustainable prosperity has issued a research note titled San Francisco Retail Diversity Study (Full Study
+Executive Summary
+Talking Points).
+The main conclusion of the study is that
+A 10% shift in consumer spending, from chains and internet to locally owned retail, would create nearly 1300 new jobs and [...]]]></description>
+			<content:encoded><![CDATA[<p>In May 2007, <a href="http://www.civiceconomics.com">Civil Economics</a>, an economics research company specialized in sustainable prosperity has issued a research note titled San Francisco Retail Diversity Study (<a href="http://www.civiceconomics.com/SF/SFRDS_May07.pdf">Full Study</a><br />
+<a href="http://www.sfloma.org/portlet_contents/SF_ES_Final_070411.pdf">Executive Summary</a><br />
+<a href="http://www.sfloma.org/portlet_contents/sfloma_talking_points.doc">Talking Points</a>).</p>
+<p>The main conclusion of the study is that</p>
+<blockquote><p>A 10% shift in consumer spending, from chains and internet to locally owned retail, would create nearly 1300 new jobs and over $190 million in increased economic output for San Francisco. Consumers don’t have to spend more, just spend differently.</p></blockquote>
+<p>Guillaume here: something not mentioned in the analysis is that more jobs and more economic output in a specific geography where you own a house means that your house increases in value (or keeps its value or decreases relatively less). In other words, by collectively chasing deals online and saving $100 in Christmas gifts, a neighborhood may be actually be contributing to a decrease in their wealth. It would be nice if the money system was making this link more obvious.</p>
+<p>Anyway, it seems that Association of Alternative Newsweeklies heard about this study and launched a national campaign that</p>
+<blockquote><p>urges their readers to spend at least $100 of their holiday money this fall at locally owned stores in their communities - a move that could pump more than  $2.9 billion into urban economies during this recession-plagued season.</p></blockquote>
+<p>(<a href="http://www.sanfranciscomerchants.com/associations/phamb/files/Shop%20Local%20Press%20Release%202008.pdf">full press release</a>).</p>
+<p>In the Portrero neighborhood of San Francisco, local merchants have adapted the campaign into a drawing of lots for a prize whereby people can &#8220;buy&#8221; tickets for the chance to win gift certificates from local merchants by sending an email with a pledge to spend $100 locally.</p>
+<p>Here is an example of the emails circulating.</p>
+<blockquote><p> The Potrero merchants are running a promotion, giving away $1000 worth of<br />
+gift certificates to locally-owned, independent businesses.  The drawing is<br />
+this Thursday; all you have to do to enter to win is to pledge that $100 of<br />
+your holiday spending stays here in the neighborhood, with locally-owned<br />
+merchants.</p>
+<p>Send an email saying &#8220;I pledge&#8221; to pledge@potrerohill.biz and you are<br />
+entered into the drawing.  Someone will win $500 worth of goods and<br />
+services, and thanks to local merchants, there will be two 2nd prizes: $250<br />
+worth of goods and services.</p>
+<p>So&#8230; think about redirecting just $100 that you might have spent at<br />
+Amazon.com, or Macy&#8217;s, or on Starbucks gift cards.  And help the local<br />
+economy &#8212; find out more at www.potrerohill.biz</p>
+<p>And please &#8212; forward this to others you know who live and work in Potrero<br />
+and Dogpatch.  OK sure, it will slightly reduce your chances of winning the<br />
+drawing, but it&#8217;s great for people to learn more about our local<br />
+businesses.</p></blockquote>
+<p><img src="http://www.sanfranciscomerchants.com/associations/phamb/images/Shop-Local-2008.JPG" alt="Portrero Buy Local campaign" /></p>
+<p>Guillaume here: I think this is a great step towards local community currencies. I think I would have liked the Portrero Merchant association to go a step further and let merchants issue merchant branded &#8220;Portrero Bucks&#8221; that merchants would have sold for real US dollars, with say $100 &#8220;Portrero Bucks&#8221; for $90 U.S. dollars. These would have acted as a guarantee for the pledge, and would have been a first step towards the creation of an actual community currency.</p>
+
+<span class="slashdigglicious">
+<a href="http://slashdot.org/bookmark.pl?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F09%2Fstudy-finds-that-shopping-near-you-is-better-for-you%2F&amp;title=Study+finds+that+shopping+near+you+is+better+for+you" title="Slashdot It!"><img src="http://slashdot.org/favicon.ico" height="16" width="16" alt="[Slashdot]" /></a>
+<a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F09%2Fstudy-finds-that-shopping-near-you-is-better-for-you%2F&amp;title=Study+finds+that+shopping+near+you+is+better+for+you" title="Digg This Story"><img src="http://digg.com/favicon.ico" width="16" height="16" alt="[Digg]" /></a>
+<a href="http://reddit.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F09%2Fstudy-finds-that-shopping-near-you-is-better-for-you%2F&amp;title=Study+finds+that+shopping+near+you+is+better+for+you" title="Reddit"><img src="http://reddit.com/favicon.ico" width="16" height="16" alt="[Reddit]" /></a>
+<a href="http://del.icio.us/post?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F09%2Fstudy-finds-that-shopping-near-you-is-better-for-you%2F&amp;title=Study+finds+that+shopping+near+you+is+better+for+you" title="Save to del.icio.us" onclick="window.open('http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F09%2Fstudy-finds-that-shopping-near-you-is-better-for-you%2F&amp;title=Study+finds+that+shopping+near+you+is+better+for+you', 'delicious', 'toolbar=no,width=700,height=400'); return false;"><img src="http://del.icio.us/favicon.ico" width="16" height="16" alt="[del.icio.us]" /></a>
+<a href="http://www.facebook.com/share.php?u=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F09%2Fstudy-finds-that-shopping-near-you-is-better-for-you%2F" title="Share on Facebook"><img src="http://www.facebook.com/favicon.ico" width="16" height="16" alt="[Facebook]" /></a>
+<a href="http://technorati.com/faves?add=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F09%2Fstudy-finds-that-shopping-near-you-is-better-for-you%2F" title="Add to my Technorati Favorites"><img src="http://technorati.com/favicon.ico" width="16" height="16" alt="[Technorati]" /></a>
+<a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F09%2Fstudy-finds-that-shopping-near-you-is-better-for-you%2F&amp;title=Study+finds+that+shopping+near+you+is+better+for+you" title="Save to Google Bookmarks"><img src="http://www.google.com/favicon.ico" width="16" height="16" alt="[Google]" /></a>
+<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F09%2Fstudy-finds-that-shopping-near-you-is-better-for-you%2F&amp;title=Study+finds+that+shopping+near+you+is+better+for+you" title="Stumble it!"><img src="http://www.stumbleupon.com/favicon.ico" width="16" height="16" alt="[StumbleUpon]" /></a>
+</span>]]></content:encoded>
+			<wfw:commentRss>http://lebleu.org/blog/2008/12/09/study-finds-that-shopping-near-you-is-better-for-you/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Energy independence and currency sustainability</title>
+		<link>http://lebleu.org/blog/2008/12/04/energy-independence-and-currency-sustainability/</link>
+		<comments>http://lebleu.org/blog/2008/12/04/energy-independence-and-currency-sustainability/#comments</comments>
+		<pubDate>Thu, 04 Dec 2008 15:45:27 +0000</pubDate>
+		<dc:creator>Guillaume</dc:creator>
+		
+		<category><![CDATA[complementarycurrency]]></category>
+
+		<category><![CDATA[socialmoney]]></category>
+
+		<category><![CDATA[currency]]></category>
+
+		<category><![CDATA[sustainability]]></category>
+
+		<category><![CDATA[green]]></category>
+
+		<category><![CDATA[money]]></category>
+
+		<guid isPermaLink="false">http://lebleu.org/blog/2008/12/04/energy-independence-and-currency-sustainability/</guid>
+		<description><![CDATA[Chris Skinner just posted a new post on &#8220;Social Money&#8221; in which he writes about the challenges of online currencies or real-life complementary currencies. I commented at length and making a connection between currency independence and money independence.
+
+Money is fundamentally social. Which is why the social Web can be expected to impact banking/payments much more [...]]]></description>
+			<content:encoded><![CDATA[<p>Chris Skinner just posted a new post on &#8220;<a href="https://www.swiftcommunity.net/blogs/blogdetail.cfm?id=900">Social Money</a>&#8221; in which he writes about the challenges of online currencies or real-life complementary currencies. I commented at length and making a connection between currency independence and money independence.</p>
+<blockquote><p>
+Money is fundamentally social. Which is why the social Web can be expected to impact banking/payments much more than it has so far operationally. I personally view the monetary system we live in today as a sort of AOL of money where one central organization and its affiliates have effectively a monopole on what is money and how it is created. I think that at the time of AOL, people had a difficult time imagining what an open, decentralized and resilient AOL would be, and how much it would force them to transform. Today, in my opinion, we are in the early days of this new decentralized money. We haven&#8217;t figure it&#8217;s version of HTTP, HTML, browser, SSL and DNS yet, that&#8217;s all.</p>
+<p>With regards to runs on communities&#8217; money. I think it makes it very clear that an independent community with an independent currency should seek not just a 0 or positive balance of payments, but a balanced current account. As Paul Volcker (I think) said: &#8220;Trade matters&#8221;. The strength of a currency in other words depend on the resilience on the local economy to outside events. In the real world, free trade ideology and negligence of deficits has already cost some real countries dearly (Iceland) and many other countries including the US are at risk.</p>
+<p>With regards to adoption of community currency, I would argue that it is not just a problem of trust. The success of real-life currency is not because people necessarily trust them. It is primarily because demand for it is created by making it the only to pay for tax debts. One way to create demand for a currency is to have local businesses (i.e. org/people with public reputation) issue it and have community member agrees that the non-profit community service entities get their donations only in this currency.
+</p></blockquote>
+
+<span class="slashdigglicious">
+<a href="http://slashdot.org/bookmark.pl?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F04%2Fenergy-independence-and-currency-sustainability%2F&amp;title=Energy+independence+and+currency+sustainability" title="Slashdot It!"><img src="http://slashdot.org/favicon.ico" height="16" width="16" alt="[Slashdot]" /></a>
+<a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F04%2Fenergy-independence-and-currency-sustainability%2F&amp;title=Energy+independence+and+currency+sustainability" title="Digg This Story"><img src="http://digg.com/favicon.ico" width="16" height="16" alt="[Digg]" /></a>
+<a href="http://reddit.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F04%2Fenergy-independence-and-currency-sustainability%2F&amp;title=Energy+independence+and+currency+sustainability" title="Reddit"><img src="http://reddit.com/favicon.ico" width="16" height="16" alt="[Reddit]" /></a>
+<a href="http://del.icio.us/post?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F04%2Fenergy-independence-and-currency-sustainability%2F&amp;title=Energy+independence+and+currency+sustainability" title="Save to del.icio.us" onclick="window.open('http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F04%2Fenergy-independence-and-currency-sustainability%2F&amp;title=Energy+independence+and+currency+sustainability', 'delicious', 'toolbar=no,width=700,height=400'); return false;"><img src="http://del.icio.us/favicon.ico" width="16" height="16" alt="[del.icio.us]" /></a>
+<a href="http://www.facebook.com/share.php?u=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F04%2Fenergy-independence-and-currency-sustainability%2F" title="Share on Facebook"><img src="http://www.facebook.com/favicon.ico" width="16" height="16" alt="[Facebook]" /></a>
+<a href="http://technorati.com/faves?add=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F04%2Fenergy-independence-and-currency-sustainability%2F" title="Add to my Technorati Favorites"><img src="http://technorati.com/favicon.ico" width="16" height="16" alt="[Technorati]" /></a>
+<a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F04%2Fenergy-independence-and-currency-sustainability%2F&amp;title=Energy+independence+and+currency+sustainability" title="Save to Google Bookmarks"><img src="http://www.google.com/favicon.ico" width="16" height="16" alt="[Google]" /></a>
+<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F04%2Fenergy-independence-and-currency-sustainability%2F&amp;title=Energy+independence+and+currency+sustainability" title="Stumble it!"><img src="http://www.stumbleupon.com/favicon.ico" width="16" height="16" alt="[StumbleUpon]" /></a>
+</span>]]></content:encoded>
+			<wfw:commentRss>http://lebleu.org/blog/2008/12/04/energy-independence-and-currency-sustainability/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>My submitted idea on Change.org</title>
+		<link>http://lebleu.org/blog/2008/12/02/my-submitted-idea-on-changeorg/</link>
+		<comments>http://lebleu.org/blog/2008/12/02/my-submitted-idea-on-changeorg/#comments</comments>
+		<pubDate>Wed, 03 Dec 2008 05:08:33 +0000</pubDate>
+		<dc:creator>Guillaume</dc:creator>
+		
+		<category><![CDATA[idea]]></category>
+
+		<category><![CDATA[change.org]]></category>
+
+		<category><![CDATA[money]]></category>
+
+		<guid isPermaLink="false">http://lebleu.org/blog/2008/12/02/my-submitted-idea-on-changeorg/</guid>
+		<description><![CDATA[Change.org is a movement of citizens inspired by the presidential campaign who are now submitting ideas for how they think the Obama Administration should change America. It&#8217;s called &#8220;Ideas for Change in America.&#8221;
+I&#8217;ve submitted an idea and I&#8217;d appreciate greatly if you read. If you like it, please visit my idea&#8217;s page on Change.org to [...]]]></description>
+			<content:encoded><![CDATA[<p>Change.org is a movement of citizens inspired by the presidential campaign who are now submitting ideas for how they think the Obama Administration should change America. It&#8217;s called &#8220;Ideas for Change in America.&#8221;</p>
+<p>I&#8217;ve submitted an idea and I&#8217;d appreciate greatly if you read. If you like it, please visit <a href="http://www.change.org/ideas/view/establish_a_research_center_on_money">my idea&#8217;s page</a> on Change.org to vote for it.</p>
+<blockquote><p> <strong>Establish a Research Center on Money</strong></p>
+<p>Money is at the center of our economy and fundamentally shapes our relationships as humans and the value system of the society we live in.</p>
+<p>Recent financial, ecological and humanitarian events have increased popular intuition that there is something wrong with our current money system itself, and that policies will have limited impact unless the money itself we use is changed.</p>
+<p>History has shown that money can exist in various shapes and forms. Some grassroots efforts in many communities in the U.S. and outside the U.S. have shown that alternative/complementary community money is a powerful way to increase local wealth, increase social capital and keep economic activity going in times of recessions/depressions. Last, technology advances such as the Internet, open security and collaborative development efforts have made it easy more than ever before to create new forms of electronic money.</p>
+<p>Yet, there is little scientific research, whether theoretical or empirical, available on alternative forms of money, whether based on units of sustainable energy, hours of work of people, online reputation, or commodities.</p>
+<p>A Research Center on Money would fund scientific economic research on alternative/complementary forms of money and how they can benefit our communities from neighborhood to cities to counties and states. It would be a tremendous resource for communities to confidently start using money as a powerful tool for change.</p></blockquote>
+
+<span class="slashdigglicious">
+<a href="http://slashdot.org/bookmark.pl?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F02%2Fmy-submitted-idea-on-changeorg%2F&amp;title=My+submitted+idea+on+Change.org" title="Slashdot It!"><img src="http://slashdot.org/favicon.ico" height="16" width="16" alt="[Slashdot]" /></a>
+<a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F02%2Fmy-submitted-idea-on-changeorg%2F&amp;title=My+submitted+idea+on+Change.org" title="Digg This Story"><img src="http://digg.com/favicon.ico" width="16" height="16" alt="[Digg]" /></a>
+<a href="http://reddit.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F02%2Fmy-submitted-idea-on-changeorg%2F&amp;title=My+submitted+idea+on+Change.org" title="Reddit"><img src="http://reddit.com/favicon.ico" width="16" height="16" alt="[Reddit]" /></a>
+<a href="http://del.icio.us/post?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F02%2Fmy-submitted-idea-on-changeorg%2F&amp;title=My+submitted+idea+on+Change.org" title="Save to del.icio.us" onclick="window.open('http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F02%2Fmy-submitted-idea-on-changeorg%2F&amp;title=My+submitted+idea+on+Change.org', 'delicious', 'toolbar=no,width=700,height=400'); return false;"><img src="http://del.icio.us/favicon.ico" width="16" height="16" alt="[del.icio.us]" /></a>
+<a href="http://www.facebook.com/share.php?u=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F02%2Fmy-submitted-idea-on-changeorg%2F" title="Share on Facebook"><img src="http://www.facebook.com/favicon.ico" width="16" height="16" alt="[Facebook]" /></a>
+<a href="http://technorati.com/faves?add=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F02%2Fmy-submitted-idea-on-changeorg%2F" title="Add to my Technorati Favorites"><img src="http://technorati.com/favicon.ico" width="16" height="16" alt="[Technorati]" /></a>
+<a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F02%2Fmy-submitted-idea-on-changeorg%2F&amp;title=My+submitted+idea+on+Change.org" title="Save to Google Bookmarks"><img src="http://www.google.com/favicon.ico" width="16" height="16" alt="[Google]" /></a>
+<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F12%2F02%2Fmy-submitted-idea-on-changeorg%2F&amp;title=My+submitted+idea+on+Change.org" title="Stumble it!"><img src="http://www.stumbleupon.com/favicon.ico" width="16" height="16" alt="[StumbleUpon]" /></a>
+</span>]]></content:encoded>
+			<wfw:commentRss>http://lebleu.org/blog/2008/12/02/my-submitted-idea-on-changeorg/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>SXSWi session on the Future of Money</title>
+		<link>http://lebleu.org/blog/2008/11/30/sxswi-session-on-the-future-of-money/</link>
+		<comments>http://lebleu.org/blog/2008/11/30/sxswi-session-on-the-future-of-money/#comments</comments>
+		<pubDate>Sun, 30 Nov 2008 19:43:49 +0000</pubDate>
+		<dc:creator>Guillaume</dc:creator>
+		
+		<category><![CDATA[sxswi]]></category>
+
+		<category><![CDATA[SXSW]]></category>
+
+		<category><![CDATA[money]]></category>
+
+		<guid isPermaLink="false">http://lebleu.org/blog/2008/11/30/sxswi-session-on-the-future-of-money/</guid>
+		<description><![CDATA[SXSWi 2009, which takes place in Austin, TX on March 13-17 2009 will feature a panel on Mobile Ubiquitous Computing and the Future of Money. The panel is organized by Kyle Outlaw of Razorfish. Kyle kindly invited me to share my thoughts on this favorite subject of mine, so I look forward to seeing you [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://sxsw.com/">SXSWi 2009</a>, which takes place in Austin, TX on March 13-17 2009 will feature a panel on <a href="http://panelpicker.sxsw.com/ideas/view/1173">Mobile Ubiquitous Computing and the Future of Money</a>. The panel is organized by <a href="http://twitter.com/koutlaw">Kyle Outlaw</a> of <a href="http://www.razorfish.com/">Razorfish</a>. Kyle kindly invited me to share my thoughts on this favorite subject of mine, so I look forward to seeing you there.</p>
+<blockquote><p>
+Nearly half the world&#8217;s population now has a mobile device and more than a thousand cell phones are being activated every minute. The ubiquity of mobile devices will make new services available to billions of people worldwide who have not had access to traditional banks or credit cards. In developing countries such as Kenya - where nearly 80% of the population is excluded from the formal financial sector - text messaging is being used to transfer money to friends and family living in other countries. Moreover, new forms of currency are being created - trading cell phone minutes for goods and services, for example. This panel will explore the challenges and opportunities as banks go mobile, and how the revolution in mobile financial services will change the way we think about money.
+</p></blockquote>
+
+<span class="slashdigglicious">
+<a href="http://slashdot.org/bookmark.pl?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fsxswi-session-on-the-future-of-money%2F&amp;title=SXSWi+session+on+the+Future+of+Money" title="Slashdot It!"><img src="http://slashdot.org/favicon.ico" height="16" width="16" alt="[Slashdot]" /></a>
+<a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fsxswi-session-on-the-future-of-money%2F&amp;title=SXSWi+session+on+the+Future+of+Money" title="Digg This Story"><img src="http://digg.com/favicon.ico" width="16" height="16" alt="[Digg]" /></a>
+<a href="http://reddit.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fsxswi-session-on-the-future-of-money%2F&amp;title=SXSWi+session+on+the+Future+of+Money" title="Reddit"><img src="http://reddit.com/favicon.ico" width="16" height="16" alt="[Reddit]" /></a>
+<a href="http://del.icio.us/post?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fsxswi-session-on-the-future-of-money%2F&amp;title=SXSWi+session+on+the+Future+of+Money" title="Save to del.icio.us" onclick="window.open('http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fsxswi-session-on-the-future-of-money%2F&amp;title=SXSWi+session+on+the+Future+of+Money', 'delicious', 'toolbar=no,width=700,height=400'); return false;"><img src="http://del.icio.us/favicon.ico" width="16" height="16" alt="[del.icio.us]" /></a>
+<a href="http://www.facebook.com/share.php?u=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fsxswi-session-on-the-future-of-money%2F" title="Share on Facebook"><img src="http://www.facebook.com/favicon.ico" width="16" height="16" alt="[Facebook]" /></a>
+<a href="http://technorati.com/faves?add=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fsxswi-session-on-the-future-of-money%2F" title="Add to my Technorati Favorites"><img src="http://technorati.com/favicon.ico" width="16" height="16" alt="[Technorati]" /></a>
+<a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fsxswi-session-on-the-future-of-money%2F&amp;title=SXSWi+session+on+the+Future+of+Money" title="Save to Google Bookmarks"><img src="http://www.google.com/favicon.ico" width="16" height="16" alt="[Google]" /></a>
+<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fsxswi-session-on-the-future-of-money%2F&amp;title=SXSWi+session+on+the+Future+of+Money" title="Stumble it!"><img src="http://www.stumbleupon.com/favicon.ico" width="16" height="16" alt="[StumbleUpon]" /></a>
+</span>]]></content:encoded>
+			<wfw:commentRss>http://lebleu.org/blog/2008/11/30/sxswi-session-on-the-future-of-money/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>BarCamp Bank San Francisco 2 coming in 2009</title>
+		<link>http://lebleu.org/blog/2008/11/30/barcamp-bank-san-francisco-2-coming-in-2009/</link>
+		<comments>http://lebleu.org/blog/2008/11/30/barcamp-bank-san-francisco-2-coming-in-2009/#comments</comments>
+		<pubDate>Sun, 30 Nov 2008 19:16:46 +0000</pubDate>
+		<dc:creator>Guillaume</dc:creator>
+		
+		<category><![CDATA[barcampbanksf2]]></category>
+
+		<category><![CDATA[barcampbanksf]]></category>
+
+		<category><![CDATA[barcampbank]]></category>
+
+		<guid isPermaLink="false">http://lebleu.org/blog/2008/11/30/barcamp-bank-san-francisco-2-coming-in-2009/</guid>
+		<description><![CDATA[
+The 2nd edition BarCampBank San Francisco will take place on Saturday April 25 and April 26 2009 on Treasure Island.
+ BarCampBankSanFrancisco (BCBSF) is like a day long version of going out to lunch with a bunch of really smart people who share your passion for finance and innovation.
+It&#8217;s designed to foster discussions on the future of [...]]]></description>
+			<content:encoded><![CDATA[<p><img src="http://images.eventbrite.com/logos/222695087.png" onmouseout="undefined" onmouseover="undefined" title="undefined" alt="BarCampBank logo" height="94" width="377" /></p>
+<p>The 2nd edition BarCampBank San Francisco will take place on Saturday April 25 and April 26 2009 on Treasure Island.</p>
+<blockquote><p> BarCampBankSanFrancisco (BCBSF) is like a day long version of going out to lunch with a bunch of really smart people who share your passion for finance and innovation.</p></blockquote>
+<blockquote><p>It&#8217;s designed to foster discussions on the future of financial services, particularly related to banking.  The program is informal and the sessions are created the morning of the event, based on what participants want to discuss.  This helps keep the agenda relevant and also allows people to more easily connect with those who have similar interests.</p></blockquote>
+<blockquote><p>There will be folks attending from startups, financial services companies and the media.</p></blockquote>
+<p>You can register to BarCampBankSF2 <a href="http://bcbsf2.eventbrite.com/">here</a>.</p>
+<p>Here are some <a href="http://flickr.com/photos/tags/barcampbanksf/">pictures of the first BarCampBankSF</a>.</p>
+
+<span class="slashdigglicious">
+<a href="http://slashdot.org/bookmark.pl?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fbarcamp-bank-san-francisco-2-coming-in-2009%2F&amp;title=BarCamp+Bank+San+Francisco+2+coming+in+2009" title="Slashdot It!"><img src="http://slashdot.org/favicon.ico" height="16" width="16" alt="[Slashdot]" /></a>
+<a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fbarcamp-bank-san-francisco-2-coming-in-2009%2F&amp;title=BarCamp+Bank+San+Francisco+2+coming+in+2009" title="Digg This Story"><img src="http://digg.com/favicon.ico" width="16" height="16" alt="[Digg]" /></a>
+<a href="http://reddit.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fbarcamp-bank-san-francisco-2-coming-in-2009%2F&amp;title=BarCamp+Bank+San+Francisco+2+coming+in+2009" title="Reddit"><img src="http://reddit.com/favicon.ico" width="16" height="16" alt="[Reddit]" /></a>
+<a href="http://del.icio.us/post?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fbarcamp-bank-san-francisco-2-coming-in-2009%2F&amp;title=BarCamp+Bank+San+Francisco+2+coming+in+2009" title="Save to del.icio.us" onclick="window.open('http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fbarcamp-bank-san-francisco-2-coming-in-2009%2F&amp;title=BarCamp+Bank+San+Francisco+2+coming+in+2009', 'delicious', 'toolbar=no,width=700,height=400'); return false;"><img src="http://del.icio.us/favicon.ico" width="16" height="16" alt="[del.icio.us]" /></a>
+<a href="http://www.facebook.com/share.php?u=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fbarcamp-bank-san-francisco-2-coming-in-2009%2F" title="Share on Facebook"><img src="http://www.facebook.com/favicon.ico" width="16" height="16" alt="[Facebook]" /></a>
+<a href="http://technorati.com/faves?add=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fbarcamp-bank-san-francisco-2-coming-in-2009%2F" title="Add to my Technorati Favorites"><img src="http://technorati.com/favicon.ico" width="16" height="16" alt="[Technorati]" /></a>
+<a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fbarcamp-bank-san-francisco-2-coming-in-2009%2F&amp;title=BarCamp+Bank+San+Francisco+2+coming+in+2009" title="Save to Google Bookmarks"><img src="http://www.google.com/favicon.ico" width="16" height="16" alt="[Google]" /></a>
+<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F30%2Fbarcamp-bank-san-francisco-2-coming-in-2009%2F&amp;title=BarCamp+Bank+San+Francisco+2+coming+in+2009" title="Stumble it!"><img src="http://www.stumbleupon.com/favicon.ico" width="16" height="16" alt="[StumbleUpon]" /></a>
+</span>]]></content:encoded>
+			<wfw:commentRss>http://lebleu.org/blog/2008/11/30/barcamp-bank-san-francisco-2-coming-in-2009/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>The social Web as financial regulatory framework</title>
+		<link>http://lebleu.org/blog/2008/11/29/the-social-web-as-financial-regulatory-framework/</link>
+		<comments>http://lebleu.org/blog/2008/11/29/the-social-web-as-financial-regulatory-framework/#comments</comments>
+		<pubDate>Sun, 30 Nov 2008 02:31:04 +0000</pubDate>
+		<dc:creator>Guillaume</dc:creator>
+		
+		<category><![CDATA[regulation]]></category>
+
+		<category><![CDATA[p2plending]]></category>
+
+		<category><![CDATA[prosper]]></category>
+
+		<guid isPermaLink="false">http://lebleu.org/blog/2008/11/29/the-social-web-as-financial-regulatory-framework/</guid>
+		<description><![CDATA[Recently the SEC sent a cease and desist order to Prosper.com, an online person-to-person lending marketplace. Although they are not the first, and such an order does not mean they have to terminate their service, I have to agree with Jim Bruene:
+ I find it a bit ironic that a $100-million self-regulating and relatively transparent marketplace receives [...]]]></description>
+			<content:encoded><![CDATA[<p>Recently the SEC sent <a href="http://www.docstoc.com/docs/2776149/SEC-Cease-And-Desist-Order-To-Prosper">a cease and desist order to Prosper.com</a>, an online person-to-person lending marketplace. Although they are not the first, and such an order does not mean they have to terminate their service, I have to agree with <a href="http://feeds.feedburner.com/~r/netbanker/~3/466583636/sec_shuts_loanio_down.html">Jim Bruene</a>:</p>
+<blockquote><p> I find it a bit ironic that a $100-million self-regulating and relatively transparent marketplace receives heavy-handed treatment while multi-trillion dollar financial products grew relatively unchecked in recent years.</p></blockquote>
+<p>What&#8217;s interesting to me is to think whether a transparent Web-based community of investors can be a better mechanism to protect investors from fraudulent activities than an external central authority staffed with a limited number of people who are can&#8217;t be up-to-date on all the latest developments in financial innovation, in this case, direct person-to-person lending.</p>
+<p>If you know that most of the money we use is the credit extended to us by banks, this idea may have bigger consequences: one might wonder if a Web-based decentralized monetary system where creditworthiness is determined in part or entirely by parties to the transaction themselves is not a better mechanism for monetary mass optimization than a central banking system.</p>
+
+<span class="slashdigglicious">
+<a href="http://slashdot.org/bookmark.pl?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fthe-social-web-as-financial-regulatory-framework%2F&amp;title=The+social+Web+as+financial+regulatory+framework" title="Slashdot It!"><img src="http://slashdot.org/favicon.ico" height="16" width="16" alt="[Slashdot]" /></a>
+<a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fthe-social-web-as-financial-regulatory-framework%2F&amp;title=The+social+Web+as+financial+regulatory+framework" title="Digg This Story"><img src="http://digg.com/favicon.ico" width="16" height="16" alt="[Digg]" /></a>
+<a href="http://reddit.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fthe-social-web-as-financial-regulatory-framework%2F&amp;title=The+social+Web+as+financial+regulatory+framework" title="Reddit"><img src="http://reddit.com/favicon.ico" width="16" height="16" alt="[Reddit]" /></a>
+<a href="http://del.icio.us/post?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fthe-social-web-as-financial-regulatory-framework%2F&amp;title=The+social+Web+as+financial+regulatory+framework" title="Save to del.icio.us" onclick="window.open('http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fthe-social-web-as-financial-regulatory-framework%2F&amp;title=The+social+Web+as+financial+regulatory+framework', 'delicious', 'toolbar=no,width=700,height=400'); return false;"><img src="http://del.icio.us/favicon.ico" width="16" height="16" alt="[del.icio.us]" /></a>
+<a href="http://www.facebook.com/share.php?u=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fthe-social-web-as-financial-regulatory-framework%2F" title="Share on Facebook"><img src="http://www.facebook.com/favicon.ico" width="16" height="16" alt="[Facebook]" /></a>
+<a href="http://technorati.com/faves?add=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fthe-social-web-as-financial-regulatory-framework%2F" title="Add to my Technorati Favorites"><img src="http://technorati.com/favicon.ico" width="16" height="16" alt="[Technorati]" /></a>
+<a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fthe-social-web-as-financial-regulatory-framework%2F&amp;title=The+social+Web+as+financial+regulatory+framework" title="Save to Google Bookmarks"><img src="http://www.google.com/favicon.ico" width="16" height="16" alt="[Google]" /></a>
+<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fthe-social-web-as-financial-regulatory-framework%2F&amp;title=The+social+Web+as+financial+regulatory+framework" title="Stumble it!"><img src="http://www.stumbleupon.com/favicon.ico" width="16" height="16" alt="[StumbleUpon]" /></a>
+</span>]]></content:encoded>
+			<wfw:commentRss>http://lebleu.org/blog/2008/11/29/the-social-web-as-financial-regulatory-framework/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Change.org ideas relating to changing money</title>
+		<link>http://lebleu.org/blog/2008/11/29/changeorg-ideas-relating-to-changing-money/</link>
+		<comments>http://lebleu.org/blog/2008/11/29/changeorg-ideas-relating-to-changing-money/#comments</comments>
+		<pubDate>Sat, 29 Nov 2008 21:11:08 +0000</pubDate>
+		<dc:creator>Guillaume</dc:creator>
+		
+		<category><![CDATA[change.org]]></category>
+
+		<category><![CDATA[money]]></category>
+
+		<guid isPermaLink="false">http://lebleu.org/blog/2008/11/29/changeorg-ideas-relating-to-changing-money/</guid>
+		<description><![CDATA[I&#8217;ve compiled a list of Change.org ideas that relate to changing how our money system works:
+
+Slow Money (most voted for so far): This is not exactly about changing the money but focusing stimulus efforts on local economies and businesses has the biggest economic impact. My comment: Slow Money should be called &#8220;Near Money&#8221; and it should be powered by [...]]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve compiled a list of <a href="http://www.change.org">Change.org</a> <a href="http://www.change.org/ideas">ideas</a> that relate to changing how our money system works:
+<ul>
+<li><a href="http://www.change.org/ideas/view/slow_money">Slow Money</a> (most voted for so far): This is not exactly about changing the money but focusing stimulus efforts on local economies and businesses has the biggest economic impact. My comment: Slow Money should be called &#8220;Near Money&#8221; and it should be powered by local community currencies.</li>
+<li><a href="http://www.change.org/ideas/view/ideas_on_the_goal_of_abolishing_money_and_its_practicability">Abolishing Money</a> by &#8220;pan voluntarism&#8221;. My comment: idealistic/unpractical.</li>
+<li><a href="http://www.change.org/ideas/view/convert_to_debt-free_money">Convert to debt-free money</a>: This suggests essentially that the government does not borrow money from banks, but prints it to spend it on project of public utility. My comment: Rather than debt-free money, what I think is meant is interest-free money. Money is debt because it is the unexecuted part of a transaction. Nothing wrong with that. What&#8217;s wrong is for a 3rd party to charge money for money, especially in case where there is social capital. Using a 3rd party for trust may indeed lead to social fabric destruction and wealth extraction.</li>
+<li><a href="http://www.change.org/ideas/view/replace_our_current_monetary_system_with_a_resource_based_economy">Replace monetary system with resource-based economy</a>: The idea is not very clear but it consists in ensuring that the currency can be redeemed for actual resources like corn or gold. Quick comment: Not practical since there is so much more money than raw resources and also because this would put control over money creation in the ends of raw resources producers, which is probably not acceptable.</li>
+<li><a href="http://www.change.org/ideas/view/do_away_with_the_federal_reserve_system">Do away with the Federal Reserve system</a> and <a href="http://www.change.org/ideas/view/abolish_the_federal_reserve_system">Abolish the Federal Reserve</a>. No comment on these ones.</li>
+</ul>
+<p>I haven&#8217;t seen anything related to asset-based finance and business-to-business trading systems or community currencies.</p>
+
+<span class="slashdigglicious">
+<a href="http://slashdot.org/bookmark.pl?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fchangeorg-ideas-relating-to-changing-money%2F&amp;title=Change.org+ideas+relating+to+changing+money" title="Slashdot It!"><img src="http://slashdot.org/favicon.ico" height="16" width="16" alt="[Slashdot]" /></a>
+<a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fchangeorg-ideas-relating-to-changing-money%2F&amp;title=Change.org+ideas+relating+to+changing+money" title="Digg This Story"><img src="http://digg.com/favicon.ico" width="16" height="16" alt="[Digg]" /></a>
+<a href="http://reddit.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fchangeorg-ideas-relating-to-changing-money%2F&amp;title=Change.org+ideas+relating+to+changing+money" title="Reddit"><img src="http://reddit.com/favicon.ico" width="16" height="16" alt="[Reddit]" /></a>
+<a href="http://del.icio.us/post?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fchangeorg-ideas-relating-to-changing-money%2F&amp;title=Change.org+ideas+relating+to+changing+money" title="Save to del.icio.us" onclick="window.open('http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fchangeorg-ideas-relating-to-changing-money%2F&amp;title=Change.org+ideas+relating+to+changing+money', 'delicious', 'toolbar=no,width=700,height=400'); return false;"><img src="http://del.icio.us/favicon.ico" width="16" height="16" alt="[del.icio.us]" /></a>
+<a href="http://www.facebook.com/share.php?u=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fchangeorg-ideas-relating-to-changing-money%2F" title="Share on Facebook"><img src="http://www.facebook.com/favicon.ico" width="16" height="16" alt="[Facebook]" /></a>
+<a href="http://technorati.com/faves?add=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fchangeorg-ideas-relating-to-changing-money%2F" title="Add to my Technorati Favorites"><img src="http://technorati.com/favicon.ico" width="16" height="16" alt="[Technorati]" /></a>
+<a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fchangeorg-ideas-relating-to-changing-money%2F&amp;title=Change.org+ideas+relating+to+changing+money" title="Save to Google Bookmarks"><img src="http://www.google.com/favicon.ico" width="16" height="16" alt="[Google]" /></a>
+<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F29%2Fchangeorg-ideas-relating-to-changing-money%2F&amp;title=Change.org+ideas+relating+to+changing+money" title="Stumble it!"><img src="http://www.stumbleupon.com/favicon.ico" width="16" height="16" alt="[StumbleUpon]" /></a>
+</span>]]></content:encoded>
+			<wfw:commentRss>http://lebleu.org/blog/2008/11/29/changeorg-ideas-relating-to-changing-money/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Money system as architecture and other insightful metaphors</title>
+		<link>http://lebleu.org/blog/2008/11/23/money-system-as-architecture-and-other-insightful-metaphors/</link>
+		<comments>http://lebleu.org/blog/2008/11/23/money-system-as-architecture-and-other-insightful-metaphors/#comments</comments>
+		<pubDate>Sun, 23 Nov 2008 23:44:49 +0000</pubDate>
+		<dc:creator>Guillaume</dc:creator>
+		
+		<category><![CDATA[socialmoney]]></category>
+
+		<category><![CDATA[architecture]]></category>
+
+		<category><![CDATA[money]]></category>
+
+		<category><![CDATA[Economy]]></category>
+
+		<guid isPermaLink="false">http://lebleu.org/blog/2008/11/23/money-system-as-architecture-and-other-insightful-metaphors/</guid>
+		<description><![CDATA[
+In April 2008, Jean-François Noubel gave a talk on the Future of Money in Paris. If you understand French, are not familiar with money and want to sit and relax and learn about it, I highly recommend watching this video. I hope this will be eye-opening for you.
+For non-French speakers and those already familiar with [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://lebleu.org/blog/2008/11/23/money-system-as-architecture-and-other-insightful-metaphors/video-recording-of-j-f-noubel-talk-on-the-future-of-money/" rel="attachment wp-att-144" title="Video recording of J-F Noubel talk on the Future of Money"><img src="http://lebleu.org/blog/wp-content/uploads/2008/11/picture-1.png" alt="Video recording of J-F Noubel talk on the Future of Money" /></a></p>
+<p>In April 2008, <a href="http://www.noubel.com">Jean-François Noubel</a> gave a <a href="http://thetransitioner.com/Media/080417_Le_futur_de_l%27argent_-_conf%C3%A9rence_%C3%A0_l%27Entrep%C3%B4t">talk on the Future of Money</a> in Paris. If you understand French, are not familiar with money and want to sit and relax and learn about it, I highly recommend watching this video. I hope this will be eye-opening for you.</p>
+<p>For non-French speakers and those already familiar with money, I want to share some of my notes as I think J-F Noubel found excellent metaphors to explain complex concepts:</p>
+<ul>
+<li><strong>Money is an invisible architecture</strong>. An architecture is something human designed that defines the rules on how the components of a system relate to accomplish the system&#8217;s purpose. Inevitably in software development, the architecture of the system influences how software developers contribute to the system, leading them to good and poor division of work and determining speed of development, maintenance and execution. A monetary system is very similar to a software architecture in the sense that <strong>a monetary system is fundamentally an information system</strong>, which relate to establishing value and tracking exchanges, with very precise rules defined and refined over time by humans. It is invisible because we&#8217;ve got so familiar with it that it&#8217;s like air we breathe.</li>
+<li><strong>Our current monetary system is like the Monopoly game: there are only losers. </strong>Just like the game of Monopoly and many natural phenomenon, our monetary system obeys the <a href="http://en.wikipedia.org/wiki/Pareto_principle">Pareto law</a> of self-aggregation: 20% of the population own 80% of the wealth, 250 individuals own 60% of the World&#8217;s wealth. This is because money attracts money: the more you have it, the easier it is to make more. <strong>Just like in Monopoly the winner takes it all, and as a result cannot play with the other players who lost, so he lost as well</strong>. Just like we could change the rules of Monopoly to make it impossible for a winner to take it all, we could change the rules of our monetary system to make sure distribution of wealth is more equal.</li>
+<li><strong>Money is like water, and the money system is like an irrigation system in a garden</strong>. You don&#8217;t want your water to end up in one spot, but distribute it equitably in the way that maximizes the fruits, beauty, diversity and long-term health of your garden. This metaphor is particularly relevant as &#8220;currency&#8221; comes from current, so etymologically money is the thing that flows between us.</li>
+<li><strong>Money influences our culture (society) just like water influences our culture (garden)</strong>. Our current monetary system forces us into competition and extreme optimization of processes making our overall society less resilient to shocks. No only do we depend more than ever on each other, but as we optimize we end up in a monoculture. It&#8217;s like having one giant field of genetically modified corn, instead of a lot of small fields, each with a different variety. Not optimized, but much more resilient to a pandemic.</li>
+</ul>
+<p>Here is a <a href="http://www.evolutionarynexus.org/node/85">link</a> I found where some of these metaphors are also discussed.</p>
+
+<span class="slashdigglicious">
+<a href="http://slashdot.org/bookmark.pl?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F23%2Fmoney-system-as-architecture-and-other-insightful-metaphors%2F&amp;title=Money+system+as+architecture+and+other+insightful+metaphors" title="Slashdot It!"><img src="http://slashdot.org/favicon.ico" height="16" width="16" alt="[Slashdot]" /></a>
+<a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F23%2Fmoney-system-as-architecture-and-other-insightful-metaphors%2F&amp;title=Money+system+as+architecture+and+other+insightful+metaphors" title="Digg This Story"><img src="http://digg.com/favicon.ico" width="16" height="16" alt="[Digg]" /></a>
+<a href="http://reddit.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F23%2Fmoney-system-as-architecture-and-other-insightful-metaphors%2F&amp;title=Money+system+as+architecture+and+other+insightful+metaphors" title="Reddit"><img src="http://reddit.com/favicon.ico" width="16" height="16" alt="[Reddit]" /></a>
+<a href="http://del.icio.us/post?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F23%2Fmoney-system-as-architecture-and-other-insightful-metaphors%2F&amp;title=Money+system+as+architecture+and+other+insightful+metaphors" title="Save to del.icio.us" onclick="window.open('http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F23%2Fmoney-system-as-architecture-and-other-insightful-metaphors%2F&amp;title=Money+system+as+architecture+and+other+insightful+metaphors', 'delicious', 'toolbar=no,width=700,height=400'); return false;"><img src="http://del.icio.us/favicon.ico" width="16" height="16" alt="[del.icio.us]" /></a>
+<a href="http://www.facebook.com/share.php?u=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F23%2Fmoney-system-as-architecture-and-other-insightful-metaphors%2F" title="Share on Facebook"><img src="http://www.facebook.com/favicon.ico" width="16" height="16" alt="[Facebook]" /></a>
+<a href="http://technorati.com/faves?add=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F23%2Fmoney-system-as-architecture-and-other-insightful-metaphors%2F" title="Add to my Technorati Favorites"><img src="http://technorati.com/favicon.ico" width="16" height="16" alt="[Technorati]" /></a>
+<a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F23%2Fmoney-system-as-architecture-and-other-insightful-metaphors%2F&amp;title=Money+system+as+architecture+and+other+insightful+metaphors" title="Save to Google Bookmarks"><img src="http://www.google.com/favicon.ico" width="16" height="16" alt="[Google]" /></a>
+<a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Flebleu.org%2Fblog%2F2008%2F11%2F23%2Fmoney-system-as-architecture-and-other-insightful-metaphors%2F&amp;title=Money+system+as+architecture+and+other+insightful+metaphors" title="Stumble it!"><img src="http://www.stumbleupon.com/favicon.ico" width="16" height="16" alt="[StumbleUpon]" /></a>
+</span>]]></content:encoded>
+			<wfw:commentRss>http://lebleu.org/blog/2008/11/23/money-system-as-architecture-and-other-insightful-metaphors/feed/</wfw:commentRss>
+		</item>
+	</channel>
+</rss>

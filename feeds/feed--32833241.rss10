@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:admin="http://webns.net/mvcb/"
+>
+
+<channel rdf:about="http://annocpan.org/recent_dists.rss">
+<title>Recent CPAN distributions</title>
+<link>http://annocpan.org/recent_dists.rss</link>
+<description>Recent CPAN distributions</description>
+<dc:language>en-us</dc:language>
+<dc:rights>Redistributable under the same terms as Perl itself</dc:rights>
+<dc:date>2008-12-12T17:09:14+00:00</dc:date>
+<dc:publisher>itub@cpan.org</dc:publisher>
+<dc:creator>itub@cpan.org</dc:creator>
+<dc:subject>Perl</dc:subject>
+<syn:updatePeriod>daily</syn:updatePeriod>
+<syn:updateFrequency>4</syn:updateFrequency>
+<syn:updateBase>1901-01-01T00:00+00:00</syn:updateBase>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://annocpan.org/dist/Crypt-OpenSSL-RC4" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Squatting-On-HTTP-Engine" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Advent-Bundles" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/App-ZofCMS-Plugin-YouTube" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/FreeBSD-Pkgs-FindUpdates" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Catalyst-Plugin-Session-Store-BerkeleyDB" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Mac-Finder-DSStore" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Crypt-RC4-XS" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Rose-DBx-Object-Cached-FastMmap" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Text-Hyphen-RU" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Email-Template" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/HTML-Revelation" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Omega-DP41-Data-Current" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Language-MinCaml" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Email-Sender" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/HTML-FormatText-WithLinks-AndTables" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Geo-WebService-Elevation-USGS" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/NetApp" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Text-EditTranscript" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/ZConf-Cron" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Term-Sprog" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Rubyish" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Bio-Graphics" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Text-CSV-Slurp" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Unix-Uptime" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Net-fonolo" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Module-Version-Compare" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Tk-Airports" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Linux-DVB-DVBT" />
+  <rdf:li rdf:resource="http://annocpan.org/dist/Proc-Safetynet" />
+ </rdf:Seq>
+</items>
+</channel>
+
+<item rdf:about="http://annocpan.org/dist/Crypt-OpenSSL-RC4">
+<title>Crypt-OpenSSL-RC4</title>
+<link>http://annocpan.org/dist/Crypt-OpenSSL-RC4</link>
+<description>&lt;ul>
+&lt;li>Crypt::OpenSSL::RC4 - RC4 library based on OpenSSL&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>TOKUHIROM</dc:creator>
+<dc:date>2008-12-12T04:06:28+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Squatting-On-HTTP-Engine">
+<title>Squatting-On-HTTP-Engine</title>
+<link>http://annocpan.org/dist/Squatting-On-HTTP-Engine</link>
+<description>&lt;ul>
+&lt;li>Squatting::On::HTTP::Engine - run Squatting apps on top of HTTP::Engine&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>BEPPU</dc:creator>
+<dc:date>2008-12-12T02:20:07+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Advent-Bundles">
+<title>Advent-Bundles</title>
+<link>http://annocpan.org/dist/Advent-Bundles</link>
+<description>&lt;ul>
+&lt;li>Bundle::Advent::Year2007 - Modules of the 2007 Perl Advent Calendar&lt;/li>
+&lt;li>Bundle::Advent::Year2002 - Modules of the 2002 Perl Advent Calendar&lt;/li>
+&lt;li>Bundle::Advent::Year2004 - Modules of the 2004 Perl Advent Calendar&lt;/li>
+&lt;li>Bundle::Advent::All - Modules of all years of the Perl Advent Calendar&lt;/li>
+&lt;li>Bundle::Advent::Year2001 - Modules of the 2001 Perl Advent Calendar&lt;/li>
+&lt;li>Bundle::Advent::Year2005 - Modules of the 2005 Perl Advent Calendar&lt;/li>
+&lt;li>Bundle::Advent::Year2006 - Modules of the 2006 Perl Advent Calendar&lt;/li>
+&lt;li>Bundle::Advent::Year2003 - Modules of the 2003 Perl Advent Calendar&lt;/li>
+&lt;li>Bundle::Advent::Year2000 - Modules of the 2000 Perl Advent Calendar&lt;/li>
+&lt;li>Advent::Bundles - Collection of year-by-year Bundles of the Perl Advent Calendar modules&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>DAVIDRW</dc:creator>
+<dc:date>2008-12-12T00:32:58+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/App-ZofCMS-Plugin-YouTube">
+<title>App-ZofCMS-Plugin-YouTube</title>
+<link>http://annocpan.org/dist/App-ZofCMS-Plugin-YouTube</link>
+<description>&lt;ul>
+&lt;li>App::ZofCMS::Plugin::YouTube - CRUD-type plugin to manage YouTube videos&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>ZOFFIX</dc:creator>
+<dc:date>2008-12-11T22:46:22+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/FreeBSD-Pkgs-FindUpdates">
+<title>FreeBSD-Pkgs-FindUpdates</title>
+<link>http://annocpan.org/dist/FreeBSD-Pkgs-FindUpdates</link>
+<description>&lt;ul>
+&lt;li>FreeBSD::Pkgs::FindUpdates - Finds updates for FreeBSD pkgs by checking the ports index.&lt;/li>
+&lt;li>pkg_findupdates - Finds updated packages.&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>VVELOX</dc:creator>
+<dc:date>2008-12-11T22:24:08+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Catalyst-Plugin-Session-Store-BerkeleyDB">
+<title>Catalyst-Plugin-Session-Store-BerkeleyDB</title>
+<link>http://annocpan.org/dist/Catalyst-Plugin-Session-Store-BerkeleyDB</link>
+<description>&lt;ul>
+&lt;li>Catalyst::Plugin::Session::Store::BerkeleyDB - store sessions in a berkeleydb&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>JROCKWAY</dc:creator>
+<dc:date>2008-12-11T10:35:16+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Mac-Finder-DSStore">
+<title>Mac-Finder-DSStore</title>
+<link>http://annocpan.org/dist/Mac-Finder-DSStore</link>
+<description>&lt;ul>
+&lt;li>Mac::Finder::DSStore::BuddyAllocator - Allocate space within a file&lt;/li>
+&lt;li>Mac::Finder::DSStoreFormat - &lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>WIML</dc:creator>
+<dc:date>2008-12-11T10:28:41+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Crypt-RC4-XS">
+<title>Crypt-RC4-XS</title>
+<link>http://annocpan.org/dist/Crypt-RC4-XS</link>
+<description>&lt;ul>
+&lt;li>Crypt::RC4::XS - Perl implementation of the RC4 encryption algorithm&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>OYAMA</dc:creator>
+<dc:date>2008-12-11T07:54:53+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Rose-DBx-Object-Cached-FastMmap">
+<title>Rose-DBx-Object-Cached-FastMmap</title>
+<link>http://annocpan.org/dist/Rose-DBx-Object-Cached-FastMmap</link>
+<description>&lt;ul>
+&lt;li>Rose::DBx::Object::Cached::FastMmap - Rose::DB::Object Cache Cache::FastMmap&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>KMCGRATH</dc:creator>
+<dc:date>2008-12-11T01:08:46+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Text-Hyphen-RU">
+<title>Text-Hyphen-RU</title>
+<link>http://annocpan.org/dist/Text-Hyphen-RU</link>
+<description>&lt;ul>
+&lt;li>Text::Hyphen::RU - determine positions for hyphens inside russian words&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>KAPPA</dc:creator>
+<dc:date>2008-12-11T01:03:25+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Email-Template">
+<title>Email-Template</title>
+<link>http://annocpan.org/dist/Email-Template</link>
+<description>&lt;ul>
+&lt;li>Email::Template - Send "multipart/alternative" (text &amp; html) email from a Template&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>SFRYER</dc:creator>
+<dc:date>2008-12-11T00:14:42+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/HTML-Revelation">
+<title>HTML-Revelation</title>
+<link>http://annocpan.org/dist/HTML-Revelation</link>
+<description>&lt;ul>
+&lt;li>HTML::Revelation - Reveal HTML document structure in a myriad of colors&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>RSAVAGE</dc:creator>
+<dc:date>2008-12-10T22:41:11+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Omega-DP41-Data-Current">
+<title>Omega-DP41-Data-Current</title>
+<link>http://annocpan.org/dist/Omega-DP41-Data-Current</link>
+<description>&lt;ul>
+&lt;li>DP41::Data::Current - Module for retrieving data from an Omega brand Thermacouple.&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>KERR</dc:creator>
+<dc:date>2008-12-10T20:33:52+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Language-MinCaml">
+<title>Language-MinCaml</title>
+<link>http://annocpan.org/dist/Language-MinCaml</link>
+<description>&lt;ul>
+&lt;li>Language::MinCaml - MinCaml Interpreter&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>NEJIGANE</dc:creator>
+<dc:date>2008-12-10T18:03:17+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Email-Sender">
+<title>Email-Sender</title>
+<link>http://annocpan.org/dist/Email-Sender</link>
+<description>&lt;ul>
+&lt;li>Email::Sender::Failure::Multi - &lt;/li>
+&lt;li>Email::Sender::Failure::Permanent - a permanent delivery failure&lt;/li>
+&lt;li>Email::Sender::Failure::Permanent - a temporary delivery failure&lt;/li>
+&lt;li>Email::Sender::Failure - a report of failure from an email sending transport&lt;/li>
+&lt;li>Email::Sender::Simple - send mail simply (not yet implemented)&lt;/li>
+&lt;li>Email::Sender::Success::Partial - a report of partial success when delivering&lt;/li>
+&lt;li>Email::Sender::Transport::DevNull - happily throw away your mail&lt;/li>
+&lt;li>Email::Sender::Transport::Failable - a wrapper to makes things fail predictably&lt;/li>
+&lt;li>Email::Sender::Transport::Maildir - deliver mail to a maildir on disk&lt;/li>
+&lt;li>Email::Sender::Transport::Mbox - deliver mail to an mbox on disk&lt;/li>
+&lt;li>Email::Sender::Transport::Print - print email to a filehandle (like stdout)&lt;/li>
+&lt;li>Email::Sender::Transport::SMTP::Persistent - an SMTP client that stays online&lt;/li>
+&lt;li>Email::Sender::Transport::SMTP - send email over SMTP&lt;/li>
+&lt;li>Email::Sender::Transport::SQLite - deliver mail to an sqlite db for testing&lt;/li>
+&lt;li>Email::Sender::Transport::Sendmail - send mail via sendmail(1)&lt;/li>
+&lt;li>Email::Sender::Transport::Test - delivery mail in memory for testing&lt;/li>
+&lt;li>Email::Sender::Transport::Wrapper - a mailer to wrap a mailer for mailing mail&lt;/li>
+&lt;li>Email::Sender::Transport - &lt;/li>
+&lt;li>Email::Sender::Util - random stuff that makes Email::Sender go&lt;/li>
+&lt;li>Email::Sender - a library for sending email&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>RJBS</dc:creator>
+<dc:date>2008-12-10T16:40:46+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/HTML-FormatText-WithLinks-AndTables">
+<title>HTML-FormatText-WithLinks-AndTables</title>
+<link>http://annocpan.org/dist/HTML-FormatText-WithLinks-AndTables</link>
+<description>&lt;ul>
+&lt;li>HTML::FormatText::WithLinks::AndTables - Converts HTML to Text with tables in tact&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>SFRYER</dc:creator>
+<dc:date>2008-12-10T13:31:11+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Geo-WebService-Elevation-USGS">
+<title>Geo-WebService-Elevation-USGS</title>
+<link>http://annocpan.org/dist/Geo-WebService-Elevation-USGS</link>
+<description>&lt;ul>
+&lt;li>Geo::WebService::Elevation::USGS - Elevation queries against USGS web services.&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>WYANT</dc:creator>
+<dc:date>2008-12-10T02:21:35+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/NetApp">
+<title>NetApp</title>
+<link>http://annocpan.org/dist/NetApp</link>
+<description>&lt;ul>
+&lt;li>NetApp::Aggregate::Plex - OO Class for representing NetApp plexes&lt;/li>
+&lt;li>NetApp::Aggregate::Raidgroup - OO Class for representing NetApp raidgroups&lt;/li>
+&lt;li>NetApp::Snapshot::Delta - OO class which represents a single snapshot delta&lt;/li>
+&lt;li>NetApp::Snapshot::Schedule - OO class which represents a snapshot schedule&lt;/li>
+&lt;li>NetApp::Filer::Export - OO Class for representing NFS exports&lt;/li>
+&lt;li>NetApp::Filer::License - OO Class for representing NetApp Filer licenses&lt;/li>
+&lt;li>NetApp::Filer::Version - OO Class for representing NetApp Filer versions&lt;/li>
+&lt;li>NetApp::Filer::Options - OO Class for representing NetApp Filer options&lt;/li>
+&lt;li>NetApp::Snapshot - OO class for creating and managing snapshots&lt;/li>
+&lt;li>NetApp::Filer - OO Class for managing NetApp Filer devices&lt;/li>
+&lt;li>NetApp::Volume - OO class for creating and managing NetApp filer volumes&lt;/li>
+&lt;li>NetApp::Qtree - OO class for creating and managing qtrees&lt;/li>
+&lt;li>NetApp::Aggregate - OO class for creating and managing NetApp filer aggregates&lt;/li>
+&lt;li>NetApp::Snapmirror - OO class for snapmirror relationships&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>WPMOORE</dc:creator>
+<dc:date>2008-12-10T02:18:39+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Text-EditTranscript">
+<title>Text-EditTranscript</title>
+<link>http://annocpan.org/dist/Text-EditTranscript</link>
+<description>&lt;ul>
+&lt;li>Text::EditTranscript - Perl extension for determining the edit transcript between two strings&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>LMETCALF</dc:creator>
+<dc:date>2008-12-09T20:15:01+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/ZConf-Cron">
+<title>ZConf-Cron</title>
+<link>http://annocpan.org/dist/ZConf-Cron</link>
+<description>&lt;ul>
+&lt;li>zccron - A cron like tool largely aimed at bringing up my web comics in the&lt;/li>
+&lt;li>comiccron - A cron like tool largely aimed at bringing up my web comics in the&lt;/li>
+&lt;li>ZConf::Cron - Handles storing cron tabs in ZConf.&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>VVELOX</dc:creator>
+<dc:date>2008-12-09T16:21:50+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Term-Sprog">
+<title>Term-Sprog</title>
+<link>http://annocpan.org/dist/Term-Sprog</link>
+<description>&lt;ul>
+&lt;li>Term::Sprog - Perl extension for displaying a progress indicator on a terminal.&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>KEICHNER</dc:creator>
+<dc:date>2008-12-09T09:17:38+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Rubyish">
+<title>Rubyish</title>
+<link>http://annocpan.org/dist/Rubyish</link>
+<description>&lt;ul>
+&lt;li>Rubyish::Array - Array object acts as ruby&lt;/li>
+&lt;li>Rubyish::Autobox - Autoboxing scalars to be Rubyish.&lt;/li>
+&lt;li>Rubyish::Class - The Class&lt;/li>
+&lt;li>Rubyish::Enumerable - The Enumerable implementation&lt;/li>
+&lt;li>Rubyish::Hash - &lt;/li>
+&lt;li>Rubyish::Kernel - The Kernel implementation&lt;/li>
+&lt;li>Rubyish::Module - The Module implementation&lt;/li>
+&lt;li>Rubyish::NilClass - The NilClass implementation&lt;/li>
+&lt;li>Rubyish::Object - the parent class of all classes in Rubyish&lt;/li>
+&lt;li>Rubyish::String - String object acts as ruby&lt;/li>
+&lt;li>Rubyish::Syntax::class - Define a new class with "class"&lt;/li>
+&lt;li>Rubyish::Syntax::def - Inject "def" into your package.&lt;/li>
+&lt;li>Rubyish::Syntax::nil - Gives you a nil object.&lt;/li>
+&lt;li>Rubyish - Perl programming, the rubyish way.&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>GUGOD</dc:creator>
+<dc:date>2008-12-09T04:57:58+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Bio-Graphics">
+<title>Bio-Graphics</title>
+<link>http://annocpan.org/dist/Bio-Graphics</link>
+<description>&lt;ul>
+&lt;li>Bio::Graphics - Generate GD images of Bio::Seq objects&lt;/li>
+&lt;li>Bio::Graphics::FeatureFile::Iterator - Iterator across a Bio::Graphics::FeatureFile&lt;/li>
+&lt;li>Bio::Graphics::Util - non-object-oriented utilities used in Bio::Graphics modules&lt;/li>
+&lt;li>Bio::Graphics::Glyph::dashed_line - The "dashed line" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::repeating_shape - A glyph that draws the same shape repeatedly.&lt;/li>
+&lt;li>Bio::Graphics::Glyph::redgreen_box - The "redgreen_box" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::pentagram - The "pentagram" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::protein - The "protein" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::three_letters - DAS-compatible package to use for drawing a line of groups of three letters&lt;/li>
+&lt;li>Bio::Graphics::Glyph::ex - the "ex", or "crossed box" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::segmented_keyglyph - The "segmented_keyglyph" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::stackedplot - The stackedplot glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::splice_site - The "splice_site" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::processed_transcript - The sequence ontology transcript glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::wiggle_xyplot - An xyplot plot compatible with dense "wig"data&lt;/li>
+&lt;li>Bio::Graphics::Glyph::toomany - The "too many to show" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::line - The "line" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::whiskerplot - The whiskerplot glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::ruler_arrow - glyph for drawing an arrow as ruler (5' and 3' are marked as label)&lt;/li>
+&lt;li>Bio::Graphics::Glyph::text_in_box - The "text in box" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::merged_alignment - The "merged_alignment" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::weighted_arrow - The "weighted arrow" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::crossbox - The "crossbox" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::translation - The "6-frame translation" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::heat_map_ideogram - The "heat_map_ideogram" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::group - The "group" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::redgreen_segment - The "redgreen_segments" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::pinsertion - The "Drosophila P-element Insertion" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::span - The "span" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::rndrect - The "round rect" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::minmax - The minmax glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::fixedwidth - A base class fixed width glyphs&lt;/li>
+&lt;li>Bio::Graphics::Glyph::flag - the "flag" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::christmas_arrow - The "christmas arrow" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::ideogram - The "ideogram" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::cds - The "cds" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::box - The "box" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::graded_segments - The "graded_segments" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::dna - The "dna" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::dot - The "dot" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::two_bolts - The "two bolts" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::gene - A GFF3-compatible gene glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::ternary_plot - Draw ternary plot data&lt;/li>
+&lt;li>Bio::Graphics::Glyph::primers - The "STS primers" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::heat_map - The "heat_map" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::segments - The "segments" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::ellipse - The "ellipse" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::image - A glyph that draws photographs &amp; other images&lt;/li>
+&lt;li>Bio::Graphics::Glyph::diamond - The "diamond" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::transcript - The "transcript" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::anchored_arrow - The "anchored_arrow" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::broken_line - The "broken line" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::saw_teeth - The "saw teeth" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::Factory - Factory for Bio::Graphics::Glyph objects&lt;/li>
+&lt;li>Bio::Graphics::Glyph::ragged_ends - The "ragged ends" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::xyplot - The xyplot glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::generic - The "generic" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::extending_arrow - The "extending arrow" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::spectrogram - The "spectrogram" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::so_transcript - The sequence ontology transcript glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::tic_tac_toe - The "tic-tac-toe" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::merge_parts - a base class which suppors semantic zooming of scored alignment features&lt;/li>
+&lt;li>Bio::Graphics::Glyph::triangle - The "triangle" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::wave - The "wave" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::arrow - the "arrow" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::lightning - The "lightning" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::alignment - The "alignment" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::wiggle_box - A generic box glyph compatible with dense "wig"data&lt;/li>
+&lt;li>Bio::Graphics::Glyph::oval - The "oval" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::wiggle_density - A density plot compatible with dense "wig"data&lt;/li>
+&lt;li>Bio::Graphics::Glyph::phylo_align - The "phylogenetic alignment" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::transcript2 - The "transcript2" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::dumbbell - A glyph that draws a "dumbbell" with the same shapes on both ends.&lt;/li>
+&lt;li>Bio::Graphics::Glyph::heterogeneous_segments - The "heterogeneous_segments" glyph&lt;/li>
+&lt;li>Bio::Graphics::Glyph::trace - A glyph that visualizes a trace file&lt;/li>
+&lt;li>Bio::Graphics::Glyph::track - The "track" glyph&lt;/li>
+&lt;li>Bio::Graphics::Pictogram - generate SVG output of Pictogram display for consensus motifs&lt;/li>
+&lt;li>Bio::Graphics::Glyph - Base class for Bio::Graphics::Glyph objects&lt;/li>
+&lt;li>Bio::Graphics::Wiggle::Loader - &lt;/li>
+&lt;li>Bio::Graphics::ConfiguratorI - A sectioned map of configuration&lt;/li>
+&lt;li>Bio::Graphics::RendererI - A renderer for the Bio::Graphics class that&lt;/li>
+&lt;li>Bio::Graphics::DrawTransmembrane - draw a cartoon of an Alpha-helical transmembrane protein.&lt;/li>
+&lt;li>Bio::Graphics::FeatureFile - A set of Bio::Graphics features, stored in a file&lt;/li>
+&lt;li>Bio::Graphics::Wiggle - Binary storage for dense genomic features&lt;/li>
+&lt;li>Bio::Graphics::Feature - A simple feature object for use with Bio::Graphics::Panel&lt;/li>
+&lt;li>Bio::Graphics::FeatureBase - Compatibility module&lt;/li>
+&lt;li>Bio::Graphics::Panel - Generate GD images of Bio::Seq objects&lt;/li>
+&lt;li>search_overview - Render a SearchIO parser report into a simple overview graphic&lt;/li>
+&lt;li>search_overview - Render a SearchIO parser report into a simple overview graphic&lt;/li>
+&lt;li>frend.pl - Render a Bio::Graphics Feature File on the web&lt;/li>
+&lt;li>feature_draw.pl - Render a Bio::Graphics Feature File&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>LDS</dc:creator>
+<dc:date>2008-12-09T00:50:39+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Text-CSV-Slurp">
+<title>Text-CSV-Slurp</title>
+<link>http://annocpan.org/dist/Text-CSV-Slurp</link>
+<description>&lt;ul>
+&lt;li>Text::CSV::Slurp - convert CSV into an array of hashes&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>ROBBIEBOW</dc:creator>
+<dc:date>2008-12-08T22:42:58+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Unix-Uptime">
+<title>Unix-Uptime</title>
+<link>http://annocpan.org/dist/Unix-Uptime</link>
+<description>&lt;ul>
+&lt;li>Unix::Uptime - Determine the current uptime, in seconds, across&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>PIOTO</dc:creator>
+<dc:date>2008-12-08T21:11:05+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Net-fonolo">
+<title>Net-fonolo</title>
+<link>http://annocpan.org/dist/Net-fonolo</link>
+<description>&lt;ul>
+&lt;li>Net::fonolo - Perl interface to fonolo (http://fonolo.com/developer)&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>MPULTZ</dc:creator>
+<dc:date>2008-12-08T16:39:32+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Module-Version-Compare">
+<title>Module-Version-Compare</title>
+<link>http://annocpan.org/dist/Module-Version-Compare</link>
+<description>&lt;ul>
+&lt;li>Module::Version::Compare - acquired the version of installed perl Module by more than one host.&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>YAMAKURA</dc:creator>
+<dc:date>2008-12-08T16:18:57+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Tk-Airports">
+<title>Tk-Airports</title>
+<link>http://annocpan.org/dist/Tk-Airports</link>
+<description>&lt;ul>
+&lt;li>Tk::Airports - A widget to select airports&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>RENEEB</dc:creator>
+<dc:date>2008-12-08T15:03:34+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Linux-DVB-DVBT">
+<title>Linux-DVB-DVBT</title>
+<link>http://annocpan.org/dist/Linux-DVB-DVBT</link>
+<description>&lt;ul>
+&lt;li>Linux::DVB::DVBT - Perl extension for DVB terrestrial recording, epg, and scanning &lt;/li>
+&lt;li>dvbt-scan - Initialise DVBT channels&lt;/li>
+&lt;li>dvbt-record - Record a program to file&lt;/li>
+&lt;li>dvbt-epg - Get EPG&lt;/li>
+&lt;li>dvbt-ffrec - Record a program to file&lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>SDPRICE</dc:creator>
+<dc:date>2008-12-08T12:47:52+00:00</dc:date>
+</item>
+
+<item rdf:about="http://annocpan.org/dist/Proc-Safetynet">
+<title>Proc-Safetynet</title>
+<link>http://annocpan.org/dist/Proc-Safetynet</link>
+<description>&lt;ul>
+&lt;li>Proc::Safetynet - POE-based utility for supervising processes&lt;/li>
+&lt;li>Proc::Safetynet::POEWorker - &lt;/li>
+&lt;/ul>
+</description>
+<dc:creator>DTADY</dc:creator>
+<dc:date>2008-12-08T11:20:33+00:00</dc:date>
+</item>
+
+</rdf:RDF>

@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+
+<channel>
+	<title>Mochuelos (Pruebas)</title>
+	<atom:link href="http://mochuelos.sytes.net/?feed=rss2" rel="self" type="application/rss+xml" />
+	<link>http://mochuelos.sytes.net</link>
+	<description>Linux, Windows, Informática y mucho más.</description>
+	<pubDate>Fri, 14 Nov 2008 02:54:19 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6.3</generator>
+	<language>en</language>
+			<item>
+		<title>Modificar el menú de arranque Grub en Ubuntu Hardy</title>
+		<link>http://mochuelos.sytes.net/?p=202</link>
+		<comments>http://mochuelos.sytes.net/?p=202#comments</comments>
+		<pubDate>Tue, 04 Nov 2008 02:17:04 +0000</pubDate>
+		<dc:creator>Sakhrull</dc:creator>
+		
+		<category><![CDATA[Linux]]></category>
+
+		<category><![CDATA[Ubuntu]]></category>
+
+		<category><![CDATA[grub]]></category>
+
+		<guid isPermaLink="false">http://mochuelos.sytes.net/?p=202</guid>
+		<description><![CDATA[
+
+
+A muchos de vosotros os puede interesar conocer como podemos modificar a nuestro gusto el menú de arranque GRUB que se instala con Ubuntu y algunas otras distribuciones de Linux. Ya sea porque hemos actualizado nuestro kernel y queremos que arranque automáticamente con otra versión diferente a la definida por defecto, tenemos otro S.O. en [...]]]></description>
+			<content:encoded><![CDATA[<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://farm4.static.flickr.com/3217/3001599028_b5f25952a0.jpg?v=0"><img class="aligncenter" src="http://farm4.static.flickr.com/3217/3001599028_b5f25952a0.jpg?v=0" alt="" width="500" height="241" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: justify;">A muchos de vosotros os puede interesar conocer como podemos modificar a nuestro gusto el menú de arranque GRUB que se instala con Ubuntu y algunas otras distribuciones de Linux. Ya sea porque hemos actualizado nuestro kernel y queremos que arranque automáticamente con otra versión diferente a la definida por defecto, tenemos otro S.O. en nuestro ordenador y queremos configurarlo para que arranque con este o simplemente queremos personalizar algunas de las opciones. Mi colega Adolfo me ha preguntado como podia modificar de alguna forma este menú para que arrancase con Windows XP automáticamente y aqui está la solución jeje.<span id="more-202"></span></p>
+<p style="text-align: justify;">Para ello vamos a utilizar la aplicacion <strong>StartUp Manager</strong>, con la que podremos modificar el tiempo de espera, resolución de pantalla, colores, temas, proteger con contraseña el arranque, etc.</p>
+<p style="text-align: justify;">Comenzamos con la instalación, para ello ejecutamos una <strong>Terminal</strong> mediante el menú principal <strong>Aplicaciones &gt; Accesorios &gt; Terminal</strong> y escribimos el siguiente comando:</p>
+<pre style="text-align: justify;"><strong><strong>sudo apt-get install startupmanager
+</strong></strong></pre>
+<p>Una vez concluida la instalación vamos a ejecutar la aplicación, para ello podemos escribir en la <strong>Terminal</strong> el nombre de ésta o acceder mediante el menú <strong>Sistema &gt; Administración &gt; Administrador de Arranque</strong>.</p>
+<p>En la pestaña <strong>Opciones de arranque </strong>podemos modificar el tiempo de espera del menú para proceder al arranque del sistema, el Sistema Operativo por defecto con el que arrancará nuestra máquina, la resolución de pantalla y profundidad de colores entre otras opciones como que se muestre la pantalla de inicio en el arranque.</p>
+<p style="text-align: center;"><a href="http://farm4.static.flickr.com/3224/3000501467_b7cbcf26eb.jpg?v=0"><img class="aligncenter" src="http://farm4.static.flickr.com/3224/3000501467_b7cbcf26eb.jpg?v=0" alt="" width="409" height="384" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: justify;">En la pestaña <strong>Aspecto </strong>tenemos la posibilidad de usar diferentes colores para nuestro menú de arranque, también podemos usar una imagen para el fondo de Grub o incluso usar un tema que cambia totalmente el aspecto de éste.</p>
+<p style="text-align: justify;">Para la utilizacion de temas del Cargador de Arranque deberán ejecutar el siguiente comando en la <strong>Terminal</strong>:</p>
+<pre style="text-align: justify;"><strong><strong><strong><strong>sudo apt-get install grub-splashimages</strong></strong></strong></strong></pre>
+<p style="text-align: justify;">Los temas para el cargador de arranque podemos encontralos en la web:</p>
+<p style="text-align: justify;"><a href="http://www.gnome-look.org" target="_blank">http://www.gnome-look.org</a></p>
+<p style="text-align: justify;">Sino conseguimos dar con ninguno, escribimos en la casilla <strong>SEARCH</strong> la palabra <strong>GFXBOOT</strong> y nos aparecen bastantes temas que podemos descargar, una vez descargados pulsamos en <strong>Administrar temas del Cargador de arranque </strong>y buscamos en nuestro disco el archivo.</p>
+<p style="text-align: justify;">También podemos modificar la imagen que aparece al comenzar a cargar <strong>Ubuntu</strong>, podemos bajar los temas de la página anterior, en la sección <strong>Splash Screens</strong>.</p>
+<p style="text-align: justify;">
+<p style="text-align: justify;">
+<p style="text-align: center;"><a href="http://farm4.static.flickr.com/3001/3000501531_8d87a814fe.jpg?v=0"><img class="aligncenter" src="http://farm4.static.flickr.com/3001/3000501531_8d87a814fe.jpg?v=0" alt="" width="411" height="384" /></a></p>
+<p style="text-align: justify;">La pestaña <strong>Seguridad</strong> permite restringir mediante una contraseña el acceso al menú Cargador de arranque, para evitar posibles accesos indeseados a nuestro equipo. Consta de las siguientes opciones:</p>
+<ul>
+<li>Proteger con contraseña el cargador de arranque.</li>
+</ul>
+<p>Marcando esta casilla estaremos protegiendo con contraseña el acceso al cargador de arranque, con lo cual, sino indicamos la contraseña no podremos arrancar el ordenador.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mochuelos.sytes.net/?feed=rss2&amp;p=202</wfw:commentRss>
+		</item>
+		<item>
+		<title>Configuración de red inalámbrica en Windows Vista</title>
+		<link>http://mochuelos.sytes.net/?p=179</link>
+		<comments>http://mochuelos.sytes.net/?p=179#comments</comments>
+		<pubDate>Sun, 02 Nov 2008 09:30:38 +0000</pubDate>
+		<dc:creator>Sakhrull</dc:creator>
+		
+		<category><![CDATA[Windows Vista]]></category>
+
+		<category><![CDATA[configurar red inalambrica]]></category>
+
+		<category><![CDATA[wifi]]></category>
+
+		<guid isPermaLink="false">http://mochuelos.sytes.net/?p=179</guid>
+		<description><![CDATA[
+
+En este post se explica como realizar la conexión de un ordenador que disponga de un dispositivo de red inalámbrico a un punto de acceso en el S.O. Windows Vista.
+
+NOTA: Para ello es necesario que nuestro ordenador disponga de un adaptador de red inalámbrico correctamente instalado y configurado.
+Para conectar el adaptador inalámbrico a un punto [...]]]></description>
+			<content:encoded><![CDATA[<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://farm4.static.flickr.com/3008/2994096347_d12667ebb5.jpg?v=0"><img class="aligncenter" src="http://farm4.static.flickr.com/3008/2994096347_d12667ebb5.jpg?v=0" alt="" width="335" height="201" /></a></p>
+<p style="text-align: justify;">En este post se explica como realizar la conexión de un ordenador que disponga de un dispositivo de red inalámbrico a un punto de acceso en el S.O. Windows Vista.</p>
+<p style="text-align: justify;"><span id="more-179"></span></p>
+<p style="text-align: justify;"><strong>NOTA: </strong>Para ello es necesario que nuestro ordenador disponga de un adaptador de red inalámbrico correctamente instalado y configurado.</p>
+<p style="text-align: justify;">Para conectar el adaptador inalámbrico a un punto de acceso mediante la funcionalidad de gestión de redes de Windows Vista accedemos al menú <strong>INICIO</strong> y pinchamos en <strong>CONECTAR A</strong>:</p>
+<p style="text-align: center;"><a href="http://farm4.static.flickr.com/3162/2994646934_f9413dc334.jpg?v=0"><img class="aligncenter" src="http://farm4.static.flickr.com/3162/2994646934_f9413dc334.jpg?v=0" alt="" width="500" height="198" /></a></p>
+<p style="text-align: justify;">
+<p style="text-align: justify;">
+<p style="text-align: justify;">A continuación se muestran todas las redes disponibles, tanto puntos de acceso inalámbricos como conexiones VPN y accesos telefónicos. En el menú desplegable  <strong>MOSTRAR</strong> seleccionamos la opción <strong>INALÁMBRICO</strong> para que solo aparezcan en el listado de conexiones los accesos inalámbricos disponibles.</p>
+<p style="text-align: justify;">
+<p style="text-align: center;"><a href="http://farm4.static.flickr.com/3186/2994646976_5507a17ef9.jpg?v=0"><img class="aligncenter" src="http://farm4.static.flickr.com/3186/2994646976_5507a17ef9.jpg?v=0" alt="" width="457" height="339" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: justify;">En la lista que nos aparece elegiremos la red a la que se quiere conectar (sino nos saliera ninguna red pinchamos en ACTUALIZAR que es el icono de las dos flechas de arriba a la derecha, si aun así no nos apareciera ninguna red nos aseguraremos de que nuestro adaptador inalámbrico este encendido o enchufado y que esté correctamente instalado). Vamos a conectarnos a la red <strong>WLAN_66</strong>. Al seleccionarla nos encontramos con diversa información sobre la red, como su nombre, intensidad de señal, tipo de seguridad, tipo de conexión inalámbrica, etc.</p>
+<p style="text-align: justify;">Una vez seleccionada pulsamos en <span style="color: #000000;"><strong>CONECTAR</strong></span>.</p>
+<p style="text-align: justify;">
+<p style="text-align: center;"><a href="http://farm4.static.flickr.com/3215/2994647060_b69dec110e.jpg?v=0"><img class="aligncenter" src="http://farm4.static.flickr.com/3215/2994647060_b69dec110e.jpg?v=0" alt="" width="395" height="292" /></a></p>
+<p style="text-align: center;">
+<p>Si la red a la que se va a conectar tiene algún tipo de seguridad (WEP o WPA) habilitada,  se solicita introducir la clave o contraseña de seguridad, trás introducir la clave pulsamos en <strong>CONECTAR</strong> para terminar el proceso.</p>
+<p style="text-align: center;"><a href="http://farm4.static.flickr.com/3042/2993804857_b73451c61f.jpg?v=0"><img class="aligncenter" src="http://farm4.static.flickr.com/3042/2993804857_b73451c61f.jpg?v=0" alt="" width="482" height="356" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: justify;">Si todo es correcto nos aparecerá la siguiente pantalla, en la que podremos guardar los datos de la red inalámbrica, además de indicarle si queremos que se conecte a esta red automáticamente cuando esté en el alcance de nuestro adaptador inalámbrico.</p>
+<p style="text-align: justify;">
+<p style="text-align: center;"><a href="http://farm4.static.flickr.com/3223/2993804899_bf077a2deb.jpg?v=0"><img class="aligncenter" src="http://farm4.static.flickr.com/3223/2993804899_bf077a2deb.jpg?v=0" alt="" width="478" height="353" /></a></p>
+<p style="text-align: center;">
+<p>En Windows Vista, dependiendo del uso que vayamos a darle a nuestra conexión de red se pueden establecer distintas medidas de seguridad. La siguiente imagen muestra las opciones entre las que debemos elegir. Si nos conectaramos a través de una red pública, (cybercafé, hoteles, aeropuertos etc.) debemos elegir la opción <strong>UBICACIÓN PÚBLICA</strong>, en nuestro caso elegiremos <strong>HOGAR</strong> ya que supuestamente estamos configurando una red inalámbrica doméstica.</p>
+<p style="text-align: center;"><a href="http://farm4.static.flickr.com/3021/2994647176_ce29651317.jpg?v=0"><img class="aligncenter" src="http://farm4.static.flickr.com/3021/2994647176_ce29651317.jpg?v=0" alt="" width="500" height="418" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: justify;">Una vez haya finalizado el proceso de configuración pulsamos en <strong>CERRAR</strong> y comprobamos el estado de la conexión situando el ratón sobre el icono de conexiones de red inalámbrica, situado en la barra de tareas (abajo a la derecha, al lado del reloj), nos muestra información sobre la red a la que estamos conectados y la intensidad con la que recibimos la señal.</p>
+<p style="text-align: center;"><a href="http://farm4.static.flickr.com/3288/2993804995_83b3abc854.jpg?v=0"><img class="aligncenter" src="http://farm4.static.flickr.com/3288/2993804995_83b3abc854.jpg?v=0" alt="" width="269" height="138" /></a></p>
+<p style="text-align: justify;">
+<p style="text-align: justify;">
+<p style="text-align: justify;">Si pulsamos con el botón secundario del ratón sobre dicho icono nos aparece un menú contextual que consta de las siguientes opciones:</p>
+<ul>
+<li><strong>Desconectar de:</strong> Para desconectarnos de la red a la que actualmente estamos conectados.</li>
+<li><strong>Conectarse a una red:</strong> Su función sería la misma que si accedemos a INICIO - CONECTAR A.</li>
+<li><strong>Desactivar notificación de redes nuevas:</strong> No se muestran notificaciones cuando una nueva red está en el alcance.</li>
+<li><strong>Diagnosticar y reparar:</strong> Windows realiza una comprobación de la red, busca el problema que tiene y procede a su reparación (si es posible).</li>
+<li><strong>Centro de redes y recursos compartidos:</strong></li>
+</ul>
+<p style="text-align: center;"><a href="http://farm4.static.flickr.com/3039/2994647306_029e2fcf5b.jpg?v=0"><img class="aligncenter" src="http://farm4.static.flickr.com/3039/2994647306_029e2fcf5b.jpg?v=0" alt="" width="325" height="177" /></a></p>
+<p style="text-align: center;">
+<p>En algunas ocasiones nos puede resultar necesario eliminar alguno de los perfiles de red definidos para para poder crear uno nuevo. A continuación se indican los pasos a seguir.</p>
+<h3><span style="text-decoration: underline;">ELIMINAR PERFILES DE RED</span></h3>
+<p>Hacemos clic derecho sobre el icono de conexiones de red inalámbricas de la barra de tareas (situado abajo a la derecha al lado del reloj) y en el menú contextual que aparece elegimos la opción <strong>CENTRO DE REDES Y RECURSOS COMPARTIDOS. </strong>(Puede verse en la imagen anterior).</p>
+<p>Una vez hayamos accedido debemos pulsar en <strong>ADMINISTRAR REDES INALÁMBRICAS</strong>, situado arriba a la izquierda en el menú <strong>TAREAS</strong>.</p>
+<p style="text-align: center;"><a href="http://farm4.static.flickr.com/3025/2993805117_941a4b80bc.jpg?v=0"><img class="aligncenter" src="http://farm4.static.flickr.com/3025/2993805117_941a4b80bc.jpg?v=0" alt="" width="500" height="414" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: justify;">En la ventana de administración de redes inalámbricas aparece un listado con los perfiles correspondientes a cada red, para eliminar el perfil requerido lo seleccionamos y pulsamos en <strong>QUITAR</strong>, repitiendo este proceso podemos eliminar todos los perfiles que deseemos.</p>
+<p style="text-align: justify;">
+<p style="text-align: center;"><a href="http://farm4.static.flickr.com/3013/2994647418_2bdaa383f9.jpg?v=0"><img class="aligncenter" src="http://farm4.static.flickr.com/3013/2994647418_2bdaa383f9.jpg?v=0" alt="" width="500" height="375" /></a></p>
+<p style="text-align: justify;">
+<p style="text-align: justify;">
+<p style="text-align: justify;">
+]]></content:encoded>
+			<wfw:commentRss>http://mochuelos.sytes.net/?feed=rss2&amp;p=179</wfw:commentRss>
+		</item>
+		<item>
+		<title>Manifiesto: ¡¡Que se lo curren ellas!!</title>
+		<link>http://mochuelos.sytes.net/?p=147</link>
+		<comments>http://mochuelos.sytes.net/?p=147#comments</comments>
+		<pubDate>Wed, 29 Oct 2008 04:22:40 +0000</pubDate>
+		<dc:creator>Sakhrull</dc:creator>
+		
+		<category><![CDATA[Paranoyas]]></category>
+
+		<category><![CDATA[manifiesto]]></category>
+
+		<guid isPermaLink="false">http://sakhrull.sytes.net/?p=147</guid>
+		<description><![CDATA[
+
+
+
+QUE SE LO CURREN ELLAS…
+ 
+Hombres del mundo, os hago un llamamiento que va a cambiar la concepción de vuestras relaciones sexuales desde este momento.
+Llevamos cientos de años cortejando a las mujeres, cuyo único papel hasta ahora ha sido esperar a que nosotros, como perros falderos, les doremos la píldora para tener unos momentos de [...]]]></description>
+			<content:encoded><![CDATA[<p class="MsoNormal" style="text-align: center;">
+<p class="MsoNormal" style="text-align: center;"><a href="http://mochuelos.sytes.net/?p=147"><em>Click here to view the embedded video.</em></a></p>
+<p class="MsoNormal" style="text-align: center;"><span id="more-147"></span></p>
+<p class="MsoNormal">
+<p class="MsoNormal"><span style="font-size: 14pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;;">QUE SE LO CURREN ELLAS…</span></p>
+<p class="MsoNormal"><span style="font-size: 14pt; font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;;"> </span></p>
+<p class="MsoNormal" style="text-align: justify;"><span style="font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;;">Hombres del mundo, os hago un llamamiento que va a cambiar la concepción de vuestras relaciones sexuales desde este momento.</span></p>
+<p class="MsoNormal" style="text-align: justify;"><span style="font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;;">Llevamos cientos de años cortejando a las mujeres, cuyo único papel hasta ahora ha sido esperar a que nosotros, como perros falderos, les doremos la píldora para tener unos momentos de sexo, que en ocasiones, no es siquiera bueno.</span></p>
+<p class="MsoNormal" style="text-align: justify;"><span style="font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;;">Pues ya ha llegado el momento del cambio, el tiempo de que ellas empiecen a tomar la iniciativa, resumiendo: “QUE SE LO CURREN ELLAS”.</span></p>
+<p class="MsoNormal" style="text-align: justify;"><span style="font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;;">Las tías no follan con nosotros para complacernos, a ellas les gusta el sexo tanto o más que a nosotros, si no comparad: sus orgasmos son más largos, intensos y algunas incluso son multiorgásmicas, es decir, se pueden correr varias veces, mientras que nosotros perdemos el culo por dos o tres segundos de placer.</span></p>
+<p class="MsoNormal" style="text-align: justify;"><span style="font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;;">Por eso os digo ¡HASTA AQUÍ HEMOS LLEGADO!.</span></p>
+<p class="MsoNormal" style="text-align: justify;"><span style="font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;;">Os propongo pasar de ellas, que sean ellas las que de una vez tomen la iniciativa para iniciar algo, ya sea una relación, o para echar un buen polvo en una noche de pasión.</span></p>
+<p class="MsoNormal" style="text-align: justify;"><span style="font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;;">Si hacemos este boicot, al final darán su brazo a torcer y acabarán buscándonos porque ellas, tampoco pueden vivir sin el sexo, si no pensad: ¿Cuántas relaciones se acaban porque el sexo en la pareja no es satisfactorio?. Además recordad que si tenemos momentos de de debilidad, siempre podremos acudir a las profesionales del amor, ellas por una cantidad previamente acordada nos satisfarán igualmente y nos ahorraremos muchos dolores de cabeza y mucha pasta en invitarlas a copas.</span></p>
+<p class="MsoNormal" style="text-align: justify;"><span style="font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;;">Así que por último os pido la adhesión a esta iniciativa, si lo hacemos todos, tarde o temprano, acabarán cediendo.</span></p>
+<p class="MsoNormal" style="text-align: justify;"><span style="font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;;">Si quieren igualdad, que sea en todos los ámbitos, y aquí se la ofrecemos en bandeja de plata.</span></p>
+<p class="MsoNormal" style="text-align: justify;"><span style="font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;;">Se que es difícil resistirse a sus malignos encantos, pero os pido fuerza y constancia y venceremos.</span></p>
+<p class="MsoNormal" style="text-align: justify;"><span style="font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;;">Por fin nos libraremos del yugo sexual al que nos tienen sometidos las mujeres desde hace siglos. ¡YA ES HORA DE TOMAR EL PODER!</span></p>
+<p class="MsoNormal" style="text-align: justify;"><span style="font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;;">Mandad este correo a todos los tíos que conozcáis para que se sumen a la iniciativa. (Si sabéis otros idiomas, por favor, traducidlo para que circule por todo el mundo).</span></p>
+<p class="MsoNormal" style="text-align: justify;"><span style="font-family: &quot;Trebuchet MS&quot;,&quot;sans-serif&quot;;">¡JUNTOS PODEMOS!</span></p>
+]]></content:encoded>
+			<wfw:commentRss>http://mochuelos.sytes.net/?feed=rss2&amp;p=147</wfw:commentRss>
+		</item>
+		<item>
+		<title>Instalar VMware Server en Ubuntu Hardy 8.04</title>
+		<link>http://mochuelos.sytes.net/?p=157</link>
+		<comments>http://mochuelos.sytes.net/?p=157#comments</comments>
+		<pubDate>Wed, 29 Oct 2008 04:22:26 +0000</pubDate>
+		<dc:creator>Sakhrull</dc:creator>
+		
+		<category><![CDATA[Linux]]></category>
+
+		<category><![CDATA[Ubuntu]]></category>
+
+		<category><![CDATA[vmware]]></category>
+
+		<guid isPermaLink="false">http://sakhrull.sytes.net/?p=157</guid>
+		<description><![CDATA[
+VMware es un sistema de virtualización por software. Un sistema virtual por software es un programa que simula un sistema físico (un ordenador, un hardware) con unas características de hardware determinadas. Cuando se ejecuta el programa (simulador), proporciona un ambiente de ejecución similar a todos los efectos a un ordenador físico (excepto en el puro [...]]]></description>
+			<content:encoded><![CDATA[<p style="text-align: center;"><img class="alignnone" src="http://farm4.static.flickr.com/3173/2983510636_8cb7faa981.jpg?v=0" alt="" width="375" height="144" /></p>
+<p style="text-align: justify;"><strong>VMware</strong> es un sistema de virtualización por software. Un sistema virtual por software es un programa que simula un sistema físico (un ordenador, un hardware) con unas características de hardware determinadas. Cuando se ejecuta el programa (<strong>simulador</strong>), proporciona un <em>ambiente de ejecución</em> similar a todos los efectos a un ordenador físico (excepto en el <em>puro acceso físico</em> al hardware simulado), con CPU (puede ser más de una), BIOS, tarjeta gráfica, memoria RAM, tarjeta de red, sistema de sonido, conexión USB, disco duro (pueden ser más de uno), etc.</p>
+<p style="text-align: center;"><span id="more-157"></span></p>
+<p style="text-align: justify;">Un virtualizador por software permite ejecutar (simular) varios ordenadores (sistemas operativos) dentro de un mismo hardware de manera simultánea, permitiendo así el mayor aprovechamiento de recursos. No obstante, y al ser una capa intermedia entre el sistema físico y el sistema operativo que funciona en el hardware emulado, la velocidad de ejecución de este último es menor, pero en la mayoría de los casos suficiente para usarse en entornos de producción.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>Registro y Descarga de VMware<br />
+</strong></span></p>
+<p style="text-align: justify;">Para comenzar con la instalación de VMware Server</p>
+<p style="text-align: justify;">Podemos descargarnos VMware Server desde la siguiente dirección:</p>
+<p style="text-align: justify;">http://www.vmware.com/download/</p>
+<p style="text-align: justify;">Buscamos VMware Server y pinchamos en FREE DOWNLOAD.</p>
+<p style="text-align: justify;"><a href="http://farm4.static.flickr.com/3211/2986004784_fa5dc0f172.jpg?v=0"><img class="alignnone" src="http://farm4.static.flickr.com/3211/2986004784_fa5dc0f172.jpg?v=0" alt="" width="500" height="71" /></a></p>
+<p style="text-align: justify;">Elegimos la ultima versión disponible y pulsamos en DOWNLOAD.</p>
+<p><a href="http://farm4.static.flickr.com/3015/2985149567_2223860194.jpg?v=0"><img class="alignnone" src="http://farm4.static.flickr.com/3015/2985149567_2223860194.jpg?v=0" alt="" width="360" height="66" /></a></p>
+<p style="text-align: justify;">
+<p style="text-align: justify;">
+<p style="text-align: justify;">
+<p style="text-align: justify;">Tenemos que registrarnos para poder descargarnos el fichero de instalación, no os preocupeis porque el registro es totalmente gratuito, simplemente introducimos nuestro NOMBRE y EMAIL donde se nos enviará nuestro SERIAL, que nos servirá mas tarde.</p>
+<p style="text-align: center;"><a href="http://farm4.static.flickr.com/3269/2985149595_ebc95e019e.jpg?v=0"><img class="aligncenter" src="http://farm4.static.flickr.com/3269/2985149595_ebc95e019e.jpg?v=0" alt="" width="204" height="240" /></a></p>
+<p style="text-align: justify;">Nos pide rellenar algunos datos más para realizar el registro, también debemos indicar el número de HOST en los que se instalará VMware y el Sistema Operativo que tendrán dichos HOST. Aceptamos la licencia y pulsamos en Register.</p>
+<p style="text-align: justify;">Se nos ha enviado a nuestro email los SERIAL&#8217;s que necesitaremos para la instalación del programa en los diferentes HOST, ahora debemos descargar el fichero correspondiente a nuestro S.O., en nuestro caso vamos a descargar el siguiente:</p>
+<p style="text-align: justify;"><a href="http://farm4.static.flickr.com/3221/2986004880_5f2eef10ce.jpg?v=0"><img class="aligncenter" src="http://farm4.static.flickr.com/3221/2986004880_5f2eef10ce.jpg?v=0" alt="" width="500" height="48" /></a></p>
+<p style="text-align: justify;">También debemos descargar el siguiente archivo:</p>
+<p style="text-align: justify;"><a href="http://farm4.static.flickr.com/3271/2985149647_9547e4744c.jpg?v=0"><img class="aligncenter" src="http://farm4.static.flickr.com/3271/2985149647_9547e4744c.jpg?v=0" alt="" width="500" height="42" /></a></p>
+<p style="text-align: justify;">Una vez hayamos descargado los archivos y tengamos nuestros SERIAL&#8217;s estamos listos para comenzar con la instalación.</p>
+<p style="text-align: justify;"><strong><span style="color: #000000;"><span style="text-decoration: underline;">Instalación</span></span></strong></p>
+<p style="text-align: justify;">En primer lugar tenemos que instalar una serie de paquetes en nuestro sistema, necesarios para la instalación, para ello escribimos:</p>
+<pre style="text-align: justify;"><strong>sudo apt-get install build-essential linux-headers-`uname -r`
+sudo apt-get install xinetd</strong></pre>
+<p style="text-align: justify;">Accedemos a la carpeta donde hemos descargado los archivos y los descomprimimos, para ello ejecutamos el siguiente comando:</p>
+<pre style="text-align: justify;"><strong>sudo tar -xvzf VMware-server-2.0.0-116503.i386.tar.gz
+sudo tar -xvzf VMware-vix-1.6.0-122956.i386.tar.gz</strong></pre>
+<p style="text-align: justify;">Vamos a instalar en primer lugar el VMware Server 2.0, por lo tanto entramos en la carpeta correspondiente, y ejecutamos la instalación:</p>
+<pre style="text-align: justify;"><strong>cd vmware-server-distrib</strong>
+<strong>sudo ./vmware-install.pl
+</strong></pre>
+<p style="text-align: justify;">c</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mochuelos.sytes.net/?feed=rss2&amp;p=157</wfw:commentRss>
+		</item>
+		<item>
+		<title>El Síndrome de los Veintitantos</title>
+		<link>http://mochuelos.sytes.net/?p=126</link>
+		<comments>http://mochuelos.sytes.net/?p=126#comments</comments>
+		<pubDate>Tue, 28 Oct 2008 01:50:52 +0000</pubDate>
+		<dc:creator>Sakhrull</dc:creator>
+		
+		<category><![CDATA[Paranoyas]]></category>
+
+		<category><![CDATA[sindrome veintitantos]]></category>
+
+		<guid isPermaLink="false">http://sakhrull.sytes.net/?p=126</guid>
+		<description><![CDATA[
+
+
+Para todos aquellos que se encuentren ahora mismo en la veintena y se encuentren un poco perdidos en el mundo, sin saber que hacer, a donde ir…. (siempre hay bares abiertos¡¡¡ eso no es problema….) este escrito les va a sorprender y al menos les sacara una sonrisa como me ha pasado a mi.
+
+EL SINDROME [...]]]></description>
+			<content:encoded><![CDATA[<p style="text-align: center;">
+<p style="text-align: center;">
+<p style="text-align: center;"><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/10/nr_pixalia_cuarteto.jpg"><img class="size-medium wp-image-136 aligncenter" title="nr_pixalia_cuarteto" src="http://sakhrull.sytes.net/wp-content/uploads/2008/10/nr_pixalia_cuarteto.jpg" alt="" width="365" height="256" /></a></p>
+<p class="MsoNormal"><span>Para todos aquellos que se encuentren ahora mismo en la veintena y se encuentren un poco perdidos en el mundo, sin saber que hacer, a donde ir…. (siempre hay bares abiertos¡¡¡ eso no es problema….) este escrito les va a sorprender y al menos les sacara una sonrisa como me ha pasado a mi.</span></p>
+<p class="MsoNormal"><span id="more-126"></span></p>
+<p class="MsoNormal"><strong><span style="text-decoration: underline;"><span>EL SINDROME DE LOS VEINTITANTOS</span></span></strong></p>
+<p class="MsoNormal"><span>Le llaman la ‘crisis del cuarto de vida’. Te empiezas a dar cuenta que tu círculo de amigos es más pequeño que hace unos años.</span></p>
+<p class="MsoNormal"><span>Te das cuenta de que cada vez es más difícil ver a tus amigos y coordinar horarios por diferentes cuestiones: trabajo, estudios, pareja, etc…</span></p>
+<p class="MsoNormal"><span>Y cada vez disfrutas más de esa cervecita que sirve como excusa para charlar un rato. Las multitudes ya no son ‘tan divertidas’… hasta a veces te incomodan.</span></p>
+<p class="MsoNormal"><span>Y extrañas la comodidad de la escuela, de los grupos, de socializar con la misma gente de forma constante.</span></p>
+<p class="MsoNormal"><span>Pero te empiezas a dar cuenta que mientras algunos eran verdaderos amigos otros no eran tan especiales después de todo.</span></p>
+<p class="MsoNormal"><span>Te empiezas a dar cuenta de que algunas personas son egoístas y que, a lo mejor, esos amigos que creías cercanos no son exactamente las mejores personas que has conocido y que la gente con las que has perdido contacto resultan ser amigos de los más importantes para ti.</span></p>
+<p class="MsoNormal"><span>Ríes con más ganas, pero lloras con menos lágrimas, y con más dolor. Te rompen el corazón y te preguntas como esa persona que amaste tanto te pudo hacer tanto mal.</span></p>
+<p class="MsoNormal"><span>O quizás te acuestes por las noches y te preguntes por qué no puedes conocer a alguien lo suficientemente interesante como para querer conocerlo mejor.</span></p>
+<p class="MsoNormal"><span>Pareciera como si todos los que conoces ya llevan años de novios y algunos empiezan a casarse. Quizás tú también amas realmente a alguien, pero simplemente no estás seguro si te sientes preparado para comprometerte por el resto de tu vida.</span></p>
+<p class="MsoNormal"><span>Los ligues y las citas de una noche te empiezan a parecer baratos, y emborracharte y actuar como un idiota empieza a parecerte verdaderamente estúpido.</span></p>
+<p class="MsoNormal"><span>Salir tres veces por fin de semana resulta agotador y significa mucho dinero para tu pequeño sueldo.</span></p>
+<p class="MsoNormal"><span>Miras tu trabajo y quizás no estés ni un poco cerca de lo que pensabas que estarías haciendo. O quizás estés buscando algún trabajo y piensas que tienes que comenzar desde abajo y te da un poco de miedo.</span></p>
+<p class="MsoNormal"><span>Tratas día a día de empezar a entenderte a ti mismo, sobre lo que quieres y lo que no. Tus opiniones se vuelven más fuertes.</span></p>
+<p class="MsoNormal"><span>Ves lo que los demás están haciendo y te encuentras a ti mismo juzgando un poco más de lo usual porque de repente tienes ciertos lazos en tu vida y adicionas cosas a tu lista de lo que es aceptable y de lo que no lo es.</span></p>
+<p class="MsoNormal"><span>A veces te sientes genial e invencible, y otras…solo, con miedo y confundido.</span></p>
+<p class="MsoNormal"><span>De repente tratas de aferrarte al pasado, pero te das cuentade que el pasado cada vez se aleja más y que no hay otra opción que seguir avanzando.</span></p>
+<p class="MsoNormal"><span>Te preocupas por el futuro, préstamos, dinero… y por hacer una vida para ti. Y mientras ganar la carrera sería grandioso, ahora tan solo quisieras estar compitiendo en ella.</span></p>
+<p class="MsoNormal"><span>Lo que puede que no te des cuenta es que todos los que estamos leyendo esto nos identificamos con ello.</span></p>
+<p class="MsoNormal"><span>Todos nosotros tenemos ‘veintitantos’ y nos gustaría volver a los 15-16 algunas veces.</span></p>
+<p class="MsoNormal"><span>Parece ser un lugar inestable, un camino en tránsito, un desbarajuste en la cabeza… pero TODOS dicen que es la mejor época de nuestras vidas y no tenemos que desaprovecharla por culpa de nuestros miedos…</span></p>
+<p class="MsoNormal"><span>Dicen que estos tiempos son los cimientos de nuestro futuro. Parece que fue ayer que teníamos 16… ¿¡Entonces mañana tendremos 30!? ¿¿¿¡¡¡Así de rápido!?</span></p>
+<p class="MsoNormal"><span>HAGAMOS VALER NUESTRO TIEMPO… QUE NO SE NOS PASE!</span></p>
+<p class="MsoNormal"><span>La vida no se mide por las veces que respiras, sino por aquellos momentos que te dejan sin aliento…</span></p>
+<p class="MsoNormal">
+<p class="MsoNormal">
+]]></content:encoded>
+			<wfw:commentRss>http://mochuelos.sytes.net/?feed=rss2&amp;p=126</wfw:commentRss>
+		</item>
+		<item>
+		<title>Configuración de red local</title>
+		<link>http://mochuelos.sytes.net/?p=122</link>
+		<comments>http://mochuelos.sytes.net/?p=122#comments</comments>
+		<pubDate>Tue, 14 Oct 2008 02:30:16 +0000</pubDate>
+		<dc:creator>Sakhrull</dc:creator>
+		
+		<category><![CDATA[Windows XP]]></category>
+
+		<category><![CDATA[propiedades de red]]></category>
+
+		<category><![CDATA[red local]]></category>
+
+		<category><![CDATA[windows]]></category>
+
+		<guid isPermaLink="false">http://192.168.0.10/index.php/?p=61</guid>
+		<description><![CDATA[Debido a mi nuevo curro me he propuesto realizar un manual para la configuración de red tanto local como inalámbrica, en este manual explicaré todo lo necesario para resolver los problemas mas comunes que pueden darse en cuanto a la configuración de nuestras conexiones de red.
+Para configurar las conexiones de red local, (las que van [...]]]></description>
+			<content:encoded><![CDATA[<p>Debido a mi nuevo curro me he propuesto realizar un manual para la configuración de red tanto local como inalámbrica, en este manual explicaré todo lo necesario para resolver los problemas mas comunes que pueden darse en cuanto a la configuración de nuestras conexiones de red.<span id="more-122"></span></p>
+<p>Para configurar las conexiones de red local, (las que van por cable, para quien le suene un poco raro&#8230;) hacemos clic derecho en el icono de los dos ordenadores <a href="http://sakhrull.sytes.net/wp-content/uploads/2008/10/icono-de-red-local.jpg"><img class="alignnone size-medium wp-image-77" title="icono-de-red-local" src="http://sakhrull.sytes.net/wp-content/uploads/2008/10/icono-de-red-local.jpg" alt="" width="19" height="20" /></a> que aparece en la barra de herramientas (al lado del reloj) y pulsamos en <strong>Estado</strong>.</p>
+<p style="text-align: center;"><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/10/estado-conexion-area-local.jpg"><img class="size-medium wp-image-76 aligncenter" title="estado-conexion-area-local" src="http://sakhrull.sytes.net/wp-content/uploads/2008/10/estado-conexion-area-local.jpg" alt="" width="311" height="381" /></a></p>
+<p style="text-align: center;">
+<p style="text-align: left;">En <strong>Estado: </strong>podemos comprobar si nuestra conexión está conectada, sino fuera así, lo primero que podemos hacer es <strong>Deshabilitar</strong> la conexión y volver a <strong>Activarla</strong>, sino se soluciona así tenemos que asegurarnos que los cables estén correctamente enchufados, que esten en perfecto estado (sin dobleces, roturas, etc.) y que nuestra tarjeta de red no presenta ningun tipo de problema tanto de drivers como a nivel físico.</p>
+<p style="text-align: left;">
+<p style="text-align: left;">Pulsamos en <strong>Propiedades </strong></p>
+<p style="text-align: center;"><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/10/propiedades-conexion-area-local.jpg"><img class="size-medium wp-image-78 aligncenter" title="propiedades-conexion-area-local" src="http://sakhrull.sytes.net/wp-content/uploads/2008/10/propiedades-conexion-area-local.jpg" alt="" width="320" height="367" /></a></p>
+<p style="text-align: left;">Aquí podemos modificar varios aspectos de la conexión, pero el más importante seria la modificacion del <strong>Protocolo Internet (TCP/IP)</strong>.</p>
+<p style="text-align: center;"><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/10/propiedades-protocolo-tcp-ip.jpg"><img class="size-medium wp-image-87 aligncenter" title="propiedades-protocolo-tcp-ip" src="http://sakhrull.sytes.net/wp-content/uploads/2008/10/propiedades-protocolo-tcp-ip.jpg" alt="" width="316" height="353" /></a></p>
+<p style="text-align: left;">Si en nuestra red disponemos de un servidor DHCP, ya sea el que traen por defecto algunos dispositivos de red como los routers, o tenemos algun equipo haciendo las funciones de servidor DHCP, podremos elegir la opción <strong>Obtener una dirección IP automáticamente</strong>.</p>
+<p style="text-align: left;">En algunas ocasiones se hace necesario establecer una configuración de red manual, para ello debemos introducir una dirección IP válida dentro del rango de nuestra red y que no esté ocupada por ningún otro equipo, debemos indicarle la Máscara de subred y la Puerta de enlace, normalmente la puerta de enlace suele ser la dirección IP de nuestro router o modem, es decir, la dirección del dispositivo que nos da salida al exterior de nuestra red.</p>
+<p style="text-align: left;">También podemos especificar un <strong>Servidor DNS</strong> o servidor de nombres, estos servidores de nombres se encargan de guardar en sus bases de datos los nombres de las webs y sus correspondencias a las IP&#8217;s de los servidores web donde se albergan. Si tenemos algún problema en la visualización de alguna página en concreto, podemos probar a modificar este parámetro e introducir la dirección de otro servidor DNS.</p>
+<p style="text-align: center;">
+<p style="text-align: left;">
+]]></content:encoded>
+			<wfw:commentRss>http://mochuelos.sytes.net/?feed=rss2&amp;p=122</wfw:commentRss>
+		</item>
+		<item>
+		<title>Instalación y configuración de Samba.</title>
+		<link>http://mochuelos.sytes.net/?p=104</link>
+		<comments>http://mochuelos.sytes.net/?p=104#comments</comments>
+		<pubDate>Mon, 06 Oct 2008 03:16:15 +0000</pubDate>
+		<dc:creator>Sakhrull</dc:creator>
+		
+		<category><![CDATA[Linux]]></category>
+
+		<category><![CDATA[Mandriva]]></category>
+
+		<category><![CDATA[samba]]></category>
+
+		<category><![CDATA[Ubuntu]]></category>
+
+		<guid isPermaLink="false">http://192.168.0.10/?p=56</guid>
+		<description><![CDATA[
+
+Introducción
+Samba es una implementación libre del protocolo de archivos compartidos de Microsoft Windows (antiguamente llamado SMB, renombrado recientemente a CIFS) para sistemas de tipo UNIX. De esta forma, es posible que ordenadores con Linux, Mac OS X o Unix en general se vean como servidores o actúen como clientes en redes de Windows. Samba también [...]]]></description>
+			<content:encoded><![CDATA[<p style="text-align: justify;">
+<p style="text-align: center;"><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/10/logo-samba2.jpg"><img class="size-medium wp-image-72 aligncenter" title="logo-samba2" src="http://sakhrull.sytes.net/wp-content/uploads/2008/10/logo-samba2.jpg" alt="" width="342" height="157" /></a></p>
+<p style="text-align: justify;"><span style="color: #000000;"><strong><span style="text-decoration: underline;">Introducción</span></strong></span></p>
+<p style="text-align: justify;"><strong>Samba</strong> es una implementación libre del protocolo de archivos compartidos de Microsoft Windows (antiguamente llamado <span class="mw-redirect">SMB</span>, renombrado recientemente a CIFS) para sistemas de tipo <span class="mw-redirect">UNIX</span>. De esta forma, es posible que ordenadores con Linux, Mac OS X o Unix en general se vean como servidores o actúen como clientes en redes de Windows. Samba también permite validar usuarios haciendo de Controlador Principal de Dominio (<span class="new">PDC</span>), como miembro de dominio e incluso como un dominio Active Directory para redes basadas en Windows; aparte de ser capaz de servir colas de impresión, directorios compartidos y autenticar con su propio archivo de usuarios.<span id="more-104"></span></p>
+<p style="text-align: justify;">Samba configura directorios Unix/Linux (incluyendo sus subdirectorios) como recursos para compartir a través de la red. Para los usuarios de Microsoft Windows, estos recursos aparecen como carpetas normales de red. Los usuarios de Linux pueden montar en sus sistemas de archivos estas unidades de red como si fueran dispositivos locales, o utilizar la orden <tt>smbclient</tt> para conectarse a ellas. Cada directorio puede tener diferentes permisos de acceso sobrepuestos a las protecciones del sistema de archivos que se esté usando en Linux. Por ejemplo, las carpetas <em>home</em> pueden tener permisos de lectura y escritura para cada usuario, permitiendo que cada uno acceda a sus propios archivos; sin embargo, deberemos cambiar los permisos de los archivos localmente para dejar al resto ver nuestros archivos, ya que con dar permisos de escritura en el recurso no será suficiente.</p>
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>Instalación:</strong></span></p>
+<p style="text-align: justify;">El primer paso es instalar el servicio <strong>SAMBA</strong>, para ello ejecutamos una consola y logueamos como <strong>ROOT</strong>, escribimos <strong>“su”</strong> e introducimos la contraseña de root.</p>
+<p style="text-align: justify;">Una vez realizado este paso nos disponemos a instalar el servicio, escribimos <strong>“urpmi samba”</strong> y nos pregunta si queremos instalar los paquetes, contestamos que si y automáticamente comienza a descargar los paquetes necesarios del ftp de nuestra distribución. Cuando la descarga haya concluido se instalan dichos paquetes.</p>
+<p style="text-align: center;"><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instantanea0.png"><img class="size-medium wp-image-46 aligncenter" title="instantanea0" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instantanea0.png" alt="" width="432" height="324" /></a></p>
+<p style="text-align: justify;">
+<p style="text-align: justify;"><span style="text-decoration: underline;"><strong>Configuración:</strong></span></p>
+<p style="text-align: justify;">Ahora tenemos que crear los usuarios en Linux, este paso lo hemos podido realizar en la instalación del sistema operativo, sino a sido este el caso tendremos que hacerlo ahora. Para ello haremos lo siguiente:</p>
+<p style="text-align: center;"><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instantanea0.png"><img class="size-medium wp-image-46 aligncenter" title="instantanea0" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instantanea0.png" alt="" width="429" height="322" /></a></p>
+<p style="text-align: justify;"><strong># adduser usuario</strong> (donde “usuario” es el nombre del usuario que queremos agregar.)</p>
+<p style="text-align: justify;"><strong># passwd usuario</strong> (donde “usuario” es el nombre del usuario creado, utilizaremos este comando para asignarle una contraseña, debemos ingresar 2 veces dicha contraseña para confirmarla.)</p>
+<p style="text-align: justify;">Haremos esto con todos los usuarios necesarios, una vez concluido este proceso podemos comprobar si su creación ha sido satisfactoria utilizando la herramienta de entorno gráfico <strong>USERDRAKE</strong>, para ello escribimos en la consola de comandos userdrake estando logueados como root. Esta herramienta también nos permite la creación y gestión de usuarios y grupos en modo gráfico.</p>
+<p style="text-align: justify;">El siguiente paso es añadir todos los usuarios a Samba, esto lo haremos mediante el comando:</p>
+<p style="text-align: justify;"><strong># smbpasswd –a usuario</strong> (donde usuario es el nombre del usuario creado anteriormente en Linux)</p>
+<p style="text-align: justify;">Nos pide que introduzcamos una contraseña para el usuario samba, asignaremos la misma contraseña que pusimos para el usuario Linux para evitar conflictos. Es muy importante agregar a Samba el usuario root ya que será necesario loguearse como root desde el equipo cliente para agregar la maquina Windows al dominio.</p>
+<p style="text-align: center;"><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instantanea2.png"><img class="size-medium wp-image-47 aligncenter" title="instantanea2" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instantanea2.png" alt="" width="429" height="322" /></a></p>
+<p style="text-align: justify;">Ahora creamos dos grupos, uno llamado usuarios y otro administradores, para ello escribimos lo siguiente:</p>
+<p style="text-align: justify;"><strong># groupadd usuarios</strong><br />
+<strong><br />
+# groupadd administradores</strong></p>
+<p style="text-align: justify;">Agregamos los usuarios creados a su grupo correspondiente, esto lo haremos mediante el comando:</p>
+<p style="text-align: justify;"><strong> gpasswd –a usuario grupo</strong> (donde “usuario” es el nombre del usuario a agregar y “grupo” el nombre del grupo)</p>
+<p style="text-align: justify;"><span style="color: #000000;">La siguiente tabla muestra un ejemplo que indica a qué grupo pertenece cada usuario:</span></p>
+<p style="text-align: justify;"><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/10/tabla.jpg"><img class="size-medium wp-image-63 aligncenter" title="tabla" src="http://sakhrull.sytes.net/wp-content/uploads/2008/10/tabla.jpg" alt="" width="465" height="86" /></a></p>
+<p style="text-align: justify;"><span style="color: #000000;">El siguiente paso es uno de los más importantes para la configuración de <strong>SAMBA</strong>, vamos a modificar el fichero de configuración de samba. Este fichero se encuentra en la ruta <strong>/etc/samba/smb.conf</strong> para proceder con su configuración escribimos:</span></p>
+<p style="text-align: justify;"><strong># vi /etc/samba/smb.conf</strong></p>
+<p style="text-align: justify;">A continuación se muestra todo el fichero de configuración, prácticamente todos los comandos utilizados están comentados en español, con un poco de ayuda de un traductor.</p>
+<p style="text-align: justify;"><em>[global]</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Este parámetro controla en qué grupo de trabajo aparecerá su<br />
+#    servidor cuando sea consultado por los clientes. Tenga en cuenta<br />
+#    que este parámetro también controla el nombre de dominio.</em></span></p>
+<p style="text-align: justify;"><em>workgroup = proyecto</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Este parámetro fija en nombre NetBIOS por el cual es conocido el<br />
+#    servidor Samba.<br />
+</em></span><em><br />
+netbios name = proyectoserv</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Este parámetro controla que cadena aparecerá en el cuadro de<br />
+#    comentario de la conexión IPC en &#8220;net view&#8221;. También fija qué<br />
+#    aparecerá en las listas    después del nombre del equipo.</em></span></p>
+<p style="text-align: justify;"><em>server string = Proyecto PDC</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Esta opción permite sobreponer el nombre del fichero de<br />
+#    registros de Samba.</em></span></p>
+<p style="text-align: justify;"><em>log file = /var/log/samba/%m.log</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Esta opción (un entero en kbytes) especifica el tamaño máximo<br />
+#    hasta el que podrá crecer el fichero de registro. Samba<br />
+#    periódicamente comprueba el tamaño y si excede este valor lo<br />
+#    renombra añadiendo la extensión .old Un tamaño 0 significa<br />
+#    ilimitado.</em></span></p>
+<p style="text-align: justify;"><em>max log size = 500</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Esta opción afecta a como los clientes responden a Samba y es<br />
+#    uno de los valores más importantes del fichero smb.conf<br />
+#    Es el valor por defecto de seguridad en Samba 3.0. Con el nivel<br />
+#    de seguridad user un cliente tiene que conectarse con un nombre<br />
+#    de usuario y clave válidos (que se puede aplicar usando el<br />
+#    parámetro USERNAME MAP). También se pueden usar claves cifradas<br />
+#    (ver el parámetro ENCRYPT PASSWORDS) en este modo de seguridad.<br />
+</em></span><em><br />
+security = user</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Este parámetro lógico controla si las claves cifradas se<br />
+#    negocian con un cliente. Observe que Windows NT 4.0 y<br />
+#    superiores, por defecto esperan claves cifradas salvo que<br />
+#    modifiquemos una entrada del registro. Para que las claves<br />
+#    cifradas funcionen correctamente se debe tener acceso al fichero<br />
+#    local SMBPASSWD.</em></span></p>
+<p style="text-align: justify;"><em>encrypt passwords = yes</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Esta opción fija el path (ruta) del fichero SMBPASSWD cifrado.</em></span></p>
+<p style="text-align: justify;"><em>smb passwd file = /etc/samba/smbpasswd</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    El valor del parámetro permite indicar niveles de depuración<br />
+#    (niveles de registro) en el fichero smb.conf.</em></span></p>
+<p style="text-align: justify;"><em>log level = 2</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Esta opción le permite poner las opciones de socket para usarlas<br />
+#    cuando hable con el cliente. Las opciones de socket son<br />
+#    controles sobre la distribución de red de    los sistemas operativos<br />
+#    que permiten ajustar la conexión. Esta opción se usará<br />
+#    típicamente para ajustar su servidor Samba para unas<br />
+#    prestaciones óptimas para su red local.<br />
+#    Si está en una red local una de las opciones posibles a utilizar<br />
+#    sería IPTOS_LOWDELAY también puede ser válida la opción<br />
+#    IPTOS_LOWDELAY TCP_NODELAY.</em></span></p>
+<p style="text-align: justify;"><em>socket options = IPTOS_LOWDELAY</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Este entero controla el nivel en que se anuncia samba a si mismo<br />
+#    para la elección de examinador. Este parámetro determina si NMBD<br />
+#    tiene oportunidad de convertirse en examinador principal del<br />
+#    GRUPO DE TRABAJO en el área de difusión local.</em></span></p>
+<p style="text-align: justify;"><em>os level = 65</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Esta opción permite a NMBD intentar y constituirse en examinador<br />
+#    principal de listas en una subred. Si se pone a NO entonces NMBD<br />
+#    no intentará ser el examinador principal    en una subred y también<br />
+#    perderá elecciones de listado. Poner este valor a TRUE no<br />
+#    significa que Samba se convierta en examinador principal de la<br />
+#    subred, sólo que NMBD participará en la elección del examinador<br />
+#    principal de listas local.</em></span></p>
+<p style="text-align: justify;"><em>local master = yes</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Si se pone como YES, el servidor Samba como controlador primario<br />
+#    de dominio (PDC) servirá registros de dominio WINDOWS 95 para el<br />
+#    GRUPO DE TRABAJO. Observe que este parámetro se debe usar<br />
+#    conjuntamente con la opción DOMAIN MASTER.<br />
+</em></span><em><br />
+domain logons = yes</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Activa la comparación de lista WAN. Este parámetro indica a NMBD<br />
+#    que solicite un nombre NETBIOS de dominio especial que lo<br />
+#    identifica como examinador principal del dominio para el GRUPO<br />
+#    DE TRABAJO dado. Si DOMAIN LOGONS = YES entonces el<br />
+#    comportamiento predeterminado es activar el parámetro DOMAIN<br />
+#    MASTER.</em></span></p>
+<p style="text-align: justify;"><em>domain master = yes</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Este parámetro booleano controla si Samba es un examinador<br />
+#    principal de listas principal    para su grupo de trabajo. Si se<br />
+#    pone a YES, al iniciar, Samba forzará una elección y    tendrá una<br />
+#    ligera ventaja para ganar la elección. Es recomendable que este<br />
+#    parámetro se use en conjunción con DOMAIN MASTER = YES, para que<br />
+#    Samba pueda garantizar convertirse en un DOMAIN MASTER.<br />
+#    Use esta opción con precaución, porque si hay varios host<br />
+#    (servidores SAMBA, WINDOWS o NT) que son examinadores de listas<br />
+#    preferidos en la misma subred, intentarán continua<br />
+#     periódicamente convertirse en examinador principal local. Esto </em></span><em><br />
+<span style="color: #800000;">#    ocasiona un tráfico de difusión innecesario y reduce las<br />
+#    capacidades de las listas.</span></em></p>
+<p style="text-align: justify;"><em>preferred master = yes</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Esta opción le permite especificar un fichero que contiene una<br />
+#    asociación de nombres de usuarios de los clientes del servidor.<br />
+#    Puede ser útil para varios propósitos. El más común es asociar<br />
+#    usuarios que utilizan maquinas DOS o WINDOWS a los que tiene la<br />
+#    maquina UNIX.<br />
+#    La otra es asociar múltiples usuarios a un nombre simple para<br />
+#    que pueda compartir ficheros con más facilidad.<br />
+#    La asociación se analiza línea a línea, cada línea contiene un<br />
+#    nombre UNIX a la izquierda de un &#8221; = &#8221; seguido por una lista de<br />
+#    nombres de usuario a la derecha. La lista de usuarios de la<br />
+#    derecha puede contener nombres de la forma @grupo en cuyo caso<br />
+#    serán los usuarios del grupo correspondiente. El cliente<br />
+#    especial llamado &#8221; * &#8221; es una plantilla que equivale a<br />
+#    cualquier nombre.<br />
+#    El fichero se procesa en cada línea tomando el nombre<br />
+#    suministrado comparándolo con cada nombre    de usuario de la<br />
+#    derecha entonces se sustituye por el usuario cuyo nombre está a<br />
+#    la izquierda del &#8221; = &#8220;. El proceso continúa en la siguiente<br />
+#    línea.</em></span></p>
+<p style="text-align: justify;"><em>username map = /etc/samba/smbusers</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Este parámetro determina si NMBD se anuncia él mismo como<br />
+#    servidor de hora para los clientes Windows.</em></span></p>
+<p style="text-align: justify;"><em>time server = yes</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Este parámetro booleano controla si Samba actúa como servidor<br />
+#    WINS. No debería ponerlo como YES salvo que tenga una red MULTI-<br />
+#    SUB-RED y quiera que un NMBD particular sea su servidor WINS.<br />
+#    Tenga en cuenta que NUNCA debería poner esto como TRUE en más de<br />
+#    una maquina de su red.</em></span></p>
+<p style="text-align: justify;"><em>wins support = yes</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Especifica que NMBD, cuando actúa como servidor WINS debería<br />
+#    tratar, cuando busque un nombre NETBIOS, el nombre NETBIOS<br />
+#    palabra a palabra como un nombre DNS. Tiene que tener en cuenta<br />
+#    que la máxima longitud para un nombre NETBIOS es de 15<br />
+#    caracteres, y por lo tanto el nombre DNS    puede tener como máximo<br />
+#    15 caracteres.</em></span></p>
+<p style="text-align: justify;"><em>dns proxy = yes</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Esta opción se usa en los programas Samba para determinar qué<br />
+#    servicios de nombres y en qué    orden resolver nombres de hosts a<br />
+#    direcciones IP. Su principal función es controlar como se<br />
+#    realiza la resolución NETBIOS. Esta opción toma una cadena,<br />
+#    separada por espacios, de diferentes opciones de resolución.<br />
+#    Las opciones son &#8220;lmhosts&#8221;, &#8220;host&#8221;, &#8220;wins&#8221; y &#8220;bcast&#8221;.</em></span></p>
+<p style="text-align: justify;"><em>name resolve order = wins lmhosts hosts bcast</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Esta es la ruta completa a un guion que smbd(8) ejecutará COMO<br />
+#    ROOT bajo ciertas circunstancias descritas más abajo.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Normalmente, un servidor Samba requiere que se creen los<br />
+#    usuarios UNIX para todos los usuarios que accedan a los ficheros<br />
+#    del servidor. En los sitios que usan bases de datos de cuentas<br />
+#    Windows NT como su base de datos primaria, la creación de estos<br />
+#    usuarios y el mantenimiento de la lista de usuarios en sincronía<br />
+#    con el PDC Windows NT es una tarea pesada. Esta opción permite a<br />
+#    smbd crear los usuarios UNIX requeridos BAJO DEMANDA cuando un<br />
+#    usuario accede al servidor Samba.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Para usar esta opción, smbd(8) NO tiene que estar configurado<br />
+#    con la opción security = share y add user script tiene que<br />
+#    ponerse con la ruta completa hacia un guion que cree un usuario<br />
+#    UNIX dado un argumento %u, que se expande al usuario UNIX que<br />
+#    hay que crear.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Cuando el usuario Windows intenta acceder al servidor Samba, en<br />
+#    el momento de iniciar la sesión (configuración de la sesión en<br />
+#    el protocolo SMB), smbd(8) contacta con el servidor de claves<br />
+#    (password server) e intenta validar el usuario dado con la clave<br />
+#    suministrada. Si la validación es efectiva, smbd intenta<br />
+#    localizar un usuario UNIX en la base de datos de usuarios UNIX<br />
+#    al que asociar el usuario Windows. Si la búsqueda falla, y add<br />
+#    user script esta activado, smbd llamará al guion especificado<br />
+#    como ROOT, expandiendo cualquier argumento %u al nombre de<br />
+#    usuario que tiene que crearse.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Si este guion consigue crear el usuario, entonces smbd<br />
+#    continuará como si el usuario UNIX existiera con anterioridad.<br />
+#    De esta forma, los usuarios UNIX se crean dinámicamente para<br />
+#    concordar con las cuentas Windows NT existentes. </em></span></p>
+<p style="text-align: justify;"><em>add user script = /usr/sbin/useradd -d /dev/null -s /bin/false -g samba -M %u</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    La ruta completa a un script que se llama cuando se agrega un<br />
+#    usuario a un grupo usando las herramientas de administración<br />
+#    del dominio de Windows NT. smbd(8) ejecutará el script como<br />
+#    ROOT. Cualquier %g se sustituye por el nombre del grupo y %u<br />
+#    por el nombre de usuario.</em></span></p>
+<p style="text-align: justify;"><em>add user to group script = /usr/sbin/groupmod -m &#8220;%u&#8221; &#8220;%g&#8221;</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Esta es la ruta completa a un guion que smbd(8) ejecutará cuando<br />
+#    agregue una máquina a su dominio usando el método con las<br />
+#    contraseñas y claves del administrador.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Esta opción sólo se necesita cuando se usan sistemas sam<br />
+#    enlazados a los uid Unix para calcular RID, como smbpasswd.<br />
+#    Esta opción sólo está disponible en Samba 3.0.</em></span></p>
+<p style="text-align: justify;"><em>add machine script = /usr/sbin/adduser -n -g maquinas -c Maquinas -d /dev/null -s /bin/false %u</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    DELETE USER SCRIPT (GLOBALS)</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Este parámetro indica la ruta completa a un script que se<br />
+#    ejecutará cuando gestione los usuarios mediante las herramientas<br />
+#    RPC (NT) remotas.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Este script se llama cuando se elimina un usuario del servidor,<br />
+#    normalmente usando &#8216;User Manager for Domains&#8217; o rpcclient.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Este script debería borrar el nombre Unix dado.</em></span></p>
+<p style="text-align: justify;"><em>delete user script = /usr/sbin/userdel &#8220;%u&#8221;</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    DELETE GROUP SCRIPT (GLOBALS)</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Este parámetro indica la ruta completa a un script que se<br />
+#    ejecutará como ROOT mediante smbd(8) cuanto se solicite la<br />
+#    eliminación de un grupo. En la llamada %g representa el nombre<br />
+#    del grupo pasado. Este script sólo es útil para redes en las que<br />
+#    se use las herramientas de gestión del dominio de NT.</em></span></p>
+<p style="text-align: justify;"><em>delete group script = /usr/sbin/groupdel &#8220;%g&#8221;</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Este parámetro indica la ruta completa a un script que se<br />
+#    ejecutará como ROOT mediante smbd(8) cuanto se solicite la<br />
+#    eliminación de un usuario de un grupo usando las herramientas<br />
+#    administrativas del dominio de Windows NT. Cualquier %g se<br />
+#    sustituye por el nombre de grupo y cualquier %u por el nombre de<br />
+#    usuario.</em></span></p>
+<p style="text-align: justify;"><em>delete user from group script = /usr/sbin/groupmod -x &#8220;%u&#8221; &#8220;%g&#8221;</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    ADMIN USERS (SECURITY)</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Aquí se suministra una lista de usuarios a los que se les<br />
+#    garantizan privilegios sobre el recurso compartido. Esto<br />
+#    significa que realizarán todas las operaciones de ficheros como<br />
+#    superusuario (root).</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Debería usar esta opción con mucho cuidado, ya que cualquier<br />
+#    usuario de esta lista podrá hacer cualquier cosa que quiera en<br />
+#    el recurso, independientemente del permiso de los ficheros. </em></span></p>
+<p style="text-align: justify;"><em>admin users = @administradores</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Esto es una lista de usuarios que pueden hacer cualquier cosa<br />
+#    con las impresoras mediante las interfaces de administración<br />
+#    remota proporcionadas por MS-RPC (normalmente usando NT<br />
+#    workstation). Observe que el usuario root siempre tiene<br />
+#    derechos administrativos.</em></span></p>
+<p style="text-align: justify;"><em>printer admin = @administradores</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    SOCKET OPTIONS (GLOBALS)</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Esta opción le permite poner las opciones de socket para usarlas<br />
+#    cuando hable con el cliente.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Las opciones de socket son controles sobre la distribución de<br />
+#    red de los sistemas operativos que permiten ajustar la conexión.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Esta opción se usará típicamente para ajustar su servidor Samba<br />
+#    para unas prestaciones óptimas para su red local. No hay forma<br />
+#    de que Samba pueda saber cuáles son los parámetros óptimos para<br />
+#    su red, y por tanto tiene que experimentar y elegirlos vd.<br />
+#    mismo. Le sugiero encarecidamente que lea la documentación<br />
+#    apropiada para su sistema operativo antes    (quizás &#8220;man<br />
+#    setsockopt&#8221; le podrá ayudar).</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Puede encontrar que en algunos sistemas Samba dice &#8220;Unknown<br />
+#    socket option&#8221; cuando suminstra una opción. Esto significa<br />
+#    que la ha introducido mal o que necesita añadir un fichero<br />
+#    include a includes.h para su S.O. Si es el último caso por<br />
+#    favor envíeme el parche a samba-technical@samba.org.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Cualquiera de las opciones de socket soportadas se pueden<br />
+#    combinar de cualquier forma que quiera, mientras se lo permita<br />
+#    su sistema operativo.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Esta es una lista de opciones de socket que actualmente se<br />
+#    pueden usar en esta opción:</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    SO_KEEPALIVE<br />
+#    SO_REUSEADDR<br />
+#    SO_BROADCAST<br />
+#    TCP_NODELAY<br />
+#    IPTOS_LOWDELAY<br />
+#    IPTOS_THROUGHPUT<br />
+#    SO_SNDBUF *<br />
+#    SO_RCVBUF *<br />
+#    SO_SNDLOWAT *<br />
+#    SO_RCVLOWAT *</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Los que están marcados con un &#8216;*&#8217; toman un argumento entero. Los<br />
+#    otros pueden tomar opcionalmente un 1 o un 0 para activar<br />
+#    o desactivar la opción, por defecto estarán activados si no<br />
+#    especifica 1 o 0.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Para especificar un argumento use la sintaxis<br />
+#    ALGUNA_OPCION=VALOR, por ejemplo SO_SNDBUF=8192. Observe que no<br />
+#    puede tener espacios antes o después del =.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Si está en una red local entonces una opción sensible puede ser:</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    socket options = IPTOS_LOWDELAY</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Si tiene una red local podría intentar:</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    socket options = IPTOS_LOWDELAY TCP_NODELAY</em></span></p>
+<p style="text-align: justify;"><em>socket options = IPTOS_LOWDELAY TCP_NODELAY</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    LOGON HOME (GLOBALS)<br />
+#    Este parámetro especifica la ubicación del directorio home<br />
+#    cuando se conectan estaciones Win95/98 a un PDC Samba.</em></span></p>
+<p style="text-align: justify;"><em>logon home = \\%L\%U</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    LOGON PATH (GLOBALS)<br />
+#    Este parámetro indica el directorio home donde se guardan los<br />
+#    ficheros de perfiles (NTuser.dat para windows NT).A diferencia<br />
+#    de versiones previas, no tiene nada que hacer con los perfiles<br />
+#    de W9X.</em></span></p>
+<p style="text-align: justify;"><em>logon path =</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    LOGON DRIVE (GLOBALS)<br />
+#    Este parámetro especifica el path local al cual se conectarán<br />
+#    los directorios home (vea logon home) y sólo lo usan    las<br />
+#    estaciones de trabajo NT.</em></span></p>
+<p style="text-align: justify;"><em>logon drive = H:</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    PRESERVE CASE (SECURITY)<br />
+#    Este parámetro controla si los nuevos nombres de ficheros se<br />
+#    crean de la misma forma que el cliente indica, o si se fuerza al<br />
+#    valor predeterminado por default case  ( may o min).</em></span></p>
+<p style="text-align: justify;"><em>preserve case = yes</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Esto controla si los nuevos nombres de ficheros cortos, 8+3 y<br />
+#    todo en mayúsculas, se crean como los pasa el cliente, o si se<br />
+#    fuerza su conversión al valor por defecto default case<br />
+#    (mayúsculas o minúsculas). Esta opción se puede usar    con<br />
+#    preserve case = yes para permitir a los nombres largos de<br />
+#    ficheros guardar su estado mientras que nombres cortos se pasan<br />
+#    a minúsculas.</em></span></p>
+<p style="text-align: justify;"><em>short preserve case = yes</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    UNIX PASSWORD SYNC (GLOBALS)<br />
+#    Este parámetro booleano controla si Samba intenta sincronizar<br />
+#    las claves UNIX con las claves SMB cuando la clave cifrada    SMB<br />
+#    del fichero smbpasswd se modifica. Si se pone como yes, el<br />
+#    programa &#8216;passwd program&#8217; se llama *COMO ROOT* - para permitir<br />
+#    que la nueva clave UNIX se ponga sin acceder a la clave UNIX<br />
+#    antigua (ya que la clave SMB ha cambiado el código no tiene<br />
+#    acceso a la antigua clave no cifrada, sólo a la nueva).</em></span></p>
+<p style="text-align: justify;"><em>unix password sync = yes</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    PASSWD PROGRAM (GLOBALS)<br />
+#    El nombre de un programa que se puede usar para asignar claves<br />
+#    de usuarios UNIX. Cualquier ocurrencia de %u se sustituye por el<br />
+#    nombre de usuario. Se comprueba la existencia del nombre de<br />
+#    usuario antes de llamar al programa de cambio de contraseña.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    También tiene que tener en cuenta que muchos programas passwd<br />
+#    insisten en claves &#8220;razonables&#8221;, tales como longitud mínima, o<br />
+#    inclusión de distintos tipo de caracteres y dígitos. Esto puede<br />
+#    ser un problema en algunos clientes (como Windows para trabajo<br />
+#    en grupos) que envían claves en mayúsculas.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Observe que si el parámetro unix password sync está como &#8220;True&#8221;<br />
+#    este programa se llama como ROOT antes de que la clave SMB<br />
+#    del fichero smbpasswd se cambie. Si la modificación de la clave<br />
+#    UNIX falla, entonces smbd fallará en el cambio de la clave<br />
+#    SMB también (esto es por diseño).</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Si el parámetro unix password sync está activo TIENE QUE USAR<br />
+#    RUTAS ABSOLUTAS para TODOS los programas que se llamen.<br />
+#    Observe que por defecto unix password sync está como &#8220;no&#8221;. </em></span></p>
+<p style="text-align: justify;"><em>passwd program = /usr/bin/passwd %u</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    PASSWD CHAT (GLOBALS)<br />
+#    Esta cadena controla la conversación &#8220;chat&#8221; que tiene lugar<br />
+#    entre smbd y el programa local de cambio de claves para cambiar<br />
+#    la clave del usuario. La cadena describe una secuencia<br />
+#    de pares respuesta-recepción que smbd usa para determinar<br />
+#    qué enviar al passwd program y qué espera que le devuelva. Si no<br />
+#    se recibe la respuesta esperada entonces no se modifica la<br />
+#    clave.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Esta secuencia chat es con frecuencia específica del sitio,<br />
+#    dependiendo de qué métodos locales se usan para el control<br />
+#    de claves (como NIS+ etc).</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Observe que este parámetro se usa sólo si unix password sync<br />
+#    está como yes. Esta secuencia se llama COMO ROOT cuando se<br />
+#    cambia la contraseña SMB en el fichero smbpasswd sin acceso a la<br />
+#    antigua contraseña en texto sin cifrar. Esto significa que el<br />
+#    root tiene que poder cambiar la contraseña del usuario sin saber<br />
+#    el texto de la contraseña previa. En la presencia de NIS/YP, esto<br />
+#    significa que passwd program se tiene que ejecutar en el NIS<br />
+#    master.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    La cadena puede contener la %n que se sustituye por la claves<br />
+#    nueva. También puede contener las macro estándar \\n, \\r, \\t<br />
+#    y \\s asignar line-feed, retorno de carro, tab y espacio. La<br />
+#    cadena también puede contener un * que equivale a cualquier<br />
+#    secuencia de caracteres. Se pueden usar comillas dobles para<br />
+#    cadenas que contengan espacios en blanco.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Si la cadena enviada en cualquier parte de la secuencia chat es<br />
+#    un punto final &#8220;.&#8221; entonces no se envía ninguna cadena. De forma<br />
+#    similar con la cadena esperada si es un punto y aparte entonces<br />
+#    no se espera ningún string. </em></span></p>
+<p style="text-align: justify;"><em>passwd chat = *Enter\snew\sUNIX\spassword:* %n\n *Retype\snew\sUNIX\spassword:* %n\n *password\supdated\successfully*</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    FORCE DIRECTORY MODE (S)<br />
+#    Este parámetro especifica un conjunto de bits de modos de<br />
+#    permisos UNIX que siempre se asignarán a un directorio creado<br />
+#    por Samba. Esto se hace mediante un OR de estos bits con los<br />
+#    bits de modo del directorio que se va a crear. El valor por<br />
+#    defecto de este parámetro es 0000 (en octal) que no añade ningún<br />
+#    bit de permiso extra al directorio creado. Esta operación se<br />
+#    realiza tras aplicar la máscara especificada en el parámetro<br />
+#    directory mask .</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    El ejemplo de más abajo forzaría que todos los directorios<br />
+#    creados tengan permisos de lectura y ejecución para grupo y<br />
+#    otros    así como permisos de lectura/escritura/ejecución para el<br />
+#    propietario.</em></span></p>
+<p style="text-align: justify;"><em>force directory mode = 755</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    FORCE CREATE MODE (S)<br />
+#    Este parámetro especifica un conjunto de bits de permisos de<br />
+#    modos UNIX que siempre se asignarán en un fichero creado por<br />
+#    Samba. Esto se hace mediante una operación OR de estos bits<br />
+#    sobre los bits de modo del fichero que se va a crear. El valor<br />
+#    por defecto para este parámetro es (en octal) 000. Los modos de<br />
+#    este parámetro se aplican tras efectúan un OR con el modo del<br />
+#    fichero tras poner la máscara fijada en create mask .</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    El ejemplo de más abajo forzaría que todos los ficheros creados<br />
+#    tengan permisos de lectura y ejecución para grupo y otros así<br />
+#    como permisos de lectura/escritura/ejecución para el<br />
+#    propietario. </em></span></p>
+<p style="text-align: justify;"><em>force create mode = 000</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    FORCE GROUP (S)<br />
+#    Este parámetro especifica un nombre de grupo UNIX que se<br />
+#    asignará como grupo primario por defecto para todos los usuarios<br />
+#    que se conecten a este servicio. Es útil para compartir ficheros<br />
+#    asegurándonos de que todos los accesos a ficheros del servicio<br />
+#    usarán el grupo indicado para sus verificación de permisos. Así<br />
+#    asignando permisos para este grupo a los ficheros y directorios<br />
+#    de este servicio, el administrador de Samba puede restringir o<br />
+#    permitir el compartir estos ficheros.<br />
+</em></span><em><br />
+force group =</em></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    FORCE USER (S)<br />
+#     Este parámetro especifica un nombre de usuario con el que se<br />
+#    harán todas las conexiones a este servicio. Este parámetro puede<br />
+#    ser útil para compartir ficheros. Debe usarlo con cuidado, ya<br />
+#    que un uso incorrecto puede ocasionar problemas de seguridad.</em></span></p>
+<p style="text-align: justify;"><span style="color: #800000;"><em>#    Este nombre de usuario sólo obtiene uso una vez que la conexión<br />
+#    se ha establecido. De esta forma todavía necesitan conectarse<br />
+#    como usuarios válidos proporcionando una clave válida. Una vez<br />
+#    conectados, todas las operaciones con ficheros se ejecutarán<br />
+#    como el &#8220;force user&#8221;, no importa con qué nombre de usuario se ha<br />
+#    conectado. Esto puede ser muy útil. </em></span></p>
+<p style="text-align: justify;"><em>force user =</em></p>
+<p style="text-align: justify;"><em>[homes]</em></p>
+<p style="text-align: justify;"><em>comment = Directorios Particular de Usuario<br />
+path = /home/%U<br />
+writable = yes<br />
+browseable = no</em></p>
+<p style="text-align: justify;"><em>[netlogon]<br />
+comment = Network Logon Service<br />
+path = /var/lib/samba/netlogon<br />
+read only = yes<br />
+write list = root<br />
+browseable = no</em></p>
+<p style="text-align: justify;"><em>[PROYECTO]</em></p>
+<p style="text-align: justify;"><em>comment = Proyecto<br />
+path = /home/proyecto/PROYECTO<br />
+browseable = yes<br />
+writable = yes<br />
+create mode = 0777<br />
+directory mode = 0777<br />
+public = no<br />
+valid users = @usuarios</em></p>
+<p style="text-align: justify;">En mi caso he compartido el directorio <strong>PROYECTO</strong>, hemos de crearlo previamente en la ruta que elijamos, para ello usamos el comando:</p>
+<p style="text-align: justify;"><strong># mkdir /home/proyecto/PROYECTO</strong></p>
+<p style="text-align: justify;">Asignamos los privilegios de lectura y escritura para el directorio de la siguiente forma:</p>
+<p style="text-align: justify;"><strong># chmod 777 /home/proyecto/PROYECTO</strong></p>
+<p style="text-align: justify;">No es necesario crear un nuevo directorio para compartir, simplemente indicaremos la ruta del directorio que queremos que sea compartido en la etiqueta <em>&#8220;path =&#8221;.</em></p>
+<p style="text-align: justify;">Reiniciamos el servicio samba, para ello escribimos:</p>
+<p style="text-align: justify;"><strong># /etc/init.d/samba restart</strong></p>
+<p style="text-align: center;"><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instantanea5.png"><img class="aligncenter size-medium wp-image-48" title="instantanea5" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instantanea5.png" alt="" width="507" height="83" /></a></p>
+<p style="text-align: justify;">Ahora podemos acceder al entorno de red desde cualquier equipo de la red y comprobar cómo aparece el icono de nuestro servidor samba, configurado como <strong>Controlador Principal del Dominio</strong>.</p>
+<p style="text-align: center;"><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instantanea6.png"><img class="aligncenter size-medium wp-image-49" title="instantanea6" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instantanea6.png" alt="" width="468" height="336" /></a></p>
+<p style="text-align: justify;">Hacemos doble click para acceder a él y nos pide <strong>usuario</strong> y <strong>contraseña</strong>, introducimos cualquiera de los usuarios y contraseña que hemos creado y accedemos a los recursos compartidos.</p>
+<p style="text-align: justify;">Para agregar una maquina Windows al dominio, hacemos click derecho sobre <strong>MI PC,</strong> pulsamos <strong>Propiedades</strong> y en la pestaña <strong>Nombre del Equipo</strong> pulsamos el botón <strong>Cambiar…</strong></p>
+<p style="text-align: center;"><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/dibujo.jpg"><img class="aligncenter size-medium wp-image-50" title="dibujo" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/dibujo.jpg" alt="" width="312" height="390" /></a></p>
+<p style="text-align: justify;">Marcamos la opción <strong>“Dominio:” </strong>donde dice <strong>“Miembro de”</strong> y escribimos el nombre de nuestro dominio, en este caso <strong>PROYECTO</strong>. Nos pide que introduzcamos un usuario y contraseña válidos para agregar el equipo al dominio, usamos para ello el usuario <strong>ROOT</strong> con su respectiva contraseña y tras unos segundos nos aparecerá el mensaje de bienvenida.</p>
+<p style="text-align: center;"><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/d51.jpg"><img class="aligncenter size-medium wp-image-51" title="d51" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/d51.jpg" alt="" width="214" height="123" /></a></p>
+<p style="text-align: justify;">Debemos reiniciar para que los cambios surtan efecto.</p>
+<p style="text-align: justify;"><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/dibujo.jpg"><br />
+</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://mochuelos.sytes.net/?feed=rss2&amp;p=104</wfw:commentRss>
+		</item>
+		<item>
+		<title>Instalación del S.O. Linux Mandriva Spring 2007.</title>
+		<link>http://mochuelos.sytes.net/?p=70</link>
+		<comments>http://mochuelos.sytes.net/?p=70#comments</comments>
+		<pubDate>Tue, 30 Sep 2008 05:09:45 +0000</pubDate>
+		<dc:creator>Sakhrull</dc:creator>
+		
+		<category><![CDATA[Linux]]></category>
+
+		<category><![CDATA[Mandriva]]></category>
+
+		<guid isPermaLink="false">http://192.168.0.10/?p=16</guid>
+		<description><![CDATA[
+Proceso de Instalación
+Comenzamos con la instalación del S.O. Mandriva Linux Spring 2007, para ello debemos preparar las particiones del disco y habilitar espacio suficiente para instalación. Seguidamente configuramos el arranque de nuestro equipo en la BIOS para que inicie desde la unidad de cdrom.
+Si todo ha ido bien nos aparecerá el menú de instalación del [...]]]></description>
+			<content:encoded><![CDATA[<p style="text-align: center;"><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/10/mandriva-logo-1.jpg"><img class="size-medium wp-image-59 aligncenter" title="mandriva-logo-1" src="http://sakhrull.sytes.net/wp-content/uploads/2008/10/mandriva-logo-1.jpg" alt="" width="479" height="119" /></a></p>
+<p><strong>Proceso de Instalación</strong></p>
+<p>Comenzamos con la instalación del S.O. Mandriva Linux Spring 2007, para ello debemos preparar las particiones del disco y habilitar espacio suficiente para instalación. Seguidamente configuramos el arranque de nuestro equipo en la BIOS para que inicie desde la unidad de cdrom.<span id="more-70"></span></p>
+<p>Si todo ha ido bien nos aparecerá el menú de instalación del S.O.</p>
+<p><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva011.png"><img class="aligncenter size-medium wp-image-17" title="instalacion-mandriva011" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva011.png" alt="" width="300" height="224" /></a></p>
+<p>Elegimos el idioma, en este caso <strong>ESPAÑOL</strong>.</p>
+<p><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva02.png"><img class="aligncenter size-medium wp-image-19" title="instalacion-mandriva02" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva02.png" alt="" width="300" height="225" /></a></p>
+<p>Se muestra el Acuerdo de Licencia, deberemos leerlo y <strong>Aceptar las Condiciones</strong>, pulsamos en <strong>Siguiente</strong>.</p>
+<p><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva03.png"><img class="aligncenter size-medium wp-image-20" title="instalacion-mandriva03" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva03.png" alt="" width="300" height="225" /></a></p>
+<p>Seleccionamos <strong>Español</strong> como la distribución predeterminada del teclado.</p>
+<p>Ahora debemos indicar el nivel de seguridad que tendrá Linux, elegimos la opción <strong>Estándar</strong> ya que posteriormente configuraremos los permisos y accesos al equipo.</p>
+<p>El campo <strong>Administrador de la seguridad</strong> lo dejaremos en blanco, o en su defecto indicaremos que <strong>ROOT</strong> sea el administrador.<br />
+<a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva05.png"><img class="aligncenter size-medium wp-image-24" title="instalacion-mandriva05" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva05.png" alt="" width="300" height="225" /></a></p>
+<p>Dependiendo de cómo hayamos realizado las particiones en el disco debemos elegir una de las siguientes opciones, en este caso elegiremos <strong>“Usar el espacio libre”</strong>.</p>
+<p>Elegimos esta opción ya que hemos dejado sin particionar la parte del disco que va destinada a la instalación de Linux Mandriva, el programa utilizado para realizar las particiones ha sido <strong>ACRONIS DISK DIRECTOR SUITE</strong>. Esta opción automáticamente reconoce este espacio libre y crea las particiones necesarias para la instalación.<br />
+<a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva06.png"><img class="aligncenter size-medium wp-image-25" title="instalacion-mandriva06" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva06.png" alt="" width="300" height="223" /></a></p>
+<p>Vemos como automáticamente crea y formatea las particiones necesarias.</p>
+<p>Si disponemos de algún soporte suplementario (repositorios) desde el que instalar contenidos adicionales para la instalación éste es el momento de indicarlo, en nuestro caso marcaremos Ninguno y pulsamos en siguiente.</p>
+<p><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva08.png"><img class="aligncenter size-medium wp-image-26" title="instalacion-mandriva08" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva08.png" alt="" width="300" height="225" /></a></p>
+<p>En este paso indicamos los grupos de paquetes que queremos instalar, marcaremos las opciones siguientes:</p>
+<p>(No instalaremos ningún paquete del tipo Servidor, ya que su instalación se realizará de forma manual más adelante).<br />
+<a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva09.png"><img class="aligncenter size-medium wp-image-27" title="instalacion-mandriva09" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva09.png" alt="" width="300" height="224" /></a></p>
+<p>Comienza la instalación, que se demorará unos minutos.</p>
+<p>Cuando haya concluido la instalación procederemos con la configuración del S.O., en primer lugar indicamos la contraseña de administrador (ROOT).</p>
+<p><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva11.png"><img class="aligncenter size-medium wp-image-28" title="instalacion-mandriva11" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva11.png" alt="" width="300" height="225" /></a></p>
+<p>A continuación introduciremos los usuarios UNIX que accederán a nuestro servidor, debemos crear al menos un usuario para poder acceder al equipo. Opcionalmente podemos añadir todos los usuarios que necesitemos en este momento.</p>
+<p>Si queremos que nuestro equipo acceda directamente con un usuario determinado habilitamos esta opción e indicamos el usuario y el tipo de entorno gráfico con el que arrancará el S.O.</p>
+<p><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva13.png"><img class="aligncenter size-medium wp-image-29" title="instalacion-mandriva13" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva13.png" alt="" width="300" height="224" /></a></p>
+<p>Elegimos nuestro tipo de monitor, si desconocemos este dato o no aparece en la lista elegimos un monitor genérico dentro de las opciones disponibles, pulsamos en <strong>Siguiente</strong> y se muestra un resumen de la configuración de nuestro sistema, si queremos modificar algún parámetro basta con hacer clic en <strong>CONFIGURAR</strong> del parámetro adecuado.</p>
+<p><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva15.png"><img class="aligncenter size-medium wp-image-30" title="instalacion-mandriva15" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva15.png" alt="" width="300" height="224" /></a></p>
+<p>Mandriva nos brinda la posibilidad de descargar paquetes de actualizaciones para los paquetes instalados, podemos realizar estas actualizaciones ahora o realizar posteriormente la actualización de los paquetes necesarios. Pincharemos en <strong>SI</strong> y en <strong>SIGUIENTE</strong> para proceder con la actualización del sistema.</p>
+<p>Elegimos nuestro país, en este caso ESPAÑA, para acceder al FTP correspondiente y descargar los paquetes de actualizaciones.</p>
+<p><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva17.png"><img class="aligncenter size-medium wp-image-31" title="instalacion-mandriva17" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva17.png" alt="" width="300" height="224" /></a></p>
+<p>El siguiente paso es indicar que paquetes se instalarán, añadiremos la última versión tanto de <strong>kernel</strong> como <strong>kernel-source</strong>, si instalamos el paquete <strong>kernel-latest</strong> nos aseguramos que siempre tendremos el último kernel disponible. Podemos marcar cualquier paquete que creamos necesario, sin embargo en este caso no se han instalado otros paquetes, ya que se procederá a la instalación manual de todos ellos.</p>
+<p><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva18.png"><img class="aligncenter size-medium wp-image-32" title="instalacion-mandriva18" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva18.png" alt="" width="300" height="224" /></a></p>
+<p>Una vez concluida la instalación de las actualizaciones (suele demorarse unos minutos, dependiendo del número de paquetes seleccionados), nos aparece un asistente para registrar nuestro S.O.</p>
+<p>Si queremos registrar nuestra distribución seguiremos el asistente, en este caso pulsaremos en <strong>OMITIR ASISTENTE</strong> y ya tendremos instalado nuestro <strong>MANDRIVA LINUX SPRING 2007</strong>.</p>
+<p><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva21.png"><img class="aligncenter size-medium wp-image-34" title="instalacion-mandriva21" src="http://sakhrull.sytes.net/wp-content/uploads/2008/09/instalacion-mandriva21.png" alt="" width="300" height="225" /></a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://mochuelos.sytes.net/?feed=rss2&amp;p=70</wfw:commentRss>
+		</item>
+		<item>
+		<title>Introducción a Linux&#8230;</title>
+		<link>http://mochuelos.sytes.net/?p=63</link>
+		<comments>http://mochuelos.sytes.net/?p=63#comments</comments>
+		<pubDate>Tue, 30 Sep 2008 04:51:29 +0000</pubDate>
+		<dc:creator>Sakhrull</dc:creator>
+		
+		<category><![CDATA[Linux]]></category>
+
+		<guid isPermaLink="false">http://192.168.0.10/?p=8</guid>
+		<description><![CDATA[
+Es un sistema operativo que funciona bajo la licencia GPL/GNU (que permite la copia y distribución junto al código fuente y sólo se paga el &#8220;medio físico&#8221;) del conocido sistema operativo UNIX. Es un sistema multitarea y multiusuario para PC´s.
+Linux es una implementación del sistema operativo UNIX (uno más de entre los numerosos clónicos del [...]]]></description>
+			<content:encoded><![CDATA[<p style="text-align: center;"><a href="http://sakhrull.sytes.net/wp-content/uploads/2008/10/linux-inside.png"><img class="size-medium wp-image-144 aligncenter" title="linux-inside" src="http://sakhrull.sytes.net/wp-content/uploads/2008/10/linux-inside.png" alt="" width="370" height="246" /></a></p>
+<p>Es un sistema operativo que funciona bajo la licencia GPL/GNU (que permite la copia y distribución junto al código fuente y sólo se paga el &#8220;medio físico&#8221;) del conocido sistema operativo UNIX. Es un sistema multitarea y multiusuario para PC´s.<span id="more-63"></span></p>
+<p>Linux es una implementación del sistema operativo UNIX (uno más de entre los numerosos clónicos del histórico Unix), pero con la originalidad de ser gratuito y a la vez muy potente, que sale muy bien parado (no pocas veces victorioso) al compararlo con las versiones comerciales para sistemas de mayor envergadura y por tanto teóricamente superiores. Comenzó como proyecto personal del -entonces estudiante- Linus Torvalds, quien tomó como punto de partida otro viejo conocido, el Minix de Andy. S. Tanenbaum (profesor de sistemas operativos que creó su propio sistema operativo Unix en PCs XT para usarlo en su docencia). Actualmente Linus Torvalds lo sigue desarrollando, pero a estas alturas el principal autor es la red Internet, desde donde una gigantesca familia de programadores y usuarios aportan diariamente su tiempo aumentando sus prestaciones y dando información y soporte técnico mutuo. La versión original -y aun predominante- comenzó para PCs compatibles (Intel 386 y superiores), existiendo también en desarrollo versiones para prácticamente todo tipo de plataformas.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://mochuelos.sytes.net/?feed=rss2&amp;p=63</wfw:commentRss>
+		</item>
+	</channel>
+</rss>

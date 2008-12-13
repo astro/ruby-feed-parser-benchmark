@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+
+<channel>
+	<title>mashups.com</title>
+	<atom:link href="http://www.mashups.com/?feed=rss2" rel="self" type="application/rss+xml" />
+	<link>http://www.mashups.com</link>
+	<description></description>
+	<pubDate>Wed, 24 Sep 2008 19:43:05 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6.2</generator>
+	<language>en</language>
+			<item>
+		<title>Hello world!</title>
+		<link>http://www.mashups.com/?p=1</link>
+		<comments>http://www.mashups.com/?p=1#comments</comments>
+		<pubDate>Wed, 24 Sep 2008 13:12:23 +0000</pubDate>
+		<dc:creator>shuki</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://mashups.com/?p=1</guid>
+		<description><![CDATA[Welcome to WordPress.
+]]></description>
+			<content:encoded><![CDATA[<p>Welcome to WordPress.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.mashups.com/?feed=rss2&amp;p=1</wfw:commentRss>
+		</item>
+	</channel>
+</rss>

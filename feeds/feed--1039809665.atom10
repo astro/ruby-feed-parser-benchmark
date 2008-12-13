@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+
+<channel>
+	<title>Surfin' Safari</title>
+	<atom:link href="http://webkit.org/blog/feed/" rel="self" type="application/rss+xml" />
+	<link>http://webkit.org/blog</link>
+	<description>All about WebKit development</description>
+	<pubDate>Mon, 01 Dec 2008 23:56:13 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6.2</generator>
+	<language>en</language>
+			<item>
+		<title>Tor Arne Vestbø is a WebKit Reviewer</title>
+		<link>http://webkit.org/blog/300/tor-arne-vestb%c3%b8-is-a-webkit-reviewer/</link>
+		<comments>http://webkit.org/blog/300/tor-arne-vestb%c3%b8-is-a-webkit-reviewer/#comments</comments>
+		<pubDate>Thu, 23 Oct 2008 12:41:37 +0000</pubDate>
+		<dc:creator>Maciej Stachowiak</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://webkit.org/blog/?p=300</guid>
+		<description><![CDATA[Tor Arne Vestbø is now a qualified WebKit Reviewer. Tor Arne has done a huge amount of work on the Qt port of WebKit, including advanced work such as a Phonon port of the media back end for the &#60;video> element. He&#8217;s also helped to enhance our cross-platform abstraction layer. Please join me in congratulating [...]]]></description>
+			<content:encoded><![CDATA[<p>Tor Arne Vestbø is now a qualified WebKit Reviewer. Tor Arne has done a huge amount of work on the Qt port of WebKit, including advanced work such as a Phonon port of the media back end for the <code>&lt;video></code> element. He&#8217;s also helped to enhance our cross-platform abstraction layer. Please join me in congratulating Tor Arne on his reviewer status and thanking him for all of his contributions to WebKit.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://webkit.org/blog/300/tor-arne-vestb%c3%b8-is-a-webkit-reviewer/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Web Inspector Redesign</title>
+		<link>http://webkit.org/blog/197/web-inspector-redesign/</link>
+		<comments>http://webkit.org/blog/197/web-inspector-redesign/#comments</comments>
+		<pubDate>Wed, 01 Oct 2008 00:06:36 +0000</pubDate>
+		<dc:creator>Timothy Hatcher</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<category><![CDATA[debugger]]></category>
+
+		<category><![CDATA[inspector]]></category>
+
+		<category><![CDATA[profile]]></category>
+
+		<category><![CDATA[profiler]]></category>
+
+		<category><![CDATA[web inspector]]></category>
+
+		<guid isPermaLink="false">http://webkit.org/blog/?p=197</guid>
+		<description><![CDATA[It has been nine months since our last Web Inspector update and we have a lot of cool things to talk about. If you diligently use the Web Inspector in nightly builds, you might have seen some of these improvements, while other subtle changes might have gone unnoticed.
+Some of the Web Inspector improvements were contributed [...]]]></description>
+			<content:encoded><![CDATA[<p>It has been nine months since our <a href="/blog/148/web-inspector-update">last Web Inspector update</a> and we have a lot of cool things to talk about. If you diligently use the Web Inspector in nightly builds, you might have seen some of these improvements, while other subtle changes might have gone unnoticed.</p>
+<p>Some of the Web Inspector improvements were contributed by members of the WebKit community. We really want to get the whole community involved with making this the best web development tool available. Remember, most of the Web Inspector is written in <a href="http://trac.webkit.org/browser/trunk/WebCore/inspector/front-end/">HTML, JavaScript, and CSS</a>, so it’s easy to get started making changes and improvements.</p>
+<h3>Redesigned Interface</h3>
+<p>First and foremost, the Web Inspector is now sporting a new design that organizes information into task-oriented groups — represented by icons in the toolbar. The toolbar items (Elements, Resources, Scripts, Profiles and Databases) are named after the fundamental items you will work with inside the respective panels.</p>
+<p style="text-align: center"><img src="/blog-files/inspector-toolbar.png"/></p>
+<h3>Console</h3>
+<p>The Console is now accessible from any panel. Unlike the other panels, the Console is not just used for one task — it might be used while inspecting the DOM, debugging JavaScript or analyzing HTML parse errors. The Console toggle button is found in the status bar, causing it to animate in and out from the bottom of the Web Inspector. The Console can also be toggled by the Escape key.</p>
+<p>Error and warning counts are now shown in the bottom right corner of the status bar. Clicking on these will also open the Console.</p>
+<p style="text-align: center"><img src="/blog-files/inspector-status-bar-with-errors.png" style="-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 3px 25px; margin: 1em"/></p>
+<p>In addition to the visual changes to the Console, we have also greatly improved usability by adding auto-completion and tab-completion. As you type expressions, property names will automatically be suggested. If there are multiple properties with the same prefix, pressing the Tab key will cycle through them. Pressing the Right arrow key will accept the current suggestion. The current suggestion will also be accepted when pressing the Tab key if there is only one matched property.</p>
+<p style="text-align: center"><img src="/blog-files/inspector-console-autocomplete.png"/></p>
+<p>Our compatibility with <a href="http://getfirebug.com/commandline.html">Firebug’s command line</a> and <a href="http://getfirebug.com/console.html">window.console APIs</a> has also been greatly improved by Keishi Hattori (服部慶士), a student at The University of Tokyo (東京大学) who tackled this area as a summer project.</p>
+<h3>Elements Panel</h3>
+<p>The Elements panel is largely the same as the previous DOM view — at least visually. Under the hood we have made number of changes and unified everything into one DOM tree.</p>
+<p style="text-align: center"><a href="/blog-files/inspector-elements-panel.png" target="_new"><img src="/blog-files/inspector-elements-panel.png"/></a></p>
+<ul>
+<li><strong>Descend into sub-documents</strong> — expanding a frame or object element will show you the DOM tree for the document inside that element.</li>
+<li><strong>Automatic updates</strong> — the DOM tree will update when nodes are added to or removed from the inspected page.</li>
+<li><strong>Inspect clicked elements</strong> — enabling the new inspect mode lets you hover around the page to find a node to inspect. Clicking on a node in the page will focus it in the Elements panel and turn off the inspect mode. This was contributed by Matt Lilek.</li>
+<li><strong>Temporarily disable style properties</strong> — hovering over an editable style rule will show checkboxes that let you disable individual properties.
+<p style="text-align: center"><img src="/blog-files/inspector-disabling-properties.png"/></p>
+</li>
+<li><strong>Style property editing</strong> — double click to edit a style property. Deleting all the text will delete the property. Typing or pasting in multiple properties will add the new properties.</li>
+<li><strong>Stepping for numeric style values</strong> — while editing a style property value with a number, you can use the Up or Down keys to increment or decrement the number. Holding the Alt/Option key will step by 0.1, while holding the Shift key will step by 10.
+<p style="text-align: center"><img src="/blog-files/inspector-numeric-style-stepping.gif"/></p>
+</li>
+<li><strong>DOM attribute editing</strong> — double click to edit a DOM element attribute. Typing or pasting in multiple attributes will add the new attributes. Deleting all the text will delete the attribute.</li>
+<li><strong>DOM property editing</strong> — double click to edit a DOM property  in the Properties pane. Deleting all the text will delete the property, if allowed.</li>
+<li><strong>Metrics editing</strong> — double click to edit a any of the CSS box model metrics.</li>
+<li><strong>Position metrics</strong> — the Metrics pane now includes position info for absolute, relative and fixed positioned elements.</li>
+</ul>
+<h3>Resources Panel</h3>
+<p>The Resources panel is a supercharged version of the previous Network panel. It has a similar looking timeline waterfall, but a lot has been done to make it even more useful.</p>
+<p style="text-align: center"><a href="/blog-files/inspector-resources-panel.png" target="_new"><img src="/blog-files/inspector-resources-panel.png"/></a></p>
+<ul>
+<li><strong>Graph by size</strong> — click Size in the sidebar to quickly see the largest resources downloaded.</li>
+<li><strong>Multiple sorting options</strong> — there are many sorting methods available for the Time graph, including latency and duration.</li>
+<li><strong>Latency bars</strong> — the Time graph now shows latency in the bar with a lighter shade. This is the time between making the request and the server’s first response.</li>
+<li><strong>Unified resource views</strong> — clicking a resource in the sidebar will show you the data pulled from the network (not downloaded again), including the request and response headers.</li>
+<li><strong>View XHRs</strong> — the time and size graphs also show XMLHttpRequests. Selecting an XHR resource in the sidebar will show the XHR data and headers.</li>
+</ul>
+<h3>Scripts Panel</h3>
+<p>The previous standalone <a href="http://webkit.org/blog/61/introducing-drosera">Drosera JavaScript debugger</a> has been replaced with a new JavaScript debugger integrated into the Web Inspector. The new integrated JavaScript debugger is much faster than Drosera, and should be much more convenient.</p>
+<p style="text-align: center"><a href="/blog-files/inspector-scripts-panel.png" target="_new"><img src="/blog-files/inspector-scripts-panel.png"/></a></p>
+<p>From the Scripts panel you can see all the script resources that are part of the inspected page. Clicking in the line gutter of the script will set a breakpoint for that line of code. There are the standard controls to pause, resume and step through the code. While paused you will see the current call stack and in-scope variables in the right-hand sidebar.</p>
+<p>The Web inspector has a unique feature regarding in-scope variables: it shows closures, “with” statements, and event-related scope objects separately. This gives you a clearer picture of where your variables are coming from and why things might be breaking (or even working correctly by accident).</p>
+<p style="text-align: center"><img src="/blog-files/inspector-closure-scope.png" style="-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 3px 25px; vertical-align: top; margin: 1em"/> <img src="/blog-files/inspector-with-scope.png" style="-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 3px 25px; vertical-align: top; margin: 1em"/></p>
+<h3>Profiles Panel</h3>
+<p>The brand new JavaScript Profiler in the Profiles panel helps you identify where execution time is spent in your page’s JavaScript functions. The sidebar on the left lists all the recorded profiles and a tree view on the right shows the information gathered for the selected profile. Profiles that have the same name are grouped as sequential runs under a collapsible item in the sidebar.</p>
+<p style="text-align: center"><a href="/blog-files/inspector-profiles-panel.png" target="_new"><img src="/blog-files/inspector-profiles-panel.png"/></a></p>
+<p>There are two ways to view a profile: bottom up (heavy) or top down (tree). Each view has its own advantages. The heavy view allows you to understand which functions have the most performance impact and the calling paths to those functions. The tree view gives you an overall picture of the script’s calling structure, starting at the top of the call-stack.</p>
+<p>Below the profile are a couple of data mining controls to facilitate the dissection of profile information. The focus button (Eye symbol) will filter the profile to only show the selected function and its callers. The exclude button (X symbol) will remove the selected function from the entire profile and charge its callers with the excluded function’s total time. While any of these data mining features are active, a reload button is available that will restore the profile to its original state.</p>
+<p>WebKit’s JavaScript profiler is fully compatible with <a href="http://getfirebug.com/console.html">Firebug’s console.profile() and console.profileEnd() APIs</a>, but you can also specify a title in <code>console.profileEnd()</code> to stop a specific profile if multiple profiles are being recorded. You can also record a profile using the Start/Stop Profiling button in the Profiles panel.</p>
+<h3>Databases Panel</h3>
+<p>The Databases panel lets you interact with <a href="http://www.w3.org/html/wg/html5/#sql">HTML 5 Database storage</a>. You can examine the contents of all of the page’s open databases and execute SQL queries against them. Each database is shown in the sidebar. Expanding a database’s disclosure triangle will show the database’s tables. Selecting a database table will show you a data grid containing all the columns and rows for that table.</p>
+<p style="text-align: center"><a href="/blog-files/inspector-databases-panel.png" target="_new"><img src="/blog-files/inspector-databases-panel.png"/></a></p>
+<p>Selecting a database in the sidebar will show an interactive console for evaluating SQL queries. The input in this console has auto-completion and tab-completion for common SQL words and phrases along with table names for the database.</p>
+<p style="text-align: center"><a href="/blog-files/inspector-databases-panel-query-view.png" target="_new"><img src="/blog-files/inspector-databases-panel-query-view.png"/></a></p>
+<h3>Search</h3>
+<p>Accompanying the task-oriented reorganization, the search field in the toolbar now searches the current panel with results being highlighted in the context of the panel. Targeting the search to the current panel allows each panel to support specialized queries that are suited for the type of information being shown. The panels that support specialized queries are Elements and Profiles.</p>
+<p>The Elements panel supports XPath and CSS selectors as queries in addition to plain text. Any search you perform will be attempted as a plain text search, a XPath query using <code>document.evaluate()</code> and a CSS selector using <code>document.querySelectorAll()</code>. All the search results will be highlighted in the DOM tree, with the first match being revealed and selected.</p>
+<p style="text-align: center"><a href="/blog-files/inspector-searching-elements.png" target="_new"><img src="/blog-files/inspector-searching-elements.png"/></a></p>
+<p>The Profiles panel supports plain text searches of the function names and resource URLs. Numeric searches are also supported that match rows in the profile’s Self, Total and Calls columns. To facilitate powerful numeric searching, there are a few operators and units that work to extend or limit your results. For example you can search for “> 2.5ms” to find all the functions that took longer than 2.5 milliseconds to execute. In addition to “ms”, the other supported units are: “s” for time in seconds and “%” for percentage of time. The other supported operators are “< ”, “<=”, “>=” and “=”. When no units are specified the Calls column is searched.</p>
+<p style="text-align: center"><a href="/blog-files/inspector-searching-profiles.png" target="_new"><img src="/blog-files/inspector-searching-profiles.png"/></a></p>
+<p>In all the panels pressing Enter in the search field or ⌘G (Ctrl+G on Windows and Linux) will reveal the next result. Pressing ⇧⌘G (Ctrl+Shift+G on Windows and Linux) will reveal the previous result. In the Resources, Scripts and Profiles panels the search will be performed on the visible view first and will automatically jump to the first result only if the visible view has a match.</p>
+<h3>Availability and Contributing</h3>
+<p>All of these things are available now in the <a href="http://nightly.webkit.org">Mac and Windows nightly builds</a>. Give them a try today, and <a href="http://bugs.webkit.decenturl.com/new-web-inspector-bug">let us know</a> what you like (or don’t like).</p>
+<p>If you would like to contribute, there are some really interesting tasks in the list of <a href="http://bugs.webkit.decenturl.com/web-inspector-bugs-enhancements">Web Inspector bugs and enhancements</a>, and other contributors in the <a href="irc://chat.freenode.net/#webkit">#webkit chat room</a> are pretty much always available to provide help and advice.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://webkit.org/blog/197/web-inspector-redesign/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Full Pass of Acid3</title>
+		<link>http://webkit.org/blog/280/full-pass-of-acid-3/</link>
+		<comments>http://webkit.org/blog/280/full-pass-of-acid-3/#comments</comments>
+		<pubDate>Fri, 26 Sep 2008 01:29:57 +0000</pubDate>
+		<dc:creator>Maciej Stachowiak</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://webkit.org/blog/?p=280</guid>
+		<description><![CDATA[Today we would like to announce that WebKit is the first browser engine to fully pass Acid3. A while back, we posted that we scored 100/100 and matched the reference rendering. Now, thanks to recent speedups in JavaScript, DOM and rendering, we have passed the third condition, smooth animation on reference hardware. 
+Here is a [...]]]></description>
+			<content:encoded><![CDATA[<p>Today we would like to announce that WebKit is the first browser engine to fully pass <a href="http://acid3.acidtests.org/">Acid3</a>. A while back, <a href="http://webkit.org/blog/173/webkit-achieves-acid3-100100-in-public-build/">we posted</a> that we scored 100/100 and matched the reference rendering. Now, thanks to recent speedups in JavaScript, DOM and rendering, we have passed the third condition, <a href="http://ln.hixie.ch/?start=1207096078&#038;count=1">smooth animation on reference hardware</a>. </p>
+<p>Here is a screenshot of a successful run:</p>
+<p><img src="/blog-files/acid3-screenshot.png"/></p>
+<p>Here is the timing reference dialog you get by clicking on the &#8220;A&#8221; in Acid3 that confirms we pass the smooth animation condition on a 2.4GHz MacBook Pro:</p>
+<p><img src="/blog-files/acid3-timing-screenshot.png"/></p>
+<p>To try it for yourself, <a href="http://nightly.webkit.org/">grab a nightly</a>. Keep in mind that on slower machines, the timing may not be perfect, and you need to do a cached run of the test (load it once, close window, open new window, load it again) to avoid delays from the network.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://webkit.org/blog/280/full-pass-of-acid-3/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Introducing SquirrelFish Extreme</title>
+		<link>http://webkit.org/blog/214/introducing-squirrelfish-extreme/</link>
+		<comments>http://webkit.org/blog/214/introducing-squirrelfish-extreme/#comments</comments>
+		<pubDate>Fri, 19 Sep 2008 05:00:37 +0000</pubDate>
+		<dc:creator>Maciej Stachowiak</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://webkit.org/blog/?p=214</guid>
+		<description><![CDATA[Just three months ago, the WebKit team announced SquirrelFish, a major revamp of our JavaScript engine featuring a high-performance bytecode interpreter. Today we&#8217;d like to announce the next generation of our JavaScript engine - SquirrelFish Extreme (or SFX for short). SquirrelFish Extreme uses more advanced techniques, including fast native code generation, to deliver even more [...]]]></description>
+			<content:encoded><![CDATA[<p>Just three months ago, <a href="http://webkit.org/blog/189/announcing-squirrelfish/">the WebKit team announced SquirrelFish</a>, a major revamp of our JavaScript engine featuring a high-performance bytecode interpreter. Today we&#8217;d like to announce the next generation of our JavaScript engine - SquirrelFish Extreme (or SFX for short). SquirrelFish Extreme uses more advanced techniques, including fast native code generation, to deliver even more JavaScript performance.</p>
+<p>For those of you who follow WebKit development and are interested in contributing, we&#8217;d like to report our results and what we did to achieve them.</p>
+<h4>How Fast is It?</h4>
+<p>This chart shows WebKit&#8217;s JavaScript performance in different versions - bigger bars are better.</p>
+<p><img src="/blog-files/sfx-perf.png" alt="bar graph showing WebKit 3.0: 5.4; WebKit 3.1: 18.8; SquirrelFish: 29.9; SquirrelFish Extreme: 63.6" /></p>
+<p>The metric is SunSpider runs per minute. We present charts this way because &#8220;bigger is better&#8221; is easier to follow when you have a wide range of performance results. As you can see, SquirrelFish Extreme as of today is more than twice as fast as the original SquirrelFish, and over 10 times the speed you saw in Safari 3.0, less than a year ago. We are pretty pleased with this improvement, but we believe there is more performance still to come.</p>
+<p>Quite a few people contributed to these results. I will mention a few who worked on some key tasks, but I&#8217;d also like to thank all of the many WebKit contributors who have helped with JavaScript and performance.</p>
+<h4>What makes it so fast?</h4>
+<p>SquirrelFish Extreme uses four different technologies to deliver much better performance than the original SquirrelFish: bytecode optimizations, polymorphic inline caching, a lightweight &#8220;context threaded&#8221; JIT compiler, and a new regular expression engine that uses our JIT infrastructure.</p>
+<h4>1. Bytecode Optimizations</h4>
+<p>When we first announced SquirrelFish, we mentioned that we thought that the basic design had lots of room for improvement from optimizations at the bytecode level. Thanks to hard work by Oliver Hunt, Geoff Garen, Cameron Zwarich, myself and others, we implemented lots of effective optimizations at the bytecode level.</p>
+<p>One of the things we did was to optimize within opcodes. Many JavaScript operations are highly polymorphic - they have different behavior in lots of different cases. Just by checking for the most common and fastest cases first, you can speed up JavaScript programs quite a bit.</p>
+<p>In addition, we&#8217;ve improved the bytecode instruction set, and built optimizations that take advantage of these improvements. We&#8217;ve added combo instructions, peephole optimizations, faster handling of constants and some specialized opcodes for common cases of general operations.</p>
+<h4>2. Polymorphic Inline Cache</h4>
+<p>One of our most exciting new optimizations in SquirrelFish Extreme is a polymorphic inline cache. This is an old technique originally developed for the Self language, which other JavaScript engines have used to good effect.</p>
+<p>Here is the basic idea: JavaScript is an incredibly dynamic language by design. But in most programs, many objects are actually used in a way that resembles more structured object-oriented classes. For example, many JavaScript libraries are designed to use objects with &#8220;x&#8221; and &#8220;y&#8221; properties, and only those properties, to represent points. We can use this knowledge to optimize the case where many objects have the same underlying structure - as people in the dynamic language community say, &#8220;you can cheat as long as you don&#8217;t get caught&#8221;.</p>
+<p>So how exactly do we cheat? We detect when objects actually have the same underlying structure — the same properties in the same order — and associate them with a structure identifier, or StructureID. Whenever a property access is performed, we do the usual hash lookup (using our highly optimized hashtables) the first time, and record the StructureID and the offset where the property was found. Subsequent times, we check for a match on the StructureID - usually the same piece of code will be working on objects of the same structure. If we get a hit, we can use the cached offset to perform the lookup in only a few machine instructions, which is much faster than hashing.</p>
+<p>Here is the <a href="http://research.sun.com/self/papers/pics.html">classic Self paper that describes the original technique</a>. You can look at Geoff&#8217;s implementation of <a href="http://trac.webkit.org/browser/trunk/JavaScriptCore/kjs/StructureID.h">the StructureID class</a> in Subversion to see more details of how we did it.</p>
+<p>We&#8217;ve only taken the first steps on polymorphic inline caching. We have lots of ideas on how to improve the technique to get even more speed. But already, you&#8217;ll see a huge difference on performance tests where the bottleneck is object property access.</p>
+<h4>3. Context Threaded JIT</h4>
+<p>Another major change we&#8217;ve made with SFX is to introduce native code generation. Our starting point is a technique called a &#8220;context threaded interpreter&#8221;, which is a bit of a misnomer, because this is actually a simple but effective form of JIT compiler. In the original SquirrelFish announcement, we described our use of direct threading, which is about the fastest form of bytecode intepretation short of generating native code. Context threading takes the next step and introduces some native code generation.</p>
+<p>The basic idea of context threading is to convert bytecode to native code, one opcode at a time. Complex opcodes are converted to function calls into the language runtime. Simple opcodes, or in some cases the common fast paths of otherwise complex opcodes, are inlined directly into the native code stream. This has two major advantages. First, the control flow between opcodes is directly exposed to the CPU as straight line code, so much dispatch overhead is removed. Second, many branches that were formerly inside opcode implmentations are now inline, and made visible and highly predictable to the CPU&#8217;s branch predictor.</p>
+<p>Here is a <a href="http://www.cs.toronto.edu/syslab/pubs/demkea_context.ps">paper describing the basic idea of context threading</a>. Our initial prototype of context threading was created by Gavin Barraclough. Several of us helped him polish it and tune the performance over the past few weeks.</p>
+<p>One of the great things about our lightweight JIT is that there&#8217;s only about 4,000 lines of code involved in native code generation. All the other code remains cross platform. It&#8217;s also surprisingly hackable. If you thought compiling to native code is rocket science, think again. Besides Gavin, most of us have little prior experience with native codegen, but we were able to jump right in.</p>
+<p>Currently the code is limited to x86 32-bit, but we plan to refactor and add support for more CPU architectures. CPUs that are not yet supported by the JIT can still use the interpreter. We also think we can get a lot more speedups out of the JIT through techniques such as type specialization, better register allocation and liveness analysis. The SquirrelFish bytecode is a good representation for making many of these kinds of transforms.</p>
+<h4>4. Regular Expression JIT</h4>
+<p>As we built the basic JIT infrastructure for the main JavaScript language, we found that we could easily apply it to regular expressions as well, and get up to a 5x speedup on regular expression matching. So we went ahead and did that. Not all code spends a bunch of time in regexps, but with the speed of our new regular expression engine, WREC (the WebKit Regular Expression Compiler), you can write the kind of text processing code you&#8217;d want to do in Perl or Python or Ruby, and do it in JavaScript instead. In fact we believe that in many cases our regular expression engine will beat the highly tuned regexp processing in those other languages.</p>
+<p>Since the SunSpider JavaScript benchmark has a fair amount of regexp content, some may feel that developing a regexp JIT is an &#8220;unfair&#8221; advantage. A year ago, regexp processing was a fairly small part of the test, but JS engines have improved in other areas a lot more than on regexps. For example, most of the individual tests on SunSpider have gotten 5-10x faster in JavaScriptCore — in some cases over 70x faster than the Safari 3.0 version of WebKit. But until recently, regexp performance hadn&#8217;t improved much at all.</p>
+<p>We thought that making regular expressions fast was a better thing to do than changing the benchmark. A lot of real tasks on the web involve a lot of regexp processing. After all, fundamental tasks on the web, like JSON validation and parsing, depend on regular expressions. And emerging technologies — like <a href="http://ejohn.org/blog/processingjs/">John Resig&#8217;s processing.js library</a> — extend that dependency ever further.</p>
+<h4>A Word About Benchmarks</h4>
+<p>We have included some performance results, but don&#8217;t take our word for it. You can get WebKit nightlies for <a href="http://nightly.webkit.org/builds/trunk/mac/1">Mac</a> and <a href="http://nightly.webkit.org/builds/trunk/win/1">Windows</a> and try for yourself.</p>
+<p>The primary benchmark we use to track JavaScript performance is <a href="http://www2.webkit.org/perf/sunspider-0.9/sunspider.html">SunSpider</a>. Although, like all benchmarks, it has its flaws, we think it is a balanced test that covers many dimensions of the JavaScript language and many types of code. If you look at test by test results, you will see that different JavaScript implementations have their own strengths and weaknesses. Browser vendors and independent testers have been tracking this benchmark.</p>
+<h4>Next Steps and How You Can Contribute</h4>
+<p>We believe the SquirrelFish Extreme architecture has room for lots more optimization, and we&#8217;d love to see more developers and testers pitch in. Currently, we are looking at how to use the bytecode infrastructure to perform more information gathering at runtime and then using it to drive better code generation, and we are studying ways to make JS function calls faster. There is also a lot of basic tuning work to do to take more advantage of the basic architectural advances in SFX. In addition, we&#8217;re interested in having JIT back ends for other CPU architectures.</p>
+<p>If you&#8217;d like to follow the development of WebKit&#8217;s JavaScript engine more closely, we have created the <code>squirrelfish-dev@lists.webkit.org</code> mailing list (<a href="http://lists.webkit.org/mailman/listinfo.cgi/squirrelfish-dev">subscribe here</a>) and the <a href="irc://irc.freenode.net/#squirrelfish">#squirrelfish IRC channel</a> on the FreeNode IRC network. Stop on by and you can learn more about our plans, and how you can help.</p>
+<h4>Try it Out</h4>
+<p>Try it, test it, browse with it. It&#8217;s <a href="http://nightly.webkit.org/">now available in nightlies</a>. We hope the changes we&#8217;ve made help improve your experience of the web.</p>
+<p><b>UPDATE:</b> For the curious, here are some <a href="http://summerofjsc.blogspot.com/2008/09/squirrelfish-extreme-has-landed.html">comparisons of SFX to other leading JavaScript engines</a>. Charles Ying has <a href="http://www.satine.org/archives/2008/09/19/squirrelfish-extreme-fastest-javascript-engine-yet/">comparisons on a few more benchmarks</a>.</p>
+<p><b>UPDATE 2:</b> For those of you who just can&#8217;t get enough of our little mascot, click the SquirrelFish below in a recent WebKit nightly for a demo of SVG animation support.</p>
+<p><a href="/blog-files/animation-demo.svg"><img src="/blog-files/squirrelfish.png" alt="the SquirrelFish mascot"/></a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://webkit.org/blog/214/introducing-squirrelfish-extreme/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Cameron Zwarich is a WebKit Reviewer</title>
+		<link>http://webkit.org/blog/196/cameron-zwarich-is-a-webkit-reviewer/</link>
+		<comments>http://webkit.org/blog/196/cameron-zwarich-is-a-webkit-reviewer/#comments</comments>
+		<pubDate>Mon, 23 Jun 2008 20:58:10 +0000</pubDate>
+		<dc:creator>Maciej Stachowiak</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://webkit.org/blog/?p=196</guid>
+		<description><![CDATA[Cameron Zwarich is now a qualified WebKit Reviewer. Cameron has been doing amazing work on the JavaScript implementation and was one of the core developers on the new bytecode engine. He has also branched out into other areas of the code and squashed bugs of all varieties. Please join me in congratulating Cameron on his [...]]]></description>
+			<content:encoded><![CDATA[<p>Cameron Zwarich is now a qualified WebKit Reviewer. Cameron has been doing amazing work on the JavaScript implementation and was one of the core developers on the new bytecode engine. He has also branched out into other areas of the code and squashed bugs of all varieties. Please join me in congratulating Cameron on his reviewer status and thanking him for all of his contributions to WebKit.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://webkit.org/blog/196/cameron-zwarich-is-a-webkit-reviewer/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Announcing SquirrelFish</title>
+		<link>http://webkit.org/blog/189/announcing-squirrelfish/</link>
+		<comments>http://webkit.org/blog/189/announcing-squirrelfish/#comments</comments>
+		<pubDate>Tue, 03 Jun 2008 01:37:06 +0000</pubDate>
+		<dc:creator>ggaren</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://webkit.org/blog/?p=189</guid>
+		<description><![CDATA[
+“Hello, Internet!”
+WebKit’s core JavaScript engine just got a new interpreter, code-named SquirrelFish.
+SquirrelFish is fast—much faster than WebKit’s previous interpreter. Check out the numbers. On the SunSpider JavaScript benchmark, SquirrelFish is 1.6 times faster than WebKit&#8217;s previous interpreter.
+SunSpider runs per minute
+
+Longer bars are better.
+What Is SquirrelFish?
+SquirrelFish is a register-based, direct-threaded, high-level bytecode engine, with a sliding [...]]]></description>
+			<content:encoded><![CDATA[<p><img width="30%" src="http://webkit.org/blog-files/squirrelfish.png" alt="SquirrelFish Mascot" /></p>
+<h3>“Hello, Internet!”</h3>
+<p>WebKit’s core JavaScript engine just got a new interpreter, code-named SquirrelFish.</p>
+<p>SquirrelFish is fast—much faster than WebKit’s previous interpreter. Check out the numbers. On the <a href="http://webkit.org/perf/sunspider-0.9/sunspider.html">SunSpider JavaScript benchmark</a>, SquirrelFish is 1.6 times faster than WebKit&#8217;s previous interpreter.</p>
+<div style="text-align:center;font-size:1.25em"><strong>SunSpider runs per minute</strong></div>
+<p><img src="http://webkit.org/blog-files/squirrelfish-webkit-graph.png" alt="bar graph of SunSpider runs" /></p>
+<div style="text-align:right;font-size:.95em"><em>Longer bars are better.</em></div>
+<h3>What Is SquirrelFish?</h3>
+<p>SquirrelFish is a register-based, direct-threaded, high-level bytecode engine, with a sliding register window calling convention. It lazily generates bytecodes from a syntax tree, using a simple one-pass compiler with built-in copy propagation.</p>
+<p>SquirrelFish owes a lot of its design to some of the latest research in the field of efficient virtual machines, including research done by Professor M. Anton Ertl, et al, Professor David Gregg, et al, and the developers of the Lua programming language.</p>
+<p>Some great introductory reading on these topics includes:</p>
+<ul>
+<li><a href="http://citeseer.ist.psu.edu/cache/papers/cs/32018/http:zSzzSzwww.jilp.orgzSzvol5zSzv5paper12.pdf/ertl03structure.pdf">The Structure and Performance of Efficient Interpreters</a> <em>(Introduces the fundamentals of virtual machine design and explains the importance of direct threading)</em>
+</li>
+<li><a href="http://www.sagecertification.org/events/vee05/full_papers/p153-yunhe.pdf">Virtual Machine Showdown: Stack Versus Registers</a> <em>(Details the benefits of register machines, and the importance of copy propagation)</em>
+</li>
+<li><a href="http://www.tecgraf.puc-rio.br/~lhf/ftp/doc/jucs05.pdf">The Implementation of Lua 5.0</a> <em>(Outlines the implementation of a real-world register-based bytecode engine, with a sliding register window calling convention)</em>
+</li>
+</ul>
+<p>I’ve also pored over stacks of terrible books and papers on these topics. I’ll spare you those.</p>
+<h3>Why It’s Fast</h3>
+<p>Like the interpreters for many scripting languages, WebKit’s previous JavaScript interpreter was a simple syntax tree walker. To execute a program, it would first parse the program into a tree of statements and expressions. For example, the expression “<code>x + y</code>” might parse to</p>
+<pre>
+        +
+      /   \
+     x     y
+</pre>
+<p>Having created a syntax tree, the interpreter would recursively visit the nodes in the tree, performing their operations and propagating execution state. This execution model incurred a few types of run-time cost.</p>
+<p>First, a syntax tree describes a program’s grammatical structure, not the operations needed to execute it. Therefore, during execution, the interpreter would repeatedly visit nodes that did no useful work. For example, for the block “<code>{ x++; }</code>”, the interpreter would first visit the block node “{&#8230;}”, which did nothing, and then visit its first child, the increment node “<code>x++</code>”, which incremented x.</p>
+<p>Second, even nodes that did useful work were expensive to visit. Each visit required a virtual function call and return, which meant a couple of indirect memory reads to retrieve the function being called, and two indirect branches—one for the call, and one for the return. On modern hardware, “indirect” is a synonym for “slow”, since indirection tends to defeat caching and branch prediction.</p>
+<p>Third, to propagate execution state between nodes, the interpreter had to pass around a bunch of data. For example, when processing a subtree involving a local variable, the interpreter would copy the variable’s value between all the nodes in the subtree. So, starting at the “<code>x</code>” part of the expression “<code>f((x) + 1)</code>”, a variable node “<code>x</code>” would return x to a parentheses node “<code>(x)</code>”, which would return x to a plus node “<code>(x) + 1</code>”. Then, the plus node would return (x) + 1 to an argument list node “<code>((x) + 1)</code>”, which would copy that value into an argument list object, which, in turn, it would pass to the function node for f. Sheesh!</p>
+<p>In our first rounds of optimization, we squeezed out as much performance as we could without changing this underlying architecture. Doing so allowed us to regression test each optimization we wrote. It also set a very high bar for any replacement technology. Finally, having realized the full potential of the syntax tree architecture, we switched to bytecode.</p>
+<p>SquirrelFish’s bytecode engine elegantly eliminates almost all of the overhead of a tree-walking interpreter. First, a bytecode stream exactly describes the operations needed to execute a program. Compiling to bytecode implicitly strips away irrelevant grammatical structure. Second, a bytecode dispatch is a single direct memory read, followed by a single indirect branch. Therefore, executing a bytecode instruction is much faster than visiting a syntax tree node. Third, with the syntax tree gone, the interpreter no longer needs to propagate execution state between syntax tree nodes.</p>
+<p>The bytecode’s register representation and calling convention work together to produce other speedups, as well. For example, jumping to the first instruction in a JavaScript function, which used to require two C++ function calls, one of them virtual, now requires just a single bytecode dispatch. At the same time, the bytecode compiler, which knows how to strip away many forms of intermediate copying, can often arrange to pass arguments to a JavaScript function without any copying.</p>
+<h3>Just the Beginning</h3>
+<p>In a typical compiler, conversion to bytecode is just a means to an end, not an end in itself. The purpose of the conversion is to “lower” an abstract tree of grammatical constructs to a concrete vector of execution primitives, the latter form being more amenable to well-known optimization techniques.</p>
+<p>Therefore, though we’re very happy with SquirrelFish’s current performance, we also believe that it’s just the beginning. Some of the compile-time optimizations we’re looking at, now that we have a bytecode representation, include:</p>
+<ul>
+<li>constant folding
+</li>
+<li>more aggressive copy propagation
+</li>
+<li>type inference—both exact and speculative
+</li>
+<li>specialization based on expression context—especially void and boolean context
+</li>
+<li>peephole optimization
+</li>
+<li>escape analysis
+</li>
+</ul>
+<p>This is an interesting problem space. Since many scripts on the web are executed once and then thrown away, we need to invent versions of these optimizations that are simple and efficient. Moreover, since JavaScript is such a dynamic language, we also need to invent versions of these optimizations that are resilient in the context of an unknown environment.</p>
+<p>We’re also looking at further optimizing the virtual machine, including:</p>
+<ul>
+<li>constant pool instructions
+</li>
+<li>superinstructions
+</li>
+<li>instructions with implicit register operands
+</li>
+<li>advanced dispatch techniques, like instruction duplication and context threading
+</li>
+<li>getting computed goto working on Windows
+</li>
+</ul>
+<p>Performance on Windows has extra room to grow because the interpreter on Windows is not direct-threaded yet. In place of computed goto, it uses a switch statement inside a loop.</p>
+<h3>Getting Involved</h3>
+<p>If you’re interested in compilers or virtual machines, this is a great project to join. We’re moving quickly, so the best way to come up to speed is to log on to our <a href="irc://irc.freenode.net/#webkit">IRC channel</a>.</p>
+<p>As always, testing out <a href="http://nightly.webkit.org/">nightly builds</a> and <a href="http://webkit.org/quality/reporting.html">reporting bugs</a> is also a great help.</p>
+<h3>Extra Bonus Updates</h3>
+<p>We&#8217;ve got some extra bonus info: very early draft <a href="http://webkit.org/specs/squirrelfish-bytecode.html">documentation of the SquirrelFish VM&#8217;s opcodes</a>. For those of you who know about VMs, you may find this enlightening, for those who don&#8217;t, you may find it is simpler than you expect.</p>
+<p>In addition, we have a detailed <a href="http://paste.lisp.org/display/61622">comparison of Safari 3.1 vs. SquirrelFish</a>, looking at the individual tests, it is interesting to see which sped up the most. If you look at this <a href="http://paste.lisp.org/display/61624">comparison to Safari 3.0</a>, you can see that we&#8217;ve sped up 4.34x overall since Safari 3, and have improved some kinds of code by over an order of magnitude.</p>
+<p>SquirrelFish around the web: There&#8217;s lots of interesting discussion in the <a href="http://reddit.com/r/programming/info/6ltfo/comments/">reddit article about this post</a>. And posts from key SquirrelFish developer <a href="http://summerofjsc.blogspot.com/2008/06/squirrelfish-has-landed.html">Cameron Zwarich has performance data and other info</a>, as does occasional WebKit contributor <a href="http://www.satine.org/archives/2008/06/03/squirrelfish-is-faster-than-tamarin/">Charles Ying</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://webkit.org/blog/189/announcing-squirrelfish/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Safari Hits 6.25% Market Share</title>
+		<link>http://webkit.org/blog/188/safari-hits-622-market-share/</link>
+		<comments>http://webkit.org/blog/188/safari-hits-622-market-share/#comments</comments>
+		<pubDate>Sun, 01 Jun 2008 05:04:52 +0000</pubDate>
+		<dc:creator>Maciej Stachowiak</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://webkit.org/blog/?p=188</guid>
+		<description><![CDATA[The latest browser market share data is in, and Safari has hit 6.25%, breaking 6% for the first time. Last month&#8217;s share was 5.81%, so this is a significant increase. It was only nine months ago that Safari broke 5%. Safari market share has now almost tripled from 2.14% in June 2005, when the WebKit [...]]]></description>
+			<content:encoded><![CDATA[<p>The latest <a href="http://marketshare.hitslink.com/report.aspx?qprid=0">browser market share data</a> is in, and Safari has hit 6.25%, breaking 6% for the first time. Last month&#8217;s share was 5.81%, so this is a significant increase. It was only nine months ago that <a href="http://webkit.org/blog/123/safari-achieves-5-market-share/">Safari broke 5%</a>. Safari market share has now almost tripled from <a href="http://marketshare.hitslink.com/report.aspx?qprid=0&#038;qpmr=15&#038;qpdt=1&#038;qpct=3&#038;qpcal=1&#038;qptimeframe=Y&#038;qpsp=2005">2.14% in June 2005</a>, when the WebKit Open Source project launched.</p>
+<p>This growth, combined with recent WebKit adoption in projects such as the <a href="http://www.torchmobile.com/">Iris Browser</a>, <a href="http://trolltech.com/webkit/webkit-announce">Qt 4.4</a>, <a href="http://ajaxian.com/archives/another-webkit-win-with-android">Android</a>, <a href="http://www.adobe.com/products/air/tools/">Adobe AIR</a>, <a href="http://live.gnome.org/Epiphany/WebKit">Epiphany</a>, <a href="http://aseigo.blogspot.com/2008/02/loading-random-widgets.html">KDE Plasma</a>, <a href="http://www.zathras.de/angelweb/blog-icab-goes-webkit.htm">iCab</a> and more, is breathtaking and shows huge positive momentum for the WebKit project. Thanks and congratulations to everyone who has contributed to the project.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://webkit.org/blog/188/safari-hits-622-market-share/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Third Annual WebKit Open Source Party</title>
+		<link>http://webkit.org/blog/187/third-annual-webkit-open-source-party/</link>
+		<comments>http://webkit.org/blog/187/third-annual-webkit-open-source-party/#comments</comments>
+		<pubDate>Wed, 28 May 2008 19:08:10 +0000</pubDate>
+		<dc:creator>Adele Peterson</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://webkit.org/blog/?p=187</guid>
+		<description><![CDATA[It&#8217;s that time of year again! Web developers, WebKit hackers, browser developers, or anyone with an interest in cool technology should come have a drink and some snacks, and meet WebKit contributors from Apple and around the world. This event is open to anyone who is interested, free of charge.
+Don&#8217;t miss out on the nerd [...]]]></description>
+			<content:encoded><![CDATA[<p>It&#8217;s that time of year again! Web developers, WebKit hackers, browser developers, or anyone with an interest in cool technology should come have a drink and some snacks, and meet WebKit contributors from Apple and around the world. This event is open to anyone who is interested, free of charge.</p>
+<p>Don&#8217;t miss out on the nerd party of the century!!!!</p>
+<h4>Details</h4>
+<p><strong>Place:</strong> Thirsty Bear Restaurant &#038; Brewery <a href="http://maps.google.com/maps?f=q&#038;hl=en&#038;q=thirsty+bear+brewing+co,+san+francisco,+ca&#038;ie=UTF8&#038;ll=37.788692,-122.412071&#038;spn=0.036289,0.058966&#038;z=14&#038;iwloc=A&#038;om=1">(map)</a><br />
+<strong>Date:</strong> Tuesday, June 10th<br />
+<strong>Time:</strong> 7:30 PM<br />
+<a href="http://upcoming.yahoo.com/event/735290/?ps=5">upcoming.org</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://webkit.org/blog/187/third-annual-webkit-open-source-party/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Reporting WebKit Security Bugs</title>
+		<link>http://webkit.org/blog/184/reporting-webkit-security-bugs/</link>
+		<comments>http://webkit.org/blog/184/reporting-webkit-security-bugs/#comments</comments>
+		<pubDate>Thu, 08 May 2008 02:22:23 +0000</pubDate>
+		<dc:creator>Sam Weinig</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://webkit.org/blog/?p=184</guid>
+		<description><![CDATA[Security is a top priority for the WebKit project.  As contributors to the project have grown, it has become apparent that we need a process for safely reporting security vulnerabilities to the WebKit project in addition to the process for reporting vulnerabilities to Apple.  Today, we are announcing a new mailing list for [...]]]></description>
+			<content:encoded><![CDATA[<p>Security is a top priority for the WebKit project.  As contributors to the project have grown, it has become apparent that we need a process for safely reporting security vulnerabilities to the WebKit project in addition to the process for <a href="http://www.apple.com/support/security/">reporting vulnerabilities</a> to Apple.  Today, we are announcing a new mailing list for this purpose, security [at] webkit.org.  In addition, you can now safely report vulnerabilities over https to our bug tracker, <a href="https://bugs.webkit.org">https://bugs.webkit.org</a>, by placing the bug in the Security component.  The people privy to the mailing list and the Security component are members of the Security group.  It currently includes vendors shipping products that include WebKit, active port owners and trusted security experts.  If you are shipping a product that includes WebKit and would like to be notified of security issues, please email security [at] webkit.org.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://webkit.org/blog/184/reporting-webkit-security-bugs/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>CSS Reflections</title>
+		<link>http://webkit.org/blog/182/css-reflections/</link>
+		<comments>http://webkit.org/blog/182/css-reflections/#comments</comments>
+		<pubDate>Tue, 29 Apr 2008 21:07:33 +0000</pubDate>
+		<dc:creator>Dave Hyatt</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://webkit.org/blog/?p=182</guid>
+		<description><![CDATA[WebKit now supports reflections in CSS.  Continuing the trend of using adorable baby photos to make features appear more impressive, let me introduce Kate again.  
+
+A reflection is a replica of the original object with its own specific transform and mask.  The box-reflect property can be used to specify the specialized transform [...]]]></description>
+			<content:encoded><![CDATA[<p>WebKit now supports reflections in CSS.  Continuing the trend of using adorable baby photos to make features appear more impressive, let me introduce Kate again. <img src='http://webkit.org/blog/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+<p><img src="/blog-files/kate-reflected.png"/></p>
+<p>A <i>reflection</i> is a replica of the original object with its own specific transform and mask.  The <i>box-reflect</i> property can be used to specify the specialized transform and mask that should be used for the replica.</p>
+<p><tt>-webkit-box-reflect: &lt;direction&gt; &lt;offset&gt; &lt;mask-box-image&gt;</tt></p>
+<p><tt>&lt;direction&gt;</tt> can be one of <tt>above</tt>, <tt>below</tt>, <tt>left</tt> or <tt>right</tt>.<br />
+<tt>&lt;offset&gt;</tt> is a length or percentage that specifies the distance of the reflection from the edge of the original border box (using the direction specified). It can be omitted, in which case it defaults to 0.<br />
+<tt>&lt;mask-box-image&gt;</tt> is a mask-box-image that can be used to overlay the reflection.  If omitted, the reflection has no mask.</p>
+<p>Reflections will update automatically as the source changes.  If you hover over links, you&#8217;ll see the hover effect happen in the reflection.  If you reflect the <tt>&lt;video&gt;</tt> element, you will see the video playing in the reflection.</p>
+<p>Giving an element a reflection has the effect of creating a stacking context (so it joins opacity, masks and transforms).  The reflection is non-interactive, so from the point of view of hit testing, it&#8217;s like it isn&#8217;t there.  The reflection will have no effect on layout (other than being part of a container&#8217;s overflow), and can be thought of as similar to <tt>box-shadow</tt> in this respect.</p>
+<p>The example above uses a gradient mask.  Here is the sample code:</p>
+<p><tt>&lt;img src=&#8221;bubbles.jpg&#8221; style=&#8221;border:5px solid white;-webkit-box-reflect:below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.5, transparent), to(white));&#8221;&gt;</tt></p>
+]]></content:encoded>
+			<wfw:commentRss>http://webkit.org/blog/182/css-reflections/feed/</wfw:commentRss>
+		</item>
+	</channel>
+</rss>

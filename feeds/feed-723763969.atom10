@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	>
+
+<channel>
+	<title>Let's start again...</title>
+	<atom:link href="http://blog.manchumahara.com/feed/" rel="self" type="application/rss+xml" />
+	<link>http://blog.manchumahara.com</link>
+	<description>"Manchumahara" ...... The virtual vagabond</description>
+	<pubDate>Wed, 26 Nov 2008 08:18:52 +0000</pubDate>
+	<generator>http://wordpress.org/?v=abc</generator>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+			<item>
+		<title>Export wordpress mu db from localhost to live</title>
+		<link>http://blog.manchumahara.com/2008/11/26/export-wordpress-mu-db-from-localhost-to-live/</link>
+		<comments>http://blog.manchumahara.com/2008/11/26/export-wordpress-mu-db-from-localhost-to-live/#comments</comments>
+		<pubDate>Wed, 26 Nov 2008 08:17:24 +0000</pubDate>
+		<dc:creator>Manchumahara</dc:creator>
+		
+		<category><![CDATA[wordpress]]></category>
+
+		<category><![CDATA[mu]]></category>
+
+		<guid isPermaLink="false">http://blog.manchumahara.com/?p=284</guid>
+		<description><![CDATA[My maximum blogs are related to my problems that I face while working with diff projects. Yesterday I was working with wordpress mu. Hope you may know that wp mu can be installed in two diff ways.
+
+blog.yourdomain.com
+yourdomain.com/blog.
+
+As I was using localhost I used yourdomain.com/blog though subdomain can be configured in localhost.  
+One thing I [...]]]></description>
+			<content:encoded><![CDATA[<p>My maximum blogs are related to my problems that I face while working with diff projects. Yesterday I was working with <a href="http://mu.wordpress.org" target="_blank">wordpress mu</a>. Hope you may know that wp mu can be installed in two diff ways.</p>
+<ul>
+<li>blog.yourdomain.com</li>
+<li>yourdomain.com/blog.</li>
+</ul>
+<p>As I was using localhost I used yourdomain.com/blog though subdomain can be configured in localhost. <img src='http://blog.manchumahara.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+<p>One thing I don&#8217;t like about wordpress is it saved siteurl and domain path name in db. I worked with joomla and phpbb. They use relative url. No need to think about the site url.<span id="more-284"></span></p>
+<p>Opps&#8230; I didn&#8217;t mention about the main topic of this post. Suppose you are working with wordpress in localhost and you want to  export/transfer it to any live domain. For this you can do it in two ways:</p>
+<blockquote><p>Export wp settings/db/datas(whatever you say) from wp admin panel and then install wordpress in live and again import the settings/db/datas(whatever you say) from wp admin(live)&#8230;.it&#8217;s too much.</p></blockquote>
+<blockquote><p>Another way is to upload the whole files and export db from localhost(you can use phpmyadmin or any how) and import db in live. Change the configuration as necessary. Change htaces file(Ususally if use set same domain setting in local and live u don&#8217;t need to do any change :D)</p></blockquote>
+<p>The problem is, I like the second way and it&#8217;s more easier to show consecutive work progress but every time you migrate db from localhost to live you have to change site url from db manually :(.</p>
+<p><strong>For wp mu you have to check 3 tables wp_site, wp_blogs, wp_*_options. </strong></p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.manchumahara.com/2008/11/26/export-wordpress-mu-db-from-localhost-to-live/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Conflict between WP Security scanner plugin and Avatar Display</title>
+		<link>http://blog.manchumahara.com/2008/11/02/conflict-between-wp-security-scanner-plugin-and-avatar-display/</link>
+		<comments>http://blog.manchumahara.com/2008/11/02/conflict-between-wp-security-scanner-plugin-and-avatar-display/#comments</comments>
+		<pubDate>Sun, 02 Nov 2008 13:32:25 +0000</pubDate>
+		<dc:creator>Manchumahara</dc:creator>
+		
+		<category><![CDATA[Tips and Tricks]]></category>
+
+		<category><![CDATA[wordpress]]></category>
+
+		<category><![CDATA[wordpress plugin]]></category>
+
+		<category><![CDATA[avatar]]></category>
+
+		<category><![CDATA[wp security scan]]></category>
+
+		<guid isPermaLink="false">http://blog.manchumahara.com/?p=271</guid>
+		<description><![CDATA[I think you are not clear yet about my post title. But I am posting this because I faced this problem in my blog. I used Gravatar to show comment author&#8217;s avatar in my blog&#8217;s comment page. But for some days avatar was not displayed in comment page and it&#8217;s was really big pain for [...]]]></description>
+			<content:encoded><![CDATA[<p>I think you are not clear yet about my post title. But I am posting this because I faced this problem in my blog. I used <a href="http://en.gravatar.com/" target="_blank">Gravatar</a> to show comment author&#8217;s avatar in my blog&#8217;s comment page. But for some days avatar was not displayed in comment page and it&#8217;s was really big pain for me why the avatar was not showing ???? <img src='http://blog.manchumahara.com/wp-includes/images/smilies/icon_sad.gif' alt=':(' class='wp-smiley' /> . I checked the avatar display setting and didn&#8217;t find any problem there. At last I lost hope to solve this problem. One thing is I like to solve problem and max time I am passionate to solve my problems <img src='http://blog.manchumahara.com/wp-includes/images/smilies/icon_biggrin.gif' alt=':D' class='wp-smiley' /> .</p>
+<p>Today, at noon I had a good sleep and when I woke up, some thing came to my mind about my blog. I got the solution about my problem. Currently I am using <a href="http://blog.manchumahara.com/plugins-used/" target="_blank">100 plugins(both active and inactive)</a> in blog and <a title="WP Security Scan 2.3" href="http://semperfiwebdesign.com/plugins/wp-security-scan/">WP Security Scan 2.3</a> is one of theme. <strong>Wp Security Scan has a feature that it can hide the wp version.</strong> <img src='http://blog.manchumahara.com/wp-includes/images/smilies/icon_razz.gif' alt=':P' class='wp-smiley' /> <span id="more-271"></span></p>
+<p>I used the following code(as it should be, ins&#8217;t it) to show avatar in my comment template</p>
+<pre name="code" class="php">
+
+if (get_bloginfo(&#039;version&#039;)&gt;=2.5){
+echo get_avatar( $comment-&gt;comment_author_email, $size = &#039;50&#039;, $comment-&gt;comment_author_link);
+}
+?&gt;
+</pre>
+<p>If you check the above code I used this line if <code>(get_bloginfo('version')&gt;=2.5)</code> to check wp version and this is the main culprit of my problem <img src='http://blog.manchumahara.com/wp-includes/images/smilies/icon_sad.gif' alt=':(' class='wp-smiley' /> .</p>
+<p>Thanks.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.manchumahara.com/2008/11/02/conflict-between-wp-security-scanner-plugin-and-avatar-display/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Flock-Firefox based social web browser</title>
+		<link>http://blog.manchumahara.com/2008/10/29/flock-firefox-based-social-web-browser/</link>
+		<comments>http://blog.manchumahara.com/2008/10/29/flock-firefox-based-social-web-browser/#comments</comments>
+		<pubDate>Wed, 29 Oct 2008 16:49:45 +0000</pubDate>
+		<dc:creator>Manchumahara</dc:creator>
+		
+		<category><![CDATA[Tips and Tricks]]></category>
+
+		<category><![CDATA[browser]]></category>
+
+		<category><![CDATA[firefox]]></category>
+
+		<category><![CDATA[flock]]></category>
+
+		<guid isPermaLink="false">http://blog.manchumahara.com/?p=244</guid>
+		<description><![CDATA[ইদানিং সোস্যাল নেটওয়ার্কিং সাইটগুলোতে আমরা প্রতিদিন অনেক সময় ব্যয় করি। আর এই চিন্তাকে মাথায় রেখে যদি কোন ব্রাউজার বানানো হয় তাহলে তাকে সোস্যাল ওয়েব ব্রাউজার বলা খারাপ হবে না। জিনিসটা বেশ মজার মনে হচ্ছে না। হ্যাঁ ঠিক এই রকম একটা ওয়েব ব্রাউজার হলো ফ্লক(Flock)। ফ্লক ফায়ারফক্স বেসড একটি ব্রাউজার। এর মানে হচ্ছে ফায়ারফক্সের সব সুবিধায় [...]]]></description>
+			<content:encoded><![CDATA[<p><img class="alignleft" src="http://www.flock.com/images/template/logo.gif" alt="" width="351" height="85" /><span class="bangla">ইদানিং সোস্যাল নেটওয়ার্কিং সাইটগুলোতে আমরা প্রতিদিন অনেক সময় ব্যয় করি। আর এই চিন্তাকে মাথায় রেখে যদি কোন ব্রাউজার বানানো হয় তাহলে তাকে সোস্যাল ওয়েব ব্রাউজার বলা খারাপ হবে না। জিনিসটা বেশ মজার মনে হচ্ছে না। হ্যাঁ ঠিক এই রকম একটা ওয়েব ব্রাউজার হলো <a href="http://www.flock.com/" target="_blank">ফ্লক(Flock)</a>। ফ্লক <a href="http://www.mozilla.com/en-US/firefox/" target="_blank">ফায়ারফক্স</a> বেসড একটি ব্রাউজার। এর মানে হচ্ছে ফায়ারফক্সের সব সুবিধায় প্রায় এতে পাওয়া যাবে উপরন্তু বিশেষ কিছু সুবিধা দেওয়ার জন্য ফ্লকের জন্ম। ফ্লক এর লেটেস্ট স্ট্যাবল ভার্সন হলো ফ্লক ২.০ যা ফায়ারফক্স৩ এর উপর ভিত্তি করে বানানো। যদি এখনো পুরা ব্যাপারটা অনেকের কাছে পরিস্কার না হয় যে কিভাবে একটি ব্রাউজার আপনাকে সোস্যাল নেটওয়ার্ক সাইটগুলো ভিজিট করতে সাহায্য করতে পারে তাহলে এই <a href="http://www.flock.com/tour" target="_blank">লিঙ্ক</a> থেকে একটু ঢুঁ মেরে আসুন।</span><br />
+<span id="more-244"></span><br />
+<span class="bangla">ফ্লক অন্য যে কোন ওয়েব ব্রাউজারের মতো প্রায় সব সুবিধা দেবে। অতিরিক্ত সার্ভিস হিসাবে বেশ কিছু মজার ফিচার আছে। যেমন ধরুন আপনি <a href="http://www.flickr.com/" target="_blank">ফ্লিকারে</a>(এটি একটি ফটো বা ছবি শেয়ার করার সাইট) লগিন করলেন। ফ্লক সাথে সাথে আপনার কাছে আপনার লগিন তথ্য জেনে রাখার অনুমতি চাইবে। আপনি যদি রিমেম্বার দিয়ে রাখেন তাহলে পরবর্তীতে অনেক কিছুই আপনি ফ্লিকারে প্রবেশ না করে ফ্লকের সাইড বার ও উপরের দিকে একটা একটা ছোট উইন্ডো বা ফ্রেমের মতো করে ফ্লিকারের ছবি দেখতে পারবেন। এই রকম প্রায় ২০টি সোস্যাল নেটওয়ার্ক সাইটের তথ্যকে আপনার হাতে কাছে সহজে এনে দেবে সাইটে প্রবেশ না করেই। ফ্লক যেসব সোস্যাল নেটওয়ার্ক সাইট সাপোর্ট করে জানানোর জন্য এই <a href="http://www.flock.com/tour/services.php" target="_blank">লিঙ্কে</a> গেলেই বুঝতে পারবেন। আমার মনে হয় এই ২০টা সাইটের অন্তত ৫-১০টা সাইট আমরা প্রতিদিন অনেক বার ভিজিট করি আমাদের কাজের প্রয়োজনে।</span></p>
+<p><span class="bangla">ফ্লকের সর্বশেষ স্ট্যাবল ভার্সন ডাউনলোড করুন <a href="http://www.flock.com/download" target="_blank">এখান থেকে</a>। আর হ্যাঁ ফ্লক ডাউনলোড করার আগে ফ্লকের ফিচারগুলো এক নজরে দেখে নিতে ভুলবেন না। আশা করি ফ্লক আপনাদের অনেকের ভালো লাগবে। কিছুদিন হলো আমি ফ্লক ব্যবহার করছি আর মুগ্ধ হচ্ছি।</span></p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.manchumahara.com/2008/10/29/flock-firefox-based-social-web-browser/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>New logo and design for Let&#8217;s start again&#8230; (Manchublog)</title>
+		<link>http://blog.manchumahara.com/2008/10/28/new-logo-and-design-for-lets-start-again-manchublog/</link>
+		<comments>http://blog.manchumahara.com/2008/10/28/new-logo-and-design-for-lets-start-again-manchublog/#comments</comments>
+		<pubDate>Tue, 28 Oct 2008 06:45:34 +0000</pubDate>
+		<dc:creator>Manchumahara</dc:creator>
+		
+		<category><![CDATA[Personal]]></category>
+
+		<category><![CDATA[wordpress]]></category>
+
+		<category><![CDATA[bipro]]></category>
+
+		<category><![CDATA[logo]]></category>
+
+		<guid isPermaLink="false">http://blog.manchumahara.com/?p=232</guid>
+		<description><![CDATA[
+Hi all, I am just trying to change the look and feel of my blog. My current theme is based on Blueweed theme. But I have changed it according to my needs. Now it&#8217;s 90% customized from Blueweed. I am happy that I am getting expert in wordpress. I am  getting fun to customize theme, [...]]]></description>
+			<content:encoded><![CDATA[<p><img class="alignleft" src="http://blog.manchumahara.com/wp-content/themes/manchuwp/images/manchublog_logo.jpg" alt="" width="349" height="149" /></p>
+<p>Hi all, I am just trying to change the look and feel of my blog. My current theme is based on <a href="http://www.blogohblog.com/">Blueweed</a> theme. But I have changed it according to my needs. Now it&#8217;s 90% customized from Blueweed. I am happy that I am getting expert in wordpress. I am  getting fun to customize theme, developing widgets and plugins. Wordpress is really a flexible cms for both end users and developers. Hope I will start to write tutorial on wordpress. Actually I like to make things simple for all.<span id="more-232"></span></p>
+<p>BTW, hope regular visitorse can feel the look and feel difference between the previous theme and current theme. Last night I requested <a href="http://biprodhar.com/" target="_blank">Bipro R. Dhar</a>, one of close friend to make a new logo for my blog. He is little bit expert in  photoshop. Just now he made two logos for my blog, one is for my own blog and other is for <a href="http://forum.amaderprojukti.com" target="_blank">amaderprojukti</a> forum but look and feel like my blog(I am using it in blog). Many many thanks to Bipro for his time to make the logos. <a href="http://forum.amaderprojukti.com/index.php" target="_blank"><img class="alignleft" src="http://blog.manchumahara.com/wp-content/themes/manchuwp/images/manchublog_ap.jpg" alt="" width="236" height="149" /></a></p>
+<p>The recent design may be little bit different(css issue :P) for IE6. Hope every body hate ie6 like me:P and I have not enough time to fix css for ie8. IE6 is just a pain in the ass :D. It&#8217;s better I mean IE6 user should upgrade their browser to IE7 or IE8 which is much better.  The best is to use open source, free browsers like Firefox3, Flock, opera (free), Safari(free), gogole Chrome etc.<br />
+Hope I will get more suggestions from you to improve my blogs and about my other works. Thanks.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.manchumahara.com/2008/10/28/new-logo-and-design-for-lets-start-again-manchublog/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>মাইক্রব্লগিং, টুইটার এবং পিজিন, টুইটার প্লাগিন ফর পিজিন</title>
+		<link>http://blog.manchumahara.com/2008/10/27/%e0%a6%ae%e0%a6%be%e0%a6%87%e0%a6%95%e0%a7%8d%e0%a6%b0%e0%a6%ac%e0%a7%8d%e0%a6%b2%e0%a6%97%e0%a6%bf%e0%a6%82-%e0%a6%9f%e0%a7%81%e0%a6%87%e0%a6%9f%e0%a6%be%e0%a6%b0-%e0%a6%8f%e0%a6%ac%e0%a6%82/</link>
+		<comments>http://blog.manchumahara.com/2008/10/27/%e0%a6%ae%e0%a6%be%e0%a6%87%e0%a6%95%e0%a7%8d%e0%a6%b0%e0%a6%ac%e0%a7%8d%e0%a6%b2%e0%a6%97%e0%a6%bf%e0%a6%82-%e0%a6%9f%e0%a7%81%e0%a6%87%e0%a6%9f%e0%a6%be%e0%a6%b0-%e0%a6%8f%e0%a6%ac%e0%a6%82/#comments</comments>
+		<pubDate>Mon, 27 Oct 2008 09:04:26 +0000</pubDate>
+		<dc:creator>Manchumahara</dc:creator>
+		
+		<category><![CDATA[IM]]></category>
+
+		<category><![CDATA[Software Review]]></category>
+
+		<category><![CDATA[Tips and Tricks]]></category>
+
+		<category><![CDATA[pidgin]]></category>
+
+		<category><![CDATA[twitter]]></category>
+
+		<guid isPermaLink="false">http://blog.manchumahara.com/?p=218</guid>
+		<description><![CDATA[বাংলাদেশ,&#8230; দেশে ইন্টারনেট ব্যবহারকারীদের ভেতর এখন ব্লগিং নিয়ে রীতিমতো বিস্ফোড়ন ঘটে গেছে। বিভিন্ন বাংলা ব্লগিং সাইটে নিজের তথাকথীত ব্লগিং ক্যারিয়ার টিকিয়ে রাখতে অনেকেই হিমশিম খাচ্ছেন এখন। এতো প্যাচালের ভেতর আবার আছে কিছু মাইক্রো ব্লগিং বা স্ট্যাটাস আপডেট এর সাইট। আপনি যাবেন কই। &#8220;আপনাকে সোস্যাল বানিয়ে তবে রেহাই দেওয়া হবে&#8221; এই মূল মন্ত্র নিয়ে আছে কিছু [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://img396.imageshack.us/img396/8655/twitterpidginsp6.png"><img class="alignleft" title="pidgin-twitter" src="http://img396.imageshack.us/img396/8655/twitterpidginsp6.png" alt="" width="185" height="254" /></a><span class="bangla">বাংলাদেশ,&#8230; দেশে ইন্টারনেট ব্যবহারকারীদের ভেতর এখন ব্লগিং নিয়ে রীতিমতো বিস্ফোড়ন ঘটে গেছে। বিভিন্ন বাংলা ব্লগিং সাইটে নিজের তথাকথীত ব্লগিং ক্যারিয়ার টিকিয়ে রাখতে অনেকেই হিমশিম খাচ্ছেন এখন। এতো প্যাচালের ভেতর আবার আছে কিছু মাইক্রো ব্লগিং বা স্ট্যাটাস আপডেট এর সাইট। আপনি যাবেন কই। &#8220;আপনাকে সোস্যাল বানিয়ে তবে রেহাই দেওয়া হবে&#8221; এই মূল মন্ত্র নিয়ে আছে কিছু সোস্যাল নেটওয়ার্ক সাইট। যাই হোক এই পোস্টের উদ্দেশ্য মাইক্রব্লগিং সাইট <a class="postlink" onclick="window.open(this.href);return false;this.target='_blank';" rel="nofollow" href="http://twitter.com/">টুইটার</a> এবং উন্মক্ত মাল্টি ক্লায়েন্ট চ্যাট মেসেঞ্জার <a class="postlink" onclick="window.open(this.href);return false;this.target='_blank';" rel="nofollow" href="http://pidgin.im/">পিজিনের</a> ভেতর সম্পর্ক স্থাপনের একটা প্লাগিন নিয়ে। তাই যারা টুইটার এবং পিজিনের চমক থেকে এখনো বঞ্চিত তাদের প্রতি অনুরোধ নিচের লেখাটুকু পড়ার আগে টুইটার ও পিজিনের সাইট থেকে ঘুরে আসুন।</span></p>
+<p><span class="bangla">পিজিন থেকেই টুইটারের স্ট্যাটাস পরিবর্তন করা বা মাইক্রব্লগ লেখা যাবে এমন একটা প্লাগিন পেলাম। এটা ফ্রি ও মাল্টিপ্লাটফর্ম সাপোর্ট করে মানে আপনি উইন্ডোজ কিংবা লিনাক্স উভয়ের পিজিনে ব্যবহার করতে পারবেন।</span></p>
+<p><span class="bangla">প্লাগিনের নামঃ microblog-purple<br />
+ওয়েব সাইটঃ <a class="postlink" onclick="window.open(this.href);return false;this.target='_blank';" rel="nofollow" href="http://code.google.com/p/microblog-purple/">গুগল কোড এর লিঙ্ক</a><br />
+কোড লাইসেন্স: GNU General Public License v3<br />
+ডাউনলোডঃ <a class="postlink" onclick="window.open(this.href);return false;this.target='_blank';" rel="nofollow" href="http://code.google.com/p/microblog-purple/downloads/list">এখানে</a></span><span id="more-218"></span></p>
+<p><span class="bangla">পিজিনের উইন্ডোজ ভার্সনে কিভাবে ইনস্টল করবেনঃ<br />
+প্রথমে এই <a class="postlink" onclick="window.open(this.href);return false;this.target='_blank';" rel="nofollow" href="http://microblog-purple.googlecode.com/files/pidgin-microblog-0.1.2.exe">exe</a> ভার্সনটা ডাউনলোড করে নিন। এখন পিজিন যদি চালু থাকে বন্ধ করে দিন। এখন exe ফাইলটা ইনস্টল করুন। পিজিন চালু করার অপশন সম্ভবত ইনস্টলের শেষে আপনা আপনি আসবে। এখন আপনাকে যা করতে হবে তাহল পিজিনে ইয়াহু, জিটক বা অন্য ইনস্ট্যান্ট মেসেঞ্জার ক্লায়েন্ট একাউন্ট যেভাবে এড করতে হয় সেইভাবে টুইটারের জন্য একটা একাউন্ট যুক্ত করতে হবে।Accounts-&gt;Manage Accounts-&gt;Add<br />
+দেখুন IM এর লিস্টে টুইটার আছে। এখন টুইটার এর ইউজার নেম পাসওয়ার্ড দিন। সেইভ করুন। হয়ে গেলো। এখন আপনি পিজিন থেকেই টুইটারে স্ট্যাটাস আপডেট করতে পারবেন আর অন্যদের আপডেট দেখতে পারবেন ও রিপ্লাই করতে পারবেন। মজা না?</span></p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.manchumahara.com/2008/10/27/%e0%a6%ae%e0%a6%be%e0%a6%87%e0%a6%95%e0%a7%8d%e0%a6%b0%e0%a6%ac%e0%a7%8d%e0%a6%b2%e0%a6%97%e0%a6%bf%e0%a6%82-%e0%a6%9f%e0%a7%81%e0%a6%87%e0%a6%9f%e0%a6%be%e0%a6%b0-%e0%a6%8f%e0%a6%ac%e0%a6%82/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Simple Ajax Tab for wordpress (Manchuwpajaxtab) v1.1</title>
+		<link>http://blog.manchumahara.com/2008/10/18/simple-ajax-tab-for-wordpress-manchuwpajaxtab/</link>
+		<comments>http://blog.manchumahara.com/2008/10/18/simple-ajax-tab-for-wordpress-manchuwpajaxtab/#comments</comments>
+		<pubDate>Sat, 18 Oct 2008 16:48:55 +0000</pubDate>
+		<dc:creator>Manchumahara</dc:creator>
+		
+		<category><![CDATA[Ajax]]></category>
+
+		<category><![CDATA[Java script]]></category>
+
+		<category><![CDATA[wordpress plugin]]></category>
+
+		<category><![CDATA[ajax tab widget for wp]]></category>
+
+		<category><![CDATA[ajax wp tab]]></category>
+
+		<category><![CDATA[wordpress ajax tab]]></category>
+
+		<guid isPermaLink="false">http://blog.manchumahara.com/?p=207</guid>
+		<description><![CDATA[Simple Ajax Tab for wordpress or just Manchuwpajaxtab is a small plugin/widget for wordpress to show some important features of a blog in one place and make them ajax based so the loading time of blog is minimun. Here Recent Posts, Recent Comemnts, Tag clouds, Archives, Blogroll and Categories are packed together as tab..ajax based [...]]]></description>
+			<content:encoded><![CDATA[<p><img src="http://img114.imageshack.us/img114/2179/manchutabrf6.jpg" border="5" alt="manchuajaxtab" align="left" />Simple Ajax Tab for wordpress or just Manchuwpajaxtab is a small plugin/widget for wordpress to show some important features of a blog in one place and make them ajax based so the loading time of blog is minimun. Here Recent Posts, Recent Comemnts, Tag clouds, Archives, Blogroll and Categories are packed together as tab..ajax based tab. I think it&#8217;s clear what the plugin does.</p>
+<p>Demo: pls see the ajax tab in sidebar in my blog. Hope people using theme like me will like this plugin/widget.</p>
+<p>How to install: Just download the attached file, unzip and upload to plugins folder. Activate the plugin from plugins  list , Now add the widget from Design-&gt;widgets.<span id="more-207"></span></p>
+<p>There are some setting to that u can set from Settings-&gt;Manchu Ajax Tab where you can set the width of tabs and container.</p>
+<p>This is first stable release of this plugin/widget and I will add more features soon so that tabs are more flexibles and easily cusmizable from admin panel.</p>
+<p>Plugin Name: ManchuAjaxTab<br />
+Description: Ajax tab plugin/widgets for wordpress sidebar<br />
+Version: 1.0<br />
+Author: <a href="http://blog.manchumahara.com/" target="_blank">Sabuj Kundu aka manchumahara<br />
+</a>Tabs: Recent Posts, Recent Comments, Tag clouds, Blogroll, Archives and Categories. More are comming soon with more features <img src='http://blog.manchumahara.com/wp-includes/images/smilies/icon_biggrin.gif' alt=':D' class='wp-smiley' /><br />
+License: GPL2<br />
+Note: No ajax or js library is used here. I mean raw ajax/js code is used to make it simple and faster loading.<br />
+Download: Note: There is a file embedded within this post, please visit this post to download the file.</p>
+<p>Change log v1.1(2nd release 02.11.08):</p>
+<ul>
+<li>Admin interface to give custom name for tabs. This will be help full to use local language. Though this is not fully supported for localization. Hope I will give this support in next release.</li>
+<li>Custom width for tab &#8216;div&#8217; and container or result &#8216;div&#8217;. This will help to maintain sidebar width and theme design using div based concept.</li>
+<li>Fix for custom or SEO friend URL.</li>
+</ul>
+<p>Don&#8217;t forget to make comment if this is help full for you or not. Hope I will add more features on it soon. So keep eye on my blog regularly.</p>
+<p>Thanks</p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.manchumahara.com/2008/10/18/simple-ajax-tab-for-wordpress-manchuwpajaxtab/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>আর.এস.এস.(RSS) কি এবং কেন ?</title>
+		<link>http://blog.manchumahara.com/2008/09/22/%e0%a6%86%e0%a6%b0%e0%a6%8f%e0%a6%b8%e0%a6%8f%e0%a6%b8rss-%e0%a6%95%e0%a6%bf-%e0%a6%8f%e0%a6%ac%e0%a6%82-%e0%a6%95%e0%a7%87%e0%a6%a8/</link>
+		<comments>http://blog.manchumahara.com/2008/09/22/%e0%a6%86%e0%a6%b0%e0%a6%8f%e0%a6%b8%e0%a6%8f%e0%a6%b8rss-%e0%a6%95%e0%a6%bf-%e0%a6%8f%e0%a6%ac%e0%a6%82-%e0%a6%95%e0%a7%87%e0%a6%a8/#comments</comments>
+		<pubDate>Mon, 22 Sep 2008 19:00:48 +0000</pubDate>
+		<dc:creator>Manchumahara</dc:creator>
+		
+		<category><![CDATA[rss]]></category>
+
+		<category><![CDATA[X manchumahara]]></category>
+
+		<category><![CDATA[আর.এস.এস.]]></category>
+
+		<category><![CDATA[মানচুমাহারা]]></category>
+
+		<guid isPermaLink="false">http://blog.manchumahara.com/?p=188</guid>
+		<description><![CDATA[<img alt="ছবি" src="http://thumbnails5.imagebam.com/1392/4025e813915319.gif" align="left" style="margin:3px;"/><span class="bangla">ধরুন আপনি কিছু সাইট রেগুলার ভিজিট করেন এবং গুরুত্বপূর্ণ লেখাগুলো বা আপডেটগুলো পড়েন। হতে পারে আপনি কোন নিউজসাইটের সংবাদ্ গুলো সাইটে ঢুকে পড়েন। আবার দুই তিনটা ব্লগ সাইটে রেগুলার ভিজিট করে এবং পোস্ট পড়েন। এই রকম ১০টা সাইট আপনার রেগুলার দেখা লাগে আর অন্য ১০টা সাইটের শুধু আপডেট জানতে পারলেই হয়। নিশ্চয় অনেক সময় ব্যয় করা লাগে আপডেটেড থাকার জন্য। কিন্তু যদি এমন হয় আপনি একটা সাইট বা একটা সফটওয়্যার দিয়েই এই ২০টা সাইটের আপডেট জানতে পারবেন বা নিউজের হেড লাইন পেয়ে যাবেন কিংবা ফোরামের লেটেস্ট পোস্টগুলোর টাইটেল এবং সেই সাথে কিছু ভুমিকা পেয়ে যাচ্ছেন তাহলে সেটা অনেক মজার হবে না ?</span>]]></description>
+			<content:encoded><![CDATA[<p><img style="margin:3px;" src="http://thumbnails5.imagebam.com/1392/4025e813915319.gif" alt="ছবি" align="left" /><span class="bangla">ঠিক করেছি মাঝে ওয়েবসাইট বা ইন্টারনেট ব্যবহার নিয়ে ছোট ছোট লেখা দিবো নিয়মিত। দেখা যায় সাধারণ ব্যবহারকারীরা অনেক কিছু জানেন না, যা জানতে পারলে ইন্টারনেট ব্যবহার আরো সার্থক হতে পারে। যেমন নিচের আইকন গুলোর দিকে তাকিয়ে দেখুন। হ্যাঁ যারা জানেন তারা আর এই পোস্ট না দেখলেও পারেন কিন্তু যারা মনে করছেন&#8230;</span><span id="more-188"></span><br />
+<span class="bangla"> &#8220;হ্যাঁ এই ধরনের ইমেজ বা লিঙ্ক সাইটেই দেখি। শুধু শুধু ইমেজগুলো দিয়ে রাখে&#8230; কোন কাম কাজ নাই&#8230;ইত্যাদি&#8221;</span><br />
+<span class="bangla">&#8230;তাদের জন্য এই টপিক বা পোস্টটি।</span><br />
+<img src="http://www.drexel.edu/IRT/rmcweb/rss-icon-collection.gif" alt="ছবি" /><br />
+<span class="bangla">হুম, এই ইমেজগুলো অনেক গুরুত্তপূর্ণ যে কোন সাইটের জন্য। এগুলো আর.এস.এস. বা এটম লিঙ্ক এর আইকন। যেকেউ যেন দেখেই বুঝতে পারে এটা আর.এস.এস. এর লিঙ্ক তাই বেশির ভাগ সাইটেই এই ধরনের আইকন ব্যবহার করা হয়। আজকে আমি আমার সাধ্যমত আর.এস.এস. কি, কেন, এর ব্যবহার কিভাবে করা যায় এবং এটি ব্যবহারের দরকার কি সেই বিষয়ে সহজ ভাবে কিছু আলোচনা করার চেস্টা করবো।</span><br />
+<span class="bangla"><strong>আর.এস.এস.(RSS) কি? কেন ?</strong><br />
+ধরুন আপনি কিছু সাইট রেগুলার ভিজিট করেন এবং গুরুত্বপূর্ণ লেখাগুলো বা আপডেটগুলো পড়েন। হতে পারে আপনি কোন নিউজসাইটের সংবাদ্ গুলো সাইটে ঢুকে পড়েন। আবার দুই তিনটা ব্লগ সাইটে রেগুলার ভিজিট করে এবং পোস্ট পড়েন। এই রকম ১০টা সাইট আপনার রেগুলার দেখা লাগে আর অন্য ১০টা সাইটের শুধু আপডেট জানতে পারলেই হয়। নিশ্চয় অনেক সময় ব্যয় করা লাগে আপডেটেড থাকার জন্য। কিন্তু যদি এমন হয় আপনি একটা সাইট বা একটা সফটওয়্যার দিয়েই এই ২০টা সাইটের আপডেট জানতে পারবেন বা নিউজের হেড লাইন পেয়ে যাবেন কিংবা ফোরামের লেটেস্ট পোস্টগুলোর টাইটেল এবং সেই সাথে কিছু ভুমিকা পেয়ে যাচ্ছেন তাহলে সেটা অনেক মজার হবে না ? যে পোস্ট বা নিউজটা টাইটেল দেখে গুরুত্বপূর্ণ মনে হলো সেইটা ঐ সাইটে ঢুকে পড়লেন। ঠিক এই কাজটা সহজ ভাবে করার জন্যই আর.এস.এস. এর উদ্ভব। RSS এর অনেকগুলো পূর্ণ অর্থ আছে যেমন Really Simple Syndication বা Rich Site Summary। সিন্ডিকেটিং এর অর্থটা এমন যে, কোন তথ্য নতুন করে কোথাও পাবলিশ করা(হতে পারে কোন সাইটে বা কোন কোন ডেক্সটপ সফটওয়্যারে) যা অন্য কোন সোর্স(হতে পারে এটা অন্য একটা ওয়েব সাইট) হতে আসছে। অর্থাৎ স্বাভাবিক ভাবে ধরে নিতে পারি কোন সাইটের তথ্য অন্য সাইটে প্রদর্শন করার একটা সহজ একটা মাধ্যম হল আর.এস.এস।</span><br />
+<span class="bangla"><strong>কিভাবে অন্য অনেকগুলো সাইটের আর.এস.এস. লিঙ্ক থেকে আপডেট গুলো এক জায়গায় দেখতে পারবো ?</strong><br />
+কোন আর.এস.এস. লিঙ্ককে বলা হয় ফীডার বা ফীড। আর এই লিঙ্ক থেকে তথ্যগুলো বের করাকে বলা হয় ফীড রিড বা ফীড় পড়া আর সেই কাজটা যে করে তাকে বলা হয় ফীড রিডার বা আর.এস.এস. রিডার। হাতের কাছে ওয়েব বেসড ফ্রি যে আর.এস.এস. রিডার আছে তা হলো গুগল রিডার। আমি নিজেও এটা ব্যবহার করি এবং প্রায় ৫০টার মতো সাইটের আপডেট এটা দিয়ে জানার চেস্টা করি। গুলল রিডার এর ঠিকানা <a href="http://www.google.com/reader" target="_blank">http://www.google.com/reader</a> বা <a href="http://www.google.com/reader/view/" target="_blank">http://reader.google.com</a> । এর জন্য আপনার লাগবে একটি গুগল একাউন্ট বা জিমেইল একাউন্ট। শুধু মাত্র রিডারে জিমেইল একাউন্ট দিয়ে কোন সাইটের আর.এস.এস. লিঙ্কটা এড করুন বা সাবস্ক্রাইপ করুন। দেখবেন সাথে সাথে ঐ সাইটের লেটেস্ট আপডেট আপনাকে পড়ে দেখাবে। এখন আপনি যে কোন সময় গুগল রিডারে ঢুকে ঐ সাইটের লেটেস্ট আপডেটগুলো জানতে পারবেন।</span><br />
+<span class="bangla">ইদানিং প্রায় সবগুলো সোস্যাল নেটওয়ার্ক সাইট আপনাকে আর.এস.এস. পড়ার সুযোগ দিচ্ছে। যেমন, অরকুট(<a href="http://www.orkut.com" target="_blank">http://www.orkut.com</a>), ফেসবুক(<a href="http://www.facebook.com" target="_blank">http://www.facebook.com</a>)। আসল ঘটনাতো বুঝতে পেরেছেন নিশ্চয়। এখন আশা করি আপনিই খুঁজে নিতে পারবেন বাদ বাকীটা। কিংবা গুগলে &#8220;online rss reader&#8221; লিখে সার্চ দিন, দেখবেন অনেক অনলাইন আর.এস.এস. রিডারের লিঙ্ক পেয়ে গেছেন। সবচেয়ে হাতের কাছে হলো ওয়ার্ডপ্রেস। আপনার যদি নিজস্ব হোস্টিং কিংবা ওয়ার্ডপ্রেসে হোস্টেড একাউন্ট থাকে তাহলে দেখবেন widget হিসাবে আর.এস.এস. রিডার প্লাগিন আছে যা দিয়ে আপনি আপনার ব্লগে অনেকগুলো সাইটের আপডেট দেখাতে পারেন rss widget ব্যবহার করে।</span></p>
+<p><span class="bangla"><strong>আর.এস.এস. ব্যবহারের সুবিধাগুলোঃ</strong><br />
+আর.এস.এস. ব্যবহারের কিছু সুবিধা পয়েন্ট আকারে দেওয়ার চেস্টা করছি।</span><br />
+<span class="bangla">কঃ ইয়াহু বা গুগল গ্রুপের মেইলগুলো আর.এস.এস. এর মাধ্যমে পেতে পারেন যা স্প্যাম এর হাত থেকে আপনার মেইল ইনবক্সকে বাচাঁবে।<br />
+খঃ হাজার হাজার(এটা সত্যি যে অনেকেই বিভিন্ন কারনে শত শত সাইটের আর.এস.এস. পড়ে ডেইলি অন্তত একবার চোখ বুলিয়ে যান) সাইটে ভিজিট না করেই লেটেস্ট আপডেট জানতে পারছেন।<br />
+গঃ আপডেট সংবাদ জানার জন্য নিউজ সাইটের ফীড সাবক্রাইব করতে পারেন।<br />
+ঘঃ আপনার প্রোডাক্ট বা সাইটের তথ্যকে সহজে ব্যবহারকারীদের মাঝে পৌচ্ছে দিতে পারেন।<br />
+ঙঃ বিজ্ঞাপনের মাধ্যম হিসাবে কোন কম্পানী আর.এস.এস. ব্যবহার করতে পারেন।</span><br />
+<span class="bangla"><strong>আর.এস.এস. ব্যবহারের অসুবিধাগুলোঃ</strong><br />
+কঃ অনেক সাইটই আর.এস.এস. সুবিধা দেয় না।<br />
+খঃ অনেকে মেইলে আপডেট পেতে পছন্দ করেন।<br />
+গঃ অনেক সময় দেখা যায় আর.এস.এস. পড়তেই বেশি পছন্দ করে অনেকে। সাইট ভিজিট করে না।<br />
+ঘঃ অনেকে সম্পূর্ণ টপিকই আর.এস.এস. আকারে পেতে চায় যা সাইটের হোস্টিং সার্ভারের জন্য চাপ সৃষ্ট করে।<br />
+ঙঃ সম্পূর্ণ সংবাদ বা টপিক বেশির ভাগ সময়ই অনেকেই দেখে না।</span><br />
+<span class="bangla">কারো বুঝতে সমস্যা হলে প্রশ্ন করুন।:D<br />
+ধন্যবাদ।<br />
+[বানান ভুল গুলো নিজ গুনে ক্ষমা করে দেবেন, আমারে যে কেন ssc তে বাংলায় পাশ করাইছিলো :D]</span></p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.manchumahara.com/2008/09/22/%e0%a6%86%e0%a6%b0%e0%a6%8f%e0%a6%b8%e0%a6%8f%e0%a6%b8rss-%e0%a6%95%e0%a6%bf-%e0%a6%8f%e0%a6%ac%e0%a6%82-%e0%a6%95%e0%a7%87%e0%a6%a8/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>প্রকাশিত হলো আমাদের প্রযুক্তি’র ই-সাময়িকী ‘প্রযুক্তি কথন’</title>
+		<link>http://blog.manchumahara.com/2008/09/20/%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%95%e0%a6%be%e0%a6%b6%e0%a6%bf%e0%a6%a4-%e0%a6%b9%e0%a6%b2%e0%a7%8b-%e0%a6%86%e0%a6%ae%e0%a6%be%e0%a6%a6%e0%a7%87%e0%a6%b0-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%af/</link>
+		<comments>http://blog.manchumahara.com/2008/09/20/%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%95%e0%a6%be%e0%a6%b6%e0%a6%bf%e0%a6%a4-%e0%a6%b9%e0%a6%b2%e0%a7%8b-%e0%a6%86%e0%a6%ae%e0%a6%be%e0%a6%a6%e0%a7%87%e0%a6%b0-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%af/#comments</comments>
+		<pubDate>Sat, 20 Sep 2008 17:31:17 +0000</pubDate>
+		<dc:creator>Manchumahara</dc:creator>
+		
+		<category><![CDATA[Bangla Computing]]></category>
+
+		<category><![CDATA[amaderprojukti]]></category>
+
+		<category><![CDATA[amaderprojukti magazine]]></category>
+
+		<category><![CDATA[projukti kothon]]></category>
+
+		<guid isPermaLink="false">http://blog.manchumahara.com/?p=186</guid>
+		<description><![CDATA[<span class="bangla"><a href="http://forum.amaderprojukti.com/viewtopic.php?f=7&#38;t=2235#p18522"><img style="margin: 3px;" src="http://forum.amaderprojukti.com/cover_magazine.jpg" border="0" alt="magcover" align="left" /></a>প্রকাশিত হলো আমাদের প্রযুক্তির ই-সাময়িকী ‘প্রযুক্তি কথন’-এর প্রথম সংখ্যা এবং সফটওয়্যার স্বাধীনতা দিবস বিশেষ সংখ্যা। তাই এবারের সংখ্যা সাজানো হয়েছে উন্মুক্ত সোর্স বিষয়ক সকল লেখা দিয়ে। আমাদের প্রযুক্তি ফোরামে বিভিন্ন সময় প্রকাশিত উন্মুক্ত সোর্স ও লিনাক্স বিষয়ক লেখার পাশাপাশি রয়েছে অন্যান্য ওপেন সোর্স বিষয়ক ওয়েব সাইট ও পত্রিকায় প্রকাশিত কিছু লেখাও। ই-সাময়িকীটি ডাউনলোডের জন্য <a href="http://forum.amaderprojukti.com/viewtopic.php?f=7&#38;t=2235#p18522">এখানে</a> দেখুন। আপনাদের মূল্যবান মতামত আমাদের পথচলা ও কার্যক্রমকে আরো বেগবান করবে... ধন্যবাদ, আমাদের প্রযুক্তি টিম । </span>]]></description>
+			<content:encoded><![CDATA[<p><span class="bangla"><a href="http://forum.amaderprojukti.com/viewtopic.php?f=7&amp;t=2235#p18522"><img style="margin: 3px;" src="http://forum.amaderprojukti.com/cover_magazine.jpg" border="0" alt="magcover" align="left" /></a>প্রকাশিত হলো আমাদের প্রযুক্তির ই-সাময়িকী ‘প্রযুক্তি কথন’-এর প্রথম সংখ্যা এবং সফটওয়্যার স্বাধীনতা দিবস বিশেষ সংখ্যা।তাই এবারের সংখ্যা সাজানো হয়েছে উন্মুক্ত সোর্স বিষয়ক সকল লেখা দিয়ে।আমাদের প্রযুক্তি ফোরামে বিভিন্ন সময় প্রকাশিত উন্মুক্ত সোর্স ও লিনাক্স বিষয়ক লেখার পাশাপাশি রয়েছে অন্যান্য ওপেন সোর্স বিষয়ক ওয়েব সাইট ও পত্রিকায় প্রকাশিত কিছু লেখাও। উন্মুক্ত সোর্স সম্পর্কে অনেকের মনে ভ্রান্ত ধারনা আছে। এখনও অনেক কম্পিউটার ব্যবহারকারীই মনে করেন উন্মুক্ত সোর্স মানেই বিনামূল্যের কিছু সফটওয়্যার। তাই লেখা বাছাইয়ের ক্ষেত্রে লিনাক্স বিষয়ক টিপস এবং টিউটোরিয়ালের বদলে উন্মুক্ত সোর্স বিষয়ক সচেতনতামূলক লেখাকেই আমরা বেশি প্রাধান্য দিয়েছি যা উন্মুক্ত সোর্স সম্পর্কে পাঠককে সচেতন করে তোলার পাশাপাশি এ সম্পর্কিত বিভিন্ন প্রশ্নের উত্তর দেবে। খুবই অল্প সময়ে প্রকাশ করায় অনিচ্ছা স্বত্ত্বেও বেশ কিছু ভুল-ত্রুটি রয়েছে এই প্রকাশনায় যা ক্ষমাসুন্দর দৃষ্টিতে দেখার অনুরোধ রইল। এসব ভুল ত্রুটিকে পেছনে ফেলে আমরা চেষ্টা করবো ভবিষ্যতে আরোও সুন্দর এবং বিষয়ভিত্তিক ই-সাময়িকী উপহার দেয়ার। ই-সাময়িকীর ব্যাপারে সকলের গঠনমূলক মতামত ও পরামর্শ কামনা করছি। ধন্যবাদ।</span></p>
+<p><span class="bangla"><br />
+ফরম্যাটঃ পিডিএফ<br />
+মোট পৃষ্টাঃ ৭৪<br />
+ফন্টঃ সোলায়মানলিপি<br />
+ডাউনলোডঃ <a href="http://forum.amaderprojukti.com/download/file.php?id=11">লিঙ্ক</a> </span></p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.manchumahara.com/2008/09/20/%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%95%e0%a6%be%e0%a6%b6%e0%a6%bf%e0%a6%a4-%e0%a6%b9%e0%a6%b2%e0%a7%8b-%e0%a6%86%e0%a6%ae%e0%a6%be%e0%a6%a6%e0%a7%87%e0%a6%b0-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%af/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>আমাদের প্রযুক্তি’র প্রথম জন্মদিন&#8230;পথচলার এক বছর</title>
+		<link>http://blog.manchumahara.com/2008/09/08/%e0%a6%86%e0%a6%ae%e0%a6%be%e0%a6%a6%e0%a7%87%e0%a6%b0-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%af%e0%a7%81%e0%a6%95%e0%a7%8d%e0%a6%a4%e0%a6%bf%e2%80%99%e0%a6%b0-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%a5/</link>
+		<comments>http://blog.manchumahara.com/2008/09/08/%e0%a6%86%e0%a6%ae%e0%a6%be%e0%a6%a6%e0%a7%87%e0%a6%b0-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%af%e0%a7%81%e0%a6%95%e0%a7%8d%e0%a6%a4%e0%a6%bf%e2%80%99%e0%a6%b0-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%a5/#comments</comments>
+		<pubDate>Mon, 08 Sep 2008 19:53:22 +0000</pubDate>
+		<dc:creator>Manchumahara</dc:creator>
+		
+		<category><![CDATA[Personal]]></category>
+
+		<guid isPermaLink="false">http://blog.manchumahara.com/?p=183</guid>
+		<description><![CDATA[‘প্রযুক্তির সবকিছু চাই বাংলায়&#8230;’ এই লক্ষ্য নিয়ে আজ থেকে ঠিক এক বছর আগে ৯ সেপ্টেম্বর অন্তর্জালে জন্ম হয়েছিলো আমাদের মাতৃভাষা বাংলায় বিজ্ঞান ও প্রযুক্তি বিষয়ক বিশ্বের প্রথম অনলাইন ফোরাম ‘আমাদের প্রযুক্তি’। তাই আমাদের প্রযুক্তি’র প্রথম জন্মদিনে আমাদের প্রযুক্তি’র সকল নিয়মিত সদস্য ও শুভানুধ্যায়ীদের জানাই আন্তরিক শুভেচ্ছা ও কৃতজ্ঞতা। বিস্তারিত এখানে।
+
+]]></description>
+			<content:encoded><![CDATA[<p><img class="alignleft" style="float: left; margin-left: 4px; margin-right: 4px;" src="http://forum.amaderprojukti.com/styles/prosilver/imageset/ap_1stbirthday.jpg" alt="" width="300" height="150" />‘<span class="bangla">প্রযুক্তির সবকিছু চাই বাংলায়&#8230;’ এই লক্ষ্য নিয়ে আজ থেকে ঠিক এক বছর আগে ৯ সেপ্টেম্বর অন্তর্জালে জন্ম হয়েছিলো আমাদের মাতৃভাষা বাংলায় বিজ্ঞান ও প্রযুক্তি বিষয়ক বিশ্বের প্রথম অনলাইন ফোরাম ‘আমাদের প্রযুক্তি’। তাই আমাদের প্রযুক্তি’র প্রথম জন্মদিনে আমাদের প্রযুক্তি’র সকল নিয়মিত সদস্য ও শুভানুধ্যায়ীদের জানাই আন্তরিক শুভেচ্ছা ও কৃতজ্ঞতা। বিস্তারিত <a href="http://forum.amaderprojukti.com/viewtopic.php?f=3&amp;t=2181&amp;p=18145#p18135">এখানে</a>।<br />
+</span></p>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.manchumahara.com/2008/09/08/%e0%a6%86%e0%a6%ae%e0%a6%be%e0%a6%a6%e0%a7%87%e0%a6%b0-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%af%e0%a7%81%e0%a6%95%e0%a7%8d%e0%a6%a4%e0%a6%bf%e2%80%99%e0%a6%b0-%e0%a6%aa%e0%a7%8d%e0%a6%b0%e0%a6%a5/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Simple RSS2/Atom mod for phpbb3</title>
+		<link>http://blog.manchumahara.com/2008/09/06/simple-rss2atom-mod-for-phpbb3/</link>
+		<comments>http://blog.manchumahara.com/2008/09/06/simple-rss2atom-mod-for-phpbb3/#comments</comments>
+		<pubDate>Sat, 06 Sep 2008 16:18:14 +0000</pubDate>
+		<dc:creator>Manchumahara</dc:creator>
+		
+		<category><![CDATA[PHPBB3]]></category>
+
+		<category><![CDATA[phpbb33 rss2 feed]]></category>
+
+		<category><![CDATA[rss mod for phpbb3]]></category>
+
+		<category><![CDATA[rss2 feed in phpbb]]></category>
+
+		<guid isPermaLink="false">http://blog.manchumahara.com/?p=182</guid>
+		<description><![CDATA[MOD Title: Simple RSS mod for phpBB3
+MOD Description: Will enable you to put a RSS feed on your phpBB3 Forum.
+This rss2 feed mod show only those posts that the viewer have read authentication for.
+That means you do not need to think about the posts of yours that has no access for normal user and bot [...]]]></description>
+			<content:encoded><![CDATA[<p>MOD Title: Simple RSS mod for phpBB3</p>
+<p>MOD Description: Will enable you to put a RSS feed on your phpBB3 Forum.<br />
+This rss2 feed mod show only those posts that the viewer have read authentication for.<br />
+That means you do not need to think about the posts of yours that has no access for normal user and bot etc.</p>
+<p>MOD Version: 1.0.5  <strong>[ Last Update: 20.09.08</strong> ]<br />
+Installation Level: Easy<br />
+Installation Time: 1 minutes<br />
+phpBB Version: 3.0.0 Gold or later<br />
+Styles: prosilver<br />
+Translations: English<br />
+MOD Format: MODX and MOD<br />
+MOD Download: Note: There is a file embedded within this post, please visit this post to download the file.</p>
+<p>See my post in phpbb forum: <a href="http://www.phpbb.com/community/viewtopic.php?f=70&amp;t=748885&amp;p=4202195#p4202195" target="_blank">link</a></p>
+<p>Change log:20.09.08</p>
+<ol style="list-style-type: lower-alpha;">
+<li> Fixed for feed validation error for relative path problem.</li>
+<li> Fixed for xml compatible issue for inline java script (Feed validation error)</li>
+</ol>
+]]></content:encoded>
+			<wfw:commentRss>http://blog.manchumahara.com/2008/09/06/simple-rss2atom-mod-for-phpbb3/feed/</wfw:commentRss>
+		</item>
+	</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.927 seconds -->
+<!-- Cached page generated by WP-Super-Cache on 2008-12-12 18:07:17 -->

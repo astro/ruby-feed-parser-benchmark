@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://kerneltrap.org" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>KernelTrap - </title>
+ <link>http://kerneltrap.org</link>
+ <description>KernelTrap is a web community devoted to sharing the latest in kernel development news.</description>
+ <language>en</language>
+<item>
+ <title>2.6.27-rc8, &quot;This One Should Be The Last One&quot;</title>
+ <link>http://kerneltrap.org/Linux/2.6.27-rc8_This_One_Should_Be_The_Last_One</link>
+ <description>&lt;p&gt;&quot;&lt;i&gt;So yet another week, another -rc,&lt;/i&gt;&quot; began Linux creator, Linus Torvalds, &lt;a href=&quot;http://kerneltrap.org/mailarchive/linux-kernel/2008/9/29/3450454&quot;&gt;announcing the 2.6.27-rc8 Linux kernel&lt;/a&gt;.  He continued, &quot;&lt;i&gt;this one should be the last one: we&#039;re certainly not running out of regressions, but at the same time, at some point I just have to pick some point, and on the whole the regressions don&#039;t look _too_ scary. And -rc8 obviously does fix more of them.&lt;/i&gt;&quot;  Linus went on to note that most of the changes since -rc7 are small, &quot;&lt;i&gt;and there aren&#039;t even a whole lot of them.&lt;/i&gt;&quot;&lt;/p&gt;
+&lt;p&gt;Jiri Kosina cautioned that there is still an unknown bug affecting the e1000e driver currently in the 2.6.27 kernel, &quot;&lt;i&gt;rendering the cards unusable for most of the i-am-not-a-hacker users (and remember, even Dave Airlie bricked his laptop completely to death, when trying to restore eeprom contents)&lt;/i&gt;&quot;  When asked how to duplicate the bug, Jiri noted that the inability to reliably reproduce the bug added to the difficulty in debugging the problem, &quot;&lt;i&gt;apparently it is some kind of race, as it usually takes multiple cycles to trigger&lt;/i&gt;&quot;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://kerneltrap.org/Linux/2.6.27-rc8_This_One_Should_Be_The_Last_One&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://kerneltrap.org/Linux/2.6.27-rc8_This_One_Should_Be_The_Last_One#comments</comments>
+ <category domain="http://kerneltrap.org/-rc">-rc</category>
+ <category domain="http://kerneltrap.org/-rc8">-rc8</category>
+ <category domain="http://kerneltrap.org/taxonomy/term/1305">2.6.27</category>
+ <category domain="http://kerneltrap.org/taxonomy/term/1327">2.6.27-rc8</category>
+ <category domain="http://kerneltrap.org/Linux">Linux</category>
+ <category domain="http://kerneltrap.org/news/linux">Linux news</category>
+ <pubDate>Tue, 30 Sep 2008 15:55:51 +0000</pubDate>
+ <dc:creator>Jeremy</dc:creator>
+ <guid isPermaLink="false">16626 at http://kerneltrap.org</guid>
+</item>
+<item>
+ <title>2.6.27-rc6, &quot;Things Are Calming Down&quot;</title>
+ <link>http://kerneltrap.org/node/16577</link>
+ <description>&lt;p&gt;&quot;&lt;i&gt;The patches most people hopefully care about tend to be small details,&lt;/i&gt;&quot; noted Linus Torvalds, announcing the 2.6.27-rc6 kernel.  He continued, &quot;&lt;i&gt;and so more regressions should hopefully be closed now, some by just reverting the commits that caused breakage.  I don&#039;t think anything special merits explicit comment, but you can get a flavor for things by scanning the appended shortlog.&lt;/i&gt;&quot;  Earlier in the &lt;a href=&quot;http://kerneltrap.org/mailarchive/linux-kernel/2008/9/10/3249494&quot;&gt;announcement email&lt;/a&gt;, Linus did note some specifics about which drivers caused the bulk of the patch:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&quot;Same old deal - except it&#039;s been almost two weeks since -rc5. That said, the diff is actually about the same size, so I guess that means things are calming down. Most of the diff (bulk-wise) is updates to the new gspca (standard USB webcam) driver, although some of it is also removal of the dead miropcm20* driver.&quot;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://kerneltrap.org/node/16577&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://kerneltrap.org/node/16577#comments</comments>
+ <category domain="http://kerneltrap.org/-rc">-rc</category>
+ <category domain="http://kerneltrap.org/-rc6">-rc6</category>
+ <category domain="http://kerneltrap.org/taxonomy/term/1305">2.6.27</category>
+ <category domain="http://kerneltrap.org/taxonomy/term/1326">2.6.27-rc6</category>
+ <category domain="http://kerneltrap.org/Linus_Torvalds">Linus Torvalds</category>
+ <category domain="http://kerneltrap.org/Linux">Linux</category>
+ <category domain="http://kerneltrap.org/news/linux">Linux news</category>
+ <pubDate>Fri, 12 Sep 2008 22:42:58 +0000</pubDate>
+ <dc:creator>Jeremy</dc:creator>
+ <guid isPermaLink="false">16577 at http://kerneltrap.org</guid>
+</item>
+<item>
+ <title>Tux3 Acting Like A Filesystem</title>
+ <link>http://kerneltrap.org/Linux/Tux3_Acting_Like_A_Filesystem</link>
+ <description>&lt;p&gt;Daniel Phillips noted that his new Tux3 versioning filesystem is now operating like a filesystem, &quot;&lt;i&gt;the last burst of checkins has brought Tux3 to the point where it undeniably acts like a filesystem: one can write files, go away, come back later and read those files by name.  We can see some of the hoped for attractiveness starting to emerge: Tux3 clearly does scale from the very small to the very big at the same time.  We have our Exabyte file with 4K blocksize and we can also create 64 Petabyte files using 256 byte blocks.&lt;/i&gt;&quot;  He went on to discuss some of the remaining features yet to be implemented, including atomic commits, versioning, coalesce on delete, a version of the filesystem written in the kernel, extents, locking, and extended attributes.&lt;/p&gt;
+&lt;p&gt;Reviewing the above list, Daniel decided he would work next on the coalesce on delete functionality, noting, &quot;&lt;i&gt;without this we can still delete files but we cannot recover file index blocks, only empty them, not so good.&lt;/i&gt;&quot;  He added that at this time he was only going to focus on file truncation, &quot;&lt;i&gt;as soon as file truncation is added to the test mix we will see much more interesting behavior from the bitmap allocator, and we will discover some great ways to generate horrible fragmentation issues.  Yummy.&lt;/i&gt;&quot;  Daniel continued to point out that Tux3 is an open source project, and as such is always looking for others to participate, &quot;&lt;i&gt;whoever wants to carve their initials on what is starting to look like a for-real Linux filesystem, now is a great time to take a flyer.  The code base is still tiny, builds fast, has lots of interactive feedback and is easy to work on.  And you get to put your email address near the beginning of the list, which will naturally write its way into the history of open source.  Probably.&lt;/i&gt;&quot;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://kerneltrap.org/Linux/Tux3_Acting_Like_A_Filesystem&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://kerneltrap.org/Linux/Tux3_Acting_Like_A_Filesystem#comments</comments>
+ <category domain="http://kerneltrap.org/taxonomy/term/930">Daniel Phillips</category>
+ <category domain="http://kerneltrap.org/filesystem">filesystem</category>
+ <category domain="http://kerneltrap.org/Linux">Linux</category>
+ <category domain="http://kerneltrap.org/taxonomy/term/1303">Tux3</category>
+ <category domain="http://kerneltrap.org/news/linux">Linux news</category>
+ <pubDate>Thu, 04 Sep 2008 15:44:32 +0000</pubDate>
+ <dc:creator>Jeremy</dc:creator>
+ <guid isPermaLink="false">16549 at http://kerneltrap.org</guid>
+</item>
+<item>
+ <title>2.6.27-rc5, Fixing Regressions</title>
+ <link>http://kerneltrap.org/Linux/2.6.27_rc5_Fixing_Regressions</link>
+ <description>&lt;p&gt;Linus Torvalds &lt;a href=&quot;http://kerneltrap.org/mailarchive/linux-kernel/2008/8/28/3121484/thread&quot;&gt;announced the 2.6.27-rc5 Linux Kernel&lt;/a&gt;, noting that his &quot;weekly releases&quot; tend to happen every eight days, adding, &quot;&lt;i&gt;the bulk of it is all config updates, and with arm and powerpc leading the pack.&lt;/i&gt;&quot;  Linus continued:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&quot;While the config updates amount to about three quarters of the diff, and if you don&#039;t use a rename-aware diff the blackfin include file movement pretty much accounts for the rest, hidden behind all those trivial (but bulky) changes are a lot of small changes that hopefully fix a number of regressions.&lt;/p&gt;
+&lt;p&gt;&quot;The most exciting (well, for me personally - my life is apparently too boring for words) was how we had some stack overflows that totally corrupted some basic thread data structures. That&#039;s exciting because we haven&#039;t had those in a long time.  The cause turned out to be a somewhat overly optimistic increase in the maximum NR_CPUS value, but it also caused some introspection about our stack usage in general. Including things like a patch to gcc to fix insane stack usage for vararg functions on x86-64.  But that one would only hit anybody who was a bit too adventurous and  selected the big 4096 CPU configuration. The rest of the regressions fixed are a bit more pedestrian.&quot;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://kerneltrap.org/Linux/2.6.27_rc5_Fixing_Regressions&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://kerneltrap.org/Linux/2.6.27_rc5_Fixing_Regressions#comments</comments>
+ <category domain="http://kerneltrap.org/-rc">-rc</category>
+ <category domain="http://kerneltrap.org/-rc5">-rc5</category>
+ <category domain="http://kerneltrap.org/taxonomy/term/1305">2.6.27</category>
+ <category domain="http://kerneltrap.org/taxonomy/term/1322">2.6.27-rc5</category>
+ <category domain="http://kerneltrap.org/Linus_Torvalds">Linus Torvalds</category>
+ <category domain="http://kerneltrap.org/Linux">Linux</category>
+ <category domain="http://kerneltrap.org/news/linux">Linux news</category>
+ <pubDate>Mon, 01 Sep 2008 14:48:03 +0000</pubDate>
+ <dc:creator>Jeremy</dc:creator>
+ <guid isPermaLink="false">16544 at http://kerneltrap.org</guid>
+</item>
+<item>
+ <title>2.6.27-rc4, &quot;Random Stuff All Over&quot;</title>
+ <link>http://kerneltrap.org/Linux/2.6.27-rc4_Random_Stuff_All_Over</link>
+ <description>&lt;p&gt;&quot;&lt;i&gt;Another week, another -rc,&lt;/i&gt;&quot; began Linus Torvalds, announcing the 2.6.27-rc4 Linux kernel, continuing, &quot;&lt;i&gt;this time the diffstat is almost totally dominated by the addition of the musb driver that drives the MUSB and TUSB controllers integrated into omap2430 and davinci. That, together with the removal of the auerswald USB driver (replaced by libusb version) is more than half of the bulk of the patch, and obviously most users won&#039;t ever notice.&lt;/i&gt;&quot;  Linus added:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&quot;Apart from those bulky USB updates, there&#039;s some arch updates (blackfin and ia64), network and input driver updates, and an XFS and UBIFS update. The rest is mostly random stuff all over, probably best described by the appended shortlog. A number of regressions should be off the table, but more remain...&quot;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://kerneltrap.org/Linux/2.6.27-rc4_Random_Stuff_All_Over&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://kerneltrap.org/Linux/2.6.27-rc4_Random_Stuff_All_Over#comments</comments>
+ <category domain="http://kerneltrap.org/-rc">-rc</category>
+ <category domain="http://kerneltrap.org/taxonomy/term/539">-rc4</category>
+ <category domain="http://kerneltrap.org/taxonomy/term/1305">2.6.27</category>
+ <category domain="http://kerneltrap.org/Linus_Torvalds">Linus Torvalds</category>
+ <category domain="http://kerneltrap.org/Linux">Linux</category>
+ <category domain="http://kerneltrap.org/news/linux">Linux news</category>
+ <pubDate>Mon, 25 Aug 2008 21:10:02 +0000</pubDate>
+ <dc:creator>Jeremy</dc:creator>
+ <guid isPermaLink="false">16530 at http://kerneltrap.org</guid>
+</item>
+<item>
+ <title>AXFS, Advanced Execute In Place Filesystem</title>
+ <link>http://kerneltrap.org/AXFS_Advanced_Execute_In_Place_Filesystem</link>
+ <description>&lt;p&gt;&quot;&lt;i&gt;I&#039;d like to get a first round of review on my AXFS filesystem,&lt;/i&gt;&quot; &lt;a href=&quot;http://kerneltrap.org/mailarchive/linux-kernel/2008/8/21/3019604/thread&quot;&gt;began Jared Hulbert&lt;/a&gt;, describing his new &lt;em&gt;Advanced XIP File System&lt;/em&gt; for Linux.  XIP stands for eXecute-In-Place.  The new filesystem received quite a bit of positive feedback.  Jared offered the following description:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&quot;This is a simple read only compressed filesystem like Squashfs and cramfs.  AXFS is special because it also allows for execute-in-place of your applications.  It is a major improvement over the cramfs XIP patches that have been floating around for ages. The biggest improvement is in the way AXFS allows for each page to be XIP or not.  First, a user collects information about which pages are accessed on a compressed image for each mmap()ed region from /proc/axfs/volume0.  That &#039;profile&#039; is used as an input to the image builder.  The resulting image has only the relevant pages uncompressed and XIP.  The result is smaller memory sizes and faster launches.&quot;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://kerneltrap.org/AXFS_Advanced_Execute_In_Place_Filesystem&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://kerneltrap.org/AXFS_Advanced_Execute_In_Place_Filesystem#comments</comments>
+ <category domain="http://kerneltrap.org/taxonomy/term/1320">AXFS</category>
+ <category domain="http://kerneltrap.org/taxonomy/term/1273">cramfs</category>
+ <category domain="http://kerneltrap.org/filesystem">filesystem</category>
+ <category domain="http://kerneltrap.org/taxonomy/term/1319">Jared Hulbert</category>
+ <category domain="http://kerneltrap.org/Linux">Linux</category>
+ <category domain="http://kerneltrap.org/taxonomy/term/1132">squashfs</category>
+ <category domain="http://kerneltrap.org/news/linux">Linux news</category>
+ <pubDate>Fri, 22 Aug 2008 03:10:59 +0000</pubDate>
+ <dc:creator>Jeremy</dc:creator>
+ <guid isPermaLink="false">16520 at http://kerneltrap.org</guid>
+</item>
+<item>
+ <title>Git 1.6.0 Released</title>
+ <link>http://kerneltrap.org/node/16515</link>
+ <description>&lt;p&gt;&quot;&lt;i&gt;The latest feature release GIT 1.6.0 is available at the usual places&lt;/i&gt;,&quot; began Git maintainer, Junio Hamano, &lt;a href=&quot;http://kerneltrap.org/mailarchive/linux-kernel/2008/8/17/2970764&quot;&gt;announcing the latest stable release&lt;/a&gt; of the distributed version control system originally written by Linus Torvalds.  Among the current changes, Junio noted, &quot;&lt;i&gt;with the default Makefile settings, most of the programs are now installed outside your $PATH, except for &#039;git&#039;, &#039;gitk&#039; and some server side programs that need to be accessible for technical reasons.&lt;/i&gt;&quot;  He continued, &quot;&lt;i&gt;by default, packfiles created with this version uses delta-base-offset&lt;br /&gt;
+encoding introduced in v1.4.4.  Pack idx files are using version 2 that allows larger packs and added robustness thanks to its CRC checking, introduced in v1.5.2 and v1.4.4.5.&lt;/i&gt;&quot;  Julio highlighted several other changes, including the addition of a &#039;.sample&#039; extension to the default trigger scripts to be sure they don&#039;t execute in a default install, and the removal of the &#039;stupid&#039; merge strategy.  Other changes include:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&quot;Git-gui learned to stage changes per-line; Reduced excessive inlining to shrink size of the &#039;git&#039; binary; When an object is corrupt in a pack, the object became unusable even when the same object is available in a loose form, we now try harder to fall back to these redundant objects when able; performance of &#039;git-blame -C -C&#039; operation is vastly improved; even more documentation pages are now accessible via &#039;man&#039; and &#039;git help&#039;; longstanding latency issue with bash completion script has been addressed; pager. configuration variable can be used to enable/disable the default paging behaviour per command; git-cvsserver learned to respond to &#039;cvs co -c&#039;; &#039;git-diff -p&#039; learned to grab a better hunk header lines in BibTex, Pascal/Delphi, and Ruby files and also pays attention to chapter and part boundary in TeX documents; error codes from gitweb are made more descriptive where possible, rather than &#039;403 forbidden&#039; as we used to issue everywhere; git-merge has been reimplemented in C.&quot;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://kerneltrap.org/node/16515&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://kerneltrap.org/node/16515#comments</comments>
+ <category domain="http://kerneltrap.org/git">git</category>
+ <category domain="http://kerneltrap.org/taxonomy/term/1316">git 1.6</category>
+ <category domain="http://kerneltrap.org/taxonomy/term/1317">git 1.6.0</category>
+ <category domain="http://kerneltrap.org/Junio_Hamano">Junio Hamano</category>
+ <category domain="http://kerneltrap.org/release">release</category>
+ <category domain="http://kerneltrap.org/taxonomy/term/10">Tools</category>
+ <pubDate>Tue, 19 Aug 2008 11:46:18 +0000</pubDate>
+ <dc:creator>Jeremy</dc:creator>
+ <guid isPermaLink="false">16515 at http://kerneltrap.org</guid>
+</item>
+<item>
+ <title>64-bit Application Thread Creation Performance</title>
+ <link>http://kerneltrap.org/Linux/64-bit_Application_Thread_Creation_Performance</link>
+ <description>&lt;p&gt;A &lt;a href=&quot;http://kerneltrap.org/mailarchive/linux-kernel/2008/8/15/2950234/thread&quot;&gt;recent discussion&lt;/a&gt; on the Linux Kernel mailing list noted that threaded 64-bit applications suffer a drastic slowdown in pthread_create performance when stack utilization goes above 4GB.  Ingo Molnar offered an explanation of the problem, &quot;&lt;i&gt;unfortunately MAP_32BIT use in 64-bit apps for stacks was apparently created without foresight about what would happen in the MM when thread stacks exhaust 4GB.  The problem is that MAP_32BIT is used both as a performance hack for 64-bit apps and as an ABI compat mechanism for 32-bit apps. So we cannot just start disregarding MAP_32BIT in the kernel - we&#039;d break 32-bit compat apps and/or compat 32-bit libraries.&lt;/i&gt;&quot;  The original report noted that once the shared stack goes above 4GB in size, thread creation can take as long as 10 milliseconds, a slowdown described as &quot;&lt;i&gt;quite unacceptable&lt;/i&gt;&quot;.&lt;/p&gt;
+&lt;p&gt;Ingo created a patch introducing a new MAP_STACK flag for glibc to be used instead of MAP_32BIT and avoid imposing the 32-bit performance limitation on threaded 64-bit applications.  He noted, &quot;&lt;i&gt;glibc can switch to this new flag straight away - it will be ignored by the kernel.&lt;/i&gt;&quot;  The new flag was &lt;a href=&quot;http://kerneltrap.org/mailarchive/git-commits-head/2008/8/15/2955014&quot;&gt;quickly merged&lt;/a&gt; upstream, and changes &lt;a href=&quot;http://kerneltrap.org/mailarchive/git-commits-head/2008/8/15/2955014&quot;&gt;were planned&lt;/a&gt; for glibc.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://kerneltrap.org/Linux/64-bit_Application_Thread_Creation_Performance&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://kerneltrap.org/Linux/64-bit_Application_Thread_Creation_Performance#comments</comments>
+ <category domain="http://kerneltrap.org/taxonomy/term/1315">64-bit</category>
+ <category domain="http://kerneltrap.org/Ingo_Molnar">Ingo Molnar</category>
+ <category domain="http://kerneltrap.org/Linux">Linux</category>
+ <category domain="http://kerneltrap.org/performance">performance</category>
+ <category domain="http://kerneltrap.org/news/linux">Linux news</category>
+ <pubDate>Mon, 18 Aug 2008 19:51:12 +0000</pubDate>
+ <dc:creator>Jeremy</dc:creator>
+ <guid isPermaLink="false">16512 at http://kerneltrap.org</guid>
+</item>
+<item>
+ <title>Tux3 Hierarchical Structure</title>
+ <link>http://kerneltrap.org/Linux/Tux3_Hierarchical_Structure</link>
+ <description>&lt;p&gt;&quot;&lt;i&gt;It is about time to take a step back and describe what I have been implementing,&lt;/i&gt;&quot; &lt;a href=&quot;http://kerneltrap.org/mailarchive/tux3/2008/8/12/2903474&quot;&gt;began Daniel Phillips&lt;/a&gt;, referring to his new Tux3 filesystem.  He provided a simple ASCII diagram that detailed the filesystem&#039;s hierarchical structure, describing each of the elements.  About one he noted, &quot;&lt;i&gt;the volume table is a new addition not central to the goals of Tux3, but a nice feature to have given that it comes nearly for free.  One Tux3 volume can have an arbitrary number of separate filesystems tucked inside it, indexed by a simple integer parameter at mount time.  People say they like this idea and it imposes no significant complexity, so it goes in.&lt;/i&gt;&quot;  Daniel continued:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&quot;Each volume has a metablock pointing at the forward log chain for the volume, a version table that describes the hierarchical relationship between versions (snapshots), an atime table to take care of that horrid legacy Unix feature, and an inode table containing files and attributes of files.  [...]  Versioning takes place in three places, versioned pointers in the atime btree, versioned extents in a file data btree and versioned attributes in the inode table. [...]  Notice the absence of a journal, the functionality of which is provided by forward log elements that I described in the &lt;a href=&quot;http://kerneltrap.org/Linux/Comparing_HAMMER_And_Tux3&quot;&gt;Hammer thread&lt;/a&gt; (and will eventually write a separate post about).&quot;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://kerneltrap.org/Linux/Tux3_Hierarchical_Structure&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://kerneltrap.org/Linux/Tux3_Hierarchical_Structure#comments</comments>
+ <category domain="http://kerneltrap.org/taxonomy/term/930">Daniel Phillips</category>
+ <category domain="http://kerneltrap.org/filesystem">filesystem</category>
+ <category domain="http://kerneltrap.org/Linux">Linux</category>
+ <category domain="http://kerneltrap.org/taxonomy/term/1303">Tux3</category>
+ <category domain="http://kerneltrap.org/news/linux">Linux news</category>
+ <pubDate>Fri, 15 Aug 2008 02:04:07 +0000</pubDate>
+ <dc:creator>Jeremy</dc:creator>
+ <guid isPermaLink="false">16502 at http://kerneltrap.org</guid>
+</item>
+<item>
+ <title>Highlighting Interesting Mailing List Discussions</title>
+ <link>http://kerneltrap.org/KernelTrap/Highlighting_Interesting_Mailing_List_Discussions</link>
+ <description>&lt;p&gt;New functionality has been enabled that allows logged-in users to highlight interesting mailing list discussions.  This new feature has been provided out of necessity, as I&#039;m finding myself with insufficient time of late for keeping up with the many mailing lists I track to post articles on KernelTrap.  My goal is to inspire you to participate more in the process, occasionally clicking the new up-arrow on mailing list messages that you find interesting and worthy of attention.  In the upcoming weeks, improved interfaces will be provided for navigating other people&#039;s votes, and for filtering on only the mailing lists you&#039;re interested in.  Future KernelTrap stories and quotes will be selected from those that are highlighted by this voting process.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://kerneltrap.org/KernelTrap/Highlighting_Interesting_Mailing_List_Discussions&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://kerneltrap.org/KernelTrap/Highlighting_Interesting_Mailing_List_Discussions#comments</comments>
+ <category domain="http://kerneltrap.org/taxonomy/term/295">KernelTrap</category>
+ <category domain="http://kerneltrap.org/mailing_lists">mailing lists</category>
+ <category domain="http://kerneltrap.org/taxonomy/term/182">KernelTrap Changes and News</category>
+ <pubDate>Wed, 13 Aug 2008 22:00:09 +0000</pubDate>
+ <dc:creator>Jeremy</dc:creator>
+ <guid isPermaLink="false">16491 at http://kerneltrap.org</guid>
+</item>
+</channel>
+</rss>

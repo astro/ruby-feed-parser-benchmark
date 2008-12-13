@@ -1,0 +1,1764 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+
+<channel>
+	<title>Design Reviver</title>
+	<atom:link href="http://designreviver.com/feed/" rel="self" type="application/rss+xml" />
+	<link>http://designreviver.com</link>
+	<description></description>
+	<pubDate>Fri, 05 Dec 2008 11:59:24 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6.1</generator>
+	<language>en</language>
+			<item>
+		<title>Premium Wordpress Theme Design - Part 2 - HTML + CSS + Wordpress Theme Files</title>
+		<link>http://designreviver.com/tutorials/premium-wordpress-theme-design-part-2-html-css-wordpress-theme-files/</link>
+		<comments>http://designreviver.com/tutorials/premium-wordpress-theme-design-part-2-html-css-wordpress-theme-files/#comments</comments>
+		<pubDate>Fri, 05 Dec 2008 11:57:28 +0000</pubDate>
+		<dc:creator>tim</dc:creator>
+		
+		<category><![CDATA[Tips]]></category>
+
+		<category><![CDATA[Tutorials]]></category>
+
+		<category><![CDATA[premium wordpress theme]]></category>
+
+		<category><![CDATA[theme]]></category>
+
+		<category><![CDATA[wordpress]]></category>
+
+		<category><![CDATA[wordpress theme]]></category>
+
+		<category><![CDATA[wordpress theme design]]></category>
+
+		<guid isPermaLink="false">http://designreviver.com/?p=506</guid>
+		<description><![CDATA[Hi, I&#8217;m Alvaro Guzman and this is the second part of the premium wordpress theme tutorial continued from Part 1. This time you&#8217;ll learn how to slice the design and convert it into XHTML + CSS, then I&#8217;ll show you how to use the css files to mock-up a Wordpress template. This isn&#8217;t a basic [...]]]></description>
+			<content:encoded><![CDATA[<p>Hi, I&#8217;m <a href="http://www.southmakers.com">Alvaro Guzman</a> and this is the second part of the premium wordpress theme tutorial continued from <a href="http://designreviver.com/tutorials/premium-wordpress-theme-design-part-1-the-photoshop-mock-up/">Part 1</a>. This time you&#8217;ll learn how to slice the design and convert it into XHTML + CSS, then I&#8217;ll show you how to use the css files to mock-up a Wordpress template. This isn&#8217;t a basic tutorial,  if you&#8217;re a newbie, maybe you should read some basic HTML+CSS tutorials, and undestand the basics of CSS tags and Wordpress features and structure.<br />
+<span id="more-506"></span></p>
+<p>If you&#8217;re a programmer, you must have some basic knowledge about phothoshop, layers, slicing and obviously   Wordpress. Anyway, if you&#8217;re an intermediate - advanced level webdesigner, I&#8217;m sure you&#8217;ll find this useful.</p>
+<h4>Step 1 - Let&#8217;s begin</h4>
+<p>Open the .psd file.</p>
+<p>First, hide all the layers containing text, links or content images. Leave the design as clean as possible, just show the containers. As you can see below, I&#8217;m showing the background, the header, the main content container and the sidebar background. Of course you must have a folder to put all the images in, also I&#8217;m creating two directories inside /images these are /jpgs and /pngs to store JPEG and PNG files respectively. </p>
+<p>A good  practice is start coding a small framework on a blank .html file and then apply  a single stylesheet to it, after that, you can move forward and turns these  files into a full Wordpress theme.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/12/1.jpg" alt="" width="500" /></p>
+<h4>Step 2 - The main background</h4>
+<p>Let&#8217;s start slicing the images. There&#8217;s several ways of slicing in photoshop, I prefer use the Crop tool, because it works just fine on these kind of designs ( is the easiest way IMO), but at this point you&#8217;ll not need to crop anything, just hide everything except the City Background and the  Fill  layer (color: #000000). </p>
+<p>Then hit Command (Ctrl) + Option (Alt) + Shift + S to activate the Save for web options. Select the file type as .jpg and set the Quality value to 70. Hit Save and put it under /images/jpgs folder.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/12/2.jpg" alt="" width="500" /></p>
+<h4>Step 3 - Ready to slice</h4>
+<p>Now one of the funniest things of the entire process, Slicing!. First hide all the background layers, including the city picture, and the black background, also hide the logo. Try to get something like the  image below.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/12/3.jpg" alt="" width="500" /></p>
+<h4>Step 4 - Slicing background images</h4>
+<p>Once you had only the content layers visible, Save your document with another name, and on Layers palette go to Merge Visible, this way you&#8217;ll merge all the layers but preserving the transparent background (Do not Flatten the image). Next, using the Slice or Crop tool cut the header image, the content background (1px height is fine, I&#8217;m making it bigger just for visual purposes), the sidebar background (1px height), the sidebar footer, and the footer background. See the image below to check the measurements. You must use the Guides to cut the images on the right way. Save each image as a PNG-24 file using the Save for Web options, you can use the names suggested below. </p>
+<p>By saving the backgrounds as  PNGs files we&#8217;ll be able to give our design a floating effect. If you&#8217;re using IE6&#8230; don&#8217;t worry, just switch to Firefox, Chrome, or IE7 for a while, we&#8217;ll take care of IE6 next time. </p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/12/4.jpg" alt="" width="500" /></p>
+<h4>Step 5 - The HTML framework</h4>
+<p>Now let&#8217;s start coding. First we&#8217;ll need a html framework to work with and a single css file, then we&#8217;ll convert that html file into a wordpress theme.</p>
+<p>Start with the head tag.</p>
+<pre>&lt;head&gt;  	&lt;title&gt;GenerationX&lt;/title&gt; 	&lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; type=&quot;text/css&quot; media=&quot;screen&quot; /&gt; &lt;/head&gt;</pre>
+<p>We&#8217;ll divide the layout this way: </p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/12/5.jpg" alt="" width="500" /></p>
+<p>All your html containers must be inside a div called &quot;page&quot;:</p>
+<pre>&lt;body&gt;	&lt;div id=&quot;page&quot;&gt;
+		&lt;!--Insert the layout here--&gt;
+
+	&lt;/div&gt; &lt;!--End of &quot;page&quot;--&gt;&lt;/body&gt;
+</pre>
+<p>Let&#8217;s add the header:</p>
+<pre>&lt;div id=&quot;header&quot;&gt;
+	&lt;div id=&quot;headerimg&quot;&gt;
+		Page title
+	&lt;/div&gt;
+
+	&lt;div id=&quot;top_nav&quot;&gt;
+		&lt;ul&gt;
+			&lt;li&gt;Home&lt;/li&gt;
+			&lt;li&gt;About&lt;/li&gt;
+		&lt;/ul&gt;
+
+	&lt;/div&gt; 
+&lt;/div&gt; &lt;!--End of &quot;header&quot;--&gt;
+</pre>
+<p>  The main content will include the posts and the sidebar:
+</p>
+<p></code></p>
+<pre>&lt;div id=&quot;content&quot;&gt;
+
+   &lt;div class=&quot;blogcontent&quot;&gt;
+   &lt;div class=&quot;post&quot;&gt;
+   &lt;div class=&quot;post_title&quot;&gt;
+   &lt;h2&gt;&lt;a href=&quot;#&quot;&gt;Sample Post&lt;/a&gt;&lt;/h2&gt;
+
+   &lt;small&gt;November 2nd, 2008 | by admin | &lt;a href=&quot;#&quot;&gt;Lorem ipsum&lt;/a&gt;| &lt;a href=&quot;#&quot;&gt;Category 1&lt;/a&gt;| &lt;a href=&quot;#&quot;&gt;Uncategorized&lt;/a&gt;&lt;/small&gt;
+
+   &lt;/div&gt; &lt;!--End of &quot;post title&quot;--&gt;
+   &lt;!--Comments--&gt;
+   &lt;div class=&quot;postmetadata&quot;&gt;
+   &lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;
+
+   &lt;/div&gt;
+   &lt;br class=&quot;space&quot; /&gt;
+
+   &lt;div class=&quot;entry&quot;&gt;
+   &lt;p&gt;
+   &lt;a href=&quot;#&quot;&gt;
+
+   &lt;img class=&quot;alignleft&quot; title=&quot;pic-02&quot; src=&quot;images/jpgs/pic-01.jpg&quot; border=&quot;0&quot; alt=&quot;&quot;/&gt;
+   &lt;/a&gt;
+
+   But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human. No one rejects, dislikes, or avoids &lt;a href=&quot;#&quot;&gt;pleasure&lt;/a&gt; itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.
+   &lt;/p&gt;
+
+   &lt;a href=&quot;#&quot; class=&quot;more-link&quot;&gt;Read more &amp;raquo;&lt;/a&gt;
+ &lt;/div&gt; &lt;!--End of &quot;entry&quot;--&gt;
+
+   &lt;/div&gt; &lt;!--End of &quot;post&quot;--&gt;
+   &lt;/div&gt; &lt;!--End of &quot;blogcontent&quot;--&gt;
+ &lt;div id=&quot;sidebar&quot;&gt;
+
+   &lt;ul&gt;
+   &lt;li class=&quot;categories&quot;&gt;
+   &lt;h2&gt;Categories&lt;/h2&gt;
+   &lt;ul&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Lorem ipsum&lt;/a&gt; (2)&lt;/li&gt;
+
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Category 2&lt;/a&gt; (1)&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sample category 3&lt;/a&gt; (15)&lt;/li&gt;
+   &lt;/ul&gt;
+
+   &lt;/li&gt; 
+
+   &lt;li class=&quot;archives&quot;&gt;
+   &lt;h2&gt;Archives&lt;/h2&gt;
+   &lt;ul&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;November 2008&lt;/a&gt; (2)&lt;/li&gt;
+   &lt;/ul&gt;
+
+   &lt;/li&gt;
+ &lt;li class=&quot;linkcat&quot;&gt;
+   &lt;h2&gt;Blogroll&lt;/h2&gt;
+   &lt;ul class='blogroll'&gt;
+   &lt;li&gt;&lt;a href=&quot;http://wordpress.org/development/&quot;&gt;Development Blog&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;http://wordpress.org/extend/themes/&quot;&gt;Themes&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;http://planet.wordpress.org/&quot;&gt;WordPress Planet&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;/li&gt;
+   &lt;/ul&gt; &lt;!--End of sidebar's list--&gt;
+
+   &lt;div id=&quot;search&quot;&gt;
+   &lt;form&gt;
+   &lt;label class=&quot;hidden&quot;&gt;Search for:&lt;/label&gt;
+   &lt;div&gt;
+   &lt;input type=&quot;text&quot; value=&quot;&quot; name=&quot;s&quot; id=&quot;s&quot; /&gt;
+   &lt;input type=&quot;submit&quot; id=&quot;searchsubmit&quot; value=&quot;Search&quot; /&gt;
+   &lt;/div&gt;
+   &lt;/form&gt;
+   &lt;/div&gt; &lt;!--End of &quot;search&quot;--&gt;
+
+   &lt;/div&gt; &lt;!--End of &quot;sidebar&quot;--&gt;
+
+ &lt;div class=&quot;bottom_sidebar&quot;&gt;
+   &lt;a href=&quot;#&quot;&gt;RSS feed&lt;/a&gt;
+   &lt;/div&gt;
+   &lt;/div&gt; &lt;!--End of &quot;content&quot;--&gt;  
+</pre>
+<p></code></p>
+<p>  Then the footer:</p>
+<pre>&lt;br style=&quot;clear: both;&quot; /&gt; 
+
+ &lt;div id=&quot;footer&quot;&gt;
+ &lt;div class=&quot;column1&quot;&gt;
+ Author
+ &lt;br /&gt;
+ &lt;a href=&quot;#&quot;&gt;Author's link&lt;/a&gt;&lt;br /&gt;
+ &lt;a href=&quot;#&quot;&gt;License&lt;/a&gt;
+ &lt;div class=&quot;bottom&quot;&gt;
+ Slogan
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class=&quot;column2&quot;&gt;
+   &lt;h2&gt;Recent posts&lt;/h2&gt;
+   &lt;ul&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sample post&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Lorem Ipsum Dolor Sit Amet&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;/div&gt; 
+
+   &lt;div class=&quot;column2&quot;&gt;
+   &lt;h2&gt;Pages&lt;/h2&gt;
+   &lt;ul&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;About&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+
+   &lt;li&gt;&lt;a href=&quot;#&quot; title=&quot;About&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+   &lt;/div&gt;
+   &lt;/div&gt;</pre>
+<h4>Step 6 - Browsing</h4>
+<p>As we have our main layout already coded, let&#8217;s test it into a browser, for this tutorial I&#8217;m using the last release of Firefox. At this point you should have something like the image below.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/12/6.jpg" alt="" width="500" /></p>
+<h4>Step 7 - Containers and positions</h4>
+<p>Now start creating the .css file. First you must  set the containers in their proper place, that could be a hard work the first times, but with practice it&#8217;s really easy. You must play with height, width and float values.</p>
+<p>First you must  define your css classes and ids and set some commons styles as links and paragraphs. Check the .html file of step 5 and look at the class names. Besides, at this point you may use bright background colors to see if your containers are in the right place. Check the Step 4, there&#8217;re the sizes of the background images.</p>
+<pre>body
+   {
+   margin: 0px;
+   padding: 0px;
+   text-align: center;
+   }
+
+h1, h2, h3, ul, li, p, form
+   {
+   margin: 0px;
+   padding: 0px
+   }
+
+hr
+   {
+   display: none;
+   }
+
+a{
+   text-decoration:none;
+   }
+
+a:hover{
+   text-decoration:underline;
+   }
+
+.space
+   {
+   clear: both;
+   }
+
+#page
+   {
+   margin: 0px auto;
+   padding: 0;
+   width: 960px;
+   }
+
+#header
+   {
+   background:#CCCCCC;
+	height: 308px;
+   width: 960px;
+   text-align: center;
+   }
+
+#headerimg
+   {
+   margin: 0px;
+   text-align: left;
+   }
+
+#top_nav
+   {
+   background-color:#0066CC;
+   height: 45px;
+   padding-left: 105px;
+   text-align: left;
+   }
+
+ #top_nav ul
+   {
+   list-style: none;
+   }
+
+   #top_nav li
+   {
+   display: inline;
+   }
+
+   #top_nav li a:hover
+   {
+   }
+
+#content
+   {
+   background: #009933;
+   float: left;
+   text-align: left;
+   }
+
+.blogcontent
+   {
+   float: left;
+   padding: 10px 0px;
+   width: 635px;
+   }
+
+.post
+   {
+   text-align: left;
+   }
+
+ .post h2
+   {
+   padding: 0px;
+   }
+
+ .post .post_title
+   {
+   float: left;
+   width: 90%;
+   }
+
+   .post_title h2, a
+   {
+   padding: 0px;
+   margin: 0px;
+   }
+
+   .post_title a
+   {
+   text-decoration: none;
+   }
+
+   .post_title a:hover
+   {
+   }
+
+   .post_title small
+   {
+   }
+
+   .post_title small a
+   {
+   padding: 0px;
+   margin: 0px;
+   }
+
+   .post .postmetadata
+   {
+   float: right;
+   height: 34px;
+   padding: 12px 5px;
+   width: 35px;
+   }
+
+   .postmetadata a
+   {
+   text-decoration: none;
+   }
+
+   .postmetadata span
+   {
+   padding-left:5px;
+   }
+
+.entry
+   {
+   }
+
+ .entry a
+   {
+   padding: 0px;
+   margin: 0px;
+   }
+
+   .entry a:hover
+   {
+   }
+
+   .entry blockquote
+   {
+   border: 2px dashed #042748;
+   }
+
+   .entry img
+   {
+   float: left;
+   }
+
+   .entry ul
+   {
+   }
+
+   .entry li
+   {
+
+   }
+
+   .entry ol li
+   {
+   list-style: decimal;
+   } 
+
+   .entry p
+   {
+   text-align: justify;
+   padding: 0px;
+   }
+
+   .entry span
+   {
+   }
+
+#sidebar
+   {
+   background-color:#6666CC;
+   float: left;
+   padding: 0px 20px;
+   text-align: left;
+   width: 285px;
+   }
+
+ #sidebar ul
+   {
+   list-style: none;
+   margin: 0px;
+   }
+
+   #sidebar li
+   {
+   margin: 0px;
+   }
+
+   #sidebar li h2
+   {
+   margin: 0px;
+   }
+
+ #sidebar ul ul
+   {
+   list-style: none;
+   margin: 0px;
+   }
+
+   #sidebar ul ul li
+   {
+   margin: 0px;
+   }
+
+   #sidebar ul ul li a
+   {
+   }
+
+   #sidebar ul ul li a:hover
+   {
+   }
+
+.bottom_sidebar
+   {
+   background-color:#006666;
+   float: right;
+   height: 90px;
+   width: 310px;
+   }
+
+#search
+   {  }
+
+ #search input
+   {
+
+ }
+
+#search #searchsubmit
+   {
+   background: #b1b1b1;
+}
+
+#footer
+   {
+   background:#999966;
+   height: 200px;
+   text-align: left;
+   width: 960px;/*909*/
+   }
+
+ #footer .column1
+   {
+   background:#FF3333;
+   float: left;
+	width: 300px;
+   }
+
+   .column1 .bottom
+   {
+
+}
+
+   .column1 a
+   {
+   text-decoration: none;
+   }
+
+   #footer .column2
+   {
+   background-color:#006699;
+   float: left;
+   width: 250px;
+   }
+
+   .column2 h2
+   {
+   }
+
+   .column2 ul
+   {
+   list-style: none;
+   }
+
+   .column2 a
+   {
+   text-decoration: none;
+   }</pre>
+<p></code></p>
+<p>  Test your html file into your browser. You should have something like the image below.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/12/7.jpg" alt="" width="500" /></p>
+<h4>Step 8 - Adding background images</h4>
+<p>Now add your background images. This time we&#8217;ll use  PNGs files for the most backgrounds, because our city background must be fixed and we want a floating illusion effect. Remember Step 4?  Now match those images with the css containers.</p>
+<pre>
+<code>
+body
+   {
+ background: #000000 url('./images/jpgs/bg-image.jpg') fixed no-repeat bottom center;
+ margin: 0px;
+ padding: 0px;
+ text-align: center;
+ }
+
+ #header
+   {
+   background: url('./images/pngs/header-960x308.png') no-repeat top left;
+   height: 308px;
+   width: 960px;
+   text-align: center;
+   }
+
+#content
+   {
+   background: url('./images/pngs/bg-635x1.png') repeat-y top left;
+   float: left;
+   text-align: left;
+   }
+
+#sidebar
+   {
+   background: url('./images/pngs/bg-325x1.png') repeat-y top left;
+   float: left;
+   padding: 0px 20px;
+   text-align: left;
+   width: 285px;
+   }
+
+.bottom_sidebar
+   {
+   background: url('./images/pngs/bottom-325x90.png') no-repeat bottom center;
+   float: right;
+   padding: 0px 0px 0px 15px;
+   height: 90px;
+   text-align: left;
+   width: 310px;
+   }
+
+#footer
+   {
+   background: url('./images/pngs/footer-960x200.png') no-repeat top left;
+   height: 200px;
+   text-align: left;
+   width: 960px;
+   }
+</code>
+</pre>
+<p>  Test the result in your browser.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/12/8.jpg" alt="" width="500" /></p>
+<h4>Step 9 - Adding foreground images</h4>
+<p>Now replace the logo, navigation links, comments background, graphic slogan and rss icon, for their respective images.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/12/9.jpg" alt="" width="500" /></p>
+<pre><code>&lt;div id=&quot;header&quot;&gt;
+ 	&lt;div id=&quot;headerimg&quot;&gt;
+ 		&lt;a href=&quot;#&quot;&gt;&lt;img alt=&quot;Generation X&quot; border=&quot;0&quot; src=&quot;./images/pngs/logo-480x135.png&quot; /&gt;&lt;/a&gt;
+
+ 	&lt;/div&gt;
+ 	&lt;div id=&quot;top_nav&quot;&gt;
+ 		&lt;ul&gt;
+ 			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img alt=&quot;Home&quot; border=&quot;0&quot; src=&quot;./images/pngs/home.png&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+ 			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img alt=&quot;About&quot; border=&quot;0&quot; src=&quot;./images/pngs/about.png&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+
+ 		&lt;/ul&gt;
+ 	&lt;/div&gt;
+ &lt;/div&gt; 
+
+.
+.
+.
+
+ &lt;div class=&quot;bottom_sidebar&quot;&gt; 		&lt;a href=&quot;#&quot;&gt;&lt;img alt=&quot;0&quot; border=&quot;0&quot; src=&quot;./images/pngs/rss.png&quot; /&gt;&lt;/a&gt; &lt;/div&gt;
+
+.
+.
+.
+
+&lt;div class=&quot;bottom&quot;&gt; 		&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;./images/pngs/footer-115x51.png&quot; /&gt;&lt;/div&gt;
+</code></pre>
+<p>  And the css to make the images fit:</p>
+<pre>#headerimg
+{
+	 height: 185px;
+	 margin: 0px;
+	 padding: 55px 0px 0px 45px;
+	 text-align: left;
+ }
+
+#top_nav
+{
+	 height: 45px;
+	 padding-left: 105px;
+	 text-align: left;
+}
+
+#top_nav li a:hover
+{
+   background: url('./images/pngs/hover.png') no-repeat bottom center;
+}
+
+.bottom_sidebar
+{
+ 	background: url('./images/pngs/bottom-325x90.png') no-repeat bottom center;
+ 	float: right;
+ 	padding: 0px 0px 0px 15px;
+ 	height: 90px;
+ 	text-align: left;
+ 	width: 310px;
+ }
+
+.post .postmetadata{	background: url('./images/pngs/bg-45x58.png') no-repeat top left;	float: right;	height: 34px;	padding: 12px 10px;	width: 25px;}
+
+ #footer .column1
+ {
+	float: left;
+	font: normal 10px Arial;
+	padding: 0px 0px 0px 80px;
+	width: 300px;
+ }
+
+ .column1 .bottom
+ {
+ 	padding: 50px 0px 0px 40px;
+ }
+</pre>
+<p></code></p>
+<p>  At the end you should get something like this image:</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/12/9-1.jpg" alt="" width="500" /></p>
+<h4>Step 10 - Text styles</h4>
+<p>We&#8217;re close to finish the mock-up, now we need to add the text styles for the content (posts), sidebar and footer. Play with typography and colors as you want.  The most important at this point is to place the text in a right place, for this you must take care about padding and margin values, i.e. for the list items on the sidebar I set a left padding of 20 pixels and 0 px margin:</p>
+<pre> #sidebar li    {margin: 0px;   padding: 0px 0px 0px 20px;   }</pre>
+<p>You can just copy the css style below:</p>
+<pre>
+<code>
+body
+   {
+ background: #000000 url('./images/jpgs/bg-image.jpg') fixed no-repeat bottom center;
+ color: #333;
+ margin: 0px;
+ padding: 0px;
+ text-align: center;
+ }
+h1, h2, h3, ul, li, p, form
+   {
+   margin: 0px;
+   padding: 0px
+   }
+hr
+   {
+   display: none;
+   }
+a{
+   text-decoration:none;
+   }
+a:hover{
+   text-decoration:underline;
+   }
+.space
+   {
+   clear: both;
+   }
+#page
+   {
+   margin: 0px auto;
+   padding: 0;
+   width: 960px;/*909*/
+   }
+#header
+   {
+   background: url('./images/pngs/header-960x308.png') no-repeat top left;
+   height: 308px;
+   width: 960px;/*909*/
+   text-align: center;
+   }
+#headerimg
+   {
+   height: 185px;
+   margin: 0px;
+   padding: 55px 0px 0px 45px;
+   text-align: left;
+   }
+#top_nav
+   {
+   height: 45px;
+   padding-left: 105px;
+   text-align: left;
+   }
+ #top_nav ul
+   {
+   list-style: none;
+   }
+
+   #top_nav li
+   {
+   display: inline;
+   }
+
+   #top_nav li a:hover
+   {
+   background: url('./images/pngs/hover.png') no-repeat bottom center;
+   }
+#top_sidebar
+   {
+   color: #fff;
+   font-weight: bold;
+   height: 10px;
+   padding-right: 155px;
+   text-align: right;
+   }
+#content
+   {
+   background: url('./images/pngs/bg-635x1.png') repeat-y top left;
+   float: left;
+   text-align: left;
+   }
+.blogcontent, .widecolumn
+   {
+   float: left;
+   padding: 10px 0px;
+   width: 635px;
+   }
+ .blogcontent form
+   {
+   color: #fff;
+   padding: 10px 50px 0px 90px;
+   }
+
+   .blogcontent input
+   {
+   background-color: transparent;
+   border: 1px solid #214b73;
+   color: #fff;
+   }
+
+   .blogcontent #searchsubmit
+   {
+   background: #b1b1b1;
+   color: #214b73;
+   font-weight: bold;
+   padding: 2px;
+   }
+
+   .blogcontent h2
+   {
+   color: #fff;
+   font: bold 18px  Georgia, Arial;
+   padding: 0px 50px 0px 90px;
+   }
+
+   .blogcontent small a
+   {
+   font-size: 18px;
+   padding: 0px 50px 0px 90px;
+   }
+.post
+   {
+   padding: 0px 50px 0px 90px;
+   text-align: left;
+   }
+ .post h2
+   {
+   color: #fff;
+   padding: 0px;
+   }
+
+ .post .post_title
+   {
+   float: left;
+   width: 90%;
+   }
+
+   .post_title h2, a
+   {
+   color: #b31414;
+   font: normal 24px Georgia, Arial;
+   padding: 0px;
+   margin: 0px;
+   }
+
+   .post_title a
+   {
+   text-decoration: none;
+   }
+
+   .post_title a:hover
+   {
+   color: #fff;
+   }
+
+   .post_title small
+   {
+   color: #385673;
+   font: normal 12px Georgia, Arial;
+   }
+
+   .post_title small a
+   {
+   color: #385673;
+   font: normal 12px Georgia, Arial;
+   padding: 0px;
+   margin: 0px;
+   }
+
+   .post .postmetadata
+   {
+   background: url('./images/pngs/bg-45x58.png') no-repeat top left;
+   float: right;
+   height: 34px;
+   padding: 12px 10px;
+   width: 25px;
+   }
+
+   .postmetadata a
+   {
+   color: #416fa3;
+   text-decoration: none;
+   }
+
+   .postmetadata span
+   {
+   color: #416fa3;
+   font: normal 24px Georgia, Arial;
+   padding-left:5px;
+   }
+ .entry
+   {
+   color: #c3c3c3;
+   font: normal 12px Arial;
+   padding: 20px 0px;
+   }
+ .entry a
+   {
+   color: #385673;
+   font: normal 12px Georgia, Arial;
+   padding: 0px;
+   margin: 0px;
+   }
+
+   .entry a:hover
+   {
+   color: #69c;
+   }
+
+   .entry blockquote
+   {
+   border: 2px dashed #042748;
+   padding: 8px;
+   }
+
+   .entry img
+   {
+   float: left;
+   padding: 0px 20px 0px 0px;
+   }
+
+   .entry ul
+   {
+   padding-left: 20px;
+   }
+
+   .entry li
+   {
+   list-style: url('./images/pngs/bull-list.png');
+   }
+
+   .entry ol li
+   {
+   list-style: decimal;
+   } 
+
+   .entry p
+   {
+   text-align: justify;
+   padding: 0px;
+   }
+
+   .entry span
+   {
+   color: #b31414;
+   }
+#sidebar
+   {
+   background: url('./images/pngs/bg-325x1.png') repeat-y top left;
+   float: left;
+   padding: 0px 20px;
+   text-align: left;
+   width: 285px;
+   }
+ #sidebar ul
+   {
+   list-style: none;
+   margin: 0px;
+   padding: 5px 0px;
+   }
+
+   #sidebar li
+   {
+   margin: 0px;
+   padding: 0px 0px 0px 20px;
+   }
+
+   #sidebar li h2
+   {
+   color: #fff;
+   font: normal 18px Rockwell, Georgia, Arial;
+   margin: 0px;
+   padding: 10px 0px;
+   }
+  #sidebar ul ul
+   {
+   list-style: none;
+   margin: 0px;
+   }
+
+   #sidebar ul ul li
+   {
+   margin: 0px;
+   padding: 0px 0px 0px 30px;
+   }
+
+   #sidebar ul ul li a
+   {
+   color: #69c;
+   font: normal 12px Arial;
+   text-decoration: none;
+   }
+
+   #sidebar ul ul li a:hover
+   {
+   color: #b31414;
+   }
+ .bottom_sidebar
+   {
+   background: url('./images/pngs/bottom-325x90.png') no-repeat bottom center;
+   float: right;
+   padding: 0px 0px 0px 15px;
+   height: 90px;
+   text-align: left;
+   width: 310px;
+   }
+
+#search
+   {
+   font: bold 12px Arial;
+   color: #fff;
+   padding: 0px 0px 15px 15px;
+   }
+ #search input
+   {
+   background-color: transparent;
+   border: 1px solid #214b73;
+   color: #fff;
+   }
+ #search #searchsubmit
+   {
+   background:#0B192C;
+   color: #FFFFFF;
+   font-weight: bold;
+   padding: 2px;
+   }
+#footer
+   {
+   background: url('./images/pngs/footer-960x200.png') no-repeat top left;
+   color: #fff;
+   height: 200px;
+   text-align: left;
+   width: 960px;
+   }
+ #footer .column1
+   {
+   float: left;
+   font: normal 10px Arial;
+   padding: 0px 0px 0px 80px;
+   width: 300px;
+   }
+
+   .column1 .bottom
+   {
+   padding: 50px 0px 0px 40px;
+   }
+
+   .column1 a
+   {
+   color: #fff;
+   font: normal 12px Arial;
+   text-decoration: none;
+   }
+
+   #footer .column2
+   {
+   float: left;
+   font: normal 12px Arial;
+   padding: 35px 0px 0px 0px;
+   width: 250px;
+   }
+
+   .column2 h2
+   {
+   color: #457db9;
+   font: normal 20px Rockwell;
+   }
+
+   .column2 ul
+   {
+   list-style: none;
+   }
+
+   .column2 a
+   {
+   color: #fff;
+   font: normal 12px Arial;
+   text-decoration: none;
+   }
+</pre>
+<p></code></p>
+<p>Now you should have something like following image. The mock up is ready; now let&#8217;s turn this into a Wordpress template.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/12/10.jpg" alt="" width="500" /></p>
+<h4>Step 11 - Wordpress Template</h4>
+<p>First you&#8217;ll need to duplicate the template files into a new folder inside /wp-content/themes . You can copy and paste all the files of &quot;default&quot; theme into a new folder that we call &quot;generationx&quot;.</p>
+<p>The process now is really simple, just replace all the static content on your html file for the wordpress functions and save them into their respective files. First paste into /generationx folder your style.css file, replacing the original one.</p>
+<p>Let&#8217;s start with header.php file, this is what you have into you .html mockup:</p>
+<pre>&lt;head&gt;
+ &lt;title&gt;GenerationX&lt;/title&gt;
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;style.css&quot; type=&quot;text/css&quot; media=&quot;screen&quot; /&gt; 
+
+&lt;/head&gt;
+&lt;div id=&quot;page&quot;&gt;
+
+	&lt;div id=&quot;header&quot;&gt;
+ 		&lt;div id=&quot;headerimg&quot;&gt;
+ 			&lt;a href=&quot;#&quot;&gt;&lt;img alt=&quot;Generation X&quot; border=&quot;0&quot; src=&quot;./images/pngs/logo-480x135.png&quot; /&gt;&lt;/a&gt;
+
+ 		&lt;/div&gt;
+ 		&lt;div id=&quot;top_nav&quot;&gt;
+ 			&lt;ul&gt;
+ 				&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img alt=&quot;Home&quot; border=&quot;0&quot; src=&quot;./images/pngs/home.png&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+ 			&lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;img alt=&quot;About&quot; border=&quot;0&quot; src=&quot;./images/pngs/about.png&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+
+			 &lt;/ul&gt;
+	 	&lt;/div&gt;
+	&lt;/div&gt; &lt;!-- end of header --&gt;
+</pre>
+<p>You&#8217;ll need to turn that into the following code on header.php file, for this use the original header.php file to see where to put the code in:</p>
+<p><code></p>
+<pre>&lt;head profile=&quot;http://gmpg.org/xfn/11&quot;&gt;
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;&lt;?php bloginfo('html_type'); ?&gt;; charset=&lt;?php bloginfo('charset'); ?&gt;&quot; /&gt;
+
+&lt;title&gt;&lt;?php bloginfo('name'); ?&gt; &lt;?php if ( is_single() ) { ?&gt; &amp;raquo; Blog Archive &lt;?php } ?&gt; &lt;?php wp_title(); ?&gt;&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;&lt;?php bloginfo('stylesheet_url'); ?&gt;&quot; type=&quot;text/css&quot; media=&quot;screen&quot; /&gt;
+
+   &lt;link rel=&quot;alternate&quot; type=&quot;application/rss+xml&quot; title=&quot;&lt;?php bloginfo('name'); ?&gt; RSS Feed&quot; href=&quot;&lt;?php bloginfo('rss2_url'); ?&gt;&quot; /&gt;
+
+   &lt;link rel=&quot;pingback&quot; href=&quot;&lt;?php bloginfo('pingback_url'); ?&gt;&quot; /&gt;
+&lt;style type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+&lt;/style&gt;
+
+&lt;?php wp_head(); ?&gt;
+&lt;/head&gt;
+&lt;body&gt;
+   &lt;div id=&quot;page&quot;&gt;
+
+		&lt;div id=&quot;header&quot;&gt;
+   		&lt;div id=&quot;headerimg&quot;&gt;
+
+			   &lt;a href=&quot;&lt;?php echo get_option('home'); ?&gt;/&quot;&gt;&lt;img alt=&quot;Generation X&quot; border=&quot;0&quot; src=&quot;./wp-content/themes/generationx/images/pngs/logo-480x135.png&quot; /&gt;&lt;/a&gt;
+			&lt;/div&gt;
+
+   		&lt;div id=&quot;top_nav&quot;&gt;
+   			&lt;ul&gt;
+				   &lt;li&gt;&lt;a href=&quot;&lt;?php echo get_option('home'); ?&gt;&quot;&gt;&lt;img alt=&quot;Home&quot; border=&quot;0&quot; src=&quot;./wp-content/themes/generationx/images/pngs/home.png&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+
+				   &lt;li&gt;&lt;a href=&quot;?page_id=2&quot;&gt;&lt;img alt=&quot;About&quot; border=&quot;0&quot; src=&quot;./wp-content/themes/generationx/images/pngs/about.png&quot; /&gt;&lt;/a&gt;&lt;/li&gt;
+
+			   &lt;/ul&gt;
+		   &lt;/div&gt;
+		 &lt;/div&gt;</pre>
+<p></code></p>
+<p>As you can see I&#8217;m converting the static content of  href, texts, paths and turn them into a dynamic content using the wordpress functions. </p>
+<p>Now you must repeat that on every single .php file into the theme folder. This is maybe the hardest part of the entire process, because there&#8217;s a lot of files and tiny details.</p>
+<p>The main files are:</p>
+<ul>
+<li>index.php - includes the famous &quot;loop&quot;. You&#8217;ll need to change this tag there: &lt;div id=&quot;content&quot;&gt;</li>
+<li>header.php - includes the html heading data and these tags: &lt;head&gt;, &lt;body&gt; and the header containers like  logo and navigation bar.</li>
+<li>sidebar.php - includes all the sidebar contents like Categories, archives, blogroll, search form and RSS icon.</li>
+<li>footer.php - includes the closing tags for &lt;div id=&quot;page&quot;&gt; &lt;/body&gt; and &lt;/html&gt;</li>
+<li>page.php - it has the &quot;pages&quot; template</li>
+<li>single.php - it has the &quot;single&quot; post template</li>
+</ul>
+<p>Our html mockup is an easy way to follow the wordpress structure, but turning the static content into dynamic wordpress isn&#8217;t a quick job, it will take you several hours of testing and debugging.</p>
+<p>To run this custom template, login into your Wordpress admin panel, go to Design &gt; Themes and select your brand new GenerationX template, activate it and see how it looks.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/12/11.jpg" alt="" width="500" /></p>
+<h4>Here&#8217;s the step by step HTML source code</h4>
+<p><a href="http://designreviver.com/wp-content/uploads/2008/12/tutorial-files.zip" class="downloadLink">Tutorial files</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://designreviver.com/tutorials/premium-wordpress-theme-design-part-2-html-css-wordpress-theme-files/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>How I Learned To Build Wordpress Themes</title>
+		<link>http://designreviver.com/inspiration/how-i-learned-to-build-wordpress-themes/</link>
+		<comments>http://designreviver.com/inspiration/how-i-learned-to-build-wordpress-themes/#comments</comments>
+		<pubDate>Mon, 10 Nov 2008 15:46:04 +0000</pubDate>
+		<dc:creator>tim</dc:creator>
+		
+		<category><![CDATA[Inspiration]]></category>
+
+		<category><![CDATA[Tips]]></category>
+
+		<category><![CDATA[Tutorials]]></category>
+
+		<category><![CDATA[premium design]]></category>
+
+		<category><![CDATA[theme design]]></category>
+
+		<category><![CDATA[wordpress]]></category>
+
+		<category><![CDATA[wordpress theme]]></category>
+
+		<category><![CDATA[wordpress themes]]></category>
+
+		<guid isPermaLink="false">http://designreviver.com/?p=486</guid>
+		<description><![CDATA[Picture your finished custom wordpress theme live on your server, completely unique and fresh. By the time you have finished reading the resources in this post that scenario will be a reality. People love custom themes, they make a blog come to life with a personality of its own. It’s no secret that they’ll reward [...]]]></description>
+			<content:encoded><![CDATA[<p>Picture your finished custom wordpress theme live on your server, completely unique and fresh. By the time you have finished reading the resources in this post that scenario will be a reality. People love custom themes, they make a blog come to life with a personality of its own. It’s no secret that they’ll reward it you for it through links, subscriptions and bookmarks.<span id="more-486"></span></p>
+<h4>Theme Design Lessons</h4>
+<h5><a href='http://themetation.com/how-to-create-wordpress-themes-from-scratch-part-1/' target='_blank'>How To Create A Wordpress Theme From Scratch </a></h5>
+<p><a href='http://themetation.com/how-to-create-wordpress-themes-from-scratch-part-1/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/nation.jpg' /></a>Good walk through in detail on creation of themes.</p>
+<h5><a href='http://bothack.wordpress.com/2006/09/17/how-to-create-a-wordpress-template-in-5-minutes/' target='_blank'>The 5 Minute Theme</a></h5>
+<p><a href='http://bothack.wordpress.com/2006/09/17/how-to-create-a-wordpress-template-in-5-minutes/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/5min.jpg' /></a>Fast way of making simple a simple wp theme.</p>
+<h5><a href='http://ia311535.us.archive.org/2/items/wordpresstemplatetutorial/wordpress-theme-tutorial.swf' target='_blank'>Turn Any Web Template Into a Theme</a></h5>
+<p><a href='http://ia311535.us.archive.org/2/items/wordpresstemplatetutorial/wordpress-theme-tutorial.swf' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/flash.jpg' /></a>This flash tutorial shows how to turn any web page into a wordpress theme. The flash movie is pretty distorted but gives a good idea of what can be achieved.</p>
+<h5><a href='http://designreviver.com/tutorials/premium-wordpress-theme-design-part-1-the-photoshop-mock-up/' target='_blank'>Mocking Up a Theme In Photoshop</a></h5>
+<p><a href='http://designreviver.com/tutorials/premium-wordpress-theme-design-part-1-the-photoshop-mock-up/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/genx.jpg' /></a>A bit of self promotion! This tutorial shows how to mock up a modern theme in photoshop.</p>
+<h5><a href='http://www.wpdesigner.com/2007/02/19/so-you-want-to-create-wordpress-themes-huh/' target='_blank'>16 Lessons On Theme Creation</a></h5>
+<p><a href='http://www.wpdesigner.com/2007/02/19/so-you-want-to-create-wordpress-themes-huh/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/com.jpg' /></a>Covers all bases in detail, really comprehensive  lessons on all aspects of Wordpress theme creation from header to footer!</p>
+<h5><a href='http://urbangiraffe.com/themes/guides/' target='_blank'>4 Step Theme Design Guide</a></h5>
+<p><a href='http://urbangiraffe.com/themes/guides/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/urban.jpg' /></a>Part 1 - Pulling it apart; Part 2 - Complete design, header, and footer; Part 3 - The sidebar; Part 4 - The content.</p>
+<h5><a href='http://www.dezinerfolio.com/2007/11/27/developing-a-wordpress-theme/' target='_blank'>Basic Intoduction To Themes</a></h5>
+<p><a href='http://www.dezinerfolio.com/2007/11/27/developing-a-wordpress-theme/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/folio.jpg' /></a>Good post breaking down how the themes work for those new to Wordpress.</p>
+<h5><a href='http://codex.wordpress.org/Blog_Design_and_Layout' target='_blank'>Offical Wordpress Documentation</a></h5>
+<p><a href='http://codex.wordpress.org/Blog_Design_and_Layout' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/codex.jpg' /></a>The Wordpress.org Codex with theme design documentation.</p>
+<h4>Wordpress Templates For Redesign</h4>
+<h5><a href='http://diythemes.com?a_aid=designreviver' target='_blank'>Premium Theme Design with Thesis</a></h5>
+<p><a href='http://diythemes.com?a_aid=designreviver' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/thesis.jpg' /></a>Want a head start in your new theme design? Thesis will cost you $87 but it been typeset extremely well and is simple to customise the design for stunning results quickly. You&#8217;ll save the purchase price in design time with Thesis. (disclosure: URL contains our affiliate tracker)</p>
+<h5><a href='http://www.flexibilitytheme.com/' target='_blank'>Create Flexible Themes</a></h5>
+<p><a href='http://www.flexibilitytheme.com/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/flex.jpg' /></a>Free to use selection of Wordpress themes, good for customization.</p>
+<h5><a href='http://www.smashingmagazine.com/2008/01/08/100-excellent-free-high-quality-wordpress-themes/' target='_blank'>100 Free Templates</a></h5>
+<p><a href='http://www.smashingmagazine.com/2008/01/08/100-excellent-free-high-quality-wordpress-themes/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/smash.jpg' /></a></p>
+<h4>Helpful Software and Cheats</h4>
+<h5><a href='http://www.themedreamer.com/' target='_blank'>Theme Editor For Dreamweaver</a></h5>
+<p><a href='http://www.themedreamer.com/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/dreamer.jpg' /></a>Now when you open a wordpress theme in Dreamweaver the whole thing is visable - legend.</p>
+<h4>Inspiration</h4>
+<h5><a href='http://welovewp.com/' target='_blank'>We Love WP!</a></h5>
+<p><a href='http://welovewp.com/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/welove.jpg' /></a>Showcase of Wordpress powered websites.</p>
+<h5><a href='http://www.colourlovers.com/' target='_blank'>Ready Made Swatches</a></h5>
+<p><a href='http://www.colourlovers.com/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/lovers.jpg' /></a>Great selection of swatch and color scheme ready to choose from.</p>
+<h5><a href='http://designreviver.com/inspiration/promote-yourself-through-css-galleries/' target='_blank'>CSS Galleries</a></h5>
+<p><a href='http://designreviver.com/inspiration/promote-yourself-through-css-galleries/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/css1.jpg' /></a>Go to the bottom of this post for links to lots of CSS galleries for design inspiration.</p>
+<h4>Freebies</h4>
+<h5><a href='http://sxc.hu' target='_blank'>Free Stock Images</a></h5>
+<p><a href='http://sxc.hu' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/sxc.jpg' /></a>381k free images, an awesome free collection.</p>
+<h5><a href='http://www.flickr.com/creativecommons/' target='_blank'>Creative Commons Images at Flickr</a></h5>
+<p><a href='http://www.flickr.com/creativecommons/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/flickr.jpg' /></a>50 million plus creative commons images for use, make sure to check the iicences for usage permissions.</p>
+<h5><a href='http://www.yvoschaap.com/wpthemegen/' target='_blank'>Basic Theme Creator</a></h5>
+<p><a href='http://www.yvoschaap.com/wpthemegen/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/ins.jpg' /></a>Basic online theme design tool, change the element color in real time then save your theme.</p>
+<h5><a href='http://vandelaydesign.com/blog/wordpress/wordpress-theme-design/' target='_blank'>More Theme Resouces</a></h5>
+<p><a href='http://vandelaydesign.com/blog/wordpress/wordpress-theme-design/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/more.jpg' /></a>40 more resource links for Wordpress theme design.</p>
+<h5><a href='http://designreviver.com/freebies/6-free-new-social-icons-digg-twitter-stumble-rss-delicious-reddit/' target='_blank'>Free Social Icons</a></h5>
+<p><a href='http://designreviver.com/freebies/6-free-new-social-icons-digg-twitter-stumble-rss-delicious-reddit/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/social.jpg' /></a>Free social icons to use on your blog.</p>
+<h4></h4>
+<h4>Validation and Testing</h4>
+<h5><a href='http://validator.w3.org/' target='_blank'>w3c Validation Service</a></h5>
+<p><a href='http://validator.w3.org/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/w3c.jpg' /></a>Well know and classic, but worth a mention.</p>
+<h5><a href='http://browsershots.org/' target='_blank'>Cross Browser Checking</a></h5>
+<p><a href='http://browsershots.org/' target='_blank'><img src='http://designreviver.com/wp-content/uploads/2008/11/shots.jpg' /></a>View screenshots of your finished theme in all the browsers.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://designreviver.com/inspiration/how-i-learned-to-build-wordpress-themes/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>How To Make a jQuery Calendar</title>
+		<link>http://designreviver.com/tutorials/how-to-make-a-jquery-calender/</link>
+		<comments>http://designreviver.com/tutorials/how-to-make-a-jquery-calender/#comments</comments>
+		<pubDate>Mon, 03 Nov 2008 10:11:19 +0000</pubDate>
+		<dc:creator>tim</dc:creator>
+		
+		<category><![CDATA[Tips]]></category>
+
+		<category><![CDATA[Tutorials]]></category>
+
+		<category><![CDATA[calender]]></category>
+
+		<category><![CDATA[datepicker]]></category>
+
+		<category><![CDATA[jquery]]></category>
+
+		<guid isPermaLink="false">http://designreviver.com/?p=473</guid>
+		<description><![CDATA[Whether you&#8217;re an airline, task manager, or just have a birthdate field on your registration form, a popup date picker makes selecting dates considerably easier for users, and overall enhances the functionality and feel of the site. jQuery UI provides a datepicker widget that can easily be incorporated into your site.
+The Finished Datepicker Example
+View Example
+Getting [...]]]></description>
+			<content:encoded><![CDATA[<p>Whether you&#8217;re an airline, task manager, or just have a birthdate field on your registration form, a popup date picker makes selecting dates considerably easier for users, and overall enhances the functionality and feel of the site. jQuery UI provides a datepicker widget that can easily be incorporated into your site.<span id="more-473"></span></p>
+<h4>The Finished Datepicker Example</h4>
+<p><iframe src="http://designreviver.com/wp-content/uploads/2008/11/example.html" name="frame1" scrolling="auto" frameborder="no" align="center" height="220px" width="510px"><a href="http://designreviver.com/wp-content/uploads/2008/11/example.html">View Example</a></iframe></p>
+<h4>Getting Started</h4>
+<p>In order to use the datepicker, we need to download it from the <a href="http://ui.jquery.com/download_builder/">jQuery UI download page</a> and link it into our page as we do with the jQuery library. Applying the datepicker requires no HTML changes, and instead simply attaches itself to existing input fields. This is done with a single line of code:</p>
+<pre><code>
+	$('#trip input#leavedate').datepicker();
+	</code></pre>
+<p>The standard date picker that is shown is admittedly fairly ugly and impractical in both size and look.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/11/standard.jpg" alt="Standard date picker"/></p>
+<h4>Customization</h4>
+<p>The real power of jQuery&#8217;s datepicker is the level of customization. We&#8217;ll go through three quick steps toward creating a datepicker that&#8217;s right for our example situation. This should give you enough examples and variations for you to choose the right parameters for your situation, too.</p>
+<h4>Styling</h4>
+<p>First up, we&#8217;re going to make the calendar popup itself a little more appealing for the sake of making more practical decisions around the actual placement of the calendar. jQuery provides a handful of <a href="http://marcgrabanski.com/article/jquery-ui-datepicker-themes">CSS stylesheets</a> to chose from, but you can of course always write your own or modify them if you don&#8217;t like them. With the first theme, the calendar looks like this:</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/11/default-style.jpg" alt="Date picker with default style"/></p>
+<h4>Date Format</h4>
+<p>Specifying the date format is just a matter of passing a parameter to the <code>.datepicker()</code> initialization function. Here are some common formats:</p>
+<pre><code>
+	$('#trip input#leavedate').datepicker({ dateFormat: $.datepicker.W3C }); // 2008-01-31
+	$('#trip input#leavedate').datepicker({ dateFormat: 'mm/dd/y' }); // 01/31/08
+	$('#trip input#leavedate').datepicker({ dateFormat: 'm/d/yy' }); // 1/31/2008
+	$('#trip input#leavedate').datepicker({ dateFormat: 'M d, yy' }); // Jan 31, 2008
+	$('#trip input#leavedate').datepicker({ dateFormat: 'MM d, yy' }); // January 31, 2008
+	$('#trip input#leavedate').datepicker({ dateFormat: 'D, M d, yy' }); // Thurs, Jan 31, 2008
+	</code></pre>
+<p>This leaves you with control over the order, separaters (slash, dash, or space), whether or not you want leading zeros on your days or months, whether you want numbers or words, and what you include or omit (year, day name, etc.).</p>
+<p>These affect the format that the date shows up in the field after you select it:</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/11/alt-date.jpg" alt="Date picker with an alternate date format"/></p>
+<h4>Behavior</h4>
+<p>The last customization that we&#8217;re going to look at here is the popup behavior. By default, the event is attached to the focus of the input field that the datepicker widget is attached to. This can easily be changed so that the event is attached to either a button or an image next to the field instead.</p>
+<pre><code>
+	$('#trip input#leavedate').datepicker({ showOn: 'button', buttonImage: 'calendar.gif', buttonImageOnly: true });
+	</code></pre>
+<p>This makes the calendar popup look like this:</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/11/with-icon.jpg" alt="Date picker with icon for behavior"/></p>
+<h4>Wrapping Everything Up</h4>
+<p>These customizations are what make the jQuery datepicker UI widget so powerful, as the widget is practical in a variety of situations. The following is the <a href="http://designreviver.com/wp-content/uploads/2008/11/example.html">completed example</a> using the customizations discussed above.</p>
+<p><iframe src="http://designreviver.com/wp-content/uploads/2008/11/example.html" name="frame1" scrolling="auto" frameborder="no" align="center" height="220px" width="510px"><a href="example.html">View Example</a></iframe></p>
+<p>Tutorial kindly written by <a href="http://nathanwwong.com/" target="_blank">Nathan Wong</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://designreviver.com/tutorials/how-to-make-a-jquery-calender/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Premium Wordpress Theme Design Part 1 - The Photoshop Mock Up</title>
+		<link>http://designreviver.com/tutorials/premium-wordpress-theme-design-part-1-the-photoshop-mock-up/</link>
+		<comments>http://designreviver.com/tutorials/premium-wordpress-theme-design-part-1-the-photoshop-mock-up/#comments</comments>
+		<pubDate>Tue, 28 Oct 2008 12:05:00 +0000</pubDate>
+		<dc:creator>tim</dc:creator>
+		
+		<category><![CDATA[Freebies]]></category>
+
+		<category><![CDATA[Tutorials]]></category>
+
+		<category><![CDATA[premium theme design]]></category>
+
+		<category><![CDATA[tutorial]]></category>
+
+		<category><![CDATA[wordpress]]></category>
+
+		<category><![CDATA[wordpress theme]]></category>
+
+		<guid isPermaLink="false">http://designreviver.com/?p=454</guid>
+		<description><![CDATA[Making a premium Wordpress theme from scratch is an essential skill for designers to learn and will become increasingly important as Wordpress continues to become the web publishing tool of choice. In this two part tutorial will we cover how to make premium Wordpress themes happen. Part 1, covered below, shows how the photoshop mock [...]]]></description>
+			<content:encoded><![CDATA[<p>Making a premium Wordpress theme from scratch is an essential skill for designers to learn and will become increasingly important as Wordpress continues to become the web publishing tool of choice. In this two part tutorial will we cover how to make premium Wordpress themes happen. Part 1, covered below, shows how the photoshop mock up is created, and in Part 2 we’ll outline how to turn the psd into HTML/CSS and wordpress theme files. <span id="more-454"></span></p>
+<p>I&#8217;m <a href="http://www.southmakers.com">Alvaro Guzman</a> and in part 1 I’ll show you how to design a modern web interface from scratch using Photoshop and stock pictures. You can download the finished psd file at the end of this tutorial. Firstly let’s have a look at the finished psd mock up: </p>
+<h4>The Finished Mock Up</h4>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/19.jpg" alt="" width="500" /></p>
+<h4>Step 1</h4>
+<p>Let&#8217;s get started, first create a new blank document and draw some guides to delimite your design, 960px width is just fine, then increase your canvas size to see how it looks on wider resolutions, maybe to 1200-1260px. Do the same with the Height, start with 800px then increase the height to 1000px at least.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/1.jpg" alt="" width="500" height="397" /></p>
+<h4>Step 2</h4>
+<p>Now paste this <a href="http://www.sxc.hu/photo/1066378">image</a> as a background, resize and place it in the bottom of our design. Create a new layer above the image then select two tones of purple-blue as foreground and background colors then go to Filter &gt; Render &gt; Clouds. Next apply &quot;City&quot; layer a Gradient Layer Mask to merge it with the clouds. Then put a black background behind the merged image and  to finish the main background add another Gradient Layer Mask to the resultant image.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/2.jpg" alt="" width="500" /></p>
+<h4>Step 3</h4>
+<p>For the header background, draw a Rounded corner rectangle above all the layers, then apply to it a Gradient overlay effect, use the colors shown below.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/3.jpg" alt="" width="500" /></p>
+<h4>Step 4</h4>
+<p>Now paste this <a href="http://www.sxc.hu/photo/995217">image</a> above the rectangle, change the paper layer Blending Mode to Vivid Light and Opacity to 50%. Command (Ctrl) + Click the rectangle layer and by going to Select &gt; Modify &gt; Contract, contract the selection a little bit, hot Command (Ctrl) + Shift + I to inverse the selection and delete all the extra paper. You can also add some layer effects  to the rounded rectangle as an Outer Glow or maybe a Stroke effect, it&#8217;s up to you.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/4.jpg" alt="" width="500" /></p>
+<h4>Step 5</h4>
+<p>Let&#8217;s add the logo, I&#8217;m adding the text &quot;Generation X&quot; (Rockwell typeface) because I&#8217;m a huge fan of 90&#8217;s culture. Then apply to each text layer the Following layer effects, just notice the Stroke color should change depending the text color.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/5.jpg" alt="" width="500" /></p>
+<h4>Step 6</h4>
+<p>Now draw a rounded rectangle as the sidebar background, set the Fill value to 75% and apply a Stroke effect on it.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/6.jpg" alt="" width="500" /></p>
+<h4>Step 7</h4>
+<p>Repeat the previous step with the content background. At this point we have the basic layout.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/7.jpg" alt="" width="500" /></p>
+<h4>Step 8</h4>
+<p>Now let&#8217;s add some graphic details and support images, first paste this <a href="http://www.sxc.hu/photo/965831">picture</a> of a nice cassette avobe all the layers of the design, I added some text on it using my tablet. Then select the tiny transparent plastic in the middle of the cassette, cut it and paste it just in the same place but dow its opacity to 50% or 60%. Then, merge both images and place the cassette just above the sidebar.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/8.jpg" alt="" width="500" /></p>
+<h4>Step 9</h4>
+<p>This is a quick trick to create shadows, duplicate the object and put it behind the original, press Command (Ctrl) + U and set the Lightness value to -100, then apply a Gaussian Blur to the copy.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/9.jpg" alt="" width="500" /></p>
+<h4>Step 10</h4>
+<p>Paste <a href="http://www.sxc.hu/photo/963940">this</a> paper image  and put it below the header background  on layers palette, this will be our navigation bar. Use the Lasso tool to extract the image.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/10.jpg" alt="" width="500" /></p>
+<h4>Step 11</h4>
+<p>Create a new layer above the paper, make an eliptical selection and fill it with black, then apply to it a Gaussian Blur filter and down the layer Opacity to 75%.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/11.jpg" alt="" width="500" /></p>
+<h4>Step 12</h4>
+<p>Duplicate the paper layer and rotate it a little bit, the apply to it a drop shadow to make it pop. Then you can add the text of your links, you can use a grunge or handwritten typeface.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/12.jpg" alt="" width="500" /></p>
+<h4>Step 13</h4>
+<p>Now at the bottom of our sidebar add the RSS icon, I&#8217;m using one of <a href="http://customize.org/icons/55872">these icons</a>. Also add some related text, using &quot;Rockwell condensed&quot; typeface.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/13.jpg" alt="" width="500" /></p>
+<h4>Step 14</h4>
+<p>Following just add the sidebar text, I&#8217;m keeping simple this time. &quot;Rockwell&quot; for the titles and &quot;Georgia&quot; for the links.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/14.jpg" alt="" width="500" /></p>
+<h4>Step 15</h4>
+<p>Then add some posts, Combine different typefaces. I&#8217;m using &quot;Georgia&quot; for the titles, and &quot;Arial&quot; for the content, also added a tiny paper sheet to put the comments over, and a support image for each post (2px white border).</p>
+<p>Also I&#8217;m adding the copyright information in this step.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/15.jpg" alt="" width="500" /></p>
+<h4>Step 16</h4>
+<p>Now duplicate the technique of  header&#8217;s background but this time as a footer background image.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/16.jpg" alt="" width="500" /></p>
+<h4>Step 17</h4>
+<p>Add  the footer&#8217;s text,  I&#8217;m adding two containers for Recent Posts and Pages.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/17.jpg" alt="" width="500" /></p>
+<h4>Step 18</h4>
+<p>Just if you want to, add more graphic details on the footer, like this piece of paper containing a simple slogan.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/18.jpg" alt="" width="500" /></p>
+<h4>Step 19</h4>
+<p>An that&#8217;s it! a simple and quick way to mix grunge and modern style to design a inovative blog theme. Try your own!</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/generationx/19.jpg" alt="" width="500" /></p>
+<h4>Downloads</h4>
+<p><a href="http://designreviver.com/wp-content/uploads/2008/10/generationx/tut.zip" class="downloadLink">Download the photoshop psd file</a> </p>
+<p>In Part 2 we&#8217;ll explain how to turn this mock up into a fully functioning premium Wordpress theme. <a href="http://feeds.feedburner.com/DesignReviver">Subscribe to our RSS feed</a> to be notified when Part 2 is published.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://designreviver.com/tutorials/premium-wordpress-theme-design-part-1-the-photoshop-mock-up/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>jQuery &#038; CSS Tooltip Example</title>
+		<link>http://designreviver.com/tutorials/jquery-css-tooltip-example/</link>
+		<comments>http://designreviver.com/tutorials/jquery-css-tooltip-example/#comments</comments>
+		<pubDate>Tue, 21 Oct 2008 13:30:12 +0000</pubDate>
+		<dc:creator>tim</dc:creator>
+		
+		<category><![CDATA[Tutorials]]></category>
+
+		<category><![CDATA[css]]></category>
+
+		<category><![CDATA[jquery]]></category>
+
+		<category><![CDATA[jquery tooltip]]></category>
+
+		<category><![CDATA[tooltip]]></category>
+
+		<category><![CDATA[tooltips]]></category>
+
+		<guid isPermaLink="false">http://designreviver.com/?p=444</guid>
+		<description><![CDATA[Websites and web applications alike are slowly but surely transitioning towards an environment filled with rich user interface gadgets. Tooltips are amongst this vast array of gadgets that should be in every web application developer&#8217;s toolbox, as they provide useful hints and help messages directly to the user in a discrete yet obvious manner.
+The Finished [...]]]></description>
+			<content:encoded><![CDATA[<p>Websites and web applications alike are slowly but surely transitioning towards an environment filled with rich user interface gadgets. Tooltips are amongst this vast array of gadgets that should be in every web application developer&#8217;s toolbox, as they provide useful hints and help messages directly to the user in a discrete yet obvious manner.<span id="more-444"></span></p>
+<h4>The Finished Product</h4>
+<p><iframe src="http://designreviver.com/wp-content/uploads/2008/10/tooltip/example.html" name="frame1" scrolling="auto" frameborder="no" align="center" height="100px" width="500px"><a href="http://designreviver.com/wp-content/uploads/2008/10/tooltip/example.html">View Example</a></iframe></p>
+<h4>Getting Started</h4>
+<p>As always, we should be aiming to maintain a minimal XHTML footprint in order to ensure that our code is well structured and sufficiently semantic. In the case of tooltips, we can make use of the <code>title</code> attribute provided for all tags, although most commonly used by the anchor tag and the image tag.</p>
+<p>Furthermore, we can discretely signal our jQuery code to display a tooltip by using an uncommon and specific classname such as <code>show-tooltip</code>. Let&#8217;s start with the following basic example:</p>
+<pre><code>&lt;a href=&quot;http://google.com/&quot; class=&quot;show-tooltip&quot; title=&quot;Start your search with Google!&quot;&gt;Google.&lt;/a&gt;
+</code></pre>
+<p>By using semantic attributes such as <code>title</code>, we ensure that the browser will degrade nicely for users without JavaScript enabled. The tooltip that loads by default by the browsers should be fairly familiar:</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/tooltip/basic-link.jpg" alt="Basic link with a tooltip"/></p>
+<h4>Using jQuery to Override Tooltips</h4>
+<p>Overriding the default tooltip using jQuery is simple. We construct a new <code>span</code> using jQuery&#8217;s <code>$('&lt;span/&gt;');</code> for each link, fill it with the title tag, and then place this element directly after the anchor tag we found. We also clear the existing title tag to eliminate the default tooltip.</p>
+<p>jQuery cuts these operations down significantly. Using the <code>.each()</code>, <code>.html()</code>, and <code>.after()</code> functions, this code is condensed into about a half dozen lines of code.</p>
+<pre><code>
+		$('.show-tooltip').each(function(){
+		     $(this).after($('&lt;span/&gt;')
+			.attr('class', 'show-tooltip-text')
+			.html($(this).attr('title')))
+			.attr('title', '');
+		});
+
+</code></pre>
+<p>Alongside this block of code, our setup function also sets the <code>.hover()</code> callbacks that will be manually processing the showing and hiding of the tooltips. Within these callbacks, we can use <code>e.pageX</code> and <code>e.pageY</code> to determine the coordinates of the mouse, and use this to position our tooltip.</p>
+<p>With a couple of lines of CSS, we end up with a rough imitation of the standard tooltip we are used to seeing.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/tooltip/css-only.jpg" alt="The Basic Styling Applied to the Tooltips"/></p>
+<h4>Putting it All Together</h4>
+<p>At this point, the only thing left to do is make it a bit prettier. As this now a normal element that is within our control, we are able use standard CSS on <code>span.show-tooltip-text</code>. This includes adding background images, changing font sizes or colors, and anything else you might want to do for your tooltip. The only real restriction is that you will usually want to keep <code>position: absolute;</code> on this to ensure that it is positioned properly.</p>
+<p>Furthermore, we can use jQuery&#8217;s built in <code>.fadeIn()</code> and <code>.fadeOut()</code> to help the tooltip look even better.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/tooltip/final.jpg" alt="Fully-Styled Tooltip"/></p>
+<h4>Wrapping Up</h4>
+<p>The code to implementing these tooltips is extremely simple and concise, and this allows you to incorporate tooltips into your application without unnecessary bloat and hassle. Tooltips should be used wherever helpful advice can be provided, and now it&#8217;s just a matter of adding a <code>title</code> attribute and a classname.</p>
+<p>Keep in mind that because we are using <code>.html()</code> instead of <code>.text()</code>, we can incorporate any HTML (including newlines and formatting) into our title, but do be warned that the standard tooltip will not format this properly and therefore degradation may not be ideal.</p>
+<h4>The Finished Product</h4>
+<p><iframe src="http://designreviver.com/wp-content/uploads/2008/10/tooltip/example.html" name="frame1" scrolling="auto" frameborder="no" align="center" height="100px" width="500px"><a href="http://designreviver.com/wp-content/uploads/2008/10/tooltip/example.html">View Example</a></iframe></p>
+<p>The <a href="http://designreviver.com/wp-content/uploads/2008/10/tooltip/example.html">example</a> shows two situations where you would commonly want to have tooltips, although the possibilities are really endless, as indicated by the w3&#8217;s decision to allow the title attribute on every tag.</p>
+<p>Tutorial kindly written by <a href="http://nathanwwong.com/" target="_blank">Nathan Wong</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://designreviver.com/tutorials/jquery-css-tooltip-example/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Icon Design Tutorial - Designing a New Icon In Illustrator</title>
+		<link>http://designreviver.com/tutorials/icon-design-tutorial-designing-a-new-icon-in-illustrator/</link>
+		<comments>http://designreviver.com/tutorials/icon-design-tutorial-designing-a-new-icon-in-illustrator/#comments</comments>
+		<pubDate>Wed, 15 Oct 2008 16:07:44 +0000</pubDate>
+		<dc:creator>tim</dc:creator>
+		
+		<category><![CDATA[Tips]]></category>
+
+		<category><![CDATA[Tutorials]]></category>
+
+		<category><![CDATA[icon]]></category>
+
+		<category><![CDATA[icon design]]></category>
+
+		<category><![CDATA[Illustrator]]></category>
+
+		<category><![CDATA[tutorial]]></category>
+
+		<guid isPermaLink="false">http://designreviver.com/?p=434</guid>
+		<description><![CDATA[Following our free social icon giveaway, as promised, here is a tutorial explaining how they were made in Adobe Illustrator. We&#8217;ll try to cover the basics and give you an idea how things are rendered, how they appear in smaller sizes and the constraints we can find when using Vector (Illustrator) instead of Pixel (Photoshop) [...]]]></description>
+			<content:encoded><![CDATA[<p>Following our <a href="http://designreviver.com/freebies/6-free-new-social-icons-digg-twitter-stumble-rss-delicious-reddit/">free social icon giveaway</a>, as promised, here is a tutorial explaining how they were made in Adobe Illustrator. We&#8217;ll try to cover the basics and give you an idea how things are rendered, how they appear in smaller sizes and the constraints we can find when using Vector (Illustrator) instead of Pixel (Photoshop) based image software.</p>
+<p><span id="more-434"></span></p>
+<h4>Step 1</h4>
+<p>We are going to start this icon with the basics. A good suggestion is to envision this icon/image in your head before even designing it. First we sketch what we are thinking by simple scribbling our ideas. See below and example of it:</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/drawing.png" alt="" width="500" height="335" /></p>
+<h4>Step 2</h4>
+<p>As you can see there is some perspective applied to it and that&#8217;s something we should take into consideration when creating icons. We are to achieve similar results, as the sketch should be only to give us a blue print of what is coming next. After sketching, we then transfer this into our Art Board, on Illustrator. We simply create a &#8220;square-type&#8221; to start:</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/picture-3.png" alt="" width="500" /></p>
+<h4>Step 3</h4>
+<p>Next we are going to mimic the perspective from our drawing, by applying some 3D effect. See the screenshot below:</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/picture-1c.png" alt="" width="500" /></p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/picture-1.png" alt="" width="500" /></p>
+<h4>Step 4</h4>
+<p>Here is the result after applying the effect.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/picture-1d.png" alt="" width="500" /></p>
+<h4>Step 5</h4>
+<p>We have to start applying some effects to achieve the glossy-transparent look. Adding these will give us what we expect. We are going to use different transparencies (screen, multiply, darken, luminosity etc&#8230;) to get to them. Below are a few shapes where we are applying those effects! Take a look at the transparency &#8220;%&#8221; as well as the gradients used. This is very important.</p>
+<p>These effects are &#8220;key&#8221; to use and achieve ANY result. All it takes is time and try things out. See below:</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/picture-e123.png" alt="" width="500" /></p>
+<h4>Step 6</h4>
+<p>After applying these to all your shapes, you should have something similar to the screen below:</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/picture-1b.png" alt="" width="500" /></p>
+<h4>Step 7</h4>
+<p>After designing the box we need to apply similar 3D effects and shape transparencies effects to the logo icon. We should have the same angles applied as well. Below you will see 4 basic steps of what we have already cover (Regular Shape, 3D Applied, Added Shapes and Final Rendering):</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/picture-logo.png" alt="" width="500" /></p>
+<h4>Step 8</h4>
+<p>Below are a few more step on how we create the effects. We first select the shape we wnat to apply the effect. Using our gradient tool (G), we will click and drag into opposite directions. If we want the gloss (Lighten) to be on the top of a shape we need to drag starting from the top to the bottom of the shape. This will apply the effect on top of the shape and one thing to keep in mind is that we need to try different &#8220;dragging&#8221; instances/moves, until we get the way we want. For every shape we use the same effect a few times. See below a few samples:</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/ef_1.png" alt="" width="500" /></p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/ef_2.png" alt="" width="500" /></p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/ef_3.png" alt="" width="500" /></p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/ef_4.png" alt="" width="500" /></p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/ef_5.png" alt="" width="500" /></p>
+<h4>Step 9</h4>
+<p>Now that we have both rendered shapes, we can merge them. Notice that the &#8220;front&#8221; portion of the box, is placed &#8220;on top&#8221; of the logo icon, and a transparency of 85% is applied so it becomes see through.</p>
+<p>Below is the final rendered icon:</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/picture-6.png" alt="" width="500" /></p>
+<p>Many thanks to <a href="http://dellustrations.com">Dellustrations.com</a> for the fantastic icons and tutorial, make sure you check out the full set of <a href="http://designreviver.com/freebies/6-free-new-social-icons-digg-twitter-stumble-rss-delicious-reddit/">free social icons</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://designreviver.com/tutorials/icon-design-tutorial-designing-a-new-icon-in-illustrator/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>6 Free New Social Icons - Digg, Twitter, Stumble, RSS, Delicious &#038; Reddit</title>
+		<link>http://designreviver.com/freebies/6-free-new-social-icons-digg-twitter-stumble-rss-delicious-reddit/</link>
+		<comments>http://designreviver.com/freebies/6-free-new-social-icons-digg-twitter-stumble-rss-delicious-reddit/#comments</comments>
+		<pubDate>Mon, 13 Oct 2008 12:16:34 +0000</pubDate>
+		<dc:creator>tim</dc:creator>
+		
+		<category><![CDATA[Freebies]]></category>
+
+		<category><![CDATA[free icon]]></category>
+
+		<category><![CDATA[icon]]></category>
+
+		<category><![CDATA[new icons]]></category>
+
+		<category><![CDATA[social icons]]></category>
+
+		<guid isPermaLink="false">http://designreviver.com/?p=406</guid>
+		<description><![CDATA[Fed up with the same standard set of social icons for your blog or site? This set of six social icons (Digg, Twitter, Delicious, RSS, Reddit &#038; Stumbleupon) are free to use on your websites and blogs however you wish! The icons are provided many different formats, see the bottom of this post for the [...]]]></description>
+			<content:encoded><![CDATA[<p>Fed up with the same standard set of social icons for your blog or site? This set of six social icons (Digg, Twitter, Delicious, RSS, Reddit &#038; Stumbleupon) are free to use on your websites and blogs however you wish! The icons are provided many different formats, see the bottom of this post for the direct download links.<span id="more-406"></span></p>
+<h4>Free Download Social Icons</h4>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/social_icons.jpg"></p>
+<h4>Want to Know How To Design a New Icon?</h4>
+<p>Check back soon for a follow up post outlining how these icons where made, from sketch to finished image. The tutorial will allow you follow step by step to create your own icon masterpiece. <a href="http://feeds.feedburner.com/DesignReviver">Subscribe to our RSS feed</a> for instant updates.</p>
+<h4>Downloads</h4>
+<p><a href="http://designreviver.com/wp-content/uploads/2008/10/PSD.zip"  class="downloadLink">Photoshop PSD files</a><br />
+<a href="http://designreviver.com/wp-content/uploads/2008/10/AI.zip"  class="downloadLink">Vector Illustrator AI files</a><br />
+<a href="http://designreviver.com/wp-content/uploads/2008/10/ICONS.zip"  class="downloadLink">PNG files</a><br />
+<a href="http://designreviver.com/wp-content/uploads/2008/10/social_icons.jpg" target="_blank"  class="downloadLink">Image JPG</a><br />
+<a href="http://designreviver.com/wp-content/uploads/2008/10/ICNS.zip"  class="downloadLink">Icons Format</a></p>
+<p>(Please note, reselling or redistribution without permission from DesignReviver and the artist is not allowed)</p>
+<p>Many thanks to <a href="http://dellustrations.com">Dellustrations.com</a> for designing these fantastic icons (in some many formats!).</p>
+<h4>Talented Designers Wanted!</h4>
+<p>We are always on the look out for talented designers willing to share their work (icons, wordpress themes, photoshop actions) or write design tutorials. By contributing to DesignReviver you’ll be financially rewarded and will gain exposure to a large audience. For more information about contributing please <a href="http://designreviver.com/contact/">contact us</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://designreviver.com/freebies/6-free-new-social-icons-digg-twitter-stumble-rss-delicious-reddit/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>jQuery &#038; CSS Example - Dropdown Menu</title>
+		<link>http://designreviver.com/tutorials/jquery-css-example-dropdown-menu/</link>
+		<comments>http://designreviver.com/tutorials/jquery-css-example-dropdown-menu/#comments</comments>
+		<pubDate>Tue, 07 Oct 2008 17:00:35 +0000</pubDate>
+		<dc:creator>tim</dc:creator>
+		
+		<category><![CDATA[Tips]]></category>
+
+		<category><![CDATA[Tutorials]]></category>
+
+		<category><![CDATA[css]]></category>
+
+		<category><![CDATA[dropdown]]></category>
+
+		<category><![CDATA[dropdown menu]]></category>
+
+		<category><![CDATA[jquery]]></category>
+
+		<category><![CDATA[menu]]></category>
+
+		<guid isPermaLink="false">http://designreviver.com/?p=364</guid>
+		<description><![CDATA[Dropdown menus and menu bars have been heavily used since the early days of graphical user interfaces. Their use has become ubiquitous, and even expected, in desktop applications, and the web has quickly followed suit. This article is intended to describe an extremely basic, yet extremely powerful, technique for adding dropdown menus in your application [...]]]></description>
+			<content:encoded><![CDATA[<p>Dropdown menus and menu bars have been heavily used since the early days of graphical user interfaces. Their use has become ubiquitous, and even expected, in desktop applications, and the web has quickly followed suit. This article is intended to describe an extremely basic, yet extremely powerful, technique for adding dropdown menus in your application user interface or website design.<span id="more-364"></span></p>
+<h4>The Finished Product</h4>
+<p><iframe src="http://designreviver.com/wp-content/uploads/2008/10/example.html" name="frame1" scrolling="auto" frameborder="no" align="center" height = "160px" width = "500px"><br />
+</iframe></p>
+<h4>Getting Started</h4>
+<p>To begin, we need to define our basic menu hierarchy. In order to maintain a structured and semantic approach to this, we will use nothing more than unordered lists of standard links. We&#8217;ll use the following code as an example:</p>
+<pre><code>
+
+&lt;ul id=&quot;cssdropdown&quot;&gt;
+&lt;li class=&quot;headlink&quot;&gt;
+	&lt;a href=&quot;mine.html?search_engines&quot;&gt;Search Engines&lt;/a&gt;
+	 &lt;ul&gt;
+	  &lt;li&gt;&lt;a href=&quot;http://google.com/&quot;&gt;Google&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;http://yahoo.com/&quot;&gt;Yahoo&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;http://live.com/&quot;&gt;Live Search&lt;/a&gt;&lt;/li&gt;
+	 &lt;/ul&gt;
+	 &lt;/li&gt;
+	  &lt;li class=&quot;headlink&quot;&gt;
+	  &lt;a href=&quot;mine.html?shopping&quot;&gt;Shopping&lt;/a&gt;
+         &lt;ul&gt;
+	  &lt;li&gt;&lt;a href=&quot;http://amazon.com/&quot;&gt;Amazon&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;http://ebay.com/&quot;&gt;eBay&lt;/a&gt;&lt;/li&gt;
+	  &lt;li&gt;&lt;a href=&quot;http://craigslist.com/&quot;&gt;CraigsList&lt;/a&gt;&lt;/li&gt;
+	 &lt;/ul&gt;
+ &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>You should see something like this:</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/basic-list.jpg" alt="Basic Unordered List of Links"/></p>
+<h4>Creating Dropdown Lists</h4>
+<p>With our semantic HTML and link structure written out, we can proceed to apply some basic hover techniques that are included in CSS. The <code>:hover</code> pseudo-class is invoked when the mouse is placed over the list item.</p>
+<p>We can use CSS to hide the child unordered lists by default, and show them with the <code>:hover</code> pseudo-class, like so:</p>
+<pre><code>
+       li.headlink ul { display: none; }
+       li.headlink:hover ul { display: block; }</code></pre>
+<p>It is best to take this opportunity to apply some basic styling to the list, such as floating the parent unordered lists in a row, and specifying the width of the unordered list to ensure that no shifting occurs when the elements are hidden or shown. This should look something like this:</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/css-only.jpg" alt="The Basic Styling Applied to the Unordered List of Links"/></p>
+<h4>The Issue with Internet Explorer</h4>
+<p>Unfortunately, while the <code>:hover</code> pseudo-class may be elegant, it does not work in Internet Explorer. At this point, a short bit of JavaScript is required to provide a clean fix. All we need to do is select all unordered lists that are within a list item that has the class <code>.headlink</code> and add <code>onmouseover</code> and <code>onmouseout</code> events to them. This can be done in twelve simple lines of code:</p>
+<pre><code>
+	window.onload = function()
+	{
+		var lis = document.getElementsByTagName('li');
+		for(i = 0; i < lis.length; i++)
+		{
+			var li = lis[i];
+			if (li.className == 'headlink')
+			{
+				li.onmouseover = function() { this.getElementsByTagName('ul').item(0).style.display = 'block'; }
+				li.onmouseout = function() { this.getElementsByTagName('ul').item(0).style.display = 'none'; }
+			}
+		}
+	}
+	</code></pre>
+<p>Those using jQuery are privileged to an even easier solution:</p>
+<pre><code>
+	$(document).ready(function(){
+		$('li.headlink').hover(
+			function() { $('ul', this).css('display', 'block'); },
+			function() { $('ul', this).css('display', 'none'); });
+	});
+	</code></pre>
+<h4>Putting It All Together</h4>
+<p>The dropdown menu is now functional in the major browsers, and is ready to be styled, cleaned up, and shipped.</p>
+<p>It is advantageous to start by applying a basic style that&#8217;s a little more appealing than the standard lists. This allows us to visualize how this will fit into our application or design.</p>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/10/styled-dropdown.jpg" alt="Standard Styling on Dropdown Menu"/></p>
+<h4>Adding Some Flare</h4>
+<p>With a few extra lines of CSS, the menu is styled and ready to fit into our site.</p>
+<p><iframe src="http://designreviver.com/wp-content/uploads/2008/10/example.html" name="frame1" scrolling="auto" frameborder="no" align="center" height = "160px" width = "500px"><br />
+</iframe></p>
+<h4>Wrapping Up</h4>
+<p>One important aspect of writing a generic dropdown list is to segregate the CSS and JavaScript to ensure that there are no conflicts. The easiest way to do this is to add the <code>#cssdropdown</code> selector in front of every element.</p>
+<p>Finally, we check to see if the <code>#cssdropdown</code> div can be moved around freely. This ensures that dropdown menu we have created will flow nicely when integrated with our existing site design or application user interface.</p>
+<p>The <a href="http://designreviver.com/wp-content/uploads/2008/10/example.html">full code and example</a> remains both basic and concise to exemplify the simplicity of the underlying technique for using dropdown menus on your website. Enjoy!</p>
+<p>Tutorial kindly written by <a href="http://nathanwwong.com/" target="_blank">Nathan Wong</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://designreviver.com/tutorials/jquery-css-example-dropdown-menu/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>5000+ Color Gradients Set For Photoshop</title>
+		<link>http://designreviver.com/freebies/5000-color-gradients-set-for-photoshop/</link>
+		<comments>http://designreviver.com/freebies/5000-color-gradients-set-for-photoshop/#comments</comments>
+		<pubDate>Fri, 03 Oct 2008 15:16:24 +0000</pubDate>
+		<dc:creator>tim</dc:creator>
+		
+		<category><![CDATA[Freebies]]></category>
+
+		<category><![CDATA[gradient]]></category>
+
+		<category><![CDATA[photoshop]]></category>
+
+		<guid isPermaLink="false">http://designreviver.com/?p=353</guid>
+		<description><![CDATA[Using gradients in visual design helps to add dimension to your work.  The Web 2.0 movement made them popular again and used wisely they can have powerful results. Adding a touch of color gradients to your backgrounds, buttons, logos, and artwork is both simple and effective.  Check out this collection of PS color [...]]]></description>
+			<content:encoded><![CDATA[<p>Using gradients in visual design helps to add dimension to your work.  The Web 2.0 movement made them popular again and used wisely they can have powerful results. Adding a touch of color gradients to your backgrounds, buttons, logos, and artwork is both simple and effective.  Check out this collection of PS color gradient sets, we hope the 5000+ is all you will ever need! <span id="more-353"></span></p>
+<h5><a href="http://ladyoak.com/ladyoak-download/gradient/view-category.html" target="_blank">3470 Gradients</h5>
+<p><img src="http://www.designreviver.com/wp-content/uploads/2008/10/1.jpg" border="0" /><br />
+</a>Requires the Creation of a Free Account</p>
+<p><a href="http://www.dezinerfolio.com/2007/03/14/ultimate-web-20-gradients-free-download/" target="_blank"><br />
+<h5>130 Web 2.0 Gradients</h5>
+<p><img src="http://www.designreviver.com/wp-content/uploads/2008/10/2.jpg" border="0" /><br />
+</a></p>
+<p><a href="http://www.adobe.com/cfusion/exchange/index.cfm?s=5&#038;from=1&#038;o=desc&#038;cat=198&#038;l=-1&#038;event=productHome&#038;exc=16" target="_blank"><br />
+<h5>2000 Gradients From The Official Adobe Site</h5>
+<p><img src="http://www.designreviver.com/wp-content/uploads/2008/10/4.jpg" border="0" /><br />
+</a></p>
+<p><a href="http://www.brushesdownload.com/gradients.asp" target="_blank"><br />
+<h5>121 Gradients</h5>
+<p><img src="http://www.designreviver.com/wp-content/uploads/2008/10/3.jpg" border="0" /><br />
+</a></p>
+<p><a href="http://thefreelogomakers.com/category/resources/free-gradients/" target="_blank"><br />
+<h5>10 Gradient Sets</h5>
+<p><img src="http://www.designreviver.com/wp-content/uploads/2008/10/5.jpg" border="0" /><br />
+</a></p>
+<p><a href="http://www.biorust.com/downloads/browse/5/added/desc/1/" target="_blank"><br />
+<h5>20 Gradient Sets</h5>
+<p><img src="http://www.designreviver.com/wp-content/uploads/2008/10/6.jpg" border="0" /><br />
+</a></p>
+<p><a href="http://www.free4photoshop.com/pgs/gradients/free_photoshop_gradients.html" target="_blank"><br />
+<h5>9 Gradient Sets</h5>
+<p><img src="http://www.designreviver.com/wp-content/uploads/2008/10/7.jpg" border="0" /><br />
+</a></p>
+<p><a href="http://gurly.deviantart.com/art/60-Apophysis-Gradients-45948516" target="_blank"><br />
+<h5>60 Gradient Sets</h5>
+<p><img src="http://www.designreviver.com/wp-content/uploads/2008/10/8.jpg" border="0" /><br />
+</a></p>
+<p><a href="http://elvensword.deviantart.com/art/Vintage-Ps-Gradients-84184850" target="_blank"><br />
+<h5>75 Gradient Sets from DeviantArt</h5>
+<p><img src="http://www.designreviver.com/wp-content/uploads/2008/10/9.jpg" border="0" /><br />
+</a></p>
+<p><a href="http://elvensword.deviantart.com/art/75-Photoshop-Gradients-63496723" target="_blank"><br />
+<h5>75 Gradient Sets from DeviantArt</h5>
+<p><img src="http://www.designreviver.com/wp-content/uploads/2008/10/10.jpg" border="0" /><br />
+</a></p>
+<p>Article written by <a href="http://omar.radwan.us">Omar the Radwan</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://designreviver.com/freebies/5000-color-gradients-set-for-photoshop/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>22 Firefox 3 Plugins Web Designers Can&#8217;t Live Without</title>
+		<link>http://designreviver.com/freebies/22-firefox-3-plugins-web-designers-cant-live-without/</link>
+		<comments>http://designreviver.com/freebies/22-firefox-3-plugins-web-designers-cant-live-without/#comments</comments>
+		<pubDate>Tue, 23 Sep 2008 18:45:59 +0000</pubDate>
+		<dc:creator>tim</dc:creator>
+		
+		<category><![CDATA[Freebies]]></category>
+
+		<category><![CDATA[Tips]]></category>
+
+		<category><![CDATA[firefox 3]]></category>
+
+		<category><![CDATA[plugin. plugins]]></category>
+
+		<category><![CDATA[web design]]></category>
+
+		<guid isPermaLink="false">http://designreviver.com/?p=333</guid>
+		<description><![CDATA[Mozilla Firefox has always been considered a &#8220;user-friendly&#8221; browser, but with all the customizable extensions, it has become probably the most &#8220;developer-friendly&#8221; browser as well.  We have collected the best FFX dev scripts available, and installing them takes just a few clicks.  And don&#8217;t forget; make sure you have downloaded and installed Firefox [...]]]></description>
+			<content:encoded><![CDATA[<p>Mozilla Firefox has always been considered a &#8220;user-friendly&#8221; browser, but with all the customizable extensions, it has become probably the most &#8220;developer-friendly&#8221; browser as well.  We have collected the best FFX dev scripts available, and installing them takes just a few clicks.  And don&#8217;t forget; make sure you have downloaded and installed <a href ="http://www.mozilla.com/en-US/products/firefox/" target="_blank">Firefox 3.0</a> as well!<br />
+<span id="more-333"></span></p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/60" target="_blank">Web Developer 1.1.6</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/1.jpg" border="0" target="_blank"></a><br />
+The Web Developer extension adds a menu and a toolbar to the browser with various web developer tools. It is designed for Firefox, Flock  and Seamonkey, and will run on any platform that these browsers support including Windows, Mac OS  X and Linux. </p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/1386" target="_blank">Style Sheet Chooser II 3.0.0.1</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/2.jpg" border="0" /></a><br />
+Style Sheet Chooser II allows you to choose author-provided alternate style sheets for a web site, and have those choices be persisted for all pages on the same site. Style Sheet Chooser II replaces Firefox&#8217;s built-in style sheet switcher - its functionality is available via the [View]->[Page Style] menu item, one-click stylesheet rotating Toolbar icon and Statusbar icon. Icons can be switched on/off via Extension Preferences. </p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/2104" target="_blank">CSSViewer 1.0.3</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/3.jpg" border="0" /></a><br />
+A simple CSS property viewer. </p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/2289" target="_blank">CSS validator 3.0.0</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/4.jpg" border="0" /></a><br />
+Validates a page using the W3C CSS Validator. Adds an option to the right-click context menu and to the Tools menu to allow for easy validation of the CSS of the current page. Opens the results in a new tab. Will only work on pages that have a CSS file associated. For example it will work with<a href ="http://www.w3.org/">http://www.w3.org/</a> as the URL has a CSS file. </p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/271" target="_blank">ColorZilla 2.0</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/5.jpg" border="0" /></a><br />
+Advanced Eyedropper, ColorPicker, Page Zoomer and other colorful goodies.  With ColorZilla you can get a color reading from any point in your browser, quickly adjust this color and paste it into another program. You can Zoom the page you are viewing and measure distances between any two points on the page. The built-in palette browser allows choosing colors from pre-defined color sets and saving the most used colors in custom palettes. DOM spying features allow getting various information about DOM elements quickly and easily. </p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/4415" target="_blank">Font Finder 0.5c</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/6.jpg" border="0" /></a><br />
+Simply highlight a single element (e.g. a paragraph or a strong tag ), right-click and select `Font Finder`, then marvel as the full CSS text styling of the selected element appears. </p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/249" target="_blank">Html Validator 0.8.5.2</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/7.jpg" border="0" /></a><br />
+HTML Validator is a Mozilla extension that adds HTML validation inside Firefox and Mozilla. The number of errors of a HTML page is seen on the form of an icon in the status bar when browsing.  The extension can validate the HTML sent by the server or the HTML in the memory (after Ajax execution).  The details of the errors are seen when looking the HTML source of the page.  The extension is based on Tidy and OpenSP (SGML Parser). Both algorithms were originally developed by the Web Consortium W3C. And now extended and improved by a lot of persons. Both algorithms are embedded inside Mozilla/Firefox and makes the validation locally on your machine, without sending HTML to a third party server. </p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/201" target="_blank">DownThemAll! 1.0.3</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/8.jpg" border="0" /></a><br />
+DownThemAll is all you can desire from a download manager: it features an advanced accelerator that increases speed up to 400% and it allows you to pause and resume downloads at any time.  DownThemAll is fast, reliable and easy-to-use! It lets you download all the links or images contained in a webpage and much more: you can refine your downloads by fully customizable criteria to get only what you really want! </p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/748" target="_blank">Greasemonkey 0.8.20080609.0</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/9.jpg" border="0" /></a><br />
+Allows you to customize the way a webpage displays using small bits of JavaScript. Hundreds of scripts, for a wide variety of popular sites, are already available at <a href ="http://userscripts.org">http://userscripts.org</a>. </p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/3863" target="_blank">iMacros for Firefox 6.0.7.2</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/10.jpg" border="0" /></a><br />
+iMacros was designed to automate the most repetitious tasks on the web. If there’s an activity you have to do repeatedly, just record it in iMacros. The next time you need to do it, the entire macro will run at the click of a button! With iMacros, you can quickly and easily fill out web forms, remember passwords, create a webmail notifier, download information from other sites, scrape the Web (get data from multiple sites), and more. You can keep the macros on your computer for your own use, or share them with others by embedding them on your homepage, blog, company Intranet or any social bookmarking service. The uses are limited only by your imagination! </p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/1843" target="_blank">Firebug 1.2.1</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/11.jpg" border="0" /></a><br />
+Firebug integrates with Firefox to put a wealth of development tools at your fingertips while you browse. You can edit, debug, and monitor CSS, HTML, and JavaScript live in any web page. </p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/2464" target="_blank">FoxyProxy 2.8.5</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/12.jpg" border="0" /></a><br />
+FoxyProxy is a Firefox extension which automatically switches an internet connection across one or more proxy servers based on URL patterns. Put simply, FoxyProxy automates the manual process of editing Firefox&#8217;s Connection Settings dialog. Proxy server switching occurs based on the loading URL and the switching rules you define. </p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/1146" target="_blank">Screengrab! 0.95</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/13.jpg" border="0" /></a><br />
+Screengrab saves entire webpages as images.  It will save what you can see in the window, the entire page, just a selection, a particular frame&#8230; basically it saves webpages as images.  The following little keywords are at the request of those who can&#8217;t remember the name ScreenGrab! and want searches to work. It takes screen shots, screenshots - that is, shots, of web pages. </p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/5369" target="_blank">YSlow 0.9.5b2</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/14.jpg" border="0" /></a><br />
+YSlow gives you; a performance report card, HTTP/HTML summary, list of components in the page, and other various tools including JSLint.</p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/539" target="_blank">MeasureIt 0.3.8</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/15.jpg" border="0" /></a><br />
+Draw out a ruler to get the pixel width and height of any elements on a webpage. </p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/8487" target="_blank">Pencil 1.0.3</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/22.jpg" border="0" /></a><br />
+Pencil is a free and opensource tool for making diagrams and GUI prototyping that everyone can use.  Top features include; Built-in stencils for diagraming and prototyping, Multi-page document with background page, On-screen text editing with rich-text supports, PNG rasterizing, Undo/redo supports,  Installing user-defined stencils, Standard drawing operations: aligning, z-ordering, scaling, rotating, and many more great features! </p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/1419" target="_blank">IE Tab 1.5.20080823</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/16.jpg" border="0" /></a><br />
+This is a great tool for web developers, since you can easily see how your web page displayed in IE with just one click and then switch back to Firefox. </p>
+<h5><a href ="http://tools.seobook.com/firefox/seo-for-firefox.html" target="_blank">SEO for Firefox</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/17.jpg" border="0" /></a><br />
+Want to know why Google or Yahoo! ranks pages? If so this is the Firefox extension for you. SEO for Firefox pulls in many useful marketing data points to make it easy get a holistic view of the competitive landscape of a market directly in the search results.</p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/722" target="_blank">NoScript 1.8.1.3</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/18.jpg" border="0" /></a><br />
+Winner of the &#8220;2006 PC World World Class Award&#8221;, this tool provides extra protection to your Firefox. It allows JavaScript, Java and other executable content to run only from trusted domains of your choice, e.g. your home-banking web site, and guards the &#8220;trust boundaries&#8221; against cross-site scripting attacks (XSS).  Such a preemptive approach prevents exploitation of security vulnerabilities (known and even unknown!) with no loss of functionality.</p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/5648">FireShot 0.60</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/19.jpg" border="0" /></a><br />
+FireShot is a Firefox extension that creates screenshots of web pages.  Unlike other extensions, this plugin provides a set of editing and annotation tools, which let users quickly modify captures and insert text and graphical annotations. Such functionality will be especially useful for web designers, testers and content reviewers.  It&#8217;s possible to choose whether entire web page or only visible part of this page should be captured.  Screenshots can be uploaded to server, saved to disk (PNG, GIF, JPEG, BMP), printed (NEW!), copied to clipboard, e-mailed and sent to external editor for further processing. </p>
+<h5><a href ="http://operaview.mozdev.org/">OperaView 0.6.1</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/20.jpg" border="0" /></a><br />
+Even if you using Mozilla browser all the time, sometimes it is need for view the page, you are looking at, in Opera browser (especially if you are a web developer). OperaView extension makes that process easier by adding item View This Page in Opera to the page context menu and a button to the toolbar and item Open Link Target in Opera to the link context menu. So if you would like to quick view page in Opera, just right click somewhere on the page and choose new menu item.</p>
+<h5><a href ="https://addons.mozilla.org/en-US/firefox/addon/1985">Window Resizer 1.0</h5>
+<p><img src="http://designreviver.com/wp-content/uploads/2008/09/21.jpg" border="0" /></a><br />
+The Browser Window Resizer is useful for testing different screen sizes. It accurately resizes your browser so you can test to see what a web page looks like in all of the standard resolution sizes. Supports the 640&#215;480, 800&#215;600, 1024&#215;768, 1280&#215;800, 1280&#215;1024, 1600&#215;1200 resolutions. Resize the current page via the Context menu, Tool menu or Toolbar button. </p>
+<p>Article written by <a href ="http://omar.radwan.us">Omar the Radwan</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://designreviver.com/freebies/22-firefox-3-plugins-web-designers-cant-live-without/feed/</wfw:commentRss>
+		</item>
+	</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.717 seconds -->
+<!-- Cached page served by WP-Cache -->

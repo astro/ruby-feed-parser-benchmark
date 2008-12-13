@@ -1,0 +1,997 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
+  <title>Space Vatican - Home</title>
+  <id>tag:www.spacevatican.org,2008:mephisto/</id>
+  <generator version="0.8.0" uri="http://mephistoblog.com">Mephisto Drax</generator>
+  <link href="http://www.spacevatican.org/feed/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="http://www.spacevatican.org/" rel="alternate" type="text/html"/>
+  <updated>2008-12-03T13:27:41Z</updated>
+  <entry xml:base="http://www.spacevatican.org/">
+    <author>
+      <name>fred</name>
+    </author>
+    <id>tag:www.spacevatican.org,2008-12-03:172</id>
+    <published>2008-12-03T13:26:00Z</published>
+    <updated>2008-12-03T13:27:41Z</updated>
+    <category term="Rails"/>
+    <link href="http://www.spacevatican.org/2008/12/3/dates-params-and-you" rel="alternate" type="text/html"/>
+    <title>Dates, params and you</title>
+<content type="html">
+            &lt;p&gt;A not particularly nice area of Rails are the date and time helpers. 3 popups just isn't a very nice bit of user interface. It's a lot of clicks when you want to change dates and most people can't reason in their head about just the date. It's far easier to pick a date from a calendar type view. Still the helpers rails provides are fine for that quick and dirty date input.&lt;/p&gt;
+
+&lt;p&gt;Based on the questions on the mailing list about this, the thing that trips people up is that, unlike other attributes you might typically have, dates and times are not representable by a single input control. Instead you have several, one for each component (year, month, day etc...). So in particular, there is no single value in your params hash with your date or time. Exactly what is in your params hash depends on whether your using select_date or date_select (if you're entering a datetime, select_datetime or datetime_select).&lt;/p&gt;
+
+&lt;p&gt;These are to each other as text_field_tag is to text_field: date_select is expecting to hook up to an attribute of an instance variable (or if you use form_for or fields_for an attribute of the corresponding object) whereas select_date isn't. However unlike the other pairs of functions like textfield_tag/text_field, select/select_tag these two send very different parameters through to your controller.&lt;/p&gt;
+
+&lt;p&gt;select_date is perhaps the easiest to understand. It will result in a hash (by defaults it is named &quot;date&quot;, but you can override this with the :prefix option) with keys like year, month, day. You can then put those together to get an instance of Date or Time. For example the following in your view&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;Keyword&quot;&gt;%=&lt;/span&gt; select_date &lt;span class=&quot;Support&quot;&gt;Date&lt;/span&gt;::&lt;span class=&quot;Entity&quot;&gt;today&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;prefix&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;start&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;%&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;will result in a params hash like this: &lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+{&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;start&lt;/span&gt; =&amp;gt; {&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;year&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;2008&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;month&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;11&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;day&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;22&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;}}
+&lt;/pre&gt;
+
+&lt;p&gt;As I said, there is nothing in the params hash that is the actual value. You have to put it together yourself, for example&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+my_date &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Date&lt;/span&gt;::&lt;span class=&quot;Entity&quot;&gt;civil&lt;/span&gt;(params[&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;start&lt;/span&gt;][&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;year&lt;/span&gt;].&lt;span class=&quot;Entity&quot;&gt;to_i&lt;/span&gt;, params[&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;start&lt;/span&gt;][&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;month&lt;/span&gt;].&lt;span class=&quot;Entity&quot;&gt;to_i&lt;/span&gt;, 
+                      params[&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;start&lt;/span&gt;][&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;day&lt;/span&gt;].&lt;span class=&quot;Entity&quot;&gt;to_i&lt;/span&gt;)
+&lt;/pre&gt;
+
+&lt;p&gt;A bit more work than you average parameter, but there's nothing mysterious going on here. Under the hood, select_date is also quite boring: it's just calling select_year, select_month, select_day with appropriate options and concatenating the result. A consequence of that is that if you want some odd combination (eg just months and seconds) you can just do that concatenation work yourself.
+One interesting thing about those subhelpers is that the first parameter you give them can be one of two things:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;an integer in which case the corresponding day/month/year is displayed (eg 3 for March)&lt;/li&gt;
+&lt;li&gt;something like a Date or DateTime in which case the relevant date component is extracted from it&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;date_select is where the fun is. Here the expectation is that there is a model object we will want to update and we want to be able to do&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+my_object.&lt;span class=&quot;Entity&quot;&gt;update_attributes&lt;/span&gt; params[&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;my_object&lt;/span&gt;]
+&lt;/pre&gt;
+
+&lt;p&gt;However update_attributes just wants to set attributes. If you pass it &lt;code&gt;{'foo' =&gt; 'bar'}&lt;/code&gt; it will try and call the method &lt;code&gt;foo=&lt;/code&gt; passing &lt;code&gt;bar&lt;/code&gt; as a parameter. For a date input that is made up of these multiple parameters this is clearly a problem. What solves this is something called multiparameter assignment. If there are parameters whose name is in a certain format, then instead of just trying to call the appropriate accessor Rails will gather the related parameters, feed them through a transformation function (for example Time.mktime or Date::new[1]) and then set the appropriate attribute.&lt;/p&gt;
+
+&lt;p&gt;The format used is as follows: all the related parameters start with the name of the attribute which lets Rails know they are related. Next Rails needs to know in what order to pass them to the transformation function and whether a typecast is needed. If your view contained&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;Keyword&quot;&gt;%=&lt;/span&gt; date_select &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;product&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;release_date&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;%&amp;gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Then your parameters hash would look like&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+{&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;product&lt;/span&gt; =&amp;gt; 
+        {&lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;release_date(1i)&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;2008&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;release_date(2i)&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;11&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;release_date(3i)&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;22&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;}}
+&lt;/pre&gt;
+
+&lt;p&gt;Rails can look at this and see that this is to do with the release_date attribute. It's a date column, so rails knows to use Date::civil. The suffixes tell rails that 2008 is the first parameter to Date::civil and is an integer, that 11 is the second parameter and so on. Rails constructs the value using Date::civil(2008,11,22) and assigns that to release_date.&lt;/p&gt;
+
+&lt;p&gt;If you don't intend to pass the parameters to update_attributes (or other functions with that syntax such as the &lt;code&gt;new&lt;/code&gt; or &lt;code&gt;create&lt;/code&gt; methods on an ActiveRecord class) there's not a lot of point in putting up with the scary parameter names althouh you can of course construct the date yourself with &lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Support&quot;&gt;Date&lt;/span&gt;::&lt;span class=&quot;Entity&quot;&gt;civil&lt;/span&gt;(params[&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;product&lt;/span&gt;][&lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;release_date(1i)&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].&lt;span class=&quot;Entity&quot;&gt;to_i&lt;/span&gt;,
+ params[&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;product&lt;/span&gt;][&lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;release_date(2i)&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].&lt;span class=&quot;Entity&quot;&gt;to_i&lt;/span&gt;, 
+params[&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;product&lt;/span&gt;][&lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;release_date(3i)&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;].&lt;span class=&quot;Entity&quot;&gt;to_i&lt;/span&gt;)
+&lt;/pre&gt;You might as well just use select_date and have readable parameter names though.&lt;/p&gt;
+
+&lt;p&gt;So, to sum up use date_select or datetime_select when creating/updating ActiveRecord objects but select_date or select_datetime for just a general purpose date input. As a closing tip, with select_datetime you can use the :use_hidden option in which case hidden form inputs are generated instead of select boxes.[2]&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;[1] There's a bit more to this. For one the range of times representable by a Time object is limited on most platforms (since it's commonly a 32 bit number of seconds since an epoch). Rails has some conversion code that will try and create an instance of Time but if necessary will fall back and create a DateTime object. Secondly there's some cleverness to do with interpreting the user's input with respect to the correct time zone.&lt;/p&gt;
+
+&lt;p&gt;[2] This is (I think) a slight misuse. The intent of the use hidden is that it is the mechanism by which the :discard_day and so on work&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://www.spacevatican.org/">
+    <author>
+      <name>fred</name>
+    </author>
+    <id>tag:www.spacevatican.org,2008-11-25:161</id>
+    <published>2008-11-25T20:30:00Z</published>
+    <updated>2008-11-25T20:30:45Z</updated>
+    <category term="Rails"/>
+    <link href="http://www.spacevatican.org/2008/11/25/with_options-for-fun-and-profit" rel="alternate" type="text/html"/>
+    <title>with_options for fun and profit</title>
+<content type="html">
+            &lt;p&gt;Active Support has a nifty little helper that can cut down on repetition. A lot of things in Rails like validations, associations, named_scopes, routes etc... take a hash of options as their final parameter. There are times where you use many of these with some common options, for example&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Customer&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; ActiveRecord::Base&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;SupportFunction&quot;&gt;validates_presence_of&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;phone_number&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;if&lt;/span&gt; =&amp;gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;extended_signup&lt;/span&gt;
+  &lt;span class=&quot;SupportFunction&quot;&gt;validates_presence_of&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;job_title&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;if&lt;/span&gt; =&amp;gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;extended_signup&lt;/span&gt;
+  &lt;span class=&quot;SupportFunction&quot;&gt;validates_presence_of&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;job_industry&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;if&lt;/span&gt; =&amp;gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;extended_signup&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;or maybe you have a bunch of associations which all share an association proxy extension module and some settings&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Customer&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; ActiveRecord::Base&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;SupportFunction&quot;&gt;has_many&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;foos&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;extend&lt;/span&gt; =&amp;gt;&lt;span class=&quot;Variable&quot;&gt;MyModule&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;order&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;updated_at desc&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;conditions&lt;/span&gt; =&amp;gt; {&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;active&lt;/span&gt; =&amp;gt; &lt;span class=&quot;Constant&quot;&gt;true&lt;/span&gt;}
+  &lt;span class=&quot;SupportFunction&quot;&gt;has_many&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;bars&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;extend&lt;/span&gt; =&amp;gt;&lt;span class=&quot;Variable&quot;&gt;MyModule&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;order&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;updated_at desc&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;SupportFunction&quot;&gt;has_many&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;things&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;extend&lt;/span&gt; =&amp;gt;&lt;span class=&quot;Variable&quot;&gt;MyModule&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;order&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;updated_at desc&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Enter &lt;code&gt;with_options&lt;/code&gt;!&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Customer&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; ActiveRecord::Base&lt;/span&gt;&lt;/span&gt;
+  with_options &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;extend&lt;/span&gt; =&amp;gt; &lt;span class=&quot;Variable&quot;&gt;MyModule&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;order&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;updated_at desc&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;do &lt;/span&gt;|&lt;span class=&quot;Variable&quot;&gt;options&lt;/span&gt;|
+    options.&lt;span class=&quot;Entity&quot;&gt;has_many&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;foos&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;conditions&lt;/span&gt; =&amp;gt; {&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;active&lt;/span&gt; =&amp;gt; &lt;span class=&quot;Constant&quot;&gt;true&lt;/span&gt;}
+    options.&lt;span class=&quot;Entity&quot;&gt;has_many&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;bars&lt;/span&gt;
+    options.&lt;span class=&quot;Entity&quot;&gt;has_many&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;things&lt;/span&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Any time you've got a bunch of method calls taking some common options, &lt;code&gt;with_options&lt;/code&gt; can help. &lt;/p&gt;
+
+&lt;p&gt;So how does it work on the inside? All the &lt;code&gt;with_options&lt;/code&gt; method actually does is yield a special object to its block - all the craftiness is in that object. What we want that object to do is forward method calls to the object we're really interested in (in this case the Customer class) adding the options before it does so.&lt;/p&gt;
+
+&lt;p&gt;As with many such proxy objects we undefine just about every method and just implement &lt;code&gt;method_missing&lt;/code&gt;. The implementation of &lt;code&gt;method_missing&lt;/code&gt; inspects the arguments and merges any options present with the common set defined by the call to &lt;code&gt;with_options&lt;/code&gt; (so individual methods can take extra options or override the common ones) before passing them onto the &quot;real&quot; object.&lt;/p&gt;
+
+&lt;p&gt;Originally a limitation was that the last argument just had to be a hash, so for example if you had a procedural &lt;code&gt;named_scope&lt;/code&gt; then &lt;code&gt;with_options&lt;/code&gt; couldn't work. Luckily a recent &lt;a href=&quot;http://github.com/rails/rails/commit/9eaa0a3449595d07fe2ada5c4c93ec226622147c&quot;&gt;commit&lt;/a&gt; rectifies this: if the thing you're trying to merge with is a proc, then &lt;code&gt;with_options&lt;/code&gt; will replace it with a new proc that merges the common options with the result of the call to the original proc. If you're not on edge you'll have to wait for 2.3 in order to get this.&lt;/p&gt;
+
+&lt;p&gt;While both the examples I gave showed using &lt;code&gt;with_options&lt;/code&gt; on what is essentially model class configuration it is by no means limited to that. You could use it for that sort of configuration on your own classes or just inside a regular method - anytime you are making several method calls on the same object with a hash of options at the end.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://www.spacevatican.org/">
+    <author>
+      <name>fred</name>
+    </author>
+    <id>tag:www.spacevatican.org,2008-11-21:169</id>
+    <published>2008-11-21T22:39:00Z</published>
+    <updated>2008-11-21T22:40:27Z</updated>
+    <category term="Rails"/>
+    <category term="gotcha"/>
+    <link href="http://www.spacevatican.org/2008/11/21/environment-rb-and-requiring-dependencies" rel="alternate" type="text/html"/>
+    <title>environment.rb and requiring dependencies</title>
+<content type="html">
+            &lt;p&gt;In the before time, the bottom of most of my apps' environment.rb was an unholy mess. Inflector rules, requiring of various libraries or gems, various bits of app specific configuration etc... all jumbled together. Rails 2.0 introduced initializers: any file in config/initializers is run at an appropriate time during the initialisation process. You get to split that mess into a handful of well organised, single purposed little files (and rails 2.1 simplified the case of requiring gems with the &lt;code&gt;config.gems&lt;/code&gt; mechanism).&lt;/p&gt;
+
+&lt;p&gt;You might still have a few stragglers though, that one require that you didn't bother moving into an initializer because it hardly seemed worth creating a whole file just for that one line. With the imminent release of Rails 2.2 it's high time you made that change.&lt;/p&gt;
+
+&lt;h2&gt;Living Thread Dangerously&lt;/h2&gt;
+
+&lt;p&gt;Unless you've been living under an internet-proof rock you've probably heard about Rails' new threadsafeness. There's a bunch of hard work across the framework that's gone into making this possible, but one particular area is to do with loading code. Ruby's require mechanism isn't threadsafe (or as it has been put to me, it's thread dangerous) nor is the automatic loading stuff Rails' uses. For example say two threads both hit a constant called Foo that has yet to be loaded. Thread 1 starts loading foo.rb and gets as far as&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Foo&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; ActiveRecord&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;At this point Thread 2 hits Foo. However at this point the constant Foo now exists and so Thread 2 doesn't load foo.rb. However since Thread 1 hasn't yet processed the rest of foo.rb the Foo class will be missing all its instance methods, validations etc... If both threads end up loading foo.rb at the same time then weird things can happen like validations being added twice and so on. It can also cause the dependencies system to spuriously claim it couldn't find a constant. It's a small world of pain you don't want to get involved in. Making require threadsafe is fundamentally hard (and is something the ruby-core and jruby folks have been worrying about).&lt;/p&gt;
+
+&lt;p&gt;What Rails 2.2 does in production mode is load all of your models, controllers and so on as part of the initialization process instead of loading them as they are needed. No more loads from different threads when your app is actually running, no more pain. &lt;/p&gt;
+
+&lt;h2&gt;The Bad Thing&lt;/h2&gt;
+
+&lt;p&gt;So, how does this connect with the statement I made above about moving things into initializers? Your average environment.rb file looks a little like this&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;set some constants like RAILS_GEM_VERSION&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;File&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;join&lt;/span&gt;(&lt;span class=&quot;Support&quot;&gt;File&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;dirname&lt;/span&gt;(&lt;span class=&quot;Variable&quot;&gt;__FILE__&lt;/span&gt;), &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;boot&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;)
+&lt;span class=&quot;Support&quot;&gt;Rails&lt;/span&gt;::&lt;span class=&quot;Entity&quot;&gt;Initializer&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;run&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;do &lt;/span&gt;|&lt;span class=&quot;Variable&quot;&gt;config&lt;/span&gt;|
+&lt;span class=&quot;Comment&quot;&gt;  &lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;set some config settings&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;if you're old school, app configuration here&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;some_dependency&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;The bulk of initialization happens when you call run. This yields to the block to allow you to set the various settings (and also reads the appropriate environment file and so on) but the key thing is that by the time that function has returned, all of the initialization has happened. &lt;/p&gt;
+
+&lt;p&gt;In particular, Rails will try to load all of your application classes before the stuff at the bottom of environment.rb has been executed. If a model depends on some_dependency.rb being loaded (for example if that file added a validation that it uses) then your app will die before it even finished initialising. &lt;/p&gt;
+
+&lt;p&gt;If however you've been a good person and moved things into initializers then those will have run at an appropriate time in the boot process (i.e. before Rails loads up all your application classes) and you won't get an unpleasant surprise when you try and deploy your app.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://www.spacevatican.org/">
+    <author>
+      <name>fred</name>
+    </author>
+    <id>tag:www.spacevatican.org,2008-11-20:166</id>
+    <published>2008-11-20T14:24:00Z</published>
+    <updated>2008-11-20T14:24:16Z</updated>
+    <link href="http://www.spacevatican.org/2008/11/20/asap" rel="alternate" type="text/html"/>
+    <title>ASAP</title>
+<content type="html">
+            &lt;p&gt;Things most likely to make me not reply to a message on a mailing list:&lt;/p&gt;
+
+&lt;blockquote&gt;
+    &lt;p&gt;This is urgent&lt;/p&gt;
+    
+    &lt;p&gt;Plz reply ASAP&lt;/p&gt;
+&lt;/blockquote&gt;
+          </content>  </entry>
+  <entry xml:base="http://www.spacevatican.org/">
+    <author>
+      <name>fred</name>
+    </author>
+    <id>tag:www.spacevatican.org,2008-11-15:160</id>
+    <published>2008-11-15T17:58:00Z</published>
+    <updated>2008-11-19T11:43:47Z</updated>
+    <category term="Rails"/>
+    <category term="gotcha"/>
+    <link href="http://www.spacevatican.org/2008/11/15/first-foremost-and-0" rel="alternate" type="text/html"/>
+    <title>First, foremost and [0]</title>
+<content type="html">
+            &lt;p&gt;This doesn't work (the something field will not be updated):&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+post.&lt;span class=&quot;Entity&quot;&gt;comments&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;first&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;something&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;true&lt;/span&gt;
+post.&lt;span class=&quot;Entity&quot;&gt;comments&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;first&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;save&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;but this does&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+post.&lt;span class=&quot;Entity&quot;&gt;comments&lt;/span&gt;[&lt;span class=&quot;Constant&quot;&gt;0&lt;/span&gt;].&lt;span class=&quot;Entity&quot;&gt;something&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;true&lt;/span&gt;
+post.&lt;span class=&quot;Entity&quot;&gt;comments&lt;/span&gt;[&lt;span class=&quot;Constant&quot;&gt;0&lt;/span&gt;].&lt;span class=&quot;Entity&quot;&gt;save&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;as does&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+post.&lt;span class=&quot;Entity&quot;&gt;comments&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;each&lt;/span&gt; {|&lt;span class=&quot;Variable&quot;&gt;c&lt;/span&gt;| puts c.&lt;span class=&quot;Entity&quot;&gt;id&lt;/span&gt;}
+post.&lt;span class=&quot;Entity&quot;&gt;comments&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;first&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;something&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;true&lt;/span&gt;
+post.&lt;span class=&quot;Entity&quot;&gt;comments&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;first&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;save&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Both of these would have worked in rails 2.0.x and previous versions. So what changed?&lt;/p&gt;
+
+&lt;h2&gt;Quacks like a duck but breathes fire&lt;/h2&gt;
+
+&lt;p&gt;As you may know, &lt;code&gt;post.comments&lt;/code&gt; looks an awful lot like an array but isn't an array. It's an association proxy. It has methods defined on it for things like finding objects from the database, the count method that does an sql count and things like that. When you ask it to do something that can only really be done by having the ruby objects in memory it will load the objects from the database into an actual ruby array and pass methods onto that (this all happens via method_missing). So far business as usual, rails has been like this for a long long time. In particular were you to call the first or the last methods on an association then the array would be loaded and first would be called on that array.&lt;/p&gt;
+
+&lt;p&gt;This sort of depends on your problem domain, but a lot of the time loading the entire array just to look at the first or last element of it is wasteful. You've always been able to do &lt;code&gt;some_association.find :first&lt;/code&gt; (and as of 2.1 &lt;code&gt;some_association.find :last&lt;/code&gt;) but that flows a little less easily off the tongue and of course doesn't play nicely if you pass your association to some code that thinks it's just working with an array. So a few months ago &lt;a href=&quot;http://github.com/rails/rails/commit/73c59638549686fccc749ffd3ac53cb533c5fd61&quot;&gt;changes&lt;/a&gt; were made to make first and last load just that one item from the database[1]. Of course if the target array is already loaded then it just returns the first item from that array.&lt;/p&gt;
+
+&lt;p&gt;At the end of the day what that ends up meaning is that in the first example I gave, each call to &lt;code&gt;post.comments.first&lt;/code&gt; returns a different object, ie the one that we call save on is not the same as the one we made the change to. The second and third examples are ok purely because they force the array to be loaded which in turn means that calls to first no longer hit the database in that way[2].&lt;/p&gt;
+
+&lt;p&gt;Of course if you're doing things right your unit tests would catch this sort of thing, but it's still likely to leave you scratching your head a little (I certainly recall spending a few minutes looking at code very similar to the first example and wondering why it no longer worked). Slightly more subtle are performance problems, for example if you were iterating over various attributes then you'd be hitting the database each time to load somethings.first.&lt;/p&gt;
+
+&lt;p&gt;I'm not sure what to think about this sort of thing. There is a perfectly sound rationale for doing this but it introduces little ifs, buts and maybes into the illusion that association proxies behave like Arrays. As far as performance goes the implications vary. For big associations  it can be a huge win, other times loading 1 object instead of 3 will make little to no difference. In other places I do genuinely want to load the whole array but I'd rather write &lt;code&gt;first&lt;/code&gt; than &lt;code&gt;[0]&lt;/code&gt; if I'm accessing the first element. Maybe the example I gave is a little artificial, maybe not, but at the end of the day, first no longer being a synonym for [0] is a habit that is hard to break. &lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;[1] I'm simplifying things quite considerably here - there are a number of edge cases which that code has to tread around quite carefully, including unsaved parent objects, unsaved children objects, custom finder sql etc...
+[2] While I've concentrated on first, everything I've said here applies to last too. In a way it's slightly worse in that (at least for me) the difference in comfort between writing last and [-1] is greater than the difference between first and [0]&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://www.spacevatican.org/">
+    <author>
+      <name>fred</name>
+    </author>
+    <id>tag:www.spacevatican.org,2008-11-09:153</id>
+    <published>2008-11-09T15:11:00Z</published>
+    <updated>2008-11-09T15:12:16Z</updated>
+    <category term="Rails"/>
+    <link href="http://www.spacevatican.org/2008/11/9/do-you-know-when-your-code-runs" rel="alternate" type="text/html"/>
+    <title>Do you know when your code runs?</title>
+<content type="html">
+            &lt;p&gt;Few things are more head bashing inducing than code that passes all unit tests, runs perfectly on your development machine but fails on your staging/production servers. In that vein, both of these examples are wrong:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Person&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; ActiveRecord::Base&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;SupportFunction&quot;&gt;has_many&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;posts&lt;/span&gt;
+  &lt;span class=&quot;SupportFunction&quot;&gt;has_many&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;recent_posts&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;class_name&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;Post&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;conditions&lt;/span&gt; =&amp;gt; [&lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;created_at &amp;gt; ?&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;1&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;week&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;ago&lt;/span&gt;]
+  &lt;span class=&quot;SupportFunction&quot;&gt;validates_inclusion_of&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;birth_date&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;in&lt;/span&gt; =&amp;gt; (&lt;span class=&quot;Constant&quot;&gt;20&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;years&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;ago&lt;/span&gt;..&lt;span class=&quot;Constant&quot;&gt;13&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;years&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;ago&lt;/span&gt;), 
+                            &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;message&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;You must be a teenager to signup&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;on&lt;/span&gt; =&amp;gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;create&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Post&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; ActiveRecord::Base&lt;/span&gt;&lt;/span&gt;
+  named_scope &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;recent&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;conditions&lt;/span&gt; =&amp;gt; [&lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;created_at &amp;gt; ?&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;1&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;week&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;ago&lt;/span&gt;]
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;In development mode this will work absolutely fine. When you deploy this code onto the production server it will work fine too, but after a while it won't behave quite right. For example Person.recent_posts will start returning posts older than 1 week.&lt;/p&gt;
+
+&lt;p&gt;The key to this is understanding when the code runs. In particular when does &quot;1.week.ago&quot; get turned into an instance of Time with some fixed value such as 1st November 2008 at 20:32?&lt;/p&gt;
+
+&lt;p&gt;The statements has_many, validates_inclusion_of etc... are just method calls, so their arguments are evaluated when that function is called. You can look in the options hash for an association to see this (assuming you've just typed in the Person class given above):&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Support&quot;&gt;Person&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;reflections&lt;/span&gt;[&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;recent_posts&lt;/span&gt;].&lt;span class=&quot;Entity&quot;&gt;options&lt;/span&gt;
+=&amp;gt; {&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;conditions&lt;/span&gt;=&amp;gt;[&lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;created_at &amp;gt; ?&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;Variable&quot;&gt;Sun&lt;/span&gt; &lt;span class=&quot;Variable&quot;&gt;Nov&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;02&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;14&lt;/span&gt;:&lt;span class=&quot;Constant&quot;&gt;27&lt;/span&gt;:&lt;span class=&quot;Constant&quot;&gt;26&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;Constant&quot;&gt;0000&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;2008&lt;/span&gt;]}
+&lt;/pre&gt;
+
+&lt;p&gt;So when are these functions called? Quite simply when ruby loads person.rb. In development mode your source code is reloaded for each request[1], providing the illusion that the &quot;1.week.ago&quot; is re-evaluated whenever it is used. In production mode person.rb would only be read once per Rails instance and so once your mongrels had been running for a week Post.recent_posts would return anything written in the last 2 weeks (1 week before the date at which your mongrels were launched). You would also notice this if you were running script/console and keeping an eye on the sql generated: you'd see that the date in the WHERE clause didn't change.&lt;/p&gt;
+
+&lt;h2&gt;Fixing it.&lt;/h2&gt;
+
+&lt;p&gt;Fortunately it's not hard to fix this. In this case of the awesome named_scope you probably already know that you can supply a Proc for when you want your scope to take arguments. We can equally make one with no arguments, just to ensure that the time condition is evaluated whenever the scope is accessed. &lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Post&lt;/span&gt;
+  named_scope &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;recent&lt;/span&gt;, lambda { {&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;conditions&lt;/span&gt; =&amp;gt; &lt;span class=&quot;Constant&quot;&gt;1&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;week&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;ago&lt;/span&gt;}}
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;For conditions on things like associations we can use a little trick called interpolation. As I'm sure you know when ruby encounters &quot;#{ 'hello world' }&quot; it evaluates the things inside the #{}, but if you use single quotes (or equivalently things like %q() then it doesn't. What you may not know is that Active Record will perform that interpolation again at the point where sql is generated. For example we can write the recent posts associations like this:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Person&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; ActiveRecord::Base&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;SupportFunction&quot;&gt;has_many&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;recent_posts&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;class_name&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;Post&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, 
+           &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;conditions&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;created_at &amp;gt; #{self.class.connection.quote 1.week.ago}&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;When person.rb is loaded the stuff in the #{} will not be evaluated, however when Active Record generates the sql needed to load the association it will be[2].&lt;/p&gt;
+
+&lt;p&gt;Validations can't play any of the clever little games that the other 2 examples can. You'll just have to something like&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Person&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; ActiveRecord::Base&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;SupportFunction&quot;&gt;validate_on_create&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;is_a_teenager&lt;/span&gt;
+
+  &lt;span class=&quot;Keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;is_a_teenager&lt;/span&gt;
+    &lt;span class=&quot;Keyword&quot;&gt;unless&lt;/span&gt; birth_date &lt;span class=&quot;Keyword&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;13&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;years&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;ago&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; birth_date &lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;20&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;years&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;ago&lt;/span&gt;
+      ...
+    &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;[1] Assuming you've got &lt;code&gt;config.cache_classes&lt;/code&gt; set to false in development mode which is the default&lt;/p&gt;
+
+&lt;p&gt;[2] You can do a lot more with interpolation. Normally the code is interpolated in the context of the instance of the model so you can use any model methods, instance variables etc... When an association is fetched with :include it will be interpolated in the context of the class (since the whole point is to bulk load instances it does not make sense (nor would it work) to work per instance data in there.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://www.spacevatican.org/">
+    <author>
+      <name>fred</name>
+    </author>
+    <id>tag:www.spacevatican.org,2008-09-28:86</id>
+    <published>2008-09-28T13:18:00Z</published>
+    <updated>2008-11-15T22:51:10Z</updated>
+    <category term="Rails"/>
+    <link href="http://www.spacevatican.org/2008/9/28/required-or-not" rel="alternate" type="text/html"/>
+    <title>Required or Not ?</title>
+<content type="html">
+            &lt;p&gt;One of Rails' slightly gnarly areas is all the magic that goes into enabling the automatic reloading of source in development mode&lt;a href=&quot;#note_1&quot;&gt;[1]&lt;/a&gt;. Reloading a class isn't just as simple as reading the source again: that would just reopen the class. While this would allow you to add or change existing methods, it wouldn't allow you to remove methods, change the class an object inherits from, stop including a module and things like that. In the particular context of Rails this would also cause validations, filters and callbacks to be added repeatedly. You also don't want to reload absolutely everything. For example reloading standard ruby libraries would be pointless (and slow) as would be reloading Rails itself and (usually) plugins.&lt;/p&gt;
+
+&lt;p&gt;A related service that Rails' dependencies system provide is autoloading of constants. Rails hooks &lt;code&gt;const_missing&lt;/code&gt;: when an unknown constant is found Rails will try and determine the name of the file containing it (according to Rails' conventions) and search for it in the appropriate folders. After a request (or when you call reload!) Rails unsets the constant. This means that reading the corresponding file again will create a new class rather than reopening the old one. It also means that the next use of that constant will cause &lt;code&gt;const_missing&lt;/code&gt; to be hit again and load the class.&lt;/p&gt;
+
+&lt;h1&gt;require messes with reloading&lt;/h1&gt;
+
+&lt;p&gt;The long and short of this is that Rails needs to track what needs to be reloaded (i.e. which constants it should remove). When a file is loaded via Rails' dependency system, all the constants are stashed away, in Dependencies.autoloaded_constants&lt;a href=&quot;#note_2&quot;&gt;[2]&lt;/a&gt;. At the end of the request all of those constants are removed. But if you have bypassed the Rails dependency system then it won't get that treatment. Here's an example script/console session&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Customer&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;object_id&lt;/span&gt;
+=&amp;gt; &lt;span class=&quot;Constant&quot;&gt;19116470&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; reload!
+&lt;span class=&quot;Variable&quot;&gt;Reloading&lt;/span&gt;...
+=&amp;gt; &lt;span class=&quot;Constant&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Object&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;constants&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;include?&lt;/span&gt;(&lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;Customer&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;)
+=&amp;gt; &lt;span class=&quot;Constant&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Customer&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;object_id&lt;/span&gt;
+=&amp;gt; &lt;span class=&quot;Constant&quot;&gt;18966210&lt;/span&gt;
+&lt;/pre&gt; 
+
+&lt;p&gt;The &lt;code&gt;reload!&lt;/code&gt; function does the reloading that Rails would do at the end of a request. Here everything is happening as normal: we've let Rails handle the loading and after the reload the Customer constant is removed, ensuring we then get a fresh copy of the Customer class.
+Now lets try something different: explicitly require customer.rb:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;customer&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+=&amp;gt; [&lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;Customer&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;]
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Customer&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;object_id&lt;/span&gt;
+=&amp;gt; &lt;span class=&quot;Constant&quot;&gt;19121220&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; reload!
+&lt;span class=&quot;Variable&quot;&gt;Reloading&lt;/span&gt;...
+=&amp;gt; &lt;span class=&quot;Constant&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Customer&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;object_id&lt;/span&gt;
+=&amp;gt; &lt;span class=&quot;Constant&quot;&gt;19121220&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Lo and behold: the Customer class isn't being reloaded. Had you done this in a real app you would find that changes to the customer file weren't being picked up until you restarted the server. Even more confusingly it would be fine until you loaded a file that did such a require but thereafter changes would have no effect, even on pages where previously it worked.&lt;/p&gt;
+
+&lt;h1&gt;Fun with associations&lt;/h1&gt;
+
+&lt;p&gt;A lot of problems happen when you have something hanging onto an old version of a class. One way that can happen in a Rails app is via associations. Suppose our Customer class has an orders association.&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;require&lt;/span&gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;customer&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+=&amp;gt; [&lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;Customer&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;]
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Customer&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;find&lt;/span&gt;(&lt;span class=&quot;Constant&quot;&gt;1&lt;/span&gt;).&lt;span class=&quot;Entity&quot;&gt;orders&lt;/span&gt;
+=&amp;gt; [&lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;&amp;lt;Order id: 1, customer_id: 1&amp;gt;]&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Order&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;object_id&lt;/span&gt;
+=&amp;gt; &lt;span class=&quot;Constant&quot;&gt;18291410&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Customer&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;reflections&lt;/span&gt;[&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;orders&lt;/span&gt;].&lt;span class=&quot;Entity&quot;&gt;klass&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;object_id&lt;/span&gt;
+=&amp;gt; &lt;span class=&quot;Constant&quot;&gt;18291410&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Customer&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;reflections&lt;/span&gt;[&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;orders&lt;/span&gt;].&lt;span class=&quot;Entity&quot;&gt;klass&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;instance_methods&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;ActiveRecord&lt;/span&gt;::&lt;span class=&quot;Entity&quot;&gt;Base&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;instance_methods&lt;/span&gt;
+=&amp;gt; [&lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;build_customer&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;create_customer&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;belongs_to_before_save_for_customer&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;customer&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, 
+&lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;customer=&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;my_instance_method&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;set_customer_target&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;]
+&lt;/pre&gt;
+
+&lt;p&gt;Everything is as we would expect it. &lt;code&gt;Customer.reflections[:orders]&lt;/code&gt; returns an AssociationReflection object which is something that describes an association. It holds data like what kind of association it is, any options that were supplied (eg &lt;code&gt;:foreign_key&lt;/code&gt;, &lt;code&gt;:counter_cache&lt;/code&gt;) and so on. In particular its klass attribute is the ActiveRecord::Base subclass for the association. Here we can see that that class is the same as Order which we would expect.&lt;/p&gt;
+
+&lt;p&gt;The association's class has the methods you would expect: some methods to deal with the customer association that Order has and an instance method we added. So far so good. Lets reload the code:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; reload!
+&lt;span class=&quot;Variable&quot;&gt;Reloading&lt;/span&gt;...
+=&amp;gt; &lt;span class=&quot;Constant&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Customer&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;find&lt;/span&gt;(&lt;span class=&quot;Constant&quot;&gt;1&lt;/span&gt;).&lt;span class=&quot;Entity&quot;&gt;orders&lt;/span&gt;
+=&amp;gt; [&lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;&amp;lt;Order id: 1, customer_id: 1&amp;gt;]&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Superficially things look fine, but if we dig a little deeper, everything has gone horribly wrong. The first clue is this:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Order&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;object_id&lt;/span&gt;
+=&amp;gt; &lt;span class=&quot;Constant&quot;&gt;18680200&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Customer&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;reflections&lt;/span&gt;[&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;orders&lt;/span&gt;].&lt;span class=&quot;Entity&quot;&gt;klass&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;object_id&lt;/span&gt;
+=&amp;gt; &lt;span class=&quot;Constant&quot;&gt;18291410&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;This tells us that the Order class is no longer the same class as the class referenced by the association. Because Order was loaded via the Rails' dependencies system it was reloaded when we did reload! but as we saw before Customer isn't. This causes quite a few problems, for example&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Customer&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;find&lt;/span&gt;(&lt;span class=&quot;Constant&quot;&gt;1&lt;/span&gt;).&lt;span class=&quot;Entity&quot;&gt;orders&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Order&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;new&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;ActiveRecord&lt;/span&gt;::&lt;span class=&quot;Entity&quot;&gt;AssociationTypeMismatch&lt;/span&gt;: &lt;span class=&quot;Variable&quot;&gt;Order&lt;/span&gt;(&lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;18291410) expected, got Order(#18680200)&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Oh noes! When you add a record to a collection Active Record checks that it is of the correct type, but the Customer class is trying to check that the object is an instance of the old Order class, which it isn't. The fun thing about this sort of situation is that it will work fine the first time you view the page after restarting the server, but not the second or following times. Madness!&lt;/p&gt;
+
+&lt;p&gt;There's more stuff too. If we repeat our earlier test to list the instance methods of the association's class we get this:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Customer&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;reflections&lt;/span&gt;[&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;orders&lt;/span&gt;].&lt;span class=&quot;Entity&quot;&gt;klass&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;instance_methods&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;ActiveRecord&lt;/span&gt;::&lt;span class=&quot;Entity&quot;&gt;Base&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;instance_methods&lt;/span&gt;
+=&amp;gt; []
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Customer&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;find&lt;/span&gt;(&lt;span class=&quot;Constant&quot;&gt;1&lt;/span&gt;).&lt;span class=&quot;Entity&quot;&gt;orders&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;customer&lt;/span&gt;
+&lt;span class=&quot;Variable&quot;&gt;NoMethodError&lt;/span&gt;: undefined method &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;`&lt;/span&gt;customer' for #&amp;lt;Class:0x23e34a4&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;They've all gone. This can be more than a little baffling, when a page works fine but reloading it causes methods you know exist to just disappear into thin air. The culprit here is the &lt;code&gt;reset_subclasses&lt;/code&gt; method in Active Record, which as its name implies, clears out classes. It only does this to autoloaded classes, which normally is fine because such classes are just thrown away and never used again, but we're hanging onto this gutted class and trying to use it&lt;a href=&quot;#note_3&quot;&gt;[3]&lt;/a&gt;. Even if this gutting of classes didn't happen you'd still have a lot of confusion: instances of Order retrieved via the association would be the old class and so wouldn't reflect any changes you had made to the source, but instances created directly would.&lt;/p&gt;
+
+&lt;h1&gt;Just don't do it&lt;/h1&gt;
+
+&lt;p&gt;By now you've probably got the message that using require to load your models can cause some weird stuff to happen. Loading classes behind Rails' back just gets things confused. There are two ways to stop this happening:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Just don't require stuff. If you lets Rails' automagic loading do its work none of this will happen&lt;/li&gt;
+&lt;li&gt;If you do need to require stuff explicity, use &lt;code&gt;require_dependency&lt;/code&gt;. This means that Rails is kept in the loop&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Of course require is fine for requiring gems, bits of standard libraries and so on, but using require to load bits of your own application should be viewed with suspicion. It only takes one require somewhere to mess things up, so be careful.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;a href=&quot;#1_source&quot;&gt;[1]&lt;/a&gt; Or to be quite precise, when &lt;code&gt;config.cache_classes&lt;/code&gt; is set to false. If it is set to true (for example in production mode) nothing in this article applies&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#2_source&quot;&gt;[2]&lt;/a&gt; In Rails 2.2 and higher, Dependencies was moved into the ActiveSupport namespace. If you're running that version mentally prepend ActiveSupport:: wherever you see Dependencies. There are a lot of other settings in there that control all of this, for example &lt;code&gt;load_once_paths&lt;/code&gt; and &lt;code&gt;explicitly_unloadable_constants&lt;/code&gt; allow you to control what is reloaded and what isn't.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#3_source&quot;&gt;[3]&lt;/a&gt; As far as I can tell and according to this &lt;a href=&quot;http://groups.google.com/group/rubyonrails-core/browse_thread/thread/3b59ea6ced0d0732/60d5c1d1c4fe2430?lnk=gst&amp;amp;amp;q=reset_subclasses#60d5c1d1c4fe2430&quot;&gt;thread&lt;/a&gt; the exact reason this is necessary is rather lost in the mists of time, possibly an artefact of previous implementations of Rails' dependencies.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://www.spacevatican.org/">
+    <author>
+      <name>fred</name>
+    </author>
+    <id>tag:www.spacevatican.org,2008-09-27:122</id>
+    <published>2008-09-27T09:44:00Z</published>
+    <updated>2008-09-27T09:45:42Z</updated>
+    <category term="Rails"/>
+    <category term="selenium"/>
+    <link href="http://www.spacevatican.org/2008/9/27/selenium-and-firefox-3" rel="alternate" type="text/html"/>
+    <title>Selenium and Firefox 3</title>
+<content type="html">
+            &lt;p&gt;I recently spent a bit of time making our Selenium tests play nicely with Firefox 3 and spent quite a lot of time starting at&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+Preparing Firefox profile...
+&lt;/pre&gt;
+
+&lt;p&gt;Selenium would launch Firefox, and then Firefox would just sit there doing nothing. Eventually some digging around found a &lt;a href=&quot;http://jira.openqa.org/browse/SIDE-171&quot;&gt;ticket&lt;/a&gt; on the Selenium issue tracker. It turns out Selenium installs a tiny little extension into the Firefox profiles it generates that basically just lets selenium kill firefox by telling it to go to a magic chrome url. Firefox extensions specify which versions they are compatible with and the one embedded in selenium had 2.0.0.* as their maximum version (and this is still the case with the latest downloadable release (although you could of course download the nightly builds)).&lt;/p&gt;
+
+&lt;p&gt;It seems that this was the only thing from keeping selenium and Firefox 3 playing nicely together as changing the maximum version to 3.0.* got all our tests passing again with our existing version of selenium (0.9.2).&lt;/p&gt;
+
+&lt;p&gt;All I had to do was extract the relevant files from selenium-server.jar:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+jar xf selenium-server.jar &lt;span class=&quot;Constant&quot;&gt;\&lt;/span&gt;
+customProfileDirCUSTFFCHROME/extensions/readystate@openqa.org/install.rdf
+jar xf selenium-server.jar &lt;span class=&quot;Constant&quot;&gt;\&lt;/span&gt;
+customProfileDirCUSTFFCHROME/extensions/{538F0036-F358-4f84-A764-89FB437166B4}/install.rdf
+jar xf selenium-server.jar &lt;span class=&quot;Constant&quot;&gt;\&lt;/span&gt;
+customProfileDirCUSTFFCHROME/extensions/&lt;span class=&quot;Constant&quot;&gt;\{&lt;/span&gt;503A0CD4-EDC8-489b-853B-19E0BAA8F0A4&lt;span class=&quot;Constant&quot;&gt;\}&lt;/span&gt;/install.rdf 
+jar xf selenium-server.jar &lt;span class=&quot;Constant&quot;&gt;\&lt;/span&gt;
+customProfileDirCUSTFF/extensions/readystate&lt;span class=&quot;Constant&quot;&gt;\@&lt;/span&gt;openqa.org/install.rdf 
+jar xf selenium-server.jar &lt;span class=&quot;Constant&quot;&gt;\&lt;/span&gt;
+customProfileDirCUSTFF/extensions/&lt;span class=&quot;Constant&quot;&gt;\{&lt;/span&gt;538F0036-F358-4f84-A764-89FB437166B4&lt;span class=&quot;Constant&quot;&gt;\}&lt;/span&gt;/install.rdf
+&lt;/pre&gt;
+
+&lt;p&gt;This extracts the files (and the directory structure containing them). To be honest I'm not entirely sure of the difference between all of these extensions - safest bet seems to be changing them all. Now edit all of the .rdf files (they're just text files) and change the maximum version from 2.0.0.* to whatever you want (for example 3.0.*) and put them back in the jar:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+jar uf selenium-server.jar &lt;span class=&quot;Constant&quot;&gt;\&lt;/span&gt;
+customProfileDirCUSTFFCHROME/extensions/readystate@openqa.org/install.rdf
+jar uf selenium-server.jar &lt;span class=&quot;Constant&quot;&gt;\&lt;/span&gt;
+customProfileDirCUSTFFCHROME/extensions/{538F0036-F358-4f84-A764-89FB437166B4}/install.rdf
+jar uf selenium-server.jar &lt;span class=&quot;Constant&quot;&gt;\&lt;/span&gt;
+customProfileDirCUSTFFCHROME/extensions/&lt;span class=&quot;Constant&quot;&gt;\{&lt;/span&gt;503A0CD4-EDC8-489b-853B-19E0BAA8F0A4&lt;span class=&quot;Constant&quot;&gt;\}&lt;/span&gt;/install.rdf 
+jar uf selenium-server.jar &lt;span class=&quot;Constant&quot;&gt;\&lt;/span&gt;
+customProfileDirCUSTFF/extensions/readystate&lt;span class=&quot;Constant&quot;&gt;\@&lt;/span&gt;openqa.org/install.rdf 
+jar uf selenium-server.jar &lt;span class=&quot;Constant&quot;&gt;\&lt;/span&gt;
+customProfileDirCUSTFF/extensions/&lt;span class=&quot;Constant&quot;&gt;\{&lt;/span&gt;538F0036-F358-4f84-A764-89FB437166B4&lt;span class=&quot;Constant&quot;&gt;\}&lt;/span&gt;/install.rdf
+&lt;/pre&gt;
+
+&lt;p&gt;Voila! all done&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://www.spacevatican.org/">
+    <author>
+      <name>fred</name>
+    </author>
+    <id>tag:www.spacevatican.org,2008-09-24:123</id>
+    <published>2008-09-24T10:02:00Z</published>
+    <updated>2008-09-24T10:02:26Z</updated>
+    <category term="Rails: Falling off the Edge"/>
+    <category term="activerecord"/>
+    <link href="http://www.spacevatican.org/2008/9/24/watch-out-for-has_one-through-and-include" rel="alternate" type="text/html"/>
+    <title>Watch out for has_one :through and :include</title>
+<content type="html">
+            &lt;p&gt;I've seen enough people confused about this that it's probably worth broadcasting this slightly more widely. In a nutshell, &lt;code&gt;:include&lt;/code&gt; of has_one :through associations is broken in Rails 2.1. Rails 2.1.1 and higher are fixed. &lt;/p&gt;
+
+&lt;p&gt;As you may recall, &lt;code&gt;:include&lt;/code&gt; takes ones of two different paths.&lt;/p&gt;
+
+&lt;p&gt;In the first (the default) Rails loads parent records first, and will then load all the child record of all those parent ones in one go. Unfortunately in  Rails 2.1 this isn't done quite right and the net effect is that the associations are loaded normally and then preloaded. This was fixed as of
+&lt;a href=&quot;http://github.com/rails/rails/commit/fdeeeaea61bb34040f8da03afa9876171db4b17e&quot;&gt;fdeeeaea&lt;/a&gt; and is included in Rails 2.1.1&lt;/p&gt;
+
+&lt;p&gt;In the second case Rails generates appropriate join statements. This is used when you have conditions or orders on the joined tables and also if you have a count or a sum which uses columns from the joins tables. This just plain wasn't implemented, so it was being treated as a plain old &lt;code&gt;has_one&lt;/code&gt; which results in an angry message from the database about you referencing a non existant column name. This was fixed as of
+&lt;a href=&quot;http://github.com/rails/rails/commit/bff0f5fb6d95c8f844fd6e081f827801df20114c&quot;&gt;bff0f5fb&lt;/a&gt; and like the previous fix is in Rails 2.1.1&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://www.spacevatican.org/">
+    <author>
+      <name>fred</name>
+    </author>
+    <id>tag:www.spacevatican.org,2008-09-08:82</id>
+    <published>2008-09-08T10:25:00Z</published>
+    <updated>2008-09-08T10:39:21Z</updated>
+    <category term="Rails"/>
+    <link href="http://www.spacevatican.org/2008/9/8/railsconf-presentation-code" rel="alternate" type="text/html"/>
+    <title>RailsConf presentation code</title>
+<content type="html">
+            &lt;p&gt;The code from our presentation is now available &lt;a href=&quot;http://www.texperts.com/2008/09/08/code-from-the-railsconf-europe-presentation/&quot;&gt;here&lt;/a&gt;. It's worth a look even if you weren't at our presentation.&lt;/p&gt;
+
+&lt;p&gt;Knock yourselves out!&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://www.spacevatican.org/">
+    <author>
+      <name>fred</name>
+    </author>
+    <id>tag:www.spacevatican.org,2008-09-06:79</id>
+    <published>2008-09-06T10:32:00Z</published>
+    <updated>2008-09-06T10:35:01Z</updated>
+    <category term="Rails"/>
+    <category term="railsconf"/>
+    <link href="http://www.spacevatican.org/2008/9/6/blah" rel="alternate" type="text/html"/>
+    <title>Thoughts on Jeremy's Keynote</title>
+<content type="html">
+            &lt;p&gt;I really enjoyed Jeremy Kemper's talk on wednesday. The sort of talk that has you itching to run home and try out what you've seen. All good stuff. For those of you who weren't there, Jeremy was talking about performance.&lt;/p&gt;
+
+&lt;p&gt;The key point is that it's all about the user experience: how fast do our users think the app is? Part of it is your ruby code (and Jeremy had plenty to say about that, with GC tips, profiling tips etc...) but a huge chunk is the network. A common trick is to bundle up your assets, what with the limit on the number of concurrent loads from a domain and the part that latency plays, loading 1 medium or biggish javascript (or stylesheet file or whatever) is almost always preferable to 5 small files. With 2.1 Rails makes this easy and will bundle up your js for you, but there's another trick you can play.&lt;/p&gt;
+
+&lt;p&gt;You could stick assets like your javascript files on some sort of content distribution network, close to your users wherever they are. This would be an inordinate amount of effort to go to though just to host a few javascript files. Luckily, google has done that for you with their &lt;a href=&quot;http://code.google.com/apis/ajaxlibs/&quot;&gt;Ajax Libraries API&lt;/a&gt;. They are hostting copies of common javascript frameworks, including prototype, scriptaculous, dojo, jquery and mootools. You get to use their content distribution network and can assume they've got all the caching and compression stuff done right. The libraries are all versioned too (ie you say 'give me prototype 1.6.0.1'), so no worries about that.&lt;/p&gt;
+
+&lt;p&gt;There is of course another advantage: instead of your browser caching a copy of prototype.js from every site that uses it, your users will only be caching it once (per version). Chances are when they come to your site it will already be in the cache.&lt;/p&gt;
+
+&lt;p&gt;Jeremy also mentioned the importance of putting yourself in your users shoes and seeing what your webapp is like when viewed through a slow or high(er) latency connection. I described one way of doing this &lt;a href=&quot;/2008/5/29/squeeze-your-pipes&quot;&gt;alternative&lt;/a&gt; a few months ago and it really can be quite the eye-opener.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://www.spacevatican.org/">
+    <author>
+      <name>fred</name>
+    </author>
+    <id>tag:www.spacevatican.org,2008-08-31:68</id>
+    <published>2008-08-31T19:13:00Z</published>
+    <updated>2008-08-31T19:13:26Z</updated>
+    <link href="http://www.spacevatican.org/2008/8/31/ways-in-which-the-console-tricks-you" rel="alternate" type="text/html"/>
+    <title>Ways in which the console tricks you</title>
+<content type="html">
+            &lt;p&gt;IRB, and by extension Rails' script/console is an incredibly useful tool. Being able to explore your objects or an API without having to write and compile a test program each time is absolutely priceless. There are however a  few cases where the console can lead you astray.&lt;/p&gt;
+
+&lt;p&gt;When you evaluate something in the console it will display the result of calling inspect on whatever your statement(s) returned. Inspect is just a function so it can lie to you, be selective about what it shows or even have side effects.&lt;/p&gt;
+
+&lt;p&gt;Prior to Rails 2.0 the inspect function on ActiveRecord::Base dumped pretty much everything known about the object. This could get a bit cumbersome quite easily. For example if an association was loaded then the dump of all those objects would be included in the output taking up pages and pages and adding very little value. Starting with Rails 2.0 only the value of each attribute is listed:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Conversation&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;find&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;first&lt;/span&gt;
+=&amp;gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;&amp;lt;Conversation id: 2, title: nil, created_at: &amp;quot;2008-07-22 00:12:24&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Rails doesn't list all attributes however: it knows which columns exist on that table and uses that information to destroy only those attributes. This often confuses people who are using :select to add attributes as it looks as though attributes aren't there. Oh ye of little faith who do not believe until they have seen!&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; c &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;Support&quot;&gt;Conversation&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;find&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;first&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;select&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;*, 'hello world' as bonus_attribute&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+=&amp;gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;&amp;lt;Conversation id: 2, title: nil, created_at: &amp;quot;2008-07-22 00:12:24&amp;quot;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; c.&lt;span class=&quot;Entity&quot;&gt;bonus_attribute&lt;/span&gt;
+=&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;hello world&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;The extra piggy backed attribute was there all along, ActiveRecord's implementation of inspect just chose not to show it to you. In theory an object's implementation of inspect could do anything it wants. Usually it will be trying to be helpful, but that's not to say it won't mislead you.&lt;/p&gt;
+
+&lt;h1&gt;Side effects&lt;/h1&gt;
+
+&lt;p&gt;Every now and again the following pops up on one the the rails mailing lists or IRC channels:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; conversation.&lt;span class=&quot;Entity&quot;&gt;messages&lt;/span&gt;
+=&amp;gt; [&lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;&amp;lt;Message id: 1, body: nil, conversation_id: 2, created_at: &amp;quot;2008-07-22 00:12:30&amp;quot;]&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;ZOMG! Just doing that loaded the association (or the all objects in the named scope), so doing &lt;code&gt;conversation.messages.find...&lt;/code&gt; will load the collection before doing the find. What a waste! If only it were actually true.&lt;/p&gt;
+
+&lt;p&gt;Association proxies are slippery things. You may have already noticed that they claim to be arrays, look like arrays and yet clearly aren't as they have a whole bunch of extra methods (which aren't singleton methods). A full discussion of association proxies is something there's no time for today, but the basic idea is that they implement specific methods like find (do a find that is scoped to the association) or count  (does a &lt;code&gt;SELECT COUNT(*) FROM ...&lt;/code&gt;). If anything else happens (ie if &lt;code&gt;method_missing&lt;/code&gt; is hit) then they load the association and propagate the called method to the target array. &lt;/p&gt;
+
+&lt;p&gt;When I typed in &lt;code&gt;conversation.messages&lt;/code&gt; the relevant methods were called and an instance of an association proxy was returned. IRB then wanted to display it and so called inspect. Association proxies don't implement that method and so the collection was loaded and inspect called on that. In order words &lt;code&gt;conversation.messages&lt;/code&gt; doesn't actually load the collection, it's what IRB did with it afterwards that did. In a standalone script or program this wouldn't happen at all. Pheww, Rails isn't stupid. &lt;/p&gt;
+
+&lt;p&gt;There's a little trick you can use in cases like this when want to stop irb inspecting something that will have a side effect such as the one described above or because the output from inspect would be very long:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+x&lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; (&lt;span class=&quot;Constant&quot;&gt;1&lt;/span&gt;..&lt;span class=&quot;Constant&quot;&gt;100000&lt;/span&gt;).&lt;span class=&quot;Entity&quot;&gt;to_a&lt;/span&gt;; &lt;span class=&quot;Constant&quot;&gt;false&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Instead of printing several pages of the numbers from 1 to 100000 this just prints false. When irb evaluates that line the last statement is false (you could put anything you want there) and so the return value from that is what irb calls inspect on.&lt;/p&gt;
+
+&lt;h1&gt;Fun with local variables&lt;/h1&gt;
+
+&lt;p&gt;Try the following snippet:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Entity&quot;&gt;eval&lt;/span&gt;(&lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;a=1&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;)
+puts a
+&lt;/pre&gt;
+
+&lt;p&gt;If you paste it into IRB it works just fine, but if you paste it into a script and run that then it won't work (you'll get a undefined local variable or method 'a' ). Local variable scope is one of those things that are just a little bit fiddly in ruby. For example local variables created by eval are only visible from subsequent calls to eval. The big difference here is that ruby loads and parses your script in one go whereas irb does it line by line. The &lt;a href=&quot;http://www.rubycentral.com/pickaxe/irb.html#S4&quot;&gt;pickaxe&lt;/a&gt; has some more discussion on this.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://www.spacevatican.org/">
+    <author>
+      <name>fred</name>
+    </author>
+    <id>tag:www.spacevatican.org,2008-08-23:61</id>
+    <published>2008-08-23T15:59:00Z</published>
+    <updated>2008-08-26T08:37:41Z</updated>
+    <category term="Rails"/>
+    <link href="http://www.spacevatican.org/2008/8/23/modules-aren-t-just-for-instance-methods" rel="alternate" type="text/html"/>
+    <title>Modules aren't just for instance methods</title>
+<content type="html">
+            &lt;p&gt;Modules are great for sharing bits of code across models, controllers etc.. The very basic case, where you just want to share some instance methods is dead easy: just write the methods and include the module. The module gets inserted in your class' list of ancestors and so ruby will look inside it when it needs to find a method. If you're using rails you might also want to share validations on models, filters on controllers and so on. But first something a little simpler.&lt;/p&gt;
+
+&lt;p&gt;Using a module to add class methods is a bit more fiddly than sharing instance methods. Of course you can just include the module inside class &amp;lt;&amp;lt; self, but often we want to add both class and instance methods. Requires two modules and two includes when one cannot exist without the other is a bit messy and repetitive(not to mention error-prone). Luckily, whenever a module is included, a callback is called passing what did the including as an argument. Instead on relying on the programmer to do that second include we can do it ourselves from this callback. This is a fairly standard pattern:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;MyModule&lt;/span&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;ClassMethods&lt;/span&gt;
+    &lt;span class=&quot;Keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;a_class_method&lt;/span&gt;
+    &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;Keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;an_instance_method&lt;/span&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;Keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;self.included&lt;/span&gt;(&lt;span class=&quot;Variable&quot;&gt;base&lt;/span&gt;)
+    base.&lt;span class=&quot;Entity&quot;&gt;extend&lt;/span&gt; &lt;span class=&quot;Variable&quot;&gt;ClassMethods&lt;/span&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Our included function is dead simple, we just want to add our module of class methods. We need to use extend here because include would add them as instance methods, we want to add them as singleton methods on the class, i.e. class methods. If you include this module then you'll gain the methods in MyModule::ClassMethods as class methods. Naming the module ClassMethods is just for ease of reading, you could call it anything you want.&lt;/p&gt;
+
+&lt;p&gt;We could be doing a lot more though. It's important to understand that things like has_many, validates_format_of and so on are just methods. They don't always look like it (which is of course one of the things that makes ruby great for building DSLs), but it's definitely there. Laying to one side issues of protected or private methods,&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Person&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; ActiveRecord::Base&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;SupportFunction&quot;&gt;validates_presence_of&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;email&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;is the same as&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Person&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; ActiveRecord::Base&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;Variable&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;validates_presence_of&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;email&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Person&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; ActiveRecord::Base&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Person&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;validates_presence_of&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;email&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;This is of course  true of all those other things (named_scope, before_filter, verify etc...) that you frequently see in models or controllers: just methods you can call on classes. What a happy coincidence that the included callback gives you a class! This means that we can package up sets of validtions or associations or anything like that into a module. For example, we could have an Auditable module. Things that are auditable have a polymorphic audit_trails association that tracks whenever the object was modified.&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Auditable&lt;/span&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;update_with_audit&lt;/span&gt;(&lt;span class=&quot;Variable&quot;&gt;&lt;span class=&quot;Keyword&quot;&gt;*&lt;/span&gt;args&lt;/span&gt;)
+    returning &lt;span class=&quot;Entity&quot;&gt;update_without_audit&lt;/span&gt;(&lt;span class=&quot;Keyword&quot;&gt;*&lt;/span&gt;args) &lt;span class=&quot;Keyword&quot;&gt;do &lt;/span&gt;|&lt;span class=&quot;Variable&quot;&gt;rows_changed&lt;/span&gt;|
+      &lt;span class=&quot;Keyword&quot;&gt;if&lt;/span&gt; rows_changed &lt;span class=&quot;Keyword&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;0&lt;/span&gt;
+        audit_trails.&lt;span class=&quot;Entity&quot;&gt;create&lt;/span&gt;(...)
+      &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+    &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;Keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;self.included&lt;/span&gt;(&lt;span class=&quot;Variable&quot;&gt;base&lt;/span&gt;)
+     base.&lt;span class=&quot;Entity&quot;&gt;has_many&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;audit_trails&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;as&lt;/span&gt; =&amp;gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;auditable&lt;/span&gt;
+     base.&lt;span class=&quot;Entity&quot;&gt;alias_method_chain&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;update&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;audit&lt;/span&gt;
+   &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;In our included method we use has_many to create the association and we use alias_method_chain to hook the update method (which is used whenever you update a row). Sometimes it's nice to use instance_eval on base to make things look a little neater, for example&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;FooBarish&lt;/span&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;self.included&lt;/span&gt;(&lt;span class=&quot;Variable&quot;&gt;base&lt;/span&gt;)
+    base.&lt;span class=&quot;Entity&quot;&gt;instance_eval&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;do&lt;/span&gt;
+      &lt;span class=&quot;SupportFunction&quot;&gt;validates_presence_of&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;foo&lt;/span&gt;
+      &lt;span class=&quot;SupportFunction&quot;&gt;validates_presence_of&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;bar&lt;/span&gt;
+    &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Whenever you include this module the 2 validations will be defined.&lt;/p&gt;
+
+&lt;p&gt;You could play similar tricks with sets of filters that you want certain controllers to have and all sorts of things. That said, don't go overboard, sometimes regular old subclassing is exactly the right thing, but happily modules will keep you going even when it's not.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://www.spacevatican.org/">
+    <author>
+      <name>fred</name>
+    </author>
+    <id>tag:www.spacevatican.org,2008-08-19:57</id>
+    <published>2008-08-19T22:52:00Z</published>
+    <updated>2008-08-27T10:13:26Z</updated>
+    <category term="Rails"/>
+    <category term="activesupport"/>
+    <link href="http://www.spacevatican.org/2008/8/19/fun-with-class-variables" rel="alternate" type="text/html"/>
+    <title>Fun with class variables</title>
+<content type="html">
+            &lt;p&gt;Class variables are a slightly fiddly bit of ruby. They don't always quite behave the way you expect. ActiveSupport bundles up a large number of helpers to deal with the various cases. They're used extensively throughout the framework where the ability to control how things set at the framework level ripple down to subclasses (ie your models and controllers) is important to get right, but they can be pretty handy in your own apps too.&lt;/p&gt;
+
+&lt;h1&gt;The Basics&lt;/h1&gt;
+
+&lt;p&gt;If you're at all familiar with ruby you'll have heard of @@. @@ is a bit odd because it creates variables that are visible both from the instance and the class. The value is also shared with subclasses. ActiveSupport adds cattr_accessor which  creates the obvious accessor methods and initializes the value to nil. The accessors are created on both the class and instances of it (the instance writer is optional).&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Foo&lt;/span&gt;
+  &lt;span class=&quot;SupportFunction&quot;&gt;cattr_accessor&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;bar&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;Support&quot;&gt;Foo&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;=&amp;gt; nil&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Foo&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;123&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Foo&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;new&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;=&amp;gt; '123'&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Foo&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;new&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;abc&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Foo&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;=&amp;gt; 'abc'&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;If we create a subclass, the value is shared:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Derived&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; Foo&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Foo&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;123&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Derived&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;=&amp;gt; '123'&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Derived&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;abc&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Foo&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;=&amp;gt; 'abc'&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Other slightly odd things can happen:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Base&lt;/span&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;self.bar&lt;/span&gt;
+    &lt;span class=&quot;Variable&quot;&gt;&lt;span class=&quot;Variable&quot;&gt;@@&lt;/span&gt;bar&lt;/span&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;Keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;self.bar=&lt;/span&gt;value
+    &lt;span class=&quot;Variable&quot;&gt;&lt;span class=&quot;Variable&quot;&gt;@@&lt;/span&gt;bar&lt;/span&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Derived&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; Base&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;SupportFunction&quot;&gt;cattr_accessor&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;bar&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Derived2&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; Base&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;SupportFunction&quot;&gt;cattr_accessor&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;bar&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;Support&quot;&gt;Derived&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;123&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Derived2&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;abc&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Derived&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;=&amp;gt; '123'&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;So now the subclasses have independent class variables named @@bar. However if you set Base.bar before the Derived and Derived2 classes are created &lt;a href=&quot;#note_1&quot;&gt;[1]&lt;/a&gt; then everyone will be share the base class' value as before. To summarize it's rather fiddly and often unintuitive. It also does not allow the fairly common pattern of having the base class setting a default value that subclasses can override. If you don't know about this then it can lead to odd situations. You'll have code that works fine in dev mode, but not in production (since in development classes are trashed and recreated between requests which obviously interacts with all this) or tests that pass when run individually but fail when you run several of them at the same time.&lt;/p&gt;
+
+&lt;h1&gt;Classes are objects&lt;/h1&gt;
+
+&lt;p&gt;Classes are no exception in ruby, like most things (everything?) they are objects, and like objects they can have instance variables. These instance variables are just normal instance variables: they don't have the odd scoping rules that @@ variables have. Base classes and derived classes have completely independent values.&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Base&lt;/span&gt;
+  &lt;span class=&quot;Variable&quot;&gt;&lt;span class=&quot;Variable&quot;&gt;@&lt;/span&gt;bar&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;123&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;Variable&quot;&gt;self&lt;/span&gt;
+    &lt;span class=&quot;Keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;bar&lt;/span&gt;
+      &lt;span class=&quot;Variable&quot;&gt;&lt;span class=&quot;Variable&quot;&gt;@&lt;/span&gt;bar&lt;/span&gt;
+    &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+
+    &lt;span class=&quot;Keyword&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;bar=&lt;/span&gt; value
+      &lt;span class=&quot;Variable&quot;&gt;&lt;span class=&quot;Variable&quot;&gt;@&lt;/span&gt;bar&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; value
+    &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Derived&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; Base&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Base&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;=&amp;gt; '123&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Derived&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;=&amp;gt; nil&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Derived&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;abc&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Base&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;bar&lt;/span&gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;=&amp;gt; &amp;quot;123&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Less prone to unwanted surprises, but not without shortfalls as you cannot make a default from a base class propagate down (without resorting to tricks with self.inherited).&lt;/p&gt;
+
+&lt;h1&gt;Inheritable Tricks&lt;/h1&gt;
+
+&lt;p&gt;ActiveSupport adds class_inheritable_accessor. This provides something closer in behaviour to what you might expect: base classes can provide defaults and subclasses inherit those defaults and can overwrite them without affecting other subclasses or the base class.&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Base&lt;/span&gt;
+  class_inheritable_accessor &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;value&lt;/span&gt;
+  &lt;span class=&quot;Variable&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;123&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Derived&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; Base&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Derived2&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; Base&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;Support&quot;&gt;Derived&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;=&amp;gt; '123'&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Derived&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;abc&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Base&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;=&amp;gt; '123'&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Derived2&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;=&amp;gt; '123&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;So far so good. We override the value on derive and didn't perturb anyone else. Unfortunately there are some drawbacks:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+  &lt;span class=&quot;Support&quot;&gt;Base&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;xyz&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;Support&quot;&gt;Derived2&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;=&amp;gt; '123&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Oh dear. Even though Derived2 never overrode any values the change we made to Base didn't propagate. In other words the default values are baked into the subclass at the time that it is created. This is down to the way that class_inheritable_accessor is implemented: The classes have an instance variable @inheritable_attributes (like we saw above) that is a hash with all the attributes. The accessor methods just pull the values in and out of the hash. When a class is subclassed the subclass gets a copy of @inheritable_attributes. Once this has happened, nothing links the base class' attributes with the subclass. This happens via the inherited callback, a consequence of this is that if you override inherited on an ActiveRecord class, a controller etc... without calling super all hell will break loose (since class_inheritable_accessor attributes will not be propagated).&lt;/p&gt;
+
+&lt;h1&gt;Bags of tricks&lt;/h1&gt;
+
+&lt;p&gt;ActiveSupport also provides class_inheritable_array and class_inheritable_hash. They both use class_inheritable_accessor as their underlying mechanism. When you set a class_inheritable_array or a  class_inheritable_hash you are actually concatenating (or merging) with the value inherited from the super class.&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Base&lt;/span&gt;
+  class_inheritable_hash &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;attrs&lt;/span&gt;
+  &lt;span class=&quot;Variable&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;attrs&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; {&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;name&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;Fred&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;}
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Derived&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; Base&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;Variable&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;attrs&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; {&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;export&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;Pain&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;}
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;Support&quot;&gt;Derived&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;attrs&lt;/span&gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;=&amp;gt; {:name =&amp;gt; 'Fred', :export =&amp;gt; 'Pain'}&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;These aren't particularly magic but are a handy shortcut.&lt;/p&gt;
+
+&lt;h1&gt;Delegation for the nation&lt;/h1&gt;
+
+&lt;p&gt;ActiveSupport's final trick is superclass_delegating_accessor, added in rails 2.0.1. At first it appears very similar to class_inheritable_accessor:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Base&lt;/span&gt;
+  superclass_delegating_accessor &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;properties&lt;/span&gt;
+  &lt;span class=&quot;Variable&quot;&gt;self&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;properties&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; []
+&lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;Keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;Entity&quot;&gt;Derived&lt;span class=&quot;EntityInheritedClass&quot;&gt; &lt;span class=&quot;EntityInheritedClass&quot;&gt;&amp;lt;&lt;/span&gt; Base&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;Keyword&quot;&gt;end&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;This time however we can do this:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+  &lt;span class=&quot;Support&quot;&gt;Base&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;properties&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;=&lt;/span&gt; [&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;useless&lt;/span&gt;]
+  &lt;span class=&quot;Support&quot;&gt;Derived&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;properties&lt;/span&gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;=&amp;gt; [:useless]&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;superclass_delegating_accessor creates regular instance variables in the class. The interesting bit is the reader method: it looks at the current class and checks if the appropriate instance variable is defined. If so, it returns it, if not it calls super (ie gets the superclass' instance variable) and so it. It stops when it reaches the class that created the superclass_delegating_accessor.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately it doesn't always behave as you would expect: in place modifications will propagate upwards.&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+  &lt;span class=&quot;Support&quot;&gt;Derived&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;properties&lt;/span&gt; &lt;span class=&quot;Keyword&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt; [&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;derived&lt;/span&gt;]
+  &lt;span class=&quot;Support&quot;&gt;Base&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;properties&lt;/span&gt; &lt;span class=&quot;Comment&quot;&gt;&lt;span class=&quot;Comment&quot;&gt;#&lt;/span&gt;=&amp;gt; [:useless, :derived]&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;Which is just horrible. The example is slightly less contrived when dealing with objects which you tend to modify in place. ActiveResource ran into this with its site property (an instance of URI) and rolls its own thing specially for this property that freezes things so that subclasses don't mess with their parents.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately it's a decidedly quirky corner of ruby. Several different options with subtly different semantics that when they go wrong, go wrong in subtle ways that are easy to overlook and with no clear winner. Be careful!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#1_source&quot;&gt;[1]&lt;/a&gt; The important bit is actually when Derived and Derived2 create their @@bar variable. cattr_accessor does this for you so in this case the variable is created at the same time the class is.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://www.spacevatican.org/">
+    <author>
+      <name>fred</name>
+    </author>
+    <id>tag:www.spacevatican.org,2008-08-17:54</id>
+    <published>2008-08-17T04:44:00Z</published>
+    <updated>2008-08-17T04:46:55Z</updated>
+    <category term="Rails"/>
+    <link href="http://www.spacevatican.org/2008/8/17/counting-on-both-hands" rel="alternate" type="text/html"/>
+    <title>Counting on both hands</title>
+<content type="html">
+            &lt;p&gt;This is more of an SQL hint than anything else, but it's something I've found useful a number of times. If SQL scares you, now's the time to turn back (or crack open a beer - dutch courage).&lt;/p&gt;
+
+&lt;p&gt;More often than not if I'm not displaying or editing something then I'm counting. How many unpaid invoices are there, how many customers to I have who were active in the last 6 months etc...&lt;/p&gt;
+
+&lt;p&gt;I'm sure I'm not teaching anyone anything if I say that Rails has some helpers for this, for example&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Support&quot;&gt;Invoice&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;all&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;conditions&lt;/span&gt; =&amp;gt; {&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;status&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;unpaid&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;}
+&lt;span class=&quot;Support&quot;&gt;Customer&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;count&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;all&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;conditions&lt;/span&gt; =&amp;gt; [&lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;updated_at &amp;gt; ?&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;6&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;months&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;ago&lt;/span&gt;]
+&lt;span class=&quot;Support&quot;&gt;Invoice&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;total&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;conditions&lt;/span&gt; =&amp;gt; {&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;status&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;unpaid&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;}
+&lt;/pre&gt;
+
+&lt;p&gt;From top to bottom this counts the number of unpaid invoices, the number of customers updated in the last 6 months and the total value of all unpaid invoices. Pretty much any option you can stick in a find you can also use with the calculation helpers, for example:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+  &lt;span class=&quot;Support&quot;&gt;Customer&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;weight&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;joins&lt;/span&gt; =&amp;gt; {&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;orders&lt;/span&gt; =&amp;gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;products&lt;/span&gt;}
+  &lt;span class=&quot;Support&quot;&gt;Customer&lt;/span&gt;.&lt;span class=&quot;Entity&quot;&gt;sum&lt;/span&gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;weight&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;joins&lt;/span&gt; =&amp;gt; {&lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;orders&lt;/span&gt; =&amp;gt; &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;products&lt;/span&gt;}, &lt;span class=&quot;Constant&quot;&gt;&lt;span class=&quot;Constant&quot;&gt;:&lt;/span&gt;group&lt;/span&gt; =&amp;gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;customers.id&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;This sums the weight of all the items ordered by our customers (ignoring for now the quantity of a product in a given order). The second example groups this by customer.&lt;/p&gt;
+
+&lt;p&gt;But what if you want to sum (or count) more than one thing? For example I might want to know the number and the total value of the unpaid invoices. You could of course just do one and then the other but that feels a little wasteful: we're asking the database to scan over the corresponding invoices once and then we turn around and ask it do it again. Luckily with some raw sql it's not hard to do this in one go:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+  connection.&lt;span class=&quot;Entity&quot;&gt;select_all&lt;/span&gt; &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;SELECT count(*), SUM(total) from invoices where status='unpaid'&lt;span class=&quot;String&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;But what if you wanted to count more than one thing? For example I might want a count of all outstanding invoices and a count of those with non trivial value (say more than $10). Again easy enough to write as two queries, but it would be nice to get it all back in one go.&lt;/p&gt;
+
+&lt;p&gt;The key to this is understanding the link between summation and counting. To use a technical term, we're interested in indicator functions. If we have:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a set X (which in our terms corresponds to all the rows in a table (or to be more correct, all the rows your query would return if it had no WHERE clause)&lt;/li&gt;
+&lt;li&gt;a subset A (the rows our WHERE clause would select). &lt;/li&gt;
+&lt;li&gt;a function I such that I(x) is 1 if x is in A and 0 if not&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then the cardinality (the number of things in it)  of A is the sum of I(x) for x ranging over X. &lt;/p&gt;
+
+&lt;p&gt;That sounds complicated, but if you think about it, all it is saying is that to count the rows in a table you could use&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+&lt;span class=&quot;Keyword&quot;&gt;SELECT&lt;/span&gt; SUM(&lt;span class=&quot;Constant&quot;&gt;1&lt;/span&gt;) &lt;span class=&quot;Keyword&quot;&gt;from&lt;/span&gt; foos
+&lt;/pre&gt;
+
+&lt;p&gt;Here our indicator function is dead simple: it always returns 1.&lt;/p&gt;
+
+&lt;p&gt;These three queries return the same thing&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;SELECT&lt;/span&gt; COUNT(*) &lt;span class=&quot;Keyword&quot;&gt;from&lt;/span&gt; invoices &lt;span class=&quot;Keyword&quot;&gt;where&lt;/span&gt; status=&lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;pending'&lt;/span&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;SELECT&lt;/span&gt; SUM(&lt;span class=&quot;Constant&quot;&gt;1&lt;/span&gt;) &lt;span class=&quot;Keyword&quot;&gt;from&lt;/span&gt; invoices &lt;span class=&quot;Keyword&quot;&gt;where&lt;/span&gt; status=&lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;pending'&lt;/span&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;SELECT&lt;/span&gt; SUM( IF(status=&lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;pending'&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;0&lt;/span&gt;) &lt;span class=&quot;Keyword&quot;&gt;from&lt;/span&gt; invoices
+&lt;/pre&gt;
+
+&lt;p&gt;The third form is the one we're interested in. Again it shouldn't be hard to spot why it works: for each row that matches we count 1, for all others we count 0. When we add these all up we're just going to get the number of times we counted 1, i.e. the number of matching rows. We wouldn't want to use that on its own (it won't use an index and COUNT(*) probably takes some shortcuts) but in the context of our problem it's just what we need:&lt;/p&gt;
+
+&lt;pre class=&quot;twilight&quot;&gt;
+  &lt;span class=&quot;Keyword&quot;&gt;SELECT&lt;/span&gt; COUNT(*) as count, SUM(IF(total&amp;lt;&lt;span class=&quot;Constant&quot;&gt;10&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;1&lt;/span&gt;, &lt;span class=&quot;Constant&quot;&gt;0&lt;/span&gt;)) as small_invoices &lt;span class=&quot;Keyword&quot;&gt;where&lt;/span&gt; status = &lt;span class=&quot;String&quot;&gt;&lt;span class=&quot;String&quot;&gt;'&lt;/span&gt;pending'&lt;/span&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;will return the number of unpaid invoices and the number of invoices whose total is less than 10 dollars. Here our IF functions are our indicator functions: they return 1 if the condition evaluates to true and 0 if not.&lt;/p&gt;
+
+&lt;h1&gt;Is it actually useful?&lt;/h1&gt;
+
+&lt;p&gt;It's going to depend on your data and queries. The ones shown here are probably too simple for it to be of any use since they also had to be easy to explain. When you push some of your conditions from the WHERE clause into the IF statements you are effectively stopping the database from using any indexes to solve those conditions. This can hurt you, but obviously if you weren't using (or don't have) indexes that the database could have used for those conditions then you haven't lost anything.&lt;/p&gt;
+
+&lt;p&gt;The other basic premise is that if the database going over some set of data it might as well be counting more than one thing. So if in order to find rows satisfying condition A the database needs to scan some subset X and in order to satisfy condition B the database also needs to scan that same subset X then you're onto a winner. If on the other hand the two are completely distinct (or if X is hopelessly big) then you won't be saving much.&lt;/p&gt;
+
+&lt;p&gt;Typically I've used this the most in reporting style applications where having applied a common set of conditions I want to count the number of occurrences of a large number of features. Not something to be using willy-nilly, but a neat trick to have in your toolbox. Use it wisely. And as with all performance things, don't do things blindly just because you read somewhere that it's faster. Profile, measure and so on before and after and come to your own conclusions.&lt;/p&gt;
+          </content>  </entry>
+</feed>

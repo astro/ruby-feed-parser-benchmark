@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+
+<channel>
+	<title>Comunicatoons</title>
+	<atom:link href="http://www.comunicatoons.cl/?feed=rss2" rel="self" type="application/rss+xml" />
+	<link>http://www.comunicatoons.cl</link>
+	<description>Simplemente otro Blog WordPress</description>
+	<pubDate>Mon, 24 Nov 2008 05:56:40 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6.3</generator>
+	<language>en</language>
+			<item>
+		<title>noticia cortita</title>
+		<link>http://www.comunicatoons.cl/?p=3</link>
+		<comments>http://www.comunicatoons.cl/?p=3#comments</comments>
+		<pubDate>Mon, 24 Nov 2008 05:56:40 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[noticias cortas]]></category>
+
+		<guid isPermaLink="false">http://www.comunicatoons.cl/?p=3</guid>
+		<description><![CDATA[aqui hay una noticia que va a ser mas corta  va al costad derecho 
+]]></description>
+			<content:encoded><![CDATA[<p>aqui hay una noticia que va a ser mas corta  va al costad derecho <img src='http://www.comunicatoons.cl/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.comunicatoons.cl/?feed=rss2&amp;p=3</wfw:commentRss>
+		</item>
+		<item>
+		<title>¡Hola mundo!</title>
+		<link>http://www.comunicatoons.cl/?p=1</link>
+		<comments>http://www.comunicatoons.cl/?p=1#comments</comments>
+		<pubDate>Tue, 14 Oct 2008 17:02:02 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[Sin categoría]]></category>
+
+		<guid isPermaLink="false">http://www.comunicatoons.cl/?p=1</guid>
+		<description><![CDATA[Bienvenido a WordPress. Este es tu primer post. Edítalo o borralo ¡y comienza a bloguear!. Gracias por usar nuestra ]]></description>
+			<content:encoded><![CDATA[<p>Bienvenido a WordPress. Este es tu primer post. Edítalo o borralo ¡y comienza a bloguear!. Gracias por usar nuestra <a href="http://ayudawordpress.com!</a>traducción.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.comunicatoons.cl/?feed=rss2&amp;p=1</wfw:commentRss>
+		</item>
+	</channel>
+</rss>

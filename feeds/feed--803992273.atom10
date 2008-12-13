@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Beau Smith</title>
+    <link rel="alternate" type="text/html" href="http://beausmith.com/" />
+    <link rel="self" type="application/atom+xml" href="http://beausmith.com/atom.xml" />
+    <id>tag:beausmith.com,2008-01-23://5</id>
+    <updated>2008-04-10T02:00:09Z</updated>
+    <subtitle>Find me...</subtitle>
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type Pro 4.21-en</generator>
+
+<entry>
+    <title>Data Detectors</title>
+    <link rel="alternate" type="text/html" href="http://beausmith.com/2008/04/data-detectors.php" />
+    <id>tag:beausmith.com,2008://5.53</id>
+
+    <published>2008-04-10T01:16:49Z</published>
+    <updated>2008-04-10T02:00:09Z</updated>
+
+    <summary>Data Detectors is the best feature from upgrading to Leopard 10.5.2 this week. Hover over an event, phone number, or address and you&#8217;ll have an option to add to Address Book or iCal. Watch this video to learn more: Source...</summary>
+    <author>
+        <name>Beau Smith</name>
+        <uri>http://beausmith.com</uri>
+    </author>
+    
+    <category term="apple" label="apple" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="datadetector" label="data detector" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="leopard" label="leopard" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="movie" label="movie" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="tip" label="tip" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en" xml:base="http://beausmith.com/">
+        <![CDATA[<p>Data Detectors is the best feature from upgrading to Leopard 10.5.2 this week.</p>
+
+<p>Hover over an event, phone number, or address and you&#8217;ll have an option to add to Address Book or iCal.</p>
+
+<p>Watch this video to learn more:</p>
+
+<p><embed src="http://movies.apple.com/movies/us/apple/business/tips/apple_business_tips_maildatadetectors_r640-10cie.mov" width="640" height="416" controller="true" autoplay="false" showlogo="false" cache="true"></p>
+
+<p><a href="http://www.apple.com/business/theater/#maildatadetectors">Source</a></p>
+
+<p>Creating this post I learned:</p>
+
+<ul>
+<li>Quicktime controller has height of 16px which must be added to the movie&#8217;s actual height in the embed tag <code>height</code> attribute.</li>
+<li><code>autoplay</code> embed tag attribute is set in user Quicktime prefs, but can be overridden in embed tag. I&#8217;ve set autoplay to true so that you don&#8217;t have to click the video to get it to play.</li>
+<li><code>showlogo</code> embed tag attribute set to <code>false</code> will hide Quicktime logo while movie is loading.</li>
+</ul>
+]]>
+        
+
+    </content>
+</entry>
+
+<entry>
+    <title>Alan Cooper - An Insurgency of Quality</title>
+    <link rel="alternate" type="text/html" href="http://beausmith.com/2008/03/alan-cooper-an-insurgency-of-quality.php" />
+    <id>tag:beausmith.com,2008://5.36</id>
+
+    <published>2008-03-27T00:04:20Z</published>
+    <updated>2008-03-26T23:05:25Z</updated>
+
+    <summary>I was invited to join an IxDA event at HotStudio last night by some members whom I met at SXSW. I wasn&#8217;t quite sure what to expect (and didn&#8217;t do my research about the speaker&#8230; Alan Cooper is the author...</summary>
+    <author>
+        <name>Beau Smith</name>
+        <uri>http://beausmith.com</uri>
+    </author>
+    
+    <category term="alancooper" label="alan cooper" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="design" label="design" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="designengineering" label="design engineering" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="hotstudio" label="hot studio" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="interactiondesign" label="interaction design" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="ixda" label="ixda" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="process" label="process" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="programming" label="programming" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="sixapart" label="six apart" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="video" label="video" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en" xml:base="http://beausmith.com/">
+        <![CDATA[<p>I was invited to join an <a href="http://www.ixda.org/">IxDA</a> event at <a href="http://www.hotstudio.com/">HotStudio</a> last night by some members whom I met at <a href="http://sxsw.org/">SXSW</a>. </p>
+
+<p>I wasn&#8217;t quite sure what to expect (and didn&#8217;t do my research about the speaker&#8230; Alan Cooper is the author of <a href="http://www.amazon.com/exec/obidos/ASIN/0672316498/">The Inmates Are Running the Asylum</a> and <a href="http://www.amazon.com/About-Face-Essentials-Interaction-Design/dp/0470084111/">About Face</a>), but I really wish that I&#8217;d invited my collegues to join as Alan&#8217;s speech was full of tips and concepts that we&#8217;ve been doing at Six Apart&#8230; having the process defined is very helpful.</p>
+
+<p>Here&#8217;s the video. It&#8217;s 40 minutes, but chock full of great insights about success in the digital age.</p>
+
+<p><embed src='http://www.brightcove.tv/playerswf' bgcolor='#FFFFFF' flashVars='initVideoId=1416866797&amp;servicesURL=http://www.brightcove.tv&amp;viewerSecureGatewayURL=https://www.brightcove.tv&amp;cdnURL=http://admin.brightcove.com&amp;autoStart=false' base='http://admin.brightcove.com' name='bcPlayer' width='486' height='412' allowFullScreen='true' allowScriptAccess='always' seamlesstabbing='false' type='application/x-shockwave-flash' swLiveConnect='true' pluginspage='http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash'></embed></p>
+]]>
+        <![CDATA[<p>Notes&#8230;.</p>
+
+<h2>Best-to-market trumps first-to-market:</h2>
+
+<ul>
+<li>Examples
+<ul>
+<li>an ergonomic peeler versus a dinky metal peeler</li>
+<li>some archos jukebox player versus the iPod</li>
+<li>AltaVista versus Google
+<ul>
+<li>We knew that Google was going to get better every single day, so the later you tried it the better it was for us, so we were never in a big hurry to get you to use it today because tomorrow it would be better - Serge Brin</li>
+</ul></li>
+<li>Apple Newton vs PalmPilot</li>
+<li>Powells/Virtual Mo&#8217;s vs Amazon</li>
+<li>Java vs C++</li>
+<li>Converse vs Nike</li>
+</ul></li>
+<li>Quality brings passionate customer loyalty</li>
+<li>Companies that focus on <strong>quality</strong> will succeed in the post-industrial world</li>
+</ul>
+
+<h2>Why is it that &#8220;first to market seems better than best to market&#8221;?</h2>
+
+<ul>
+<li>why do we constantly hear &#8220;innovate and race to ship the product&#8221;?</li>
+<li>innovation is abundant</li>
+<li>innovation = new invention, but has come to mean &#8220;success&#8221; to most biz people</li>
+<li>innovation ≠ success</li>
+<li>success comes from <strong>considered design</strong></li>
+<li>mgmt understands that <strong>design brings value</strong> but fail to integrate it into the high-tech creation process</li>
+<li>many believe that design is not possible from scratch
+rather that it comes from racing to ship and then iterating, which is helishly expensive</li>
+</ul>
+
+<h2>biz people focus on frirst to market rather than best to market be cause they don&#8217;t know how to do &#8220;best&#8221;</h2>
+
+<ul>
+<li>current business processes are based upon methods that were defined in the industrial age</li>
+<li>contempory mgmt skills are industrial age skills that were developed for managing industrial age organizations</li>
+<li>best to market comes about through craftsmanship </li>
+</ul>
+
+<h2>craftsmanship</h2>
+
+<ul>
+<li>ultimate measure of craft is quality</li>
+<li>goal is to get it right, not to get it fast</li>
+<li>craftspeople do it over and over till they get it correct (training, mentoring, etc)</li>
+<li>craftsmanship is a pre-industrial concept only affordanble by the rich</li>
+<li>industrial revolution brought industries of scale and a demise of craft</li>
+</ul>
+
+<h2>Software is not an industrial medium</h2>
+
+<ul>
+<li>doesn&#8217;t have the economies of scale of industry</li>
+<li>no cost of goods sold</li>
+<li>unlimited supply of bits</li>
+<li>no cost of manufacturing labor</li>
+<li>can&#8217;t be served by simi-skilled labor</li>
+</ul>
+
+<h2>Programming is not an industrial age activity</h2>
+
+<ul>
+<li>much in common with pre-industrial craft (but has many unique characteristics of &#8220;post-industrial craft&#8221;)</li>
+<li>programs are made one at a time and each piece is different</li>
+<li>it&#8217;s not scaleable, not formulaic - offshoring doesn&#8217;t work for pre-industrial craft - can&#8217;t drive costs down to get a better quality</li>
+<li>emensly complicated and nuanced and takes years of study</li>
+<li>characterized as not having a lot of innovation</li>
+</ul>
+
+<h2>Post industrial Craft</h2>
+
+<ul>
+<li>filled with innovation</li>
+<li>massive interaction between the &#8220;moving parts&#8221; similar to the moving parts in a jet fighter (sophisticated example of the industrial art)</li>
+<li>no two parts are the same (modularization)</li>
+<li>abstracted notions are presented in abstract notation, patterns of thought inside the heads of people who&#8217;s languages we don&#8217;t speak.</li>
+<li>brittle environment (bugs)</li>
+<li>invisble, inscrutible, intangible (as are the people who create it)</li>
+</ul>
+
+<h2>Programmers are craftsmen</h2>
+
+<ul>
+<li>knowledge workers</li>
+<li>self directed</li>
+<li>respoect competence, not authority</li>
+<li>job satisfaction comes from the quality of their work, not the success of their employer</li>
+<li>often smarter and more highly trained than upper management, which creates conflict</li>
+</ul>
+
+<h2>Management is industrial</h2>
+
+<ul>
+<li>command and control</li>
+<li>tracking through cost accounting</li>
+<li>cost reductions through efficiency - craft has little notion of efficiency when goal is quality</li>
+<li>hierarchical delegation of responsibility to technical specialties
+<ul>
+<li>technical specialties were of minor importance to the strategic goals of the org</li>
+<li>in sw, building software is not a technical specialty of minor importance, it <em>is</em> the organization</li>
+</ul></li>
+<li>in industral behavior was a by-product of functionality, where in post-ind functionality is a by-product of behavior</li>
+<li>programmers can&#8217;t be managed, only faciliatated (Paul Glen - Leading Geeks)</li>
+<li>mgmt based upon hierarchy, auth, span of control&#8230;. doesn&#8217;t admit to facilitation</li>
+<li>geeks approach their job as a problem and solution situation</li>
+</ul>
+
+<h2>the clash of two cultures</h2>
+
+<ul>
+<li>facilitation is not a problem to be solved, rather it&#8217;s a process to undergo</li>
+<li>mgmt &amp; geeks struggle with facilitation because neither are good at it&#8230; </li>
+<li>this clash of cultures gives rise to zero sum tactics, internecine fighting for apparently scarce resources.</li>
+<li>time and money are not scarce, though we&#8217;re confronted with it daily
+<ul>
+<li>venture capitalists with billions desparate to invest effectivly</li>
+<li>google and ipod took plenty of time and came into a mature marketplaces</li>
+</ul></li>
+<li>when you push on a culture, you get wasteful fighing and panic and promotes the idea that we need to race to market due to a scarcity of time.</li>
+</ul>
+
+<h2>A culture of wastefulness</h2>
+
+<ul>
+<li>organization bring product to marketplace and&#8230;
+<ul>
+<li>success - they will nurse the product along for their career</li>
+<li>fail - there was no market for that product and will move to next green field</li>
+</ul></li>
+<li>there are many green pastures in high tech</li>
+<li>we&#8217;re an unreflective profession and we&#8217;re loathed to say that it&#8217;s our fault. easier to blame lack of market</li>
+<li>quest for magic bullet of innovation, but innovation simply doesn&#8217;t get it for you</li>
+</ul>
+
+<h2>Why can&#8217;t biz peeps work w/ post-ind craftsmen</h2>
+
+<ul>
+<li>mgmt science lacks post-ind tools</li>
+<li>impulse is to reduce cost of programming (as if programmers are assembly line workers) which translates to some kind of economy of scale which can be passed on end users</li>
+<li>there are not economies of scale in software, thus reducing cost of programming is reducing quality of product.</li>
+<li>which reduces desireablity - in ind age peeps are willing to get less because they are paying less and getting more.</li>
+<li>no good mgmt tools for software consturction (the pattering of thoughts of people who don&#8217;t think like managers)</li>
+<li>no appropriate tools for accounting - no way to track amount of money comeing in per feature, funtionality, or behavior. ROI can&#8217;t be broken down more granularly than total cost and total revenue. </li>
+<li>no good tools for directing or facilitating programmers by managers&#8230; thus they find a go between a biz/tech person and hinge the strategic heart of their biz to someone who&#8217;s goals may not align with mgmt.</li>
+<li>we now have image of:
+<ul>
+<li>isolated out of touch management org</li>
+<li>knowlege workers aimlessly wandering around trying hard to achive goals which may not be aligned to the strategic goals of the org.</li>
+</ul></li>
+</ul>
+
+<h2>Why interaction designers</h2>
+
+<ul>
+<li>understand biz and tech</li>
+<li>research, blueprints, facilitation for programmers</li>
+<li>help programmers be craftsmen, experience joy of craft, and doing it over and over till it&#8217;s correct, and not backtrack when time to build it</li>
+</ul>
+
+<h2>Assuming the facilitation role</h2>
+
+<ol>
+<li>Plan
+<ul>
+<li>detailed written plan based on documented research and believeable user personas.</li>
+</ul></li>
+<li>Visibilty
+<ul>
+<li>plan provides visiblility, show an image to programmer and biz person what &#8220;done&#8221; is.</li>
+<li>Give them the only way to track progress of when it&#8217;s done.</li>
+<li>A list of features and a timeline don&#8217;t do that.</li>
+<li>A description of behavior in a narritive form, achieving their goals. Understood and committed to by programmers and biz peeps. Both will have buy in which will give all visibility.</li>
+</ul></li>
+<li><p>Confidence</p>
+
+<ul>
+<li>experience of having done it before</li>
+</ul></li>
+<li><p>Frederic Brooks - Mytical Man Month chapter called &#8220;Plan to throw one away&#8221;</p>
+
+<ul>
+<li>not <em>expect</em> to throw one away, plan to build a prototype to answer technical questions (not interaction questions). Build much smaller disposible piece of work to answers in the most efficient method. This is a well known method in the world of craft (work with pine before the burl)</li>
+</ul></li>
+</ol>
+
+<h3>The Dominant Paradigm</h3>
+
+<ol>
+<li>Requirements</li>
+<li>Programming - <strong>do</strong> it all</li>
+</ol>
+
+<h3>Emerging Two-Phase Produce Creation</h3>
+
+<ol>
+<li>Requirements</li>
+<li>Interaction Design - ask &amp; answer: <strong>what</strong> are we going to build?</li>
+<li>Programming - determines how, implement, build, <strong>do</strong> all at the same time.</li>
+</ol>
+
+<h3>Desired Three-Phase Product Creation</h3>
+
+<ol>
+<li>Requirements</li>
+<li>Interaction Design - ask &amp; answer: <strong>what</strong> are we going to build?</li>
+<li>Design Engineering - <strong>How</strong> </li>
+<li>Programming - implement, build, <strong>do</strong></li>
+</ol>
+
+<p>-</p>
+
+<ul>
+<li>Engineers don&#8217;t build bridges they determine <strong>how</strong>, iron workers build bridges.</li>
+<li>In industrial activity the medium of design is paper and math, medium of brige building is iron.</li>
+<li>In sw, the medium of design engineering is code, the production engineering is programming code</li>
+<li>there are diff kinds of code:
+<ul>
+<li>quick code to answer questions: performance, use of facility.</li>
+<li>solid code for globalization, error checking, print support, production use, etc</li>
+</ul></li>
+<li>differnet mindset for each type of programmers</li>
+</ul>
+
+<h2>Designers collaborate while they iterate</h2>
+
+<ol>
+<li>Interaction Desgin - goal: correctness; iterate, collaborate.</li>
+<li>Desgin Engineering - goal: correctness; iterate, collaborate.</li>
+<li>Production Engineering (Programming) - goal: efficiency; clear plan, skilled execution.</li>
+</ol>
+
+<p>-</p>
+
+<ul>
+<li>Because &#8220;correctness&#8221; has been established, the programmer can achieve their goal of efficiency. The one thing that kills production goal of &#8220;efficiencey&#8221; is backtracking.</li>
+<li>Goals for each are their craft, just different kinds.</li>
+<li>Design Engineering looks a lot like Agile methods (iterating rapidly, treading lightly). Agile works well for design engineering (determining how something should be built)&#8230; but are troubled and problematic for Interaction Design or Production Design</li>
+<li>Production Engineering works better with RUP (rational unified process), where everything is set out on paper before doing it.</li>
+</ul>
+
+<h2>How do we do it</h2>
+
+<ul>
+<li>Start small as an example</li>
+<li>enlist programmers &amp; designers</li>
+<li>document your success</li>
+</ul>
+
+<!-- http://ajaxian.com/archives/interaction08-ixds-in-savannah-alan-cooper -->
+<!-- http://www.brightcove.tv/title.jsp?title=1416866797 -->
+]]>
+    </content>
+</entry>
+
+</feed>

@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xml:lang="en">
+  
+  <title type="html">Mirmo Dynamics</title>
+  <subtitle type="html">Rien de grand ne se fit jamais sans enthousiasme.</subtitle>
+  <link href="http://mirmodynamics.com/feed/atom" rel="self" type="application/atom+xml"/>
+  <link href="http://mirmodynamics.com/" rel="alternate" type="text/html"
+  title="Rien de grand ne se fit jamais sans enthousiasme."/>
+  <updated>2008-12-10T13:02:12+01:00</updated>
+  <author>
+    <name>Geoffrey</name>
+  </author>
+  <id>urn:md5:3c15238123283a1c70ad2baec09dfe2f</id>
+  <generator uri="http://www.dotclear.net/">Dotclear</generator>
+  
+    
+  <entry>
+    <title>Why I switched from ZF</title>
+    <link href="http://mirmodynamics.com/post/2008/11/24/Why-I-switched-from-ZF" rel="alternate" type="text/html"
+    title="Why I switched from ZF" />
+    <id>urn:md5:d381f16f37fb19ec4c72aae647d87107</id>
+    <updated>2008-11-24T23:50:00+01:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Coding</dc:subject>
+        <dc:subject>framework</dc:subject><dc:subject>reasons</dc:subject><dc:subject>switch</dc:subject><dc:subject>zend framework</dc:subject>    
+    <content type="html">    &lt;p&gt;Please note all the reasons I'm about to give are the reason I had at the time I quited ZF, that's like 6 months ago or so, so be aware that things may have evolved, and since &lt;strong&gt;this is not a rant&lt;/strong&gt;, I won't even check if they actually changed (as I really don't give a damn). Also, I'm writing this post only because I said I'd write it, I'm not trying to convince anyone, nor am I trying to start a discussion about the pros and cons of ZF.&lt;/p&gt;
+
+
+&lt;p&gt;First, I think the Zend Framework is a bit complex. That's quite vague for a framework of that size, but let me explain. There are a lot of things to know and do before you can even think of really working on your project. Zend Framework has a lot of classes, and you better know a lot of them to get productive.&lt;/p&gt;
+
+
+&lt;p&gt;Which lead to another problem: configuration over convention. This concept is deeply rooted inside the framework, and I think it's just wrong (although I know it's a pro for some people). It forces you to know instead of just being able to guess (and I think knowing &lt;em&gt;how to guess&lt;/em&gt; is very important for a developer), so you just can't install the framework and start working ootb, you have to read docs (well, you always have to read docs, but), you have to read A WHOLE FUCKIN LOTS OF DOCS, and god, it's boring and greatly time-consuming.&lt;/p&gt;
+
+
+&lt;p&gt;Time-consuming, because the documentation is poorly structured. I've always found it hard to find exactly what you need in the documentation. Not sure why (and that's not a point I will expand on, since this is very subjective, and most of other frameworks have equally poorly structured doc).&lt;/p&gt;
+
+
+&lt;p&gt;Now my main point: Zend Framework is nothing more than a Zend sponsored PEAR. You have no tools to ease or speed application development, no coupling between components (yet again, I know this is a pro for some people ;), no code generation, no easy database management, no task handling, etc, etc. So what's the point using a framework if he doesn't really help you developing ? Not much if you ask me (and if you're reading this, we could assume you asked).&lt;/p&gt;
+
+
+&lt;p&gt;Add to all this poorly written components (some of them don't even follow the coding standard !), stupid decisions (i18n exceptions anyone ?) and marketing-drived release policy, and there you are, one less Zend Framework enthusiast (not that it matters anyway).&lt;/p&gt;
+
+
+&lt;p&gt;So thinking about all that, there's a single word that describe exactly why I've been disappointed by ZF: &lt;strong&gt;expectation&lt;/strong&gt;. Zend Framework is just not meeting my expectations, it doesn't fit my needs, that's why I switched to another framework, that, for now, I'm fully satisfied with.&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/11/24/Why-I-switched-from-ZF#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1158</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>Passing arbitrary parameters to a route in symfony</title>
+    <link href="http://mirmodynamics.com/post/2008/11/02/Passing-arbitrary-parameters-to-a-route-in-symfony" rel="alternate" type="text/html"
+    title="Passing arbitrary parameters to a route in symfony" />
+    <id>urn:md5:7954eb5f9f623e4d1fcd8829f2d32adb</id>
+    <updated>2008-11-02T21:12:00+01:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Symfony</dc:subject>
+        <dc:subject>handy</dc:subject><dc:subject>parameters</dc:subject><dc:subject>routing</dc:subject><dc:subject>symfony</dc:subject><dc:subject>tips</dc:subject>    
+    <content type="html">    &lt;p&gt;Parameters are an important parts of routes in symfony, and in any other routing framework for that matter, and everyone knows how to add mandatory or optional parameters to a route. But did you know you can also silently pass arbitrary parameters to a route from the routing definitions ? This may not be a very clear description, so let's take an example. Say you have a tabbed navigation system, and you want to know in your template which tab is the current one. In a perfect world, you could assume one tab corresponds to a module and check this module, but let's say that one tab can contain multiples modules. How are you doing now ? Quite simply actually, by passing a &lt;code&gt;tab&lt;/code&gt; parameter to your route.&lt;/p&gt;
+
+&lt;pre&gt;
+foo_route:
+  url:       /foo
+  param: { tab: foobar }
+
+bar_route:
+  url:       /bar
+  param: { tab: foobar }
+&lt;/pre&gt;
+
+
+&lt;p&gt;Now you can access the tab parameter in your layout:&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;?php $currentTab = $sf_params-&amp;gt;get('tab'); ?&amp;gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;Easy heh ? Of course this kind of parameters is not limited to tell which tab we're currently in, you can, for example, bypass the limitation of a system that requires a particular file to be in a particular location (not that using mod_rewrite would not be more efficient, I just wanted one more example):&lt;/p&gt;
+
+&lt;pre&gt;
+foobar_xml:
+  url:       /a/stupid/url/that/you/cant/change/foobar.xml
+  param: { module: default, action: static, file: &amp;quot;/assets/foobar.xml&amp;quot;, mimetype: &amp;quot;text/xml&amp;quot; }
+&lt;/pre&gt;
+
+
+&lt;p&gt;Here we simply pass the &lt;code&gt;file&lt;/code&gt; and &lt;code&gt;mimetype&lt;/code&gt; parameters to an action that'll take care to serve the right file.&lt;/p&gt;
+
+
+&lt;p&gt;Handy ! But please note that you can't pass such parameters in &lt;code&gt;sfPropelRouteCollection&lt;/code&gt; for now (yup, this a bug, and there's a ticket already).&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/11/02/Passing-arbitrary-parameters-to-a-route-in-symfony#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1150</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>[Pub] Monitoria: track your websites downtime</title>
+    <link href="http://mirmodynamics.com/post/2008/10/29/%5BPub%5D-Monitoria%3A-track-your-websites-downtime" rel="alternate" type="text/html"
+    title="[Pub] Monitoria: track your websites downtime" />
+    <id>urn:md5:201a110af90904ac3bba0bcb85640dfa</id>
+    <updated>2008-10-29T22:40:00+01:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Geekeries</dc:subject>
+        <dc:subject>discount</dc:subject><dc:subject>downtime</dc:subject><dc:subject>friends</dc:subject><dc:subject>kolibria</dc:subject><dc:subject>monitoria</dc:subject><dc:subject>webservice</dc:subject>    
+    <content type="html">    &lt;p&gt;&lt;a href=&quot;http://www.monitorianow.com/&quot;&gt;Monitoria&lt;/a&gt; is a web service developped by &lt;a href=&quot;http://www.kolibria.com/&quot;&gt;some friends of mine&lt;/a&gt; and designed to help you track and minimize downtime on your sites. Excerpt from the homepage:&lt;/p&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;Monitoria is a &lt;a href=&quot;http://www.monitorianow.com/&quot;&gt;website uptime monitoring service&lt;/a&gt; designed to help you detect website downtime which can mean lost revenue and profits.&lt;br /&gt;
+The worst thing is customers who may never return to your website again if they experience difficulties opening your website.&lt;br /&gt;
+&lt;a href=&quot;http://www.monitorianow.com/#offers&quot;&gt;Register now&lt;/a&gt; and take control over downtime today!&lt;br /&gt;
+Let Monitoria monitor your website 24/7/365 and alert you immediately upon your website accessibility, availability or performance problems.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;And because you're smart enough to read my blog, here is a 20% discount coupon code: phpmafia20-87361.&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/10/29/%5BPub%5D-Monitoria%3A-track-your-websites-downtime#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1149</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>PHP's april's fool</title>
+    <link href="http://mirmodynamics.com/post/2008/10/26/PHP-s-april-s-fool" rel="alternate" type="text/html"
+    title="PHP's april's fool" />
+    <id>urn:md5:b00f9114207d4796105a4401b1164b47</id>
+    <updated>2008-10-26T00:13:00+02:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Geekeries</dc:subject>
+        <dc:subject>namespace</dc:subject><dc:subject>php</dc:subject><dc:subject>separator</dc:subject><dc:subject>stupid</dc:subject><dc:subject>wtf</dc:subject>    
+    <content type="html">    &lt;p&gt;&lt;a href=&quot;http://wiki.php.net/rfc/namespaceseparator&quot; title=&quot;http://wiki.php.net/rfc/namespaceseparator&quot;&gt;http://wiki.php.net/rfc/namespacese...&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;wait, we're not April 1st ?&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/10/26/PHP-s-april-s-fool#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1148</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>[Pub] Atomeet: organisez vos soirées entre amis !</title>
+    <link href="http://mirmodynamics.com/post/2008/10/21/%5BPub%5D-Atomeet%3A-organisez-vos-soirees-entre-amis" rel="alternate" type="text/html"
+    title="[Pub] Atomeet: organisez vos soirées entre amis !" />
+    <id>urn:md5:8ce51b39b6b504283e5ac8dbf0d39ba2</id>
+    <updated>2008-10-21T23:59:00+02:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Rubrique à brac</dc:subject>
+        <dc:subject>atomeet</dc:subject><dc:subject>copains</dc:subject><dc:subject>organisation</dc:subject><dc:subject>plumbr</dc:subject><dc:subject>pub</dc:subject><dc:subject>service</dc:subject><dc:subject>web 2.0</dc:subject>    
+    <content type="html">    &lt;p&gt;&lt;a href=&quot;http://www.atomeet.com/&quot;&gt;Atomeet est un service (gratuit) de gestion d'événements&lt;/a&gt; récemment lancé par &lt;a href=&quot;http://plumbr.com/&quot;&gt;Plumbr&lt;/a&gt; (oui oui c'est des potes à moi), et je m'en vais vous en faire la réclame.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href=&quot;http://www.atomeet.com/&quot;&gt;Atomeet&lt;/a&gt;, c'est vachement bien. Sérieusement. Déjà c'est joli (dotclear me fait des misères sur les images donc pas de screenshot, allez voir par vous même), on ne pourra pas dire le contraire. Ensuite, c'est bien foutu: créer un événement s'avère d'une rapidité et d'une simplicité déconcertantes, un titre, une date, un lieu, et c'est parti. Pas d'inscription préalable, pas de blabla inutile, que du bon. Une fois votre événement créé, il vous suffit d'inviter vos amis (avec gestion d'import des contacts gmail, live, etc), qui a leur tour n'ont pas besoin de créer de compte, juste de cliquer sur un lien pour confirmer (ou infirmer) leur présence. Facile non ?&lt;/p&gt;
+
+
+&lt;p&gt;Bien sur &lt;a href=&quot;http://www.atomeet.com/&quot;&gt;atomeet&lt;/a&gt; ne se résume pas a ça, et des tas d'autres fonctionnalitées seront lancées à la fin de la beta (oui, atomeet est un service web 2.0).&lt;/p&gt;
+
+
+&lt;p&gt;En plus le nom est rigolo.&lt;/p&gt;
+
+
+&lt;p&gt;Pas encore convaincu ? Essayez le ! &lt;a href=&quot;http://www.atomeet.com/&quot;&gt;Atomeet c'est rapide, facile et gratuit&lt;/a&gt; :-)&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/10/21/%5BPub%5D-Atomeet%3A-organisez-vos-soirees-entre-amis#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1145</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>Mass vim file opening reloaded</title>
+    <link href="http://mirmodynamics.com/post/2008/10/16/Mass-vim-file-opening-reloaded" rel="alternate" type="text/html"
+    title="Mass vim file opening reloaded" />
+    <id>urn:md5:043b3c3596084fc127d581eb3ee0bb15</id>
+    <updated>2008-10-16T21:20:00+02:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Geekeries</dc:subject>
+        <dc:subject>bash</dc:subject><dc:subject>grep</dc:subject><dc:subject>handy</dc:subject><dc:subject>script</dc:subject><dc:subject>tips</dc:subject><dc:subject>vim</dc:subject>    
+    <content type="html">    &lt;p&gt;Thinking about it, &lt;a href=&quot;http://mirmodynamics.com/post/2008/10/14/Mass-vim-file-opening&quot;&gt;the snippet I posted earlier&lt;/a&gt; was a bit silly as vim can open by itself multiple files way more efficiently. The only benefit from my script is that I don't have to type the &lt;code&gt;--servername&lt;/code&gt; and &lt;code&gt;--remote-silent-tab&lt;/code&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;So let's add some usefulness ! First, when I need this script, it's often that I first grepped the files, and then decide that I want to edit them all. From this point of view, having to pass them as &lt;em&gt;arguments&lt;/em&gt; is not that handy, so we'll add a way to pass them via &lt;code&gt;STDIN&lt;/code&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Also, what if I want to send them to another vim server ? We'll add this ability too.&lt;/p&gt;
+
+
+&lt;p&gt;Here is the resulting script:&lt;/p&gt;
+
+&lt;pre&gt;
+#!/usr/bin/env bash
+
+# set a default SERVERNAME
+SERVERNAME=&amp;quot;ash0&amp;quot;
+
+# look for files on stdin
+if ! [ -t 0 ]; then
+  FILES=`cat /dev/stdin`
+else
+  exit;
+fi;
+
+# now let's check if we want a specific vim server
+if ! [ -z $1 ]; then
+  SERVERNAME=$1
+fi;
+
+# we can now open the files
+/usr/bin/gvim --servername $SERVERNAME --remote-silent-tab $FILES
+&lt;/pre&gt;
+
+
+&lt;p&gt;Tada !&lt;/p&gt;
+
+
+&lt;p&gt;You can now do the followings:&lt;/p&gt;
+
+&lt;pre&gt;
+grep foo | sendtovim
+grep foo | sendtovim grep0
+&lt;/pre&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/10/16/Mass-vim-file-opening-reloaded#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1144</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>Now working at Sensio Labs</title>
+    <link href="http://mirmodynamics.com/post/2008/10/15/Now-working-at-Sensio-Labs" rel="alternate" type="text/html"
+    title="Now working at Sensio Labs" />
+    <id>urn:md5:c3888f52659b587aef0de437e1a6b71b</id>
+    <updated>2008-10-15T20:11:00+02:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Ego</dc:subject>
+        <dc:subject>sensio</dc:subject><dc:subject>symfony</dc:subject><dc:subject>work</dc:subject><dc:subject>zend framework</dc:subject>    
+    <content type="html">    &lt;p&gt;A quick post to tell (for those not knowing already) that I now work at &lt;a href=&quot;http://sensiolabs.com/&quot;&gt;Sensio Labs&lt;/a&gt;, creators of &lt;a href=&quot;http://www.symfony-project.org/&quot;&gt;the symfony framework&lt;/a&gt;. Expect some symfony stuff to be posted regularly \o/&lt;/p&gt;
+
+
+&lt;p&gt;For those wondering, yes that means I'm actually dropping any previously started ZF related development for good, I'll post something soon on why I don't like ZF anymore :-)&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/10/15/Now-working-at-Sensio-Labs#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1143</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>A specific stylesheet for each module</title>
+    <link href="http://mirmodynamics.com/post/2008/10/15/A-specific-stylesheet-for-each-module" rel="alternate" type="text/html"
+    title="A specific stylesheet for each module" />
+    <id>urn:md5:3d62ec1a3d453aff01166ab7a3582263</id>
+    <updated>2008-10-15T00:43:00+02:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Symfony</dc:subject>
+        <dc:subject>configuration</dc:subject><dc:subject>css</dc:subject><dc:subject>stylesheets</dc:subject><dc:subject>symfony</dc:subject><dc:subject>tips</dc:subject><dc:subject>yaml</dc:subject>    
+    <content type="html">    &lt;p&gt;So this is the first post of the newly opened &lt;a href=&quot;http://mirmodynamics.com/category/symfony&quot;&gt;symfony category&lt;/a&gt; of this blog, and I want to make things clear right now: you (most likely) won't find (yet) any &lt;strong&gt;pro&lt;/strong&gt;tip or high level symfony tutorials here, as I'm still in the process of learning symfony. The good news though is that I'm currently assigned an 1.2-DEV project, so you may get some insight at what's up in the dev branch of the framework (especially regarding sfForm) :-)&lt;/p&gt;
+
+
+&lt;p&gt;If your are looking for more complete material on the subject, please redirect yourself to &lt;a href=&quot;http://www.symfony-project.org/&quot;&gt;the official website&lt;/a&gt; (where you can find the documentation and a very interesting blog) or &lt;a href=&quot;http://www.aide-de-camp.org/&quot;&gt;Fabien's blog&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;That said, I think it could be interesting to post all the little things I learn everyday that make development with symfony easier for the everyday php developper that you might be if you made it this far into this post ;-)&lt;/p&gt;
+
+
+&lt;p&gt;Soooo, let's begin the show, with some yaml magic. Yaml I said ? Yaml I said. For those not knowing yet, yaml is the format of choice for symfony's configurations file. So what's the point between configuration files and stylesheets ? Let's say you've got a symfony application (say, frontend), and you'd like a particular module (say, news) in this application to have its own stylesheet in addition of the defaults stylesheets you defined already. Very simple, you start by creating the adequate configuration file:&lt;/p&gt;
+
+&lt;pre&gt;
+cd apps/frontend/modules/news/
+mkdir config
+vi config/view.yml
+&lt;/pre&gt;
+
+
+&lt;p&gt;All you have to do know is declare the stylesheet:&lt;/p&gt;
+
+&lt;pre&gt;
+all:
+  stylesheets: [news]
+&lt;/pre&gt;
+
+
+&lt;p&gt;And that's all, no helper call in the layout, your &lt;code&gt;news.css&lt;/code&gt; will automagically be appended to the &lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt; of your generated html. You can also declare multiples css, or control which actions get a particular css, and even specify to which media they apply:&lt;/p&gt;
+
+&lt;pre&gt;
+all:
+  stylesheets: [news, news_print: { media: print }]
+list:
+  stylesheets: [list]
+&lt;/pre&gt;
+
+
+&lt;p&gt;Handy, heh.&lt;/p&gt;
+
+
+&lt;p&gt;But that's not all ! If you're not that much into yaml, you can use a view helper, directly into your template:&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;?php use_stylesheet('news'); ?&amp;gt;
+&lt;/pre&gt;
+
+
+&lt;p&gt;Or even add it from the controller:&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;?php $this-&amp;gt;getResponse()-&amp;gt;addStylesheet('news'); ?&amp;gt;
+&lt;/pre&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/10/15/A-specific-stylesheet-for-each-module#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1142</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>Mass vim file opening</title>
+    <link href="http://mirmodynamics.com/post/2008/10/14/Mass-vim-file-opening" rel="alternate" type="text/html"
+    title="Mass vim file opening" />
+    <id>urn:md5:d2b7afaa2aaf18ada08b02c96c5185fc</id>
+    <updated>2008-10-14T19:40:00+02:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Geekeries</dc:subject>
+        <dc:subject>grep</dc:subject><dc:subject>handy</dc:subject><dc:subject>script</dc:subject><dc:subject>tips</dc:subject><dc:subject>vim</dc:subject>    
+    <content type="html">    &lt;p&gt;Remember &lt;a href=&quot;http://mirmodynamics.com/post/2006/11/28/Linux-gVim-Rox-filer-Mon-IDE&quot;&gt;my old post about vim and rox-filer&lt;/a&gt; ? Well I've got one tiny and silly addition to it now, I can mass open files from any shell command line, with this little script placed in my &lt;code&gt;~/bin/&lt;/code&gt; (don't forget to &lt;code&gt;chmod +x&lt;/code&gt;):&lt;/p&gt;
+
+&lt;pre&gt;
+for i in $*; do
+  /usr/bin/gvim --servername ash0 --remote-silent-tab $i
+  sleep 1
+done;
+&lt;/pre&gt;
+
+
+&lt;p&gt;The &lt;code&gt;sleep 1&lt;/code&gt; is necessary as vim does not seem to like being flooded with files.&lt;/p&gt;
+
+
+&lt;p&gt;Example usage:&lt;/p&gt;
+
+&lt;pre&gt;
+sendtovim `grep foo *`
+&lt;/pre&gt;
+
+
+&lt;p&gt;Opens in vim all files containing &amp;quot;foo&amp;quot; in the current directory. Who said handy ?&lt;/p&gt;
+
+
+&lt;p&gt;Note: I know have an &lt;a href=&quot;http://mirmodynamics.com/post/2008/10/16/Mass-vim-file-opening-reloaded&quot;&gt;updated and useful version of this script&lt;/a&gt;&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/10/14/Mass-vim-file-opening#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1141</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>Il est bon ton café gringo</title>
+    <link href="http://mirmodynamics.com/post/2008/10/14/Il-est-bon-ton-cafe-gringo" rel="alternate" type="text/html"
+    title="Il est bon ton café gringo" />
+    <id>urn:md5:aec3c2300871dc058907cba8a4f135a6</id>
+    <updated>2008-10-14T00:42:00+02:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Ego</dc:subject>
+        <dc:subject>noob</dc:subject><dc:subject>sensio</dc:subject><dc:subject>symfony</dc:subject><dc:subject>travail</dc:subject>    
+    <content type="html">    &lt;p&gt;Un petit post rapide pour dire (pour ceux qui ne savaient pas déjà) que je bosse désormais chez &lt;a href=&quot;http://sensiolabs.com/&quot;&gt;Sensio Labs&lt;/a&gt;, les créateurs de &lt;a href=&quot;http://www.symfony-project.org/&quot;&gt;symfony&lt;/a&gt;, depuis une bonne grosse semaine maintenant. J'aurai donc bientot plein de tips de noob à vous raconter sur symfony \o/&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/10/14/Il-est-bon-ton-cafe-gringo#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1140</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>Gné fini le japon :(</title>
+    <link href="http://mirmodynamics.com/post/2008/09/30/Gne-fini-le-japon-%3A" rel="alternate" type="text/html"
+    title="Gné fini le japon :(" />
+    <id>urn:md5:6e85856cad30552054f4942f0a742d15</id>
+    <updated>2008-09-30T23:50:00+02:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Travels</dc:subject>
+        <dc:subject>fatigue</dc:subject><dc:subject>japon</dc:subject><dc:subject>maison</dc:subject><dc:subject>rentré</dc:subject>    
+    <content type="html">    &lt;p&gt;Bon voilà je suis à ma maison après un vol long, très long, et franchement, je suis super claqué, donc je vais aller dormir longtemps, ensuite je bloguerais quelques trucs.&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/09/30/Gne-fini-le-japon-%3A#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1139</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>Copain de japon \o/</title>
+    <link href="http://mirmodynamics.com/post/2008/09/19/Copain-de-japon-o/" rel="alternate" type="text/html"
+    title="Copain de japon \o/" />
+    <id>urn:md5:194a598dcb6ee3af6560e596ecba071c</id>
+    <updated>2008-09-19T18:29:00+02:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Travels</dc:subject>
+        <dc:subject>blog</dc:subject><dc:subject>copain</dc:subject><dc:subject>japon</dc:subject>    
+    <content type="html">    &lt;p&gt;Juste histoire de, &lt;a href=&quot;http://bloga2balles.com/&quot;&gt;Le blog de Fabien&lt;/a&gt; un des joyeux lurons de notre bande de touristes :-)&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/09/19/Copain-de-japon-o/#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1138</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>Le japon, un pays formidable, jours 2 et 3</title>
+    <link href="http://mirmodynamics.com/post/2008/09/19/Le-japon-un-pays-formidable-jours-2-et-3" rel="alternate" type="text/html"
+    title="Le japon, un pays formidable, jours 2 et 3" />
+    <id>urn:md5:0ba1dbe9620097eaac53648d095cbf3b</id>
+    <updated>2008-09-19T18:15:00+02:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Travels</dc:subject>
+        <dc:subject>boeuf de kobe</dc:subject><dc:subject>hiroshima</dc:subject><dc:subject>horyuji</dc:subject><dc:subject>japon</dc:subject><dc:subject>misen</dc:subject><dc:subject>nara</dc:subject><dc:subject>shinkansen</dc:subject><dc:subject>sushis</dc:subject><dc:subject>écolières</dc:subject>    
+    <content type="html">    &lt;p&gt;Donc hier, on a fait quoi ? On est allés a &lt;a href=&quot;http://en.wikipedia.org/wiki/Nara,_Nara&quot;&gt;Nara&lt;/a&gt;, en passant par &lt;a href=&quot;http://en.wikipedia.org/wiki/H%C5%8Dry%C5%AB-ji&quot;&gt;Horyuji&lt;/a&gt;. A Horyuji, on a vu le plus vieux batiment en bois du japon, et franchement il est pas mal. Ce qu'on a vu aussi, c'est une invasion d'écolières, et ça c'est franchement pas mal aussi. Ensuite direction Nara donc, pour voir le plus grand batiment en bois du monde (je crois, du japon au moins c'est sur), avec un grand Bouddha a l'intérieur. Vraiment impressionant.&lt;/p&gt;
+
+
+&lt;p&gt;Fin de journée dans le centre de Nara, où on a mangé... du boeuf de Kobe. Alors là, revoyez tous vos standards sur la viande, c'est un peu comme les sushis, ça n'a &lt;strong&gt;RIEN A VOIR&lt;/strong&gt;, c'est juste la meilleure viande que j'ai jamais mangé de ma vie. Là dessus, on a enchainé sur les meilleurs sushis au thon du monde, d'un coup là je crois que je vais arretter les sushis en France...&lt;/p&gt;
+
+
+&lt;p&gt;Ce matin, debout super tôt pour aller a &lt;a href=&quot;http://en.wikipedia.org/wiki/Hiroshima&quot;&gt;Hiroshima&lt;/a&gt; en Shinkansen, voir le mémorial de la paix d'Hiroshima. Mais avant ça, pause petit déjeuner dans une espèce de boutique avec des trucs bizarres qui ressemblaient à des hotdogs avec des sauces bizarres, pas mal du tout ma foi. Puis le musée, après une première partie assez facile, le détail des effets et conséquences de la bombe sont assez difficiles à gérer, c'est assez émouvant, et on en ressort forcément touché.&lt;/p&gt;
+
+
+&lt;p&gt;Après le musée, nous sommes allés sur une île du nom de &lt;a href=&quot;http://en.wikipedia.org/wiki/Miyajima,_Hiroshima&quot;&gt;Miyajima&lt;/a&gt; pour faire la grimpette sur le Mont Misen, a coup de téléphérique et de marche a pied dans les escaliers. Après une bonne heure de montée, nous jouissons d'un panorama exceptionnel sur Hiroshima. S'ensuit une loooooooooooooongue descente d'une grosse heure et demie dans un parcours montagneux forestier assez difficile, et hop retour à Hiroshima par le ferry, un diner a base de Udon rapidement expédié, retour a l'hotel a Osaka et douche bien méritée avant de bloguer.&lt;/p&gt;
+
+
+&lt;p&gt;Bientot des belles photos, ça vient !&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/09/19/Le-japon-un-pays-formidable-jours-2-et-3#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1137</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>Le japon, un pays formidable, jour 1</title>
+    <link href="http://mirmodynamics.com/post/2008/09/18/Le-japon-un-pays-formidable-jour-1" rel="alternate" type="text/html"
+    title="Le japon, un pays formidable, jour 1" />
+    <id>urn:md5:b6faa0b1f552aebcd23334b7192e40d1</id>
+    <updated>2008-09-18T00:48:00+02:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Travels</dc:subject>
+        <dc:subject>japan</dc:subject><dc:subject>namba</dc:subject><dc:subject>osaka</dc:subject><dc:subject>sushis</dc:subject>    
+    <content type="html">    &lt;p&gt;Ohaio du japon les copains ! Je suis en ce moment même dans un charmant (ahah) ryokan post-moderne en périphérie d'Osaka, au Japon donc. Arrivés hier vers midi (heure locale, comptez +7h de décallage depuis la France), un peu fourbus après un vol de 10h et 4h d'escale à Helsinki, mais franchement heureux d'être là... Première impression du japon après une journée à errer dans Osaka: wow. Ce pays semble incroyable. Tous les clichés qu'on peut en avoir ou presque se confirment à un moment ou un autre. L'amabilité des gens, qui semblent tenus pour acquis que tu vas les aider a descendre leur valise de 50kg, la politesse, l'excentricité, la fashionitude, tout ! Après avoir déposé nos affaires a l'hotel, on a un peu marché dans notre quartier d'osaka, qui nous a paru un peu terne, et puis on est allés rejoindre un pote dans le quartier de Namba, et là, le japon s'est ouvert à nous. La profusion de bannières lumineuses, les foules fraiches et bigarrées, les échopes de sushis à même la rue, les salary men complètement défaits...&lt;/p&gt;
+
+
+&lt;p&gt;En parlant de sushis, première étape dans un restaurant située dans un complexe commercial type Lafayette, après un bref passage dans un bar pour une petite asahi accompagnée d'un morceau de bouffe ressemblant a s'y méprendre à du pedigree pal, nous arrivons dans un restaurant a l'entrée duquel il faut se déchausser. Je me retrouve donc pied nu sous une pluie de &lt;em&gt;ohaio gosaimas&lt;/em&gt; et autres exclamations de bienvenues de la part de tout le staff, avec leurs voix de manga, l'impression est assez irréelle, et franchement plaisante. Après quelques difficultés pour commander, nous sommes rejoints par quelques japonais qui étaient non loins de nous dans le bar précédement cité, ce qui semble être suffisant ici pour se faire des gros checks en rigolant fort, et après tout pourquoi pas ? Et voilà qu'arrivent les sushis, et là, c'est toute une vision du monde qui change. Plus jamais je ne verrais les sushis de la même papille. Moi qui pensais avoir gouté les meilleurs sushis du monde à Paris, quel pauvre fol je fais. Aucune, mais alors AUCUNE comparaison n'est possible, il faut le gouter pour le croire. Seul petit bémol, tous les poissons ne sont pas forcément adaptés à nos papilles occidentales... Cela s'est surtout révélés dans le deuxièume restaurant où nous sommes allés, à Namba, et franchement, l'espèce de truc jaune granuleux me reste encore en travers de l'estomac.... Pour la peine, on s'est arrettés au mcdo le plus proche, et une fois qu'on a testé un mcdo du japon, je pense qu'on arrette de raler sur les steacks des mcdo en France, parceque bon... ici c'est comment dire. Aucune comparaison possible :s&lt;/p&gt;
+
+
+&lt;p&gt;Bon voilà, c'est fini pour aujourd'hui, demain je vous parlerai peut-être des charmantes japonaises (donc quelques charmants spécimen font de l'internet aussi pas loin de moi) qui peuplent les rues de ce pays absolument incroyable, et vous pouvez toujours regarder &lt;a href=&quot;http://www.flickr.com/photos/mirmozibang/tags/japan&quot;&gt;les photos pourries que j'ai pris avec mon iphone&lt;/a&gt; en attendant les photos un peu moins pire que Michal (qui n'a pas fait la starac) prend avec son APN.&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/09/18/Le-japon-un-pays-formidable-jour-1#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1136</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>Un petit pas pour l'homme...</title>
+    <link href="http://mirmodynamics.com/post/2008/09/11/Un-petit-pas-pour-l-homme" rel="alternate" type="text/html"
+    title="Un petit pas pour l'homme..." />
+    <id>urn:md5:261055a2881ff8c56a4cf6c2602106d5</id>
+    <updated>2008-09-11T22:03:00+02:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Ego</dc:subject>
+        <dc:subject>blog</dc:subject><dc:subject>changement</dc:subject><dc:subject>digital fashion</dc:subject><dc:subject>mirmodynamics</dc:subject><dc:subject>vie</dc:subject><dc:subject>évolution</dc:subject>    
+    <content type="html">    &lt;p&gt;Les plus perspicaces (ou présents sur &lt;acronym&gt;IRC&lt;/acronym&gt;) l'auront déjà remarqué, Digital Fashion change de nom. Vous lisez désormais &lt;a href=&quot;http://mirmodynamics.com/&quot;&gt;Mirmo Dynamics&lt;/a&gt; \o/ Bien entendu, ce changement de nom s'accompagne d'un changement de domaine, et des redirections qui vont bien depuis les anciennes &lt;acronym&gt;URL&lt;/acronym&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Qu'est-ce que ça change pour vous ? Rien ma foi, pour l'instant. A terme, ce blog est appelé à évoluer un peu. En effet, cela fait un bout de temps qu'il n'évolue pas, les mises à jours sont rares et laborieuses, et ça me peine un peu de voir mon blog dans cet état, donc je profite du nouveau chapitre de ma vie (demain est mon dernier jour à mon job actuel pour info) pour aller de l'avant sur plusieurs fronts, dont mon blog donc. J'ai quelques idées déjà, et je vais y réfléchir un peu avant de mettre tout ça en oeuvre :-)&lt;/p&gt;
+
+
+&lt;p&gt;Au passage, je vais essayer de tenir mon engagement, ce week end devrait voir pleuvoir les posts sur la Suède :-)&lt;/p&gt;
+
+
+&lt;p&gt;&lt;acronym&gt;PS&lt;/acronym&gt;: thanks to &lt;a href=&quot;http://naneau.nl/&quot;&gt;naneau&lt;/a&gt; for having found the second law of mirmo dynamics, and this domain.&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/09/11/Un-petit-pas-pour-l-homme#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1135</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>Traîner pour sécher</title>
+    <link href="http://mirmodynamics.com/post/2008/09/07/Trainer-pour-secher" rel="alternate" type="text/html"
+    title="Traîner pour sécher" />
+    <id>urn:md5:00a2f483ccae10142e1364710a4689ee</id>
+    <updated>2008-09-07T21:22:00+02:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Rubrique à brac</dc:subject>
+        <dc:subject>cadeau</dc:subject><dc:subject>champignon</dc:subject><dc:subject>flickr</dc:subject><dc:subject>made in china</dc:subject><dc:subject>nintendo</dc:subject><dc:subject>peluche</dc:subject><dc:subject>rigolo</dc:subject><dc:subject>traduction</dc:subject>    
+    <content type="html">    &lt;p&gt;Vendredi, on m'a offert une magnifique peluche champignon.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/mirmozibang/2833550000/&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3162/2833550000_9076b863fc_o.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Sur l'étiquette on peut lire ceci:&lt;/p&gt;
+
+
+&lt;blockquote&gt;&lt;p&gt;All new materials.
+Polyester fiber.
+Wash separately without bleach.
+Hand wash in cold water.
+Hang out to dry.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;Et c'est traduit comme suit:&lt;/p&gt;
+
+
+&lt;blockquote&gt;&lt;p&gt;Tous nouveaux matériels.
+Fibre en polyester.
+Se laver séparément sans le décolorant.
+La main se lave dans l'eau froide.
+Traîner pour sécher.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;Ça se passe de commentaire.&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/09/07/Trainer-pour-secher#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1134</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>Démission</title>
+    <link href="http://mirmodynamics.com/post/2008/08/13/Demission" rel="alternate" type="text/html"
+    title="Démission" />
+    <id>urn:md5:b1f40b99a7e532d024bc7bab215fc009</id>
+    <updated>2008-08-13T23:23:00+02:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Ego</dc:subject>
+        <dc:subject>démission</dc:subject><dc:subject>japan</dc:subject><dc:subject>newsweb</dc:subject><dc:subject>travail</dc:subject>    
+    <content type="html">    &lt;p&gt;Alors voilà, j'ai remis ma démission hier à mon &lt;acronym&gt;DT&lt;/acronym&gt;, qui l'a accepté. Je quitterais donc mon emploi le 12 septembre prochain, 4 jours avant de partir pour le japon pendant 2 semaines.&lt;/p&gt;
+
+
+&lt;p&gt;C'est une grosse page de ma vie professionnelle qui se tourne, et un nouveau chapitre qui s'ouvre, avec de nouvelles possibilités à l'horizon. Après deux ans et demi (world record wouhou !) chez Newsweb, j'ai ressenti (a nouveau) le besoin de progresser techniquement, ce qui n'est plus possible pour moi ici. Donc voilà, je commence un nouvel emploi le 6 octobre, qui devrait m'apporter beaucoup sur le plan technique, ainsi que sur d'autres aspects de ma vie professionelle sur lesquels je m'étendrais plus tard. Oh, et je serais aussi ammené à travailler avec des gens sympas (enfin &lt;a href=&quot;http://prendreuncafe.com/blog/&quot;&gt;au moins un&lt;/a&gt;, il me reste encore à découvrir les autres mais ça s'annonce plutot pas mal).&lt;/p&gt;
+
+
+&lt;p&gt;Voilà vous savez tout !&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/08/13/Demission#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1133</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>The Eight Irrestitible Principles of Fun</title>
+    <link href="http://mirmodynamics.com/post/2008/07/28/The-Eight-Irrestitible-Principles-of-Fun" rel="alternate" type="text/html"
+    title="The Eight Irrestitible Principles of Fun" />
+    <id>urn:md5:f72089ca54dc1d2a87e5390a0e98cd3b</id>
+    <updated>2008-07-28T23:57:00+02:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Geekeries</dc:subject>
+        <dc:subject>facile à dire</dc:subject><dc:subject>flash</dc:subject><dc:subject>fun</dc:subject><dc:subject>pmog</dc:subject><dc:subject>rigolo</dc:subject>    
+    <content type="html">    &lt;p&gt;&lt;a href=&quot;http://www.eightprinciples.com/&quot; title=&quot;http://www.eightprinciples.com/&quot;&gt;http://www.eightprinciples.com/&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;(&lt;em&gt;via&lt;/em&gt; &lt;a href=&quot;http://pmog.com/&quot;&gt;pmog&lt;/a&gt;)&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/07/28/The-Eight-Irrestitible-Principles-of-Fun#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1114</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>La Défense / Puteaux a pied</title>
+    <link href="http://mirmodynamics.com/post/2008/07/23/La-Defense-/-Puteaux-a-pied" rel="alternate" type="text/html"
+    title="La Défense / Puteaux a pied" />
+    <id>urn:md5:ae53a18970909942b372c656c62dafb6</id>
+    <updated>2008-07-23T11:51:00+02:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Geekeries</dc:subject>
+        <dc:subject>google maps</dc:subject><dc:subject>inutile</dc:subject><dc:subject>la défense</dc:subject><dc:subject>marcher</dc:subject><dc:subject>puteaux</dc:subject><dc:subject>t2</dc:subject><dc:subject>tram</dc:subject>    
+    <content type="html">    &lt;p&gt;J'aime beaucoup &lt;a href=&quot;http://maps.google.fr/&quot;&gt;google maps&lt;/a&gt;, et pour fêter ça, et à cause des travaux sur le tram qui coupent la circulation entre la défense et puteaux, j'ai fait une &lt;em&gt;map&lt;/em&gt; avec &lt;a href=&quot;http://maps.google.fr/maps/ms?ie=UTF8&amp;amp;hl=fr&amp;amp;t=h&amp;amp;msa=0&amp;amp;msid=107173777445575658543.0004510a4ec7961deb761&amp;amp;ll=48.889503,2.235546&amp;amp;spn=0.00491,0.009345&amp;amp;z=17&amp;amp;mid=1216805983&quot;&gt;le trajet optimal (je pense) entre le parvis de la défense et la station de tram de puteaux&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Voilà c'était la minute &lt;em&gt;je kiff gmaps&lt;/em&gt;.&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/07/23/La-Defense-/-Puteaux-a-pied#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1113</wfw:commentRss>
+      </entry>
+    
+  <entry>
+    <title>About the self keyword in static methods</title>
+    <link href="http://mirmodynamics.com/post/2008/07/14/About-the-self-keyword-in-static-methods" rel="alternate" type="text/html"
+    title="About the self keyword in static methods" />
+    <id>urn:md5:610999c6e714c4d650b1d2ea45ffc0b3</id>
+    <updated>2008-07-14T16:04:00+02:00</updated>
+    <author><name>Geoffrey</name></author>
+        <dc:subject>Coding</dc:subject>
+        <dc:subject>callback</dc:subject><dc:subject>nonsense</dc:subject><dc:subject>php</dc:subject><dc:subject>self</dc:subject><dc:subject>static</dc:subject><dc:subject>weird</dc:subject>    
+    <content type="html">    &lt;p&gt;While setting up a test server for some software I wrote at the office, I eventually noticed the following notice:&lt;/p&gt;
+
+&lt;pre&gt;
+Notice: Use of undefined constant self - assumed 'self'
+&lt;/pre&gt;
+
+
+&lt;p&gt;That surprised me, because 1) I though self were some kind of &amp;quot;superglobal&amp;quot; constant or a special token of the parser, always automatically available in a static method and 2) the code works. So what's up in there ? Let's make a simple test:&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;?php
+
+class foo {
+	static public function bar() {
+		var_dump(is_callable(array('self', 'foobar')));
+		var_dump(is_callable(array(self, 'foobar')));
+
+		var_dump(class_exists('self'));
+		var_dump(class_exists(self));
+
+		self::foobar();
+	}
+
+	static public function foobar() {
+	}
+}
+
+foo::bar();
+
+&lt;/pre&gt;
+
+
+&lt;p&gt;Executing the above code will yeld the following result:&lt;/p&gt;
+
+&lt;pre&gt;
+bool(true)
+
+Notice: Use of undefined constant self - assumed 'self' in /home/geoffreyb/test.php on line 6
+bool(true)
+bool(false)
+
+Notice: Use of undefined constant self - assumed 'self' in /home/geoffreyb/test.php on line 9
+bool(false)
+&lt;/pre&gt;
+
+
+&lt;p&gt;What do we learn here ? Not much actually. It seems like &lt;code&gt;self&lt;/code&gt; as a constant is only available when used with the scope resolution operator, aka double-colon or paamayim nekudotayim. When you want to use it in, for example, a callback definition, use a string representation of self:&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;?php
+
+is_callable(array('self', 'bar'));
+call_user_func(array('self', 'bar'));
+&lt;/pre&gt;
+
+
+&lt;p&gt;Which, while making absolutely no sense at all, works. Another way to get around this is to use the &lt;code&gt;get_class()&lt;/code&gt; function that, without any argument, will return the name of the class you're currently in (&lt;code&gt;foo&lt;/code&gt; in my example).&lt;/p&gt;
+
+
+&lt;p&gt;After a bit more investiging, I found out that there is nothing special about the &lt;em&gt;self&lt;/em&gt; token, which is actually a string token. You can check this very easily with the following code:&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;lt;?php
+
+class foo {
+	static public function bar() {
+		self::foobar();
+	}
+}
+
+var_dump(token_get_all(file_get_contents(__FILE__)));
+&lt;/pre&gt;
+
+
+&lt;p&gt;Somewhere inside the output, you'll find the following piece of text:&lt;/p&gt;
+
+&lt;pre&gt;
+  array(2) {
+    [0]=&amp;gt;
+    int(307)
+    [1]=&amp;gt;
+    string(4) &amp;quot;self&amp;quot;
+  }
+&lt;/pre&gt;
+
+
+&lt;p&gt;And the token id &lt;code&gt;307&lt;/code&gt; is resolved by &lt;code&gt;token_name&lt;/code&gt; to &lt;code&gt;string&lt;/code&gt;.&lt;/p&gt;</content>
+    
+    
+
+    
+          <wfw:comment>http://mirmodynamics.com/post/2008/07/14/About-the-self-keyword-in-static-methods#comment-form</wfw:comment>
+      <wfw:commentRss>http://mirmodynamics.com/feed/atom/comments/1112</wfw:commentRss>
+      </entry>
+  
+</feed>

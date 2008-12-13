@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+
+<channel>
+	<title>Will C.s Arts United Blog</title>
+	<atom:link href="http://willc-writer.arts-united.com/?feed=rss2" rel="self" type="application/rss+xml" />
+	<link>http://willc-writer.arts-united.com</link>
+	<description>Will C.s AU Blog</description>
+	<pubDate>Fri, 16 May 2008 20:19:09 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6.3</generator>
+	<language>en</language>
+			<item>
+		<title>another test page</title>
+		<link>http://willc-writer.arts-united.com/?p=4</link>
+		<comments>http://willc-writer.arts-united.com/?p=4#comments</comments>
+		<pubDate>Fri, 16 May 2008 20:19:09 +0000</pubDate>
+		<dc:creator>Will Coveleskie</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://willc-writer.arts-united.com/?p=4</guid>
+		<description><![CDATA[another test
+page. ! 
+]]></description>
+			<content:encoded><![CDATA[<p>another test<span id="more-4"></span></p>
+<p>page. ! <img src='http://willc-writer.arts-united.com/wp-includes/images/smilies/icon_razz.gif' alt=':P' class='wp-smiley' /></p>
+]]></content:encoded>
+			<wfw:commentRss>http://willc-writer.arts-united.com/?feed=rss2&amp;p=4</wfw:commentRss>
+		</item>
+		<item>
+		<title>test title for aggregation</title>
+		<link>http://willc-writer.arts-united.com/?p=3</link>
+		<comments>http://willc-writer.arts-united.com/?p=3#comments</comments>
+		<pubDate>Fri, 16 May 2008 10:32:55 +0000</pubDate>
+		<dc:creator>Will Coveleskie</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<category><![CDATA[geography]]></category>
+
+		<category><![CDATA[reviews]]></category>
+
+		<guid isPermaLink="false">http://willc-writer.arts-united.com/?p=3</guid>
+		<description><![CDATA[test post for aggregation
+]]></description>
+			<content:encoded><![CDATA[<p>test post for aggregation</p>
+]]></content:encoded>
+			<wfw:commentRss>http://willc-writer.arts-united.com/?feed=rss2&amp;p=3</wfw:commentRss>
+		</item>
+	</channel>
+</rss>

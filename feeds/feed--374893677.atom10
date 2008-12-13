@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?><feed
+  xmlns="http://www.w3.org/2005/Atom"
+  xmlns:thr="http://purl.org/syndication/thread/1.0"
+  xml:lang="en"
+  xml:base="http://laughingmeme.org/wp-atom.php"
+   >
+	<title type="text">Laughing Meme</title>
+	<subtitle type="text">Just another WordPress weblog</subtitle>
+
+	<updated>2008-12-11T23:05:59Z</updated>
+	<generator uri="http://wordpress.org/" version="2.7-beta3-9791">WordPress</generator>
+
+	<link rel="alternate" type="text/html" href="http://laughingmeme.org" />
+	<id>http://laughingmeme.org/feed/atom/</id>
+	<link rel="self" type="application/atom+xml" href="http://laughingmeme.org/feed/atom/" />
+
+			<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[My Flickr API library for PHP]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/12/11/my-flickr-api-library-for-php/" />
+		<id>http://laughingmeme.org/?p=4116</id>
+		<updated>2008-12-11T23:05:59Z</updated>
+		<published>2008-12-11T23:05:59Z</published>
+		<category scheme="http://laughingmeme.org" term="Aside" /><category scheme="http://laughingmeme.org" term="api" /><category scheme="http://laughingmeme.org" term="appengine" /><category scheme="http://laughingmeme.org" term="Code" /><category scheme="http://laughingmeme.org" term="flickr" /><category scheme="http://laughingmeme.org" term="library" /><category scheme="http://laughingmeme.org" term="php" /><category scheme="http://laughingmeme.org" term="python" />		<summary type="html"><![CDATA[I&#8217;m a big believer in Norvig&#8217;s &#8220;Code is liability&#8221; maxim.  Which is how I justify my ugly, but functional Flickr API implementation, in 40 lines of PHP (not the most expressive of languages), which I wrote in about 15 minutes one evening, and I now use for all of my Flickr side projects.  [...]]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/12/11/my-flickr-api-library-for-php/"><![CDATA[<p>I&#8217;m a big believer in Norvig&#8217;s &#8220;Code is liability&#8221; maxim.  Which is how I justify my ugly, but functional Flickr API implementation, in 40 lines of PHP (not the most expressive of languages), which I wrote in about 15 minutes one evening, and I now use for all of my Flickr side projects.  And all apropos of digging through other folks Flickr API impls, trying to get them working on GAE.   Thankfully <a href="http://blech.vox.com/library/post/flickrapi-google-app-engine.html">blech is already there</a>. </p>
+]]></content>
+<link rel="related" href="http://laughingmeme.org/code/flickr.simple.php.txt" />		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/12/11/my-flickr-api-library-for-php/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/12/11/my-flickr-api-library-for-php/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[Griots]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/12/08/griots/" />
+		<id>http://laughingmeme.org/?p=4107</id>
+		<updated>2008-12-08T23:46:24Z</updated>
+		<published>2008-12-08T23:32:43Z</published>
+		<category scheme="http://laughingmeme.org" term="Uncategorized" /><category scheme="http://laughingmeme.org" term="athens" /><category scheme="http://laughingmeme.org" term="collaboration" /><category scheme="http://laughingmeme.org" term="emergence" /><category scheme="http://laughingmeme.org" term="greece" /><category scheme="http://laughingmeme.org" term="griots" /><category scheme="http://laughingmeme.org" term="indymedia" /><category scheme="http://laughingmeme.org" term="news" /><category scheme="http://laughingmeme.org" term="police" /><category scheme="http://laughingmeme.org" term="police state" /><category scheme="http://laughingmeme.org" term="protest" /><category scheme="http://laughingmeme.org" term="tagging" />		<summary type="html"><![CDATA[
+
+A griot (pronounced /g?i.??/ in English or [??i.o] in French, with a silent t) or jeli (djeli or djéli in French spelling) is a West African poet, praise singer, and wandering musician, considered a repository of oral tradition. - Wikipedia
+
+Also an emerging tag for describing the ongoing protest in Athens over a 16 year old [...]]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/12/08/griots/"><![CDATA[<p><a href="http://www.flickr.com/photos/murplejane/3089330615/" title="public anger by murplej@ne - under deconstruction, on Flickr"><img src="http://farm4.static.flickr.com/3168/3089330615_a5c3453610.jpg" width="500" height="334" alt="public anger" /></a></p>
+
+<blockquote><em>A griot (pronounced /g?i.??/ in English or [??i.o] in French, with a silent t) or jeli (djeli or djéli in French spelling) is a West African poet, praise singer, and wandering musician, considered a repository of oral tradition.</em> - <a href="http://en.wikipedia.org/wiki/Griot">Wikipedia</a></blockquote>
+
+<p>Also an emerging tag for describing the ongoing <a href="http://www.indymedia.org/en/2008/12/917365.shtml">protest in Athens</a> over a 16 year old being shot to death at point blank range by Athens policemen.</p>
+
+<p>Being used on <a href="http://flickr.com/photos/tags/griots">Flickr</a>, <a href="http://blogsearch.google.com/blogsearch?q=griots&amp;ie=UTF-8&amp;oe=utf-8&amp;client=firefox-a&amp;um=1&amp;scoring=d">blogs</a>, and <a href="http://search.twitter.com/search?q=griots">Twitter</a> and the meta <a href="http://delicious.com/tag/griots">del.icio.us</a>.  Not being used by the <a href="http://news.google.com/news?hl=en&amp;ned=us&amp;q=griots&amp;ie=UTF-8&amp;scoring=n">corporate media</a> (aside: the trailing &#8217;s&#8217; is lexically significant, classic stemming does not work on tags)</p>
+
+<p>Does anyone know how and where this tag emerged?  </p>
+
+<p>Clearly the next evolution in participatory media (and the only type with a future) is figuring out what the tools to discover, distribute and broadcast these meta-media collaborative objects.  Who is thinking and writing about this?</p>
+
+<p>Photo by <a href="http://www.flickr.com/photos/murplejane/">murplejane</a></p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/12/08/griots/#comments" thr:count="7"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/12/08/griots/feed/atom/" thr:count="7"/>
+		<thr:total>7</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[Random Notes on Twitter Culture]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/12/04/random-notes-on-twitter-culture/" />
+		<id>http://laughingmeme.org/?p=4100</id>
+		<updated>2008-12-05T03:33:18Z</updated>
+		<published>2008-12-05T02:49:52Z</published>
+		<category scheme="http://laughingmeme.org" term="Uncategorized" /><category scheme="http://laughingmeme.org" term="&quot;long form twittering&quot;" /><category scheme="http://laughingmeme.org" term="culture" /><category scheme="http://laughingmeme.org" term="flickr" /><category scheme="http://laughingmeme.org" term="motrinmom" /><category scheme="http://laughingmeme.org" term="twitter" />		<summary type="html"><![CDATA[I tried to fit this all into 140 characters.  I really did.  I couldn&#8217;t do it, not even with disemvoweling.  
+
+#motrinmom
+
+Chatting with a friend who does information architecture for pharmaceutical advertising she was shocked I hadn&#8217;t heard about the &#8220;Motrin Mom&#8221; twitter-in-a-teapot.   I had no idea what she was talking [...]]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/12/04/random-notes-on-twitter-culture/"><![CDATA[<p>I tried to fit this all into 140 characters.  I really did.  I couldn&#8217;t do it, not even with disemvoweling.  </p>
+
+<h3>#motrinmom</h3>
+
+<p>Chatting with a friend who does information architecture for pharmaceutical advertising she was shocked I hadn&#8217;t heard about the <a href="http://search.twitter.com/search?q=motrinmom">&#8220;Motrin Mom&#8221; twitter-in-a-teapot</a>.   I had no idea what she was talking about.   </p>
+
+<p>Apparently <a href="http://74.125.45.132/search?q=cache:4FCdRAjxMTwJ:adage.com/digital/article%3Farticle_id%3D132622+motrin+mom&amp;hl=en&amp;ct=clnk&amp;cd=1&amp;gl=us&amp;client=firefox-a">&#8220;Twittering Critics Brought Down [the] Motrin Mom Campaign&#8221;</a>.  And the entire advertising industry, at least here in New York, is having a fear-of-a-twitter planet moment.  Complete with righteous anger about the &#8220;irrationality of Twitter&#8221;.  (um, hello folks, but didn&#8217;t you build one of the largest global business by cynically manipulating people&#8217;s &#8220;irrationality&#8221;?)</p>
+
+<p>But the part that really caught me off is this didn&#8217;t blip my radar at all.  Maybe I was just offline for it, but as far as I can tell the twittering classes I follow didn&#8217;t peep about this.  I thought Twitter was all about us? (Also, <a href="http://search.twitter.com">Summize</a> you are already awesome and everything, but if you add &#8220;search within people you&#8217;re following&#8221; and &#8220;search within people who follow you&#8221; I promise to love you forever)</p>
+
+<h3>@flickr</h3>
+
+<p>Only tangentially related, I&#8217;m sure <a href="http://twitter.com/flickr/">Tyler Hawkins</a> aka <a href="http://twitter.com/flickr/">@flickr</a> has a very busy <a href="http://twitter.com/replies">@replies tab</a>.  </p>
+
+<p>What I can&#8217;t figure out is <a href="http://search.twitter.com/search?q=%40flickr">if all these folks responding to @flickr</a> are really confused about whether Hawkins is a Flickr representative (he isn&#8217;t and doesn&#8217;t in anyway suggest he might be) or just believe so strongly that &#8220;@flickr&#8221; address twits will arrive in Flickr&#8217;s inbox that reality is irrelevant.  </p>
+
+<p>I&#8217;m torn on whether the assumption that when you speak you will be heard is the ultimate arrogance (and one particularly prevalent on Twitter), or if rather this proves that we&#8217;ve historically worried too much about URIs and that culture has no problem evolving them ad-hoc.</p>
+
+<p>Now if only I had a thesis, rather then a rambling collection of half thoughts.  Which is why I wanted to fit this all into 140 characters.  Alas.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/12/04/random-notes-on-twitter-culture/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/12/04/random-notes-on-twitter-culture/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[Micropayments for an Active Fantasy Life]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/11/22/micropayments-for-an-active-fantasy-life/" />
+		<id>http://laughingmeme.org/?p=4090</id>
+		<updated>2008-11-22T17:09:03Z</updated>
+		<published>2008-11-22T16:52:46Z</published>
+		<category scheme="http://laughingmeme.org" term="Uncategorized" /><category scheme="http://laughingmeme.org" term="brave new world" /><category scheme="http://laughingmeme.org" term="grinding" /><category scheme="http://laughingmeme.org" term="micropayments" /><category scheme="http://laughingmeme.org" term="mturk" /><category scheme="http://laughingmeme.org" term="warcraft" /><category scheme="http://laughingmeme.org" term="wow" />		<summary type="html"><![CDATA[Did you know you get a new mount when you run those last three ALTERs in the frozen north? - Peter Norby
+
+I&#8217;ve been following Andy&#8217;s experiments into pricing of Mechanical Turk (MTurk) jobs.  He found that he had to pay $0.50 per to get someone to upload a photo of themselves.  Which I [...]]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/11/22/micropayments-for-an-active-fantasy-life/"><![CDATA[<blockquote><i>Did you know you get a new mount when you run those last three ALTERs in the frozen north?</i> - Peter Norby</blockquote>
+
+<p>I&#8217;ve been following <a href="http://waxy.org/2008/11/the_faces_of_mechanical_turk/">Andy&#8217;s experiments</a> into pricing of <a href="https://www.mturk.com">Mechanical Turk</a> (MTurk) jobs.  He found that he had to pay $0.50 per to get someone to upload a photo of themselves.  Which I find both interesting and puzzling given that <a href="http://flickr.com/">my day job</a> is largely about coping with folks uploading many (sometimes too many) photos of themselves, sometimes for free, sometimes paying for the privilege to do so.  </p>
+
+<p>MTurk therefore seems to create a problematic context for incentivising people, due, we can assume, to the largely unmotivating nature of small cash payments.  Within the MTurk context the only way to increase the incentive is to increase the financial reward.  Besides being boring, it also overlooks that this is <b>not</b> true in the wider world.</p>
+
+<p><a href="http://www.worldofwarcraft.com/">World of Warcraft</a> has proven that people are willing to pour days and days of time into tasks, menial and complex, for significantly less tangible rewards: &#8220;gold&#8221;, prestige within imaginary organizations, vanity items for paper dolls.  For example, a common daily quest might take a skilled player 15-20 minutes each day for which they will receive 10 gold (10g).  Calculating a generous exchange rate (which exist only as black market) we get a rate of 0.5 cents per gold. For 15-20 minutes time a worker is receiving 5 cents worth of compensation.</p>
+
+<p>There are a number of possible routes where this thinking could take you, informing how you design reward and compensation systems, and how MTurk should evolve.  But for me what this suggests is that <a href="http://blizzard.com">Blizzard&#8217;s</a> business model should be to wave their monthly subscription fee on Warcraft, and instead sell access to folks with HITs (human intelligence tasks) to manufacture compensation within WoW (gold, items, rep, achievements, and titles), with Blizzard acting as the brokers to control the market, manage inflationary forces, and create gold sinks to keep demand high, and therefore a supply of HIT workers.</p>
+
+<p>The real problem with micropayments is that they&#8217;re trying to pay with real money, and money just isn&#8217;t as exciting as gold and a <a href="http://www.wowwiki.com/Murloc_Costume">murloc costume</a>.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/11/22/micropayments-for-an-active-fantasy-life/#comments" thr:count="3"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/11/22/micropayments-for-an-active-fantasy-life/feed/atom/" thr:count="3"/>
+		<thr:total>3</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[WOE &#8220;GeoPlanet&#8221;: HTTP/1.1 406 Not Acceptable]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/11/19/woe-geoplanet-http11-406-not-acceptable/" />
+		<id>http://laughingmeme.org/?p=4087</id>
+		<updated>2008-12-05T01:12:03Z</updated>
+		<published>2008-11-19T23:36:25Z</published>
+		<category scheme="http://laughingmeme.org" term="Uncategorized" /><category scheme="http://laughingmeme.org" term="406" /><category scheme="http://laughingmeme.org" term="api" /><category scheme="http://laughingmeme.org" term="debugging" /><category scheme="http://laughingmeme.org" term="geo" /><category scheme="http://laughingmeme.org" term="geoplanet" /><category scheme="http://laughingmeme.org" term="http" /><category scheme="http://laughingmeme.org" term="rest" /><category scheme="http://laughingmeme.org" term="restful" /><category scheme="http://laughingmeme.org" term="webservice" /><category scheme="http://laughingmeme.org" term="woe" /><category scheme="http://laughingmeme.org" term="yahoo" />		<summary type="html"><![CDATA[
+
+Just putting a note here for the next time I&#8217;m working with the Yahoo! GeoPlanet APIs.  
+
+The conudrum: a HTTP GET on a given resource (http://where.yahooapis.com/v1/place/23511846?appid=$appid) works in the browser, and works with wget from the command line, but fails from within PHP with a 406 Not Acceptable.
+
+The solution, append format=XML to the resource [...]]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/11/19/woe-geoplanet-http11-406-not-acceptable/"><![CDATA[<p><a href="http://www.flickr.com/photos/kellan/3039449386/" title="not simple polygons by kellan, on Flickr"><img src="http://farm4.static.flickr.com/3231/3039449386_ccdfe55571.jpg" width="500" height="263" alt="not simple polygons" /></a></p>
+
+<p>Just putting a note here for the next time I&#8217;m working with the <a href="http://developer.yahoo.com/geo/">Yahoo! GeoPlanet</a> APIs.  </p>
+
+<p>The conudrum: a HTTP GET on a given resource (<code>http://where.yahooapis.com/v1/place/23511846?appid=$appid</code>) works in the browser, and works with <code>wget</code> from the command line, but fails from within PHP with a <code>406 Not Acceptable</code>.</p>
+
+<p>The solution, append <code>format=XML</code> to the resource URL, because the service is blowing out its brains on a missing <code>Accept</code>s header.</p>
+
+<p>And that folks is the magic of REST.</p>
+
+<p><strong>update 2008/12/04:</strong> quick scan of my referer logs suggests this is biting folks using <a href="http://search.cpan.org/~gaas/libwww-perl-5.821/lib/LWP/Simple.pm">lwp-simple</a> and wget particularly hard.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/11/19/woe-geoplanet-http11-406-not-acceptable/#comments" thr:count="2"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/11/19/woe-geoplanet-http11-406-not-acceptable/feed/atom/" thr:count="2"/>
+		<thr:total>2</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[Wordpress: Resetting your password the &#8220;hard&#8221; way.]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/11/19/wordpress-resetting-your-password-the-hard-way/" />
+		<id>http://laughingmeme.org/?p=4084</id>
+		<updated>2008-11-19T23:10:25Z</updated>
+		<published>2008-11-19T23:09:53Z</published>
+		<category scheme="http://laughingmeme.org" term="Uncategorized" /><category scheme="http://laughingmeme.org" term="Code" /><category scheme="http://laughingmeme.org" term="hashing" /><category scheme="http://laughingmeme.org" term="wordpress" />		<summary type="html"><![CDATA[
+
+If you&#8217;ve forgetten your password to your Wordpress install it has a nifty email-a-one-time-key-to-retrieve-password flow built in.  Which for some reason never works on my box. (probably has to do with how I have Postfix setup doing 2ndary MXing)  In the olden days the solution to this problem was to connect your database [...]]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/11/19/wordpress-resetting-your-password-the-hard-way/"><![CDATA[<p><a href="http://www.flickr.com/photos/sarabbit/1937032483/" title="more yarnings by Sarabbit, on Flickr"><img src="http://farm3.static.flickr.com/2288/1937032483_41c5f3965b.jpg" width="500" height="375" alt="more yarnings" /></a></p>
+
+<p>If you&#8217;ve forgetten your password to your <a href="http://wordpress.org">Wordpress</a> install it has a nifty email-a-one-time-key-to-retrieve-password flow built in.  Which for some reason never works on my box. (probably has to do with how I have Postfix setup doing 2ndary MXing)  In the olden days the solution to this problem was to connect your database and <code>UPDATE</code> the <code>user_pass</code> field with an <code>MD5</code> of your desired new password.  </p>
+
+<p>But now we&#8217;re living in the future, so things are more complicated.  I still connect to my database, and manually <code>UPDATE users set user_pass=$hashed where ID=1</code>, but now I need this <a href="http://laughingmeme.org/code/wp_hasher.php.txt">handy script to generate the hashed password</a> for me.  Hopefully the 3 other people in the world this is useful for will find this blog post.</p>
+
+<p>(And now I might start blogging again)</p>
+
+<p>Photo from <a href="http://www.flickr.com/photos/sarabbit">sarabbit</a></p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/11/19/wordpress-resetting-your-password-the-hard-way/#comments" thr:count="2"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/11/19/wordpress-resetting-your-password-the-hard-way/feed/atom/" thr:count="2"/>
+		<thr:total>2</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[Video of electronic voting machines totally failing to accomplish the simplest of tasks.]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/10/29/video-of-electronic-voting-machines-totally-failing-to-accomplish-the-simplest-of-tasks/" />
+		<id>http://laughingmeme.org/?p=4082</id>
+		<updated>2008-10-29T16:56:52Z</updated>
+		<published>2008-10-29T16:56:52Z</published>
+		<category scheme="http://laughingmeme.org" term="Aside" /><category scheme="http://laughingmeme.org" term="politics" /><category scheme="http://laughingmeme.org" term="video" /><category scheme="http://laughingmeme.org" term="voting" />		<summary type="html"><![CDATA[The current crop of electronic voting machines are so bad it&#8217;s criminal, and the companies that manufactured them should be put out of business on the grounds of constituting a clear and present danger to our national security.
+]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/10/29/video-of-electronic-voting-machines-totally-failing-to-accomplish-the-simplest-of-tasks/"><![CDATA[<p>The current crop of electronic voting machines are so bad it&#8217;s criminal, and the companies that manufactured them should be put out of business on the grounds of constituting a clear and present danger to our national security.</p>
+]]></content>
+<link rel="related" href="http://www.youtube.com/watch?v=0Q9NSVUu8nk" />		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/10/29/video-of-electronic-voting-machines-totally-failing-to-accomplish-the-simplest-of-tasks/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/10/29/video-of-electronic-voting-machines-totally-failing-to-accomplish-the-simplest-of-tasks/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[Twitter / Tower Bridge:  I am opening for the Rainbow Warrior, which is passing upstream.]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/10/21/twitter-tower-bridge-i-am-opening-for-the-rainbow-warrior-which-is-passing-upstream/" />
+		<id>http://laughingmeme.org/?p=4079</id>
+		<updated>2008-10-21T13:47:46Z</updated>
+		<published>2008-10-21T13:47:46Z</published>
+		<category scheme="http://laughingmeme.org" term="Aside" /><category scheme="http://laughingmeme.org" term="cities that talk" /><category scheme="http://laughingmeme.org" term="green peace" /><category scheme="http://laughingmeme.org" term="rainbow warrior" /><category scheme="http://laughingmeme.org" term="the future" /><category scheme="http://laughingmeme.org" term="tower bridge" /><category scheme="http://laughingmeme.org" term="twitter" />		<summary type="html"><![CDATA[Tower Bridge is my favorite account on Twitter.  I didn&#8217;t realize the Rainbow Warrior II was still out there.
+]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/10/21/twitter-tower-bridge-i-am-opening-for-the-rainbow-warrior-which-is-passing-upstream/"><![CDATA[<p>Tower Bridge is my favorite account on Twitter.  I didn&#8217;t realize the Rainbow Warrior II was still out there.</p>
+]]></content>
+<link rel="related" href="http://twitter.com/towerbridge/statuses/968703378" />		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/10/21/twitter-tower-bridge-i-am-opening-for-the-rainbow-warrior-which-is-passing-upstream/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/10/21/twitter-tower-bridge-i-am-opening-for-the-rainbow-warrior-which-is-passing-upstream/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[Blizzard calendaring, and email. Next: spreadsheets!]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/10/15/blizzard-calendaring-and-email-next-spreadsheets/" />
+		<id>http://laughingmeme.org/2008/10/15/blizzard-calendaring-and-email-next-spreadsheets/</id>
+		<updated>2008-10-16T04:20:25Z</updated>
+		<published>2008-10-15T14:14:11Z</published>
+		<category scheme="http://laughingmeme.org" term="Uncategorized" /><category scheme="http://laughingmeme.org" term="calendaring" /><category scheme="http://laughingmeme.org" term="warcraft" /><category scheme="http://laughingmeme.org" term="wow" />		<summary type="html"><![CDATA[
+
+And in calendaring/scheduling news&#8230;., originally uploaded by kellan.
+
+
+Been a while since we&#8217;ve had any calendaring/scheduling news here on LM.  So I&#8217;m fulfilling my calendaring dork credentials by pointing out that with a certain glee, that Blizzard just rolled out a calendaring engine to 15 million people yesterday. 
+
+Pictured here with their proprietary mail system, [...]]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/10/15/blizzard-calendaring-and-email-next-spreadsheets/"><![CDATA[<p><a href="http://www.flickr.com/photos/kellan/2943786557/" title="photo sharing"><img src="http://farm4.static.flickr.com/3246/2943786557_89bce71b5f.jpg" class="flickr-photo" alt="" /></a></p>
+
+<p><span class="flickr-caption"><a href="http://www.flickr.com/photos/kellan/2943786557/">And in calendaring/scheduling news&#8230;.</a>, originally uploaded by <a href="http://www.flickr.com/people/kellan/">kellan</a>.</span>
+</div></p>
+
+<p>Been a while since we&#8217;ve had any <a href="http://laughingmeme.org/tag/calendaring/">calendaring/scheduling</a> news here on <a href="http://laughingmeme.org">LM</a>.  So I&#8217;m fulfilling my calendaring dork credentials by pointing out that with a certain glee, that Blizzard just rolled out a <a href="http://www.worldofwarcraft.com/info/basics/calendar.xml">calendaring engine</a> to 15 million people yesterday. </p>
+
+<p>Pictured here with their proprietary mail system, Blizzard is well on its way to building a full PIM/productivity suite for an alternate universe.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/10/15/blizzard-calendaring-and-email-next-spreadsheets/#comments" thr:count="3"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/10/15/blizzard-calendaring-and-email-next-spreadsheets/feed/atom/" thr:count="3"/>
+		<thr:total>3</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[Vermont Fall Colors]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/10/13/vermont-fall-colors/" />
+		<id>http://laughingmeme.org/?p=4070</id>
+		<updated>2008-10-13T14:40:57Z</updated>
+		<published>2008-10-13T14:32:53Z</published>
+		<category scheme="http://laughingmeme.org" term="Uncategorized" /><category scheme="http://laughingmeme.org" term="personal" /><category scheme="http://laughingmeme.org" term="photos" /><category scheme="http://laughingmeme.org" term="vermont" />		<summary type="html"><![CDATA[Jasmine has a set of photos up from the short road trip we took with my parents to southern Vermont to see the changing of the leaves. 
+
+
+
+Some of my earliest photos on Flickr are of going to see fall colors in VT and NH, with our friends Rob and Rima, in October 2004.  [...]]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/10/13/vermont-fall-colors/"><![CDATA[<p>Jasmine has a <a href="http://flickr.com/photos/curlyjazz/sets/72157607986575438/">set of photos</a> up from the short road trip we took with my parents to southern Vermont to see the <a href="http://flickr.com/photos/curlyjazz/sets/72157607986575438/">changing of the leaves</a>. </p>
+
+<p><a href="http://flickr.com/photos/curlyjazz/sets/72157607986575438/" title="IMG_8939 by curlyjazz, on Flickr"><img src="http://farm4.static.flickr.com/3033/2937216655_d30bb899c5.jpg" width="500" height="375" alt="IMG_8939" /></a></p>
+
+<p>Some of my <a href="http://flickr.com/photos/kellan/archives/date-taken/2004/10/10/">earliest photos on Flickr</a> are of going to see fall colors in VT and NH, with our friends Rob and Rima, in October 2004.  (whose son Elias was a month old yesterday)</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/10/13/vermont-fall-colors/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/10/13/vermont-fall-colors/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[A Brooklyn Weekend Ride]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/10/12/a-brooklyn-weekend-ride/" />
+		<id>http://laughingmeme.org/?p=4067</id>
+		<updated>2008-10-12T22:41:55Z</updated>
+		<published>2008-10-12T22:40:41Z</published>
+		<category scheme="http://laughingmeme.org" term="Uncategorized" /><category scheme="http://laughingmeme.org" term="brooklyn" /><category scheme="http://laughingmeme.org" term="personal" /><category scheme="http://laughingmeme.org" term="photos" /><category scheme="http://laughingmeme.org" term="weekend" />		<summary type="html"><![CDATA[Took the bike out for a spin on what might be the last truly hot and sunny weekend of the year.
+
+Head out in search of the fabled Red Hook ball field food vendors.  For 30 years they&#8217;ve been congregating on the weekends in Red Hook to feed the hordes who show up to play [...]]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/10/12/a-brooklyn-weekend-ride/"><![CDATA[<p>Took the bike out for a spin on what might be the last truly hot and sunny weekend of the year.</p>
+
+<p>Head out in search of the fabled <a href="http://www.yelp.com/biz/red-hook-ball-fields-brooklyn">Red Hook ball field food vendors</a>.  For 30 years they&#8217;ve been congregating on the weekends in Red Hook to feed the hordes who show up to play and watch soccer.  And its widely agreed to be the best Mexican and Latin American food in the 5 boroughs.</p>
+
+<p>Last year they had a brush with extinction as the city, in its bid to clean up the neighborhood and make it yuppy/Ikea safe shut down the proceedings citing sanitation issues.  Eventually a compromise was struck, and a handful of the vendors are back, now in plumbed trucks.  The food is still very very good, but their numbers are reduced.  My favorite was the pupusas <a href="http://en.wikipedia.org/wiki/Loroco">loroco</a> con queso.</p>
+
+<p><a href="http://www.flickr.com/photos/kellan/2932340770/" title="Red hook ball park pupusa by kellan, on Flickr"><img src="http://farm4.static.flickr.com/3045/2932340770_d3b6c594fb.jpg" width="500" height="375" alt="Red hook ball park pupusa" /></a></p>
+
+<p>But even before that a flat tire drove me into the <a href="http://www.yelp.com/biz/the-bike-shop-brooklyn">The Bike Shop</a> and the <a href="http://www.yelp.com/biz/the-coffee-den-brooklyn">Coffee Den</a> across the way, where they serve a decent cup of Gorilla.  Need to get those kevlar tires.</p>
+
+<p><a href="http://www.flickr.com/photos/kellan/2931327187/" title="electronic hearth in the age of irony by kellan, on Flickr"><img src="http://farm4.static.flickr.com/3073/2931327187_dea4d4b89f.jpg" width="500" height="375" alt="electronic hearth in the age of irony" /></a></p>
+
+<p>From there we walked along the water front, dramatically changed from our last visit two years ago.  And found to our glee that <a href="http://www.keylime.com/home.html">Steve&#8217;s</a> was still serving their swingles, frozen chocolate dipped key lime pie on a stick.</p>
+
+<p><a href="http://www.flickr.com/photos/kellan/2932550558/" title="Steve's by kellan, on Flickr"><img src="http://farm4.static.flickr.com/3193/2932550558_e45c517406.jpg" width="375" height="500" alt="Steve's" /></a></p>
+
+<p>On the ride back I wandered into <a href="http://www.fortgreenepark.org/">Fort Greene park</a>, and wondered if I&#8217;d found  a portal back to Dolores Park.  So startled I forgot to take a photo.</p>
+
+<p>And then, at the end of the 13 mile loop, blocks from home, tripped over a fafi and Koralie piece, paint not quite dry. </p>
+
+<p><a href="http://www.flickr.com/photos/kellan/2931884369/" title="fafi by kellan, on Flickr"><img src="http://farm4.static.flickr.com/3213/2931884369_d85bd0f08f.jpg" width="500" height="375" alt="fafi" /></a></p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/10/12/a-brooklyn-weekend-ride/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/10/12/a-brooklyn-weekend-ride/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[&#8220;A box of books labeled &#8220;Free Books&#8221; is deposited at various 14th Street locations. A seeming act of generosity, the artist has removed the last few pages from each book&#8230;&#8221;]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/10/02/a-box-of-books-labeled-free-books-is-deposited-at-various-14th-street-locations-a-seeming-act-of-generosity-the-artist-has-removed-the-last-few-pages-from-each-book/" />
+		<id>http://laughingmeme.org/?p=4065</id>
+		<updated>2008-10-02T21:51:26Z</updated>
+		<published>2008-10-02T21:51:26Z</published>
+		<category scheme="http://laughingmeme.org" term="Aside" /><category scheme="http://laughingmeme.org" term="art" /><category scheme="http://laughingmeme.org" term="books" /><category scheme="http://laughingmeme.org" term="calvino" /><category scheme="http://laughingmeme.org" term="nyc" /><category scheme="http://laughingmeme.org" term="performance" />		<summary type="html"><![CDATA[It&#8217;s the LARP version of &#8220;if on a winter&#8217;s night a traveller&#8221;
+]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/10/02/a-box-of-books-labeled-free-books-is-deposited-at-various-14th-street-locations-a-seeming-act-of-generosity-the-artist-has-removed-the-last-few-pages-from-each-book/"><![CDATA[<p>It&#8217;s the LARP version of &#8220;if on a winter&#8217;s night a traveller&#8221;</p>
+]]></content>
+<link rel="related" href="http://swissmiss.typepad.com/weblog/2008/10/art-in-odd-plac.html" />		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/10/02/a-box-of-books-labeled-free-books-is-deposited-at-various-14th-street-locations-a-seeming-act-of-generosity-the-artist-has-removed-the-last-few-pages-from-each-book/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/10/02/a-box-of-books-labeled-free-books-is-deposited-at-various-14th-street-locations-a-seeming-act-of-generosity-the-artist-has-removed-the-last-few-pages-from-each-book/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[Company Town]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/10/01/company-town/" />
+		<id>http://laughingmeme.org/?p=4062</id>
+		<updated>2008-10-01T16:24:19Z</updated>
+		<published>2008-10-01T16:24:19Z</published>
+		<category scheme="http://laughingmeme.org" term="Uncategorized" /><category scheme="http://laughingmeme.org" term="money" /><category scheme="http://laughingmeme.org" term="new york" /><category scheme="http://laughingmeme.org" term="nyc" /><category scheme="http://laughingmeme.org" term="quotable" /><category scheme="http://laughingmeme.org" term="real estate" />		<summary type="html"><![CDATA[“[New York] is the company town for money” - Richard Lefrak
+]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/10/01/company-town/"><![CDATA[<p><blockquote><em>“[New York] is the company town for money”</em> - <a href="http://www.nytimes.com/2008/10/01/nyregion/01develop.html">Richard Lefrak</a></p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/10/01/company-town/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/10/01/company-town/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[Netflix API: Looking good]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/10/01/netflix-api-looking-good/" />
+		<id>http://laughingmeme.org/?p=4056</id>
+		<updated>2008-10-01T15:21:57Z</updated>
+		<published>2008-10-01T15:18:47Z</published>
+		<category scheme="http://laughingmeme.org" term="Uncategorized" /><category scheme="http://laughingmeme.org" term="api" /><category scheme="http://laughingmeme.org" term="movies" /><category scheme="http://laughingmeme.org" term="netflix" /><category scheme="http://laughingmeme.org" term="oauth" /><category scheme="http://laughingmeme.org" term="web 2.0" />		<summary type="html"><![CDATA[Netflix was pretty much the last place I was Web 2.0 style share cropping, creating value without a way to get it out.  The Netflix API has been rumored for a long time, but with today&#8217;s release they really did an excellent job.
+
+
+REST, Atom, and Javascript APIs?  CHECK
+Access to personal information using OAuth? [...]]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/10/01/netflix-api-looking-good/"><![CDATA[<p><a href="http://netflix.com">Netflix</a> was pretty much the last place I was <a href="http://www.slideshare.net/IgniteBoston/12-jesse-vincent">Web 2.0 style share cropping</a>, creating value without a way to get it out.  The <a href="http://developer.netflix.com/docs/Home">Netflix API</a> has been rumored for a long time, but with today&#8217;s release they really did an excellent job.</p>
+
+<ul>
+<li>REST, Atom, and Javascript APIs?  CHECK</li>
+<li><a href="http://developer.netflix.com/docs/Security#0_18325">Access to personal information using OAuth?</a>  CHECK</li>
+<li><a href="http://developer.netflix.com/blog">Developer blog</a>? CHECK</li>
+<li><a href="http://developer.netflix.com/page/Resources">API Explorer</a>?  CHECK (though why it&#8217;s a Firefox plugin, I can only guess)</li>
+</ul>
+
+<p>Also versioned documentation, and a quite reasonable set of <a href="http://developer.netflix.com/docs/Branding">branding guidelines</a>.</p>
+
+<blockquote><em>
+The Netflix Web APIs provide the ability for you to integrate Netflix user services into your application. The APIs provide the following capabilities:
+<ul>
+<li class="Bullet1"><a name="0_pgfId-1017334"></a>Performing searches of movies, TV series, cast members, and directors</li>
+<li class="Bullet1"><a name="0_pgfId-1016200"></a>Retrieving catalog titles, including details about the title such as name, box art, director, cast, etc.</li>
+<li class="Bullet1"><a name="0_pgfId-1016257"></a>Determining the subscriber&#8217;s relationship to a specific title, e.g, in queue, saved, available on DVD, etc.</li>
+
+<li class="Bullet1"><a name="0_pgfId-1016260"></a>Managing and displaying queues for users</li>
+<li class="Bullet1"><a name="0_pgfId-1016261"></a>Providing conveniences such as auto-completion of partial search terms typed by a user.</li>
+<li class="Bullet1"><a name="0_pgfId-1016264"></a>Displaying a user&#8217;s ratings and reviews.</li>
+<li class="Bullet1"><a name="0_pgfId-1016344"></a>Including functional Add and Play buttons in your web application.</li>
+</ul>
+</em></blockquote>
+
+<p>Congratulations to Netflix, and <a href="http://mashery.com/">Mashery</a>.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/10/01/netflix-api-looking-good/#comments" thr:count="2"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/10/01/netflix-api-looking-good/feed/atom/" thr:count="2"/>
+		<thr:total>2</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[Nostalgia]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/09/30/nostalgia/" />
+		<id>http://laughingmeme.org/?p=4052</id>
+		<updated>2008-09-30T15:52:56Z</updated>
+		<published>2008-09-30T14:49:11Z</published>
+		<category scheme="http://laughingmeme.org" term="Uncategorized" /><category scheme="http://laughingmeme.org" term="capitalism" /><category scheme="http://laughingmeme.org" term="history" /><category scheme="http://laughingmeme.org" term="innovation" /><category scheme="http://laughingmeme.org" term="money" /><category scheme="http://laughingmeme.org" term="web 2.0" /><category scheme="http://laughingmeme.org" term="web culture" />		<summary type="html"><![CDATA[You remember those dark days after the first bust?  
+
+You know the ones when all the MBAs left, and the people who loved the Web went on building it &#8212; building meaningful, crazy, artistic cool stuff, and the ethos of the social web was born, back before when that meant more then widget crazy/Facebook-tulip-bloom-madness. [...]]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/09/30/nostalgia/"><![CDATA[<p>You remember those dark days after the first bust?  </p>
+
+<p>You know the ones when all the MBAs left, and the people who loved the Web went on building it &#8212; building meaningful, crazy, artistic cool stuff, and the ethos of the social web was born, back before when that meant more then widget crazy/Facebook-tulip-bloom-madness.  Yeah, that sure sucked.  </p>
+
+<p>Just thinking about it in the light of this week&#8217;s market silliness is enough to make me want to go back to SxSW again this year (where the torch was kept alight, like Ireland in the Dark Ages).  And I&#8217;d sworn off it after this last year, but maybe budgets will be contracting again by then.  And those projects that got started out in the darkness, say Flickr, and Upcoming and del.icio.us among others, wasn&#8217;t it all much better when the market got back involved and they got serious?</p>
+
+<p>At least thats what reading <a href="http://www.avc.com/a_vc/2008/09/my-thoughts-on.html">Fred</a> and <a href="http://calacanis.com/2008/09/29/the-startup-depression/">Jason</a> on &#8220;startup depression&#8221; reminded me of.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/09/30/nostalgia/#comments" thr:count="8"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/09/30/nostalgia/feed/atom/" thr:count="8"/>
+		<thr:total>8</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[waferbaby: &#8220;o noes, washington has failedz11!111 &#8220;]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/09/30/waferbaby-o-noes-washington-has-failedz11111/" />
+		<id>http://laughingmeme.org/2008/09/30/waferbaby-o-noes-washington-has-failedz11111/</id>
+		<updated>2008-10-16T22:31:17Z</updated>
+		<published>2008-09-30T12:16:47Z</published>
+		<category scheme="http://laughingmeme.org" term="Uncategorized" /><category scheme="http://laughingmeme.org" term="photos" /><category scheme="http://laughingmeme.org" term="politics" />		<summary type="html"><![CDATA[
+
+dc offline, originally uploaded by bees.
+
+
+    Cal apparently has instrumented Washington.  Somehow not surprised.
+
+]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/09/30/waferbaby-o-noes-washington-has-failedz11111/"><![CDATA[<p><a href="http://www.flickr.com/photos/bees/2900469003/" title="photo sharing"><img src="http://farm4.static.flickr.com/3164/2900469003_d99f9bbc18.jpg" class="flickr-photo" alt="" /></a></p>
+
+<p><span class="flickr-caption"><a href="http://www.flickr.com/photos/bees/2900469003/">dc offline</a>, originally uploaded by <a href="http://www.flickr.com/people/bees/">bees</a>.</span></p>
+
+<p><p class="flickr-yourcomment">
+    Cal apparently has instrumented Washington.  Somehow not surprised.
+</p></p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/09/30/waferbaby-o-noes-washington-has-failedz11111/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/09/30/waferbaby-o-noes-washington-has-failedz11111/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[On the Freebase custom tuple store, graphd]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/09/29/on-the-freebase-custom-tuple-store-graphd/" />
+		<id>http://laughingmeme.org/?p=4043</id>
+		<updated>2008-09-29T14:21:11Z</updated>
+		<published>2008-09-29T14:13:45Z</published>
+		<category scheme="http://laughingmeme.org" term="Uncategorized" /><category scheme="http://laughingmeme.org" term="architecture" /><category scheme="http://laughingmeme.org" term="beyond lamp" /><category scheme="http://laughingmeme.org" term="freebase" /><category scheme="http://laughingmeme.org" term="log oriented" /><category scheme="http://laughingmeme.org" term="scalability" /><category scheme="http://laughingmeme.org" term="semweb" />		<summary type="html"><![CDATA[Thanks to Simon for tickling my memory on this great blog post from Freebase on their custom tuple server.  
+
+Graphd is another good example of the log-oriented append only pattern.  This is the sort of stuff I&#8217;ve been thinking about for a bit, and wishing I had more time to play with.  [...]]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/09/29/on-the-freebase-custom-tuple-store-graphd/"><![CDATA[<p><a href="http://blog.freebase.com/2008/04/09/a-brief-tour-of-graphd/">Thanks to Simon</a> for tickling my memory on this <a href="http://blog.freebase.com/2008/04/09/a-brief-tour-of-graphd/">great blog post from Freebase on their custom tuple server</a>.  </p>
+
+<p>Graphd is another good example of the log-oriented append only pattern.  This is the sort of stuff <a href="http://laughingmeme.org/2008/04/05/quiet-saturday-thoughts/">I&#8217;ve been thinking about</a> for a bit, and wishing I had more time to play with.  Disks and disk metaphors might turn out to be our most dramatically parallelizable constructs.  </p>
+
+<p><a href="http://www.flickr.com/photos/peapea/40955407/" title="Untitled by pea., on Flickr"><img src="http://farm1.static.flickr.com/24/40955407_3a90eded8d_m.jpg" align="right" style="padding: 10px;" alt="" /></a></p>
+
+<p>Still my favorite hack is that, because they&#8217;re building a wiki-like tool, Freebase can bubble their eventual consistency implementation all the way up to the end-users, who are mentally prepared to deal with write contentions (they&#8217;re already dealing with rightness contention after all).  We&#8217;re living in a <a href="http://www.acmqueue.org/modules.php?name=Content&amp;pa=showpage&amp;pid=540">post-ACID</a> world.</p>
+
+<p>The only down side is everyone I&#8217;ve talked to at Freebase seems pretty solid on this being their proprietary secret sauce, because a good, fast scalable open source tuple store might actually jump start a real semantic (small-S) web after all these years.</p>
+
+<p>Oh, and only tangentially related, Myles published a <a href="http://code.flickr.com/blog/2008/09/26/flickr-engineers-do-it-offline/">good high level on our job queue system</a> last Friday.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/09/29/on-the-freebase-custom-tuple-store-graphd/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/09/29/on-the-freebase-custom-tuple-store-graphd/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[When the Wall St. Journal calls you out&#8230;..]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/09/26/when-the-washington-post-calls-you-out/" />
+		<id>http://laughingmeme.org/?p=4039</id>
+		<updated>2008-09-26T17:01:55Z</updated>
+		<published>2008-09-26T17:00:14Z</published>
+		<category scheme="http://laughingmeme.org" term="Uncategorized" /><category scheme="http://laughingmeme.org" term="election" /><category scheme="http://laughingmeme.org" term="greed" /><category scheme="http://laughingmeme.org" term="mccain" /><category scheme="http://laughingmeme.org" term="politics" /><category scheme="http://laughingmeme.org" term="wall street" /><category scheme="http://laughingmeme.org" term="washington post" />		<summary type="html"><![CDATA[
+  &#8220;And Mr. McCain has a special advantage to bring to any such investigation &#8212; many of the relevant witnesses are friends or colleagues of his. In fact, he can probably get to the bottom of the whole mess just by cross-examining the people riding on his campaign bus&#8221;. - Thomas Frank
+
+
+via Lhl
+]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/09/26/when-the-washington-post-calls-you-out/"><![CDATA[<blockquote>
+  <p>&#8220;And Mr. McCain has a special advantage to bring to any such investigation &#8212; many of the relevant witnesses are friends or colleagues of his. In fact, he can probably get to the bottom of the whole mess just by cross-examining the people riding on his campaign bus&#8221;. - <a href="http://online.wsj.com/article/SB122221440058969313.html#printMode">Thomas Frank</a></p>
+</blockquote>
+
+<p><a href="http://randomfoo.net/">via Lhl</a></p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/09/26/when-the-washington-post-calls-you-out/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/09/26/when-the-washington-post-calls-you-out/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[3rd Party Comment Systems]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/09/24/3rd-party-comment-systems/" />
+		<id>http://laughingmeme.org/?p=4034</id>
+		<updated>2008-09-24T21:51:30Z</updated>
+		<published>2008-09-24T21:51:30Z</published>
+		<category scheme="http://laughingmeme.org" term="Uncategorized" /><category scheme="http://laughingmeme.org" term="blogging tech" /><category scheme="http://laughingmeme.org" term="blogs" /><category scheme="http://laughingmeme.org" term="comments" /><category scheme="http://laughingmeme.org" term="loosely joined" /><category scheme="http://laughingmeme.org" term="random web 2.0 silliness" /><category scheme="http://laughingmeme.org" term="social" />		<summary type="html"><![CDATA[Talk about from the everything-old-is-new-again dept.
+
+Fred&#8217;s got a post up talking about the &#8220;mainstreaming&#8221; of 3rd party comment system.  His graph compares their portfolio company disqus, with a bunch of companies I&#8217;ve never heard of.
+
+Made me wonder what HaloScan was up to.  Remember HaloScan?  From back before Grey Matter or Blogger had [...]]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/09/24/3rd-party-comment-systems/"><![CDATA[<p>Talk about from the everything-old-is-new-again dept.</p>
+
+<p><a href="http://www.avc.com/">Fred&#8217;s</a> got a post up talking about the <a href="http://www.avc.com/a_vc/2008/09/third-party-com.html">&#8220;mainstreaming&#8221; of 3rd party comment system</a>.  His graph compares their portfolio company <a href="http://disqus.com/docs/api/">disqus</a>, with a bunch of companies I&#8217;ve never heard of.</p>
+
+<p>Made me wonder what <a href="http://www.haloscan.com/">HaloScan</a> was up to.  Remember <a href="http://www.haloscan.com/">HaloScan</a>?  From back before <a href="http://web.petefinnigan.com/greymatter.htm">Grey Matter</a> or <a href="http://blogger.com">Blogger</a> had comments?  It popped up in that nasty little window, and generally sucked.  And we all received early painful lessons in outsourcing control of pieces of your infrastructure. And then Moveable Type shipped with decent integrated comments (and just about the slickest looking admin interface anyone had ever seen anywhere on the Web)  Apparently they&#8217;ve been acquired by this (js-kit)[http://js-kit.com] company.  And their traffic is still growing!?!?!</p>
+
+<p>Here&#8217;s a graph looking at disqus, HaloScan and js-kit:</p>
+
+<p><a href='http://grapher.compete.com/haloscan.com+disqus.com+js-kit.com?metric=uv'><img src='http://grapher.compete.com/haloscan.com+disqus.com+js-kit.com_uv_460.png' /></a></p>
+
+<p>With those numbers I&#8217;m not sure we&#8217;re talking mainstream here, though its interesting to see <a href="http://en.blog.wordpress.com/2008/09/23/automattic-acquires-intense-debate/">Wordpress picking up intense-debate</a>.  I like Wordpress&#8217;s corporate culture and they seem well suited for not stifling innovation in acquisitions. </p>
+
+<p>But really all I wanted to say is whether or not this stuff is interesting to mainstream, as a hacker a 3rd party comment system is golden.  Because we&#8217;ve all rolled our own blogging systems, and you either never built the comments, turned them off, gave up and went back to an off the shelf system, or are running some sadomasochistic social experiment.  The great thing about decent 3rd party comment systems is you can go back to your bash/Perl/XSLT/file tree based system, and still have comments.  (Leonard was the first alpha geek I noticed doing this)</p>
+
+<p>And Disqus even has to start of <a href="http://disqus.com/docs/api/">a decent API</a>.  More focused at &#8220;forum owner&#8221;, individual commenters could use some love, and of course the whole thing could benefit from a <a href="http://oauth.net">standardized delegated auth model</a>, but those are nits.</p>
+
+<p>(btw. where are the Wikipedia articles on that early blogging era tech, our legacy is being lost! OMG!)</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/09/24/3rd-party-comment-systems/#comments" thr:count="1"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/09/24/3rd-party-comment-systems/feed/atom/" thr:count="1"/>
+		<thr:total>1</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>Kellan</name>
+					</author>
+		<title type="html"><![CDATA[Look on my works, ye Mighty, and despair!]]></title>
+		<link rel="alternate" type="text/html" href="http://laughingmeme.org/2008/09/23/look-on-my-works-ye-mighty-and-despair/" />
+		<id>http://laughingmeme.org/2008/09/23/look-on-my-works-ye-mighty-and-despair/</id>
+		<updated>2008-09-23T15:38:23Z</updated>
+		<published>2008-09-23T15:37:34Z</published>
+		<category scheme="http://laughingmeme.org" term="Uncategorized" /><category scheme="http://laughingmeme.org" term="flickr" /><category scheme="http://laughingmeme.org" term="new york" /><category scheme="http://laughingmeme.org" term="photos" />		<summary type="html"><![CDATA[
+
+Historical landmark New York Central Railroad 69th Street Transfer Bridge, with Trump Towers looming in the background.
+]]></summary>
+		<content type="html" xml:base="http://laughingmeme.org/2008/09/23/look-on-my-works-ye-mighty-and-despair/"><![CDATA[<p><a href="http://www.flickr.com/photos/kellan/2880191001/" title="photo sharing"><img src="http://farm4.static.flickr.com/3066/2880191001_a2fe151e26.jpg" class="flickr-photo" alt="" /></a></p>
+
+<p>Historical landmark <a href="http://en.wikipedia.org/wiki/New_York_Central_Railroad_69th_Street_Transfer_Bridge">New York Central Railroad 69th Street Transfer Bridge</a>, with Trump Towers looming in the background.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://laughingmeme.org/2008/09/23/look-on-my-works-ye-mighty-and-despair/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://laughingmeme.org/2008/09/23/look-on-my-works-ye-mighty-and-despair/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+	</feed>

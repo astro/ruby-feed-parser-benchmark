@@ -1,0 +1,740 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/rss2full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>Yoast</title>
+	
+	<link>http://yoast.com</link>
+	<description>Tweaking Websites</description>
+	<pubDate>Tue, 02 Dec 2008 20:32:06 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6.5</generator>
+	<language>en</language>
+	<image>
+			<title>Yoast</title>
+			<url>http://yoast.com/images/yoast-logo-rss.png</url>
+			<link>http://yoast.com</link>
+			<width>144</width>
+			<height>103</height>
+			<description>Tweaking Websites</description>
+		</image><xhtml:meta xmlns:xhtml="http://www.w3.org/1999/xhtml" name="robots" content="noindex" />
+		<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://feeds.feedburner.com/joostdevalk" type="application/rss+xml" /><feedburner:emailServiceId>391938</feedburner:emailServiceId><feedburner:feedburnerHostname>http://www.feedburner.com</feedburner:feedburnerHostname><feedburner:feedFlare href="http://add.my.yahoo.com/rss?url=http%3A%2F%2Ffeeds.feedburner.com%2Fjoostdevalk" src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif">Subscribe with My Yahoo!</feedburner:feedFlare><feedburner:feedFlare href="http://www.bloglines.com/sub/http://feeds.feedburner.com/joostdevalk" src="http://www.bloglines.com/images/sub_modern11.gif">Subscribe with Bloglines</feedburner:feedFlare><feedburner:feedFlare href="http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Ffeeds.feedburner.com%2Fjoostdevalk" src="http://www.netvibes.com/img/add2netvibes.gif">Subscribe with Netvibes</feedburner:feedFlare><feedburner:feedFlare href="http://fusion.google.com/add?feedurl=http%3A%2F%2Ffeeds.feedburner.com%2Fjoostdevalk" src="http://buttons.googlesyndication.com/fusion/add.gif">Subscribe with Google</feedburner:feedFlare><feedburner:browserFriendly>This is the feed for Joost de Valk's SEO Blog, subscribe and you'll get the best SEO tips for WordPress and otherwise!</feedburner:browserFriendly><item>
+		<title>WordPress functions to supercharge your Theme!</title>
+		<link>http://feeds.feedburner.com/~r/joostdevalk/~3/472848056/</link>
+		<comments>http://yoast.com/wordpress-functions-supercharge-theme/#comments</comments>
+		<pubDate>Tue, 02 Dec 2008 20:22:28 +0000</pubDate>
+		<dc:creator>Joost de Valk</dc:creator>
+		
+		<category><![CDATA[WordPress]]></category>
+
+		<category><![CDATA[wordpress theme]]></category>
+
+		<guid isPermaLink="false">http://yoast.com/?p=1300</guid>
+		<description><![CDATA[WordPress is well known for its plugins and themes, but not enough people know and love what you can do in your themes functions.php. Chris Pearson showed his love for them back in May, and he did a great job of explaining how you can bring your own functions.php file to each and every theme [...]<p>This is a post from <a href="http://yoast.com/about-me/">Joost de Valk</a>&#39;s <a href="http://yoast.com/">Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/">this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/wordpress-functions-supercharge-theme/">WordPress functions to supercharge your Theme!</a></p>
+
+
+
+Related posts:<ol><li><a href='http://yoast.com/perfect-wordpress-theme/' rel='bookmark' title='Permanent Link: 10 Checks to the Perfect WordPress theme'>10 Checks to the Perfect WordPress theme</a> <small> I've seen it happen so often. People have a...</small></li><li><a href='http://yoast.com/disable-update-nag/' rel='bookmark' title='Permanent Link: Disabling the update nag'>Disabling the update nag</a> <small>WordPress' core update nag is quite the useful thing, I'll...</small></li><li><a href='http://yoast.com/upgrade-your-wordpress/' rel='bookmark' title='Permanent Link: Upgrade your WordPress!!'>Upgrade your WordPress!!</a> <small>WordPress 2.3 "Dexter" has been released, and it's cool, so...</small></li></ol>]]></description>
+			<content:encoded><![CDATA[<p><img src="http://yoast.com/wp-content/uploads/2008/12/engine.jpg" alt="Supercharge your WordPress theme" class="alignright" title="WordPress functions to supercharge your Theme! Photo" />WordPress is well known for its plugins and themes, but not enough people know and love what you can do in your themes <em>functions.php</em>. Chris Pearson <a href="http://www.pearsonified.com/2008/05/how-to-use-wordpress-functions.php" onclick="javascript:exitTracker._trackEvent('article','http://www.pearsonified.com/2008/05/how-to-use-wordpress-functions.php');">showed his love for them</a> back in May, and he did a great job of explaining how you can bring your own functions.php file to each and every theme you use, so I'm not going to repeat that, just go read it.</p>
+<p>Then Matt Varone started releasing a whole array of useful functions in three consecutive posts over the last couple of months:</p>
+<ol>
+<li><a href="http://www.mattvarone.com/wordpress/functionsphp-wordpress-themes/" onclick="javascript:exitTracker._trackEvent('article','http://www.mattvarone.com/wordpress/functionsphp-wordpress-themes/');">Taking Advantage of Functions.php in Wordpress Themes</a></li>
+<li><a href="http://www.mattvarone.com/wordpress/useful-functions-for-wordpress/" onclick="javascript:exitTracker._trackEvent('article','http://www.mattvarone.com/wordpress/useful-functions-for-wordpress/');">Useful custom functions for WordPress</a></li>
+<li><a href="http://www.mattvarone.com/wordpress/is_subpage-function/" onclick="javascript:exitTracker._trackEvent('article','http://www.mattvarone.com/wordpress/is_subpage-function/');">is_subpage() - Custom Conditional Function</a></li>
+</ol>
+<p>So I thought it was about time I started doing the same and started sharing a few of the custom functions &amp; hacks I'm using in my functions.php.</p>
+<h2>Useful hacks</h2>
+<p>I'll start with the hacks, basically all of them have to do with disabling default functionality in WordPress that annoyed me. The first free are to remove some output from the head of WordPress' output:</p>
+
+
+<div class="wp_syntax"><div class="code"><pre class="php php" style="font-family:monospace;"><span style="color: #666666; font-style: italic;">// Clean up wp_head</span>
+<span style="color: #666666; font-style: italic;">// Remove Really simple discovery link</span>
+remove_action<span style="color: #009900;">&#40;</span><span style="">'wp_head'</span><span style="color: #339933;">,</span> <span style="">'rsd_link'</span><span style="color: #009900;">&#41;</span>;
+<span style="color: #666666; font-style: italic;">// Remove Windows Live Writer link</span>
+remove_action<span style="color: #009900;">&#40;</span><span style="">'wp_head'</span><span style="color: #339933;">,</span> <span style="">'wlwmanifest_link'</span><span style="color: #009900;">&#41;</span>;
+<span style="color: #666666; font-style: italic;">// Remove the version number</span>
+remove_action<span style="color: #009900;">&#40;</span><span style="">'wp_head'</span><span style="color: #339933;">,</span> <span style="">'wp_generator'</span><span style="color: #009900;">&#41;</span>;</pre></div></div>
+
+
+
+<p>The second set is to remove the curly quotes from both my own text and the comments:</p>
+
+
+<div class="wp_syntax"><div class="code"><pre class="php php" style="font-family:monospace;"><span style="color: #666666; font-style: italic;">// Remove curly quotes</span>
+remove_filter<span style="color: #009900;">&#40;</span><span style="">'the_content'</span><span style="color: #339933;">,</span> <span style="">'wptexturize'</span><span style="color: #009900;">&#41;</span>;
+remove_filter<span style="color: #009900;">&#40;</span><span style="">'comment_text'</span><span style="color: #339933;">,</span> <span style="">'wptexturize'</span><span style="color: #009900;">&#41;</span>;</pre></div></div>
+
+
+
+<p>The last hack is to allow the use of HTML in user profiles:</p>
+
+
+<div class="wp_syntax"><div class="code"><pre class="php php" style="font-family:monospace;"><span style="color: #666666; font-style: italic;">// Allow HTML in user profiles</span>
+remove_filter<span style="color: #009900;">&#40;</span><span style="">'pre_user_description'</span><span style="color: #339933;">,</span> <span style="">'wp_filter_kses'</span><span style="color: #009900;">&#41;</span>;</pre></div></div>
+
+
+
+<h2>Useful custom functions</h2>
+<p>Then, of course, I have some useful custom functions for WordPress too. One of my favorites is this one, which generates a delete comment link:</p>
+
+
+<div class="wp_syntax"><div class="code"><pre class="php php" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">function</span> delete_comment_link<span style="color: #009900;">&#40;</span><span style="color: #000088;">$id</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+  <span style="color: #b1b100;">if</span> <span style="color: #009900;">&#40;</span>current_user_can<span style="color: #009900;">&#40;</span><span style="">'edit_post'</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #990000;">global</span> <span style="color: #000088;">$post</span>;
+    <span style="color: #990000;">echo</span> <span style="">'| &lt;a href=&quot;'</span><span style="color: #339933;">.</span>admin_url<span style="color: #009900;">&#40;</span><span style="color: #0000ff;">&quot;comment.php?action=cdc&amp;c=$id&amp;redirect_to=/&quot;</span><span style="color: #339933;">.</span><span style="color: #000088;">$post</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">post_name</span><span style="color: #339933;">.</span><span style="color: #0000ff;">&quot;/&quot;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">.</span><span style="">'&quot;&gt;del&lt;/a&gt; '</span>;
+    <span style="color: #990000;">echo</span> <span style="">'| &lt;a href=&quot;'</span><span style="color: #339933;">.</span>admin_url<span style="color: #009900;">&#40;</span><span style="color: #0000ff;">&quot;comment.php?action=cdc&amp;dt=spam&amp;c=$id&amp;redirect_to=/&quot;</span><span style="color: #339933;">.</span><span style="color: #000088;">$post</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">post_name</span><span style="color: #339933;">.</span><span style="color: #0000ff;">&quot;/&quot;</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">.</span><span style="">'&quot;&gt;spam&lt;/a&gt;'</span>;
+  <span style="color: #009900;">&#125;</span>
+<span style="color: #009900;">&#125;</span></pre></div></div>
+
+
+
+<p>Another one I borrowed &amp; adapted from <a href="http://cakephp.org/" onclick="javascript:exitTracker._trackEvent('article','http://cakephp.org/');">CakePHP</a>, it returns the time since a specified time in "human readable" fashion:</p>
+
+
+<div class="wp_syntax"><div class="code"><pre class="php php" style="font-family:monospace;"><span style="color: #000000; font-weight: bold;">function</span> TimeAgoInWords<span style="color: #009900;">&#40;</span><span style="color: #000088;">$from_time</span><span style="color: #339933;">,</span> <span style="color: #000088;">$include_seconds</span> <span style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">true</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+  <span style="color: #000088;">$to_time</span> <span style="color: #339933;">=</span> <span style="color: #990000;">time</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span>;
+  <span style="color: #000088;">$mindist</span> <span style="color: #339933;">=</span> <span style="color: #990000;">round</span><span style="color: #009900;">&#40;</span><span style="color: #990000;">abs</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$to_time</span> <span style="color: #339933;">-</span> <span style="color: #000088;">$from_time</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">/</span> <span style="color: #cc66cc;">60</span><span style="color: #009900;">&#41;</span>;
+  <span style="color: #000088;">$secdist</span> <span style="color: #339933;">=</span> <span style="color: #990000;">round</span><span style="color: #009900;">&#40;</span><span style="color: #990000;">abs</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$to_time</span> <span style="color: #339933;">-</span> <span style="color: #000088;">$from_time</span><span style="color: #009900;">&#41;</span><span style="color: #009900;">&#41;</span>;
+&nbsp;
+  <span style="color: #b1b100;">if</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$mindist</span> <span style="color: #339933;">&gt;=</span> <span style="color:#800080;">0</span> and <span style="color: #000088;">$mindist</span> <span style="color: #339933;">&lt;=</span> <span style="color: #cc66cc;">1</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #b1b100;">if</span> <span style="color: #009900;">&#40;</span><span style="color: #339933;">!</span><span style="color: #000088;">$include_seconds</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+      <span style="color: #b1b100;">return</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$mindist</span> <span style="color: #339933;">==</span> <span style="color:#800080;">0</span><span style="color: #009900;">&#41;</span> ? <span style="">'less than a minute'</span> <span style="color: #339933;">:</span> <span style="">'1 minute'</span>;
+	<span style="color: #009900;">&#125;</span> <span style="color: #b1b100;">else</span> <span style="color: #009900;">&#123;</span>
+      <span style="color: #b1b100;">if</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$secdist</span> <span style="color: #339933;">&gt;=</span> <span style="color:#800080;">0</span> and <span style="color: #000088;">$secdist</span> <span style="color: #339933;">&lt;=</span> <span style="color: #cc66cc;">4</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+        <span style="color: #b1b100;">return</span> <span style="">'less than 5 seconds'</span>;
+      <span style="color: #009900;">&#125;</span> <span style="color: #b1b100;">elseif</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$secdist</span> <span style="color: #339933;">&gt;=</span> <span style="color: #cc66cc;">5</span> and <span style="color: #000088;">$secdist</span> <span style="color: #339933;">&lt;=</span> <span style="color: #cc66cc;">9</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+        <span style="color: #b1b100;">return</span> <span style="">'less than 10 seconds'</span>;
+      <span style="color: #009900;">&#125;</span> <span style="color: #b1b100;">elseif</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$secdist</span> <span style="color: #339933;">&gt;=</span> <span style="color: #cc66cc;">10</span> and <span style="color: #000088;">$secdist</span> <span style="color: #339933;">&lt;=</span> <span style="color: #cc66cc;">19</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+        <span style="color: #b1b100;">return</span> <span style="">'less than 20 seconds'</span>;
+      <span style="color: #009900;">&#125;</span> <span style="color: #b1b100;">elseif</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$secdist</span> <span style="color: #339933;">&gt;=</span> <span style="color: #cc66cc;">20</span> and <span style="color: #000088;">$secdist</span> <span style="color: #339933;">&lt;=</span> <span style="color: #cc66cc;">39</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+        <span style="color: #b1b100;">return</span> <span style="">'half a minute'</span>;
+      <span style="color: #009900;">&#125;</span> <span style="color: #b1b100;">elseif</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$secdist</span> <span style="color: #339933;">&gt;=</span> <span style="color: #cc66cc;">40</span> and <span style="color: #000088;">$secdist</span> <span style="color: #339933;">&lt;=</span> <span style="color: #cc66cc;">59</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+        <span style="color: #b1b100;">return</span> <span style="">'less than a minute'</span>;
+      <span style="color: #009900;">&#125;</span> <span style="color: #b1b100;">else</span> <span style="color: #009900;">&#123;</span>
+        <span style="color: #b1b100;">return</span> <span style="">'1 minute'</span>;
+      <span style="color: #009900;">&#125;</span>
+    <span style="color: #009900;">&#125;</span>
+  <span style="color: #009900;">&#125;</span> <span style="color: #b1b100;">elseif</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$mindist</span> <span style="color: #339933;">&gt;=</span> <span style="color: #cc66cc;">2</span> and <span style="color: #000088;">$mindist</span> <span style="color: #339933;">&lt;=</span> <span style="color: #cc66cc;">44</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #b1b100;">return</span> <span style="color: #000088;">$mindist</span> <span style="color: #339933;">.</span> <span style="">' minutes'</span>;
+  <span style="color: #009900;">&#125;</span> <span style="color: #b1b100;">elseif</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$mindist</span> <span style="color: #339933;">&gt;=</span> <span style="color: #cc66cc;">45</span> and <span style="color: #000088;">$mindist</span> <span style="color: #339933;">&lt;=</span> <span style="color: #cc66cc;">89</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #b1b100;">return</span> <span style="">'about 1 hour'</span>;
+  <span style="color: #009900;">&#125;</span> <span style="color: #b1b100;">elseif</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$mindist</span> <span style="color: #339933;">&gt;=</span> <span style="color: #cc66cc;">90</span> and <span style="color: #000088;">$mindist</span> <span style="color: #339933;">&lt;=</span> <span style="color: #cc66cc;">1439</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #b1b100;">return</span> <span style="">'about '</span> <span style="color: #339933;">.</span> <span style="color: #990000;">round</span><span style="color: #009900;">&#40;</span><span style="color: #990000;">floatval</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$mindist</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">/</span> <span style="color:#800080;">60.0</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">.</span> <span style="">' hours'</span>;
+  <span style="color: #009900;">&#125;</span> <span style="color: #b1b100;">elseif</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$mindist</span> <span style="color: #339933;">&gt;=</span> <span style="color: #cc66cc;">1440</span> and <span style="color: #000088;">$mindist</span> <span style="color: #339933;">&lt;=</span> <span style="color: #cc66cc;">2879</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #b1b100;">return</span> <span style="">'1 day'</span>;
+  <span style="color: #009900;">&#125;</span> <span style="color: #b1b100;">elseif</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$mindist</span> <span style="color: #339933;">&gt;=</span> <span style="color: #cc66cc;">2880</span> and <span style="color: #000088;">$mindist</span> <span style="color: #339933;">&lt;=</span> <span style="color: #cc66cc;">43199</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #b1b100;">return</span> <span style="">'about '</span> <span style="color: #339933;">.</span> <span style="color: #990000;">round</span><span style="color: #009900;">&#40;</span><span style="color: #990000;">floatval</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$mindist</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">/</span> <span style="color: #cc66cc;">1440</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">.</span> <span style="">' days'</span>;
+  <span style="color: #009900;">&#125;</span> <span style="color: #b1b100;">elseif</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$mindist</span> <span style="color: #339933;">&gt;=</span> <span style="color: #cc66cc;">43200</span> and <span style="color: #000088;">$mindist</span> <span style="color: #339933;">&lt;=</span> <span style="color: #cc66cc;">86399</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #b1b100;">return</span> <span style="">'about 1 month'</span>;
+  <span style="color: #009900;">&#125;</span> <span style="color: #b1b100;">elseif</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$mindist</span> <span style="color: #339933;">&gt;=</span> <span style="color: #cc66cc;">86400</span> and <span style="color: #000088;">$mindist</span> <span style="color: #339933;">&lt;=</span> <span style="color: #cc66cc;">525599</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #b1b100;">return</span> <span style="color: #990000;">round</span><span style="color: #009900;">&#40;</span><span style="color: #990000;">floatval</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$mindist</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">/</span> <span style="color: #cc66cc;">43200</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">.</span> <span style="">' months'</span>;
+  <span style="color: #009900;">&#125;</span> <span style="color: #b1b100;">elseif</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$mindist</span> <span style="color: #339933;">&gt;=</span> <span style="color: #cc66cc;">525600</span> and <span style="color: #000088;">$mindist</span> <span style="color: #339933;">&lt;=</span> <span style="color: #cc66cc;">1051199</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #b1b100;">return</span> <span style="">'about 1 year'</span>;
+  <span style="color: #009900;">&#125;</span> <span style="color: #b1b100;">else</span> <span style="color: #009900;">&#123;</span>
+    <span style="color: #b1b100;">return</span> <span style="">'over '</span> <span style="color: #339933;">.</span> <span style="color: #990000;">round</span><span style="color: #009900;">&#40;</span><span style="color: #990000;">floatval</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$mindist</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">/</span> <span style="color: #cc66cc;">525600</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">.</span> <span style="">' years'</span>;
+  <span style="color: #009900;">&#125;</span>
+<span style="color: #009900;">&#125;</span></pre></div></div>
+
+
+
+<p>I shared some other useful functions you could add in your functions.php in previous posts:</p>
+<ul>
+<li><a href="http://yoast.com/display-latest-tweet/" >Easily display your last Tweet</a></li>
+<li><a href="http://yoast.com/feedburner-subscriber-count/" >Showing off your FeedBurner subscribers</a></li>
+<li><a href="http://yoast.com/technorati-api-wordpress/" >Using the Technorati API on your blog</a></li>
+</ul>
+<p>I've added these 5 functions into one file for you to download: <a rel="nofollow" href="/wp-content/uploads/2008/12/functions.txt">functions.txt</a>. Enjoy, and if you have any functions to share yourself, please share!</p>
+<p>This is a post from <a href="http://yoast.com/about-me/" >Joost de Valk</a>&#39;s <a href="http://yoast.com/" >Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/" >this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/wordpress-functions-supercharge-theme/" >WordPress functions to supercharge your Theme!</a></p>
+
+
+
+
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Sphinn');" href="http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Fwordpress-functions-supercharge-theme%2F&amp;title=WordPress%20functions%20to%20supercharge%20your%20Theme%21" onclick="javascript:exitTracker._trackEvent('article','http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Fwordpress-functions-supercharge-theme%2F&amp;title=WordPress%20functions%20to%20supercharge%20your%20Theme%21');" title="Sphinn"><img src="http://yoast.com/wp-content/plugins/sociable/images/sphinn.gif" title="Sphinn" alt="Sphinn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','StumbleUpon');" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Fwordpress-functions-supercharge-theme%2F&amp;title=WordPress%20functions%20to%20supercharge%20your%20Theme%21" onclick="javascript:exitTracker._trackEvent('article','http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Fwordpress-functions-supercharge-theme%2F&amp;title=WordPress%20functions%20to%20supercharge%20your%20Theme%21');" title="StumbleUpon"><img src="http://yoast.com/wp-content/plugins/sociable/images/stumbleupon.png" title="StumbleUpon" alt="StumbleUpon" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','del.icio.us');" href="http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Fwordpress-functions-supercharge-theme%2F&amp;title=WordPress%20functions%20to%20supercharge%20your%20Theme%21" onclick="javascript:exitTracker._trackEvent('article','http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Fwordpress-functions-supercharge-theme%2F&amp;title=WordPress%20functions%20to%20supercharge%20your%20Theme%21');" title="del.icio.us"><img src="http://yoast.com/wp-content/plugins/sociable/images/delicious.png" title="del.icio.us" alt="del.icio.us" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','LinkedIn');" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Fwordpress-functions-supercharge-theme%2F&amp;title=WordPress%20functions%20to%20supercharge%20your%20Theme%21&amp;source=Yoast+Tweaking+Websites&amp;summary=WordPress%20is%20well%20known%20for%20its%20plugins%20and%20themes%2C%20but%20not%20enough%20people%20know%20and%20love%20what%20you%20can%20do%20in%20your%20themes%20functions.php.%20Chris%20Pearson%20showed%20his%20love%20for%20them%20back%20in%20May%2C%20and%20he%20did%20a%20great%20job%20of%20explaining%20how%20you%20can%20bring%20your%20own%20" onclick="javascript:exitTracker._trackEvent('article','http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Fwordpress-functions-supercharge-theme%2F&amp;title=WordPress%20functions%20to%20supercharge%20your%20Theme%21&amp;source=Yoast+Tweaking+Websites&amp;summary=WordPress%20is%20well%20known%20for%20its%20plugins%20and%20themes%2C%20but%20not%20enough%20people%20know%20and%20love%20what%20you%20can%20do%20in%20your%20themes%20functions.php.%20Chris%20Pearson%20showed%20his%20love%20for%20them%20back%20in%20May%2C%20and%20he%20did%20a%20great%20job%20of%20explaining%20how%20you%20can%20bring%20your%20own%20');" title="LinkedIn"><img src="http://yoast.com/wp-content/plugins/sociable/images/linkedin.png" title="LinkedIn" alt="LinkedIn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Fwordpress-functions-supercharge-theme%2F&amp;t=WordPress%20functions%20to%20supercharge%20your%20Theme%21" onclick="javascript:exitTracker._trackEvent('article','http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Fwordpress-functions-supercharge-theme%2F&amp;t=WordPress%20functions%20to%20supercharge%20your%20Theme%21');" title="Facebook"><img src="http://yoast.com/wp-content/plugins/sociable/images/facebook.png" title="Facebook" alt="Facebook" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','description');" href="http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Fwordpress-functions-supercharge-theme%2F&amp;title=WordPress%20functions%20to%20supercharge%20your%20Theme%21" onclick="javascript:exitTracker._trackEvent('article','http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Fwordpress-functions-supercharge-theme%2F&amp;title=WordPress%20functions%20to%20supercharge%20your%20Theme%21');" title="description"><img src="http://yoast.com/wp-content/plugins/sociable/images/dzone.png" title="description" alt="description" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','TwitThis');" href="http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Fwordpress-functions-supercharge-theme%2F" onclick="javascript:exitTracker._trackEvent('article','http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Fwordpress-functions-supercharge-theme%2F');" title="TwitThis"><img src="http://yoast.com/wp-content/plugins/sociable/images/twitter.gif" title="TwitThis" alt="TwitThis" class="sociable-hovers" /></a>
+
+
+<br/><br/>
+
+<p>Related posts:<ol><li><a href='http://yoast.com/perfect-wordpress-theme/' rel='bookmark' title='Permanent Link: 10 Checks to the Perfect WordPress theme'>10 Checks to the Perfect WordPress theme</a> <small> I've seen it happen so often. People have a...</small></li><li><a href='http://yoast.com/disable-update-nag/' rel='bookmark' title='Permanent Link: Disabling the update nag'>Disabling the update nag</a> <small>WordPress' core update nag is quite the useful thing, I'll...</small></li><li><a href='http://yoast.com/upgrade-your-wordpress/' rel='bookmark' title='Permanent Link: Upgrade your WordPress!!'>Upgrade your WordPress!!</a> <small>WordPress 2.3 "Dexter" has been released, and it's cool, so...</small></li></ol></p><img src="http://feeds.feedburner.com/~r/joostdevalk/~4/472848056" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://yoast.com/wordpress-functions-supercharge-theme/feed/</wfw:commentRss>
+	
+		<media:content url="http://yoast.com/wp-content/uploads/2008/12/engine.jpg" medium="image">
+			<media:title type="html">Supercharge your WordPress theme</media:title>
+		</media:content>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=joostdevalk&amp;itemurl=http%3A%2F%2Fyoast.com%2Fwordpress-functions-supercharge-theme%2F</feedburner:awareness><feedburner:origLink>http://yoast.com/wordpress-functions-supercharge-theme/</feedburner:origLink></item>
+		<item>
+		<title>Disabling the update nag</title>
+		<link>http://feeds.feedburner.com/~r/joostdevalk/~3/465999511/</link>
+		<comments>http://yoast.com/disable-update-nag/#comments</comments>
+		<pubDate>Wed, 26 Nov 2008 09:23:39 +0000</pubDate>
+		<dc:creator>Joost de Valk</dc:creator>
+		
+		<category><![CDATA[WordPress]]></category>
+
+		<category><![CDATA[WordPress Plugins]]></category>
+
+		<guid isPermaLink="false">http://yoast.com/?p=1298</guid>
+		<description><![CDATA[WordPress' core update nag is quite the useful thing, I'll usually know before it shows that there's an update, but a lot of people won't. If you don't know what I mean with core update nag, it's this thing:
+
+The issue is that this thing doesn't only show to you, it shows to all users of [...]<p>This is a post from <a href="http://yoast.com/about-me/">Joost de Valk</a>&#39;s <a href="http://yoast.com/">Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/">this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/disable-update-nag/">Disabling the update nag</a></p>
+
+
+
+Related posts:<ol><li><a href='http://yoast.com/update-of-robots-meta-plugin-more-duplicate-content-issues-solved/' rel='bookmark' title='Permanent Link: Update of Robots Meta plugin: more duplicate content issues solved'>Update of Robots Meta plugin: more duplicate content issues solved</a> <small>WordPress has a few nasty issues with duplicate content which...</small></li><li><a href='http://yoast.com/update-to-users-to-csv-plugin/' rel='bookmark' title='Permanent Link: Update to users to CSV plugin'>Update to users to CSV plugin</a> <small>I've just updated my plugin to export all your blog's...</small></li><li><a href='http://yoast.com/wordpress-seo-robots-meta-update/' rel='bookmark' title='Permanent Link: More WordPress SEO: robots-meta update'>More WordPress SEO: robots-meta update</a> <small>After reading Halfdeck's post about Third Level Push, which Roy...</small></li></ol>]]></description>
+			<content:encoded><![CDATA[<p>WordPress' core update nag is quite the useful thing, I'll usually know before it shows that there's an update, but a lot of people won't. If you don't know what I mean with core update nag, it's this thing:</p>
+<p><img src="http://yoast.com/wp-content/uploads/2008/11/core-update-nag.png" alt="core update nag" width="356" height="43" title="Disabling the update nag Photo" /></p>
+<p>The issue is that this thing doesn't only show to you, it shows to all users of your blog. Now there's <a href="http://wordpress.org/extend/plugins/disable-wordpress-core-update/" onclick="javascript:exitTracker._trackEvent('article','http://wordpress.org/extend/plugins/disable-wordpress-core-update/');">a plugin</a> that will disable this for you, but it will disable it for everyone, yourself included.</p>
+<p>A better thing to do, in my humble opinion, is either edit that plugin to have the following code, or add this code to your themes functions.php:</p>
+
+
+<div class="wp_syntax"><div class="code"><pre class="php php" style="font-family:monospace;"><span style="color: #b1b100;">if</span> <span style="color: #009900;">&#40;</span> <span style="color: #339933;">!</span>current_user_can<span style="color: #009900;">&#40;</span> <span style="">'edit_users'</span> <span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+  add_action<span style="color: #009900;">&#40;</span> <span style="">'init'</span><span style="color: #339933;">,</span> <span style="color: #990000;">create_function</span><span style="color: #009900;">&#40;</span> <span style="">'$a'</span><span style="color: #339933;">,</span> <span style="color: #0000ff;">&quot;remove_action( 'init', 'wp_version_check' );&quot;</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">,</span> <span style="color: #cc66cc;">2</span> <span style="color: #009900;">&#41;</span>;
+  add_filter<span style="color: #009900;">&#40;</span> <span style="">'pre_option_update_core'</span><span style="color: #339933;">,</span> <span style="color: #990000;">create_function</span><span style="color: #009900;">&#40;</span> <span style="">'$a'</span><span style="color: #339933;">,</span> <span style="color: #0000ff;">&quot;return null;&quot;</span> <span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#41;</span>;
+<span style="color: #009900;">&#125;</span></pre></div></div>
+
+
+
+<p>This will show the nag to you, but prevent "normal" users from seeing it.</p>
+<p>Update, as asked by Kevin in the comments, here's how to show them to a certain username, in this case "admin":</p>
+
+
+<div class="wp_syntax"><div class="code"><pre class="php php" style="font-family:monospace;"><span style="color: #990000;">global</span> <span style="color: #000088;">$user_login</span> <span style="color: #339933;">,</span> <span style="color: #000088;">$user_email</span>;
+get_currentuserinfo<span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span>;
+<span style="color: #b1b100;">if</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$user_login</span> <span style="color: #339933;">==</span> <span style="color: #0000ff;">&quot;admin&quot;</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+  add_action<span style="color: #009900;">&#40;</span> <span style="">'init'</span><span style="color: #339933;">,</span> <span style="color: #990000;">create_function</span><span style="color: #009900;">&#40;</span> <span style="">'$a'</span><span style="color: #339933;">,</span> <span style="color: #0000ff;">&quot;remove_action( 'init', 'wp_version_check' );&quot;</span> <span style="color: #009900;">&#41;</span><span style="color: #339933;">,</span> <span style="color: #cc66cc;">2</span> <span style="color: #009900;">&#41;</span>;
+  add_filter<span style="color: #009900;">&#40;</span> <span style="">'pre_option_update_core'</span><span style="color: #339933;">,</span> <span style="color: #990000;">create_function</span><span style="color: #009900;">&#40;</span> <span style="">'$a'</span><span style="color: #339933;">,</span> <span style="color: #0000ff;">&quot;return null;&quot;</span> <span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#41;</span>;
+<span style="color: #009900;">&#125;</span></pre></div></div>
+
+
+
+<p>This is a post from <a href="http://yoast.com/about-me/" >Joost de Valk</a>&#39;s <a href="http://yoast.com/" >Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/" >this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/disable-update-nag/" >Disabling the update nag</a></p>
+
+
+
+
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Sphinn');" href="http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Fdisable-update-nag%2F&amp;title=Disabling%20the%20update%20nag" onclick="javascript:exitTracker._trackEvent('article','http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Fdisable-update-nag%2F&amp;title=Disabling%20the%20update%20nag');" title="Sphinn"><img src="http://yoast.com/wp-content/plugins/sociable/images/sphinn.gif" title="Sphinn" alt="Sphinn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','StumbleUpon');" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Fdisable-update-nag%2F&amp;title=Disabling%20the%20update%20nag" onclick="javascript:exitTracker._trackEvent('article','http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Fdisable-update-nag%2F&amp;title=Disabling%20the%20update%20nag');" title="StumbleUpon"><img src="http://yoast.com/wp-content/plugins/sociable/images/stumbleupon.png" title="StumbleUpon" alt="StumbleUpon" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','del.icio.us');" href="http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Fdisable-update-nag%2F&amp;title=Disabling%20the%20update%20nag" onclick="javascript:exitTracker._trackEvent('article','http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Fdisable-update-nag%2F&amp;title=Disabling%20the%20update%20nag');" title="del.icio.us"><img src="http://yoast.com/wp-content/plugins/sociable/images/delicious.png" title="del.icio.us" alt="del.icio.us" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','LinkedIn');" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Fdisable-update-nag%2F&amp;title=Disabling%20the%20update%20nag&amp;source=Yoast+Tweaking+Websites&amp;summary=WordPress%27%20core%20update%20nag%20is%20quite%20the%20useful%20thing%2C%20I%27ll%20usually%20know%20before%20it%20shows%20that%20there%27s%20an%20update%2C%20but%20a%20lot%20of%20people%20won%27t.%20If%20you%20don%27t%20know%20what%20I%20mean%20with%20core%20update%20nag%2C%20it%27s%20this%20thing%3A%0A%0A%0A%0AThe%20issue%20is%20that%20this%20thing%20doesn%27t%20on" onclick="javascript:exitTracker._trackEvent('article','http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Fdisable-update-nag%2F&amp;title=Disabling%20the%20update%20nag&amp;source=Yoast+Tweaking+Websites&amp;summary=WordPress%27%20core%20update%20nag%20is%20quite%20the%20useful%20thing%2C%20I%27ll%20usually%20know%20before%20it%20shows%20that%20there%27s%20an%20update%2C%20but%20a%20lot%20of%20people%20won%27t.%20If%20you%20don%27t%20know%20what%20I%20mean%20with%20core%20update%20nag%2C%20it%27s%20this%20thing%3A%0A%0A%0A%0AThe%20issue%20is%20that%20this%20thing%20doesn%27t%20on');" title="LinkedIn"><img src="http://yoast.com/wp-content/plugins/sociable/images/linkedin.png" title="LinkedIn" alt="LinkedIn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Fdisable-update-nag%2F&amp;t=Disabling%20the%20update%20nag" onclick="javascript:exitTracker._trackEvent('article','http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Fdisable-update-nag%2F&amp;t=Disabling%20the%20update%20nag');" title="Facebook"><img src="http://yoast.com/wp-content/plugins/sociable/images/facebook.png" title="Facebook" alt="Facebook" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','description');" href="http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Fdisable-update-nag%2F&amp;title=Disabling%20the%20update%20nag" onclick="javascript:exitTracker._trackEvent('article','http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Fdisable-update-nag%2F&amp;title=Disabling%20the%20update%20nag');" title="description"><img src="http://yoast.com/wp-content/plugins/sociable/images/dzone.png" title="description" alt="description" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','TwitThis');" href="http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Fdisable-update-nag%2F" onclick="javascript:exitTracker._trackEvent('article','http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Fdisable-update-nag%2F');" title="TwitThis"><img src="http://yoast.com/wp-content/plugins/sociable/images/twitter.gif" title="TwitThis" alt="TwitThis" class="sociable-hovers" /></a>
+
+
+<br/><br/>
+
+<p>Related posts:<ol><li><a href='http://yoast.com/update-of-robots-meta-plugin-more-duplicate-content-issues-solved/' rel='bookmark' title='Permanent Link: Update of Robots Meta plugin: more duplicate content issues solved'>Update of Robots Meta plugin: more duplicate content issues solved</a> <small>WordPress has a few nasty issues with duplicate content which...</small></li><li><a href='http://yoast.com/update-to-users-to-csv-plugin/' rel='bookmark' title='Permanent Link: Update to users to CSV plugin'>Update to users to CSV plugin</a> <small>I've just updated my plugin to export all your blog's...</small></li><li><a href='http://yoast.com/wordpress-seo-robots-meta-update/' rel='bookmark' title='Permanent Link: More WordPress SEO: robots-meta update'>More WordPress SEO: robots-meta update</a> <small>After reading Halfdeck's post about Third Level Push, which Roy...</small></li></ol></p><img src="http://feeds.feedburner.com/~r/joostdevalk/~4/465999511" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://yoast.com/disable-update-nag/feed/</wfw:commentRss>
+	
+		<media:content url="http://yoast.com/wp-content/uploads/2008/11/core-update-nag.png" medium="image">
+			<media:title type="html">core update nag</media:title>
+		</media:content>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=joostdevalk&amp;itemurl=http%3A%2F%2Fyoast.com%2Fdisable-update-nag%2F</feedburner:awareness><feedburner:origLink>http://yoast.com/disable-update-nag/</feedburner:origLink></item>
+		<item>
+		<title>TwitterCounter: the API and the Mint Pepper</title>
+		<link>http://feeds.feedburner.com/~r/joostdevalk/~3/464779202/</link>
+		<comments>http://yoast.com/twittercounter-api/#comments</comments>
+		<pubDate>Tue, 25 Nov 2008 07:58:08 +0000</pubDate>
+		<dc:creator>Joost de Valk</dc:creator>
+		
+		<category><![CDATA[Social Media]]></category>
+
+		<category><![CDATA[twitter]]></category>
+
+		<guid isPermaLink="false">http://yoast.com/?p=1296</guid>
+		<description><![CDATA[As you know I'm a big fan of TwitterCounter, and Boris, its creator and founder is one of the few Dutch entrepreneurs I'm actually a fan of, as he really seems to get the "new" web. 
+I emailed him last week, asking why TwitterCounter didn't have an API, and we started talking about what an [...]<p>This is a post from <a href="http://yoast.com/about-me/">Joost de Valk</a>&#39;s <a href="http://yoast.com/">Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/">this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/twittercounter-api/">TwitterCounter: the API and the Mint Pepper</a></p>
+
+
+
+Related posts:<ol><li><a href='http://yoast.com/twittercounter-chicklet/' rel='bookmark' title='Permanent Link: TwitterCounter chicklet!'>TwitterCounter chicklet!</a> <small>Fellow Dutchman Boris Veldhuijzen van Zanten has created a new...</small></li></ol>]]></description>
+			<content:encoded><![CDATA[<p><img src="http://twittercounter.com/images/twittercounter.png" alt="TwitterCounter logo" class="alignright" style="background-color: #ddd; padding: 10px;" title="TwitterCounter: the API and the Mint Pepper Photo" />As you know I'm a big fan of TwitterCounter, and Boris, its creator and founder is one of the few Dutch entrepreneurs I'm actually a fan of, as he really seems to get the "new" web. </p>
+<p>I emailed him last week, asking why TwitterCounter didn't have an API, and we started talking about what an API should do. He started developing it, showed me some code, and then I offered him to develop the API myself. So I did, resulting in <a href="http://twittercounter.com/?inc=api" onclick="javascript:exitTracker._trackEvent('article','http://twittercounter.com/?inc=api');">this API</a>.</p>
+<p>On top of that API Sean Hammons already <a href="http://getclicky.com/blog/147/keep-tabs-on-your-twitter-followers-from-clicky" onclick="javascript:exitTracker._trackEvent('article','http://getclicky.com/blog/147/keep-tabs-on-your-twitter-followers-from-clicky');">implemented a pane for getClicky</a>, and I myself created a Pepper for Mint. It looks like this:</p>
+<p><img src="http://yoast.com/wp-content/uploads/2008/11/twittercounter-stats.png" alt="twittercounter stats" width="357" height="226" title="TwitterCounter: the API and the Mint Pepper Photo" /></p>
+<p><img src="http://yoast.com/wp-content/uploads/2008/11/twittercounter-graph.png" alt="twittercounter graph" width="358" height="363" title="TwitterCounter: the API and the Mint Pepper Photo" /></p>
+<p>Like it? Download it <a href="http://yoast.com/wp-content/uploads/2008/11/twittercounter-pepper.zip" onclick="javascript:downloadTracker._trackEvent('/wp-content/uploads/2008/11/twittercounter-pepper.zip');">here</a></p>
+<p>This is a post from <a href="http://yoast.com/about-me/" >Joost de Valk</a>&#39;s <a href="http://yoast.com/" >Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/" >this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/twittercounter-api/" >TwitterCounter: the API and the Mint Pepper</a></p>
+
+
+
+
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Sphinn');" href="http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Ftwittercounter-api%2F&amp;title=TwitterCounter%3A%20the%20API%20and%20the%20Mint%20Pepper" onclick="javascript:exitTracker._trackEvent('article','http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Ftwittercounter-api%2F&amp;title=TwitterCounter%3A%20the%20API%20and%20the%20Mint%20Pepper');" title="Sphinn"><img src="http://yoast.com/wp-content/plugins/sociable/images/sphinn.gif" title="Sphinn" alt="Sphinn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','StumbleUpon');" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Ftwittercounter-api%2F&amp;title=TwitterCounter%3A%20the%20API%20and%20the%20Mint%20Pepper" onclick="javascript:exitTracker._trackEvent('article','http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Ftwittercounter-api%2F&amp;title=TwitterCounter%3A%20the%20API%20and%20the%20Mint%20Pepper');" title="StumbleUpon"><img src="http://yoast.com/wp-content/plugins/sociable/images/stumbleupon.png" title="StumbleUpon" alt="StumbleUpon" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','del.icio.us');" href="http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Ftwittercounter-api%2F&amp;title=TwitterCounter%3A%20the%20API%20and%20the%20Mint%20Pepper" onclick="javascript:exitTracker._trackEvent('article','http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Ftwittercounter-api%2F&amp;title=TwitterCounter%3A%20the%20API%20and%20the%20Mint%20Pepper');" title="del.icio.us"><img src="http://yoast.com/wp-content/plugins/sociable/images/delicious.png" title="del.icio.us" alt="del.icio.us" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','LinkedIn');" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Ftwittercounter-api%2F&amp;title=TwitterCounter%3A%20the%20API%20and%20the%20Mint%20Pepper&amp;source=Yoast+Tweaking+Websites&amp;summary=As%20you%20know%20I%27m%20a%20big%20fan%20of%20TwitterCounter%2C%20and%20Boris%2C%20its%20creator%20and%20founder%20is%20one%20of%20the%20few%20Dutch%20entrepreneurs%20I%27m%20actually%20a%20fan%20of%2C%20as%20he%20really%20seems%20to%20get%20the%20%22new%22%20web.%20%0A%0AI%20emailed%20him%20last%20week%2C%20asking%20why%20TwitterCounter%20didn%27t%20have%20an%20" onclick="javascript:exitTracker._trackEvent('article','http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Ftwittercounter-api%2F&amp;title=TwitterCounter%3A%20the%20API%20and%20the%20Mint%20Pepper&amp;source=Yoast+Tweaking+Websites&amp;summary=As%20you%20know%20I%27m%20a%20big%20fan%20of%20TwitterCounter%2C%20and%20Boris%2C%20its%20creator%20and%20founder%20is%20one%20of%20the%20few%20Dutch%20entrepreneurs%20I%27m%20actually%20a%20fan%20of%2C%20as%20he%20really%20seems%20to%20get%20the%20%22new%22%20web.%20%0A%0AI%20emailed%20him%20last%20week%2C%20asking%20why%20TwitterCounter%20didn%27t%20have%20an%20');" title="LinkedIn"><img src="http://yoast.com/wp-content/plugins/sociable/images/linkedin.png" title="LinkedIn" alt="LinkedIn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Ftwittercounter-api%2F&amp;t=TwitterCounter%3A%20the%20API%20and%20the%20Mint%20Pepper" onclick="javascript:exitTracker._trackEvent('article','http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Ftwittercounter-api%2F&amp;t=TwitterCounter%3A%20the%20API%20and%20the%20Mint%20Pepper');" title="Facebook"><img src="http://yoast.com/wp-content/plugins/sociable/images/facebook.png" title="Facebook" alt="Facebook" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','description');" href="http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Ftwittercounter-api%2F&amp;title=TwitterCounter%3A%20the%20API%20and%20the%20Mint%20Pepper" onclick="javascript:exitTracker._trackEvent('article','http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Ftwittercounter-api%2F&amp;title=TwitterCounter%3A%20the%20API%20and%20the%20Mint%20Pepper');" title="description"><img src="http://yoast.com/wp-content/plugins/sociable/images/dzone.png" title="description" alt="description" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','TwitThis');" href="http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Ftwittercounter-api%2F" onclick="javascript:exitTracker._trackEvent('article','http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Ftwittercounter-api%2F');" title="TwitThis"><img src="http://yoast.com/wp-content/plugins/sociable/images/twitter.gif" title="TwitThis" alt="TwitThis" class="sociable-hovers" /></a>
+
+
+<br/><br/>
+
+<p>Related posts:<ol><li><a href='http://yoast.com/twittercounter-chicklet/' rel='bookmark' title='Permanent Link: TwitterCounter chicklet!'>TwitterCounter chicklet!</a> <small>Fellow Dutchman Boris Veldhuijzen van Zanten has created a new...</small></li></ol></p><img src="http://feeds.feedburner.com/~r/joostdevalk/~4/464779202" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://yoast.com/twittercounter-api/feed/</wfw:commentRss>
+	
+		<media:content url="http://twittercounter.com/images/twittercounter.png" medium="image">
+			<media:title type="html">TwitterCounter logo</media:title>
+		</media:content>
+
+		<media:content url="http://yoast.com/wp-content/uploads/2008/11/twittercounter-stats.png" medium="image">
+			<media:title type="html">twittercounter stats</media:title>
+		</media:content>
+
+		<media:content url="http://yoast.com/wp-content/uploads/2008/11/twittercounter-graph.png" medium="image">
+			<media:title type="html">twittercounter graph</media:title>
+		</media:content>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=joostdevalk&amp;itemurl=http%3A%2F%2Fyoast.com%2Ftwittercounter-api%2F</feedburner:awareness><feedburner:origLink>http://yoast.com/twittercounter-api/</feedburner:origLink></item>
+		<item>
+		<title>Disabling SearchWiki</title>
+		<link>http://feeds.feedburner.com/~r/joostdevalk/~3/462590849/</link>
+		<comments>http://yoast.com/disabling-searchwiki/#comments</comments>
+		<pubDate>Sun, 23 Nov 2008 07:36:43 +0000</pubDate>
+		<dc:creator>Joost de Valk</dc:creator>
+		
+		<category><![CDATA[SEO]]></category>
+
+		<category><![CDATA[SEO tools]]></category>
+
+		<guid isPermaLink="false">http://yoast.com/?p=1292</guid>
+		<description><![CDATA[Google introduced Search Wiki, and opted me in without a method of disabling it. Thanks a lot Google. Not. 
+So I started searching for a way to disable. First I found this post , via Saad Kamal, on Google Operating System, but that didn't work to well for me. This greasemonkey based solution is a [...]<p>This is a post from <a href="http://yoast.com/about-me/">Joost de Valk</a>&#39;s <a href="http://yoast.com/">Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/">this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/disabling-searchwiki/">Disabling SearchWiki</a></p>
+
+
+
+Related posts:<ol><li><a href='http://yoast.com/personalized-search-disabling-not-working/' rel='bookmark' title='Permanent Link: Personalized search disabling not working?'>Personalized search disabling not working?</a> <small>I always use my own plugin to disable personalized search...</small></li><li><a href='http://yoast.com/google-de-personalized-search-for-firefox-and-ie7/' rel='bookmark' title='Permanent Link: Google de-Personalized Search for Firefox and IE7'>Google de-Personalized Search for Firefox and IE7</a> <small>I've done it myself, I've created an OpenSearch plugin which...</small></li><li><a href='http://yoast.com/seo-tools-roundup/' rel='bookmark' title='Permanent Link: Cool SEO tools roundup'>Cool SEO tools roundup</a> <small>Some of the cool SEO tools I've come across the...</small></li></ol>]]></description>
+			<content:encoded><![CDATA[<p>Google <a href="http://googleblog.blogspot.com/2008/11/searchwiki-make-search-your-own.html" onclick="javascript:exitTracker._trackEvent('article','http://googleblog.blogspot.com/2008/11/searchwiki-make-search-your-own.html');">introduced Search Wiki</a>, and opted me in without a method of disabling it. Thanks a lot Google. <strong>Not</strong>. </p>
+<p>So I started searching for a way to disable. First I <a href="http://googlesystem.blogspot.com/2008/11/how-to-disable-google-searchwiki.html" onclick="javascript:exitTracker._trackEvent('article','http://googlesystem.blogspot.com/2008/11/how-to-disable-google-searchwiki.html');">found this post</a> , via <a href="http://www.saadkamal.com/google/how-to-turn-off-google-searchwiki/" onclick="javascript:exitTracker._trackEvent('article','http://www.saadkamal.com/google/how-to-turn-off-google-searchwiki/');">Saad Kamal</a>, on Google Operating System, but that didn't work to well for me. <a href="http://www.facesaerch.com/widget/searchwiki-on-off.user.js" onclick="javascript:exitTracker._trackEvent('article','http://www.facesaerch.com/widget/searchwiki-on-off.user.js');">This greasemonkey based solution</a> is a tad bit better, but still only disables the CSS, it doesn't remove the functionality, just hides it.</p>
+<p>Then I stumbled upon <a href="http://groups.google.com/group/Google_Web_Search_Help-UsingWS/browse_thread/thread/3d76baecf04b18d3?pli=1" onclick="javascript:exitTracker._trackEvent('article','http://groups.google.com/group/Google_Web_Search_Help-UsingWS/browse_thread/thread/3d76baecf04b18d3?pli=1');">this thread</a>. </p>
+<p>That thread told me to add <code>hl=all</code> to the query string, and that would indeed disable SearchWiki, at least for now. So I've immediately created a new instance of my Google <a href="http://yoast.com/seo-tools/disable-personalized-search-plugin/" >Disable Personalized Search plugin</a>, which will disable SearchWiki as well.</p>
+<p>If you already have the previous version of that search plugin installed, do the following in Firefox:</p>
+<ul>
+<li>click on the favicon next to the search box, and see the following appear:<br />
+<img src="http://yoast.com/wp-content/uploads/2008/11/manage-search-engines.png" alt="manage search engines" width="271" height="155" title="Disabling SearchWiki Photo" />
+</li>
+<li>Click on Manage, and remove the Google.com Unpersonalized search one.</li>
+<li>Now you can go to the <a href="http://yoast.com/seo-tools/disable-personalized-search-plugin/" >search plugin page</a> and install the new one.</li>
+</ul>
+<p>This hack works only for english results, I'll try to find a more lasting solution, which works for the other languages as well!</p>
+<p>This is a post from <a href="http://yoast.com/about-me/" >Joost de Valk</a>&#39;s <a href="http://yoast.com/" >Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/" >this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/disabling-searchwiki/" >Disabling SearchWiki</a></p>
+
+
+
+
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Sphinn');" href="http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Fdisabling-searchwiki%2F&amp;title=Disabling%20SearchWiki" onclick="javascript:exitTracker._trackEvent('article','http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Fdisabling-searchwiki%2F&amp;title=Disabling%20SearchWiki');" title="Sphinn"><img src="http://yoast.com/wp-content/plugins/sociable/images/sphinn.gif" title="Sphinn" alt="Sphinn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','StumbleUpon');" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Fdisabling-searchwiki%2F&amp;title=Disabling%20SearchWiki" onclick="javascript:exitTracker._trackEvent('article','http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Fdisabling-searchwiki%2F&amp;title=Disabling%20SearchWiki');" title="StumbleUpon"><img src="http://yoast.com/wp-content/plugins/sociable/images/stumbleupon.png" title="StumbleUpon" alt="StumbleUpon" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','del.icio.us');" href="http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Fdisabling-searchwiki%2F&amp;title=Disabling%20SearchWiki" onclick="javascript:exitTracker._trackEvent('article','http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Fdisabling-searchwiki%2F&amp;title=Disabling%20SearchWiki');" title="del.icio.us"><img src="http://yoast.com/wp-content/plugins/sociable/images/delicious.png" title="del.icio.us" alt="del.icio.us" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','LinkedIn');" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Fdisabling-searchwiki%2F&amp;title=Disabling%20SearchWiki&amp;source=Yoast+Tweaking+Websites&amp;summary=Google%20introduced%20Search%20Wiki%2C%20and%20opted%20me%20in%20without%20a%20method%20of%20disabling%20it.%20Thanks%20a%20lot%20Google.%20Not.%20%0A%0ASo%20I%20started%20searching%20for%20a%20way%20to%20disable.%20First%20I%20found%20this%20post%20%2C%20via%20Saad%20Kamal%2C%20on%20Google%20Operating%20System%2C%20but%20that%20didn%27t%20work%20to%20we" onclick="javascript:exitTracker._trackEvent('article','http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Fdisabling-searchwiki%2F&amp;title=Disabling%20SearchWiki&amp;source=Yoast+Tweaking+Websites&amp;summary=Google%20introduced%20Search%20Wiki%2C%20and%20opted%20me%20in%20without%20a%20method%20of%20disabling%20it.%20Thanks%20a%20lot%20Google.%20Not.%20%0A%0ASo%20I%20started%20searching%20for%20a%20way%20to%20disable.%20First%20I%20found%20this%20post%20%2C%20via%20Saad%20Kamal%2C%20on%20Google%20Operating%20System%2C%20but%20that%20didn%27t%20work%20to%20we');" title="LinkedIn"><img src="http://yoast.com/wp-content/plugins/sociable/images/linkedin.png" title="LinkedIn" alt="LinkedIn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Fdisabling-searchwiki%2F&amp;t=Disabling%20SearchWiki" onclick="javascript:exitTracker._trackEvent('article','http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Fdisabling-searchwiki%2F&amp;t=Disabling%20SearchWiki');" title="Facebook"><img src="http://yoast.com/wp-content/plugins/sociable/images/facebook.png" title="Facebook" alt="Facebook" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','description');" href="http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Fdisabling-searchwiki%2F&amp;title=Disabling%20SearchWiki" onclick="javascript:exitTracker._trackEvent('article','http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Fdisabling-searchwiki%2F&amp;title=Disabling%20SearchWiki');" title="description"><img src="http://yoast.com/wp-content/plugins/sociable/images/dzone.png" title="description" alt="description" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','TwitThis');" href="http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Fdisabling-searchwiki%2F" onclick="javascript:exitTracker._trackEvent('article','http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Fdisabling-searchwiki%2F');" title="TwitThis"><img src="http://yoast.com/wp-content/plugins/sociable/images/twitter.gif" title="TwitThis" alt="TwitThis" class="sociable-hovers" /></a>
+
+
+<br/><br/>
+
+<p>Related posts:<ol><li><a href='http://yoast.com/personalized-search-disabling-not-working/' rel='bookmark' title='Permanent Link: Personalized search disabling not working?'>Personalized search disabling not working?</a> <small>I always use my own plugin to disable personalized search...</small></li><li><a href='http://yoast.com/google-de-personalized-search-for-firefox-and-ie7/' rel='bookmark' title='Permanent Link: Google de-Personalized Search for Firefox and IE7'>Google de-Personalized Search for Firefox and IE7</a> <small>I've done it myself, I've created an OpenSearch plugin which...</small></li><li><a href='http://yoast.com/seo-tools-roundup/' rel='bookmark' title='Permanent Link: Cool SEO tools roundup'>Cool SEO tools roundup</a> <small>Some of the cool SEO tools I've come across the...</small></li></ol></p><img src="http://feeds.feedburner.com/~r/joostdevalk/~4/462590849" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://yoast.com/disabling-searchwiki/feed/</wfw:commentRss>
+	
+		<media:content url="http://yoast.com/wp-content/uploads/2008/11/manage-search-engines.png" medium="image">
+			<media:title type="html">manage search engines</media:title>
+		</media:content>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=joostdevalk&amp;itemurl=http%3A%2F%2Fyoast.com%2Fdisabling-searchwiki%2F</feedburner:awareness><feedburner:origLink>http://yoast.com/disabling-searchwiki/</feedburner:origLink></item>
+		<item>
+		<title>Technorati Pepper for Mint</title>
+		<link>http://feeds.feedburner.com/~r/joostdevalk/~3/457706122/</link>
+		<comments>http://yoast.com/technorati-mint-pepper/#comments</comments>
+		<pubDate>Tue, 18 Nov 2008 22:42:47 +0000</pubDate>
+		<dc:creator>Joost de Valk</dc:creator>
+		
+		<category><![CDATA[Analytics]]></category>
+
+		<category><![CDATA[mint]]></category>
+
+		<guid isPermaLink="false">http://yoast.com/?p=1287</guid>
+		<description><![CDATA[I've been playing with the thought of developing a Pepper for Mint for ages, but never got to it. Tonight I decided to do it, and it turned out to be incredibly easy!
+So I've developed a Pepper that has two panes, one displays your Technorati scores like this:
+
+The other displays the latest links Technorati has [...]<p>This is a post from <a href="http://yoast.com/about-me/">Joost de Valk</a>&#39;s <a href="http://yoast.com/">Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/">this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/technorati-mint-pepper/">Technorati Pepper for Mint</a></p>
+
+
+
+Related posts:<ol><li><a href='http://yoast.com/measuring-seo-rankings/' rel='bookmark' title='Permanent Link: Measuring SEO: why rankings are worthless'>Measuring SEO: why rankings are worthless</a> <small>While Joost is enjoying his well deserved honeymoon, he asked...</small></li></ol>]]></description>
+			<content:encoded><![CDATA[<p>I've been playing with the thought of developing a Pepper for Mint for ages, but never got to it. Tonight I decided to do it, and it turned out to be incredibly easy!</p>
+<p>So I've developed a Pepper that has two panes, one displays your Technorati scores like this:</p>
+<p><img src="http://yoast.com/wp-content/uploads/2008/11/technorati-scores.png" alt="technorati scores" width="374" height="110" title="Technorati Pepper for Mint Photo" /></p>
+<p>The other displays the latest links Technorati has found for your blog, like this:</p>
+<p><img src="http://yoast.com/wp-content/uploads/2008/11/technorati-links.png" alt="technorati links.png" width="378" height="360" title="Technorati Pepper for Mint Photo" /></p>
+<p>I used the <a href="http://kailashnadh.name/ducksoup/" onclick="javascript:exitTracker._trackEvent('article','http://kailashnadh.name/ducksoup/');">Duck Soup</a> Technorati API library to do this, and have to say it's very easy to use.</p>
+<p>Download it <a href="http://yoast.com/wp-content/uploads/2008/11/technorati-pepper.zip" onclick="javascript:downloadTracker._trackEvent('/wp-content/uploads/2008/11/technorati-pepper.zip');">here</a>.</p>
+<p>This is a post from <a href="http://yoast.com/about-me/" >Joost de Valk</a>&#39;s <a href="http://yoast.com/" >Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/" >this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/technorati-mint-pepper/" >Technorati Pepper for Mint</a></p>
+
+
+
+
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Sphinn');" href="http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Ftechnorati-mint-pepper%2F&amp;title=Technorati%20Pepper%20for%20Mint" onclick="javascript:exitTracker._trackEvent('article','http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Ftechnorati-mint-pepper%2F&amp;title=Technorati%20Pepper%20for%20Mint');" title="Sphinn"><img src="http://yoast.com/wp-content/plugins/sociable/images/sphinn.gif" title="Sphinn" alt="Sphinn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','StumbleUpon');" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Ftechnorati-mint-pepper%2F&amp;title=Technorati%20Pepper%20for%20Mint" onclick="javascript:exitTracker._trackEvent('article','http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Ftechnorati-mint-pepper%2F&amp;title=Technorati%20Pepper%20for%20Mint');" title="StumbleUpon"><img src="http://yoast.com/wp-content/plugins/sociable/images/stumbleupon.png" title="StumbleUpon" alt="StumbleUpon" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','del.icio.us');" href="http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Ftechnorati-mint-pepper%2F&amp;title=Technorati%20Pepper%20for%20Mint" onclick="javascript:exitTracker._trackEvent('article','http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Ftechnorati-mint-pepper%2F&amp;title=Technorati%20Pepper%20for%20Mint');" title="del.icio.us"><img src="http://yoast.com/wp-content/plugins/sociable/images/delicious.png" title="del.icio.us" alt="del.icio.us" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','LinkedIn');" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Ftechnorati-mint-pepper%2F&amp;title=Technorati%20Pepper%20for%20Mint&amp;source=Yoast+Tweaking+Websites&amp;summary=I%27ve%20been%20playing%20with%20the%20thought%20of%20developing%20a%20Pepper%20for%20Mint%20for%20ages%2C%20but%20never%20got%20to%20it.%20Tonight%20I%20decided%20to%20do%20it%2C%20and%20it%20turned%20out%20to%20be%20incredibly%20easy%21%0A%0ASo%20I%27ve%20developed%20a%20Pepper%20that%20has%20two%20panes%2C%20one%20displays%20your%20Technorati%20scores" onclick="javascript:exitTracker._trackEvent('article','http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Ftechnorati-mint-pepper%2F&amp;title=Technorati%20Pepper%20for%20Mint&amp;source=Yoast+Tweaking+Websites&amp;summary=I%27ve%20been%20playing%20with%20the%20thought%20of%20developing%20a%20Pepper%20for%20Mint%20for%20ages%2C%20but%20never%20got%20to%20it.%20Tonight%20I%20decided%20to%20do%20it%2C%20and%20it%20turned%20out%20to%20be%20incredibly%20easy%21%0A%0ASo%20I%27ve%20developed%20a%20Pepper%20that%20has%20two%20panes%2C%20one%20displays%20your%20Technorati%20scores');" title="LinkedIn"><img src="http://yoast.com/wp-content/plugins/sociable/images/linkedin.png" title="LinkedIn" alt="LinkedIn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Ftechnorati-mint-pepper%2F&amp;t=Technorati%20Pepper%20for%20Mint" onclick="javascript:exitTracker._trackEvent('article','http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Ftechnorati-mint-pepper%2F&amp;t=Technorati%20Pepper%20for%20Mint');" title="Facebook"><img src="http://yoast.com/wp-content/plugins/sociable/images/facebook.png" title="Facebook" alt="Facebook" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','description');" href="http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Ftechnorati-mint-pepper%2F&amp;title=Technorati%20Pepper%20for%20Mint" onclick="javascript:exitTracker._trackEvent('article','http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Ftechnorati-mint-pepper%2F&amp;title=Technorati%20Pepper%20for%20Mint');" title="description"><img src="http://yoast.com/wp-content/plugins/sociable/images/dzone.png" title="description" alt="description" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','TwitThis');" href="http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Ftechnorati-mint-pepper%2F" onclick="javascript:exitTracker._trackEvent('article','http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Ftechnorati-mint-pepper%2F');" title="TwitThis"><img src="http://yoast.com/wp-content/plugins/sociable/images/twitter.gif" title="TwitThis" alt="TwitThis" class="sociable-hovers" /></a>
+
+
+<br/><br/>
+
+<p>Related posts:<ol><li><a href='http://yoast.com/measuring-seo-rankings/' rel='bookmark' title='Permanent Link: Measuring SEO: why rankings are worthless'>Measuring SEO: why rankings are worthless</a> <small>While Joost is enjoying his well deserved honeymoon, he asked...</small></li></ol></p><img src="http://feeds.feedburner.com/~r/joostdevalk/~4/457706122" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://yoast.com/technorati-mint-pepper/feed/</wfw:commentRss>
+	
+		<media:content url="http://yoast.com/wp-content/uploads/2008/11/technorati-scores.png" medium="image">
+			<media:title type="html">technorati scores</media:title>
+		</media:content>
+
+		<media:content url="http://yoast.com/wp-content/uploads/2008/11/technorati-links.png" medium="image">
+			<media:title type="html">technorati links.png</media:title>
+		</media:content>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=joostdevalk&amp;itemurl=http%3A%2F%2Fyoast.com%2Ftechnorati-mint-pepper%2F</feedburner:awareness><feedburner:origLink>http://yoast.com/technorati-mint-pepper/</feedburner:origLink></item>
+		<item>
+		<title>Twitter iPhone apps side by side</title>
+		<link>http://feeds.feedburner.com/~r/joostdevalk/~3/456327087/</link>
+		<comments>http://yoast.com/twitter-iphone-apps/#comments</comments>
+		<pubDate>Mon, 17 Nov 2008 19:27:38 +0000</pubDate>
+		<dc:creator>Joost de Valk</dc:creator>
+		
+		<category><![CDATA[Social Media]]></category>
+
+		<category><![CDATA[iphone]]></category>
+
+		<category><![CDATA[twitter]]></category>
+
+		<guid isPermaLink="false">http://yoast.com/?p=1284</guid>
+		<description><![CDATA[Twitter is now officially a part of my life. I find myself checking Twitter more often then my email, and that, I guess, forces me to be smart about how I use it.
+I've been using Twitterific and Twinkle side by side for a while, but both annoyed me at times. They look like this:
+
+
+
+I was [...]<p>This is a post from <a href="http://yoast.com/about-me/">Joost de Valk</a>&#39;s <a href="http://yoast.com/">Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/">this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/twitter-iphone-apps/">Twitter iPhone apps side by side</a></p>
+
+
+
+Related posts:<ol><li><a href='http://yoast.com/twitter-twitterific/' rel='bookmark' title='Permanent Link: Twittering with Twitterific'>Twittering with Twitterific</a> <small>I've been hooked on Twitter for a while now, (I'm...</small></li><li><a href='http://yoast.com/display-latest-tweet/' rel='bookmark' title='Permanent Link: Easily display your last Tweet'>Easily display your last Tweet</a> <small>I wanted to show my latest tweet on the front...</small></li></ol>]]></description>
+			<content:encoded><![CDATA[<p><a href="http://www.flickr.com/photos/42284674@N00/3039028670" onclick="javascript:exitTracker._trackEvent('article','http://www.flickr.com/photos/42284674@N00/3039028670');" title="View 'Twitter apps side by side' on Flickr.com"><img src="http://farm4.static.flickr.com/3005/3039028670_deb153a447_o.png" alt="Twitter apps side by side" width="320" height="90" align="right" title="Twitter iPhone apps side by side Photo" /></a>Twitter is now officially a part of my life. I find myself checking Twitter more often then my email, and that, I guess, forces me to be smart about how I use it.</p>
+<p>I've been using <a href="http://iconfactory.com/software/twitterrific" onclick="javascript:exitTracker._trackEvent('article','http://iconfactory.com/software/twitterrific');">Twitterific</a> and <a href="http://tapulous.com/twinkle/" onclick="javascript:exitTracker._trackEvent('article','http://tapulous.com/twinkle/');">Twinkle</a> side by side for a while, but both annoyed me at times. They look like this:</p>
+<div style="margin: 10px auto; width: 350px;">
+<a href="http://www.flickr.com/photos/42284674@N00/3038165489" onclick="javascript:exitTracker._trackEvent('article','http://www.flickr.com/photos/42284674@N00/3038165489');" title="View 'Twitterific Pro' on Flickr.com"><img src="http://farm4.static.flickr.com/3060/3038165489_e4655ca4e6_m.jpg" alt="Twitterific Pro" class="alignleft" width="160" height="240" title="Twitter iPhone apps side by side Photo" /></a><a href="http://www.flickr.com/photos/42284674@N00/3039002898" onclick="javascript:exitTracker._trackEvent('article','http://www.flickr.com/photos/42284674@N00/3039002898');" title="View 'Twinkle' on Flickr.com"><img src="http://farm4.static.flickr.com/3139/3039002898_2e439f64c5_m.jpg" alt="Twinkle" style="margin-left: 10px;" class="alignleft" width="160" height="240" title="Twitter iPhone apps side by side Photo" /></a>
+</div>
+<p style="clear:both;">I was missing the easy to reach replies tab, and found both to be a tad bit slow. I remembered from <a href="http://www.chrisbrogan.com/how-i-use-twitter-at-volume/" onclick="javascript:exitTracker._trackEvent('article','http://www.chrisbrogan.com/how-i-use-twitter-at-volume/');">this post from Chris Brogan</a> that he used <a href="http://www.stone.com/Twittelator/" onclick="javascript:exitTracker._trackEvent('article','http://www.stone.com/Twittelator/');">Twittelator</a>, so I downloaded that and played around. It's better, but it's not as simple and solid as I want my client to be. It's color schemes look cool though, check out this one:</p>
+<div style="text-align:center;">
+<a href="http://www.flickr.com/photos/42284674@N00/3039003080" onclick="javascript:exitTracker._trackEvent('article','http://www.flickr.com/photos/42284674@N00/3039003080');" title="View 'Twittelator Pro' on Flickr.com"><img src="http://farm4.static.flickr.com/3203/3039003080_81d3d729a4_m.jpg" alt="Twittelator Pro" border="0" width="160" height="240" title="Twitter iPhone apps side by side Photo" /></a>
+</div>
+<p>The bad thing about it is that it takes too much screen per tweet, which makes it hard to read a lot of tweets quickly.</p>
+<p>Now that I had installed 3 apps already, I thought what the heck, let's try the other ones. I found <a href="http://www.naan.net/trac/wiki/TwitterFon" onclick="javascript:exitTracker._trackEvent('article','http://www.naan.net/trac/wiki/TwitterFon');">Twitterfon</a>, and I think this one is here to stay. It's got everything you need, from a replies and direct messages tab to your normal timeline. It supports GPS and taking pictures and search with a history of your recent searches. And, to boot, it's by far the fastest Twitter app on my iPhone to start up. It looks clean like this:</p>
+<p><a href="http://www.flickr.com/photos/42284674@N00/3039002746" title="View 'Twitterfon' on Flickr.com">
+<div style="text-align:center;"><img src="http://static.flickr.com/3289/3039002746_2168b9a766_m.jpg" alt="Twitterfon" border="0" width="" height="" title="Twitter iPhone apps side by side Photo" /></div>
+<p></a></p>
+<p>Best thing about it? It's free!</p>
+<p>So basically, I think Twitterfon will be my primary iPhone Twitter app for the coming months, as it seems to be everything I need from a Twitter client!</p>
+<p>This is a post from <a href="http://yoast.com/about-me/" >Joost de Valk</a>&#39;s <a href="http://yoast.com/" >Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/" >this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/twitter-iphone-apps/" >Twitter iPhone apps side by side</a></p>
+
+
+
+
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Sphinn');" href="http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Ftwitter-iphone-apps%2F&amp;title=Twitter%20iPhone%20apps%20side%20by%20side" onclick="javascript:exitTracker._trackEvent('article','http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Ftwitter-iphone-apps%2F&amp;title=Twitter%20iPhone%20apps%20side%20by%20side');" title="Sphinn"><img src="http://yoast.com/wp-content/plugins/sociable/images/sphinn.gif" title="Sphinn" alt="Sphinn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','StumbleUpon');" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Ftwitter-iphone-apps%2F&amp;title=Twitter%20iPhone%20apps%20side%20by%20side" onclick="javascript:exitTracker._trackEvent('article','http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Ftwitter-iphone-apps%2F&amp;title=Twitter%20iPhone%20apps%20side%20by%20side');" title="StumbleUpon"><img src="http://yoast.com/wp-content/plugins/sociable/images/stumbleupon.png" title="StumbleUpon" alt="StumbleUpon" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','del.icio.us');" href="http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Ftwitter-iphone-apps%2F&amp;title=Twitter%20iPhone%20apps%20side%20by%20side" onclick="javascript:exitTracker._trackEvent('article','http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Ftwitter-iphone-apps%2F&amp;title=Twitter%20iPhone%20apps%20side%20by%20side');" title="del.icio.us"><img src="http://yoast.com/wp-content/plugins/sociable/images/delicious.png" title="del.icio.us" alt="del.icio.us" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','LinkedIn');" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Ftwitter-iphone-apps%2F&amp;title=Twitter%20iPhone%20apps%20side%20by%20side&amp;source=Yoast+Tweaking+Websites&amp;summary=Twitter%20is%20now%20officially%20a%20part%20of%20my%20life.%20I%20find%20myself%20checking%20Twitter%20more%20often%20then%20my%20email%2C%20and%20that%2C%20I%20guess%2C%20forces%20me%20to%20be%20smart%20about%20how%20I%20use%20it.%0A%0AI%27ve%20been%20using%20Twitterific%20and%20Twinkle%20side%20by%20side%20for%20a%20while%2C%20but%20both%20annoyed%20me%20" onclick="javascript:exitTracker._trackEvent('article','http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Ftwitter-iphone-apps%2F&amp;title=Twitter%20iPhone%20apps%20side%20by%20side&amp;source=Yoast+Tweaking+Websites&amp;summary=Twitter%20is%20now%20officially%20a%20part%20of%20my%20life.%20I%20find%20myself%20checking%20Twitter%20more%20often%20then%20my%20email%2C%20and%20that%2C%20I%20guess%2C%20forces%20me%20to%20be%20smart%20about%20how%20I%20use%20it.%0A%0AI%27ve%20been%20using%20Twitterific%20and%20Twinkle%20side%20by%20side%20for%20a%20while%2C%20but%20both%20annoyed%20me%20');" title="LinkedIn"><img src="http://yoast.com/wp-content/plugins/sociable/images/linkedin.png" title="LinkedIn" alt="LinkedIn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Ftwitter-iphone-apps%2F&amp;t=Twitter%20iPhone%20apps%20side%20by%20side" onclick="javascript:exitTracker._trackEvent('article','http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Ftwitter-iphone-apps%2F&amp;t=Twitter%20iPhone%20apps%20side%20by%20side');" title="Facebook"><img src="http://yoast.com/wp-content/plugins/sociable/images/facebook.png" title="Facebook" alt="Facebook" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','description');" href="http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Ftwitter-iphone-apps%2F&amp;title=Twitter%20iPhone%20apps%20side%20by%20side" onclick="javascript:exitTracker._trackEvent('article','http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Ftwitter-iphone-apps%2F&amp;title=Twitter%20iPhone%20apps%20side%20by%20side');" title="description"><img src="http://yoast.com/wp-content/plugins/sociable/images/dzone.png" title="description" alt="description" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','TwitThis');" href="http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Ftwitter-iphone-apps%2F" onclick="javascript:exitTracker._trackEvent('article','http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Ftwitter-iphone-apps%2F');" title="TwitThis"><img src="http://yoast.com/wp-content/plugins/sociable/images/twitter.gif" title="TwitThis" alt="TwitThis" class="sociable-hovers" /></a>
+
+
+<br/><br/>
+
+<p>Related posts:<ol><li><a href='http://yoast.com/twitter-twitterific/' rel='bookmark' title='Permanent Link: Twittering with Twitterific'>Twittering with Twitterific</a> <small>I've been hooked on Twitter for a while now, (I'm...</small></li><li><a href='http://yoast.com/display-latest-tweet/' rel='bookmark' title='Permanent Link: Easily display your last Tweet'>Easily display your last Tweet</a> <small>I wanted to show my latest tweet on the front...</small></li></ol></p><img src="http://feeds.feedburner.com/~r/joostdevalk/~4/456327087" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://yoast.com/twitter-iphone-apps/feed/</wfw:commentRss>
+	
+		<media:content url="http://farm4.static.flickr.com/3005/3039028670_deb153a447_o.png" medium="image">
+			<media:title type="html">Twitter apps side by side</media:title>
+		</media:content>
+
+		<media:content url="http://farm4.static.flickr.com/3060/3038165489_e4655ca4e6_m.jpg" medium="image">
+			<media:title type="html">Twitterific Pro</media:title>
+		</media:content>
+
+		<media:content url="http://farm4.static.flickr.com/3139/3039002898_2e439f64c5_m.jpg" medium="image">
+			<media:title type="html">Twinkle</media:title>
+		</media:content>
+
+		<media:content url="http://farm4.static.flickr.com/3203/3039003080_81d3d729a4_m.jpg" medium="image">
+			<media:title type="html">Twittelator Pro</media:title>
+		</media:content>
+
+		<media:content url="http://static.flickr.com/3289/3039002746_2168b9a766_m.jpg" medium="image">
+			<media:title type="html">Twitterfon</media:title>
+		</media:content>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=joostdevalk&amp;itemurl=http%3A%2F%2Fyoast.com%2Ftwitter-iphone-apps%2F</feedburner:awareness><feedburner:origLink>http://yoast.com/twitter-iphone-apps/</feedburner:origLink></item>
+		<item>
+		<title>Simple scripts for speedy WordPress actions</title>
+		<link>http://feeds.feedburner.com/~r/joostdevalk/~3/453294163/</link>
+		<comments>http://yoast.com/wordpress-scripts/#comments</comments>
+		<pubDate>Fri, 14 Nov 2008 19:44:12 +0000</pubDate>
+		<dc:creator>Joost de Valk</dc:creator>
+		
+		<category><![CDATA[WordPress]]></category>
+
+		<guid isPermaLink="false">http://yoast.com/?p=1281</guid>
+		<description><![CDATA[Sometimes, when moving or installing WordPress blogs, you'll have a need for some simple scripts to help do simple things. I found a couple of those that helped me out, and I thought I'd share them with you!
+Easily install WordPress
+This first one I shared on my newsletter a couple of weeks back: EasyWP Installer is [...]<p>This is a post from <a href="http://yoast.com/about-me/">Joost de Valk</a>&#39;s <a href="http://yoast.com/">Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/">this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/wordpress-scripts/">Simple scripts for speedy WordPress actions</a></p>
+
+
+
+Related posts:<ol><li><a href='http://yoast.com/custom-wordpress-database-error-pages/' rel='bookmark' title='Permanent Link: Custom WordPress database error pages'>Custom WordPress database error pages</a> <small>WordPress 2.3.2 (we're on 2.3.3 at the moment) introduced a...</small></li><li><a href='http://yoast.com/move-wordpress-blog-domain-10-steps/' rel='bookmark' title='Permanent Link: Move your WordPress blog to a new domain in 10 steps!'>Move your WordPress blog to a new domain in 10 steps!</a> <small>A friend recently asked me how to move his blog,...</small></li><li><a href='http://yoast.com/email-your-wordpress-commentors/' rel='bookmark' title='Permanent Link: Email Your WordPress Commentors'>Email Your WordPress Commentors</a> <small>Shoemoney made a perl script to mail his Wordpress commentors....</small></li></ol>]]></description>
+			<content:encoded><![CDATA[<p><img src="http://yoast.com/wp-content/uploads/2008/11/speedometer.jpg" alt="speedometer" width="250" height="187" class="alignright" title="Simple scripts for speedy WordPress actions Photo" />Sometimes, when moving or installing WordPress blogs, you'll have a need for some simple scripts to help do simple things. I found a couple of those that helped me out, and I thought I'd share them with you!</p>
+<h2>Easily install WordPress</h2>
+<p>This first one I shared on my newsletter a couple of weeks back: <a href="http://www.funscripts.net/php-scripts/" onclick="javascript:exitTracker._trackEvent('article','http://www.funscripts.net/php-scripts/');">EasyWP Installer</a> is a script that helps you quickly install a WordPress if the only thing you have is FTP access. What it does?</p>
+<p>It downloads all the WordPress files for you, so you only have to upload this 8kb file, instead of uploading the entire WordPress directory! Especially on somewhat slower connections, this can be a huge timesaver.</p>
+<h2>Easily backup your database</h2>
+<p>For the same reason, when you have no other access to your database than through localhost, you'll want to dump it through a simple script instead of having to install something like phpMySQLadmin. For this purpose, <a href="http://atutility.com/about/" onclick="javascript:exitTracker._trackEvent('article','http://atutility.com/about/');">Huang Kai</a> developed a script aptly called mysqldump. In this script, you'd have to enter db name, username, host etc.</p>
+<p>I have adapted his script. If you upload it to a WordPress directory, it will auto load the values from the wp-config directory, and allow you an easy way of dumping the database to a MySQL file. Download my version of the script <a href="http://yoast.com/wp-content/uploads/2008/11/mysqldump-wp.zip" onclick="javascript:downloadTracker._trackEvent('/wp-content/uploads/2008/11/mysqldump-wp.zip');">here</a>.</p>
+<h2>Resetting your administrator password</h2>
+<p>Something went wrong in your install? Or you lost the admin password to your blog in some other way? Use the script <a href="http://www.village-idiot.org/archives/2007/05/22/wp-emergency-password-recovery/" onclick="javascript:exitTracker._trackEvent('article','http://www.village-idiot.org/archives/2007/05/22/wp-emergency-password-recovery/');">emergency.php</a> to easily reset it. It allows you to reset the password and then automatically sends an email to the blog administrator telling him what happened. </p>
+<p>This is a post from <a href="http://yoast.com/about-me/" >Joost de Valk</a>&#39;s <a href="http://yoast.com/" >Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/" >this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/wordpress-scripts/" >Simple scripts for speedy WordPress actions</a></p>
+
+
+
+
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Sphinn');" href="http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Fwordpress-scripts%2F&amp;title=Simple%20scripts%20for%20speedy%20WordPress%20actions" onclick="javascript:exitTracker._trackEvent('article','http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Fwordpress-scripts%2F&amp;title=Simple%20scripts%20for%20speedy%20WordPress%20actions');" title="Sphinn"><img src="http://yoast.com/wp-content/plugins/sociable/images/sphinn.gif" title="Sphinn" alt="Sphinn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','StumbleUpon');" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Fwordpress-scripts%2F&amp;title=Simple%20scripts%20for%20speedy%20WordPress%20actions" onclick="javascript:exitTracker._trackEvent('article','http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Fwordpress-scripts%2F&amp;title=Simple%20scripts%20for%20speedy%20WordPress%20actions');" title="StumbleUpon"><img src="http://yoast.com/wp-content/plugins/sociable/images/stumbleupon.png" title="StumbleUpon" alt="StumbleUpon" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','del.icio.us');" href="http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Fwordpress-scripts%2F&amp;title=Simple%20scripts%20for%20speedy%20WordPress%20actions" onclick="javascript:exitTracker._trackEvent('article','http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Fwordpress-scripts%2F&amp;title=Simple%20scripts%20for%20speedy%20WordPress%20actions');" title="del.icio.us"><img src="http://yoast.com/wp-content/plugins/sociable/images/delicious.png" title="del.icio.us" alt="del.icio.us" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','LinkedIn');" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Fwordpress-scripts%2F&amp;title=Simple%20scripts%20for%20speedy%20WordPress%20actions&amp;source=Yoast+Tweaking+Websites&amp;summary=Sometimes%2C%20when%20moving%20or%20installing%20WordPress%20blogs%2C%20you%27ll%20have%20a%20need%20for%20some%20simple%20scripts%20to%20help%20do%20simple%20things.%20I%20found%20a%20couple%20of%20those%20that%20helped%20me%20out%2C%20and%20I%20thought%20I%27d%20share%20them%20with%20you%21%0A%0AEasily%20install%20WordPress%0AThis%20first%20one%20I" onclick="javascript:exitTracker._trackEvent('article','http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Fwordpress-scripts%2F&amp;title=Simple%20scripts%20for%20speedy%20WordPress%20actions&amp;source=Yoast+Tweaking+Websites&amp;summary=Sometimes%2C%20when%20moving%20or%20installing%20WordPress%20blogs%2C%20you%27ll%20have%20a%20need%20for%20some%20simple%20scripts%20to%20help%20do%20simple%20things.%20I%20found%20a%20couple%20of%20those%20that%20helped%20me%20out%2C%20and%20I%20thought%20I%27d%20share%20them%20with%20you%21%0A%0AEasily%20install%20WordPress%0AThis%20first%20one%20I');" title="LinkedIn"><img src="http://yoast.com/wp-content/plugins/sociable/images/linkedin.png" title="LinkedIn" alt="LinkedIn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Fwordpress-scripts%2F&amp;t=Simple%20scripts%20for%20speedy%20WordPress%20actions" onclick="javascript:exitTracker._trackEvent('article','http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Fwordpress-scripts%2F&amp;t=Simple%20scripts%20for%20speedy%20WordPress%20actions');" title="Facebook"><img src="http://yoast.com/wp-content/plugins/sociable/images/facebook.png" title="Facebook" alt="Facebook" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','description');" href="http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Fwordpress-scripts%2F&amp;title=Simple%20scripts%20for%20speedy%20WordPress%20actions" onclick="javascript:exitTracker._trackEvent('article','http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Fwordpress-scripts%2F&amp;title=Simple%20scripts%20for%20speedy%20WordPress%20actions');" title="description"><img src="http://yoast.com/wp-content/plugins/sociable/images/dzone.png" title="description" alt="description" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','TwitThis');" href="http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Fwordpress-scripts%2F" onclick="javascript:exitTracker._trackEvent('article','http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Fwordpress-scripts%2F');" title="TwitThis"><img src="http://yoast.com/wp-content/plugins/sociable/images/twitter.gif" title="TwitThis" alt="TwitThis" class="sociable-hovers" /></a>
+
+
+<br/><br/>
+
+<p>Related posts:<ol><li><a href='http://yoast.com/custom-wordpress-database-error-pages/' rel='bookmark' title='Permanent Link: Custom WordPress database error pages'>Custom WordPress database error pages</a> <small>WordPress 2.3.2 (we're on 2.3.3 at the moment) introduced a...</small></li><li><a href='http://yoast.com/move-wordpress-blog-domain-10-steps/' rel='bookmark' title='Permanent Link: Move your WordPress blog to a new domain in 10 steps!'>Move your WordPress blog to a new domain in 10 steps!</a> <small>A friend recently asked me how to move his blog,...</small></li><li><a href='http://yoast.com/email-your-wordpress-commentors/' rel='bookmark' title='Permanent Link: Email Your WordPress Commentors'>Email Your WordPress Commentors</a> <small>Shoemoney made a perl script to mail his Wordpress commentors....</small></li></ol></p><img src="http://feeds.feedburner.com/~r/joostdevalk/~4/453294163" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://yoast.com/wordpress-scripts/feed/</wfw:commentRss>
+	
+		<media:content url="http://yoast.com/wp-content/uploads/2008/11/speedometer.jpg" medium="image">
+			<media:title type="html">speedometer</media:title>
+		</media:content>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=joostdevalk&amp;itemurl=http%3A%2F%2Fyoast.com%2Fwordpress-scripts%2F</feedburner:awareness><feedburner:origLink>http://yoast.com/wordpress-scripts/</feedburner:origLink></item>
+		<item>
+		<title>Personal note: wedding pictures!</title>
+		<link>http://feeds.feedburner.com/~r/joostdevalk/~3/449886335/</link>
+		<comments>http://yoast.com/wedding-pictures/#comments</comments>
+		<pubDate>Tue, 11 Nov 2008 19:45:55 +0000</pubDate>
+		<dc:creator>Joost de Valk</dc:creator>
+		
+		<category><![CDATA[Offtopic]]></category>
+
+		<category><![CDATA[Personal]]></category>
+
+		<guid isPermaLink="false">http://yoast.com/?p=1279</guid>
+		<description><![CDATA[So I've been meaning to show a couple of these to all my readers for a while but just didn't get to doing it, but here goes. Serge Chamuleau of Trouwen in Arnhem made these wonderful pictures of my wife Marieke and son Tycho at our wedding (ow yeah, warning, I'm in some of them [...]<p>This is a post from <a href="http://yoast.com/about-me/">Joost de Valk</a>&#39;s <a href="http://yoast.com/">Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/">this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/wedding-pictures/">Personal note: wedding pictures!</a></p>
+
+
+
+No related posts.]]></description>
+			<content:encoded><![CDATA[<p>So I've been meaning to show a couple of these to all my readers for a while but just didn't get to doing it, but here goes. Serge Chamuleau of <a href="http://trouweninarnhem.nl/" onclick="javascript:exitTracker._trackEvent('article','http://trouweninarnhem.nl/');">Trouwen in Arnhem</a> made these wonderful pictures of my wife Marieke and son Tycho at our wedding (ow yeah, warning, I'm in some of them too).</p>
+<p><object width="580" height="387"><param name="flashvars" value="&#038;offsite=true&#038;lang=en-us&#038;page_show_url=%2Fphotos%2Fjdevalk%2Fsets%2F72157608792643952%2Fshow%2F&#038;page_show_back_url=%2Fphotos%2Fjdevalk%2Fsets%2F72157608792643952%2F&#038;set_id=72157608792643952&#038;jump_to="></param><param name="movie" value="http://www.flickr.com/apps/slideshow/show.swf?v=61927"></param><param name="allowFullScreen" value="true"></param><embed type="application/x-shockwave-flash" src="http://www.flickr.com/apps/slideshow/show.swf?v=61927" allowFullScreen="true" flashvars="&#038;offsite=true&#038;lang=en-us&#038;page_show_url=%2Fphotos%2Fjdevalk%2Fsets%2F72157608792643952%2Fshow%2F&#038;page_show_back_url=%2Fphotos%2Fjdevalk%2Fsets%2F72157608792643952%2F&#038;set_id=72157608792643952&#038;jump_to=" width="580" height="387"></embed></object></p>
+<p>This is a post from <a href="http://yoast.com/about-me/" >Joost de Valk</a>&#39;s <a href="http://yoast.com/" >Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/" >this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/wedding-pictures/" >Personal note: wedding pictures!</a></p>
+
+
+
+
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Sphinn');" href="http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Fwedding-pictures%2F&amp;title=Personal%20note%3A%20wedding%20pictures%21" onclick="javascript:exitTracker._trackEvent('article','http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Fwedding-pictures%2F&amp;title=Personal%20note%3A%20wedding%20pictures%21');" title="Sphinn"><img src="http://yoast.com/wp-content/plugins/sociable/images/sphinn.gif" title="Sphinn" alt="Sphinn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','StumbleUpon');" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Fwedding-pictures%2F&amp;title=Personal%20note%3A%20wedding%20pictures%21" onclick="javascript:exitTracker._trackEvent('article','http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Fwedding-pictures%2F&amp;title=Personal%20note%3A%20wedding%20pictures%21');" title="StumbleUpon"><img src="http://yoast.com/wp-content/plugins/sociable/images/stumbleupon.png" title="StumbleUpon" alt="StumbleUpon" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','del.icio.us');" href="http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Fwedding-pictures%2F&amp;title=Personal%20note%3A%20wedding%20pictures%21" onclick="javascript:exitTracker._trackEvent('article','http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Fwedding-pictures%2F&amp;title=Personal%20note%3A%20wedding%20pictures%21');" title="del.icio.us"><img src="http://yoast.com/wp-content/plugins/sociable/images/delicious.png" title="del.icio.us" alt="del.icio.us" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','LinkedIn');" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Fwedding-pictures%2F&amp;title=Personal%20note%3A%20wedding%20pictures%21&amp;source=Yoast+Tweaking+Websites&amp;summary=So%20I%27ve%20been%20meaning%20to%20show%20a%20couple%20of%20these%20to%20all%20my%20readers%20for%20a%20while%20but%20just%20didn%27t%20get%20to%20doing%20it%2C%20but%20here%20goes.%20Serge%20Chamuleau%20of%20Trouwen%20in%20Arnhem%20made%20these%20wonderful%20pictures%20of%20my%20wife%20Marieke%20and%20son%20Tycho%20at%20our%20wedding%20%28ow%20yeah%2C%20" onclick="javascript:exitTracker._trackEvent('article','http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Fwedding-pictures%2F&amp;title=Personal%20note%3A%20wedding%20pictures%21&amp;source=Yoast+Tweaking+Websites&amp;summary=So%20I%27ve%20been%20meaning%20to%20show%20a%20couple%20of%20these%20to%20all%20my%20readers%20for%20a%20while%20but%20just%20didn%27t%20get%20to%20doing%20it%2C%20but%20here%20goes.%20Serge%20Chamuleau%20of%20Trouwen%20in%20Arnhem%20made%20these%20wonderful%20pictures%20of%20my%20wife%20Marieke%20and%20son%20Tycho%20at%20our%20wedding%20%28ow%20yeah%2C%20');" title="LinkedIn"><img src="http://yoast.com/wp-content/plugins/sociable/images/linkedin.png" title="LinkedIn" alt="LinkedIn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Fwedding-pictures%2F&amp;t=Personal%20note%3A%20wedding%20pictures%21" onclick="javascript:exitTracker._trackEvent('article','http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Fwedding-pictures%2F&amp;t=Personal%20note%3A%20wedding%20pictures%21');" title="Facebook"><img src="http://yoast.com/wp-content/plugins/sociable/images/facebook.png" title="Facebook" alt="Facebook" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','description');" href="http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Fwedding-pictures%2F&amp;title=Personal%20note%3A%20wedding%20pictures%21" onclick="javascript:exitTracker._trackEvent('article','http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Fwedding-pictures%2F&amp;title=Personal%20note%3A%20wedding%20pictures%21');" title="description"><img src="http://yoast.com/wp-content/plugins/sociable/images/dzone.png" title="description" alt="description" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','TwitThis');" href="http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Fwedding-pictures%2F" onclick="javascript:exitTracker._trackEvent('article','http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Fwedding-pictures%2F');" title="TwitThis"><img src="http://yoast.com/wp-content/plugins/sociable/images/twitter.gif" title="TwitThis" alt="TwitThis" class="sociable-hovers" /></a>
+
+
+<br/><br/>
+
+<p>No related posts.</p><img src="http://feeds.feedburner.com/~r/joostdevalk/~4/449886335" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://yoast.com/wedding-pictures/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=joostdevalk&amp;itemurl=http%3A%2F%2Fyoast.com%2Fwedding-pictures%2F</feedburner:awareness><feedburner:origLink>http://yoast.com/wedding-pictures/</feedburner:origLink></item>
+		<item>
+		<title>Your homepage: your blogs showcase</title>
+		<link>http://feeds.feedburner.com/~r/joostdevalk/~3/444226249/</link>
+		<comments>http://yoast.com/homepage-showcase/#comments</comments>
+		<pubDate>Thu, 06 Nov 2008 10:18:47 +0000</pubDate>
+		<dc:creator>Joost de Valk</dc:creator>
+		
+		<category><![CDATA[Online Marketing]]></category>
+
+		<category><![CDATA[Blogging]]></category>
+
+		<guid isPermaLink="false">http://yoast.com/?p=1278</guid>
+		<description><![CDATA[When you get to a blog you've never visited before, through a search, a listing on a social network site or a link on another blog, what kind of page do you land up on? Usually, it'll be an article page. You'll read the article, and decide, based on that article and the other info [...]<p>This is a post from <a href="http://yoast.com/about-me/">Joost de Valk</a>&#39;s <a href="http://yoast.com/">Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/">this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/homepage-showcase/">Your homepage: your blogs showcase</a></p>
+
+
+
+Related posts:<ol><li><a href='http://yoast.com/articles/wordpress-seo/' rel='bookmark' title='Permanent Link: WordPress SEO'>WordPress SEO</a> <small>The Definitive Guide To Higher Rankings For Your Blog I...</small></li><li><a href='http://yoast.com/serious-blogging-questions/' rel='bookmark' title='Permanent Link: 6 Serious Questions for Serious Bloggers'>6 Serious Questions for Serious Bloggers</a> <small>While it's a hobby for a lot of people, for...</small></li></ol>]]></description>
+			<content:encoded><![CDATA[<p>When you get to a blog you've never visited before, through a search, a listing on a social network site or a link on another blog, what kind of page do you land up on? Usually, it'll be an article page. You'll read the article, and decide, based on that article and the other info and look &#038; feel offered to you on that page, whether you'll go on through the site or not.</p>
+<p>If you decide to go on, you'll either go directly to another article, or you'll most probably hit one of two links: the blogs about page, or its homepage. This time, you pick the homepage. If the site you're visiting has a "default" theme, you'll see a listing of the last 10 posts and the same sidebar you already saw on the article you just read. That's it.</p>
+<p>Isn't that a blatant misuse of the trust you've just given that site? Wouldn't it be way more appropriate if the site showed you the very best content it can offer you, and gave you a sample of what kind of content you can find on it?</p>
+<p>That is your homepage! It's a showcase of your blog. Whether people went to it because they heard from someone "you should go to *****.com, it's cool" or because they've just read an article and want to learn more about your site, that page is probably your best chance of getting a new subscriber.</p>
+<p>So what <em>should</em> be on your homepage? This is the bare minimum I'd say:</p>
+<ul>
+<li>An about text about yourself / about text about the blog.</li>
+<li>A big call to action, the action being subscribing, either through email or RSS.</li>
+<li>A listing of your latest posts.</li>
+<li>Your "taxonomies", either your category structure, your tag structure or both.</li>
+</ul>
+<p>After that it's all about personal preferences. I like to show off some of my best content by having featured posts and plugins, and of course I show off my <a href="http://twitter.com/jdevalk" onclick="javascript:exitTracker._trackEvent('article','http://twitter.com/jdevalk');">Twitter</a>.</p>
+<p>So, how does your blogs homepage do on these criteria? What  would you do differently?</p>
+<p>This is a post from <a href="http://yoast.com/about-me/" >Joost de Valk</a>&#39;s <a href="http://yoast.com/" >Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/" >this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/homepage-showcase/" >Your homepage: your blogs showcase</a></p>
+<br/><br/>
+
+<p>Related posts:<ol><li><a href='http://yoast.com/articles/wordpress-seo/' rel='bookmark' title='Permanent Link: WordPress SEO'>WordPress SEO</a> <small>The Definitive Guide To Higher Rankings For Your Blog I...</small></li><li><a href='http://yoast.com/serious-blogging-questions/' rel='bookmark' title='Permanent Link: 6 Serious Questions for Serious Bloggers'>6 Serious Questions for Serious Bloggers</a> <small>While it's a hobby for a lot of people, for...</small></li></ol></p><img src="http://feeds.feedburner.com/~r/joostdevalk/~4/444226249" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://yoast.com/homepage-showcase/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=joostdevalk&amp;itemurl=http%3A%2F%2Fyoast.com%2Fhomepage-showcase%2F</feedburner:awareness><feedburner:origLink>http://yoast.com/homepage-showcase/</feedburner:origLink></item>
+		<item>
+		<title>Using the Technorati API on your blog</title>
+		<link>http://feeds.feedburner.com/~r/joostdevalk/~3/434953481/</link>
+		<comments>http://yoast.com/technorati-api-wordpress/#comments</comments>
+		<pubDate>Tue, 28 Oct 2008 17:34:00 +0000</pubDate>
+		<dc:creator>Joost de Valk</dc:creator>
+		
+		<category><![CDATA[Webdesign &amp; development]]></category>
+
+		<category><![CDATA[WordPress]]></category>
+
+		<guid isPermaLink="false">http://yoast.com/?p=1277</guid>
+		<description><![CDATA[In my effort to remove all badges from my front page and decrease the load time, I have now moved to using the Technorati API to display Technorati info. It looks like this:
+ 
+The code is almost as easy as the code to display your FeedBurner subscribers or your last tweet. You'll need to create [...]<p>This is a post from <a href="http://yoast.com/about-me/">Joost de Valk</a>&#39;s <a href="http://yoast.com/">Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/">this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/technorati-api-wordpress/">Using the Technorati API on your blog</a></p>
+
+
+
+Related posts:<ol><li><a href='http://yoast.com/feedburner-subscriber-count/' rel='bookmark' title='Permanent Link: Showing off your FeedBurner subscribers'>Showing off your FeedBurner subscribers</a> <small>Quite a few websites have started to show of their...</small></li><li><a href='http://yoast.com/display-latest-tweet/' rel='bookmark' title='Permanent Link: Easily display your last Tweet'>Easily display your last Tweet</a> <small>I wanted to show my latest tweet on the front...</small></li><li><a href='http://yoast.com/install-wp-263/' rel='bookmark' title='Permanent Link: Install WordPress 2.6.3'>Install WordPress 2.6.3</a> <small>Apparently, a security flaw has been found in the Snoopy...</small></li></ol>]]></description>
+			<content:encoded><![CDATA[<p>In my effort to remove all badges from my front page and decrease the load time, I have now moved to using the Technorati API to display Technorati info. It looks like this:</p>
+<p><img src="http://yoast.com/wp-content/uploads/2008/10/technorati-api.png" alt="Technorati API" width="199" height="102" class="aligncenter" title="Using the Technorati API on your blog Photo" /> </p>
+<p>The code is almost as easy as the code to <a href="http://yoast.com/feedburner-subscriber-count/" >display your FeedBurner subscribers</a> or <a href="http://yoast.com/display-latest-tweet/" >your last tweet</a>. You'll need to create an account with Technorati and then <a href="http://technorati.com/developers/apikey.html" onclick="javascript:exitTracker._trackEvent('article','http://technorati.com/developers/apikey.html');">get your API key</a>. That page will also tell you how much queries you've made that day, and what your daily allowance is.</p>
+<p>This is the code, including caching:</p>
+
+
+<div class="wp_syntax"><div class="code"><pre class="php php" style="font-family:monospace;"><span style="color: #000088;">$technorati</span> <span style="color: #339933;">=</span> get_option<span style="color: #009900;">&#40;</span><span style="color: #0000ff;">&quot;technorati&quot;</span><span style="color: #009900;">&#41;</span>;
+<span style="color: #b1b100;">if</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$technorati</span><span style="color: #009900;">&#91;</span><span style="">'lastcheck'</span><span style="color: #009900;">&#93;</span> <span style="color: #339933;">&lt;</span> <span style="color: #009900;">&#40;</span> <span style="color: #990000;">mktime</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span> <span style="color: #339933;">-</span> <span style="color: #cc66cc;">600</span> <span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+	<span style="color: #000088;">$apikey</span> 	<span style="color: #339933;">=</span> <span style="color: #0000ff;">&quot;apikey&quot;</span>;
+	<span style="color: #000088;">$endpoint</span> 	<span style="color: #339933;">=</span> <span style="color: #0000ff;">&quot;http://api.technorati.com/cosmos?key=&quot;</span><span style="color: #339933;">.</span><span style="color: #000088;">$apikey</span>;
+	<span style="color: #000088;">$request</span> 	<span style="color: #339933;">=</span> <span style="color: #000088;">$endpoint</span><span style="color: #339933;">.</span><span style="color: #0000ff;">&quot;&amp;url=yoast.com&amp;limit=10&quot;</span>;
+	<span style="color: #000088;">$snoopy</span> 	<span style="color: #339933;">=</span> <span style="color: #000000; font-weight: bold;">new</span> Snoopy;
+	<span style="color: #000088;">$result</span> 	<span style="color: #339933;">=</span> <span style="color: #000088;">$snoopy</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">fetch</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$request</span><span style="color: #009900;">&#41;</span>;
+	<span style="color: #b1b100;">if</span> <span style="color: #009900;">&#40;</span><span style="color: #000088;">$result</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span>
+		<span style="color: #000088;">$pattern1</span> <span style="color: #339933;">=</span> <span style="">'/&lt;inboundblogs&gt;([0-9]+)&lt;\/inboundblogs&gt;/'</span>;
+		<span style="color: #000088;">$pattern2</span> <span style="color: #339933;">=</span> <span style="">'/&lt;inboundlinks&gt;([0-9]+)&lt;\/inboundlinks&gt;/'</span>;
+		<span style="color: #000088;">$pattern3</span> <span style="color: #339933;">=</span> <span style="">'/&lt;rank&gt;([0-9]+)&lt;\/rank&gt;/'</span>;
+		<span style="color: #990000;">preg_match</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$pattern1</span><span style="color: #339933;">,</span> <span style="color: #000088;">$snoopy</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">results</span><span style="color: #339933;">,</span> <span style="color: #000088;">$matches</span><span style="color: #009900;">&#41;</span>;
+		<span style="color: #990000;">preg_match</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$pattern2</span><span style="color: #339933;">,</span> <span style="color: #000088;">$snoopy</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">results</span><span style="color: #339933;">,</span> <span style="color: #000088;">$matches2</span><span style="color: #009900;">&#41;</span>;
+		<span style="color: #990000;">preg_match</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$pattern3</span><span style="color: #339933;">,</span> <span style="color: #000088;">$snoopy</span><span style="color: #339933;">-&gt;</span><span style="color: #004000;">results</span><span style="color: #339933;">,</span> <span style="color: #000088;">$matches3</span><span style="color: #009900;">&#41;</span>;
+		<span style="color: #000088;">$technorati</span><span style="color: #009900;">&#91;</span><span style="">'inboundblogs'</span><span style="color: #009900;">&#93;</span> <span style="color: #339933;">=</span> <span style="color: #990000;">number_format</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$matches</span><span style="color: #009900;">&#91;</span><span style="color: #cc66cc;">1</span><span style="color: #009900;">&#93;</span><span style="color: #009900;">&#41;</span>;
+		<span style="color: #000088;">$technorati</span><span style="color: #009900;">&#91;</span><span style="">'inboundlinks'</span><span style="color: #009900;">&#93;</span> <span style="color: #339933;">=</span> <span style="color: #990000;">number_format</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$matches2</span><span style="color: #009900;">&#91;</span><span style="color: #cc66cc;">1</span><span style="color: #009900;">&#93;</span><span style="color: #009900;">&#41;</span>;
+		<span style="color: #000088;">$technorati</span><span style="color: #009900;">&#91;</span><span style="">'rank'</span><span style="color: #009900;">&#93;</span> 	<span style="color: #339933;">=</span> <span style="color: #990000;">number_format</span><span style="color: #009900;">&#40;</span><span style="color: #000088;">$matches3</span><span style="color: #009900;">&#91;</span><span style="color: #cc66cc;">1</span><span style="color: #009900;">&#93;</span><span style="color: #009900;">&#41;</span>;
+		<span style="color: #000088;">$technorati</span><span style="color: #009900;">&#91;</span><span style="">'lastcheck'</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">=</span> <span style="color: #990000;">mktime</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span>;
+		update_option<span style="color: #009900;">&#40;</span><span style="color: #0000ff;">&quot;technorati&quot;</span><span style="color: #339933;">,</span><span style="color: #000088;">$technorati</span><span style="color: #009900;">&#41;</span>;
+	<span style="color: #009900;">&#125;</span>
+<span style="color: #009900;">&#125;</span>
+<span style="color: #990000;">echo</span> <span style="color: #0000ff;">&quot;&lt;h3&gt;Technorati&lt;/h3&gt;&quot;</span>;
+<span style="color: #990000;">echo</span> <span style="color: #0000ff;">&quot;&lt;p&gt;&quot;</span><span style="color: #339933;">.</span><span style="color: #000088;">$technorati</span><span style="color: #009900;">&#91;</span><span style="">'inboundblogs'</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">.</span><span style="color: #0000ff;">&quot; blogs linked
+	&quot;</span><span style="color: #339933;">.</span><span style="color: #000088;">$technorati</span><span style="color: #009900;">&#91;</span><span style="">'inboundlinks'</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">.</span><span style="color: #0000ff;">&quot; times in the last 6 months,
+	ranking it as &quot;</span><span style="color: #339933;">.</span><span style="color: #000088;">$technorati</span><span style="color: #009900;">&#91;</span><span style="">'rank'</span><span style="color: #009900;">&#93;</span><span style="color: #339933;">.</span><span style="color: #0000ff;">&quot; among all blogs.&lt;/p&gt;&quot;</span>;</pre></div></div>
+
+
+
+<p>That's it! Let me know if you've got any questions!</p>
+<p>This is a post from <a href="http://yoast.com/about-me/" >Joost de Valk</a>&#39;s <a href="http://yoast.com/" >Yoast - Tweaking Websites</a>. 
+
+Want to make sure you're trying just as hard or harder as your competitors to rank in the search engines? Use <a href="http://yoast.com/seo-tools/website-auditor/" >this website auditing tool</a> and you'll know!</p>
+<p><a href="http://yoast.com/technorati-api-wordpress/" >Using the Technorati API on your blog</a></p>
+
+
+
+
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Sphinn');" href="http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Ftechnorati-api-wordpress%2F&amp;title=Using%20the%20Technorati%20API%20on%20your%20blog" onclick="javascript:exitTracker._trackEvent('article','http://sphinn.com/submit.php?url=http%3A%2F%2Fyoast.com%2Ftechnorati-api-wordpress%2F&amp;title=Using%20the%20Technorati%20API%20on%20your%20blog');" title="Sphinn"><img src="http://yoast.com/wp-content/plugins/sociable/images/sphinn.gif" title="Sphinn" alt="Sphinn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','StumbleUpon');" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Ftechnorati-api-wordpress%2F&amp;title=Using%20the%20Technorati%20API%20on%20your%20blog" onclick="javascript:exitTracker._trackEvent('article','http://www.stumbleupon.com/submit?url=http%3A%2F%2Fyoast.com%2Ftechnorati-api-wordpress%2F&amp;title=Using%20the%20Technorati%20API%20on%20your%20blog');" title="StumbleUpon"><img src="http://yoast.com/wp-content/plugins/sociable/images/stumbleupon.png" title="StumbleUpon" alt="StumbleUpon" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','del.icio.us');" href="http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Ftechnorati-api-wordpress%2F&amp;title=Using%20the%20Technorati%20API%20on%20your%20blog" onclick="javascript:exitTracker._trackEvent('article','http://del.icio.us/post?url=http%3A%2F%2Fyoast.com%2Ftechnorati-api-wordpress%2F&amp;title=Using%20the%20Technorati%20API%20on%20your%20blog');" title="del.icio.us"><img src="http://yoast.com/wp-content/plugins/sociable/images/delicious.png" title="del.icio.us" alt="del.icio.us" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','LinkedIn');" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Ftechnorati-api-wordpress%2F&amp;title=Using%20the%20Technorati%20API%20on%20your%20blog&amp;source=Yoast+Tweaking+Websites&amp;summary=In%20my%20effort%20to%20remove%20all%20badges%20from%20my%20front%20page%20and%20decrease%20the%20load%20time%2C%20I%20have%20now%20moved%20to%20using%20the%20Technorati%20API%20to%20display%20Technorati%20info.%20It%20looks%20like%20this%3A%0D%0A%0D%0A%20%0D%0A%0D%0AThe%20code%20is%20almost%20as%20easy%20as%20the%20code%20to%20display%20your%20FeedBurner%20su" onclick="javascript:exitTracker._trackEvent('article','http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fyoast.com%2Ftechnorati-api-wordpress%2F&amp;title=Using%20the%20Technorati%20API%20on%20your%20blog&amp;source=Yoast+Tweaking+Websites&amp;summary=In%20my%20effort%20to%20remove%20all%20badges%20from%20my%20front%20page%20and%20decrease%20the%20load%20time%2C%20I%20have%20now%20moved%20to%20using%20the%20Technorati%20API%20to%20display%20Technorati%20info.%20It%20looks%20like%20this%3A%0D%0A%0D%0A%20%0D%0A%0D%0AThe%20code%20is%20almost%20as%20easy%20as%20the%20code%20to%20display%20your%20FeedBurner%20su');" title="LinkedIn"><img src="http://yoast.com/wp-content/plugins/sociable/images/linkedin.png" title="LinkedIn" alt="LinkedIn" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','Facebook');" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Ftechnorati-api-wordpress%2F&amp;t=Using%20the%20Technorati%20API%20on%20your%20blog" onclick="javascript:exitTracker._trackEvent('article','http://www.facebook.com/sharer.php?u=http%3A%2F%2Fyoast.com%2Ftechnorati-api-wordpress%2F&amp;t=Using%20the%20Technorati%20API%20on%20your%20blog');" title="Facebook"><img src="http://yoast.com/wp-content/plugins/sociable/images/facebook.png" title="Facebook" alt="Facebook" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','description');" href="http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Ftechnorati-api-wordpress%2F&amp;title=Using%20the%20Technorati%20API%20on%20your%20blog" onclick="javascript:exitTracker._trackEvent('article','http://www.dzone.com/links/add.html?url=http%3A%2F%2Fyoast.com%2Ftechnorati-api-wordpress%2F&amp;title=Using%20the%20Technorati%20API%20on%20your%20blog');" title="description"><img src="http://yoast.com/wp-content/plugins/sociable/images/dzone.png" title="description" alt="description" class="sociable-hovers" /></a>
+	<a rel="nofollow"  onclick="javascript:exitTracker._trackEvent('sociable','TwitThis');" href="http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Ftechnorati-api-wordpress%2F" onclick="javascript:exitTracker._trackEvent('article','http://twitter.com/home?status=http%3A%2F%2Fyoast.com%2Ftechnorati-api-wordpress%2F');" title="TwitThis"><img src="http://yoast.com/wp-content/plugins/sociable/images/twitter.gif" title="TwitThis" alt="TwitThis" class="sociable-hovers" /></a>
+
+
+<br/><br/>
+
+<p>Related posts:<ol><li><a href='http://yoast.com/feedburner-subscriber-count/' rel='bookmark' title='Permanent Link: Showing off your FeedBurner subscribers'>Showing off your FeedBurner subscribers</a> <small>Quite a few websites have started to show of their...</small></li><li><a href='http://yoast.com/display-latest-tweet/' rel='bookmark' title='Permanent Link: Easily display your last Tweet'>Easily display your last Tweet</a> <small>I wanted to show my latest tweet on the front...</small></li><li><a href='http://yoast.com/install-wp-263/' rel='bookmark' title='Permanent Link: Install WordPress 2.6.3'>Install WordPress 2.6.3</a> <small>Apparently, a security flaw has been found in the Snoopy...</small></li></ol></p><img src="http://feeds.feedburner.com/~r/joostdevalk/~4/434953481" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://yoast.com/technorati-api-wordpress/feed/</wfw:commentRss>
+	
+		<media:content url="http://yoast.com/wp-content/uploads/2008/10/technorati-api.png" medium="image">
+			<media:title type="html">Technorati API</media:title>
+		</media:content>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=joostdevalk&amp;itemurl=http%3A%2F%2Fyoast.com%2Ftechnorati-api-wordpress%2F</feedburner:awareness><feedburner:origLink>http://yoast.com/technorati-api-wordpress/</feedburner:origLink></item>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetFeedData?uri=joostdevalk</feedburner:awareness></channel>
+</rss>

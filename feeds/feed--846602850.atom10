@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="http://feeds.feedburner.com/~d/styles/atom10full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xml:lang="en-US">
+  <title>Ordered List - Home</title>
+  <id>tag:orderedlist.com,2008:mephisto/</id>
+  <generator version="0.7.3" uri="http://mephistoblog.com">Mephisto Noh-Varr</generator>
+  
+  <link href="http://orderedlist.com/" rel="alternate" type="text/html" />
+  <updated>2008-10-24T22:40:45Z</updated>
+  <link rel="self" href="http://feeds.feedburner.com/orderedlist" type="application/atom+xml" /><feedburner:browserFriendly>This is an XML content feed. It is intended to be viewed in a newsreader or syndicated to another site.</feedburner:browserFriendly><entry xml:base="http://orderedlist.com/">
+    <author>
+      <name>jnunemaker</name>
+    </author>
+    <id>tag:orderedlist.com,2008-10-24:5232</id>
+    <published>2008-10-24T22:39:00Z</published>
+    <updated>2008-10-24T22:40:45Z</updated>
+    <category term="fun" />
+    <category term="interface" />
+    <category term="politics" />
+    <category term="rails" />
+    <link href="http://orderedlist.com/articles/yardvote" rel="alternate" type="text/html" />
+    <title>YardVote</title>
+<summary type="html">&lt;p&gt;Yesterday some &lt;a href="http://collectiveidea.com"&gt;friends from Holland, MI&lt;/a&gt; came down to hang out with Steve and I all day. They started a project called Yard Vote &lt;a href="http://twitter.com/danielmorrison/statuses/929805773"&gt;about a month ago&lt;/a&gt; and we decided to help them give the application some upgrades.&lt;/p&gt;</summary><content type="html">
+            &lt;p&gt;Yesterday some &lt;a href="http://collectiveidea.com"&gt;friends from Holland, MI&lt;/a&gt; came down to hang out with Steve and I all day. They started a project called Yard Vote &lt;a href="http://twitter.com/danielmorrison/statuses/929805773"&gt;about a month ago&lt;/a&gt; and we decided to help them give the application some upgrades.&lt;/p&gt;
+&lt;h2&gt;New Design&lt;/h2&gt;
+
+
+	&lt;p&gt;Steve worked out a new design for them that really features the mapping aspect and he created some killer icons. The previous version was fixed width and kind of narrow, so it was harder to see all the signs. Now with the full width map, you can really get a feel for the sign density in an area.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;a href="http://yardvote.com"&gt;&lt;img class="feature" src="http://orderedlist.com/assets/2008/10/24/yardvote.jpg" alt="YardVote" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;Email a Sign&lt;/h2&gt;
+
+
+	&lt;p&gt;When I started using YardVote I quickly found myself addicted, but the sign entry process from a phone was kind of slow. While Steve was working on the interface, I added the ability for Yard Vote to receive emails. In a few hours, I was able to glue together the workings to allow emailing yardvote@collectiveidea.com with the subject being the color of the signs and the body equivalent to the address. The email receiving can even update existing signs if you accidentally put in the wrong color.&lt;/p&gt;
+
+
+	&lt;p&gt;It was a lot of fun to take a day off and help out our friends with their cool project. &lt;span class="caps"&gt;FYI&lt;/span&gt;:&amp;nbsp;YardVote isn’t just for Michigan and Indiana either, as there are already signs marked in 26 states. &lt;a href="http://yardvote.com"&gt;Go ahead and add one yourself&lt;/a&gt;. Let’s see how many we can get before the election.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://orderedlist.com/">
+    <author>
+      <name>jnunemaker</name>
+    </author>
+    <id>tag:orderedlist.com,2008-10-16:5216</id>
+    <published>2008-10-16T18:31:00Z</published>
+    <updated>2008-10-16T19:33:43Z</updated>
+    <category term="design" />
+    <category term="interface" />
+    <link href="http://orderedlist.com/articles/scannability-equals-profit" rel="alternate" type="text/html" />
+    <title>Scannability Equals Profit</title>
+<summary type="html">&lt;p&gt;No one reads on the internet anymore. Right? Time and time again it is proven that we just skim and scan, eyes darting around like a chicken with its head cut off. When are we as web workers going to fully recognize that?&lt;/p&gt;</summary><content type="html">
+            &lt;p&gt;No one reads on the internet anymore. Right? Time and time again it is proven that we just skim and scan, eyes darting around like a chicken with its head cut off. When are we as web workers going to fully recognize that?&lt;/p&gt;
+&lt;p&gt;I use Facebook pretty rarely, but today I received a message from a friend so I fired up Safari and logged in. I immediately was distracted by how perfect the messages area of Facebook is designed. See below.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img class="feature" src="http://orderedlist.com/assets/2008/10/16/facebook_readability_1.jpg" alt="Facebook messages area" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;You might be thinking, ok, this guy is crazy because that text is too blurry to read. If so, you missed the point. In order to really dive into &lt;strong&gt;why&lt;/strong&gt; I think it is designed so well, I’m going to add some overlays so it is easier to reference things.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img class="feature" src="http://orderedlist.com/assets/2008/10/16/facebook_readability_columns_1.jpg" alt="Facebook messages area" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;The screenshot above is around 660 pixels of real estate when live in Facebook. I shrunk it down a bit to fit here. Let’s start with columns 1 and 2. Facebook could have merged those columns together. I mean  look at all the vertical space left unused for each message. The reason Facebook separated the image and details is when you merge them into one column you lower scannability. It’s definition time. I define scannability as the ability to &lt;em&gt;quickly&lt;/em&gt; scan &lt;em&gt;vertically&lt;/em&gt; and &lt;em&gt;comprehend&lt;/em&gt;. &lt;strong&gt;Scanning is a very vertical thing.&lt;/strong&gt; As your eyes shoot down the messages page, it is very easy to scan the images, then the names and then the message body. It would be much hard to for your brain to comprehend things if it had to process, text then image, text then image, text then…you get the point.&lt;/p&gt;
+
+
+	&lt;h2&gt;Speed Reading&lt;/h2&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Try something real quick for me.&lt;/strong&gt; Reread the paragraph above, but as you go through the lines, don’t trace all the way from the beginning of the line to the end. &lt;strong&gt;Start on the second or third word and as you get two or three words from the end continue&lt;/strong&gt; to the next line until you have read the paragraph. The amazing thing is, your brain sees and comprehends the words on each end of the line, even though you don’t look at them. I picked up this speed reading technique in the &lt;a href="http://www.fourhourworkweek.com/blog/"&gt;Four Hour Workweek by Tim Ferriss&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;This is why Facebook, whether consciously or not, is only using a three hundred pixel column for the message body, instead of the four or five hundred pixels that are available. As columns of text get more thin, there are fewer words to deal with on each line, which makes it faster to scan vertically and comprehend.&lt;/p&gt;
+
+
+	&lt;h2&gt;Poor Scannability Example&lt;/h2&gt;
+
+
+	&lt;p&gt;Take &lt;a href="http://twitter.com"&gt;Twitter&lt;/a&gt; for example. I love Twitter like a son, but I find their web interface almost unusable.  Aesthetically, it is pleasing, but the line length of the tweets (around 400 pixels as of article posting date) is so long that I lose the ability to scan vertically through them. The length mixed with the fact that the username is inline in the tweet forces me to &lt;strong&gt;read&lt;/strong&gt; my tweets. Yeah, that is right, I don’t like &lt;strong&gt;reading&lt;/strong&gt; my tweets. I scan them for keywords and such and only read those that catch my eye or are by someone I hold near and dear. I do the same thing on your blog, that is, if I read your blog.&lt;/p&gt;
+
+
+	&lt;p&gt;I believe &lt;strong&gt;scannability is one reason Twitterrific, &lt;a href="http://getsnitter.com/"&gt;Snitter&lt;/a&gt; and all the mobile Twitter clients are so popular&lt;/strong&gt;. Remember? People don’t read anymore.&lt;/p&gt;
+
+
+	&lt;h2&gt;The Point&lt;/h2&gt;
+
+
+	&lt;p&gt;Yes, I do have a point. This is not just a rant. I think as screens started getting wider, web workers  decided they should use the extra space. I mean, we can’t leave it blank, it’s above the fold (don’t get me started on that). &lt;strong&gt;Wrong.&lt;/strong&gt; Just because the space is there, doesn’t mean it should be used. Next time you begin work on a website or web app, remember these three simple steps.&lt;/p&gt;
+
+
+	&lt;h2&gt;3 Simple Steps&lt;/h2&gt;
+
+
+	&lt;ol&gt;
+	&lt;li&gt;Scannability&lt;/li&gt;
+		&lt;li&gt;???&lt;/li&gt;
+		&lt;li&gt;Profit&lt;/li&gt;
+	&lt;/ol&gt;
+          </content>  </entry>
+  <entry xml:base="http://orderedlist.com/">
+    <author>
+      <name>jnunemaker</name>
+    </author>
+    <id>tag:orderedlist.com,2008-10-11:5196</id>
+    <published>2008-10-11T18:50:00Z</published>
+    <updated>2008-10-11T18:50:26Z</updated>
+    <category term="conferences" />
+    <category term="traveling" />
+    <category term="workshops" />
+    <link href="http://orderedlist.com/articles/ordered-list-on-the-road" rel="alternate" type="text/html" />
+    <title>Ordered List on the Road</title>
+<summary type="html">&lt;p&gt;Steve and I (mostly Steve) are going to be racking up some frequent flyer miles over the next thirty days. If you are attending any of the following events, be sure to say hi.&lt;/p&gt;</summary><content type="html">
+            &lt;p&gt;Steve and I (mostly Steve) are going to be racking up some frequent flyer miles over the next thirty days. If you are attending any of the following events, be sure to say hi.&lt;/p&gt;
+&lt;h2&gt;Web Builder, Oct 13-15, Las Vegas&lt;/h2&gt;
+
+
+	&lt;p&gt;The &lt;a href="http://webbuilderconference.com/2008/"&gt;Web Builder 2.0 conference&lt;/a&gt; is coming up next week and Steve will be doing to presentations. The first is on &lt;a href="http://webbuilderconference.com/2008/coding.aspx#7"&gt;how to use and extend jQuery&lt;/a&gt;. The second is a dueling presentation with Dan Rubin, a Sidebar cohort, on &lt;a href="http://webbuilderconference.com/2008/track2.aspx#2"&gt;how to get designers and developers on the same page&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;h2&gt;Future of Web Design, Nov 3-4, New York City&lt;/h2&gt;
+
+
+	&lt;p&gt;Steve will be presenting the &lt;a href="http://www.futureofwebdesign.com/2008/newyork/workshops#jumper03"&gt;exciting new capabilities of &lt;span class="caps"&gt;HTML 5&lt;/span&gt; and &lt;span class="caps"&gt;CSS 3&lt;/span&gt;&lt;/a&gt; in a three and half hour workshop. This I’m sure is a can’t miss.&lt;/p&gt;
+
+
+	&lt;h2&gt;RubyConf, Nov 6-8, Orlando, FL&lt;/h2&gt;
+
+
+	&lt;p&gt;Steve will arrive home from &lt;span class="caps"&gt;FOWD&lt;/span&gt;, tag me, and I’ll be on my way to &lt;a href="http://rubyconf.org"&gt;Ruby Conf&lt;/a&gt;. I won’t be speaking, but I will be having fun. This will be my second ruby conf and I’m stoked.&lt;/p&gt;
+
+
+	&lt;h2&gt;Sidebar Workshop, Nov 12, Washingon, DC&lt;/h2&gt;
+
+
+	&lt;p&gt;The Sidebar crew and their diverse talents will be holding a &lt;a href="http://sidebarworkshops.com/2008/washingtondc/"&gt;one day workshop&lt;/a&gt; in our nation’s capital. They’ll cover what you’ll need to create a high quality web site from start to finish. Steve will be presenting on &lt;span class="caps"&gt;HTML&lt;/span&gt;/CSS. If you live in DC, &lt;a href="http://sidebarworkshops.com/2008/washingtondc/"&gt;be sure to register&lt;/a&gt;!&lt;/p&gt;
+
+
+	&lt;p&gt;Steve and I love to socialize, so if you are attending any of these conferences/workshops, be sure to flag us down on Twitter or in the hallway.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://orderedlist.com/">
+    <author>
+      <name>jnunemaker</name>
+    </author>
+    <id>tag:orderedlist.com,2008-10-09:5161</id>
+    <published>2008-10-09T20:22:00Z</published>
+    <updated>2008-10-09T20:24:23Z</updated>
+    <category term="css" />
+    <category term="deprecation" />
+    <category term="fonts" />
+    <category term="yahoo" />
+    <link href="http://orderedlist.com/articles/hello-old-friend" rel="alternate" type="text/html" />
+    <title>Hello Old Friend</title>
+<summary type="html">&lt;p&gt;Remember back in the good old days? The days when our stylesheets were littered with ‘px’ font sizes and all was naively well? Guess what? Those days are here again.&lt;/p&gt;</summary><content type="html">
+            &lt;p&gt;Remember back in the good old days? The days when our stylesheets were littered with ‘px’ font sizes and all was naively well? Guess what? Those days are here again.&lt;/p&gt;
+&lt;p&gt;For quite some time now I’ve been using Yahoo’s great &lt;a href="http://developer.yahoo.com/yui/fonts/"&gt;font&lt;/a&gt; and &lt;a href="http://developer.yahoo.com/yui/reset/"&gt;reset&lt;/a&gt; styles in every new project. Basically, they normalize font sizing issues using percentages. 100% is 13px and they have a chart up and down to attain the other pixel sizes you may need.&lt;/p&gt;
+
+
+	&lt;p&gt;The other day as I started a new project, it hit me. Safari is now on ‘roids. Firefox 3 is not too far behind. And Internet Explorer 7, well &lt;span class="caps"&gt;IE7&lt;/span&gt;  now does the ‘zoom’ of the whole page rather than  just shifting font sizes up. The only browser that has problems with resizing pixel-based font sizes  is Internet Explorer 6, right? And now is the time, if there ever was one, to begin &lt;span class="caps"&gt;IE6&lt;/span&gt;’s deprecation.&lt;/p&gt;
+
+
+	&lt;p&gt;I’m not gonna lie, I immediately fired up my text editor and starting littering, nay, joyously smashing ‘13px’ and ‘48px’ (just because) all over my stylesheet. And you know what? It felt great.&lt;/p&gt;
+
+
+	&lt;p&gt;Now there are those who enjoy percentages and em’s already and they probably won’t take kindly to this but frankly, I just don’t enjoy math that much &lt;sub&gt;[1]&lt;/sub&gt;. I hereby declare pixel font sizes safe to use once again.&lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code class="css"&gt;body { font-size:12px; }&lt;/code&gt;&lt;/pre&gt;
+
+	&lt;p&gt;Note: I checked around with a few people to make sure I wasn’t hog crazy before posting this. If I am in fact hog crazy and coincidentally the people I asked also are, feel free to point it out in the comments. I’m not above being wrong.&lt;/p&gt;
+
+
+	&lt;p&gt;[1] I was going to be much more harsh on those who would continue to use percentages and em based font sizes, telling them that they were obviously wrong, but I’ll leave that kind of stuff to &lt;a href="http://jeffcroft.com"&gt;Jeff Croft&lt;/a&gt;. :)&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://orderedlist.com/">
+    <author>
+      <name>admin</name>
+    </author>
+    <id>tag:orderedlist.com,2008-09-16:4923</id>
+    <published>2008-09-16T12:00:00Z</published>
+    <updated>2008-10-27T22:59:11Z</updated>
+    <category term="harmony" />
+    <link href="http://orderedlist.com/articles/harmony-user-management" rel="alternate" type="text/html" />
+    <title>Harmony: User Management</title>
+<summary type="html">&lt;p&gt;When we set out to make Harmony, our upcoming website management system, we wanted to solve some of the more annoying issues that we had run into with managing content on the web.  User management is one such issue.&lt;/p&gt;</summary><content type="html">
+            &lt;p&gt;When we set out to make Harmony, our upcoming website management system, we wanted to solve some of the more annoying issues that we had run into with managing content on the web.  User management is one such issue.&lt;/p&gt;
+&lt;p&gt;The administrative utility of adding users to a management system is commonplace.  And there’s nothing particularly difficult about it. But we feel there are a few ways to simplify the process for content managers and developers alike. Keep in mind that we’re talking here about people who manage the website from the administrative interface, not ‘public facing’ users, like forum members for example. Also, Harmony will start off, at least, being a hosted management solution, so many of these features become more powerful in that environment.&lt;/p&gt;
+
+
+	&lt;h2&gt;Permissions&lt;/h2&gt;
+
+
+	&lt;p&gt;Let it be known that both John and I are both fiercely opposed to granular permission levels. They add over-complexity for their little usefulness, and are only in place to help paranoid managers. John and I like to say that “we don’t write software to solve social problems.”&lt;/p&gt;
+
+
+	&lt;p&gt;That said, there will be a few basic permission levels where they make the most sense.&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;Account Owners&lt;/strong&gt;: Owners will have access to anything in an account, including managing billing information, users, and sites.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;Administrators&lt;/strong&gt;: Administrators are nearly identical to account owners, but won’t have access to the billing section of the account.  They also can’t remove/demote account owners. Just like account owners, they will have access to manage any site in the account, including sites that are added in the future.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;Site Managers&lt;/strong&gt;: Site managers are assigned to only one or more specific sites in an account, but will have full access to add users and manage content on those sites. The specific sites assigned to these users will stay the same, even as more sites are added to the account in the future.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;One other key feature is that users can be identified as developers, which will show all the template tools and advanced theming utilities.  If a user is not assigned this developer flag, these tools will simply be removed from the interface to simplify management for those at a non-technical level.&lt;/p&gt;
+
+
+	&lt;h2&gt;One Login&lt;/h2&gt;
+
+
+	&lt;p&gt;After working with content management systems for years, specifically working with single-installs of either custom software or open-source tools like WordPress, maintaining content across a distributed set of accounts and servers is a nightmare. Remembering your login for each separate instance is a pain, but even if you use tools like 1password, or simply have the same username/password everywhere, you still have to go through the login process at each location. Harmony will be different. Your user account, be it with your email address and password or your OpenID, will be completely unique to the system.  You may belong to only one main account, or you may have several that you manage. All you have to do is login once, and you’ll have access to everything you need from one administrative interface.  Finally.&lt;/p&gt;
+
+
+	&lt;p&gt;As a developer, you’ll have options on how to serve your clients with Harmony.  You can have a large account for your business, host all your client sites in that one account, and bill your clients to cover the cost, or profit from, your single account.  If you prefer to avoid the monthly billing scenario, you can have your clients sign up for their own site account, and grant you administrative access.  In the interface, the accounts and sites will be organized and easy to access, no matter which method you use.  Or you could even blend the two, with almost no difference in how you, or your clients, manage their sites and content.&lt;/p&gt;
+
+
+	&lt;h2&gt;Convenience&lt;/h2&gt;
+
+
+	&lt;p&gt;Our &lt;span class="caps"&gt;CMS&lt;/span&gt; survey showed that the average number of sites being managed was typically not less than 4, and often times more like 20 or 30.  Starting with user accounts, we’re trying to make the process of managing your websites as convenient as possible. We have many more ideas that are being built into Harmony, so if the project interests you, watch out for more updates.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://orderedlist.com/">
+    <author>
+      <name>admin</name>
+    </author>
+    <id>tag:orderedlist.com,2008-09-04:4818</id>
+    <published>2008-09-04T20:42:00Z</published>
+    <updated>2008-09-04T20:44:07Z</updated>
+    <category term="fancyzoom" />
+    <category term="interaction" />
+    <category term="jquery" />
+    <link href="http://orderedlist.com/articles/fancyzoom-meet-jquery" rel="alternate" type="text/html" />
+    <title>FancyZoom meet jQuery</title>
+<summary type="html">&lt;p&gt;A few days ago &lt;a href="/articles/fancyzoom-meet-prototype"&gt;John posted&lt;/a&gt; a rewritten version of &lt;a href="http://www.cabel.name/2008/02/fancyzoom-10.html"&gt;Cabel Sasser’s FancyZoom&lt;/a&gt; to work with Prototype and Scriptaculous.  I took it upon myself to port it to &lt;a href="http://jquery.com"&gt;jQuery&lt;/a&gt;, while making a few usability improvements.&lt;/p&gt;</summary><content type="html">
+            &lt;p&gt;A few days ago &lt;a href="/articles/fancyzoom-meet-prototype"&gt;John posted&lt;/a&gt; a rewritten version of &lt;a href="http://www.cabel.name/2008/02/fancyzoom-10.html"&gt;Cabel Sasser’s FancyZoom&lt;/a&gt; to work with Prototype and Scriptaculous.  I took it upon myself to port it to &lt;a href="http://jquery.com"&gt;jQuery&lt;/a&gt;, while making a few usability improvements.&lt;/p&gt;
+&lt;p&gt;FIrst off, you can &lt;a href="/demos/fancy-zoom-jquery/"&gt;visit the demo to see the effect in action&lt;/a&gt;.  It’s nearly identical in behavior to John’s original in Prototype. But the fancyZoom effect is added in a much more jQuery-like way.&lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code class="javascript"&gt;$(document).ready(function() {
+    $('a.zoom').fancyZoom();
+});&lt;/code&gt;&lt;/pre&gt;
+
+	&lt;p&gt;This will add the Zoom Effect to any &lt;code&gt;a&lt;/code&gt; tag classed with &lt;code&gt;zoom&lt;/code&gt;, and will show content relating to the &lt;code&gt;id&lt;/code&gt; referenced in the &lt;code&gt;href&lt;/code&gt; of the &lt;code&gt;a&lt;/code&gt; tag.&lt;/p&gt;
+
+
+	&lt;h2&gt;Additions, etc.&lt;/h2&gt;
+
+
+	&lt;p&gt;I’ve added in a few additional usability enhancements, most of which John has included back into the Prototype version.  These include:&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;The zoom will close when clicking outside the zoom box area.&lt;/li&gt;
+		&lt;li&gt;Hitting the &lt;code&gt;esc&lt;/code&gt; key will close the zoom window.&lt;/li&gt;
+		&lt;li&gt;Passing an option of &lt;code&gt;closeOnClick: true&lt;/code&gt; into the &lt;code&gt;fancyZoom&lt;/code&gt; function will close the zoom when the contents are clicked as well.  This works great for image galleries.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;So enjoy, all you jQuery folks.  Both jQuery and Prototype versions are kept in the same repository, so you can &lt;a href="http://github.com/jnunemaker/fancy-zoom/tree/master"&gt;get the code and see examples at GitHub&lt;/a&gt;.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://orderedlist.com/">
+    <author>
+      <name>jnunemaker</name>
+    </author>
+    <id>tag:orderedlist.com,2008-09-02:4793</id>
+    <published>2008-09-02T20:58:00Z</published>
+    <updated>2008-09-02T21:01:01Z</updated>
+    <category term="interaction" />
+    <category term="javascript" />
+    <category term="prototype" />
+    <link href="http://orderedlist.com/articles/fancyzoom-meet-prototype" rel="alternate" type="text/html" />
+    <title>FancyZoom Meet Prototype</title>
+<summary type="html">&lt;p&gt;I hate lightboxes. Everyone who knows me, knows this. When I saw &lt;a href="http://www.cabel.name/2008/02/fancyzoom-10.html"&gt;Cabel Sasser’s FancyZoom&lt;/a&gt;, a similar interaction, I liked the idea but not the exact implementation, so I rewrote it.&lt;/p&gt;</summary><content type="html">
+            &lt;p&gt;I hate lightboxes. Everyone who knows me, knows this. When I saw &lt;a href="http://www.cabel.name/2008/02/fancyzoom-10.html"&gt;Cabel Sasser’s FancyZoom&lt;/a&gt;, a similar interaction, I liked the idea but not the exact implementation, so I rewrote it.&lt;/p&gt;
+&lt;p&gt;So what didn’t I like about Cabel’s? Nothing big and nothing deal breaking, just more a matter of preference. &lt;strong&gt;First, I didn’t like that it used &lt;span class="caps"&gt;AJAX&lt;/span&gt;.&lt;/strong&gt; I tend to lean towards the side of rendering everything and then showing and hiding, rather than loading stuff with &lt;span class="caps"&gt;AJAX&lt;/span&gt;. I’m not a fan of waiting once a page is loaded, so my version works with any &lt;span class="caps"&gt;HTML&lt;/span&gt; already included on the page.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Second, Cabel, being the rebel that he is, built his from scratch&lt;/strong&gt; with no use of any JavaScript libraries. That is cool and all, but I almost always have Prototype and Scriptaculous included. Cabel’s version without Prototype is two scripts that weigh in at 36k. My version with prototype is only 12k. Granted, we are doing things a bit differently, and mine has the overhead of Prototype and Scriptaculous, but like I said, I’d have that overhead with or without the fancy zoom.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Third, Cabel’s implementation only works for images&lt;/strong&gt; and it loads them via &lt;span class="caps"&gt;AJAX&lt;/span&gt; (to save initial page weight). I think that the zoom interaction is pretty interesting so I didn’t want a version limited to just images. Mine supports pretty much any html you can throw in a div (images, text, flash, etc.). The only caveat is the html must be on the page somewhere, at this point.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Fourth, and final, is that I liked Apple’s rounded corners&lt;/strong&gt;, as opposed to the original fancy zoom’s square edges. Sexy. You can see it on &lt;a href="http://www.apple.com/ilife/iphoto/"&gt;Apple’s site&lt;/a&gt; (click on the watch video button) or just take a gander at the screenshot below.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img class="feature" src="http://orderedlist.com/assets/2008/9/2/iphoto_zoom.jpg" alt="iPhoto Zoom" /&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;Demos&lt;/h2&gt;
+
+
+	&lt;p&gt;As always, I’ve whipped together a &lt;a href="http://orderedlist.com/demos/fancy-zoom/"&gt;little demo site&lt;/a&gt; for you.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;a href="http://orderedlist.com/demos/fancy-zoom/"&gt; &lt;img class="feature" src="http://orderedlist.com/assets/2008/9/2/fancy_zoom.jpg" alt="Fancy Zoom" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;A Few Snippets&lt;/h2&gt;
+
+
+	&lt;p&gt;I won’t go into all the code, as it would take forever, but I’ll mention a couple of snippets from fancy zoom.&lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code class="javascript"&gt;Object.extend(String.prototype, {
+  // if a string doesn't end with str it appends it
+  ensureEndsWith: function(str) {
+    return this.endsWith(str) ? this : this + str;
+  },
+
+  // makes sure that string ends with px (for setting widths and heights)
+  px: function() {
+    return this.ensureEndsWith('px');
+  }
+});
+
+Object.extend(Number.prototype, {
+  // makes sure that number ends with px (for setting widths and heights)
+  px: function() {
+    return this.toString().px();
+  }
+});&lt;/code&gt;&lt;/pre&gt;
+
+	&lt;p&gt;When you are setting widths and height in prototype you always have to have ‘px’ on the end. I got tired of adding it, so using the snippets above I can do things like the code below, and I’m guaranteed to always end up with the correct unit.&lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code class="javascript"&gt;180.px() // =&amp;gt; '180px'
+'180'.px() // =&amp;gt; '180px'
+'180px'.px() // =&amp;gt; '180px'&lt;/code&gt;&lt;/pre&gt; 
+
+	&lt;p&gt;Also, for the first time I used Effect.Parallel, which allows you to run multiple effects at once really easily. In this case, I’m running Effect.Appear, Effect.Move and Effect.Morph in sync to make the transition feel like it is jumping off the page.&lt;/p&gt;
+
+
+	&lt;p&gt;At any rate, this was an interesting project and I’m sure I’ll be updating it with more goodies as I use it. The &lt;a href="http://github.com/jnunemaker/fancy-zoom/tree/master"&gt;code and examples are up on Github&lt;/a&gt; so feel free to fork and give back. Hope it comes in handy for you.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://orderedlist.com/">
+    <author>
+      <name>jnunemaker</name>
+    </author>
+    <id>tag:orderedlist.com,2008-09-01:4778</id>
+    <published>2008-09-01T13:07:00Z</published>
+    <updated>2008-09-26T05:12:20Z</updated>
+    <category term="harmony" />
+    <category term="pricing" />
+    <category term="signup" />
+    <link href="http://orderedlist.com/articles/harmony-signup-and-cost" rel="alternate" type="text/html" />
+    <title>Harmony: Signup and Cost</title>
+<summary type="html">&lt;p&gt;I don’t know about you but I like to try before I buy. That is why signing up for Harmony will require no payment details. Provide us with a bit of information and you’ll be on your way to the administration area where you can take our baby for a spin.&lt;/p&gt;</summary><content type="html">
+            &lt;p&gt;I don’t know about you but I like to try before I buy. That is why signing up for Harmony will require no payment details. Provide us with a bit of information and you’ll be on your way to the administration area where you can take our baby for a spin.&lt;/p&gt;
+&lt;p&gt;What exactly are we requiring? All we want to know is who you are and how you would like to login. We have two login options, email with a password or OpenID. Steve and I are both fans of OpenID, so it’s important to us to allow you to use it from the start. The main goal of the signup page was to make it as simple and quick to complete as possible. Below is a screenshot of a piece of the signup form in it’s current state.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img class="feature" src="http://orderedlist.com/assets/2008/9/1/harmony_signup_1.jpg" alt="harmony_signup.jpg" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Once you have created your account, you’ll be taken to your account’s administration area, where you can start adding sites and users. One of the cool things that we’ve talked about is not charging a dime until a site goes live. Think about it. Administration area use won’t really cost us money, so why should we charge you for it? What will cost us money is the infrastructure and programming necessary to make sure the site you have created is available and speedy once you make it public.&lt;/p&gt;
+
+
+	&lt;h2&gt;What Will It Cost?&lt;/h2&gt;
+
+
+	&lt;p&gt;The cat is out of the bag. We &lt;em&gt;are&lt;/em&gt; going to charge money for the hard work we put into Harmony. How much? We don’t know yet, but we promise it will be reasonable. Based on experience, we know it can be difficult managing the infrastructure an application like this requires, so the balance is what makes it worth the effort for us and affordable for you.&lt;/p&gt;
+
+
+	&lt;p&gt;That is all for this week. Next week we will share what we have done with users. We are taking a bit of a different spin than some applications, so it should start some interesting discussions. That said, don’t feel you have to wait until next week to let loose with some feedback.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://orderedlist.com/">
+    <author>
+      <name>jnunemaker</name>
+    </author>
+    <id>tag:orderedlist.com,2008-08-22:4726</id>
+    <published>2008-08-22T19:28:00Z</published>
+    <updated>2008-09-26T05:12:28Z</updated>
+    <category term="content management" />
+    <category term="harmony" />
+    <link href="http://orderedlist.com/articles/introducing-harmonious-fridays" rel="alternate" type="text/html" />
+    <title>Introducing Harmonious Fridays</title>
+<summary type="html">&lt;p&gt;On my second day working with Steve at Ordered List, we began our first application. I started programming and Steve started designing and a few days later we had a great start.&lt;/p&gt;</summary><content type="html">
+            &lt;p&gt;On my second day working with Steve at Ordered List, we began our first application. I started programming and Steve started designing and a few days later we had a great start.&lt;/p&gt;
+&lt;p&gt;Only problem is that start has barely been touched during July and August. Harmonious Fridays will be our solution to that problem. Allow me to explain.&lt;/p&gt;
+
+
+	&lt;h2&gt;What&lt;/h2&gt;
+
+
+	&lt;p&gt;&lt;img src="http://orderedlist.com/assets/2008/8/22/harmony.png" alt="Harmony Screenshot" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;So what are we building? If there was a realm that Steve and I would not be bashful declaring ourselves experts in, it would be website administration. We’ve built countless systems that empower non-technical users to update their content, without giving up the control that  developers and designers require. Harmony will be it’s name and managing websites will be it’s game.&lt;/p&gt;
+
+
+	&lt;h2&gt;Why&lt;/h2&gt;
+
+
+	&lt;p&gt;Both of us have spent our formidable years as web developers creating applications to manage websites. In fact, we got so tired of building them at &lt;a href="http://webgroup.nd.edu/"&gt;Notre Dame&lt;/a&gt;, we decided to create one to rule them all. It was aptly named Conductor (built with Rails) and it was, and still is for that matter, awesome. We’ve been looking around at the various solutions (&lt;a href="http://expressionengine.com/"&gt;Expression Engine&lt;/a&gt;, &lt;a href="http://wordpress.org/"&gt;Wordpress&lt;/a&gt;, &lt;a href="http://mephistoblog.com/"&gt;Mephisto&lt;/a&gt;, etc.) and have not found one that hits our sweet spot.&lt;/p&gt;
+
+
+	&lt;h2&gt;Our Dream&lt;/h2&gt;
+
+
+	&lt;p&gt;We have a dream. We would like to manage all of our sites in one place. We want to login once and seamlessly switched between those sites. We are tired of installing software and setting up servers for each site that we create. We want full control (markup, styles, flexibility). We want an interface that is so simple our mothers could use it. We want statistics integrated in a way that will help us make content decisions. What about you? Do you have some of these dreams?&lt;/p&gt;
+
+
+	&lt;h2&gt;The Plan&lt;/h2&gt;
+
+
+	&lt;p&gt;In an effort to bring our dreams into fruition, we have declared Fridays as Harmony workdays (thus Harmonious Fridays). Each Friday, Steve and I will head into the office (wherever the office is that day) and work solely on Harmony. That alone should help us gain momentum on the project, but that is not where it stops.&lt;/p&gt;
+
+
+	&lt;p&gt;We are building this first because we want it, but second because we think others will want it too (&lt;a href="http://orderedlist.com/articles/content-management-survey-results"&gt;thus the survey&lt;/a&gt;).  That is why each Friday (or sometime over the weekend), we are going to post the results of the day’s work. The posts will vary in content (concepts, code, mockups, screencasts), but, ultimately, will give you a chance to help guide the project and keep us accountable. We are pretty excited to try this out and curious to see what kind of feedback we get along the way.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://orderedlist.com/">
+    <author>
+      <name>admin</name>
+    </author>
+    <id>tag:orderedlist.com,2008-08-22:4723</id>
+    <published>2008-08-22T18:45:00Z</published>
+    <updated>2008-09-26T05:12:36Z</updated>
+    <category term="content management" />
+    <category term="graphs" />
+    <category term="results" />
+    <category term="survey" />
+    <link href="http://orderedlist.com/articles/content-management-survey-results" rel="alternate" type="text/html" />
+    <title>Content Management Survey Results</title>
+<summary type="html">&lt;p&gt;After a solid week of activity, we’ve closed our &lt;a href="/articles/your-thoughts-on-content-management"&gt;&lt;span class="caps"&gt;CMS&lt;/span&gt; Survey&lt;/a&gt;. Some of the answers were predictable, but there were a few informational gems that we’ll be able to pull from this data set.  We’ve summarized the results below for your edification.&lt;/p&gt;</summary><content type="html">
+            &lt;p&gt;After a solid week of activity, we’ve closed our &lt;a href="/articles/your-thoughts-on-content-management"&gt;&lt;span class="caps"&gt;CMS&lt;/span&gt; Survey&lt;/a&gt;. Some of the answers were predictable, but there were a few informational gems that we’ll be able to pull from this data set.  We’ve summarized the results below for your edification.&lt;/p&gt;
+&lt;p&gt;To set the stage, this survey collected from &lt;strong&gt;189&lt;/strong&gt; responses.  Though I’m sure more accurate results could be gleaned from a larger group, I’m satisfied that this is enough data to indicate trends, if only for the audience of this particular site.  Now, onto the results.&lt;/p&gt;
+
+
+	&lt;h2&gt;Which CMSs Have You Used?&lt;/h2&gt;
+
+
+	&lt;p&gt;&lt;img class="feature" src="/assets/2008/7/2/cms_results_cms_used.jpg" alt="Which CMSs have been used the most?" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;WordPress is by far the most broadly used system, but there were plenty of people who either used systems not on our comparison list, or who had created there own at one point or another.  I wasn’t surprised to see Expression Engine in third, since I’ve been hearing more and more about it lately.&lt;/p&gt;
+
+
+	&lt;h2&gt;Satisfaction&lt;/h2&gt;
+
+
+	&lt;p&gt;&lt;img class="feature" src="/assets/2008/8/22/satisfaction.jpg" alt="How happy are people with their current CMS?" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;So, in general, people seem relatively satisfied with the &lt;span class="caps"&gt;CMS&lt;/span&gt; they have, though there is definitely room for improvement.  I noticed in the open-ended questions area, most people, regardless of satisfaction, indicated there were things missing from their current solution.  Overall, only 12% of respondants indicated any dissatisfaction with their current &lt;span class="caps"&gt;CMS&lt;/span&gt;, while 38% said they were very satisfied.&lt;/p&gt;
+
+
+	&lt;p&gt;Those indicating WordPress as their favorite &lt;span class="caps"&gt;CMS&lt;/span&gt; were very near the average, with slightly fewer people indicating that they were either very satisfied or not satisfied.&lt;/p&gt;
+
+
+	&lt;p&gt;Expression Engine was notable because the low level of dissatisfaction, and the high rate of ‘Very Satisfied’, even though the software costs money.  However, I would attribute these results more to the licensing system than the software itself, as you would seem less likely to pay for a solution that didn’t meet your needs.&lt;/p&gt;
+
+
+	&lt;h2&gt;To Host or Not To Host&lt;/h2&gt;
+
+
+	&lt;p&gt;While I was pretty sure that many people would prefer to host their own Content Management System, I was surprised by just &lt;strong&gt;how many&lt;/strong&gt; were so adamant about it.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img class="feature" src="/assets/2008/7/3/cms_survey_hosted.jpg" alt="Hosted vs. Self-hosting" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Digging into the data a little more showed an interesting insight into the psyche of web developers.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img class="feature" src="/assets/2008/8/22/control_freaks.jpg" alt="We're control freaks" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Of all the reasons given for why respondents preferred to host their own solution, the word &lt;em&gt;control&lt;/em&gt; was explicitly stated 51% of the time.  We truly are a group of control-freaks. I could comment on this finding quite a bit, but I’ll save that for a separate article.&lt;/p&gt;
+
+
+	&lt;h2&gt;The Rest of the Data&lt;/h2&gt;
+
+
+	&lt;p&gt;There were a few open-ended questions asked at the end of the survey which don’t have any real computational value to a summary such as this.  The data will, however, be used and published here as we begin to develop our own version of managing online content.  Hopefully you find this data useful, or at least interesting.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://orderedlist.com/">
+    <author>
+      <name>jnunemaker</name>
+    </author>
+    <id>tag:orderedlist.com,2008-07-07:4527</id>
+    <published>2008-07-07T11:00:00Z</published>
+    <updated>2008-07-08T14:27:07Z</updated>
+    <category term="interface" />
+    <category term="javascript" />
+    <category term="jquery" />
+    <link href="http://orderedlist.com/articles/live-search-with-quicksilver-style-for-jquery" rel="alternate" type="text/html" />
+    <title>Live Search with QuickSilver Style (for jQuery)</title>
+<summary type="html">&lt;p&gt;I’ve been palling around with jQuery quite a bit lately. The other day I whipped together &lt;a href="http://github.com/jnunemaker/javascripts/tree/master/jquery.labelize.js"&gt;my first jQuery plugin&lt;/a&gt; and things finally clicked. In the comments of the original post, I &lt;a href="http://orderedlist.com/articles/live-search-with-quicksilver-style#comment-4100"&gt;mentioned doing a jQuery port&lt;/a&gt;.&lt;/p&gt;</summary><content type="html">
+            &lt;p&gt;I’ve been palling around with jQuery quite a bit lately. The other day I whipped together &lt;a href="http://github.com/jnunemaker/javascripts/tree/master/jquery.labelize.js"&gt;my first jQuery plugin&lt;/a&gt; and things finally clicked. In the comments of the original post, I &lt;a href="http://orderedlist.com/articles/live-search-with-quicksilver-style#comment-4100"&gt;mentioned doing a jQuery port&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Lucky for you, I ran into some free time this weekend. Without any further ado, I will now &lt;a href="http://orderedlist.com/demos/quicksilverjs/jquery.html"&gt;link you to a demo&lt;/a&gt; and give you some code to peruse.&lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code class="javascript"&gt;(function($) {  
+    var self = null;
+
+    $.fn.liveUpdate = function(list) {    
+        return this.each(function() {
+            new $.liveUpdate(this, list);
+        });
+    };
+
+    $.liveUpdate = function (e, list) {
+        this.field = $(e);
+        this.list  = $('#' + list);
+        if (this.list.length &amp;gt; 0) {
+            this.init();
+        }
+    };
+
+    $.liveUpdate.prototype = {
+        init: function() {
+            var self = this;
+            this.setupCache();
+            this.field.parents('form').submit(function() { return false; });
+            this.field.keyup(function() { self.filter(); });
+            self.filter();
+        },
+
+        filter: function() {
+            if ($.trim(this.field.val()) == '') { this.list.children('li').show(); return; }
+            this.displayResults(this.getScores(this.field.val().toLowerCase()));
+        },
+
+        setupCache: function() {
+            var self = this;
+            this.cache = [];
+            this.rows = [];
+            this.list.children('li').each(function() {
+                self.cache.push(this.innerHTML.toLowerCase());
+                self.rows.push($(this));
+            });
+            this.cache_length = this.cache.length;
+        },
+
+        displayResults: function(scores) {
+            var self = this;
+            this.list.children('li').hide();
+            $.each(scores, function(i, score) { self.rows[score[1]].show(); });
+        },
+
+        getScores: function(term) {
+            var scores = [];
+            for (var i=0; i &amp;lt; this.cache_length; i++) {
+                var score = this.cache[i].score(term);
+                if (score &amp;gt; 0) { scores.push([score, i]); }
+            }
+            return scores.sort(function(a, b) { return b[0] - a[0]; });
+        }
+    }
+})(jQuery);&lt;/code&gt;&lt;/pre&gt;
+
+	&lt;p&gt;The cool thing about writing the same functionality with two different libraries is now you can compare a bit to see which implementation you like better. :)&lt;/p&gt;
+
+
+	&lt;p&gt;If you want to learn more about why I did this, &lt;a href="http://orderedlist.com/articles/live-search-with-quicksilver-style/"&gt;read the original post&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Update:&lt;/strong&gt; The man himself, John Resig, has &lt;a href="http://ejohn.org/blog/jquery-livesearch/"&gt;made the code a bit more efficient and jQuery-ish&lt;/a&gt;.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://orderedlist.com/">
+    <author>
+      <name>admin</name>
+    </author>
+    <id>tag:orderedlist.com,2008-07-02:4129</id>
+    <published>2008-07-02T22:01:00Z</published>
+    <updated>2008-10-16T18:18:17Z</updated>
+    <category term="content management" />
+    <category term="surveys" />
+    <link href="http://orderedlist.com/articles/your-thoughts-on-content-management" rel="alternate" type="text/html" />
+    <title>Your Thoughts on Content Management</title>
+<summary type="html">&lt;p&gt;John and I have been thinking about website and content management as of late, and we’d like to get a few more opinions on the matter.  We’ve put together &lt;a href="#"&gt;&lt;del&gt;a short survey&lt;/del&gt;&lt;/a&gt;, and if you wouldn’t mind, it would help us out if you’d share your thoughts.&lt;/p&gt;</summary><content type="html">
+            &lt;p&gt;John and I have been thinking about website and content management as of late, and we’d like to get a few more opinions on the matter.  We’ve put together &lt;a href="#"&gt;&lt;del&gt;a short survey&lt;/del&gt;&lt;/a&gt;, and if you wouldn’t mind, it would help us out if you’d share your thoughts.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt; The Survey has been closed, and we are processing the data.  Check back here soon for the results.&lt;/p&gt;
+
+
+	&lt;p&gt;We’ll leave &lt;a href="#"&gt;&lt;del&gt;this survey&lt;/del&gt;&lt;/a&gt; open for a week, and post an analysis of the results here when it’s over.  I think it should be interesting to find out some of the more general opinions of the available options in the content management world.  Thanks for your help.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://orderedlist.com/">
+    <author>
+      <name>jnunemaker</name>
+    </author>
+    <id>tag:orderedlist.com,2008-06-23:4014</id>
+    <published>2008-06-23T21:12:00Z</published>
+    <updated>2008-06-25T01:44:12Z</updated>
+    <category term="interaction" />
+    <category term="javascript" />
+    <category term="prototype" />
+    <category term="search" />
+    <link href="http://orderedlist.com/articles/live-search-with-quicksilver-style" rel="alternate" type="text/html" />
+    <title>Live Search with Quicksilver Style</title>
+<summary type="html">&lt;p&gt;Live search? C’mon guys, this has been done plenty of times before, you say. Yes, it has but I promise you we’ve added a bit of a twist to it.&lt;/p&gt;</summary><content type="html">
+            &lt;p&gt;Live search? C’mon guys, this has been done plenty of times before, you say. Yes, it has but I promise you we’ve added a bit of a twist to it.&lt;/p&gt;
+&lt;p&gt;When working on the latest incarnation of orderedlist.com, Steve mentioned that the typical year and month layout of archives was overkill. He thought a better way to present them would be to list them all and let live search sort ‘em out. That simple thought fired a neuron in my brain. I am a fan of &lt;a href="http://docs.blacktree.com/quicksilver/what_is_quicksilver"&gt;QuickSilver&lt;/a&gt; and I remembered seeing &lt;a href="http://rails-oceania.googlecode.com/svn/lachiecox/qs_score/trunk/qs_score.js"&gt;a port of the QuickSilver string ranking algorithm in JavaScript&lt;/a&gt;. A side note: anytime I say “algorithm” in a sentence I feel really smart. The fact that in the previous sentence “algorithm” was preceded by “string ranking” made me feel doubly smart. Ahem…back to the point at hand.&lt;/p&gt;
+
+
+	&lt;h2&gt;Demos&lt;/h2&gt;
+
+
+	&lt;p&gt;Typically, when I am reading a tutorial of any sort, I want to see the end product because if that is not impressive, I do not want to waste my time reading it. Feel free to open up a new tab with the &lt;a href="http://orderedlist.com/archive/"&gt;archives&lt;/a&gt; page or the &lt;a href="http://orderedlist.com/demos/quicksilverjs/"&gt;simplified demo&lt;/a&gt; I created just for this post and try a few searches.&lt;/p&gt;
+
+
+	&lt;h2&gt;Type This, Get That&lt;/h2&gt;
+
+
+	&lt;p&gt;Sure you can search ‘sidebar creative’ to find posts titled that, but I am lazy. I’d rather type ‘sdbcv’ because it is shorter. Plus, vowels are so 2007. You know who else is cool? Yeah, that guy Nunemaker, but holy crap is that name a keyboardful. Why don’t we just hit a few of the important characters like ‘nnmkr’. Bing, bang, boom. &lt;a href="http://orderedlist.com/articles/welcome-john-nunemaker"&gt;Welcome John Nunemaker&lt;/a&gt; is right there at the top. Cool, eh?&lt;/p&gt;
+
+
+	&lt;h2&gt;The How&lt;/h2&gt;
+
+
+	&lt;p&gt;First things first, we need a JS library to take away the hurt of cross-browserness. For this exercise,  &lt;a href="http://orderedlist.com/demos/quicksilverjs/javascripts/prototype.js"&gt;we used Prototype&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;Second, we &lt;a href="http://orderedlist.com/demos/quicksilverjs/javascripts/quicksilver.js"&gt;drop in the &lt;span class="caps"&gt;JS QS&lt;/span&gt; string ranking algorithm&lt;/a&gt; (I still feel smart).&lt;/p&gt;
+
+
+	&lt;p&gt;Third, I made the &lt;a href="http://orderedlist.com/demos/quicksilverjs/javascripts/livesearch.js"&gt;simple prototype class&lt;/a&gt; featured below. It is commented pretty well with what is going on. Also, note that this is not the live version on Ordered List but a slightly simplified one that I made for the demo. Go ahead and give it a read through.&lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code class="javascript"&gt;var QuicksilverLiveSearch = Class.create({
+    /**
+     * Sets up the caches and adds observers
+     */
+    initialize: function(field, list) {
+        this.field = $(field);
+        this.list  = $(list);
+
+        if (this.field &amp;&amp; this.list) {
+            this.rows  = $A([]);
+            this.cache = $A([]);
+            this.setupCache();
+
+            // kill normal submit of form since it's live
+            this.form = this.field.up('form');
+            this.form.observe('submit', function(e) { e.stop(); });
+
+            // setup observer on the search field to run the filter when typing
+            this.field.observe('keyup', this.filter.bindAsEventListener(this));
+
+            // run the filter initially for any text that may be in it
+            this.filter();
+        }
+    },
+
+    /**
+     * Caches inner html of children in array for later manipulation. 
+     */
+    setupCache: function() {
+        // loop through immediate descendents (in this case li's) and push
+        // their lowercase text to the cache and the li to the rows
+        this.list.immediateDescendants().each(function(child) {
+            this.cache.push(child.innerHTML.toLowerCase());
+            this.rows.push(child);
+        }.bind(this));
+        this.cache_length = this.cache.length;
+    },
+
+    /**
+     * Runs the filter that only shows the rows 
+     * that have a score based on the search term.
+     */
+    filter: function() {
+        // if nothing is in the field show all the rows
+        if (!this.field.present()) { this.rows.invoke('show'); return; }
+
+        // get the scores and hide the low scoring items
+        this.displayResults(this.getScores($F(this.field).toLowerCase()));
+    },
+
+    /**
+     * Hides all the rows and shows on the ones with a score over 0
+     */
+    displayResults: function(scores) {
+        // hide all rows default
+        this.rows.invoke('hide');
+
+        // show each row that had a score
+        scores.each(function(score) { this.rows[score[1]].show(); }.bind(this))
+    },
+
+    /**
+     * Get the score of each row in the cache and return sorted 
+     * result set of [score, index of row in this.rows]
+    */
+    getScores: function(term) {
+        var scores = $A([]);
+
+        // loop through the cache and get the score for each item 
+        // appending them to the return set if they have a score
+        // greater than 0; basically building an array like this:
+        // [[0.69, 2], [0.33, 34], ...] where the first element is
+        // the string score and the second is the index of the item
+        // that scored that
+        for (var i=0; i &amp;lt; this.cache_length; i++) {
+            var score = this.cache[i].score(term);
+            if (score &amp;gt; 0) { scores.push([score, i]); }
+        }
+
+        // sort the scores descending by the algorithm score (the first element in the array)
+        return scores.sort(function(a, b) { return b[0] - a[0]; });
+    }
+});&lt;/code&gt;&lt;/pre&gt;
+
+	&lt;p&gt;Now all that is left is to create a new instance of this class once the dom has loaded.&lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code class="javascript"&gt;document.observe('dom:loaded', function() { 
+    new QuicksilverLiveSearch('q', 'posts');
+});&lt;/code&gt;&lt;/pre&gt;
+
+	&lt;p&gt;As you can see, most of the heavy lifting is done by prototype and the quicksilver string ranker. All I do is build a cache of all the strings I want to search through and then show only the rows that have strings with a score greater than 0. Simple implementation with pretty cool results so I thought I would share it here.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://orderedlist.com/">
+    <author>
+      <name>admin</name>
+    </author>
+    <id>tag:orderedlist.com,2008-06-19:3993</id>
+    <published>2008-06-19T14:52:00Z</published>
+    <updated>2008-07-21T02:20:22Z</updated>
+    <category term="business" />
+    <category term="css" />
+    <category term="design" />
+    <category term="development" />
+    <link href="http://orderedlist.com/articles/the-well-designed-web" rel="alternate" type="text/html" />
+    <title>The Well-Designed Web</title>
+<summary type="html">&lt;p&gt;Recently &lt;a href="http://37signals.com"&gt;37Signals&lt;/a&gt; posted an article on why &lt;a href="http://www.37signals.com/svn/posts/1066-web-designers-should-do-their-own-htmlcss"&gt;Web Designers Should Do Their Own &lt;span class="caps"&gt;HTML&lt;/span&gt;/CSS&lt;/a&gt;. I’ve been thinking about my reaction for a few days, and have finally come to a conclusion.  I feel they’re putting way too much emphasis on the designer.&lt;/p&gt;</summary><content type="html">
+            &lt;p&gt;Recently &lt;a href="http://37signals.com"&gt;37Signals&lt;/a&gt; posted an article on why &lt;a href="http://www.37signals.com/svn/posts/1066-web-designers-should-do-their-own-htmlcss"&gt;Web Designers Should Do Their Own &lt;span class="caps"&gt;HTML&lt;/span&gt;/CSS&lt;/a&gt;. I’ve been thinking about my reaction for a few days, and have finally come to a conclusion.  I feel they’re putting way too much emphasis on the designer.&lt;/p&gt;
+&lt;h2&gt;Knowing &lt;span class="caps"&gt;HTML&lt;/span&gt;/CSS Can Help Designers&lt;/h2&gt;
+
+
+	&lt;p&gt;Knowing the particular constraints, as well as strengths, of the medium you’re designing for is never a bad thing. It helps make a more informed designer, and a more thought-through solution. But did we expect Andy Warhol to weave his own canvas?  Or Bob Dylan to sing well? Knowledge of implementation details isn’t required to create great works of art.&lt;/p&gt;
+
+
+	&lt;h2&gt;A Few Points&lt;/h2&gt;
+
+
+	&lt;p&gt;In my experience, good web designs come from good designers who know the web, regardless of their skills in a text-editor. 37Signals argues:&lt;/p&gt;
+
+
+	&lt;blockquote&gt;
+		&lt;p&gt;I’ve worked with many web designers in the past who only did abstractions and then handed over pictures to be chopped and implemented by “HTML monkeys”. It never really gelled well.&lt;/p&gt;
+	&lt;/blockquote&gt;
+
+
+	&lt;p&gt;Their reasoning why this didn’t work is:&lt;/p&gt;
+
+
+	&lt;blockquote&gt;
+		&lt;p&gt;The things that got strong attention were all the things that Photoshop did well. Imagery, curvy lines, and the frame. All the around stuff, never the &lt;strong&gt;it&lt;/strong&gt; stuff.&lt;/p&gt;
+	&lt;/blockquote&gt;
+
+
+	&lt;p&gt;My response to this is two-fold. First, if you’re not getting good designs from your designer, than they’re probably a poor designer. Pretty pictures does not a good web design make.  And that’s all there is to it. Take a bad designer, teach them &lt;span class="caps"&gt;HTML&lt;/span&gt;/CSS, and you’re still going to get bad designs.&lt;/p&gt;
+
+
+	&lt;p&gt;Secondly, and much more importantly, if you &lt;strong&gt;are&lt;/strong&gt; getting good designs from the designer, but they’re just not translating well to the markup and styles, then that’s the fault of your “HTML monkey,” as described. If the person doing your &lt;span class="caps"&gt;XHTML&lt;/span&gt;/CSS coding doesn’t ‘get’ your design, or your designer, than you’re going to end up with a poor product, no matter how good or bad the design is.&lt;/p&gt;
+
+
+	&lt;h2&gt;The Cornerstone to the Well Designed Web&lt;/h2&gt;
+
+
+	&lt;p&gt;So the cornerstone is the developer, not the designer. If you have a good developer who understands what makes a design good, understands user interaction, and has a sense of aesthetics, you’re going to get a good product. Yes, it’s important for your designer to have an understanding of how to build a website.  But it’s much, much more important to have a developer who understands what makes good design.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://orderedlist.com/">
+    <author>
+      <name>admin</name>
+    </author>
+    <id>tag:orderedlist.com,2008-06-04:3829</id>
+    <published>2008-06-04T17:15:00Z</published>
+    <updated>2008-07-07T11:11:47Z</updated>
+    <category term="business" />
+    <category term="john" />
+    <category term="orderedlist" />
+    <category term="partner" />
+    <link href="http://orderedlist.com/articles/welcome-john-nunemaker" rel="alternate" type="text/html" />
+    <title>Welcome John Nunemaker</title>
+<summary type="html">&lt;p&gt;It’s my pleasure to introduce John Nunemaker as the second member of Ordered List. As a former coworker at Notre Dame, it’s wonderful to have him join me as a business partner and experienced developer.&lt;/p&gt;</summary><content type="html">
+            &lt;p&gt;It’s my pleasure to introduce John Nunemaker as the second member of Ordered List. As a former coworker at Notre Dame, it’s wonderful to have him join me as a business partner and experienced developer.&lt;/p&gt;
+&lt;p&gt;&lt;img class="blended-image" src="/assets/2008/6/4/combinedmarks.gif" alt="Addicted to List?" /&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;Site Redesign&lt;/h2&gt;
+
+
+	&lt;p&gt;In an effort to distinguish Ordered List as a &lt;em&gt;former&lt;/em&gt; one-man-show, I felt a redesign was in order.  Not a big departure from the previous, but different enough to highlight our expanded service offerings, and unique personalities.&lt;/p&gt;
+
+
+	&lt;h2&gt;Additional Content&lt;/h2&gt;
+
+
+	&lt;p&gt;Not only will this addition allow for more work to be done for our clients, but will also allow us to collaborate on ideas for blog posts, tutorials, screen-casts, and more.  In addition to this new upcoming content, John already has a collection of articles and references at his two websites &lt;a href="http://addictedtonew.com"&gt;Addicted To New&lt;/a&gt; and &lt;a href="http://railstips.org"&gt;Rails Tips&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;h2&gt;Future Plans&lt;/h2&gt;
+
+
+	&lt;p&gt;We plan to take full advantage of John’s wealth of experience in Rails development and content management to make some pretty awesome tools and applications. But just as much as I look forward to the work we’ll do, I’m excited to have another like-minded developer on board to help develop ideas and discuss issues.&lt;/p&gt;
+
+
+	&lt;p&gt;I hope you’ll join me in welcoming John aboard.&lt;/p&gt;
+          </content>  </entry>
+<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetFeedData?uri=orderedlist</feedburner:awareness></feed>

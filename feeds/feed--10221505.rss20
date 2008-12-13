@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://www.ejabberd.im" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>ejabberd Community Site - Comments</title>
+ <link>http://www.ejabberd.im</link>
+ <description>Comments</description>
+ <language>en</language>
+<item>
+ <title>changed url</title>
+ <link>http://www.ejabberd.im/node/3007#comment-53825</link>
+ <description>&lt;p&gt;In reply to &lt;a href=&quot;/node/3007&quot;&gt;How to install ejabberd 2.0.0 with PostgreSQL support on Ubuntu&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;url has been changed to &lt;a href=&quot;http://www.ostinelli.net/how-to-install-ejabberd-200-with-postgresql-support/&quot; title=&quot;http://www.ostinelli.net/how-to-install-ejabberd-200-with-postgresql-support/&quot;&gt;http://www.ostinelli.net/how-to-install-ejabberd-200-with-postgresql-sup...&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;cheers,&lt;/p&gt;
+&lt;p&gt;r.&lt;/p&gt;
+</description>
+ <pubDate>Thu, 11 Dec 2008 03:07:47 +0300</pubDate>
+ <dc:creator>ostinelli</dc:creator>
+ <guid isPermaLink="false">comment 53825 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>Problem Solved</title>
+ <link>http://www.ejabberd.im/node/3248#comment-53822</link>
+ <description>&lt;p&gt;In reply to &lt;a href=&quot;/node/3248&quot;&gt;message not getting delivered to bare id&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;It turns out that my problems was being cuased by the fact that the Resource was getting changed to -1 in a part of my code.  Once I figured out that then the problems went away. &lt;/p&gt;
+&lt;p&gt;Thanks again for the hints.&lt;/p&gt;
+&lt;p&gt;Casey&lt;/p&gt;
+</description>
+ <pubDate>Mon, 08 Dec 2008 16:40:25 +0300</pubDate>
+ <dc:creator>BCaseyHanks</dc:creator>
+ <guid isPermaLink="false">comment 53822 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>Thanks for your reply</title>
+ <link>http://www.ejabberd.im/node/3280#comment-53821</link>
+ <description>&lt;p&gt;In reply to &lt;a href=&quot;/node/3280&quot;&gt;PAM authentication and shared rosters&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;Thanks for your reply&lt;/p&gt;
+</description>
+ <pubDate>Mon, 08 Dec 2008 01:54:31 +0300</pubDate>
+ <dc:creator>pl3w5y</dc:creator>
+ <guid isPermaLink="false">comment 53821 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>Re: Кто отвечает за подтверждение о доставке?</title>
+ <link>http://www.ejabberd.im/node/3304#comment-53819</link>
+ <description>&lt;p&gt;In reply to &lt;a href=&quot;/node/3304&quot;&gt;Кто отвечает за подтверждение о доставке?&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;Не в курсе что означает данная опция в миранде, но в ejabberd нету никаких механизмов подтверждения о доставке сообщений.&lt;/p&gt;
+</description>
+ <pubDate>Sat, 06 Dec 2008 04:21:35 +0300</pubDate>
+ <dc:creator>zinid</dc:creator>
+ <guid isPermaLink="false">comment 53819 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>It&#039;s nothing to do? Don&#039;t</title>
+ <link>http://www.ejabberd.im/node/3301#comment-53818</link>
+ <description>&lt;p&gt;In reply to &lt;a href=&quot;/node/3301&quot;&gt;XEP-0018 Invisible Presence (rejected)&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;It&#039;s nothing to do? Don&#039;t have a workaround? The unique solution is waiting for the new release?&lt;/p&gt;
+&lt;p&gt;[]s&lt;/p&gt;
+&lt;p&gt;Curt&lt;/p&gt;
+</description>
+ <pubDate>Fri, 05 Dec 2008 22:44:52 +0300</pubDate>
+ <dc:creator>geesdorf</dc:creator>
+ <guid isPermaLink="false">comment 53818 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>file transfer problems</title>
+ <link>http://www.ejabberd.im/node/3296#comment-53817</link>
+ <description>&lt;p&gt;In reply to &lt;a href=&quot;/node/3296&quot;&gt;file transfer problems&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;I have tried nearly everything. Even reinstalling ejabberd, but still without luck. It send and receives files in LAN but not outside :(&lt;br /&gt;
+now the ejabberd.cfg file is gone :( I can&#039;t find it in any directory, but ejabberd works.&lt;br /&gt;
+Anyway, I will go on with some more testing and let you know.&lt;br /&gt;
+Thanks :)&lt;/p&gt;
+</description>
+ <pubDate>Fri, 05 Dec 2008 13:17:07 +0300</pubDate>
+ <dc:creator>ushaveng1</dc:creator>
+ <guid isPermaLink="false">comment 53817 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>Spinfast doesn&#039;t show</title>
+ <link>http://www.ejabberd.im/node/3299#comment-53816</link>
+ <description>&lt;p&gt;In reply to &lt;a href=&quot;/node/3299&quot;&gt;S2S not working on 2.0.2 ? &lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;Spinfast doesn&#039;t show anything in the logs, and I can see the incoming connection request when i try to send a message from binaryculture or google to spinfast.&lt;/p&gt;
+&lt;p&gt;After turning off the encryption on BOTH servers I don&#039;t get any errors, but google can&#039;t connect now. &lt;/p&gt;
+&lt;p&gt;Re-Enabling encryption for the binaryculture one lets that one talk to gtalk and to spinfast.&lt;/p&gt;
+&lt;p&gt;As soon as i re-enable starttls on the s2s for spinfast, binaryculture gets a certificate error.&lt;/p&gt;
+&lt;p&gt;The same certificate that spinfast is using for s2s is used for c2s on spinfast and clients can connect - i also get the error on binaryculture and not on spinfast. &lt;/p&gt;
+&lt;p&gt;Any ideas?&lt;/p&gt;
+</description>
+ <pubDate>Fri, 05 Dec 2008 09:32:21 +0300</pubDate>
+ <dc:creator>lordmortis</dc:creator>
+ <guid isPermaLink="false">comment 53816 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>priority not the issue</title>
+ <link>http://www.ejabberd.im/node/3248#comment-53815</link>
+ <description>&lt;p&gt;In reply to &lt;a href=&quot;/node/3248&quot;&gt;message not getting delivered to bare id&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;My application was using a priority of zero&lt;br /&gt;
+I changed it to a priority of 100 and the behavior remains the same.&lt;/p&gt;
+&lt;p&gt;When I use Spark to generate an invite packet of :&lt;/p&gt;
+&lt;div class=&quot;codeblock&quot;&gt;&lt;code&gt;&amp;lt;message id=&amp;quot;byy4q-40&amp;quot; to=&amp;quot;room1@conference.v-doc-imchat.infoassure.local&amp;quot;&amp;gt;&lt;br /&gt;&amp;nbsp; &amp;lt;x xmlns=&amp;quot;http://jabber.org/protocol/muc#user&amp;quot;&amp;gt;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;invite to=&amp;quot;btroxell@v-doc-imchat.infoassure.local&amp;quot;&amp;gt;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;reason&amp;gt;Please join me in a conference.&amp;lt;/reason&amp;gt;&lt;br /&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; &amp;lt;/invite&amp;gt;&lt;br /&gt;&amp;nbsp; &amp;lt;/x&amp;gt;&lt;br /&gt;&amp;lt;/message&amp;gt;&lt;/code&gt;&lt;/div&gt;
+&lt;p&gt;it never arrives at my client&lt;/p&gt;
+&lt;p&gt;Still puzzled.&lt;br /&gt;
+Any suggestions would be welcomed&lt;/p&gt;
+&lt;p&gt;Casey&lt;/p&gt;
+</description>
+ <pubDate>Thu, 04 Dec 2008 17:11:31 +0300</pubDate>
+ <dc:creator>BCaseyHanks</dc:creator>
+ <guid isPermaLink="false">comment 53815 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>resource separator is not the issue</title>
+ <link>http://www.ejabberd.im/node/3248#comment-53814</link>
+ <description>&lt;p&gt;In reply to &lt;a href=&quot;/node/3248&quot;&gt;message not getting delivered to bare id&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;Thanks for the comments.&lt;/p&gt;
+&lt;p&gt;Some of samples I posted did have the &quot;/&quot; the wrong way.&lt;br /&gt;
+This mistake does not occur in my code and occured only becuase I mistyped the sample during my post.&lt;/p&gt;
+&lt;p&gt;I did not know about the affect of the priority on the delivery of messages and I will investigate that.&lt;/p&gt;
+&lt;p&gt;Thanks for the suggestions.&lt;/p&gt;
+&lt;p&gt;Casey&lt;/p&gt;
+</description>
+ <pubDate>Thu, 04 Dec 2008 16:57:01 +0300</pubDate>
+ <dc:creator>BCaseyHanks</dc:creator>
+ <guid isPermaLink="false">comment 53814 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>clarification</title>
+ <link>http://www.ejabberd.im/node/3302#comment-53813</link>
+ <description>&lt;p&gt;In reply to &lt;a href=&quot;/node/3302&quot;&gt;Message packet rejected if to attribute contains Resource&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;Thanks for the comment.&lt;/p&gt;
+&lt;p&gt;The original samples I posted did have the &quot;/&quot; the wrong way.&lt;br /&gt;
+This mistake does not occur in my code and occured only becuase I mistyped the sample during my post.&lt;br /&gt;
+If you look at the clarrify samples (where I copied and pasted the XML directly) you will notice that the JID is formatted correctly.&lt;/p&gt;
+&lt;p&gt;so I am still at a loss as to the source of the problem.&lt;/p&gt;
+&lt;p&gt;Casey&lt;/p&gt;
+</description>
+ <pubDate>Thu, 04 Dec 2008 16:52:23 +0300</pubDate>
+ <dc:creator>BCaseyHanks</dc:creator>
+ <guid isPermaLink="false">comment 53813 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>resource separator is /, not \</title>
+ <link>http://www.ejabberd.im/node/3248#comment-53812</link>
+ <description>&lt;p&gt;In reply to &lt;a href=&quot;/node/3248&quot;&gt;message not getting delivered to bare id&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;quote-msg&quot;&gt;
+&lt;div class=&quot;quote-author&quot;&gt;&lt;em&gt;BCaseyHanks&lt;/em&gt; wrote:&lt;/div&gt;
+&lt;p&gt;When I send the message:&lt;/p&gt;
+&lt;div class=&quot;codeblock&quot;&gt;&lt;code&gt;&amp;lt;message id=&amp;quot;JN_23&amp;quot; from=&amp;quot;source@server\custom&amp;quot; to=&amp;quot;destination@server\spark&amp;quot;&amp;gt;&amp;lt;x jid=&amp;quot;room1@server&amp;quot; xmlns=&amp;quot;jabber:x:conference&amp;quot; /&amp;gt;&amp;lt;/message&amp;gt;&lt;/code&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;You already posted that topic in another post. Why did you repeat here?&lt;/p&gt;
+</description>
+ <pubDate>Thu, 04 Dec 2008 15:59:00 +0300</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">comment 53812 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>Destination will receive if priority is not negative</title>
+ <link>http://www.ejabberd.im/node/3248#comment-53811</link>
+ <description>&lt;p&gt;In reply to &lt;a href=&quot;/node/3248&quot;&gt;message not getting delivered to bare id&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;quote-msg&quot;&gt;
+&lt;div class=&quot;quote-author&quot;&gt;&lt;em&gt;BCaseyHanks&lt;/em&gt; wrote:&lt;/div&gt;
+&lt;p&gt;But if #1 sends the following message&lt;/p&gt;
+&lt;div class=&quot;codeblock&quot;&gt;&lt;code&gt;&amp;lt;message id=&amp;quot;JN_17&amp;quot; to=&amp;quot;destination@server&amp;quot; type=&amp;quot;chat&amp;quot; &lt;br /&gt;from=&amp;quot;source@server&amp;quot;&amp;gt;&lt;br /&gt;&amp;nbsp; &amp;lt;thread&amp;gt;da19059b-dbdb-48bd-8b2b-8deac4ce58c0&amp;lt;/thread&amp;gt;&lt;br /&gt;&amp;nbsp; &amp;lt;body&amp;gt;Test Message 2&amp;lt;/body&amp;gt;&lt;br /&gt;&amp;lt;/message&amp;gt;&lt;/code&gt;&lt;/div&gt;
+&lt;p&gt;The message is NOT delivered to (#2) when it should be&lt;/p&gt;
+&lt;p&gt;This leads me to believe that the issue is not that the message is only being sent to the highest priority user -  because there is ONLY one recieving user logged on.
+&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;I tried and the message is delivered if destination@server/custom has a positive priority (zero or higher).&lt;/p&gt;
+&lt;p&gt;If priority of destination is negative, the message is not delivered.&lt;/p&gt;
+&lt;p&gt;This is explained in XMPP-IM:&lt;/p&gt;
+&lt;div class=&quot;quote-msg&quot;&gt;
+&lt;div class=&quot;quote-author&quot;&gt;Quote:&lt;/div&gt;
+&lt;p&gt;However, the server MUST NOT deliver the stanza to an available resource with a negative priority; if the only available resource has a negative priority, the server SHOULD handle the message as if there were no available resources (defined below).
+&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;In any case, you can try with regular desktop Jabber clients like Psi, Tkabber or Gajim.&lt;/p&gt;
+</description>
+ <pubDate>Thu, 04 Dec 2008 15:53:00 +0300</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">comment 53811 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>Message to bare JID is sent to highest priority session</title>
+ <link>http://www.ejabberd.im/node/3248#comment-53810</link>
+ <description>&lt;p&gt;In reply to &lt;a href=&quot;/node/3248&quot;&gt;message not getting delivered to bare id&lt;/a&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;quote-msg&quot;&gt;
+&lt;div class=&quot;quote-author&quot;&gt;&lt;em&gt;BCaseyHanks&lt;/em&gt; wrote:&lt;/div&gt;
+&lt;p&gt;But if #1 sends the following message&lt;/p&gt;
+&lt;div class=&quot;codeblock&quot;&gt;&lt;code&gt;&amp;lt;message id=&amp;quot;JN_17&amp;quot; to=&amp;quot;destination@server&amp;quot; type=&amp;quot;chat&amp;quot; from=&amp;quot;source@server&amp;quot;&amp;gt;&lt;br /&gt;&amp;nbsp; &amp;lt;thread&amp;gt;da19059b-dbdb-48bd-8b2b-8deac4ce58c0&amp;lt;/thread&amp;gt;&lt;br /&gt;&amp;nbsp; &amp;lt;body&amp;gt;Test Message 2&amp;lt;/body&amp;gt;&lt;br /&gt;&amp;lt;/message&amp;gt;&lt;/code&gt;&lt;/div&gt;
+&lt;p&gt;The message is delivered ONLY to the Spark client (#3) when it should be delivered to both (#2) and (#3).
+&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;Where did you read that a message stanza with bare JID destination SHOULD be delivered to all sessions of destination JID? Or did you simply imagine that?&lt;/p&gt;
+&lt;p&gt;The message is delivered to the resource with the highest priority, as explained in &lt;a href=&quot;http://xmpp.org/rfcs/rfc3921.html#rules&quot;&gt;XMPP-IM: 11.  Server Rules for Handling XML Stanzas&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&quot;quote-msg&quot;&gt;
+&lt;div class=&quot;quote-author&quot;&gt;Quote:&lt;/div&gt;
+&lt;p&gt;11.1.  Inbound Stanzas&lt;br /&gt;
+...&lt;br /&gt;
+4. Else if the JID is of the form &amp;lt;user@domain&amp;gt; and there is at least one available resource available for the user, the recipient&#039;s server MUST follow these rules:&lt;/p&gt;
+&lt;p&gt;   1. For message stanzas, the server SHOULD deliver the stanza to the highest-priority available resource [...]. If two or more available resources have the same priority, the server MAY use some other rule [...]
+&lt;/p&gt;&lt;/div&gt;
+</description>
+ <pubDate>Thu, 04 Dec 2008 15:35:00 +0300</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">comment 53810 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>All works correctly for me!</title>
+ <link>http://www.ejabberd.im/node/3302#comment-53809</link>
+ <description>&lt;p&gt;In reply to &lt;a href=&quot;/node/3302&quot;&gt;Message packet rejected if to attribute contains Resource&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;I use ejabberd trunk SVN, and two Tkabber 0.12.0 clients. All works correctly here.&lt;/p&gt;
+&lt;div class=&quot;quote-msg&quot;&gt;
+&lt;div class=&quot;quote-author&quot;&gt;&lt;em&gt;BCaseyHanks&lt;/em&gt; wrote:&lt;/div&gt;
+&lt;p&gt;The following message is not being delivered by the server:&lt;br /&gt;
+&lt;div class=&quot;codeblock&quot;&gt;&lt;code&gt;&amp;lt;message id=&amp;quot;JN_26&amp;quot; from=&amp;quot;chanks@v-doc-imchat.infoassure.local&amp;quot; to=&amp;quot;btroxell@v-doc-imchat.infoassure.local&amp;quot;&amp;gt;&amp;lt;x jid=&amp;quot;room1@conference.v-doc-imchat.infoassure.local&amp;quot; xmlns=&amp;quot;jabber:x:conference&amp;quot; /&amp;gt;&amp;lt;/message&amp;gt;&lt;/code&gt;&lt;/div&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;chanks sends:&lt;/p&gt;
+&lt;div class=&quot;codeblock&quot;&gt;&lt;code&gt;&amp;lt;message id=&amp;quot;JN_26&amp;quot; from=&amp;quot;chanks@v-doc-imchat.infoassure.local&amp;quot; &lt;br /&gt;to=&amp;quot;btroxell@v-doc-imchat.infoassure.local&amp;quot;&amp;gt;&lt;br /&gt;&amp;lt;x jid=&amp;quot;room1@conference.v-doc-imchat.infoassure.local&amp;quot; xmlns=&amp;quot;jabber:x:conference&amp;quot; /&amp;gt;&lt;br /&gt;&amp;lt;/message&amp;gt;&lt;/code&gt;&lt;/div&gt;
+&lt;p&gt;btroxell receives:&lt;/p&gt;
+&lt;div class=&quot;codeblock&quot;&gt;&lt;code&gt;&amp;lt;message from=&amp;#039;chanks@v-doc-imchat.infoassure.local/N2K&amp;#039;&lt;br /&gt;	id=&amp;#039;JN_26&amp;#039;&lt;br /&gt;	xml:lang=&amp;#039;es&amp;#039;&lt;br /&gt;	to=&amp;#039;btroxell@v-doc-imchat.infoassure.local&amp;#039;&amp;gt;&lt;br /&gt;&amp;nbsp; &amp;lt;x xmlns=&amp;#039;jabber:x:conference&amp;#039;&lt;br /&gt;	jid=&amp;#039;room1@conference.v-doc-imchat.infoassure.local&amp;#039;/&amp;gt;&lt;br /&gt;&amp;lt;/message&amp;gt;&lt;/code&gt;&lt;/div&gt;
+&lt;div class=&quot;quote-msg&quot;&gt;
+&lt;div class=&quot;quote-author&quot;&gt;&lt;em&gt;BCaseyHanks&lt;/em&gt; wrote:&lt;/div&gt;
+&lt;p&gt;The following message is also not being delivered:&lt;br /&gt;
+&lt;div class=&quot;codeblock&quot;&gt;&lt;code&gt;&amp;lt;message id=&amp;quot;JN_27&amp;quot; to=&amp;quot;btroxell@v-doc-imchat.infoassure.local&amp;quot; type=&amp;quot;chat&amp;quot; from=&amp;quot;chanks@v-doc-imchat.infoassure.local/N2K&amp;quot;&amp;gt;&amp;lt;thread&amp;gt;5a72cf4a-cd21-46fa-bc0f-b0ea927bae73&amp;lt;/thread&amp;gt;&amp;lt;body&amp;gt;ping&amp;lt;/body&amp;gt;&amp;lt;/message&amp;gt;&lt;/code&gt;&lt;/div&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;chanks sends:&lt;/p&gt;
+&lt;div class=&quot;codeblock&quot;&gt;&lt;code&gt;&amp;lt;message id=&amp;quot;JN_27&amp;quot; to=&amp;quot;btroxell@v-doc-imchat.infoassure.local&amp;quot; type=&amp;quot;chat&amp;quot; &lt;br /&gt;from=&amp;quot;chanks@v-doc-imchat.infoassure.local/N2K&amp;quot;&amp;gt;&lt;br /&gt;&amp;lt;thread&amp;gt;5a72cf4a-cd21-46fa-bc0f-b0ea927bae73&amp;lt;/thread&amp;gt;&amp;lt;body&amp;gt;ping&amp;lt;/body&amp;gt;&amp;lt;/message&amp;gt;&lt;/code&gt;&lt;/div&gt;
+&lt;p&gt;btroxell receives:&lt;/p&gt;
+&lt;div class=&quot;codeblock&quot;&gt;&lt;code&gt;&amp;lt;message from=&amp;#039;chanks@v-doc-imchat.infoassure.local/N2K&amp;#039;&lt;br /&gt;	id=&amp;#039;JN_27&amp;#039;&lt;br /&gt;	xml:lang=&amp;#039;es&amp;#039;&lt;br /&gt;	type=&amp;#039;chat&amp;#039;&lt;br /&gt;	to=&amp;#039;btroxell@v-doc-imchat.infoassure.local&amp;#039;&amp;gt;&lt;br /&gt;&amp;nbsp; &amp;lt;thread&amp;gt;5a72cf4a-cd21-46fa-bc0f-b0ea927bae73&amp;lt;/thread&amp;gt;&lt;br /&gt;&amp;nbsp; &amp;lt;body&amp;gt;ping&amp;lt;/body&amp;gt;&lt;br /&gt;&amp;lt;/message&amp;gt;&lt;/code&gt;&lt;/div&gt;
+&lt;div class=&quot;quote-msg&quot;&gt;
+&lt;div class=&quot;quote-author&quot;&gt;&lt;em&gt;BCaseyHanks&lt;/em&gt; wrote:&lt;/div&gt;
+&lt;p&gt;The following message IS being delivered:&lt;br /&gt;
+&lt;div class=&quot;codeblock&quot;&gt;&lt;code&gt;&amp;lt;message id=&amp;quot;JN_17&amp;quot; to=&amp;quot;chanks@v-doc-imchat.infoassure.local/N2K&amp;quot; type=&amp;quot;chat&amp;quot; from=&amp;quot;btroxell@v-doc-imchat.infoassure.local/N2K&amp;quot;&amp;gt;&amp;lt;thread&amp;gt;4b758a5d-b2ee-492a-9480-0e8d53aea307&amp;lt;/thread&amp;gt;&amp;lt;body&amp;gt;ping&amp;lt;/body&amp;gt;&amp;lt;/message&amp;gt;&lt;/code&gt;&lt;/div&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;chanks sends:&lt;/p&gt;
+&lt;div class=&quot;codeblock&quot;&gt;&lt;code&gt;&amp;lt;message id=&amp;quot;JN_17&amp;quot; to=&amp;quot;chanks@v-doc-imchat.infoassure.local/N2K&amp;quot; type=&amp;quot;chat&amp;quot; &lt;br /&gt;from=&amp;quot;btroxell@v-doc-imchat.infoassure.local/N2K&amp;quot;&amp;gt;&lt;br /&gt;&amp;lt;thread&amp;gt;4b758a5d-b2ee-492a-9480-0e8d53aea307&amp;lt;/thread&amp;gt;&amp;lt;body&amp;gt;ping&amp;lt;/body&amp;gt;&amp;lt;/message&amp;gt;&lt;/code&gt;&lt;/div&gt;
+&lt;p&gt;chanks receives:&lt;/p&gt;
+&lt;div class=&quot;codeblock&quot;&gt;&lt;code&gt;&amp;lt;message from=&amp;#039;chanks@v-doc-imchat.infoassure.local/N2K&amp;#039;&lt;br /&gt;	id=&amp;#039;JN_17&amp;#039;&lt;br /&gt;	xml:lang=&amp;#039;es&amp;#039;&lt;br /&gt;	type=&amp;#039;chat&amp;#039;&lt;br /&gt;	to=&amp;#039;chanks@v-doc-imchat.infoassure.local/N2K&amp;#039;&amp;gt;&lt;br /&gt;&amp;nbsp; &amp;lt;thread&amp;gt;4b758a5d-b2ee-492a-9480-0e8d53aea307&amp;lt;/thread&amp;gt;&lt;br /&gt;&amp;nbsp; &amp;lt;body&amp;gt;ping&amp;lt;/body&amp;gt;&lt;br /&gt;&amp;lt;/message&amp;gt;&lt;/code&gt;&lt;/div&gt;
+&lt;div class=&quot;quote-msg&quot;&gt;
+&lt;div class=&quot;quote-author&quot;&gt;&lt;em&gt;BCaseyHanks&lt;/em&gt; wrote:&lt;/div&gt;
+&lt;p&gt;The following message result in an error:&lt;br /&gt;
+&lt;div class=&quot;codeblock&quot;&gt;&lt;code&gt;&amp;lt;message id=&amp;quot;JN_24&amp;quot; from=&amp;quot;btroxell@v-doc-imchat.infoassure.local&amp;quot; to=&amp;quot;chanks@v-doc-imchat.infoassure.local\n2k&amp;quot;&amp;gt;&amp;lt;x jid=&amp;quot;room1@conference.v-doc-imchat.infoassure.local&amp;quot; xmlns=&amp;quot;jabber:x:conference&amp;quot; /&amp;gt;&amp;lt;/message&amp;gt;&lt;/code&gt;&lt;/div&gt;
+&lt;/p&gt;&lt;/div&gt;
+&lt;p&gt;That stanza has the To JID wrongly formed, as I explained before.&lt;/p&gt;
+</description>
+ <pubDate>Thu, 04 Dec 2008 14:57:51 +0300</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">comment 53809 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>user@server/resource</title>
+ <link>http://www.ejabberd.im/node/3302#comment-53808</link>
+ <description>&lt;p&gt;In reply to &lt;a href=&quot;/node/3302&quot;&gt;Message packet rejected if to attribute contains Resource&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;You made here a very simple mistake :)&lt;/p&gt;
+&lt;div class=&quot;quote-msg&quot;&gt;
+&lt;div class=&quot;quote-author&quot;&gt;&lt;em&gt;BCaseyHanks&lt;/em&gt; wrote:&lt;/div&gt;
+&lt;div class=&quot;codeblock&quot;&gt;&lt;code&gt;&amp;lt;message id=&amp;quot;JN_23&amp;quot; from=&amp;quot;source@server\custom&amp;quot; to=&amp;quot;destination@server\spark&amp;quot;&amp;gt;&amp;lt;x jid=&amp;quot;room1@server&amp;quot; xmlns=&amp;quot;jabber:x:conference&amp;quot; /&amp;gt;&amp;lt;/message&amp;gt;&lt;/code&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;In that XMPP stanza, the destination JID is user &quot;destination&quot; and server &quot;server\spark&quot;. The separator for resource is /, not \. So you didn&#039;t build your destination JID correctly.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://xmpp.org/rfcs/rfc3920.html#addressing&quot;&gt;XMPP-Core: Addressing Scheme&lt;/a&gt;&lt;/p&gt;
+&lt;pre&gt;jid             = [ node &quot;@&quot; ] domain [ &quot;/&quot; resource ]&lt;/pre&gt;&lt;p&gt;
+The sender JID is of course also wrong: &quot;source@server\custom&quot;. However, ejabberd did not complain to you because ejabberd just throws the attribute &quot;FROM&quot; to the trash to avoid malicious users to fake their identity. I found this behaviour in &lt;a href=&quot;http://xmpp.org/internet-drafts/draft-saintandre-rfc3920bis-08.html#stanzas-attributes-from-c2s&quot;&gt;XMPP-IM-bis: 9.1.2.1.  Client-to-Server Streams&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&quot;quote-msg&quot;&gt;
+&lt;div class=&quot;quote-author&quot;&gt;Quote:&lt;/div&gt;
+&lt;p&gt;2. When the server receives an XML stanza from a client and the stanza includes a &#039;from&#039; attribute, the server MUST either (a) [...] or (b) override the provided &#039;from&#039; attribute by adding a &#039;from&#039; attribute as specified under Rule #1.&lt;/p&gt;&lt;/div&gt;
+</description>
+ <pubDate>Thu, 04 Dec 2008 14:36:24 +0300</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">comment 53808 at http://www.ejabberd.im</guid>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+
+    <title type="text">ProcessOne Blogs</title>
+    <subtitle type="text">ProcessOne Blogs:ProcessOne Blogs</subtitle>
+    <link rel="alternate" type="text/html" href="http://www.process-one.net/en/blogs/" />
+    <link rel="self" type="application/atom+xml" href="http://www.process-one.net/en/blogs/atom/" />
+    <updated>2008-11-17T19:57:41Z</updated>
+    <rights>Copyright (c) 2008, ProcessOne</rights>
+    <generator uri="http://www.pmachine.com/" version="1.6.6">ExpressionEngine</generator>
+    <id>tag:process-one.net,2008:11:12</id>
+
+
+    <entry>
+      <title>Google launches free video chat to enhance its instant messaging service</title>
+       <link rel="alternate" type="text/html" href="http://www.process-one.net/en/imtrends/article/google_launches_free_video_chat_to_enhance_its_instant_messaging_service/" />
+       <id>tag:process-one.net,2008:en/imtrends/26.302</id>
+      <published>2008-11-18T10:41:26Z</published>
+      <updated>2008-11-18T10:56:27Z</updated>
+      <author>
+            <name>Mickaël Rémond</name>
+            <uri>http://www.process-one.net/</uri>      </author>
+       <content type="html"><![CDATA[Google this week announced that it was going to launch free video chat with its Gmail messaging service. <p>Essentially it is a web browser plug-in that will allow Gmail users to conduct video chat sessions with other users. Rajen Singh, senior product manager for Google's enterprise group, stated that this is a "significant” move and is something that Google can see bringing people closer together particularly in a business context.</p>
+
+<p>This is further evidence that video IM will be a useful tool for the business. For instance it can be used as a way to cut travel costs for face-to-face meetings and in the current economic climate, this will be a very attractive proposition for many businesses.</p>
+
+<p>Brian Kraemer at CRN praised the application for its ease of use, "Users can pop the window out of the Gmail interface, just like a Gchat instant message window. Users are then given the option to go full screen with the chat, for an up close and personal experience with your chat partner.”</p>
+
+<p>This further proves that video chat is the next stage of evolution for instant messaging and XMPP (on which Google’s messaging services are based). XMPP server developers like ProcessOne are already developing video and voice chat application for businesses based on XMPP and we see considerable growth in this market in the future.</p>
+
+<p>You can get more details on the articles from CRN - <a href="http://www.crn.com/software/212001868">Gmail add is video and voice chat</a>, and Information Week - <a href="http://www.informationweek.com/news/internet/google/showArticle.jhtml?articleID=212001661&subSection=News">Google's Gmail gets free video chat</a>.</p>
+
+      ]]></content>
+    </entry>
+
+    <entry>
+      <title>tweet.IM: A Twitter XMPP gateway service</title>
+       <link rel="alternate" type="text/html" href="http://www.process-one.net/en/blogs/article/tweetim_a_twitter_xmpp_gateway_service/" />
+       <id>tag:process-one.net,2008:en/blogs/3.301</id>
+      <published>2008-11-12T20:23:39Z</published>
+      <updated>2008-11-17T19:57:41Z</updated>
+      <author>
+            <name>Mickaël Rémond</name>
+            <uri>http://www.process-one.net/</uri>      </author>
+   
+      <category term="Jabber / XMPP"
+        scheme="http://www.process-one.net/en/blogs/article/category/Jabber / XMPP/"
+        label="Jabber / XMPP" />
+       <content type="html"><![CDATA[We have just launched the first version of <a href="https://www.tweet.im/">tweet.IM</a>, a Twitter - instant messaging gateway service, based on the XMPP protocol. <p>ProcessOne has just launched a gateway service between XMPP and Twitter. The service is available from <a href="https://www.tweet.im/">tweet.IM</a>. It allows you to use Twitter directly from your favorite instant messaging client. It supports getting friends timeline and direct messages, but also posting public Tweet or direct messages.</p>
+
+<p>You can use it from any server, as long as your server accepts server-to-server connections to tweet.im / twitter.tweet.im</p>
+
+<p>Direct messages are received from a separate contact in a separate chat window / tab. Replying to this contact sends a direct message.</p>
+
+<p>A forum is open and waiting for your comments and suggestions: <a href="http://www.process-one.net/en/forum/viewforum/15/">tweet.IM forum</a>.</p>
+
+<p>Please, note that GTalk is currently behaving strangely, not storing / accepting the contact subscription acknowledgement. There is a workaround for that problem: after having filled the form on <a href="https://www.tweet.im/">tweet.IM</a> and accepted the subscription request on Gtalk, simply ask to add the contact twitter.tweet.im in your roster. It should do the trick. It used to work normally this afternoon, so I guess this is a temporary workaround.</p>
+      ]]></content>
+    </entry>
+
+    <entry>
+      <title>Sponsoring the 14th International Erlang User Conference</title>
+       <link rel="alternate" type="text/html" href="http://www.process-one.net/en/blogs/article/sponsoring_the_14th_international_erlang_user_conference/" />
+       <id>tag:process-one.net,2008:en/blogs/3.300</id>
+      <published>2008-11-12T17:41:16Z</published>
+      <updated>2008-11-12T19:26:17Z</updated>
+      <author>
+            <name>Mickaël Rémond</name>
+            <uri>http://www.process-one.net/</uri>      </author>
+   
+      <category term="Jabber / XMPP"
+        scheme="http://www.process-one.net/en/blogs/article/category/Jabber / XMPP/"
+        label="Jabber / XMPP" />
+   
+      <category term="ejabberd"
+        scheme="http://www.process-one.net/en/blogs/article/category/ejabberd/"
+        label="ejabberd" />
+   
+      <category term="Erlang"
+        scheme="http://www.process-one.net/en/blogs/article/category/Erlang/"
+        label="Erlang" />
+       <content type="html"><![CDATA[ProcessOne sponsors the Erlang User Conference in Stockholm (Sweden) that will take place on the 13th November 2008 <p>For the first time this year, ProcessOne is one of the sponsors of the Erlang User Conference, a major event for the Erlang community.</p>
+
+<p>The program is available from Erlang website: <a href="http://www.erlang.se/euc/08/index.html">14th International Erlang/OTP User Conference</a></p>
+
+<p>I will be covering the conference live from Twitter. If you have a Twitter account, please <a href="http://twitter.com/mickael">follow me</a> to get real time update about the conference.</p>
+      ]]></content>
+    </entry>
+
+    <entry>
+      <title>More than 100 CEAN downloads in 24 hours</title>
+       <link rel="alternate" type="text/html" href="http://www.process-one.net/en/blogs/article/more_than_100_cean_downloads_in_24h/" />
+       <id>tag:process-one.net,2008:en/blogs/3.298</id>
+      <published>2008-11-04T09:54:06Z</published>
+      <updated>2008-11-04T11:54:07Z</updated>
+      <author>
+            <name>Christophe Romain</name>
+            <uri>http://www.process-one.net/~cromain/</uri>      </author>
+   
+      <category term="Erlang"
+        scheme="http://www.process-one.net/en/blogs/article/category/Erlang/"
+        label="Erlang" />
+   
+      <category term="CEAN"
+        scheme="http://www.process-one.net/en/blogs/article/category/cean/"
+        label="CEAN" />
+       <content type="html"><![CDATA[<ul>
+<li>41% Windows
+<li>23% Linux x86
+<li>20% Mac Intel
+<li>5.5% Linux 64bit
+<li>5% Mac PPC
+<li>2% REPOS
+<li>1.5% FreeBSD x86
+<li>1% Linux ARM
+<li>1% Linux MIPS
+</ul> 
+      ]]></content>
+    </entry>
+
+    <entry>
+      <title>CEAN&#45;1.4 R12B released</title>
+       <link rel="alternate" type="text/html" href="http://www.process-one.net/en/blogs/article/cean_14_r12b_released/" />
+       <id>tag:process-one.net,2008:en/blogs/3.297</id>
+      <published>2008-10-28T23:20:31Z</published>
+      <updated>2008-11-04T11:53:32Z</updated>
+      <author>
+            <name>Christophe Romain</name>
+            <uri>http://www.process-one.net/~cromain/</uri>      </author>
+   
+      <category term="Erlang"
+        scheme="http://www.process-one.net/en/blogs/article/category/Erlang/"
+        label="Erlang" />
+   
+      <category term="CEAN"
+        scheme="http://www.process-one.net/en/blogs/article/category/cean/"
+        label="CEAN" />
+       <content type="html"><![CDATA[<p>After nearly one year of no visible activity I'm happy to announce a new 
+release of CEAN.</p>
+<p>CEAN-1.4 comes with Erlang R12B-4, and brings up many improvements in
+the build process. The aim is to reach a production quality level of
+autogenerated packages for all erlang contributions.</p> <p>The most valuable improvements in CEAN-1.4 are:</p>
+<ul>
+ <li>Work in cluster environment. It's possible to sync CEAN
+      installation on several hosts using just one command.
+  <li>A better package dependency resolver. Generated
+      dependencies are reliable.
+  <li>Main commands available from bash. No need to join an
+      erlang shell to install packages.
+   <li>Lots of new packages.
+</ul>
+<p>CEAN also supports updated packages for R11B-5. The cluster features are 
+backported to the R11B version as well. More information can be found on <a href="http://cean.process-one.net">CEAN website</a>.</p>
+      ]]></content>
+    </entry>
+
+    <entry>
+      <title>More social networks turn to ejabberd XMPP application server</title>
+       <link rel="alternate" type="text/html" href="http://www.process-one.net/en/blogs/article/more_social_networks_turn_to_ejabberd/" />
+       <id>tag:process-one.net,2008:en/blogs/3.296</id>
+      <published>2008-10-26T15:41:50Z</published>
+      <updated>2008-10-27T10:01:51Z</updated>
+      <author>
+            <name>Mickaël Rémond</name>
+            <uri>http://www.process-one.net/</uri>      </author>
+   
+      <category term="Jabber / XMPP"
+        scheme="http://www.process-one.net/en/blogs/article/category/Jabber / XMPP/"
+        label="Jabber / XMPP" />
+   
+      <category term="ejabberd"
+        scheme="http://www.process-one.net/en/blogs/article/category/ejabberd/"
+        label="ejabberd" />
+       <content type="html"><![CDATA[Simplify Media and Notifixious recently switched to ejabberd. Welcome to those new social networks in our community. <p><a href="http://www.simplifymedia.com">SimplifyMedia</a> is a social network for music sharing. They switched to <a href="http://www.process-one.net/en/ejabberd/">ejabberd</a> during the summer, as <a href="http://www.simplifymedia.com/blog/?p=49">posted on their blog</a>.</p>
+<p><a href="http://notifixio.us/">Notifixious</a> made the same switch to ejabberd during the week end, as <a href="http://blog.notifixio.us/post/56167273/switch-from-openfire-to-ejabberd-done">explained on their blog</a>.</p>
+<p>You are welcome in our community. Thank you for your confidence ! This is for us a good incentive to keep going the current work to turn ejabberd into an XMPP application server. This is one of the most acclaimed features for social networks.</p>
+<p>They join <a href="http://identi.ca/">Identica</a> microblogging community (<a href="http://www.imtrends.com/do/search_domain_simple?domain=identi.ca&x=0&y=0">IMtrends</a>) and <a href="http://gnipcentral.com/">Gnip</a> (<a href="http://www.imtrends.com/do/search_domain_simple?domain=xmpp.gnipcentral.com&x=0&y=0">IMTrends</a>).
+      ]]></content>
+    </entry>
+
+    <entry>
+      <title>Meet ProcessOne in Los Angeles</title>
+       <link rel="alternate" type="text/html" href="http://www.process-one.net/en/blogs/article/meet_processone_in_los_angeles/" />
+       <id>tag:process-one.net,2008:en/blogs/3.292</id>
+      <published>2008-10-18T12:56:00Z</published>
+      <updated>2008-10-19T06:05:57Z</updated>
+      <author>
+            <name>Mickaël Rémond</name>
+            <uri>http://www.process-one.net/</uri>      </author>
+   
+      <category term="ProcessOne"
+        scheme="http://www.process-one.net/en/blogs/article/category/process_one/"
+        label="ProcessOne" />
+   
+      <category term="Jabber / XMPP"
+        scheme="http://www.process-one.net/en/blogs/article/category/Jabber / XMPP/"
+        label="Jabber / XMPP" />
+   
+      <category term="ejabberd"
+        scheme="http://www.process-one.net/en/blogs/article/category/ejabberd/"
+        label="ejabberd" />
+   
+      <category term="Erlang"
+        scheme="http://www.process-one.net/en/blogs/article/category/Erlang/"
+        label="Erlang" />
+       <content type="html"><![CDATA[Want to talk about Erlang and XMPP in California ? We have the opportunity to meet this week in Los Angeles. <p>I will be in Los Angeles this week and would be glad to meet Erlang and XMPP fans for a talk in Los Angeles. We can talk about your projects or simply chat about the future of ejabberd, Erlang, Jabber/XMPP and ProcessOne.</p>
+<p>My preferred schedule is either Wednesday 22nd October evening, or Thusday 23rd morning.</p>
+<p>Interested ? Please drop me a direct mail (mremond at this domain) to get in touch !</p>
+      ]]></content>
+    </entry>
+
+    <entry>
+      <title>Getting back on Jabber Inc acquisition</title>
+       <link rel="alternate" type="text/html" href="http://www.process-one.net/en/blogs/article/getting_back_on_jabber_inc_acquisition/" />
+       <id>tag:process-one.net,2008:en/blogs/3.291</id>
+      <published>2008-10-02T14:24:00Z</published>
+      <updated>2008-10-02T16:20:45Z</updated>
+      <author>
+            <name>Mickaël Rémond</name>
+            <uri>http://www.process-one.net/</uri>      </author>
+   
+      <category term="ProcessOne"
+        scheme="http://www.process-one.net/en/blogs/article/category/process_one/"
+        label="ProcessOne" />
+   
+      <category term="Jabber / XMPP"
+        scheme="http://www.process-one.net/en/blogs/article/category/Jabber / XMPP/"
+        label="Jabber / XMPP" />
+       <content type="html"><![CDATA[Cisco’s acquisition of Jabber stands to be a significant boost for the enterprise IM (instant messaging) market and a clear sign of Cisco’s aspirations in the applications space.  Cisco will now be able to extend the reach of its current IM service and expand the capabilities of its collaboration platform. It will also impact the Instant Messaging market deeply. <p>As we previously said, this move represents a major victory for open protocols, and more specifically for XMPP against the SIP/SIMPLE protocol in the battle for IM standards.  Some have seen another sign that ‘open source’ had gone mainstream, but in this case it is much more a recognition of the value of ‘open standards’.</p>
+ 
+<p>As several articles have stated (like for example <a href="http://www.readwriteweb.com/archives/cisco_acquires_jabber_the_company.php">Cisco Acquires Jabber (The Company, Not The Standard)</a>), the acquisition of Jabber is a handy addition to Cisco's growing portfolio of enterprise-focused web communications products. It should be noted that Cisco is acquiring Jabber the company not the actual standard. Jabber is a big proponent of the XMPP protocol and already builds and supports a number of IM products based on the standard, however in essence Cisco is likely buying the expertise rather than specific products.</p>
+ 
+<p>Others have highlighted that the move has instantly increased the acceptance of IM as there will be increased interoperability with established IM platforms from the likes of Microsoft, Google and Yahoo! (For example <a href="http://www.nbr.co.nz/article/cisco-guns-google-microsoft-with-jabber-buy-35509&cid=1248101167&ei=TRzXSMCENYHI8ASlhLXoCg&usg=AFQjCNGNVhCmEvN6Hc08PA1XcmJrDetoyQ">Cisco guns for Google, Microsoft with Jabber buy</a>).  With more businesses realising that IM is becoming an important communications tool the Cisco acquisition opens up a lot of opportunities in the market.</p>
+
+<p>ProcessOne is one of the few remaining independent IM and XMPP technology providers. As Cisco will now be actively working with and promoting open IM standards to customers worldwide, ProcessOne’s offering to telco, web and enterprise customers stands to be significantly strengthened, as they will seek greater interoperability and security across IM platforms. This opens up a new exciting era for us :)</p>
+
+<p>You can get more details on the acquisition at <a href="http://newsroom.cisco.com/dlls/2008/corp_091908.html">http://newsroom.cisco.com/dlls/2008/corp_091908.html</a>.</p>
+      ]]></content>
+    </entry>
+
+    <entry>
+      <title>Acquisition Fever in Instant Messaging Field: Nokia buys OZ Communications</title>
+       <link rel="alternate" type="text/html" href="http://www.process-one.net/en/imtrends/article/acquisition_fever_in_instant_messaging_field_nokia_buys_oz_communications/" />
+       <id>tag:process-one.net,2008:en/imtrends/26.290</id>
+      <published>2008-10-01T15:47:00Z</published>
+      <updated>2008-10-02T14:11:51Z</updated>
+      <author>
+            <name>Mickaël Rémond</name>
+            <uri>http://www.process-one.net/</uri>      </author>
+       <content type="html"><![CDATA[Nokia today announced that the Finish company will acquire OZ communications, a Canadian IM mobile client and gateway provider. <p>Nokia buying OZ Communications a few days after Jabber Inc acquisition by Cisco is a sign that instant messaging battle is reaching an unprecedented level, especially among telco players.</p>
+
+<p>The goal of the two operations is obviously different. Cisco wants to boost its unified communication platform. It is a move to take a bigger share of the Enterprise Instant Messaging market.</p>
+
+<p>Nokia is not targetting the corporate market but indirectly the end user market through mobile instant messaging. Nokia is thus becoming a player that can act as intermediary for access to large instant messaging network on mobile (for example MSN, AOL, Yahoo!). The Finish company thus become a major player between mobile carrier (and thus users) and instant messaging networks.</p>
+
+<p>This is an interesting operation, as Nokia now has a strategic position and can use this situation as an advantage to promote its own mobile service platform called OVI.</p>
+
+<p>The news has been covered by ZDNET Uk: <a href="http://news.zdnet.co.uk/communications/0,1000000085,39496710,00.htm">Nokia boosts comms platform with Oz purchase</a></p>
+      ]]></content>
+    </entry>
+
+    <entry>
+      <title>Rich presence support on the XMPP network</title>
+       <link rel="alternate" type="text/html" href="http://www.process-one.net/en/imtrends/article/rich_presence_support_on_xmpp_network/" />
+       <id>tag:process-one.net,2008:en/imtrends/26.284</id>
+      <published>2008-09-30T07:56:00Z</published>
+      <updated>2008-10-01T08:11:22Z</updated>
+      <author>
+            <name>Mickaël Rémond</name>
+            <uri>http://www.process-one.net/</uri>      </author>
+       <content type="html"><![CDATA[Publish and Subscribe and Personal Eventing (PEP) are major features of XMPP enabling a more richer presence. What is the part of the XMPP network currently supporting this feature? Is this yet a largely deployed featured? <p>Our research has focused on the server side: Over all the known XMPP domains, how many are known to support Publish and Subscribe? How many are supporting Personal Eventing?</p>
+<p>We based our calculation on the current number of known XMPP domains. Support for PEP or Pubsub is assumed if advertised by the server. If the server does not advertise it, we cannot know it is supporting Pubsub or PEP so our calculation can slightly underestimate the Pubsub or PEP deployments.</p>
+<p>That said, here are the figures for a total of 8258 known servers:</p>
+<ul>
+<li>Domains with Pubsub deployed: 2459 (about 30%)</li>
+<li>Domains with Personal Eventing deployed: 2114 (about 26%)</li>
+</ul>
+
+<p>So, the conclusion is that Pubsub and PEP are available on many servers yet. We should still do much better and using Pubsub and PEP extensible features in ejabberd to build applications will hopefully accelerate deployment and use.</p>
+
+<p>And you? Are you supporting pubsub and PEP yet? Do you have any plan to support Pubsub and PEP soon? If not what prevents you from deploying it?</p>
+      ]]></content>
+    </entry>
+
+    <entry>
+      <title>XMPP getting high profile: Cisco Announces Definitive Agreement to Acquire Jabber Inc</title>
+       <link rel="alternate" type="text/html" href="http://www.process-one.net/en/imtrends/article/xmpp_getting_high_profile_cisco_announces_definitive_agreement_to_acquire_j/" />
+       <id>tag:process-one.net,2008:en/imtrends/26.288</id>
+      <published>2008-09-19T12:53:00Z</published>
+      <updated>2008-09-25T16:35:01Z</updated>
+      <author>
+            <name>Mickaël Rémond</name>
+            <uri>http://www.process-one.net/</uri>      </author>
+       <content type="html"><![CDATA[The news is official now: Cisco today announced its intent to acquire privately held Jabber, Inc. <p>This is a major step in the spread of the open and standard XMPP (eXtensible Messaging and Presence Protocol) protocol. With Cisco, it's another major player who decided to invest on the future of instant messaging. This is also a major event in the battle between XMPP and SIP/SIMPLE for the domination of open instant messaging standards: CISCO used to have its own instant messaging platform build on the SIP/SIMPLE protocol.</p>
+
+<p>This is good news for all XMPP server developers and for other independant XMPP server providers.</p>
+
+<p>The full news can be read on Cisco web site: <a href="http://newsroom.cisco.com/dlls/2008/corp_091908.html">Cisco Announces Definitive Agreement to Acquire Jabber</a></p>
+
+<p>Remember that 'Jabber' is a set of standard and free protocols (XMPP published by IETF, and XEPs published by XSF). This announcement about Cisco are related to 'Jabber, Inc.', a private company based in Denver (USA) that develops Jabber XCP, a closed source implementation of XMPP.
+      ]]></content>
+    </entry>
+
+    <entry>
+      <title>EQO study: Global Instant Messaging Market Share</title>
+       <link rel="alternate" type="text/html" href="http://www.process-one.net/en/imtrends/article/eqo_study_global_instant_messaging_market_share/" />
+       <id>tag:process-one.net,2008:en/imtrends/26.283</id>
+      <published>2008-09-02T07:28:00Z</published>
+      <updated>2008-09-02T10:20:50Z</updated>
+      <author>
+            <name>Mickaël Rémond</name>
+            <uri>http://www.process-one.net/</uri>      </author>
+       <content type="html"><![CDATA[The mobile instant messaging developer EQO gathered data on the number of connections per instant messaging network through their client. The result has been summarized in a global map of instant messaging networks usage in the world. <p align="center"><a href="/resources/others/global_im_market_share_stats_july_08.pdf"><img src="/images/uploads/IM_market_share_july_2008.jpg"/></a></p>
+<p>The figures are not complete and they only compare relative usages of people using the EQO mobile client. However, it gives a good relative comparison of the instant messaging networks use.</p>
+
+<p>Please, note that Jabber and Gtalk can actually be counted as a single XMPP instant messaging network. In Switzerland and South Africa for example, the XMPP network is close to be the leading instant messaging network.</p>
+
+<p>The full article is available on EQO blog: <a href="http://billionsconnected.com/blog/2008/08/global-im-market-share-im-usage/">Global Instant Messaging Market Share - July 2008</a>.
+
+
+      ]]></content>
+    </entry>
+
+    <entry>
+      <title>ejabberd 2.0.2</title>
+       <link rel="alternate" type="text/html" href="http://www.process-one.net/en/blogs/article/ejabberd_202/" />
+       <id>tag:process-one.net,2008:en/blogs/3.282</id>
+      <published>2008-08-29T16:44:00Z</published>
+      <updated>2008-08-29T16:50:18Z</updated>
+      <author>
+            <name>Mickaël Rémond</name>
+            <uri>http://www.process-one.net/</uri>      </author>
+   
+      <category term="Jabber / XMPP"
+        scheme="http://www.process-one.net/en/blogs/article/category/Jabber / XMPP/"
+        label="Jabber / XMPP" />
+   
+      <category term="ejabberd"
+        scheme="http://www.process-one.net/en/blogs/article/category/ejabberd/"
+        label="ejabberd" />
+       <content type="html"><![CDATA[ejabberd 2.0.2 is now ready for download. <p>This version is a maintenance release containing 49 bugfixes and improvements. You can read the <a href="http://www.process-one.net/en/ejabberd/release_notes/release_note_ejabberd_202">Release notes</a> for more details.</p>
+
+<p>The new code can be downloaded from <a href="http://www.process-one.net/en/ejabberd/downloads">ejabberd download</a> page.</p>
+
+<p>This release follows the ejabberd 2.0.1 beta release launched in july 2008. Thank you all for your feedback !</p>
+      ]]></content>
+    </entry>
+
+    <entry>
+      <title>Instant Messaging as a social research tool: Study revives six degrees theory</title>
+       <link rel="alternate" type="text/html" href="http://www.process-one.net/en/imtrends/article/instant_messaging_as_a_social_research_tool_study_revives_six_degrees_theor/" />
+       <id>tag:process-one.net,2008:en/imtrends/26.278</id>
+      <published>2008-08-25T07:43:00Z</published>
+      <updated>2008-08-25T07:49:26Z</updated>
+      <author>
+            <name>Mickaël Rémond</name>
+            <uri>http://www.process-one.net/</uri>      </author>
+       <content type="html"><![CDATA[According to a recent study by Microsoft into instant messaging habits it takes only six steps to link everyone together. <p>The research carried out by Microsoft researchers Eric Horvitz and Jure Leskovec studied 30 billion instant messages sent using Microsoft Messenger during June 2006 and found that any two people were linked by seven or fewer acquaintances.</p>
+ 
+<p>As reported by BBC News, Horvitz says "What we are seeing suggests that there may be a social connectivity constant for humanity."</p>
+ 
+<p>This research is further evidence of the social and collaborative benefits instant messaging can offer both in and outside of the enterprise through linking more and more people together.</p>
+ 
+<p>You can get more details on the article from BBC News: <a href="http://news.bbc.co.uk/go/pr/fr/-/1/hi/technology/7539329.stm">Study revives six degrees theory</a>.</p>
+      ]]></content>
+    </entry>
+
+    <entry>
+      <title>ProcessOne at XMPP summit</title>
+       <link rel="alternate" type="text/html" href="http://www.process-one.net/en/blogs/article/processone_at_xmpp_summit/" />
+       <id>tag:process-one.net,2008:en/blogs/3.277</id>
+      <published>2008-07-18T08:28:00Z</published>
+      <updated>2008-07-18T08:50:23Z</updated>
+      <author>
+            <name>Mickaël Rémond</name>
+            <uri>http://www.process-one.net/</uri>      </author>
+   
+      <category term="Jabber / XMPP"
+        scheme="http://www.process-one.net/en/blogs/article/category/Jabber / XMPP/"
+        label="Jabber / XMPP" />
+   
+      <category term="ejabberd"
+        scheme="http://www.process-one.net/en/blogs/article/category/ejabberd/"
+        label="ejabberd" />
+       <content type="html"><![CDATA[ProcessOne will be at the <a href="http://www.xmpp.org/summit/summit5.shtml">XMPP summit</a> from 20th to 22th of july 2008. <p>We are eager to meet XMPP servers and clients developers, but also our users around Portland.</p>
+
+<p>If you would like us to meet and will not be at the XMPP summit itself, please drop me a mail :)</p>
+      ]]></content>
+    </entry>
+
+</feed>

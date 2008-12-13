@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/atom10full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">
+    <title>Plugin Directory</title>
+    <link rel="alternate" type="text/html" href="http://plugins.movabletype.org/" />
+    
+    <id>tag:plugins.movabletype.org,2008://32</id>
+    <updated>2008-12-11T07:24:19Z</updated>
+    
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type 4.23-en</generator>
+ 
+
+<link rel="self" href="http://feeds.feedburner.com/PluginDirectory" type="application/atom+xml" /><feedburner:browserFriendly></feedburner:browserFriendly><entry>
+<title>FastTagCloud</title>
+<link rel="alternate" type="text/html" href="http://plugins.movabletype.org/fasttagcloud/" />
+<id>tag:plugins.movabletype.org,2008://32.11703</id>
+<published>2008-12-11T03:23:12Z</published>
+<updated>2008-12-11T07:24:19Z</updated>
+<summary><![CDATA[FastTagCloud (FTC) provides 5 tag helpers, to create a really Fast Tag Cloud, compared with the default Tag Cloud widget. &lt;mt:ftc&gt; ... &lt;/mt:ftc&gt; Inside this block, you use the other templates tags. It have three attributes: maxrank: the max rank...]]></summary>
+<author>
+    <name>mixeladm</name>
+    <uri>http://mixelandia.com</uri>
+</author>
+
+    <category term="Template/Tag Helpers" />
+
+    <category term="Template/Tag Helpers" />
+
+<content type="html" xml:lang="en" xml:base="http://plugins.movabletype.org/">
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Plugin:&lt;/strong&gt; &lt;a href="http://plugins.movabletype.org/fasttagcloud/"&gt;FastTagCloud&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Author:&lt;/strong&gt; &lt;a href="http://members.movabletype.org/mixeladm"&gt;mixeladm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;FastTagCloud (FTC) provides 5 tag helpers, to create a really Fast Tag Cloud, compared with the default Tag Cloud widget.&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;mt:ftc&amp;gt; ... &amp;lt;/mt:ftc&amp;gt; &lt;/p&gt;
+
+&lt;p&gt;Inside this block, you use the other templates tags. It have three attributes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;maxrank: the max rank to use. 6 by default .&lt;/li&gt;
+&lt;li&gt;limit:Upper limit in the tag list to show. 20 by default.&lt;/li&gt;
+&lt;li&gt;order: the order of the tags, it can be "rank" or "alpha". alpha is the default.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&amp;lt;mt:ftcrank&amp;gt; 
+The rank of the Tag.&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;mt:ftcname&amp;gt; 
+The name of the Tag&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;mt:ftclink&amp;gt; 
+The search link of the tag.&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;mt:ftccount&amp;gt; 
+The count of objects with the tag.&lt;/p&gt;
+
+
+</content>
+</entry>
+
+<entry>
+<title>Hybrid Pagination</title>
+<link rel="alternate" type="text/html" href="http://plugins.movabletype.org/hybrid-pagination/" />
+<id>tag:plugins.movabletype.org,2008://32.11697</id>
+<published>2008-12-11T01:33:55Z</published>
+<updated>2008-12-11T01:39:21Z</updated>
+<summary>A plugin that provides support for paginating a MT template module. It relies on MT's dynamic publishing feature, but does not require the first page itself to be published dynamically....</summary>
+<author>
+    <name>brad</name>
+    <uri>http://bradchoate.com/</uri>
+</author>
+
+    <category term="Template/Tag Helpers" />
+
+<content type="html" xml:lang="en" xml:base="http://plugins.movabletype.org/">
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Plugin:&lt;/strong&gt; &lt;a href="http://plugins.movabletype.org/hybrid-pagination/"&gt;Hybrid Pagination&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Author:&lt;/strong&gt; &lt;a href="http://members.movabletype.org/brad"&gt;brad&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A plugin that provides support for paginating a MT template module. It relies on MT's dynamic publishing feature, but does not require the first page itself to be published dynamically.&lt;/p&gt;
+
+
+</content>
+</entry>
+
+<entry>
+<title>ProCommunity</title>
+<link rel="alternate" type="text/html" href="http://plugins.movabletype.org/procommunity/" />
+<id>tag:plugins.movabletype.org,2008://32.11675</id>
+<published>2008-12-09T00:49:34Z</published>
+<updated>2008-12-09T01:54:01Z</updated>
+<summary>Marry the Community Blog an Community Forum template sets (from the Community Pack as of MT 4.23) with the Professional template set and you get three template sets in one plugin: Pro Community Blog - based on the Community Blog...</summary>
+<author>
+    <name>beau</name>
+    <uri>http://beausmith.com</uri>
+</author>
+
+    <category term="Template Set" />
+
+    <category term="Template Set" />
+
+<content type="html" xml:lang="en" xml:base="http://plugins.movabletype.org/">
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Plugin:&lt;/strong&gt; &lt;a href="http://plugins.movabletype.org/procommunity/"&gt;ProCommunity&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Author:&lt;/strong&gt; &lt;a href="http://members.movabletype.org/beau"&gt;beau&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Marry the Community Blog an Community Forum template sets (from the Community Pack as of MT 4.23) with the &lt;a href="http://www.movabletype.org/documentation/professional/professional-website.html"&gt;Professional template set&lt;/a&gt; and you get three template sets in one plugin:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Pro Community Blog - based on the Community Blog template set.&lt;/li&gt;
+&lt;li&gt;Pro Community Forum - based on the Community Forum template set.&lt;/li&gt;
+&lt;li&gt;Pro Community Site - based on the Professional template set (which uses page content for main index page content) but has rating, userpics, etc from the Community Blog template set.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;All skinned with the Professional Black style.&lt;/p&gt;
+
+
+</content>
+</entry>
+
+<entry>
+<title>Assetylene</title>
+<link rel="alternate" type="text/html" href="http://plugins.movabletype.org/assetylene/" />
+<id>tag:plugins.movabletype.org,2008://32.11673</id>
+<published>2008-12-08T22:04:46Z</published>
+<updated>2008-12-11T01:40:22Z</updated>
+<summary>Adds the ability to use a custom template module to control the insertion of assets into a post. It also offers a new field for entering a custom caption when inserting the asset....</summary>
+<author>
+    <name>brad</name>
+    <uri>http://bradchoate.com/</uri>
+</author>
+
+    <category term="Utility" />
+
+<content type="html" xml:lang="en" xml:base="http://plugins.movabletype.org/">
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Plugin:&lt;/strong&gt; &lt;a href="http://plugins.movabletype.org/assetylene/"&gt;Assetylene&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Author:&lt;/strong&gt; &lt;a href="http://members.movabletype.org/brad"&gt;brad&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Adds the ability to use a custom template module to control the insertion of assets into a post. It also offers a new field for entering a custom caption when inserting the asset.&lt;/p&gt;
+
+
+</content>
+</entry>
+
+<entry>
+<title>EasyWorkflow</title>
+<link rel="alternate" type="text/html" href="http://plugins.movabletype.org/easyworkflow/" />
+<id>tag:plugins.movabletype.org,2008://32.11629</id>
+<published>2008-12-04T02:08:29Z</published>
+<updated>2008-12-06T01:26:50Z</updated>
+<summary>This plugin enables you to make a simple workflow. You can set an acknowledger's email address to the plugin. After that, when a blog writer make an entry and save it as a status of "Unpublished(Review)", a request email for...</summary>
+<author>
+    <name>Nick(smallworld)</name>
+    <uri>http://smallworld.west-tokyo.com</uri>
+</author>
+
+    <category term="Organization" />
+
+<content type="html" xml:lang="en" xml:base="http://plugins.movabletype.org/">
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Plugin:&lt;/strong&gt; &lt;a href="http://plugins.movabletype.org/easyworkflow/"&gt;EasyWorkflow&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Author:&lt;/strong&gt; &lt;a href="http://members.movabletype.org/nicksmallworld"&gt;Nick(smallworld)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This plugin enables you to make a simple workflow. You can set an acknowledger's email address to the plugin. After that, when a blog writer make an entry and save it as a status of "Unpublished(Review)", a request email for approval will be sent to the acknowledger.&lt;/p&gt;
+
+
+</content>
+</entry>
+
+<entry>
+<title>Notifixious</title>
+<link rel="alternate" type="text/html" href="http://plugins.movabletype.org/notifixious/" />
+<id>tag:plugins.movabletype.org,2008://32.11617</id>
+<published>2008-12-04T00:02:58Z</published>
+<updated>2008-12-06T01:28:58Z</updated>
+<summary>This plugin allows you to notify your readers on their Instant Messaging (AIM, MSN, GTalk, ICQ...), Email or SMS when you publish new posts! It also adds a widget to your blog to allow your users to choose on which...</summary>
+<author>
+    <name>julien51</name>
+    <uri>http://www.notifixio.us</uri>
+</author>
+
+    <category term="Web Services" />
+
+<content type="html" xml:lang="en" xml:base="http://plugins.movabletype.org/">
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Plugin:&lt;/strong&gt; &lt;a href="http://plugins.movabletype.org/notifixious/"&gt;Notifixious&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Author:&lt;/strong&gt; &lt;a href="http://members.movabletype.org/julien51"&gt;julien51&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This plugin allows you to notify your readers on their Instant Messaging (AIM, MSN, GTalk, ICQ...), Email or SMS when you publish new posts! It also adds a widget to your blog to allow your users to choose on which channel they want to be notified!&lt;/p&gt;
+
+&lt;p&gt;Why do you want your user to be notified when you publish a new article?&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Increased loyalty!&lt;/li&gt;
+&lt;li&gt;Faster spread for your posts: it's actually immediate!&lt;/li&gt;
+&lt;li&gt;RSS is somehow broken: your readers (do they all know RSS?) have to start a reader to know that you published a new article&lt;/li&gt;
+&lt;li&gt;They can Digg, Twit', Share on Facebook or save your post to Delicious!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Check &lt;a href="http://notifixio.us/"&gt;Notifixious&lt;/a&gt; for further information.&lt;/p&gt;
+
+
+</content>
+</entry>
+
+<entry>
+<title>TemplateSetExporter</title>
+<link rel="alternate" type="text/html" href="http://plugins.movabletype.org/templatesetexporter/" />
+<id>tag:plugins.movabletype.org,2008://32.11545</id>
+<published>2008-12-02T03:34:56Z</published>
+<updated>2008-12-02T03:47:54Z</updated>
+<summary>Template Set Export is a simple plugin (available only in Japanese for now) which allows you to export a blog's current templates as a template set plugin for your own reuse, or for redistribution to other Movable Type users....</summary>
+<author>
+    <name>mokokazusekine</name>
+    <uri>http://www.m-logic.co.jp/</uri>
+</author>
+
+    <category term="Template Set" />
+
+<content type="html" xml:lang="en" xml:base="http://plugins.movabletype.org/">
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Plugin:&lt;/strong&gt; &lt;a href="http://plugins.movabletype.org/templatesetexporter/"&gt;TemplateSetExporter&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Author:&lt;/strong&gt; &lt;a href="http://members.movabletype.org/mokokazusekine"&gt;mokokazusekine&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Template Set Export is a simple plugin (available only in Japanese for now) which allows you to export a blog's current templates as a template set plugin for your own reuse, or for redistribution to other Movable Type users.&lt;/p&gt;
+
+
+</content>
+</entry>
+
+<entry>
+<title>Access Counter</title>
+<link rel="alternate" type="text/html" href="http://plugins.movabletype.org/access-counter/" />
+<id>tag:plugins.movabletype.org,2008://32.11456</id>
+<published>2008-11-25T02:59:41Z</published>
+<updated>2008-12-01T15:47:04Z</updated>
+<summary>This plugin enables Access Ranking: tally up the accessed count. Additionally, you can sort entries by their accessed count....</summary>
+<author>
+    <name>morimasato</name>
+    <uri>http://www.homepagemaker.biz/</uri>
+</author>
+
+    <category term="Utility" />
+
+<content type="html" xml:lang="en" xml:base="http://plugins.movabletype.org/">
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Plugin:&lt;/strong&gt; &lt;a href="http://plugins.movabletype.org/access-counter/"&gt;Access Counter&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Author:&lt;/strong&gt; &lt;a href="http://members.movabletype.org/morimasato"&gt;morimasato&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This plugin enables Access Ranking: tally up the accessed count. Additionally, you can sort entries by their accessed count.&lt;/p&gt;
+
+
+</content>
+</entry>
+
+<entry>
+<title>Auto-Disemvoweller 2.0</title>
+<link rel="alternate" type="text/html" href="http://plugins.movabletype.org/auto-disemvoweller-20-2/" />
+<id>tag:plugins.movabletype.org,2008://32.11364</id>
+<published>2008-11-20T13:32:20Z</published>
+<updated>2008-11-20T13:32:20Z</updated>
+<summary>a Movable Type 4.x Plugin for managing rowdy comment threads. This plugin enables the administrator to disemvowel specific comments while keeping the original comment for archival purposes. More about Disemvoweling here: http://en.wikipedia.org/wiki/Disemvoweling...</summary>
+<author>
+    <name>thgrendel</name>
+    <uri>http://hacks.grendel.at/</uri>
+</author>
+
+    <category term="Community" />
+
+<content type="html" xml:lang="en" xml:base="http://plugins.movabletype.org/">
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Plugin:&lt;/strong&gt; &lt;a href="http://plugins.movabletype.org/auto-disemvoweller-20-2/"&gt;Auto-Disemvoweller 2.0&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Author:&lt;/strong&gt; &lt;a href="http://members.movabletype.org/thgrendel"&gt;thgrendel&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;a Movable Type 4.x Plugin for managing rowdy comment threads.&lt;/p&gt;
+
+&lt;p&gt;This plugin enables the administrator to disemvowel specific comments while keeping the original comment for archival purposes. More about Disemvoweling here: http://en.wikipedia.org/wiki/Disemvoweling&lt;/p&gt;
+
+
+</content>
+</entry>
+
+<entry>
+<title>Get Satisfaction Action Streams</title>
+<link rel="alternate" type="text/html" href="http://plugins.movabletype.org/get-satisfaction-action-stream/" />
+<id>tag:plugins.movabletype.org,2008://32.11358</id>
+<published>2008-11-20T09:42:01Z</published>
+<updated>2008-11-24T17:22:52Z</updated>
+<summary>Adds support for Get Satisfaction to Action Streams, showing both new topics and replies....</summary>
+<author>
+    <name>USSJoin</name>
+    <uri>http://ussjoin.com</uri>
+</author>
+
+    <category term="Action Streams" />
+
+<content type="html" xml:lang="en" xml:base="http://plugins.movabletype.org/">
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Plugin:&lt;/strong&gt; &lt;a href="http://plugins.movabletype.org/get-satisfaction-action-stream/"&gt;Get Satisfaction Action Streams&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Author:&lt;/strong&gt; &lt;a href="http://members.movabletype.org/ussjoin"&gt;USSJoin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Adds support for Get Satisfaction to Action Streams, showing both new topics and replies.&lt;/p&gt;
+
+
+</content>
+</entry>
+
+<entry>
+<title>EasyWorkflow</title>
+<link rel="alternate" type="text/html" href="http://plugins.movabletype.org/easyworkflow-17/" />
+<id>tag:plugins.movabletype.org,2008://32.11346</id>
+<published>2008-11-19T09:32:05Z</published>
+<updated>2008-11-19T09:32:05Z</updated>
+<summary>This plugin enables you to make a simple workflow. You can set an acknowledger's email address to the plugin. After that, when a blog writer make an entry and save it as a status of "Unpublished(Review)", a request email for...</summary>
+<author>
+    <name>Nick(smallworld)</name>
+    <uri>http://smallworld.west-tokyo.com</uri>
+</author>
+
+    <category term="Organization" />
+
+<content type="html" xml:lang="en" xml:base="http://plugins.movabletype.org/">
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Plugin:&lt;/strong&gt; &lt;a href="http://plugins.movabletype.org/easyworkflow-17/"&gt;EasyWorkflow&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Author:&lt;/strong&gt; &lt;a href="http://members.movabletype.org/nicksmallworld"&gt;Nick(smallworld)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This plugin enables you to make a simple workflow.
+You can set an acknowledger's email address to the plugin.
+After that, when a blog writer make an entry and save it
+as a status of "Unpublished(Review)", a request email for approval will be sent to the acknowledger.&lt;/p&gt;
+
+
+</content>
+</entry>
+
+<entry>
+<title>Qik Action Streams Plugin</title>
+<link rel="alternate" type="text/html" href="http://plugins.movabletype.org/qik-action-streams-plugin/" />
+<id>tag:plugins.movabletype.org,2008://32.11336</id>
+<published>2008-11-18T20:04:11Z</published>
+<updated>2008-11-24T17:23:00Z</updated>
+<summary>Takes the latest videos from a Qik user and creates an Action Stream for it. Additionally the plugin fetches the video URL, and thumbnail URL. Together with the video URL you are able to integrate the embeddable video player in...</summary>
+<author>
+    <name>yvesluther</name>
+    <uri>http://yvesluther.name/</uri>
+</author>
+
+    <category term="Action Streams" />
+
+    <category term="Web Services" />
+
+<content type="html" xml:lang="en" xml:base="http://plugins.movabletype.org/">
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Plugin:&lt;/strong&gt; &lt;a href="http://plugins.movabletype.org/qik-action-streams-plugin/"&gt;Qik Action Streams Plugin&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Author:&lt;/strong&gt; &lt;a href="http://members.movabletype.org/yvesluther"&gt;yvesluther&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Takes the latest videos from a Qik user and creates an Action Stream for it.&lt;/p&gt;
+
+&lt;p&gt;Additionally the plugin fetches the video URL, and thumbnail URL. Together with the video URL you are able to integrate the embeddable video player in your Action Stream posts.&lt;/p&gt;
+
+&lt;p&gt;Depends on the presence of the Action Streams plugin.&lt;/p&gt;
+
+
+</content>
+</entry>
+
+<entry>
+<title>ArchiveUploader</title>
+<link rel="alternate" type="text/html" href="http://plugins.movabletype.org/archiveuploader-7/" />
+<id>tag:plugins.movabletype.org,2008://32.11298</id>
+<published>2008-11-17T16:22:29Z</published>
+<updated>2008-11-17T16:22:29Z</updated>
+<summary>A plugin which help to upload asset and index-template. Upload archive file and extract as these....</summary>
+<author>
+    <name>toi.planning</name>
+    <uri>http://tec.toi-planning.net/</uri>
+</author>
+
+    <category term="Administrative/User Interface" />
+
+<content type="html" xml:lang="en" xml:base="http://plugins.movabletype.org/">
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Plugin:&lt;/strong&gt; &lt;a href="http://plugins.movabletype.org/archiveuploader-7/"&gt;ArchiveUploader&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Author:&lt;/strong&gt; &lt;a href="http://members.movabletype.org/toiplanning"&gt;toi.planning&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A plugin which help to upload asset and index-template.
+Upload archive file and extract as these.&lt;/p&gt;
+
+
+</content>
+</entry>
+
+<entry>
+<title>Config Assistant</title>
+<link rel="alternate" type="text/html" href="http://plugins.movabletype.org/config-assistant/" />
+<id>tag:plugins.movabletype.org,2008://32.10756</id>
+<published>2008-11-10T18:26:05Z</published>
+<updated>2008-11-10T18:28:57Z</updated>
+<summary>Configuration Assistant for Movable Type allows you to easily design an entire settings page for your theme or plugin complete with field sets, labels, default values, pull down menus, radio buttons, check boxes, text areas, and text input fields for...</summary>
+<author>
+    <name>byrnereese</name>
+    <uri>http://www.majordojo.com</uri>
+</author>
+
+    <category term="Developer" />
+
+<content type="html" xml:lang="en" xml:base="http://plugins.movabletype.org/">
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Plugin:&lt;/strong&gt; &lt;a href="http://plugins.movabletype.org/config-assistant/"&gt;Config Assistant&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Author:&lt;/strong&gt; &lt;a href="http://members.movabletype.org/byrnereese"&gt;byrnereese&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Configuration Assistant for Movable Type allows you to easily design an entire settings page for your theme or plugin complete with field sets, labels, default values, pull down menus, radio buttons, check boxes, text areas, and text input fields for all the options you wish to expose. You can do this all through a simple config file. No coding required.&lt;/p&gt;
+
+
+</content>
+</entry>
+
+<entry>
+<title>New User Management Prototype</title>
+<link rel="alternate" type="text/html" href="http://plugins.movabletype.org/enhanced-user-management/" />
+<id>tag:plugins.movabletype.org,2008://32.10752</id>
+<published>2008-11-10T18:12:04Z</published>
+<updated>2008-11-10T18:34:40Z</updated>
+<summary>This is an ever-evolving plugin designed to allow us, Six Apart to test and iterate upon a new user management area of Movable Type. Features: New User Interface accessible from the blog's "Manage &gt; Users" menu. Experimental use of Gravatar...</summary>
+<author>
+    <name>byrnereese</name>
+    <uri>http://www.majordojo.com</uri>
+</author>
+
+    <category term="Administrative/User Interface" />
+
+<content type="html" xml:lang="en" xml:base="http://plugins.movabletype.org/">
+
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Plugin:&lt;/strong&gt; &lt;a href="http://plugins.movabletype.org/enhanced-user-management/"&gt;New User Management Prototype&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Author:&lt;/strong&gt; &lt;a href="http://members.movabletype.org/byrnereese"&gt;byrnereese&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is an ever-evolving plugin designed to allow us, Six Apart to test and iterate upon a new user management area of Movable Type. &lt;/p&gt;
+
+&lt;p&gt;Features:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;New User Interface accessible from the blog's "Manage &gt; Users" menu.&lt;/li&gt;
+&lt;li&gt;Experimental use of Gravatar to display userpics if a local one cannot be found.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+</content>
+</entry>
+
+</feed>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Perl NOC</title>
+    <link rel="alternate" type="text/html" href="http://log.perl.org/" />
+    <link rel="service.post" type="application/x.atom+xml" href="http://www.typepad.com/t/atom/weblog/blog_id=133175" title="Perl NOC" />
+    <id>tag:typepad.com,2003:weblog-133175</id>
+    <updated>2008-10-04T02:50:53Z</updated>
+    <subtitle>the perl.org infrastructure weblog</subtitle>
+
+    <generator uri="http://www.typepad.com/">TypePad</generator>
+    <entry>
+        <title>svn 1.5.2</title>
+        <link rel="alternate" type="text/html" href="http://log.perl.org/2008/10/svn-152.html" />
+        <link rel="service.edit" type="application/x.atom+xml" href="http://www.typepad.com/t/atom/weblog/blog_id=133175/entry_id=56524211" title="svn 1.5.2" />
+        <id>tag:typepad.com,2003:post-56524211</id>
+        <published>2008-10-03T19:50:53-07:00</published>
+        <updated>2008-10-04T02:51:04Z</updated>
+        <summary>svn.perl.org is now running svn 1.5.2.</summary>
+        <author>
+            <name>Robert S</name>
+        </author>
+
+    <content type="html" xml:lang="da" xml:base="http://log.perl.org/">
+&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;svn.perl.org is now running svn 1.5.2.&amp;nbsp; &lt;/p&gt;&lt;/div&gt;
+</content>
+
+
+
+    </entry>
+    <entry>
+        <title>Don&#39;t use Apache::Reload in production</title>
+        <link rel="alternate" type="text/html" href="http://log.perl.org/2008/05/dont-use-apache.html" />
+        <link rel="service.edit" type="application/x.atom+xml" href="http://www.typepad.com/t/atom/weblog/blog_id=133175/entry_id=49658012" title="Don't use Apache::Reload in production" />
+        <id>tag:typepad.com,2003:post-49658012</id>
+        <published>2008-05-09T21:31:29-07:00</published>
+        <updated>2008-05-10T04:31:35Z</updated>
+        <summary>Graham (who runs search.cpan.org) let us know that two of the machines appeared to be running very slowly, and he thought it might be NFS related, as everything else looked fine. Here&#39;s what we found looking at where requests to...</summary>
+        <author>
+            <name>Robert S</name>
+        </author>
+
+    <content type="html" xml:lang="da" xml:base="http://log.perl.org/">
+&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;Graham (who runs search.cpan.org) let us know that two of the machines appeared to be running very slowly, and he thought it might be NFS related, as everything else looked fine.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;Here&#39;s what we found looking at where requests to our NFS server were coming from...&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://chart.apis.google.com/chart?cht=p3&amp;amp;chs=280x140&amp;amp;chtt=NFS%20Traffic%20By%20Source%20Host&amp;amp;chl=A%7CB%7CC%7CD%7CE%7CF%7CG%7CH%7CI&amp;amp;chco=&amp;amp;chd=t:0.932167,0.000548469,0.00074344,0.000765306,0.00153426,0.0141509,0.0158801,0.0338958,0.000307945&quot; /&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;oops.&lt;/p&gt;&lt;br /&gt;&lt;p&gt;Turns out Apache::Reload had been accidentally turned on on one of the production servers for &lt;a href=&quot;http://geourl.org/&quot;&gt;geourl&lt;/a&gt; and *every* page hit was causing a stat of a few hundred .pm files.&amp;nbsp; &amp;nbsp;Turned it off, and NFS load dropped by 80%, and everything went back to normal.&lt;/p&gt;
+
+&lt;p&gt;Tune in next week for &amp;quot;Don&#39;t use NFS in production&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;(And yes, this entire post exists to show off the pretty Google Chart.)&lt;/p&gt;&lt;/div&gt;
+</content>
+
+
+
+    </entry>
+    <entry>
+        <title>Slow April Day</title>
+        <link rel="alternate" type="text/html" href="http://log.perl.org/2008/04/slow-april-day.html" />
+        <link rel="service.edit" type="application/x.atom+xml" href="http://www.typepad.com/t/atom/weblog/blog_id=133175/entry_id=49156976" title="Slow April Day" />
+        <id>tag:typepad.com,2003:post-49156976</id>
+        <published>2008-04-28T22:27:25-07:00</published>
+        <updated>2008-04-29T05:27:31Z</updated>
+        <summary>Twenty miles to the East, fires burn. But here at perl.org headquarters, it&#39;s a slow day. Not that we&#39;re not busy as usual, but today our primary webserver was running veeeeeeeeery veeeery slooooooooowww.. I think it&#39;s just one of those...</summary>
+        <author>
+            <name>Robert S</name>
+        </author>
+
+    <content type="html" xml:lang="da" xml:base="http://log.perl.org/">
+&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;Twenty miles to the East, &lt;a href=&quot;http://ap.google.com/article/ALeqM5gwSSrT7-LciDlr1tYmyE9e19oX9QD90B8M501&quot;&gt;fires burn&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But here at perl.org headquarters, it&#39;s a slow day.&lt;/p&gt;
+
+&lt;p&gt;Not that we&#39;re not &lt;em&gt;&lt;strong&gt;busy&lt;/strong&gt;&lt;/em&gt; as usual, but today our primary webserver was running veeeeeeeeery veeeery slooooooooowww..&lt;/p&gt;
+
+&lt;p&gt;I think it&#39;s just one of those days.&lt;/p&gt;
+
+&lt;p&gt;Today&#39;s issues:&lt;/p&gt;
+
+&lt;ol&gt;&lt;li&gt;full partition makes database unhappy&lt;/li&gt;
+
+&lt;li&gt;effective DDOS attack by people misusing &lt;a href=&quot;http://www.pool.ntp.org&quot;&gt;the ntp pool&lt;/a&gt;.&amp;nbsp; (No - you are &lt;strong&gt;NOT&lt;/strong&gt; supposed to set your time via HTTP using our service.)&lt;/li&gt;
+
+&lt;li&gt;(when I thought it was all done) someone in Australia tried to scrape a million messages off of the cpan-testers archive.&amp;nbsp; All at once.&amp;nbsp; (&lt;strong&gt;Blocked!&lt;/strong&gt;)&lt;/li&gt;&lt;/ol&gt;
+
+&lt;p&gt;But everything&#39;s back to fast and normal now.....&lt;/p&gt;&lt;/div&gt;
+</content>
+
+
+
+    </entry>
+    <entry>
+        <title>Mailbag: Unified CPAN </title>
+        <link rel="alternate" type="text/html" href="http://log.perl.org/2008/04/mailbag-unified.html" />
+        <link rel="service.edit" type="application/x.atom+xml" href="http://www.typepad.com/t/atom/weblog/blog_id=133175/entry_id=48634404" title="Mailbag: Unified CPAN " />
+        <id>tag:typepad.com,2003:post-48634404</id>
+        <published>2008-04-17T23:50:27-07:00</published>
+        <updated>2008-04-20T06:05:40Z</updated>
+        <summary>Today&#39;s message came in to one of the CPAN support addresses. We could tell him about Bundle::Everything (out of date as it may be), although I suspect he doesn&#39;t have a comfortable enough chair to read them all.Hello dear Hack-o-holics...</summary>
+        <author>
+            <name>Robert S</name>
+        </author>
+
+    <content type="html" xml:lang="da" xml:base="http://log.perl.org/">
+&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;Today&#39;s message came in to one of the CPAN support addresses.&amp;nbsp; We could tell him about Bundle::Everything (out of date as it may be), although I suspect he doesn&#39;t have a comfortable enough chair to read them all.&lt;/p&gt;&lt;blockquote&gt;&lt;p&gt;Hello dear Hack-o-holics !&lt;/p&gt;
+
+&lt;p&gt;Is this not possible ???&lt;br /&gt;I want to download all available perl-modules in one bundle !?&lt;/p&gt;
+
+&lt;p&gt;It is crucial, to download every useful module separated.&lt;/p&gt;
+
+&lt;p&gt;One bundle and then I can read them in peace at home.&lt;/p&gt;
+
+&lt;p&gt;Thank you&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;
+</content>
+
+
+
+    </entry>
+    <entry>
+        <title>Related module links on search.cpan.org</title>
+        <link rel="alternate" type="text/html" href="http://log.perl.org/2008/04/related-module.html" />
+        <link rel="service.edit" type="application/x.atom+xml" href="http://www.typepad.com/t/atom/weblog/blog_id=133175/entry_id=48029306" title="Related module links on search.cpan.org" />
+        <id>tag:typepad.com,2003:post-48029306</id>
+        <published>2008-04-05T13:31:01-07:00</published>
+        <updated>2008-04-08T16:42:10Z</updated>
+        <summary>Documentation pages on search.cpan.org now contain a list of related modules. For an example see LWP::UserAgent This list is determined by data created by Perlmonks.org about which modules are discussed together.</summary>
+        <author>
+            <name>Graham Barr</name>
+        </author>
+        <category term="cpansearch" />
+
+    <content type="xhtml" xml:lang="da" xml:base="http://log.perl.org/">
+<div xmlns="http://www.w3.org/1999/xhtml"><p>Documentation pages on <a href="http://search.cpan.org/">search.cpan.org</a> now contain a list of related modules. For an example see <a href="http://search.cpan.org/perldoc?LWP::UserAgent">LWP::UserAgent</a></p>
+
+<p>This list is determined by data created by  <a href="http://perlmonks.org/">Perlmonks.org</a> about which modules are discussed together.</p></div>
+</content>
+
+
+
+    </entry>
+    <entry>
+        <title>Domain names not for sale</title>
+        <link rel="alternate" type="text/html" href="http://log.perl.org/2008/02/domain-names-no.html" />
+        <link rel="service.edit" type="application/x.atom+xml" href="http://www.typepad.com/t/atom/weblog/blog_id=133175/entry_id=46021910" title="Domain names not for sale" />
+        <id>tag:typepad.com,2003:post-46021910</id>
+        <published>2008-02-22T16:33:21-08:00</published>
+        <updated>2008-02-23T00:33:30Z</updated>
+        <summary>We regularly get inquiries about the perl.org, perlmonks.org etc domains like the following: We are interested in purchasing your domain name. If interested, please let me know what it takes to buy it. If agreeable, we can finalize the deal...</summary>
+        <author>
+            <name>Ask Bjørn Hansen</name>
+        </author>
+
+    <content type="html" xml:lang="da" xml:base="http://log.perl.org/">
+&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;We regularly get inquiries about the perl.org, perlmonks.org etc domains like the following:&lt;/p&gt;
+
+&lt;blockquote&gt;We are interested in purchasing your domain name. If interested, please let me know what it takes to buy it.
+
+&lt;p&gt;If agreeable, we can finalize the deal through escrow.com Monday.&lt;/blockquote&gt;&lt;/p&gt;
+
+&lt;p&gt;Our typical response:&lt;/p&gt;
+
+&lt;blockquote&gt;Hi $spammer,
+
+&lt;p&gt;One billion USD.   Non-sequential twenty dollar bills preferred, but not required.&lt;/p&gt;
+
+&lt;p&gt;You pay the escrow.com fees.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+Thanks,&lt;/p&gt;
+
+&lt;p&gt;  - ask&lt;/p&gt;
+
+&lt;p&gt;p.s. no, it&#39;s not really for sale.&lt;/blockquote&gt;&lt;/p&gt;&lt;/div&gt;
+</content>
+
+
+
+    </entry>
+    <entry>
+        <title>goodbye cpan-testers, hello cpan-uploads</title>
+        <link rel="alternate" type="text/html" href="http://log.perl.org/2008/02/goodbye-cpan-te.html" />
+        <link rel="service.edit" type="application/x.atom+xml" href="http://www.typepad.com/t/atom/weblog/blog_id=133175/entry_id=45799668" title="goodbye cpan-testers, hello cpan-uploads" />
+        <id>tag:typepad.com,2003:post-45799668</id>
+        <published>2008-02-18T16:21:07-08:00</published>
+        <updated>2008-03-04T16:33:08Z</updated>
+        <summary>Today, at 4:11pm Pacific Standard Time, an era (or at least 9 years) ended. The cpan-testers mailing list, recipient of a all CPAN tests submitted for CPAN testers processing, no longer resends all of those emails to its 50+ subscribers....</summary>
+        <author>
+            <name>Robert S</name>
+        </author>
+
+    <content type="html" xml:lang="da" xml:base="http://log.perl.org/">
+&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;Today, at 4:11pm Pacific Standard Time, an era (or at least 9 years) ended.&amp;nbsp; The cpan-testers mailing list, recipient of a &lt;strong&gt;all &lt;/strong&gt;CPAN tests submitted for &lt;a href=&quot;http://testers.cpan.org&quot;&gt;CPAN testers&lt;/a&gt; processing, no longer resends all of those emails to its 50+ subscribers.&amp;nbsp; The last message to be distributed via email should have been #1049514.&amp;nbsp; Further messages will be kept in the archive, &lt;a href=&quot;http://www.nntp.perl.org/group/perl.cpan.testers&quot;&gt;http://www.nntp.perl.org/group/perl.cpan.testers&lt;/a&gt; (also home to RSS and Atom feeds).&amp;nbsp; Eventually, we&#39;re going to transfer to a proper database backed system that doesn&#39;t use email at all.&lt;/p&gt;
+
+&lt;p&gt;Several people noted that they used cpan-testers to receive notification of new uploads to CPAN.&amp;nbsp; We&#39;ve created the cpan-uploads mailing list to receive these notifications.&amp;nbsp; &amp;nbsp;&amp;nbsp; Archive/RSS/Atom is at &lt;a href=&quot;http://www.nntp.perl.org/group/perl.cpan.uploads&quot;&gt;http://www.nntp.perl.org/group/perl.cpan.uploads&lt;/a&gt;.&amp;nbsp; You can subscribe by sending a note to cpan-uploads-subscribe at perl.org.&lt;/p&gt;&lt;/div&gt;
+</content>
+
+
+
+    </entry>
+    <entry>
+        <title>No more email delivery of cpan-testers</title>
+        <link rel="alternate" type="text/html" href="http://log.perl.org/2008/02/no-more-email-d.html" />
+        <link rel="service.edit" type="application/x.atom+xml" href="http://www.typepad.com/t/atom/weblog/blog_id=133175/entry_id=45434322" title="No more email delivery of cpan-testers" />
+        <id>tag:typepad.com,2003:post-45434322</id>
+        <published>2008-02-10T23:40:57-08:00</published>
+        <updated>2008-03-04T15:24:50Z</updated>
+        <summary>Dear cpan-testers recipients, Effective Monday night, Feb 11th, 2008, after over a million test reports[1], we will no longer be supporting the delivery via email of cpan-testers test reports. With an influx of over 3000 messages a day, this was...</summary>
+        <author>
+            <name>Robert S</name>
+        </author>
+
+    <content type="html" xml:lang="da" xml:base="http://log.perl.org/">
+&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;Dear cpan-testers recipients,&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp; Effective Monday night, Feb 11th, 2008, after over a million test reports[1], we will no longer be supporting the delivery via email of cpan-testers test reports.&amp;nbsp; With an influx of over 3000 messages a&amp;nbsp; day, this was causing us to deliver almost 200,000 outbound messages, most of which nobody read.&lt;/p&gt;&lt;p&gt;cpan-testers test report submission is unaffected by this change.[2]
+
+&lt;/p&gt;
+
+&lt;p&gt;If you are currently subscribed to cpan-testers, you&#39;ll be unsubscribed, and your mail server will breathe a sign of relief.&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp; You can find test reports at:&lt;br /&gt;&amp;nbsp; &amp;nbsp; &lt;a href=&quot;http://www.nntp.perl.org/group/perl.cpan.testers/&quot;&gt;http://www.nntp.perl.org/group/perl.cpan.testers/&lt;/a&gt;&lt;br /&gt;&amp;nbsp; &amp;nbsp; &lt;a href=&quot;http://www.nntp.perl.org/group/perl.cpan.testers/rss/posts.xml&quot;&gt;http://www.nntp.perl.org/group/perl.cpan.testers/rss/posts.xml&lt;/a&gt;&lt;br /&gt;&amp;nbsp; &amp;nbsp; &lt;a href=&quot;nntp://nntp.perl.org/perl.cpan.testers/&quot;&gt;nntp://nntp.perl.org/perl.cpan.testers/&lt;/a&gt;&lt;br /&gt;&amp;nbsp; &amp;nbsp; &lt;a href=&quot;http://testers.cpan.org/&quot;&gt;http://testers.cpan.org/&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;Why are we doing this?&amp;nbsp; Things were chugging along smoothly, except every few weeks we&#39;d have a problem where a recipient&#39;s mail server would stop accepting mail, and we&#39;d very quickly end up with a large backlog of thousands of messages waiting to be delivered.&amp;nbsp; This would slow down delivery for all of our mailing lists.&amp;nbsp; Recently, this has been happening more and more often.&amp;nbsp; We analyzed the&lt;br /&gt;problem, and came to the conclusion that the best solution was to discontinue outbound email.&amp;nbsp; This will let us focus more time on maintaining more important things.&lt;/p&gt;
+
+&lt;p&gt;If you have something that is dependent on receiving all of these emails, please let us know.&lt;/p&gt;
+
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+&lt;p&gt;-R&lt;/p&gt;
+
+&lt;p&gt;Footnotes: &lt;br /&gt;[1]&amp;nbsp; &lt;a href=&quot;http://www.nntp.perl.org/group/perl.cpan.testers/2008/01/msg1000000.html&quot;&gt;http://www.nntp.perl.org/group/perl.cpan.testers/2008/01/msg1000000.html&lt;/a&gt; &lt;/p&gt;
+
+&lt;p&gt;[2]&amp;nbsp; There are some volunteers working on a new system that will take email out of the picture altogether, creating a faster, more streamlined, and more consistent test database.&lt;/p&gt;&lt;/div&gt;
+</content>
+
+
+
+    </entry>
+    <entry>
+        <title>Email Glitch affecting pm.org and cpan.org</title>
+        <link rel="alternate" type="text/html" href="http://log.perl.org/2008/02/email-glitch-af.html" />
+        <link rel="service.edit" type="application/x.atom+xml" href="http://www.typepad.com/t/atom/weblog/blog_id=133175/entry_id=45396874" title="Email Glitch affecting pm.org and cpan.org" />
+        <id>tag:typepad.com,2003:post-45396874</id>
+        <published>2008-02-09T21:10:43-08:00</published>
+        <updated>2008-02-28T04:44:02Z</updated>
+        <summary>This past Thursday and Friday, we had an email glitch affecting cpan.org and pm.org email addresses. The issue has been fixed, and mail is flowing normally once again. If you sent a message to a cpan.org or pm.org address and...</summary>
+        <author>
+            <name>Robert S</name>
+        </author>
+
+    <content type="html" xml:lang="da" xml:base="http://log.perl.org/">
+&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;This past Thursday and Friday, we had an email glitch affecting cpan.org and pm.org email addresses.&amp;nbsp; The issue has been fixed, and mail is flowing normally once again.&amp;nbsp; If you sent a message to a cpan.org or pm.org address and it hasn&#39;t gone through, or if it bounced, you may wish to send it again.&lt;/p&gt;&lt;/div&gt;
+</content>
+
+
+
+    </entry>
+    <entry>
+        <title>Chicken Spam</title>
+        <link rel="alternate" type="text/html" href="http://log.perl.org/2008/01/chicken-spam.html" />
+        <link rel="service.edit" type="application/x.atom+xml" href="http://www.typepad.com/t/atom/weblog/blog_id=133175/entry_id=44429544" title="Chicken Spam" />
+        <id>tag:typepad.com,2003:post-44429544</id>
+        <published>2008-01-20T18:25:34-08:00</published>
+        <updated>2008-02-27T18:02:36Z</updated>
+        <summary>An odd excerpt from the incoming spam pile: Subject: transportation by air of day-old chicks to Russia We can offer available for charter flights, aircraft An-26B, for transportation by air of day-old chicks. Our price from Europe to Russia from...</summary>
+        <author>
+            <name>Robert S</name>
+        </author>
+
+    <content type="xhtml" xml:lang="da" xml:base="http://log.perl.org/">
+<div xmlns="http://www.w3.org/1999/xhtml"><p>An odd excerpt from the incoming spam pile:</p>
+<blockquote style="font-family: courier;"><p>
+Subject: transportation by air of day-old chicks to Russia </p>
+
+<p>We can offer available for charter flights, aircraft An-26B, for transportation by air of day-old chicks. </p>
+
+<p>Our price from Europe to Russia from 10000 per one charter flight.</p>
+
+<p>Best regards</p>
+
+<p>Managing Director: Anatoly Ryabov</p></blockquote></div>
+</content>
+
+
+
+    </entry>
+    <entry>
+        <title>Upgrades mostly done</title>
+        <link rel="alternate" type="text/html" href="http://log.perl.org/2007/12/upgrades-mostly.html" />
+        <link rel="service.edit" type="application/x.atom+xml" href="http://www.typepad.com/t/atom/weblog/blog_id=133175/entry_id=43367680" title="Upgrades mostly done" />
+        <id>tag:typepad.com,2003:post-43367680</id>
+        <published>2007-12-28T21:32:56-08:00</published>
+        <updated>2008-02-26T20:28:22Z</updated>
+        <summary>We finished the upgrades around 8pm (PST). It was surprisingly easy to upgrade from RHEL3 to RHEL5. The only thing we&#39;ve run into so far were some of our custom built things we had compiled with the system OpenSSL that...</summary>
+        <author>
+            <name>Ask Bjørn Hansen</name>
+        </author>
+
+    <content type="xhtml" xml:lang="da" xml:base="http://log.perl.org/">
+<div xmlns="http://www.w3.org/1999/xhtml"><p>We finished <a href="http://log.perl.org/2007/12/annual-maintena.html">the upgrades</a> around 8pm (PST).  It was surprisingly easy to upgrade from RHEL3 to RHEL5.  The only thing we've run into so far were some of our custom built things we had compiled with the system OpenSSL that needed recompiling.</p>
+
+<p>Most services are up again (and have been for some hours).  We're upgrading our monitoring and system management tools and we're still tweaking and configuring, so do let us know if you see anything broken.</p></div>
+</content>
+
+
+
+    </entry>
+    <entry>
+        <title>&quot;Annual&quot; Maintenance - Dec 28th, 2007</title>
+        <link rel="alternate" type="text/html" href="http://log.perl.org/2007/12/annual-maintena.html" />
+        <link rel="service.edit" type="application/x.atom+xml" href="http://www.typepad.com/t/atom/weblog/blog_id=133175/entry_id=43321914" title="&quot;Annual&quot; Maintenance - Dec 28th, 2007" />
+        <id>tag:typepad.com,2003:post-43321914</id>
+        <published>2007-12-27T18:45:17-08:00</published>
+        <updated>2008-02-26T20:56:51Z</updated>
+        <summary>Friday, December 8th, 2007 will be our &quot;annual&quot; datacenter day. This means that Ask and I will go down to the colocation facility, swap drives, rewire things, upgrade BIOSes, upgrade operating systems, and reaffirm our frustration with hardware. (Our Cyclades...</summary>
+        <author>
+            <name>Robert S</name>
+        </author>
+
+    <content type="html" xml:lang="da" xml:base="http://log.perl.org/">
+&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;Friday, December 8th, 2007 will be our &amp;quot;annual&amp;quot; datacenter day.&amp;nbsp; This means that Ask and I will go down to the &lt;a href=&quot;http://www.ix2.net/&quot;&gt;colocation facility&lt;/a&gt;, swap drives, rewire things, upgrade BIOSes, upgrade operating systems, and reaffirm our &lt;a href=&quot;http://www.funny-games.biz/beatup-pc.html&quot;&gt;frustration with hardware&lt;/a&gt;. (Our &lt;a href=&quot;http://www.cyclades.com/&quot;&gt;Cyclades&lt;/a&gt; Console Server means we hardly ever have to physically visit the machines.)&lt;/p&gt;
+
+&lt;p&gt;Starting at around 12pm PST (20:00 UTC) some &lt;a href=&quot;http://noc.perl.org/&quot;&gt;perl.org services&lt;/a&gt; may be unavailable.&amp;nbsp; Email to perl.org, cpan.org, and other hosted domains may be delayed.&amp;nbsp; Some websites including PerlBug, CPAN Ratings, www.perl.org, www.parrotcode.org, www.perldoc.org, search.cpan.org, may be unavailable.&amp;nbsp; We have a plan to minimize downtime for each service.&lt;/p&gt;
+
+&lt;p&gt;We expect the maintenance period to last less than six hours.&amp;nbsp; Otherwise, we&#39;ll be ordering some &lt;a href=&quot;http://www.yellowbot.com/search/?zoom_level=&amp;amp;lat=&amp;amp;long=&amp;amp;reverse_place=&amp;amp;q=pizza&amp;amp;place=los+angeles%2C+ca&amp;amp;subbtn=Go%21&quot;&gt;pizza&lt;/a&gt;.&amp;nbsp; &amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;One of the biggest projects on our list for tomorrow is an upgrade to &lt;a href=&quot;http://www.redhat.com/rhel/&quot;&gt;Redhat Enterprise Linux 5&lt;/a&gt;.&amp;nbsp; Many of our boxes are currently running RHEL3, which is getting a little long in the tooth.&amp;nbsp; We&#39;re looking forward to the newer kernel and more modern utilities.&lt;/p&gt;
+
+&lt;p&gt;We&#39;ll post &lt;a href=&quot;http://log.perl.org/&quot;&gt;here&lt;/a&gt; if there are any outstanding issues.&amp;nbsp; &lt;/p&gt;&lt;/div&gt;
+</content>
+
+
+
+    </entry>
+
+</feed>
+<!-- ph=1 -->
+<!-- nhm:from_kauri -->

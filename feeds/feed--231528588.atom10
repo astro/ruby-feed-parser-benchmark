@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/rss2full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>Pinch Media</title>
+	
+	<link>http://www.pinchmedia.com</link>
+	<description>Home</description>
+	<pubDate>Wed, 12 Nov 2008 23:37:39 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.5.1</generator>
+	<language>en</language>
+			<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://feeds.feedburner.com/PinchMedia" type="application/rss+xml" /><feedburner:emailServiceId>1976888</feedburner:emailServiceId><feedburner:feedburnerHostname>http://www.feedburner.com</feedburner:feedburnerHostname><item>
+		<title>At the Silicon Valley iPhone Developers’ Meetup</title>
+		<link>http://feeds.feedburner.com/~r/PinchMedia/~3/393118767/</link>
+		<comments>http://www.pinchmedia.com/silicon-valley-iphone-developers-meetup/#comments</comments>
+		<pubDate>Mon, 15 Sep 2008 11:17:02 +0000</pubDate>
+		<dc:creator>greg</dc:creator>
+		
+		<category><![CDATA[Announcements]]></category>
+
+		<guid isPermaLink="false">http://www.pinchmedia.com/?p=47</guid>
+		<description><![CDATA[Tonight I&#8217;ll be at the Silicon Valley iPhone Developers&#8217; Meetup in Palo Alto, discussing Pinch Analytics and some of the more interesting things we&#8217;ve learned about the AppStore since its launch in July.  If you&#8217;re in the area, we&#8217;d love to see you there.
+]]></description>
+			<content:encoded><![CDATA[<p>Tonight I&#8217;ll be at the <a href="http://softwaredev.meetup.com/92/">Silicon Valley iPhone Developers&#8217; Meetup</a> in Palo Alto, discussing Pinch Analytics and some of the more interesting things we&#8217;ve learned about the AppStore since its launch in July.  If you&#8217;re in the area, we&#8217;d love to see you there.</p>
+<img src="http://feeds.feedburner.com/~r/PinchMedia/~4/393118767" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.pinchmedia.com/silicon-valley-iphone-developers-meetup/feed/</wfw:commentRss>
+		<feedburner:origLink>http://www.pinchmedia.com/silicon-valley-iphone-developers-meetup/</feedburner:origLink></item>
+		<item>
+		<title>iPhoneDevCamp recap</title>
+		<link>http://feeds.feedburner.com/~r/PinchMedia/~3/356668183/</link>
+		<comments>http://www.pinchmedia.com/iphonedevcamp-recap/#comments</comments>
+		<pubDate>Tue, 05 Aug 2008 19:36:11 +0000</pubDate>
+		<dc:creator>Jesse Rohland</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://www.pinchmedia.com/?p=46</guid>
+		<description><![CDATA[We had a blast at iPhoneDevCamp 2 over the weekend. It was great to get out into the amazing community of iPhone developers to chat and check out the awesome products that they are working on. Although I did not participate in the hackathon contest like Rob did (congrats on winning best developer tool), I [...]]]></description>
+			<content:encoded><![CDATA[<p>We had a blast at <a href="http://www.iphonedevcamp.org/">iPhoneDevCamp 2</a> over the weekend. It was great to get out into the amazing community of iPhone developers to chat and check out the awesome products that they are working on. Although I did not participate in the hackathon contest like Rob did (congrats on winning best developer tool), I did spend the weekend hacking away at some new features for Pinch.</p>
+<p>First off and at the base of all that I did this weekend was to create an API to tie into our system. My first goal was to provide developers a way to easily get data from Pinch Analytics without having to go through our site. I&#8217;ve seen such amazing products that come out of companies&#8217; willingness to expose functionality to developers to create their own interfaces. For example where would twitter be today without their API? I would love to see developers&#8217; own take on how they would like to see their data displayed.</p>
+<p>I made great progress on the API over the weekend but it&#8217;s not completely all there yet to release it in to production. The functionality is somewhat limited right now but expect as we release new products to have an API component to go with it. You can expect the API to be released with analytics functionality fairly soon.</p>
+<p>Now what&#8217;s probably more interesting to most people is what I did with the API over the weekend. What&#8217;s an API without some sort of cool demo to show it off. It&#8217;s the sort of eat your own food deal to show the validity of what you&#8217;re doing. We&#8217;ve had a bunch of request from people to provide an iPhone version of our developer site where users can access their analytics through mobile safari. This is what I stepped up to do this weekend during iPhoneDevCamp, develop a mobile safari interface that fits in with the iPhone UI and also keeps true to our own design.</p>
+<p><object width="400" height="300"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://www.vimeo.com/moogaloop.swf?clip_id=1472912&amp;server=www.vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://www.vimeo.com/moogaloop.swf?clip_id=1472912&amp;server=www.vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="300"></embed></object></p>
+<p>So what you see in the video above is a sample user logging into the system, requesting a list of their applications, viewing a list of available metrics and finally displaying a chart for the last 7 days for the selected metric. The chart is the same home brewed javascript chart library that we developed for the developer site so it should be quite familiar to our users. Rotating the screen works just fine as well to get a landscape view of your charts. All of the interaction to retrieve data is done through the API just as any developer will soon be able to. The site itself was quite easy to get up and running thanks to the amazing <a href="http://code.google.com/p/iui/">iUI library</a>.</p>
+<p>Like the API, the iPhone interface needs a little more tweaking before it&#8217;s ready to be released. There&#8217;s only so much work you can do in a weekend before needing some sleep. I personally can&#8217;t wait until the next iPhoneDevCamp.</p>
+<img src="http://feeds.feedburner.com/~r/PinchMedia/~4/356668183" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.pinchmedia.com/iphonedevcamp-recap/feed/</wfw:commentRss>
+		<feedburner:origLink>http://www.pinchmedia.com/iphonedevcamp-recap/</feedburner:origLink></item>
+		<item>
+		<title>Are daily downloads enough?</title>
+		<link>http://feeds.feedburner.com/~r/PinchMedia/~3/352976063/</link>
+		<comments>http://www.pinchmedia.com/are-daily-downloads-enough/#comments</comments>
+		<pubDate>Fri, 01 Aug 2008 20:55:53 +0000</pubDate>
+		<dc:creator>greg</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://www.pinchmedia.com/?p=45</guid>
+		<description><![CDATA[First, to Apple, for releasing daily download statistics in iTunesConnect: thank you.  This information was sorely needed by developers, and its availability will help developers gauge the performance of their applications, adjust price points, and know when applications need critical updates.  From what we&#8217;ve seen from published sources (minding the NDA), the application [...]]]></description>
+			<content:encoded><![CDATA[<p>First, to Apple, <a href="http://arstechnica.com/journals/apple.ars/2008/07/31/developers-getting-daily-app-sales-data-via-itunes-connect">for releasing daily download statistics in iTunesConnect</a>: thank you.  This information was sorely needed by developers, and its availability will help developers gauge the performance of their applications, adjust price points, and know when applications need critical updates.  From what we&#8217;ve seen <a href="http://www.9to5mac.com/iphone-apps-developers-rich">from published sources</a> (minding the NDA), the application reporting differentiates between paid downloads and free updates, and is providing application developers with some much-needed insight into their application&#8217;s performance.</p>
+<p>It&#8217;s a bit ironic that I first got this news from a well-meaning friend, who suggested it was bad for Pinch Media.  After all, prior to Apple&#8217;s daily downloads numbers, the only developers in the AppStore getting reasonably accurate statistics were ones that rolled their own or used a service like Pinch Analytics.  (Only the AppStore can provide accurate download numbers - but we come pretty close by counting first-time users.  It&#8217;s not 100% accurate, but generally when someone downloads an application, they try it out that day or the day after.)  But I couldn&#8217;t be more thrilled - because this access to new information is getting the developers we&#8217;ve been talking to into an optimizing mood.  And when you&#8217;re thinking about ways to get those download numbers up, you realize pretty quickly that the download numbers themselves are just a small piece of the information you need to make intelligent decisions.</p>
+<p>If your download numbers aren&#8217;t what you hoped, or you&#8217;re simply looking for ways to grow your business, Pinch Analytics can help you make intelligent decisions.  Our unique user reporting will tell you if the downloads you&#8217;re getting are translating into regular, repeat users who will spread your application through word of mouth, or whether your application is being used and quickly abandoned.  Our session counting will help you see just how often your users are accessing your application, so you can determine whether other revenue models, like advertising, might outperform your current paid downloads.  Our custom event tracking can be used easily to help you figure out which features your users love - and which ones need a lot of work.  And for location-aware applications, nothing&#8217;s better than our geographic reports for determining which areas of the world you should be concentrating on the most.</p>
+<p>The number of applications available on the AppStore is growing rapidly - breaking 1,000 at the start of the week, now just under 1,300 (and likely above it by the end of the day.)  Standing out in the crowd is going to get more and more difficult.  To do so, we need as much information as possible.  By releasing daily download numbers, Apple is once again showing its commitment to improving the iPhone development platform, and they should be congratulated for it.  But full analytics (and full understanding) requires a much closer integration with your application.</p>
+<img src="http://feeds.feedburner.com/~r/PinchMedia/~4/352976063" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.pinchmedia.com/are-daily-downloads-enough/feed/</wfw:commentRss>
+		<feedburner:origLink>http://www.pinchmedia.com/are-daily-downloads-enough/</feedburner:origLink></item>
+		<item>
+		<title>Hello, San Francisco!</title>
+		<link>http://feeds.feedburner.com/~r/PinchMedia/~3/352867930/</link>
+		<comments>http://www.pinchmedia.com/hello-san-francisco/#comments</comments>
+		<pubDate>Fri, 01 Aug 2008 18:31:13 +0000</pubDate>
+		<dc:creator>greg</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://www.pinchmedia.com/?p=44</guid>
+		<description><![CDATA[Pinch Media has temporarily shifted coasts to attend and help sponsor iPhoneDevCamp 2, where we&#8217;re hoping to meet new developers and build some excellent enhancements to Pinch Analytics (now live and operational in quite a few iPhone applications, with new ones almost every day.)  If you&#8217;re in San Francisco and want to talk iPhone [...]]]></description>
+			<content:encoded><![CDATA[<p>Pinch Media has temporarily shifted coasts to attend and help sponsor <a href="http://www.iphonedevcamp.org/">iPhoneDevCamp 2</a>, where we&#8217;re hoping to meet new developers and build some excellent enhancements to Pinch Analytics (now live and operational in quite a few iPhone applications, with new ones almost every day.)  If you&#8217;re in San Francisco and want to talk iPhone development this weekend, send me an e-mail at greg -at- pinchmedia.com and we&#8217;ll get together.</p>
+<p>Although we also plan to release as much as possible during iPhoneDevCamp and over the next couple of weeks, we couldn&#8217;t resist getting an often-requested feature out the door ahead of time - the ability for developers to exclude certain devices from their reporting by submitting their devices&#8217; UUID.  Now you never have to worry about your simulator or your test devices fouling up your applications&#8217; reporting - just <a href="http://developer.pinchmedia.com/">sign into your Pinch Media account</a> for more details.  If you&#8217;ve got additional feature requests that&#8217;d help you build your business, send them in - now that it&#8217;s running on several high-volume applications, we&#8217;re paying increased attention to Pinch Analytics.</p>
+<img src="http://feeds.feedburner.com/~r/PinchMedia/~4/352867930" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.pinchmedia.com/hello-san-francisco/feed/</wfw:commentRss>
+		<feedburner:origLink>http://www.pinchmedia.com/hello-san-francisco/</feedburner:origLink></item>
+		<item>
+		<title>Yes, we now do advertising</title>
+		<link>http://feeds.feedburner.com/~r/PinchMedia/~3/344722226/</link>
+		<comments>http://www.pinchmedia.com/yes-we-now-do-advertising/#comments</comments>
+		<pubDate>Thu, 24 Jul 2008 11:00:31 +0000</pubDate>
+		<dc:creator>greg</dc:creator>
+		
+		<category><![CDATA[Announcements]]></category>
+
+		<guid isPermaLink="false">http://www.pinchmedia.com/?p=43</guid>
+		<description><![CDATA[I&#8217;m happy to report that Pinch Media has launched its second product, Pinch Advertising.  Like Pinch Analytics before it, Pinch Advertising is a drop-in library for your iPhone SDK applications.  It&#8217;s integrated with your application by means of a few method calls, and makes it easy for developers to make money from their [...]]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m happy to report that Pinch Media has launched its second product, Pinch Advertising.  Like Pinch Analytics before it, Pinch Advertising is a drop-in library for your iPhone SDK applications.  It&#8217;s integrated with your application by means of a few method calls, and makes it easy for developers to make money from their free applications through in-application ads.</p>
+<p>We would have launched Pinch Advertising sooner, but like all new advertising services, we faced a chicken-and-egg problem - what comes first, the advertisers or the developers?  I didn&#8217;t want to put an ad library out there and start signing up developers without having advertisers.  This &#8216;developers as bait&#8217; approach sometimes works, but it doesn&#8217;t respect your time.  I also resisted the urge to go out with a single marquee advertiser that could cover some of the bigger applications in our network, since I wanted a solution that could work for every iPhone application developer that wanted to use our platform.  Eventually I decided the best approach would be to partner up - by working with a larger company with a strong sales force and good advertiser relationships, I could hopefully serve everyone that wanted to use Pinch Advertising immediately.  </p>
+<p>It took a while to find the right partner, but we did - Pinch Media is now working with <a href="http://www.jumptap.com">JumpTap</a>, a comprehensive provider of advertising solutions for the mobile Internet.  I&#8217;ve talked a lot with the members of JumpTap&#8217;s executive team, and they get it - they understand the iPhone environment is special, the user experience is critical, and we&#8217;re a developer-centric business.  I&#8217;m thrilled that JumpTap&#8217;s experienced sales team is going to be finding the best ads for Pinch Media&#8217;s network of applications.  I&#8217;m also thrilled that they&#8217;re selling in-application advertising alongside their web advertising, because it means they can potentially combine the two into a single advertising buy.  I was up nights trying to think of ways that we could help the most iPhone developers, including iPhone developers who are just starting out and don&#8217;t have a lot of application traffic.  It&#8217;s very difficult to sell advertising when you don&#8217;t have that large audience - and in advertising terms, the entire iPhone application market combined is still relatively small.  Well, now that small audience can be part of something bigger, to everyone&#8217;s benefit.</p>
+<p>Here at Pinch Media, we&#8217;re focused on making the Pinch Advertising framework as unobtrusive as possible, minimizing its memory footprint and processor use.  We make sure we request ads before its time to show them and cache them on the client side, so we can minimize or eliminate ad loading times.  We do the same thing with our reporting, storing events locally and sending them off only when there&#8217;s a valid connection.  And of course we focus on the user experience, making sure our advertising units can be incorporated into your application in an attractive manner that won&#8217;t alienate your users.  </p>
+<p>To get started with Pinch Advertising, <a href="http://developer.pinchmedia.com/users/register">sign up for an account with us.</a>  Then, you&#8217;ll tell us a little bit about your application by creating a new one.  After you&#8217;ve created it, the &#8216;enroll&#8217; link for Pinch Advertising will appear on your left.  We&#8217;ll look at the information you&#8217;ve provided about your application, check out the application if it&#8217;s in the AppStore - although you&#8217;re welcome to apply beforehand - and get in touch with you to learn more about your application.  (The more we know, the better we can serve you and your users.)  Then we&#8217;ll get you more information, including a full Terms of Service and our Pinch Advertising library.</p>
+<p>A lot more information on Pinch Advertising will be made public in the days ahead, both on our public-facing website and in the developer portal.  In the meantime, if you have any questions, please get in touch.</p>
+<img src="http://feeds.feedburner.com/~r/PinchMedia/~4/344722226" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.pinchmedia.com/yes-we-now-do-advertising/feed/</wfw:commentRss>
+		<feedburner:origLink>http://www.pinchmedia.com/yes-we-now-do-advertising/</feedburner:origLink></item>
+	</channel>
+</rss>

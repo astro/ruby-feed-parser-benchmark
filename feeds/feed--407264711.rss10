@@ -1,0 +1,2835 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:admin="http://webns.net/mvcb/"
+>
+
+<channel rdf:about="http://openjsan.org/">
+<title>Recent JSAN Uploads</title>
+<link>http://openjsan.org/</link>
+<description>Recent JavaScript Distributions submitted to the JavaScript Archive Network (JSAN)</description>
+<dc:language>en-us</dc:language>
+<dc:rights>Creative Commons</dc:rights>
+<dc:date>2007-10-01T13:04:01</dc:date>
+<dc:publisher>casey@geeknest.com</dc:publisher>
+<dc:creator>casey@geeknest.com</dc:creator>
+<dc:subject>Recent JSAN Uploads</dc:subject>
+<syn:updatePeriod>hourly</syn:updatePeriod>
+<syn:updateFrequency>1</syn:updateFrequency>
+<syn:updateBase>1969-12-31T19:00:01</syn:updateBase>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://openjsan.org/doc/h/hn/hnakamur/JapaneseHolidays/1.0.3" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/h/hn/hnakamur/JapaneseHolidays/1.0.2" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/1/11/111//Ajax" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/i/in/ingy/Ajax/0.11" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/h/hn/hnakamur/JapaneseHolidays/1.0.1" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/h/hn/hnakamur/JapaneseHolidays/1.0" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/b/ba/bashi/Data/Page/0.02" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/b/ba/bashi/Data/Page/0.01" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/i/in/ingy/YAML/0.11" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/i/in/ingy/YAML/0.10" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/u/un/unrtst/Data/FormValidator/0.06" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/e/ed/edoardo/Form/Element/Resize/0.05" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/e/ed/edoardo/Form/Element/Resize/0.04" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/t/te/temp304//Customize_Dropdown_M" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/g/gu/gugod/Widget/Lightbox/0.10" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/a/au/autarch/Widget/SortableTable/0.22" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/g/gu/gugod/Function/intervalize/0.01" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/i/ia/ianb/doctestjs/0.9" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/w/we/wezzy//templateengine.js" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/e/ed/edoardo/Widget/Tooltip/0.02" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/e/ed/edoardo/Widget/Tooltip/0.01" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/g/gu/gugod/Asynapse/0.10_01" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/g/gu/gugod/Widget/Lightbox/0.09" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/g/gu/gugod/Widget/Lightbox/0.08" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/k/ke/kevinj/Archive/Tar/0.03" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/k/ke/kevinj/Archive/Tar/0.02" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/k/ke/kevinj/Archive/Tar/0.01" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/e/ed/edoardo/Form/Element/Resize/0.03" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/k/ke/kevinj/Data/Dump/0.02" />
+  <rdf:li rdf:resource="http://openjsan.org/doc/k/ke/kevinj/Data/Dump/0.02" />
+ </rdf:Seq>
+</items>
+<image rdf:resource="http://openjsan.org/images/logo/jsan-logo-rhino.png" />
+</channel>
+
+<image rdf:about="http://openjsan.org/images/logo/jsan-logo-rhino.png">
+<title>JSAN</title>
+<url>http://openjsan.org/images/logo/jsan-logo-rhino.png</url>
+<link>http://openjsan.org/</link>
+<dc:creator>Marshall Roch</dc:creator>
+</image>
+
+<item rdf:about="http://openjsan.org/doc/h/hn/hnakamur/JapaneseHolidays/1.0.3">
+<title>JapaneseHolidays-1.0.3</title>
+<link>http://openjsan.org/doc/h/hn/hnakamur/JapaneseHolidays/1.0.3</link>
+<description>&lt;pre>NAME
+    JapanseHolidays - Japanese holidays calculation library
+
+SYNOPSIS
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 9 - 1, 23));
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 9 - 1, 23));
+
+DESCRIPTION
+    This is a library for testing if a date is a Japanese holiday
+    (precisely, &quot;Shukujitsu&quot; or &quot;Furikae Kyuujitsu&quot;) or not. Also you can
+    get the holiday name written in Japanese.
+
+FUNCTIONS
+  isHoliday
+    Tests a specified date is a Japanese holiday or not.
+
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 9 - 1, 23)); // is true
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 4 - 1, 29)); // is true
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 4 - 1, 30)); // is true because this date is a &quot;furikae kyuujitsu&quot;.
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 4 - 1, 30), false); // is false with passing includesFurikaeKyujitsu to false.
+
+  getHolidayName
+    Returns the holiday name (written in Japanese) for a date if the date is
+    a holiday, or returns the empty string if the date is not a holiday.
+
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 9 - 1, 23)); // is &#39;&#231;&#167;&#139;&#229;&#136;&#134;&#227;&#129;&#174;&#230;&#151;&#165;&#39; (&lt;- a holiday name written in Japanese)
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 4 - 1, 29)); // is &#39;&#230;&#152;&#173;&#229;&#146;&#140;&#227;&#129;&#174;&#230;&#151;&#165;&#39;
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 4 - 1, 30)); // is &#39;&#230;&#140;&#175;&#230;&#155;&#191;&#228;&#188;&#145;&#230;&#151;&#165;&#39;
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 4 - 1, 30), false); // is &#39;&#39; with passing includesFurikaeKyujitsu to false.
+
+  getHolidayAndNames
+    Returns an array of arrays of dates of holidays and names in a year or
+    in a month. The first element of the nested array is a date of a
+    holiday, and the second element is the name of that holiday.
+
+      holidays = JapaneseHolidays.getHolidayAndNames(2007, 5 - 1); // holidays in a month
+      for (i = 0; i &lt; holidays.length; i++) {
+        date = holidays[i][0];
+        name = holidays[i][1];
+      }
+
+      // more examples
+      holidays = JapaneseHolidays.getHolidayAndNames(2007); // holidays in a year
+      holidays = JapaneseHolidays.getHolidayAndNames(2007, 9 - 1, false); // holidays excluding FurikaeKyuujitsu&#39;s.
+
+EXAMPLES
+      // usage of isHoliday() to prevent computing repeatedly holidays in a month.
+      year = 2007;
+      month = 5 - 1;
+      holidays = JapaneseHolidays.getHolidayAndNames(year, month);
+      endDate = JapaneseHolidays.getEndDateInMonth(year, month);
+      for (var d = 1; d &lt; endDate.getDate(); d++) {
+        dt = new Date(year, month, d);
+        isH = JapaneseHolidays.isHoliday(dt, undefined, holidays);
+        name = JapaneseHolidays.getHolidayName(dt, undefined, holidays);
+      }
+
+CHANGES
+   ver. 1.0.3
+    Fixed the calculation of Shunbun days and Shuubun days. The current
+    version passes the test for years between 1948 and 2030, and is supposed
+    to be correct until year 2150.
+
+  ver. 1.0.2
+    Added dojo.provide().
+
+  ver. 1.0.1
+    Fixed a bug. Both isHoliday() and getHolidayName() didn&#39;t handle dates
+    having non-zero (that is, not 00:00:00) time part.
+
+  ver. 1.0
+    Initial release.
+
+AUTHOR
+    Hioraki Nakamura &amp;lt;hnakamur@gmail.com&gt;
+
+COPYRIGHT
+    This program is licensed under MIT license.
+
+    Copyright (C) 2007 Hiroaki Nakamura &amp;lt;hnakamur@gmail.com&gt;
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the
+    &quot;Software&quot;), to deal in the Software without restriction, including
+    without limitation the rights to use, copy, modify, merge, publish,
+    distribute, sublicense, and/or sell copies of the Software, and to
+    permit persons to whom the Software is furnished to do so, subject to
+    the following conditions:
+
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+&lt;/pre></description>
+<dc:date>2007-09-28T18:59:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/h/hn/hnakamur/JapaneseHolidays/1.0.2">
+<title>JapaneseHolidays-1.0.2</title>
+<link>http://openjsan.org/doc/h/hn/hnakamur/JapaneseHolidays/1.0.2</link>
+<description>&lt;pre>NAME
+    JapanseHolidays - Japanese holidays calculation library
+
+SYNOPSIS
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 9 - 1, 23));
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 9 - 1, 23));
+
+DESCRIPTION
+    This is a library for testing if a date is a Japanese holiday
+    (precisely, &quot;Shukujitsu&quot; or &quot;Furikae Kyuujitsu&quot;) or not. Also you can
+    get the holiday name written in Japanese.
+
+FUNCTIONS
+  isHoliday
+    Tests a specified date is a Japanese holiday or not.
+
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 9 - 1, 23)); // is true
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 4 - 1, 29)); // is true
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 4 - 1, 30)); // is true because this date is a &quot;furikae kyuujitsu&quot;.
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 4 - 1, 30), false); // is false with passing includesFurikaeKyujitsu to false.
+
+  getHolidayName
+    Returns the holiday name (written in Japanese) for a date if the date is
+    a holiday, or returns the empty string if the date is not a holiday.
+
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 9 - 1, 23)); // is &#39;&#231;&#167;&#139;&#229;&#136;&#134;&#227;&#129;&#174;&#230;&#151;&#165;&#39; (&lt;- a holiday name written in Japanese)
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 4 - 1, 29)); // is &#39;&#230;&#152;&#173;&#229;&#146;&#140;&#227;&#129;&#174;&#230;&#151;&#165;&#39;
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 4 - 1, 30)); // is &#39;&#230;&#140;&#175;&#230;&#155;&#191;&#228;&#188;&#145;&#230;&#151;&#165;&#39;
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 4 - 1, 30), false); // is &#39;&#39; with passing includesFurikaeKyujitsu to false.
+
+  getHolidayAndNames
+    Returns an array of arrays of dates of holidays and names in a year or
+    in a month. The first element of the nested array is a date of a
+    holiday, and the second element is the name of that holiday.
+
+      holidays = JapaneseHolidays.getHolidayAndNames(2007, 5 - 1); // holidays in a month
+      for (i = 0; i &lt; holidays.length; i++) {
+        date = holidays[i][0];
+        name = holidays[i][1];
+      }
+
+      // more examples
+      holidays = JapaneseHolidays.getHolidayAndNames(2007); // holidays in a year
+      holidays = JapaneseHolidays.getHolidayAndNames(2007, 9 - 1, false); // holidays excluding FurikaeKyuujitsu&#39;s.
+
+EXAMPLES
+      // usage of isHoliday() to prevend computing repeatedly holidays in a month.
+      year = 2007;
+      month = 5 - 1;
+      holidays = JapaneseHolidays.getHolidayAndNames(year, month);
+      endDate = JapaneseHolidays.getEndDateInMonth(year, month);
+      for (var d = 1; d &lt; endDate.getDate(); d++) {
+        dt = new Date(year, month, d);
+        isH = JapaneseHolidays.isHoliday(dt, undefined, holidays);
+        name = JapaneseHolidays.getHolidayName(dt, undefined, holidays);
+      }
+
+CHANGES
+  ver. 1.0.2
+    Added dojo.provide().
+
+  ver. 1.0.1
+    Fixed a bug. Both isHoliday() and getHolidayName() didn&#39;t handle dates
+    having non-zero (that is, not 00:00:00) time part.
+
+  ver. 1.0
+    Initial release.
+
+AUTHOR
+    Hioraki Nakamura &amp;lt;hnakamur@gmail.com&gt;
+
+COPYRIGHT
+    This program is licensed under MIT license.
+
+    Copyright (C) 2007 Hiroaki Nakamura &amp;lt;hnakamur@gmail.com&gt;
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the
+    &quot;Software&quot;), to deal in the Software without restriction, including
+    without limitation the rights to use, copy, modify, merge, publish,
+    distribute, sublicense, and/or sell copies of the Software, and to
+    permit persons to whom the Software is furnished to do so, subject to
+    the following conditions:
+
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+&lt;/pre></description>
+<dc:date>2007-09-27T18:59:06</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/1/11/111//Ajax">
+<title>-Ajax</title>
+<link>http://openjsan.org/doc/1/11/111//Ajax</link>
+<description>&lt;pre>&lt;/pre></description>
+<dc:date>2007-09-26T18:59:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/i/in/ingy/Ajax/0.11">
+<title>Ajax-0.11</title>
+<link>http://openjsan.org/doc/i/in/ingy/Ajax/0.11</link>
+<description>&lt;pre>Simple Javascript Ajax&lt;/pre></description>
+<dc:date>2007-09-26T00:59:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/h/hn/hnakamur/JapaneseHolidays/1.0.1">
+<title>JapaneseHolidays-1.0.1</title>
+<link>http://openjsan.org/doc/h/hn/hnakamur/JapaneseHolidays/1.0.1</link>
+<description>&lt;pre>NAME
+    JapanseHolidays - Japanese holidays calculation library
+
+SYNOPSIS
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 9 - 1, 23));
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 9 - 1, 23));
+
+DESCRIPTION
+    This is a library for testing if a date is a Japanese holiday
+    (precisely, &quot;Shukujitsu&quot; or &quot;Furikae Kyuujitsu&quot;) or not. Also you can
+    get the holiday name written in Japanese.
+
+FUNCTIONS
+  isHoliday
+    Tests a specified date is a Japanese holiday or not.
+
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 9 - 1, 23)); // is true
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 4 - 1, 29)); // is true
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 4 - 1, 30)); // is true because this date is a &quot;furikae kyuujitsu&quot;.
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 4 - 1, 30), false); // is false with passing includesFurikaeKyujitsu to false.
+
+  getHolidayName
+    Returns the holiday name (written in Japanese) for a date if the date is
+    a holiday, or returns the empty string if the date is not a holiday.
+
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 9 - 1, 23)); // is &#39;&#231;&#167;&#139;&#229;&#136;&#134;&#227;&#129;&#174;&#230;&#151;&#165;&#39; (&lt;- a holiday name written in Japanese)
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 4 - 1, 29)); // is &#39;&#230;&#152;&#173;&#229;&#146;&#140;&#227;&#129;&#174;&#230;&#151;&#165;&#39;
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 4 - 1, 30)); // is &#39;&#230;&#140;&#175;&#230;&#155;&#191;&#228;&#188;&#145;&#230;&#151;&#165;&#39;
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 4 - 1, 30), false); // is &#39;&#39; with passing includesFurikaeKyujitsu to false.
+
+  getHolidayAndNames
+    Returns an array of arrays of dates of holidays and names in a year or
+    in a month. The first element of the nested array is a date of a
+    holiday, and the second element is the name of that holiday.
+
+      holidays = JapaneseHolidays.getHolidayAndNames(2007, 5 - 1); // holidays in a month
+      for (i = 0; i &lt; holidays.length; i++) {
+        date = holidays[i][0];
+        name = holidays[i][1];
+      }
+
+      // more examples
+      holidays = JapaneseHolidays.getHolidayAndNames(2007); // holidays in a year
+      holidays = JapaneseHolidays.getHolidayAndNames(2007, 9 - 1, false); // holidays excluding FurikaeKyuujitsu&#39;s.
+
+EXAMPLES
+      // usage of isHoliday() to prevend computing repeatedly holidays in a month.
+      year = 2007;
+      month = 5 - 1;
+      holidays = JapaneseHolidays.getHolidayAndNames(year, month);
+      endDate = JapaneseHolidays.getEndDateInMonth(year, month);
+      for (var d = 1; d &lt; endDate.getDate(); d++) {
+        dt = new Date(year, month, d);
+        isH = JapaneseHolidays.isHoliday(dt, undefined, holidays);
+        name = JapaneseHolidays.getHolidayName(dt, undefined, holidays);
+      }
+
+CHANGES
+  ver. 1.0.1
+    Fixed a bug. Both isHoliday() and getHolidayName() didn&#39;t handle dates
+    having non-zero (that is, not 00:00:00) time part.
+
+  ver. 1.0
+    Initial release.
+
+AUTHOR
+    Hioraki Nakamura &amp;lt;hnakamur@gmail.com&gt;
+
+COPYRIGHT
+    This program is licensed under MIT license.
+
+    Copyright (C) 2007 Hiroaki Nakamura &amp;lt;hnakamur@gmail.com&gt;
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the
+    &quot;Software&quot;), to deal in the Software without restriction, including
+    without limitation the rights to use, copy, modify, merge, publish,
+    distribute, sublicense, and/or sell copies of the Software, and to
+    permit persons to whom the Software is furnished to do so, subject to
+    the following conditions:
+
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+&lt;/pre></description>
+<dc:date>2007-09-25T12:59:06</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/h/hn/hnakamur/JapaneseHolidays/1.0">
+<title>JapaneseHolidays-1.0</title>
+<link>http://openjsan.org/doc/h/hn/hnakamur/JapaneseHolidays/1.0</link>
+<description>&lt;pre>    JapanseHolidays - Japanese holidays calculation library
+
+SYNOPSIS
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 9 - 1, 23));
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 9 - 1, 23));
+
+DESCRIPTION
+    This is a library for testing if a date is a Japanese holiday
+    (precisely, &quot;Shukujitsu&quot; or &quot;Furikae Kyuujitsu&quot;) or not. Also you can
+    get the holiday name written in Japanese.
+
+FUNCTIONS
+  isHoliday
+    Tests a specified date is a Japanese holiday or not.
+
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 9 - 1, 23)); // is true
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 4 - 1, 29)); // is true
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 4 - 1, 30)); // is true because this date is a &quot;furikae kyuujitsu&quot;.
+      isH = JapaneseHolidays.isHoliday(new Date(2007, 4 - 1, 30), false); // is false with passing includesFurikaeKyujitsu to false.
+
+  getHolidayName
+    Returns the holiday name (written in Japanese) for a date if the date is
+    a holiday, or returns the empty string if the date is not a holiday.
+
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 9 - 1, 23)); // is &#39;&#231;&#167;&#139;&#229;&#136;&#134;&#227;&#129;&#174;&#230;&#151;&#165;&#39; (&lt;- a holiday name written in Japanese)
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 4 - 1, 29)); // is &#39;&#230;&#152;&#173;&#229;&#146;&#140;&#227;&#129;&#174;&#230;&#151;&#165;&#39;
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 4 - 1, 30)); // is &#39;&#230;&#140;&#175;&#230;&#155;&#191;&#228;&#188;&#145;&#230;&#151;&#165;&#39;
+      name = JapaneseHolidays.getHolidayName(new Date(2007, 4 - 1, 30), false); // is &#39;&#39; with passing includesFurikaeKyujitsu to false.
+
+  getHolidayAndNames
+    Returns an array of arrays of dates of holidays and names in a year or
+    in a month. The first element of the nested array is a date of a
+    holiday, and the second element is the name of that holiday.
+
+      holidays = JapaneseHolidays.getHolidayAndNames(2007, 5 - 1); // holidays in a month
+      for (i = 0; i &lt; holidays.length; i++) {
+        date = holidays[i][0];
+        name = holidays[i][1];
+      }
+
+      // more examples
+      holidays = JapaneseHolidays.getHolidayAndNames(2007); // holidays in a year
+      holidays = JapaneseHolidays.getHolidayAndNames(2007, 9 - 1, false); // holidays excluding FurikaeKyuujitsu&#39;s.
+
+EXAMPLES
+      // usage of isHoliday() to prevend computing repeatedly holidays in a month.
+      year = 2007;
+      month = 5 - 1;
+      holidays = JapaneseHolidays.getHolidayAndNames(year, month);
+      endDate = JapaneseHolidays.getEndDateInMonth(year, month);
+      for (var d = 1; d &lt; endDate.getDate(); d++) {
+        dt = new Date(year, month, d);
+        isH = JapaneseHolidays.isHoliday(dt, undefined, holidays);
+        name = JapaneseHolidays.getHolidayName(dt, undefined, holidays);
+      }
+
+AUTHOR
+    Hioraki Nakamura &amp;lt;hnakamur@gmail.com&gt;
+
+COPYRIGHT
+    This program is licensed under MIT license.
+
+    Copyright (C) 2007 Hiroaki Nakamura &amp;lt;hnakamur@gmail.com&gt;
+
+    Permission is hereby granted, free of charge, to any person obtaining a
+    copy of this software and associated documentation files (the
+    &quot;Software&quot;), to deal in the Software without restriction, including
+    without limitation the rights to use, copy, modify, merge, publish,
+    distribute, sublicense, and/or sell copies of the Software, and to
+    permit persons to whom the Software is furnished to do so, subject to
+    the following conditions:
+
+    The above copyright notice and this permission notice shall be included
+    in all copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS
+    OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+    IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+    CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+    TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+&lt;/pre></description>
+<dc:date>2007-09-24T06:59:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/b/ba/bashi/Data/Page/0.02">
+<title>Data.Page-0.02</title>
+<link>http://openjsan.org/doc/b/ba/bashi/Data/Page/0.02</link>
+<description>&lt;pre>=head1 NAME
+
+Data.Page - Autogenerate useful information for pagination
+
+=head1 SYNOPSIS
+
+  var p = new Data.Page(
+      120, // total entries
+      10,  // entries per page
+      1    // current page
+  );
+
+  // get pagination info
+  p.total_entries()        // 120
+  p.entries_per_page()     // 10
+  p.current_page()         // 1
+  p.entries_on_this_page() // 10
+  p.first_page()           // 1
+  p.last_page()            // 12
+  p.first()                // 1
+  p.last()                 // 10
+  p.previous_page()        // undefined
+  p.next_page()            // 2
+
+  // get items that are included in this page
+  var items = [ &#39;item1&#39; .. &#39;item99&#39; ];
+  items = p.splice( items );  // [ &#39;item1&#39; .. &#39;item10&#39; ]
+
+=head1 DESCRIPTION
+
+By giving minimum parameters, this module auto-calculates all
+the neccessary information needed to display pagination, which
+we see (and program) alot in a search result page.
+
+Especially useful for client-side AJAX applications.
+
+=head2 Constructor
+
+  var page = new Data.Page(
+      99,  // total entries
+      15,  // entries displayed per page
+      2    // current page number
+  ); 
+
+Or, you can set those parameter later:
+
+  var page = new Data.Page();
+  page.total_entries( 99 );
+  page.entries_per_page( 15 );
+  page.current_page( 2 );
+
+=head2 Methods
+
+=head3 total_entries()
+
+  page.total_entries( 130 );  // setter
+  page.total_entries();       // getter
+
+Sets/gets the total number of entries in your result set. Ignored if passed a negative value.
+
+=head3 entries_per_page() 
+
+  page.entries_per_page( 10 );  // setter
+  page.entries_per_page();      // getter
+
+Sets/gets the total number of entries displayed per page. Ignored if passed a negative value.
+
+=head3 current_page()
+
+  page.current_page( 10 );  // setter
+  page.current_page();      // getter
+
+Sets/gets the total number of entries displayed per page. Ignored if passed a negative value.
+
+=head3 entries_on_this_page()
+
+  page.entries_on_this_page();  // 10
+
+  // might be different on last page
+  page.current_page( page.last_page() );
+  page.entries_on_this_page();  // 7
+
+Gets the number of items displayed in current page. It&#39;s usually same as
+page.entries_per_page(), but might differ on the last page.
+
+=head3 last_page()
+
+  page.last_page();  // 5
+
+Gets the last page number. It&#39;s also the  &quot;total page count&quot;.
+
+=head3 first_page()
+
+  page.first_page(); // 1
+
+Gets the first page number, which will always return 1. Counter-part for
+page.last_page() method.
+
+=head3 first()
+
+  page.first();  // 21
+
+Gets the item number of the first item in current page.
+
+=head3 last()
+
+  page.last();  // 30
+
+Gets the item number of the last item in current page.
+
+=head3 previous_page()
+
+  page.previous_page();  // 1
+
+Gets the page number of the previous page. Returns &quot;undefined&quot; if called at first page.
+
+=head3 next_page()
+
+  page.next_page();  // 2
+
+Gets the page number of the next page. Returns &quot;undefined&quot; if called at last page.
+
+=head3 splice()
+
+  var items = [ &#39;item1&#39; .. &#39;item99&#39; ];
+  items = p.splice( items );  // [ &#39;item1&#39; .. &#39;item10&#39; ]
+
+By passing an array with items/records for all pages, it will return an array
+containing only the items for the current page.
+
+=head3 skipped()
+
+  var page = new Data.Page( 50, 10, 3 ); // we&#39;re at page 3
+  page.skipped();  // 20 
+
+Returns how many items are skipped as for the current page.
+
+=head1 SEE ALSO
+
+Perl CPAN - Data::Page module
+L&amp;lt;http://search.cpan.org/dist/Data-Page/&gt;
+
+=head1 AUTHOR
+
+Toshimasa Ishibashi &amp;lt;F&amp;lt;iandeth99@ybb.ne.jp&gt;&gt;
+L&amp;lt;http://iandeth.dyndns.org/&gt;
+
+Original perl code by Leon Brocard - L&amp;lt;http://search.cpan.org/~lbrocard/&gt;
+Thank you Leon for a nice work.
+
+=head1 COPYRIGHT
+
+  Copyright (c) 2007 Toshimasa Ishibashi.  All rights reserved.
+  This module is free software; you can redistribute it and/or modify it
+  under the terms of the Artistic license. Or whatever license I choose,
+  which I will do instead of keeping this documentation like it is.
+&lt;/pre></description>
+<dc:date>2007-09-15T06:59:06</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/b/ba/bashi/Data/Page/0.01">
+<title>Data.Page-0.01</title>
+<link>http://openjsan.org/doc/b/ba/bashi/Data/Page/0.01</link>
+<description>&lt;pre>=head1 NAME
+
+Data.Page - Autogenerate useful information for pagination
+
+=head1 SYNOPSIS
+
+  var p = new Data.Page(
+      120, // total entries
+      10,  // entries per page
+      1    // current page
+  );
+
+  // get pagination info
+  p.total_entries()        // 120
+  p.entries_per_page()     // 10
+  p.current_page()         // 1
+  p.entries_on_this_page() // 10
+  p.first_page()           // 1
+  p.last_page()            // 12
+  p.first()                // 1
+  p.last()                 // 10
+  p.previous_page()        // undefined
+  p.next_page()            // 2
+
+  // get items that are included in this page
+  var items = [ &#39;item1&#39; .. &#39;item99&#39; ];
+  items = p.splice( items );  // [ &#39;item1&#39; .. &#39;item10&#39; ]
+
+=head1 DESCRIPTION
+
+By giving minimum parameters, this module auto-calculates all
+the neccessary information needed to display pagination, which
+we see (and program) alot in a search result page.
+
+Especially useful for client-side AJAX applications.
+
+=head2 Constructor
+
+  var page = new Data.Page(
+      99,  // total entries
+      15,  // entries displayed per page
+      2    // current page number
+  ); 
+
+Or, you can set those parameter later:
+
+  var page = new Data.Page();
+  page.total_entries( 99 );
+  page.entries_per_page( 15 );
+  page.current_page( 2 );
+
+=head2 Methods
+
+=head3 total_entries()
+
+  page.total_entries( 130 );  // setter
+  page.total_entries();       // getter
+
+Sets/gets the total number of entries in your result set. Ignored if passed a negative value.
+
+=head3 entries_per_page() 
+
+  page.entries_per_page( 10 );  // setter
+  page.entries_per_page();      // getter
+
+Sets/gets the total number of entries displayed per page. Ignored if passed a negative value.
+
+=head3 current_page()
+
+  page.current_page( 10 );  // setter
+  page.current_page();      // getter
+
+Sets/gets the total number of entries displayed per page. Ignored if passed a negative value.
+
+=head3 entries_on_this_page()
+
+  page.entries_on_this_page();  // 10
+
+  // might be different on last page
+  page.current_page( page.last_page() );
+  page.entries_on_this_page();  // 7
+
+Gets the number of items displayed in current page. It&#39;s usually same as
+page.entries_per_page(), but might differ on the last page.
+
+=head3 last_page()
+
+  page.last_page();  // 5
+
+Gets the last page number. It&#39;s also the  &quot;total page count&quot;.
+
+=head3 first_page()
+
+  page.first_page(); // 1
+
+Gets the first page number, which will always return 1. Counter-part for
+page.last_page() method.
+
+=head3 first()
+
+  page.first();  // 21
+
+Gets the item number of the first item in current page.
+
+=head3 last()
+
+  page.last();  // 30
+
+Gets the item number of the last item in current page.
+
+=head3 previous_page()
+
+  page.previous_page();  // 1
+
+Gets the page number of the previous page. Returns &quot;undefined&quot; if called at first page.
+
+=head3 next_page()
+
+  page.next_page();  // 2
+
+Gets the page number of the next page. Returns &quot;undefined&quot; if called at last page.
+
+=head3 splice()
+
+  var items = [ &#39;item1&#39; .. &#39;item99&#39; ];
+  items = p.splice( items );  // [ &#39;item1&#39; .. &#39;item10&#39; ]
+
+By passing an array with items/records for all pages, it will return an array
+containing only the items for the current page.
+
+=head3 skipped()
+
+  var page = new Data.Page( 50, 10, 3 ); // we&#39;re at page 3
+  page.skipped();  // 20 
+
+Returns how many items are skipped as for the current page.
+
+=head1 SEE ALSO
+
+Perl CPAN - Data::Page module
+L&amp;lt;http://search.cpan.org/dist/Data-Page/&gt;
+
+=head1 AUTHOR
+
+Toshimasa Ishibashi &amp;lt;F&amp;lt;iandeth99@ybb.ne.jp&gt;&gt;
+L&amp;lt;http://iandeth.dyndns.org/&gt;
+
+Original perl code by Leon Brocard - L&amp;lt;http://search.cpan.org/~lbrocard/&gt;
+Thank you Leon for a nice work.
+
+=head1 COPYRIGHT
+
+  Copyright (c) 2007 Toshimasa Ishibashi.  All rights reserved.
+  This module is free software; you can redistribute it and/or modify it
+  under the terms of the Artistic license. Or whatever license I choose,
+  which I will do instead of keeping this documentation like it is.
+&lt;/pre></description>
+<dc:date>2007-09-14T12:59:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/i/in/ingy/YAML/0.11">
+<title>YAML-0.11</title>
+<link>http://openjsan.org/doc/i/in/ingy/YAML/0.11</link>
+<description>&lt;pre>YAML Serialization for JavaScript Data&lt;/pre></description>
+<dc:date>2007-09-14T06:59:06</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/i/in/ingy/YAML/0.10">
+<title>YAML-0.10</title>
+<link>http://openjsan.org/doc/i/in/ingy/YAML/0.10</link>
+<description>&lt;pre>YAML Serialization for JavaScript Data&lt;/pre></description>
+<dc:date>2007-09-13T15:51:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/u/un/unrtst/Data/FormValidator/0.06">
+<title>Data.FormValidator-0.06</title>
+<link>http://openjsan.org/doc/u/un/unrtst/Data/FormValidator/0.06</link>
+<description>&lt;pre>NAME
+    Data.FormValidator - Validate HTML form input based on input profile.
+
+SYNOPSIS
+     &amp;lt;FORM onSubmit=&quot;return myValidate(this);&quot;&gt;
+     ...
+     &lt;/FORM&gt;
+     &amp;lt;SCRIPT LANGUAGE=&quot;javascript&quot;&gt;&lt;!--
+     var click_once = 0;
+     function myValidate (frmObj) {
+        var goodColor = &quot;#FFFFFF&quot;;
+        var badColor  = &quot;#FFFF99&quot;;
+
+        var profile = new Object();
+        // define profile ...
+
+        // put any extras you&#39;d like in here
+        if (click_once == 0) {
+            click_once = 1;
+            var passed = Data.FormValidator.check_and_report(frmObj, profile, goodColor, badColor);
+            if (passed) {
+                return true;
+            } else {
+                // reset click_once, so they can re-fillout the form
+                click_once = 0;
+                return false;
+            }
+        }
+     }
+     // --&gt;&lt;/SCRIPT&gt;
+
+    ALTERNATIVELY: the following is a more detailed handling, and is
+    actually what happens in when the above convenience method,
+    &quot;check_and_report()&quot;, is called.
+
+     &amp;lt;FORM onSubmit=&quot;return myValidate(this);&quot;&gt;
+     ...
+     &lt;/FORM&gt;
+     &amp;lt;SCRIPT LANGUAGE=&quot;javascript&quot;&gt;&lt;!--
+     function myValidate (frmObj) {
+        var goodColor = &quot;#FFFFFF&quot;;
+        var badColor  = &quot;#FFFF99&quot;;
+
+        var profile = new Object();
+        // define profile ...
+        var results = Data.FormValidator.check(frmObj, profile);
+        // clean up colors from form
+        results.cleanForm(frmObj, goodColor);
+        if (! results.success()) {
+            var error_text = &quot;&quot;;
+            var msgs = results.msgs();
+            for (field in results.missing_required) {
+                results.changeStyle(frmObj, field, badColor);
+                error_text += &quot;Field [&quot;+field+&quot;] is required.\n&quot;;
+            }
+            for (field in results.missing_dependency) {
+                for (i in results.missing_dependency[field]) {
+                    var dep = results.missing_dependency[field][i];
+                    results.changeStyle(frmObj, dep, badColor);
+                    error_text += &quot;Marking field [&quot;+field+&quot;] requires field [&quot;+dep+&quot;] also be filled in.\n&quot;;
+                }
+            }
+            for (group in results.missing_depgroup) {
+                var completed  = results.missing_depgroup[group][&#39;completed&#39;];
+                var incomplete = results.missing_depgroup[group][&#39;incomplete&#39;];
+                for (i in incomplete) {
+                    results.changeStyle(frmObj, incomplete[i], badColor);
+                }
+                error_text += &quot;Marking field(s) [&quot;+completed.join(&#39;, &#39;)+&quot;] requires field(s) [&quot;+incomplete.join(&#39;, &#39;)+&quot;] also be filled in.\n&quot;;
+            }
+            for (field in results.invalid) {
+                results.changeStyle(frmObj, field, badColor);
+                error_text += (msgs[field]) ? &quot;Field [&quot;+field+&quot;] : &quot;+msgs[field] :
+                                              &quot;Improperly formatted data in field [&quot;+field+&quot;].&quot;;
+                error_text += &quot;\n&quot;;
+            }
+
+            alert(&quot;There is a problem with your form.\n\n&quot;+error_text);
+            return false;
+
+        } else {
+            // do something with results.valid ?
+            return true;
+        } 
+     };
+     // --&gt;&lt;/SCRIPT&gt;
+
+DESCRIPTION
+    Data.FormValidator&#39;s aim is to bring all the benefits of the perl module
+    Data::FormValidator over to javascript, using the same input profiles
+    (they can be dumped into javascript objects using the perl module
+    Data::JavaScript).
+
+    Data.FormValidator lets you define profiles which declare the required
+    and optional fields and any constraints they might have.
+
+    The results are provided as an object which makes it easy to handle
+    missing and invalid results, return error messages about which
+    constraints failed, or process the resulting valid data.
+
+TODO
+    There are many features missing from this library, that are available in
+    the perl version. The big ones have been marked in the code with the
+    text &quot;TODO&quot;. There are too many things missing to explain them all at
+    this time, but we&#39;ve attempted to note below when feature are not
+    available, work differently, or only exist here.
+
+VALIDATING INPUT
+  new Data.FormValidator()
+    Constructor. Currently takes NO options. (TODO: this should optionally
+    support taking in defaults).
+
+    Returns a Data.FormValidator object (referred to from here on out as
+    &quot;dfv&quot;).
+
+  dfv.validate(formObject, profile);
+    ***DEPRECATED***
+
+    &quot;validate()&quot; provides a deprecated alternative to &quot;check()&quot;. It has the
+    same input syntax, but returns a four element array, containing the
+    following elements from the &quot;Results&quot; object (the return value of the
+    &quot;check()&quot; method).
+
+        results.valid()
+        results.missing()
+        results.validate_invalid()
+        results.unknown()
+
+    See Data::FormValidator, and the following documentation on
+    &quot;Data.FormValidator.Results&quot; for more info.
+
+  dfv.check()
+     var results = Data.FormValidator.check(formObject, dfv_profile);
+
+    &quot;check&quot; is the recommended method to use to validate forms. It returns
+    it&#39;s results as a Data.FormValidator.Results object. A deprecated method
+    &quot;validate&quot; is also available, returning it&#39;s results as an array
+    described above.
+
+     var results = Data.FormValidator.check(formObject, dfv_profile);
+
+    Here, &quot;check()&quot; is used as a class method***, and takes two required
+    parameters. It can also be called as an instance method:
+
+     var dfv = new Data.FormValidator();
+     var results = dfv.check(formObject, dfv_profile);
+
+    The first argument is a javascript DOM object pointing to the form to be
+    validated.
+
+    The second argument is a reference to the profile you are validating.
+
+    The resulting &quot;results&quot; object can be used to call has_missing(),
+    has_invalid(), and their ilk.
+
+    *** NOTE: &quot;class method&quot; is what it&#39;s called on the perl side. Here,
+    it&#39;s an object constructor, which just happens to take care of some
+    stuff in the Data.FormValidator namespace behind the scenes for you.
+
+  Data.FormValidator.check_and_report(formObject, dfv_profile [, goodColor, badColor] )
+     var success = Data.FormValidator.check_and_report(formObject, dfv_profile);
+
+    This is a convenience method. It takes care of calling &quot;check()&quot;,
+    processing the results, building a helpful error message if it erred
+    out, and reporting the errors to the user (via javascript alert() box).
+    If &quot;check()&quot; succeeds, it returns &quot;true&quot;; returns &quot;false&quot; on failure.
+
+    This is the recommended way to use this library. If you require more
+    advanced usage, this method can be used as a good starting point to base
+    your processing upon.
+
+    Options:
+
+    formObject:
+        javascript DOM object pointing to the form to be validated.
+
+    dfv_profile:
+        Reference to the profile you are validating.
+
+    goodColor (optional):
+        Hex value of a color to set the form field backgrounds to if the
+        field is valid.
+
+    badColor (optional):
+        Hex value of a color to set the form field backgrounds to if the
+        field is invalid.
+
+  dfv.load_profiles() (TODO)
+  dfv._mergeProfiles() (TODO)
+  dfv._check_profile_syntax() (TODO)
+INPUT PROFILE SPECIFICATION
+    Please see the pod documentation for the perl module
+    Data::FormValidator.
+
+    NOTE: Constraint support is currently limited. This library currently
+    supports:
+
+    * Regular Expression Constraints
+        Only as quoted strings (eg &quot;/regexp/&quot;, not qr/regexp/).
+
+    * Built in Constraints
+        Those offered by Data::FormValidator (see
+        Data.FormValidator.Constraints below), but NOT the extra
+        RegExp::Common ones (thought those are on the TODO list now).
+
+    The profile spec for this library, is the result of running a perl
+    &quot;Data::FormValidator&quot; profile through the module Data::JavaScript. You
+    may construct it by hand, but the specifics of such are outside the
+    scope of this document. Please read on for some more info.
+
+    Data::JavaScript dumps perl data structures out to a javascript
+    object/array structure.
+
+    Here is a very simple input profile in perl:
+
+        my $profile = {
+            optional =&gt; [qw( company fax country )],
+            required =&gt; [qw( fullname age phone email address )],
+            constraints =&gt; {
+                email =&gt; { name =&gt; &quot;valid_email&quot;,
+                           constraint =&gt; &quot;/^(([a-z0-9_\\.\\+\\-\\=\\?\\^\\#]){1,64}\\@(([a-z0-9\\-]){1,251}\\.){1,252}[a-z0-9]{2,4})$/i&quot; },
+                age =&gt; { name =&gt; &quot;valid_age&quot;,
+                         constraint =&gt; &quot;/^1?\d?\d$/&quot; },
+            },
+            msgs =&gt; {
+                constraints =&gt; {
+                    valid_email =&gt; &quot;Invalid e-mail address format&quot;,
+                    valid_age   =&gt; &quot;Age entered must be between 0 and 199&quot;,
+                }
+            },
+        };
+
+    Here is the same profile output by &quot;Data::JavaScript::jsdump()&quot;:
+
+        var profile = new Object;
+        profile.constraints = new Object;
+        profile.constraints.email = new Object;
+        profile.constraints.email.name = &#39;valid_email&#39;;
+        profile.constraints.email.constraint = &#39;\/\^\(\(\[a\-z0\-9_\\\.\\\+\\\-\\\=\\\?\\\^\\\#\]\)\{1\,64\}\\\@\(\(\[a\-z0\-9\\\-\]\)\{1\,251\}\\\.\)\{1\,252\}\[a\-z0\-9\]\{2\,4\}\)\012i&#39;;
+        profile.constraints.age = new Object;
+        profile.constraints.age.name = &#39;valid_email&#39;;
+        profile.constraints.age.constraint = &#39;\/\^1\?\\d\?\\d\012&#39;;
+        profile.required = new Array;
+        profile.required[0] = &#39;fullname&#39;;
+        profile.required[1] = &#39;phone&#39;;
+        profile.required[2] = &#39;email&#39;;
+        profile.required[3] = &#39;address&#39;;
+        profile.optional = new Array;
+        profile.optional[0] = &#39;company&#39;;
+        profile.optional[1] = &#39;fax&#39;;
+        profile.optional[2] = &#39;country&#39;;
+        profile.msgs = new Object;
+        profile.msgs.constraints = new Object;
+        profile.msgs.constraints.valid_email = &#39;Invalid e\-mail address format&#39;;
+        profile.msgs.constraints.valid_age = &#39;Age entered must be between 0 and 199&#39;;
+
+    Your profile may contain anything that the perl module
+    Data::FormValidator contains, but only a subset of it will be supported
+    by this library. The following keys are supported.
+
+    required
+        Array of required fields (required means they must not be blank, nor
+        consist only of spaces). Valid fields listed here will be returned
+        in the results.valid object.
+
+    optional
+        Array of optional fields (if filled in, constraints placed on these
+        fields will also be checked). Valid fields listed here will be
+        returned in the results.valid object, as well as blank ones.
+
+    dependencies
+         dependencies   =&gt; {
+            # If cc_no is entered, make cc_type and cc_exp required
+            &quot;cc_no&quot; =&gt; [ qw( cc_type cc_exp ) ],
+         },
+
+        This is for the case where an optional field has other requirements.
+        The dependent fields can be specified with an array.
+
+    dependency_groups
+         dependency_groups  =&gt; {
+             # if either field is filled in, they all become required
+             password_group =&gt; [qw/password password_confirmation/],
+         }
+
+        The key is an arbitrary name you create. The values are arrays of
+        field names in each group. If any field in the group is filled in,
+        all fields in the group must be filled in.
+
+    constraints
+         constraints =&gt; {
+            fieldName1  =&gt; &#39;/regexp/i&#39;,
+            fieldName2  =&gt; { name =&gt; &#39;all_numbers&#39;, constraint =&gt; &#39;/^\\d+$/&#39; },
+            fieldName3  =&gt; [ { name =&gt; &#39;no_spaces&#39;, constraint =&gt; &#39;/^\\S*$/&#39; },
+                             { name =&gt; &#39;word_chars&#39;, constraint =&gt; &#39;/^\\w+$/&#39; } ],
+            fieldName4  =&gt; &#39;valid_email&#39;,
+         }
+
+        The second and third form above are recommended, as they allow you
+        to tie the constraint to a custom error message (through the msgs
+        hash).
+
+        We support a very narrow range of constraints options (we do not
+        support constraint_methods as of yet, nor named closures ( &quot;field =&gt;
+        email()&quot; ), nor subroutine references, nor compiled
+        regexps(qr/regexp/) ). The ones listed above will all work, namely,
+        quoted regexp and quoted named constraints.
+
+    msgs
+        This key is used to define parameters related to formatting error
+        messages returned to the user.
+
+        Please see Data::FormValidator for more detailed information.
+
+        The important thing to note is that
+
+        A) the constraint must be named. Eg:
+
+            profile =&gt; {
+                constraints =&gt; {
+                    fieldName   =&gt; { name =&gt; &#39;someName&#39;, constraint =&gt; &#39;/\\d+/&#39; },
+                },
+            };
+
+        B) the msgs hash references the &quot;name =&gt;&quot;, not the field name. Eg:
+
+            profile =&gt; {
+                msgs    =&gt; {
+                    constraints =&gt; {
+                        someName    =&gt; &quot;Error message goes here&quot;,
+                    },
+                },
+            };
+
+        The rest is important too, but easy to grasp from the
+        Data::FormValidator documentation.
+
+NAME
+    Data.FormValidator.Results - results of form input validation.
+
+SYNOPSIS
+        var results = Data.FormValidator.check(formObject, dfv_profile);
+
+        var msgs = results.msgs();
+
+        // Print the name of missing fields
+        if ( results.has_missing() ) {
+            for (f in results.missing) {
+                alert(f + &quot; is missing\n&quot;);
+            }
+        }
+
+        // Print the name of invalid fields
+        if ( results.has_invalid() ) {
+            for (f in results.invalid) {
+                alert(f + &quot; is invalid: &quot; + msgs[f] + &quot;\n&quot;);
+            }
+        } 
+
+        // Print unknown fields
+        if ( results.has_unknown() ) {
+            for (f in results.unknown) {
+                alert(f + &quot; is unknown\n&quot;);
+            }
+        } 
+
+        // Print valid fields
+        for (f in results.valid) {
+            alert(f + &quot; = &quot; + results.valid[f] + &quot;\n&quot;);
+        }
+
+DESCRIPTION
+    This object is returned by the Data.FormValidator &quot;check&quot; method. It can
+    be queried for information about the validation results.
+
+RESULTS METHODS
+  results.success()
+    This method returns true if there were no invalid or missing fields,
+    else it returns false.
+
+  results.has_missing()
+    Returns a count of missing fields (zero for none).
+
+  results.has_invalid()
+    Returns a count of invalid fields (zero for none).
+
+  results.has_unknown()
+    Returns a count of unknown fields (zero for none).
+
+  results.has_missing_required()
+    Returns a count of required fields that were missing (zero for none).
+
+  results.has_missing_dependency()
+    Returns a count of dependency fields that were missing (zero for none).
+
+  results.has_missing_depgroup()
+    Returns a count of dependency group fields that were missing (zero for
+    none).
+
+DATA ACCESSOR STRUCTURES
+  results.valid
+    Object data structure.
+
+    Access Single element:
+
+        results.valid.element
+        results.valid[&#39;element&#39;]
+
+    Iterate over all valid items:
+
+        for (field in results.valid) {
+            // do something with &quot;field&quot;
+        }
+
+  results.invalid
+    Object data structure.
+
+    Access Single element:
+
+        results.invalid.element
+        results.invalid[&#39;element&#39;]
+
+    Iterate over all valid items:
+
+        for (field in results.valid) {
+            for (i in results.valid[field]) {
+                var testName = results.valid[field][i];
+            }
+            // do something with &quot;field&quot;
+        }
+
+  results.validate_invalid
+    Array data structure.
+
+    Array of Arrays.
+
+    First element of each row is the &quot;fieldName&quot;. The remainder of the
+    elements are the test names that failed. Eg.
+
+        for (i in results.validate_invalid) {
+            var fieldName = results.validate_invalid[i];
+            var failedTests = new Array();
+            for (var j=1; j&amp;lt;results.validate_invalid.length; j++) {
+                failedTests[failedTests.length] = results.validate_invalid[j];
+            }
+        }
+
+  results.missing
+    Object data structure. Contains all missing fields (those listed in
+    &quot;required&quot; but not filled in, those listed as a dependency to an
+    optional field that was filled in, those blank from a dependency group
+    that had one or more members filled in). There are more specific
+    missing_* objects you can use to get at each category of missing
+    individually (NOTE: the more specific ones are NOT available in the perl
+    version of Data::FormValidator).
+
+    Access Single element:
+
+        results.missing.element
+        results.missing[&#39;element&#39;]
+
+    Iterate over all items:
+
+        for (field in results.missing) {
+            // do something with &quot;field&quot;
+        }
+
+  results.missing_required
+    Object data structure. (NOTE: this property is not available in the perl
+    version of Data::FormValidator)
+
+    Access Single element:
+
+        results.missing_required.element
+        results.missing_required[&#39;element&#39;]
+
+    Iterate over all items:
+
+        for (field in results.missing_required) {
+            // do something with &quot;field&quot;
+        }
+
+  results.missing_dependency
+    Object data structure. (NOTE: this property is not available in the perl
+    version of Data::FormValidator)
+
+    This data structure is a bit more complex. The first level contains the
+    &quot;fieldName&quot; which triggered the dependency. As its value, is an array of
+    dependencies that were not completed. Eg.
+
+        for (fieldName in this.missing_dependency) {
+            // fieldName triggered this dependency
+            alert(&quot;field[&quot;+fieldName+&quot;] required the following fields also be completed: &quot;+ this.missing_dependency[fieldName].join(&quot;, &quot;) );
+        }
+
+  results.missing_depgroup
+    Object data structure. (NOTE: this property is not available in the perl
+    version of Data::FormValidator)
+
+    This data structure is a bit more complex. The first level contains the
+    &quot;dependency group name&quot; that failed the test. It is an object which has
+    two properties: &quot;completed&quot; and &quot;incomplete&quot;. Each of those properties
+    holds and array of completed and incomplete fields respectively.
+
+    Ex.
+
+        for (group in results.missing_depgroup) {
+            var completed  = results.missing_depgroup[group][&#39;completed&#39;];
+            var incomplete = results.missing_depgroup[group][&#39;incomplete&#39;];
+            for (i in incomplete) {
+                results.changeStyle(frmObj, incomplete[i], badColor);
+            }
+            error_text += &quot;Marking field(s) [&quot;+completed.join(&#39;, &#39;)+&quot;] requires field(s) [&quot;+incomplete.join(&#39;, &#39;)+&quot;] also be filled in.\n&quot;;
+        }
+
+  results.unknown
+    Object data structure. List of all fields found in the form that are not
+    listed as required nor optional in the dfv_profile.
+
+    Access Single element:
+
+        results.unknown.element
+        results.unknown[&#39;element&#39;]
+
+    Iterate over all items:
+
+        for (field in results.unknown) {
+            // do something with &quot;field&quot;
+        }
+
+NAME
+    Data.FormValidator.Constraints - Basic sets of constraints on input
+    profile.
+
+SYNOPSIS
+        var constraints = new Data.FormValidator.Constraints();
+        if (constraints.supported(&#39;email&#39;)) {
+            var match;
+            if (match = constraints.email(value)) {
+                // match has untainted data that is valid
+            } else {
+                // failed test
+            }
+        } else {
+            // constraint is not supported
+        }
+
+DESCRIPTION
+    The following built in constraints are provided:
+
+    supported
+        Given a constraint name, returns true if we currently support that,
+        and false otherwise. This is handy, because code calling built in
+        constraints does not have to change as we add new ones, as it will
+        have a bit of introspection to this object.
+
+        NOTE: UGLY HACK: I do not know of any methods like &quot;can&quot; for
+        JavaScript, but that is all that this is really trying to do.
+
+    email
+        Checks if the email LOOKS LIKE an email address. This should be
+        sufficient 99% of the time.
+
+        Look elsewhere if you want something super fancy that matches every
+        possible variation that is valid in the RFC, or runs out and checks
+        some MX records.
+
+    state_or_province
+        This one checks if the input correspond to an american state or a
+        canadian province.
+
+    state
+        This one checks if the input is a valid two letter abbreviation of
+        an american state.
+
+    province
+        This checks if the input is a two letter canadian province
+        abbreviation.
+
+    zip_or_postcode
+        This constraints checks if the input is an american zipcode or a
+        canadian postal code.
+
+    postcode
+        This constraints checks if the input is a valid Canadian postal
+        code.
+
+    zip This input validator checks if the input is a valid american zipcode
+        : 5 digits followed by an optional mailbox number.
+
+    phone
+        This one checks if the input looks like a phone number, (if it
+        contains at least 6 digits.)
+
+    american_phone
+        This constraints checks if the number is a possible North American
+        style of phone number : (XXX) XXX-XXXX. It has to contains 7 or more
+        digits.
+
+    cc_number
+        TODO: this is currently implemented, but does not work, because
+        constraint_methods in the profile are not supported. So, because
+        this method relies on knowing the value of two fields, it will not
+        work yet.
+
+        This constraint references the value of a credit card type field.
+
+         constraint_methods =&gt; {
+            cc_no      =&gt; cc_number({fields =&gt; [&#39;cc_type&#39;]}),
+          }
+
+        The number is checked only for plausibility, it checks if the number
+        could be valid for a type of card by checking the checksum and
+        looking at the number of digits and the number of digits of the
+        number.
+
+        This functions is only good at catching typos. IT DOESN&#39;T CHECK IF
+        THERE IS AN ACCOUNT ASSOCIATED WITH THE NUMBER.
+
+    cc_exp
+        This one checks if the input is in the format MM/YY or MM/YYYY and
+        if the MM part is a valid month (1-12) and if that date is not in
+        the past.
+
+    cc_type
+        This one checks if the input field starts by M(asterCard), V(isa),
+        A(merican express) or D(iscovery).
+
+    ip_address
+        This checks if the input is formatted like an IP address (v4)
+
+REGEXP::COMMON SUPPORT
+    (TODO) this is not yet supported. It will require a port of
+    RegExp::Common over to JavaScript, whish should actually be fairly
+    trivial.
+
+UTILITY METHODS
+  results.msgs()
+    This method returns an object data structure of error messages. The
+    exact format is determined by parameters in the &quot;msgs&quot; area of the
+    validation profile, described in the Data::FormValidator documentation.
+
+    This method does NOT yet support the optional &quot;controls&quot; parameter.
+
+    The data structure returned can be accesses like so:
+
+        var msgs = results.msgs();
+        for (field in results.invalid) {
+            error_text += msgs[field] + &quot;\n&quot;;
+        }
+
+    NOTE: the messages for missing data sets are very bland. You&#39;d be better
+    off producing your own on the fly in those cases. But, this is quite
+    helpful with invalid data :-)
+
+  results.changeStyle(formObject, fieldName, rgbColor)
+    This will change the background color of all form elements by the given
+    name in the given form, to the given color (defaults to #FFFF99).
+
+    This is an especially handy method, as you don&#39;t have to worry about how
+    many times the form field &quot;password&quot; shows up on the page, nor even what
+    type of field it is (ex. changing the background of a select list is
+    different from a text field), and you can even have mixed types of
+    fields with the same name.
+
+    TODO: create similar method to change the CSS class of the element.
+
+    NOTE / TODO: This method doesn&#39;t really belong in this namespace, but it
+    provides a substantial benefit, and the supporting code library is
+    already here, so it&#39;s likely to stick around for a while.
+
+  results.cleanForm(formObject, rgbColor)
+    Changes the background color of every element in the given form to the
+    given color (defaults to #FFFFFF).
+
+    Useful to call prior to processing all the invalid fields.
+
+    TODO: create similar method to change the CSS class of the element.
+
+    NOTE / TODO: This method doesn&#39;t really belong in this namespace, but it
+    provides a substantial benefit, and the supporting code library is
+    already here, so it&#39;s likely to stick around for a while.
+
+INTERNAL METHODS
+    The following methods are only noted here so you know of their
+    existence. They are used internally to the Data.FormValidator.Results
+    object. If you find them useful for other purposes, feel free to yank
+    them out and do as you wish (within the bound of the license agreement
+    of course).
+
+    getElementListByName(frmObj, elementName)
+        Takes the form object, and a form element name Returns an array of
+        elements, or false if it doesn&#39;t exist.
+
+    isArray(thisObject)
+        verify that something is an array
+
+    isValidObject(thisObject)
+        verify that an object exists and is valid
+
+    hasSelected(selectObj)
+        return array of selected item values, or false if nothing was
+        selected
+
+        NOTE: this method has some work around for the broken IE 5, 5.5, and
+        6. The work arounds currently make all platforms behave less than
+        perfect, as they currently do not include any browser detection.
+        TODO: add browser detection.
+
+    hasChecked(checkboxObj)
+        Dispatch off to hasRadioOrCheckbox
+
+    hasRadio(radioObj)
+        Dispatch off to hasRadioOrCheckbox
+
+    hasRadioOrCheckbox(thisObj)
+        return array of selected item values, or false if nothing was
+        selected
+
+    hasMCEText(mceObj)
+        return array of text values, with empty elements if the field(s) are
+        blank
+
+    hasText(textObj)
+        return array of text values, with empty elements if the field(s) are
+        blank
+
+    blankText(textObj)
+        step through a string, and see if it&#39;s nothing but blank
+
+    fieldType(Obj)
+        method to determine type of form field. We use this, cause we
+        support meta types like tinymce.
+
+        NOTE: MUST pass in a single form element, not some jacked up
+        frmObj[&#39;field&#39;] thing.
+
+    emptyField(frmObj, fieldName)
+        dispatching function - sends check to appropriate typed check
+
+        returns true if the field is empty
+
+    getField(frmObj, fieldName)
+        dispatching function - snags the data for the requested field (all
+        instances of such named field). NOTE: this always returns an array
+
+DEMO
+    A live demo is available at the developer site:
+
+    &amp;lt;http://formvalidatorjs.berlios.de/&gt;
+
+BUGS
+    &amp;lt;http://developer.berlios.de/bugs/?group_id=4847&gt;
+
+CONTRIBUTING
+    This project is hosted by berlios.de (a sourceforge-ish place). Patches,
+    questions and feedback are welcome.
+
+    &amp;lt;http://developer.berlios.de&gt;
+
+SEE ALSO
+    JSAN listing
+    &amp;lt;http://www.openjsan.org/doc/u/un/unrtst/Data/FormValidator/&gt;
+
+    Data::FormValidator, Data::FormValidator::Results,
+    Data::FormValidator::Constraints,
+    Data::FormValidator::ConstraintsFactory, Data::FormValidator::Filters
+
+AUTHOR
+    Joshua I. Miller &amp;lt;jmiller@purifieddata.net&gt;
+
+COPYRIGHT
+    Copyright (c) 2005 by CallTech Communications, LLC.
+
+    Portions Copyright (c) 1999,2000 iNsu Innovations Inc.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the terms as perl itself.
+
+&lt;/pre></description>
+<dc:date>2007-09-04T18:59:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/e/ed/edoardo/Form/Element/Resize/0.05">
+<title>Form.Element.Resize-0.05</title>
+<link>http://openjsan.org/doc/e/ed/edoardo/Form/Element/Resize/0.05</link>
+<description>&lt;pre>NAME
+
+    Form.Element.Resize - Unobtrusive javascript class for make a standard
+    form field resizable with the mouse
+
+SYNOPSIS
+
+     &lt;!-- XHTML page --&gt;
+     &amp;lt;form action=&quot;http://host.domain.tld/cgi-bin/script&quot;&gt;
+      &amp;lt;label for=&quot;message&quot;&gt;Message:&lt;/label&gt;&amp;lt;br /&gt;
+      &amp;lt;textarea id=&quot;message&quot; name=&quot;message&quot;&gt;&lt;/textarea&gt;
+     &lt;/form&gt;
+    
+     // javascript code
+     new Form.Element.Resize({ elementId: &#39;message&#39; });
+
+DESCRIPTION
+
+    This nice class implement some methods for add a mouse-driven resize
+    feature on form fields such as text inputs, textareas and select
+    controls. Clicking and dragging the borders or the corners of the form
+    element will resize it while double clicking inside the element will
+    restore its original dimensions (this does not work with select
+    elements in Internet Explorer and Firefox). It is also possible to
+    specify the minimum and maximum width and height allowed when the
+    element is resized.
+
+    Tested under Firefox 2, Internet Explorer 6/7, Opera 9.
+
+METHODS
+
+ new()
+
+    Class constructor, returns a new Form.Element.Resize object.
+
+  Parameters
+
+    oProps
+
+      Object literal where must be specified the element id on which
+      activate the resize feature and other optional properties that
+      overwrites the defaults.
+
+      Properties are:
+
+      elementId
+
+	ID of the element on which enable the resize feature. mandatory!
+
+      resizeType
+
+	Type of resize, shortcuts are auto, horizontal and vertical
+	(default is auto).
+
+	- auto: resizable borders and corners are set automatically
+	depending on the form element type. text input and non-multiple
+	select have only the right border draggable; textarea and multple
+	select have the right and bottom borders and the bottom-right
+	corner draggable.
+
+	- horizontal: all field types have only the right border draggable.
+
+	- vertical: all field types have only the bottom border draggable.
+
+	It is also possible to specify each border/corner to activate by
+	passing an object literal with one or more of the following keys:
+
+	n, ne, e, se, s, sw, w, nw
+
+	All are initially disabled, so for example, to activate only the
+	bottom-right corner the property must be initialized like this:
+
+         new Form.Element.Resize({ elementId: &#39;message&#39;, resizeType: { se: 1 } });
+
+      minWidth
+
+	Minimum width allowed for the element. When this value is reached
+	the horizontal resize stops. By default this property is set to 1.
+
+         new Form.Element.Resize({ elementId: &#39;message&#39;, minWidth: 100 });
+
+      minHeight
+
+	Minimum height allowed for the element. When this value is reached
+	the vertical resize stops. By default this property is set to 1.
+
+         new Form.Element.Resize({ elementId: &#39;message&#39;, minHeight: 50 });
+
+      maxWidth
+
+	Maximum width allowed for the element. When this value is reached
+	the horizontal resize stops. By default this property is not set,
+	so there is not limit to the resize.
+
+         new Form.Element.Resize({ elementId: &#39;message&#39;, maxWidth: 400 });
+
+      maxHeight
+
+	Maximum height allowed for the element. When this value is reached
+	the vertical resize stops. By default this property is not set, so
+	there is not limit to the resize.
+
+         new Form.Element.Resize({ elementId: &#39;message&#39;, maxHeight: 350 });
+
+      containerId
+
+	ID of the generated container element, useful for add some CSS
+	rules on it.
+
+      containerClass
+
+	Class of the generated container element, useful for add some CSS
+	rules on it.
+
+EXAMPLES
+
+     &lt;!-- you can initialize the class within your XHTML page like this --&gt;
+     &amp;lt;form action=&quot;http://host.domain.tld/cgi-bin/script&quot;&gt;
+      &amp;lt;label for=&quot;message&quot;&gt;Message:&lt;/label&gt;&amp;lt;br /&gt;
+      &amp;lt;textarea id=&quot;message&quot; name=&quot;message&quot;&gt;&lt;/textarea&gt;
+      &amp;lt;script type=&quot;text/javascript&quot;&gt;new Form.Element.Resize({ elementId: &#39;message&#39;, containerClass: &#39;resizable&#39; });&lt;/script&gt;
+     &lt;/form&gt;
+    
+    
+     // or in a more unobtrusive way put the new in an included javascript file.
+     // be sure to call the new when the page is loaded!
+     // a cross-browser way may be this
+     if( document.addEventListener )
+     {
+         document.addEventListener(
+           &#39;load&#39;,
+           function() { new Form.Element.Resize({ elementId: &#39;message&#39;, containerClass: &#39;resizable&#39; }); },
+           false
+         );
+    
+         return true;
+     }
+     else if( document.attachEvent )
+     {
+         return document.attachEvent(
+           &#39;onload&#39;,
+           function() { new Form.Element.Resize({ elementId: &#39;message&#39;, containerClass: &#39;resizable&#39; }); }
+         );
+     }
+
+SEE ALSO
+
+    Official web page at
+    http://www.sabadelli.it/edoardo/projects/javascript/form.element.resize
+
+    JSAN http://openjsan.org/
+
+AUTHOR
+
+    Edoardo Sabadelli - http://www.sabadelli.it/edoardo
+
+COPYRIGHT
+
+    Copyright (c) 2007 Edoardo Sabadelli. All rights reserved.
+
+    This module is free software; you can redistribute it and/or modify it
+    under the terms of the Artistic license.
+
+&lt;/pre></description>
+<dc:date>2007-08-14T18:59:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/e/ed/edoardo/Form/Element/Resize/0.04">
+<title>Form.Element.Resize-0.04</title>
+<link>http://openjsan.org/doc/e/ed/edoardo/Form/Element/Resize/0.04</link>
+<description>&lt;pre>NAME
+
+    Form.Element.Resize - Unobtrusive javascript class for make a standard
+    form field resizable with the mouse
+
+SYNOPSIS
+
+     &lt;!-- XHTML page --&gt;
+     &amp;lt;form action=&quot;http://host.domain.tld/cgi-bin/script&quot;&gt;
+      &amp;lt;label for=&quot;message&quot;&gt;Message:&lt;/label&gt;&amp;lt;br /&gt;
+      &amp;lt;textarea id=&quot;message&quot; name=&quot;message&quot;&gt;&lt;/textarea&gt;
+     &lt;/form&gt;
+    
+     // javascript code
+     new Form.Element.Resize({ elementId: &#39;message&#39; });
+
+DESCRIPTION
+
+    This nice class implement some methods for add a mouse-driven resize
+    feature on form fields such as text inputs, textareas and select
+    controls. Clicking and dragging the borders or the corners of the form
+    element will resize it while double clicking inside the element will
+    restore its original dimensions (this does not work with select
+    elements in Internet Explorer and Firefox). It is also possible to
+    specify the maximum width and height allowed when the element is
+    resized.
+
+    Tested under Firefox 2, Internet Explorer 6/7, Opera 9.
+
+METHODS
+
+ new()
+
+    Class constructor, returns a new Form.Element.Resize object.
+
+  Parameters
+
+    oProps
+
+      Object literal where must be specified the element id on which
+      activate the resize feature and other optional properties that
+      overwrites the defaults.
+
+      Properties are:
+
+      elementId
+
+	ID of the element on which enable the resize feature. mandatory!
+
+      resizeType
+
+	Type of resize, shortcuts are auto, horizontal and vertical
+	(default is auto).
+
+	- auto: resizable borders and corners are set automatically
+	depending on the form element type. text input and non-multiple
+	select have only the right border draggable; textarea and multple
+	select have the right and bottom borders and the bottom-right
+	corner draggable.
+
+	- horizontal: all field types have only the right border draggable.
+
+	- vertical: all field types have only the bottom border draggable.
+
+	It is also possible to specify each border/corner to activate by
+	passing an object literal with one or more of the following keys:
+
+	n, ne, e, se, s, sw, w, nw
+
+	All are initially disabled, so for example, to activate only the
+	bottom-right corner the property must be initialized like this:
+
+         new Form.Element.Resize({ elementId: &#39;message&#39;, resizeType: { se: 1 } });
+
+      maxWidth
+
+	Maximum width allowed for the element. When this value is reached
+	the horizontal resize stops. By default this property is not set,
+	so there is not limit to the resize.
+
+         new Form.Element.Resize({ elementId: &#39;message&#39;, maxWidth: 400 });
+
+      maxHeight
+
+	Maximum height allowed for the element. When this value is reached
+	the vertical resize stops. By default this property is not set, so
+	there is not limit to the resize.
+
+         new Form.Element.Resize({ elementId: &#39;message&#39;, maxHeight: 350 });
+
+      containerId
+
+	ID of the generated container element, useful for add some CSS
+	rules on it.
+
+      containerClass
+
+	Class of the generated container element, useful for add some CSS
+	rules on it.
+
+EXAMPLES
+
+     &lt;!-- you can initialize the class within your XHTML page like this --&gt;
+     &amp;lt;form action=&quot;http://host.domain.tld/cgi-bin/script&quot;&gt;
+      &amp;lt;label for=&quot;message&quot;&gt;Message:&lt;/label&gt;&amp;lt;br /&gt;
+      &amp;lt;textarea id=&quot;message&quot; name=&quot;message&quot;&gt;&lt;/textarea&gt;
+      &amp;lt;script type=&quot;text/javascript&quot;&gt;new Form.Element.Resize({ elementId: &#39;message&#39;, containerClass: &#39;resizable&#39; });&lt;/script&gt;
+     &lt;/form&gt;
+    
+    
+     // or in a more unobtrusive way put the new in an included javascript file.
+     // be sure to call the new when the page is loaded!
+     // a cross-browser way may be this
+     if( document.addEventListener )
+     {
+         document.addEventListener(
+           &#39;load&#39;,
+           function() { new Form.Element.Resize({ elementId: &#39;message&#39;, containerClass: &#39;resizable&#39; }); },
+           false
+         );
+    
+         return true;
+     }
+     else if( document.attachEvent )
+     {
+         return document.attachEvent(
+           &#39;onload&#39;,
+           function() { new Form.Element.Resize({ elementId: &#39;message&#39;, containerClass: &#39;resizable&#39; }); }
+         );
+     }
+
+SEE ALSO
+
+    Official web page at
+    http://www.sabadelli.it/edoardo/projects/javascript/form.element.resize
+
+    JSAN http://openjsan.org/
+
+AUTHOR
+
+    Edoardo Sabadelli - http://www.sabadelli.it/edoardo
+
+COPYRIGHT
+
+    Copyright (c) 2007 Edoardo Sabadelli. All rights reserved.
+
+    This module is free software; you can redistribute it and/or modify it
+    under the terms of the Artistic license.
+
+&lt;/pre></description>
+<dc:date>2007-08-14T00:59:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/t/te/temp304//Customize_Dropdown_M">
+<title>-Customize_Dropdown_M</title>
+<link>http://openjsan.org/doc/t/te/temp304//Customize_Dropdown_M</link>
+<description>&lt;pre>&lt;/pre></description>
+<dc:date>2007-08-07T18:59:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/g/gu/gugod/Widget/Lightbox/0.10">
+<title>Widget.Lightbox-0.10</title>
+<link>http://openjsan.org/doc/g/gu/gugod/Widget/Lightbox/0.10</link>
+<description>&lt;pre>Widget.Lightbox
+
+Widget.Lightbox is an objective re-implementation of Lightbox JS
+(http://www.huddletogether.com/projects/lightbox/). It has several
+nice features:
+
+* Requires no extra image files
+* Requires no extra CSS files and rules
+* Optionally supports script.aculo.us effects library.
+* Optionally supports JSAN effects library.
+* Works on IE, Firefox, and Safari.
+
+It&#39;s loaddable by JSAN, but not necessary. You can install this
+library following standard JSAN distribution installation.
+
+
+Cheers,
+Kang-min Liu
+&lt;/pre></description>
+<dc:date>2007-07-31T12:59:04</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/a/au/autarch/Widget/SortableTable/0.22">
+<title>Widget.SortableTable-0.22</title>
+<link>http://openjsan.org/doc/a/au/autarch/Widget/SortableTable/0.22</link>
+<description>&lt;pre>NAME
+    Widget.SortableTable - A widget to make a table sortable
+
+SYNOPSIS
+DESCRIPTION
+    Instruments a table so that each of its headers is a clickable link that
+    resorts the table based on that column.
+
+METHODS
+    * new Widget.SortableTable( { tableId: &quot;table-id&quot;, ... } )
+        Returns a new &quot;Widget.SortableTable&quot; object for the specified
+        element.
+
+        This method expects an anonymous object as its only parameter. The
+        only required property for this object is &quot;tableId&quot;.
+
+        The columns of the table are numbered starting at 0, from left to
+        right
+
+        The object passed to the constructor can have several additional
+        properties:
+
+        * initialSortColumn
+                If &quot;initialSortColumn&quot; is specified, it tells the widget
+                what column it should sort the table on when the widget is
+                created.
+
+                By default it does the initial sort of the table on column
+                0.
+
+        * noInitialSort
+                If this is true, then no initial sort of table is done when
+                the widget is constructed.
+
+                The appropriate even/odd CSS class names will still be added
+                to each row, but no cells will have their CSS class set to
+                &quot;w-st-current-sorted-column&quot;. See &quot;HOW THE WIDGET ALTERS THE
+                TABLE&quot; for details about what this means.
+
+        * secondarySortColumn
+                The &quot;secondarySortColumn&quot; parameter specifies which column
+                the widget should use for secondary sorting. This is
+                necessary when it tries to sort on a column where some cells
+                contain identical values. In this case, it will fall back to
+                sorting those particular rows on the data in the
+                &quot;secondarySortColumn&quot;. You should use a column which
+                contains unique data in each cell. This defaults to column
+                0.
+
+                Note that when we fall back to to the secondary column we
+                *always* sort the secondary column in its default direction.
+
+        * columnSpecs
+                The &quot;columnSpecs&quot; property is an array containing
+                information about each column in the table.
+
+                The spec for a single column is an anonymous object which
+                can contain three properties, &quot;skip&quot;, &quot;sort&quot;, and
+                &quot;defaultDir&quot;. If &quot;skip&quot; is true, then this column will not
+                be sortable. The &quot;sort&quot; property may be a custom sort
+                function for that column, or a type name. See &quot;TYPES AND
+                SORTING&quot; for more details on what type names are allowed.
+                Finally, the &quot;defaultDir&quot; property may be either &quot;asc&quot; or
+                &quot;desc&quot;. This specifies which direction the column will be
+                sorted on by default.
+
+                If you want do not want to give a spec for a column you can
+                use &quot;null&quot; to fill its place in the array.
+
+                An example:
+
+                  var table = new Widget.SortableTable( {
+                    &quot;tableId&quot;:           &quot;my-table&quot;,
+                    &quot;initialSortColumn&quot;: 1,
+                    &quot;columnSpecs&quot;: [
+                      null,                   no spec for column 0
+                      { skip: true },         do not sort column 1
+                      { sort: &quot;text&quot; },       sort column 2 as text
+                      { defaultDir: &quot;desc&quot; }, sort column 3 in descending order by default
+                      { sort: mySortFunc,     sort column 4 with a custom function and ...
+                        defaultDir: &quot;desc&quot; }, ... sort in descending order by default
+                    ]
+                  } );
+
+        * onSortRowCallback
+                If this option is given, this callback will be called when
+                the rows are resorted. It will be passed the row and its new
+                row number (starting at 1) in the table.
+
+                This is primarily provided to allow for row numbering:
+
+                  function renumberRow ( row, idx ) {
+                      row.cells[0].innerHTML = &quot;row number &quot; + idx;
+                  }
+
+        Since this class uses &quot;DOM.Ready&quot; to get the table, you can create a
+        widget object whenever you want during the course of page rendering.
+
+    * sortOnColumn(number)
+        Tells the widget to sort the table on the specified column. If the
+        widget is not ready (the table is not in the DOM yet), then this
+        method will simply return.
+
+  Tables with One Row
+    You can create a widget for a table with one row, but sorting will be a
+    no-op. Creating the widget will still alter the table, but since no
+    initial sort will be done, its CSS will not be altered.
+
+TYPES AND SORTING
+    By default, &quot;Widget.SortTable&quot; tries to figure out the type of a column
+    based on its text contents. It currently recognizes four types of data,
+    numeric (integer or floating point), currency (a number preceded by &quot;$&quot;
+    or the Euro symbol), dates in YYYY-MM-DD format, and text.
+
+    Text is sorted case-insensitively. Dates are sorted in descending order
+    by default.
+
+    It detects the type by looking at the second cell in the column every
+    time you sort, so in theory the type it detects could change from sort
+    to sort. If this is blank for a column, it will assume that the type is
+    text. If you have blank cells in a column and the data is not text, you
+    should always specify its type when constructing the &quot;Widget.SortTable&quot;
+    object.
+
+    Empty cells are sorted as being less than non-empty cells for all types.
+
+HOW THE WIDGET ALTERS THE TABLE
+    When the widget object is first instantiated, it makes a number of
+    changes to the DOM for the table. It assumes that the first row contains
+    column headers. For each cell, it takes the contents of the cell,
+    whatever they may be, and wraps them in a new &quot;&amp;lt;a&gt;&quot; tag. The href for
+    this tag is &quot;#&quot;. The tag has an &quot;onClick&quot; event set which calls
+    &quot;sortOnColumn()&quot; with the appropriate column number. This tag&#39;s class
+    name is &quot;w-st-resort-column&quot;. The &quot;onClick&quot; handler will stop the event
+    from propogating further.
+
+    Note that the addition of this &quot;&amp;lt;a&gt;&quot; tag may have break existing CSS
+    rules you are using.
+
+    The widget will call &quot;sortOnColumn()&quot; as soon as it can in order to
+    establish an initial sort order for the table, unless you set the
+    &quot;noInitialSort&quot; constructor parameter to true. If no initial sorting is
+    done, then there is no current sort-by column, but all the other CSS
+    changes are still applied.
+
+    When the table is sorted, the widget will make a number of changes to
+    the class names for table elements. The changes are as follows:
+
+    * Current sort-by column
+        All cells in this column will have the &quot;w-st-current-sorted-column&quot;
+        class added. In addition, the header cell, at the top of the column,
+        will also have the class &quot;w-st-asc-column-header&quot; or
+        &quot;w-st-desc-column-header&quot;, depending on the current sort order.
+
+    * Other column header cells
+        All other header cells will be given the
+        &quot;w-st-unsorted-column-header&quot; class.
+
+    * Sort-by column changes
+        When the column upon which the widget is sorting changes, it removes
+        the &quot;w-st-current-sorted-column&quot; class from the previous sort-by
+        column. It also removes the &quot;w-st-asc-column-header&quot; or
+        &quot;w-st-desc-column-header&quot; class from that column&#39;s header cell.
+
+    * All rows besides the header row
+        These rows (&quot;&amp;lt;tr&gt;&quot; tags) will be given a class of either
+        &quot;w-st-odd-row&quot; or &quot;w-st-even-row&quot;. The first row below the headers
+        will be even.
+
+    Any class names you originally assigned in your HTML will be left
+    untouched by the widget.
+
+  Current Sort Indicators
+    This widget does not add any DOM elements to show which column is the
+    current sort-by column. Instead, you can take advantage of the CSS class
+    names it uses to get the same effect.
+
+    For example, let&#39;s start with this HTML for a column header cell:
+
+      &amp;lt;th&gt;Name
+          &amp;lt;img class=&quot;none&quot; src=&quot;none.png&quot; /&gt;
+          &amp;lt;img class=&quot;asc&quot;  src=&quot;asc.png&quot; /&gt;
+          &amp;lt;img class=&quot;desc&quot; src=&quot;desc.png&quot; /&gt;
+      &lt;/th&gt;
+
+    Then in your CSS you can define the following style rules:
+
+     img.asc, img.desc {
+         display: none;
+     }
+
+     th.w-st-current-sorted-column img.none {
+         display: none;
+     }
+
+     th.w-st-asc-column-header  img.asc  {
+         display: inline;
+     }
+
+     th.w-st-desc-column-header img.desc  {
+         display: inline;
+     }
+
+    With these rules, the appropriate image will be displayed simply based
+    on the class name changes that the widget makes.
+
+AUTHOR
+    Dave Rolsky, &amp;lt;autarch@urth.org&gt;.
+
+COPYRIGHT
+    Copyright (c) 2006-2007 Dave Rolsky. All rights reserved.
+
+    This module is free software; you can redistribute it and/or modify it
+    under the same terms as the Perl programming language (your choice of
+    GPL or the Perl Artistic license).
+
+&lt;/pre></description>
+<dc:date>2007-07-31T00:59:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/g/gu/gugod/Function/intervalize/0.01">
+<title>Function.intervalize-0.01</title>
+<link>http://openjsan.org/doc/g/gu/gugod/Function/intervalize/0.01</link>
+<description>&lt;pre>Turn a function into interval version.&lt;/pre></description>
+<dc:date>2007-07-30T18:59:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/i/ia/ianb/doctestjs/0.9">
+<title>doctestjs-0.9</title>
+<link>http://openjsan.org/doc/i/ia/ianb/doctestjs/0.9</link>
+<description>&lt;pre>&lt;/pre></description>
+<dc:date>2007-07-29T18:59:06</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/w/we/wezzy//templateengine.js">
+<title>-templateengine.js</title>
+<link>http://openjsan.org/doc/w/we/wezzy//templateengine.js</link>
+<description>&lt;pre>&lt;/pre></description>
+<dc:date>2007-05-08T12:59:04</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/e/ed/edoardo/Widget/Tooltip/0.02">
+<title>Widget.Tooltip-0.02</title>
+<link>http://openjsan.org/doc/e/ed/edoardo/Widget/Tooltip/0.02</link>
+<description>&lt;pre>NAME
+
+    Widget.Tooltip - Unobtrusive javascript class for create and handle
+    tooltips
+
+SYNOPSIS
+
+     &lt;!-- XHTML page --&gt;
+     &amp;lt;p id=&quot;text1&quot;&gt;some text...&lt;/p&gt;
+    
+     // javascript code
+     new Widget.Tooltip({ elementId: &#39;text1&#39;, tooltipContent: &#39;tooltip for some text&#39; });
+
+DESCRIPTION
+
+    This nice class implements some methods for adding tooltips on document
+    elements. The tooltip can contain plain text or some XHTML markup. When
+    the user moves the mouse over the reference element, the tooltip is
+    shown. By setting some configurable options is possible to control the
+    tooltip behaviour, by default the tooltip follows the mouse when is
+    moved, stops and freezes on a left button click, another click will
+    unlock the tooltip.
+
+    Tested under Firefox 2, Internet Explorer 6/7, Opera 9.
+
+METHODS
+
+ new()
+
+    Class constructor. If the DOM element specified in the elementId
+    property exists, returns a new Widget.Tooltip object, otherwise returns
+    the undefined value.
+
+  Parameters
+
+    oProps
+
+      Object literal where must be specified the element id on which add
+      the tooltip, the tooltip content and other optional properties that
+      overwrites the defaults.
+
+      Properties are:
+
+      elementId
+
+	ID of the element on which add a tooltip. mandatory!
+
+      enableLock
+
+	Defines if the tooltip must freeze on the current mouse position by
+	clicking the reference element (default is 1=enabled, set to 0 to
+	disable).
+
+      enableMove
+
+	Defines if the tooltip must follow the mouse pointer when is moved
+	(default is 1=enabled, set to 0 to disable).
+
+      fadeOut
+
+	Time expressed in milliseconds after which the tooltip will be
+	hidden (default 0=disabled).
+
+      offsetX
+
+	Horizontal distance in pixels from the mouse pointer of the tooltip
+	top-left corner (default is 16).
+
+      offsetY
+
+	Vertical distance in pixels from the mouse pointer of the tooltip
+	top-left corner (default is 16).
+
+      tooltipClass
+
+	CSS class to assign to the tooltip div element (default is
+	`tooltip&#39;), useful for adding some make-up to the tooltip.
+
+      tooltipContent
+
+	Content of the tooltip. Usually some text you want to show. You can
+	pass also an XHTML string. If nothing is provided, the default text
+	`Empty tooltip!&#39; is used.
+
+ hide()
+
+    Hides the tooltip.
+
+ move()
+
+    Moves the tooltip following the mouse pointer (depending on the
+    enableMove flag setting).
+
+ show()
+
+    Shows the tooltip.
+
+ toggleLock()
+
+    Freezes/unfreezes the tooltip by switching the internal lock flag
+    (depending on the enableLock flag setting).
+
+EXAMPLES
+
+     &lt;!-- you can initialize the class within your XHTML page like this --&gt;
+      &amp;lt;p id=&quot;text1&quot;&gt;some text...&lt;/p&gt;
+      &amp;lt;p&gt;an image&amp;lt;br /&gt;
+      &amp;lt;img src=&quot;ghost.png&quot; /&gt;&lt;/p&gt;
+      &amp;lt;p&gt;you can also have a &amp;lt;a id=&quot;anchor1&quot; href=&quot;somewhere_else&quot;&gt;link&lt;/a&gt; within the text on which you want to add a tooltip.&lt;/p&gt;
+    
+      &amp;lt;script type=&quot;text/javascript&quot;&gt;
+       new Widget.Tooltip({ elementId: &#39;text1&#39;, tooltipContent: &#39;tooltip for some text (fades out in 5 seconds)&#39;, fadeout: 5000 });
+       new Widget.Tooltip({ elementId: &#39;img1&#39;, tooltipContent: &#39;where is the image?!&amp;lt;br /&gt;click &amp;lt;a href=&quot;#&quot; onclick=&quot;showImage(\&#39;img1\&#39;)&quot;&gt;here&lt;/a&gt;...&#39; });
+       new Widget.Tooltip({ elementId: &#39;anchor1&#39;, tooltipContent: &#39;a link must be clickable, so you should set enableLock to 0 on this tooltip!&#39;, enableLock: 0 });
+      &lt;/script&gt;
+    
+     // or in a more unobtrusive way put the new in an included javascript file.
+     // be sure to call the new when the page is loaded!
+     // a cross-browser way may be this
+     if( document.addEventListener )
+     {
+         document.addEventListener(
+           &#39;load&#39;,
+           function() {
+               new Widget.Tooltip({ elementId: &#39;text1&#39;, tooltipContent: &#39;tooltip for some text (fades out in 5 seconds)&#39;, fadeout: 5000 });
+               new Widget.Tooltip({ elementId: &#39;img1&#39;, tooltipContent: &#39;where is the image?!&amp;lt;br /&gt;click &amp;lt;a href=&quot;#&quot; onclick=&quot;showImage(\&#39;img1\&#39;)&quot;&gt;here&lt;/a&gt;...&#39; });
+               new Widget.Tooltip({ elementId: &#39;anchor1&#39;, tooltipContent: &#39;a link must be clickable, so you should set enableLock to 0 on this tooltip!&#39;, enableLock: 0 });
+           },
+           false
+         );
+    
+         return true;
+     }
+     else if( document.attachEvent )
+     {
+         return document.attachEvent(
+           &#39;onload&#39;,
+           function() {
+               new Widget.Tooltip({ elementId: &#39;text1&#39;, tooltipContent: &#39;tooltip for some text (fades out in 5 seconds)&#39;, fadeout: 5000 });
+               new Widget.Tooltip({ elementId: &#39;img1&#39;, tooltipContent: &#39;where is the image?!&amp;lt;br /&gt;click &amp;lt;a href=&quot;#&quot; onclick=&quot;showImage(\&#39;img1\&#39;)&quot;&gt;here&lt;/a&gt;...&#39; });
+               new Widget.Tooltip({ elementId: &#39;anchor1&#39;, tooltipContent: &#39;a link must be clickable, so you should set enableLock to 0 on this tooltip!&#39;, enableLock: 0 });
+           }
+         );
+     }
+
+SEE ALSO
+
+    Official web page at
+    http://www.sabadelli.it/edoardo/projects/javascript/widget.tooltip
+
+    JSAN http://openjsan.org/
+
+AUTHOR
+
+    Edoardo Sabadelli - http://www.sabadelli.it/edoardo
+
+COPYRIGHT
+
+    Copyright (c) 2007 Edoardo Sabadelli. All rights reserved.
+
+    This module is free software; you can redistribute it and/or modify it
+    under the terms of the Artistic license.
+
+&lt;/pre></description>
+<dc:date>2007-05-04T12:59:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/e/ed/edoardo/Widget/Tooltip/0.01">
+<title>Widget.Tooltip-0.01</title>
+<link>http://openjsan.org/doc/e/ed/edoardo/Widget/Tooltip/0.01</link>
+<description>&lt;pre>NAME
+
+    Widget.Tooltip - Unobtrusive javascript class for create and handle
+    tooltips
+
+SYNOPSIS
+
+     &lt;!-- XHTML page --&gt;
+     &amp;lt;p id=&quot;text1&quot;&gt;some text...&lt;/p&gt;
+    
+     // javascript code
+     new Widget.Tooltip({ elementId: &#39;text1&#39;, tooltipContent: &#39;tooltip for some text&#39; });
+
+DESCRIPTION
+
+    This nice class implements some methods for adding tooltips on document
+    elements. The tooltip can contain plain text or some XHTML markup. When
+    the user moves the mouse over the reference element, the tooltip is
+    shown. By setting some configurable options is possible to control the
+    tooltip behaviour, by default the tooltip follows the mouse when is
+    moved, stops and freezes on a left button click, another click will
+    unlock the tooltip.
+
+    Tested under Firefox 2, Internet Explorer 6/7, Opera 9.
+
+METHODS
+
+ new()
+
+    Class constructor, returns a new Widget.Tooltip object.
+
+  Parameters
+
+    oProps
+
+      Object literal where must be specified the element id on which add
+      the tooltip, the tooltip content and other optional properties that
+      overwrites the defaults.
+
+      Properties are:
+
+      elementId
+
+	ID of the element on which add a tooltip. mandatory!
+
+      enableLock
+
+	Defines if the tooltip must freeze on the current mouse position by
+	clicking the reference element (default is 1=enabled, set to 0 to
+	disable).
+
+      enableMove
+
+	Defines if the tooltip must follow the mouse pointer when is moved
+	(default is 1=enabled, set to 0 to disable).
+
+      fadeOut
+
+	Time expressed in milliseconds after which the tooltip will be
+	hidden (default 0=disabled).
+
+      offsetX
+
+	Horizontal distance in pixels from the mouse pointer of the tooltip
+	top-left corner (default is 16).
+
+      offsetY
+
+	Vertical distance in pixels from the mouse pointer of the tooltip
+	top-left corner (default is 16).
+
+      tooltipClass
+
+	CSS class to assign to the tooltip div element (default is
+	`tooltip&#39;), useful for adding some make-up to the tooltip.
+
+      tooltipContent
+
+	Content of the tooltip. Usually some text you want to show. You can
+	pass also an XHTML string. If nothing is provided, the default text
+	`Empty tooltip!&#39; is used.
+
+ hide()
+
+    Hides the tooltip.
+
+ move()
+
+    Moves the tooltip following the mouse pointer (depending on the
+    enableMove flag setting).
+
+ show()
+
+    Shows the tooltip.
+
+ toggleLock()
+
+    Freezes/unfreezes the tooltip by switching the internal lock flag
+    (depending on the enableLock flag setting).
+
+EXAMPLES
+
+     &lt;!-- you can initialize the class within your XHTML page like this --&gt;
+      &amp;lt;p id=&quot;text1&quot;&gt;some text...&lt;/p&gt;
+      &amp;lt;p&gt;an image&amp;lt;br /&gt;
+      &amp;lt;img src=&quot;ghost.png&quot; /&gt;&lt;/p&gt;
+      &amp;lt;p&gt;you can also have a &amp;lt;a id=&quot;anchor1&quot; href=&quot;somewhere_else&quot;&gt;link&lt;/a&gt; within the text on which you want to add a tooltip.&lt;/p&gt;
+    
+      &amp;lt;script type=&quot;text/javascript&quot;&gt;
+       new Widget.Tooltip({ elementId: &#39;text1&#39;, tooltipContent: &#39;tooltip for some text (fades out in 5 seconds)&#39;, fadeout: 5000 });
+       new Widget.Tooltip({ elementId: &#39;img1&#39;, tooltipContent: &#39;where is the image?!&amp;lt;br /&gt;click &amp;lt;a href=&quot;#&quot; onclick=&quot;showImage(\&#39;img1\&#39;)&quot;&gt;here&lt;/a&gt;...&#39; });
+       new Widget.Tooltip({ elementId: &#39;anchor1&#39;, tooltipContent: &#39;a link must be clickable, so you should set enableLock to 0 on this tooltip!&#39;, enableLock: 0 });
+      &lt;/script&gt;
+    
+     // or in a more unobtrusive way put the new in an included javascript file.
+     // be sure to call the new when the page is loaded!
+     // a cross-browser way may be this
+     if( document.addEventListener )
+     {
+         document.addEventListener(
+           &#39;load&#39;,
+           function() {
+               new Widget.Tooltip({ elementId: &#39;text1&#39;, tooltipContent: &#39;tooltip for some text (fades out in 5 seconds)&#39;, fadeout: 5000 });
+               new Widget.Tooltip({ elementId: &#39;img1&#39;, tooltipContent: &#39;where is the image?!&amp;lt;br /&gt;click &amp;lt;a href=&quot;#&quot; onclick=&quot;showImage(\&#39;img1\&#39;)&quot;&gt;here&lt;/a&gt;...&#39; });
+               new Widget.Tooltip({ elementId: &#39;anchor1&#39;, tooltipContent: &#39;a link must be clickable, so you should set enableLock to 0 on this tooltip!&#39;, enableLock: 0 });
+           },
+           false
+         );
+    
+         return true;
+     }
+     else if( document.attachEvent )
+     {
+         return document.attachEvent(
+           &#39;onload&#39;,
+           function() {
+               new Widget.Tooltip({ elementId: &#39;text1&#39;, tooltipContent: &#39;tooltip for some text (fades out in 5 seconds)&#39;, fadeout: 5000 });
+               new Widget.Tooltip({ elementId: &#39;img1&#39;, tooltipContent: &#39;where is the image?!&amp;lt;br /&gt;click &amp;lt;a href=&quot;#&quot; onclick=&quot;showImage(\&#39;img1\&#39;)&quot;&gt;here&lt;/a&gt;...&#39; });
+               new Widget.Tooltip({ elementId: &#39;anchor1&#39;, tooltipContent: &#39;a link must be clickable, so you should set enableLock to 0 on this tooltip!&#39;, enableLock: 0 });
+           }
+         );
+     }
+
+SEE ALSO
+
+    Official web page at
+    http://www.sabadelli.it/edoardo/projects/javascript/widget.tooltip
+
+    JSAN http://openjsan.org/
+
+AUTHOR
+
+    Edoardo Sabadelli - http://www.sabadelli.it/edoardo
+
+COPYRIGHT
+
+    Copyright (c) 2007 Edoardo Sabadelli. All rights reserved.
+
+    This module is free software; you can redistribute it and/or modify it
+    under the terms of the Artistic license.
+
+&lt;/pre></description>
+<dc:date>2007-04-19T12:59:04</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/g/gu/gugod/Asynapse/0.10_01">
+<title>Asynapse-0.10_01</title>
+<link>http://openjsan.org/doc/g/gu/gugod/Asynapse/0.10_01</link>
+<description>&lt;pre>Application framework enhancement toolkit.&lt;/pre></description>
+<dc:date>2007-04-14T00:59:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/g/gu/gugod/Widget/Lightbox/0.09">
+<title>Widget.Lightbox-0.09</title>
+<link>http://openjsan.org/doc/g/gu/gugod/Widget/Lightbox/0.09</link>
+<description>&lt;pre>Widget.Lightbox
+
+Widget.Lightbox is an objective re-implementation of Lightbox JS
+(http://www.huddletogether.com/projects/lightbox/). It has several
+nice features:
+
+* Requires no extra image files
+* Requires no extra CSS files and rules
+* Optionally supports script.aculo.us effects library.
+* Optionally supports JSAN effects library.
+* Works on IE, Firefox, and Safari.
+
+It&#39;s loaddable by JSAN, but not necessary. You can install this
+library following standard JSAN distribution installation.
+
+
+Cheers,
+Kang-min Liu
+&lt;/pre></description>
+<dc:date>2007-03-17T12:59:04</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/g/gu/gugod/Widget/Lightbox/0.08">
+<title>Widget.Lightbox-0.08</title>
+<link>http://openjsan.org/doc/g/gu/gugod/Widget/Lightbox/0.08</link>
+<description>&lt;pre>Widget.Lightbox
+
+Widget.Lightbox is an objective re-implementation of Lightbox JS
+(http://www.huddletogether.com/projects/lightbox/). It has several
+nice features:
+
+* Requires no extra image files
+* Requires no extra CSS files and rules
+* Optionally supports script.aculo.us effects library.
+* Optionally supports JSAN effects library.
+* Works on IE, Firefox, and Safari.
+
+It&#39;s loaddable by JSAN, but not necessary. You can install this
+library following standard JSAN distribution installation.
+
+
+Cheers,
+Kang-min Liu
+&lt;/pre></description>
+<dc:date>2007-03-09T18:59:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/k/ke/kevinj/Archive/Tar/0.03">
+<title>Archive.Tar-0.03</title>
+<link>http://openjsan.org/doc/k/ke/kevinj/Archive/Tar/0.03</link>
+<description>&lt;pre>Read-only tar extraction in javascript&lt;/pre></description>
+<dc:date>2007-03-08T00:59:04</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/k/ke/kevinj/Archive/Tar/0.02">
+<title>Archive.Tar-0.02</title>
+<link>http://openjsan.org/doc/k/ke/kevinj/Archive/Tar/0.02</link>
+<description>&lt;pre>Read-only tar extraction in javascript&lt;/pre></description>
+<dc:date>2007-03-07T18:59:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/k/ke/kevinj/Archive/Tar/0.01">
+<title>Archive.Tar-0.01</title>
+<link>http://openjsan.org/doc/k/ke/kevinj/Archive/Tar/0.01</link>
+<description>&lt;pre>Read-only tar extraction in javascript&lt;/pre></description>
+<dc:date>2007-03-07T00:59:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/e/ed/edoardo/Form/Element/Resize/0.03">
+<title>Form.Element.Resize-0.03</title>
+<link>http://openjsan.org/doc/e/ed/edoardo/Form/Element/Resize/0.03</link>
+<description>&lt;pre>NAME
+    Form.Element.Resize - Unobtrusive javascript class for make a standard
+    form field resizable with the mouse
+
+SYNOPSIS
+     &lt;!-- XHTML page --&gt;
+     &amp;lt;form action=&quot;http://host.domain.tld/cgi-bin/script&quot;&gt;
+      &amp;lt;label for=&quot;message&quot;&gt;Message:&lt;/label&gt;&amp;lt;br /&gt;
+      &amp;lt;textarea id=&quot;message&quot; name=&quot;message&quot;&gt;&lt;/textarea&gt;
+     &lt;/form&gt;
+
+     // javascript code
+     new Form.Element.Resize({ elementId: &#39;message&#39; });
+
+DESCRIPTION
+    This nice class implement some methods for add a mouse-driven resize
+    feature on form fields such as text inputs, textareas and select
+    controls. Clicking and dragging the borders or the corners of the form
+    element will resize it while double clicking inside the element will
+    restore its original dimensions (this does not work with select elements
+    in Internet Explorer and Firefox).
+
+    Tested under Firefox 2, Internet Explorer 6/7, Opera 9.
+
+METHODS
+  new()
+    Class constructor, returns a new Form.Element.Resize object.
+
+   Parameters
+    oProps
+       Object literal where must be specified the element id on which
+       activate the resize feature and other optional properties that
+       overwrites the defaults.
+
+       Properties are:
+
+       &quot;elementId&quot;
+          ID of the element on which enable the resize feature. mandatory!
+
+       &quot;resizeType&quot;
+          Type of resize, shortcuts are auto, horizontal and vertical
+          (default is auto).
+
+          - auto: resizable borders and corners are set automatically
+          depending on the form element type. text input and non-multiple
+          select have only the right border draggable; textarea and multple
+          select have the right and bottom borders and the bottom-right
+          corner draggable.
+
+          - horizontal: all field types have only the right border
+          draggable.
+
+          - vertical: all field types have only the bottom border draggable.
+
+          It is also possible to specify each border/corner to activate by
+          passing an object literal with one or more of the following keys:
+
+          n, ne, e, se, s, sw, w, nw
+
+          All are initially disabled, so for example, to activate only the
+          bottom-right corner the property must be initialized like this:
+
+           new Form.Element.Resize({ elementId: &#39;message&#39;, resizeType: { se: 1 } });
+
+       &quot;containerId&quot;
+          ID of the generated container element, useful for add some CSS
+          rules on it.
+
+       &quot;containerClass&quot;
+          Class of the generated container element, useful for add some CSS
+          rules on it.
+
+EXAMPLES
+     &lt;!-- you can initialize the class within your XHTML page like this --&gt;
+     &amp;lt;form action=&quot;http://host.domain.tld/cgi-bin/script&quot;&gt;
+      &amp;lt;label for=&quot;message&quot;&gt;Message:&lt;/label&gt;&amp;lt;br /&gt;
+      &amp;lt;textarea id=&quot;message&quot; name=&quot;message&quot;&gt;&lt;/textarea&gt;
+      &amp;lt;script type=&quot;text/javascript&quot;&gt;new Form.Element.Resize({ elementId: &#39;message&#39;, containerClass: &#39;resizable&#39; });&lt;/script&gt;
+     &lt;/form&gt;
+
+     // or in a more unobtrusive way put the new in an included javascript file.
+     // be sure to call the new when the page is loaded!
+     // a cross-browser way may be this
+     if( document.addEventListener )
+     {
+         document.addEventListener(
+           &#39;load&#39;,
+           function() { new Form.Element.Resize({ elementId: &#39;message&#39;, containerClass: &#39;resizable&#39; }); },
+           false
+         );
+
+         return true;
+     }
+     else if( document.attachEvent )
+     {
+         return document.attachEvent(
+           &#39;onload&#39;,
+           function() { new Form.Element.Resize({ elementId: &#39;message&#39;, containerClass: &#39;resizable&#39; }); }
+         );
+     }
+
+SEE ALSO
+    Official web page at
+    &amp;lt;http://www.sabadelli.it/edoardo/projects/javascript/form.element.resize
+    &gt;
+
+    JSAN &amp;lt;http://openjsan.org/&gt;
+
+AUTHOR
+    Edoardo Sabadelli - &amp;lt;http://www.sabadelli.it/edoardo&gt;
+
+COPYRIGHT
+    Copyright (c) 2007 Edoardo Sabadelli. All rights reserved.
+
+    This module is free software; you can redistribute it and/or modify it
+    under the terms of the Artistic license.
+
+&lt;/pre></description>
+<dc:date>2007-02-27T12:59:05</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/k/ke/kevinj/Data/Dump/0.02">
+<title>Data.Dump-0.02</title>
+<link>http://openjsan.org/doc/k/ke/kevinj/Data/Dump/0.02</link>
+<description>&lt;pre>NAME
+    Data.Dump - Dump any variable as a string
+
+SYNOPSIS
+      var obj = new Object;
+      obj[&#39;key&#39;] = &#39;value&#39;;
+      obj[&#39;array&#39;] = new Array(&quot;one&quot;,&quot;two&quot;,&quot;three&quot;);
+
+      alert( Dump(obj) )
+
+DESCRIPTION
+    This module is an implemetation of the Data::Dump perl module in
+    JavaScript. It provides a &quot;Dump&quot; method which takes a series of
+    arguments and produces a string that can be later &quot;eval&quot;ed in order to
+    produce a deep copy of the original variables.
+
+BUGS
+    Dumping DOM elements will fail
+
+SEE ALSO
+    &quot;JSAN&quot;
+
+AUTHORS
+    The &quot;Data.Dump&quot; JavaScript module is written by Kevin Jones
+    &amp;lt;kevinj@cpan.org&gt;, based on &quot;Data::Dump&quot; by Gisle Aas &amp;lt;gisle@aas.no&gt;,
+    based on &quot;Data::Dumper&quot; by Gurusamy Sarathy &amp;lt;gsar@umich.edu&gt;.
+
+COPYRIGHT
+    Copyright 2007 Kevin Jones. Copyright 1998-2000,2003-2004 Gisle Aas.
+    Copyright 1996-1998 Gurusamy Sarathy.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the terms of the Perl Artistic License
+
+    See http://www.perl.com/perl/misc/Artistic.html
+
+&lt;/pre></description>
+<dc:date>2007-02-27T00:59:08</dc:date>
+</item>
+
+<item rdf:about="http://openjsan.org/doc/k/ke/kevinj/Data/Dump/0.02">
+<title>Data.Dump-0.02</title>
+<link>http://openjsan.org/doc/k/ke/kevinj/Data/Dump/0.02</link>
+<description>&lt;pre>NAME
+    Data.Dump - Dump any variable as a string
+
+SYNOPSIS
+      var obj = new Object;
+      obj[&#39;key&#39;] = &#39;value&#39;;
+      obj[&#39;array&#39;] = new Array(&quot;one&quot;,&quot;two&quot;,&quot;three&quot;);
+
+      alert( Dump(obj) )
+
+DESCRIPTION
+    This module is an implemetation of the Data::Dump perl module in
+    JavaScript. It provides a &quot;Dump&quot; method which takes a series of
+    arguments and produces a string that can be later &quot;eval&quot;ed in order to
+    produce a deep copy of the original variables.
+
+BUGS
+    Dumping DOM elements will fail
+
+SEE ALSO
+    &quot;JSAN&quot;
+
+AUTHORS
+    The &quot;Data.Dump&quot; JavaScript module is written by Kevin Jones
+    &amp;lt;kevinj@cpan.org&gt;, based on &quot;Data::Dump&quot; by Gisle Aas &amp;lt;gisle@aas.no&gt;,
+    based on &quot;Data::Dumper&quot; by Gurusamy Sarathy &amp;lt;gsar@umich.edu&gt;.
+
+COPYRIGHT
+    Copyright 2007 Kevin Jones. Copyright 1998-2000,2003-2004 Gisle Aas.
+    Copyright 1996-1998 Gurusamy Sarathy.
+
+    This program is free software; you can redistribute it and/or modify it
+    under the terms of the Perl Artistic License
+
+    See http://www.perl.com/perl/misc/Artistic.html
+
+&lt;/pre></description>
+<dc:date>2007-02-27T00:59:05</dc:date>
+</item>
+
+</rdf:RDF>

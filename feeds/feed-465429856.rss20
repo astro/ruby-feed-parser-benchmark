@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/rss2full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+<title>456 Berea Street</title>
+<link>http://www.456bereastreet.com/</link>
+<description>Roger Johansson is a web professional specialising in web standards, accessibility, and usability.</description>
+<dc:language>en</dc:language>
+<dc:date>2008-12-11T20:04:15+01:00</dc:date>
+<admin:generatorAgent rdf:resource="http://www.movabletype.org/?v=4.21-en" />
+
+<xhtml:meta xmlns:xhtml="http://www.w3.org/1999/xhtml" name="robots" content="noindex" /><meta xmlns="http://pipes.yahoo.com" name="pipes" content="noprocess" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://www.456bereastreet.com/feed.xml" type="application/rss+xml" /><item>
+<title>WCAG 2.0 finally a W3C Recommendation</title>
+<link>http://feeds.feedburner.com/~r/456bereastreet/~3/481928438/</link>
+<dc:creator>Roger Johansson</dc:creator>
+
+<category>Accessibility</category>
+
+<category>Web Standards</category>
+
+<guid isPermaLink="false">http://www.456bereastreet.com/archive/200812/wcag_20_finally_a_w3c_recommendation/</guid>
+
+<description>&lt;p class="preamble"&gt;Today the W3C announced that &lt;a href="http://www.w3.org/TR/WCAG20/"&gt;Web Content Accessibility Guidelines 2.0&lt;/a&gt; (WCAG) is now a W3C Recommendation. The announcement is available in &lt;a href="http://www.w3.org/News/2008#item210"&gt;W3C Web Standard Defines Accessibility for Next Generation Web&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It has taken a long, long time for WCAG 2.0 to reach this stage, but now the wait is over. If you’re still procrastinating like I was, stop it and start reading up on &lt;a href="http://www.456bereastreet.com/archive/200811/going_from_wcag_10_to_wcag_20/"&gt;Going from WCAG 1.0 to WCAG 2.0&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Lately I’ve been diving into WCAG 2.0 to learn what’s new and different from WCAG 1.0. I like that there are many examples of how to meet the guidelines as well as how &lt;strong&gt;not to&lt;/strong&gt; meet them. It’s good that the purpose of each guideline is explained and that there are examples of how not meeting a particular guideline can cause problems for people with disabilities.&lt;/p&gt;
+
+&lt;p&gt;WCAG 2.0 can still be improved, but I think it is a major step forward from WCAG 1.0.&lt;/p&gt;&lt;p&gt;Posted in &lt;a href="http://www.456bereastreet.com/archive/categories/accessibility/" rel="tag"&gt;Accessibility&lt;/a&gt;, &lt;a href="http://www.456bereastreet.com/archive/categories/web_standards/" rel="tag"&gt;Web Standards&lt;/a&gt;.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=ldu4o"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=ldu4o" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=OWwko"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=OWwko" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=1qR2O"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=1qR2O" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=LpVpo"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=LpVpo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/456bereastreet/~4/481928438" height="1" width="1"/&gt;</description>
+<dc:date>2008-12-11T20:04:15+01:00</dc:date>
+<feedburner:origLink>http://www.456bereastreet.com/archive/200812/wcag_20_finally_a_w3c_recommendation/</feedburner:origLink></item>
+
+<item>
+<title>Version control with Subversion on Mac OS X</title>
+<link>http://feeds.feedburner.com/~r/456bereastreet/~3/480883737/</link>
+<dc:creator>Roger Johansson</dc:creator>
+
+<category>Coding</category>
+
+<category>Productivity</category>
+
+<guid isPermaLink="false">http://www.456bereastreet.com/archive/200812/version_control_with_subversion_on_mac_os_x/</guid>
+
+<description>&lt;p class="preamble"&gt;We all know that we should back up our important data frequently. Many of us do. But backups don’t give you the fine-grained control of changes to source code that a &lt;a href="http://en.wikipedia.org/wiki/Version_control"&gt;version control&lt;/a&gt; system does.&lt;/p&gt;
+
+&lt;p&gt;For a long time (too long) I didn’t use version control at all. Well, unless you count manually duplicating files, which is far from a good solution. But I always felt that I really, really should be using version control. The problem was that I never got around to setting anything up since I thought I had to use a Subversion server, and my attempts at getting one up and running were unsuccessful.&lt;/p&gt;
+
+&lt;p&gt;It turns out that getting started with version control is much easier than I thought, at least as long as you don't need to be able to access your repositories remotely. Accessing repositories through your local file system eliminates the requirement for a separate version control server and lowers the barrier significantly. Too bad I didn’t know about this option earlier.&lt;/p&gt;
+
+&lt;p&gt;There are several version control systems available, but the one I use is the open source &lt;a href="http://subversion.tigris.org/"&gt;Subversion&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;Working remotely&lt;/h2&gt;
+
+&lt;p&gt;To enable everybody on your team to use the same repositories, which is kind of the point if you’re using version control in a team, you need to set up a server. You will probably also want to configure it to let people access it through the &lt;code&gt;svn&lt;/code&gt; or &lt;code&gt;http&lt;/code&gt; protocols.&lt;/p&gt;
+
+&lt;p&gt;How to set up a Subversion server and configure it properly is beyond the scope of this post (and beyond my knowledge), so please read &lt;a href="http://svnbook.red-bean.com/nightly/en/svn.serverconfig.html"&gt;Chapter 6. Server Configuration&lt;/a&gt; of the Subversion Book for details on that if you are interested.&lt;/p&gt;
+
+&lt;h2&gt;Working locally&lt;/h2&gt;
+
+&lt;p&gt;Sometimes you don’t need to be able to access your repositories remotely. Maybe you’re the only person working on a project or everybody on your team can access the repository server via &lt;code&gt;file://&lt;/code&gt;. If that's the case you can use file system repositories instead, which is easier for those of us who aren’t skilled server admins.&lt;/p&gt;
+
+&lt;p&gt;At my dayjob we have a Subversion server that allows us to connect remotely, but when I work on my personal projects, like this site, I use local repositories. Creating a local repository is very simple if you use a client that does it for you, such as Cornerstone and Versions.&lt;/p&gt;
+
+&lt;h2&gt;Choosing a Subversion client&lt;/h2&gt;
+
+&lt;p&gt;If you’re comfortable using command line tools you can either build Subversion yourself from the source code or download a binary package. There are various options available on the &lt;a href="http://subversion.tigris.org/getting.html"&gt;Getting Subversion&lt;/a&gt; page on the Subversion site. Another option is to download one of &lt;a href="http://homepage.mac.com/martinott/"&gt;Martin Ott’s Subversion packages&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Some people prefer working in a Terminal window, but I personally like using something that has a GUI, at least for version control. I feel that it gives me a much better overview.&lt;/p&gt;
+
+&lt;p&gt;The number of graphical Subversion clients to choose from used to be quite limited for us Mac OS X users, but over the last year or two a number of new options have been made available. These days there are many ways of communicating with a Subversion repository without using the command line.&lt;/p&gt;
+
+&lt;p&gt;Here are the standalone Subversion clients that I have tested:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="http://www.zennaware.com/cornerstone/"&gt;Cornerstone&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="http://www.lachoseinteractive.net/en/community/subversion/svnx/features/"&gt;svnX&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="http://www.versionsapp.com/"&gt;Versions&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="http://zigversion.com/"&gt;ZigVersion&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are several code editors that have integrated Subversion support. Some of them are:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href="http://macromates.com/"&gt;TextMate&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="http://www.panic.com/coda/"&gt;Coda&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href="http://www.barebones.com/products/bbedit/"&gt;BBEdit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Some of these applications use the command line Subversion client that is installed on your Mac, while others bundle Subversion so you never have to think about it.&lt;/p&gt;
+
+&lt;p&gt;I’m not going to review each application here. They all have their pros and cons, but my current favourite is Cornerstone. Try them out yourself and use what works best for you. There are trial versions of all these applications (except for svnX which is free) so you can try before you buy. If you don’t have the budget for a Subversion client right now, svnX does the job. Or you could use the integrated support in your code editor if you use TextMate, BBEdit, or Coda.&lt;/p&gt;
+
+&lt;h2&gt;Get started now&lt;/h2&gt;
+
+&lt;p&gt;In the end it is much more important that you do use some kind of version control than which client you use. In case you’re still feeling that all this version control stuff sounds difficult, perhaps reading &lt;a href="http://betterexplained.com/articles/a-visual-guide-to-version-control/"&gt;A Visual Guide to Version Control&lt;/a&gt; will make things clearer.&lt;/p&gt;
+
+&lt;p&gt;And finally, remember that even though using version control will help you recover from mistakes you make, you do need to remember to make backups of your Subversion repository.&lt;/p&gt;&lt;p&gt;Posted in &lt;a href="http://www.456bereastreet.com/archive/categories/coding/" rel="tag"&gt;Coding&lt;/a&gt;, &lt;a href="http://www.456bereastreet.com/archive/categories/productivity/" rel="tag"&gt;Productivity&lt;/a&gt;.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=SiDpo"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=SiDpo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=cWngo"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=cWngo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=VfRZO"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=VfRZO" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=f5wYo"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=f5wYo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/456bereastreet/~4/480883737" height="1" width="1"/&gt;</description>
+<dc:date>2008-12-10T20:25:09+01:00</dc:date>
+<feedburner:origLink>http://www.456bereastreet.com/archive/200812/version_control_with_subversion_on_mac_os_x/</feedburner:origLink></item>
+
+<item>
+<title>The id attribute’s value must be unique</title>
+<link>http://feeds.feedburner.com/~r/456bereastreet/~3/478769182/</link>
+<dc:creator>Roger Johansson</dc:creator>
+
+<category>(X)HTML</category>
+
+<category>Quick Tips</category>
+
+<guid isPermaLink="false">http://www.456bereastreet.com/archive/200812/the_id_attributes_value_must_be_unique/</guid>
+
+<description>&lt;p&gt;The &lt;a href="http://www.w3.org/TR/html4/struct/global.html#adef-id"&gt;&lt;code&gt;id&lt;/code&gt; attribute&lt;/a&gt; is used to give an HTML element a unique name. That name has several uses:&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;In &lt;a href="http://www.w3.org/TR/CSS21/selector.html#id-selectors"&gt;ID selectors&lt;/a&gt; in CSS&lt;/li&gt;
+	&lt;li&gt;Referencing the element with JavaScript through the &lt;a href="http://www.w3.org/TR/DOM-Level-2-Core/core.html#ID-getElBId"&gt;&lt;code&gt;getElementById&lt;/code&gt;&lt;/a&gt; DOM method&lt;/li&gt;
+	&lt;li&gt;Making the element an anchor which can be linked to with a &lt;a href="http://www.w3.org/TR/html4/intro/intro.html#fragment-uri"&gt;fragment identifier&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Associating a &lt;code&gt;label&lt;/code&gt; element with a form control via the &lt;a href="http://www.w3.org/TR/html4/interact/forms.html#adef-for"&gt;for attribute&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Specifying which header cell(s) that provide header information for a data cell via the &lt;a href="http://www.w3.org/TR/html4/struct/tables.html#adef-headers"&gt;headers attribute&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The value of each &lt;code&gt;id&lt;/code&gt; attribute &lt;strong&gt;must be unique&lt;/strong&gt; in a document. An easy way to check that your HTML document does not contain multiple occurrences of the same &lt;code&gt;id&lt;/code&gt; value is to run it through &lt;a href="http://validator.w3.org/"&gt;W3C’s HTML Validator&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This post is a Quick Tip. Background info is available in &lt;a href="http://www.456bereastreet.com/archive/200812/quick_tips_for_web_developers_and_web_designers/"&gt;Quick Tips for web developers and web designers&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Posted in &lt;a href="http://www.456bereastreet.com/archive/categories/xhtml/" rel="tag"&gt;(X)HTML&lt;/a&gt;, &lt;a href="http://www.456bereastreet.com/archive/categories/quick_tips/" rel="tag"&gt;Quick Tips&lt;/a&gt;.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=7MWBo"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=7MWBo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=2wNzo"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=2wNzo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=ESfyO"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=ESfyO" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=TzrAo"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=TzrAo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/456bereastreet/~4/478769182" height="1" width="1"/&gt;</description>
+<dc:date>2008-12-08T20:45:02+01:00</dc:date>
+<feedburner:origLink>http://www.456bereastreet.com/archive/200812/the_id_attributes_value_must_be_unique/</feedburner:origLink></item>
+
+<item>
+<title>Make Safari open targeted links in new tabs instead of new windows</title>
+<link>http://feeds.feedburner.com/~r/456bereastreet/~3/474979989/</link>
+<dc:creator>Roger Johansson</dc:creator>
+
+<category>Apple</category>
+
+<category>Browsers</category>
+
+<category>Usability</category>
+
+<guid isPermaLink="false">http://www.456bereastreet.com/archive/200812/make_safari_open_targeted_links_in_new_tabs_instead_of_new_windows/</guid>
+
+<description>&lt;p class="preamble"&gt;One of the things I find most annoying when browsing the web is when a link opens a new window. It completely disrupts my workflow when a new window pops up, especially when it does so without warning.&lt;/p&gt;
+
+&lt;p&gt;If you’re using Firefox this isn’t such a big problem anymore since it will open targeted links in a new tab instead, which is much more manageable and less intrusive.&lt;/p&gt;
+
+&lt;p&gt;For Safari, however, there is no such setting to be found when you look through its preferences window. But the setting does exist (at least in the Mac OS X version), though you have to use Terminal.app to enable it:&lt;/p&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Quit Safari&lt;/li&gt;
+	&lt;li&gt;Open Terminal.app&lt;/li&gt;
+	&lt;li&gt;Enter &lt;code&gt;defaults write com.apple.Safari TargetedClicksCreateTabs -bool true&lt;/code&gt; and press enter&lt;/li&gt;
+	&lt;li&gt;Open Safari&lt;/li&gt;
+	&lt;li&gt;Notice that links that used to open in a new window will now open in a new tab&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Much better.&lt;/p&gt;&lt;p&gt;Posted in &lt;a href="http://www.456bereastreet.com/archive/categories/apple/" rel="tag"&gt;Apple&lt;/a&gt;, &lt;a href="http://www.456bereastreet.com/archive/categories/browsers/" rel="tag"&gt;Browsers&lt;/a&gt;, &lt;a href="http://www.456bereastreet.com/archive/categories/usability/" rel="tag"&gt;Usability&lt;/a&gt;.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=F0Uao"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=F0Uao" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=6he0o"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=6he0o" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=py5EO"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=py5EO" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=NqmMo"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=NqmMo" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/456bereastreet/~4/474979989" height="1" width="1"/&gt;</description>
+<dc:date>2008-12-04T20:46:21+01:00</dc:date>
+<feedburner:origLink>http://www.456bereastreet.com/archive/200812/make_safari_open_targeted_links_in_new_tabs_instead_of_new_windows/</feedburner:origLink></item>
+
+<item>
+<title>Quick Tips for web developers and web designers</title>
+<link>http://feeds.feedburner.com/~r/456bereastreet/~3/472796418/</link>
+<dc:creator>Roger Johansson</dc:creator>
+
+<category>Accessibility</category>
+
+<category>Quick Tips</category>
+
+<category>Usability</category>
+
+<category>Web Standards</category>
+
+<guid isPermaLink="false">http://www.456bereastreet.com/archive/200812/quick_tips_for_web_developers_and_web_designers/</guid>
+
+<description>&lt;p class="preamble"&gt;I spend a fair amount of time doing quality assurance of websites. This includes reviewing code (HTML, CSS, JavaScript), reporting accessibility and usability issues, giving tips and advice, and so on.&lt;/p&gt;
+
+&lt;p&gt;In these reviews there are some things that keep coming up. A lot of them are pretty simple and basic things if you ask me. However, there are many people who make the same mistakes, so maybe those things aren’t that simple after all. Or maybe the problem is that they aren’t widely known.&lt;/p&gt;
+
+&lt;p&gt;In the hope that it will help some people out I am going to start a new category of posts here called “Quick Tips”. Each Quick Tip will focus on one of the issues that I come across while doing QA work, and will probably be anything from a sentence to a few paragraphs in length.&lt;/p&gt;
+
+&lt;p&gt;This is not meant to ridicule the mistakes or the people who make them. My sincere intention is to help people avoid making these mistakes in the first place by attempting to spread the knowledge.&lt;/p&gt;&lt;p&gt;Posted in &lt;a href="http://www.456bereastreet.com/archive/categories/accessibility/" rel="tag"&gt;Accessibility&lt;/a&gt;, &lt;a href="http://www.456bereastreet.com/archive/categories/quick_tips/" rel="tag"&gt;Quick Tips&lt;/a&gt;, &lt;a href="http://www.456bereastreet.com/archive/categories/usability/" rel="tag"&gt;Usability&lt;/a&gt;, &lt;a href="http://www.456bereastreet.com/archive/categories/web_standards/" rel="tag"&gt;Web Standards&lt;/a&gt;.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=g2lgo"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=g2lgo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=pB6ro"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=pB6ro" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=KGIqO"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=KGIqO" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=ZH6co"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=ZH6co" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/456bereastreet/~4/472796418" height="1" width="1"/&gt;</description>
+<dc:date>2008-12-02T20:28:08+01:00</dc:date>
+<feedburner:origLink>http://www.456bereastreet.com/archive/200812/quick_tips_for_web_developers_and_web_designers/</feedburner:origLink></item>
+
+<item>
+<title>Making Google Maps more accessible</title>
+<link>http://feeds.feedburner.com/~r/456bereastreet/~3/471445038/</link>
+<dc:creator>Roger Johansson</dc:creator>
+
+<category>Accessibility</category>
+
+<category>JavaScript</category>
+
+<guid isPermaLink="false">http://www.456bereastreet.com/archive/200812/making_google_maps_more_accessible/</guid>
+
+<description>&lt;p class="preamble"&gt;It has become very popular to use the &lt;a href="http://code.google.com/apis/maps/"&gt;Google Maps API&lt;/a&gt; to add maps to websites. While the maps work fine for most users, unfortunately Google Maps does not by default work without JavaScript – when there is no JavaScript support, you don’t get a map.&lt;/p&gt;
+
+&lt;p&gt;Fortunately it is quite easy (but not very common) to provide a fallback for users who do not have JavaScript enabled in their browser by using the &lt;a href="http://code.google.com/apis/maps/documentation/staticmaps/"&gt;Google Static Maps API&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The Google Static Maps API lets you embed a map as a plain image in various formats. The developers guide explains the many options you have when it comes to configuring the static maps.&lt;/p&gt;
+
+&lt;p&gt;So next time you use the Google Maps API to put a map on a website, take a couple of minutes to add a static fallback for users without JavaScript.&lt;/p&gt;
+
+&lt;p&gt;While we’re on the topic of making Google Maps work for more people, I recommend reading Patrick H. Lauke’s article on creating &lt;a href="http://dev.opera.com/articles/view/keyboard-accessible-google-maps/"&gt;Keyboard-accessible Google Maps&lt;/a&gt;. Making Google Maps usable without a mouse requires a bit of hacking, but the end result is well worth it.&lt;/p&gt;&lt;p&gt;Posted in &lt;a href="http://www.456bereastreet.com/archive/categories/accessibility/" rel="tag"&gt;Accessibility&lt;/a&gt;, &lt;a href="http://www.456bereastreet.com/archive/categories/javascript/" rel="tag"&gt;JavaScript&lt;/a&gt;.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=yEPIo"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=yEPIo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=9Oozo"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=9Oozo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=C0hnO"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=C0hnO" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=YyLso"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=YyLso" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/456bereastreet/~4/471445038" height="1" width="1"/&gt;</description>
+<dc:date>2008-12-01T17:12:25+01:00</dc:date>
+<feedburner:origLink>http://www.456bereastreet.com/archive/200812/making_google_maps_more_accessible/</feedburner:origLink></item>
+
+<item>
+<title>Make HTML messages readable in Apple Mail</title>
+<link>http://feeds.feedburner.com/~r/456bereastreet/~3/467569019/</link>
+<dc:creator>Roger Johansson</dc:creator>
+
+<category>Accessibility</category>
+
+<category>Apple</category>
+
+<category>Usability</category>
+
+<guid isPermaLink="false">http://www.456bereastreet.com/archive/200811/make_html_messages_readable_in_apple_mail/</guid>
+
+<description>&lt;p class="preamble"&gt;Long time readers may have noticed that I dislike receiving email in HTML format. It’s not primarily because HTML email uses HTML instead of plain text that I dislike it though.&lt;/p&gt;
+
+&lt;p&gt;No, the main reason is less ideological than that. I dislike HTML email simply because it is often very hard for me to read, since for some reason many HTML-formatted emails use extremely small font sizes.&lt;/p&gt;
+
+&lt;p&gt;Luckily there are workarounds. If you use Apple Mail like I do I know of two things you can do that will make HTML messages more readable.&lt;/p&gt;
+
+&lt;h2&gt;Force Apple Mail to display the plain text alternative if there is one&lt;/h2&gt;
+
+&lt;p&gt;I’ve been using this for years and can’t understand why it isn’t available in Mail’s GUI. Here’s what to do:&lt;/p&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Quit Mail.app&lt;/li&gt;
+	&lt;li&gt;Open Terminal.app&lt;/li&gt;
+	&lt;li&gt;Enter &lt;code&gt;defaults write com.apple.mail PreferPlainText -bool TRUE&lt;/code&gt; and press enter (toggle it back by changing &lt;code&gt;TRUE&lt;/code&gt; to &lt;code&gt;FALSE&lt;/code&gt;)&lt;/li&gt;
+	&lt;li&gt;Open Mail.app&lt;/li&gt;
+	&lt;li&gt;View an HTML message and marvel at the readable plain text&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The catch is that this only works for messages that actually contain a plain text alternative, which far from all HTML email does.&lt;/p&gt;
+
+&lt;h2&gt;Specify the minimum font size Apple Mail uses for HTML messages&lt;/h2&gt;
+
+&lt;p&gt;As a fallback for the messages that do not contain a plain text alternative it is useful to make sure that the text at least has a readable size:&lt;/p&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;Quit Mail.app&lt;/li&gt;
+	&lt;li&gt;Open Terminal.app&lt;/li&gt;
+	&lt;li&gt;Enter &lt;code&gt;defaults write com.apple.mail MinimumHTMLFontSize 13&lt;/code&gt; in the Terminal window and press enter&lt;/li&gt;
+	&lt;li&gt;Open Mail.app&lt;/li&gt;
+	&lt;li&gt;View an HTML message and marvel at the readable font size&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can change the font size to whatever suits your eyes.&lt;/p&gt;
+
+&lt;p&gt;Apply both of these and you should be able to read most of the HTML email that you receive.&lt;/p&gt;&lt;p&gt;Posted in &lt;a href="http://www.456bereastreet.com/archive/categories/accessibility/" rel="tag"&gt;Accessibility&lt;/a&gt;, &lt;a href="http://www.456bereastreet.com/archive/categories/apple/" rel="tag"&gt;Apple&lt;/a&gt;, &lt;a href="http://www.456bereastreet.com/archive/categories/usability/" rel="tag"&gt;Usability&lt;/a&gt;.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=AG9cn"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=AG9cn" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=00fIn"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=00fIn" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=cPiNN"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=cPiNN" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=NBWCn"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=NBWCn" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/456bereastreet/~4/467569019" height="1" width="1"/&gt;</description>
+<dc:date>2008-11-27T19:34:42+01:00</dc:date>
+<feedburner:origLink>http://www.456bereastreet.com/archive/200811/make_html_messages_readable_in_apple_mail/</feedburner:origLink></item>
+
+<item>
+<title>TextMate productivity tips</title>
+<link>http://feeds.feedburner.com/~r/456bereastreet/~3/465323273/</link>
+<dc:creator>Roger Johansson</dc:creator>
+
+<category>Coding</category>
+
+<category>Productivity</category>
+
+<guid isPermaLink="false">http://www.456bereastreet.com/archive/200811/textmate_productivity_tips/</guid>
+
+<description>&lt;p class="preamble"&gt;If you saw my post about the &lt;a href="http://www.456bereastreet.com/archive/200803/domassistant_bundle_for_textmate/"&gt;DOMAssistant bundle for TextMate&lt;/a&gt;, you will already know that my favourite coding tool at the moment is &lt;a href="http://macromates.com/"&gt;TextMate&lt;/a&gt;. If you missed that post, well, now you know.&lt;/p&gt;
+
+&lt;p&gt;For anyone who is new to TextMate or considering trying it out, I thought I’d share a few tips. These tips are nothing revolutionary for many Textmate users, but nevertheless they make my workdays a little easier. Several of these tips may not be all that obvious, so I hope you will find something new here.&lt;/p&gt;
+
+&lt;h2&gt;1. Insert close tag&lt;/h2&gt;
+
+&lt;p&gt;When editing an HTML document, press &lt;kbd&gt;Opt + Cmd + .&lt;/kbd&gt; to make TextMate automatically insert a closing tag for the element the cursor is inside.&lt;/p&gt;
+
+&lt;h2&gt;2. Move selection&lt;/h2&gt;
+
+&lt;p&gt;To move text that you have selected, hold down &lt;kbd&gt;Ctrl + Cmd&lt;/kbd&gt; and use the arrow keys to move the text up and down (or left and right). If you’re moving text up or down, make sure to select the entire last line or the line break will get left behind.&lt;/p&gt;
+
+&lt;h2&gt;3. Tab triggered snippets&lt;/h2&gt;
+
+&lt;p&gt;Type a few characters and hit the &lt;kbd&gt;tab&lt;/kbd&gt; key. Bam! TextMate inserts anything from a simple tag or method to an entire document. And if you’re not satisfied with the snippets that ship with TextMate you can add your own. Do you find yourself typing a similar pattern several times daily? Make a snippet out of it.&lt;/p&gt;
+
+&lt;h2&gt;4. Code completion&lt;/h2&gt;
+
+&lt;p&gt;Instead of typing every letter of every tag, attribute, method or variable, just type the first few letters and hit the &lt;kbd&gt;Esc&lt;/kbd&gt; key. TextMate will suggest a word for you. Not happy with the suggestion? Press &lt;kbd&gt;Esc&lt;/kbd&gt; again to get a new suggestion.&lt;/p&gt;
+
+&lt;h2&gt;5. Go to file&lt;/h2&gt;
+
+&lt;p&gt;While working on a project I often have many files open in TextMate. Moving between them by choosing a tab can be awkward when there are more open documents than fit in the tab bar. That’s when &lt;kbd&gt;Cmd + T&lt;/kbd&gt; is very handy. It opens the &lt;kbd&gt;Navigation - Go To File...&lt;/kbd&gt; dialog box, where you can either choose which file to work on or type a few letters that are part of the name of the file you are looking for.&lt;/p&gt;
+
+&lt;h2&gt;6. Wrap selection in open/close tag&lt;/h2&gt;
+
+&lt;p&gt;When you want to wrap some text in an HTML element, select the text and hit &lt;kbd&gt;Ctrl + Shift + W&lt;/kbd&gt;. TextMate will wrap the selection in a &lt;code&gt;p&lt;/code&gt; element. The element name in the opening tag is selected, so if you need a different element, just type it in and TextMate will change the closing tag as well.&lt;/p&gt;
+
+&lt;p&gt;Want to wrap multiple lines in separate elements, for instance to create list items? Select the lines and press &lt;kbd&gt;Ctrl + Shift + Cmd + W&lt;/kbd&gt; and TextMate wraps each line in a list element. Again, if you want a different element just type it and the &lt;code&gt;&amp;lt;li&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;/li&amp;gt;&lt;/code&gt; tags will be replaced.&lt;/p&gt;
+
+&lt;h2&gt;7. Move through text efficiently&lt;/h2&gt;
+
+&lt;p&gt;In TextMate and most other Mac applications, the modifier keys change how the arrow keys work when moving through text. Holding down the &lt;kbd&gt;Cmd&lt;/kbd&gt; key skips to the beginning or end of a line, and holding down the &lt;kbd&gt;Opt&lt;/kbd&gt; key will skip to the next “word”.&lt;/p&gt;
+
+&lt;p&gt;TextMate extends this by letting you use the &lt;kbd&gt;Ctrl&lt;/kbd&gt; key to skip to the next word &lt;strong&gt;or word separator&lt;/strong&gt;. That comes in very handy when you want to select part of a variable or method, since TextMate treats dashes (-), underscores (_) and case changes (like in CamelCase) as word separators.&lt;/p&gt;
+
+&lt;h2&gt;8. Wrap Word/Selection as Link&lt;/h2&gt;
+
+&lt;p&gt;When you need to link a piece of text, copy the URL, select the text you want to link, and press &lt;kbd&gt;Ctrl + Shift + L&lt;/kbd&gt;. TextMate will wrap the selection (or the next word if there is no selection) in a link, using whatever is in the clipboard for the value of the &lt;code&gt;href&lt;/code&gt; attribute.&lt;/p&gt;
+
+&lt;h2&gt;9. Delete whitespace, and &lt;strong&gt;only&lt;/strong&gt; whitespace&lt;/h2&gt;
+
+&lt;p&gt;When editing files I often find myself deleting whitespace between the opening and closing tags of elements. Holding the &lt;kbd&gt;option&lt;/kbd&gt; while pressing delete or backspace will remove all whitespace between the cursor and the next “word”. The catch is that TextMate will also remove the end or beginning of HTML tags this way, which is incredibly annoying. But using &lt;kbd&gt;Ctrl + Opt + Delete&lt;/kbd&gt; will delete all whitespace from the cursor until the next HTML tag without touching the tag.&lt;/p&gt;
+
+&lt;h2&gt;10. Create a project by dragging files onto TextMate&lt;/h2&gt;
+
+&lt;p&gt;When you want to work with several files that are related in some way it’s very handy to have them in a TextMate project. The quickest way to create a new project containing the files you need is to select the files in the Finder and drag them onto the TextMate icon in the dock. Remember to save the project file if you want to reopen it later.&lt;/p&gt;
+
+&lt;h2&gt;11. Indent and outdent text quickly&lt;/h2&gt;
+
+&lt;p&gt;Select the lines you want to indent or outdent, then press &lt;kbd&gt;Opt + Tab&lt;/kbd&gt; to indent them or &lt;kbd&gt;Shift + Opt + Tab&lt;/kbd&gt; to outdent them.&lt;/p&gt;
+
+&lt;h2&gt;12. Macros&lt;/h2&gt;
+
+&lt;p&gt;TextMate lets you create macros that combine multiple commands, which can be very useful. One macro that I use a lot when writing posts for this blog will turn a selected block of code into an ordered list with code elements and classes that match the indentation level.&lt;/p&gt;
+
+&lt;h2&gt;Just scratching the surface&lt;/h2&gt;
+
+&lt;p&gt;Those are just a few of the TextMate tricks I use every day. There are many, many more, and I’m sure most TextMate users would pick different favourites.&lt;/p&gt;&lt;p&gt;Posted in &lt;a href="http://www.456bereastreet.com/archive/categories/coding/" rel="tag"&gt;Coding&lt;/a&gt;, &lt;a href="http://www.456bereastreet.com/archive/categories/productivity/" rel="tag"&gt;Productivity&lt;/a&gt;.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=ppwJn"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=ppwJn" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=SWktn"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=SWktn" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=ydGeN"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=ydGeN" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=jvdxn"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=jvdxn" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/456bereastreet/~4/465323273" height="1" width="1"/&gt;</description>
+<dc:date>2008-11-25T19:47:27+01:00</dc:date>
+<feedburner:origLink>http://www.456bereastreet.com/archive/200811/textmate_productivity_tips/</feedburner:origLink></item>
+
+<item>
+<title>Dissecting the Web with Opera’s MAMA</title>
+<link>http://feeds.feedburner.com/~r/456bereastreet/~3/464172288/</link>
+<dc:creator>Roger Johansson</dc:creator>
+
+<category>Web Standards</category>
+
+<guid isPermaLink="false">http://www.456bereastreet.com/archive/200811/dissecting_the_web_with_operas_mama/</guid>
+
+<description>&lt;p class="preamble"&gt;The people at Opera have created a tool called &lt;strong&gt;MAMA&lt;/strong&gt;. MAMA is short for ”Metadata Analysis and Mining Application” and is used to gather a huge amount of data about the HTML, CSS, and JavaScript used on the Web.&lt;/p&gt;
+
+&lt;p&gt;Detailed information about MAMA’s findings is available in a series of (long) articles published on Opera Developer Community. I suggest you start by reading the introductory document titled, well, &lt;a href="http://dev.opera.com/articles/view/mama/"&gt;MAMA&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I doubt it will surprise anyone that the quality of the HTML used on the Web is – in general – very poor. For instance only 4.13% of the examined 3.5 million URLs passed validation.&lt;/p&gt;&lt;p&gt;Posted in &lt;a href="http://www.456bereastreet.com/archive/categories/web_standards/" rel="tag"&gt;Web Standards&lt;/a&gt;.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=IalFn"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=IalFn" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=9yw9n"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=9yw9n" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=oReHN"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=oReHN" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=xIUOn"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=xIUOn" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/456bereastreet/~4/464172288" height="1" width="1"/&gt;</description>
+<dc:date>2008-11-24T19:49:03+01:00</dc:date>
+<feedburner:origLink>http://www.456bereastreet.com/archive/200811/dissecting_the_web_with_operas_mama/</feedburner:origLink></item>
+
+<item>
+<title>The order of link pseudo-classes matters</title>
+<link>http://feeds.feedburner.com/~r/456bereastreet/~3/457532556/</link>
+<dc:creator>Roger Johansson</dc:creator>
+
+<category>CSS</category>
+
+<guid isPermaLink="false">http://www.456bereastreet.com/archive/200811/the_order_of_link_pseudo-classes_matters/</guid>
+
+<description>&lt;p class="preamble"&gt;Common knowledge to most who have been working with CSS for a few years, but perhaps not something that relative newcomers have come across yet: the order in which you define the different link states affects the end result.&lt;/p&gt;
+
+&lt;p&gt;I prefer the following order: &lt;code&gt;:link&lt;/code&gt;, &lt;code&gt;:visited&lt;/code&gt;, &lt;code&gt;:hover&lt;/code&gt;, &lt;code&gt;:focus&lt;/code&gt;, &lt;code&gt;:active&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Eric Meyer explains why the order matters and why he also prefers defining the states in this order in &lt;a href="http://meyerweb.com/eric/css/link-specificity.html"&gt;Link Specificity&lt;/a&gt;, &lt;a href="http://meyerweb.com/eric/thoughts/2007/06/04/ordering-the-link-states/"&gt;Ordering the Link States&lt;/a&gt;, and &lt;a href="http://meyerweb.com/eric/thoughts/2007/06/11/who-ordered-the-link-states/"&gt;Who Ordered the Link States?&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Posted in &lt;a href="http://www.456bereastreet.com/archive/categories/css/" rel="tag"&gt;CSS&lt;/a&gt;.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=coC1n"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=coC1n" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=EzR4n"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=EzR4n" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=kVaPN"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=kVaPN" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/456bereastreet?a=2rHPn"&gt;&lt;img src="http://feeds.feedburner.com/~f/456bereastreet?i=2rHPn" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/456bereastreet/~4/457532556" height="1" width="1"/&gt;</description>
+<dc:date>2008-11-18T20:35:44+01:00</dc:date>
+<feedburner:origLink>http://www.456bereastreet.com/archive/200811/the_order_of_link_pseudo-classes_matters/</feedburner:origLink></item>
+
+</channel>
+</rss>

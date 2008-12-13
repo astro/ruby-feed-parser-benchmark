@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?><!-- generator="b2evolution/2.4.5" -->
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:admin="http://webns.net/mvcb/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>devlog</title>
+		<link>http://devlog.waltercruz.com/</link>
+		<description>Desenvolvimento, software livre e intrigas</description>
+		<language>pt-BR</language>
+		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+		<admin:generatorAgent rdf:resource="http://b2evolution.net/?v=2.4.5"/>
+		<ttl>60</ttl>
+				<item>
+			<title>Notícias para quem usa mercurial</title>
+			<link>http://devlog.waltercruz.com/noticias-para-quem-usa-mercurial</link>
+			<pubDate>Thu, 11 Dec 2008 16:43:05 +0000</pubDate>			<dc:creator>Walter Cruz</dc:creator>
+			<category domain="main">Python</category>			<guid isPermaLink="false">1175@http://devlog.waltercruz.com/</guid>
+						<description>&lt;ul&gt;
+
+  &lt;li&gt;No dia 2 de dezembro foi lançada a nova versão do Mercurial, a 1.1. Entre as novidades, compatibilidade com Python 2.6, maior conformidade com o padrão WSGI e o suporte a rebase através de uma extensão. Mais informações nas &lt;a href=&quot;http://www.selenic.com/mercurial/wiki/index.cgi/WhatsNew#head-b1d1f9a535adb686d6e0a490e049261313f10d7d&quot;&gt;Notas de Lançamento&lt;/a&gt;.&lt;/li&gt;
+
+
+  &lt;li&gt;A ferramenta de buscas de código do google, o codesearch, ganhou suporte a repositórios no git e no mercurial no último dia 09. Agora é possível procurar lá coisas como do &lt;a href=&quot;http://www.google.com/codesearch?hl=en&amp;amp;lr=&amp;amp;q=class:nsCOMArrayEnumerator+package:hg.mozilla.org&amp;amp;sbtn=Search&quot;&gt;Mozilla&lt;/a&gt;, &lt;a href=&quot;http://www.google.com/codesearch?hl=en&amp;amp;lr=&amp;amp;q=java.util.concurrent+package:hg.openjdk.java.net&amp;amp;sbtn=Search&quot;&gt;JDK&lt;/a&gt; e &lt;a href=&quot;http://www.google.com/codesearch?hl=en&amp;amp;lr=&amp;amp;q=javax.swing.JFrame+package:netbeans.org&amp;amp;sbtn=Search&quot;&gt;NetBeans&lt;/a&gt;, que são três softwares cujo repositório de código é gerenciado pelo mercurial. Mais no &lt;a href=&quot;http://google-code-updates.blogspot.com/2008/12/increased-code-search-coverage-now-with.html&quot;&gt;Blog do Google Code&lt;/a&gt;.&lt;/li&gt;
+
+
+  &lt;li&gt;O &lt;a href=&quot;http://www.ohloh.net/forums/8/topics/319&quot;&gt;tópico do fórum do ohloh pedindo suporte ao mercurial&lt;/a&gt; é sempre movimentado. Nessa semana, começou um movimento espontâneo dos usuários, dizendo que fariam doações para que o mercurial fosse logo suportado pelo ohloh. Para a alegria dos usuários, &lt;a href=&quot;http://www.ohloh.net/accounts/robin&quot;&gt;Robin Luckey&lt;/a&gt; (um dos desenvolvedores do ohloh) apareceu na thread dizendo que nas próximas semanas ele vai trabalhar no código do ohloh para que o suporte a novos sistemas de controle de versão sejam adicionados de forma mais transparente.&lt;/li&gt;
+
+&lt;/ul&gt;
+
+&lt;p&gt;Boas notícias para quem usa o mercurial para gerenciar seus códigos fonte!&lt;/p&gt;</description>
+			<content:encoded><![CDATA[<ul>
+
+  <li>No dia 2 de dezembro foi lançada a nova versão do Mercurial, a 1.1. Entre as novidades, compatibilidade com Python 2.6, maior conformidade com o padrão WSGI e o suporte a rebase através de uma extensão. Mais informações nas <a href="http://www.selenic.com/mercurial/wiki/index.cgi/WhatsNew#head-b1d1f9a535adb686d6e0a490e049261313f10d7d">Notas de Lançamento</a>.</li>
+
+
+  <li>A ferramenta de buscas de código do google, o codesearch, ganhou suporte a repositórios no git e no mercurial no último dia 09. Agora é possível procurar lá coisas como do <a href="http://www.google.com/codesearch?hl=en&amp;lr=&amp;q=class:nsCOMArrayEnumerator+package:hg.mozilla.org&amp;sbtn=Search">Mozilla</a>, <a href="http://www.google.com/codesearch?hl=en&amp;lr=&amp;q=java.util.concurrent+package:hg.openjdk.java.net&amp;sbtn=Search">JDK</a> e <a href="http://www.google.com/codesearch?hl=en&amp;lr=&amp;q=javax.swing.JFrame+package:netbeans.org&amp;sbtn=Search">NetBeans</a>, que são três softwares cujo repositório de código é gerenciado pelo mercurial. Mais no <a href="http://google-code-updates.blogspot.com/2008/12/increased-code-search-coverage-now-with.html">Blog do Google Code</a>.</li>
+
+
+  <li>O <a href="http://www.ohloh.net/forums/8/topics/319">tópico do fórum do ohloh pedindo suporte ao mercurial</a> é sempre movimentado. Nessa semana, começou um movimento espontâneo dos usuários, dizendo que fariam doações para que o mercurial fosse logo suportado pelo ohloh. Para a alegria dos usuários, <a href="http://www.ohloh.net/accounts/robin">Robin Luckey</a> (um dos desenvolvedores do ohloh) apareceu na thread dizendo que nas próximas semanas ele vai trabalhar no código do ohloh para que o suporte a novos sistemas de controle de versão sejam adicionados de forma mais transparente.</li>
+
+</ul>
+
+<p>Boas notícias para quem usa o mercurial para gerenciar seus códigos fonte!</p>]]></content:encoded>
+								<comments>http://devlog.waltercruz.com/noticias-para-quem-usa-mercurial#comments</comments>
+		</item>
+				<item>
+			<title>Atualizações no Mundo Python</title>
+			<link>http://devlog.waltercruz.com/atualizacoes-no-mundo-python</link>
+			<pubDate>Wed, 26 Nov 2008 14:54:36 +0000</pubDate>			<dc:creator>Walter Cruz</dc:creator>
+			<category domain="main">Python</category>
+<category domain="alt">Django</category>
+<category domain="alt">Pylons</category>			<guid isPermaLink="false">1171@http://devlog.waltercruz.com/</guid>
+						<description>&lt;p&gt;Os últimos dias foram cheios de atualizações para os pythonistas &lt;img src=&quot;http://devlog.waltercruz.com/rsc/smilies/pidgin/smile.gif&quot; alt=&quot;&amp;#58;&amp;#41;&quot; class=&quot;middle&quot; /&gt; . Devido a um problema no empacotamento, 3 dias após o lançamento do Django 1.0.1, foi lançado o 1.0.2. Para quem usa o Google AppEngine, problema semelhante aconteceu: 3 dias após o lançamento do 1.1.6, saiu o 1.1.7 para corrigir &lt;a href=&quot;http://code.google.com/p/googleappengine/wiki/SdkReleaseNotes&quot;&gt;bugs de última hora&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;O Pylons se aproxima da versão 0.97 final, no última dia 24 saiu o Release Candidate 4, que eles esperam ser o último. A documentação atualizada você pode ver em &lt;a href=&quot;http://docs.pylonshq.com/&quot;&gt;http://docs.pylonshq.com/&lt;/a&gt; ou baixar em &lt;a href=&quot;http://pylonshq.com/download/0.9.7/Pylons.pdf&quot;&gt;PDF&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;O &lt;a href=&quot;http://techspot.zzzeek.org/&quot;&gt;Michael Bayer&lt;/a&gt; (SQLAlchemy, Mako), após usar o Beaker (middleware WSGI de Cache e Sessão) em produção, corrigiu muitos bugs nos caches em arquivo e memcached. Eu enviei um patch minúsculo que fez com que ele voltasse a funcionar com o Google AppEngine e tudo isso já está disponível na versão &lt;a href=&quot;http://pypi.python.org/pypi/Beaker/1.1.2&quot;&gt;1.1.2&lt;/a&gt;. Outro projeto que agora funciona melhor com o Google AppEngine é o FormEncode. A versão 1.1 tinha introduzido um pequeno problema com o Google AppEngine, que foi corrigido no &lt;a href=&quot;http://pypi.python.org/pypi/FormEncode/1.2&quot;&gt;FormEncode 1.2&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Ao colaborar com a tradução da documentação do Django para português, descobri um problema com o CSS, que depois acabou se revelando um &lt;a href=&quot;http://code.djangoproject.com/ticket/9645&quot;&gt;problema com a dupla docutils + Sphinx&lt;/a&gt;. Enquanto o bug era testado, saiu uma nova versão, o &lt;a href=&quot;http://sphinx.pocoo.org/changes.html#release-0-5-nov-23-2008-birthday-release&quot;&gt;Sphinx 0.5&lt;/a&gt;. O Sphinx se tornou muito popular na geração de documentação para projetos Python (a documentação do Pylons que eu citei agora a pouco é gerada com Sphinx).&lt;/p&gt;
+
+&lt;p&gt;É isso, hora de atualizar os virtualenvs da vida &lt;img src=&quot;http://devlog.waltercruz.com/rsc/smilies/pidgin/smile.gif&quot; alt=&quot;&amp;#58;&amp;#41;&quot; class=&quot;middle&quot; /&gt;&lt;/p&gt;</description>
+			<content:encoded><![CDATA[<p>Os últimos dias foram cheios de atualizações para os pythonistas <img src="http://devlog.waltercruz.com/rsc/smilies/pidgin/smile.gif" alt="&#58;&#41;" class="middle" /> . Devido a um problema no empacotamento, 3 dias após o lançamento do Django 1.0.1, foi lançado o 1.0.2. Para quem usa o Google AppEngine, problema semelhante aconteceu: 3 dias após o lançamento do 1.1.6, saiu o 1.1.7 para corrigir <a href="http://code.google.com/p/googleappengine/wiki/SdkReleaseNotes">bugs de última hora</a>.</p>
+
+<p>O Pylons se aproxima da versão 0.97 final, no última dia 24 saiu o Release Candidate 4, que eles esperam ser o último. A documentação atualizada você pode ver em <a href="http://docs.pylonshq.com/">http://docs.pylonshq.com/</a> ou baixar em <a href="http://pylonshq.com/download/0.9.7/Pylons.pdf">PDF</a>.</p>
+
+<p>O <a href="http://techspot.zzzeek.org/">Michael Bayer</a> (SQLAlchemy, Mako), após usar o Beaker (middleware WSGI de Cache e Sessão) em produção, corrigiu muitos bugs nos caches em arquivo e memcached. Eu enviei um patch minúsculo que fez com que ele voltasse a funcionar com o Google AppEngine e tudo isso já está disponível na versão <a href="http://pypi.python.org/pypi/Beaker/1.1.2">1.1.2</a>. Outro projeto que agora funciona melhor com o Google AppEngine é o FormEncode. A versão 1.1 tinha introduzido um pequeno problema com o Google AppEngine, que foi corrigido no <a href="http://pypi.python.org/pypi/FormEncode/1.2">FormEncode 1.2</a></p>
+
+<p>Ao colaborar com a tradução da documentação do Django para português, descobri um problema com o CSS, que depois acabou se revelando um <a href="http://code.djangoproject.com/ticket/9645">problema com a dupla docutils + Sphinx</a>. Enquanto o bug era testado, saiu uma nova versão, o <a href="http://sphinx.pocoo.org/changes.html#release-0-5-nov-23-2008-birthday-release">Sphinx 0.5</a>. O Sphinx se tornou muito popular na geração de documentação para projetos Python (a documentação do Pylons que eu citei agora a pouco é gerada com Sphinx).</p>
+
+<p>É isso, hora de atualizar os virtualenvs da vida <img src="http://devlog.waltercruz.com/rsc/smilies/pidgin/smile.gif" alt="&#58;&#41;" class="middle" /></p>]]></content:encoded>
+								<comments>http://devlog.waltercruz.com/atualizacoes-no-mundo-python#comments</comments>
+		</item>
+				<item>
+			<title>Django 1.0.2 - já!</title>
+			<link>http://devlog.waltercruz.com/django-1-0-2-ja</link>
+			<pubDate>Wed, 19 Nov 2008 15:32:24 +0000</pubDate>			<dc:creator>Walter Cruz</dc:creator>
+			<category domain="main">Python</category>
+<category domain="alt">Django</category>			<guid isPermaLink="false">1169@http://devlog.waltercruz.com/</guid>
+						<description>&lt;p&gt;&lt;a href=&quot;http://www.djangoproject.com/weblog/2008/nov/18/102/&quot;&gt;http://www.djangoproject.com/weblog/2008/nov/18/102/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Mal chegou o 1.0.1 e veio o 1.0.2. O que aconteceu foi que o empacotamento saiu errado, diretórios e arquivos faltando. Então, não perca o seu &lt;a href=&quot;http://www.djangoproject.com/download/&quot;&gt;download&lt;/a&gt; de vista, atualização recomendada para quem está com o 1.0 e o 1.0.1!&lt;/p&gt;</description>
+			<content:encoded><![CDATA[<p><a href="http://www.djangoproject.com/weblog/2008/nov/18/102/">http://www.djangoproject.com/weblog/2008/nov/18/102/</a></p><p>Mal chegou o 1.0.1 e veio o 1.0.2. O que aconteceu foi que o empacotamento saiu errado, diretórios e arquivos faltando. Então, não perca o seu <a href="http://www.djangoproject.com/download/">download</a> de vista, atualização recomendada para quem está com o 1.0 e o 1.0.1!</p>]]></content:encoded>
+								<comments>http://devlog.waltercruz.com/django-1-0-2-ja#comments</comments>
+		</item>
+				<item>
+			<title>Unified Planet Python</title>
+			<link>http://devlog.waltercruz.com/unified-planet-python</link>
+			<pubDate>Wed, 19 Nov 2008 14:58:45 +0000</pubDate>			<dc:creator>Walter Cruz</dc:creator>
+			<category domain="main">Python</category>
+<category domain="alt">web 2.0</category>
+<category domain="alt">Django</category>
+<category domain="alt">Pylons</category>			<guid isPermaLink="false">1168@http://devlog.waltercruz.com/</guid>
+						<description>&lt;p&gt;É curioso, existem dois planets python internacionais: o &lt;a href=&quot;http://planet.python.org/&quot;&gt;oficial&lt;/a&gt; e o não &lt;a href=&quot;http://www.planetpython.org/&quot;&gt;oficial&lt;/a&gt;. E alguns feed estão inscritos nos dois, então, se inscrever em ambos é certeza de conteúdo duplicado na sua vida já corrida. Mas graças ao &lt;a href=&quot;http://pipes.yahoo.com/pipes/&quot;&gt;Yahoo Pipes&lt;/a&gt;, é possível assinar o planeta unificado. E graças ao feedburner, vc tem isso numa URL fácil de lembrar: &lt;a href=&quot;http://feeds.feedburner.com/UnifiedPythonPlanet&quot;&gt;http://feeds.feedburner.com/UnifiedPythonPlanet&lt;/a&gt;. Ainda bem que por aqui temos apenas um &lt;a href=&quot;http://www.pythonbrasil.com.br/planet/&quot;&gt;planet python&lt;/a&gt; &lt;img src=&quot;http://devlog.waltercruz.com/rsc/smilies/pidgin/smile.gif&quot; alt=&quot;&amp;#58;&amp;#41;&quot; class=&quot;middle&quot; /&gt;&lt;/p&gt;</description>
+			<content:encoded><![CDATA[<p>É curioso, existem dois planets python internacionais: o <a href="http://planet.python.org/">oficial</a> e o não <a href="http://www.planetpython.org/">oficial</a>. E alguns feed estão inscritos nos dois, então, se inscrever em ambos é certeza de conteúdo duplicado na sua vida já corrida. Mas graças ao <a href="http://pipes.yahoo.com/pipes/">Yahoo Pipes</a>, é possível assinar o planeta unificado. E graças ao feedburner, vc tem isso numa URL fácil de lembrar: <a href="http://feeds.feedburner.com/UnifiedPythonPlanet">http://feeds.feedburner.com/UnifiedPythonPlanet</a>. Ainda bem que por aqui temos apenas um <a href="http://www.pythonbrasil.com.br/planet/">planet python</a> <img src="http://devlog.waltercruz.com/rsc/smilies/pidgin/smile.gif" alt="&#58;&#41;" class="middle" /></p>]]></content:encoded>
+								<comments>http://devlog.waltercruz.com/unified-planet-python#comments</comments>
+		</item>
+				<item>
+			<title>Django 1.0.1</title>
+			<link>http://devlog.waltercruz.com/django-1-0-1</link>
+			<pubDate>Sun, 16 Nov 2008 02:22:21 +0000</pubDate>			<dc:creator>Walter Cruz</dc:creator>
+			<category domain="alt">Python</category>
+<category domain="alt">Linguagens</category>
+<category domain="alt">Django</category>
+<category domain="main">Frameworks</category>			<guid isPermaLink="false">1166@http://devlog.waltercruz.com/</guid>
+						<description>&lt;p&gt;&lt;a href=&quot;http://www.djangoproject.com/weblog/2008/nov/15/101/&quot;&gt;http://www.djangoproject.com/weblog/2008/nov/15/101/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Foi &lt;a href=&quot;http://www.djangoproject.com/weblog/2008/nov/15/101/&quot;&gt;lançada hoje a versão 1.0.1 fo Django&lt;/a&gt;. Essa é uma versão com bugfixes para a 1.0 e o upgrade é recomendado para todos os usuários do Django 1.0.&lt;/p&gt;
+
+&lt;p&gt;Dentre as mudanças:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Melhor suporte ao Oracle&lt;/li&gt;
+  &lt;li&gt;Algumas correções no ORM do Django&lt;/li&gt;
+  &lt;li&gt;Correções no django.contrib.comments&lt;/li&gt;
+  &lt;li&gt;Melhorias na documentação e tradução&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.djangoproject.com/weblog/2008/nov/15/101/&quot;&gt;e mais!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+			<content:encoded><![CDATA[<p><a href="http://www.djangoproject.com/weblog/2008/nov/15/101/">http://www.djangoproject.com/weblog/2008/nov/15/101/</a></p><p>Foi <a href="http://www.djangoproject.com/weblog/2008/nov/15/101/">lançada hoje a versão 1.0.1 fo Django</a>. Essa é uma versão com bugfixes para a 1.0 e o upgrade é recomendado para todos os usuários do Django 1.0.</p>
+
+<p>Dentre as mudanças:</p>
+
+<ul>
+  <li>Melhor suporte ao Oracle</li>
+  <li>Algumas correções no ORM do Django</li>
+  <li>Correções no django.contrib.comments</li>
+  <li>Melhorias na documentação e tradução</li>
+  <li><a href="http://www.djangoproject.com/weblog/2008/nov/15/101/">e mais!</a></li>
+</ul>]]></content:encoded>
+								<comments>http://devlog.waltercruz.com/django-1-0-1#comments</comments>
+		</item>
+				<item>
+			<title>virtualenvwrapper</title>
+			<link>http://devlog.waltercruz.com/virtualenvwrapper</link>
+			<pubDate>Tue, 11 Nov 2008 17:41:00 +0000</pubDate>			<dc:creator>Walter Cruz</dc:creator>
+			<category domain="alt">Python</category>
+<category domain="main">Linguagens</category>			<guid isPermaLink="false">1165@http://devlog.waltercruz.com/</guid>
+						<description>&lt;p&gt;Todo desenvolvedor Python conhece (ou deveria conhecer!) o virtualenv. Para quem não conhece, um resumo: o virtualenv permite que você crie ambientes isolados para instalar os seus pacotes e executar o seu interpretador python buscando pacotes desse ambiente isolado. Por exemplo, você precisa instalar a versão de desenvolvimento de alguma biblioteca para testar algo, mas está comprometido com algo que foi desenvolvido usando a versão estável desse biblioteca. Uma alternativa é manter as duas versões em algum diretório e ficar adicionando o caminho delas ao interpretador Python antes de importá-las, mas garanto que logo você se cansará disso. Com o virtualenv, você poderia fazer o seguinte:&lt;/p&gt;
+
+&lt;div class=&quot;code&quot;&gt;&lt;div class=&quot;bash bash&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;cd&lt;/span&gt; ambiente&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;estavel&lt;br /&gt;
+&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;source&lt;/span&gt; bin&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;activate&lt;br /&gt;
+python sua_aplicacao_usando_a_biblioteca_estavel.py&lt;br /&gt;
+&lt;br /&gt;
+&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;cd&lt;/span&gt; ambiente&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;desenvolvimento&lt;br /&gt;
+&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;source&lt;/span&gt; bin&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;activate&lt;br /&gt;
+python sua_aplicacao_usando_a_biblioteca_de_desenvolvimento.py&lt;br /&gt;
+&lt;br /&gt;
+&amp;nbsp;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Para mais informações, eu sugiro a leitura do &lt;a href=&quot;http://pythonologia.org/2008/03/03/ambiente-isolado-para-python-com-virtualenv/&quot;&gt;post do Osvaldo sobre o assunto&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Para facilitar ainda mais o uso do virtualenv, Doug Hellmann criou uma série de scripts chamada virtualenvwrapper. Para instalar:&lt;/p&gt;
+
+&lt;div class=&quot;code&quot;&gt;&lt;div class=&quot;bash bash&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;br /&gt;
+&lt;br /&gt;
+easy-install virtualenvwrapper&lt;br /&gt;
+&amp;nbsp;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Isso irá criar no seu PATH o arquivo virtualenvwrapper_bashrc (aqui, ele ficou em /usr/bin/virtualenvwrapper_bashrc).&lt;br /&gt;
+Após isso, precisamos ativá-lo.&lt;/p&gt;
+
+&lt;div class=&quot;code&quot;&gt;&lt;div class=&quot;bash bash&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;br /&gt;
+&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;export&lt;/span&gt; &lt;span style=&quot;color: #007800;&quot;&gt;WORKON_HOME&lt;/span&gt;=&lt;span style=&quot;color: #007800;&quot;&gt;$HOME&lt;/span&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;.virtualenvs&lt;br /&gt;
+&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;source&lt;/span&gt; &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;usr&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;bin&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;virtualenvwrapper_bashrc&lt;br /&gt;
+&amp;nbsp;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Para tornar essas mudanças permanentes, adicione as duas linhas acima ao seu .bashrc.&lt;/p&gt;
+
+&lt;p&gt;Precisamos então criar o diretório $HOME/.virtualenvs, que será o nosso '$HOME' de virtualenvs.&lt;/p&gt;
+
+&lt;div class=&quot;code&quot;&gt;&lt;div class=&quot;bash bash&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;br /&gt;
+&lt;span style=&quot;color: #c20cb9; font-weight: bold;&quot;&gt;mkdir&lt;/span&gt; &lt;span style=&quot;color: #007800;&quot;&gt;$HOME&lt;/span&gt;&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;.virtualenvs&lt;br /&gt;
+&amp;nbsp;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Agora, podemos criar os ambientes!&lt;/p&gt;
+
+&lt;div class=&quot;code&quot;&gt;&lt;div class=&quot;bash bash&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;br /&gt;
+walter&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;@&lt;/span&gt;stark:~$ mkvirtualenv biblioteca_teste&lt;br /&gt;
+New python executable &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;in&lt;/span&gt; biblioteca_teste&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;bin&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;python&lt;br /&gt;
+Please &lt;span style=&quot;color: #c20cb9; font-weight: bold;&quot;&gt;make&lt;/span&gt; sure you remove any previous custom paths from your &lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;home&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;walter&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;/&lt;/span&gt;.pydistutils.cfg file.&lt;br /&gt;
+Installing setuptools............done.&lt;br /&gt;
+&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;&amp;#40;&lt;/span&gt;biblioteca_teste&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;&amp;#41;&lt;/span&gt;&lt;br /&gt;
+&amp;nbsp;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;O (biblioteca_teste) significa que estamos usando o ambiente criado.&lt;/p&gt;
+
+&lt;p&gt;Para listar os ambientes disponíveis:&lt;/p&gt;
+
+&lt;div class=&quot;code&quot;&gt;&lt;div class=&quot;bash bash&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;br /&gt;
+&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;&amp;#40;&lt;/span&gt;biblioteca_teste&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;&amp;#41;&lt;/span&gt;walter&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;@&lt;/span&gt;stark:~$ workon &lt;br /&gt;
+bagunca&lt;br /&gt;
+biblioteca_teste&lt;br /&gt;
+pylons&lt;br /&gt;
+&amp;nbsp;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Para trocar de ambiente:&lt;/p&gt;
+
+&lt;div class=&quot;code&quot;&gt;&lt;div class=&quot;bash bash&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;br /&gt;
+&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;&amp;#40;&lt;/span&gt;biblioteca_teste&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;&amp;#41;&lt;/span&gt;walter&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;@&lt;/span&gt;stark:~$ workon bagunca&lt;br /&gt;
+&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;&amp;#40;&lt;/span&gt;bagunca&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;&amp;#41;&lt;/span&gt;walter&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;@&lt;/span&gt;stark:~$ &lt;br /&gt;
+&amp;nbsp;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Apagando um ambiente:&lt;/p&gt;
+
+&lt;div class=&quot;code&quot;&gt;&lt;div class=&quot;bash bash&quot; style=&quot;font-family:monospace;&quot;&gt;&lt;br /&gt;
+&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;&amp;#40;&lt;/span&gt;bagunca&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;&amp;#41;&lt;/span&gt;walter&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;@&lt;/span&gt;stark:~$ rmvirtualenv biblioteca_teste&lt;br /&gt;
+&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;&amp;#40;&lt;/span&gt;bagunca&lt;span style=&quot;color: #7a0874; font-weight: bold;&quot;&gt;&amp;#41;&lt;/span&gt;walter&lt;span style=&quot;color: #000000; font-weight: bold;&quot;&gt;@&lt;/span&gt;stark:~$ workon &lt;br /&gt;
+bagunca&lt;br /&gt;
+pylons&lt;br /&gt;
+&amp;nbsp;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Mais sobre o virtualenvwrapper na &lt;a href=&quot;http://www.doughellmann.com/projects/virtualenvwrapper/&quot;&gt;página do projeto&lt;/a&gt;&lt;/p&gt;</description>
+			<content:encoded><![CDATA[<p>Todo desenvolvedor Python conhece (ou deveria conhecer!) o virtualenv. Para quem não conhece, um resumo: o virtualenv permite que você crie ambientes isolados para instalar os seus pacotes e executar o seu interpretador python buscando pacotes desse ambiente isolado. Por exemplo, você precisa instalar a versão de desenvolvimento de alguma biblioteca para testar algo, mas está comprometido com algo que foi desenvolvido usando a versão estável desse biblioteca. Uma alternativa é manter as duas versões em algum diretório e ficar adicionando o caminho delas ao interpretador Python antes de importá-las, mas garanto que logo você se cansará disso. Com o virtualenv, você poderia fazer o seguinte:</p>
+
+<div class="code"><div class="bash bash" style="font-family:monospace;"><br />
+<br />
+<span style="color: #7a0874; font-weight: bold;">cd</span> ambiente<span style="color: #000000; font-weight: bold;">/</span>estavel<br />
+<span style="color: #7a0874; font-weight: bold;">source</span> bin<span style="color: #000000; font-weight: bold;">/</span>activate<br />
+python sua_aplicacao_usando_a_biblioteca_estavel.py<br />
+<br />
+<span style="color: #7a0874; font-weight: bold;">cd</span> ambiente<span style="color: #000000; font-weight: bold;">/</span>desenvolvimento<br />
+<span style="color: #7a0874; font-weight: bold;">source</span> bin<span style="color: #000000; font-weight: bold;">/</span>activate<br />
+python sua_aplicacao_usando_a_biblioteca_de_desenvolvimento.py<br />
+<br />
+&nbsp;</div></div>
+
+<p>Para mais informações, eu sugiro a leitura do <a href="http://pythonologia.org/2008/03/03/ambiente-isolado-para-python-com-virtualenv/">post do Osvaldo sobre o assunto</a>.</p>
+
+<p>Para facilitar ainda mais o uso do virtualenv, Doug Hellmann criou uma série de scripts chamada virtualenvwrapper. Para instalar:</p>
+
+<div class="code"><div class="bash bash" style="font-family:monospace;"><br />
+<br />
+easy-install virtualenvwrapper<br />
+&nbsp;</div></div>
+
+<p>Isso irá criar no seu PATH o arquivo virtualenvwrapper_bashrc (aqui, ele ficou em /usr/bin/virtualenvwrapper_bashrc).<br />
+Após isso, precisamos ativá-lo.</p>
+
+<div class="code"><div class="bash bash" style="font-family:monospace;"><br />
+<span style="color: #7a0874; font-weight: bold;">export</span> <span style="color: #007800;">WORKON_HOME</span>=<span style="color: #007800;">$HOME</span><span style="color: #000000; font-weight: bold;">/</span>.virtualenvs<br />
+<span style="color: #7a0874; font-weight: bold;">source</span> <span style="color: #000000; font-weight: bold;">/</span>usr<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>virtualenvwrapper_bashrc<br />
+&nbsp;</div></div>
+
+<p>Para tornar essas mudanças permanentes, adicione as duas linhas acima ao seu .bashrc.</p>
+
+<p>Precisamos então criar o diretório $HOME/.virtualenvs, que será o nosso '$HOME' de virtualenvs.</p>
+
+<div class="code"><div class="bash bash" style="font-family:monospace;"><br />
+<span style="color: #c20cb9; font-weight: bold;">mkdir</span> <span style="color: #007800;">$HOME</span><span style="color: #000000; font-weight: bold;">/</span>.virtualenvs<br />
+&nbsp;</div></div>
+
+<p>Agora, podemos criar os ambientes!</p>
+
+<div class="code"><div class="bash bash" style="font-family:monospace;"><br />
+walter<span style="color: #000000; font-weight: bold;">@</span>stark:~$ mkvirtualenv biblioteca_teste<br />
+New python executable <span style="color: #000000; font-weight: bold;">in</span> biblioteca_teste<span style="color: #000000; font-weight: bold;">/</span>bin<span style="color: #000000; font-weight: bold;">/</span>python<br />
+Please <span style="color: #c20cb9; font-weight: bold;">make</span> sure you remove any previous custom paths from your <span style="color: #000000; font-weight: bold;">/</span>home<span style="color: #000000; font-weight: bold;">/</span>walter<span style="color: #000000; font-weight: bold;">/</span>.pydistutils.cfg file.<br />
+Installing setuptools............done.<br />
+<span style="color: #7a0874; font-weight: bold;">&#40;</span>biblioteca_teste<span style="color: #7a0874; font-weight: bold;">&#41;</span><br />
+&nbsp;</div></div>
+
+<p>O (biblioteca_teste) significa que estamos usando o ambiente criado.</p>
+
+<p>Para listar os ambientes disponíveis:</p>
+
+<div class="code"><div class="bash bash" style="font-family:monospace;"><br />
+<span style="color: #7a0874; font-weight: bold;">&#40;</span>biblioteca_teste<span style="color: #7a0874; font-weight: bold;">&#41;</span>walter<span style="color: #000000; font-weight: bold;">@</span>stark:~$ workon <br />
+bagunca<br />
+biblioteca_teste<br />
+pylons<br />
+&nbsp;</div></div>
+
+<p>Para trocar de ambiente:</p>
+
+<div class="code"><div class="bash bash" style="font-family:monospace;"><br />
+<span style="color: #7a0874; font-weight: bold;">&#40;</span>biblioteca_teste<span style="color: #7a0874; font-weight: bold;">&#41;</span>walter<span style="color: #000000; font-weight: bold;">@</span>stark:~$ workon bagunca<br />
+<span style="color: #7a0874; font-weight: bold;">&#40;</span>bagunca<span style="color: #7a0874; font-weight: bold;">&#41;</span>walter<span style="color: #000000; font-weight: bold;">@</span>stark:~$ <br />
+&nbsp;</div></div>
+
+<p>Apagando um ambiente:</p>
+
+<div class="code"><div class="bash bash" style="font-family:monospace;"><br />
+<span style="color: #7a0874; font-weight: bold;">&#40;</span>bagunca<span style="color: #7a0874; font-weight: bold;">&#41;</span>walter<span style="color: #000000; font-weight: bold;">@</span>stark:~$ rmvirtualenv biblioteca_teste<br />
+<span style="color: #7a0874; font-weight: bold;">&#40;</span>bagunca<span style="color: #7a0874; font-weight: bold;">&#41;</span>walter<span style="color: #000000; font-weight: bold;">@</span>stark:~$ workon <br />
+bagunca<br />
+pylons<br />
+&nbsp;</div></div>
+
+<p>Mais sobre o virtualenvwrapper na <a href="http://www.doughellmann.com/projects/virtualenvwrapper/">página do projeto</a></p>]]></content:encoded>
+								<comments>http://devlog.waltercruz.com/virtualenvwrapper#comments</comments>
+		</item>
+				<item>
+			<title>PostgreSQL em ... Lisp?</title>
+			<link>http://devlog.waltercruz.com/postgresql-lisp</link>
+			<pubDate>Mon, 20 Oct 2008 21:39:00 +0000</pubDate>			<dc:creator>Walter Cruz</dc:creator>
+			<category domain="main">Bancos de Dados</category>
+<category domain="alt">PostgreSQL</category>
+<category domain="alt">Lisp</category>			<guid isPermaLink="false">1159@http://devlog.waltercruz.com/</guid>
+						<description>&lt;p&gt;Não se assuste! Ninguém está pensando em fazer uma versão do PostgreSQL em Lisp! &lt;/p&gt;
+
+&lt;p&gt;Numa discussão recente na pg-hackers, alguém sugeriu que o PostgreSQL fosse re-implementado em C++ (atualmente o código está em C). Entre umas e outras (ironias) e mensagens de &lt;a href=&quot;http://www.postgresql.org/community/weeklynews/pwn20050401&quot;&gt;primeiro de abril&lt;/a&gt;, Tom Lane &lt;a href=&quot;http://archives.postgresql.org/pgsql-hackers/2008-09/msg01293.php&quot;&gt;apontou&lt;/a&gt; que o código original do Postgres tinha sido portado de outra linguagem, ainda em Berkeley:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I'm surprised no one pointed out that Postgres has *already* been ported to a new language once.  It was originally written in Lisp, and was rewritten in C sometime in the Berkeley years.  (Anyone know exactly when or by whom?  I don't.)  You can still see the effects of that origin in the system's liking for list-based data structures. &lt;/p&gt;
+
+&lt;p&gt;But the code base was an order of magnitude smaller and simpler back then, meaning that a fresh port would be at least an order of magnitude harder.  Like other respondents, I'm not seeing where we'd get benefits commensurate with the cost.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Interessante não?&lt;/p&gt;</description>
+			<content:encoded><![CDATA[<p>Não se assuste! Ninguém está pensando em fazer uma versão do PostgreSQL em Lisp! </p>
+
+<p>Numa discussão recente na pg-hackers, alguém sugeriu que o PostgreSQL fosse re-implementado em C++ (atualmente o código está em C). Entre umas e outras (ironias) e mensagens de <a href="http://www.postgresql.org/community/weeklynews/pwn20050401">primeiro de abril</a>, Tom Lane <a href="http://archives.postgresql.org/pgsql-hackers/2008-09/msg01293.php">apontou</a> que o código original do Postgres tinha sido portado de outra linguagem, ainda em Berkeley:</p>
+
+<blockquote>
+<p>I'm surprised no one pointed out that Postgres has *already* been ported to a new language once.  It was originally written in Lisp, and was rewritten in C sometime in the Berkeley years.  (Anyone know exactly when or by whom?  I don't.)  You can still see the effects of that origin in the system's liking for list-based data structures. </p>
+
+<p>But the code base was an order of magnitude smaller and simpler back then, meaning that a fresh port would be at least an order of magnitude harder.  Like other respondents, I'm not seeing where we'd get benefits commensurate with the cost.</p>
+</blockquote>
+
+<p>Interessante não?</p>]]></content:encoded>
+								<comments>http://devlog.waltercruz.com/postgresql-lisp#comments</comments>
+		</item>
+				<item>
+			<title>Evitando o alerta do gmail ao postar uma mensagem sem corpo</title>
+			<link>http://devlog.waltercruz.com/evitando-o-alerta-do-gmail-ao-postar-uma</link>
+			<pubDate>Thu, 16 Oct 2008 15:27:36 +0000</pubDate>			<dc:creator>Walter Cruz</dc:creator>
+			<category domain="main">Google</category>			<guid isPermaLink="false">1158@http://devlog.waltercruz.com/</guid>
+						<description>&lt;p&gt;&lt;a href=&quot;http://lifehacker.com/5064158/skip-gmails-body+less-message-prompt-using-eom&quot;&gt;http://lifehacker.com/5064158/skip-gmails-body+less-message-prompt-using-eom&lt;/a&gt;&lt;/p&gt;&lt;div&gt;&lt;div&gt;&lt;img src=&quot;http://devlog.waltercruz.com/media/blogs/devlog/./.evocache/gmail_confirm.png/fit-320x320.png&quot; alt=&quot;&quot; title=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;p&gt;Do &lt;a href=&quot;http://lifehacker.com&quot;&gt;Lifehacker&lt;/a&gt;, dica útil para quem, como eu, acaba mandando mensagens apenas com o título da mensagem, sem texto no corpo do e-mail: adicionar (EOM) na linha do assunto evita que o alerta seja mostrado. Ah, configurar uma assinatura pode ser uma forma simples de evitar isso!&lt;/p&gt;</description>
+			<content:encoded><![CDATA[<p><a href="http://lifehacker.com/5064158/skip-gmails-body+less-message-prompt-using-eom">http://lifehacker.com/5064158/skip-gmails-body+less-message-prompt-using-eom</a></p><div><div><img src="http://devlog.waltercruz.com/media/blogs/devlog/./.evocache/gmail_confirm.png/fit-320x320.png" alt="" title="" /></div></div><p>Do <a href="http://lifehacker.com">Lifehacker</a>, dica útil para quem, como eu, acaba mandando mensagens apenas com o título da mensagem, sem texto no corpo do e-mail: adicionar (EOM) na linha do assunto evita que o alerta seja mostrado. Ah, configurar uma assinatura pode ser uma forma simples de evitar isso!</p>]]></content:encoded>
+								<comments>http://devlog.waltercruz.com/evitando-o-alerta-do-gmail-ao-postar-uma#comments</comments>
+		</item>
+			</channel>
+</rss>

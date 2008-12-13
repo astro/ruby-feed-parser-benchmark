@@ -1,0 +1,2587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
+  <title>spatten design - blog</title>
+  <id>tag:spattendesign.com,2008:mephisto/blog</id>
+  <generator uri="http://mephistoblog.com" version="0.7.2">Mephisto Noh-Varr</generator>
+  <link href="http://spattendesign.com/feed/blog/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="http://spattendesign.com/blog" rel="alternate" type="text/html"/>
+  <updated>2008-05-17T14:36:37Z</updated>
+  <entry xml:base="http://spattendesign.com/">
+    <author>
+      <name>Scott</name>
+    </author>
+    <id>tag:spattendesign.com,2008-05-17:152</id>
+    <published>2008-05-17T14:35:00Z</published>
+    <updated>2008-05-17T14:36:37Z</updated>
+    <category term="blog"/>
+    <link href="http://spattendesign.com/2008/5/17/searching-beast-and-wordpress-from-a-rails-app" rel="alternate" type="text/html"/>
+    <title>Searching Beast and WordPress from a Rails app</title>
+<content type="html">
+            &lt;p&gt;I did some work for &lt;a href=&quot;http://ecolect.net&quot;&gt;ecolect&lt;/a&gt; recently, integrating search across their main site, a Beast forum and a WordPress blog.  It was pretty straightforward once I had it figured out, but I couldn&#8217;t find a walkthrough on the net.&lt;/p&gt;
+
+
+	&lt;p&gt;So, I decided to write one.&lt;/p&gt;
+
+
+	&lt;h2&gt;The Search Engine&lt;/h2&gt;
+
+
+	&lt;p&gt;Ecolect was already using &lt;a href=&quot;http://projects.jkraemer.net/acts_as_ferret/wiki&quot;&gt;acts_as_ferret&lt;/a&gt; for their main site search, so it was a no-brainer to keep using it.  For a fun and thorough introduction to &lt;code&gt;acts_as_ferret&lt;/code&gt;, see the &lt;a href=&quot;http://www.railsenvy.com/2007/2/19/acts-as-ferret-tutorial&quot;&gt;Rails Envy Tutorial&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;Searching the Beast Forum&lt;/h2&gt;
+
+
+	&lt;p&gt;(Note: the beast Forum search isn&#8217;t live at the moment as the Forums are not fully functioning yet.)&lt;/p&gt;
+
+
+	&lt;h3&gt;Beast setup&lt;/h3&gt;
+
+
+	&lt;p&gt;In Beast, each Forum has many Topics (saved in the topics table), and each Topic has many Posts (saved in the posts table).&lt;/p&gt;
+
+
+	&lt;p&gt;The Beast forum was set up by &lt;a href=&quot;http://shanti.railsblog.com/&quot;&gt;Shanti Braford&lt;/a&gt; as described in option #3 of this great article on &lt;a href=&quot;http://blog.aisleten.com/2007/07/04/integrating-beast-forum-into-a-ruby-on-rails-app-part-1/&quot;&gt;integrating a beast forum into a Rails app&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;In this setup, the Beast tables are added to the main site&#8217;s database.  So, the posts and topics tables that we want to search are already in the main site&#8217;s database.  This made things pretty easy: you can search the Beast forum just like you would any database table.&lt;/p&gt;
+
+
+	&lt;h3&gt;Searching a non-integrated Beast forum&lt;/h3&gt;
+
+
+	&lt;p&gt;If you don&#8217;t have the Beast tables integrated in to your main site&#8217;s database, you can still search them.  You just need to point the Topic and Post models to the correct database.  This is a two step process.&lt;/p&gt;
+
+
+	&lt;p&gt;First, set up a database entry for your Beast forum in &lt;code&gt;config/database.yml&lt;/code&gt;.  Something like this:&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;beast:&lt;tt&gt;
+&lt;/tt&gt;  adapter: mysql&lt;tt&gt;
+&lt;/tt&gt;  database: beast_forum&lt;tt&gt;
+&lt;/tt&gt;  username: app&lt;tt&gt;
+&lt;/tt&gt;  password: your_password&lt;tt&gt;
+&lt;/tt&gt;  host: localhost&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Then, in the bottom of &lt;code&gt;config/environment.rb&lt;/code&gt;, add the following lines:&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;co&quot;&gt;Post&lt;/span&gt;.establish_connection &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;beast_forum&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;co&quot;&gt;Topic&lt;/span&gt;.establish_connection &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;beast_forum&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;I haven&#8217;t actually tried this, so let me know if you get it working or if you needed to make any changes to what I&#8217;ve written here.&lt;/p&gt;
+
+
+	&lt;h3&gt;The Topic Model&lt;/h3&gt;
+
+
+	&lt;p&gt;Even with the integrated setup there were a few wrinkles.  First, although the Beast tables are in the database, there are no models associated with them.  I wanted to search post body and topic titles, so I created Topic and Post models.&lt;/p&gt;
+
+
+	&lt;p&gt;Here&#8217;s the Topic model.  It&#8217;s only here so that the Post model can search a posts&#8217;s titles, so there&#8217;s not much to it.&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;r&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;Topic&lt;/span&gt; &amp;lt; &lt;span class=&quot;co&quot;&gt;ActiveRecord&lt;/span&gt;::&lt;span class=&quot;co&quot;&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  has_many &lt;span class=&quot;sy&quot;&gt;:posts&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;h3&gt;The Post Model&lt;/h3&gt;
+
+
+	&lt;p&gt;The Post model is a bit more complicated.&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;20&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;21&lt;tt&gt;
+&lt;/tt&gt;22&lt;tt&gt;
+&lt;/tt&gt;23&lt;tt&gt;
+&lt;/tt&gt;24&lt;tt&gt;
+&lt;/tt&gt;25&lt;tt&gt;
+&lt;/tt&gt;26&lt;tt&gt;
+&lt;/tt&gt;27&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;r&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;Post&lt;/span&gt; &amp;lt; &lt;span class=&quot;co&quot;&gt;ActiveRecord&lt;/span&gt;::&lt;span class=&quot;co&quot;&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  belongs_to &lt;span class=&quot;sy&quot;&gt;:topic&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;co&quot;&gt;SEARCH_FIELDS&lt;/span&gt; = [&lt;span class=&quot;sy&quot;&gt;:scrubbed_body&lt;/span&gt;, &lt;span class=&quot;sy&quot;&gt;:topic_title&lt;/span&gt;]&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  acts_as_ferret &lt;span class=&quot;sy&quot;&gt;:fields&lt;/span&gt; =&amp;gt; { &lt;span class=&quot;sy&quot;&gt;:scrubbed_body&lt;/span&gt; =&amp;gt; {&lt;span class=&quot;sy&quot;&gt;:boost&lt;/span&gt; =&amp;gt; &lt;span class=&quot;i&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;sy&quot;&gt;:store&lt;/span&gt; =&amp;gt; &lt;span class=&quot;sy&quot;&gt;:yes&lt;/span&gt;}, &lt;tt&gt;
+&lt;/tt&gt;                              &lt;span class=&quot;sy&quot;&gt;:topic_title&lt;/span&gt; =&amp;gt; {&lt;span class=&quot;sy&quot;&gt;:boost&lt;/span&gt; =&amp;gt; &lt;span class=&quot;i&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;sy&quot;&gt;:store&lt;/span&gt; =&amp;gt; &lt;span class=&quot;sy&quot;&gt;:yes&lt;/span&gt;}}  &lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  extend &lt;span class=&quot;co&quot;&gt;FullTextSearch&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# remove the html tags from body&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;scrubbed_body&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    body_html.gsub(&lt;span class=&quot;rx&quot;&gt;&lt;span class=&quot;dl&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;ch&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;?[^&amp;gt;]*&amp;gt;&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;/&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;topic_title&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    topic.title&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# Construct the url to the post    &lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;url&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.join(&lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;http://forums.ecolect.net&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;forums&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, topic.forum_id.to_s, &lt;tt&gt;
+&lt;/tt&gt;              &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;topics&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, topic.id.to_s + &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;#post_&lt;/span&gt;&lt;span class=&quot;il&quot;&gt;&lt;span class=&quot;dl&quot;&gt;#{&lt;/span&gt;id&lt;span class=&quot;dl&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;h4&gt;acts_as_ferret&lt;/h4&gt;
+
+
+	&lt;p&gt;The &lt;code&gt;acts_as_ferret&lt;/code&gt; declaration makes the Post model searchable.  Notice that the actual fields being searched are not taken directly from the database; they are both manipulated in some way.  &lt;code&gt;acts_as_ferret&lt;/code&gt; doesn&#8217;t really care if the stuff it is indexing is coming directly from the database or from methods you have added to your model.&lt;/p&gt;
+
+
+	&lt;h4&gt;scrubbing the html tags&lt;/h4&gt;
+
+
+	&lt;p&gt;The post body is stored with &lt;span class=&quot;caps&quot;&gt;HTML&lt;/span&gt; tags in them, so I wanted to search and show the posts with tags scrubbed out of them.  This is done using the &lt;code&gt;Post#scrubbed_body&lt;/code&gt; method, which is just an ugly regexp that takes out anything between &amp;lt; and &amp;gt; signs.&lt;/p&gt;
+
+
+	&lt;h4&gt;the url method&lt;/h4&gt;
+
+
+	&lt;p&gt;I also wanted to link to the posts, so I created a &lt;code&gt;Post#url&lt;/code&gt; method which is used in the view.&lt;/p&gt;
+
+
+	&lt;p&gt;Finally, the actual search is done using the &lt;code&gt;FullTextSearch&lt;/code&gt; mixin, which adds a class method &lt;code&gt;Post::full_text_search&lt;/code&gt; to &lt;code&gt;Post&lt;/code&gt;.  The &lt;code&gt;FullTextSearch&lt;/code&gt; mixin is described in more detail below.&lt;/p&gt;
+
+
+	&lt;h2&gt;Searching the WordPress Blog&lt;/h2&gt;
+
+
+	&lt;p&gt;The only table from the WordPress Blog that you really care about is the &lt;code&gt;wp_post&lt;/code&gt; table.  To get access to it in your Rails app, make a &lt;code&gt;WpPost&lt;/code&gt; model and point it at your WordPress db.&lt;/p&gt;
+
+
+	&lt;p&gt;First, create a database entry in &lt;code&gt;config/database.yml&lt;/code&gt; that looks like this:&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;wordpress:&lt;tt&gt;
+&lt;/tt&gt;  adapter: mysql&lt;tt&gt;
+&lt;/tt&gt;  database: wordpress&lt;tt&gt;
+&lt;/tt&gt;  username: app&lt;tt&gt;
+&lt;/tt&gt;  password: your_password&lt;tt&gt;
+&lt;/tt&gt;  host: localhost&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+Then, add the following line to the bottom of &lt;code&gt;config/environment.rb&lt;/code&gt;
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;co&quot;&gt;WpPost&lt;/span&gt;.establish_connection &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;wordpress&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Here&#8217;s the model:&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;20&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;21&lt;tt&gt;
+&lt;/tt&gt;22&lt;tt&gt;
+&lt;/tt&gt;23&lt;tt&gt;
+&lt;/tt&gt;24&lt;tt&gt;
+&lt;/tt&gt;25&lt;tt&gt;
+&lt;/tt&gt;26&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;r&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;WpPost&lt;/span&gt; &amp;lt; &lt;span class=&quot;co&quot;&gt;ActiveRecord&lt;/span&gt;::&lt;span class=&quot;co&quot;&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  primary_key = &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;ID&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;co&quot;&gt;SEARCH_FIELDS&lt;/span&gt; = [&lt;span class=&quot;sy&quot;&gt;:scrubbed_title&lt;/span&gt;, &lt;span class=&quot;sy&quot;&gt;:scrubbed_content&lt;/span&gt;]&lt;tt&gt;
+&lt;/tt&gt;                   &lt;tt&gt;
+&lt;/tt&gt;  acts_as_ferret &lt;span class=&quot;sy&quot;&gt;:fields&lt;/span&gt; =&amp;gt; { &lt;span class=&quot;sy&quot;&gt;:scrubbed_title&lt;/span&gt; =&amp;gt; {&lt;span class=&quot;sy&quot;&gt;:boost&lt;/span&gt; =&amp;gt; &lt;span class=&quot;i&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;sy&quot;&gt;:store&lt;/span&gt; =&amp;gt; &lt;span class=&quot;sy&quot;&gt;:yes&lt;/span&gt;},&lt;tt&gt;
+&lt;/tt&gt;                              &lt;span class=&quot;sy&quot;&gt;:scrubbed_content&lt;/span&gt; =&amp;gt; {&lt;span class=&quot;sy&quot;&gt;:boost&lt;/span&gt; =&amp;gt; &lt;span class=&quot;i&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;sy&quot;&gt;:store&lt;/span&gt; =&amp;gt; &lt;span class=&quot;sy&quot;&gt;:yes&lt;/span&gt;}}&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  extend &lt;span class=&quot;co&quot;&gt;FullTextSearch&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;id&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    read_attribute(&lt;span class=&quot;sy&quot;&gt;:ID&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# title and content need to have the html tags removed from them, and should&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# only be searchable if the post has been assigned a url (the guid) and the post &lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# is actually a post and not an asset.&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;scrubbed_title&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;   post_title.gsub(&lt;span class=&quot;rx&quot;&gt;&lt;span class=&quot;dl&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;ch&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;?[^&amp;gt;]*&amp;gt;&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;/&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;) &lt;span class=&quot;r&quot;&gt;if&lt;/span&gt; post_type == &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;r&quot;&gt;and&lt;/span&gt; !guid.empty?&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;scrubbed_content&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    post_content.gsub(&lt;span class=&quot;rx&quot;&gt;&lt;span class=&quot;dl&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;ch&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;?[^&amp;gt;]*&amp;gt;&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;/&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;) &lt;span class=&quot;r&quot;&gt;if&lt;/span&gt; post_type == &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;r&quot;&gt;and&lt;/span&gt; !guid.empty?&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;There are a few things to note here:&lt;/p&gt;
+
+
+	&lt;p&gt;WordPress uses &lt;code&gt;ID&lt;/code&gt;, rather than &lt;code&gt;id&lt;/code&gt;, as its primary key.  The line &lt;code&gt;primary_key = &quot;ID&quot;&lt;/code&gt; lets Rails know about that.  You also need to add an &lt;code&gt;id&lt;/code&gt; method that returns &lt;code&gt;ID&lt;/code&gt; to get ferret indexing things properly.&lt;/p&gt;
+
+
+	&lt;p&gt;You will need to scrub the html tags from the content and title; that&#8217;s what the &lt;code&gt;scrubbed_title&lt;/code&gt; and &lt;code&gt;scrubbed_content&lt;/code&gt; methods do.&lt;/p&gt;
+
+
+Finally, you don&#8217;t want search results to index assets (which are stored in the wp_post model as well) or any un-published posts.  
+	&lt;ul&gt;
+	&lt;li&gt;Real posts will have a &lt;code&gt;post_type&lt;/code&gt; of &lt;code&gt;'post'&lt;/code&gt;.  &lt;/li&gt;
+		&lt;li&gt;An unpublished post won&#8217;t have its guid set.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;This is taken care of by only returning titles or content &lt;code&gt;if post_type == &quot;post&quot; and !guid.empty?&lt;/code&gt;.&lt;/p&gt;
+
+
+	&lt;h2&gt;The FullTextSearch mixin&lt;/h2&gt;
+
+
+	&lt;p&gt;This is based on code by &lt;a href=&quot;http://blog.zmok.net/articles/2006/10/18/full-text-search-in-ruby-on-rails-3-ferret&quot;&gt;Roman Mackovcak&#8217;s article on full text search in Rails&lt;/a&gt;.  All I did was extract the method he provides out in to a mixin so I could use it in multiple models.&lt;/p&gt;
+
+
+	&lt;p&gt;To use the mixin in a model, the model needs to define &lt;code&gt;SEARCH_FIELDS&lt;/code&gt; and have an &lt;code&gt;acts_as_ferret&lt;/code&gt;  declaration.  &lt;code&gt;SEARCH_FIELDS&lt;/code&gt; is an array of symbols giving the model fields to be searched.&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;20&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;21&lt;tt&gt;
+&lt;/tt&gt;22&lt;tt&gt;
+&lt;/tt&gt;23&lt;tt&gt;
+&lt;/tt&gt;24&lt;tt&gt;
+&lt;/tt&gt;25&lt;tt&gt;
+&lt;/tt&gt;26&lt;tt&gt;
+&lt;/tt&gt;27&lt;tt&gt;
+&lt;/tt&gt;28&lt;tt&gt;
+&lt;/tt&gt;29&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;30&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;31&lt;tt&gt;
+&lt;/tt&gt;32&lt;tt&gt;
+&lt;/tt&gt;33&lt;tt&gt;
+&lt;/tt&gt;34&lt;tt&gt;
+&lt;/tt&gt;35&lt;tt&gt;
+&lt;/tt&gt;36&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;r&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;FullTextSearch&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;##&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# FERRET SEARCH METHOD&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# This method requires that you set the following in the model:&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# SEARCH_FIELDS: &lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# a list of symbols giving the fields to be searched.&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# E.g., SEARCH_FIELDS = [:post_title, :post_content]&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;#&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# The acts_as_ferret declaration.  &lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# Use :store =&amp;gt; :yes for each field if you want to use highlighting for that field.&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# E.g., &lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# acts_as_ferret :fields =&amp;gt; { :post_title =&amp;gt; {:boost =&amp;gt; 3, :store =&amp;gt; :yes},&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;#                             :post_content =&amp;gt; {:boost =&amp;gt; 0, :store =&amp;gt; :yes}}&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;##&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;co&quot;&gt;DEFAULT_PER_PAGE&lt;/span&gt; = &lt;span class=&quot;i&quot;&gt;10&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;full_text_search&lt;/span&gt;(q, options = {})&lt;tt&gt;
+&lt;/tt&gt;     &lt;span class=&quot;r&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;pc&quot;&gt;nil&lt;/span&gt; &lt;span class=&quot;r&quot;&gt;if&lt;/span&gt; q.nil? || q == &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;     &lt;tt&gt;
+&lt;/tt&gt;     default_options = {&lt;span class=&quot;sy&quot;&gt;:limit&lt;/span&gt; =&amp;gt; &lt;span class=&quot;co&quot;&gt;FullTextSearch&lt;/span&gt;::&lt;span class=&quot;co&quot;&gt;DEFAULT_PER_PAGE&lt;/span&gt;, &lt;tt&gt;
+&lt;/tt&gt;                        &lt;span class=&quot;sy&quot;&gt;:page&lt;/span&gt; =&amp;gt; &lt;span class=&quot;i&quot;&gt;1&lt;/span&gt;, &lt;tt&gt;
+&lt;/tt&gt;                        &lt;span class=&quot;sy&quot;&gt;:lazy&lt;/span&gt; =&amp;gt; &lt;span class=&quot;pc&quot;&gt;self&lt;/span&gt;.const_get(&lt;span class=&quot;sy&quot;&gt;:SEARCH_FIELDS&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;                       }&lt;tt&gt;
+&lt;/tt&gt;     options = default_options.merge options&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;     &lt;span class=&quot;c&quot;&gt;# Get the offset based on what page we're on&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;     options[&lt;span class=&quot;sy&quot;&gt;:offset&lt;/span&gt;] = options[&lt;span class=&quot;sy&quot;&gt;:limit&lt;/span&gt;] * (options.delete(&lt;span class=&quot;sy&quot;&gt;:page&lt;/span&gt;).to_i&lt;span class=&quot;i&quot;&gt;-1&lt;/span&gt;)  &lt;tt&gt;
+&lt;/tt&gt;     &lt;span class=&quot;c&quot;&gt;# Now do the query with our options&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;     results = &lt;span class=&quot;pc&quot;&gt;self&lt;/span&gt;.find_by_contents(q, options)&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;     &lt;span class=&quot;r&quot;&gt;return&lt;/span&gt; [results.total_hits, results]&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+You use it like this:
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;co&quot;&gt;WpPost&lt;/span&gt;.full_text_search(&lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;co&quot;&gt;WpPost&lt;/span&gt;.full_text_search(&lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;sy&quot;&gt;:limit&lt;/span&gt; =&amp;gt; &lt;span class=&quot;i&quot;&gt;30&lt;/span&gt;, &lt;span class=&quot;sy&quot;&gt;:page&lt;/span&gt; =&amp;gt; &lt;span class=&quot;i&quot;&gt;2&lt;/span&gt;)&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+The &lt;code&gt;full_text_search&lt;/code&gt; method returns an array of length two.  The first value in the array is the number of search results, and the second value the actual search results.
+
+	&lt;h3&gt;Re-indexing the non-local models&lt;/h3&gt;
+
+
+	&lt;p&gt;As Ruben pointed out in the comments, I forgot to mention how I deal with re-indexing the WordPress and Beast database tables.  This is necessary as these tables have data that is modified by another application, so your Rails app doesn&#8217;t know that changes have been made to them.&lt;/p&gt;
+
+
+	&lt;p&gt;To deal with this, I wrote a simple Rake task that reindexes the &lt;code&gt;WpPost&lt;/code&gt;, &lt;code&gt;WpArticle&lt;/code&gt; and &lt;code&gt;Post&lt;/code&gt; models, and then added a line to the &lt;code&gt;crontab&lt;/code&gt; to run it hourly.  Here&#8217;s the rake file, which I put in &lt;code&gt;RAILS_ROOT/lib/tasks/ferret.rake&lt;/code&gt;:&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;namespace &lt;span class=&quot;sy&quot;&gt;:ferret&lt;/span&gt; &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  desc &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;rebuild the non-local Ferret indices, as these need to be done manually.&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  task &lt;span class=&quot;sy&quot;&gt;:rebuild_nonlocal_indices&lt;/span&gt; =&amp;gt; &lt;span class=&quot;sy&quot;&gt;:environment&lt;/span&gt; &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    [&lt;span class=&quot;co&quot;&gt;WpPost&lt;/span&gt;, &lt;span class=&quot;co&quot;&gt;WpArticle&lt;/span&gt;, &lt;span class=&quot;co&quot;&gt;Post&lt;/span&gt;].each &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt; |model|&lt;tt&gt;
+&lt;/tt&gt;      puts &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;rebuilding &lt;/span&gt;&lt;span class=&quot;il&quot;&gt;&lt;span class=&quot;dl&quot;&gt;#{&lt;/span&gt;model&lt;span class=&quot;dl&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt; index&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      model.rebuild_index&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;    &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;and, for posterity, here&#8217;s the crontab line:&lt;/p&gt;
+
+
+&lt;pre&gt;
+20 * * * *  cd &amp;lt;rails_root&amp;gt; &#38;&#38; /usr/local/bin/rake ferret:rebuild_nonlocal_indices &amp;gt;&amp;gt; &amp;lt;log_directory&amp;gt;/ferret_reindex.log  2&amp;gt;&#38;1
+&lt;/pre&gt;
+          </content>  </entry>
+  <entry xml:base="http://spattendesign.com/">
+    <author>
+      <name>Scott</name>
+    </author>
+    <id>tag:spattendesign.com,2008-01-27:124</id>
+    <published>2008-01-27T05:02:00Z</published>
+    <updated>2008-01-27T05:02:57Z</updated>
+    <category term="blog"/>
+    <link href="http://spattendesign.com/2008/1/27/rubyize-this-live-in-vancouver-refactoring-3" rel="alternate" type="text/html"/>
+    <title>Rubyize This: Live in Vancouver.  Refactoring #3</title>
+<content type="html">
+            &lt;p&gt;Here&#8217;s the final refactoring from the Rubyize This workshop.  See the &lt;a href=&quot;http://spattendesign.com/2008/1/27/rubyize-this-live-in-vancouver&quot;&gt;first refactoring&lt;/a&gt; for an explanation of what&#8217;s going on and why this code is so darn ugly!  The &lt;a href=&quot;http://spattendesign.com/2008/1/27/rubyize-this-live-in-vancouver-refactoring-2&quot;&gt;second refactoring&lt;/a&gt; is worth checking out as well.&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;20&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;21&lt;tt&gt;
+&lt;/tt&gt;22&lt;tt&gt;
+&lt;/tt&gt;23&lt;tt&gt;
+&lt;/tt&gt;24&lt;tt&gt;
+&lt;/tt&gt;25&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/env ruby&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;delete_large_files&lt;/span&gt;(directory, max_size)&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# Make sure directory ends in a slash&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;if&lt;/span&gt; directory !~ &lt;span class=&quot;rx&quot;&gt;&lt;span class=&quot;dl&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;ch&quot;&gt;\/&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;/&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    directory += &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# Find all of the files in the directory &lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  files = &lt;span class=&quot;co&quot;&gt;Dir&lt;/span&gt;.glob(directory + &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# Delete all files with size larger than max_size&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;for&lt;/span&gt; file &lt;span class=&quot;r&quot;&gt;in&lt;/span&gt; files&lt;tt&gt;
+&lt;/tt&gt;    size = &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.size(file)&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;r&quot;&gt;if&lt;/span&gt; size &amp;gt;= max_size&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.delete(file)&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;max_size = &lt;span class=&quot;i&quot;&gt;1024&lt;/span&gt; * &lt;span class=&quot;i&quot;&gt;50&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# 50 kb&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;directory = &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;./files_to_delete&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;delete_large_files(directory, max_size)&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;This was the final refactoring, and the end of the conference, so we sort of ran out of time.&lt;/p&gt;
+
+
+	&lt;p&gt;I didn&#8217;t get a change to show off my solution.  Here it is.&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;delete_large_files&lt;/span&gt;(dir, max_size)&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  files_to_delete = &lt;span class=&quot;co&quot;&gt;Dir&lt;/span&gt;.glob(&lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.join(dir, &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;)).select &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt; |file|&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.size(file) &amp;gt; max_size&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.delete(*files_to_delete)&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;What&#8217;s going on with that &lt;code&gt;File.delete&lt;/code&gt; call?&lt;/p&gt;
+
+
+	&lt;p&gt;First, &lt;code&gt;File.delete&lt;/code&gt; takes multiple arguments and deletes all of them.&lt;/p&gt;
+
+
+	&lt;p&gt;Second, I used the asterisk operator.  From &lt;a href=&quot;http://en.wikibooks.org/wiki/Ruby_Programming/Syntax/Method_Calls&quot;&gt;here&lt;/a&gt;:&lt;/p&gt;
+
+
+	&lt;blockquote&gt;
+		&lt;p&gt;&#8220;The asterisk operator may also precede an Array argument in a method call. In this case the Array will be expanded and the values passed in as if they were separated by commas.&#8221;&lt;/p&gt;
+	&lt;/blockquote&gt;
+
+
+	&lt;p&gt;I don&#8217;t think I&#8217;ve every actually used the asterisk operator in production code, but it sure came in handy here.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://spattendesign.com/">
+    <author>
+      <name>Scott</name>
+    </author>
+    <id>tag:spattendesign.com,2008-01-27:122</id>
+    <published>2008-01-27T04:54:00Z</published>
+    <updated>2008-01-29T17:23:04Z</updated>
+    <category term="blog"/>
+    <link href="http://spattendesign.com/2008/1/27/rubyize-this-live-in-vancouver-refactoring-2" rel="alternate" type="text/html"/>
+    <title>Rubyize This: Live in Vancouver.  Refactoring #2</title>
+<content type="html">
+            &lt;p&gt;Here&#8217;s the second refactoring from the Rubyize This workshop.  See the &lt;a href=&quot;http://spattendesign.com/2008/1/27/rubyize-this-live-in-vancouver&quot;&gt;first refactoring&lt;/a&gt; for an explanation of what&#8217;s going on and why this code is so darn ugly!  Don&#8217;t forget to check out the  &lt;a href=&quot;http://spattendesign.com/2008/1/27/rubyize-this-live-in-vancouver-refactoring-3&quot;&gt;third and final refactoring&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;This script loads the file full of random numbers from &lt;a href=&quot;http://spattendesign.com/2008/1/27/rubyize-this-live-in-vancouver&quot;&gt;the first refactoring&lt;/a&gt; and makes a beautiful ascii-art histogram from it.&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;20&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;21&lt;tt&gt;
+&lt;/tt&gt;22&lt;tt&gt;
+&lt;/tt&gt;23&lt;tt&gt;
+&lt;/tt&gt;24&lt;tt&gt;
+&lt;/tt&gt;25&lt;tt&gt;
+&lt;/tt&gt;26&lt;tt&gt;
+&lt;/tt&gt;27&lt;tt&gt;
+&lt;/tt&gt;28&lt;tt&gt;
+&lt;/tt&gt;29&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;30&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;31&lt;tt&gt;
+&lt;/tt&gt;32&lt;tt&gt;
+&lt;/tt&gt;33&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/env ruby&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;require &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pp&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;co&quot;&gt;BIG_NUMBER&lt;/span&gt; = &lt;span class=&quot;i&quot;&gt;32768&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;c&quot;&gt;# Get data from a file, turn it in to a float, and find the max&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;data = &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.readlines(&lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;random.txt&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;max = -&lt;span class=&quot;co&quot;&gt;BIG_NUMBER&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;for&lt;/span&gt; n &lt;span class=&quot;r&quot;&gt;in&lt;/span&gt; (&lt;span class=&quot;i&quot;&gt;0&lt;/span&gt; ... data.length)&lt;tt&gt;
+&lt;/tt&gt;  data[n] = data[n].chomp.to_f&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;if&lt;/span&gt; data[n] &amp;gt; max&lt;tt&gt;
+&lt;/tt&gt;    max = data[n].to_i + &lt;span class=&quot;i&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# max is ceil(max(data[n]))&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;c&quot;&gt;# Create the empty histogram&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;histogram = []&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;for&lt;/span&gt; n &lt;span class=&quot;r&quot;&gt;in&lt;/span&gt; (&lt;span class=&quot;i&quot;&gt;0&lt;/span&gt; .. max)&lt;tt&gt;
+&lt;/tt&gt;  histogram.push(&lt;span class=&quot;i&quot;&gt;0&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;c&quot;&gt;# Fill the histogram&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;for&lt;/span&gt; n &lt;span class=&quot;r&quot;&gt;in&lt;/span&gt; (&lt;span class=&quot;i&quot;&gt;0&lt;/span&gt; ... data.length)&lt;tt&gt;
+&lt;/tt&gt;  histogram[data[n].to_i] += &lt;span class=&quot;i&quot;&gt;1&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;c&quot;&gt;# Print the histogram&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;pp histogram&lt;tt&gt;
+&lt;/tt&gt;puts&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;for&lt;/span&gt; n &lt;span class=&quot;r&quot;&gt;in&lt;/span&gt; (&lt;span class=&quot;i&quot;&gt;0&lt;/span&gt; .. max)&lt;tt&gt;
+&lt;/tt&gt;  puts &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; * histogram[n]&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Here&#8217;s a very concise one-liner from the crowd:&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;i&quot;&gt;0&lt;/span&gt;.upto((data=&lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.readlines(&lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;random.txt&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;).collect {|e| e.chomp!.to_f}).max.to_i) {|i| puts i.to_s + &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt; &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; + data.select{|a| a==i}.size.to_s}&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Here&#8217;s &lt;a href=&quot;http://exortech.com/blog/&quot;&gt;Owen&#8217;s&lt;/a&gt; refactoring:&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;require &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pp&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;tt&gt;
+&lt;/tt&gt;histogram = [] &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.readlines(&lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;random.txt&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;).each &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt; |value| &lt;tt&gt;
+&lt;/tt&gt;  i = value.chomp.to_i &lt;tt&gt;
+&lt;/tt&gt;  histogram[i] ||= &lt;span class=&quot;i&quot;&gt;0&lt;/span&gt; &lt;tt&gt;
+&lt;/tt&gt;  histogram[i] += &lt;span class=&quot;i&quot;&gt;1&lt;/span&gt; &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt; &lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;c&quot;&gt;# Print the histogram &lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;pp histogram &lt;tt&gt;
+&lt;/tt&gt;puts &lt;tt&gt;
+&lt;/tt&gt;histogram.each { | v | puts &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; * v }&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Here&#8217;s &lt;a href=&quot;http://timestream.net/nonsequitur&quot;&gt;Sam Livingstone Gray&#8217;s&lt;/a&gt; refactoring&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;20&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;21&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/env ruby&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;require &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pp&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;c&quot;&gt;# Get data from a file, turn it in to a float, and find the max&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;module&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;Enumerable&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;value_counts&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    h = &lt;span class=&quot;co&quot;&gt;Hash&lt;/span&gt;.new(&lt;span class=&quot;i&quot;&gt;0&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;    each { |e| h[e] += &lt;span class=&quot;i&quot;&gt;1&lt;/span&gt; } &lt;tt&gt;
+&lt;/tt&gt;    h&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;lines = &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.readlines(&lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;random.txt&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;histogram = lines.map { |line| line.chomp.to_i }.value_counts&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;c&quot;&gt;# Print the histogram&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;pp histogram&lt;tt&gt;
+&lt;/tt&gt;puts&lt;tt&gt;
+&lt;/tt&gt;histogram.keys.sort.each { |n| puts &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt; * histogram[n] }&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;I really like this one.  Sam created a simple extension to Enumerable that I can see using over and over again.&lt;/p&gt;
+
+
+	&lt;p&gt;Here&#8217;s what I came up with, with some debugging help from the group&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/env ruby&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;require &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;pp&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;data = &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.readlines(&lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;random.txt&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;).collect {|datum| datum.chomp.to_f}&lt;tt&gt;
+&lt;/tt&gt;max = data.max&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;histogram = data.inject([&lt;span class=&quot;i&quot;&gt;0&lt;/span&gt;] * (max + &lt;span class=&quot;i&quot;&gt;1&lt;/span&gt;)) &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt; |histogram, datum|&lt;tt&gt;
+&lt;/tt&gt;  histogram[datum.to_i] += &lt;span class=&quot;i&quot;&gt;1&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  histogram&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;pp histogram&lt;tt&gt;
+&lt;/tt&gt;histogram.each &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt; |bucket|&lt;tt&gt;
+&lt;/tt&gt;  puts &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; * bucket&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+          </content>  </entry>
+  <entry xml:base="http://spattendesign.com/">
+    <author>
+      <name>Scott</name>
+    </author>
+    <id>tag:spattendesign.com,2008-01-27:121</id>
+    <published>2008-01-27T00:11:00Z</published>
+    <updated>2008-01-29T17:27:28Z</updated>
+    <category term="blog"/>
+    <link href="http://spattendesign.com/2008/1/27/rubyize-this-live-in-vancouver" rel="alternate" type="text/html"/>
+    <title>Rubyize this: Live in Vancouver.  Refactoring #1.</title>
+<content type="html">
+            &lt;p&gt;At &lt;a href=&quot;rubycamp.wordpress.com&quot;&gt;rubycamp&lt;/a&gt; today, I ran a little &lt;a href=&quot;http://rubycamp.wordpress.com/2008/01/01/rubyizethis/&quot;&gt;Rubyize This&lt;/a&gt; workshop.  Rubyize This is a game invented by &lt;a href=&quot;http://www.rubyfleebie.com/about-me/&quot;&gt;Fran??ois Lamontagne&lt;/a&gt;.  The idea is that someone puts up a chunk of code that is written in Ruby, but in a not very Rubyish way. Then, everyone in the audience gets to Rubyize it!&lt;/p&gt;
+
+
+	&lt;p&gt;We tried to use the most excellent &lt;a href=&quot;http://refactormycode.com/&quot;&gt;RefactorMyCode.com&lt;/a&gt;, but the WiFi was too saturated so we had to resort to posting the code on my blog and people plugging their laptops in to the projector to present their results.&lt;/p&gt;
+
+
+	&lt;p&gt;So, this post and the following two will show the original code.  Keep in mind that this is intentionally ugly!&lt;/p&gt;
+
+
+	&lt;p&gt;We had some great refactorings.  If you were at the workshop, please post your refactorings in the comments.  I&#8217;ll make the pretty and put them in the posting.&lt;/p&gt;
+
+
+	&lt;p&gt;The other two refactorings are at &lt;a href=&quot;http://spattendesign.com/admin/articles/show/122&quot;&gt;Rubyize this #2&lt;/a&gt; and &lt;a href=&quot;http://spattendesign.com/blog&quot;&gt;Rubyize this #3&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Without further ado, here&#8217;s the first refactoring.  The code is supposed to create a file filled with random numbers, one number per line.&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/env ruby&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;c&quot;&gt;# create num random numbers between min and max &lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;c&quot;&gt;# and print them to a file called file_name, one per line&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;create_random_numbers&lt;/span&gt;(file_name, min, max, num)&lt;tt&gt;
+&lt;/tt&gt;  file = &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.open(file_name, &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;  n = &lt;span class=&quot;i&quot;&gt;0&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;while&lt;/span&gt; n &amp;lt; num&lt;tt&gt;
+&lt;/tt&gt;    r = rand(max - min) + min&lt;tt&gt;
+&lt;/tt&gt;    file.puts(r)&lt;tt&gt;
+&lt;/tt&gt;    n += &lt;span class=&quot;i&quot;&gt;1&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  file.close   &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;create_random_numbers(&lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;random.txt&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;i&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;i&quot;&gt;10&lt;/span&gt;, &lt;span class=&quot;i&quot;&gt;1000&lt;/span&gt;)&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+Here&#8217;s the first refactoring:
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;create_random_numbers&lt;/span&gt;(file_name, min, max, num) &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.open(file_name, &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;) &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt; |f| &lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;i&quot;&gt;1&lt;/span&gt;.upto(num) {|i| f.puts rand(max-min)+min }&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt; &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Here&#8217;s one from &lt;a href=&quot;http://timestream.net/nonsequitur&quot;&gt;Sam Livingston-Gray&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/env ruby&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;c&quot;&gt;# create num random numbers between min and max &lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;c&quot;&gt;# and print them to a file called file_name, one per line&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;Range&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;random_member&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    offset = rand(max - min)&lt;tt&gt;
+&lt;/tt&gt;    min + offset&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;create_random_numbers&lt;/span&gt;(file_name, range, num)&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.open(file_name, &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;) &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt; |file|&lt;tt&gt;
+&lt;/tt&gt;    num.times { file.puts(range.random_member) }&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;create_random_numbers(&lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;random.txt&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, (&lt;span class=&quot;i&quot;&gt;0&lt;/span&gt;..&lt;span class=&quot;i&quot;&gt;10&lt;/span&gt;), &lt;span class=&quot;i&quot;&gt;1000&lt;/span&gt;)&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Here&#8217;s what I came up with:&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;create_random_numbers&lt;/span&gt;(file_name, min, max, num)&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.open(file_name, &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;) &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt; |file|&lt;tt&gt;
+&lt;/tt&gt;    num.times {file.puts(rand(max - min) + min)}&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;create_random_numbers(&lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;random.txt&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;i&quot;&gt;0&lt;/span&gt;, &lt;span class=&quot;i&quot;&gt;10&lt;/span&gt;, &lt;span class=&quot;i&quot;&gt;1000&lt;/span&gt;)&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+          </content>  </entry>
+  <entry xml:base="http://spattendesign.com/">
+    <author>
+      <name>Scott</name>
+    </author>
+    <id>tag:spattendesign.com,2008-01-14:120</id>
+    <published>2008-01-14T18:39:00Z</published>
+    <updated>2008-01-14T18:40:19Z</updated>
+    <category term="blog"/>
+    <link href="http://spattendesign.com/2008/1/14/adding-json-responses-to-all-of-your-controller-actions" rel="alternate" type="text/html"/>
+    <title>Adding json responses to all of your controller actions</title>
+<content type="html">
+            Gerald has decided to use &lt;span class=&quot;caps&quot;&gt;JSON&lt;/span&gt; responses for the mobile phone app we&#8217;ll be building at the &lt;a href=&quot;http://www.railsadvance.com/workshop/jan-08-intermediate&quot;&gt;intermediate Rails workshop&lt;/a&gt;.  I&#8217;m a lazy guy by nature, so there was no way I was going to paste in 
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;format.json  { render &lt;span class=&quot;sy&quot;&gt;:json&lt;/span&gt; =&amp;gt; &lt;span class=&quot;iv&quot;&gt;@bookmark&lt;/span&gt; }&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+in to very controller method.  
+
+	&lt;p&gt;Now, the easiest way to do this would be to add &lt;span class=&quot;caps&quot;&gt;JSON&lt;/span&gt; response to the scaffolding.  The templates are in &lt;code&gt;RAILS_ROOT/vendor/rails/lib/rails_generator/generators/components/scaffold/&lt;/code&gt;.  Open up the &lt;code&gt;controller.rb&lt;/code&gt; template and add in the &lt;span class=&quot;caps&quot;&gt;JSON&lt;/span&gt; response shown above to the index, show, update and destroy methods and you&#8217;re done.&lt;/p&gt;
+
+
+	&lt;p&gt;Unfortunately, I had already mostly developed the &lt;span class=&quot;caps&quot;&gt;API&lt;/span&gt; when I realized that I had to add in the &lt;span class=&quot;caps&quot;&gt;JSON&lt;/span&gt; responses (It&#8217;s not Gerald&#8217;s fault, he told me long ago).  So, I decided to write a quick rake task to do the job for me.  To use it, create a file called &lt;code&gt;add_json.rake&lt;/code&gt; in &lt;code&gt;RAILS_ROOT/lib/tasks&lt;/code&gt; and copy the following code in to it:&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;20&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;21&lt;tt&gt;
+&lt;/tt&gt;22&lt;tt&gt;
+&lt;/tt&gt;23&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;namespace &lt;span class=&quot;sy&quot;&gt;:rails&lt;/span&gt; &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  desc &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;Adds a 'format.json ...' line for each 'format.xml ...' line in every controller&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  task &lt;span class=&quot;sy&quot;&gt;:add_json&lt;/span&gt; =&amp;gt; &lt;span class=&quot;sy&quot;&gt;:get_controller_list&lt;/span&gt; &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;iv&quot;&gt;@controllers&lt;/span&gt;.each &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt; |controller|&lt;tt&gt;
+&lt;/tt&gt;      new_lines = &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.open(controller, &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;).readlines.collect &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt; |line|&lt;tt&gt;
+&lt;/tt&gt;        &lt;span class=&quot;r&quot;&gt;if&lt;/span&gt; line =~ &lt;span class=&quot;rx&quot;&gt;&lt;span class=&quot;dl&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;^&lt;/span&gt;&lt;span class=&quot;ch&quot;&gt;\s&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;+format&lt;/span&gt;&lt;span class=&quot;ch&quot;&gt;\.&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;/&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;          [line, line.gsub(&lt;span class=&quot;rx&quot;&gt;&lt;span class=&quot;dl&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;xml&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;/&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;json&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;)]&lt;tt&gt;
+&lt;/tt&gt;        &lt;span class=&quot;r&quot;&gt;else&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;          line&lt;tt&gt;
+&lt;/tt&gt;        &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;.flatten&lt;tt&gt;
+&lt;/tt&gt;        &lt;tt&gt;
+&lt;/tt&gt;      file = &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.open(controller, &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;w&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;) &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt; |file|&lt;tt&gt;
+&lt;/tt&gt;        file.puts new_lines&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  task &lt;span class=&quot;sy&quot;&gt;:get_controller_list&lt;/span&gt; =&amp;gt; &lt;span class=&quot;sy&quot;&gt;:environment&lt;/span&gt; &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;iv&quot;&gt;@controllers&lt;/span&gt; = &lt;span class=&quot;co&quot;&gt;Dir&lt;/span&gt;.glob(&lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.join(&lt;span class=&quot;co&quot;&gt;RAILS_ROOT&lt;/span&gt;, &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;app&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;controllers&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;*_controller.rb&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;))&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Call the task from &lt;code&gt;RAILS_ROOT&lt;/code&gt; like this:
+&lt;code&gt;rake rails:add_json&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;The task opens up every controller, and every time it finds a line that starts with &lt;code&gt;format.xml&lt;/code&gt;, it makes a copy of that line just below with every instance of &#8216;xml&#8217; replaced with &#8216;json&#8217;.  It&#8217;s &lt;del&gt;pretty&lt;/del&gt; very brain-dead: it doesn&#8217;t check if the json response is already there, so don&#8217;t run it twice on the same project.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://spattendesign.com/">
+    <author>
+      <name>Scott</name>
+    </author>
+    <id>tag:spattendesign.com,2007-12-31:115</id>
+    <published>2007-12-31T22:14:00Z</published>
+    <updated>2007-12-31T23:24:14Z</updated>
+    <category term="blog"/>
+    <link href="http://spattendesign.com/2007/12/31/fun-with-single-table-inheritance" rel="alternate" type="text/html"/>
+    <title>Fun with Single Table Inheritance</title>
+<content type="html">
+            &lt;p&gt;I&#8217;m working on the sample application for the &lt;a href=&quot;http://www.railsadvance.com/workshop/jan-08-intermediate&quot;&gt;Intermediate Ruby on Rails Workshop&lt;/a&gt; that &lt;a href=&quot;http://geraldbauer.wordpress.com&quot;&gt;Gerald Bauer&lt;/a&gt; and I are putting on in January.  I had to remind myself of some of the foibles of Single Table Inheritance (STI).  I thought others might find this useful, so here&#8217;s what I found.&lt;/p&gt;
+
+
+	&lt;h3&gt;The Set-up&lt;/h3&gt;
+
+
+	&lt;p&gt;I have two types of posts in the application I&#8217;m building: posts by people with an empty room looking for a roomie (RoomiePosts), and posts by people looking for a room (RoomPosts).  They both share a lot of the same attributes, so it&#8217;s not very &lt;a href=&quot;http://en.wikipedia.org/wiki/Don't_repeat_yourself&quot;&gt;&lt;span class=&quot;caps&quot;&gt;DRY&lt;/span&gt;&lt;/a&gt; to create two separate models.&lt;/p&gt;
+
+
+	&lt;p&gt;This is where Single Table Inheritance comes in.  &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; is basically a way of subclassing a single model, creating subclasses that all use the same database table.&lt;/p&gt;
+
+
+	&lt;p&gt;What I did is create a Post model and two subclasses: RoomiePost and RoomPost.  Here&#8217;s how you do it.&lt;/p&gt;
+
+
+	&lt;h3&gt;Creating the Database Table&lt;/h3&gt;
+
+
+	&lt;p&gt;Here&#8217;s the migration for the posts database table.  Note that this uses the new migrations syntax in Rails 2.0.&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;r&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;CreatePosts&lt;/span&gt; &amp;lt; &lt;span class=&quot;co&quot;&gt;ActiveRecord&lt;/span&gt;::&lt;span class=&quot;co&quot;&gt;Migration&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;pc&quot;&gt;self&lt;/span&gt;.up&lt;tt&gt;
+&lt;/tt&gt;    create_table &lt;span class=&quot;sy&quot;&gt;:posts&lt;/span&gt; &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt; |t|&lt;tt&gt;
+&lt;/tt&gt;      t.integer &lt;span class=&quot;sy&quot;&gt;:rent&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      t.date &lt;span class=&quot;sy&quot;&gt;:start_date&lt;/span&gt;, &lt;span class=&quot;sy&quot;&gt;:expiry_date&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      t.boolean &lt;span class=&quot;sy&quot;&gt;:includes_utilities&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      t.string &lt;span class=&quot;sy&quot;&gt;:text&lt;/span&gt;, &lt;span class=&quot;sy&quot;&gt;:type&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      &lt;tt&gt;
+&lt;/tt&gt;      t.timestamps&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;pc&quot;&gt;self&lt;/span&gt;.down&lt;tt&gt;
+&lt;/tt&gt;    drop_table &lt;span class=&quot;sy&quot;&gt;:posts&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Most of the columns are pretty straightforward.  &lt;code&gt;text&lt;/code&gt; will contain the text of the post.  &lt;code&gt;start_date&lt;/code&gt; and &lt;code&gt;expiry_date&lt;/code&gt; will determine when the post will start and stop being shown on the site.  &lt;code&gt;rent&lt;/code&gt; and &lt;code&gt;includes_utilities&lt;/code&gt; will only be used by the RoomiePost subclass, but still need to be created for all subclasses of the Post model.&lt;/p&gt;
+
+
+	&lt;p&gt;The interesting column is &lt;code&gt;type&lt;/code&gt;.  This allows Rails to determine which subclass the row should be loaded in to.  If you set &lt;code&gt;type = &quot;RoomiePost&quot;&lt;/code&gt;, then it&#8217;s a RoomiePost.  If you set &lt;code&gt;type = &quot;RoomPost&quot;&lt;/code&gt;, then it&#8217;s a RoomPost.&lt;/p&gt;
+
+
+	&lt;h3&gt;Creating the Models&lt;/h3&gt;
+
+
+	&lt;p&gt;You need to create a Post, RoomiePost and RoomPost model.  They look like this:&lt;/p&gt;
+
+
+In &lt;code&gt;/app/models/post.rb&lt;/code&gt;
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;r&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;Post&lt;/span&gt; &amp;lt; &lt;span class=&quot;co&quot;&gt;ActiveRecord&lt;/span&gt;::&lt;span class=&quot;co&quot;&gt;Base&lt;/span&gt; &lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+In &lt;code&gt;/app/models/roomie_post.rb&lt;/code&gt;
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;r&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;RoomiePost&lt;/span&gt; &amp;lt; &lt;span class=&quot;co&quot;&gt;Post&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+In &lt;code&gt;/app/models/room_post.rb&lt;/code&gt;
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;r&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;RoomPost&lt;/span&gt; &amp;lt; &lt;span class=&quot;co&quot;&gt;Post&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Note that RoomiePost and RoomPost are both subclasses of the Post model.  Here&#8217;s where you run in to a &#8220;gotcha&#8221;.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;You have to create the models in separate files&lt;/strong&gt;.  If you don&#8217;t, Rails ignores the subclassed models.&lt;/p&gt;
+
+
+	&lt;p&gt;For more information, and another workaround, see &lt;a href=&quot;http://bjhess.com/bjhessblog/2007/10/15/when-single-table-inheritance-attacks/&quot;&gt;this blog post&lt;/a&gt;.  The comment by Chris at the bottom gives the &#8216;create the models in separate files&#8217; solution.&lt;/p&gt;
+
+
+	&lt;p&gt;Okay, so now you have the models all set up.  You can do things like&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;gt;&amp;gt; p = &lt;span class=&quot;co&quot;&gt;RoomiePost&lt;/span&gt;.create(&lt;span class=&quot;sy&quot;&gt;:rent&lt;/span&gt; =&amp;gt; &lt;span class=&quot;i&quot;&gt;800&lt;/span&gt;, &lt;span class=&quot;sy&quot;&gt;:includes_utilities&lt;/span&gt; =&amp;gt; &lt;span class=&quot;pc&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;sy&quot;&gt;:text&lt;/span&gt; =&amp;gt; &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;Great room in a shared house in the Commercial Drive area&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;) &lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;And it will create a row in the &lt;code&gt;posts&lt;/code&gt; table with &lt;code&gt;type = &quot;RoomiePost&quot;&lt;/code&gt;.  If you have 5 RoomiePosts and 2 RoomPosts, then Posts.count will return 7.&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;gt;&amp;gt; &lt;span class=&quot;co&quot;&gt;RoomiePost&lt;/span&gt;.count           &lt;tt&gt;
+&lt;/tt&gt;=&amp;gt; &lt;span class=&quot;i&quot;&gt;5&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&amp;gt;&amp;gt; &lt;span class=&quot;co&quot;&gt;RoomPost&lt;/span&gt;.count&lt;tt&gt;
+&lt;/tt&gt;=&amp;gt; &lt;span class=&quot;i&quot;&gt;2&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&amp;gt;&amp;gt; &lt;span class=&quot;co&quot;&gt;Post&lt;/span&gt;.count&lt;tt&gt;
+&lt;/tt&gt;=&amp;gt; &lt;span class=&quot;i&quot;&gt;7&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;h3&gt;Adding behaviour to &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt; models&lt;/h3&gt;
+
+
+	&lt;p&gt;I want to be able to determine if a post is active by looking at the start and expiry dates, and to get a list of all active posts, roomie_posts and room_posts.  I also want to have a different icon for each post type.&lt;/p&gt;
+
+
+	&lt;p&gt;The Post.active_post? and Post::active_posts methods are straight-forward:&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;r&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;Post&lt;/span&gt; &amp;lt; &lt;span class=&quot;co&quot;&gt;ActiveRecord&lt;/span&gt;::&lt;span class=&quot;co&quot;&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;is_active?&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    (start_date .. expiry_date) === &lt;span class=&quot;co&quot;&gt;DateTime&lt;/span&gt;.now&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt; &lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;pc&quot;&gt;self&lt;/span&gt;.active_posts&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;pc&quot;&gt;self&lt;/span&gt;.find(&lt;span class=&quot;sy&quot;&gt;:all&lt;/span&gt;).select {|p| p.is_active? }&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;The only tricky part is that I used &lt;code&gt;self.find(:all)&lt;/code&gt; instead of &lt;code&gt;Post.find(:all)&lt;/code&gt; in the Post::active_posts method.  This makes sure that RoomiePost::active_posts only returns RoomiePosts and RoomPost::active_posts only returns RoomPosts.&lt;/p&gt;
+
+
+	&lt;p&gt;Getting the icon to work took a little more figuring out.  If I wanted to do this in straight-up Ruby, I&#8217;d do something like&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;20&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;21&lt;tt&gt;
+&lt;/tt&gt;22&lt;tt&gt;
+&lt;/tt&gt;23&lt;tt&gt;
+&lt;/tt&gt;24&lt;tt&gt;
+&lt;/tt&gt;25&lt;tt&gt;
+&lt;/tt&gt;26&lt;tt&gt;
+&lt;/tt&gt;27&lt;tt&gt;
+&lt;/tt&gt;28&lt;tt&gt;
+&lt;/tt&gt;29&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;30&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/env ruby&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;Post&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;co&quot;&gt;ICON_PATH&lt;/span&gt; = &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;icons&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;initialize&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;iv&quot;&gt;@icon_name&lt;/span&gt; = &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;base.gif&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;icon&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.join(&lt;span class=&quot;co&quot;&gt;ICON_PATH&lt;/span&gt;, &lt;span class=&quot;iv&quot;&gt;@icon_name&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;RoomiePost&lt;/span&gt; &amp;lt; &lt;span class=&quot;co&quot;&gt;Post&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;initialize&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;iv&quot;&gt;@icon_name&lt;/span&gt; = &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;roomie.gif&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;RoomPost&lt;/span&gt; &amp;lt; &lt;span class=&quot;co&quot;&gt;Post&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;initialize&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;iv&quot;&gt;@icon_name&lt;/span&gt; = &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;room.gif&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Then I could do this&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;ruby &lt;span class=&quot;gv&quot;&gt;$&amp;gt;&lt;/span&gt;irb -r subclass_test&lt;tt&gt;
+&lt;/tt&gt;irb(main):&lt;span class=&quot;i&quot;&gt;001&lt;/span&gt;:&lt;span class=&quot;i&quot;&gt;0&lt;/span&gt;&amp;gt; &lt;span class=&quot;co&quot;&gt;Post&lt;/span&gt;.new.icon&lt;tt&gt;
+&lt;/tt&gt;=&amp;gt; &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;icons/base.gif&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;irb(main):&lt;span class=&quot;i&quot;&gt;002&lt;/span&gt;:&lt;span class=&quot;i&quot;&gt;0&lt;/span&gt;&amp;gt; &lt;span class=&quot;co&quot;&gt;RoomiePost&lt;/span&gt;.new.icon&lt;tt&gt;
+&lt;/tt&gt;=&amp;gt; &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;icons/roomie.gif&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;irb(main):&lt;span class=&quot;i&quot;&gt;003&lt;/span&gt;:&lt;span class=&quot;i&quot;&gt;0&lt;/span&gt;&amp;gt; &lt;span class=&quot;co&quot;&gt;RoomPost&lt;/span&gt;.new.icon&lt;tt&gt;
+&lt;/tt&gt;=&amp;gt; &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;icons/room.gif&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;This doesn&#8217;t quite work in the Rails version.  Not to worry, you only have to make one simple change:&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;replace the &lt;code&gt;initialize&lt;/code&gt; method with an &lt;code&gt;after_initialize&lt;/code&gt; callback.&lt;/strong&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;The final &lt;code&gt;post.rb&lt;/code&gt;, &lt;code&gt;roomie_post.rb&lt;/code&gt; and &lt;code&gt;room_post.rb&lt;/code&gt; files look like this:&lt;/p&gt;
+
+
+&lt;code&gt;post.rb&lt;/code&gt;:
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;20&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;21&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;r&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;Post&lt;/span&gt; &amp;lt; &lt;span class=&quot;co&quot;&gt;ActiveRecord&lt;/span&gt;::&lt;span class=&quot;co&quot;&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;co&quot;&gt;ICON_PATH&lt;/span&gt; = &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;/images/icons&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;after_initialize&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;iv&quot;&gt;@icon_name&lt;/span&gt; = &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;base.gif&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;icon&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.join(&lt;span class=&quot;co&quot;&gt;ICON_PATH&lt;/span&gt;, &lt;span class=&quot;iv&quot;&gt;@icon_name&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;is_active?&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    (start_date .. expiry_date) === &lt;span class=&quot;co&quot;&gt;DateTime&lt;/span&gt;.now&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt; &lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;pc&quot;&gt;self&lt;/span&gt;.active_posts&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;pc&quot;&gt;self&lt;/span&gt;.find(&lt;span class=&quot;sy&quot;&gt;:all&lt;/span&gt;).select {|p| p.is_active? }&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+&lt;code&gt;roomie_post.rb&lt;/code&gt;:
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;r&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;RoomiePost&lt;/span&gt; &amp;lt; &lt;span class=&quot;co&quot;&gt;Post&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;after_initialize&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;iv&quot;&gt;@icon_name&lt;/span&gt; = &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;roomie.gif&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+&lt;code&gt;room_post.rb&lt;/code&gt;:
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;r&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;RoomPost&lt;/span&gt; &amp;lt; &lt;span class=&quot;co&quot;&gt;Post&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;after_initialize&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;iv&quot;&gt;@icon_name&lt;/span&gt; = &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;room.gif&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;One final note:  because of the way the &lt;code&gt;after_initialize&lt;/code&gt; callback works, you have to actually define an &lt;code&gt;after_initialize&lt;/code&gt; method.  You can&#8217;t do something like this:&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;r&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;RoomiePost&lt;/span&gt; &amp;lt; &lt;span class=&quot;co&quot;&gt;Post&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  after_initialize &lt;span class=&quot;sy&quot;&gt;:set_icon_name&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  private&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;set_icon_name&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;iv&quot;&gt;@icon_name&lt;/span&gt; = &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;roomie.gif&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;If you want to learn more about &lt;span class=&quot;caps&quot;&gt;STI&lt;/span&gt;, and a whole slew of other info on Rails, sign up for the &lt;a href=&quot;http://www.railsadvance.com/workshop/jan-08-intermediate&quot;&gt;Intermediate Rails Workshop&lt;/a&gt; on January 25th, 2008 in Vancouver.&lt;/p&gt;
+
+
+	&lt;p&gt;Early Bird rates are available until January 9th!&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://spattendesign.com/">
+    <author>
+      <name>Scott</name>
+    </author>
+    <id>tag:spattendesign.com,2007-12-19:106</id>
+    <published>2007-12-19T23:39:00Z</published>
+    <updated>2007-12-19T23:40:04Z</updated>
+    <category term="blog"/>
+    <link href="http://spattendesign.com/2007/12/19/rubycamp-vancouver" rel="alternate" type="text/html"/>
+    <title>RubyCamp Vancouver</title>
+<content type="html">
+            &lt;p&gt;&lt;a href=&quot;http://rubycamp.wordpress.com&quot;&gt;RubyCamp&lt;/a&gt; is a free one-day gathering for Rubyists and Railsers.&lt;/p&gt;
+
+
+	&lt;h4&gt;When and Where&lt;/h4&gt;
+
+
+	&lt;p&gt;WorkSpace in downtown Vancouver, B.C., Canada &lt;br /&gt;
+January 26th, 2008 from 9:00 to 5:00&lt;/p&gt;
+
+
+	&lt;h4&gt;Who should come&lt;/h4&gt;
+
+
+	&lt;p&gt;Anyone who???s interested in Ruby and Rails, whether you???re just interested in learning what this Ruby thing is all about or you know Ruby inside out.&lt;/p&gt;
+
+
+	&lt;h4&gt;The Conference Track&lt;/h4&gt;
+
+
+	&lt;p&gt;A conference-style track with ???classic??? talks on Ruby or Rails topics. We???re looking for a few more speakers, so see &lt;a href=&quot;http://rubycamp.wordpress.com/about/#talks&quot;&gt;here&lt;/a&gt; if you???re interested in giving a talk.&lt;/p&gt;
+
+
+	&lt;h4&gt;The Hackathon Track&lt;/h4&gt;
+
+
+	&lt;p&gt;An informal un-conference track focusing on hacking some Ruby code, showing off a cool feature you just added to your Rails application or demonstrating a new addition to Rails 2.0.&lt;/p&gt;
+
+
+	&lt;p&gt;If you???re interested in working on some code or showing off something, get started by &lt;a href=&quot;http://rubycamp.wordpress.com/about/#hackathon&quot;&gt;promoting your ideas and getting some buzz going&lt;/a&gt; .&lt;/p&gt;
+
+
+	&lt;h4&gt;A weekend of Ruby&lt;/h4&gt;
+
+
+	&lt;p&gt;There are two more reasons to come to Vancouver for those of you who are out of town.&lt;/p&gt;
+
+
+	&lt;p&gt;On the Friday before RubyCamp, Rails Advance is giving a one day &lt;a href=&quot;http://railsadvance.com/workshop&quot;&gt;intermediate Ruby and Rails workshop&lt;/a&gt;.   (Rails Advance is Gerald Bauer and I, by the way)&lt;/p&gt;
+
+
+	&lt;p&gt;On the Sunday after RubyCamp, Peter Armstrong is giving a one day workshop on &lt;a href=&quot;http://www.flexiblerails.com/workshops&quot;&gt;Flex and Rails&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;For more information, see the &lt;a href=&quot;http://rubycamp.wordpress.com&quot;&gt;RubyCamp web site&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;See you all at RubyCamp in Vancouver!&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://spattendesign.com/">
+    <author>
+      <name>Scott</name>
+    </author>
+    <id>tag:spattendesign.com,2007-12-05:82</id>
+    <published>2007-12-05T20:19:00Z</published>
+    <updated>2007-12-05T20:20:49Z</updated>
+    <category term="blog"/>
+    <link href="http://spattendesign.com/2007/12/5/amazon-s3-ruby-and-rails-slides" rel="alternate" type="text/html"/>
+    <title>Amazon S3, Ruby and Rails slides</title>
+<content type="html">
+            &lt;p&gt;The slides from the talk are &lt;a href=&quot;http://spatten_presentations.s3.amazonaws.com/s3-on-rails.pdf&quot;&gt;here&lt;/a&gt;.  (Yes, they&#8217;re hosted on S3).&lt;/p&gt;
+
+
+	&lt;p&gt;There are two points in the presentation where I switched to a different window.&lt;/p&gt;
+
+
+	&lt;p&gt;At the &#8216;S3SH &lt;span class=&quot;caps&quot;&gt;DEMO&lt;/span&gt;&#8217; slide, I did some live coding showing how you can work with S3 using s3sh.  It basically followed the script shown in &#8216;s3sh demo script&#8217; below, so read that part when you see the &#8216;S3SH &lt;span class=&quot;caps&quot;&gt;DEMO&lt;/span&gt;&#8217; slide.&lt;/p&gt;
+
+
+	&lt;p&gt;At the &#8216;Example: S3Syncer&#8217; slide, I switched over to textmate and showed the code for a simple script to synchronize a single directory to S3.  I then demoed the script to show it working.  So, when you see the &#8216;Example; S3Syncer&#8217; slide, read the s3syncer code and s3syncer demo sections below.&lt;/p&gt;
+
+
+	&lt;h2&gt;s3sh demo script&lt;/h2&gt;
+
+
+Start up s3sh
+&lt;pre&gt;
+$&amp;gt; s3sh
+&lt;/pre&gt;
+
+	&lt;p&gt;Create a bucket.
+Show that you can create a bucket multiple times if you own it, but trying to create a bucket that somebody else owns raises an error.&lt;/p&gt;
+
+
+&lt;pre&gt;
+&amp;gt;&amp;gt; Bucket.create('spatten_s3demo')
+=&amp;gt; true
+&amp;gt;&amp;gt; Bucket.create('spatten_s3demo')
+=&amp;gt; true
+&amp;gt;&amp;gt; Bucket.create('test')
+AWS::S3::BucketAlreadyExists: The requested bucket name is not available. The bucket namespace is shared by all users of the system. Please select a different name and try again.
+        from /usr/local/lib/ruby/gems/1.8/gems/aws-s3-0.4.0/bin/../lib/aws/s3/error.rb:38:in `raise'
+        from /usr/local/lib/ruby/gems/1.8/gems/aws-s3-0.4.0/bin/../lib/aws/s3/base.rb:72:in `request'
+        from /usr/local/lib/ruby/gems/1.8/gems/aws-s3-0.4.0/bin/../lib/aws/s3/base.rb:83:in `put'
+        from /usr/local/lib/ruby/gems/1.8/gems/aws-s3-0.4.0/bin/../lib/aws/s3/bucket.rb:79:in `create'
+        from (irb):3
+&lt;/pre&gt;
+
+You can save a bucket in a variable using &lt;code&gt;Bucket.find&lt;/code&gt;
+&lt;pre&gt;
+&amp;gt;&amp;gt; b = Bucket.find('spatten_s3demo')
+=&amp;gt; #&amp;lt;AWS::S3::Bucket:0x14ae7b8 @attributes={&quot;prefix&quot;=&amp;gt;nil, &quot;name&quot;=&amp;gt;&quot;spatten_s3demo&quot;, &quot;marker&quot;=&amp;gt;nil, &quot;max_keys&quot;=&amp;gt;1000, &quot;is_truncated&quot;=&amp;gt;false, &quot;xmlns&quot;=&amp;gt;&quot;http://s3.amazonaws.com/doc/2006-03-01/&quot;}, @object_cache=[]&amp;gt;
+&lt;/pre&gt;
+
+Create a text object
+&lt;pre&gt;
+&amp;gt;&amp;gt; S3Object.store('test.txt', 'This is a test', 'spatten_s3demo')
+=&amp;gt; #&amp;lt;AWS::S3::S3Object::Response:0x10830590 200 OK&amp;gt;
+&amp;gt;&amp;gt; b.objects
+=&amp;gt; [#&amp;lt;AWS::S3::S3Object:0x10804170 '/spatten_s3demo/test.txt'&amp;gt;]
+&amp;gt;&amp;gt; pp b.objects[0].about
+{&quot;last-modified&quot;=&amp;gt;&quot;Wed, 05 Dec 2007 19:56:49 GMT&quot;,
+ &quot;x-amz-id-2&quot;=&amp;gt;
+  &quot;JACm9T+m9CgZhmj4q6q00OSGHgSyBVAbQ1cgRWGydYZLTKdhLc/IUZ+K7b/1snOc&quot;,
+ &quot;content-type&quot;=&amp;gt;&quot;text/plain&quot;,
+ &quot;etag&quot;=&amp;gt;&quot;\&quot;ce114e4501d2f4e2dcea3e17b546f339\&quot;&quot;,
+ &quot;date&quot;=&amp;gt;&quot;Wed, 05 Dec 2007 19:57:03 GMT&quot;,
+ &quot;x-amz-request-id&quot;=&amp;gt;&quot;CA170D2AA5DEB0C9&quot;,
+ &quot;server&quot;=&amp;gt;&quot;AmazonS3&quot;,
+ &quot;content-length&quot;=&amp;gt;&quot;14&quot;}
+=&amp;gt; nil
+&amp;gt;&amp;gt; b.objects[0].key
+=&amp;gt; &quot;test.txt&quot; 
+&amp;gt;&amp;gt; b.objects[0].value
+=&amp;gt; &quot;This is a test&quot; 
+&lt;/pre&gt;
+
+Create a binary object and show it in a browser
+&lt;pre&gt;
+&amp;gt;&amp;gt; S3Object.store('vampire.jpg', File.open('vampire.jpg'), 'spatten_s3demo')
+=&amp;gt; #&amp;lt;AWS::S3::S3Object::Response:0x10764700 200 OK&amp;gt;
+&lt;/pre&gt;
+
+	&lt;p&gt;Show the photo in browser&lt;/p&gt;
+
+
+	&lt;p&gt;This doesn&#8217;t work, as the file is only readable by me.  Make it public readable and do it again.&lt;/p&gt;
+
+
+&lt;pre&gt;
+&amp;gt;&amp;gt; S3Object.store('vampire.jpg', File.open('vampire.jpg'), 'spatten_s3demo', 
+     :access =&amp;gt; :public_read)
+=&amp;gt; #&amp;lt;AWS::S3::S3Object::Response:0x10747950 200 OK&amp;gt;
+&lt;/pre&gt;
+
+	&lt;p&gt;Show it in a browser again.  It works this time.&lt;/p&gt;
+
+
+	&lt;p&gt;Look at bucket.objects.  We have to reload the bucket to show the new object.&lt;/p&gt;
+
+
+&lt;pre&gt;
+&amp;gt;&amp;gt; b.objects
+=&amp;gt; [#&amp;lt;AWS::S3::S3Object:0x10804170 '/spatten_s3demo/test.txt'&amp;gt;]
+&amp;gt;&amp;gt; b.objects(:reload)
+=&amp;gt; [#&amp;lt;AWS::S3::S3Object:0x10708080 '/spatten_s3demo/test.txt'&amp;gt;, #&amp;lt;AWS::S3::S3Object:0x10708070 '/spatten_s3demo/vampire.jpg'&amp;gt;]
+&lt;/pre&gt;
+
+Hash access to bucket objects
+&lt;pre&gt;
+&amp;gt;&amp;gt; b['vampire.jpg']
+=&amp;gt; #&amp;lt;AWS::S3::S3Object:0x10708070 '/spatten_s3demo/vampire.jpg'&amp;gt;
+&amp;gt;&amp;gt; vamp = b['vampire.jpg']
+=&amp;gt; #&amp;lt;AWS::S3::S3Object:0x10708070 '/spatten_s3demo/vampire.jpg'&amp;gt;
+&lt;/pre&gt;
+
+	&lt;p&gt;A look at metadata&lt;/p&gt;
+
+
+&lt;pre&gt;
+&amp;gt;&amp;gt; vamp.content_type
+=&amp;gt; &quot;image/jpeg&quot; 
+&amp;gt;&amp;gt; vamp.size
+=&amp;gt; 10817
+&amp;gt;&amp;gt; vamp.metadata
+=&amp;gt; {}
+&amp;gt;&amp;gt; vamp.metadata['subject'] = 'Claire'
+=&amp;gt; &quot;Claire&quot; 
+&amp;gt;&amp;gt; vamp.metadata['photographer'] = 'Nadine Inkster'
+=&amp;gt; &quot;Nadine Inkster&quot; 
+&amp;gt;&amp;gt; vamp.store
+=&amp;gt; true
+&lt;/pre&gt;
+
+Storing the picture data in a variable
+&lt;pre&gt;
+&amp;gt;&amp;gt; picdata = vamp.value
+=&amp;gt; &quot;\377\330\377\340\000\020JFIF\000\001\002\000.......
+&lt;/pre&gt;
+
+	&lt;p&gt;Downloading a picture by streaming it to an IO object.&lt;/p&gt;
+
+
+&lt;pre&gt;
+&amp;gt;&amp;gt; File.open('vampire_downloaded.jpg', 'w') {|file| file.write(vamp.value)}
+=&amp;gt; 10817
+&amp;gt;&amp;gt; exit
+s3demo $&amp;gt;ls
+flowers.jpg             vampire.jpg
+test.txt                vampire_downloaded.jpg
+s3demo $&amp;gt;open vampire_downloaded.jpg 
+s3demo $&amp;gt;
+&lt;/pre&gt;
+
+	&lt;h2&gt;S3Syncer Code&lt;/h2&gt;
+
+
+	&lt;p&gt;Please note that this code is really only useful as an example of how to synchronize with S3.&lt;/p&gt;
+
+
+	&lt;p&gt;It won&#8217;t recurse directories and it dies a horrible death if there are any symlinked files in a directory.&lt;/p&gt;
+
+
+	&lt;p&gt;If you are looking for something to synchronize directories, check out &lt;a href=&quot;http://s3sync.net/wiki&quot;&gt;s3sync.rb&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;20&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;21&lt;tt&gt;
+&lt;/tt&gt;22&lt;tt&gt;
+&lt;/tt&gt;23&lt;tt&gt;
+&lt;/tt&gt;24&lt;tt&gt;
+&lt;/tt&gt;25&lt;tt&gt;
+&lt;/tt&gt;26&lt;tt&gt;
+&lt;/tt&gt;27&lt;tt&gt;
+&lt;/tt&gt;28&lt;tt&gt;
+&lt;/tt&gt;29&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;30&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;31&lt;tt&gt;
+&lt;/tt&gt;32&lt;tt&gt;
+&lt;/tt&gt;33&lt;tt&gt;
+&lt;/tt&gt;34&lt;tt&gt;
+&lt;/tt&gt;35&lt;tt&gt;
+&lt;/tt&gt;36&lt;tt&gt;
+&lt;/tt&gt;37&lt;tt&gt;
+&lt;/tt&gt;38&lt;tt&gt;
+&lt;/tt&gt;39&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;40&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;41&lt;tt&gt;
+&lt;/tt&gt;42&lt;tt&gt;
+&lt;/tt&gt;43&lt;tt&gt;
+&lt;/tt&gt;44&lt;tt&gt;
+&lt;/tt&gt;45&lt;tt&gt;
+&lt;/tt&gt;46&lt;tt&gt;
+&lt;/tt&gt;47&lt;tt&gt;
+&lt;/tt&gt;48&lt;tt&gt;
+&lt;/tt&gt;49&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;50&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;51&lt;tt&gt;
+&lt;/tt&gt;52&lt;tt&gt;
+&lt;/tt&gt;53&lt;tt&gt;
+&lt;/tt&gt;54&lt;tt&gt;
+&lt;/tt&gt;55&lt;tt&gt;
+&lt;/tt&gt;56&lt;tt&gt;
+&lt;/tt&gt;57&lt;tt&gt;
+&lt;/tt&gt;58&lt;tt&gt;
+&lt;/tt&gt;59&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;60&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;61&lt;tt&gt;
+&lt;/tt&gt;62&lt;tt&gt;
+&lt;/tt&gt;63&lt;tt&gt;
+&lt;/tt&gt;64&lt;tt&gt;
+&lt;/tt&gt;65&lt;tt&gt;
+&lt;/tt&gt;66&lt;tt&gt;
+&lt;/tt&gt;67&lt;tt&gt;
+&lt;/tt&gt;68&lt;tt&gt;
+&lt;/tt&gt;69&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;70&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;71&lt;tt&gt;
+&lt;/tt&gt;72&lt;tt&gt;
+&lt;/tt&gt;73&lt;tt&gt;
+&lt;/tt&gt;74&lt;tt&gt;
+&lt;/tt&gt;75&lt;tt&gt;
+&lt;/tt&gt;76&lt;tt&gt;
+&lt;/tt&gt;77&lt;tt&gt;
+&lt;/tt&gt;78&lt;tt&gt;
+&lt;/tt&gt;79&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;80&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;81&lt;tt&gt;
+&lt;/tt&gt;82&lt;tt&gt;
+&lt;/tt&gt;83&lt;tt&gt;
+&lt;/tt&gt;84&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c&quot;&gt;#!/usr/bin/env ruby&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;require &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;digest/md5&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;require &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;aws/s3&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;include &lt;span class=&quot;co&quot;&gt;AWS&lt;/span&gt;::&lt;span class=&quot;co&quot;&gt;S3&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;cl&quot;&gt;S3Syncer&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  attr_reader &lt;span class=&quot;sy&quot;&gt;:local_files&lt;/span&gt;, &lt;span class=&quot;sy&quot;&gt;:files_to_upload&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;initialize&lt;/span&gt;(directory, bucket_name)&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;iv&quot;&gt;@directory&lt;/span&gt; = directory&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;iv&quot;&gt;@bucket_name&lt;/span&gt; = bucket_name&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;co&quot;&gt;S3Syncer&lt;/span&gt;.sync(directory, bucket)&lt;tt&gt;
+&lt;/tt&gt;    syncer = &lt;span class=&quot;co&quot;&gt;S3Syncer&lt;/span&gt;.new(directory, bucket)&lt;tt&gt;
+&lt;/tt&gt;    syncer.get_local_files&lt;tt&gt;
+&lt;/tt&gt;    syncer.connect_to_s3&lt;tt&gt;
+&lt;/tt&gt;    syncer.get_bucket&lt;tt&gt;
+&lt;/tt&gt;    syncer.select_files_to_upload&lt;tt&gt;
+&lt;/tt&gt;    syncer.sync&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# This does not recurse directories.&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;get_local_files&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;iv&quot;&gt;@local_files&lt;/span&gt; = &lt;span class=&quot;co&quot;&gt;Dir&lt;/span&gt;.entries(&lt;span class=&quot;iv&quot;&gt;@directory&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;connect_to_s3&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;co&quot;&gt;Base&lt;/span&gt;.establish_connection!(&lt;tt&gt;
+&lt;/tt&gt;        &lt;span class=&quot;sy&quot;&gt;:access_key_id&lt;/span&gt;     =&amp;gt; &lt;span class=&quot;co&quot;&gt;ENV&lt;/span&gt;[&lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;AMAZON_ACCESS_KEY_ID&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;],&lt;tt&gt;
+&lt;/tt&gt;        &lt;span class=&quot;sy&quot;&gt;:secret_access_key&lt;/span&gt; =&amp;gt; &lt;span class=&quot;co&quot;&gt;ENV&lt;/span&gt;[&lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;AMAZON_SECRET_ACCESS_KEY&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;]&lt;tt&gt;
+&lt;/tt&gt;      )&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;    raise &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;ch&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;ERROR: Connection not made or bad access key &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; +&lt;tt&gt;
+&lt;/tt&gt;          &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;or bad secret access key.  Exiting&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;r&quot;&gt;unless&lt;/span&gt; &lt;span class=&quot;co&quot;&gt;AWS&lt;/span&gt;::&lt;span class=&quot;co&quot;&gt;S3&lt;/span&gt;::&lt;span class=&quot;co&quot;&gt;Base&lt;/span&gt;.connected? &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;get_bucket&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;co&quot;&gt;Bucket&lt;/span&gt;.create(&lt;span class=&quot;iv&quot;&gt;@bucket_name&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;iv&quot;&gt;@bucket&lt;/span&gt; = &lt;span class=&quot;co&quot;&gt;Bucket&lt;/span&gt;.find(&lt;span class=&quot;iv&quot;&gt;@bucket_name&lt;/span&gt;) &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# Files should be uploaded if &lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;#   The file doesn't exist in the bucket&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;#      OR&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;#   The MD5 hashes don't match&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;select_files_to_upload&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;iv&quot;&gt;@files_to_upload&lt;/span&gt; = &lt;span class=&quot;iv&quot;&gt;@local_files&lt;/span&gt;.select &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt; |file|                 &lt;tt&gt;
+&lt;/tt&gt;      &lt;span class=&quot;r&quot;&gt;case&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class=&quot;r&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.directory?(local_name(file))&lt;tt&gt;
+&lt;/tt&gt;         &lt;span class=&quot;pc&quot;&gt;false&lt;/span&gt; &lt;span class=&quot;c&quot;&gt;# Don't upload directories&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class=&quot;r&quot;&gt;when&lt;/span&gt; !&lt;span class=&quot;iv&quot;&gt;@bucket&lt;/span&gt;[file]&lt;tt&gt;
+&lt;/tt&gt;         &lt;span class=&quot;pc&quot;&gt;true&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# Upload if file does not exist on S3&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class=&quot;r&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;iv&quot;&gt;@bucket&lt;/span&gt;[file].etag != &lt;span class=&quot;co&quot;&gt;Digest&lt;/span&gt;::&lt;span class=&quot;co&quot;&gt;MD5&lt;/span&gt;.hexdigest(&lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.read(local_name(file)))&lt;tt&gt;
+&lt;/tt&gt;         &lt;span class=&quot;pc&quot;&gt;true&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# Upload if MD5 sums don't match&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class=&quot;r&quot;&gt;else&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;        &lt;span class=&quot;pc&quot;&gt;false&lt;/span&gt;  &lt;span class=&quot;c&quot;&gt;# the MD5 matches and it exists already, so don't upload it&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;c&quot;&gt;# This will choke on symlinked files&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;sync&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    (puts &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;Directories are in sync&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;; &lt;span class=&quot;r&quot;&gt;return&lt;/span&gt;) &lt;span class=&quot;r&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;iv&quot;&gt;@files_to_upload&lt;/span&gt;.empty?&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;iv&quot;&gt;@files_to_upload&lt;/span&gt;.each &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt; |file|&lt;tt&gt;
+&lt;/tt&gt;      puts &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;il&quot;&gt;&lt;span class=&quot;dl&quot;&gt;#{&lt;/span&gt;file&lt;span class=&quot;dl&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt; ===&amp;gt; &lt;/span&gt;&lt;span class=&quot;il&quot;&gt;&lt;span class=&quot;dl&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;iv&quot;&gt;@bucket&lt;/span&gt;.name&lt;span class=&quot;dl&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;il&quot;&gt;&lt;span class=&quot;dl&quot;&gt;#{&lt;/span&gt;file&lt;span class=&quot;dl&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class=&quot;co&quot;&gt;S3Object&lt;/span&gt;.store(file, &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.open(local_name(file), &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;), &lt;span class=&quot;iv&quot;&gt;@bucket_name&lt;/span&gt;)      &lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  private &lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;fu&quot;&gt;local_name&lt;/span&gt;(file)&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class=&quot;co&quot;&gt;File&lt;/span&gt;.join(&lt;span class=&quot;iv&quot;&gt;@directory&lt;/span&gt;, file)&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;pc&quot;&gt;__FILE__&lt;/span&gt; == &lt;span class=&quot;gv&quot;&gt;$0&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;co&quot;&gt;S3Syncer&lt;/span&gt;.sync(&lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;/Users/Scott/versioned/spattendesign/presentations/s3-on-rails/s3demo&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;tt&gt;
+&lt;/tt&gt;                &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;spatten_syncdemo&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;h2&gt;S3Syncer demo&lt;/h2&gt;
+
+
+	&lt;p&gt;Start with spatten_syncdemo bucket empty, and four files in the local directory.&lt;/p&gt;
+
+
+Run the script
+&lt;pre&gt;
+s3demo $&amp;gt;ls
+flowers.jpg             vampire.jpg
+test.txt                vampire_downloaded.jpg
+s3demo $&amp;gt;s3syncer
+flowers.jpg ===&amp;gt; spatten_syncdemo:flowers.jpg
+test.txt ===&amp;gt; spatten_syncdemo:test.txt
+vampire.jpg ===&amp;gt; spatten_syncdemo:vampire.jpg
+vampire_downloaded.jpg ===&amp;gt; spatten_syncdemo:vampire_downloaded.jpg
+&lt;/pre&gt;
+Run it again, it says there&#8217;s no need to do anything
+&lt;pre&gt;
+s3demo $&amp;gt;s3syncer
+Directories are in sync
+&lt;/pre&gt;
+
+Change a file locally and sync again
+&lt;pre&gt;
+s3demo $&amp;gt; vi test.txt
+Make some changes using vi
+s3demo $&amp;gt;s3syncer
+test.txt ===&amp;gt; spatten_syncdemo:test.txt
+&lt;/pre&gt;
+
+Delete flower.jpg using the Firefox S3 Organizer and then sync again.
+&lt;pre&gt;
+s3demo $&amp;gt;s3syncer
+flowers.jpg ===&amp;gt; spatten_syncdemo:flowers.jpg
+&lt;/pre&gt;
+
+	&lt;p&gt;So there you go, a quick intro to the wonders of Amazon S3.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://spattendesign.com/">
+    <author>
+      <name>Scott</name>
+    </author>
+    <id>tag:spattendesign.com,2007-12-04:76</id>
+    <published>2007-12-04T00:32:00Z</published>
+    <updated>2007-12-04T00:36:00Z</updated>
+    <category term="blog"/>
+    <link href="http://spattendesign.com/2007/12/4/synch-s3-host-plugin-update" rel="alternate" type="text/html"/>
+    <title>synch s3 host plugin update</title>
+<content type="html">
+            &lt;p&gt;I&#8217;ve re-written the plugin to use s3sync.rb rather than trying to figure out which files have changed in svn.  It&#8217;s a much better solution, so hopefully those of you who were having trouble will find it works for you now.  Thanks, especially, to Chris in the comments for helping me figure out what was going wrong.&lt;/p&gt;
+
+
+	&lt;p&gt;The plug-in also now has a permanent home in my new Projects section, &lt;a href=&quot;http://spattendesign.com/projects/synching-your-amazon-s3-asset-host-using-capistrano&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://spattendesign.com/">
+    <author>
+      <name>Scott</name>
+    </author>
+    <id>tag:spattendesign.com,2007-11-28:58</id>
+    <published>2007-11-28T21:17:00Z</published>
+    <updated>2007-11-28T21:17:52Z</updated>
+    <category term="blog"/>
+    <link href="http://spattendesign.com/2007/11/28/amazon-s3-ruby-and-rails-talk" rel="alternate" type="text/html"/>
+    <title>Amazon S3, Ruby and Rails talk</title>
+<content type="html">
+            &lt;p&gt;I&#8217;m going to be giving a talk on Amazon S3, Ruby and Rails at the next &lt;a href=&quot;http://ruby.meetup.com/112/calendar/6693048/&quot;&gt;Vancouver Ruby and Rails meetup&lt;/a&gt;.  It&#8217;s this Monday, December 3rd.&lt;/p&gt;
+
+
+	&lt;p&gt;Here&#8217;s the talk teaser:&lt;/p&gt;
+
+
+	&lt;blockquote&gt;
+		&lt;p&gt;Amazon&#8217;s Simple Storage Service (Amazon S3) is an online storage system. It can be used for backup, serving assets for your Rails application, storing and streaming large media files or storing customer generated assets.&lt;/p&gt;
+	&lt;/blockquote&gt;
+
+
+	&lt;blockquote&gt;
+		&lt;p&gt;The &lt;span class=&quot;caps&quot;&gt;AWS&lt;/span&gt;/S3 gem, written by Marcel Molina, provides an elegant interface to Amazon S3. I&#8217;ll be talking about how S3 works, how to use it in your Ruby scripts and Rails applications and showing off some example code.&lt;/p&gt;
+	&lt;/blockquote&gt;
+
+
+	&lt;p&gt;Hope to see you there!&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://spattendesign.com/">
+    <author>
+      <name>Scott</name>
+    </author>
+    <id>tag:spattendesign.com,2007-11-06:21</id>
+    <published>2007-11-06T23:16:00Z</published>
+    <updated>2008-02-28T05:45:47Z</updated>
+    <category term="blog"/>
+    <link href="http://spattendesign.com/2007/11/6/synching-your-amazon-s3-asset-host-using-capistrano" rel="alternate" type="text/html"/>
+    <title>Synching Your Amazon S3 Asset Host using Capistrano</title>
+<content type="html">
+            &lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: This article is out of date.  The latest version of this article is on the new &lt;a href=&quot;http://spattendesign.com/projects/synching-your-amazon-s3-asset-host-using-capistrano&quot;&gt;permanent page in the projects section&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;So you&#8217;ve got &lt;a href=&quot;http://spattendesign.com/2007/10/24/setting-up-multiple-asset-hosts-in-rails&quot;&gt;multiple asset hosts&lt;/a&gt; running in your Rails application, and you&#8217;re using Amazon&#8217;s S3 to host your assets.  Now you want to make sure that your assets are kept up to date.  This plugin is a Capistrano recipe that keeps the asset hosts synchronized with the public directory in your subversion repository.&lt;/p&gt;
+
+
+	&lt;h3&gt;Usage&lt;/h3&gt;
+
+
+	&lt;p&gt;After you get everything setup and do your first deploy, just run &lt;code&gt;cap deploy&lt;/code&gt; as normal and all changed files in &lt;code&gt;RAILS_ROOT/public&lt;/code&gt; will be uploaded to all of your asset host buckets before the final &lt;code&gt;deploy:symlink&lt;/code&gt; task.&lt;/p&gt;
+
+
+	&lt;p&gt;The following tasks are also available:&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;cap s3_asset_host:get_s3_revision&lt;/li&gt;
+		&lt;li&gt;cap s3_asset_host:find_changed&lt;/li&gt;
+		&lt;li&gt;cap s3_asset_host:list_changed&lt;/li&gt;
+		&lt;li&gt;cap s3_asset_host:find_all&lt;/li&gt;
+		&lt;li&gt;cap s3_asset_host:upload_changed&lt;/li&gt;
+		&lt;li&gt;cap s3_asset_host:upload_all&lt;/li&gt;
+		&lt;li&gt;cap s3_asset_host:upload&lt;/li&gt;
+		&lt;li&gt;cap s3_asset_host:reset_and_upload&lt;/li&gt;
+		&lt;li&gt;cap s3_asset_host:setup&lt;/li&gt;
+		&lt;li&gt;cap s3_asset_host:create_buckets&lt;/li&gt;
+		&lt;li&gt;cap s3_asset_host:delete_all&lt;/li&gt;
+		&lt;li&gt;cap s3_asset_host:connect&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;You can get documentation on these tasks by running &lt;code&gt;cap -T&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;h3&gt;Requirements&lt;/h3&gt;
+
+
+	&lt;p&gt;This plug-in is a Capistrano extension.  It requires Capistrano 2.0.0 or greater.&lt;/p&gt;
+
+
+	&lt;p&gt;You will also require the &lt;a href=&quot;http://amazon.rubyforge.org&quot;&gt;aws-s3 gem&lt;/a&gt;&lt;/p&gt;
+
+
+So far, this plug-in:
+	&lt;ul&gt;
+	&lt;li&gt;assumes that you are using the &#8216;checkout&#8217; method of deployment.&lt;/li&gt;
+		&lt;li&gt;only works with svn.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;If you are using another version control system, I think all you&#8217;ll have to change is the two methods in lib/scm.rb.  If you do get something other than svn working, please &lt;a href=&quot;mailto:scott@spattendesign.com&quot;&gt;let me know&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;If you want to use more than one asset host, then you have to either install the multiple asset hosts plugin 
+or upgrade to Rails 2.0 (see &lt;a href=&quot;http://spattendesign.com/2007/10/24/setting-up-multiple-asset-hosts-in-rails&quot;&gt;setting up multiple asset hosts in Rails&lt;/a&gt;)&lt;/p&gt;
+
+
+	&lt;h3&gt;Setup&lt;/h3&gt;
+
+
+	&lt;p&gt;To set-up, you need to do the following&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;Install the plug-in&lt;/li&gt;
+		&lt;li&gt;Install the &lt;span class=&quot;caps&quot;&gt;AWS&lt;/span&gt;-S3 gem.&lt;/li&gt;
+		&lt;li&gt;Set up your Rails application to use asset hosts.&lt;/li&gt;
+		&lt;li&gt;Set up your asset hosts.&lt;/li&gt;
+		&lt;li&gt;Configure Capistrano.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;h4&gt;Installing the plug-in&lt;/h4&gt;
+
+
+	&lt;p&gt;From &lt;code&gt;RAILS_ROOT&lt;/code&gt;, run:&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;script/plugin install svn://svn.spattendesign.com/svn/plugins/synch_s3_asset_host&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;h4&gt;Installing the &lt;span class=&quot;caps&quot;&gt;AWS&lt;/span&gt;-S3 gem&lt;/h4&gt;
+
+
+	&lt;p&gt;You need to do this on both your local computer &lt;strong&gt;and&lt;/strong&gt; the computer that is defined as the asset_host_syncher (see Capistrano Configuration, below).&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;$&amp;gt; sudo gem install aws-s3&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;h4&gt;Setting up your Rails app to use asset hosts&lt;/h4&gt;
+
+
+	&lt;h5&gt;Single asset host&lt;/h5&gt;
+
+
+	&lt;p&gt;For a single asset host, simply add the following line to &lt;code&gt;RAILS_ROOT/config/environments/production.rb&lt;/code&gt;:&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;config.action_controller.asset_host = &quot;http://assets.example.com&quot;&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;h5&gt;Multiple asset hosts&lt;/h5&gt;
+
+
+	&lt;p&gt;Follow the instructions in &lt;a&gt;setting up multiple asset hosts in Rails&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;h4&gt;Setting up your asset hosts&lt;/h4&gt;
+
+
+	&lt;p&gt;Set up a &lt;span class=&quot;caps&quot;&gt;CNAME&lt;/span&gt; entry for each asset host pointing to &lt;code&gt;s3.amazonaws.com&lt;/code&gt;.  How you do this depends on your domain host.  Here&#8217;s what it looks like on &lt;a href=&quot;http://easydns.com&quot;&gt;easydns&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src=&quot;http://spattendesign.com/assets/2007/10/24/easydns_cname.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;You may need to wait up to 24 hours for the &lt;span class=&quot;caps&quot;&gt;DNS&lt;/span&gt; entries for these new hosts to propagate.&lt;/p&gt;
+
+
+	&lt;h4&gt;Configuring Capistrano&lt;/h4&gt;
+
+
+	&lt;h5&gt;Capistrano installation&lt;/h5&gt;
+
+
+	&lt;p&gt;This plugin requires Capistrano 2.0.0 or greater.&lt;/p&gt;
+
+
+	&lt;p&gt;To upgrade to the latest version (currently 2.1.0):&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;$&amp;gt; gem install capistrano&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Once the plug-in is installed, make sure that the recipes are seen by Capistrano&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;$&amp;gt; cap -T | grep s3_asset_host&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;should return a bunch of tasks.  If you don&#8217;t see anything listed, then you need to update your &lt;code&gt;Capfile&lt;/code&gt; by doing the following (this is &lt;a href=&quot;http://groups.google.com/group/capistrano/browse_thread/thread/531ad32aff5fe5a8&quot;&gt;from Jamis Buck&lt;/a&gt;):&lt;/p&gt;
+
+
+In Capistrano 2.1.0 or above:
+&lt;pre&gt;
+$&amp;gt; cd RAILS_ROOT
+$&amp;gt; rm Capfile
+$&amp;gt; capify .
+&lt;/pre&gt;
+
+	&lt;p&gt;If you do not want to delete your &lt;code&gt;Capify&lt;/code&gt; file, or if you are using Capistrano 2.0.0, add the following line to your &lt;code&gt;Capify&lt;/code&gt; file:&lt;br /&gt;
+&lt;code&gt;Dir['vendor/plugins/*/recipes/*.rb'].each { |plugin| load(plugin) }&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;h5&gt;Capistrano configuration&lt;/h5&gt;
+
+
+	&lt;p&gt;Create a new file in &lt;code&gt;RAILS_ROOT/config&lt;/code&gt; called &lt;code&gt;synch_s3_asset_host.rb&lt;/code&gt;.  Add the following lines to it, and edit to suit:&lt;/p&gt;
+
+
+&lt;pre&gt;
+# =============================================================================
+# S3 ASSET HOST OPTIONS
+# =============================================================================
+set :asset_host_name, &quot;assets%d.example.com&quot; 
+set :aws_access_key, &quot;your Amazon AWS access key&quot; # You can also set this in your environment as AMAZON_ACCESS_KEY_ID
+set :amazon_secret_access_key, &quot;your Amazon AWS secret&quot; # You can also set this in your environment as AMAZON_SECRET_ACCESS_KEY
+# set :dry_run, false# Set to true if you want to test the asset_host uploading without doing anything on Amazon S3
+before &quot;deploy:symlink&quot;, &quot;s3_asset_host:upload_changed&quot; 
+&lt;/pre&gt;
+
+	&lt;p&gt;You have to do one more thing: in &lt;code&gt;RAILS_ROOT/config/deploy.rb&lt;/code&gt;.  Specify one of your web hosts as an &#8220;asset_host_syncher&#8221;, like this:&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;role :web, webserver1, :asset_host_syncher =&amp;gt; true&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;h4&gt;The first deploy&lt;/h4&gt;
+
+
+	&lt;p&gt;Commit all changes to your rails application and do the initial bucket setup:&lt;/p&gt;
+
+
+&lt;pre&gt;
+$&amp;gt; cap s3_asset_host:setup
+$&amp;gt; svn commit -m &quot;Adding synch_s3_asset_host plugin&quot; 
+$&amp;gt; cap deploy
+&lt;/pre&gt;
+
+This will do the following:
+	&lt;ul&gt;
+	&lt;li&gt;Create your Amazon &lt;span class=&quot;caps&quot;&gt;S3 AWS&lt;/span&gt; buckets&lt;/li&gt;
+		&lt;li&gt;upload everything in &lt;span class=&quot;caps&quot;&gt;RAILS&lt;/span&gt;_ROOT/public (in your svn repository) to each bucket&lt;/li&gt;
+		&lt;li&gt;Set the revision in each bucket to the latest revision in your repository.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;This could take a while if you have lots of images or other big files.&lt;/p&gt;
+
+
+	&lt;h3&gt;You&#8217;re done!&lt;/h3&gt;
+
+
+	&lt;p&gt;That should do it.  Now, every time you run &lt;code&gt;cap deploy&lt;/code&gt;, your asset hosts should be updated with any changes to files in &lt;code&gt;RAILS_ROOT/public&lt;/code&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;Let me know if you have any problems, suggestions or comments.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://spattendesign.com/">
+    <author>
+      <name>Scott</name>
+    </author>
+    <id>tag:spattendesign.com,2007-10-24:17</id>
+    <published>2007-10-24T21:01:00Z</published>
+    <updated>2007-10-24T21:02:34Z</updated>
+    <category term="blog"/>
+    <link href="http://spattendesign.com/2007/10/24/setting-up-multiple-asset-hosts-in-rails" rel="alternate" type="text/html"/>
+    <title>Setting up multiple asset hosts in Rails</title>
+<content type="html">
+            &lt;p&gt;One of the &lt;a href=&quot;http://www.chadfowler.com/2007/2/18/edge-rails-goody-distributed-asset-hosts&quot;&gt;nice goodies&lt;/a&gt; coming in Rails 2.0 is the ability to use &lt;a href=&quot;http://dev.rubyonrails.org/changeset/6161&quot;&gt;multiple asset hosts&lt;/a&gt;.  This article explains how you can use this feature now, without waiting for Rails 2.0, and why you would want to use asset hosts.&lt;/p&gt;
+
+
+	&lt;h3&gt;What&#8217;s an asset host, and why would I want to use it?&lt;/h3&gt;
+
+
+	&lt;p&gt;An asset host is another server, somewhere on the internet, where you store your static files.  These can be javascripts scripts, &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt; stylesheets, images, static html files and anything else that doesn&#8217;t change often.  Basically, anything that lives in your public directory.  You can then use a link to the asset host whenever you want to  include an image, javascript or stylesheet.  For example, &lt;a href=&quot;http://www.plotomatic.com&quot;&gt;Plot-O-Matic&lt;/a&gt; stores its assets at assets0.plotomatic.com &#8212; assets3.plotomatic.com.  You can see the logo here: &lt;a href=&quot;http://assets0.plotomatic.com/images/o-logo.png&quot;&gt;assets0.plotomatic.com/images/o-logo.png&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;So, why would you want to use an asset host?  It &lt;a href=&quot;http://www.die.net/musings/page_load_time/&quot;&gt;turns out&lt;/a&gt; that many browsers limit the number of simultaneous connections to a host.  For Internet Explorer, that number is &lt;strong&gt;two&lt;/strong&gt;.  If you are serving a lot of small images, or you haven&#8217;t bothered to bundle your scripts or stylesheets, this can be a real bottleneck.  Asset hosting allows you to increase the number of hosts a web page is loaded from, removing the bottleneck.&lt;/p&gt;
+
+
+	&lt;h3&gt;Asset hosting in Rails&lt;/h3&gt;
+
+
+Rails has had support for using a single asset host for &lt;a href=&quot;http://casey0.com/archive/2006/October/How_to_serve_the_rails_public_directory_out_of_S3.html&quot;&gt;at least a year&lt;/a&gt;.  It&#8217;s achieved by setting &lt;code&gt;config.action_controller.asset_host&lt;/code&gt; in your development environment, &lt;code&gt;development.rb&lt;/code&gt;.  For example,
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;config.action_controller.asset_host = &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;http://assets.plotomatic.com&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+Once you do this, rails will pre-pend every link created with an &lt;a href=&quot;http://api.rubyonrails.org/classes/ActionView/Helpers/AssetTagHelper.html&quot;&gt;asset tag helper&lt;/a&gt; with your asset host name.  So, a link like this
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&amp;lt;%= image_tag &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;o-logo.png&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;%&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+will now result in the following link
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;ta&quot;&gt;&amp;lt;img&lt;/span&gt; &lt;span class=&quot;an&quot;&gt;alt&lt;/span&gt;=&lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;o-logo&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;an&quot;&gt;src&lt;/span&gt;=&lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;http://assets.plotomatic.com/images/o-logo.png?1193172652&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;ta&quot;&gt;/&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Asset tag helpers are things like &lt;code&gt;image_tag&lt;/code&gt;, &lt;code&gt;stylesheet_link_tag&lt;/code&gt; or &lt;code&gt;javascript_include_tag&lt;/code&gt;.  Links made without asset tag helpers will not automatically use your asset host.&lt;/p&gt;
+
+
+	&lt;h3&gt;Multiple asset hosts&lt;/h3&gt;
+
+
+	&lt;p&gt;Now, having a single asset host is nice, but using multiple asset hosts can really speed up those page load times.  Here&#8217;s how you do it:&lt;/p&gt;
+
+
+	&lt;h4&gt;Get Rails ready for multiple asset hosts&lt;/h4&gt;
+
+
+	&lt;p&gt;There are two ways you can do this.&lt;/p&gt;
+
+
+	&lt;h6&gt;Upgrade to Rails 2.0&lt;/h6&gt;
+
+
+	&lt;p&gt;For instructions, scroll to the bottom of &lt;a href=&quot;http://weblog.rubyonrails.org/2007/9/30/rails-2-0-0-preview-release&quot;&gt;this post&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;h6&gt;Install the multiple_asset_hosts plugin&lt;/h6&gt;
+
+
+	&lt;p&gt;&lt;code&gt;script/plugin install svn://svn.spattendesign.com/svn/plugins/multiple_asset_hosts&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;All this plugin does is monkeypatch in the multiple asset host functionality from Rails Edge.&lt;/p&gt;
+
+
+	&lt;h4&gt;Pick a name for your asset hosts&lt;/h4&gt;
+
+
+	&lt;p&gt;The change from single to multiple asset hosts is simple.  You simply put a &lt;code&gt;%d&lt;/code&gt; somewhere in your asset host name in &lt;code&gt;production.rb&lt;/code&gt;.  For Plot-O-Matic, the setting is&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;config.action_controller.asset_host = &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;http://assets%d.plotomatic.com&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Rails will replace the &lt;code&gt;%d&lt;/code&gt; with either 0, 1, 2 or 3.&lt;/p&gt;
+
+
+	&lt;h4&gt;Set up your asset hosts&lt;/h4&gt;
+
+
+	&lt;p&gt;You need to provide four asset hosts, so I set up four asset hosts named
+ &lt;code&gt;assets0.plotomatic.com&lt;/code&gt;, &lt;code&gt;assets1.plotomatic.com&lt;/code&gt;, &lt;code&gt;assets2.plotomatic.com&lt;/code&gt; and &lt;code&gt;assets3.plotomatic.com&lt;/code&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;I used Amazon S3 for my asset hosts, which was simple:&lt;/p&gt;
+
+
+	&lt;ol&gt;
+	&lt;li&gt;set up four buckets called &lt;code&gt;assets0.plotomatic.com&lt;/code&gt;, &lt;code&gt;assets1.plotomatic.com&lt;/code&gt;, &lt;code&gt;assets2.plotomatic.com&lt;/code&gt; and &lt;code&gt;assets3.plotomatic.com&lt;/code&gt;&lt;/li&gt;
+		&lt;li&gt;Set up a &lt;span class=&quot;caps&quot;&gt;CNAME&lt;/span&gt; entry for each asset host pointing to &lt;code&gt;s3.amazonaws.com&lt;/code&gt;.  How you do this depends on your domain host.  Here&#8217;s what it looks like on &lt;a href=&quot;http://easydns.com&quot;&gt;easydns&lt;/a&gt;&lt;/li&gt;
+	&lt;/ol&gt;
+
+
+	&lt;p&gt;&lt;img src=&quot;http://spattendesign.com/assets/2007/10/24/easydns_cname.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+
+	&lt;h4&gt;Deploy it&lt;/h4&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;Commit your changes to your version control system&lt;/li&gt;
+		&lt;li&gt;Upload everything in your public directory to each of your asset hosts.&lt;/li&gt;
+		&lt;li&gt;Deploy and restart your web server&lt;/li&gt;
+	&lt;/ul&gt;
+          </content>  </entry>
+  <entry xml:base="http://spattendesign.com/">
+    <author>
+      <name>Scott</name>
+    </author>
+    <id>tag:spattendesign.com,2007-10-19:14</id>
+    <published>2007-10-19T17:40:00Z</published>
+    <updated>2007-10-19T18:19:57Z</updated>
+    <category term="blog"/>
+    <link href="http://spattendesign.com/2007/10/19/running-tests-on-deploy" rel="alternate" type="text/html"/>
+    <title>running tests on deploy</title>
+<content type="html">
+            &lt;p&gt;A simple Capistrano 2.0 recipe, installable as a plugin, that runs all of your tests before the final symlink test.&lt;/p&gt;
+
+
+	&lt;h3&gt;Synopsis&lt;/h3&gt;
+
+
+	&lt;p&gt;This plug-in is a Capistrano extension.  It requires Capistrano 2.0.0 or greater.&lt;/p&gt;
+
+
+	&lt;p&gt;Once installed, running &lt;code&gt;cap deploy&lt;/code&gt; will run all of your tests before doing the final symlink.&lt;/p&gt;
+
+
+	&lt;p&gt;If the tests fail, the symlink will not be created and your deployment will roll back.&lt;/p&gt;
+
+
+	&lt;p&gt;to deploy without tests,&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;cap deploy:without_tests&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;h3&gt;Installation&lt;/h3&gt;
+
+
+	&lt;h4&gt;Plugin installation&lt;/h4&gt;
+
+
+	&lt;p&gt;You should be able to install with the following command (from rails root):&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;script/plugin install run_tests_on_deploy&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;If that doesn&#8217;t work, try&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;script/plugin install svn://svn.spattendesign.com/svn/plugins/run_tests_on_deploy&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;If that doesn&#8217;t work, send me an e-mail at &lt;a href=&quot;mailto:scott@spattendesign.com&quot;&gt;scott@spattendesign.com&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;h4&gt;Capistrano configuration&lt;/h4&gt;
+
+
+	&lt;p&gt;This plugin requires Capistrano 2.0.0 or greater.
+To upgrade to the latest version (currently 2.1.0)&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;gem install capistrano&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Once the plug-in is installed, make sure that the recipes are seen by Capistrano&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;cap -T | grep deploy:without_tests&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;should return&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;  cap deploy:without_tests          # deploy without running tests&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;If capistrano is not seeing the &lt;code&gt;deploy:without_tests&lt;/code&gt; task, then you need to update your Capfile.&lt;/p&gt;
+
+
+	&lt;p&gt;(The following is from &lt;a href=&quot;http://groups.google.com/group/capistrano/browse_thread/thread/531ad32aff5fe5a8&quot;&gt;a post by Jamis Buck&lt;/a&gt;)&lt;/p&gt;
+
+
+	&lt;p&gt;In Capistrano 2.1.0 or above:
+you can delete your Capify file in rails root, and then, from rails root, run&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;capify .&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;If you do not want to delete your Capify file, or if you are using Capistrano 2.0.0, add the following line to your Capify file:&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;  Dir['vendor/plugins/*/recipes/*.rb'].each { |plugin| load(plugin) }&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;h3&gt;Details&lt;/h3&gt;
+
+
+The &lt;code&gt;deploy:run_tests&lt;/code&gt; task is executed before the &lt;code&gt;symlink&lt;/code&gt;
+task.  The &lt;code&gt;run_tests&lt;/code&gt; task does the following:
+	&lt;ul&gt;
+	&lt;li&gt;prepares your test db with &lt;code&gt;rake db:test:prepare&lt;/code&gt;&lt;/li&gt;
+		&lt;li&gt;runs all of your tests with &lt;code&gt;rake test&lt;/code&gt; at a nice level of -10&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;The &lt;code&gt;deploy:run_tests&lt;/code&gt; task won&#8217;t work if you call it by itself, as it runs from the
+release_path directory, which won&#8217;t exist unless called after &lt;code&gt;deploy:update_code&lt;/code&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;to deploy without tests, &lt;code&gt;cap deploy:without_tests&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;you can also set the run_tests option to 0 from the command line like this:&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;cap -S run_tests=0 deploy&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;this allows you to do things like deploying with migrations but without tests:&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;cap -S run_tests=0 deploy:migrations&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;h3&gt;Genesis&lt;/h3&gt;
+
+
+	&lt;p&gt;The original idea for the &lt;code&gt;:run_tests&lt;/code&gt; task is from the &lt;a href=&quot;http://blog.testingrails.com/2006/9/4/running-tests-on-deploy-with-capistrano&quot;&gt;testing rails blog&lt;/a&gt;,
+which, sadly, seems to be defunct.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://spattendesign.com/">
+    <author>
+      <name>Scott</name>
+    </author>
+    <id>tag:spattendesign.com,2007-10-16:10</id>
+    <published>2007-10-16T18:42:00Z</published>
+    <updated>2007-10-18T15:53:12Z</updated>
+    <category term="blog"/>
+    <link href="http://spattendesign.com/2007/10/16/updating-rdig-on-deploy" rel="alternate" type="text/html"/>
+    <title>updating rdig on deploy</title>
+<content type="html">
+            &lt;p&gt;Here&#8217;s a simple little Capistrano 2.0 recipe to update your &lt;a href=&quot;http://rdig.rubyforge.org/&quot;&gt;rdig&lt;/a&gt; search index after every deploy.&lt;/p&gt;
+
+
+	&lt;p&gt;Add the following lines to &lt;code&gt;config/deploy.rb&lt;/code&gt;&lt;/p&gt;
+
+
+&lt;table class=&quot;CodeRay&quot;&gt;&lt;tr&gt;
+  &lt;td title=&quot;click to toggle&quot; class=&quot;line_numbers&quot;&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class=&quot;code&quot;&gt;&lt;pre&gt;namespace &lt;span class=&quot;sy&quot;&gt;:deploy&lt;/span&gt; &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt; &lt;tt&gt;
+&lt;/tt&gt;  after &lt;span class=&quot;sy&quot;&gt;:deploy&lt;/span&gt;, &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;deploy:update_rdig&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  desc &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;Update the rdig database.  This has to be done after re-starting, as it looks at the live web-site&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  task &lt;span class=&quot;sy&quot;&gt;:update_rdig&lt;/span&gt; &lt;span class=&quot;r&quot;&gt;do&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    run &lt;span class=&quot;s&quot;&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;cd &lt;/span&gt;&lt;span class=&quot;il&quot;&gt;&lt;span class=&quot;dl&quot;&gt;#{&lt;/span&gt;current_path&lt;span class=&quot;dl&quot;&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt; &amp;amp;&amp;amp; rdig -c config/rdig_config.rb&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class=&quot;r&quot;&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;This will run automatically after every deploy.  If you just want to run it manually, comment out the line that starts with &lt;code&gt;after ...&lt;/code&gt;.  
+You can then run it manually with &lt;code&gt;cap deploy:update_rdig&lt;/code&gt;&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://spattendesign.com/">
+    <author>
+      <name>Scott</name>
+    </author>
+    <id>tag:spattendesign.com,2007-10-11:9</id>
+    <published>2007-10-11T19:46:00Z</published>
+    <updated>2007-10-18T15:53:28Z</updated>
+    <category term="blog"/>
+    <link href="http://spattendesign.com/2007/10/11/ruby-unit-test-command-line-options" rel="alternate" type="text/html"/>
+    <title>Ruby unit test command line options</title>
+<content type="html">
+            &lt;p&gt;Here are a few tips and tricks for unit tests&lt;/p&gt;
+
+
+	&lt;p&gt;To find all of the command line options for the test::unit suite, call a unit test with &lt;code&gt;--help&lt;/code&gt;:&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;ruby some_test.rb --help&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;The output will look something like this&lt;/p&gt;
+
+
+&lt;pre&gt;
+~/tests $&amp;gt;ruby some_test.rb --help
+Test::Unit automatic runner.
+Usage: test/unit/graph_test.rb [options] [-- untouched arguments]
+
+    -r, --runner=RUNNER              Use the given RUNNER.
+                                     (c[onsole], f[ox], g[tk], g[tk]2, t[k])
+    -n, --name=NAME                  Runs tests matching NAME.
+                                     (patterns may be used).
+    -t, --testcase=TESTCASE          Runs tests in TestCases matching TESTCASE.
+                                     (patterns may be used).
+    -v, --verbose=[LEVEL]            Set the output level (default is verbose).
+                                     (s[ilent], p[rogress], n[ormal], v[erbose])        --                           Stop processing options so that the
+                                     remaining options will be passed to the
+                                     test.
+    -h, --help                       Display this help.
+
+Deprecated options:
+        --console                    Console runner (use --runner).
+        --gtk                        GTK runner (use --runner).
+        --fox                        Fox runner (use --runner).
+&lt;/pre&gt;
+
+	&lt;h3&gt;Running only some tests&lt;/h3&gt;
+
+
+	&lt;p&gt;The &lt;code&gt;-n&lt;/code&gt; option is my favourite.  You can use it like this to call a single test by giving it the name of a test method:&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;ruby some_test.rb -n test_something_very_important&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Even better, you can use a regular expression and all of the matching tests will be run.  For example, if I had a graph model that tested the creation of .png, .eps and .gif files with methods called &lt;code&gt;test_create_png_file&lt;/code&gt;, &lt;code&gt;test_create_eps_file&lt;/code&gt; and &lt;code&gt;test_create_gif_file&lt;/code&gt;, I could run them all with the command&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;ruby test/unit/graph_test.rb -n /_create_.*_file/&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;you can also use the &lt;code&gt;-n&lt;/code&gt; option multiple times.  So, if I just wanted to test eps and png file creation, I could use&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;ruby test/unit/graph_test.rb -n test_create_eps_file -n test_create_png_file&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;The same thing applies to selecting test cases using the &lt;code&gt;-t&lt;/code&gt; option.&lt;/p&gt;
+
+
+	&lt;h3&gt;Cranking up the verbosity&lt;/h3&gt;
+
+
+	&lt;p&gt;Sometimes you want to see what tests are failing without waiting for all of the tests to run.  Use the &lt;code&gt;-v&lt;/code&gt; or &lt;code&gt;--verbose&lt;/code&gt; options to do this.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;ruby test/unit/&amp;lt;some_test&amp;gt;_test.rb -v v&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;or&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;ruby test/unit/&amp;lt;some_test&amp;gt;_test.rb --verbose=verbose&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Then, instead of just the boring old periods appearing as each test passes&lt;/p&gt;
+
+
+&lt;pre&gt;
+~/rails/grapher/trunk/vendor/plugins/ploticus $&amp;gt;ruby test/ploticus_test.rb 
+Loaded suite test/ploticus_test
+Started
+.................
+Finished in 0.10768 seconds.
+
+17 tests, 118 assertions, 0 failures, 0 errors
+&lt;/pre&gt;
+
+	&lt;p&gt;you&#8217;ll see this instead:&lt;/p&gt;
+
+
+&lt;pre&gt;
+~/rails/grapher/trunk/vendor/plugins/ploticus $&amp;gt;ruby test/ploticus_test.rb -v v
+Loaded suite test/ploticus_test
+Started
+test_data_from_columns(PloticusTest): .
+test_data_from_columns_with_ragged_data(PloticusTest): .
+test_data_from_hash(PloticusTest): .
+test_data_from_hash_with_nils(PloticusTest): .
+test_data_from_hash_with_ragged_data(PloticusTest): .
+test_data_from_rows(PloticusTest): .
+test_first_proc_by_name(PloticusTest): .
+test_has_proc(PloticusTest): .
+test_num_procs_by_name(PloticusTest): .
+test_pad_to(PloticusTest): .
+test_ploticus_proc_has_line(PloticusTest): .
+test_ploticus_proc_line(PloticusTest): .
+test_png_graph_creation(PloticusTest): .
+test_proc_with_colons_in_it(PloticusTest): .
+test_procs_are_enumerable(PloticusTest): .
+test_procs_by_name(PloticusTest): .
+test_svg_graph_creation(PloticusTest): .
+
+Finished in 0.042398 seconds.
+
+17 tests, 118 assertions, 0 failures, 0 errors
+&lt;/pre&gt;
+
+	&lt;p&gt;Obviously you don&#8217;t want to do this all of the time, but it can come in handy.&lt;/p&gt;
+
+
+	&lt;h3&gt;Running tests with a &lt;span class=&quot;caps&quot;&gt;GUI&lt;/span&gt;&lt;/h3&gt;
+
+
+	&lt;p&gt;If you get bored with the command line, try using the &#8220;runner&#8221; option.  The tk option worked for me without having to install anything:&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;ruby some_test.rb -r tk&lt;/code&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;You&#8217;ll see something like this:&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src=&quot;http://spattendesign.com/assets/2007/10/12/tk_unit_test_runner.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Other valid options are console, fox, gtk, gtk2, tk.&lt;/p&gt;
+
+
+	&lt;p&gt;You can mix the &lt;code&gt;-n&lt;/code&gt; and &lt;code&gt;-t&lt;/code&gt; options as well if you want&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;code&gt;ruby test/unit/graph_test.rb -r t -n /downloadable/&lt;/code&gt;&lt;/p&gt;
+          </content>  </entry>
+</feed>

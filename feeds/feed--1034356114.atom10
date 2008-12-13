@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+
+<channel>
+	<title>Sunfox</title>
+	<atom:link href="http://sunfox.org/feed/" rel="self" type="application/rss+xml" />
+	<link>http://sunfox.org</link>
+	<description>Le blogue de Sunny Ripert</description>
+	<pubDate>Thu, 04 Dec 2008 22:00:03 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6.3</generator>
+	<language>en</language>
+			<item>
+		<title>Rails Party, Paris On Rails 2008 et Apéro Ruby</title>
+		<link>http://sunfox.org/blog/2008/12/03/rails-party-paris-on-rails-2008-et-apero-ruby/</link>
+		<comments>http://sunfox.org/blog/2008/12/03/rails-party-paris-on-rails-2008-et-apero-ruby/#comments</comments>
+		<pubDate>Wed, 03 Dec 2008 11:20:51 +0000</pubDate>
+		<dc:creator>Sunny</dc:creator>
+		
+		<category><![CDATA[articles]]></category>
+
+		<category><![CDATA[conférences]]></category>
+
+		<category><![CDATA[cosmic]]></category>
+
+		<category><![CDATA[rails]]></category>
+
+		<category><![CDATA[ruby]]></category>
+
+		<guid isPermaLink="false">http://sunfox.org/?p=1236</guid>
+		<description><![CDATA[Compte-rendu de trois rencontres autour de Ruby et Rails.
+Rails Party, pour les geeks
+Les conférenciers de la Rails Party on eut entre 40 et 5 minutes pour nous parler de : RSpec, bonnes pratiques Active Record, Facebooker, indexation de bases de données avec Sphinx, Lazy pagination, YAPS, migration vers Rails 2.2, i18n dans Rails 2.2, déploiement [...]]]></description>
+			<content:encoded><![CDATA[<p>Compte-rendu de trois rencontres autour de Ruby et Rails.</p>
+<h3><strong>Rails Party</strong>, pour les geeks</h3>
+<p>Les conférenciers de la Rails Party on eut entre 40 et 5 minutes pour nous parler de : <strong>RSpec</strong>, bonnes pratiques Active Record, <strong>Facebooker</strong>, indexation de bases de données avec Sphinx, <strong>Lazy pagination</strong>, <strong><abbr lang="en" title="Yet Another Prototype/Scriptaculous">YAPS</abbr></strong>, migration vers <strong>Rails 2.2</strong>, <strong>i18n</strong> dans Rails 2.2, déploiement d&#8217;une très grosse appli Rails et desktop. Ces conférences était extrêmement intéressantes et n&#8217;avaient rien à envier aux conférences payantes du lendemain ! Domamge qu&#8217;il ait fallu parfois tendre l&#8217;oreille vers deux bonnes présentations en même temps.</p>
+<p>Chapeau bas à Jean-François et au reste de l&#8217;équipe de Ruby France d&#8217;avoir organisé cette rencontre un brin informelle et surtout gratuite en si peu de temps.</p>
+<h3><strong>Paris On Rails</strong>, pour les décideurs</h3>
+<p style="float:right;margin:0 0 .5em 1em"><img src="http://sunfox.org/blog/wp-content/uploads/2006/11/parisonrails.png" alt="[Logo Paris On Rails]" /></p>
+<p><strong><abbr title="David Heinemeier Hansson">DHH</abbr></strong>, le créateur de Rails a répondu à nos questions depuis Chicago. Il est bon de le voir s&#8217;emporter (il a dit <q lang="en">bullshit</q>, je suis témoin !) quand on lui a posé une question sur Merb. Pour ma part j&#8217;ai été plus politiquement correct, je lui ait demandé quel t-shirt il portait :]</p>
+<p><strong>Michael Koziarksi</strong> membre de l&#8217;équipe de développement de Rails, nous faisait une conférence sur les <strong>performances de Rails</strong>. Extrêmement instructif mais en anglais avec un accent néerlandais débité à une vitesse folle. Je relirais ses diaporamas avec grand intérêt.</p>
+<blockquote style="float: right; color: rgb(173, 176, 154); font-size: 1.5em; width: 9em;" lang="en"><p>Don&#8217;t be a Ruby developer</p></blockquote>
+<p>J&#8217;ai particulièrement apprécié la vidéo-conférence de <strong>Russ Olsen</strong>, l&#8217;auteur du livre <strong lang="en">Design Patterns in Ruby</strong> pour ces anecdotes sur les tous premiers pots en terre glaise décorés comme des paniers, sur son fils de 8 ans et lorsqu&#8217;il rappelait à quel point il ne fallait jamais s&#8217;arrêter sur une technologie et toujours voir de l&#8217;avant. Si j&#8217;aime la communauté Ruby c&#8217;est aussi parce qu&#8217;on y parle beaucoup d&#8217;Erlang, Smalltalk, io et autres langages.</p>
+<p><strong>Mathieu Fosse</strong> nous vantant les mérites de la librairie JavaScript Mootools et <strong>Didier Lafforgue</strong> de Liquid, un moteur de rendu de pages bien trop complexe. Mais aucun des deux n&#8217;a réussi à me convaincre d&#8217;utiliser leur techno. </p>
+<p><strong>Guillaume Desrat</strong> a fait une très chouette présentation avec les nouveautés de <strong>Ruby 1.9</strong>, (avec un interpréteur 4.5 &times; plus rapide que Ruby 1.8 !) qui donne envie d&#8217;y passer.</p>
+<blockquote style="float: right; color: rgb(173, 176, 154); font-size: 1.5em; width: 7em;" lang="en"><p>Les tests, c&#8217;est bien</p></blockquote>
+<p>On retrouvait <strong>Jean-Michel Garnier</strong> pour nous parler des tests d&#8217;interface Web qu&#8217;il n&#8217;aimait pas faire l&#8217;année dernière. Ces tests d&#8217;interfaces d&#8217;exemples étaient assez simples pour que ça me convainque d&#8217;en faire, au moins un minimum. Merci Jean-Michel d&#8217;être passé me dire bonjour :). <strong>Philippe Hanrigou</strong>, ensuite, présentait les tests d&#8217;acceptation en distribuant les tests avec Selenium Grid. On en retiens que les tests c&#8217;est bien mais que c&#8217;est long et qu&#8217;il faut bien se garder d&#8217;avouer qu&#8217;on en fait pas&#8230;</p>
+<h3><strong>Apéro Ruby</strong>, pour les piliers de bar</h3>
+<p>C&#8217;était l&#8217;occasion de se détendre, de manger une soupe à l&#8217;oignon et de continuer de très intéressantes discussions autour de Ruby, en petit comité, avec des habitués de Ruby France.</p>
+<hr />
+<p>Merci aux organisateurs, sponsors et à Julie et ma boîte <a href="http://agencecosmic.com">Cosmic Communication</a> de m&#8217;avoir offert la journée pour aller aux conférences payantes de Paris On Rails. C&#8217;est à ça qu&#8217;on reconnaît les entreprises dans lesquelles on aime bosser :)</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sunfox.org/blog/2008/12/03/rails-party-paris-on-rails-2008-et-apero-ruby/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Party!</title>
+		<link>http://sunfox.org/blog/2008/11/28/party/</link>
+		<comments>http://sunfox.org/blog/2008/11/28/party/#comments</comments>
+		<pubDate>Fri, 28 Nov 2008 11:37:30 +0000</pubDate>
+		<dc:creator>Sunny</dc:creator>
+		
+		<category><![CDATA[articles]]></category>
+
+		<category><![CDATA[conférences]]></category>
+
+		<category><![CDATA[rails]]></category>
+
+		<category><![CDATA[ruby]]></category>
+
+		<category><![CDATA[ubuntu]]></category>
+
+		<guid isPermaLink="false">http://sunfox.org/?p=1206</guid>
+		<description><![CDATA[Ce week-end sur Paris je serais à l&#8217;Ubuntu Party et à la Rails Party. Les deux événements sont des conférences totalement gratuites, un brin geek, bon enfant, organisées et animées par des passionnés.
+Que vous vouliez discuter Ubuntu et logiciels libres, faire vos premiers pas sous Linux ou troller allègrement passez-donc Samedi et Dimanche à l&#8217;intrépide [...]]]></description>
+			<content:encoded><![CDATA[<p>Ce week-end sur Paris je serais à l&#8217;<strong>Ubuntu Party</strong> et à la <strong>Rails Party</strong>. Les deux événements sont des conférences totalement gratuites, un brin geek, bon enfant, organisées et animées par des passionnés.</p>
+<p class="vevent">Que vous vouliez discuter Ubuntu et logiciels libres, faire vos premiers pas sous Linux ou troller allègrement passez-donc <strong><abbr class="dtstart" title="2008-11-29">Samedi</abbr> et <abbr class="dtend" title="2008-11-30">Dimanche</abbr> à l&#8217;intrépide <a class="url summary" title="Ubuntu Party sur Paris" href="http://www.ubuntu-party.org/paris/">Ubuntu Ibex Party</a></strong>, à la <span class="location">Cité des Sciences et de l&#8217;Industrie</span>. Cette Édition promet d&#8217;être grandiose avec conférences, démonstrations, et débats mais avec en plus <a href="http://wiki.frenchmozilla.fr/wiki/index.php/Mozilla_Ubuntu_Party">un stand, des animations et ateliers Mozilla</a>.</p>
+<p class="vevent"><img class="alignnone size-medium wp-image-1217" style="float:right;margin:0 0 .5em 1em" src="http://sunfox.org/blog/wp-content/uploads/2008/11/rubyforweb.png" alt="Logo Ruby France" width="258" height="99" /> Et si vous voulez parler Ruby, Rails, développement agile, <abbr title="Modèle Vue Controlleur">MVC</abbr> ou bien également troller allègrement, passez-donc <strong><abbr class="dtstart" title="2008-11-30">Dimanche</abbr> à la <a class="url summary" title="Rails Party 2008" href="http://www.rubyfrance.org/evenements/rails-party-2008">Rails Party</a></strong>. À la veille de <a href="http://www.parisonrails.info/">Paris on Rails 2008</a>, au bar <span class="location">Dune</span> et organisée par Jean-François de Ruby France, le programme est prometteur avec <em lang="en">Hackfest</em>, conférences et <em lang="en">Lightning Talks</em> de gens très bien  (dont trois anciens étudiants de l&#8217;<abbr title="Mon école, l'Institut Supérieur d'Informatique Appliquée">INSIA</abbr> !).</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sunfox.org/blog/2008/11/28/party/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Les matchs d&#8217;improvisation</title>
+		<link>http://sunfox.org/blog/2008/10/24/les-matchs-dimprovisation/</link>
+		<comments>http://sunfox.org/blog/2008/10/24/les-matchs-dimprovisation/#comments</comments>
+		<pubDate>Fri, 24 Oct 2008 14:09:38 +0000</pubDate>
+		<dc:creator>Sunny</dc:creator>
+		
+		<category><![CDATA[articles]]></category>
+
+		<category><![CDATA[ego]]></category>
+
+		<category><![CDATA[improvisation]]></category>
+
+		<category><![CDATA[théâtre]]></category>
+
+		<guid isPermaLink="false">http://sunfox.org/?p=1164</guid>
+		<description><![CDATA[
+LIP contre Restons Calme
+photo de BBiP
+Connaissez-vous les matchs d&#8217;improvisation&#160;? C&#8217;est une forme de théâtre venue du Québec où, dans un décor de hockey, des équipes doivent improviser un thème, imposé par un arbitre. Celui-ci impose également une catégorie, le nombre de joueurs et la durée de l&#8217;improvisation.
+A partir de là c&#8217;est un régal à voir [...]]]></description>
+			<content:encoded><![CDATA[<p class="polaroid" style="float:right"><a href="http://flickr.com/photos/bbip/2420560383/"><img src="http://farm3.static.flickr.com/2149/2420560383_f77cc8d17f_m.jpg" alt="[Photo de joueurs lors d'une improvisation]" /></a><br />
+<abbr>LIP</abbr> contre Restons Calme<br />
+<small>photo de <a href="http://flickr.com/photos/bbip/">BBiP</a></small></p>
+<p>Connaissez-vous les <a href="http://fr.wikipedia.org/wiki/Match_d%27improvisation">matchs d&#8217;improvisation</a>&nbsp;? C&#8217;est une forme de théâtre venue du Québec où, dans un décor de hockey, des équipes doivent improviser un thème, imposé par un arbitre. Celui-ci impose également une catégorie, le nombre de joueurs et la durée de l&#8217;improvisation.</p>
+<p>A partir de là c&#8217;est un régal à voir car quand les équipes sont bonnes les situations sont toujours loufoques, absurdes, drôles a en pleurer. A la fin de chaque improvisation le public doit voter pour l&#8217;équipe qui a le plus brillé à l&#8217;aide d&#8217;un papier de couleur. Et si l&#8217;arbitre est rude et méchant (ils le sont toujours) lancez-lui donc le chausson que l&#8217;on vous a fourni a l&#8217;entrée&nbsp;!</p>
+<p>Moi qui voulait faire du théâtre depuis longtemps cette année je me suis laissé tenter par ce monde de l&#8217;improvisation et j&#8217;ai rejoint l&#8217;amicale ligue de la <abbr><a href="http://www.ludi-idf.com/" title="Site officiel de la ligue universitaire d'improvisation d'Île de France">LUDI-IDF</a></abbr> pour prendre des cours d&#8217;improvisation. Souhaitez-moi bonne chance !</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sunfox.org/blog/2008/10/24/les-matchs-dimprovisation/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Bouton Paris Web 2008</title>
+		<link>http://sunfox.org/blog/2008/10/24/bouton-paris-web-2008/</link>
+		<comments>http://sunfox.org/blog/2008/10/24/bouton-paris-web-2008/#comments</comments>
+		<pubDate>Fri, 24 Oct 2008 13:55:20 +0000</pubDate>
+		<dc:creator>Sunny</dc:creator>
+		
+		<category><![CDATA[articles]]></category>
+
+		<category><![CDATA[humour]]></category>
+
+		<category><![CDATA[image]]></category>
+
+		<category><![CDATA[paris]]></category>
+
+		<category><![CDATA[standards du web]]></category>
+
+		<category><![CDATA[webdev]]></category>
+
+		<guid isPermaLink="false">http://sunfox.org/?p=1178</guid>
+		<description><![CDATA[Parmi les boutons de promotion pour Paris Web 2008 il en manquait un.
+
+]]></description>
+			<content:encoded><![CDATA[<p>Parmi <a href="http://www.paris-web.fr/2008/Paris-Web-2008-vous-y-serez" title="Boutons faisant la promotion de Paris Web 2008">les boutons de promotion</a> pour Paris Web 2008 il en manquait un.</p>
+<p><a href="http://www.paris-web.fr/" title="Paris-Web 2008"><img src="http://sunfox.org/blog/wp-content/uploads/2008/10/paris-web.png" alt="Paris-Web 2008, 13, 14 et 15 novembre : J'y serai pas mais allez-y quand même" width="121" height="195" /></a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://sunfox.org/blog/2008/10/24/bouton-paris-web-2008/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>&#8220;Papa… qu&#8217;est ce que tu veux faire quand tu seras grand ?&#8221;</title>
+		<link>http://sunfox.org/blog/2008/10/14/papa-qu-est-ce-que-tu-veux-faire-quand-tu-seras-grand/</link>
+		<comments>http://sunfox.org/blog/2008/10/14/papa-qu-est-ce-que-tu-veux-faire-quand-tu-seras-grand/#comments</comments>
+		<pubDate>Tue, 14 Oct 2008 08:21:04 +0000</pubDate>
+		<dc:creator>Sunny</dc:creator>
+		
+		<category><![CDATA[articles]]></category>
+
+		<category><![CDATA[amis]]></category>
+
+		<category><![CDATA[copinage]]></category>
+
+		<category><![CDATA[théâtre]]></category>
+
+		<guid isPermaLink="false">http://sunfox.org/?p=1132</guid>
+		<description><![CDATA[
+Beau-beau-baudrier net !
+Pub copinage pour un collègue, qui joue et mets en scène une petite pièce de théâtre qui a égayé mon dimanche après-midi.
+C&#8217;est l&#8217;histoire d&#8217;un père comédien qui tente tant bien que mal d&#8217;empêcher que son fils fasse le même métier que lui. Les scènes tournent autour du métier d&#8217;acteur et de la relation [...]]]></description>
+			<content:encoded><![CDATA[<p class="polaroid" style="float:right;"><a title="Voir la photo de Jean-Michel Coignard et de Jean-Baptiste Richardet sur Flickr" href="http://www.flickr.com/photos/sunfox/2934961049/"><img src="http://sunfox.org/blog/wp-content/uploads/2008/10/jmc.jpg" alt="" title="Photo de Jean-Michel Coignard et Jean-Baptiste Richardet" width="200" height="222" class="alignnone size-full wp-image-1143" /></a><br />
+Beau-beau-baudrier net !</p>
+<p>Pub copinage pour un collègue, qui joue et mets en scène une petite pièce de théâtre qui a égayé mon dimanche après-midi.</p>
+<p>C&#8217;est l&#8217;histoire d&#8217;un père comédien qui tente tant bien que mal d&#8217;empêcher que son fils fasse le même métier que lui. Les scènes tournent autour du métier d&#8217;acteur et de la relation père-fils. Sur scène ça bouge, ça saute, on ne s&#8217;ennuie jamais. Et c&#8217;est drôle. Très drôle.</p>
+<p>Si vous voulez une place réservez-en une vite&nbsp;:</p>
+<blockquote><p><strong>Papa… qu’est ce que tu veux faire quand tu seras grand ?</strong><br />
+Une comédie de <strong>Thierry Redler</strong><br />
+Mise-en-scène&nbsp;: <strong>Jean-Michel Coignard</strong><br />
+Avec <strong>Jean-Michel Coignard</strong> et <strong>Jean-Baptiste Richardet</strong><br />
+Au <strong>Théâtre de Ménilmontant</strong>, 15 rue du Retrait 75020 Paris</p>
+<ul>
+<li>21 h les vendredis 10, 17 et 24 octobre et samedis 11, 18 et 25 octobre</li>
+<li>16h les dimanches 12, 19 et 26 octobre et samedi 25 octobre à 16 h</li>
+</ul>
+<p>Places à 17 € (carte vermeil, étudiants, demandeurs d&#8217;emplois 12 €, groupe à partir de 10 11 €, enfant de moins de 12 ans 10 €), location&nbsp;: 01 46 36 98 60.</p>
+</blockquote>
+<p><abbr title="Post Scriptum">PS</abbr>&nbsp;: Par contre c&#8217;était moins drôle quand le nom d&#8217;un méchant acteur anglais s&#8217;est trouvé être ce jour-là&#8230; &#8220;Sunny Ripert&#8221;. :p</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sunfox.org/blog/2008/10/14/papa-qu-est-ce-que-tu-veux-faire-quand-tu-seras-grand/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>7 chansons du moment</title>
+		<link>http://sunfox.org/blog/2008/09/23/7-chansons-du-moment/</link>
+		<comments>http://sunfox.org/blog/2008/09/23/7-chansons-du-moment/#comments</comments>
+		<pubDate>Tue, 23 Sep 2008 01:59:05 +0000</pubDate>
+		<dc:creator>Sunny</dc:creator>
+		
+		<category><![CDATA[articles]]></category>
+
+		<category><![CDATA[chaînes]]></category>
+
+		<category><![CDATA[musique]]></category>
+
+		<guid isPermaLink="false">http://sunfox.org/?p=1066</guid>
+		<description><![CDATA[
+Hooverphonic - This Strange Effect, de l&#8217;album Blue Wonder Power Milk parce que cette chanson m&#8217;a suivi à travers les années et que depuis leur concert je ne me lasse pas de la réécouter ♫
+Flight of the Conchords - Foux du fafa, une chanson du duo néozélandais de l&#8217;hilarante série Flight of the Conchords. Ils [...]]]></description>
+			<content:encoded><![CDATA[<ol>
+<li><strong class="hl" lang="en">Hooverphonic - This Strange Effect</strong>, de l&#8217;album <span lang="en">Blue Wonder Power Milk</span> parce que cette chanson m&#8217;a suivi à travers les années et que depuis <a href="http://sunfox.org/blog/2008/09/11/no-more-sweet-music/" title="Week-end n belgique">leur concert</a> je ne me lasse pas de la réécouter <a href="http://bearnaise.net/~sunny/7-chansons/01-Hooverphonic-This_Strange_Effect.mp3" title="Télécharger ce morceau au format mp3">♫</a></li>
+<li><strong class="hl" lang="en">Flight of the Conchords - Foux du fafa</strong>, une chanson du duo néozélandais de l&#8217;hilarante série <span lang="en">Flight of the Conchords</span>. Ils chantent en français avec un gros accent et ça me fait sourire à chaque fois <a href="http://bearnaise.net/~sunny/7-chansons/02-Flight_of_the_Conchords-Foux_du_fafa.mp3" title="Télécharger ce morceau au format mp3">♫</a></li>
+<li><strong class="hl" lang="en">Cibo Matto - Speechless</strong>, parce que ce groupe est une grande découverte que j&#8217;écoute quasi-exclusivement sur mon baladeur en ce moment <a href="http://bearnaise.net/~sunny/7-chansons/03-Cibo_Matto-Speechless.mp3" title="Télécharger ce morceau au format mp3">♫</a></li>
+<li><strong class="hl" lang="en">The Moldy Peaches - Who&#8217;s got the crack?</strong>,  une pèche et une douceur bien agréable <a href="http://bearnaise.net/~sunny/7-chansons/04-The_Moldy_Peaches-Whos_got_the_crack.mp3" title="Télécharger ce morceau au format mp3">♫</a></li>
+<li><strong class="hl" lang="en">The Knife - You take my breath away</strong>, ce groupe de musique électronique très étrange ne produit que des morceaux fabuleux <a href="http://bearnaise.net/~sunny/7-chansons/05-The_Knife-You_Take_My_Breath_Away.mp3" title="Télécharger ce morceau au format mp3">♫</a></li>
+<li><strong class="hl" lang="en">Butterfly Boucher feat. David Bowie - Changes</strong> parce que j&#8217;écoute du David Bowie en ce moment et que cette reprise m&#8217;émeut à chaque écoute <a href="http://bearnaise.net/~sunny/7-chansons/06-Butterfly_Boucher_feat_David_Bowie-Changes.mp3" title="Télécharger ce morceau au format mp3">♫</a></li>
+<li><strong class="hl" lang="en">The White Stripes - Hotel Yorba</strong>, enfin, parce qu&#8217;une bonne dose de White Stripes, il n&#8217;y a rien de tel pour commencer une journée :) <a href="http://bearnaise.net/~sunny/7-chansons/07-The_White_Stripes-Hotel_Yorba.mp3" title="Télécharger ce morceau au format mp3">♫</a></li>
+</ol>
+<p><object type="application/x-shockwave-flash" data="http://bearnaise.net/~sunny/7-chansons/player_mp3_multi.swf" width="300" height="135"><param name="movie" value="http://bearnaise.net/~sunny/7-chansons/player_mp3_multi.swf" /><param name="FlashVars" value="bgcolor1=656855&amp;bgcolor2=E9ECD9&amp;width=300&amp;height=145&amp;showvolume=1&amp;currentmp3color=B6B6A2&amp;buttonovercolor=000000&amp;sliderovercolor=000000&amp;mp3=http://bearnaise.net/~sunny/7-chansons/01-Hooverphonic-This_Strange_Effect.mp3|http://bearnaise.net/~sunny/7-chansons/02-Flight_of_the_Conchords-Foux_du_fafa.mp3|http://bearnaise.net/~sunny/7-chansons/03-Cibo_Matto-Speechless.mp3|http://bearnaise.net/~sunny/7-chansons/04-The_Moldy_Peaches-Whos_got_the_crack.mp3|http://bearnaise.net/~sunny/7-chansons/05-The_Knife-You_Take_My_Breath_Away.mp3|http://bearnaise.net/~sunny/7-chansons/06-Butterfly_Boucher_feat_David_Bowie-Changes.mp3|http://bearnaise.net/~sunny/7-chansons/07-The_White_Stripes-Hotel_Yorba.mp3&amp;title=Hooverphonic - This Strange Effect|Flight of the Conchords - Foux du fafa|Cibo Matto - Speechless|The Moldy Peaches - Who's got the crack?|The Knife - You Take My Breath Away|Butterfly Boucher feat David Bowie - Changes|The White Stripes - Hotel Yorba" /></object></p>
+<p>Oui, ceci est une chaîne, refourguée par <a href="http://blog.virgule.info/author/kerdekel">Kerdekel</a> et dont les instructions se trouvent <a href="http://blog.virgule.info/post/2008/09/22/Seven" title="Oui, chez Kerdekel !">en ces bas fonds</a>. Ça me plairait de savoir ce qu&#8217;aiment écouter en ce moment les 7 demoiselles <a href="http://blog.adylk.net/">adylk</a>, <a href="http://areku.bearnaise.net/">areku</a>, <a href="http://weblog.redisdead.net/">Hellgy</a>, <a href="http://infimite.info/blog/">Infimité</a>, <a href="http://lasoeurkaramazov.net/">Mitternacht</a>, <a href="http://www.crushofthemonth.com/a/">Myriam</a> et <a href="http://www.monsters-under-the-bed.com/">^^V^^</a>, même si elles détestent ces chaînes à la noix.</p>
+<p class="info"><small>Qu&#8217;est-ce qu&#8217;il m&#8217;arrive ? Moi qui voulait écrire des articles techniques me voilà à suivre des chaînes, écrire des comptes-rendus de week-ends et lancer <a href="http://sunfox.org/blog/2008/09/16/fulmination-atheiste/" title="L'athéisme parce que je le vaux bien">des trolls poilus</a>&#8230; Aurais-je un blog docteur&nbsp;?</small></p>
+]]></content:encoded>
+			<wfw:commentRss>http://sunfox.org/blog/2008/09/23/7-chansons-du-moment/feed/</wfw:commentRss>
+<enclosure url="http://bearnaise.net/~sunny/7-chansons/01-Hooverphonic-This_Strange_Effect.mp3" length="5713533" type="audio/mpeg" />
+<enclosure url="http://bearnaise.net/~sunny/7-chansons/02-Flight_of_the_Conchords-Foux_du_fafa.mp3" length="4758932" type="audio/mpeg" />
+<enclosure url="http://bearnaise.net/~sunny/7-chansons/03-Cibo_Matto-Speechless.mp3" length="4401280" type="audio/mpeg" />
+<enclosure url="http://bearnaise.net/~sunny/7-chansons/04-The_Moldy_Peaches-Whos_got_the_crack.mp3" length="8220672" type="audio/mpeg" />
+<enclosure url="http://bearnaise.net/~sunny/7-chansons/05-The_Knife-You_Take_My_Breath_Away.mp3" length="5354240" type="audio/mpeg" />
+<enclosure url="http://bearnaise.net/~sunny/7-chansons/06-Butterfly_Boucher_feat_David_Bowie-Changes.mp3" length="5886080" type="audio/mpeg" />
+<enclosure url="http://bearnaise.net/~sunny/7-chansons/07-The_White_Stripes-Hotel_Yorba.mp3" length="3648743" type="audio/mpeg" />
+		</item>
+		<item>
+		<title>Spoiler alert : Dieu n&#8217;existe pas</title>
+		<link>http://sunfox.org/blog/2008/09/16/fulmination-atheiste/</link>
+		<comments>http://sunfox.org/blog/2008/09/16/fulmination-atheiste/#comments</comments>
+		<pubDate>Tue, 16 Sep 2008 16:03:15 +0000</pubDate>
+		<dc:creator>Sunny</dc:creator>
+		
+		<category><![CDATA[articles]]></category>
+
+		<category><![CDATA[rant]]></category>
+
+		<category><![CDATA[religion]]></category>
+
+		<guid isPermaLink="false">http://sunfox.org/?p=990</guid>
+		<description><![CDATA[Aucune religion n&#8217;a raison. Aucun Dieu n&#8217;existe. Si vous croyez en Dieu c&#8217;est que vous avez reçu une bien pauvre éducation. Il faut que vous appreniez à séparer les faits de la fiction, à être moins idiotement crédule.
+Cela peux vous paraître présomptueux, obtus, irrespectueux, blasphématoire (la bonne blague). Ça ne change pas que c&#8217;est la [...]]]></description>
+			<content:encoded><![CDATA[<p>Aucune religion n&#8217;a raison. Aucun Dieu n&#8217;existe. Si vous croyez en Dieu c&#8217;est que vous avez reçu une bien pauvre éducation. Il faut que vous appreniez à séparer les faits de la fiction, à être moins idiotement crédule.</p>
+<p>Cela peux vous paraître présomptueux, obtus, irrespectueux, blasphématoire (la bonne blague). Ça ne change pas que c&#8217;est la vérité. L&#8217;unique. Même si c&#8217;est dur à admettre.</p>
+<blockquote style="background: none; clear: right; margin-top: 1em; float: right; width: 10em; font: 1.6em Times, serif"><p><span style="vertical-align:sub; font-weight:bold; font-size:3em; line-height:1px">“</span>Un agnostique est un athée qui n&#8217;a pas de couilles.</p></blockquote>
+<p>N&#8217;osez même pas me dire que rien ne prouve que Dieu n&#8217;existe pas. C&#8217;est faux. Tout prouve que Dieu n&#8217;existe pas.</p>
+<p>On rit doucement du <a title="Puisse Son appendice nouillesque vous toucher" href="http://fr.wikipedia.org/wiki/Pastafarisme">Pastafarisme</a> ou de la <a href="http://fr.wikipedia.org/wiki/Licorne_rose_invisible" title="Bénis Soient Ses Sabots Sacrés">Licorne rose invisible</a>, mais pas des religions qui ont réussi à s&#8217;imposer ? Elles ne sont qu&#8217;un amas de superstitions pathétiques, enroulées de bon sentiments, que l&#8217;on prends bien trop au sérieux et qui n&#8217;a que trop duré. Arrêtons de cultiver l&#8217;illogisme.</p>
+<p class="polaroid" style="margin-right:7em;margin-top:2em"><img title="Photo de Goatse dans les nuages" src="http://sunfox.org/blog/wp-content/uploads/2008/09/goatse-clouds.jpg" alt="" /><br />
+Hallelujah.</p>
+<p style="clear:both"><small>(Le <i lang="en" title="fulmination">rant</i> du mardi, vous a été proposée par les dragées Fucca.)</small></p>
+]]></content:encoded>
+			<wfw:commentRss>http://sunfox.org/blog/2008/09/16/fulmination-atheiste/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>No more sweet music</title>
+		<link>http://sunfox.org/blog/2008/09/11/no-more-sweet-music/</link>
+		<comments>http://sunfox.org/blog/2008/09/11/no-more-sweet-music/#comments</comments>
+		<pubDate>Thu, 11 Sep 2008 08:14:07 +0000</pubDate>
+		<dc:creator>Sunny</dc:creator>
+		
+		<category><![CDATA[articles]]></category>
+
+		<category><![CDATA[belgique]]></category>
+
+		<category><![CDATA[musique]]></category>
+
+		<category><![CDATA[vacances]]></category>
+
+		<guid isPermaLink="false">http://sunfox.org/?p=1036</guid>
+		<description><![CDATA[
+  
+
+Le week-end en Belgique est fini. Certes ranger une tente sous la pluie c&#8217;est pas terrible, mais à côté voici un tour des choses qui étaient vraiment grandioses, magnifiques, géniales&#160;:
+
+Hooverphonic
+Avoir révisé les classiques d&#8217;Hooverphonic avant
+La pêche et la proximité du public de Jerboa
+La jolie ville de Sint Niklaas
+Le feu d&#8217;artifice devant l&#8217;hotel de [...]]]></description>
+			<content:encoded><![CDATA[<p class="polaroid"><a href="http://flickr.com/photos/sunfox/sets/72157607206078323/" title="Voir toutes les photos de mon week-end en Belgique"><img src="http://farm4.static.flickr.com/3281/2844261960_96f54d1d62_m.jpg" alt="[Photo du concert d'Hooverphonic]" /><br />
+<img src="http://farm4.static.flickr.com/3036/2841964598_5441138bb6_s.jpg" alt="" /> <img src="http://farm4.static.flickr.com/3190/2841127097_9c0ddf5633_s.jpg" alt="[Photo d'un plan de ville]" /> <img src="http://farm4.static.flickr.com/3224/2841134743_0019dd7b7b_s.jpg" alt="[Photo de Firefox gonflé]" /><br />
+<img src="http://farm4.static.flickr.com/3294/2841154287_5d034a9b5f_m.jpg" alt="[Photo de feu d'artifice]" /></a></p>
+<p>Le <a title="Mon article sur mon week-end en Belgique" href="http://sunfox.org/blog/2008/09/03/one-way-ride/">week-end en Belgique</a> est fini. Certes ranger une tente sous la pluie c&#8217;est pas terrible, mais à côté voici un tour des choses qui étaient vraiment grandioses, magnifiques, géniales&nbsp;:</p>
+<ul>
+<li>Hooverphonic</li>
+<li>Avoir révisé les classiques d&#8217;Hooverphonic avant</li>
+<li>La pêche et la proximité du public de Jerboa</li>
+<li>La jolie ville de Sint Niklaas</li>
+<li>Le <a href="http://flickr.com/photos/sunfox/2841154287/in/set-72157607206078323/" title="Photo du feu d'artifice">feu d&#8217;artifice</a> devant l&#8217;hotel de ville</li>
+<li>Les belges</li>
+<li>L&#8217;accueil chaleureux de Mitt, Neokraft et de leur clic-clac</li>
+<li><a href="http://lasoeurkaramazov.net/">Mitt</a>, <a href="http://neokraft.net/">Neokraft</a> et <a href="http://www.grusworld.net/">Gru</a></li>
+<li>La pizza faite maison par Neokraft</li>
+<li>La pizza faite maison par Neokraft</li>
+<li>La pizza faite maison par Neokraft</li>
+<li>La ville de Bruxelles</li>
+<li>Les bars belges</li>
+<li>La Faro <em>lambic</em></li>
+<li>L&#8217;organisatrice et conductrice de renom, j&#8217;ai nommé <a href="http://blog.virgule.info/post/2008/09/10/Back-from-Heaven">Kerdekel</a></li>
+</ul>
+<p>J&#8217;en garde plein d&#8217;autres bons souvenirs, et pour le reste il y a <a title="Photos et Vidéos du week-end" href="http://flickr.com/photos/sunfox/sets/72157607206078323/">les photos et les vidéos</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sunfox.org/blog/2008/09/11/no-more-sweet-music/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>One Way Ride</title>
+		<link>http://sunfox.org/blog/2008/09/03/one-way-ride/</link>
+		<comments>http://sunfox.org/blog/2008/09/03/one-way-ride/#comments</comments>
+		<pubDate>Wed, 03 Sep 2008 00:55:56 +0000</pubDate>
+		<dc:creator>Sunny</dc:creator>
+		
+		<category><![CDATA[articles]]></category>
+
+		<guid isPermaLink="false">http://sunfox.org/?p=953</guid>
+		<description><![CDATA[
+Skål!
+Har ! Jeunes pucelles, petits blondinets et fiers guerriers, aujourd&#8217;hui est un Talk Like A Viking Day ! Écoutez-moi donc vous conter mes prochains périples au cœur des enfers.
+À bord d&#8217;un drakar démoniaque je me rends ce Dimanche en contrées Belges. Moi, Sunthar le Rouge (et non pas &#8220;l&#8217;Hardie Rouquine&#8221;, hum) voguerais en compagnies de [...]]]></description>
+			<content:encoded><![CDATA[<p class="polaroid" style="float:right;margin:0 0 1em .5em"><a href="http://flickr.com/photos/chatiryworld/79066793/" title="Photo de chatirygirl sur Flickr"><img width="240" height="191" src="http://farm1.static.flickr.com/41/79066793_6f26ce1ab6_m.jpg" alt="Photo de viking devant un feu" /></a><br />
+<span lang="dk">Skål</span>!</p>
+<p>Har ! Jeunes pucelles, petits blondinets et fiers guerriers, aujourd&#8217;hui est un <strong lang="en">Talk Like A Viking Day</strong> ! Écoutez-moi donc vous conter mes prochains périples au cœur des enfers.</p>
+<p>À bord d&#8217;un drakar démoniaque je me rends ce Dimanche en contrées Belges. Moi, Sunthar le Rouge (et non pas &#8220;l&#8217;Hardie Rouquine&#8221;, hum) voguerais en compagnies de la vorace <a title="Oui c'est bien Kerdekel “Bloodlust” Gnome, fille de Sven Erickson le grand" href="http://blog.virgule.info/author/kerdekel">Feignåsse Verte</a> qui tiendra la barre. Nous allons évidemment dormir sur la paille, boire des pintes gigantesques, dépouiller femmes et enfants, piller de pauvres chaumes et égorger du clergé. Mais par dessus tout nous allons chanter en cœur nos victoires auprès de bardes déchaînes pendant les festivités sanguinaires de <a href="http://villapace.be/">Villa Pace</a>, où ma hache valsera aux mélodies divines d&#8217;<a href="http://www.lastfm.fr/music/Hooverphonic" title="Mais si vous savez, 'Maaaaaad about youuuuuu', allez donc sur lastfm si vous voyez toujours pas">Hooverphonic</a>.</p>
+<p>Parce qu&#8217;<a href="http://blog.virgule.info/post/2008/09/03/On-a-qu-une-vie" title="L'article sur le sujet par Kerdekel">on a qu&#8217;une vie</a>, Valhalla, nous voilà.</p>
+<p><small><abbr title="Nøta-Bene">NB</abbr>&nbsp;: Ce n&#8217;est pas vraiment un <span lang="en">Talk Like A Viking Day</span>, mais faites comme si.</small></p>
+]]></content:encoded>
+			<wfw:commentRss>http://sunfox.org/blog/2008/09/03/one-way-ride/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Gateaux geeks</title>
+		<link>http://sunfox.org/blog/2008/08/20/gateaux-geeks/</link>
+		<comments>http://sunfox.org/blog/2008/08/20/gateaux-geeks/#comments</comments>
+		<pubDate>Wed, 20 Aug 2008 12:27:47 +0000</pubDate>
+		<dc:creator>Sunny</dc:creator>
+		
+		<category><![CDATA[humour]]></category>
+
+		<category><![CDATA[food]]></category>
+
+		<category><![CDATA[geek]]></category>
+
+		<category><![CDATA[xml]]></category>
+
+		<guid isPermaLink="false">http://sunfox.org/?p=947</guid>
+		<description><![CDATA[Gateaux geeks ratés
+
+
+Gateaux geeks réussis
+
+
+Une preuve de plus que le XML c&#8217;est moche et verbeux.
+]]></description>
+			<content:encoded><![CDATA[<h4>Gateaux geeks ratés</h4>
+<p><img src="http://sunfox.org/blog/wp-content/uploads/2008/08/gateau-geek-xml.jpg" alt="{Photo de gateau avec du glaçage XML}" /></p>
+<p><img src="http://sunfox.org/blog/wp-content/uploads/2008/08/gateau-geek-xml2.jpg" alt="{Photo de gateau avec du glaçage XML}" /></p>
+<h4>Gateaux geeks réussis</h4>
+<p><img src="http://sunfox.org/blog/wp-content/uploads/2008/08/gateau-geek-nintendo.jpg" alt="{Photo de gateau en forme de Super Nintendo}" /></p>
+<p><img src="http://sunfox.org/blog/wp-content/uploads/2008/08/gateau-geek-mario.jpg" alt="{Photo de gateau avec Mario}" /></p>
+<p>Une preuve de plus que le XML c&#8217;est moche et verbeux.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sunfox.org/blog/2008/08/20/gateaux-geeks/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Cinéma en plein air au Parc de la Villette</title>
+		<link>http://sunfox.org/blog/2008/07/11/cinema-en-plein-air-au-parc-de-la-villette/</link>
+		<comments>http://sunfox.org/blog/2008/07/11/cinema-en-plein-air-au-parc-de-la-villette/#comments</comments>
+		<pubDate>Fri, 11 Jul 2008 20:38:28 +0000</pubDate>
+		<dc:creator>Sunny</dc:creator>
+		
+		<category><![CDATA[articles]]></category>
+
+		<category><![CDATA[cinéma]]></category>
+
+		<category><![CDATA[paris]]></category>
+
+		<guid isPermaLink="false">http://sunfox.org/?p=936</guid>
+		<description><![CDATA[Le Parc de la Villette accueille du 15 juillet au 17 août 2008 des séances de cinéma en plein air. Cette année encore de grands films, de grands réalisateurs et de grands acteurs se côtoieront sur les pelouses Parisiennes, à 2 maigres euros la séance. Le programme complet est long, mais il vaut le détour.
+Si [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://www.villette.com/" title="Site officiel du Parc de La Villette">Le Parc de la Villette</a> accueille du 15 juillet au 17 août 2008 des séances de cinéma en plein air. Cette année encore de grands films, de grands réalisateurs et de grands acteurs se côtoieront sur les pelouses Parisiennes, à 2 maigres euros la séance. <a title="Programme du cinéma en plein air 2008 sur le site de La Villette" href="http://www.villette.com/fr/spectacles/cinema_en_plein_air_2008_cinema.html">Le programme complet</a> est long, mais il vaut le détour.</p>
+<p>Si l&#8217;événement vous intéresse et que vous utilisez un logiciel d&#8217;agenda je vous invite à utiliser le calendrier que j&#8217;ai crée pour l&#8217;occasion, disponible <a title="Cinéma en plein air au Parc de la Villette au format ICS" href="http://www.google.com/calendar/ical/olptu1cf8geptvg6ac3ukmqnc0%40group.calendar.google.com/public/basic.ics">au format ical</a> et que l&#8217;on peut voir ci-dessous&nbsp;:<br />
+<span id="more-936"></span><br />
+<iframe src="http://www.google.com/calendar/embed?showTitle=0&amp;height=300&amp;wkst=2&amp;hl=fr&amp;bgcolor=%23FFFFFF&amp;src=olptu1cf8geptvg6ac3ukmqnc0%40group.calendar.google.com&amp;color=%235229A3&amp;ctz=Europe%2FParis" style=" border-width:0 " width="680" height="300" frameborder="0" scrolling="no"><a href="http://www.google.com/calendar/embed?src=olptu1cf8geptvg6ac3ukmqnc0%40group.calendar.google.com&#038;ctz=Europe/Paris">Calendrier Google Agenda de &#8220;Cinéma en plein air au Parc de la Villette&#8221;</a></iframe></p>
+<p>Et si vous allez à une séance, surtout prévenez moi. (Via <a href="http://mixin.com">Mixin</a>, par exemple !)</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sunfox.org/blog/2008/07/11/cinema-en-plein-air-au-parc-de-la-villette/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Donnez-moi vos mots de passe, je vous ferais gagner du temps</title>
+		<link>http://sunfox.org/blog/2008/06/26/donnez-moi-vos-mots-de-passe/</link>
+		<comments>http://sunfox.org/blog/2008/06/26/donnez-moi-vos-mots-de-passe/#comments</comments>
+		<pubDate>Thu, 26 Jun 2008 06:02:58 +0000</pubDate>
+		<dc:creator>Sunny</dc:creator>
+		
+		<category><![CDATA[articles]]></category>
+
+		<category><![CDATA[authentification]]></category>
+
+		<category><![CDATA[google]]></category>
+
+		<category><![CDATA[sécurité]]></category>
+
+		<category><![CDATA[yahoo]]></category>
+
+		<guid isPermaLink="false">http://sunfox.org/?p=929</guid>
+		<description><![CDATA[La dernière innovation 2.0 est l&#8217;import de contacts automatiquement depuis votre compte GMail, Yahoo, etc. C&#8217;est bien pratique, ça permet de spammer tous ses contacts en quelques clics seulement.
+Mais voilà, pour accéder à cette mine d&#8217;or d&#8217;adresses email il faut la clef. C&#8217;est ainsi qu&#8217;on se retrouve avec des sites comme Twitter, Plaxo, Facebook et [...]]]></description>
+			<content:encoded><![CDATA[<p>La dernière innovation 2.0 est l&#8217;import de contacts automatiquement depuis votre compte GMail, Yahoo, etc. C&#8217;est bien pratique, ça permet de spammer tous ses contacts en quelques clics seulement.</p>
+<p>Mais voilà, pour accéder à cette mine d&#8217;or d&#8217;adresses email il faut la clef. C&#8217;est ainsi qu&#8217;on se retrouve avec des sites comme Twitter, Plaxo, Facebook et j&#8217;en passe <strong>qui vous demandent votre mot de passe de webmail</strong>. Vous savez, <em>le</em> mot de passe le plus important, celui qui accède à toute votre vie, celui qui permet de récupérer tous les autres mots de passe.</p>
+<p>La première règle de sécurité qu&#8217;on apprends est pourtant qu&#8217;<strong>il ne faut jamais donner son mot de passe à un tiers</strong>. Alors quand en plus c&#8217;est une popup où on ne voit même pas sur quel site on se trouve qui nous le demande&#8230;</p>
+<p style="text-align:center"><img src="http://sunfox.org/blog/wp-content/uploads/2008/06/image-1-277x300.png" alt="[Capture d'écran de la popup de Plaxo, choix du compte]" title="Plaxo FTW" width="277" height="300" /><img src="http://sunfox.org/blog/wp-content/uploads/2008/06/image-2-277x300.png" alt="[Capture d'écran de la popup de Plaxo, demande du mot de passe de Gmail]" title="Plaxo FTW" width="277" height="300" /><br />
+<span class="legend" style="opacity:.7">Ici, popup d&#8217;import de Plaxo, pour ajouter des contacts à <a href="http://mixin.com">Mixin</a></span></p>
+<p>Mais <strong>il existe un moyen de partager sa liste de contacts sans révéler son mot de passe</strong> ! Pour ça des chouettes <abbr lang="en">API</abbr>s ont été crées pour <a href="http://code.google.com/apis/contacts/">Google Contacts</a> et <a href="http://developer.yahoo.com/addressbook/">Yahoo! Address Book</a>, fonctionnant à l&#8217;aide de jetons d&#8217;utilisation. En les utilisant vous êtes tout simplement redirigé sur votre webmail qui vous demande si vous acceptez de partager votre liste de contacts. Beaucoup plus efficace, jamais votre mot de passe n&#8217;aura voyagé sur un site étranger et le jeton n&#8217;est utilisable qu&#8217;une seule fois. C&#8217;est cette méthode qu&#8217;utilise par exemple Flickr&nbsp;:</p>
+<p style="text-align:center"><img src="http://sunfox.org/blog/wp-content/uploads/2008/06/image-3.png" alt="[Capture d'écran de Flickr, choix du compte]" title="" /><br />
+<img src="http://sunfox.org/blog/wp-content/uploads/2008/06/image-4.png" alt="[Capture d'écran de Gmail, demande de l'autorisation d'accéder aux contacts]" /></p>
+<p>N&#8217;alimentez pas le système, ne risquez pas vos données sensibles, <strong>ne donnez pas vos mots de passe</strong>.  Le pire est qu&#8217;avec de telles applications populaires en libre circulation les utilisateurs commencent à <strong>avoir l&#8217;habitude</strong> de donner leur mot de passe à tort et à travers.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sunfox.org/blog/2008/06/26/donnez-moi-vos-mots-de-passe/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Somethingest :&gt;</title>
+		<link>http://sunfox.org/blog/2008/05/27/somethingest/</link>
+		<comments>http://sunfox.org/blog/2008/05/27/somethingest/#comments</comments>
+		<pubDate>Tue, 27 May 2008 07:41:01 +0000</pubDate>
+		<dc:creator>Sunny</dc:creator>
+		
+		<category><![CDATA[code]]></category>
+
+		<category><![CDATA[ruby]]></category>
+
+		<guid isPermaLink="false">http://sunfox.org/?p=927</guid>
+		<description><![CDATA[module Enumerable
+  def somethingest(method)
+    inject do &#124;acc, elem&#124;
+      elem.send(method, acc) ? elem : acc
+    end
+  end
+
+  def biggest
+    somethingest :>
+  end
+
+  def smallest
+    somethingest :<
+  end
+end
+
+[42, 51, -9.2, 5].biggest # => 51
+[42, [...]]]></description>
+			<content:encoded><![CDATA[<pre class="ruby"><code>module Enumerable
+  def somethingest(method)
+    inject do |acc, elem|
+      elem.send(method, acc) ? elem : acc
+    end
+  end
+
+  def biggest
+    somethingest :>
+  end
+
+  def smallest
+    somethingest :<
+  end
+end
+
+[42, 51, -9.2, 5].biggest <span class="comment"># => 51</span>
+[42, 51, -9.2, 5].smallest <span class="comment"># => -9.2</span></code></pre>
+]]></content:encoded>
+			<wfw:commentRss>http://sunfox.org/blog/2008/05/27/somethingest/feed/</wfw:commentRss>
+		</item>
+	</channel>
+</rss>

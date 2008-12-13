@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:thr="http://purl.org/syndication/thread/1.0">
+    <title>Pugs</title>
+    <link rel="self" type="application/atom+xml" href="http://pugs.blogs.com/pugs/atom.xml" />
+    <link rel="alternate" type="text/html" href="http://pugs.blogs.com/pugs/" />
+    <id>tag:typepad.com,2003:weblog-272701</id>
+    <updated>2008-08-03T23:06:21+08:00</updated>
+    <subtitle>Implementing Perl 6... and other related technologies.</subtitle>
+    <generator uri="http://www.typepad.com/">TypePad</generator>
+    <entry>
+        <title>Short notes on migrating a SVK mirror to Git.</title>
+        <link rel="alternate" type="text/html" href="http://pugs.blogs.com/pugs/2008/08/short-notes-on.html" />
+        <link rel="replies" type="text/html" href="http://pugs.blogs.com/pugs/2008/08/short-notes-on.html" thr:count="2" thr:updated="2008-09-16T22:33:53+08:00" />
+        <id>tag:typepad.com,2003:post-53693960</id>
+        <published>2008-08-03T23:06:21+08:00</published>
+        <updated>2008-09-16T22:33:53+08:00</updated>
+        <summary>While mugwump++&#39;s notes are concise enough, see below for an even more concise version suitable to save as a shell script: mkdir pugscd pugsgit svn init --use-svm-props \ file://$HOME/.svk/local/mirror/pugsgit svn fetchrm -rf .git/svn .git/configgit svn init http://svn.pugscode.org/pugsgit svn fetchgit repack...</summary>
+        <author>
+            <name>audreyt</name>
+        </author>
+        <category scheme="http://www.sixapart.com/ns/types#category" term="App" />
+        
+        
+<content type="html" xml:lang="en-US" xml:base="http://pugs.blogs.com/pugs/">
+&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;While &lt;em&gt;mugwump++&lt;/em&gt;&#39;s &lt;a href=&quot;http://utsl.gen.nz/talks/git-svn/intro.html&quot;&gt;notes&lt;/a&gt; are concise enough, see below for an even more concise version suitable to save as a shell script: &lt;/p&gt;
+&lt;blockquote&gt;&lt;pre&gt;mkdir pugs&lt;br /&gt;cd pugs&lt;br /&gt;git svn init --use-svm-props \&lt;br /&gt;&amp;nbsp; &amp;nbsp; file://$HOME/.svk/local/mirror/pugs&lt;br /&gt;git svn fetch&lt;br /&gt;rm -rf .git/svn .git/config&lt;br /&gt;git svn init http://svn.pugscode.org/pugs&lt;br /&gt;git svn fetch&lt;br /&gt;git repack -a -d -f --window 100&lt;/pre&gt;&lt;/blockquote&gt;
+&lt;p&gt;
+Also here are a couple of useful aliases:&lt;br /&gt;
+
+&lt;/p&gt;&lt;blockquote&gt;&lt;pre&gt;alias pull=&#39;git svn rebase&#39;&lt;br /&gt;alias push=&#39;git svn dcommit&#39;&lt;/pre&gt;&lt;/blockquote&gt;&lt;p&gt;Note that I still think SVK is a great revision control system -- to me, its &lt;a href=&quot;http://commons.wikimedia.org/wiki/Image:Svk-overview.png&quot;&gt;design&lt;/a&gt; strikes a fine balance between practicality and elegance.&lt;/p&gt;
+
+&lt;p&gt;However, with a 300MiB+ repository (51MiB under Git) and 20000+ revisions, the N in &lt;em&gt;O(N)&lt;/em&gt; vs &lt;em&gt;O(log N)&lt;/em&gt; is large enough for common operations to matter... :-)&lt;/p&gt;&lt;/div&gt;
+</content>
+
+
+    </entry>
+    <entry>
+        <title>Pugs now builds again from SVN.</title>
+        <link rel="alternate" type="text/html" href="http://pugs.blogs.com/pugs/2008/08/pugs-now-builds.html" />
+        <link rel="replies" type="text/html" href="http://pugs.blogs.com/pugs/2008/08/pugs-now-builds.html" thr:count="0" />
+        <id>tag:typepad.com,2003:post-53618966</id>
+        <published>2008-08-01T23:38:48+08:00</published>
+        <updated>2008-08-03T23:07:37+08:00</updated>
+        <summary>Thanks to testing efforts from kolibrie++, masak++, moritz++ and xinming++, Pugs has migrated back to the public repository from my local hard disk. Now all you need is GHC 6.8 on your system, and &quot;perl Makefile.PL ; make ; make...</summary>
+        <author>
+            <name>audreyt</name>
+        </author>
+        <category scheme="http://www.sixapart.com/ns/types#category" term="Recap" />
+        
+        
+<content type="xhtml" xml:lang="en-US" xml:base="http://pugs.blogs.com/pugs/">
+<div xmlns="http://www.w3.org/1999/xhtml"><p>Thanks to testing efforts from <em>kolibrie++, masak++, moritz++ </em>and<em> xinming++</em>, Pugs has migrated back to the <a href="http://svn.pugscode.org/pugs/">public repository</a> from my local hard disk.</p>
+
+<p>Now all you need is GHC 6.8 on your system, and <code>&quot;perl Makefile.PL ; make ; make install&quot;</code> should take care of everything.</p>
+
+<p>Note that the refactored-out parts like <a href="http://hackage.haskell.org/cgi-bin/hackage-scripts/package/MetaObject">MetaObject</a> and <a href="http://hackage.haskell.org/cgi-bin/hackage-scripts/package/HsPerl5">HsPerl5</a> are not committed back yet, so you'd need a working network connection during the build.</p>
+
+<p>However, I'm glad to report that <em>dcoutts++</em> is working on adding local repository support to <a href="http://hackage.haskell.org/cgi-bin/hackage-scripts/package/cabal-install">cabal-install</a>, and once it's ready, we'd simply commit a MiniHackage containing Pugs dependencies, and bundle them into something installable offline (and uploadable to CPAN).</p></div>
+</content>
+
+
+    </entry>
+    <entry>
+        <title>Pugs.hs is back.</title>
+        <link rel="alternate" type="text/html" href="http://pugs.blogs.com/pugs/2008/07/pugshs-is-back.html" />
+        <link rel="replies" type="text/html" href="http://pugs.blogs.com/pugs/2008/07/pugshs-is-back.html" thr:count="3" thr:updated="2008-09-16T22:23:10+08:00" />
+        <id>tag:typepad.com,2003:post-53536932</id>
+        <published>2008-07-31T16:07:25+08:00</published>
+        <updated>2008-09-16T22:23:11+08:00</updated>
+        <summary>(The excellent news from fglock++ that v6.pm is back prompted me to write something about Pugs, too, so here it is.) During the past month, I&#39;ve been quietly releasing Pugs and its dependencies on Hackage. Installation for Pugs is now...</summary>
+        <author>
+            <name>audreyt</name>
+        </author>
+        <category scheme="http://www.sixapart.com/ns/types#category" term="Summary" />
+        
+        
+<content type="html" xml:lang="en-US" xml:base="http://pugs.blogs.com/pugs/">
+&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;&lt;em&gt;(The excellent news from fglock++ that &lt;a href=&quot;http://use.perl.org/article.pl?sid=08/07/30/1521240&quot;&gt;v6.pm is back&lt;/a&gt; prompted me to write something about Pugs, too, so here it is.)&lt;/em&gt;
+&lt;/p&gt;
+
+&lt;p&gt;
+During the past month, I&#39;ve been quietly releasing Pugs and its dependencies on 
+&lt;a href=&quot;http://hackage.haskell.org/cgi-bin/hackage-scripts/package/Pugs&quot;&gt;Hackage&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+Installation for Pugs is now much simpler than before; see &lt;a href=&quot;http://svn.pugscode.org/pugs/INSTALL&quot;&gt;http://svn.pugscode.org/pugs/INSTALL&lt;/a&gt; for details.
+&lt;/p&gt;
+
+&lt;p&gt;
+There has been no action in terms of features, but the internal has been refactored to reduce compilation time, and the individual components has been released as &lt;a href=&quot;http://hackage.haskell.org/packages/archive/pkg-list.html#cat:Pugs&quot;&gt;separate packages&lt;/a&gt; to reduce maintenance overhead.
+&lt;/p&gt;
+
+&lt;p&gt;
+Startup time is also greatly improved.&amp;nbsp; As a consequence, running the &lt;a href=&quot;http://m19s28.dyndns.org/cgi-bin/pugs-smokeserv.pl&quot;&gt;full smoke test suite&lt;/a&gt; is no longer a multi-hour-long ordeal; it now takes less than 15 minutes on modern machines.
+&lt;/p&gt;
+
+&lt;p&gt;
+As of the 6.2.13.11 release, the smoke numbers say it passes 17215 tests out of 19260, which is not significantly different from the 6.2.13 release.
+&lt;/p&gt;
+
+&lt;p&gt;
+Going forward, I think GHC 6.10&#39;s &lt;a href=&quot;http://www.eecs.harvard.edu/~mainland/ghc-quasiquoting/&quot;&gt;Quasiquoting&lt;/a&gt; and &lt;a href=&quot;http://hackage.haskell.org/trac/ghc/wiki/ViewPatterns&quot;&gt;View patterns&lt;/a&gt; are going to be vital for the sanity of Pugs internals, so please expect no Pugs 6.28.* releases before GHC 6.10.1.
+&lt;/p&gt;
+
+&lt;p&gt;
+And finally, a shameless plug: I&#39;m still looking for ways to make ends meet, so any &lt;a href=&quot;mailto:audreyt@audreyt.org&quot;&gt;offers&lt;/a&gt; of telecommuting, project-based/part-time jobs would be very much appreciated. :-)&lt;/p&gt;&lt;/div&gt;
+</content>
+
+
+    </entry>
+    <entry>
+        <title>A graphical tracer for Perl 6 regexes based on PCR</title>
+        <link rel="alternate" type="text/html" href="http://pugs.blogs.com/pugs/2007/10/a-graphical-tra.html" />
+        <link rel="replies" type="text/html" href="http://pugs.blogs.com/pugs/2007/10/a-graphical-tra.html" thr:count="2" thr:updated="2008-02-05T14:57:21+08:00" />
+        <id>tag:typepad.com,2003:post-40621150</id>
+        <published>2007-10-24T19:24:31+08:00</published>
+        <updated>2008-02-25T08:25:54+08:00</updated>
+        <summary>Tracing parse failures by hand while developing a compiler can be really a daunting task, because the real problem can appear everywhere -- the grammar definition, the input string being matched, or even the regex engine itself. So I&#39;ve implemented...</summary>
+        <author>
+            <name>Agent Zhang</name>
+        </author>
+        <category scheme="http://www.sixapart.com/ns/types#category" term="Rules" />
+        
+        
+<content type="xhtml" xml:lang="en-US" xml:base="http://pugs.blogs.com/pugs/">
+<div xmlns="http://www.w3.org/1999/xhtml"><p>Tracing parse failures by hand while developing a compiler can be really a daunting task, because the real problem can appear everywhere -- the grammar definition, the input string being matched, or even the regex engine itself.</p> <p>So I've implemented a graphical tracer for Perl 6 regexes atop PCR (<a href="http://search.cpan.org/perldoc?Pugs::Compiler::Rule">Pugs::Compiler::Rule</a>). You can find some small online demos here:</p> <ul> <li> <p><a href="http://agentzh.org/misc/tracer/digits/index.html">http://agentzh.org/misc/tracer/digits/index.html</a>  (Firefox only)</p> </li> <li> <p><a href="http://agentzh.org/misc/tracer/adder/index.html">http://agentzh.org/misc/tracer/adder/index.html</a>  (ditto)</p> </li> <li> <p><a href="http://agentzh.org/misc/tracer/langs2/index.html">http://agentzh.org/misc/tracer/langs2/index.html</a>  (ditto)</p> </li> <li> <p><a href="http://agentzh.org/misc/tracer/grammar/index.html">http://agentzh.org/misc/tracer/grammar/index.html</a>  (Tracing PCR's own grammar parser)</p> </li> </ul> <p>To generate the HTML pages (say, the first demo) yourself, simply check out  <a href="http://svn.pugscode.org/pugs">the Pugs repository</a> , ``cd'' into perl5/Pugs-Compiler-Rule, and enter the following commands:</p> <pre>
+  $ perl util/compile_p6grammar.pl -D \
+      examples/digits.grammar &gt; Digits.pm
+  $ echo '7c3d54' &gt; digits.input
+  $ perl -Ilib -MDigits -e \
+     'undef $/; print Digits-&gt;count(&lt;&gt;)-&gt;(), &quot;\n&quot;' \
+     digits.input &gt; trace.out
+  $ perl util/gen-tracer-view.pl --outdir tmp/digits \
+      examples/digits.grammar digits.input &lt; trace.out
+  $ firefox tmp/digits/index.html</pre> <p>As of this writing, the tracer interface still needs love and I'm adding cooler features like ``random jump'', ``stepping in a specified pace'', and ``stepping back''. If you like to help, just join
+ <a href="http://irclog.perlgeek.de/perl6/today">#perl6</a>  and get a Pugs commit bit ;)</p> <p>I think this tool should be very useful for both regex engine developers and compiler writers, especially when parsing fails in an unexpected way. And it can also be beneficial to Perl 6 beginners who want to learn the shiny new regex syntax and complicated matching behaviors by just ``stepping through'' the actual parsing process. moritz++ said on #perl6 that he would build a CGI script to make my demos above ``alive'' when he had the tuits; let's just wait and see ;)</p> <p>It should be warned that the regex syntax supported by the current PCR implementation is already a little out-of-date regarding the lastest  <a href="http://perlcabal.org/syn/S05.html">Synopsis 5</a> . (Thanks TimToady++ for tweaking the regex syntax during the meantime ;)) I'll try to port  <a href="http://search.cpan.org/perldoc?KindaPerl6">KindaPerl6</a> 's perl5rx backend over to PCR later.</p> <p>Hey, it'll be nicer to have KindaPerl6,  <a href="http://en.wikipedia.org/wiki/Parser_Grammar_Engine">PGE</a> , <a href="http://search.cpan.org/perldoc?Parse::RecDescent">Parse::RecDescent</a>, or even the Perl 5 regex engine to work with my tracer as well! :)</p> <p>Stay tuned!</p> <p>-agentzh</p></div>
+</content>
+
+
+    </entry>
+    <entry>
+        <title>KindaPerl6 now runs on sbcl, clisp and ecl</title>
+        <link rel="alternate" type="text/html" href="http://pugs.blogs.com/pugs/2007/10/kindaperl6-now-.html" />
+        <link rel="replies" type="text/html" href="http://pugs.blogs.com/pugs/2007/10/kindaperl6-now-.html" thr:count="1" thr:updated="2007-10-21T14:51:36+08:00" />
+        <id>tag:typepad.com,2003:post-40404212</id>
+        <published>2007-10-19T07:44:55+08:00</published>
+        <updated>2008-02-25T06:58:25+08:00</updated>
+        <summary>I&#39;ve been meaning to do something about testing for the kp6-lisp backend. Previously we compiled all tests to stand-alone executables using sbcl, the reason for this being that I didn&#39;t know about --noinform --noprint at the time and dumping the...</summary>
+        <author>
+            <name>Ævar Arnfjörð Bjarmason</name>
+        </author>
+        <category scheme="http://www.sixapart.com/ns/types#category" term="Backends" />
+        
+        
+<content type="xhtml" xml:lang="en-US" xml:base="http://pugs.blogs.com/pugs/">
+<div xmlns="http://www.w3.org/1999/xhtml"><p>I've been meaning to do something about testing for the kp6-lisp backend. Previously we compiled all tests to stand-alone executables using sbcl, the reason for this being that I didn't know about --noinform --noprint at the time and dumping the lisp image was the hacky solution to making sbcl not print out all that superfluous output.</p>
+
+<p>This meant we had to wait for sbcl to compile each test before we could run any, and each test produces an approximately 30MB executable which meant the test directory grew to several hundred megabytes.</p>
+
+<p>Everything is much better now, you can select the backend you want when writing the makefile:</p>
+
+<pre>KP6_TARGET=KP6-LISP-sbcl perl Makefile.PL</pre>
+
+<p>
+or
+</p>
+
+<pre>KP6_TARGET=KP6-LISP-clisp perl Makefile.PL</pre>
+
+<p>
+or
+</p>
+
+<pre>KP6_TARGET=KP6-LISP-ecl perl Makefile.PL</pre>
+
+<p>And then run the tests on the selected backend:</p>
+
+<pre>make test</pre>
+
+<p>All the backends fail the same 56 tests out of a total of 85 so it looks like the backend code is pretty portable. There's a significant speed difference between the implementations, since most of their time is taken up by compilation this makes a lousy general benchmark but testing uses clisp is the best of the three:</p>
+
+<pre>
+ecl: real 2m3.895s
+clisp: real 1m7.318s
+sbcl: 4m16.725s
+</pre>
+
+<p>
+Things could be made a lot faster for all of them by only compiling the backend runtime once instead of doing it for every test, or running lisp as it's supposed to be run, in one persistent compiler.</p>
+
+<p>That and adding options to kp6(1) for running code directly with a given runtime is a task for another day.</p></div>
+</content>
+
+
+    </entry>
+    <entry>
+        <title>KindaPerl6 Common Lisp status update</title>
+        <link rel="alternate" type="text/html" href="http://pugs.blogs.com/pugs/2007/10/kindaperl6-comm.html" />
+        <link rel="replies" type="text/html" href="http://pugs.blogs.com/pugs/2007/10/kindaperl6-comm.html" thr:count="1" thr:updated="2007-10-19T00:36:27+08:00" />
+        <id>tag:typepad.com,2003:post-40313566</id>
+        <published>2007-10-17T10:49:38+08:00</published>
+        <updated>2008-07-31T16:02:59+08:00</updated>
+        <summary>A lot of work has been done on the KindaPerl6 Common Lisp backend for KindaPerl6 since I last 89wrote about it. Variables, subs, lexicals, closures, basic datatypes (int, str, num, hash, array, ..), control structures (if, for, while, ..) are...</summary>
+        <author>
+            <name>Ævar Arnfjörð Bjarmason</name>
+        </author>
+        <category scheme="http://www.sixapart.com/ns/types#category" term="Backends" />
+        
+        
+<content type="html" xml:lang="en-US" xml:base="http://pugs.blogs.com/pugs/">
+&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;A lot of work has been done on the KindaPerl6 Common Lisp backend for KindaPerl6 since I last &lt;a id=&quot;__CONK_89&quot; href=&quot;http://use.perl.org/article.pl?sid=07/09/23/0414244&quot;&gt;&lt;span __conktype=&quot;link&quot; __nodeid=&quot;__CONK_89&quot; __conkid=&quot;89&quot; style=&quot;border: 1px solid gray; padding: 0pt; color: black; background-color: lightgray; font-weight: normal; font-family: sans-serif; font-size: small; text-align: center; -moz-border-radius-topleft: 0.5em; -moz-border-radius-topright: 0.5em; -moz-border-radius-bottomright: 0.5em; -moz-border-radius-bottomleft: 0.5em;&quot;&gt;89&lt;/span&gt;wrote about&lt;/a&gt; it. Variables, subs, lexicals, closures, basic datatypes (int, str, num, hash, array, ..), control structures (if, for, while, ..) are working. We&#39;re missing user-defined classes &amp;amp; methods, some internal methods (sort, map, grep, ...), junctions, pairs, gather and probably some other things. Aankhen++ has been doing most of the work with the occasional contribution from myself.&lt;/p&gt;
+
+&lt;p&gt;Things sped up a bit recently after fax++ wrote a meta-object model (MOP) for us based on CLOS. The one in the Perl 5 backend does not use the Perl 5 object system (implements its own @ISA and so on) but so far it looks like we can build the Perl 6 MOP on top of CLOS which is more flexible.&lt;/p&gt;
+
+&lt;p&gt;A method in the MOP uses the same calling convention regardless of whether it&#39;s internal to the compiler or compiled from a user defined class. An example of an internal method using the new calling convention is the dispatch method that implements the .elems method for hashes:&lt;/p&gt;
+
+&lt;pre&gt;(defmethod kp6-dispatch ((invocant kp6-Hash) interpreter (method (eql :elems)) &amp;amp;rest parameters)&lt;br /&gt;&amp;nbsp; &amp;quot;Returns the number of elements in the hash&amp;quot;&lt;br /&gt;&amp;nbsp; (declare (ignore parameters interpreter))&lt;br /&gt;&amp;nbsp; (make-instance &#39;kp6-Int&lt;br /&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp; :value (hash-table-count (slot-value invocant &#39;value))))&lt;br /&gt;
+&lt;/pre&gt;
+
+&lt;p&gt;In the case of %hash.elems this would be called as:&lt;/p&gt;
+
+&lt;pre&gt;(kp6-dispatch (lookup-lexical-variable (kp6-generate-variable &amp;quot;%&amp;quot; &amp;quot;hash&amp;quot;)) |Main| :elems)&lt;/pre&gt;
+
+&lt;p&gt;The object system is used for pretty much everything. For example the .Str method is used to get the string representation of an object, .Int for its integer form, .true to check whether it wants to be true (used in all boolean contexts) etc. Not everything has been moved to the new system internally. Helping with that would be an easy beginner task.&lt;/p&gt;
+
+&lt;p&gt;Speaking of beginner tasks there&#39;s a lot more of them. And since we have MOP now implementing things is often just a matter of seeing how the Perl 5 backend does things and filling in the gaps in the Lisp backend.&lt;/p&gt;
+
+&lt;p&gt;We have some bugs like my @a; @a[123] = 456; which causes an error currently since the underlying CL array isn&#39;t extended properly. As well as a lot of things like substr() which are easy to implement but simply aren&#39;t at the moment.&lt;/p&gt;
+
+&lt;p&gt;So if you&#39;re interested in hacking a Perl 6 compiler in Perl 6 and Common Lisp head over to #perl6 and poke us for a commit bit.&lt;/p&gt;&lt;/div&gt;
+</content>
+
+
+    </entry>
+    <entry>
+        <title>KindaPerl6 released on CPAN</title>
+        <link rel="alternate" type="text/html" href="http://pugs.blogs.com/pugs/2007/10/kindaperl6-rele.html" />
+        <link rel="replies" type="text/html" href="http://pugs.blogs.com/pugs/2007/10/kindaperl6-rele.html" thr:count="2" thr:updated="2007-10-09T11:52:09+08:00" />
+        <id>tag:typepad.com,2003:post-39709788</id>
+        <published>2007-10-04T00:28:57+08:00</published>
+        <updated>2008-02-25T01:04:24+08:00</updated>
+        <summary>One of the things I&#39;ve been working on in KindaPerl6 is making it CPAN ready, first by rewriting its custom Makefile as a Makefile.PL and then by making various small fixes. Yesterday I wrote a unified frontend to it (kp6(1))...</summary>
+        <author>
+            <name>Ævar Arnfjörð Bjarmason</name>
+        </author>
+        <category scheme="http://www.sixapart.com/ns/types#category" term="Backends" />
+        
+        
+<content type="html" xml:lang="en-US" xml:base="http://pugs.blogs.com/pugs/">
+&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;One of the things I&#39;ve been working on in KindaPerl6 is making it CPAN&lt;br /&gt;
+ready, first by rewriting its custom Makefile as a Makefile.PL and&lt;br /&gt;
+then by making various small fixes. Yesterday I wrote a unified&lt;br /&gt;
+frontend to it (kp6(1)) and made `make install&#39; work and released in&lt;br /&gt;
+on CPAN as version 0.001.&lt;/p&gt;
+
+&lt;p&gt;Since KindaPerl6 is still in active and unstable development `make&lt;br /&gt;
+test&#39; does not run successfully at the moment. So the CPAN install has&lt;br /&gt;
+to be forced:&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp; &amp;nbsp; cpan -f -i KindaPerl6&lt;/p&gt;
+
+&lt;p&gt;That should install KindaPerl6 along with its kp6 frontend, the hello&lt;br /&gt;
+world example is then:&lt;/p&gt;
+
+&lt;p&gt;
+&amp;nbsp; &amp;nbsp; $ echo &#39;say &amp;quot;hello&amp;quot; ~ &amp;quot;world&amp;quot;&#39; | kp6 | PERL5LIB=$(kp6 -lib) perl&lt;br /&gt;
+&amp;nbsp; &amp;nbsp; helloworld&lt;/p&gt;
+
+&lt;p&gt;The PERL5LIB part is required so that the Perl 5 backend can find its&lt;br /&gt;
+runtime libraries.&lt;/p&gt;
+
+&lt;p&gt;If you want to check out the AST of the program just do:&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp; &amp;nbsp; $ echo &#39;say &amp;quot;hello&amp;quot; ~ &amp;quot;world&amp;quot;&#39; | kp6 -ast | perltidy&lt;/p&gt;
+
+&lt;p&gt;And to try another backend such as the Common Lisp one try one of the&lt;br /&gt;
+emitter options:&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp; &amp;nbsp; $ echo &#39;say &amp;quot;hello&amp;quot; ~ &amp;quot;world&amp;quot;&#39; | kp6 -lisp&lt;/p&gt;
+
+&lt;p&gt;There&#39;s no user friendly way to run the generated lisp code yet but&lt;br /&gt;
+hopefully future releases will allow for passing options to specific&lt;br /&gt;
+emitters. I&#39;m hoping to make a user-friendly way to generate&lt;br /&gt;
+stand-alone executables with sbcl from the command line for instance.&lt;/p&gt;&lt;/div&gt;
+</content>
+
+
+    </entry>
+    <entry>
+        <title>Playing with the new &quot;Not Quite Perl&quot;</title>
+        <link rel="alternate" type="text/html" href="http://pugs.blogs.com/pugs/2007/08/playing-with-th.html" />
+        <link rel="replies" type="text/html" href="http://pugs.blogs.com/pugs/2007/08/playing-with-th.html" thr:count="8" thr:updated="2007-11-20T15:11:27+08:00" />
+        <id>tag:typepad.com,2003:post-38095611</id>
+        <published>2007-08-26T07:15:47+08:00</published>
+        <updated>2008-02-24T11:35:25+08:00</updated>
+        <summary>Today I tried a new product of the Perl 6 project: Not Quite Perl. &quot;NPQ&quot; is a subset of the Perl 6 syntax. It runs on Parrot. To put this in context, Pugs has been the most feature-complete implementation of...</summary>
+        <author>
+            <name>Mark Stosberg</name>
+        </author>
+        <category scheme="http://www.sixapart.com/ns/types#category" term="Backends" />
+        
+        <category scheme="http://sixapart.com/ns/types#tag" term="parrot" />
+        <category scheme="http://sixapart.com/ns/types#tag" term="perl" />
+        <category scheme="http://sixapart.com/ns/types#tag" term="perl6" />
+        <category scheme="http://sixapart.com/ns/types#tag" term="pugs" />
+        
+<content type="html" xml:lang="en-US" xml:base="http://pugs.blogs.com/pugs/">
+&lt;div xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;&lt;p&gt;Today I tried a new product of the Perl 6 project: Not Quite Perl.&amp;nbsp; &amp;quot;NPQ&amp;quot; is a subset of the Perl 6 syntax. It runs on Parrot.&lt;/p&gt;
+
+&lt;p&gt;To put this in context, Pugs has been the most feature-complete implementation of Perl 6, but has suffered from poor performance and lack of Haskell-enabled contributors.&lt;/p&gt;
+
+&lt;p&gt;KindaPerl6 currently supports a subset of Perl6, and is executed with Perl5, but also has slow performance now.&lt;/p&gt;
+
+&lt;p&gt;&amp;quot;Not Quite Perl&amp;quot; is a similar effort, using Parrot to execute the code. Parrot is expected to be the fastest performing implementation of Perl 6.&amp;nbsp; Right now &amp;quot;KindaPerl6&amp;quot; and &amp;quot;Not Quite Perl&amp;quot; are developing separately, but there have been discussions to coordinate, according to fglock, a KindaPerl6 contributor.&lt;/p&gt;
+
+&lt;p&gt;Here&#39;s what I found tried when I tried both technologies today.&lt;/p&gt;&lt;p&gt;First, getting started with the latest parrot release on Ubuntu Feisty was incredibly easy. I ran command to have Ubuntu install the dependencies of parrot: &lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;&amp;nbsp; sudo apt-get build-dep parrot&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;
+
+From there, I downloaded and unpacked the &lt;a href=&quot;http://search.cpan.org/~pmic/parrot-0.4.15/&quot;&gt;Parrot 0.4.15 release&lt;/a&gt;, since no Ubuntu package had been made for this version yet.&lt;/p&gt;
+
+&lt;p&gt;Building parrot was easy:&amp;nbsp; &amp;nbsp;
+
+&lt;/p&gt;
+
+
+
+&lt;pre&gt;&amp;nbsp; perl Configure.pl&lt;br /&gt;&amp;nbsp; make&lt;/pre&gt;
+
+
+&lt;p&gt;Next, I moved into the &amp;quot;Not Quite Perl&amp;quot; language directory and made sure it was built as well:&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp; cd languages/nqp&lt;br /&gt;&amp;nbsp; make&lt;/p&gt;
+
+
+
+&lt;p&gt;I created my own &amp;quot;nqp&amp;quot; script to make it easier to test Perl 6 code with it.&amp;nbsp; The script, which I kept in that directory, just looks like this:&lt;/p&gt;
+
+
+
+&lt;pre&gt;#!/bin/sh&lt;br /&gt; ../../parrot nqp.pbc&lt;/pre&gt;
+ 
+
+ &lt;p&gt; The README there and the tests in &amp;quot;t/&amp;quot; convey what subset of Perl6 is supported so far. It&#39;s not a lot, but I believe t
+he idea is that is enough to to start writing more of Perl 6 using this subset.&lt;/p&gt;
+
+ &lt;p&gt; The performance is impressive. It executed a basic statement in .3 seconds: &lt;/p&gt;
+
+&amp;nbsp; 
+
+&lt;pre&gt;&amp;nbsp; $ time -p echo &amp;quot;say(42);&amp;quot; | ./nqp&lt;br /&gt;&amp;nbsp; 42&lt;br /&gt;&amp;nbsp; real 0.30&lt;br /&gt;&amp;nbsp; &lt;/pre&gt;
+
+ &lt;p&gt; The same test using KindaPerl6 took about 15 times longer!&lt;/p&gt;
+
+ 
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;pre&gt;&amp;nbsp; $ time -p echo 42.say | perl -e &#39;use v6-alpha&#39;&lt;br /&gt;&amp;nbsp; 42&lt;br /&gt;&amp;nbsp; real 5.66&lt;br /&gt;
+ &lt;/pre&gt;
+
+
+&lt;p&gt;&lt;strong&gt;Update:&lt;em&gt;&amp;nbsp;&lt;/em&gt;&lt;/strong&gt;&lt;em&gt; As a commenter pointed out, the above syntax is for the &amp;quot;v6&amp;quot;, Perl6-on-Perl5, project. The &amp;quot;KindaPerl6&amp;quot; project is available through checking out the &amp;quot;pugs&amp;quot; repository, and provides a major speed improvement through pre-compilation:&lt;/em&gt;
+&lt;/p&gt;
+
+&lt;pre&gt; $ time -p echo 42.say | perl kp6-perl5.pl &amp;gt; test.pl&lt;br /&gt; real 0.68&lt;br /&gt; $ time -p perl -Ilib5 test.pl&lt;br /&gt; 42&lt;br /&gt; real 0.28&lt;/pre&gt;
+
+ &lt;p&gt; Notice that &#39;v6-alpha&#39; and KindaPerl6 supported the new method call syntax of &amp;quot;42.say&amp;quot;, while NQP required a more conventional
+ subroutine calling syntax &amp;quot;say(42);&amp;quot;.&lt;/p&gt;
+
+
+
+ &lt;p&gt; To provide some further context, I timed the same thing with the latest build of Pugs (r17041).&amp;nbsp; It&#39;s performance fell
+somewhere in between, still close to 10x slower than NQP:&lt;/p&gt;
+
+ 
+
+&lt;pre&gt;&amp;nbsp; &amp;nbsp;time -p echo 42.say | pugs&lt;br /&gt;&amp;nbsp; &amp;nbsp;42&lt;br /&gt;&amp;nbsp; &amp;nbsp;real 2.02&lt;br /&gt;&amp;nbsp; &amp;nbsp;&lt;/pre&gt;
+
+ &lt;p&gt; (This result was even less scientific than the others, because I logged into a different, presumably faster, machine to get access to a recent &#39;pugs&#39; build). &lt;/p&gt;
+
+ &lt;p&gt; And to put &lt;strong&gt;all&lt;/strong&gt; that into perspective, I tried the same thing with Perl 5.8.8:&lt;/p&gt;
+
+&lt;pre&gt;&amp;nbsp; time -p echo &#39;print &amp;quot;42\n&amp;quot;&#39; | perl&lt;br /&gt;
+&amp;nbsp; 42&lt;br /&gt;&amp;nbsp; real 0.01&amp;nbsp; &lt;/pre&gt;
+
+
+&lt;p&gt;The result here was practically instant, or about 30x faster than the Parrot-based NQP test.&lt;/p&gt;
+
+&lt;p&gt;Since all of these Perl 6 projects are still in development, I expect there is
+still a fair amount of room for optimization.&lt;/p&gt;
+
+&lt;p&gt;If you want to start playing with Perl 6 syntax now, &amp;quot;Not Quite Perl&amp;quot; and KindaPerl6 may well be easy enough
+to install and fast enough to please you.&lt;/p&gt;
+
+&lt;/div&gt;
+</content>
+
+
+    </entry>
+    <entry>
+        <title>Perl6-regex on Perl5-regex</title>
+        <link rel="alternate" type="text/html" href="http://pugs.blogs.com/pugs/2007/07/perl6-regex-on-.html" />
+        <link rel="replies" type="text/html" href="http://pugs.blogs.com/pugs/2007/07/perl6-regex-on-.html" thr:count="3" thr:updated="2007-12-03T03:22:44+08:00" />
+        <id>tag:typepad.com,2003:post-36241402</id>
+        <published>2007-07-09T08:45:09+08:00</published>
+        <updated>2008-02-23T21:17:39+08:00</updated>
+        <summary>Following with KindaPerl6 development, and inspired by Yves Orton (demerphq++) Perl 5.10 Advanced Regular Expressions, I started working on an implementation of Perl6 regex on Perl5 regex. After some experimentation, I ended up with a prototype program that works in...</summary>
+        <author>
+            <name>Flavio Glock</name>
+        </author>
+        
+        
+<content type="xhtml" xml:lang="en-US" xml:base="http://pugs.blogs.com/pugs/">
+<div xmlns="http://www.w3.org/1999/xhtml"><p>Following with <a href="http://pugs.blogs.com/pugs/2007/06/kindaperl6_proj.html">KindaPerl6</a> development, and inspired by Yves Orton (demerphq++) <a href="http://www.regex-engineer.org/slides/perl510_regex.html">Perl 5.10 Advanced Regular Expressions</a>,
+I started working on an implementation of Perl6 regex on Perl5 regex.</p>
+
+<p>After some experimentation, I ended up with a <a href="http://svn.pugscode.org/pugs/v6/v6-KindaPerl6/temp/backtracking-recursive-subrule.pl">prototype program</a> that works in Perl 5.8.</p>
+
+<p>The algorithm is now being implemented as an alternate KindaPerl6 backend. It can compile some <a href="http://svn.pugscode.org/pugs/v6/v6-KindaPerl6/examples/token-test.pl">complex patterns</a> already. The command line for the <code>perl5rx</code> backend looks like:</p>
+
+<p><code>$ perl kp6-perl5.pl --perl5rx &lt; examples/token-test.pl | perl -I lib5regex -I lib</code></p>
+
+<p>The program output is a dump of the resulting <code>Match</code> object.</p>
+
+<p>- Flavio S. Glock (fglock)</p></div>
+</content>
+
+
+    </entry>
+    <entry>
+        <title>&quot;KindaPerl6&quot; project roadmap</title>
+        <link rel="alternate" type="text/html" href="http://pugs.blogs.com/pugs/2007/06/kindaperl6_proj.html" />
+        <link rel="replies" type="text/html" href="http://pugs.blogs.com/pugs/2007/06/kindaperl6_proj.html" thr:count="6" thr:updated="2007-06-20T02:06:16+08:00" />
+        <id>tag:typepad.com,2003:post-34882012</id>
+        <published>2007-06-05T03:30:51+08:00</published>
+        <updated>2008-02-23T12:13:06+08:00</updated>
+        <summary>I finished the first version of the KindaPerl6 project roadmap, after a whole month of planning, prioritizing, and procrastination. This version is a filtered out &quot;main development track&quot;, extracted from the otherwise anarchistic development structure (somebody called it &quot;genetic programming&quot;)....</summary>
+        <author>
+            <name>Flavio Glock</name>
+        </author>
+        
+        
+<content type="xhtml" xml:lang="en-US" xml:base="http://pugs.blogs.com/pugs/">
+<div xmlns="http://www.w3.org/1999/xhtml"><p>I finished the first version of the KindaPerl6 project roadmap, after a whole month of planning, prioritizing, and procrastination.
+</p>
+
+<p>
+This version is a filtered out &quot;main development track&quot;, extracted from the otherwise 
+<a href="http://svn.pugscode.org/pugs/v6/docs/kp6-Notes.txt">
+anarchistic development structure
+</a>
+ (somebody called it &quot;genetic programming&quot;). 
+</p>
+
+
+<p>
+The goal of phases and milestones here is really just to break the project down into bite-sized pieces that regular hackers can get their heads around.
+</p>
+
+<p>
+Specifically, the plan doesn't tell people what they should not to do.
+Small projects are much welcome. You might even get a <a href="http://use.perl.org/article.pl?sid=07/03/22/1542235">
+Perl 6 Microgrant
+</a>.
+I'm told that the TPF really wants to give out a couple of kp6/mp6/6STD grants!
+</p>
+
+<p>
+The roadmap as html - <a href="http://moritz.faui2k3.org/pugs_pod/kp6-roadmap">http://moritz.faui2k3.org/pugs_pod/kp6-roadmap
+</a>
+</p>
+
+<p>
+The roadmap as pod - <a href="http://svn.pugscode.org/pugs/v6/docs/kp6-roadmap.pod">http://svn.pugscode.org/pugs/v6/docs/kp6-roadmap.pod</a></p>
+
+<p>- Flavio S. Glock (fglock)</p></div>
+</content>
+
+
+    </entry>
+ 
+</feed>
+<!-- ph=1 -->
+<!-- nhm:dynamic-ssi -->

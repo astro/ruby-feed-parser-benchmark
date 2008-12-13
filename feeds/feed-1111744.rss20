@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/rss2full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+  <channel>
+    <title>I am Dimitry</title>
+    <link>http://www.iamdimitry.com</link>
+    <description>Read all about technology, web development and creative entrepreneurship</description>
+    <language>en-US</language>
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://feeds.feedburner.com/youtilize" type="application/rss+xml" /><item>
+      <title>A JavaScript puzzler</title>
+      <description>&lt;p&gt;I got this one from &lt;a href="http://www.schillmania.com/"&gt;Scott&lt;/a&gt;, who ran into this problem with his amazing &lt;a href="http://www.schillmania.com/projects/soundmanager2/"&gt;SoundManager&lt;/a&gt; library.&lt;/p&gt;
+
+
+	&lt;h2&gt;The puzzler&lt;/h2&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;What&amp;#8217;s wrong with this code:&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code&gt;soundManager.sounds = [];
+soundManager.createSound = function(soundID) {
+  this.sounds[soundID] = new Sound(...);
+}
+
+// (user's stuff):
+soundManager.createSound('join');&lt;/code&gt;&lt;/pre&gt;
+
+	&lt;p&gt;&lt;small&gt;&lt;strong&gt;Try to figure this one out on your own before continuing!!!&lt;/strong&gt;&lt;/small&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;The problem&lt;/h2&gt;
+
+
+	&lt;p&gt;The problem isn&amp;#8217;t with the scope of the &lt;em class="hl"&gt;createSound()&lt;/em&gt; function as many people first think, but rather with the associative array &lt;em class="hl"&gt;sounds&lt;/em&gt; and using the key &lt;em class="hl"&gt;&amp;#8216;join&amp;#8217;&lt;/em&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;When you&amp;#8217;re saying &lt;em class="hl"&gt;sounds[&amp;#8216;join&amp;#8217;] = &amp;#8216;foobar&amp;#8217;&lt;/em&gt;, you&amp;#8217;re effectively trying to modify the Array&amp;#8217;s built-in &lt;em class="hl"&gt;join()&lt;/em&gt; method. And while not all browsers throw an exception (Firefox 3 doesn&amp;#8217;t), it&amp;#8217;s bad practice!&lt;/p&gt;
+
+
+	&lt;h2&gt;The solution&lt;/h2&gt;
+
+
+	&lt;p&gt;Simply define the &lt;em class="hl"&gt;sounds&lt;/em&gt; variable as &lt;em class="hl"&gt;sounds = new Object()&lt;/em&gt; or &lt;em class="hl"&gt;sounds = {}&lt;/em&gt; when the need for an associative array arises and you&amp;#8217;ll be all set. The &lt;a href="http://www.w3schools.com/jsref/jsref_obj_array.asp"&gt;Array class&lt;/a&gt; in JavaScript is an object with extra methods and functionality (like: &lt;em class="hl"&gt;sort()&lt;/em&gt;, &lt;em class="hl"&gt;join()&lt;/em&gt;, etc). Don&amp;#8217;t risk of conflicting with those names by using an Array in these situations.&lt;/p&gt;
+
+
+	&lt;p&gt;Enjoy quizzing your potential hires during the next interview!&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/youtilize/~4/439659964" height="1" width="1"/&gt;</description>
+      <author>Dimitry</author>
+      <pubDate>Sun, 02 Nov 2008 04:34:00 +0000</pubDate>
+      <link>http://feeds.feedburner.com/~r/youtilize/~3/439659964/a-javascript-puzzler</link>
+      <guid isPermaLink="false">http://www.iamdimitry.com/post/a-javascript-puzzler</guid>
+    <feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=youtilize&amp;itemurl=http%3A%2F%2Fwww.iamdimitry.com%2Fpost%2Fa-javascript-puzzler</feedburner:awareness><feedburner:origLink>http://www.iamdimitry.com/post/a-javascript-puzzler</feedburner:origLink></item>
+    <item>
+      <title>iPhone 3G thoughts</title>
+      <description>&lt;p&gt;&lt;a href="http://www.flickr.com/photos/dimitryb/2567252322/" title="Doorstop by Dimitry, on Flickr"&gt;&lt;img src="http://farm4.static.flickr.com/3131/2567252322_72acfea43b.jpg" width="482" height="321" alt="Doorstop v.1" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;Initial reaction&lt;/h2&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;I couldn&amp;#8217;t believe it!&lt;/strong&gt; Have I finally figured out a way to stop the bedroom door from slamming closed?&lt;/p&gt;
+
+
+	&lt;p&gt;I could potentially have one of the coolest and most expensive doorstops in the world!&lt;/p&gt;
+
+
+	&lt;h2&gt;And then the reality set in&lt;/h2&gt;
+
+
+	&lt;p&gt;&lt;a href="http://gizmodo.com/5014705/iphone-3g-the-stuff-that-didnt-get-upgraded"&gt;&lt;img src="http://cache.gawker.com/assets/images/4/2008/06/3c/b1/494x_3cb1f5c18ec8d3cc35074ea0541261a0.jpg" width="482" height="321" alt="iPhone - Zing!" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Personally, even though it&amp;#8217;s only $199, I simply cannot justify dumping my perfect 1st generation iPhone.&lt;/p&gt;
+
+
+	&lt;h2&gt;Third generation&amp;#8230;&lt;/h2&gt;
+
+
+	&lt;p&gt;... is going to be a huge hit and a big upgrade. Until then, I&amp;#8217;m perfectly happy.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;a href="http://daringfireball.net/2008/06/twice_as_fast"&gt;John Gruber&lt;/a&gt; said it best:&lt;/p&gt;
+
+
+	&lt;blockquote&gt;
+		&lt;p&gt;Today’s message is pretty simple: Apple is going for iPhone market share in a big, big, way.&lt;/p&gt;
+	&lt;/blockquote&gt;
+
+
+	&lt;blockquote&gt;
+		&lt;p&gt;No front-facing camera. No video from the rear camera. Instead of building a better $400 iPhone, they worked on halving the price of last year’s phone.&lt;/p&gt;
+	&lt;/blockquote&gt;
+
+
+	&lt;p&gt;&lt;small&gt;&lt;strong&gt;&amp;#8216;nuff said&lt;/strong&gt;&lt;/small&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/youtilize/~4/308621997" height="1" width="1"/&gt;</description>
+      <author>Dimitry</author>
+      <pubDate>Tue, 10 Jun 2008 06:45:00 +0000</pubDate>
+      <link>http://feeds.feedburner.com/~r/youtilize/~3/308621997/iphone-3g-thoughts</link>
+      <guid isPermaLink="false">http://www.iamdimitry.com/post/iphone-3g-thoughts</guid>
+    <feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=youtilize&amp;itemurl=http%3A%2F%2Fwww.iamdimitry.com%2Fpost%2Fiphone-3g-thoughts</feedburner:awareness><feedburner:origLink>http://www.iamdimitry.com/post/iphone-3g-thoughts</feedburner:origLink></item>
+    <item>
+      <title>Progressive Enhancement vs. Graceful Degradation</title>
+      <description>&lt;p&gt;Here&amp;#8217;s my quick view on the two strategies:&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="/images/posts/support.gif" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;In the words of &lt;a href="http://www.imdb.com/title/tt0120912/"&gt;Agent Jay&lt;/a&gt;:&lt;/h2&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Old and busted&lt;/strong&gt;: pages and technologies that work for older browsers&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;New hotness&lt;/strong&gt;: think &lt;span class="caps"&gt;AJAX&lt;/span&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Both strategies have the same end goal: &lt;strong&gt;provide support for the widest variety of user agents&lt;/strong&gt;, but have opposite approaches of doing so.&lt;/p&gt;
+
+
+	&lt;h2&gt;More reading&lt;/h2&gt;
+
+
+	&lt;p&gt;This is a quick high level overview, so read below for more information and examples:&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;a href="http://accessites.org/site/2007/02/graceful-degradation-progressive-enhancement/"&gt;Accessites.org goes more in depth&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="http://developer.yahoo.com/yui/articles/gbs/#progressive-enhancement"&gt;Yahoo developer articles&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;&lt;img src="http://feeds.feedburner.com/~r/youtilize/~4/307762247" height="1" width="1"/&gt;</description>
+      <author>Dimitry</author>
+      <pubDate>Mon, 09 Jun 2008 04:26:00 +0000</pubDate>
+      <link>http://feeds.feedburner.com/~r/youtilize/~3/307762247/progressive-enhancement-vs-graceful-degradation</link>
+      <guid isPermaLink="false">http://www.iamdimitry.com/post/progressive-enhancement-vs-graceful-degradation</guid>
+    <feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=youtilize&amp;itemurl=http%3A%2F%2Fwww.iamdimitry.com%2Fpost%2Fprogressive-enhancement-vs-graceful-degradation</feedburner:awareness><feedburner:origLink>http://www.iamdimitry.com/post/progressive-enhancement-vs-graceful-degradation</feedburner:origLink></item>
+    <item>
+      <title>Javascript performance tips</title>
+      <description>&lt;h2&gt;Scope chain pain&lt;/h2&gt;
+
+
+	&lt;p&gt;If you&amp;#8217;re like me and use a lot of framework singletons, such as the popular &lt;strong&gt;&lt;span class="caps"&gt;YAHOO&lt;/span&gt;.util.Dom&lt;/strong&gt;, there&amp;#8217;s something you can do so speed things up.&lt;/p&gt;
+
+
+	&lt;p&gt;Every time you use a global variable, the browser has to work its way up the scope chain until it reaches the global scope. By giving all those pesky global vars a local reference, you can significantly lower the time it takes to find that variable.&lt;/p&gt;
+
+
+	&lt;p&gt;Remember, JavaScript code is executed on the end-user&amp;#8217;s computer, so writing efficient code should always be the #1 priority. Here&amp;#8217;s an example with using &lt;span class="caps"&gt;YUI&lt;/span&gt; core components which are accessed frequently:&lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code&gt;(function() {
+
+var lang     = YAHOO.lang,
+    dom      = YAHOO.util.Dom,
+    event    = YAHOO.util.Event;
+
+var newObject = function() {
+  // 'lang' is much faster to lookup than 'YAHOO.lang' and so on...
+  alert(lang.JSON.stringify({"key" : "value"}));
+};
+
+})();&lt;/code&gt;&lt;/pre&gt;
+
+	&lt;p&gt;By writing your code within a self-executing function, variables &lt;strong&gt;lang&lt;/strong&gt;, &lt;strong&gt;dom&lt;/strong&gt;, and &lt;strong&gt;event&lt;/strong&gt; are only local to that function and everything inside of it. So, lookups to such frequent tools like &lt;strong&gt;&lt;span class="caps"&gt;YAHOO&lt;/span&gt;.util.Dom&lt;/strong&gt; are much faster.&lt;/p&gt;
+
+
+	&lt;h2&gt;&lt;span class="caps"&gt;DOM&lt;/span&gt; caching&lt;/h2&gt;
+
+
+	&lt;p&gt;Similarly, lowering the times you access the &lt;span class="caps"&gt;DOM&lt;/span&gt; improves the performance as well, most of the times drastically.&lt;/p&gt;
+
+
+	&lt;p&gt;So if you have something along the lines of this (but hopefully more profound):&lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code&gt;for (var i=0; i&amp;lt;100; i++) {
+  document.getElementById('el').innerHTML = i;
+}&lt;/code&gt;&lt;/pre&gt;
+
+	&lt;p&gt;Do this:&lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code&gt;var el = document.getElementById('el');
+for (var i=0; i&amp;lt;100; i++) {
+  el.innerHTML = i;
+}&lt;/code&gt;&lt;/pre&gt;
+
+	&lt;p&gt;In other words, only do one &lt;span class="caps"&gt;DOM&lt;/span&gt; lookup per element and save the reference to a variable.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;small&gt;&lt;strong&gt;That&amp;#8217;s it. Happy coding.&lt;/strong&gt;&lt;/small&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/youtilize/~4/307269568" height="1" width="1"/&gt;</description>
+      <author>Dimitry</author>
+      <pubDate>Sun, 08 Jun 2008 09:18:00 +0000</pubDate>
+      <link>http://feeds.feedburner.com/~r/youtilize/~3/307269568/javascript-performance-tips</link>
+      <guid isPermaLink="false">http://www.iamdimitry.com/post/javascript-performance-tips</guid>
+    <feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=youtilize&amp;itemurl=http%3A%2F%2Fwww.iamdimitry.com%2Fpost%2Fjavascript-performance-tips</feedburner:awareness><feedburner:origLink>http://www.iamdimitry.com/post/javascript-performance-tips</feedburner:origLink></item>
+    <item>
+      <title>PHP is king among scripting languages</title>
+      <description>&lt;p&gt;&lt;img src="/images/posts/tiobe.gif" class="righty" alt="" /&gt;... at least according to the &lt;a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html"&gt;&lt;span class="caps"&gt;TIOBE&lt;/span&gt; index&lt;/a&gt;, which measures language popularity based on the number of web searches:&lt;/p&gt;
+
+
+	&lt;blockquote&gt;
+		&lt;p&gt;The ratings are calculated by counting hits of the most popular search engines. The search query that is used is &lt;strong&gt;+&amp;#8221;&amp;lt;language&amp;gt; programming&amp;#8221;&lt;/strong&gt; The search query is executed for the regular Google, Google Blogs, &lt;span class="caps"&gt;MSN&lt;/span&gt;, Yahoo!, and YouTube web search for the last 12 months. The web site Alexa.com has been used to determine the most popular search engines.&lt;/p&gt;
+	&lt;/blockquote&gt;
+
+
+	&lt;h2&gt;Observations&lt;/h2&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;span class="caps"&gt;PHP&lt;/span&gt; moves up one spot from last year into #4 and still dominates the web languages&lt;/li&gt;
+		&lt;li&gt;ActionScript enters top 20 (as #20) and I expect it to grow even more in the coming years&lt;/li&gt;
+		&lt;li&gt;Java dominates with 20% market share and sits comfortably at the #1 spot&lt;/li&gt;
+		&lt;li&gt;Pascal enters top 20 as well at #15, jumping up eight spots in one year! This one I&amp;#8217;m just confused about, but I do miss the language&lt;/li&gt;
+		&lt;li&gt;JavaScript and Ruby are #9 and #10 respectively, though over last 4 years, Ruby has risen tremendously (#27 in 2004) with the help of Ruby on Rails&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;&lt;img src="/images/posts/tiobe2.gif" alt="" /&gt;
+&lt;small&gt;&lt;a href="http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html"&gt;View the rest&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/youtilize/~4/307242701" height="1" width="1"/&gt;</description>
+      <author>Dimitry</author>
+      <pubDate>Sun, 08 Jun 2008 08:14:00 +0000</pubDate>
+      <link>http://feeds.feedburner.com/~r/youtilize/~3/307242701/php-is-king-among-scripting-languages</link>
+      <guid isPermaLink="false">http://www.iamdimitry.com/post/php-is-king-among-scripting-languages</guid>
+    <feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=youtilize&amp;itemurl=http%3A%2F%2Fwww.iamdimitry.com%2Fpost%2Fphp-is-king-among-scripting-languages</feedburner:awareness><feedburner:origLink>http://www.iamdimitry.com/post/php-is-king-among-scripting-languages</feedburner:origLink></item>
+    <item>
+      <title>.me domains for you and me</title>
+      <description>&lt;p&gt;&lt;img src="/images/posts/dotme.gif" class="lefty" alt="" /&gt;In just a few short weeks, we will all have a new domain extension to be excited about: &lt;strong&gt;.me&lt;/strong&gt;. On &lt;strong&gt;July 17th, 2008&lt;/strong&gt;, &lt;strong&gt;.me&lt;/strong&gt; domains will go on sale to be registered by the general public. They were available as early as May 1st for registered trademarks of Montenegro, the owner of this top-level domain.&lt;/p&gt;
+
+
+	&lt;h2&gt;Country code&lt;/h2&gt;
+
+
+	&lt;p&gt;Montenegro became independent from Serbia only 2 years ago on June 3rd, 2006. Its telephone country code is a boring +382, but its internet country code is most likely the next big thing in the domain name business.&lt;/p&gt;
+
+
+	&lt;h2&gt;The future&lt;/h2&gt;
+
+
+	&lt;p&gt;I&amp;#8217;m willing to bet that &lt;strong&gt;.me&lt;/strong&gt; will be much more popular than &lt;strong&gt;.biz&lt;/strong&gt;, &lt;strong&gt;.mobi&lt;/strong&gt; or even &lt;strong&gt;.tv&lt;/strong&gt; (if not all those combined). None of those really took off, but &lt;strong&gt;.me&lt;/strong&gt; possibilities are much greater.&lt;/p&gt;
+
+
+	&lt;p&gt;On January, 2008, GoDaddy was &lt;a href="https://www.godaddy.com/gdshop/news/release_view.asp?news_item_id=141"&gt;named one of operators&lt;/a&gt; of the &lt;strong&gt;.me&lt;/strong&gt; domains (it currently operates .info and .org).&lt;/p&gt;
+
+
+	&lt;blockquote&gt;
+		&lt;p&gt;Imagine the possibilities. After all, .ME translates to a wide range of catchy words throughout the world &amp;#8211; including the obvious English translations, such as &amp;#8220;about me.” Others include &amp;#8220;amar.me,&amp;#8221; which means &amp;#8220;love me&amp;#8221; in Spanish, and &amp;#8220;secondo.me,&amp;#8221; which is Italian for &amp;#8220;in my opinion.&amp;#8221;&lt;/p&gt;
+	&lt;/blockquote&gt;
+
+
+	&lt;h2&gt;Cost and registration&lt;/h2&gt;
+
+
+	&lt;p&gt;Currently, the domain is in &amp;#8220;Landrush&amp;#8221; period where you can submit domains that you&amp;#8217;re interested in. If there are no other interested parties, you will be awarded the domain name. If there are, the domain enters a bidding war. Landrush ends June 26th, 2008 (register &lt;a href="https://www.godaddy.com/gdshop/tlds/me.asp"&gt;here&lt;/a&gt;).&lt;/p&gt;
+
+
+	&lt;p&gt;As mentioned above, on July 17th, anyone will be able to register the domains on first come, first serve basis. They&amp;#8217;re &lt;strong&gt;$49.99&lt;/strong&gt;/year with 2 years minimum which reminds me of the good ol&amp;#8217; .com days.&lt;/p&gt;
+
+
+	&lt;h2&gt;Notables&lt;/h2&gt;
+
+
+	&lt;p&gt;Apple is registering &lt;strong&gt;apple.me&lt;/strong&gt;, &lt;strong&gt;ipod.me&lt;/strong&gt;, and &lt;strong&gt;itunes.me&lt;/strong&gt;. &lt;small&gt;(via &lt;a href="http://www.macworld.co.uk/business/news/index.cfm?newsid=21323"&gt;Macworld&lt;/a&gt;)&lt;/small&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;small&gt;&lt;strong&gt;Will you be grabbing one?&lt;/strong&gt;&lt;/small&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/youtilize/~4/307208759" height="1" width="1"/&gt;</description>
+      <author>Dimitry</author>
+      <pubDate>Sun, 08 Jun 2008 06:10:00 +0000</pubDate>
+      <link>http://feeds.feedburner.com/~r/youtilize/~3/307208759/me-domains-for-you-and-for-me</link>
+      <guid isPermaLink="false">http://www.iamdimitry.com/post/me-domains-for-you-and-for-me</guid>
+    <feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=youtilize&amp;itemurl=http%3A%2F%2Fwww.iamdimitry.com%2Fpost%2Fme-domains-for-you-and-for-me</feedburner:awareness><feedburner:origLink>http://www.iamdimitry.com/post/me-domains-for-you-and-for-me</feedburner:origLink></item>
+    <item>
+      <title>Recession time!</title>
+      <description>&lt;p&gt;We&amp;#8217;re all screwed, the dollar is worth nothing and our savings are wiped out. Right?&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Not necessarily.&lt;/strong&gt; In fact, I&amp;#8217;d imagine a lot of us won&amp;#8217;t even notice the effects of the recession on a day-to-day basis. But it is definitely going to affect us in one way or another.&lt;/p&gt;
+
+
+	&lt;p&gt;Still, you can take simple steps to ensure your survival:&lt;/p&gt;
+
+
+	&lt;h2&gt;Avoid buying on credit (read: no more debt!)&lt;/h2&gt;
+
+
+	&lt;p&gt;Try to pay off all your debts right away and put off big purchases.&lt;/p&gt;
+
+
+	&lt;h2&gt;Be (or &lt;em&gt;appear&lt;/em&gt;) valuable at work&lt;/h2&gt;
+
+
+	&lt;p&gt;When layoffs come, make sure that you are valued at your company. You&amp;#8217;ll need a stable income during the times when new jobs are scarce.&lt;/p&gt;
+
+
+	&lt;h2&gt;Trim the fat (from your expenses)&lt;/h2&gt;
+
+
+	&lt;p&gt;This should also be filed under &lt;strong&gt;Save more, waste less&lt;/strong&gt;. American personal savings rates are disgustingly low. We all waste money, but recession isn&amp;#8217;t the time when you can do so comfortably.&lt;/p&gt;
+
+
+	&lt;p&gt;Do you really need that wireless internet card? New magazine subscriptions? Premium gas for your car? &lt;strong&gt;Think&lt;/strong&gt;, don&amp;#8217;t just abuse your credit card.&lt;/p&gt;
+
+
+	&lt;h2&gt;Don&amp;#8217;t be jumpy&lt;/h2&gt;
+
+
+	&lt;p&gt;Don&amp;#8217;t sell your investments! Stock markets are affected by downward turns in the economy. If your favorite company is tanking, do some research. If the decline is aligned with the rest of the market or sector, then calm yourself and wait it out. If not, dump the sucker.&lt;/p&gt;
+
+
+	&lt;p&gt;Remember, you&amp;#8217;re in the market for the long term (in most cases). Keep an eye out on your positions, but don&amp;#8217;t get obsessed.&lt;/p&gt;
+
+
+	&lt;p&gt;That&amp;#8217;s all I can think of right now.&lt;/p&gt;
+
+
+	&lt;h2&gt;Numbers to chew on:&lt;/h2&gt;
+
+
+	&lt;h3&gt;Savings rate&lt;/h3&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;In summary:&lt;/strong&gt; Horrible!&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="/images/posts/economy1.gif" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;small&gt;&lt;a href="http://www.bea.gov/"&gt;via U.S. Department of Commerce&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+
+
+	&lt;h3&gt;Employment situation&lt;/h3&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;In summary:&lt;/strong&gt; In March, we lost approximately another 80,000 jobs, a downward trend that started in January 2008. To this day, Bureau of Labor Statistics is reporting that &amp;#8220;Over the past 3 months, payroll employment has declined by 232,000.&amp;#8221; (&lt;a href="http://www.bls.gov/news.release/empsit.nr0.htm"&gt;linky&lt;/a&gt;) A lot of this is due to decline in construction, which is directly related to the housing slump.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="/images/posts/economy2.gif" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;small&gt;&lt;a href="http://www.bls.gov/"&gt;via U.S. Department of Labor&lt;/a&gt;&lt;/small&gt;&lt;/p&gt;
+
+
+	&lt;h3&gt;Prime rates&lt;/h3&gt;
+
+
+	&lt;p&gt;The Fed has been trying to prevent a recession for a while by lowering the rates. They&amp;#8217;re expected to slash another half percentage point very soon. As of March 2008, prime borrowing rate is at &lt;strong&gt;5.25%&lt;/strong&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;Important takeaway:&lt;/strong&gt; Low rates are attractive, but don&amp;#8217;t get suckered into buying expensive things like a house, if a slight change in your life can make it hard to afford the payments.&lt;/p&gt;
+
+
+	&lt;p&gt;Uneducated borrowing is what got us in this whole mess in the first place.&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/youtilize/~4/264461857" height="1" width="1"/&gt;</description>
+      <author>Dimitry</author>
+      <pubDate>Sat, 05 Apr 2008 07:27:00 +0000</pubDate>
+      <link>http://feeds.feedburner.com/~r/youtilize/~3/264461857/recession-time</link>
+      <guid isPermaLink="false">http://www.iamdimitry.com/post/recession-time</guid>
+    <feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=youtilize&amp;itemurl=http%3A%2F%2Fwww.iamdimitry.com%2Fpost%2Frecession-time</feedburner:awareness><feedburner:origLink>http://www.iamdimitry.com/post/recession-time</feedburner:origLink></item>
+    <item>
+      <title>I'm back friends!</title>
+      <description>&lt;p&gt;That&amp;#8217;s right! &lt;del&gt;Youtilize&lt;/del&gt; &lt;strong&gt;I am Dimitry&lt;/strong&gt; blog is back =)&lt;/p&gt;
+
+
+	&lt;p&gt;I couldn&amp;#8217;t live even two months without you guys, so I brought the blog back up under a new name.&lt;/p&gt;
+
+
+	&lt;p&gt;I&amp;#8217;ve been pretty busy last few months, so I can&amp;#8217;t wait to update all of you. There are some pretty exciting things in the works.&lt;/p&gt;
+
+
+	&lt;h2&gt;This is me, saying hi&lt;/h2&gt;
+
+
+	&lt;p&gt;&lt;img src="http://farm3.static.flickr.com/2335/2301454476_7908c63d26_m.jpg" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;While I have you here, check out some recent pics on my Flickr page. I got a new toy and have been trigger happy lately. &lt;a href="http://flickr.com/photos/dimitryb/"&gt;Go nuts&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;strong&gt;See you all around&lt;/strong&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;small&gt;Bear with me as I update the logo.&lt;/small&gt;&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/youtilize/~4/263042280" height="1" width="1"/&gt;</description>
+      <author>Dimitry</author>
+      <pubDate>Thu, 03 Apr 2008 01:58:00 +0000</pubDate>
+      <link>http://feeds.feedburner.com/~r/youtilize/~3/263042280/im-back-friends</link>
+      <guid isPermaLink="false">http://www.iamdimitry.com/post/im-back-friends</guid>
+    <feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=youtilize&amp;itemurl=http%3A%2F%2Fwww.iamdimitry.com%2Fpost%2Fim-back-friends</feedburner:awareness><feedburner:origLink>http://www.iamdimitry.com/post/im-back-friends</feedburner:origLink></item>
+    <item>
+      <title>Goodbye</title>
+      <description>&lt;p&gt;In the coming days, you&amp;#8217;ll notice that &lt;em class="hl"&gt;Youtilize&lt;/em&gt; will stop loading for you. No, the world didn&amp;#8217;t stop turning. I&amp;#8217;m closing down the site and moving on.&lt;/p&gt;
+
+
+	&lt;p&gt;My current lifestyle doesn&amp;#8217;t leave me with much free time and it has definitely taken a toll on my blogging.&lt;/p&gt;
+
+
+	&lt;p&gt;I&amp;#8217;ve met a lot of talented individuals and have definitely reaped the benefits of this once semi-popular blog.&lt;/p&gt;
+
+
+	&lt;p&gt;But alas, it&amp;#8217;s time to move on to bigger and better things. I&amp;#8217;ll leave the tech and business blogging to the wonderful minds behind &lt;a href="http://www.paulstamatiou.com"&gt;PaulStamatiou.com&lt;/a&gt; and &lt;a href="http://www.okdork.com"&gt;OkDork.com&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;Thanks for your dedicated readership, your insightful conversations and your useful criticism.&lt;/p&gt;
+
+
+	&lt;p&gt;Ta ta, so long, and as those awkward Germans would say, tschüss!&lt;/p&gt;
+
+
+	&lt;h2&gt;One more thing&amp;#8230;&lt;/h2&gt;
+
+
+	&lt;p&gt;If you want to keep in touch, you can follow me on &lt;a href="http://www.twitter.com/dimitry"&gt;Twitter&lt;/a&gt;, add me to your buddy list (&lt;strong&gt;&lt;span class="caps"&gt;AIM&lt;/span&gt;:&lt;/strong&gt; BigDimitry, &lt;strong&gt;Y!:&lt;/strong&gt; dimitry.bents, &lt;strong&gt;GTalk:&lt;/strong&gt; dimitryb@gmail.com), connect via &lt;a href="http://www.linkedin.com/in/dimitryb"&gt;LinkedIn&lt;/a&gt; or simply &lt;a href="mailto:dimitryb@gmail.com"&gt;email me&lt;/a&gt;.&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/youtilize/~4/263027173" height="1" width="1"/&gt;</description>
+      <author>Dimitry</author>
+      <pubDate>Thu, 14 Feb 2008 00:13:00 +0000</pubDate>
+      <link>http://feeds.feedburner.com/~r/youtilize/~3/263027173/goodbye</link>
+      <guid isPermaLink="false">http://www.iamdimitry.com/post/goodbye</guid>
+    <feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=youtilize&amp;itemurl=http%3A%2F%2Fwww.iamdimitry.com%2Fpost%2Fgoodbye</feedburner:awareness><feedburner:origLink>http://www.iamdimitry.com/post/goodbye</feedburner:origLink></item>
+    <item>
+      <title>The many faces of Google drop-downs</title>
+      <description>&lt;p&gt;First and foremost, I love a lot of what Google has to offer, particularly Gmail and Reader.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="/images/posts/google_gmail1.gif" class="lefty" alt="" /&gt; Recently, Google released a new Gmail version to the world with many wonderful upgrades. One thing however, left me scratching my head. I noticed they replaced a regular old &lt;span class="caps"&gt;HTML&lt;/span&gt; &lt;em class="hl"&gt;&amp;lt;select&amp;gt;&lt;/em&gt; tag with a smaller drop-down widget.&lt;/p&gt;
+
+
+	&lt;p&gt;Apart from the apparent visual improvement, it doesn&amp;#8217;t seem to be all that better and innovative to me. In fact, I&amp;#8217;d imagine it suffers a bit as far as accessibility goes.&lt;/p&gt;
+
+
+	&lt;h2&gt;Growing pains&lt;/h2&gt;
+
+
+	&lt;p&gt;Being a daily Reader user, I also noted that their drop-downs are pretty custom as well. &lt;strong&gt;What&amp;#8217;s interesting, is that they have a completely different look from Gmail&amp;#8217;s.&lt;/strong&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;I dug deeper and found that drop-downs across most of Google&amp;#8217;s web apps did not look much alike. &lt;strong&gt;In fact, sometimes there was more than one look within the same app!&lt;/strong&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;These inconsistencies are most likely attributed to Google&amp;#8217;s exceptional growth. It&amp;#8217;s huge now and all big companies have the same struggles. Yahoo is no different and I see this first hand almost everyday at work.&lt;/p&gt;
+
+
+	&lt;h2&gt;Plenty of examples&lt;/h2&gt;
+
+
+	&lt;h3&gt;Another one from Gmail&lt;/h3&gt;
+
+
+	&lt;p&gt;&lt;img src="/images/posts/google_gmail2.gif" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;h3&gt;Analytics &amp;#8211; my favorite&lt;/h3&gt;
+
+
+	&lt;p&gt;&lt;img src="/images/posts/google_analytics.gif" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;h3&gt;Calendar&lt;/h3&gt;
+
+
+	&lt;p&gt;&lt;img src="/images/posts/google_calendar1.gif" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="/images/posts/google_calendar2.gif" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;h3&gt;Docs&lt;/h3&gt;
+
+
+	&lt;p&gt;&lt;img src="/images/posts/google_docs1.gif" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="/images/posts/google_docs2.gif" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;h3&gt;Groups&lt;/h3&gt;
+
+
+	&lt;p&gt;&lt;img src="/images/posts/google_groups.gif" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;h3&gt;Picasa&lt;/h3&gt;
+
+
+	&lt;p&gt;&lt;img src="/images/posts/google_picasaweb.gif" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;h3&gt;Reader&lt;/h3&gt;
+
+
+	&lt;p&gt;&lt;img src="/images/posts/google_reader1.gif" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;img src="/images/posts/google_reader2.gif" alt="" /&gt;&lt;/p&gt;
+
+
+	&lt;h2&gt;Conclusion&lt;/h2&gt;
+
+
+	&lt;p&gt;Google has done a pretty good job keeping the main look similar from from one app to another. What&amp;#8217;s more important, their services are pretty good and are actually helpful.&lt;/p&gt;
+
+
+	&lt;p&gt;Still, they need to work out and implement various design patterns for specific controls that appear on multiple apps. The latter part is the hardest of course, but Google can do it, can&amp;#8217;t they?&lt;/p&gt;&lt;img src="http://feeds.feedburner.com/~r/youtilize/~4/263027174" height="1" width="1"/&gt;</description>
+      <author>Dimitry</author>
+      <pubDate>Thu, 20 Dec 2007 07:03:00 +0000</pubDate>
+      <link>http://feeds.feedburner.com/~r/youtilize/~3/263027174/the-many-faces-of-google-drop-downs</link>
+      <guid isPermaLink="false">http://www.iamdimitry.com/post/the-many-faces-of-google-drop-downs</guid>
+    <feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=youtilize&amp;itemurl=http%3A%2F%2Fwww.iamdimitry.com%2Fpost%2Fthe-many-faces-of-google-drop-downs</feedburner:awareness><feedburner:origLink>http://www.iamdimitry.com/post/the-many-faces-of-google-drop-downs</feedburner:origLink></item>
+  <feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetFeedData?uri=youtilize</feedburner:awareness></channel>
+</rss>

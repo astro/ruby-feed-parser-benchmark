@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xml:lang="en">
+  <id>tag:zargony.com,2008-08-01:/posts</id>
+  <link type="text/html" rel="alternate" href="http://zargony.com" />
+  <link type="application/atom+xml" rel="self" href="http://feeds.feedburner.com/zargony" />
+  <title>zargony.com</title>
+  <subtitle>Struggling through Ruby on Rails and Linux</subtitle>
+  <updated>2008-12-01T13:13:00+01:00</updated>
+  <entry>
+    <id>tag:zargony.com,2008-08-01:Post/54</id>
+    <published>2008-12-01T13:13:00+01:00</published>
+    <updated>2008-12-01T13:13:00+01:00</updated>
+    <link type="text/html" rel="alternate" href="http://feeds.feedburner.com/~r/zargony/~3/471237207/how-to-use-i18n-string-interpolation" />
+    <title>How to use i18n string interpolation</title>
+    <content type="html">&lt;p&gt;Since Rails 2.2 has been released last week, lots of people are beginning to translate their applications &amp;#8212; or, at least, many people seem to prepare their applications for later translation by replacing strings in views with &lt;code&gt;t()&lt;/code&gt; calls.&lt;/p&gt;
+&lt;p&gt;If you&amp;#8217;re modifying your application to be i18n-ready, or if you&amp;#8217;re creating a new multilingual application, here&amp;#8217;s a useful guideline to remember: &lt;strong&gt;translate meanings, not words&lt;/strong&gt;.&lt;/p&gt;&lt;p&gt;&lt;a href="http://zargony.com/2008/12/01/how-to-use-i18n-string-interpolation"&gt;Read more &amp;raquo;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/zargony?a=zCDXO"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=zCDXO" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/zargony?a=qCoRO"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=qCoRO" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/zargony/~4/471237207" height="1" width="1"/&gt;</content>
+    <author>
+      <name>Andreas</name>
+      <url>http://zargony.com/</url>
+    </author>
+  <feedburner:origLink>http://zargony.com/2008/12/01/how-to-use-i18n-string-interpolation</feedburner:origLink></entry>
+  <entry>
+    <id>tag:zargony.com,2008-08-01:Post/53</id>
+    <published>2008-11-27T23:33:06+01:00</published>
+    <updated>2008-11-27T23:33:06+01:00</updated>
+    <link type="text/html" rel="alternate" href="http://feeds.feedburner.com/~r/zargony/~3/467771537/running-rails-2-2-with-i18n" />
+    <title>Running Rails 2.2 with i18n</title>
+    <content type="html">&lt;p&gt;Just a quick note that this blog is now running &lt;a href="http://weblog.rubyonrails.org/2008/11/21/rails-2-2-i18n-http-validators-thread-safety-jruby-1-9-compatibility-docs"&gt;Rails 2.2&lt;/a&gt; and makes use of the new &lt;a href="http://rails-i18n.org/"&gt;i18n framework&lt;/a&gt;. Although this site is completely in English, the same application is also serving another blog in German. Moving the blog application from ruby-gettext translations to Rails i18n was quite a bit of work since the i18n simple backend works differently and after all, I had to recreate all translation files.&lt;/p&gt;
+&lt;p&gt;In the end, it works very well and reliable. While working with i18n views, I had some small ideas for improving translation handling in views &amp;#8211; maybe I can come up with some minor improvements after thinking about it some more.&lt;/p&gt;
+&lt;p&gt;The main difference between gettext and Rails i18n is the usage of translation keys. With gettext, you place full strings of the &amp;#8220;master language&amp;#8221; (usually English) into the views. With Rails i18n, you build up a hierarchical structure of translation symbols (like &amp;#8220;sidebar.latest.title&amp;#8221;) and associate them with real text in translation files. Currently there&amp;#8217;s no tool to extract symbols used in views to assist you to keep translations complete (like &lt;code&gt;rgettext&lt;/code&gt; does for gettext), but I guess helpers will appear soon.&lt;/p&gt;
+&lt;p&gt;For my translations, I used the i18n simple backend, which comes with Rails and stores translation strings in simply &lt;code&gt;.yml&lt;/code&gt; files. However, the Rails i18n framework actually is much &lt;a href="http://zargony.com/2008/08/26/rails-2-2-localization-and-gettext"&gt;more&lt;/a&gt; than just translations in &lt;code&gt;.yml&lt;/code&gt;-files. It allows translation backends to hook into the Rails core with a documented interface, which promises to be more stable and reliable than monkeypatching solutions (e.g. like ruby-gettext does). In theory, it should be possible to create an i18n backend that utilizes gettext &amp;#8212; which certainly is still very interesting e.g. to upgrade existing applications or for large applications with many translators (since the gettext format is widely supported by a lot of tools and services).&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/zargony?a=ZEWON"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=ZEWON" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/zargony?a=w8lrN"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=w8lrN" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/zargony/~4/467771537" height="1" width="1"/&gt;</content>
+    <author>
+      <name>Andreas</name>
+      <url>http://zargony.com/</url>
+    </author>
+  <feedburner:origLink>http://zargony.com/2008/11/27/running-rails-2-2-with-i18n</feedburner:origLink></entry>
+  <entry>
+    <id>tag:zargony.com,2008-08-01:Post/49</id>
+    <published>2008-10-30T11:24:13+01:00</published>
+    <updated>2008-11-12T22:38:20+01:00</updated>
+    <link type="text/html" rel="alternate" href="http://feeds.feedburner.com/~r/zargony/~3/436735554/recursive-git-rgit" />
+    <title>Recursive git: rgit</title>
+    <content type="html">&lt;p&gt;Here&amp;#8217;s a little helper that runs a git command on every repository found in subdirs. Put the following ruby code into a file called &lt;code&gt;rgit&lt;/code&gt;, make it executable and save it to a bin directory, like &lt;code&gt;/usr/local/bin&lt;/code&gt;:&lt;/p&gt;
+&lt;ol class="CodeRay"&gt;
+&lt;li&gt;&lt;span class="c"&gt;#!/usr/bin/env ruby&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt; &lt;/li&gt;
+&lt;li&gt;&lt;span class="r"&gt;if&lt;/span&gt; &lt;span class="pc"&gt;ARGV&lt;/span&gt;.empty?&lt;/li&gt;
+&lt;li&gt;  &lt;span class="co"&gt;STDERR&lt;/span&gt;.puts &lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;usage: &lt;/span&gt;&lt;span class="il"&gt;&lt;span class="idl"&gt;#{&lt;/span&gt;&lt;span class="co"&gt;File&lt;/span&gt;.basename(&lt;span class="gv"&gt;$0&lt;/span&gt;)&lt;span class="idl"&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class="k"&gt; &amp;lt;cmd&amp;gt; ...&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;  &lt;span class="co"&gt;STDERR&lt;/span&gt;.puts &lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;  Runs git &amp;lt;cmd&amp;gt; in every repository found in subdirs&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;  exit&lt;/li&gt;
+&lt;li&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt; &lt;/li&gt;
+&lt;li&gt;dirs = &lt;span class="co"&gt;Dir&lt;/span&gt;.glob(&lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;**/.git&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;).map { |d| d.chomp(&lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;/.git&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;) }&lt;/li&gt;
+&lt;li&gt; &lt;/li&gt;
+&lt;li&gt;dirs.each &lt;span class="r"&gt;do&lt;/span&gt; |dir|&lt;/li&gt;
+&lt;li&gt;  puts &lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;-&amp;gt; &lt;/span&gt;&lt;span class="il"&gt;&lt;span class="idl"&gt;#{&lt;/span&gt;dir&lt;span class="idl"&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;  &lt;span class="co"&gt;Dir&lt;/span&gt;.chdir(dir) &lt;span class="r"&gt;do&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;    system &lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;git&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;, *&lt;span class="pc"&gt;ARGV&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/pre&gt;
+&lt;p&gt;I&amp;#8217;m using &lt;code&gt;rgit pull&lt;/code&gt; or &lt;code&gt;rgit fetch&lt;/code&gt; every morning to retrieve the latest code changes and &lt;code&gt;rgit push&lt;/code&gt; every evening to make sure all my changes get pushed to the server. &lt;code&gt;rgit repack -a -d&lt;/code&gt; is useful to cleanup all local repositories.&lt;/p&gt;
+&lt;p&gt;Todo: git submodules should be filtered out. Currently, they are processed like normal repositories, which probably is not what you want.&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/zargony?a=UKFWM"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=UKFWM" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/zargony?a=gmn8M"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=gmn8M" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/zargony/~4/436735554" height="1" width="1"/&gt;</content>
+    <author>
+      <name>Andreas</name>
+      <url>http://zargony.com/</url>
+    </author>
+  <feedburner:origLink>http://zargony.com/2008/10/30/recursive-git-rgit</feedburner:origLink></entry>
+  <entry>
+    <id>tag:zargony.com,2008-08-01:Post/48</id>
+    <published>2008-09-27T01:36:03+02:00</published>
+    <updated>2008-10-07T20:19:44+02:00</updated>
+    <link type="text/html" rel="alternate" href="http://feeds.feedburner.com/~r/zargony/~3/404216442/why-i-m-starting-to-like-jruby-even-though-i-dislike-java" />
+    <title>Why I'm starting to like JRuby even though I dislike Java</title>
+    <content type="html">&lt;p&gt;Among my friends, it&amp;#8217;s not a secret that I personally don&amp;#8217;t like Java. During my time at the university, I had to deal with it for some courses, but somehow nobody could convince me to really like the language. With Ruby, it was the exact opposite &amp;#8211; I saw a few code examples, read some articles about it and I immediately started to like the language and its charming way of doing OO like I always wanted it to be.&lt;/p&gt;
+&lt;p&gt;When I discovered &lt;a href="http://jruby.codehaus.org/"&gt;JRuby&lt;/a&gt;, I therefore didn&amp;#8217;t take it serious and overlooked its potential. Today, I&amp;#8217;m starting to like JRuby. Why? Because JRuby is actually pretty cool. It runs code of my favorite language (Ruby) on a wide-spread and highly optimized platform (the Java Virtual Machine, aka &lt;span&gt;JVM&lt;/span&gt;). You can use JRuby to run Ruby code without even knowing a single bit about Java &amp;#8211; but it runs on the &lt;span&gt;JVM&lt;/span&gt; (which has several advantages as stated below).&lt;/p&gt;&lt;p&gt;&lt;a href="http://zargony.com/2008/09/26/why-i-m-starting-to-like-jruby-even-though-i-dislike-java"&gt;Read more &amp;raquo;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/zargony?a=lq9uL"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=lq9uL" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/zargony?a=rEIlL"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=rEIlL" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/zargony/~4/404216442" height="1" width="1"/&gt;</content>
+    <author>
+      <name>Andreas</name>
+      <url>http://zargony.com/</url>
+    </author>
+  <feedburner:origLink>http://zargony.com/2008/09/26/why-i-m-starting-to-like-jruby-even-though-i-dislike-java</feedburner:origLink></entry>
+  <entry>
+    <id>tag:zargony.com,2008-08-01:Post/47</id>
+    <published>2008-08-26T19:12:21+02:00</published>
+    <updated>2008-08-26T19:12:21+02:00</updated>
+    <link type="text/html" rel="alternate" href="http://feeds.feedburner.com/~r/zargony/~3/375294702/rails-2-2-localization-and-gettext" />
+    <title>Rails 2.2 localization and gettext</title>
+    <content type="html">&lt;p&gt;The next version of Rails (which most probably will be version 2.2) will come with an integrated internationalization (i18n) &lt;span&gt;API&lt;/span&gt;. Here&amp;#8217;s an overview of how this affects an application if you&amp;#8217;ve used the gettext gem so far.&lt;/p&gt;
+&lt;p&gt;First of all, the new &lt;a href="http://rails-i18n.org/"&gt;Rails i18n &lt;span&gt;API&lt;/span&gt;&lt;/a&gt; isn&amp;#8217;t meant to completely replace existing localization plugins like gettext. More precisely, it&amp;#8217;s an &lt;span&gt;API&lt;/span&gt; built into the Rails core to provide easier access for i18n plugins. The &lt;span&gt;API&lt;/span&gt;, for example, makes it much easier to customize number, currency, date and time formats as well as error messages (e.g. in validations) and output of helpers like &lt;code&gt;distance_of_time_in_words&lt;/code&gt;.&lt;/p&gt;&lt;p&gt;&lt;a href="http://zargony.com/2008/08/26/rails-2-2-localization-and-gettext"&gt;Read more &amp;raquo;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/zargony?a=bVLuHK"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=bVLuHK" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/zargony?a=U0mRxK"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=U0mRxK" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/zargony/~4/375294702" height="1" width="1"/&gt;</content>
+    <author>
+      <name>Andreas</name>
+      <url>http://zargony.com/</url>
+    </author>
+  <feedburner:origLink>http://zargony.com/2008/08/26/rails-2-2-localization-and-gettext</feedburner:origLink></entry>
+  <entry>
+    <id>tag:zargony.com,2008-08-01:Post/46</id>
+    <published>2008-07-31T15:04:10+02:00</published>
+    <updated>2008-11-27T18:39:26+01:00</updated>
+    <link type="text/html" rel="alternate" href="http://feeds.feedburner.com/~r/zargony/~3/351436066/google-talks-about-rails-scalability" />
+    <title>Google talks about Rails scalability</title>
+    <content type="html">&lt;p&gt;Google recently published an interesting tech talk about scalability of Ruby on Rails applications. Jason Hoffman from &lt;a href="http://www.joyent.com/"&gt;Joyent&lt;/a&gt; talks about &lt;a href="http://en.wikipedia.org/wiki/DTrace"&gt;DTrace&lt;/a&gt; and how they fixed latency issues observed in &lt;a href="http://twitter.com/"&gt;Twitter&lt;/a&gt;. In between, he&amp;#8217;s also telling some interesting thoughts on the Rails framework architecture in general.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.youtube.com/watch?v=mRf4bpEtI6I"&gt;Video link&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/zargony?a=TcsPlJ"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=TcsPlJ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/zargony?a=scgHcJ"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=scgHcJ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/zargony/~4/351436066" height="1" width="1"/&gt;</content>
+    <author>
+      <name>Andreas</name>
+      <url>http://zargony.com/</url>
+    </author>
+  <feedburner:origLink>http://zargony.com/2008/07/31/google-talks-about-rails-scalability</feedburner:origLink></entry>
+  <entry>
+    <id>tag:zargony.com,2008-08-01:Post/45</id>
+    <published>2008-07-02T12:50:45+02:00</published>
+    <updated>2008-07-14T19:43:08+02:00</updated>
+    <link type="text/html" rel="alternate" href="http://feeds.feedburner.com/~r/zargony/~3/335196175/using-gettext-at-class-level-with-rails" />
+    <title>Using gettext at class level with Rails</title>
+    <content type="html">&lt;p&gt;In short: &lt;strong&gt;DON&amp;#8217;T!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The long story:&lt;/p&gt;
+&lt;p&gt;Lately, I talked to a few people about using gettext in Rails applications and one of the most frequently asked questions was, why gettext behaves strange on strings at class level. My advice: don&amp;#8217;t use gettext at class level &amp;#8211; it logically makes no sense (at least not in Rails).&lt;/p&gt;
+&lt;p&gt;In a Rails application, an incoming request is routed to a controller instance, i.e. Rails creates a new object of a controller class for every request. To determine the language a page should be shown in, gettext needs information of the current request: the language is selected by looking at the &lt;code&gt;Accept-Language&lt;/code&gt; &lt;span&gt;HTTP&lt;/span&gt; header, the &lt;code&gt;lang&lt;/code&gt; cookie, the &lt;code&gt;lang&lt;/code&gt; &lt;span&gt;GET&lt;/span&gt;/&lt;span&gt;POST&lt;/span&gt; parameter, or whatever else you made it to use (e.g. a user setting or the &lt;span&gt;TLD&lt;/span&gt; of a request).&lt;/p&gt;
+&lt;p&gt;In all cases, the selected language is determined by information from the request &amp;#8211; information, which simply isn&amp;#8217;t available outside an &lt;strong&gt;instance&lt;/strong&gt; of a controller.&lt;/p&gt;
+&lt;p&gt;If you use the gettext helper method &lt;code&gt;_&lt;/code&gt; at class level, it evaluates once when the application loads and results in a fixed (usually untranslated) string being used for all requests. You need to use the gettext methods at instance level to make it work.&lt;/p&gt;
+&lt;p&gt;But&amp;#8230; why does it work sometimes? Actually it sometimes works in development environment, because the Rails application is entirely reloaded on each request and therefore the gettext statement is effectively evaluated on each request.&lt;/p&gt;
+&lt;p&gt;So, a common pitfall of using gettext with Rails is, that everything seems to translate fine during development, but strange things happen on the production server. In my opinion, it&amp;#8217;d be a good idea to let gettext helpers raise an error if used at class level in a Rails application. Maybe I should file a gettext feature request for this ;). (note that this only applies to Rails applications; in other Ruby applications, it&amp;#8217;s usually perfectly fine to use gettext at class level since the language can be selected when the application starts)&lt;/p&gt;&lt;p&gt;&lt;a href="http://zargony.com/2008/07/02/using-gettext-at-class-level-with-rails"&gt;Read more &amp;raquo;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/zargony?a=vhKbVJ"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=vhKbVJ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/zargony?a=edejMJ"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=edejMJ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/zargony/~4/335196175" height="1" width="1"/&gt;</content>
+    <author>
+      <name>Andreas</name>
+      <url>http://zargony.com/</url>
+    </author>
+  <feedburner:origLink>http://zargony.com/2008/07/02/using-gettext-at-class-level-with-rails</feedburner:origLink></entry>
+  <entry>
+    <id>tag:zargony.com,2008-08-01:Post/41</id>
+    <published>2008-06-08T21:06:30+02:00</published>
+    <updated>2008-11-19T17:30:47+01:00</updated>
+    <link type="text/html" rel="alternate" href="http://feeds.feedburner.com/~r/zargony/~3/307451035/activerecord-condition-building-made-easy" />
+    <title>ActiveRecord condition building made easy</title>
+    <content type="html">&lt;p&gt;Building an ActiveRecord condition parameter can result in a lot of unattractive code if it needs to depend on various things. E.g. if you need to find records that match multiple criteria given by the user, you might end up writing &lt;a href="http://pastie.org/211094"&gt;a lot of code&lt;/a&gt; to do so.&lt;/p&gt;
+&lt;p&gt;Using a hash as a condition might work in some cases:&lt;/p&gt;
+&lt;ol class="CodeRay"&gt;
+&lt;li&gt;conditions = {}&lt;/li&gt;
+&lt;li&gt;conditions[&lt;span class="sy"&gt;:orderno&lt;/span&gt;] = orderno &lt;span class="r"&gt;unless&lt;/span&gt; orderno.blank?&lt;/li&gt;
+&lt;li&gt;conditions[&lt;span class="sy"&gt;:color&lt;/span&gt;] = color &lt;span class="r"&gt;unless&lt;/span&gt; color.blank?&lt;/li&gt;
+&lt;li&gt;...&lt;/li&gt;
+&lt;li&gt;&lt;span class="co"&gt;Product&lt;/span&gt;.find(&lt;span class="sy"&gt;:all&lt;/span&gt;, &lt;span class="sy"&gt;:conditions&lt;/span&gt; =&amp;gt; conditions)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/pre&gt;
+&lt;p&gt;However this only works for simple searches (where values are matched by equality). If you try to build a slightly more complex condition (like searching for a substring in the name of a product, or for products that are cheaper than a given price), a hash won&amp;#8217;t work and you need to use an array for the condition. This usually leads to clumsy code that needs to assemble the query string and its parameters in the right order depending on the given criteria. However, by extending the Array class with a helper method, everything becomes easier and nicer:&lt;/p&gt;&lt;p&gt;&lt;a href="http://zargony.com/2008/06/08/activerecord-condition-building-made-easy"&gt;Read more &amp;raquo;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/zargony?a=DwTuKI"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=DwTuKI" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/zargony?a=n46z2I"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=n46z2I" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/zargony/~4/307451035" height="1" width="1"/&gt;</content>
+    <author>
+      <name>Andreas</name>
+      <url>http://zargony.com/</url>
+    </author>
+  <feedburner:origLink>http://zargony.com/2008/06/08/activerecord-condition-building-made-easy</feedburner:origLink></entry>
+  <entry>
+    <id>tag:zargony.com,2008-08-01:Post/36</id>
+    <published>2008-05-16T17:26:45+02:00</published>
+    <updated>2008-05-16T17:28:24+02:00</updated>
+    <link type="text/html" rel="alternate" href="http://feeds.feedburner.com/~r/zargony/~3/291635988/sharing-controllers-and-views-with-polymorphic-resources" />
+    <title>Sharing controllers and views with polymorphic resources</title>
+    <content type="html">&lt;p&gt;A while ago I faced a problem with controllers for nested resources I wanted to reuse in different contexts (polymorphic resources). For example, I had a simple &lt;code&gt;Todo&lt;/code&gt; model that is used to store tasks that have to be done. Having multiple users which are organized in teams, the goal was to have user-specific (personal) todos and team-specific todos. Obviously, both kind of todos could be handled exactly the same way (same controller, same views) &amp;#8211; except that the context differs.&lt;/p&gt;
+&lt;p&gt;So here&amp;#8217;s a way to use a single controller for a polymorphic resource.&lt;/p&gt;&lt;p&gt;&lt;a href="http://zargony.com/2008/05/16/sharing-controllers-and-views-with-polymorphic-resources"&gt;Read more &amp;raquo;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/zargony?a=WNRNaH"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=WNRNaH" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/zargony?a=XC7z8H"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=XC7z8H" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/zargony/~4/291635988" height="1" width="1"/&gt;</content>
+    <author>
+      <name>Andreas</name>
+      <url>http://zargony.com/</url>
+    </author>
+  <feedburner:origLink>http://zargony.com/2008/05/16/sharing-controllers-and-views-with-polymorphic-resources</feedburner:origLink></entry>
+  <entry>
+    <id>tag:zargony.com,2008-08-01:Post/33</id>
+    <published>2008-04-29T01:28:57+02:00</published>
+    <updated>2008-11-27T18:46:57+01:00</updated>
+    <link type="text/html" rel="alternate" href="http://feeds.feedburner.com/~r/zargony/~3/279643510/five-tips-for-developing-rails-applications" />
+    <title>Five tips for developing Rails applications</title>
+    <content type="html">&lt;p&gt;During the development of some web applications in the past, I found myself using various techniques again and again on different projects. Here&amp;#8217;s a collection of five things that I discovered over the time and that I found most useful.&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;#1 &amp;#8211; Pimp your rails console with colors, history and tab completion&lt;/li&gt;
+	&lt;li&gt;#2 &amp;#8211; Using source annotations&lt;/li&gt;
+	&lt;li&gt;#3 &amp;#8211; Using enum attributes with ActiveRecord&lt;/li&gt;
+	&lt;li&gt;#4 &amp;#8211; Protect email addresses in views from being gathered by spammers&lt;/li&gt;
+	&lt;li&gt;#5 &amp;#8211; Avoid sending messages to nil&lt;/li&gt;
+&lt;/ul&gt;&lt;p&gt;&lt;a href="http://zargony.com/2008/04/28/five-tips-for-developing-rails-applications"&gt;Read more &amp;raquo;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/zargony?a=6t8FBG"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=6t8FBG" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/zargony?a=Pz3rpG"&gt;&lt;img src="http://feeds.feedburner.com/~f/zargony?i=Pz3rpG" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/zargony/~4/279643510" height="1" width="1"/&gt;</content>
+    <author>
+      <name>Andreas</name>
+      <url>http://zargony.com/</url>
+    </author>
+  <feedburner:origLink>http://zargony.com/2008/04/28/five-tips-for-developing-rails-applications</feedburner:origLink></entry>
+</feed>

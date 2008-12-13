@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="http://feeds.ziffdavisenterprise.com/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.ziffdavisenterprise.com/~d/styles/itemcontent.css"?><rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+   <channel>
+      <title>Google Watch</title>
+      <link>http://googlewatch.eweek.com/?kc=rss</link>
+      <description />
+      <language>en</language>
+      <copyright>Copyright 2008</copyright>
+      <lastBuildDate>Thu, 11 Dec 2008 11:47:43 -0500</lastBuildDate>
+      <generator>http://www.sixapart.com/movabletype/</generator>
+      <docs>http://blogs.law.harvard.edu/tech/rss</docs> 
+
+      
+      <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://feeds.ziffdavisenterprise.com/RSS/google_watch" type="application/rss+xml" /><feedburner:feedFlare href="http://add.my.yahoo.com/rss?url=http%3A%2F%2Ffeeds.ziffdavisenterprise.com%2FRSS%2Fgoogle_watch" src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif">Subscribe with My Yahoo!</feedburner:feedFlare><feedburner:feedFlare href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=http%3A%2F%2Ffeeds.ziffdavisenterprise.com%2FRSS%2Fgoogle_watch" src="http://www.newsgator.com/images/ngsub1.gif">Subscribe with NewsGator</feedburner:feedFlare><feedburner:feedFlare href="http://feeds.my.aol.com/add.jsp?url=http%3A%2F%2Ffeeds.ziffdavisenterprise.com%2FRSS%2Fgoogle_watch" src="http://o.aolcdn.com/favorites.my.aol.com/webmaster/ffclient/webroot/locale/en-US/images/myAOLButtonSmall.gif">Subscribe with My AOL</feedburner:feedFlare><feedburner:feedFlare href="http://www.rojo.com/add-subscription?resource=http%3A%2F%2Ffeeds.ziffdavisenterprise.com%2FRSS%2Fgoogle_watch" src="http://blog.rojo.com/RojoWideRed.gif">Subscribe with Rojo</feedburner:feedFlare><feedburner:feedFlare href="http://www.bloglines.com/sub/http://feeds.ziffdavisenterprise.com/RSS/google_watch" src="http://www.bloglines.com/images/sub_modern11.gif">Subscribe with Bloglines</feedburner:feedFlare><feedburner:feedFlare href="http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Ffeeds.ziffdavisenterprise.com%2FRSS%2Fgoogle_watch" src="http://www.netvibes.com/img/add2netvibes.gif">Subscribe with Netvibes</feedburner:feedFlare><feedburner:feedFlare href="http://fusion.google.com/add?feedurl=http%3A%2F%2Ffeeds.ziffdavisenterprise.com%2FRSS%2Fgoogle_watch" src="http://buttons.googlesyndication.com/fusion/add.gif">Subscribe with Google</feedburner:feedFlare><feedburner:feedFlare href="http://www.pageflakes.com/subscribe.aspx?url=http%3A%2F%2Ffeeds.ziffdavisenterprise.com%2FRSS%2Fgoogle_watch" src="http://www.pageflakes.com/ImageFile.ashx?instanceId=Static_4&amp;fileName=ATP_blu_91x17.gif">Subscribe with Pageflakes</feedburner:feedFlare><item>
+         <title>Google: What is an Operating System Anyway?</title>
+         <description>&lt;P&gt;
+Remember last week when Net Applications told reporters &lt;a href="http://googlewatch.eweek.com/content/google_operating_system/is_a_google_operating_system_built_on_android_gears_in_the_cards.html"&gt;Google is masking origins of some of the traffic streaming out of its Mountain View, Calif., headquarters&lt;/a&gt;?
+&lt;P&gt;
+Google charged the notion this week by releasing Native Client, an open source runtime engine, browser plugin, and compilation tool set geared to boost Web application performance on computing devices. Some observers think Native Client could be combined with its Chrome browser, Gears and to form some of Microsoft Windows-killing Web operating system.
+&lt;P&gt;
+I caught up with the men behind Native Client, Google's Linus Upson, director of engineering, Brad Chen, engineering manager for Native Client and Henry Bridge, product manager for Native Client. 
+&lt;P&gt;
+&lt;a href="http://www.eweek.com/c/a/Application-Development/Google-Developers-Say-Native-Client-Bridges-Gap-Between-Web-Desktop-Applications/"&gt;Here's the full Q&amp;A&lt;/a&gt;, but for less patient readers I want to tease out the highlights. The geekier types should gulp down the Q&amp;A; there's lots of talk about security in there.
+&lt;P&gt;
+Upson says he has no idea why Net Applications couldn't divine the origin of some of Google's traffic, and was elliptical about whether or not Google has a Web operating system in the works.
+&lt;P&gt;
+&lt;strong&gt;Upson:&lt;/strong&gt; We don't comment on rumors like that, just like when people ask us about all kinds of crazy things.
+&lt;P&gt;
+&lt;strong&gt;Me:&lt;/strong&gt; Similar to like how you denied the existence of Chrome before you announced Chrome?
+&lt;P&gt;
+&lt;strong&gt;Upson, joking:&lt;/strong&gt; Just like with Chrome, just like with the space elevator and the zeppelins. I can't talk about them. 
+&lt;P&gt;
+Maybe I'm reading a bit in to this, but you know that tone that people get when they know something you don't. You know, the one where they're absolutely dying to tell you something they can't. Upson had it.
+&lt;P&gt;
+Clearly, Google is building several layers of a so-called Web OS. Just what form it will take is unclear, but it will be something that makes Web apps as fast and hardy (eventually more so) than Web apps.
+&lt;P&gt;
+Upson made light of my question about what in addition to Chrome, Android, Gears and Native Client might make a good Web OS stack, noting that "Ever since the Microsoft antitrust trial, I don't know what an operating system is anymore. They drew the circle very wide and basically said it's anything we call Windows. My computer science 101 textbook had a much narrower definition of what an operating system was. I can't define an operating system in any kind of reasonable way."
+&lt;P&gt;
+He did say:
+&lt;P&gt;
+&lt;blockquote&gt;But I can tell you what we're trying to do with things like Chrome, Native Client and Gears. We really want to make it possible for people to build Web apps that are as rich, responsive and powerful as desktop applications. We really want to close the gap between the Web and the desktops. We're very committed to doing that with open source and open standards.&lt;/blockquote&gt;
+&lt;P&gt;
+Why would Upson have the right to feel giddy about this? Because if they can pull it off, it will make search look even more like the real end run around Microsoft that it currently is designed to be. A Google operating system, on top of which sit search and Web apps, could absolutely blow up in this evolving world of hungry Web users.
+&lt;P&gt;
+How would Google distribute this? Some, like analyst Rob Enderle, note Netbooks are where Microsoft is weak:
+&lt;P&gt;
+&lt;blockquote&gt;Displacing Microsoft is at the core of [Google's] strategy. First step was largely to take much of the value out of Windows and put it into the cloud, second step is to use Android, the Applications store, and Gears to start to displace it, and the third step is to carry this all into the enterprise where they are currently doing foundation work. It isn't so much that they are running at Windows head on, they are making a flanking move and coming on smart phones and eventually Netbooks. With Windows Mobile 7 slipping and the issues with Windows on Netbooks they have a better shot than any other Microsoft competitor has ever taken if they can execute and Microsoft has been blessed by competitors that can't execute.&lt;/blockquote&gt; 
+&lt;P&gt;
+What do you think? Is the smart money on Google coming at Microsoft through Netbooks in addition to mobile phones?&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=7kvOThwL"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=XqvOWioA"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?i=XqvOWioA" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=xD8IqcNC"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/RSS/google_watch/~4/URZrX6ZkH8k" height="1" width="1"/&gt;</description>
+         <link>http://feeds.ziffdavisenterprise.com/~r/RSS/google_watch/~3/URZrX6ZkH8k/google_what_is_an_operating_system_anyway.html</link>
+         <guid isPermaLink="false">http://googlewatch.eweek.com/content/google_vs_microsoft/google_what_is_an_operating_system_anyway.html?kc=rss</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Google vs. Microsoft</category>
+        
+        
+         <pubDate>Thu, 11 Dec 2008 11:47:43 -0500</pubDate>
+      <feedburner:origLink>http://googlewatch.eweek.com/content/google_vs_microsoft/google_what_is_an_operating_system_anyway.html?kc=rss</feedburner:origLink></item>
+      
+      <item>
+         <title>Google Finally Fixes Gmail SMS Text Message Tool</title>
+         <description>&lt;P&gt;
+&lt;strong&gt;Update:&lt;/strong&gt;&lt;a href="http://googlewatch.eweek.com/content/gmail/google_now_lets_you_text_message_from_gmail.html"&gt;Back on Oct. 30, I wrote about Google expanding its chat feature in Gmail to include SMS messaging.&lt;/a&gt; The feature lets users send free text messages from their desktop computers to friends' mobile phones.
+&lt;P&gt;
+I raved about how great this service was, only to find out the following weekend that &lt;a href="http://googlewatch.eweek.com/content/gmail/googles_gmail_chat_sms_feature_hits_a_snag.html"&gt;Google had run into a snag in turning on the feature for everyone.&lt;/a&gt;
+&lt;P&gt;
+More than 40 days later, &lt;a href="http://www.webbuyersguide.com/company/4274/Google&amp;kc=eweekarticle121008&amp;src=eweekarticle121008"&gt;Google&lt;/a&gt; has fixed the persistent bugs and is rolling out Short Message Service text messaging for Gmail chat. Caveat: You must have a U.S. phone number for it to work. Sorry.
+&lt;P&gt;
+To turn it on in Gmail, click on Settings and go to the Labs tab. Find "Text Messaging (SMS) in Chat," select Enable and choose Save Changes. *To send a text message to a friend, type a phone number into the search box in the chat window on the left, then select "Send SMS." You can also select the contact you want to SMS first and then add their phone number.
+&lt;P&gt;
+Just as with e-mail contacts, Google will save your friends' numbers. The next time you text someone, just type their name in the chat box and click Send SMS.
+&lt;P&gt;
+One cool thing that I neglected to describe clearly last time I chronicled it was what it looks like on the receiving end. When you get a text message from Gmail on your phone, it will come from a number in the 406 area code. &lt;a href="http://gmailblog.blogspot.com/2008/12/really-new-in-labs-this-time-sms-text.html" target="_blank"&gt;Google Product Manager Leo Dirac explains in this blog post&lt;/a&gt;:
+&lt;P&gt;
+&lt;blockquote&gt;You can reply to this text on your phone just like you'd reply to any other text. The reply gets routed back to our Gmail servers and shows up in your friend's Gmail chat window. Each of your friends' messages will come from a different 406 number so you can reply to any message and it will get back to the right person. Messages from the same person will always come from the same number, so you can even bookmark it in your phone.&lt;/blockquote&gt;
+&lt;P&gt;
+I also learned something new about this service. If you get a message from somebody you don't want to chat with from your phone, just reply "block," and if you don't want to get texts from anybody using Gmail, reply "stop" and Google will nip it in the bud on its servers. 
+&lt;P&gt;
+Dirac was also kind enough to note that the text messages count as part of users' regular mobile messaging plan and could incur fees. That's something I should have told my wife at the time. We learned the hard way. Whoops! :)
+&lt;P&gt;
+Please enable it in your iPhones, BlackBerrys, G1s or whatever you use and give it a whirl. What do you think? I wish Google would toss the character cap, how about you?&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=k08PPiNZ"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=MGmJrr6Q"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?i=MGmJrr6Q" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=uh4eYaM4"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/RSS/google_watch/~4/MEcupmjnH-o" height="1" width="1"/&gt;</description>
+         <link>http://feeds.ziffdavisenterprise.com/~r/RSS/google_watch/~3/MEcupmjnH-o/google_finally_fixes_gmail_sms_text_message_tool.html</link>
+         <guid isPermaLink="false">http://googlewatch.eweek.com/content/google_mobile/google_finally_fixes_gmail_sms_text_message_tool.html?kc=rss</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Gmail</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Google Apps</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Google Mobile</category>
+        
+        
+         <pubDate>Wed, 10 Dec 2008 20:12:24 -0500</pubDate>
+      <feedburner:origLink>http://googlewatch.eweek.com/content/google_mobile/google_finally_fixes_gmail_sms_text_message_tool.html?kc=rss</feedburner:origLink></item>
+      
+      <item>
+         <title>Google Corporate Blog Network Commands Trust with a Caveat </title>
+         <description>&lt;P&gt;
+Forrester Research's Josh Bernoff released an interesting report about the trust factor associated with corporate blogs, or, rather, the lack of trust in corporate blogs, which ranked below even personal blogs and social network profiles in people's perceptions. Ouch. Bernoff found:
+&lt;P&gt;
+&lt;blockquote&gt;&lt;p&gt;Corporate blogs rank at the bottom of the trust scale with only 16% of online consumers who read them saying that they trust them. Furthermore, the consumers who say they trust these blogs are the most likely to trust all other sources of information.&lt;/blockquote&gt;
+&lt;P&gt;
+Bernoff also noted that people don't trust large companies, which some see as another form of "The Man," so why would they suck up the information in blogs? Good point.
+&lt;P&gt; 
+What does this have to do with &lt;a href="http://www.webbuyersguide.com/company/4274/Google&amp;kc=eweekarticle121008&amp;src=eweekarticle121008"&gt;Google&lt;/a&gt;? A lot, seeing as how Google regularly eschews pumping out press releases to deliver roughly 95 percent of its news via its &lt;a href="http://googleblog.blogspot.com/" target="_blank"&gt;corporate-sanctioned blog network.&lt;/a&gt; 
+&lt;P&gt;
+For example, &lt;a href="http://www.google.com/intl/en/press/" target="_blank"&gt;Google&lt;/a&gt; today put out a press release trumpeting its 2008 global zeitgeist. It's Dec. 10. The last press release prior to this one? Exactly one week ago today, Dec. 3. 
+&lt;P&gt;
+One would expect this paucity of PR in a failing or soon-to-be-sold startup, but to have one or two press releases per week from a company of Google's size and market capitalization is staggering. Most companies would suffer from curdle, wither and die because of such silence. Not Google. 
+&lt;P&gt;
+That's right, for those who didn't know, Google has a multichanneled blog structure, featuring weekly posts from Google's Search, AdWords and Enterprise businesses, as well as posts from more niche factions such as Google Retail Advertising, Google Book Search and Google. Google even has a student blog.
+&lt;P&gt; 
+As someone who follows Google regularly, I have to be careful about what to soak up and write about from Google's blog network.
+&lt;P&gt;
+Perhaps not surprisingly, I find most of the search, ad and applications blogs to be full of subtle back-patting and sly boasts. See the &lt;a href="http://googleblog.blogspot.com/2008/12/global-zeitgeist.html" target="_blank"&gt;zeitgeist blog post&lt;/a&gt; from Google's search queen Marissa Mayer, which complements the press release.
+&lt;P&gt;
+Conversely, Google's Gmail blog tends to feature posts from programmers, not marketing people, so the information is lean, matter-of-fact and generally devoid of hyperbole. &lt;a href="http://gmailblog.blogspot.com/2008/12/new-in-labs-tasks.html" target="_blank"&gt;Note this recent post about Gmail's new task manager tool.&lt;/a&gt;  
+&lt;P&gt;
+Whether news is loaded with puffery or sans bluster is not so much a factor in whether I cover it, but how florid the tone and diction are definitely affects how vigilant I am in reporting it.
+&lt;p&gt;
+So, I can understand Bernoff's findings, though I also agree with &lt;a href="http://www.readwriteweb.com/archives/corporate_blogs_trust.php" target="_blank"&gt;ReadWriteWeb's Richard MacManus,&lt;/a&gt; who says the corporate blogs question isn't so black and white. We, as journalists and bloggers, need to be sharp-eyed as we cover companies that actually situate their public relations material in blogs. 
+&lt;P&gt;
+My Microsoft Watch colleague Joe Wilcox puts the &lt;a href="http://www.microsoft-watch.com/content/corporate/corporate_blogs_believe_them_not.html"&gt;Microsoft blogs through the wringer here&lt;/a&gt; and summarizes blogging tips from &lt;a href="http://www.microsoft-watch.com/content/corporate/make_your_corporate_blog_believable.html"&gt;Bernoff's colleague Jeremiah Owyang here.&lt;/a&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=sykiyMHj"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=1SbMUZxe"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?i=1SbMUZxe" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=SObyKXpK"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/RSS/google_watch/~4/6BgVrIFhiHw" height="1" width="1"/&gt;</description>
+         <link>http://feeds.ziffdavisenterprise.com/~r/RSS/google_watch/~3/6BgVrIFhiHw/google_corporate_blog_commands_trust_with_a_caveat.html</link>
+         <guid isPermaLink="false">http://googlewatch.eweek.com/content/off_topic/google_corporate_blog_commands_trust_with_a_caveat.html?kc=rss</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Off Topic</category>
+        
+        
+         <pubDate>Wed, 10 Dec 2008 13:29:54 -0500</pubDate>
+      <feedburner:origLink>http://googlewatch.eweek.com/content/off_topic/google_corporate_blog_commands_trust_with_a_caveat.html?kc=rss</feedburner:origLink></item>
+      
+      <item>
+         <title>MySpace Answers Google, Facebook with MySpaceID</title>
+         <description>&lt;P&gt;
+Proving again my theory that vendors dabbling in a new frontier don't want to miss a news cycle, &lt;a href="http://www.techcrunch.com/2008/12/08/myspace-data-availability-now-has-a-catchier-name-and-two-new-partners/"&gt;MySpace has launched its own data portability effort&lt;/a&gt; a couple business days after the launches of &lt;a href="http://googlewatch.eweek.com/content/google_vs_facebook/facebook_takes_pole_position_on_data_portability_over_google_myspace.html"&gt;Facebook Connect&lt;/a&gt; and Google Friend Connect. &lt;a href="http://gigaom.com/2008/12/08/myspace-launches-id-effort-open-platform/"&gt;Dave Winer and Om Malik call these feature wars&lt;/a&gt;.
+&lt;P&gt;
+It's interesting to me because &lt;a href="http://www.eweek.com/c/a/Messaging-and-Collaboration/MySpace-Opens-Walled-Garden-Partners-with-Yahoo/"&gt;MySpace announced Data Availability before Facebook Connect and Friend Connect in May&lt;/a&gt;. The effort is coming to life today as the more &lt;a href="http://news.cnet.com/8301-17939_109-10118553-2.html"&gt;comely named MySpaceID&lt;/a&gt;.
+&lt;P&gt;
+Like &lt;a href="http://www.eweek.com/c/a/Application-Development/Mark-Zuckerberg-Says-Facebook-Connect-is-the-Future/"&gt;Facebook Connect&lt;/a&gt; and &lt;a href="http://www.eweek.com/c/a/Messaging-and-Collaboration/New-Google-Widgets-Socialize-The-Web/"&gt;Google Friend Connect&lt;/a&gt;, &lt;a href="http://googlewatch.eweek.com/content/openid/google_friend_connect_facebook_connect_face_off.html"&gt;launched within hours of each other&lt;/a&gt; last Thursday, MySpaceID lets users use their MySpace profile data to access partner sites. MySpaceID is part of the larger MySpace platform effort, now called MySpace Open Platform, which includes the MySpace Application Platform and Post-To MySpace.   
+&lt;P&gt;
+MySpaceID has been implemented within AOL, Flock, Eventful, Flixster, Yoono and others, with Vodafone and Netvibes joining today as partners ahead of MySpace's original launch partners of eBay, Twitter and Yahoo. The big mobile partner in Vodafone brings some interesting possibilities in mobile social networking to mind.
+&lt;P&gt;
+More impressive to me is that MySpace is built on OpenSocial, OAuth and OpenID, as well as Google Friend Connect, "to better cater to the long tail of the development community." Here is where I think Google and MySpace can make a dent: by banding together. 
+&lt;P&gt;
+You can't knock Facebook's reach of 130 million, but Google and MySpace could get enough people who loathe Facebook and the proprietary position it stands for to form a formidable one-two punch. &lt;a href="http://www.readwriteweb.com/archives/myspaceid_myspace_sides_with_t.php"&gt;ReadWriteWeb's Rick Turoczy agrees&lt;/a&gt;. 
+&lt;P&gt;
+Unfortunately, I keep reading that Facebook Connect is relatively simple while MySpaceID is just flat-out hard to implement for nondevelopers. Max Engel, who oversees MySpaceID, &lt;a href="http://hosted.ap.org/dynamic/stories/T/TEC_OPEN_MYSPACE?SITE=INKEN&amp;SECTION=HOME&amp;TEMPLATE=DEFAULT"&gt;told AP&lt;/a&gt; that blogs and other small sites with limited technical help probably will find it easier to use Friend Connect. 
+&lt;P&gt;
+I found this to be true. &lt;a href="http://etech.eweek.com/content/collaboration/google_opens_up_social_networking.html"&gt;My eWEEK colleague Jim Rapoza implemented Friend Connect on his Emerging Technologies blog last week and was impressed with its ease of use&lt;/a&gt;. 
+&lt;P&gt;
+Indeed, I signed in to his blog with Friend Connect by clicking a button after he set it up. It doesn't get easier than that, and ease of implementation and use is the key to any social networking endeavor.   
+&lt;P&gt;
+Sigh. Do you see the incongruity problem inherent with MySpace and Google? 
+&lt;P&gt;
+For MySpaceID and Google Friend Connect to provide a united front versus Facebook, they need to do it with MySpace's network of 127 million users and Google's name, brand and ease of implementation. 
+&lt;P&gt;
+But If MySpaceID is too hard for sites to implement, partner sites won't implement it, which means the millions of MySpace users won't be able to tap into it. Conversely, Google has ease of use going for it, but no social network to leverage. What would seem to be two complementary services may ultimately be broken.
+&lt;P&gt;
+So, the united front is flimsy. The respective weaknesses of MySpaceID and Friend Connect may preclude them from serving as viable alternatives to Facebook. 
+&lt;P&gt;
+Facebook Connect wins if, in fact, this space will even see a winner. It may be too geeky for people to truly be popular.&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=z3Ry0k4l"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=fymsH9wB"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?i=fymsH9wB" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=0AVEX12G"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/RSS/google_watch/~4/cvE1DbbZAb4" height="1" width="1"/&gt;</description>
+         <link>http://feeds.ziffdavisenterprise.com/~r/RSS/google_watch/~3/cvE1DbbZAb4/myspace_answers_google_facebook_with_myspaceid.html</link>
+         <guid isPermaLink="false">http://googlewatch.eweek.com/content/data_portability/myspace_answers_google_facebook_with_myspaceid.html?kc=rss</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Data Portability</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Google vs. Facebook</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">OpenID</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">OpenSocial</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Social Networks</category>
+        
+        
+         <pubDate>Tue, 09 Dec 2008 08:29:59 -0500</pubDate>
+      <feedburner:origLink>http://googlewatch.eweek.com/content/data_portability/myspace_answers_google_facebook_with_myspaceid.html?kc=rss</feedburner:origLink></item>
+      
+      <item>
+         <title>Google Adds Task Manager to Gmail </title>
+         <description>&lt;P&gt;
+One of the knocks on Google Apps has been an utter lack of a tool to let users &lt;a href="http://www.eweek.com/c/a/Messaging-and-Collaboration/Customers-Compile-Wish-List-for-Google-Apps/"&gt;manage tasks&lt;/a&gt; or &lt;a href="http://www.eweek.com/c/a/Messaging-and-Collaboration/Project-Management-Startup-Could-Fit-The-Bill-For-Google/"&gt;projects&lt;/a&gt;. Scratch the former complaint from your list.
+&lt;P&gt;
+Google's &lt;a href="http://gmailblog.blogspot.com/2008/12/new-in-labs-tasks.html"&gt;Gmail team moved to plug this hole with a new task manager&lt;/a&gt; that lets users keep track of their agenda. Check out this &lt;a href="http://2.bp.blogspot.com/_JE4qNpFW6Yk/ST2wpgUkqWI/AAAAAAAAANU/pCCe-uJzpnA/s1600-h/tasks2.jpg"&gt;task management list example here&lt;/a&gt;, then begin creating your own tasks by activating the feature in Gmail Labs.
+&lt;P&gt;
+Go to Settings atop your in-box, click the Labs tab, and you'll see the new feature option at the top. Select Enable and click Save Changes at the bottom. You should then see the Tasks link under the "Contacts" link on the left of your in-box.
+&lt;P&gt;
+Click it, then click in an empty part of the list window that pops up on the right and start typing your task list in what is really the familiar Google Chat window. This means they're visible while you're scanning your in-box, reading mail or searching. You can also pop your list out into a new window.
+&lt;P&gt;
+The list you create saves automatically, and you can hit Return to begin entering a new task. There are a number of editing options, including the ability to add, delete, indent, un-indent tasks, move tasks up or down, or switch between task lists.
+&lt;P&gt;
+Here's the best part: You can also convert e-mails into tasks. To do so, select one or more messages and go to "More Actions," then "Add to Tasks." It pops up in the task list. You can read it by selecting it and clicking the related e-mail link. Awesome! More modular e-mail. It's like putting a digital sticky label on your to-do list.
+&lt;P&gt;
+ReadWriteWeb's Marshall Kirkpatrick does what the Gmail team failed to do: &lt;a href="http://www.readwriteweb.com/archives/gmail_stuggling_with_email_wan.php"&gt;create a video demo of the task tool here&lt;/a&gt;.
+&lt;P&gt;
+Very cool, though like &lt;a href="http://www.techcrunch.com/2008/12/08/gmail-finally-gets-a-to-do-list/"&gt;TechCrunch's Erik Schonfeld&lt;/a&gt;, I'm not much of a list guy. For work, I send a daily news budget to editors and that's it. For play, I keep a mental list each day. I'll have to play around with it some more to see if my opinion on to-do lists changes.&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=7Mx3QEHx"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=6PXbp4xV"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?i=6PXbp4xV" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=QMy0MgvG"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/RSS/google_watch/~4/lcewi3kDXEI" height="1" width="1"/&gt;</description>
+         <link>http://feeds.ziffdavisenterprise.com/~r/RSS/google_watch/~3/lcewi3kDXEI/google_adds_task_manager_to_gmail.html</link>
+         <guid isPermaLink="false">http://googlewatch.eweek.com/content/gmail/google_adds_task_manager_to_gmail.html?kc=rss</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Gmail</category>
+        
+        
+         <pubDate>Tue, 09 Dec 2008 00:01:00 -0500</pubDate>
+      <feedburner:origLink>http://googlewatch.eweek.com/content/gmail/google_adds_task_manager_to_gmail.html?kc=rss</feedburner:origLink></item>
+      
+      <item>
+         <title>Google AdWords Come to the Android G1, Apple iPhone </title>
+         <description>&lt;P&gt;
+Following closely on the heels of the &lt;a href="http://www.eweek.com/c/a/Mobile-and-Wireless/Google-Releases-SIMunlocked-Android-Phone-For-399/"&gt;SIM-unlocked Android phone&lt;/a&gt;,  &lt;a href="http://googlemobile.blogspot.com/2008/12/new-adwords-options-for-iphone-and-g1.html"&gt;Google today said it is letting&lt;/a&gt; AdWords advertisers show desktop text and image ads on Apple's iPhone, the T-Mobile G1 and other mobile devices with "full" Web browsers.
+&lt;P&gt;
+Google defines "full Web browsers" as those that can show standard HTML Web pages and support a user completing a purchase through the application. iPhone and Android's Webkit OS clearly apply. &lt;a href="http://www.readwriteweb.com/archives/google_adwords_adsense_mobile_devices.php"&gt;Advertisers will be able to display ads on these mobile devices&lt;/a&gt;, create campaigns for them and get separate performance reporting. 
+&lt;P&gt;
+With this offering, Google has solved the challenge of putting search ads on cumbersome, smaller third screens, as these fill browser "ads can point to desktop landing pages so you don't need to create mobile landing pages or ads in mobile formats." Amanda Kelly, of Google's Inside AdWords, wrote:
+&lt;P&gt;
+&lt;blockquote&gt;Showing ads on the G1 and iPhone also has additional advantages for your advertising. Users are performing a lot of searches on these devices, and searches are likely to go up during the holiday season. Last Christmas, the iPhone drove more traffic to Google.com worldwide than any other mobile platform.&lt;/blockquote&gt;
+&lt;P&gt;
+OK, but what about after the holiday season? If you listen to current doom and gloom from financial analysts such as &lt;a href="http://mediamemo.allthingsd.com/20081208/is-google-ready-to-make-unpleasant-history/?reflink=ATD_yahoo_ticker"&gt;Citi's Mark Mahaney&lt;/a&gt;, or even from &lt;a href="http://www.eweek.com/c/a/Search-Engines/Google-to-Curb-Expenses-as-Wall-Street-Cuts-Estimates-on-Google/"&gt;Google itself&lt;/a&gt;, search ads should see a slowdown during the recession, which will only deepen in 2009. 
+&lt;P&gt;
+If people are searching less on their PCs, you can bet they won't be doing more from their iPhones or G1s, let alone buying these devices to do searches on. 
+&lt;P&gt;
+I'm not normally bearish on Google ad news, but I have no confidence that this will reap good rewards in the near future even with, as &lt;a href="http://mediamemo.allthingsd.com/20081208/google-makes-its-first-real-stab-at-mobile-marketing-adwords-on-iphones/"&gt;Silicon Alley Insider's Peter Kafka notes&lt;/a&gt;, cheaper iPhones from Wal-Mart.
+&lt;P&gt;
+I think search advertising is heading for a fall like we've never seen before (finally), though what that will look like is unclear. We really haven't seen Google struggle, and it may in 2009. Either way, &lt;a href="http://venturebeat.com/2008/12/08/google-hopes-targeting-the-iphone-and-g1-will-brighten-the-ad-gloom/"&gt;these mobile ads&lt;/a&gt; should pressure Microsoft and Yahoo to step up their mobile ad plans.  
+&lt;P&gt;
+Anyway, to target ads for G1 and iPhone, AdWords soldiers can go to their campaign settings tab in your AdWords account and select "iPhones and other mobile devices with full internet browsers" in the "Device Platform" option under "Networks and Bidding."
+&lt;P&gt;
+Check out &lt;a href="http://www.youtube.com/watch?v=q4R-wF6sdDg&amp;eurl=http://googlemobile.blogspot.com/2008/12/new-adwords-options-for-iphone-and-g1.html&amp;feature=player_embedded"&gt;the video demo of the new G1 and iPhone mobile ads by Alexandra Kenin, product marketing manager for Google's Mobile Ads team, here on YouTube&lt;/a&gt;. 
+&lt;P&gt;
+She shows how to opt out of showing the ads on desktop and laptop computers, or just show the ads on the mobile gadgets and desktops.&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=qBcTs1s5"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=tQH552ie"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?i=tQH552ie" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=gvM1G2f3"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/RSS/google_watch/~4/165GN3hWuRI" height="1" width="1"/&gt;</description>
+         <link>http://feeds.ziffdavisenterprise.com/~r/RSS/google_watch/~3/165GN3hWuRI/google_adwords_come_to_the_android_g1_apple_iphone_bah_humbug.html</link>
+         <guid isPermaLink="false">http://googlewatch.eweek.com/content/google_mobile/google_adwords_come_to_the_android_g1_apple_iphone_bah_humbug.html?kc=rss</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Google Mobile</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Hello, Android</category>
+        
+        
+         <pubDate>Mon, 08 Dec 2008 19:53:35 -0500</pubDate>
+      <feedburner:origLink>http://googlewatch.eweek.com/content/google_mobile/google_adwords_come_to_the_android_g1_apple_iphone_bah_humbug.html?kc=rss</feedburner:origLink></item>
+      
+      <item>
+         <title>Is a Google Operating System Built on Android, Gears in the Cards?</title>
+         <description>&lt;P&gt;
+Kudos to my former InternetNews colleague Andy Patrizio for &lt;a href="http://www.internetnews.com/dev-news/print.php/3788821"&gt;ferreting out a fascinating new Google rumor we can tease each other with for weeks and months to come&lt;/a&gt;.
+&lt;P&gt;
+This conspicuous specter? &lt;a href="http://arnoldit.com/wordpress/2008/12/07/the-google-operating-system-myth-or-reality/"&gt;GOS, or the Google Operating System&lt;/a&gt;&lt;/a&gt;. 
+&lt;p&gt;
+Andy interviewed &lt;a href="http://www.netapplications.com/"&gt;Net Applications&lt;/a&gt; about an anomaly the stat crunchers uncovered at Google, where as much as a third of traffic streaming out of Google's Mountain View headquarters is stripped of the usual identifying information that accompanies such traffic. The other two-thirds of folks are using Linux for the most part. Andy wrote:
+&lt;P&gt;
+&lt;blockquote&gt;One-third, however, were unrecognized even though Net Applications' sensors can detect all major operating systems including most flavors of Unix and Linux. Even Microsoft's new Windows 7, which is deployed internally at Microsoft headquarters, would show up by its identifier string. But the Google operating systems were specifically blocked. 
+"We have never seen an OS stripped off the user agent string before," [Net Applications Executive Vice President Vince] Vizzaccaro told InternetNews.com. "I believe you have to arrange to have that happen, it's not something we've seen before with a proxy server. All I can tell you is there's a good percentage of the people at Google showing up [at Web pages] with their OS hidden."&lt;/blockquote&gt;
+&lt;P&gt;
+So Net Applications is concluding that many Googlers are running a clandestine operating system of undetermined origin. Well, this would just fit the Google MO, wouldn't it? For years, pundits opined about a Google Web browser until &lt;a href="http://googlewatch.eweek.com/content/google_vs_microsoft/google_chrome_browser_to_challenge_microsoft.html"&gt;Chrome launched to great fanfare Sept. 2&lt;/a&gt; after two years of internal dog-fooding. 
+&lt;P&gt;
+Why is it so hard to believe that Google, which sees Microsoft as a bloated software giant from the on-premises old school, wants to create its own OS? It forged Chrome to speed past Internet Explorer, and it is blazingly faster even if only 1 percent of the population uses it compared with Microsoft's 70 percent IE share.
+&lt;P&gt;
+But I have questions. Let's say Google is developing an OS. Google hardly has an on-premises bone in its body, so this OS may only work on the Web, so you don't have to download anything. That would make the Web browser, presumably Chrome, the front door to what, exactly? Some big social network where &lt;a href="http://radar.oreilly.com/2008/12/getting-openid-into-the-browse.html"&gt;OpenID reigns as the key&lt;/a&gt;, as David Recordon suggests?
+&lt;P&gt;
+In a fine follow-up story, &lt;a href="http://www.forbes.com/enterprisetech/2008/12/05/google-operating-system-tech-enter-cx_ew_1205google.html?partner=moreover"&gt;Forbes.com's Elizabeth Woyke quotes&lt;/a&gt; Vizzaccaro as saying Chrome, combined with Google's open-source browser extension Gears, could be fashioned into a Web version of Windows. That might explain the understated aura surrounding Gears, &lt;a href="http://www.readwriteweb.com/archives/why_is_google_not_deploying_gears_aggressively.php"&gt;ReadWriteWeb's Bernard Lunn pointed out&lt;/a&gt;.
+&lt;P&gt;
+Andy quotes Enderle Group's Rob Enderle, who said a Google OS would be an expanded version of the Android OS the company recently released for mobile phones. Google has already said it envisions &lt;a href="http://www.eweek.com/c/a/Mobile-and-Wireless/Google-Releases-SIMunlocked-Android-Phone-For-399/"&gt;Android reaching other devices, including TVs&lt;/a&gt;.
+&lt;P&gt;
+This makes the most plausible sense: some fatter form of Android with Google Gears functionality thrown into the mix geared to displace Windows.
+&lt;P&gt;
+Fine, so we have the Ferrari, but what highways would it drive? How does it get from Googlers' PCs to ours? Would Google whip up another graphic novel and urge us to download the OS (a la Chrome), or strike the distribution deals that served as the Autobahn to Microsoft's desktop dominance?  
+&lt;P&gt;
+The problem with Internet distribution is time. Browser installations are speedy, OS downloads take time. First, will it be possible for lay users to download without conflicting with their current OS? Will users be patient enough to let a big new OS run on their machine?  
+&lt;P&gt;
+My Microsoft Watch colleague Joe Wilcox said a GOS could find purchase in the proliferation of netbooks that aren't spoken for by Windows or current Linux flavors. Why not a GOS built on Android then?
+&lt;P&gt;
+What do you think? Is there any "there" there? Or are we, as Vizzaccaro concedes to Forbes, speculating on what is really Google's robots that crawl and grab content from the Web, a holdover from Chrome, or Google employees surfing the Web on Android phones?&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=JtFZ0GiI"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=2sd57v4S"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?i=2sd57v4S" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=8Xwr6PLf"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/RSS/google_watch/~4/p_M83DKSmiA" height="1" width="1"/&gt;</description>
+         <link>http://feeds.ziffdavisenterprise.com/~r/RSS/google_watch/~3/p_M83DKSmiA/is_a_google_operating_system_built_on_android_gears_in_the_cards.html</link>
+         <guid isPermaLink="false">http://googlewatch.eweek.com/content/google_operating_system/is_a_google_operating_system_built_on_android_gears_in_the_cards.html?kc=rss</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Google Operating System</category>
+        
+        
+         <pubDate>Mon, 08 Dec 2008 12:14:12 -0500</pubDate>
+      <feedburner:origLink>http://googlewatch.eweek.com/content/google_operating_system/is_a_google_operating_system_built_on_android_gears_in_the_cards.html?kc=rss</feedburner:origLink></item>
+      
+      <item>
+         <title> Google Reader Revamp Enables Speedier Feed Reading</title>
+         <description>&lt;P&gt;
+I love it when a Web service provider triggers redesigns and tells us they're more attractive than what they were offering before. Rarely does anyone find that to be the case right off the bat; it generally takes us users a day or two to absorb layout changes.
+&lt;P&gt;
+Yet here is Google, &lt;a href="http://googlereader.blogspot.com/2008/12/square-is-new-round.html"&gt;telling me that it has replaced &lt;a href="http://1.bp.blogspot.com/_QriD2y6VZ-Y/STg36jbwH3I/AAAAAAAAA7w/lhh7-2NWXZA/s1600-h/File-4.png"&gt;old rounded corners, drop shadows and heavily saturated colors&lt;/a&gt;" with  a "&lt;a href="http://3.bp.blogspot.com/_QriD2y6VZ-Y/STg4Za-Xm0I/AAAAAAAAA74/QzHategG9PI/s1600-h/File-5.png"&gt;softer palette, faster components and a fresh new look&lt;/a&gt;" for Google Reader, my go-to RSS feed reader application. 
+&lt;P&gt;
+In truth, the revamped aesthetics don't do much to please my eye, but they do seem to be &lt;a href="http://googlereader.blogspot.com/2008/12/square-is-new-round.html"&gt;executing on their function&lt;/a&gt;; Google Reader is a fraction of a second or two faster, so I say mission accomplished. The smaller text throughout seems to work. I'm digging it.
+&lt;P&gt;
+Another new alleged perk is the ability to hide unread counts. Eek! As a journalist who checks the Reader morning, noon and night, I wouldn't dream of this. But who knows, it may come in handy for vacation times. 
+&lt;P&gt;
+Yes, the unread highlights do feel like a to-do list, but they're completely necessary for me to keep up with the TechCrunchs, ReadWriteWebs and the ATDs, et al. 
+&lt;P&gt;
+Other new features include the ability to minimize and maximize each section in navigation pane, which &lt;a href="http://venturebeat.com/2008/12/04/redesigned-google-reader-is-prettier-less-guilt-inducing/"&gt;like others I don't have use for&lt;/a&gt;. I also won't have much use for the change to shared items, which now has its own section in the navigation pane. 
+&lt;P&gt;
+If so inclined, you can now collapse this entire section and use the title to see everything your friends have shared, or leave it open to track friends with shared items. Bah humbug.
+&lt;P&gt;
+There was also apparently a feed bundles option in the browse for stuff link in the navigation bar that I, &lt;a href="http://www.alleyinsider.com/2008/12/google-reader-gets-a-facelift-still-no-ads-goog"&gt;like others&lt;/a&gt;, never used. It used to be manually created by the Google Reader folks, but like everything else at Google, they decided to automate it and let the machine do the work. Ho hum.
+&lt;P&gt;
+Warning: Some things have been moved. Looking for something that's moved? Google noted:
+&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;The "Refresh" button from the subscription list is now in the Subscriptions options menu or triggered by clicking on the word "Subscriptions"
+&lt;li&gt;The "Show all - updated" controls are now in the Subscriptions options menu.
+&lt;li&gt;The "Add subscription" button has moved to the top of the navigation pane.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;P&gt;
+Net-net, the speed bump is a welcome gesture to an already sleek, proficient news feeding tool. Everything else is gravy. See what &lt;a href="http://www.techmeme.com/081204/p106#a081204p106"&gt;others think of the refurbished Google Reader here on TechMeme&lt;/a&gt;.&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=98zWITiP"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=nlA0P5JB"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?i=nlA0P5JB" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=0bYsfr8p"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/RSS/google_watch/~4/Vt0nQfoftIY" height="1" width="1"/&gt;</description>
+         <link>http://feeds.ziffdavisenterprise.com/~r/RSS/google_watch/~3/Vt0nQfoftIY/google_reader_revamp_enables_speedier_feed_reading.html</link>
+         <guid isPermaLink="false">http://googlewatch.eweek.com/content/google_reader/google_reader_revamp_enables_speedier_feed_reading.html?kc=rss</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Google Reader</category>
+        
+        
+         <pubDate>Fri, 05 Dec 2008 08:54:49 -0500</pubDate>
+      <feedburner:origLink>http://googlewatch.eweek.com/content/google_reader/google_reader_revamp_enables_speedier_feed_reading.html?kc=rss</feedburner:origLink></item>
+      
+      <item>
+         <title>Google Friend Connect, Facebook Connect Face Off</title>
+         <description>&lt;p&gt;On Dec. 1, I blogged like everyone else about &lt;a href="http://googlewatch.eweek.com/content/google_vs_facebook/facebook_takes_pole_position_on_data_portability_over_google_myspace.html"&gt;the launch of Facebook Connect,&lt;/a&gt; which finally &lt;a href="http://www.facebook.com/help.php?page=730" target="_blank"&gt;became official today, Dec. 4,&lt;/a&gt; after The New York Times got to chomp on the first bone last weekend.
+&lt;P&gt;
+Connect is the opening of the walled garden for Facebook's 120 million users, letting users sign in to other Web sites with their Facebook user names and passwords and share what they're doing with friends. 
+&lt;P&gt;
+Remembering that MySpace.com announced its own Data Availability effort, Facebook announced Connect and &lt;a href="http://www.webbuyersguide.com/company/4274/Google&amp;kc=eweekarticle120408&amp;src=eweekarticle120408"&gt;Google&lt;/a&gt; hinted at Friend Connect within a week of each other in May, I wrote on Monday about the likely responses to Connect's launch:
+&lt;P&gt;
+&lt;blockquote&gt;&lt;p&gt;In the meantime, my guess is MySpace and Google will accelerate their data portability efforts very much the way the three companies all scrambled to announce them back in May. Expect to hear more from both vendors in the next few weeks (or months, eek).&lt;/blockquote&gt;
+&lt;P&gt;
+It turns out that Google pulled the trigger sooner than expected, &lt;a href="http://www.google.com/friendconnect/" target="_blank"&gt;launching an open beta for Friend Connect&lt;/a&gt; today just hours before the official unveiling of Facebook Connect, as &lt;a href="http://www.techcrunch.com/2008/12/04/google-friend-connect-now-open-to-all-websites/" target="_blank"&gt;TechCrunch detected&lt;/a&gt; today. 
+&lt;P&gt;
+Like Facebook Connect, Friend Connect enables data portability, but the two use markedly different mechanisms for data transport. Facebook Connect uses its own proprietary technology to enable users to sign into sites such as Digg and Hulu with their Facebook IDs. 
+&lt;P&gt;
+&lt;a href="http://googleblog.blogspot.com/2008/12/google-friend-connect-now-available.html" target="_blank"&gt;Friend Connect&lt;/a&gt; is based on the trendy open-source OpenID standard and lets Web sites accept a member's OpenSocial user name and password to log into their sites, share info through a personal profile and so on. Because it leverages OpenID, Friend Connect lets you log in using an existing account from Google, Yahoo or AOL, which all support the single sign-on standard. 
+&lt;P&gt;
+Some folks see the &lt;a href="http://www.readwriteweb.com/archives/facebook_connect_vs_open_id.php" target="_blank"&gt;Facebook Connect-Friend Connect dichotomy as a new front in an old holy war: proprietary versus open source.&lt;/a&gt; They will suggest that Web site operators will need to choose a religion and imply that one may be better than the other. It may well turn out that way if the vendors won't play nice, but for now it's too early in the game to matter. 
+&lt;P&gt;
+Do Web sites want to go proprietary (ooooohhhhh, risky) with Facebook, in which case they'll be forced to explain why they went for "closed" over open? Or do they want to maintain the illusion of openness and side with Google? Yes, I wrote illusion; Google is a monopolist and is no longer fooling anyone with the "Do no evil" shtick. 
+&lt;P&gt;
+What, you didn't get the memo? That's right, &lt;a href="http://blogs.eweek.com/on_the_mark/content/antitrust/google-yahoo_deal_went_to_brinkand_google_blinked.html#more"&gt;Google was 3 hours shy of becoming the new Microsoft.&lt;/a&gt; The piety from the OpenSocial folks at Google is surely sincere, but stands out at a company so close to the edge of a credibility precipice.
+&lt;P&gt;
+So, in my mind, when considering Facebook Connect, Friend Connect or Data Availability, you need to consider what will work best for you, because the goal of all three efforts is to be open with other Web sites, even if they won't interoperate. Pick the one whose sites are closest to your interests. 
+&lt;P&gt;
+Open-source geeks will side with Friend Connect and even Data Availability, driven by fear of the proprietary. I have to agree with &lt;a href="http://venturebeat.com/2008/12/04/google-friend-connect-tries-to-sneak-up-on-facebook-connect-again/" target="_blank"&gt;VentureBeat's Eric Eldon&lt;/a&gt; that Facebook Connect looks like the safe bet in the early going. As he points out, Google has no social network to hang its hat on, while MySpace just isn't doing it for programmers.
+&lt;p&gt;
+Bottom line: I use Facebook and would have no problem using Facebook Connect. I also use lots of Google services and would have no problem using Friend Connect. 
+&lt;P&gt;
+In a perfect world, Facebook Connect, Friend Connect and Data Availability would all interoperate. It would save us a lot of energy arguing and writing about proprietary versus open source for the social Web. Whether it's Windows versus Linux or Connect versus OpenID, OpenSocial, et al., the crusade is getting tired.
+&lt;P&gt;
+We have other things to worry about, no?&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=qdtCthVi"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=Modimc1R"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?i=Modimc1R" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=Ihu5aeFR"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/RSS/google_watch/~4/by8Ef0W1ldM" height="1" width="1"/&gt;</description>
+         <link>http://feeds.ziffdavisenterprise.com/~r/RSS/google_watch/~3/by8Ef0W1ldM/google_friend_connect_facebook_connect_face_off.html</link>
+         <guid isPermaLink="false">http://googlewatch.eweek.com/content/openid/google_friend_connect_facebook_connect_face_off.html?kc=rss</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Google vs. Facebook</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">OpenID</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">OpenSocial</category>
+        
+        
+         <pubDate>Thu, 04 Dec 2008 18:28:23 -0500</pubDate>
+      <feedburner:origLink>http://googlewatch.eweek.com/content/openid/google_friend_connect_facebook_connect_face_off.html?kc=rss</feedburner:origLink></item>
+      
+      <item>
+         <title>Google's Guidance on Exit Strategies in a Recession: Partner </title>
+         <description>&lt;P&gt;
+The Venture Summit Silicon Valley 2008 program in Half Moon Bay, Calif., Dec. 2 was packed with some interesting panels on investing and exiting during the recession. 
+&lt;P&gt;
+I want to spotlight comments from David Lawee, vice president of corporate development, who had advice for startups looking for funding or to get bought out as we slide deeper into dark times. The panel, &lt;a href="http://www.eweek.com/c/a/Enterprise-Applications/Google-Microsoft-Execs-Advise-on-Exit-Strategies-During-a-Recession/"&gt;covered more full here&lt;/a&gt;, was called "Corporate Buyers -- Where's the Action for 2009?"  
+&lt;P&gt;
+Lawee, who oversees Google's monthly acquisition rate, co-founded online gaming community Xfire, which was sold to Viacom in early 2006. He's been with Google since.
+&lt;P&gt;
+Noting that Google looks for "breakout technologies," such as Android or Keyhole, or those that have hit "escape velocity," such as YouTube, which &lt;a href="http://googlewatch.eweek.com/content/archive/google_purchases_youtube_for_165b.html"&gt;Google bought for $1.65 billion&lt;/a&gt;. Lawee said:
+&lt;P&gt;
+&lt;blockquote&gt;As an entrepreneur, the approach I used to take to getting the attention of big companies was to partner and I would try to create as many viable partnerships with potential acquirers as I could that made sense for my business. I think that approach is still the best way to introduce yourself and to become known within the company or within the tech community.&lt;/blockquote&gt;
+&lt;P&gt;
+Sounds like Business Practice 101, no? But you'd be surprised how many companies don't do this, or fail to land any big name partners that people care about. 
+&lt;P&gt;
+However, Lawee also said that startup targets in financial "distress" must be honest to suitors to maintain their integrity, or else risk destroying your reputation. 
+&lt;P&gt;
+Moreover, he said, when you receive an offer to buy, don't overstate your proximity to a deal with other suitors, or could it could come back to haunt you.
+&lt;P&gt;
+Even Dan'l Lewin, Microsoft's corporate development guru on the panel, agreed, noting that it's not a matter of price once you've misstated facts. You're dead in the water.
+&lt;P&gt;
+Lawee also said he's sees an "enormous" number of companies suffering financial distress that are looking for a positive outcome. "It's actually pretty sad, because in another environment, they might be given some second chance."
+&lt;P&gt;
+Eek. I hate to end on a down note, but I don't have time to do a full transcription of the great, one hour-long panel.  
+&lt;P&gt;
+For more advice from Lawee, Lewin, as well as executives from Sun Microsystems, IBM and Symantec, check out the &lt;a href="http://alwayson.goingon.com/page/display/30200"&gt;check out the full Webcast here&lt;/a&gt;.&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=JkBFtF3F"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=owgdlSai"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?i=owgdlSai" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=OhBsd8ot"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/RSS/google_watch/~4/37x91ryJGDw" height="1" width="1"/&gt;</description>
+         <link>http://feeds.ziffdavisenterprise.com/~r/RSS/google_watch/~3/37x91ryJGDw/googles_guidance_on_exit_strategies_in_a_recession_partner_up.html</link>
+         <guid isPermaLink="false">http://googlewatch.eweek.com/content/google_ma/googles_guidance_on_exit_strategies_in_a_recession_partner_up.html?kc=rss</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Google M&amp;A</category>
+        
+        
+         <pubDate>Wed, 03 Dec 2008 11:27:51 -0500</pubDate>
+      <feedburner:origLink>http://googlewatch.eweek.com/content/google_ma/googles_guidance_on_exit_strategies_in_a_recession_partner_up.html?kc=rss</feedburner:origLink></item>
+      
+      <item>
+         <title>In Google We (Don't?) Trust</title>
+         <description>&lt;P&gt;
+Several things jumped out at me from Jeffrey Rosen's piece in The New York Times magazine this past Saturday. &lt;a href="http://www.nytimes.com/2008/11/30/magazine/30google-t.html?_r=1"&gt;Here's the online version, in all its seven-page glory&lt;/a&gt;.
+&lt;P&gt;
+First, there is a mindboggling number of countries that can't figure out if YouTube should stay or go, and Google has a trinity of lawyers to help argue the company's position. 
+&lt;P&gt;
+After reading the feature, I'm convinced that these people's jobs suck more than anything has sucked before. Not to insult other people's professions (whoops, is it too late?), but playing gatekeeper, traffic cop or anything else that deals with trying to play the garbage in, garbage out game doesn't seem appealing. Necessary, yes, fun, no.
+&lt;P&gt;
+Okay, so that cuts out the bulk of the article. The best part of the piece for me was this comment from Tim Wu, a Columbia law professor and a former scholar in residence at Google:
+&lt;P&gt;
+&lt;blockquote&gt;To love Google, you have to be a little bit of a monarchist, you have to have faith in the way people traditionally felt about the king. One reason they're good at the moment is they live and die on trust, and as soon as you lose trust in Google, it's over for them.&lt;/blockquote&gt; 
+&lt;P&gt;
+Google haters will no doubt strike through "monarchist" and insert "masochist" in that quote, but Wu's comment wonderfully sums up why I trust Google implicitly. That Google lives and dies on trust is why I trust the search engine with my data. Here's why. 
+&lt;P&gt;
+I happily use Gmail and Google Reader, not to mention Google search. I harbor no illusions about what data Google can collect on me and I freely grant it that right. It doesn't bother me a lick that Google may collect the data and use it to forge more targeted ads on my behalf.
+&lt;P&gt;
+When I was planning a wedding last year, I saw some wedding-oriented ads pop up not only in Gmail but in pretty much every Google search thereafter, as can be expected. I accepted that. 
+&lt;P&gt;
+OK, no big deal, right? We all accept this degree of input/output when it comes to search advertising. We do searches, Google feeds us ads based on those searches. No big mystery.
+&lt;P&gt;
+But, privacy paranoiacs will say, if Google begins to collect all of our Internet identity in its vast data center repositories, some hacker could break in, steal that data and use it. 
+&lt;P&gt;
+First, that hasn't happened to disastrous effect in Google's 10 years of life. Second, we've got banks (name them) and retailers (T.J. Maxx) all over the world losing storage tapes with our data on them, or suffering breaches from wireless network drive-bys, not to mention lost laptops. None of these have been associated with Google. 
+&lt;P&gt;
+I'm sorry, but the security concerns won't wash. People still bank online, and people still search for Google online. Security concerns really aren't a concern in my book where Google is concerned.
+&lt;P&gt;
+Google hosts its customers' data and uses information it gathers based on our searches and Internet activity to make a very nice profit. We need information, Google gives it to us at a small price, a bit of information on us that might normally go unused. It's a symbiotic relationship. 
+&lt;p&gt;
+Yet some people are convinced the company would do (or even currently does) something so stupid as to irrevocably breach that trust Rosen in his piece notes: 
+&lt;P&gt;
+&lt;blockquote&gt;Google's claim on our trust is a fragile thing. After all, it's hard to be a company whose mission is to give people all the information they want and to insist at the same time on deciding what information they get.&lt;/blockquote&gt;
+&lt;p&gt;
+That's a fine line Google walks and I don't believe the company's sense of hubris is so great that it would destroy that, though I will say its attempts to convince the government that it is not as powerful as we think it is fall a little flat. 
+&lt;P&gt;
+I do think Google has cultivated a monopoly on the Internet, but I don't think it would do anything that would totally shatter our trust in it, even though it easily could. It's sort of the Microsoft scenario revisited. People didn't stop using Windows per se because courts declared the operating system constituted a monopoly.  
+&lt;P&gt;
+Yet some of you do think Google is bent on evil and are loathe to use it any longer. That's fine. Sit in that bunker and continue to use inferior services like Yahoo or Microsoft Live Search, or BlogLines, not to mention the number of boring e-mail apps that don't do what Gmail can do (voice and video chat rocks). 
+&lt;P&gt;
+I'm staying in Google's foxhole until you can convince me why I shouldn't. It's got free services that are easy to use that, for me, have always been accessible.
+&lt;P&gt;
+If Google stores some data on me, so be it. I have nothing to hide and that gives me the comfort I need should the data be compromised. Even if it's by Google itself.&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=6922WddC"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=M6lJEQm2"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?i=M6lJEQm2" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=Wwwhx5Z2"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/RSS/google_watch/~4/MGy2fwc-aS4" height="1" width="1"/&gt;</description>
+         <link>http://feeds.ziffdavisenterprise.com/~r/RSS/google_watch/~3/MGy2fwc-aS4/</link>
+         <guid isPermaLink="false">http://googlewatch.eweek.com/?kc=rss</guid>
+        
+        
+         <pubDate>Tue, 02 Dec 2008 11:28:50 -0500</pubDate>
+      <feedburner:origLink>http://googlewatch.eweek.com/?kc=rss</feedburner:origLink></item>
+      
+      <item>
+         <title>Facebook Takes Pole Position on Data Portability over Google, MySpace </title>
+         <description>&lt;P&gt;
+The &lt;a href="http://www.techcrunch.com/2008/11/30/facebook-google-myspace-data/"&gt;blogosphere&lt;/a&gt; is ablaze with coverage of &lt;a href="http://www.eweek.com/c/a/Messaging-and-Collaboration/Facebook-Google-to-Join-MySpace-in-Data-Portability/"&gt;Facebook Connect&lt;/a&gt;, which the social network is rolling out this week to let its users sign in to other Web sites with their Facebook user name and passwords and share what they're doing with friends.
+&lt;P&gt;
+The &lt;a href="http://gigaom.com/2008/11/30/social-webs-big-question-federate-or-aggregate/"&gt;move is designed to shear a hole&lt;/a&gt; in the typically walled gardens so that users needn't enter their Web identities into site after site. MySpace has a similar offering in the works, called &lt;a href="http://www.eweek.com/c/a/Messaging-and-Collaboration/MySpace-Opens-Walled-Garden-Partners-with-Yahoo/"&gt;MySpace Data Availability&lt;/a&gt;, while &lt;a href="http://www.eweek.com/c/a/Messaging-and-Collaboration/Google-Hopes-to-Friend-More-Web-Site-Operators/"&gt;Google is working on Google Friend Connect&lt;/a&gt;, based on its OpenSocial effort. 
+&lt;P&gt;
+Both efforts are based on open standards, while Facebook is using its own proprietary technology, though no one seems to believe this will make a difference where consumers are concerned.
+&lt;P&gt;
+Facebook Connect is also the social site's effort to move past &lt;a href="http://www.eweek.com/c/a/Messaging-and-Collaboration/Facebook-Refreshes-Ad-System-After-Privacy-Protest/"&gt;Beacon&lt;/a&gt;, that jarring privacy-busting fiasco that let users see what their friends were doing, purchases, entertainment tastes, etc.  
+&lt;P&gt;
+Why cross the normally sacrosanct social networking boundaries? The three companies will tell you, with honeyed, philanthropic tones, they want the Web to be more social. Well, sure, but there is also potential for greater advertising opportunities, some folks believe. 
+&lt;P&gt;
+Noting that advertisers don't know how to advertise on Facebook, Charlene Li of the Altimeter Group, told &lt;a href="http://www.nytimes.com/2008/12/01/technology/internet/01facebook.html"&gt;The New York Times&lt;/a&gt;: 
+&lt;P&gt;
+&lt;blockquote&gt;...If you take a group of Facebook friends and put them on a travel site where they are spending more time and generating more ad dollars in a focused area like travel, that is an opportunity ripe for getting revenues back and sharing it.&lt;/blockquote&gt;
+&lt;P&gt;
+And now Facebook is taking the lead with Connect, with Discovery Channel, The San Francisco Chronicle, Digg, genealogy network Geni and online video site Hulu joining the effort.
+&lt;P&gt;
+I'm torn by what this means for Google and MySpace. Part of me believes that Facebook rolling out Connect first won't have any bearing on the industry. If these sites are all gunning for  partners to open up to then ideally the trinity should grab large slabs of the big social Web advertising pie.
+&lt;P&gt;
+The other part of me thinks Facebook could trounce Google, which beyond big-in-Brazil Orkut has no social network to hang its hat on, and MySpace, whose users aren't considered as Web savvy as Facebook users. 
+&lt;P&gt;
+But until we see what kind of bearing Facebook Connect has on Facebook's advertising revenue, we won't know. As IDC noted, only half the people on social networks clicked on an ad, with a paltry 11 percent making a purchase. So, as much as social prospectors love to cry "there's gold in them there networks," no one has found the mother lode.
+&lt;P&gt;
+In the meantime, my guess is MySpace and Google will accelerate their data portability efforts very much the way the three companies all scrambled to announce them back in May. Expect to hear more from both vendors in the next few weeks (or months, eek). 
+&lt;P&gt;
+While market share in the long haul may not be an issue with such a big pool of Web site fish to gobble, neither MySpace nor Google want to let Facebook to become the open Web whale. Online, perception is key.&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=NymnsSwd"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=AudUkEOY"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?i=AudUkEOY" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=lx5qASwG"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/RSS/google_watch/~4/rLAxA-hb4_M" height="1" width="1"/&gt;</description>
+         <link>http://feeds.ziffdavisenterprise.com/~r/RSS/google_watch/~3/rLAxA-hb4_M/facebook_takes_pole_position_on_data_portability_over_google_myspace.html</link>
+         <guid isPermaLink="false">http://googlewatch.eweek.com/content/google_vs_facebook/facebook_takes_pole_position_on_data_portability_over_google_myspace.html?kc=rss</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Google vs. Facebook</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">OpenID</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Social Networks</category>
+        
+        
+         <pubDate>Mon, 01 Dec 2008 10:56:32 -0500</pubDate>
+      <feedburner:origLink>http://googlewatch.eweek.com/content/google_vs_facebook/facebook_takes_pole_position_on_data_portability_over_google_myspace.html?kc=rss</feedburner:origLink></item>
+      
+      <item>
+         <title>Google's 'What, Me Worry?' Mantra for the Recession</title>
+         <description>&lt;P&gt;
+An eWEEK colleague asked me whether &lt;a href="http://www.webbuyersguide.com/company/4274/Google&amp;kc=eweekarticle112608&amp;src=eweekarticle112608"&gt;Google&lt;/a&gt; has experienced any blowback from its precipitous stock drop. &lt;a href="http://www.microsoft-watch.com/content/corporate/tech_sector_carries_down_microsoft_shares.html"&gt;Google was trading at around $750 a year ago&lt;/a&gt; and is now at $280. 
+&lt;P&gt;
+This is normally cause for calamitous outcry, but let's put this into perspective. While the stock drop is ominous, investors generally aren't panicking about Google because there is a consensus that Google at $750 was ridiculously overvalued, even during a sounder economic environment in November 2007. 
+&lt;P&gt;
+Investors at that time put more realistic values on Google's stock that were $200 to $300 below what Google was trading for. Now investors such as Citi's Mark Mahaney put targets of $300 to $400, which are greater than the search engine giant's current price. 
+&lt;p&gt;
+So there has been some serious correction going on in light of the dreadful macroeconomic environment, or, shall we say, the current recession. Employees are annoyed that their stock options tanked and investors who didn't profit from sell-offs before this past summer are banging their heads against hard surfaces. Yet Google is largely unscathed.
+&lt;P&gt;
+Why? Well, if you remember from Google's third-quarter earnings call (and the last few earnings calls, in fact), CEO Eric Schmidt has said Google remains well-positioned to withstand a recession because of its robust search advertising business. The third-quarter numbers bore that logic out; &lt;a href="http://www.eweek.com/c/a/Search-Engines/Googles-Q3-Profit-Jumps-26-Amid-Recession-Fears/"&gt;Google's Q3 profit jumped 26 percent from the year-ago quarter.&lt;/a&gt; Schmidt's adoption of the Mad Magazine "What, Me Worry?" mantra seems justified to date.
+&lt;P&gt;
+What's driving the search ads? Well, clearly people are using Google to search more than ever. New numbers the week of Nov. 24 from HitWise bear this out, as Google notched 8.1 percent more searches than it did in the year-ago period. Laid-off people have more time to do Google searches for employment opportunities, is one idea. Perverse as it is, Google profits from this.
+&lt;P&gt;
+Google logged 4.8 billion search queries, or 61.2 percent of the market, in October, setting Google up for a solid fourth quarter. Fielding more search inquiries, &lt;a href="http://www.google.com/hostednews/ap/article/ALeqM5i23u5oA2rb7bqpZ037ZZwrgAhNaAD94M4QHO0" target="_blank"&gt;as the AP pointed out Nov. 25,&lt;/a&gt; generally gives Google more opportunities to show ads and pocket a commission.
+&lt;P&gt;
+Indeed, after the HitWise report was released, Google shares surged $18.39, or 7.1 percent, to $275.83 in afternoon trading. The number is higher than that today. 
+&lt;P&gt;
+With search ads as Google's main source of income, the company in the last several weeks has made progress in &lt;a href="http://www.youtube.com/blog?entry=geqKl0QNkkw" target="_blank"&gt;advertising on YouTube,&lt;/a&gt; has &lt;a href="http://www.eweek.com/c/a/Messaging-and-Collaboration/Googles-Unified-Communications-Play-Starts-With-Gmail/"&gt;accelerated its innovation of Gmail in Google Apps&lt;/a&gt; and wisely &lt;a href="http://googlewatch.eweek.com/content/googlehoo/google_yahoo_failure_puts_jerry_yang_in_the_hot_seat_for_web_20_summit.html"&gt;walked away from that flopping fish Yahoo&lt;/a&gt; before a legal battle with the Department of Justice that would incur great expenses for potentially years.
+&lt;P&gt;
+So, Google hasn't dropped too many balls and could even please financial analysts and investors because it is &lt;a href="http://googlewatch.eweek.com/content/leaving_google/google_layoffs_are_temps_not_full-blooded_employees.html"&gt;cutting as many as 10,000 contractors to rein in costs&lt;/a&gt; by paring head count. It's even gone conservative on its usually lavish holiday parties.
+&lt;P&gt;
+What's not to like about Google's viability to weather a recession? It's not as if it's Yahoo, which is leaderless and floundering financially and in its core markets.
+&lt;P&gt;
+&lt;a href="http://googlewatch.eweek.com/content/microhoo/yahoos_yang_steps_down_leaving_microsoft_google_to_gobble_share.html"&gt;Yang waved the white flag on the CEO role&lt;/a&gt;; Yahoo's stock has lost two-thirds of its value since it rejected Microsoft's acquisition bid; and Google abandoned it in its hour of need.
+&lt;P&gt;
+So, for the reasons above, I think Google is in fine shape through the rest of the year. But 2009 could be a different story, and I suspect we'll learn a lot more about Google's mettle by next summer as we slide deeper into the recession. Cross your fingers.&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=rQtuGA6S"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=Yg0WWD32"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?i=Yg0WWD32" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=U9SG0QwJ"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/RSS/google_watch/~4/GrjNc9wE10Y" height="1" width="1"/&gt;</description>
+         <link>http://feeds.ziffdavisenterprise.com/~r/RSS/google_watch/~3/GrjNc9wE10Y/googles_what_me_worry_mantra_for_the_recession.html</link>
+         <guid isPermaLink="false">http://googlewatch.eweek.com/content/google_financials/googles_what_me_worry_mantra_for_the_recession.html?kc=rss</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Google Financials</category>
+        
+        
+         <pubDate>Wed, 26 Nov 2008 09:34:05 -0500</pubDate>
+      <feedburner:origLink>http://googlewatch.eweek.com/content/google_financials/googles_what_me_worry_mantra_for_the_recession.html?kc=rss</feedburner:origLink></item>
+      
+      <item>
+         <title>Microsoft, Not Google, Has the Real Search Wiki </title>
+         <description>&lt;P&gt;
+The New York Times this weekend put the spotlight on a research project Microsoft is working on for next-generation search that is more like a search-oriented wiki than Google's own SearchWiki. 
+&lt;P&gt;
+No, this isn't &lt;a href="http://www.microsoft-watch.com/content/marketing/the_only_thing_live_about_kumo_is_the_buzz.html"&gt;Kumo&lt;/a&gt;. Microsoft's SearchTogether is a breakthrough and a break from traditional search, which is executed solo. SearchTogether lets people at remote locations perform searches as a team, or as the &lt;a href="http://www.nytimes.com/2008/11/23/business/23novelties.html"&gt;Times notes&lt;/a&gt;, "dividing responsibilities and pooling results and recommendations in a shared Web space on the browser."
+&lt;P&gt;
+One imagines such a product could be a smash hit from anything in high schools, colleges and universities, where students have to work on group projects, or in scientific research of any kind. Researchers in Redmond, Wash., for example, could collaborate on search projects with counterparts in Russia.
+&lt;P&gt;
+The Times article notes:
+&lt;P&gt;
+&lt;blockquote&gt;People doing a joint search can divide the chores, sending half of the top results of a query to one team member and half to another, for example, to avoid duplicating work. When you sign on, a drop-down menu shows your current collaborations. Click on a topic and you'll find automatic summaries of the team's searches, as well as links to the pages, comments and recommendations. Team members can work synchronously, with everyone online at the same time, exchanging chat messages that are shown at the bottom of the browser page. They can also work on their own.&lt;/blockquote&gt;
+&lt;P&gt;
+Sound like any current collaborative tool you know? Yes, that's right, it behaves like a wiki. SearchTogether is a kind of wiki for search, and is even more of a wiki than Google's new SearchWiki. 
+&lt;P&gt;
+&lt;a href="http://googlewatch.eweek.com/content/google_search/googles_searchwiki_set_for_roll_out.html"&gt;SearchWiki&lt;/a&gt; lets users reorder and comment on searches, but as &lt;a href="http://www.readwriteweb.com/archives/google_search_wiki_is_not_a_wi.php"&gt;ReadWriteWeb's Marshall Kirkpatrick notes&lt;/a&gt;, it's not really a wiki. It doesn't let people work on searches together. The people commenting are still walled off from one another. 
+&lt;P&gt;
+Microsoft SearchTogether is far more like a wiki than Google's SearchWiki, which &lt;a href="http://searchengineland.com/qa-with-google-on-searchwiki-dont-expect-an-opt-out-soon-15599.php"&gt;Danny Sullivan puts through the ringer on Search Engine Land&lt;/a&gt; in this interview with Google Product Manager Cedric DuPont. 
+&lt;P&gt;
+Don't take my word for it. See for yourself. You can &lt;a href="http://research.microsoft.com/searchtogether"&gt;download it here and play around with it&lt;/a&gt; using Microsoft Internet Explorer 7. 
+&lt;P&gt;
+It's clear from DuPont that Google SearchWiki isn't going away anytime soon, and a Google spokesperson confirmed for me that no changes were planned. But when will a real search wiki stand up from Google? The Google spokesperson told me Google is not currently working on anything like Microsoft's SearchTogether.
+&lt;P&gt;
+Maybe Google, as the leader in consumer search, should start. What do you think?&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=pkityvx8"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=vLKbfm9L"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?i=vLKbfm9L" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=kaxfkkue"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/RSS/google_watch/~4/veeUcBGsu28" height="1" width="1"/&gt;</description>
+         <link>http://feeds.ziffdavisenterprise.com/~r/RSS/google_watch/~3/veeUcBGsu28/microsoft_not_google_has_the_real_searchwiki.html</link>
+         <guid isPermaLink="false">http://googlewatch.eweek.com/content/google_search/microsoft_not_google_has_the_real_searchwiki.html?kc=rss</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Google Search</category>
+        
+        
+         <pubDate>Tue, 25 Nov 2008 10:10:35 -0500</pubDate>
+      <feedburner:origLink>http://googlewatch.eweek.com/content/google_search/microsoft_not_google_has_the_real_searchwiki.html?kc=rss</feedburner:origLink></item>
+      
+      <item>
+         <title>Google Layoffs Are of Temps, Not Full Employees</title>
+         <description>&lt;P&gt;
+Is Google laying off thousands of workers?
+&lt;P&gt;
+Perhaps, but not in the traditional, "We are cutting our employee base by x percent due to a deteriorating macroeconomic environment" manner. 
+&lt;P&gt;
+The question begs an answer after a &lt;a href="http://www.webguild.org/2008/11/google-layoffs-10000-workers-affected.php" target="_blank"&gt;blog post from WebGuild President Daya Baran&lt;/a&gt; surfaced today, Nov. 24, in which he said Google may cut as many as 10,000 jobs. 
+&lt;P&gt;
+After speaking to a Google spokesperson today, it seems the source of Baran's news may stem from Google's previously announced plan to trim many of its 10,000 temporary workers, or contractors. 
+&lt;P&gt;
+Google made this plan public Oct. 16 as part of its &lt;a href="http://www.mercurynews.com/business/ci_10737546?source=rss" target="_blank"&gt;third-quarter earnings announcement&lt;/a&gt; when it said it would drastically trim its contract workers, which includes public relations staffers, cafeteria workers and bus drivers. 
+&lt;P&gt;
+There are some 10,000 people who fall into this category. That's an important figure to remember because it's the same figure Baran cites for his layoff scenario. 
+&lt;P&gt;
+Why hasn't Google made a solemn formal statement about this? These are contractors, or temporary workers who may work full time but don't receive benefits, so Google doesn't have to make a splashy announcement about it.
+&lt;P&gt;
+The Google spokesperson told me Google's plan to trim temps is still on, so maybe some of them found Baran's ear and are selling him on the Titanic-is-sinking story. Moreover, Baran shifts from citing secret sources to supposition: 
+&lt;P&gt;
+&lt;blockquote&gt;&lt;p&gt;So, how does Google get around the SEC requirement regarding material information? Google has hundreds of lawyers figuring out how not to get caught. One of them is by moving workers from job to job every few months so that their status remains temporary. That is why you probably have never spoken to the same person twice at Google and that is also why there is somebody new on the job and most times you know more about their job than they do.&lt;/blockquote&gt;
+&lt;P&gt;
+The idea that Google uses hundreds of lawyers to dodge material reporting seems far-fetched. I know there are a lot of theories about Google's evil practices, but they usually involve how Google is invading our privacy and collecting enough data to create digital books about us.
+&lt;P&gt;
+Those seem more plausible than an insidious plot to hide layoffs from the public. And Baran's phrasing in the above about having a hard time reaching people at Google seems like a sour-grapes gripe of the first order. I reach out to Google folks daily; it's not that hard. When some Googlers fail to reach out to me, I let them know about it. 
+&lt;P&gt;
+I'm inclined to follow &lt;a href="http://battellemedia.com/archives/004719.php" target="_blank"&gt;John Battelle's example&lt;/a&gt; and ask someone with knowledge of the situation to drop me a line on Google Watch or seek out my eWEEK e-mail alias. 
+&lt;P&gt;
+And &lt;a href="http://blogs.eweek.com/first_read/content/messaging_collaboration/googles_layoff_debate_misses_the_point.html"&gt;for those who were laid off, eWEEK's John Hazard has it right and I sympathize.&lt;/a&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=YH60mR5N"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=i9hHYHka"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?i=i9hHYHka" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.ziffdavisenterprise.com/~f/RSS/google_watch?a=qY72Mw9c"&gt;&lt;img src="http://feedproxy.google.com/~f/RSS/google_watch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/RSS/google_watch/~4/H6UGCw5dyvE" height="1" width="1"/&gt;</description>
+         <link>http://feeds.ziffdavisenterprise.com/~r/RSS/google_watch/~3/H6UGCw5dyvE/google_layoffs_are_temps_not_full-blooded_employees.html</link>
+         <guid isPermaLink="false">http://googlewatch.eweek.com/content/leaving_google/google_layoffs_are_temps_not_full-blooded_employees.html?kc=rss</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Google Financials</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Leaving Google</category>
+        
+        
+         <pubDate>Mon, 24 Nov 2008 15:58:47 -0500</pubDate>
+      <feedburner:origLink>http://googlewatch.eweek.com/content/leaving_google/google_layoffs_are_temps_not_full-blooded_employees.html?kc=rss</feedburner:origLink></item>
+      
+   </channel>
+</rss>

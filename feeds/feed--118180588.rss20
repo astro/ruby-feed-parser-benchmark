@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rss version="2.0">
+  <channel>
+  <title>Notifixio.us Developer&#39;s community Google Group</title>
+  <link>http://groups.google.com/group/notifixious-developers-community</link>
+  <description>Group of Notifixio.us&amp;#39;s developers and friends community!</description>
+  <language>en</language>
+  <item>
+  <title>A Source to test your channels</title>
+  <link>http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/28cc3ab806661d15/d637e7ae155520b2?show_docid=d637e7ae155520b2</link>
+  <description>
+  When creating a channel it is sometimes boring to wait for sources to &lt;br&gt; publish stories and test that the notification works for your channel. &lt;br&gt; &lt;p&gt;For this, we have created the &amp;quot;Time Source&amp;quot;. It&#39;s a source that sends &lt;br&gt; a notification every 30 seconds with the time and a link. &lt;br&gt; &lt;p&gt;Subscribe your channels to it, and wait at most 30s to get a
+  </description>
+  <guid isPermaLink="true">http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/28cc3ab806661d15/d637e7ae155520b2?show_docid=d637e7ae155520b2</guid>
+  <author>
+  julien.genest...@gmail.com
+  (julien.genestoux@gmail.com)
+  </author>
+  <pubDate>Fri, 12 Dec 2008 06:55:21 UT
+</pubDate>
+  </item>
+  <item>
+  <title>Creating Mashups with Notifixious</title>
+  <link>http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/0293ccf20346c3da/4f281e594f679364?show_docid=4f281e594f679364</link>
+  <description>
+  Hey, &lt;br&gt; &lt;p&gt;Last weekend, we released our first &amp;quot;Mashups&amp;quot;, between Notifixious and &lt;br&gt; some of the great webservices that support XML (SimplyHired, &lt;br&gt; Technorati, Disqus, Twitter). Check them out : &lt;a target=&quot;_blank&quot; rel=nofollow href=&quot;http://notifixio.us/mashups&quot;&gt;[link]&lt;/a&gt; &lt;br&gt; &lt;p&gt;Also, all these mashups were created with our API, so anyone can do &lt;br&gt; the same and integrate Notifixious in his webservice to notify their
+  </description>
+  <guid isPermaLink="true">http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/0293ccf20346c3da/4f281e594f679364?show_docid=4f281e594f679364</guid>
+  <author>
+  julien.genest...@gmail.com
+  (julien.genestoux@gmail.com)
+  </author>
+  <pubDate>Wed, 10 Dec 2008 23:51:21 UT
+</pubDate>
+  </item>
+  <item>
+  <title>Re: Discussion on notifixious-xmpp-api</title>
+  <link>http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/44f083f6f364ed3a/276f77d676feb1f5?show_docid=276f77d676feb1f5</link>
+  <description>
+  Hey Amit, &lt;br&gt; &lt;p&gt;Sure, by &amp;quot;registering the client&amp;quot;, do you mean creating a new channel? &lt;br&gt; If so, the details are here : &lt;br&gt; &lt;a target=&quot;_blank&quot; rel=nofollow href=&quot;http://groups.google.com/group/notifixious-developers-community/web/creating-externals-channels-and-fetching-notifications-for-them?hl=en&quot;&gt;[link]&lt;/a&gt; &lt;br&gt; &lt;p&gt;As far as authentication is concerned, your application should
+  </description>
+  <guid isPermaLink="true">http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/44f083f6f364ed3a/276f77d676feb1f5?show_docid=276f77d676feb1f5</guid>
+  <author>
+  julien.genest...@gmail.com
+  (julien.genestoux@gmail.com)
+  </author>
+  <pubDate>Wed, 10 Dec 2008 07:24:44 UT
+</pubDate>
+  </item>
+  <item>
+  <title>Re: Discussion on creating-externals-channels-and-fetching-notifications-for-them</title>
+  <link>http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/b5eb15e8f30d5d4b/f5850ba18f83926e?show_docid=f5850ba18f83926e</link>
+  <description>
+  Hi Amit, &lt;br&gt; &lt;p&gt;Yes, the server sends messages when you subscribe to new sources with &lt;br&gt; the channel that you created. Here is whet they should look like : &lt;br&gt; &lt;p&gt;&amp;lt;message from=&amp;quot;pubsubapi.xmpp.notifixio .us&amp;quot; to=&amp;quot;julien- &lt;br&gt; shell_cli...@xmpp.notifixio.us &amp;quot; &amp;gt; &lt;br&gt; &amp;lt;event xmlns=&amp;quot;&lt;a target=&quot;_blank&quot; rel=nofollow href=&quot;http://jabber.org/protocol/pubsub#event&quot;&gt;[link]&lt;/a&gt;&amp;quot;&amp;gt;
+  </description>
+  <guid isPermaLink="true">http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/b5eb15e8f30d5d4b/f5850ba18f83926e?show_docid=f5850ba18f83926e</guid>
+  <author>
+  julien.genest...@gmail.com
+  (julien.genestoux@gmail.com)
+  </author>
+  <pubDate>Wed, 10 Dec 2008 07:20:56 UT
+</pubDate>
+  </item>
+  <item>
+  <title>Discussion on creating-externals-channels-and-fetching-notifications-for-them</title>
+  <link>http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/b5eb15e8f30d5d4b/a3c094a3fb15c140?show_docid=a3c094a3fb15c140</link>
+  <description>
+  after creating correctly a channel and registering some sources with &lt;br&gt; it, when registering a new source, does the server send any message to &lt;br&gt; the new channel (not your official ones) as it sends in gtalk for &lt;br&gt; example? &lt;br&gt; is there a way to &amp;quot;ping&amp;quot; my channel without waiting for new updates?
+  </description>
+  <guid isPermaLink="true">http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/b5eb15e8f30d5d4b/a3c094a3fb15c140?show_docid=a3c094a3fb15c140</guid>
+  <author>
+  obvioc...@gmail.com
+  (2q)
+  </author>
+  <pubDate>Tue, 09 Dec 2008 21:47:48 UT
+</pubDate>
+  </item>
+  <item>
+  <title>Discussion on notifixious-xmpp-api</title>
+  <link>http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/44f083f6f364ed3a/5c9ce33518ac0d5c?show_docid=5c9ce33518ac0d5c</link>
+  <description>
+  can you describe the process of &amp;quot;registering the client&amp;quot; with your &lt;br&gt; server and waiting for data to be pushed? what authentication should &lt;br&gt; be made if i&#39;m a registered user?
+  </description>
+  <guid isPermaLink="true">http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/44f083f6f364ed3a/5c9ce33518ac0d5c?show_docid=5c9ce33518ac0d5c</guid>
+  <author>
+  obvioc...@gmail.com
+  (2q)
+  </author>
+  <pubDate>Tue, 09 Dec 2008 19:21:21 UT
+</pubDate>
+  </item>
+  <item>
+  <title>View this page &quot;Subscription API&quot;</title>
+  <link>http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/c167fcb76f7dcb26/6d4e375f8633c848?show_docid=6d4e375f8633c848</link>
+  <description>
+  Hi Everybody! &lt;br&gt; &lt;p&gt;First : Happy thanksgiving for those in the US. I actually had my &lt;br&gt; first Thanksging turkey 2 days ago and my belly still remembers it ;-) &lt;br&gt; &lt;p&gt;Anyway, we will be pushing the Subscription HTTP API in the next few &lt;br&gt; hours, so feel free to check the documentation! &lt;br&gt; &lt;p&gt;For what can you use it? Here are a few tips :
+  </description>
+  <guid isPermaLink="true">http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/c167fcb76f7dcb26/6d4e375f8633c848?show_docid=6d4e375f8633c848</guid>
+  <author>
+  julien.genest...@gmail.com
+  (julien.genestoux@gmail.com)
+  </author>
+  <pubDate>Sat, 29 Nov 2008 22:56:37 UT
+</pubDate>
+  </item>
+  <item>
+  <title>HTTP Callback API rolled-out!</title>
+  <link>http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/b5eb15e8f30d5d4b/8595e625ab414a9d?show_docid=8595e625ab414a9d</link>
+  <description>
+  Hey Everybody, &lt;br&gt; &lt;p&gt;Even though we just felt in love with XMPP, we also like the idea of &lt;br&gt; doing HTTP Callbacks (or Web Hooks), so we just implemented our new &lt;br&gt; API. &lt;br&gt; &lt;p&gt;The idea is that, once again (and like XMPP), you guys can create &lt;br&gt; channels that will be used by other users as if they were &amp;quot;built-in&amp;quot;
+  </description>
+  <guid isPermaLink="true">http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/b5eb15e8f30d5d4b/8595e625ab414a9d?show_docid=8595e625ab414a9d</guid>
+  <author>
+  julien.genest...@gmail.com
+  (julien.genestoux@gmail.com)
+  </author>
+  <pubDate>Mon, 24 Nov 2008 04:34:44 UT
+</pubDate>
+  </item>
+  <item>
+  <title>Re: Notifixious : Open Web Awards : vote for us!</title>
+  <link>http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/3a5bcdde1a8cf76f/296228106ce63a74?show_docid=296228106ce63a74</link>
+  <description>
+  Sorry, forgot the link : &lt;a target=&quot;_blank&quot; rel=nofollow href=&quot;http://mashable.polldaddy.com/widget/?f=f&amp;c=3&amp;cn=http://www.notifixio.us&quot;&gt;[link]&lt;/a&gt; &lt;br&gt; ;-) &lt;br&gt; &lt;p&gt;On Nov 9, 11:24 am, &amp;quot;julien.genest...@gmail.com&amp;quot;
+  </description>
+  <guid isPermaLink="true">http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/3a5bcdde1a8cf76f/296228106ce63a74?show_docid=296228106ce63a74</guid>
+  <author>
+  julien.genest...@gmail.com
+  (julien.genestoux@gmail.com)
+  </author>
+  <pubDate>Sun, 09 Nov 2008 19:25:43 UT
+</pubDate>
+  </item>
+  <item>
+  <title>Notifixious : Open Web Awards : vote for us!</title>
+  <link>http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/3a5bcdde1a8cf76f/f485ad9c6987d46d?show_docid=f485ad9c6987d46d</link>
+  <description>
+  Mashable is organizing the Open Web Awards, and we need as many votes &lt;br&gt; as possible to nominate Notifixio.us in the “Blog Plugins”* category… &lt;br&gt; &lt;p&gt;And do not forget to click in the confirmation link that you will &lt;br&gt; receive by email, if you want your vote to count ;-) &lt;br&gt; &lt;p&gt;* hum, we couldn’t find a category that describes Notifixious better!
+  </description>
+  <guid isPermaLink="true">http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/3a5bcdde1a8cf76f/f485ad9c6987d46d?show_docid=f485ad9c6987d46d</guid>
+  <author>
+  julien.genest...@gmail.com
+  (julien.genestoux@gmail.com)
+  </author>
+  <pubDate>Sun, 09 Nov 2008 19:24:57 UT
+</pubDate>
+  </item>
+  <item>
+  <title>Re: {Notifixio.us Developer&#39;s communit Re: PubSub, create node</title>
+  <link>http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/df9da622f34e2619/4f4c8fa06d3d00ac?show_docid=4f4c8fa06d3d00ac</link>
+  <description>
+  That certainly explains it :) &lt;br&gt; &lt;p&gt;I understand that kind of priority but that means your pubsub service is &lt;br&gt; rather read-only for now, slightly less useful than I was hoping for. &lt;br&gt; &lt;p&gt;Looking forward to it. &lt;br&gt; &lt;p&gt;- Sylvain &lt;br&gt; &lt;p&gt;-- &lt;br&gt; Sylvain Hellegouarch &lt;br&gt; &lt;a target=&quot;_blank&quot; rel=nofollow href=&quot;http://www.defuze.org&quot;&gt;[link]&lt;/a&gt;
+  </description>
+  <guid isPermaLink="true">http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/df9da622f34e2619/4f4c8fa06d3d00ac?show_docid=4f4c8fa06d3d00ac</guid>
+  <author>
+  s...@defuze.org
+  (Sylvain Hellegouarch)
+  </author>
+  <pubDate>Fri, 07 Nov 2008 15:54:00 UT
+</pubDate>
+  </item>
+  <item>
+  <title>Re: PubSub, create node</title>
+  <link>http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/df9da622f34e2619/068f7d542ed277fd?show_docid=068f7d542ed277fd</link>
+  <description>
+  Hi Sylvain, &lt;br&gt; &lt;p&gt;I am sorry, but for now, creating a node is not supported by &lt;br&gt; Notifixious... for the good reason that it&#39;s not been implemented in &lt;br&gt; our component! &lt;br&gt; It is also quite far on our Todo list concerning the XMPP/PubSub API. &lt;br&gt; The next step is definetely to support &amp;quot;publication&amp;quot; as well as &lt;br&gt; filtering within subscriptions!
+  </description>
+  <guid isPermaLink="true">http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/df9da622f34e2619/068f7d542ed277fd?show_docid=068f7d542ed277fd</guid>
+  <author>
+  julien.genest...@gmail.com
+  (julien.genestoux@gmail.com)
+  </author>
+  <pubDate>Fri, 07 Nov 2008 00:30:34 UT
+</pubDate>
+  </item>
+  <item>
+  <title>PubSub, create node</title>
+  <link>http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/df9da622f34e2619/338fda2b716f1fee?show_docid=338fda2b716f1fee</link>
+  <description>
+  Hey guys, &lt;br&gt; I&#39;m running some code against the PubSub service but I have some issues. &lt;br&gt; For instance I want to create a collection node by sending: &lt;br&gt; &amp;lt;iq xmlns=&amp;quot;jabber:client&amp;quot; to=&amp;quot;pubsubapi.xmpp.notifixio.u s&amp;quot; type=&amp;quot;set&amp;quot; &lt;br&gt; id=&amp;quot;1979608134&amp;quot; from=&amp;quot;sylv...@xmpp.notifixio.u s/Home&amp;quot;&amp;gt;&amp;lt;pubsub &lt;br&gt; xmlns=&amp;quot;&lt;a target=&quot;_blank&quot; rel=nofollow href=&quot;http://jabber.org/protocol/pubsub&quot;&gt;[link]&lt;/a&gt;&amp;quot;&amp;gt;&amp;lt;create node=&amp;quot;music&amp;quot;
+  </description>
+  <guid isPermaLink="true">http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/df9da622f34e2619/338fda2b716f1fee?show_docid=338fda2b716f1fee</guid>
+  <author>
+  s...@defuze.org
+  (Sylvain Hellegouarch)
+  </author>
+  <pubDate>Thu, 06 Nov 2008 20:30:49 UT
+</pubDate>
+  </item>
+  <item>
+  <title>Re: View this page &quot;Notifixious XMPP API, PubSub&quot;</title>
+  <link>http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/44f083f6f364ed3a/c4fca42820b0e6e7?show_docid=c4fca42820b0e6e7</link>
+  <description>
+  I had a very interesting conversation with someone who proposed to &lt;br&gt; improved the node names by adding /sources/ prior to them. &lt;br&gt; &lt;p&gt;URL = Domain name + Node &lt;br&gt; &lt;p&gt;He&#39;s point was that it was more convenient (if not straightforward!) &lt;br&gt; to find the the node with the url of the resources and the other way &lt;br&gt; around :
+  </description>
+  <guid isPermaLink="true">http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/44f083f6f364ed3a/c4fca42820b0e6e7?show_docid=c4fca42820b0e6e7</guid>
+  <author>
+  julien.genest...@gmail.com
+  (julien.genestoux@gmail.com)
+  </author>
+  <pubDate>Tue, 04 Nov 2008 21:22:26 UT
+</pubDate>
+  </item>
+  <item>
+  <title>View this page &quot;Notifixious XMPP API, PubSub&quot;</title>
+  <link>http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/44f083f6f364ed3a/24f127676e607864?show_docid=24f127676e607864</link>
+  <description>
+  Click on &lt;a target=&quot;_blank&quot; rel=nofollow href=&quot;http://groups.google.com/group/notifixious-developers-community/web/notifixious-xmpp-api&quot;&gt;[link]&lt;/a&gt; &lt;br&gt; - or copy &amp;amp; paste it into your browser&#39;s address bar if that doesn&#39;t &lt;br&gt; work.
+  </description>
+  <guid isPermaLink="true">http://groups.google.com/group/notifixious-developers-community/browse_thread/thread/44f083f6f364ed3a/24f127676e607864?show_docid=24f127676e607864</guid>
+  <author>
+  julien.genest...@gmail.com
+  (julien.genestoux@gmail.com)
+  </author>
+  <pubDate>Tue, 04 Nov 2008 21:08:05 UT
+</pubDate>
+  </item>
+  </channel>
+</rss>

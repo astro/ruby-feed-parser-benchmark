@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+
+<channel>
+	<title>Adium Blog</title>
+	<atom:link href="http://adiumx.com/blog/feed/" rel="self" type="application/rss+xml" />
+	<link>http://adiumx.com/blog</link>
+	<description></description>
+	<pubDate>Thu, 13 Nov 2008 23:32:26 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.5.1</generator>
+	<language>en</language>
+			<item>
+		<title>Working on stopping spam</title>
+		<link>http://adiumx.com/blog/2008/11/working-on-stopping-spam/</link>
+		<comments>http://adiumx.com/blog/2008/11/working-on-stopping-spam/#comments</comments>
+		<pubDate>Thu, 13 Nov 2008 23:32:26 +0000</pubDate>
+		<dc:creator>Zac West</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://adiumx.com/blog/?p=558</guid>
+		<description><![CDATA[ A major annoyance in instant messaging is the amount of spam prevalent in the Yahoo and MSN networks these days. Largely because of the &#8220;email as contact name&#8221; paradigm, these contact addresses are easily scrapped from websites. We don&#8217;t like it any more than you do.
+In an attempt to combat this, I&#8217;ve created a [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://adiumxtras.com/index.php?a=xtras&amp;xtra_id=6177"><img style="float: left;" src="http://www.adiumx.com/blog/uploads/2008/11/challengeresponse.png" alt="Challenge/response" /></a> A major annoyance in instant messaging is the amount of spam prevalent in the Yahoo and MSN networks these days. Largely because of the &#8220;email as contact name&#8221; paradigm, these contact addresses are easily scrapped from websites. We don&#8217;t like it any more than you do.</p>
+<p>In an attempt to combat this, I&#8217;ve created a plugin called <a href="http://adiumxtras.com/index.php?a=xtras&amp;xtra_id=6177">Challenge/Response</a>. It works by hiding messages from unknown users until the user answers a question you have picked. For example, you can set your message as, <em>&#8220;What is the square root of 49 in numerical form?&#8221;</em> Until the unknown user answers <em>&#8220;7&#8243;</em> all of their messages are hidden from you. </p>
+<p>Unknown users are those not on your contact list, not in the C/R white-list, and those you do not have a chat window open for. If set to do so, C/R will log the messages you receive to a group chat. It can also hide messages from <em>all</em> blocked users, for protocols like MSN where blocking only hides status information.</p>
+<p>Since spam bots can&#8217;t read the challenge, it&#8217;s unlikely for them to respond and get past the filtering system. The downside is that people who want to talk to you for the first time may be confused or unable to answer; by making your challenge and response easier, you can avoid this problem.</p>
+<p>Challenge/Response isn&#8217;t being included as part of Adium because it&#8217;s more of a band-aid than an actual solution, and because presenting it as a third-party plugin allows it a few luxuries that being a core part of Adium wouldn&#8217;t allow it. Eventually I&#8217;d like to see some sort of intelligent filter which is able to tell the difference between spam and non-spam messages, possibly with something like a Bayesian filter used by e-mail clients.</p>
+<p>If you run into any bugs, or have any suggestions, feel free to make a comment here or on the Xtras page for the plugin. Since we don&#8217;t have an in-app way of updating plugins yet, check back on the site every once in a while to make sure you&#8217;re using the latest version. Enjoy. <img src='http://adiumx.com/blog/wp-includes/images/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /></p>
+]]></content:encoded>
+			<wfw:commentRss>http://adiumx.com/blog/2008/11/working-on-stopping-spam/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Adium 1.3.2</title>
+		<link>http://adiumx.com/blog/2008/10/adium-132/</link>
+		<comments>http://adiumx.com/blog/2008/10/adium-132/#comments</comments>
+		<pubDate>Fri, 10 Oct 2008 21:58:47 +0000</pubDate>
+		<dc:creator>Zac West</dc:creator>
+		
+		<category><![CDATA[1.3]]></category>
+
+		<category><![CDATA[release]]></category>
+
+		<guid isPermaLink="false">http://adiumx.com/blog/?p=556</guid>
+		<description><![CDATA[Adium 1.3.2 is out. As a big fan of being terse, you can take a look at the version history for the full set of changes.
+]]></description>
+			<content:encoded><![CDATA[<p>Adium 1.3.2 is out. As a big fan of being terse, you can take a look at the <a href="http://trac.adiumx.com/wiki/AdiumVersionHistory">version history</a> for the full set of changes.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://adiumx.com/blog/2008/10/adium-132/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Apple will discontinue the iPhone NDA</title>
+		<link>http://adiumx.com/blog/2008/10/apple-will-discontinue-the-iphone-nda/</link>
+		<comments>http://adiumx.com/blog/2008/10/apple-will-discontinue-the-iphone-nda/#comments</comments>
+		<pubDate>Wed, 01 Oct 2008 16:09:19 +0000</pubDate>
+		<dc:creator>Peter Hosey</dc:creator>
+		
+		<category><![CDATA[Apple]]></category>
+
+		<category><![CDATA[awesome]]></category>
+
+		<category><![CDATA[iPhone]]></category>
+
+		<guid isPermaLink="false">http://adiumx.com/blog/?p=555</guid>
+		<description><![CDATA[Apple has announced on
+its iPhone Developer Program page that they will drop the NDA covering the iPhone APIs. This means that we should, at some point, be able to start work on an iPhone version of Adium.
+Some important points:
+
+Apple has not dropped the NDA yet. The announcement says that Apple will distribute a new developer [...]]]></description>
+			<content:encoded><![CDATA[<p>Apple has announced on<br />
+<a href="http://developer.apple.com/iphone/program/">its iPhone Developer Program page</a> that they will drop the NDA covering the iPhone APIs. This means that we should, at some point, be able to start work on an <a href="http://adiumx.com/faq/AdiumForiPhone">iPhone version of Adium</a>.</p>
+<p>Some important points:</p>
+<ul>
+<li><strong>Apple has not dropped the NDA <em>yet</em>.</strong> The announcement says that Apple will distribute a new developer agreement “within a week or so”. Until they do, the NDA is still in effect.</li>
+<li><strong>We don&#8217;t yet know what the new developer agreement will say.</strong> It&#8217;s always possible that the new agreement will include some other clause that prevents open-source software. We won&#8217;t know until we see it.</li>
+<li><strong>An iPhone version of Adium will not happen immediately, nor soon.</strong> From the little public information that Apple released (and the many tidbits that iPhone developers leaked in defiance of the NDA), we know that <strong>the iPhone development interfaces are significantly different from those on the Mac</strong>. We will need to rewrite almost the entire application. The <a href="http://adiumx.com/faq/AdiumForiPhone">Adium for iPhone</a> page has more information.</li>
+</ul>
+<p>This is a long-overdue step by Apple, and we&#8217;re glad they&#8217;ve taken it. We look forward to one day writing and using the iPhone version of Adium.</p>
+<p>Thank you, Apple.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://adiumx.com/blog/2008/10/apple-will-discontinue-the-iphone-nda/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Yahoo! disconnections and authorization errors</title>
+		<link>http://adiumx.com/blog/2008/09/yahoo-disconnections-and-authorization-errors/</link>
+		<comments>http://adiumx.com/blog/2008/09/yahoo-disconnections-and-authorization-errors/#comments</comments>
+		<pubDate>Tue, 23 Sep 2008 04:15:10 +0000</pubDate>
+		<dc:creator>Peter Hosey</dc:creator>
+		
+		<category><![CDATA[Pidgin]]></category>
+
+		<category><![CDATA[Yahoo]]></category>
+
+		<category><![CDATA[libpurple]]></category>
+
+		<guid isPermaLink="false">http://adiumx.com/blog/?p=552</guid>
+		<description><![CDATA[
+Updated 2008-09-23
+We&#8217;ve now put out a beta of 1.3.2. This beta contains a new version of Libpurple that we believe fixes the Yahoo! disconnection problem. Please try it out and let us know on the Trac ticket whether it solves the problem for you.
+The original post follows.
+
+
+Four days ago, many of our users started getting disconnected [...]]]></description>
+			<content:encoded><![CDATA[<div>
+<h3>Updated 2008-09-23</h3>
+<p>We&#8217;ve now put out <a href="http://beta.adiumx.com/">a beta of 1.3.2</a>. This beta contains a new version of Libpurple that we believe fixes the Yahoo! disconnection problem. Please try it out and let us know on the Trac ticket whether it solves the problem for you.</p>
+<p>The original post follows.</p>
+</div>
+<hr />
+<p>Four days ago, many of our users started getting disconnected from Yahoo! after several hours. The disconnection comes in the form of an authorization error, so Adium responds by presenting a password prompt:</p>
+<p style="text-align:center;"><img src="http://adiumx.com/blog/uploads/2008/09/adium-yahoopasswordprompt.png" alt="Adium-YahooPasswordPrompt.png" border="0" width="516" height="268" /></p>
+<p>This is not new in 1.3.1: We released 1.3.1 on September 7th, so it was working fine for nearly two weeks before the problems started. It&#8217;s not specific to Adium: Pidgin users are reporting the same problems. Our users are reporting that <a href="http://messenger.yahoo.com/">the official Yahoo! Messenger client</a> does not get disconnected, so it seems to be a fault in <a href="http://developer.pidgin.im/wiki/WhatIsLibpurple">Libpurple</a>, the library that Pidgin and Adium both use.</p>
+<p>Furthermore, we stress that Adium has not forgotten your password. As shown above, Adium fills in your old password. This is so that, if the error is spurious (as in this case), you can just hit OK. This is not a security risk, as you can&#8217;t cut or copy from the password field:</p>
+<p style="text-align:center;"><img src="http://adiumx.com/blog/uploads/2008/09/adium-edit-cutcopydisabled2.png" alt="Adium-Edit-CutCopyDisabled.png" border="0" width="325" height="439" /></p>
+<p>What can you do? Just hit OK. The periodic disconnections are a hassle, but you should still be able to chat.</p>
+<p>Meanwhile, we and the Libpurple developers are still investigating the specific cause of the problem, so we know who needs to fix what.</p>
+<p>What we need from you is information. Here are <strong>the things we already know</strong>:</p>
+<ul>
+<li>You&#8217;ll get disconnected after about six to eight hours (sometimes more, sometimes less).</li>
+<li>If you use the official Yahoo! Messenger, you won&#8217;t get disconnected.</li>
+<li>If you use Pidgin, you will get disconnected.</li>
+<li>If you use Finch, you will get disconnected.</li>
+<li>It will ask for your password, even if you have it saved in the Keychain.</li>
+<li><em>It does not forget your password.</em> (You can tell because it&#8217;s filled in in the password prompt. If Adium had forgotten your password, it wouldn&#8217;t be filled in.)</li>
+</ul>
+<p>We know that a lot of you are experiencing problems. <strong>Please don&#8217;t leave a comment just to say “me too”.</strong> We already know about the problem; its existence is not in question, so we don&#8217;t need more evidence that it exists.</p>
+<p>Here are <strong>the things we do need to know</strong>:</p>
+<ul>
+<li><a href="http://adiumx.com/faq/CurrentAdiumDebug">Debug Window</a> output. We have some, but more is always better.</li>
+<li>Whether any other clients have the same problem. If you use a client that isn&#8217;t based on Libpurple, and either have or don&#8217;t have the problem in that client, we could really use that information. The Pidgin developers have a <a href="http://developer.pidgin.im/wiki/WhatIsLibpurple#Whouseslibpurple">list of clients that use Libpurple</a>.</li>
+</ul>
+<p><strong>Please do not post this information as a comment on this post—we will ignore it.</strong> Please post it on <a href="http://trac.adiumx.com/ticket/11097">our ticket</a> instead.</p>
+<p>With your help, we hope to have this problem resolved soon.</p>
+<p>(Co-written with Project Manager Eric Richie.)</p>
+]]></content:encoded>
+			<wfw:commentRss>http://adiumx.com/blog/2008/09/yahoo-disconnections-and-authorization-errors/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Adium sighting: On top of Yankee StADIUM</title>
+		<link>http://adiumx.com/blog/2008/09/adium-sighting-on-top-of-yankee-stadium/</link>
+		<comments>http://adiumx.com/blog/2008/09/adium-sighting-on-top-of-yankee-stadium/#comments</comments>
+		<pubDate>Tue, 23 Sep 2008 02:53:13 +0000</pubDate>
+		<dc:creator>Peter Hosey</dc:creator>
+		
+		<category><![CDATA[Duck sightings]]></category>
+
+		<guid isPermaLink="false">http://adiumx.com/blog/?p=549</guid>
+		<description><![CDATA[On September 19th, workers on the new Yankee Stadium assembled the sign on top of it. And, fortunately for us, they worked from right to left.
+
+Image source: MLB.com video: “The new Yankee Stadium letters are hoisted into place”. The New York Daily News has a photo from a slightly different angle. Thanks to Matthew Giarra [...]]]></description>
+			<content:encoded><![CDATA[<p>On September 19th, workers on the new Yankee Stadium assembled the sign on top of it. And, fortunately for us, they worked from right to left.</p>
+<p style="text-align:center;"><a href="http://adiumx.com/blog/uploads/2008/09/adiumsighting-yankeestadium.png"><img src="http://adiumx.com/blog/uploads/2008/09/adiumsighting-yankeestadium.jpg" alt="Frame grab of an MLB.com video, showing workers lowering the ‘A’ into position to the left of ‘DIUM’, forming a temporary ‘ADIUM’." border="0" width="512" height="288" /></a></p>
+<p>Image source: <a href="http://mlb.mlb.com/media/video.jsp?mid=200809203513580">MLB.com video: “The new Yankee Stadium letters are hoisted into place”</a>. The New York Daily News has <a href="http://www.nydailynews.com/sports/baseball/yankees/2008/09/19/2008-09-19_massive_signs_of_progress_at_the_new_yan-3.html">a photo from a slightly different angle</a>. Thanks to Matthew Giarra for telling us about the scene, and to Steve Patterson for finding the video.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://adiumx.com/blog/2008/09/adium-sighting-on-top-of-yankee-stadium/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Adium 1.3: What is the air speed velocity of a flying duck?</title>
+		<link>http://adiumx.com/blog/2008/08/adium-13-what-is-the-air-speed-of-a-flying-duck/</link>
+		<comments>http://adiumx.com/blog/2008/08/adium-13-what-is-the-air-speed-of-a-flying-duck/#comments</comments>
+		<pubDate>Mon, 25 Aug 2008 21:31:10 +0000</pubDate>
+		<dc:creator>David Smith</dc:creator>
+		
+		<category><![CDATA[1.3]]></category>
+
+		<category><![CDATA[release]]></category>
+
+		<guid isPermaLink="false">http://adiumx.com/blog/?p=546</guid>
+		<description><![CDATA[I&#8217;m happy to announce Adium 1.3, a major release seven months in the making. This release improves almost every aspect of Adium, ranging from performance and memory to Facebook chat support, and from user interface polish to much improved MSN support with personal messages (finally!). A brand new, gorgeous Contact Inspector  brings together all [...]]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;m happy to announce <a href="http://adiumx.com">Adium 1.3</a>, a major release seven months in the making. This release improves almost every aspect of Adium, ranging from performance and memory to <a href="http://facebook.com">Facebook</a> chat support, and from user interface polish to much improved MSN support with personal messages (finally!). A brand new, gorgeous Contact Inspector  brings together all a contact’s information in one place – coalescing combined contacts’ information and accessing your Apple Address Book to give you at-a-glance information, and intuitive live searching in the Standard Contact List makes it a snap to find your friends. Check out the full <a href="http://trac.adiumx.com/wiki/AdiumVersionHistory">list of changes</a>: <strong>261</strong> <a href="http://trac.adiumx.com/query?status=closed&amp;milestone=Adium+X+1.3">fixed tickets</a> in all.</p>
+<p>The Adium development community also saw some changes with this release, welcoming new contributors and developers as well as returning team members. If you&#8217;d like to get involved, check out our <a href="http://adiumx.com/faq/ContributingToAdium">Contributing to Adium</a> page or drop by our <a href="http://trac.adiumx.com/wiki/AdiumIRCChat">Adium IRC Chat</a> to see how you can help out. We&#8217;re a fun community, and working on Adium is a great learning experience with many challenges for beginners and experienced developers alike.</p>
+<p>We greatly appreciate the wide array of web services and support donated by <a href="https://secure.networkredux.com/affiliate/idevaffiliate.php?id=109">NetworkRedux</a>, and the servers and bandwidth provided by our download host <a href="http://www.cachefly.com/">CacheFly</a>, which handle the inevitable Slashdot and Digg load spikes without the slightest trouble.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://adiumx.com/blog/2008/08/adium-13-what-is-the-air-speed-of-a-flying-duck/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Adium in The Wall Street Journal</title>
+		<link>http://adiumx.com/blog/2008/08/adium-in-the-wall-street-journal/</link>
+		<comments>http://adiumx.com/blog/2008/08/adium-in-the-wall-street-journal/#comments</comments>
+		<pubDate>Fri, 08 Aug 2008 14:12:02 +0000</pubDate>
+		<dc:creator>Ryan Govostes</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://adiumx.com/blog/?p=545</guid>
+		<description><![CDATA[The Wall Street Journal&#160;is running an article entitled&#160;&#8220;Making IM Services Play Well Together&#8221;&#160;that features a review of Adium and other applications that allow you to use multiple IM accounts simultaneously.
+
+Adium,&#160;www.adiumx.com, wins points for cuteness. The downloaded program is represented by a goofy, green duck, which plops itself in the Mac operating system dock and closes [...]]]></description>
+			<content:encoded><![CDATA[<p><em>The Wall Street Journal</em>&nbsp;is running an article entitled&nbsp;<a href="http://online.wsj.com/article/SB121796367141914217.html?mod=2_1571_topbox">&#8220;Making IM Services Play Well Together&#8221;</a>&nbsp;that features a review of Adium and other applications that allow you to use multiple IM accounts simultaneously.</p>
+<blockquote>
+<p class="times">Adium,&nbsp;<a class="times" href="http://www.adiumx.com/" target="_blank">www.adiumx.com</a>, wins points for cuteness. The downloaded program is represented by a goofy, green duck, which plops itself in the Mac operating system dock and closes its eyes when not in use. When new messages are received via Adium, this duck flaps its wings until you open the message. The Adium user interface incorporates sleek visuals, such as status windows that gracefully float above user names whenever a cursor moves over these names.</p>
+</blockquote>
+<div>Thanks, Katherine!</div>
+]]></content:encoded>
+			<wfw:commentRss>http://adiumx.com/blog/2008/08/adium-in-the-wall-street-journal/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Welcome to Ryan!</title>
+		<link>http://adiumx.com/blog/2008/08/welcome-to-ryan/</link>
+		<comments>http://adiumx.com/blog/2008/08/welcome-to-ryan/#comments</comments>
+		<pubDate>Tue, 05 Aug 2008 00:50:46 +0000</pubDate>
+		<dc:creator>Evan Schoenberg</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://adiumx.com/blog/?p=544</guid>
+		<description><![CDATA[On behalf of the Adium team, I&#8217;d like to welcome Ryan Govostes, our newest developer, to the project.  No longer must I sleep with the light on, shivering in terror at PPC disassembly.  Ryan has been contributing to the project for several years, contributing both code and expertise, and I&#8217;m personally thrilled to [...]]]></description>
+			<content:encoded><![CDATA[<p>On behalf of the Adium team, I&#8217;d like to welcome <a href="http://rgov.org/">Ryan Govostes</a>, our newest developer, to the project.  No longer must I sleep with the light on, shivering in terror at PPC disassembly.  Ryan has been contributing to the project for several years, contributing both code and expertise, and I&#8217;m personally thrilled to have him on board.</p>
+<p>Mazel tov, Ryan <img src='http://adiumx.com/blog/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /></p>
+]]></content:encoded>
+			<wfw:commentRss>http://adiumx.com/blog/2008/08/welcome-to-ryan/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Adium 1.2.7</title>
+		<link>http://adiumx.com/blog/2008/07/adium-127/</link>
+		<comments>http://adiumx.com/blog/2008/07/adium-127/#comments</comments>
+		<pubDate>Fri, 04 Jul 2008 17:52:02 +0000</pubDate>
+		<dc:creator>Evan Schoenberg</dc:creator>
+		
+		<category><![CDATA[Jabber]]></category>
+
+		<category><![CDATA[XMPP]]></category>
+
+		<category><![CDATA[fixage]]></category>
+
+		<category><![CDATA[release]]></category>
+
+		<guid isPermaLink="false">http://adiumx.com/blog/?p=543</guid>
+		<description><![CDATA[Adium 1.2.7 is now available. It&#8217;s just like Adium 1.2.6 except without the major XMPP problem which snuck into that release.
+]]></description>
+			<content:encoded><![CDATA[<p>Adium 1.2.7 is <a href="http://adiumx.com">now available</a>. It&#8217;s just like <a href="http://adiumx.com/blog/2008/07/adium-126-the-client-version-you-are-using-is-too-old-not/">Adium 1.2.6</a> except without the <a href="http://adiumx.com/blog/2008/07/adium-126-xmpp-jabber-failures/">major XMPP problem</a> which snuck into that release.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://adiumx.com/blog/2008/07/adium-127/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Adium 1.2.6: XMPP (Jabber) failures</title>
+		<link>http://adiumx.com/blog/2008/07/adium-126-xmpp-jabber-failures/</link>
+		<comments>http://adiumx.com/blog/2008/07/adium-126-xmpp-jabber-failures/#comments</comments>
+		<pubDate>Thu, 03 Jul 2008 03:58:26 +0000</pubDate>
+		<dc:creator>Evan Schoenberg</dc:creator>
+		
+		<category><![CDATA[Jabber]]></category>
+
+		<category><![CDATA[fixage]]></category>
+
+		<category><![CDATA[1.2.6]]></category>
+
+		<category><![CDATA[XMPP]]></category>
+
+		<guid isPermaLink="false">http://adiumx.com/blog/?p=542</guid>
+		<description><![CDATA[Unfortunately, a &#8217;small&#8217; mistake in Adium 1.2.6 causes major problems over XMPP. We have found and corrected the problem. Adium_1.2.7b1 is available with the fix, [24183].
+Please note that this is a beta of 1.2.7. We&#8217;ll try to have a release of 1.2.7 out once we&#8217;ve verified that there are no other new problems in 1.2.6 [...]]]></description>
+			<content:encoded><![CDATA[<p>Unfortunately, a &#8217;small&#8217; mistake in Adium 1.2.6 causes major problems over XMPP. We have found and corrected the problem. <a href="http://adiumx.cachefly.net/Adium_1.2.7b1.dmg">Adium_1.2.7b1</a> is available with the fix, [<a href="http://trac.adiumx.com/changeset/24183">24183</a>].</p>
+<p>Please note that this is a <b>beta</b> of 1.2.7. We&#8217;ll try to have a release of 1.2.7 out once we&#8217;ve verified that there are no other new problems in 1.2.6 (relative to 1.2.5) which should be addressed at the same time.</p>
+<p>Please don&#8217;t chime in with every old problem, pet peeve, or enhancement request in the comments of this post!</p>
+<p><i>Caveat emptor</i>: As a beta version, Adium 1.2.7b1 will be very eager to update you to the latest beta, <a href="http://beta.adiumx.com">Adium 1.3b6</a>.  That&#8217;s probably not what you want if you&#8217;re sticking to Adium 1.2.x.  <b>If you install Adium 1.2.7b1, and you want to update to Adium 1.2.7 when it is released, you will need to check <a href="http://adiumx.com">adiumx.com</a> manually and update manually.</b>  Otherwise, you will continue to be notified of Adium 1.3 beta updates until Adium 1.3 is released.</p>
+<p>Adium 1.3b6 is plagued by the same problem as Adium 1.2.6 with XMPP; this will be fixed for the Adium 1.3 beta series in Adium 1.3b7.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://adiumx.com/blog/2008/07/adium-126-xmpp-jabber-failures/feed/</wfw:commentRss>
+		</item>
+	</channel>
+</rss>
+
+<!-- Dynamic Page Served (once) in 0.435 seconds -->
+<!-- Cached page served by WP-Cache -->

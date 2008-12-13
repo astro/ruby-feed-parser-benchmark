@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="http://feedproxy.google.com/~d/styles/rss2frenchfull.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feedproxy.google.com/~d/styles/itemcontent.css"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>Veille Perso .com</title>
+	
+	<link>http://www.veilleperso.com</link>
+	<description>Blog, Web 2.0, Buzz, Marketing et Nouvelles Technologies sur VeillePerso.com</description>
+	<pubDate>Fri, 12 Dec 2008 14:40:04 +0000</pubDate>
+	
+	<language>fr</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+			<creativeCommons:license>http://creativecommons.org/licenses/by/2.0/</creativeCommons:license><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://www.veilleperso.com/feed/" type="application/rss+xml" /><feedburner:emailServiceId>VeillePerso</feedburner:emailServiceId><feedburner:feedburnerHostname>http://feedburner.google.com</feedburner:feedburnerHostname><feedburner:feedFlare href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=http%3A%2F%2Fwww.veilleperso.com%2Ffeed%2F" src="http://www.newsgator.com/images/ngsub1.gif">Subscribe with NewsGator</feedburner:feedFlare><feedburner:feedFlare href="http://www.bloglines.com/sub/http://www.veilleperso.com/feed/" src="http://www.bloglines.com/images/sub_modern11.gif">Subscribe with Bloglines</feedburner:feedFlare><feedburner:feedFlare href="http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Fwww.veilleperso.com%2Ffeed%2F" src="http://www.netvibes.com/img/add2netvibes.gif">Subscribe with Netvibes</feedburner:feedFlare><feedburner:feedFlare href="http://fusion.google.com/add?feedurl=http%3A%2F%2Fwww.veilleperso.com%2Ffeed%2F" src="http://buttons.googlesyndication.com/fusion/add.gif">Subscribe with Google</feedburner:feedFlare><feedburner:feedFlare href="http://add.my.yahoo.com/content?lg=fr&amp;url=http%3A%2F%2Fwww.veilleperso.com%2Ffeed%2F" src="http://us.i1.yimg.com/us.yimg.com/i/us/my/bn/intatm_fr_1.gif">Subscribe with Mon Yahoo!</feedburner:feedFlare><feedburner:browserFriendly>Cette page est prévue pour être lue dans un client RSS. Les articles disponibles sur mon site sont disponibles sous licence Creative Commons.</feedburner:browserFriendly><item>
+		<title>Le Nabaztag dans le Top des Blogs</title>
+		<link>http://www.veilleperso.com/nabaztag-top-blogs-4124</link>
+		<comments>http://www.veilleperso.com/nabaztag-top-blogs-4124#comments</comments>
+		<pubDate>Fri, 12 Dec 2008 13:41:45 +0000</pubDate>
+		<dc:creator>Olivier Ruffin</dc:creator>
+		
+		<category><![CDATA[Gadgets]]></category>
+
+		<category><![CDATA[API]]></category>
+
+		<category><![CDATA[nabaztag]]></category>
+
+		<category><![CDATA[statistiques]]></category>
+
+		<category><![CDATA[top des blogs]]></category>
+
+		<guid isPermaLink="false">http://www.veilleperso.com/?p=4124</guid>
+		<description><![CDATA[	Suite à mon article sur les problèmes d&#8217;API du Nabaztag, Violet m&#8217;a informé par mail qu&#8217;ils remettaient en place le module &#8220;Call URL&#8221; dès aujourd&#8217;hui et c&#8217;est maintenant chose faite. Et le module fonctionne enfin correctement d&#8217;après mes premiers tests.
+
+	Donc comme je l&#8216;évoquais hier, j&#8217;ai ajouté dans le top des blogs une fonctionnalité permettant de [...]]]></description>
+			<content:encoded><![CDATA[	<p>Suite à mon article sur les <a href="http://www.veilleperso.com/violet-nabaztag-cest-quoi-client-4121">problèmes d&#8217;<span class="caps">API</span> du Nabaztag</a>, Violet m&#8217;a informé par mail qu&#8217;ils remettaient en place le module &#8220;Call <span class="caps">URL</span>&#8221; dès aujourd&#8217;hui et c&#8217;est maintenant chose faite. Et le module fonctionne enfin correctement d&#8217;après mes premiers tests.</p>
+
+	<p><img src="http://www.veilleperso.com/images/2008/12/nabaztag-top-des-blogs.png" alt="nabaztag_top_des_blogs.png" border="0" width="124" height="127" align="right" hspace="8" />Donc comme je l&#8216;évoquais hier, j&#8217;ai ajouté dans le <a href="http://www.topdesblogs.com/" target="_blank" class="external">top des blogs</a> une fonctionnalité permettant de faire réciter par le lapin les statistiques d&#8217;un blog. Pour le moment, il ne fourni que les statistiques Feedburner mais je vais ajouter prochainement les autres statistiques.</p>
+
+	<p>Comment faire?</p>
+
+	<ul>
+		<li>Après avoir enregistré un Ztamp dans l&#8217;interface de Violet, il faut choisir d&#8217;ajouter sur le Ztamp en question l&#8217;application &#8220;Transmettre des données dans une <span class="caps">URL</span> (Call <span class="caps">URL</span>)&#8221;</li>
+		<li>L&#8217;url à indiquer est l&#8217;url de votre blog sur le Top des Blogs, à laquelle vous ajoutez à la fin .nabaztag?sn=XXXX&amp;token=YYYYY. Le paramètre sn correspond au numéro de série de votre Nabaztag (son adresse <span class="caps">MAC</span>, visible sous le lapin, sans les :), et le paramètre token correspond au token <span class="caps">API</span> que vous trouverez dans l&#8217;espace client du Nabaztag</li>
+	</ul>
+
+	<p>Par exemple pour Veille Perso, l&#8217;url à utiliser est donc:<br />
+http://www.topdesblogs.com/blogs/1-www-veilleperso-com.nabaztag?sn=XXX&amp;token=YYYY</p>
+
+	<p>J&#8217;ai ajouté en bas de chaque fiche sur le top des blogs un petit paragraphe précisant tout cela. Vous pouvez donc facilement obtenir l&#8217;url qui vous concerne à partir de la fiche de votre blog <img src='http://www.veilleperso.com/wp-includes/images/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> </p>
+
+	<p>A noter que pour obtenir votre token, il faut vous connecter à <a href="http://my.nabaztag.com" target="_blank" class="external">l&#8217;ancien site de Violet</a> car pour le moment, le token n&#8217;est toujours pas visible dans la nouvelle interface de Violet. Si vous n&#8217;arrivez pas à vous connecter avec les identifiants que vous utilisez sur le site Violet.net, connectez vous en utilisant le login nabaztag0XXXXXXXXXXX ou 0XXXXXXXXXXX correspond à l&#8217;adresse <span class="caps">MAC</span> de votre lapin, sans les signes &#8220;:&#8221; (le mot de passe reste le même que sur violet.net). Le token se trouve alors dans le bas de la page &#8220;mes préférences&#8221;.</p><div class="feedflare">
+<a href="http://feedproxy.google.com/~f/VeillePerso?a=2p39kwAD"><img src="http://feedproxy.google.com/~f/VeillePerso?d=41" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=3s9x9A6B"><img src="http://feedproxy.google.com/~f/VeillePerso?d=124" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=uEpW0W0k"><img src="http://feedproxy.google.com/~f/VeillePerso?d=149" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=bsefBQRF"><img src="http://feedproxy.google.com/~f/VeillePerso?d=148" border="0"></img></a>
+</div><img src="http://feedproxy.google.com/~r/VeillePerso/~4/rK0KszKGmQY" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.veilleperso.com/nabaztag-top-blogs-4124/feed</wfw:commentRss>
+		</item>
+		<item>
+		<title>Violet et le nabaztag : c’est quoi un client au fait ?</title>
+		<link>http://www.veilleperso.com/violet-nabaztag-cest-quoi-client-4121</link>
+		<comments>http://www.veilleperso.com/violet-nabaztag-cest-quoi-client-4121#comments</comments>
+		<pubDate>Fri, 12 Dec 2008 02:24:32 +0000</pubDate>
+		<dc:creator>Olivier Ruffin</dc:creator>
+		
+		<category><![CDATA[Gadgets]]></category>
+
+		<category><![CDATA[API]]></category>
+
+		<category><![CDATA[nabaztag]]></category>
+
+		<category><![CDATA[sav]]></category>
+
+		<category><![CDATA[violet]]></category>
+
+		<guid isPermaLink="false">http://www.veilleperso.com/?p=4121</guid>
+		<description><![CDATA[	Allez, on est reparti pour une petite analyse d&#8217;un SAV, aujourd&#8217;hui on se concentre sur Violet, la société qui se cache derrière le Nabaztag, le super lapin censé pouvoir faire pleins de choses.
+
+	Dès que j&#8217;ai acheté le lapin, je me suis empressé de le tester, pour découvrir que 90% des applis proposées par Violet, c&#8216;était [...]]]></description>
+			<content:encoded><![CDATA[	<p>Allez, on est reparti pour une petite analyse d&#8217;un <span class="caps">SAV</span>, aujourd&#8217;hui on se concentre sur <a href="http://www.violet.net/" target="_blank" class="external">Violet</a>, la société qui se cache derrière le <a href="http://www.nabaztag.com" target="_blank" class="external">Nabaztag</a>, le super lapin censé pouvoir faire pleins de choses.</p>
+
+	<p>Dès que j&#8217;ai acheté le lapin, je me suis empressé de le tester, pour découvrir que 90% des applis proposées par Violet, c&#8216;était de la lecture de flux <span class="caps">RSS</span>, ce qui pour un drogué de flux <span class="caps">RSS</span> comme moi, ne sert à rien. Je me suis donc empressé d&#8217;utiliser l&#8217;<span class="caps">API</span> et de tenter de trouver des usages pour le lapin autre que celui d&#8216;être juste une lampe sur le bord de mon bureau. En l&#8217;occurrence, c&#8217;est avec un demi-succès que j&#8217;ai mis en place un <a href="http://www.veilleperso.com/twitter-nabaztagtag-solution-personnelle-4107">outil de surveillance de twitter</a>, un peu plus évolué que le module proposé par Violet qui est inexploitable, mais qui reste bancal car régulièrement, soit les messages vocaux sont tronqués, soient ils n&#8217;arrivent pas et restent coincées sur le serveur de Violet&#8230;</p>
+
+	<p><img src="http://www.veilleperso.com/images/2008/12/bug-du-nabaztag.png" alt="bug du nabaztag .png" border="0" width="105" height="112" align="right" hspace="8" />Ensuite, j&#8217;ai voulu utiliser les fameuses puces <span class="caps">RFID</span>, et la, c&#8217;est le drame &#8230; Une fois de plus le seul module exploitable et un minimum intéressant est celui qui permet d&#8217;appeler automatiquement une <span class="caps">URL</span> quelconque lorsqu&#8217;on fait renifler au lapin un Ztamp, puisque la plupart des autres actions sont destinées uniquement au Mirror. Malheureusement cette application ne fonctionne pas, car elle &#8220;perd&#8221; tout les paramètres fournit dans l&#8217;url, rendant impossible l&#8217;utilisation de ce module. Quand j&#8217;ai contacté le support il y a 10 jours, la première réponse fut un mail type genre &#8220;comme vous n&#8217;avez pas compris comment fonctionne le nabaztag, voici un extrait de notre faq&#8221; sans aucun rapport avec la description de bug très détaillée que j&#8217;avais fourni. Il a fallut que je relance le support avec un message assez cynique pour avoir une véritable réponse d&#8217;un être humain, blessé par mes reproches (justifiés) et me disant que le bug allait être corrigé. Depuis plus de nouvelles et je viens d&#8217;apprendre que le module a tout simplement été retiré du site jusqu&#8216;à nouvel ordre. C&#8217;est une conception toute particulière de la correction de bug: plus d&#8217;appli, donc plus de bug&#8230; J&#8217;y avais jamais songé !</p>
+
+	<p>Du coup, la partie Tag du Nabaztag/Tag ne sert grosso-modo à rien d&#8217;intéressant. C&#8217;est tout de même un peu du foutage de gueule je trouve &#8230; Je ne suis d&#8217;ailleurs apparemment pas le seul à le penser d&#8217;après ce que j&#8217;ai pu lire sur Internet, ou encore d&#8217;après le nombre de personnes qui m&#8217;ont dit que leur lapin dormait dans un placard &#8230;</p>
+
+	<p>Alors ce que je me demande, c&#8217;est pourquoi Violet n&#8217;ouvre pas complètement la partie serveur logiciel du lapin, ce qui permettrait aux développeurs de créer tout un tas de services que Violet ne propose pas: cela serait bon pour leur commerce, et les lapins du monde entier retrouveraient peut-être le sourire. Ils ont essayés par le passé de facturer les services (et cela justifiait de ne pas divulguer le code) mais cela n&#8217;a pas marché d&#8217;après ce que j&#8217;ai compris. Donc autant libérer maintenant complètement le nabaztag des carcans imposés par les plateformes de Violet, afin de faire renaître les milliers de lapins qui se languissent aux fond des placards des geeks et moins geeks de France et de Navarre non? Je suis sur que la créativité de centaines de développeurs passionnés pourrait faire bien plus pour le business de Violet qu&#8217;une équipe de quelques développeurs en interne qui n&#8217;arrive pas à faire face à la demande.</p>
+
+	<p>Bref, en attendant plus de news de la part de Violet sur le sujet, je garde sous le coude un script que j&#8217;ai déjà ajouté dans le <a href="http://www.topdesblogs.com/" target="_blank" class="external">Top des Blogs</a>, et qui permettra à chacun de demander à son lapin de lui lire les stats de son blog en passant un Ztamp devant son nez. Je vous tiens au courant.</p><div class="feedflare">
+<a href="http://feedproxy.google.com/~f/VeillePerso?a=f9JlJNe3"><img src="http://feedproxy.google.com/~f/VeillePerso?d=41" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=RHVrobxq"><img src="http://feedproxy.google.com/~f/VeillePerso?d=124" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=qjmiLk1d"><img src="http://feedproxy.google.com/~f/VeillePerso?d=149" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=MP615ysC"><img src="http://feedproxy.google.com/~f/VeillePerso?d=148" border="0"></img></a>
+</div><img src="http://feedproxy.google.com/~r/VeillePerso/~4/ojNeP_zfvz8" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.veilleperso.com/violet-nabaztag-cest-quoi-client-4121/feed</wfw:commentRss>
+		</item>
+		<item>
+		<title>WP-o-Matic, aggregateur RSS pour Wordpress</title>
+		<link>http://www.veilleperso.com/wp-o-matic-aggregateur-rss-wordpress-4112</link>
+		<comments>http://www.veilleperso.com/wp-o-matic-aggregateur-rss-wordpress-4112#comments</comments>
+		<pubDate>Sun, 07 Dec 2008 23:04:34 +0000</pubDate>
+		<dc:creator>Olivier Ruffin</dc:creator>
+		
+		<category><![CDATA[Ma sélection du Web]]></category>
+
+		<category><![CDATA[aggregation]]></category>
+
+		<category><![CDATA[lifestream]]></category>
+
+		<category><![CDATA[plugin]]></category>
+
+		<category><![CDATA[rss]]></category>
+
+		<category><![CDATA[scrapBook]]></category>
+
+		<category><![CDATA[wordpress]]></category>
+
+		<guid isPermaLink="false">http://www.veilleperso.com/?p=4112</guid>
+		<description><![CDATA[WP-o-Matic est un plugin pour Wordpress qui permet de créer automatiquement des articles à parti de flux RSS ou Atom. [...]]]></description>
+			<content:encoded><![CDATA[	<p>WP-o-Matic est un plugin pour Wordpress qui permet de créer automatiquement des articles à parti de flux <span class="caps">RSS</span> ou Atom. Le plugin se charge de récupérer automatiquement et à intervalle régulier les différents flux configurés, et de fabriquer des articles dans wordpress qui sont publiés automatiquement sous des catégories qui peuvent être définies pour chaque flux.</p>
+
+	<p>Quelques usages utiles pour un tel plugin:</p>
+
+	<ul>
+		<li>créer un blog de type &#8220;lifestream&#8221; regroupant tous les contenus que vous publiez à droite et à gauche (vidéos, photos, blogs, microblogs, twitter, etc)</li>
+		<li>mémoriser tous les articles que vous partager dans votre lecteur <span class="caps">RSS</span> (type Google Reader, Bloglines ou encore Newsgator) afin de garder une trace définitive des articles qui vous ont intéressés, ie faciliter le scrapbooking (après tous des blogs meurent tous les jours)</li>
+		<li>fabriquer des blogs verticaux en regroupant différents blogs parlant d&#8217;une même thématique</li>
+		<li>&#8230;</li>
+	</ul>
+
+	<p>A étudier !</p>
+<div><a href="http://devthought.com/wp-o-matic-the-wordpress-rss-agreggator/" target="_blank" class="external"><img src="http://www.veilleperso.com/images/apercu/4112-devthought-com-wp-o-matic-the-wordpress-rss-agreggator-preview.png" width="100" height="75" border="0"/></a></div><div class="feedflare">
+<a href="http://feedproxy.google.com/~f/VeillePerso?a=NDz0sJZ9"><img src="http://feedproxy.google.com/~f/VeillePerso?d=41" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=DaBUXuH5"><img src="http://feedproxy.google.com/~f/VeillePerso?d=124" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=nXzP7DJM"><img src="http://feedproxy.google.com/~f/VeillePerso?d=149" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=7Nnyfz3Y"><img src="http://feedproxy.google.com/~f/VeillePerso?d=148" border="0"></img></a>
+</div><img src="http://feedproxy.google.com/~r/VeillePerso/~4/22fSBWNIT1A" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.veilleperso.com/wp-o-matic-aggregateur-rss-wordpress-4112/feed</wfw:commentRss>
+<enclosure url="http://www.veilleperso.com/images/apercu/4112-devthought-com-wp-o-matic-the-wordpress-rss-agreggator-preview.png" length="6520" type="image/png" />
+<enclosure url="http://www.veilleperso.com/images/apercu/4112-devthought-com-wp-o-matic-the-wordpress-rss-agreggator-preview.png" length="6520" type="image/png" />
+<enclosure url="http://www.veilleperso.com/images/apercu/4112-devthought-com-wp-o-matic-the-wordpress-rss-agreggator-preview.png" length="6520" type="image/png" />
+		</item>
+		<item>
+		<title>Prochainement chez Orange: des trucs sympas</title>
+		<link>http://www.veilleperso.com/prochainement-chez-orange-trucs-sympas-4115</link>
+		<comments>http://www.veilleperso.com/prochainement-chez-orange-trucs-sympas-4115#comments</comments>
+		<pubDate>Sat, 06 Dec 2008 00:07:52 +0000</pubDate>
+		<dc:creator>Olivier Ruffin</dc:creator>
+		
+		<category><![CDATA[Soirées]]></category>
+
+		<category><![CDATA[innovation]]></category>
+
+		<category><![CDATA[orange]]></category>
+
+		<category><![CDATA[télé]]></category>
+
+		<category><![CDATA[téléphone]]></category>
+
+		<guid isPermaLink="false">http://www.veilleperso.com/?p=4115</guid>
+		<description><![CDATA[	Il y a quelques jour, j&#8217;ai assisté à la collection Orange, une soirée pendant laquelle Orange présente les projets sur lesquels ils bossent et qui doivent sortir à court ou moyen terme. C&#8217;est la deuxième fois que j&#8217;y participe, et je trouve cela toujours aussi sympa d&#8217;avoir un avant goût de demain. Dans les choses [...]]]></description>
+			<content:encoded><![CDATA[	<p>Il y a quelques jour, j&#8217;ai assisté à la collection Orange, une soirée pendant laquelle Orange présente les projets sur lesquels ils bossent et qui doivent sortir à court ou moyen terme. C&#8217;est la deuxième fois que j&#8217;y participe, et je trouve cela toujours aussi sympa d&#8217;avoir un avant goût de demain. Dans les choses qui nous ont été présentée cette fois-ci, voilà ce que j&#8217;ai trouvé sympa:</p>
+
+	<h3>La clé <span class="caps">USB</span> téléphone (Unik PC)</h3>
+
+	<p><img src="http://www.veilleperso.com/images/2008/12/unik-pc.png" alt="unik pc.png" border="0" width="169" height="109" align="right" hspace="8" />c&#8217;est une clé à brancher sur ton PC, avec une carte <span class="caps">SIM</span> jumelle qui transforme ton ordinateur en deuxième téléphone mobile. Quand ton mobile sonne, ton ordinateur aussi. Ton PC devient donc un deuxième combiné de ta ligne mobile, avec lequel tu peux recevoir et emettre des appels, des <span class="caps">SMS</span>, des <span class="caps">MMS</span>. De plus, cela te permet de téléphoner aussi de partout dans le monde comme si tu étais en France (si j&#8217;ai bien compris). J&#8217;adore ce concept car je suis le premier à demander aux gens de me rappeler sur Skype quand ils m&#8217;appellent sur mon mobile et que je suis devant l&#8217;ordinateur : c&#8217;est plus confortable pour moi d&#8217;avoir un casque sur la tête et de parler en continuant de bosser, plutôt que d&#8217;avoir une main ou une épaule coincée pour tenir un téléphone&#8230;</p>
+
+	<p>Par contre ce qui est dommage, c&#8217;est que ce n&#8217;est pas compatible Mac pour le moment, mais surtout, la clé n&#8217;est pas compatible data, ce qui veut dire qu&#8217;en situation de mobilité, on se retrouve avec 2 clés: une pour le téléphone et une pour l&#8217;internet&#8230; A l&#8217;heure ou l&#8217;on nous vend l&#8217;internet 3G à grand renfort de publicité, je trouve très étonnant cet &#8220;oubli&#8221; non? </p>
+
+	<p>Ce service qui est disponible dès maintenant pour les professionnels au tarif de 10E/mois et devrait être commercialisé auprès du grand public courant 2009. Moi, j&#8217;attend avec impatience la prochaine version qui idéalement serait donc compatible Mac et avec l&#8217;internet dedans, si c&#8217;est pas trop te demander monsieur Orange <img src='http://www.veilleperso.com/wp-includes/images/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> </p>
+
+	<h3>La clé <span class="caps">USB</span> Télé</h3>
+
+	<p><img src="http://www.veilleperso.com/images/2008/12/cle-tele-usb-orange.png" alt="clé télé usb orange.png" border="0" width="142" height="103" align="left" hspace="8" />C&#8217;est une clé <span class="caps">USB</span> (encore) qui transforme votre PC (oui toujours pas de Mac) en télé. On ne parle pas ici de clé <span class="caps">TNT</span> ou autre accessoire pour streamer des flux web, mais bien de transformer un PC en écran de télé HD, afin de profiter du bouquet des chaînes Orange au travers du Wifi de la Livebox. J&#8217;aime beaucoup ce concept de pouvoir emmener par ce biais la télé dans des endroits improbables en installant la clé sur un ordinateur portable&#8230; non pas les WC, je pensais au jardin, halala mais qu&#8217;allez vous penser &#8230; quoi que? <img src='http://www.veilleperso.com/wp-includes/images/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> </p>
+
+	<p>L&#8217;accès à ce service suppose d&#8217;avoir un abonnement internet Orange, et ce serait super si cela pouvait donner des idées à Numericable, etant donné que je n&#8217;ai pas le choix et que je suis scotché avec eux vu que l&#8217;<span class="caps">ADSL</span> ne veut pas venir jusqu&#8216;à chez moi (et je suis à moins de 15km de Paris!).</p>
+
+	<h3>L&#8217;ordinateur pour les seniors:</h3>
+
+	<p>Il s&#8217;agit d&#8217;un ordinateur simplifié tournant sous Linux, avec un interface étudiée pour rendre très simple le mail, le surf, la visio, et le partage de photo. L&#8217;idée est de décomplexer les personnes agées et de leur permettre de garder le lien avec le monde moderne (et leurs petits enfants), tout en mettant un terme à la sempiternelle rengaine &#8220;mais je te dis que tu ne sais pas cliquer&#8221; <img src='http://www.veilleperso.com/wp-includes/images/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> </p>
+
+	<p>Sinon on a aussi entendu la voix en qualité HD sur téléphone mobile (qui te donne envie de brancher ton téléphone sur la chaine stéréo tellement la qualité est bonne), vu l&#8217;offre cinéma (consultable sur mobile, télé et PC) et pleins d&#8217;autres trucs (mais ma mémoire flanche).</p>
+
+	<p>Bref, il y avait pas mal d&#8217;idées sympas. Comme toujours Orange tente d&#8217;innover et veut le montrer. Si vous voulez parcourir toute la collection, il vous suffit de vous rendre sur <a href="http://orange.com/sirius/lacollection/automne_hiver08/index_fr.html" target="_blank" class="external">le site dédié chez Orange</a>.</p>
+
+	<p>Vivement la prochaine édition, avec cette fois ci pleins de trucs pour Mac &#8230; enfin j&#8217;espère <img src='http://www.veilleperso.com/wp-includes/images/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> </p><div class="feedflare">
+<a href="http://feedproxy.google.com/~f/VeillePerso?a=u6LOQF7L"><img src="http://feedproxy.google.com/~f/VeillePerso?d=41" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=V4XcZrrn"><img src="http://feedproxy.google.com/~f/VeillePerso?d=124" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=Kf3BHoJV"><img src="http://feedproxy.google.com/~f/VeillePerso?d=149" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=V2tGTOts"><img src="http://feedproxy.google.com/~f/VeillePerso?d=148" border="0"></img></a>
+</div><img src="http://feedproxy.google.com/~r/VeillePerso/~4/uKkG9UyMxTM" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.veilleperso.com/prochainement-chez-orange-trucs-sympas-4115/feed</wfw:commentRss>
+		</item>
+		<item>
+		<title>PayPettes .com: le pot commun de PayPal</title>
+		<link>http://www.veilleperso.com/paypettes-com-pot-commun-paypal-4110</link>
+		<comments>http://www.veilleperso.com/paypettes-com-pot-commun-paypal-4110#comments</comments>
+		<pubDate>Wed, 03 Dec 2008 15:40:18 +0000</pubDate>
+		<dc:creator>Olivier Ruffin</dc:creator>
+		
+		<category><![CDATA[Ma sélection du Web]]></category>
+
+		<category><![CDATA[argent]]></category>
+
+		<category><![CDATA[cadeaux]]></category>
+
+		<category><![CDATA[collecte]]></category>
+
+		<category><![CDATA[évènements]]></category>
+
+		<category><![CDATA[organisation]]></category>
+
+		<category><![CDATA[paypal]]></category>
+
+		<category><![CDATA[pot-commun]]></category>
+
+		<guid isPermaLink="false">http://www.veilleperso.com/?p=4110</guid>
+		<description><![CDATA[PayPettes.com est un service lancé par Paypal qui permet d'organiser différents projets entre amis, et permet à l'organisateur de : [...]]]></description>
+			<content:encoded><![CDATA[	<p>PayPettes.com est un service lancé par Paypal qui permet d&#8217;organiser différents projets entre amis, et permet à l&#8217;organisateur de :</p>
+
+	<ul>
+		<li>collecter de l&#8217;argent pour un cadeau commun</li>
+		<li>collecter de l&#8217;argent pour organiser un évènement à plusieurs</li>
+		<li>partager une dépense commune</li>
+	</ul>
+
+	<p>Pour chacune de ces fonctionnalités, le site PayPettes vous permet de créer un projet et d&#8217;envoyer un email à vos amis leur permettant d&#8217;y participer. Les participants peuvent alors transmettre de l&#8217;argent à partir de leur compte paypal ou bien par carte de crédit.</p>
+
+	<p>Il s&#8217;agit dont d&#8217;un moyen simple et moderne de gérer un pot commun entre amis.</p>
+<div><a href="https://www.paypal-paypettes.com/" target="_blank" class="external"><img src="http://www.veilleperso.com/images/apercu/4110-www-paypal-paypettes-com-preview.png" width="100" height="75" border="0"/></a></div><div class="feedflare">
+<a href="http://feedproxy.google.com/~f/VeillePerso?a=jvww97AP"><img src="http://feedproxy.google.com/~f/VeillePerso?d=41" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=C3kuummm"><img src="http://feedproxy.google.com/~f/VeillePerso?d=124" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=DnIkkLik"><img src="http://feedproxy.google.com/~f/VeillePerso?d=149" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=Wx75xPJ0"><img src="http://feedproxy.google.com/~f/VeillePerso?d=148" border="0"></img></a>
+</div><img src="http://feedproxy.google.com/~r/VeillePerso/~4/jCQJkhbq2-4" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.veilleperso.com/paypettes-com-pot-commun-paypal-4110/feed</wfw:commentRss>
+<enclosure url="http://www.veilleperso.com/images/apercu/4110-www-paypal-paypettes-com-preview.png" length="7683" type="image/png" />
+		</item>
+		<item>
+		<title>Notifixious, la notification en temps réel</title>
+		<link>http://www.veilleperso.com/notifixious-notification-temps-reel-4108</link>
+		<comments>http://www.veilleperso.com/notifixious-notification-temps-reel-4108#comments</comments>
+		<pubDate>Wed, 03 Dec 2008 13:40:29 +0000</pubDate>
+		<dc:creator>Olivier Ruffin</dc:creator>
+		
+		<category><![CDATA[Ma sélection du Web]]></category>
+
+		<category><![CDATA[messagerie instantanée]]></category>
+
+		<category><![CDATA[notification]]></category>
+
+		<category><![CDATA[rss]]></category>
+
+		<category><![CDATA[veille]]></category>
+
+		<category><![CDATA[web]]></category>
+
+		<guid isPermaLink="false">http://www.veilleperso.com/?p=4108</guid>
+		<description><![CDATA[Notifixious est un service web qui permet de surveiller le web et de vous informer en temps réel par email, [...]]]></description>
+			<content:encoded><![CDATA[	<p>Notifixious est un service web qui permet de surveiller le web et de vous informer en temps réel par email, messagerie instantanée ou encore par <span class="caps">SMS</span>, dès qu&#8217;un nouveau contenu apparait. Le service fonctionne simplement:</p>
+
+	<ul>
+		<li>vous entrez l&#8217;url du site à surveiller</li>
+		<li>vous indiquez comment vous souhaitez être notifié</li>
+		<li>vous êtes alors informé en quasi temps-réel quand un nouveau contenu apparait sur le site surveillé</li>
+	</ul>
+
+	<p>Ce service est concurrent de notify.me ou dans une moindre mesure de Google Alerts</p>
+<div><a href="http://notifixio.us/" target="_blank" class="external"><img src="http://www.veilleperso.com/images/apercu/4108-notifixio-us-preview.png" width="100" height="75" border="0"/></a></div><div class="feedflare">
+<a href="http://feedproxy.google.com/~f/VeillePerso?a=waMIEnSy"><img src="http://feedproxy.google.com/~f/VeillePerso?d=41" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=SEmuJ9En"><img src="http://feedproxy.google.com/~f/VeillePerso?d=124" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=tIL002qr"><img src="http://feedproxy.google.com/~f/VeillePerso?d=149" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=BIBGVxdu"><img src="http://feedproxy.google.com/~f/VeillePerso?d=148" border="0"></img></a>
+</div><img src="http://feedproxy.google.com/~r/VeillePerso/~4/PLq6eTDLCc8" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.veilleperso.com/notifixious-notification-temps-reel-4108/feed</wfw:commentRss>
+<enclosure url="http://www.veilleperso.com/images/apercu/4108-notifixio-us-preview.png" length="6862" type="image/png" />
+		</item>
+		<item>
+		<title>Twitter et Nabaztag/tag : ma solution personnelle</title>
+		<link>http://www.veilleperso.com/twitter-nabaztagtag-solution-personnelle-4107</link>
+		<comments>http://www.veilleperso.com/twitter-nabaztagtag-solution-personnelle-4107#comments</comments>
+		<pubDate>Fri, 28 Nov 2008 02:01:22 +0000</pubDate>
+		<dc:creator>Olivier Ruffin</dc:creator>
+		
+		<category><![CDATA[Gadgets]]></category>
+
+		<category><![CDATA[geek]]></category>
+
+		<category><![CDATA[nabaztag]]></category>
+
+		<category><![CDATA[script]]></category>
+
+		<category><![CDATA[twitter]]></category>
+
+		<guid isPermaLink="false">http://www.veilleperso.com/?p=4107</guid>
+		<description><![CDATA[	Bon on ne se refait pas, j&#8217;ai fini par acheter un Nabaztag/tag avec les Ztamps (des étiquettes RFID que le Nabaztag/tag renifle et qui permettent de déclencher des actions) &#8230; J&#8217;avais pourtant réussi à résister à la tentation jusqu&#8216;à présent, en me disant qu&#8217;un Chumby, ce serait bien mieux, mais finalement le Chumby n&#8217;arrive pas, [...]]]></description>
+			<content:encoded><![CDATA[	<p>Bon on ne se refait pas, j&#8217;ai fini par acheter un Nabaztag/tag avec les Ztamps (des étiquettes <span class="caps">RFID</span> que le Nabaztag/tag renifle et qui permettent de déclencher des actions) &#8230; J&#8217;avais pourtant réussi à résister à la tentation jusqu&#8216;à présent, en me disant qu&#8217;un <a href="http://www.veilleperso.com/chumby-premier-gadget-web-2-0-235">Chumby, ce serait bien mieux</a>, mais finalement le Chumby n&#8217;arrive pas, et puis j&#8217;avais envie d&#8217;essayer de me servir du Nabaztag pour monitorer twitter, bref, je suis faible, j&#8217;ai craqué !</p>
+
+	<p><img src="http://www.veilleperso.com/images/2008/11/nabaztag-veilleperso.png" alt="nabaztag veilleperso.png" border="0" width="179" height="238" align="right" hspace="8" />La première chose que j&#8217;ai faite a donc été d&#8217;installer le widget twitter depuis le site de Violet pour voir ce que donnait la synthèse vocale et le constat fut catastrophique: vous mes amis de twitter, vous causez trop, vous causez n&#8217;importe comment, vous collez des smileys et des urls à tout bout de champ, vous twittez parfois en français, parfois en anglais, bref, un vrai casse tête pour le lapin qui aurait bien préféré faire son Tai-Chi plutôt que de me déverser cette logorrhée de twits <img src='http://www.veilleperso.com/wp-includes/images/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> </p>
+
+	<p>Mais bon ce n&#8217;est pas parce que le service fournit par Violet n&#8217;est pas au top qu&#8217;il faut baisser les bras. J&#8217;ai donc codé un petit script en <span class="caps">PHP</span> qui fait les choses suivantes:</p>
+
+	<ul>
+		<li>au lieu de récupérer le flux des twits de mes amis, le script ne récupère que les twits qui me sont destinés (ceux qui contiennent @veilleperso).</li>
+		<li>ensuite, pour chaque twit, le script enlève les urls et les smileys afin d&#8217;arriver à un texte plus facilement prononçable par le lapin.</li>
+		<li>enfin, le script transmet chaque twit sous forme de message en <span class="caps">TTS</span> (Text to Speech).</li>
+	</ul>
+
+	<p>Au final le lapin s&#8217;en sort beaucoup mieux et devient donc un outil de surveillance assez pratique pour twitter, puisqu&#8217;il ne me cause que quand l&#8217;un de vous essaye de me parler sur twitter.</p>
+
+	<p>Donc vous pouvez maintenant m&#8217;envoyer vos insultes, vos anneries ou vos mots d&#8217;amours sur twitter en prenant bien soin d&#8217;utiliser la syntaxe @veilleperso, et le lapin me susurrera tout cela à l&#8217;oreille <img src='http://www.veilleperso.com/wp-includes/images/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> </p>
+
+	<p>Et si vous êtes intéressé pour faire tourner le script avec votre propre lapin, il est disponible <a href="http://github.com/veilleperso/nabaztwit/zipball/master" target="_blank" class="external">en téléchargement</a> sur le dépot Github du <a href="http://github.com/veilleperso/nabaztwit" target="_blank" class="external">code source</a>. C&#8217;est testé sous Mac <span class="caps">OSX</span> et Ubuntu, et cela demande quelques connaissances informatiques pour personnaliser le script (fichier de config à éditer) et configurer une tache cron pour scanner twitter.</p>
+
+	<p>Sinon pour les Ztamps, pour l&#8217;instant j&#8217;y ai pas encore trouvé un réel intérêt, probablement à cause du nombre limité d&#8217;actions proposées par Violet. Je suis en train de voir si j&#8217;arrive à programmer un script pour envoyer le nabaztag à la sieste n&#8217;importe quand, ou bien le reveiller quand il est à la sieste. Je vous tiens au courant sur twitter si cela marche <img src='http://www.veilleperso.com/wp-includes/images/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> </p><div class="feedflare">
+<a href="http://feedproxy.google.com/~f/VeillePerso?a=xSnwPlY3"><img src="http://feedproxy.google.com/~f/VeillePerso?d=41" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=NuoXlq5w"><img src="http://feedproxy.google.com/~f/VeillePerso?d=124" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=iXrhqUJ1"><img src="http://feedproxy.google.com/~f/VeillePerso?d=149" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=Lc8njQxh"><img src="http://feedproxy.google.com/~f/VeillePerso?d=148" border="0"></img></a>
+</div><img src="http://feedproxy.google.com/~r/VeillePerso/~4/t6TeazGCWT4" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.veilleperso.com/twitter-nabaztagtag-solution-personnelle-4107/feed</wfw:commentRss>
+		</item>
+		<item>
+		<title>Open Inviter, script php d’import de contacts</title>
+		<link>http://www.veilleperso.com/open-inviter-script-php-dimport-contacts-4104</link>
+		<comments>http://www.veilleperso.com/open-inviter-script-php-dimport-contacts-4104#comments</comments>
+		<pubDate>Thu, 27 Nov 2008 12:10:27 +0000</pubDate>
+		<dc:creator>Olivier Ruffin</dc:creator>
+		
+		<category><![CDATA[Ma sélection du Web]]></category>
+
+		<category><![CDATA[opensource]]></category>
+
+		<category><![CDATA[php]]></category>
+
+		<category><![CDATA[Programmation]]></category>
+
+		<guid isPermaLink="false">http://www.veilleperso.com/?p=4104</guid>
+		<description><![CDATA[OpenInviter est un script open source permettant d'importer facilements des contacts à partir de la plupart des grands services de [...]]]></description>
+			<content:encoded><![CDATA[	<p>OpenInviter est un script open source permettant d&#8217;importer facilements des contacts à partir de la plupart des grands services de webmail (<span class="caps">AOL</span>, GMail, Terra, Yahoo!, Lycos, <span class="caps">GMX</span>.net, Mail.ru, Mynet.com, OperaMail, Live/Hotmail, Mail.com, Inbox.com, etc) mais aussi à partir des réseaux sociaux les plus connus (Twitter, Flixster, Friendster, Facebook, MySpace, Bebo, Skyrock, Last.fm, Flickr, LinkedIn, Orkut, Hi5). </p>
+
+	<p>Ce script est disponible pour PH5 et en perpétuelle évolution: bien pratique pour tout ceux qui ont besoin de développer des fonctionnalités de type &#8220;invitation&#8221; dans leur service web de la mort qui tue qui va révolutionner la planète web <img src='http://www.veilleperso.com/wp-includes/images/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> </p>
+<div><a href="http://openinviter.com/" target="_blank" class="external"><img src="http://www.veilleperso.com/images/apercu/4104-openinviter-com-preview.png" width="100" height="75" border="0"/></a></div><div class="feedflare">
+<a href="http://feedproxy.google.com/~f/VeillePerso?a=wL9PYKgN"><img src="http://feedproxy.google.com/~f/VeillePerso?d=41" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=KPaJKdT0"><img src="http://feedproxy.google.com/~f/VeillePerso?d=124" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=uKMkNzvE"><img src="http://feedproxy.google.com/~f/VeillePerso?d=149" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=YddGLdTr"><img src="http://feedproxy.google.com/~f/VeillePerso?d=148" border="0"></img></a>
+</div><img src="http://feedproxy.google.com/~r/VeillePerso/~4/BTDumjyj2Hw" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.veilleperso.com/open-inviter-script-php-dimport-contacts-4104/feed</wfw:commentRss>
+<enclosure url="http://www.veilleperso.com/images/apercu/4104-openinviter-com-preview.png" length="11897" type="image/png" />
+		</item>
+		<item>
+		<title>Pour noël, je veux Mario Kart dans mon salon !</title>
+		<link>http://www.veilleperso.com/noel-veux-mario-kart-salon-4103</link>
+		<comments>http://www.veilleperso.com/noel-veux-mario-kart-salon-4103#comments</comments>
+		<pubDate>Tue, 25 Nov 2008 13:38:18 +0000</pubDate>
+		<dc:creator>Olivier Ruffin</dc:creator>
+		
+		<category><![CDATA[Gadgets]]></category>
+
+		<category><![CDATA[geek]]></category>
+
+		<category><![CDATA[jeu]]></category>
+
+		<category><![CDATA[mario kart]]></category>
+
+		<category><![CDATA[nintendo]]></category>
+
+		<guid isPermaLink="false">http://www.veilleperso.com/?p=4103</guid>
+		<description><![CDATA[	Ce qui est bien quand on a des enfants, c&#8217;est qu&#8217;on à le droit de retomber en enfance sans que cela paraisse suspect, grâce à l&#8217;excuse &#8220;Mais si tu vas voir chérie, ce sera bien pour le fiston, il va adorer jouer à ce truc&#8221;. On est alors considéré comme un bon père modèle plutôt [...]]]></description>
+			<content:encoded><![CDATA[	<p>Ce qui est bien quand on a des enfants, c&#8217;est qu&#8217;on à le droit de retomber en enfance sans que cela paraisse suspect, grâce à l&#8217;excuse &#8220;Mais si tu vas voir chérie, ce sera bien pour le fiston, il va adorer jouer à ce truc&#8221;. On est alors considéré comme un bon père modèle plutôt que comme un mec un peu bizarre <img src='http://www.veilleperso.com/wp-includes/images/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> </p>
+
+	<p>Et la il va falloir que je sois bien convainquant si je veux pouvoir jouer à Mario Kart en vrai dans le salon, grâce à ce kit de mini voitures RC (qui se rechargent via la télécommande) :<br />
+<div style="text-align:center;"><img src="http://www.veilleperso.com/images/2008/11/voitures-radio-commandees-mario-kart-wii.png" alt="voitures radio commandées mario kart WII.png" border="0" width="246" height="228" hspace="8"/></div></p>
+
+	<p>Le kit complet avec 4 voitures (Mario, Luigi, Yoshi et Koopa) est disponible chez <a href="http://toys.brando.com.hk/prod_detail.php?prod_id=00370" target="_blank" class="external">Brando</a>. Vous connaissez un importateur français ? Parce que les frais de port Express alourdissent pas mal la facture.</p><div class="feedflare">
+<a href="http://feedproxy.google.com/~f/VeillePerso?a=eJ9t68qY"><img src="http://feedproxy.google.com/~f/VeillePerso?d=41" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=Bo3TvASl"><img src="http://feedproxy.google.com/~f/VeillePerso?d=124" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=DeoXEB5G"><img src="http://feedproxy.google.com/~f/VeillePerso?d=149" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=o2h7tpjb"><img src="http://feedproxy.google.com/~f/VeillePerso?d=148" border="0"></img></a>
+</div><img src="http://feedproxy.google.com/~r/VeillePerso/~4/P9LY956cMME" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.veilleperso.com/noel-veux-mario-kart-salon-4103/feed</wfw:commentRss>
+		</item>
+		<item>
+		<title>Metiers de la com’ ? Le top des blogs est fait pour vous</title>
+		<link>http://www.veilleperso.com/metiers-com-top-blogs-4101</link>
+		<comments>http://www.veilleperso.com/metiers-com-top-blogs-4101#comments</comments>
+		<pubDate>Mon, 24 Nov 2008 14:41:30 +0000</pubDate>
+		<dc:creator>Olivier Ruffin</dc:creator>
+		
+		<category><![CDATA[Services en ligne]]></category>
+
+		<category><![CDATA[blogosphere]]></category>
+
+		<category><![CDATA[Blogs]]></category>
+
+		<category><![CDATA[classement]]></category>
+
+		<category><![CDATA[marketing]]></category>
+
+		<category><![CDATA[marketing viral]]></category>
+
+		<guid isPermaLink="false">http://www.veilleperso.com/?p=4101</guid>
+		<description><![CDATA[	Il y a quelques temps déjà, j&#8217;ai lancé le Top des Blogs pour que chacun puisse consulter facilement toute les statistiques de son blog. Depuis j&#8217;ai discuté avec pas mal de personnes au sujet de cet outil et il a évolué pour proposer un moteur de recherche de blogs. Il s&#8217;agit d&#8217;un moteur multi-critères permettant [...]]]></description>
+			<content:encoded><![CDATA[	<p>Il y a quelques temps déjà, j&#8217;ai lancé <a href="http://www.topdesblogs.com/" target="_blank" class="external">le Top des Blogs</a> pour que chacun puisse consulter facilement toute les statistiques de son blog. Depuis j&#8217;ai discuté avec pas mal de personnes au sujet de cet outil et il a évolué pour proposer un moteur de recherche de blogs. Il s&#8217;agit d&#8217;un moteur multi-critères permettant d&#8217;interroger la base de données utilisée par le top des blogs, et d&#8217;exporter les résultats au format <span class="caps">CSV</span> (une <span class="caps">API</span> <span class="caps">XML</span> est aussi en cours de test). Certains d&#8217;entre vous sont déjà au courant, soit parce qu&#8217;on en a discuté de vive voix, soit parce que vous avez lu sur Web2Pro <a href="http://www.web2pro.info/marketing/ameliorez-la-qualite-de-votre-ciblage-marketing-sur-les-blogs-avec-top-des-blogs.html" target="_blank" class="external">l&#8217;article sur le &#8220;business model&#8221; du Top des Blogs</a>.</p>
+
+	<p><a href="http://www.topdesblogs.com" target="_blank" class="external"><img src="http://www.veilleperso.com/images/2008/11/top-des-blogs.png" alt="top des blogs.png" border="0" width="266" height="119" align="right" hspace="8" /></a>Cet outil est accessible sur abonnement car il est principalement destiné aux personnes et sociétés qui souhaitent <a href="http://www.topdesblogs.com/search" target="_blank" class="external">identifier des blogs pertinents sur un sujet donné</a>, afin par exemple de pouvoir lancer une campagne de communication. Que vous travaillez pour une agence de &#8220;digital marketing&#8221;, une &#8220;web agency&#8221;, une agence de RP, ou encore pour une startup sans le sous mais qui voudrait bien transmettre un communiqué de presse à quelques bloggeurs spécialisés, ce moteur peut vous intéresser. Le moteur combine une recherche par tags et une recherche sur tous les critères statistiques que l&#8217;on agrège, afin d&#8217;identifier les blogs les plus pertinents par rapport à l&#8217;information que vous souhaitez diffuser. La force de cet outil est son robot d&#8217;indexation, qui cherche tout seul et ajoute de nouveaux blogs chaque jour et qui permet donc d&#8217;avoir une base contenant de nombreux blogs spécialisés sur des niches, et ainsi de sortir des sentiers battus de la communication auprès de la &#8220;jetset&#8221; des blogs ;-).</p>
+
+	<p>D&#8217;autres outils ont aussi été ajoutés tel que la possibilité d&#8217;importer une liste de blogs pour ne suivre les statistiques que des bloggeurs avec lesquels vous travaillez. Vous pouvez aussi constituer des listes de favoris au fur et à mesure de vos découvertes et réutiliser ces listes pour limiter vos recherches.</p>
+
+	<p>L&#8217;ensemble du service peut être testé gratuitement, si vous souhaitez vérifier au préalable qu&#8217;il y a bien de données sur des recherches type que vous êtes amené à faire. Vous trouverez toutes les informations disponibles sur <a href="http://www.topdesblogs.com/search/offer" target="_blank" class="external">la page détaillant notre offre</a>. Donc si un tel outil fait parti de vos besoins professionnels, n&#8217;hésitez pas à aller y jeter un oeil. Je suis d&#8217;ailleurs preneur de vos remarques et retours d&#8217;expérience puisque le top des blogs est avant tout réalisé pour vous.</p>
+
+	<p>Ah si j&#8217;oubliais, une précision: nos crawlers ne vont jamais sur aucun des blogs indexés. Nous obtenons toutes nos données à partir de différentes <span class="caps">API</span> publiques ou privées disponibles sur Internet, qui elles même s&#8217;appuient sur les données publiques mises à disposition sur le web par chaque blog. C&#8217;est ça la magie des &#8220;<a href="http://fr.wikipedia.org/wiki/Application_composite" target="_blank" class="external">mashups</a>&#8220; <img src='http://www.veilleperso.com/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' /> </p>
+
+	<p><a href="http://www.topdesblogs.com" target="_blank" class="external"><img src="http://www.veilleperso.com/images/2008/11/statistiques-d-un-blog-sur-le-top-des-blogs.png" alt="Statistiques d_un blog sur le Top des Blogs.png" border="0" width="154" height="150" align="right" hspace="8" /></a>Enfin pour information, voici quelques trucs qui sont sur ma roadmap et qui devraient voir le jour dans les prochaines semaines:</p>
+
+	<ul>
+		<li>les différents classements de chaque blog vont être directement intégrés dans la fiche du blog, ce qui permettra à chacun de savoir plus facilement ou il se situe dans les différents classements disponibles. Pour que cette fonctionnalité soit pertinente je vais modifier le système de classement pour ne plus faire des classements &#8220;en live&#8221; mais plutôt des classements figés au début de chaque mois.</li>
+		<li>la mise en place d&#8217;un deuxième moteur de recherche, mais cette fois ci le moteur ne travaillera plus seulement sur les tags: il permettra une recherche &#8220;full-text&#8221; (donc à la Google), sauf que les recherches seront enrichies des statistiques de chaque blog trouvé, et bien sur tous ces chiffres pourront servir de filtre dans la recherche de contenus spécifiques. Je suis carrément impatient de voir ce que cela va donner <img src='http://www.veilleperso.com/wp-includes/images/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> </li>
+		<li>l&#8217;historisation de toutes les statistiques que nous récupérons afin de faire de graphes similaires à la courbe feedburner, pour mieux suivre l&#8216;évolution au cours du temps de chaque blogs.</li>
+	</ul>
+
+<div class="feedflare">
+<a href="http://feedproxy.google.com/~f/VeillePerso?a=X3I5C1VI"><img src="http://feedproxy.google.com/~f/VeillePerso?d=41" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=uNrFWh41"><img src="http://feedproxy.google.com/~f/VeillePerso?d=124" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=KCICwggA"><img src="http://feedproxy.google.com/~f/VeillePerso?d=149" border="0"></img></a> <a href="http://feedproxy.google.com/~f/VeillePerso?a=uu4ebqvj"><img src="http://feedproxy.google.com/~f/VeillePerso?d=148" border="0"></img></a>
+</div><img src="http://feedproxy.google.com/~r/VeillePerso/~4/od-FDjyWfpI" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.veilleperso.com/metiers-com-top-blogs-4101/feed</wfw:commentRss>
+		</item>
+	</channel>
+</rss>

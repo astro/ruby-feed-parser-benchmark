@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/rss2full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+  <channel>
+    <title>Jeremy Zawodny's blog</title>
+    <link>http://jeremy.zawodny.com/blog/</link>
+    <description>Random thoughts on technology, aviation, and life in general...</description>
+    <dc:language>en-us</dc:language>
+    <dc:creator>Jeremy@Zawodny.com</dc:creator>
+    <dc:rights>Copyright 2008</dc:rights>
+    <dc:date>2008-12-08T07:02:50-08:00</dc:date>
+    <admin:generatorAgent rdf:resource="http://www.movabletype.org/?v=3.16" />
+    <admin:errorReportsTo rdf:resource="mailto:Jeremy@Zawodny.com" />
+    <sy:updatePeriod>hourly</sy:updatePeriod>
+    <sy:updateFrequency>1</sy:updateFrequency>
+    <sy:updateBase>2000-01-01T12:00+00:00</sy:updateBase>
+
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://jeremy.zawodny.com/blog/rss2.xml" type="application/rss+xml" /><feedburner:feedFlare href="http://add.my.yahoo.com/rss?url=http%3A%2F%2Fjeremy.zawodny.com%2Fblog%2Frss2.xml" src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif">Subscribe with My Yahoo!</feedburner:feedFlare><feedburner:feedFlare href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=http%3A%2F%2Fjeremy.zawodny.com%2Fblog%2Frss2.xml" src="http://www.newsgator.com/images/ngsub1.gif">Subscribe with NewsGator</feedburner:feedFlare><feedburner:feedFlare href="http://feeds.my.aol.com/add.jsp?url=http%3A%2F%2Fjeremy.zawodny.com%2Fblog%2Frss2.xml" src="http://o.aolcdn.com/favorites.my.aol.com/webmaster/ffclient/webroot/locale/en-US/images/myAOLButtonSmall.gif">Subscribe with My AOL</feedburner:feedFlare><feedburner:feedFlare href="http://www.rojo.com/add-subscription?resource=http%3A%2F%2Fjeremy.zawodny.com%2Fblog%2Frss2.xml" src="http://blog.rojo.com/RojoWideRed.gif">Subscribe with Rojo</feedburner:feedFlare><feedburner:feedFlare href="http://www.bloglines.com/sub/http://jeremy.zawodny.com/blog/rss2.xml" src="http://www.bloglines.com/images/sub_modern11.gif">Subscribe with Bloglines</feedburner:feedFlare><feedburner:feedFlare href="http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Fjeremy.zawodny.com%2Fblog%2Frss2.xml" src="http://www.netvibes.com/img/add2netvibes.gif">Subscribe with Netvibes</feedburner:feedFlare><feedburner:feedFlare href="http://fusion.google.com/add?feedurl=http%3A%2F%2Fjeremy.zawodny.com%2Fblog%2Frss2.xml" src="http://buttons.googlesyndication.com/fusion/add.gif">Subscribe with Google</feedburner:feedFlare><feedburner:feedFlare href="http://www.pageflakes.com/subscribe.aspx?url=http%3A%2F%2Fjeremy.zawodny.com%2Fblog%2Frss2.xml" src="http://www.pageflakes.com/ImageFile.ashx?instanceId=Static_4&amp;fileName=ATP_blu_91x17.gif">Subscribe with Pageflakes</feedburner:feedFlare><item>
+      <title>The New MySQL Landscape</title>
+      <link>http://feeds.feedburner.com/~r/jzawodn/rss2/~3/478523237/010774.html</link>
+      <description><![CDATA[<p>Interesting things are afoot in the <a href="http://www.mysql.com/">MySQL</a> world.  You see, it used to be that the MySQL world consisted of about 20-40 employees of <a href="http://en.wikipedia.org/wiki/MySQL_AB">MySQL AB</a> (this funny distributed Swedish company that built and supported the open source MySQL database server), a tiny handful of <a href="http://lists.mysql.com/">MySQL mailing lists</a>, and large databases were counted in gigabytes not terabytes.  A Pentium III was still a decent server.  Replication was a <em>new</em> feature!</p>
+
+<p>Hey, anyone remember the Gemini storage engine? :-)</p>
+
+<p>How times have changed...</p>
+
+<p>Nowadays MySQL is sort of a universe onto itself.  There are multiple storage engines (though MyISAM and InnoDB are still the popular ones), <a href="http://dev.mysql.com/downloads/mysql/5.1.html">version 5.1</a> is out (<a href="http://monty-says.blogspot.com/2008/11/oops-we-did-it-again-mysql-51-released.html">finally</a>), and the whole company made it over 400 employees before it was gobbled up by Sun Microsystems (a smart move, IMHO, though history will judge that) a while back.</p>
+
+<p>If I had to guess 5 years or so ago what would be interesting to me <em>today</em> about MySQL, I'd have been really, really wrong.  The future rarely turns out like we think.  Just ask Hillary Clinton.</p>
+
+<p>Here's a little of what's rattling around in the MySQL part of my little brain these days...</p>
+
+<h3>Outside Support, Patches, and Forks</h3>
+
+<p>The single most interesting and surprising thing to me is both the number and necessity of third-party patches for enhancing various aspects of MySQL and InnoDB.  Companies like <a href="http://www.percona.com/">Percona</a>, <a href="http://www.google.com/">Google</a>, <a href="http://provenscaling.com/">Proven Scaling</a>, <a href="http://www.primebase.com/">Prime Base Technologies</a>, and <a href="http://openquery.com.au/">Open Query</a> are all doing so in one way or another.</p>
+
+<p>On the one hand, it's excellent validation of the Open Source model.  Thanks to reasonable licensing, companies other than Sun/MySQL are able to enhance and fix the software and give their changes back to the world.</p>
+
+<p>Some organizations are providing just patches.  Others, like Percona are <a href="http://www.percona.com/docs/wiki/release:start">providing their own binaries</a>--effectively forks of MySQL/InnoDB.  Taking things a step further, the <a href="http://ourdelta.org/">OurDelta</a> project aims to aggregate these third party patches and provide source and binaries for various platforms.  In essences, you can get a "better" MySQL than the one Sun/MySQL gives you today.  For free.</p>
+
+<p>Meanwhile, development on InnoDB continues.  Oh, did I mention the part where they were bought by <em>Oracle</em> (yes, *that* Oracle) a while back?  Crazy shit, I tell you.  But it makes sense if you squint right.</p>
+
+<p>Anyway, the vibe I'm getting is that folks are frustrated because there's not a lot of communication coming out of the InnoDB development team these days.  I can't personally verify that.  It's been years since I corresponded with Heikki Tuuri (the creator of InnoDB).  So folks like <a href="http://mysqlha.blogspot.com/">Mark Callaghan</a> of Google have been busy analyzing and patching it to scale better for their needs.</p>
+
+<p>And we all benefit.</p>
+
+<h3>Drizzle</h3>
+
+<p>Taking things a step further yet, the <a href="https://launchpad.net/drizzle">Drizzle</a> project is a re-making of MySQL started primarily by <a href="http://krow.net/">Brian Aker</a>, who worked as MySQL's Director of Architecture for years.  Brian is now at Sun and, along with a handful of others at Sun and elsewhere, is ripping out a lot of the stuff in a fork of MySQL that doesn't get used much, needlessly complicated the code, or is simply no longer needed.</p>
+
+<p>In essence, they're taking a hard look at MySQL and asking what it <em>really</em> needs to provide for a lot of it's uses today: Web and "cloud" stuff.  He visited us at Craigslist a few months ago to talk about the project a bit and get our input and feedback.  I believe it was that day I joined one of the mailing list and started following what's going on.  Heck, I even build Drizzle on an Atom-powered <a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16856167032">MSI Wind PC</a> regularly.</p>
+
+<p>It's great to see a re-think of MySQL going on... keeping the good, getting rid of the bad, and modularizing the stuff that people often want to do differently (authentication, for example).</p>
+
+<p>It's even better to see the group that's hacking on it.  They really have their heads on straight.</p>
+
+<h3>Unanswered Questions</h3>
+
+<p>Why is all this even necessary?  Are the "enterprise" customers and their demands taking focus away from what used to be the core use and usres of MySQL?  Is Sun hard to work with?</p>
+
+<p>It's clear that both the MySQL and InnoDB teams could be doing more to help.  But having worked at <a href="http://www.yahoo.com/">a large company</a> for long enough, I realize that things are rarely as simple as they should be.</p>
+
+<p>Will this stuff get integrated back into mainline MySQL?  Will Linux distributions like Ubuntu, Debian, and Red Hat pick up OurDelta builds?  What about Drizzle?</p>
+
+<p>Will Drizzle hit its target and be the sleek and lean database kernel that MySQL once could have been?</p>
+
+<p>Hard to say.</p>
+
+<p>It's hard to guess what the future holds and too easy to play armchair quarterback about the work of others.  But these are question worth wondering about a bit.</p>
+
+<h3>What's it all mean?</h3>
+
+<p>Nowadays MySQL has a much slower release cycle that it used to.  It's still available in "commecial" and free ("community") releases.  There's still a company behind it--a much larger one in fact.  But one that also has a vested interest in showing how it works better on their storage appliances or 256 "core" computers and whatnot.</p>
+
+<p>Clustering is still very niche.  Transactions are not.</p>
+
+<p>Meanwhile, all the cutting edge stuff (at least from the point of view of scaling) is happening outside Sun/MySQL and being integrated by OurDelta and even Drizzle.  The OutDelta builds are gaining steam quickly and Drizzle is shaping up.</p>
+
+<p>Heck, I'm hoping to get an OurDelta box or two on-line at work sometime soon.  And I'd like to put a Drizzle node up too.  I want to see how the InnoDB patches help and also play with the InnoDB plug-in (and its page compression).</p>
+
+<p>The next few years are proving to be far more interesting than I might have expected from a project and technology that looked like was on a track straight for Open Source maturity.</p>
+
+<p>And you know what?  I like it.</p>  <p>(<a href="http://jeremy.zawodny.com/blog/archives/010774.html#comments">comments</a>)</p>]]></description>
+      <guid isPermaLink="false">10774@http://jeremy.zawodny.com/blog/</guid>
+      <content:encoded><![CDATA[<p>Interesting things are afoot in the <a href="http://www.mysql.com/">MySQL</a> world.  You see, it used to be that the MySQL world consisted of about 20-40 employees of <a href="http://en.wikipedia.org/wiki/MySQL_AB">MySQL AB</a> (this funny distributed Swedish company that built and supported the open source MySQL database server), a tiny handful of <a href="http://lists.mysql.com/">MySQL mailing lists</a>, and large databases were counted in gigabytes not terabytes.  A Pentium III was still a decent server.  Replication was a <em>new</em> feature!</p>
+
+<p>Hey, anyone remember the Gemini storage engine? :-)</p>
+
+<p>How times have changed...</p>
+
+<p>Nowadays MySQL is sort of a universe onto itself.  There are multiple storage engines (though MyISAM and InnoDB are still the popular ones), <a href="http://dev.mysql.com/downloads/mysql/5.1.html">version 5.1</a> is out (<a href="http://monty-says.blogspot.com/2008/11/oops-we-did-it-again-mysql-51-released.html">finally</a>), and the whole company made it over 400 employees before it was gobbled up by Sun Microsystems (a smart move, IMHO, though history will judge that) a while back.</p>
+
+<p>If I had to guess 5 years or so ago what would be interesting to me <em>today</em> about MySQL, I'd have been really, really wrong.  The future rarely turns out like we think.  Just ask Hillary Clinton.</p>
+
+<p>Here's a little of what's rattling around in the MySQL part of my little brain these days...</p>
+
+<h3>Outside Support, Patches, and Forks</h3>
+
+<p>The single most interesting and surprising thing to me is both the number and necessity of third-party patches for enhancing various aspects of MySQL and InnoDB.  Companies like <a href="http://www.percona.com/">Percona</a>, <a href="http://www.google.com/">Google</a>, <a href="http://provenscaling.com/">Proven Scaling</a>, <a href="http://www.primebase.com/">Prime Base Technologies</a>, and <a href="http://openquery.com.au/">Open Query</a> are all doing so in one way or another.</p>
+
+<p>On the one hand, it's excellent validation of the Open Source model.  Thanks to reasonable licensing, companies other than Sun/MySQL are able to enhance and fix the software and give their changes back to the world.</p>
+
+<p>Some organizations are providing just patches.  Others, like Percona are <a href="http://www.percona.com/docs/wiki/release:start">providing their own binaries</a>--effectively forks of MySQL/InnoDB.  Taking things a step further, the <a href="http://ourdelta.org/">OurDelta</a> project aims to aggregate these third party patches and provide source and binaries for various platforms.  In essences, you can get a "better" MySQL than the one Sun/MySQL gives you today.  For free.</p>
+
+<p>Meanwhile, development on InnoDB continues.  Oh, did I mention the part where they were bought by <em>Oracle</em> (yes, *that* Oracle) a while back?  Crazy shit, I tell you.  But it makes sense if you squint right.</p>
+
+<p>Anyway, the vibe I'm getting is that folks are frustrated because there's not a lot of communication coming out of the InnoDB development team these days.  I can't personally verify that.  It's been years since I corresponded with Heikki Tuuri (the creator of InnoDB).  So folks like <a href="http://mysqlha.blogspot.com/">Mark Callaghan</a> of Google have been busy analyzing and patching it to scale better for their needs.</p>
+
+<p>And we all benefit.</p>
+
+<h3>Drizzle</h3>
+
+<p>Taking things a step further yet, the <a href="https://launchpad.net/drizzle">Drizzle</a> project is a re-making of MySQL started primarily by <a href="http://krow.net/">Brian Aker</a>, who worked as MySQL's Director of Architecture for years.  Brian is now at Sun and, along with a handful of others at Sun and elsewhere, is ripping out a lot of the stuff in a fork of MySQL that doesn't get used much, needlessly complicated the code, or is simply no longer needed.</p>
+
+<p>In essence, they're taking a hard look at MySQL and asking what it <em>really</em> needs to provide for a lot of it's uses today: Web and "cloud" stuff.  He visited us at Craigslist a few months ago to talk about the project a bit and get our input and feedback.  I believe it was that day I joined one of the mailing list and started following what's going on.  Heck, I even build Drizzle on an Atom-powered <a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16856167032">MSI Wind PC</a> regularly.</p>
+
+<p>It's great to see a re-think of MySQL going on... keeping the good, getting rid of the bad, and modularizing the stuff that people often want to do differently (authentication, for example).</p>
+
+<p>It's even better to see the group that's hacking on it.  They really have their heads on straight.</p>
+
+<h3>Unanswered Questions</h3>
+
+<p>Why is all this even necessary?  Are the "enterprise" customers and their demands taking focus away from what used to be the core use and usres of MySQL?  Is Sun hard to work with?</p>
+
+<p>It's clear that both the MySQL and InnoDB teams could be doing more to help.  But having worked at <a href="http://www.yahoo.com/">a large company</a> for long enough, I realize that things are rarely as simple as they should be.</p>
+
+<p>Will this stuff get integrated back into mainline MySQL?  Will Linux distributions like Ubuntu, Debian, and Red Hat pick up OurDelta builds?  What about Drizzle?</p>
+
+<p>Will Drizzle hit its target and be the sleek and lean database kernel that MySQL once could have been?</p>
+
+<p>Hard to say.</p>
+
+<p>It's hard to guess what the future holds and too easy to play armchair quarterback about the work of others.  But these are question worth wondering about a bit.</p>
+
+<h3>What's it all mean?</h3>
+
+<p>Nowadays MySQL has a much slower release cycle that it used to.  It's still available in "commecial" and free ("community") releases.  There's still a company behind it--a much larger one in fact.  But one that also has a vested interest in showing how it works better on their storage appliances or 256 "core" computers and whatnot.</p>
+
+<p>Clustering is still very niche.  Transactions are not.</p>
+
+<p>Meanwhile, all the cutting edge stuff (at least from the point of view of scaling) is happening outside Sun/MySQL and being integrated by OurDelta and even Drizzle.  The OutDelta builds are gaining steam quickly and Drizzle is shaping up.</p>
+
+<p>Heck, I'm hoping to get an OurDelta box or two on-line at work sometime soon.  And I'd like to put a Drizzle node up too.  I want to see how the InnoDB patches help and also play with the InnoDB plug-in (and its page compression).</p>
+
+<p>The next few years are proving to be far more interesting than I might have expected from a project and technology that looked like was on a track straight for Open Source maturity.</p>
+
+<p>And you know what?  I like it.</p> <p>(<a href="http://jeremy.zawodny.com/blog/archives/010774.html#comments">comments</a>)</p><img src="http://feeds.feedburner.com/~r/jzawodn/rss2/~4/478523237" height="1" width="1"/>]]></content:encoded>
+      <dc:subject>MySQL</dc:subject>
+      <dc:date>2008-12-08T07:02:50-08:00</dc:date>
+    <feedburner:origLink>http://jeremy.zawodny.com/blog/archives/010774.html</feedburner:origLink></item>
+    <item>
+      <title>My Dumb Cat Video</title>
+      <link>http://feeds.feedburner.com/~r/jzawodn/rss2/~3/475800801/010758.html</link>
+      <description><![CDATA[<p>It's Friday and this is the Internet, so I present to you <a href="http://www.youtube.com/watch?v=e7a1wW6-ydI">Cats Eating Chicken</a>, or "My Dumb Cat Video" (embedded below too).</p>
+
+<p><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/e7a1wW6-ydI&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/e7a1wW6-ydI&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object></p>
+
+<p>The background is that we had a bit of leftover grilled chicken the other night and decided to bust it up and feed it to the cats.  Amusingly, they <em>all</em> got together to partake of the feast, but a couple of them got curious about the camera too.</p>
+
+<p>Both Timmy (white and grey) and Thunder (mostly grey) give the camera a sniff or two.  My boys (Barnes and Noble) remained single-mindedly devoted to devouring the meat.</p>
+
+<p>Anyway, we found it rather amusing.</p>
+
+<p>Have a good weekend...</p>  <p>(<a href="http://jeremy.zawodny.com/blog/archives/010758.html#comments">comments</a>)</p>]]></description>
+      <guid isPermaLink="false">10758@http://jeremy.zawodny.com/blog/</guid>
+      <content:encoded><![CDATA[<p>It's Friday and this is the Internet, so I present to you <a href="http://www.youtube.com/watch?v=e7a1wW6-ydI">Cats Eating Chicken</a>, or "My Dumb Cat Video" (embedded below too).</p>
+
+<p><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/e7a1wW6-ydI&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/e7a1wW6-ydI&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object></p>
+
+<p>The background is that we had a bit of leftover grilled chicken the other night and decided to bust it up and feed it to the cats.  Amusingly, they <em>all</em> got together to partake of the feast, but a couple of them got curious about the camera too.</p>
+
+<p>Both Timmy (white and grey) and Thunder (mostly grey) give the camera a sniff or two.  My boys (Barnes and Noble) remained single-mindedly devoted to devouring the meat.</p>
+
+<p>Anyway, we found it rather amusing.</p>
+
+<p>Have a good weekend...</p> <p>(<a href="http://jeremy.zawodny.com/blog/archives/010758.html#comments">comments</a>)</p><img src="http://feeds.feedburner.com/~r/jzawodn/rss2/~4/475800801" height="1" width="1"/>]]></content:encoded>
+      <dc:subject>Personal</dc:subject>
+      <dc:date>2008-12-05T07:43:53-08:00</dc:date>
+    <feedburner:origLink>http://jeremy.zawodny.com/blog/archives/010758.html</feedburner:origLink></item>
+    <item>
+      <title>gzip and hard links.  I don't get it.</title>
+      <link>http://feeds.feedburner.com/~r/jzawodn/rss2/~3/474117371/010745.html</link>
+      <description><![CDATA[<p>I recently was looking to make compressed backups of some files that
+exist in a tree that's actually a set of hard links
+(<a href="http://www.rsnapshot.org/">rsnapshot</a>
+or <a href="http://web.chad.org/projects/rsnap/">rsnap</a> style) to a
+canonical set of files.</p>
+
+<p>In other words, I have a <strong>data</strong> directory and
+a <strong>data.previous</strong> directory.  I would like to make a
+backup of the stuff in <strong>data.previous</strong>, most of the
+files being unchanged from <strong>data</strong>.  And I'd like to do
+this without using lots of disk space.</p>
+
+<p>The funny thing is that <a href="http://www.gzip.org/">gzip</a> is
+weird about hard links.  If you try to gzip a file whose link count is
+greater than one, it complains.</p>
+
+<p>I was puzzled by this and started to wonder if it actually over-writes
+the original input file instead of simply unlinking it when it is done
+reading it and generating the compressed version.</p>
+
+<p>So I did a little experiment.</p>
+
+<p>First I create a file with two links to it.</p>
+
+<pre>
+/tmp/gz$ touch a
+/tmp/gz$ ln a b
+</pre>
+
+<p>Then I check to ensure they have the same inode.</p>
+
+<pre>
+/tmp/gz$ ls -li a b
+5152839 -rw-r--r-- 2 jzawodn jzawodn 0 2008-12-03 15:38 a
+5152839 -rw-r--r-- 2 jzawodn jzawodn 0 2008-12-03 15:38 b
+</pre>
+
+<p>They do.  So I compress one of them.</p>
+
+<pre>
+/tmp/gz$ gzip a
+gzip: a has 1 other link  -- unchanged
+</pre>
+
+<p>And witness the complaint.  The gzip man page says I can force it with
+the "-f" argument, so I do.</p>
+
+<pre>
+/tmp/gz$ gzip -f a
+</pre>
+
+<p>And, as I'd expect, the new file doesn't replaced the old file.  It
+gets a new inode instead.</p>
+
+<pre>
+/tmp/gz$ ls -li a.gz b
+5152840 -rw-r--r-- 1 jzawodn jzawodn 22 2008-12-03 15:38 a.gz
+5152839 -rw-r--r-- 1 jzawodn jzawodn  0 2008-12-03 15:38 b
+</pre>
+
+<p>This leads me to believe that the gzip error/warning message
+is <em>really</em> trying to say something like:</p>
+
+<pre>
+gzip: a has 1 other link and compressing it will save no space
+</pre>
+
+<p>But I still don't see the danger.  What can't that simply be an
+informational message?  After all, you still need enough space to
+store the original and compressed versions since the original (in the
+normal case) exists until it is done writing the compressed version
+anyway.  (I checked the source code later.)</p>
+
+<p>So what's the rationale here?  I don't get it.</p>  <p>(<a href="http://jeremy.zawodny.com/blog/archives/010745.html#comments">comments</a>)</p>]]></description>
+      <guid isPermaLink="false">10745@http://jeremy.zawodny.com/blog/</guid>
+      <content:encoded><![CDATA[<p>I recently was looking to make compressed backups of some files that
+exist in a tree that's actually a set of hard links
+(<a href="http://www.rsnapshot.org/">rsnapshot</a>
+or <a href="http://web.chad.org/projects/rsnap/">rsnap</a> style) to a
+canonical set of files.</p>
+
+<p>In other words, I have a <strong>data</strong> directory and
+a <strong>data.previous</strong> directory.  I would like to make a
+backup of the stuff in <strong>data.previous</strong>, most of the
+files being unchanged from <strong>data</strong>.  And I'd like to do
+this without using lots of disk space.</p>
+
+<p>The funny thing is that <a href="http://www.gzip.org/">gzip</a> is
+weird about hard links.  If you try to gzip a file whose link count is
+greater than one, it complains.</p>
+
+<p>I was puzzled by this and started to wonder if it actually over-writes
+the original input file instead of simply unlinking it when it is done
+reading it and generating the compressed version.</p>
+
+<p>So I did a little experiment.</p>
+
+<p>First I create a file with two links to it.</p>
+
+<pre>
+/tmp/gz$ touch a
+/tmp/gz$ ln a b
+</pre>
+
+<p>Then I check to ensure they have the same inode.</p>
+
+<pre>
+/tmp/gz$ ls -li a b
+5152839 -rw-r--r-- 2 jzawodn jzawodn 0 2008-12-03 15:38 a
+5152839 -rw-r--r-- 2 jzawodn jzawodn 0 2008-12-03 15:38 b
+</pre>
+
+<p>They do.  So I compress one of them.</p>
+
+<pre>
+/tmp/gz$ gzip a
+gzip: a has 1 other link  -- unchanged
+</pre>
+
+<p>And witness the complaint.  The gzip man page says I can force it with
+the "-f" argument, so I do.</p>
+
+<pre>
+/tmp/gz$ gzip -f a
+</pre>
+
+<p>And, as I'd expect, the new file doesn't replaced the old file.  It
+gets a new inode instead.</p>
+
+<pre>
+/tmp/gz$ ls -li a.gz b
+5152840 -rw-r--r-- 1 jzawodn jzawodn 22 2008-12-03 15:38 a.gz
+5152839 -rw-r--r-- 1 jzawodn jzawodn  0 2008-12-03 15:38 b
+</pre>
+
+<p>This leads me to believe that the gzip error/warning message
+is <em>really</em> trying to say something like:</p>
+
+<pre>
+gzip: a has 1 other link and compressing it will save no space
+</pre>
+
+<p>But I still don't see the danger.  What can't that simply be an
+informational message?  After all, you still need enough space to
+store the original and compressed versions since the original (in the
+normal case) exists until it is done writing the compressed version
+anyway.  (I checked the source code later.)</p>
+
+<p>So what's the rationale here?  I don't get it.</p> <p>(<a href="http://jeremy.zawodny.com/blog/archives/010745.html#comments">comments</a>)</p><img src="http://feeds.feedburner.com/~r/jzawodn/rss2/~4/474117371" height="1" width="1"/>]]></content:encoded>
+      <dc:subject>software</dc:subject>
+      <dc:date>2008-12-03T15:51:29-08:00</dc:date>
+    <feedburner:origLink>http://jeremy.zawodny.com/blog/archives/010745.html</feedburner:origLink></item>
+    <item>
+      <title>Opa! is Good Greek  Food in Willow Glen</title>
+      <link>http://feeds.feedburner.com/~r/jzawodn/rss2/~3/462965261/010720.html</link>
+      <description><![CDATA[<p>A month or so ago, the long under-construction <a href="http://www.opawillowglen.com/">Opa!</a> opened its doors on Lincoln Ave in downtown Willow Glen.  Wanting to try it for a while, we walked down on Friday night for dinner.  And we were not disappointed.</p>
+
+<h3>The Good</h3>
+
+<p><a href="http://www.opaauthenticgreek.com/files/OPA-Menu-FINAL.pdf">The menu</a> is straightforward and has a good variety of Greek food.  We ordered the Keftedes (Greek Meatballs) as an appetizer.  The dish consisted of two well prepared meatballs and an excellent sauce.</p>
+
+<p>For the main courses, we selected a Beef Souvlaki Pita (hers) and Seafood Souvlaki (mine).  Both came with the most excellent Opa! Fries.  (Think: garlic fries with a twist.)  The food came in a reasonable amount of time and our waitress was very friendly and helpful.  It was very tasty and portions were not excessively large either.</p>
+
+<p>Their drink menu contains a selection of beers and a good selection of Greek wines as well.  The wine we sampled was quite good and is apparently available at <a href="http://www.costco.com/">Costco</a>.  Needless to say, we're going to have to verify that for ourselves. ;-)</p>
+
+<p>The interior is well decorated.  I especially like the large TV monitor that shows what songs are playing over the sound system.</p>
+
+<p>Pricing was reasonable.  Dinner for two with drinks, an appetizer, and desert (Baklava!) was about $50.  Not the sort of thing we do often, but definitely not out of line with other favorite eating establishments.</p>
+
+<h3>The Bad</h3>
+
+<p>Opa! is a small sit down restaurant with tables for 2 and 4 (mostly) that also handles to go orders.  It's often very full and could definitely benefit from more space inside.  As a result, the tables are fairly close together and the waitresses occasionally bump into customers.  But space isn't easy to come by in Willow Glen's downtown.</p>
+
+<h3>More</h3>
+
+<p>Opa! has <a href="http://www.yelp.com/biz/opa-san-jose">over 60 ratings and reviews on Yelp</a> and is also <a href="http://willowglen.ning.com/forum/topics/whats-the-big-draw-at-opa">discussed a bit on Willow Glen 2.0</a>.</p>
+
+<p>If you're looking for good Greek food in the area, I'd highly recommend giving Opa! a try.</p>  <p>(<a href="http://jeremy.zawodny.com/blog/archives/010720.html#comments">comments</a>)</p>]]></description>
+      <guid isPermaLink="false">10720@http://jeremy.zawodny.com/blog/</guid>
+      <content:encoded><![CDATA[<p>A month or so ago, the long under-construction <a href="http://www.opawillowglen.com/">Opa!</a> opened its doors on Lincoln Ave in downtown Willow Glen.  Wanting to try it for a while, we walked down on Friday night for dinner.  And we were not disappointed.</p>
+
+<h3>The Good</h3>
+
+<p><a href="http://www.opaauthenticgreek.com/files/OPA-Menu-FINAL.pdf">The menu</a> is straightforward and has a good variety of Greek food.  We ordered the Keftedes (Greek Meatballs) as an appetizer.  The dish consisted of two well prepared meatballs and an excellent sauce.</p>
+
+<p>For the main courses, we selected a Beef Souvlaki Pita (hers) and Seafood Souvlaki (mine).  Both came with the most excellent Opa! Fries.  (Think: garlic fries with a twist.)  The food came in a reasonable amount of time and our waitress was very friendly and helpful.  It was very tasty and portions were not excessively large either.</p>
+
+<p>Their drink menu contains a selection of beers and a good selection of Greek wines as well.  The wine we sampled was quite good and is apparently available at <a href="http://www.costco.com/">Costco</a>.  Needless to say, we're going to have to verify that for ourselves. ;-)</p>
+
+<p>The interior is well decorated.  I especially like the large TV monitor that shows what songs are playing over the sound system.</p>
+
+<p>Pricing was reasonable.  Dinner for two with drinks, an appetizer, and desert (Baklava!) was about $50.  Not the sort of thing we do often, but definitely not out of line with other favorite eating establishments.</p>
+
+<h3>The Bad</h3>
+
+<p>Opa! is a small sit down restaurant with tables for 2 and 4 (mostly) that also handles to go orders.  It's often very full and could definitely benefit from more space inside.  As a result, the tables are fairly close together and the waitresses occasionally bump into customers.  But space isn't easy to come by in Willow Glen's downtown.</p>
+
+<h3>More</h3>
+
+<p>Opa! has <a href="http://www.yelp.com/biz/opa-san-jose">over 60 ratings and reviews on Yelp</a> and is also <a href="http://willowglen.ning.com/forum/topics/whats-the-big-draw-at-opa">discussed a bit on Willow Glen 2.0</a>.</p>
+
+<p>If you're looking for good Greek food in the area, I'd highly recommend giving Opa! a try.</p> <p>(<a href="http://jeremy.zawodny.com/blog/archives/010720.html#comments">comments</a>)</p><img src="http://feeds.feedburner.com/~r/jzawodn/rss2/~4/462965261" height="1" width="1"/>]]></content:encoded>
+      <dc:subject>Random</dc:subject>
+      <dc:date>2008-11-23T08:52:03-08:00</dc:date>
+    <feedburner:origLink>http://jeremy.zawodny.com/blog/archives/010720.html</feedburner:origLink></item>
+    <item>
+      <title>Bash Trick: Watching Multiple Background Jobs</title>
+      <link>http://feeds.feedburner.com/~r/jzawodn/rss2/~3/460860986/010717.html</link>
+      <description><![CDATA[<p>I recently had a need to add some error checking to a <a href="http://www.gnu.org/software/bash/">bash</a> script that runs multiple copies of a Perl script in parallel to better utilize a multi-core server.  I wanted a way to run these four processes in the background and gather up their exit values.  Then, if any of them failed, I'd prematurely exit the bash script and report the error.</p>
+
+<p>After a bit of reading bash docs, I came across some built-ins that I hadn't previously used or even seen.  First, I'll show you the code:</p>
+
+<h3>wait.sh</h3>
+
+<p><a hef="http://gist.github.com/raw/27452">This is the bash script</a> that runs the parallel processes and gathers up the exit values.</p>
+
+<script src="http://gist.github.com/27452.js"></script>
+<noscript>
+#!/bin/bash
+
+FAIL=0
+
+echo "starting"
+
+./sleeper 2 0 &
+./sleeper 2 1 &
+./sleeper 3 0 &
+./sleeper 2 0 &
+
+for job in `jobs -p`
+do
+    echo $job
+    wait $job || let "FAIL+=1"
+done
+
+echo $FAIL
+
+if [ "$FAIL" == "0" ];
+then
+    echo "YAY!"
+else
+    echo "FAIL! ($FAIL)"
+fi
+</noscript>
+
+<h3>sleeper</h3>
+
+<p>And <a href="http://gist.github.com/27454">here's the Perl script</a> that I wrote in order to test the functioning of <tt>wait.sh</tt>.  It accepts to arguments.  The first is the number of seconds to sleep (to simulate the delay associated with doing work) and the second is the exit value it should use (any non-zero value indicates a failure).</p>
+
+<script src="http://gist.github.com/27454.js"></script>
+<noscript>
+#!/usr/bin/perl -w
+
+use strict;
+
+my $time = $ARGV[0] || 1;
+my $exit = $ARGV[1] || 0;
+
+sleep $time;
+exit  $exit;
+</noscript>
+
+<h3>Discussion</h3>
+
+<p>New to me was the use of <em>let</em> to do math on a variable so that I can count up the number of failures.  Is there a better way?  There's no native ++ operator in bash.  Similarly, using <em>jobs</em> to get a list of pids to <em>wait</em> on provided to be a very useful idiom.</p>
+
+<p>The code is straightforward and works for my purposes.  But since 99% of my time is spent in Perl rather than bash, I wonder what I could have done differently and/or better.  Feedback welcome.</p>
+
+<p>And, if this is at all useful to you, feel free to take it and run...</p>
+
+<p>Finally, I'm starting to really dig <a href="http://gist.github.com/">gist.github</a> for showing off bits of code.  It's good stuff.</p>  <p>(<a href="http://jeremy.zawodny.com/blog/archives/010717.html#comments">comments</a>)</p>]]></description>
+      <guid isPermaLink="false">10717@http://jeremy.zawodny.com/blog/</guid>
+      <content:encoded><![CDATA[<p>I recently had a need to add some error checking to a <a href="http://www.gnu.org/software/bash/">bash</a> script that runs multiple copies of a Perl script in parallel to better utilize a multi-core server.  I wanted a way to run these four processes in the background and gather up their exit values.  Then, if any of them failed, I'd prematurely exit the bash script and report the error.</p>
+
+<p>After a bit of reading bash docs, I came across some built-ins that I hadn't previously used or even seen.  First, I'll show you the code:</p>
+
+<h3>wait.sh</h3>
+
+<p><a hef="http://gist.github.com/raw/27452">This is the bash script</a> that runs the parallel processes and gathers up the exit values.</p>
+
+<script src="http://gist.github.com/27452.js"></script>
+<noscript>
+#!/bin/bash
+
+FAIL=0
+
+echo "starting"
+
+./sleeper 2 0 &
+./sleeper 2 1 &
+./sleeper 3 0 &
+./sleeper 2 0 &
+
+for job in `jobs -p`
+do
+    echo $job
+    wait $job || let "FAIL+=1"
+done
+
+echo $FAIL
+
+if [ "$FAIL" == "0" ];
+then
+    echo "YAY!"
+else
+    echo "FAIL! ($FAIL)"
+fi
+</noscript>
+
+<h3>sleeper</h3>
+
+<p>And <a href="http://gist.github.com/27454">here's the Perl script</a> that I wrote in order to test the functioning of <tt>wait.sh</tt>.  It accepts to arguments.  The first is the number of seconds to sleep (to simulate the delay associated with doing work) and the second is the exit value it should use (any non-zero value indicates a failure).</p>
+
+<script src="http://gist.github.com/27454.js"></script>
+<noscript>
+#!/usr/bin/perl -w
+
+use strict;
+
+my $time = $ARGV[0] || 1;
+my $exit = $ARGV[1] || 0;
+
+sleep $time;
+exit  $exit;
+</noscript>
+
+<h3>Discussion</h3>
+
+<p>New to me was the use of <em>let</em> to do math on a variable so that I can count up the number of failures.  Is there a better way?  There's no native ++ operator in bash.  Similarly, using <em>jobs</em> to get a list of pids to <em>wait</em> on provided to be a very useful idiom.</p>
+
+<p>The code is straightforward and works for my purposes.  But since 99% of my time is spent in Perl rather than bash, I wonder what I could have done differently and/or better.  Feedback welcome.</p>
+
+<p>And, if this is at all useful to you, feel free to take it and run...</p>
+
+<p>Finally, I'm starting to really dig <a href="http://gist.github.com/">gist.github</a> for showing off bits of code.  It's good stuff.</p> <p>(<a href="http://jeremy.zawodny.com/blog/archives/010717.html#comments">comments</a>)</p><img src="http://feeds.feedburner.com/~r/jzawodn/rss2/~4/460860986" height="1" width="1"/>]]></content:encoded>
+      <dc:subject>Perl</dc:subject>
+      <dc:date>2008-11-21T07:21:48-08:00</dc:date>
+    <feedburner:origLink>http://jeremy.zawodny.com/blog/archives/010717.html</feedburner:origLink></item>
+    <item>
+      <title>TV Watching and Happiness</title>
+      <link>http://feeds.feedburner.com/~r/jzawodn/rss2/~3/455841280/010706.html</link>
+      <description><![CDATA[<p>In one of those "well, duh!" moments the other day, I came across a headline on Slashdot that said <a href="http://science.slashdot.org/article.pl?sid=08/11/15/192222">Unhappy People Watch More TV</a>.  Given that I mostly <a href="http://jeremy.zawodny.com/blog/archives/001486.html">stopped watching TV</a> quite some time ago and consider it to be one of the more <a href="http://jeremy.zawodny.com/blog/archives/002434.html">rude devices in our culture</a>, I clicked thru to read about how others have discovered what I'd already guessed was true...</p>
+
+<blockquote>A new study by sociologists at the University of Maryland concludes that unhappy people watch more TV, while people who describe themselves as 'very happy' spend more time reading and socializing. 'TV doesn't really seem to satisfy people over the long haul the way that social involvement or reading a newspaper does,' says researcher John P. Robinson. 'It's more passive and may provide escape--especially when the news is as depressing as the economy itself.</blockquote>
+
+<p>Imagine that...  Stagnation and exposure to negative information leads to sadness.  It goes on...</p>
+
+<blockquote>The data suggest to us that the TV habit may offer short-run pleasure at the expense of long-term malaise.' Unhappy people also liked their TV more: 'What viewers seem to be saying is that while TV in general is a waste of time and not particularly enjoyable, "the shows I saw tonight were pretty good.</blockquote>
+
+<p>Another shock.  TV provides only a short-term reward (kind of like a drug hit).</p>
+
+<p>If this resonates with you a bit, or you suspect deep down that there's more going on with the influence of TV in our culture, I highly recommend reading <a href="http://www.amazon.com/Amusing-Ourselves-Death-Discourse-Business/dp/014303653X/ref=nosim/jeremydzawodny">Amusing Ourselves To Death</a> by Neil Postman if you have not already.</p>
+
+<p>It's too bad this stuff doesn't get taught in school--where, I'm told, teachers are using PowerPoint more and more.</p>
+
+<p>*sigh*</p>  <p>(<a href="http://jeremy.zawodny.com/blog/archives/010706.html#comments">comments</a>)</p>]]></description>
+      <guid isPermaLink="false">10706@http://jeremy.zawodny.com/blog/</guid>
+      <content:encoded><![CDATA[<p>In one of those "well, duh!" moments the other day, I came across a headline on Slashdot that said <a href="http://science.slashdot.org/article.pl?sid=08/11/15/192222">Unhappy People Watch More TV</a>.  Given that I mostly <a href="http://jeremy.zawodny.com/blog/archives/001486.html">stopped watching TV</a> quite some time ago and consider it to be one of the more <a href="http://jeremy.zawodny.com/blog/archives/002434.html">rude devices in our culture</a>, I clicked thru to read about how others have discovered what I'd already guessed was true...</p>
+
+<blockquote>A new study by sociologists at the University of Maryland concludes that unhappy people watch more TV, while people who describe themselves as 'very happy' spend more time reading and socializing. 'TV doesn't really seem to satisfy people over the long haul the way that social involvement or reading a newspaper does,' says researcher John P. Robinson. 'It's more passive and may provide escape--especially when the news is as depressing as the economy itself.</blockquote>
+
+<p>Imagine that...  Stagnation and exposure to negative information leads to sadness.  It goes on...</p>
+
+<blockquote>The data suggest to us that the TV habit may offer short-run pleasure at the expense of long-term malaise.' Unhappy people also liked their TV more: 'What viewers seem to be saying is that while TV in general is a waste of time and not particularly enjoyable, "the shows I saw tonight were pretty good.</blockquote>
+
+<p>Another shock.  TV provides only a short-term reward (kind of like a drug hit).</p>
+
+<p>If this resonates with you a bit, or you suspect deep down that there's more going on with the influence of TV in our culture, I highly recommend reading <a href="http://www.amazon.com/Amusing-Ourselves-Death-Discourse-Business/dp/014303653X/ref=nosim/jeremydzawodny">Amusing Ourselves To Death</a> by Neil Postman if you have not already.</p>
+
+<p>It's too bad this stuff doesn't get taught in school--where, I'm told, teachers are using PowerPoint more and more.</p>
+
+<p>*sigh*</p> <p>(<a href="http://jeremy.zawodny.com/blog/archives/010706.html#comments">comments</a>)</p><img src="http://feeds.feedburner.com/~r/jzawodn/rss2/~4/455841280" height="1" width="1"/>]]></content:encoded>
+      <dc:subject>Random</dc:subject>
+      <dc:date>2008-11-17T02:28:14-08:00</dc:date>
+    <feedburner:origLink>http://jeremy.zawodny.com/blog/archives/010706.html</feedburner:origLink></item>
+    <item>
+      <title>Asynchronous MySQL Client in Perl</title>
+      <link>http://feeds.feedburner.com/~r/jzawodn/rss2/~3/453052744/010699.html</link>
+      <description><![CDATA[<p>I recently found myself wishing for an async library for MySQL.  My goal is to be able to fire off queries to a group of federated servers in parallel and aggregate the results in my code.</p>
+
+<p>With the standard client (<a href="http://search.cpan.org/dist/DBD-mysql/">DBD::mysql</a>), I'd have to query the servers one at a time.  If there are 10 servers and each query takes 0.5 seconds, my code would stall for 5 seconds.  But by using an async library, I could fire off all the queries and fetch the results as they become available.  The overall wait time should not be much more than 0.5 seconds.</p>
+
+<p>While I found little evidence of anyone doing this in practice, my search led me to the <a href="http://code.google.com/p/perl-mysql-async/">perl-mysql-async</a> project on Google Code.  It's a pure-Perl implementation of the MySQL 4.1 protocol and an asyncronous client that uses <a href="http://search.cpan.org/~vparseval/Event-Lib-1.03/lib/Event/Lib.pm">Event::Lib</a> (and <a href="http://monkey.org/~provos/libevent/">libevent</a>) under the hood.</p>
+
+<p>The code contains little in the way of documentation or examples, aside from the simple bundled test script.  After a bit of mucking around with it, I managed to cobble together a working example.  It looks like this:</p>
+
+<script src="http://gist.github.com/24692.js"></script>
+<noscript>
+<pre>
+#!/usr/bin/perl -w
+use strict;
+
+use Event::Lib;
+use Data::Dumper;
+
+use MysqlAsync;
+use AsyncCaller qw/schedule/;
+
+$Data::Dumper::Terse = 1;
+
+$|=1;
+
+my $expected_results = 25;
+my $results = 0;
+
+my $dbh;
+
+for (1..$expected_results) {
+        # my $secs  = int(rand(5));
+        my $secs  = rand(5);
+        my $query = qq[select sleep($secs)];
+        schedule(0.001, sub{
+            my $dbh = MysqlAsync->new(
+            database => {
+                host => "localhost",
+                port => 3306,
+                database => "mysql",
+                passwd => "xxxxxx",
+                user => "root",
+            },
+            connect_timeout => 1,
+            max_requests    => 25,
+            db_timeout      => 10,
+            # logfile         => "/tmp/mysqllog",
+        );
+
+        $dbh->get_array($query, \&result );
+        });
+}
+
+event_mainloop();
+
+exit;
+
+sub result
+{
+    my ($result) = @_;
+    if (defined $result) {
+        print "result: " . Dumper($result);
+    } else {
+        print "error: " . Dumper($dbh->error());
+    }
+    $results++;
+
+    # all done?
+    if ($results == $expected_results) {
+        exit;
+    }
+}
+
+__END__
+</pre>
+</noscript>
+
+<p>Sure enough, that code runs in just a bit more time than the longest query it executes, rather than the sum of all the query times.</p>
+
+<p>What still surprises me is that this code doesn't appear to get a lot of use (or at least discussion) in the real world.  In the PHP world, the <a href="http://dev.mysql.com/downloads/connector/php-mysqlnd/">mysqlnd</a> driver offers async queries.</p>
+
+<p>So count this as my contribution to demonstrating that Perl can do async MySQL queries too.</p>  <p>(<a href="http://jeremy.zawodny.com/blog/archives/010699.html#comments">comments</a>)</p>]]></description>
+      <guid isPermaLink="false">10699@http://jeremy.zawodny.com/blog/</guid>
+      <content:encoded><![CDATA[<p>I recently found myself wishing for an async library for MySQL.  My goal is to be able to fire off queries to a group of federated servers in parallel and aggregate the results in my code.</p>
+
+<p>With the standard client (<a href="http://search.cpan.org/dist/DBD-mysql/">DBD::mysql</a>), I'd have to query the servers one at a time.  If there are 10 servers and each query takes 0.5 seconds, my code would stall for 5 seconds.  But by using an async library, I could fire off all the queries and fetch the results as they become available.  The overall wait time should not be much more than 0.5 seconds.</p>
+
+<p>While I found little evidence of anyone doing this in practice, my search led me to the <a href="http://code.google.com/p/perl-mysql-async/">perl-mysql-async</a> project on Google Code.  It's a pure-Perl implementation of the MySQL 4.1 protocol and an asyncronous client that uses <a href="http://search.cpan.org/~vparseval/Event-Lib-1.03/lib/Event/Lib.pm">Event::Lib</a> (and <a href="http://monkey.org/~provos/libevent/">libevent</a>) under the hood.</p>
+
+<p>The code contains little in the way of documentation or examples, aside from the simple bundled test script.  After a bit of mucking around with it, I managed to cobble together a working example.  It looks like this:</p>
+
+<script src="http://gist.github.com/24692.js"></script>
+<noscript>
+<pre>
+#!/usr/bin/perl -w
+use strict;
+
+use Event::Lib;
+use Data::Dumper;
+
+use MysqlAsync;
+use AsyncCaller qw/schedule/;
+
+$Data::Dumper::Terse = 1;
+
+$|=1;
+
+my $expected_results = 25;
+my $results = 0;
+
+my $dbh;
+
+for (1..$expected_results) {
+        # my $secs  = int(rand(5));
+        my $secs  = rand(5);
+        my $query = qq[select sleep($secs)];
+        schedule(0.001, sub{
+            my $dbh = MysqlAsync->new(
+            database => {
+                host => "localhost",
+                port => 3306,
+                database => "mysql",
+                passwd => "xxxxxx",
+                user => "root",
+            },
+            connect_timeout => 1,
+            max_requests    => 25,
+            db_timeout      => 10,
+            # logfile         => "/tmp/mysqllog",
+        );
+
+        $dbh->get_array($query, \&result );
+        });
+}
+
+event_mainloop();
+
+exit;
+
+sub result
+{
+    my ($result) = @_;
+    if (defined $result) {
+        print "result: " . Dumper($result);
+    } else {
+        print "error: " . Dumper($dbh->error());
+    }
+    $results++;
+
+    # all done?
+    if ($results == $expected_results) {
+        exit;
+    }
+}
+
+__END__
+</pre>
+</noscript>
+
+<p>Sure enough, that code runs in just a bit more time than the longest query it executes, rather than the sum of all the query times.</p>
+
+<p>What still surprises me is that this code doesn't appear to get a lot of use (or at least discussion) in the real world.  In the PHP world, the <a href="http://dev.mysql.com/downloads/connector/php-mysqlnd/">mysqlnd</a> driver offers async queries.</p>
+
+<p>So count this as my contribution to demonstrating that Perl can do async MySQL queries too.</p> <p>(<a href="http://jeremy.zawodny.com/blog/archives/010699.html#comments">comments</a>)</p><img src="http://feeds.feedburner.com/~r/jzawodn/rss2/~4/453052744" height="1" width="1"/>]]></content:encoded>
+      <dc:subject>Perl</dc:subject>
+      <dc:date>2008-11-14T07:47:52-08:00</dc:date>
+    <feedburner:origLink>http://jeremy.zawodny.com/blog/archives/010699.html</feedburner:origLink></item>
+    <item>
+      <title>Post-Election Thoughts: Equal but Not</title>
+      <link>http://feeds.feedburner.com/~r/jzawodn/rss2/~3/451885595/010692.html</link>
+      <description><![CDATA[<p>I'm happy that Barack Obama won the election.  I think it's time to stir things up a bit.</p>
+
+<p>What really bothers me is that fact that we still don't have equal voting in this country.  We certainly have the technology to share vote counts quickly and efficiently, so who not just do that?  Why screw around with an electoral college anymore?</p>
+
+<p>It seems disingenuous at best and an outright lie at worst to call Obama's victory a "landslide" when the actual percentages of the popular vote (the only vote that should count) were so close.  Yet the large difference in electoral vote counts is supposed to make us believe that something very different happened.  And the media was more than happy to play along with that deception (what a surprise, huh?).</p>
+
+<p>It should not be possible to lose by having <em>more</em> votes than your opponent, but <a href="http://en.wikipedia.org/wiki/Image:PopWinnerLosesElecVote.png">it is</a>.  Why does nobody seem to care?  (See: <a href="http://en.wikipedia.org/wiki/U.S._Electoral_College">electoral college</a>, specifically <a href="http://en.wikipedia.org/wiki/U.S._Electoral_College#Contemporary_conflict_over_the_Electoral_College">this</a>.)</p>
+
+<p>Of all the countries that have tried to copy our model of democracy in the last 200 years or so, can you name a single one that adopted the electoral college as a piece of their political infrastructure?</p>
+
+<p>I'd love to have my vote count as much as everyone in all the other states.</p>
+
+<p>Why is that so hard?</p>  <p>(<a href="http://jeremy.zawodny.com/blog/archives/010692.html#comments">comments</a>)</p>]]></description>
+      <guid isPermaLink="false">10692@http://jeremy.zawodny.com/blog/</guid>
+      <content:encoded><![CDATA[<p>I'm happy that Barack Obama won the election.  I think it's time to stir things up a bit.</p>
+
+<p>What really bothers me is that fact that we still don't have equal voting in this country.  We certainly have the technology to share vote counts quickly and efficiently, so who not just do that?  Why screw around with an electoral college anymore?</p>
+
+<p>It seems disingenuous at best and an outright lie at worst to call Obama's victory a "landslide" when the actual percentages of the popular vote (the only vote that should count) were so close.  Yet the large difference in electoral vote counts is supposed to make us believe that something very different happened.  And the media was more than happy to play along with that deception (what a surprise, huh?).</p>
+
+<p>It should not be possible to lose by having <em>more</em> votes than your opponent, but <a href="http://en.wikipedia.org/wiki/Image:PopWinnerLosesElecVote.png">it is</a>.  Why does nobody seem to care?  (See: <a href="http://en.wikipedia.org/wiki/U.S._Electoral_College">electoral college</a>, specifically <a href="http://en.wikipedia.org/wiki/U.S._Electoral_College#Contemporary_conflict_over_the_Electoral_College">this</a>.)</p>
+
+<p>Of all the countries that have tried to copy our model of democracy in the last 200 years or so, can you name a single one that adopted the electoral college as a piece of their political infrastructure?</p>
+
+<p>I'd love to have my vote count as much as everyone in all the other states.</p>
+
+<p>Why is that so hard?</p> <p>(<a href="http://jeremy.zawodny.com/blog/archives/010692.html#comments">comments</a>)</p><img src="http://feeds.feedburner.com/~r/jzawodn/rss2/~4/451885595" height="1" width="1"/>]]></content:encoded>
+      <dc:subject>Random</dc:subject>
+      <dc:date>2008-11-13T07:18:40-08:00</dc:date>
+    <feedburner:origLink>http://jeremy.zawodny.com/blog/archives/010692.html</feedburner:origLink></item>
+    <item>
+      <title>Kick Ass Fonts in Ubuntu: 3 Easy Steps</title>
+      <link>http://feeds.feedburner.com/~r/jzawodn/rss2/~3/428682906/010655.html</link>
+      <description><![CDATA[<p>A few days ago I made yet another tweak to my Ubuntu laptop to make the fonts look a little better.  The result is that I'm now quite happy--impressed even.  Here are the three things I've done to make my day-to-day work easy on the eye.</p>
+
+<p>First, enable subpixel smoothing in the <strong>System &gt; Appearance</strong> control panel.</p>
+
+<p><a href="http://www.flickr.com/photos/jzawodn/2964711320/" title="Ubutnu Font Rendering Settings by jzawodn, on Flickr"><img src="http://farm4.static.flickr.com/3161/2964711320_3840c96d61_o.jpg" width="612" height="547" alt="Ubutnu Font Rendering Settings" border="0" /></a></p>
+
+<p>For a long time that's all I had done was was reasonably happy.  Things looked okay but not great.  But I used <a href="http://www.gnu.org/software/emacs/">GNU Emacs</a> for most of my coding and wanted fonts there that looked at good as those in <a href="http://en.wikipedia.org/wiki/GNOME_Terminal">gnome terminal</a>.</p>
+
+<p>That led me to the second tip: install <a href="http://emacs.orebokech.com/">emacs-snapshot</a> and use the GTK version.  Then you can add this to your <tt>~/.Xresources</tt> file:</p>
+
+<pre>
+Emacs.font: Monospace-10
+</pre>
+
+<p>And bingo!  The same font that's in your terminal is in Emacs.</p>
+
+<p>That made me happy in Emacs, but my <a href="http://www.mozilla.com/en-US/firefox/">Firefox</a> fonts were still a bit sucky.  So when I read <a href="http://tombuntu.com/index.php/2008/10/15/tweak-your-font-rendering-for-better-appearance/">Tweak Your Font Rendering for Better Appearance</a> in Tombuntu, I had to give it a try.</p>
+
+<p>I created a <tt>~/.fonts.conf</tt> file and added this to it:</p>
+
+<pre>
+&lt;?xml version="1.0"?&gt;
+&lt;!DOCTYPE fontconfig SYSTEM "fonts.dtd"&gt;
+&lt;fontconfig&gt;
+  &lt;match target="font"&gt;
+    &lt;edit name="autohint" mode="assign"&gt;
+      &lt;bool&gt;true&lt;/bool&gt;
+    &lt;/edit&gt;
+  &lt;/match&gt;
+&lt;/fontconfig&gt;
+</pre>
+
+<p>I logged out and back in and suddnely found myself staring at fonts in Firefox that looked as good as I've seen in Safari on a Mac.</p>
+
+<p>That's all there was to it for me: subpixel rendering, emacs-snapshot, and enabling hinting via a <tt>.fonts.conf</tt> file.</p>
+
+<p>It's worth noting that <a href="http://rewind.themasterplan.in/2007/07/15/sexy-smooth-fonts-on-kubuntu/">you can go even farther</a> with the advanced font settings, but I really haven't needed to go that far yet.</p>  <p>(<a href="http://jeremy.zawodny.com/blog/archives/010655.html#comments">comments</a>)</p>]]></description>
+      <guid isPermaLink="false">10655@http://jeremy.zawodny.com/blog/</guid>
+      <content:encoded><![CDATA[<p>A few days ago I made yet another tweak to my Ubuntu laptop to make the fonts look a little better.  The result is that I'm now quite happy--impressed even.  Here are the three things I've done to make my day-to-day work easy on the eye.</p>
+
+<p>First, enable subpixel smoothing in the <strong>System &gt; Appearance</strong> control panel.</p>
+
+<p><a href="http://www.flickr.com/photos/jzawodn/2964711320/" title="Ubutnu Font Rendering Settings by jzawodn, on Flickr"><img src="http://farm4.static.flickr.com/3161/2964711320_3840c96d61_o.jpg" width="612" height="547" alt="Ubutnu Font Rendering Settings" border="0" /></a></p>
+
+<p>For a long time that's all I had done was was reasonably happy.  Things looked okay but not great.  But I used <a href="http://www.gnu.org/software/emacs/">GNU Emacs</a> for most of my coding and wanted fonts there that looked at good as those in <a href="http://en.wikipedia.org/wiki/GNOME_Terminal">gnome terminal</a>.</p>
+
+<p>That led me to the second tip: install <a href="http://emacs.orebokech.com/">emacs-snapshot</a> and use the GTK version.  Then you can add this to your <tt>~/.Xresources</tt> file:</p>
+
+<pre>
+Emacs.font: Monospace-10
+</pre>
+
+<p>And bingo!  The same font that's in your terminal is in Emacs.</p>
+
+<p>That made me happy in Emacs, but my <a href="http://www.mozilla.com/en-US/firefox/">Firefox</a> fonts were still a bit sucky.  So when I read <a href="http://tombuntu.com/index.php/2008/10/15/tweak-your-font-rendering-for-better-appearance/">Tweak Your Font Rendering for Better Appearance</a> in Tombuntu, I had to give it a try.</p>
+
+<p>I created a <tt>~/.fonts.conf</tt> file and added this to it:</p>
+
+<pre>
+&lt;?xml version="1.0"?&gt;
+&lt;!DOCTYPE fontconfig SYSTEM "fonts.dtd"&gt;
+&lt;fontconfig&gt;
+  &lt;match target="font"&gt;
+    &lt;edit name="autohint" mode="assign"&gt;
+      &lt;bool&gt;true&lt;/bool&gt;
+    &lt;/edit&gt;
+  &lt;/match&gt;
+&lt;/fontconfig&gt;
+</pre>
+
+<p>I logged out and back in and suddnely found myself staring at fonts in Firefox that looked as good as I've seen in Safari on a Mac.</p>
+
+<p>That's all there was to it for me: subpixel rendering, emacs-snapshot, and enabling hinting via a <tt>.fonts.conf</tt> file.</p>
+
+<p>It's worth noting that <a href="http://rewind.themasterplan.in/2007/07/15/sexy-smooth-fonts-on-kubuntu/">you can go even farther</a> with the advanced font settings, but I really haven't needed to go that far yet.</p> <p>(<a href="http://jeremy.zawodny.com/blog/archives/010655.html#comments">comments</a>)</p><img src="http://feeds.feedburner.com/~r/jzawodn/rss2/~4/428682906" height="1" width="1"/>]]></content:encoded>
+      <dc:subject>Random</dc:subject>
+      <dc:date>2008-10-22T08:57:06-08:00</dc:date>
+    <feedburner:origLink>http://jeremy.zawodny.com/blog/archives/010655.html</feedburner:origLink></item>
+    <item>
+      <title>Random Updates</title>
+      <link>http://feeds.feedburner.com/~r/jzawodn/rss2/~3/428158770/010653.html</link>
+      <description><![CDATA[<p>I've got several random things to say to the interwebs but none of them merit a blog post individually...</p>
+
+<p>First off, I love data.  But <a href="http://twitter.com/jzawodn/statuses/969822788">I hate</a> the fact that the spreadsheet in <a href="http://www.openoffice.org/">OpenOffice</a> 2.x and <a href="http://www.gnome.org/projects/gnumeric/">Gnumeric</a> both have row limits of 65,536.  I don't know who missed the boat on 32 and 64 bit CPUs, but it's rather annoying!  And, yes, twitter people, I know that 65,536 is a 16 bit limit--not 8.  I was <a href="http://twitter.com/jzawodn/statuses/969831583">trying to make a point</a>.</p>
+
+<p>Secondly, <a href="http://www.techmeme.com/081021/p90#a081021p90">Yahoo can haz layoffs</a> (again).  Having lived through 3 rounds of layoffs in my 8.5 years at Yahoo, I know what that feels like. :-(  If you're a kick-ass Perl hacker or an excellent systems and network administrator who'd like to work at <a href="http://craigslist.org/">a great company in San Francisco</a>, let me know.</p>
+
+<p>Thirdly, the dumbest bugs are often the ones that have been in your code a long time and are incredibly easy to keep glossing over as you read and re-read it.</p>
+
+<p>Fourthly, <a href="http://search.cpan.org/~brocseib/Tie-Syslog-1.07/Syslog.pm">Tie::Syslog</a> is pretty handy but seems to not like being used multiple times in the same app.  Each instance seems to think that it has the same "identity."  Anyone seen that before?  I haven't dug into that yet but probably will soon.</p>
+
+<p>Finally, we're out of town for a few days while the house is being fumigated for termites.  And we brought all four cats with us.  That what I call an adventure.</p>
+
+<p>Now back to your regularly scheduled... uh, stuff.</p>  <p>(<a href="http://jeremy.zawodny.com/blog/archives/010653.html#comments">comments</a>)</p>]]></description>
+      <guid isPermaLink="false">10653@http://jeremy.zawodny.com/blog/</guid>
+      <content:encoded><![CDATA[<p>I've got several random things to say to the interwebs but none of them merit a blog post individually...</p>
+
+<p>First off, I love data.  But <a href="http://twitter.com/jzawodn/statuses/969822788">I hate</a> the fact that the spreadsheet in <a href="http://www.openoffice.org/">OpenOffice</a> 2.x and <a href="http://www.gnome.org/projects/gnumeric/">Gnumeric</a> both have row limits of 65,536.  I don't know who missed the boat on 32 and 64 bit CPUs, but it's rather annoying!  And, yes, twitter people, I know that 65,536 is a 16 bit limit--not 8.  I was <a href="http://twitter.com/jzawodn/statuses/969831583">trying to make a point</a>.</p>
+
+<p>Secondly, <a href="http://www.techmeme.com/081021/p90#a081021p90">Yahoo can haz layoffs</a> (again).  Having lived through 3 rounds of layoffs in my 8.5 years at Yahoo, I know what that feels like. :-(  If you're a kick-ass Perl hacker or an excellent systems and network administrator who'd like to work at <a href="http://craigslist.org/">a great company in San Francisco</a>, let me know.</p>
+
+<p>Thirdly, the dumbest bugs are often the ones that have been in your code a long time and are incredibly easy to keep glossing over as you read and re-read it.</p>
+
+<p>Fourthly, <a href="http://search.cpan.org/~brocseib/Tie-Syslog-1.07/Syslog.pm">Tie::Syslog</a> is pretty handy but seems to not like being used multiple times in the same app.  Each instance seems to think that it has the same "identity."  Anyone seen that before?  I haven't dug into that yet but probably will soon.</p>
+
+<p>Finally, we're out of town for a few days while the house is being fumigated for termites.  And we brought all four cats with us.  That what I call an adventure.</p>
+
+<p>Now back to your regularly scheduled... uh, stuff.</p> <p>(<a href="http://jeremy.zawodny.com/blog/archives/010653.html#comments">comments</a>)</p><img src="http://feeds.feedburner.com/~r/jzawodn/rss2/~4/428158770" height="1" width="1"/>]]></content:encoded>
+      <dc:subject>Random</dc:subject>
+      <dc:date>2008-10-21T21:01:06-08:00</dc:date>
+    <feedburner:origLink>http://jeremy.zawodny.com/blog/archives/010653.html</feedburner:origLink></item>
+
+
+  </channel>
+</rss>

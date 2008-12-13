@@ -1,0 +1,1459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="http://feeds.feedburner.com/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+  <channel>
+    <title>Nuby on Rails</title>
+    <link>http://nubyonrails.com</link>
+    <language>en-us</language>
+    <ttl>40</ttl>
+    <description>Geoffrey Grosenbach's blog.</description>
+    <image><link>http://peepcode.com</link><url>http://topfunky.com/clients/peepcode/peepcode-feedburner.png</url><title>PeepCode Screencasts</title></image><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://feeds.feedburner.com/nubyonrails" type="application/rss+xml" /><feedburner:emailServiceId>184595</feedburner:emailServiceId><feedburner:feedburnerHostname>http://www.feedburner.com</feedburner:feedburnerHostname><feedburner:browserFriendly>This is an XML content feed. It is intended to be viewed in a newsreader or syndicated to another site, subject to copyright and fair use.</feedburner:browserFriendly><item>
+      <title>Emacs? Emacs.</title>
+      <description>
+        &lt;blockquote&gt;
+        		&lt;p&gt;And with my handheld portable all-purpose lightweight doohickey I fuse thoughts and try not to be too picky. &amp;#8212;Buck65&lt;/p&gt;
+        	&lt;/blockquote&gt;
+        
+        
+        	&lt;blockquote&gt;
+        		&lt;p&gt;I&amp;#8217;m personally offended that you enjoy the software you work with ;)&amp;#8212;&lt;a href="http://twitter.com/al3x/status/1038618571"&gt;al3x&lt;/a&gt;&lt;/p&gt;
+        	&lt;/blockquote&gt;
+        
+        
+        	&lt;p&gt;A few weeks ago I decided to try out Emacs. I wasn&amp;#8217;t especially dissatisfied with TextMate but felt that I had neglected to educate myself about a major part of computer science history. Somewhat like a DJ who has never heard &lt;a href="http://en.wikipedia.org/wiki/Grandmaster_flash"&gt;Grandmaster Flash&lt;/a&gt; (who purportedly invented much of the hardware used to create music with multiple turntables). I felt that I needed to try out one of the classic text editors still used by many today.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;My history with text editors over the last 10 years goes something like:&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;BBEdit&lt;/li&gt;
+        		&lt;li&gt;vim (for about 6 months)&lt;/li&gt;
+        		&lt;li&gt;Smultron&lt;/li&gt;
+        		&lt;li&gt;TextMate&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;h3&gt;Screencast&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;I&amp;#8217;ve assembled a short screencast of my initial impressions:&lt;/p&gt;
+        
+        
+        	&lt;p&gt;&lt;a href="http://peepcode.com/system/uploads/2008/peepcode-emacs-in-5-demo.mov"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/5-minutes.png" alt="" /&gt;&lt;/a&gt;&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;Initial Impressions&lt;/h3&gt;
+        
+        
+        	&lt;h4&gt;The Good Stuff&lt;/h4&gt;
+        
+        
+        	&lt;p&gt;Here&amp;#8217;s a short list of what I&amp;#8217;m enjoying about it so far:&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;Efficiently keyboard driven. No need to use the mouse at all.&lt;/li&gt;
+        		&lt;li&gt;Window splits for viewing multiple files (and shells) at once.&lt;/li&gt;
+        		&lt;li&gt;Powerful editing.&lt;/li&gt;
+        		&lt;li&gt;The ease with which one can work with dozens of files without getting confused.&lt;/li&gt;
+        		&lt;li&gt;Super customizable.&lt;/li&gt;
+        		&lt;li&gt;Easy to keep settings, snippets, plugins, etc. synchronized between desktop and laptop with Git.&lt;/li&gt;
+        		&lt;li&gt;Quality plugins from the community.&lt;/li&gt;
+        		&lt;li&gt;The aha moment when parts of code make more sense given the fact that Emacs was used by Matz, Ryan Davis, Nathan Weizenbaum, etc. to author them.&lt;/li&gt;
+        		&lt;li&gt;That unidentifiable elitist feeling you get from using a tool that&amp;#8217;s too difficult or awkward for most people.&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;h4&gt;The Awkward Bits&lt;/h4&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;No &lt;span class="caps"&gt;GUI&lt;/span&gt; for preferences.&lt;/li&gt;
+        		&lt;li&gt;Mac &lt;span class="caps"&gt;OS X&lt;/span&gt; integration is just barely good enough to get by. For example, I can&amp;#8217;t get &amp;#8220;Hide Others&amp;#8221; to work except by using the mouse.&lt;/li&gt;
+        		&lt;li&gt;It&amp;#8217;s assumed that you&amp;#8217;ll do most work from within Emacs itself rather than piping text to it.&lt;/li&gt;
+        		&lt;li&gt;Crashes when trying to switch color themes. This may be a problem with the color theme plugin I&amp;#8217;m using.&lt;/li&gt;
+        		&lt;li&gt;It&amp;#8217;s difficult to think about content and files instead of icons and buttons.&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;h3&gt;Getting Started&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;Installing, learning, and configuring Emacs is unfortunately not easy. I&amp;#8217;m working on a PeepCode screencast with &lt;a href="http://technomancy.us/"&gt;Phil Hagelberg&lt;/a&gt; that I hope to finish within the next few weeks. In the meantime, here are some resources I used to get started on Mac &lt;span class="caps"&gt;OS X&lt;/span&gt;:&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;&lt;a href="http://www.mail-archive.com/emacs-pretest-bug@gnu.org/msg12529.html"&gt;Install from Git mirror of the source&lt;/a&gt;&lt;/li&gt;
+        		&lt;li&gt;See the nextstep/INSTALL file for Mac installation instructions.&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://github.com/technomancy/emacs-starter-kit/tree/master"&gt;Phil Hagelberg&amp;#8217;s starter kit&lt;/a&gt;&amp;#8212;Tremendously useful.&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://github.com/topfunky/emacs-starter-kit/tree/master" title="based on Phil's"&gt;My current config&lt;/a&gt;&amp;#8212;Use at your own risk. Yes, I use a huge font size.&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;h4&gt;Useful Plugins&lt;/h4&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;&lt;a href="http://code.google.com/p/yasnippet/"&gt;yasnippet.el&lt;/a&gt;&amp;#8212;TextMate-style tab trigger snippets with mirroring, defaults, etc.&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://github.com/defunkt/textmate.el/tree/master"&gt;textmate.el&lt;/a&gt;&amp;#8212;Provides tremendously useful keyboard shortcuts for TextMate switchers. I&amp;#8217;ve &lt;a href="http://github.com/topfunky/emacs-starter-kit/tree/master/vendor/textmate.el/textmate.el"&gt;modified&lt;/a&gt; it to work with my setup.&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://zagadka.vm.bytemark.co.uk/magit/"&gt;magit&lt;/a&gt;&amp;#8212;Git integration.&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;h3&gt;See Also&lt;/h3&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;&lt;a href="http://al3x.net/2008/10/22/on-flight-to-old-text-editors.html"&gt;Alex Payne on the flight to old text editors&lt;/a&gt;&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://technomancy.us/115"&gt;Phil Hagelberg on learning emacs&lt;/a&gt;&amp;#8212;Plus links to other blog articles about recent adopters&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;h3&gt;And a word from our sponsor&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;New hot-selling PeepCode Screencast authored by &lt;a href="http://coachtvblog.com/"&gt;Lars Pind&lt;/a&gt;.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;&lt;a href="http://peepcode.com/products/productivity-for-programmers"&gt;&lt;img src="http://peepcode.com/system/uploads/2008/productivity-cover.jpg" alt="" /&gt;&lt;/a&gt;&lt;/p&gt; &lt;hr /&gt; &lt;a href='http://peepcode.com/?r=nubyrss'&gt;PeepCode Screencasts&lt;/a&gt; &amp;#8211; Learn Ruby on Rails and Javascript! Hour-long screencasts for $9.
+      </description>
+      <pubDate>Sat, 06 Dec 2008 00:34:44 +0000</pubDate>
+      <guid isPermaLink="false">
+        urn:uuid:adea9412-c32d-11dd-9f70-00163e415e86
+      </guid>
+      <author>topfunky</author>
+      <link>http://nubyonrails.com/articles/emacs-emacs</link>
+    </item>
+    <item>
+      <title>Not with a bang...</title>
+      <description>
+        &lt;blockquote&gt;
+        		&lt;p&gt;This is the way the world ends / Not with a bang but a whimper.
+        &amp;#8212;&lt;a href="http://en.wikipedia.org/wiki/The_Hollow_Men"&gt;T. S. Eliot&lt;/a&gt;&lt;/p&gt;
+        	&lt;/blockquote&gt;
+        
+        
+        &lt;div class="figure large" id="figure-a"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/anarchaia.png" alt="Anarchaia" title="Figure A" /&gt;&lt;div&gt;&lt;strong&gt;Figure A&lt;/strong&gt; Anarchaia&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;&lt;span class="caps"&gt;BIBERACH&lt;/span&gt;, GERMANY&amp;#8212;Late last week, Christian Neukirchen&amp;#8217;s influential tumbleblog &lt;a href="http://anarchaia.org/"&gt;Anarchaia&lt;/a&gt; breathed its last.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Anarchaia took the well established blog form and turned it into a multimedia stream of consciousness featuring photographs, poetry, lyrics, and links. Topics ranged from the merely curious to the highly technical. It managed to maintain the same visual theme throughout its lifespan which included a half-dozen posts almost daily.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;The term &lt;em&gt;tumblelog&lt;/em&gt; was coined in mid-2005 by Why the Lucky Stiff on his  &lt;a href="http://redhanded.hobix.com/inspect/tumbleloggingAssortedLarvae.html"&gt;RedHanded&lt;/a&gt; blog.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Anarchaia also inspired the popular &lt;a href="http://project.ioni.st"&gt;projectionist&lt;/a&gt; tumblelog, which launched a few months later. Entire &lt;a href="http://www.tumblr.com/"&gt;startups&lt;/a&gt; were subsequently built around the form.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;It is survived by the other Christian Neukirchen projects &lt;a href="http://rack.rubyforge.org/"&gt;Rack&lt;/a&gt;, &lt;a href="http://rubyforge.org/projects/test-spec/"&gt;test/spec/bacon&lt;/a&gt; and his own &lt;a href="http://chneukirchen.org/blog/"&gt;blog&lt;/a&gt;. There are rumors that it has already reincarnated as &lt;a href="http://chneukirchen.org/trivium/"&gt;Trivium&lt;/a&gt;.&lt;/p&gt; &lt;hr /&gt; &lt;a href='http://peepcode.com/?r=nubyrss'&gt;PeepCode Screencasts&lt;/a&gt; &amp;#8211; Learn Ruby on Rails and Javascript! Hour-long screencasts for $9.
+      </description>
+      <pubDate>Wed, 08 Oct 2008 00:03:33 +0000</pubDate>
+      <guid isPermaLink="false">
+        urn:uuid:8c3837a0-94cc-11dd-a00e-00163e415e86
+      </guid>
+      <author>topfunky</author>
+      <link>http://nubyonrails.com/articles/not-with-a-bang</link>
+    </item>
+    <item>
+      <title>Improve Your Technical Slides</title>
+      <description>
+        &lt;blockquote&gt;
+        		&lt;p&gt;I&amp;#8217;ve had to rely at times on silence and on talking quick / Defending myself with nothing but my walking stick. &amp;#8212;Buck65&lt;/p&gt;
+        	&lt;/blockquote&gt;
+        
+        
+        	&lt;p&gt;Here are nine easy tips that will help you communicate better at your next conference.&lt;/p&gt;
+        
+        
+        &lt;div class="figure large" id="figure-a"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/presentations.001.png" alt="Can you read me now?" title="Figure A" /&gt;&lt;div&gt;&lt;strong&gt;Figure A&lt;/strong&gt; Can you read me now?&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;&lt;a href="http://www.unpossible.com/"&gt;Dan Grigsby&amp;#8217;s&lt;/a&gt; presentation at RubyFringe was an intentional example of this. All the titles were at the top, with humorous stock photos below.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Keep it in the top third, if possible.&lt;/p&gt;
+        
+        
+        &lt;div class="figure large" id="figure-b"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/presentations.002.png" alt="Takahashi-san frowns on your tiny fonts" title="Figure B" /&gt;&lt;div&gt;&lt;strong&gt;Figure B&lt;/strong&gt; Takahashi-san frowns on your tiny fonts&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;&lt;a href="http://gilesbowkett.blogspot.com/"&gt;Giles Bowkett&lt;/a&gt; is such an entertaining speaker that people once skipped the first 20 minutes of lunch to hear the remainder of his presentation at RubyFringe (which involved more than 400 slides).&lt;/p&gt;
+        
+        
+        	&lt;p&gt;He also used only the typefaces included with Mac &lt;span class="caps"&gt;OS X&lt;/span&gt;, including &lt;a href="http://www.linotype.com/12697/futuramediumcondensed-font.html"&gt;Futura Condensed Medium&lt;/a&gt; and Condensed ExtraBold, which work really well in bright colors on black. So even if you don&amp;#8217;t choose to buy a single typeface, you can assemble a great-looking presentation.&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;&lt;a href="http://www.google.com/search?q=site%3Aconfreaks.com+giles+bowkett"&gt;Giles Bowkett Videos&lt;/a&gt; &amp;#8211; Start 5 minutes in to see the slides.&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        &lt;div class="figure large" id="figure-c"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/presentations.003.png" alt="Working well and looking good" title="Figure C" /&gt;&lt;div&gt;&lt;strong&gt;Figure C&lt;/strong&gt; Working well and looking good&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;It&amp;#8217;s easy with either:&lt;/p&gt;
+        
+        
+        	&lt;p&gt;&lt;a href="http://github.com/drnic/copy-as-rtf-tmbundle/tree/master"&gt;Copy as &lt;span class="caps"&gt;RTF&lt;/span&gt;&lt;/a&gt; &amp;#8211; A TextMate plugin. You can paste the syntax-highlighted text and even edit it afterward in Keynote.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;&lt;a href="http://pygments.org/"&gt;pygments&lt;/a&gt; &amp;#8211; A command-line syntax highlighter written in Python. It&amp;#8217;s used at &lt;a href="http://github.com"&gt;GitHub&lt;/a&gt; to emit &lt;span class="caps"&gt;HTML&lt;/span&gt; but can also emit &lt;span class="caps"&gt;RTF&lt;/span&gt; from any source file. The resulting rich text can be pasted into Keynote.&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code&gt;pygmentize -f rtf -o out.rtf code.rb&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        &lt;div class="figure large" id="figure-d"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/presentations.010.png" alt="Stay on target" title="Figure D" /&gt;&lt;div&gt;&lt;strong&gt;Figure D&lt;/strong&gt; Stay on target&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;Choosing just the right transition can soak up a lot of time and adds absolutely nothing to the content that people remember afterward.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Dan Grigsby also noted that transitions and multi-step builds make it difficult to go back and forth in the presentation since you have to wait for the transition to finish. Unless&amp;#8230;&lt;/p&gt;
+        
+        
+        &lt;div class="figure large" id="figure-e"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/presentations.004.png" alt="An unforced fumble while trying to backtrack" title="Figure E" /&gt;&lt;div&gt;&lt;strong&gt;Figure E&lt;/strong&gt; An unforced fumble while trying to backtrack&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;Useful Keynote shortcuts (while the presentation is playing).&lt;/p&gt;
+        
+        
+        	&lt;table&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;&lt;strong&gt;Key&lt;/strong&gt;&lt;/td&gt;
+        			&lt;td&gt;&lt;strong&gt;Description&lt;/strong&gt;&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;/&lt;/td&gt;
+        			&lt;td&gt;Show a list of keyboard shortcuts.&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;H&lt;/td&gt;
+        			&lt;td&gt;Pause the presentation and go to the last used application (useful for demos). Command-tab back to Keynote to resume the presentation.&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;= or -&lt;/td&gt;
+        			&lt;td&gt;Show a thumbnail menu that can be used to jump forward or backward to a specific slide. Use the arrow keys to select and the enter key to jump.&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;B&lt;/td&gt;
+        			&lt;td&gt;Pause and show a black screen.&lt;/td&gt;
+        		&lt;/tr&gt;
+        	&lt;/table&gt;
+        
+        
+        
+        
+        &lt;div class="figure large" id="figure-f"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/presentations.005.png" alt="The conference wifi WILL fail when you need it most" title="Figure F" /&gt;&lt;div&gt;&lt;strong&gt;Figure F&lt;/strong&gt; The conference wifi &lt;span class="caps"&gt;WILL&lt;/span&gt; fail when you need it most&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;I love live coding but often it goes awry, creating an awkward situation for both the presenter and the audience.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Give yourself some insurance and either record a short screencast that you can narrate during the presentation, or take screenshots that you can refer to.&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;Extra Credit!&lt;/h3&gt;
+        
+        
+        &lt;div class="figure large" id="figure-g"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/presentations.006.png" alt="Is grey a color?" title="Figure G" /&gt;&lt;div&gt;&lt;strong&gt;Figure G&lt;/strong&gt; Is grey a color?&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;If you&amp;#8217;re speaking at a conference, you&amp;#8217;re probably doing it to promote yourself, your projects, or your business. Make it stick in people&amp;#8217;s minds by distinguishing yourself with a color scheme and a typeface that communicate the attitude you want to be remembered for.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Choose a color scheme and use it for all your presentations. Ideally, it would be the color scheme of your company or personal blog. If you&amp;#8217;ve paid for a &lt;a href="http://yfactorial.com/"&gt;corporate identity&lt;/a&gt;, use it!&lt;/p&gt;
+        
+        
+        	&lt;h4&gt;Resources&lt;/h4&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;&lt;a href="http://firewheeldesign.com/widgets/"&gt;Color Burn Widget&lt;/a&gt; &amp;#8211; A Mac &lt;span class="caps"&gt;OS X&lt;/span&gt; dashboard widget with a new color scheme every day.&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://ColourLovers.com"&gt;ColourLovers.com&lt;/a&gt; &amp;#8211; Tons of color combinations for every attitude.&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        &lt;div class="figure large" id="figure-h"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/presentations.007.png" alt="An easy way to stand out" title="Figure H" /&gt;&lt;div&gt;&lt;strong&gt;Figure H&lt;/strong&gt; An easy way to stand out&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;Again, buy a typeface and use it on your blog and in your presentations.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;They&amp;#8217;re not as expensive as you might think! You can get a single font for $20.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Here are some nice condensed ones as mentioned above:&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;&lt;a href="http://www.fontshop.com/fonts/downloads/font_bureau/antenna_extra_condensed/"&gt;Antenna&lt;/a&gt;&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://www.fontshop.com/fonts/downloads/red_rooster/caslon_extra_condensed/"&gt;Caslon&lt;/a&gt;&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://www.fontshop.com/fonts/downloads/red_rooster/block_gothic_extra_condensed/"&gt;Block Gothic&lt;/a&gt;&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://www.fontshop.com/fonts/downloads/font_bureau/garage_gothic/"&gt;Garage Gothic&lt;/a&gt;&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;p&gt;Or try these shops:&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;&lt;a href="http://www.fontshop.com/"&gt;FontShop&lt;/a&gt;&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://www.sudtipos.com/home"&gt;Sudtipos&lt;/a&gt;&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://vllg.com/fonts/"&gt;Vllg&lt;/a&gt;&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://www.t26.com/"&gt;T.26&lt;/a&gt;&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://processtypefoundry.com/"&gt;Process Type Foundry&lt;/a&gt;&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://typography.com/home/index.php"&gt;H&amp;#38;FJ&lt;/a&gt;&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://typographica.org/001124.php"&gt;Typographica&lt;/a&gt;&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        &lt;div class="figure large" id="figure-i"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/presentations.008.png" alt="Free as in not chained to the spacebar" title="Figure I" /&gt;&lt;div&gt;&lt;strong&gt;Figure I&lt;/strong&gt; Free as in not chained to the spacebar&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;I saved my favorite for the end&amp;#8230;&lt;/p&gt;
+        
+        
+        	&lt;p&gt;A presentation remote gives you the freedom to step away from the lectern and talk directly to the audience. The remote that comes with Mac laptops doesn&amp;#8217;t count! It only works if you have a direct line of sight to the infrared receiver on the front edge of the laptop.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;A radio frequency transmitter works much better. The &lt;a href="http://www.google.com/search?q=kensington+presentation+remote"&gt;Kensington Presentation Remote&lt;/a&gt; can be bought for about $40. It works out of the box without the need to install any drivers, and it&amp;#8217;s less distracting than phone-based options.&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;See you in Berlin!&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;I&amp;#8217;ll be in Berlin at RailsConf starting this Sunday. Find me and get a free PeepCode t-shirt!&lt;/p&gt; &lt;hr /&gt; &lt;a href='http://peepcode.com/?r=nubyrss'&gt;PeepCode Screencasts&lt;/a&gt; &amp;#8211; Learn Ruby on Rails and Javascript! Hour-long screencasts for $9.
+      </description>
+      <pubDate>Thu, 28 Aug 2008 06:17:45 +0000</pubDate>
+      <guid isPermaLink="false">
+        urn:uuid:075f18f0-74c9-11dd-8aee-00163e092103
+      </guid>
+      <author>topfunky</author>
+      <link>http://nubyonrails.com/articles/improve-your-technical-slides</link>
+    </item>
+    <item>
+      <title>The Third Seattle.RBBQ</title>
+      <description>
+        &lt;div class="figure large" id="figure-a"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/P1020354.jpg" alt="Back yard" title="Figure A" /&gt;&lt;div&gt;&lt;strong&gt;Figure A&lt;/strong&gt; Back yard&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;For the third year in a row, it&amp;#8217;s the Seattle.RBBQ at Geoff&amp;#8217;s house in Seattle!&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;Tuesday, August 26, 7-9 pm.&lt;/li&gt;
+        		&lt;li&gt;I&amp;#8217;ll provide pizza. Bring any other beverages or food that you want to eat.&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://zenspider.com/pipermail/ruby/2008-August/004221.html"&gt;Directions and Bus Numbers&lt;/a&gt;&lt;/li&gt;
+        	&lt;/ul&gt; &lt;hr /&gt; &lt;a href='http://peepcode.com/?r=nubyrss'&gt;PeepCode Screencasts&lt;/a&gt; &amp;#8211; Learn Ruby on Rails and Javascript! Hour-long screencasts for $9.
+      </description>
+      <pubDate>Fri, 22 Aug 2008 20:56:46 +0000</pubDate>
+      <guid isPermaLink="false">
+        urn:uuid:d56443c4-708c-11dd-9840-00163e092103
+      </guid>
+      <author>topfunky</author>
+      <link>http://nubyonrails.com/articles/the-third-seattlerbbq</link>
+    </item>
+    <item>
+      <title>PeepCode is [No Longer] Looking to Hire a Virtual Assistant</title>
+      <description>
+        &lt;p&gt;&lt;strong&gt;&lt;span class="caps"&gt;UPDATE&lt;/span&gt;&lt;/strong&gt; Thanks for the 40 replies right away! We&amp;#8217;ve hired an individual for the position.&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;Dublin&lt;/h3&gt;
+        
+        
+        &lt;div class="figure med" id="figure-a"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/dublin-a.jpg" alt="Dublin from my hotel window" title="Figure A" /&gt;&lt;div&gt;&lt;strong&gt;Figure A&lt;/strong&gt; Dublin from my hotel window&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;I had a great time in Dublin at the end of June. I spoke at an &lt;a href="http://iotc.firstport.ie/"&gt;open source conference&lt;/a&gt; and met several other Rubyists while I was there.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;I&amp;#8217;ve frequently felt that I should bring home some tchotchke from each of the places I visit. While in Dublin I realized that it&amp;#8217;s not extra things that I really want, &lt;a href="http://www.imdb.com/title/tt0070723/quotes"&gt;it&amp;#8217;s people&lt;/a&gt;!&lt;/p&gt;
+        
+        
+        	&lt;p&gt;If you&amp;#8217;re traveling for business or pleasure, I highly suggest that you find the local Ruby group or find a local co-working space and meet people there. I had breakfast with &lt;a href="http://ananelson.com/"&gt;Ana Nelson&lt;/a&gt;, who introduced me to Paul Campbell of &lt;a href="http://www.contrast.ie/"&gt;Contrast&lt;/a&gt;, who is working on an error reporting &lt;a href="http://getexceptional.com/beta"&gt;webapp&lt;/a&gt; for Rails developers.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;He introduced me to &lt;a href="http://www.eamonleonard.com/"&gt;Eamon Leonard&lt;/a&gt; and &lt;a href="http://blog.agoraproduction.com/"&gt;David Coallier&lt;/a&gt; who happen to be a few &lt;a href="http://podcast.rubyonrails.org/system/audio/2008/uncut/whistle.mp3"&gt;musically inclined&lt;/a&gt; PHP developers. We had a great time exploring the pubs of Dublin, and I learned that &lt;a href="http://www.guinness.com"&gt;Guinness beer&lt;/a&gt; has a different taste in Dublin than anywhere else in the world.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Oh, and a few members of &lt;a href="http://rubyireland.com/"&gt;Ruby Ireland&lt;/a&gt; hosted a nice dinner in the city.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;So the next time you find yourself in an unknown city, meet the locals!&lt;/p&gt;
+        
+        
+        &lt;div class="figure large" id="figure-b"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/dublin-b.jpg" alt="Dublin alley" title="Figure B" /&gt;&lt;div&gt;&lt;strong&gt;Figure B&lt;/strong&gt; Dublin alley&lt;/div&gt;&lt;/div&gt;
+        
+        
+        &lt;div class="figure large" id="figure-c"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/dublin-contrast-clocks.jpg" alt="Clocks at the Contrast co-working space" title="Figure C" /&gt;&lt;div&gt;&lt;strong&gt;Figure C&lt;/strong&gt; Clocks at the Contrast co-working space&lt;/div&gt;&lt;/div&gt;
+        
+        
+        &lt;div class="figure large" id="figure-d"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/dublin-ruby.jpg" alt="Ruby Ireland meetup" title="Figure D" /&gt;&lt;div&gt;&lt;strong&gt;Figure D&lt;/strong&gt; Ruby Ireland meetup&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;h3&gt;Elsewhere&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;I just published a new PeepCode screencast about &lt;a href="http://peepcode.com/products/phusion-passenger"&gt;Phusion Passenger&lt;/a&gt; (technical editing by &lt;a href="http://phusion.nl"&gt;Phusion&lt;/a&gt; staff).&lt;/p&gt;
+        
+        
+        	&lt;p&gt;I&amp;#8217;ll be speaking about podcasting and entrepreneurship at &lt;a href="http://www.bizjamseattle.com/schedule/business-networking-via-personal-journalism/"&gt;BizJam Seattle&lt;/a&gt; on Wednesday, July 9.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Jim Freeze wanted me to mention that the &lt;a href="http://www.lonestarrubyconf.com/"&gt;Lone Star Ruby Conference&lt;/a&gt; is open for registration. I&amp;#8217;ll be at &lt;a href="http://en.oreilly.com/railseurope2008/"&gt;RailsConf in Berlin&lt;/a&gt; at that time, but I&amp;#8217;m sure it will be a great conference if you can get yourself to Texas. I frequently post other worldwide conference and workshop events at &lt;a href="http://rubyonrailsworkshops.com/"&gt;Ruby on Rails Workshops&lt;/a&gt;.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Also, I&amp;#8217;ve helped to launch a Deck-like ad network for Ruby blogs. We have several top quality publishers and have a few spots for advertisers. If you have a product, website, or service that would be of interest to Rubyists, check out &lt;a href="http://rubyrow.net/rooms/ruby"&gt;Ruby Row&lt;/a&gt;.&lt;/p&gt; &lt;hr /&gt; &lt;a href='http://peepcode.com/?r=nubyrss'&gt;PeepCode Screencasts&lt;/a&gt; &amp;#8211; Learn Ruby on Rails and Javascript! Hour-long screencasts for $9.
+      </description>
+      <pubDate>Mon, 07 Jul 2008 22:24:23 +0000</pubDate>
+      <guid isPermaLink="false">
+        urn:uuid:73a9cb8c-4c73-11dd-abd9-00163e092103
+      </guid>
+      <author>topfunky</author>
+      <link>http://nubyonrails.com/articles/peepcode-is-looking-to-hire-a-virtual-assistant</link>
+    </item>
+    <item>
+      <title>IOTC Open Source Conference in Dublin</title>
+      <description>
+        &lt;p&gt;I truly feel that I have the coolest job in the world.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Two weeks ago, I was asked to speak at the &lt;a href="http://iotc.firstport.ie/agenda/"&gt;&lt;span class="caps"&gt;IOTC&lt;/span&gt; Conference&lt;/a&gt; in Dublin on June 18-20. Not only that, but they will be streaming live video of the event as it happens!&lt;/p&gt;
+        
+        
+        	&lt;p&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/iotc.jpg" alt="" /&gt;&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Few conferences record even the &lt;em&gt;audio&lt;/em&gt; of their lectures, so I&amp;#8217;m not sure how they managed to pull this off. They must be using some of this new open source software that everyone is talking about!&lt;/p&gt;
+        
+        
+        	&lt;p&gt;They tell me that you&amp;#8217;ll be able to view it via a link that will be posted &lt;a href="http://iotc.firstport.ie/lecture/23/"&gt;here&lt;/a&gt;, next Thursday at 10:25am Dublin time.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;I&amp;#8217;ll also be hanging out with members of &lt;a href="http://rubyireland.com/"&gt;Ruby Ireland&lt;/a&gt; in Dublin on Thursday night.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Then I&amp;#8217;ll be hurrying back home to be with my son, who aspires to be the next &lt;a href="http://www.flickr.com/photos/muchawi/2568298445/in/photostream/"&gt;mini me&lt;/a&gt;.&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;At PeepCode&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;The ever diligent &lt;a href="http://ryandaigle.com/"&gt;Ryan Daigle&lt;/a&gt; has updated our &lt;a href="http://peepcode.com/products/rails2-pdf"&gt;Rails 2 &lt;span class="caps"&gt;PDF&lt;/span&gt;&lt;/a&gt; for Rails 2.1. If you purchased the first copy, you can &lt;a href="https://peepcode.com/login"&gt;login&lt;/a&gt; or revisit the link originally sent to you for the free update.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;If not, now is a great time to &lt;a href="http://peepcode.com/products/rails2-pdf"&gt;buy a copy&lt;/a&gt;!&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;And then&amp;#8230;&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;Also, I just bought by plane ticket for &lt;a href="http://rubyfringe.com/talks#geoffrey_grosenbach"&gt;RubyFringe&lt;/a&gt;   where I&amp;#8217;ll attempt to resolve my degree in Philosophy with my current career in computer programming. There are definitely some interesting talks scheduled!&lt;/p&gt; &lt;hr /&gt; &lt;a href='http://peepcode.com/?r=nubyrss'&gt;PeepCode Screencasts&lt;/a&gt; &amp;#8211; Learn Ruby on Rails and Javascript! Hour-long screencasts for $9.
+      </description>
+      <pubDate>Thu, 12 Jun 2008 02:30:23 +0000</pubDate>
+      <guid isPermaLink="false">
+        urn:uuid:82a40a2c-3827-11dd-a6be-00163e092103
+      </guid>
+      <author>topfunky</author>
+      <link>http://nubyonrails.com/articles/iotc-open-source-conference-in-dublin</link>
+    </item>
+    <item>
+      <title>RailsConf Suitcase</title>
+      <description>
+        &lt;div class="figure large" id="figure-a"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/peepcode-t-shirt.jpg" alt="Special Edition Silver PeepCode T-Shirt" title="Figure A" /&gt;&lt;div&gt;&lt;strong&gt;Figure A&lt;/strong&gt; Special Edition Silver PeepCode T-Shirt&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;Some of the things I&amp;#8217;ll be bringing to RailsConf 2008 in Portland next week:&lt;/p&gt;
+        
+        
+        	&lt;table&gt;
+        		&lt;tr&gt;
+        			&lt;th&gt;Item&lt;/th&gt;
+        			&lt;th&gt;Qty&lt;/th&gt;
+        			&lt;th&gt;Purpose&lt;/th&gt;
+        			&lt;th&gt;Location&lt;/th&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;PeepCode T-Shirts&lt;/td&gt;
+        			&lt;td&gt;45&lt;/td&gt;
+        			&lt;td&gt;Free!&lt;/td&gt;
+        			&lt;td&gt;Find me!&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;Mannequin&lt;/td&gt;
+        			&lt;td&gt;1&lt;/td&gt;
+        			&lt;td&gt;Bodyguard&lt;/td&gt;
+        			&lt;td&gt;Heroku booth&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;Utilikilt&lt;/td&gt;
+        			&lt;td&gt;1&lt;/td&gt;
+        			&lt;td&gt;&amp;uarr;&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;Samson Microphones&lt;/td&gt;
+        			&lt;td&gt;4&lt;/td&gt;
+        			&lt;td&gt;Podcasting&lt;/td&gt;
+        			&lt;td&gt;Heroku booth at lunch and afternoon break&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;Life-size poster of Peter Cooper&lt;/td&gt;
+        			&lt;td&gt;2&lt;/td&gt;
+        			&lt;td&gt;Why not?&lt;/td&gt;
+        			&lt;td&gt;Conference walls&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;PeepCode Coupons&lt;/td&gt;
+        			&lt;td&gt;?&lt;/td&gt;
+        			&lt;td&gt;Try it!&lt;/td&gt;
+        			&lt;td&gt;Heroku booth&lt;/td&gt;
+        		&lt;/tr&gt;
+        	&lt;/table&gt;
+        
+        
+        
+        
+        	&lt;h3&gt;Live Podcast Interviews!&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;My friends at &lt;a href="http://heroku.com/"&gt;Heroku&lt;/a&gt; have offered me a couch at their booth in the exhibit hall to perform a few podcasts. Come see a &lt;a href="http://podcast.rubyonrails.org"&gt;Rails Podcast&lt;/a&gt; recorded live during lunch and afternoon breaks!&lt;/p&gt;
+        
+        
+        	&lt;table&gt;
+        		&lt;tr&gt;
+        			&lt;th&gt;Time&lt;/th&gt;
+        			&lt;th&gt;Event&lt;/th&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;Friday, Lunch&lt;/td&gt;
+        			&lt;td&gt;Ryan Singer of 37signals&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;Friday 3:40&lt;/td&gt;
+        			&lt;td&gt;GitHub founders&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;Saturday, Lunch&lt;/td&gt;
+        			&lt;td&gt;Phusion Passenger (mod_rails)&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;Saturday, 3:40&lt;/td&gt;
+        			&lt;td&gt;Adam Keys interviews me&lt;/td&gt;
+        		&lt;/tr&gt;
+        	&lt;/table&gt;
+        
+        
+        
+        
+        	&lt;h3&gt;Sessions&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;I&amp;#8217;ll be moderating one panel and attending an evening session.&lt;/p&gt;
+        
+        
+        	&lt;table&gt;
+        		&lt;tr&gt;
+        			&lt;th&gt;Time&lt;/th&gt;
+        			&lt;th&gt;Event&lt;/th&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;Friday 2:50pm&lt;/td&gt;
+        			&lt;td&gt;&lt;a href="http://en.oreilly.com/rails2008/public/schedule/detail/1779"&gt;The Profitable Programmer&lt;/a&gt;&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;Friday 9-10pm&lt;/td&gt;
+        			&lt;td&gt;&lt;a href="http://en.oreilly.com/rails2008/public/schedule/detail/4484"&gt;Podcasting &lt;span class="caps"&gt;BOF&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+        		&lt;/tr&gt;
+        	&lt;/table&gt; &lt;hr /&gt; &lt;a href='http://peepcode.com/?r=nubyrss'&gt;PeepCode Screencasts&lt;/a&gt; &amp;#8211; Learn Ruby on Rails and Javascript! Hour-long screencasts for $9.
+      </description>
+      <pubDate>Fri, 23 May 2008 22:57:28 +0000</pubDate>
+      <guid isPermaLink="false">
+        urn:uuid:9deeac1c-291b-11dd-a2c5-00163e092103
+      </guid>
+      <author>topfunky</author>
+      <link>http://nubyonrails.com/articles/railsconf-suitcase</link>
+    </item>
+    <item>
+      <title>Ask Your Doctor About mod_rails</title>
+      <description>
+        &lt;blockquote&gt;
+        		&lt;p&gt;We need new inventions that reveal people&amp;#8217;s true intentions, a portable pride protector, affordable lie detector&amp;#8230;&amp;#8212;Buck65&lt;/p&gt;
+        	&lt;/blockquote&gt;
+        
+        
+        	&lt;p&gt;&lt;strong&gt;&lt;span class="caps"&gt;UPDATE&lt;/span&gt;:&lt;/strong&gt; You can learn all about Phusion Passenger with the new &lt;a href="https://peepcode.com/products/phusion-passenger"&gt;PeepCode Screencast&lt;/a&gt; on the topic.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;I was initially skeptical about &lt;a href="http://modrails.com"&gt;mod_rails&lt;/a&gt;. The developers had the cojones to start promoting it &lt;em&gt;weeks&lt;/em&gt; before it was ready, and they managed to generate a lot of hype around it &lt;em&gt;before&lt;/em&gt; anyone had used it.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;And we all know that hyped products never deliver!&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Mostly, I was probably one of those developers described when they &lt;a href="http://www.akitaonrails.com/2008/5/7/chatting-with-hongli-lai-and-ninh-bui-phusion"&gt;said&lt;/a&gt;&lt;/p&gt;
+        
+        
+        	&lt;blockquote&gt;
+        		&lt;p&gt;...we believe that experienced Ruby on Rails developers don’t consider deployment to be a problem; probably annoying at most&amp;#8230;&lt;/p&gt;
+        	&lt;/blockquote&gt;
+        
+        
+        	&lt;p&gt;Which is true. I was pretty happy with my current setup of Nginx and Mongrel. My only problem was that Nginx would often fail to create a pid file when the logs were rotated every night.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;I still use Nginx and Mongrel at &lt;a href="http://peepcode.com"&gt;PeepCode&lt;/a&gt;, but I&amp;#8217;ve switched a few smaller apps on a separate &lt;span class="caps"&gt;VPS&lt;/span&gt; to &lt;code&gt;mod_rails&lt;/code&gt;. It turns out that there are many benefits to using &lt;code&gt;mod_rails&lt;/code&gt;, both in development and production.&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;Great for development&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;It&amp;#8217;s easy to ignore the pain of development. I didn&amp;#8217;t realize how tedious it was to start and stop Mongrel while in development. It was also the reason I keep so many terminal tabs open at once.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;With mod_rails, apps are always ready whenever I need them. If I need to watch the logs, it&amp;#8217;s an easy &lt;code&gt;tail -f log/development.log&lt;/code&gt;.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;I have many pages that access dynamically generated graphs. A single Mongrel would process each serially, which would often take quite a while. With mod_rails, it&amp;#8217;s nearly instant since new processes are spawned to handle the extra requests in parallel.&lt;/p&gt;
+        
+        
+        	&lt;h4&gt;Configuration&lt;/h4&gt;
+        
+        
+        	&lt;p&gt;I followed Manfred&amp;#8217;s &lt;a href="http://www.fngtps.com/2008/04/using-passenger-on-osx-for-rails-development"&gt;article&lt;/a&gt; to start using &lt;code&gt;mod_rails&lt;/code&gt; in development. Two tweaks were to edit &lt;code&gt;/etc/hosts&lt;/code&gt; and to point Apache to a local config file in my home directory.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;First, edit &lt;code&gt;/etc/hosts&lt;/code&gt; with fake names for the applications you&amp;#8217;ll be developing against.&lt;/p&gt;
+        
+        
+        	&lt;pre&gt;&lt;code&gt;127.0.0.1    localhost peepcode.local podcast.local&lt;/code&gt;&lt;/pre&gt;
+        
+        
+        	&lt;p&gt;Next, in &lt;code&gt;/etc/apache2/httpd.conf&lt;/code&gt;, I set the &lt;code&gt;RailsEnv&lt;/code&gt; to &lt;code&gt;development&lt;/code&gt; and myself to the &lt;code&gt;RailsDefaultUser&lt;/code&gt;. I also included a config file in my home directory (stored in source control). This config file includes all my virtual hosts and is the same on both my laptop and my desktop machine.&lt;/p&gt;
+        
+        
+        	&lt;pre&gt;&lt;code&gt;RailsEnv development
+        RailsDefaultUser topfunky
+        Include /Users/topfunky/repos/configs/mod_rails_vhosts.conf&lt;/code&gt;&lt;/pre&gt;
+        
+        
+        	&lt;p&gt;The &lt;code&gt;mod_rails_vhosts.conf&lt;/code&gt; file has several &lt;code&gt;VirtualHost&lt;/code&gt; sections like this:&lt;/p&gt;
+        
+        
+        	&lt;pre&gt;&lt;code&gt;ServerName podcast.local
+        DocumentRoot /Users/topfunky/repos/podcast/public&lt;/code&gt;&lt;/pre&gt;
+        
+        
+        	&lt;h3&gt;Easy to debug visual plugins or graphs&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;Sometimes I need to visually debug code located in plugins or frozen gems. For example, I worked on some enhancements to my &lt;a href="http://nubyonrails.com/pages/sparklines"&gt;sparklines&lt;/a&gt; gem while viewing graphs on a reporting page. Normally, this would be impossible since Rails doesn&amp;#8217;t reload itself for changes in the &lt;code&gt;vendor&lt;/code&gt; directory.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;&lt;a href="http://nubyonrails.com/articles/automation-with-rstakeout"&gt;Rstakeout&lt;/a&gt; comes to the rescue!&lt;/p&gt;
+        
+        
+        &lt;pre&gt;rstakeout "touch tmp/restart.txt" "vendor/**/*"&lt;/pre&gt;
+        
+        	&lt;p&gt;When I edit a plugin or gem in the &lt;code&gt;vendor&lt;/code&gt; directory, &lt;code&gt;mod_rails&lt;/code&gt; reloads the whole application and I can see the result immediately.&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;Rotate Logs&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;Other production tasks become very easy with &lt;code&gt;mod_rails&lt;/code&gt;. Rotating the Rails logs is as easy as touching the &lt;code&gt;restart.txt&lt;/code&gt; file.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Here&amp;#8217;s &lt;code&gt;/etc/logrotate.d/rails&lt;/code&gt;:&lt;/p&gt;
+        
+        
+        	&lt;pre&gt;&lt;code&gt;/var/www/apps/rubyonrailsworkshops.com/shared/log/production.log {
+          daily
+          rotate 7
+          compress
+          missingok
+          sharedscripts
+          postrotate
+            touch /var/www/apps/rubyonrailsworkshops.com/current/tmp/restart.txt
+          endscript
+        }&lt;/code&gt;&lt;/pre&gt;
+        
+        
+        	&lt;h3&gt;Coexist&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;Many people are sad that &lt;code&gt;mod_rails&lt;/code&gt; doesn&amp;#8217;t yet support &lt;a href="http://rack.rubyforge.org/"&gt;rack&lt;/a&gt;. No problem. I just followed Coda Hale&amp;#8217;s &lt;a href="http://blog.codahale.com/2006/06/19/time-for-a-grown-up-server-rails-mongrel-apache-capistrano-and-you/"&gt;classic article&lt;/a&gt; and am running Merb under Mongrel through Apache, alongside a few &lt;code&gt;mod_rails&lt;/code&gt; apps.&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;Problems&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;The only initial problem I&amp;#8217;ve experienced is that Apache seems to use much more memory than Nginx did. A few days after switching to Apache, the memory usage skyrocketed and killed all my &lt;code&gt;mod_rails&lt;/code&gt; apps. I had to restart Apache to get everything back.&lt;/p&gt;
+        
+        
+        &lt;div class="figure large" id="figure-a"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/modrails-memory.png" alt="Memory Usage" title="Figure A" /&gt;&lt;div&gt;&lt;strong&gt;Figure A&lt;/strong&gt; Memory Usage&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;I&amp;#8217;m working on a &lt;a href="http://god.rubyforge.org"&gt;god&lt;/a&gt; config file to keep tabs on everything. Does anyone have a good one yet?&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;At PeepCode&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;Scott Chacon recently published a &lt;a href="http://peepcode.com/products/git-internals-pdf"&gt;Git Internals &lt;span class="caps"&gt;PDF&lt;/span&gt;&lt;/a&gt; that Jamis Buck called &lt;a href="http://twitter.com/jamis/statuses/802268120"&gt;required reading for all Git users&lt;/a&gt;. He also launched &lt;a href="http://www.gitcasts.com/"&gt;GitCasts&lt;/a&gt;.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Mike Mondragon and Luke Francl finished a book on &lt;a href="http://peepcode.com/products/mms2r-pdf"&gt;&lt;span class="caps"&gt;MMS2R&lt;/span&gt;&lt;/a&gt;. If you&amp;#8217;ve ever tried to receive email into a web application, you know it can be quite a pain. &lt;span class="caps"&gt;MMS2R&lt;/span&gt; is a gem that makes it super simple to receive both plain text and multimedia attachments. It&amp;#8217;s made me want to write an email-powered application just so I can use the concepts they show in the book!&lt;/p&gt; &lt;hr /&gt; &lt;a href='http://peepcode.com/?r=nubyrss'&gt;PeepCode Screencasts&lt;/a&gt; &amp;#8211; Learn Ruby on Rails and Javascript! Hour-long screencasts for $9.
+      </description>
+      <pubDate>Tue, 20 May 2008 06:36:09 +0000</pubDate>
+      <guid isPermaLink="false">
+        urn:uuid:087502f8-2637-11dd-810b-00163e092103
+      </guid>
+      <author>topfunky</author>
+      <link>http://nubyonrails.com/articles/ask-your-doctor-about-mod_rails</link>
+    </item>
+    <item>
+      <title>How I Spent My Spring Break</title>
+      <description>
+        &lt;p&gt;I just realized that it&amp;#8217;s been almost two months since I&amp;#8217;ve blogged! Some saw the announcement on Twitter, but for the rest, here&amp;#8217;s what I&amp;#8217;ve been up to:&lt;/p&gt;
+        
+        
+        	&lt;p&gt;&lt;a href="http://www.flickr.com/photos/muchawi/2479548764/"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/P1010564.jpg" alt="" /&gt;&lt;/a&gt;&lt;/p&gt; &lt;hr /&gt; &lt;a href='http://peepcode.com/?r=nubyrss'&gt;PeepCode Screencasts&lt;/a&gt; &amp;#8211; Learn Ruby on Rails and Javascript! Hour-long screencasts for $9.
+      </description>
+      <pubDate>Sat, 10 May 2008 00:11:19 +0000</pubDate>
+      <guid isPermaLink="false">
+        urn:uuid:9d8b5a46-1e25-11dd-b22a-00163e092103
+      </guid>
+      <author>topfunky</author>
+      <link>http://nubyonrails.com/articles/how-i-spent-my-spring-break</link>
+    </item>
+    <item>
+      <title>A Three Finger Salute to Git</title>
+      <description>
+        &lt;p&gt;David Letterman often asks: Is this &lt;a href="http://en.wikipedia.org/wiki/Sketches_on_Letterman#Is_This_Anything.3F"&gt;anything&lt;/a&gt;? And now I ask you.&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;Newer MacBook Pros and MacBook Airs can detect trackpad gestures (three finger swipe up, down, left, right).&lt;/li&gt;
+        		&lt;li&gt;A new preference pane called &lt;a href="http://wcrawford.org/2008/02/28/everytime-i-think-about-you-i-touch-my-cell"&gt;MultiClutch&lt;/a&gt; makes it easy to call key commands when gestures occur. &lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://wafflesoftware.net/thisservice/"&gt;ThisService&lt;/a&gt; turns command line scripts into services with key commands.&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;p&gt;The end result?&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;Swipe up to &lt;code&gt;git push&lt;/code&gt;&lt;/li&gt;
+        		&lt;li&gt;Swipe down to &lt;code&gt;git pull&lt;/code&gt;&lt;/li&gt;
+        		&lt;li&gt;Swipe left to see &lt;code&gt;git status&lt;/code&gt;&lt;/li&gt;
+        		&lt;li&gt;Others are also possible!&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;h3&gt;Easy setup&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;&lt;a href="http://nubyonrails.com/system/uploads/2008/git_services.zip"&gt;Download my pre-packaged services&lt;/a&gt; and drop in &lt;code&gt;Library/Services&lt;/code&gt; (local or systemwide&amp;#8230;your choice).&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Download &lt;a href="http://wcrawford.org/2008/02/28/everytime-i-think-about-you-i-touch-my-cell/"&gt;MultiClutch&lt;/a&gt; and set commands for multitouch gestures that call the services.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/multi-clutch-500.png" alt="" /&gt;&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;You can try it at home!&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;Use &lt;a href="http://wafflesoftware.net/thisservice/"&gt;ThisService&lt;/a&gt; to make a service that calls any shell script or even a Ruby script (start autotest, run rake, etc.).&lt;/p&gt;
+        
+        
+        	&lt;p&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/this-service-500.png" alt="" /&gt;&lt;/p&gt;
+        
+        
+        	&lt;p&gt;I used a simple shell script that echoes a command to the Terminal.&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code&gt;#!/bin/sh
+        echo "git pull"&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;h3&gt;Product placement&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;See the &lt;a href="http://peepcode.com/products/git"&gt;PeepCode Git Screencast&lt;/a&gt; to learn how to use Git.&lt;/p&gt; &lt;hr /&gt; &lt;a href='http://peepcode.com/?r=nubyrss'&gt;PeepCode Screencasts&lt;/a&gt; &amp;#8211; Learn Ruby on Rails and Javascript! Hour-long screencasts for $9.
+      </description>
+      <pubDate>Tue, 11 Mar 2008 21:26:25 +0000</pubDate>
+      <guid isPermaLink="false">
+        urn:uuid:cdf2c5f4-efb1-11dc-8f39-00163e092103
+      </guid>
+      <author>topfunky</author>
+      <link>http://nubyonrails.com/articles/a-three-finger-salute-to-git</link>
+    </item>
+    <item>
+      <title>About This Blog: Custom Textile</title>
+      <description>
+        &lt;p&gt;When I suggested that you &lt;a href="http://nubyonrails.com/articles/about-this-blog-memcached"&gt;write your own blog software&lt;/a&gt;, I had no idea that &lt;a href="http://blog.hasmanythrough.com/2008/1/24/one-hundred-two-hosts-three-engines"&gt;some&lt;/a&gt; &lt;a href="http://blogwell.us/"&gt;people&lt;/a&gt; would actually take me seriously!&lt;/p&gt;
+        
+        
+        	&lt;p&gt;So here&amp;#8217;s another tidbit to help you on your way: custom Textile tags.&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;The Feature&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;As a developer, it&amp;#8217;s nice to use &lt;a href="http://textism.com/tools/textile/"&gt;Textile&lt;/a&gt; or &lt;a href="http://daringfireball.net/projects/markdown/"&gt;Markdown&lt;/a&gt; for text entry. Simple tags will be converted to &lt;span class="caps"&gt;HTML&lt;/span&gt;, which will save typing and automatically apply some typographic rules.&lt;/p&gt;
+        
+        
+        &lt;div class="figure med" id="figure-a"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/redcloth3-title.jpg" alt="RedCloth 3 Logo" title="Figure A" /&gt;&lt;div&gt;&lt;strong&gt;Figure A&lt;/strong&gt; RedCloth 3 Logo&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;But it can go one step further if you&amp;#8217;re using &lt;a href="http://whytheluckystiff.net/ruby/redcloth/"&gt;RedCloth&lt;/a&gt;. You can subclass RedCloth and add methods that define your own tags. This is a great way to add shortcuts for complicated sets of &lt;span class="caps"&gt;HTML&lt;/span&gt; or inject hooks for &lt;span class="caps"&gt;CSS&lt;/span&gt; and Javascript.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;To create Figure A, I used a technique mentioned by &lt;a href="http://www.garrettdimon.com/"&gt;Garrett Dimon&lt;/a&gt; in a &lt;a href="http://www.digital-web.com/articles/coding_for_content/"&gt;Digital Web article&lt;/a&gt;. It involves a &lt;code&gt;div&lt;/code&gt; enhanced with a few &lt;span class="caps"&gt;CSS&lt;/span&gt; classes, enclosing a caption and an image. In addition, I have the power to make it small, medium, or large. A more complete solution would even allow for &lt;a href="http://garrettdimon.com/archives/2008/1/22/evolution_of_a_header/"&gt;alternate backgrounds and placement&lt;/a&gt;.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;But that&amp;#8217;s a lot to type every time I want to reference a captioned image! Instead, I wrote a custom Textile tag to do it for me.&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;Usage&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;Here&amp;#8217;s the custom tag I use:&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code&gt;figure(med). RedCloth 3 Logo | redcloth3-title.jpg&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;p&gt;Let&amp;#8217;s break it down:&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;&lt;code&gt;figure&lt;/code&gt; is the custom tag name. It&amp;#8217;s a hook into a &lt;code&gt;textile_figure&lt;/code&gt; method in my application&amp;#8217;s subclass of RedCloth.&lt;/li&gt;
+        		&lt;li&gt;&lt;code&gt;med&lt;/code&gt; is a &lt;span class="caps"&gt;CSS&lt;/span&gt; class that will be applied to the &lt;code&gt;div&lt;/code&gt; that wraps the figure. This gives me easy control over the size of the figure, and could even be used to pass multiple classes for other effects.&lt;/li&gt;
+        		&lt;li&gt;Next comes the caption. I chose to use a pipe as the delimiter between the caption and the image name.&lt;/li&gt;
+        		&lt;li&gt;It ends with the name of the image.&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;p&gt;In that single line, I have all the information I need to construct a figure. Those 50 characters will result in over 200 characters of &lt;span class="caps"&gt;HTML&lt;/span&gt;. I can also use a few lines of Ruby to assign an auto-incrementing figure letter (&amp;#8220;Figure A&amp;#8221;) and reuse the caption as an &lt;code&gt;alt&lt;/code&gt; tag for the image.&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;Implementation&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;First, choose a &lt;a href="http://www.colourlovers.com/palettes/random"&gt;color&lt;/a&gt; for your subclass. CaneSugarBrownCloth? MintJulepGreenCloth? It could take hours.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Next, create a file for your subclass. I put &lt;a href="http://nubyonrails.com/system/uploads/2008/yellow_cloth.rb"&gt;yellow_cloth.rb&lt;/a&gt; in the &lt;code&gt;lib&lt;/code&gt; directory and required it from &lt;code&gt;environment.rb&lt;/code&gt;.&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code class="ruby"&gt;unless RedCloth
+          require 'RedCloth'
+        end
+        class YellowCloth &amp;lt; RedCloth
+          # ...&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;p&gt;Next, define your custom method. I have a simple &lt;code&gt;ruby&lt;/code&gt; tag that applies a &lt;span class="caps"&gt;CSS&lt;/span&gt; class for use with my &lt;a href="http://svn.danwebb.net/external/CodeHighlighter/trunk/"&gt;code highlighter&lt;/a&gt;.&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code class="ruby"&gt;def textile_ruby( tag, atts, cite, content )
+          # TODO Use the arguments to build some HTML 
+          #      and return a string.
+        end&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;p&gt;The arguments passed in can be reused or ignored.&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;&lt;code&gt;tag&lt;/code&gt; is the name of the tag passed in (&lt;code&gt;ruby&lt;/code&gt; in this case).&lt;/li&gt;
+        		&lt;li&gt;&lt;code&gt;atts&lt;/code&gt; is a pre-assembled string with passed &lt;span class="caps"&gt;CSS&lt;/span&gt; classes, IDs, hard-coded styles, and language identifiers. If you want to augment this, you&amp;#8217;ll need to parse the string and append your own &lt;span class="caps"&gt;CSS&lt;/span&gt; classes (I did this for the &lt;code&gt;figure&lt;/code&gt; tag).&lt;/li&gt;
+        		&lt;li&gt;&lt;code&gt;cite&lt;/code&gt; is rarely used.&lt;/li&gt;
+        		&lt;li&gt;&lt;code&gt;content&lt;/code&gt; This is the actual code, text, or paragraph that follows the tag. In the &lt;code&gt;figure&lt;/code&gt; tag, I decided to parse this further and use the elements as the caption and image name.&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;p&gt;The &lt;code&gt;figure&lt;/code&gt; tag is more complicated.&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;I add a &lt;code&gt;figure&lt;/code&gt; class to any &lt;span class="caps"&gt;CSS&lt;/span&gt; classes passed in. In order to do this, I need to parse the &lt;code&gt;atts&lt;/code&gt; and extract existing &lt;span class="caps"&gt;CSS&lt;/span&gt; classes.&lt;/li&gt;
+        		&lt;li&gt;I split the &lt;code&gt;content&lt;/code&gt; on the pipe and use the elements as the caption and image name. You could prepend a filepath onto the image name if all your images are stored in the same place.&lt;/li&gt;
+        		&lt;li&gt;The figure letter is dynamically incremented (Figure A, Figure B, etc.).&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        &lt;pre&gt;&lt;code class="ruby"&gt;def textile_figure(tag, atts, cite, content)
+          span_class = "" 
+          if atts =~ /class="([^\"]+)"/
+            span_class = $1
+          end
+          (caption, img_url) = content.split("|").map { |w| w.strip! }
+          figure_name = "Figure " + @figure_counter.chr
+          figure_id   = figure_name.downcase.gsub(" ", "-")
+          @figure_counter += 1
+          # TODO Construct the HTML
+        end&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;p&gt;Finally, here&amp;#8217;s the code to setup the counter:&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code class="ruby"&gt;def initialize(*args)
+          @figure_counter = ?A
+          super
+        end&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;p&gt;To use your new class, you can override the built-in &lt;code&gt;textilize&lt;/code&gt; helper or write a &lt;code&gt;before_save&lt;/code&gt; callback on your model to convert the text to &lt;span class="caps"&gt;HTML&lt;/span&gt; with your custom subclass.&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code class="ruby"&gt;before_save :textilize_body
+        def textilize_body
+          self.body_html = YellowCloth.new(self.body).to_html
+        end&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;p&gt;The entire code can be downloaded: &lt;a href="http://nubyonrails.com/system/uploads/2008/yellow_cloth.rb"&gt;yellow_cloth.rb&lt;/a&gt;&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;Bonus&lt;/h3&gt;
+        
+        
+        &lt;div class="figure sm" id="figure-b"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/pipe-text.png" alt="Pipe Text" title="Figure B" /&gt;&lt;div&gt;&lt;strong&gt;Figure B&lt;/strong&gt; Pipe Text&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;If you use TextMate, you may be aware of the &amp;#8220;Show Web Preview&amp;#8221; menu item.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;It can pipe the text of the current document through its own &lt;code&gt;textile.rb&lt;/code&gt; script or through your custom script. I wrote a simple script that uses my subclass instead of RedCloth.&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code class="ruby"&gt;# script/textile.rb
+        require 'rubygems'
+        require 'yellow_cloth'
+        textile = ARGV[0] ? File.read(ARGV[0]) : STDIN.read
+        puts YellowCloth.new(textile).to_html&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;p&gt;Then use the full path to this script as the argument to &amp;#8216;Pipe text through&amp;#8217;:&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code&gt;/Users/topfunky/repos/funkyblog/script/textile.rb&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;h3&gt;Product Placement&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;I&amp;#8217;ll be speaking at both &lt;a href="http://railsconf.org"&gt;RailsConf Portland&lt;/a&gt; and &lt;a href="http://rubyfringe.com/"&gt;RubyFringe&lt;/a&gt;.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;After many requests, I&amp;#8217;m proud to introduce the new &lt;a href="http://peepcode.com/products/unlimited"&gt;PeepCode Unlimited&lt;/a&gt; plan that gives you a year of access to all PeepCode content. On sale for only $139 until March 21.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;&lt;a href="http://merbivore.com/"&gt;Merb&lt;/a&gt; is a great compliment to Rails or a capable web framework in its own right. A draft of the PeepCode &lt;span class="caps"&gt;PDF&lt;/span&gt; on Merb is now available (includes a free upgrade when the final is published in the next few weeks).&lt;/p&gt;
+        
+        
+        	&lt;p&gt;&lt;a href="http://peepcode.com/products/meet-merb-pdf-draft"&gt;&lt;img src="http://peepcode.com/system/previews/merb/merb-cover.png" alt="" /&gt;&lt;/a&gt;&lt;/p&gt;
+        
+        
+        	&lt;p&gt;PeepCode has been growing quickly and we have a ton of new content in the works. Ryan Daigle&amp;#8217;s &lt;a href="http://peepcode.com/products/rails2-pdf"&gt;Rails 2 &lt;span class="caps"&gt;PDF&lt;/span&gt;&lt;/a&gt; recently became the best-selling PeepCode product of all time. Cody Fauser&amp;#8217;s &lt;a href="http://peepcode.com/products/activemerchant-pdf"&gt;ActiveMerchant &lt;span class="caps"&gt;PDF&lt;/span&gt;&lt;/a&gt; is already being called &lt;a href="http://www.rubyinside.com/activemerchant-book-by-cody-fauser-714.html"&gt;a must read&lt;/a&gt;.&lt;/p&gt; &lt;hr /&gt; &lt;a href='http://peepcode.com/?r=nubyrss'&gt;PeepCode Screencasts&lt;/a&gt; &amp;#8211; Learn Ruby on Rails and Javascript! Hour-long screencasts for $9.
+      </description>
+      <pubDate>Wed, 27 Feb 2008 18:13:27 +0000</pubDate>
+      <guid isPermaLink="false">
+        urn:uuid:b150e39c-e55f-11dc-855a-00163e092103
+      </guid>
+      <author>topfunky</author>
+      <link>http://nubyonrails.com/articles/about-this-blog-custom-textile</link>
+    </item>
+    <item>
+      <title>Better Reporting with Sparklines</title>
+      <description>
+        &lt;blockquote&gt;
+        		&lt;p&gt;Three pens for five dollars, black, red and blue, recommended by scholars. &amp;#8212;Buck 65&lt;/p&gt;
+        	&lt;/blockquote&gt;
+        
+        
+        	&lt;p&gt;Two events from January, unrelated but relevant:&lt;/p&gt;
+        
+        
+        	&lt;ol&gt;
+        	&lt;li&gt;I toured the offices of Highgroove Studios and viewed their upcoming &lt;a href="http://scoutapp.com"&gt;Scout&lt;/a&gt; reporting tool. They&amp;#8217;ve written their graphing tool to allow easy comparisons between any group of measurements on the system, such as hits to their blog vs. new signups to their webapp. Comparing seemingly unrelated datasets often results in unexpected conclusions.&lt;/li&gt;
+        		&lt;li&gt;Information design guru Edward Tufte posted a &lt;a href="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=00036T&amp;#38;topic_id=1&amp;#38;topic=Ask+E%2eT%2e"&gt;video review of the iPhone&lt;/a&gt;. One of his widget-related suggestions was to include sparklines to show months of history instead of just a single number.&lt;/li&gt;
+        	&lt;/ol&gt;
+        
+        
+        	&lt;p&gt;A third event preceding either of these was a redesign of my internal reporting page to use &lt;a href="http://nubyonrails.com/pages/sparklines"&gt;sparklines&lt;/a&gt; extensively.&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;The Problem&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;Previously, I used &lt;a href="http://nubyonrails.com/pages/gruff"&gt;Gruff&lt;/a&gt; to generate one or two 400&amp;#215;300px graphs to show a few important metrics. But it kept bugging me that I had all kinds of information in the database that I couldn&amp;#8217;t visualize.&lt;/p&gt;
+        
+        
+        &lt;div class="figure med" id="figure-a"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/gruff-accum_bar_300.png" alt="A big, data-thin graph." title="Figure A" /&gt;&lt;div&gt;&lt;strong&gt;Figure A&lt;/strong&gt; A big, data-thin graph.&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;I like to use a single reporting page with as much information as possible. I also want to be able to apply a different stylesheet and view these pages on my iPhone or a laptop with a small screen.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;The problem with large graphs is that adding more of them means occupying a lot more space on the page. Having a bunch of large graphs makes it hard to get a quick idea of where things are at.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Books such as &lt;a href="http://www.amazon.com/gp/product/0596100167?ie=UTF8&amp;#38;tag=rubyonrailswo-20&amp;#38;linkCode=as2&amp;#38;camp=1789&amp;#38;creative=9325&amp;#38;creativeASIN=0596100167"&gt;Information Dashboard Design&lt;/a&gt; observe the fact that graphs are best at showing general trends, not specific numbers. Tables are great at showing specific numbers, but not general trends. So why not omit all the labeling and just focus on the graphic?&lt;/p&gt;
+        
+        
+        	&lt;p&gt;So I scrapped all the labeled, numbered, scaled graphs and replaced them with purely graphical sparklines that each show about three months of data in 300&amp;#215;30px. When I need to know the exact numbers, I can look at a nearby &lt;a href="http://topfunky.net/svn/plugins/tidy_table/"&gt;table&lt;/a&gt; that lists the data for the current day or the past week.&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;Go Small&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;I started with a graph of the number of dynamic hits to the site, as reported by the &lt;a href="http://rails-analyzer.rubyforge.org/pl_analyze/"&gt;Rails analyzer&lt;/a&gt; and stored in the database.&lt;/p&gt;
+        
+        
+        &lt;div class="figure med" id="figure-b"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/sparklines-hits.png" alt="Two months of daily dynamic hits." title="Figure B" /&gt;&lt;div&gt;&lt;strong&gt;Figure B&lt;/strong&gt; Two months of daily dynamic hits.&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;This isn&amp;#8217;t very useful alone. The graph isn&amp;#8217;t scaled from zero, so it&amp;#8217;s impossible to make specific conclusions. But it is valuable for finding out about relative changes from day to day.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;I also added a white line as a target value for comparison. Specific numbers aren&amp;#8217;t relevant, but I can tell whether or not I&amp;#8217;ve hit the target for the day.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Where it really starts to get interesting is when you add other values to compare to.&lt;/p&gt;
+        
+        
+        &lt;div class="figure med" id="figure-c"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/sparklines-releases.png" alt="Three months of product releases." title="Figure C" /&gt;&lt;div&gt;&lt;strong&gt;Figure C&lt;/strong&gt; Three months of product releases.&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;Here&amp;#8217;s a whisker graph marking the days when products were released. Today is on the far right. You can see a few correlations between product releases and the number of hits to the site. The conclusion may be obvious (product releases result in hits to the site), but now the graph of hits makes a little more sense. A few recent traffic spikes on the right side can be explained by a corresponding product release.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Next, I added a graph of overall daily performance.&lt;/p&gt;
+        
+        
+        &lt;div class="figure med" id="figure-d"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/sparklines-perf.png" alt="Two months of overall performance." title="Figure D" /&gt;&lt;div&gt;&lt;strong&gt;Figure D&lt;/strong&gt; Two months of overall performance.&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;Performance is pretty steady except for some recent fluctuations. This statistic isn&amp;#8217;t too meaningful since it goes all the way from the delivery of action cached pages to slower pages that call remote APIs.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;In order to track a specific page, I added another sparkline.&lt;/p&gt;
+        
+        
+        &lt;div class="figure med" id="figure-e"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/sparklines-perf-show.png" alt="Products#show action performance." title="Figure E" /&gt;&lt;div&gt;&lt;strong&gt;Figure E&lt;/strong&gt; Products#show action performance.&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;Many more could be added: daily revenue, user signups, coupon redemptions, referrers from a specific site, downloads.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Putting these all together, I get a graph that is about half as tall as the single graph shown at the beginning, but shows several hundred numbers.&lt;/p&gt;
+        
+        
+        &lt;div class="figure med" id="figure-f"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2008/sparklines-combined.png" alt="Combined" title="Figure F" /&gt;&lt;div&gt;&lt;strong&gt;Figure F&lt;/strong&gt; Combined&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;They can be stacked on a web page, viewed on an iPhone, and compared easily.&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;Tips&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;In order to make the most of stacked sparklines, I&amp;#8217;ve found it helpful to:&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;Use a similar horizontal scale&lt;/li&gt;
+        		&lt;li&gt;Add a text label&lt;/li&gt;
+        		&lt;li&gt;Cache when possible&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;p&gt;To get you started, here&amp;#8217;s some sample code.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Make a controller that will render the graphics. Include an &lt;code&gt;image_tag&lt;/code&gt; in your view that calls the controller.&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code&gt;&amp;lt;%= image_tag(formatted_graph_url('hits_by_day_past_three_months', :format =&amp;gt; 'png')) %&amp;gt;&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;p&gt;I like to use the &lt;code&gt;show&lt;/code&gt; action and check &lt;code&gt;params[:id]&lt;/code&gt; for the name of a recognized report (&lt;code&gt;/graphs/hits_by_day_past_three_months.png&lt;/code&gt;). And of course, add a &lt;code&gt;before_filter&lt;/code&gt; to restrict access!&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Most graphs will have similar options, so I wrote a method that returns a hash of default options.&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code class="ruby"&gt;def default_sparkline_options
+          {
+            :background_color =&amp;gt; 'transparent',
+            :step             =&amp;gt; 3,
+            :height           =&amp;gt; 30,
+            :line_color       =&amp;gt; "#6699cc",
+            :underneath_color =&amp;gt; "#ebf3f6",
+          }
+        end&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;p&gt;Another method generates the graph and caches the binary result in memcached for an hour.&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code class="ruby"&gt;def hits_by_day_past_three_months
+          graph = Cache.get("Sparklines:hits_by_day_past_three_months", 1.hour) {
+            records = LogAnalysisRequestTime.find_recent_by_resource("All")
+            data    = records.map { |r| r.quantity.to_f  }
+            graph   = Sparklines.plot_to_image data, default_sparkline_options.merge({
+              :target =&amp;gt; 1_000_000
+            })
+            annotate(graph, "Daily Dynamic Hits")
+            graph = graph.to_blob
+          }
+          send_data graph, :type =&amp;gt; "image/png", :disposition =&amp;gt; "inline" 
+        end&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;p&gt;The &lt;code&gt;annotate&lt;/code&gt; method adds a white box and label to the bottom of the sparkline, using a &lt;a href="http://www.dsg4.com/04/extra/bitmap/"&gt;pixel font&lt;/a&gt;.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Two things confused me at first:&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;The data is displayed with the newest items at the right, but only shows the most recent three months. So the &lt;span class="caps"&gt;SQL&lt;/span&gt; query needs to sort &lt;span class="caps"&gt;DESC&lt;/span&gt; but use Ruby to &lt;code&gt;reverse&lt;/code&gt; the results.&lt;/li&gt;
+        		&lt;li&gt;The production_log_analyzer reports the fraction of a second that it took to serve a request, but I like to view the data as requests per second. So I wrote a method in the model to invert the performance values (&lt;code&gt;1/seconds_per_request&lt;/code&gt;).&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;h3&gt;Resources&lt;/h3&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;&lt;a href="http://rubyforge.org/projects/sparklines"&gt;Sparklines&lt;/a&gt;&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://rubyforge.org/projects/seattlerb"&gt;Tidy Table gem&lt;/a&gt;&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://www.dsg4.com/04/extra/bitmap/"&gt;Pixel fonts&lt;/a&gt;&lt;/li&gt;
+        		&lt;li&gt;Book: &lt;a href="http://www.amazon.com/gp/product/0596100167?ie=UTF8&amp;#38;tag=rubyonrailswo-20&amp;#38;linkCode=as2&amp;#38;camp=1789&amp;#38;creative=9325&amp;#38;creativeASIN=0596100167"&gt;Information Dashboard Design&lt;/a&gt; by Stephen Few.&lt;/li&gt;
+        		&lt;li&gt;Book: &lt;a href="http://www.amazon.com/gp/product/0970601999?ie=UTF8&amp;#38;tag=rubyonrailswo-20&amp;#38;linkCode=as2&amp;#38;camp=211189&amp;#38;creative=374929&amp;#38;creativeASIN=0970601999"&gt;Show Me the Numbers&lt;/a&gt; also by Stephen Few.&lt;/li&gt;
+        		&lt;li&gt;Book: &lt;a href="http://www.amazon.com/gp/product/0961392177?ie=UTF8&amp;#38;tag=rubyonrailswo-20&amp;#38;linkCode=as2&amp;#38;camp=211189&amp;#38;creative=374929&amp;#38;creativeASIN=0961392177"&gt;Beautiful Evidence&lt;/a&gt; by Edward Tufte.&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;h3&gt;Recently Published at PeepCode&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;&lt;a href="http://peepcode.com/products/activemerchant-pdf/?r=nuby"&gt;&lt;img src="http://peepcode.com/system/previews/activemerchant/activemerchant-cover.png" alt="" /&gt;&lt;/a&gt;&lt;/p&gt; &lt;hr /&gt; &lt;a href='http://peepcode.com/?r=nubyrss'&gt;PeepCode Screencasts&lt;/a&gt; &amp;#8211; Learn Ruby on Rails and Javascript! Hour-long screencasts for $9.
+      </description>
+      <pubDate>Thu, 31 Jan 2008 23:33:04 +0000</pubDate>
+      <guid isPermaLink="false">
+        urn:uuid:de8dab94-d054-11dc-9bc8-00163e092103
+      </guid>
+      <author>topfunky</author>
+      <link>http://nubyonrails.com/articles/better-reporting-with-sparklines</link>
+    </item>
+    <item>
+      <title>Rails Podcast Road Trip to San Francisco</title>
+      <description>
+        &lt;p&gt;&lt;img src="http://nubyonrails.com/system/uploads/2007/rails-podcast.jpg" alt="" /&gt;&lt;/p&gt;
+        
+        
+        	&lt;p&gt;I&amp;#8217;ll be in San Francisco next week (January 15-18)! I have quite a few interviews planned for the &lt;a href="http://podcast.rubyonrails.org"&gt;Rails Podcast&lt;/a&gt; and apparently there&amp;#8217;s a computer conference going on, too.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;I&amp;#8217;m planning to be at Osha Thai, 149 2nd St (&lt;a href="http://maps.google.com/maps?f=q&amp;#38;hl=en&amp;#38;geocode=&amp;#38;time=&amp;#38;date=&amp;#38;ttype=&amp;#38;q=149+2nd+st,+san+francisco&amp;#38;sll=37.809513,-122.423058&amp;#38;sspn=0.134537,0.239639&amp;#38;ie=UTF8&amp;#38;ll=37.788726,-122.399068&amp;#38;spn=0.016822,0.029955&amp;#38;z=15&amp;#38;iwloc=addr&amp;#38;om=1"&gt;map&lt;/a&gt;) on Tuesday night at about 7pm. If you&amp;#8217;re in the area, I&amp;#8217;d love to see you there!&lt;/p&gt; &lt;hr /&gt; &lt;a href='http://peepcode.com/?r=nubyrss'&gt;PeepCode Screencasts&lt;/a&gt; &amp;#8211; Learn Ruby on Rails and Javascript! Hour-long screencasts for $9.
+      </description>
+      <pubDate>Wed, 09 Jan 2008 18:26:39 +0000</pubDate>
+      <guid isPermaLink="false">
+        urn:uuid:6b139c30-bee0-11dc-b1bd-00163e49b5e9
+      </guid>
+      <author>topfunky</author>
+      <link>http://nubyonrails.com/articles/rails-podcast-road-trip-to-san-francisco</link>
+    </item>
+    <item>
+      <title>Chunky Bacon: A Public Service Announcement</title>
+      <description>
+        &lt;div class="figure med" id="figure-a"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2007/chunky-bacon.png" alt="Fox tall and fox small" title="Figure A" /&gt;&lt;div&gt;&lt;strong&gt;Figure A&lt;/strong&gt; Fox tall and fox small&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;In the past few months, I&amp;#8217;ve been on the receiving end of several conversations to the effect of &amp;#8220;Why do you use the word &amp;#8216;bacon&amp;#8217; in some of your code examples? Are you a flaming anti-vegan, or just a pork lobbyist?&amp;#8221;&lt;/p&gt;
+        
+        
+        	&lt;p&gt;I learned Ruby from the classic &lt;a href="http://poignantguide.net/ruby/whatisit.html"&gt;Why&amp;#8217;s Poignant Guide to Ruby&lt;/a&gt;. Or rather, I read &lt;em&gt;The Poignant Guide&lt;/em&gt; cover to cover and then decided to learn Ruby.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;&lt;a href="http://www.holovaty.com/blog/"&gt;Adrian Holovaty&lt;/a&gt; reviewed it by   &lt;a href="http://podcast.rubyonrails.org/transcripts/2006/adrian_holovaty"&gt;saying&lt;/a&gt;&lt;/p&gt;
+        
+        
+        	&lt;blockquote&gt;
+        		&lt;p&gt;I attempted to [read it] then I started sticking a pen in my eye because I was so annoyed.&lt;/p&gt;
+        	&lt;/blockquote&gt;
+        
+        
+        	&lt;p&gt;Unfortunately, &lt;em&gt;The Poignant Guide&lt;/em&gt; is required reading for &lt;span class="caps"&gt;ALL&lt;/span&gt; Ruby programmers! Remove all pens from your pockets, then read at least&amp;#8230;&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;&lt;a href="http://poignantguide.net/ruby/chapter-1.html"&gt;Chapter 1&lt;/a&gt;&amp;#8212;a very short intro&lt;/li&gt;
+        		&lt;li&gt;&lt;a href="http://poignantguide.net/ruby/chapter-3.html"&gt;Chapter 3&lt;/a&gt;&amp;#8212;The most classic chapter of this classic book. I would be willing to bet that 90% of readers have never made it past this chapter, but have subsequently lived meaningful and productive lives.&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;p&gt;Then go back to &lt;a href="http://poignantguide.net/ruby/chapter-2.html"&gt;Chapter 2&lt;/a&gt; and follow it through to the end. There is also a &lt;a href="http://poignantguide.net/sdtrk/"&gt;soundtrack&lt;/a&gt;.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Remember, we need to keep up with other developers who are &lt;a href="http://hackety.org/2007/08/10/myCompleteListOfSubstitutePhrasesForTheActWeNowKnowToBeMonkeypatching.html"&gt;much funnier than us&lt;/a&gt;!&lt;/p&gt;
+        
+        
+        	&lt;p&gt;This has been a public service announcement.&lt;/p&gt; &lt;hr /&gt; &lt;a href='http://peepcode.com/?r=nubyrss'&gt;PeepCode Screencasts&lt;/a&gt; &amp;#8211; Learn Ruby on Rails and Javascript! Hour-long screencasts for $9.
+      </description>
+      <pubDate>Fri, 04 Jan 2008 22:22:20 +0000</pubDate>
+      <guid isPermaLink="false">
+        urn:uuid:83b0f2d6-bb13-11dc-a630-00163e49b5e9
+      </guid>
+      <author>topfunky</author>
+      <link>http://nubyonrails.com/articles/chunky-bacon-a-public-service-announcement</link>
+    </item>
+    <item>
+      <title>About This Blog: Beanstalk Messaging Queue</title>
+      <description>
+        &lt;div class="figure lg" id="figure-a"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2007/q-summary.png" alt="Messaging queues are a tool for executing code without taxing your web application processes." title="Figure A" /&gt;&lt;div&gt;&lt;strong&gt;Figure A&lt;/strong&gt; Messaging queues are a tool for executing code without taxing your web application processes.&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;Web developers often get into the rut of thinking about every programming task in the context of a request and a response. A request comes for a &lt;span class="caps"&gt;URL&lt;/span&gt;, content is retrieved and converted into useful output, then sent back to the client. Lather, rinse, repeat.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;But there are also other types of programming tasks that don&amp;#8217;t fit into that cycle. What about tasks that need to happen&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;at a certain time of day? &lt;/li&gt;
+        		&lt;li&gt;after the response has been sent back to the client?&lt;/li&gt;
+        		&lt;li&gt;at some point in the future after another event has happened?&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;p&gt;Here are some examples from my applications:&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;&lt;strong&gt;Time of day&lt;/strong&gt;: Log parsing, sales reports&lt;/li&gt;
+        		&lt;li&gt;&lt;strong&gt;After a response&lt;/strong&gt;: State-based payment transactions with other servers that need to complete before moving to the next stage, spam-filtering of blog comments against an external &lt;span class="caps"&gt;API&lt;/span&gt; server&lt;/li&gt;
+        		&lt;li&gt;&lt;strong&gt;In the future&lt;/strong&gt;: A task to checkup on an order to make sure it has been delivered within an hour after purchase&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;p&gt;Previously, I approached most of these problems with a few rake tasks and a cron job that ran every minute. While it worked, it wasn&amp;#8217;t as fast as it could be and felt a bit hackish (a delay of even one minute is too slow sometimes).&lt;/p&gt;
+        
+        
+        	&lt;p&gt;For a while, I&amp;#8217;ve wanted to learn more about messaging queues. I love tools that don&amp;#8217;t only enhance something I&amp;#8217;m already doing, but completely change the way I think about designing an application.&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;The Problem&lt;/h3&gt;
+        
+        
+        &lt;div class="figure sm" id="figure-b"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2007/q-Canvas_1.png" alt="If one process calls a resource-intensive method, it won't be available to answer web requests." title="Figure B" /&gt;&lt;div&gt;&lt;strong&gt;Figure B&lt;/strong&gt; If one process calls a resource-intensive method, it won&amp;#8217;t be available to answer web requests.&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;Queues are a great tool for some tasks. Having the ability to send something off to a queue can solve some of these problems and also give you another option for optimizing the speed of normal &lt;span class="caps"&gt;HTTP&lt;/span&gt; responses, too.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Initially, I decided to try this out on my blog. I use the remote Akismet service to check comments for &lt;span class="caps"&gt;SPAM&lt;/span&gt;. To be honest, Akismet is usually fast enough that I could make the call in the middle of the request without any problems, but I wanted to try out the message queue before deploying a similar idea at &lt;a href="http://peepcode.com"&gt;PeepCode.com&lt;/a&gt;.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;In the application, every comment starts out with a &lt;code&gt;received&lt;/code&gt; state (using &lt;a href="http://elitists.textdriven.com/svn/plugins/acts_as_state_machine/"&gt;acts_as_state_machine&lt;/a&gt;). The &lt;code&gt;Comment&lt;/code&gt; controller will fire off a job and a separate worker will handle the &lt;span class="caps"&gt;SPAM&lt;/span&gt;-checking so the web process can respond quickly and get back to work responding to other web requests.&lt;/p&gt;
+        
+        
+        &lt;div class="figure sm" id="figure-c"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2007/q-Canvas_2.png" alt="Sending jobs to a queue keeps Rails processes available to do what they do best...answer web requests." title="Figure C" /&gt;&lt;div&gt;&lt;strong&gt;Figure C&lt;/strong&gt; Sending jobs to a queue keeps Rails processes available to do what they do best&amp;#8230;answer web requests.&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;h3&gt;Messaging Servers&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;There&amp;#8217;s been some fresh activity even just over the last few weeks in this area. Ara Howard &lt;a href="http://www.ruby-forum.com/topic/135018"&gt;compared some of these&lt;/a&gt; recently. I haven&amp;#8217;t evaluated all of these packages, but here are a few I&amp;#8217;ve looked at:&lt;/p&gt;
+        
+        
+        	&lt;table&gt;
+        		&lt;tr&gt;
+        			&lt;td class="small"&gt;Product&lt;/td&gt;
+        			&lt;td class="small"&gt;Features&lt;/td&gt;
+        			&lt;td class="small"&gt;Drawbacks&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;&lt;a href="http://xph.us/software/beanstalkd/"&gt;beanstalkd&lt;/a&gt;&lt;/td&gt;
+        			&lt;td&gt;Fast, simple, designed to mirror the style of memcached. Rails plugin available, or usable with a simple Ruby-based &lt;span class="caps"&gt;API&lt;/span&gt;. Server written in C, but is very easy to install.&lt;/td&gt;
+        			&lt;td&gt;Memory only&amp;#8230;jobs are not persistent. New, so the internal protocol may change. Workers may be difficult to manage.&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;&lt;a href="http://rubyforge.org/forum/forum.php?forum_id=19781"&gt;bj&lt;/a&gt;&lt;/td&gt;
+        			&lt;td&gt;Rails plugin. Self-spawning.&lt;/td&gt;
+        			&lt;td&gt;Can only send shell commands. Jobs start a full copy of your Rails app on every execution.&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;&lt;a href="http://backgroundrb.rubyforge.org"&gt;BackgroundRB&lt;/a&gt;&lt;/td&gt;
+        			&lt;td&gt;Ruby-based. Can be polled for incremental feedback on the progress of a job. Recently rewritten.&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;&lt;a href="http://www.amazon.com/Simple-Queue-Service-home-page/b?ie=UTF8&amp;#38;node=13584001"&gt;Amazon &lt;span class="caps"&gt;SQS&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+        			&lt;td&gt;Runs on Amazon&amp;#8217;s cluster, so it can handle a ton of traffic.&lt;/td&gt;
+        			&lt;td&gt;Operated by Amazon, so it doesn&amp;#8217;t run locally. Not open source.&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;&lt;a href="http://activemq.apache.org/"&gt;Apache ActiveMQ&lt;/a&gt;&lt;/td&gt;
+        			&lt;td&gt;Well-known. Persistent.&lt;/td&gt;
+        			&lt;td&gt;Requires several installation steps and database tables.&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;&lt;a href="http://code.google.com/p/activemessaging/wiki/ActiveMessaging"&gt;ActiveMessaging&lt;/a&gt;&lt;/td&gt;
+        			&lt;td&gt;Rails plugin. Works with ActiveMQ and others.&lt;/td&gt;
+        			&lt;td&gt;Requires external job server.&lt;/td&gt;
+        		&lt;/tr&gt;
+        		&lt;tr&gt;
+        			&lt;td&gt;&lt;a href="http://pastie.textmate.org/private/vxqxcvv40omkrhvnzp6a"&gt;&lt;span class="caps"&gt;BBQ&lt;/span&gt;&lt;/a&gt;&lt;/td&gt;
+        			&lt;td&gt;Nothing to install&amp;#8230;involves only a single line of code!&lt;/td&gt;
+        			&lt;td&gt;Doesn&amp;#8217;t work on Windows &lt;span class="caps"&gt;NT4&lt;/span&gt;.&lt;/td&gt;
+        		&lt;/tr&gt;
+        	&lt;/table&gt;
+        
+        
+        
+        
+        	&lt;p&gt;For this blog, I chose to try &lt;a href="http://xph.us/software/beanstalkd/"&gt;beanstalkd&lt;/a&gt;.&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;It is not persistent and exists only in memory, but my application uses &lt;a href="http://elitists.textdriven.com/svn/plugins/acts_as_state_machine/"&gt;acts_as_state_machine&lt;/a&gt;, so I can see if any job failed to run.&lt;/li&gt;
+        		&lt;li&gt;It&amp;#8217;s very fast and was made to help with scaling a multi-million person Facebook app running on Rails. &lt;/li&gt;
+        		&lt;li&gt;There are some nice features like delayed jobs. Put a job in the queue and it can show up immediately, or after a period of time.&lt;/li&gt;
+        		&lt;li&gt;There is a Ruby client and a &lt;a href="http://async-observer.rubyforge.org/"&gt;Rails plugin&lt;/a&gt;.&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;h3&gt;Installation&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;Download the &lt;a href="http://xph.us/software/beanstalkd/"&gt;beanstalkd&lt;/a&gt; server and compile it. Use &lt;code&gt;make&lt;/code&gt; for production or &lt;code&gt;make debug&lt;/code&gt; for your development copy (to print out extra messages as it&amp;#8217;s working). There&amp;#8217;s no task to install it, but you can just copy the executable to &lt;code&gt;/usr/local/bin&lt;/code&gt;.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Start the server (use &lt;code&gt;-h&lt;/code&gt; to see other possible arguments):&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code&gt;% beanstalkd
+        beanstalkd: net.c:90 in unbrake: releasing the brakes&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;p&gt;Install the &lt;a href="http://beanstalk.rubyforge.org/"&gt;beanstalk-client&lt;/a&gt; gem. For this blog, I chose to use the gem directly.&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code class="ruby"&gt;sudo gem install beanstalk-client&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;p&gt;In &lt;code&gt;merb_init.rb&lt;/code&gt; (or &lt;code&gt;config/environment.rb&lt;/code&gt;), I setup a connection to the beanstalk server.&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code class="ruby"&gt;BEANSTALK = Beanstalk::Pool.new(['localhost:11300'])&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;p&gt;In the &lt;code&gt;Comments&lt;/code&gt; controller, I put a comment job into the queue, using the &lt;code&gt;id&lt;/code&gt; of the new comment.&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code class="ruby"&gt;# Comments controller
+        def create
+          @comment = Comment.new(params[:comment])
+          if @comment.save
+            BEANSTALK.yput({:type =&amp;gt; "comment", :id =&amp;gt; @comment.id}) rescue nil
+            # Then redirect and return&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;p&gt;The &lt;code&gt;yput&lt;/code&gt; method uses &lt;span class="caps"&gt;YAML&lt;/span&gt; to serialize any arguments and put them into the queue.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;Finally, I wrote a &lt;code&gt;rake&lt;/code&gt; task to function as the worker.&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code class="ruby"&gt;loop do
+          job = BEANSTALK.reserve
+          # ybody deserializes the job
+          job_hash = job.ybody
+          case job_hash[:type]
+          when "comment" 
+            if Comment.check_for_spam(job_hash[:id])
+              job.delete
+            else
+              job.bury
+            end
+          else
+            puts "Don't know what type of job this is: #{job_hash.inspect}" 
+          end
+        end&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;p&gt;In the future, I&amp;#8217;d like to look into using &lt;a href="http://redhanded.hobix.com/inspect/daemonize.html"&gt;daemonize&lt;/a&gt; or some other method for running the worker. In the meantime, I&amp;#8217;m using &lt;a href="http://god.rubyforge.org/"&gt;god&lt;/a&gt; to start the worker and keep it running.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;The details are a bit of a hack, but here is the &lt;a href="http://pastie.textmate.org/private/ovgxu2ihoicli2ktrwtbew"&gt;god.conf&lt;/a&gt; if you want to try it. The benefit is that god keeps the worker running and daemonizes it so it runs in the background.&lt;/p&gt;
+        
+        
+        &lt;pre&gt;&lt;code&gt;sudo god start -c /var/www/apps/mysite.com/current/config/god.conf&lt;/pre&gt;&lt;/code&gt;
+        
+        
+        	&lt;p&gt;I can also call &lt;code&gt;god restart beanstalk-worker&lt;/code&gt; from a Capistrano task to restart it and keep the code fresh.&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;Results&lt;/h3&gt;
+        
+        
+        &lt;div class="figure lg" id="figure-d"&gt;&lt;img src="http://nubyonrails.com/system/uploads/2007/q-comments.png" alt="The comments screen shows the state of comments." title="Figure D" /&gt;&lt;div&gt;&lt;strong&gt;Figure D&lt;/strong&gt; The comments screen shows the state of comments.&lt;/div&gt;&lt;/div&gt;
+        
+        
+        	&lt;p&gt;In practice over the past week or so, this has been very reliable. The message passing is so fast that sometimes it actually runs the &lt;span class="caps"&gt;SPAM&lt;/span&gt; check before the redirect back to the article page is done!&lt;/p&gt;
+        
+        
+        	&lt;p&gt;It was fairly simple to setup and now provides me with a tool for accomplishing tasks that don&amp;#8217;t need to be completed in the scope of an &lt;span class="caps"&gt;HTTP&lt;/span&gt; response.&lt;/p&gt;
+        
+        
+        	&lt;h3&gt;Tips&lt;/h3&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;&lt;strong&gt;Keep queue items small&lt;/strong&gt;. Put an &lt;code&gt;id&lt;/code&gt; and some kind of identifier, not an entire model. I could have stored the entire contents of the comment, but it&amp;#8217;s more efficient to just pass the &lt;code&gt;id&lt;/code&gt; of the comment and let the worker get a current copy from the database.&lt;/li&gt;
+        		&lt;li&gt;&lt;strong&gt;Keep worker code small&lt;/strong&gt;: By calling methods on the &lt;code&gt;Comment&lt;/code&gt; model, I keep the code in one place (even though it will be executed in different contexts).&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;h3&gt;Future&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;Now that it&amp;#8217;s working smoothly here, I hope to use it on PeepCode. Some possibilities:&lt;/p&gt;
+        
+        
+        	&lt;ul&gt;
+        	&lt;li&gt;&lt;strong&gt;Google Checkout pings&lt;/strong&gt;: I need to ping Google after their server notifies me that an order has passed a security check. It can&amp;#8217;t be done in a model callback because I need to complete an &lt;span class="caps"&gt;XML&lt;/span&gt; response to Google before moving to the next state. This kind of setup will be perfect since I can put a job in the queue and give it a small delay before it runs.&lt;/li&gt;
+        		&lt;li&gt;&lt;strong&gt;Order followup in the future&lt;/strong&gt;: I currently have some cron jobs that check recent orders to make sure they have completed succesfully. It would be easy to use this system to put several jobs in the queue after an order is placed. They would run after 30 minutes, 1 hour, or 2 hours. The job would send a notification if the order has not been completed, or ignore it if it&amp;#8217;s done by the time the job runs.&lt;/li&gt;
+        	&lt;/ul&gt;
+        
+        
+        	&lt;h3&gt;Finally, PeepCode in Italiano!&lt;/h3&gt;
+        
+        
+        	&lt;p&gt;Ryan Daigle&amp;#8217;s &lt;a href="http://peepcode.com/products/rails2-pdf"&gt;Rails 2 &lt;span class="caps"&gt;PDF&lt;/span&gt;&lt;/a&gt; is now available in &lt;a href="http://peepcode.com/products/rails-2-pdf-it"&gt;Italiano&lt;/a&gt; as well as English and &lt;a href="http://peepcode.com/products/rails-2-pdf-es"&gt;Español&lt;/a&gt;.&lt;/p&gt;
+        
+        
+        	&lt;p&gt;&lt;a href="http://peepcode.com/products/rails-2-pdf-it"&gt;&lt;img src="https://peepcode.com/system/previews/rails2-it/query.png" alt="" /&gt;&lt;/a&gt;&lt;/p&gt; &lt;hr /&gt; &lt;a href='http://peepcode.com/?r=nubyrss'&gt;PeepCode Screencasts&lt;/a&gt; &amp;#8211; Learn Ruby on Rails and Javascript! Hour-long screencasts for $9.
+      </description>
+      <pubDate>Thu, 20 Dec 2007 20:56:14 +0000</pubDate>
+      <guid isPermaLink="false">
+        urn:uuid:00300d06-af3e-11dc-9262-00163e49b5e9
+      </guid>
+      <author>topfunky</author>
+      <link>http://nubyonrails.com/articles/about-this-blog-beanstalk-messaging-queue</link>
+    </item>
+  </channel>
+</rss>

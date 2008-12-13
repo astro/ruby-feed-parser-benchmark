@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/rss2full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>Particletree</title>
+	
+	<link>http://particletree.com</link>
+	<description>Particletree is the beginning of something. This place, this collection of knowledge, is a gathering of forces, a sharpening of skills.</description>
+	<pubDate>Thu, 30 Oct 2008 17:51:35 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6.3</generator>
+	<language>en</language>
+			<geo:lat>28.031088</geo:lat><geo:long>-82.605931</geo:long><creativeCommons:license>http://creativecommons.org/licenses/by/3.0/</creativeCommons:license><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://particletree.com/rss/" type="application/rss+xml" /><feedburner:emailServiceId>126408</feedburner:emailServiceId><feedburner:feedburnerHostname>http://www.feedburner.com</feedburner:feedburnerHostname><feedburner:browserFriendly>This is an XML content feed. It is intended to be viewed in a newsreader or syndicated to another site, subject to copyright and fair use.</feedburner:browserFriendly><item>
+		<title>How We Prepare a Demo</title>
+		<link>http://feeds.feedburner.com/~r/particletree/~3/436567177/</link>
+		<comments>http://particletree.com/features/how-we-prepare-a-demo/#comments</comments>
+		<pubDate>Thu, 30 Oct 2008 05:15:23 +0000</pubDate>
+		<dc:creator>Kevin Hale</dc:creator>
+		
+		<category><![CDATA[Features]]></category>
+
+		<guid isPermaLink="false">http://particletree.com/?p=568</guid>
+		<description>Introduction
+
+While I&amp;#8217;ve highlighted best practices and resources on how to pitch your ideas in the past, I thought I&amp;#8217;d take some time to share exactly how we prepare for our demos when we&amp;#8217;ve been invited to showcase Wufoo at conferences, events and VC boardrooms. We&amp;#8217;ve spent a lot of time refining and practicing our workflow [...]</description>
+			<content:encoded><![CDATA[<h3>Introduction</h3>
+
+<p>While I&#8217;ve highlighted best practices and resources on <a href="http://particletree.com/notebook/pitching-ideas-roundup/">how to pitch your ideas</a> in the past, I thought I&#8217;d take some time to share exactly how we prepare for our demos when we&#8217;ve been invited to showcase Wufoo at conferences, events and VC boardrooms. We&#8217;ve spent a lot of time refining and practicing our workflow for presentations and after doing this a number of times now, I think we have a method that seems to <a href="http://wufoo.com/2007/03/28/wufoo-at-under-the-radar/">produce results</a> that we&#8217;ve been pretty proud of. While the amount of prep work we do probably isn&#8217;t for everyone and might be overkill to some of you, hopefully there will be some tips in here that will help you in your own presentations and demos.</p>
+
+<p><a class="ptad" href="http://wufoo.com/?gad=CO_3o6UDEghyApM_y2FKeRjZ8LH7AyDP_uch&#038;gkw=submit+button" title="HTML Form Builder"><img src="/images/ads/wufooad10.gif" alt="HTML Form Builder" /></a></p>
+
+<p>For all the examples in this article, I&#8217;ll be referring to the prep materials I generated for a 7 minute demo we were asked to do this past summer at the <a href="http://convention.nscs.org/">National Society of Collegiate Scholars</a> Convention in Orlando, FL. Because we (the founders) have demoed Wufoo countless times, we had one of our new hires, Tim Sabat, do the presentation to get some experience under his belt. Because this would be his first time with the material and because we&#8217;re obsessed about polish, you&#8217;ll notice that we leave very little to chance and improvisation.</p>
+
+<h3>Getting Started</h3>
+
+<p>If we&#8217;re presenting something completely new, we&#8217;ll start about a week before the presentation. If it&#8217;s something I&#8217;ve presented before and I have the slides and prep work already done, then I can probably get away with looking at stuff a day or two before. Either way, I&#8217;m probably going to be working and tweaking the slides all the way up until the moment before it&#8217;s time to go on stage. Because I wanted to try a new script (Wufoo had a lot of upgrades since the last time we demoed it) and Tim was new to this, I treated this presentation as if I were creating it from scratch.</p>
+
+<p>We like to start every presentation with a rough outline. In fact, I pretty much start every thing I ever write with an outline and it&#8217;s one of the most common recommendations I have for people that have trouble with rambling and organization. It seems obvious, but you&#8217;d be surprised at the number of people that try to wing these things. Outlines keep us focused and help us make sure we hit the points that we need to cover like who we are, what we do, who uses us and the major features we want to highlight in the app. Here&#8217;s the <a href="http://s3.amazonaws.com/particletree-keynotes/NSCS/WufooDemoOutline.txt">outline I developed for our NSCS demo</a>.</p>
+
+<pre><code>Introduction
+
+- Particletree
+- Treehouse
+- Wufoo
+
+What is Wufoo?
+- online form builder
+- help people collect information over web
+- Infopath but friendlier
+
+etc.
+</code></pre>
+
+<h3>The Transcript</h3>
+
+<p>If the time allotted for the demo is under 15 minutes, which this was, then I basically take that outline and write out a full transcript&#8212;a word for word articulation of what would be said during the presentation. Not going to lie, it&#8217;s a lot of work to do this, but it&#8217;s definitely worth it. During a 6-8 minute demo, there isn&#8217;t any time to waste on finding your words. We believe a good short demo is like a  good short story&#8212;it&#8217;s carefully crafted. Even with material that feels like I should be very familiar and intimate with it (like talking about a startup and application I created from the ground up), I feel much more comfortable knowing that if I have a brain fart on stage, there&#8217;s a safety net for me to read from. Here&#8217;s a copy of the <a href="http://s3.amazonaws.com/particletree-keynotes/NSCS/WufooDemoTranscript.txt">final transcript I made for Tim for our NSCS demo</a>.</p>
+
+<p><a href="http://www.flickr.com/photos/wufoo/2780683763/" title="Wufoo Demo Transcript by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3015/2780683763_28c38f4676_o.png" width="606" height="346" alt="Wufoo Demo Transcript" /></a></p>
+
+<p>The first version of this transcript is written as fast as possible since I know that it&#8217;ll go through lots of revisions when we start timing it and whittling it down. After the first draft is done, I&#8217;ll do a time check. Basically, I time how long it takes to read the introduction, how long it takes to read the demo and how long it takes to read the closing. I&#8217;m careful to make sure I&#8217;m reading slowly but clearly (I actually have a problem with speaking too fast when I&#8217;m confident), which is probably the most important part of this process. For me, I know I&#8217;m reading at the right pace when it starts to feel a little uncomfortable. Timing and reading out loud will let you know where there&#8217;s flow problems and also what needs to be cut or made more succinct.</p>
+
+<p>For this presentation we aimed for about 2:45 in the introduction, 2 minutes for the demo and then about 2 minutes for the closing. Now, when we first launched Wufoo, we didn&#8217;t have any of the information on traction and usage and so during those presentations, our intro was obviously shorter and our demo time was then extended to show more features. One thing we&#8217;ve learned about demoing features is that it&#8217;s impossible to show everything. Even if I took the entire 7 minutes, I couldn&#8217;t show all the things possible with Wufoo and so it was important for us to hit the highlights and then compromise by just showing screenshots of other major features to wet an audience&#8217;s appetite and imagination for more.</p>
+
+<p>After I was happy with what I came up with, I sent a copy off to Tim so he can look over it and let me know what phrasings didn&#8217;t sound like him or felt uncomfortable rolling off his tongue. I&#8217;ll also have him do a time check since he&#8217;ll actually be presenting. When that&#8217;s done, I&#8217;ll leave him to practice while I work on the slides.</p>
+
+<h3>The Slides</h3>
+
+<p>I do all of our presentation work in <a href="http://www.apple.com/iwork/keynote/">Keynote</a>. We&#8217;re all on Macs and so it&#8217;s very convenient. And while I do love the way everything looks on it, I&#8217;m pretty sure I could be just as effective with the latest version of <a href="http://office.microsoft.com/en-us/powerpoint/FX100487761033.aspx">Powerpoint</a>. Here&#8217;s a copy of the <a href="http://s3.amazonaws.com/particletree-keynotes/NSCS/WufooDemo.pdf">slides from the NSCS Demo</a>.</p>
+
+<p><a href="http://www.flickr.com/photos/wufoo/2985775820/" title="Untitled by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3197/2985775820_4ea58e61ae.jpg" width="500" height="381" alt="" /></a></p>
+
+<p>The nice thing about making slides from a transcript is that it&#8217;s much more efficient. When I&#8217;ve made presentations based on just an outline in the past, I would usually waste a lot of time making a bunch of pretty slides that ended up being cut out of the final presentation after going through a few rehearsals and timings. In regards to actually designing it, there are so many ways to effectively illustrate a presentation. Since we&#8217;ve covered this <a href="http://particletree.com/notebook/powerpoint-and-presentation-tips/">in</a> <a href="http://particletree.com/notebook/great-speakers/">past</a> <a href="http://particletree.com/notebook/pitching-ideas-roundup/">articles</a>, I&#8217;ll just share some of the things I like to do when I design one:</p>
+
+<ul>
+<li><p>As you can see from the slide overview above, I like to use a lot of bright colors, images and screenshots. I prefer to illustrate rather than explain.</p></li>
+<li><p>When showing a web site, I&#8217;ll cover a screenshot of the site with the <a href="http://www.flickr.com/photos/wufoo/2984919931/">url in large text</a> so it&#8217;s easy to read even in the back of the room.</p></li>
+<li><p>When I purposely want the audience to feel overwhelmed, I&#8217;ll show lots of <a href="http://www.flickr.com/photos/wufoo/2984919961/">text</a> or <a href="http://www.flickr.com/photos/wufoo/2985775628/">images</a> on a single slide. Otherwise, it&#8217;s never more than a short sentence, if that.</p></li>
+<li><p><a href="http://www.flickr.com/photos/wufoo/2780683733/">Duplicate the first slide</a>. A tip I got from Tim. This way you can leave it up on a screen without my notes showing or the timer starting.</p></li>
+<li><p>Try to use <a href="http://www.flickr.com/photos/wufoo/2984920057/">humor</a> when possible. Sparingly and tastefully, of course.</p></li>
+<li><p>Add any slides at the end that will easily answer some of the most commonly asked questions (this is why pricing page is added after the Thanks! slide).</p></li>
+</ul>
+
+<p>Additionally, I try to avoid using any transitions or animations in my presentation. I know some of them can be really slick, but in a demo with strict time limits, not only do I fee like I don&#8217;t have any time to waste, but I also don&#8217;t want the audience distracted by eye candy that makes them wonder about the software powering the presentation over what&#8217;s actually being said.</p>
+
+<h3>Using Notes</h3>
+
+<p>In Keynote (and I&#8217;m pretty sure in Powerpoint as well), you can add notes to each slide that will only display on your laptop when showing slides through a secondary display. Honestly, I think this notes feature is one of the most under-appreciated features in presentation applications. Ever since I&#8217;ve started using them, I&#8217;ve never gotten lost again or wondered why a certain slide was showing in the middle of a presentation. And so after the slides are done, I&#8217;ll start to copy and paste the appropriate sections in the transcript into the notes for each slide. Here&#8217;s a copy of the <a href="http://s3.amazonaws.com/particletree-keynotes/NSCS/WufooDemoWithNotes.pdf">slides with the transcript inserted as notes</a>.</p>
+
+<p><a href="http://www.flickr.com/photos/wufoo/2780683489/" title="slidetextformat2 by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3109/2780683489_6754ba3983.jpg" width="500" height="365" alt="slidetextformat2" /></a></p>
+
+<p>One thing that you&#8217;ll notice in the slides with notes is that <a href="http://www.flickr.com/photos/wufoo/2780683267/">certain sentences or phrases</a> are copied across multiple slides and formatted with odd line breaks. The duplication is done so that if a sentence is illustrated by multiple slides, the rhythm of a sentence won&#8217;t be disturbed during the slide changes. Each new paragraph represents when the presenter should proceed to the next slide.</p>
+
+<p>In Keynote, I&#8217;m not a fan of the default layout for showing notes. Thankfully, you can change these settings under <strong>Preferences -> Presenter Display -> Edit Presenter Layout&#8230;</strong></p>
+
+<p><a href="http://www.flickr.com/photos/wufoo/2780683117/" title="keynotepreferences2 by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3238/2780683117_9854f8a02e.jpg" width="500" height="374" alt="keynotepreferences2" /></a></p>
+
+<p>Obviously, you should experiment and find the layout that works best for you, but I like to maximize the amount of notes I can see and so the presenter layouts for my keynotes are set up like this:</p>
+
+<p><a href="http://www.flickr.com/photos/wufoo/2780683023/" title="keynoteslidesetup by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3102/2780683023_b1efa393f4.jpg" width="500" height="348" alt="keynoteslidesetup" /></a></p>
+
+<h3>Pre-Recorded Screencast</h3>
+
+<p>There are a number of studies out there that show that <a href="http://www.codinghorror.com/blog/archives/000691.html">mult-tasking is a myth</a>. Our brains aren&#8217;t meant to do it. It should therefore be no surprise that driving your application and talking about it articulately at the same time is a really hard thing to do well&#8212;especially, when you&#8217;re under pressure to do so in a narrow range of time. During practices, we&#8217;d notice that when we tried this, it was never smooth. There would be awkward gaps of silence whenever any thought processing needed to be done to show off a feature and, for some reason, the ability to type always seemed to escape the person when they were talking at the same time. That&#8217;s when we made our demos a two man operation.</p>
+
+<p><a href="http://flickr.com/photos/briansolis/432639397/"><img src="http://farm1.static.flickr.com/145/432639397_f0297cf3da.jpg" alt="Kevin and Chris at Under the Radar by Brian Solis" /></a></p>
+
+<p>One person would drive the application and the other person would do a running commentary of what was happening on the screen. This worked out alright, but it also had its issues. For example, there would be this awkward transition where you have to wait to pull out of the program and then open a browser to start the demo part. Because of this, you couldn&#8217;t fall back on your notes inside the presentation software, which means you have to effectively completely memorize this part of the sequence along with your driver.</p>
+
+<p>You could bring two laptops, but most displays at conferences aren&#8217;t prepared for this setup and you end up with an even more awkward transition that has the potential for a dreaded AV malfunction. Additionally, this also added two additional variables to your presentation: another person and another piece of software. In addition to having to pay for two people to do every demo, you and your driver both have to be in sync and your application just has to work. Even though we would run everything off a development localhost on our laptop so we wouldn&#8217;t have to rely on an Internet connection, it always made us nervous. And so after a few presentations run like this, we decided that it would be better to just pre-record the demo as a screencast. Here&#8217;s a copy of the <a href="http://s3.amazonaws.com/particletree-keynotes/NSCS/WufooNSCS.mov">movie used in the NSCS demo</a>.</p>
+
+<p><object width="500" height="373"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=2091884&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=ffffff&amp;fullscreen=1" />  <embed src="http://vimeo.com/moogaloop.swf?clip_id=2091884&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=ffffff&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="500" height="373"></embed></object></p>
+
+<p>Using a screencast solved the awkward transition problem, allowed us to still utilize notes, eliminate the variables of another person and software and made sure that we would not go over on time for that part of the demo. Keynote makes it very easy to insert movies into presentations. Just drag the movie into a blank slide and it&#8217;ll work pretty much like you expect. The only problem I have with it in Keynote is that the movie only plays on the secondary display and not in the presenter layout view and so you have to make sure you&#8217;re looking on the screen behind you so that you start speaking at the same time. But when it&#8217;s done right, it&#8217;s a pretty smooth experience.</p>
+
+<p>The down side, of course, is that you have to do a lot more work ahead of time in prep. For the NSCS demo, I had Tim read off the demo portion of the script while I recorded myself doing the screencast with <a href="http://www.ambrosiasw.com/utilities/snapzprox/">Snapz Pro X</a> without the sound. It took us about 10 takes to get it just right and in the time span that we wanted.</p>
+
+<h3>Keynote Display Preferences</h3>
+
+<p>And that&#8217;s pretty much how we do it. After all the prep work is done, it&#8217;s pretty much up to the presenter to practice it enough for a smooth delivery and to memorize enough of the material so that they don&#8217;t have to rely on the script. Before I leave you to make and modify your own demos, I&#8217;d like to quickly share with you one last tip. Make sure you set up your presentation display settings ahead of time if you&#8217;re using Keynote. Here&#8217;s our settings:</p>
+
+<p><a href="http://www.flickr.com/photos/wufoo/2780683077/" title="keynotepreferences by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3287/2780683077_c6f8673618.jpg" width="500" height="374" alt="keynotepreferences" /></a></p>
+
+<p>Basically, have it set up to <strong>Present on secondary display</strong> and then definitely check your Display Preferences to make sure <strong>Show displays in menu bar</strong> is checked off so you can easily make adjustments on the spot. When you&#8217;re plugged into the secondary display, then you&#8217;ll want to make sure your Mac is <strong>not mirroring the primary display</strong> (done in display preferences). If that&#8217;s done right, your presenter notes will show properly on your laptop and keep you from looking like a spaz when the projector isn&#8217;t doing what you expected. Alright, good luck and happy demoing!</p>
+ <p><a class="ptad" href="http://wufoo.com" title="HTML Form Builder"><img src="http://particletree.com/images/ads/wufooad1.gif" alt="HTML Form Builder" /></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/particletree?a=L22eM"><img src="http://feeds.feedburner.com/~f/particletree?i=L22eM" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=dAnhM"><img src="http://feeds.feedburner.com/~f/particletree?i=dAnhM" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=eX2qm"><img src="http://feeds.feedburner.com/~f/particletree?i=eX2qm" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/particletree/~4/436567177" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://particletree.com/features/how-we-prepare-a-demo/feed/</wfw:commentRss>
+<enclosure url="http://s3.amazonaws.com/particletree-keynotes/NSCS/WufooNSCS.mov" length="6124990" type="video/quicktime" />
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=particletree&amp;itemurl=http%3A%2F%2Fparticletree.com%2Ffeatures%2Fhow-we-prepare-a-demo%2F</feedburner:awareness><feedburner:origLink>http://particletree.com/features/how-we-prepare-a-demo/</feedburner:origLink></item>
+		<item>
+		<title>Beautiful Code Roundup</title>
+		<link>http://feeds.feedburner.com/~r/particletree/~3/428787337/</link>
+		<comments>http://particletree.com/notebook/beautiful-code-roundup/#comments</comments>
+		<pubDate>Wed, 22 Oct 2008 17:52:25 +0000</pubDate>
+		<dc:creator>Alex Vazquez</dc:creator>
+		
+		<category><![CDATA[Notebooks]]></category>
+
+		<guid isPermaLink="false">http://particletree.com/?p=554</guid>
+		<description>Over the last few months, the Wufoo Team has been steadily refactoring their code base to work with a new more flexible and more powerful API we&amp;#8217;ve developed on the backend. In that process, I&amp;#8217;ve had the opportunity to rewrite some of Wufoo&amp;#8217;s oldest code from the founder&amp;#8217;s earlier, more hectic days.
+
+One thing that&amp;#8217;s really [...]</description>
+			<content:encoded><![CDATA[<p>Over the last few months, the Wufoo Team has been steadily <a href="http://en.wikipedia.org/wiki/Refactoring">refactoring</a> their code base to work with a new more flexible and more powerful API we&#8217;ve developed on the backend. In that process, I&#8217;ve had the opportunity to rewrite some of Wufoo&#8217;s oldest code from the founder&#8217;s earlier, more hectic days.</p>
+
+<p>One thing that&#8217;s really nice about working with Wufoo is that the attention to detail doesn&#8217;t stop at just our UI. Whether it&#8217;s the efficiency of a query or the tools we&#8217;ve developed for backend development and benchmarking, the team is equally fanatical about making the code on the inside as beautiful as the design on the outside. In fact, whenever one of us is creating a brand new feature or interacting with an old, inflexible piece of code, we&#8217;ll take the additional time to ensure that it&#8217;s clean and readable for any future programmers working on that code.</p>
+
+<p>The thing I like about our rewrites is that the focus isn&#8217;t solely on making it work. We also always strive to make it easy to work with&#8212;basically, creating maintainable code. Now, making sure our new code is clear and easy-to-read can be a tedious process that slows down the initial pace of development. But, we&#8217;re all firm believers that while the last programmer to write a piece of code might not have known any better, it pays off when Alex, the Programmer of the Present, is nice to Future Alex, the guy that&#8217;s going to have to fix the bugs left behind.</p>
+
+<p>While reading through lots of code can give you an appreciation of what well-written code looks and feels like, the ability to create it is a skill that is developed from experience and frustration. Luckily, there are a number of excellent articles and books out there to help the aspiring code perfectionist. The following resources are ones that have helped me personally strive to write code worth looking at&#160;:</p>
+
+<h3>Articles</h3>
+
+<ul>
+<li><p><a href="http://www.perforce.com/perforce/papers/prettycode.html">Seven Pillars of Pretty Code</a> - Sage advice from the developers at Perforce. A great article and example giving credibility to the fact that maintainable code is essential to a software development companies bottom line.</p></li>
+<li><p><a href="http://www.wilshipley.com/blog/2007/05/pimp-my-code-part-14-be-inflexible.html">Code Brevity</a> - Advice on the benefits of being succinct. Learn about the dangers of over thinking your solution and overestimating your problem.</p></li>
+<li><p><a href="http://www.artima.com/weblogs/viewpost.jsp?thread=74230">Style is Substance</a> - &#8220;What benefits do we get from freedom of style that outweighs the cost we pay for it?&#8221;</p></li>
+</ul>
+
+<h3>Books</h3>
+
+<ul>
+<li><p><a href="http://www.amazon.com/Beautiful-Code-Leading-Programmers-Practice/dp/0596510047/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1222203012&amp;sr=1-1">&#8220;Creating Code as an Essay&#8221;, Beautiful Code</a> - A description of the principles that guided Yukihiro Matsumoto&#8217;s goal of making Ruby a language that creates happy productive programmers.</p></li>
+<li><p><a href="http://www.amazon.com/Domain-Driven-Design-Tackling-Complexity-Software/dp/0321125215/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1222202796&amp;sr=1-1">Domain Driven Design</a> - Stresses the importance and benefits of clear communication in a development team&#8217;s code, design, and even speech. Describes a ubiquitous language and design as the base of a products distilled knowledge.</p></li>
+<li><p><a href="http://www.amazon.com/Refactoring-Improving-Existing-Addison-Wesley-Technology/dp/0201485672/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1222201952&amp;sr=8-1">Refactoring: Improving the Design of Existing  Code</a> - A guide to improving program internals from with the wisdom of lifelong programmers&#8217; experiences. &#8220;Refactoring is the process of changing a software system in such a way that it does not alter the external behavior of the code yet improves its internal structure.&#8221;</p></li>
+<li><p><a href="http://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1222202511&amp;sr=1-1">Code Complete 2, Themes in Software Craftmanship, Chapter 34&#160;</a> - &#8220;Communication with other people is the motivation behind the quest for the Holy Grail of self-documenting code.&#8221;</p></li>
+</ul>
+ <p><a class="ptad" href="http://wufoo.com" title="HTML Form Builder"><img src="http://particletree.com/images/ads/wufooad1.gif" alt="HTML Form Builder" /></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/particletree?a=BU72M"><img src="http://feeds.feedburner.com/~f/particletree?i=BU72M" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=WHyzM"><img src="http://feeds.feedburner.com/~f/particletree?i=WHyzM" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=k61Zm"><img src="http://feeds.feedburner.com/~f/particletree?i=k61Zm" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/particletree/~4/428787337" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://particletree.com/notebook/beautiful-code-roundup/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=particletree&amp;itemurl=http%3A%2F%2Fparticletree.com%2Fnotebook%2Fbeautiful-code-roundup%2F</feedburner:awareness><feedburner:origLink>http://particletree.com/notebook/beautiful-code-roundup/</feedburner:origLink></item>
+		<item>
+		<title>Be Kind to the Color Blind</title>
+		<link>http://feeds.feedburner.com/~r/particletree/~3/426594604/</link>
+		<comments>http://particletree.com/features/interfaces-and-color-blindness/#comments</comments>
+		<pubDate>Mon, 20 Oct 2008 16:57:08 +0000</pubDate>
+		<dc:creator>Chris Campbell</dc:creator>
+		
+		<category><![CDATA[Features]]></category>
+
+		<guid isPermaLink="false">http://particletree.com/?p=516</guid>
+		<description>Introduction
+
+Hi, my name is Chris Campbell and I have a color vision deficiency. Like roughly 7-10% of all males, my deuteranomaly makes it difficult to differentiate between some colors, like red and green. Color deficiency, or color blindness as it&amp;#8217;s commonly referred to, doesn&amp;#8217;t mean that I or people with similar conditions cannot see certain [...]</description>
+			<content:encoded><![CDATA[<h3>Introduction</h3>
+
+<p>Hi, my name is Chris Campbell and I have a color vision deficiency. Like roughly <a href="http://en.wikipedia.org/wiki/Color_blindness#Prevalence">7-10% of all males</a>, my deuteranomaly makes it difficult to differentiate between some colors, like red and green. Color deficiency, or color blindness as it&#8217;s commonly referred to, doesn&#8217;t mean that I or people with similar conditions cannot see certain colors. They&#8217;re not invisible and I don&#8217;t see in black and white (a condition that is actually very, very rare). I can still use crayons effectively, find meaning in beautiful sunsets and even enjoy clear blue skies. What it does mean is that certain colors in the visual spectrum look a lot like one another and so I have a hard time sometimes telling the difference between certain colors and even shades.</p>
+
+<p><a class="ptad" href="http://wufoo.com/?gad=CO_3o6UDEghyApM_y2FKeRjZ8LH7AyDP_uch&#038;gkw=submit+button" title="HTML Form Builder"><img src="/images/ads/wufooad10.gif" alt="HTML Form Builder" /></a></p>
+
+<p>Because of this, designing software and interfaces that will also work effectively for people like me takes a bit of concerted effort. Of all the <a href="http://www.johnlovett.com/test.htm">elements of design</a> (line, shape, size, texture, etc.), color is probably one of the most used elements to pass on informational states. This is probably because it allows a designer to say many things without having to change the form or layout of the design. While there are a number of <a href="http://www.456bereastreet.com/archive/200709/10_colour_contrast_checking_tools_to_improve_the_accessibility_of_your_design/">simulators and plugins</a> that can help you &#8220;visualize&#8221; what a color deficient person might be seeing, I honestly don&#8217;t recommend spending a lot of time with them. Instead, I&#8217;d like to propose just a few simple guidelines along with plenty of examples to help you effectively ensure that a good percentage of your audience won&#8217;t misinterpret your message.</p>
+
+<h3>Avoid Using Colors Alone as Visual Cues</h3>
+
+<p>Using color and color alone as a visual cue is appealing because it&#8217;s usually an aesthetically pleasing and a minimalist design technique. Calls to action and visual cues are critical to interface designers because users, especially on the web, have <a href="http://eyetrack.poynter.org/keys_01.html">limited patience</a> and are looking to process information and make decisions quickly. Since the brain recognizes and <a href="http://findarticles.com/p/articles/mi_m0FCR/is_3_38/ai_n6249223">forms an emotional bond</a> with colors almost immediately, colors are a natural choice for visual cues. Unfortunately, it&#8217;s easy to alienate or confuse some of your users when some of those aesthetically pleasing colors look very similar. To point out a few interfaces that use hard to differentiate colors as visual cues, here are a few examples that have given me some trouble.</p>
+
+<p><strong>Bad Cues</strong></p>
+
+<div class="inlineImages">
+<a href="http://www.flickr.com/photos/wufoo/2919012489/" title="Apple iPhone Availability by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3177/2919012489_ec4e236bf9.jpg" height="155" alt="Apple iPhone Availability" /></a>
+
+<a href="http://www.flickr.com/photos/wufoo/2919012537/" title="MAMP Server Status by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3143/2919012537_d79da84cab.jpg" height="155" alt="MAMP Server Status" /></a>
+
+<a href="http://www.flickr.com/photos/wufoo/2919857588/" title="Warhammer Online Server Status by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3289/2919857588_ccabc63c0a.jpg" height="155" alt="Warhammer Online Server Status" /></a>
+</div>
+
+<p>As you can see, all three of these interfaces use only red and green (two of the most misinterpreted colors) to convey states or provide information to the user.</p>
+
+<ul>
+<li><a href="http://apple.com">Apple&#8217;s</a> iPhone availability indicator uses color alone as a visual indicator. Interestingly enough, they <a href="http://developer.apple.com/documentation/Accessibility/Conceptual/AccessibilityMacOSX/AccessibilityMacOSX.pdf">state in their usability guidelines</a>:</li>
+</ul>
+
+<blockquote>
+  <p>&#8220;Although color can greatly enhance a user interface, <strong>make sure it is not the only source of information</strong>. A color blind user may not be able to distinguish between two objects that differ only in color.&#8221;</p>
+</blockquote>
+
+<p>Now, what they do provide is a legend of what red and green are supposed to look like for each state. But for me, it&#8217;s still barely possible to match their indicators to the live data, and so the example remains pretty frustrating. It is, however, slightly better than the other two examples.</p>
+
+<ul>
+<li><a href="http://www.warhammeronline.com/">Warhammer Online</a>, a video game, and <a href="http://www.mamp.info/en/index.php">MAMP</a>, a development server application, exemplify the worst culprits because not only do they use similarly contrasting red and green colors as cues, but they don&#8217;t give you a reference or legend to help distinguish or label what &#8220;red&#8221; and &#8220;green&#8221; are even supposed to look like. </li>
+</ul>
+
+<p>In order to avoid an <a href="http://digg.com/gaming_news/Color_blind_gamers_common_Developer_awareness_Minimal">angry mob of color deficient users</a>, or to just ensure that you and your users are on the same page, here are some aesthetically pleasing interface examples that use text and icons, in addition colors, to communicate what&#8217;s going on.</p>
+
+<p><strong>Good Cues</strong></p>
+
+<div class="inlineImages">
+<a href="http://www.flickr.com/photos/wufoo/2919859200/" title="Dropbox File Status"><img src="http://farm4.static.flickr.com/3242/2919859200_c7bf516f07.jpg" height="135" alt="Dropbox File Status" /></a>
+
+<a href="http://www.flickr.com/photos/wufoo/1468761989/" title="Entry Manager"><img src="http://farm2.static.flickr.com/1310/1468761989_2de41db5bc.jpg" height="135" alt="Entry Manager - Viewing an Entry" /></a>
+
+<a href="http://www.flickr.com/photos/wufoo/2919861782/" title="Versions"><img src="http://farm4.static.flickr.com/3115/2919861782_40eeb74ea6.jpg" height="135" alt="Versions" /></a>
+</div>
+
+<ul>
+<li><p><a href="http://getdropbox.com">Dropbox</a> users know the status of their files because of the colored circles and icons attached to each file. The colored circles can be confusing to a small percentage of viewers, but it&#8217;s pretty hard to misunderstand what&#8217;s going on unless you&#8217;re both colorblind and not familiar with their commonly used icons.</p></li>
+<li><p>The <a href="http://wufoo.com">Wufoo</a> and <a href="http://www.versionsapp.com/">Versions</a> screenshots pretty much leave no room for misinterpretation because they, like a stop sign, use combinations of shape, color, and a word / icon to give their visual cues meaning and context. You&#8217;re sure to leave very little to interpretation when you use three visual cues to convey a single message.</p></li>
+</ul>
+
+<p><strong>More Good Cues</strong></p>
+
+<div class="inlineImages">
+<a href="http://www.flickr.com/photos/wufoo/2958461684/" title="Apple Window Buttons by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3168/2958461684_06bda3145b.jpg" height="200" alt="Apple Window Buttons" /></a>
+    
+<a href="http://www.flickr.com/photos/wufoo/2919014483/" title="Tivo Menu by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3195/2919014483_772e72cff3.jpg" height="200" alt="Tivo Menu" /></a>
+</div>
+
+<ul>
+<li><p>Again, Apple uses the hard to distinguish red, yellow, and green orbs as visual cues throughout their OSX windows, but this time they help those with color deficiencies by providing icons whenever you hover over the colored orbs. Since a user is only going to be interacting with those orbs when their mouse is hovering over them, it doesn&#8217;t hurt to hide the icons and keep the interface aesthetically pleasing until the user is clearly interacting with them.</p></li>
+<li><p>The <a href="http://www.tivo.com/">TiVo</a> interface is strapped for space, and in order to give multiple visual cues using color by itself, a recorded show is represented with a full, green orb, and a show that is currently being recorded is represented with a smaller, red orb. Even if somebody cannot differentiate the colors that Tivo is using in this situation, they can tell the difference between a small and large circle.</p></li>
+</ul>
+
+<h3>Use Contrasting Colors</h3>
+
+<p>Of course, as an interface designer, there are going to be times when you do not want to use icons or text as a cue due to space or aesthetic constraints. While I recommend using icons or text when you can, sometimes color and color alone is the most logical way or only choice to convey different information. Maps, for example, often use colors to display separate areas of information about a location. Also, sometimes designers want to indicate state by coloring just the text itself.</p>
+
+<p>If you are going to use color alone, the best way to accommodate for the color deficient viewers out there is to get familiar with <strong>contrast</strong>. Kevin wrote an excellent article recently on <a href="http://particletree.com/notebook/calculating-color-contrast-for-legible-text/">programmatically finding good contrasting colors</a>. Additionally, a couple of great resources about how to choose proper contrasting colors can be found over at <a href="http://www.lighthouse.org/accessibility/effective-color-contrast/">lighthouse.org</a> and <a href="http://www.456bereastreet.com/archive/200709/10_colour_contrast_checking_tools_to_improve_the_accessibility_of_your_design/">456bereastreet</a>, but to give you a quick overview of what works and doesn&#8217;t work in my world, here are a couple examples.</p>
+
+<p><strong>Bad Contrast</strong></p>
+
+<div class="inlineImages">
+<a href="http://www.flickr.com/photos/wufoo/2919857926/" title="NYTimes Map 2 by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3228/2919857926_60dc34a8c9.jpg" height="120" alt="NYTimes Map 2" /></a>
+    
+<a href="http://www.flickr.com/photos/wufoo/2919858618/" title="Trulia Map 1 by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3050/2919858618_4f1bf21f9c.jpg" height="120" alt="Trulia Map 1" /></a>
+
+<a href="http://www.flickr.com/photos/wufoo/2957966777/" title="Bad Contrast Text by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3287/2957966777_71ab25cf7b_o.gif" height="120" alt="Bad Contrast Text" /></a>
+</div>
+
+<ul>
+<li><p>This <a href="http://nytimes.com">New York Times</a> map is frustrating because the &#8220;Yes&#8221; and &#8220;Did Not Vote&#8221; colors are extremely close in contrast, and they basically look like the same thing to me. I wouldn&#8217;t even recognize there are four colors being used on that map. And actually, the classic example for bad contrast for the color blind in Wikipedia is <a href="http://flickr.com/photos/wufoo/2919123545/">this NY Times Map</a>.</p></li>
+<li><p><a href="http://trulia.com">Trulia&#8217;s</a> maps are sometimes extremely tough to interpret for me because they not only use red, yellow and green, but they use multiple shades of those colors. I see this a lot of times in graphs and pie charts, and it&#8217;s probably the most frustrating example of all the screenshots I&#8217;ve documented in this article.</p></li>
+<li><p>The red/black and red/green text are sometimes used as hyperlink colors on web sites. They can be problematic because certain combinations are colors that those with a deficiency often have trouble seeing.</p></li>
+</ul>
+
+<p><strong>Good Contrast</strong></p>
+
+<div class="inlineImages">
+<a href="http://www.flickr.com/photos/wufoo/2919016713/" title="NYTimes Map 1 by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3233/2919016713_95dd05e80f.jpg" height="135" alt="NYTimes Map 1" /></a>
+
+<a href="http://www.flickr.com/photos/wufoo/2859942789/" title="Public Report Upgrades by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3216/2859942789_03f7952a97.jpg" height="135" alt="Public Report Upgrades" /></a>
+
+<a href="http://www.flickr.com/photos/wufoo/2957966809/" title="Good Contrast Text by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3060/2957966809_fddae01baf_o.gif" height="135" alt="Good Contrast Text" /></a>
+</div>
+
+<ul>
+<li><p>In this map, the New York Times does a better job because red and blue are easy to differentiate, and while light yellow and light blue can be confused by an extremely small percentage of people, the stripes they use clearly separate the states.</p></li>
+<li><p>While this pie chart in Wufoo does use red and green, the colors in this example are contrasting enough to tell apart, especially when viewed directly next to another.</p></li>
+<li><p>Here&#8217;s another set of text examples that are again a red/black and red/green combo, but they&#8217;re more distinguishable due to their higher contrast differences.</p></li>
+</ul>
+
+<h3>Conclusion</h3>
+
+<p>For the most part, this isn&#8217;t a call to arms. I&#8217;m not on a quest to change the world, fight discrimination or demand visual equal rights. As you can see, if you want to avoid making color blunders, all you really need to do is to take a minute to make sure you provide a legend, use icons or words when possible and make sure your visual cues are high contrasting. You probably do not need to run your designs through a color checker and stress over whether or not your interface is going to offend your viewers. In fact, there&#8217;s a pretty good chance you&#8217;re working near or know somebody with a color deficiency, so having them give your design a once over is a great way to ensure your message is seen properly.</p>
+
+<h3>Additional Reading</h3>
+
+<ul>
+<li><p><a href="http://critiquewall.com/2007/12/10/blindness">Blindness</a> - A series of images that are shown in both normal vision and how they appear to someone with a red/green colorblindness.</p></li>
+<li><p><a href="http://www.colblindor.com/2007/02/06/colorblind-at-the-traffic-light/">What about Traffic Lights?</a> - Daniel Flück writes about why traffic lights do not confuse him. <a href="http://en.wikipedia.org/wiki/Traffic_light">Wikipedia also notes</a>, &#8220;Usually, the red light contains some orange in its hue, and the green light contains some blue, to provide some support for people with red-green color blindness.&#8221; This explains why color blind people do not actually need to memorize the location of where green and red lights are located, especially in the dark when you cannot pinpoint the location of where a light is coming from.</p></li>
+<li><p><a href="http://en.wikipedia.org/wiki/Timeline_of_Crayola#1990.E2.80.93present">Emerson Moser</a> - In 1990, Moser was Crayola&#8217;s most senior crayon moulder and retired after 37 years. After moulding approximately 1.4 billion crayons, he revealed that he is actually color blind.</p></li>
+<li><p><a href="http://discovermagazine.com/2007/apr/the-upside-of-color-blindness">Camouflage Detecter</a> - There is an upside to being color blind and it&#8217;s that you have the super human ability to detect camouflage like <a href="http://health.discovery.com/centers/kids/colorblind/colorblind_02.html">U.S. soldiers did in World War II</a>. That might also help explain why most animals have some form of color blindness.</p></li>
+<li><p><a href="http://www.joystiq.com/2006/07/30/colorblind-gaming-or-table-tennis-is-impossibly-hard/">Colorblind gaming or: Table Tennis is impossibly hard!</a> - A color blind video gamer explains why Rockstar&#8217;s Table Tennis may be the most difficult game ever.</p></li>
+<li><p><a href="http://www.colormatters.com/kaufman.html">Seeing Through the Eyes of The Color Blind Shopper</a> - &#8220;Many consumers throughout the United States have impaired or limited information processing capabilities as part of congenital or illness-related disabilities, yet their specific problems and needs are often not formally considered by firms, by researchers, or by students preparing to enter the business world. I learned this quite by accident in my own Consumer Analysis class when I gave a routine assignment to my students.&#8221;</p></li>
+</ul>
+ <p><a class="ptad" href="http://wufoo.com" title="HTML Form Builder"><img src="http://particletree.com/images/ads/wufooad1.gif" alt="HTML Form Builder" /></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/particletree?a=ct2XM"><img src="http://feeds.feedburner.com/~f/particletree?i=ct2XM" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=6qPGM"><img src="http://feeds.feedburner.com/~f/particletree?i=6qPGM" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=P2C5m"><img src="http://feeds.feedburner.com/~f/particletree?i=P2C5m" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/particletree/~4/426594604" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://particletree.com/features/interfaces-and-color-blindness/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=particletree&amp;itemurl=http%3A%2F%2Fparticletree.com%2Ffeatures%2Finterfaces-and-color-blindness%2F</feedburner:awareness><feedburner:origLink>http://particletree.com/features/interfaces-and-color-blindness/</feedburner:origLink></item>
+		<item>
+		<title>Rich Application Architecture Roundup</title>
+		<link>http://feeds.feedburner.com/~r/particletree/~3/406526856/</link>
+		<comments>http://particletree.com/notebook/rich-application-architecture-roundup/#comments</comments>
+		<pubDate>Mon, 29 Sep 2008 19:20:59 +0000</pubDate>
+		<dc:creator>Tim Sabat</dc:creator>
+		
+		<category><![CDATA[Notebooks]]></category>
+
+		<guid isPermaLink="false">http://particletree.com/?p=498</guid>
+		<description>When Chris, Kevin and Ryan approached Alex and I to develop Wufoo Unplugged, a desktop application to view Wufoo form data offline, we ended up choosing .NET because in addition to it offering the features we needed like multi-threading, file system access and pre-built Lucene libraries, it was also the technology that Alex and I [...]</description>
+			<content:encoded><![CDATA[<p>When Chris, Kevin and Ryan approached Alex and I to develop <a href="http://wufoo.com/unplugged">Wufoo Unplugged</a>, a desktop application to view Wufoo form data offline, we ended up choosing .NET because in addition to it offering the features we needed like multi-threading, file system access and pre-built <a href="http://lucene.apache.org/java/docs/">Lucene libraries</a>, it was also the technology that Alex and I were the most familiar with at the time. We weren&#8217;t officially part of the Wufoo Team then (Unplugged was basically our hiring interview) and so we weren&#8217;t asked to develop in an environment outside our comfort zone. As you can imagine, choosing a Windows-only solution left a number of Mac users  <a href="http://wufoo.com/2008/08/13/get-offline-access-and-desktop-notifications-with-wufoo-unplugged/">feeling a bit left out</a>.  And so hoping to help out other developers thinking of creating their own desktop applications that will work on both PCs and Macs for their web services, I thought I&#8217;d do some research into the current state of cross-platform Rich Application Architectures and present my findings here.</p>
+
+<h3>Adobe AIR</h3>
+
+<p><a href="http://www.adobe.com/products/air/" title="Adobe AIR">Adobe AIR</a> has made great strides in providing a cross-platform application architecture that sets a new benchmark for web developers dreaming about making things &#8220;better.&#8221; This environment provides a way for web developers who are comfortable developing in Flash, Flex or HTML to easily port their apps to a desktop environment.  Like other frameworks that produce installable code it can install shortcuts on the desktop and interact with the file system. In the hands of someone familiar with creating Flash interfaces, AIR is capable of utilizing beautiful UIs that are not confined to the browser.  AIR can also use <a href="http://www.sqlite.org/">SQLite</a> as a database, which allows a developer to create a truly disconnected system.  Additionally, using a specified coding model and an Adobe server product called <a href="http://www.insideria.com/2008/07/air-data-synchronization-via-l.html">LiveCycle</a>, offline data synchronization can be handled automatically, freeing the developer the burden of writing this code alone.</p>
+
+<table cellspacing="0">
+<thead>
+<tr>
+<td class="positive">Pros</td>
+<td class="negative">Cons</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Not confined to browser</td>
+<td>Security and trust concerns</td>
+</tr>
+<tr>
+<td>Can interact with the file system</td>
+<td>No support for multi-threading</td>
+</tr>
+<tr>
+<td>SQLite database support</td>
+<td>LiveCycle requires J2EE Server</td>
+</tr>
+<tr>
+<td>Offline data synch through LiveCycle</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>One of Adobe Air&#8217;s strengths, the inclusion of an out-of-the-box synchronization, is ironically one of it&#8217;s downfalls.  While this technology may save the developer loads of time, the configuration and maintenance of a J2EE-compliant server like jBoss (LiveCycle must run in a J2EE container)  may prove to be overkill for a lot of organizations.</p>
+
+<p>Another downside of Adobe AIR is the lack of true multi-threading.  Plugins like Google Gears and Silverlight both expose multi-threading out of the box.  The AIR framework, on the other hand, runs on a single thread.  System threads to perform database operations are spawned separately, but once the data is returned, the processing of this data occurs on the same operating thread as the UI. While <a href="http://www.adobe.com/devnet/air/flex/articles/air_sql_operations_06.html">patterns exist</a> to minimize the impact on the user, they may lack the sophistication veteran desktop programmers are used to working with in other environments.</p>
+
+<p>One thing to keep in mind about developing an installable application like AIR, is the responsibilities that comes with the power of developing with AIR&#8217;s API, which is rather extensive. Just like any other application run from an installer, the user makes one choice at the beginning of the process to explicitly trust the application developer and the application. Because AIR has access to the file system, a developer with the wrong intentions could do great damage with it.  While the <a href="http://labs.adobe.com/wiki/index.php/AIR:HTML_Security_FAQ">AIR HTML security</a> is designed to protect developers from writing applications that could be exploited by third parties, the up-front contract between the user and the AIR application still gives the developer a lot of opportunities to do evil.  Check out Lucas Adamski&#8217;s article to get an understanding of the <a href="http://www.adobe.com/devnet/air/articles/introduction_to_air_security.html">AIR security model</a>.</p>
+
+<h3>Google Gears</h3>
+
+<p><a href="http://gears.google.com/" title="Google Gears">Google Gears</a> is a framework that adds powerful desktop functionality to the browser through a toolbar or browser plugin.  Google Gears exposes three major components: <em>LocalServer</em>, which allows developers to cache and serve application resources (HTML, JavaScript, images, etc.) locally, <em>Database</em> to store data locally in a fully-searchable relational database powered by SQLite, and possibly the most important offering, the <em>WorkerPool</em>, which makes web applications more responsive by performing resource-intensive operations asynchronously.</p>
+
+<table cellspacing="0">
+<thead>
+<tr>
+<td class="positive">Pros</td>
+<td class="negative">Cons</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Few security concerns</td>
+<td>Confined to the browser</td>
+</tr>
+<tr>
+<td>Plugin rather than install</td>
+<td>Sync left up to developer</td>
+</tr>
+<tr>
+<td>Enhances current browser</td>
+<td></td>
+</tr>
+<tr>
+<td>New API advancements</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<p>From a security perspective, your users end up making a smaller commitment with Google Gears.  Gears runs within the sandbox of the browser, storing data BLOBs and the SQLite DB within a protected area.  Unlike an installed application, Gears does not have arbitrary access to the file system.</p>
+
+<p>One promising feature in Google Gears is the <a href="http://code.google.com/apis/gears/api_blob.html">BLOB API</a>, which provides a way to reference binary data in web applications.  Google&#8217;s Chris Prince explains in <a href="http://www.youtube.com/watch?v=hapkRYxCU_8">this video</a> how the BLOB API can allow the developer to manipulate a memory stream that the browser can interact with to create an elegant solution for large file uploads.</p>
+
+<p>Google Gears does find itself lacking in two areas: easy offline synchronization and advanced integration with the desktop. No framework is provided for synchronization like AIR. The <a href="http://code.google.com/apis/gears/architecture.html">architecture</a> documentation explains to the developer how to check online status, but leaves the synchronization code up to the developer. Additionally, Gears is confined to the browser and so an application developer has no way to adjust the user experience outside the confines of the page.  While the new Gears API has desktop shortcuts and <a href="http://growl.info/">Growl</a>-like / Growl compatible notifications (depending on your OS), an application designer is very limited in creating the controlled experience you see in most desktop applications.</p>
+
+<h3>Microsoft Silverlight</h3>
+
+<p><a href="http://silverlight.net/" title="Silverlight">Silverlight</a> is a Rich Application Architecture designed by Microsoft meant to topple Flash as the leader in rich online content.  Like Google Gears, it installs as a plugin and runs in all the major browsers.  It offers slick vector graphics support, a sandboxed offline data storage component, and most importantly, access to a reduced version of the .NET runtime.  Like all Microsoft development tools, the framework is steeped in Microsoft-specific buzzwords, but the concept looks compelling.</p>
+
+<table cellspacing="0">
+<thead>
+<tr>
+<td class="positive">Pros</td>
+<td class="negative">Cons</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vector Graphics</td>
+<td>Expensive Dev Tools</td>
+</tr>
+<tr>
+<td>Sandboxed Data</td>
+<td>Market Penetration Low</td>
+</tr>
+<tr>
+<td>.NET framework</td>
+<td></td>
+</tr>
+
+</tbody>
+</table>
+
+<p>Silverlight consumes XAML documents that act as the UI layer instructing the instantiation of objects written in one of many of the languages supported by the .NET framework.  This multi-language support is a key selling-point of Silverlight.  It allows developers from an enterprise to contribute their pre-written libraries to a Silverlight project, provided they meet certain specs.</p>
+
+<p>One major con to the development of a Silverlight project is the barrier to entry set up by the IDE.  Unlike the other dev environment listed here, Microsoft stands alone in charging thousands of dollars for a single developer seat.  For example, outfitting your single designer with <a href="http://www.microsoft.com/expression/products/purchase.aspx?key=blend">Expression Blend</a>, the creatives tool for working with XAML, and two of your developers with <a href="http://www.windowsmarketplace.com/results.aspx?text=visual%20studio%202008%20professional&amp;tabid=1">Visual Studio 2008</a> costs over $1700.</p>
+
+<p>One other major concern is the install base and market penetration of Silverlight.  Microsoft is pushing hard to power big-name events like the Demographic National Convention and the 2008 Olympics, where they reported that of the <a href="http://www.reuters.com/article/marketsNews/idINN2228041820080822?rpc=44&amp;sp=true">50 million visitors</a> nearly 50 percent of them had the Silverlight plugin installed.  Compare that with the over 80 percent of browsers running Adobe&#8217;s Flash and it is easy to understand why website developers may be reluctant to serve a page that requires users to install another plugin.  That said, with Silverlight 2.0 slated for a October 15th release date, you can be sure that Microsoft will be finding bigger venues to show off their shiny new plugin.</p>
+
+<h3>Further Reading</h3>
+
+<p>While this wasn&#8217;t a comprehensive review, I hope it&#8217;ll  give you a nice jumping-off point for your own research. For more information, definitely check out the following articles:</p>
+
+<ul>
+<li><a href="http://www.theregister.co.uk/2008/08/18/silverlight_pros_and_cons/">Silverlight Pros and Cons</a></li>
+<li><a href="http://www.itwriting.com/blog/310-adobe-air-10-reasons-to-love-it-10-reasons-to-hate-it.html">Adobe Air Pros and Cons</a></li>
+<li><a href="http://www.insideria.com/2008/07/air-data-synchronization-via-l.html">Synchronization with LiveCycle</a></li>
+<li><a href="http://code.google.com/apis/gears/">Gears 0.4 Release</a></li>
+<li><a href="http://www.techcrunch.com/2008/05/28/myspace-shows-facebook-how-its-done-google-gears-to-power-messaging/">Facebook uses Gears to Power Messaging</a></li>
+</ul>
+ <p><a class="ptad" href="http://wufoo.com" title="HTML Form Builder"><img src="http://particletree.com/images/ads/wufooad1.gif" alt="HTML Form Builder" /></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/particletree?a=zJqCL"><img src="http://feeds.feedburner.com/~f/particletree?i=zJqCL" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=acC1L"><img src="http://feeds.feedburner.com/~f/particletree?i=acC1L" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=8Ogwl"><img src="http://feeds.feedburner.com/~f/particletree?i=8Ogwl" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/particletree/~4/406526856" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://particletree.com/notebook/rich-application-architecture-roundup/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=particletree&amp;itemurl=http%3A%2F%2Fparticletree.com%2Fnotebook%2Frich-application-architecture-roundup%2F</feedburner:awareness><feedburner:origLink>http://particletree.com/notebook/rich-application-architecture-roundup/</feedburner:origLink></item>
+		<item>
+		<title>Calculating Color Contrast for Legible Text</title>
+		<link>http://feeds.feedburner.com/~r/particletree/~3/401064344/</link>
+		<comments>http://particletree.com/notebook/calculating-color-contrast-for-legible-text/#comments</comments>
+		<pubDate>Tue, 23 Sep 2008 19:14:09 +0000</pubDate>
+		<dc:creator>Kevin Hale</dc:creator>
+		
+		<category><![CDATA[Notebooks]]></category>
+
+		<guid isPermaLink="false">http://particletree.com/?p=485</guid>
+		<description>In the past on Particletree, we&amp;#8217;ve shared some of our favorite resources and guides for helping the color challenged and uninspired get their chromatic deliciousness on. As a designer, getting to choose the colors is often the part of the job I like the best. However, there are times when it&amp;#8217;s nice to be able [...]</description>
+			<content:encoded><![CDATA[<p>In the past on Particletree, we&#8217;ve shared some of our favorite <a href="http://particletree.com/notebook/show-me-the-colors/">resources</a> and <a href="http://particletree.com/notebook/color-image-scale/">guides</a> for helping the color challenged and uninspired get their chromatic deliciousness on. As a designer, getting to choose the colors is often the part of the job I like the best. However, there are times when it&#8217;s nice to be able to write some code to help make some of the decisions for you.</p>
+
+<p>One of my favorite implementations of using programming to supplement the color picking process was done by the clever Canadians over at <a href="http://dabbledb.com">Dabble DB</a>. All you have to do is upload your logo and their application will automatically pick the colors based on the information contained in the image and create a theme for their web app that will match the logo.</p>
+
+<p><a href="http://blog.dabbledb.com/2007/04/white--or-green.html"><img src="http://dabbledb.typepad.com/photos/uncategorized/2007/07/04/dabbledark.png" alt="DabbleDB Logo Color Picker" /></a></p>
+
+<p>It&#8217;s an impressive feature that helps the user focus on getting things done rather than worry over the details. While I won&#8217;t be going into <a href="http://blog.dabbledb.com/2007/04/white--or-green.html">all of the ideas they used</a> to implement their feature in this article, I do want to take some time to talk about how you can get a legible contrasting foreground color for a piece of text when given a specific background color.</p>
+
+<p>When we were working on the <a href="http://wufoo.com/gallery/">Wufoo Form Gallery</a>, I wanted a way to represent the pre-made color palette themes in a concise format without having to go through the laborious process of making a screenshot for each one. After a lot of trial and error, the following format is what we came up with for the gallery to represent themes:</p>
+
+<p><img src="http://wufoo.com/images/gallery/legend.gif" alt="Form Gallery Theme Legend" /></p>
+
+<p>The problem that we ran into after coming up with a structure that we liked, was that the text inside each color swatch needed to have some sort of logic applied to it so that it would show legibly regardless of whether it was a dark swatch or a light swatch behind it. This is when we turned to color theory to help us out.</p>
+
+<p>According to the W3C, when you&#8217;re evaluating your web site for accessibility, you should ensure that foreground and background color combinations provide sufficient contrast when viewed by someone having color deficits or when viewed on a black and white screen. How does one know if two colors will provide sufficient contrast? Well, the W3C, being the fastidious folks that they are, provide the following definition and formulas to make what seems subjective very quantifiable:</p>
+
+<blockquote>
+  <p>Two colors provide good color visibility if the brightness difference and the color difference between the two colors are greater than a set range.</p>
+  
+  <p><strong>Color brightness is determined by the following formula:</strong> <br />
+  ((Red value X 299) + (Green value X 587) + (Blue value X 114)) / 1000</p>
+  
+  <p><strong>Color difference is determined by the following formula:</strong> <br />
+  (max (Red 1, Red 2) - min (Red 1, Red 2)) + (max (Green 1, Green 2) - min (Green 1, Green 2)) + (max (Blue 1, Blue 2) - min (Blue 1, Blue 2))</p>
+  
+  <p><a href="http://www.w3.org/WAI/ER/WD-AERT/#color-contrast">Techniques For Accessibility Evaluation And Repair Tools</a></p>
+</blockquote>
+
+<p>And so, if you&#8217;ve got two colors and their color brightness difference is greater than 125 and the color difference is greater than 500, you&#8217;re in the clear. Unfortunately, the formulas are only a starting point. They can evaluate whether your colors are made to be together, but they can&#8217;t actually decide your colors. Thankfully, the Internet is filled with a number of wonderful people that have tackled the problem head on. One of our favorite solutions we looked at was created by Patrick Fitzgerald over at <a href="http://www.barelyfitz.com/">BarelyFitz Designs</a>. His <a href="http://www.barelyfitz.com/projects/csscolor/">CSS Color Class</a> allows you to refer to colors using abstract names like base and highlight, automatically generate color gradients from a single base color and also adjust the contrast of foreground colors so they can be legibly seen on top of background colors.</p>
+
+<p><a href="http://www.flickr.com/photos/wufoo/2883081740/" title="CSS Color Class"><img src="http://farm4.static.flickr.com/3265/2883081740_383d1ace67_o.png" width="390" height="219" alt="CSS Color Class" /></a></p>
+
+<p>While the CSS Colors Class is great and comes highly recommended by us (we&#8217;ve been able to do some pretty neat experimental stuff with it that we&#8217;ll hopefully use in the future), we thought for our purposes in the gallery, it was a bit too much overhead. Eventually, we ended up creating our own Smarty Modifier plugin based on code we found in the <a href="http://us2.php.net/manual/en/function.hexdec.php#74092">PHP documentation on the hexdec function</a>&#8212;boy, do we love that community. Here&#8217;s the code we came up with, which can be easily be rewritten if you don&#8217;t use Smarty in your development environment.</p>
+
+<pre><code>function smarty_modifier_contrast($hexcolor, $dark = '#000000', $light = '#FFFFFF')
+{
+    return (hexdec($hexcolor) &gt; 0xffffff/2) ? $dark : $light;
+}
+</code></pre>
+
+<p>It&#8217;s very simple and very lightweight, which was exactly what we were looking for in a solution for the problem. The way the code works is that given a hex color like <code>#FFFFFF</code> or <code>#CCCCCC</code>, it will return either the hex for black or white depending on what&#8217;s appropriate. You can also pass in variables for <code>$dark</code> and <code>$light</code> in case you want the function to return colors other than black and white. In our Smarty template, we call it in our markup structure like so:</p>
+
+<pre><code>&lt;span class="palette"&gt;
+    &lt;var class="w" style="background-color:{$bgHtmlColor};
+        color:{$bgHtmlColor|contrast}"&gt;W&lt;/var&gt;
+    &lt;var class="l" style="background-color:{$bgLogoColor};
+        color:{$bgLogoColor|contrast}"&gt;L&lt;/var&gt;
+    &lt;var class="i" style="background:{$bgInstructColor};
+        color:{$ftInstructColor}"&gt;I&lt;/var&gt;
+    &lt;var class="f" style="background:{$bgFormColor};
+        color:{$ftFieldTitleColor}"&gt;F&lt;/var&gt;
+    &lt;var class="h" style="background:{$bgHighlightColor};
+        color:{$ftFieldTitleColor}"&gt;H&lt;/var&gt;
+&lt;/span&gt;
+</code></pre>
+
+<p>Notice that the code doesn&#8217;t take those color difference and color brightness formulas into account. Basically, it crudely (yet kind of elegantly) divides the RGB color spectrum into two halves and if the color you give it is on one side, it returns one value, otherwise, the other. Here&#8217;s a very rough visual approximation I mocked up to illustrate the concept:</p>
+
+<p><a href="http://www.flickr.com/photos/wufoo/2881608487/" title="Spectrum Color Contrast"><img src="http://farm4.static.flickr.com/3146/2881608487_87f5f859ac_o.jpg" width="600" height="300" alt="Spectrum Color Contrast" /></a></p>
+
+<p>And so while it&#8217;s not perfect, in 99% of cases, the function does what you need it to do without a lot of number crunching or programming overhead. Here&#8217;s an image showing off the function in action on a number of the themes we created in the gallery.</p>
+
+<p><a href="http://www.flickr.com/photos/wufoo/2882443376/" title="Gallery Color Contrast"><img src="http://farm4.static.flickr.com/3291/2882443376_719d550c7a_o.png" width="500" height="198" alt="Gallery Color Contrast" /></a></p>
+
+<p>We&#8217;ve even recently reused the functionality when we made some <a href="http://wufoo.com/2008/09/16/report-upgrades-and-new-graphs/">upgrades to our graphing system</a> in Wufoo. Now, our graphs automatically determine and use the appropriate color for the grid lines based on the background color a user has selected from their themes.</p>
+
+<p><a href="http://www.flickr.com/photos/wufoo/2881608453/" title="Graph Color Contrast"><img src="http://farm4.static.flickr.com/3051/2881608453_0d81bae4a7_o.png" width="650" height="209" alt="Graph Color Contrast" /></a></p>
+
+<p>This way, the graphs are easy to read and follow even on a dark theme palette. It&#8217;s a small detail that we think makes a lot of difference in an application. If you want perfect contrast, then obviously CSS Colors is the way to go for you, but for us we&#8217;ve been really happy with the results.</p>
+ <p><a class="ptad" href="http://wufoo.com" title="HTML Form Builder"><img src="http://particletree.com/images/ads/wufooad1.gif" alt="HTML Form Builder" /></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/particletree?a=yIZ1L"><img src="http://feeds.feedburner.com/~f/particletree?i=yIZ1L" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=X5lxL"><img src="http://feeds.feedburner.com/~f/particletree?i=X5lxL" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=GI09l"><img src="http://feeds.feedburner.com/~f/particletree?i=GI09l" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/particletree/~4/401064344" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://particletree.com/notebook/calculating-color-contrast-for-legible-text/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=particletree&amp;itemurl=http%3A%2F%2Fparticletree.com%2Fnotebook%2Fcalculating-color-contrast-for-legible-text%2F</feedburner:awareness><feedburner:origLink>http://particletree.com/notebook/calculating-color-contrast-for-legible-text/</feedburner:origLink></item>
+		<item>
+		<title>Reasons to Use Inspiring Tools and Brands</title>
+		<link>http://feeds.feedburner.com/~r/particletree/~3/396241017/</link>
+		<comments>http://particletree.com/notebook/reasons-to-use-inspiring-tools-and-brands/#comments</comments>
+		<pubDate>Thu, 18 Sep 2008 14:09:47 +0000</pubDate>
+		<dc:creator>Alex Vazquez</dc:creator>
+		
+		<category><![CDATA[Notebooks]]></category>
+
+		<guid isPermaLink="false">http://particletree.com/?p=475</guid>
+		<description>Earlier this week, David Heinemeier Hansson wrote a bit about why he thinks indulging in aesthetically pleasing tools should be a guilt-free experience. It was a response to a post by Matt Maroon on News.YC and if you&amp;#8217;re interested, you should also check out Matt&amp;#8217;s counter-response. Hoping to add to the discussion with our own [...]</description>
+			<content:encoded><![CDATA[<p>Earlier this week, David Heinemeier Hansson wrote a bit about why he thinks indulging in aesthetically pleasing tools <a href="http://www.37signals.com/svn/posts/1247-theres-no-shame-in-looking-good">should be a guilt-free experience</a>. It was a response to <a href="http://news.ycombinator.com/item?id=305008">a post</a> by Matt Maroon on <a href="http://news.ycombinator.com">News.YC</a> and if you&#8217;re interested, you should also check out Matt&#8217;s <a href="http://mattmaroon.com/?p=472">counter-response</a>. Hoping to add to the discussion with our own flavors, we thought we&#8217;d point out some other reasons why you shouldn&#8217;t discount the role of aesthetics when deciding on what tools you should get.</p>
+
+<p>Gavan Fitzsimons and Tanya Chartrand, professors of psychology and marketing at Duke University, did some research on the topic by subliminally priming over 300 subjects with either an Apple or IBM logo. They were then given a brick and asked to come up with as many uses for the brick as they could. The results of the study revealed that brands and our environment influence our thoughts quite a bit. Apparently, the subjects exposed to the Apple logo &#8220;generated significantly more unusual uses for the brick compared with those who were primed with the IBM logo.&#8221; You can watch the researchers talk about the study in the following video:</p>
+
+<p><object width="425" height="344" style="margin:0 auto"><param name="movie" value="http://www.youtube.com/v/iFBnv1dkUmk&#038;hl=en&#038;fs=1"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/iFBnv1dkUmk&#038;hl=en&#038;fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object></p>
+
+<p>While Fitzsimons has focused some of his conclusions toward the marketing departments behind these brands, it&#8217;s more interesting for us to know that the personality of a company can influence and filter down to users by logo alone. And so the argument can be made that purchasing tools that are aesthetically pleasing and innovatively designed by companies with similar attributes can help inspire our subconscious to also want to create aesthetically pleasing and innovative software.</p>
+
+<p>Here&#8217;s some anecdotal data that will help emphasize the point. J.J. Abrams, one of the creators of Lost, gave a talk at TED about why he&#8217;s so interested in the power of mysteries. A little after the 8th minute, he presents exactly why he uses Apple&#8217;s products when he writes:</p>
+
+<blockquote>
+  <p>I love Apple computers. I&#8217;m obsessed. So the Apple computer. The powerbook. It challenges me. It basically says, &#8220;What are you going to write worthy of me?&#8221; I can feel this. I&#8217;m compelled. And often I&#8217;m like dude, today I&#8217;m out. I got nothing.</p>
+  
+  <p><a href="http://www.ted.com/index.php/talks/j_j_abrams_mystery_box.html">J.J. Abrams - Mystery Box</a></p>
+</blockquote>
+
+<p>Chris has written about this before in an article about the <a href="http://particletree.com/features/the-importance-of-design-in-business/">role of design in businesses</a>, but the Japanese believe that all products should strive to have this inspirational quality in their work. In order to have a quality product or service, it needs to be created in a way that satisfies two different ideas of quality:</p>
+
+<blockquote>
+  <p>The first, <strong>atarimae hinshitsu</strong>, which is roughly translated as &#8220;taken-for-granted quality,&#8221; is the idea that things will work as they are intended. The second, <strong>miryokuteki hinshitsu</strong>, which means &#8220;enchanting quality,&#8221; is the idea that things should have an aesthetic quality that appeals to a person’s sense of beauty.</p>
+</blockquote>
+
+<p>And if you&#8217;ve ever picked up a <a href="http://msdn.microsoft.com/en-us/library/ms993289.aspx">katana</a>&#8212;a Japanese sword of the finest craftsmanship, then you&#8217;ll know exactly how this manifests. The thing to take away from this, of course, is not that Japanese products or Apple computers are the only things to use if you&#8217;re going to be innovative. It&#8217;s that context and environment matters in ways that people sometimes don&#8217;t even realize. Because humans are relationship-making creatures, we are emotionally influenced by the things we encounter over and over again and tools obviously fall into that category. And so, maybe, the choices we make regarding our tools shouldn&#8217;t come down to price alone. And maybe, as the developers of tools, we should strive to make products that inspire others with equal passion and energy.</p>
+ <p><a class="ptad" href="http://wufoo.com" title="HTML Form Builder"><img src="http://particletree.com/images/ads/wufooad1.gif" alt="HTML Form Builder" /></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/particletree?a=kZUCL"><img src="http://feeds.feedburner.com/~f/particletree?i=kZUCL" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=eJ8DL"><img src="http://feeds.feedburner.com/~f/particletree?i=eJ8DL" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=qYT3l"><img src="http://feeds.feedburner.com/~f/particletree?i=qYT3l" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/particletree/~4/396241017" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://particletree.com/notebook/reasons-to-use-inspiring-tools-and-brands/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=particletree&amp;itemurl=http%3A%2F%2Fparticletree.com%2Fnotebook%2Freasons-to-use-inspiring-tools-and-brands%2F</feedburner:awareness><feedburner:origLink>http://particletree.com/notebook/reasons-to-use-inspiring-tools-and-brands/</feedburner:origLink></item>
+		<item>
+		<title>Object Oriented PHP Memory Concerns</title>
+		<link>http://feeds.feedburner.com/~r/particletree/~3/395285092/</link>
+		<comments>http://particletree.com/notebook/object-oriented-php-memory-concerns/#comments</comments>
+		<pubDate>Wed, 17 Sep 2008 15:29:05 +0000</pubDate>
+		<dc:creator>Ryan Campbell</dc:creator>
+		
+		<category><![CDATA[Notebooks]]></category>
+
+		<guid isPermaLink="false">http://particletree.com/?p=457</guid>
+		<description>It&amp;#8217;s hard to imagine pushing the limits of object oriented PHP so far that your web servers choke, but the truth is those limits are reached faster than you think. We&amp;#8217;ve run some tests over at Wufoo and it turns out that any sort of mass object creation is pretty much not going to work [...]</description>
+			<content:encoded><![CDATA[<p>It&#8217;s hard to imagine pushing the limits of object oriented PHP so far that your web servers choke, but the truth is those limits are reached faster than you think. We&#8217;ve run some tests over at Wufoo and it turns out that any sort of mass object creation is pretty much not going to work at scale. The problem is this limit on object creation forces developers to balance code consistency, which is desirable&#8212;especially for the old-schoolers, with performance. While replacing objects with arrays when possible makes things a little better, the most performance friendly approach involves appending strings. For your convenience, we&#8217;ve run some tests that measure page execution times and memory usage to create the following guideline to help you plan out what areas of your code may have to break away from an object oriented nature.</p>
+
+<h3>The Benchmarks</h3>
+
+<p>Basically, we set up a simple PHP page to iterate over a loop and create 1) a giant concatenated string, 2) an array of arrays containing the word &#8216;test&#8217;, and 3) an array of objects with one variable set to &#8216;test&#8217;.</p>
+
+<table cellspacing="0">
+    <thead>
+        <tr>
+            <td></td>
+            <td>Load Time</td>
+            <td>Memory Used</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr><td>Control</td><td>12.6ms</td><td>1.42mb</td></tr>
+        <tr><td>11,000&#160;<b>strings</b></td><td>15.7ms</td><td>1.45mb</td></tr>
+        <tr><td>11,000&#160;<b>arrays</b></td><td>26.6ms</td><td>3.99mb</td></tr>
+        <tr><td>11,000&#160;<b>objects</b></td><td>148.8ms</td><td>7.70mb</td></tr>
+        <tr><td>25,000&#160;<b>arrays</b></td><td>44.1ms</td><td>7.25mb</td></tr>
+        <tr><td>1,500,000&#160;<b>strings</b></td><td>253.2.6ms</td><td>7.14mb</td></tr>
+    </body>
+</table>
+
+<p>As the table shows, creating objects takes a good amount of memory and time when compared to a string or array. And since 7.7mb is nearing the default memory limit for PHP, the page is about to time out. Sure, the memory limit can be increased, but the point is that there is still a maximum. For most pages, 11,000 objects is overkill. But in some cases, like exporting a hefty database to CSV format or returning data from a public API, we may want to return 50,000+ records.</p>
+
+<h3>Workarounds</h3>
+
+<p>The good news is that the memory limitation does not put us in a place where the advantages of reusable code is completely removed. We just have to take a few precautions when writing code that has intensive looping or object creation.</p>
+
+<ul>
+<li><p><strong>unset()</strong> - Avoid getting at objects through the accessor, and work directly with the recordset loop. After each iteration, unset the object that was just created. After a quick test, 45,000 objects could be created and unset using 1.43mb of memory at peak.</p></li>
+<li><p><strong>Static Method Calls</strong> - A static method can be called without the need to instantiate an object. For example, if our desired output is an XML string, but we need some of the objects helper functions, we can still call functions off of the objects statically with Object::function(). Doing so only increased memory usage from 1.45mb to 1.46mb in the string example.</p></li>
+<li><p><strong>Paging</strong> - The downside to unset() and static methods is that we have to bypass our accessors to get at the objects and work directly with the loop. A third option is to be strict with paging, and never allow for more than X number of objects to be returned. This will keep the code 100% consistent, but may be a bit more intensive on the database and increase page execution time.</p></li>
+</ul>
+
+<h3>Why Does this Matter?</h3>
+
+<p>Many development techniques, such as <a href="http://en.wikipedia.org/wiki/Domain-driven_design" title="Domain Driven Design">domain driven design</a>, keep a set of value objects along with an accessor to each of those objects. The accessors act as an API that make retrieval of the objects easy and consistent. For example, let&#8217;s say we have a <code>User</code> object, and a <code>UserAccessor</code> &#8212; we would call <code>UserAccessor-&gt;loadAllUsers()</code>, which would return to us an array of <code>User</code> objects. Then, we can loop through the array, and display a list of all users and have access to the member variables and functions.</p>
+
+<p>This is great because all developers work with the same objects, and SQL queries are constrained to accessors. Even if this isn&#8217;t your preferred development style, chances are your object oriented approach strives to achieve similar levels of consistency. That said, we can see from the benchmarks above that there may be situations where a portion of code we&#8217;ve created cannot return an array of objects because of memory limitations. Overall, object memory usage is far from a deal breaker, but it is something every developer worried about scaling should be aware of.</p>
+
+<p>For more information, here are a couple of links that may provide some more insight.</p>
+
+<ul>
+<li><p><a href="http://www.devolio.com/blog/archives/314-Practical-and-impractical-PHP-Optimizations.html" title="PHP Optimizations">Practical and impractical PHP Optimizations</a></p></li>
+<li><p><a href="http://reinholdweber.com/?p=3" title="40 Tips">40 Tips for optimizing PHP</a></p></li>
+<li><p><a href="http://www.xdebug.org/docs/profiler" title="XDebug">Use Profiling to Determine Bottlenecks</a></p></li>
+</ul>
+ <p><a class="ptad" href="http://wufoo.com" title="HTML Form Builder"><img src="http://particletree.com/images/ads/wufooad1.gif" alt="HTML Form Builder" /></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/particletree?a=jCHLL"><img src="http://feeds.feedburner.com/~f/particletree?i=jCHLL" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=X4mDL"><img src="http://feeds.feedburner.com/~f/particletree?i=X4mDL" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=FG0zl"><img src="http://feeds.feedburner.com/~f/particletree?i=FG0zl" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/particletree/~4/395285092" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://particletree.com/notebook/object-oriented-php-memory-concerns/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=particletree&amp;itemurl=http%3A%2F%2Fparticletree.com%2Fnotebook%2Fobject-oriented-php-memory-concerns%2F</feedburner:awareness><feedburner:origLink>http://particletree.com/notebook/object-oriented-php-memory-concerns/</feedburner:origLink></item>
+		<item>
+		<title>On Prioritizing Feature Development</title>
+		<link>http://feeds.feedburner.com/~r/particletree/~3/394523669/</link>
+		<comments>http://particletree.com/notebook/on-prioritizing-feature-development/#comments</comments>
+		<pubDate>Tue, 16 Sep 2008 20:27:40 +0000</pubDate>
+		<dc:creator>Tim Sabat</dc:creator>
+		
+		<category><![CDATA[Notebooks]]></category>
+
+		<guid isPermaLink="false">http://particletree.com/?p=461</guid>
+		<description>Gathering a list of features to implement in your software is pretty easy. Sources of inspiration usually come from all different directions. Users will request features, your team will suggest features, your competition will taunt you with their features and then, of course, there&amp;#8217;s always what necessity dictates.
+
+The problem is once you&amp;#8217;ve amassed this collective [...]</description>
+			<content:encoded><![CDATA[<p>Gathering a list of features to implement in your software is pretty easy. Sources of inspiration usually come from all different directions. Users will request features, your team will suggest features, your competition will taunt you with their features and then, of course, there&#8217;s always what necessity dictates.</p>
+
+<p>The problem is once you&#8217;ve amassed this collective list of wishes, hopes and desires, you realize that your limited resources (time, money, manpower) force you to have to prioritize them. You can only do so much right now, implement certain things eventually and pretty much make everything else wait. If you&#8217;re not careful about managing your expectations and your users&#8217; expectations, it can end up feeling like a game of constant disappointment because the things you want to do will always be larger than what you&#8217;ve already done.</p>
+
+<p><a href="http://flickr.com/photos/melyviz/160269050/"><img src="http://farm1.static.flickr.com/70/160269050_26b034909e.jpg" alt="By melyviz via Flickr" /></a></p>
+
+<p>Since prioritization is really about ranking items, democratizing the process through voting is one way to go about it. In fact, community link ranking sites like <a href="http://reddit.com">Reddit.com</a> end up having the features basically voted on and delivered to them by fiat via the very service they created. Feature requests from the community often rise up on the homepage at Reddit demanding the founders to do something about it. And often, if not every time, the founders have responded accordingly. I imagine there&#8217;s a mixed sense of excitement and annoyance that comes from developing by public decree, but it ends up being an amazing experience for the users. Nothing seems to deepen a relationship more than seeing that there&#8217;s an actual relationship between what you ask for and what gets done.</p>
+
+<p>In fact, if you want to outsource prioritization to your users in a similar fashion, you can even use a service like <a href="http://UserVoice.com">UserVoice</a> to make your community part of the feature request discussion. Once submitted, ideas can be voted up or down (just like Digg or Reddit) and the status of the feature requests can even be updated by you, which creates a nice feedback loop of what&#8217;s being done.</p>
+
+<p><a href="http://www.flickr.com/photos/wufoo/2862602297/"><img src="http://farm4.static.flickr.com/3166/2862602297_f6887b0a3f.jpg" width="500" height="405" alt="" /></a></p>
+
+<p>Now, there&#8217;s definitely some drawbacks to having the development schedule of your product come solely from the masses. One of the biggest is that your users, for the most part, ask for Frankenstein. If the road to hell is paved with good intentions, then the road to feature bloat is probably paved by agile developers always listening to their users. Henry Ford probably has the best quote on the topic:</p>
+
+<blockquote>
+  <p>&#8220;If I had asked my customers what they wanted, they would have said a faster horse.&#8221;</p>
+</blockquote>
+
+<p>In fact, Jakob Nielsen even argues that listening to your users actually breaks the <a href="http://www.useit.com/alertbox/20010805.html">First Rule of Usability</a>:</p>
+
+<blockquote>
+  <p>To discover which designs work best, watch users as they attempt to perform tasks with the user interface. This method is so simple that many people overlook it, assuming that there must be something more to usability testing&#8230;ultimately, the way to get user data boils down to the basic rules of usability:</p>
+  
+  <ul>
+  <li>Watch what people actually do.</li>
+  <li>Do not believe what people say they do.</li>
+  <li>Definitely don&#8217;t believe what people predict they may do in the future.</li>
+  </ul>
+</blockquote>
+
+<p>For additional perspective, Jeff Atwood over at <a href="http://www.codinghorror.com/">Coding Horror</a> wrote an excellent essay titled <a href="http://www.codinghorror.com/blog/archives/000880.html">Don&#8217;t Ask &#8212; Observe</a>, which highlights why especially in web applications, we should have no excuses about getting down to the bottom of our users&#8217; behavior.</p>
+
+<blockquote>
+  <p>Why ask users if they&#8217;d like recommendations in their shopping carts when you can simply deploy the feature to half your users, then observe what happens? Web sites are particularly amenable to this kind of observational testing, because it&#8217;s easy to collect the user action data on the server as a series of HTTP requests.</p>
+</blockquote>
+
+<p>For those of you thinking that data driven development requires a complex system of monitoring and analytics, you&#8217;ll be surprised to know that you can even do it with something as simple as a 404 error. Tech-savvy members of the web community know that a 404 error is likely the fault of the web developer. However, <a href="http://technorati.com/videos/youtube.com%2Fwatch%3Fv%3DQj4i_eufFU4">Stephen Kaufer</a> of <a href="http://tripadvisor.com">TripAdvisor.com</a> wagers that when your Mom surfs the internet and encounters one, she just assumes (without assigning blame) that &#8216;something went wrong&#8217;, presses the back button, and chooses another link. And so before deciding to spend engineering resources to develop costly features on TripAdvisor, he would often determine whether something would have a strong uptake by creating a fake button or interface element of the feature on the site and have it lead to a 404 page he monitored. He&#8217;d then publish the link on a subset of his web servers for a statistically relevant period of time and count the number of click-troughs.  If the count for the link is high, he&#8217;ll task his developers with the creation of the actual feature. If not, he&#8217;ll direct his staff to create something else. It was simple, saved him lots of money and only cost him some slightly confused users.</p>
+
+<p>That being said, showing 404 errors on purpose isn&#8217;t for everyone. If you don&#8217;t have the stomach to treat your users as unwitting participants in a web development experiment then the 404 Test might not be for you. Thanks to the folks at <a href="http://clearleft.com/">Clearleft</a> you can take a more intimate approach to user observation by taking it to the streets with a laptop and  <a href="http://silverbackapp.com/">Silverback</a>, their application for implementing guerrilla usability testing. After recording a session with a user, you can playback a screecast of what they were doing along with video of the user in action while they use your web site or software. It&#8217;s a brilliantly elegant piece of software that gets the job done without breaking the bank.</p>
+
+<h3>Additional Reading</h3>
+
+<ul>
+<li><p><a href="http://www.sourcingmag.com/content/c070409a.asp">How To Outsource Product Management to Customers</a></p></li>
+<li><p><a href="http://onproductmanagement.wordpress.com/2007/11/17/prioritizing-features-does-not-equal-product-management/">Prioritizing Features does not equal Product Management</a></p></li>
+<li><p><a href="http://www.pchristensen.com/blog/articles/are-you-this-agile-paul-graham-changes-hacker-news-while-you-wait/">Are You This Agile? Paul Graham Changes Hacker News While You Wait</a></p></li>
+<li><p><a href="http://en.wikipedia.org/wiki/Software_bloat">Wikipedia Article on Software Bloat</a></p></li>
+</ul>
+ <p><a class="ptad" href="http://wufoo.com" title="HTML Form Builder"><img src="http://particletree.com/images/ads/wufooad1.gif" alt="HTML Form Builder" /></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/particletree?a=nDEML"><img src="http://feeds.feedburner.com/~f/particletree?i=nDEML" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=VwINL"><img src="http://feeds.feedburner.com/~f/particletree?i=VwINL" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=Qo6rl"><img src="http://feeds.feedburner.com/~f/particletree?i=Qo6rl" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/particletree/~4/394523669" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://particletree.com/notebook/on-prioritizing-feature-development/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=particletree&amp;itemurl=http%3A%2F%2Fparticletree.com%2Fnotebook%2Fon-prioritizing-feature-development%2F</feedburner:awareness><feedburner:origLink>http://particletree.com/notebook/on-prioritizing-feature-development/</feedburner:origLink></item>
+		<item>
+		<title>The 4 1/2 Day Workweek</title>
+		<link>http://feeds.feedburner.com/~r/particletree/~3/381508921/</link>
+		<comments>http://particletree.com/notebook/the-4-12-day-workweek/#comments</comments>
+		<pubDate>Tue, 02 Sep 2008 16:46:23 +0000</pubDate>
+		<dc:creator>Chris Campbell</dc:creator>
+		
+		<category><![CDATA[Notebooks]]></category>
+
+		<guid isPermaLink="false">http://particletree.com/?p=397</guid>
+		<description>When we were just 3 people trying to get Wufoo launched on a limited budget and timeframe, we felt that it was necessary for us to work 7 days a week and expect 80+ hours out of each member on the team. Obviously, a grueling schedule like that can&amp;#8217;t last forever and now that we&amp;#8217;re [...]</description>
+			<content:encoded><![CDATA[<p>When we were just 3 people trying to get <a href="http://wufoo.com">Wufoo</a> launched on a limited budget and timeframe, we felt that it was necessary for us to work 7 days a week and expect 80+ hours out of each member on the team. Obviously, a grueling schedule like that can&#8217;t last forever and now that we&#8217;re a 6 man operation that&#8217;s expanded outside of the passion of the founders, it&#8217;s been necessary for us to find a balance between productivity and happiness. The following is what we&#8217;ve learned after spending some time experimenting with your typical 5 day workweeks and the much hyped 4 day workweeks.</p>
+
+<h3>The Problems with 5 Day Workweeks</h3>
+
+<p>A 5 day workweek is pretty standard in corporate America and it&#8217;s what we started with first. Each day basically consisted of 8 hours of non-structured programming and product development. One thing we noticed right away was just how many <a href="http://www.joelonsoftware.com/articles/fog0000000068.html">highly counterproductive interruptions</a> occur at seemingly random times throughout the day. Interruptions ranged from important topics like company strategy and budget allocation to &#8220;inefficient&#8221; topics like <a href="http://www.inquisitr.com/2357/has-bigfoot-been-found/">interesting blog posts</a>, hypothetical questions about potential products, and talking about politics or fantasy football. We were always able to accomplish a satisfactory amount of work during a 5 day workweek, but we definitely didn&#8217;t feel like we got the most bang for our buck. This is because while we were happy with our output, the 2 day weekends didn&#8217;t seem to recharge our batteries. After stretching ourselves to crank out code around those interruptions for 5 days straight, we ended up feeling like a weekend just wasn&#8217;t enough of a respite to keep the work from feeling like your typical grind.</p>
+
+<h3>The Problems with 4 Day Workweeks</h3>
+
+<p>Because we were excited about the prospects of longer weekends and more efficiency, we thought that the much hyped 4 day workweek would be our saving grace. The 4 day workweek that we tried out operates under the assumption that you can accomplish just as much in an <strong>efficient</strong> 4 day workweek as you would in a <strong>typically inefficient</strong> 5 day workweek. Basically, because you know there&#8217;s only 4 days to get things done, you optimize your time to make those 4 days count. The extra buffer of a 3 day weekend also helps you to hit the ground running on the next cycle. Unfortunately, there were two major problems we ran into when we tried it.</p>
+
+<p>The first was that a 4 day workweek just wasn&#8217;t as productive as a 5 day workweek. It wasn&#8217;t because of efficiency. We did become more efficient with our time, but 3.5 days of productivity during a 4 day workweek is still less than 4 days of productivity in an inefficient 5 day workweek. The reason it&#8217;s 3.5 instead of 4 is because you can never really eliminate every distraction, meeting and task that comes up in your typical business setting.</p>
+
+<p>The other problem was that a 4 day workweek consisting of only programming and the critical meetings needed to get things done left something missing from our company&#8217;s culture. Even though discussions about the newest programming toys, the hypothetical strategies, and the fantasy football smack talk may not be efficient, we operate a lot like a think tank. Some of our best ideas have spawned from shooting the shit, and even if our wandering thoughts didn&#8217;t always lead to something measurably productive, they have been crucial to us innovating and bonding as a group, which we think ultimately leads to increased morale and even productivity.</p>
+
+<h3>Our Solution - The 4&#160;1/2 Day Workweek</h3>
+
+<p>While the 4 and 5 day workweeks weren&#8217;t perfect for us, they did give us some important clues as to what we wanted in our ideal workweek. Our recipe for the optimal workweek called for 4 solid days of product development, 3 days of mental rest, and plenty of time to discuss whatever may be on our wandering minds, whether it be work related or completely random. And what we came up with is the following schedule:</p>
+
+<h4>Monday - Thursday</h4>
+
+<p>Mondays through Thursdays are dedicated to product development and only product development. There are no exceptions. We aim to accomplish as much in these four days as we would have in the traditional 5 day week, and since every one of us has to work hard to meet our goals, what ends up happening is that if something comes up that isn&#8217;t on our weekly list of items to accomplish or is controversial in nature, it must wait. If you want to argue about why X feature is absolutely necessary, or debate whether or not Safari or Firefox is the better browser, or kick around ideas for the company trip, it has to wait till Friday. Sometimes a person can accomplish their goals by working 6 hours a day, and sometimes it can take 10 or more hours a day. That&#8217;s up to them. And while it can get pretty intense around here and easily leave you wiped out come Thursday night, it&#8217;s all good because you know there are 3 days of mental rest right around the corner.</p>
+
+<h4>1/2 of Friday</h4>
+
+<p>Fridays are for resting the analytical parts of our brains, discussing business topics, and engaging in the activities that we find are crucial to the overall health of our company&#8212;like bonding and customer appreciation.  Our typical Fridays start at about 2:00 PM, which gives everyone time to sleep in, relax a bit and if they want, get some additional work done. Then we&#8217;ll meet up at a team member&#8217;s home (we rotate every week) to accomplish most, if not all of the following activities:</p>
+
+<ul>
+<li><p><strong>Bonding</strong> - We&#8217;re passionate about what we do, and since we&#8217;re 6 people with 6 different personalities, that passion can easily lead to arguments. We&#8217;ve never shied away from a heated debate and have always encouraged lively discussions, but we&#8217;ve always kept it from getting personal. At the end of the day, we all have to get along and work together and so any lingering tensions must be addressed and ironed out during this period. In order to make sure nobody takes things too seriously, we use Fridays to bring us closer together by watching movies, going out to dinner, talking about our personal goals, discussing the newest technologies, and just having a good time.</p></li>
+<li><p><strong>Discussing Company Business Face to Face</strong> - Since 93% of communication <a href="http://humanresources.about.com/od/interpersonalcommunicatio1/a/nonverbal_com.htm">may not be verbal</a>, we find meeting face to face a worthwhile exercise when dealing with business matters and decisions. This will include what we&#8217;ve accomplished for the week, budgeting, overall health of the company, new features, and other specifics to the company that need to be discussed on a regular basis.</p></li>
+<li><p><strong>Thanking our Customers</strong> - There are only two immovable rules we have for every employee in our company. Everyone does customer support and everyone must take time to thank the people that pays their paycheck. After discussing business, we&#8217;ll pop in a classic movie like Point Break and take a couple hours to write our customers hand-written thank you cards to show them how much we appreciate them. We&#8217;re able to accomplish about 10 cards per person, and even though this small gesture may not make a measurable impact on the bottom line, we believe it definitely adds value to our corporate culture by reminding everyone of our place and purpose in the long run.</p></li>
+<li><p><strong>Meeting People</strong> - As a business begins to grow, it&#8217;s only natural that people from other businesses are going to want to meet you. Sometimes they just want to meet other local entrepreneurs, and other times they want to talk about business development related items like product integration. Driving, eating, and talking require a good chunk of time, and since this time would interfere with our 4 day productivity goals, we&#8217;ve designated Fridays as the day we meet with people and representatives from other companies.</p></li>
+<li><p><strong>Give Back</strong> - We actually just started kicking around this idea, but we&#8217;re hoping to also use our Fridays to give back to the community that hosts our startup. Whether it be Habitat for Humanity or a local food drive, we think good corporate citizenship is an important part of running a happy business. We also think that it&#8217;ll be great at boosting morale and fostering additional bonding.</p></li>
+</ul>
+
+<h3>Conclusion</h3>
+
+<p>Now that our work is broken up into the two distinct areas: product development and &#8220;other stuff&#8221;, we think we have a pretty good framework that helps us decide when to focus on what. We&#8217;ve been able to meet our productivity goals, enjoy the benefits of a 3 day weekend, and still make time for the tedious and inefficient parts of our business. Of course, this structure works well for us because we love what we do and also who we work with. It&#8217;s natural for us. I don&#8217;t think you can force every company into this schedule because it&#8217;ll end up being a lame &#8220;Fun Friday.&#8221; You probably won&#8217;t end up with an open dialogue and sometimes people would rather just work than spend time pretending to get along with their co-workers. I&#8217;m not entirely sure how this will play out as we continue to grow and scale our company, but it&#8217;s definitely clear that a company works best when it&#8217;s employees are genuinely focused, well rested, and enjoying life.</p>
+ <p><a class="ptad" href="http://wufoo.com" title="HTML Form Builder"><img src="http://particletree.com/images/ads/wufooad1.gif" alt="HTML Form Builder" /></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/particletree?a=SFAwhL"><img src="http://feeds.feedburner.com/~f/particletree?i=SFAwhL" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=VLTyTL"><img src="http://feeds.feedburner.com/~f/particletree?i=VLTyTL" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=C461ml"><img src="http://feeds.feedburner.com/~f/particletree?i=C461ml" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/particletree/~4/381508921" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://particletree.com/notebook/the-4-12-day-workweek/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=particletree&amp;itemurl=http%3A%2F%2Fparticletree.com%2Fnotebook%2Fthe-4-12-day-workweek%2F</feedburner:awareness><feedburner:origLink>http://particletree.com/notebook/the-4-12-day-workweek/</feedburner:origLink></item>
+		<item>
+		<title>Workflow Voyeurism : Kevin</title>
+		<link>http://feeds.feedburner.com/~r/particletree/~3/370082909/</link>
+		<comments>http://particletree.com/notebook/kevins-files-and-folders/#comments</comments>
+		<pubDate>Wed, 20 Aug 2008 16:00:49 +0000</pubDate>
+		<dc:creator>Kevin Hale</dc:creator>
+		
+		<category><![CDATA[Notebooks]]></category>
+
+		<guid isPermaLink="false">http://particletree.com/?p=373</guid>
+		<description>Because I&amp;#8217;ve always been fascinated about how other designers do their thing, I thought I&amp;#8217;d share a bit about my organizational setup on my computer and how it plays into my work. On my desktop, 99% of my time in the last 6 months were dedicated to the following folders and files:
+
+
+
+Karakoram is just the [...]</description>
+			<content:encoded><![CDATA[<p>Because I&#8217;ve always been fascinated about how other designers do their thing, I thought I&#8217;d share a bit about my organizational setup on my computer and how it plays into my work. On my desktop, 99% of my time in the last 6 months were dedicated to the following folders and files:</p>
+
+<p><a href="http://www.flickr.com/photos/wufoo/2781618210/" title="kevinotherfolders by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3020/2781618210_b0989040cb_o.png" width="341" height="379" alt="kevinotherfolders" /></a></p>
+
+<p>Karakoram is just the name of my hard drive (a reference you&#8217;ll know if you&#8217;re a Genghis Khan fan). Then there&#8217;s two <a href="http://macromates.com/">Textmate</a> projects, one for the Subversion checkout of Wufoo&#8217;s source code and the other for our recently released desktop notifier, <a href="http://wufoo.com/unplugged/">Unplugged</a>. The three folders, Infinity Box, Code and Progress are used for quick triage.</p>
+
+<ul>
+<li><p><strong>Infinity Box</strong> is for all company related matters.</p></li>
+<li><p><strong>Code</strong> is where I keep all the cool scripts, code projects, snippets and examples I come across when I do research on any number of ideas.</p></li>
+<li><p><strong>Progress</strong> is my writing dump folder. It&#8217;s filled with hundreds of text files containing unfinished ideas, outlines, future blog posts, Particletree features, poems, short stories and even recipes. Basically, if started writing something and I didn&#8217;t finish it, it goes in that folder.</p></li>
+</ul>
+
+<p>About once a week, the root of the Infinity Box folder gets additional triage treatment. Files I&#8217;ve dragged in there will go into the following structures:</p>
+
+<p><a href="http://www.flickr.com/photos/wufoo/2780745417/" title="kevindesignfolder by wufoo, on Flickr"><img src="http://farm4.static.flickr.com/3178/2780745417_b8effe2c39_o.png" width="400" height="395" alt="kevindesignfolder" /></a></p>
+
+<p>Everything I&#8217;m responsible for in regards to Wufoo fits into the categories shown in the secondary folders. I highlighted the Icons, Images, PSD and Screenshots folders because I use them the most and got tired of having to scan to find them (milliseconds, I&#8217;ve found, are precious when you&#8217;re looking at something hundreds of times a day). Here&#8217;s a quick rundown of those folders&#160;:</p>
+
+<ul>
+<li><p><strong>Documents</strong>&#160;: These are company documents like invoice templates, stationary, employee handbooks, etc.</p></li>
+<li><p><strong>Flash</strong>&#160;: Leftover from when Wufoo had a lot more Flash in the interface than it does now.</p></li>
+<li><p><strong>Fonts</strong>&#160;: A copy of the fonts used around the web site and in the marketing materials for Particletree, Wufoo and Treehouse. In Wufoo, we use the always excellent <a href="http://www.typography.com/fonts/font_overview.php?productLineID=100026">Whitney</a> and a customized version of <a href="http://haafe.com/">Milkman</a>.</p></li>
+<li><p><strong>Icons</strong>&#160;: A copy and reference for all the icons and avatars used in Wufoo.</p></li>
+<li><p><strong>Images</strong>&#160;: This contains a copy of any stock photos we might have bought for artwork and any finished renderings from PSD files.</p></li>
+<li><p><strong>Inspiration</strong>&#160;: As I browse the web and go through my feedreader, I use a screen capture tool like <a href="http://www.ambrosiasw.com/utilities/snapzprox/">Snapz Pro X</a> to capture anything that tickles my fancy. Lots of interface fragments, color schemes, copy I think is brilliant and even videos of interactions. Whenever I get stuck on a design, this is the folder that helps me the most.</p></li>
+<li><p><strong>Legal</strong>&#160;: Corporate documents, contracts and investment papers.</p></li>
+<li><p><strong>Marketing</strong>&#160;: Anything used to help someone spread the word about Wufoo. Copies of all the advertisements I&#8217;ve designed, logo kits, custom made icons and badges, etc.</p></li>
+<li><p><strong>Movies</strong>&#160;: Screencasts used in our documentation and demos.</p></li>
+<li><p><strong>Photos</strong>&#160;: This one is for documenting the history of the company. Photographs of the team in action, group photos, company trips, etc. A copy of almost all of these are on our <a href="http://flickr.com/photos/wufoo/">Wufoo Flickr account</a>.</p></li>
+<li><p><strong>Press</strong>&#160;: Safari webarchives, screenshots and copies of articles and interviews written about Wufoo, Particletree and Treehouse.</p></li>
+<li><p><strong>PSD</strong>&#160;: Sweet photoshop files. This is the folder that is constantly backed up in multiple places and bunkers.</p></li>
+<li><p><strong>Screenshots</strong>&#160;: These are of the application and the web sites. Again, most of these images are also uploaded to the <a href="http://flickr.com/photos/wufoo/">Wufoo Flickr account</a> for posterity.</p></li>
+<li><p><strong>Wireframes</strong>&#160;: XHTML, CSS and a little bit of JavaScript that&#8217;s in progress. These are usually experimental redesigns, Particletree proof-of-concepts and fragments of HTML markup ideas.</p></li>
+</ul>
+
+<p>And that&#8217;s a quick snapshot of my organizational foundation. A lot of this is leftover from habits made while keeping design and writing notebooks in college. It&#8217;s tremendously useful when I&#8217;m working and when I need some inspiration to get out of a rut. What I really love about the system is how it automatically helps me document and track the history of our application interface and our company&#8217;s decisions. Lately, I&#8217;ve started to see that knowing how I got to a place is sometimes just as important as where I want to go.</p>
+
+<p>If you have an interesting work layout for your files, I&#8217;d love to hear about them. Just write about it on your blog (with screenshots too if you can!) and link to them in the comments.</p>
+ <p><a class="ptad" href="http://wufoo.com" title="HTML Form Builder"><img src="http://particletree.com/images/ads/wufooad1.gif" alt="HTML Form Builder" /></a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/particletree?a=B15LzK"><img src="http://feeds.feedburner.com/~f/particletree?i=B15LzK" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=HnKlFK"><img src="http://feeds.feedburner.com/~f/particletree?i=HnKlFK" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/particletree?a=GD4AXk"><img src="http://feeds.feedburner.com/~f/particletree?i=GD4AXk" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/particletree/~4/370082909" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://particletree.com/notebook/kevins-files-and-folders/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=particletree&amp;itemurl=http%3A%2F%2Fparticletree.com%2Fnotebook%2Fkevins-files-and-folders%2F</feedburner:awareness><feedburner:origLink>http://particletree.com/notebook/kevins-files-and-folders/</feedburner:origLink></item>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetFeedData?uri=particletree</feedburner:awareness></channel>
+</rss><!-- Dynamic Page Served (once) in 1.427 seconds -->

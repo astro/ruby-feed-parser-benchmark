@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/rss2full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>igvita.com</title>
+	
+	<link>http://www.igvita.com</link>
+	<description>A goal is a dream with a deadline.</description>
+	<pubDate>Thu, 11 Dec 2008 17:04:26 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.5.1</generator>
+	<language>en</language>
+			<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://feeds.feedburner.com/igvita" type="application/rss+xml" /><feedburner:emailServiceId>532799</feedburner:emailServiceId><feedburner:feedburnerHostname>http://www.feedburner.com</feedburner:feedburnerHostname><item>
+		<title>Ruby AST for Fun and Profit</title>
+		<link>http://feeds.feedburner.com/~r/igvita/~3/481833157/</link>
+		<comments>http://www.igvita.com/2008/12/11/ruby-ast-for-fun-and-profit/#comments</comments>
+		<pubDate>Thu, 11 Dec 2008 17:04:26 +0000</pubDate>
+		<dc:creator>Ilya Grigorik</dc:creator>
+		
+		<category><![CDATA[Ruby]]></category>
+
+		<category><![CDATA[ast]]></category>
+
+		<category><![CDATA[rubyparser]]></category>
+
+		<guid isPermaLink="false">http://www.igvita.com/?p=201</guid>
+		<description><![CDATA[
+Anytime you execute a Ruby application, or any language for that matter, the parser has to scan the source, split it into recognizable tokens, and construct an Abstract Syntax Tree (AST) before the instructions can be turned into executable machine code. Sometimes this is done as a separate preprocessing step (compiled languages), and sometimes it [...]]]></description>
+			<content:encoded><![CDATA[<p><img align="left" src="http://www.igvita.com/blog/posts/08/netbeans-ruby.png" style="padding-right:1em" />
+<p>Anytime you execute a Ruby application, or any language for that matter, the parser has to scan the source, split it into recognizable tokens, and construct an <a href="http://en.wikipedia.org/wiki/Abstract_syntax_tree">Abstract Syntax Tree</a> (AST) before the instructions can be turned into executable machine code. Sometimes this is done as a separate preprocessing step (compiled languages), and sometimes it is done on the fly (dynamic languages). Now the less academic version: an AST to a program is what the DOM is to a web-page - and we all know how useful that is!</p>
+<p>It turns out that having access to the AST of a program can be incredibly powerful. Ever wondered how your IDE populates the method names in a <a href="http://www.mail-archive.com/rubyeclipse-development@lists.sourceforge.net/msg00222.html">separate window</a>? How about refactoring tools? Detecting <a href="http://ruby.sadi.st/Ruby_Sadist.html">code smells</a>? Or maybe even translating Ruby to <a href="http://lolcode.com/">Lolcode</a>? Let's see how it's done...</p>
+<h4><strong>Ruby Tools for Accessing the AST</h4>
+<p></strong></p>
+<p>In order to get access to the Ruby AST you'll either need the <a href="http://rubyforge.org/projects/parsetree/">ParseTree</a>, or <a href="http://rubyforge.org/projects/parsetree/">RubyParser</a> gem developed by <a href="http://blog.zenspider.com/">Ryan Davis</a> and <a href="http://blog.segment7.net/">Eric Hodel</a>. Functionally, they are equivalent, but ParseTree is implemented via RubyInline (with C extensions), and RubyParser is a recent rewrite motivated by a need for a cross platform gem for JRuby, Rubinius, MRI, and others.</p>
+<p>Out of the box, Ruby allows us to view methods of any object (obj.methods), variables (obj.instance_variables), hierarchies (obj.class), but oddly enough, it doesn't provide a full blown '<em>view_source</em>' method on an object to see its underlying definition. It is definitely an interesting thought experiment to think why this is such a hard problem for most languages, but for our purposes, Ryan and Eric have solved it already: </p>
+<p align="center"><img style="border: 1px solid rgb(204, 204, 204); padding: 3px;" src="http://www.igvita.com/posts/08/ruby-parsetree.png"/></p>
+<p>To those of you familiar with Lisp flavors, the AST view will look surprisingly familiar. All the syntactic tokens are gone (commas, semicolons, etc), and only the underlying structure remains. With a little ingenuity we can now reverse-engineer this tree into Ruby code! Which, surprise, surprise, is exactly what <a href="http://seattlerb.rubyforge.org/ruby2ruby/">Ruby2Ruby</a> (another gem by Ryan Davis) does:</p>
+<p align="center"><img style="border: 1px solid rgb(204, 204, 204); padding: 3px;" src="http://www.igvita.com/posts/08/sexp-ruby.png"/></p>
+<h4><strong>Ruby AST for Fun and Profit</strong></h4>
+<p>While ParseTree has been around for more than a year, it is only recently that the community has started picking it up. Chris Wanstrath gave a <a href="http://goruco2008.confreaks.com/03_wanstrath.html">great presentation</a> (<a href="http://www.slideshare.net/err/goruco">slides</a>) at Goruco '08 about his new ParseTree powered project <a href="http://ambition.rubyforge.org/">Ambition</a>: <em>"a framework for writing adapters which turn plain jane Ruby into some sort of domain specific query which can be executed"</em>.</p>
+<p>Similarly, <a href="http://rubyconf2008.confreaks.com/hacking-with-ruby2ruby.html">Marc Chung gave a great talk</a> at RubyConf '08 (<a href="http://blog.openrain.com/wp-content/uploads/2008/11/hacking-with-ruby2ruby-rubyconf-2008.pdf">slides</a>, <a href="http://github.com/mchung/ruby2ruby_rubyconf08/tree/master">code</a>), in which he talks about <a href="http://github.com/defunkt/mapreducerb/tree/master">mapreducerb</a>, a simple Map-Reduce implementation in Ruby, and a handful of other interesting projects.</p>
+<h4><strong>Getting started with the Ruby AST</strong></h4>
+<p>To simplify the process of walking the generated Ruby AST you can leverage the <a href="http://rubyforge.org/projects/parsetree/">sexp_processor</a> gem, which provides a mini framework for processing all of the nodes. All you have to do is <a href="http://github.com/igrigorik/ruby2lolz/tree/master/ruby2lolz.rb">implement a SexpProcessor</a> class and define some behaviors. Ever wanted to build a Ruby to Lolcode translator? It's not that hard:</p>
+<p align="center"><img style="border: 1px solid rgb(204, 204, 204); padding: 3px;" src="http://www.igvita.com/posts/08/ruby2lolz.png"/></p>
+<p><div class='download-link'>
+							<a href='http://www.igvita.com/download.php?file=http://www.github.com/igrigorik/ruby2lolz/tree/master.git'><img alt='Download' class='leftalign' src='http://www.igvita.com/wp-content/plugins/dBeautifier/icons/github.png' /></a>
+							<h4>
+								<a href='http://www.igvita.com/download.php?file=http://www.github.com/igrigorik/ruby2lolz/tree/master.git'>ruby2lolz.git (Ruby to Lolcode translator)</a>
+							</h4><p>Downloads: 6 File Size: 0.0 KB </p>
+						</div></p>
+<p>Or, maybe <a href="http://pastie.org/327494">put some lolz into your API</a>. Give RubyParser a try, have some fun!</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/igvita?a=yb61O"><img src="http://feeds.feedburner.com/~f/igvita?i=yb61O" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=Q3Fyo"><img src="http://feeds.feedburner.com/~f/igvita?i=Q3Fyo" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=DEp9o"><img src="http://feeds.feedburner.com/~f/igvita?i=DEp9o" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=bsiWo"><img src="http://feeds.feedburner.com/~f/igvita?i=bsiWo" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=lOlWo"><img src="http://feeds.feedburner.com/~f/igvita?i=lOlWo" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/igvita/~4/481833157" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.igvita.com/2008/12/11/ruby-ast-for-fun-and-profit/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=igvita&amp;itemurl=http%3A%2F%2Fwww.igvita.com%2F2008%2F12%2F11%2Fruby-ast-for-fun-and-profit%2F</feedburner:awareness><feedburner:origLink>http://www.igvita.com/2008/12/11/ruby-ast-for-fun-and-profit/</feedburner:origLink></item>
+		<item>
+		<title>Zero-Downtime Restarts with HAProxy</title>
+		<link>http://feeds.feedburner.com/~r/igvita/~3/472632416/</link>
+		<comments>http://www.igvita.com/2008/12/02/zero-downtime-restarts-with-haproxy/#comments</comments>
+		<pubDate>Tue, 02 Dec 2008 16:32:45 +0000</pubDate>
+		<dc:creator>Ilya Grigorik</dc:creator>
+		
+		<category><![CDATA[Architecture]]></category>
+
+		<category><![CDATA[haproxy]]></category>
+
+		<category><![CDATA[proxy]]></category>
+
+		<guid isPermaLink="false">http://www.igvita.com/?p=199</guid>
+		<description><![CDATA[
+Putting up a maintenance page while you are doing an update and restarting your application servers is good practice, but it definitely hurts the user experience. This, in turn, translates to less frequent releases and frustration for both the developer and the users (release often, release early!). To address this, the Rails community has come [...]]]></description>
+			<content:encoded><![CDATA[<p align="center"><img src="http://www.igvita.com/posts/08/haproxy-backup.png" style="border: 1px solid #ccc; padding: 3px;" /></p>
+<p>Putting up a maintenance page while you are doing an update and restarting your application servers is good practice, but it definitely hurts the user experience. This, in turn, translates to less frequent releases and frustration for both the developer and the users (release often, release early!). To address this, the Rails community has come up with a couple of approaches to mitigate the problem: <a href="http://www.rubyinside.com/seesaw-an-improved-restart-system-for-mongrel-589.html">Seesaw</a>, <a href="http://blog.carlmercier.com/2007/09/07/a-better-approach-to-restarting-a-mongrel-cluster/">one-at-a-time restarts</a>, and <a href="http://swiftiply.swiftcore.org/">Swiftiply</a>, none of which, unfortunately, caught on with the crowd. Well, it turns out, HAProxy has a beautiful solution for this problem!</p>
+<h4><strong>Existing Solutions</strong></h4>
+<p>The challenge with doing a rolling restart is in the coordination between your application servers, and an upstream reverse-balancer (HAProxy, Nginx, Apache, etc.). In theory, if you have a cluster of servers, you could cycle them <a href="http://blog.carlmercier.com/2007/09/07/a-better-approach-to-restarting-a-mongrel-cluster/">one after another</a>, as Carl has suggested, but that means that the upstream balancer is unaware of the maintenance window, and hence it may dispatch a request to a bad server - resulting in either a dropped request, or a hiccup in response time.</p>
+<p><a href="http://swiftiply.swiftcore.org/">Swiftiply</a> offers a much cleaner solution to this problem: each application server connects to the proxy itself, and thus the cluster can be dynamically modified at runtime. Great idea, but there is the unfortunate Ruby dependency - what if we're running a non Ruby service?</p>
+<h4><strong>Seamless Restarts With HAProxy</strong></h4>
+<p><img align="left" src="/posts/08/haproxy-setup.png" style="padding-right: 0.5em;" />
+<p><a href="http://haproxy.1wt.eu/download/1.3/doc/architecture.txt">HAProxy architecture document</a> shows that we can specify a backup for every application server in our cluster. Thus, if you're running a mission critical application, you could specify a hot standby which is ready to take over the traffic. Nice feature, but we're going to use it for a slightly different purpose.</p>
+<p>Instead of specifying a physically different app server, we're going to define our backup instance to be the exact same application server in each case, but with one minor difference: the status port, for the main app server will be different from the one we use on the backup.</p>
+<p><a href="javascript:showme('8533_1');"> <b>> haproxy-backup.conf</b></a>
+<div style=" background:white;" id=8533_1>
+<pre class="ruby">backend srvs
+  <span style="color:#008000; font-style:italic;"># webA and webB are monitored on different ports from backup servers</span>
+  <span style="color:#008000; font-style:italic;"># but bkpA, webA and bkpB and webB are actually the same server!</span>
+&nbsp;
+  server webA <span style="color:#006666;">127.0</span><span style="color:#006666;">.0</span><span style="color:#006666;">.1</span>:<span style="color:#006666;">1000</span> check port <span style="color:#006666;">2000</span> inter <span style="color:#006666;">2000</span>
+  server webB <span style="color:#006666;">127.0</span><span style="color:#006666;">.0</span><span style="color:#006666;">.1</span>:<span style="color:#006666;">1001</span> check port <span style="color:#006666;">2001</span> inter <span style="color:#006666;">2000</span>
+&nbsp;
+  server bkpA <span style="color:#006666;">127.0</span><span style="color:#006666;">.0</span><span style="color:#006666;">.1</span>:<span style="color:#006666;">1000</span> cookie A check port <span style="color:#006666;">1000</span> inter <span style="color:#006666;">2000</span> backup
+  server bkpB <span style="color:#006666;">127.0</span><span style="color:#006666;">.0</span><span style="color:#006666;">.1</span>:<span style="color:#006666;">1001</span> cookie B check port <span style="color:#006666;">1001</span> inter <span style="color:#006666;">2000</span> backup
+&nbsp;</pre>
+</div>
+<h4><strong>Using IPTables to Notify HAProxy</strong></h4>
+<p>Let's take <em>webA</em> as an example: the backup server listens on port 1000, and status port for backup is set to 1000 (HAProxy pings the server on that port every two seconds to see if its up), but the 'main' instance will have a different status port, which we will forward with IPTables:</p>
+<p><a href="javascript:showme('8533_2');"> <b>> iptables.txt</b></a>
+<div style=" background:white;" id=8533_2>
+<pre class="ruby"><span style="color:#008000; font-style:italic;"># forward port 2000 to 1000</span>
+iptables -t nat -A OUTPUT -<span style="color:#CC0066; font-weight:bold;">p</span> tcp --dport <span style="color:#006666;">2000</span> -j REDIRECT --to-port <span style="color:#006666;">1000</span>
+iptables -t nat -A PREROUTING -<span style="color:#CC0066; font-weight:bold;">p</span> tcp --dport <span style="color:#006666;">2000</span> -j REDIRECT --to-port <span style="color:#006666;">1000</span>
+&nbsp;
+<span style="color:#008000; font-style:italic;"># remove port forwarding from 2000 to 1000</span>
+iptables -t nat -D OUTPUT -<span style="color:#CC0066; font-weight:bold;">p</span> tcp --dport <span style="color:#006666;">2000</span> -j REDIRECT --to-port <span style="color:#006666;">1000</span>
+iptables -t nat -D PREROUTING -<span style="color:#CC0066; font-weight:bold;">p</span> tcp --dport <span style="color:#006666;">2000</span> -j REDIRECT --to-port <span style="color:#006666;">1000</span>
+&nbsp;</pre>
+</div>
+<p><div class='download-link'>
+							<a href='http://www.igvita.com/download.php?file=http://www.igvita.com/downloads/rolling-restart.zip'><img alt='Download' class='leftalign' src='http://www.igvita.com/wp-content/plugins/dBeautifier/icons/downloads.png' /></a>
+							<h4>
+								<a href='http://www.igvita.com/download.php?file=http://www.igvita.com/downloads/rolling-restart.zip'>rolling-restart.zip (Test setup, and configuration files)</a>
+							</h4><p>Downloads: 96 File Size: 8.1 KB </p>
+						</div></p>
+<h4><strong>Migrating Server In/Out of Maintenance</strong></h4>
+<p>Now, if we want to put the server into maintenance mode, we remove the IPTables rule for the forwarded port, and wait a few seconds so that our upstream HAProxy instance recognizes that the server is no longer available for new connections - this is key, it means that no client is dropped in the process. Now, once the server is out of rotation in HAProxy, we can do a graceful restart, add the IPTables rule back in, and we're live! Hence, the full restart sequence is:</p>
+<ol>
+<li>Delete IPTables rule for the status port</li>
+<li>Wait for HAProxy to take server out of rotation for new clients</li>
+<li>Perform graceful restart of the application server</li>
+<li>Add IPTables rule for the status port</li>
+</ol>
+<p>As an added bonus, you can even make this work with sticky sessions by adding a server ID into a cookie (see example HAProxy config in the zip). The clients won't notice a thing, and the developers can do zero-downtime releases!</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/igvita?a=HqlHO"><img src="http://feeds.feedburner.com/~f/igvita?i=HqlHO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=otUPo"><img src="http://feeds.feedburner.com/~f/igvita?i=otUPo" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=7BGLo"><img src="http://feeds.feedburner.com/~f/igvita?i=7BGLo" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=GIOSo"><img src="http://feeds.feedburner.com/~f/igvita?i=GIOSo" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=5dmjo"><img src="http://feeds.feedburner.com/~f/igvita?i=5dmjo" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/igvita/~4/472632416" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.igvita.com/2008/12/02/zero-downtime-restarts-with-haproxy/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=igvita&amp;itemurl=http%3A%2F%2Fwww.igvita.com%2F2008%2F12%2F02%2Fzero-downtime-restarts-with-haproxy%2F</feedburner:awareness><feedburner:origLink>http://www.igvita.com/2008/12/02/zero-downtime-restarts-with-haproxy/</feedburner:origLink></item>
+		<item>
+		<title>Concurrency is a Myth in Ruby</title>
+		<link>http://feeds.feedburner.com/~r/igvita/~3/451992157/</link>
+		<comments>http://www.igvita.com/2008/11/13/concurrency-is-a-myth-in-ruby/#comments</comments>
+		<pubDate>Thu, 13 Nov 2008 17:16:30 +0000</pubDate>
+		<dc:creator>Ilya Grigorik</dc:creator>
+		
+		<category><![CDATA[Ruby]]></category>
+
+		<category><![CDATA[gil]]></category>
+
+		<category><![CDATA[jruby]]></category>
+
+		<category><![CDATA[performance]]></category>
+
+		<guid isPermaLink="false">http://www.igvita.com/?p=198</guid>
+		<description><![CDATA[Concurrency introduces parallelism into our applications, and threading is, of course, one way to achieve concurrency. But it turns out that in Ruby, this relation is not transitive: execution parallelism is not the same thing as threading. In fact, if you're looking for parallelism in your Ruby application, you should be looking at process parallelism [...]]]></description>
+			<content:encoded><![CDATA[<p><img align="left" src="http://www.igvita.com/posts/08/ruby-lock.png" style="margin-right: 1em;"/>Concurrency introduces parallelism into our applications, and threading is, of course, one way to achieve concurrency. But it turns out that in Ruby, this relation is not transitive: <strong>execution parallelism is not the same thing as threading</strong>. In fact, if you're looking for parallelism in your Ruby application, you should be looking at process parallelism instead. So why is that?</p>
+<h4><strong>Ruby under the covers: Global Interpreter Lock</strong></h4>
+<p>To understand what's going on, we need to take a closer look at the Ruby runtime. Whenever you launch a Ruby application, an instance of a Ruby interpreter is launched to parse your code, build an <a href="http://en.wikipedia.org/wiki/Abstract_syntax_tree">AST tree</a>, and then execute the application you've requested - thankfully, all of this is transparent to the user. However, as part of this runtime, the interpreter also instantiates an instance of a <a href="http://en.wikipedia.org/wiki/Global_Interpreter_Lock">Global Interpreter Lock</a> (or more affectionately known as GIL), which is the culprit of our lack of concurrency:</p>
+<blockquote><p>
+Global Interpreter Lock is a mutual exclusion lock held by a programming language interpreter thread to avoid sharing code that is not thread-safe with other threads. There is always one GIL for one interpreter process.</p>
+<p>Usage of a Global Interpreter Lock in a language effectively limits concurrency of a single interpreter process with multiple threads -- there is no or very little increase in speed when running the process on a multiprocessor machine.
+</p></blockquote>
+<h4><strong>Deciphering the Global Interpreter Lock</strong></h4>
+<p align="center"><img src="http://www.igvita.com/posts/08/ruby-gil.png" /></p>
+<p>To make this a little less abstract, let's first look at Ruby 1.8. First, a single OS thread is allocated for the Ruby interpreter, a GIL lock is instantiated, and Ruby threads ('<a href="http://en.wikipedia.org/wiki/Green_threads">Green Threads</a>'), are spooled up by our program. As you may have guessed, there is no way for this Ruby process to take advantage of multiple cores: there is only one kernel thread available, hence only one Ruby thread can execute at a time.</p>
+<p>Ruby 1.9 looks much more promising! Now we have many native threads attached to our Ruby interpreter, but now the GIL is the bottleneck. The interpreter guards itself against non thread-safe code (your code, and native extensions) by only allowing a single thread to execute at a time. End effect: Ruby MRI process, or any other language which has a Global Interpreter Lock (<a href="http://www.python.org/doc/2.5.2/api/threads.html">Python</a>, <a href="http://stackoverflow.com/questions/265687/why-the-global-interpreter-lock">for example</a>, has a very similar threading model to Ruby 1.9) will never take advantage of multiple cores! If you have a dual core CPU, you'll have to run two separate processes.</p>
+<p><img align="left" src="http://www.igvita.com/posts/08/jruby.png" style="margin-right: 1em;"/><a href="http://jruby.codehaus.org/">JRuby</a> is, in fact, the only Ruby implementation that will allow you to natively scale your Ruby code across multiple cores. By compiling Ruby to bytecode and executing it on the <a href="http://en.wikipedia.org/wiki/Java_Virtual_Machine">JVM</a>, Ruby threads are mapped to OS threads without a GIL in between - that's at least one reason to look into JRuby.</p>
+<h4><strong>Process parallelism</strong></h4>
+<p>The implications of the GIL are surprising at first, but it turns out the solution to this problem is not all that complex: instead of thinking in threads, think how you could split the workload between different processes. Not only will you bypass an entire class of problems associated with concurrent programming (it's hard!), but you are also much more likely to end up with a horizontally scalable architecture for your application. Here are the steps:</p>
+<ol>
+<li>Partition the work, or decompose your application</li>
+<li>Add a communications / work queue (<a href="http://github.com/defunkt/starling/tree/master">Starling</a>, <a href="http://xph.us/software/beanstalkd/">Beanstalkd</a>, <a href="http://www.rabbitmq.com/">RabbitMQ</a>)</li>
+<li>Fork, or run multiple instances of you application</li>
+<p>Not surprisingly, many of the Ruby applications have already adopted this strategy: a typical Rails deployments is powered by a cluster of app servers (<a href="http://mongrel.rubyforge.org/">Mongrel</a>, <a href="http://ebb.rubyforge.org/">Ebb</a>, <a href="http://code.macournoyer.com/thin/">Thin</a>), and alternative strategies like <a href="http://www.igvita.com/2008/05/27/ruby-eventmachine-the-speed-demon/">EventMachine</a>, and <a href="http://revactor.org/">Revactor</a> (equivalents of <a href="http://twistedmatrix.com/trac/">Twisted</a> in Python) are gaining ground as a simple way to defer and parallelize your network IO without introducing threads into your application.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/igvita?a=O4AWN"><img src="http://feeds.feedburner.com/~f/igvita?i=O4AWN" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=TNGBn"><img src="http://feeds.feedburner.com/~f/igvita?i=TNGBn" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=nP9kn"><img src="http://feeds.feedburner.com/~f/igvita?i=nP9kn" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=CCpQn"><img src="http://feeds.feedburner.com/~f/igvita?i=CCpQn" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=VIi2n"><img src="http://feeds.feedburner.com/~f/igvita?i=VIi2n" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/igvita/~4/451992157" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.igvita.com/2008/11/13/concurrency-is-a-myth-in-ruby/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=igvita&amp;itemurl=http%3A%2F%2Fwww.igvita.com%2F2008%2F11%2F13%2Fconcurrency-is-a-myth-in-ruby%2F</feedburner:awareness><feedburner:origLink>http://www.igvita.com/2008/11/13/concurrency-is-a-myth-in-ruby/</feedburner:origLink></item>
+		<item>
+		<title>Scaling ActiveRecord with MySQLPlus</title>
+		<link>http://feeds.feedburner.com/~r/igvita/~3/433641125/</link>
+		<comments>http://www.igvita.com/2008/10/27/scaling-activerecord-with-mysqlplus/#comments</comments>
+		<pubDate>Mon, 27 Oct 2008 14:53:13 +0000</pubDate>
+		<dc:creator>Ilya Grigorik</dc:creator>
+		
+		<category><![CDATA[Ruby on Rails]]></category>
+
+		<category><![CDATA[activerecord]]></category>
+
+		<category><![CDATA[rails]]></category>
+
+		<category><![CDATA[Ruby]]></category>
+
+		<guid isPermaLink="false">http://www.igvita.com/?p=197</guid>
+		<description><![CDATA[Late last week Rails core team announced the release of Rails 2.2RC1, which amongst other things slips in 'thread safety' and an implementation of a connection pool for our beloved ActiveRecord. Pratik Naik and Charles Nutter have both covered the implications of these contributions, but the executive summary is as follows: single ruby process (mongrel), [...]]]></description>
+			<content:encoded><![CDATA[<p><img align="left" style="margin-right: 1em;" src="http://www.igvita.com/posts/08/rails.png"/>Late last week Rails core team <a href="http://weblog.rubyonrails.org/2008/10/24/rails-2-2-rc1-i18n-thread-safety-docs-etag-last-modified">announced the release of Rails 2.2RC1</a>, which amongst other things slips in '<a href="http://en.wikipedia.org/wiki/Thread-safety">thread safety</a>' and an implementation of a <a href="http://docs.rails.info/classes/ActiveRecord/ConnectionAdapters/ConnectionPool.html">connection pool</a> for our beloved ActiveRecord. <a href="http://m.onkey.org/2008/10/23/thread-safety-for-your-rails">Pratik Naik</a> and <a href="http://blog.headius.com/2008/08/qa-what-thread-safe-rails-means.html">Charles Nutter</a> have both covered the implications of these contributions, but the executive summary is as follows: single ruby process (mongrel), plus many MySQL connections (ActiveRecord connection pool), means concurrent execution within that Mongrel process. This also means memory conservation, better throughput, and a much simplified deployment model. Sounds like something worth thinking about!</p>
+<h4><strong>ActiveRecord Under The Hood</strong></h4>
+<p>The <a href="http://docs.rails.info/classes/ActiveRecord/ConnectionAdapters/ConnectionPool.html">ConnectionPool</a> class introduced in Rails 2.2RC1 is effectively a simple wrapper for guaranteeing thread-safe access to a predefined set of connections (in our case, MySQL sessions). Let's take it for a spin outside of Rails:</p>
+<p><a href="javascript:showme('5660_1');"> <b>> activerecord-pool.rb</b></a>
+<div style=" background:white;" id=5660_1>
+<pre class="ruby"><span style="color:#CC0066; font-weight:bold;">require</span> <span style="color:#996600;">&quot;rubygems&quot;</span>
+<span style="color:#CC0066; font-weight:bold;">require</span> <span style="color:#996600;">&quot;active_record&quot;</span>
+&nbsp;
+<span style="color:#6666ff; font-weight:bold;">ActiveRecord::Base</span>.<span style="color:#9900CC;">establish_connection</span><span style="color:#006600; font-weight:bold;">&#40;</span>
+  <span style="color:#ff3333; font-weight:bold;">:adapter</span> =&gt; <span style="color:#996600;">&quot;mysql&quot;</span>,
+  <span style="color:#ff3333; font-weight:bold;">:username</span> =&gt; <span style="color:#996600;">&quot;root&quot;</span>,
+  <span style="color:#ff3333; font-weight:bold;">:database</span> =&gt; <span style="color:#996600;">&quot;database&quot;</span>,
+  <span style="color:#ff3333; font-weight:bold;">:pool</span> =&gt; <span style="color:#006666;">5</span>
+<span style="color:#006600; font-weight:bold;">&#41;</span>
+&nbsp;
+threads = <span style="color:#006600; font-weight:bold;">&#91;</span><span style="color:#006600; font-weight:bold;">&#93;</span>
+<span style="color:#006666;">10</span>.<span style="color:#9900CC;">times</span> <span style="color:#9966CC; font-weight:bold;">do</span> |n|
+&nbsp;
+ threads &lt;&lt;  <span style="color:#CC00FF; font-weight:bold;">Thread</span>.<span style="color:#9900CC;">new</span> <span style="color:#006600; font-weight:bold;">&#123;</span>
+    <span style="color:#6666ff; font-weight:bold;">ActiveRecord::Base</span>.<span style="color:#9900CC;">connection_pool</span>.<span style="color:#9900CC;">with_connection</span> <span style="color:#9966CC; font-weight:bold;">do</span> |conn|
+      res =  conn.<span style="color:#9900CC;">execute</span><span style="color:#006600; font-weight:bold;">&#40;</span><span style="color:#996600;">&quot;select sleep(1)&quot;</span><span style="color:#006600; font-weight:bold;">&#41;</span>
+    <span style="color:#9966CC; font-weight:bold;">end</span>
+  <span style="color:#006600; font-weight:bold;">&#125;</span>
+<span style="color:#9966CC; font-weight:bold;">end</span>
+&nbsp;
+<span style="color:#008000; font-style:italic;"># block and wait for all threads to finish</span>
+threads.<span style="color:#9900CC;">each</span> <span style="color:#006600; font-weight:bold;">&#123;</span> |t| t.<span style="color:#9900CC;">join</span> <span style="color:#006600; font-weight:bold;">&#125;</span>
+&nbsp;
+<span style="color:#008000; font-style:italic;"># [root@localhost tm]# time ruby activerecord-pool-orig.rb</span>
+<span style="color:#008000; font-style:italic;">#</span>
+<span style="color:#008000; font-style:italic;"># real    0m10.644s</span>
+<span style="color:#008000; font-style:italic;"># user    0m0.405s</span>
+<span style="color:#008000; font-style:italic;"># sys     0m0.211s</span></pre>
+</div>
+<p>Hold on, what happened? We've defined a pool with five MySQL connections, spooled up ten Ruby threads, and simulated some long running queries (one second each). How come it took 10 seconds to finish? It looks like it's executing our commands in serial!</p>
+<p>To those of you familiar with the underlying gems this is hardly surprising. The problem is that the <a href="http://www.tmtm.org/en/ruby/mysql/">core MySQL gem</a> uses blocking IO and every call to the MySQL server results in a completely locked up Ruby process - hence, no parallelism is possible. So much for our ConnectionPool?</p>
+<h4><strong>Asynchronous MySQL with MySQLPlus</strong></h4>
+<p>Thankfully, we have an alternative: <a href="http://github.com/oldmoe/mysqlplus/tree/master">MySQLPlus</a>. <a href="http://www.espace.com.eg/neverblock/blog/2008/08/28/neverblock-mysql-support/">Coming out</a> of the <a href="http://www.espace.com.eg/neverblock">Neverblock</a> project, it attempts to solve exactly this problem by providing an 'asynchronous interface and threaded access support'. First, let's get it installed on our system:</p>
+<blockquote><p>
+git clone git://github.com/oldmoe/mysqlplus.git<br />
+cd mysqlpus<br />
+gem build mysqlplus.gemspec<br />
+gem install mysqlplus-0.1.0.gem
+</p></blockquote>
+<p>Now, let's see if we can patch ActiveRecord to behave as we want:</p>
+<p><a href="javascript:showme('5660_2');"> <b>> activerecord-pool-mysqlplus.rb</b></a>
+<div style=" background:white;" id=5660_2>
+<pre class="ruby"><span style="color:#CC0066; font-weight:bold;">require</span> <span style="color:#996600;">&quot;rubygems&quot;</span>
+<span style="color:#CC0066; font-weight:bold;">require</span> <span style="color:#996600;">&quot;active_record&quot;</span>
+&nbsp;
+<span style="color:#008000; font-style:italic;"># Connection pool logic works, but the underlying driver</span>
+<span style="color:#008000; font-style:italic;"># is still blocking. However, aliasing the query method</span>
+<span style="color:#008000; font-style:italic;"># to use mysqlplus produces expected results!</span>
+<span style="color:#CC0066; font-weight:bold;">require</span> <span style="color:#996600;">'mysqlplus'</span>
+<span style="color:#9966CC; font-weight:bold;">class</span> Mysql; <span style="color:#9966CC; font-weight:bold;">alias</span> <span style="color:#ff3333; font-weight:bold;">:query</span> <span style="color:#ff3333; font-weight:bold;">:async_query</span>; <span style="color:#9966CC; font-weight:bold;">end</span>
+&nbsp;
+<span style="color:#6666ff; font-weight:bold;">ActiveRecord::Base</span>.<span style="color:#9900CC;">establish_connection</span><span style="color:#006600; font-weight:bold;">&#40;</span>
+  <span style="color:#ff3333; font-weight:bold;">:adapter</span> =&gt; <span style="color:#996600;">&quot;mysql&quot;</span>,
+  <span style="color:#ff3333; font-weight:bold;">:username</span> =&gt; <span style="color:#996600;">&quot;root&quot;</span>,
+  <span style="color:#ff3333; font-weight:bold;">:database</span> =&gt; <span style="color:#996600;">&quot;database&quot;</span>,
+  <span style="color:#ff3333; font-weight:bold;">:pool</span> =&gt; <span style="color:#006666;">5</span>
+<span style="color:#006600; font-weight:bold;">&#41;</span>
+&nbsp;
+threads = <span style="color:#006600; font-weight:bold;">&#91;</span><span style="color:#006600; font-weight:bold;">&#93;</span>
+<span style="color:#006666;">10</span>.<span style="color:#9900CC;">times</span> <span style="color:#9966CC; font-weight:bold;">do</span> |n|
+&nbsp;
+ threads &lt;&lt;  <span style="color:#CC00FF; font-weight:bold;">Thread</span>.<span style="color:#9900CC;">new</span> <span style="color:#006600; font-weight:bold;">&#123;</span>
+    <span style="color:#6666ff; font-weight:bold;">ActiveRecord::Base</span>.<span style="color:#9900CC;">connection_pool</span>.<span style="color:#9900CC;">with_connection</span> <span style="color:#9966CC; font-weight:bold;">do</span> |conn|
+      res =  conn.<span style="color:#9900CC;">execute</span><span style="color:#006600; font-weight:bold;">&#40;</span><span style="color:#996600;">&quot;select sleep(1)&quot;</span><span style="color:#006600; font-weight:bold;">&#41;</span>
+    <span style="color:#9966CC; font-weight:bold;">end</span>
+  <span style="color:#006600; font-weight:bold;">&#125;</span>
+<span style="color:#9966CC; font-weight:bold;">end</span>
+&nbsp;
+<span style="color:#008000; font-style:italic;"># block and wait for all threads to finish</span>
+threads.<span style="color:#9900CC;">each</span> <span style="color:#006600; font-weight:bold;">&#123;</span> |t| t.<span style="color:#9900CC;">join</span> <span style="color:#006600; font-weight:bold;">&#125;</span>
+&nbsp;
+<span style="color:#008000; font-style:italic;">#[root@localhost tm]# time ruby activerecord-pool.rb</span>
+<span style="color:#008000; font-style:italic;">#</span>
+<span style="color:#008000; font-style:italic;"># real    0m2.663s</span>
+<span style="color:#008000; font-style:italic;"># user    0m0.413s</span>
+<span style="color:#008000; font-style:italic;"># sys     0m0.223s</span></pre>
+</div>
+<p><div class='download-link'>
+							<a href='http://www.igvita.com/download.php?file=http://www.igvita.com/downloads/rails-pool.zip'><img alt='Download' class='leftalign' src='http://www.igvita.com/wp-content/plugins/dBeautifier/icons/downloads.png' /></a>
+							<h4>
+								<a href='http://www.igvita.com/download.php?file=http://www.igvita.com/downloads/rails-pool.zip'>rails-pool.zip (ActiveRecord source-code examples)</a>
+							</h4><p>Downloads: 178 File Size: 1.7 KB </p>
+						</div></p>
+<p>Much better! Instead of processing in serial order we were able to make use of our connection pool and complete the entire test in roughly two seconds. To achieve this, we've had to redefine the primary 'query' method in the MySQL gem to use the asynchronous interface provided by MySQLPlus - arguably not the cleanest way to handle the case. Having said that, MySQLPlus is a stable gem, and one you should watch as there are a number of <a href="http://github.com/oldmoe/mysqlplus/commit/35d2545c17f385a9cf524bfea39606524d75c009">interesting</a> <a href="http://groups.google.com/group/never-block/browse_thread/thread/b5b134707fc2e6c8">performance</a> <a href="http://github.com/oldmoe/mysqlplus/commits/with_async_validation">patches</a> in the works.</p>
+<h4><strong>Does this mean it work with Rails?</strong></h4>
+<p>Almost. Sneaking MySQLPlus under the covers of ActiveRecord gets us pretty far, but Rails is not yet ready for production use with this pattern. First, <a href="http://mongrel.rubyforge.org/ticket/48">Mongrel needs to be patched</a>, and then the real bug hunt begins:</p>
+<p><a href="javascript:showme('5660_3');"> <b>> rails-pool.rb</b></a>
+<div style=" background:white;" id=5660_3>
+<pre class="ruby"><span style="color:#008000; font-style:italic;"># simple controller to simulate a long running request</span>
+<span style="color:#9966CC; font-weight:bold;">class</span> SamplesController &lt; ApplicationController
+ <span style="color:#9966CC; font-weight:bold;">def</span> slow
+  render <span style="color:#ff3333; font-weight:bold;">:text</span> =&gt; Sample.<span style="color:#9900CC;">find_by_sql</span><span style="color:#006600; font-weight:bold;">&#40;</span><span style="color:#996600;">&quot;select sleep(5)&quot;</span><span style="color:#006600; font-weight:bold;">&#41;</span>.<span style="color:#9900CC;">to_s</span>
+ <span style="color:#9966CC; font-weight:bold;">end</span>
+&nbsp;
+ <span style="color:#9966CC; font-weight:bold;">def</span> slow_pool
+    <span style="color:#6666ff; font-weight:bold;">ActiveRecord::Base</span>.<span style="color:#9900CC;">connection_pool</span>.<span style="color:#9900CC;">with_connection</span> <span style="color:#9966CC; font-weight:bold;">do</span> |conn|
+      res =  conn.<span style="color:#9900CC;">execute</span><span style="color:#006600; font-weight:bold;">&#40;</span><span style="color:#996600;">&quot;select sleep(5)&quot;</span><span style="color:#006600; font-weight:bold;">&#41;</span>
+    <span style="color:#9966CC; font-weight:bold;">end</span>
+    render <span style="color:#ff3333; font-weight:bold;">:text</span> =&gt; <span style="color:#996600;">'done'</span>
+ <span style="color:#9966CC; font-weight:bold;">end</span>
+<span style="color:#9966CC; font-weight:bold;">end</span>
+&nbsp;
+<span style="color:#008000; font-style:italic;">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span style="color:#008000; font-style:italic;"># append to config/environments/production.rb</span>
+config.<span style="color:#9900CC;">threadsafe</span>!
+&nbsp;
+<span style="color:#CC0066; font-weight:bold;">require</span> <span style="color:#996600;">'mysqlplus'</span>
+<span style="color:#9966CC; font-weight:bold;">class</span> Mysql; <span style="color:#9966CC; font-weight:bold;">alias</span> <span style="color:#ff3333; font-weight:bold;">:query</span> <span style="color:#ff3333; font-weight:bold;">:async_query</span>; <span style="color:#9966CC; font-weight:bold;">end</span>
+&nbsp;
+<span style="color:#008000; font-style:italic;">#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span>
+<span style="color:#008000; font-style:italic;"># apache bench test, which issues two concurrent requests</span>
+&nbsp;
+<span style="color:#008000; font-style:italic;">#[root@localhost threadsafe]# ab -c 2 -n 2 localhost:3000/samples/slow</span>
+<span style="color:#008000; font-style:italic;">#</span>
+<span style="color:#008000; font-style:italic;"># Server Software:        Mongrel</span>
+<span style="color:#008000; font-style:italic;"># Server Hostname:        localhost</span>
+<span style="color:#008000; font-style:italic;"># Server Port:            3000</span>
+<span style="color:#008000; font-style:italic;">#</span>
+<span style="color:#008000; font-style:italic;"># Document Path:          /samples/slow</span>
+<span style="color:#008000; font-style:italic;"># Concurrency Level:      2</span>
+<span style="color:#008000; font-style:italic;"># Time taken for tests:   5.23008 seconds</span>
+<span style="color:#008000; font-style:italic;"># Complete requests:      2</span>
+&nbsp;</pre>
+</div>
+<p>As you can see, with a few simple changes our single Mongrel process is now capable of serving several parallel requests. However, more rigorous testing is still showing hung up threads and broken processing patterns (it is RC1 for a reason), but the bottom line is, we're making great progress!</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/igvita?a=9jzVM"><img src="http://feeds.feedburner.com/~f/igvita?i=9jzVM" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=s2CCm"><img src="http://feeds.feedburner.com/~f/igvita?i=s2CCm" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=XwIvm"><img src="http://feeds.feedburner.com/~f/igvita?i=XwIvm" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=Rvy3m"><img src="http://feeds.feedburner.com/~f/igvita?i=Rvy3m" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=F8iKm"><img src="http://feeds.feedburner.com/~f/igvita?i=F8iKm" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/igvita/~4/433641125" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.igvita.com/2008/10/27/scaling-activerecord-with-mysqlplus/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=igvita&amp;itemurl=http%3A%2F%2Fwww.igvita.com%2F2008%2F10%2F27%2Fscaling-activerecord-with-mysqlplus%2F</feedburner:awareness><feedburner:origLink>http://www.igvita.com/2008/10/27/scaling-activerecord-with-mysqlplus/</feedburner:origLink></item>
+		<item>
+		<title>Distributed Logging: Syslog-ng &amp; Splunk</title>
+		<link>http://feeds.feedburner.com/~r/igvita/~3/428668509/</link>
+		<comments>http://www.igvita.com/2008/10/22/distributed-logging-syslog-ng-splunk/#comments</comments>
+		<pubDate>Wed, 22 Oct 2008 15:38:42 +0000</pubDate>
+		<dc:creator>Ilya Grigorik</dc:creator>
+		
+		<category><![CDATA[Architecture]]></category>
+
+		<category><![CDATA[logging]]></category>
+
+		<category><![CDATA[splunk]]></category>
+
+		<category><![CDATA[syslog-ng]]></category>
+
+		<guid isPermaLink="false">http://www.igvita.com/?p=196</guid>
+		<description><![CDATA[If you haven't already, I encourage you to take Splunk for a test drive. While there is no shortage of distributed log aggregators on the market, few if any come with as much flexibility and firepower when it comes to indexing and search when you need to find a needle in a haystack of log [...]]]></description>
+			<content:encoded><![CDATA[<p>If you haven't already, I encourage you to <a href="http://www.igvita.com/2008/06/19/splunk-your-distributed-logs-in-ec2/">take Splunk for a test drive</a>. While there is no shortage of distributed log aggregators on the market, few if any come with as much <a href="http://www.splunk.com/article/2186">flexibility and firepower</a> when it comes to indexing and search when you need to find a needle in a haystack of log data.</p>
+<p>After deploying it for a collection of Ruby applications using a <a href="http://www.igvita.com/2008/06/19/splunk-your-distributed-logs-in-ec2/">simple UDP logger</a>, I've decided to push the ball even further and see if I could route the entire stack into Splunk: <a href="http://haproxy.1wt.eu/">HAproxy</a>, <a href="http://wiki.codemongers.com/Main">Nginx</a>, Ruby, and others, all over the network. After a few false starts (and not wanting to go to an Enterprise license), I've stumbled on a surprisingly easy solution: <a href="http://www.balabit.com/network-security/syslog-ng/">syslog-ng</a>!</p>
+<h4><strong>Routing Syslog-ng directly to Splunk</strong></h4>
+<p style="text-align: center;"><img src="/posts/08/syslog-ng.png" /></p>
+<p>Syslog-ng was designed from the ground up to be a <a href="http://www.balabit.com/dl/html/syslog-ng-v3.0-guide-admin-en.html/ch02s03.html">distributed</a> <a href="http://www.balabit.com/dl/html/syslog-ng-v3.0-guide-admin-en.html/ch01s01.html">logging application</a>. Unlike Splunk, it is <a href="http://www.balabit.com/dl/html/syslog-ng-v3.0-guide-admin-en.html/ch01s02.html">not meant to be a log analysis package</a>, which is perfect for us, since that is exactly what we're using Splunk for in the first place. Let's take a look at a simple config file:</p>
+<p><a href="javascript:showme('7442_1');"> <b>> syslog-ng.conf</b></a>
+<div style=" background:white;" id=7442_1>
+<pre class="ruby"><span style="color:#008000; font-style:italic;"># custom configuration for haproxy and Nginx</span>
+filter custom  <span style="color:#006600; font-weight:bold;">&#123;</span> program<span style="color:#006600; font-weight:bold;">&#40;</span><span style="color:#996600;">&quot;haproxy&quot;</span><span style="color:#006600; font-weight:bold;">&#41;</span> <span style="color:#9966CC; font-weight:bold;">or</span> program<span style="color:#006600; font-weight:bold;">&#40;</span><span style="color:#996600;">&quot;nginx&quot;</span><span style="color:#006600; font-weight:bold;">&#41;</span>; <span style="color:#006600; font-weight:bold;">&#125;</span>;
+&nbsp;
+log <span style="color:#006600; font-weight:bold;">&#123;</span>
+  <span style="color:#008000; font-style:italic;"># syslog</span>
+  source<span style="color:#006600; font-weight:bold;">&#40;</span>s_sys<span style="color:#006600; font-weight:bold;">&#41;</span>;
+&nbsp;
+  <span style="color:#008000; font-style:italic;"># filter everything but..</span>
+  filter<span style="color:#006600; font-weight:bold;">&#40;</span>custom<span style="color:#006600; font-weight:bold;">&#41;</span>;
+&nbsp;
+  <span style="color:#008000; font-style:italic;"># send to splunk, and local file</span>
+  destination<span style="color:#006600; font-weight:bold;">&#40;</span>splunk<span style="color:#006600; font-weight:bold;">&#41;</span>;
+  destination<span style="color:#006600; font-weight:bold;">&#40;</span>local_log<span style="color:#006600; font-weight:bold;">&#41;</span>;
+<span style="color:#006600; font-weight:bold;">&#125;</span>;
+&nbsp;
+destination splunk <span style="color:#006600; font-weight:bold;">&#123;</span> udp<span style="color:#006600; font-weight:bold;">&#40;</span><span style="color:#996600;">&quot;192.168.0.198&quot;</span> port<span style="color:#006600; font-weight:bold;">&#40;</span><span style="color:#006666;">9998</span><span style="color:#006600; font-weight:bold;">&#41;</span><span style="color:#006600; font-weight:bold;">&#41;</span>; <span style="color:#006600; font-weight:bold;">&#125;</span>;
+destination local_log <span style="color:#006600; font-weight:bold;">&#123;</span> file<span style="color:#006600; font-weight:bold;">&#40;</span><span style="color:#996600;">&quot;/var/log/mylog.log&quot;</span><span style="color:#006600; font-weight:bold;">&#41;</span>; <span style="color:#006600; font-weight:bold;">&#125;</span>;
+&nbsp;</pre>
+</div>
+<p><div class='download-link'>
+							<a href='http://www.igvita.com/download.php?file=http://www.igvita.com/downloads/syslog-ng.zip'><img alt='Download' class='leftalign' src='http://www.igvita.com/wp-content/plugins/dBeautifier/icons/downloads.png' /></a>
+							<h4>
+								<a href='http://www.igvita.com/download.php?file=http://www.igvita.com/downloads/syslog-ng.zip'>syslog-ng.zip (Config files: syslog-ng, haproxy, nginx)</a>
+							</h4><p>Downloads: 164 File Size: 25.5 KB </p>
+						</div></p>
+<p>The configuration syntax for syslog-ng is a pleasure to work with: consume all messages from the syslog, apply a custom filter which we've defined to accept HAProxy and Nginx, and send the messages to a remote Splunk server and a local log file!</p>
+<h4><strong>Routing HAProxy and Nginx to Syslog-ng</strong></h4>
+<p>With syslog-ng ready to go, we have to update HAProxy and Nginx to start logging to syslog. The former is easy and requires a one line change (see top of haproxy config file), but the latter (Nginx) requires applying a <a href="http://snippets.aktagon.com/snippets/247-Logging-nginx-to-remote-loghost-with-syslog-ng-">patch to the source</a> (no worries, it's stable - confirmed and in production). All done? Let's open up Splunk and issue a request that gets routed through HAProxy and to our Nginx server:</p>
+<p style="text-align: center;"><img src="/posts/08/splunk+syslog-ng.png" style="border: 1px solid rgb(153, 153, 153); padding: 1px;"/></p>
+<p>That's it, now you can see live logs from your Ruby, Haproxy, and Nginx processes stream live into your Splunk database for easy debugging and profiling. Of course, same procedures apply to any other process on a remote server - make it log to syslog, and you can route it to Splunk!</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/igvita?a=pGKeM"><img src="http://feeds.feedburner.com/~f/igvita?i=pGKeM" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=88Uqm"><img src="http://feeds.feedburner.com/~f/igvita?i=88Uqm" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=BRMdm"><img src="http://feeds.feedburner.com/~f/igvita?i=BRMdm" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=3dcsm"><img src="http://feeds.feedburner.com/~f/igvita?i=3dcsm" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=enH9m"><img src="http://feeds.feedburner.com/~f/igvita?i=enH9m" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/igvita/~4/428668509" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.igvita.com/2008/10/22/distributed-logging-syslog-ng-splunk/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=igvita&amp;itemurl=http%3A%2F%2Fwww.igvita.com%2F2008%2F10%2F22%2Fdistributed-logging-syslog-ng-splunk%2F</feedburner:awareness><feedburner:origLink>http://www.igvita.com/2008/10/22/distributed-logging-syslog-ng-splunk/</feedburner:origLink></item>
+		<item>
+		<title>Asynchronous HTTP Cache Validations</title>
+		<link>http://feeds.feedburner.com/~r/igvita/~3/413754720/</link>
+		<comments>http://www.igvita.com/2008/10/07/asynchronous-http-cache-validations/#comments</comments>
+		<pubDate>Tue, 07 Oct 2008 12:18:48 +0000</pubDate>
+		<dc:creator>Ilya Grigorik</dc:creator>
+		
+		<category><![CDATA[Architecture]]></category>
+
+		<category><![CDATA[Ruby]]></category>
+
+		<category><![CDATA[cache]]></category>
+
+		<category><![CDATA[eventmachine]]></category>
+
+		<category><![CDATA[http]]></category>
+
+		<guid isPermaLink="false">http://www.igvita.com/?p=194</guid>
+		<description><![CDATA[HTTP caching can go a long way to help scale a web application - instead of dynamically serving every single request, we can use memcached, Squid, Varnish, or a multitude of other tools to respond in just a few milliseconds. However, as developers at Yahoo have noted, there is a common failure scenario that is [...]]]></description>
+			<content:encoded><![CDATA[<p>HTTP caching can go a long way to help scale a web application - instead of dynamically serving every single request, we can use <a href="http://www.danga.com/memcached/">memcached</a>, <a href="http://www.squid-cache.org/">Squid</a>, <a href="http://varnish.projects.linpro.no/">Varnish</a>, or a multitude of other tools to respond in just a few milliseconds. However, as <a href="http://www.mnot.net/blog/2007/12/12/stale">developers at Yahoo have noted</a>, there is a common failure scenario that is often left unaccounted for: what happens when the cache turns stale?</p>
+<blockquote><p>
+If fresh responses come in a small number of milliseconds (as they usually do in a well-tuned cache), while stale ones take 200ms or more (as running code often leads to), users will notice (as will your execs).</p>
+<p>The naïve solution is to pre-fetch things into cache before they become stale, but this leads to all sorts of problems; deciding when to pre-fetch is a major headache, and if you don’t get it right, you’ll overload your cache, the network or your back-end systems, if not all three.
+</p></blockquote>
+<h4><strong>HTTP Caching Extension: stale-while-revalidate</strong></h4>
+<p align="center"><img src="http://www.igvita.com/posts/08/cache-while-revalidate.png"/></p>
+<p>To address this problem <a href="http://www.mnot.net/">Mark Nottingham</a> recently proposed an HTTP caching extension: <a href="http://tools.ietf.org/html/draft-nottingham-http-stale-while-revalidate-01">stale-while-revalidate</a>. A very simple idea at its core, this pattern can have an enormous impact on the user experience. As the diagram shows, the tradeoff is freshness of data vs. response time. Specifically, if your application can afford to show slightly out of date content (colored grey), then stale-while-revalidate can guarantee that the user will always be served directly from the cache, hence guaranteeing a consistent response-time user-experience.</p>
+<h4><strong>Proof of concept with Ruby and EventMachine</strong></h4>
+<p>As Mark has noted in his diagram, the caching layer (in his case, <a href="http://www.squid-cache.org/">Squid</a> - <a href="http://www.squid-cache.org/bugs/show_bug.cgi?id=2256">v2.6 supports stale-while-revalidate</a>), would have to be extended to issue an asynchronous request to the application layer telling it to refresh the cache. Also, interestingly enough, <a href="http://www.socialtext.net/memcached/index.cgi?faq#how_to_prevent_clobbering_updates_stampeding_requests">memcached FAQ elaborates on this exact scenario</a> as well, offering a few suggestions for asynchronous updates: <a href="http://lists.danga.com/pipermail/memcached/2007-July/004858.html">Gearman</a>, and a <a href="http://www.djangosnippets.org/snippets/155/">recipe for Django</a>. Following in these footsteps, I've built a proof of concept in Ruby, <a href="http://www.igvita.com/2008/05/27/ruby-eventmachine-the-speed-demon/">using EventMachine</a>:</p>
+<p><a href="javascript:showme('5467_1');"> <b>> em-stale-while-revalidate.rb</b></a>
+<div style=" background:white;" id=5467_1>
+<pre class="ruby"><span style="color:#008000; font-style:italic;"># www.igvita.com</span>
+&nbsp;
+<span style="color:#CC0066; font-weight:bold;">require</span> <span style="color:#996600;">'rubygems'</span>
+<span style="color:#CC0066; font-weight:bold;">require</span> <span style="color:#996600;">'eventmachine'</span>
+<span style="color:#CC0066; font-weight:bold;">require</span> <span style="color:#996600;">'evma_httpserver'</span>
+<span style="color:#CC0066; font-weight:bold;">require</span> <span style="color:#996600;">'memcache'</span>
+&nbsp;
+<span style="color:#9966CC; font-weight:bold;">class</span> StaleWhileRevalidate  &lt; <span style="color:#6666ff; font-weight:bold;">EventMachine::Connection</span>
+  <span style="color:#9966CC; font-weight:bold;">include</span> <span style="color:#6666ff; font-weight:bold;">EventMachine::HttpServer</span>
+&nbsp;
+  attr_accessor <span style="color:#ff3333; font-weight:bold;">:memcached</span>
+  attr_reader <span style="color:#ff3333; font-weight:bold;">:http_request_uri</span>, <span style="color:#ff3333; font-weight:bold;">:http_query_string</span>
+&nbsp;
+  <span style="color:#9966CC; font-weight:bold;">def</span> process_http_request
+    resp = <span style="color:#6666ff; font-weight:bold;">EventMachine::DelegatedHttpResponse</span>.<span style="color:#9900CC;">new</span><span style="color:#006600; font-weight:bold;">&#40;</span><span style="color:#0000FF; font-weight:bold;">self</span><span style="color:#006600; font-weight:bold;">&#41;</span>
+&nbsp;
+    response = <span style="color:#CC0066; font-weight:bold;">proc</span> <span style="color:#9966CC; font-weight:bold;">do</span> |data|
+      resp.<span style="color:#9900CC;">status</span> = <span style="color:#006666;">200</span>
+      resp.<span style="color:#9900CC;">content</span> = data
+      resp.<span style="color:#9900CC;">send_response</span>
+    <span style="color:#9966CC; font-weight:bold;">end</span>
+&nbsp;
+    <span style="color:#008000; font-style:italic;"># Cache two keys: 'key' (with an expire) and 'key-no-ttl' (with no expire)</span>
+    <span style="color:#008000; font-style:italic;"># if 'key' has expired, return value at 'key-no-ttl', and start an async</span>
+    <span style="color:#008000; font-style:italic;"># update process to update the cache</span>
+    <span style="color:#008000; font-style:italic;">#   </span>
+    <span style="color:#008000; font-style:italic;"># key = full request path with query parameters</span>
+    cache_key = <span style="color:#0066ff; font-weight:bold;">@http_request_uri</span>.<span style="color:#9900CC;">to_s</span> + <span style="color:#0066ff; font-weight:bold;">@http_query_string</span>.<span style="color:#9900CC;">to_s</span>
+    keys = <span style="color:#006600; font-weight:bold;">&#123;</span>:key =&gt; cache_key, <span style="color:#ff3333; font-weight:bold;">:no_ttl</span> =&gt; cache_key + <span style="color:#996600;">&quot;-no-ttl&quot;</span>, <span style="color:#ff3333; font-weight:bold;">:processing</span> =&gt; cache_key + <span style="color:#996600;">&quot;-processing&quot;</span><span style="color:#006600; font-weight:bold;">&#125;</span>
+    cache = <span style="color:#0066ff; font-weight:bold;">@memcached</span>.<span style="color:#9900CC;">get_multi</span><span style="color:#006600; font-weight:bold;">&#40;</span>*keys.<span style="color:#9900CC;">values</span><span style="color:#006600; font-weight:bold;">&#41;</span>
+&nbsp;
+    <span style="color:#008000; font-style:italic;"># async operation to compute value to be stored in the cache, in this case..</span>
+    <span style="color:#008000; font-style:italic;"># data is a simple timestamp. This is where actual app logic and  processing</span>
+    <span style="color:#008000; font-style:italic;"># is done. (talking to database, etc.)</span>
+    operation = <span style="color:#CC0066; font-weight:bold;">proc</span> <span style="color:#9966CC; font-weight:bold;">do</span>
+      <span style="color:#CC0066; font-weight:bold;">sleep</span> <span style="color:#006666;">5</span>
+      <span style="color:#0066ff; font-weight:bold;">@data</span> = <span style="color:#CC00FF; font-weight:bold;">Time</span>.<span style="color:#9900CC;">now</span>.<span style="color:#9900CC;">to_s</span>
+    <span style="color:#9966CC; font-weight:bold;">end</span>
+&nbsp;
+    <span style="color:#008000; font-style:italic;"># Callback to execute once the request is fulfilled, will update the</span>
+    <span style="color:#008000; font-style:italic;"># memcached values for future requests</span>
+    callback = <span style="color:#CC0066; font-weight:bold;">proc</span> <span style="color:#9966CC; font-weight:bold;">do</span> |res|
+&nbsp;
+      <span style="color:#008000; font-style:italic;"># if cache is empty, then this is a new request, and we need to render</span>
+      <span style="color:#008000; font-style:italic;"># response back to user. This is the only time the user will hit live</span>
+      <span style="color:#008000; font-style:italic;"># application server</span>
+      response.<span style="color:#9900CC;">call</span><span style="color:#006600; font-weight:bold;">&#40;</span>@data<span style="color:#006600; font-weight:bold;">&#41;</span> <span style="color:#9966CC; font-weight:bold;">if</span> cache.<span style="color:#9900CC;">empty</span>?
+&nbsp;
+      <span style="color:#0066ff; font-weight:bold;">@memcached</span>.<span style="color:#9900CC;">set</span><span style="color:#006600; font-weight:bold;">&#40;</span>keys<span style="color:#006600; font-weight:bold;">&#91;</span><span style="color:#ff3333; font-weight:bold;">:key</span><span style="color:#006600; font-weight:bold;">&#93;</span>, <span style="color:#0066ff; font-weight:bold;">@data</span>, <span style="color:#006666;">10</span><span style="color:#006600; font-weight:bold;">&#41;</span>
+      <span style="color:#0066ff; font-weight:bold;">@memcached</span>.<span style="color:#9900CC;">set</span><span style="color:#006600; font-weight:bold;">&#40;</span>keys<span style="color:#006600; font-weight:bold;">&#91;</span><span style="color:#ff3333; font-weight:bold;">:no_ttl</span><span style="color:#006600; font-weight:bold;">&#93;</span>, <span style="color:#0066ff; font-weight:bold;">@data</span>, <span style="color:#006666;">0</span><span style="color:#006600; font-weight:bold;">&#41;</span>
+      <span style="color:#0066ff; font-weight:bold;">@memcached</span>.<span style="color:#9900CC;">set</span><span style="color:#006600; font-weight:bold;">&#40;</span>keys<span style="color:#006600; font-weight:bold;">&#91;</span><span style="color:#ff3333; font-weight:bold;">:processing</span><span style="color:#006600; font-weight:bold;">&#93;</span>, <span style="color:#006666;">0</span>, <span style="color:#006666;">0</span><span style="color:#006600; font-weight:bold;">&#41;</span>
+&nbsp;
+      <span style="color:#CC0066; font-weight:bold;">puts</span> <span style="color:#996600;">&quot;<span style="color:#000099;">\\t</span> app server updated cache! New value for '#{keys[:key]}' : #{@data}&quot;</span>
+    <span style="color:#9966CC; font-weight:bold;">end</span>
+&nbsp;
+    <span style="color:#008000; font-style:italic;"># if key has not expired, then return immediately, we're safe!</span>
+    <span style="color:#9966CC; font-weight:bold;">if</span> cache<span style="color:#006600; font-weight:bold;">&#91;</span>cache_key<span style="color:#006600; font-weight:bold;">&#93;</span>
+      <span style="color:#CC0066; font-weight:bold;">puts</span> <span style="color:#996600;">&quot;Valid cache for: #{cache_key} :: Data :: #{cache[cache_key]}&quot;</span>
+      response.<span style="color:#9900CC;">call</span><span style="color:#006600; font-weight:bold;">&#40;</span>cache<span style="color:#006600; font-weight:bold;">&#91;</span>cache_key<span style="color:#006600; font-weight:bold;">&#93;</span><span style="color:#006600; font-weight:bold;">&#41;</span>
+&nbsp;
+    <span style="color:#9966CC; font-weight:bold;">else</span>
+      <span style="color:#008000; font-style:italic;"># check if we've seen this request before... if so we'll have the no-ttl</span>
+      <span style="color:#008000; font-style:italic;"># key, which we'll return immediately, and then start an async process</span>
+      <span style="color:#008000; font-style:italic;"># to update the stale cache</span>
+      <span style="color:#9966CC; font-weight:bold;">if</span> cache<span style="color:#006600; font-weight:bold;">&#91;</span>keys<span style="color:#006600; font-weight:bold;">&#91;</span><span style="color:#ff3333; font-weight:bold;">:no_ttl</span><span style="color:#006600; font-weight:bold;">&#93;</span><span style="color:#006600; font-weight:bold;">&#93;</span>
+        <span style="color:#CC0066; font-weight:bold;">puts</span> <span style="color:#996600;">&quot;Stale cache for: #{keys[:key]} :: Data :: #{cache[keys[:no_ttl]]} :: Processing? :: #{cache[keys[:processing]]}&quot;</span>
+        response.<span style="color:#9900CC;">call</span><span style="color:#006600; font-weight:bold;">&#40;</span>cache<span style="color:#006600; font-weight:bold;">&#91;</span>keys<span style="color:#006600; font-weight:bold;">&#91;</span><span style="color:#ff3333; font-weight:bold;">:no_ttl</span><span style="color:#006600; font-weight:bold;">&#93;</span><span style="color:#006600; font-weight:bold;">&#93;</span><span style="color:#006600; font-weight:bold;">&#41;</span>
+&nbsp;
+        <span style="color:#008000; font-style:italic;"># set processing flag to true, this avoids multiple requests piling on</span>
+        <span style="color:#008000; font-style:italic;"># while the async query is waiting to complete</span>
+        <span style="color:#0066ff; font-weight:bold;">@memcached</span>.<span style="color:#9900CC;">set</span><span style="color:#006600; font-weight:bold;">&#40;</span>keys<span style="color:#006600; font-weight:bold;">&#91;</span><span style="color:#ff3333; font-weight:bold;">:processing</span><span style="color:#006600; font-weight:bold;">&#93;</span>, <span style="color:#006666;">1</span>, <span style="color:#006666;">0</span><span style="color:#006600; font-weight:bold;">&#41;</span>
+      <span style="color:#9966CC; font-weight:bold;">end</span>
+&nbsp;
+      EM.<span style="color:#9900CC;">defer</span><span style="color:#006600; font-weight:bold;">&#40;</span>operation, callback<span style="color:#006600; font-weight:bold;">&#41;</span> <span style="color:#9966CC; font-weight:bold;">if</span> cache<span style="color:#006600; font-weight:bold;">&#91;</span>keys<span style="color:#006600; font-weight:bold;">&#91;</span><span style="color:#ff3333; font-weight:bold;">:processing</span><span style="color:#006600; font-weight:bold;">&#93;</span><span style="color:#006600; font-weight:bold;">&#93;</span>.<span style="color:#9900CC;">to_i</span> != <span style="color:#006666;">1</span>
+    <span style="color:#9966CC; font-weight:bold;">end</span>
+  <span style="color:#9966CC; font-weight:bold;">end</span>
+<span style="color:#9966CC; font-weight:bold;">end</span>
+&nbsp;
+EventMachine::run <span style="color:#006600; font-weight:bold;">&#123;</span>
+  <span style="color:#0066ff; font-weight:bold;">@memcached</span> = MemCache.<span style="color:#9900CC;">new</span><span style="color:#006600; font-weight:bold;">&#40;</span><span style="color:#996600;">&quot;localhost:11211&quot;</span><span style="color:#006600; font-weight:bold;">&#41;</span>
+  EventMachine::start_server<span style="color:#006600; font-weight:bold;">&#40;</span><span style="color:#996600;">&quot;0.0.0.0&quot;</span>, <span style="color:#006666;">8081</span>, StaleWhileRevalidate<span style="color:#006600; font-weight:bold;">&#41;</span> <span style="color:#006600; font-weight:bold;">&#123;</span> |conn|
+    conn.<span style="color:#9900CC;">memcached</span> = <span style="color:#0066ff; font-weight:bold;">@memcached</span>
+  <span style="color:#006600; font-weight:bold;">&#125;</span>
+  <span style="color:#CC0066; font-weight:bold;">puts</span> <span style="color:#996600;">&quot;Listening on port 8081.&quot;</span>
+<span style="color:#006600; font-weight:bold;">&#125;</span>
+&nbsp;</pre>
+</div>
+<p><div class='download-link'>
+							<a href='http://www.igvita.com/download.php?file=http://www.igvita.com/downloads/code/em-stale-while-revalidate.rb'><img alt='Download' class='leftalign' src='http://www.igvita.com/wp-content/plugins/dBeautifier/icons/downloads.png' /></a>
+							<h4>
+								<a href='http://www.igvita.com/download.php?file=http://www.igvita.com/downloads/code/em-stale-while-revalidate.rb'>em-stale-while-revalidate.rb (Ruby source)</a>
+							</h4><p>Downloads: 324 File Size: 2.9 KB </p>
+						</div></p>
+<p>The application logic is simple: if we have never seen this request, process, and cache it; if we've seen this request, and the cache is valid, then render response; if we've seen this response, but the cache is stale, render the stale version immediately, and then continue the process to update the cache. Also, to avoid the 'stampeding' effect, we've added a flag to mark a request as in-progress, to indicate that an application server is working on updating the cache. Connecting all the pieces together, let's take a look at the server output for a few incoming requests:</p>
+<blockquote><p>
+Listening on port 8081.<br />
+         app server updated cache! New value for '/test/path' : Sun Oct 05 22:12:25 -0400 2008<br />
+Valid cache for: /test/path :: Data :: Sun Oct 05 22:12:25 -0400 2008<br />
+Valid cache for: /test/path :: Data :: Sun Oct 05 22:12:25 -0400 2008<br />
+Stale cache for: /test/path :: Data :: Sun Oct 05 22:12:25 -0400 2008 :: Processing? :: 0<br />
+Stale cache for: /test/path :: Data :: Sun Oct 05 22:12:25 -0400 2008 :: Processing? :: 1<br />
+         app server updated cache! New value for '/test/path' : Sun Oct 05 22:12:40 -0400 2008<br />
+Valid cache for: /test/path :: Data :: Sun Oct 05 22:12:40 -0400 2008<br />
+Valid cache for: /test/path :: Data :: Sun Oct 05 22:12:40 -0400 2008
+</p></blockquote>
+<p>As you can see, the first request sets the cache, and subsequent two requests are served from it. Then, once the cache turns stale (after 10 seconds), two requests saw stale data, while the application server was busy updating the cache!</p>
+<h4><strong>Implementing stale-while-revalidate</strong></h4>
+<p>This pattern can be easily extracted into a Rails/Merb plugin format (as well as, improved: duplication of stored data, etc.), but ideally this logic should live in a layer above. Connecting <a href="http://www.igvita.com/2008/02/11/nginx-and-memcached-a-400-boost/">Nginx and Memached directly can yield spectacular results</a>, and it would be great to see a modified <a href="http://wiki.codemongers.com/NginxHttpMemcachedModule">Memcached module</a> for Nginx which could take advantage of this pattern as well (memcached_revalidate?) - no modifications on the application layer, and native support for any framework or language by definition.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/igvita?a=ONcUM"><img src="http://feeds.feedburner.com/~f/igvita?i=ONcUM" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=TPAKm"><img src="http://feeds.feedburner.com/~f/igvita?i=TPAKm" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=3exIm"><img src="http://feeds.feedburner.com/~f/igvita?i=3exIm" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=SAlgm"><img src="http://feeds.feedburner.com/~f/igvita?i=SAlgm" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=SW7Rm"><img src="http://feeds.feedburner.com/~f/igvita?i=SW7Rm" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/igvita/~4/413754720" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.igvita.com/2008/10/07/asynchronous-http-cache-validations/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=igvita&amp;itemurl=http%3A%2F%2Fwww.igvita.com%2F2008%2F10%2F07%2Fasynchronous-http-cache-validations%2F</feedburner:awareness><feedburner:origLink>http://www.igvita.com/2008/10/07/asynchronous-http-cache-validations/</feedburner:origLink></item>
+		<item>
+		<title>Load Testing With Log Replay</title>
+		<link>http://feeds.feedburner.com/~r/igvita/~3/407278630/</link>
+		<comments>http://www.igvita.com/2008/09/30/load-testing-with-log-replay/#comments</comments>
+		<pubDate>Tue, 30 Sep 2008 13:40:46 +0000</pubDate>
+		<dc:creator>Ilya Grigorik</dc:creator>
+		
+		<category><![CDATA[Architecture]]></category>
+
+		<category><![CDATA[benchmark]]></category>
+
+		<category><![CDATA[performance]]></category>
+
+		<category><![CDATA[testing]]></category>
+
+		<guid isPermaLink="false">http://www.igvita.com/?p=192</guid>
+		<description><![CDATA[Performance testing can be a tricky proposition, how many times have you deployed code that fell apart in production? (Hey, we've all done it!) Having a staging environment, which replicates the data and deployment environments are great first steps, but even that often falls short from producing reliable results. And that is where load testing [...]]]></description>
+			<content:encoded><![CDATA[<p><img align="left" src="http://www.igvita.com/blog/posts/08/load-testing.png" />Performance testing can be a tricky proposition, how many times have you deployed code that fell apart in production? (Hey, we've all done it!) Having a <a href="http://en.wikipedia.org/wiki/Staging_site">staging environment</a>, which replicates the data and deployment environments are great first steps, but even that often falls short from producing reliable results. And that is where load testing comes in: we need to test our application in the context of a multi-user audience interacting with all of the components of our site. Great, but how do we do that? Well, why not just grab the access logs from your current production environment, and replay them!</p>
+<h4><strong>Performance & Benchmarking tools</strong></h4>
+<p>If you start looking, you'll find an <a href="http://www.softwareqatest.com/qatweb1.html#LOAD">abundance</a> of <a href="http://www.opensourcetesting.org/performance.php">benchmarking applications</a>, but the commonly cited industry standards are: <a href="http://httpd.apache.org/docs/2.0/programs/ab.html">Apache Bench</a>, <a href="http://jakarta.apache.org/jmeter/">JMeter</a>, <a href="http://www.hpl.hp.com/research/linux/httperf/">httperf</a>, and <a href="http://www.joedog.org/JoeDog/Siege">Siege</a>.</p>
+<p><a href="http://httpd.apache.org/docs/2.0/programs/ab.html">Apache Bench</a> (or 'ab', on the command line) is usually the crowd favorite as it is ubiquitous due to being packaged alongside the Apache web-server - and for a good reason, it's a <a href="http://www.cyberciti.biz/tips/howto-performance-benchmarks-a-web-server.html">great benchmarking tool</a>. However, while it can generate a significant concurrency load, the requests are always identical (Siege also has this limitation), as it has no mechanism for simulating a collection of user sessions:</p>
+<blockquote><p>
+# make 100 requests, opening 20 concurrent requests at a time<br />
+igvita@igvita.com [~]# ab -n 100 -c 20 http://localhost/</p>
+<p>...snip...<br />
+Concurrency Level:      20<br />
+Time taken for tests:   0.78639 seconds<br />
+Complete requests:      100
+</p></blockquote>
+<h4><strong>Simulating user sessions</strong></h4>
+<p>Benchmarking a single endpoint is an important use case, but oftentimes we should really be testing an entire transaction: a series of user-initiated requests simulating a common use case of your web application (searching for, and purchasing an item; updating a profile; etc.). In the load testing world, this is also commonly known as <strong>simulating a session</strong>.</p>
+<p align="center"><a href="http://jakarta.apache.org/jmeter/"><img src="http://www.igvita.com/posts/08/jmeter-sample.png"></a></p>
+<p><a href="http://jakarta.apache.org/jmeter/">JMeter</a> is the tool that you're looking for if you need to create a series of highly customizable interactions. While the UI of JMeter can be definitely confusing at first, a <a href="http://www.devx.com/webdev/Article/17950/0/page/1">good</a> <a href="http://javaboutique.internet.com/tutorials/JMeter/">guide</a> and some experimentation will allow you to create custom scripted sessions with cookies, login and logout actions, and anything else your heart might desire.</p>
+<p>But while JMeter is nice, it's definitely a heavy-weight, and that's where httperf comes into the picture (<a href="http://modperlbook.org/html/9-1-3-http_load.html">http_load</a> is also a great app, albeit without many of the features of httperf). Unlike JMeter, httperf is powered from the command line and offers a much simpler (but feature rich) path for simulating a collection of users.</p>
+<h4><strong>Httperf under the hood</strong></h4>
+<p>Created at the HP Research Labs (<a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.51.4800">see original paper</a>), and more recently updated by researchers at University of Calgary, httperf packs a lot of functionality under the hood: url generation, burst support, think times, GET/POST queries in the session file, and different concurrency rates amongst many others. </p>
+<p>To get started with httperf, check out Sofia Cardita's <a href="http://www.pencilcode.com/2008/06/measuring-webserver-performance-httperf/">great introductory guide</a>, as well as the <a href="http://www.comlore.com/httperf/httperf-www2007-slides.pdf">slides</a> and the <a href="http://www.comlore.com/httperf/httperf-quickstart-guide.pdf">quickstart guide</a> from <a href="http://www.comlore.com/httperf/">Theodore Bullock's presentation</a> at WWW2007.</p>
+<h4><strong>AutoPerf: Ruby httperf driver</strong></h4>
+<p>Finally, putting all of the pieces of the puzzle together, how do we run a simple, log-replay load test for a Rails application? First, we need a log file, let's say from Nginx, and then we need to convert it into a format httperf can understand:</p>
+<blockquote><p>
+# Grab the last 1000 requests from production Nginx log, and extract the request path (ex: /index)<br />
+<strong>tail -n 1000 nginx.log | awk '{print $7}' > requests.log</strong></p>
+<p># Replace newlines with null terminator (httperf format)<br />
+<strong>tr "\n" "\0" < requests.log > requests_httperf.log</strong></p>
+<p># Run an httperf test, using our replay log<br />
+#  - test localhost deployment<br />
+#  - simulate 100 concurrent users<br />
+#  - stop after 10000 requests have been made<br />
+<strong>httperf --hog --server localhost --port 80 --wlog=n,requests_httperf.log --rate=100</strong>
+</p></blockquote>
+<p>Running one of these tests will provide you with a mountain of data, but how do you map the performance curve as request rate changes? Do you know at which point your server becomes saturated? To help with this task, I've created autoperf.rb, a small Ruby driver for httperf. Let's create a simple execution plan for it:</p>
+<p><a href="javascript:showme('5466_1');"> <b>> autoperf.conf</b></a>
+<div style=" background:white;" id=5466_1>
+<pre class="ruby"><span style="color:#008000; font-style:italic;"># Autoperf Configuration File</span>
+&nbsp;
+<span style="color:#008000; font-style:italic;"># The host and port to test.</span>
+host = localhost
+port = <span style="color:#006666;">80</span>
+&nbsp;
+<span style="color:#008000; font-style:italic;"># The 'rate' is the number of number of connections to open per second.</span>
+<span style="color:#008000; font-style:italic;"># A series of tests will be conducted, starting at low rate,</span>
+<span style="color:#008000; font-style:italic;"># increasing by rate step, and finishing at high_rate.</span>
+low_rate  = <span style="color:#006666;">100</span>
+high_rate = <span style="color:#006666;">200</span>
+rate_step = <span style="color:#006666;">20</span>
+&nbsp;
+<span style="color:#008000; font-style:italic;">#################</span>
+<span style="color:#008000; font-style:italic;"># httperf options (prefix with 'httperf_')</span>
+&nbsp;
+httperf_wlog      = n,requests_httperf.<span style="color:#9900CC;">log</span>
+&nbsp;
+<span style="color:#008000; font-style:italic;"># num_conn is the total number of connections to make during a test</span>
+<span style="color:#008000; font-style:italic;"># num_call is the number of requests per connection</span>
+<span style="color:#008000; font-style:italic;"># The product of num_call and rate is the the approximate number of</span>
+<span style="color:#008000; font-style:italic;"># requests per second that will be attempted.</span>
+<span style="color:#008000; font-style:italic;">#httperf_num-conns = 20</span>
+httperf_num-call  = <span style="color:#006666;">1</span>
+&nbsp;
+<span style="color:#008000; font-style:italic;"># timeout sets the maximimum time (in seconds) that httperf will wait</span>
+<span style="color:#008000; font-style:italic;"># for replies from the web server.  If the timeout is exceeded, the</span>
+<span style="color:#008000; font-style:italic;"># reply concerned is counted as an error.</span>
+httperf_timeout   = <span style="color:#006666;">5</span>
+&nbsp;</pre>
+</div>
+<p><div class='download-link'>
+							<a href='http://www.igvita.com/download.php?file=http://www.github.com/igrigorik/autoperf/tree/master.git'><img alt='Download' class='leftalign' src='http://www.igvita.com/wp-content/plugins/dBeautifier/icons/github.png' /></a>
+							<h4>
+								<a href='http://www.igvita.com/download.php?file=http://www.github.com/igrigorik/autoperf/tree/master.git'>autoperf.git (Ruby httperf driver on GitHub)</a>
+							</h4><p>Downloads: 592 File Size: 0.0 KB </p>
+						</div></p>
+<p>With that in place, we're ready to go: </p>
+<p><a href="javascript:showme('5466_2');"> <b>> autoperf.out</b></a>
+<div style=" background:white;" id=5466_2>
+<pre class="ruby">&gt; ruby autoperf.<span style="color:#9900CC;">rb</span> -c autoperf.<span style="color:#9900CC;">conf</span>
+...
++----------------------------------------------------------------+
+| rate | conn/s | req/s | replies/s avg | errors | net io <span style="color:#006600; font-weight:bold;">&#40;</span>KB/s<span style="color:#006600; font-weight:bold;">&#41;</span> |
++----------------------------------------------------------------+
+|  <span style="color:#006666;">100</span> | <span style="color:#006666;">99.9</span>   | <span style="color:#006666;">99.9</span>  | <span style="color:#006666;">99.7</span>          | <span style="color:#006666;">0</span>      | <span style="color:#006666;">45.4</span>          |
+|  <span style="color:#006666;">120</span> | <span style="color:#006666;">119.7</span>  | <span style="color:#006666;">119.7</span> | <span style="color:#006666;">120.0</span>         | <span style="color:#006666;">0</span>      | <span style="color:#006666;">54.4</span>          |
+|  <span style="color:#006666;">140</span> | <span style="color:#006666;">139.3</span>  | <span style="color:#006666;">139.3</span> | <span style="color:#006666;">138.0</span>         | <span style="color:#006666;">0</span>      | <span style="color:#006666;">63.6</span>          |
+|&gt; <span style="color:#006666;">160</span> | <span style="color:#006666;">151.9</span>  | <span style="color:#006666;">151.9</span> | <span style="color:#006666;">147.0</span>         | <span style="color:#006666;">0</span>      | <span style="color:#006666;">69.3</span>          |
+|  <span style="color:#006666;">180</span> | <span style="color:#006666;">132.2</span>  | <span style="color:#006666;">129.8</span> | <span style="color:#006666;">137.4</span>         | <span style="color:#006666;">27</span>     | <span style="color:#006666;">59.6</span>          |
+|  <span style="color:#006666;">200</span> | <span style="color:#006666;">119.8</span>  | <span style="color:#006666;">117.6</span> | <span style="color:#006666;">139.9</span>         | <span style="color:#006666;">31</span>     | <span style="color:#006666;">53.9</span>          |
++----------------------------------------------------------------+
+&nbsp;</pre>
+</div>
+<p>As you can see, the server became saturated at about 160 req/s based on the access patterns generated in our production environment - a far better benchmark than testing a single endpoint. Best of all, now you can map your performance benchmarks to real user sessions in an automated and repeatable fashion. No more falling down in production!</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/igvita?a=4dP8L"><img src="http://feeds.feedburner.com/~f/igvita?i=4dP8L" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=Nmldl"><img src="http://feeds.feedburner.com/~f/igvita?i=Nmldl" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=7NHRl"><img src="http://feeds.feedburner.com/~f/igvita?i=7NHRl" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=UiqTl"><img src="http://feeds.feedburner.com/~f/igvita?i=UiqTl" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=yfMnl"><img src="http://feeds.feedburner.com/~f/igvita?i=yfMnl" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/igvita/~4/407278630" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.igvita.com/2008/09/30/load-testing-with-log-replay/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=igvita&amp;itemurl=http%3A%2F%2Fwww.igvita.com%2F2008%2F09%2F30%2Fload-testing-with-log-replay%2F</feedburner:awareness><feedburner:origLink>http://www.igvita.com/2008/09/30/load-testing-with-log-replay/</feedburner:origLink></item>
+		<item>
+		<title>High-Performance DNS for The Cloud</title>
+		<link>http://feeds.feedburner.com/~r/igvita/~3/399753260/</link>
+		<comments>http://www.igvita.com/2008/09/22/high-performance-dns-for-the-cloud/#comments</comments>
+		<pubDate>Mon, 22 Sep 2008 12:32:49 +0000</pubDate>
+		<dc:creator>Ilya Grigorik</dc:creator>
+		
+		<category><![CDATA[Architecture]]></category>
+
+		<category><![CDATA[cloud]]></category>
+
+		<category><![CDATA[dns]]></category>
+
+		<category><![CDATA[iptables]]></category>
+
+		<guid isPermaLink="false">http://www.igvita.com/?p=193</guid>
+		<description><![CDATA[
+DNS is a great example of a service that couldn't possibly work on paper, but performs spectacularly in practice, even with a hodge-podge of implementations all over the Internet. First, the authoritative DNS servers responds with a Time To Live (TTL) timestamp for every record (which you should keep fairly low in a virtual deployment [...]]]></description>
+			<content:encoded><![CDATA[<p align="center"><img src="http://www.igvita.com/posts/08/dns.png"/></p>
+<p><a href="http://en.wikipedia.org/wiki/Domain_Name_System">DNS</a> is a great example of a service that couldn't possibly work on paper, but performs spectacularly in practice, even with a hodge-podge of implementations all over the Internet. First, the <a href="http://www.inetdaemon.com/tutorials/internet/dns/authoritative.shtml">authoritative DNS</a> servers responds with a Time To Live (TTL) timestamp for every record (which you should keep fairly low in a virtual deployment environment), then the upstream DNS servers cache that same data, albeit usually with different policies (determined by the ISP). And finally, your router, OS, and the browser all have their own and independent DNS caches. (Firefox 2/3 caches all DNS records for a 1 minute, IE 5/6/7 for 15 minutes). Talk about a mess!</p>
+<h4><strong>DNS as a cheap load-balancing tool</strong></h4>
+<p>In theory, DNS information should not change very often, but in-practice a lookup of any high-traffic site often yields a surprisingly low TTL value: amazon.com (60s), cnn.com (300s), bbc.com (360s). Try it yourself:</p>
+<blockquote><p>
+[~]# dig amazon.com<br />
+; <<>> DiG 9.2.4 <<>> amazon.com<br />
+;; ANSWER SECTION:<br />
+amazon.com.             <strong>60</strong>      IN      A       72.21.206.5<br />
+amazon.com.             <strong>60</strong>      IN      A       72.21.210.11<br />
+amazon.com.             <strong>60</strong>      IN      A       72.21.203.1</p>
+<p># TTL value is the second value in the answer section. (60 seconds, in this case)
+</p></blockquote>
+<p>The reason for such a short period is because DNS can be used as a very cheap load balancer. When multiple <a href="http://en.wikipedia.org/wiki/Domain_name_system#Types_of_DNS_records">A-records</a> are specified, the DNS server responds with a random IP, effectively distributing the traffic between parallel nodes in the network - a really handy trick for high traffic, or geographic load balancing.</p>
+<h4><strong>Keep DNS away from the cloud</strong></h4>
+<p>A common worry for any virtual, or cloud deployed application is the dreaded 'what if I lose my IP address' scenario. Services like Amazon EC2 do not guarantee the same IP address assignment (although, I should mention that Amazon specifically has address this problem with the release of <a href="http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1346">Elastic IP</a> service), making DNS a somewhat fragile piece of the infrastructure.</p>
+<p>If you're up to the task, you can manage your own DNS service up in the cloud, although it is probably far more reliable and easier to offload this piece of infrastructure to a company such as <a href="http://www.nettica.com/">Nettica</a>, or <a href="http://www.dyndns.com/">DynDNS</a>, who manage DNS for a living. Their services are cheap, often come with API access, and offer a distributed DNS service for a peace of mind. All you have to do is set a low TTL (5-60 minutes, depending on your comfort level), and you're off to the races.</p>
+<h4><strong>Seamless migrations & DNS failover</strong></h4>
+<p>Running your application in the cloud has many advantages, however one pattern that we've found really useful at AideRSS is the ability to promote a staging beta environment to a production state at a push of a button - kudos to dynamic DNS. Whenever a major release is due for release, we simply duplicate our entire infrastructure (database, front-end, and all other require components - elastic computing at its best), perform all the testing on a live dataset, and then make it live:</p>
+<p align="center"><img src="http://www.igvita.com/posts/08/dns-migration.png"/></p>
+<p>For the most part, the migration path is incredibly simple, all we have to do is update a single DNS record to point to our new staging server. If all goes well, the user lands on the new server, and without seeing a single maintenance page, continues to interact with the site. Best part: because both versions are live, a rollback is no harder then reverting the IP address to its old value.</p>
+<h4><strong>Working with the DNS cache</strong></h4>
+<p>Ah, but what about the DNS cache, right? If your ISP provider decided to cache the IP address of the old server for 24 hours, won't this affect the user experience? To handle this scenario, we make sure to keep our old server around for at least 24 hours, and install the following redirect rules:</p>
+<blockquote><p>
+# Start proxying of port 80 to new server </p>
+<p>iptables -A FORWARD -i eth0 -o eth0 -j ACCEPT<br />
+iptables -t nat -A PREROUTING -p tcp --dport 80 -i eth0 -j DNAT --to <strong>NEW IP</strong><br />
+iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE<br />
+echo 1 > /proc/sys/net/ipv4/ip_forward
+</p></blockquote>
+<p>The following rules effectively turn your old server into a transparent proxy. Anyone making a request to the old IP address (on port 80) will receive a legitimate response from the new server, until they update their DNS and begin talking to the new server directly. You can monitor the traffic on the old server, and retire it after the DNS caches expire - in practice, 24 hours is more than enough.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/igvita?a=AqJRL"><img src="http://feeds.feedburner.com/~f/igvita?i=AqJRL" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=1Ohkl"><img src="http://feeds.feedburner.com/~f/igvita?i=1Ohkl" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=EqpCl"><img src="http://feeds.feedburner.com/~f/igvita?i=EqpCl" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=NR4jl"><img src="http://feeds.feedburner.com/~f/igvita?i=NR4jl" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=Eq01l"><img src="http://feeds.feedburner.com/~f/igvita?i=Eq01l" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/igvita/~4/399753260" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.igvita.com/2008/09/22/high-performance-dns-for-the-cloud/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=igvita&amp;itemurl=http%3A%2F%2Fwww.igvita.com%2F2008%2F09%2F22%2Fhigh-performance-dns-for-the-cloud%2F</feedburner:awareness><feedburner:origLink>http://www.igvita.com/2008/09/22/high-performance-dns-for-the-cloud/</feedburner:origLink></item>
+		<item>
+		<title>Asynchronous Database Access in Ruby</title>
+		<link>http://feeds.feedburner.com/~r/igvita/~3/384131462/</link>
+		<comments>http://www.igvita.com/2008/09/05/asynchronous-database-access-in-ruby/#comments</comments>
+		<pubDate>Fri, 05 Sep 2008 12:16:05 +0000</pubDate>
+		<dc:creator>Ilya Grigorik</dc:creator>
+		
+		<category><![CDATA[MySQL]]></category>
+
+		<category><![CDATA[db]]></category>
+
+		<category><![CDATA[eventmachine]]></category>
+
+		<category><![CDATA[Ruby]]></category>
+
+		<guid isPermaLink="false">http://www.igvita.com/?p=191</guid>
+		<description><![CDATA[These past few weeks have brought forward a few interesting developments in the Ruby database access layer. First, the guys at espace announced Neverblock: a Ruby 1.9 library which makes heavy use Fibers and non-blocking IO (RubyInside and InfoQ have the scoop). And shortly thereafter we saw the announcement of MySQLPlus (also a direct result [...]]]></description>
+			<content:encoded><![CDATA[<p><img align="left" src="http://www.igvita.com/posts/09-08/mysql.png"/ style="padding-right:1em;">These past few weeks have brought forward a few interesting developments in the Ruby database access layer. First, the guys at <a href="http://www.espace.com.eg">espace</a> announced Neverblock: a Ruby 1.9 library which makes heavy use <a href="http://www.infoq.com/news/2007/08/ruby-1-9-fibers">Fibers</a> and non-blocking IO (<a href="http://www.rubyinside.com/neverblock-easy-non-blocking-io-in-ruby-1083.html">RubyInside</a> and <a href="http://www.infoq.com/articles/fibers-neverblock-revactor">InfoQ</a> have the scoop). And shortly thereafter we saw the <a href="http://oldmoe.blogspot.com/2008/08/neverblock-mysql-and-mysqlplus.html">announcement</a> of <a href="http://github.com/espace/mysqlplus/tree/master">MySQLPlus</a> (also a direct result of work around Neverblock): An enhanced MySQL database driver. With support for async operations and threaded database access. Nice!</p>
+<h4><strong>Asynchronous panacea?</strong></h4>
+<p>Does this mean we can turn ActiveRecord into a speed demon? Not quiet, or at least, not yet. Making our database calls asynchronous will allow us to handle many more parallel requests (which is a big win), without blocking the server, but it won't enhance the response time - the database is still the bottleneck. Furthermore, to take advantage of the non-blocking model, you will most likely have to adjust your application code (ack!).</p>
+<p>Love it or hate it, ActiveRecord and its kin (Datamapper, Sequel, etc.) provide a great abstraction layer, which hides much of the database access logic and complexity. For these reasons, <a href="http://www.igvita.com/2008/08/11/asynchronous-db-dbslayer-http/">DBSlayer is a really interesting alternative</a>, especially when used in conjunction with <a href="http://github.com/harrisj/activerecord-dbslayer-adapter/tree/master">ActiveRecord</a> or <a href="http://github.com/krobertson/dm-dbslayer/tree/master">DataMapper</a> adapters when it comes to asynchronous database access: language agnostic, speaks JSON, connection pooling, failover, plus <a href="http://code.nytimes.com/projects/dbslayer">many other goodies</a>.</p>
+<h4><strong>EM/MySQL - Ruby based asynchronous client</strong></h4>
+<p>However, if you are interested in a Ruby alternative, keep an eye on Aman Gupta's recent project: <a href="http://github.com/tmm1/em-mysql/tree/master">em-mysql</a>. An EventMachine wrapper around MySQLPlus, it is already showing very promising results: </p>
+<p align="center"><img src="http://www.igvita.com/posts/09-08/async-mysql.png" /></p>
+<p>The test consisted of 200 requests made at different concurrency levels against a single event-driven web-server. In turn, each request simulated a blocking database call (one second sleep), and then returned the results to the user. Hence, not surprisingly, 200 requests in serial order (concurrency of 1), took 200 seconds for DBSlayer, native MySQL driver, and EM/MySQL. However, as soon as we up the concurrency, the native driver is left in the dust, and the non-blocking EM/MySQL and DBSlayer take a commanding lead: ~2 seconds to complete all 200 requests! I've <a href="http://www.igvita.com/2008/08/11/asynchronous-db-dbslayer-http/">documented a DBSlayer EventMachine server implementation</a> in a previous post, so let's take a look at how to interface with EM/MySQL:</p>
+<p><a href="javascript:showme('7362_1');"> <b>> em_mysql-em.rb</b></a>
+<div style=" background:white;" id=7362_1>
+<pre class="ruby"><span style="color:#CC0066; font-weight:bold;">require</span> <span style="color:#996600;">'rubygems'</span>
+<span style="color:#CC0066; font-weight:bold;">require</span> <span style="color:#996600;">'eventmachine'</span>
+<span style="color:#CC0066; font-weight:bold;">require</span> <span style="color:#996600;">'evma_httpserver'</span>
+<span style="color:#CC0066; font-weight:bold;">require</span> <span style="color:#996600;">'em-mysql/lib/em/mysql'</span>
+&nbsp;
+<span style="color:#9966CC; font-weight:bold;">class</span> Handler  &lt; <span style="color:#6666ff; font-weight:bold;">EventMachine::Connection</span>
+  <span style="color:#9966CC; font-weight:bold;">include</span> <span style="color:#6666ff; font-weight:bold;">EventMachine::HttpServer</span>
+  attr_accessor <span style="color:#ff3333; font-weight:bold;">:db</span>
+&nbsp;
+  <span style="color:#9966CC; font-weight:bold;">def</span> process_http_request
+    resp = <span style="color:#6666ff; font-weight:bold;">EventMachine::DelegatedHttpResponse</span>.<span style="color:#9900CC;">new</span><span style="color:#006600; font-weight:bold;">&#40;</span> <span style="color:#0000FF; font-weight:bold;">self</span> <span style="color:#006600; font-weight:bold;">&#41;</span>
+&nbsp;
+    EventedMysql.<span style="color:#CC0066; font-weight:bold;">select</span><span style="color:#006600; font-weight:bold;">&#40;</span><span style="color:#996600;">&quot;select sleep(1)&quot;</span><span style="color:#006600; font-weight:bold;">&#41;</span> <span style="color:#006600; font-weight:bold;">&#123;</span> |res|
+      resp.<span style="color:#9900CC;">status</span> = <span style="color:#006666;">200</span>
+      resp.<span style="color:#9900CC;">content</span> = res
+      resp.<span style="color:#9900CC;">send_response</span>
+    <span style="color:#006600; font-weight:bold;">&#125;</span>
+  <span style="color:#9966CC; font-weight:bold;">end</span>
+<span style="color:#9966CC; font-weight:bold;">end</span>
+&nbsp;
+EventMachine.<span style="color:#9900CC;">epoll</span>
+EventMachine::run <span style="color:#006600; font-weight:bold;">&#123;</span>
+  SQL = EventedMysql
+  <span style="color:#0066ff; font-weight:bold;">@mysql</span> = EventedMysql.<span style="color:#9900CC;">settings</span>.<span style="color:#9900CC;">update</span> <span style="color:#ff3333; font-weight:bold;">:host</span> =&gt; <span style="color:#996600;">'localhost'</span>, <span style="color:#ff3333; font-weight:bold;">:port</span> =&gt; <span style="color:#006666;">3306</span>, <span style="color:#ff3333; font-weight:bold;">:database</span> =&gt; <span style="color:#996600;">'dbslayer'</span>, <span style="color:#ff3333; font-weight:bold;">:connections</span> =&gt; <span style="color:#006666;">200</span>
+&nbsp;
+  EventMachine::start_server<span style="color:#006600; font-weight:bold;">&#40;</span><span style="color:#996600;">&quot;0.0.0.0&quot;</span>, <span style="color:#006666;">8083</span>, Handler<span style="color:#006600; font-weight:bold;">&#41;</span> <span style="color:#006600; font-weight:bold;">&#123;</span>|conn| conn.<span style="color:#9900CC;">db</span> = <span style="color:#0066ff; font-weight:bold;">@mysql</span><span style="color:#006600; font-weight:bold;">&#125;</span>
+  <span style="color:#CC0066; font-weight:bold;">puts</span> <span style="color:#996600;">&quot;Listening...&quot;</span>
+<span style="color:#006600; font-weight:bold;">&#125;</span>
+&nbsp;</pre>
+</div>
+<p><div class='download-link'>
+							<a href='http://www.igvita.com/download.php?file=http://www.igvita.com/downloads/async-mysql.zip'><img alt='Download' class='leftalign' src='http://www.igvita.com/wp-content/plugins/dBeautifier/icons/downloads.png' /></a>
+							<h4>
+								<a href='http://www.igvita.com/download.php?file=http://www.igvita.com/downloads/async-mysql.zip'>async-mysql.zip (MySQL, DBSlayer, EM/MySQL servers)</a>
+							</h4><p>Downloads: 266 File Size: 10.9 KB </p>
+						</div></p>
+<p>There is still plenty of work that must be done to make EM/MySQL production ready, but it is definitely a promising project, and one to keep an eye on. Perhaps one day, we'll even have a drop in ActiveRecord adapter for asynchronous processing in Ruby 1.8 - wouldn't that be nice! Albeit, that's exactly where Neverblock is heading, if you're willing to make the switch to Ruby 1.9. </p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/igvita?a=mTU2L"><img src="http://feeds.feedburner.com/~f/igvita?i=mTU2L" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=gptOl"><img src="http://feeds.feedburner.com/~f/igvita?i=gptOl" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=vhyNl"><img src="http://feeds.feedburner.com/~f/igvita?i=vhyNl" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=M0ZWl"><img src="http://feeds.feedburner.com/~f/igvita?i=M0ZWl" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=kMAKl"><img src="http://feeds.feedburner.com/~f/igvita?i=kMAKl" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/igvita/~4/384131462" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.igvita.com/2008/09/05/asynchronous-database-access-in-ruby/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=igvita&amp;itemurl=http%3A%2F%2Fwww.igvita.com%2F2008%2F09%2F05%2Fasynchronous-database-access-in-ruby%2F</feedburner:awareness><feedburner:origLink>http://www.igvita.com/2008/09/05/asynchronous-database-access-in-ruby/</feedburner:origLink></item>
+		<item>
+		<title>Keith Rarick: Building Causes.com</title>
+		<link>http://feeds.feedburner.com/~r/igvita/~3/371009858/</link>
+		<comments>http://www.igvita.com/2008/08/21/keith-rarick-building-causescom/#comments</comments>
+		<pubDate>Thu, 21 Aug 2008 15:11:36 +0000</pubDate>
+		<dc:creator>Ilya Grigorik</dc:creator>
+		
+		<category><![CDATA[Interview]]></category>
+
+		<category><![CDATA[rails]]></category>
+
+		<category><![CDATA[Ruby]]></category>
+
+		<guid isPermaLink="false">http://www.igvita.com/?p=190</guid>
+		<description><![CDATA[It's not the choice of language that determines the success of a project, but the people behind it. Can a Rails app serve 3 million dynamic pageviews a day? Absolutely, causes.com is doing it on a daily basis. After stumbling across several great open-source projects by Keith Rarick (beanstalkd, curl-multi, and others), I've reached out [...]]]></description>
+			<content:encoded><![CDATA[<p>It's not the choice of language that determines the success of a project, but the people behind it. Can a Rails app serve 3 million dynamic pageviews a day? Absolutely, causes.com is doing it on a daily basis. After stumbling across several great open-source projects by Keith Rarick (<a href="http://xph.us/software/beanstalkd/">beanstalkd</a>, <a href="http://curl-multi.rubyforge.org/">curl-multi</a>, and <a href="http://xph.us/software/">others</a>), I've reached out to learn about their story, and the architecture behind causes.com.</p>
+<h4><strong>What is your background, how and why did you pick up Ruby?</strong></h4>
+<p>I have a degree in Electrical Engineering and Computer Science from UC Berkeley, and I've worked as software engineer for just over six years. I'm interested in making usable tools for engineers to create maintainable, reliable, secure systems. (Most people call that "programming language design", but my interests are more nebulous.) Although my native language is Lisp, I'm a pretty big Python fan -- it is the most beautiful among the popular languages. I've dabbled in Django since mid-2006; I started using Rails in the beginning of 2007. I also wind up writing plenty of C when the need arises.</p>
+<p>I first looked at Ruby in 1999 as a possible alternative to Perl for some projects, but I dismissed it pretty quickly for two reasons: its variable scoping rules seemed poorly designed, and, more importantly, it didn't have much of a community (compared to Python and Perl). Around the same time, a friend introduced me to Python and I fell in love. I've been a heavy Python user ever since.</p>
+<p>Then, in January 2007, I signed on with Causes as an engineer. The company had officially existed since October 2006, and the other engineer, Jimmy Kittiyachavalit, had already begun some work. Jimmy was pretty set on using Rails. I wasn't yet familiar enough with any web framework to say whether this was a good or bad idea, so we all went with it.</p>
+<h4><strong>What is causes.com, how did it start?</h4>
+<p></strong></p>
+<p align="center"><img src="http://www.igvita.com/blog/posts/08-08/causes-fb.png" /></p>
+<p>Causes aims to streamline the process of <a href="http://www.taprootfoundation.org/blog/2008/07/is-causescom-really-costcom.html">fund-raising for charitable organizations</a>. Billions of dollars are donated every year in the United States alone; few of them online. We're changing that. The efficiency of communication on the internet has the potential to let non-profit organizations spend less money on fund-raising, reach a bigger, more interested audience, and raise more money.</p>
+<p>We started by writing a standalone web site, but we quickly changed gears and focused on a <a href="http://www.facebook.com/applications/Causes/2318966938">Facebook app</a> when we heard of their new platform. There are a few reasons for this; essentially, it's easier for someone who's already on Facebook to add an app than it is for someone to become a regular user of a new web site. Our first public release was 24 May 2007, when Facebook launched its app platform. We've reached around 15 million Facebook users so far.</p>
+<p>We expanded to MySpace when they <a href="http://www.myspace.com/causesapp">opened up their platform</a>. Combined, we serve about three million dynamic page-views per day.</p>
+<h4><strong>What has been the biggest challenge in scaling your application, where did Ruby help, where did it hinder?</strong></h4>
+<p><img align="left" src="http://www.igvita.com/blog/posts/08-08/causes.png" style="margin: 0pt 0.5em 0.2em 0pt;"/> We must distinguish scalability from speed. Those are two distinct requirements, and they often have different solutions. The only piece of a website that's hard to parallelize at scale is the database. (Though projects like Hypertable are changing this.) Other pieces are easy: if your traffic exceeds the capacity of your app servers, you can add more app servers. If your static data exceeds your storage capacity, you can add more storage. This can get expensive, but it's easy to do.</p>
+<p>So our biggest scalability challenge, just as with most other web sites, has been the database. Ruby and Rails are fundamentally no better or worse than other platforms for scaling, as long as you make sure the database access patterns are reasonable. If you are using MySQL you must pay extra attention - MySQL isn't a very smart database, so it's only fast if you <a href="http://mysqldump.azundris.com/archives/72-Rubyisms.html">use it carefully</a>.</p>
+<p>We've found speed to be more challenging than scaling. Adding tons of app servers isn't going to make a single, lonely HTTP request go any faster. So what can you do? You cheat. A lot of the work that results from a request (especially a POST request) doesn't need to happen until later. You can put items on a work queue and give the response sooner. Unfortunately, when we set out to adopt this strategy, there were no existing tools that could operate at the scale and speed we needed and integrate smoothly into Rails and the application. So we made <a href="http://github.com/kr/beanstalkd/wikis/faq">Beanstalkd</a>. Developing beanstalk meant writing a lot of new Ruby code and changing some of our existing application code. Ruby helped immensely by being a flexible, dynamic language that eased our architectural changes.</p>
+<p>On the other hand, we've been frustrated with Ruby's memory use patterns and the efficiency of its garbage collection. Some of the memory profiling tools aren't very stable on a 64-bit OS, so fixing<br />
+memory leaks and reducing memory use in Ruby is difficult.</p>
+<h4><strong>Causes spun out a number of open-source projects and each of these projects seems to have embraced Ruby and C/C++ on equal footing. One is a very high-level, and the other low-level language: what was the motivation behind this architecture?</strong></h4>
+<p>Well, our desire to use Ruby is obvious. And in each case, we used C out of necessity. For beanstalk, we needed speed and interoperability. Designing a <a href="http://github.com/kr/beanstalkd/wikis/faq">work queue</a> to hold thirty million jobs in memory is easier when you can control memory use down to the last byte. For <a href="http://github.com/kr/curl-multi">curl-multi</a>, we simply needed to wrap libcurl, which is written in C. </p>
+<p>There will be more, though future projects will probably be pure Ruby. We've got a slick time-tracking tool by Kristján Pétursson that's almost out the door. It's called Clockblock. We've also got a very powerful stats/analytics/log-analysis tool that, unfortunately, needs some pretty heavy work to extract. But it will happen sooner or later.</p>
+<h4><strong>If you could start over, what would you have done differently with Causes? Would you still use Ruby?</strong></h4>
+<p>Our architecture is pretty standard; I wouldn't change much of it. As for tools, it's hard to say.  Community and support are just as important as technical merit when choosing a platform. The best-designed language in the world will eventually become a problem if it lacks robust debuggers and profiling tools.</p>
+<p>You can be very successful with Ruby and Rails, as we have been; I have no complaints there. However, I must consider the possibility that our lives could have been easier along the way. Rails has a large and vigorous community (compared to Django), which makes finding answers and fixing bugs easier. Ruby has a small and inexperienced community (compared to Python), and the quality of Ruby's implementation is not great (yet).</p>
+<p>If I were starting over, I would probably use Python because the community is stronger, I personally have more expertise with Python, and its design leads to cleaner, more maintainable code.</p>
+<h4><strong>Technology aside, any advice for budding entrepreneurs and web developers?</strong></h4>
+<p>You must love both the product you build and the act of building it. Successful companies take hard work, long hours, and perseverance; those are hard to muster if you lack passion. But if you have passion, the long hours will be fun and rewarding and well worth the work!</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/igvita?a=Uoy1HK"><img src="http://feeds.feedburner.com/~f/igvita?i=Uoy1HK" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=qY8kyk"><img src="http://feeds.feedburner.com/~f/igvita?i=qY8kyk" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=XWqZPk"><img src="http://feeds.feedburner.com/~f/igvita?i=XWqZPk" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=UDfPbk"><img src="http://feeds.feedburner.com/~f/igvita?i=UDfPbk" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/igvita?a=lvqxjk"><img src="http://feeds.feedburner.com/~f/igvita?i=lvqxjk" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/igvita/~4/371009858" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://www.igvita.com/2008/08/21/keith-rarick-building-causescom/feed/</wfw:commentRss>
+		<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetItemData?uri=igvita&amp;itemurl=http%3A%2F%2Fwww.igvita.com%2F2008%2F08%2F21%2Fkeith-rarick-building-causescom%2F</feedburner:awareness><feedburner:origLink>http://www.igvita.com/2008/08/21/keith-rarick-building-causescom/</feedburner:origLink></item>
+	<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetFeedData?uri=igvita</feedburner:awareness></channel>
+</rss><!-- Dynamic Page Served (once) in 3.217 seconds -->

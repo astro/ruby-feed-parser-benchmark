@@ -1,0 +1,1407 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+
+<channel>
+	<title>Planet Debian</title>
+	<link>http://planet.debian.org/</link>
+	<language>en</language>
+	<description>Planet Debian - http://planet.debian.org/</description>
+
+<item>
+	<title>Romain Francoise: Pimp your git meme</title>
+	<guid>tag:blogger.com,1999:blog-968657991057088749.post-1380980812897606434</guid>
+	<link>http://blog.orebokech.com/2008/12/pimp-your-git-meme.html</link>
+    <description>Zack's &lt;a href=&quot;http://upsilon.cc/~zack/blog/posts/2008/12/git_tips:_coloring_and_aliases/&quot;&gt;post on git colors &lt;/a&gt; is a perfect opportunity to recycle this old post of mine on &lt;a href=&quot;http://blog.orebokech.com/2007/10/everybody-loves-fruit-salad.html&quot;&gt;how to make &lt;tt&gt;git diff&lt;/tt&gt; look more like &lt;tt&gt;quilt diff&lt;/tt&gt; and &lt;tt&gt;vim&lt;/tt&gt;&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;For good mesure I'll throw in this snippet (stolen &lt;a href=&quot;http://www.jukie.net/~bart/conf/gitconfig&quot;&gt;here&lt;/a&gt;) which adds a &lt;tt&gt;git rlog&lt;/tt&gt; alias, very handy when you just want to grab the short hash of a recent commit:&lt;pre&gt;[alias]&lt;br /&gt;    rlog = log --pretty=format:\&quot;%h %Cblue%cr%Creset %cn %Cgreen%s%Creset\&quot;&lt;/pre&gt;It looks like this:&lt;br /&gt;&lt;br /&gt;&lt;a href=&quot;http://3.bp.blogspot.com/_gswLlRbm57g/SUKg6iUoMvI/AAAAAAAAAB8/CEhYjK8nJz4/s1600-h/git-rlog.png&quot;&gt;&lt;img src=&quot;http://3.bp.blogspot.com/_gswLlRbm57g/SUKg6iUoMvI/AAAAAAAAAB8/CEhYjK8nJz4/s400/git-rlog.png&quot; border=&quot;0&quot; alt=&quot;&quot; id=&quot;BLOGGER_PHOTO_ID_5278958640737825522&quot; /&gt;&lt;/a&gt;</description>
+	<pubDate>Fri, 12 Dec 2008 17:42:57 +0000</pubDate>
+	<author>noreply@blogger.com (Romain Francoise)</author>
+</item>
+<item>
+	<title>Julien Danjou: Using a Bluetooth headset under Linux</title>
+	<guid>urn:md5:8592013a4ced2c719784de23bc96e096</guid>
+	<link>http://julien.danjou.info/blog/index.php/post/2008/12/12/Using-a-Bluetooth-headset-under-Linux</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/jdanjou.png&quot; width=&quot;100&quot; height=&quot;84&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;… is a no.&lt;/p&gt;
+
+
+&lt;p&gt;It just does not work. I mean, it does work if you want to listen to music using &lt;em&gt;mplayer&lt;/em&gt; in 8 KHz quality, but don't even think to use it to phone using SIP.&lt;/p&gt;
+
+
+&lt;p&gt;I've first tested with &lt;em&gt;&lt;a href=&quot;http://www.bluez.org&quot;&gt;bluez 3&lt;/a&gt;&lt;/em&gt; which is part of Debian. It roughly work, but sometimes it stops working and you have to restart &lt;em&gt;hcid&lt;/em&gt;, or to clean its cache. Not very stable.&lt;/p&gt;
+
+
+&lt;p&gt;I've then tried using &lt;em&gt;bluez 4&lt;/em&gt;, compiled from scratch. It works much better, i.e. I can run mplayer a thousand of times without having it stopping to work, but I'm totally unable to use it with &lt;em&gt;&lt;a href=&quot;http://www.xs4all.nl/~mfnboer/twinkle/index.html&quot;&gt;twinkle&lt;/a&gt;&lt;/em&gt; or &lt;em&gt;&lt;a href=&quot;http://www.ekiga.org&quot;&gt;ekiga&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;And I don't even talk about &lt;em&gt;ekiga&lt;/em&gt; still unable to set a custom ALSA output. I even try to hack it via &lt;em&gt;gconf-editor&lt;/em&gt;!&lt;/p&gt;
+
+
+&lt;p&gt;That's really a shame.&lt;/p&gt;</description>
+	<pubDate>Fri, 12 Dec 2008 15:21:00 +0000</pubDate>
+</item>
+<item>
+	<title>Adrian von Bidder: SSH VPN</title>
+	<guid>http://blog.fortytwo.ch/archives/20-guid.html</guid>
+	<link>http://blog.fortytwo.ch/archives/20-SSH-VPN.html</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/cmot.png&quot; width=&quot;71&quot; height=&quot;85&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;Yes, this is just to bookmark what Romain &lt;a href=&quot;http://blog.rastageeks.org/spip.php?article21&quot;&gt;contributed&lt;/a&gt;.  VPNs can be created by ssh plus &amp;ldquo;tun&amp;rdquo; devices; &lt;a href=&quot;http://www.debian-administration.org/articles/539&quot;&gt;debian-administration.org&lt;/a&gt; has a very nice write-up including proper set up of the authorized_keys file to not allow generic ssh root access.&lt;/p&gt;
+
+&lt;p&gt;Please, can everybody add big disclaimers on all ssh + ppp based HOWTO's that this is obsolete?  Or is there a reason I'm still doing it that way other than the omnipresence of said documentation?&lt;/p&gt;</description>
+	<pubDate>Fri, 12 Dec 2008 15:18:43 +0000</pubDate>
+	<author>nospam@example.com (Adrian von Bidder)</author>
+</item>
+<item>
+	<title>Romain Beauxis: VPN using SSH</title>
+	<guid>http://blog.rastageeks.org/spip.php?article21</guid>
+	<link>http://blog.rastageeks.org/spip.php?article21</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/toots.png&quot; width=&quot;70&quot; height=&quot;69&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;There seems to be indeed a meme on &lt;a href=&quot;http://nion.modprobe.de/blog/archives/656-ssh-on-the-fly-port-forwarding.html&quot;&gt;the&lt;/a&gt; &lt;a href=&quot;http://www.burtonini.com/blog/computers/ssh-2008-12-11-12-00&quot;&gt;various&lt;/a&gt; &lt;a href=&quot;http://www.news.software.coop/smart-tricks-with-ssh/406/&quot;&gt;use&lt;/a&gt; &lt;a href=&quot;http://blog.andrew.net.au/2008/12/11#ssh_tip&quot;&gt;of&lt;/a&gt; &lt;a href=&quot;http://www.openssh.com/&quot;&gt;SSH&lt;/a&gt;. So far I've not seem mine, so here it is !&lt;/p&gt; &lt;p&gt;If you use the &lt;code class=&quot;spip_code&quot; dir=&quot;ltr&quot;&gt;-w&lt;/code&gt; option when connecting using SSH, and if you have the correct configuration, then two virtual network interfaces will be created on both the client and the server.&lt;/p&gt; &lt;p&gt;Using these interfaces with a bit of routing and resolving magic, you can establish a full connection tunnelled through an SSH connection !&lt;/p&gt;</description>
+	<pubDate>Fri, 12 Dec 2008 14:34:35 +0000</pubDate>
+</item>
+<item>
+	<title>Michal &amp;#268;iha&amp;#345;: Kozlovna - great beer and food</title>
+	<guid>http://blog.cihar.com/archives/2008/12/12/kozlovna_-_great_beer_and_food/</guid>
+	<link>http://blog.cihar.com/archives/2008/12/12/kozlovna_-_great_beer_and_food/</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/nijel.png&quot; width=&quot;64&quot; height=&quot;67&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;After more than one year, I decided it's time to resurrect pub reviews
+category on my blog. The delay was partly caused by my half year trip to
+Japan meanwhile and lack of motivation to blog, but I think now I'm
+ready to push some more reviews.&lt;/p&gt;
+
+&lt;p&gt;This time I'll recommend Kozlovna (sorry no web pages exists, address is
+Lidická 20, 150 00 Praha 5). I randomly found it when walking in the
+city centre and I was really positively surprised by quality of beer
+(Velkopopovický Kozel 11° Medium), food and service. On my first visit I
+had great ribs, on second deer fillets and both were just delicious.&lt;/p&gt;
+
+&lt;p&gt;The interior perfectly matches name of the restaurant and the brewery
+which ships the beer (Kozel = billy-goat) and you can find horns or goat
+shapes all around. Another plus is that half of the restaurant is non
+smoking, so you don't have to smell that ugly smoke.&lt;/p&gt;</description>
+	<pubDate>Fri, 12 Dec 2008 13:47:26 +0000</pubDate>
+</item>
+<item>
+	<title>Stefano Zacchiroli: git tips: coloring and aliases</title>
+	<guid>http://upsilon.cc/~zack/blog/posts/2008/12/git_tips:_coloring_and_aliases/</guid>
+	<link>http://upsilon.cc/~zack/blog/posts/2008/12/git_tips:_coloring_and_aliases/</link>
+    <description>&lt;h1&gt;Pimp your Git UI&lt;/h1&gt;
+&lt;p&gt;Resisting &lt;a href=&quot;http://nion.modprobe.de/blog/archives/656-ssh-on-the-fly-port-forwarding.html][current](http://www.burtonini.com/blog/computers/ssh-2008-12-11-12-00&quot;&gt;
+the&lt;/a&gt; &lt;a href=&quot;http://www.news.software.coop/smart-tricks-with-ssh/406/&quot;&gt;meme&lt;/a&gt;
+&lt;a href=&quot;http://blog.andrew.net.au/2008/12/11#ssh_tip&quot;&gt;on&lt;/a&gt;
+&lt;a href=&quot;http://planet.debian.org&quot;&gt;planet debian&lt;/a&gt; about ssh
+tricks, I'll try to start a new one about &lt;em&gt;git&lt;/em&gt; tricks
+(simply because I do want to improve my git trick portfolio
+&lt;img src=&quot;http://upsilon.cc/~zack/blog/planet-debian/../../smileys/smile.png&quot; alt=&quot;:-)&quot; /&gt; ).&lt;/p&gt;
+&lt;p&gt;Also, the following two are from &lt;a href=&quot;http://esaurito.net/blog&quot;&gt;Godog&lt;/a&gt;, to which I extorted an
+&quot;intent to post&quot; declaration, unattended thus far &lt;img src=&quot;http://upsilon.cc/~zack/blog/planet-debian/../../smileys/tongue.png&quot; alt=&quot;:-P&quot; /&gt; Kudos for the tips!&lt;/p&gt;
+&lt;h2&gt;Command aliases&lt;/h2&gt;
+&lt;p&gt;Annoyed by the fact that &lt;code&gt;git st&lt;/code&gt; doesn't do what
+&lt;code&gt;svn st&lt;/code&gt; used to do? (Which gets even worse, since I do
+use &lt;code&gt;git st&lt;/code&gt; waaaay more than how much I used &lt;code&gt;svn
+st&lt;/code&gt;). Then enjoy command aliases with the following
+&lt;code&gt;~/.gitconfig&lt;/code&gt; lines:&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;[alias]
+br = branch
+st = status
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;h2&gt;Coloring&lt;/h2&gt;
+&lt;p&gt;Lines for &lt;code&gt;~/.gitconfig&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;[color]
+ui = auto
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;after that enjoy your pimped &lt;code&gt;git status&lt;/code&gt; output.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt; thanks to &lt;a href=&quot;http://ikibiki.org//tags/debian/&quot;&gt;KiBi&lt;/a&gt;, I've discovered
+&lt;code&gt;color.ui = auto&lt;/code&gt; which is shorter than listing all UIs
+you want to be color-enabled, and also more future-proof.&lt;/p&gt;</description>
+	<pubDate>Fri, 12 Dec 2008 09:43:41 +0000</pubDate>
+</item>
+<item>
+	<title>Adrian von Bidder: Adult content?</title>
+	<guid>http://blog.fortytwo.ch/archives/19-guid.html</guid>
+	<link>http://blog.fortytwo.ch/archives/19-Adult-content.html</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/cmot.png&quot; width=&quot;71&quot; height=&quot;85&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;The best way to get me to read a blog entry you've made is to &lt;a href=&quot;http://amayita.livejournal.com/2008/12/12/&quot;&gt;apologize about it&lt;/a&gt; in the next one ... So I've gone and clicked on the link to Amaya's &lt;a href=&quot;http://amayita.livejournal.com/189646.html&quot;&gt;previous entry&lt;/a&gt;.  Getting a warning that I'm about to be presented with a page that &lt;strong&gt;may contain material only suitable for adults&lt;/strong&gt;.  What the hell, Amaya is an adult and so am I, so let's just confirm this.  I was truly shocked to see her entry that indeed did contain the extremely dangerous word &amp;ldquo;love&amp;rdquo; in it (can't imagine what else may have triggered the filter.)&lt;/p&gt;
+
+&lt;p&gt;Together with Youtube's apparent tightening of their filtering (I'd not have noticed except that &lt;a href=&quot;http://ars.userfriendly.org/cartoons/?id=20081210&quot;&gt;Illiad commented on it&lt;/a&gt;) it seems the Intarwebs are now being converted to a happy teletubby-land.  So I'm forced append this disclaimer now: &lt;strong&gt;Attention please, the text you've just read may have contained strong words, opinions, sentences, punctuation characters and all kinds of dangerous information only suitable for inhabitants of a small planet somewhere in the vicinity of Betelgeuse.&lt;/strong&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 12 Dec 2008 08:42:07 +0000</pubDate>
+	<author>nospam@example.com (Adrian von Bidder)</author>
+</item>
+<item>
+	<title>Matthew Palmer: ETOOMUCHMAGIC</title>
+	<guid>http://www.hezmatt.org/~mpalmer/blog/general/ETOOMUCHMAGIC.html</guid>
+	<link>http://www.hezmatt.org/~mpalmer/blog/general/ETOOMUCHMAGIC.html</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/mpalmer.png&quot; width=&quot;55&quot; height=&quot;70&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;
+	I'm a fairly big fan of the Rails web development framework; it uses a
+	programming language I quite enjoy using, and deals with the
+	&quot;bureaucratic&quot; overhead of writing a web application with minimal fuss,
+	leaving me to think about the things that matter -- my application's
+	functionality.
+&lt;/p&gt;
+&lt;p&gt;
+	To achieve this wonderous feat[&lt;a name=&quot;etmm_fn_1_src&quot;&gt;&lt;a href=&quot;http://www.hezmatt.org/~mpalmer/blog/general/index.rss#etmm_fn_1&quot;&gt;1&lt;/a&gt;&lt;/a&gt;], Rails has a healthy injection of magic in
+	the codebase, to do all sorts of interesting things, like autoload missing
+	constants, and make intelligent guesses about what I want to happen in
+	various situations.
+&lt;/p&gt;
+&lt;p&gt;
+	The problem comes when you want to reuse this magical code for something
+	else.  I'm working on a project at the moment where a bunch of the utility
+	functions that are in the ActiveSupport &lt;strike&gt;gem&lt;/strike&gt;library would
+	come in &lt;em&gt;real&lt;/em&gt; handy.  Well, that's OK, it's a separate
+	&lt;strike&gt;gem&lt;/strike&gt;library from the rest of Rails, I'll just load it into
+	my app, and I'm away.
+&lt;/p&gt;
+&lt;p&gt;
+	Or... not.
+&lt;/p&gt;
+&lt;p&gt;
+	The problem is that it would appear that a lot of the magic in the library
+	is mandatory.  Regardless of whether I want your constant autoloading
+	magic, I've got it.  I also can't just easily pick-and-mix the parts of
+	the ActiveSupport library that I want, because there's all sorts of
+	dependencies between the different chunks of the code that aren't
+	expressed the &quot;right way&quot; -- everything gets loaded in the top-level
+	&lt;tt&gt;active_support.rb&lt;/tt&gt;, rather than being depended on by the files
+	that need the classes.  This is arguably a bug in ActiveSupport, but it's
+	not something that's likely to be real high on anyone's annoyance list
+	(since in practice ActiveSupport is a part of Rails, and when you use it
+	in Rails it works Just Fine).
+&lt;/p&gt;
+&lt;p&gt;
+	So, to all programmers: magic is great, but be careful about excessive
+	magic.  In particular, don't make magic happen in places that the user
+	didn't ask for, and allow people to turn off your magic when it's
+	counter-productive to their purposes.
+&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;
+	[&lt;a name=&quot;etmm_fn_1&quot;&gt;&lt;a href=&quot;http://www.hezmatt.org/~mpalmer/blog/general/etmm_fn_1_src&quot;&gt;1&lt;/a&gt;&lt;/a&gt;] This feat becomes
+	more and more wonderous to me every time I look at the other available web
+	development frameworks out there, especially ones in other languages. 
+	Despite having Rails to &lt;strike&gt;rip off&lt;/strike&gt;take inspiration from,
+	they still seem to require a lot of boilerplate to achieve their
+	goals.  While there's a limited amount of boilerplate stripping you could
+	do for a C program, Python people keep telling me that their language is
+	just as powerful as Ruby -- and yet all the Python web framework usage I
+	see is chock full of unnecessary cruft.
+&lt;/p&gt;</description>
+	<pubDate>Fri, 12 Dec 2008 08:39:09 +0000</pubDate>
+</item>
+<item>
+	<title>Joey Hess: wherein I read too much</title>
+	<guid>http://kitenet.net/~joey/blog/entry/wherein_I_read_too_much/</guid>
+	<link>http://kitenet.net/~joey/blog/entry/wherein_I_read_too_much/</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/joeyh2.png&quot; width=&quot;84&quot; height=&quot;75&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;ol&gt;
+&lt;li&gt;&lt;em&gt;Dishwasher&lt;/em&gt;, by Pete Jordan&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Windfalls&lt;/em&gt;, by Jean Hegland&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;River of Gods&lt;/em&gt;, by Ian McDonald&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Powers&lt;/em&gt;, by Le Guin&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Real World Haskell&lt;/em&gt;, by O'Sullivan, Goerzen, Stewart&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Matter&lt;/em&gt;, by Iain M. Banks&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Ars Magica&lt;/em&gt;, by Tweet &amp;amp; Rein Hagen&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Nice set of books. Pity I'm in the middle of &lt;em&gt;all of them&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Lately I have a hard time finishing many novels, I think because waiting
+for the plot to play out gets boring. Although &lt;em&gt;River of Gods&lt;/em&gt; has mostly
+just confused me with too many viewpoint characters. And by this, where
+each box is a chapter, and that big box I'm just at the start of scares me:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://kitenet.net/~joey/blog/./pics/chapters.png&quot;&gt;&lt;img src=&quot;http://kitenet.net/~joey/blog/./pics/chapters.png&quot; alt=&quot;&quot; width=&quot;784&quot; height=&quot;21&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Dishwasher is fun light reading. If I'd thought to bring it to its owner,
+Jay, who misplaced it, I could have picked it up from where I left off
+months ago and read it on the plane. Double oops. Oh well, there's always
+my next doctor or dentist appointment.&lt;/p&gt;
+
+&lt;p&gt;Powers is a probably great book by Le Guin. I hope there are many more to
+come, but the tendancy is to savor what's available. Also, I have it in
+dead tree edition, which I tend to save up for when I need them.&lt;/p&gt;
+
+&lt;p&gt;Windfalls is such a dead tree book, hibernating in the yurt for me to get
+back to them some day. I may have to start it over, since it's pretty
+involved, and rather out of my usual comfort zone.&lt;/p&gt;
+
+&lt;p&gt;Real World Haskell is coming along well, I hope.&lt;/p&gt;
+
+&lt;p&gt;Matter hasn't pulled me in yet, oddly.&lt;/p&gt;
+
+&lt;p&gt;Ars Magica I've been flipping through the PDF of idly.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Anyway, after all that, turning up a &lt;a href=&quot;http://grandtextauto.org/2008/11/30/three-1k-story-generators/&quot;&gt;random story generator in 1 kilobyte
+of code&lt;/a&gt;
+couldn't help but feel like a relief.&lt;/p&gt;</description>
+	<pubDate>Fri, 12 Dec 2008 08:30:36 +0000</pubDate>
+</item>
+<item>
+	<title>Peter Makholm: Automatic reporting of worktime</title>
+	<guid>http://peter.makholm.net/?p=247</guid>
+	<link>http://peter.makholm.net/2008/12/12/worktime/</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/makholm.png&quot; width=&quot;100&quot; height=&quot;99&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;Some time ago I used &lt;a href=&quot;http://mg.pov.lt/gtimelog/&quot;&gt;gtimelog&lt;/a&gt; to keep track of my working time. I added an entry when I arrived in the morning and an entry when I left work in the evening. But quite often I forgot to add an entry and after a while I stopped keeping track of how much I worked.&lt;/p&gt;
+&lt;p&gt;Tracking login and logout times could be confusing, but normally I turn my work station off when I&amp;#8217;m leaving work. So if I keep track of it&amp;#8217;s uptime during a week I (almost) have my working hours. Fortunately Linux already keeps track of this with the wtmp file. So I just have to parse this and presto my working hours for the last week&lt;/p&gt;
+&lt;p&gt;&lt;tt&gt;
+&lt;pre&gt;
+makholm@makholm:~$ worktime &quot;00:00 a week ago&quot; &quot;00:00 today&quot;
+Fri Dec  5 08:19 - worked 07:36
+Mon Dec  8 07:05 - worked 09:03
+Tue Dec  9 09:10 - worked 00:01
+Tue Dec  9 09:11 - worked 08:40
+Wed Dec 10 07:33 - worked 08:33
+Thu Dec 11 07:04 - worked 02:51
+Thu Dec 11 10:43 - worked 06:12
+                          -----
+             total worked 43:00
+makholm@makholm:~$
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/tt&gt;&lt;/p&gt;
+&lt;p&gt;A simple cron script called monday morning should provide me with a weekly mail reporting how much I&amp;#8217;ve worked the week before. The &lt;tt&gt;worktime&lt;/tt&gt; script is quite simple and uses &lt;a href=&quot;http://search.cpan.org/perldoc?Sys::Utmp&quot;&gt;Sys::Utmp&lt;/a&gt; to parse wtmp:&lt;span id=&quot;more-247&quot;&gt;&lt;/span&gt;&lt;br /&gt;
+&lt;tt&gt;
+&lt;pre&gt;
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+
+use Carp;
+use POSIX qw(strftime);
+use Sys::Utmp;
+
+die &quot;Usage: $0 &amp;lt;from time&amp;gt; &amp;lt;to time&amp;gt;\n&quot; unless @ARGV == 2;
+
+# Havn't found a pure perl time parser as flexible as gnu date(1):
+my ( $from, $to ) = map qx(/bin/date -d &quot;$_&quot; +%s), @ARGV;
+chomp( $from, $to );
+
+# My wtmp is rotated each month. can the last two:
+my @wtmps = qw( /var/log/wtmp.1 /var/log/wtmp );
+
+my $wtmp = Sys::Utmp-&amp;gt;new(
+    Filename =&amp;gt; shift( @wtmps ),
+);
+
+sub next_wtmp {
+    my $ent = $wtmp-&amp;gt;getutent;
+
+    while ( !defined($ent) &amp;#038;&amp;#038; @wtmps ) {
+        $wtmp-&amp;gt;endutent;
+        $wtmp-&amp;gt;utmpname( shift(@wtmps) );
+        $ent = $wtmp-&amp;gt;getutent;
+    }
+
+    return $ent;
+}
+
+# Assume that machine was on at $from:
+my @uptimes = [ $from, undef ];
+while ( my $ut = next_wtmp() ) {
+    my ($time, $user) = ( $ut-&amp;gt;ut_time, $ut-&amp;gt;ut_user );
+
+    next if $time &amp;lt; $from;
+    last if $time &amp;gt; $to;
+
+    push @uptimes, [ $time, undef ] if $user eq 'reboot';
+
+    $uptimes[-1][1] = $time if $user eq 'shutdown';
+}
+
+# Forget the assumption if we didn't shutdown before reboot;
+shift @uptimes if !defined( $uptimes[0][1] );
+
+# If we were booted at $to, use this as endtime
+$uptimes[-1][1] //= $to;
+
+my $total;
+for my $work (@uptimes) {
+    my $time = $work-&amp;gt;[1] - $work-&amp;gt;[0];
+
+    printf &quot;%15s - worked %02d:%02d\n&quot;,
+        strftime(&quot;%a %b %e %H:%M&quot;, localtime $work-&amp;gt;[0]),
+        int( $time / 3600 ),
+        int( ($time % 3600) / 60);
+
+    $total += $time;
+}
+
+print  &quot;                          -----\n&quot;;
+printf &quot;             total worked %02d:%02d\n&quot;,
+    int( $total / 3600 ),
+    int( ($total % 3600) / 60);
+__END__
+&lt;/pre&gt;
+&lt;p&gt;&lt;/p&gt;&lt;/tt&gt;&lt;/p&gt;</description>
+	<pubDate>Fri, 12 Dec 2008 08:26:30 +0000</pubDate>
+</item>
+<item>
+	<title>MJ Ray: Global 300 and chances to invest in a fuel co-op or meet Cooperatives-SW</title>
+	<guid>http://www.news.software.coop/global-300-and-chances-to-invest-in-a-fuel-co-op-or-meet-cooperatives-sw/411/</guid>
+	<link>http://www.news.software.coop/global-300-and-chances-to-invest-in-a-fuel-co-op-or-meet-cooperatives-sw/411/</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/mjray2.png&quot; width=&quot;65&quot; height=&quot;94&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;The new &lt;a href=&quot;http://global300.coop/&quot;&gt;Global 300&lt;/a&gt; list has been released this week:-&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&amp;#8220;the 300 top co-operatives are responsible for an aggregate turnover of 1.1 trillion USD which makes it the size of the 10th economy of the world nearly the size of the Spanish economy. The list also shows that co-operatives are growing in terms of turnover 14%&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Also, the Good Fuel Co-operative (a consortium established early in 2008 by five UK biodiesel cooperatives: Goldenfuels, Sundance Renewables, Magpie Recycling, Bolton Alternative Fuels Co-operative and Biofuels.org.uk) has &lt;a href=&quot;http://www.goodfuel.coop/&quot;&gt;launched a share issue&lt;/a&gt; to raise £420,000 to fuel the growth of the biodiesel market.&lt;/p&gt;
+&lt;p&gt;Finally, &lt;a title=&quot;Cooperatives-SW&quot; href=&quot;http://www.news.software.coop/categories/cooperatives-sw/&quot;&gt;Cooperatives-SW&lt;/a&gt; board will meet in Exeter in January and the AGM will be in Plymouth in April - so if you&amp;#8217;d like me to let you know the dates when they&amp;#8217;re announced (for meeting up or otherwise), please leave a comment on this post and tick the &amp;#8220;Notify me of followup comments&amp;#8221; box.  Thanks!&lt;/p&gt;</description>
+	<pubDate>Fri, 12 Dec 2008 07:41:49 +0000</pubDate>
+</item>
+<item>
+	<title>Kartik Mistry: How much time it will take to deliver tshirt?</title>
+	<guid>http://ftbfs.wordpress.com/?p=550</guid>
+	<link>http://ftbfs.wordpress.com/2008/12/12/how-much-time-it-will-take-to-deliver-tshirt/</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/kartik.png&quot; width=&quot;75&quot; height=&quot;90&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;div class=&quot;snap_preview&quot;&gt;&lt;br /&gt;&lt;p&gt;* I happily ordered foss.in tshirt from &lt;a href=&quot;http://www.hepfly.com/&quot;&gt;hepfly.com&lt;/a&gt;. But, but, it was my mistake! I am wondering how much time it will take to deliver tshirt with-in India? Its already 15 + days..&lt;/p&gt;
+&lt;p&gt;And, no proper reply or update from their customer care.&lt;/p&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a rel=&quot;nofollow&quot; href=&quot;http://feeds.wordpress.com/1.0/gocomments/ftbfs.wordpress.com/550/&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/comments/ftbfs.wordpress.com/550/&quot; /&gt;&lt;/a&gt; &lt;a rel=&quot;nofollow&quot; href=&quot;http://feeds.wordpress.com/1.0/godelicious/ftbfs.wordpress.com/550/&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/delicious/ftbfs.wordpress.com/550/&quot; /&gt;&lt;/a&gt; &lt;a rel=&quot;nofollow&quot; href=&quot;http://feeds.wordpress.com/1.0/gostumble/ftbfs.wordpress.com/550/&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/stumble/ftbfs.wordpress.com/550/&quot; /&gt;&lt;/a&gt; &lt;a rel=&quot;nofollow&quot; href=&quot;http://feeds.wordpress.com/1.0/godigg/ftbfs.wordpress.com/550/&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/digg/ftbfs.wordpress.com/550/&quot; /&gt;&lt;/a&gt; &lt;a rel=&quot;nofollow&quot; href=&quot;http://feeds.wordpress.com/1.0/goreddit/ftbfs.wordpress.com/550/&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/reddit/ftbfs.wordpress.com/550/&quot; /&gt;&lt;/a&gt; &lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://stats.wordpress.com/b.gif?host=ftbfs.wordpress.com&amp;amp;blog=2766354&amp;amp;post=550&amp;amp;subd=ftbfs&amp;amp;ref=&amp;amp;feed=1&quot; /&gt;&lt;/div&gt;</description>
+	<pubDate>Fri, 12 Dec 2008 03:22:26 +0000</pubDate>
+</item>
+<item>
+	<title>Junichi Uekawa: iPod Touch Remote.</title>
+	<guid>http://www.netfort.gr.jp/~dancer/diary/daily/2008-Dec-12.html.en#2008-Dec-12-08:54:26</guid>
+	<link>http://www.netfort.gr.jp/~dancer/diary/daily/2008-Dec-12.html.en#2008-Dec-12-08:54:26</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/dancer.png&quot; width=&quot;75&quot; height=&quot;97&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;iPod Touch Remote.
+	  Craft a webserver application on your MacBook.
+	  Create a web page with two buttons, up and down.
+	  Using Xtest, handle up button with a PgUp key, 
+	  and down button with a PgDn key.
+	  Connect to your webserver using iPodTouch, and voila, you have a iPodTouch remote 
+	  controlling your presentation.
+	  Prepare your MacBook with avahi so that you can connect with random wireless environment.
+	  The up/down picture is not good, looking for better contributions.
+	  Source available from 
+	  git clone git://git.debian.org/git/tokyodebian/monthly-report.git, 
+	  utils/ipodtouchremote</description>
+	<pubDate>Thu, 11 Dec 2008 23:54:26 +0000</pubDate>
+</item>
+<item>
+	<title>Amaya Rodrigo: All laptop speakers suck</title>
+	<guid>http://amayita.livejournal.com/189889.html</guid>
+	<link>http://amayita.livejournal.com/189889.html</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/amaya.png&quot; width=&quot;65&quot; height=&quot;111&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;Yours faithfully,&lt;br /&gt;&lt;br /&gt;Very un-unhappy Amaya. &lt;br /&gt;&lt;br /&gt;Sorry about my last post. I never was upset at the people who pinged me. Just a bit overwhelmed. It just felt very scary to me. &lt;br /&gt;&lt;br /&gt;I am damn fucking crazy after all, paranoid et all! Chemistry might help. Your hugs sure will!</description>
+	<pubDate>Thu, 11 Dec 2008 23:09:51 +0000</pubDate>
+</item>
+<item>
+	<title>Russell Coker: Please Turn off Your Spam Protection</title>
+	<guid>http://etbe.coker.com.au/?p=966</guid>
+	<link>http://etbe.coker.com.au/2008/12/12/please-turn-off-your-spam-protection/</link>
+    <description>&lt;p&gt;&lt;b&gt;Hi, I&amp;#8217;d like to send an email from a small domain that you&amp;#8217;ve never heard of or from a big ISP that&amp;#8217;s known for being slack about spam (*), I can&amp;#8217;t send the mail to you because of your anti-spam measures.  I think that this is unfair, it&amp;#8217;s discrimination, and you are cutting off your nose to spite your face in rejecting my mail.&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;So please reconfigure your mail server now and accept more spam in your inbox, my message is important enough to justify the extra time you will spend manually deleting mail and the risk of accidentally deleting legitimate mail while deleting heaps of spam (I am in fact more important than you).&lt;/p&gt;
+&lt;p&gt;By not accepting my mail you are being an asshole.  I only receive a dozen spam messages a day and I don&amp;#8217;t mind it, without even knowing you or having bothered to do a web search to see how well your email address is known I&amp;#8217;m sure that you don&amp;#8217;t receive any more spam than me and therefore you too can turn off most anti-spam measures and manually sort through the spam.&lt;/p&gt;
+&lt;p&gt;You don&amp;#8217;t really have a problem with spam, you are just paranoid, I&amp;#8217;m sure that you installed your anti-spam measures before receiving any spam and then never bothered to check the hit rates.&lt;/p&gt;
+&lt;p&gt;My sys-admin knows that one of the DNSBLs has an old entry from when his server was broken, but he won&amp;#8217;t request that it be removed - so you can change your server because my sys-admin doesn&amp;#8217;t want to click on a URL that you sent him.&lt;/p&gt;
+&lt;p&gt;The RFC-ignorant.org service is used and run by ignorant people - I know this without even reading their web site to discover how it works.&lt;/p&gt;
+&lt;p&gt;The above is a summary of a number of complaints that I have received about my anti-spam measures.  I&amp;#8217;ve para-phrased them so that they make sense, I have not actually had someone directly say &amp;#8220;I&amp;#8217;m more important than you so you should just accept more spam&amp;#8221;, but the implication is quite clear.&lt;/p&gt;
+&lt;p&gt;Now there are some legitimate reasons for requesting that anti-spam measures be reduced.  In the distant past almost everyone had working reverse DNS entries which matched the forward entries and it was common to reject mail from systems that didn&amp;#8217;t have valid DNS.  Nowadays there are many big ISPs that delegate IP address space without permitting reverse DNS entries, and there are companies that have one department in charge of IP addresses (who don&amp;#8217;t have a clue about reverse DNS) and another department running mail servers (who are cluefull).  So the environment has changed to make reverse DNS checks a non-viable anti-spam measure.  Requesting that people remove such checks is reasonable.&lt;/p&gt;
+&lt;p&gt;Anti-spam measures that attack innocent third parties are bad.  Sending &amp;#8220;warnings&amp;#8221; about viruses has made no sense for many years as all modern viruses fake the sender address, an employee of one company once admitted to me that they were sending out anti-virus &amp;#8220;warning&amp;#8221; messages as a way of sending unsolicited advertising to random people (I reported them as a spam source).  Some time ago on a routine upgrade of ClamAV I accidentally copied in a default configuration file that made it send such warnings - I was grateful when someone informed me of my mistake so that I could fix it.  Challenge-response is another technology that causes harm to others.  I think it makes a lot of sense for mailing lists (every modern list server will confirm subscription requests), while it does result in sending unwanted mail to innocent third parties (every time a new virus becomes prevalent I receive a number of confirmation messages from list servers), but it&amp;#8217;s not something that I will use on a regular email account (but I am prepared to do paid work implementing CR for other people).&lt;/p&gt;
+&lt;p&gt;Requesting that manually implemented blocks be removed is quite reasonable.  Occasionally I find that mail from one of my servers is blocked because a previous owner of the IP address space did bad things.  In such a situation it is quite reasonable to provide an assurance that the new owner takes abuse issues seriously and to request that the block be removed.&lt;/p&gt;
+&lt;p&gt;Requesting that I make any change to my system without making a minimal effort to get your broken mail server fixed is totally unreasonable.  If the system administrator is not prepared to click on a URL to get their system removed from a black-list or if the user is unwilling to report the problem to the sysadmin then I will probably be unwilling to make any change to my system.  The only exceptions to this rule are for clients, colleagues, and for people who use mail services that are large and unresponsive to users (IE the users don&amp;#8217;t directly pay).  I recently made a white-list entry for a large European ISP that is used by a Debian Developer for their work, as the ISP is known to be unresponsive to requests and mail related to Debian work is important to me I added a white-list entry.&lt;/p&gt;
+&lt;p&gt;One thing I am planning to do is to document my anti-spam measures and then allow people the opportunity of suggesting new anti-spam measures that I haven&amp;#8217;t tried yet if they want me to turn off any of my current protections.&lt;/p&gt;
+&lt;p&gt;(*) I&amp;#8217;m not aware of any big ISP that takes strong measures against spamming customers and customers whose computers are trojaned.  I am aware of one having done it in the past, but I suspect that they may have ceased doing so after their brush with bankruptcy.  I suspect that many ISPs simply rate-limit their customers connections to the outbound mail relays and hope that they don&amp;#8217;t get enough infected customers at any time to get themselves listed as a spam source.&lt;/p&gt;</description>
+	<pubDate>Thu, 11 Dec 2008 21:00:14 +0000</pubDate>
+</item>
+<item>
+	<title>Martin F. Krafft: Init7 and Transtec please me</title>
+	<guid>http://madduck.net/blog/2008.12.11:init7-and-transtec-please-me/</guid>
+	<link>http://madduck.net/blog/2008.12.11:init7-and-transtec-please-me/</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/madduck-racingduck.png&quot; width=&quot;85&quot; height=&quot;83&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;&lt;a href=&quot;http://madduck.net/blog/feeds/planet-debian/http;//init7.ch&quot;&gt;Init Seven&lt;/a&gt; has once again
+established themselves high on my ranking of awesome service
+providers. After &lt;a href=&quot;http://madduck.net/blog/feeds/planet-debian/./../../2008.12.05:nvidia-network-chips-are-broken/&quot;&gt;battling and
+not resolving the problems with crap nVidia hardware&lt;/a&gt;, I was
+ready to return &lt;a href=&quot;http://madduck.net/blog/feeds/planet-debian/./../../2008.11.27:up-the-khyber/&quot;&gt;the
+server&lt;/a&gt; to Transtec, despite having invested a full day of work
+into it. Having a machine in a rack across town, with the looming
+danger of simple network traffic taking out the network card along
+with the bridged IPMI remote console (thus requiring me to head out
+to the colocation centre each time there was a problem) was just
+not going to justify the expense for the server.&lt;/p&gt;
+&lt;p&gt;Init Seven connected a second switch port to my VLAN, which now
+allows me to hook the IPMI card directly to the LAN. This does not
+solve the problem with the sub-zero-quality crap manufactured by
+nVidia, but at least it makes it possible to resurrect the machine
+remotely, until &lt;a href=&quot;http://bugs.debian.org/50641&quot;&gt;the problem
+with the hardware&lt;/a&gt; has been addressed and dealt with by the
+forcedeth driver. And if that is not possible (due to nVidia pile
+of shit), then the last option is a separate network card attached
+to the riser card slot.&lt;/p&gt;
+&lt;p&gt;In related news: &lt;a href=&quot;http://transtec.de&quot;&gt;Transtec&lt;/a&gt; was
+quick to proxy to the Supermicro’s support (the motherboard
+manufacturer), and within a few hours, I had a “newer”
+&lt;code&gt;forcedeth.c&lt;/code&gt; file. I compiled the driver, which seemed
+to handle larger packets just fine at first. Unfortunately, just as
+my hopes were up, the problems came back — even with the driver
+from Supermicro. Back to start, do not collect any money.&lt;/p&gt;
+&lt;p&gt;Regardless, I’ve been impressed by Transtec’s support level so
+far. Yes, I did purchase a five year express warranty extension,
+but it wasn’t very expensive, definitely nowhere near the price for
+a real SLA. And yet, my requests to date have each been answered
+within a day at most, including such extravagant things as them
+providing doanloadable floppy images of the BIOS update, which
+Supermicro only distributes as Windows &lt;code&gt;.exe&lt;/code&gt; file.&lt;/p&gt;
+&lt;p&gt;Now if only they (and everyone else) would stop shipping nVidia
+hardware…&lt;/p&gt;
+&lt;p&gt;NP: &lt;a href=&quot;http://www.allmusic.com/cg/amg.dll?SQL=AC/DC&amp;amp;P=amg&amp;amp;OPT1=1&quot;&gt;
+AC/DC&lt;/a&gt;: &lt;em&gt;Dirty Deeds Done Dirt Cheap&lt;/em&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 11 Dec 2008 16:56:55 +0000</pubDate>
+</item>
+<item>
+	<title>Martin F. Krafft: Healthy home-order food in Zurich</title>
+	<guid>http://madduck.net/blog/2008.12.11:healthy-home-order-food-in-zurich/</guid>
+	<link>http://madduck.net/blog/2008.12.11:healthy-home-order-food-in-zurich/</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/madduck-racingduck.png&quot; width=&quot;85&quot; height=&quot;83&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;If you’re looking to set up a business in Zurich but lack an
+idea, here’s one almost guaranteed to be successful — or well, at
+least it fills a niche:&lt;/p&gt;
+&lt;p&gt;Healthy home-order food. I’d be your first customer, and quite a
+regular one too, if you delivered to my door freshly cooked,
+(ethnically) diverse meals with lots of vegetables, at
+&lt;em&gt;reasonable&lt;/em&gt; prices, of course.&lt;/p&gt;
+&lt;p&gt;I’m happy to cook fancy dishes for guests, but cooking for the
+purpose of having something enjoyable to eat alone is just not my
+thing at all. I sometimes wish it were…&lt;/p&gt;
+&lt;p&gt;And before you wonder about my quest for “healthy” foods: yes, I
+wouldn’t mind losing a bit of weight, but I am certainly not crazy
+about it. It’s more that I’ve simply developed a strong liking for
+vegetables, and quite like not suffering from a heavy stomach after
+a meal.&lt;/p&gt;
+&lt;p&gt;NP: &lt;a href=&quot;http://www.allmusic.com/cg/amg.dll?SQL=AC/DC&amp;amp;P=amg&amp;amp;OPT1=1&quot;&gt;
+AC/DC&lt;/a&gt;: &lt;em&gt;Ballbreaker&lt;/em&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 11 Dec 2008 16:25:55 +0000</pubDate>
+</item>
+<item>
+	<title>Alastair McKinstry: Splint - compiler warnings</title>
+	<guid>http://blog.sceal.ie/programming/splint</guid>
+	<link>http://blog.sceal.ie/programming/splint.html</link>
+    <description>&lt;p&gt;
+I was installing &lt;a href=&quot;http://www.splint.org&quot;&gt;SPlint&lt;/a&gt; - Secure Programming Lint - on our &lt;a href=&quot;http://www.ichec.ie/infrastructure/stokes&quot;&gt;new machine&lt;/a&gt; at
+&lt;a href=&quot;http://www.ichec.ie&quot;&gt;ICHEC&lt;/a&gt; yesterday, when:
+&lt;/p&gt;
+&lt;p&gt;
+&lt;pre&gt;
+Compiling flags.c...
+flags.c(151): warning #1011: missing return statement at end of non-void function &quot;argcode_unparse&quot;
+  }       
+  ^
+
+flags.c(265): warning #188: enumerated type mixed with another type
+    allFlagCodes (code)
+    ^
+
+flags.c(292): warning #188: enumerated type mixed with another type
+    allFlags (f)
+    ^
+
+flags.c(390): warning #188: enumerated type mixed with another type
+    allFlags (f)
+    ^
+
+flags.c(459): warning #188: enumerated type mixed with another type
+    allFlags (f)
+    ^
+
+...
+&lt;/pre&gt;
+Compiler warnings from a Lint tool. A commercial compiler (Intel) admittedly, but nevertheless.
+&lt;br /&gt;&lt;br /&gt;&lt;a href=&quot;http://blog.sceal.ie/programming/splint.rss&quot;&gt;read more &amp;raquo;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;
+&lt;span class=&quot;tags&quot;&gt;Tags  &lt;a href=&quot;http://blog.sceal.ie/tags/programming&quot; rel=&quot;tag&quot;&gt;programming&lt;/a&gt;, &lt;a href=&quot;http://blog.sceal.ie/tags/work&quot; rel=&quot;tag&quot;&gt;work&lt;/a&gt;, &lt;a href=&quot;http://blog.sceal.ie/tags/compilers&quot; rel=&quot;tag&quot;&gt;compilers&lt;/a&gt; &lt;/span&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 11 Dec 2008 16:00:00 +0000</pubDate>
+	<author>alastair@sceal.ie (Alastair McKinstry &lt;&gt;)</author>
+</item>
+<item>
+	<title>Julien Blache: pommed v1.23: full late 2008 laptops support</title>
+	<guid>http://blog.technologeek.org/?p=146</guid>
+	<link>http://blog.technologeek.org/2008/12/11/146</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/jblache.png&quot; width=&quot;65&quot; height=&quot;89&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;pommed v1.23 is out, with full support for the late 2008 laptops.&lt;/p&gt;
+&lt;p&gt;The LCD backlight inner workings got figured out finally, but there&amp;#8217;s a catch: the backlight won&amp;#8217;t react to the settings when running X11 with the proprietary nVidia drivers on the MacBook5,1 and the MacBookAir2,1. It works fine on the MacBookPro5,1 and it works fine on all three machines with the opensource nouveau driver. Switching to the console before setting the backlight and then back to X does work as a workaround.&lt;/p&gt;
+&lt;p&gt;So there&amp;#8217;s something up with the proprietary nVidia driver, and my uneducated guess is that the MacBook Pro may somehow be exempt from the issue due to its dual GPU config.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;ve also switched the nVidia machines to using the generic sysfs backlight driver in pommed. This driver has been there for some time for the PowerPC machines, so now it&amp;#8217;s part of the generic pommed code. You need the mbp_nvidia_bl driver in your kernel for this to work.&lt;/p&gt;
+&lt;p&gt;Don&amp;#8217;t panic! If you don&amp;#8217;t have it, pommed will fall back to the native driver (nv8600mgt) and everything will work just as before. Pommed will tell you if it has to fall back to the native driver, so check your logs if you want to know.&lt;/p&gt;
+&lt;p&gt;This release of pommed needs testing on all nVidia machines: MacBookPro3,1, MacBookPro4,1, MacBookPro5,1, MacBook5,1 and MacBookAir2,1. If anything doesn&amp;#8217;t work, tell me about it and I&amp;#8217;ll fix it.&lt;/p&gt;</description>
+	<pubDate>Thu, 11 Dec 2008 15:47:48 +0000</pubDate>
+</item>
+<item>
+	<title>Andrew Pollock: [tech] My SSH Tip Of The Day</title>
+	<guid>http://blog.andrew.net.au/2008/12/11#ssh_tip</guid>
+	<link>http://blog.andrew.net.au/2008/12/11#ssh_tip</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/apollock.png&quot; width=&quot;88&quot; height=&quot;103&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;
+There &lt;a href=&quot;http://nion.modprobe.de/blog/archives/656-ssh-on-the-fly-port-forwarding.html&quot;&gt;seems&lt;/a&gt; to be a &lt;a href=&quot;http://www.burtonini.com/blog/computers/ssh-2008-12-11-12-00&quot;&gt;bit&lt;/a&gt; of a &lt;a href=&quot;http://www.news.software.coop/smart-tricks-with-ssh/406/&quot;&gt;meme&lt;/a&gt; here...
+&lt;/p&gt;
+&lt;p&gt;
+I have a set of computers that I frequently reinstall for testing purposes.
+The &quot;zomg! The host key has changed!&quot; gets very tiresome very quickly.
+&lt;/p&gt;
+&lt;pre&gt;
+Host reinstallalot
+        UserKnownHostsFile /dev/null
+        StrictHostKeyChecking no
+&lt;/pre&gt;</description>
+	<pubDate>Thu, 11 Dec 2008 15:28:00 +0000</pubDate>
+</item>
+<item>
+	<title>Martin-&amp;#201;ric Racine: xf86-video-geode 2.11.0: last call!</title>
+	<guid>tag:blogger.com,1999:blog-20663524.post-5584820786646844686</guid>
+	<link>http://q-funk.blogspot.com/2008/12/xf86-video-geode-2110-last-call.html</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/qfunk.png&quot; width=&quot;57&quot; height=&quot;85&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;With yesterday's release of version 2.11.0 of the X.org driver for the Geode GX2/LX, a whole cycle was wrapped up for many of the developers involved:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cosmicpenguin.net/node/140&quot;&gt;Jordan Crouse&lt;/a&gt; was among the unlucky ones who recently lost their job at AMD. The same layoff also affected Coreboot developer Marc Jones and other Geode specialists (see Jordan's blog article for details).&lt;/li&gt;
+&lt;li&gt;Several members of the OLPC project are also moving on, now that most Linux kernel and X.org patches have been merged upstream.&lt;/li&gt;
+&lt;li&gt;People like myself who were working in the thin client industry on Geode-based products are also moving on.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;As such, remaining bugs and our milestone goal to merge back support for older GX1 Geodes might never be taken care of. From this perspective, we welcome active participation of new developers with access to a wide variety of Geode hardware to contribute and, eventually, take over upstream maintenance of xf86-video-geode.&lt;/p&gt;</description>
+	<pubDate>Thu, 11 Dec 2008 13:55:16 +0000</pubDate>
+	<author>noreply@blogger.com (Martin-Éric)</author>
+</item>
+<item>
+	<title>Biella Coleman: Geek girl list</title>
+	<guid>http://gabriellacoleman.org/blog/?p=1166</guid>
+	<link>http://feeds.feedburner.com/~r/Interprete/~3/480235025/</link>
+    <description>&lt;p&gt;Many many (great) additions/clarifications have been made the Geek Girl list in the &lt;a href=&quot;http://gabriellacoleman.org/blog/?p=1151#comments&quot;&gt;comments about geek representations in mainstream media&lt;/a&gt;. Two of the most important additions/comments were 1) &amp;#8220;One glaring omission is Lisa Simpson&amp;#8221; (Could not agree more ) 2) &amp;#8220;Gadget was a mouse, not a chipmunk!&amp;#8221; &lt;img src=&quot;http://gabriellacoleman.org/blog/wp-includes/images/smilies/icon_smile.gif&quot; alt=&quot;:-)&quot; class=&quot;wp-smiley&quot; /&gt; Also, for those that may not know, here is &lt;a href=&quot;http://www.nerdgirls.com/&quot;&gt;Nerd Girls&lt;/a&gt;, which I have &lt;a href=&quot;http://gabriellacoleman.org/blog/?p=1042&quot;&gt;written about in the past&lt;/a&gt; and really deserves to be part of this conversation. &lt;/p&gt;
+&lt;p&gt;I have added some more comments and thoughts but below in the comment section.&lt;/p&gt;
+&lt;img src=&quot;http://feeds.feedburner.com/~r/Interprete/~4/480235025&quot; height=&quot;1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Thu, 11 Dec 2008 13:44:10 +0000</pubDate>
+</item>
+<item>
+	<title>MJ Ray: Smart Tricks with ssh</title>
+	<guid>http://www.news.software.coop/smart-tricks-with-ssh/406/</guid>
+	<link>http://www.news.software.coop/smart-tricks-with-ssh/406/</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/mjray2.png&quot; width=&quot;65&quot; height=&quot;94&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Host *&lt;br /&gt;
+    ControlPath ~/.ssh/sock/%r@%h:%p&lt;br /&gt;
+    ControlMaster auto&lt;/code&gt;&lt;br /&gt;
+from &lt;a class=&quot;title&quot; href=&quot;http://blog.cihar.com/archives/2008/12/09/speed_up_ssh_logins/&quot;&gt;Nijel&amp;#8217;s weblog: Speed up SSH logins&lt;/a&gt; - is there any disadvantage to this?  Also, &amp;#8220;completition&amp;#8221; is a &lt;em&gt;great&lt;/em&gt; typo along the lines of my frequent &amp;#8220;abou tit&amp;#8221; one.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ServerAliveInterval 3600&lt;/code&gt; for &lt;a href=&quot;http://ocaoimh.ie/2008/12/10/how-to-fix-ssh-timeout-problems/&quot;&gt;reasons explained in the comments here&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://standalone-sysadmin.blogspot.com/2008/12/what-ssh-stuff-again.html&quot;&gt;Anything you like on the Standalone Sysadmin SSH series&lt;/a&gt; (ok, I cheated to get a list of three&amp;#8230;)&lt;/li&gt;
+&lt;/ol&gt;</description>
+	<pubDate>Thu, 11 Dec 2008 12:11:45 +0000</pubDate>
+</item>
+<item>
+	<title>Ross Burton: SSH Tip Of The Day</title>
+	<guid>http://www.burtonini.com/blog/computers/ssh-2008-12-11-12-00</guid>
+	<link>http://www.burtonini.com/blog/computers/ssh-2008-12-11-12-00</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/ross.png&quot; width=&quot;69&quot; height=&quot;85&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;
+  Do you regularly ssh into machines which have dynamic IP addresses, and get
+  really annoyed with OpenSSH warning that the IP's key doesn't match the host
+  key?  I certainly do, with machines announce their names using mDNS and a DHCP
+  server in my router.  Today I finally checked the documentation and found out
+  how to skip this check.
+&lt;/p&gt;
+&lt;p&gt;
+  The magic option is &lt;tt&gt;CheckHostIP&lt;/tt&gt;, which you can set
+  in &lt;tt&gt;.ssh/config&lt;/tt&gt; on a per-host level.  I've got this in
+  my &lt;tt&gt;config&lt;/tt&gt;:
+&lt;/p&gt;
+&lt;pre&gt;Host *.local
+  CheckHostIP no&lt;/pre&gt;
+&lt;p&gt;
+  Now all machines I ssh into using a &lt;tt&gt;.local&lt;/tt&gt; domain won't have their
+  IP's key checked against the host key, because the IP is dynamic.  Sorted!
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;small&gt;NP: &lt;cite&gt;Music Like Amon Tobin&lt;/cite&gt;, Last.fm&lt;/small&gt;
+&lt;/p&gt;</description>
+	<pubDate>Thu, 11 Dec 2008 12:00:00 +0000</pubDate>
+</item>
+<item>
+	<title>Michal &amp;#268;iha&amp;#345;: Icecream weirdness</title>
+	<guid>http://blog.cihar.com/archives/2008/12/11/icecream_weirdness/</guid>
+	<link>http://blog.cihar.com/archives/2008/12/11/icecream_weirdness/</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/nijel.png&quot; width=&quot;64&quot; height=&quot;67&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;Can somebody tell me, why &lt;code&gt;ICECC_VERSION&lt;/code&gt; variable is used as path to
+file with used toolchain? Why does help say &quot;see create-env&quot; when there
+is no such thing I could see? Why does not it properly tell, that I have
+to use &lt;code&gt;icecc --build-native&lt;/code&gt; and then use absolute path to resulting
+tarball as &lt;code&gt;ICECC_VERSION&lt;/code&gt; and then it will start to work?&lt;/p&gt;
+
+&lt;p&gt;Quick notes for future:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;icecc --build-native
+export ICECC_VERSION=`pwd`/b98eeead34edf15d2edf2383c2c4e317.tar.gz
+&lt;/code&gt;&lt;/pre&gt;</description>
+	<pubDate>Thu, 11 Dec 2008 11:20:26 +0000</pubDate>
+</item>
+<item>
+	<title>Russell Coker: Toy Helicopter</title>
+	<guid>http://etbe.coker.com.au/?p=962</guid>
+	<link>http://etbe.coker.com.au/2008/12/11/toy-helicopter/</link>
+    <description>&lt;p&gt;&lt;a href=&quot;http://www.coker.com.au/blogpics/2008/helicopter-big.jpg&quot;&gt;&lt;img src=&quot;http://www.coker.com.au/blogpics/2008/helicopter.jpg&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+I have just bought myself a toy helicopter.  I had been tempted to buy one for a while and when I saw them on sale for $30 I couldn&amp;#8217;t resist.&lt;/p&gt;
+&lt;p&gt;My helicopter is model FJ-702 from Flyor, it is controlled by infra-red and is designed for indoor use only.  It seems that the trick to flying one is to control the rate of ascent and descent.  If the helicopter rises too fast then it may bounce off the ceiling which results in it swaying uncontrollably and crash-landing.  If it is allowed to descend too fast then it becomes impossible to slow the rate of descent, I suspect that this is the &lt;a href=&quot;http://en.wikipedia.org/wiki/Settling_with_power&quot;&gt;settling with power [2]&lt;/a&gt; problem that is documented in Wikipedia.  The helicopter is very fragile, I broke one of the skids and part of the tail assembly before I learned how to control it properly.  Probably the main thing to look for when buying a model helicopter is a solid design - some time after buying (and breaking) my helicopter I visited the shop which sold it and heard the owner advising other customers to buy the $45 model which is apparently more solid.&lt;/p&gt;
+&lt;p&gt;It seems that an ideal design would be a frame made of spring-steel (not to make it springy but to avoid it breaking when it hits).  I recommend flying in a room with a carpeted floor, bouncing off a solid surface such as a wood floor will break a helicopter.&lt;/p&gt;
+&lt;p&gt;Controlling a helicopter is really difficult.  The models that I have tried and seen demonstrated all have serious problems with unwanted rotation.  My helicopter and the others I have seen have coaxial rotors to avoid rotation without a tail rotor.  &lt;a href=&quot;http://en.wikipedia.org/wiki/Helicopter&quot;&gt;According to the Wikipedia page a lot of energy is used by a tail rotor [1]&lt;/a&gt;, as there has been obvious difficulty in designing the helicopter with adequate power (in terms of the light and weak frame and the short battery life) it seems that they didn&amp;#8217;t use the tail rotor design to save energy.  It&amp;#8217;s a pity that instead the designers couldn&amp;#8217;t have skipped the flashing LEDs etc.&lt;/p&gt;
+&lt;p&gt;One strange thing is that one pair of blades can have their angle changed (which appears to be similar to the &amp;#8220;semirigid&amp;#8221; design shown on the wikipedia page).  I&amp;#8217;m not sure how increasing the angle of one blade while simultaneously decreasing the angle of it&amp;#8217;s pair will do any good.  I expect that this has something to do with the fact that the helicopter will rotate at different rates when under different amounts of vertical thrust.  This incidentally makes it almost impossible to maneuver the craft.  It has a tail rotor on a vertical axis to control forward and reverse movements, but the extreme difficulty in keeping it facing in one direction makes this almost useless.&lt;/p&gt;
+&lt;p&gt;I wonder what the minimum size at which a gyro-stabiliser becomes practical.  But as Wikipedia doesn&amp;#8217;t document the existence of an autopilot for full size helicopters the chance of getting one for a toy is small.&lt;/p&gt;
+&lt;p&gt;In summary, while I have had $30 of fun, I think that a more solid helicopter would be a better investment.&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;br /&gt;
+&lt;li&gt;[1]&lt;a href=&quot;http://en.wikipedia.org/wiki/Helicopter&quot;&gt; http://en.wikipedia.org/wiki/Helicopter&lt;/a&gt;&lt;/li&gt;&lt;br /&gt;
+&lt;li&gt;[2]&lt;a href=&quot;http://en.wikipedia.org/wiki/Settling_with_power&quot;&gt; http://en.wikipedia.org/wiki/Settling_with_power&lt;/a&gt;&lt;/li&gt;&lt;br /&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+	<pubDate>Thu, 11 Dec 2008 09:00:25 +0000</pubDate>
+</item>
+<item>
+	<title>Romain Francoise: Shared links for 2008-03-24</title>
+	<guid>tag:blogger.com,1999:blog-968657991057088749.post-8430627090337000290</guid>
+	<link>http://blog.orebokech.com/2008/03/shared-links-for-2008-03-24.html</link>
+    <description>&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://blogs.securiteam.com/index.php/archives/1075&quot;&gt;Why coding after a long drinking night is not a good idea&lt;/a&gt;&lt;br /&gt;Heh.&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://starkravingfinkle.org/blog/2008/03/extension-developers-better-background-xmlhttprequests/&quot;&gt;Extension Developers - Better Background XMLHttpRequests&lt;/a&gt;&lt;br /&gt;Background content fetching that isn't canceled when the window closes, silences authentication prompts and SSL certificate dialogs... and this is supposed to be a good idea?!&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://coudal.com/archives/2008/03/jeds_other_poem_1.php&quot;&gt;Jed’s Other Poem&lt;/a&gt;&lt;br /&gt;Still love this video.&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://www.savagechickens.com/blog/2008/03/monsters.html&quot;&gt;Monsters&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+	<pubDate>Thu, 11 Dec 2008 08:34:45 +0000</pubDate>
+	<author>noreply@blogger.com (Romain Francoise)</author>
+</item>
+<item>
+	<title>Matthew Garrett: Worrying realisations</title>
+	<guid>http://mjg59.livejournal.com/104096.html</guid>
+	<link>http://mjg59.livejournal.com/104096.html</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/mjg59.png&quot; width=&quot;69&quot; height=&quot;85&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;The entire lifecycle of Ultrix from first to last release was on the order of 12 years.&lt;br /&gt;&lt;br /&gt;I first ran Linux in 1995.</description>
+	<pubDate>Thu, 11 Dec 2008 06:45:21 +0000</pubDate>
+</item>
+<item>
+	<title>Biella Coleman: The Only Winning Move is Not To Play</title>
+	<guid>http://gabriellacoleman.org/blog/?p=1170</guid>
+	<link>http://feeds.feedburner.com/~r/Interprete/~3/481304846/</link>
+    <description>&lt;div&gt;
+&lt;a href=&quot;http://www.flickr.com/photos/biella/3099798848/&quot; title=&quot;photo sharing&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3089/3099798848_e38574253b.jpg&quot; alt=&quot;&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;span&gt;&lt;a href=&quot;http://www.flickr.com/photos/biella/3099798848/&quot;&gt;nice-game-chess&lt;/a&gt;, originally uploaded by &lt;a href=&quot;http://www.flickr.com/people/biella/&quot;&gt;the biella&lt;/a&gt;.&lt;/span&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Today I wrapped up both of my classes. Usually the end of class/semester represents and is experienced as nothing short of pure, unadulterated joy and at both ends of the stick (student and professors alike experience similar emotions :-). Like my students, I am pretty beat and more than ready for a break. But I have to admit, I experienced the end of my hacker class with a tinge of sadness. This is the third time I have taught this class and each time, it seems like it becomes harder and harder to contain the class conversation and I enjoy them through and through. The last few classes were brimming with talk, which is what should exactly happen because by the last month students are walking/talking on a foundation built over the course of many weeks.&lt;/p&gt;
+&lt;p&gt;There is not much I would have changed about the syllabus (most of the readings were great-to-stellar) nor the class. But if there is one thing I am sorry about it is that we never watched &lt;a href=&quot;http://www.imdb.com/title/tt0086567/&quot;&gt;War Games&lt;/a&gt;. The last time I taught the class, I was able to arrange various movie sessions and we watched War Games, Tron, and Sneakers (among a few others) and the students not only learned something about hacker media representations but did a little out-of-class bonding with the movies and lots of food.&lt;/p&gt;
+&lt;p&gt;Since space is such an issue at NYU, I decided not to forage or hunt for a suitable room (I have since found a connection who I think can hook me up with a room). But by missing War Games, we missed an important event in the history of hackerdom. The movie undoubtedly led to many a kids asking for a modem for xmas and I am sure led to a spike in hacking and phreaking 9 months later (or however long it takes for a kid to plead for a modem, get it, learn some new tricks etc).&lt;/p&gt;
+&lt;p&gt;It is also the case that while it helped usher in the image of the hacker as nefarious computer trickster, David Lightman was also a pretty cool, cute, and likable kid. Not a nerd but a geek. It perhaps represents the glimmerings of the transformation of the &lt;a href=&quot;http://gabriellacoleman.org/blog/?p=935&quot;&gt;negative nerd into the positive geek&lt;/a&gt; (oh and the list keeps &lt;a href=&quot;http://gabriellacoleman.org/blog/?p=1151#comments&quot;&gt;the list of girl geeks growing &lt;/a&gt;), signaling the spread of the computer into mainstream society. &lt;/p&gt;
+&lt;p&gt;So next time I teach the class, there will certainly be more movies, War Games on the top of the list so that we can learn that &amp;#8220;the only winning move is not to play.&amp;#8221;&lt;/p&gt;
+&lt;img src=&quot;http://feeds.feedburner.com/~r/Interprete/~4/481304846&quot; height=&quot;1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Thu, 11 Dec 2008 03:30:01 +0000</pubDate>
+</item>
+<item>
+	<title>John Goerzen: Day To Day Canceled!</title>
+	<guid>http://changelog.complete.org/?p=843</guid>
+	<link>http://changelog.complete.org/archives/843-day-to-day-canceled</link>
+    <description>&lt;p&gt;Today there is an &lt;a href=&quot;http://www.nytimes.com/2008/12/11/business/media/11npr.html?ref=media&quot;&gt;article in the New York Times&lt;/a&gt; about cutbacks at NPR, including one of their best programs, Day To Day.  Not a good move move, NPR.&lt;/p&gt;</description>
+	<pubDate>Thu, 11 Dec 2008 00:45:45 +0000</pubDate>
+</item>
+<item>
+	<title>Filippo Giunchedi: RSSes for NEW available on ftp-master</title>
+	<guid>http://esaurito.net/blog/debian/new_rss_on_master.html</guid>
+	<link>http://esaurito.net/blog/debian/new_rss_on_master.html</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/filippo.png&quot; width=&quot;65&quot; height=&quot;86&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;The two RSS feeds previously at &lt;a href=&quot;http://people.debian.org/~filippo/NEW_rss/&quot;&gt;http://people.debian.org/~filippo/NEW_rss/&lt;/a&gt; have been moved to a more &lt;a href=&quot;http://ftp-master.debian.org/rss/&quot;&gt;proper location on ftp-master&lt;/a&gt; and the script (tools/queue_rss.py) merged into &lt;a href=&quot;http://ftp-master.debian.org/git/dak.git/&quot;&gt;dak&lt;/a&gt; thanks to &lt;a href=&quot;http://blog.ganneff.de/blog/&quot;&gt;ganneff&lt;/a&gt;.&lt;br /&gt;
+&lt;br /&gt;
+JFTR the script scans a directory with .changes files (which happens to be NEW in this case) and generates the said feeds, it is not tied to ftp-master and requires python-pyrss2gen and python-debian.&lt;br /&gt;
+&lt;/p&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 21:21:22 +0000</pubDate>
+</item>
+<item>
+	<title>Russell Coker: More about Australian Internet Censorship</title>
+	<guid>http://etbe.coker.com.au/?p=977</guid>
+	<link>http://etbe.coker.com.au/2008/12/11/more-about-australian-internet-censorship/</link>
+    <description>&lt;p&gt;&lt;a href=&quot;http://www.dbcde.gov.au/communications_for_business/industry_development/digital_economy/future_directions_blog&quot;&gt;As the Australian government wants to show how well they understand technology, they have started a blog about the &amp;#8220;Digital Economy&amp;#8221; [1]&lt;/a&gt;.  So far they have hundreds of comments, most of which just tell them that their censorship ideas are wrong.&lt;/p&gt;
+&lt;p&gt;In what may be related news, &lt;a href=&quot;http://www.politico.com/news/stories/1208/16258.html&quot;&gt;Barack Obama has announced details of some of his plans [2]&lt;/a&gt;.  He will spend money on improving net access (something that the Australian government could learn from) and on improving schools (which will probably be about as effective as putting lipstick on a pig).  I really hope that we don&amp;#8217;t have someone in his administration deciding that improving schools requires censoring the Internet for the entire population (people tend to turn their brains off when it&amp;#8217;s time to think about the children).  He is also allocating money to road building (a stupid idea when cars are becoming increasingly expensive and world fuel supplies are running out - he should be building train and tram lines).  But his idea about improving the energy efficiency of federal buildings is a really good idea, that will lead the development of technology that everyone can use to increase efficiency.  He also wants to &amp;#8220;modernise&amp;#8221; the health-care system by moving to electronic medical records - this seems unlikely but I guess that all spending on IT is somehow good for those of us who are involved in the computer industry.  &lt;a href=&quot;http://tpmelectioncentral.talkingpointsmemo.com/2008/12/daschle_fixing_health_care_top.php&quot;&gt;One of his advisors has realised that there are economic benefits to really fixing the health-care system, so there is some hope that it will get fixed [3]&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://en.flossmanuals.net/CircumventionTools&quot;&gt;The FLOSS Manuals project has released a document about circumventing censorship systems [4]&lt;/a&gt;, I expect that many people will be using them before the government even gets their Chinese-style filter installed (if they ever do).&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;br /&gt;
+&lt;li&gt;[1]&lt;a href=&quot;http://www.dbcde.gov.au/communications_for_business/industry_development/digital_economy/future_directions_blog&quot;&gt; http://www.dbcde.gov.au/communications_for_business/industry_development/digital_economy/future_directions_blog&lt;/a&gt;&lt;/li&gt;&lt;br /&gt;
+&lt;li&gt;[2]&lt;a href=&quot;http://www.politico.com/news/stories/1208/16258.html&quot;&gt; http://www.politico.com/news/stories/1208/16258.html&lt;/a&gt;&lt;/li&gt;&lt;br /&gt;
+&lt;li&gt;[3]&lt;a href=&quot;http://tpmelectioncentral.talkingpointsmemo.com/2008/12/daschle_fixing_health_care_top.php&quot;&gt; http://tpmelectioncentral.talkingpointsmemo.com/2008/12/daschle_fixing_health_care_top.php&lt;/a&gt;&lt;/li&gt;&lt;br /&gt;
+&lt;li&gt;[4]&lt;a href=&quot;http://en.flossmanuals.net/CircumventionTools&quot;&gt; http://en.flossmanuals.net/CircumventionTools&lt;/a&gt;&lt;/li&gt;&lt;br /&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 19:44:53 +0000</pubDate>
+</item>
+<item>
+	<title>Gunnar Wolf: githubredir.debian.net - Delivering .tar.gz from Github tags</title>
+	<guid>http://gwolf.org/1873 at http://gwolf.org</guid>
+	<link>http://gwolf.org/node/1873</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/gwolf.png&quot; width=&quot;60&quot; height=&quot;102&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;There is quite a bit of software whose upstream authors decide that, as they are already using Git for development, the main distribution channel should be &lt;a href=&quot;http://www.github.com/&quot;&gt;GitHub&lt;/a&gt; - This allows, yes, for quite a bit of flexibility, which many authors have taken advantage of.&lt;/p&gt;
+&lt;p&gt;So, I just registered and set up &lt;a href=&quot;http://githubredir.debian.net/&quot; title=&quot;http://githubredir.debian.net/&quot;&gt;http://githubredir.debian.net/&lt;/a&gt; to make it easier for packagers to take advantage of it.&lt;/p&gt;
+&lt;p&gt;Specifically, what does this redirector make? Given that GitHub allows for downloading as a .zip or as a .tar.gz any given commit, it suddenly becomes enough to &lt;tt&gt;git tag&lt;/tt&gt; with a version number, and GitHub magically makes that version available for download. Which is sweet!&lt;/p&gt;
+&lt;p&gt;Sometimes it is a bit problematic, though, to follow their format. Github gives a listing of the tags for each particular prooject, and each of those tags has a download page, with both archiving formats.&lt;/p&gt;
+&lt;p&gt;I won't go into too much detail here - Thing is, going over several pages becomes painful for Debian's &lt;a href=&quot;http://dehs.alioth.debian.org/uscan.html&quot;&gt;uscan&lt;/a&gt;, widely used for various of our QA processes. There are other implemented redirectors, such as the one used for SourceForge.&lt;/p&gt;
+&lt;p&gt;This redirector is mainly meant to be consumed by Debian's uscan. Anybody who finds this system useful can freely use it, although you might be better served by the rich, official &lt;a href=&quot;http://www.github.com&quot;&gt;GitHub.com&lt;/a&gt; interface. &lt;/p&gt;
+&lt;p&gt;Anyway - Enough repeating what I said on the &lt;a href=&quot;http://githubredir.debian.net/&quot; title=&quot;http://githubredir.debian.net/&quot;&gt;http://githubredir.debian.net/&lt;/a&gt; base page. Find it useful? Go ahead and use it!&lt;/p&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 19:03:25 +0000</pubDate>
+</item>
+<item>
+	<title>Erich Schubert: Four months in job review</title>
+	<guid>http://blog.drinsama.de/erich/en/2008121001-4-months-in-job</guid>
+	<link>http://blog.drinsama.de/erich/en/2008121001-4-months-in-job.html</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/erich.png&quot; width=&quot;76&quot; height=&quot;100&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;I've been at my new job for almost four months now. After I had completed my
+degree, my advisors at the university quickly offered me a position. When I
+heard back e.g. from Google where I had submitted an application, I had already
+started my new job.&lt;br /&gt;&lt;/p&gt;&lt;p&gt;So from my current point of view it was the best thing to do:
+&lt;ul&gt;
+&lt;li&gt;Challenge. It's a total brain job, which makes it lots of fun. I'm not
+fixing peoples computers or broken PHP hacks, but I'm bending my mind on new
+algorithms pushing the limits of science. Before I started I was like
+&quot;actually I'd like to make new things work for everybody, get them out
+into to wild&quot;. But I can be just as happy with getting things work in a
+lab context, actually.&lt;/li&gt;
+&lt;li&gt;Learning. I keep on learning. Not only on the science level, but writing
+articles, advising people for their thesis, teaching, ... they all contribute
+to personality.&lt;/li&gt;
+&lt;li&gt;People. The colleagues and my &quot;boss&quot; are fantastic. No infighting,
+competitions for certain positions or so.&lt;/li&gt;
+&lt;li&gt;Little stress. University work is quite regulated, but that also means it
+basically is a 9-to-6 job. In internet startups, consulting, IT administration,
+etc. you often have irregular working hours, 24h standby and such things.
+Here I can reliably plan my evenings (dancing!) and I'm not taking my work
+home, but when I'm home all I have to do is relax for the next day. Of course
+there is the occasional exception when a conference deadline is coming up.&lt;/li&gt;
+&lt;li&gt;Reasonable deadlines. Conference deadlines are different than
+product deadlines. They're just there, but not pushed in a way to make them
+unachievable without overtime.&lt;/li&gt;
+&lt;li&gt;Payment. It's regulated, so it's not as much as the high tech companies
+would pay or I could probably earn freelance, but it's reliable and definitely
+enough for me to live on (I don't spend much anyway, I don't have expensive
+hobbys. So I end up saving a large share of it.)&lt;/li&gt;
+&lt;li&gt;Degree. In three years, I should end up with a PhD degree.&lt;/li&gt;
+&lt;li&gt;Office. The university offices are good, and centrally located. We can
+get some good food nearby, have a nice huge park, a Biergarten, ...&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 17:42:00 +0000</pubDate>
+</item>
+<item>
+	<title>Lucas Nussbaum: Debian on a Dell E4300</title>
+	<guid>http://www.lucas-nussbaum.net/blog/?p=323</guid>
+	<link>http://www.lucas-nussbaum.net/blog/?p=323</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/lucas.png&quot; width=&quot;70&quot; height=&quot;88&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;I received a new laptop, a Dell Latitude E4300. I was a bit anxious with its level of support on Linux, because it only recently started being shipping, and it&amp;#8217;s full of recent Intel hardware. Also, with lenny being frozen for 5 months, we are currently a bit behind regarding hardware support.&lt;/p&gt;
+&lt;p&gt;I installed lenny on it, as I usually run &lt;a href=&quot;http://wiki.debian.org/AptPinning&quot;&gt;testing+APT pinning&lt;/a&gt;. What I&amp;#8217;m describing here is what is unsupported in lenny out of the box.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Wireless:&lt;/b&gt;&lt;br /&gt;
+  Needs a 2.6.27 kernel (&lt;code&gt;iwlagn&lt;/code&gt; driver), Lenny only has 2.6.26. Downloaded from &lt;a href=&quot;http://kernel-archive.buildserver.net/debian-kernel/&quot;&gt;the kernel team&amp;#8217;s unofficial repo&lt;/a&gt;. Firmware isn&amp;#8217;t packaged in Debian (&lt;code&gt;firmware-iwlwifi&lt;/code&gt; needs an update). Needed to download it from Intel.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Graphics:&lt;/b&gt;&lt;br /&gt;
+  Intel device, unsupported with lenny&amp;#8217;s driver (but vesa works surprisingly well, oI only noticed that I was using vesa when I tried to play a video and found out I had no xv support).&lt;br /&gt;
+  Works with experimental&amp;#8217;s Xorg and the experimental intel driver, but that Xorg needs some polishing. The evdev driver now handles all inputs, so the keymap has to be configured differently (as usual, #debian-x people were very helpful).&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Suspend/Resume:&lt;/b&gt;&lt;br /&gt;
+  Works out of the box using pm-utils. No need for quirks.&lt;/p&gt;
+&lt;p&gt;All in all, it was easier than I expected, and support will probably be perfect for lenny+1/2 ;)&lt;/p&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 17:19:36 +0000</pubDate>
+</item>
+<item>
+	<title>Stefano Zacchiroli: worst than bofh</title>
+	<guid>http://upsilon.cc/~zack/blog/posts/2008/12/worst_than_bofh/</guid>
+	<link>http://upsilon.cc/~zack/blog/posts/2008/12/worst_than_bofh/</link>
+    <description>&lt;h1&gt;One of the least useful error messages I've ever seen&lt;/h1&gt;
+&lt;pre&gt;
+&lt;code&gt;# dar -N -x backup -K &amp;lt;censor&amp;gt; -g some/where -v
+Extracting contents of the archive...
+FATAL error, aborting operation
+elastic buffer incoherent structure
+#
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;Thanks &lt;a href=&quot;http://packages.debian.org/sid/dar&quot;&gt;dar&lt;/a&gt;, now
+it's clear.&lt;/p&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 17:01:25 +0000</pubDate>
+</item>
+<item>
+	<title>Ross Burton: All Hail Our Glorious New Maintainer</title>
+	<guid>http://www.burtonini.com/blog/computers/contact-lookup-applet-2008-12-10-16-55</guid>
+	<link>http://www.burtonini.com/blog/computers/contact-lookup-applet-2008-12-10-16-55</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/ross.png&quot; width=&quot;69&quot; height=&quot;85&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;
+  Or, Contact Lookup Applet 0.17 is now released.  Some bug fixes and features
+  thanks to the core widget being used in Nautilus Send-To:
+&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Pass future maintainership to Bastien Nocera&lt;/li&gt;
+  &lt;li&gt;Don't search unopened books&lt;/li&gt;
+  &lt;li&gt;Automatically detect sources (Bastien Nocera)&lt;/li&gt;
+  &lt;li&gt;Only error out if all the addressbooks failed to open (BN)&lt;/li&gt;
+  &lt;li&gt;Show one menu item for each e-mail address, and select by default in the
+    contact details dialogue (BN)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+  The tarball
+  is here: &lt;a href=&quot;http://www.burtonini.com/computing/contact-lookup-applet-0.17.tar.gz&quot;&gt;contact-lookup-applet-0.17.tar.gz&lt;/a&gt;.
+&lt;/p&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 16:55:00 +0000</pubDate>
+</item>
+<item>
+	<title>Julien Danjou: telak in awesome</title>
+	<guid>urn:md5:98ab3c008c7de87881bdff8a513fe12b</guid>
+	<link>http://julien.danjou.info/blog/index.php/post/2008/12/10/telak-in-awesome</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/jdanjou.png&quot; width=&quot;100&quot; height=&quot;84&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;Some years ago I wrote a little tool called &lt;a href=&quot;http://julien.danjou.info/telak/&quot;&gt;telak&lt;/a&gt; in order to display remote images on my wallpaper and have them updated regularly.&lt;/p&gt;
+
+
+&lt;p&gt;Yesterday, as a challenge, I rewrote this as an &lt;a href=&quot;http://awesome.naquadah.org&quot;&gt;awesome&lt;/a&gt; module, in Lua using &lt;em&gt;wget&lt;/em&gt;. I simply used a wibox and a widget from awesome API to display the images.&lt;/p&gt;
+
+
+&lt;p&gt;It's called &lt;em&gt;telak&lt;/em&gt;, as the original, and is in the awesome &lt;em&gt;next&lt;/em&gt; git branch, which will be the 3.2 version of my favorite window manager.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;a href=&quot;http://julien.danjou.info/blog/public/img/awesome/telak_demo.png&quot;&gt;&lt;img src=&quot;http://julien.danjou.info/blog/public/img/awesome/.telak_demo_t.jpg&quot; alt=&quot;Telak&quot; title=&quot;Telak, dec 2008&quot; /&gt;&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 14:37:00 +0000</pubDate>
+</item>
+<item>
+	<title>Enrico Zini: Bash variable indirection</title>
+	<guid>http://www.enricozini.org/2008/tips/bash-indirection.html</guid>
+	<link>http://www.enricozini.org/2008/tips/bash-indirection.html</link>
+    <description>&lt;h1&gt;Bash variable indirection&lt;/h1&gt;
+&lt;p&gt;This is not how to get, in bash, the value of a variable whose
+name is in another variable:&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;$ A=1
+$ B=A
+$ echo ${$B}
+bash: ${$B}: bad substitution
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;This is how:&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;$ echo ${!B}
+1
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;It however only works in bash. For more portable scripts, eval
+is needed:&lt;/p&gt;
+&lt;pre&gt;
+&lt;code&gt;$ eval echo \$$B
+1
+&lt;/code&gt;
+&lt;/pre&gt;
+&lt;p&gt;Thanks to Martin Krafft and Cyril Brulebois.&lt;/p&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 14:23:27 +0000</pubDate>
+</item>
+<item>
+	<title>Michal &amp;#268;iha&amp;#345;: Gammu test version 1.21.94</title>
+	<guid>http://blog.cihar.com/archives/2008/12/10/gammu_test_version_1_21_94/</guid>
+	<link>http://blog.cihar.com/archives/2008/12/10/gammu_test_version_1_21_94/</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/nijel.png&quot; width=&quot;64&quot; height=&quot;67&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;New Gammu testing release has just born. The largest changes are in
+vCard handler. It now supports photos in vCard and should properly
+handle error states which previously would lead to crash. This also
+leads to changed API for encoding/decoding vCard/vCalendar/vNote
+entries. Rest of changes is usual amount of bug fixes.&lt;/p&gt;
+
+&lt;p&gt;Full list of changes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Better skipping of currupted messages in AT (bug #768).&lt;/li&gt;
+&lt;li&gt;Autoload 6510 module if phone is S40 (bug #767).&lt;/li&gt;
+&lt;li&gt;Add ID for Nokia 6500s (bug #770).&lt;/li&gt;
+&lt;li&gt;Add automatic detection of Nokia phones (bug #770).&lt;/li&gt;
+&lt;li&gt;Catch error when calls can not be deleted (bug #738).&lt;/li&gt;
+&lt;li&gt;Better documentation of addnew (bug #734).&lt;/li&gt;
+&lt;li&gt;Fix detection of OBEX capability on older Siemens phones.&lt;/li&gt;
+&lt;li&gt;Try to detect wrongly formatted CMGL reply (bug #771);&lt;/li&gt;
+&lt;li&gt;Handle phones which fail to report supported charsets.&lt;/li&gt;
+&lt;li&gt;Fixed encoding of WAP indicator messages.&lt;/li&gt;
+&lt;li&gt;Support for photos in vCard (bug #227).&lt;/li&gt;
+&lt;li&gt;vC* saving now protects against buffer overflows.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can download from usual place: &lt;a href=&quot;http://cihar.com/gammu/&quot;&gt;http://cihar.com/gammu/&lt;/a&gt;,&lt;/p&gt;
+
+&lt;p&gt;Debian users will find packages in experimental soon.&lt;/p&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 14:23:03 +0000</pubDate>
+</item>
+<item>
+	<title>Alexis Sukrieh: My two cents about the RubyGems polemic</title>
+	<guid>http://www.sukria.net/en/?p=265</guid>
+	<link>http://www.sukria.net/en/archives/2008/12/10/my-two-cents-about-the-rubygems-polemic/</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/sukria.png&quot; width=&quot;65&quot; height=&quot;85&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;Hey planet, it&amp;#8217;s been a very long time since I took my e-pen to write something down here, &lt;a href=&quot;http://www.yoolinkpro.com&quot;&gt;my work&lt;/a&gt; is taking pretty much all my time nowdays. Anyway, it seems that there is sort of a polemic rising here and there about RubyGems and its packaging philosophy.&lt;/p&gt;
+&lt;p&gt;I&amp;#8217;d like to take that opportunity to contribute to the debate with the experience I had at Yoolink. Yes, we provide Ruby on Rails applications and are defacto dealing (or trying to) with Ruby and its gems.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.grep.be/blog/en/computer/cluebat/rails_followup&quot;&gt;Wouter enlightened&lt;/a&gt; the main reason why it&amp;#8217;s such a mess to put into production a Rails app and to maintain it : the Ruby on Rails ecosystem is unstable. If you start writing your app, there are very big chances that when it gets mature for production mode, one or more of the Ruby libs you depend on will have a new version. And sadly, chances are there too that one of those libs will provide an API change.&lt;/p&gt;
+&lt;p&gt;This can happen in a lot of places in a Rails app, because of its modular structure: plugins, gems or even Rails&amp;#8217; core upgrades (try to upgrade a real-working Rails app from 1.x to 2.x if you like tricky games).&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://np237.livejournal.com/21033.html&quot;&gt;I agree with Joss&lt;/a&gt; when he said that Debian packages and Ruby gems are not designed for the same purpose, the latter are for a developer ecosystem and the first suitable for long-working production ecosystems.&lt;/p&gt;
+&lt;p&gt;That&amp;#8217;s why setting up a complex Rails app in production is a nightmare : no Debian packages for all your Ruby needs on the first hand &lt;em&gt;and&lt;/em&gt; API-unstable and hard-to-upgrade gems on the other hand.&lt;/p&gt;
+&lt;p&gt;At Yoolink, the only working way we&amp;#8217;ve found to maintain in production our Rails apps is to freeze pretty much every Ruby-thing we can. Our production servers are then Rails/Ruby free (nothing installed system-wide) and the apps provides all their Ruby dependencies in their vendor/ directory. You can&amp;#8217;t do that for native gems but that works for 90% of a random Rails app&amp;#8217;s dependencies.&lt;/p&gt;
+&lt;p&gt;To conclude, I&amp;#8217;d say that most of these issues come from the philosophy of the Ruby/Rails people : they don&amp;#8217;t fear to change anything they want from one release to another, just take a look at the gettext support in Rails 2.2 and you&amp;#8217;ll understand what I mean&amp;#8230;.&lt;/p&gt;
+&lt;p&gt;It&amp;#8217;s like they don&amp;#8217;t even take in mind that people are now using their stuff, in real world, with customers relying on their apps. It&amp;#8217;s not a pet project anymore guys, if Rails want to remain the killer app it is, it will have to be someting &lt;b&gt;stable&lt;/b&gt; and &lt;b&gt;maintainable&lt;/b&gt;.&lt;/p&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 10:01:11 +0000</pubDate>
+</item>
+<item>
+	<title>David Welton: Slicehost vs Linode</title>
+	<guid>tag:journal.dedasys.com,2005:Article/2112</guid>
+	<link>http://feeds.feedburner.com/~r/DedaSys/~3/478718837/slicehost-vs-linode</link>
+    <description>&lt;div&gt;
+&lt;p&gt;Since hosting is &lt;em&gt;the&lt;/em&gt; major expense for &lt;a href=&quot;http://www.dedasys.com&quot;&gt;DedaSys LLC&lt;/a&gt;, and obviously a critical part of much of what I do, getting the right one is very important.&lt;/p&gt;
+
+&lt;p&gt;Naturally, &quot;the right one&quot; for me may not be the right one for everyone.  I am a fair sysadmin for small numbers of machines, so I don't mind doing that myself - I don't need, nor want to pay for hand holding.&lt;/p&gt;
+
+&lt;div&gt;
+Since this post has become fairly popular, I am going to link to my Linode affiliate URL if you'd like to &lt;a href=&quot;http://www.linode.com/?r=08dd22ac21375a7f947bb57ff5d6720986ae25f6&quot;&gt;sign up with Linode&lt;/a&gt; - thanks!  Other than running my sites there, I have no other affiliation with Linode.  And, if you're more a fan of Slicehost, here is &lt;a href=&quot;https://manage.slicehost.com/customers/new?referrer=dec60815b49bd66029fb80fb7159f742&quot;&gt;my referral page on Slicehost&lt;/a&gt;.
+&lt;/div&gt;
+
+&lt;p&gt;I recently moved everything over to &lt;a href=&quot;http://www.slicehost.com&quot;&gt;Slicehost&lt;/a&gt; on the recommendations of friends, and am so far fairly happy with the experience. It's cheaper, simpler, and more flexible than Layered Tech was.  To boot, I also like the fact that Slicehost is run out of St. Louis, Missouri, rather than some really expensive tech center like San Francisco or Boston.  Hosting is basically a commodity, and much like you wouldn't want to put a factory in San Francisco, you don't want your hosting their either.&lt;/p&gt;
+
+&lt;p&gt;However, I discovered something annoying about Slicehost: they use x86_64 servers, which, per se, doesn't really matter to me - I use open source code that can run on any number of architectures.  The problem is that this particular architecture uses more memory than plain old x86.  Significantly more.  My Layered Tech server with 1 gig of memory was hitting the swap space a bit, but the same code on a slice was swapping quite heavily, despite the fact that I'd moved PostgreSQL off to its own slice.  Since I pretty much exclusively run Rails, I decided to look into Phusion's &quot;Ruby Enterprise Edition&quot;, which is basically just some nice hacking on Ruby's garbage collection mechanism.  What they've done is nice, and I may end up using it, but ultimately it's buying me space that I would also gain from simply moving back to x86.  With that in mind, I decided to take another look at what appears to be emerging as one of Slicehost's main competitors, &lt;a href=&quot;http://www.linode.net&quot;&gt;Linode&lt;/a&gt;, who *do* use x86 servers.  Here are my results, which are admittedly not all that scientific, but what the heck - you're getting them for free, and they were pretty quick to whip up.&lt;/p&gt;
+
+&lt;h3&gt;Service, Support, Setup&lt;/h3&gt;
+
+&lt;p&gt;But before we begin with the numbers, I want to add a few words of caution.  One of the big things about hosting, to me at least, is how they deal with unexpected random negative events.  Connections going down, disk breakage, DoS attacks, and so on.  It's really hard to get an idea of just what sort of people you're dealing with until you've &quot;ridden the river together&quot;.  I don't really know what sort of response times, uptime, and all that either Slicehost or Linode have, so there are potentially some big intangibles there that are not quite as easy to draw pretty charts for.&lt;/p&gt;
+
+&lt;p&gt;In terms of the console/setup/management tools, I liked Slicehost's simplicity more - Linode gives you more options, but they're a bit fiddly and cluttered feeling at times.  For instance, Linode lets you pick how much swap space to give your disk image, but doesn't include a bit of javascript to balance out the swap and regular partitions, so that if you type in a larger swap number, you have to do the math and subtract that from the other number.  Annoying, but not a big deal.  Linode lets you pick various data centers in the US (no Europe, yet).  Slicehost gives you the option to do backups of your disk images, which is nice, and something that Linode lacks.&lt;/p&gt;
+
+&lt;h3&gt;Comparing plans&lt;/h3&gt;
+
+&lt;p&gt;Since I'm interested in comparing hardware and machines I actually have access to, here are the plans I am currently signed up with, and the salient numbers:&lt;/p&gt;
+
+&lt;p&gt;&lt;table&gt;
+    &lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th&gt;Slicehost 1024&lt;/th&gt;    &lt;th&gt;Slicehost 512&lt;/th&gt;  &lt;th&gt;Linode 720&lt;/th&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Memory&lt;/th&gt; &lt;td&gt;1024&lt;/td&gt;   &lt;td&gt;512&lt;/td&gt;    &lt;td&gt;720&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Bandwidth&lt;/th&gt;  &lt;td&gt;400&lt;/td&gt;    &lt;td&gt;200&lt;/td&gt;    &lt;td&gt;400&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Disk&lt;/th&gt;   &lt;td&gt;40&lt;/td&gt; &lt;td&gt;20&lt;/td&gt; &lt;td&gt;24&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;th&gt;Cost&lt;/th&gt;   &lt;td&gt;70&lt;/td&gt; &lt;td&gt;38&lt;/td&gt; &lt;td&gt;39.95&lt;/td&gt;&lt;/tr&gt;
+  &lt;/table&gt;&lt;/p&gt;
+
+&lt;p&gt;Memory / Dollar:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://spreadsheets.google.com/pub?key=pVDeZF6ire2YwATBYb4mBKQ&amp;amp;oid=1&amp;amp;output=image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Bandwidth / Dollar:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://spreadsheets.google.com/pub?key=pVDeZF6ire2YwATBYb4mBKQ&amp;amp;oid=2&amp;amp;output=image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Disk / Dollar:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://spreadsheets.google.com/pub?key=pVDeZF6ire2YwATBYb4mBKQ&amp;amp;oid=3&amp;amp;output=image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Linode mostly comes out ahead, but not by that much, except for bandwidth.  However, let's take a crude look at x86_64 vs x86 memory usage.&lt;/p&gt;
+
+&lt;p&gt;First, &lt;code&gt;./script/console&lt;/code&gt; (a Rails console) for the same code base on two different machines, showing the virtual memory size (VSZ) and resident set size (RSS):&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://spreadsheets.google.com/pub?key=pVDeZF6ire2YwATBYb4mBKQ&amp;amp;oid=4&amp;amp;output=image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;And just to look at something else that's a bit smaller, I ran the following script:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;puts File.open(&quot;/proc/self/status&quot;, &quot;r&quot;).read
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And got the following data:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://spreadsheets.google.com/pub?key=pVDeZF6ire2YwATBYb4mBKQ&amp;amp;oid=5&amp;amp;output=image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Being charitable with those numbers, we get x86 taking up 77% the memory that x86_64 does.  So let's add that to our comparison of how much memory you're getting per dollar on Slicehost and Linode:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://spreadsheets.google.com/pub?key=pVDeZF6ire2YwATBYb4mBKQ&amp;amp;oid=6&amp;amp;output=image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Wow!  That's a fairly significant difference.&lt;/p&gt;
+
+&lt;h3&gt;Performance&lt;/h3&gt;
+
+&lt;p&gt;That's most of what we can glean from published numbers, and running a few simple experiments.  However, there's another factor that's important: performance.  &quot;Virtual Private Server&quot; systems, or simply VPS's, got a bad name in the past because they were &quot;overbooked&quot; - too many virtual servers competing for the same CPU resources on one machine.  Slicehost and Linode both look like they want to avoid that kind of bad reputation, and so far all the systems I have used have felt snappy and responsive.  Now here's where we get really unscientific... I decided to try and do &lt;em&gt;something&lt;/em&gt;, even if it wasn't much, to get some kind of objective measurement of what kind of CPU I was getting on the machines.  This is really unscientific, because the machines do have other duties (I don't have the cash, time or inclination to set up random servers just for testing), and of course, who knows what else is sharing the computer with my systems: if you get a relatively unused computer, you can apparently pick up extra cycles for yourself, over and above your guaranteed minimum.  But c'est la vie, and so I decided to do some numbers anyway.  I picked a C implementation of mandelbrot from the &lt;a href=&quot;http://shootout.alioth.debian.org/u32q/benchmark.php?test=mandelbrot&quot;&gt;language shootout&lt;/a&gt; more or less &quot;for the hell of it&quot; (I'm going to keep repeating &quot;unscientific&quot; and invite someone to do better tests than I have).  I ran this code every 20 minutes for a couple days, and then averaged out the run times:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://spreadsheets.google.com/pub?key=pVDeZF6ire2YwATBYb4mBKQ&amp;amp;oid=7&amp;amp;output=image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;As expected, the higher power Slicehost 1024 machine wins out in terms of raw speed (less time is better), but not by that much over the Linode system.  Indeed, when we factor in the relative prices, Linode comes out ahead, again:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://spreadsheets.google.com/pub?key=pVDeZF6ire2YwATBYb4mBKQ&amp;amp;oid=8&amp;amp;output=image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So it looks like we're not paying a CPU penalty for having more memory, bandwidth, disk, etc... &lt;/p&gt;
+
+&lt;h3&gt;Notes&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Nothing in these statistics is indicative of future directions that both Linode and Slicehost might take.  Slicehost was recently acquired by Rackspace, and that could have effects on the service they provide.  Maybe one or both will come under financial pressure and start &quot;overbooking&quot; their servers.&lt;/li&gt;
+&lt;li&gt;The spreadsheet I used is available via Google docs, for the curious.  I did most of the work in OpenOffice, and then uploaded it though, because working with the web spreadsheet was kind of painful.  Unfortunately, you can't select non-contiguous data ranges in the Google spreadsheet, so the labels are interspersed with the data.  Yuck.  Also, Google docs doesn't handle 'time' values nicely, which is what the performance data was originally.  The spreadsheet is here: &lt;a href=&quot;http://spreadsheets.google.com/pub?key=pVDeZF6ire2YwATBYb4mBKQ&quot;&gt;http://spreadsheets.google.com/pub?key=pVDeZF6ire2YwATBYb4mBKQ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The standard deviation on the processing times is higher for both slices than the linode system.  Not quite sure what that means in terms of what's going on under the hood, but I thought it was interesting.&lt;/li&gt;
+&lt;/ul&gt;        &lt;/div&gt;
+      &lt;img src=&quot;http://feeds.feedburner.com/~r/DedaSys/~4/478718837&quot; height=&quot;1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 09:50:17 +0000</pubDate>
+</item>
+<item>
+	<title>Wouter Verhelst: Samba's tdbtool</title>
+	<guid>http://www.grep.be/blog/en/computer/cluebat/samba_tdbtool</guid>
+	<link>http://www.grep.be/blog/en/computer/cluebat/samba_tdbtool</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/wouter3.png&quot; width=&quot;85&quot; height=&quot;80&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;pre&gt;
+root:~# tdbtool gencache.tdb
+tdb&amp;gt; keys
+[...]
+key 14 bytes: NBT/BEFS01#20
+[...]
+tdb&amp;gt; show NBT/BEFS01#20
+fetch failed
+tdb&amp;gt; show NBT/BEFS01#20\0
+[...data...]
+&lt;/pre&gt;
+&lt;p&gt;Or, in other words: string delimiters are part of the string, as far
+as samba is concerned (oh, puh'lease!)&lt;/p&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 09:03:00 +0000</pubDate>
+</item>
+<item>
+	<title>Russell Coker: New version of Bonnie++ and Violin Memory</title>
+	<guid>http://etbe.coker.com.au/?p=968</guid>
+	<link>http://etbe.coker.com.au/2008/12/10/new-version-of-bonnie-and-violin-memory/</link>
+    <description>&lt;p&gt;I have just released version 1.03e of &lt;a href=&quot;http://www.coker.com.au/bonnie++/&quot;&gt;my Bonnie++ benchmark [1]&lt;/a&gt;.  The only change is support for direct IO in Bonnie++ (via the &lt;b&gt;-D&lt;/b&gt; command-line parameter).  The patch for this was written by Dave Murch of &lt;a href=&quot;http://violin-memory.com/&quot;&gt;Violin Memory [2]&lt;/a&gt;.  Violin specialise in 2RU storage servers based on DRAM and/or Flash storage.  One of their products is designed to handle a sustained load of 100,000 write IOPS (in 4K blocks) and 200,000 read IOPS per second for it&amp;#8217;s 10 year life (but it&amp;#8217;s not clear whether you could do 100,000 writes AND 200,000 reads in a second).  The only pricing information that they have online is a claim that flash costs less than $50 per gig, while that would be quite affordable for dozens of gigs and not really expensive for hundreds of gigs, as they are discussing a device with 4TB capacity it sounds rather expensive - but of course it would be a lot cheaper than using hard disks if you need that combination of capacity and performance.&lt;/p&gt;
+&lt;p&gt;I wonder how much benefit you would get from using a Violin device to manage the journals for 100 servers in a data center.  It seems that 1000 writes per second is near the upper end of the capacity of a 2RU server for many common work-loads, this is of course just a rough estimation based on observations of some servers that I run.  If the main storage was on a SAN then using data journaling and putting the journals on a Violin device seems likely to improve latency (data is committed faster and the application can report success to the client sooner) while also reducing the load on the SAN disks (which are really expensive).&lt;/p&gt;
+&lt;p&gt;Now given that their price point is less than $50 per gig, it seems that a virtual hosting provider could provide really fast storage to their customers for a quite affordable price.  $5 per month per gig for flash storage in a virtual hosting environment would be an attractive option for many people.  Currently if you have a small service that you want hosted a virtual server is the best way to do it, and as most providers offer little information on the disk IO capacity of their services it seems quite unlikely that anyone has taken any serious steps to prevent high load from one customer from degrading the performance of the rest. With flash storage you not only get a much higher number of writes per second, but one customer writing data won&amp;#8217;t seriously impact read speed for other customers (with hard drive one process that does a lot of writes can cripple the performance of processes that do reads).&lt;/p&gt;
+&lt;p&gt;The experimental versions of Bonnie++ have better support for testing some of these usage scenarios.  One new feature is measuring the worst-case latency of all operations in each section of the test run.  I will soon release Bonnie++ version 1.99 which includes direct IO support, it should show some significant benefits for all usage cases involving Violin devices, ZFS (when configured with multiple types of storage hardware), NetApp Filers, and other advanced storage options.&lt;/p&gt;
+&lt;p&gt;For a while I have been dithering about the exact feature list of Bonnie++ 2.x.  After some pressure from a contributor to the OpenSolaris project I have decided to freeze the feature list at the current 1.94 level plus direct IO support.  This doesn&amp;#8217;t mean that I will stop adding new features in the 2.0x branch, but I will avoid doing anything that can change the results.  So in future benchmark results made from Bonnie++ version 1.94 can be directly compared to results that will be made from version 2.0 and above.  There is one minor issue, new versions of GCC have in the past made differences to some of the benchmark results (the per-character IO test was the main one)  - but that&amp;#8217;s not my problem.  As far as I am concerned Bonnie++ benchmarks everything from the compiler to the mass storage device in terms of disk IO performance.  If you compare two systems with different kernels, different versions of GCC, or other differences then it&amp;#8217;s up to you to make appropriate notes of what was changed.&lt;/p&gt;
+&lt;p&gt;This means that the OpenSolaris people can now cease using the 1.0x branch of Bonnie++, and other distributions can do the same if they wish.  I have just uploaded version 1.03e to Debian and will request that it goes in Lenny - I believe that it is way too late to put 1.9x in Lenny.  But once Lenny is released I will upload version 2.00 to Debian/Unstable and that will be the only version supported in Debian after that time.&lt;/p&gt;
+&lt;p&gt;&lt;ul&gt;&lt;br /&gt;
+&lt;li&gt;[1]&lt;a href=&quot;http://www.coker.com.au/bonnie++/&quot;&gt; http://www.coker.com.au/bonnie++/&lt;/a&gt;&lt;/li&gt;&lt;br /&gt;
+&lt;li&gt;[2]&lt;a href=&quot;http://violin-memory.com/&quot;&gt; http://violin-memory.com/&lt;/a&gt;&lt;/li&gt;&lt;br /&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 08:33:15 +0000</pubDate>
+</item>
+<item>
+	<title>MJ Ray: Environmental Policies and Computing</title>
+	<guid>http://www.news.software.coop/environmental-policies-and-computing/393/</guid>
+	<link>http://www.news.software.coop/environmental-policies-and-computing/393/</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/mjray2.png&quot; width=&quot;65&quot; height=&quot;94&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;I&amp;#8217;ve not written about this for a while, but I&amp;#8217;ve just started seeing Apple&amp;#8217;s Greenwash adverts, so I went and found &lt;a href=&quot;http://www.greenpeace.org/international/news/guide-greener-electronics-november-241108&quot;&gt;the latest Greenpeace electronics report&lt;/a&gt; which says:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&amp;#8220;Apple&amp;#8217;s score increases slightly to 4.3 points, but the company drops to 14th position. Apple scores well for putting products on the market whose key components are free of brominated flame retardants (BFRs) and PVC vinyl plastic [...] All Apple products should be free of these substances by the end of 2008, which will challenge other PC makers to follow their lead. [...] Apple scores poorly on most e-waste criteria, except for reporting a recycling rate in 2006 of 18% as a percentage of sales 7 years ago. It does slightly better on energy criteria for disclosing the carbon footprint of every model of product – although not exactly what is being evaluated in the criterion.&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;I feel that it&amp;#8217;s hard to push the large electronics companies by direct action and purchasing decisions (although I will continue to try). Regulations must be introduced too and now &lt;a href=&quot;http://www.treehugger.com/files/2008/11/eu-code-of-conduct-for-data-centers.php&quot;&gt;the EC has issued a Code of Conduct on Data Centres Energy Efficiency [TreeHugger report]&lt;/a&gt;.  &lt;a title=&quot;TTLLP&quot; href=&quot;http://www.ttllp.co.uk/&quot;&gt;TTLLP&lt;/a&gt; has been slowly getting out of data centres for the last few years - between the toxic e-waste in servers and rising energy costs, with most of our competitors ignoring both of them, it was too hard to do the right thing &lt;em&gt;and&lt;/em&gt; be profitable. I think the market is ready for a step-change to green data centres and we can&amp;#8217;t do that alone.  Expect a new TTLLP-branded venture early next year&amp;#8230;&lt;/p&gt;
+&lt;p&gt;Finally, tomorrow, on 11 December, our governments will decide Europe&amp;#8217;s response to climate change for the next 12 years. &lt;a href=&quot;http://www.timetolead.eu/&quot;&gt;Take 2 minutes to tell them to keep global warming below 2°C.&lt;/a&gt;&lt;/p&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 07:37:23 +0000</pubDate>
+</item>
+<item>
+	<title>Kartik Mistry: New Thread</title>
+	<guid>http://ftbfs.wordpress.com/?p=548</guid>
+	<link>http://ftbfs.wordpress.com/2008/12/10/new-thread/</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/kartik.png&quot; width=&quot;75&quot; height=&quot;90&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;div class=&quot;snap_preview&quot;&gt;&lt;br /&gt;&lt;p&gt;* If someone is wondering about my silence..&lt;/p&gt;
+&lt;p&gt;&lt;img class=&quot;alignnone size-full wp-image-547&quot; title=&quot;New Thread&quot; src=&quot;http://ftbfs.files.wordpress.com/2008/12/129055580149393457d429a.gif?w=90&amp;#038;h=84&quot; alt=&quot;New Thread&quot; width=&quot;90&quot; height=&quot;84&quot; /&gt;&lt;/p&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;a rel=&quot;nofollow&quot; href=&quot;http://feeds.wordpress.com/1.0/gocomments/ftbfs.wordpress.com/548/&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/comments/ftbfs.wordpress.com/548/&quot; /&gt;&lt;/a&gt; &lt;a rel=&quot;nofollow&quot; href=&quot;http://feeds.wordpress.com/1.0/godelicious/ftbfs.wordpress.com/548/&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/delicious/ftbfs.wordpress.com/548/&quot; /&gt;&lt;/a&gt; &lt;a rel=&quot;nofollow&quot; href=&quot;http://feeds.wordpress.com/1.0/gostumble/ftbfs.wordpress.com/548/&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/stumble/ftbfs.wordpress.com/548/&quot; /&gt;&lt;/a&gt; &lt;a rel=&quot;nofollow&quot; href=&quot;http://feeds.wordpress.com/1.0/godigg/ftbfs.wordpress.com/548/&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/digg/ftbfs.wordpress.com/548/&quot; /&gt;&lt;/a&gt; &lt;a rel=&quot;nofollow&quot; href=&quot;http://feeds.wordpress.com/1.0/goreddit/ftbfs.wordpress.com/548/&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/reddit/ftbfs.wordpress.com/548/&quot; /&gt;&lt;/a&gt; &lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://stats.wordpress.com/b.gif?host=ftbfs.wordpress.com&amp;amp;blog=2766354&amp;amp;post=548&amp;amp;subd=ftbfs&amp;amp;ref=&amp;amp;feed=1&quot; /&gt;&lt;/div&gt;</description>
+	<pubDate>Wed, 10 Dec 2008 07:16:53 +0000</pubDate>
+</item>
+<item>
+	<title>Nico Golde: ssh on-the-fly port forwarding</title>
+	<guid>http://nion.modprobe.de/blog/archives/656-guid.html</guid>
+	<link>http://nion.modprobe.de/blog/archives/656-ssh-on-the-fly-port-forwarding.html</link>
+    <description>&lt;a href=&quot;http://www.openssh.org&quot;&gt;ssh&lt;/a&gt; is one of the programs I didn't really every read the manpage of (only to lookup stuff which I already knew is possible but forgot how). However there are some nice features you miss if you don't. Besides &lt;a href=&quot;http://nion.modprobe.de/blog/archives/502-Speeding-up-SSH-ControlMaster.html&quot;&gt;ControlMaster&lt;/a&gt; I just stumbled over another feature.&lt;br /&gt;
+&lt;br /&gt;
+It is possible to add port forwarding on the fly without the need to open a new terminal and ssh connection.&lt;br /&gt;
+ssh provides some &lt;a href=&quot;http://en.wikipedia.org/wiki/Escape_character&quot;&gt;escape characters&lt;/a&gt; to do some stuff in your current connection.&lt;br /&gt;
+In the default setup the basic escape character is &lt;strong&gt;&lt;font color=&quot;blue&quot;&gt;~&lt;/font&gt;&lt;/strong&gt; (you can specify this by using &lt;i&gt;EscapeChar&lt;/i&gt; in your configuration).&lt;br /&gt;
+&lt;br /&gt;
+If you follow this by # character (and thus type &lt;strong&gt;&lt;font color=&quot;blue&quot;&gt;~#&lt;/font&gt;&lt;/strong&gt;) you get a list of all forwarded connections.&lt;br /&gt;
+Using &lt;strong&gt;&lt;font color=&quot;blue&quot;&gt;~C&lt;/font&gt;&lt;/strong&gt; you can open an internal ssh shell that enables you to add and remove local/remote port forwardings&lt;div class=&quot;bash&quot;&gt;&lt;ol&gt;&lt;li&gt;&lt;div&gt;ssh&amp;gt; &lt;span&gt;help&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div&gt;Commands:&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div&gt;&amp;#160; &amp;#160; &amp;#160; -L&lt;span&gt;&amp;#91;&lt;/span&gt;bind_address:&lt;span&gt;&amp;#93;&lt;/span&gt;port:host:hostport&amp;#160; &amp;#160; Request &lt;span&gt;local&lt;/span&gt; forward&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div&gt;&amp;#160; &amp;#160; &amp;#160; -R&lt;span&gt;&amp;#91;&lt;/span&gt;bind_address:&lt;span&gt;&amp;#93;&lt;/span&gt;port:host:hostport&amp;#160; &amp;#160; Request remote forward&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div&gt;&amp;#160; &amp;#160; &amp;#160; -KR&lt;span&gt;&amp;#91;&lt;/span&gt;bind_address:&lt;span&gt;&amp;#93;&lt;/span&gt;port&amp;#160; &amp;#160; &amp;#160; &amp;#160; &amp;#160; &amp;#160; &amp;#160; &amp;#160; &amp;#160;Cancel remote forward&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div&gt;&amp;#160;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div&gt;ssh&amp;gt; -L &lt;span&gt;8080&lt;/span&gt;:localhost:&lt;span&gt;8080&lt;/span&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div&gt;Forwarding port.&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div&gt;&lt;span&gt;echo&lt;/span&gt; foo&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;div&gt;foo &lt;/div&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;Some other more or less usefull escape sequences, have a look at man 1 ssh -&amp;gt; ESCAPE CHARACTERS&lt;br /&gt;</description>
+	<pubDate>Tue, 09 Dec 2008 22:25:28 +0000</pubDate>
+	<author>blog@ngolde.de (Nico Golde)</author>
+</item>
+<item>
+	<title>David Moreno Garza: High-Order Perl available for free</title>
+	<guid>http://log.damog.net/?p=734</guid>
+	<link>http://log.damog.net/2008/12/high-order-perl-available-for-free/</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/damog.png&quot; width=&quot;64&quot; height=&quot;95&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;My friend &lt;a href=&quot;http://search.cpan.org/~amnesiac/&quot;&gt;Marco&lt;/a&gt; first told me on IM, then I read it on &lt;a href=&quot;http://perlbuzz.com/2008/12/higher-order-perl-available-for-free-download.html&quot;&gt;PerlBuzz&lt;/a&gt;. The nice &lt;strong&gt;High-Order Perl&lt;/strong&gt; book by&lt;br /&gt;
+Mark Jason Dominus is now available for free (as in free beer) at its &lt;a href=&quot;http://hop.perl.plover.com/book/&quot;&gt;website&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This book caught my attention a long time ago on a Barnes &amp;amp; Noble once, but since I had just too many book on queue, I decided not to buy it. I then read that it&amp;#8217;s actually a good book on &amp;#8220;advanced&amp;#8221; techniques on Perl, so my interest grew, but for random reasons I just didn&amp;#8217;t get it.&lt;/p&gt;
+&lt;p&gt;Now I have no excuses not to, and either do you &lt;img src=&quot;http://log.damog.net/wp-includes/images/smilies/icon_smile.gif&quot; alt=&quot;:)&quot; class=&quot;wp-smiley&quot; /&gt;&lt;/p&gt;</description>
+	<pubDate>Tue, 09 Dec 2008 21:56:04 +0000</pubDate>
+</item>
+<item>
+	<title>Martin Michlmayr: Recovery mode for QNAP devices available now</title>
+	<guid>http://www.cyrius.com/journal/2008/12/09/#recovery-mode-available</guid>
+	<link>http://www.cyrius.com/journal/debian/orion/qnap/recovery-mode-available</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/tbm.png&quot; width=&quot;67&quot; height=&quot;90&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;
+
+QNAP recently released an upgrade for u-boot, the boot loader used on
+most QNAP devices, that adds a recovery mode.  With this recovery mode,
+a backup image is requested via TFTP and then written to flash.  This
+is useful in case there are problems during the installation or an
+upgrade of Debian.
+
+&lt;/p&gt;
+
+&lt;p&gt;
+
+While Debian itself works well on QNAP and another NAS devices, we get
+reports from users every once in a while that their machine stopped
+booting (either after an upgrade or for no good reason) and it's
+usually impossible to say why since these devices are headless.  The
+recovery mode allows them to put an image into flash that is known to
+work or an image of the installer that can be used as a rescue option.
+Essentially, the recovery mode removes the need for a serial console in
+many cases.
+
+&lt;/p&gt;
+
+&lt;p&gt;
+
+I've added information about the recovery mode for the QNAP &lt;a href=&quot;http://www.cyrius.com/debian/orion/qnap/ts-109/recovery.html&quot;&gt;TS-109&lt;/a&gt;,
+&lt;a href=&quot;http://www.cyrius.com/debian/orion/qnap/ts-209/recovery.html&quot;&gt;TS-209&lt;/a&gt;
+and &lt;a href=&quot;http://www.cyrius.com/debian/orion/qnap/ts-409/recovery.html&quot;&gt;TS-409/TS-409U&lt;/a&gt;,
+including installation instructions of users already running Debian.
+
+&lt;/p&gt;</description>
+	<pubDate>Tue, 09 Dec 2008 20:47:38 +0000</pubDate>
+</item>
+<item>
+	<title>MJ Ray: Farewell Oliver Postgate: Chairman Bagpuss, I almost knew you</title>
+	<guid>http://www.news.software.coop/farewell-oliver-postgate-chairman-bagpuss-i-almost-knew-you/403/</guid>
+	<link>http://www.news.software.coop/farewell-oliver-postgate-chairman-bagpuss-i-almost-knew-you/403/</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/mjray2.png&quot; width=&quot;65&quot; height=&quot;94&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;There have been glowing tributes in the news today following the death of &lt;a href=&quot;http://www.oliverpostgate.co.uk/&quot;&gt;Oliver Postgate, creator of Bagpuss, Ivor the Engine and Noggin the Nog and co-creator of the Clangers&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;But it&amp;#8217;s surprised me how few of the mainstream news sites have linked to &lt;a href=&quot;http://www.oliverpostgate.co.uk/&quot;&gt;Oliver Postgate&amp;#8217;s personal website&lt;/a&gt;.  I knew where it was because it&amp;#8217;s hosted by an ISP that &lt;a title=&quot;TTLLP&quot; href=&quot;http://www.ttllp.co.uk/&quot;&gt;TTLLP&lt;/a&gt; have worked for.  So far, I&amp;#8217;ve seen one link to it from the Guardian, buried in a sidebar alongside one of the commentators waffling about him.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Are British TV and newspapers scared of Chairman Bagpuss&amp;#8217;s &amp;#8220;orthodox Miaoist&amp;#8221; views?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The site&amp;#8217;s not that up-to-date (understandably), but it has given me a bit of amusement and warmth today after this sad news.  It&amp;#8217;s also serendipitious after &lt;a href=&quot;http://www.news.software.coop/95-of-british-residential-isps-censor-but-i-think-im-ok/399/&quot;&gt;yesterday&amp;#8217;s wikipedia filtering&lt;/a&gt; caused a surge in interest in &lt;em&gt;&amp;#8220;Wind of Change&amp;#8221;&lt;/em&gt; band Scorpions that Oliver Postgate&amp;#8217;s final homepage was called &lt;strong&gt;&amp;#8220;The Law of Unintended Consequences&amp;#8221;&lt;/strong&gt; - if you enjoyed the narrative style of Bagpuss, Ivor and the Clangers, &lt;a href=&quot;http://www.oliverpostgate.co.uk/&quot;&gt;go enjoy reading it&lt;/a&gt;:-&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&amp;#8220;Because not being intended, unintended consequences are not on the list of what was expected to happen, so if one does happen, nobody has to notice it or connect it with whatever was intended. Or, if they do notice it they just write it off as part of the ‘law of unintended consequences’, and of course as [God's] laws are immutable, eternal and that, they know they can’t do anything about it even if they wanted to, which half the time they don’t.&amp;#8221;&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+	<pubDate>Tue, 09 Dec 2008 17:33:44 +0000</pubDate>
+</item>
+<item>
+	<title>David Welton: Ruby Shootout</title>
+	<guid>tag:journal.dedasys.com,2005:Article/2118</guid>
+	<link>http://feeds.feedburner.com/~r/DedaSys/~3/479613931/ruby-shootout</link>
+    <description>&lt;div&gt;
+&lt;p&gt;Antonio Cangiano has an interesting set of Ruby benchmarks here:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://antoniocangiano.com/2008/12/09/the-great-ruby-shootout-december-2008/&quot;&gt;http://antoniocangiano.com/2008/12/09/the-great-ruby-shootout-december-2008/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The two results that were interesting to me were that JRuby does so well, and that REE (&quot;Ruby Enterprise Edition&quot;) was a significant improvement over &quot;plain old Ruby&quot; too.  I knew that the JRuby guys have done a lot of work, and done a nice job with their implementation, but didn't realize just how good it was.   REE is a clever idea, but not that much code, and aimed at memory usage, not CPU, so it's interesting to see how much faster it ends up according to these tests.&lt;/p&gt;
+
+&lt;p&gt;A few things that would  be interesting to see:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Raw startup time.  Yeah, that probably penalizes JRuby, but it is still a scripting language, and using it like one isn't possible if it takes forever to start up.  How much slower is it?&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;A more detailed look at REE's times.  How is it that it's that much faster because of some memory tweaks?&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In any case, it's a nice bit of work by Antonio - grazie!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt; - old, slow davidw missed the fact that there was a startup time benchmark included.  Oops.&lt;/p&gt;        &lt;/div&gt;
+      &lt;img src=&quot;http://feeds.feedburner.com/~r/DedaSys/~4/479613931&quot; height=&quot;1&quot; width=&quot;1&quot; /&gt;</description>
+	<pubDate>Tue, 09 Dec 2008 17:27:08 +0000</pubDate>
+</item>
+<item>
+	<title>Gerfried Fuchs: Better backports.org Support</title>
+	<guid>http://alfie.ist.org/blog/2008/12/09#backports-support.en</guid>
+	<link>http://alfie.ist.org/blog/2008/12/09#backports-support.en</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/rhonda.png&quot; width=&quot;89&quot; height=&quot;84&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;Since last weekend &lt;a href=&quot;http://backports.org/&quot;&gt;backports.org&lt;/a&gt; has two more services supporting tracking of what's going on. I will list them in chronological order:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://security-tracker.debian.net/tracker/status/release/stable-backports&quot;&gt;Tracking of Security issues in backports packages&lt;/a&gt;: This was one of the many topics that was discussed at the Security Team meeting in Essen at the end of last month and &lt;a href=&quot;http://www.enyo.de/fw/&quot;&gt;Florian Weimer&lt;/a&gt; implemented a first version of tracking security issues within backports.org. It currently compares the backported version against the one fixed for unstable, so at the moment it still has some false-positives (e.g. &lt;a href=&quot;http://security-tracker.debian.net/tracker/CVE-2008-2469&quot;&gt;libspf2&lt;/a&gt; because the fix was taken from lenny-security), but this is still a &lt;strong&gt;big&lt;/strong&gt; step forward and helpful to track outstanding issues here, too.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://backports.deb.at/&quot;&gt;Diffs between etch-backports and lenny&lt;/a&gt;: Something similar was available at some other places before but strangely got discontinued. In here you can see which packages in backports are &lt;a href=&quot;http://backports.deb.at/older.html&quot;&gt;older&lt;/a&gt; (meaning only debian revision difference), &lt;a href=&quot;http://backports.deb.at/outdated.html&quot;&gt;outdated&lt;/a&gt; (newer upstream version in lenny) &lt;a href=&quot;http://backports.deb.at/newer.html&quot;&gt;newer&lt;/a&gt; (backported from unstable?), have a &lt;a href=&quot;http://backports.deb.at/wrongversion.html&quot;&gt;wrong version&lt;/a&gt; schema or are &lt;a href=&quot;http://backports.deb.at/NA.html&quot;&gt;not available&lt;/a&gt; in lenny (propably even removed from unstable). It will hopefully help people to get their backports &lt;a href=&quot;http://backports.deb.at/sync.html&quot;&gt;in sync&lt;/a&gt;. At least it's an indicator of how well the packages are tracked.&lt;/p&gt;
+
+&lt;p&gt;Hope you consider them already as useful as myself, even though there is obvious space for improvements. But they are both quite helpful already in their current state so that shouldn't hinder you from using them. :)&lt;/p&gt;</description>
+	<pubDate>Tue, 09 Dec 2008 15:28:00 +0000</pubDate>
+</item>
+<item>
+	<title>Peter Eisentraut: When non ASCII names will finally work? (part 2)</title>
+	<guid>tag:blogger.com,1999:blog-5541296000399974369.post-2750983464802775433</guid>
+	<link>http://petereisentraut.blogspot.com/2008/02/when-non-ascii-names-will-finally-work.html</link>
+    <description>&lt;a href=&quot;http://blog.cihar.com/archives/2008/02/07/when_non_ascii_names_will_finally_work/&quot;&gt;no comment&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;&lt;a href=&quot;http://2.bp.blogspot.com/_dgdplFJMdoQ/R6wYwoHVCwI/AAAAAAAAAAg/pFur4uhu0qQ/s1600-h/planet-debian.png&quot;&gt;&lt;img src=&quot;http://2.bp.blogspot.com/_dgdplFJMdoQ/R6wYwoHVCwI/AAAAAAAAAAg/pFur4uhu0qQ/s400/planet-debian.png&quot; border=&quot;0&quot; alt=&quot;&quot; id=&quot;BLOGGER_PHOTO_ID_5164530096368061186&quot; /&gt;&lt;/a&gt;</description>
+	<pubDate>Tue, 09 Dec 2008 15:26:12 +0000</pubDate>
+	<author>noreply@blogger.com (Peter Eisentraut)</author>
+</item>
+<item>
+	<title>Bastian Venthur: Lenny’s release date III</title>
+	<guid>http://blog.venthur.de/2008/12/09/lennys-release-date-iii/</guid>
+	<link>http://blog.venthur.de/2008/12/09/lennys-release-date-iii/</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/venthur.png&quot; width=&quot;85&quot; height=&quot;115&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;Two months since my &lt;a href=&quot;http://blog.venthur.de/2008/10/07/lennys-release-date/&quot;&gt;last status update&lt;/a&gt; of my &lt;a href=&quot;http://blog.venthur.de/2008/08/01/my-guess-for-lennys-release-date/&quot;&gt;initial guess for Lenny&amp;#8217;s release date&lt;/a&gt;, time for an update:&lt;/p&gt;
+&lt;p&gt;&lt;img id=&quot;image103&quot; src=&quot;http://blog.venthur.de/wp-content/uploads/release-guess-3.png&quot; alt=&quot;My guess for Lenny's release III&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;I don&amp;#8217;t know what the current &amp;#8220;official&amp;#8221; release target for Lenny is, but I still think we&amp;#8217;re heading towards Spring/Summer 2009. &lt;/p&gt;
+&lt;p&gt;The last &lt;a href=&quot;http://lists.debian.org/debian-devel-announce/2008/10/msg00000.html&quot;&gt;related mail on -devel-announce&lt;/a&gt; is from October 2008 from Alexander who hopes that we&amp;#8217;ll release Lenny at least by the end of 2008. I&amp;#8217;ve read an article with an interview with Steve McIntyre &lt;a href=&quot;http://www.theregister.co.uk/2008/10/10/debian_lenny_late/&quot;&gt;somewhere on The Register&lt;/a&gt; where he said:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;
+&amp;#8220;Bastian&amp;#8217;s being a little bit pessimistic based on the data he&amp;#8217;s looking at, but as far as I know, he hasn&amp;#8217;t spoken to any of the release team. As far as Lenny goes, we&amp;#8217;re &amp;#8216;almost&amp;#8217; there,&amp;#8221; he told The Register.
+&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;That interview was in the beginning of October.&lt;/p&gt;
+&lt;p&gt;It doesn&amp;#8217;t bother me too much, that we release late. What bothers me is that we don&amp;#8217;t &lt;em&gt;correct&lt;/em&gt; our estimated release dates even when it&amp;#8217;s &lt;em&gt;obvious&lt;/em&gt; that there is no way we will release in time. It&amp;#8217;s really sad that we keep our users in the dark about the fact that we can&amp;#8217;t release in time until it&amp;#8217;s already too late. &lt;/p&gt;
+&lt;p&gt;I believe many users would appreciate if we&amp;#8217;d honestly say: We don&amp;#8217;t know when we release, but currently we have x RC bugs open and looking at the last releases we think it will take roughly n months to fix them and release, instead of the good old &amp;#8220;We release when it&amp;#8217;s ready&amp;#8221;.&lt;/p&gt;
+&lt;p&gt;Another important point: Unstable is frozen for almost &lt;em&gt;five months&lt;/em&gt; now. If you buy a &lt;a href=&quot;http://blog.venthur.de/2008/11/25/lenovo-t500-shiny-new-laptop/&quot;&gt;current laptop&lt;/a&gt;, chances are hight that it might not fully work with Debian &amp;#8220;bleeding edge&amp;#8221; unstable, since it&amp;#8217;s horrible outdated. Some of the newer stuff can be obtained from experimental if you&amp;#8217;re brave enough, but if you&amp;#8217;re not, unstable is getting more and more unattractive compared to other distribution&amp;#8217;s current versions. This is really something we should try to fix after we released Lenny.&lt;/p&gt;</description>
+	<pubDate>Tue, 09 Dec 2008 15:07:06 +0000</pubDate>
+</item>
+<item>
+	<title>Lucas Nussbaum: The Project membership procedures GR</title>
+	<guid>http://www.lucas-nussbaum.net/blog/?p=322</guid>
+	<link>http://www.lucas-nussbaum.net/blog/?p=322</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/lucas.png&quot; width=&quot;70&quot; height=&quot;88&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;So, the &lt;a href=&quot;http://lists.debian.org/debian-devel-announce/2008/12/msg00002.html&quot;&gt;call for vote&lt;/a&gt; on &lt;a href=&quot;http://www.debian.org/vote/2008/vote_002&quot;&gt;the &amp;#8220;Project membership procedures&amp;#8221; GR&lt;/a&gt; was sent. Since I took part in the discussions that lead to that GR, I feel obliged to explain my point of view.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What this GR isn&amp;#8217;t about&lt;/strong&gt;&lt;br /&gt;
+This GR isn&amp;#8217;t about the merits of Joerg Jaspert&amp;#8217;s proposal. I personally don&amp;#8217;t think that the changes he wants to implement are what we need in Debian, but even if I fully agreed with those changes, I would still disagree with the process that led to those changes. Also, this GR isn&amp;#8217;t about Joerg Jaspert himself. I deeply respect him and his awesome work for Debian. And I&amp;#8217;m sure that this vote could have been triggered by decisions announced by someone else.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What this GR is about&lt;/strong&gt;&lt;br /&gt;
+I think that the question we are asked to vote on is:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;Some people in Debian have a special role, and special privileges. Does it allow them to change important aspects of our project, without the approval of all the other developers?&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Or, put differently:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;Where is our limit between Doocracy and Democracy?&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;I&amp;#8217;m all for listening to developers who contribute(d) a lot. I think that most people, when skimming through posts in a big thread on -devel@, will look for posts from people who did a lot of work for Debian, or who usually post interesting ideas. However, that doesn&amp;#8217;t mean that those people should feel empowered to decide changes to important parts of our project, without first discussing those changes with all other developers, and making sure that those changes are consensual.&lt;/p&gt;
+&lt;p&gt;So, I hope that we will send a clear message that says: you are very welcome to propose changes, but please make sure that they are properly discussed within the developers before they are implemented.&lt;/p&gt;
+&lt;p&gt;Joerg&amp;#8217;s initial mail on d-d-a, with a few s/decision/proposal/, and a final question phrased like &amp;#8220;Any comments? Suggestions? Other ideas?&amp;#8221;, could have been the start of an interesting discussion about how we can integrate non-developing contributors in Debian. And if too many developers disagreed, we could have had an opinion poll (it would be great to have an infrastructure for running polls inside Debian, like &lt;a href=&quot;http://lists.debian.org/debian-project/2005/12/msg00216.html&quot;&gt;what Jeroen did three times a long time ago&lt;/a&gt;), or even a GR, like we did for Debian Maintainers.&lt;/p&gt;
+&lt;p&gt;For this actual vote, there are two similar options on the ballot (choices 1 and 2, respectively &amp;#8220;amendment text A&amp;#8221; and the original text on the vote page). I proposed this amendement (choice 1) because the original text is unclear, and mixes several different questions, forcing voters to answer several (secondary) questions at once, like:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Do we recognize that there are contributors that can&amp;#8217;t become members of the project currently, and that should?&lt;/li&gt;
+&lt;li&gt;Do we want to thank DAM for bringing this up? (implicit question or not: &amp;#8230; now that we are trying to release?)&lt;/li&gt;
+&lt;li&gt;Do we want DAM to work on a new proposal?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The amendment aims at going straight to the point. And yes, it is only &lt;i&gt;asking&lt;/i&gt; the DAMs, but if the developers ask the DAMs not to do something, and the DAMs do it anyway, we clearly have a bigger problem. I believe that the way those decisions were announced was a mistake (that unfortunately none of the people involved have been willing to admit), not that the DAMs are trying to take-over Debian, so there&amp;#8217;s no need for a stronger wording.&lt;/p&gt;</description>
+	<pubDate>Tue, 09 Dec 2008 15:03:17 +0000</pubDate>
+</item>
+<item>
+	<title>Michal &amp;#268;iha&amp;#345;: Speed up SSH logins</title>
+	<guid>http://blog.cihar.com/archives/2008/12/09/speed_up_ssh_logins/</guid>
+	<link>http://blog.cihar.com/archives/2008/12/09/speed_up_ssh_logins/</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/nijel.png&quot; width=&quot;64&quot; height=&quot;67&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;I just discovered (not new) feature of OpenSSH, which allows to have
+several sessions over a single network connection. If you are once
+connected to the server, all other sessions can use existing connections
+and this makes much faster things like working with remote SVN or shell
+completion of remote filenames.&lt;/p&gt;
+
+&lt;p&gt;All you need in config file to make it work is something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Host *
+    ControlPath ~/.ssh/sock/%r@%h:%p
+    ControlMaster auto
+&lt;/code&gt;&lt;/pre&gt;</description>
+	<pubDate>Tue, 09 Dec 2008 13:26:59 +0000</pubDate>
+</item>
+<item>
+	<title>Wouter Verhelst: The advantages of a home-grown comment system</title>
+	<guid>http://www.grep.be/blog/en/computer/play/home_grown_comment</guid>
+	<link>http://www.grep.be/blog/en/computer/play/home_grown_comment</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/wouter3.png&quot; width=&quot;85&quot; height=&quot;80&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;A while ago, I was investigating the possibility to move blog backend
+to something else; something like, say, &lt;a href=&quot;http://drupal.org&quot;&gt;drupal&lt;/a&gt;, so that I wouldn't have to maintain
+it too much myself.&lt;/p&gt;
+&lt;p&gt;For those who care, this blog is a very strange contraption based on
+subversion, blosxom, php, and a postres backend for the comments.&lt;/p&gt;
+&lt;p&gt;I've now dropped that migration thought, for a very simple reason:
+comment spam.&lt;/p&gt;
+&lt;p&gt;A while back, the spammers had found my blog, and started placing
+comments using a bot. They might think that these comments will
+eventually show up on my website, but that's wrong; I always moderate
+away spam. First, they posted a few comments. I changed a few details
+about the form, and the bots (who only went to the POST URL, never
+checking whether the form they requested was unchanged) failed
+miserably. Then, they posted loads and loads of comments, in a weird
+attempt to overrun me with comments. One psql run and one DELETE
+statement later, those comments were gone -- and one minor form change
+later, the bots failed miserably, &lt;em&gt;again&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;This went on for a few months, until the stupid spammer finally
+understood that he was wasting loads of his time in trying to post
+something on a website that wasn't ever going to enable his comments,
+anyway. Or so I thought.&lt;/p&gt;
+&lt;p&gt;You see, the thing they're really after is my pagerank. In itself,
+grep.be is nothing special -- but planet.grep.be is, and apparently some
+of that pagerank score trickles to the other grep.be subdomains. Or, at
+least, that's what the spammers seem to think, in case it isn't (I
+wouldn't know).&lt;/p&gt;
+&lt;p&gt;When the comment spam on my blog had been silent for a few weeks, I
+found that the spammers had found my &lt;a href=&quot;http://gallery.grep.be&quot;&gt;gallery&lt;/a&gt; installation, and had posted
+some several thousand comments there. One DELETE statement later they
+were gone, but a few hours later some of them were back.&lt;/p&gt;
+&lt;p&gt;I don't know the gallery source code well enough to pull the same
+trick here (disable comments until manual moderation), and unless I want
+to do something like using a CAPTCHA on my gallery site (I don't) or
+disabling comments altogether (I don't, either), I'll just have to
+resort to removing these comments from the database.&lt;/p&gt;
+&lt;p&gt;At least by doing that, I can remove them all in one go. And at least
+the spammers are easily recognizable. For now.&lt;/p&gt;
+&lt;p&gt;Perhaps I'll have to look into changing gallery's source code after
+all... or, perhaps, just use something else. Sigh. Stupid spammers&lt;/p&gt;</description>
+	<pubDate>Tue, 09 Dec 2008 13:15:00 +0000</pubDate>
+</item>
+<item>
+	<title>Josselin Mouette: RubyGem is from Mars, apt-get is from Earth</title>
+	<guid>http://np237.livejournal.com/21033.html</guid>
+	<link>http://np237.livejournal.com/21033.html</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/np237.png&quot; width=&quot;103&quot; height=&quot;137&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;There is again some &lt;a href=&quot;http://stakeventures.com/articles/2008/12/04/rubygem-is-from-mars-aptget-is-from-venus&quot;&gt;ongoing&lt;/a&gt; &lt;a href=&quot;http://gwolf.org/node/1872&quot;&gt;debate&lt;/a&gt; about Ruy gems and how to integrate them cleanly into the operating system.&lt;/p&gt;
+
+&lt;p&gt;Let’s put aside the fact such tools are useful on Windows and MacOS which don’t have decent packaging systems. This is not a reason to dictate stupid requirements for other operating systems. Still, even without that, gems, eggs and the like are great tools for development; tools that developers can’t work without today. They allow to easily setup a development environment with everything needed, at the latest versions. However they were not meant for integration and production environments, and will never be suitable for them. We’re living in another world indeed: a world where servers must be up 24/7, where security issues flood your inbox every day, where you need dozens of servers running the very same software. This world is the Earth.&lt;/p&gt;
+
+&lt;p&gt;Python eggs and Ruby gems were designed for the same target audience and with similar requirements; as such, they share the same deficiencies when it comes to other audiences:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;They replace the operating system’s packaging tool. This is very nice to not wait for the packagers when you want the latest development version, but you lose track of what is actually installed. In production, you need to know exactly what’s installed and at what version. You also need to know what you will need to update in case of a security issue.&lt;/li&gt;
+&lt;li&gt;They install packages automatically on the system. This is really the biggest WTF; there are some reasons to do that to begin with, but they are all wrong.&lt;/li&gt;
+&lt;li&gt;They use a specific file format. This requirement comes mostly from the Windows world, and it really makes no sense on Unix. It makes it much harder to integrate complex applications using components in different languages.&lt;/li&gt;
+&lt;li&gt;They ship all files at the same place, happily violating the FHS and making it even harder to integrate with other things.&lt;/li&gt;
+&lt;/ol&gt;
+ 
+&lt;p&gt;Python tools (setuptools and easy_install) have shifted their philosophy and brought a few small improvements which allow us to easily work around issues 1-3. These tools now include all you need to build a development environment in any  directory that will not have an impact on the system packaging, making a clear distinction between the two targets. Furthermore, the metadata is shipped separately and can safely be included in a distribution package. Similarly, modules will not be installed automatically on your system. I have yet to see such a move from Ruby developers.&lt;/p&gt;
+
+&lt;p&gt;However, what we are still missing is something along the lines of &lt;a href=&quot;http://packages.debian.org/unstable/dh-make-perl&quot;&gt;dh_make_perl&lt;/a&gt;: starting from a CPAN module, it will generate a clean and working Debian package in a few minutes. There have been some similar attempts for Python, but nothing as efficient. And I am certainly guilty of not having done something in this area, as one of the most knowledgeable of issues we encounter while packaging Python modules.&lt;/p&gt;
+
+&lt;p&gt;As a note, I should add the underlying issue behind all of this is still the same: the &lt;a href=&quot;http://en.wikipedia.org/wiki/Not_Invented_Here&quot;&gt;NIH syndrome&lt;/a&gt;. Developers are reinventing the wheel, engine and transmission. Which is not that bad per se, but by not looking at existing solutions for the problem of making a car move, they are inventing a square wheel, a steam-powered engine and a superconductor-powered magnetic transmission. For example, while trying to fix the 4th of items listed earlier – and they are really willing to fix it – and several more general issues, setuptools developers forgot to look at the existing solutions:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;API versioning in &lt;tt&gt;/usr/include/&lt;i&gt;package&lt;/i&gt;-&lt;i&gt;X.Y&lt;/i&gt;&lt;/tt&gt;&lt;/li&gt;
+&lt;li&gt;ABI versioning of libraries&lt;/li&gt;
+&lt;li&gt;Build/install-time requirements gathering using an extensible format with pkg-config&lt;/li&gt;
+&lt;li&gt;Automated generation of &lt;tt&gt;config.h&lt;/tt&gt; containing all system-specific macros (including paths), with autoconf&lt;/li&gt;
+&lt;li&gt;The Mono &lt;a href=&quot;http://www.mono-project.com/Assemblies_and_the_GAC&quot;&gt;Global assembly cache&lt;/a&gt; which solves some of the specific issues of interpreted languages&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Certainly, the existing tools are everything but perfect, and not necessarily suitable for Ruby and Python, but some of the design ideas behind them are clearly the good solutions to some of the issues of software development and integration. Adapting these ideas to radically different languages is going to take more time than just throwing other layers of &lt;a href=&quot;http://mail.python.org/pipermail/distutils-sig/2008-October/010317.html&quot;&gt;symlink farms&lt;/a&gt;.&lt;/p&gt;</description>
+	<pubDate>Tue, 09 Dec 2008 11:47:34 +0000</pubDate>
+</item>
+<item>
+	<title>Wouter Verhelst: Rails: followup</title>
+	<guid>http://www.grep.be/blog/en/computer/cluebat/rails_followup</guid>
+	<link>http://www.grep.be/blog/en/computer/cluebat/rails_followup</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/wouter3.png&quot; width=&quot;85&quot; height=&quot;80&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;I received quite some comments on my rant about &lt;a href=&quot;http://grep.be/blog/en/computer/cluebat/rails_stay_away?show_comments=yes&quot;&gt;Ruby
+on Rails&lt;/a&gt; a few days ago; I guess I must have received some inbound
+link on a ruby-fanboy-website or some such. Most of it is just bashing
+me since, I'll admit, my post wasn't very constructive (and which
+according to my policy of only blocking spammers I've not moderated
+away), some of it just posits another opinion about packaging (which is
+valid), and one Eric Anderson gave a good and constructive set of
+arguments that I just &lt;em&gt;have&lt;/em&gt; to reply to.&lt;/p&gt;
+&lt;p&gt;First of all, yes, I hate RubyGems more than I hate Ruby on Rails.
+However, Ruby on Rails is the major success story in the Ruby community,
+and the main reason why people use that language; it's not unfair to say
+that I won't use RoR because of RubyGems. But perhaps I should've been
+clearer.&lt;/p&gt;
+&lt;p&gt;Anyway.&lt;/p&gt;
+&lt;p&gt;Eric mentions that RubyGems &quot;solves two problems that other packaging
+systems are not addressing&quot;: the ability to install two versions of the
+same library, and the ability to install a single package on multiple
+operating systems. Well, first of all, the latter one simply is not
+true. There's CPAN.pm, which does much the same thing as RubyGems; but
+much of CPAN can be easily turned into a Debian (or RPM, or whatnot)
+package. The few cases where it can't, you're usually dealing with a
+broken CPAN package, anyway. There are similar things for Python (egg),
+and, heck, even TeX (CTAN). The fact that other scripting languages have
+proper and working packaging systems only outlines that there really
+isn't an excuse for the horrors of RubyGems.&lt;/p&gt;
+&lt;p&gt;Second, the fact that you even &lt;em&gt;need&lt;/em&gt; to be able to install
+multiple versions of a library really shows that there's a problem with
+your development ecosystem. C, Perl, and Python programmers are used to
+stable APIs, and prefer not to change their APIs all that much. Most
+packaging systems reflect that preference, and deal with incompatible
+API changes the way they should: as the exception, rather than the rule.
+The people in the Ruby ecosystem clearly have a different opinion on
+that, which probably results in the difference in packaging system
+requirements. Personally, I prefer the non-Ruby way&amp;mdash;I'll leave the
+discussion about &quot;what happens when you need to do an urgent security
+update of one of your libraries but the API has changed three times
+since you last looked at it and now the library update breaks your
+application&quot; as an excercise to the reader.&lt;/p&gt;
+&lt;p&gt;In closing, I'd like to reply to this one sentence that Eric put in
+his comment:&lt;/p&gt;
+&lt;blockquote&gt;And of course there is no reason software cannot start as a
+gem (for people close to the ruby community) but as it's popularity
+increases packages can be created that are more tightly integrated into
+the native package manager.&lt;/blockquote&gt;
+&lt;p&gt;Well, in an ideal world, he'd be right: there would be no reason.
+Unfortunately, in the RubyGems world&amp;mdash;which is far, &lt;em&gt;far&lt;/em&gt;
+away from an ideal world&amp;mdash;the fact is that packaging RubyGems in a
+sane way so that they'll integrate with the rest of a Debian system is
+simply impossible. You simply &lt;em&gt;cannot&lt;/em&gt; currently go from a gem
+and create a package out of that, because of how gems are done. That,
+more than anything, was what I was objecting to.&lt;/p&gt;
+&lt;p&gt;I can understand that many Ruby developers do not care about this
+much; that they are used to RubyGems, and that they can geet anything
+they need using that system. However, they should understand that
+different people have different preferences, and that packages for
+systems other than RubyGems is going to be necessary if their software
+is to become popular beyond the select set of people who care enough
+about Ruby. I personally know of plenty of people (myself included) who
+prefer things to be installed as operating-system level packages on the
+Linux systems they install; and even if it's not your personal
+preference to do things that way, you should at the very least not stand
+in the way of those who do.&lt;/p&gt;</description>
+	<pubDate>Tue, 09 Dec 2008 10:32:00 +0000</pubDate>
+</item>
+<item>
+	<title>Wouter Verhelst: &quot;Going to FOSDEM&quot;</title>
+	<guid>http://www.grep.be/blog/en/computer/debian/going_to_fosdem</guid>
+	<link>http://www.grep.be/blog/en/computer/debian/going_to_fosdem</link>
+    <description>&lt;img src=&quot;http://planet.debian.org/heads/wouter3.png&quot; width=&quot;85&quot; height=&quot;80&quot; alt=&quot;&quot; align=&quot;right&quot; style=&quot;float: right;&quot;&gt;&lt;p&gt;&lt;a href=&quot;http://planet.debian.org&quot;&gt;Planet Debian&lt;/a&gt; is currently
+plastered with this &quot;I'm going to FOSDEM&quot; banner that the FOSDEM people
+have created. That's great; it means I'll be seeing lots of people there
+the first weekend of February. I'd put it here, too, but I'm lazy, and
+people know I'll be there&amp;mdash;I'm doing th Debian devroom. So just
+assume a blue banner here.&lt;/p&gt;
+&lt;p&gt;What I'm not seeing, however, is talk submissions. So far 5 people
+have expressed interest in giving a talk, and two have made a definite
+commitment. That's not enough! I'll probably be sending out second a
+Call for Talks if I don't get enough submissions by next weekend, but
+for now, let me give people a list of talk titles I'd &lt;em&gt;like&lt;/em&gt; to
+see in the DevRoom but that haven't been submitted yet:&lt;/p&gt;
+&lt;ul&gt;&lt;li&gt;The Lenny release cycle: the release team's view&lt;/li&gt;
+&lt;li&gt;New stuff from the Debian-CD team. (Not only would that be
+interesting, I also owe them that much after my messup two years
+ago.)&lt;/li&gt;
+&lt;li&gt;Booting Debian everywhere: the live-CD tools.&lt;/li&gt;
+&lt;li&gt;Doing Another Katie: the dak rewrite.&lt;/li&gt;
+&lt;li&gt;Debian on the EeePC&lt;/li&gt;
+&lt;li&gt;...or, well, anything people can come up with, really.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;People, above all, please remember that FOSDEM is less than two
+months from now. Usually I can (and do) send the CfT about four months
+before the actual event, but circumstances have forced us in this
+position now. If you want to have an interesting Devroom, I need talks,
+and I need them sooner rather than later. See my &lt;a href=&quot;http://lists.debian.org/debian-devel-announce/2008/12/msg00001.html&quot;&gt;CfT&lt;/a&gt;
+for details.&lt;/p&gt;</description>
+	<pubDate>Tue, 09 Dec 2008 08:36:00 +0000</pubDate>
+</item>
+
+</channel>
+</rss>

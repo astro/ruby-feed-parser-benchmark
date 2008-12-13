@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:admin="http://webns.net/mvcb/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns="http://purl.org/rss/1.0/">
+
+<channel rdf:about="http://znarf.h6e.net/blog/">
+  <title>Znarf Blog</title>
+  <description><![CDATA[]]></description>
+  <link>http://znarf.h6e.net/blog/</link>
+  <dc:language>fr</dc:language>
+  <dc:creator></dc:creator>
+  <dc:rights></dc:rights>
+  <dc:date>2008-09-12T15:14:24+02:00</dc:date>
+  <admin:generatorAgent rdf:resource="http://www.dotclear.net/" />
+  
+  <sy:updatePeriod>daily</sy:updatePeriod>
+  <sy:updateFrequency>1</sy:updateFrequency>
+  <sy:updateBase>2008-09-12T15:14:24+02:00</sy:updateBase>
+  
+  <items>
+  <rdf:Seq>
+    <rdf:li rdf:resource="http://znarf.h6e.net/blog/?2008/09/12/478-m2" />
+  <rdf:li rdf:resource="http://znarf.h6e.net/blog/?2008/09/08/477-ta-web-app-dans-ton-dock" />
+  <rdf:li rdf:resource="http://znarf.h6e.net/blog/?2007/02/08/465-pimp-my-feed" />
+  <rdf:li rdf:resource="http://znarf.h6e.net/blog/?2007/02/07/464-y-a-plus-de-saison" />
+  <rdf:li rdf:resource="http://znarf.h6e.net/blog/?2007/01/31/463-disable-snap-preview" />
+  <rdf:li rdf:resource="http://znarf.h6e.net/blog/?2007/01/30/462-mootools-1" />
+  <rdf:li rdf:resource="http://znarf.h6e.net/blog/?2006/12/13/461-tvp" />
+  <rdf:li rdf:resource="http://znarf.h6e.net/blog/?2006/12/12/458-d-weinberger-on-mr-sarkozy" />
+  <rdf:li rdf:resource="http://znarf.h6e.net/blog/?2006/11/22/457-the-day-soap-died" />
+  <rdf:li rdf:resource="http://znarf.h6e.net/blog/?2006/07/19/356-gravatar-bahhh-favatar-beeuuuhhh-pavatar-miam" />
+  </rdf:Seq>
+  </items>
+</channel>
+
+<item rdf:about="http://znarf.h6e.net/blog/?2008/09/12/478-m2">
+  <title>M2</title>
+  <link>http://znarf.h6e.net/blog/?2008/09/12/478-m2</link>
+  <dc:date>2008-09-12T15:14:24+02:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>znarf</dc:creator>
+  <dc:subject>blogmarks.net</dc:subject>
+  <description>En guise d'introduction, Ma.gnolia est un service de social bookmarking similaire à blogmarks.net.
+
+
+Ma.gnolia a fait une annonce intéressante le mois dernier avec leur projet M2, un ensemble de choses résumé dans un document de 12 pages (PDF). Le projet central est une mise à disposition de...</description>
+  <content:encoded><![CDATA[ <p><em>En guise d'introduction, <a href="http://ma.gnolia.com/">Ma.gnolia</a> est un service de <a href="http://en.wikipedia.org/wiki/Social_bookmarking">social bookmarking</a> similaire à <a href="http://blogmarks.net/">blogmarks.net</a>.</em></p>
+
+
+<p>Ma.gnolia a fait <a href="http://ma.gnolia.com/blog/2008/08/22/the-open-road-ahead">une annonce intéressante</a> le mois dernier avec leur projet <a href="http://ma.gnolia.org/">M2</a>, un ensemble de choses résumé dans <a href="http://ma.gnolia.org/docs/M2_Charter.pdf">un document de 12 pages</a> (PDF). Le projet central est une mise à disposition de leurs applications sous une licence <em>Open Source</em>, dans une démarche visant à promouvoir l<em>'Open Web</em>.</p>
+
+
+<p>Un des mots clés est <strong>décentralisation</strong>, ce projet donnera à chacun la possibilité d'installer sur son propre serveur une instance de l'application Ma.gnolia, ou plus simplement d'en créer une sur les serveurs de Ma.gnolia. L'autre est <strong>fédération</strong>, l'idée est que chacune de ces instances puissent communiquer ensemble et que leur informations puissent être agrégées en un point. Ma.gnolia prévoit pour cela de créer un projet parallèle, nommé Mo.thership, dont l'instance principale serait mise à disposition sur Ma.gnolia.net et agrégerait les données en provenance des différentes instances enregistrées.</p>
+
+
+<p>Dans leur situation et d'un point de vue stratégique, il me semble qu'ils n'avaient le choix qu'entre cette solution et mettre la clé sous la porte. Je dirais donc que c'est un bon choix :-) Mais comme ils le disent ou sous-entendent, il s'engagent ainsi dans une démarche risquée et n'ont actuellement pas forcément une idée précise de la masse de travail qui leur sera nécessaire et des défis auxquels ils seront confrontés.</p>
+
+
+<p>La fédération de services web multi-utilisateurs me semble une idée assez nouvelle. Je n'en vois pas d'exemple concret existant et il y a donc pas mal de choses à inventer, que ce soit dans l'expérience utilisateur que dans les protocoles ouverts permettant la fédération au niveau technique. Certes, des briques intéressantes, tel <a href="http://openid.net/">openID</a> ou <a href="http://oauth.net/">oAuth</a>, existent déjà, mais je pense que ce n'est pas gagné. Cela dit, c'est une initative à saluer, qui je l'espère aidera à faire murir les système de social bookmarking dans les prochaines années.</p>]]></content:encoded>
+</item>
+<item rdf:about="http://znarf.h6e.net/blog/?2008/09/08/477-ta-web-app-dans-ton-dock">
+  <title>Ta Web App dans ton Dock</title>
+  <link>http://znarf.h6e.net/blog/?2008/09/08/477-ta-web-app-dans-ton-dock</link>
+  <dc:date>2008-09-08T15:41:23+02:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>znarf</dc:creator>
+  <dc:subject>oh brother !</dc:subject>
+  <description>Un petit test de Google Chrome m'a fait prendre conscience de la réelle importance de ce qu'on appelle aujourd'hui un site specific browser, c'est à dire une application web dans un process séparé (tant au niveau UI qu'au niveau système).
+
+
+Dans le même temps, après 4 années de fidélité à...</description>
+  <content:encoded><![CDATA[ <p>Un petit test de <a href="http://www.google.com/chrome">Google Chrome</a> m'a fait prendre conscience de la réelle importance de ce qu'on appelle aujourd'hui un <a href="http://en.wikipedia.org/wiki/Site_Specific_Browser">site specific browser</a>, c'est à dire une application web dans un process séparé (tant au niveau <acronym title="Interface Utilisateur">UI</acronym> qu'au niveau système).</p>
+
+
+<p>Dans le même temps, après 4 années de fidélité à <a href="http://www.mozilla-europe.org/products/thunderbird/">Thunderbird</a> (en <a href="http://en.wikipedia.org/wiki/Internet_Message_Access_Protocol"><acronym title="Internet Message Access Protocol">IMAP</acronym></a>), je viens de passer à Gmail en tant que client email, vous noterez mon côté early adopter ;-) Convaincu depuis longtemps par la mort des classements sous forme d'arborescence avec <a href="http://blogmarks.net/">mon travail sur les bookmarks</a>, je me demande comment j'ai pu y résister si longtemps pour la gestion des emails.</p>
+
+
+<p>Passons, essayons donc Gmail en <acronym title="Site Specific Browser">SSB</acronym> ...</p>
+
+
+<p>Google Chrome n'étant malheureusement pas disponible pour Mac, j'ai commencé par essayer <a href="http://labs.mozilla.com/projects/prism/">Prism</a> de Mozilla. Le résultat est pour le moment peu convaincant, l'application ne se "docke" pas réellement, ce n'est qu'un raccourci ouvrant un process séparé avec l'icône et le nom "Firefox".</p>
+
+
+<p>En essayant <a href="http://fluidapp.com/">Fluid</a> (basé sur <a href="http://webkit.org/">Webkit</a>), c'est beaucoup mieux. En changeant la favicon par défaut pour <a href="http://interfacelift.com/icons-mac/details.php?id=1846">une un peu plus stylée</a>, c'est même complètement satisfaisant, Fluid supportant même, je ne sais comment, le compteur d'élément non lus dans le dock.</p>
+
+
+<p>En bonus, il semble que <a href="http://gears.google.com/">Gears</a> (un plugin pour navigateurs permettant notamment une gestion du offline) fonctionne <a href="http://groups.google.com/group/fluidapp/browse_thread/thread/3bfd3bb66cdc23ef">depuis peu</a> avec Fluid, mais dans le cas présent (Gmail), ça ne sert pour le moment à rien.</p>]]></content:encoded>
+</item>
+<item rdf:about="http://znarf.h6e.net/blog/?2007/02/08/465-pimp-my-feed">
+  <title>Pimp My Feed</title>
+  <link>http://znarf.h6e.net/blog/?2007/02/08/465-pimp-my-feed</link>
+  <dc:date>2007-02-08T19:53:37+01:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>znarf</dc:creator>
+  <dc:subject>system:unfiled</dc:subject>
+  <description>Yahoo a sorti un outil paraît-il excitant avec Yahoo Pipe aujourd'hui :
+
+
+Tim O'Reilly : This is a milestone in the history of the internet
+Anil Dash : It's innovative, exciting, and well-done
+Nial Kennedy : Yahoo! Pipes remixes the syndicated web
+
+
+Ayant eu la flemme, puis pas...</description>
+  <content:encoded><![CDATA[ <p>Yahoo a sorti un outil paraît-il excitant avec Yahoo Pipe aujourd'hui&nbsp;:</p>
+
+<ul>
+<li>Tim O'Reilly&nbsp;: <a href="http://radar.oreilly.com/archives/2007/02/pipes_and_filte.html">This is a milestone in the history of the internet</a></li>
+<li>Anil Dash&nbsp;: <a href="http://www.dashes.com/anil/2007/02/08/yahoo_pipes">It's innovative, exciting, and well-done</a></li>
+<li>Nial Kennedy&nbsp;: <a href="http://www.niallkennedy.com/blog/archives/2007/02/yahoo-pipes.html">Yahoo! Pipes remixes the syndicated web</a></li>
+</ul>
+
+<p>Ayant eu la flemme, puis pas le temps, d'ouvrir un Yahoo ID, non pas que je pense que c'est encore un truc <a href="http://uselessaccount.com/">inutile</a>, et sans que vous y voyez un signe de <a href="http://www.flickr.com/forums/help/32687/">protestation</a> quelconque, je n'en dirais rien.</p>]]></content:encoded>
+</item>
+<item rdf:about="http://znarf.h6e.net/blog/?2007/02/07/464-y-a-plus-de-saison">
+  <title>Y'a plus de saison ...</title>
+  <link>http://znarf.h6e.net/blog/?2007/02/07/464-y-a-plus-de-saison</link>
+  <dc:date>2007-02-07T03:16:35+01:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>znarf</dc:creator>
+  <dc:subject>system:unfiled</dc:subject>
+  <description>Steve Jobs annonce qu'il est anti DRM
+Bill Gates annonce que Microsoft supportera OpenID...</description>
+  <content:encoded><![CDATA[ <ul>
+<li><a href="http://www.apple.com/hotnews/thoughtsonmusic/">Steve Jobs annonce qu'il est anti DRM</a></li>
+<li><a href="http://brad.livejournal.com/2287909.html">Bill Gates annonce que Microsoft supportera OpenID</a></li>
+</ul>]]></content:encoded>
+</item>
+<item rdf:about="http://znarf.h6e.net/blog/?2007/01/31/463-disable-snap-preview">
+  <title>Disable Snap Preview !</title>
+  <link>http://znarf.h6e.net/blog/?2007/01/31/463-disable-snap-preview</link>
+  <dc:date>2007-01-31T12:20:32+01:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>znarf</dc:creator>
+  <dc:subject>system:unfiled</dc:subject>
+  <description>Le fabuleux Snap Preview Anywhere qu'on voit fleurir un peu partout ne semble pas plaire à tout le monde : 3 Reasons Why Snap Preview is Ruining Your Blog, and Hurting Your Readership.
+
+
+Click-here to ''Disable Those Incredibly Annoying ‘Snap’ Previews'' (via Kottke)...</description>
+  <content:encoded><![CDATA[ <p>Le fabuleux <a href="http://www.snap.com/about/spa1A.php">Snap Preview Anywhere</a> qu'on voit fleurir un peu partout ne semble pas plaire à tout le monde&nbsp;: <a href="http://performancing.com/node/5721">3 Reasons Why Snap Preview is Ruining Your Blog, and Hurting Your Readership</a>.</p>
+
+<ul>
+<li><a href="http://www.snap.com/about/spa_faq.php?disable_spa=1#2">Click-here to ''Disable Those Incredibly Annoying &#8216;Snap&#8217; Previews''</a> (<a href="http://www.kottke.org/remainder/07/01/12687.html">via Kottke</a>)</li>
+</ul>]]></content:encoded>
+</item>
+<item rdf:about="http://znarf.h6e.net/blog/?2007/01/30/462-mootools-1">
+  <title>Mootools 1</title>
+  <link>http://znarf.h6e.net/blog/?2007/01/30/462-mootools-1</link>
+  <dc:date>2007-01-30T00:04:15+01:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>znarf</dc:creator>
+  <dc:subject>javascripteries</dc:subject>
+  <description>Après plusieurs mois de développement, la librairie javascript mootools arrive enfin en version 1 mondiale officielle.
+
+
+Si vous pensez que prototype.js c'est pour les railers, que dojo c'est bloated, que les jquery fan boys vous gonflent avec leur "codes magiques en 1 ligne", jetez-y un...</description>
+  <content:encoded><![CDATA[ <p>Après plusieurs mois de développement, la librairie javascript <a href="http://mootools.net/">mootools</a> arrive enfin en version 1 mondiale officielle.</p>
+
+
+<p>Si vous pensez que <a href="http://www.prototypejs.org/">prototype.js</a> c'est pour les railers, que <a href="http://dojotoolkit.org/">dojo</a> c'est bloated, que les <a href="http://jquery.com/">jquery</a> fan boys vous gonflent avec leur "codes magiques en 1 ligne", jetez-y un oeil&nbsp;!</p>
+
+
+<p>C'est frais, lisible, bien documenté et ça ne mord pas.</p>]]></content:encoded>
+</item>
+<item rdf:about="http://znarf.h6e.net/blog/?2006/12/13/461-tvp">
+  <title>TVP</title>
+  <link>http://znarf.h6e.net/blog/?2006/12/13/461-tvp</link>
+  <dc:date>2006-12-13T14:07:25+01:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>znarf</dc:creator>
+  <dc:subject>system:unfiled</dc:subject>
+  <description>The Venice Project a lancé sa première béta hier soir, le système d'invitation n'est pas arrivé jusqu'à moi, je n'ai pu voir le truc.
+
+
+Fondé par le couple derrière Kazaa et Skype, amorcé dans le secret, c'est un projet très ambitieux de système de télévision sur internet. Développé...</description>
+  <content:encoded><![CDATA[ <p><a href="http://www.theveniceproject.com/" hreflang="en">The Venice Project</a> a lancé sa première béta hier soir, le système d'invitation n'est pas arrivé jusqu'à moi, je n'ai pu voir le truc.</p>
+
+
+<p>Fondé par le couple derrière Kazaa et Skype, amorcé dans le secret, c'est un projet très ambitieux de système de télévision sur internet. Développé par une équipe d'une centaine de personne, ils semblent promouvoir les standards ouverts (bizarre pour les gens derrière Skype) et batissent le système sur des briques open source dont Mozilla (il semble qu'ils ont d'ailleurs <a href="http://www.croczilla.com/blog/9" hreflang="en">quelques nouveaux trucs</a> à donner à la mofo)</p>
+
+
+<p>Le challenge est très intéressant car un jour ou l'autre la télévision telle qu'on la connaît va exploser pour passer sur un système tout IP mélangeant VOD et Streaming. L'audience télé va donc se retrouver complètement fragmentée, devenant ainsi beaucoup plus proche de l'audience telle qu'on la connaît sur le web. On peut déjà voir quelques pièces du puzzle&nbsp;: Tivo aux US, la télé sur IP telle que la pratique les FAI ADSL français, le succès des séries américaines sur Bittorent &amp; Emule, Youtube ou Dailymotion en tant que plate-forme de distribution en ligne, Apple et Microsoft qui se placent gentillement sur le marché, et maintenant TVP. Il n'y'a plus qu'à secouer et assembler.</p>
+
+
+<p>Il y'a des places à prendre maintenant, en attendant l'explosion qui viendra un jour (mais peut-être pas tout de suite). C'est ce qu'à fait Google en achetant Youtube, c'est ce que fait The Venice Project en se lançant aujourd'hui. Côté intéressant pour eux, ils ont des fondateurs charismatiques aux poches pleines.</p>
+
+<ul>
+<li><a href="http://gigaom.com/2006/12/12/venice-project-letting-in-beta-testers/" hreflang="en">Venice Project Letting in Beta Testers</a></li>
+</ul>]]></content:encoded>
+</item>
+<item rdf:about="http://znarf.h6e.net/blog/?2006/12/12/458-d-weinberger-on-mr-sarkozy">
+  <title>D. Weinberger on Mr Sarkozy</title>
+  <link>http://znarf.h6e.net/blog/?2006/12/12/458-d-weinberger-on-mr-sarkozy</link>
+  <dc:date>2006-12-12T19:02:05+01:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>znarf</dc:creator>
+  <dc:subject>system:unfiled</dc:subject>
+  <description>I feel like i've been lectured by a guy who has no actual understanding of the Internet. I don't know about French politics, but personally, I sort of hated him. #
+
+
+via Tom Morris, enjoy !...</description>
+  <content:encoded><![CDATA[ <blockquote><p>I feel like i've been lectured by a guy who has no actual understanding of the Internet. I don't know about French politics, but personally, I sort of hated him. <a href="http://www.hyperorg.com/blogger/mtarchive/leweb_sarkousi_conservative_ca.html" hreflang="en">#</a></p></blockquote>
+
+
+<p>via <a href="http://blogs.opml.org/tommorris/2006/12/12" hreflang="en">Tom Morris</a>, enjoy&nbsp;!</p>]]></content:encoded>
+</item>
+<item rdf:about="http://znarf.h6e.net/blog/?2006/11/22/457-the-day-soap-died">
+  <title>The day SOAP died</title>
+  <link>http://znarf.h6e.net/blog/?2006/11/22/457-the-day-soap-died</link>
+  <dc:date>2006-11-22T11:16:28+01:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>znarf</dc:creator>
+  <dc:subject>RESTafarian</dc:subject>
+  <description>The S stands for Simple
+Why SOAP sucks
+The H stands for Hyper...</description>
+  <content:encoded><![CDATA[ <ul>
+<li><a href="http://wanderingbarque.com/nonintersecting/2006/11/15/the-s-stands-for-simple/">The S stands for Simple</a></li>
+<li><a href="http://www.somebits.com/weblog/tech/bad/whySoapSucks.html">Why SOAP sucks</a></li>
+<li><a href="http://www.intertwingly.net/blog/2006/11/17/The-H-stands-for-Hyper">The H stands for Hyper</a></li>
+</ul>]]></content:encoded>
+</item>
+<item rdf:about="http://znarf.h6e.net/blog/?2006/07/19/356-gravatar-bahhh-favatar-beeuuuhhh-pavatar-miam">
+  <title>Gravatar ? Bof ... Favatar ? Bahh ... Pavatar ? Miam !</title>
+  <link>http://znarf.h6e.net/blog/?2006/07/19/356-gravatar-bahhh-favatar-beeuuuhhh-pavatar-miam</link>
+  <dc:date>2006-07-19T14:17:07+02:00</dc:date>
+  <dc:language>fr</dc:language>
+  <dc:creator>znarf</dc:creator>
+  <dc:subject>system:unfiled</dc:subject>
+  <description>Qu'on aime ou qu'on n'aime pas les avatars, il se trouve qu'ils deviennent de plus en plus utilisés et qu'une solution décente pour gérer son identité visuelle numérique est de plus en plus nécessaire.</description>
+  <content:encoded><![CDATA[<p>Qu'on aime ou qu'on n'aime pas les avatars, il se trouve qu'ils deviennent de plus en plus utilisés et qu'une solution décente pour gérer son identité visuelle numérique est de plus en plus nécessaire.</p> <p>Pour faire un peu l'état des lieux&nbsp;:</p>
+
+<ul>
+<li>Au début l'idée était d'ajouter sur chaque site son image en l'y uploadant ou en fournissant une URL absolue. La première solution n'est pas géniale car cela force à mettre à jour son image sur chaque site si l'on se décide à changer son identité. La deuxième est en fait pas trop mal mais manque un peu d'élégance, d'auto-découverte.</li>
+</ul>
+<ul>
+<li>Ensuite est arrivé le service gravatar.com, il se propose d'associer par le biais de sa très légère API votre adresse email avec une image. On se crée un compte, on charge son image sur leur serveur et une fois qu'elle est approuvée (gravatar.com note manuellement les images potentiellement dérangeantes) c'est bon. Le problème de cette solution est la confiance en un serveur central, par exemple le site était en panne toute la journée d'hier, bof.</li>
+</ul>
+
+<p>A aujourd'hui, sur Blogmarks.net, nous proposons aux utilisateurs d'entrer une URL absolue vers une image ou leur adresse email pour générer un gravatar.</p>
+
+
+<p>Que peut-on faire de mieux&nbsp;?</p>
+
+
+<p><a href="http://www.svay.com/blog/index/2006/07/17/402-mise-en-uvre-des-favatars">Mauriz parlait hier de son implémentation de la solution dite des Favatars</a>. L'utilisateur entre son adresse web, puis le système va chercher l'image favicon.ico qui correspond. Je n'aime pas cette solution pour deux raisons&nbsp;:</p>
+
+<ul>
+<li>on ne doit pas encourager la "pèche" aux informations. robots.txt, favicon.ico, sitemaps.xml, par exemple, sont dans le principe très simple mais ne devraient pas exister en premier recours, on doit absolument encourager des principes d'auto-découverte plus évolués.</li>
+<li>les favatars détournent les favicons de leur but, le format .ico est plutôt un mauvais choix pour inclure dans une page web, et on risque de se retrouver avec des favicons de 80x80, bahh ...</li>
+</ul>
+
+<p>Alors qu'ai-je à proposer me direz-vous&nbsp;? Je ne vais pas aller bien loin, juste pointer sur une spécification sur laquelle je suis tombée il y'a quelques temps&nbsp;: les <a href="http://pavatar.com/">Pavatars</a>&nbsp;!</p>
+
+
+<p><a href="http://pavatar.com/spec/">La spécification</a> est un modèle du genre. Elle propose en premier lieu des solutions élégantes à base d'auto-déouverte mais autorise quand même en dernier lieu la "pèche" aux <em>pavatar.png</em>. Citation&nbsp;:</p>
+
+
+<blockquote><p>1. For geeks: add the X-Pavatar: http://example.com/path/my-pavatar.png  header to your homepage.<br />
+2. For webmasters: add the &lt;link rel="pavatar" href="http://example.com/path/my-pavatar.png" /&gt; tag to your HTML.<br />
+3. For others: Upload your Pavatar with the name pavatar.png to your homepage.</p></blockquote>
+
+
+<p>Quand j'aurais un peu de temps, je supporterais les pavatars du côté de Blogmarks.net, en continuant à supporter les URLs absolues, les gravatars et même éventuellement ajouter le support des favatars, on ne sait jamais.</p>
+
+
+<p>La gestion de l'identité numérique est un vrai problème émergeant. Il y'a eu déjà de belles choses de faites cette année, il y'a beaucoup à faire.</p>]]></content:encoded>
+</item>
+
+</rdf:RDF>

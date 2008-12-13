@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:media="http://search.yahoo.com/mrss/"
+	>
+
+<channel>
+	<title>Goat at Large</title>
+	<atom:link href="http://smokinggoat.wordpress.com/feed/" rel="self" type="application/rss+xml" />
+	<link>http://smokinggoat.wordpress.com</link>
+	<description>Drupal.  Mapovino.  Wine.  Mostly?</description>
+	<pubDate>Tue, 09 Dec 2008 17:28:11 +0000</pubDate>
+	<generator>http://wordpress.org/?v=MU</generator>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+			<item>
+		<title>Max allowed packet problem with MAMP</title>
+		<link>http://smokinggoat.wordpress.com/2008/12/09/max-allowed-packet-problem-with-mamp/</link>
+		<comments>http://smokinggoat.wordpress.com/2008/12/09/max-allowed-packet-problem-with-mamp/#comments</comments>
+		<pubDate>Tue, 09 Dec 2008 17:28:00 +0000</pubDate>
+		<dc:creator>smokinggoat</dc:creator>
+		
+		<category><![CDATA[Drupal]]></category>
+
+		<category><![CDATA[how-tos]]></category>
+
+		<category><![CDATA[mysql]]></category>
+
+		<guid isPermaLink="false">http://smokinggoat.wordpress.com/2008/12/09/max-allowed-packet-problem-with-mamp/</guid>
+		<description><![CDATA[Holy crud - that took a while to figure out.&#160; I was trying to work locally on a project, and kept running into the &#8220;max_allowed_packets&#8221; error when importing the database (I was using PHPMyAdmin, but this comes up elsewhere too).&#160; I knew that the default was 1M, but I had a hard time figuring out [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p>Holy crud - that took a while to figure out.&nbsp; I was trying to work locally on a project, and kept running into the &#8220;max_allowed_packets&#8221; error when importing the database (I was using PHPMyAdmin, but this comes up elsewhere too).&nbsp; I knew that the default was 1M, but I had a hard time figuring out where to change this number.</p>
+<p>It took me a while and a lot of attempts at difference solutions to find the answer - presented to me in a forum.&nbsp; The key is to replicate the original MySQL conf file (which MAMP apparently removes) with a larger max.</p>
+<p>Quoted below (from &#8220;weotch&#8221;) in case the link ever rots, but <a href="http://forum.webedition.de/phpBB/viewtopic.php?f=2&amp;t=6306&amp;p=12075#p12075">here is the original</a>:<br />
+<blockquote>&#8220;Ok, I think I found my answer. I copied<br />
+/Applications/MAMP/Library/share/mysql/my-small.cnf to<br />
+/Applications/MAMP/db/mysql/my.cnf (notice that I renamed it). Then I<br />
+tweaked the settings I needed to in it and restarted MAMP. Golden!&#8221;</p></blockquote>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/smokinggoat.wordpress.com/193/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/smokinggoat.wordpress.com/193/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/smokinggoat.wordpress.com/193/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/smokinggoat.wordpress.com/193/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/smokinggoat.wordpress.com/193/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/smokinggoat.wordpress.com/193/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/smokinggoat.wordpress.com/193/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/smokinggoat.wordpress.com/193/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/smokinggoat.wordpress.com/193/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/smokinggoat.wordpress.com/193/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=smokinggoat.wordpress.com&blog=250980&post=193&subd=smokinggoat&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://smokinggoat.wordpress.com/2008/12/09/max-allowed-packet-problem-with-mamp/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/cc497821d36a2b1fe0bdfb2946963996?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">smokinggoat</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Special mobile session of the SF Drupal Users Group</title>
+		<link>http://smokinggoat.wordpress.com/2008/11/04/special-mobile-session-of-the-sf-drupal-users-group/</link>
+		<comments>http://smokinggoat.wordpress.com/2008/11/04/special-mobile-session-of-the-sf-drupal-users-group/#comments</comments>
+		<pubDate>Tue, 04 Nov 2008 23:58:27 +0000</pubDate>
+		<dc:creator>smokinggoat</dc:creator>
+		
+		<category><![CDATA[AF83]]></category>
+
+		<category><![CDATA[Drupal]]></category>
+
+		<category><![CDATA[mobile]]></category>
+
+		<guid isPermaLink="false">http://smokinggoat.wordpress.com/2008/11/04/special-mobile-session-of-the-sf-drupal-users-group/</guid>
+		<description><![CDATA[This one is close to my heart - a special SF Drupal Users Group next Monday focusing on mobile integration with Drupal sites.
+Please join us on Monday, Nov 10th at PariSoMa for a special mobile-focused San Francisco Drupal Users Group meeting.
+Mark Burdett will give an overview of a project he is working on that integrates [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p>This one is close to my heart - a special SF Drupal Users Group next Monday focusing on mobile integration with Drupal sites.</p>
+<p>Please join us on Monday, Nov 10th at PariSoMa for a special mobile-focused San Francisco Drupal Users Group meeting.</p>
+<p>Mark Burdett will give an overview of a project he is working on that integrates mobile functionality with a Drupal site:</p>
+<ul>
+<li>Register by phone</li>
+<li>Post by phone</li>
+<li>SMS alerts (covering the basics)</li>
+</ul>
+<p>Maurice Carron will then give us a showcase of another site he has worked on with similar and additional functionality:</p>
+<ul>
+<li>Content delivery (incl MMS)</li>
+<li>Compatible device source transcoding</li>
+<li>Wap theming</li>
+</ul>
+<p>As usual, beer and sodas for the first dozen or folks.<br /><a href="http://groups.drupal.org/node/16074#comment-56347"><br />SFDUG - Mobile integration on Drupal sites</a><br />Monday, Nov 10<br />6-8pm<br /><a href="http://www.parisoma.com">PariSoMa</a><br />1436 Howard St, at 10th</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/smokinggoat.wordpress.com/192/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/smokinggoat.wordpress.com/192/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/smokinggoat.wordpress.com/192/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/smokinggoat.wordpress.com/192/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/smokinggoat.wordpress.com/192/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/smokinggoat.wordpress.com/192/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/smokinggoat.wordpress.com/192/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/smokinggoat.wordpress.com/192/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/smokinggoat.wordpress.com/192/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/smokinggoat.wordpress.com/192/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=smokinggoat.wordpress.com&blog=250980&post=192&subd=smokinggoat&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://smokinggoat.wordpress.com/2008/11/04/special-mobile-session-of-the-sf-drupal-users-group/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/cc497821d36a2b1fe0bdfb2946963996?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">smokinggoat</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>MobileTech for Social Change</title>
+		<link>http://smokinggoat.wordpress.com/2008/10/27/mobiletech-for-social-change/</link>
+		<comments>http://smokinggoat.wordpress.com/2008/10/27/mobiletech-for-social-change/#comments</comments>
+		<pubDate>Mon, 27 Oct 2008 23:51:24 +0000</pubDate>
+		<dc:creator>smokinggoat</dc:creator>
+		
+		<category><![CDATA[mobile]]></category>
+
+		<category><![CDATA[nonprofit]]></category>
+
+		<category><![CDATA[nptech]]></category>
+
+		<category><![CDATA[technology]]></category>
+
+		<guid isPermaLink="false">http://smokinggoat.wordpress.com/2008/10/27/mobiletech-for-social-change/</guid>
+		<description><![CDATA[This looks to be an exciting barcamp - Mobile Tech for Social Change.&#160; I&#8217;m going, partly out of general interest (I&#8217;ve been fascinated by mobile technology for a while, particularly what the rest of the world is accomplishing ahead of the U.S.).&#160; I&#8217;m also going because I want to support the Openmoko movement.
+I&#8217;ll put aside [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p><img style="max-width:800px;float:right;margin-top:10px;margin-bottom:10px;margin-left:10px;" src="http://images.eventbrite.com/logos/148065869.png" height="106" width="189" />This looks to be an exciting barcamp - <a href="http://mobiletechforsocialchange.eventbrite.com/">Mobile Tech for Social Change</a>.&nbsp; I&#8217;m going, partly out of general interest (I&#8217;ve been fascinated by mobile technology for a while, particularly what the rest of the world is accomplishing ahead of the U.S.).&nbsp; I&#8217;m also going because I want to support the <a href="http://wiki.openmoko.org/wiki/Main_Page">Openmoko movement.</a></p>
+<p>I&#8217;ll put aside my raised eyebrows at&nbsp; $25 barcamp (it goes to food, apparently) - but the fact that there is no link to the <a href="http://barcamp.org/MobileTechForSocialChangeSanFrancisco">wiki</a> from the registration page is a little clunky.&nbsp; Get the real deal <a href="http://barcamp.org/MobileTechForSocialChangeSanFrancisco">at the wiki</a>.</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/smokinggoat.wordpress.com/190/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/smokinggoat.wordpress.com/190/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/smokinggoat.wordpress.com/190/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/smokinggoat.wordpress.com/190/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/smokinggoat.wordpress.com/190/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/smokinggoat.wordpress.com/190/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/smokinggoat.wordpress.com/190/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/smokinggoat.wordpress.com/190/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/smokinggoat.wordpress.com/190/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/smokinggoat.wordpress.com/190/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=smokinggoat.wordpress.com&blog=250980&post=190&subd=smokinggoat&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://smokinggoat.wordpress.com/2008/10/27/mobiletech-for-social-change/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/cc497821d36a2b1fe0bdfb2946963996?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">smokinggoat</media:title>
+		</media:content>
+
+		<media:content url="http://images.eventbrite.com/logos/148065869.png" medium="image" />
+	</item>
+		<item>
+		<title>And finally - No on Prop 8</title>
+		<link>http://smokinggoat.wordpress.com/2008/10/24/and-finally-no-on-prop-8/</link>
+		<comments>http://smokinggoat.wordpress.com/2008/10/24/and-finally-no-on-prop-8/#comments</comments>
+		<pubDate>Fri, 24 Oct 2008 16:39:34 +0000</pubDate>
+		<dc:creator>smokinggoat</dc:creator>
+		
+		<category><![CDATA[California]]></category>
+
+		<category><![CDATA[humanrights]]></category>
+
+		<guid isPermaLink="false">http://smokinggoat.wordpress.com/2008/10/24/and-finally-no-on-prop-8/</guid>
+		<description><![CDATA[I&#8217;ll end this tryptich of political-related posts with one near and dear to the SF heart of me.&#160; No on Prop 8 - its about basic human rights.&#160; 
+(Is this being covered over at EHHR?).&#160; 
+
+&#160;&#160;&#160;&#160;&#160;&#160;     ]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p><a href="http://www.noonprop8.com"><img style="max-width:800px;float:right;margin-top:10px;margin-bottom:10px;margin-left:10px;" src="http://smokinggoat.files.wordpress.com/2008/10/efa-logo.jpg" /></a>I&#8217;ll end this tryptich of political-related posts with one near and dear to the SF heart of me.&nbsp; <a href="http://www.noonprop8.com">No on Prop 8</a> - its about basic human rights.&nbsp; </p>
+<p>(Is this being covered over at <a href="http://smokinggoat.wordpress.com/2008/10/22/every-human-has-rights/">EHHR</a>?).&nbsp; </p>
+<p></p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/smokinggoat.wordpress.com/188/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/smokinggoat.wordpress.com/188/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/smokinggoat.wordpress.com/188/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/smokinggoat.wordpress.com/188/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/smokinggoat.wordpress.com/188/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/smokinggoat.wordpress.com/188/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/smokinggoat.wordpress.com/188/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/smokinggoat.wordpress.com/188/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/smokinggoat.wordpress.com/188/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/smokinggoat.wordpress.com/188/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=smokinggoat.wordpress.com&blog=250980&post=188&subd=smokinggoat&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://smokinggoat.wordpress.com/2008/10/24/and-finally-no-on-prop-8/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/cc497821d36a2b1fe0bdfb2946963996?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">smokinggoat</media:title>
+		</media:content>
+
+		<media:content url="http://smokinggoat.files.wordpress.com/2008/10/efa-logo.jpg" medium="image" />
+	</item>
+		<item>
+		<title>Some more politics</title>
+		<link>http://smokinggoat.wordpress.com/2008/10/23/some-more-politics/</link>
+		<comments>http://smokinggoat.wordpress.com/2008/10/23/some-more-politics/#comments</comments>
+		<pubDate>Thu, 23 Oct 2008 20:43:59 +0000</pubDate>
+		<dc:creator>smokinggoat</dc:creator>
+		
+		<category><![CDATA[culture]]></category>
+
+		<category><![CDATA[design]]></category>
+
+		<category><![CDATA[obama]]></category>
+
+		<guid isPermaLink="false">http://smokinggoat.wordpress.com/2008/10/23/some-more-politics/</guid>
+		<description><![CDATA[With the trend starting on yesterday&#8217;s post, I want to shill a little more for progressive politics.
+Our (very cool) coworking space is hosting an Obama Call Party this Sunday:
+Wondering what you can do to help in what might be the most important election of our lives? Come to the PariSoMa coworking space Sunday for a [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><div align="left"><a href="http://obeygiant.com/"><img style="max-width:800px;float:left;margin-top:10px;margin-bottom:10px;margin-right:10px;" src="http://www.popcultureshock.com/wp-content/uploads/2008/02/shepard-fairey_barack-hope.thumbnail.jpg" height="174" width="118" /></a>With the trend starting on yesterday&#8217;s post, I want to shill a little more for progressive politics.</div>
+<p>Our (very cool) coworking space is hosting an <a href="http://pol.moveon.org/event/events/event.html?event_id=81912">Obama Call Party</a> this Sunday:</p>
+<blockquote><p>Wondering what you can do to help in what might be the most important election of our lives? Come to the <a href="http://www.parisoma.com/contact">PariSoMa coworking space</a> Sunday for a few hours to make sure Barack has enough volunteers to counter the smears, and get voters to the polls in the critical swing states. <br /><b>NOTE:</b> We&#8217;re sorry, but this space is not handicap accessible; it&#8217;s one story up with no elevator.  </p>
+<p>All you need to bring is your cell phone; we&#8217;ll provide scripts and lists of voters to call. For extra kharma points, bring a snack or drinks to share with your fellow volunteers. Better yet, bring a few friends. But at least bring yourself!</p></blockquote>
+<p>Don&#8217;t think we need help in the swing states?&nbsp; Check out the the struggle on the ground in <a href="http://www.thisamericanlife.org/Radio_Episode.aspx?episode=367">next upcoming This American Life episode.</a></p>
+<p>Obama has a posse.&nbsp; And it&#8217;s US!</p>
+<p><a href="http://obeygiant.com/"><img style="max-width:800px;" src="http://obeygiant.com/blog/wp-content/uploads/2008/02/l_89b9fce380d40793c8fb6918729114e3.jpg" height="218" width="246" /></a></p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/smokinggoat.wordpress.com/185/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/smokinggoat.wordpress.com/185/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/smokinggoat.wordpress.com/185/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/smokinggoat.wordpress.com/185/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/smokinggoat.wordpress.com/185/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/smokinggoat.wordpress.com/185/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/smokinggoat.wordpress.com/185/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/smokinggoat.wordpress.com/185/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/smokinggoat.wordpress.com/185/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/smokinggoat.wordpress.com/185/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=smokinggoat.wordpress.com&blog=250980&post=185&subd=smokinggoat&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://smokinggoat.wordpress.com/2008/10/23/some-more-politics/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/cc497821d36a2b1fe0bdfb2946963996?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">smokinggoat</media:title>
+		</media:content>
+
+		<media:content url="http://www.popcultureshock.com/wp-content/uploads/2008/02/shepard-fairey_barack-hope.thumbnail.jpg" medium="image" />
+
+		<media:content url="http://obeygiant.com/blog/wp-content/uploads/2008/02/l_89b9fce380d40793c8fb6918729114e3.jpg" medium="image" />
+	</item>
+		<item>
+		<title>Every Human Has Rights</title>
+		<link>http://smokinggoat.wordpress.com/2008/10/22/every-human-has-rights/</link>
+		<comments>http://smokinggoat.wordpress.com/2008/10/22/every-human-has-rights/#comments</comments>
+		<pubDate>Thu, 23 Oct 2008 00:09:57 +0000</pubDate>
+		<dc:creator>smokinggoat</dc:creator>
+		
+		<category><![CDATA[AF83]]></category>
+
+		<category><![CDATA[humanrights]]></category>
+
+		<category><![CDATA[journalism]]></category>
+
+		<category><![CDATA[nonprofit]]></category>
+
+		<category><![CDATA[nptech]]></category>
+
+		<category><![CDATA[online communities]]></category>
+
+		<guid isPermaLink="false">http://smokinggoat.wordpress.com/2008/10/22/every-human-has-rights/</guid>
+		<description><![CDATA[We (AF83) are supporting Internews launch an international support campaign for the journalists who risk their lives every day to bring you news about the current state of human rights around the world.&#160; A people&#8217;s choice award (voting starts Nov 1st) will be given along with other media awards.
+Given we are supporting this campaign in [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p><a href="http://media-awards.everyhumanhasrights.org" title="Every Human Has Rights Media Awards"><img src="http://media-awards.everyhumanhasrights.org/files/images/EHHR-media-awards-120x240.gif" alt="Every Human Has Rights Media Awards" align="left" border="0" /></a>We (<a href="http://www.af83.com">AF83</a>) are supporting Internews launch an <a href="http://media-awards.everyhumanhasrights.org/">international support campaign</a> for the journalists who risk their lives every day to bring you news about the current state of human rights around the world.&nbsp; A people&#8217;s choice award (voting starts Nov 1st) will be given along with other media awards.</p>
+<p>Given we are supporting this campaign in a Web2.0 world, you can follow the progress of this campaign via our <a href="http://twitter.com/SixtyThirtyOne">Twitter feed</a>, through <a href="http://www.myspace.com/ehhra">MySpace</a>, and even on <a href="http://www.facebook.com/group.php?gid=86365100222">FaceBook</a> and <a href="http://www.care2.com/c2c/group/60301">Care2</a>.&nbsp; You can <a href="http://media-awards.everyhumanhasrights.org/en/content/spread-word">add a banner</a> to your site.</p>
+<p>Please join us in supporting human rights, and supporting the journalists who are on the ground every day, bringing us the news of the current state of human rights.</p>
+<p>(Having cut my tech teeth in the <a href="http://www.techsoup.org/">nonprofit world</a> for a decade, it&#8217;s good to be back in the realm of supporting social causes&#8230;.)</p>
+<p>Technorati Tags: <a class="performancingtags" href="http://technorati.com/tag/internews" rel="tag">internews</a>, <a class="performancingtags" href="http://technorati.com/tag/af83" rel="tag">af83</a>, <a class="performancingtags" href="http://technorati.com/tag/ehhr" rel="tag">ehhr</a></p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/smokinggoat.wordpress.com/183/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/smokinggoat.wordpress.com/183/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/smokinggoat.wordpress.com/183/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/smokinggoat.wordpress.com/183/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/smokinggoat.wordpress.com/183/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/smokinggoat.wordpress.com/183/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/smokinggoat.wordpress.com/183/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/smokinggoat.wordpress.com/183/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/smokinggoat.wordpress.com/183/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/smokinggoat.wordpress.com/183/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=smokinggoat.wordpress.com&blog=250980&post=183&subd=smokinggoat&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://smokinggoat.wordpress.com/2008/10/22/every-human-has-rights/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/cc497821d36a2b1fe0bdfb2946963996?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">smokinggoat</media:title>
+		</media:content>
+
+		<media:content url="http://media-awards.everyhumanhasrights.org/files/images/EHHR-media-awards-120x240.gif" medium="image">
+			<media:title type="html">Every Human Has Rights Media Awards</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>OpenMokos - now available at PariSoMa!</title>
+		<link>http://smokinggoat.wordpress.com/2008/10/17/openmokos-now-available-at-parisoma/</link>
+		<comments>http://smokinggoat.wordpress.com/2008/10/17/openmokos-now-available-at-parisoma/#comments</comments>
+		<pubDate>Fri, 17 Oct 2008 22:43:41 +0000</pubDate>
+		<dc:creator>smokinggoat</dc:creator>
+		
+		<category><![CDATA[faberNovel]]></category>
+
+		<category><![CDATA[linux]]></category>
+
+		<category><![CDATA[openmoko]]></category>
+
+		<category><![CDATA[technology]]></category>
+
+		<guid isPermaLink="false">http://smokinggoat.wordpress.com/2008/10/17/openmokos-now-available-at-parisoma/</guid>
+		<description><![CDATA[OK, so this is pretty cool - and I&#8217;m pretty proud of this one.  The OpenMoko FreeRunner, the 2nd Gen completely open-source, Linux-based phone is now available through PariSoMa.  We at PariSoMa (essentially faberNovel, Inc) put in the time, paperwork and sweat to get these phones for retail through our office.
+The FreeRunner is not [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p><img class="alignright size-full wp-image-179" title="FreeRunner" src="http://smokinggoat.files.wordpress.com/2008/10/freerunner_shop2_large.png?w=189&#038;h=354" alt="" width="189" height="354" />OK, so this is pretty cool - and I&#8217;m pretty proud of this one.  The OpenMoko FreeRunner, the 2nd Gen completely open-source, Linux-based phone <a href="http://www.parisoma.com/openmoko_shop">is now available through PariSoMa</a>.  We at PariSoMa (essentially <a href="http://www.fabernovel.com/">faberNovel, Inc</a>) put in the time, paperwork and sweat to get these phones for retail through our office.</p>
+<p>The FreeRunner is not a consumer-ready phone - it is still in development, but it&#8217;s is a great phone / Linux-device that allows people to completely hack it.  While a lot of development needs to happen among the various software distributions out there for this phone in order for it to be a reliable, everyday phone, it&#8217;s still a great leap forward in this arena.</p>
+<p>Oh, and why go with this phone instead of the yet-to-be-released Android?  Well&#8230;</p>
+<ul>
+<li>Currently, the Android phone tethers you to T-Mobile.  Though this will change once other service providers and mobile phone manufacturers come aboard.</li>
+<li>Android - as far as we&#8217;ve seen so far - does not give you low-level access.  It&#8217;s also unclear how open or closed the actual device drivers will be (wifi, for example).</li>
+<li>The OpenMoko FreeRunner allows you to not only choose service providers, it allows you to pick software distros, providing a wider range of open source choices.</li>
+</ul>
+<p>In reality, on the spectrum of iPhone to Android to OpenMoko, the latter is at the far end of the open-source lineage, where the ease-of-use terrain gets pretty shaky.  This means it will not be - anytime soon - a mass-market consumer phone.  But it will be the tool of choice for developers keen on innovation, and people who want complete freedom to develop specialized functionality to incorporate into these mobile devices.</p>
+<p>Technorati Tags: <a class="performancingtags" rel="tag" href="http://technorati.com/tag/openmoko">openmoko</a>, <a class="performancingtags" rel="tag" href="http://technorati.com/tag/fabernovel">fabernovel</a>, <a class="performancingtags" rel="tag" href="http://technorati.com/tag/parisoma">parisoma</a></p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/smokinggoat.wordpress.com/177/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/smokinggoat.wordpress.com/177/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/smokinggoat.wordpress.com/177/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/smokinggoat.wordpress.com/177/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/smokinggoat.wordpress.com/177/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/smokinggoat.wordpress.com/177/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/smokinggoat.wordpress.com/177/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/smokinggoat.wordpress.com/177/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/smokinggoat.wordpress.com/177/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/smokinggoat.wordpress.com/177/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=smokinggoat.wordpress.com&blog=250980&post=177&subd=smokinggoat&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://smokinggoat.wordpress.com/2008/10/17/openmokos-now-available-at-parisoma/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/cc497821d36a2b1fe0bdfb2946963996?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">smokinggoat</media:title>
+		</media:content>
+
+		<media:content url="http://smokinggoat.files.wordpress.com/2008/10/freerunner_shop2_large.png" medium="image">
+			<media:title type="html">FreeRunner</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Economics for the rest of us</title>
+		<link>http://smokinggoat.wordpress.com/2008/10/13/economics-for-the-rest-of-us/</link>
+		<comments>http://smokinggoat.wordpress.com/2008/10/13/economics-for-the-rest-of-us/#comments</comments>
+		<pubDate>Mon, 13 Oct 2008 20:19:35 +0000</pubDate>
+		<dc:creator>smokinggoat</dc:creator>
+		
+		<category><![CDATA[business]]></category>
+
+		<category><![CDATA[money]]></category>
+
+		<guid isPermaLink="false">http://smokinggoat.wordpress.com/2008/10/13/economics-for-the-rest-of-us/</guid>
+		<description><![CDATA[The real story - of any big story, scandal, crisis, etc - is always far more complex than it first (and often lastingly) appears.&#160; The US Civil War.&#160; The Rwandan genocide.&#160; Oh, and the current economic crisis.
+I&#8217;ve made reference to a couple of great podcasts that I&#8217;ve listened to (and continue to listen to) that [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p>The real story - of any big story, scandal, crisis, etc - is always far more complex than it first (and often lastingly) appears.&nbsp; The US Civil War.&nbsp; The Rwandan genocide.&nbsp; Oh, and the current economic crisis.</p>
+<p>I&#8217;ve made reference to a couple of great podcasts that I&#8217;ve listened to (and continue to listen to) that attempt to explain the complexity of the current economic meltdown, and several people have asked me about them.&nbsp; I don&#8217;t make any claim that these are the definitive explanations, but they do add up a lot of the pieces, and for the most part stay out of the way of political finger-pointing.&nbsp; If you actually believe that such reporting is possible in the world of the media bias, then I encourage you to listen to the following podcasts.&nbsp; </p>
+<p>The first two are single special-report episodes culled from This American Life&#8217;s varied archive.&nbsp; Each is an hour long, and contains an amazing amount of detail into how insanley complicated the sub-prime mortgage crisis, and then subsequent commercial paper market.&nbsp; See?&nbsp; I&#8217;m already a jargon expert!</p>
+<p>These link directly to the episodes on TAL.&nbsp; If you subscribe via iTunes, you can probably go back in the archives and download these directly to your podcast engine of choice.&nbsp; Don&#8217;t forget to donate fr this free and informative service they are offering!</p>
+<p>Episode #355:&nbsp; <a href="http://www.thislife.org/Radio_Episode.aspx?episode=355">Giant Pool of Money</a> (April 11, 2008)<br />Episode #365:&nbsp; <a href="http://ww.thisamericanlife.org/Radio_Episode.aspx?sched=1263">Another Frightening Show About the Economy</a> (Oct 3, 2008)<br />&nbsp;<br />Then catch up on the day to day madness with the <a href="http://www.npr.org/rss/podcast/podcast_detail.php?siteId=94411890">Planet Money podcast</a> (and <a href="http://www.npr.org/blogs/money/">blog</a>), put together specifically during these last weeks to cover the ever-changing situation.&nbsp; </p>
+<p>And in case anyone thinks this is just liberal media babble, one of the (normally level-headed) commentators compares the US buying into banks like the kind of socialism found &#8230;. not in Europe, where national industries have long had a history of government oversight and intervention (fr whatever that is worth) and only recently been privatized&#8230; but in <em>Iraq</em>, where a factory waits for orders to produce shoes even though people outside are walking barefoot.&nbsp; Yes, the US buying into banks is not a first step that could bring us closer to our European socialized medicine brethren - for better and worse - but to extreme dictatorial socialism.&nbsp; Nonetheless, brave through it, coz the podcast is worth it&#8230;.</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/smokinggoat.wordpress.com/175/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/smokinggoat.wordpress.com/175/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/smokinggoat.wordpress.com/175/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/smokinggoat.wordpress.com/175/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/smokinggoat.wordpress.com/175/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/smokinggoat.wordpress.com/175/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/smokinggoat.wordpress.com/175/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/smokinggoat.wordpress.com/175/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/smokinggoat.wordpress.com/175/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/smokinggoat.wordpress.com/175/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=smokinggoat.wordpress.com&blog=250980&post=175&subd=smokinggoat&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://smokinggoat.wordpress.com/2008/10/13/economics-for-the-rest-of-us/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/cc497821d36a2b1fe0bdfb2946963996?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">smokinggoat</media:title>
+		</media:content>
+	</item>
+		<item>
+		<title>Drupal&#8217;N'Go - Case Study</title>
+		<link>http://smokinggoat.wordpress.com/2008/10/08/drupalngo-case-study/</link>
+		<comments>http://smokinggoat.wordpress.com/2008/10/08/drupalngo-case-study/#comments</comments>
+		<pubDate>Wed, 08 Oct 2008 18:15:46 +0000</pubDate>
+		<dc:creator>smokinggoat</dc:creator>
+		
+		<category><![CDATA[AF83]]></category>
+
+		<category><![CDATA[Drupal]]></category>
+
+		<category><![CDATA[France]]></category>
+
+		<category><![CDATA[nonprofit]]></category>
+
+		<category><![CDATA[nptech]]></category>
+
+		<guid isPermaLink="false">http://smokinggoat.wordpress.com/2008/10/08/drupalngo-case-study/</guid>
+		<description><![CDATA[Last weekend, my company&#8217;s Paris office helped run &#8220;Drupal&#8217;N'Go&#8221;, a BarCamp/WineCamp style Drupal barn-raising.  The idea was to select a worthy nonprofit organization, and build an entire webiste for them.
+How did it turn out?  DrupalFrance community member jlndrr posted this feedback (in English, French version here).
+Technorati Tags: drupalngo, af83, drupal
+&#160;&#160;&#160;&#160;&#160;&#160;     ]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><div class="wp-caption alignleft" style="width: 154px"><a href="http://www.drupalngo.org"><img style="max-width:800px;" src="http://drupalngo.org/sites/default/files/color/drupalngo-df0caa1f/logo.png" alt="" width="144" height="88" /></a><p class="wp-caption-text">DrupalNGo</p></div>
+<p>Last weekend, <a href="http://smokinggoat.wordpress.com/2008/08/01/drupalngo/">my company&#8217;s Paris office</a> helped run <a href="http://drupalngo.org/">&#8220;Drupal&#8217;N'Go&#8221;</a>, a BarCamp/WineCamp style Drupal barn-raising.  The idea was to select a worthy nonprofit organization, and build an entire webiste for them.</p>
+<p>How did it turn out?  DrupalFrance community member jlndrr posted <a href="http://groups.drupal.org/node/15697">this feedback</a> (in English, <a href="http://groups.drupal.org/node/15683">French version here</a>).</p>
+<p>Technorati Tags: <a class="performancingtags" rel="tag" href="http://technorati.com/tag/drupalngo">drupalngo</a>, <a class="performancingtags" rel="tag" href="http://technorati.com/tag/af83">af83</a>, <a class="performancingtags" rel="tag" href="http://technorati.com/tag/drupal">drupal</a></p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/smokinggoat.wordpress.com/169/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/smokinggoat.wordpress.com/169/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/smokinggoat.wordpress.com/169/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/smokinggoat.wordpress.com/169/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/smokinggoat.wordpress.com/169/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/smokinggoat.wordpress.com/169/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/smokinggoat.wordpress.com/169/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/smokinggoat.wordpress.com/169/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/smokinggoat.wordpress.com/169/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/smokinggoat.wordpress.com/169/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=smokinggoat.wordpress.com&blog=250980&post=169&subd=smokinggoat&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://smokinggoat.wordpress.com/2008/10/08/drupalngo-case-study/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/cc497821d36a2b1fe0bdfb2946963996?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">smokinggoat</media:title>
+		</media:content>
+
+		<media:content url="http://drupalngo.org/sites/default/files/color/drupalngo-df0caa1f/logo.png" medium="image" />
+	</item>
+		<item>
+		<title>SF-DUG August 2008</title>
+		<link>http://smokinggoat.wordpress.com/2008/09/30/sf-dug-august-2008/</link>
+		<comments>http://smokinggoat.wordpress.com/2008/09/30/sf-dug-august-2008/#comments</comments>
+		<pubDate>Wed, 01 Oct 2008 00:21:17 +0000</pubDate>
+		<dc:creator>smokinggoat</dc:creator>
+		
+		<category><![CDATA[1]]></category>
+
+		<guid isPermaLink="false">http://smokinggoat.wordpress.com/2008/09/30/sf-dug-august-2008/</guid>
+		<description><![CDATA[					
+
+Chris Brying of Gravitek Labs gave a presentation about the Patterns module.  The Patterms module enables you to develop scripts in easy-to-read XML-style language to automate site configuration steps.  Any form that you can submit on a Drupal site can be scripted via Patterns.
+Note:  The audio volume changes considerably during the screencast.  I was recording [...]]]></description>
+			<content:encoded><![CDATA[<div class='snap_preview'><br /><p>					<script type='text/javascript' src='http://blip.tv/syndication/write_player?skin=js&#038;posts_id=1316276&#038;cross_post_destination=32294&#038;view=full_js'></script>
+<div class="blip_description">
+<p>Chris Brying of Gravitek Labs gave a presentation about the Patterns module.  The Patterms module enables you to develop scripts in easy-to-read XML-style language to automate site configuration steps.  Any form that you can submit on a Drupal site can be scripted via Patterns.</p>
+<p>Note:  The audio volume changes considerably during the screencast.  I was recording on an iPod, and had to move the iPod any time a person asked a question.  Also, the video abruptly ends - but towards the end of the Q&#38;A session. </p>
+</div>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a rel="nofollow" href="http://feeds.wordpress.com/1.0/gocomments/smokinggoat.wordpress.com/164/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/comments/smokinggoat.wordpress.com/164/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godelicious/smokinggoat.wordpress.com/164/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/delicious/smokinggoat.wordpress.com/164/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/gostumble/smokinggoat.wordpress.com/164/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/stumble/smokinggoat.wordpress.com/164/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/godigg/smokinggoat.wordpress.com/164/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/digg/smokinggoat.wordpress.com/164/" /></a> <a rel="nofollow" href="http://feeds.wordpress.com/1.0/goreddit/smokinggoat.wordpress.com/164/"><img alt="" border="0" src="http://feeds.wordpress.com/1.0/reddit/smokinggoat.wordpress.com/164/" /></a> <img alt="" border="0" src="http://stats.wordpress.com/b.gif?host=smokinggoat.wordpress.com&blog=250980&post=164&subd=smokinggoat&ref=&feed=1" /></div>]]></content:encoded>
+			<wfw:commentRss>http://smokinggoat.wordpress.com/2008/09/30/sf-dug-august-2008/feed/</wfw:commentRss>
+	
+		<media:content url="http://www.gravatar.com/avatar/cc497821d36a2b1fe0bdfb2946963996?s=96&amp;amp;d=identicon" medium="image">
+			<media:title type="html">smokinggoat</media:title>
+		</media:content>
+	</item>
+	</channel>
+</rss>

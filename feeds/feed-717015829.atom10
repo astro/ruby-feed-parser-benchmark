@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	>
+
+<channel>
+	<title>WordPress Development Blog</title>
+	<atom:link href="http://wordpress.org/development/feed/" rel="self" type="application/rss+xml" />
+	<link>http://wordpress.org/development</link>
+	<description>WordPress development and updates</description>
+	<pubDate>Fri, 12 Dec 2008 17:53:29 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.8-bleeding-10187</generator>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+			<item>
+		<title>WordPress 2.7 &#8220;Coltrane&#8221;</title>
+		<link>http://wordpress.org/development/2008/12/coltrane/</link>
+		<comments>http://wordpress.org/development/2008/12/coltrane/#comments</comments>
+		<pubDate>Thu, 11 Dec 2008 02:28:57 +0000</pubDate>
+		<dc:creator>Matt</dc:creator>
+		
+		<category><![CDATA[Development]]></category>
+
+		<guid isPermaLink="false">http://wordpress.org/development/?p=477</guid>
+		<description><![CDATA[The first thing you&#8217;ll notice about 2.7 is its new interface. From the top down, we&#8217;ve listened to your feedback and thought deeply about the design and the result is a WordPress that&#8217;s just plain faster. Nearly every task you do on your blog will take fewer clicks and be faster in 2.7 than it [...]]]></description>
+			<content:encoded><![CDATA[<p>The first thing you&#8217;ll notice about 2.7 is its new interface. From the top down, we&#8217;ve listened to your feedback and thought deeply about the design and the result is a WordPress that&#8217;s just plain faster. Nearly every task you do on your blog will <strong>take fewer clicks and be faster</strong> in 2.7 than it did in a previous version. (<a href="http://wordpress.org/download/">Download it now</a>, or read on for more.)</p>
+<p>Next you&#8217;ll begin to notice the new features subtly sprinkled through the new interface: the new dashboard that you can arrange with drag and drop to put the things most important to you on top, QuickPress, comment threading, paging, and the ability to reply to comments from your dashboard, the ability to install any plugin directly from WordPress.org with a single click, and sticky posts.</p>
+<p>Digging in further you might notice that every screen is customizable. Let&#8217;s say you never care about author on your post listings &#8212; just click &#8220;Screen Options&#8221; and uncheck it and it&#8217;s instantly gone from the page. The same for any module on the dashboard or write screen. If your screen is narrow and the menu is taking up too much horizontal room, click the arrow to minimize it to be icon-only, and then go to the write page and drag and drop everything from the right column into the main one, so your posting area is full-screen. (For example I like hiding everything except categories, tags, and publish. I put categories and tags on the right, and publish under the post box.)</p>
+<p>For a visual introduction to what 2.7 is, check out this video (available in HD, and full screen):</p>
+<p><object width="640" height="360" data="http://v.wordpress.com/hFr8Nyar" type="application/x-shockwave-flash"><param name="src" value="http://v.wordpress.com/hFr8Nyar" /><param name="allowfullscreen" value="true" /></object></p>
+<p>It&#8217;s all about you. It&#8217;s the next generation of WordPress, which is why we&#8217;ve bestowed it with the honor of being named for <a href="http://en.wikipedia.org/wiki/John_Coltrane">John Coltrane</a>. <a href="http://wordpress.org/download/">And you can download it today</a>.</p>
+<p>Last, but certainly not least, this may be the <strong>last time you ever have to manually upgrade WordPress again</strong>. We heard how tired you were of doing upgrades for yourself and your friends, so now WordPress includes a built-in upgrade that will automatically notify you of new releases, and when you&#8217;re ready it will download them, install them, and upgrade your blog with a single click.</p>
+<p>(As with any interface change it may take a little bit of time to acclimate yourself but soon you&#8217;ll find yourself whizzing through the screens. Even people who have hated it at first tell us after a few days they wonder how they got by before.)</p>
+<h3>The Story Behind 2.7</h3>
+<p>The real reason Coltrane is such a huge leap forward is because the community was so involved with every step of the process. <strong>Over 150 people contributed code directly to the release</strong>, our highest ever, with many tens of thousands more participating in the polls, surveys, tests, mailing lists, and other feedback mechanisms the WordPress dev team used in putting this release together.</p>
+<p>For some of the back story in the development of 2.7, check out these blog posts (thanks to <a href="http://weblogtoolscollection.com/">WeblogToolsCollection</a> for the list):</p>
+<ul>
+<li><a href="http://wordpress.org/development/2008/10/usability-testing-report-25-and-crazyhorse/">Usability Testing Report: 2.5 and CrazyHorse</a></li>
+<li><a href="http://wordpress.org/development/2008/10/the-new-27-dashboard/">The New 2.7 Dashboard</a></li>
+<li><a href="http://wordpress.org/development/2008/10/the-visual-design-of-27/">The Visual Design of 2.7</a></li>
+<li><a href="http://wordpress.org/development/2008/10/wordpress-27-wireframes/">WordPress 2.7 wireframes</a></li>
+<li><a href="http://codex.wordpress.org/Version_2.7">Comprehensive Codex Article on WordPress 2.7</a></li>
+<li><a href="http://wpdevel.wordpress.com/author/jane/">WordPress Development Updates from Jane Wells</a></li>
+<li><a href="http://en.blog.wordpress.com/2008/05/20/new-york-usability-testing/">WordPress Usability Testing in New York</a></li>
+<li><a href="http://boren.nu/archives/2008/10/31/wordpress-27-ui-configurability/">WordPress 2.7 UI Configurability from Ryan Boren</a></li>
+<li><a href="http://markjaquith.wordpress.com/2008/11/06/wordpress-27-feature-preview-customizable-post-editing-screen/">Customizable Post Editing Screen from Mark Jaquith</a></li>
+<li><a href="http://jane.wordpress.com/2008/09/15/wordpress-27-navigation-survey/">WordPress 2.7 Navigation Survey from Jane Wells</a></li>
+<li><a href="http://jane.wordpress.com/2008/10/16/shortcutsfavorites-menu/">Shortcuts/Favorites Menu from Jane Wells</a></li>
+<li><a href="http://www.slideshare.net/edanzico/riding-the-crazyhorse-future-generation-wordpress-presentation">CrazyHorse Presentation at WordCamp SF</a></li>
+<li><a href="http://www.centernetworks.com/wordpress-27-demo">WordPress 2.7 Walkthrough by Matt</a></li>
+<li><a href="http://www.idratherbewriting.com/2008/09/27/wordpress-27-and-beyond-%E2%80%93-keynote-by-matt-mullenweg-at-wordcamp-utah-2008/">WordPress 2.7 and beyond from Matt at WordCamp Utah</a></li>
+</ul>
+<p>This was interesting to us, a blogging software release we actually blogged about, but the process was hugely informative. Prior to its release today Crazyhorse and 2.7 had been tested by tens of thousands of people on their blogs, hundreds of thousands of you count .com. The volume of feedback was so high that we decided to push back the release date a month to take time to incorporate it all and do more revisions based on what you guys said.</p>
+<p>For those of you wondering why we didn&#8217;t call this release 3.0, it&#8217;s because we abhor version number inflation. 3.0 will just be the next release after 2.9. The major features in new point releases approach also works well for products like OS X, with huge changes between a 10.3 and 10.4.</p>
+<h3>The Future</h3>
+<p>Those of you following along at home might have noticed this was our second major redesign of WordPress this year. Whoa nelly! While that wasn&#8217;t ideal, and I especially sympathize with those of you creating books or tutorials around WordPress, there&#8217;s good news. The changes to WordPress in 2.5 and 2.7 were necessary for us to break free of much of the legacy cruft and interface bloat that had built up over the years (gradually) and more importantly provide us with a UI framework and interface language we can use at the foundation to build tomorrow&#8217;s WordPress on, to express ideas we haven&#8217;t been able to before. So at the end of 2009 I expect, interface-wise, WordPress to look largely the same as it does now.</p>
+<p>That said, we couldn&#8217;t be more excited about the future with regards to features. Now that we&#8217;ve cleared out more basic things, we are looking forward in the coming year to really tackling media handling including audio and video, better tools for plugin and theme developers, widgets, theme updates, more integrated and contextual help, and easier integration with projects like <a href="http://buddypress.org/">BuddyPress</a> and <a href="http://bbpress.org/">bbPress</a>.</p>
+<h3>Thank Yous</h3>
+<p>We would like to take a moment to thank the following WordPress.org users for being a part of 2.7: <a href="http://segert.net/">Verena Segert</a>, <a href="http://www.fieldii.com/">Ben Dunkle</a>, 082net, <a href="http://ckon.wordpress.com/">_ck_</a>, <a href="http://technosailor.com/">Aaron Brazell</a>, Aaron Campbell, Aaron Harp, aaron_guitar, abackstrom, <a href="http://alexrabe.boelinger.com/">Alex Rabe</a>, <a href="http://flightpathblog.com/">Alex Shiels</a>, anderswc, andr, <a href="http://azaozz.wordpress.com/">Andrew Ozz</a>, andy, <a href="http://apeatling.wordpress.com/">Andy Peatling</a>, <a href="http://ilfilosofo.com/">Austin Matzko</a>, axelseaa, bendalton, <a href="http://extralogical.net/">Benedict Eastaugh</a>, <a href="http://www.umaitech.com/">Betsy Kimak</a>, <a href="http://www.burobjorn.nl/">Björn Wijers</a>, <a href="http://bobrik.name/">bobrik</a>, brianwhite, bubel, <a href="http://www.majordojo.com/">Byrne Reese</a>, caesarsgrunt, capripot, <a href="http://maisonbisson.com/blog/">Casey Bisson</a>, <a href="http://www.cefm.ca/">Charles E. Frees-Melvin</a>, <a href="http://chrisjohnston.org">Chris Johnston</a>, codestyling, corischlegel, count_0, <a href="http://www.red-sweater.com/blog/">Daniel Jalkut</a>, Daniel Torreblanca, <a href="http://www.misthaven.org.uk/blog/">David McFarlane</a>, dbuser123, <a href="http://op111.net/">Demetris Kikizas</a>, <a href="http://dd32.id.au/">Dion Hulse</a>, docwhat, <a href="http://ocaoimh.ie">Donncha O Caoimh</a>, <a href="http://literalbarrage.org/blog/">Doug Stewart</a>, <a href="http://dougal.gunters.org">Dougal Campbell</a>, dsader, dtsn, dwc, g30rg3x, guillep2k, <a href="http://hailin.wordpress.com/">Hailin Wu</a>, <a href="http://engel.uk.to/">Hans Engel</a>, <a href="http://santosj.name/">Jacob Santos</a>, <a href="http://jamierumbelow.net/">Jamie Rumbelow</a>, <a href="http://www.janbrasna.com/">Jan Brasna</a>, <a href="http://jane.wordpress.com/">Jane Wells</a>, Jean-LucfromBrussels, <a href="http://poplarware.com/HodgBlog/">Jennifer Hodgdon</a>, <a href="http://simianuprising.com/">Jeremy Clarke</a>, <a href="http://jmini.fr/">Jérémie Bresson</a>, jick, <a href="http://www.joetek.ca/">Joe Taiabjee</a>, <a href="http://johnblackbourn.com/">John Blackbourn</a>, John Conners, John Lamansky, johnhennmacc, <a href="http://yoast.com/">Joost de Valk</a>, <a href="http://josephscott.org/">Joseph Scott</a>, kashani, <a href="http://www.kpdesign.net/">Kim Parsell</a>, <a href="http://foolswisdom.com/">Lloyd Budd</a>, <a href="http://elektroelch.de/blog">Lutz Schröer</a>, <a href="http://www.malaiac.net">Malaiac</a>, <a href="http://markjaquith.com/">Mark Jaquith</a>, <a href="http://www.blogitude.com/">Mark Steel</a>, <a href="http://mattsblog.ca/">Matt Freedman</a>, <a href="http://ma.tt/">Matt Mullenweg</a>, <a href="htttp://iammattthomas.com/">Matt Thomas</a>, matthewh84, mattyrob, mcs_trekkie, <a href="http://blogwaffe.com/">Michael Adams</a>, <a href="http://www.ioerror.us/">Michael Hampton</a>, <a href="http://codex.wordpress.org/User:MichaelH">MichaelH</a>, mictasm, <a href="http://mikeschinkel.com/">Mike Schinkel</a>, msi08, msw0418, mtekk, <a href="http://mtdewvirus.com/">Nick Momrik</a>, <a href="http://nikolay.bg/">Nikolay Bachiyski</a>, <a href="http://jcksn.com/">Noel Jackson</a>, <a href="http://ottodestruct.com/">Otto</a>, <a href="http://planetozh.com/">Ozh</a>, paddya, paul, pedrop, pishmishy, Po0ky, RanYanivHartstein, raychampagne, rdworth, reinkim, rickoman, rm53, rnt, <a href="http://robert.accettura.com/">Robert Accettura</a>, roganty, <a href="http://boren.nu/">Ryan Boren</a>, <a href="http://cubegames.net/">Ryan McCue</a>, <a href="http://unlettered.com/">Sam Bauers</a>, Sam_a, schiller, <a href="http://www.scott-h.com/">Scott Houst</a>, sekundek, <a href="http://bugssite.org/">Shane</a>, Simek, <a href="http://www.simonwheatley.co.uk/">Simon Wheatley</a>, <a href="http://sivel.net/">sivel</a>, st_falcon, stefano, strider72, tai, takayukister, techcookies, Terragg, thinlight, tott, <a href="http://www.trevorfitzgerald.com/">Trevor Fitzgerald</a>, tschai, Txanny, <a href="http://www.manionline.org/">Valiallah (Mani) Monajjemi</a>, <a href="http://viper007bond.com/">Viper007Bond</a>, <a href="http://wordpress.org/support/profile/1064655">Vladimir Kolesnikov</a>, wasp, wet, wfrantz, x11tech, xknown, xorax, <a href="http://ydekproductions.com/">ydekproductions</a>, yoavf, yonosoytu, yoshi, zedlander</p>
+]]></content:encoded>
+			<wfw:commentRss>http://wordpress.org/development/2008/12/coltrane/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>2.7 Release Candidate Two</title>
+		<link>http://wordpress.org/development/2008/12/27-release-candidate-two/</link>
+		<comments>http://wordpress.org/development/2008/12/27-release-candidate-two/#comments</comments>
+		<pubDate>Wed, 10 Dec 2008 00:55:33 +0000</pubDate>
+		<dc:creator>Matt</dc:creator>
+		
+		<category><![CDATA[Development]]></category>
+
+		<guid isPermaLink="false">http://wordpress.org/development/?p=474</guid>
+		<description><![CDATA[There comes a time in every WordPress release when it&#8217;s ready for the world , to come out of its cocoon and feel the light of the world on its wings for the first time.
+It&#8217;s not quite that time yet, but we&#8217;re as close as we&#8217;ve ever been, hence the immediate availability of 2.7 Release [...]]]></description>
+			<content:encoded><![CDATA[<p>There comes a time in every WordPress release when it&#8217;s ready for the world , to come out of its cocoon and feel the light of the world on its wings for the first time.</p>
+<p>It&#8217;s not quite that time yet, but we&#8217;re as close as we&#8217;ve ever been, hence the <a href="http://wordpress.org/wordpress-2.7-RC2.zip">immediate availability of 2.7 Release Candidate 2, or RC2 for short</a>.</p>
+<p>Of course if you were already testing 2.7, you can just use the built-in core updater (Tools > Upgrade) to download and install RC2 for you (and later upgrade you to the final release when it&#8217;s available) but if not you can use the download link above.</p>
+<p>We feel this release is pretty much exactly what we&#8217;re going to ship as 2.7, barring any final bugs or polish tweaks that you report or we find.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://wordpress.org/development/2008/12/27-release-candidate-two/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>WordPress 2.7 Release Candidate 1</title>
+		<link>http://wordpress.org/development/2008/12/wordpress-27-release-candidate-1/</link>
+		<comments>http://wordpress.org/development/2008/12/wordpress-27-release-candidate-1/#comments</comments>
+		<pubDate>Mon, 01 Dec 2008 22:26:14 +0000</pubDate>
+		<dc:creator>Ryan Boren</dc:creator>
+		
+		<category><![CDATA[Releases]]></category>
+
+		<guid isPermaLink="false">http://wordpress.org/development/?p=467</guid>
+		<description><![CDATA[With the release of RC1, we&#8217;re in the final leg of development before the release of 2.7.  280 commits since beta 3 have polished the new admin UI (including new menu icons created by the winners of our icon design contest) and fixed all known blocker bugs.
+We think RC1 is ready for everyone to try [...]]]></description>
+			<content:encoded><![CDATA[<p>With the release of RC1, we&#8217;re in the final leg of development before the release of 2.7.  <a href="http://trac.wordpress.org/timeline?from=12%2F01%2F08&amp;daysback=16&amp;changeset=on&amp;update=Update">280 commits</a> since beta 3 have polished the new admin UI (including new menu icons created by the <a href="http://wordpress.org/development/2008/11/the-results-of-project-icon/">winners of our icon design contest</a>) and fixed all known blocker bugs.</p>
+<p>We think RC1 is ready for everyone to try out.  Please <a href="http://wordpress.org/wordpress-2.7-RC1.zip">download RC1</a> and help us make the final release the best it can be.  As always, <a href="http://codex.wordpress.org/WordPress_Backups">back up your blog</a> before upgrading.</p>
+<p><a href="http://wordpress.org/wordpress-2.7-RC1.zip">Get RC1</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://wordpress.org/development/2008/12/wordpress-27-release-candidate-1/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>WordPress 2.6.5</title>
+		<link>http://wordpress.org/development/2008/11/wordpress-265/</link>
+		<comments>http://wordpress.org/development/2008/11/wordpress-265/#comments</comments>
+		<pubDate>Tue, 25 Nov 2008 17:33:56 +0000</pubDate>
+		<dc:creator>Ryan Boren</dc:creator>
+		
+		<category><![CDATA[Development]]></category>
+
+		<guid isPermaLink="false">http://wordpress.org/development/?p=462</guid>
+		<description><![CDATA[WordPress 2.6.5 is immediately available and fixes one security problem and three bugs. We recommend everyone upgrade to this release.
+The security issue is an XSS exploit discovered by Jeremias Reith that fortunately only affects IP-based virtual servers running on Apache 2.x. If you are interested only in the security fix, copy wp-includes/feed.php and wp-includes/version.php from [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://wordpress.org/download/">WordPress 2.6.5 is immediately available and fixes one security problem and three bugs</a>. We recommend everyone upgrade to this release.</p>
+<p>The security issue is an XSS exploit discovered by Jeremias Reith that fortunately only affects IP-based virtual servers running on Apache 2.x. If you are interested only in the security fix, copy <code>wp-includes/feed.php</code> and <code>wp-includes/version.php</code> from the 2.6.5 release package.</p>
+<p>2.6.5 contains three other small fixes in addition to the XSS fix. The first prevents accidentally saving post meta information to a revision. The second prevents XML-RPC from fetching incorrect post types. The third adds some user ID sanitization during bulk delete requests. For a list of changed files, consult the <a href="http://trac.wordpress.org/changeset?old_path=tags%2F2.6.3&amp;old=&amp;new_path=tags%2F2.6.5&amp;new=">full changeset</a> between 2.6.3 and 2.6.5.</p>
+<p>Note that we are skipping version 2.6.4 and jumping from 2.6.3 to 2.6.5 to avoid confusion with a fake 2.6.4 release that made the rounds. There is not and never will be a version 2.6.4.</p>
+<p><a href="http://wordpress.org/download/">Get WordPress 2.6.5</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://wordpress.org/development/2008/11/wordpress-265/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>The Results of Project Icon</title>
+		<link>http://wordpress.org/development/2008/11/the-results-of-project-icon/</link>
+		<comments>http://wordpress.org/development/2008/11/the-results-of-project-icon/#comments</comments>
+		<pubDate>Mon, 17 Nov 2008 17:02:34 +0000</pubDate>
+		<dc:creator>Jane Wells</dc:creator>
+		
+		<category><![CDATA[User Interface]]></category>
+
+		<category><![CDATA[2.7]]></category>
+
+		<category><![CDATA[contest]]></category>
+
+		<category><![CDATA[icons]]></category>
+
+		<guid isPermaLink="false">http://wordpress.org/development/?p=441</guid>
+		<description><![CDATA[The community has voted, and the votes have been tallied. The winner of Project Icon, with 35% of the votes, is Entry ID &#8220;BD,&#8221; otherwise known as Ben Dunkle. Congratulations, Ben! The runner-up was VS, otherwise known as Verena Segert, so we&#8217;ll be attaching that set to the alternate color palette that is selectable from [...]]]></description>
+			<content:encoded><![CDATA[<p><img title="Winning icon set by Ben Dunkle" src="http://wpdotorg.files.wordpress.com/2008/11/bd_menu.png" alt="" width="147" height="479" align="left" />The community has voted, and the votes have been tallied. The winner of Project Icon, with 35% of the votes, is Entry ID &#8220;BD,&#8221; otherwise known as Ben Dunkle. Congratulations, Ben! The runner-up was VS, otherwise known as Verena Segert, so we&#8217;ll be attaching that set to the alternate color palette that is selectable from the profile screen. As we prepare for RC1, Ben and Verena will be revising a couple of their icons so that both sets will use the same metaphors, creating the colored &#8220;on&#8221; states, and creating the larger size of each icon for use in the h2 screen headers. We are very grateful to have had the opportunity to select from so many great options, and would like to express again our appreciation for all the designers who participated in the contest. Thanks also to the more than 3700 people who completed the voting survey and took the time to weigh on on the individual icon sets.</p>
+<table border="0" cellpadding="3">
+<tbody>
+<tr>
+<td colspan="3"><strong>Q.18 Which one of the sets do you think we should use as a basis for the 2.7 icons?</strong></td>
+</tr>
+<tr>
+<td><strong>Icon Set</strong></td>
+<td><strong># of votes</strong></td>
+<td><strong>% of votes</strong></td>
+</tr>
+<tr>
+<td>BD</td>
+<td>1285</td>
+<td>35%</td>
+</tr>
+<tr>
+<td>VS</td>
+<td>1080</td>
+<td>29%</td>
+</tr>
+<tr>
+<td>GB2</td>
+<td>424</td>
+<td>11%</td>
+</tr>
+<tr>
+<td>OSD</td>
+<td>376</td>
+<td>10%</td>
+</tr>
+<tr>
+<td>LS</td>
+<td>300</td>
+<td>8%</td>
+</tr>
+<tr>
+<td>GB1</td>
+<td>235</td>
+<td>6%</td>
+</tr>
+</tbody>
+</table>
+<p>The wide lead of BD and VS made it clear that voters had a clear preference for these sets.</p>
+<table border="0" cellspacing="3">
+<tbody>
+<tr>
+<td colspan="3"><strong>Q.20 If you could choose a runner-up, which would you choose?</strong></td>
+</tr>
+<tr>
+<td><strong>Icon Set</strong></td>
+<td><strong># of votes</strong></td>
+<td><strong>% of votes</strong></td>
+</tr>
+<tr>
+<td>VS</td>
+<td>916</td>
+<td>27%</td>
+</tr>
+<tr>
+<td>BD</td>
+<td>647</td>
+<td>19%</td>
+</tr>
+<tr>
+<td>LS</td>
+<td>522</td>
+<td>16%</td>
+</tr>
+<tr>
+<td>OSD</td>
+<td>488</td>
+<td>14%</td>
+</tr>
+<tr>
+<td>GB2</td>
+<td>462</td>
+<td>14%</td>
+</tr>
+<tr>
+<td>GB1</td>
+<td>331</td>
+<td>10%</td>
+</tr>
+</tbody>
+</table>
+<p>Question 20 was not mandatory, so a few hundred people skipped it, but the responses we did get (3366 of them) reinforced the fact that the two most popular sets were also the most popular 2nd choices, which made the decision of the judges to go with the popular vote an easy one (take that, electoral college!).</p>
+<p>A few of the individual icon metaphors also had a significant lead over the other choices.<br />
+<strong>Dashboard:</strong> 1333 voters (40%) chose a house as the best metaphor. We agree, so both Ben and Verena will be replacing their Dashboard icons.</p>
+<p><strong>Media:</strong> 2097 voters (65%) chose the combination camera + musical note icon, which was part of Ben&#8217;s set. We also really loved it, and Verena will amend her media icon to incorporate this idea.</p>
+<p><strong>Plugins: </strong>1682 voters (53%) selected the outlet plug metaphor, which both Ben and Verena used in their sets.</p>
+<p><strong>Tools:</strong> 1581 voters (49%) liked the combination of two tools better than anything else, so Ben and Verena will try this approach.</p>
+<p>So those are the results, and soon you&#8217;ll see the new icons coming to a 2.7 installation near you.</p>
+<p>Need another look at the entries to remember which one you liked best? Here are some reminder images, as well as the identity of each set&#8217;s creator.</p>
+<table border="1" cellpadding="10">
+<tbody>
+<tr>
+<td valign="top"><a href="http://www.fieldii.com"><img title="Winning icon set by Ben Dunkle" src="http://wpdotorg.files.wordpress.com/2008/11/bd_menu.png" alt="Winning icon set by Ben Dunkle" width="147" height="479" align="left" /></a>BD was <a href="http://www.fieldii.com">Ben Dunkle</a>, a designer, professor and artist from upstate/western New York State. In case you&#8217;ve already forgotten, Ben&#8217;s icon set is the winner of Project Icon and will become the default icon set after a few minor changes.</td>
+<td valign="top"><a href="http://www.segert.net"><img title="Verena Segert's blu icons" src="http://wpdotorg.wordpress.com/files/2008/11/vs_main-navigation-blue.jpg" alt="Verena Segert's blu icons" width="165" height="505" align="left" /></a>VS was <a href="http://www.segert.net">Verena Segert</a>, our runner-up, a designer from Germany who presented sets in both grayscale and blue. Her blue icons received more specific voter comments than the gray ones, so we&#8217;re planning the second color palette to be in shades of blue so that we can use the blue icon set.</td>
+</tr>
+<tr>
+<td colspan="2" valign="top"><a href="http://guillaumeberry.wordpress.com"><img title="Guillaume Berry's 1st set" src="http://wpdotorg.wordpress.com/files/2008/11/menu_set01_gberry.gif" alt="Guillaume Berry's 1st set" width="157" height="500" align="left" /></a><a href="http://guillaumeberry.wordpress.com"><img title="Guillaume Berry's 2nd set" src="http://wpdotorg.wordpress.com/files/2008/11/menu_set02_gberry.gif" alt="Guillaume Berry's 2nd set" width="157" height="500" align="right" /></a>GB was <a href="http://guillaumeberry.wordpress.com">Guillaume Berry</a>, a designer from France who submitted two sets in the same style in order to propose a couple of different metaphors. One of his sets came in third while the other came in last, but whether you only look at the higher scoring set or you combine their votes, Guillaume had the next highest percentage of votes, and many people liked the metaphors he used for various icons. In fact, given the  enthusiasm of the community for Guillaume&#8217;s icons, we think a great plugin would be one that would allow the user to upload the icon set of their choice. Any volunteers?</td>
+</tr>
+<tr>
+<td valign="top"><a href="http://www.mushon.com/fall08/osd"><img title="Menu icons by Open Source Design Class" src="http://wpdotorg.wordpress.com/files/2008/11/osd_menu.jpg" alt="Menu icons by Open Source Design Class" width="139" height="385" align="left" /></a>OSD was the <a href="http://www.mushon.com/fall08/osd">Open Source Design class at Parson&#8217;s</a> in New york City, taught by Mushon Zer-Aviv and consisting of students Alexandra Zsigmond, Ed Nacional, Karen Messing, Khurram Bajwa, Leonie Leibenfrost. Teacher and students worked together to determine their metaphors and visual style.</td>
+<td valign="top"><a href="http://userdesigngroup.com/custom-software-icons/"><img title="Luke Smith's menu icons" src="http://wpdotorg.wordpress.com/files/2008/11/ls_menu.jpg" alt="Luke Smith's menu icons" width="140" height="367" align="left" /></a>LS was <a href="http://userdesigngroup.com/custom-software-icons/">Luke Smith</a>, a designer from Iowa who specializes in icons among his other design pursuits.</td>
+</tr>
+</tbody>
+</table>
+<p>If you need to hire an icon designer any time soon, we highly recommend our Project Icon contestants, who all delivered great work in a very short timeframe. It was great to work with all of them, even for such a short assignment.</p>
+<p>So, to sum up:</p>
+<ol>
+<li>The winning icon sets by Ben Dunkle and Verena Segert will be incorporated into WordPress 2.7 RC1.</li>
+<li>Someone should write a plugin that would allow anyone to upload a custom icon set (I bet the other contestants could be convinced to release their icon sets for such a  purpose).</li>
+<li>2.7 is still trucking away, but we can always use help with patches, especially for IE6! (I know, that wasn&#8217;t in the main post, but it&#8217;s true, so hmph)</li>
+</ol>
+<p>Thanks again to everyone who participated in this experiment, and we hope you enjoyed it as much as we did. And congratulations again to Ben and Verena!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://wordpress.org/development/2008/11/the-results-of-project-icon/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>WordPress 2.7 Beta 3</title>
+		<link>http://wordpress.org/development/2008/11/wordpress-27-beta-3/</link>
+		<comments>http://wordpress.org/development/2008/11/wordpress-27-beta-3/#comments</comments>
+		<pubDate>Sat, 15 Nov 2008 20:43:47 +0000</pubDate>
+		<dc:creator>Mark Jaquith</dc:creator>
+		
+		<category><![CDATA[Releases]]></category>
+
+		<category><![CDATA[2.7]]></category>
+
+		<guid isPermaLink="false">http://wordpress.org/development/?p=437</guid>
+		<description><![CDATA[WordPress 2.7 Beta 3 has been released for your testing pleasure.  Here are some of the changes since Beta 2 (over 160 changes in total):
+
+Numerous style improvements and refinements.
+All admin notices now go under the page title.
+PHP Notice fixes.
+Dashboard widget options now properly save.
+Menu fixes.
+New design for Quick Edit.
+Canonical feed URL fixes.
+Walker fixes.
+An update [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://wordpress.org/wordpress-2.7-beta3.zip">WordPress 2.7 Beta 3 has been released</a> for your testing pleasure.  Here are some of the changes since Beta 2 (over 160 changes in total):</p>
+<ul>
+<li>Numerous style improvements and refinements.</li>
+<li>All admin notices now go <em>under</em> the page title.</li>
+<li>PHP Notice fixes.</li>
+<li>Dashboard widget options now properly save.</li>
+<li>Menu fixes.</li>
+<li>New design for Quick Edit.</li>
+<li>Canonical feed URL fixes.</li>
+<li>Walker fixes.</li>
+<li>An update for Hello Dolly.</li>
+<li>Plugin installer updates.</li>
+<li>Numerous font updates.</li>
+<li>Updated login logo.</li>
+<li>Switch position of &#8220;Save Draft&#8221; and &#8220;Preview&#8221; buttons in publish module.</li>
+<li>File upload support for MS Office 2007+ file formats.</li>
+<li>Media upload buttons won&#8217;t show if the user doesn&#8217;t have the upload capability.</li>
+<li>Canonical redirects only do yes-www or no-www redirection for domains.</li>
+<li>Shift-click checkbox range selection improvement.</li>
+<li>Add New User page now separate.</li>
+<li>Tag suggest only suggests tags (not other taxonomy terms).</li>
+<li>QuickPress shows &#8220;Submit for Review&#8221; if user cannot publish.</li>
+<li>Private posts/pages, and password-protected posts/pages are rolled into new &#8220;Visibility&#8221; section of publish module.</li>
+</ul>
+<p>If you have already installed Beta 1 or Beta 2, you can update to Beta 3 via the Tools -&gt; Update menu.  If you have problems, or if this is your first time in the 2.7 beta ring, you can download and upgrade the old fashioned way.</p>
+<p><a href="http://wordpress.org/wordpress-2.7-beta3.zip">Get 2.7 Beta 3</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://wordpress.org/development/2008/11/wordpress-27-beta-3/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>WordPress 2.7: Project Icon</title>
+		<link>http://wordpress.org/development/2008/11/wordpress-27-project-icon/</link>
+		<comments>http://wordpress.org/development/2008/11/wordpress-27-project-icon/#comments</comments>
+		<pubDate>Thu, 13 Nov 2008 19:13:10 +0000</pubDate>
+		<dc:creator>Jane Wells</dc:creator>
+		
+		<category><![CDATA[User Interface]]></category>
+
+		<category><![CDATA[2.7]]></category>
+
+		<category><![CDATA[icons]]></category>
+
+		<guid isPermaLink="false">http://wordpress.org/development/?p=419</guid>
+		<description><![CDATA[Earlier in the beta period, we put out a call here on the development blog for designers in the WordPress community who might be interested in designing custom icons for the 2.7 admin interface. Over a dozen icon designers from around the world responded, so rather than choose just one, we decided to turn the [...]]]></description>
+			<content:encoded><![CDATA[<p>Earlier in the beta period, we put out a call here on the development blog for designers in the WordPress community who might be interested in designing custom icons for the 2.7 admin interface. Over a dozen icon designers from around the world responded, so rather than choose just one, we decided to turn the icon design assignment into a contest so that more people could participate and the community could have a vote in what the new icons should look like.</p>
+<p>Once we decided to go with a contest format instead of a single-designer gig, about half the original volunteers changed their minds. The remaining designers each submitted two icons (Posts, Links) in their proposed style. At this stage a couple of designers were thanked for their submissions but eliminated from the competition because their icons were considered too far afield from the WordPress visual style. The remaining designers were given feedback on the icons they had submitted and given about a week to complete the icon set for the menu as well as the list/excerpt icons that are shown on the Edit Posts screen. All but one of these designers finished a complete set, giving us five sets in total.</p>
+<p>So now we need to choose a direction. For each of the icon sets, we’ll show you the set itself, the designer’s introduction, and some feedback from the lead developers. After you’ve reviewed all five, place your vote for the set you think has the visual style that is the most suitable for WordPress 2.7. This will be followed by additional votes on specific icons, so if you like the specific image used in one set but like the style of another, you can vote to change the metaphor for a given icon. You’ll also be able to leave general feedback throughout the voting process. When voting has concluded, we’ll review the comments and the votes, and will declare a winner.</p>
+<p>Things to bear in mind when making your selections:<br />
+A week is not a long time to create 13 icons. The winning set will undergo a revision to be refined, and some icons may be substituted. We asked for all icons in grayscale for the contest. An “on” state and a larger size for screen headers will be designed by the winner. It seemed like too much work to have everyone do multiple states for so many icons.</p>
+<p>Ready? <span style="text-decoration: line-through;">Go and take the icon survey.</span> <span style="color: #888888;"><em>(The survey has now been closed.)</em></span> Voting will remain open for 48 hours from the time of this post to allow people from all time zones a chance to participate before we close the survey and make a decision (since we&#8217;d like to include the new icons in Beta 3).</p>
+<p><strong>A Note Regarding the 2.7 Release Date:</strong><br />
+As we approach Beta 3, bug tickets continue to be added to Trac, the pain of making things look good in IE6 continues to be felt, and the need to improve accessibility looms. If you love WordPress, are a decent coder, and want to contribute like these icon designers contributed, please consider contributing a patch to help with one of these efforts. Jump right in on <a href="http://trac.wordpress.org/query?status=new&amp;status=assigned&amp;status=reopened&amp;milestone=2.7">current Trac tickets</a>, or pop into the <a href="irc://irc.freenode.net/wordpress-dev">#wordpress-dev IRC channel</a> to ask what to do.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://wordpress.org/development/2008/11/wordpress-27-project-icon/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>WordPress 2.7 Beta 2</title>
+		<link>http://wordpress.org/development/2008/11/wordpress-27-beta-2/</link>
+		<comments>http://wordpress.org/development/2008/11/wordpress-27-beta-2/#comments</comments>
+		<pubDate>Thu, 06 Nov 2008 09:03:57 +0000</pubDate>
+		<dc:creator>Ryan Boren</dc:creator>
+		
+		<category><![CDATA[Releases]]></category>
+
+		<guid isPermaLink="false">http://wordpress.org/development/?p=415</guid>
+		<description><![CDATA[WordPress 2.7 Beta 2 is ready.  Here is a quick rundown of changes since beta 1.
+
+The Upload button didn&#8217;t always show. Fixed.
+JS on the Dashboard broke for blogs with no comments, causing several UI elements to &#8220;freeze&#8221;. Fixed.
+Recent Drafts Dashboard module didn&#8217;t show correct times. Fixed.
+Various Autosave fixes.
+Redirect after deleting a page from the editor [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://wordpress.org/wordpress-2.7-beta2.zip">WordPress 2.7 Beta 2 is ready</a>.  Here is a quick rundown of changes since beta 1.</p>
+<ul>
+<li>The Upload button didn&#8217;t always show. Fixed.</li>
+<li>JS on the Dashboard broke for blogs with no comments, causing several UI elements to &#8220;freeze&#8221;. Fixed.</li>
+<li>Recent Drafts Dashboard module didn&#8217;t show correct times. Fixed.</li>
+<li>Various Autosave fixes.</li>
+<li>Redirect after deleting a page from the editor went back to the deleted page. Fixed.</li>
+<li>Fixed loading of translations for default TinyMCE plugins.</li>
+<li>Added avatars to the edit users list.</li>
+<li>Added some missing translations.</li>
+<li>Fixed some validation errors.</li>
+<li>Fixed some PHP warnings and notices.</li>
+<li>Handle inconsistent file permissions during auto upgrade</li>
+<li>Change Publish box layout to better accommodate internationalized text</li>
+<li>Fix quick editing of the last page in the Edit Pages list</li>
+<li>Fix Screen Options for IE</li>
+<li>Fixes for choose tag from tag cloud</li>
+<li>Rewrite rules fixes for certain hosts</li>
+<li>Don&#8217;t check for updates on every page load</li>
+<li>Easier post box dropping</li>
+<li>Preview fixes</li>
+<li>RTL fixes</li>
+<li>Fixed broken wp-mail</li>
+<li>Plugin update and install fixes</li>
+<li>First draft of contextual help tab</li>
+</ul>
+<p>If you have already installed beta 1, you can update to beta 2 via the Tools -&gt; Update menu.  Beta 1 does have a bug in the automatic upgrade that breaks certain setups, so be prepared to download and install Beta 2 manually if you experience problems.</p>
+<p><a href="http://wordpress.org/wordpress-2.7-beta2.zip">Get 2.7 Beta 2</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://wordpress.org/development/2008/11/wordpress-27-beta-2/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>What&#8217;s your favorite thing about the 2.7 Beta?</title>
+		<link>http://wordpress.org/development/2008/11/whats-your-favorite-thing-about-the-27-beta/</link>
+		<comments>http://wordpress.org/development/2008/11/whats-your-favorite-thing-about-the-27-beta/#comments</comments>
+		<pubDate>Sun, 02 Nov 2008 20:09:19 +0000</pubDate>
+		<dc:creator>Jane Wells</dc:creator>
+		
+		<category><![CDATA[Features]]></category>
+
+		<guid isPermaLink="false">http://wordpress.org/development/?p=396</guid>
+		<description><![CDATA[There have been a lot of posts and twitter announcements by people checking out the WordPress 2.7 Beta since it was announced yesterday. What&#8217;s your favorite thing about 2.7 so far? Or if you haven&#8217;t made the leap yet, to which feature are you most looking forward? Tell us in the poll below. 
+ What [...]]]></description>
+			<content:encoded><![CDATA[<p>There have been a lot of posts and <a href="http://search.twitter.com/search?q=wordpress+2.7">twitter announcements</a> by people checking out the WordPress 2.7 Beta since it was announced yesterday. What&#8217;s your favorite thing about 2.7 so far? Or if you haven&#8217;t made the leap yet, to which feature are you most looking forward? Tell us in the poll below. </p>
+<p><script type="text/javascript" language="javascript" src="http://s3.polldaddy.com/p/1068887.js"></script><noscript> <a href ="http://answers.polldaddy.com/poll/1068887/" >What is your favorite feature in WordPress 2.7?</a>  <br /> <span style="font-size:9px;"> (<a href ="http://www.polldaddy.com">  polls</a>)</span></noscript></p>
+<p>If you have a extra minute or two, we&#8217;ve also put together a survey that lists all the new features and allows you to rate them, as well as give additional feedback if you&#8217;re so inclined. If you want to participate, <a href="http://www.polldaddy.com/s/96BC7ED0D63500E4/">take the 2.7 Beta Favorite Features survey</a>. </p>
+]]></content:encoded>
+			<wfw:commentRss>http://wordpress.org/development/2008/11/whats-your-favorite-thing-about-the-27-beta/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>WordPress 2.7 Beta 1</title>
+		<link>http://wordpress.org/development/2008/11/wordpress-27-beta-1/</link>
+		<comments>http://wordpress.org/development/2008/11/wordpress-27-beta-1/#comments</comments>
+		<pubDate>Sat, 01 Nov 2008 08:00:11 +0000</pubDate>
+		<dc:creator>Ryan Boren</dc:creator>
+		
+		<category><![CDATA[Releases]]></category>
+
+		<guid isPermaLink="false">http://wordpress.org/development/?p=387</guid>
+		<description><![CDATA[The first public beta of WordPress 2.7 is here at last.  Join the thousands of people already testing 2.7 by downloading 2.7 Beta 1.  As previously mentioned on this blog, 2.7 is bringing a new visual design.  This design is almost completely implemented, but there are still a few areas that aren&#8217;t quite finished in [...]]]></description>
+			<content:encoded><![CDATA[<p>The first public beta of WordPress 2.7 is here at last.  Join the thousands of people already testing 2.7 by <a href="http://wordpress.org/wordpress-2.7-beta1.zip">downloading 2.7 Beta 1</a>.  As previously mentioned on this blog, 2.7 is bringing a new visual design.  This design is almost completely implemented, but there are still a few areas that aren&#8217;t quite finished in Beta 1.  There are also several glitches in certain browsers.  Beta 1 provides the best experience in Firefox and Safari. Don&#8217;t worry, we are working on IE and Opera and will have those looking good in time for the final release.</p>
+<p>Speaking of the final release, it will not be available on November 10th as originally scheduled.  We are two weeks behind schedule at the moment.  We need a little more time to finish the visual design, do a round of user testing against that finished design, and do a proper round of public beta testing. Our plan is to keep working as if Nov. 10 is still the release date.  However, instead of releasing the final 2.7 on the 10th, we will make a release candidate available instead.  The release candidate is intended to be a high-quality, almost-finished release that we are comfortable recommending for broad use.  After Nov. 10, the focus will be on fixing high impact bugs turned up by those of you testing the release candidate. I suspect 2.7 will be ready for final release by the end of November.  A specific date will be set as we progress through the public beta cycle and get a feel for how solid the release is.</p>
+<p><a href="http://wordpress.org/wordpress-2.7-beta1.zip">Get WordPress 2.7 Beta 1</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://wordpress.org/development/2008/11/wordpress-27-beta-1/feed/</wfw:commentRss>
+		</item>
+	</channel>
+</rss>

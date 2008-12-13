@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/rss2full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" version="2.0">
+
+<channel>
+	<title>Monday By Noon</title>
+	
+	<link>http://mondaybynoon.com</link>
+	<description>A resource for Web designers and developers to read about and discuss their craft.</description>
+	<pubDate>Mon, 08 Dec 2008 14:05:07 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.7</generator>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+			<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://feeds.feedburner.com/MondayByNoon" type="application/rss+xml" /><item>
+		<title>Pro JavaScript Techniques Book Review</title>
+		<link>http://mondaybynoon.com/2008/12/08/pro-javascript-techniques-book-review/</link>
+		<comments>http://mondaybynoon.com/2008/12/08/pro-javascript-techniques-book-review/#comments</comments>
+		<pubDate>Mon, 08 Dec 2008 13:59:38 +0000</pubDate>
+		<dc:creator>Jonathan Christopher</dc:creator>
+		
+		<category><![CDATA[Book Reviews]]></category>
+
+		<category><![CDATA[JavaScript]]></category>
+
+		<category><![CDATA[Opinion]]></category>
+
+		<category><![CDATA[book]]></category>
+
+		<category><![CDATA[js]]></category>
+
+		<category><![CDATA[resig]]></category>
+
+		<category><![CDATA[review]]></category>
+
+		<guid isPermaLink="false">http://mondaybynoon.com/?p=251</guid>
+		<description><![CDATA[Pro JavaScript Techniques by John Resig is definitely not an introductory text, but a great way to increase your existing knowledge of JavaScript.]]></description>
+			<content:encoded><![CDATA[<p class="img book-cover"><a href="http://www.amazon.com/gp/product/1590597273?ie=UTF8&amp;tag=mondaybynoon-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1590597273"><img src="http://mondaybynoon.com/images/books/pro-javascript-techniques.gif" alt="Pro JavaScript Techniques Book Cover"></a></p>
+
+<p>Consistently for the past year or so, I&#8217;ve become increasingly interested in JavaScript and its capabilities. Each week I find myself using JavaScript in new and better ways to <a href="http://en.wikipedia.org/wiki/Progressive_enhancement">progressively enhance</a> documents on the Web. Thankfully, there is a large group of terribly intelligent people consistently publishing not only their knowledge on the subject, but also new and improved tools with which to work.</p>
+
+<p>Over time, I have experimented with a number of JavaScript libraries. I first started out working with <a href="http://www.prototypejs.org/">Prototype</a> but quickly became more comfortable using <a href="http://mootools.net/">MooTools</a>. I spent a short amount of time using MooTools in conjunction with other resources to learn a bit more about JavaScript. Then I discovered <a href="http://jquery.com/">jQuery</a>. jQuery has caught on like wildfire in recent months (years?) and rightfully so. One of the reasons I work primarily with jQuery is because of its author; <a href="http://ejohn.org/">John Resig</a>. From what I can gather, he and I think alike. Although his knowledge of JavaScript is leaps and bounds ahead of mine, reading his articles still makes perfect sense. It should be no surprise that his book is written in the same way.</p>
+
+<h2>Pro JavaScript Techniques by John Resig</h2>
+
+<p>I&#8217;m a bit late in reading <a href="http://www.amazon.com/gp/product/1590597273?ie=UTF8&amp;tag=mondaybynoon-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1590597273">Pro JavaScript Techniques</a>, since it was released two years ago this month. Many times, two years is quite a while to let a Web book get out of date before reading it. I was pleasantly surprised to see that was not the case at all with Pro JavaScript Techniques. If you take a glance at the <a href="http://jspro.org/toc/">table of contents</a> you can plainly see the great selection of topics in the book.</p>
+
+<h3>Who is this book for?</h3>
+
+<p>This book is definitely <strong>not</strong> to be used as an introductory volume. If you&#8217;re just starting out with JavaScript, I would suggest perhaps <a href="http://mondaybynoon.com/2007/01/15/dom-scripting-book-review/">DOM Scripting</a> by Jeremy Keith. That&#8217;s not to say DOM Scripting <em>is</em> an introductory text, but more applicable for sure. This book is for a JavaScript author who has the basics down. Someone looking to take the next step in their JavaScript knowledge. In the first chapter, Resig dives right into objects in JavaScript, if that helps to put things in perspective.</p>
+
+<h3>What can you learn from this book?</h3>
+
+<dl>
+	
+	<dt>Part 1: Introducing Modern JavaScript</dt>
+	<dd>From the first few pages you&#8217;ll be introduced to object-oriented JavaScript. From there, you&#8217;re shown some great techniques for testing your code &amp; packaging your distribution. Part 1 also touches upon unobtrusive scripting, the DOM, events, Ajax, and cross-browser support.</dd>
+	
+	<dt>Part 2: Professional JavaScript Development</dt>
+	<dd>The second part of the book focused on the particulars of object oriented JavaScript through the discussion of objects, object creation, overloading, and more. This part of the book did a great job in preparing the reader for what&#8217;s to come. There is a strong focus on creating code reusability; something valuable to all aspects of programming. Part two finishes with a chapter dedicated to testing and debugging your JavaScript, something that can be exponentially frustrating when first working with any programming language. To our benefit, modern JavaScript has made available a number of very robust tools which make working with JavaScript quite pleasant.</dd>
+	
+	<dt>Part 3: Unobtrusive JavaScript</dt>
+	<dd>Part three discusses the Document Object Model, the foundation of modern JavaScript. After covering the basics surrounding the DOM, we&#8217;re guided through an introduction to events and how to work with them. Working with CSS via JavaScript is discussed in chapter 7, helping the reader to learn that JavaScript can do much more than interact with the DOM. Part three closes up with a couple examples which employ the techniques discussed in chapters previous, allowing the reader to see some of these methods in a functional real world environment.</dd>
+	
+	<dt>Part 4: Ajax</dt>
+	<dd>Resig devoted an entire section of this book to Ajax, and not without good reason. Ajax is one of the primary reasons for the popularity of modern JavaScript. Ajax has done quite a bit to make the usability of documents much more interactive and effective. After discussing the basics of Ajax, a number of real-world examples are discussed. There are many good examples to work from and build upon in this section of the book.</dd>
+	
+	<dt>Part 5: The Future of JavaScript</dt>
+	<dd>When working on the Web, it&#8217;s always important to consider whether your technology of choice has any viability in such a &#8216;hostile&#8217; environment. This part of the book discusses where JavaScript is going and includes a few Web applications to check out.</dd>
+	
+</dl>
+
+<p>There is an extensive appendix available at the conclusion of the book, which can be quite useful when trying to remember something you&#8217;ve read previously.</p>
+
+<h3>Summary</h3>
+
+<p>I thought this book was great. Reading this book really helped me to see why I like working with jQuery so much. It&#8217;s as though it can be looked at as a journal of sorts, providing a structure for a JavaScript library. Although I enjoy jQuery and it&#8217;s my library of choice, it&#8217;s only mentioned a very limited number of times, and always along other JavaScript libraries. This book was in no way a billboard for Resig&#8217;s library, instead it was meant as a way to improve your knowledge of JavaScript. If you&#8217;re looking to improve your knowledge of JavaScript from a basic level, <a href="http://www.amazon.com/gp/product/1590597273?ie=UTF8&amp;tag=mondaybynoon-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1590597273">Pro JavaScript Techniques</a> is a great way to do it.</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/MondayByNoon?a=3oHZO"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=3oHZO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=DwyHo"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=DwyHo" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=b6Sjo"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=b6Sjo" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/MondayByNoon/~4/478472870" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://mondaybynoon.com/2008/12/08/pro-javascript-techniques-book-review/feed/</wfw:commentRss>
+		<feedburner:awareness xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://api.feedburner.com/awareness/1.0/GetItemData?uri=MondayByNoon&amp;itemurl=http%3A%2F%2Fmondaybynoon.com%2F2008%2F12%2F08%2Fpro-javascript-techniques-book-review%2F</feedburner:awareness></item>
+		<item>
+		<title>Replicating TextMate: Comment Banner Plugin for Coda</title>
+		<link>http://mondaybynoon.com/2008/12/01/replicating-textmate-comment-banner-plugin-for-coda/</link>
+		<comments>http://mondaybynoon.com/2008/12/01/replicating-textmate-comment-banner-plugin-for-coda/#comments</comments>
+		<pubDate>Mon, 01 Dec 2008 16:46:19 +0000</pubDate>
+		<dc:creator>Jonathan Christopher</dc:creator>
+		
+		<category><![CDATA[Development]]></category>
+
+		<category><![CDATA[Coda]]></category>
+
+		<category><![CDATA[comment]]></category>
+
+		<category><![CDATA[Panic]]></category>
+
+		<category><![CDATA[plugin]]></category>
+
+		<category><![CDATA[TextMate]]></category>
+
+		<guid isPermaLink="false">http://mondaybynoon.com/?p=233</guid>
+		<description><![CDATA[This plugin replicates the comment banner functionality of TextMate]]></description>
+			<content:encoded><![CDATA[<p>Throughout the life of Monday By Noon, I&#8217;ve been quite public about my choice of operating system. Originally I was a Windows user, from there I <a href="http://mondaybynoon.com/2006/07/03/linux-and-web-development-intro/">switched to Linux</a> and finally <a href="http://mondaybynoon.com/2007/11/26/ive-switched-from-linux-and-settled-on-os-x/">made my way to OS X</a>. I haven&#8217;t looked back, and I&#8217;m consistently impressed with the quality of applications available, not only for Web design, but general use as well.</p>
+
+<p>Choice of text editor is a very personal thing for any developer. I&#8217;ve tried nearly every editor under the sun, just to make sure I wasn&#8217;t missing out on anything. Over the past year or so, I&#8217;ve wobbled back and forth between <a href="http://macromates.com/">TextMate</a> and <a href="http://www.panic.com/coda/">Coda</a>. TextMate is brutally useful, and Coda is terribly beautiful and functional. Time after time I&#8217;d return to TextMate simply because of the elaborate bundles, especially the snippet implementation. Coda&#8217;s editor just didn&#8217;t cut it when it came down to the timesaving techniques TextMate has spoiled with me.</p>
+
+<p>Then came Coda 1.6. Coda now supports a full range of plugin functionality, along with a <a href="http://www.panic.com/coda/developer/howto/plugins.php">stunning plugin creator</a>. I was instantly thrilled, dying to give Coda a fighting chance against TextMate. Since the debut of 1.6, some really great <a href="http://www.panic.com/coda/developer/community/plugins.php">third party plugins</a> have been published, and I&#8217;m very excited about the potential of very elaborate plugins down the line.</p>
+
+<h2>Writing a Coda plugin</h2>
+
+<p>I&#8217;ve never been one to get very detailed with plugin development, mostly because any plugin I wanted to write had already been done (and done well). With Coda plugins being brand new, there are plenty of plugins to write; I thought I&#8217;d give it a shot.</p>
+
+<p>Writing a Coda plugin is terribly easy. It&#8217;s a matter of downloading <a href="http://www.panic.com/coda/developer/howto/plugins.php">the plugin creator</a>, choosing from a number of languages, and publishing your plugin. If you&#8217;ve never built a plugin before, I&#8217;d definitely suggest playing around with Panic&#8217;s implementation with Coda, it&#8217;s a very satisfying experience.</p>
+
+<h3>Comment banner plugin for Coda</h3>
+
+<p>The functionality behind the plugin I decided to write by no surprise is rooted in TextMate. I&#8217;ve become a <em>huge fan</em> of the comment banner snippet in TextMate. It gave me a ridiculously fast way of inserting comment banners, allowing me to further segment some of my larger <abbr title="Cascading Style Sheets">CSS</abbr> documents, and I&#8217;ve even started documenting my source documents and JavaScript using comment banners. If you&#8217;re not familiar with comment banners, check out a quick screencast I put together:</p>
+
+<div class="video">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="545" height="447" id="viddler_f6685357"><param name="movie" value="http://www.viddler.com/player/f6685357/" /><param name="allowScriptAccess" value="always" /><param name="allowFullScreen" value="true" /><embed src="http://www.viddler.com/player/f6685357/" width="545" height="447" type="application/x-shockwave-flash" allowScriptAccess="always" allowFullScreen="true" name="viddler_f6685357" ></embed></object>
+<p><a href="http://www.viddler.com/explore/jchristopher/videos/4/">Comment Banner plugin for Coda</a> on <a href="http://www.viddler.com">Viddler</a></p>
+</div>
+
+<p>Unfortunately, in its current state, my plugin is nowhere near as advanced as the TextMate implementation. In TextMate, you can simply trigger the snippet and type your comment as you go. My plugin instead uses an existing line of text and transforms that into a comment banner. Once I take a closer look at the Coda plugin architecture, I&#8217;d like to completely duplicate the TextMate implementation.</p>
+
+<p>Another feature that&#8217;s currently incomplete is the syntax mode detection. I&#8217;ve only had time to implement a few of the document types I find myself editing most often. Once I look into the comment syntax of all the modes supported by Coda, I&#8217;ll make additions to make the plugin that much more comprehensive. Of course, if your syntax mode of choice is not supported (there&#8217;s a good chance it may not be) you can post a comment below and let me know about it, I&#8217;ll make updates as soon as possible.</p>
+
+<p>Additionally, the syntax detection that does take place only looks at the extension of the file in which you&#8217;re working. For example, the plugin doesn&#8217;t know you&#8217;re editing a JavaScript block inside an HTML document.</p>
+
+<p>You can trigger the plugin by typing your intended comment (single line of text) and choosing Plug-ins > Comment Banner, or simply use the key command from TextMate; <strong>Control + Shift + B</strong>.</p>
+
+<p>If you&#8217;re a Coda user, I hope you find this plugin useful. If you&#8217;ve got any feedback at all please take a moment and post in the comment thread, and stay tuned for updates!</p>
+
+<h3>Download Comment Banner</h3>
+
+<dl>
+	<dt><a href="http://mondaybynoon.com/download/plugins/coda/commentbanner/commentbanner_0.5.1.zip">Version 0.5.1</a></dt>
+	<dd>December 5, 2008 - Added support for JSP</dd>
+	<dt><a href="http://mondaybynoon.com/download/plugins/coda/commentbanner/commentbanner_0.5.zip">Version 0.5</a></dt>
+	<dd>December 1, 2008 - Initial release</dd>
+</dl><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/MondayByNoon?a=ED5TO"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=ED5TO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=SoTMo"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=SoTMo" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=hC7Fo"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=hC7Fo" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/MondayByNoon/~4/471481222" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://mondaybynoon.com/2008/12/01/replicating-textmate-comment-banner-plugin-for-coda/feed/</wfw:commentRss>
+		<feedburner:awareness xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://api.feedburner.com/awareness/1.0/GetItemData?uri=MondayByNoon&amp;itemurl=http%3A%2F%2Fmondaybynoon.com%2F2008%2F12%2F01%2Freplicating-textmate-comment-banner-plugin-for-coda%2F</feedburner:awareness></item>
+		<item>
+		<title>Recapping the Future of Web Design NYC 2008</title>
+		<link>http://mondaybynoon.com/2008/11/17/recapping-the-future-of-web-design-nyc-2008/</link>
+		<comments>http://mondaybynoon.com/2008/11/17/recapping-the-future-of-web-design-nyc-2008/#comments</comments>
+		<pubDate>Mon, 17 Nov 2008 15:16:42 +0000</pubDate>
+		<dc:creator>Jonathan Christopher</dc:creator>
+		
+		<category><![CDATA[Design]]></category>
+
+		<category><![CDATA[Development]]></category>
+
+		<category><![CDATA[Opinion]]></category>
+
+		<category><![CDATA[conference]]></category>
+
+		<category><![CDATA[FOWD]]></category>
+
+		<category><![CDATA[NYC]]></category>
+
+		<guid isPermaLink="false">http://mondaybynoon.com/?p=220</guid>
+		<description><![CDATA[The Future of Web Design 2008 was again in New York City and I was lucky enough to attend.]]></description>
+			<content:encoded><![CDATA[<p class="single image fowd2008 portrait" id="fowd_intro"><a href="http://www.flickr.com/photos/jonchristopher/3035464235/" title="Arriving at FOWD by jonchristopher, on Flickr"><img src="http://farm4.static.flickr.com/3274/3035464235_46b785ae7a_m.jpg" width="160" height="240" alt="Arriving at FOWD" /></a></p>
+
+<p>I <a href="http://mondaybynoon.com/2008/10/27/upcoming-events-fowd-2008-and-the-first-sidebar-workshop/">mentioned a couple weeks ago</a> that I was working my plans to include stops to upcoming conferences. The first of which was the <a href="http://www.futureofwebdesign.com/2008/newyork/">Future of Web Design NYC</a> and the second being the first <a href="http://sidebarworkshops.com/2008/washingtondc/">Sidebar Workshop</a>. While I couldn&#8217;t make it to Washington D.C. for Sidebar, I thankfully was able to make the short trip to New York for <abbr title="Future of Web Design">FOWD</abbr>.</p>
+
+<p>Unlike last year, I was able to make FOWD 2008 a two day event. While New York isn&#8217;t too far from Albany, making the round trip last year was quite a long day. On the day of the workshops, I met up with <a href="http://cdevroe.com/">Colin Devroe</a> and <a href="http://chrisfehnel.com/">Chris Fehnel</a> to hang out, and snag some <a href="http://www.flickr.com/photos/jonchristopher/3000738358/">awesome Thai</a> for lunch and check out <a href="http://www.flickr.com/photos/jonchristopher/2999215033/">the Apple Store</a>. We made a day of it, snagged a beer or two, and waited for conference day.</p>
+
+<h2>Conference day</h2>
+
+<p><abbr title="Future of Web Design">FOWD</abbr> had another spectacular lineup this year. The keynotes found a wide range of topics, and the variation was excellent.</p>
+
+<div class="section">
+	<p class="single image fowd2008 portrait"><a href="http://www.flickr.com/photos/jonchristopher/3036307506/" title="Ryan Singer - 37signals by jonchristopher, on Flickr"><img src="http://farm4.static.flickr.com/3057/3036307506_c8a98037f4_m.jpg" width="160" height="240" alt="Ryan Singer - 37signals" /></a></p>
+	<h3>Ryan Singer</h3>
+	<p>Ryan Singer of <a href="http://www.37signals.com/">37signals</a> again spoke on Web application design. He&#8217;s a great presenter, and his keynote &#8220;The Future of Web App Interface Design&#8221; didn&#8217;t disappoint. Ryan has the ability to bring interface design back to reality; reminding you that there&#8217;s no need to be clever, just straightforward.</p>
+</div>
+
+<div class="section">
+	<p class="single image fowd2008 portrait"><a href="http://www.flickr.com/photos/jonchristopher/3036313870/" title="Hillman Curtis - hillmancurtis, inc. by jonchristopher, on Flickr"><img src="http://farm4.static.flickr.com/3027/3036313870_228e677004_m.jpg" width="160" height="240" alt="Hillman Curtis - hillmancurtis, inc." /></a></p>
+	<h3>Hillman Curtis</h3>
+	<p><a href="http://hillmancurtis.com/">Hillman Curtis</a> took the stage next for &#8220;Ten Minutes of Design Inspiration&#8221; during which he played one of <a href="http://www.hillmancurtis.com/index.php?/film/view/show_all_films/">his films</a>. He has a fantastic talent for filmmaking and I&#8217;m glad to have seen him present live and in person.</p>
+</div>
+
+<div class="section">
+		<p class="single image fowd2008 portrait"><a href="http://www.flickr.com/photos/jonchristopher/3035481517/" title="Dan Mall - Happy Cog by jonchristopher, on Flickr"><img src="http://farm4.static.flickr.com/3251/3035481517_418bdbd99c_m.jpg" width="160" height="240" alt="Dan Mall - Happy Cog" /></a></p>
+	<h3>Dan Mall</h3>
+	<p>Presenting &#8220;The Experience Layer: Using Flash, JavaScript, and other Technologies to Engage Users&#8221; was <a href="http://danielmall.com/">Dan Mall</a> of <a href="http://www.happycog.com/">Happy Cog Studios</a>. He took the time to explain the real difference between structure, style, behavior, <em>and experience</em>. His keynote was well thought out and better explained the semantics surrounding each layer of separation. I have no doubts that Dan&#8217;s presentation made quite a few people reexamine their view of designing with Web standards in mind.</p>
+</div>
+
+<div class="section">
+	<p class="single image fowd2008 portrait"><a href="http://www.flickr.com/photos/jonchristopher/3036321428/" title="Paul Boag - Headscape Ltd. by jonchristopher, on Flickr"><img src="http://farm4.static.flickr.com/3020/3036321428_4044df72a2_m.jpg" width="160" height="240" alt="Paul Boag - Headscape Ltd." /></a></p>
+	<h3>Paul Boag</h3>
+	<p>On the topic of client education was <a href="http://boagworld.com">Paul Boag</a> of <a href="http://www.headscape.co.uk/">Headscape Ltd</a>. His personality really came through during his keynote and he was more than spot on with his advice. He has thoughtfully made his keynote <a href="http://boagworld.com/conferences/educating_clients_to_say_yes/">available in full</a> through the help of <a href="http://carsonified.com/">Carsonified</a> and <a href="http://www.viddler.com">Viddler</a>. If you&#8217;ve got a spare 35 minutes or so, use it to watch Paul&#8217;s keynote, he did a fantastic job and there&#8217;s some terribly valuable insight to gain.</p>
+</div>
+
+<div class="section">
+	<p class="single image fowd2008 portrait"><a href="http://www.flickr.com/photos/jonchristopher/3035488923/" title="Karl Swedburg - Fusionary Media by jonchristopher, on Flickr"><img src="http://farm4.static.flickr.com/3139/3035488923_d7290bcce7_m.jpg" width="160" height="240" alt="Karl Swedburg - Fusionary Media" /></a></p>
+	<h3>Karl Swedberg</h3>
+	<p>Karl Swedberg of <a href="http://www.fusionary.com/">Fusionary Media</a> was next to take the stage. He took the time to lightly cover the topic of JavaScript libraries. We all love JavaScript libraries, and Karl presented his talk on &#8220;How to Take Advantage of jQuery and Other JavaScript Libraries for your Design.&#8221;</p>
+</div>
+
+<div class="section">
+	<p class="single image fowd2008 landscape"><a href="http://www.flickr.com/photos/jonchristopher/3035490337/" title="Mike Kus - Carsonified by jonchristopher, on Flickr"><img src="http://farm4.static.flickr.com/3002/3035490337_6a77f58010_m.jpg" width="240" height="160" alt="Mike Kus - Carsonified" /></a></p>
+	<h3>Mike Kus</h3>
+	<p>Unfortunately for me, FOWD 2008 was the first time I&#8217;ve heard of Mike Kus and the first time I had seen his work. He took the time to hand illustrate each of his slides and his keynote was fantastic. His talk was titled &#8220;Whatever Happened to the Art in Design&#8221; and I&#8217;m very glad to have seen it.</p>
+</div>
+
+<div class="section">
+	<p class="single image fowd2008 landscape"><a href="http://www.flickr.com/photos/jonchristopher/3036329770/" title="Patrick Haney - Harvard University by jonchristopher, on Flickr"><img src="http://farm4.static.flickr.com/3204/3036329770_178e8809af_m.jpg" width="240" height="160" alt="Patrick Haney - Harvard University" /></a></p>
+	<h3>Patrick Haney</h3>
+	<p>Patrick Haney, who is <a href="http://patrickhaney.com/">not a sausage</a>, took the time to cover &#8220;Web Design Fundamentals: Learning from the Past to Better the Future.&#8221; Patrick went back to basics with his keynote, reminding us all how important it is to keep design fundamentals in mind throughout every project. Although it was great to see him in person, I unfortunately was unable to speak with him personally. Hopefully that opportunity comes up sooner than later.</p>
+</div>
+
+<div class="section">
+	<p class="single image fowd2008 portrait"><a href="http://www.flickr.com/photos/jonchristopher/3036332116/" title="Nicholas Felton - Megafone by jonchristopher, on Flickr"><img src="http://farm4.static.flickr.com/3162/3036332116_6a503fe8d0_m.jpg" width="160" height="240" alt="Nicholas Felton - Megafone" /></a></p>
+	<h3>Nicholas Felton</h3>
+	<p>Nicholas Felton, widely known for <a href="http://www.feltron.com/">Feltron</a>, presented on &#8220;Charting Daily Data&#8221; which was intriguing to say the least. I&#8217;ve always been a fan of his annual reports, and getting an insider view of how the reports progressed over time was fantastic. He also took the time to give an overview of his project, <a href="http://daytum.com/">Daytum</a>, a website targeted at enabling people to track their own daily data.</p>
+</div>
+
+<div class="section">
+	<p class="single image fowd2008 landscape"><a href="http://www.flickr.com/photos/jonchristopher/3036335664/" title="Derek Powazek - Powazek Productions by jonchristopher, on Flickr"><img src="http://farm4.static.flickr.com/3016/3036335664_501231234d_m.jpg" width="240" height="160" alt="Derek Powazek - Powazek Productions" /></a></p>
+	<h3>Derek Powazek</h3>
+	<p>&#8220;The Future of Community and Crowd-sourced Design&#8221; was the keynote presented by <a href="http://powazek.com/">Derek Powazek</a>. Derek is a very personable speaker, and he seems like one of those people you can meet for the first time and feel like you&#8217;ve known for years. He cleared up the true meaning of crowd-sourced design and discussed where things appear to be headed.</p>
+</div>
+
+<div class="section">
+	<p class="single image fowd2008 portrait"><a href="http://www.flickr.com/photos/jonchristopher/3036337978/" title="Nick La - ndesign-studio by jonchristopher, on Flickr"><img src="http://farm4.static.flickr.com/3155/3036337978_965585611e_m.jpg" width="160" height="240" alt="Nick La - ndesign-studio" /></a></p>
+	<h3>Nick La</h3>
+	<p>One of my favorite keynotes was &#8220;Finding Inspiration from your Environment&#8221; by Nick La of <a href="http://www.ndesign-studio.com/">n.design studio</a> and designer of the famous <a href="http://www.webdesignerwall.com/">Web Designer Wall</a>. His illustrations are nothing short of breathtaking, and he took the time to divulge his secrets as to finding inspiration. He gave a sneak peak of two upcoming pieces, and made everyone in the room jealous of his pure talent.</p>
+</div>
+
+<div class="section">
+	<h3>Closing Discussion</h3>
+	<p>The final segment of the conference day was a discussion titled &#8220;Designers and Developers, Why Can&#8217;t we all Just get Along?&#8221; which aimed to tackle the up and coming divide between the two professions. The panel consisted of Joe Stump (<a href="http://www.digg.com/">digg</a>), Liz Danzico (<a href="http://www.bobulate.com/">bobulate</a>), Chris Lea (<a href="http://www.mediatemple.com/">Media Temple</a>), and Ryan Sims (<a href="http://www.virb.com/">Virb</a>). Unfortunately, I was only able to stay for a few minutes due to travel constraints. If anyone was in attendance and could provide some insight in the comments that would be fantastic, I&#8217;m eager to hear how it went.</p>
+</div>
+
+<h4>And that&#8217;s that</h4>
+
+<p>I had a great time at FOWD this year, Carsonified really knows what they&#8217;re doing and they make the experience really great. I can&#8217;t thank <a href="http://cdevroe.com/">Colin</a> and <a href="http://chrisfehnel.com/">Chris</a> enough for putting up with me over the two days; I really appreciate it.</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/MondayByNoon?a=pvLmN"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=pvLmN" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=YNbGn"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=YNbGn" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=z1GRn"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=z1GRn" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/MondayByNoon/~4/456075280" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://mondaybynoon.com/2008/11/17/recapping-the-future-of-web-design-nyc-2008/feed/</wfw:commentRss>
+		<feedburner:awareness xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://api.feedburner.com/awareness/1.0/GetItemData?uri=MondayByNoon&amp;itemurl=http%3A%2F%2Fmondaybynoon.com%2F2008%2F11%2F17%2Frecapping-the-future-of-web-design-nyc-2008%2F</feedburner:awareness></item>
+		<item>
+		<title>I Have a Huge Problem with WYSIWYG Editors</title>
+		<link>http://mondaybynoon.com/2008/11/10/i-have-a-huge-problem-with-wysiwyg-editors/</link>
+		<comments>http://mondaybynoon.com/2008/11/10/i-have-a-huge-problem-with-wysiwyg-editors/#comments</comments>
+		<pubDate>Mon, 10 Nov 2008 15:37:45 +0000</pubDate>
+		<dc:creator>Jonathan Christopher</dc:creator>
+		
+		<category><![CDATA[Clients]]></category>
+
+		<category><![CDATA[Design]]></category>
+
+		<category><![CDATA[Development]]></category>
+
+		<category><![CDATA[Opinion]]></category>
+
+		<category><![CDATA[CMS]]></category>
+
+		<category><![CDATA[content]]></category>
+
+		<category><![CDATA[management]]></category>
+
+		<category><![CDATA[WYSIWYG]]></category>
+
+		<guid isPermaLink="false">http://mondaybynoon.com/?p=217</guid>
+		<description><![CDATA[I've got a strong distaste for using WYSIWYG editors in content management systems, but it has become the accepted norm.]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve yet to see a <abbr title="What You See Is What You Get">WYSIWYG</abbr> implementation that&#8217;s in the least bit helpful when considering both the client <em>and</em> the design itself. I&#8217;m not talking text editors here, no. I&#8217;m talking copy editors in content management systems. I hate to write a rant, but unfortunately this piece is shaping up to be just that.</p>
+
+<h2>Again with content management?</h2>
+
+<p>I&#8217;ve come to the realization that clients and content management systems <em>do not mix</em>. As an example, in a recent <abbr title="Request for Proposal">RFP</abbr> (a subject unto itself), the outlined requirements of the provided <abbr title="Content Management System">CMS</abbr> included the ability to adjust kerning, line-height, typeface, and color of all content on the page.</p>
+
+<p>Going beyond the fact that this request was put together by someone who has absolutely no idea about modern Web design, I&#8217;m beginning to see more fluff along these lines. Are we really at such a level where average potential clients are making the leap to such things as kerning and line-height?</p>
+
+<h3>The client issue</h3>
+
+<p>What it comes down to, I suppose, is the level of client you&#8217;re working with. There are clients who just want what they have seen as possible. If there is a feature available and you don&#8217;t offer it, your skill is inferior. We&#8217;re well aware of <a href="http://en.wikipedia.org/wiki/Kitchen_sink_syndrome">scope creep</a> and <a href="http://en.wikipedia.org/wiki/Software_bloat">bloat</a>, but clients do not often respect either.</p>
+
+<p>I&#8217;m not knocking the client perspective in the least. I, in fact, truly enjoy doing client work. I feel accomplished when a client is both impressed and pleased with their project once things have been pushed live. It&#8217;s a great feeling, knowing you have helped make their project a reality. My company makes a consistent effort, however, to debunk many of the preconceived notions that follow clients through our door. It&#8217;s often a strenuous process, but everyone is better off for it.</p>
+
+<p>I&#8217;m consistently in a battle with trying to better the overall experience for a client, while keeping a close eye on the direct effect any change will have on the design. I&#8217;ve written before on the <a href="http://mondaybynoon.com/2007/08/13/how-to-retain-site-quality-after-delivery/">general abuse of content management systems by clients</a>. I&#8217;ve even brought up <a href="http://mondaybynoon.com/2008/08/18/clients-and-content-management-systems/">the trouble with WYSIWYG in CMSs</a>. While both pieces shine a harsh light on client interaction with your designs, I&#8217;d like to start focusing on any positives that can come from using a WYSIWYG editor.</p>
+
+<h3>Overall effectiveness?</h3>
+
+<p>I understand that every CMS under the sun employs a WYSIWYG editor for most copy-areas, but it&#8217;s not working. I cannot in good faith discredit all the time and effort that has gone into the leading editors, and I don&#8217;t see them going anywhere soon. The trouble, however, is that they&#8217;re too easy to break. I can&#8217;t count the number of times I&#8217;ve had to manually edit a WYSIWYG block because the editor lost track of a <code>strong</code> tag somewhere along the line. Clients will call, furious that the entire page is bold, questioning the value of our entire CMS based on the fact that he pasted directly from Word.</p>
+
+<p>It&#8217;s not his fault he used Word, however. Commonality shows that Word is a standard method of formatting text in the business world. To say that he is &#8220;not allowed&#8221; to use Word because it breaks his website goes back to the age-old issue of Internet Explorer &#8220;breaking&#8221; the Internet. Designers know it to be true, but to everyone else, the project itself is the failure, not the utility.</p>
+
+<p>The trouble here is the divide between how I view the Web, and how clients view the Web. Not just taking into consideration the quality and semantic value of markup, but the design itself. A client doesn&#8217;t realize that a stylesheet has been carefully prepared for his benefit, that center justifying, bolding, and typing in all caps isn&#8217;t going to achieve the effect he&#8217;s looking for.</p>
+
+<h3>Stuck in a rut</h3>
+
+<p>I truly wish I had a flawless solution for this issue I can&#8217;t seem to leave behind, but I don&#8217;t. At the very least, I will make a continuous effort to provide the most streamlined, stripped down WYSIWYG copy editor I possibly can.</p>
+
+<p>One thing I&#8217;d like to specifically raise as an issue is that of including imagery in WYSIWYG editors. I haven&#8217;t thought too much into it, but I think preventing the addition of images directly in a WYSIWYG field will solve quite a bit of my issue. That is not to say that the inclusion of images will be removed completely, simply delegated to the CMS itself as opposed to the editor. While impressive, the handling of images directly within a WYSIWYG editor has never worked out in my favor. I can&#8217;t count the number of times a client has requested that someone &#8220;look into the image on the About page, it looks funny.&#8221;</p>
+
+<p>While I don&#8217;t see the omission of images in WYSIWYG as a plausible solution, it&#8217;s something I&#8217;d like to work at over the coming months. I&#8217;m not sure how, but it will be a goal of mine.</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/MondayByNoon?a=NPzCN"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=NPzCN" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=7FQhn"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=7FQhn" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=f2x3n"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=f2x3n" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/MondayByNoon/~4/448514995" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://mondaybynoon.com/2008/11/10/i-have-a-huge-problem-with-wysiwyg-editors/feed/</wfw:commentRss>
+		<feedburner:awareness xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://api.feedburner.com/awareness/1.0/GetItemData?uri=MondayByNoon&amp;itemurl=http%3A%2F%2Fmondaybynoon.com%2F2008%2F11%2F10%2Fi-have-a-huge-problem-with-wysiwyg-editors%2F</feedburner:awareness></item>
+		<item>
+		<title>Upcoming Events: FOWD 2008 and the First Sidebar Workshop</title>
+		<link>http://mondaybynoon.com/2008/10/27/upcoming-events-fowd-2008-and-the-first-sidebar-workshop/</link>
+		<comments>http://mondaybynoon.com/2008/10/27/upcoming-events-fowd-2008-and-the-first-sidebar-workshop/#comments</comments>
+		<pubDate>Mon, 27 Oct 2008 12:57:11 +0000</pubDate>
+		<dc:creator>Jonathan Christopher</dc:creator>
+		
+		<category><![CDATA[Design]]></category>
+
+		<category><![CDATA[Development]]></category>
+
+		<category><![CDATA[Education]]></category>
+
+		<category><![CDATA[conference]]></category>
+
+		<category><![CDATA[event]]></category>
+
+		<category><![CDATA[workshop]]></category>
+
+		<guid isPermaLink="false">http://mondaybynoon.com/?p=214</guid>
+		<description><![CDATA[The Future of Web Design 2008 is coming back to NYC, and a new event, the first Sidebar Workshop is happening in Washington D.C.]]></description>
+			<content:encoded><![CDATA[<p>Industry conferences, events, and workshops are great. If you follow the community in the least, you know what great knowledge The Greats are pushing out on a consistent basis. One of the most fantastic things about conferences, events, and workshops is that you&#8217;re provided an entire day (or more) of consistently polished official keynotes.</p>
+
+<p>While the articles published by many of the speakers at these events are invaluable, the presentations and workshops always seem to end up at a higher level. You&#8217;re able to get <em>that</em> much more out of an official keynote. Whether it be the associated visuals, or the fact that you&#8217;re able to physically see and hear a designer you&#8217;ve been following for years, something about the event leaves you with that much more.</p>
+
+<h2>Future of Web Design</h2>
+
+<p>If you&#8217;ve been reading Monday By Noon for the past year, you&#8217;ll know that last year I was able to attend the <a href="http://mondaybynoon.com/2007/11/12/future-of-web-design-nyc-2007-recap/">Future of Web Design 2007</a> in New York City. It was a fantastic event. I was able to go with a few of my colleagues and we all had a tremendous time.</p>
+
+<p>Thankfully, <a href="http://www.carsonified.com/">Carsonified</a> is bringing back FOWD NYC for 2008. I&#8217;m still working out some logistical details, but I&#8217;m nearly positive I&#8217;ll be able to attend this year as well. Should it all work out, I&#8217;ll be able to again see some people I didn&#8217;t get to spend nearly enough time with. <a href="http://cdevroe.com/">Colin</a>, for instance, and maybe <a href="http://snook.ca/jonathan/">Jonathan</a>, although I&#8217;m not completely sure if he will be attending. I was only able to shake his hand at FOWD 2007 primarily due to the (literal) line of people waiting to ask him questions. Hopefully I&#8217;ll be able to meet a few others face to face this year now that I&#8217;m more used to the scale of FOWD; we&#8217;ll see!</p>
+
+<p>If you&#8217;re at all on the fence about going, just take a quick look at <a href="http://www.futureofwebdesign.com/2008/newyork/speakers">the list of speakers</a> for this year - very impressive. I&#8217;d take the time to list the keynotes I&#8217;m most excited about, but that would mean typing up each presentation slotted for the day. In all honesty, there are some big names presenting on some great topics throughout the day, and I can&#8217;t wait.</p>
+
+<p>FOWD starts a week from today, November 3, with a day of workshops and continues until Conference Day on the 4th.</p>
+
+<h2>Sidebar Workshop</h2>
+
+<p>To my surprise, the four musketeers took it upon themselves to become even busier by putting on a workshop of their own. The team at <a href="http://sidebarcreative.com/">Sidebar Creative</a> presents <a href="http://sidebarworkshops.com/2008/washingtondc/">Sidebar Workshop</a> on November 12th, 2008 in Washington D.C. Not only am I thrilled that the Sidebar team is putting on a conference, I&#8217;m thanking my lucky stars it&#8217;s on the East Cost.</p>
+
+<p>A full day has been put together starring each of the Sidebar Team. <a href="http://avalonstar.com/">Bryan Veloso</a> will be speaking on interface planning and design, <a href="http://superfluousbanter.org/">Dan Rubin</a> plans on talking you through the export and optimization of images for your designs. <a href="http://orderedlist.com/">Steve Smith</a> will speak on the process of bringing your markup and style together, and <a href="http://snook.ca/jonathan/">Jonathan Snook</a> will provide some of his wisdom on JavaScript libraries.</p>
+
+<p>Last, but certainly not least, the Sidebar team has allowed for a group discussion at the end of the day. They&#8217;re offering a chance for attendees to ask specific questions they&#8217;ve got, and get instant feedback. If you&#8217;re in the D.C. area, I&#8217;d suggest snagging a seat at this event. The Sidebar Creative team is an impressive group consisting entirely of highly respected professionals in our field.</p>
+
+<h3>I hope it all works out</h3>
+
+<p>As I mentioned, I&#8217;m still working out some of the gritty details surrounding both events, but I&#8217;m doing my best to make it happen. Have you committed to either event?</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/MondayByNoon?a=PiuKM"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=PiuKM" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=luDmm"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=luDmm" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=JFZrm"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=JFZrm" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/MondayByNoon/~4/433552841" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://mondaybynoon.com/2008/10/27/upcoming-events-fowd-2008-and-the-first-sidebar-workshop/feed/</wfw:commentRss>
+		<feedburner:awareness xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://api.feedburner.com/awareness/1.0/GetItemData?uri=MondayByNoon&amp;itemurl=http%3A%2F%2Fmondaybynoon.com%2F2008%2F10%2F27%2Fupcoming-events-fowd-2008-and-the-first-sidebar-workshop%2F</feedburner:awareness></item>
+		<item>
+		<title>Respecting Color Contrast in Web Design</title>
+		<link>http://mondaybynoon.com/2008/10/20/respecting-color-contrast-in-web-design/</link>
+		<comments>http://mondaybynoon.com/2008/10/20/respecting-color-contrast-in-web-design/#comments</comments>
+		<pubDate>Mon, 20 Oct 2008 12:51:27 +0000</pubDate>
+		<dc:creator>Jonathan Christopher</dc:creator>
+		
+		<category><![CDATA[Accessibility]]></category>
+
+		<category><![CDATA[Design]]></category>
+
+		<category><![CDATA[Opinion]]></category>
+
+		<category><![CDATA[color]]></category>
+
+		<category><![CDATA[contrast]]></category>
+
+		<category><![CDATA[Web]]></category>
+
+		<guid isPermaLink="false">http://mondaybynoon.com/?p=208</guid>
+		<description><![CDATA[Color contrast is a very important aspect of Web design. Be sure to test your color contrast.]]></description>
+			<content:encoded><![CDATA[<p>It&#8217;s no secret that there are some unique characteristics surrounding Web design as a medium. We as designers pride ourselves on embracing the various limitations that come bundled with the Web and using them to our advantage.</p>
+
+<p>One inescapable limitation from which we&#8217;ll never be able to escape is that of color contrast. While it&#8217;s only obvious to ensure you&#8217;re working within acceptable limitations of color contrast in the general sense of design, we have even more to contend with. Our designs <em>must</em> be equally readable in a myriad of situations.</p>
+
+<p>Sure, print designers need to worry about what their piece is going to look like in various lighting conditions, or how a digital file will translate to something physical. There is a lot to consider as far as the method of printing as well as the material itself. Web design brings something completely new to the table; monitors.</p>
+
+<h2>The trouble with contrast: monitors</h2>
+
+<p>Even if you&#8217;re new to Web design, it won&#8217;t take long to realize that contrast is something that never goes away. Even when you&#8217;ve got a solid grasp on limitations, and you piece together a design specifically surrounding color contrast on the Web, your client will request the type be a bit darker &amp; bold. Unfortunately, client intervention doesn&#8217;t tie directly to this issue, so we&#8217;ll move on.</p>
+
+<p>Computer hardware has a tendency of following the <a href="http://en.wikipedia.org/wiki/Adage">adage</a> &#8220;you get what you pay for.&#8221; Unfortunately, when it comes to many people and computers; the cheaper the better. Bargain equipment is very attractive for a number of reasons, none of which we&#8217;ll need to explore at this time. What does matter to us, is that many of the monitors on which your design will be displayed are of much less quality than yours. Your gradients will be less noticeable, your drop shadows nearly nonexistent, and your type more difficult to read.</p>
+
+<p>It seems dismal, but Web designers need to account for the worst case scenario, or very close to it. We have the responsibility of producing work which is not only usable, versatile, aesthetically pleasing, standardized, valid, and optimized, but also beautiful on substandard equipment.</p>
+
+<h3>Keeping your contrast in check</h3>
+
+<p>There are quite a few tools available for testing your color contrast. There have been many articles written on the subject as well. Some fantastic research has been performed, allowing us to easily observe our color contrast and measure it against accepted values.</p>
+
+<p>I have a tool that I&#8217;ve come to know and love in testing color contrast. <a href="http://www.snook.ca/technical/colour_contrast/colour.html">Color Contrast Check</a> by everyone&#8217;s favorite, <a href="http://www.snook.ca/jonathan">Jonathan Snook</a>, has come out on top for me. His tool conforms to accepted standards, and allows designers to very easily check to see how the contrast measures up.</p>
+
+<p>There are many other tools available for checking color contrast, which do you use?</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/MondayByNoon?a=VA0ZM"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=VA0ZM" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=oraVm"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=oraVm" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=lPDrm"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=lPDrm" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/MondayByNoon/~4/426386385" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://mondaybynoon.com/2008/10/20/respecting-color-contrast-in-web-design/feed/</wfw:commentRss>
+		<feedburner:awareness xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://api.feedburner.com/awareness/1.0/GetItemData?uri=MondayByNoon&amp;itemurl=http%3A%2F%2Fmondaybynoon.com%2F2008%2F10%2F20%2Frespecting-color-contrast-in-web-design%2F</feedburner:awareness></item>
+		<item>
+		<title>Loving WebKit: The Web Inspector Redesign is Huge</title>
+		<link>http://mondaybynoon.com/2008/10/06/loving-webkit-the-web-inspector-redesign-is-huge/</link>
+		<comments>http://mondaybynoon.com/2008/10/06/loving-webkit-the-web-inspector-redesign-is-huge/#comments</comments>
+		<pubDate>Mon, 06 Oct 2008 13:51:50 +0000</pubDate>
+		<dc:creator>Jonathan Christopher</dc:creator>
+		
+		<category><![CDATA[Current Events]]></category>
+
+		<category><![CDATA[DOM]]></category>
+
+		<category><![CDATA[Development]]></category>
+
+		<category><![CDATA[HTML]]></category>
+
+		<category><![CDATA[Opinion]]></category>
+
+		<category><![CDATA[browser]]></category>
+
+		<category><![CDATA[engine]]></category>
+
+		<category><![CDATA[JavaScript]]></category>
+
+		<category><![CDATA[WebKit]]></category>
+
+		<guid isPermaLink="false">http://mondaybynoon.com/?p=202</guid>
+		<description><![CDATA[The freshly redesigned Web Inspector is a huge change for WebKit, and it's making the engine that much better.]]></description>
+			<content:encoded><![CDATA[<p>I get excited about new software, sometimes to a fault. I also get equally excited about significant software updates that end up representing a significant change for the better. A piece of software with which I am <em>consistently</em> impressed with is WebKit. WebKit has another great factor in that it&#8217;s free, and you&#8217;re able to check out the latest and greatest using readily available <a href="http://nightly.webkit.org/">Nightly Builds</a>.</p>
+
+<p>Not only am I a big fan of WebKit because it&#8217;s an extremely solid engine in and of itself, the developers <strong>get it</strong>. They&#8217;re consistently implementing features we all want to use, all the while refining their lightweight, reliable engine.</p>
+
+<h2>The Web Inspector Redesign</h2>
+
+<p>The WebKit team recently hit another grand slam with me in giving some love to the Web Inspector; <a href="http://webkit.org/blog/197/web-inspector-redesign/">it&#8217;s been redesigned</a>. There is so much to say about the redesign, but that&#8217;s better left <a href="http://webkit.org/blog/197/web-inspector-redesign/">to the team itself</a>. Instead, I&#8217;d like to briefly cover what I&#8217;m loving about the update.</p>
+
+<p class="single image">
+	<a href="http://webkit.org/blog/197/web-inspector-redesign/"><img src="http://mondaybynoon.com/images/web-inspector-redesign.png" alt="Screenshot of the redesigned Web Inspector"></a>
+</p>
+
+<p>The first change I was in love with was the decision to have the Web Inspector default as a panel in the browser itself as opposed to a separate window. Every time I use the Web Inspector in Safari, I always end up toggling that option and using a panel instead. Although it&#8217;s a tiny, fairly specific personal preference, I&#8217;m glad to see it changed.</p>
+
+<p>I&#8217;m a big fan of the direction in which the interface changes are headed. I think the grouped information organization method will help developers do exactly what they want to do when they want to do it. Additionally, the interface now includes the console on every panel: <em>awesome</em>. Integration of the error and warning counts: <em>awesome</em>.</p>
+
+<h3>The Elements Panel</h3>
+
+<p>The Elements panel has had quite a bit of work done as well. Visually it&#8217;s quite similar but the WebKit team notes that a number of changes have been made under the hood. Specific to the way I work is:</p>
+
+<ul>
+	<li><strong>Automatic updates</strong> - the DOM tree will update when nodes are added to or removed from the inspected page.</li>
+	<li><strong>Inspect clicked elements</strong> - enabling the new inspect mode lets you hover around the page to find a node to inspect. Clicking on a node in the page will focus it in the Elements panel and turn off the inspect mode. This was contributed by Matt Lilek.</li>
+</ul>
+
+<p>Of particular importance to me is the first item above: automatic updates. In this age of &#8216;JavaScript everywhere&#8217; I&#8217;ve become increasingly dependent on the DOM as represented in the viewport, not the initial rendering. My workflow consists of using View Source as one reference (representing the initial document load) and comparing that to the living <abbr title="Document Object Model">DOM</abbr>. This is great news for me considering the way I work.</p>
+
+<p>Inspecting clicked elements is something I&#8217;ve found myself doing all the time via <a href="http://www.getfirebug.com/">Firebug</a> lately. I&#8217;m not sure where I picked up the habit, and I don&#8217;t think it&#8217;s a bad one, but it&#8217;s great to see the feature available in the Web Inspector.</p>
+
+<p>The Web Inspector update also includes style property editing. I&#8217;ve noticed that many developers are in the habit of using live CSS editing to fine tune things before committing to a stylesheet. I&#8217;ve never found myself in the habit, but I&#8217;m glad to see it in the Web Inspector update; it will be very attractive for many people. On top of that, the Elements panel lets you edit just about every aspect of your document live, making it quite an impressive tool by itself.</p>
+
+<h3>The Scripts Panel</h3>
+
+<p>I don&#8217;t believe any modern Web developer can make it very long without writing at least a small bit of JavaScript. That&#8217;s not to say that JavaScript represents a burden we all have to deal with, quite the contrary. JavaScript should be a technology all modern Web developers have on their utility belt.</p>
+
+<p>The <a href="http://webkit.org/blog/61/introducing-drosera/">previous JavaScript debugger</a> of the Web Inspector has been completely replaced with an integrated debugger: <em>awesome</em>. The debugger itself has been given a great jump start, incorporating some consistency with Firebug. You&#8217;re able to check out all the script resources present in the current document. You can set breakpoints, pause, resume, and step through the code. The Scripts panel also provides a sidebar consisting of the current call stack and in-scope variables. This is a great direction for the Scripts panel and I can&#8217;t wait to see it evolve even further.</p>
+
+<p>If I had it my way, the Scripts panel would next include tracing of Ajax calls a la Firebug. I use that feature <em>all the time</em>. Having the ability to visually note when a call is made, when a call is completed, as well as the details of the call itself (e.g. response) has proven to be very valuable to me. Sure there are workarounds in logging much of the data, but it&#8217;s a great thing to have it all baked in.</p>
+
+<h3>I love WebKit</h3>
+
+<p>There is <strong><em>tons</em></strong> of information in <a href="http://webkit.org/blog/197/web-inspector-redesign/">the official Web Inspector redesign</a> article, and I highly recommend you check it out as soon as possible. WebKit has always been half a step short of my full adoption primarily due to a lack of developer features, but this update has solidified my opinion that I&#8217;ll be using WebKit as a primary environment sooner than later. The features keeping me from switching have been menial things, but features I&#8217;ve become very comfortable with. The features are now making their way into nightly builds, and I couldn&#8217;t be more excited.</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/MondayByNoon?a=GftZM"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=GftZM" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=AnW6m"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=AnW6m" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=KiH1m"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=KiH1m" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/MondayByNoon/~4/412811285" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://mondaybynoon.com/2008/10/06/loving-webkit-the-web-inspector-redesign-is-huge/feed/</wfw:commentRss>
+		<feedburner:awareness xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://api.feedburner.com/awareness/1.0/GetItemData?uri=MondayByNoon&amp;itemurl=http%3A%2F%2Fmondaybynoon.com%2F2008%2F10%2F06%2Floving-webkit-the-web-inspector-redesign-is-huge%2F</feedburner:awareness></item>
+		<item>
+		<title>Link Text: Where Does it Come From?</title>
+		<link>http://mondaybynoon.com/2008/09/29/link-text-where-does-it-come-from/</link>
+		<comments>http://mondaybynoon.com/2008/09/29/link-text-where-does-it-come-from/#comments</comments>
+		<pubDate>Mon, 29 Sep 2008 13:51:12 +0000</pubDate>
+		<dc:creator>Jonathan Christopher</dc:creator>
+		
+		<category><![CDATA[Opinion]]></category>
+
+		<category><![CDATA[SEO]]></category>
+
+		<category><![CDATA[Usability]]></category>
+
+		<category><![CDATA[anchor]]></category>
+
+		<category><![CDATA[link]]></category>
+
+		<category><![CDATA[links]]></category>
+
+		<guid isPermaLink="false">http://mondaybynoon.com/?p=192</guid>
+		<description><![CDATA[Link text can have a great effect on the overall effectiveness of any link. Take into consideration both usability and SEO when writing your link text.]]></description>
+			<content:encoded><![CDATA[<p>The Web wouldn&#8217;t exist without hyperlinks. The act of linking one document to another is the fundamental concept upon which the Internet was built. While technologies have vastly expanded on the simple context, hyperlinks still tie the Web together, but at the same time there&#8217;s more to anchors.</p>
+
+<p>Links have become extremely big players in two major aspects of the modern Web; usability and search engine optimization. Anchors now have a measurable effectiveness based on both their <code>href</code> and what is more important: link text. How do we come up with link text? Are there any conventions to follow that will benefit our end goal whether it be improved usability or better SEO (or both)?</p>
+
+<p>Some time ago, <a href="http://www.cameronmoll.com">Cameron Moll</a> published a very brief post <a href="http://www.cameronmoll.com/archives/2008/07/linkification/">asking exactly that</a>. He went ahead and used a very comprehensive example, asking his readers where they would place the anchor. An <a href="http://www.cameronmoll.com/archives/2008/07/linkification/#comments">astounding number of comments</a> provides quite a bit of insight.</p>
+
+<h2>Link text and usability</h2>
+
+<p>It may seem a bit odd to juxtapose link text and associated usability, but the two do have common ground. I&#8217;ve written before on the (still common) tendency to <a href="http://mondaybynoon.com/2006/04/24/click-here-to-read-this-article/">use &#8220;click here&#8221; as link text</a> and the issues that rise as a result. The phrase &#8220;click here&#8221; while strikingly suggestive, provides absolutely no insight as to the resulting action, unless viewed in context with surrounding copy (or imagery).</p>
+
+<p>While &#8220;click here&#8221; has been accepted by the vast majority of Internet users as a completely valid (and sometimes <em>suggested</em>) phrase to use as link text, you&#8217;re much better off taking a few minutes to piece together a more effective string.</p>
+
+
+<h3>Link text and Search Engine Optimization (SEO)</h3>
+
+<p>Effectively phrasing your link text will also hold many benefits when considering your SEO efforts. Search engine technologies have embraced (to a high degree) the text used in hyperlinks. Search engines will view that text as an explanation of the resource to which it links.</p>
+
+<p>When comparing a link to a product on the Web, for instance, there are many choices as to what link text you may want to use. <a href="http://www.cameronmoll.com/archives/2008/07/linkification/">Cameron&#8217;s example</a> is extremely comprehensive in presenting quite a few options for link text. It only takes a quick look at the comment thread to see the varying thought that goes into the creation of link text. It&#8217;s great to see how other people view links, and the reasons chosen for which text to use.</p>
+
+<p>What&#8217;s important to remember is that link text can have significant effect on both the usability and <abbr title="Search Engine Optimization">SEO</abbr> of any document on the Web.</p>
+
+<p>With all of us knowing better than to use &#8220;click here&#8221;, have you come up with any sort of system to help you develop your link text? Do you consider SEO when marking up an anchor? Do you make an effort to fill in <a href="http://mondaybynoon.com/2006/04/10/dont-neglect-the-title-attribute/">the title attribute</a>? What other tips or tricks do you have up your sleeve?</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/MondayByNoon?a=S7nZL"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=S7nZL" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=xfjTl"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=xfjTl" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=lXP1l"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=lXP1l" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/MondayByNoon/~4/406278082" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://mondaybynoon.com/2008/09/29/link-text-where-does-it-come-from/feed/</wfw:commentRss>
+		<feedburner:awareness xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://api.feedburner.com/awareness/1.0/GetItemData?uri=MondayByNoon&amp;itemurl=http%3A%2F%2Fmondaybynoon.com%2F2008%2F09%2F29%2Flink-text-where-does-it-come-from%2F</feedburner:awareness></item>
+		<item>
+		<title>What Works Best for Design Presentation?</title>
+		<link>http://mondaybynoon.com/2008/09/22/what-works-best-for-design-presentation/</link>
+		<comments>http://mondaybynoon.com/2008/09/22/what-works-best-for-design-presentation/#comments</comments>
+		<pubDate>Mon, 22 Sep 2008 15:25:16 +0000</pubDate>
+		<dc:creator>Jonathan Christopher</dc:creator>
+		
+		<category><![CDATA[Clients]]></category>
+
+		<category><![CDATA[Design]]></category>
+
+		<category><![CDATA[client]]></category>
+
+		<category><![CDATA[presentation]]></category>
+
+		<guid isPermaLink="false">http://mondaybynoon.com/?p=189</guid>
+		<description><![CDATA[Presenting flat comps for Web design isn't in your best interest. Take the next step and provide designs as what they are; websites.]]></description>
+			<content:encoded><![CDATA[<p>One of the more hefty, involved parts of client work is the approval process. There are a number of hurdles to overcome to make sure the details surrounding deliverables are clear. It&#8217;s very frustrating to feel as though a project is coming to a close, all the while your client has been under an assumption of something different. Beyond the clarity of scope or other project details, one of the more difficult things my company has run into is presentation of design comps.</p>
+
+<h2>Presenting a comp</h2>
+
+<p>Over time, my company has come up with a few ideas as far as ways to effectively present our designs. We&#8217;ve gone so far as to bring one of our own machines to a client meeting in order to make sure things were presented properly.</p>
+
+<p>Very often, clients would have concerns about tints, hues, contrast, and other design elements. That is not to say a client is incorrect in doing so, these are issues constantly under fire simply by the medium that is the Web. We were doing ourselves a disservice by bringing our own equipment (which has been calibrated) and using our own software. At the end of the day, even if a client loves a design on your own gear, when the design is shown to a friend, it won&#8217;t look the same.</p>
+
+<p>The issue isn&#8217;t inescapable, though. No matter what, when the client shows the site to someone else on a different monitor, that&#8217;s the way of life in Web design. It is important, however, to avoid creating ideal experiences when presenting Web design.</p>
+
+<h3>The way it should be</h3>
+
+<p>We had to keep in mind that we&#8217;re presenting websites. We&#8217;re used to compensating for the shortcomings of the medium, so why make things harder by presenting in an ideal environment?</p>
+
+<p>We&#8217;ve come up with a quick and dirty development process just before the designs are presented to clients. During this process, the website will be loosely put together as a static, stylized document. The markup will be junk, and there might even be some inline styles. It doesn&#8217;t matter though, we&#8217;re just presenting a comp. The markup we&#8217;re writing won&#8217;t make it past the end of the day. It needed to be quick though; we bill by the hour.</p>
+
+<p>Using this method, we&#8217;ve got a design for presentation that will be properly viewed in a browser. It&#8217;s much more effective to present this way not only because the client is in a proper mindset, but the design resides in surroundings which affects perception. Browser chrome can indeed have slight influence on a design when compared to a flat file viewed in another application.</p>
+
+<p>There are also times where it&#8217;s applicable to include a bit of pseudo JavaScript interactivity at this stage. Sometimes for us it&#8217;s very difficult to explain in words the interaction that will be made available. Most of the time clients are hearing about Ajax for the first time and it&#8217;s quite difficult to thoroughly understand what&#8217;s going to happen.</p>
+
+<p>Beyond that, and perhaps most important, is the fact that the client is viewing the design under their circumstances. Their <abbr title="Operating System">OS</abbr>, their browser, their color calibration, their habits and tendencies. All of their concerns will be effectively settled because they&#8217;re able to &#8220;work&#8221; with the design as it was meant to be.</p>
+
+<p>Interestingly enough, <a href="http://www.stuffandnonsense.co.uk/">Andy Clarke</a> has just posted his thoughts on the issue on <a href="http://forabeautifulweb.com/blog/about/time_to_stop_showing_clients_static_design_visuals/">For A Beautiful Web</a> and indicates that he takes this process even further. He&#8217;ll piece together quite a bit more markup and style than I&#8217;m used to, and simply work from there as the design progresses. With each iteration, a link is provided to his client and the cycle is repeated until completion.</p>
+
+<p>While I think that&#8217;s a great idea, unfortunately I don&#8217;t see it working for my company quite yet. Our clients are far too quick to change their minds throughout a project, which would result in us taking numerous steps back, causing an awkward exchange when we bill for the design work that wasn&#8217;t ever used. Either way, it&#8217;s great to see another outlook on the process.</p>
+
+<p>How do you present designs? What&#8217;s worked? What hasn&#8217;t?</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/MondayByNoon?a=GsqjL"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=GsqjL" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=fME7l"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=fME7l" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=L0t8l"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=L0t8l" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/MondayByNoon/~4/399881531" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://mondaybynoon.com/2008/09/22/what-works-best-for-design-presentation/feed/</wfw:commentRss>
+		<feedburner:awareness xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://api.feedburner.com/awareness/1.0/GetItemData?uri=MondayByNoon&amp;itemurl=http%3A%2F%2Fmondaybynoon.com%2F2008%2F09%2F22%2Fwhat-works-best-for-design-presentation%2F</feedburner:awareness></item>
+		<item>
+		<title>Current Events: Twenty Twenty Two and You</title>
+		<link>http://mondaybynoon.com/2008/09/15/current-events-twenty-twenty-two-and-you/</link>
+		<comments>http://mondaybynoon.com/2008/09/15/current-events-twenty-twenty-two-and-you/#comments</comments>
+		<pubDate>Mon, 15 Sep 2008 12:28:18 +0000</pubDate>
+		<dc:creator>Jonathan Christopher</dc:creator>
+		
+		<category><![CDATA[Current Events]]></category>
+
+		<category><![CDATA[Development]]></category>
+
+		<category><![CDATA[HTML]]></category>
+
+		<category><![CDATA[Opinion]]></category>
+
+		<category><![CDATA[CSS]]></category>
+
+		<category><![CDATA[HTML5]]></category>
+
+		<category><![CDATA[Standards]]></category>
+
+		<category><![CDATA[Web]]></category>
+
+		<category><![CDATA[WHATWG]]></category>
+
+		<guid isPermaLink="false">http://mondaybynoon.com/?p=183</guid>
+		<description><![CDATA[HTML5 is slated to reach Proposed Recommendation by 2022. Many designers and developers are frustrated the slow progress, and this timeline doesn't help.]]></description>
+			<content:encoded><![CDATA[<p>It&#8217;s no secret that for a long time I have been a big proponent of Web standards. I base much of what I write about here around standardization of practices in Web design and development, and I honestly feel it&#8217;s a fantastic way to mold the Web into something much more usable than it is today.</p>
+
+<p>It&#8217;s also widely known that many people have a hard time standing behind Web standards. I&#8217;m not speaking about those that simply plead ignorance when it comes to the subject, no. I&#8217;m writing about the respected designers and developers who in recent months (years?) have been very outspoken toward the lack of advancement we&#8217;ve been suffering with.</p>
+
+<p>There is quite a large group who feel <a href="http://en.wikipedia.org/wiki/The_powers_that_be">the powers that be</a> are not advancing technology to the best of their ability. Who can blame them for feeling like that? A quick mention of <a href="http://www.w3.org/TR/css3-roadmap/">CSS3</a> will put that into perspective. I do need to be clear: I am the <em>last</em> person to discount the efforts of anyone. I&#8217;m so very thankful for all the hard work that&#8217;s gone into the technology so far, but I need to be honest in saying that I&#8217;m equally as frustrated as many.</p>
+
+<p>I&#8217;d love to be able to write CSS3 without a care in the world. On the same page, I&#8217;d love to not have to worry about cross browser consistencies as well. I&#8217;d <strong><em>love</em></strong> to <a href="http://superfluousbanter.org/archives/2008/09/the-final-word-on-ie6/">drop support for IE6</a> like so many others. There are countless <a href="http://sonspring.com/journal/time-to-drop-ie6">reasons why</a> IE6 shouldn&#8217;t be a concern, but the trouble of the matter is this: my clients are using it. Sure, we all try to educate our clients, but I&#8217;ve had limited (if any) success in trying to produce a browser convert. The support of IE6 seems to be, in part, backed by knowledgeable designers. All I can do at this point is sit back and be jealous of their success. For the time being, it&#8217;s not in the cards for me (yet), but I anxiously await the day.</p>
+
+<h2>2022</h2>
+
+<p>The latest strike against Web standards wasn&#8217;t a strike at all, it was a gut-wrenching twist from within. In a <a href="http://blogs.techrepublic.com.com/programming-and-development/?p=718">recent interview</a>, well known and respected HTML5 editor [<a href="http://www.whatwg.org/">WHATWG</a>] <a href="http://ln.hixie.ch/">Ian Hickson</a>, provided a timetable outlining the progress of HTML5. To get to the most interesting part: HTML5 will reach &#8216;Proposed Recommendation&#8217; in the year 2022. It feels strange for me to type a year representing that long down the line, but it&#8217;s accurate.</p>
+
+<p>It&#8217;s difficult for me to imagine a proposed timeline including milestones that far into the future. To me, in Internet years, 2022 feels like the year 4000. I think this timeline accurately represents the frustration held by many designers. I&#8217;d like to reference a quote from <a href="http://jeffcroft.com/">Jeff Croft</a>. In his most recent article, <a href="http://jeffcroft.com/blog/2008/sep/11/two-thousand-twenty-two/">Two Thousand Twenty Two</a> he readily describes his frustration:</p>
+
+<blockquote cite="http://jeffcroft.com/blog/2008/sep/11/two-thousand-twenty-two/">
+	<p>I’ve got work to do, here. I don’t have time to sit around reading specs and interviews by spec editors detailing what is going to happen in 13 years. God knows where I’ll be in 13 years. Quite frankly, I’ll be pretty [...] disappointed in myself (and our entire industry) if I’m writing HTML in 13 years. Hell, if I’m still alive in 2022, I’ll think I haven’t been playing hard enough.</p>
+
+	<p>I care about <em>right [...] now</em>. My clients care about <em>right [...] now</em>. Our users care about <em>right [...] now</em>&#8230;</p>
+</blockquote>
+
+<p>I will admit, I&#8217;ve gone ahead and removed a few choice words, but I completely sympathize with Jeff. I&#8217;m as excited about the evolution of HTML as the next guy, but 2022? I, like Jeff, don&#8217;t have time for that right now. I&#8217;ve got more work to do than I can shake a stick at, and trying to keep up with a spec that won&#8217;t be ready for 13 years is not in my best interest at this point. It&#8217;s depressing to say it, but I&#8217;ve got to focus on worrying about things <em>today</em>. My company does client work, and they&#8217;re not going to care one bit about any of this; they care about their budget, their timeline, and their website working in <strong>their browser</strong>.</p>
+	
+<p>Again, I cannot stress enough how appreciative I am of the geniuses behind this evolution. I respect everything being done to advance the Web, but I think at this point, things are shifting. Instead of proposed specifications and the like, we&#8217;re going to see the browser makers themselves take control of the reigns and begin implementation sooner than later. <em>That&#8217;s</em> what I&#8217;m excited about.</p>
+
+<p>Of course, I will continue to keep an open mind about HTML5, but until it <a href="http://ishtml5readyyet.com/">reaches a level of applicable usage</a>, I plan on sticking with the toolset I&#8217;m given.</p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/MondayByNoon?a=c5AQL"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=c5AQL" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=0RLNl"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=0RLNl" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/MondayByNoon?a=8nNll"><img src="http://feeds.feedburner.com/~f/MondayByNoon?i=8nNll" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/MondayByNoon/~4/393163426" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://mondaybynoon.com/2008/09/15/current-events-twenty-twenty-two-and-you/feed/</wfw:commentRss>
+		<feedburner:awareness xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://api.feedburner.com/awareness/1.0/GetItemData?uri=MondayByNoon&amp;itemurl=http%3A%2F%2Fmondaybynoon.com%2F2008%2F09%2F15%2Fcurrent-events-twenty-twenty-two-and-you%2F</feedburner:awareness></item>
+	<feedburner:awareness xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://api.feedburner.com/awareness/1.0/GetFeedData?uri=MondayByNoon</feedburner:awareness></channel>
+</rss>

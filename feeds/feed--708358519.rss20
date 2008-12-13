@@ -1,0 +1,1740 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+
+<channel>
+<title>MAKE Magazine</title>
+<link>http://blog.makezine.com/</link>
+<description>MAKE is a quarterly publication from O&apos;Reilly for those  who just can&apos;t stop tinkering, disassembling, re-creating, and inventing cool new uses for the technology in our lives.  It&apos;s the first do-it-yourself magazine dedicated to the incorrigible and chronically incurable technology enthusiast in all of us.  MAKE celebrates your right to tweak, hack, and bend technology any way you want.</description>
+<language>en-us</language>
+<copyright>Copyright 2008, O'Reilly Media, Inc.</copyright>
+<lastBuildDate>Fri, 12 Dec 2008 08:51:06 -0800</lastBuildDate>
+<pubDate>Fri, 12 Dec 2008 09:15:03 -0800</pubDate>
+<generator>http://www.movabletype.org/?v=4.1</generator>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <image>
+          <title>MAKE Magazine</title>
+          <url>http://makezine.com/images/make120x60.gif</url>
+          <link>http://blog.makezine.com/</link>
+    </image>
+<itunes:author>O'Reilly Media, Inc.</itunes:author>
+<itunes:subtitle>Technology on Your Time</itunes:subtitle>
+<itunes:summary>Join MAKE magazine for a Weekend project each week you can build yourself! MAKE is a quarterly publication from O'Reilly for those who just can't stop tinkering, disassembling, re-creating, and inventing cool new uses for the technology in our lives. It's the first do-it-yourself magazine dedicated to the incorrigible and chronically incurable technology enthusiast in all of us. MAKE celebrates your right to tweak, hack, and bend technology any way you want. MAKE on iTunes is produced by Kip Kay and Phillip Torrone.</itunes:summary>
+<itunes:owner>
+<itunes:email>webmaster@makezine.com</itunes:email>
+</itunes:owner>
+<category>Technology</category>
+<itunes:category text="Technology">
+</itunes:category>
+<itunes:category text="Technology">
+  <itunes:category text="Gadgets" />
+</itunes:category>
+<itunes:category text="Science &amp; Medicine">
+</itunes:category>
+<itunes:image href="http://makezine.com/images/logos/rss_icon.jpg" />
+<itunes:explicit>no</itunes:explicit>
+
+
+<item>
+<title>Kickbee : Twitter from the womb</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/10_img0268.jpg" height="800" width="600" border="0" hspace="4" vspace="4" alt="10 Img0268" /><br />
+<a href="http://portfolio.menscher.com/itp/kickbee/">Corey Menscher's "Kickee"</a> - when the baby kicks it sends a message to Twitter. You can see the <a href="http://twitter.com/kickbee">baby's kicky tweets on Twitter here</a>...<br />
+ <br />
+The maker writes-</p>
+
+<blockquote>As a baby grows inside the womb, pregnant mothers are constantly and acutely aware of its presence mostly through its movements. With the Kickbee, I intend to extend a baby's minute contact with the world beyond the mother's body by sensing these movements and transmitting them to digital networks.
+ 
+
+<p>There's something special about pregnant women's bellies that make so many want to touch them. The presence of a child inside the womb is mysterious because we only have visual clues to its presence. Yet we know that if we press our hand and wait patiently, we may be greeted with a physical manifestation of its existence by feeling the baby's subtle (and not so subtle) movements inside.<br />
+ </p>
+
+<p>As an expectant father, I am once-removed from the physical knowledge my wife has of our baby and its development. With the Kickbee, I wanted to create a device that would give me a chance to be aware of our baby's movements. It can also aid in tracking the frequency of fetal movements, which is an important way to monitor the health of the developing child.<br />
+ </p>
+
+<p>The Kickbee is a wearable device made of a stretchable band and embedded electronics and sensors. Piezo sensors are attached directly to the band, and transmit small but detectable voltages when triggered by movement underneath. An Arduino Mini microcontroller transmits the signals to an accompanying Java application wirelessly via Bluetooth. (a SparkFun BlueSMIRF v2 module that communicates serially with a Macbook Pro)<br />
+ </p>
+
+<p>The Java application receives the sensor values and analyzes them. When a kick event is detected, a Twitter message is posted via the Twitter API. I chose to use Twitter because it is easy to initiate an SMS message to any mobile phone when a kick is detected. It also acts as a data log that can be accessed programmatically for visualization or archiving.</blockquote><br />
+ </p>
+
+<p><strong>In the Maker Shed:</strong><br />
+<img src="http://blog.makezine.com/MKBT1-2.jpg" height="333" width="500" border="0" hspace="4" vspace="4" alt="Mkbt1-2" /><br />
+<a href="http://www.makershed.com"><img src="http://blog.craftzine.com/makershedsmall.jpg" height="45" width="200" alt="Makershedsmall" /></a><br />
+<a href="http://www.makershed.com/ProductDetails.asp?ProductCode=MKBT1">Botanicalls Kits</a> let plants reach out for human help! They offer a connection to your leafy pal via online Twitter status updates to your mobile phone. When your plant needs water, it will post to let you know, and send its thanks when you show it love.</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/kickbee_twitter_from_the.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/kickbee_twitter_from_the.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/kickbee_twitter_from_the.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/arduino/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Arduino&lt;/a&gt; | 
+
+
+
+
+
+
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fkickbee_twitter_from_the.html&amp;title=Kickbee%20%3A%20Twitter%20from%20the%20womb&amp;bodytext=%20Corey%20Menscher%26apos%3Bs%20%26quot%3BKickee%26quot%3B%20-%20when%20the%20baby%20kicks%20it%20sends%20a%20message%20to%20Twitter.%20You%20can%20see%20the%20baby%26apos%3Bs%20kicky%20tweets%20on%20Twitter%20here...%20The%20maker%20writes-%20As%20a%20baby%20grows%20inside%20the%20womb%2C%20pregnant%20mothers%20are%20constantly%20and...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Phillip Torrone</author>
+<itunes:author>Phillip Torrone</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/kickbee_twitter_from_the.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/kickbee_twitter_from_the.html?CMP=OTC-0D6B48984890</guid>
+<category>Arduino</category>
+<pubDate>Fri, 12 Dec 2008 08:51:06 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Consumer safety rules could drive crafters out of business</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/tttttearnest.jpg" height="246" width="363" border="0" hspace="4" vspace="4" alt="Tttttearnest" /><br />
+<a href="http://www.boingboing.net/2008/12/10/consumer-safety-rule.html">Cory writes</a>-</p>
+
+<blockquote>Crafters are up in arms over a seemingly disastrous unintended consequence of the Consumer Product Safety Improvement Act (CPSIA), which will require lab certification that lead and phthalates are not present in toys or clothes -- sounds good, but crafters warn that this means that "a toymaker... who makes wooden cars in his garage in Maine to supplement his income cannot afford the $4,000 fee per toy that testing labs are charging to assure compliance with the CPSIA." The law takes effect on February 10th and the toymakers and small clothing designers are getting very worried indeed. </blockquote>
+ 
+ 
+
+<blockquote>In 2007, large toy manufacturers who outsource their production to China and other developing countries violated the public's trust. They were selling toys with dangerously high lead content, toys with unsafe small part, toys with improperly secured and easily swallowed small magnets, and toys made from chemicals that made kids sick. Almost every problem toy in 2007 was made in China.
+
+<p>The United States Congress rightly recognized that the Consumer Products Safety Commission (CPSC) lacked the authority and staffing to prevent dangerous toys from being imported into the US. So, they passed the Consumer Product Safety Improvement Act (CPSIA) in August, 2008. Among other things, the CPSIA bans lead and phthalates in toys, mandates third-party testing and certification for all toys and requires toy makers to permanently label each toy with a date and batch number.</p>
+
+<p>All of these changes will be fairly easy for large, multinational toy manufacturers to comply with. Large manufacturers who make thousands of units of each toy have very little incremental cost to pay for testing and update their molds to include batch labels.</p>
+
+<p>For small American, Canadian, and European toymakers, however, the costs of mandatory testing will likely drive them out of business. </blockquote></p>
+
+<p> </p>
+
+<p><b>More:</b><br />
+<a href="http://www.fashion-incubator.com/archive/national-bankruptcy-day/">National Bankruptcy Day</a>.<br />
+<a href="http://www.handmadetoyalliance.org/">Help Save Handmade Toys in the USA from the CPSIA</a>.<br />
+ <br />
+</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/consumer_safety_rules_cou.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/consumer_safety_rules_cou.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/consumer_safety_rules_cou.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/crafts/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Crafts&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fconsumer_safety_rules_cou.html&amp;title=Consumer%20safety%20rules%20could%20drive%20crafters%20out%20of%20business&amp;bodytext=%20Cory%20writes-%20Crafters%20are%20up%20in%20arms%20over%20a%20seemingly%20disastrous%20unintended%20consequence%20of%20the%20Consumer%20Product%20Safety%20Improvement%20Act%20%28CPSIA%29%2C%20which%20will%20require%20lab%20certification%20that%20lead%20and%20phthalates%20are%20not%20present%20in%20toys%20or%20clothes%20--%20sounds...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Phillip Torrone</author>
+<itunes:author>Phillip Torrone</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/consumer_safety_rules_cou.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/consumer_safety_rules_cou.html?CMP=OTC-0D6B48984890</guid>
+<category>Crafts</category>
+<pubDate>Fri, 12 Dec 2008 08:40:51 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Daedalus Books</title>
+<description>
+<![CDATA[<div style="align: right;"><img src="http://blog.makezine.com/upload/2008/12/daedalus_books/computer%20electronics%20kit.jpg" width="275" height="287" alt="computer electronics kit.jpg"/></div>
+
+<p>I like to give books as holiday presents, and I got some great deals through <a href="http://www.daedalusbooks.com/Products/?Media=Book">Daedalus Books</a> this year. They carry mostly remaindered books at incredibly low prices, and they have new titles that are pretty heavily discounted. </p>
+
+<p>One of the books I got this year was <a href="http://www.daedalusbooks.com/Products/Detail.asp?ProductID=69964&Media=Book&SubCategoryID=&ReturnUrl=%2FProducts%2FSearch%2FHomeQuickSearchResult%2Easp%3FSearch%3Dfun%2Bwith%2Bcomputer%2Belectronics%26Media%3D">Fun with Computer Electronics</a>. It comes with a book and lots of parts - LEDs, wires, resistors, a piezo transducer, and a couple of pre-mounted chips. You build projects by connecting parts via little spring terminals on a cardboard breadboard. The book explains a lot of basic concepts like AND, OR, NAND, and XOR gates, and the whole kit is only $5.98, a great deal! They have lots more books for kids, science books, fiction, music, and DVDs, check them out.<br />
+</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/daedalus_books.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/daedalus_books.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/daedalus_books.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/holiday_projects/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Holiday projects&lt;/a&gt; | 
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fdaedalus_books.html&amp;title=Daedalus%20Books&amp;bodytext=%20I%20like%20to%20give%20books%20as%20holiday%20presents%2C%20and%20I%20got%20some%20great%20deals%20through%20Daedalus%20Books%20this%20year.%20They%20carry%20mostly%20remaindered%20books%20at%20incredibly%20low%20prices%2C%20and%20they%20have%20new%20titles%20that%20are%20pretty%20heavily%20discounted.%20One...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Patti Schiendelman</author>
+<itunes:author>Patti Schiendelman</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/daedalus_books.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/daedalus_books.html?CMP=OTC-0D6B48984890</guid>
+<category>Holiday projects</category>
+<pubDate>Fri, 12 Dec 2008 07:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Weekend Project: USBattery</title>
+<description>
+<![CDATA[<p><object width="600" height="370"><param name="movie" value="http://www.youtube.com/v/NTTMAN0y3R0&hl=en&fs=1&rel=0&fmt=18"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/NTTMAN0y3R0&hl=en&fs=1&rel=0&fmt=18" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="295"></embed></object><br />
+ </p>
+
+<p>Here is a super small, sneaky storage device for your secret stuff. Thanks go to <a href="http://makezine.com/pub/au/Andrew_Lewis"> Andrew Lewis </a> for the original article in Make: Volume 16<br><br />
+ </p>
+
+<p>To download <a href="http://cachefly.oreilly.com/make/WP31USBattery.mp4">The USBattery MP4 click here</a> <a href="http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=74069835&s=143441">or subscribe in iTunes.</a></p>
+
+<p>Check out the complete USBattery article <a href="http://makezine.com/16/usbattery/">MAKE 16 "USBattery"</a><br>and you can see that in our <a href="http://www.make-digital.com/make/vol16/?folio=80">digital edition.</a><br />
+ <br />
+</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/weekend_project_usbattery_1.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/weekend_project_usbattery_1.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/weekend_project_usbattery_1.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+
+
+
+
+&lt;a href="http://blog.makezine.com/archive/weekend_projects/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Weekend Projects&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fweekend_project_usbattery_1.html&amp;title=Weekend%20Project%3A%20USBattery&amp;bodytext=%20Here%20is%20a%20super%20small%2C%20sneaky%20storage%20device%20for%20your%20secret%20stuff.%20Thanks%20go%20to%20Andrew%20Lewis%20for%20the%20original%20article%20in%20Make%3A%20Volume%2016%20To%20download%20The%20USBattery%20MP4%20click%20here%20or%20subscribe%20in%20iTunes.%20Check%20out%20the...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>KipKay</author>
+<itunes:author>KipKay</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/weekend_project_usbattery_1.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/weekend_project_usbattery_1.html?CMP=OTC-0D6B48984890</guid>
+<category>Weekend Projects</category>
+<pubDate>Fri, 12 Dec 2008 07:00:00 -0800</pubDate>
+<enclosure url="http://cachefly.oreilly.com/make/WP31USBattery.mp4" length="34327243" type="video/mp4" />
+</item>
+
+
+<item>
+<title>Wave Sculptures on MAKE: television</title>
+<description>
+<![CDATA[<p><object width="601" height="338"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=2465832&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=ff9933&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=2465832&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=0&amp;show_portrait=0&amp;color=ff9933&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="601" height="338"></embed></object></p>
+
+<p>Meet Reuben Margolin, a visionary Maker who creates elegant and hypnotic techno-kinetic wave sculptures.</p>
+
+<p>View the clip above, get the <a href="http://blip.tv/file/get/Make-WaveScultpuresOnMAKETelevision193.m4v">M4V</a> and/or subscribe in <a href="http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=74069835&s=143441">iTunes</a>.</p>
+
+<p>Less than 4 weeks until the premiere of MAKE: television! Stay tuned to  <a href="http://www.makezine.tv">www.makezine.tv</a> for broadcast updates and full segments starting in January.</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/wave_sculptures_on_make_t.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/wave_sculptures_on_make_t.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/wave_sculptures_on_make_t.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+
+
+
+
+
+
+&lt;a href="http://blog.makezine.com/archive/make_television/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Make: television&lt;/a&gt; | 
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fwave_sculptures_on_make_t.html&amp;title=Wave%20Sculptures%20on%20MAKE%3A%20television&amp;bodytext=%20Meet%20Reuben%20Margolin%2C%20a%20visionary%20Maker%20who%20creates%20elegant%20and%20hypnotic%20techno-kinetic%20wave%20sculptures.%20View%20the%20clip%20above%2C%20get%20the%20M4V%20and%2For%20subscribe%20in%20iTunes.%20Less%20than%204%20weeks%20until%20the%20premiere%20of%20MAKE%3A%20television%21%20Stay%20tuned%20to%20www.makezine.tv...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Make: television</author>
+<itunes:author>Make: television</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/wave_sculptures_on_make_t.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/wave_sculptures_on_make_t.html?CMP=OTC-0D6B48984890</guid>
+<category>Make: television</category>
+<pubDate>Fri, 12 Dec 2008 07:00:00 -0800</pubDate>
+<enclosure url="http://blip.tv/file/get/Make-WaveScultpuresOnMAKETelevision193.m4v" length="11538738" type="video/mp4" />
+</item>
+
+
+<item>
+<title>Weekend Project: USBattery (PDF)</title>
+<description>
+<![CDATA[<p><img alt="USBattery.jpg" src="http://blog.makezine.com/USBattery.jpg" width="500" height="686" /><p>Here is a super small, sneaky storage device for your secret stuff.<br />
+Thanks go to <a href="http://makezine.com/pub/au/Andrew_Lewis"> Andrew Lewis </a> for the original article in Make: Volume 16<br> View the <a href="http://cachefly.oreilly.com/make/USBattery.pdf"> PDF </a><p><br />
+</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/weekend_project_usbattery.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/weekend_project_usbattery.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/weekend_project_usbattery.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/make_pdf/?CMP=OTC-0D6B48984890" /&gt;Read more articles in MAKE PDF&lt;/a&gt; | 
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fweekend_project_usbattery.html&amp;title=Weekend%20Project%3A%20USBattery%20%28PDF%29&amp;bodytext=Here%20is%20a%20super%20small%2C%20sneaky%20storage%20device%20for%20your%20secret%20stuff.%20Thanks%20go%20to%20Andrew%20Lewis%20for%20the%20original%20article%20in%20Make%3A%20Volume%2016%20View%20the%20PDF...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>KipKay</author>
+<itunes:author>KipKay</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/weekend_project_usbattery.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/weekend_project_usbattery.html?CMP=OTC-0D6B48984890</guid>
+<category>MAKE PDF</category>
+<pubDate>Fri, 12 Dec 2008 06:00:00 -0800</pubDate>
+<enclosure url="http://cachefly.oreilly.com/make/USBattery.pdf" length="1742792" type="application/pdf" />
+</item>
+
+
+<item>
+<title>BUGbot Wheels Module - Open source hardware on wheels!</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/bugbot_by_ilan.jpg" height="375" width="500" border="0" hspace="4" vspace="4" alt="Bugbot By Ilan" /><br />
+<embed src="http://blip.tv/play/gd4T36k2kI0m" type="application/x-shockwave-flash" width="500" height="375" allowscriptaccess="always" allowfullscreen="true"></embed> <br />
+<a href="http://community.buglabs.net/agibb/posts/36-BUGbot-Wheels-Module-by-Ilan-Moyer">BUGbot Wheels Module by Ilan Moyer</a>-</p>
+
+<blockquote>Ilan Moyer stopped by the Test Kitchen for a visit.  With the <a href="http://bugcommunity.com/wiki/index.php/BUGbase">CAD files</a> he downloaded from BUG he was able to fabricate a base for wheels.  The wheels use DC motors and a motor driver.  They are programmable over serial, but we were trying to get the data through the Samtec connector that day. A truely awesome invention!</blockquote>
+ 
+<b>More:</b>
+<img src="http://blog.makezine.com/oshgg2008rr.jpg" height="81" width="330" border="0" hspace="4" vspace="4" alt="Oshgg2008Rr" /><br>
+<a href="http://blog.makezine.com/archive/2008/11/_draft_open_source_hardwa.html">Open source hardware 2008</a> - The definitive guide to open source hardware projects in 2008...]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/bugbot_wheels_module_open.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/bugbot_wheels_module_open.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/bugbot_wheels_module_open.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/diy_projects/?CMP=OTC-0D6B48984890" /&gt;Read more articles in DIY Projects&lt;/a&gt; | 
+
+
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fbugbot_wheels_module_open.html&amp;title=BUGbot%20Wheels%20Module%20-%20Open%20source%20hardware%20on%20wheels%21&amp;bodytext=%20BUGbot%20Wheels%20Module%20by%20Ilan%20Moyer-%20Ilan%20Moyer%20stopped%20by%20the%20Test%20Kitchen%20for%20a%20visit.%20With%20the%20CAD%20files%20he%20downloaded%20from%20BUG%20he%20was%20able%20to%20fabricate%20a%20base%20for%20wheels.%20The%20wheels%20use%20DC%20motors%20and...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Phillip Torrone</author>
+<itunes:author>Phillip Torrone</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/bugbot_wheels_module_open.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/bugbot_wheels_module_open.html?CMP=OTC-0D6B48984890</guid>
+<category>DIY Projects</category>
+<pubDate>Fri, 12 Dec 2008 05:29:30 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>HOW TO - Make vinegar at home</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/PortTequilaMapleVinegars.jpg" height="862" width="600" border="0" hspace="4" vspace="4" alt="Porttequilamaplevinegars" /><br />
+Nice history and how-to at Popular Science on <a href="http://www.popsci.com/diy/article/2008-12/making-vinegar-home">making vinegar at home</a>...<br />
+<blockquote>Vinegar is one of those ingredients that people don't think of as often as they should. It is mostly just seen in salad dressings and pickles, which is a shame, because there is a whole world of flavor there just waiting to be tapped into. There are often times, especially during the holidays, when there is leftover wine after a festive dinner. Many of us will cork the bottle, with or without various safeguards to preserve the contents, and set it aside for the next day. Occasionally the bottles are forgotten, and when you finally open them again you find that the wine has evolved into something quite a bit different from what you were expecting. In these moments the change is often viewed with disappointment, as a delicate beverage has transformed into something sharper and edgier. Frankly, though, a smart cook will see the change as an opportunity. Good wine makes good vinegar and good vinegar is a stellar cooking ingredient.</blockquote><br />
+ </p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/how_to_make_vinegar_at_ho.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/how_to_make_vinegar_at_ho.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/how_to_make_vinegar_at_ho.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/crafts/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Crafts&lt;/a&gt; | 
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fhow_to_make_vinegar_at_ho.html&amp;title=HOW%20TO%20-%20Make%20vinegar%20at%20home&amp;bodytext=%20Nice%20history%20and%20how-to%20at%20Popular%20Science%20on%20making%20vinegar%20at%20home...%20Vinegar%20is%20one%20of%20those%20ingredients%20that%20people%20don%26apos%3Bt%20think%20of%20as%20often%20as%20they%20should.%20It%20is%20mostly%20just%20seen%20in%20salad%20dressings%20and%20pickles%2C%20which...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Phillip Torrone</author>
+<itunes:author>Phillip Torrone</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/how_to_make_vinegar_at_ho.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/how_to_make_vinegar_at_ho.html?CMP=OTC-0D6B48984890</guid>
+<category>Crafts</category>
+<pubDate>Fri, 12 Dec 2008 05:00:39 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Worlds first music video shot on iPhone? maybe?</title>
+<description>
+<![CDATA[<p><object width="600" height="489"><param name="movie" value="http://www.youtube.com/v/cx51f9yTdno&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/cx51f9yTdno&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="600" height="489"></embed></object></p>
+
+<p>Although we tend to shy away from anyone calling their project a "first", this video claims to be the "first music video shot entirely with an iPhone" using a jailbroken phone and the "Cycorder" application which lets you record video directly to the flash drive of the phone. In any case, we still don't understand why Apple hasn't made video capabilities part of its iPhone OS yet? Apple care to comment?</p>
+
+<p>via <a href="http://www.textually.org/picturephoning/archives/2008/12/021995.htm" target="_new">PicturePhoning</a></p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/worlds_first_music_video.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/worlds_first_music_video.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/worlds_first_music_video.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/arts/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Arts&lt;/a&gt; | 
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fworlds_first_music_video.html&amp;title=Worlds%20first%20music%20video%20shot%20on%20iPhone%3F%20maybe%3F&amp;bodytext=%20Although%20we%20tend%20to%20shy%20away%20from%20anyone%20calling%20their%20project%20a%20%26quot%3Bfirst%26quot%3B%2C%20this%20video%20claims%20to%20be%20the%20%26quot%3Bfirst%20music%20video%20shot%20entirely%20with%20an%20iPhone%26quot%3B%20using%20a%20jailbroken%20phone%20and%20the%20%26quot%3BCycorder%26quot%3B%20application%20which%20lets%2&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Jonah Brucker-Cohen</author>
+<itunes:author>Jonah Brucker-Cohen</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/worlds_first_music_video.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/worlds_first_music_video.html?CMP=OTC-0D6B48984890</guid>
+<category>Arts</category>
+<pubDate>Fri, 12 Dec 2008 05:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Birthday cake made into the shape of camera will make you happy to gain a year</title>
+<description>
+<![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="camcake.jpg" src="http://blog.makezine.com/camcake.jpg" width="600" height="397" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span></p>
+
+<p>Now instead of having the birthday and trying to capture the best photos, you can do two things at once. This birthday cake was made in the shape of a Nikon D700 SLR camera. Best of all, it looks like the cake is a red velvet, which would make it even more tempting to both the photographer and those attending the party.</p>
+
+<p>via <a href="http://www.neatorama.com/2008/12/09/camera-birthday-cake/" target="_new">NeatoRama</a><br />
+</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/birthday_cake_made_into_t.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/birthday_cake_made_into_t.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/birthday_cake_made_into_t.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/arts/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Arts&lt;/a&gt; | 
+
+
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fbirthday_cake_made_into_t.html&amp;title=Birthday%20cake%20made%20into%20the%20shape%20of%20camera%20will%20make%20y&amp;bodytext=%20Now%20instead%20of%20having%20the%20birthday%20and%20trying%20to%20capture%20the%20best%20photos%2C%20you%20can%20do%20two%20things%20at%20once.%20This%20birthday%20cake%20was%20made%20in%20the%20shape%20of%20a%20Nikon%20D700%20SLR%20camera.%20Best%20of%20all%2C%20it%20looks...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Jonah Brucker-Cohen</author>
+<itunes:author>Jonah Brucker-Cohen</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/birthday_cake_made_into_t.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/birthday_cake_made_into_t.html?CMP=OTC-0D6B48984890</guid>
+<category>Arts</category>
+<pubDate>Fri, 12 Dec 2008 04:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Back at junk value, recyclables are piling up....</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/08recycle.xlarge1.jpg" height="350" width="600" border="0" hspace="4" vspace="4" alt="08Recycle.Xlarge1" /><br />
+Although people might be consuming less, the demand for <a href="http://www.nytimes.com/2008/12/08/business/08recycle.html?partner=rss&amp;emc=rss">recyclables is crashing, so it's all piling up...</a><br />
+<blockquote>The economic downturn has decimated the market for recycled materials like cardboard, plastic, newspaper and metals. Across the country, this junk is accumulating by the ton in the yards and warehouses of recycling contractors, which are unable to find buyers or are unwilling to sell at rock-bottom prices. Ordinarily the material would be turned into products like car parts, book covers and boxes for electronics. But with the slump in the scrap market, a trickle is starting to head for landfills instead of a second life. </blockquote><br />
+ <br />
+Have recycle programs stopped in your area?<br />
+ </p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/back_at_junk_value_recycl.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/back_at_junk_value_recycl.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/back_at_junk_value_recycl.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/green/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Green&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fback_at_junk_value_recycl.html&amp;title=Back%20at%20junk%20value%2C%20recyclables%20are%20piling%20up....&amp;bodytext=%20Although%20people%20might%20be%20consuming%20less%2C%20the%20demand%20for%20recyclables%20is%20crashing%2C%20so%20it%26apos%3Bs%20all%20piling%20up...%20The%20economic%20downturn%20has%20decimated%20the%20market%20for%20recycled%20materials%20like%20cardboard%2C%20plastic%2C%20newspaper%20and%20metals.%20Across%20the%20country%2C%20this%20junk%2&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Phillip Torrone</author>
+<itunes:author>Phillip Torrone</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/back_at_junk_value_recycl.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/back_at_junk_value_recycl.html?CMP=OTC-0D6B48984890</guid>
+<category>Green</category>
+<pubDate>Fri, 12 Dec 2008 03:00:27 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>The Pan PC</title>
+<description>
+<![CDATA[<p><object width="600" height="398"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=2454066&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=2454066&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="600" height="398"></embed></object><br />
+Jorge sent in a link to his latest creation, the Pan PC. It's made from found and recycled parts that he has collected. Apparently it doesn't even require electricity? Now that's cool. [Thanks Jorge]</p>
+
+<blockquote>Pan PC is my final draft of the graduate in electronics applied to the arts (IUNA), dictated by my friend and teacher Rusjan Diego.  A silly machine, generating geometric images. </blockquote>
+
+<p>More about the <a href="http://translate.google.com/translate?hl=en&u=http%3A%2F%2Fjorgecrowe.com.ar%2F2008%2F12%2Fpan-pc.html&sl=es&tl=en">Pan PC</a> [translated]</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/the_pan_pc.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/the_pan_pc.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/the_pan_pc.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/computers/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Computers&lt;/a&gt; | 
+
+
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fthe_pan_pc.html&amp;title=The%20Pan%20PC&amp;bodytext=%20Jorge%20sent%20in%20a%20link%20to%20his%20latest%20creation%2C%20the%20Pan%20PC.%20It%26apos%3Bs%20made%20from%20found%20and%20recycled%20parts%20that%20he%20has%20collected.%20Apparently%20it%20doesn%26apos%3Bt%20even%20require%20electricity%3F%20Now%20that%26apos%3Bs%20cool.%20%5BThanks%20Jorge%5D%20Pan%20PC%20is%20my%20final...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Marc de Vinck</author>
+<itunes:author>Marc de Vinck</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/the_pan_pc.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/the_pan_pc.html?CMP=OTC-0D6B48984890</guid>
+<category>Computers</category>
+<pubDate>Fri, 12 Dec 2008 03:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>The Hemp-Mote</title>
+<description>
+<![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="hemp-mote-02.jpg" src="http://blog.makezine.com/hemp-mote-02.jpg" width="600" height="400" class="mt-image-none" style="" /></span><br />
+DHRECK sent in his interesting mod of the Wii-Mote. It uses several different kinds of hemp fibers to cover the original plastic case. I assume by the popularity of this project that more  hemp-covered objects are in the works. [Thanks DHRECK]</p>
+
+<blockquote>In stark contrast with the original Wii-mote set, what was once sleek, cold, white and hard plastic has now become a slightly fuzzy, natural, warm and textured concoction. No more bland, branded and boring but mottled, flawfull, rough and a tad sweat absorbing.</blockquote>
+
+<p>More about the <a href="http://www.dhreck.com/2008/12/11/endtroducing-the-hemp-mote/">Hemp-Mote</a></p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/the_hempmote.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/the_hempmote.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/the_hempmote.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+
+
+&lt;a href="http://blog.makezine.com/archive/gaming/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Gaming&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fthe_hempmote.html&amp;title=The%20Hemp-Mote&amp;bodytext=%20DHRECK%20sent%20in%20his%20interesting%20mod%20of%20the%20Wii-Mote.%20It%20uses%20several%20different%20kinds%20of%20hemp%20fibers%20to%20cover%20the%20original%20plastic%20case.%20I%20assume%20by%20the%20popularity%20of%20this%20project%20that%20more%20hemp-covered%20objects%20are%20in%20the%20works....&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Marc de Vinck</author>
+<itunes:author>Marc de Vinck</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/the_hempmote.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/the_hempmote.html?CMP=OTC-0D6B48984890</guid>
+<category>Gaming</category>
+<pubDate>Fri, 12 Dec 2008 02:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>MAKE meets CRAFT - the gift guide of techy projects and more for the crafter</title>
+<description>
+<![CDATA[<p>What do you get for crafters who also venture into the tech side of things?  Before you start knitting a multimeter cosy, here are some great projects and gift ideas that intersect the worlds of MAKE and CRAFT.</p>
+
+<p><img src="http://blog.craftzine.com/fashioningtechnologycover.jpg" alt="Fashioningtechnologycover" border="0" height="499" width="500"></p>
+
+<p><a href="http://www.makershed.com/ProductDetails.asp?ProductCode=9780596514372&Click=19209">Fashioning Technology</a><br />
+	<br />
+Ready to take your craft projects to the next level? With "smart" materials, unorthodox assembly techniques, and the right tools, you can create accessories, housewares, and toys that light up, make sounds, or do even more. Fashioning Technology offers jargon-free primers and lots of how-to projects that will have you making -- and even wearing -- functional works of art. This book demonstrates how to blend sewing and assembly techniques with traditional electronics to assemble simple circuits using conductive thread, solder joints for snaps, and switches for buttons. With the sewing machine as a viable substitute for the soldering iron, you can craft a new generation of objects that are interactive, quirky, and fashion-conscious.</p>
+
+<hr>
+
+<p><strong>Kits/How-Tos</strong></p>
+
+<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="big white menorah" src="http://blog.makezine.com/bigwhitemenorah.jpg" width="240" height="180" class="mt-image-none" style="" /></span></p>
+
+<p><a href="http://www.makershed.com/ProductDetails.asp?ProductCode=MKEMS4&Click=19209">LED Mini Menorah Kits</a></p>
+
+<p>Evil Mad Science make these LED Mini Menorah electronic soldering kits. Each time that it is switched off and back on, it displays one more light than it did the previous time that you turned it on.  The source code is available for download.  You can modify it, use it to program your own microcontroller, and make your own holiday decorations.  </p>
+
+<hr>
+
+<p><img src="http://blog.craftzine.com/title.jpg" alt="title.jpg" height="375" width="500"></p>
+
+<p><a href="http://blog.craftzine.com/archive/2008/06/electronic_embroidery_craft_vi.html">Electronic Embroidery</a></p>
+
+<p>In this CRAFT podcast, Becky Stern shows how to create this embroidered frog with LED fireflies.  For a gift, you could put together a kit based on the supply list or create the project yourself to give.</p>
+
+<hr>
+
+<p><img src="http://blog.makezine.com/lilyprokit.jpg" alt="lilypad sewing kit" height="500" width="500"></p>
+
+<p><a href="http://www.makershed.com/ProductDetails.asp?ProductCode=MKSF1&Click=19209">LilyPad E-Sewing Kit</a>/<a href="http://www.makershed.com/ProductDetails.asp?ProductCode=MKSF2&Click=19212">LilyPad Pro Kit</a></p>
+
+<p>For the more advanced craft tech nerd, the LilyPad e-sewing kit includes the materials to sew LEDs into all sorts of clothing.  Add on the LilyPad Pro Kit to enable programming the LilyPad main board for more control.  With these kits, make a project like the <a href="http://www.instructables.com/id/turn-signal-biking-jacket/">Turn Signal Biking Jacket</a>.<br />
+</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/make_meets_craft_the_gift.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/make_meets_craft_the_gift.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/make_meets_craft_the_gift.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+
+
+&lt;a href="http://blog.makezine.com/archive/holiday_projects/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Holiday projects&lt;/a&gt; | 
+
+
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fmake_meets_craft_the_gift.html&amp;title=MAKE%20meets%20CRAFT%20-%20the%20gift%20guide%20of%20techy%20projects%20and&amp;bodytext=What%20do%20you%20get%20for%20crafters%20who%20also%20venture%20into%20the%20tech%20side%20of%20things%3F%20Before%20you%20start%20knitting%20a%20multimeter%20cosy%2C%20here%20are%20some%20great%20projects%20and%20gift%20ideas%20that%20intersect%20the%20worlds%20of%20MAKE%20and%20CRAFT.%20Fashioning%20Technology...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Michelle Kempner</author>
+<itunes:author>Michelle Kempner</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/make_meets_craft_the_gift.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/make_meets_craft_the_gift.html?CMP=OTC-0D6B48984890</guid>
+<category>Holiday projects</category>
+<pubDate>Fri, 12 Dec 2008 01:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>How to make paper star ornaments</title>
+<description>
+<![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="star11.jpg" src="http://blog.makezine.com/star11.jpg" width="600" height="480" class="mt-image-none" style="" /></span><br />
+Here is another nice decoration you can make out of recycled materials. It's a little more 2D compared to the one <a href="http://blog.makezine.com/archive/2008/12/howto_star_ornaments.html">I posted about last week</a>, but it's still a nice addition to your holiday decorations.</p>
+
+<p>Learn <a href="http://hinzpired.wordpress.com/2007/11/06/how-to-make-paper-star-ornaments/">How to make paper star ornaments</a></p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/how_to_make_paper_star_or.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/how_to_make_paper_star_or.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/how_to_make_paper_star_or.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/crafts/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Crafts&lt;/a&gt; | 
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fhow_to_make_paper_star_or.html&amp;title=How%20to%20make%20paper%20star%20ornaments&amp;bodytext=%20Here%20is%20another%20nice%20decoration%20you%20can%20make%20out%20of%20recycled%20materials.%20It%26apos%3Bs%20a%20little%20more%202D%20compared%20to%20the%20one%20I%20posted%20about%20last%20week%2C%20but%20it%26apos%3Bs%20still%20a%20nice%20addition%20to%20your%20holiday%20decorations.%20Learn%20How%20to...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Marc de Vinck</author>
+<itunes:author>Marc de Vinck</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/how_to_make_paper_star_or.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/how_to_make_paper_star_or.html?CMP=OTC-0D6B48984890</guid>
+<category>Crafts</category>
+<pubDate>Fri, 12 Dec 2008 01:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>The Rise of the Machines - Robot density around the world...</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/jjjjjjjdata02.jpg" height="350" width="400" border="0" hspace="4" vspace="4" alt="Jjjjjjjdata02" /><br />
+<a href="http://spectrum.ieee.org/print/7012">IEEE Spectrum: The Rise of the Machines - Robot density around the world...</a>-</p>
+
+<blockquote>There are now 1 million industrial robots toiling around the world, and Japan is where they're the thickest on the ground. It has 295 of these electromechanical marvels for every 10 000 manufacturing workers--a robot density almost 10 times the world average and nearly twice that of Singapore (169), South Korea (164), and Germany (163).</blockquote>
+ 
+<b>More:</b>
+<img src="http://blog.makezine.com/bannerBig.jpg" height="151" width="600" border="0" hspace="4" vspace="4" alt="Bannerbig" />
+In the last few years, the world of hobby robotics has exploded. Driven by the plummeting prices and ubiquity of microcontrollers, servomotors, and other electronic and mechanical components, the growth in personal fabrication technologies, and the success of such commercial toy, hobby, and domestic robots as Lego Mindstorms, the Robosapien line, Japanese mini humanoids, and iRobot's cleaning machines, robots are finally becoming rather commonplace (if still only in niche domains). And, of course, the robot growth being seeded by these new technologies is watered by the Big Muddy of the Internet, with its rapid information and idea exchange. The next generation of engineers and industrial designers who'll build tomorrow's robots are growing up with Vex kits and Arduino microcontrollers in their hands today.
+
+<p><a href="http://blog.makezine.com/archive/2008/12/holiday_gift_guide_robots.html">For our MAKE Robot Gift Guide,</a> we've put together a sampling of robot-related offerings from the Maker Shed, as well as some other robots we fancy. If you give or get any of these bots for the holidays, or especially if you or your recipients, hack them, we'd love to hear about it. <br />
+</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/the_rise_of_the_machines.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/the_rise_of_the_machines.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/the_rise_of_the_machines.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/robotics/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Robotics&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fthe_rise_of_the_machines.html&amp;title=The%20Rise%20of%20the%20Machines%20-%20Robot%20density%20around%20the%20wor&amp;bodytext=%20IEEE%20Spectrum%3A%20The%20Rise%20of%20the%20Machines%20-%20Robot%20density%20around%20the%20world...-%20There%20are%20now%201%20million%20industrial%20robots%20toiling%20around%20the%20world%2C%20and%20Japan%20is%20where%20they%26apos%3Bre%20the%20thickest%20on%20the%20ground.%20It%20has%20295%20of%20these...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Phillip Torrone</author>
+<itunes:author>Phillip Torrone</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/the_rise_of_the_machines.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/the_rise_of_the_machines.html?CMP=OTC-0D6B48984890</guid>
+<category>Robotics</category>
+<pubDate>Fri, 12 Dec 2008 00:26:02 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Swiitboard - homebrew Wiimote jogging game</title>
+<description>
+<![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="swiftboard_20081211.jpg" src="http://www.hackszine.com/swiftboard_20081211.jpg" width="600" height="450" class="mt-image-none" style="" /></span></p>
+
+<p>What do you do if the Wii Fit games aren't intense enough for you?  You build your own exercise gaming system, of course:</p>
+
+<blockquote> wondered about a way to get fitter, work out without having to go running outside (although that is very healthy). I didn't think the Wii balance board would do the trick, as the Wii games where reported not to be very intense, and the board itself is to hard for running on it. So what is different about the Swiiboard is that can absorb running effort, measure the effort and perhaps that it can use those measurements to control a virtual environment. It turned out this can be achieved using a Wiimote controller.</blockquote>
+
+<p><object width="600" height="475"><param name="movie" value="http://www.youtube.com/v/5kcw3kTUVqM&hl=en&fs=1&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/5kcw3kTUVqM&hl=en&fs=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="600" height="475"></embed></object></p>
+
+<p>The controller is a simple setup: a wooden plank spans two chunks of mattress foam, and a Wiimote is zip-tied to the center. The accelerometer in the Wiimote can be used to measure your jogging pace, as well as the left to right tilt on the board, giving you all the control you need to move an avatar around a 3D world.</p>
+
+<p><a href="http://www.rincker.nl/Swiitboard.html">The Swiitboard (Footwii/Pedal navigation device)</a></p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/swiitboard_homebrew_wiimo.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/swiitboard_homebrew_wiimo.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/swiitboard_homebrew_wiimo.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+
+
+&lt;a href="http://blog.makezine.com/archive/hacks/?CMP=OTC-0D6B48984890" /&gt;Read more articles in hacks&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fswiitboard_homebrew_wiimo.html&amp;title=Swiitboard%20-%20homebrew%20Wiimote%20jogging%20game&amp;bodytext=%20What%20do%20you%20do%20if%20the%20Wii%20Fit%20games%20aren%26apos%3Bt%20intense%20enough%20for%20you%3F%20You%20build%20your%20own%20exercise%20gaming%20system%2C%20of%20course%3A%20wondered%20about%20a%20way%20to%20get%20fitter%2C%20work%20out%20without%20having%20to%20go%20running%20outside%20%28although...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Jason Striegel</author>
+<itunes:author>Jason Striegel</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/swiitboard_homebrew_wiimo.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/swiitboard_homebrew_wiimo.html?CMP=OTC-0D6B48984890</guid>
+<category>hacks</category>
+<pubDate>Thu, 11 Dec 2008 22:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>HOW TO - Soft coincell battery holder</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/softcoincellbatteryholder.jpg" width="440" height="325" alt="softcoincellbatteryholder.jpg" /></p>
+<p>Instructables user craft_tech made a tutorial for whipping up your own <a href="http://www.instructables.com/id/Make_a_soft_3V_battery_holder/?ALLSTEPS">soft coincell battery holder</a> from felt and conductive fabric.</p>
+]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/how_to_soft_coincell_batt.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/how_to_soft_coincell_batt.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/how_to_soft_coincell_batt.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+
+
+
+
+&lt;a href="http://blog.makezine.com/archive/instructables/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Instructables&lt;/a&gt; | 
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fhow_to_soft_coincell_batt.html&amp;title=HOW%20TO%20-%20Soft%20coincell%20battery%20holder&amp;bodytext=%20Instructables%20user%20craft_tech%20made%20a%20tutorial%20for%20whipping%20up%20your%20own%20soft%20coincell%20battery%20holder%20from%20felt%20and%20conductive%20fabric....&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Becky Stern</author>
+<itunes:author>Becky Stern</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/how_to_soft_coincell_batt.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/how_to_soft_coincell_batt.html?CMP=OTC-0D6B48984890</guid>
+<category>Instructables</category>
+<pubDate>Thu, 11 Dec 2008 21:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>HOW TO - City storyteller&apos;s backpack</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/citystorytellersbackpack.jpg" width="600" height="411" alt="citystorytellersbackpack.jpg" /></p>
+<p>Instructables user faizzohri writes:</p>
+<blockquote>
+  <p>A City Storyteller may need a unique backpack in her pursuit to collect and tell stories about her city.<br />
+  This backpack have 3 possible functions:<br />
+  <br />
+  1) To provide storage during gathering of stories.<br />
+  2) To provide a storage for the props to be used during a performance. It can be a prop itself.<br />
+  3) To differentiate a City Storyteller from a rambling madman.<br />
+  <br />
+  Materials needed<br />
+  - a doll cabinet/wadrobe/cupboard/box<br />
+  - the supporting aluminium frame of old hiking bags<br />
+  - about 2 metres of twine/rope<br />
+  - drill set<br />
+  - different colors of paint (if necessary for decoration purposes.)<br />
+  - other objects that you may feel necessary when you are building it.</p>
+</blockquote>
+<p>Check out the <a href="http://www.instructables.com/id/Make_a_City_Storytellers_Backpack/?ALLSTEPS">instructable for making one of these yourself</a>!</p>
+]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/how_to_city_storytellers.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/how_to_city_storytellers.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/how_to_city_storytellers.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+
+
+&lt;a href="http://blog.makezine.com/archive/instructables/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Instructables&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fhow_to_city_storytellers.html&amp;title=HOW%20TO%20-%20City%20storyteller%26apos%3Bs%20backpack&amp;bodytext=%20Instructables%20user%20faizzohri%20writes%3A%20A%20City%20Storyteller%20may%20need%20a%20unique%20backpack%20in%20her%20pursuit%20to%20collect%20and%20tell%20stories%20about%20her%20city.%20This%20backpack%20have%203%20possible%20functions%3A%201%29%20To%20provide%20storage%20during%20gathering%20of%20stories.%202%29%20To...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Becky Stern</author>
+<itunes:author>Becky Stern</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/how_to_city_storytellers.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/how_to_city_storytellers.html?CMP=OTC-0D6B48984890</guid>
+<category>Instructables</category>
+<pubDate>Thu, 11 Dec 2008 20:17:44 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>PET bottles reused with style</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/upload/2008/12/pet_bottles_reused_with_s/recycle.jpg" width="390" height="550" alt="recycle.jpg"/></p>
+
+<p><img src="http://blog.makezine.com/upload/2008/12/pet_bottles_reused_with_s/reci1.jpg" width="366" height="550" alt="reci1.jpg"/></p>
+
+<p><img src="http://blog.makezine.com/upload/2008/12/pet_bottles_reused_with_s/reci4.jpg" width="366" height="550" alt="reci4.jpg"/></p>
+
+<p><img src="http://blog.makezine.com/upload/2008/12/pet_bottles_reused_with_s/reci5.jpg" width="366" height="550" alt="reci5.jpg"/></p>
+
+<p>Absolutely beautiful and inspiring bottle-based objects from <a href="http://www.ryterdesign.ch/recycline/frame.htm">Ryter Design</a>.<br />
+via <a href="http://www.notcot.org/post/17158/">notcot</a> via <a href="http://noquedanblogs.com/?p=3341#more-3341">noquedanblog</a>.</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/pet_bottles_reused_with_s.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/pet_bottles_reused_with_s.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/pet_bottles_reused_with_s.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/green/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Green&lt;/a&gt; | 
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fpet_bottles_reused_with_s.html&amp;title=PET%20bottles%20reused%20with%20style&amp;bodytext=%20Absolutely%20beautiful%20and%20inspiring%20bottle-based%20objects%20from%20Ryter%20Design.%20via%20notcot%20via%20noquedanblog....&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>John Park</author>
+<itunes:author>John Park</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/pet_bottles_reused_with_s.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/pet_bottles_reused_with_s.html?CMP=OTC-0D6B48984890</guid>
+<category>Green</category>
+<pubDate>Thu, 11 Dec 2008 17:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>SunTrack: follow the sun to catch its reflection</title>
+<description>
+<![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="IMG_9100.jpg" src="http://blog.makezine.com/IMG_9100.jpg" width="600" height="611" class="mt-image-none" style="" /></span></p>
+
+<p><a href="http://home.tiscali.nl/markhome/index.html?suntrack/suntrack">Here's a great way to increase the sunlight you bring indoors</a>:</p>
+
+<blockquote>
+<strong>SunTrack
+</strong>
+
+<p>The SunTrack system can reflect the sun in my house and keep the reflection all day. That way it is possible to have a lot of light in my living room witch is facing east.</p>
+
+<p>With a KlikAan remote control (433mhz) it is possible to:</p>
+
+<p>Calibrate the sun postion by relecting the sun back and ajust the shadow.<br />
+Move to a point where the reflection should be, and save 3 reflection points.<br />
+Select one of the three reflection points and stay there by adjusting the rotors.<br />
+Power down: go to the sleep position.<br />
+</blockquote></p>
+
+<p>(via <a href="http://hackaday.com/2008/12/06/track-the-sun-for-home-lighting/">hack a day</a>)</p>
+
+<p><a href="http://www.ida.net/users/tetonsl/solar/solarhom.htm">Here's an (older, largely text-based) description of a solar concentrator</a>; please comment with links to others!</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/suntrack_follow_the_sun_t.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/suntrack_follow_the_sun_t.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/suntrack_follow_the_sun_t.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+
+
+&lt;a href="http://blog.makezine.com/archive/green/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Green&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fsuntrack_follow_the_sun_t.html&amp;title=SunTrack%3A%20follow%20the%20sun%20to%20catch%20its%20reflection&amp;bodytext=%20Here%26apos%3Bs%20a%20great%20way%20to%20increase%20the%20sunlight%20you%20bring%20indoors%3A%20SunTrack%20The%20SunTrack%20system%20can%20reflect%20the%20sun%20in%20my%20house%20and%20keep%20the%20reflection%20all%20day.%20That%20way%20it%20is%20possible%20to%20have%20a%20lot%20of%20light...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Luke Iseman</author>
+<itunes:author>Luke Iseman</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/suntrack_follow_the_sun_t.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/suntrack_follow_the_sun_t.html?CMP=OTC-0D6B48984890</guid>
+<category>Green</category>
+<pubDate>Thu, 11 Dec 2008 16:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Walking, wheeled, fire-breathing motorcycle thingie</title>
+<description>
+<![CDATA[<p><embed src="http://www.veoh.com/veohplayer.swf?permalinkId=v16860823g9anBMpK&id=&player=videodetailsembedded" allowFullScreen="true" width="600" height="486" bgcolor="#FFFFFF" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer"></embed></p>
+
+<p>This makes me deeply happy on a whole bunch of different levels.</p>
+
+<p><a href="http://tash.gn.apc.org/mutoid1.htm">Mutoid Waste Company</a> [via <a href="http://www.botjunkie.com/">BotJunkie</a>]</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/walking_wheeled_firebreat.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/walking_wheeled_firebreat.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/walking_wheeled_firebreat.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+
+
+&lt;a href="http://blog.makezine.com/archive/robotics/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Robotics&lt;/a&gt; | 
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fwalking_wheeled_firebreat.html&amp;title=Walking%2C%20wheeled%2C%20fire-breathing%20motorcycle%20thingie&amp;bodytext=%20This%20makes%20me%20deeply%20happy%20on%20a%20whole%20bunch%20of%20different%20levels.%20Mutoid%20Waste%20Company%20%5Bvia%20BotJunkie%5D...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Gareth Branwyn</author>
+<itunes:author>Gareth Branwyn</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/walking_wheeled_firebreat.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/walking_wheeled_firebreat.html?CMP=OTC-0D6B48984890</guid>
+<category>Robotics</category>
+<pubDate>Thu, 11 Dec 2008 14:30:54 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Andi&apos;s people</title>
+<description>
+<![CDATA[<p><object width="600" height="488"><param name="movie" value="http://www.youtube.com/v/0rXB7N6qLJ4&hl=en&fs=1&rel=0"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/0rXB7N6qLJ4&hl=en&fs=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="600" height="488"></embed></object></p>
+
+<p>Anne Schroeder's high school math class doodles have turned into a whole host of new characters - Andi's People.  </p>
+
+<blockquote>
+<a href="http://www.andispeople.com/">Andi's People</a> were born during my sophomore year of high school, geometry class, to be exact. Their legs grew longer, their smiles, bigger, and their personality, more endearing.
+
+<p>When I moved to Hawaii after college, my boy with flip-flops and an aloha shirt adorned the front of a 'mahalo' note sent back home to family and friends in Boston.</p>
+
+<p>Throughout a career in the hotel/travel industry, Andi's People stayed, for the most part suppressed in the rear of my imagination, taken out for fleeting glimpses including a meeting with Nick Ashley of "Laura Ashley" in London.</p>
+
+<p>Now I have three children and a husband. At a mom's creative night at my daughter's preschool, Berrybrook, in 2000, I felt an uncontrollable urge to create ... and an Andi's People girl holding a giant sunflower emerged. That was the beginning.<br />
+</blockquote></p>
+
+<p>Anne now has a line of over <a href="http://www.andispeople.com/cards.php">60 original designs</a> for cards and other paper goods.  </p>
+
+<p>What have the people of your imagination done for you lately?  Do you have books of doodles, drawings or paintings that could come to life and become something public and tangible?  Have you tried to fabricate your dreams and personal imagery?  Add your comments below, and add your photos and video to the <a href="http://www.flickr.com/groups/make/pool/">Make Flickr pool</a>.</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/andis_people.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/andis_people.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/andis_people.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/crafts/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Crafts&lt;/a&gt; | 
+
+
+
+
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fandis_people.html&amp;title=Andi%26apos%3Bs%20people&amp;bodytext=%20Anne%20Schroeder%26apos%3Bs%20high%20school%20math%20class%20doodles%20have%20turned%20into%20a%20whole%20host%20of%20new%20characters%20-%20Andi%26apos%3Bs%20People.%20Andi%26apos%3Bs%20People%20were%20born%20during%20my%20sophomore%20year%20of%20high%20school%2C%20geometry%20class%2C%20to%20be%20exact.%20Their%20legs%20grew%20longer%2C...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Chris Connors</author>
+<itunes:author>Chris Connors</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/andis_people.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/andis_people.html?CMP=OTC-0D6B48984890</guid>
+<category>Crafts</category>
+<pubDate>Thu, 11 Dec 2008 14:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>DIY vocal monitor</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/wedgehorn_monitor.jpg" height="719" width="600" alt="Wedgehorn Monitor" /></p>
+
+<p>If you've performed kive with a band, you likely know how important monitor speakers are.  Without a vocal monitor, things can go awry quite quickly - and to make matters worse, many small venues don't have them.  To keep tabs on sonic output, Mark took matters into his own hands and built this "Wedgehorn" monitor speaker from a design by <a href="http://www.billfitzmaurice.com/">Bill Fitzmaurice</a>. - <a href="http://www.flickr.com/photos/33196345@N04/sets/72157610961612574/">Wedgehorn on Flickr</a></p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/diy_vocal_monitor.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/diy_vocal_monitor.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/diy_vocal_monitor.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/diy_projects/?CMP=OTC-0D6B48984890" /&gt;Read more articles in DIY Projects&lt;/a&gt; | 
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fdiy_vocal_monitor.html&amp;title=DIY%20vocal%20monitor&amp;bodytext=%20If%20you%26apos%3Bve%20performed%20kive%20with%20a%20band%2C%20you%20likely%20know%20how%20important%20monitor%20speakers%20are.%20Without%20a%20vocal%20monitor%2C%20things%20can%20go%20awry%20quite%20quickly%20-%20and%20to%20make%20matters%20worse%2C%20many%20small%20venues%20don%26apos%3Bt%20have%20them.%20To%20keep...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Collin Cunningham</author>
+<itunes:author>Collin Cunningham</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/diy_vocal_monitor.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/diy_vocal_monitor.html?CMP=OTC-0D6B48984890</guid>
+<category>DIY Projects</category>
+<pubDate>Thu, 11 Dec 2008 13:30:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Texas-sized MP3 belt buckle</title>
+<description>
+<![CDATA[<div style="align: right;"><img src="http://blog.makezine.com/upload/2008/12/texas-sized_mp3_belt_buck/BeltBuckle121108.jpg" width="500" height="375" alt="BeltBuckle121108.jpg"/></div>
+
+<p>If you were at Maker Faire Austin, you may have seen this honky-tonky belt buckle Ryan from SparkFun built which incorporates an MP3 player. It even has an MMA7260 Triple Axis Accelerometer on it to create a hip-thruster interface (i.e. you change songs by thrusting your hips). Oh, THAT's not going to look embarrassing on the subway. But then, the entire buckle is dripping with sartorial wrong sauce. </p>
+
+<p><a href="http://www.sparkfun.com/commerce/tutorial_info.php?tutorials_id=118">MP3 Player Belt Buckle</a></p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/texassized_mp3_belt_buckl.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/texassized_mp3_belt_buckl.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/texassized_mp3_belt_buckl.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/gadgets/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Gadgets&lt;/a&gt; | 
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Ftexassized_mp3_belt_buckl.html&amp;title=Texas-sized%20MP3%20belt%20buckle&amp;bodytext=%20If%20you%20were%20at%20Maker%20Faire%20Austin%2C%20you%20may%20have%20seen%20this%20honky-tonky%20belt%20buckle%20Ryan%20from%20SparkFun%20built%20which%20incorporates%20an%20MP3%20player.%20It%20even%20has%20an%20MMA7260%20Triple%20Axis%20Accelerometer%20on%20it%20to%20create%20a%20hip-thruster%20interface...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Gareth Branwyn</author>
+<itunes:author>Gareth Branwyn</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/texassized_mp3_belt_buckl.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/texassized_mp3_belt_buckl.html?CMP=OTC-0D6B48984890</guid>
+<category>Gadgets</category>
+<pubDate>Thu, 11 Dec 2008 13:08:11 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Arduino Mini-powered UAV</title>
+<description>
+<![CDATA[<p><object width="600" height="486"><param name="movie" value="http://www.youtube.com/v/HXEjzmPnQp8&hl=en&fs=1&rel=0&fmt=18"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/HXEjzmPnQp8&hl=en&fs=1&rel=0&fmt=18" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="600" height="486"></embed></object></p>
+
+<p>Here's some video of Sean Reynolds' UAV that uses an Arduino Mini, Maxbotix ultrasonic sensors, and a HMC6352 compass module for autonomous flight control. </p>
+
+<p><a href="http://seanreynoldscs.com/WashUAV.aspx">Wash UAV: Final Demo</a> [via <a href="http://www.sparkfun.com">SparkFun</a>]</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/arduino_minipowered_uav.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/arduino_minipowered_uav.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/arduino_minipowered_uav.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+
+
+&lt;a href="http://blog.makezine.com/archive/flying/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Flying&lt;/a&gt; | 
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Farduino_minipowered_uav.html&amp;title=Arduino%20Mini-powered%20UAV&amp;bodytext=%20Here%26apos%3Bs%20some%20video%20of%20Sean%20Reynolds%26apos%3B%20UAV%20that%20uses%20an%20Arduino%20Mini%2C%20Maxbotix%20ultrasonic%20sensors%2C%20and%20a%20HMC6352%20compass%20module%20for%20autonomous%20flight%20control.%20Wash%20UAV%3A%20Final%20Demo%20%5Bvia%20SparkFun%5D...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Gareth Branwyn</author>
+<itunes:author>Gareth Branwyn</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/arduino_minipowered_uav.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/arduino_minipowered_uav.html?CMP=OTC-0D6B48984890</guid>
+<category>Flying</category>
+<pubDate>Thu, 11 Dec 2008 11:02:21 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Complete sprouting chart</title>
+<description>
+<![CDATA[<p>While it may not be a masterpiece of information design, Jeff Breakey's complete sprouting chart does tell you what you need to know about sprouting everything from Aduki to Wheat.  </p>
+
+<p>Here's an excerpt:</p>
+
+<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="sproutingchart.jpg" src="http://blog.makezine.com/sproutingchart.jpg" width="600" height="522" class="mt-image-none" style="" /></span></p>
+
+<p>And <a href="http://www.motherearthnews.com/uploadedImages/articles/issues/1981-11-01/072-102-01tab.jpg">here's the full version.</a></p>
+
+<p>(via <a href="http://www.motherearthnews.com/Organic-Gardening/1981-11-01/Jeff-Breakeys-Complete-Sprouting-Chart.aspx">Mother Earth News</a>)</p>
+
+<p>It is from 1981, so expect prices to be a bit off... </p>
+
+<p>For sprouter plans, check out <a href="http://www.instructables.com/tag/?sort=none&limit:type:id=on&q=sprouting&=limit:type:id">a variety of Instructables.</a></p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/complete_sprouting_chart.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/complete_sprouting_chart.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/complete_sprouting_chart.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+
+
+&lt;a href="http://blog.makezine.com/archive/green/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Green&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fcomplete_sprouting_chart.html&amp;title=Complete%20sprouting%20chart&amp;bodytext=While%20it%20may%20not%20be%20a%20masterpiece%20of%20information%20design%2C%20Jeff%20Breakey%26apos%3Bs%20complete%20sprouting%20chart%20does%20tell%20you%20what%20you%20need%20to%20know%20about%20sprouting%20everything%20from%20Aduki%20to%20Wheat.%20Here%26apos%3Bs%20an%20excerpt%3A%20And%20here%26apos%3Bs%20the%20full%20version.%20%28via%20Mothe&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Luke Iseman</author>
+<itunes:author>Luke Iseman</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/complete_sprouting_chart.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/complete_sprouting_chart.html?CMP=OTC-0D6B48984890</guid>
+<category>Green</category>
+<pubDate>Thu, 11 Dec 2008 10:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>M6G Prototype in foam</title>
+<description>
+<![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="M6GPrototype-Vrogy.jpg" src="http://blog.makezine.com/M6GPrototype-Vrogy.jpg" width="600" height="601" class="mt-image-none" style="" /></span></p>
+
+<p><a href="http://vrogy.net/">Vrogy</a> has created a foam prototype of the M6G pistol from Halo 3.  He originally intended to make a whole arsenal of <a href="http://www.flickr.com/photos/vrogy/2072006529/">aluminum cast weaponry</a> from his designs.  He discovered from this design that <a href="http://vrogy.net/category/metalcasting/">lost foam metal casting</a> is somewhat a fussy art. </p>
+
+<blockquote>
+I cast one, but it turned out very wrong.. metalcasting is a touchy thing....some things just take a whole lot of iterative cycles.
+</blockquote>
+
+<p>His work really shows a dedication to using the <a href="http://blog.makezine.com/archive/2008/11/using_the_design_process.html">Design Process</a> and prototyping to get the results that he is after.  It seems from looking at his work that the process itself is an important part of <a href="http://www.flickr.com/photos/vrogy/2692741314/">how and why he creates</a>. His <a href="http://vrogy.net/m6g-magnum-model/">CAD renderings</a> of the parts and body armor are finely detailed and wonderful to behold.</p>
+
+<p>One of his other projects is to make the <a href="http://www.rockcliffmachine.com/">Rockliff</a> DIY <a href="http://blog.makezine.com/archive/2007/01/cnc_router_plan.html">CNC machine mentioned a while back on the Make blog</a>.  his machine is just about ready to go.  More on that after the glue dries and he finds a 'truly workable <a href="http://en.wikipedia.org/wiki/Computer-aided_manufacturing">CAM program</a>'.</p>
+
+<blockquote>
+The idea is to CNC parts for different scifi and fantasy costumes and props, most notable the Starcraft II marine armor and the various Halo armors. MDF or coated foam parts would provide a base for silicon molding or vacuum-forming bucks.
+</blockquote>
+
+<p>Have you been machining devices, costumes or other imagery from video games and virtual worlds? How can video games feed your curiosity and creativity?  What have you done with <a href="http://blog.makezine.com/archive/2008/11/materials_sheet_goods.html">insulating foam or other materials</a>?  Have you got a good lead on a workable CAM software package?  What do you use for your CAD designing? Share your ideas and techniques in the comments, and show off your work in the <a href="http://www.flickr.com/groups/make/pool/">Make Flickr pool</a>.<br />
+</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/m6g_prototype_in_foam.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/m6g_prototype_in_foam.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/m6g_prototype_in_foam.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href="http://blog.makezine.com/archive/how_its_made/?CMP=OTC-0D6B48984890" /&gt;Read more articles in How it&apos;s made&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fm6g_prototype_in_foam.html&amp;title=M6G%20Prototype%20in%20foam&amp;bodytext=%20Vrogy%20has%20created%20a%20foam%20prototype%20of%20the%20M6G%20pistol%20from%20Halo%203.%20He%20originally%20intended%20to%20make%20a%20whole%20arsenal%20of%20aluminum%20cast%20weaponry%20from%20his%20designs.%20He%20discovered%20from%20this%20design%20that%20lost%20foam%20metal%20casting%20is...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Chris Connors</author>
+<itunes:author>Chris Connors</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/m6g_prototype_in_foam.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/m6g_prototype_in_foam.html?CMP=OTC-0D6B48984890</guid>
+<category>How it&apos;s made</category>
+<pubDate>Thu, 11 Dec 2008 09:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>30 Ways to die of electrocution</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/3100410358_038862a774_b.jpg" height="801" width="600" border="0" hspace="4" vspace="4" alt="3100410358 038862A774 B" /><br />
+<a href="http://brepettis.com/blog/">Bre</a> posted up these <a href="http://www.flickr.com/photos/bre/sets/72157611077138836/">30 illustrations from the book Elektroschutz in 132 Bildern</a>. These diagrams outline causes of electrical accidents...</p>
+
+<p> <br />
+ <br />
+</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/30_ways_to_die_of_electro.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/30_ways_to_die_of_electro.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/30_ways_to_die_of_electro.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/arts/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Arts&lt;/a&gt; | 
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2F30_ways_to_die_of_electro.html&amp;title=30%20Ways%20to%20die%20of%20electrocution&amp;bodytext=%20Bre%20posted%20up%20these%2030%20illustrations%20from%20the%20book%20Elektroschutz%20in%20132%20Bildern.%20These%20diagrams%20outline%20causes%20of%20electrical%20accidents......&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Phillip Torrone</author>
+<itunes:author>Phillip Torrone</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/30_ways_to_die_of_electro.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/30_ways_to_die_of_electro.html?CMP=OTC-0D6B48984890</guid>
+<category>Arts</category>
+<pubDate>Thu, 11 Dec 2008 08:40:51 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Ebooks coming to the Nintendo DS</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/upload/2008/12/ebooks_coming_to_the_nint/dsbooks.jpg" width="512" height="341" alt="dsbooks.jpg"/></p>
+
+<p>100 classic books are coming to the Nintendo DS on December 26 in the UK, with support for downloadable books. The DS could make a nice ebook reader if it's done right:</p>
+
+<blockquote>
+Turn your Nintendo DS into a pocket-sized library with 100 timeless novels from some of the greatest writers in history. Enjoy the exciting escapades of the swashbuckling Long John Silver in "Treasure Island", marvel at the redoubtable skills of the most famous detective of all time in "the Adventures of Sherlock Holmes", or run the course of true love with Elizabeth Bennet in "Pride and Prejudice" - the choice is yours!</blockquote>
+
+<p><a href="http://nintendo.co.uk/NOE/en_GB/games/nds/100_classic_book_collection_10283.html">100 Classic Book Collection</a> [<a href="http://games.slashdot.org/article.pl?sid=08/12/10/1543236">via Slashdot</a>] VideoGamer.com has <a href="http://www.videogamer.com/news/01-12-2008-10068.html">the complete title list</a>.</p>
+
+<p>The open-source <a href="http://rhaleblian.wordpress.com/dslibris-an-ebook-reader-for-the-nintendo-ds/">dslibris</a> looks interesting as well; it's homebrew, so you'd need to load it on an <a href="http://en.wikipedia.org/wiki/Nintendo_DS_storage_devices">appropriate storage device</a>.</p>
+
+<p>The DS would make an interesting platform for presenting all the various media we have here at Make--videos, books, magazine articles could come together in a touch-friendly way. If anyone from Nintendo (or hey, anyone from the homebrew community) is reading this, get in touch (no pun intended, I swear!). 
+
+<script language="JavaScript" type="text/javascript">
+<!--
+var name = "bjepson";
+var domain = "oreilly.com";
+var display = "Email Brian";
+var ending = "";
+document.write('<a href="mailto:' + name + '&#64;' + domain + '">');
+if (display) {
+ document.write(display);
+} else {
+ document.write(name + '&#64;' + domain);
+}
+document.write('</a>' + ending);
+
+// -->
+</script></p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/ebooks_coming_to_the_nint.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/ebooks_coming_to_the_nint.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/ebooks_coming_to_the_nint.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/gaming/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Gaming&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Febooks_coming_to_the_nint.html&amp;title=Ebooks%20coming%20to%20the%20Nintendo%20DS&amp;bodytext=%20100%20classic%20books%20are%20coming%20to%20the%20Nintendo%20DS%20on%20December%2026%20in%20the%20UK%2C%20with%20support%20for%20downloadable%20books.%20The%20DS%20could%20make%20a%20nice%20ebook%20reader%20if%20it%26apos%3Bs%20done%20right%3A%20Turn%20your%20Nintendo%20DS%20into%20a%20pocket-sized...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Brian Jepson</author>
+<itunes:author>Brian Jepson</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/ebooks_coming_to_the_nint.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/ebooks_coming_to_the_nint.html?CMP=OTC-0D6B48984890</guid>
+<category>Gaming</category>
+<pubDate>Thu, 11 Dec 2008 08:01:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>How to simplify your holiday season...</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/TSTD1-2.jpg" height="387" width="468" border="0" hspace="4" vspace="4" alt="Tstd1-2" /><br />
+<a href="http://www.ajc.com/services/content/atlanta-holiday-guide/stories/2008/12/10/simple_atlanta_holiday.html">Article with the three Rs - reduce, reuse, recycle</a> (and a <a href="http://www.makershed.com/ProductDetails.asp?ProductCode=TSTD1">MAKE</a> mention! We'd like to say 4 Rs, re-Make: !).</p>
+
+<blockquote>Shopping stress and hall-decking frenzy is just so last year. Try thinking through everything about your holidays, whether it’s the food you prepare, the trips you take or the way you celebrate, and break it all down using the three Rs of simplifying — reduce, reuse, recycle. Rethinking your routine might make it simpler this year — and less stressful in the future....
+<br><br>
+RECYCLE
+Everything: There’s fun to be had with all the old sweaters, shoe boxes and computer cables shoved to the back of the closet and a little creativity. If the old imagination is a little rusty, don’t worry: There’s lots of help out there. Check out Instructables.com for step-by-step, how-to instructions for almost everything in life, including gift ideas like recycled lamps, kids’ book clocks, homemade bubble bath and speakers from cereal boxes and dolls. For a science and technology spin on DIY projects, check out the Web site for Make magazine at Makezine.com.</blockquote>
+ 
+]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/how_to_simplify_your_holi.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/how_to_simplify_your_holi.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/how_to_simplify_your_holi.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/holiday_projects/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Holiday projects&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fhow_to_simplify_your_holi.html&amp;title=How%20to%20simplify%20your%20holiday%20season...&amp;bodytext=%20Article%20with%20the%20three%20Rs%20-%20reduce%2C%20reuse%2C%20recycle%20%28and%20a%20MAKE%20mention%21%20We%26apos%3Bd%20like%20to%20say%204%20Rs%2C%20re-Make%3A%20%21%29.%20Shopping%20stress%20and%20hall-decking%20frenzy%20is%20just%20so%20last%20year.%20Try%20thinking%20through%20everything%20about%20your%20holidays%2C%20whether...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Phillip Torrone</author>
+<itunes:author>Phillip Torrone</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/how_to_simplify_your_holi.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/how_to_simplify_your_holi.html?CMP=OTC-0D6B48984890</guid>
+<category>Holiday projects</category>
+<pubDate>Thu, 11 Dec 2008 08:00:55 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Sustainable penguins</title>
+<description>
+<![CDATA[<div style="align: right;"><img src="http://blog.makezine.com/upload/2008/12/sustainable_penguins/sustainable%20penguins.jpg" width="600" height="398" alt="sustainable penguins.jpg"/></div>
+
+<p>Seattle's Woodland Park Zoo is in the process of building a new <a href="http://www.zoo.org/penguins/details.html#">Humboldt penguin exhibit that conserves energy</a>; they're installing a natural filtration system, and they're using geothermal energy to keep the pool at a penguin-pleasing temperature range of 50-60 degrees Farenheit.</p>
+
+<blockquote>State-of-the-art engineering allows the new penguin exhibit to help us reduce our environmental footprint. The plant roots and microbes in a "constructed wetland," similar to a natural wetland, will filter the penguin pool water as it becomes dirty, or nutrient-rich (think feathers, fish and poop!). This natural filtration system will return purified water to the penguin pool. This means a pristine water environment for the penguins and no pollution entering our lakes, streams or Puget Sound. One-hundred feet below the exhibit, deep tubes will use the earth's thermal reserves to maintain the penguin pool at the birds' ideal water temperature of 50-60 degrees---heating it in winter and cooling it in summer.</blockquote>
+]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/sustainable_penguins.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/sustainable_penguins.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/sustainable_penguins.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/green/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Green&lt;/a&gt; | 
+
+
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fsustainable_penguins.html&amp;title=Sustainable%20penguins&amp;bodytext=%20Seattle%26apos%3Bs%20Woodland%20Park%20Zoo%20is%20in%20the%20process%20of%20building%20a%20new%20Humboldt%20penguin%20exhibit%20that%20conserves%20energy%3B%20they%26apos%3Bre%20installing%20a%20natural%20filtration%20system%2C%20and%20they%26apos%3Bre%20using%20geothermal%20energy%20to%20keep%20the%20pool%20at%20a%20penguin-pleasing%20temperatu&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Patti Schiendelman</author>
+<itunes:author>Patti Schiendelman</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/sustainable_penguins.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/sustainable_penguins.html?CMP=OTC-0D6B48984890</guid>
+<category>Green</category>
+<pubDate>Thu, 11 Dec 2008 07:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Revolving door in Netherlands train station generates power per revolution</title>
+<description>
+<![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="doorall.jpg" src="http://blog.makezine.com/doorall.jpg" width="600" height="813" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span></p>
+
+<p>The Netherlands based company, Royal Boon Edam Group Holding, has created the world's first energy generating revolving door that is currently installed at the  Driebergen-Zeist railway station in Holland. The door stores power generated in a capicitor bank and illuminates LED lights in its ceiling, while a large scale display outside the building shows pedestrians how much overall power has been generated by the door. This commercialized door is not to be confused with the "Revolution Door" project which still remains a prototype.</p>
+
+<p><a href="http://www.boonedam.us/inc/press/pressdetail.asp?PressId=182" target="_new">World's First Energy Generating Revolving Door</a> via <a href="http://www.inhabitat.com/2008/12/10/energy-generating-revolving-door-by-boon-edam/" target="_new">InHabitat</a></p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/revolving_door_in_netherl.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/revolving_door_in_netherl.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/revolving_door_in_netherl.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/furniture/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Furniture&lt;/a&gt; | 
+
+
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Frevolving_door_in_netherl.html&amp;title=Revolving%20door%20in%20Netherlands%20train%20station%20generates%20power%2&amp;bodytext=%20The%20Netherlands%20based%20company%2C%20Royal%20Boon%20Edam%20Group%20Holding%2C%20has%20created%20the%20world%26apos%3Bs%20first%20energy%20generating%20revolving%20door%20that%20is%20currently%20installed%20at%20the%20Driebergen-Zeist%20railway%20station%20in%20Holland.%20The%20door%20stores%20power%20generated%20in%20a%20capicitor%20bank%20a&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Jonah Brucker-Cohen</author>
+<itunes:author>Jonah Brucker-Cohen</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/revolving_door_in_netherl.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/revolving_door_in_netherl.html?CMP=OTC-0D6B48984890</guid>
+<category>Furniture</category>
+<pubDate>Thu, 11 Dec 2008 06:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Google Zeitgeist 2008 - Top 10 DIY searches...</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/MAKE_PT1443.jpg" height="105" width="608" border="0" hspace="4" vspace="4" alt="Make Pt1443" /><br />
+<a href="http://www.google.com/intl/en/press/zeitgeist2008/trendsetters.html">Google Zeitgeist 2008</a> is up, here are the top 10 "DIY searches"...</p>
+
+<p><strong>DIY (Do It Yourself)</strong><ol><li>diy wedding</li><li>diy tv</li><li>diy solar</li><li>diy tile</li><li>diy audio</li><li>diy home</li><li>diy halloween</li><li>diy electric</li><li>diy concrete</li><li>diy car</li></ol><br />
+ <br />
+A lot of people come to the MAKE sites looking for these, here are some of what they'll find!<br />
+ <br />
+<a href="http://www.google.com/search?complete=1&amp;hl=en&amp;q=site%3Amakezine.com+diy+wedding&amp;btnG=Search&amp;aq=f&amp;oq=">diy wedding</a> - <a href="http://blog.makezine.com/archive/2006/05/how_to_make_a_fivecent_wedding.html">Five cent wedding bands</a> and the <a href="http://blog.makezine.com/archive/2005/11/the_knitted_wedding.html">knitted wedding</a>.<br />
+<a href="http://www.google.com/search?complete=1&amp;hl=en&amp;q=site%3Amakezine.com+diy+tv&amp;btnG=Search&amp;aq=f&amp;oq=">diy tv</a> - <a href="http://makezine.com/diytv/">DIY Television</a>, <a href="http://blog.makezine.com/archive/2006/08/diy_rear_projection_bedroom_tv.html">DIY Rear projection bedroom TV project</a>.<br />
+<a href="http://www.google.com/search?complete=1&amp;hl=en&amp;q=site%3Amakezine.com+diy+solar&amp;btnG=Search&amp;aq=f&amp;oq=">diy solar</a> - <a href="http://blog.makezine.com/archive/2007/02/diy_solar_heate.html">DIY Solar heater</a>, <a href="http://blog.makezine.com/archive/2007/09/diy_solarpowered_pc.html">DIY Solar-powered PC</a>, <a href="http://blog.makezine.com/archive/2005/06/diy_300_solar_power_gener.html">DIY $300 solar power generator</a>.<br />
+<a href="http://www.google.com/search?complete=1&amp;hl=en&amp;q=site%3Amakezine.com+diy+tile&amp;btnG=Search&amp;aq=f&amp;oq=">diy tile</a> - <a href="http://blog.makezine.com/archive/2006/01/diy_carpet_tile_sample_area_ru.html">DIY Carpet Tile Sample Area Rug</a>, Scrabble tile mosaic table.<br />
+<a href="http://www.google.com/search?complete=1&amp;hl=en&amp;q=site%3Amakezine.com+diy+audio&amp;btnG=Search&amp;aq=f&amp;oq=">diy audio</a> - <a href="http://blog.makezine.com/archive/2006/10/diy_audio_splitter.html">DIY Audio splitter</a>, <a href="http://blog.makezine.com/archive/2007/02/diyaudioproject.html">DIY Audio projects</a>.<br />
+<a href="http://www.google.com/search?complete=1&amp;hl=en&amp;q=site%3Amakezine.com+diy+home&amp;btnG=Search&amp;aq=f&amp;oq=">diy home</a> - <a href="http://makezine.com/diyhome/">DIY Home</a>, <a href="http://makezine.com/diyentertain/">DIY: Home</a> Entertainment.<br />
+<a href="http://www.google.com/search?complete=1&amp;hl=en&amp;q=site%3Amakezine.com+diy+halloween&amp;btnG=Search&amp;aq=f&amp;oq=">diy halloween</a> - <a href="http://blog.makezine.com/archive/2008/10/diy_halloween_contest_thi.html">DIY Halloween contest</a>, <a href="http://blog.makezine.com/archive/2008/12/diy_halloween_contest_win.html">DIY Halloween contest winners</a>.<br />
+<a href="http://www.google.com/search?complete=1&amp;hl=en&amp;q=site%3Amakezine.com+diy+electric&amp;btnG=Search&amp;aq=f&amp;oq=">diy electric</a> - <a href="http://blog.makezine.com/archive/2008/09/the_cap_kart_diy_electric.html">The Cap Kart: DIY Electric Go-kart</a>, <a href="http://blog.makezine.com/archive/2008/01/diy_electric_stick_bass.html">DIY Electric stick bass</a>.<br />
+<a href="http://www.google.com/search?complete=1&amp;hl=en&amp;q=site%3Amakezine.com+diy+concrete&amp;btnG=Search&amp;aq=f&amp;oq=">diy concrete</a> - <a href="http://blog.makezine.com/archive/2007/08/how_to_diy_acid_stained_c.html">DIY acid stained concrete, The making of</a>... <a href="http://blog.makezine.com/archive/2008/03/the_making_of_concrete_ri.html">concrete rings</a>.<br />
+<a href="http://www.google.com/search?complete=1&amp;hl=en&amp;q=site%3Amakezine.com+diy+car&amp;btnG=Search&amp;aq=f&amp;oq=">diy car</a> - <a href="http://blog.makezine.com/archive/2008/12/made_on_earth_yabba_dabba.html">Yabba Dabba DIY - Homemade Flintstones car</a>, <a href="http://blog.makezine.com/archive/2008/04/diy_micro_steam_car.html">DIY Micro steam car</a>.</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/google_zeitgeist_2008_top.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/google_zeitgeist_2008_top.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/google_zeitgeist_2008_top.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/announcements/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Announcements&lt;/a&gt; | 
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fgoogle_zeitgeist_2008_top.html&amp;title=Google%20Zeitgeist%202008%20-%20Top%2010%20DIY%20searches...&amp;bodytext=%20Google%20Zeitgeist%202008%20is%20up%2C%20here%20are%20the%20top%2010%20%26quot%3BDIY%20searches%26quot%3B...%20DIY%20%28Do%20It%20Yourself%29diy%20weddingdiy%20tvdiy%20solardiy%20tilediy%20audiodiy%20homediy%20halloweendiy%20electricdiy%20concretediy%20car%20A%20lot%20of%20people%20come%20to%20the%20MAKE%20sites%20looking%20for%20these%2C%20here&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Phillip Torrone</author>
+<itunes:author>Phillip Torrone</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/google_zeitgeist_2008_top.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/google_zeitgeist_2008_top.html?CMP=OTC-0D6B48984890</guid>
+<category>Announcements</category>
+<pubDate>Thu, 11 Dec 2008 05:00:01 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Measuring tapes align to form pyramid</title>
+<description>
+<![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="zerointro.jpg" src="http://blog.makezine.com/zerointro.jpg" width="600" height="358" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span></p>
+
+<p>￼"Zero Worship" is an art installation consisting of 14 metal measuring tapes positioned with their magnetic tips touching at a single point. The tapes are held together by their own structural integrity where zero is the highest point. The piece was built by Irish artist Ivan Twohig who uses everyday objects in his art to re-imagine their significance in society.</p>
+
+<p><a href="http://ivantwohig.com/web_zeroworship.html" target="_new">Zero Worship</a><br />
+</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/measuring_tapes_align_to.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/measuring_tapes_align_to.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/measuring_tapes_align_to.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/arts/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Arts&lt;/a&gt; | 
+
+
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fmeasuring_tapes_align_to.html&amp;title=Measuring%20tapes%20align%20to%20form%20pyramid&amp;bodytext=%20%EF%BF%BC%26quot%3BZero%20Worship%26quot%3B%20is%20an%20art%20installation%20consisting%20of%2014%20metal%20measuring%20tapes%20positioned%20with%20their%20magnetic%20tips%20touching%20at%20a%20single%20point.%20The%20tapes%20are%20held%20together%20by%20their%20own%20structural%20integrity%20where%20zero%20is%20the%20highest%20point.%20The...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Jonah Brucker-Cohen</author>
+<itunes:author>Jonah Brucker-Cohen</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/measuring_tapes_align_to.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/measuring_tapes_align_to.html?CMP=OTC-0D6B48984890</guid>
+<category>Arts</category>
+<pubDate>Thu, 11 Dec 2008 05:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Old CD/DVD drives comment on web 2.0 network interaction</title>
+<description>
+<![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="mememememe.jpg" src="http://blog.makezine.com/mememememe.jpg" width="600" height="400" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></span></p>
+
+<p>This interesting art project, entitled "m/e/m/e 2.0 (dreams of the 21st century)" by Danja Vasiliev is an interactive installation that provides an ironic twist to the world of web 2.0. The project consists of 28 old CD/DVD-ROM drives which open and close through a web based interface. Each tray is filled with a circuit board in the shape of a CD that parodies some form of web 2.0 style with a website printed on its face. Check out the videos of it in action at the links below.</p>
+
+<p><a href="http://flickr.com/photos/whiteafrican/2885226343/" target="_new">m/e/m/e 2.0 (dreams of the 21st century) </a>, <a href="http://k0a1a.net/meme20/" target="_new">Videos and more info</a>, via <a href="http://www.neural.it/art/2008/12/post_1.phtml" target="_new">Neural</a></p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/old_cddvd_drives_comment.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/old_cddvd_drives_comment.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/old_cddvd_drives_comment.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/arts/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Arts&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fold_cddvd_drives_comment.html&amp;title=Old%20CD%2FDVD%20drives%20comment%20on%20web%202.0%20network%20interaction&amp;bodytext=%20This%20interesting%20art%20project%2C%20entitled%20%26quot%3Bm%2Fe%2Fm%2Fe%202.0%20%28dreams%20of%20the%2021st%20century%29%26quot%3B%20by%20Danja%20Vasiliev%20is%20an%20interactive%20installation%20that%20provides%20an%20ironic%20twist%20to%20the%20world%20of%20web%202.0.%20The%20project%20consists%20of%2028%20old%20CD%2FDVD-ROM%20drives%20whic&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Jonah Brucker-Cohen</author>
+<itunes:author>Jonah Brucker-Cohen</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/old_cddvd_drives_comment.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/old_cddvd_drives_comment.html?CMP=OTC-0D6B48984890</guid>
+<category>Arts</category>
+<pubDate>Thu, 11 Dec 2008 04:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>PlayStation Wizard - LEGO PlayStation conversion</title>
+<description>
+<![CDATA[<p><img alt="MOE_pswiz" src="http://blog.makezine.com/MOE_pswiz.jpg" width="600" height="500" border="0" hspace="4" vspace="4" /></p>
+
+<p>Photograph by Max Maruszewski</p>
+
+<p>Learning to use an oxyacetylene torch was just the spark Max Maruszewski needed to set his interest in building things afire. Now, when he's not working on a school play or racing around a parking lot in the "wheelchair" he and a buddy made out of a shopping cart, this 16-year-old's almost certainly "coming up with crazy stuff to build."</p>
+
+<p>Boredom can play a large part in a teenager's life, but for Maruszewski, it's often his muse. Take, for instance, his Lego PlayStation conversion. "The PlayStation box came from pure boredom, late at night when my friend Doug West came over," he remembers. "Mainly I just get bored and decide to go make something weird."</p>
+
+<p>Maruszewski's interest in making things started when he was a youngster, hanging out in his father's bicycle shop in San Francisco. From there, he was lucky enough to find a venue for learning often-neglected maker skills. "It really started to pick up when I started a machine shop class at Petaluma High School," he says. "I learned how to use an oxy torch and how to use lathes and such. These skills motivated me to acquire some more 'hardcore' tools."</p>
+
+<p>He's now working on a remote-control " shopping bot" that he and a pal hope to send down to the local 7-11 for chips and salsa. "It will hand the cashier a credit card and get the receipt and bring it back. It's going to be quite a challenge," he predicts.</p>
+
+<p>Maruszewski continues to take machine shop classes, and after school he's earning his second-level credential with the National Institute for Metalworking Skills (NIMS). The NIMS credentials will allow him to apply for a degree in CNC machining later on, something he's very keen on doing.</p>
+
+<p>For now, he's content to continue his schooling and have a little teenage fun. "Doug and I like to go to the local [grocery store] and get a train of carts attached to the back of the wheelchair. We zoom around the store grabbing coupons, then leave really fast."</p>
+
+<p>Ah, the vagaries of the youthful mind. Maybe next he'll build coupon-dispensing robots.</p>
+
+<p>>> Maruszewski's Projects: <a href="http://makezine.com/go/maxm">makezine.com/go/maxm</a></p>
+
+<p>From the column <a href="http://makezine.com/made/">Made on Earth</a> - <a href="http://makezine.com/13/made_playstation/">MAKE 13, page 28 - Shawn Connally</a>.</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/made_on_earth_playstation.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/made_on_earth_playstation.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/made_on_earth_playstation.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+
+
+&lt;a href="http://blog.makezine.com/archive/made_on_earth/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Made On Earth&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fmade_on_earth_playstation.html&amp;title=PlayStation%20Wizard%20-%20LEGO%20PlayStation%20conversion&amp;bodytext=%20Photograph%20by%20Max%20Maruszewski%20Learning%20to%20use%20an%20oxyacetylene%20torch%20was%20just%20the%20spark%20Max%20Maruszewski%20needed%20to%20set%20his%20interest%20in%20building%20things%20afire.%20Now%2C%20when%20he%26apos%3Bs%20not%20working%20on%20a%20school%20play%20or%20racing%20around%20a%20parking...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Phillip Torrone</author>
+<itunes:author>Phillip Torrone</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/made_on_earth_playstation.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/made_on_earth_playstation.html?CMP=OTC-0D6B48984890</guid>
+<category>Made On Earth</category>
+<pubDate>Thu, 11 Dec 2008 04:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Anatomy Arcade games</title>
+<description>
+<![CDATA[<div style="align: right;"><img src="http://blog.makezine.com/upload/2008/12/anatomy_arcade_games/anatomy%20arcade.jpg" width="600" height="112" alt="anatomy arcade.jpg"/></div>
+
+<p><a href="http://thinkanatomy.com/">Think Anatomy</a> points us to <a href="http://www.anatomyarcade.com/">Anatomy Arcade</a>, an anatomy learning site with free flash games, including Poke-A-Muscle, Whack-A-Bone, and a bunch of cool jigsaw puzzles.</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/anatomy_arcade_games.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/anatomy_arcade_games.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/anatomy_arcade_games.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/gaming/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Gaming&lt;/a&gt; | 
+
+
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fanatomy_arcade_games.html&amp;title=Anatomy%20Arcade%20games&amp;bodytext=%20Think%20Anatomy%20points%20us%20to%20Anatomy%20Arcade%2C%20an%20anatomy%20learning%20site%20with%20free%20flash%20games%2C%20including%20Poke-A-Muscle%2C%20Whack-A-Bone%2C%20and%20a%20bunch%20of%20cool%20jigsaw%20puzzles....&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Patti Schiendelman</author>
+<itunes:author>Patti Schiendelman</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/anatomy_arcade_games.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/anatomy_arcade_games.html?CMP=OTC-0D6B48984890</guid>
+<category>Gaming</category>
+<pubDate>Thu, 11 Dec 2008 03:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Nobel Physicist chosen to be Energy Secretary</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/Steven_Chu_1781.jpg" height="525" width="342" border="0" hspace="4" vspace="4" alt="Steven Chu 1781" /><br />
+<a href="http://www.washingtonpost.com/wp-dyn/content/article/2008/12/10/AR2008121003681.html">Nobel Physicist chosen to be Energy Secretary</a> - "we are what we celebrate", having a scientist in this role is a fantastic choice, we'll see how it goes!... Steven Worked on laser cooling and trapping atoms using lasers!</p>
+
+<blockquote>President-elect  Barack Obama has chosen <a href="http://en.wikipedia.org/wiki/Steven_Chu">Steven Chu</a>, a Nobel Prize-winning physicist who heads the <a href="http://www.lbl.gov/">Lawrence Berkeley National Laboratory</a>, to be the next energy secretary, and he has picked veteran regulators from diverse backgrounds to fill three other key jobs on his environmental and climate-change team, Democratic sources said yesterday.
+ 
+ 
+Steven Chu is an American experimental physicist. He is known for his research in laser cooling and trapping of atoms, which won him the Nobel Prize in Physics in 1997. His current research is concerned primarily with the study of biological systems at the single molecule level. He is currently Professor of Physics and Molecular and Cellular Biology of University of California, Berkeley and the director of the Lawrence Berkeley National Laboratory. </blockquote>
+ 
+Pictured above, a photo via <a href="http://www.boingboing.net/2008/12/10/obama-selects-nobel.html">BoingBoing</a> by <a href="http://bartnagel.com/series/chu.html">Bart Nagel.</a>
+ 
+]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/nobel_physicist_chosen_to.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/nobel_physicist_chosen_to.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/nobel_physicist_chosen_to.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/science/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Science&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fnobel_physicist_chosen_to.html&amp;title=Nobel%20Physicist%20chosen%20to%20be%20Energy%20Secretary&amp;bodytext=%20Nobel%20Physicist%20chosen%20to%20be%20Energy%20Secretary%20-%20%26quot%3Bwe%20are%20what%20we%20celebrate%26quot%3B%2C%20having%20a%20scientist%20in%20this%20role%20is%20a%20fantastic%20choice%2C%20we%26apos%3Bll%20see%20how%20it%20goes%21...%20Steven%20Worked%20on%20laser%20cooling%20and%20trapping%20atoms%20using%20lasers%21%20President-elect&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Phillip Torrone</author>
+<itunes:author>Phillip Torrone</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/nobel_physicist_chosen_to.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/nobel_physicist_chosen_to.html?CMP=OTC-0D6B48984890</guid>
+<category>Science</category>
+<pubDate>Thu, 11 Dec 2008 02:00:09 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Handheld synth-strument trio</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/3drones.jpg" height="450" width="600" alt="3Drones" /><br />
+From the <a href="http://www.flickr.com/groups/make/pool/">MAKE: Flickr pool</a></p>
+
+<p>Farnea's "last drones" are quite nicely built mini-synths, representing 3 very popular DIY electronic instruments - <blockquote>the last drones built for my friends, playing with me in Elisha Gray band.</p>
+
+<p>on the left FESTER, the optical theremin.</p>
+
+<p>on the top Ag0 LOLLOSO, the weird sound generator.</p>
+
+<p>on the right WHAT A MESS(INA), the atari punk console. </blockquote> - <a href="http://www.flickr.com/photos/farnea/3097756010/in/pool-make/">last drones</a></p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/handheld_synthstrument_tr.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/handheld_synthstrument_tr.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/handheld_synthstrument_tr.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/music/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Music&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fhandheld_synthstrument_tr.html&amp;title=Handheld%20synth-strument%20trio&amp;bodytext=%20From%20the%20MAKE%3A%20Flickr%20pool%20Farnea%26apos%3Bs%20%26quot%3Blast%20drones%26quot%3B%20are%20quite%20nicely%20built%20mini-synths%2C%20representing%203%20very%20popular%20DIY%20electronic%20instruments%20-%20the%20last%20drones%20built%20for%20my%20friends%2C%20playing%20with%20me%20in%20Elisha%20Gray%20band.%20on%20the%20left%20FESTER%2&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Collin Cunningham</author>
+<itunes:author>Collin Cunningham</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/handheld_synthstrument_tr.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/handheld_synthstrument_tr.html?CMP=OTC-0D6B48984890</guid>
+<category>Music</category>
+<pubDate>Thu, 11 Dec 2008 02:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Jock Brandis makes life better with peanuts</title>
+<description>
+<![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="fullbellysheller.jpg" src="http://blog.makezine.com/fullbellysheller.jpg" width="600" height="721" class="mt-image-none" style="" /></span><br />
+<a href="http://www.purposeprize.org/finalists/candidatepage.cfm?candidateid=3779">Jock Brandis</a> saw how people live and decided to make it better.  Brandis created the <a href="http://www.fullbellyproject.org/">Full Belly Project</a> collaborated with <a href="http://www.ted.com/index.php/speakers/amy_smith.html">Amy Smith</a>'s Engineering research group at <a href="http://web.mit.edu/d-lab/portfolio/">MIT</a> to <a href="http://www.iddsummit.org/">develop</a> an innovative and open source design to shell peanuts quickly and effectively.  </p>
+
+<blockquote>
+On a trip to West Africa to help a friend fix a solar-powered drinking water system, Joost (Jock) Brandis came across an even bigger need: a simple, cost-effective peanut sheller to help poor women prepare tough ground nuts for sale. It seemed simple, and Brandis promised to find one back in the U.S. What he didn't know was that this "holy grail of sustainable agriculture" didn't exist. 
+
+<p>A film lighting director by trade and a handy guy himself, Brandis decided to invent one. His Universal Nut Sheller, built for $28, is now revolutionizing vital cash crops in developing countries by cutting down on labor hours and keeping more money with farmers, who no longer have to take crops miles away to be shelled by an outside source.<br />
+</blockquote></p>
+
+<p>Check out the <a href="http://link.brightcove.com/services/link/bcpid3706366001/bctid3747856001">video</a> to find out more.</p>
+
+<p>Two and a half years ago, we <a href="http://blog.makezine.com/archive/2006/05/how_to_make_a_peanut_shelling.html">featured the full Belly Project's open source hardware design</a> to bring affordable peanut shelling technology to a hungry world. As a direct result of that post, many people in <a href="http://www.fullbellyproject.org/malawi.php">rural Malawi </a>and <a href="http://fullbellyproject.org/projects.php">other communities</a> do not have to break the <a href="http://flickr.com/photos/connors934/sets/72157601414611387/">shells of their peanuts by hand</a>.   The Full Belly Project is a growing movement bringing <a href="http://fullbellyproject.org/mission.php">sustainable and affordable technology to people in great need</a>.</p>
+
+<p>What are you making to solve the world's problems?  Have you used the peanut sheller from the <a href="http://www.fullbellyproject.org/products.php">Full Belly Project</a>?  Could you work up ways to improve this open source design?  Add your ideas in the comments, and add photos and videos to the<a href="http://flickr.com/groups/make/">Make Flickr pool</a>.</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/jock_brandis_makes_life_b.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/jock_brandis_makes_life_b.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/jock_brandis_makes_life_b.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+
+
+
+
+&lt;a href="http://blog.makezine.com/archive/open_source_hardware/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Open source hardware&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fjock_brandis_makes_life_b.html&amp;title=Jock%20Brandis%20makes%20life%20better%20with%20peanuts&amp;bodytext=%20Jock%20Brandis%20saw%20how%20people%20live%20and%20decided%20to%20make%20it%20better.%20Brandis%20created%20the%20Full%20Belly%20Project%20collaborated%20with%20Amy%20Smith%26apos%3Bs%20Engineering%20research%20group%20at%20MIT%20to%20develop%20an%20innovative%20and%20open%20source%20design%20to%20shell%20peanuts%20quickly...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Chris Connors</author>
+<itunes:author>Chris Connors</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/jock_brandis_makes_life_b.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/jock_brandis_makes_life_b.html?CMP=OTC-0D6B48984890</guid>
+<category>Open source hardware</category>
+<pubDate>Thu, 11 Dec 2008 02:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Handmade Music event tonight!</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/handmade_music_logo.jpg" height="267" width="580" alt="Handmade Music Logo" /><br />
+<a href="http://flickr.com/photos/p_kirn/1450788427/in/set-72157602182408962/"><img src="http://blog.makezine.com/handmademusic_w_erica.jpg" height="450" width="600" alt="Handmademusic W Erica" /></a></p>
+
+<p>The new incarnation of Handmade Music will be causing a ruckus this evening @ 3rd Ward in East Williamsburg, Brooklyn.  If you're in the area, be sure to stop on by and check out the fruits of sound-maker labors - and if you have a project to be heard, be sure to bring it along! - <br />
+<blockquote>><strong>HANDMADE MUSIC</strong><br />
+Hosted by createdigitalmusic.com with Etsy.com and Make Magazine at 3rd Ward</p>
+
+<p><strong>OPEN PARTY with DIYers</strong><br />
+> Strange sounds!<br />
+> Workshop 7:30-8:30p with MIKE UNA - Make your own Beep-It optical Theremin, even with no prior experience<br />
+> Drinks and snacks<br />
+> Fab gallery space in East Williamsburg, well worth the trip</p>
+
+<p>Part party, part mixer, part Science Fair, and part performance, this is an informal chance for geeksters and the geek-curious to come together, relax, and discover new sounds. The evening is a gathering of inventors of circuit-bent toys, custom software and patches, interactive digital & visual instruments, custom electronics, electricity-powered noisemakers, DIY robots and new acoustic instruments. And it’s open to everyone from hard-core hackers & newcomers to music lovers who want to learn about the DIY music scene.</p>
+
+<p><strong>Got a project in progress? Bring it along!</strong></p>
+
+<p>Just want to hang out and meet some makers and discover some new things? Drop in!</p>
+
+<p><strong>WORKSHOP BONUS</strong> - for the cost of parts!<br />
+Michael Una will demonstrate his optical theremin synthesizer Beep-it and conduct a workshop wherein attendees will build their own optical theremin. The basics of analog synthesis will be discussed. No skill level is required- all tools and parts will be provided by the participation fee.</p>
+
+<p>You MUST rsvp + pay parts fee by Wed 12/10 at:<br />
+<a href="http://beepit.eventbrite.com/">http://beepit.eventbrite.com/</a></p>
+
+<p><a href="http://maps.google.com/maps?f=q&amp;hl=en&amp;q=195+Morgan+Ave%2C+Brooklyn%2C+NY">195 Morgan Ave., at the corner of Stagg St., in East Williamsburg, Brooklyn.</a></p>
+
+<p>Take the L line to the Grand Street stop. Head South on Bushwick Ave. (towards the school) one long block and make a left on Stagg Street. 3rd ward is located three blocks down Stagg Street on the corner of Morgan Ave.<br />
+(also accessible from Montrose or Morgan Ave. L stops)</blockquote> - <a href="http://www.facebook.com/event.php?eid=36533269662">Handmade Music 12/11</a></p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/handmade_music_event_toni.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/handmade_music_event_toni.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/handmade_music_event_toni.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/events/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Events&lt;/a&gt; | 
+
+
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fhandmade_music_event_toni.html&amp;title=Handmade%20Music%20event%20tonight%21&amp;bodytext=%20The%20new%20incarnation%20of%20Handmade%20Music%20will%20be%20causing%20a%20ruckus%20this%20evening%20%40%203rd%20Ward%20in%20East%20Williamsburg%2C%20Brooklyn.%20If%20you%26apos%3Bre%20in%20the%20area%2C%20be%20sure%20to%20stop%20on%20by%20and%20check%20out%20the%20fruits%20of%20sound-maker%20labors...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Collin Cunningham</author>
+<itunes:author>Collin Cunningham</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/handmade_music_event_toni.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/handmade_music_event_toni.html?CMP=OTC-0D6B48984890</guid>
+<category>Events</category>
+<pubDate>Thu, 11 Dec 2008 01:59:27 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Steampunk Gift Guide - 2008... Gifts for Steampunks</title>
+<description>
+<![CDATA[<p></p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="spws-logo-nodrop-600.jpg" src="http://blog.makezine.com/spws-logo-nodrop-600.jpg" class="mt-image-none" style="" height="150" width="600" /></span><br /><br />Greetings everyone! It's hard to imagine that an entire year has passed since MAKE asked me to write <a href="http://blog.makezine.com/archive/2007/12/steampunk_gift_guide.html">last year's Steampunk gift guide</a>. What a year it's been too!&nbsp; Last year, I still had some doubt that Steampunk was a bona fide subculture, but so much has happened in the course of the year that there can be no question now that it is.&nbsp; 2009 is already promising to be an even bigger year for Steampunk!<br /><br />Here at the <a href="http://steampunkworkshop.com/">Steampunk Workshop</a> some very cool things have been happening! &nbsp; Last month Jeff VanderMeer and I announced our collaboration on a <a href="http://www.jeffvandermeer.com/2008/11/01/jake-von-slattvandermeer-steampunk-book-from-artisan/">project-oriented book about the Steampunk subculture</a> and in January you will see something I'm really excited about; the Victorian Technology issue of <i>Make: Magazine</i> and the debut of <i>Make:TV</i> - both of which I've had the honor and great pleasure of making some small contribution.<br /><br />So without further adieu here is the gift guide!&nbsp; This year I've tried for a somewhat more accessible array of items that are best thought of a 'gifts for the Steampunk' rather than 'Steampunk gifts' as I think that will be of greater utility those those of you choosing presents for the Steampunks in your lives!.&nbsp;&nbsp;&nbsp; - Jake.<br /><p><strong><big><br /></big></strong></p>
+<hr>
+<p><strong><big>Drill Baby Drill</big></strong><br />
+</p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="drills.jpg" src="http://blog.makezine.com/drills.jpg" class="mt-image-none" style="" height="400" width="600" /></span><br />
+
+<div style="text-align: left;">
+<strong>Machinist's drill index and Step drills<br />
+</strong>
+<strong>Price:</strong> $20 - $120<br />
+
+<strong>Buy:</strong> Northern Tool - <a href="http://www.northerntool.com/webapp/wcs/stores/servlet/product_6970_579_579">drill Index</a>, <a href="http://www.northerntool.com/webapp/wcs/stores/servlet/NTESearch?storeId=6970&amp;N=0&amp;Ntk=All&amp;Ntt=step%20drill&amp;Nty=1&amp;D=step%20drill&amp;Ntx=mode+matchallpartial&amp;Dx=mode+matchallpartial">step drill bits</a><br /><br />There's one metal machining operation that everyone is familiar with, and that's drilling.  You can accomplish a lot with a simple hand drill or a drill press.  The primary limiting factor when you drill a hole or pocket is the size and variety of drill bits that you have available. A machinist's drill index will allow you to make a hole that is <em>exactly</em> the size you desire in most materials  and this will bring your work to a new level of fit and finish. <br /><br />A particularly useful auxiliary to the machinist's index is a set of step drills.  These work amazingly well in thin materials such as sheet metal and their self-centering abilities will let you enlarge existing holes, with an accuracy never before possible.<br /><br />When purchasing drill bits it's best to follow Bruce Sterling's advice in his <a href="http://craphound.com/lastviridian.txt">Last Viridian Note</a>;&nbsp; never stint on tools, it's false economy. Buy tools with the expectation that you will pass them on to your grandchildren - not your children though, as they will need their own long before you are done with yours!<br /><br /> </div><a href="http://www.northerntool.com/webapp/wcs/stores/servlet/NTESearch?storeId=6970&amp;N=0&amp;Ntk=All&amp;Ntt=step%20drill&amp;Nty=1&amp;D=step%20drill&amp;Ntx=mode+matchallpartial&amp;Dx=mode+matchallpartial"></a>
+
+
+ 
+]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/steampunk_gift_guide_2008.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/steampunk_gift_guide_2008.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/steampunk_gift_guide_2008.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+
+
+&lt;a href="http://blog.makezine.com/archive/retro/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Retro&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fsteampunk_gift_guide_2008.html&amp;title=Steampunk%20Gift%20Guide%20-%202008...%20Gifts%20for%20Steampunks&amp;bodytext=%3C%21%5BCDATA%5BGreetings%20everyone%21%20It%27s%20hard%20to%20imagine%20that%20an%20entire%20year%20has%20passed%20since%20MAKE%20asked%20me%20to%20write%20last%20year%27s%20Steampunk%20gift%20guide.%20What%20a%20year%20it%27s%20been%20too%21%26nbsp%3B%20Last%20year%2C%20I%20still%20had%20some%20doubt%20that%20Steampunk%20was%20a...%5D%5D%3E&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Jake von Slatt</author>
+<itunes:author>Jake von Slatt</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/steampunk_gift_guide_2008.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/steampunk_gift_guide_2008.html?CMP=OTC-0D6B48984890</guid>
+<category>Retro</category>
+<pubDate>Thu, 11 Dec 2008 01:00:32 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>HOW TO - Make &quot;edge-lit&quot; holiday cards</title>
+<description>
+<![CDATA[<div style="align: right;"><img src="http://blog.makezine.com/upload/2008/12/how_to_make_edgelit_holid/edgeLitCard121008_3.jpg" width="600" height="450" alt="edgeLitCard121008_3.jpg"/></div>
+
+<div style="align: right;"><img src="http://blog.makezine.com/upload/2008/12/edgeLitCards120908_1.jpg" width="600" height="450" alt="edgeLitCards120908_1.jpg"/></div>
+
+<div style="align: right;"><img src="http://blog.makezine.com/upload/2008/12/how_to_make_edgelit_holid/edgeLitCard121008_4.jpg" width="1024" height="768" alt="edgeLitCard121008_4.jpg"/></div>
+
+<div style="align: right;"><img src="http://blog.makezine.com/upload/2008/12/how_to_make_edgelit_holid/edgeLitCard121008_2.jpg" width="600" height="450" alt="edgeLitCard121008_2.jpg"/></div>
+
+<p>For the most recent Evil Mad Scientist project, Windell and Lenore show you how easy it is to make cool light-up greeting cards with little more than some LEDs and coin cell batteries and some basic paper craft supplies. You can even make multi-colored cards!</p>
+
+<p><a href="http://www.evilmadscientist.com/article.php/edgelitcards">Edge-Lit Holiday Cards</a><br />
+</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/how_to_make_edgelit_holid.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/how_to_make_edgelit_holid.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/how_to_make_edgelit_holid.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/holiday_projects/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Holiday projects&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fhow_to_make_edgelit_holid.html&amp;title=HOW%20TO%20-%20Make%20%26quot%3Bedge-lit%26quot%3B%20holiday%20cards&amp;bodytext=%20For%20the%20most%20recent%20Evil%20Mad%20Scientist%20project%2C%20Windell%20and%20Lenore%20show%20you%20how%20easy%20it%20is%20to%20make%20cool%20light-up%20greeting%20cards%20with%20little%20more%20than%20some%20LEDs%20and%20coin%20cell%20batteries%20and%20some%20basic%20paper%20craft%20supplies....&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Gareth Branwyn</author>
+<itunes:author>Gareth Branwyn</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/how_to_make_edgelit_holid.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/how_to_make_edgelit_holid.html?CMP=OTC-0D6B48984890</guid>
+<category>Holiday projects</category>
+<pubDate>Thu, 11 Dec 2008 01:00:00 -0800</pubDate>
+
+</item>
+
+
+<item>
+<title>Squid hats for sale!</title>
+<description>
+<![CDATA[<p><img src="http://blog.makezine.com/il_fullxfull.48943562.jpg" height="900" width="600" border="0" hspace="4" vspace="4" alt="Il Fullxfull.48943562" /><br />
+One of my favorite makers is now selling his <a href="http://www.etsy.com/view_listing.php?listing_id=18535387">awesome squid hats, check them out!</a><br />
+ <br />
+<blockquote>Estee's House of Fine Squid Hats - Cephalopod Über Kopf. Squid Hat #9. One size fits most adult noggins. On sale, just in time for Cephalopodmas!</blockquote><br />
+ <br />
+</p>]]>
+&lt;a href="http://blog.makezine.com/archive/2008/12/squid_hats_for_sale.html?CMP=OTC-0D6B48984890" /&gt;Read more&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/squid_hats_for_sale.html?CMP=OTC-0D6B48984890" /&gt; Permalink&lt;/a&gt; | &lt;a href="http://blog.makezine.com/archive/2008/12/squid_hats_for_sale.html?CMP=OTC-0D6B48984890#comments" /&gt;Comments&lt;/a&gt; | 
+
+
+
+&lt;a href="http://blog.makezine.com/archive/crafts/?CMP=OTC-0D6B48984890" /&gt;Read more articles in Crafts&lt;/a&gt; | 
+
+
+&lt;a href="http://digg.com/submit?url=blog.makezine.com%2Farchive%2F2008%2F12%2Fsquid_hats_for_sale.html&amp;title=Squid%20hats%20for%20sale%21&amp;bodytext=%20One%20of%20my%20favorite%20makers%20is%20now%20selling%20his%20awesome%20squid%20hats%2C%20check%20them%20out%21%20Estee%26apos%3Bs%20House%20of%20Fine%20Squid%20Hats%20-%20Cephalopod%20%C3%9Cber%20Kopf.%20Squid%20Hat%20%239.%20One%20size%20fits%20most%20adult%20noggins.%20On%20sale%2C%20just%20in%20time...&amp;topic=tech_news" /&gt;Digg this!&lt;/a&gt;
+</description>
+
+
+<author>Phillip Torrone</author>
+<itunes:author>Phillip Torrone</itunes:author>
+<link>http://blog.makezine.com/archive/2008/12/squid_hats_for_sale.html?CMP=OTC-0D6B48984890</link>
+<guid>http://blog.makezine.com/archive/2008/12/squid_hats_for_sale.html?CMP=OTC-0D6B48984890</guid>
+<category>Crafts</category>
+<pubDate>Thu, 11 Dec 2008 00:15:05 -0800</pubDate>
+
+</item>
+
+
+
+</channel>
+</rss>

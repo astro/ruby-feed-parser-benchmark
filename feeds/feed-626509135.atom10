@@ -1,0 +1,1107 @@
+<?xml version="1.0" encoding="UTF-8"?><feed
+  xmlns="http://www.w3.org/2005/Atom"
+  xmlns:thr="http://purl.org/syndication/thread/1.0"
+  xml:lang="en"
+  xml:base="http://journal.paul.querna.org/wp-atom.php"
+   >
+	<title type="text">Paul's Journal</title>
+	<subtitle type="text">Now with less async io</subtitle>
+
+	<updated>2008-12-01T07:48:17Z</updated>
+	<generator uri="http://wordpress.org/" version="2.7">WordPress</generator>
+
+	<link rel="alternate" type="text/html" href="http://journal.paul.querna.org" />
+	<id>http://journal.paul.querna.org/feed/atom/</id>
+	<link rel="self" type="application/atom+xml" href="http://journal.paul.querna.org/feed/atom/" />
+
+			<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[progress on apache 2.4]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2008/11/30/progress-on-apache-24/" />
+		<id>http://journal.paul.querna.org/?p=247</id>
+		<updated>2008-12-01T07:48:17Z</updated>
+		<published>2008-12-01T07:47:14Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[My todo list from before thanksgiving:
+
+
+Improve the Simple MPM.
+Integrate Lua and mod_wombat into httpd trunk.
+Improve the FastCGI Support in httpd turnk.
+Finish my little infrastructure stats &#38; graphs project.
+
+
+Well, I did get something working on my Infrastructure Stats Project.  You can see the work in progress here.  It uses flot and jquery to draw graphs of [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2008/11/30/progress-on-apache-24/"><![CDATA[<p>My <a href="http://journal.paul.querna.org/articles/2008/11/26/todo/">todo list</a> from before thanksgiving:</p>
+<blockquote>
+<ul>
+<li>Improve the Simple MPM.</li>
+<li>Integrate Lua and mod_wombat into httpd trunk.</li>
+<li>Improve the FastCGI Support in httpd turnk.</li>
+<li>Finish my little infrastructure stats &amp; graphs project.</li>
+</ul>
+</blockquote>
+<p>Well, I did get something working on my Infrastructure Stats Project.  You can see the <a href="http://www.apache.org/dev/stats/">work in progress here</a>.  It uses <a href="http://code.google.com/p/flot/">flot</a> and <a href="http://jquery.com/">jquery</a> to draw graphs of the mail and code commits at the ASF since the Apache Project started in 1996.</p>
+<p>I didn&#8217;t get around to most of my httpd goals, since every time I work on the Simple MPM, the fact that KQueue causes a kernel panic on OSX kinda discourages me.  I was hoping that the latest kernels from Apple would fix the problem, but they don&#8217;t.</p>
+<p>I did manage to commit 4 new modules to httpd trunk however:</p>
+<ul>
+<li><a href="https://svn.apache.org/repos/asf/httpd/httpd/trunk/modules/cluster/README.heartbeat">mod_heartbeat</a> - Generates <a href="http://en.wikipedia.org/wiki/Multicast">Multicast</a> heartbeat messages containing the status of the server.</li>
+<li><a href="https://svn.apache.org/repos/asf/httpd/httpd/trunk/modules/cluster/README.heartmonitor">mod_heartmonitor</a> - Collects these Multicast heartbeats for other modules to use.</li>
+<li><a href="https://svn.apache.org/repos/asf/httpd/httpd/trunk/modules/filters/mod_ratelimit.c">mod_ratelimit</a> - Bandwidth Rate Limiting for Clients.</li>
+<li><a href="https://svn.apache.org/repos/asf/httpd/httpd/trunk/modules/proxy/mod_lbmethod_heartbeat.c">mod_lbmethod_heartbeat</a> - Module to <a href="http://httpd.apache.org/docs/trunk/mod/mod_proxy_balancer.html">Load Balance mod_proxy_balancer workers</a> using the data from the heartbeats.</li>
+</ul>
+<p>mod_heartbeat, mod_heartmonitor, and mod_ratelimit were all originally written at <a href="http://www.joost.com/">Joost</a>, and my employer was nice enough to let us contribute them back to Apache.</p>
+<p>I&#8217;ve also announced the <a href="http://mail-archives.apache.org/mod_mbox/httpd-dev/200811.mbox/%3C49302488.5000002@force-elite.com%3E">intent to roll the first 2.3.0-alpha release next weekend</a>.  Hopefully this means within a few months, a new stable 2.4.x branch will come out.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2008/11/30/progress-on-apache-24/#comments" thr:count="4"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2008/11/30/progress-on-apache-24/feed/atom/" thr:count="4"/>
+		<thr:total>4</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[joost on the iphone]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2008/11/29/joost-on-the-iphone/" />
+		<id>http://journal.paul.querna.org/?p=244</id>
+		<updated>2008-11-29T19:56:48Z</updated>
+		<published>2008-11-29T19:46:27Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[
+Yesterday, Apple approved the Joost Application for the IPhone.
+Apple Store Link.
+The Joost Application is something I helped prototype, and wrote most of the server side support, although I was busy with other things and haven&#8217;t worked on it recently, and I&#8217;m glad it is now released to the public.
+It isn&#8217;t perfect, as some of the [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2008/11/29/joost-on-the-iphone/"><![CDATA[<p><img class="alignnone" title="Joost on the IPhone" src="http://zeus.kimaker.com/~chip/joost-iphone.png" alt="" width="480" height="320" /></p>
+<p>Yesterday, Apple approved the Joost Application for the IPhone.</p>
+<p><a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=295977505&amp;mt=8">Apple Store Link</a>.</p>
+<p>The Joost Application is something I helped prototype, and wrote most of the server side support, although I was busy with other things and haven&#8217;t worked on it recently, and I&#8217;m glad it is now released to the public.</p>
+<p>It isn&#8217;t perfect, as some of the reviews have said, we are doing our best with the APIs that Apple provides, but the Video Player has some pretty big bugs we do our best to work around, but I hope Apple significantly improves MPMoviePlayerController with another firmware release.</p>
+<p>Radar Bugs: (<a href="http://rentzsch.com/notes/rdarUrls">what are rdar links?</a>)</p>
+<ul>
+<li><a href="rdar://problem/6352281">6352281</a> - Problems with the Headphone getting inserted causing video to pause</li>
+<li><a href="rdar://problem/6299534">6299534</a> - Problems with the Next Button on the default Apple UI.</li>
+<li><a href="rdar://problem/5888718">5888718</a> - Video player does not detect when it is upside down.</li>
+<li><a href="rdar://problem/6407138">6407138</a> - Audio Sync Issues</li>
+</ul>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2008/11/29/joost-on-the-iphone/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2008/11/29/joost-on-the-iphone/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[todo]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2008/11/26/todo/" />
+		<id>http://journal.paul.querna.org/?p=242</id>
+		<updated>2008-11-26T23:20:07Z</updated>
+		<published>2008-11-26T23:20:07Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[(open source) things to do over thanksgiving weekend:
+
+Improve the Simple MPM.
+Integrate Lua and mod_wombat into httpd trunk.
+Improve the FastCGI Support in httpd turnk.
+Finish my little infrastructure stats &#38; graphs project.
+
+I&#8217;ll be happy if I make progress on any one of them&#8230;..
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2008/11/26/todo/"><![CDATA[<p>(open source) things to do over thanksgiving weekend:</p>
+<ul>
+<li>Improve the Simple MPM.</li>
+<li>Integrate Lua and mod_wombat into httpd trunk.</li>
+<li>Improve the FastCGI Support in httpd turnk.</li>
+<li>Finish my little infrastructure stats &amp; graphs project.</li>
+</ul>
+<p>I&#8217;ll be happy if I make progress on any one of them&#8230;..</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2008/11/26/todo/#comments" thr:count="2"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2008/11/26/todo/feed/atom/" thr:count="2"/>
+		<thr:total>2</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[embed joost.]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2008/11/13/embed-joost/" />
+		<id>http://journal.paul.querna.org/?p=239</id>
+		<updated>2008-11-13T22:44:16Z</updated>
+		<published>2008-11-13T22:44:16Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[Star Trek: The Original Series - The Ultimate Computer:
+
+Yay!
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2008/11/13/embed-joost/"><![CDATA[<p>Star Trek: The Original Series - The Ultimate Computer:</p>
+<p><object width="640" height="360"><param name="movie" value="http://www.joost.com/embed/09401og"></param><param name="allowFullScreen" value="true"></param><param name="allowNetworking" value="all"></param><param name="allowScriptAccess" value="always"></param><embed src="http://www.joost.com/embed/09401og" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" allownetworking="all" width="640" height="360"></embed></object></p>
+<p>Yay!</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2008/11/13/embed-joost/#comments" thr:count="5"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2008/11/13/embed-joost/feed/atom/" thr:count="5"/>
+		<thr:total>5</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[apache 3.0 podcast]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2008/11/07/apache-30-podcast/" />
+		<id>http://journal.paul.querna.org/?p=237</id>
+		<updated>2008-11-07T13:55:02Z</updated>
+		<published>2008-11-07T13:55:02Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[I&#8217;m on a new feathercast episode talking about Apache 3.0.
+ps, New Orleans and ApacheCon is fun.
+pss. Last day is Today.
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2008/11/07/apache-30-podcast/"><![CDATA[<p>I&#8217;m on a <a href="http://feathercast.org/?p=65">new feathercast episode talking about Apache 3.0</a>.</p>
+<p>ps, New Orleans and ApacheCon is fun.</p>
+<p>pss. Last day is Today.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2008/11/07/apache-30-podcast/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2008/11/07/apache-30-podcast/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[I love my iphone]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2008/11/01/i-love-my-iphone/" />
+		<id>http://journal.paul.querna.org/articles/2008/11/01/i-love-my-iphone/</id>
+		<updated>2008-11-01T18:04:03Z</updated>
+		<published>2008-11-01T17:04:25Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[I installed the wprdpress iPhone app while on a train.
+It told me that my WP version was too old, so using pterm I sshed into my server, and upgraded from 2.3 to 2.6.
+And now I&#8217;m writing a blog post on my iPhone.
+The iphone is not perfect, but nothing else is even close.
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2008/11/01/i-love-my-iphone/"><![CDATA[<p>I installed the wprdpress iPhone app while on a train.</p>
+<p>It told me that my WP version was too old, so using pterm I sshed into my server, and upgraded from 2.3 to 2.6.</p>
+<p>And now I&#8217;m writing a blog post on my iPhone.</p>
+<p>The iphone is not perfect, but nothing else is even close.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2008/11/01/i-love-my-iphone/#comments" thr:count="4"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2008/11/01/i-love-my-iphone/feed/atom/" thr:count="4"/>
+		<thr:total>4</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[New Simple MPM in httpd trunk]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2008/10/29/new-simple-mpm-in-httpd-trunk/" />
+		<id>http://journal.paul.querna.org/articles/2008/10/29/new-simple-mpm-in-httpd-trunk/</id>
+		<updated>2008-10-30T01:16:16Z</updated>
+		<published>2008-10-30T01:16:16Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[Earlier this week, I committed a new &#8216;Simple&#8217; MPM to Apache httpd trunk.
+More info on the mailing lists.
+I should write more about the Simple MPM, but ApacheCon New Orleans is  coming up next week, so I want to try to get more of the code in before then, since traditionally coding during the conference never [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2008/10/29/new-simple-mpm-in-httpd-trunk/"><![CDATA[<p>Earlier this week, I <a href="http://svn.apache.org/viewvc?view=rev&amp;revision=708462">committed a new &#8216;Simple&#8217; MPM</a> to Apache httpd trunk.</p>
+<p><a href="http://mail-archives.apache.org/mod_mbox/httpd-dev/200810.mbox/%3C4906BB73.9040407@force-elite.com%3E">More info on the mailing lists</a>.</p>
+<p>I should write more about the Simple MPM, but <a href="http://us.apachecon.com/c/acus2008/">ApacheCon New Orleans</a> is  coming up next week, so I want to try to get more of the code in before then, since traditionally coding during the conference never works out, and I&#8217;ll try to write up a blog post about why its cool sometime next week during the conference.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2008/10/29/new-simple-mpm-in-httpd-trunk/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2008/10/29/new-simple-mpm-in-httpd-trunk/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[chroot in 2.2.10]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2008/10/29/chroot-in-2210/" />
+		<id>http://journal.paul.querna.org/articles/2008/10/29/chroot-in-2210/</id>
+		<updated>2008-10-29T17:19:18Z</updated>
+		<published>2008-10-29T17:19:18Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[Apache HTTP Server 2.2.10 was released more than a week ago.
+One of the new features I don&#8217;t think anyone has mentioned much is that we now have built in support for chroot.  Just add ChrootDir &#8220;/srv/my_root&#8221;, and all IO in Apache after the initial startup will be inside the chroot.
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2008/10/29/chroot-in-2210/"><![CDATA[<p><a href="http://mail-archives.apache.org/mod_mbox/httpd-dev/200810.mbox/%3CB1098A29-7B4A-4794-8637-A06464944053@jaguNET.com%3E">Apache HTTP Server 2.2.10</a> was released more than a week ago.</p>
+<p>One of the new features I don&#8217;t think anyone has mentioned much is that we now have built in support for <a href="http://www.freebsd.org/cgi/man.cgi?query=chroot&amp;sektion=2">chroot</a>.  Just add <a href="http://httpd.apache.org/docs/2.2/mod/mpm_common.html#chrootdir">ChrootDir</a> &#8220;/srv/my_root&#8221;, and all IO in Apache after the initial startup will be inside the chroot.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2008/10/29/chroot-in-2210/#comments" thr:count="2"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2008/10/29/chroot-in-2210/feed/atom/" thr:count="2"/>
+		<thr:total>2</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[the economy.]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2008/09/24/the-economy/" />
+		<id>http://journal.paul.querna.org/articles/2008/09/24/the-economy/</id>
+		<updated>2008-09-25T18:16:22Z</updated>
+		<published>2008-09-24T19:10:32Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[I don&#8217;t often write about politics, or anything related to it, on my journal.
+However, the SEVEN HUNDRED BILLION DOLLAR buyout deal that Henry Paulson, the Secretary of the United States Treasury, is trying to get done, is insane.
+This isn&#8217;t Capitalism.
+If I didn&#8217;t believe in Capitalism, I wouldn&#8217;t be working at a startup.
+If Joost fails, I [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2008/09/24/the-economy/"><![CDATA[<p>I don&#8217;t often write about politics, or anything related to it, on my journal.</p>
+<p>However, the <a href="http://news.bbc.co.uk/2/hi/business/7634017.stm">SEVEN HUNDRED BILLION DOLLAR buyout deal that Henry Paulson, the Secretary of the United States Treasury, is trying to get done</a>, is insane.</p>
+<p>This isn&#8217;t Capitalism.</p>
+<p>If I didn&#8217;t believe in Capitalism, I wouldn&#8217;t be working <a href="http://www.joost.com/">at a startup</a>.</p>
+<p>If Joost fails, I don&#8217;t expect anyone to help me.  I expect it to hurt. But it is my risk to take, why do giant financial companies, who have done apparently stupid things, <a href="http://www.jimjag.com/imo/index.php?/archives/226-Thats-billion-with-a-B.html">get treated differently</a>?</p>
+<p>If Joost is successful, I expect rewards, and this is the basis of any capitalistic system,  but these buyouts are creating a system in which stupid companies can do badly &#8212; and their employees still get rewarded.</p>
+<p>I didn&#8217;t live during the <a href="http://en.wikipedia.org/wiki/Great_Depression">Great Depression</a>.  I don&#8217;t know how bad it can get. I have lived an &#8216;easy&#8217; life in modern America.</p>
+<p>But I would rather see another depression than this massive buyout.</p>
+<p>Whatever is going on, it is not capitalism, and I am sad to see America going in this direction.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2008/09/24/the-economy/#comments" thr:count="5"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2008/09/24/the-economy/feed/atom/" thr:count="5"/>
+		<thr:total>5</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[Event MPM Updates and mod_dialup]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2008/09/20/event-mpm-updates-and-mod_dialup/" />
+		<id>http://journal.paul.querna.org/articles/2008/09/20/event-mpm-updates-and-mod_dialup/</id>
+		<updated>2008-09-20T21:22:33Z</updated>
+		<published>2008-09-20T21:22:33Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[I know, I know, I haven&#8217;t written a blog post in months.
+Forgive me  
+Anyways, figured some people might be interested in what I commited last night for the Apache HTTP Server&#8230;.
+First is the ability to &#8217;suspend&#8217; an HTTP Request from a Module.
+Normally in Apache, there is a one to one relationship between the running [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2008/09/20/event-mpm-updates-and-mod_dialup/"><![CDATA[<p>I know, I know, I haven&#8217;t written a blog post in months.</p>
+<p>Forgive me <img src='http://journal.paul.querna.org/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' /> </p>
+<p>Anyways, figured some people might be interested in what I commited last night for the Apache HTTP Server&#8230;.</p>
+<p>First is the ability to &#8217;suspend&#8217; an HTTP Request from a Module.</p>
+<p>Normally in Apache, there is a one to one relationship between the running thread, and a client connection that it is servicing.  In the <a href="http://httpd.apache.org/docs/2.1/mod/event.html">Event MPM previously</a>, we had broken it out so between different HTTP requests in the same TCP connection, aka Keep Alives, could be serviced by different threads.</p>
+<p>Now with <a href="https://svn.apache.org/viewvc?view=rev&amp;revision=697357">r697357 in httpd trunk</a>, you can return SUSPENDED from a content handler.  The core  will assume you have taken over handling of the request, and get out of your way.</p>
+<p>This is insanely important, because in the long run it lets you write very cool modules, like a full async HTTP Proxy, aka <a href="http://varnish.projects.linpro.no/">something like Varnish</a>, where you could easily handle tens of thousands of client connections, using only a hundred odd threads, where today you would need a huge amount of RAM, and a single thread or process for every client to do this with Apache.</p>
+<p>Secondly, as a demonstration that it works, I wrote <a href="https://svn.apache.org/repos/asf/httpd/httpd/trunk/modules/test/mod_dialup.c">mod_dialup</a>. It is a module that sends static content at a bandwidth rate limit, defined by the various old modem standards. So, you can browse your site with a 56k V.92 modem, by adding something like this:</p>
+<p>&lt;Location /mysite&gt;</p>
+<p>ModemStandard V.92</p>
+<p>&lt;/Location&gt;</p>
+<p>Previously to do <a href="http://www.topology.org/src/bwshare/README.html">bandwidth rate limiting modules</a> would have to block an entire thread, for each client, and insert sleeps to slow the bandwidth down.  Using the new suspend feature, a handler can get callback N milliseconds in the future, and it will be invoked by the Event MPM on a different thread, once the timer hits.  From there the handler can continue to send data to the client.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2008/09/20/event-mpm-updates-and-mod_dialup/#comments" thr:count="3"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2008/09/20/event-mpm-updates-and-mod_dialup/feed/atom/" thr:count="3"/>
+		<thr:total>3</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[in spokane]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2008/05/18/in-spokane/" />
+		<id>http://journal.paul.querna.org/articles/2008/05/18/in-spokane/</id>
+		<updated>2008-05-19T01:04:56Z</updated>
+		<published>2008-05-19T01:04:56Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[To the other few people in Spokane with the the Internet: I&#8217;m in back in Spokane until Sunday May 25th.
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2008/05/18/in-spokane/"><![CDATA[<p>To the other few people in Spokane with the the Internet: I&#8217;m in back in Spokane until Sunday May 25th.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2008/05/18/in-spokane/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2008/05/18/in-spokane/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[Apache HTTP Server development for this week]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2008/04/08/apache-http-server-development-for-this-week/" />
+		<id>http://journal.paul.querna.org/articles/2008/04/08/apache-http-server-development-for-this-week/</id>
+		<updated>2008-04-09T06:21:39Z</updated>
+		<published>2008-04-09T06:19:53Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[
+The last week has seen many new features and improvments made to httpd.  Many of them have been accelerated by people at the ApacheCon EU Hackathon this week.
+
+
+mod_session
+On Friday Graham Leggett introduced a series of modules to support generation of sessions from HTTPD.  Included is mod_session_crytpo, which encrypts the data using AES.  [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2008/04/08/apache-http-server-development-for-this-week/"><![CDATA[<p><p>
+The last week has seen many new features and improvments made to httpd.  Many of them have been <a href="http://www.ohloh.net/projects/apache">accelerated</a> by people at the <a href="http://www.flickr.com/search/?q=apachecon&#038;s=rec">ApacheCon EU Hackathon</a> this week.
+</p>
+<ul>
+<li><b>mod_session</b>
+<p>On Friday <a href="http://www.ohloh.net/projects/apache/contributors/311385142451">Graham Leggett</a> introduced a series of modules to support generation of sessions from HTTPD.  Included is mod_session_crytpo, which encrypts the data using AES.  This is the first time &#8216;form based&#8217; authentication has had real support in the Apache Core. <br/>[<a href="http://httpd.apache.org/docs/trunk/mod/mod_session.html">docs: mod_session</a>] <br/>[<a href="http://mail-archives.apache.org/mod_mbox/httpd-dev/200804.mbox/%3c47F6432A.9060402@sharp.fm%3e">thread: Apache support for form authentication</a>] <br/></p>
+</li>
+<li><b>mod_socache</b>
+<p>On Tuesday <a href="http://www.ohloh.net/projects/apache/contributors/309237654848">Joe Orton</a> commited the new Small Object Cache modules, which have been under discussions for a couple months now.  The mod_sslsession cache has been changed to use this.  Currently suported cache backends are DBM, memcached, and Shared Memory.  I expect many other modules will changed to use this cache API as time goes on.<br/>[<a href="http://svn.apache.org/repos/asf/httpd/httpd/trunk/modules/cache/ap_socache.h">svn: ap_socache.h</a>] <br/>[<a href="http://mail-archives.apache.org/mod_mbox/httpd-dev/200804.mbox/%3c20080408105325.GA2464@redhat.com%3e">thread: [PATCH] ap_socache.h &amp; mod_socache_*</a>] <br/>
+</p>
+</li>
+<li><b>If/Else blocks added</b>
+<p><a href="http://www.ohloh.net/projects/apache/contributors/311385142454">Nick Kew</a> ported the expression parser from mod_includes, and has used this to add If and Else blocks to the core.This provides a viable alternative to mod_rewrite and RewriteCond, and letsyou set any modules configuration values. <br/>[<a href="http://httpd.apache.org/docs/trunk/mod/core.html#if">docs: if</a>] <br/>[<a href="http://mail-archives.apache.org/mod_mbox/httpd-dev/200803.mbox/%3C20080326130647.7f9ae161@grimnir%3E">thread: Dynamic configuration for the hackathon?</a>] <br/>[<a href="http://svn.apache.org/viewvc?view=rev&#038;revision=644253">commit: r644253</a>] <br/></p>
+</li>
+<li><b>Turkish Documentation</b>
+<p> Nilgün Belma Bugüner contributed a complete translation of the Apache HTTP Server documentation in Turkish. <br/>[<a href="http://httpd.apache.org/docs/trunk/tr/">docs: Turkish</a>] <br/>[<a href="http://mail-archives.apache.org/mod_mbox/httpd-docs/200804.mbox/%3C200804071045.47224@belgeler.gen.tr.ileti.no%3E">thread: New Turkish Documents</a>] <br/>[<a href="http://svn.apache.org/viewvc?view=rev&#038;revision=645667">commit: r645667</a>] <br/>
+</p>
+</li>
+<li><b>Serf Bucket Discussions</b>
+<p>Discussion at the Hackathon covered how <a href="http://code.google.com/p/serf/source/browse/trunk/design-guide.txt">Serf Buckets</a> use a &#8220;pull&#8221; method, for both input and output, unlike the current filter stack in httpd, which is Pull for input filters, but push for output filters. There was general agreement that the expieriment  of mod_serf should be expanded up the filter stack. <br/> [<a href="http://svn.apache.org/repos/asf/httpd/sandbox/amsterdam/d/modules/proxy/mod_serf.c">svn: mod_serf.c</a>] <br/>
+</p>
+</li>
+<li><b>Simple MPM created</b>
+<p><a href="http://www.ohloh.net/projects/apache/contributors/311385142467">Paul Querna</a> started work on a new MPM at the Hackathon. The MPM hopes to run on both Unix and Win32 platforms, and keep the same behavoirs on both. <br/> [<a href="http://svn.apache.org/repos/asf/httpd/sandbox/amsterdam/d/server/mpm/simple/SIMPLE.README">svn: SIMPLE.README</a>] <br/>
+</p>
+</li>
+</ul>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2008/04/08/apache-http-server-development-for-this-week/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2008/04/08/apache-http-server-development-for-this-week/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[ApacheCon EU 2008]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2008/03/27/apachecon-eu-2008/" />
+		<id>http://journal.paul.querna.org/articles/2008/03/27/apachecon-eu-2008/</id>
+		<updated>2008-03-27T17:45:23Z</updated>
+		<published>2008-03-27T17:43:09Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[I will be at ApacheCon EU 2008, in Amsterdam in a week or so.  (April 6-11)
+Not giving any talks this year.
+I will also be at Joost&#8217;s Leiden office the week following.  (April 12-19) 
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2008/03/27/apachecon-eu-2008/"><![CDATA[<p>I will be at <a href="http://www.eu.apachecon.com/eu2008/">ApacheCon EU 2008</a>, in Amsterdam in a week or so.  (April 6-11)</p>
+<p>Not giving any talks this year.</p>
+<p>I will also be at <a href="http://www.joost.com/">Joost</a>&#8217;s <a href="http://en.wikipedia.org/wiki/Leiden">Leiden</a> office the week following.  (April 12-19) </p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2008/03/27/apachecon-eu-2008/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2008/03/27/apachecon-eu-2008/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[traveling.]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2008/03/27/traveling/" />
+		<id>http://journal.paul.querna.org/articles/2008/03/27/traveling/</id>
+		<updated>2008-03-27T17:44:50Z</updated>
+		<published>2008-03-27T17:39:39Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[I spent the last week or so in New York City, at the Joost office there.  I kinda forgot to post anything.  This was the first time I had been to NYC, and it was a fun trip.  Not sure I would ever want to live in NYC.
+Returning to San Jose, was not so fun. [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2008/03/27/traveling/"><![CDATA[<p>I spent the last week or so in New York City, at the Joost office there.  I kinda forgot to post anything.  This was the first time I had been to NYC, and it was a fun trip.  Not sure I would ever want to live in NYC.</p>
+<p>Returning to San Jose, was not so fun. </p>
+<p>Yesterday, <a href="http://news.google.com/news?um=1&amp;tab=ln&amp;hl=en&amp;q=american+airlines+md-80&amp;btnG=Search+News">American Airlines cancelled a couple hundred flights due to problems with their MD-80s</a>.</p>
+<p>I was originally going LGA -&gt; ORD -&gt; SJC.<br/><br />
+The ORD -&gt; SJC leg got cancelled.<br/><br />
+They re-routed me LGA -&gt; DFW -&gt; SJC.<br/><br />
+When I landed in DFW, the flight to SJC had been cancelled.<br/><br />
+There were no more flights to SJC.<br/><br />
+The flights to SFO and OAK were all fully booked.<br/>
+</p>
+<p>I luckly got on the top of the standby list to OAK, and got on that flight. </p>
+<p>My checked bag however, is somewhere between New York and California, and American Airlines doesn&#8217;t know where it is yet. Sigh.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2008/03/27/traveling/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2008/03/27/traveling/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[March Madness on Joost]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2008/03/20/march-madness-on-joost/" />
+		<id>http://journal.paul.querna.org/articles/2008/03/20/march-madness-on-joost/</id>
+		<updated>2008-03-20T16:52:27Z</updated>
+		<published>2008-03-20T16:49:13Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[Watch all of the March Madness games LIVE on Joost!
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2008/03/20/march-madness-on-joost/"><![CDATA[<p><a href="http://www.joost.com/featured/marchmadness/"><img src="http://journal.paul.querna.org/wp-content/uploads/2008/03/ncaa_featurebox.jpg" alt="ncaa_featurebox.jpg" /></a><br class="webkit-block-placeholder" /><a href="http://www.joost.com/featured/marchmadness/">Watch all of the March Madness games LIVE on Joost</a>!</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2008/03/20/march-madness-on-joost/#comments" thr:count="1"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2008/03/20/march-madness-on-joost/feed/atom/" thr:count="1"/>
+		<thr:total>1</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[Joining Joost]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2008/01/18/joining-joost/" />
+		<id>http://journal.paul.querna.org/articles/2008/01/18/joining-joost/</id>
+		<updated>2008-01-18T22:12:58Z</updated>
+		<published>2008-01-18T22:12:58Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[
+Monday will be my first day at Joost.
+Today is my last day at Bloglines aka Ask.com ak IAC Search and Media aka IAC/Interactive.
+It&#8217;s been a fun couple years here, and I am very grateful for the great team I helped build at Bloglines, but it is time for me to move on.
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2008/01/18/joining-joost/"><![CDATA[<p><a href="http://journal.paul.querna.org/wp-content/uploads/2008/01/joost.jpg" title="Joost Logo"><img src="http://journal.paul.querna.org/wp-content/uploads/2008/01/joost.jpg" alt="Joost Logo" /></a></p>
+<p>Monday will be my first day at <a href="http://www.joost.com/">Joost</a>.</p>
+<p>Today is my last day at <a href="http://www.bloglines.com/">Bloglines</a> aka Ask.com ak IAC Search and Media aka IAC/Interactive.</p>
+<p>It&#8217;s been a fun <a href="http://journal.paul.querna.org/articles/2005/06/21/new-job/">couple years here</a>, and I am very grateful for the great team I helped build at Bloglines, but it is time for me to move on.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2008/01/18/joining-joost/#comments" thr:count="7"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2008/01/18/joining-joost/feed/atom/" thr:count="7"/>
+		<thr:total>7</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[in reply to &#8220;bloglines sucks&#8221;]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/12/27/in-reply-to-bloglines-sucks/" />
+		<id>http://journal.paul.querna.org/articles/2007/12/27/in-reply-to-bloglines-sucks/</id>
+		<updated>2007-12-28T04:52:34Z</updated>
+		<published>2007-12-28T04:52:34Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[In reply to Scoble&#8217;s post today, &#8220;Bloglines Sucks&#8220;&#8230;..
+I will first try to outline the &#8220;issue&#8221;.
+At the bottom of every post on a wordpress.com blog, is a tracker image used for statistics.  It includes a rand parameter, which changes every time the feed is fetched over HTTP.  The image URL is something like this:
+http://stats.wordpress.com/b.gif?host=scobleizer.com&#38;rand=2045631674&#38;blog=3428&#38;post=3957&#38;subd=scobleizer&#38;ref=&#38;feed=1
+Because [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/12/27/in-reply-to-bloglines-sucks/"><![CDATA[<p>In reply to Scoble&#8217;s post today, &#8220;<a href="http://scobleizer.com/2007/12/27/bloglines-sucks-2/">Bloglines Sucks</a>&#8220;&#8230;..</p>
+<p>I will first try to outline the &#8220;issue&#8221;.</p>
+<p>At the bottom of every post on a wordpress.com blog, is a tracker image used for statistics.  It includes a rand parameter, which changes every time the feed is fetched over HTTP.  The image URL is something like this:</p>
+<blockquote><p>http://stats.wordpress.com/b.gif?host=scobleizer.com&amp;rand=2045631674&amp;blog=3428&amp;post=3957&amp;subd=scobleizer&amp;ref=&amp;feed=1</p></blockquote>
+<p>Because this rand value changes every time we read the feed, we considered the Item &#8216;<strong>Updated</strong>&#8216;.</p>
+<p>The behavior of the last 40 posts being shown as updated, every time a new post was added was caused by our use of the <a href="http://fishbowl.pastiche.org/2002/10/21/http_conditional_get_for_rss_hackers">HTTP ETags and Last-Modified features</a>.  Since Wordpress.com returns a 304 Not Modified for most of our crawls, we would only &#8216;reparse&#8217; the entire feed when a new post was added.</p>
+<p>Now, The reason users do not see this <em>problem </em>in Google Reader, is that Google Reader has no concept of an &#8220;<strong>Updated</strong>&#8221; item. When a writer edits a blog post later, users in Google Reader would never see the changes.  In Bloglines, we have always considered this a feature, showing you the user when a blog post is edited.</p>
+<p>In Bloglines you can disable this feature, on a per-feed basis:</p>
+<blockquote><p>In <a href="http://beta.bloglines.com/">Bloglines Beta</a>, click on the feed, then select Edit.  Change the &#8220;Updated Items:&#8221; to &#8220;Ignore&#8221;.</p>
+<p>In Bloglines Classic, click on the feed, then select edit subscription.  Change the &#8220;Updated Items:&#8221; to &#8220;Ignore&#8221;.</p></blockquote>
+<p>As far as I can tell, the use of a rand parameter in the Wordpress.com statistics image is a new change, also introduced at the same time the inline comment images were added to feeds.</p>
+<p><a href="http://www.feedburner.com">FeedBurner</a> includes similar statistics, tracking images and comment images, but they do not include a constantly changing image url.  This works correctly in Bloglines.</p>
+<p>In regards to placing blame, <a href="http://silverstr.ufies.org/blog/archives/001029.html">Dana Epp says &#8220;Bloglines says it&#8217;s not them&#8221;</a>.  I don&#8217;t know who Dana has talked to inside Bloglines. When these type of issues are reported, we generally try to get in touch and investigate with the publisher, and hopefully figure out what is going on together, rather than outright saying its not our fault.  It is a bad experience for our users, and we always want to be involved and help fix it.</p>
+<p>I first heard about this issue on Friday, December 21st from <a href="http://photomatt.net/">Matt</a> via email. (also <a href="http://journal.paul.querna.org/articles/2007/12/21/22-23/">my birthday</a>)  I forwarded that email onto our internal Bloglines Engineering Mailing list, but frankly, I didn&#8217;t expect anyone to work on the issue on the Friday before Christmas.  <a href="http://sp.ask.com/en/docs/about/company_overview.shtml">IAC Search and Media</a>, the parent company of Bloglines and Ask.com, also has a mandatory Holiday Shutdown this week for all employees.  No one will be in the office officially until January 2nd, 2008.</p>
+<p>Luckily or unlucky, depending on your perspective, I took some time this afternoon away from my family to read my feeds.  For now the bug^H^H^Hfeature in Bloglines of showing edited posts has been fixed.  I&#8217;ve have simply turned it off for all users.</p>
+<p>I hope you had a Merry Christmas, and have a Happy New Year.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/12/27/in-reply-to-bloglines-sucks/#comments" thr:count="11"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/12/27/in-reply-to-bloglines-sucks/feed/atom/" thr:count="11"/>
+		<thr:total>11</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[22-&gt;23]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/12/21/22-23/" />
+		<id>http://journal.paul.querna.org/articles/2007/12/21/22-23/</id>
+		<updated>2007-12-21T19:46:18Z</updated>
+		<published>2007-12-21T19:45:30Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[Getting older&#8230;
+Really getting tired this year.  Since ApacheCon in Atlanta on November 11th, I haven&#8217;t been home in San Jose for more than 6 days straight.
+Thankfully, I have the next 2 weeks in Spokane at my parent&#8217;s house to chill for a bit.
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/12/21/22-23/"><![CDATA[<p>Getting <a href="http://journal.paul.querna.org/articles/2006/12/21/happy-birthday/">older</a>&#8230;</p>
+<p>Really getting tired this year.  Since ApacheCon in Atlanta on November 11th, I haven&#8217;t been home in San Jose for more than 6 days straight.</p>
+<p>Thankfully, I have the next 2 weeks in Spokane at my parent&#8217;s house to chill for a bit.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/12/21/22-23/#comments" thr:count="1"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/12/21/22-23/feed/atom/" thr:count="1"/>
+		<thr:total>1</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[on shedding]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/11/29/on-shedding/" />
+		<id>http://journal.paul.querna.org/articles/2007/11/29/on-shedding/</id>
+		<updated>2007-11-29T10:48:18Z</updated>
+		<published>2007-11-29T10:25:04Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[Brian McCallister has a new post on a service location technique dubbed &#8220;Shredding&#8221;.This post started out as a comment on Brian&#8217;s site, but it got a little long&#8230;.
+
+Don&#8217;t underestimate using load balancers where they make sense..  You don&#8217;t need to spend tons of money on a commercial one.  2x 1u pizza boxes with [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/11/29/on-shedding/"><![CDATA[<p>Brian McCallister has a <a href="http://kasparov.skife.org/blog/src/shedding.html">new post on a service location technique dubbed &#8220;Shredding&#8221;</a>.This post started out as a comment on Brian&#8217;s site, but it got a little long&#8230;.</p>
+<ul>
+<li>Don&#8217;t underestimate using load balancers where they make sense..  You don&#8217;t need to spend tons of money on a commercial one.  2x 1u pizza boxes with modern CPUs + 1/10GigE running <a href="http://www.openbsd.org/faq/pf/carp.html">{Free,Open}BSD + CARP + pfsync.</a></li>
+<li>For &#8216;dumb clients&#8217;: Just Proxy it.  Perlbal does this for LiveJournal infront of their <a href="http://www.danga.com/mogilefs/">MogileFS</a> boxes.  Or look at Dynamo for another example, the &#8216;dumb&#8217; clients can connects to any nodes, and that nodes proxies to the correct one.  Reducing the number of request/response cycles down is important to keep client latency down.  Its not so much about the persistent TCP connection, as the send/reply of the data just to find something.</li>
+<li>For &#8217;smart clients&#8217;: I personally prefer a <a href="http://mail-archives.apache.org/mod_mbox/labs-labs/200612.mbox/%3C4583132B.7090304@apache.org%3E">daemon</a> running on each local machine, which uses a multicast/gossip communication with other nodes to keep a local &#8216;cache&#8217; of where services are located and their status. Every couple seconds, based on the current state of the cluster, it would write it out to blob file on disk.  Clients Just slurp up this file to find anything. (You can also do the same thing, but based on a unix daemon socket, but its generally slower.)</li>
+<li>There is some discussion about RFC issues with 302s and sending a POST to the redirected URL.  The larger issue is that almost no HTTP Client Libraries will do this correctly out of the box.</li>
+</ul>
+<p>All that said, for the Bloglines FS, we proxy writes to the data storage nodes, but that is mostly to ensure redundancy of data. For reads, we send back a sorted list of the data nodes that have a chunk to the client.  The client then connects directly, and will try the other entries on the list if the first one fails.</p>
+<p>See also:</p>
+<ul>
+<li><a href="http://mail-archives.apache.org/mod_mbox/labs-labs/200612.mbox/%3C4583132B.7090304@apache.org%3E">dislocate - my unfinished apache labs project</a>.</li>
+<li><a href="http://bugs.python.org/issue1401">Python urlib2 issue #1401: 302 handling</a></li>
+<li>HTTPClient issues: <a href="https://issues.apache.org/jira/browse/HTTPCLIENT-245">HTTPCLIENT-245</a> <a href="https://issues.apache.org/jira/browse/HTTPCLIENT-128">HTTPCLIENT-128</a></li>
+<li><a href="http://slbd.sourceforge.net/">slbd - OpenBSD server load balancing using PF</a>.</li>
+</ul>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/11/29/on-shedding/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/11/29/on-shedding/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[mod_serf in trunk]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/11/13/mod_serf-in-trunk/" />
+		<id>http://journal.paul.querna.org/articles/2007/11/13/mod_serf-in-trunk/</id>
+		<updated>2007-11-13T20:26:09Z</updated>
+		<published>2007-11-13T20:26:09Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[Now in httpd trunk: mod_serf.  A reverse proxy module that uses Serf for its HTTP Client. Woot.
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/11/13/mod_serf-in-trunk/"><![CDATA[<p>Now in httpd trunk: <a href="http://svn.apache.org/repos/asf/httpd/httpd/trunk/modules/proxy/mod_serf.c">mod_serf</a>.  A reverse proxy module that uses <a href="http://code.google.com/p/serf/">Serf for its HTTP Client</a>. Woot.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/11/13/mod_serf-in-trunk/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/11/13/mod_serf-in-trunk/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[ipod warning]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/11/11/ipod-warning/" />
+		<id>http://journal.paul.querna.org/articles/2007/11/11/ipod-warning/</id>
+		<updated>2007-11-11T08:34:24Z</updated>
+		<published>2007-11-11T08:34:24Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[
+Don&#8217;t steal music. Thank You Apple for the reminder.
+I wonder if new IPhones will include wrappers saying &#8216;Don&#8217;t jail break&#8216;.
+Well, of course they won&#8217;t this is Apple we are talking about, it would be more like:
+Don&#8217;t jail break
+
+No encarcele la rotura
+Setzen Sie nicht Bruch gefangen
+壊れ目を拘留してはいけない 
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/11/11/ipod-warning/"><![CDATA[<p><a href="http://journal.paul.querna.org/wp-content/uploads/2007/11/photo.jpg" title="ipod warning"><img src="http://journal.paul.querna.org/wp-content/uploads/2007/11/photo.jpg" alt="ipod warning" /></a></p>
+<p>Don&#8217;t steal music. Thank You Apple for the reminder.</p>
+<p>I wonder if new IPhones will include wrappers saying &#8216;Don&#8217;t <a href="http://jailbreakme.com/">jail break</a>&#8216;.</p>
+<p>Well, of course they won&#8217;t this is Apple we are talking about, it would be more like:</p>
+<blockquote><p><em>Don&#8217;t jail break<br />
+</em></p>
+<p><em>No encarcele la rotura</em></p>
+<p><em>Setzen Sie nicht Bruch gefangen</em></p>
+<p><em>壊れ目を拘留してはいけない </em></p></blockquote>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/11/11/ipod-warning/#comments" thr:count="2"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/11/11/ipod-warning/feed/atom/" thr:count="2"/>
+		<thr:total>2</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[new software: mod_timer]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/10/25/new-software-mod_timer/" />
+		<id>http://journal.paul.querna.org/articles/2007/10/25/new-software-mod_timer/</id>
+		<updated>2007-10-26T02:19:12Z</updated>
+		<published>2007-10-26T02:13:15Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[Do you have a custom logging module?
+Ever wondered how long it took to actually finish logging?
+At $work I was helping with some problems with Apache, and we wanted to know how long until an Apache Worker Process actually goes back into the Accept Queue.
+So mod_timer is born. It hooks into Apache when the connection is [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/10/25/new-software-mod_timer/"><![CDATA[<p>Do you have a custom logging module?</p>
+<p>Ever wondered how long it took to actually finish logging?</p>
+<p>At $<a href="http://www.ask.com">work</a> I was helping with some problems with Apache, and we wanted to know how long until an Apache Worker Process actually goes back into the Accept Queue.</p>
+<p>So <a href="http://people.apache.org/~pquerna/modules/mod_timer.c">mod_timer</a> is born. It hooks into Apache when the connection is accepted, before we start reading any data, and the timer ends when the connection memory pool is destroyed.  It also performs the same measurements on <a href="http://www.w3.org/Protocols/rfc2616/rfc2616-sec8.html">requests inside the connection</a>.</p>
+<p>It produces a log file like this:</p>
+<blockquote><p>r:127.0.0.1:51886:1193364411078414:1568<br />
+r:127.0.0.1:51886:1193364411077069:3034<br />
+r:127.0.0.1:51886:1193364411080117:21150<br />
+r:127.0.0.1:51886:1193364411101293:99477<br />
+r:127.0.0.1:51886:1193364411200792:1856762<br />
+r:127.0.0.1:51886:1193364413057577:7000364<br />
+c:127.0.0.1:51886:1193364411077016:8980955<br />
+r:127.0.0.1:51887:1193364427909070:96608<br />
+r:127.0.0.1:51887:1193364428006034:2031335<br />
+r:127.0.0.1:51887:1193364430037392:1086699<br />
+r:127.0.0.1:51887:1193364431124508:916482<br />
+r:127.0.0.1:51887:1193364432041014:5315190<br />
+c:127.0.0.1:51887:1193364427909020:9447211</p></blockquote>
+<p>Log Fields:</p>
+<ul>
+<li>&#8216;r&#8217; or &#8216;c&#8217; represents if this is a request or connection being logged.</li>
+<li>Remote IP Address</li>
+<li>Remote Port</li>
+<li>Start time, in <a href="http://apr.apache.org/docs/apr/trunk/group__apr__time.html">apr_time_t</a> (64bit int time since 1970 in microseconds)</li>
+<li>Run time in microseconds</li>
+</ul>
+<p>Using this, it becomes easier to look for &#8216;evil&#8217; clients that are doing things like sending one byte of a GET request a second.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/10/25/new-software-mod_timer/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/10/25/new-software-mod_timer/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[gltail]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/10/08/gltail/" />
+		<id>http://journal.paul.querna.org/articles/2007/10/08/gltail/</id>
+		<updated>2007-10-08T23:00:21Z</updated>
+		<published>2007-10-08T22:57:45Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[We thought gltail sounded pretty cool.   So we hooked it into bloglines.com:
+(Screenshot is clipped to protect user data)
+It worked okay for 1 webserver.  But hooking it up to the entire cluster, it was just a little bit too slow &#8212; drawing a new frame once every 8 seconds.  Time to port [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/10/08/gltail/"><![CDATA[<p>We thought <a href="http://www.fudgie.org/">gltail</a> sounded pretty cool.   So we hooked it into bloglines.com:<a href="http://journal.paul.querna.org/wp-content/uploads/2007/10/gltail.png" title="gltail screenshot"><img src="http://journal.paul.querna.org/wp-content/uploads/2007/10/gltail.png" alt="gltail screenshot" /></a></p>
+<p>(Screenshot is clipped to protect user data)</p>
+<p>It worked okay for 1 webserver.  But hooking it up to the entire cluster, it was just a little bit too slow &#8212; drawing a new frame once every 8 seconds.  Time to port it to C <img src='http://journal.paul.querna.org/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' /> </p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/10/08/gltail/#comments" thr:count="7"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/10/08/gltail/feed/atom/" thr:count="7"/>
+		<thr:total>7</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[geeksessions presentation]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/10/04/212/" />
+		<id>http://journal.paul.querna.org/articles/2007/10/04/212/</id>
+		<updated>2007-10-04T15:34:06Z</updated>
+		<published>2007-10-04T15:33:49Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[ Slides from my GeekSessions 1.2 Presentation
+Video from the presentation and panel are supposed to show up here at some point soon.
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/10/04/212/"><![CDATA[<p> <a href="http://journal.paul.querna.org/wp-content/uploads/2007/10/bl-geeksessions.pdf" title="GeekSessions 1.2 Presentation">Slides from my GeekSessions 1.2 Presentation</a></p>
+<p>Video from the presentation and panel are supposed to <a href="http://www.geeksessions.com/events-page/">show up here</a> at some point soon.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/10/04/212/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/10/04/212/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[goodbye RDBMs]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/10/04/goodbye-rdbms/" />
+		<id>http://journal.paul.querna.org/articles/2007/10/04/goodbye-rdbms/</id>
+		<updated>2007-10-04T08:23:37Z</updated>
+		<published>2007-10-04T08:23:37Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[The End of an Architectural Era (It’s Time for a Complete Rewrite)
+[Via Wesley Felter]
+With CouchDB gaining traction, and the recent paper on Dynamo, it feels like people everywhere are dropping their relational databases.  Are the database vendors going to figure this out, and change their products in time to matter?
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/10/04/goodbye-rdbms/"><![CDATA[<p><a href="http://web.mit.edu/dna/www/vldb07hstore.pdf">The End of an Architectural Era (It’s Time for a Complete Rewrite)</a><br />
+[Via <a href="http://wmf.editthispage.com/2007/10/02">Wesley Felter</a>]</p>
+<p>With <a href="http://couchdb.org/">CouchDB</a> gaining traction, and the recent <a href="http://journal.paul.querna.org/articles/2007/10/03/dynamo/">paper on Dynamo</a>, it feels like people everywhere are dropping their relational databases.  Are the database vendors going to figure this out, and change their products in time to matter?</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/10/04/goodbye-rdbms/#comments" thr:count="4"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/10/04/goodbye-rdbms/feed/atom/" thr:count="4"/>
+		<thr:total>4</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[Dynamo]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/10/03/dynamo/" />
+		<id>http://journal.paul.querna.org/articles/2007/10/03/dynamo/</id>
+		<updated>2007-10-04T03:57:00Z</updated>
+		<published>2007-10-04T03:57:00Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[If you care about distributed systems, you need to read the paper about Amazon&#8217;s Dynamo.
+Comments:
+
+Making node joining/leaving an administrative command is not something most academics consider, but it significantly reduces complexity.  We made a similar decision with the PodServer system for Bloglines.  I believe this is the right decision, since a node changing membership on [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/10/03/dynamo/"><![CDATA[<p>If you care about distributed systems, you need to read the <a href="http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html">paper about Amazon&#8217;s Dynamo</a>.</p>
+<p>Comments:</p>
+<ul>
+<li>Making node joining/leaving an administrative command is not something most academics consider, but it significantly reduces complexity.  We made a similar decision with the PodServer system for Bloglines.  I believe this is the right decision, since a node changing membership on the long term is a rare event.  Even with our growing blog index, we only add new nodes once every 6 months or so. (Plan ahead <img src='http://journal.paul.querna.org/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' /> )</li>
+<li>Shout out to <a href="http://www.oracle.com/database/berkeley-db.html">BerkeleyDB</a>.  Glad to see other people pushing it hard. Combined with the <a href="http://www.google.com/url?sa=t&amp;ct=res&amp;cd=1&amp;url=http%3A%2F%2Fwww.oracle.com%2Fcustomers%2Fsnapshots%2Fgoogle-oracle-berkeley-db-casestudy.pdf&amp;ei=6mAER7-mAoaUgQOh95DrAw&amp;usg=AFQjCNH5ItttgUP9p5QVke76BnVtltqUBA&amp;sig2=f1qn_GPg8O-jf_S_jjLyLQ">older white-paper about Google using BerkeleyDB</a> for their Google Accounts system, it just validates my positive feelings on continuing to use it as a core part of the Bloglines architecture.</li>
+<li>The configurability of N/R/W is a great idea.  Most systems make N configurable, but skimp out on giving full flexibility to the people using the system.</li>
+<li>I&#8217;m convinced I need to read more about <a href="http://en.wikipedia.org/wiki/Vector_clocks">Vector Clocks</a>.  For the Bloglines PodServer, we are blessed with only have a single writer per record due to how our crawlers work, so we just &#8216;cheat&#8217; on versioning, but this has caused us pain a few times.</li>
+<li>I wish Amazon would Open Source Dynamo. I can understand the difficulties in doing that, but its a nice thing to dream about.</li>
+<li>I think I will propose an <a href="http://labs.apache.org/">Apache Labs</a> project to start something like Dynamo.  For a basic key/value storage system on a constant hashing ring, without all of the High Availability concerns, you could get something working pretty quickly.   Adding all of the high end features could take time of course&#8230;..</li>
+</ul>
+<p>More discussion over Sam Ruby&#8217;s Blog: <a href="http://intertwingly.net/blog/2007/10/03/Key-Data">Key + Data</a>.</p>
+<p>This all ties in nicely with the <a href="http://www.geeksessions.com/">GeekSessions</a> 1.2 topic  of &#8220;Designing beyond the database&#8221;, where I <a href="http://www.al3x.net/2007/10/notes-from-geeksessions-beyond-database.html">presented last night</a>.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/10/03/dynamo/#comments" thr:count="3"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/10/03/dynamo/feed/atom/" thr:count="3"/>
+		<thr:total>3</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[Amazon MP3 Store is freaking awesome.]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/09/26/amazon-mp3-store-is-freaking-awesome/" />
+		<id>http://journal.paul.querna.org/articles/2007/09/26/amazon-mp3-store-is-freaking-awesome/</id>
+		<updated>2007-09-26T22:44:59Z</updated>
+		<published>2007-09-26T22:44:59Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[The Amazon&#8217;s MP3 store is almost perfect.
+The downloader works great on OSX.
+The music is DRM free.
+It&#8217;s fast. (Faster than ITunes Music Store!)
+Only downside so far is the lack of good recommendations. But I trust Amazon to fix that with a little time and data.
+Bought 5 Albums so far.
+Thank you Amazon for making an awesome Music [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/09/26/amazon-mp3-store-is-freaking-awesome/"><![CDATA[<p>The <a href="http://www.amazon.com/b/ref=dm_gs_hp/102-8816013-5023302?ie=UTF8&amp;node=163856011">Amazon&#8217;s MP3 store</a> is almost perfect.</p>
+<p>The downloader works great on OSX.</p>
+<p>The music is DRM free.</p>
+<p>It&#8217;s fast. (Faster than ITunes Music Store!)</p>
+<p>Only downside so far is the lack of good recommendations. But I trust Amazon to fix that with a little time and data.</p>
+<p>Bought 5 Albums so far.</p>
+<p>Thank you Amazon for making an awesome Music Store.  It&#8217;s about time someone did it right.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/09/26/amazon-mp3-store-is-freaking-awesome/#comments" thr:count="1"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/09/26/amazon-mp3-store-is-freaking-awesome/feed/atom/" thr:count="1"/>
+		<thr:total>1</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[Testing CSS.]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/09/17/testing-css/" />
+		<id>http://journal.paul.querna.org/articles/2007/09/17/testing-css/</id>
+		<updated>2007-09-18T02:34:17Z</updated>
+		<published>2007-09-18T01:49:43Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[Wouldn&#8217;t it be cool if Inline CSS worked inside a feed reader?
+I think that would be cool.
+PS: Thanks to everyone who helped with the Sanitation Rules Wiki.
+EDIT: Like Bloglines does&#8230;..
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/09/17/testing-css/"><![CDATA[<p style="background-color: black; color: white">Wouldn&#8217;t it be cool if <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets">Inline CSS</a> worked inside a feed reader?</p>
+<p style="border: 2px solid black; margin: 3px; padding: 3px">I think that would be cool.</p>
+<p>PS: Thanks to everyone who helped with the <a href="http://wiki.whatwg.org/wiki/Sanitization_rules">Sanitation Rules Wiki</a>.</p>
+<p>EDIT: <a href="http://www.bloglines.com/preview?siteid=2300124&#038;itemid=188">Like Bloglines does&#8230;..</a></p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/09/17/testing-css/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/09/17/testing-css/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[Moved to Wordpress]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/09/14/moved-to-wordpress/" />
+		<id>http://journal.paul.querna.org/articles/2007/09/14/moved-to-wordpress/</id>
+		<updated>2007-09-15T03:36:00Z</updated>
+		<published>2007-09-15T03:36:00Z</published>
+		<category scheme="http://journal.paul.querna.org" term="Uncategorized" />		<summary type="html"><![CDATA[I&#8217;ve migrated my Journal to Wordpress.  Typo just wasn&#8217;t doing it for me anymore.
+If you are seeing this, the DNS has propagated.
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/09/14/moved-to-wordpress/"><![CDATA[<p>I&#8217;ve migrated my Journal to Wordpress.  <a href="http://www.typosphere.org/">Typo</a> just wasn&#8217;t doing it for me anymore.</p>
+<p>If you are seeing this, the DNS has propagated.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/09/14/moved-to-wordpress/#comments" thr:count="7"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/09/14/moved-to-wordpress/feed/atom/" thr:count="7"/>
+		<thr:total>7</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[Speaking at geekSessions 1.2]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/09/11/speaking-at-geeksessions-1-2/" />
+		<id></id>
+		<updated>2007-09-14T19:23:08Z</updated>
+		<published>2007-09-11T02:15:00Z</published>
+				<summary type="html"><![CDATA[I will be on the panel at GeekSessions 1.2: Designing Beyond the Database
+on October 2nd in San Francisco.
+
+I will be talking about the backend systems used to power bloglines.
+Get your tickets now, before they are all gone. See y&#8217;all there.
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/09/11/speaking-at-geeksessions-1-2/"><![CDATA[<p>I will be on the panel at <a href="http://www.geeksessions.com/2007/09/04/geeksessions-12-designing-beyond-the-database/">GeekSessions 1.2: Designing Beyond the Database</a><br />
+on October 2nd in San Francisco.
+</p>
+<p><P>I will be talking about the backend systems used to power bloglines.</p>
+<p>Get your tickets now, before they are all gone. See y&#8217;all there.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/09/11/speaking-at-geeksessions-1-2/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/09/11/speaking-at-geeksessions-1-2/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[it&#8217;s on.]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/09/06/its-on/" />
+		<id></id>
+		<updated>2007-09-06T00:39:59Z</updated>
+		<published>2007-09-06T00:06:00Z</published>
+				<summary type="html"><![CDATA[Bloglines vs Google Reader:
+Two Horse Race?
+
+2:29 PM: Google Reader: &#8220;We found it!&#8221; - Search, Minimize Bar, and new Forums.
+
+
+9:00 PM: Bloglines Beta 1.0.1 - Pin, E-Mail, New Help, and Hotkeys.
+
+Lets see what next week brings   
+PS: Bloglines has had Blog Search within our feeds for over 15 months, and a minimize bar for [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/09/06/its-on/"><![CDATA[<p>Bloglines vs Google Reader:<a href="http://www.readwriteweb.com/archives/bloglines_vs_google_reader.php"><br />
+Two Horse Race?</a></p>
+<p>
+2:29 PM: Google Reader: <a href="http://www.bloglines.com/preview?siteid=3253453&#038;itemid=74">&#8220;We found it!&#8221;</a> - Search, Minimize Bar, and new Forums.
+</p>
+<p>
+9:00 PM: Bloglines <a href="http://www.bloglines.com/preview?siteid=11967&#038;itemid=141">Beta 1.0.1</a> - Pin, E-Mail, New Help, and Hotkeys.
+</p>
+<p>Lets see what next week brings <code> <img src='http://journal.paul.querna.org/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' /> </code></p>
+<p>PS: Bloglines has had Blog Search within our feeds <a href="http://www.bloglines.com/preview?siteid=11967&#038;itemid=105">for over 15 months</a>, and a minimize bar <a href="http://www.bloglines.com/preview?siteid=11967&#038;itemid=99">for 17 months</a>. Har har har har&#8230;&#8230;</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/09/06/its-on/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/09/06/its-on/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[The new Bloglines Beta]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/08/26/the-new-bloglines-beta/" />
+		<id></id>
+		<updated>2007-09-14T15:15:45Z</updated>
+		<published>2007-08-26T23:36:00Z</published>
+				<summary type="html"><![CDATA[
+beta.bloglines.com is live. Its all ajaxy. And more Web2.0. And Stuff. Longer Blog Post soon  
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/08/26/the-new-bloglines-beta/"><![CDATA[<p><a href="http://beta.bloglines.com/"><img src="http://edge.beta.bloglines.com/c/images/bl-logo-large.png" /></a></p>
+<p><a href="">beta.bloglines.com</a> is live. Its all ajaxy. And more Web2.0. And Stuff. Longer Blog Post soon <img src='http://journal.paul.querna.org/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' /> </p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/08/26/the-new-bloglines-beta/#comments" thr:count="1"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/08/26/the-new-bloglines-beta/feed/atom/" thr:count="1"/>
+		<thr:total>1</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[Lies, Damn Lies, and Sun]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/08/14/lies-damn-lies-and-sun/" />
+		<id></id>
+		<updated>2007-09-14T18:25:24Z</updated>
+		<published>2007-08-14T23:32:00Z</published>
+				<summary type="html"><![CDATA[Quote from 
+Score Another for Clarity and Transparency:
+Sun continues to contribute both code and development efforts to many Apache projects such as Tomcat, Roller, River (Jini), HTTPD, and Derby.
+Sun continuing contributing to Apache httpd is news to me. As far as I know, no Apache HTTPD developer is currently employed by Sun.
+While mod_atom is a [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/08/14/lies-damn-lies-and-sun/"><![CDATA[<p>Quote from <a href="http://blogs.sun.com/richgreen/entry/score_another_for_clarity_and"><br />
+Score Another for Clarity and Transparency</a>:</p>
+<blockquote><p>Sun continues to contribute both code and development efforts to many Apache projects such as Tomcat, Roller, River (Jini), HTTPD, and Derby.</p></blockquote>
+<p>Sun continuing contributing to Apache <a href="http://httpd.apache.org/">httpd</a> is news to me. As far as I know, no <a href="http://httpd.apache.org/contributors/">Apache HTTPD developer</a> is currently employed by Sun.</p>
+<p>While <a href="http://www.tbray.org/ongoing/What/Technology/mod_atom/">mod_atom</a> is a cool Apache Module by Tim Bray,  it does not count as <code>httpd</code> or <a href="http://www.sun.com/">Sun</a>.</p>
+<p>The post by Rich Green contains many other lies, which are discussed <a href="http://blogs.sun.com/richgreen/entry/score_another_for_clarity_and#comment-1186774763000">in the comments</a>, and the <a href="http://kasparov.skife.org/blog/2007/08/10/">wider internet</a>.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/08/14/lies-damn-lies-and-sun/#comments" thr:count="2"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/08/14/lies-damn-lies-and-sun/feed/atom/" thr:count="2"/>
+		<thr:total>2</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[iBloglines Ultimate Pro Edition]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/07/31/ibloglines-ultimate-pro-edition/" />
+		<id></id>
+		<updated>2007-09-14T18:34:47Z</updated>
+		<published>2007-07-31T03:10:00Z</published>
+				<summary type="html"><![CDATA[iBloglines, now has more features. The Bloglines Blog has more details.
+Geoff has a comparison of iBloglines to NewsGator&#8217;s iPhone site.
+It turns out, even Google Reader users like our iPhone site. Hurrah.
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/07/31/ibloglines-ultimate-pro-edition/"><![CDATA[<p><a href="http://i.bloglines.com/">iBloglines</a>, now has more features. The <a href="http://www.bloglines.com/about/news#137">Bloglines Blog</a> has more details.</p>
+<p>Geoff has <a href="http://mipsisrisc.com/rambling/?p=26">a comparison of iBloglines to NewsGator&#8217;s iPhone site</a>.</p>
+<p>It turns out, <a href="http://groups.google.com/group/Google-Labs-Reader/msg/dd02119094124951">even Google Reader users</a> like our iPhone site. Hurrah.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/07/31/ibloglines-ultimate-pro-edition/#comments" thr:count="3"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/07/31/ibloglines-ultimate-pro-edition/feed/atom/" thr:count="3"/>
+		<thr:total>3</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[Gadget APIs]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/07/26/gadget-apis/" />
+		<id></id>
+		<updated>2007-09-14T15:18:09Z</updated>
+		<published>2007-07-26T21:09:00Z</published>
+				<summary type="html"><![CDATA[Google Gadgets API Terms and Conditions:
+
+Prohibited Actions
+ You will not and will not allow on your behalf third parties to (a) make and distribute copies of any aspect of the iGoogle page (including the API) or accompanying documentation except as permitted by these API Terms and Conditions; (b) attempt to copy, reproduce, alter, modify, reverse [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/07/26/gadget-apis/"><![CDATA[<p><a href="http://www.google.com/apis/gadgets/terms.html">Google Gadgets API Terms and Conditions</a>:</p>
+<blockquote>
+<h2>Prohibited Actions</h2>
+<p> You will not and will not allow on your behalf third parties to (a) make and distribute copies of any aspect of the iGoogle page (<b>including the API</b>) or accompanying documentation except as permitted by these API Terms and Conditions; (b) attempt to copy, reproduce, alter, modify, reverse engineer, disassemble, decompile, translate, or attempt to discover any prototypes, software, algorithms, or underlying ideas which embody the iGoogle page or Google API;&#8230;</p>
+</blockquote>
+<p>The <a href="http://dev.netvibes.com/doc/uwa_specification">Netvibes UWA</a>, seems like a decent response/alternative gadget API.  However, it seems pretty much dead since its release in April. It also doesn&#8217;t have a specific license or terms associated with the UWA API Documentation itself.</p>
+<p>All I want is a public and open API for developing widgets and gadgets against. <i>Sigh.</i>.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/07/26/gadget-apis/#comments" thr:count="3"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/07/26/gadget-apis/feed/atom/" thr:count="3"/>
+		<thr:total>3</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[iBloglines for the iPhone]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/07/19/ibloglines-for-the-iphone/" />
+		<id></id>
+		<updated>2007-09-14T08:27:34Z</updated>
+		<published>2007-07-19T20:44:00Z</published>
+				<summary type="html"><![CDATA[Short: Bloglines Users, go to i.bloglines.com  on your iPhone.
+
+
+Last Saturday, I got an iPhone.  It was great, but the full size Bloglines on it, with the Zoom  Mode, sucked. Trying to read large volumes of text is a massive pain on the iPhone.
+On Sunday morning, I started working on an iPhone specific [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/07/19/ibloglines-for-the-iphone/"><![CDATA[<p>Short: Bloglines Users, go to <a href="http://i.bloglines.com/">i.bloglines.com </a> on your iPhone.</p>
+<p><img src="http://corelands.com/~chip/ibloglines1.png"/><br />
+<img src="http://corelands.com/~chip/ibloglines2.png"/></p>
+<p><a href="http://journal.paul.querna.org/articles/2007/07/14/iphone">Last Saturday</a>, I got an iPhone.  It was great, but the full size Bloglines on it, with the <a href="http://docs.info.apple.com/article.html?artnum=305899">Zoom  Mode</a>, sucked. Trying to read large volumes of text is a massive pain on the iPhone.</p>
+<p>On Sunday morning, I started working on an iPhone specific site for Bloglines.  By mid-afternoon on Sunday, I had something that worked reasonably well.</p>
+<p>I spent the rest of this week taking in refinements and new feature suggestions from everyone inside the company.</p>
+<p>Thanks to everyone on the Bloglines team for helping out with this project. It is by far the coolest thing we have released this year so far.</p>
+<p>The iBloglines site is written with:</p>
+<ul>
+<li>253 lines of C++ in 5 files</li>
+<li>382 lines of client side Javascript in 1 file</li>
+<li>287 lines of ETL Templates in 8 files</li>
+</ul>
+<p>Of course, this is only counting the code we wrote specifically for the iPhone, but it does make me doubt that you need to use a Scripting Langauge for rapid development, if your framework is good enough.</p>
+<p>iBloglines is built upon <a href="http://joehewitt.com/iui/">iUI</a> .  Originally we tried to just using it as a base, but in the end, we essentially forked it. We entertained using <a href="http://dojotoolkit.org/">Dojo 0.9</a> on the iPhone, but since the only required browser to support is MobileSafari, it would of been pretty heavy.</p>
+<p>We used <a href="http://etl.i-want-a-pony.com/">The Electric Template Language</a>, or ETL for generating the HTML.  Relatively young compared to things like <a href="http://www.clearsilver.net/">ClearSilver</a>, it is much cleaner and was a joy to work with.</p>
+<p>Developing for the iPhone has been pretty fun, but I believe Apple has been less helpful that they should be.
+</p>
+<p><b>We might not need a SDK for &#8216;native&#8217; Applications,<br />
+but we need better tools for the iPhone.</b></p>
+<p>Simple things, like making an official iPhone Simulator, like Microsoft has <a href="http://msdn2.microsoft.com/en-us/windowsmobile/bb264327.aspx">for Windows Mobile</a>, which had identical rendering to the iPhone would be very helpful. <a href="http://www.marketcircle.com/iphoney/">iPhoney</a> is a good start, but it really should be an official Apple Developer tool.</p>
+<p>We did most of our development on Firefox with <a href="http://www.getfirebug.com/">Firebug</a>, and then ported it to the MobileSafari later, because the tools for Firefox are so much better.</p>
+<p>In closing: I love my iPhone, I hope Apple will hurry up and make better developer tools, and I hope the Bloglines users enjoy the new <a href="http://i.bloglines.com/">iBloglines</a>!</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/07/19/ibloglines-for-the-iphone/#comments" thr:count="8"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/07/19/ibloglines-for-the-iphone/feed/atom/" thr:count="8"/>
+		<thr:total>8</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[iphone]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/07/14/iphone/" />
+		<id></id>
+		<updated>2007-09-14T18:28:22Z</updated>
+		<published>2007-07-14T23:04:03Z</published>
+				<summary type="html"><![CDATA[So, I didn&#8217;t rush to get one on launch day; But enough people have said good things about it, and it doesn&#8217;t look like a flop, so today I went up to the Valley Fair Apple Store in Santa Clara at about 4pm.
+
+Walked in, and it was crazy busy, people all huddled around the demo [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/07/14/iphone/"><![CDATA[<p>So, I didn&#8217;t rush to get one on launch day; But enough people have said good things about it, and it doesn&#8217;t look like a flop, so today I went up to the <a href="http://www.apple.com/retail/valleyfair/">Valley Fair Apple Store</a> in Santa Clara at about 4pm.</p>
+<p>
+Walked in, and it was crazy busy, people all huddled around the demo units. I figured they were sold out, but asked an employee, and he said to just go to the checkout.  And so now I have an iPhone.</p>
+<p>The migration was painless. I ported my existing Cingular/ATT account.  When I originally signed up with Cingular, it took 3 hours to activate the phone in a store.  With Apple, I did it form home, in 3 minutes, via iTunes.  It is about time cell phones stopped sucking.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/07/14/iphone/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/07/14/iphone/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[announcement: cluster tail released]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/07/14/announcement-cluster-tail-released/" />
+		<id></id>
+		<updated>2007-09-14T08:55:45Z</updated>
+		<published>2007-07-14T15:53:00Z</published>
+				<summary type="html"><![CDATA[I&#8217;m happy to announce the release of a new piece of software that I&#8217;ve written. Cluster Tail or ctail for short.  Basically, it multiplexes lots of SSH connections, to invoke tail -f on a large set of machines or log files.
+It isn&#8217;t the most amazing idea, but if you have ever had hundreds of [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/07/14/announcement-cluster-tail-released/"><![CDATA[<p>I&#8217;m happy to announce the release of a new piece of software that I&#8217;ve written. <a href="http://ctail.i-want-a-pony.com/">Cluster Tail</a> or <code>ctail</code> for short.  Basically, it multiplexes lots of SSH connections, to invoke <code>tail -f</code> on a large set of machines or log files.</p>
+<p>It isn&#8217;t the most amazing idea, but if you have ever had hundreds of machines (or even a dozen), trying to understand what is going on across all of can be very difficult, and this is just another tool to make that easier.</p>
+<p>Most other methods of reading log files on large clusters get away from <a href="http://en.wikipedia.org/wiki/Unix_philosophy">classic Unix Philosophy</a>, but <code>ctail</code> can easily be piped into other commands.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/07/14/announcement-cluster-tail-released/#comments" thr:count="5"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/07/14/announcement-cluster-tail-released/feed/atom/" thr:count="5"/>
+		<thr:total>5</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[Where is the Campfire API?]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/07/05/where-is-the-campfire-api/" />
+		<id></id>
+		<updated>2007-09-14T16:07:40Z</updated>
+		<published>2007-07-05T12:11:00Z</published>
+				<summary type="html"><![CDATA[Campfire seems great.  We have been playing with using it at work, rather than our internal IRC network, after seeing this blog post.
+The UI is great, the file sharing is great&#8230; But the only major blocking issue right now is the complete lack of an API.
+Most other 37 signals apps have official APIs, but [...]]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/07/05/where-is-the-campfire-api/"><![CDATA[<p><a href="http://campfirenow.com">Campfire</a> seems great.  We have been playing with using it at <a href="http://www.bloglines.com/">work</a>, rather than our internal IRC network, after <a href="http://37signals.blogs.com/products/2007/07/web-firm-viget-.html">seeing this blog post</a>.</p>
+<p>The UI is great, the file sharing is great&#8230; But the only major blocking issue right now is the complete lack of an API.</p>
+<p>Most other 37 signals <a href="http://loggedoff.org/articles/2006/07/20/api-projects-for-37signals-applications/">apps have official APIs</a>, but Campfire only has an unofficial &#8216;API&#8217; which is just a <a href="http://rubyforge.org/projects/tinder">Ruby Module which scrapes the HTML</a>.</p>
+<p>Look, Ruby is great, but when you are integrating a large project, with existing chat services, you need a standard protocol with good API libraries.  Right now on our IRC channel, we have Bots written in Ruby, Python, TCL, and C/Lua.</p>
+<p>They perform all kinds of services, from searching Google, to SVN commit notification, to controlling our <a href="http://buildbot.sourceforge.net/">buildbot builds</a>.</p>
+<p>If Campfire at least had some kind of official API, it could be XML based, JSON based, or even something else, I don&#8217;t really care &#8212; it would allow us to easily port our existing tools in many languages.  Heck, if it had an API, you could also make a <a href="http://www.danga.com/djabberd/">Jabber Gateway easily</a>.</p>
+<p>So, here is my request to 37 signals: <b>I just want an API.</b></p>
+<p>An API so we can become entrenched into your solution.  So we would never leave.  Right now its a hard sell &#8212; we would be either writing/porting Tinder for 3 or more languages, or investing lots of time in a Ruby based Proxy of some kind, but that all seems excessive. Look at the other 37 signals apps with APIs, a whole ecosystem of things that support your products appear.  APIs are good for you, and good for us, a potential user.</p>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/07/05/where-is-the-campfire-api/#comments" thr:count="0"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/07/05/where-is-the-campfire-api/feed/atom/" thr:count="0"/>
+		<thr:total>0</thr:total>
+	</entry>
+		<entry>
+		<author>
+			<name>chip</name>
+						<uri>http://paul.querna.org/</uri>
+					</author>
+		<title type="html"><![CDATA[ev certificates.]]></title>
+		<link rel="alternate" type="text/html" href="http://journal.paul.querna.org/articles/2007/06/12/ev-certificates/" />
+		<id></id>
+		<updated>2007-09-13T02:43:07Z</updated>
+		<published>2007-06-12T23:46:00Z</published>
+				<summary type="html"><![CDATA[IEBlog: Extended Validation Guidelines v1 Released!
+Translation: bullshit, bullshit, more bullshit, phishing, money, more bullshit; summary: pay more money for bullshit.
+See Also:
+
+ Study Finds IE7 + EV SSL Won&#8217;t Stop Phishing
+Wikipedia: Extended_Validation_Certificate
+
+]]></summary>
+		<content type="html" xml:base="http://journal.paul.querna.org/articles/2007/06/12/ev-certificates/"><![CDATA[<p><a href="http://blogs.msdn.com/ie/archive/2007/06/12/extended-validation-guidelines-v1-released.aspx">IEBlog: Extended Validation Guidelines v1 Released!</a></p>
+<p>Translation: bullshit, bullshit, more bullshit, phishing, money, more bullshit; summary: pay more money for bullshit.</p>
+<p>See Also:</p>
+<ul>
+<li><a href="http://it.slashdot.org/article.pl?sid=07/01/26/1325228&#038;from=rss"> Study Finds IE7 + EV SSL Won&#8217;t Stop Phishing</a></li>
+<li><a href="http://en.wikipedia.org/wiki/Extended_Validation_Certificate#Surrounding_issues">Wikipedia: Extended_Validation_Certificate</a></li>
+</ul>
+]]></content>
+		<link rel="replies" type="text/html" href="http://journal.paul.querna.org/articles/2007/06/12/ev-certificates/#comments" thr:count="2"/>
+		<link rel="replies" type="application/atom+xml" href="http://journal.paul.querna.org/articles/2007/06/12/ev-certificates/feed/atom/" thr:count="2"/>
+		<thr:total>2</thr:total>
+	</entry>
+	</feed>

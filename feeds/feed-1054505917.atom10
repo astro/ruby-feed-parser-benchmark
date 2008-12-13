@@ -1,0 +1,767 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/atom10full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:on="http://www.oreillynet.com/csrss/" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">
+<title>O'Reilly Radar - Insight, analysis, and research about emerging technologies</title>
+<link rel="alternate" type="text/html" href="http://radar.oreilly.com/" />
+
+<id>tag:radar.oreilly.com,2008-02-15://57</id>
+<updated>2008-12-10T01:06:30Z</updated>
+<subtitle>http://radar.oreilly.com/</subtitle>
+<generator uri="http://www.sixapart.com/movabletype/">Movable Type Pro 4.21-en</generator>
+
+<geo:lat>38.393314</geo:lat><geo:long>-122.836667</geo:long><link rel="self" href="http://feeds.feedburner.com/oreilly/radar/atom" type="application/atom+xml" /><feedburner:emailServiceId>73011</feedburner:emailServiceId><feedburner:feedburnerHostname>http://www.feedburner.com</feedburner:feedburnerHostname><entry>
+<title>Clever Emoticarolers App</title>
+<link rel="alternate" type="text/html" href="http://feeds.feedburner.com/~r/oreilly/radar/atom/~3/480071248/clever-emoticarolers-app.html" />
+<id>tag:radar.oreilly.com,2008://57.34592</id>
+
+<published>2008-12-10T00:44:44Z</published>
+<updated>2008-12-10T01:06:30Z</updated>
+
+<summary type="html"> Open the door and smiley-face carolers sing a song that you can customize and send to others. That's the emoticarolers concept, worked up by Jason Striegel, our Hackszine editor, who leads the development side of things for Colle+McVoy in Minneapolis. The team created this clever holiday "text-to-sing" promotion for Yahoo Messenger at emoticarolers.com. A custom Make carol is here....</summary>
+<author>
+<name>Dale Dougherty</name>
+<uri>http://blogs.oreillynet.com/daledougherty/</uri>
+</author>
+
+<category term="carol" label="carol" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="christmas" label="Christmas" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="festival" label="festival" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="speechsynthesis" label="speech synthesis" scheme="http://www.sixapart.com/ns/types#tag" />
+
+<content type="html" xml:lang="en" xml:base="http://radar.oreilly.com/">
+&lt;p&gt;&lt;span class="mt-enclosure mt-enclosure-image" style="display: inline;"&gt;&lt;a href="http://emoticarolers.com"&gt;&lt;img alt="emoticaroler" src="http://radar.oreilly.com/assets_c/2008/12/emoticaroler_20081208-thumb-600x414.jpg" width="600" height="414" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /&gt;&lt;/a&gt;&lt;/span&gt;&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+Open the door and smiley-face carolers sing a song that you can customize and send to others.   That's the emoticarolers concept, worked up by Jason Striegel, our &lt;a href="http://www.hackszine.com/"&gt;Hackszine&lt;/a&gt; editor, who leads the development side of things for &lt;a href="http://www.collemcvoy.com/"&gt;Colle+McVoy&lt;/a&gt; in Minneapolis.   The team created this clever holiday "text-to-sing" promotion for Yahoo Messenger at &lt;a href="http://emoticarolers.com"&gt;emoticarolers.com&lt;/a&gt;.   A &lt;a href="http://emoticarolers.com/?id=78174cf87ff7ab5878cca15662dea2c93328459f&amp;author=MAKE"&gt;custom Make carol&lt;/a&gt; is here.  (Reminds me of the&lt;a href="http://oreilly.com/catalog/9781565920415/index.html"&gt; Smileys&lt;/a&gt; book by David Sanderson that I developed many years ago.)&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+I asked Jason how they built the app and here's what he said:&lt;br /&gt;
+&lt;blockquote&gt;The front end interface is written in Flash/AS3. It talks to a PHP backend, which uses the &lt;a href="http://www.cstr.ed.ac.uk/projects/festival/"&gt;Festival&lt;/a&gt; text-to-speech software and some other Unix audio tools to render each of the four voices. Those all get compiled back into a single mp3 and sent back to flash, along  with an xml file that tells the app how to animate the emoticons  and custom lyrics. Aside from some of the animated bits, this could work as-is with an HTML/CSS/JS front end as well.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+The process is pretty cpu intensive, so we had to use a number of load balanced machines to handle requests. They output files on amazon s3, all keyed by a unique id. If this becomes popular  (fingers crossed), there's no database or anything that will  bottleneck reads or writes, and it should just scale linearly as we  add more boxes.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+It's funny how the text-to-singing stuff ended up being only a  small portion of the project.&lt;/blockquote&gt;&lt;br /&gt;
+Links:&lt;br /&gt;
+&lt;a href="http://emoticarolers.com"&gt;emoticarolers.com&lt;/a&gt;&lt;br&gt;&lt;br /&gt;
+&lt;a href="http://emoticarolers.com/?id=78174cf87ff7ab5878cca15662dea2c93328459f&amp;author=MAKE"&gt;Make Holiday Carol&lt;/a&gt; &lt;/p&gt;
+
+&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=06fVo"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=06fVo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=ywUFO"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=ywUFO" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=BuhTo"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=BuhTo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=DTOuO"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=DTOuO" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/oreilly/radar/atom/~4/480071248" height="1" width="1"/&gt;</content>
+<dc:source>http://www.oreillynet.com/pub/au/26</dc:source>
+<dc:type>text</dc:type>
+<on:image />
+<feedburner:origLink>http://radar.oreilly.com/2008/12/clever-emoticarolers-app.html</feedburner:origLink></entry>
+
+<entry>
+<title>Challenges for the New Genomics</title>
+<link rel="alternate" type="text/html" href="http://feeds.feedburner.com/~r/oreilly/radar/atom/~3/478860615/genomics-sequencing-science-big-data.html" />
+<id>tag:radar.oreilly.com,2008://57.34537</id>
+
+<published>2008-12-08T21:22:26Z</published>
+<updated>2008-12-09T21:27:45Z</updated>
+
+<summary type="html">New guest blogger Matt Wood heads up the Production Software team at the Wellcome Trust Sanger Institute, where he builds tools and processes to manage tens of terabytes of data per day in support of genomic research. Matt will be exploring the intersection of data, computer technology, and science on Radar. The original Human Genome Project was completed in 2003,...</summary>
+<author>
+<name>Matt Wood</name>
+<uri>http://radar.oreilly.com/mattw</uri>
+</author>
+
+<category term="genomics" label="genomics" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="informatics" label="informatics" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="science" label="science" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="software" label="software" scheme="http://www.sixapart.com/ns/types#tag" />
+
+<content type="html" xml:lang="en" xml:base="http://radar.oreilly.com/">
+&lt;p&gt;&lt;em&gt;New guest blogger Matt Wood heads up the Production Software team at the &lt;a href="http://www.wellcome.ac.uk/"&gt;Wellcome Trust&lt;/a&gt; &lt;a href="http://www.sanger.ac.uk/"&gt;Sanger Institute&lt;/a&gt;, where he builds tools and processes to manage tens of terabytes of data per day in support of genomic research. Matt will be exploring the intersection of data, computer technology, and science on Radar.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The original &lt;a href="http://www.ornl.gov/sci/techresources/Human_Genome/home.shtml"&gt;Human Genome Project&lt;/a&gt; was completed in 2003, after a 13-year worldwide effort and a billion dollar budget. The quest to sequence all three billion letters of the human genome, which encodes a wide range of human characteristics including the risk of disease, has provided the foundation for modern biomedical research. &lt;/p&gt;
+
+&lt;p&gt;Through research built around the human genome, the scientific community aims to learn more about the interplay of genes, and the role of biologically active regions of the genome in maintaining health or causing disease.  Since such active areas are often well conserved between species, and given the huge costs involved in sequencing a human genome, scientists have worked hard to sequence a wide range of organisms that span evolutionary history. &lt;/p&gt;
+
+&lt;p&gt;This has resulted in the publication of around 40 different species' genomes, ranging from &lt;a href="http://www.ensembl.org/Caenorhabditis_elegans/Info/Index/"&gt;C. elegans&lt;/a&gt; to the &lt;a href="http://www.ensembl.org/Pan_troglodytes/Info/Index/"&gt;Chimpanzee&lt;/a&gt;, from the &lt;a href="http://www.ensembl.org/Monodelphis_domestica/Info/Index/"&gt;Opossum&lt;/a&gt; to the &lt;a href="http://www.ensembl.org/Pongo_pygmaeus/Info/Index/"&gt;Orangutan&lt;/a&gt;. These genomic sequences have helped progress the state of the art of human genomic research, in part, by helping to identify biologically important genes.&lt;/p&gt;
+
+&lt;p&gt;Whilst there is great value in comparing genomes between species, the answers to key questions of  an individual's genetic makeup can only be found by looking at individuals within the same species. Until recently, this has been prohibitively expensive. We needed a quantum leap in cost-effective, timely individual genome sequencing, a leap delivered by a new wave of technologies from companies such as &lt;a href="http://www.illumina.com/pages.ilmn?ID=204"&gt;Illumina&lt;/a&gt;, &lt;a href="http://www.454.com/products-solutions/how-it-works/index.asp"&gt;Roche&lt;/a&gt; and &lt;a href="http://www3.appliedbiosystems.com/AB_Home/applicationstechnologies/SOLiDSystemSequencing/index.htm"&gt;Applied Biosystems&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;In the last 18 months, new horizons in genomic research have opened up, along with a number of new projects looking to make a big impact (the &lt;a href="http://www.1000genomes.org"&gt;1000 Genomes Project&lt;/a&gt; and &lt;a href="http://www.icgc.org/"&gt;International Cancer Genome Consortium&lt;/a&gt; to name but two). Despite the huge potential, these new technologies bring with them some tough challenges for modern biological research. &lt;br /&gt;
+ &lt;br /&gt;
+&lt;strong&gt;High throughput&lt;/strong&gt;&lt;br /&gt;
+For the first time, biology has become truly data driven. New short-read sequencing technologies offer orders of magnitude greater resolution when sequencing DNA, sufficient to detect the single-letter changes that could indicate an increased risk of disease. The cost of this enhanced resolution comes in the form of substantial data throughput requirements, with a single sequencing instrument generating terabytes of data a week--more than all biological protocols to date. The methods by which data of this scale can be efficiently moved, analyzed, and made available to scientific collaborators (not least the challenge of backing it up), are cause for intense activity and discussion in biomedical research institutes around the globe. &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt; Very rapid change&lt;/strong&gt;&lt;br /&gt;
+Scientific research has always been a relatively dynamic realm to work in, but the novel requirements of these new technologies bring with them unprecedented levels of flux. Software tools built around these technologies are required to bend and flex with the same agility as the frequently updated and refined underlying laboratory protocols and analysis techniques. A new breed of development approaches, techniques and technologies are needed to help biological researches add value to this data.&lt;/p&gt;
+
+&lt;p&gt;In a very short space of time the biological sciences have caught up with the data and analysis requirements of other large scale domains, such as high energy physics and astronomy. It is an exciting and challenging time to work in areas with such large scale requirements, and I look forward to discussing the role distribution, architecture and the networked future of science here on Radar.&lt;/p&gt;
+
+&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=fY5Ro"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=fY5Ro" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=uVf1O"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=uVf1O" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=eBDOo"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=eBDOo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=ZN2EO"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=ZN2EO" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/oreilly/radar/atom/~4/478860615" height="1" width="1"/&gt;</content>
+
+<dc:type>text</dc:type>
+<on:image />
+<feedburner:origLink>http://radar.oreilly.com/2008/12/genomics-sequencing-science-big-data.html</feedburner:origLink></entry>
+
+<entry>
+<title>The Twitter Gold Mine &amp; Beating Google to the Semantic Web</title>
+<link rel="alternate" type="text/html" href="http://feeds.feedburner.com/~r/oreilly/radar/atom/~3/478350826/twitter-gold-mine.html" />
+<id>tag:radar.oreilly.com,2008://57.34555</id>
+
+<published>2008-12-08T10:07:47Z</published>
+<updated>2008-12-09T21:03:45Z</updated>
+
+<summary type="html"> There's always been jabs at Twitter for not having a viable business model and the chatter has increased in the current economic climate. In a recent interview Evan Williams, Twitter CEO, said "We had planned to focus on revenue in 2010 but that's no longer the case, so we changed the plan quite a bit... We've moved revenue higher...</summary>
+<author>
+<name>Nick Bilton</name>
+<uri>http://radar.oreilly.com/nickbilton</uri>
+</author>
+
+<category term="advertising" label="advertising" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="google" label="google" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="twitter" label="twitter" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="web20" label="web 2.0" scheme="http://www.sixapart.com/ns/types#tag" />
+
+<content type="html" xml:lang="en" xml:base="http://radar.oreilly.com/">
+&lt;p&gt;&lt;span class="mt-enclosure mt-enclosure-image" style="display: inline;"&gt;&lt;img alt="twitterads.jpg" src="http://radar.oreilly.com/twitterads.jpg" width="550" height="178" class="mt-image-left" style="float: left; margin: 0 60px 20px 0;" /&gt;&lt;/span&gt;&lt;br /&gt;
+&lt;p&gt; &lt;/p&gt;&lt;br /&gt;
+There's always been jabs at Twitter for not having a viable business model and the chatter has increased in the current economic climate. In a recent interview Evan Williams, Twitter CEO, said "We had planned to focus on revenue in 2010 but that's no longer the case, so we changed the plan quite a bit... We've moved revenue higher on our list of priorities...".&lt;br /&gt;
+&lt;br /&gt; &lt;br /&gt;&lt;br /&gt;
+I believe Twitter, potentially, has an incredible business model.&lt;br /&gt;
+&lt;br /&gt; &lt;br /&gt;&lt;br /&gt;
+In The New York Times R&amp;D Labs, where I work, we've been talking a lot about 'smart content', both in relation to advertising, search and news delivery. For the past 157 years (that's how old the newspaper is) we've essentially delivered 'dumb content' to people's doorsteps. You and I, irrespective of interests, location etc. have received the same newspaper on our doorsteps every morning. We're beginning to explore ways to make content smarter, to understand what you've read, which device you've read it on and your micro level interests&amp;#8212;making the most important news find you, instead of you having to find it.&lt;br /&gt;
+&lt;br /&gt; &lt;br /&gt;&lt;br /&gt;
+This also changes the advertising model where ads become even smarter. Sure, ads are at about a 1st grade reading level now; with adsense and cookies, the ad networks have half an idea of what I'm interested in, but they aren't exactly smart about it. Just because a friend sends me an email about a baseball game doesn't mean I want to see ESPN ads in my Gmail.&lt;br /&gt;
+&lt;br /&gt; &lt;br /&gt;&lt;br /&gt;
+So what does this have to do with a Twitter business model? Twitter, potentially, has the ability to deliver unbelievably smart advertising; advertising that I &lt;em&gt;actually want to see&lt;/em&gt;, and they have the ability to deliver search results far superior and more accurate to Google, putting Twitter in the running to beat Google in the latent quest to the semantic web. With some really intelligent data mining and cross pollination, they could give me ads that makes sense not for something I looked at 3 weeks ago, or a link my wife clicked on when she borrowed my laptop, but ads that are extremely relevant to 'what I'm doing right now'.&lt;br /&gt;
+&lt;br /&gt; &lt;br /&gt;&lt;br /&gt;
+A quick perusal of &lt;a href="http://twitter.com/nickbilton"&gt;my Tweets&lt;/a&gt; shows that I live in Brooklyn, NY, I &lt;a href="http://twitter.com/nickbilton/status/971387539"&gt;work for The New York Times&lt;/a&gt;, &lt;a href="http://twitter.com/nickbilton/status/1043782650"&gt;teach at NYU/ITP&lt;/a&gt;, &lt;a href="http://twitter.com/nickbilton/status/999058067"&gt;I travel somewhere once a month for work&lt;/a&gt;, &lt;a href="http://twitter.com/nickbilton/status/820494783"&gt;I love gardening&lt;/a&gt;, &lt;a href="http://twitter.com/nickbilton/status/1011494330"&gt;cappuccinos&lt;/a&gt;, &lt;a href="http://twitter.com/nickbilton/status/837492935"&gt;my Vespa &lt;/a&gt;, U.I./Design and &lt;a href="http://twitter.com/nickbilton/status/1020034123"&gt;hardware hacking&lt;/a&gt;, I'm a &lt;a href="http://twitter.com/nickbilton/status/986909384"&gt;political news junkie&lt;/a&gt;, I read &lt;a href="http://twitter.com/nickbilton/status/1018789342"&gt;Gizmodo&lt;/a&gt; &amp; NYTimes.com and I was &lt;a href="http://twitter.com/nickbilton/status/902449617"&gt;looking for a new car&lt;/a&gt; for a while, but &lt;a href="http://twitter.com/nickbilton/status/948490694"&gt;now have a MINI&lt;/a&gt; and I'm also friends with &lt;a href="http://twitter.com/nickbilton/friends"&gt;these people&lt;/a&gt;. That's a treasure trove of data about me, and it's semantic on a granular level about only my interests.&lt;br /&gt;
+&lt;br /&gt; &lt;br /&gt;&lt;br /&gt;
+If I send a tweet saying "I'm looking for a new car does anyone have any recommendations", I would be more than happy to see 'smart' user generated advertising recommendations based on my past tweets, mine the data of other people living Brooklyn who have tweeted about their car and deliver a tweet/ad based on those result leaving spammers lost in the noise. I'd also expect when I send a tweet saying 'I got a new car and love it!' that those car ads stop appearing and something else, relevant to only me, takes its place.&lt;br /&gt;
+&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;
+And it doesn't have to be advertising delivered on their site alone. One of the great successes of Twitter has been their APIs and the wonderful applications and sites that users have built with them. Why not build out an advertising or search API that delivers the latest micro level tags or ad links of users interests? There's a plethora of opportunities with this data, and if it's done right it becomes enticing and engaging, not annoying, irrelevant and outdated.&lt;/p&gt;
+
+&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=9HWRo"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=9HWRo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=MbZMO"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=MbZMO" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=pQO6o"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=pQO6o" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=3L6XO"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=3L6XO" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/oreilly/radar/atom/~4/478350826" height="1" width="1"/&gt;</content>
+<dc:source>http://www.oreillynet.com/pub/au/3619</dc:source>
+<dc:type>text</dc:type>
+<on:image />
+<feedburner:origLink>http://radar.oreilly.com/2008/12/twitter-gold-mine.html</feedburner:origLink></entry>
+
+<entry>
+<title>Catch 22: Too Big To Fail, Too Big To Succeed</title>
+<link rel="alternate" type="text/html" href="http://feeds.feedburner.com/~r/oreilly/radar/atom/~3/478166051/catch-22-too-big-to-fail-too-big-to-succeed.html" />
+<id>tag:radar.oreilly.com,2008://57.34563</id>
+
+<published>2008-12-07T23:44:13Z</published>
+<updated>2008-12-08T19:32:58Z</updated>
+
+<summary type="html">Hat in hand the U.S. Auto Industry lined up for their slice of government aid and it appears as of this posting that they will get the money they are asking for. These titans spent years hiding behind the “free market” shibboleth when convenient (the market wants gas guzzling SUV’s) and when punished by that same market we hear that...</summary>
+<author>
+<name>Joshua-Michéle Ross</name>
+<uri>http://radar.oreilly.com/josh</uri>
+</author>
+
+<category term="automotive" label="automotive" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="economy" label="economy" scheme="http://www.sixapart.com/ns/types#tag" />
+
+<content type="html" xml:lang="en" xml:base="http://radar.oreilly.com/">
+&lt;p&gt;Hat in hand the U.S. Auto Industry lined up for their slice of government aid and it appears as of this posting that they &lt;a href="http://www.cbsnews.com/stories/2008/12/06/business/main4651796.shtml"&gt;will get the money&lt;/a&gt; they are asking for.    These titans spent years hiding behind the &amp;#8220;free market&amp;#8221; shibboleth when convenient (the market wants gas guzzling SUV&amp;#8217;s) and when punished by that same market we hear that they are victims of factors outside their control and that they are &amp;#8220;too big to fail.&amp;#8221;  It has become a hackneyed expression precisely because it summarizes the situation so well; this is the privatization of profit and the socialization of loss.&lt;br&gt;&lt;br&gt;&lt;br /&gt;
+The very concept of &amp;#8220;Too Big To Fail&amp;#8221; points to a deeper truth:  the U.S.&amp;#8217;s auto industry does not operate within the  &amp;#8220;free market&amp;#8221; at all.  Far from it.    As their moniker suggests, the &amp;#8220;Big Three&amp;#8221; are an oligopoly with a long record of eschewing innovation (&lt;a href="http://en.wikipedia.org/wiki/Who_Killed_the_Electric_Car%3F"&gt;electric cars&lt;/a&gt;, hybrids etc.), killing off alternatives like &lt;a href="http://en.wikipedia.org/wiki/General_Motors_streetcar_conspiracy"&gt;mass transit&lt;/a&gt; and bullying public policy (lobbying against CAFÉ standards, environmental and tax policies [Hummer owners get a &lt;a href="http://www.salon.com/news/feature/2008/12/05/hummer/"&gt;$34K tax credit&lt;/a&gt;!],  the threat of relocating factories etc.) all in an effort to conform the not so &amp;#8220;free market&amp;#8221; to its lumbering non-strategies of pursuing short-term profit.   &lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that their short-term thinking has met with long-term reality we are faced with bailing them out.   Fair enough.  There are millions of jobs connected to the automobile industry.  But do we now trust these same institutions to deliver and execute the plan for a sustainable U.S. transportation industry?&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;If these are the flaws of the industry, consider their current leadership;  The CEOs of these failing behemoths flew in on corporate jets, asked for $25 billion dollars, brought literally not one shred of documentation on what they intended to do differently and couldn&amp;#8217;t explain how they arrived at the 25 billion dollar figure in the first place.  When asked if they would accept a $1 dollar per year salary (&lt;a href="http://www.forbes.com/2002/05/08/0508iacocca.html"&gt;Iacoca style&lt;/a&gt;) in exchange  responses from GM and Ford ranged from non-committal to sarcastic (&amp;#8220;I don&amp;#8217;t have a position on that today&amp;#8221; - Rick Wagoner of GM,  &amp;#8220;I think I am OK where I am today.&amp;#8221;  Ford&amp;#8217;s Alan Mulally who earns $22m per year).  &lt;br&gt;&lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;Oligopolies like The Big Three thrive on standardization, scale and market manipulation - &lt;a href="http://www.nytimes.com/2008/12/06/business/06motors.html?pagewanted=2&amp;em"&gt;not innovation&lt;/a&gt;.  It is precisely their structure, size and leadership DNA that I believe precludes them from any chance of successful innovation.  So there is the Catch 22.   They may be too big to fail - but they are too big, bloated and corrupt to succeed.   If we are the taxpayers funding the bailout, what are the alternatives?&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=ivvqo"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=ivvqo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=2v6AO"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=2v6AO" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=vgqso"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=vgqso" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=FtSDO"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=FtSDO" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/oreilly/radar/atom/~4/478166051" height="1" width="1"/&gt;</content>
+<dc:source>http://www.oreillynet.com/pub/au/3488</dc:source>
+<dc:type>text</dc:type>
+<on:image />
+<feedburner:origLink>http://radar.oreilly.com/2008/12/catch-22-too-big-to-fail-too-big-to-succeed.html</feedburner:origLink></entry>
+
+<entry>
+<title>Facebook Growth Regions and Gender Split</title>
+<link rel="alternate" type="text/html" href="http://feeds.feedburner.com/~r/oreilly/radar/atom/~3/474608200/facebook-growth-regions-and-ge.html" />
+<id>tag:radar.oreilly.com,2008://57.34511</id>
+
+<published>2008-12-04T12:00:00Z</published>
+<updated>2008-12-04T21:25:30Z</updated>
+
+<summary type="html">Since we began tracking Facebook demographics in late May, weekly growth has held steady, usually in the low single-digits on a percentage basis. More importantly, it's fair to say that the company has successfully expanded overseas. With close to 128M users, the share of U.S. users is down to around 30% from 35% in late May: Over the last three...</summary>
+<author>
+<name>Ben Lorica</name>
+<uri>http://radar.oreilly.com/ben/</uri>
+</author>
+
+<category term="facebook" label="facebook" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="hardnumbers" label="hard numbers" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="socialnetworking" label="social networking" scheme="http://www.sixapart.com/ns/types#tag" />
+
+<content type="html" xml:lang="en" xml:base="http://radar.oreilly.com/">
+&lt;p&gt;Since we began tracking &lt;a href="http://radar.oreilly.com/2008/05/facebook-demographics-age-and.html"&gt;Facebook demographics in late May&lt;/a&gt;, weekly growth has held steady, usually in the &lt;em&gt;low&lt;/em&gt; single-digits on a percentage basis.  More importantly, it's fair to say that the company has successfully expanded overseas. With close to 128M users, the share of U.S. users is down to around 30% from 35% in late May:&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;center&gt;&lt;img src="http://radar.oreilly.com/fbook_demo10.jpg" width="400" height="226" border="1" align="center" hspace="4" vspace="4" alt="pathint" title="fbook_demo10.jpg" /&gt;&lt;br /&gt;
+&lt;/center&gt;&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+Over the last three months, Facebook has added members across all regions, with the strongest growth coming from Europe, South America, and the Middle East/North Africa:&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;center&gt;&lt;img src="http://radar.oreilly.com/fbook_demo11.jpg" width="550" height="167" border="1" align="center" hspace="4" vspace="4" alt="pathint" title="fbook_demo11.jpg" /&gt;&lt;br /&gt;
+&lt;/center&gt;&lt;br /&gt;
+&lt;p&gt;&lt;p&gt;&lt;br /&gt;
+&lt;a href="http://radar.oreilly.com/fbook_demo12.jpg"&gt;In Europe&lt;/a&gt;, growth has been especially impressive in Italy and Spain. I'm not sure when the Italian translation of Facebook launched, but soon after, Italians &lt;a href="http://corinnadigennaro.com/2008/11/11/how-facebook-is-changing-italian-social-and-political-life/"&gt;started signing up in droves&lt;/a&gt;. The (crowdsourced) Spanish translation was completed within a month and launched in early 2008. I've read &lt;a href="http://www.telegraph.co.uk/scienceandtechnology/technology/3394840/How-Facebook-toppled-the-BBC.html"&gt;reports&lt;/a&gt; that users in Spain have used the site to connect with long lost relatives in Latin America. Venezuela, Argentina, and Uruguay were Facebook's fastest-growth countries &lt;a href="http://radar.oreilly.com/fbook_demo13.jpg"&gt;in South America&lt;/a&gt;. In late May, some Radar readers were highlighting Facebook's growing popularity in &lt;a href="http://radar.oreilly.com/2008/05/facebook-demographics-age-and.html#comment-2040818"&gt;Venezuela&lt;/a&gt;, &lt;a href="http://radar.oreilly.com/2008/05/facebook-demographics-age-and.html#comment-2040825"&gt;Argentina&lt;/a&gt;, and &lt;a href="http://radar.oreilly.com/2008/05/facebook-demographics-age-and.html#comment-2040819"&gt;Chile&lt;/a&gt;.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+I don't have any particular insight into how Facebook is growing &lt;a href="http://radar.oreilly.com/fbook_demo14.jpg"&gt;in the Middle East and North Africa&lt;/a&gt;, but the company has added lots of users in Tunisia, Morocco, and Turkey. (I encourage Radar readers from the region to share their thoughts in the comments.) &lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+Having grown up in Southeast Asia, I've been detecting more interest in Facebook among friends in the region. But for now Facebook still lags &lt;a href="http://www.alexa.com/data/details/traffic_details/friendster.com"&gt;Friendster&lt;/a&gt; and &lt;a href="http://www.alexa.com/data/details/traffic_details/multiply.com"&gt;Multiply&lt;/a&gt;. In fact Facebook has &lt;em&gt;far less&lt;/em&gt; users in &lt;strong&gt;all&lt;/strong&gt; of Asia than users from Canada! Similarly, the U.K. has more than &lt;em&gt;twice&lt;/em&gt; the number of Facebook users than all of Asia. Facebook has to contend with &lt;a href="http://www.alexa.com/data/details/traffic_details/cyworld.com"&gt;homegrown social networks&lt;/a&gt; and slightly different online habits: Asian internet users spend more time on gaming and &lt;a href="http://bit.ly/GFBW"&gt;instant messaging&lt;/a&gt;. But even with their relatively small user base and amidst a competitive environment, Facebook is growing &lt;a href="http://radar.oreilly.com/fbook_demo15.jpg"&gt;in Asia&lt;/a&gt; (they added 1.5M users from the region in the last 12 weeks). &lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+Another interesting tidbit about Facebook's recent growth, is that the fast-growing regions discussed above are adding teens (13-17) and college-age (18-25) users at a faster rate than North America.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;center&gt;&lt;img src="http://radar.oreilly.com/fbook_demo16.jpg" width="550" height="465" border="1" align="center" hspace="4" vspace="4" alt="pathint" title="fbook_demo16.jpg" /&gt;&lt;br /&gt;
+&lt;/center&gt;&lt;br /&gt;
+&lt;p&gt;&lt;p&gt;&lt;br /&gt;
+With a commanding share of college-age users in its home country, U.S. growth has been strongest among working age users (26-59). I was expecting stronger growth in the teen market (13-17), but teens remain the slowest growing group in the U.S.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;center&gt;&lt;img src="http://radar.oreilly.com/fbook_demo17.jpg" width="550" height="465" border="1" align="center" hspace="4" vspace="4" alt="pathint" title="fbook_demo17.jpg" /&gt;&lt;br /&gt;
+&lt;/center&gt;&lt;br /&gt;
+&lt;p&gt;&lt;p&gt;&lt;br /&gt;
+The Gender split has persisted: Females now outnumber Males, 51% to 44%. In late May the Female to Male split was 41% to 34%. The share of users who decline to state their gender dropped from 24% in late May to 5% in early December. &lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;center&gt;&lt;img src="http://radar.oreilly.com/fbook_demo18.jpg" width="400" height="226" border="1" align="center" hspace="4" vspace="4" alt="pathint" title="fbook_demo18.jpg" /&gt;&lt;br /&gt;
+&lt;/center&gt;&lt;br /&gt;
+&lt;p&gt;&lt;p&gt;&lt;br /&gt;
+That Females so outnumber Males may surprise people. While the Female/Male distribution has persisted over time, there is quite a bit of variation across regions. The Middle East/North Africa and Africa are the only regions where Male Facebook users outnumber Females.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;center&gt;&lt;img src="http://radar.oreilly.com/fbook_demo20.jpg" width="550" height="154" border="1" align="center" hspace="4" vspace="4" alt="pathint" title="fbook_demo20.jpg" /&gt;&lt;br /&gt;
+&lt;/center&gt;&lt;/p&gt;
+
+&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=qnATo"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=qnATo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=WLJ2O"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=WLJ2O" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=2V56o"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=2V56o" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=3fGMO"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=3fGMO" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/oreilly/radar/atom/~4/474608200" height="1" width="1"/&gt;</content>
+<dc:source>http://www.oreillynet.com/pub/au/2718</dc:source>
+<dc:type>text</dc:type>
+<on:image>http://radar.oreilly.com/2008/12/04/fbook_demo20.png</on:image>
+<feedburner:origLink>http://radar.oreilly.com/2008/12/facebook-growth-regions-and-ge.html</feedburner:origLink></entry>
+
+<entry>
+<title>Open Source Mobile Roundup</title>
+<link rel="alternate" type="text/html" href="http://feeds.feedburner.com/~r/oreilly/radar/atom/~3/474079429/open-source-mobile-roundup.html" />
+<id>tag:radar.oreilly.com,2008://57.34518</id>
+
+<published>2008-12-03T22:52:14Z</published>
+<updated>2008-12-03T22:54:25Z</updated>
+
+<summary type="html">Tim sent around a link to the VisionMobile report on open source technology in the mobile space, which I really enjoyed. It covers not just the software used at different layers in the stack, it also covers licensing and governance models. Strongly recommended....</summary>
+<author>
+<name>Nat Torkington</name>
+<uri>http://radar.oreilly.com/nat/</uri>
+</author>
+
+<category term="mobile" label="mobile" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="opensource" label="open source" scheme="http://www.sixapart.com/ns/types#tag" />
+
+<content type="html" xml:lang="en" xml:base="http://radar.oreilly.com/">
+&lt;p&gt;Tim sent around a link to &lt;a href="http://www.visionmobile.com/blog/2008/12/mapping-open-source-into-mobile-who-where-and-how/"&gt;the VisionMobile report on open source technology in the mobile space&lt;/a&gt;, which I really enjoyed.  It covers not just the software used at different layers in the stack, it also covers licensing and governance models.  Strongly recommended.&lt;/p&gt;
+
+&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=68UIo"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=68UIo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=1sBhO"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=1sBhO" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=8Auso"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=8Auso" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=LjwLO"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=LjwLO" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/oreilly/radar/atom/~4/474079429" height="1" width="1"/&gt;</content>
+<dc:source>http://www.oreillynet.com/pub/au/149</dc:source>
+<dc:type>text</dc:type>
+<on:image />
+<feedburner:origLink>http://radar.oreilly.com/2008/12/open-source-mobile-roundup.html</feedburner:origLink></entry>
+
+<entry>
+<title>Getting OpenID Into the Browser</title>
+<link rel="alternate" type="text/html" href="http://feeds.feedburner.com/~r/oreilly/radar/atom/~3/472913310/getting-openid-into-the-browse.html" />
+<id>tag:radar.oreilly.com,2008://57.34492</id>
+
+<published>2008-12-02T21:20:47Z</published>
+<updated>2008-12-03T23:25:58Z</updated>
+
+<summary type="html">Imagine if your web browser knew who you were on the web.  Just as you login to your computer, what if when you fired up your browser, it said "Hello Dave" and asked you to "unlock it" as well.  In doing so you become securely logged into your OpenID provider and as you move around the web your browser takes care of automatically logging you into the sites that you want to be, asking you about others, and helping you register with new ones using your OpenID.  Argue as much as you want about the details in making this happen, but I think it's hard to disagree that making it easier for people to manage and use their identity (or identities) online is a bad thing.</summary>
+<author>
+<name>David Recordon</name>
+<uri>http://radar.oreilly.com/davidr/</uri>
+</author>
+
+<category term="browsers" label="browsers" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="openid" label="openid" scheme="http://www.sixapart.com/ns/types#tag" />
+
+<content type="html" xml:lang="en" xml:base="http://radar.oreilly.com/">
+&lt;p&gt;Google Chrome did a smart thing: Less. They unified the search box and address bar, since that's what people do anyway.  That gives us back precious pixels for the only thing that's as important to an average web user as where they're going: &lt;strong&gt;Who they are&lt;/strong&gt;.  Identity belongs in the browser.  Don't just believe me, just this week ReadWriteWeb talks about &lt;a href="http://www.readwriteweb.com/archives/the_end_of_online_anonymity.php"&gt;The End of Online Anonymity&lt;/a&gt; and TechCrunch on how Facebook Connect is the &lt;a href="http://www.techcrunch.com/2008/11/30/facebook-google-myspace-data/"&gt;Biggest Battle Yet For Social Networks: You, Your Identity And Your Data On The Open Web&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As Web 2.0 took root, the ability to login to a site, store preferences and build a profile became ubiquitous.  Beyond reading news or blogs, it's fairly rare that you're on a site where you're either not logged in or don't have the ability to login.  The downside is that just about every site requires you to create a new account and have cookies to keep you logged in.  Thus when your cookie disappears, you &lt;strong&gt;have to login again&lt;/strong&gt;.  Maybe your browser's password manager eases this pain, but there are plenty of people that would be in a world of hurt if their browser every forgot all of their passwords (or they use a friend's computer).&lt;/p&gt;
+
+&lt;p&gt;If we remove passwords from the equation and instead use OpenID, there's the notion that upon visiting an OpenID enabled site (now numbering more than 25,000 across the web) you'll most likely submit a form telling that site about your OpenID.  I might go to &lt;a href="http://www.mapquest.com/"&gt;MapQuest&lt;/a&gt; and login by typing in my OpenID "http://www.davidrecordon.com/" or &lt;a href="http://ma.gnolia.com/signin/"&gt;Ma.gnolia&lt;/a&gt; and clicking a "Sign up with a Yahoo! ID" button.  These interactions, with various tweaks around them, are very much the status quo today.  If OpenID wishes to see true mainstream adoption, this will need to change.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://flickr.com/photos/daveman692/3077554701/"&gt;&lt;img src="http://farm4.static.flickr.com/3046/3077554701_27b4b4837f.jpg" style="float: right;" height="268" width="350" /&gt;&lt;/a&gt;
+Imagine if &lt;strong&gt;your web browser really knew who you were on the web&lt;/strong&gt;.  Just as you login to your computer, what if when you fired up your browser, it said "Hello Dave" and asked you to "unlock it" as well (&lt;a href="http://factoryjoe.com/"&gt;Chris Messina&lt;/a&gt; was quite influential in my thinking about it this way).  In doing so you become securely logged into your OpenID provider (or maybe more than one of them) and as you move around the web your browser takes care of automatically logging you into the sites that you want to be, asking you about others, and helping you register with new ones using your OpenID.  Argue as much as you want about the details in making this happen, but I think it's hard to disagree that making it easier for people to manage and use their identity (or identities) online is a bad thing.&lt;/p&gt;
+
+&lt;p&gt;There are a lot of proposals around how current OpenID interactions will change - &lt;a href="http://openid.net/2008/10/21/the-first-openid-user-experience-summit/"&gt;a great summit on OpenID usability&lt;/a&gt; was held a little over a month ago - and whether it be more one-click buttons, less buttons, bigger logos, or email addresses I think it's also worth &lt;strong&gt;looking at what it will take to really get the browser involved&lt;/strong&gt;.  This certainly isn't a new idea, every major browser has the ability to remember passwords and FireFox even has those pesky user profiles so that people could theoretically have different cookies, bookmarks and other settings.&lt;/p&gt;
+
+&lt;p&gt;In the internet identity space this isn't a new idea either.  &lt;a href="http://en.wikipedia.org/wiki/Information_Card"&gt;Information Cards&lt;/a&gt; (more widely known by Microsoft's CardSpace implementation in Windows) have credit card like rich desktop integration built using WS-* and SAML.  Dick Hardt's team up in Canada has built &lt;a href="http://www.sxipper.com/"&gt;Sxipper&lt;/a&gt; for FireFox which helps with both OpenID and normal web forms as well.  When I was working for VeriSign, we developed the &lt;a href="https://pip.verisignlabs.com/seatbelt.do"&gt;OpenID Seatbelt&lt;/a&gt; which is also a FireFox extension designed to make OpenID easier and prevent phishing by detecting OpenID enabled sites and your provider.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://extensions.flock.com/extensions/#openid"&gt;&lt;img src="https://extensions.flock.com/images/extensions/IDIBopenidforflock.jpg" style="float: left;" /&gt;&lt;/a&gt;
+Today, &lt;strong&gt;MySpace, Flock and Vidoop &lt;a href="http://news.cnet.com/8301-13577_3-10110901-36.html"&gt;released a prototype of their implementation toward this vision with OpenID for Flock&lt;/a&gt;&lt;/strong&gt;.  All three of these browser plugins help you manage your OpenIDs, detect when you're on an OpenID enabled site, and then make it easier to sign in.  To me, what Sxipper aspires to enable feels the most useful for a mainstream user.&lt;/p&gt;
+
+&lt;p&gt;OpenID for Flock is an add-on that polishes previous attempts of putting OpenID into a browser.  While the user experience and graphics are quite a bit better than what I helped build at VeriSign, it's lacking the features that help prevent phishing (making sure you're actually logging into your OpenID provider versus a phishing site that looks like it) which is a bit surprising given Vidoop's involvement.  That said, &lt;strong&gt;OpenID for Flock is Open Source&lt;/strong&gt; as part of &lt;a href="http://code.google.com/p/idib/"&gt;a project dubbed IDentity in the Browser (IDIB)&lt;/a&gt; which the same cannot be said for either Sxipper or VeriSign's OpenID Seatbelt.  Given that IDIB is Open Source and already written as a Flock add-on, I'd certainly expect to see it ported to FireFox and there be far more community support of it compared to the other add-ons.&lt;/p&gt;
+
+&lt;p&gt;So where do we go from here?  I don't know how to write great browser plugins so just doing it is out.  It's &lt;strong&gt;great to see Flock's direct involvement in this Open Source effort&lt;/strong&gt; as it shows browser vendors innovating and experimenting with how their own products must evolve to support identity.  Maybe this will cause the other browser vendors to think seriously about what they too could be doing in future versions to help make identity management easer and more secure on the web.&lt;/p&gt;
+
+&lt;p&gt;In my mind, &lt;strong&gt;&lt;a href="http://code.google.com/apis/gears/"&gt;Gears&lt;/a&gt; can help us get there&lt;/strong&gt;.  While it started as a project by Google to evolve web browsers faster and add needed features like offline support, it's grown beyond that with offline support now coming in HTML 5 and a new &lt;a href="http://code.google.com/apis/gears/api_geolocation.html"&gt;Geolocation API&lt;/a&gt;.  Today Gears runs on half a dozen different browser/platform combinations including FireFox, Internet Explorer, Safari, Chrome and Android.  If there was ever a developer platform to build an Open Source cross browser implementation of what OpenID support might look like, Gears seems like the place to do it. Not only does this mean that we'll need to write less code to have it work in multiple browsers, but ideally if it became mature enough maybe the Gears team would choose to ship OpenID support as well?  All of a sudden, the community could be down from a handful of browser plugins to one leading Open Source example.&lt;/p&gt;
+
+&lt;p&gt;What do you think?  Do you agree that identity is becoming as essential to a browser as location?  Should we content ourselves for issues like security to be relegated to a few dozen-pixel lock icon, or have Big-Red-Phishing-Warnings set a standard that important issues deserve significant real estate?  Really though, should the browser become more actively involved in how you use the web on a daily basis?&lt;/p&gt;
+
+
+
+&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=4pW1o"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=4pW1o" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=E3iCO"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=E3iCO" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=ZE9fo"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=ZE9fo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=BYWuO"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=BYWuO" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/oreilly/radar/atom/~4/472913310" height="1" width="1"/&gt;</content>
+<dc:source>http://www.oreillynet.com/pub/au/3602</dc:source>
+<dc:type>text</dc:type>
+<on:image>http://radar.oreilly.com/2008/12/03/openid-radar-150.jpg</on:image>
+<feedburner:origLink>http://radar.oreilly.com/2008/12/getting-openid-into-the-browse.html</feedburner:origLink></entry>
+
+<entry>
+<title>iTunes App Store: The First Five Months</title>
+<link rel="alternate" type="text/html" href="http://feeds.feedburner.com/~r/oreilly/radar/atom/~3/472411749/iphone-app-store-first-five-mo.html" />
+<id>tag:radar.oreilly.com,2008://57.34486</id>
+
+<published>2008-12-02T12:00:00Z</published>
+<updated>2008-12-02T21:56:07Z</updated>
+
+<summary type="html">Taking a cue from Raven's recent post announcing the 10,000 iPhone app milestone, I decided to update some charts from earlier posts on the U.S. iTunes app store. First, the weekly growth in the number of apps was slower in November: the number of apps grew less than 10% on a weekly basis for all of November. During the last...</summary>
+<author>
+<name>Ben Lorica</name>
+<uri>http://radar.oreilly.com/ben/</uri>
+</author>
+
+<category term="iphone" label="iphone" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="mobile" label="mobile" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="platform" label="platform" scheme="http://www.sixapart.com/ns/types#tag" />
+
+<content type="html" xml:lang="en" xml:base="http://radar.oreilly.com/">
+&lt;p&gt;Taking a cue from &lt;a href="http://radar.oreilly.com/2008/11/10000-iphone-apps.html"&gt;Raven's recent post&lt;/a&gt; announcing the 10,000 iPhone app milestone, I decided to update some charts from earlier posts on the &lt;strong&gt;U.S.&lt;/strong&gt; iTunes app store. First, the weekly growth in the number of apps was slower in November: the number of apps grew less than 10% on a weekly basis for all of November.  During the last week of November, there were close to 9,800 unique apps, 22% of which were free.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;center&gt;&lt;img src="http://radar.oreilly.com/iphone14.jpg" width="400" height="274" border="1" align="center" hspace="4" vspace="4" alt="pathint" title="iphone14.jpg" /&gt;&lt;br /&gt;
+&lt;/center&gt;&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+The average price of a Top 100 paid app &lt;a href="http://radar.oreilly.com/2008/10/iphone-app-store-top-paid-apps.html"&gt;continued to decline&lt;/a&gt;, falling to a little over $2.60 in the last week of November:&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;center&gt;&lt;img src="http://radar.oreilly.com/iphone15.jpg" width="400" height="238" border="1" align="center" hspace="4" vspace="4" alt="pathint" title="iphone15.jpg" /&gt;&lt;br /&gt;
+&lt;/center&gt;&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+Since high-priced top-sellers actually inflate the MEAN price, I created an &lt;a href="http://radar.oreilly.com/iphone16.jpg"&gt;alternate chart using the median&lt;/a&gt; (the decline in the MEDIAN price is even sharper). The corresponding &lt;a href="http://radar.oreilly.com/iphone18.jpg"&gt;price distribution&lt;/a&gt; continued its downward shift as it becomes harder for high-priced apps to crack the Top 100 paid apps list. &lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+Having more than doubled over the last two months, &lt;a href="http://radar.oreilly.com/2008/11/john-doerr-on-the-iphone-as-a.html"&gt;Gaming&lt;/a&gt; remains the largest category accounting for a quarter of all apps. The fastest growing categories were Education and Lifestyle.  &lt;em&gt;Medical&lt;/em&gt; is the newest app category and as of the end of November there were over 80 medical apps, the 10 most popular of which were free. Among Game apps, Racing, Music, and Sports were the &lt;a href="http://radar.oreilly.com/iphone21.jpg"&gt;fastest growing Game sub categories&lt;/a&gt;.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;center&gt;&lt;img src="http://radar.oreilly.com/iphone17.jpg" width="400" height="321" border="1" align="center" hspace="4" vspace="4" alt="pathint" title="iphone17.jpg" /&gt;&lt;br /&gt;
+&lt;/center&gt;&lt;br /&gt;
+&lt;p&gt;&lt;br&gt;&lt;br /&gt;
+There has been a &lt;a href="http://radar.oreilly.com/2008/11/john-doerr-on-the-iphone-as-a.html"&gt;slight increase&lt;/a&gt; in the proportion of Games priced at 99 cents or lower:&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;center&gt;&lt;img src="http://radar.oreilly.com/iphone19a.jpg" width="413" height="227" border="1" align="center" hspace="4" vspace="4" alt="pathint" title="iphone19a.jpg" /&gt;&lt;br /&gt;
+&lt;/center&gt;&lt;br /&gt;
+&lt;p&gt;&lt;br&gt;&lt;br /&gt;
+Finally, I computed the share of free apps by category and found that some of the smaller categories have a higher share of free apps. Social Networking apps tend to be apps designed to help users access social web sites from their iPhone, while News apps do the same for news/media sites. In both the Social Networking and News categories, the Free outnumber the Paid apps.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;center&gt;&lt;img src="http://radar.oreilly.com/iphone20.jpg" width="400" height="294" border="1" align="center" hspace="4" vspace="4" alt="pathint" title="iphone20.jpg" /&gt;&lt;br /&gt;
+&lt;/center&gt;&lt;br /&gt;
+&lt;p&gt;&lt;br&gt;&lt;br /&gt;
+I didn't revisit my &lt;a href="http://radar.oreilly.com/2008/11/itunes-app-store-categories.html"&gt;previous analysis&lt;/a&gt; of the top-selling apps, but I suspect not much has changed since my post at the beginning of November. Among the items I do hope to cover in the future is an analysis of app publishers.&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=XDcRo"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=XDcRo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=QH6QO"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=QH6QO" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=3CbUo"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=3CbUo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=HMsGO"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=HMsGO" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/oreilly/radar/atom/~4/472411749" height="1" width="1"/&gt;</content>
+<dc:source>http://www.oreillynet.com/pub/au/2718</dc:source>
+<dc:type>text</dc:type>
+<on:image>http://radar.oreilly.com/2008/12/02/iphone14.png</on:image>
+<feedburner:origLink>http://radar.oreilly.com/2008/12/iphone-app-store-first-five-mo.html</feedburner:origLink></entry>
+
+<entry>
+<title>Where 2.0 CFP Closes December 2nd</title>
+<link rel="alternate" type="text/html" href="http://feeds.feedburner.com/~r/oreilly/radar/atom/~3/471427114/where-20-cfp-closes-december-2.html" />
+<id>tag:radar.oreilly.com,2008://57.34483</id>
+
+<published>2008-12-01T15:42:17Z</published>
+<updated>2008-12-01T15:48:21Z</updated>
+
+<summary type="html"> The fifth Where 2.0 Call For Participation will be closing tomorrow (December 2nd). This year we're going to focus on location-aware technologies and their implications. The iPhone and Android have paved the way for a new breed of app and Where 2.0 will be focused on it. We won't be leaving mapping or geodata behind -- instead we'll look...</summary>
+<author>
+<name>Brady Forrest</name>
+<uri>http://radar.oreilly.com/brady/</uri>
+</author>
+
+<category term="geo" label="geo" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="web20" label="web 2.0" scheme="http://www.sixapart.com/ns/types#tag" />
+
+<content type="html" xml:lang="en" xml:base="http://radar.oreilly.com/">
+&lt;p&gt; 
+&lt;a href="http://radar.oreilly.com/200811140029.jpg" onclick="window.open('http://radar.oreilly.com/200811140029.jpg','popup','width=760,height=252,scrollbars=no,resizable=yes,toolbar=no,directories=no,location=no,menubar=no,status=yes,left=0,top=0');return false"&gt;&lt;img src="http://radar.oreilly.com/200811140029-tm.jpg" height="198" width="600" border="1" align="middle" hspace="4" vspace="4" alt="where 2.0 logo" title="where 2.0 logo" /&gt;&lt;/a&gt; 
+&lt;/p&gt;&lt;p&gt; 
+The fifth &lt;a href="http://en.oreilly.com/where2009/"&gt;Where 2.0&lt;/a&gt; &lt;a href="http://en.oreilly.com/where2009/public/cfp/45"&gt;Call For Participation&lt;/a&gt; will be closing tomorrow (December 2nd).  This year we're going to focus on location-aware technologies and their implications. The iPhone and Android have paved the way for a new breed of app and Where 2.0 will be focused on it. We won't be leaving mapping or geodata behind -- instead we'll look at how new mobile platforms are building on top of them.
+&lt;br /&gt;If you want to join us on stage submit your talk &lt;strong&gt;tomorrow.&lt;/strong&gt; 
+&lt;/p&gt;&lt;p&gt; 
+Where 2.0 will be held in San Jose, CA from May 19-21, 2009. You can watch all of &lt;a href="http://where.blip.tv/posts?view=archive&amp;amp;nsfw=dc"&gt;Where 2.0 2008 online&lt;/a&gt; -- for free.
+&lt;/p&gt;&lt;p&gt; 
+&lt;strong&gt;Some of the topics on the radar for Where 2.0 are:&lt;/strong&gt; 
+&lt;/p&gt;&lt;p&gt; 
+&lt;strong&gt;Location-Aware:&lt;/strong&gt; We will be exploring the implications of our new location-enabled lives, particularly around mobile phones and transponders. What feature is worth sharing your location?
+&lt;br /&gt;&lt;strong&gt; 
+&lt;br /&gt;Reality Mining:&lt;/strong&gt; With the increase in location data come more macro views of our lives. If you want to know where to go in San Francisco, for example, City Sense will show you which parts of the city are hopping. What does this type of information mean for consumers and the enterprise?
+&lt;br /&gt;&lt;strong&gt; 
+&lt;br /&gt;Augmented Reality:&lt;/strong&gt; The location-enabled phone will become a viewfinder for our world. Your phone will be able to tell you what you are looking at. It will also let you leave notes for the next person. What are other cool projects in the works?
+&lt;/p&gt;&lt;p&gt; 
+&lt;strong&gt;Immersive and 3D Imagery:&lt;/strong&gt; There's an imagery battle happening and consumers are winning. Our world is being documented to an unprecedented degree. While two device manufacturers acquired the mapping data companies, the internet giants have invested in cameras, planes, and satellites. Where will this take the location industry?
+&lt;/p&gt;&lt;p&gt; 
+&lt;strong&gt;Mapping Tables:&lt;/strong&gt; It's difficult to collaborate in person with an online slippy map; a paper spread out on a table or tacked to a wall is still better. Digital mapping tables are attempting to beat back paper once and for all. By providing everyone the same view and editing capabilities plus the ability to turn on and off layers, will they be able to do it?
+&lt;/p&gt;&lt;p&gt; 
+&lt;strong&gt;Government 2.0:&lt;/strong&gt; Governments are treasure troves of data. Increasingly they are releasing it online for free. &lt;span class="caps"&gt;ESRI&lt;/span&gt;'s release of ArcGIS has also aided the battle by providing municipalities with this ability. This data is aiding both the citizen and Government agencies. How is this critical information being put to use?
+&lt;/p&gt;&lt;p&gt; 
+&lt;strong&gt;Crowdsourcing:&lt;/strong&gt; Pioneered by &lt;span class="caps"&gt;OSM&lt;/span&gt;, the rest of the mapping industry is catching up. Let's examine where they are taking it.
+&lt;/p&gt;&lt;p&gt; 
+&lt;strong&gt;Disease Awareness:&lt;/strong&gt; Our increasingly connected world allows diseases to spread in record time. These same networks alert us to outbreaks. We're going to examine new geocentric approaches to epidemiology.
+&lt;/p&gt;&lt;p&gt; 
+&lt;strong&gt;Cartography:&lt;/strong&gt; Each map has a distinctive look and feel. What are the trends in design and user experience?
+&lt;/p&gt;&lt;p&gt; 
+&lt;span style="font-size:13pt;"&gt;&lt;strong&gt;Workshops&lt;/strong&gt;&lt;/span&gt; 
+&lt;br /&gt;Back by popular demand, Where 2.0 will have a full day of workshops where participants can dig deep into a range of issues and leave the conference armed with new tools and skills. Workshops are one hour and fifteen minutes in length and will be held on Tuesday, May 19. Topics we'd like to explore include, but are not exclusive to:
+&lt;/p&gt;&lt;p&gt; 
+&lt;strong&gt;Geo Support in Web Application Frameworks:&lt;/strong&gt; As people design their own mapping applications, there has been a need for built-in geo support. We're looking for workshops that teach about Mapstraction, Modest Maps, Open Layers, GeoDjango, GeoRuby, MapCruncher, and other tools.
+&lt;/p&gt;&lt;p&gt; 
+&lt;strong&gt;Mapping APIs:&lt;/strong&gt; The location space would not have gotten as far as it has today without all of the innovation in the mapping &lt;span class="caps"&gt;API&lt;/span&gt; space. How can you test the limits of these free resources?
+&lt;/p&gt;&lt;p&gt; 
+&lt;strong&gt;GeoTargeting:&lt;/strong&gt; Knowing users' locations has never been more important. Identifying it accurately can be difficult and expensive. What are the best methods?
+&lt;/p&gt;&lt;p&gt; 
+&lt;strong&gt;Privacy Implications:&lt;/strong&gt; As you are collecting user data, keeping track of your users, or collecting geodata, are you aware of the relevant laws? What would you teach others?
+&lt;/p&gt;&lt;p&gt; 
+&lt;strong&gt;GeoBrowsers:&lt;/strong&gt;  Google Earth and &lt;span class="caps"&gt;NASA&lt;/span&gt; WorldWind are both amazing geobrowsers. How can you get the most out of them?
+&lt;/p&gt;&lt;p&gt; 
+&lt;strong&gt;Data Management:&lt;/strong&gt; Geo applications work with massive amounts of data. What are the tools, tips, and tricks that can be used to manage it?
+&lt;/p&gt;&lt;p&gt; 
+&lt;strong&gt;Protocols and Formats:&lt;/strong&gt; GeoRSS, &lt;span class="caps"&gt;GML&lt;/span&gt;, KML, &lt;span class="caps"&gt;EXIF&lt;/span&gt;, Microformats, Geo OpenSearch. Which formats are on the way in and which ones are on the way out?
+&lt;/p&gt;&lt;p&gt; 
+These are just some of the technologies and transformations we've noticed and represent just the starting point for the program. While we'd like you to tap into the theme as your inspiration in writing your proposal, feel free to wander. What are you working on that will change the world, or at least the world you're in? What project is bringing you pleasure, or teasing your brain? Surprise and delight us; shake us out of our assumptions. We're angling for shorter talks with longer breaks so you'll have more time for one-on-one interactions.
+&lt;/p&gt; 
+
+&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=SPzZo"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=SPzZo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=9oZrO"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=9oZrO" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=RZeNo"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=RZeNo" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=Y0luO"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=Y0luO" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/oreilly/radar/atom/~4/471427114" height="1" width="1"/&gt;</content>
+<dc:source>http://www.oreillynet.com/pub/au/2649</dc:source>
+<dc:type>text</dc:type>
+<on:image />
+<feedburner:origLink>http://radar.oreilly.com/2008/12/where-20-cfp-closes-december-2.html</feedburner:origLink></entry>
+
+<entry>
+<title>10,000 iPhone Apps</title>
+<link rel="alternate" type="text/html" href="http://feeds.feedburner.com/~r/oreilly/radar/atom/~3/470886952/10000-iphone-apps.html" />
+<id>tag:radar.oreilly.com,2008://57.34476</id>
+
+<published>2008-11-30T18:42:49Z</published>
+<updated>2008-12-01T03:48:27Z</updated>
+
+<summary type="html">Two services that track the iPhone App Store - AppShopper and 148Apps, announced on Saturday that there have been over 10,000 iPhone applications released on the US App Store. The number of currently available applications is just shy of 10,000 due to discontinued apps and a few that have been pulled by Apple (e.g. trademark disputes, terms of service violations,...</summary>
+<author>
+<name>Raven Zachary</name>
+<uri>http://radar.oreilly.com/raven</uri>
+</author>
+
+<category term="apple" label="apple" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="iphone" label="iphone" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="mobile" label="mobile" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="ravenzachary" label="raven zachary" scheme="http://www.sixapart.com/ns/types#tag" />
+
+<content type="html" xml:lang="en" xml:base="http://radar.oreilly.com/">
+&lt;p&gt;Two services that track the iPhone App Store - &lt;a href="http://appshopper.com/blog/2008/11/29/app-store-reaches-10000-apps-sorta/"&gt;AppShopper&lt;/a&gt; and &lt;a href="http://148apps.com/10000/"&gt;148Apps&lt;/a&gt;, announced on Saturday that there have been over 10,000 iPhone applications released on the US App Store. The number of currently available applications is just shy of 10,000 due to discontinued apps and a few that have been pulled by Apple (e.g. trademark disputes, terms of service violations, etc.). &lt;a href="http://www.appsherpa.com/"&gt;AppSherpa&lt;/a&gt; believes that it will only be a few more days until there are 10,000 iPhone applications available for sale on the US App Store. Total international App Store numbers are not being tracked by anyone outside of Apple, as far as I can tell.&lt;/p&gt;
+
+&lt;p&gt;Quick stats highlights from the first 10,000 iPhone applications:&lt;/p&gt;
+
+&lt;ul&gt; 
+&lt;li&gt; Games are the leading category, accounting for one in four of total applications. This reinforces Apple's recent marketing campaign around games.
+&lt;li&gt; $0.99 is the most common price point, although one in four applications are free.
+&lt;li&gt; The most expensive application currently for sale is &lt;a href="http://lextechlabs.com/ira"&gt;iRa&lt;/a&gt; by Lextech Labs for $899.99. This is video surveillance application that integrates with a number of CCTV systems.
+&lt;li&gt; The entire iPhone App Store catalog could be purchased for just over $30,000, although there's only room to fit 129 of them on your iPhone or iPod touch at any given time (148 apps in total, but that includes the default applications from Apple).
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href="http://www.oreillynet.com/pub/au/2718"&gt;Ben Lorica&lt;/a&gt; and &lt;a href="http://www.oreillynet.com/pub/au/2717"&gt;Roger Magoulas&lt;/a&gt; in the Market Research Group at O'Reilly Media have been doing an excellent job tracking the iPhone applications market. You can see some of this work on &lt;a href="http://radar.oreilly.com/ben/"&gt;Ben's Radar posts&lt;/a&gt;. I am looking forward to seeing an update from Roger and Ben now that we're crossed the 10,000 mark.&lt;/p&gt;
+
+&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=Hly3n"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=Hly3n" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=fIzuN"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=fIzuN" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=C008n"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=C008n" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=cH1fN"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=cH1fN" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/oreilly/radar/atom/~4/470886952" height="1" width="1"/&gt;</content>
+<dc:source>http://www.oreillynet.com/pub/au/3516</dc:source>
+<dc:type>text</dc:type>
+<on:image />
+<feedburner:origLink>http://radar.oreilly.com/2008/11/10000-iphone-apps.html</feedburner:origLink></entry>
+
+<entry>
+<title>Data Center Power Efficiency</title>
+<link rel="alternate" type="text/html" href="http://feeds.feedburner.com/~r/oreilly/radar/atom/~3/469847251/data-center-power-efficiency.html" />
+<id>tag:radar.oreilly.com,2008://57.34470</id>
+
+<published>2008-11-29T23:23:56Z</published>
+<updated>2008-12-09T00:17:15Z</updated>
+
+<summary type="html">James Hamilton is one of the smartest and most accomplished engineers I know. He now leads Microsoft's Data Center Futures Team, and has been pushing the opportunities in data center efficiency and internet scale services both inside &amp;amp; outside Microsoft. His most recent post explores misconceptions about the Cost of Power in Large-Scale Data Centers: I&amp;#8217;m not sure how many...</summary>
+<author>
+<name>Jesse Robbins</name>
+<uri>http://radar.oreilly.com/jesse/</uri>
+</author>
+
+<category term="cloudcomputing" label="cloud computing" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="energy" label="energy" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="jameshamilton" label="James Hamilton" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="microsoft" label="microsoft" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="operations" label="operations" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="performance" label="performance" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="platforms" label="platforms" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="utilities" label="utilities" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="utilitycomputing" label="utility computing" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="velocity" label="velocity" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="velocity09" label="velocity09" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="web20" label="web2.0" scheme="http://www.sixapart.com/ns/types#tag" />
+
+<content type="html" xml:lang="en" xml:base="http://radar.oreilly.com/">
+&lt;p&gt;&lt;a href="http://research.microsoft.com/~jamesrh/"&gt;James Hamilton&lt;/a&gt; is one of the smartest and most accomplished engineers I know. He now leads Microsoft's Data Center Futures Team, and has been pushing the opportunities in data center efficiency and internet scale services both inside &amp;amp; outside Microsoft. His most recent post explores misconceptions about the &lt;a href="http://perspectives.mvdirona.com/2008/11/28/CostOfPowerInLargeScaleDataCenters.aspx"&gt;Cost of Power in Large-Scale Data Centers&lt;/a&gt;:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;a href="http://research.microsoft.com/~jamesrh/"&gt;&lt;img src="http://radar.oreilly.com/jameshamilton.jpg" width="120" height="148" alt="jameshamilton.jpg" style="float:right;" /&gt;&lt;/a&gt;
+
+&lt;p&gt;  &lt;p&gt;&lt;em&gt;I&amp;#8217;m not sure how many times I&amp;#8217;ve read or been told that power is the number one cost in a modern mega-data center, but it has been a frequent refrain. And, like many stories that get told and retold, there is an element of truth to the it. Power is absolutely the fastest growing operational costs of a high-scale service. Except for server hardware costs, power and costs functionally related to power usually do dominate.&lt;/em&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;  &lt;p&gt;&lt;em&gt;However, it turns out that power alone itself isn&amp;#8217;t anywhere close to the most significant a cost. Let&amp;#8217;s look at this more deeply. If you amortize power distribution and cooling systems infrastructure over 15 years and amortize server costs over 3 years, you can get a fair comparative picture of how server costs compare to infrastructure (power distribution and cooling). But how to compare the capital costs of server, and power and cooling infrastructure with that monthly bill for power?&lt;/em&gt;&lt;/p&gt;&lt;/p&gt;
+
+&lt;p&gt;  &lt;p&gt;The approach I took is to convert everything into a monthly charge. [...]&lt;br /&gt;&lt;/p&gt;&lt;br /&gt;
+&lt;/blockquote&gt;&lt;br /&gt;
+&lt;div style="text-align: justify;"&gt;&lt;br /&gt;
+  &lt;a href="http://perspectives.mvdirona.com/2008/11/28/CostOfPowerInLargeScaleDataCenters.aspx"&gt;&lt;img src="http://radar.oreilly.com/JamesHamilton-datacenter.png" width="480" height="267" alt="James Hamilton explains Datacenter Costs" /&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;/div&gt;&lt;br /&gt;
+&lt;div style="text-align: justify;"&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;br /&gt;
+&lt;/div&gt;&lt;br /&gt;
+&lt;div style="text-align: justify;"&gt;&lt;br /&gt;
+  [&lt;a href="http://perspectives.mvdirona.com/2008/11/28/CostOfPowerInLargeScaleDataCenters.aspx"&gt;link&lt;/a&gt;]&lt;br /&gt;
+&lt;/div&gt;&lt;br /&gt;
+&lt;div style="text-align: justify;"&gt;&lt;br /&gt;
+  &lt;br /&gt;&lt;br /&gt;
+&lt;/div&gt;&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=orFEn"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=orFEn" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=bJRdN"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=bJRdN" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=adaYn"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=adaYn" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=tbkzN"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=tbkzN" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/oreilly/radar/atom/~4/469847251" height="1" width="1"/&gt;</content>
+<dc:source>http://www.oreillynet.com/pub/au/3579</dc:source>
+<dc:type>text</dc:type>
+<on:image />
+<feedburner:origLink>http://radar.oreilly.com/2008/11/data-center-power-efficiency.html</feedburner:origLink></entry>
+
+<entry>
+<title>Why I Love Twitter</title>
+<link rel="alternate" type="text/html" href="http://feeds.feedburner.com/~r/oreilly/radar/atom/~3/469659523/why-i-like-twitter.html" />
+<id>tag:radar.oreilly.com,2008://57.34466</id>
+
+<published>2008-11-29T20:59:09Z</published>
+<updated>2008-12-01T18:26:21Z</updated>
+
+<summary type="html">If you care what I think, you know that Twitter is just about the best way to learn what I'm paying attention to. I pass along tidbits of O'Reilly news, interesting reading from mailing lists and blogs I follow, and of course, tidbits from the twitterers I'm following. These are all the things I could never find time to put...</summary>
+<author>
+<name>Tim O'Reilly</name>
+<uri>http://tim.oreilly.com/</uri>
+</author>
+
+<category term="facebook" label="facebook" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="socialgraph" label="social graph" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="twitter" label="twitter" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="web20" label="web2.0" scheme="http://www.sixapart.com/ns/types#tag" />
+
+<content type="html" xml:lang="en" xml:base="http://radar.oreilly.com/">
+&lt;p&gt;If you care what I think, you know that Twitter is just about the best way to learn &lt;a href=http://twitter.com/timoreilly&gt;what I'm paying attention to&lt;/a&gt;.  I pass along tidbits of O'Reilly news, interesting reading from mailing lists and blogs I follow, and of course, tidbits from the twitterers I'm following.  These are all the things I could never find time to put on my blog, but that I spray via email like a firehose at editors, conference planners, and researchers within O'Reilly.  A lot of my job is, as we say, "redistributing the future" - following interesting people, and passing on what I learn to others.  And twitter is an awesome tool for doing just that.  &lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+Like a lot of people, I tried out Twitter early on, but didn't stick to it. Most of the early twitter conversation was personal, and I didn't have time for it.  I came back when I noticed that about 5000 people were following my non-existent updates, waiting for me to say something.  With that many listeners, I thought I'd better oblige.  (There are now close to 16,000.)  I soon realized that &lt;a href=http://radar.oreilly.com/research/twitter-report.html&gt;Twitter has grown up to become a critical business tool&lt;/a&gt;, ideal for following the latest news, tracking the ideas and whereabouts of people who will shape the future of technology, and sharing my own thoughts and attention stream.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+I thought I should outline here some of the specific things I find so compelling about Twitter, with suggestions about architectural features to be emulated by other internet services.  &lt;br /&gt;
+&lt;ol&gt;&lt;br /&gt;
+&lt;li&gt;&lt;strong&gt;Twitter is simple.&lt;/strong&gt; Twitter does one small thing, and does it well. Folks like &lt;a href=http://twitter.com/scobleizer&gt;Robert Scoble&lt;/a&gt; sing the praises of Friendfeed, which you could think of as twitter++. After all, it's got comments and aggregation of data from multiple services. But despite its powerful premise, Friendfeed hasn't dented Twitter's growth.  Personally, I don't have time to wade through the comments; for me, Twitter is about quick hits, not about extended discussion.  And while I love the promise of service aggregation, I tend to think that trying to marry it to commenting obscures its potential.  Less is more. New services like &lt;a href=http://www.peoplebrowsr.com&gt;peoplebrowsr&lt;/a&gt; are reframing service aggregation in a richer way, as a way of learning more about the people you follow, browsing the social graph. (Peoplebrowsr is still in alpha, but I think it has real potential as a social graph explorer, rather than as yet another people feed-reader.)&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;li&gt;&lt;strong&gt;Twitter works like people do&lt;/strong&gt;.  If I'm interested in someone, I don't have to ask their permission to follow them.  I don't have to ask if they will be my friend: that is something that evolves naturally over time. If you're a public figure like I am, the metaphor of mutual "friending" is truly broken.  I get tens of thousands of friend requests from people I don't know.  Accepting would make it impossible for me to use a social tool to keep in touch with my real friends.  Friend groups don't really help.  &lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+Twitter's brilliant social architecture means that anyone can follow me, and I can follow anyone else (unless they want to keep their updates private.)  Gradually, through repeated contact, we become friends.  @ replies that can only be seen by people followed by both parties to a conversation create a natural kind of social grouping, as well as social group extensibility, as I gradually get more and more visibility into new people that my friends already know. Meanwhile, truly private direct messages are also supported.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+I don't know who first used the term "ambient intimacy" but it's a great description of what begins to happen on Twitter. I know not just what people are thinking about or reading, but enough about what they are doing that our relationship deepens, just like real-world friendships.  People who follow me on Twitter learn that I'm making jam or pies, or gardening or riding my bike or feeding the horses, things that I'd never (or rarely, since I'm doing it here) share on my blog.  I know a lot more about many of my professional contacts that makes them more into friends. And in the case of my family, who keep their updates private and visible only to a limited group of real friends, we can keep in touch in small ways that mean a lot.  I get special moments of my wife or daughters' day that we might not have shared otherwise.  It's truly lovely.&lt;br /&gt;
+&lt;li&gt;&lt;strong&gt;Twitter cooperates well with others.&lt;/strong&gt; Rather than loading itself down with features, it lets others extend its reach.  There are dozens of powerful third-party interface programs; there are hundreds of add-on sites and tools.  Twitter even lets competitors (like FriendFeed or Facebook) slurp its content into their services.  But instead of strengthening them, it seems to strengthen Twitter. It's the new version of embrace and extend: inject and take over.  (Scoble recently noticed that &lt;a href=http://twitter.com/Scobleizer/statuses/1027031924&gt;60%+ of his friends' updates on Facebook actually came from twitter&lt;/a&gt;.   And as John Battelle noted in &lt;a href="http://twitter.com/johnbattelle/statuses/1029764073"&gt;a recent tweet&lt;/a&gt;, "I noticed now that my FBook status is updated with Twitter, I get responses in Fbook, but would like to see them here."  It might seem like a strength for Facebook to allow Twitter to update its status feed, but not the other way around, but I think Facebook will one day realize that Twitter has taken them over....)&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;li&gt;&lt;strong&gt;Twitter transcends the web&lt;/strong&gt;.  Like all of the key internet services today, Twitter is equally at home on the mobile phone.  Even on the PC, I find myself using a separate client (Twhirl is an Adobe Air program) that provides a rich, alternate interface.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;li&gt;&lt;strong&gt;Twitter is user-extensible.&lt;/strong&gt;The @syntax for referring to users, hashtags, and whatever you call the use of $ as a special symbol for reference to financial instruments, were all user-generated innovations that, because of Twitter's simplicity, allowed for third party services to be layered not just on the API, but on the content.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+&lt;li&gt;&lt;strong&gt;Twitter evolves quickly.&lt;/strong&gt;  Perhaps because its features are so minimal, new user behaviors seem to propagate across Twitter really quickly.  It's a bit like the reason that fruit flies are used for genetic research: the short lifespan compresses the time for mutations to take hold.  Perhaps a better analogy would be the speed of cultural evolution among humans compared to biological evolution.  The most fascinating evolution happening on Twitter isn't an evolution of the software, but an evolution in user behavior and in the types of data that are being shared.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+I saw this myself with retweeting, a behavior I picked up not from Twitter itself but from &lt;a href=http://www.twhirl.org/&gt;twhirl&lt;/a&gt;, the Twitter client I use.  Because Twhirl actually has a button for retweeting, it seemed the most natural thing in the world to do it.  I became one of the most prolific retweeters, figuring that I have more followers than most of the people I know, and that it would be good form to pass on the best of what they post. But it's fascinating to see the growth of retweeting by others, even those not using twhirl.&lt;br /&gt;
+&lt;/ol&gt;&lt;br /&gt;
+In many ways, &lt;a href=http://books.google.com/books?client=firefox-a&amp;id=poFQAAAAMAAJ&amp;dq=unix+programming+environment&amp;q=simple+tools&amp;pgis=1#search&gt;Twitter is a re-incarnation of the old Unix philosophy of simple, cooperating tools&lt;/a&gt;. The essence of Twitter is its constraints, the things it doesn't do, and the way that its core services aren't bound to a particular interface.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+It strikes me that many of the programs that become enduring platforms have these same characteristics.  Few people use the old TCP/IP-based applications like telnet and ftp any more, but TCP/IP itself is ubiquitous. No one uses the mail program any more, but all of us still use email. No one uses Tim Berners-Lee's original web server and browser any more. Both were superseded by independent programs that used his core innovations: http and html. &lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+What's different, of course, is that Twitter isn't just a protocol.  It's also a database.  And that's the old secret of Web 2.0, &lt;a href=http://www.google.com/search?q=data+is+the+intel+inside&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a&gt;Data is the Intel Inside&lt;/a&gt;.  That means that they can let go of controlling the interface.  The more other people build on Twitter, the better their position becomes. &lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+There's a real lesson to Facebook here about giving other services (like Twitter) access to their social graph.  They have the best one going, but because they try to keep users coming back to their interface, and even the applications built on their service have to live in Facebook, they end up as a ghetto rather than a true internet service.  It's the data, not the interface!  Let other people use your data, build on it, and it will still belong to you. Hold it too tight, and they will compete with it.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+Lots more to say, but the beach is calling on this sunny Saturday.&lt;/p&gt;
+
+&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=RDIDn"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=RDIDn" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=TayUN"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=TayUN" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=5hcEn"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=5hcEn" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=ZbohN"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=ZbohN" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/oreilly/radar/atom/~4/469659523" height="1" width="1"/&gt;</content>
+<dc:source>http://www.oreillynet.com/pub/au/27</dc:source>
+<dc:type>text</dc:type>
+<on:image>http://radar.oreilly.com/2008/12/01/twitter_logo-150.png</on:image>
+<feedburner:origLink>http://radar.oreilly.com/2008/11/why-i-like-twitter.html</feedburner:origLink></entry>
+
+<entry>
+<title>Put change.gov Under Revision Control!</title>
+<link rel="alternate" type="text/html" href="http://feeds.feedburner.com/~r/oreilly/radar/atom/~3/468668173/change-gov-revision-control.html" />
+<id>tag:radar.oreilly.com,2008://57.34279</id>
+
+<published>2008-11-28T19:16:57Z</published>
+<updated>2008-11-28T19:52:07Z</updated>
+
+<summary type="html">Last week, the New York Times wrote about Changes at change.gov: The policy section of the transition site was removed without notice just days after Change.gov went live shortly after the election. At the time a spokesman for the Obama-Biden transition effort said they were “re-tooling” it. There was an almost instantaneous outcry from bloggers and other advocates of transparency...</summary>
+<author>
+<name>Tim O'Reilly</name>
+<uri>http://tim.oreilly.com/</uri>
+</author>
+
+<category term="opengovernment" label="open government" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="web20" label="web2.0" scheme="http://www.sixapart.com/ns/types#tag" />
+
+<content type="html" xml:lang="en" xml:base="http://radar.oreilly.com/">
+&lt;p&gt;Last week, the New York Times wrote about &lt;a href=http://thecaucus.blogs.nytimes.com/2008/11/18/changes-at-changegov-return-of-the-agenda/&gt;Changes at change.gov&lt;/a&gt;: &lt;br /&gt;
+&lt;blockquote&gt;&lt;br /&gt;
+The policy section of the transition site was removed without notice just days after Change.gov went live shortly after the election. At the time a spokesman for the Obama-Biden transition effort said they were &amp;#8220;re-tooling&amp;#8221; it.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+There was an almost instantaneous outcry from bloggers and other advocates of transparency in government who noticed disappearance. At least one site &lt;a href=http://notatypewriter.com/Obama-ChangeGov/&gt;posted a complete archive of the old Agenda pages&lt;/a&gt;. (Increasing transparency, by the way, is a key feature of Mr. Obama&amp;#8217;s government reform agenda, &lt;a href=http://www.change.gov/agenda/ethics_agenda/&gt;according to the site&amp;#8217;s &amp;#8220;Ethics&amp;#8221; page&lt;/a&gt;.)&lt;br /&gt;
+&lt;/blockquote&gt;&lt;br /&gt;
+The changes, as it turned out, were mostly to tone down the partisan politics of the policy documents as published during the campaign.  But the lesson remains: when public documents can be changed without notice, it's essential for the public to be able to see what changed, and why.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+There's a profound and simple tool that the Obama administration can use to improve government transparency.  It's something that's enabled worldwide collaboration among software developers, and whose relevance for content development has been definitively demonstrated by wikipedia:  Revision control. Not only does revision control allow a community to work independently on a common project, it makes it possible to review the changes.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+There's a primitive form of revision control in word processing products like Microsoft Word, but we need more than that, especially for documents that bring together the work of multiple independent authors.  For change.gov, the wikipedia model might work: logging of every change, with only authorized participants allowed to make changes, but everyone (the public) able to review and comment on associated discussion pages.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+The real holy grail, of course, would be to provide revision control on all government regulations, and eventually, on legislation.  This would no doubt be fought tooth and nail by lobbyists who don't want their fingerprints on the final result, but that's precisely why it would be such a breakthrough.  And that's also why I suggest that the Obama team start with change.gov: demonstrate that the system works, that it has enormous benefits in transparency, and work from there.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+Of course, there are major technical and workflow obstacles.  Many of the documents in question are probably worked on independently as Microsoft Office files, with bulk merges that obscure the history.  What we really need are distributed revision control tools. There's a lot of good work happening in this area in the software development community; it would be fascinating to see it extended to collaborative document development. (Of course, shared editing a la Google Docs is coming to Microsoft Office as well, so perhaps the point of leverage is for Google to improve the revision control capabilities in Google Docs, starting an arms race with Microsoft.  Once the tools are in place, the social pressure to use them has a point of leverage.)&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+Like so many things that go under the rubric of "change," I'm sure that there would be many complications to this proposal, many problems I haven't thought of. Many current assumptions and processes would need to be challenged, and some of the challenges would take us down dead ends. But that's what change is all about.  If it was just like the present, it wouldn't be change.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+I'd love your thoughts both on the general proposal and specific ideas for implementation.&lt;br /&gt;
+&lt;p&gt;&lt;br /&gt;
+P.S. I wrote on this same subject about a year and a half ago, in a post entitled &lt;a href=http://radar.oreilly.com/archives/2007/07/why-congress-ne.html&gt;Why Congress Needs a Version Control System&lt;/a&gt;. It was &lt;a href=http://www.red-bean.com/kfogel/&gt;Karl Fogel&lt;/a&gt; who first put this idea into my head, and that post explains his thinking.  There are also some comments there from 2007 that may provide more grist for the discussion.&lt;/p&gt;
+
+&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=ZmQBn"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=ZmQBn" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=y6YXN"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=y6YXN" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=rvfEn"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=rvfEn" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=P6SdN"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=P6SdN" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/oreilly/radar/atom/~4/468668173" height="1" width="1"/&gt;</content>
+<dc:source>http://www.oreillynet.com/pub/au/27</dc:source>
+<dc:type>text</dc:type>
+<on:image />
+<feedburner:origLink>http://radar.oreilly.com/2008/11/change-gov-revision-control.html</feedburner:origLink></entry>
+
+<entry>
+<title>My Web Doesn't Like Your Enterprise, at Least While it's More Fun</title>
+<link rel="alternate" type="text/html" href="http://feeds.feedburner.com/~r/oreilly/radar/atom/~3/465012485/building-the-legacy-systems-of.html" />
+<id>tag:radar.oreilly.com,2008://57.34284</id>
+
+<published>2008-11-25T13:00:00Z</published>
+<updated>2008-12-01T18:42:28Z</updated>
+
+<summary type="html">The other day Jesse posted a call for participation for the next Velocity Web Operations Conference. My background is in the enterprise space, so, despite Velocity's web focus, I wondered if there might not be interest in a bit of enterprise participation. After all, enterprise data centers deal with the same "Fast, Scaleable, Efficient, and Available" imperatives. I figured there...</summary>
+<author>
+<name>Jim Stogdill</name>
+<uri>http://radar.oreilly.com/jims</uri>
+</author>
+
+<category term="operations" label="operations" scheme="http://www.sixapart.com/ns/types#tag" />
+<category term="web20" label="web2.0" scheme="http://www.sixapart.com/ns/types#tag" />
+
+<content type="html" xml:lang="en" xml:base="http://radar.oreilly.com/">
+&lt;p&gt;The other day Jesse posted a call for participation for the next &lt;a href="http://radar.oreilly.com/2008/11/velocity-2009-themes-ideas-cfp.html"&gt;Velocity Web Operations Conference&lt;/a&gt;.  My background is in the enterprise space, so, despite Velocity's web focus, I wondered if there might not be interest in a bit of enterprise participation.  After all, enterprise data centers deal with the same &lt;em&gt;"Fast, Scaleable, Efficient, and Available"&lt;/em&gt; imperatives.  I figured there might be some room for the two communities to learn from each other.  So, I posted to the internal Radar author's list to see what everyone else thought.&lt;/p&gt;
+
+&lt;p&gt;Mostly silence.  Until &lt;a href="http://"&gt;Artur&lt;/a&gt; replied with this quote from one of his friends employed at a large enterprise: "What took us a weekend to do, has taken 18 months here."  That concise statement seems to sum up the view of the enterprise, and I'm not surprised.  For nearly six years I've been swimming in the spirit-sapping molasses that is the Department of Defense IT Enterprise so I'm quite familiar with the sentiment.  &lt;a href="http://limnthis.typepad.com/limn_this/2008/08/why-we-work-and-why-we-would-work-harder.html"&gt;I often express it myself&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;We've had some of this conversation before at Radar.  In his post on &lt;a href="http://radar.oreilly.com/2008/06/web-20-is-from-mars-enterprise.html"&gt;Enterprise Rules&lt;/a&gt;, Nat used contrasting frames of reference to describe the web as your loving dear old API-provisioning Dad, while the enterprise is the belt-wielding standing-in-the-front-door-when-you-come-home-after-curfew step father.  &lt;/p&gt;
+
+&lt;p&gt;While I agree that the enterprise is about control and the web is about emergence (&lt;a href="http://radar.oreilly.com/2008/07/user-mediated-transenterprisew.html"&gt;I've made the same argument here at Radar&lt;/a&gt;), I don't think this negative characterization of the enterprise is all that useful.  It seems to imply that the enterprise's orientation toward control springs fully formed from the minds of an army of petty controlling middle managers.  I don't think that's the case.&lt;/p&gt;
+
+&lt;p&gt;I suspect it's more likely the result of large scale system dynamics, where the culture of control follows from other constraints.  If &lt;a href="http://en.wikipedia.org/wiki/Multiverse"&gt;multiverse&lt;/a&gt; advocates are right and there are infinite parallel universes, I bet most of them have IT enterprises just like ours; at least in those shards that have similar corporate IT boundary conditions.  Once you have GAAP, Sarbox, domain-specific regulation like HIPAA, quarterly expectations from "The Street," decades of MIS legacy, and the talent acquisition realities that mature companies in mature industries face, the strange attractors in the system will pull most of those shards to roughly the same place.  In other words, the IT enterprise is about control because large businesses in mature industries are about control.  On the other hand, the web is about emergence because in this time, place, and with this technology discontinuity, emergence is the low energy state.&lt;/p&gt;
+
+&lt;p&gt;Also, as Artur acknowledged in a follow up email to the list, no matter what business you're in, it's always more fun to be delivering the product than to be tucked away in a cost center.  On the web, bits are the product.  In the enterprise bits are squirreled away in a supporting cost center that always needs to be ten percent smaller next year.&lt;/p&gt;
+&lt;p&gt;Anyway, with all of this in mind, I went online and watched some of last year's &lt;a href="http://velocityconference.blip.tv/"&gt;Velocity talks on video&lt;/a&gt;.  I wanted to get my own sense of whether an enterprise point of view might add something to the proceedings or whether it simply missed the mark.  &lt;/p&gt;
+
+&lt;p&gt;The message in the talks seemed to distill down to "this stuff is serious; it's important to be disciplined at it; and it's not just a sideline, it's critical to the business."  Hello!  That's the enterprise talking.  Watching the video I could almost hear that Enterprise Step Dad slapping his belt into the palm of his hand while muttering "governance" and "zero baseline budgeting" under his breath.  Wait a few more years until all your expensive pre-depreciation legacy infrastructure meets the declining margins of a maturing industry, and presto, you'll have an enterprise too.&lt;/p&gt;
+
+&lt;p&gt;"The web is great and the enterprise sucks" sentiment that Nat captured in his post (and that I sometimes &lt;a href="http://twitter.com/jstogdill/statuses/917124133"&gt;spout myself in various guises&lt;/a&gt;) made me think of this quote about George Orwell.  He had a penchant for complaining about the conformity of little English towns:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;"He spoke defensively, as if he feared I might blame him for this urban pastoral.  It was a Victorian guilt, and in many ways Orwell was a Victorian figure, &lt;strong&gt;for, like most people 'in rebellion', he was more than half in love with what he was rebelling against&lt;/strong&gt;."&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Put another way, we complain about the enterprise, but maybe it's because we work in places that are in a state of perpetually emergent chaos.  Naturally, we as individuals aren't contributing to the chaos; but when other people are involved, enterprise-like control has a certain appeal.  &lt;/p&gt;
+
+&lt;p&gt;Or, could it be that the web is moving into its post emergence period and all of this rebellion against enterprise control is heightened by our collective intuition that an era is winding down?  &lt;/p&gt;
+
+&lt;p&gt;I think Silicon Valley gets this at a subconscious level... all the thrashing around with green tech, bio this and that, automotive, politics, etc.  Sometimes it seems like the geeks are talking about everything except what made them geeks in the first place.  At one level this really stems from a genuine "do stuff that matters" impulse, but at another level I think it's a realization that the fun part of the web is probably more behind us than ahead of us.  &lt;/p&gt;
+
+&lt;p&gt;The web is about 12'ish years old and maybe we're worried that our precocious and brilliant technological discontinuity is set to enter a rather dull adolescence.  Nothing left in it for us but weekends full of travel soccer and irritating teacher-parent conferences about that latest Myspace incident.  It all sort of sounds like a collective "Honey, this one's a teenager, let's have a cute new one."&lt;/p&gt;
+
+&lt;p&gt;Radio in the 20's, jet aircraft design in the 60's, Bell Labs, the "golden era" of television, a thirty year boom in chemistry starting in the 30's... They all eventually became dull too when their declining novelty curves crossed the rising ones of legacy cost.  We're probably fewer than ten years away from a web full of cubicle-dwelling Dilbert-esque cynicism just like the kind found throughout yesteryear's "it" industries.  But by then all the cool kids will have moved on to building sea floor geo-thermal something-or-others, solar flare catchers, or Gods help us, hand cranked desalination plants. &lt;/p&gt;
+
+&lt;p&gt;I'm not saying that the web's moment is over, it's too early and there is still too much opportunity for that, but I don't think we'll keep seeing tens of thousands of our best and brightest migrating westward every year to work for a granularized, digitized, and de-glamorized advertising firm that buses its employees to work.  Ten years from now the Mad Men sequel will be skipping the three martini lunches to satirize cafeteria donut burgers.&lt;/p&gt;
+
+&lt;p&gt;There is a wonderful side to all of this.  It's the side I try to focus on in my real job.  All of this emergent stuff like open source, remote services, cloud computing, and etc. that happened on the web, hasn't happened &lt;em&gt;just&lt;/em&gt; for the web.  It was mostly catalyzed there, but it's impacting the enterprise too by changing those enterprise IT boundary conditions and the eco-system that the enterprise lives in.  &lt;/p&gt;
+
+&lt;p&gt;Things like open source software may have never emerged from the shadows in an enterprise-only world, but with the web as host it has gestated to a maturity that the enterprise will accept. Plus it's a &lt;a href="http://www.viddler.com/explore/tdlifestyle/videos/130/"&gt;culture virus (video)&lt;/a&gt; that carries emergent thinking into the enterprise right along with the software.  For those of us doing enterprise work our goal should be to make control less necessary as we strive to develop "emergence welcome" zones inside, between, or along the edges of the traditional enterprise.&lt;/p&gt;
+
+&lt;p&gt;There are a lot more people doing "enterprise IT" worldwide then there are doing web stuff.  So, technologies that shift the generativity of the web into the enterprise will unleash all that pent up talent and create a wave of innovation.  For example, just imagine a world where Vivek Kundra is no longer considered all that interesting because enterprise IT shops everywhere are doing the kinds of things he's &lt;a href="http://radar.oreilly.com/2008/11/apps-for-democracy.html"&gt;doing in DC now&lt;/a&gt;, and more.  What do you think?&lt;/p&gt;
+&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=TA8yn"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=TA8yn" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=DAWyN"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=DAWyN" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=N0GNn"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=N0GNn" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=aZHRN"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=aZHRN" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/oreilly/radar/atom/~4/465012485" height="1" width="1"/&gt;</content>
+
+<dc:type>text</dc:type>
+<on:image />
+<feedburner:origLink>http://radar.oreilly.com/2008/11/building-the-legacy-systems-of.html</feedburner:origLink></entry>
+
+<entry>
+<title>Why Does Twitter's Business Model Matter to You?</title>
+<link rel="alternate" type="text/html" href="http://feeds.feedburner.com/~r/oreilly/radar/atom/~3/464284550/why-does-twitters-business-mod.html" />
+<id>tag:radar.oreilly.com,2008://57.34280</id>
+
+<published>2008-11-24T20:38:24Z</published>
+<updated>2008-11-25T21:29:46Z</updated>
+
+<summary type="html">That's a real question, not a rhetorical one. In a Radar post I wrote last week about whether Twitter's user base was hitting a critical inflection point, the first comment was, "How does Twitter make money?" Although the post wasn't about Twitter's business model per se, a lot of the comments were. Which wasn't too surprising, given that many people...</summary>
+<author>
+<name>Sarah Milstein</name>
+<uri>http://radar.oreilly.com/sarahm/</uri>
+</author>
+
+<category term="twitter" label="twitter" scheme="http://www.sixapart.com/ns/types#tag" />
+
+<content type="html" xml:lang="en" xml:base="http://radar.oreilly.com/">
+&lt;p&gt;That's a real question, not a rhetorical one. &lt;/p&gt;
+
+&lt;p&gt; In &lt;a href="http://radar.oreilly.com/2008/11/twitters-hockey-stick-moment.html#comments"&gt;a Radar post I wrote last week&lt;/a&gt; about whether Twitter's user base was hitting a critical inflection point, the first comment was, "How does Twitter make money?" Although the post wasn't about Twitter's business model per se, a lot of the comments were. Which wasn't too surprising, given that many people seem to care intensely about how Twitter will make money (it &lt;a href="http://twitter.com/about#about"&gt;doesn't do so yet&lt;/a&gt;).
+
+&lt;p&gt;Twitter could make money in a number of ways, from selling data to selling services (it recently posted an ad for a &lt;a href="http://twitter.jobscore.com/jobs/twitter/businessproductmanager/cDXASSNZCr3AYYaaWP50_m"&gt;Business Product Manager&lt;/a&gt;, calling the role "Twitter's first product manager focused on revenue generation" and then describing a product that sounds like competition for &lt;a href="http://www.yammer.com"&gt;Yammer&lt;/a&gt; and &lt;a href="https://presentlyapp.com/"&gt;Present.ly&lt;/a&gt;). Indeed, &lt;a href="http://seekingalpha.com/article/100669-twitter-hunting-for-a-business-model"&gt;Blog&lt;/a&gt; &lt;a href="http://www.afpr.com/2008/08/monetizing-twitter.html"&gt;posts&lt;/a&gt; and &lt;a href="http://www.businessweek.com/technology/content/aug2008/tc20080815_597307.htm"&gt;articles&lt;/a&gt; &lt;a href="http://news.cnet.com/8301-17939_109-10084487-2.html"&gt;speculate&lt;/a&gt; constantly, and &lt;a href="http://www.techcrunch.com/2008/11/15/twitters-hockey-stick-moment/"&gt;comments&lt;/a&gt; around the Web range from curious to seemingly angry that Twitter is not yet generating serious cash. Some of the discussion is &lt;a href="http://www.balsamiq.com/blog/?p=217"&gt;constructive&lt;/a&gt;, but a lot of it is &lt;a href="http://www.wired.com/techbiz/people/news/2008/08/portfolio_0804"&gt;pretty hostile&lt;/a&gt; toward Twitter.
+
+&lt;p&gt;I can understand &lt;a href="http://www.avc.com/a_vc/2008/01/twitters-busine.html"&gt;the argument&lt;/a&gt; that people who build services on the Twitter API want assurance that the company will be around for the long haul. But that point rarely comes up in stories or comments, and I suspect it's not fueling the fire.
+
+&lt;p&gt;So, if you're among those who care: why does Twitter's business model matter to you? 
+
+&lt;p&gt;&lt;br /&gt;
+&lt;/p&gt;
+
+&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=8tl3n"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=8tl3n" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=QvLSN"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=QvLSN" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=VKain"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=VKain" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/oreilly/radar/atom?a=tMXMN"&gt;&lt;img src="http://feeds.feedburner.com/~f/oreilly/radar/atom?i=tMXMN" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feeds.feedburner.com/~r/oreilly/radar/atom/~4/464284550" height="1" width="1"/&gt;</content>
+<dc:source>http://www.oreillynet.com/pub/au/1242</dc:source>
+<dc:type>text</dc:type>
+<on:image>http://radar.oreilly.com/2008/11/25/twitterlogo.jpg</on:image>
+<feedburner:origLink>http://radar.oreilly.com/2008/11/why-does-twitters-business-mod.html</feedburner:origLink></entry>
+
+</feed>

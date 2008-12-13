@@ -1,0 +1,3399 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:admin="http://webns.net/mvcb/"
+>
+
+<channel rdf:about="http://use.perl.org/journal.pl?op=top">
+<title>use Perl Journals</title>
+<link>http://use.perl.org/journal.pl?op=top</link>
+<description>Top 20 Journals</description>
+<dc:language>en-us</dc:language>
+<dc:rights>use Perl; is Copyright 1998-2006, Chris Nandor. Stories, comments, journals, and other submissions posted on use Perl; are Copyright their respective owners.</dc:rights>
+<dc:date>2008-12-12T17:37:47+00:00</dc:date>
+<dc:publisher>pudge</dc:publisher>
+<dc:creator>pudge@perl.org</dc:creator>
+<dc:subject>Technology</dc:subject>
+<syn:updatePeriod>hourly</syn:updatePeriod>
+<syn:updateFrequency>1</syn:updateFrequency>
+<syn:updateBase>1970-01-01T00:00+00:00</syn:updateBase>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://use.perl.org/~merlyn/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~gnat/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Ovid/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~petdance/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~davorg/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~pudge/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~chromatic/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Matts/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~TorgoX/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~schwern/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~cwest/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Allison/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ziggy/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~nicholas/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~autrijus/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ask/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Simon/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~rafael/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~2shortplanks/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~barbie/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~pdcawley/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~cog/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Alias/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Elian/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~darobin/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~BooK/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jouke/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~chaoticset/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~lachoy/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~hfb/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jjohn/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~rjbs/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~autarch/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jhi/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~geoff/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Abigail/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Robrt/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~samtregar/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~sky/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~richardc/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~james/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~miyagawa/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~domm/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Aristotle/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~gbarr/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~chip/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jonasbn/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jdavidb/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~TeeJay/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~drhyde/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~blech/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~kudra/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jesse/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~djberg96/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~pjf/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Beatnik/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dws/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jmcnamara/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jplindstrom/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~gav/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~koschei/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~bart/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Theory/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Dom2/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~kane/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~perrin/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~VSarkiss/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Limbic+Region/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Mr.+Muskrat/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~hex/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ajt/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~grinder/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Purdy/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~quidity/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~gabor/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~IlyaM/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~osfameron/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~btilly/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~KM/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~gizmo_mathboy/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~clkao/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~lenzo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~robin/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~sheriff_p/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Dominus/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~n1vux/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~rjray/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ethan/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~statico/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~vek/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ingy/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~LTjake/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Ranguard/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jmcada/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Louis_Wu/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mir/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~demerphq/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Kake/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jarich/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~htoug/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ChrisDolan/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~grantm/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~markjugg/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~scrottie/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~inkdroid/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~pemungkah/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~draven/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~luqui/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~wickline/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~exeunt/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~belg4mit/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jjore/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~cbrandtbuffalo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~runrig/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Stevan/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jbisbee/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ferreira/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jk2addict/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~nothingmuch/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Mark+Leighton+Fisher/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~rob_au/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~claes/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~essuu/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~cogent/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Erudil/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jhorwitz/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~AndyArmstrong/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~tomhukins/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ybiC/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~sphyg/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~leo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~neophyte/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Adrian/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~waltman/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~babbage/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~unimatrix/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jest/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~shiflett/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Whammo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~audreyt/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~boo_radley/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dagolden/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Eric+Wilhelm/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ct/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ambs/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~oneiron/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~speters/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~WebDragon/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mako132/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jdporter/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~CromeDome/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~tmtm/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jeffa/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jdavidboyd/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~uri/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~sigzero/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~tinman/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ajtaylor/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~pne/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jordan/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mugwumpjism/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Phred/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~arhuman/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~BinGOs/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~da/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~coke/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Shlomi+Fish/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~krellis/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mattriffle/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mdxi/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~tsee/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brentdax/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~larsen/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~vsergu/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~kingubu/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~malte/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~marcel/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~tagg/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Skud/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~MarkyMoon/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~nik/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~broquaint/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mpeters/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~JonathanWorthington/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~perigrin/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jns/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~heusserm/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~cogurov/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~rhesa/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jj/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~lilstevey/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~triv/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ivorw/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~pmichaud/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jmm/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~wnodom/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~perlguy/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~slanning/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~phillup/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~DAxelrod/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~amelia/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Corion/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~fglock/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~godoy/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~sir_lichtkind/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~johanvdb/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~kasei/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Fletch/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~zorknapp/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~shockme/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Yanick/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mary.poppins/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jrockway/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~xenchu/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~tonyc/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jsmith/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~redsquirrel/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~particle/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~advent/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~sri/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~davebaker/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Odud/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Bernhard/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~rozallin/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~cosimo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dug/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mr_bean/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dada/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Jean+FORGET/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~kungfuftr/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mothra/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~bronto/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~cbrooks/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~andy.sh/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~pepl/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~merijnb/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~marcus/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Elthek/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Lecar_red/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dc2000/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Smylers/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~nkuitse/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~pierre/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~aurum/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~sumdeus/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~advocate_pm/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~HollyKing/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~avik/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Qiang/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~hydo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~hide/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Tim+Bunce/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~rblackwe/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~reneeb/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~amoore/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jfluhmann/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jamiemccarthy/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~grep/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Thomas/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~rodi/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~NachoMan/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~prakash/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dakkar/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ZenHam/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~agent/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~kid51/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~paulm/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~russell/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~silent11/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~renodino/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~vroom/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~garth/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~graouts/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Timbo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~chrimble/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~kellan/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~SparkeyG/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jbodoni/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~david.romano/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~hanekomu/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dlc/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dankogai/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~tannie/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~link/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jand/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~johnseq/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Penfold/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~tobert/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jmerelo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~polettix/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~oliver/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~milardj/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brianiac/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~tokuhirom/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~educated_foo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~pyewackkit/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~duff/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~maradong/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ddick/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~awwaiid/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~somian/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~garron/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~yudel/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Alan+Burlison/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~properler_head/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~blazar/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~gozer/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~lemming/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~sherab/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~GAVollink/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~fireartist/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ology/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~excalibor/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mercedo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~zatoichi/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~podmaster/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~emazep/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~cmilton/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~moritz/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~iburrell/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~rurban/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~maks/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Buck/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~rooneg/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~planetscape/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~stu42j/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~marnanel/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~wirebird/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~chicks/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~atcroft/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ayrnieu/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~DarkKnightRadick/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~schwigon/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jflowers/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~alfiejohn/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~kjones4/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ghenry/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~clscott/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ishigaki/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~apotheon/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Ron+Savage/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~MGLEE/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jtrammell/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jozef/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jbc/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~gugod/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~tirwhan/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dami/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~juanbro/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dpisoni/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~metalcrowe/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~scot/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~DrForr/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jaybee/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~melo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ikebe/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~singingfish/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~metaperl/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dpavlin/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~nite_man/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~sjn/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~masak/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~aindap/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~cyocum/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jaldhar/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~kag/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~stvn/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~izut/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~sboss/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~offerk/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~steph/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~orif/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~toma/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Aragorn/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jima/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jonswar/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~FoolontheHill/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~stvn_skuo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~aaronelliotross/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~kaare/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~titivillus/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~modred/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dgl/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Yappo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~bepi/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~gambuzino/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Marza/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~vani/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~itub/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Mur/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Random+Logic/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~g0n/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~SnakeNuts/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~batkins/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~anithri/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~cgrau/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~avar/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~nobull/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jweveland/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ontoligent/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~cloudnine/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~TheNomad/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~cacharbe/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Revelation/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mndrix/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~konobi/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~thinc/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~include/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~joedoc/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~PerfDave/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~bda/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~BlueT/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~melopt/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ka6wke/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~glasser/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~chrisv/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Greg+Buchholz/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~boog/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dvergin/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~zrusilla/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jacques/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~shild/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~philcrow/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~potyl/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~danboo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~macli/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~cjf/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mshiltonj/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~khamar/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~naterajj/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~perl/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Fox/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~q/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Drewpy/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~sekimura/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~listerin/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~pate/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~salva/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~kamileon/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~bibo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~monsterzero/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~K_M_McMahon/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~nekokak/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~statebelt/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~RGiersig/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~FoxtrotUniform/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~perl-programmer-john/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mst/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Whiteknight/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~buckaduck/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~defyance/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~nipotan/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ewaters/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~nigelm/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jkondo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~alanhaggai/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~goon/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~srezic/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dwakeman/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mkirank/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Maddingue/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Kelli/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~neuroball/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~phaylon/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~hdp/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~kentaro/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~MeerCat/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~herveus/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Wob/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~chiron/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~lamech/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jhannah/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~cjcollier/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mbadolato/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~geoffrey/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~storulis/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~graq/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~bhajan/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mizzy/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ggoldbach/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mike_arms/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~QM/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Asim/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~rickumali/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~lestrrat/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~numericus/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~koobla/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~blue_cowdawg/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~explorer/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~varf/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~codemonk/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~hansel/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~beckheng/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~pfig/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~sbraun/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dimwit/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~kurihara/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mitd/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Bunchy/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~tkwoof/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~z0d/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~malbh/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dwhite21787/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~hartsock/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~eco/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~neilh/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Terje+Bless/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~kazuma/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~elbie/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~tombom/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~naughton/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ZIGOROu/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~symbolist/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mrd/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~meanroy/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~lorn/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~thoellri/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~chorny/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jzawodn/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~furn/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Masque/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~perhenrik/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~mjl69/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~cinder_bdt/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~CliffY/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~corwin/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~RoMo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Jogi/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~hio/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~oyama/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Sags/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jpmahoney0/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~tropos/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~elliot/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~billn/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~laoliu/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~alodar/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~new.thing/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~kyanny/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~Solo/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~stephen/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~wbl/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~pudgetest/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~bloves/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~aartist/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~rfaramir/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~hctif/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~tdenkinger/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~ttul/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~paul/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~CesarDi/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~dhoss/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~jjn1056/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~eyidearie/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~bondage-chICK/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~liol/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~darkerix/journal/?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~smash/journal/?from=rss" />
+ </rdf:Seq>
+</items>
+<image rdf:resource="http://use.perl.org/images/topics/useperl.gif" />
+</channel>
+
+<image rdf:about="http://use.perl.org/images/topics/useperl.gif">
+<title>use Perl Journals</title>
+<url>http://use.perl.org/images/topics/useperl.gif</url>
+<link>http://use.perl.org/journal.pl?op=top</link>
+</image>
+
+<item rdf:about="http://use.perl.org/~merlyn/journal/?from=rss">
+<title>[merlyn] 189 friends</title>
+<link>http://use.perl.org/~merlyn/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/?from=rss">
+<title>[acme] 185 friends</title>
+<link>http://use.perl.org/~acme/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~gnat/journal/?from=rss">
+<title>[gnat] 181 friends</title>
+<link>http://use.perl.org/~gnat/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Ovid/journal/?from=rss">
+<title>[Ovid] 165 friends</title>
+<link>http://use.perl.org/~Ovid/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/?from=rss">
+<title>[brian_d_foy] 157 friends</title>
+<link>http://use.perl.org/~brian_d_foy/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~petdance/journal/?from=rss">
+<title>[petdance] 156 friends</title>
+<link>http://use.perl.org/~petdance/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~davorg/journal/?from=rss">
+<title>[davorg] 156 friends</title>
+<link>http://use.perl.org/~davorg/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~pudge/journal/?from=rss">
+<title>[pudge] 154 friends</title>
+<link>http://use.perl.org/~pudge/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~chromatic/journal/?from=rss">
+<title>[chromatic] 149 friends</title>
+<link>http://use.perl.org/~chromatic/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Matts/journal/?from=rss">
+<title>[Matts] 146 friends</title>
+<link>http://use.perl.org/~Matts/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~TorgoX/journal/?from=rss">
+<title>[TorgoX] 139 friends</title>
+<link>http://use.perl.org/~TorgoX/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~schwern/journal/?from=rss">
+<title>[schwern] 126 friends</title>
+<link>http://use.perl.org/~schwern/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~cwest/journal/?from=rss">
+<title>[cwest] 107 friends</title>
+<link>http://use.perl.org/~cwest/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Allison/journal/?from=rss">
+<title>[Allison] 105 friends</title>
+<link>http://use.perl.org/~Allison/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ziggy/journal/?from=rss">
+<title>[ziggy] 104 friends</title>
+<link>http://use.perl.org/~ziggy/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~nicholas/journal/?from=rss">
+<title>[nicholas] 101 friends</title>
+<link>http://use.perl.org/~nicholas/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~autrijus/journal/?from=rss">
+<title>[autrijus] 92 friends</title>
+<link>http://use.perl.org/~autrijus/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ask/journal/?from=rss">
+<title>[ask] 91 friends</title>
+<link>http://use.perl.org/~ask/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Simon/journal/?from=rss">
+<title>[Simon] 88 friends</title>
+<link>http://use.perl.org/~Simon/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~rafael/journal/?from=rss">
+<title>[rafael] 88 friends</title>
+<link>http://use.perl.org/~rafael/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~2shortplanks/journal/?from=rss">
+<title>[2shortplanks] 80 friends</title>
+<link>http://use.perl.org/~2shortplanks/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~barbie/journal/?from=rss">
+<title>[barbie] 76 friends</title>
+<link>http://use.perl.org/~barbie/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~pdcawley/journal/?from=rss">
+<title>[pdcawley] 75 friends</title>
+<link>http://use.perl.org/~pdcawley/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~cog/journal/?from=rss">
+<title>[cog] 73 friends</title>
+<link>http://use.perl.org/~cog/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Alias/journal/?from=rss">
+<title>[Alias] 71 friends</title>
+<link>http://use.perl.org/~Alias/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Elian/journal/?from=rss">
+<title>[Elian] 70 friends</title>
+<link>http://use.perl.org/~Elian/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~darobin/journal/?from=rss">
+<title>[darobin] 69 friends</title>
+<link>http://use.perl.org/~darobin/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~BooK/journal/?from=rss">
+<title>[BooK] 66 friends</title>
+<link>http://use.perl.org/~BooK/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jouke/journal/?from=rss">
+<title>[jouke] 65 friends</title>
+<link>http://use.perl.org/~jouke/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~chaoticset/journal/?from=rss">
+<title>[chaoticset] 63 friends</title>
+<link>http://use.perl.org/~chaoticset/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~lachoy/journal/?from=rss">
+<title>[lachoy] 63 friends</title>
+<link>http://use.perl.org/~lachoy/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~hfb/journal/?from=rss">
+<title>[hfb] 61 friends</title>
+<link>http://use.perl.org/~hfb/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jjohn/journal/?from=rss">
+<title>[jjohn] 61 friends</title>
+<link>http://use.perl.org/~jjohn/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~rjbs/journal/?from=rss">
+<title>[rjbs] 61 friends</title>
+<link>http://use.perl.org/~rjbs/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~autarch/journal/?from=rss">
+<title>[autarch] 60 friends</title>
+<link>http://use.perl.org/~autarch/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jhi/journal/?from=rss">
+<title>[jhi] 60 friends</title>
+<link>http://use.perl.org/~jhi/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~geoff/journal/?from=rss">
+<title>[geoff] 60 friends</title>
+<link>http://use.perl.org/~geoff/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Abigail/journal/?from=rss">
+<title>[Abigail] 58 friends</title>
+<link>http://use.perl.org/~Abigail/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Robrt/journal/?from=rss">
+<title>[Robrt] 56 friends</title>
+<link>http://use.perl.org/~Robrt/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~samtregar/journal/?from=rss">
+<title>[samtregar] 56 friends</title>
+<link>http://use.perl.org/~samtregar/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~sky/journal/?from=rss">
+<title>[sky] 56 friends</title>
+<link>http://use.perl.org/~sky/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~richardc/journal/?from=rss">
+<title>[richardc] 56 friends</title>
+<link>http://use.perl.org/~richardc/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~james/journal/?from=rss">
+<title>[james] 53 friends</title>
+<link>http://use.perl.org/~james/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~miyagawa/journal/?from=rss">
+<title>[miyagawa] 53 friends</title>
+<link>http://use.perl.org/~miyagawa/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~domm/journal/?from=rss">
+<title>[domm] 51 friends</title>
+<link>http://use.perl.org/~domm/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Aristotle/journal/?from=rss">
+<title>[Aristotle] 51 friends</title>
+<link>http://use.perl.org/~Aristotle/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~gbarr/journal/?from=rss">
+<title>[gbarr] 51 friends</title>
+<link>http://use.perl.org/~gbarr/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~chip/journal/?from=rss">
+<title>[chip] 49 friends</title>
+<link>http://use.perl.org/~chip/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jonasbn/journal/?from=rss">
+<title>[jonasbn] 47 friends</title>
+<link>http://use.perl.org/~jonasbn/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jdavidb/journal/?from=rss">
+<title>[jdavidb] 47 friends</title>
+<link>http://use.perl.org/~jdavidb/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~TeeJay/journal/?from=rss">
+<title>[TeeJay] 47 friends</title>
+<link>http://use.perl.org/~TeeJay/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~drhyde/journal/?from=rss">
+<title>[drhyde] 47 friends</title>
+<link>http://use.perl.org/~drhyde/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~blech/journal/?from=rss">
+<title>[blech] 44 friends</title>
+<link>http://use.perl.org/~blech/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~kudra/journal/?from=rss">
+<title>[kudra] 43 friends</title>
+<link>http://use.perl.org/~kudra/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jesse/journal/?from=rss">
+<title>[jesse] 43 friends</title>
+<link>http://use.perl.org/~jesse/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~djberg96/journal/?from=rss">
+<title>[djberg96] 42 friends</title>
+<link>http://use.perl.org/~djberg96/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~pjf/journal/?from=rss">
+<title>[pjf] 42 friends</title>
+<link>http://use.perl.org/~pjf/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Beatnik/journal/?from=rss">
+<title>[Beatnik] 42 friends</title>
+<link>http://use.perl.org/~Beatnik/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dws/journal/?from=rss">
+<title>[dws] 42 friends</title>
+<link>http://use.perl.org/~dws/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jmcnamara/journal/?from=rss">
+<title>[jmcnamara] 42 friends</title>
+<link>http://use.perl.org/~jmcnamara/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jplindstrom/journal/?from=rss">
+<title>[jplindstrom] 41 friends</title>
+<link>http://use.perl.org/~jplindstrom/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~gav/journal/?from=rss">
+<title>[gav] 40 friends</title>
+<link>http://use.perl.org/~gav/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~koschei/journal/?from=rss">
+<title>[koschei] 40 friends</title>
+<link>http://use.perl.org/~koschei/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~bart/journal/?from=rss">
+<title>[bart] 39 friends</title>
+<link>http://use.perl.org/~bart/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Theory/journal/?from=rss">
+<title>[Theory] 39 friends</title>
+<link>http://use.perl.org/~Theory/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Dom2/journal/?from=rss">
+<title>[Dom2] 38 friends</title>
+<link>http://use.perl.org/~Dom2/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~kane/journal/?from=rss">
+<title>[kane] 38 friends</title>
+<link>http://use.perl.org/~kane/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~perrin/journal/?from=rss">
+<title>[perrin] 37 friends</title>
+<link>http://use.perl.org/~perrin/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~VSarkiss/journal/?from=rss">
+<title>[VSarkiss] 37 friends</title>
+<link>http://use.perl.org/~VSarkiss/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Limbic+Region/journal/?from=rss">
+<title>[Limbic Region] 35 friends</title>
+<link>http://use.perl.org/~Limbic+Region/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Mr.+Muskrat/journal/?from=rss">
+<title>[Mr. Muskrat] 35 friends</title>
+<link>http://use.perl.org/~Mr.+Muskrat/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~hex/journal/?from=rss">
+<title>[hex] 35 friends</title>
+<link>http://use.perl.org/~hex/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ajt/journal/?from=rss">
+<title>[ajt] 35 friends</title>
+<link>http://use.perl.org/~ajt/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~grinder/journal/?from=rss">
+<title>[grinder] 34 friends</title>
+<link>http://use.perl.org/~grinder/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Purdy/journal/?from=rss">
+<title>[Purdy] 34 friends</title>
+<link>http://use.perl.org/~Purdy/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~quidity/journal/?from=rss">
+<title>[quidity] 33 friends</title>
+<link>http://use.perl.org/~quidity/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~gabor/journal/?from=rss">
+<title>[gabor] 33 friends</title>
+<link>http://use.perl.org/~gabor/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~IlyaM/journal/?from=rss">
+<title>[IlyaM] 32 friends</title>
+<link>http://use.perl.org/~IlyaM/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~osfameron/journal/?from=rss">
+<title>[osfameron] 32 friends</title>
+<link>http://use.perl.org/~osfameron/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~btilly/journal/?from=rss">
+<title>[btilly] 32 friends</title>
+<link>http://use.perl.org/~btilly/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~KM/journal/?from=rss">
+<title>[KM] 31 friends</title>
+<link>http://use.perl.org/~KM/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~gizmo_mathboy/journal/?from=rss">
+<title>[gizmo_mathboy] 31 friends</title>
+<link>http://use.perl.org/~gizmo_mathboy/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~clkao/journal/?from=rss">
+<title>[clkao] 31 friends</title>
+<link>http://use.perl.org/~clkao/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~lenzo/journal/?from=rss">
+<title>[lenzo] 30 friends</title>
+<link>http://use.perl.org/~lenzo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~robin/journal/?from=rss">
+<title>[robin] 30 friends</title>
+<link>http://use.perl.org/~robin/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~sheriff_p/journal/?from=rss">
+<title>[sheriff_p] 29 friends</title>
+<link>http://use.perl.org/~sheriff_p/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Dominus/journal/?from=rss">
+<title>[Dominus] 29 friends</title>
+<link>http://use.perl.org/~Dominus/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~n1vux/journal/?from=rss">
+<title>[n1vux] 29 friends</title>
+<link>http://use.perl.org/~n1vux/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~rjray/journal/?from=rss">
+<title>[rjray] 29 friends</title>
+<link>http://use.perl.org/~rjray/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ethan/journal/?from=rss">
+<title>[ethan] 28 friends</title>
+<link>http://use.perl.org/~ethan/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~statico/journal/?from=rss">
+<title>[statico] 27 friends</title>
+<link>http://use.perl.org/~statico/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~vek/journal/?from=rss">
+<title>[vek] 27 friends</title>
+<link>http://use.perl.org/~vek/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ingy/journal/?from=rss">
+<title>[ingy] 26 friends</title>
+<link>http://use.perl.org/~ingy/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~LTjake/journal/?from=rss">
+<title>[LTjake] 26 friends</title>
+<link>http://use.perl.org/~LTjake/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Ranguard/journal/?from=rss">
+<title>[Ranguard] 26 friends</title>
+<link>http://use.perl.org/~Ranguard/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jmcada/journal/?from=rss">
+<title>[jmcada] 25 friends</title>
+<link>http://use.perl.org/~jmcada/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Louis_Wu/journal/?from=rss">
+<title>[Louis_Wu] 25 friends</title>
+<link>http://use.perl.org/~Louis_Wu/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mir/journal/?from=rss">
+<title>[mir] 24 friends</title>
+<link>http://use.perl.org/~mir/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~demerphq/journal/?from=rss">
+<title>[demerphq] 24 friends</title>
+<link>http://use.perl.org/~demerphq/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Kake/journal/?from=rss">
+<title>[Kake] 24 friends</title>
+<link>http://use.perl.org/~Kake/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jarich/journal/?from=rss">
+<title>[jarich] 24 friends</title>
+<link>http://use.perl.org/~jarich/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~htoug/journal/?from=rss">
+<title>[htoug] 23 friends</title>
+<link>http://use.perl.org/~htoug/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ChrisDolan/journal/?from=rss">
+<title>[ChrisDolan] 23 friends</title>
+<link>http://use.perl.org/~ChrisDolan/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~grantm/journal/?from=rss">
+<title>[grantm] 23 friends</title>
+<link>http://use.perl.org/~grantm/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~markjugg/journal/?from=rss">
+<title>[markjugg] 23 friends</title>
+<link>http://use.perl.org/~markjugg/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~scrottie/journal/?from=rss">
+<title>[scrottie] 23 friends</title>
+<link>http://use.perl.org/~scrottie/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~inkdroid/journal/?from=rss">
+<title>[inkdroid] 23 friends</title>
+<link>http://use.perl.org/~inkdroid/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~pemungkah/journal/?from=rss">
+<title>[pemungkah] 23 friends</title>
+<link>http://use.perl.org/~pemungkah/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~draven/journal/?from=rss">
+<title>[draven] 23 friends</title>
+<link>http://use.perl.org/~draven/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~luqui/journal/?from=rss">
+<title>[luqui] 22 friends</title>
+<link>http://use.perl.org/~luqui/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~wickline/journal/?from=rss">
+<title>[wickline] 22 friends</title>
+<link>http://use.perl.org/~wickline/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~exeunt/journal/?from=rss">
+<title>[exeunt] 22 friends</title>
+<link>http://use.perl.org/~exeunt/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~belg4mit/journal/?from=rss">
+<title>[belg4mit] 22 friends</title>
+<link>http://use.perl.org/~belg4mit/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jjore/journal/?from=rss">
+<title>[jjore] 22 friends</title>
+<link>http://use.perl.org/~jjore/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~cbrandtbuffalo/journal/?from=rss">
+<title>[cbrandtbuffalo] 21 friends</title>
+<link>http://use.perl.org/~cbrandtbuffalo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~runrig/journal/?from=rss">
+<title>[runrig] 21 friends</title>
+<link>http://use.perl.org/~runrig/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Stevan/journal/?from=rss">
+<title>[Stevan] 21 friends</title>
+<link>http://use.perl.org/~Stevan/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jbisbee/journal/?from=rss">
+<title>[jbisbee] 21 friends</title>
+<link>http://use.perl.org/~jbisbee/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ferreira/journal/?from=rss">
+<title>[ferreira] 21 friends</title>
+<link>http://use.perl.org/~ferreira/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jk2addict/journal/?from=rss">
+<title>[jk2addict] 21 friends</title>
+<link>http://use.perl.org/~jk2addict/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~nothingmuch/journal/?from=rss">
+<title>[nothingmuch] 21 friends</title>
+<link>http://use.perl.org/~nothingmuch/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Mark+Leighton+Fisher/journal/?from=rss">
+<title>[Mark Leighton Fisher] 21 friends</title>
+<link>http://use.perl.org/~Mark+Leighton+Fisher/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~rob_au/journal/?from=rss">
+<title>[rob_au] 21 friends</title>
+<link>http://use.perl.org/~rob_au/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~claes/journal/?from=rss">
+<title>[claes] 21 friends</title>
+<link>http://use.perl.org/~claes/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~essuu/journal/?from=rss">
+<title>[essuu] 20 friends</title>
+<link>http://use.perl.org/~essuu/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~cogent/journal/?from=rss">
+<title>[cogent] 20 friends</title>
+<link>http://use.perl.org/~cogent/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Erudil/journal/?from=rss">
+<title>[Erudil] 20 friends</title>
+<link>http://use.perl.org/~Erudil/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jhorwitz/journal/?from=rss">
+<title>[jhorwitz] 20 friends</title>
+<link>http://use.perl.org/~jhorwitz/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~AndyArmstrong/journal/?from=rss">
+<title>[AndyArmstrong] 20 friends</title>
+<link>http://use.perl.org/~AndyArmstrong/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~tomhukins/journal/?from=rss">
+<title>[tomhukins] 20 friends</title>
+<link>http://use.perl.org/~tomhukins/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ybiC/journal/?from=rss">
+<title>[ybiC] 19 friends</title>
+<link>http://use.perl.org/~ybiC/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~sphyg/journal/?from=rss">
+<title>[sphyg] 19 friends</title>
+<link>http://use.perl.org/~sphyg/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~leo/journal/?from=rss">
+<title>[leo] 19 friends</title>
+<link>http://use.perl.org/~leo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~neophyte/journal/?from=rss">
+<title>[neophyte] 19 friends</title>
+<link>http://use.perl.org/~neophyte/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Adrian/journal/?from=rss">
+<title>[Adrian] 19 friends</title>
+<link>http://use.perl.org/~Adrian/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~waltman/journal/?from=rss">
+<title>[waltman] 19 friends</title>
+<link>http://use.perl.org/~waltman/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~babbage/journal/?from=rss">
+<title>[babbage] 19 friends</title>
+<link>http://use.perl.org/~babbage/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~unimatrix/journal/?from=rss">
+<title>[unimatrix] 19 friends</title>
+<link>http://use.perl.org/~unimatrix/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jest/journal/?from=rss">
+<title>[jest] 18 friends</title>
+<link>http://use.perl.org/~jest/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~shiflett/journal/?from=rss">
+<title>[shiflett] 18 friends</title>
+<link>http://use.perl.org/~shiflett/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Whammo/journal/?from=rss">
+<title>[Whammo] 18 friends</title>
+<link>http://use.perl.org/~Whammo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~audreyt/journal/?from=rss">
+<title>[audreyt] 18 friends</title>
+<link>http://use.perl.org/~audreyt/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~boo_radley/journal/?from=rss">
+<title>[boo_radley] 18 friends</title>
+<link>http://use.perl.org/~boo_radley/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dagolden/journal/?from=rss">
+<title>[dagolden] 18 friends</title>
+<link>http://use.perl.org/~dagolden/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Eric+Wilhelm/journal/?from=rss">
+<title>[Eric Wilhelm] 17 friends</title>
+<link>http://use.perl.org/~Eric+Wilhelm/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ct/journal/?from=rss">
+<title>[ct] 17 friends</title>
+<link>http://use.perl.org/~ct/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ambs/journal/?from=rss">
+<title>[ambs] 17 friends</title>
+<link>http://use.perl.org/~ambs/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~oneiron/journal/?from=rss">
+<title>[oneiron] 17 friends</title>
+<link>http://use.perl.org/~oneiron/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~speters/journal/?from=rss">
+<title>[speters] 17 friends</title>
+<link>http://use.perl.org/~speters/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~WebDragon/journal/?from=rss">
+<title>[WebDragon] 17 friends</title>
+<link>http://use.perl.org/~WebDragon/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mako132/journal/?from=rss">
+<title>[mako132] 17 friends</title>
+<link>http://use.perl.org/~mako132/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jdporter/journal/?from=rss">
+<title>[jdporter] 17 friends</title>
+<link>http://use.perl.org/~jdporter/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~CromeDome/journal/?from=rss">
+<title>[CromeDome] 17 friends</title>
+<link>http://use.perl.org/~CromeDome/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~tmtm/journal/?from=rss">
+<title>[tmtm] 17 friends</title>
+<link>http://use.perl.org/~tmtm/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jeffa/journal/?from=rss">
+<title>[jeffa] 17 friends</title>
+<link>http://use.perl.org/~jeffa/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jdavidboyd/journal/?from=rss">
+<title>[jdavidboyd] 17 friends</title>
+<link>http://use.perl.org/~jdavidboyd/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~uri/journal/?from=rss">
+<title>[uri] 17 friends</title>
+<link>http://use.perl.org/~uri/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~sigzero/journal/?from=rss">
+<title>[sigzero] 16 friends</title>
+<link>http://use.perl.org/~sigzero/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~tinman/journal/?from=rss">
+<title>[tinman] 16 friends</title>
+<link>http://use.perl.org/~tinman/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ajtaylor/journal/?from=rss">
+<title>[ajtaylor] 16 friends</title>
+<link>http://use.perl.org/~ajtaylor/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~pne/journal/?from=rss">
+<title>[pne] 16 friends</title>
+<link>http://use.perl.org/~pne/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jordan/journal/?from=rss">
+<title>[jordan] 16 friends</title>
+<link>http://use.perl.org/~jordan/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mugwumpjism/journal/?from=rss">
+<title>[mugwumpjism] 16 friends</title>
+<link>http://use.perl.org/~mugwumpjism/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Phred/journal/?from=rss">
+<title>[Phred] 15 friends</title>
+<link>http://use.perl.org/~Phred/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~arhuman/journal/?from=rss">
+<title>[arhuman] 15 friends</title>
+<link>http://use.perl.org/~arhuman/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~BinGOs/journal/?from=rss">
+<title>[BinGOs] 15 friends</title>
+<link>http://use.perl.org/~BinGOs/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~da/journal/?from=rss">
+<title>[da] 15 friends</title>
+<link>http://use.perl.org/~da/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~coke/journal/?from=rss">
+<title>[coke] 15 friends</title>
+<link>http://use.perl.org/~coke/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Shlomi+Fish/journal/?from=rss">
+<title>[Shlomi Fish] 15 friends</title>
+<link>http://use.perl.org/~Shlomi+Fish/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~krellis/journal/?from=rss">
+<title>[krellis] 15 friends</title>
+<link>http://use.perl.org/~krellis/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mattriffle/journal/?from=rss">
+<title>[mattriffle] 15 friends</title>
+<link>http://use.perl.org/~mattriffle/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mdxi/journal/?from=rss">
+<title>[mdxi] 15 friends</title>
+<link>http://use.perl.org/~mdxi/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~tsee/journal/?from=rss">
+<title>[tsee] 15 friends</title>
+<link>http://use.perl.org/~tsee/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~brentdax/journal/?from=rss">
+<title>[brentdax] 15 friends</title>
+<link>http://use.perl.org/~brentdax/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~larsen/journal/?from=rss">
+<title>[larsen] 15 friends</title>
+<link>http://use.perl.org/~larsen/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~vsergu/journal/?from=rss">
+<title>[vsergu] 15 friends</title>
+<link>http://use.perl.org/~vsergu/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~kingubu/journal/?from=rss">
+<title>[kingubu] 15 friends</title>
+<link>http://use.perl.org/~kingubu/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~malte/journal/?from=rss">
+<title>[malte] 15 friends</title>
+<link>http://use.perl.org/~malte/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~marcel/journal/?from=rss">
+<title>[marcel] 15 friends</title>
+<link>http://use.perl.org/~marcel/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~tagg/journal/?from=rss">
+<title>[tagg] 14 friends</title>
+<link>http://use.perl.org/~tagg/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Skud/journal/?from=rss">
+<title>[Skud] 14 friends</title>
+<link>http://use.perl.org/~Skud/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~MarkyMoon/journal/?from=rss">
+<title>[MarkyMoon] 14 friends</title>
+<link>http://use.perl.org/~MarkyMoon/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~nik/journal/?from=rss">
+<title>[nik] 14 friends</title>
+<link>http://use.perl.org/~nik/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~broquaint/journal/?from=rss">
+<title>[broquaint] 14 friends</title>
+<link>http://use.perl.org/~broquaint/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mpeters/journal/?from=rss">
+<title>[mpeters] 14 friends</title>
+<link>http://use.perl.org/~mpeters/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~JonathanWorthington/journal/?from=rss">
+<title>[JonathanWorthington] 14 friends</title>
+<link>http://use.perl.org/~JonathanWorthington/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~perigrin/journal/?from=rss">
+<title>[perigrin] 14 friends</title>
+<link>http://use.perl.org/~perigrin/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jns/journal/?from=rss">
+<title>[jns] 13 friends</title>
+<link>http://use.perl.org/~jns/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~heusserm/journal/?from=rss">
+<title>[heusserm] 13 friends</title>
+<link>http://use.perl.org/~heusserm/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~cogurov/journal/?from=rss">
+<title>[cogurov] 13 friends</title>
+<link>http://use.perl.org/~cogurov/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~rhesa/journal/?from=rss">
+<title>[rhesa] 13 friends</title>
+<link>http://use.perl.org/~rhesa/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jj/journal/?from=rss">
+<title>[jj] 13 friends</title>
+<link>http://use.perl.org/~jj/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~lilstevey/journal/?from=rss">
+<title>[lilstevey] 13 friends</title>
+<link>http://use.perl.org/~lilstevey/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~triv/journal/?from=rss">
+<title>[triv] 12 friends</title>
+<link>http://use.perl.org/~triv/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ivorw/journal/?from=rss">
+<title>[ivorw] 12 friends</title>
+<link>http://use.perl.org/~ivorw/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~pmichaud/journal/?from=rss">
+<title>[pmichaud] 12 friends</title>
+<link>http://use.perl.org/~pmichaud/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jmm/journal/?from=rss">
+<title>[jmm] 12 friends</title>
+<link>http://use.perl.org/~jmm/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~wnodom/journal/?from=rss">
+<title>[wnodom] 12 friends</title>
+<link>http://use.perl.org/~wnodom/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~perlguy/journal/?from=rss">
+<title>[perlguy] 12 friends</title>
+<link>http://use.perl.org/~perlguy/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~slanning/journal/?from=rss">
+<title>[slanning] 12 friends</title>
+<link>http://use.perl.org/~slanning/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~phillup/journal/?from=rss">
+<title>[phillup] 11 friends</title>
+<link>http://use.perl.org/~phillup/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~DAxelrod/journal/?from=rss">
+<title>[DAxelrod] 10 friends</title>
+<link>http://use.perl.org/~DAxelrod/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~amelia/journal/?from=rss">
+<title>[amelia] 10 friends</title>
+<link>http://use.perl.org/~amelia/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Corion/journal/?from=rss">
+<title>[Corion] 10 friends</title>
+<link>http://use.perl.org/~Corion/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~fglock/journal/?from=rss">
+<title>[fglock] 10 friends</title>
+<link>http://use.perl.org/~fglock/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~godoy/journal/?from=rss">
+<title>[godoy] 10 friends</title>
+<link>http://use.perl.org/~godoy/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~sir_lichtkind/journal/?from=rss">
+<title>[sir_lichtkind] 10 friends</title>
+<link>http://use.perl.org/~sir_lichtkind/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~johanvdb/journal/?from=rss">
+<title>[johanvdb] 10 friends</title>
+<link>http://use.perl.org/~johanvdb/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~kasei/journal/?from=rss">
+<title>[kasei] 10 friends</title>
+<link>http://use.perl.org/~kasei/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Fletch/journal/?from=rss">
+<title>[Fletch] 10 friends</title>
+<link>http://use.perl.org/~Fletch/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~zorknapp/journal/?from=rss">
+<title>[zorknapp] 10 friends</title>
+<link>http://use.perl.org/~zorknapp/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~shockme/journal/?from=rss">
+<title>[shockme] 10 friends</title>
+<link>http://use.perl.org/~shockme/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Yanick/journal/?from=rss">
+<title>[Yanick] 10 friends</title>
+<link>http://use.perl.org/~Yanick/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mary.poppins/journal/?from=rss">
+<title>[mary.poppins] 9 friends</title>
+<link>http://use.perl.org/~mary.poppins/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jrockway/journal/?from=rss">
+<title>[jrockway] 9 friends</title>
+<link>http://use.perl.org/~jrockway/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~xenchu/journal/?from=rss">
+<title>[xenchu] 9 friends</title>
+<link>http://use.perl.org/~xenchu/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~tonyc/journal/?from=rss">
+<title>[tonyc] 9 friends</title>
+<link>http://use.perl.org/~tonyc/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jsmith/journal/?from=rss">
+<title>[jsmith] 9 friends</title>
+<link>http://use.perl.org/~jsmith/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~redsquirrel/journal/?from=rss">
+<title>[redsquirrel] 9 friends</title>
+<link>http://use.perl.org/~redsquirrel/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~particle/journal/?from=rss">
+<title>[particle] 9 friends</title>
+<link>http://use.perl.org/~particle/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~advent/journal/?from=rss">
+<title>[advent] 9 friends</title>
+<link>http://use.perl.org/~advent/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~sri/journal/?from=rss">
+<title>[sri] 9 friends</title>
+<link>http://use.perl.org/~sri/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~davebaker/journal/?from=rss">
+<title>[davebaker] 9 friends</title>
+<link>http://use.perl.org/~davebaker/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Odud/journal/?from=rss">
+<title>[Odud] 9 friends</title>
+<link>http://use.perl.org/~Odud/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Bernhard/journal/?from=rss">
+<title>[Bernhard] 9 friends</title>
+<link>http://use.perl.org/~Bernhard/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~rozallin/journal/?from=rss">
+<title>[rozallin] 9 friends</title>
+<link>http://use.perl.org/~rozallin/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~cosimo/journal/?from=rss">
+<title>[cosimo] 8 friends</title>
+<link>http://use.perl.org/~cosimo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dug/journal/?from=rss">
+<title>[dug] 8 friends</title>
+<link>http://use.perl.org/~dug/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mr_bean/journal/?from=rss">
+<title>[mr_bean] 8 friends</title>
+<link>http://use.perl.org/~mr_bean/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dada/journal/?from=rss">
+<title>[dada] 8 friends</title>
+<link>http://use.perl.org/~dada/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Jean+FORGET/journal/?from=rss">
+<title>[Jean FORGET] 8 friends</title>
+<link>http://use.perl.org/~Jean+FORGET/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~kungfuftr/journal/?from=rss">
+<title>[kungfuftr] 8 friends</title>
+<link>http://use.perl.org/~kungfuftr/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mothra/journal/?from=rss">
+<title>[mothra] 8 friends</title>
+<link>http://use.perl.org/~mothra/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~bronto/journal/?from=rss">
+<title>[bronto] 8 friends</title>
+<link>http://use.perl.org/~bronto/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~cbrooks/journal/?from=rss">
+<title>[cbrooks] 8 friends</title>
+<link>http://use.perl.org/~cbrooks/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~andy.sh/journal/?from=rss">
+<title>[andy.sh] 8 friends</title>
+<link>http://use.perl.org/~andy.sh/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~pepl/journal/?from=rss">
+<title>[pepl] 8 friends</title>
+<link>http://use.perl.org/~pepl/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~merijnb/journal/?from=rss">
+<title>[merijnb] 8 friends</title>
+<link>http://use.perl.org/~merijnb/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~marcus/journal/?from=rss">
+<title>[marcus] 8 friends</title>
+<link>http://use.perl.org/~marcus/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Elthek/journal/?from=rss">
+<title>[Elthek] 8 friends</title>
+<link>http://use.perl.org/~Elthek/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Lecar_red/journal/?from=rss">
+<title>[Lecar_red] 7 friends</title>
+<link>http://use.perl.org/~Lecar_red/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dc2000/journal/?from=rss">
+<title>[dc2000] 7 friends</title>
+<link>http://use.perl.org/~dc2000/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Smylers/journal/?from=rss">
+<title>[Smylers] 7 friends</title>
+<link>http://use.perl.org/~Smylers/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~nkuitse/journal/?from=rss">
+<title>[nkuitse] 7 friends</title>
+<link>http://use.perl.org/~nkuitse/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~pierre/journal/?from=rss">
+<title>[pierre] 7 friends</title>
+<link>http://use.perl.org/~pierre/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~aurum/journal/?from=rss">
+<title>[aurum] 7 friends</title>
+<link>http://use.perl.org/~aurum/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~sumdeus/journal/?from=rss">
+<title>[sumdeus] 7 friends</title>
+<link>http://use.perl.org/~sumdeus/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~advocate_pm/journal/?from=rss">
+<title>[advocate_pm] 7 friends</title>
+<link>http://use.perl.org/~advocate_pm/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~HollyKing/journal/?from=rss">
+<title>[HollyKing] 7 friends</title>
+<link>http://use.perl.org/~HollyKing/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~avik/journal/?from=rss">
+<title>[avik] 7 friends</title>
+<link>http://use.perl.org/~avik/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Qiang/journal/?from=rss">
+<title>[Qiang] 7 friends</title>
+<link>http://use.perl.org/~Qiang/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~hydo/journal/?from=rss">
+<title>[hydo] 7 friends</title>
+<link>http://use.perl.org/~hydo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~hide/journal/?from=rss">
+<title>[hide] 7 friends</title>
+<link>http://use.perl.org/~hide/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Tim+Bunce/journal/?from=rss">
+<title>[Tim Bunce] 7 friends</title>
+<link>http://use.perl.org/~Tim+Bunce/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~rblackwe/journal/?from=rss">
+<title>[rblackwe] 7 friends</title>
+<link>http://use.perl.org/~rblackwe/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~reneeb/journal/?from=rss">
+<title>[reneeb] 7 friends</title>
+<link>http://use.perl.org/~reneeb/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~amoore/journal/?from=rss">
+<title>[amoore] 7 friends</title>
+<link>http://use.perl.org/~amoore/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jfluhmann/journal/?from=rss">
+<title>[jfluhmann] 7 friends</title>
+<link>http://use.perl.org/~jfluhmann/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jamiemccarthy/journal/?from=rss">
+<title>[jamiemccarthy] 7 friends</title>
+<link>http://use.perl.org/~jamiemccarthy/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~grep/journal/?from=rss">
+<title>[grep] 7 friends</title>
+<link>http://use.perl.org/~grep/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Thomas/journal/?from=rss">
+<title>[Thomas] 7 friends</title>
+<link>http://use.perl.org/~Thomas/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~rodi/journal/?from=rss">
+<title>[rodi] 7 friends</title>
+<link>http://use.perl.org/~rodi/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~NachoMan/journal/?from=rss">
+<title>[NachoMan] 6 friends</title>
+<link>http://use.perl.org/~NachoMan/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~prakash/journal/?from=rss">
+<title>[prakash] 6 friends</title>
+<link>http://use.perl.org/~prakash/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dakkar/journal/?from=rss">
+<title>[dakkar] 6 friends</title>
+<link>http://use.perl.org/~dakkar/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ZenHam/journal/?from=rss">
+<title>[ZenHam] 6 friends</title>
+<link>http://use.perl.org/~ZenHam/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~agent/journal/?from=rss">
+<title>[agent] 6 friends</title>
+<link>http://use.perl.org/~agent/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~kid51/journal/?from=rss">
+<title>[kid51] 6 friends</title>
+<link>http://use.perl.org/~kid51/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~paulm/journal/?from=rss">
+<title>[paulm] 6 friends</title>
+<link>http://use.perl.org/~paulm/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~russell/journal/?from=rss">
+<title>[russell] 6 friends</title>
+<link>http://use.perl.org/~russell/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~silent11/journal/?from=rss">
+<title>[silent11] 6 friends</title>
+<link>http://use.perl.org/~silent11/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~renodino/journal/?from=rss">
+<title>[renodino] 6 friends</title>
+<link>http://use.perl.org/~renodino/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~vroom/journal/?from=rss">
+<title>[vroom] 6 friends</title>
+<link>http://use.perl.org/~vroom/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~garth/journal/?from=rss">
+<title>[garth] 6 friends</title>
+<link>http://use.perl.org/~garth/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~graouts/journal/?from=rss">
+<title>[graouts] 6 friends</title>
+<link>http://use.perl.org/~graouts/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Timbo/journal/?from=rss">
+<title>[Timbo] 6 friends</title>
+<link>http://use.perl.org/~Timbo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~chrimble/journal/?from=rss">
+<title>[chrimble] 6 friends</title>
+<link>http://use.perl.org/~chrimble/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~kellan/journal/?from=rss">
+<title>[kellan] 6 friends</title>
+<link>http://use.perl.org/~kellan/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~SparkeyG/journal/?from=rss">
+<title>[SparkeyG] 6 friends</title>
+<link>http://use.perl.org/~SparkeyG/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jbodoni/journal/?from=rss">
+<title>[jbodoni] 6 friends</title>
+<link>http://use.perl.org/~jbodoni/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~david.romano/journal/?from=rss">
+<title>[david.romano] 6 friends</title>
+<link>http://use.perl.org/~david.romano/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~hanekomu/journal/?from=rss">
+<title>[hanekomu] 6 friends</title>
+<link>http://use.perl.org/~hanekomu/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dlc/journal/?from=rss">
+<title>[dlc] 6 friends</title>
+<link>http://use.perl.org/~dlc/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dankogai/journal/?from=rss">
+<title>[dankogai] 6 friends</title>
+<link>http://use.perl.org/~dankogai/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~tannie/journal/?from=rss">
+<title>[tannie] 5 friends</title>
+<link>http://use.perl.org/~tannie/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~link/journal/?from=rss">
+<title>[link] 5 friends</title>
+<link>http://use.perl.org/~link/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jand/journal/?from=rss">
+<title>[jand] 5 friends</title>
+<link>http://use.perl.org/~jand/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~johnseq/journal/?from=rss">
+<title>[johnseq] 5 friends</title>
+<link>http://use.perl.org/~johnseq/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Penfold/journal/?from=rss">
+<title>[Penfold] 5 friends</title>
+<link>http://use.perl.org/~Penfold/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~tobert/journal/?from=rss">
+<title>[tobert] 5 friends</title>
+<link>http://use.perl.org/~tobert/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jmerelo/journal/?from=rss">
+<title>[jmerelo] 5 friends</title>
+<link>http://use.perl.org/~jmerelo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~polettix/journal/?from=rss">
+<title>[polettix] 5 friends</title>
+<link>http://use.perl.org/~polettix/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~oliver/journal/?from=rss">
+<title>[oliver] 5 friends</title>
+<link>http://use.perl.org/~oliver/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~milardj/journal/?from=rss">
+<title>[milardj] 5 friends</title>
+<link>http://use.perl.org/~milardj/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~brianiac/journal/?from=rss">
+<title>[brianiac] 5 friends</title>
+<link>http://use.perl.org/~brianiac/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~tokuhirom/journal/?from=rss">
+<title>[tokuhirom] 5 friends</title>
+<link>http://use.perl.org/~tokuhirom/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~educated_foo/journal/?from=rss">
+<title>[educated_foo] 5 friends</title>
+<link>http://use.perl.org/~educated_foo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~pyewackkit/journal/?from=rss">
+<title>[pyewackkit] 5 friends</title>
+<link>http://use.perl.org/~pyewackkit/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~duff/journal/?from=rss">
+<title>[duff] 5 friends</title>
+<link>http://use.perl.org/~duff/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~maradong/journal/?from=rss">
+<title>[maradong] 5 friends</title>
+<link>http://use.perl.org/~maradong/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ddick/journal/?from=rss">
+<title>[ddick] 5 friends</title>
+<link>http://use.perl.org/~ddick/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~awwaiid/journal/?from=rss">
+<title>[awwaiid] 5 friends</title>
+<link>http://use.perl.org/~awwaiid/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~somian/journal/?from=rss">
+<title>[somian] 5 friends</title>
+<link>http://use.perl.org/~somian/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~garron/journal/?from=rss">
+<title>[garron] 5 friends</title>
+<link>http://use.perl.org/~garron/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~yudel/journal/?from=rss">
+<title>[yudel] 5 friends</title>
+<link>http://use.perl.org/~yudel/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Alan+Burlison/journal/?from=rss">
+<title>[Alan Burlison] 5 friends</title>
+<link>http://use.perl.org/~Alan+Burlison/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~properler_head/journal/?from=rss">
+<title>[properler_head] 5 friends</title>
+<link>http://use.perl.org/~properler_head/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~blazar/journal/?from=rss">
+<title>[blazar] 5 friends</title>
+<link>http://use.perl.org/~blazar/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~gozer/journal/?from=rss">
+<title>[gozer] 5 friends</title>
+<link>http://use.perl.org/~gozer/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~lemming/journal/?from=rss">
+<title>[lemming] 5 friends</title>
+<link>http://use.perl.org/~lemming/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~sherab/journal/?from=rss">
+<title>[sherab] 5 friends</title>
+<link>http://use.perl.org/~sherab/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~GAVollink/journal/?from=rss">
+<title>[GAVollink] 5 friends</title>
+<link>http://use.perl.org/~GAVollink/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~fireartist/journal/?from=rss">
+<title>[fireartist] 5 friends</title>
+<link>http://use.perl.org/~fireartist/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ology/journal/?from=rss">
+<title>[ology] 5 friends</title>
+<link>http://use.perl.org/~ology/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~excalibor/journal/?from=rss">
+<title>[excalibor] 5 friends</title>
+<link>http://use.perl.org/~excalibor/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mercedo/journal/?from=rss">
+<title>[mercedo] 5 friends</title>
+<link>http://use.perl.org/~mercedo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~zatoichi/journal/?from=rss">
+<title>[zatoichi] 5 friends</title>
+<link>http://use.perl.org/~zatoichi/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~podmaster/journal/?from=rss">
+<title>[podmaster] 5 friends</title>
+<link>http://use.perl.org/~podmaster/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~emazep/journal/?from=rss">
+<title>[emazep] 5 friends</title>
+<link>http://use.perl.org/~emazep/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~cmilton/journal/?from=rss">
+<title>[cmilton] 5 friends</title>
+<link>http://use.perl.org/~cmilton/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~moritz/journal/?from=rss">
+<title>[moritz] 5 friends</title>
+<link>http://use.perl.org/~moritz/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~iburrell/journal/?from=rss">
+<title>[iburrell] 5 friends</title>
+<link>http://use.perl.org/~iburrell/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~rurban/journal/?from=rss">
+<title>[rurban] 4 friends</title>
+<link>http://use.perl.org/~rurban/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~maks/journal/?from=rss">
+<title>[maks] 4 friends</title>
+<link>http://use.perl.org/~maks/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Buck/journal/?from=rss">
+<title>[Buck] 4 friends</title>
+<link>http://use.perl.org/~Buck/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~rooneg/journal/?from=rss">
+<title>[rooneg] 4 friends</title>
+<link>http://use.perl.org/~rooneg/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~planetscape/journal/?from=rss">
+<title>[planetscape] 4 friends</title>
+<link>http://use.perl.org/~planetscape/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~stu42j/journal/?from=rss">
+<title>[stu42j] 4 friends</title>
+<link>http://use.perl.org/~stu42j/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~marnanel/journal/?from=rss">
+<title>[marnanel] 4 friends</title>
+<link>http://use.perl.org/~marnanel/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~wirebird/journal/?from=rss">
+<title>[wirebird] 4 friends</title>
+<link>http://use.perl.org/~wirebird/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~chicks/journal/?from=rss">
+<title>[chicks] 4 friends</title>
+<link>http://use.perl.org/~chicks/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~atcroft/journal/?from=rss">
+<title>[atcroft] 4 friends</title>
+<link>http://use.perl.org/~atcroft/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ayrnieu/journal/?from=rss">
+<title>[ayrnieu] 4 friends</title>
+<link>http://use.perl.org/~ayrnieu/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~DarkKnightRadick/journal/?from=rss">
+<title>[DarkKnightRadick] 4 friends</title>
+<link>http://use.perl.org/~DarkKnightRadick/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~schwigon/journal/?from=rss">
+<title>[schwigon] 4 friends</title>
+<link>http://use.perl.org/~schwigon/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jflowers/journal/?from=rss">
+<title>[jflowers] 4 friends</title>
+<link>http://use.perl.org/~jflowers/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~alfiejohn/journal/?from=rss">
+<title>[alfiejohn] 4 friends</title>
+<link>http://use.perl.org/~alfiejohn/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~kjones4/journal/?from=rss">
+<title>[kjones4] 4 friends</title>
+<link>http://use.perl.org/~kjones4/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ghenry/journal/?from=rss">
+<title>[ghenry] 4 friends</title>
+<link>http://use.perl.org/~ghenry/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~clscott/journal/?from=rss">
+<title>[clscott] 4 friends</title>
+<link>http://use.perl.org/~clscott/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ishigaki/journal/?from=rss">
+<title>[ishigaki] 4 friends</title>
+<link>http://use.perl.org/~ishigaki/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~apotheon/journal/?from=rss">
+<title>[apotheon] 4 friends</title>
+<link>http://use.perl.org/~apotheon/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Ron+Savage/journal/?from=rss">
+<title>[Ron Savage] 4 friends</title>
+<link>http://use.perl.org/~Ron+Savage/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~MGLEE/journal/?from=rss">
+<title>[MGLEE] 4 friends</title>
+<link>http://use.perl.org/~MGLEE/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jtrammell/journal/?from=rss">
+<title>[jtrammell] 4 friends</title>
+<link>http://use.perl.org/~jtrammell/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jozef/journal/?from=rss">
+<title>[jozef] 4 friends</title>
+<link>http://use.perl.org/~jozef/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jbc/journal/?from=rss">
+<title>[jbc] 4 friends</title>
+<link>http://use.perl.org/~jbc/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~gugod/journal/?from=rss">
+<title>[gugod] 4 friends</title>
+<link>http://use.perl.org/~gugod/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~tirwhan/journal/?from=rss">
+<title>[tirwhan] 4 friends</title>
+<link>http://use.perl.org/~tirwhan/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dami/journal/?from=rss">
+<title>[dami] 4 friends</title>
+<link>http://use.perl.org/~dami/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~juanbro/journal/?from=rss">
+<title>[juanbro] 4 friends</title>
+<link>http://use.perl.org/~juanbro/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dpisoni/journal/?from=rss">
+<title>[dpisoni] 4 friends</title>
+<link>http://use.perl.org/~dpisoni/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~metalcrowe/journal/?from=rss">
+<title>[metalcrowe] 4 friends</title>
+<link>http://use.perl.org/~metalcrowe/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~scot/journal/?from=rss">
+<title>[scot] 4 friends</title>
+<link>http://use.perl.org/~scot/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~DrForr/journal/?from=rss">
+<title>[DrForr] 4 friends</title>
+<link>http://use.perl.org/~DrForr/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jaybee/journal/?from=rss">
+<title>[jaybee] 4 friends</title>
+<link>http://use.perl.org/~jaybee/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~melo/journal/?from=rss">
+<title>[melo] 4 friends</title>
+<link>http://use.perl.org/~melo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ikebe/journal/?from=rss">
+<title>[ikebe] 4 friends</title>
+<link>http://use.perl.org/~ikebe/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~singingfish/journal/?from=rss">
+<title>[singingfish] 4 friends</title>
+<link>http://use.perl.org/~singingfish/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~metaperl/journal/?from=rss">
+<title>[metaperl] 4 friends</title>
+<link>http://use.perl.org/~metaperl/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dpavlin/journal/?from=rss">
+<title>[dpavlin] 4 friends</title>
+<link>http://use.perl.org/~dpavlin/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~nite_man/journal/?from=rss">
+<title>[nite_man] 3 friends</title>
+<link>http://use.perl.org/~nite_man/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~sjn/journal/?from=rss">
+<title>[sjn] 3 friends</title>
+<link>http://use.perl.org/~sjn/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~masak/journal/?from=rss">
+<title>[masak] 3 friends</title>
+<link>http://use.perl.org/~masak/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~aindap/journal/?from=rss">
+<title>[aindap] 3 friends</title>
+<link>http://use.perl.org/~aindap/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~cyocum/journal/?from=rss">
+<title>[cyocum] 3 friends</title>
+<link>http://use.perl.org/~cyocum/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jaldhar/journal/?from=rss">
+<title>[jaldhar] 3 friends</title>
+<link>http://use.perl.org/~jaldhar/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~kag/journal/?from=rss">
+<title>[kag] 3 friends</title>
+<link>http://use.perl.org/~kag/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~stvn/journal/?from=rss">
+<title>[stvn] 3 friends</title>
+<link>http://use.perl.org/~stvn/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~izut/journal/?from=rss">
+<title>[izut] 3 friends</title>
+<link>http://use.perl.org/~izut/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~sboss/journal/?from=rss">
+<title>[sboss] 3 friends</title>
+<link>http://use.perl.org/~sboss/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~offerk/journal/?from=rss">
+<title>[offerk] 3 friends</title>
+<link>http://use.perl.org/~offerk/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~steph/journal/?from=rss">
+<title>[steph] 3 friends</title>
+<link>http://use.perl.org/~steph/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~orif/journal/?from=rss">
+<title>[orif] 3 friends</title>
+<link>http://use.perl.org/~orif/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~toma/journal/?from=rss">
+<title>[toma] 3 friends</title>
+<link>http://use.perl.org/~toma/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Aragorn/journal/?from=rss">
+<title>[Aragorn] 3 friends</title>
+<link>http://use.perl.org/~Aragorn/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jima/journal/?from=rss">
+<title>[jima] 3 friends</title>
+<link>http://use.perl.org/~jima/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jonswar/journal/?from=rss">
+<title>[jonswar] 3 friends</title>
+<link>http://use.perl.org/~jonswar/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~FoolontheHill/journal/?from=rss">
+<title>[FoolontheHill] 3 friends</title>
+<link>http://use.perl.org/~FoolontheHill/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~stvn_skuo/journal/?from=rss">
+<title>[stvn_skuo] 3 friends</title>
+<link>http://use.perl.org/~stvn_skuo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~aaronelliotross/journal/?from=rss">
+<title>[aaronelliotross] 3 friends</title>
+<link>http://use.perl.org/~aaronelliotross/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~kaare/journal/?from=rss">
+<title>[kaare] 3 friends</title>
+<link>http://use.perl.org/~kaare/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~titivillus/journal/?from=rss">
+<title>[titivillus] 3 friends</title>
+<link>http://use.perl.org/~titivillus/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~modred/journal/?from=rss">
+<title>[modred] 3 friends</title>
+<link>http://use.perl.org/~modred/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dgl/journal/?from=rss">
+<title>[dgl] 3 friends</title>
+<link>http://use.perl.org/~dgl/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Yappo/journal/?from=rss">
+<title>[Yappo] 3 friends</title>
+<link>http://use.perl.org/~Yappo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~bepi/journal/?from=rss">
+<title>[bepi] 3 friends</title>
+<link>http://use.perl.org/~bepi/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~gambuzino/journal/?from=rss">
+<title>[gambuzino] 3 friends</title>
+<link>http://use.perl.org/~gambuzino/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Marza/journal/?from=rss">
+<title>[Marza] 3 friends</title>
+<link>http://use.perl.org/~Marza/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~vani/journal/?from=rss">
+<title>[vani] 3 friends</title>
+<link>http://use.perl.org/~vani/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~itub/journal/?from=rss">
+<title>[itub] 3 friends</title>
+<link>http://use.perl.org/~itub/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Mur/journal/?from=rss">
+<title>[Mur] 3 friends</title>
+<link>http://use.perl.org/~Mur/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Random+Logic/journal/?from=rss">
+<title>[Random Logic] 3 friends</title>
+<link>http://use.perl.org/~Random+Logic/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~g0n/journal/?from=rss">
+<title>[g0n] 3 friends</title>
+<link>http://use.perl.org/~g0n/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~SnakeNuts/journal/?from=rss">
+<title>[SnakeNuts] 3 friends</title>
+<link>http://use.perl.org/~SnakeNuts/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~batkins/journal/?from=rss">
+<title>[batkins] 3 friends</title>
+<link>http://use.perl.org/~batkins/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~anithri/journal/?from=rss">
+<title>[anithri] 3 friends</title>
+<link>http://use.perl.org/~anithri/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~cgrau/journal/?from=rss">
+<title>[cgrau] 3 friends</title>
+<link>http://use.perl.org/~cgrau/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~avar/journal/?from=rss">
+<title>[avar] 3 friends</title>
+<link>http://use.perl.org/~avar/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~nobull/journal/?from=rss">
+<title>[nobull] 3 friends</title>
+<link>http://use.perl.org/~nobull/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jweveland/journal/?from=rss">
+<title>[jweveland] 3 friends</title>
+<link>http://use.perl.org/~jweveland/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ontoligent/journal/?from=rss">
+<title>[ontoligent] 3 friends</title>
+<link>http://use.perl.org/~ontoligent/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~cloudnine/journal/?from=rss">
+<title>[cloudnine] 2 friends</title>
+<link>http://use.perl.org/~cloudnine/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~TheNomad/journal/?from=rss">
+<title>[TheNomad] 2 friends</title>
+<link>http://use.perl.org/~TheNomad/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~cacharbe/journal/?from=rss">
+<title>[cacharbe] 2 friends</title>
+<link>http://use.perl.org/~cacharbe/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Revelation/journal/?from=rss">
+<title>[Revelation] 2 friends</title>
+<link>http://use.perl.org/~Revelation/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mndrix/journal/?from=rss">
+<title>[mndrix] 2 friends</title>
+<link>http://use.perl.org/~mndrix/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~konobi/journal/?from=rss">
+<title>[konobi] 2 friends</title>
+<link>http://use.perl.org/~konobi/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~thinc/journal/?from=rss">
+<title>[thinc] 2 friends</title>
+<link>http://use.perl.org/~thinc/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~include/journal/?from=rss">
+<title>[include] 2 friends</title>
+<link>http://use.perl.org/~include/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~joedoc/journal/?from=rss">
+<title>[joedoc] 2 friends</title>
+<link>http://use.perl.org/~joedoc/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~PerfDave/journal/?from=rss">
+<title>[PerfDave] 2 friends</title>
+<link>http://use.perl.org/~PerfDave/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~bda/journal/?from=rss">
+<title>[bda] 2 friends</title>
+<link>http://use.perl.org/~bda/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~BlueT/journal/?from=rss">
+<title>[BlueT] 2 friends</title>
+<link>http://use.perl.org/~BlueT/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~melopt/journal/?from=rss">
+<title>[melopt] 2 friends</title>
+<link>http://use.perl.org/~melopt/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ka6wke/journal/?from=rss">
+<title>[ka6wke] 2 friends</title>
+<link>http://use.perl.org/~ka6wke/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~glasser/journal/?from=rss">
+<title>[glasser] 2 friends</title>
+<link>http://use.perl.org/~glasser/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~chrisv/journal/?from=rss">
+<title>[chrisv] 2 friends</title>
+<link>http://use.perl.org/~chrisv/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Greg+Buchholz/journal/?from=rss">
+<title>[Greg Buchholz] 2 friends</title>
+<link>http://use.perl.org/~Greg+Buchholz/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~boog/journal/?from=rss">
+<title>[boog] 2 friends</title>
+<link>http://use.perl.org/~boog/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dvergin/journal/?from=rss">
+<title>[dvergin] 2 friends</title>
+<link>http://use.perl.org/~dvergin/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~zrusilla/journal/?from=rss">
+<title>[zrusilla] 2 friends</title>
+<link>http://use.perl.org/~zrusilla/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jacques/journal/?from=rss">
+<title>[jacques] 2 friends</title>
+<link>http://use.perl.org/~jacques/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~shild/journal/?from=rss">
+<title>[shild] 2 friends</title>
+<link>http://use.perl.org/~shild/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~philcrow/journal/?from=rss">
+<title>[philcrow] 2 friends</title>
+<link>http://use.perl.org/~philcrow/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~potyl/journal/?from=rss">
+<title>[potyl] 2 friends</title>
+<link>http://use.perl.org/~potyl/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~danboo/journal/?from=rss">
+<title>[danboo] 2 friends</title>
+<link>http://use.perl.org/~danboo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~macli/journal/?from=rss">
+<title>[macli] 2 friends</title>
+<link>http://use.perl.org/~macli/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~cjf/journal/?from=rss">
+<title>[cjf] 2 friends</title>
+<link>http://use.perl.org/~cjf/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mshiltonj/journal/?from=rss">
+<title>[mshiltonj] 2 friends</title>
+<link>http://use.perl.org/~mshiltonj/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~khamar/journal/?from=rss">
+<title>[khamar] 2 friends</title>
+<link>http://use.perl.org/~khamar/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~naterajj/journal/?from=rss">
+<title>[naterajj] 2 friends</title>
+<link>http://use.perl.org/~naterajj/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~perl/journal/?from=rss">
+<title>[perl] 2 friends</title>
+<link>http://use.perl.org/~perl/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Fox/journal/?from=rss">
+<title>[Fox] 2 friends</title>
+<link>http://use.perl.org/~Fox/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~q/journal/?from=rss">
+<title>[q] 2 friends</title>
+<link>http://use.perl.org/~q/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Drewpy/journal/?from=rss">
+<title>[Drewpy] 2 friends</title>
+<link>http://use.perl.org/~Drewpy/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~sekimura/journal/?from=rss">
+<title>[sekimura] 2 friends</title>
+<link>http://use.perl.org/~sekimura/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~listerin/journal/?from=rss">
+<title>[listerin] 2 friends</title>
+<link>http://use.perl.org/~listerin/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~pate/journal/?from=rss">
+<title>[pate] 2 friends</title>
+<link>http://use.perl.org/~pate/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~salva/journal/?from=rss">
+<title>[salva] 2 friends</title>
+<link>http://use.perl.org/~salva/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~kamileon/journal/?from=rss">
+<title>[kamileon] 2 friends</title>
+<link>http://use.perl.org/~kamileon/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~bibo/journal/?from=rss">
+<title>[bibo] 2 friends</title>
+<link>http://use.perl.org/~bibo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~monsterzero/journal/?from=rss">
+<title>[monsterzero] 2 friends</title>
+<link>http://use.perl.org/~monsterzero/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~K_M_McMahon/journal/?from=rss">
+<title>[K_M_McMahon] 2 friends</title>
+<link>http://use.perl.org/~K_M_McMahon/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~nekokak/journal/?from=rss">
+<title>[nekokak] 2 friends</title>
+<link>http://use.perl.org/~nekokak/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~statebelt/journal/?from=rss">
+<title>[statebelt] 2 friends</title>
+<link>http://use.perl.org/~statebelt/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~RGiersig/journal/?from=rss">
+<title>[RGiersig] 2 friends</title>
+<link>http://use.perl.org/~RGiersig/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~FoxtrotUniform/journal/?from=rss">
+<title>[FoxtrotUniform] 2 friends</title>
+<link>http://use.perl.org/~FoxtrotUniform/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~perl-programmer-john/journal/?from=rss">
+<title>[perl-programmer-john] 2 friends</title>
+<link>http://use.perl.org/~perl-programmer-john/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mst/journal/?from=rss">
+<title>[mst] 2 friends</title>
+<link>http://use.perl.org/~mst/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Whiteknight/journal/?from=rss">
+<title>[Whiteknight] 2 friends</title>
+<link>http://use.perl.org/~Whiteknight/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~buckaduck/journal/?from=rss">
+<title>[buckaduck] 2 friends</title>
+<link>http://use.perl.org/~buckaduck/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~defyance/journal/?from=rss">
+<title>[defyance] 2 friends</title>
+<link>http://use.perl.org/~defyance/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~nipotan/journal/?from=rss">
+<title>[nipotan] 2 friends</title>
+<link>http://use.perl.org/~nipotan/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ewaters/journal/?from=rss">
+<title>[ewaters] 2 friends</title>
+<link>http://use.perl.org/~ewaters/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~nigelm/journal/?from=rss">
+<title>[nigelm] 2 friends</title>
+<link>http://use.perl.org/~nigelm/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jkondo/journal/?from=rss">
+<title>[jkondo] 2 friends</title>
+<link>http://use.perl.org/~jkondo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~alanhaggai/journal/?from=rss">
+<title>[alanhaggai] 2 friends</title>
+<link>http://use.perl.org/~alanhaggai/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~goon/journal/?from=rss">
+<title>[goon] 2 friends</title>
+<link>http://use.perl.org/~goon/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~srezic/journal/?from=rss">
+<title>[srezic] 2 friends</title>
+<link>http://use.perl.org/~srezic/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dwakeman/journal/?from=rss">
+<title>[dwakeman] 2 friends</title>
+<link>http://use.perl.org/~dwakeman/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mkirank/journal/?from=rss">
+<title>[mkirank] 2 friends</title>
+<link>http://use.perl.org/~mkirank/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Maddingue/journal/?from=rss">
+<title>[Maddingue] 2 friends</title>
+<link>http://use.perl.org/~Maddingue/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Kelli/journal/?from=rss">
+<title>[Kelli] 2 friends</title>
+<link>http://use.perl.org/~Kelli/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~neuroball/journal/?from=rss">
+<title>[neuroball] 2 friends</title>
+<link>http://use.perl.org/~neuroball/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~phaylon/journal/?from=rss">
+<title>[phaylon] 2 friends</title>
+<link>http://use.perl.org/~phaylon/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~hdp/journal/?from=rss">
+<title>[hdp] 2 friends</title>
+<link>http://use.perl.org/~hdp/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~kentaro/journal/?from=rss">
+<title>[kentaro] 1 friend</title>
+<link>http://use.perl.org/~kentaro/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~MeerCat/journal/?from=rss">
+<title>[MeerCat] 1 friend</title>
+<link>http://use.perl.org/~MeerCat/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~herveus/journal/?from=rss">
+<title>[herveus] 1 friend</title>
+<link>http://use.perl.org/~herveus/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Wob/journal/?from=rss">
+<title>[Wob] 1 friend</title>
+<link>http://use.perl.org/~Wob/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~chiron/journal/?from=rss">
+<title>[chiron] 1 friend</title>
+<link>http://use.perl.org/~chiron/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~lamech/journal/?from=rss">
+<title>[lamech] 1 friend</title>
+<link>http://use.perl.org/~lamech/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jhannah/journal/?from=rss">
+<title>[jhannah] 1 friend</title>
+<link>http://use.perl.org/~jhannah/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~cjcollier/journal/?from=rss">
+<title>[cjcollier] 1 friend</title>
+<link>http://use.perl.org/~cjcollier/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mbadolato/journal/?from=rss">
+<title>[mbadolato] 1 friend</title>
+<link>http://use.perl.org/~mbadolato/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~geoffrey/journal/?from=rss">
+<title>[geoffrey] 1 friend</title>
+<link>http://use.perl.org/~geoffrey/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~storulis/journal/?from=rss">
+<title>[storulis] 1 friend</title>
+<link>http://use.perl.org/~storulis/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~graq/journal/?from=rss">
+<title>[graq] 1 friend</title>
+<link>http://use.perl.org/~graq/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~bhajan/journal/?from=rss">
+<title>[bhajan] 1 friend</title>
+<link>http://use.perl.org/~bhajan/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mizzy/journal/?from=rss">
+<title>[mizzy] 1 friend</title>
+<link>http://use.perl.org/~mizzy/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ggoldbach/journal/?from=rss">
+<title>[ggoldbach] 1 friend</title>
+<link>http://use.perl.org/~ggoldbach/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mike_arms/journal/?from=rss">
+<title>[mike_arms] 1 friend</title>
+<link>http://use.perl.org/~mike_arms/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~QM/journal/?from=rss">
+<title>[QM] 1 friend</title>
+<link>http://use.perl.org/~QM/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Asim/journal/?from=rss">
+<title>[Asim] 1 friend</title>
+<link>http://use.perl.org/~Asim/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~rickumali/journal/?from=rss">
+<title>[rickumali] 1 friend</title>
+<link>http://use.perl.org/~rickumali/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~lestrrat/journal/?from=rss">
+<title>[lestrrat] 1 friend</title>
+<link>http://use.perl.org/~lestrrat/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~numericus/journal/?from=rss">
+<title>[numericus] 1 friend</title>
+<link>http://use.perl.org/~numericus/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~koobla/journal/?from=rss">
+<title>[koobla] 1 friend</title>
+<link>http://use.perl.org/~koobla/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~blue_cowdawg/journal/?from=rss">
+<title>[blue_cowdawg] 1 friend</title>
+<link>http://use.perl.org/~blue_cowdawg/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~explorer/journal/?from=rss">
+<title>[explorer] 1 friend</title>
+<link>http://use.perl.org/~explorer/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~varf/journal/?from=rss">
+<title>[varf] 1 friend</title>
+<link>http://use.perl.org/~varf/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~codemonk/journal/?from=rss">
+<title>[codemonk] 1 friend</title>
+<link>http://use.perl.org/~codemonk/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~hansel/journal/?from=rss">
+<title>[hansel] 1 friend</title>
+<link>http://use.perl.org/~hansel/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~beckheng/journal/?from=rss">
+<title>[beckheng] 1 friend</title>
+<link>http://use.perl.org/~beckheng/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~pfig/journal/?from=rss">
+<title>[pfig] 1 friend</title>
+<link>http://use.perl.org/~pfig/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~sbraun/journal/?from=rss">
+<title>[sbraun] 1 friend</title>
+<link>http://use.perl.org/~sbraun/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dimwit/journal/?from=rss">
+<title>[dimwit] 1 friend</title>
+<link>http://use.perl.org/~dimwit/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~kurihara/journal/?from=rss">
+<title>[kurihara] 1 friend</title>
+<link>http://use.perl.org/~kurihara/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mitd/journal/?from=rss">
+<title>[mitd] 1 friend</title>
+<link>http://use.perl.org/~mitd/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Bunchy/journal/?from=rss">
+<title>[Bunchy] 1 friend</title>
+<link>http://use.perl.org/~Bunchy/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~tkwoof/journal/?from=rss">
+<title>[tkwoof] 1 friend</title>
+<link>http://use.perl.org/~tkwoof/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~z0d/journal/?from=rss">
+<title>[z0d] 1 friend</title>
+<link>http://use.perl.org/~z0d/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~malbh/journal/?from=rss">
+<title>[malbh] 1 friend</title>
+<link>http://use.perl.org/~malbh/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dwhite21787/journal/?from=rss">
+<title>[dwhite21787] 1 friend</title>
+<link>http://use.perl.org/~dwhite21787/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~hartsock/journal/?from=rss">
+<title>[hartsock] 1 friend</title>
+<link>http://use.perl.org/~hartsock/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~eco/journal/?from=rss">
+<title>[eco] 1 friend</title>
+<link>http://use.perl.org/~eco/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~neilh/journal/?from=rss">
+<title>[neilh] 1 friend</title>
+<link>http://use.perl.org/~neilh/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Terje+Bless/journal/?from=rss">
+<title>[Terje Bless] 1 friend</title>
+<link>http://use.perl.org/~Terje+Bless/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~kazuma/journal/?from=rss">
+<title>[kazuma] 1 friend</title>
+<link>http://use.perl.org/~kazuma/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~elbie/journal/?from=rss">
+<title>[elbie] 1 friend</title>
+<link>http://use.perl.org/~elbie/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~tombom/journal/?from=rss">
+<title>[tombom] 1 friend</title>
+<link>http://use.perl.org/~tombom/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~naughton/journal/?from=rss">
+<title>[naughton] 1 friend</title>
+<link>http://use.perl.org/~naughton/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ZIGOROu/journal/?from=rss">
+<title>[ZIGOROu] 1 friend</title>
+<link>http://use.perl.org/~ZIGOROu/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~symbolist/journal/?from=rss">
+<title>[symbolist] 1 friend</title>
+<link>http://use.perl.org/~symbolist/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mrd/journal/?from=rss">
+<title>[mrd] 1 friend</title>
+<link>http://use.perl.org/~mrd/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~meanroy/journal/?from=rss">
+<title>[meanroy] 1 friend</title>
+<link>http://use.perl.org/~meanroy/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~lorn/journal/?from=rss">
+<title>[lorn] 1 friend</title>
+<link>http://use.perl.org/~lorn/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~thoellri/journal/?from=rss">
+<title>[thoellri] 1 friend</title>
+<link>http://use.perl.org/~thoellri/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~chorny/journal/?from=rss">
+<title>[chorny] 1 friend</title>
+<link>http://use.perl.org/~chorny/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jzawodn/journal/?from=rss">
+<title>[jzawodn] 1 friend</title>
+<link>http://use.perl.org/~jzawodn/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~furn/journal/?from=rss">
+<title>[furn] 1 friend</title>
+<link>http://use.perl.org/~furn/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Masque/journal/?from=rss">
+<title>[Masque] 1 friend</title>
+<link>http://use.perl.org/~Masque/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~perhenrik/journal/?from=rss">
+<title>[perhenrik] 1 friend</title>
+<link>http://use.perl.org/~perhenrik/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~mjl69/journal/?from=rss">
+<title>[mjl69] 1 friend</title>
+<link>http://use.perl.org/~mjl69/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~cinder_bdt/journal/?from=rss">
+<title>[cinder_bdt] 1 friend</title>
+<link>http://use.perl.org/~cinder_bdt/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~CliffY/journal/?from=rss">
+<title>[CliffY] 1 friend</title>
+<link>http://use.perl.org/~CliffY/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~corwin/journal/?from=rss">
+<title>[corwin] 1 friend</title>
+<link>http://use.perl.org/~corwin/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~RoMo/journal/?from=rss">
+<title>[RoMo] 1 friend</title>
+<link>http://use.perl.org/~RoMo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Jogi/journal/?from=rss">
+<title>[Jogi] 1 friend</title>
+<link>http://use.perl.org/~Jogi/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~hio/journal/?from=rss">
+<title>[hio] 1 friend</title>
+<link>http://use.perl.org/~hio/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~oyama/journal/?from=rss">
+<title>[oyama] 1 friend</title>
+<link>http://use.perl.org/~oyama/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Sags/journal/?from=rss">
+<title>[Sags] 1 friend</title>
+<link>http://use.perl.org/~Sags/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jpmahoney0/journal/?from=rss">
+<title>[jpmahoney0] 1 friend</title>
+<link>http://use.perl.org/~jpmahoney0/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~tropos/journal/?from=rss">
+<title>[tropos] 1 friend</title>
+<link>http://use.perl.org/~tropos/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~elliot/journal/?from=rss">
+<title>[elliot] 1 friend</title>
+<link>http://use.perl.org/~elliot/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~billn/journal/?from=rss">
+<title>[billn] 1 friend</title>
+<link>http://use.perl.org/~billn/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~laoliu/journal/?from=rss">
+<title>[laoliu] 1 friend</title>
+<link>http://use.perl.org/~laoliu/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~alodar/journal/?from=rss">
+<title>[alodar] 1 friend</title>
+<link>http://use.perl.org/~alodar/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~new.thing/journal/?from=rss">
+<title>[new.thing] 1 friend</title>
+<link>http://use.perl.org/~new.thing/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~kyanny/journal/?from=rss">
+<title>[kyanny] 1 friend</title>
+<link>http://use.perl.org/~kyanny/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~Solo/journal/?from=rss">
+<title>[Solo] 1 friend</title>
+<link>http://use.perl.org/~Solo/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~stephen/journal/?from=rss">
+<title>[stephen] 1 friend</title>
+<link>http://use.perl.org/~stephen/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~wbl/journal/?from=rss">
+<title>[wbl] 1 friend</title>
+<link>http://use.perl.org/~wbl/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~pudgetest/journal/?from=rss">
+<title>[pudgetest] 1 friend</title>
+<link>http://use.perl.org/~pudgetest/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~bloves/journal/?from=rss">
+<title>[bloves] 1 friend</title>
+<link>http://use.perl.org/~bloves/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~aartist/journal/?from=rss">
+<title>[aartist] 1 friend</title>
+<link>http://use.perl.org/~aartist/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~rfaramir/journal/?from=rss">
+<title>[rfaramir] 1 friend</title>
+<link>http://use.perl.org/~rfaramir/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~hctif/journal/?from=rss">
+<title>[hctif] 1 friend</title>
+<link>http://use.perl.org/~hctif/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~tdenkinger/journal/?from=rss">
+<title>[tdenkinger] 1 friend</title>
+<link>http://use.perl.org/~tdenkinger/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~ttul/journal/?from=rss">
+<title>[ttul] 1 friend</title>
+<link>http://use.perl.org/~ttul/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~paul/journal/?from=rss">
+<title>[paul] 1 friend</title>
+<link>http://use.perl.org/~paul/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~CesarDi/journal/?from=rss">
+<title>[CesarDi] 1 friend</title>
+<link>http://use.perl.org/~CesarDi/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~dhoss/journal/?from=rss">
+<title>[dhoss] 1 friend</title>
+<link>http://use.perl.org/~dhoss/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~jjn1056/journal/?from=rss">
+<title>[jjn1056] 1 friend</title>
+<link>http://use.perl.org/~jjn1056/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~eyidearie/journal/?from=rss">
+<title>[eyidearie] 1 friend</title>
+<link>http://use.perl.org/~eyidearie/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~bondage-chICK/journal/?from=rss">
+<title>[bondage-chICK] 1 friend</title>
+<link>http://use.perl.org/~bondage-chICK/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~liol/journal/?from=rss">
+<title>[liol] 1 friend</title>
+<link>http://use.perl.org/~liol/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~darkerix/journal/?from=rss">
+<title>[darkerix] 1 friend</title>
+<link>http://use.perl.org/~darkerix/journal/?from=rss</link>
+</item>
+
+<item rdf:about="http://use.perl.org/~smash/journal/?from=rss">
+<title>[smash] 1 friend</title>
+<link>http://use.perl.org/~smash/journal/?from=rss</link>
+</item>
+
+</rdf:RDF>

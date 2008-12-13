@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+
+<channel>
+	<title>SoliSoft.net</title>
+	<atom:link href="http://solisoft.net/?feed=rss2" rel="self" type="application/rss+xml" />
+	<link>http://solisoft.net</link>
+	<description>Ici vous trouverez des infos sur : Ruby on Rails, PHP, Linux, freeBSD, NGINX, Logiciels libres</description>
+	<pubDate>Fri, 21 Nov 2008 16:59:20 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6.3</generator>
+	<language>en</language>
+			<item>
+		<title>Ajouter l&#8217;Ajax au plugin will_paginate</title>
+		<link>http://solisoft.net/?p=60</link>
+		<comments>http://solisoft.net/?p=60#comments</comments>
+		<pubDate>Thu, 16 Oct 2008 14:03:46 +0000</pubDate>
+		<dc:creator>Olivier BONNAURE</dc:creator>
+		
+		<category><![CDATA[Ruby on Rails]]></category>
+
+		<guid isPermaLink="false">http://solisoft.net/?p=60</guid>
+		<description><![CDATA[Voici un petit hack pour ajouter Ajax au plugin will_paginate :
+Dans le fichier /lib/will_paginate/view_helpers.rb ajoutez/modifiez les lignes suivantes :
+module ViewHelpers
+# default options that can be overridden on the global level
+@@pagination_options = {
+:class          =&#62; 'pagination',
+:previous_label =&#62; '« Previous',
+:next_label     =&#62; 'Next »',
+:inner_window   =&#62; 4, # links around the current page
+:outer_window [...]]]></description>
+			<content:encoded><![CDATA[<p>Voici un petit hack pour ajouter Ajax au plugin will_paginate :</p>
+<p>Dans le fichier /lib/will_paginate/view_helpers.rb ajoutez/modifiez les lignes suivantes :</p>
+<p><code>module ViewHelpers<br />
+# default options that can be overridden on the global level<br />
+@@pagination_options = {<br />
+:class          =&gt; 'pagination',<br />
+:previous_label =&gt; '« Previous',<br />
+:next_label     =&gt; 'Next »',<br />
+:inner_window   =&gt; 4, # links around the current page<br />
+:outer_window   =&gt; 1, # links around beginning and end<br />
+:separator      =&gt; ' ', # single space is friendly to spiders and non-graphic browsers<br />
+:param_name     =&gt; :page,<br />
+:params         =&gt; nil,<br />
+:renderer       =&gt; 'WillPaginate::LinkRenderer',<br />
+:page_links     =&gt; true,<br />
+:container      =&gt; true,<br />
+# Ligne a ajouter<br />
+:update         =&gt; nil # DOM element to update<br />
+}<br />
+mattr_reader :pagination_options<br />
+# suite du code ...</code></p>
+<p>Puis plus bas, on modifie la fonction page_link<br />
+<code>def page_link(page, text, attributes = {})<br />
+if @options[:update].nil?<br />
+@template.link_to text, url_for(page), attributes<br />
+else<br />
+# Ajax update<br />
+@template.link_to_remote text, {:url =&gt; url_for(page), :update =&gt; @options[:update]}, :html =&gt; attributes<br />
+end<br />
+end</code></p>
+<p>Et voilà maintenant vous n&#8217;avez plus qu&#8217;à utiliser <strong><br />
+<code>will_paginate @collections, :update =&gt; "mon_id"</code><br />
+</strong> dans vos vues.</p>
+<p>Bien sûr si vous ne spécifiez pas l&#8217;attribut <strong>:update</strong>, will_paginate fonctionnera comme avant.</p>
+<p>Voici un lien vers le fork de will_paginate que j&#8217;ai créé :<br />
+<a href="http://github.com/solisoft/will_paginate/tree/master">http://github.com/solisoft/will_paginate/tree/master</a></p>
+<p>Enjoy.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://solisoft.net/?feed=rss2&amp;p=60</wfw:commentRss>
+		</item>
+		<item>
+		<title>[Firefox] Suppression de tous les mots de passe stockés</title>
+		<link>http://solisoft.net/?p=58</link>
+		<comments>http://solisoft.net/?p=58#comments</comments>
+		<pubDate>Fri, 26 Sep 2008 09:15:15 +0000</pubDate>
+		<dc:creator>Olivier BONNAURE</dc:creator>
+		
+		<category><![CDATA[Linux]]></category>
+
+		<category><![CDATA[Logiciel]]></category>
+
+		<category><![CDATA[firefox ubuntu]]></category>
+
+		<guid isPermaLink="false">http://solisoft.net/?p=58</guid>
+		<description><![CDATA[Ce billet est une alerte pour tous ceux qui veulent faire une mise à jour de Firefox sous ubuntu. En effet cette dernière mise à jour m&#8217;a complètement effacé tous mes mots de passe enregistrés.
+Même si je garde toujours une trace de mes différents comptes quelque part, je trouve cela assez ennuyeux et même carrément [...]]]></description>
+			<content:encoded><![CDATA[<p>Ce billet est une alerte pour tous ceux qui veulent faire une mise à jour de Firefox sous ubuntu. En effet cette dernière mise à jour m&#8217;a complètement effacé tous mes mots de passe enregistrés.</p>
+<p>Même si je garde toujours une trace de mes différents comptes quelque part, je trouve cela assez ennuyeux et même carrément incompréhensible &#8230;</p>
+<p>Voilà en attendant mon futur iMac &#8230; je patiente sous ubuntu &#8230;</p>
+]]></content:encoded>
+			<wfw:commentRss>http://solisoft.net/?feed=rss2&amp;p=58</wfw:commentRss>
+		</item>
+		<item>
+		<title>Sinatra - Le micro framework Ruby</title>
+		<link>http://solisoft.net/?p=56</link>
+		<comments>http://solisoft.net/?p=56#comments</comments>
+		<pubDate>Thu, 24 Jul 2008 13:20:39 +0000</pubDate>
+		<dc:creator>Olivier BONNAURE</dc:creator>
+		
+		<category><![CDATA[Ruby]]></category>
+
+		<category><![CDATA[web2.0]]></category>
+
+		<guid isPermaLink="false">http://solisoft.net/?p=56</guid>
+		<description><![CDATA[Je dois l&#8217;avouer Ruby on Rails est un pur bonheur mais des fois surdimentionné par rapport aux besoins. Grâce à RubyInside j&#8217;ai découvert un petit framework tout léger nommé Sinatra !
+gem install sinatra
+Je ne vais pas vous paraphraser ce que vous allez lire comme informations sur le site officiel mais ce mini framework est vraiment [...]]]></description>
+			<content:encoded><![CDATA[<p>Je dois l&#8217;avouer Ruby on Rails est un pur bonheur mais des fois surdimentionné par rapport aux besoins. Grâce à <a href="http://www.rubyinside.com" target="_blank">RubyInside</a> j&#8217;ai découvert un petit framework tout léger nommé <a href="http://sinatrarb.com">Sinatra</a> !</p>
+<p><code>gem install sinatra</code></p>
+<p>Je ne vais pas vous paraphraser ce que vous allez lire comme informations sur le site officiel mais ce mini framework est vraiment bien pensé. Par défaut il est Restful, on peut également avoir du MVC si on le souhaite et on a le choix dans l&#8217;ORM. Par exemple il est possible de le coupler avec <a href="http://datamapper.org/why.html">DataMapper</a> en lieu et place d&#8217;ActiveRecord.</p>
+<p>Pour les vues, <a href="http://haml.hamptoncatlin.com/">#haml</a> est de la partie !</p>
+<p>La chose qu&#8217;il me reste à voir est comment héberger un site fonctionnant avec Sinatra &#8230;</p>
+]]></content:encoded>
+			<wfw:commentRss>http://solisoft.net/?feed=rss2&amp;p=56</wfw:commentRss>
+		</item>
+		<item>
+		<title>Consultant Ruby on Rails pour Direct Interactive - NYC</title>
+		<link>http://solisoft.net/?p=54</link>
+		<comments>http://solisoft.net/?p=54#comments</comments>
+		<pubDate>Thu, 03 Jul 2008 09:18:45 +0000</pubDate>
+		<dc:creator>Olivier BONNAURE</dc:creator>
+		
+		<category><![CDATA[Ruby on Rails]]></category>
+
+		<category><![CDATA[SoliSoft]]></category>
+
+		<guid isPermaLink="false">http://solisoft.net/?p=54</guid>
+		<description><![CDATA[
+Cela fait maintenant plusieurs mois que je travaille pour la société Direct Interactive située à Manhattan, NYC. Je suis donc consultant en développement Ruby on Rails pour cette entreprise.
+Depuis quelques jours j&#8217;ai signé mon premier contrat avec eux, ce qui officialise notre collaboration.
+Je tiens vraiment à remercier toute l&#8217;équipe de Direct Interactive pour leur accueil [...]]]></description>
+			<content:encoded><![CDATA[<p><img align="center" src="http://www.solisoft.net/i/di_logo.gif" alt="Direct Interactive" /></p>
+<p>Cela fait maintenant plusieurs mois que je travaille pour la société <a href="http://www.directinteractive.com">Direct Interactive</a> située à Manhattan, NYC. Je suis donc consultant en développement Ruby on Rails pour cette entreprise.</p>
+<p>Depuis quelques jours j&#8217;ai signé mon premier contrat avec eux, ce qui officialise notre collaboration.</p>
+<p>Je tiens vraiment à remercier toute l&#8217;équipe de <a href="http://www.directinteractive.com">Direct Interactive</a> pour leur accueil lors de notre visite, moi et ma petite famille, à NYC. J&#8217;y ai rencontré des personnes passionnées et qui donnent vraiment envie de se démener à 200%.</p>
+<p>Direct Interactive est spécialisée dans l&#8217;expérience utilisateur. Leur logiciel ChiliSales est un produit unique en son genre.</p>
+<p>Pour info, voici où ils se situent : <a href="http://maps.google.fr/maps?f=q&#038;hl=fr&#038;geocode=&#038;q=12+Desbrosses+St,+New+York,+NY+10013,+USA&#038;sll=47.15984,2.988281&#038;sspn=15.331473,33.662109&#038;ie=UTF8&#038;ll=40.724722,-74.008777&#038;spn=0.008342,0.016437&#038;z=16&#038;iwloc=addr">Google maps</a></p>
+<p>Donc voilà &#8230; Champagne <img src='http://solisoft.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /></p>
+]]></content:encoded>
+			<wfw:commentRss>http://solisoft.net/?feed=rss2&amp;p=54</wfw:commentRss>
+		</item>
+		<item>
+		<title>Capistrano Multi-Stage et Git</title>
+		<link>http://solisoft.net/?p=53</link>
+		<comments>http://solisoft.net/?p=53#comments</comments>
+		<pubDate>Fri, 20 Jun 2008 08:27:14 +0000</pubDate>
+		<dc:creator>Olivier BONNAURE</dc:creator>
+		
+		<category><![CDATA[Bloc Note]]></category>
+
+		<category><![CDATA[Capistrano]]></category>
+
+		<category><![CDATA[Ruby on Rails]]></category>
+
+		<guid isPermaLink="false">http://solisoft.net/?p=53</guid>
+		<description><![CDATA[Je suis passé à Git pour ma gestion de révision de fichiers en abandonnant peu à peu SVN. Je vous le conseille fortement d&#8217;ailleurs&#8230; La gestion des branches est beaucoup plus facile et intuitive que SVN.
+Pour mes projets Rails j&#8217;ai besoin au minimum d&#8217;avoir 2 branches : Une pour ma version de production et une [...]]]></description>
+			<content:encoded><![CDATA[<p>Je suis passé à Git pour ma gestion de révision de fichiers en abandonnant peu à peu SVN. Je vous le conseille fortement d&#8217;ailleurs&#8230; La gestion des branches est beaucoup plus facile et intuitive que SVN.</p>
+<p>Pour mes projets Rails j&#8217;ai besoin au minimum d&#8217;avoir 2 branches : Une pour ma version de production et une pour ma version de développement.</p>
+<p>Ma version de développement sera dans une branche dev, et ma version de prod dans master.</p>
+<p>Mais voilà&#8230; pour pouvoir déployer ma version de dev il faut que la branche se situe également sur le serveur et pas seulement en local sur ma machine.</p>
+<p>La solution est de créer une remote branche :<br />
+<code>$ git push origin origin:refs/heads/dev<br />
+$ git fetch<br />
+$ git branch -r</code></p>
+<p>Voilà, notre branche a été créé sur le dépôt.</p>
+<p>Maintenant créons une branche en local qui permet de travailler directement sur la remote branch précédemment créée :<br />
+<code>$ git checkout --track -b dev origin/dev</code></p>
+<p>Nous voilà donc avec 2 branches.</p>
+<p>Note : Pour pouvoir fair un push de ma branche dev, un simple git push ne semble pas fonctionner lorsque l&#8217;on est dans la branche dev. Je fais donc :<br />
+<code>$ git push origin dev</code></p>
+<p><strong>Déploiement</strong></p>
+<p>Nous allons utiliser le plugin capistrano-ext :<br />
+<code>gem install capistrano-ext</code></p>
+<p>voici mon deploy.rb se situant dans config/<br />
+<code>set :stages, %w(prod dev)<br />
+set :default_stage, "dev"<br />
+require 'capistrano/ext/multistage'<br />
+require 'mongrel_cluster/recipes'<br />
+default_run_options[:pty] = true</code></p>
+<p>Je vais créer le dossier config/deploy/ dans lequel se situera mes fichiers <a href="http://pastie.org/218653">dev.rb</a> et <a href="http://pastie.org/218654">prod.rb</a></p>
+<p>Me voilà donc prêt à déployer mes applications<br />
+<code>$ cap dev deploy:setup<br />
+// Paramétrages des fichiers de config database.yml et mongrel_cluster_(dev)(prod).yml<br />
+$ cap dev deploy:cold<br />
+$ cap dev deploy (pour le déploiement normal)</code></p>
+<p>Pour déployer la version en production, rien de plus simple :<br />
+<code>$ cap prod deploy:setup<br />
+$ cap prod deploy:cold<br />
+$ cap prod deploy (pour le déploiement normal)</code></p>
+<p>Il m&#8217;est maintenant plus aisé d&#8217;avoir ma version stable et de développement. Lorsque ma version de développement est validée, je la merge dans mon master :<br />
+<code>(master) $ git merge dev</code></p>
+]]></content:encoded>
+			<wfw:commentRss>http://solisoft.net/?feed=rss2&amp;p=53</wfw:commentRss>
+		</item>
+		<item>
+		<title>Rails 2.1</title>
+		<link>http://solisoft.net/?p=52</link>
+		<comments>http://solisoft.net/?p=52#comments</comments>
+		<pubDate>Thu, 05 Jun 2008 09:50:00 +0000</pubDate>
+		<dc:creator>Olivier BONNAURE</dc:creator>
+		
+		<category><![CDATA[Ruby]]></category>
+
+		<category><![CDATA[Ruby on Rails]]></category>
+
+		<guid isPermaLink="false">http://solisoft.net/?p=52</guid>
+		<description><![CDATA[La dernière version du fameux framework Ruby on Rails est sortit avec son lot de nouveautées (source linuxfr):
+
+Gestion des fuseaux horaires:
+Cela permet plus facilement à une application de personnaliser par utilisateur le fuseau horaire des enregistrements en base. Pour cela il suffit de sauvegarder les enregistrements en UTC (Temps universel coordonné) et une variable globale [...]]]></description>
+			<content:encoded><![CDATA[<p>La dernière version du fameux framework Ruby on Rails est sortit avec son lot de nouveautées (source linuxfr):</p>
+<ul>
+<li><strong>Gestion des fuseaux horaires:</strong><br />
+Cela permet plus facilement à une application de personnaliser par utilisateur le fuseau horaire des enregistrements en base. Pour cela il suffit de sauvegarder les enregistrements en <a href="http://fr.wikipedia.org/wiki/Temps_universel_coordonn%C3%A9">UTC</a> (Temps universel coordonné) et une variable globale à l&#8217;application &#8220;<em>Time.zone</em>&#8221; change à la volée le fuseau horaire lors de l&#8217;affichage des variables.</li>
+<li><strong>Dirty Tracking (mis à jour partielle):</strong><br />
+ActiveRecord subit une évolution importante et remarquée, on peut enfin détecter les changements d&#8217;un modèle lors d&#8217;une mise à jour (par un formulaire par exemple). Cela permet de connaître facilement dans le code l&#8217;ancienne et la nouvelle valeur d&#8217;un champ précis seulement si celui-ci a changé et n&#8217;est pas encore sauvegardé.</li>
+<li><strong>Périmètre nommé (named scope):</strong><br />
+Sans doute LA grosse nouveauté de cette version, la fonction recherche (select) d&#8217;ActiveRecord devient extensible à l&#8217;infini. C&#8217;est en fait le plugin has_finder qui est inclus dans ActiveRecord et permet de définir des méthodes qui ajoutent à la volée des conditions à la requête SQL générée, avec possibilité de les imbriquer.<br />
+Un exemple vaut mieux qu&#8217;un long discours:<br />
+<code>class User &lt; ActiveRecord::Base<br />
+named_scope :active, :conditions =&gt; {:active =&gt; true}<br />
+named_scope :inactive, :conditions =&gt; {:active =&gt; false}<br />
+named_scope :recent, lambda { { :conditions =&gt; ['created_at &gt; ?', 1.week.ago] } }<br />
+end<br />
+# Usage standard<br />
+User.active    # pareil que User.find(:all, :conditions =&gt; {:active =&gt; true})<br />
+User.inactive # pareil que User.find(:all, :conditions =&gt; {:active =&gt; false})<br />
+User.recent   # pareil que User.find(:all, :conditions =&gt; ['created_at &gt; ?', 1.week.ago])<br />
+# Imbrication possible<br />
+User.active.recent<br />
+# pareil que:<br />
+# User.with_scope(:conditions =&gt; {:active =&gt; true}) do<br />
+#   User.find(:all, :conditions =&gt; ['created_at &gt; ?', 1.week.ago])<br />
+# end<br />
+</code></li>
+<li><strong>Migrations basée sur une référence temporelle:</strong><br />
+En travail collaboratif, la gestion des migrations (script qui permet de faire évoluer le schéma de la base en ajoutant/modifiant/supprimant table, colonne, index, &#8230;) avec un compteur incrémenté devenait rapidement un calvaire: si 2 personnes faisait une migration avant leur prochain commit, les migrations avaient le même numéro. Maintenant, un timestamp (référence temporelle) est utilisée pour le nommage des migrations afin d&#8217;éviter toute &#8220;collision&#8221;.</li>
+<li><strong>Dépendances des Gem (paquets ruby):</strong><br />
+On peut maintenant configurer la liste des paquets Gem requis pour l&#8217;application avec une version exacte ou minimale requise. Une nouvelle tâche à la commande &#8220;rake&#8221; permet d&#8217;installer les paquets manquants ou de les mettre à jour si besoin:<br />
+<code>rake gems:install</code></li>
+<li><strong>Meilleure mise en cache:</strong><br />
+C&#8217;est essentiellement la flexibilité de la mise en cache qui a été améliorée, on peut dorénavant facilement implémenter une nouvelle classe de gestion de cache personnalisée et l&#8217;utiliser dans les vues.</li>
+</ul>
+<p>Comme toujours pour l&#8217;installer :<br />
+<code>gem install rails</code></p>
+<p>Bref que du bien <img src='http://solisoft.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /></p>
+]]></content:encoded>
+			<wfw:commentRss>http://solisoft.net/?feed=rss2&amp;p=52</wfw:commentRss>
+		</item>
+		<item>
+		<title>Ruby on Rails : Besoin d&#8217;acheter un Mac ?</title>
+		<link>http://solisoft.net/?p=51</link>
+		<comments>http://solisoft.net/?p=51#comments</comments>
+		<pubDate>Fri, 09 May 2008 14:56:14 +0000</pubDate>
+		<dc:creator>Olivier BONNAURE</dc:creator>
+		
+		<category><![CDATA[Logiciel]]></category>
+
+		<category><![CDATA[Matériel]]></category>
+
+		<category><![CDATA[Ruby on Rails]]></category>
+
+		<guid isPermaLink="false">http://solisoft.net/?p=51</guid>
+		<description><![CDATA[Je suis un peu surpris finalement par la communauté Ruby on Rails qui semble s&#8217;orienter sur Mac pour leurs machines de développement.
+Je suis assez tenté moi aussi par un tel achat ! Mais est-ce que Ruby on Rails justifie cet achat (impulsif) ? Je ne pense pas.
+Je travaille sous GNU/Linux depuis quelques années. J&#8217;ai pris [...]]]></description>
+			<content:encoded><![CDATA[<p>Je suis un peu surpris finalement par la communauté <a href="http://www.rubyonrails.org">Ruby on Rails</a> qui semble s&#8217;orienter sur Mac pour leurs machines de développement.</p>
+<p>Je suis assez tenté moi aussi par un tel achat ! Mais est-ce que <a href="http://www.rubyonrails.org">Ruby on Rails</a> justifie cet achat (impulsif) ? Je ne pense pas.</p>
+<p>Je travaille sous GNU/Linux depuis quelques années. J&#8217;ai pris mes habitudes, mes repères &#8230; Pour le développement, j&#8217;utilise à l&#8217;instar du célèbre texmate, gedit (avec quelques plugins bien sûr). Je suis passé sous <a href="http://www.ubuntu.com/">ubuntu</a> depuis quelques temps &#8230; Oui moi, fervent utilisateur de <a href="http://www.kde.org/">KDE</a> &#8230; J&#8217;ai pas pu attendre KDE 4.1 et ai finalement choisi gnome pour un peu de dépaysement.</p>
+<p>Alors si je suis content de mon OS pourquoi vouloir changer ? Et bien effectivement, ca ne serait pas pour gagner en productivité pour le développement <a title="http://www.rubyonrails.org" href="http://www.rubyonrails.org">Ruby on Rails</a>, mais bien pour avoir une machine bien conçue et silencieuse (je penche pour un <a title="iMac Apple" href="http://store.apple.com/Apple/WebObjects/francestore?family=iMac">iMac 24&#8243;</a>).</p>
+<p>Donc à bien y réfléchir, cela serait principalement par envie de connaître un nouvel OS, qui me permettrai de faire des choses comme de la musique (composition) et de la vidéo (films familliaux) et accessoirement, travailler <img src='http://solisoft.net/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> .</p>
+<p>Je me laisse encore 1 ou 2 mois de réflexion&#8230; n&#8217;hésitez pas à me donner votre sentiment à ce sujet&#8230;</p>
+<p>Pour info, voici à quoi ressemble un bureau sous linux (pour ceux qui ne l&#8217;ont jamais vus &#8212; si si, ca existe &#8211;)</p>
+<p style="text-align: center;"><a title="Ruby on Rails on Ubuntu" href="http://www.solisoft.net/i/bureau.jpg" target="_blank"><img style="border: 0pt none;" src="http://www.solisoft.net/i/bureau_mini.jpg" alt="Mon bureau taillé sur mesure pour le développement Ruby on Rails" width="350" height="219" /></a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://solisoft.net/?feed=rss2&amp;p=51</wfw:commentRss>
+		</item>
+		<item>
+		<title>Ouverture en beta test de batitelweb.com</title>
+		<link>http://solisoft.net/?p=49</link>
+		<comments>http://solisoft.net/?p=49#comments</comments>
+		<pubDate>Mon, 21 Apr 2008 15:31:17 +0000</pubDate>
+		<dc:creator>Olivier BONNAURE</dc:creator>
+		
+		<category><![CDATA[Ruby on Rails]]></category>
+
+		<category><![CDATA[SoliSoft]]></category>
+
+		<category><![CDATA[web2.0]]></category>
+
+		<guid isPermaLink="false">http://solisoft.net/?p=49</guid>
+		<description><![CDATA[Depuis maintenant quelques mois, je travaille sur le projet batitelweb qui est un service permettant aux artisans, particuliers, architectes, etc&#8230; de créer facilement des devis en ligne et de disposer d&#8217;une bibliothèque de prix la plus complète de sa catégorie.
+Nous ouvrons aujourd&#8217;hui les ouvertures aux bétas testeurs (200 environ) donc si vous êtes intéressés, n&#8217;hésitez [...]]]></description>
+			<content:encoded><![CDATA[<p><img src="http://batitelweb.com/images/documents.jpg" style="float:right"/>Depuis maintenant quelques mois, je travaille sur le projet <a href="http://www.batitelweb.com">batitelweb </a>qui est un service permettant aux artisans, particuliers, architectes, etc&#8230; de créer facilement des devis en ligne et de disposer d&#8217;une bibliothèque de prix la plus complète de sa catégorie.</p>
+<p>Nous ouvrons aujourd&#8217;hui les ouvertures aux bétas testeurs (200 environ) donc si vous êtes intéressés, n&#8217;hésitez pas !</p>
+<p>Le projet a bien entendu été réalisé en Ruby on Rails &#8230;</p>
+]]></content:encoded>
+			<wfw:commentRss>http://solisoft.net/?feed=rss2&amp;p=49</wfw:commentRss>
+		</item>
+		<item>
+		<title>image_science et freeBSD</title>
+		<link>http://solisoft.net/?p=48</link>
+		<comments>http://solisoft.net/?p=48#comments</comments>
+		<pubDate>Mon, 17 Mar 2008 15:52:25 +0000</pubDate>
+		<dc:creator>Olivier BONNAURE</dc:creator>
+		
+		<category><![CDATA[Ruby]]></category>
+
+		<category><![CDATA[freeBSD]]></category>
+
+		<guid isPermaLink="false">http://solisoft.net/?p=48</guid>
+		<description><![CDATA[En ce doux moi de Mars, j&#8217;ai voulu mettre image_science sur ma freeBSD. Et là horreur !! J&#8217;avais un problème de bibliothèque non trouvée !
+Alors si comme moi vous vous retrouvez avec l&#8217;erreur suivante :
+/usr/bin/ld: cannot find -lfreeimage
+Il suffit de mettre dans le fichier image_science.rb (chez moi vi /usr/local/lib/ruby/gems/1.8/gems/image_science-1.1.3/lib/image_science.rb
+) la ligne suivante
+builder.add_link_flags "-L/usr/local/lib"
+au dessus de [...]]]></description>
+			<content:encoded><![CDATA[<p>En ce doux moi de Mars, j&#8217;ai voulu mettre image_science sur ma freeBSD. Et là horreur !! J&#8217;avais un problème de bibliothèque non trouvée !</p>
+<p>Alors si comme moi vous vous retrouvez avec l&#8217;erreur suivante :</p>
+<pre>/usr/bin/ld: cannot find -lfreeimage</pre>
+<p>Il suffit de mettre dans le fichier image_science.rb (chez moi vi /usr/local/lib/ruby/gems/1.8/gems/image_science-1.1.3/lib/image_science.rb<br />
+) la ligne suivante</p>
+<pre>builder.add_link_flags "-L/usr/local/lib"</pre>
+<p>au dessus de celle ci :</p>
+<pre>builder.add_link_flags "-lfreeimage"</pre>
+<p>Et vous voila avec image_science fonctionnel sur votre freeBSD (ouf!)</p>
+]]></content:encoded>
+			<wfw:commentRss>http://solisoft.net/?feed=rss2&amp;p=48</wfw:commentRss>
+		</item>
+		<item>
+		<title>Comment trier vos Hash</title>
+		<link>http://solisoft.net/?p=47</link>
+		<comments>http://solisoft.net/?p=47#comments</comments>
+		<pubDate>Mon, 17 Mar 2008 15:47:45 +0000</pubDate>
+		<dc:creator>Olivier BONNAURE</dc:creator>
+		
+		<category><![CDATA[Bloc Note]]></category>
+
+		<category><![CDATA[Ruby]]></category>
+
+		<guid isPermaLink="false">http://solisoft.net/?p=47</guid>
+		<description><![CDATA[Par défaut les Hash en ruby sont non triés ! Cela peut être génant lorsque l&#8217;on veut justement qu&#8217;ils le soient ! Heureusement il existe un gem qui permet d&#8217;avoir ce comportement !
+http://collections.rubyforge.org/
+Pour l&#8217;installer rien de plus simple :
+gem install collections
+Ensuite rien de bien compliqué non plus !
+[ruby]
+require &#8216;rubygems&#8217;
+require &#8216;collections&#8217;
+# or
+require &#8216;collections/sequenced_hash&#8217;
+hash = SequencedHash.new
+hash[:v1] = [...]]]></description>
+			<content:encoded><![CDATA[<p>Par défaut les Hash en ruby sont non triés ! Cela peut être génant lorsque l&#8217;on veut justement qu&#8217;ils le soient ! Heureusement il existe un gem qui permet d&#8217;avoir ce comportement !</p>
+<p><a href="http://collections.rubyforge.org/">http://collections.rubyforge.org/</a></p>
+<p>Pour l&#8217;installer rien de plus simple :</p>
+<p><code>gem install collections</code></p>
+<p>Ensuite rien de bien compliqué non plus !</p>
+<p>[ruby]<br />
+require &#8216;rubygems&#8217;<br />
+require &#8216;collections&#8217;<br />
+# or<br />
+require &#8216;collections/sequenced_hash&#8217;<br />
+hash = SequencedHash.new<br />
+hash[:v1] = &#8220;v1&#8243;<br />
+hash[:v2] = &#8220;v2&#8243;<br />
+hash[:v3] = &#8220;v3&#8243;<br />
+hash.inspect # =&gt; {:v1=&gt;&#8221;v1&#8243;, :v2=&gt;&#8221;v2&#8243;, :v3=&gt;&#8221;v3&#8243;}<br />
+hash.at(0) # =&gt; &#8220;v1&#8243;<br />
+hash.at(1) # =&gt; &#8220;v2&#8243;<br />
+[/ruby]</p>
+]]></content:encoded>
+			<wfw:commentRss>http://solisoft.net/?feed=rss2&amp;p=47</wfw:commentRss>
+		</item>
+	</channel>
+</rss>

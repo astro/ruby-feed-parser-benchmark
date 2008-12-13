@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+  <channel>
+    <title>PHPDeveloper.org</title>
+    <link>http://www.phpdeveloper.org</link>
+    <description>Up-to-the Minute PHP News, views and community</description>
+    <language>en-us</language>
+    <pubDate>Fri, 12 Dec 2008 11:59:18 -0600</pubDate>
+    <ttl>30</ttl>
+    <item>
+      <title><![CDATA[Abhinav Singh's Blog: PHP Extensions - How and Why?]]></title>
+      <guid>http://www.phpdeveloper.org/news/11562</guid>
+      <link>http://www.phpdeveloper.org/news/11562</link>
+      <description><![CDATA[<p>
+<i>Abhinav Singh</i> has <a href="http://abhinavsingh.com/blog/2008/12/php-extensions-how-and-why/">posted a guide</a> to PHP extensions - what they are and how to write a simple "hello world" one.
+</p>
+<blockquote>
+Assuming you have read the <a href="http://abhinavsingh.com/blog/2008/11/how-does-php-echos-a-hello-world-behind-the-scene/">previous post</a>, lets discuss on how to build our first PHP extension: every PHP extension is built out of minimum of 2 files, a configuration file (config.m4) which tells us what files to build and what external libraries are needed and source File(s) which will contain the actual functionality.
+</blockquote>
+<p>
+He builds up an example skeleton for an extension (the config.m4) and explains how the file will be phpized and configured. Next up is the php_sample.h header file where the needed modules are loaded and the sample.c file to define them. Last, but not least, comes the extension code itself that calls the printf function to output the "hello world" message.
+</p>]]></description>
+      <pubDate>Fri, 12 Dec 2008 11:17:23 -0600</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[ServerSide Magazine: Session Hijacking]]></title>
+      <guid>http://www.phpdeveloper.org/news/11561</guid>
+      <link>http://www.phpdeveloper.org/news/11561</link>
+      <description><![CDATA[<p>
+In <a href="http://www.serversidemagazine.com/php/session-hijacking">this recent article</a> from ServerSide Magazine they look at a security issue that can be hard to detect if you're not sure what you're looking for - session hijacking - and how you can help to prevent it on your site.
+</p>
+<blockquote>
+A must have for the attacker in a session hijack is the Session Identifier so he can impersonate the attack. Let's presume for example that you have your website hosted on a shared hosting on which PHP is installed as an Apache module, thing that makes session files belong to the web user, in other words: accessible.
+</blockquote>
+<p>
+He breaks it out into three potential kinds of session hijack methods - prediction, capture and fixation - with definitions for each. He also makes recommendations of some secure practices to follow to help prevent some of these issues (like not trusting users, using $_COOKIE and $_SESSION correctly and using a security token too along with the session ID).
+</p>]]></description>
+      <pubDate>Fri, 12 Dec 2008 10:23:42 -0600</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Vinu Thomas' Blog: Wordpress blogging on a S60 Phone]]></title>
+      <guid>http://www.phpdeveloper.org/news/11560</guid>
+      <link>http://www.phpdeveloper.org/news/11560</link>
+      <description><![CDATA[<p>
+In <a href="http://blogs.vinuthomas.com/2008/12/11/wordpress-blogging-on-a-s60-phone/">this new post</a> to his blog <i>Vinu Thomas</i> shows how to install an application onto his <a href="http://www.s60.com/life">S60 phone</a> to access his WordPress blog.
+</p>
+<blockquote>
+I just came across this S60 freeware today which allows me to manage my wordpress blog on my E71. Wordmobi is a Python app which can be used to perform the following tasks on the blog: create/publish new posts, include images in the posts, view/approve comments and delete posts.
+</blockquote>
+<p>
+You'll need to install <a href="http://sourceforge.net/project/showfiles.php?group_id=154155">Python on the phone</a> before you can get <a href="http://code.google.com/p/wordmobi/downloads/list">Wordmobi</a> up and running. He includes screenshots for quick blog setup and the resulting listing of posts it pulls in.
+</p>]]></description>
+      <pubDate>Fri, 12 Dec 2008 09:31:39 -0600</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Leonid Mamchenkov's Blog: Perl vs. PHP : variable scoping]]></title>
+      <guid>http://www.phpdeveloper.org/news/11559</guid>
+      <link>http://www.phpdeveloper.org/news/11559</link>
+      <description><![CDATA[<p>
+<i>Leonid Mamchenkov</i> has compared Perl versus PHP in <a href="http://mamchenkov.net/wordpress/2008/12/12/perl-vs-php-variable-scoping/">this new blog post</a> - specifically how they handle variable scoping.
+</p>
+<blockquote>
+I've mentioned quite a few times that I am a big fan of Perl programming language.  However, most of my programming time these days is spent in PHP.  The languages are often similar, with PHP having its roots in Perl, and Perl being such a influence in the world of programming languages.  This similarity is often very helpful.  However there are a few difference, some of which are obvious and others are not.
+</blockquote>
+<p>
+His example compares looping (a foreach in both) and how, after the Perl loop the $value variable is no longer accessible. In PHP, however, it's passed back out into the current scope and can be read just like any other variable. While this can be useful, it can also cause headaches when trying to track down elusive bugs.
+</p>]]></description>
+      <pubDate>Fri, 12 Dec 2008 08:49:14 -0600</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Chris Jones' Blog: PHP OCI8 1.3 RPM is now on ULN]]></title>
+      <guid>http://www.phpdeveloper.org/news/11558</guid>
+      <link>http://www.phpdeveloper.org/news/11558</link>
+      <description><![CDATA[<p>
+<i>Chris Jones</i> <A href="http://blogs.oracle.com/opal/2008/12/php_oci8_13_rpm_is_now_on_uln.html">has announced</a> that the latest build of the OCI8 drivers for PHP (the RPM of them) has been posted to their "<a href="http://linux.oracle.com/">Unbreakable Linux Network</a>" site.
+</p>
+<blockquote>
+A "php-oci8-11gR1" RPM is now available on the "Unbreakable Linux Network" (<a href="http://linux.oracle.com/">http://linux.oracle.com/</a>) in the Oracle channel. If you have the appropriate ULN subscription, you can use 'up2date' or 'yum' to install it and its dependencies (e.g. the Oracle Instant Client 11g RPM).
+</blockquote>
+<p>
+This new package includes drivers for 9iR2, 10g and 11g Oracle databases and uses connection pooling if it is available.
+</p>]]></description>
+      <pubDate>Fri, 12 Dec 2008 07:55:31 -0600</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Site News: Popular Posts for the Week of 12.12.2008]]></title>
+      <guid>http://www.phpdeveloper.org/news/11557</guid>
+      <link>http://www.phpdeveloper.org/news/11557</link>
+      <description><![CDATA[Popular posts from PHPDeveloper.org for the past week:<ul><li><a href="/news/11537">Doug Brown's Blog: Zend Framework vs CakePHP Framework</a>
+<li><a href="/news/11514">TotalPHP: Using a global configuration file</a>
+<li><a href="/news/11515">Knut Urdalen's Blog: Yii Framework 1.0 released!</a>
+<li><a href="/news/11516">Eli White's Blog: Interviewing Programmers</a>
+<li><a href="/news/11546">Kris Jordan's Blog: Towards RESTful PHP - 5 Basic Tips</a>
+<li><a href="/news/11517">php|architect: Last day for our iPod Training Promo</a>
+<li><a href="/news/11529">DevShed: Logging in PHP Applications </a>
+<li><a href="/news/11512">Community News: PHP 5.2.7 Released</a>
+<li><a href="/news/11538">Keith Casey's Blog: Useful Naming Conventions</a>
+<li><a href="/news/11545">JankoAtWarpSpeed.com: Discussion: Why web designers often use PHP over ASP.NET? </a>
+</ul>]]></description>
+      <pubDate>Fri, 12 Dec 2008 07:02:03 -0600</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Lukas Smith's Blog: Persistent connections with MSSQL]]></title>
+      <guid>http://www.phpdeveloper.org/news/11555</guid>
+      <link>http://www.phpdeveloper.org/news/11555</link>
+      <description><![CDATA[<p>
+<i>Lukas Smith</i> is <a href="http://pooteeweet.org/blog/0/1370#m1370">looking for a little help</a> on a strange problem he's seeing connecting to a SQL Server with persistent connections:
+</p>
+<blockquote>
+We are connecting to SQL Server via mssql_pconnect(). MaxChilds is set to 256 and we are only establishing one connection per request. So as a result I am expecting a maximum of 256 established connections. A client went into production yesterday and due to a missing index the server ended up being insanely loaded, as the queries started to block each other. The sysadmin checked the state of things via netstat and found that there were close to 500 tcp connections to the SQL Server. What gives?
+</blockquote>
+<p>
+He checked FreeTDS and the MaxRequestsPerChild settings to ensure that nothing there could have caused the problem, but hasn't found any hints so far. If he can't solve it right away, he also wonders if there's a way to kill idle connections if they're not used in a certain amount of time.
+</p>
+<p>
+There's already one connect that mentions a similar issue but with Oracle connections, also on RHEL, but no definitive answers so far.
+</p>]]></description>
+      <pubDate>Thu, 11 Dec 2008 12:01:26 -0600</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Brian Snugg's Blog: Reverse Proxy in PHP5]]></title>
+      <guid>http://www.phpdeveloper.org/news/11554</guid>
+      <link>http://www.phpdeveloper.org/news/11554</link>
+      <description><![CDATA[<p>
+<i>Brian Snugg</i> has two new posts relating to his script for a reverse proxy in PHP5. The first lays the foundation, the second makes some updates to make it a bit more efficient.
+</p>
+<blockquote>
+So I have been working on a little class to run a reverse proxy from <a href="http://www.php.net/">PHP</a> using <a href="http://us.php.net/curl">cURL</a>. I have extended this class for my own purposes (single-sign-on) to handle some special request parameters, but here it is. It has some warts, but it's a good starting point.
+</blockquote>
+<p>
+He creates the ProxyHandler class in the <a href="http://techzinger.blogspot.com/2007/07/writing-reverse-proxy-in-php5.html">first post</a> and in the <a href="http://techzinger.blogspot.com/2007/07/reverse-proxy-in-php5-rev2.html">second</a> updates the script to pass a more correct version of the headers to the proxy server to get a better response back.
+</p>]]></description>
+      <pubDate>Thu, 11 Dec 2008 11:14:03 -0600</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Marc Gear's Blog: How to learn a new PHP framework]]></title>
+      <guid>http://www.phpdeveloper.org/news/11553</guid>
+      <link>http://www.phpdeveloper.org/news/11553</link>
+      <description><![CDATA[<p>
+In <a href="http://www.onekay.com/blog/archives/35">this new blog entry</a> <i>Marc Gear</i> suggests a few things that you can do to help learn a new framework quickly and easily:
+</p>
+<blockquote>
+There are dozens of PHP frameworks around now, some attracting more attention than others. I am no expert on these frameworks and have not used a single one extensively so I wouldn't dream of recommending one over the other, nor do I want to enter the debate about what is or is not a framework (I'll work on the assumption that anything calling itself a framework is a framework).  Instead I'm going to concentrate on how you can get started with a new framework as quickly as possible.
+</blockquote>
+<p>
+He <a href="http://www.onekay.com/blog/archives/35">suggests</a> four examples that can help you get more familiar with each framework and how they're structured - a "hello world" as a first step, creating a simple calculator, making a guestbook and making a simple script to parse and paginate a remote RSS feed.
+</p>]]></description>
+      <pubDate>Thu, 11 Dec 2008 10:20:28 -0600</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[Mike Lively's Blog: Book Review: PHP5 CMS Framework Development by Martin Brampton]]></title>
+      <guid>http://www.phpdeveloper.org/news/11552</guid>
+      <link>http://www.phpdeveloper.org/news/11552</link>
+      <description><![CDATA[<p>
+<i>Mike Lively</i> has <a href="http://www.ds-o.com/archives/76-Book-Review-PHP5-CMS-Framework-Development-by-Martin-Brampton.html">a new review</a> of a book from Packt Publshing (authored by <i>Martin Brampton</i>) - PHP5 CMS Framework Development.
+</p>
+<blockquote>
+Upon reading through the book I have found that it gives an excellent case study of Martin Brampton's approach to CMS design and implementation. [...] One might be concerned that the ideas in this book are slanted towards how Brampton decided to implement various aspects of Aliro. While it is true that much of the book uses code directly out of Aliro, I feel that he did take the time to make sure he explained the reasons for the design and development decisions he made.
+</blockquote>
+<p>
+The more he read through the book, the more <i>Mike</i> felt like it was a case study of the Aliro CMS rather than a true look at CMS building in PHP5. He (Mike) lays out some of the contents of the book including the look at common CMS functionality, code organization, extensions and internationalization.
+</p>]]></description>
+      <pubDate>Thu, 11 Dec 2008 09:32:54 -0600</pubDate>
+    </item>
+  </channel>
+</rss>

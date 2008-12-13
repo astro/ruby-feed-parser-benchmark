@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xml:lang="fr">
+  
+  <title type="html">Standblog</title>
+  <subtitle type="html">Tristan Nitot sur les standards du Web, les navigateurs et la technologie</subtitle>
+  <link href="http://standblog.org/blog/feed/atom" rel="self" type="application/atom+xml"/>
+  <link href="http://standblog.org/blog/" rel="alternate" type="text/html"
+  title="Tristan Nitot sur les standards du Web, les navigateurs et la technologie"/>
+  <updated>2008-12-12T11:17:48+01:00</updated>
+  <author>
+    <name>Tristan Nitot</name>
+  </author>
+  <id>urn:md5:82ecb6a121c45d09243dc58cde2a1c14</id>
+  <generator uri="http://www.dotclear.net/">Dotclear</generator>
+  
+    
+  <entry>
+    <title>Off line</title>
+    <link href="http://standblog.org/blog/post/2008/12/12/Off-line" rel="alternate" type="text/html"
+    title="Off line" />
+    <id>urn:md5:ecdfe79afe1827a88c5024eb937938e5</id>
+    <updated>2008-12-12T11:53:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>StandBlog et blogs</dc:subject>
+            
+    <content type="html">    &lt;p&gt;Je m'éloigne du clavier pendant quelques jours. Faisez pas les cons avec le net pendant ce temps là&amp;nbsp;! &lt;img src=&quot;/dc-blog/themes/default/smilies/wink.png&quot; alt=&quot;;-)&quot; class=&quot;smiley&quot; /&gt; Comme toujours, je ferme les commentaires histoire d'éviter le spam.&lt;/p&gt;</content>
+    
+      </entry>
+    
+  <entry>
+    <title>Sortie de Google Chrome</title>
+    <link href="http://standblog.org/blog/post/2008/12/12/Sortie-de-Google-Chrome" rel="alternate" type="text/html"
+    title="Sortie de Google Chrome" />
+    <id>urn:md5:7c122eb7508586ba0642744417089a90</id>
+    <updated>2008-12-12T09:57:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>Navigateurs</dc:subject>
+            
+    <content type="html">    &lt;p&gt;Ca y est, &lt;a href=&quot;http://www.google.com/chrome/&quot;&gt;Google Chrome&lt;/a&gt; vient de sortir. &lt;a href=&quot;http://www.techcrunch.com/2008/12/10/marissa-mayer-at-le-web-the-almost-complete-interview/&quot; hreflang=&quot;en&quot;&gt;Marissa Mayer n'a donc pas menti avant hier&lt;/a&gt; en annonçant que Chrome sortirait &quot;très très bientôt&quot;&amp;nbsp;! Seule la version Windows est disponible pour l'instant, je ne peux donc pas la tester pour l'instant (je suis en vacances).&lt;/p&gt;
+
+
+&lt;p&gt;Trois choses me viennent à l'esprit suite à cette annonce&amp;nbsp;:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Comme je le &lt;a href=&quot;http://www.vnunet.fr/news/vnunet_tv_t_nitot_mozilla_la_feuille_de_route_2009_est_super_chargee_-2029585&quot; hreflang=&quot;fr&quot;&gt;déclarais à VNUnet&lt;/a&gt;, 2009 va être une très grande année pour les navigateurs. La concurrence va être féroce, avec la sortie de Chrome (qui démarre les hostilités), celle d'IE8, de Safari 4, de Firefox 3.1 et Opera 10. Quand on pense à la situation d'il y a 4 ou 5 ans, avant la sortie de Firefox 1.0, le progrès est flagrant&amp;nbsp;: le monopole n'est plus et l'innovation est de retour. C'est une excellente nouvelle pour l'état de santé du Web tout comme pour les utilisateurs&lt;/li&gt;
+&lt;li&gt;A propos d'innovation, justement, que des bonnes nouvelles&amp;nbsp;:
+&lt;ol&gt;
+&lt;li&gt;3 navigateurs dont le moteur est Libre vont bénéficier du &lt;acronym title=&quot;Just In Time / Juste à Temps&quot;&gt;JIT&lt;/acronym&gt; Tracing, qui accélère grandement l'éxecution de JavaScript (SquirrelFish pour Apple Safari, V8 pour Google Chrome et TraceMonkey pour Mozilla Firefox).&lt;/li&gt;
+&lt;li&gt;4 navigateurs modernes – Chrome, Safari, Firefox et Opera – ont déjà commencé à adopter HTML 5, avec vidéo native,  &lt;code&gt;canvas&lt;/code&gt;. Que du bonheur pour les développeurs Web, et de belles innovations en terme de services et d'ergonomie en perspective.&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;Internet Explorer 8 ne supporte pas ni HTML 5 ni SVG. Il n'a pas de JIT Tracing et malgré son gain en performance, est loin derrière les 4 autres. Ne parlons même pas du test Acid3, ni du système d'extensions... Bref, &lt;strong&gt;IE 8 est dépassé avant même d'être sorti&lt;/strong&gt;. Avec toute la communication et le marketing autour des navigateurs (imaginez Apple + Google communiquant sur le sujet !), il va devenir évident pour tout le monde qu'Internet Explorer 6 et 7 sont obsolètes, et que la version 8 est à la traîne. Cette prise de conscience des utilisateurs est essentielle pour que les navigateurs modernes – qu'ils soient Libres ou propriétaires – puissent progresser, et que le Web puisse tenir les promesses de HTML 5.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Donc 2009 vient en fait de commencer, au moins pour les navigateurs, et ça promet du très bon pour le Web et ses utilisateurs. Mais ça veut dire aussi qu'il va y avoir une pression concurrentielle plus grande encore. C'est rarement confortable pour les acteurs, mais c'est facteur de progrès et d'innovation. Je ne demande pas mieux.&lt;/p&gt;</content>
+    
+      </entry>
+    
+  <entry>
+    <title>WCAG 2.0 est sorti</title>
+    <link href="http://standblog.org/blog/post/2008/12/11/WCAG-20-est-sorti" rel="alternate" type="text/html"
+    title="WCAG 2.0 est sorti" />
+    <id>urn:md5:a478ad806b3caad8c11937f6ba1b8e4f</id>
+    <updated>2008-12-11T17:54:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>Standards</dc:subject>
+            
+    <content type="html">    &lt;p&gt;Ca alors, deux grosses actus sur les standards et l'accessibilité qui sortent à quelques heures d'intervalle, c'est fou&amp;nbsp;!&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href=&quot;http://www.w3.org/TR/WCAG20/&quot; hreflang=&quot;en&quot;&gt;WCAG 2.0&lt;/a&gt; vient de sortir. &lt;acronym title=&quot;Web Content Accessibility Guidelines&quot;&gt;WCAG&lt;/acronym&gt; ça signifie &lt;em&gt;Web Content Accessibility Guidelines&lt;/em&gt;, autrement dit comment rendre accessible du contenu Web. C'est une &lt;em&gt;recommandation&lt;/em&gt; (dans le jargon du W3C, ça signifie que c'est un standard) dont l'essentiel est normatif. C'est un grand pas en avant pour l'accessibilité, et j'apprends qu'&lt;a href=&quot;http://www.accessiweb.org/&quot; hreflang=&quot;fr&quot;&gt;Accessiweb&lt;/a&gt; va produire une traduction officielle du document prochainement.&lt;/p&gt;</content>
+    
+      </entry>
+    
+  <entry>
+    <title>Actu Mozilla</title>
+    <link href="http://standblog.org/blog/post/2008/12/11/Actu-Mozilla" rel="alternate" type="text/html"
+    title="Actu Mozilla" />
+    <id>urn:md5:c6fb40b4f44a416462100cc8a7a42b70</id>
+    <updated>2008-12-11T17:20:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>Mozilla-Europe</dc:subject>
+            
+    <content type="html">    &lt;ul&gt;
+&lt;li&gt;Firefox est listé dans les &lt;a href=&quot;http://www.readwriteweb.com/archives/top_10_consumer_apps_2008.php&quot; hreflang=&quot;en&quot;&gt;Top 10 Consumer Web Apps of 2008&lt;/a&gt; de RW Web. Vous voulez dire &lt;em&gt;apps for the Web&lt;/em&gt;&amp;nbsp;?&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.appscout.com/2008/12/firefox_overtakes_chrome_as_ja.php&quot; hreflang=&quot;en&quot;&gt;Firefox Overtakes Chrome as JavaScript Speed Champion&lt;/a&gt;&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;Firefox fait partie des &lt;a href=&quot;http://images.businessweek.com/ss/08/12/1210_best_worst_tech/10.htm&quot; hreflang=&quot;en&quot;&gt;Best Tech Products&lt;/a&gt; de Business Week&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.vnunet.fr/news/vnunet_tv_t_nitot_mozilla_la_feuille_de_route_2009_est_super_chargee_-2029585&quot;&gt;Vnunet TV: T. Nitot (Mozilla)&amp;nbsp;: &quot;La feuille de route 2009 est super-chargée&quot;&lt;/a&gt;&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.lemondeinformatique.fr/entretiens/lire-david-ascher-pdg-de-mozilla-messaging-114.html&quot; hreflang=&quot;fr&quot;&gt;Interview de David Ascher, à propos de Thunderbird 3 Beta&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Feuille de route pour &lt;a href=&quot;http://www.christiansejersen.com/blog/2008/12/10/fennec-mobile-firefox-for-symbian/&quot; hreflang=&quot;en&quot;&gt;Fennec (Mobile Firefox) for Symbian&lt;/a&gt;&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.karlt.net/2008/12/firefox-31-beta-2-on-linux-uses-less.html&quot; hreflang=&quot;en&quot;&gt;Firefox 3.1 Beta 2 on Linux uses less memory&lt;/a&gt;. Au delà de la bonne nouvelle, c'est la méthodologie sous-jacente qui est intéressante&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;Le projet &lt;a href=&quot;http://impactmozilla.com/&quot; hreflang=&quot;en&quot;&gt;Impact Mozilla&lt;/a&gt;, qui vise à permettre à ceux qui le souhaitent d'inventer de nouvelles campagnes marketing pour Firefox, vient d'arriver dans sa seconde phase, celle où les internautes peuvent &lt;a href=&quot;http://impactmozilla.com/vote/&quot; hreflang=&quot;en&quot;&gt;voter&lt;/a&gt; pour sélectionner le projet qui deviendra réalité. &lt;a href=&quot;http://impactmozilla.com/vote/&quot; hreflang=&quot;en&quot;&gt;A vous de jouer&lt;/a&gt;&amp;nbsp;!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://news.softpedia.com/news/Interview-Tristan-Nitot-President-of-Mozilla-Europe-99323.shtml&quot; hreflang=&quot;en&quot;&gt;Interview: Tristan Nitot, President of Mozilla Europe&lt;/a&gt;&amp;nbsp;;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    
+      </entry>
+    
+  <entry>
+    <title>Introduction à l'accessibilité des applications Internet riches</title>
+    <link href="http://standblog.org/blog/post/2008/12/11/Introduction-a-l-accessibilite-des-applications-Internet-riches" rel="alternate" type="text/html"
+    title="Introduction à l'accessibilité des applications Internet riches" />
+    <id>urn:md5:b301e0b30c559ee9c011fdc90638dcbf</id>
+    <updated>2008-12-11T15:06:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>Standards</dc:subject>
+            
+    <content type="html">    &lt;p&gt;&lt;a href=&quot;http://farm4.static.flickr.com/3187/3100449790_1a4b365294_b.jpg&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3187/3100449790_1a4b365294.jpg&quot; alt=&quot;Handicapped parking sign painted on the floor. CDG airport&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;&lt;em&gt;&lt;a href=&quot;http://www.flickr.com/photos/nitot/3100449790/&quot;&gt;Handicapped parking sign painted on the floor. CDG airport&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Une des grandes limites d'Ajax et des applications Web, c'est qu'on n'est plus dans une approche &quot;document&quot; d'une page Web, mais plutôt dans une perspective applicative. Ca signifie qu'en terme d'accessibilité numérique, on régresse, ce qui est regrettable.&lt;/p&gt;
+
+
+&lt;p&gt;C'est en vue de renverser la vapeur et rendre les applications Web accessible qu'a été lancée l'initiative WAI / ARIA|Web Accessibility Initiative / Accessible Rich Internet Applications??. Une &lt;a href=&quot;http://dev.opera.com/articles/view/introduction-to-wai-aria/&quot; hreflang=&quot;en&quot;&gt;introduction to ARIA&lt;/a&gt; en anglais existe (merci Opera) et voici qu'une version française, &lt;a href=&quot;http://www.lesintegristes.net/2008/12/09/introduction-a-wai-aria-traduction/&quot; hreflang=&quot;fr&quot;&gt;Introduction à WAI ARIA&lt;/a&gt; vient d'être publiée.&lt;/p&gt;
+
+
+&lt;p&gt;(trouvé via &lt;a href=&quot;http://accessgarage.wordpress.com/&quot; hreflang=&quot;en&quot;&gt;Aaron Leventhal&lt;/a&gt;).&lt;/p&gt;</content>
+    
+      </entry>
+    
+  <entry>
+    <title>Le logiciel et moi (4/4) : conclusion</title>
+    <link href="http://standblog.org/blog/post/2008/12/09/Le-logiciel-et-moi-4/4" rel="alternate" type="text/html"
+    title="Le logiciel et moi (4/4) : conclusion" />
+    <id>urn:md5:e145a10b4cb4ac35c8a91dac009c9e15</id>
+    <updated>2008-12-10T15:59:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>Technologie</dc:subject>
+            
+    <content type="html">    &lt;p&gt;Ce billet fait partie d'une série&amp;nbsp;:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://standblog.org/blog/post/2008/12/09/Le-logiciel-et-moi-1/4&quot; hreflang=&quot;fr&quot;&gt;A propos du logiciel propriétaire&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://standblog.org/blog/post/2008/12/09/Le-logiciel-et-moi-2/4&quot; hreflang=&quot;fr&quot;&gt;De l'importance du logiciel et de sa liberté&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://standblog.org/blog/post/2008/12/09/Le-logiciel-et-moi-3/4&quot; hreflang=&quot;fr&quot;&gt;Le logiciel Libre, nouveau mode d'organisation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Conclusion.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Que les choses soient claires&amp;nbsp;: pour moi, Mozilla est une &lt;strong&gt;formidable expérience à la fois technique et sociale&lt;/strong&gt;. A grande échelle. Par contre, j'ignore si elle est transposable au monde entier. Je ne dis pas que tout le monde devrait bosser pour une fondation, ou que tout le monde devrait être bénévole. Peut-être qu'on y arrivera un jour. Peut-être que dans 1, 2 ou &lt;em&gt;n&lt;/em&gt; siècles, on va regarder le modèle capitaliste en ricanant car il sera devenu désuet, voire obsolète. Je n'en sais rien. Je ne suis pas attaché à ce modèle particulièrement, car j'en connais trop bien les limites, même si j'ai la chance d'être du bon coté, celui qui a accès à la sécurité sociale, à l'éducation nationale, à un état de droit et un environnement social et familial privilégié.&lt;/p&gt;
+
+
+&lt;p&gt;Pour moi, le Libre est un formidable terrain d'expérimentation social et économique, qui permet d'approcher un peu un futur potentiel tout en se rendant utile socialement à une échelle impossible à imaginer avant.&lt;/p&gt;
+
+
+&lt;p&gt;Pour autant, je ne suis pas un extrémiste. Je ne souhaite pas la révolution. J'ai besoin de me sentir à l'aise dans mon environnement. Il y va de ma santé mentale. Mais le monde qui m'entoure peut être perfectionné, amélioré. A ma très modeste échelle, le logiciel Libre est le plus gros levier qui soit à ma portée. J'essaye juste de comprendre comment il marche, dans quel sens il faut l'actionner pour faire bouger le monde dans la bonne direction, même si l'impact est minime par rapport aux injustices qui minent la vie de mes contemporains.&lt;/p&gt;</content>
+    
+      </entry>
+    
+  <entry>
+    <title>Le logiciel et moi (3/4) : Le logiciel Libre, nouveau mode d'organisation</title>
+    <link href="http://standblog.org/blog/post/2008/12/09/Le-logiciel-et-moi-3/4" rel="alternate" type="text/html"
+    title="Le logiciel et moi (3/4) : Le logiciel Libre, nouveau mode d'organisation" />
+    <id>urn:md5:2b77cf45874c6ecbb8167d70adcc2cd7</id>
+    <updated>2008-12-10T11:57:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>Technologie</dc:subject>
+            
+    <content type="html">    &lt;p&gt;Ce billet fait partie d'une série&amp;nbsp;:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://standblog.org/blog/post/2008/12/09/Le-logiciel-et-moi-1/4&quot; hreflang=&quot;fr&quot;&gt;A propos du logiciel propriétaire&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://standblog.org/blog/post/2008/12/09/Le-logiciel-et-moi-2/4&quot; hreflang=&quot;fr&quot;&gt;De l'importance du logiciel et de sa liberté&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Le logiciel Libre, nouveau mode d'organisation&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://standblog.org/blog/post/2008/12/09/Le-logiciel-et-moi-4/4&quot; hreflang=&quot;fr&quot;&gt;Conclusion&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;p&gt;Là, c'est un autre aspect très différent, mais complémentaire, qui me fascine tout autant dans le logiciel Libre: &lt;strong&gt;comment organiser la production d'un logiciel d'une façon différente de l'économie traditionnelle, qui joue sur la privatisation ?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Comment inventer des nouveaux modes de collaboration à l'échelle du globe&amp;nbsp;? Comment faire pour que le résultat profite à un maximum de gens&amp;nbsp;?&lt;/li&gt;
+&lt;li&gt;Qu'est-ce qu'implique la création d'un logiciel qui appartient à tous, qui est un bien commun&amp;nbsp;?&lt;/li&gt;
+&lt;li&gt;Comment un tel logiciel peut refléter et servir les valeurs et les intentions de ceux qui le produisent (en l'occurrence les utilisateurs eux-même).&lt;/li&gt;
+&lt;li&gt;Comment un logiciel Libre, réalisé sous l'égide d'une fondation à but non lucratif peut jouer un rôle puissant dans le monde, y compris sur un marche super-concurrentiel (souvenons nous que les concurrents de Mozilla Firefox sont Microsoft, Apple, Google et Opera).&lt;/li&gt;
+&lt;li&gt;Comment, en donnant des outils à des utilisateurs pas nécessairement informaticiens, on arrive à obtenir un logiciel de meilleure qualité et plus localisé qu'avec des méthodes propriétaires.&lt;/li&gt;
+&lt;li&gt;Comment l'ouverture du code et l'ajout de mécanismes complémentaires permet une innovation distribuée qui profite à une plus grande audience&amp;nbsp;?&lt;/li&gt;
+&lt;li&gt;Comment le logiciel Libre arrive à botter les fesses d'une multi-nationale monopolistique pour que les utilisateurs soient mieux servis, avec de meilleurs produits, avec des prix plus en rapport avec la réalité de leur coût.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pour l'instant, nous n'avons que des éléments de réponse à ces questions, et Mozilla est un laboratoire où on expérimente sur ces sujets.&lt;/p&gt;</content>
+    
+      </entry>
+    
+  <entry>
+    <title>Sortie de Thunderbird 3 Beta 1</title>
+    <link href="http://standblog.org/blog/post/2008/12/10/Sortie-de-Thunderbird-3-Beta-1" rel="alternate" type="text/html"
+    title="Sortie de Thunderbird 3 Beta 1" />
+    <id>urn:md5:86425f7a14b8ba27468a1360f4794804</id>
+    <updated>2008-12-10T08:21:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>Mozilla-Europe</dc:subject>
+            
+    <content type="html">    &lt;p&gt;Voilà, &lt;a href=&quot;http://www.mozillamessaging.com/en-US/thunderbird/3.0b1/&quot; hreflang=&quot;en&quot;&gt;Thunderbird 3 Beta 1&lt;/a&gt; vient de sortir. Ca fait super plaisir de voir que les efforts de la nouvelle équipe Thunderbird portent leurs fruits. C'est toujours pareil avec le logiciel&amp;nbsp;: on bosse pendant des mois ou des années sur un truc compliqué, mais il faut attendre la publication d'une version pour savoir ce qu'en pensent les utilisateurs.&lt;/p&gt;
+
+
+&lt;p&gt;En l'occurrence, les nouveautés ne manquent pas&amp;nbsp;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tab interface for Mail&lt;/li&gt;
+&lt;li&gt;Improvements to IMAP for faster message viewing&lt;/li&gt;
+&lt;li&gt;Improved message reader view&lt;/li&gt;
+&lt;li&gt;New Add-ons Manager&lt;/li&gt;
+&lt;li&gt;Improved Address Book interface&lt;/li&gt;
+&lt;li&gt;Improved import of mail from other Mail clients&lt;/li&gt;
+&lt;li&gt;Integration with Windows Vista search&lt;/li&gt;
+&lt;li&gt;Integration with Mac OS X Address Book&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;On trouve plus de détails dans les &lt;a href=&quot;http://www.mozillamessaging.com/en-US/thunderbird/3.0b1/releasenotes/&quot; hreflang=&quot;en&quot;&gt;notes de version&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Mais le meilleur reste à venir, et David Ascher a un très long billet sur ce sujet&amp;nbsp;: &lt;a href=&quot;http://ascher.ca/blog/2008/12/09/thunderbird-3-beta-1-a-platform-for-innovation-shapes-up/&quot; hreflang=&quot;en&quot;&gt;Thunderbird 3 beta 1 - une plateforme pour l'innovation prend forme&lt;/a&gt;.&lt;/p&gt;</content>
+    
+      </entry>
+    
+  <entry>
+    <title>Le logiciel et moi (2/4) : de l'importance du logiciel et de sa liberté</title>
+    <link href="http://standblog.org/blog/post/2008/12/09/Le-logiciel-et-moi-2/4" rel="alternate" type="text/html"
+    title="Le logiciel et moi (2/4) : de l'importance du logiciel et de sa liberté" />
+    <id>urn:md5:b2576305dcc27a4fa1a44fd68359c058</id>
+    <updated>2008-12-09T18:56:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>Technologie</dc:subject>
+            
+    <content type="html">    &lt;p&gt;Ce billet fait partie d'une série&amp;nbsp;:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://standblog.org/blog/post/2008/12/09/Le-logiciel-et-moi-1/4&quot; hreflang=&quot;fr&quot;&gt;A propos du logiciel propriétaire&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;De l'importance du logiciel et de sa liberté&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://standblog.org/blog/post/2008/12/09/Le-logiciel-et-moi-3/4&quot; hreflang=&quot;fr&quot;&gt;Le logiciel Libre, nouveau mode d'organisation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://standblog.org/blog/post/2008/12/09/Le-logiciel-et-moi-4/4&quot; hreflang=&quot;fr&quot;&gt;Conclusion&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Le logiciel, c'est important. C'est même de plus en plus important dans nos vie, alors que nous interagissons avec notre environnement via des ordinateurs (qui ne sont que des gros presse-papiers tant qu'on a pas mis de logiciel dedans). Idem pour Internet.&lt;/li&gt;
+&lt;li&gt;Le logiciel influence les actions de celui qui s'en sert (un billet sur ce sujet un de ces jours, depuis le temps que je le promets !).&lt;/li&gt;
+&lt;li&gt;Quand on combine les deux points ci-dessus, on comprend que &lt;strong&gt;la liberté du logiciel est très importante pour la société qu'on est en train de batir&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bref, ce point là est essentiellement &quot;politique&quot;. Je déteste utilise ce mot car il est terriblement galvaudé et usé. Il est chargé négativement. C'est un mot qui, une fois qu'il a été prononcé, fait qu'une grande partie de l'audience déconnecte le cerveau et soit se désintéresse, soit tombe dans les ornières des discussion partisanes. Bref, c'est un mot qui fait fuir la raison et la discussion.&lt;/p&gt;
+
+
+&lt;p&gt;Pourtant, réfléchir sur la société que l'on est en train de batir est à mon sens essentiel, et le logiciel (et Internet) vont y jouer de grands rôles. En tant que citoyen, de père de famille, je me soucie du monde que nous bâtissons et que nous allons laisser à nos enfants.&lt;/p&gt;
+
+
+&lt;p&gt;Par ailleurs, je suis contre les brevets logiciels, car si on a bien compris depuis longtemps qu'il ne faut pas breveter les idées (on ne brevette heureusement pas les mathématiques), une poignées d'avocats qui ont bien compris que c'était bon pour leur business de pousser la brevetabilité des logiciels. Mais ça n'est pas bon pour la société. Je suis donc contre, parce que le code source d'un logiciel, ça n'est qu'un assemblage d'idées. Par contre, je suis pour le droit d'auteur, qui permet le diffusion protégée de logiciels propriétaires.&lt;/p&gt;</content>
+    
+      </entry>
+    
+  <entry>
+    <title>Le logiciel et moi (1/4)  : le logiciel propriétaire</title>
+    <link href="http://standblog.org/blog/post/2008/12/09/Le-logiciel-et-moi-1/4" rel="alternate" type="text/html"
+    title="Le logiciel et moi (1/4)  : le logiciel propriétaire" />
+    <id>urn:md5:c725b99127a99dcd0fa4f3bc75f8064e</id>
+    <updated>2008-12-09T18:54:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>Technologie</dc:subject>
+            
+    <content type="html">    &lt;p&gt;Initialement, ce billet devait s'intituler &lt;em&gt;Le logiciel libre ne cotise pas chez Besancenot #3&lt;/em&gt;, mais j'ai décidé de le renommer. Voici pourquoi&amp;nbsp;: suite à un &lt;a href=&quot;http://www.causeur.fr/le-logiciel-libre-ne-cotise-pas-chez-besancenot,1460#fn-1460-1&quot; hreflang=&quot;fr&quot;&gt;billet de François Miclo&lt;/a&gt;, &lt;a href=&quot;http://www.glazman.org/&quot;&gt;Daniel Glazman&lt;/a&gt; explique ce qu'il &lt;a href=&quot;http://www.glazman.org/weblog/dotclear/index.php?post/2008/12/08/Le-logiciel-libre-ne-cotise-pas-chez-Besancenot-2&quot; hreflang=&quot;fr&quot;&gt;pense du libre, du propriétaire et du logiciel en général&lt;/a&gt;. Les deux textes sont longs, mais c'est pour moi un prétexte pour rebondir et expliquer ce qui me passionne et me fascine dans le logiciel Libre, dans Internet et dans Mozilla. Je vous prévient, c'est un billet vite fait, limite bâclé, mais c'est toujours mieux que rien. Une fois ces précautions d'usage mentionnée, c'est parti, mais en 4 parties, histoire que vous ayez le courage de tout lire &lt;img src=&quot;/dc-blog/themes/default/smilies/laugh.png&quot; alt=&quot;:-D&quot; class=&quot;smiley&quot; /&gt; (publication au fil de l'eau)&lt;/p&gt;
+
+
+&lt;p&gt;Première partie&amp;nbsp;: &lt;strong&gt;A propos du logiciel propriétaire&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Le logiciel propriétaire existe depuis longtemps, si longtemps que pour la plupart des gens, on a l'impression qu'il a toujours été là, et que c'est la manière &quot;normale&quot; de faire du logiciel. &lt;a href=&quot;http://www.gnu.org/gnu/gnu-history.fr.html&quot;&gt;C'est faux&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Je ne suis pas contre le logiciel propriétaire. Je ne me sens pas &quot;impur&quot; quand j'en utilise. Richard Stallman lui même, alors qu'il menait le projet GNU (la réécriture des utilitaires Unix en version Libre) a utilisé des Unix propriétaires, remplaçant les briques propriétaires par du Libre au fur et à mesure de leur disponibilité, en commençant par l'éditeur (&lt;a href=&quot;http://fr.wikipedia.org/wiki/Emacs&quot;&gt;Emacs&lt;/a&gt;) puis le compilateur (&lt;a href=&quot;http://fr.wikipedia.org/wiki/GNU_Compiler_Collection&quot;&gt;GCC&lt;/a&gt;), en réutilisant le &lt;a href=&quot;http://fr.wikipedia.org/wiki/Noyau_Linux&quot;&gt;noyau Linux&lt;/a&gt; quand il a été disponible. Donc, je ne me sens pas impur en utilisant un logiciel propriétaire. Mais &quot;sous influence&quot;, oui. Et pas forcément positive, l'influence...&lt;/li&gt;
+&lt;li&gt;A mon avis, le logiciel Libre et le logiciel propriétaire vont co-exister très longtemps. Par contre, je pense que le propriétaire va se réduire à des marchés de niche de plus en plus réduits. Mais je peux me tromper. Les marges souvent énormes du logiciel propriétaire permettent souvent de faire du marketing qui fait que l'utilisateur est persuadé qu'il n'y a rien d'autre.&lt;/li&gt;
+&lt;li&gt;J'utilise du logiciel propriétaire quand il répond mieux à mes besoins que du logiciel Libre. Il y a un coût, qui est que je suis obligé de réfléchir sur ce que ce logiciel m'impose sans que je le réalise (le plus souvent sur le format de données et donc la difficulté que j'aurais à le quitter, sur le type de système d'exploitation que j'utilise, sur les services auxquels j'ai accès). Pour cette raison, j'essaye autant que possible d'utiliser de plus en plus de logiciels Libres. Parce qu'avec eux, j'ai plus de liberté. Mais je ne suis pas au point de perdre ma capacité à travailler non plus, sous prétexte que je me sens obligé d'utiliser des outils logiciels mal fichus et ne répondant pas à mes besoins.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Les autres articles de cette série&amp;nbsp;:&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;A propos du logiciel propriétaire&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://standblog.org/blog/post/2008/12/09/Le-logiciel-et-moi-2/4&quot; hreflang=&quot;fr&quot;&gt;De l'importance du logiciel et de sa liberté&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://standblog.org/blog/post/2008/12/09/Le-logiciel-et-moi-3/4&quot; hreflang=&quot;fr&quot;&gt;Le logiciel Libre, nouveau mode d'organisation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://standblog.org/blog/post/2008/12/09/Le-logiciel-et-moi-4/4&quot; hreflang=&quot;fr&quot;&gt;Conclusion&lt;/a&gt;.&lt;/li&gt;
+&lt;/ol&gt;</content>
+    
+      </entry>
+    
+  <entry>
+    <title>En vrac</title>
+    <link href="http://standblog.org/blog/post/2008/12/09/En-vrac" rel="alternate" type="text/html"
+    title="En vrac" />
+    <id>urn:md5:6cc27201ba696415ec79c40fab4e5639</id>
+    <updated>2008-12-09T17:08:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>En vrac</dc:subject>
+            
+    <content type="html">    &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.aful.org/blog/2008_12_08_logiciels-imposes-dell-rembourse-180-euros&quot; hreflang=&quot;fr&quot;&gt;Logiciels imposés avec l'ordinateur&amp;nbsp;: Dell rembourse 180 euros&lt;/a&gt;&lt;sup&gt;[&lt;a href=&quot;http://standblog.org/blog/post/2008/12/09/#pnote-3703-1&quot; id=&quot;rev-pnote-3703-1&quot;&gt;1&lt;/a&gt;]&lt;/sup&gt;. Ca vous dirait de vous faire rembourser 180 EUR sur votre ordinateur&amp;nbsp;? Il suffit de demander à ce que la loi soit respectée, même par Microsoft et ses revendeurs. Pour cela, une seule adresse&amp;nbsp;: &lt;a href=&quot;http://www.racketiciel.info/&quot; hreflang=&quot;fr&quot;&gt;Racketiciel.info&lt;/a&gt;. Et ce soir, il y a une &lt;a href=&quot;http://www.parinux.org/content/conference-racketiciel&quot; hreflang=&quot;fr&quot;&gt;Conférence Racketiciel&lt;/a&gt; à Paris&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.google.com/hostednews/afp/article/ALeqM5gvFsZoOnEGaNXFcXhIqps6TyZHuA&quot; hreflang=&quot;fr&quot;&gt;Les logiciels libres à la conquête du grand public&lt;/a&gt;, un article de l'AFP&amp;nbsp;!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.outstandingelephant.com/jcquard/&quot; hreflang=&quot;en&quot;&gt;jCquard&lt;/a&gt;, un bibliothèque JavaScript pour faire des cartes perforées virtuelles&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.monsieurdream.com/index.php/2008/11/26/923-surimi-et-mayonnaise/&quot; hreflang=&quot;fr&quot;&gt;Surimi et Mayonnaise.&lt;/a&gt;, où Monsieur Dream porte le T-shirt Firefox qu'on lui a offert un jour où Paul l'a rencontré. Pascal est tombé de son canapé quand il a vu &lt;a href=&quot;http://www.chevrel.org/fr/carnet/index.php?post/2008/12/06/Monsieur-Dream-sur-TF1&quot; hreflang=&quot;fr&quot;&gt;la vidéo sur sur TF1 !&lt;/a&gt; (au plein milieu de la nuit...)&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;Article passionnant chez Daniel Glazman&amp;nbsp;: &lt;a href=&quot;http://www.glazman.org/weblog/dotclear/index.php?post/2008/12/08/Le-logiciel-libre-ne-cotise-pas-chez-Besancenot-2&quot; hreflang=&quot;fr&quot;&gt;Ce que je pense du libre, du propriétaire et du logiciel en général&lt;/a&gt;. J'ai une opinion très différente par certains aspects, très comparable par d'autre. Ah, si seulement j'avais le temps de vous expliquer tout ça&amp;nbsp;!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;footnotes&quot;&gt;&lt;h4&gt;Notes&lt;/h4&gt;
+&lt;p&gt;[&lt;a href=&quot;http://standblog.org/blog/post/2008/12/09/#rev-pnote-3703-1&quot; id=&quot;pnote-3703-1&quot;&gt;1&lt;/a&gt;] Voir aussi &lt;a href=&quot;http://www.linformaticien.com/Actualit%C3%A9s/tabid/58/newsid496/5439/dell-rembourse-180-euros-pour-vente-liee/Default.aspx&quot; hreflang=&quot;fr&quot;&gt;L'article de l'Informaticien&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;
+</content>
+    
+      </entry>
+    
+  <entry>
+    <title>Sortie de Firefox 3.1 Beta 2</title>
+    <link href="http://standblog.org/blog/post/2008/12/09/Sortie-de-Firefox-31-Beta-2" rel="alternate" type="text/html"
+    title="Sortie de Firefox 3.1 Beta 2" />
+    <id>urn:md5:e6638a62ad98535c2ab811f9e5e93807</id>
+    <updated>2008-12-09T10:16:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>Mozilla-Europe</dc:subject>
+            
+    <content type="html">    &lt;p&gt;Voilà, c'est fait, &lt;a href=&quot;https://developer.mozilla.org/devnews/index.php/2008/12/08/firefox-31-beta-2-now-available-for-download/&quot; hreflang=&quot;en&quot;&gt;Firefox 3.1 Beta 2&lt;/a&gt; est sorti.&lt;/p&gt;
+
+
+&lt;p&gt;&lt;a href=&quot;http://farm4.static.flickr.com/3053/3095546780_c8c6f33c57_o.png&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3053/3095546780_7889ab835d.jpg&quot; alt=&quot;Firefox 3.1 (Shiretoko) Beta 2 illustration&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;&lt;em&gt;&lt;a href=&quot;http://www.flickr.com/photos/nitot/3095546780/&quot;&gt;Firefox 3.1 (Shiretoko) Beta 2 illustration&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Au menu, comme indiqué dans le &lt;a href=&quot;https://developer.mozilla.org/web-tech/2008/12/08/firefox-31-beta-2-whats-new/&quot; hreflang=&quot;en&quot;&gt;billet technique&lt;/a&gt;&amp;nbsp;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Prêt pour les extensions. Si vous avez une extension, vous pouvez tester sa compatibilité avec cette Beta. La Beta 3 ne devrait pas apporter de changements à ce niveau là.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://wiki.mozilla.org/JavaScript:TraceMonkey&quot; hreflang=&quot;en&quot;&gt;TraceMonkey&lt;/a&gt; est activé. Ca dépote&amp;nbsp;! &lt;img src=&quot;/dc-blog/themes/default/smilies/smile.png&quot; alt=&quot;:-)&quot; class=&quot;smiley&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/En/Using_DOM_workers&quot; hreflang=&quot;en&quot;&gt;DOM Worker Threads&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;les éléments &lt;code&gt;&amp;lt;audio&amp;gt;&lt;/code&gt; et &lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt; sont améliorés. Voilà &lt;a href=&quot;https://developer.mozilla.org/En/Using_audio_and_video_in_Firefox&quot; hreflang=&quot;en&quot;&gt;comment les utiliser&lt;/a&gt;. On notera le support d'Ogg Theora, Ogg Vorbis et .Wav&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://bitsup.blogspot.com/2008/11/dns-prefetching-for-firefox.html&quot; hreflang=&quot;en&quot;&gt;Pre-fetching du DNS&lt;/a&gt; pour plus de performance&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/En/HTTP_Access_Control&quot; hreflang=&quot;en&quot;&gt;Contrôle d'accès inter-site pour XmlHttpRequest&lt;/a&gt; (XHR)&lt;/li&gt;
+&lt;li&gt;Amélioration de &lt;a href=&quot;https://developer.mozilla.org/en/CSS/@font-face&quot; hreflang=&quot;en&quot;&gt;@font-face&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Navigation privée, &lt;a href=&quot;http://ehsanakhgari.org/blog/2008-11-08/prepare-your-add-private-browsing&quot; hreflang=&quot;en&quot;&gt;qui impacte les développeurs d'extension&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content>
+    
+      </entry>
+    
+  <entry>
+    <title>Article sur 01Net</title>
+    <link href="http://standblog.org/blog/post/2008/12/09/Article-sur-01Net" rel="alternate" type="text/html"
+    title="Article sur 01Net" />
+    <id>urn:md5:530619f42b25c74bcc5f1ad8e3d9c425</id>
+    <updated>2008-12-09T09:55:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>StandBlog et blogs</dc:subject>
+        <dc:subject>01net</dc:subject>    
+    <content type="html">    &lt;p&gt;Voilà, mon petit dernier vient d'être publié sur 01Net&amp;nbsp;: &lt;a href=&quot;http://www.01net.com/editorial/398603/nes-avec-le-web-et-l-open-source-ils-arrivent-dans-l-entreprise/?rss&quot; hreflang=&quot;fr&quot;&gt;Nés avec le Web et l'open source, ils arrivent dans l'entreprise&lt;/a&gt;. Il fait référence à un billet du Standblog, &lt;a href=&quot;http://standblog.org/blog/post/2008/11/16/Une-nouvelle-generation&quot; hreflang=&quot;fr&quot;&gt;Une nouvelle génération&lt;/a&gt;, avec un angle différent.&lt;/p&gt;
+
+
+&lt;p&gt;A ce propos, je voulais demander aux lecteurs du Standblog s'ils avaient des idées pour mes prochains billets sur 01Net autour de &quot;l'Open-Source en entreprise&quot; (c'est le cadre qui m'est donné par le site). Les commentaires sont ouverts, à vous de jouer&amp;nbsp;!&lt;/p&gt;</content>
+    
+      </entry>
+    
+  <entry>
+    <title>Actu des navigateurs</title>
+    <link href="http://standblog.org/blog/post/2008/12/08/Actu-des-navigateurs" rel="alternate" type="text/html"
+    title="Actu des navigateurs" />
+    <id>urn:md5:ccdad1c4842999285e943f3c97e09857</id>
+    <updated>2008-12-08T17:52:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>Navigateurs</dc:subject>
+            
+    <content type="html">    &lt;p&gt;&lt;a href=&quot;http://farm4.static.flickr.com/3275/2701394956_fed30bbe5c_b.jpg&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3275/2701394956_fed30bbe5c.jpg&quot; alt=&quot;&amp;quot;Le Volant&amp;quot;, restaurant rue Beatrix Dussane, Paris XV.&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;&lt;em&gt;&lt;a href=&quot;http://www.flickr.com/photos/nitot/2701394956/&quot;&gt;La devanture du restaurant &quot;Le Volant&quot;, Paris XV&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://tech.slashdot.org/article.pl?sid=08/12/04/1955216&quot;&gt;Opera 10 Alpha 1 Released&lt;/a&gt;. On notera l'apparition de la mise à jour automatique, du correcteur d'orthographe et le score de 100 au test Acid 3 (bravo Opera !). &lt;a href=&quot;http://www.silicon.fr/fr/news/2008/12/07/opera_10___un_rendu_parfait__mais_un_peu_lent&quot; hreflang=&quot;fr&quot;&gt;silicon.fr le trouve lent et consommateur de mémoire&lt;/a&gt;. Je ne l'ai pas encore testé&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://news.bbc.co.uk/1/hi/technology/7762144.stm&quot; hreflang=&quot;en&quot;&gt;Valley Girls: Mitchell Baker&lt;/a&gt;, un très bon papier de la BBC. &quot;I knew that the building of the browser was a necessary step to have an internet that was worth living in (...). I also knew (Mozilla) was not the obvious path to build a career but it was the obvious path to do something interesting.&quot; En français&amp;nbsp;: &quot;Je savais que faire un navigateur était une étape nécessaire de façon à avoir un Internet qui en vaille la peine. Je savais aussi que Mozilla était tout sauf un bon plan de carrière, mais que par contre, c'était l'assurance de faire quelque chose d'intéressant&quot;. Mitchell fait référence au fait qu'elle a été licenciée par AOL/Netscape pour avoir tenu bon sur l'indépendance du projet Mozilla au moment où AOL n'y croyait plus.&lt;/li&gt;
+&lt;li&gt;Le &lt;a href=&quot;http://communitystore.mozilla.org/&quot; hreflang=&quot;en&quot;&gt;Mozilla Community Store&lt;/a&gt; vient d'ouvrir. Le concept, c'est un peu la &quot;longue traîne&quot; du T-shirt &lt;img src=&quot;/dc-blog/themes/default/smilies/smile.png&quot; alt=&quot;:-)&quot; class=&quot;smiley&quot; /&gt; . Le &lt;a href=&quot;http://blog.mozilla.com/blog/2008/12/04/the-mozilla-community-store-is-here/&quot; hreflang=&quot;en&quot;&gt;Mozilla Blog explique le concept&lt;/a&gt; et explique comment obtenir 20% de remise d'ici Noël, histoire d'avoir un T-shirt Mozilla au design unique sous le sapin&amp;nbsp;!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/devnews/index.php/2008/12/04/firefox-20018-users-to-be-offered-a-free-upgrade/&quot; hreflang=&quot;en&quot;&gt;La Migration de Firefox 2 à Firefox 3 a commencé&lt;/a&gt;&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.techcrunch.com/2008/12/08/blackbird-is-a-custom-browser-for-african-americans-built-on-top-of-mozilla/&quot; hreflang=&quot;en&quot;&gt;Blackbird, un navigateur pour la communauté noire américaine&lt;/a&gt;, basé sur Flock / Mozilla&amp;nbsp;;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    
+      </entry>
+    
+  <entry>
+    <title>Back from Romania</title>
+    <link href="http://standblog.org/blog/post/2008/12/06/Back-from-Romania" rel="alternate" type="text/html"
+    title="Back from Romania" />
+    <id>urn:md5:aecc6be492b3cd82af36d2d21bf948bd</id>
+    <updated>2008-12-06T16:14:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>en</dc:subject>
+            
+    <content type="html">    &lt;p&gt;I've spent a couple of days in Romania to participate to the &lt;a href=&quot;http://netcamp.ro/&quot; hreflang=&quot;ro&quot;&gt;NetCamp.ro&lt;/a&gt; event in Bucharest. Every time that I visit a place for Mozilla, the conference I go to is just the thing that decides of the date, but is completed with press meetings and community gathering. This time, &lt;a href=&quot;http://blogs.mozilla-europe.org/?post/2008/11/07/Interview-of-Irina-Sandu&quot; hreflang=&quot;en&quot;&gt;Irina Sandu&lt;/a&gt; took the lead on organizing my trip - from finding a reasonably priced hotel, knowing how to get ripped off by so-called &quot;taxi-drivers&quot; at the airport to finding my way to the &lt;a href=&quot;http://www.flickr.com/photos/30176726@N04/3082991284/&quot;&gt;conference&lt;/a&gt; and setting up &lt;a href=&quot;http://www.dailybusiness.ro/stiri-new-media/fondatorul-mozilla-firefox-este-folosit-zilnic-de-600-000-de-romani-19987&quot;&gt;press meetings&lt;/a&gt;. A keynote, 5 press meetings and a great community dinner made this a very long but great day. Conferences are exciting, talking to the press and finding the right angle to convey the Mozilla message is something I love doing, but the highlight of the day is spending some time with the community. Even if the previous night was too short and the day pretty exhausting, I always feel super engaged and re-energized when talking to community members, discussing of their issues, their opinions, giving updates about Mozilla and finding ways to empower them.&lt;sup&gt;[&lt;a href=&quot;http://standblog.org/blog/post/2008/12/06/#pnote-3699-1&quot; id=&quot;rev-pnote-3699-1&quot;&gt;1&lt;/a&gt;]&lt;/sup&gt;. Irina has written a &lt;a href=&quot;http://blogs.mozilla-europe.org/?post/2008/12/05/Romanian-community-dinner-in-Bucharest&quot; hreflang=&quot;en&quot;&gt;post on this&lt;/a&gt;. The following day, there was an presentation by Mozilla volunteers at the &lt;a href=&quot;http://www.pub.ro/English/eng.htm&quot; hreflang=&quot;en&quot;&gt;Politehnica university&lt;/a&gt; around the Open Web, localization and contributing to Mozilla, but I could not attend, as I was already on my way back.&lt;/p&gt;
+
+
+
+&lt;p&gt;&lt;a href=&quot;http://farm4.static.flickr.com/3271/3084884345_c9801d4f82_o.jpg&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3271/3084884345_bc1a3571fa.jpg&quot; alt=&quot;Mozilla community dinner&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p&gt;&lt;em&gt;&lt;a href=&quot;http://www.flickr.com/photos/30176726@N04/3084884345/&quot;&gt;Mozilla community dinner&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;But luckily, this time – thanks to flight schedules – I had the opportunity to walk in Bucharest and discover the city and the life of Romanians, with Irina decrypting for me the recent history of the country. I have to say that it's striking to see the Romanians crave the Western way of life after 4 decades of dictatorship and poverty. The state and recent history of the country produce some interesting artifacts as the country is catching up quickly thanks to a strong economy. For example:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;because there is significant inflation, some prices (typically mobile operators' fee) are expressed in Euros instead of the local Lei currency, and some wages are expressed in Euros too, because it's more stable as a currency.&lt;/li&gt;
+&lt;li&gt;history of the the 1947 to 1989 communist era is rejected because it's associated with the lack of Freedom typical of the era. This causes the Romanian society to turn to the Western world for inspiration&lt;/li&gt;
+&lt;li&gt;English is seen as the language of the future and Romanian looks neglected. Roughly 70% of the Romanian users of Firefox use an English version, even if a Romanian version is available for quite some time&lt;/li&gt;
+&lt;li&gt;advertising is everywhere, covering entire buildings, and the average income is increasing fast over the years&lt;/li&gt;
+&lt;li&gt;infrastructure (roads, power and telecom grids, public transportation) has been neglected for a long time, which leads to a crowded city with terrible traffic jams and &lt;a href=&quot;http://www.flickr.com/photos/nitot/3087008768/&quot;&gt;slightly&lt;/a&gt; overloaded &lt;a href=&quot;http://www.flickr.com/photos/nitot/3086170405/&quot;&gt;poles&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.flickr.com/photos/nitot/3087143424/&quot;&gt;dogs without owners&lt;/a&gt; are everywhere in the city and its suburbs and they may attack people at night. Their pervasiveness makes it almost impossible to ride a bicycle in Bucharest (they attack bikes).&lt;/li&gt;
+&lt;li&gt;On a more positive side, business is blooming and the state of the country is improving quickly as Investors are bringing funds from abroad to invest in Romania. The country has around 8% growth per year, the highest in Europe.&lt;/li&gt;
+&lt;li&gt;there is quite a lot of work going on, from new buildings to renovation of the infrastructure (the metro I took is much nicer than most Parisian metros, for example).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I must admit that I have loved my stay in Romania. I have sensed a lot of energy from people who were looking for a better future, particularly from the younger generation. Some of them think that Open Source is a great way to get a say in the invention of the future, an opportunity to participate and own the tools of our digital future rather than using tools produced by other countries, by different cultures.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;&lt;h4&gt;Notes&lt;/h4&gt;
+&lt;p&gt;[&lt;a href=&quot;http://standblog.org/blog/post/2008/12/06/#rev-pnote-3699-1&quot; id=&quot;pnote-3699-1&quot;&gt;1&lt;/a&gt;] By the way, we missed Alexandru Szasz, a key contributor from Romania, who could not make it to the event, because 18 hours of travel by train just for a dinner is a bit too long &lt;img src=&quot;/dc-blog/themes/default/smilies/wink.png&quot; alt=&quot;;-)&quot; class=&quot;smiley&quot; /&gt;&lt;/p&gt;&lt;/div&gt;
+</content>
+    
+      </entry>
+    
+  <entry>
+    <title>En vrac, de retour de Bucarest</title>
+    <link href="http://standblog.org/blog/post/2008/12/05/En-vrac-de-retour-de-Bucarest" rel="alternate" type="text/html"
+    title="En vrac, de retour de Bucarest" />
+    <id>urn:md5:01ee4eaddaac2722c0c22068366e80b5</id>
+    <updated>2008-12-05T11:07:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>En vrac</dc:subject>
+            
+    <content type="html">    &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://open-government.us/&quot; hreflang=&quot;en&quot;&gt;Principles for an Open Transition&lt;/a&gt;, une initiative à laquelle Mozilla participe. Plus rapide que l'éclair, Alexis de Framasoft propose une version française&amp;nbsp;: &lt;a href=&quot;http://www.framablog.org/index.php/post/2008/12/03/usa-obama-3-principes-pour-un-gouvernement-ouvert&quot; hreflang=&quot;fr&quot;&gt;3 principes pour assurer un gouvernement ouvert&lt;/a&gt;, et c'est bien&amp;nbsp;!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cnis-mag.com/l-economie-de-l-underground.html&quot; hreflang=&quot;fr&quot;&gt;L’économie de l’underground&lt;/a&gt;, où l'on apprend que si votre machine est infectée d'un &lt;em&gt;keylogger&lt;/em&gt; (logiciel espionnant ce que vous tapez au clavier, et permettant donc de récupérer vos mots de passe), c'est parce que le petit malin qui l'a fait (à distance) pour environ 23 dollars...&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.downloadsquad.com/2008/12/01/gos-cloud-from-zero-to-web-browser-in-just-a-few-seconds/&quot; hreflang=&quot;en&quot;&gt;gOS Cloud - From zero to web browser in just a few seconds&lt;/a&gt;. Et voilà comment le logiciel Libre démontre sa capacité à innover (j'ignore toutefois s'il s'agit de Webkit ou de Gecko, mais j'ai vu un truc du même genre avec Mozilla Gecko, mais c'est fait par une société qui ne l'a pas annoncé...). &lt;a href=&quot;http://www.lepoint.fr/actualites-technologie-internet/netbooks-un-marche-qui-se-cherche-encore/1387/0/296656&quot; hreflang=&quot;fr&quot;&gt;Le Point en parle&lt;/a&gt; mais semble oublier que j'ai bien précisé que cela était rendu possible par le logiciel Libre (bah évidemment, comment voulez vous innover autour de Windows XP alors qu'on a pas el code source et que MS ne souhaite pas investir le moindre Kopeck dans cet OS qui cannibalise les ventes de Vista et refuse obstinément de mourir ?)&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://bits.blogs.nytimes.com/2008/12/01/a-microsoft-veteran-embraces-open-source/&quot; hreflang=&quot;en&quot;&gt;Citation du jour, par un ancien Microsoftie&lt;/a&gt;&amp;nbsp;: &quot;The difference between free, and non-free or proprietary software, is similar to the divide between science and alchemy. Before science, there was alchemy, where people guarded their ideas because they wanted to corner the market on the mechanisms used to convert lead into gold&quot;. Bien vu&amp;nbsp;!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.fgranger.com/dotclear/index.php/2008/11/29/580-logiciel-creation-d-emploi-et-economie&quot; hreflang=&quot;fr&quot;&gt;Logiciel, création d'emploi et économie&lt;/a&gt;, un billet sur l'économie de François Granger. Je manque terriblement de temps pour en dire plus, mais c'est intéressant pour ma &lt;a href=&quot;http://standblog.org/blog/category/Economie&quot; hreflang=&quot;fr&quot;&gt;rubrique Economie&lt;/a&gt;...&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.blogeee.net/2008/12/03/tristan-nitot-le-president-de-mozilla-europe-estime-que-windows-est-trop-cher/&quot; hreflang=&quot;fr&quot;&gt;Tristan Nitot estime que Windows est trop cher.&lt;/a&gt;. En effet &lt;img src=&quot;/dc-blog/themes/default/smilies/smile.png&quot; alt=&quot;:-)&quot; class=&quot;smiley&quot; /&gt; . La bonne nouvelle (ou pas), c'est que quand on rétablit la concurrence, ce qui est le cas sur les Netbooks, le prix de Windows est divisé par 10 environ (une license Windows OEM coute 30 à 50$ pour un intégrateur PC mais elle est passé à 3$ environ pour les Netbooks, car il y a la pression de Linux sur ce segment).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://loeildukine.blogspirit.com/archive/2008/11/29/les-grands-navigateurs.html&quot; hreflang=&quot;fr&quot;&gt;Lucien, octogénaire, fait la promotion de Firefox&lt;/a&gt;. Ca me touche&amp;nbsp;!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.songbirdnest.com/2008/12/02/songbird-10-is-here/&quot; hreflang=&quot;en&quot;&gt;Songbird 1.0 est sorti&lt;/a&gt;&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://embruns.net/logbook/2008/12/03.html#007143&quot; hreflang=&quot;fr&quot;&gt;Quand l'addiction de notre société au pétrole nous fait faire des (grosses) conneries&lt;/a&gt;&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Ouaaah&lt;/em&gt;&amp;nbsp;: &lt;a href=&quot;http://science.slashdot.org/article.pl?sid=08/12/03/2345206&quot; hreflang=&quot;en&quot;&gt;Quand on sauve une vie par SMS&lt;/a&gt;&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.gartner.com/it/page.jsp?id=827912&quot; hreflang=&quot;en&quot;&gt;Apple dépasse Microsoft sur le marché des smartphones&lt;/a&gt;, explique le Gartner. La mauvaise nouvelle, c'est que Linux sur mobile boit aussi le bouillon. Extrait&amp;nbsp;: &lt;em&gt;For the first time, iPhone sales exceeded sales of Microsoft Windows Mobile devices worldwide and in North America. In the shorter term, open-source initiatives like Android and Symbian Foundation will challenge Windows Mobile’s licensing model. In addition, the lack of a competitive user interface will continue to limit Microsoft’s mobile device usability when facing competitive consumer smartphones.&lt;/em&gt; Je me demande dans quelle mesure Fennec, prévu pour Windows Mobile, pourrait booster Windows Mobile, associé à XUL...&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.01net.com/editorial/398234/wikipedia-recoit-890-000-dollars-pour-attirer-de-nouveaux-auteurs/?rss&quot; hreflang=&quot;fr&quot;&gt;Wikipedia reçoit 890 000 dollars pour faciliter la contribution des auteurs&lt;/a&gt;. J'espère que &lt;a href=&quot;http://commons.wikimedia.org/w/index.php?title=Special:Upload&amp;amp;uselang=ownwork&quot;&gt;l'upload des images dans Wikimedia Commons&lt;/a&gt; va en profiter :-)&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.temesis.com/post/2008/12/04/Opquast-et-OpenWeb-dans-PC-expert&quot; hreflang=&quot;fr&quot;&gt;Opquast et OpenWeb dans PC expert&lt;/a&gt;&amp;nbsp;;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    
+      </entry>
+    
+  <entry>
+    <title>About Data</title>
+    <link href="http://standblog.org/blog/post/2008/12/03/About-Data" rel="alternate" type="text/html"
+    title="About Data" />
+    <id>urn:md5:f10a1b445f57a0f933ba957f40dcc834</id>
+    <updated>2008-12-03T12:02:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>en</dc:subject>
+            
+    <content type="html">    &lt;p&gt;&lt;a href=&quot;http://www.netmag.co.uk/&quot; hreflang=&quot;en&quot;&gt;.Net Magazine (UK)&lt;/a&gt; invites me regularly with other people to react on a question they ask us. It is then published in the magazine under the &lt;em&gt;Big Question&lt;/em&gt; column. They're usually engaging questions, and I thought I'd share with my 2 readers (Hi Mum!) their last &quot;big question&quot;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;&lt;p&gt;What do you think will be the main issues affecting the net in 2009?&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;Here is my answer&lt;sup&gt;[&lt;a href=&quot;http://standblog.org/blog/post/2008/12/03/#pnote-3697-1&quot; id=&quot;rev-pnote-3697-1&quot;&gt;1&lt;/a&gt;]&lt;/sup&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;&lt;p&gt;We've been storing a lot of data in the cloud: just think of the amount of private information that social networks have access to.  Now, apart from a few high-profile mis-steps, these services have been acting pretty responsibly with our data, mostly because they did not want their reputations to be damaged.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;blockquote&gt;&lt;p&gt;But things are now different.  With an economic downturn, many of these services may face problems.  They have been making money through indirect models, such as advertising, which may be especially sensitive to a downturn.  And if you look at the terms of use of some of these services, it may allow them to do a lot more with your data than you realised, and some of these companies may be more in need of revenue than ever.  It is much harder to be good when times are bad.  So, are we going to see private data being sold to third parties?  Is the information, for example, about the number of pizza and beer parties I've been to this year (which I've mentioned in all my &quot;statuses&quot;) going to be sold to life insurance companies?&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;blockquote&gt;&lt;p&gt;There was a saying about the growth in online participation of the last few years, that &quot;the currency of the web is trust&quot;.  It is my worry that this currency may be about to be devalued.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;And now we see that 2.0 services get &lt;a href=&quot;http://itdied.com/&quot; hreflang=&quot;en&quot;&gt;shut down&lt;/a&gt; more and more:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://venturebeat.com/2008/12/01/six-apart-acquires-and-shuts-down-pownce/&quot; hreflang=&quot;en&quot;&gt;Six Apart acquires and shuts down Pownce&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;AOL closing &lt;a href=&quot;http://pictures.aol.com/&quot; hreflang=&quot;en&quot;&gt;AOL Pictures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://googleblog.blogspot.com/2008/11/lively-no-more.html&quot; hreflang=&quot;en&quot;&gt;Google closing Lively&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Why am I bringing this topic on my blog? Because it's a great illustration of one of the items in the &lt;a href=&quot;http://blog.lizardwrangler.com/2008/09/11/proposed-2010-goals/&quot; hreflang=&quot;en&quot;&gt;Proposed Mozilla goals for 2010&lt;/a&gt;, &lt;strong&gt;&quot;provide leadership in helping people exercise better ownership and control over their data&quot;&lt;/strong&gt;.  The &lt;a href=&quot;http://blog.lizardwrangler.com/2008/09/11/proposed-2010-goals/&quot; hreflang=&quot;en&quot;&gt;Proposed goals&lt;/a&gt; post is short but very dense, and I thought it was worth highlighting one specific item from it, and maybe encourage my readers to give feedback on our proposed 2010 goals, here in the comments, via email&lt;sup&gt;[&lt;a href=&quot;http://standblog.org/blog/post/2008/12/03/#pnote-3697-2&quot; id=&quot;rev-pnote-3697-2&quot;&gt;2&lt;/a&gt;]&lt;/sup&gt; or using the instructions posted in the &lt;em&gt;Get Involved&lt;/em&gt; section of the &lt;a href=&quot;https://wiki.mozilla.org/Project/2010_Goals&quot; hreflang=&quot;en&quot;&gt;2010 goals wiki&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot;&gt;&lt;h4&gt;Notes&lt;/h4&gt;
+&lt;p&gt;[&lt;a href=&quot;http://standblog.org/blog/post/2008/12/03/#rev-pnote-3697-1&quot; id=&quot;pnote-3697-1&quot;&gt;1&lt;/a&gt;] Hat tip goes to &lt;a href=&quot;http://patrickfinch.net/&quot; hreflang=&quot;en&quot;&gt;Patrick&lt;/a&gt; for his mad copywriting skills who helped make my prose easier on the reader.&lt;/p&gt;
+&lt;p&gt;[&lt;a href=&quot;http://standblog.org/blog/post/2008/12/03/#rev-pnote-3697-2&quot; id=&quot;pnote-3697-2&quot;&gt;2&lt;/a&gt;] You can find my address pretty easily, just ask your favorite search engine!&lt;/p&gt;&lt;/div&gt;
+</content>
+    
+      </entry>
+    
+  <entry>
+    <title>En vrac, en direct de Bucarest</title>
+    <link href="http://standblog.org/blog/post/2008/12/02/En-vrac-en-direct-de-Bucarest" rel="alternate" type="text/html"
+    title="En vrac, en direct de Bucarest" />
+    <id>urn:md5:14a3b2936bd793bf69ace5936503de47</id>
+    <updated>2008-12-02T21:45:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>En vrac</dc:subject>
+            
+    <content type="html">    &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.alter-ergo.com/entretien-mozilla.html&quot; hreflang=&quot;fr&quot;&gt;Alter-Ergo me fait l'honneur d'un entretien&lt;/a&gt;&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.eyrolles.com/Informatique/Livre/dotclear-2-9782212124071&quot; hreflang=&quot;fr&quot;&gt;Eyrolles sort un livre sur DotClear 2&lt;/a&gt;&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;Citation du jour, de Glyn Moody&amp;nbsp;: &lt;a href=&quot;http://www.computerworlduk.com/community/blogs/index.cfm?entryid=1573&amp;amp;blogid=14&quot; hreflang=&quot;en&quot;&gt;As someone who has been following Microsoft for over 25 years, I remain staggered by the completeness of the Vista fiasco.&lt;/a&gt;. En version française&amp;nbsp;: &quot;alors que je suis Microsoft de près depuis 25 ans, je suis sidéré de constater à quel point Microsoft a réussi à faire de Vista un échec&quot;&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;Tiens, une fois n'est pas coutume, une autre citation, &lt;a href=&quot;http://jour-pour-jour.hautetfort.com/archive/2007/01/10/livres-libres.html&quot; hreflang=&quot;fr&quot;&gt;d'Hervé Torchet&lt;/a&gt;, à propos de Victor Hugo&amp;nbsp;: &lt;em&gt;je fais mien ses autres vers qui sonnent comme une devise, celle que devrait adopter tout homme qui détient un pouvoir et un savoir&amp;nbsp;: &quot;Agrandir les esprits, amoindrir les misères&quot;.&lt;/em&gt; (C'est tiré d'un poème intitulé &lt;a href=&quot;http://www.exploesie.com/poemes/hugo/2_6_204.html&quot; hreflang=&quot;fr&quot;&gt;Melancholia&lt;/a&gt;. Sinon, &lt;a href=&quot;http://jour-pour-jour.hautetfort.com/archive/2008/11/30/firefox-3-1-au-premier-trimestre-ubiquity-a-decouvrir.html&quot; hreflang=&quot;fr&quot;&gt;Hervé a bien aimé Ubiquity&lt;/a&gt; et s'est vu recommander Firefox par Quitterie Delmas, l'égérie du Modem, qui &quot;&lt;a href=&quot;http://lesjeuneslibres.hautetfort.com/archive/2008/12/02/des-petits-actes-concrets-provoquent-de-grandes-joies-nous-a.html&quot; hreflang=&quot;fr&quot;&gt;kiffe Ubuntu&lt;/a&gt;&quot;. Son billet, c'est trop de la balle &lt;img src=&quot;/dc-blog/themes/default/smilies/wink.png&quot; alt=&quot;;-)&quot; class=&quot;smiley&quot; /&gt;&lt;/li&gt;
+&lt;li&gt;On y revient toujours&amp;nbsp;: &lt;a href=&quot;http://neokraft.net/post/2008/11/30/Thunderbird&quot; hreflang=&quot;fr&quot;&gt;Olivier déclare son amour pour Thunderbird&lt;/a&gt; (et livre quelques astuces au passage). Vivement Thunderbird 3, ça va dépoter&amp;nbsp;!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.cio-online.com/actualites/lire-le-fdi--1870.html&quot; hreflang=&quot;fr&quot;&gt;Le Forum des Droit sur Internet recommande aux administrations de suivre strictement les standards du W3C&lt;/a&gt;, et ça fait plaisir à lire. On parle aussi de développement durable, et ça me rappelle que ça fait des années que je veux écrire un billet sur le sujet. En substance, respecter les standards du W3C, c'est exactement comme faire de l'agriculture raisonnée&amp;nbsp;: on obtient de bons résultats aujourd'hui et on préserve le potentiel de demain. En ce qui concerne le Web, on se prépare à l'arrivée des mobiles, et on permet l'accès à tous. C'est en quelque sorte un pari pour le futur&amp;nbsp;;&lt;/li&gt;
+&lt;li&gt;Une histoire très perturbante&amp;nbsp;: &lt;a href=&quot;http://www.liberation.fr/societe/0101269967-liberation-interpelle-flagrant-delire&quot; hreflang=&quot;fr&quot;&gt;arrêté à l'aube à son domicile pour un commentaire qu'un autre a laissé sur son site&lt;/a&gt;. Le site, c'est Libé...Vais-je finir en tôle pour des commentaires laissés sur le Standblog&amp;nbsp;? Devrais-je au contraire attaquer les gens qui médisent sur mon compte quand je publie sur 01Net&amp;nbsp;? Et si on revenait à un peu plus de sérénité, au moins au niveau de la justice et de la police&amp;nbsp;?&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.boingboing.net/2008/12/01/wheres-sock-puppets.html#comment-342925&quot; hreflang=&quot;en&quot;&gt;Rions ensemble à propos des difficultés de l'industrie automobile américaine&lt;/a&gt;, qui demande une aide à l'état. Traduction par votre serviteur&amp;nbsp;: &quot;Quand l'industrie de la laine était en récession en Angleterre il y a plusieurs siècles, un décret fut passé pour que les morts soient enterrés dans un linceul de laine. La France a fait la même chose par la suite avec des linceuls de lin. Il est temps que l'Amérique fasse de même avec les 4x4.&quot; (via &lt;a href=&quot;http://patrickfinch.net/&quot; hreflang=&quot;en&quot;&gt;Patrick&lt;/a&gt;). (Non, la crise n'est pas drôle, mais si elle nous permettait de comprendre que la société de consommation est en fait la société de &lt;em&gt;consumation&lt;/em&gt; de la planète, on aura déjà fait un grand pas.&lt;/li&gt;
+&lt;/ul&gt;</content>
+    
+      </entry>
+    
+  <entry>
+    <title>About Firefox market share</title>
+    <link href="http://standblog.org/blog/post/2008/12/02/About-Firefox-market-share" rel="alternate" type="text/html"
+    title="About Firefox market share" />
+    <id>urn:md5:2dcc5cea6429eec3c7276d087e406a3c</id>
+    <updated>2008-12-02T21:18:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>en</dc:subject>
+            
+    <content type="html">    &lt;p&gt;Net Applications has published recent data: &lt;a href=&quot;http://marketshare.hitslink.com/firefox-market-share.aspx?qprid=0&amp;amp;sample=28&quot; hreflang=&quot;en&quot;&gt;Firefox Share Tops 20% for November&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;Ken 'Da Numerator' Kovash has the scoop: &lt;a href=&quot;http://blog.mozilla.com/metrics/2008/12/01/firefox-surpassing-50-market-share-in-more-regions/&quot; hreflang=&quot;en&quot;&gt;Firefox Surpassing 50% Market Share in More Regions&lt;/a&gt;. As usual, statistics need to be taken with a grain of salt. If there is one thing we can take for sure from all these numbers, it's that Firefox usage is growing everywhere (I can hear &lt;a href=&quot;http://farm4.static.flickr.com/3172/3072928425_6dfb129f36_o.png&quot;&gt;Mozillian cheer all over the world&lt;/a&gt; while &lt;a href=&quot;http://farm4.static.flickr.com/3246/3073834826_f39957e180_o.png&quot;&gt;chairs are flying in Redmond&lt;/a&gt;). Asa has a &lt;a href=&quot;http://weblogs.mozillazine.org/asa/archives/2008/12/microsoft_cant.html&quot; hreflang=&quot;en&quot;&gt;great comment on this&lt;/a&gt;:&lt;/p&gt;
+
+
+&lt;blockquote&gt;&lt;p&gt;The Web is a large and massive thing and it's very difficult to get it moving in a new direction. Once it gets moving in one direction, it's got a momentum that's difficult to alter. It's not impossible, it's just difficult and either extraordinary circumstances (Netscape and Microsoft) or extraordinary effort (Mozilla) are required. It's rare that any one entity has caused a major shift in velocity of the web. Mozilla, having effected a real change in that velocity with Firefox, is acting differently than the other two examples because Mozilla's mission is not to try to consolidate control and become the sole determiner of the direction for the Web, but rather to help more people and projects (and yes, even other browsers) play a much bigger part in determining where this thing goes than they've been able to in the past.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;Let me simplify his last sentence, because I think it sums up pretty well what Mozilla is about:&lt;/p&gt;
+
+
+&lt;blockquote&gt;&lt;p&gt;Mozilla's mission is to help more people and projects (and yes, even other browsers) play a much bigger part in determining where this thing (the Web) goes than they've been able to in the past.&lt;/p&gt;&lt;/blockquote&gt;
+
+
+&lt;p&gt;This is just it. &lt;strong&gt;Mozilla is about participation&lt;/strong&gt;. It's about enabling &lt;em&gt;us&lt;/em&gt;, users, Web developers, content producers, to decide collectively where the Web, the Internet, our online life are going.&lt;/p&gt;</content>
+    
+      </entry>
+    
+  <entry>
+    <title>Sur 01Net : Monsieur Jourdain et l'Open Source</title>
+    <link href="http://standblog.org/blog/post/2008/12/01/Sur-01Net-%3A-Monsieur-Jourdain-et-l-Open-Source" rel="alternate" type="text/html"
+    title="Sur 01Net : Monsieur Jourdain et l'Open Source" />
+    <id>urn:md5:01c4cf30e9e27c4c16e7e1a532b72749</id>
+    <updated>2008-12-01T13:55:00+01:00</updated>
+    <author><name>Tristan</name></author>
+        <dc:subject>Technologie</dc:subject>
+            
+    <content type="html">    &lt;p&gt;Voici donc mon 2eme article paru sur 01Net&amp;nbsp;: &lt;a href=&quot;http://www.01net.com/editorial/397684/monsieur-jourdain-et-l-open-source/?rss&quot; hreflang=&quot;fr&quot;&gt;Monsieur Jourdain et l'open source&lt;/a&gt;. Je tiens à préciser que je touche là-bas une audience différente de celle du Standblog, ce qui fait que j'y exprime des idées qui sembleront évidentes aux lecteurs habituels du Standblog.&lt;/p&gt;</content>
+    
+      </entry>
+  
+</feed>

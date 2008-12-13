@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/rss2full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>Beyond Caffeine</title>
+	
+	<link>http://blog.websitestyle.com</link>
+	<description>Various Epiphanies of a Technical Mind</description>
+	<pubDate>Sat, 01 Nov 2008 14:39:32 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6.2</generator>
+	<language>en</language>
+			<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://feeds.feedburner.com/BeyondCaffeine" type="application/rss+xml" /><feedburner:emailServiceId>396794</feedburner:emailServiceId><feedburner:feedburnerHostname>http://www.feedburner.com</feedburner:feedburnerHostname><feedburner:browserFriendly>Beyond Caffeine is the online tech home of Nicole Hernandez - the place on the web where she talks about XHTML, CSS, standards, accessibility, and random things like langugage learning and her obsession with online quizzes.</feedburner:browserFriendly><item>
+		<title>SilverStripe - A New CMS Contender</title>
+		<link>http://feeds.feedburner.com/~r/BeyondCaffeine/~3/439091455/</link>
+		<comments>http://blog.websitestyle.com/index.php/2008/11/01/silverstripe-a-new-cms-contender/#comments</comments>
+		<pubDate>Sat, 01 Nov 2008 14:39:32 +0000</pubDate>
+		<dc:creator>Nicole</dc:creator>
+		
+		<category><![CDATA[Reviews]]></category>
+
+		<category><![CDATA[cms]]></category>
+
+		<category><![CDATA[mvc]]></category>
+
+		<category><![CDATA[open source]]></category>
+
+		<category><![CDATA[Silver Stripe]]></category>
+
+		<category><![CDATA[silverstripe]]></category>
+
+		<guid isPermaLink="false">http://blog.websitestyle.com/?p=305</guid>
+		<description><![CDATA[I've just taken a look at the SilverStripe Open Source CMS, and have some initial impressions and information to share with you.]]></description>
+			<content:encoded><![CDATA[<div class="wp-caption aligncenter" style="width: 461px"><img alt="SilverStripe Content Management System." src="http://img137.imageshack.us/img137/7518/featureimageresizedimagmu9.png" title="SilverStripe CMS demo screen shot." width="451" height="228" /><p class="wp-caption-text">SilverStripe Content Management System.</p></div>
+<p>I&#8217;m not entirely certain how it is that I had not read anything about <a href="http://www.silverstripe.com/" title="SilveStripe Open Source CMS">SilverStripe</a> until it won a place as the <a href="http://www.packtpub.com/article/2008-open-source-cms-award-winner-announced" title="Most Promising Open Source CMS award to SilverStripe.">&#8216;Most Promising Open Source CMS&#8217; awards</a>. My best guess is that I simply scanned past any news on it because it so closely resembles the &#8216;Silverlight&#8217; technology in name, and I have no interest in reading or writing about more Microsoft technologies doomed to failure.</p>
+<p>When I was able to take a look at the website, I was truly impressed with what I saw. Right on the front page is a listing of the key features of SilverStripe - and the words scalable, open source, BSD license, modular, standards compliant, and template freedom all lead me to check out their <a href="http://www.silverstripe.com/assets/video/cms.html" title="SilverStripe Online Video Demonstration.">online video demo</a>.</p>
+<p>What an excellent video! As I watched, I was mentally working through a list of requirements I look for in a backend as I watched the video, and kept seeing more and more of them covered. One of the things I felt was lacking in the video was an exploration of blogging capabilities. There is a blog module that you install if you&#8217;d like a blog, and while the demo site in the video had that there, the time spent on it was minimal. </p>
+<p>There are several modules that can be added, which are not the same as widgets (which they have also). Modules are essentially core features (such as blogging, e-commerce, and forums), whereas widgets are like WordPress sidebar widgets that include things like a Google calendar on the sidebar, a quote of the day, and so forth.</p>
+<p>While the functionality of the system seems to be great, the one place I see a lot of room for improvement is in the way it handles the actual look and feel of the site. Templates are handled in ways I don&#8217;t feel are very user friendly at all. For example, in order to change the theme your site uses, you have to manually edit a file to change the theme name:<br />
+<code>SSViewer::set_theme("themename");</code></p>
+<p>Another thing that I find overly complex is that the MVC approach to the modular creation of the system is extended to the themes. You cannot add PHP directly into a theme. Instead, you have to separate all your PHP and create a new function controller class whereby you declare all of your PHP code as custom functions. Those functions are then called from the theme. In theory, this approach is probably best, but in practice it may prove to be a bit cumbersome. In fact, my initial impression was that they managed to make templates even more complicated than Drupal.  Keep in mind, these are only initial impressions, I&#8217;ll play around with the templating system and see if it&#8217;s as complex as it seems.</p>
+<p>Overall, from the user standpoint, it seems to be powerful while not appearing to be too confusing. From a theme developer view, I&#8217;m not certain that it&#8217;s quite so easy.</p>
+<p>~Nicole</p>
+<div><a href="http://www.addthis.com/bookmark.php" onclick="window.open('http://www.addthis.com/bookmark.php?pub=mistycabal&amp;url=http%3A%2F%2Fblog.websitestyle.com%2Findex.php%2F2008%2F11%2F01%2Fsilverstripe-a-new-cms-contender%2F&amp;title=SilverStripe+-+A+New+CMS+Contender', 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no'); return false;" title="Bookmark using any bookmark manager!"><img src="http://s3.addthis.com/button1-bm.gif" width="125" height="16" alt="Add this button." /></a></div><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=pZQqN"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=pZQqN" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=FdWZN"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=FdWZN" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=mtIXn"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=mtIXn" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=ARcSN"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=ARcSN" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=fm4nn"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=fm4nn" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=TVKLN"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=TVKLN" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/BeyondCaffeine/~4/439091455" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blog.websitestyle.com/index.php/2008/11/01/silverstripe-a-new-cms-contender/feed/</wfw:commentRss>
+		<feedburner:origLink>http://blog.websitestyle.com/index.php/2008/11/01/silverstripe-a-new-cms-contender/</feedburner:origLink></item>
+		<item>
+		<title>Product Ideas for Visually Impaired</title>
+		<link>http://feeds.feedburner.com/~r/BeyondCaffeine/~3/434754992/</link>
+		<comments>http://blog.websitestyle.com/index.php/2008/10/28/product-ideas-for-visually-impaired/#comments</comments>
+		<pubDate>Tue, 28 Oct 2008 14:20:41 +0000</pubDate>
+		<dc:creator>Nicole</dc:creator>
+		
+		<category><![CDATA[Accessibility]]></category>
+
+		<category><![CDATA[assistive]]></category>
+
+		<category><![CDATA[Design]]></category>
+
+		<category><![CDATA[new]]></category>
+
+		<category><![CDATA[next-gen]]></category>
+
+		<category><![CDATA[pc]]></category>
+
+		<category><![CDATA[technology]]></category>
+
+		<category><![CDATA[vision impaired]]></category>
+
+		<guid isPermaLink="false">http://blog.websitestyle.com/?p=295</guid>
+		<description><![CDATA[The NextGen PC Design Competition chose their winners, and unfortunately neither of the products I was rooting for has won. In fact, of all the innovative ideas in the competition the one that won the prize money was for a PC that is like writing on a napkin. While it&#8217;s a mildly cute concept, the [...]]]></description>
+			<content:encoded><![CDATA[<p>The NextGen PC Design Competition chose their winners, and unfortunately neither of the products I was rooting for has won. In fact, of <a href="http://www.nextgendesigncomp.com/finalists.aspx">all the innovative ideas</a> in the competition the one that won the prize money was for a PC that is like writing on a napkin. While it&#8217;s a mildly cute concept, the fact that it beat out 2 concepts I loved is less than pleasing. </p>
+<p>My two favorite concepts both dealt with accessibility, and either of them could cause a huge shift in the way visually impaired people use the internet (or a computer period).  I was really hopeful that at least 1 of these two wins some of the prize money. It might have been enough to jump start a marketing run to get more funding for production.</p>
+<p>My Favorite: <a href="http://www.nextgendesigncomp.com/entrydetail.aspx?id=891">Siafu</a></p>
+<p><img src="http://img177.imageshack.us/img177/3651/3siafupagebraillesmall2rw6.jpg" alt="A photograph of Siafu turning text into braille." /></p>
+<p>Siafu does what we already have technology for (turning text into dynamic braille). However, it also takes it a step further: By allowing websites to be displayed, as designed, in raised relief:</p>
+<p><img src="http://img246.imageshack.us/img246/9493/6siafupagereliefsmall2fca8.jpg" alt="Siafu showing a website in raised relief." /></p>
+<p>I could talk for hours about how wonderful that would be to both web developers and people who need the technology.</p>
+<p>My Second Favorite: <a href="http://www.nextgendesigncomp.com/entrydetail.aspx?id=900">Zen</a></p>
+<p><img src="http://img505.imageshack.us/img505/5276/page05na8.jpg" alt="Shows the ability to drag your hand over the screen to turn on, and sync phones by placing them on the platform." /></p>
+<p>The ability to &#8216;rake&#8217; your hand over the platform to turn on the computer is just wonderful usability. I also love the concept of being able to simply place your phone / pda etc.. anywhere on the platform to have it sync with your computer.</p>
+<p><img src="http://img505.imageshack.us/img505/2310/page07ex2.jpg" alt="Shows the flexibility of the platform to generate a raised keyboard, piano, and various other tools." /></p>
+<p>The Zen really takes on the ability to simulate pretty much anything it runs across in a raised fashion, and that could really open some doors in functionality for people who need assistive technology.</p>
+<p>Overall, there are some really great ideas out there for accessible tools - but I&#8217;m still disappointed that neither of them received the prize money to make any of those concepts a reality. Don&#8217;t lose heart though, apparently we&#8217;ll soon see technology that will allow us to jot down notes on napkins!</p>
+<p>~Nicole</p>
+<div><a href="http://www.addthis.com/bookmark.php" onclick="window.open('http://www.addthis.com/bookmark.php?pub=mistycabal&amp;url=http%3A%2F%2Fblog.websitestyle.com%2Findex.php%2F2008%2F10%2F28%2Fproduct-ideas-for-visually-impaired%2F&amp;title=Product+Ideas+for+Visually+Impaired', 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no'); return false;" title="Bookmark using any bookmark manager!"><img src="http://s3.addthis.com/button1-bm.gif" width="125" height="16" alt="Add this button." /></a></div><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=lN19M"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=lN19M" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=7KPPM"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=7KPPM" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=yjARm"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=yjARm" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=hzXhM"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=hzXhM" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=MGJQm"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=MGJQm" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=bP2oM"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=bP2oM" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/BeyondCaffeine/~4/434754992" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blog.websitestyle.com/index.php/2008/10/28/product-ideas-for-visually-impaired/feed/</wfw:commentRss>
+		<feedburner:origLink>http://blog.websitestyle.com/index.php/2008/10/28/product-ideas-for-visually-impaired/</feedburner:origLink></item>
+		<item>
+		<title>A Return Home</title>
+		<link>http://feeds.feedburner.com/~r/BeyondCaffeine/~3/431412931/</link>
+		<comments>http://blog.websitestyle.com/index.php/2008/10/24/a-return-home/#comments</comments>
+		<pubDate>Sat, 25 Oct 2008 05:21:38 +0000</pubDate>
+		<dc:creator>Nicole</dc:creator>
+		
+		<category><![CDATA[Random Stuff]]></category>
+
+		<category><![CDATA[back]]></category>
+
+		<category><![CDATA[domain]]></category>
+
+		<category><![CDATA[hosting]]></category>
+
+		<category><![CDATA[problems]]></category>
+
+		<category><![CDATA[vacation]]></category>
+
+		<guid isPermaLink="false">http://blog.websitestyle.com/?p=297</guid>
+		<description><![CDATA[
+It has been about 5 months since I last posted on this blog, and boy do I have some catching up to do!
+Where should I start? Ah, how about with why exactly you might have visited the blog and found a big alert that said it was down because my host was being an idiot. [...]]]></description>
+			<content:encoded><![CDATA[<div class="wp-caption aligncenter" style="width: 510px"><a href="http://guillermoesteves.com/"><img alt="Return Key Photo by Guillermo Esteves" src="http://img300.imageshack.us/img300/1359/1017144013706c997e5pw5.jpg" title="The Return Key." width="500" height="375" /></a><p class="wp-caption-text">Return Key Photo by Guillermo Esteves</p></div>
+<p>It has been about 5 months since I last posted on this blog, and boy do I have some catching up to do!</p>
+<p>Where should I start? Ah, how about with why exactly you might have visited the blog and found a big alert that said it was down because my host was being an idiot. Well, that&#8217;s a long story, but in short, my web hosting shut off my entire domain because my blog was using too many resources. Which, wouldn&#8217;t have been as big of a problem if they&#8217;d:</p>
+<p>a) Alerted me first.<br />
+b) Not locked me out of my own files.<br />
+c) Not also shut down my main site on the primary domain which I use for business.<br />
+d) Not plastered some &#8216;this user is in violation&#8217; message up on my domain to make me sound like some sort of criminal.</p>
+<p>So&#8230; obviously I pitched a royal fit, but it still took quite a long time to get my file access back. Now, here&#8217;s the real catch - under normal circumstances I&#8217;d suggest to any of my clients a very easy fix: change web hosts. Well, unfortunately I can&#8217;t do that yet.</p>
+<p>As it would seem, my webhost has arranged things in such a manner that my domain name is being held hostage. Now this is when I get a bit embarrassed, since I am someone who works in this business and it&#8217;s just a matter of having been an idiot early on. When I registered this domain.. I suppose close to 5 years ago, I just registered it with a package deal. Found a little webhost with unlimited bandwidth allowed, and decided to go with it. Got the domain and hosting at the same time.</p>
+<p>Well, I didn&#8217;t plan ahead, and didn&#8217;t find out what I needed to first. As it would turn out, they used another company to register my domain name, and that company won&#8217;t respond to any of my inquiries. I&#8217;d like to transfer the domain name to my GoDaddy account (where I keep most of my personal domains), but they have the domain locked for transfer - go figure. So&#8230; I&#8217;ve been trying to get in touch with these guys for months to get them to unlock my domain name. No joy so far - not even a response.</p>
+<p>So that&#8217;s one of the reasons I&#8217;ve been gone.</p>
+<p>The rest of them are personal. Here&#8217;s a quickie list:</p>
+<p>1. I&#8217;ve been writing articles on here for nearly 5 years and decided I needed a vacation when all that domain nonsense started.</p>
+<p>2. I started homeschooling both my kids and needed to focus on finding the right methods that would work with each. (It&#8217;s going GREAT by the way.)</p>
+<p>3. Business has been pretty busy on the web development side.</p>
+<p>4. Started <a href="http://wowplayerguides.com">a new company</a> in September and starting <a href="http://wordpressfromscratch.com">another</a> in November.</p>
+<p>5. I&#8217;ve been having a torrid affair with <a href="http://jquery.com">jQuery</a>, and will give you all the dirty bits later.</p>
+<p>6. I&#8217;ve been attempting to educate myself more on SEO, which has actually been less complicated than I imagined.</p>
+<p>7. Started a personal blog just to see if I can maintain one (I&#8217;ve never been good at keeping personal journal things up to date, and I&#8217;m not doing great at this either).</p>
+<p>8. &#8230;. and all the rest of everything.</p>
+<p>In any case, I&#8217;m back here, and boy oh boy do I have a TON of articles stored up in my head. It&#8217;s gonna be a fun holiday season for articles.</p>
+<p>Until next time!</p>
+<p>~Nicole</p>
+<div><a href="http://www.addthis.com/bookmark.php" onclick="window.open('http://www.addthis.com/bookmark.php?pub=mistycabal&amp;url=http%3A%2F%2Fblog.websitestyle.com%2Findex.php%2F2008%2F10%2F24%2Fa-return-home%2F&amp;title=A+Return+Home', 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no'); return false;" title="Bookmark using any bookmark manager!"><img src="http://s3.addthis.com/button1-bm.gif" width="125" height="16" alt="Add this button." /></a></div><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=cE55M"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=cE55M" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=RN7uM"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=RN7uM" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=AVuem"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=AVuem" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=3gYlM"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=3gYlM" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=oyNOm"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=oyNOm" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=aSrEM"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=aSrEM" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/BeyondCaffeine/~4/431412931" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blog.websitestyle.com/index.php/2008/10/24/a-return-home/feed/</wfw:commentRss>
+		<feedburner:origLink>http://blog.websitestyle.com/index.php/2008/10/24/a-return-home/</feedburner:origLink></item>
+		<item>
+		<title>A Step Back - Mozilla Prism</title>
+		<link>http://feeds.feedburner.com/~r/BeyondCaffeine/~3/259627859/</link>
+		<comments>http://blog.websitestyle.com/index.php/2008/03/28/a-step-back-mozilla-prism/#comments</comments>
+		<pubDate>Fri, 28 Mar 2008 13:07:51 +0000</pubDate>
+		<dc:creator>Nicole</dc:creator>
+		
+		<category><![CDATA[Reviews]]></category>
+
+		<category><![CDATA[Tech News]]></category>
+
+		<category><![CDATA[kiosk]]></category>
+
+		<category><![CDATA[kiosk development]]></category>
+
+		<category><![CDATA[mozilla]]></category>
+
+		<category><![CDATA[mozilla prism]]></category>
+
+		<category><![CDATA[prism]]></category>
+
+		<guid isPermaLink="false">http://blog.websitestyle.com/index.php/2008/03/28/a-step-back-mozilla-prism/</guid>
+		<description><![CDATA[
+Mozilla Prism is one of the most recent projects sitting in Mozilla labs - and one that completely stumps me.
+Not only do I think that Prism really defines the word &#8216;uselss&#8217; I also think it is a dangerous step BACK in time for technology progression.
+Hold that thought, I&#8217;ll make one exception to its usefulness: It&#8217;s [...]]]></description>
+			<content:encoded><![CDATA[<p><img src="http://img296.imageshack.us/img296/5960/prismlogo4002e894220ku8.jpg" alt="Mozilla Prism logo." /></p>
+<p>Mozilla Prism is one of the most recent projects sitting in Mozilla labs - and one that completely stumps me.</p>
+<p>Not only do I think that Prism really defines the word &#8216;uselss&#8217; I also think it is a dangerous step BACK in time for technology progression.</p>
+<p>Hold that thought, I&#8217;ll make one exception to its usefulness: It&#8217;s great for Kiosk applications, but since I feel that Kiosk applications are a dying breed anyway, that means little.</p>
+<p>So what does Prism do?</p>
+<p>From <a href="http://labs.mozilla.com/2007/10/prism/">Mozilla</a>:</p>
+<blockquote><p>Prism is an application that lets users split web applications out of their browser and run them directly on their desktop.</p></blockquote>
+<p>What Prism does is create an installable application. After you install it, and click on the icon, it loads a slimmed-down version of Firefox showing a single website on your computer. It shows without the user-chrome (the toolbars and junk around your browser). </p>
+<p>So&#8230; in a nutshell, Prism is a much more complicated way of doing something that is already extremely simple:</p>
+<p>1. Dragging a link from your browser to your desktop. (Much simpler than installing)<br />
+2. Clicking a link when you want to go to a site.<br />
+3. Hitting F11 in Firefox to make the user-chrome hide.</p>
+<p>Except, of course, that doing it the easy way means you can still use tabs. Doing it the Prism way means you can only have one web site at a time.</p>
+<p>This is progress&#8230; how?</p>
+<p>Desktop applications are dead. They have been for a while now. Internet applications are the future from now onward.</p>
+<p>Having to install an application is something people don&#8217;t want to have to do. Having to download updates is also something we want gone.</p>
+<p>I know that grates on some developers, particularly people who are very fond of writing desktop applications because that&#8217;s what they know how to do. I understand that it&#8217;s depressing to think that something you learned to do really well is no longer needed. But that&#8217;s what happens sometimes when progress comes about. Trust me, you can get over it. 10 years ago I was writing desktop applications. Today, I would never waste my time with it.</p>
+<p>What I don&#8217;t understand is why Mozilla would have a project that does something which is very anti-progress.</p>
+<p>So here are some of my questions:</p>
+<p>1. Currently to visit Gmail (for example) I can click a link and open it up. Why would I want to download and install something to achieve the same thing?</p>
+<p>2. Firefox has tabs - why would I want to lose them?</p>
+<p>3. Why would I want to install something, when installing something inherently means it is only available on that one computer?</p>
+<p>4. If I really want to install something, why not install one of the <a href="https://addons.mozilla.org/en-US/firefox/search?q=kiosk&#038;cat=all">many Firefox extensions</a> that will allow me to have even &#8216;full screen&#8217; stuff hidden or work in Kiosk mode?</p>
+<p>In a nutshell, I&#8217;m confused by Prism.</p>
+<p>I don&#8217;t see a usefulness for it aside from the random person building a Kiosk application.</p>
+<p>~Nicole</p>
+<div><a href="http://www.addthis.com/bookmark.php" onclick="window.open('http://www.addthis.com/bookmark.php?pub=mistycabal&amp;url=http%3A%2F%2Fblog.websitestyle.com%2Findex.php%2F2008%2F03%2F28%2Fa-step-back-mozilla-prism%2F&amp;title=A+Step+Back+-+Mozilla+Prism', 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no'); return false;" title="Bookmark using any bookmark manager!"><img src="http://s3.addthis.com/button1-bm.gif" width="125" height="16" alt="Add this button." /></a></div><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=l6WZxwF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=l6WZxwF" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=EMLXWWF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=EMLXWWF" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=aZMjBIf"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=aZMjBIf" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=FSHIX9F"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=FSHIX9F" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=D21hLuf"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=D21hLuf" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=6afXPSF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=6afXPSF" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/BeyondCaffeine/~4/259627859" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blog.websitestyle.com/index.php/2008/03/28/a-step-back-mozilla-prism/feed/</wfw:commentRss>
+		<feedburner:origLink>http://blog.websitestyle.com/index.php/2008/03/28/a-step-back-mozilla-prism/</feedburner:origLink></item>
+		<item>
+		<title>Sneak Peek - New WordPress Theme</title>
+		<link>http://feeds.feedburner.com/~r/BeyondCaffeine/~3/257051973/</link>
+		<comments>http://blog.websitestyle.com/index.php/2008/03/24/sneak-peek-new-wordpress-theme/#comments</comments>
+		<pubDate>Mon, 24 Mar 2008 14:11:54 +0000</pubDate>
+		<dc:creator>Nicole</dc:creator>
+		
+		<category><![CDATA[Blogging]]></category>
+
+		<category><![CDATA[Design]]></category>
+
+		<category><![CDATA[Templates]]></category>
+
+		<category><![CDATA[Wordpress]]></category>
+
+		<category><![CDATA[minimal]]></category>
+
+		<category><![CDATA[minimal overhead]]></category>
+
+		<category><![CDATA[theme]]></category>
+
+		<guid isPermaLink="false">http://blog.websitestyle.com/index.php/2008/03/24/sneak-peek-new-wordpress-theme/</guid>
+		<description><![CDATA[I&#8217;ve been working on a new WordPress theme that highlights what I enjoy in minimalist design. It&#8217;s called Minimal Overhead.
+
+
+As you can see from the above screen shots, this design is going to come with a few color themes, and you can easily add your own as well.
+The top bar is a CSS drop-down menu. [...]]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve been working on a new WordPress theme that highlights what I enjoy in minimalist design. It&#8217;s called Minimal Overhead.</p>
+<p><a href="http://img255.imageshack.us/img255/1186/minimaloverheadprereleasa2.jpg"><img src="http://img355.imageshack.us/img355/9953/minimaloverheadprereleatu7.jpg" alt="Small size of Minimal Overhead preview." /></a></p>
+<p><a href="http://img507.imageshack.us/img507/5071/minimaloverheadprereleaiz4.jpg"><img src="http://img523.imageshack.us/img523/3889/minimaloverheadprereleaex4.jpg" alt="Small size of Minimal Overhead preview second color." /></a></p>
+<p>As you can see from the above screen shots, this design is going to come with a few color themes, and you can easily add your own as well.</p>
+<p>The top bar is a CSS drop-down menu. For those on browsers not supporting the CSS, clicking the links will instead toss people to another area to read the subcategories and subpages etc&#8230; I&#8217;m still in personal debate over how to handle that menu. I&#8217;m experiencing a small inner rebellion against using Javascript to make the menu work for IE, and would prefer to just have the design follow a rollback for IE like any of the other older browsers will see. In either case, the menu options will be available, just in different ways.</p>
+<p>This is, in my opinion, the kind of theme for someone who needs structure in order to keep their blog minimal feeling without letting it get cluttered over time. I&#8217;m not going to add in places for people to drag a million widgets and fill up all the empty space - that defeats the purpose. </p>
+<p>The theme is about keeping things simple.</p>
+<p>I&#8217;ll post another update when I&#8217;ve got more to show.</p>
+<p>~Nicole</p>
+<div><a href="http://www.addthis.com/bookmark.php" onclick="window.open('http://www.addthis.com/bookmark.php?pub=mistycabal&amp;url=http%3A%2F%2Fblog.websitestyle.com%2Findex.php%2F2008%2F03%2F24%2Fsneak-peek-new-wordpress-theme%2F&amp;title=Sneak+Peek+-+New+WordPress+Theme', 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no'); return false;" title="Bookmark using any bookmark manager!"><img src="http://s3.addthis.com/button1-bm.gif" width="125" height="16" alt="Add this button." /></a></div><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=oZBKpGF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=oZBKpGF" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=hQU5qFF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=hQU5qFF" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=GouFlof"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=GouFlof" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=xctiKuF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=xctiKuF" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=F9EyYVf"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=F9EyYVf" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=2ywIneF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=2ywIneF" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/BeyondCaffeine/~4/257051973" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blog.websitestyle.com/index.php/2008/03/24/sneak-peek-new-wordpress-theme/feed/</wfw:commentRss>
+		<feedburner:origLink>http://blog.websitestyle.com/index.php/2008/03/24/sneak-peek-new-wordpress-theme/</feedburner:origLink></item>
+		<item>
+		<title>Ubuntu 8.04 LTS Beta released</title>
+		<link>http://feeds.feedburner.com/~r/BeyondCaffeine/~3/256722065/</link>
+		<comments>http://blog.websitestyle.com/index.php/2008/03/23/ubuntu-804-lts-beta-released/#comments</comments>
+		<pubDate>Sun, 23 Mar 2008 23:40:37 +0000</pubDate>
+		<dc:creator>Nicole</dc:creator>
+		
+		<category><![CDATA[Ubuntu]]></category>
+
+		<category><![CDATA[hardy]]></category>
+
+		<category><![CDATA[hardy heron]]></category>
+
+		<category><![CDATA[new version]]></category>
+
+		<guid isPermaLink="false">http://blog.websitestyle.com/index.php/2008/03/23/ubuntu-804-lts-beta-released/</guid>
+		<description><![CDATA[
+The Ubuntu team is pleased to announce the beta release of Ubuntu 8.04 LTS
+(Long-Term Support) on desktop and server.  Codenamed &#8220;Hardy Heron&#8221;, 8.04
+LTS continues Ubuntu&#8217;s proud tradition of integrating the latest and
+greatest open source technologies into a high-quality, easy-to-use Linux
+distribution&#8230;read more &#124; digg story
+]]></description>
+			<content:encoded><![CDATA[<p><img src="http://img72.imageshack.us/img72/2769/ubuntulogo110caf2rk9.png" alt="Ubuntu logo." /></p>
+<p>The Ubuntu team is pleased to announce the beta release of Ubuntu 8.04 LTS<br />
+(Long-Term Support) on desktop and server.  Codenamed &#8220;Hardy Heron&#8221;, 8.04<br />
+LTS continues Ubuntu&#8217;s proud tradition of integrating the latest and<br />
+greatest open source technologies into a high-quality, easy-to-use Linux<br />
+distribution&#8230;<br/><br/><a href="http://www.ubuntu.com/testing/hardy/beta">read more</a> | <a href="/linux_unix/Ubuntu_8_04_LTS_Beta_released">digg story</a></p>
+<div><a href="http://www.addthis.com/bookmark.php" onclick="window.open('http://www.addthis.com/bookmark.php?pub=mistycabal&amp;url=http%3A%2F%2Fblog.websitestyle.com%2Findex.php%2F2008%2F03%2F23%2Fubuntu-804-lts-beta-released%2F&amp;title=Ubuntu+8.04+LTS+Beta+released', 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no'); return false;" title="Bookmark using any bookmark manager!"><img src="http://s3.addthis.com/button1-bm.gif" width="125" height="16" alt="Add this button." /></a></div><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=ds19g6F"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=ds19g6F" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=fmhX8lF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=fmhX8lF" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=gvN9hyf"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=gvN9hyf" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=SDiQbmF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=SDiQbmF" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=S1MvS1f"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=S1MvS1f" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=wcPs51F"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=wcPs51F" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/BeyondCaffeine/~4/256722065" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blog.websitestyle.com/index.php/2008/03/23/ubuntu-804-lts-beta-released/feed/</wfw:commentRss>
+		<feedburner:origLink>http://blog.websitestyle.com/index.php/2008/03/23/ubuntu-804-lts-beta-released/</feedburner:origLink></item>
+		<item>
+		<title>Three Powerful Safari Features That Few People Use</title>
+		<link>http://feeds.feedburner.com/~r/BeyondCaffeine/~3/256718734/</link>
+		<comments>http://blog.websitestyle.com/index.php/2008/03/23/three-powerful-safari-features-that-few-people-use/#comments</comments>
+		<pubDate>Sun, 23 Mar 2008 23:31:51 +0000</pubDate>
+		<dc:creator>Nicole</dc:creator>
+		
+		<category><![CDATA[Tutorials]]></category>
+
+		<category><![CDATA[features]]></category>
+
+		<category><![CDATA[safari]]></category>
+
+		<guid isPermaLink="false">http://blog.websitestyle.com/index.php/2008/03/23/three-powerful-safari-features-that-few-people-use/</guid>
+		<description><![CDATA[
+Safari is an excellent browser for many reasons; its speed, clean aesthetics and ease of use are attractive from the outset. But there are a few extremely attractive and lesser known features that people should be taking advantage of as well.read more &#124; digg story
+]]></description>
+			<content:encoded><![CDATA[<p><img src="http://img404.imageshack.us/img404/5296/safarilogopng1096f9dme7.jpg" alt="Safari logo." /></p>
+<p>Safari is an excellent browser for many reasons; its speed, clean aesthetics and ease of use are attractive from the outset. But there are a few extremely attractive and lesser known features that people should be taking advantage of as well.<br/><br/><a href="http://dmiessler.com/blog/three-powerful-safari-features-that-few-people-use">read more</a> | <a href="/apple/Three_Powerful_Safari_Features_That_Few_People_Use">digg story</a></p>
+<div><a href="http://www.addthis.com/bookmark.php" onclick="window.open('http://www.addthis.com/bookmark.php?pub=mistycabal&amp;url=http%3A%2F%2Fblog.websitestyle.com%2Findex.php%2F2008%2F03%2F23%2Fthree-powerful-safari-features-that-few-people-use%2F&amp;title=Three+Powerful+Safari+Features+That+Few+People+Use', 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no'); return false;" title="Bookmark using any bookmark manager!"><img src="http://s3.addthis.com/button1-bm.gif" width="125" height="16" alt="Add this button." /></a></div><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=2ktc1AF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=2ktc1AF" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=5ZN13KF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=5ZN13KF" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=Fyb1xvf"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=Fyb1xvf" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=FeTc3xF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=FeTc3xF" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=RWdGtpf"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=RWdGtpf" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=RHISSkF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=RHISSkF" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/BeyondCaffeine/~4/256718734" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blog.websitestyle.com/index.php/2008/03/23/three-powerful-safari-features-that-few-people-use/feed/</wfw:commentRss>
+		<feedburner:origLink>http://blog.websitestyle.com/index.php/2008/03/23/three-powerful-safari-features-that-few-people-use/</feedburner:origLink></item>
+		<item>
+		<title>The New Client - Age 5</title>
+		<link>http://feeds.feedburner.com/~r/BeyondCaffeine/~3/251478510/</link>
+		<comments>http://blog.websitestyle.com/index.php/2008/03/14/the-new-client-age-5/#comments</comments>
+		<pubDate>Fri, 14 Mar 2008 16:13:27 +0000</pubDate>
+		<dc:creator>Nicole</dc:creator>
+		
+		<category><![CDATA[Code]]></category>
+
+		<category><![CDATA[Design]]></category>
+
+		<category><![CDATA[Layout]]></category>
+
+		<category><![CDATA[Tech News]]></category>
+
+		<category />
+
+		<category><![CDATA[children]]></category>
+
+		<category><![CDATA[development]]></category>
+
+		<category><![CDATA[kids]]></category>
+
+		<category><![CDATA[new generation]]></category>
+
+		<category><![CDATA[new tech]]></category>
+
+		<category><![CDATA[next generation]]></category>
+
+		<category><![CDATA[tech development]]></category>
+
+		<category><![CDATA[technology]]></category>
+
+		<guid isPermaLink="false">http://blog.websitestyle.com/index.php/2008/03/14/the-new-client-age-5/</guid>
+		<description><![CDATA[<img src="http://img372.imageshack.us/img372/7835/975839418b31286b45dpb9.jpg" alt="Child seated in front of a computer." title="Child seated in front of a computer." />
+<p class="photo-attrib"><a href="http://www.flickr.com/photos/tanyaryno/">Photographer.</a></p>
+
+The next generation is alive and well. They are blogging, emailing, carrying mobile phones, text messaging, listening on iPods, networking and chatting with friends through social apps and messenger programs, and playing complex massive multi-player games online. 
+
+<strong>They are about 5 years old.
+
+They are your target customer if you are in new technology development.
+</strong>]]></description>
+			<content:encoded><![CDATA[<p><img src="http://img372.imageshack.us/img372/7835/975839418b31286b45dpb9.jpg" alt="Child seated in front of a computer." title="Child seated in front of a computer." /></p>
+<p class="photo-attrib"><a href="http://www.flickr.com/photos/tanyaryno/">Photographer.</a></p>
+<p>The next generation is alive and well. They are blogging, emailing, carrying mobile phones, text messaging, listening on iPods, networking and chatting with friends through social apps and messenger programs, and playing complex massive multi-player games online. </p>
+<p><strong>They are about 5 years old.</p>
+<p>They are your target customer if you are in new technology development.<br />
+</strong><br />
+While there are some out there who still balk at the idea of focusing advertising and development toward kids - they need a refresher class in basic business. Solidifying brand recognition is a lengthy process, and if kids grow up using something, they will continue to use it as adults.</p>
+<p>More than that obvious statement of focusing on the next generation now&#8230; the question on the minds of people who prospect ideas in new development is more tricky. What will these kids expect as adults? Or more specifically&#8230; what will we do NOW to affect what their expectation becomes later?</p>
+<p>Observation of the new generation client starts now. As the people who create new technology, we need to know what functionality appeals from the start.</p>
+<p>Here are a few of my observations, developed from watching my own kids as well as their friends:</p>
+<dl>
+<dt>Computers are for gaming and internet access.</dt>
+<dd>As long as the computer has a browser installed, and whatever computer games they play accessible - that&#8217;s all they need. Kids expect to be able to do everything, aside from gaming, through their browser. The sheer idea of having to install a program to do something else is, literally, enough to make them giggle. <span class="h">Developers, that means that if you aren&#8217;t building web applications, or working on the types of software that make these things possible&#8230; start now.</span></dd>
+<dt>Massive multi-player gaming will continue to grow by leaps and bounds.</dt>
+<dd>My 8 year old has been playing WoW for the last year, and I recently posed the idea of buying her a game that doesn&#8217;t have other people connected. That got a blank confused stare from her. Her hesitant response was something akin to &#8216;Are they fixing it soon?&#8217; Make a mental note of that&#8230; if you can&#8217;t currently connect to people, they assume it&#8217;s broken and needs fixing. Kids are fine with family/friend gaming on with Wii or Playstation etc&#8230; but the idea of having no ability to play with someone else? Get real. <span class="h">Developers: Listen in on that one - kids expect to be socially connected through technology. Period.</span></dd>
+<dt>Operating system doesn&#8217;t matter.</dt>
+<dd>Again, the use of a computer has changed. As long as it can play their games and connect them using a browser - that&#8217;s all they need. My 5 year old son has been using a Ubuntu Linux laptop since he was 3 and can use both that and a Windows computer very proficiently. My 8 year old daughter can use both of those, plus a Mac. <span class="h">Developers: All operating systems have an equal chance in the market with this generation.</span></dd>
+<dt>Browsers matter alot.</dt>
+<dd>I have been conducting a mini experiment on my 5 year old sons use of browsers over the last year or so. On the Windows computer I installed Opera, Firefox, Safari (for Win), and IE. The same for the Linux one (without Safari and using multiple-IE&#8217;s to have IE on there). On each browser I set up the same bookmark quick links to get to his favorite sites. He eventually tried them all, and I would occasionally watch how he interacted with them. Occasionally a site would pop up saying it needed a particular plugin - this response ticked him off. His typical response was to either change the page immediately to something &#8216;not broken&#8217; or close the browser and open a different one. If I watch him now - I can tell you this: On Windows, he uses Firefox. On Linux, he uses Opera (likely because a few Firefox plugins don&#8217;t have a version for Linux). However - he can, and has, used them all. The defining criteria in how he uses them is simple: If stuff breaks or errors often when he uses it, he stops using it. Common sense I think. <span class="h">Developers: If you make plugins, make them for all operating systems. If you make websites or web apps - use common cross-os supporting plugins to ensure they work.</span></dd>
+<dt>Web apps for chat and email.</dt>
+<dd>My daughter will sometimes chat with relatives and friends using various networks - but she never uses an installed chat program even though we have them. Again, it&#8217;s about using the browser for it. She uses Meebo.com because she logs into them all at once and can talk to everyone in the same screen WHILE she&#8217;s in another tab doing something else. For email, she has a Gmail account which she uses through the browser only - big surprise. Downloaded email is ridiculous to kids when they have gigs of space to keep their email online and get it anywhere. <span class="h">Developers: Keep improving online apps for communication - they&#8217;re gold.</span></dd>
+<dt>Wireless everywhere.</dt>
+<dd>We vacationed in a cabin at a state park - my daughter checked email via wireless and played WoW on a laptop, my son played his web games. We went to the coast and stayed in a condo with no wireless and no internet in the condo lobby, they complained like the biggest junkies in withdrawal and wanted to go home the entire week. For my sanity, we&#8217;re never going there again. <span class="h">Developers: More and better wireless devices and connectivity. Businesses: Please God have wireless.</span></dd>
+<dt>Mobile is King.</dt>
+<dd>I doubt I even have to explain this one - but anyone who has been living under a rock needs to get out and go walk around some kids so that you can see the rapid clicking on phones. Texting will probably become an Olympic speed sport. Taking video and pictures with a phone is the new artistry. Schools are giving in to having cell phones in class for emergencies as long as they are &#8216;off&#8217; - but I doubt they stay that way. I&#8217;d take a guess that when my daughter was in kindergarten about 4 of the kids in a class of 20 or so had cell phones with them. That number has grown each year as she moves up in grades. <span class="h">Developers: Make everything you can do with your web applications in a browser doable via a cell phone or handheld browser. The world is mobile - develop for it.</span></dd>
+<dt>Movies on the Computer.</dt>
+<dd>If the TV&#8217;s in the house are being used, it&#8217;s pretty normal for either of my kids to grab a DVD, head to their respective computers, and pop it in. Bringing a way to play DVD&#8217;s on long trips is just as important as having a way for EACH of them to watch their own thing in the van on a drive. Someone got wise to that since I&#8217;ve seen more and more family vans with multiple independent DVD drop-down screens for watching 2 things at once. But where I REALLY think this is going to continue to grow is with being able to &#8216;rent and watch&#8217; movies from the computer. Netflix.com is getting there with the ability to rent and watch on the computer - but it&#8217;s not a perfect system because it requires Windows. Beyond that&#8230; I don&#8217;t think it&#8217;s enough. I think the next generation of kids is going to grow up wanting to be able to watch a movie using any device that can connect - and that means it has to be device and OS independent&#8230; AKA: through a browser. <span class="h">Developers: This is the age of YouTube folks - work on perfecting being able to watch movies through the browser.</span></dd>
+<dt>No Desktop Gadgets.</dt>
+<dd>In fact, this goes for all things that auto-load on startup. This may surprise some of the folks who are hard at work creating all sorts of new gadgets for the desktop - but most kids I&#8217;ve watched use a computer shut them off. Why? I&#8217;ve asked and heard: &#8216;They make the computer slow.&#8217; and &#8216;I don&#8217;t use them.&#8217; and &#8216;I keep accidentally clicking on them.&#8217; On Windows Vista, with the little default gadget bar - my daughter set it to not load at all. Why? They make the computer slow when she plays WoW - in fact, everything that loads on startup that&#8217;s not-essential is turned off. Again, as I pointed out before, kids use the computer to play games and use a browser. Why would kids want desktop widgets slowing the computer down when they have a Google homepage that has them, or Netvibes or Pageflakes? <span class="h">Developers: Work on improving portals that provide gadgets/widgets instead of something that is a glorified link on the desktop that takes up processing speed.</span></dd>
+<dt>Kids Are Speed Demons.</dt>
+<dd>They have even less patience for using websites and web apps than the average adult - which means it&#8217;s practically non-existent. If you make a website for kids - it had better be fast loading and processing. They will tolerate a slow loading site for their very favorite characters only, because the reward is significant. But if you aren&#8217;t Disney.com - you can&#8217;t afford to have a site as slow as they do. Keep in mind, this is what kids want now. These kids will grow up and still want it on an adult oriented site - learn how to speed up everything. <span class="h">Developers: Minify all your code. Don&#8217;t use tables for layout - they load slower. Optimize images to death. Reuse images. Don&#8217;t have music or movies play on startup - kids know how to push the play button and they will.</dd>
+<dt>Kids Love Bright Centered Minimalism.</dt>
+<dd>Adults tend to prefer monochromatic minimalism - kids like bright color. No big surprise there. But if you watch kids use a computer, you&#8217;ll notice that alot of times they tend to have tunnel vision and just look at the center of the page (though plenty of adults too also, I see it much more in kids whereas many adults start at the top left corner). Develop with that in mind. Take a look at PBSKids.com and you&#8217;ll see someone who has successfully done that. The design is minimal in content, yet colorful and very much center screen. Another element of that is that kids work extremely well with image representations. You ever seen a kid use a iPhone? It&#8217;s enough to make you dizzy! They combined the already amazing finger dexterity of kids (we&#8217;ve seen this for years with game controllers) and added picture representations and a minimalistic design. <span class="h">Developers: Take out the junk on your sites and apps on devices. Minimize. Use picture representations (but don&#8217;t forget to make it accessible!). Add TONS of bright color.</span></dd>
+<dt>Free is No Longer an Option.</dt>
+<dd>Kids nowadays are growing up with a million free to use web apps, games, research sites, etc.. Something being FREE is no longer a surprise - it&#8217;s expected. If something isn&#8217;t free, they find something that is. If you don&#8217;t think they can - just ask a kid to find you a website on a topic, and most often they&#8217;ll have Google loaded up faster than you can blink sorting through search results (btw - Google is centered, minimal, and often has a changing logo kids like). <span class="h">Business Developers: Find ways to use the &#8216;free&#8217; business model (often supplemented with advertising or a premium service) or you will find yourself out in the cold with this generation.</span></dd>
+<dt>Tech Savvy Input.</dt>
+<dd>If people thought my generation was tech oriented - this one is VERY technologically savvy and can sniff out bugs and errors with their eyes shut. More than that - they EXPECT to be able to report bugs so they can be immediately fixed. My daughter knows how to report broken websites in Firefox, to report errors in the browser, and (even though I don&#8217;t) she knows how to file bug reports with the companies that run the games she plays. The flip side of that user input is that she also EXPECTS that those bug reports are easy to do, will be immediately appreciated and resolved. <span class="h">Developers: Prepare yourself for a whole generation that&#8217;s growing up on open-source, user driven technology. Plan ahead and get yourself ready with a bug reporting system, and a plan to implement fixes regularly.</dd>
+</dl>
+<p><strong>In Total: Instant Gratification.</strong></p>
+<p>The current breed of technology developers mostly come from my generation - in which we were/are considered spoiled and selfish in our desire for things faster/better &#8230; the &#8216;I want it NOW&#8217; generation. Because our generation went out and made technology to solve our need for speed - the new generation is even more focused on immediately being able to access what they want. That&#8217;s the technology they are growing up on.</p>
+<p>Plan for it.</p>
+<p>~Nicole</p>
+<div><a href="http://www.addthis.com/bookmark.php" onclick="window.open('http://www.addthis.com/bookmark.php?pub=mistycabal&amp;url=http%3A%2F%2Fblog.websitestyle.com%2Findex.php%2F2008%2F03%2F14%2Fthe-new-client-age-5%2F&amp;title=The+New+Client+-+Age+5', 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no'); return false;" title="Bookmark using any bookmark manager!"><img src="http://s3.addthis.com/button1-bm.gif" width="125" height="16" alt="Add this button." /></a></div><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=IBPPa1F"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=IBPPa1F" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=5jAclxF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=5jAclxF" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=AdKKqqf"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=AdKKqqf" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=OKeDwaF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=OKeDwaF" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=anDNPqf"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=anDNPqf" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=oOje98F"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=oOje98F" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/BeyondCaffeine/~4/251478510" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blog.websitestyle.com/index.php/2008/03/14/the-new-client-age-5/feed/</wfw:commentRss>
+		<feedburner:origLink>http://blog.websitestyle.com/index.php/2008/03/14/the-new-client-age-5/</feedburner:origLink></item>
+		<item>
+		<title>Vote - New Wired DnD Logo</title>
+		<link>http://feeds.feedburner.com/~r/BeyondCaffeine/~3/249339216/</link>
+		<comments>http://blog.websitestyle.com/index.php/2008/03/11/vote-new-wired-dnd-logo/#comments</comments>
+		<pubDate>Tue, 11 Mar 2008 07:01:20 +0000</pubDate>
+		<dc:creator>Nicole</dc:creator>
+		
+		<category><![CDATA[Design]]></category>
+
+		<category><![CDATA[Tech News]]></category>
+
+		<category><![CDATA[death]]></category>
+
+		<category><![CDATA[dnd]]></category>
+
+		<category><![CDATA[dnd logo]]></category>
+
+		<category><![CDATA[gygax]]></category>
+
+		<category><![CDATA[wired]]></category>
+
+		<guid isPermaLink="false">http://blog.websitestyle.com/index.php/2008/03/11/vote-new-wired-dnd-logo/</guid>
+		<description><![CDATA[<img src="http://img393.imageshack.us/img393/6754/406432175621b395d5ey9.jpg" alt="The Table." title="The Table." /><p class="photo-attrib"><a href="http://www.flickr.com/photos/alexerde/">Photographer.</a></p>
+
+If a dice and paper cluttered table is familiar... 
+If you still remember what 'feats' are...
+If half your bookshelf used to be gaming manuals...
+
+Then maybe you should vote for the new Wired logo (or design one yourself!).]]></description>
+			<content:encoded><![CDATA[<p><img src="http://img393.imageshack.us/img393/6754/406432175621b395d5ey9.jpg" alt="The Table." title="The Table." />
+<p class="photo-attrib"><a href="http://www.flickr.com/photos/alexerde/">Photographer.</a></p>
+<p>If a dice and paper cluttered table is familiar&#8230;<br />
+If you still remember what &#8216;feats&#8217; are&#8230;<br />
+If half your bookshelf used to be gaming manuals&#8230;</p>
+<p>Then maybe you should vote for the new Wired logo (or design one yourself!).</p>
+<p>Recently, Wired <a href="http://www.wired.com/gaming/virtualworlds/news/2008/03/ff_gygax">published an truly excellent ode</a> to the recently deceased Gary Gygax - the ultimate dungeon master of DnD.</p>
+<p>If you were, or are, one of the many old school DnD gamers in the world&#8230; the article just might bring a tear to your eye. To that end, his passing has made such an impact on the guys over at Wired, that they have <a href="http://blog.wired.com/underwire/2008/03/wired-readers-s.html">opened up a contest</a> to re-design the Wired logo &#8216;Gygax-style&#8217; with DnD flavor.</p>
+<p>You can <a href="http://reddit.wired.com/dungeon_logos/">take a look at the current list</a> of submitted logos and cast your vote right on the page.</p>
+<p>My personal favorite is the one titled &#8216;Sorry I&#8217;m rolling that one again, it fell off the table&#8217;. Not only do I like the design alot, but I laughed reading that title because I can&#8217;t remember how many times those words came out of my mouth during my heavy DnD gaming days.</p>
+<p>So, here&#8217;s a call to action for all you Wired readers out there, or DnD fans - go cast a vote.</p>
+<p>~Nicole</p>
+<div><a href="http://www.addthis.com/bookmark.php" onclick="window.open('http://www.addthis.com/bookmark.php?pub=mistycabal&amp;url=http%3A%2F%2Fblog.websitestyle.com%2Findex.php%2F2008%2F03%2F11%2Fvote-new-wired-dnd-logo%2F&amp;title=Vote+-+New+Wired+DnD+Logo', 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no'); return false;" title="Bookmark using any bookmark manager!"><img src="http://s3.addthis.com/button1-bm.gif" width="125" height="16" alt="Add this button." /></a></div><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=DDV4bAF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=DDV4bAF" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=tYqKwBF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=tYqKwBF" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=bhNJ8rf"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=bhNJ8rf" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=PwZPOYF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=PwZPOYF" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=yiKwV8f"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=yiKwV8f" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=e2aef8F"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=e2aef8F" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/BeyondCaffeine/~4/249339216" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blog.websitestyle.com/index.php/2008/03/11/vote-new-wired-dnd-logo/feed/</wfw:commentRss>
+		<feedburner:origLink>http://blog.websitestyle.com/index.php/2008/03/11/vote-new-wired-dnd-logo/</feedburner:origLink></item>
+		<item>
+		<title>A New Day in Design</title>
+		<link>http://feeds.feedburner.com/~r/BeyondCaffeine/~3/249329817/</link>
+		<comments>http://blog.websitestyle.com/index.php/2008/03/11/a-new-day-in-design/#comments</comments>
+		<pubDate>Tue, 11 Mar 2008 06:35:33 +0000</pubDate>
+		<dc:creator>Nicole</dc:creator>
+		
+		<category><![CDATA[Design]]></category>
+
+		<category><![CDATA[Layout]]></category>
+
+		<category><![CDATA[Tech News]]></category>
+
+		<category><![CDATA[blog]]></category>
+
+		<category><![CDATA[change]]></category>
+
+		<category><![CDATA[new]]></category>
+
+		<category><![CDATA[theme]]></category>
+
+		<category><![CDATA[update]]></category>
+
+		<guid isPermaLink="false">http://blog.websitestyle.com/index.php/2008/03/11/a-new-day-in-design/</guid>
+		<description><![CDATA[<img src="http://img363.imageshack.us/img363/1456/941451312b5e98413b3wh5.jpg" alt="Sunrise by snappED_up." title="Sunrise by snappED_up." /><p class="photo-attrib"><a href="http://www.flickr.com/photos/snapped_up/">Photographer.</a></p>
+
+Today is a new day in design for Beyond Caffeine. I am finally moving on from the old 'Cleaker' theme that has run this site for a good while now. I need something fresh and clean, and I found what I was looking for in a new theme called 'Amazing Grace' by <a href="http://www.prelovac.com/vladimir/">Vladimir Prelovac</a>. Amazing Grace is now the default theme for the blog.]]></description>
+			<content:encoded><![CDATA[<p><img src="http://img363.imageshack.us/img363/1456/941451312b5e98413b3wh5.jpg" alt="Sunrise by snappED_up." title="Sunrise by snappED_up." />
+<p class="photo-attrib"><a href="http://www.flickr.com/photos/snapped_up/">Photographer.</a></p>
+<p>Today is a new day in design for Beyond Caffeine. I am finally moving on from the old &#8216;Cleaker&#8217; theme that has run this site for a good while now. I need something fresh and clean, and I found what I was looking for in a new theme called &#8216;Amazing Grace&#8217; by <a href="http://www.prelovac.com/vladimir/">Vladimir Prelovac</a>. Amazing Grace is now the default theme for the blog.</p>
+<p>I was really drawn to the colors of the theme, as well as the design. The colors are (for the most part) from a soothing palette and I am quite happy with it. It has a lovely spot in the top right corner that is used purely to showcase photos I have found. They serve no practical purpose, but are very lovely and reflect the tone of the site. The photo that is shown is chosen at random, so hit &#8216;reload&#8217; a few times, or click on the <a href="http://www.sxc.hu/browse.phtml?f=lightboxes&amp;lid=145934">photo credits link</a> to see all the photos in the list.</p>
+<p>If you are not seeing the new theme, you may have a cookie set for a different theme on this site. You can view the theme by navigating over to the sidebar where you will see a link to the available site themes. This theme switcher is active on ALL the themes I use on this site (and will continue to be there in the foreseeable future). You can easily switch between the new theme or go back to using Cleaker if you would like.</p>
+<p>As a side note, in future, if you see any theme that is flagged &#8216;dev&#8217; in the theme switcher - be warned. That means it is currently something I&#8217;m tinkering around with to make work for my site - expect it to be quirky.</p>
+<p>I hope you enjoy the new theme as much as I am, and remember that you can always use the theme switcher if you don&#8217;t like it.</p>
+<p>~Nicole</p>
+<div><a href="http://www.addthis.com/bookmark.php" onclick="window.open('http://www.addthis.com/bookmark.php?pub=mistycabal&amp;url=http%3A%2F%2Fblog.websitestyle.com%2Findex.php%2F2008%2F03%2F11%2Fa-new-day-in-design%2F&amp;title=A+New+Day+in+Design', 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no'); return false;" title="Bookmark using any bookmark manager!"><img src="http://s3.addthis.com/button1-bm.gif" width="125" height="16" alt="Add this button." /></a></div><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=SL94XYF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=SL94XYF" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=J4Lng9F"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=J4Lng9F" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=Gw692Of"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=Gw692Of" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=Vh7x0xF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=Vh7x0xF" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=yrWff9f"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=yrWff9f" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/BeyondCaffeine?a=fBe2FQF"><img src="http://feeds.feedburner.com/~f/BeyondCaffeine?i=fBe2FQF" border="0"></img></a>
+</div><img src="http://feeds.feedburner.com/~r/BeyondCaffeine/~4/249329817" height="1" width="1"/>]]></content:encoded>
+			<wfw:commentRss>http://blog.websitestyle.com/index.php/2008/03/11/a-new-day-in-design/feed/</wfw:commentRss>
+		<feedburner:origLink>http://blog.websitestyle.com/index.php/2008/03/11/a-new-day-in-design/</feedburner:origLink></item>
+	</channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><feed
+  xmlns="http://www.w3.org/2005/Atom"
+  xmlns:thr="http://purl.org/syndication/thread/1.0"
+  xml:lang="en"
+  xml:base="http://www.uwilink.com/blog/wp-atom.php"
+   >
+	<title type="text">UWILINK Blog</title>
+	<subtitle type="text">Just another WordPress weblog</subtitle>
+
+	<updated>2008-10-27T05:23:34Z</updated>
+	<generator uri="http://wordpress.org/" version="2.6.3">WordPress</generator>
+
+	<link rel="alternate" type="text/html" href="http://www.uwilink.com/blog" />
+	<id>http://www.uwilink.com/blog/feed/atom/</id>
+	<link rel="self" type="application/atom+xml" href="http://www.uwilink.com/blog/feed/atom/" />
+
+			<entry>
+		<author>
+			<name>admin</name>
+					</author>
+		<title type="html"><![CDATA[Hello world!]]></title>
+		<link rel="alternate" type="text/html" href="http://www.uwilink.com/blog/2008/10/27/hello-world/" />
+		<id>http://www.uwilink.com/blog/?p=1</id>
+		<updated>2008-10-27T05:23:34Z</updated>
+		<published>2008-10-27T05:23:34Z</published>
+		<category scheme="http://www.uwilink.com/blog" term="Uncategorized" />		<summary type="html"><![CDATA[Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!
+]]></summary>
+		<link rel="replies" type="text/html" href="http://www.uwilink.com/blog/2008/10/27/hello-world/#comments" thr:count="3"/>
+		<link rel="replies" type="application/atom+xml" href="http://www.uwilink.com/blog/2008/10/27/hello-world/feed/atom/" thr:count="3"/>
+		<thr:total>3</thr:total>
+	</entry>
+	</feed>

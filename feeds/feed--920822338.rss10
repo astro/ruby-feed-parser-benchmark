@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:admin="http://webns.net/mvcb/"
+>
+
+<channel rdf:about="http://use.perl.org/~brian_d_foy/journal/">
+<title>brian_d_foy's Journal</title>
+<link>http://use.perl.org/~brian_d_foy/journal/</link>
+<description>brian_d_foy's use Perl Journal</description>
+<dc:language>en-us</dc:language>
+<dc:rights>use Perl; is Copyright 1998-2006, Chris Nandor. Stories, comments, journals, and other submissions posted on use Perl; are Copyright their respective owners.</dc:rights>
+<dc:date>2008-12-12T17:26:39+00:00</dc:date>
+<dc:publisher>pudge</dc:publisher>
+<dc:creator>pudge@perl.org</dc:creator>
+<dc:subject>Technology</dc:subject>
+<syn:updatePeriod>hourly</syn:updatePeriod>
+<syn:updateFrequency>1</syn:updateFrequency>
+<syn:updateBase>1970-01-01T00:00+00:00</syn:updateBase>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37827?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37664?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37573?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37557?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37512?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37495?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37459?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37457?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37453?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37452?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37444?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37382?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37375?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37329?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37328?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37309?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37306?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37296?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37293?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37185?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37049?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37048?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/37037?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/36989?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/36942?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/36935?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/36924?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/36883?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/36865?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~brian_d_foy/journal/36845?from=rss" />
+ </rdf:Seq>
+</items>
+<image rdf:resource="http://use.perl.org/images/topics/useperl.gif" />
+</channel>
+
+<image rdf:about="http://use.perl.org/images/topics/useperl.gif">
+<title>brian_d_foy's Journal</title>
+<url>http://use.perl.org/images/topics/useperl.gif</url>
+<link>http://use.perl.org/~brian_d_foy/journal/</link>
+</image>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37827?from=rss">
+<title>New ActiveState PPM build system is live</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37827?from=rss</link>
+<description>&lt;p&gt;ActiveState tells me that the &lt;a href="http://blogs.activestate.com/activestate/2008/11/new-ppm-servers-in-full-swing.html"&gt;new PPM servers are now available&lt;/a&gt;.  This is the new hotness that &lt;a href="http://aspn.activestate.com/ASPN/Mail/Message/ppm/3642044"&gt;Jan Dubious talked about at the beginning of the year&lt;/a&gt;.&lt;br&gt;You need the PPM 4 client, which is already in the 5.10 distros and the 5.8 distros since build.&lt;/p&gt;&lt;p&gt;The new repos have many more modules. These numbers are straight from ActiveState today:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;Platform Vers | Old Repo | New Repo (CPANfly)&lt;br&gt;
+&amp;nbsp; &lt;br&gt;&amp;nbsp; Linux&amp;nbsp; &amp;nbsp;5.8&amp;nbsp; &amp;nbsp; &amp;nbsp; 7790&amp;nbsp; &amp;nbsp; &amp;nbsp;10961&lt;br&gt;&amp;nbsp; Linux&amp;nbsp; &amp;nbsp;5.10&amp;nbsp; &amp;nbsp; &amp;nbsp;5611&amp;nbsp; &amp;nbsp; &amp;nbsp;10888&lt;br&gt;
+&amp;nbsp; &lt;br&gt;&amp;nbsp; OS X&amp;nbsp; &amp;nbsp; 5.8&amp;nbsp; &amp;nbsp; &amp;nbsp; 8506&amp;nbsp; &amp;nbsp; &amp;nbsp;10907&lt;br&gt;&amp;nbsp; OS X&amp;nbsp; &amp;nbsp; 5.10&amp;nbsp; &amp;nbsp; &amp;nbsp;2662&amp;nbsp; &amp;nbsp; &amp;nbsp;10878&lt;br&gt;
+&amp;nbsp; &lt;br&gt;&amp;nbsp; Windows 5.8&amp;nbsp; &amp;nbsp; &amp;nbsp; 7267&amp;nbsp; &amp;nbsp; &amp;nbsp; 9106&lt;br&gt;&amp;nbsp; Windows 5.10&amp;nbsp; &amp;nbsp; &amp;nbsp;6524&amp;nbsp; &amp;nbsp; &amp;nbsp; 9060&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-11-08T03:28:22+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37664?from=rss">
+<title>Use git to easily make third party module patches</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37664?from=rss</link>
+<description>&lt;p&gt;In the olden days, to make a patch to a module, you had to have the original, untouched file and a copy that you modified. You'd then use &lt;code&gt;diff&lt;/code&gt; to compare the two files.&lt;/p&gt;&lt;p&gt;At the Pittsburgh Perl Workshop, Ricardo was asking how to do some odd thing in git. Instead of anyone answering his question, everyone asked what he was doing. It turns out he was patching someone's module and making it a git repo while he worked. The process is really handy:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Download module distribution and unpack it&lt;/li&gt;&lt;li&gt;Make it a git archive with &lt;code&gt;git init&lt;/code&gt;&lt;/li&gt;&lt;li&gt;Add the initial content to the index with &lt;code&gt;git add&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;.&lt;/code&gt;&lt;/li&gt;&lt;li&gt;Commit the initial content with &lt;code&gt;git commit -m "* Version 1.23 from CPAN"&lt;/code&gt;&lt;/li&gt;&lt;li&gt; &lt;i&gt;work, work, work&lt;/i&gt;&lt;/li&gt;&lt;li&gt;Generate your patch with &lt;code&gt;git format-patch --stdout -1&lt;/code&gt;&lt;/li&gt;&lt;li&gt;And Bob's your uncle&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;There are other ways that you can do this, and you can change around the process in git.  I like that git is lightweight enough to make it actually useful for everyday work.&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-10-14T20:33:18+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37573?from=rss">
+<title>Simon Phipps on open source, on FLOSS</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37573?from=rss</link>
+<description>&lt;p&gt;For &lt;a href="http://twit.tv/floss39"&gt;FLOSS Weekly 39&lt;/a&gt;, Leo Laporte and Randal interviewed &lt;a href="http://www.sun.com/aboutsun/media/ceo/bio.jsp?name=Simon%20Phipps"&gt;Simon Phipps&lt;/a&gt;, the Chief Open Source Officer at Sun. It's not the normal open source religion, and a much better view than I've heard for the "Open Source" people.&lt;/p&gt;&lt;p&gt;The entire hour long interview is excellent, but this was my favorite part:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;b&gt;Simon Phipps (@0:14:08)&lt;/b&gt;: What characterizes open source is, open source is the syncronization of the self interest of many parties. And  to create an environment where people are willing to synchronize their self interest and collaborate over code, there has to be transparency. On the other hand, in open source, you know, Randal, I don't care what your motivations are for being involved in Perl. They're of no relevance to my life because our relationship around Perl depends on code and the code and the community are transparent, but your motivations for participating in it are opaque. It's up to me. They're private to me.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Leo Laporte&lt;/b&gt;: They're also irrelevant because of transparency, the codes speaks for itself.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Simon&lt;/b&gt;: Absolutely. So I'm able to maintain my privacy around my motivations and degree of my involvement and how I'm funding it. I maintain responsibility for that part that is private as well. On the other hand, I'm able to work in an environment of transparency where all the code is known, all its origins are known, all its defects are potentially known, and that combination of transparency with privacy is, in my opinion, what characterizes open source. Trying to define open source in terms of licenses in kinda outmoded in my view. Open source is about transparency at the community level but also about privacy in terms of my motivations.&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;p&gt;Simon also said quoted:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt;Whenever you create a system, you create the game that plays it.&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;&lt;p&gt;Does anyone know the source of that quote?&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-09-30T01:49:37+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37557?from=rss">
+<title>Devel::Alphabet::Cover</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37557?from=rss</link>
+<description>&lt;p&gt;Looking at my module namespaces, I see that I've uploaded in 13 different beginning letters. Now I need to get the other 13.&lt;/p&gt;&lt;p&gt;I need to figure out how to make modules beginning with E, G, I, J, K, Q, R, U, V, W, X, Y, Z. The end of the alphabet is feeling a bit neglected.&lt;/p&gt;&lt;p&gt;G is for Geo::, so that's just something I need to finish and upload.&lt;/p&gt;&lt;p&gt;For U, I've been thinking about writing some sort of USB Thumb drive file read/write speed tester. Too bad that belongs in something like Device::*&lt;/p&gt;&lt;p&gt;For X, I guess I'll have to make something in the XML namespace.&lt;/p&gt;&lt;p&gt;Y, huh, maybe something in YAML.&lt;/p&gt;&lt;p&gt;I haven't thought too much about the other letters.&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-09-27T21:39:09+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37512?from=rss">
+<title>cpan script now in github, with new features</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37512?from=rss</link>
+<description>&lt;p&gt;I've move my &lt;code&gt;cpan&lt;/code&gt; script into &lt;a href="http://github.com/briandfoy/cpan-script/tree/master"&gt;its own github repository&lt;/a&gt; since I got a burst of feature requests. I also change it to use the &lt;code&gt;App::*&lt;/code&gt; structure.&lt;/p&gt;&lt;p&gt;There are some new switches:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;-j filename  --&amp;gt; load an alternate CPAN configuration&lt;/li&gt;&lt;li&gt;-J --&amp;gt; dump the current CPAN configuration, including anything changed during the run&lt;/li&gt;&lt;li&gt;-l --&amp;gt; list all of the installed modules&lt;/li&gt;&lt;li&gt;-g --&amp;gt; download the module tarball, but then stop&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;It's going to stay in the repo for a bit while I fix up a few things, but you can play with the sources if you like&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;:)&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-09-22T20:44:13+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37495?from=rss">
+<title>The Perl Community, in pictures by Julian Cash</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37495?from=rss</link>
+<description>&lt;p&gt;Get &lt;a href="http://www.juliancash.com/"&gt;Julian Cash&lt;/a&gt;'s book of &lt;a href="http://www.lulu.com/content/2280981"&gt;Perl people portraits&lt;/a&gt;, free for download or pay to have it as a bound book.&lt;/p&gt;&lt;p&gt;At OSCON, Julian had a nice printed and bound book of his portraits of Perl people from various conferences. He gave me one for free, since I'm in it. Now you can &lt;a href="http://www.lulu.com/content/2280981"&gt;get it for yourself&lt;/a&gt;.&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-09-20T00:16:16+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37459?from=rss">
+<title>Perl in Universal City Studio v. 2600</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37459?from=rss</link>
+<description>&lt;p&gt;&lt;a href="http://www.2600.com/dvd/docs/2001/0126-speech.html"&gt;The brief of amici curiae in &lt;i&gt;Universal City Studio, et al v. 2006&lt;/i&gt; &lt;/a&gt; says that computer code is speech, and should be protected as such. No big deal there.&lt;/p&gt;&lt;p&gt;I do like how they talk about Perl, used in some of the examples, though. I've added the emphasis:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt;We chose this snippet of Perl for two reasons. First, when compared to the Visual BASIC, it is apparent that more symbolic characters and fewer natural-looking words are used, illustrating the variety of programming languages. Though it looks less like a natural text language, &lt;b&gt;its meaning is as clear to those who read Perl as is this sentence to those who read English&lt;/b&gt;.(4)&lt;br&gt;___________________&lt;br&gt;4. If "$plain_text = $file_key ^ $xor_block" seems unapproachable, consider what those not trained in the language of legal citation would make of "111 F.Supp.2d 294, 326 (S.D.N.Y. 2000)." &lt;b&gt;Each is meaningless to those unfamiliar with the language; but each is more precise and compact for those who do understand than would be an English narrative equivalent.&lt;/b&gt;&lt;/p&gt;&lt;/div&gt;&lt;/blockquote&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-09-16T06:29:23+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37457?from=rss">
+<title>Index of The Perl Journal articles on Dr. Dobbs Online</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37457?from=rss</link>
+<description>&lt;p&gt;I put together &lt;a href="http://www.perlmonks.org/index.pl?node_id=711609"&gt;an index of the TPJ articles that appear on the Dr. Dobbs site&lt;/a&gt;. It covers from November 2003 to January 2006. Apparently I was the last person to publish an article as part of TPJ.&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-09-16T04:57:37+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37453?from=rss">
+<title>PDFs of CMP-era The Perl Journals?</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37453?from=rss</link>
+<description>&lt;p&gt;CMP published The Perl Journal as PDFs for a couple of years, around 2004ish. I've lost my collection of those. Does anyone have them?&lt;/p&gt;&lt;p&gt;I was looking for them when I was answering &lt;a href="http://stackoverflow.com/questions/5024/is-the-perl-journal-available-online"&gt;a question about finding old TPJ articles at Stack Overflow&lt;/a&gt;.&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-09-15T18:06:38+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37452?from=rss">
+<title>Stack Overflow</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37452?from=rss</link>
+<description>&lt;p&gt;&lt;a href="http://stackoverflow.com/"&gt;Stack Overflow&lt;/a&gt;, the programmer's question site that Joel Spolsky helped design this summer, is now public. It looks like a cross between reddit and Perlmonks.&lt;/p&gt;&lt;p&gt;It does mix all of the questions together, so you'll see a VB question next to a PHP question next to a Perl question, but it also has tagging. To see the Perl questions, listed most recent first, just go to the &lt;a href="http://stackoverflow.com/questions/tagged/perl"&gt;the page for Perl tags&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;It also looks like it might have the unintended consequence of becoming a Web 2.0 version of IRC: despite the FAQ saying that subjective questions (favorite X, etc) should not be asked, the &lt;a href="http://stackoverflow.com/questions/tagged/subjective"&gt;subjective questions&lt;/a&gt; seem pretty popular. Along with that, I think the voting will go pear-shaped if they get the wrong community, which I already think is happening. It's actully depressing that someone can build a good tool or service and have it go awry for reasons totally out of their control. It's predictable even, but there's really not that much that you can do technologically to prevent it.&lt;/p&gt;&lt;p&gt;John Siracusa has been doing a good job, and the way to avoid disaster is to get more good people there. You just need an OpenID account.&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-09-15T18:03:54+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37444?from=rss">
+<title>BackPAN Indexer has components and another interface</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37444?from=rss</link>
+<description>&lt;p&gt;I've been doing more work on my &lt;a href="http://use.perl.org/~brian_d_foy/journal/37375"&gt;BackPAN Indexer&lt;/a&gt;, but the sort that doesn't do any indexing. What I really need to do is be home for more than one day at a time so I can get everything set up on a computer that I don't have to use. Indexing tens of thousands of distributions takes over my MacBook's poor disk drive, and then I can't do much.&lt;/p&gt;&lt;p&gt;So, in the meantime, I'm cleaning up the structure of the code so I can make things pluggable. There are several components that you can plug in: A Queue class that makes the list of things to process, a Worker class that defines the work to do on each thing in the queue, a Reporter class to store the Worker's results, a Dispatcher to hand out work to the Workers, and an Interface to show the live run information.&lt;/p&gt;&lt;p&gt;It's turned out to be a really nice design (that's getting better). I know I have a good design when the things I want to do next naturally fall out of the design. For instance, I wanted to test &lt;a href="http://vimeo.com/1677855"&gt;the Tk Interface&lt;/a&gt; and move things around, but I didn't want to actually process anything. I started working on a test script to mock everything, then I realized I didn't really need mocks because I could plug in null classes to handle the Queue, which would be empty or not, and the Worker, which would just do nothing.&lt;/p&gt;&lt;p&gt;So, as I've been moving around the country, I've been working on coding at least two examples of each component. That's a really nice way to design things. A design that works for one thing might not work for another thing. Forcing myself to come up with two non-trivial examples shakes out some of that stuff. This stuff is going to be inportant if people want to run the indexer themselves, or if someone ever sets up a CPAN Testers style group to do it (i.e. the dispatcher can distribute work around the world).&lt;/p&gt;&lt;p&gt;This week's work has been to create &lt;a href="http://vimeo.com/1732149"&gt;a Curses interface&lt;/a&gt; (because if I can't run it in a terminal, it's not Scottish), and something I'm calling the Test Census, which just counts the Test:: modules instead of doing the full indexing (and storing the large amounts of data I collect). If you're looking in &lt;a href="http://github.com/briandfoy/mycpan-indexer/tree/master"&gt;the git repo&lt;/a&gt;, check out the &lt;a href="http://github.com/briandfoy/mycpan-indexer/tree/test_counter"&gt;test_counter&lt;/a&gt; branch. There is something a bit broken with the dispatching or the reporting somehow, but I'll think about that next week.&lt;/p&gt;&lt;p&gt;I think the full index of BackPAN will start next week, and I expect it to run for about a week. I figure the error rate will be about 5%, like it was for MiniCPAN, and I'll then spend some time improving the indexer. While the indexer is running, I'll work on the other bits.&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-09-15T05:36:23+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37382?from=rss">
+<title>I'm on YAPC TV: BackPAN Archeology</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37382?from=rss</link>
+<description>&lt;p&gt;My YAPC::EU 2008 BackPAN Archeology talk is on YAPC.tv, where you can watch the high resolution or low resolution video, or even download the Flash or MPEG video.&lt;/p&gt;&lt;p&gt;You can't see the slides, but &lt;a href="http://www.slideshare.net/brian_d_foy/backpan-archeology-presentation"&gt;they are on SlideShare&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;In the talk I mention that many things are in progress, although I just uploaded a &lt;a href="http://vimeo.com/1677855"&gt;demonstration video of it actually working on MiniCPAN&lt;/a&gt;. My &lt;a href="http://use.perl.org/~brian_d_foy/journal/37375"&gt;previous post&lt;/a&gt; details that.&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-09-07T16:16:27+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37375?from=rss">
+<title>Cataloging BackPAN: MiniCPAN done in 9 hours</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37375?from=rss</link>
+<description>&lt;p&gt;My BackPAN indexer (&lt;a href="http://www.slideshare.net/brian_d_foy/backpan-archeology-presentation"&gt;YAPC::EU 2008 slides&lt;/a&gt;) made it's first complete pass through my MiniCPAN yesterday:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Distributions processed: 16039&lt;/li&gt;&lt;li&gt;Indexing failures: 782 (4.8%)&lt;/li&gt;&lt;li&gt;Run time: 9 hours (0.49 dists / sec)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;The total size of BackPAN is about 100,000 distributions, so I think this means that I could index all of BackPAN in less than a week.&lt;/p&gt;&lt;p&gt;Right now I output everything as YAML, one YAML file per distribution. The data organization is sloppy and sometimes redundant because I haven't paid attention to it. You can get &lt;a href="http://drop.io/minicpan_index_20080906"&gt;the tarball of all 16,000 files&lt;/a&gt;. Take a look to see if there might be anything else you'd want the indexer to record about a distribution. If you're interested in making some sort of CPAN service, let me do the work of cataloging the information you need.&lt;/p&gt;&lt;p&gt;If you want to play with this, get &lt;a href="http://search.cpan.org/"&gt;MyCPAN::Indexer from CPAN Search&lt;/a&gt;, or if you want to play with everything, checkout &lt;a href="http://github.com/briandfoy/mycpan-indexer/tree/master"&gt;the sources from Github&lt;/a&gt;. You probably can't install in from CPAN since it depends on a couple of modules which only have developer releases right now.&lt;/p&gt;&lt;p&gt;The thing you'd want to play with is &lt;i&gt;examples/backpan_indexer.pl&lt;/i&gt;. It's a little messy right now because I bolted on a Tk interface (see video &lt;a href="http://vimeo.com/1677855"&gt;one&lt;/a&gt; or &lt;a href="http://vimeo.com/1677740"&gt;two&lt;/a&gt;) that lives in &lt;i&gt;examples/tk.pl&lt;/i&gt; and a dispatcher that lives in &lt;i&gt;examples/steak.pl&lt;/i&gt;. My next step is to make those pluggable modules so you can note in the configuration file which interface and dispatcher you want, and as long as they have the right interface, they'll do whatever they do.&lt;/p&gt;&lt;p&gt;After a little bit more work on the indexing stuff, the next step is to take all of those YAML files and distill them into something that is easier to search, then hook up some sort of search interface to them. I'll probably first write a command-line tool (although with wonderful MVCness). I want to feed the index any file in @INC and get a report:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;$ cpan_index `perldoc -l Foo`&lt;br&gt;Foo.pm's fingerprint found in Foo-Bar-0.05.tgz&lt;br&gt;&amp;nbsp; &amp;nbsp; Author: Joe Snuffy (SNUFFY@cpan.org)&lt;br&gt;&amp;nbsp; &amp;nbsp; Release date: Nov 11, 1998, 23:59:59&lt;br&gt;&amp;nbsp; &amp;nbsp; Version: 0.05&lt;br&gt;&amp;nbsp; &amp;nbsp; Latest version on CPAN: Foo-Bar-0.06.tgz&lt;br&gt;&amp;nbsp; &amp;nbsp; Current maintainers:&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Joe Snuffy (SNUFFY@cpan.org)&amp;nbsp; (first come)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Joe Cool (CAMEL@cpan.org)&amp;nbsp; &amp;nbsp; &amp;nbsp;(co-maintainer)&lt;br&gt;&amp;nbsp; &amp;nbsp; Also came with:&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; !!!Bar.pm, installed version 0.08 (does not match Bar.pm from Foo-Bar-0.05.tgz)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ABC.pm, installed version 0.05 (matches ABC.pm in Foo-Bar-0.05.tgz)&lt;br&gt;&amp;nbsp; &amp;nbsp; Depends on:&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Baz.pm from Baz-0.67.tgz&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Quux.pm from Quux-0.01.tgz&lt;br&gt;&amp;nbsp; &amp;nbsp; CPAN Testers Matrix:&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;...&lt;br&gt;&amp;nbsp; &amp;nbsp; Release history:&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 0.01&amp;nbsp; Dec 31, 1969, 23:59:59&amp;nbsp; SNUFFY&amp;nbsp; (BackPAN)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 0.02&amp;nbsp; Jan 31, 1995, 23:59:59&amp;nbsp; SNUFFY&amp;nbsp; (BackPAN)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 0.03&amp;nbsp; Jun 6,&amp;nbsp; 1996, 23:59:59&amp;nbsp; SNUFFY&amp;nbsp; (BackPAN)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 0.04&amp;nbsp; Oct 31, 1997, 23:59:59&amp;nbsp; SNUFFY&amp;nbsp; (BackPAN)&lt;br&gt;&amp;nbsp; &amp;nbsp; ****0.05&amp;nbsp; Nov 11, 1998, 23:59:59&amp;nbsp; SNUFFY&amp;nbsp; (CPAN)&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 0.06&amp;nbsp; Sep&amp;nbsp; 5, 2008, 23:59:59&amp;nbsp; CAMEL&amp;nbsp; &amp;nbsp;(CPAN)&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-09-06T18:21:36+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37329?from=rss">
+<title>Don't want SourceForge email? Delete your account.</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37329?from=rss</link>
+<description>&lt;p&gt;So, I've now stopped using Sourceforge completely, but I'm not deleting anything from there. Since I get the SourceForge emails, I figured I'd now opt out. I never read them anyway.&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;This message was sent on behalf of SourceForge.net based on&lt;br&gt;the existence of your user account on our site.&lt;br&gt;
+&amp;nbsp; &lt;br&gt;To unsubscribe from future mailings, login to the SourceForge.net site&lt;br&gt;and request account removal at:&lt;br&gt;http://sourceforge.net/account/remove_account.php&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;Yep, their opt-out policy is to delete your account and remove you from all projects. I think I might have unsubscribed in my "Account Options" summary, but with SourceForge you can never tell where the right thing is.&lt;/p&gt;&lt;p&gt;So, what's the rumor around the campfire? Is SourceForge looking to cut down on users?&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-09-02T22:54:23+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37328?from=rss">
+<title>Automatic license detection in Perl distributions</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37328?from=rss</link>
+<description>&lt;p&gt;Before I reinvent the wheel..&lt;/p&gt;&lt;p&gt;So, given an arbitrary Perl distribution (anything in BackPAN), does anyone have code to guess the license for the code? I know that I can look in META.yml if someone typed the right things somewhere, but that's not enough. Many distributions aren't well-formed, and there are a lot of different ways to license code.&lt;/p&gt;&lt;p&gt;And, does anyone know of Perl distributions that contains files that have different licenses so that that distribution isn't covered by a single license? File A is under License Foo but File B is under Licence Quux, or something like that.&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-09-02T18:21:38+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37309?from=rss">
+<title>The Larry Wall Baseball Card</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37309?from=rss</link>
+<description>&lt;p&gt;At YAPC::EU, Salve was handing out baseball cards of Larry Wall to advertise NPW 2009 in Oslo. If you didn't get to see them, now you can:&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.flickr.com/photos/47329375@N00/2809249954/"&gt;Front&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.flickr.com/photos/47329375@N00/2809249778/"&gt;Back&lt;/a&gt;&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-08-29T17:48:34+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37306?from=rss">
+<title>brian's Guide now in Italian, along with other things</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37306?from=rss</link>
+<description>&lt;p&gt;The people over at &lt;a href="http://www.perl.it//"&gt;Perl.it&lt;/a&gt; translated my &lt;a href="http://www.perl.it/documenti/articoli/2008/07/la-guida-di-bri.html"&gt;Guide to Solving Any Perl Problem into Italian&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;In case you missed &lt;a href="http://use.perl.org/~bepi/journal/37232"&gt;bepi's latest announcement&lt;/a&gt;, they are actually translating a lot more than just that. Install &lt;a href="http://search.cpan.org/dist/POD2-IT"&gt;POD2::IT&lt;/a&gt; to get the perldocs in Italian.&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;% perldoc -L IT&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;They have a &lt;a href="http://sourceforge.net/projects/pod2it"&gt;SourceForge project&lt;/a&gt;, and they just finished &lt;a href="http://pod2it.cvs.sourceforge.net/pod2it/pod2it/perlreftut.pod?view=log"&gt;perlreftut&lt;/a&gt;, among others.&lt;/p&gt;&lt;p&gt;Besides Italian, there is also &lt;a href="http://search.cpan.org/dist/POD2-FR"&gt;POD2::FR&lt;/a&gt; to get the perldocs in French. It looks like &lt;a href="http://search.cpan.org/dist/POD2-Base"&gt;POD2::Base&lt;/a&gt; has a Klingon version. Anyone using that?&lt;/p&gt;&lt;p&gt;Are there any other translations of the perldocs out there?&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-08-29T16:10:02+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37296?from=rss">
+<title>Mastering Perl sources now in Git</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37296?from=rss</link>
+<description>&lt;p&gt;I've moved my &lt;a href="http://www.pair.com/comdog/mastering_perl"&gt;Mastering Perl&lt;/a&gt; repository from SVN to git (following &lt;a href="http://blogs.frugalware.org/vmiklos/2007/12/09/svn_ggit_conversion_using_git_svn"&gt;this guide&lt;/a&gt;), and now I've put it on &lt;a href="http://github.com/briandfoy"&gt;Github&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;You can clone the repo with:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt;% git clone git://github.com/briandfoy/mastering-perl.git&lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;Or you can &lt;a href="http://github.com/briandfoy/mastering-perl/tree/master"&gt;browse it on github&lt;/a&gt; (which sometimes gives a server error, so just keep trying).&lt;/p&gt;&lt;p&gt;Github is popular with the Ruby folks, but we can't let them have all of the fun. I converted my CVS repos and put them there, and now I'm working through my SVN repos. (And, lazy web, is there a good way to fragment an SVN repo into many git repos? I have my main SourceForge account with most of my modules in the same repo, but now I want those to be in separate git repos, one per module).&lt;/p&gt;&lt;p&gt;And, now that I've looked at Ohloh again, I see that they support git repos.&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-08-28T20:44:57+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37293?from=rss">
+<title>My second first YAPC::EU</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37293?from=rss</link>
+<description>&lt;p&gt;The subject is a bit odd, but I had been telling people that &lt;a href="http://www.yapceurope2008.org/ye2008/"&gt;YAPC::EU in Copenhagen&lt;/a&gt; would be my first YAPC::EU. Then, as I was finishing my &lt;a href="http://www.slideshare.net/brian_d_foy/backpan-archeology-presentation"&gt;BackPAN Indexing talk&lt;/a&gt; (more on that later) and trying to get off stage so Dave Cross could set up for his &lt;a href="http://www.slideshare.net/davorg/ye-complete-history-of-ye-perle-mongers-of-london-towne-parte-one-presentation"&gt;Ye Complete History of Ye Perle Mongers of London Towne&lt;/a&gt; talk, I realized that I was at the &lt;i&gt;first&lt;/i&gt; YAPC::EU, the one in &lt;a href="http://www.oreillynet.com/lpt/a/430"&gt;London in 2000&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Copenhagen is then my second first YAPC::EU. It's a different crowd and culture, and the Perl world is a lot different. The first first YAPC::EU was right after Perl 6 was born and I was its spokesman and everyone thought we'd just crank it out and have it at the next OSCON. Also, being the first YAPC in Europe, and only a couple of years after the first YAPC in Pittsburgh, it was mostly the same people. The core Perl community was still exploding, and there wasn't a big difference between hanging out with Perl geeks in North America and hanging out with the same people in London.&lt;/p&gt;&lt;p&gt;My second first YAPC::EU started off much more nicely. In London I couldn't get into the conference site at first because police had it surrounded. Someone had shot &lt;a href="http://edition.cnn.com/2000/WORLD/europe/09/21/London.explosion.03/"&gt;a rocket at some government building or something&lt;/a&gt;.  I don't even remember seeing any police in Copenhagen (although Adam Kennedy tells me that they are around at pub closing time). No one talks about police presence in the conference surveys though. Copenhagen is already ahead in points because I can get into the building, which is right next to a train stop, by the way.&lt;/p&gt;&lt;p&gt;It would be hard to tell the new YAPC::EU as a technology conference though. I don't even wake up until 10 am, so I get to the conference site around 11 am, and by that time half the conference day has gone by. Aren't these people programmers? How can they be up so early? I want to have about four hours of conference in the afternoon then hang out all night with people. I expect that in three or four years, conferences will start at sunrise (so let's not have them in Iceland in that case).&lt;/p&gt;&lt;p&gt;The conference was big. I don't recall the numbers, but it was hard to get around to talk to as many people as I liked. Part of this is that I can talk to a few people for quite a while, and we packed the dinner venue way past American fire codes would allow. The coolest part was Adam getting five of the PAUSE admins (&lt;a href="http://flickr.com/photos/47329375@N00/2767641681/"&gt;myself, Adam, Steffen M&amp;#252;ller, Andreas K&amp;#246;nig, and Jos&amp;#233; Castro&lt;/a&gt;) together for the YAPC dinner. I'd never met Andreas or Steffen, and it's always nice to meet people I work with. Indeed, we cleared up a couple of PAUSE admin things over dinner with a minimum of fuss and without protracted email threads.&lt;/p&gt;&lt;p&gt;That brings me to the biggest problem of YAPC::EU. Adam Kennedy, Ricardo Signes, Curtis "Ovid" Poe, and Jos Boumans are all there, and as I'm talking about BackPAN to people all week, they keep adding feature requests. They aren't really wish lists items, because they've all created most of the stuff I need to implement the feature and I just need to call the right module. Being at anything with Adam is dangerous because we've been going through tech life in almost parallel lines. We're both interested in things like automated release and build tools, and have independently created very similar things. If I have a problem, Adam has probably solved it and has a patch in some repository somewhere. And, every time I find a Perl version difference, he now wants me to add a test to &lt;a href="http://search.cpan.org/dist/Perl-MinimumVersion"&gt;Perl::MinimumVersion&lt;/a&gt; (which is insanely cool and twisted). To get anything done, stay away from these people.&lt;/p&gt;&lt;p&gt;If that's not bad enough, I met Paul Johnson, who created &lt;a href="http://search.cpan.org/dist/Devel-Cover"&gt;Devel::Cover&lt;/a&gt;, which is where I spend most of my time now. When I fix bugs, I now try to bring the modules up to 100% coverage in all columns. I've found that the best way to make code better, smaller, faster, or stronger is to do good-faith full coverage testing. It shakes out all the bad design (because that's hard to test), encourages refactoring (to avoid duplicate tests), and finds unreported bugs. Imagine that: testing is good.  Now, imagine someone indexing every module ever uploaded to CPAN. While that someone is in there, might as well run the tests and index the test coverage too, right? And so, Paul led me to another big thing with BackPAN indexing: it has to happen with multiple Perl versions too. That's a really good idea, and it's easy. It just makes indexing take longer.&lt;/p&gt;&lt;p&gt;At the auction, Jos&amp;#233; wanted people to decide the t-shirt design for YAPC::EU 2009 in Lisbon by voting with their euros. He'd warned me ahead of time that I should come up with a design, and I had to compete against Damian and BooK, who had no warning. I don't have a drawing, but Alberto made &lt;a href="http://eremita.di.uminho.pt/~ambs/try3.png"&gt;a modified version of my idea&lt;/a&gt; that looks really nice. It plays off the Portuguese flag and the seal of Portugal. It narrowly beat out a more flippant design for around &amp;#8364;1400. That's a lot of money for a quick design, but If I'm going to travel the world to go to conferences, I want a t-shirt that shows off the local symbols Barcelona.pm has a shirt with La Sagrada Familia, which is slightly cooler than my take on the &lt;a href="http://windycity.pm.org/Images/windycityflag.png"&gt;Chicago flag using the Perl sigils&lt;/a&gt;. Jon Rockway told me some Chicago cops were a bit miffed over my design thinking the line noise was some sort of protest statement, so maybe we can avoid that in Lisbon.&lt;/p&gt;&lt;p&gt;T-shirts were a big deal at this YAPC. BooK has been making custom shirts. I'd like to get catalog every Perl t-shirt ever created, and we talked about that briefly. I don't have any firm plans for that, but if you have a Perl shirt, take a picture of it and put it on flickr or something. Flickr already has several &lt;a href="http://www.flickr.com/search/?q=perl%20tshirt"&gt;Perl tshirt pictures&lt;/a&gt;, and I've created a &lt;a href="http://www.flickr.com/groups/842790@N20/"&gt;Perl Tshirt group&lt;/a&gt;. Nadim Khemir got his employer, Ericsson, to donate all sorts of swag (including free phones) and sports shirt. I certainly like the sports shirt since I usually only were logo-ed tshirts when I'm running, and now I have a Onion-logo running shirt that's actually a running shirt. I'd show a pic but it's actually in the wash right now.&lt;/p&gt;&lt;p&gt;BooK also has a &lt;a href="http://www.yapceurope.org/conferences.yml"&gt;conference database&lt;/a&gt; that I want to get into &lt;a href="http://www.theperlreview.com/community_calendar"&gt;The Perl Review Community Calendar&lt;/a&gt; as a historical record. Take a look at the data. You might be surprised at the history. Do you know where the first Perl event was held? Or which country has had the most events? Some of the answers are surprising.&lt;/p&gt;&lt;p&gt;Salve Nilsson from Olso.pm announced that the &lt;a href="http://www.perlworkshop.no/npw2009/"&gt;next Nordic Perl Workshop&lt;/a&gt; would be in Oslo on April 16-17, 2009. I also got to meet &amp;#198;var Arnfj&amp;#246;r&amp;#240; Bjarmason in Copenhagen, and Adam Kennedy, Joshua McAdams and I met up with him in Reykjavik  the week after the conference. Remember when &lt;a href="http://use.perl.org/~brian_d_foy/journal/36845"&gt;I mentioned an NPW in Iceland&lt;/a&gt;? I'm still trying to make that happen. We even went to the spot where Europe and North America meet and started &lt;a href="http://www.flickr.com/photos/47329375@N00/2805561213/?rotated=1&amp;amp;cb=1219940154401"&gt;a Perl program written with volcanic rocks&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;There are a lot of other nice little things that happened at YAPC::EU and I'm looking forward to next year's in Lisbon.&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-08-28T16:42:52+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37185?from=rss">
+<title>Appeals ruling in JMRI case: Artistic License holds up</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37185?from=rss</link>
+<description>&lt;p&gt;A long time ago, people were worried about the Artistic License in the JMRI case. Some people got a bit too excited, and I told everyone that the &lt;a href="http://use.perl.org/~brian_d_foy/journal/34230"&gt;Artistic License was just fine&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;The district court, which ruled that the Artistic License was no license at all, has now been &lt;a href="http://www.reuters.com/article/domesticNews/idUSBNG34352920080814s"&gt;smacked by the appeals court&lt;/a&gt;. The district court got it wrong.&lt;/p&gt;&lt;p&gt;You can also read about it on:&lt;/p&gt;&lt;ul&gt;&lt;li&gt; &lt;a href="http://www.groklaw.net/article.php?story=2008081313212422"&gt;Groklaw&lt;/a&gt;&lt;/li&gt;&lt;li&gt; &lt;a href="http://lessig.org/blog/2008/08/huge_and_important_news_free_l.html"&gt;Lawrence Lessig&lt;/a&gt;&lt;/li&gt;&lt;li&gt; &lt;a href="http://www.consortiuminfo.org/standardsblog/article.php?story=20080813143330810"&gt;Andy Updegrove&lt;/a&gt;&lt;/li&gt;&lt;li&gt; &lt;a href="http://www.perlmonks.org/?node_id=704240"&gt;Perlmonks&lt;/a&gt;&lt;/li&gt;&lt;li&gt; &lt;a href="http://news.slashdot.org/news/08/08/13/1857241.shtml"&gt;Slashdot&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Yay for our side.&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-08-14T21:41:33+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37049?from=rss">
+<title>European Perl Tour: Barcelona</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37049?from=rss</link>
+<description>&lt;p&gt;Now that OSCON is over, I continue working backward through my &lt;a href="http://use.perl.org/article.pl?sid=08/01/07/0751257"&gt;European Perl Tour&lt;/a&gt;. Before I went to the &lt;a href="http://use.perl.org/~brian_d_foy/journal/36825"&gt;Portuguese Perl Workshop&lt;/a&gt;, I was in Barcelona to visit the local Perl Mongers and to give my "Mastering Perl" tutorial.&lt;/p&gt;&lt;p&gt;I didn't know much about Barcelona before I got on the plane to go there; that's when I pulled out the Barcelona book to see what was where. I knew that Barcelona is on the Mediterranean, it is in Spain, and the Olympics were held there. I didn't need to know much more because the Barcelona Perl Mongers, mostly Francesc Guasch, took care of the rest for me. The best part of any visit to a user group is meeting new people, so I wasn't so concerned about the other stuff.&lt;/p&gt;&lt;p&gt;On May 29, my first day in Barcelona, I spoke at the Barcelona.pm meeting. Several of the local Mongers met me at my hotel and we walked to &lt;a href="http://www.ub.es/homeub/en/"&gt;Barcelona University &lt;/a&gt;, a beautiful collection of buildings. That was my first taste of Barcelona architecture, and over the next week I'd see a lot more. The Barcelona.pm JAPH even encodes some of that architectural history:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;tt&gt; $_=q;Barcelona Perl Mongers;,$/=y,gaudi,,,;map$,+=(split//)*(-1)**$|++&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;,(split)[.11_09,1.714];$.=''!~m~erce~;$"=y,catalunya,,,$;=y,rambles,,, $*=$/^$.;$:=$.+length,$@=$***$**$/**$*%$:,$%=$/*$"-$*;print+chr($_&amp;lt;0xA ?$.."$[$_":m:^$.:?$..$_:$_)for($**$**$/*$",$"*$@+$**$/,$**$,,$***$,,$/ *$,,$;,$***$/,$,*$/,$.&amp;lt;&amp;lt;$,,$%-$*,$"+$/,$***$,,(($,*$*)**$*)-$/,$***$/, $@+$/,$:-($/**$*),$.,$:+$"+$*,$.&amp;lt;&amp;lt;$*,$,**$/-$:-$,,exp$:/$,,$",$.,$"*$*&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;,$***$,,log$.,$.,-$/+$"*$,,$/+$"*$;,$.,++$@,$***($/&amp;amp;=$/+Barcelona_pm)) &lt;/tt&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;I think I was supposed to talk about Perl 6, but I had lapsed in keeping up with Perl 6 for a couple of months, so I gave the audience a choice of any of my previous talks. I think I finally gave my &lt;a href="http://www.slideshare.net/brian_d_foy/mycpan-lapm-september-2007"&gt;MyCPAN talk&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;After my talk, I see the real value of Bracelona for programmers: dinner starts at 11pm! It wasn't just the Perl Mongers going out late, either. All of Barcelona is set up for people like me who want to stay up all night. Indeed, try to get a table outdoors at midnight and you'll have to wait because there is still a queue. Sadly, the tapas was so good and available almost anywhere that I had little motivation to try anything else.&lt;/p&gt;&lt;p&gt;After that night, I was mostly on my own until I was going to give my Mastering Perl tutorial later in the week. I had plenty of time to explore. You can't walk down a street in Barcelona without running into something made by Antoni Gaud&amp;iacute;. Some people even think George Lucas based the stormtrooper helmet design on some &lt;a href="http://www.flickr.com/photos/7967445@N08/465938697/"&gt;Gaud&amp;iacute; chimneys&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Gaud&amp;iacute;'s &lt;a href="http://www.sagradafamilia.org/"&gt;La Sagrada Familia&lt;/a&gt; church, started in 1882, is still under contstruction. On the tour I heard a quote that any project manager would love to hear, going something like "My Client has plenty of time". Also, when asked why he took such pains to perfect the tops of the spires which no one would be able to see, he said something like "the Angels will see them". The QA department should like that attitude. Oh, and Barcelona.pm has a &lt;a href="http://mail.pm.org/pipermail/barcelona-pm/2005-July/001753.html"&gt;JAPH in the shape of La Sagrada Familia&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;I gave my Mastering Perl tutorial at Universitat Polit&amp;egrave;cnica de Catalunya. I was sponsored by the university and &lt;a href="http://www.oasyssoft.com/"&gt;OasysSoft&lt;/a&gt;, and their sponsorship made the whole trip possible. I'd certainly like to visit more places if I could work for my keep.&lt;/p&gt;&lt;p&gt;After the tutorial, Francesc and Alex Muntada took me to a fancy lunch where we sampled plenty of local foods and I learned a lot about the history of each dish. Some of the stuff is certainly worth fighting for, such as the &lt;a href="http://en.wikipedia.org/wiki/Jamn_ib&amp;amp;%23233;rico"&gt; jam&amp;oacute;n ib&amp;eacute;rico&lt;/a&gt; (I think I got that right; I should have taken notes). I'm not much of a foodie, and even though I had been in France for about a month before coming to Barcelona, I liked the Barcelona food much better.&lt;/p&gt;&lt;p&gt;My next installation, covering my German Perl tour, should finish out my European travels.&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-07-29T22:45:51+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37048?from=rss">
+<title>OSCON Proceedings are now online</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37048?from=rss</link>
+<description>&lt;p&gt;O'Reilly Media opened the &lt;a href="http://en.oreilly.com/oscon2008/public/schedule/proceedings"&gt;proceedings section of OSCON08&lt;/a&gt;. Not everything is there yet, but as I write this there are about a third of the Perl track, including Josh McAdam's &lt;a href="http://en.oreilly.com/oscon2008/public/schedule/detail/4219"&gt;Test Driven Development with Perl&lt;/a&gt; and Jim Brandt's &lt;a href="http://en.oreilly.com/oscon2008/public/schedule/detail/2819"&gt;Introduction to mod_perl 2&lt;/a&gt; tutorials. Although Jos Boumans submitted his slides for "Barely Legal XXX Perl", you should probably wait until you can see it live. Finish off with Patrick Michaud's and jerry gay's &lt;a href="http://en.oreilly.com/oscon2008/public/schedule/detail/3074"&gt;Rakudo: Perl 6 on Parrot&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;If you've already seen the Perl talks, I guess you could look at the other subjects too.&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;:)&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-07-29T21:26:40+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/37037?from=rss">
+<title>brian's Guide now in Brazilian Portuguese</title>
+<link>http://use.perl.org/~brian_d_foy/journal/37037?from=rss</link>
+<description>&lt;p&gt;Humberto Massa translated &lt;a href="http://www.pair.com/~comdog/brian's_guide.pod"&gt;"brian's Guide to Solving Any Perl Problem"&lt;/a&gt; into &lt;a href="http://www252.pair.com/comdog/brians_guide_pt_BR.pod"&gt;"O Guid de brian para Resolver Qualquer Problema em Perl"&lt;/a&gt; (Portugu&amp;#234;s (Brasil)).&lt;/p&gt;&lt;p&gt;Let me know if it looks right in your browsers. It's been quite the struggle to get it onto the website since everything I use seems to want to mangle the UTF stuff. Mailers, editors, and all sorts of tools are working against me. I now think I have apache sending the right content type header. In case that doesn't work out, I've also supplied &lt;a href="http://www252.pair.com/comdog/brians_guide_pt_BR.pod.gz"&gt;Humberto's original text gzipped&lt;/a&gt;, which should be tamper proof.&lt;/p&gt;&lt;p&gt;I've been afraid to try to run it through pod2html. I'll think about that the next time I have too much time on my hands.&lt;/p&gt;&lt;p&gt;There are now &lt;a href="http://www252.pair.com/comdog"&gt;seven translations&lt;/a&gt;, and I'm always looking for more.&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;:)&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-07-29T00:38:04+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/36989?from=rss">
+<title>YAPC:::EU 2009 should be in Lisbon</title>
+<link>http://use.perl.org/~brian_d_foy/journal/36989?from=rss</link>
+<description>&lt;p&gt;I've put together a &lt;a href="http://vimeo.com/1390362"&gt;video from several members of the Perl community&lt;/a&gt; giving the YAPC::EU committee 10 reasons YAPC::EU 2009 should be in Lisbon. These aren't the sort of things that they'll find in the proposal, but I hope they'll consider it when they vote!&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-07-22T23:34:40+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/36942?from=rss">
+<title>ActiveState's responds to 10 myths of open source</title>
+<link>http://use.perl.org/~brian_d_foy/journal/36942?from=rss</link>
+<description>&lt;p&gt;ActiveState has put together a free white paper on &lt;a href="http://www.activestate.com/business_solutions/ten_myths.pd"&gt;"10 Myths About Running Open Source Software in Your Business"&lt;/a&gt;. It's a fair look at open source for  the manager level.&lt;/p&gt;&lt;p&gt;They don't come out as open source zealots. There are certainly some myths that come from both sides. The top three myths they address are:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;You have to choose between Open Source Software and Propietary Software&lt;/li&gt;&lt;li&gt;Open Source Software is Free&lt;/li&gt;&lt;li&gt;Implementing Open Source Software is Only About Saving Money&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;I like the last myth the best:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Your Business is not Running Open Source&lt;/li&gt;&lt;/ul&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-07-17T18:46:38+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/36935?from=rss">
+<title>Bring your old O'Reilly shirts to OSCON</title>
+<link>http://use.perl.org/~brian_d_foy/journal/36935?from=rss</link>
+<description>&lt;p&gt;Marsee Henon from O'Reilly tells me that I could win a big prize if I bring the most old O'Reilly shirts to OSCON. They want to take a bunch of pictures of people wearing the previous versions of their shirts. There are prizes.&lt;/p&gt;&lt;p&gt;The first 50 people wearing an O'Reilly shirt to show up at the O'Reilly booth get a prize too. I have no idea what the prize is, but I know there is a new Perl book out this month&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;:)&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-07-16T22:22:12+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/36924?from=rss">
+<title>Four master classes at YAPC::EU</title>
+<link>http://use.perl.org/~brian_d_foy/journal/36924?from=rss</link>
+<description>&lt;p&gt;Now that the &lt;a href="http://www.yapceurope2008.org/ye2008/purchase"&gt;YAPC::EU 2008&lt;/a&gt; website is live, you can register for the &lt;a href="http://www.yapceurope2008.org/ye2008/tutorials.html"&gt;master classes&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;This year there are 4 one-day classes. Two are before YAPC, and two are after YAPC. All classes are 900DKK (about $US190 or &amp;#8364;120) and run from 10:00 to 16:00.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Tuesday, August 12&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Test Automation with Perl - Gabor Szabo&lt;/li&gt;&lt;li&gt;Perl Teach In - Dave Cross&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Saturday, August 16&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Mastering Perl - brian d foy&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;b&gt;Saunday, August 17&lt;/b&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Practical Test Driven Development - Josh McAdams&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Master classes are low-cost classes taught by experienced instructors, and are primarily designed to make it possible for them to travel to the conference. Even if you don't want to take a class, tell a friend about them!&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-07-16T03:45:16+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/36883?from=rss">
+<title>Win a Learning Perl, 5th Edition</title>
+<link>http://use.perl.org/~brian_d_foy/journal/36883?from=rss</link>
+<description>&lt;p&gt;&lt;a href="http://oreilly.com/catalog/9780596520106/"&gt;Learning Perl, 5th Edition&lt;/a&gt; is here. I got five copies of it today, and apparently everyone lined up outside Amazon.com so now they are out-of-stock too. Luckily &lt;i&gt;Learning Perl&lt;/i&gt; came out a week before the iPhone otherwise people might be too busy to buy books.&lt;/p&gt;&lt;p&gt;Since I seem to have more copies than Amazon.com, I'll give one away before OSCON to someone who shows me that they want it the most. Use the criteria for my recent &lt;a href="http://use.perl.org/~brian_d_foy/journal/36778"&gt;OSCON pass give-away&lt;/a&gt; (won by Chris Dawson who took the time to make a video with his webcam). Although &lt;i&gt;Learning Perl&lt;/i&gt; isn't as costly as the OSCON registration, I'm still most impressed by people who are somehow clever in their attempt to convince me. This time, I might be partial to people trying to win the book to give as a gift.&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;:)&lt;/p&gt;&lt;p&gt;I'll get it signed by all of the authors and ship it for free to anywhere the US Postal Service will send mail.  I can probably stuff a couple issues of &lt;a href="http://www.theperlreview.com/"&gt;The Perl Review&lt;/a&gt; in there too.&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-07-10T05:26:43+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/36865?from=rss">
+<title>Spanish "brian's Guide to Solving Any Perl Problem"</title>
+<link>http://use.perl.org/~brian_d_foy/journal/36865?from=rss</link>
+<description>&lt;p&gt;Hugo Salgado translated &lt;a href="http://www.pair.com/~comdog/brian's_guide.pod"&gt;"brian's Guide to Solving Any Perl Problem" &lt;/a&gt; into &lt;a href="http://hugo.vulcano.cl/development/perl/guia"&gt;a spanish version&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Also, Ren&amp;#233;e B&amp;#228;cker tells me that Hilko Bengen finished &lt;a href="http://wiki.perl-community.de/bin/view/Wissensbasis/BriansGuideToSolvingAnyPerlProblem"&gt;the german version&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Now, since YAPC is in Copenhagen, someone needs to make a Danish version.&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-07-07T20:23:52+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~brian_d_foy/journal/36845?from=rss">
+<title>Iceland, where YAPC::NA and YAPC::EU can meet</title>
+<link>http://use.perl.org/~brian_d_foy/journal/36845?from=rss</link>
+<description>&lt;p&gt;For the last year I've been mildly advocating that a Nordic Perl Workshop be in Iceland, mostly because I'd like to go to an NPW in all of the Nordic countries and Iceland has as much of a chance as Finland of hosting one. Heck, let's even have a YAPC there.&lt;/p&gt;&lt;p&gt;I just found another good reason to have it in Iceland: it's literally on the Mid-Atlantic Ridge. Well, duh, of course Iceland is where the Earth's crust is pulling apart, but I never really thought about it since it is way up there almost not in the Atlantic anymore. Because of this, Iceland straddles the tectonic plates of North America and Europe. There's even a bridge that you can walk across to go from one plate to another (which is definitely cooler than seeing a dusty ditch Californians call the San Andreas Fault). Iceland is expanding by a couple of centimeters each year, so eventually it should take over the world and Perl will already be there.&lt;/p&gt;&lt;p&gt;North American Perlers and European Perlers can meet at the bridge. We could even have the conference taking place on the North American and European side at the same time. There could be t-shirts showing geology nerd stuff.&lt;/p&gt;</description>
+<dc:creator>brian_d_foy</dc:creator>
+<dc:date>2008-07-03T03:41:45+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+</rdf:RDF>

@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>me.dm // phil campbell // centralized webmedia experiments</title>
+    <link rel="alternate" type="text/html" href="http://me.dm/blog/" />
+    <link rel="self" type="application/atom+xml" href="http://me.dm/blog/atom.xml" />
+    <id>tag:me.dm,2008-07-15:/blog//1</id>
+    <updated>2008-12-05T10:27:37Z</updated>
+    <subtitle>me.dm (spoken me.dium) to cover all my various media and mediums of content delivery on the internet.  my name is phil campbell and i am based in the uk, england.   i produce videoblogger content, social network and build mashups as a third party for video sites with either rss or api feeds.</subtitle>
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type 4.21-en</generator>
+
+<entry>
+    <title>iphone3g app - lifecast v1.3 inhouse testing.</title>
+    <link rel="alternate" type="text/html" href="http://me.dm/blog/2008/12/iphone3g-app---lifecast-v13-in.php" />
+    <id>tag:me.dm,2008:/blog//1.274</id>
+
+    <published>2008-12-05T10:28:00Z</published>
+    <updated>2008-12-05T10:27:37Z</updated>
+
+    <summary> So i was lucky enough to get my hands on the next version of lifecast with support for the whole range of new destinations and targets that the rebloggr engine supports. Rebloggr is a backend service that means development...</summary>
+    <author>
+        <name>i haz</name>
+        <uri>http://me.dm</uri>
+    </author>
+    
+        <category term="apple" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="interface" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="iphone3g" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="osx software" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="products" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="thoughts" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="blog" label="Blog" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="client" label="Client" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="frontendandbackend" label="Front-end and back-end" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="justineezarik" label="Justine Ezarik" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="killerapplication" label="Killer application" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="lifecasting" label="Lifecasting" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="linux" label="Linux" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="opensim" label="OpenSim" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="panologic" label="Pano Logic" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="password" label="Password" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="server" label="Server" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="socialmedia" label="Social media" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="theweb" label="The Web" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="webservice" label="Web service" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="weblogs" label="Weblogs" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="wordpress" label="WordPress" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-US" xml:base="http://me.dm/blog/">
+        <![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="lc13.jpg" src="http://me.dm/blog/lc13.jpg" class="mt-image-none" style="" width="650" height="140" /></span></p>
+
+<p>So i was lucky enough to get my hands on the next version of <a class="autolink" href="http://lifecast.sleepydog.net">lifecast</a> with support for the whole range of new destinations and targets that the rebloggr engine supports.    Rebloggr is a backend service that means development and support for additional services can be done away from the client application and instead rolled out without the requirement for the client (mostly) to not have to update - all the information is pulled from the server on each setup.    A very clever approach.    We test out some of the new services.</p>
+
+<div style="margin-top: 10px; height: 15px;" class="zemanta-pixie"><a class="zemanta-pixie-a" href="http://reblog.zemanta.com/zemified/ac9b48c6-7c7e-4997-8161-4ebe9799ed91/" title="Zemified by Zemanta"><img style="border: medium none ; float: right;" class="zemanta-pixie-img" src="http://img.zemanta.com/reblog_b.png?x-id=ac9b48c6-7c7e-4997-8161-4ebe9799ed91" alt="Reblog this post [with Zemanta]" /></a></div>]]>
+        <![CDATA[<p>So from v1.3 <a class="autolink" href="http://lifecast.sleepydog.net">lifecast</a> have support for the following targets and destinations.</p>
+
+<p><a href="http://wordpress.org" title="WordPress" rel="homepage" class="zem_slink">wordpress</a>, picasa web, windows live spaces, <a class="autolink" href="http://twitter.com/philcampbell">twitter</a>, <a href="http://en.wikipedia.org/wiki/Blog" title="Blog" rel="wikipedia" class="zem_slink">blogger</a>, tumblr, movabletype, metaweblog and the last one <a class="autolink" href="http://www.utterli.com/philcampbell">utterli</a> (formerly known as utterz)</p>
+
+<p>So i tested a number of them.. .</p>
+
+<p><b>utterli</b><br />
+currently it allows you to post text and photos and i hope in the future audio - this would be a <a href="http://en.wikipedia.org/wiki/Killer_application" title="Killer application" rel="wikipedia" class="zem_slink">killer application</a> for utterli as i'm not sure if they have an iphone client that does that yet.  anybody know of anything like that? - setup was straight forward, i sent a picture with the new setup and some text, both worked perfectly.   I would have prefered the button to say post to utterli instead of "post to blog" but that is just me nitpicking.    Would be nice when i first enter the lifecast app that the <a href="http://en.wikipedia.org/wiki/Icon" title="Icon" rel="wikipedia" class="zem_slink">icon</a> is shown next to the blog as well for a visual cue.    I noticed as well that utterli can cross post to a lot of destinations and this works very well.</p>
+
+<p><b>movabletype</b><br />
+So pretty much the same as the other setups apart from a few little things that i think should maybe changed.   It prompts for <a href="http://en.wikipedia.org/wiki/Password" title="Password" rel="wikipedia" class="zem_slink">password</a> the same as the other blog setups which could <a href="http://en.wikipedia.org/wiki/Lead" title="Lead" rel="wikipedia" class="zem_slink">lead</a> to confusion.   For adding stuff to your blog you need the webservices password which is in your <a href="http://skitch.com/philcampbell/7tb6/edit-profile-movable-type-webservice-password-for-lifecast">MT blog setup</a> for your user.   I'm hoping this is changed for the final to say "webservice password" instead and also some prefilled data on the endpoint row - most installations will be /<a href="http://en.wikipedia.org/wiki/Common_Gateway_Interface" title="Common Gateway Interface" rel="wikipedia" class="zem_slink">cgi-bin</a>/<mtdirectory>/mt-xmlrpc.cgi so this should have that in as a guide maybe?</p>
+
+<p><b>tumblr</b><br />
+worked perfectly with <a href="http://lifecastphil.tumblr.com/">lifecastphil</a> tumblr blog.</p>
+
+
+<p>A few things i would like to see fixed in the beta</p>
+
+<p>- if i start a document and do not type anything do not add it.<br />
+- change in MT password to <a href="http://en.wikipedia.org/wiki/Web_service" title="Web service" rel="wikipedia" class="zem_slink">web services</a> password (the one you reveal)<br />
+- would love to see audio support for utterli<br />
+- ping.fm support would really raise peoples attention again to the app.<br />
+- pushing it here but if qik can do it then surely we can find out how to do video too! :)</p>
+
+<p>Overall i think this latest version with the multiple destinations is a real leap forward in future set and i think will appeal to those <a href="http://en.wikipedia.org/wiki/Social_media" title="Social media" rel="wikipedia" class="zem_slink">social media</a> types and those that want to post to multiple locations.    Just utterli alone is great that it can auto cross post to a variety of platforms, almost like ping.fm for the micro updates.    Lets hope that makes it in too.</p>
+
+<p>Reblogr is really shaping up to be something really powerful.</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>viscosity + witopia = hulu and stateside ip</title>
+    <link rel="alternate" type="text/html" href="http://me.dm/blog/2008/12/viscosity-witopia-hulu-and-sta.php" />
+    <id>tag:me.dm,2008:/blog//1.275</id>
+
+    <published>2008-12-04T11:28:08Z</published>
+    <updated>2008-12-05T08:43:27Z</updated>
+
+    <summary> Viscosity is an OpenVPN client for Mac, providing a rich Cocoa graphical user interface for creating, editing, and controlling VPN connections. I&apos;ve been using viscosity (great name) since the first beta and it has really started to take shape....</summary>
+    <author>
+        <name>i haz</name>
+        <uri>http://me.dm</uri>
+    </author>
+    
+        <category term="osx software" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="osxtips" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="thoughts" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="updates" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="cocoa" label="Cocoa" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="faqshelpandtutorials" label="FAQs Help and Tutorials" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="graphicaluserinterface" label="Graphical user interface" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="opensource" label="Open source" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="openvpn" label="OpenVPN" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="operatingsystem" label="Operating system" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="security" label="Security" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="virtualprivatenetwork" label="Virtual private network" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-US" xml:base="http://me.dm/blog/">
+        <![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="openvpn.jpg" src="http://me.dm/blog/openvpn.jpg" class="mt-image-none" style="" width="650" height="140" /></span></p>
+
+<p>Viscosity is an <a href="http://openvpn.net/" title="OpenVPN" rel="homepage" class="zem_slink">OpenVPN</a> client for Mac, providing a rich <a href="http://developer.apple.com/documentation/Cocoa/Cocoa.html" title="Cocoa (API)" rel="homepage" class="zem_slink">Cocoa</a> <a href="http://en.wikipedia.org/wiki/Graphical_user_interface" title="Graphical user interface" rel="wikipedia" class="zem_slink">graphical user interface</a> for creating, editing, and controlling <a href="http://en.wikipedia.org/wiki/Virtual_private_network" title="Virtual private network" rel="wikipedia" class="zem_slink"><span class="caps">VPN</span></a> connections.</p>
+
+<p>I've been using <a href="http://www.viscosityvpn.com/">viscosity</a> (great name) since the first beta and it has really started to take shape.   Admittly there is only so much in the gui that you can really do to make it worth buying but i do like apps to work and be visual as possible.   The other thing i really like about viscosity is the price $9 - an absolute bargain.</p>
+
+<div style="margin-top: 10px; height: 15px;" class="zemanta-pixie"><a class="zemanta-pixie-a" href="http://reblog.zemanta.com/zemified/ae2a728f-69ef-47d7-9ffa-cbf20de84de9/" title="Zemified by Zemanta"><img style="border: medium none ; float: right;" class="zemanta-pixie-img" src="http://img.zemanta.com/reblog_b.png?x-id=ae2a728f-69ef-47d7-9ffa-cbf20de84de9" alt="Reblog this post [with Zemanta]" /></a></div>]]>
+        <![CDATA[<p>I use the app in combination with my <a href="http://www.witopia.net/">witopia</a> $40 a year vpn connection.   This way super quickly i can get an american ip address which then opens me up to some of the american sites like hulu.   I've just realised as well that when i get my mac mini i will be able to have viscosity running in the background fulltime and that means that my boxee will allow me to watch natively hulu from the uk.</p>
+
+<p>Btw, another reason to have the witopia account is that they also throw in pptp vpn encryption settings automatically for free for use on your iphone.   Get some vpn action on when your on a dodgy open wifi.</p>
+
+Double win i would say! :)<fieldset class="zemanta-related"><legend class="zemanta-related-title">Related articles by Zemanta</legend><ul class="zemanta-article-ul"><li class="zemanta-article-ul-li"><a href="http://consumerist.com/5057854/the-idiot+proof-way-to-securely-use-public-wi+fi">The Idiot-Proof Way To Securely Use Public Wi-Fi [How To]</a></li><li class="zemanta-article-ul-li"><a href="http://www.u-g-h.com/2008/09/03/openvpn-primer/">OpenVPN Primer</a></li></ul></fieldset>
+
+<div style="margin-top: 10px; height: 15px;" class="zemanta-pixie"><a class="zemanta-pixie-a" href="http://reblog.zemanta.com/zemified/9894d0fa-b1e8-4438-8c6d-fcb08676fb11/" title="Zemified by Zemanta"><img style="border: medium none ; float: right;" class="zemanta-pixie-img" src="http://img.zemanta.com/reblog_b.png?x-id=9894d0fa-b1e8-4438-8c6d-fcb08676fb11" alt="Reblog this post [with Zemanta]" /></a></div>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>adding new members to the dev team</title>
+    <link rel="alternate" type="text/html" href="http://me.dm/blog/2008/12/adding-new-members-to-the-dev.php" />
+    <id>tag:me.dm,2008:/blog//1.273</id>
+
+    <published>2008-12-01T22:35:00Z</published>
+    <updated>2008-12-01T22:34:38Z</updated>
+
+    <summary> Over the last three weeks i have been setting in motion 4-5 projects with different developers to see who i can use to expand my team into different departments. I know we have a lot to do to get...</summary>
+    <author>
+        <name>i haz</name>
+        <uri>http://me.dm</uri>
+    </author>
+    
+    <category term="applicationprogramminginterface" label="Application programming interface" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="contentmanagement" label="Content management" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="handhelds" label="Handhelds" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="iphone" label="IPhone" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="plugin" label="Plug-in" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="sitemanagement" label="Site Management" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="smartphones" label="Smartphones" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="thirdpartydeveloper" label="Third-party developer" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-US" xml:base="http://me.dm/blog/">
+        <![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="dev.jpg" src="http://me.dm/blog/dev.jpg" width="650" height="140" class="mt-image-none" style="" /></span></p>
+
+<p>Over the last three weeks i have been setting in motion 4-5 projects with different developers to see who i can use to expand my team into different departments.   I know we have a lot to do to get up to code on the css/theme front for <a class="autolink" href="http://rezpondr.com">rezpondr</a> and eventca.st but i never leave my eggs in one basket.    Let people do what they are passionate about has been my main motivator and has proven useful over the last few months.</p>]]>
+        <![CDATA[<p>So just to give you an update as to the new services and areas we are developing i thought i would drop it down in a quick list of things to look out for.</p>
+
+<p><b>iphone development</b><br />
+the first project for the iphone development will be for <a class="autolink" href="http://rezpondr.com">rezpondr</a> involving a very simply interface utilizing an iphone native scrolling bar layout with already pre converted mp4/h264 capable playback by the builtin <a href="http://en.wikipedia.org/wiki/Transcode" title="Transcode" rel="wikipedia" class="zem_slink">transcoding</a> support that rezpondr has - we will be charging a small fee but mainly to cover the costs of development.   If this dev goes well we have a cracking idea for podcasters after that.    </p>
+
+<p><b>moveabletype plugins coding</b><br />
+we will be releasing in under a week our first <a href="http://en.wikipedia.org/wiki/Plug-in_%28computing%29" title="Plug-in (computing)" rel="wikipedia" class="zem_slink">plugin</a> for moveabletype - the <a href="http://en.wikipedia.org/wiki/Content_management" title="Content management" rel="wikipedia" class="zem_slink">content management</a> (cms) system that i use here on me.dm - it has taken 2-3 weeks of coding and is a native plugin to post all my blog posts via the <a href="http://en.wikipedia.org/wiki/Application_programming_interface" title="Application programming interface" rel="wikipedia" class="zem_slink">api</a> at ping.fm, i know you can get this already for <a href="http://en.wikipedia.org/wiki/Win_%28baseball%29" title="Win (baseball)" rel="wikipedia" class="zem_slink">WP</a> but i do not use that.    I'm asking for small donations for MT users that would like a copy of the code (v4.x and above) to download the plugin.   If the first one goes well i have many ideas of plugins for development.</p>
+
+<p><b>jereon flv v4.x plugins</b><br />
+the two man team we have found to make api plugins for us is cracking, we sent over some <a href="http://en.wikipedia.org/wiki/Mockup" title="Mockup" rel="wikipedia" class="zem_slink">mockup</a> layouts of what we want to happen with our player when we hover over it and they came back with some really nice code, it needs plugging into the backend still but we hope to roll that out within the week.    your gonna like it.   we have had wowza support coded in below.</p>
+
+<p><b>wowza recording</b><br />
+we have been building flash interfaces and layouts over the last couple of weeks with one of our <a href="http://en.wikipedia.org/wiki/Third-party_developer" title="Third-party developer" rel="wikipedia" class="zem_slink">third party developers</a> and we are installing the latest and greatest wowza on our amazon instance.   we hope to plug in the mockup above to power our recording system - we will be expanding on it.</p>
+
+<p><b>metrics metrics metrics</b><br />
+the current metrics are ok for the distribution side of things but ideally i wanted a system that was automatic that i could send to clients instead of giving them the <a href="http://en.wikipedia.org/wiki/Login" title="Login" rel="wikipedia" class="zem_slink">login</a> to the distribution system (too much to break!) so we have been working with someone to produce a little system to gather xml data and send it via a nicely formated email depending on a schedule that we choose.    Just a nice little way to keep distribution clients up to date and a headsup on how well a campaign is doing.</p>
+
+<div style="margin-top: 10px; height: 15px;" class="zemanta-pixie"><a class="zemanta-pixie-a" href="http://reblog.zemanta.com/zemified/981be68b-a9ae-487c-bdd5-6ec6461ceaab/" title="Zemified by Zemanta"><img style="border: medium none ; float: right;" class="zemanta-pixie-img" src="http://img.zemanta.com/reblog_b.png?x-id=981be68b-a9ae-487c-bdd5-6ec6461ceaab" alt="Reblog this post [with Zemanta]" /></a></div>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>1st Generation Mac Pro means no go</title>
+    <link rel="alternate" type="text/html" href="http://me.dm/blog/2008/12/1st-generation-mac-pro-means-n.php" />
+    <id>tag:me.dm,2008:/blog//1.272</id>
+
+    <published>2008-12-01T22:34:00Z</published>
+    <updated>2008-12-01T22:32:29Z</updated>
+
+    <summary> I think it must be me trying to make my hardware do something it was never meant to do. I always seem to get to a brick wall very quickly with hardware - noticing this more with hardware, be...</summary>
+    <author>
+        <name>i haz</name>
+        <uri>http://me.dm</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-US" xml:base="http://me.dm/blog/">
+        <![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="outta.jpg" src="http://me.dm/blog/outta.jpg" width="650" height="140" class="mt-image-none" style="" /></span></p>
+
+<p>I think it must be me trying to make my hardware do something it was never meant to do.   I always seem to get to a brick wall very quickly with hardware -  noticing this more with hardware, be it mac, windows or linux - something is missing from all of them in some way and they quite deliver for long enough.   Is the cost of power computing actually starting to cost more?</p>]]>
+        <![CDATA[<p>my mac pro has been wonderful so far and much more stable than any previous windows system i have owned before, after a year it has done plenty of <a class="autolink" href="http://me.dm/link/hd">hd</a> encoding and has been solid with very little requirement from me to be an admin unlike on my windows boxes - in fact none, it always boots up fine and can be left on for weeks.</p>
+
+<p>That said one thing that i have not been doing compared to the windows machine is changing bits of hardware out regular - i was doing that all the time with the windows box and that was mainly because of gaming, thank god i am no longer entertaining that game of bigger power supplies and graphics cards swapping every quarter - the power usage on some of these gaming clans boxes could run a small country.</p>
+
+<p>Just recently i was pretty excited about <a class="autolink" href="http://www.boinx.com/boinxtv/overview/">boinxtv</a>, a video editing and production studio software that would speed up production of the gravity greatly.   It worked perfectly fine apart from <a class="autolink" href="http://me.dm/link/hd">HD</a> where it was really quite slow because of my aging 7300GT graphics card.    So, looking for a new graphics card (i have wanted one to support some games anyway) i was lead to the <span class="caps">ATI</span> Radeon 3870 mainly because it was a good pricing point and had the best support in boinx right now over nvidia.    someone reported in a comment on this blog they have driver performance issues with nvidia cards.</p>
+
+<p>The problem i have is that my mac is only pcie v1 and from what i can work out this ati radeon 3870 would require v2 (sods law) - just goes to show that no matter what hardware or os you buy it seems that the rapid deployment of tech over software is getting faster and faster.    My hardware motherboard simply will not support a pcie 2.0 graphics card.    Major Pain.</p>
+
+<p>The worse this is there is nothing wrong with this mac pro at all, the quad core chips and leopard 10.5.5 mac osx work perfectly and with 6 gig of memory it has taken all i have thrown at it over the past year - what lets it down right now is the graphics card, just so happens i really need a decent graphics card to be able to record good quality <a class="autolink" href="http://canon.hv20.co.uk/">hv20</a> <a class="autolink" href="http://me.dm/link/hd">HD</a> quality footage into boinxtv.     Very frustrating.</p>
+
+<p>I have since found however that you can get an <a href="http://store.apple.com/uk/product/MB560Z/A?mco=MTIxODk3Mw%23overview">nvidia 8800GT</a> upgrade kit for the mac pro first series which should give it a definite speedbump (i'm checking with boinxtv to see if they will ever support it and will it give decent <a class="autolink" href="http://me.dm/link/hd">hd</a> preview and recording capability) - i guess this is the cost of so called progress.    I want to mess with <a class="autolink" href="http://me.dm/link/hd">HD</a> i have to have all the parts to suit.</p>
+
+<p>The other alternative i might have is if the <a href="http://www.blackmagic-design.com/products/intensity/">blackmagic</a> intensity hdmi card would be able to be a system device to pipe in directly from the hv20 hdmi port giving my full sensor quality - this could be another option but i need to talk these over with boinx.    All in all, a very frustrating experience in that the app is fine but now i have to again make adjustments to my hardware to get it to work.</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>A Grand Tech Clear Out.</title>
+    <link rel="alternate" type="text/html" href="http://me.dm/blog/2008/12/a-grand-clear-out.php" />
+    <id>tag:me.dm,2008:/blog//1.268</id>
+
+    <published>2008-12-01T22:10:00Z</published>
+    <updated>2008-12-03T13:02:44Z</updated>
+
+    <summary> decided to group together all the tech/gadgets/stuff around the house that i want to sell to make some extra cash to purchase some much needed equipment for development and testing. I&apos;ve got a stack of stuff just &quot;knocking&quot; about...</summary>
+    <author>
+        <name>i haz</name>
+        <uri>http://me.dm</uri>
+    </author>
+    
+    <category term="apple" label="Apple" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="business" label="Business" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="businessandeconomy" label="Business and Economy" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="firmware" label="Firmware" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="geeksandnerds" label="Geeks and Nerds" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="group" label="Group" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="house" label="House" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="macmini" label="Mac Mini" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="macintosh" label="Macintosh" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="nokia" label="Nokia" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="nokian95" label="Nokia N95" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="programming" label="Programming" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="shopping" label="Shopping" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="stack" label="Stack" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="subcultures" label="Subcultures" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="testing" label="Testing" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-US" xml:base="http://me.dm/blog/">
+        <![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="sale.jpg" src="http://me.dm/blog/sale.jpg" width="650" height="140" class="mt-image-none" style="" /></span></p>
+
+<p>decided to group together all the tech/gadgets/stuff around the house that i want to sell to make some extra cash to purchase some much needed equipment for development and testing.    I've got a stack of stuff just "knocking" about the house that really needs to go.</p>]]>
+        <![CDATA[<p>fairly new <a href="http://en.wikipedia.org/wiki/Nokia_N95" title="Nokia N95" rel="wikipedia" class="zem_slink">nokia n95</a> unlocked (<a href="http://en.wikipedia.org/wiki/Markedness" title="Markedness" rel="wikipedia" class="zem_slink">unmarked</a>) - £100<br />
+archos 100gb <a class="autolink" href="http://www.lordpercy.com/archos_av500_review.htm">av500</a> <a class="autolink" href="http://medm.rezpondr.com">media</a> player - £150<br />
+clone 19" 2u gameservers - £175 each (i have like five!)<br />
+dell poweredge <a class="autolink" href="http://www.dell.com/downloads/global/products/pedge/en/2650_specs.pdf">2650</a> - £300 each (one <a href="http://en.wikipedia.org/wiki/Duel" title="Duel" rel="wikipedia" class="zem_slink">duel</a> and one <a href="http://en.wikipedia.org/wiki/Single_%28music%29" title="Single (music)" rel="wikipedia" class="zem_slink">single</a> xeon)<br />
+3com 24 port <a href="http://en.wikipedia.org/wiki/Switch" title="Switch" rel="wikipedia" class="zem_slink">switch</a> - £35<br />
+<a class="autolink" href="http://www.apple.com/appletv/">appletv</a> with preinstalled boxee and latest <a href="http://en.wikipedia.org/wiki/Firmware" title="Firmware" rel="wikipedia" class="zem_slink">firmware</a> (i'm upgrading to <a href="http://www.apple.com/macmini/" title="Mac Mini" rel="homepage" class="zem_slink">mac mini</a>) - <b><span class="caps">SOLD</span></b><br />
+r0de videomic - £60 (great mic for outdoors i found)</p>
+
+<p><object align="middle" width="490" height="450"><param name="FlashVars" value="ids=72157610622443386&amp;names=ebay sale stuff&amp;userName=philcampbell&amp;userId=56188788@N00&amp;source=sets&amp;titles=on&amp;displayNotes=on&amp;thumbAutoHide=off&amp;imageSize=medium&amp;vAlign=mid&amp;displayZoom=off&amp;vertOffset=0&amp;initialScale=off&amp;bgAlpha=81"><param name="PictoBrowser" value="http://www.db798.com/pictobrowser.swf"><param name="scale" value="noscale"><param name="bgcolor" value="#8d8d8d"><embed src="http://www.db798.com/pictobrowser.swf" flashvars="ids=72157610622443386&amp;names=ebay sale stuff&amp;userName=philcampbell&amp;userId=56188788@N00&amp;source=sets&amp;titles=on&amp;displayNotes=on&amp;thumbAutoHide=off&amp;imageSize=medium&amp;vAlign=mid&amp;displayZoom=off&amp;vertOffset=0&amp;initialScale=off&amp;bgAlpha=81" loop="false" scale="noscale" bgcolor="#8d8d8d" name="PictoBrowser" align="middle" width="490" height="450"></embed></object></p>
+
+<p>If you need any more information about any of the tech just drop me an email or send me a tweet and i'll give you all the info you need - help a <a href="http://en.wikipedia.org/wiki/Geek" title="Geek" rel="wikipedia" class="zem_slink">geek</a> out this christmas.    Give to his <a href="http://en.wikipedia.org/wiki/1080i" title="1080i" rel="wikipedia" class="zem_slink">1080i</a> <a class="autolink" href="http://me.dm/link/hd">hd</a> watching whisky drinking session by buying something you need!</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>eventca.st at nesta (network of networks)</title>
+    <link rel="alternate" type="text/html" href="http://me.dm/blog/2008/11/eventcast-at-nesta-network-of.php" />
+    <id>tag:me.dm,2008:/blog//1.271</id>
+
+    <published>2008-11-28T13:48:00Z</published>
+    <updated>2008-11-28T13:45:26Z</updated>
+
+    <summary> So i got back around ten thirty last night after quite a long day of putting last minute things together for eventca.st and realized that today i really needed to put some context around what it was we were...</summary>
+    <author>
+        <name>i haz</name>
+        <uri>http://me.dm</uri>
+    </author>
+    
+        <category term="business" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="thoughts" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="video" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="arts" label="Arts" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="broadcast" label="Broadcast" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="business" label="Business" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="chatroom" label="Chat room" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="community" label="Community" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="streamingmedia" label="Streaming media" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="video" label="Video" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="virtualcommunity" label="Virtual community" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-US" xml:base="http://me.dm/blog/">
+        <![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="nesta08.jpg" src="http://me.dm/blog/nesta08.jpg" width="650" height="140" class="mt-image-none" style="" /></span></p>
+
+<p>So i got back around ten thirty last night after quite a long day of putting last minute things together for eventca.st and realized that today i really needed to put some context around what it was we were doing yesterday, i got the impression from the conversation and comments in the shoutbox that overall things were pretty good and that made me happy - the fact the site never fell over was a big <a class="autolink" href="http://vimeo.com/plus">plus</a> too.   For saying it was thanksgiving stateside it was good to get a peak of around 50 users on board to watch remotely.</p>]]>
+        <![CDATA[<p>So i want to go over a few areas before i launch into what i think we need to do to correct some of the issues that we encountered yesterday.    These areas involve theammobox project, the eventca.st system and the need for a dedicated team.</p>
+
+<p><b>theammobox</b><br />
+so the ammobox project was formed from original funding and sponsorship for the first event i helped host which was the original podcampuk.   I put it to blogtv that to increase the level of content getting broadcast on their service that as a company they should invest some of their money (investors) in providing the community the tools to be able to cover events using their service - i believe it is a two way thing.</p>
+
+<p>Providing a streaming service is enough if your not concerned about the quality of the <a class="autolink" href="http://medm.rezpondr.com">media</a> that might be broadcast on it, connecting with online communities however and enabling them with equipment at relative low cost (compared to the amount that seems to go into development) to get back a relatively quality production and at the same time taking away the stress of the event hosts by having premade kitboxes (ammoboxes) is a potential way forward.</p>
+
+<p>When we built up the original ammobox we managed to get four sony dv camcorders and four samson <span class="caps">C01U </span>condenser mics with all cabling for under a £1000.    It's a little bit out of date now in terms of what i would recommend for further ammobox packages but the concept is the same.     Provide the ability for events to request the ammobox, have the event cover the insurance &amp; shipping of the box and have it "do the rounds" on a regular basis to events happening around europe.    Every month from each event start a fundraiser maybe to be able to purchase more "ammoboxes" and increase the level of media output on your streaming service until every week or weekend you have a conference or event of reasonable quality being live streamed.    I think a reasonable goal for the next few years is to have ten of these boxes in constant circulation. </p>
+
+<p>I was very happy that the ammobox was "out and about" last night and was very impressed with the level of service that the nesta tech team (and of course <a class="autolink" href="http://www.loudmouthman.com">loudmouthman</a>) had done to identify networking requirements (the cameras were wired onto a separate network from the public wifi grid) and we had stacks of bandwidth - which is <span class="caps">KEY </span>to streaming a video event.    I have to mention also this is only the second time we have ever used the ammobox and the setup was somewhat rushed even thou we shipped the box to london ahead of time - we never had access to three of the rooms until an hour before so we could not do qualitative testing of the audio and video was was a slight oversight on the day.</p>
+
+<p>The plan for each room (pod) to have a nominated person for control of the stream failed - possibly because it was unconference style event and nobody really wanted to deal with that commitment (understandable) i heard a lot of "i dont want to be on camera" maybe we need a disclaimer on the door - seems weird to me to come to an "amplified" event and not want to be known, each to their own however.</p>
+
+<p>Another issue was recording and naming/watching comments from the eventca.st chatroom (not the blogtv ones - we never wanted to use them because of the youtube style comments and trolls that frequent such streaming services) - i would have been quite happy to police each chat room but really having just me to watch four rooms was a little overwhelming exactly like podcampuk was really.    I also found that trying to login to an existing account when it is logged in and streaming on a different computer would not work - a major fail and one that would have to be remedied in future with something like a remote desktop or vnc.   </p>
+
+<p>Saying all this, the cameras and the mics on the whole were pretty good, this was less about the video units and quality for me and more about testing of some of the autoswitching features and how we would model future versions of eventca.st and the aggregation tools we have built in <a class="autolink" href="http://rezpondr.com">rezpondr</a>.    eventca.st is a licensed version of the rezpondr codebase to <a class="autolink" href="http://twitter.com/sleepydog">sleepydog</a> if you were wondering.     The requirements for better granular controls on the switching and overlays for each room with a guide are paramount to our next release.</p>
+
+<p><b>eventca.st</b><br />
+so that leads me onto eventca.st itself.   the hope of eventca.st is that we can develop a system for <a class="autolink" href="http://twitter.com/sleepydog">sleepydog</a> that will be used at all the upcoming amplified events next year (bandwidth permitting) and so we are actively looking to improve it over time.   I would be very grateful for constructive commentary from those that watched remotely about how we can make the experience better.    I will look at all the requests and deal with them on a case for case basis and ask the community as a whole for each feature and try and find a middleground to deliver on.</p>
+
+<p>One thing that did come out yesterday was the requirement for our crawler engine to have better learning and some level of AI control.   we have a certain level of ability in our crawler when it comes to remote api services but it needs another level of notification i feel to give the admin the ability to commit content to certain rows when found.    I noticed a lot of content that never got into the stream because it was incorrectly titled or from a lack of event tags all together which of course are much harder to index but are potentially just as relevant.    We are looking at ways we can cross reference materials to build a better timeline picture.</p>
+
+<p><b>i need a clone of me</b><br />
+i actually only felt i attended the event yesterday as a "part organizer" rather like podcampuk - actually attending and not having to control anything is much easier.   It would have been nice to have had a team of at least 4 people to monitor each room and have some kind of internal communication system.   maybe we will look at using <a href="http://www.yammer.com">yammer</a> for that part next time.</p>
+
+
+<p><b>future improvements</b><br />
+so this list could go on and i guess we will add more to it as we go on.   I'll look around at other ways people are doing this stuff too but i like the idea of taking it from scratch and building it up.</p>
+
+<p><b>64kps audio backup stream</b><br />
+was not actually used that much because the video feed was so bulletproof in terms of connection and that was down to the nesta team for doing such a great job in that department, however in future a roaming mic setup would be better for in the communal areas.</p>
+
+<p><b>vnc to each machine</b><br />
+so we can login to each machine from a central place to reboot a browser or check audio levels on the fly.   if we have someone controlling each camera we should not have a problem.   we should lock each machine once a session is going maybe to stop any issues there.</p>
+
+<p><b>nomination of a person for each room</b><br />
+as above this never happened really it was suggested but nobody really took it onboard and ran with it.  you need at least one person per room to be monitoring this kind of thing i think.</p>
+
+<p><b>disclaimers about the event</b><br />
+think there was some reservation about actually being on camera which i can totally understand and have come across it before.   i think this needs to be addressed.</p>
+
+<p><b>moderation and piping in of chat - registration for chat</b><br />
+one of the main reasons i used blogtv was because the ammobox and cameras were originally sponsored by blogtv.   i was hoping to use the <a class="autolink" href="http://www.ustream.tv/channel/thegravity">ustream.tv</a> for a more mobile roving camera but apart from @documentally doing two small parts very little was really done there.   pity.    blogtv have a fairly good video system but it is well known for the internet trolls that frequent the chat rooms.     We tried to use the chat on the eventca.st site and we never monitored the rooms on blogtv because we know that would happen.    Promises were made from blogtv that someone would be on hand between 4-8pm but it looks like that never actually happened.    A situation out of my control.</p>
+
+<p><b>overlays for each video window</b><br />
+i would really like to improve on putting up some kind of information overlay at the start of each session to tell people what it was about and i think each room should deal with that unless a reliable system could be found to do the switching.   i have some ideas in this area.</p>
+
+<p><b>annoying blogtv popups constantly appearing</b><br />
+this was totally unacceptable - every few minutes awful blogtv banners would appear on the streams over and over again - i would have thought for the coverage of the ammobox that blogtv would have turned them off.  lesson learnt.   so annoying.</p>
+
+<p><b>education of how to use the site</b><br />
+it really was last minute, the theme (i agree was clunky and needed work) was only started and finished in 3-4 days and was not what was originally planned.   it was a trial and test <a class="autolink" href="http://me.dm/blog/2008/08/engaging-into-remote-social-fi.php">exercise</a> where this would go to and how we would deliver it.    ideally we should have rolled out screencasts ahead of time but we also did not want to release the url until media was populating the site or the cameras were active.</p>
+
+<p><b>better camera utilization</b><br />
+someone actually was moving the camera around in room2 - sweeping back and forth and covering the room which was great i wish the other rooms had bothered to do this too, again this requires a dedicated team member to do this.</p>
+
+<p><b>better audio tracking</b><br />
+we start to want to get more professional here and i'm not sure if the event and costs would have allowed it, your starting to talk about proper wireless mics and costs that go along with that with all the possible issues also with batteries etc etc.   for the first event for the initial 200 people i think it was acceptable.  again, more can be done.</p>
+
+<p><b>blogtv rec system was a failure (10 minutes only?)</b><br />
+i was very frustrated with the blogtv recording system and it has no real use right now for a conference record situation, 10 minutes of recording is very bad and the fact you have to type in a name and cannot have it auto save blocks with a time/date/keyword stamp is really not much use at all.    Still looking for that host that can do video streaming and hosting perfectly.</p>
+
+<p><b>more people actually producing content/interviews from the event live</b><br />
+lets be really clear this is no south by southwest - people are not actively pushing content up to the internet, i guess the core reason is that south by southwest normally has a huge geek collective that have the devices and the insight to publish video and pictures for remote viewing - almost as part of the buzz really and to connect those there as to what events to get to.    very little content was actually going out live from the event - i felt that three or four people doing qik interviews in the hallways would have been a really good addition to the output.</p>
+
+<p>Either way, it was fun.    More to come! :)</p>
+
+<fieldset class="zemanta-related"><legend class="zemanta-related-title">Related articles by Zemanta</legend><ul class="zemanta-article-ul"><li class="zemanta-article-ul-li"><a href="http://www.lockergnome.com/windows/2008/10/16/selfcast/">Selfcast</a></li><li class="zemanta-article-ul-li"><a href="http://mashable.com/2008/10/13/stickam-mobile/">Stickam Adds Mobile Video Streaming to Compete With Qik, Flixwagon</a></li></ul></fieldset>
+
+<div style="margin-top: 10px; height: 15px;" class="zemanta-pixie"><a class="zemanta-pixie-a" href="http://reblog.zemanta.com/zemified/ab70b343-3c48-41d8-a13e-e472e1b440a5/" title="Zemified by Zemanta"><img style="border: medium none ; float: right;" class="zemanta-pixie-img" src="http://img.zemanta.com/reblog_b.png?x-id=ab70b343-3c48-41d8-a13e-e472e1b440a5" alt="Reblog this post [with Zemanta]" /></a></div>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>lofi snail mail viral - spreading boxee.tv</title>
+    <link rel="alternate" type="text/html" href="http://me.dm/blog/2008/11/lofi-snail-mail-viral---spread.php" />
+    <id>tag:me.dm,2008:/blog//1.258</id>
+
+    <published>2008-11-25T16:30:00Z</published>
+    <updated>2008-11-25T16:32:19Z</updated>
+
+    <summary> So i have come up with an idea and concept that utilizes a number of exciting things, social media, google maps and the buzz of getting something in the post. I&apos;m calling it plugitpassit.com (boxee have another domain/name -...</summary>
+    <author>
+        <name>i haz</name>
+        <uri>http://me.dm</uri>
+    </author>
+    
+        <category term="amazon s3" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="apple" label="Apple" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="appletv" label="AppleTv" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="boxee" label="Boxee" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="googlemaps" label="Google Maps" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="onlineandoffline" label="Online and offline" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="privacy" label="Privacy" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="security" label="Security" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="socialmedia" label="Social media" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="socialnetwork" label="Social network" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="socialnetworkservice" label="Social network service" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="twitter" label="Twitter" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="unison" label="Unison" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="universalserialbus" label="Universal Serial Bus" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="uploadinganddownloading" label="Uploading and downloading" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="usbflashdrive" label="USB flash drive" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="website" label="Website" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-US" xml:base="http://me.dm/blog/">
+        <![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="boxee.jpg" src="http://me.dm/blog/boxee.jpg" class="mt-image-none" style="" width="650" height="140" /></span></p>
+
+<p>So i have come up with an idea and concept that utilizes a number of exciting things, <a href="http://en.wikipedia.org/wiki/Social_media" title="Social media" rel="wikipedia" class="zem_slink">social media</a>, <a href="http://maps.google.com" title="Google Maps" rel="homepage" class="zem_slink">google maps</a> and the buzz of getting something in the post.    I'm calling it plugitpassit.com (<a href="http://www.boxee.tv" title="Boxee" rel="homepage" class="zem_slink">boxee</a> have another domain/name - that's cool more the better!) the idea came out of a question on <a href="http://twitter.com" title="Twitter" rel="homepage" class="zem_slink">twitter</a> about getting a copy of my <a href="http://en.wikipedia.org/wiki/USB_flash_drive" title="USB flash drive" rel="wikipedia" class="zem_slink">usb pen</a> i created from an <a href="http://en.wikipedia.org/wiki/Installation_%28computer_programs%29" title="Installation (computer programs)" rel="wikipedia" class="zem_slink">installer</a> for jailbreaking my <a class="autolink" href="http://www.apple.com/appletv/">appletv</a> from the boxee.tv sources.    So with the help from boxee we are working on a project for spreading boxee by making a number of ready to go <a href="http://en.wikipedia.org/wiki/Universal_Serial_Bus" title="Universal Serial Bus" rel="wikipedia" class="zem_slink">usb</a> <a href="http://en.wikipedia.org/wiki/Pen" title="Pen" rel="wikipedia" class="zem_slink">pens</a> and sending them out - cool huh?</p>]]>
+        <![CDATA[<p>The idea is fairly simple in approach, we have a very basic <a href="http://en.wikipedia.org/wiki/Website" title="Website" rel="wikipedia" class="zem_slink">website</a> and you sign up there with your email, <a href="http://en.wikipedia.org/wiki/Social_network" title="Social network" rel="wikipedia" class="zem_slink">social networks</a> location and address (if you want to receive the usb pen) then wait for the pen to arrive in the post - once you have used the usbpen (it takes like 10 minutes) you simply document receiving the usb pen with a video or a picture and <a href="http://en.wikipedia.org/wiki/Uploading_and_downloading" title="Uploading and downloading" rel="wikipedia" class="zem_slink">upload</a> it to your favorite social site and let boxee know about it by <a href="http://en.wikipedia.org/wiki/Logging" title="Logging" rel="wikipedia" class="zem_slink">logging</a> in and sending up the url - super easy!</p>
+
+<p>We will track where the usb pen gets too and obviously track the number of people installing boxee on the <a class="autolink" href="http://www.apple.com/appletv/">appletv</a> using this method.    I quite like the <a href="http://en.wikipedia.org/wiki/Unison" title="Unison" rel="wikipedia" class="zem_slink">unison</a> of the viral part of it with people getting something in the post (you have to <a href="http://en.wikipedia.org/wiki/Tick" title="Tick" rel="wikipedia" class="zem_slink">tick</a> about <a href="http://en.wikipedia.org/wiki/Privacy" title="Privacy" rel="wikipedia" class="zem_slink">privacy</a>) and the jump of the device from place to place.    We will not track who sends where or to who.    It's almost like a realife p2p snailmail <a href="http://en.wikipedia.org/wiki/Communications_protocol" title="Communications protocol" rel="wikipedia" class="zem_slink">networking protocol</a>. </p>
+
+<p>I truly think that there is something cool that can be made of this - almost like penpal v2.0 - we use online <a href="http://en.wikipedia.org/wiki/Technology" title="Technology" rel="wikipedia" class="zem_slink">technology</a> and social networks to enable the communication side but i think there is an <a href="http://en.wikipedia.org/wiki/Online_and_offline" title="Online and offline" rel="wikipedia" class="zem_slink">offline</a> "doing" process that can be catered for as well.</p>
+
+<div style="margin-top: 10px; height: 15px;" class="zemanta-pixie"><a class="zemanta-pixie-a" href="http://reblog.zemanta.com/zemified/16657b90-caf1-4aa6-aaba-5461784becaf/" title="Zemified by Zemanta"><img style="border: medium none ; float: right;" class="zemanta-pixie-img" src="http://img.zemanta.com/reblog_b.png?x-id=16657b90-caf1-4aa6-aaba-5461784becaf" alt="Reblog this post [with Zemanta]" /></a></div>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Introducing Rezpondr (fundemental)</title>
+    <link rel="alternate" type="text/html" href="http://me.dm/blog/2008/11/introducing-rezpondr-fundement.php" />
+    <id>tag:me.dm,2008:/blog//1.209</id>
+
+    <published>2008-11-25T09:15:00Z</published>
+    <updated>2008-11-25T09:10:55Z</updated>
+
+    <summary> So for the first release of rezpondr (called fundemental) i wanted to give you a low down about the feature set that this version has and what you can expect as an invited user. Obviously we are not planning...</summary>
+    <author>
+        <name>i haz</name>
+        <uri>http://me.dm</uri>
+    </author>
+    
+    <category term="articlesandreviews" label="Articles and Reviews" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="bliptv" label="Blip.tv" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="faqshelpandtutorials" label="FAQs Help and Tutorials" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="flashvideo" label="Flash Video" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="iphone" label="IPhone" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="languages" label="Languages" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="planning" label="Planning" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="programming" label="Programming" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="python" label="Python" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="remotecontrol" label="Remote control" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="requirement" label="Requirement" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="ruby" label="Ruby" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="supportgroup" label="Support group" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="switcher" label="Switcher" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="web" label="web" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="whitelabel" label="White label" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-US" xml:base="http://me.dm/blog/">
+        <![CDATA[<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="rezpondrblog.jpg" src="http://me.dm/blog/rezpondrblog.jpg" class="mt-image-none" style="" width="650" height="140" /></span>
+
+<p><br />So for the first release of <a class="autolink" href="http://rezpondr.com">rezpondr</a> (called fundemental) i wanted to give you a low down about the feature set that this version has and what you can expect as an invited user.   Obviously we are not <a href="http://en.wikipedia.org/wiki/Planning" title="Planning" rel="wikipedia" class="zem_slink">planning</a> to roll this coded version out as the enterprise version - it will be re-written very quickly in <a href="http://www.python.org/" title="Python (programming language)" rel="homepage" class="zem_slink">python</a> or <a href="http://en.wikipedia.org/wiki/Ruby" title="Ruby" rel="wikipedia" class="zem_slink">ruby</a> to accommodate those hi-<a href="http://en.wikipedia.org/wiki/Traffic" title="Traffic" rel="wikipedia" class="zem_slink">traffic</a> sites with <a href="http://en.wikipedia.org/wiki/Niche_%28architecture%29" title="Niche (architecture)" rel="wikipedia" class="zem_slink">niche</a> <a href="http://en.wikipedia.org/wiki/Requirement" title="Requirement" rel="wikipedia" class="zem_slink">requirements</a>.    This version is delivering on my original promise to the <a href="http://en.wikipedia.org/wiki/Video_clip" title="Video clip" rel="wikipedia" class="zem_slink">videobloggers</a> of the world and small content producers - to give them the tools to create a very optimized and fun <a href="http://en.wikipedia.org/wiki/Experience" title="Experience" rel="wikipedia" class="zem_slink">experience</a> to the masses of their <a class="autolink" href="http://medm.rezpondr.com">media</a> and social <a href="http://en.wikipedia.org/wiki/Footprint" title="Footprint" rel="wikipedia" class="zem_slink">footprint</a>.</p>
+
+<div style="margin-top: 10px; height: 15px;" class="zemanta-pixie"><a class="zemanta-pixie-a" href="http://reblog.zemanta.com/zemified/4492120b-f567-4506-8eec-64f5afb45195/" title="Zemified by Zemanta"><img style="border: medium none ; float: right;" class="zemanta-pixie-img" src="http://img.zemanta.com/reblog_b.png?x-id=4492120b-f567-4506-8eec-64f5afb45195" alt="Reblog this post [with Zemanta]" /></a></div>]]>
+        <![CDATA[<p>So i guess you want to know what <a class="autolink" href="http://rezpondr.com">rezpondr</a> does right? - good because i am really excited to tell you.    This idea has been in my head for well over a year and some platforms that made this concrete to me over the last year included seesmic, qik, viddler and <a href="http://en.wikipedia.org/wiki/Blip.tv" title="Blip.tv" rel="wikipedia" class="zem_slink">blip.tv</a> - i started to see so many wonderful services providing a great destination to produce and store content.    For the average person in the street thou having to learn, adapt and be educated about the eco system of a particular site can almost have the effect of turning a user off a product or service - it just seems like a lot to do.</p>
+
+<p>I perfect example of this sprung to my mind when my mother once asked me why i had never told her that <b><a class="autolink" href="http://www.flickr.com/photos/clanlife/">flickr</a></b> did video (this was before it did!) after seeing a crossposted video from <a class="autolink" href="http://dm.blip.tv">blip.tv</a> as a still image link to the actually video blip.   She never saw the transition from <a class="autolink" href="http://www.flickr.com/photos/clanlife/">flickr</a> to blip, explaining to her why this was happening and why i stored my video here and pictures there made me stop and think.    We are actually asking a lot of people to have to "think" about this stuff.</p>
+
+<p>The reason why people are comfortable with <a href="http://en.wikipedia.org/wiki/Remote_control" title="Remote control" rel="wikipedia" class="zem_slink">remote controls</a> and a tv set is because a lot of the heavy lifting is transparent, you know what channel you need to be at for a certain time - people shape their activity around it often.    Some of us however (and people we are a small percentage worldwide still) like to have rss, itunes and optimized viewing experiences on our terms - we know the tools, we put the time in to discover.</p>
+
+<p>So after enough babble.    The feature list of what rezpondr can do for you currently.. .&nbsp; i have recorded some of these as little talking head videos if that is what you prefer - you can find them on <a href="http://uk.youtube.com/user/rezpondr">youtube</a>, <a href="http://vimeo.com/rezpondr">vimeo</a> and other places..<br /></p>
+
+<p><font style="font-size: 0.8em;">- your own custom subdomains for your event (multiple)<br />
+- a selection of custom themes for that event (we can outsource to designer for one offs)<br />
+- a live ajax inline switching system for different video streams (currently supporting ustream)<br />
+- latest <a href="http://en.wikipedia.org/wiki/Flash_Video" title="Flash Video" rel="wikipedia" class="zem_slink">flv player</a> from jereon with heavily used api for all our streams<br />
+- select your main player - blip.tv, ooyala, vimeo, youtube (maintain your existing revenue)<br />
+- date range service rows <a class="autolink" href="http://medm.rezpondr.com">media</a> so it is "just" for that event page.  then leave page as is.<br />
+- integrated thirdparty shoutbox with admin/ip/blocking features<br />
+- integrated custom live shoutcasting solution support for shoutcast streams</font><font style="font-size: 0.8em;"><br />
+- intergrated support for recording, replying to seesmic.com videos<br />
+- integrated dynamic ajax flash stats detailing aspects of your event<br />
+- row/service support for <a class="autolink" href="http://www.flickr.com/photos/clanlife/">flickr</a>,qik,12seconds,vimeo,youtube,tumblr,<a class="autolink" href="http://bambuser.com/channel/philcampbell">bambuser</a>,seesmic,bliptv,reuters,viddler<br />
+- summarize <a class="autolink" href="http://twitter.com/philcampbell">twitter</a> support built in for keyword tracking and display<br />
+- reuters video support <br />
+- blinkx.com support for keyword searching<br />
+- display multiple rows of content from each service<br />
+- a heavily worked on crawler that is being optimized already deployed in the cloud<br />
+- qikFLOW - multiple qik users at an event sorted into a ui updating in order<br />
+- <a class="autolink" href="http://www.flickr.com/photos/clanlife/">flickr</a> quick view - hover over pictures to see quickvideo - feed from <a class="autolink" href="http://www.flickr.com/photos/clanlife/">flickr</a> api via json<br />
+- autoplay services row playlisting so recent content plays back to back until other media selected<br />
+- livetweet - a nicely updating soft fade displayer with alert beep for dedicated <a class="autolink" href="http://twitter.com/philcampbell">twitter</a> event<br />
+- one click live <a href="http://en.wikipedia.org/wiki/Switcher" title="Switcher" rel="wikipedia" class="zem_slink">switcher</a> in admin for switching to a livecast from an event.<br />
+- lightbox for every piece of media in your row - do functions on every bit of your media<br />
+- a footer lightboxes system for auth'd users to fav and suggest.<event><br />
+- media is in time based order from left to right.<br />
+- ability to setup multiple service rows with different criteria for multiple events.<br />
+- memcached, optimized, being weekly worked on to make a better system for the cloud.<br />
+- weddings, restaurants, distributors, local search and estate agents templates planned.<br />
+- family themes, <a href="http://en.wikipedia.org/wiki/Support_group" title="Support group" rel="wikipedia" class="zem_slink">support groups</a> and eco information and media in one stop shops.</event></font></p><p>So as you can see me and the team have been fairly busy on this bit of development and it has been a joy to work on so far.&nbsp; There are a lot of things that will be redesigned, rewritten (mainly for the set-top <a href="http://en.wikipedia.org/wiki/Marketplace" title="Marketplace" rel="wikipedia" class="zem_slink">market place</a> and for speed/performance issues) but we think that the future of <a href="http://en.wikipedia.org/wiki/Mediumship" title="Mediumship" rel="wikipedia" class="zem_slink">channeled</a> filtered content is a "one place" fed by many sources.<br /></p>
+
+<p>We have already licensed a <a href="http://en.wikipedia.org/wiki/White_label" title="White label" rel="wikipedia" class="zem_slink">white label</a> version of our system with <a class="autolink" href="http://twitter.com/sleepydog">sleepydog</a> (who had the foresight to invest time and energy - and give me a job) and it is going for rewrite in a better code base (probably rails or python) starting january - but i feel we have delivered on what i think all video bloggers and small content producers (that have very little budget) want.   A simple one stop - aggregate, distribution platform  - i see it like a video cv wall for your media.</p>
+
+<p>Right now i'm looking for 50-100 videobloggers (we currently have about 15) that want to use our basic themes and setup there own pages importing all their <a href="http://en.wikipedia.org/wiki/Social_media" title="Social media" rel="wikipedia" class="zem_slink">social media</a> video feeds to demo out our features and test out our system load, remember we are <a href="http://en.wikipedia.org/wiki/Not_out" title="Not out" rel="wikipedia" class="zem_slink">not out</a> to make a big splash with this version of rezpondr but to provide to our roots of creativity - the videobloggers that opened me up in a junction of my life when i had given into gaming!  - just a bit of thank you i guess! :)</p>
+
+<p>Please leave a comment if you are interesting in being a trial user or just sign up on from the link below.   I'm actually going to be using a custom rezpondr theme on the me.dm media page shortly on this site.    Remember also that we have not even touched on some of the features we want to offer including the geo spacial stuff that will be so massive in the coming years.</p><p><b>SIGNUP</b> - <a href="http://me.dm/link/invites">http://me.dm/link/invites</a><br /></p><fieldset class="zemanta-related"><legend class="zemanta-related-title">Related articles by Zemanta</legend><ul class="zemanta-article-ul"><li class="zemanta-article-ul-li"><a href="http://mashable.com/2008/07/15/video-streaming-tools/">How to Live Stream Your Life: 20+ Tools and Resources</a></li><li class="zemanta-article-ul-li"><a href="http://www.cnet.com/8301-13846_1-9874953-62.html?part=rss&amp;subj=news">Building on growing platforms</a></li></ul></fieldset>
+
+
+
+<div style="margin-top: 10px; height: 15px;" class="zemanta-pixie"><a class="zemanta-pixie-a" href="http://reblog.zemanta.com/zemified/73608e7a-2fac-4da1-83a6-d57afb9eed03/" title="Zemified by Zemanta"><img style="border: medium none ; float: right;" class="zemanta-pixie-img" src="http://img.zemanta.com/reblog_b.png?x-id=73608e7a-2fac-4da1-83a6-d57afb9eed03" alt="Reblog this post [with Zemanta]" /></a></div>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>BoinxTV is released! - mac owners rejoice.</title>
+    <link rel="alternate" type="text/html" href="http://me.dm/blog/2008/11/boinxtv-is-released---mac-owne.php" />
+    <id>tag:me.dm,2008:/blog//1.267</id>
+
+    <published>2008-11-25T09:05:00Z</published>
+    <updated>2008-11-25T09:03:00Z</updated>
+
+    <summary> **&quot;say goodbye to post production&quot;** - quick overview and screencast for those need the lowdown right now. It has been an interesting week this week with lots of little bits of software and code getting released &quot;just at the...</summary>
+    <author>
+        <name>i haz</name>
+        <uri>http://me.dm</uri>
+    </author>
+    
+    <category term="arts" label="Arts" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="business" label="Business" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="chromakey" label="Chroma key" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="computers" label="Computers" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="graphicsprocessingunit" label="Graphics processing unit" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="hd" label="HD" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="hddvd" label="HD DVD" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="listofmacintoshsoftware" label="List of Macintosh software" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="macintosh" label="Macintosh" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="multicore" label="Multi-core" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="postproduction" label="Post-production" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="recordproducer" label="Record producer" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="television" label="Television" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="televisionstudio" label="Television studio" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="therighttime" label="The Right Time" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="userinterface" label="User interface" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="video" label="Video" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="videocard" label="Video card" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-US" xml:base="http://me.dm/blog/">
+        <![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="boinx.jpg" src="http://me.dm/blog/boinx.jpg" class="mt-image-none" style="" width="650" height="140" /></span></p>
+
+<p>**"say goodbye to <a href="http://en.wikipedia.org/wiki/Post-production" title="Post-production" rel="wikipedia" class="zem_slink">post production</a>"** - quick <a href="http://boinx.com/boinxtv/overview/">overview</a> and <a href="http://boinx.com/boinxtv/screencast/">screencast</a> for those need the lowdown right now.    It has been an interesting week this week with lots of little bits of <a href="http://en.wikipedia.org/wiki/Computer_software" title="Computer software" rel="wikipedia" class="zem_slink">software</a> and code getting released "just at <a href="http://www.amazon.com/Right-Time-Bosson/dp/B00000G67T%3FSubscriptionId%3D0G81C5DAZ03ZR9WH9X82%26tag%3Dzemanta-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3DB00000G67T" title="The Right Time" rel="amazon" class="zem_slink">the right time</a>" - read on to hear about how this piece of <a href="http://en.wikipedia.org/wiki/List_of_Macintosh_software" title="List of Macintosh software" rel="wikipedia" class="zem_slink">mac software</a> is a big deal for me and the small content <a href="http://en.wikipedia.org/wiki/Record_producer" title="Record producer" rel="wikipedia" class="zem_slink">producer</a>.</p>]]>
+        <![CDATA[<p>BoinxTV is the pioneering live-production software for video podcasters that turns any recent Mac into a <a href="http://en.wikipedia.org/wiki/Television_studio" title="Television studio" rel="wikipedia" class="zem_slink">TV studio</a> 'for the rest of us'.   Record high quality video <a href="http://en.wikipedia.org/wiki/Podcast" title="Podcast" rel="wikipedia" class="zem_slink">podcasts</a>, sports events, <a href="http://en.wikipedia.org/wiki/Concert" title="Concert" rel="wikipedia" class="zem_slink">concerts</a>, interviews, sermons, lectures, seminars and more using just your Mac and up to three cameras. With its innovative <a href="http://en.wikipedia.org/wiki/User_interface" title="User interface" rel="wikipedia" class="zem_slink">user interface</a>, BoinxTV makes it easy to create professional '<a href="http://en.wikipedia.org/wiki/Television" title="Television" rel="wikipedia" class="zem_slink">TV</a> style' recordings, setting a new quality level in the production of video podcasts._</p>
+
+<p>So, last year in december i started messing around with producing a small show (<a class="autolink" href="http://thegravity.blip.tv/posts?view=archive&nsfw=dc">thegravity</a>) with a greenscreen and had fairly good results ( i recently had bought a <a class="autolink" href="http://canon.hv20.co.uk/">hv20</a> ) but never had the ability to do <a class="autolink" href="http://me.dm/link/hd">HD</a> greenscreen recording &amp; news style shows properly - the software i used visualcue was limited in that it never supported <a class="autolink" href="http://me.dm/link/hd">HD</a> and the next level up software, <a class="autolink" href="http://www.flip4mac.com/wirecast.htm?utm_source=vara&utm_medium=referral&utm_campaign=varahome&utm_term=wire">wirecast</a> was more expensive - and they even wanted to charge for the codec for <a class="autolink" href="http://me.dm/link/hd">HD</a> - expensive for a small content <a href="http://en.wikipedia.org/wiki/Record_producer" title="Record producer" rel="wikipedia" class="zem_slink">producer</a>, they did however offer me an education discount after many emails.</p>
+
+<p>I never took them up on that however  because the software never had all the features i was looking for after testing wirecast, i was hoping that my requests for hotkey support for <a class="autolink" href="http://medm.rezpondr.com">media</a> fades and the ability to add titles would just be something that would be dropped in later.    Looking back now i am glad i never spent the money - seems like a stagnant product and it got bought out by another company.    </p>
+
+<p>Recently i have been playing with <a href="http://vidblaster.com/">vidblaster</a> on my <a class="autolink" href="http://me.dm/blog/2008/11/aspire-one-netbook--.php">acer aspire one</a> netbook as a solution to creating my shows again for the gravity but the <a class="autolink" href="http://me.dm/link/hd">hd</a> was always going to be a problem in getting into a windows based machine.   I still think i will be using the netbook with <a class="autolink" href="http://vidblaster.com/">vidblaster</a> for on the road style shows with 3/4 dv cameras because it does switching really well and has the awesome built in feature to be able to stream up to <a class="autolink" href="http://www.ustream.tv/channel/thegravity">ustream.tv</a> via the adobe media encoder which you cannot get for the mac.     Seems to be the order of things in this industry, it almost does what you want but not quite.    Very annoying for people coming into this arena to spend money on something to find out it does not do what you want it to.</p>
+
+<p>So, amazing timing really for boinx and i will definitely be paying for a license for it, might even push me to get a new macbook pro because the <a href="http://en.wikipedia.org/wiki/Graphics_processing_unit" title="Graphics processing unit" rel="wikipedia" class="zem_slink">graphics chip</a> onboard would allow me to do mobile <a class="autolink" href="http://me.dm/link/hd">hd</a> recording.    I'm not sure if boinx has a streaming component as that would really top off what looks to be an impressive piece of software.   The <a href="http://en.wikipedia.org/wiki/License" title="License" rel="wikipedia" class="zem_slink">licensing</a> is interesting as well regarding small content producers in that they are selling a licensed copy for $199 (£100) - they include a little 5 second advert within the video files for their product as exchange for discount.     I would initially quite happy to do this for them until i could raise the funds to get the full version.</p>
+
+<p>I really love the layering components concept and will be putting together a little show as a test, pity it still will not be in <a class="autolink" href="http://me.dm/link/hd">HD</a> however because it seems the bottleneck on my mac pro is the ageing 7300GT <a href="http://en.wikipedia.org/wiki/Video_card" title="Video card" rel="wikipedia" class="zem_slink">graphics card</a> - it has to be, my <a href="http://en.wikipedia.org/wiki/Multi-core" title="Multi-core" rel="wikipedia" class="zem_slink">quad core</a> and 6gig of memory should be more than enough so i am thinking it has to be that.    New graphics card upgrade soon then i guess.</p>
+
+<p>Some of the things i have found with my mac pro while testing the software out are below and contain my first impressions.</p>
+
+
+<ul>
+<li>instant <span class="caps">SCORE </span>over visualcue/wirecast - it supports <a class="autolink" href="http://me.dm/link/hd">HD</a> out of the box, you do not have to pay for more for the codec for <a class="autolink" href="http://me.dm/link/hd">hd</a> (does have side effects thou see below)</li>
+</ul>
+
+
+
+
+<ul>
+<li><a class="autolink" href="http://me.dm/link/hd">HD</a> works but the processor performance goes to 999% and the video is choppy on my mac pro but think this because my 7300GT is the problem (bottleneck)</li>
+</ul>
+
+
+
+
+<ul>
+<li>love the fact that have a rss crawler layer, and premade interview layers, weather and <a href="http://en.wikipedia.org/wiki/Chroma_key" title="Chroma key" rel="wikipedia" class="zem_slink">chroma keying</a> - lots of settings for the chroma keying</li>
+</ul>
+
+
+
+<p>I hope to put together a brief screencast and put it up on my <span class="caps">PLUS </span>account on vimeo at some point.</p>
+
+
+<fieldset class="zemanta-related"><legend class="zemanta-related-title">Related articles by Zemanta</legend><ul class="zemanta-article-ul"><li class="zemanta-article-ul-li"><a href="http://arstechnica.com/news.ars/post/20071230-measuring-cpu-usage-during-hd-playback-ati-vs-nvidia.html">Measuring <span class="caps">CPU </span>usage during HD video playback: <span class="caps">ATI </span>vs. <span class="caps">NVIDIA</span></a></li><li class="zemanta-article-ul-li"><a href="http://www.tuaw.com/2008/11/11/boinxtv-1-0-released-today/">BoinxTV 1.0 released today</a></li><li class="zemanta-article-ul-li"><a href="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9112441&amp;source=rss_topic12"><span class="caps">AMD </span>targets Nvidia with dual-GPU graphics card</a></li><li class="zemanta-article-ul-li"><a href="http://www.tuaw.com/2008/07/02/wwdc-08-boinx-thecodingmonkeys-boinxtv/"><span class="caps">WWDC </span>'08: Boinx + TheCodingMonkeys = BoinxTV</a></li><li class="zemanta-article-ul-li"><a href="http://q-ontech.blogspot.com/2008/10/screencasting-101.html">Screencasting 101</a></li><li class="zemanta-article-ul-li"><a href="http://www.jkontherun.com/2008/11/screenium-adds.html">Screenium adds <span class="caps">PIP </span>input to Mac screencasts</a></li></ul></fieldset>
+
+<div style="margin-top: 10px; height: 15px;" class="zemanta-pixie"><a class="zemanta-pixie-a" href="http://reblog.zemanta.com/zemified/50d59538-a7aa-4ea7-a364-bd1d611c5782/" title="Zemified by Zemanta"><img style="border: medium none ; float: right;" class="zemanta-pixie-img" src="http://img.zemanta.com/reblog_b.png?x-id=50d59538-a7aa-4ea7-a364-bd1d611c5782" alt="Reblog this post [with Zemanta]" /></a></div>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Where is the picture daddy?</title>
+    <link rel="alternate" type="text/html" href="http://me.dm/blog/2008/11/where-is-the-picture-daddy-nee.php" />
+    <id>tag:me.dm,2008:/blog//1.266</id>
+
+    <published>2008-11-20T11:47:49Z</published>
+    <updated>2008-11-20T13:17:45Z</updated>
+
+    <summary> You know the world has changed from technology when a small girl grabs the camera from her daddies hand and turns it around to look at the screen on the back, this confused the small child somewhat why it...</summary>
+    <author>
+        <name>i haz</name>
+        <uri>http://me.dm</uri>
+    </author>
+    
+        <category term="thoughts" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="alien" label="Alien" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="business" label="Business" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="camera" label="Camera" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="content" label="Content" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="contentdelivery" label="Content delivery" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="couriersandmessengers" label="Couriers and Messengers" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="image" label="Image" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="iphone" label="IPhone" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="massmedia" label="Mass media" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="matrix" label="Matrix" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="media" label="Media" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="mediastreamer" label="MediaStreamer" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="operatingsystems" label="Operating Systems" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="photography" label="Photography" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="regionalandsameday" label="Regional and Same Day" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="screen" label="Screen" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="shareware" label="Shareware" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="socialnetwork" label="Social network" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="transportationandlogistics" label="Transportation and Logistics" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="unix" label="Unix" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="virtualcamera" label="Virtual camera" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-US" xml:base="http://me.dm/blog/">
+        <![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="neo.jpg" src="http://me.dm/blog/neo.jpg" class="mt-image-none" style="" width="650" height="140" /></span></p>
+
+<p>You know the world has changed from technology when a small girl grabs the camera from her daddies hand and turns it around to look at the screen on the back, this confused the small child somewhat why it did not have a screen.   What was this alien device her daddy was using.</p>]]>
+        <![CDATA[<p>the devices and technology we are first introduced to play a vital part in the way we shape ourselves into how we can handle the delivery of <a href="http://en.wikipedia.org/wiki/Electronic_media" title="Electronic media" rel="wikipedia" class="zem_slink">media</a> during the times of researching our identify of what we believe to be true in this world.   i always thought <a href="http://en.wikipedia.org/wiki/Content_%28media_and_publishing%29" title="Content (media and publishing)" rel="wikipedia" class="zem_slink">content</a> was king but i am starting to believe that actually, truly when you really break it all down, <a href="http://en.wikipedia.org/wiki/Content_%28media_and_publishing%29" title="Content (media and publishing)" rel="wikipedia" class="zem_slink">content</a> will always be <a href="http://en.wikipedia.org/wiki/Mass_media" title="Mass media" rel="wikipedia" class="zem_slink">the media</a> traveling along the more important delivery network.</p>
+
+<p>We are slowly becoming what i will call unique <b><span class="caps">SCDN</span></b> locations (social <a href="http://en.wikipedia.org/wiki/Content_delivery" title="Content delivery" rel="wikipedia" class="zem_slink">content delivery</a> nodes) no longer branded by <a href="http://en.wikipedia.org/wiki/Stereotype" title="Stereotype" rel="wikipedia" class="zem_slink">stereotypes</a> but moving, adaptive <a href="http://en.wikipedia.org/wiki/Mass_media" title="Mass media" rel="wikipedia" class="zem_slink">media</a> consumers will an ability to be mobile, with transient ambient delivery made up of reactionary impulses and emotive changes in our day to day battle with life's quirks many times subconsciously set of by the connectors in our online social grids.</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Good_and_evil" title="Good and evil" rel="wikipedia" class="zem_slink">Good and Bad</a> <a class="autolink" href="http://medm.rezpondr.com">media</a> will be sifted and sorted, calibrated and ranked by our social <a href="http://en.wikipedia.org/wiki/Grid_%28page_layout%29" title="Grid (page layout)" rel="wikipedia" class="zem_slink">grid</a> - content is relevant to someone, somewhere connected to the <a href="http://en.wikipedia.org/wiki/Freeway" title="Freeway" rel="wikipedia" class="zem_slink">freeways</a> of delivery and needing input.   <a href="http://www.imdb.com/title/tt0133093" title="The Matrix" rel="imdb" class="zem_slink">the matrix</a> truly is with us when the devices we operate suggest an action.   that image of the girl checking her fathers <a href="http://en.wikipedia.org/wiki/Virtual_camera" title="Virtual camera" rel="wikipedia" class="zem_slink">camera</a> for the screen and the look on her face when she did not find it will stay with me for some time.    </p>
+
+<fieldset class="zemanta-related"><legend class="zemanta-related-title">Related articles by Zemanta</legend><ul class="zemanta-article-ul"><li class="zemanta-article-ul-li"><a href="http://blog.streamingmedia.com/the_business_of_online_vi/2008/11/streamingmediacom-launches-new-web-based-content-delivery-discussion-list.html">New Discussion Forum About Content Delivery For Video Launches</a></li></ul></fieldset>
+
+<div style="margin-top: 10px; height: 15px;" class="zemanta-pixie"><a class="zemanta-pixie-a" href="http://reblog.zemanta.com/zemified/de18451e-2284-40fb-b1d5-57c49c7e90b6/" title="Zemified by Zemanta"><img style="border: medium none ; float: right;" class="zemanta-pixie-img" src="http://img.zemanta.com/reblog_b.png?x-id=de18451e-2284-40fb-b1d5-57c49c7e90b6" alt="Reblog this post [with Zemanta]" /></a></div>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>A revisit to the boxee alpha</title>
+    <link rel="alternate" type="text/html" href="http://me.dm/blog/2008/11/a-revisit-to-the-boxee-alpha.php" />
+    <id>tag:me.dm,2008:/blog//1.265</id>
+
+    <published>2008-11-20T00:05:36Z</published>
+    <updated>2008-11-23T17:22:45Z</updated>
+
+    <summary> So late last night i have another play on boxee on the appletv, i think i maxxed out the potential for at least my appletv when it comes to HD video and that is the fault of the appletv...</summary>
+    <author>
+        <name>i haz</name>
+        <uri>http://me.dm</uri>
+    </author>
+    
+        <category term="HD" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="developments" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="hardware" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="interface" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="products" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="thoughts" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="updates" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="video" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="apple" label="Apple" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="appletv" label="AppleTV" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="boxee" label="boxee" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="google" label="Google" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="googlesearch" label="Google Search" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="hddvd" label="HD DVD" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="highdefinitionvideo" label="High-definition video" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="languages" label="Languages" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="opensource" label="Open source" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="programming" label="Programming" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="rss" label="RSS" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="search" label="search" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="sourcecode" label="Source code" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="ustreamtv" label="Ustream.tv" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="websearchengine" label="Web search engine" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-US" xml:base="http://me.dm/blog/">
+        <![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="tvset.jpg" src="http://me.dm/blog/tvset.jpg" width="650" height="140" class="mt-image-none" style="" /></span></p>
+
+<p>So late last night i have another play on <a href="http://www.boxee.tv" title="boxee" rel="blog" class="zem_slink">boxee</a> on the <a href="http://en.wikipedia.org/wiki/Apple_TV" title="Apple TV" rel="wikipedia" class="zem_slink">appletv</a>, i think i maxxed out the potential for at least my <a class="autolink" href="http://www.apple.com/appletv/">appletv</a> when it comes to <a href="http://en.wikipedia.org/wiki/High-definition_video" title="High-definition video" rel="wikipedia" class="zem_slink">HD video</a> and that is the fault of the appletv and not boxee.    One of the main reasons i have great interest in boxee is the way they do social.   The ability to <a href="http://en.wikipedia.org/wiki/Source_code" title="Source code" rel="wikipedia" class="zem_slink">code</a> <a href="http://en.wikipedia.org/wiki/Open_source" title="Open source" rel="wikipedia" class="zem_slink">open source</a> elements over the top of this as well is quite a big deal.    It fits hand in hand with the <a href="http://www.sleepydog.net" title="Toby Moores" rel="blog" class="zem_slink">sleepydog</a> ethos that toby moores has had for over 10 years.</p>]]>
+        <![CDATA[<p>Saying that i can still see my <a href="http://en.wikipedia.org/wiki/Apple_TV" title="Apple TV" rel="wikipedia" class="zem_slink">appletv</a> become my number1 platform to get my weekly torrent downloads and to look at some <a href="http://en.wikipedia.org/wiki/Public_domain" title="Public domain" rel="wikipedia" class="zem_slink">public domain</a> oldskool torrents for those lazy days (like i get them) and the ability to watch lofi (not <a class="autolink" href="http://me.dm/link/hd">hd</a>) movies is still a real boon to me.     It has prompted me however to look at getting a <a href="http://www.apple.com/macmini/" title="Mac mini" rel="homepage" class="zem_slink">mac mini</a> for further developments (anyone wanna help me raise the funds for that) for testing of boxee</p>
+
+
+
+<ul>
+<li>ability to playlist a group of videos.</li>
+<li>wish it had the pickup where i left off from last time (miss that feature from <a class="autolink" href="http://www.apple.com/appletv/">appletv</a>)</li>
+<li>it appears that it tries to find screenart for movies and if it does not know about that content will not display it in the interface, is there a way to override that and is everything grouped into movies when it comes to videos - i would like to be able to group videos into mine, my daughters etc and give levels of access  - <em>update</em> - found if i go to movies/source/localnetwork i can see them and do a "recognize" to find title and put in movies or tvshow.  neat.</li>
+<li>would like to use my witopia vpn connection from the uk so i can watch hulu content but not sure way to go about it easily</li>
+<li>converted some movies but never shows them in movies because does not know about them - how do i get to them?</li>
+<li>had lots of error 5, 10 and 11 on the way in.   had to remove the userdata folder totally and login/password again cleared it (thanx for quick tip)</li>
+<li>tried torrents - works great and loads of public torrents with lots of genres (sizemore you'll love this)</li>
+<li>tried 720p matroski containers <a href="http://en.wikipedia.org/wiki/HD_DVD" title="HD DVD" rel="wikipedia" class="zem_slink">HD</a> movies and they were sharp as a knife but the framerate (decoding) not quite right</li>
+<li>menus can get slower and if <a class="autolink" href="http://me.dm/link/hd">HD</a> playing really really slow down - pausing the movie is best option i think instead of letting it play in background would like to get back to menu i was last using easily</li>
+<li>not had success with getting to see my mac pro upstairs but could be something really stupid with sharing/firewall - need to look at</li>
+<li>ssh/ftp copy of movies to device good when wired - seems to crap out when wifi and big 4g+ files (but that could be wifi/networking thing here)</li>
+<li>think the social stuff should be more in your face (an option to like accept stuff when it comes in or soft fade top right or something)</li>
+<li>wish menus were a bit snappier</li>
+<li>not tried podcast support yet.  must give that a shot</li>
+<li>hmmm, i wonder what the seesmic public <a href="http://en.wikipedia.org/wiki/RSS" title="RSS" rel="wikipedia" class="zem_slink">rss feed</a> looks like on this - a custom plugin for seesmic playback would be awesome</li>
+<li>in fact support for lots of video platforms would be good, i can imagine <a href="http://ustream.tv" title="Ustream.tv" rel="homepage" class="zem_slink">ustream.tv</a> and <a href="http://www.blogtv.com/" title="blogTV.com" rel="homepage" class="zem_slink">blogtv.com</a> looking pretty awesome intergrated.</li>
+<li>website feature i would like is for people to make playlists of content you can send to your friends to watch as a sort of tv guide for an evening on subjects like a <a href="http://google.com" title="Google Search" rel="homepage" class="zem_slink">google search</a> but with many research materials put together.   that would be nice use of a social push</li>
+<li>had a few problems with the friends finding on the backend of the boxee.tv website.</li>
+<li>uploaded some peppa pig <a href="http://en.wikipedia.org/wiki/Audio_Video_Interleave" title="Audio Video Interleave" rel="wikipedia" class="zem_slink">.avi</a> (for ella of course!) to boxee movies they did not get noticed.   converting them to .mp4 with visualhub and trying again</li>
+</ul>
+
+
+
+<p>As i thought and got the confirmation back from boxee - the atv (appletv) is underpowered when it comes to trying to decode 720p <a href="http://en.wikipedia.org/wiki/Matroska" title="Matroska" rel="wikipedia" class="zem_slink">.mkv</a> <a class="autolink" href="http://me.dm/link/hd">HD</a> containers which is a real shame.   I was hoping that i had a really good allround use for my appletv - it is not boxee fault of course but now my thoughts are shifting how to get the best out of a <a class="autolink" href="http://medm.rezpondr.com">media</a> center like boxee.</p>
+
+<p>I think possibly keep the appletv for rss feeds + internet webmedia + torrents and get a mac mini with an external <a class="autolink" href="http://me.dm/link/hd">hd</a> for boxee - that way i know that <a class="autolink" href="http://me.dm/link/hd">HD</a> 720p (maybe more with right cpu) would not be a problem and i could have the external <a class="autolink" href="http://me.dm/link/hd">hd</a> on the network too to feed both the appletv and macmini - maybe one upstairs.     After speaking with one of the guys at boxee they have a mac mini and it plays .mkv 1080p not a problem so it looks like the mac mini is the route for me to take.</p>
+
+<p>Expecting boxee to release a big update in december and i hope it tweaks the performance side of things.    I was thinking that some kind of management app for programs and torrents on the iphone would be very useful if they could code it as well.    Or even giving you progress on your torrents -  i remember using a php/web script for adding torrents and checking on downloads for utorrent on the pc.    Not sure if there is the same for the mac yet but i do know utorrent is coming to mac.</p>
+
+<p>Would love to setup a meeting with boxee about where they could take this system too.    I know a man with some very good ideas for this arena and together i think they could really do something amazing.    I could do with a little trip to nyc for december anyway to catch up with some friends.    Or maybe jan for my birthday.</p>
+
+<fieldset class="zemanta-related"><legend class="zemanta-related-title">Related articles by Zemanta</legend><ul class="zemanta-article-ul"><li class="zemanta-article-ul-li"><a href="http://www.readwriteweb.com/archives/boxee_raises_4_million_for_media_center.php">Boxee Raises $4 Million for Open-Source Media Center</a></li><li class="zemanta-article-ul-li"><a href="http://howto.wired.com/wiki/Hack_Your_Apple_TV_With_Boxee">How to Hack Your Apple TV With Boxee</a></li><li class="zemanta-article-ul-li"><a href="http://www.computerworld.com/action/article.do?command=viewArticleBasic&amp;articleId=9082338&amp;source=rss_topic122">Google takes down open-source project after <span class="caps">DMCA </span>complaint</a></li><li class="zemanta-article-ul-li"><a href="http://www.beet.tv/2008/10/new-boxee-patch.html">New Boxee Patch Jailbreaks Apple TV</a></li><li class="zemanta-article-ul-li"><a href="http://www.infoworld.com/article/08/05/05/Google-takes-down-open-source-project-after-DMCA-complaint_1.html?source=rss&amp;url=http://www.infoworld.com/article/08/05/05/Google-takes-down-open-source-project-after-DMCA-complaint_1.html">Google takes down open-source project after <span class="caps">DMCA </span>complaint</a></li><li class="zemanta-article-ul-li"><a href="http://www.inquisitr.com/8809/boxee-takes-4-millon/">Boxee takes $4 millon</a></li><li class="zemanta-article-ul-li"><a href="http://ostatic.com/177028-blog/boxee-media-center-app-gets-4-million-in-funding">Boxee Media Center App Gets $4 Million in Funding</a></li></ul></fieldset>
+
+
+<div style="margin-top: 10px; height: 15px;" class="zemanta-pixie"><a class="zemanta-pixie-a" href="http://reblog.zemanta.com/zemified/d667abe7-ea34-42d4-b482-5fb659651253/" title="Zemified by Zemanta"><img style="border: medium none ; float: right;" class="zemanta-pixie-img" src="http://img.zemanta.com/reblog_b.png?x-id=d667abe7-ea34-42d4-b482-5fb659651253" alt="Reblog this post [with Zemanta]" /></a></div>
+* ]]>
+    </content>
+</entry>
+
+<entry>
+    <title>The ammobox finally in transit.   Amplified we go!</title>
+    <link rel="alternate" type="text/html" href="http://me.dm/blog/2008/11/the-ammobox-finally-in-transit.php" />
+    <id>tag:me.dm,2008:/blog//1.260</id>
+
+    <published>2008-11-14T12:00:00Z</published>
+    <updated>2008-11-14T13:41:26Z</updated>
+
+    <summary> So theammobox project (an box of camera/microphone equipment originally sponsored by blogtv for podcampuk) is finally out of the loft and ready for action. We are shipping it to london next week for testing for the network of networks,...</summary>
+    <author>
+        <name>i haz</name>
+        <uri>http://me.dm</uri>
+    </author>
+    
+        <category term="bambuser" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="hardware" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="mobile" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="mobilebroadcasting" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="qik" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="socialmedia" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="videoblogging" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="ammobox" label="ammobox" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="cameras" label="cameras" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="streaming" label="streaming" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="videoblogging" label="videoblogging" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="vlogging" label="vlogging" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-US" xml:base="http://me.dm/blog/">
+        <![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="ammo.jpg" src="http://me.dm/blog/ammo.jpg" width="650" height="140" class="mt-image-none" style="" /></span></p>
+
+<p>So theammobox project (an box of camera/microphone equipment originally sponsored by blogtv for podcampuk) is finally out of the loft and ready for action.    We are shipping it to london next week for testing for the network of networks, <a class="autolink" href="http://www.amplified08.com">amplified08</a> on the 27th of November.   Looks to be a fun day and we are hoping that as long as the internet/network can hold up to it and ports are unblocked that we can stream from the four rooms. </p>]]>
+        <![CDATA[<p>We are busy busy with the eventca.st theme (<a class="autolink" href="http://rezpondr.com">rezpondr</a> first licensed copy for <a class="autolink" href="http://twitter.com/sleepydog">sleepydog</a>) and we will have that up and running next week.    We urge people that are going to the event to fill in the simple form below so we can track your <a class="autolink" href="http://medm.rezpondr.com">media</a> that you take while at the event.     We will then auto populate the event with your content and ours.</p>
+
+<p><a href="http://me.dm/link/invites">http://me.dm/link/invites</a></p>
+
+<p>In the meantime below you will find a link to a movie regarding the ammobox equipment and concept that i had back earlier this year.    The box has not really been used yet, a few concerns regarding sending around europe, insurance and shipping always delayed the idea.   Hopefully it can start to gain some more traction now and collectively we can think of a way to get this started.</p>
+
+<p><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/EkGi2TYevcA&amp;hl=en&amp;fs=1"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/EkGi2TYevcA&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></embed></object></p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>the nokia e63 pre-production phone</title>
+    <link rel="alternate" type="text/html" href="http://me.dm/blog/2008/11/the-nokia-e63-pre-production-p.php" />
+    <id>tag:me.dm,2008:/blog//1.259</id>
+
+    <published>2008-11-11T12:29:17Z</published>
+    <updated>2008-11-12T21:08:21Z</updated>
+
+    <summary> So had a little surprise this morning in the post when a courier dropped of a little black box, inside the nokia e63 (which looks exactly like the e71 but plastic) with a cable, charger and the phone. a...</summary>
+    <author>
+        <name>i haz</name>
+        <uri>http://me.dm</uri>
+    </author>
+    
+    <category term="battery" label="Battery" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="mobile" label="Mobile" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="mobilephone" label="Mobile phone" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="nokia" label="Nokia" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="nokiae71" label="Nokia E71" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="operatingsystem" label="Operating system" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="symbian" label="Symbian" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="symbianos" label="Symbian OS" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-US" xml:base="http://me.dm/blog/">
+        <![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="e63.jpg" src="http://me.dm/blog/e63.jpg" width="650" height="140" class="mt-image-none" style="" /></span></p>
+
+<p>So had a little surprise this morning in the post when a courier dropped of a little black box,  inside the nokia e63 (which looks exactly like the e71 but plastic) with a cable, charger and the phone.   a pre-production version of the phone.  neat!  - thank you to donna from womworld (i swear that women works harder than anyone else there!) for making this happen and sending one out to me.</p>]]>
+        <![CDATA[<p>So from first reactions it has been styled in the same way as the <a href="http://en.wikipedia.org/wiki/Nokia_E71" title="Nokia E71" rel="wikipedia" class="zem_slink">nokia e71</a> - not a bad thing you have to know - i quite liked that <a href="http://en.wikipedia.org/wiki/Mobile_phone" title="Mobile phone" rel="wikipedia" class="zem_slink">phone</a> even if it did have a bit of the "over the top pimpage of chrome and shiny shiny backplate bring planes closer if stranded on an island" look to it.    This time around we have a red dulled metallic look - i like it but it reminds me of those cheap imitation cases you can get for your old skool nokia off <a href="http://www.ebay.com/" title="EBay" rel="homepage" class="zem_slink">ebay.</a>    I still sorta like it.</p>
+
+<p>The display is lovely on this thing - same as the e71 and i like the theme a bit better as it matches the colour - i know, trivial <a href="http://culturedcode.com/things/" title="Things (application)" rel="homepage" class="zem_slink">things</a> but first reaction things all the same.    After trying the keyboard i know it would be one i could get on with and use given more time.   As for the phone for a replacement day to day - nope, never gonna happen the iphone for my social searching wins hands down for ease of use.    As a backup phone because the <a href="http://en.wikipedia.org/wiki/Battery_%28electricity%29" title="Battery (electricity)" rel="wikipedia" class="zem_slink">battery life</a> is probably amazing, absolutely.    </p>
+
+<p>Then i started to get excited because the nokia e71 had hspda (3.5g) and this low priced nokia would be a good backup phone - i would not have to spend £400 on an unlocked n85 to get that feature and you know that 2.0 megapixel camera would be enough for qik! - joy, i could have it in this stripped down version of the e71 right? - wrong.   It is not on here.   At all.   Bummer.</p>
+
+<p>The thing i do like about it, up to 18 days of standby.  What? - come again, 18 <span class="caps">DAYS</span>? - sweet, that is almost true to the nokia form of phones from old, have they fixed the sapping screens or tweaked the <a href="http://www.symbian.com" title="Symbian" rel="homepage" class="zem_slink">symbian</a> (getting on a bit os) <a href="http://en.wikipedia.org/wiki/Operating_system" title="Operating system" rel="wikipedia" class="zem_slink">operating system</a> - nope, they added to landfill and put in a massive battery.    I'm not dissing nokia here i'm just trying to work out who this phone is aimed at.    Thankfully it does have wifi so you could still get <strong>some</strong> qik action on if you have a wifi signal or portable hotspot and another saving grace is a2dp stereo <a href="http://www.chrishambly.com" title="✓Chris Hambly" rel="blog" class="zem_slink">audio</a> for you bluetooth <a href="http://en.wikipedia.org/wiki/Handsfree" title="Handsfree" rel="wikipedia" class="zem_slink">handsfree</a> people.</p>
+
+<p>I'll be interested in the pricing point of this phone when it comes out for a secondary phone for just phone calls (remember those) it would be perfect for that, my current backup phone from the iphone is the n95 but it is looking very old now and due an upgrade in the form of that n85 that just got released a few days ago.   Gotta get me some oled love.</p>
+
+<p>I'll be updating this blog post as i use it but i wanted to get something out today seeing as the phone was officially launched today and i thought it deserved to get some press.   I'll be testing <a class="autolink" href="http://bambuser.com/channel/philcampbell">bambuser</a> on it (because the new version is supposed to be good at lower rates that hspda) and i'll let you know how i get on.</p>
+
+<p><span class="mt-enclosure mt-enclosure-file" style="display: inline;"><a href="http://me.dm/blog/Nokia%20E63%20datasheet.pdf">Nokia <span class="caps">E63 </span>datasheet.pdf</a></span></p>
+
+<fieldset class="zemanta-related"><legend class="zemanta-related-title">Related articles by Zemanta</legend><ul class="zemanta-article-ul"><li class="zemanta-article-ul-li"><a href="http://www.engadget.com/2008/11/12/nokias-e63-breaks-free-for-mass-market-consumption/">Nokia's <span class="caps">E63 </span>breaks free for mass market consumption</a></li><li class="zemanta-article-ul-li"><a href="http://mobigasmic.blogspot.com/2008/08/windows-mobile-girl-handles-nokia-e71.html">A Windows Mobile Girl handles the Nokia <span class="caps">E71</span></a></li><li class="zemanta-article-ul-li"><a href="http://www.ghacks.net/2008/10/04/symbian-os-94-announced/">Symbian OS 9.4 Announced</a></li><li class="zemanta-article-ul-li"><a href="http://news.cnet.com/8301-1035_3-10032536-94.html?part=rss&amp;subj=news">Samsung agrees to sell Symbian stake to Nokia</a></li><li class="zemanta-article-ul-li"><a href="http://www.phonemag.com/nokia-n96-reviewed-very-capable-but-still-showing-pre-production-flaws-032001.php">Nokia <span class="caps">N96 </span>reviewed: very capable but still showing pre-production flaws</a></li></ul></fieldset>
+
+<div style="margin-top: 10px; height: 15px;" class="zemanta-pixie"><a class="zemanta-pixie-a" href="http://reblog.zemanta.com/zemified/edd7857f-61e7-4c19-9ab2-862961f096d4/" title="Zemified by Zemanta"><img style="border: medium none ; float: right;" class="zemanta-pixie-img" src="http://img.zemanta.com/reblog_b.png?x-id=edd7857f-61e7-4c19-9ab2-862961f096d4" alt="Reblog this post [with Zemanta]" /></a></div>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Winning Business 08 - Drayton Manor Park</title>
+    <link rel="alternate" type="text/html" href="http://me.dm/blog/2008/11/winning-business-08---drayton.php" />
+    <id>tag:me.dm,2008:/blog//1.257</id>
+
+    <published>2008-11-11T09:00:00Z</published>
+    <updated>2008-12-01T20:58:51Z</updated>
+
+    <summary> So to break the cabin fever of the last few days (i&apos;ve done a lot actually as just had my head down) i thought i would head out tomorrow to Drayton Manor Park for half a day and see...</summary>
+    <author>
+        <name>i haz</name>
+        <uri>http://me.dm</uri>
+    </author>
+    
+    <category term="cabinfever" label="Cabin fever" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="draytonmanor" label="Drayton Manor" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="draytonmanorthemepark" label="Drayton Manor Theme Park" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="family" label="Family" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="flipvideo" label="Flip Video" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="grandparent" label="Grandparent" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="holiday" label="holiday" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="travelandtourism" label="Travel and Tourism" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-US" xml:base="http://me.dm/blog/">
+        <![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="business.jpg" src="http://me.dm/blog/business.jpg" class="mt-image-none" style="" width="650" height="140" /></span></p>
+
+<p>So to break the <a href="http://en.wikipedia.org/wiki/Cabin_fever" title="Cabin fever" rel="wikipedia" class="zem_slink">cabin fever</a> of the last few days (i've done a lot actually as just had my head down) i thought i would head out tomorrow to <a href="http://maps.google.com/maps?ll=52.6108333333,-1.71333333333&amp;spn=0.01,0.01&amp;q=52.6108333333,-1.71333333333%20%28Drayton%20Manor%20Theme%20Park%29&amp;t=h" title="Drayton Manor Theme Park" rel="geolocation" class="zem_slink">Drayton Manor Park</a> for half a day and see what the winning business exhibition would be like at drayton manor - it's just up the road for me so i thought i would drop in, take the d40 with the 50mm and the <a href="http://en.wikipedia.org/wiki/Flip_Video" title="Flip Video" rel="wikipedia" class="zem_slink">flip ultra</a> and see what people are doing out there in the midlands - looking at <a class="autolink" href="http://medm.rezpondr.com">media</a> companies really and to see if they are up on the times and are doing any social media at all.</p>]]>
+        <![CDATA[<p>Winning Business is back for 2008 with more opportunities for exhibiting, networking and seminars - This year's Winning Business exhibition is set to be the biggest yet. With 80<br />
+exhibition stands, 14 practical and professional seminars, 2 master classes and a wide range of networking opportunities on hand to attend.     I found out today that there is internet access on the exhibition floor so i'll be trying to get as many interviews on qik as possible.    I'm looking forward to a making <a class="autolink" href="http://medm.rezpondr.com">media</a> day.    Btw, bit pricy at £15 but there you go. ..</p>
+
+<p><object width="490" height="450" align="middle"><param name="FlashVars" VALUE="ids=72157608970303947&amp;names=winning business 08&amp;userName=philcampbell&amp;userId=56188788@N00&amp;source=sets&amp;titles=on&amp;displayNotes=on&amp;thumbAutoHide=off&amp;imageSize=medium&amp;vAlign=top&amp;displayZoom=off&amp;vertOffset=0&amp;initialScale=off&amp;bgAlpha=80"></param><param name="PictoBrowser" value="http://www.db798.com/pictobrowser.swf"></param><param name="scale" value="noscale"></param><param name="bgcolor" value="#DDDDDD"></param><embed src="http://www.db798.com/pictobrowser.swf" FlashVars="ids=72157608970303947&amp;names=winning business 08&amp;userName=philcampbell&amp;userId=56188788@N00&amp;source=sets&amp;titles=on&amp;displayNotes=on&amp;thumbAutoHide=off&amp;imageSize=medium&amp;vAlign=top&amp;displayZoom=off&amp;vertOffset=0&amp;initialScale=off&amp;bgAlpha=80" loop="false" scale="noscale" bgcolor="#DDDDDD" width="490" height="450" name="PictoBrowser" align="middle"></embed></object></p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Installing Boxee on the Appletv (video)</title>
+    <link rel="alternate" type="text/html" href="http://me.dm/blog/2008/11/installing-boxee-on-the-applet.php" />
+    <id>tag:me.dm,2008:/blog//1.253</id>
+
+    <published>2008-11-10T14:51:39Z</published>
+    <updated>2008-11-10T15:27:00Z</updated>
+
+    <summary> I did a small video over on vimeo the other day using my flip showing the install process of jailbreaking you appletv for use with boxee, i thought i would share it so people can see that it is...</summary>
+    <author>
+        <name>i haz</name>
+        <uri>http://me.dm</uri>
+    </author>
+    
+    <category term="apple" label="Apple" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="appletv" label="AppleTV" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="boxee" label="boxee" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="macintosh" label="Macintosh" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="media" label="Media" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="mediacenter" label="Media center" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="opensource" label="OpenSource" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="xbmc" label="XBMC" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-US" xml:base="http://me.dm/blog/">
+        <![CDATA[<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><img alt="videotutor.jpg" src="http://me.dm/blog/videotutor.jpg" class="mt-image-none" style="" width="650" height="70" /></span></p>
+
+<p>I did a small video over on vimeo the other day using my flip showing the install process of jailbreaking you <a class="autolink" href="http://www.apple.com/appletv/">appletv</a> for use with boxee, i thought i would share it so people can see that it is a really easy thing to do.</p>
+
+<div style="margin-top: 10px; height: 15px;" class="zemanta-pixie"><a class="zemanta-pixie-a" href="http://reblog.zemanta.com/zemified/ca9300c5-c0d8-415c-ae9f-fb3cd5061ec5/" title="Zemified by Zemanta"><img style="border: medium none ; float: right;" class="zemanta-pixie-img" src="http://img.zemanta.com/reblog_b.png?x-id=ca9300c5-c0d8-415c-ae9f-fb3cd5061ec5" alt="Reblog this post [with Zemanta]" /></a></div>]]>
+        <![CDATA[<p><object width="650" height="366"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=2194615&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=00ADEF&amp;fullscreen=1"><embed src="http://vimeo.com/moogaloop.swf?clip_id=2194615&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=1&amp;color=00ADEF&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="650" height="366"></embed></object><br /><a href="http://vimeo.com/2194615">Installing Boxee on the Apple TV</a> from <a href="http://vimeo.com/vlogz">Philip Campbell</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+
+<fieldset class="zemanta-related"><legend class="zemanta-related-title">Related articles by Zemanta</legend><ul class="zemanta-article-ul"><li class="zemanta-article-ul-li"><a href="http://www.downloadsquad.com/2008/10/20/boxee-media-center-adds-hulu-support/">Boxee media center adds Hulu support</a></li><li class="zemanta-article-ul-li"><a href="http://cultofmac.com/cult-of-mac-readers-become-a-boxee-alpha-tester/3573">Cult of Mac Readers - Become a Boxee Alpha Tester!</a></li><li class="zemanta-article-ul-li"><a href="http://me.dm/blog/2008/10/the-way-boxee-just-got-bought.php">The way boxee just got bought. boxee appletv ftw!</a></li><li class="zemanta-article-ul-li"><a href="http://blog.makezine.com/archive/2008/11/the_end_of_tv_boxee_apple.html?CMP=OTC-0D6B48984890">The end of TV: Boxee + Apple TV + Hulu</a></li><li class="zemanta-article-ul-li"><a href="http://howto.wired.com/wiki/Hack_Your_Apple_TV_With_Boxee">How to Hack Your Apple TV With Boxee</a></li><li class="zemanta-article-ul-li"><a href="http://itsjustjustin.com/archives/2008/08/09/front-row-to-play-second-fiddle/">Front Row to Play Second Fiddle</a></li><li class="zemanta-article-ul-li"><a href="http://www.milkandcookies.com/link/128848/detail/">Upgrading the Apple TV to Run Boxee / Xbmc</a></li></ul></fieldset>
+
+<div style="margin-top: 10px; height: 15px;" class="zemanta-pixie"><a class="zemanta-pixie-a" href="http://reblog.zemanta.com/zemified/2e5e7c54-497a-479c-a01a-9d945d0d4eb6/" title="Zemified by Zemanta"><img style="border: medium none ; float: right;" class="zemanta-pixie-img" src="http://img.zemanta.com/reblog_b.png?x-id=2e5e7c54-497a-479c-a01a-9d945d0d4eb6" alt="Reblog this post [with Zemanta]" /></a></div>]]>
+    </content>
+</entry>
+
+</feed>

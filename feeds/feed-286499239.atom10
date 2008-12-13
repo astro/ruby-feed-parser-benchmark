@@ -1,0 +1,1077 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+   <channel>
+      <atom:link href="http://feeds.feedburner.com/codinghorror/" rel="self" type="application/rss+xml" />
+      <title>Coding Horror</title>
+      <link>http://www.codinghorror.com/blog/</link>
+      <description>programming and human factors - Jeff Atwood</description>
+      <language>en-us</language>
+      <lastBuildDate>Wed, 10 Dec 2008 23:59:59 -0800</lastBuildDate>
+      <pubDate>Wed, 10 Dec 2008 23:59:59 -0800</pubDate>
+      <generator>http://www.movabletype.org/?v=2.661</generator>
+      <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+      <image>
+      <title>Coding Horror</title>
+      <url>http://www.codinghorror.com/blog/images/coding-horror-official-logo-small.png</url>
+      <width>100</width>
+      <height>91</height>
+      <description>Logo image used with permission of the author. (c) 1993 Steven C. McConnell. All Rights Reserved.</description>
+      <link>http://www.codinghorror.com/blog/</link>
+      </image>
+      <xhtml:meta xmlns:xhtml="http://www.w3.org/1999/xhtml" name="robots" content="noindex" /><item>
+         <title>My Scaling Hero</title>
+         <dc:creator>Jeff Atwood</dc:creator>
+         <link>http://www.codinghorror.com/blog/archives/001195.html</link>
+         <description><![CDATA[<p>
+Inspiration for <a href="http://stackoverflow.com/">Stack Overflow</a> occasionally comes from the unlikeliest places. Have you ever heard of <a href="http://www.nytimes.com/2008/01/13/business/13digi.html?ex=1357966800&en=bfde0f1a6ec77632&ei=5090&partner=rssuserland&emc=rss&pagewanted=all">the dating website, Plenty of Fish?</a>
+<blockquote>
+<b>Markus Frind built the Plenty of Fish Web site in 2003 as nothing more than an exercise to help teach himself a new programming language, ASP.NET.</b> The site first became popular among English-speaking Canadians. Popularity among online daters in many United States cities followed more recently, and with minimal spending on advertising the site. According to data from comScore Media Metrix for November 2007, Plenty of Fish had 1.4 million unique visitors in the United States. In December, Mr. Frind said, the site served up 1.2 billion page views, and page views have soared 20 percent since Dec. 26.
+</blockquote>
+<p>
+The actual <a href="http://www.plentyoffish.com/">plentyoffish.com</a> site design, although it has improved (believe it or not) since the last time I looked, is almost horrifyingly bad; it literally looks like a high school student's first website programming attempt. But <i>it doesn't matter</i>. The site is a resounding success with users, to the point that it is almost completely user-run:
+<p>
+<blockquote>
+No one heads to Plenty of Fish for the customer service, which is all but nonexistent. The company does not need a support structure to handle members' subscription and billing issues because the service is entirely advertising-based. Its tagline is: "100 percent free. Put away your credit card." For hand-holding, users must rely on fellow members, whose advice is found in online forums. The Dating & Love Advice category lists more than 320,000 posts, making up in sheer quantity what it lacks in a soothing live presence available by phone.
+</blockquote>
+<p>
+Granted, comparing a dating site to other online properties is kind of unfair. As I mentioned in <a href="http://www.codinghorror.com/blog/archives/000579.html">an earlier post</a>, the most sustainible and enduring business models either get you laid, or get you paid -- and the more directly the better. Jamie Zawinski's classic <a href="http://www.jwz.org/doc/groupware.html">Groupware Bad</a> article covers the same ground:
+<p>
+<blockquote>
+So I said, narrow the focus. Your "use case" should be, there's a 22 year old college student living in the dorms. How will this software get him laid? 
+</blockquote>
+<p>
+It's pretty clear which axis of human needs Plenty of Fish tends to. It's already working with <a href="http://www.codinghorror.com/blog/archives/000127.html">way more cheese</a> than most software developers will ever have.
+<p>
+OK, so Markus Frind singlehandedly built a massively popular free dating site that is almost entirely community run. Big deal. But what makes it <i>especially</i> incredible is that he <a href="http://highscalability.com/plentyoffish-architecture">does it all on a handful of servers</a>:
+<p>
+<blockquote>
+<ul>
+<li>1.2 billion page views per month, 500,000 average unique logins per day
+<li>30+ million hits per day, 500-600 per second
+<li>45 million visitors per month
+<li>top 30 site in the US, top 10 in Canada, top 30 in the UK
+<li>2 load balanced Windows Server 2003 x64 web servers with 2 Quad Core 2.66Ghz CPUs, 8 GB RAM, 2 hard drives
+<li>3 database servers. No data on their configuration
+<li>Approaching 64,000 simultaneous connections and 2 million page views per hour
+<li>Internet connection is a 1 Gbps line, 200 Mbps is used
+<li>1 TB per day serving 171 million images through Akamai
+<li>6 TB storage array to handle millions of full sized images uploaded every month to the site
+</ul>
+</blockquote>
+<p>
+These traffic and size numbers are nothing short of astonishing. <b>He's accomplished all this on his own, using only five servers with the same Microsoft and ASP.NET stack we use</b>. This gives me great hope for scaling Stack Overflow without needing a lot of employees or server hardware. I'm not sure we'll ever reach those kinds of traffic levels.
+<p>
+That said, there are some dark clouds on the horizon; in a recent blog post, Markus noted that <a href="http://plentyoffish.wordpress.com/2008/11/13/monetization-free-verse-paid/">their free business model doesn't always scale as well as the hardware</a>:
+<p>
+<blockquote>
+The problem with free is that every time you double the size of your database the cost of maintaining the site grows 6 fold. I really underestimated how much resources it would take, I have one database table now that exceeds  3 billion records. The bigger you get as a free site the less money you make per visit and the more it costs to service a visit.
+</blockquote>
+<p>
+Of course, any resemblance between a free dating site and a question-and-answer site for programmers is <a href="http://www.codinghorror.com/blog/archives/000586.html">purely coincidental</a>, I'm sure. 
+<p>
+<blockquote>
+In the early years of programming, a program was regarded as the private property of the programmer. One would no more think of reading a colleague's program unbidden than of picking up a love letter and reading it. <b>This is essentially what a program was, a love letter from the programmer to the hardware, full of the intimate details known only to partners in an affair.</b> Consequently, programs became larded with the pet names and verbal shorthand so popular with lovers who live in the blissful abstraction that assumes that theirs is the only existence in the universe. Such programs are unintelligible to those outside the partnership.
+</blockquote>
+<p>
+Maybe Stack Overflow is also built on <a href="http://www.youtube.com/watch?v=Xe1TZaElTAs">love, internet style</a>. Here's hoping that scales as well as Plenty of Fish has.
+<p>
+<table><tr><td class="sidead">
+[advertisement] <a href="http://lighthouseapp.com/?utm_source=codinghorror&utm_medium=blogfooter&utm_campaign=codinghorror-nov08" rel="nofollow">Lighthouse</a> &mdash; taking the suck out of issue tracking.  Developer API. Email integration. Github integration.  Used by thousands of developers and open source projects including Rails, MooTools, RSpec, and Sproutcore.  Free for Open Source projects.</td></tr>
+</table>
+<p>]]></description>         
+         <guid>http://www.codinghorror.com/blog/archives/001195.html</guid>
+         <pubDate>Wed, 10 Dec 2008 23:59:59 -0800</pubDate>
+      </item>
+      <item>
+         <title>Our Hacker Odyssey</title>
+         <dc:creator>Jeff Atwood</dc:creator>
+         <link>http://www.codinghorror.com/blog/archives/001194.html</link>
+         <description><![CDATA[<p>
+Although I've never been more than a bush league hacker (at best), I was always fascinated with the tales from the infamous hacker zine <a href="http://en.wikipedia.org/wiki/2600_The_Hacker_Quarterly">2600</a>. I'd occasionally discover scanned issues in BBS ASCII archives, <a href="http://www.textfiles.com/hacking/2600-9-3.txt">like this one</a>, and spend hours puzzling over the techniques and information it contained.
+<p>
+I was excited to learn that a 2600 compilation was released earlier this year: <a href="http://www.amazon.com/dp/0470294191/?tag=codinghorror-20">The Best of 2600: A Hacker Odyssey</a>. Although a lot of the information is hopelessly out of date and/or obsolete now, there's <a href="http://www.codinghorror.com/blog/archives/000852.html">a timeless quality to the social engineering techniques</a>, and at its core, the best articles are just <b>plain good storytelling combined with technical writing skills</b>.
+<p>
+The introduction captures, I think, the essence of 2600 -- the adventures of young adults experimenting with computers.
+<p>
+<blockquote>
+One of the true joys of the hacker world is the wealth of firsthand accounts that get shared throughout the community. Everyone has a story and many hackers have a whole treasure trove of them. This is what comes from being an inquisitive bunch with a tendency to probe and explore, all the while asking entirely too many questions. The rest of the world simply wasn't prepared for this sort of thing, a fact that hackers used to their advantage time and again.
+<p>
+<a href="http://www.amazon.com/dp/0470294191/?tag=codinghorror-20"><img alt="The Best of 2600: a Hacker Odyssey" src="http://www.codinghorror.com/blog/images/the-best-of-2600-a-hacker-odyssey.jpg" width="380" height="500" border="0" /></a>
+<p>
+In the hacker world, you can have adventures and obtain information on a whole variety of levels, using such methods as social engineering, trashing, or simply communicating and meeting up with each other. All of these methods continue to work to this day. Back in the 1980s, excitement via a keyboard was a fairly new concept but it was catching on pretty fast as personal computers started to become commonplace. It seemed incredible (and still does to me) that you could simply stick your telephone into an acoustic modem, type a few letters on a keyboard, and somehow be communicating with someone in an entirely different part of the country or even another part of the globe.
+<p>
+Of course, hackers had already been having all sorts of adventures on telephones for years before this, whether it was through boxing, teleconferencing, or just randomly calling people. And there were the occasional "real-life" adventures, something hackers were certainly not averse to, contrary to the usual stereotypes of pasty-faced teenagers who feared going outside and interacting with the world. The point is that whenever you got a bunch of bored, curious, and daring individuals together, it didn't really matter what the setting was. On the screen, over the phone, or in real life, there was fun to be had and plenty to be learned in the process.
+</blockquote>
+<p>
+The <a href="http://www.2600.com/">mighty 2600 empire</a> soldiers on, of course -- the latest issue is <a href="http://store.2600.com/autumn2008.html">Autumn 2008</a>. This handpicked best of collection works as both historical archive and introduction. It's a great starting point, and a book I continue to take with me on trips for background reading. It rarely disappoints.
+<p>
+If you believe, like I do, in the value of <a href="http://www.codinghorror.com/blog/archives/000569.html">learning through cartoons</a>, then Ed Piskor's Wizzywig graphic novels are excellent companion pieces to the 2600 compilation.
+<p>
+<a href="http://www.edpiskor.com/volume2/10.html"><img alt="Wizzywig #2: Hacker, page 10 panel" src="http://www.codinghorror.com/blog/images/wizzywig-2-page-10.png" width="556" height="559" border="0" /></a>
+<p>
+So far there's <a href="http://www.edpiskor.com/hacker.html">Wizzywig Volume 1: Phreak</a> and <a href="http://www.edpiskor.com/hacker2.html">Wizzywig Volume 2: Hacker</a>, with a third book on the way. You can read the first half of each book online; if you like what you see, Ed <a href="http://www.edpiskor.com/store.html">sells the books directly on his store</a>. It's a little eerie how accurately he captured the ambiance of that era for me, all those fumbling, exploratory sessions with nascent online community through <a href="http://www.codinghorror.com/blog/archives/000599.html">modems</a>, local bulletin boards, and user group meetings.
+<p>
+It's fun to revisit the origins of my hacker odyssey, but I feel like we're <a href="http://www.codinghorror.com/blog/archives/000718.html">nowhere near the end of it yet</a>.
+<p>
+How about you?
+<p>
+<table>
+<tr><td class="sidead">
+[advertisement] Issue tracking that's all win with no fail.  <a href="http://lighthouseapp.com/tour?utm_source=codinghorror&utm_medium=blogfooter&utm_campaign=codinghorror-nov08-fail">Lighthouse</a> takes the suck out of issue tracking. Simple interface. Works with your source control. Works with your BlackBerry. Features that just work. <a href="http://lighthouseapp.com/tour?utm_source=codinghorror&utm_medium=blogfooter&utm_campaign=codinghorror-nov08-fail">Plans start at $10/mo.</a>
+</td></tr>
+</table>
+<p>]]></description>         
+         <guid>http://www.codinghorror.com/blog/archives/001194.html</guid>
+         <pubDate>Sun, 07 Dec 2008 23:59:59 -0800</pubDate>
+      </item>
+      <item>
+         <title>Blu-Ray: Is It Time?</title>
+         <dc:creator>Jeff Atwood</dc:creator>
+         <link>http://www.codinghorror.com/blog/archives/001193.html</link>
+         <description><![CDATA[<p>
+I've been monitoring the progress of high-definition video playback on the PC for quite a while now:
+<p>
+<ul>
+<li><a href="http://www.codinghorror.com/blog/archives/000747.html">Next-Gen DVD: Are Those Additional Pixels Worth Your Money?</a>
+<li><a href="http://www.codinghorror.com/blog/archives/000746.html">High-Definition Video on the PC</a>
+<li><a href="http://www.codinghorror.com/blog/archives/000758.html">Is Your PC Capable of Hi-Def?</a>
+<li><a href="http://www.codinghorror.com/blog/archives/000756.html">Will Your Next Computer Monitor Be a HDTV?</a>
+</ul>
+<p>
+It's been almost two years since I wrote that series, and I think we're <b>dangerously close to viable high definition video playback on typical, mainstream PCs</b>. One metric I follow closely is the price of the hardware, and OEM Blu-Ray drives are <a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16827136154">now only $99 shipped</a>.
+<p>
+<a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16827136154"><img alt="LG GGC-H20LK Blu-Ray HD-DVD combo drive" src="http://www.codinghorror.com/blog/images/blu-ray-hd-dvd-combo-drive.jpg" width="600" height="230" border="0" /></a>
+<p>
+This drive is a DVD burner, in addition to playing HD-DVDs, Blu-Ray, and obviously DVDs -- and it also has very positive customer reviews. I couldn't resist, so I bought one.
+<p>
+I have no need for a standalone Blu-Ray player, but a cursory look tells me those are down to <a href="http://www.anrdoezrs.net/click-2338938-10440897?url=http%3A%2F%2Fwww.newegg.com%2FProduct%2FProduct.aspx%3FItem%3DN82E16882103400%26nm_mc%3DAFC-C8Junction%26cm_mmc%3DAFC-C8Junction-_-Blu-Ray%2BPlayers-_-Panasonic-_-82103400&cjsku=N82E16882103400">around $250 for decent models</a>. And then of course there's always the <a href="http://www.amazon.com/dp/B001COU9I6/?tag=codinghorror-20">PlayStation 3 option</a>. 
+<p>
+It's a shame OS X and Vista don't natively support HD playback of any kind (although Vista does include some copy protection mechanisms specific to high-definition video playback, which was the <a href="http://www.cs.auckland.ac.nz/~pgut001/pubs/vista_cost.html">source of great hue and outrage</a>). When you pair this $99 drive with some third party playback software like PowerDVD HD or WinDVD HD, you're set.
+<p>
+I'm particularly interested in high definition PC playback because the <a href="http://www.codinghorror.com/blog/archives/001107.html">home theater PC I recently built</a> is more than capable:
+<p>
+<ul>
+<li>Built in HDMI out (on the motherboard)
+<li>Onboard video that <a href="http://techreport.com/articles.x/14261/9">supports H.264 acceleration</a>
+<li>A modern dual-core CPU
+</ul>
+<p>
+Also, I finally own a true 1920 x 1080 HDTV now -- yes, you can all stop making fun of me for using a creaky old brass and steam powered 852 x 480 EDTV -- so all the pieces are now in place for me to adopt Blu-Ray. I switched my <a href="http://www.netflix.com/Genre/Blu-ray/2444">Netflix account over to Blu-Ray</a> this morning.
+<p>
+I'm not quite a high definition video early adopter, but I'm still on the leading edge of the curve. <b>Funny how technology cycles repeat themselves.</b> I distinctly recall being an early adopter of DVDs back in 1998, almost exactly 10 years ago. The 720 x 480 resolution and Dolby Digital sound seemed so impressive back then. I remember marvelling at the fancy interactive menus on the Austin Powers DVD. Of course, DVD quality is <a href="http://www.codinghorror.com/blog/archives/000124.html">pretty pedestrian by today's standards</a>. We've <i>almost</i> gotten to the point where DVD-level video quality is available worldwide in a typical web browser, not necessarily <a href="http://www.codinghorror.com/blog/archives/000755.html">through YouTube</a>, but <a href="http://www.vimeo.com/highdef">through Vimeo</a> and other alternatives. 
+<p>
+With that in mind, I wonder how quaint Blu-Ray will seem in 2018?
+<p>
+<table>
+<tr><td class="sidead">
+[advertisement] Make the switch that counts. Ditch your bloated issue tracker for Lighthouse.  Start resolving bugs instead of fighting with more software that doesn&rsquo;t work. Oh yeah &mdash; and save thousands of dollars doing it <a href="http://lighthouseapp.com/tour?utm_source=codinghorror&utm_medium=blogfooter&utm_campaign=codinghorror-nov08-save" rel="nofollow">Learn how Lighthouse helps you complete milestones faster</a>.
+</td></tr>
+</table>
+<p>]]></description>         
+         <guid>http://www.codinghorror.com/blog/archives/001193.html</guid>
+         <pubDate>Thu, 04 Dec 2008 23:59:59 -0800</pubDate>
+      </item>
+      <item>
+         <title>The Problem With Logging</title>
+         <dc:creator>Jeff Atwood</dc:creator>
+         <link>http://www.codinghorror.com/blog/archives/001192.html</link>
+         <description><![CDATA[<p>
+A recent Stack Overflow post described <a href="http://stackoverflow.com/questions/153524/code-to-logging-ratio#153547">one programmer's logging style</a>. Here's what he logs:
+<p>
+<blockquote>
+<p><strong>INFO Level</strong></p>
+<ul>
+<li>The start and end of the method</li>
+<li>The start and end of any major loops</li>
+<li>The start of any major case/switch statements</li>
+</ul>
+<p><strong>DEBUG Level</strong></p>
+<ul>
+<li>Any parameters passed into the
+method</li>
+<li>Any row counts from result sets I retrieve</li>
+<li>Any datarows that may contain suspicious data when being passed down to the method </li>
+<li>Any "generated" file paths, connection strings, or other values that could get mungled up when being "pieced together" by the environment.</li>
+</ul>
+<p><strong>ERROR Level</strong></p>
+<ul>
+<li>Handled exceptions</li>
+<li>Invalid login attempts (if security is an issue)</li>
+<li>Bad data that I have intercepted forreporting</li>
+</ul>
+<p><strong>FATAL Level</strong></p>
+<ul>
+<li>Unhandled exceptions.</li>
+</ul>
+</blockquote>
+<p>
+I don't mean to single out <a href="http://www.dillieodigital.net/">the author</a> here, but this strikes me as a bit .. excessive.
+<p>
+Although I've never been a particularly big logger, myself, one of my teammates on Stack Overflow is. So when building Stack Overflow, we included <a href="http://logging.apache.org/log4net/index.html">log4net</a>, and logged a bunch of information at the various levels. I wasn't necessarily a big fan of the approach, but I figured what's the harm.
+<p>
+Logging does have a certain seductive charm. <b>Why not log as much as you can whenever you can?</b> Even if you're not planning to use it today, who knows, it might be useful for troubleshooting tomorrow. Heck, just log everything! What could it possibly hurt?
+<p>
+Oh, sure, logging seems harmless enough, but let me tell you, it can deal some <i>serious</i> hurt. We ran into a particularly nasty recursive logging bug:
+<p>
+<ul>
+<li>On thread #1, our code was doing Log (lock) / DB stuff (lock)
+<li>On thread #2, our code was doing DB stuff (lock) / log stuff (lock)
+</ul>
+<p>
+If these things happened close together enough under heavy load, this resulted in -- you guessed it -- a classic out-of-order deadlock scenario. I'm not sure you'd ever see it on a lightly loaded app, but on our website it happened about once a day on average.
+<p>
+I don't blame log4net for this, I blame our crappy code. We spent days troubleshooting these deadlocks by .. wait for it .. <b>adding more logging!</b> Which naturally made the problem worse and even harder to figure out. We eventually were forced to <a href="http://blogs.msdn.com/tess/archive/2008/05/21/debugdiag-1-1-or-windbg-which-one-should-i-use-and-how-do-i-gather-memory-dumps.aspx">take memory dumps</a> and use dump analysis tools. With the generous assistance of <a href="http://samuraiprogrammer.com/community/Default.aspx">Greg Varveris</a>, we were finally able to identify the culprit: our logging strategy. How ironic. And I mean <i>real</i> irony, <a href="http://www.youtube.com/watch?v=nT1TVSTkAXg">not the fake Alanis Morrissette kind</a>.
+<p>
+Although I am a strong believer in logging exceptions, I've never been a particularly big fan of logging in the general "let's log everything we possibly can" sense:
+<p>
+<ol>
+<li><b>Logging means more code</b>. If you're using a traditional logging framework like log4net, every logged event is at least one additional line of code. The more you log, the larger your code grows. This is a serious problem, because <a href="http://www.codinghorror.com/blog/archives/000878.html">code is the enemy</a>. Visible logging code is clutter -- <a href="http://www.codinghorror.com/blog/archives/001150.html">like excessive comments</a>, it actively obscures the code that's doing the real work in the application. <br/><br/>
+<li><b>Logging isn't free.</b> Most logging frameworks are fairly efficient, but they aren't infinitely fast. Every log row you write to disk has an overall performance cost on your application. This can also be tricky if you're dissecting complex objects to place them in the log; that takes additional time.<br/><br/>
+<li><b>If it's worth saving to a logfile, it's worth showing in the user interface</b>. This is the paradox: if the information you're logging is at all valuable, it deserves to be surfaced in the application itself, not buried in an anonymous logfile somewhere. Even if it's just for administrators. Logfiles are all too often where useful data goes to die, alone, unloved and ignored. <br/><br/>
+<li><b>The more you log, the less you can find.</b> Log enough things and eventually your logs are so noisy nobody can find anything. It's all too easy to bury yourself in an avalanche of log data. Heck, that's the default: any given computer is perfectly capable of generating more log data than any of us could possibly deal with in our lifetime. The hidden expense here isn't the logging, it's the brainpower needed to make sense of these giant logs. I don't care how awesome your log parsing tools are, nobody looks forward to mining a gigabyte of log files for useful diagnostic information. <br/><br/>
+<li><b>The logfile that cried Wolf.</b> Good luck getting everyone on your team to agree on the exact definitions of FATAL, ERROR, DEBUG, INFO, and whatever other logging levels you have defined. If you decide to log only the most heinous serial-killer mass-murderer type problems, evil has a lot less room to lurk in your logfiles -- and it'll be a heck of a lot less boring when you <i>do</i> look.
+</ol>
+<p>
+So <b>is logging a giant waste of time?</b> I'm sure some people will read about this far and draw that conclusion, no matter what else I write. I am not anti-logging. I am anti-<i>abusive</i>-logging. Like any other tool in your toolkit, when used properly and appropriately, it can help you create better programs. The problem with logging isn't the logging, per se -- it's the seductive OCD "just one more bit of data in the log" trap that programmers fall into when <i>implementing</i> logging. Logging gets a bad name because it's so often abused. It's a shame to end up with all this extra code generating volumes and volumes of logs that aren't helping anyone.
+<p>
+We've since removed all logging from Stack Overflow, relying exclusively on exception logging. Honestly, I don't miss it at all. I can't even think of a <i>single</i> time since then that I'd wished I'd had a giant verbose logfile to help me diagnose a problem.
+<p>
+When it comes to logging, the right answer is not "yes, always, and as much as possible." <b>Resist the tendency to log everything.</b> Start small and simple, logging only the most obvious and critical of errors. Add (or ideally, inject) more logging only as demonstrated by specific, verifiable needs.
+<p>
+If you aren't careful, those individual log entries, as wafer thin as they might be, have a disturbing tendency to make your logs <a href="http://www.youtube.com/results?search_query=mr+creosote">end up like the unfortunate Mr. Creosote</a>.
+<p>
+<table>
+<tr><td class="sidead">
+[advertisement] Tired of wrestling all day with JIRA? Lighthouse takes the suck out of issue tracking. All the features you need, none of the cruft to get in the way. <a href="http://lighthouseapp.com/jira?utm_source=codinghorror&utm_medium=blogfooter&utm_campaign=codinghorror-nov08-jira" rel="nofollow">Read 5 reasons Lighthouse helps you get more done than JIRA</a>.
+</td></tr>
+</table>
+<p>]]></description>         
+         <guid>http://www.codinghorror.com/blog/archives/001192.html</guid>
+         <pubDate>Wed, 03 Dec 2008 23:59:59 -0800</pubDate>
+      </item>
+      <item>
+         <title>Tending Your Software Garden</title>
+         <dc:creator>Jeff Atwood</dc:creator>
+         <link>http://www.codinghorror.com/blog/archives/000987.html</link>
+         <description><![CDATA[<p>
+Software: do you write it like a book, grow it like a plant, accrete it like a pearl, or construct it like a building? As Steve McConnell notes in <a href="http://www.amazon.com/exec/obidos/ASIN/0735619670/codinghorror-20">Code Complete 2</a>, there's no shortage of <b>software development metaphors</b>:
+<p>
+<blockquote>
+A confusing abundance of metaphors has grown up around software development. David Gries says <a href="http://books.google.com/books?id=vv5pot-ySsEC&dq=%22david+gries%22+software+science&pg=PP1&ots=YtjTrk6clc&source=bn&sig=OVW2eoYseX6bERH5CFcLggiIbmc&hl=en&sa=X&oi=book_result&resnum=4&ct=result">writing software is a science</a> (1981). Donald Knuth says <a href="http://en.wikipedia.org/wiki/The_Art_of_Computer_Programming">it's an art</a> (1998). Watts Humphrey says <a href="http://en.wikipedia.org/wiki/Personal_Software_Process">it's a process</a> (1989). <a href="http://en.wikipedia.org/wiki/P._J._Plauger">P. J. Plauger</a> and Kent Beck say it's like <a href="http://books.google.com/books?id=G8EL4H4vf7UC&pg=PA28&lpg=PA28&dq=%22kent+beck%22+driving+car+2000&source=web&ots=j7uLsrlYxr&sig=EydaBn1wL6kZY-KO0KTDYm0lgFk&hl=en&sa=X&oi=book_result&resnum=8&ct=result">driving a car</a>, although they draw nearly opposite conclusions (Plauger 1993, Beck 2000). Alistair Cockburn says <a href="http://www.codinghorror.com/blog/archives/000826.html">it's a game</a> (2002). Eric Raymond says it's <a href="http://www.catb.org/~esr/writings/cathedral-bazaar/">like a bazaar</a> (2000). Andy Hunt and Dave Thomas say it's <a href="http://www.artima.com/intv/gardenP.html">like gardening</a>. Paul Heckel says it's <a href="http://www.amazon.com/dp/0782115381/?tag=codinghorror-20">like filming Snow White and the Seven Dwarfs</a> (1994). Fred Brooks says that it's like farming, hunting werewolves, or <a href="http://en.wikipedia.org/wiki/The_Mythical_Man-Month">drowning with dinosaurs in a tar pit</a> (1995). Which are the best metaphors?
+</blockquote>
+<p>
+I think we're leaving one metaphor on the table which more accurately reflects the way software is built in the real world: flail around randomly and pray you <a href="http://www.codinghorror.com/blog/archives/000889.html">succeed by force of pure dumb luck</a>. Sometimes it even works. <a href="http://www.codinghorror.com/blog/archives/000588.html">Not very often</a>, but just enough to confuse people who should know better into thinking they're smart, when what they really were is lucky.
+<p>
+The answer, of course, is <b>whichever metaphor helps you and your team get to the end of the project</b>. Personally, I see them as more of a battle cry, a way for a team to communicate a shared vision and a set of values. They're heavy on imagery and metaphor, and light on specific, concrete advice.
+<p>
+Even as Steve McConnell argues that most software development metaphors come up short, he quite clearly picks a favorite, and spends quite a bit of time defending his choice. It's not exactly a secret, as it's in the subtitle for the book: <a href="http://www.amazon.com/dp/0735619670/?tag=codinghorror-20">Code Complete: A Practical Handbook of Software Construction</a>.
+<p>
+As much as I respect Steve, my software project experience to date doesn't match the controlled construction metaphor. I agree with Thomas Guest; <a href="http://wordaligned.org/articles/why-software-development-isnt-like-construction">software is soft; buildings aren't</a>. I'm more partial to the model that Andy Hunt and Dave Thomas promote, what I call <b>tending your software garden</b>. 
+<p>
+<img alt="American Gothic, a painting by Grant Wood" src="http://www.codinghorror.com/blog/images/american-gothic-painting.jpg" width="481" height="575" border="0" />
+<p>
+Programers as farmers, if you will.
+<p>
+All the best software projects I've worked were, for lack of a better word, <i>alive</i>. I don't mean that literally, of course. But the software was constantly and quite visibly growing. There were regular, frequent release schedules defining its evolution. There was a long term project commitment to a year out, five years out, ten years out.
+<p>
+To me, the parallels between farming and software development are strong and evocative. Steve disagrees.
+<p>
+<blockquote>
+The weakness in the software-farming metaphor is its suggestion that you don't have any direct control over how the software develops. You plant the code seeds in the spring, <i>Farmer's Almanac</i> and the Great Pumpkin willing, you'll have a bumper crop of code in the fall.
+</blockquote>
+<p>
+To be clear, all these metaphors are abstract and therefore heavily subject to interpretation (and/or useless, take your pick), so I don't want to get too wrapped up in defending one.
+<p>
+That said, I disagree with Steve's dismissal. The strength of the farming metaphor is the implied <b>commitment to the craft</b>. Farming is hard, unforgiving work, but there's a yearly and seasonal ritual to it, a deep underlying appreciation of sustainible and controlled growth, that I believe software developers would do well to emulate. I also think Steve was a bit unfair in characterizing farming as "no direct control". There's plenty of control, but lots of acknowledged variables, as well -- which I think more accurately represents the <a href="http://www.codinghorror.com/blog/archives/000298.html">shifting sands of software development</a>. Farmers do their best to control those variables, of course, but most of all they must adapt to whatever conditions they're dealt. Next season, next year, they know they'll be back with a renewed sense of purpose to try it all again and do better. Not so coincidentally, these are also traits shared by the best software developers I've known.
+<p>
+In particular, <b>the rise of the web software development model has made the farming model more relevant</b>. Where traditional software like Office might go through a bunch of monolithic, giant construction project updates every two to three years -- from Office XP, to Office 2003, to Office 2007 -- websites can be deployed far more often. Seasonally, if you will. Some websites even "harvest" monthly, organically growing new features and bugfixes each time. The guys at 37Signals <a href="http://www.37signals.com/svn/posts/591-brainstorm-the-software-garden">apparently noticed this, too</a>.
+<p>
+<blockquote>
+It recently dawned on me that software grows much in the same way that plants grow. New features are the flowers of the software world. And just as most plants aren't flowering all year long, software isn't sprouting features all year long. There's flowering season. There's new feature season. There's infrastructure season.
+<p>
+Sometimes software is working on its roots. Bolstering its infrastructure. It's growing underground where the public can't see it. It looks like nothing's happening, but theres really a lot going on. Without those roots new features can't sprout.
+<p>
+And sometimes it's rest time. Plants rest in the winter. Software often rests in the summer (it's too nice to work too hard in the summer). Everything can benefit from a deep breath, relaxation, and sleep. Chaotic constant growth and change doesn't make room for order and organization. Growth requires new energy and new energy requires rest.
+</blockquote>
+<p>
+Another thing I've noticed is that tending to websites, which usually have community features and user-generated content at the forefront, feels a heck of a lot like <a href="http://www.codinghorror.com/blog/archives/001009.html">weeding your garden</a>. You grow a lot of content, but not all of it is exactly what you had in mind.
+<p>
+<blockquote>
+I scrutinize every comment, and I remove a tiny percentage of them: they might be outright spam, patently off-topic, or just plain mean. I like to refer to this as weeding my web garden. It's a productivity tax you pay if you want to grow a bumper crop of comments, which, <a href="http://www.joelonsoftware.com/items/2007/07/20.html">despite what Joel says</a>, often <a href="http://www.codinghorror.com/blog/archives/000538.html">bear such wonderful fruit</a>. The labor can be minimized with improved equipment, but it's always there in some form. And I'm OK with that. The myriad benefits of a robust comment ecosystem outweighs the minor maintenance effort.
+</blockquote>
+<p>
+And when you don't weed your garden?  The weeds threaten to choke out your crops. Eventually, your software garden looks neglected, and then abandoned.
+<p>
+<img alt="web weeds" src="http://www.codinghorror.com/blog/images/web-weeds-highlight.png" width="576" height="431" border="0" />
+<p>
+As Steve says, some software development metaphors are better than others. But when it comes to web development, at least, you could certainly do a lot worse than <b>tending to your software garden</b>.
+<p>
+<table><tr><td class="sidead">
+[advertisement] <a href="http://lighthouseapp.com/?utm_source=codinghorror&utm_medium=blogfooter&utm_campaign=codinghorror-nov08" rel="nofollow">Lighthouse</a> &mdash; taking the suck out of issue tracking.  Developer API. Email integration. Github integration.  Used by thousands of developers and open source projects including Rails, MooTools, RSpec, and Sproutcore.  Free for Open Source projects.</td></tr>
+</table>
+<p>]]></description>         
+         <guid>http://www.codinghorror.com/blog/archives/000987.html</guid>
+         <pubDate>Sun, 30 Nov 2008 23:59:59 -0800</pubDate>
+      </item>
+      <item>
+         <title>Is Email = Efail?</title>
+         <dc:creator>Jeff Atwood</dc:creator>
+         <link>http://www.codinghorror.com/blog/archives/001191.html</link>
+         <description><![CDATA[<p>
+While I've always practiced reasonable <a href="http://www.w-uh.com/articles/030308-tyranny_of_email.html">email</a> <a href="http://www.w-uh.com/articles/030316-tyranny_revisited.html">hygiene</a>, for the last 6 months I've been in near-constant <a href="http://www.43folders.com/2006/07/28/email-bankruptcy">email bankruptcy mode</a>.  This concerns me.
+<p>
+Yes, it's partly my fault <a href="http://www.codinghorror.com/blog/archives/000237.html">for being a world champion procrastinator</a>, but I'm not sure it's <i>entirely</i> my fault. There are forces at work here, factors that easily outstrip the efforts of any one measly human being, no matter how tenacious and dogged. Or, as in my case, no matter how lazy.
+<p>
+I've always liked <a href="http://www.43folders.com/2007/05/30/email-bankruptcy-2">Merlin Mann's explanation of this phenomenon</a>:
+<p>
+<blockquote>
+Email is such a funny thing. People hand you these single little messages that are no heavier than a river pebble.
+<p>
+<img alt="river pebbles" src="http://www.codinghorror.com/blog/images/pebbles-small.jpg" width="500" height="334" border="0" />
+<p>
+But it doesn't take long until you have acquired a pile of pebbles that's taller than you and heavier than you could ever hope to move, even if you wanted to do it over a few dozen trips. For the person who took the time to hand you their pebble, it seems outrageous that you can't handle that one tiny thing. "What 'pile'? It's just a f**ing pebble!"
+</blockquote>
+<p>
+The underlying problem is that <i>individual human beings don't scale</i>.
+<p>
+<blockquote>
+<b>The net number of requests for my attention exceeds my ability to provide that attention by at least an order of magnitude.</b> And the disparity around my ability to thoughtfully respond to my pile may be ten or more times worse still. The scale is insanely out of whack.
+</blockquote>
+<p>
+Email is certainly the backbone of the information economy, but it's also fundamentally and perhaps even fatally flawed. Tantek Çelik captured my thoughts perfectly with <a href="http://tantek.com/log/2008/02.html#d19t2359">this post</a>: 
+<p>
+<blockquote>
+Last year <a href="http://www.codinghorror.com/blog/archives/000866.html">when I posted The Three Hypotheses</a>, they helped me explain why I found email so much less useful/usable than instant messaging (IM) and Twitter. Since then, I find that while I can keep up with more people contacting me over IM and following more people on Twitter, email has simply become less and less usable. But not for reasons of interface; I'm using the email application now as I was a year ago.
+<p>
+I'm probably responding to less than 1 in 10 emails that are sent directly to me, and even fewer that were sent to a set of people or a list. The usability of email for me has deteriorated so much that I exclaimed on Twitter: <b>EMAIL shall henceforth be known as EFAIL</b>.
+</blockquote>
+<p>
+The blanket equation of email with failure is strong language indeed, but it's a serious problem. The intrinsically low effort-to-reward ratio of private email is not necessarily a new idea; as I said in <a href="http://www.codinghorror.com/blog/archives/000840.html">When In Doubt, Make It Public</a>, it's almost never in anyone's best interest to keep their communications locked into private silos of any kind, email or otherwise. <b>Why answer one person's email directly when I could potentially answer a thousand different people's email with a single blog post?</b>
+<p>
+I urge you to <a href="http://tantek.com/log/2008/02.html#d19t2359">read the full text of Tantek's article</a>. He cuts to the heart of the email problem: size, in both the mental and physical dimensions.
+<p>
+<blockquote>
+Email requires more of an interface cognitive load tax than instant messaging. People naturally put much more into an email, perhaps in an unconscious effort to amortize that email interface tax overhead across more content. People feel that since they are already "bothering" to write an email, they might as well take the time to go into all kinds of detail, perhaps even adding a few more things that they're thinking about.
+<p>
+Such natural message bloat places additional load on the recipient, both in terms of the raw length of the message, and in terms of the depth and variety of topics covered in the email. This results in a direct increase in processing time per email, making it even <i>harder</i> for people to process and respond. I know I've let numerous emails grow stale because there were simply too many different things in the email that required a response. I didn't want to send a response without responding to everything in the email because then I would inevitably receive yet <i>another</i> email response without being able to file the original as being processed and thus have the situation worsen!
+</blockquote>
+<p>
+What we can to combat the email = efail problem? Take Tantek's advice: <b>whenever possible, avoid sending email</b>. Not because we don't want to communicate with our peers. Quite the contrary. We should avoid sending email out of a deep <i>respect</i> for our peers -- so that they are free to communicate as effectively and as often as possible with us.
+<p>
+<ol>
+<li><b>Channel that private email effort into a public outlet.</b> Discussion boards, blog entries, comments, wikis, you name it. If it can be indexed by a web search engine, you're in the right place -- and many more people can potentially find, answer, and benefit from that information.<br/><br/>
+<li><b>If you <i>must</i> send email, make it as short as possible.</b> Think of it as <a href="http://www.codinghorror.com/blog/archives/001184.html">Strunk and White on speed</a>. Can you reduce your email into a single paragraph? How about two sentences? How about just the title field with no body, even?<br/><br/>
+<li><b>Remember the <a href="http://www.codinghorror.com/blog/archives/001064.html">theory of communication escalation</a></b>. Email is just one communication tool in our toolkit; that doesn't mean it is always the right one for whatever situation is at hand. Take advantage of phone calls, instant messaging, text messages, and so forth, as appropriate. Scale your choice of communication method to the type of conversation you're having, and don't be afraid to escalate it (or demote it!) as the ebb and flow of the conversation shifts.
+</ol>
+<p>
+So if you've emailed me, and I haven't responded in a timely fashion, I apologize. I know it may sound crazy, but I've been desperately clawing my way out from under this mountain of pebbles.
+<p>
+p.s. Email me if you agree with this.
+<p>
+<table>
+<tr><td class="sidead">
+[advertisement] Issue tracking that's all win with no fail.  <a href="http://lighthouseapp.com/tour?utm_source=codinghorror&utm_medium=blogfooter&utm_campaign=codinghorror-nov08-fail">Lighthouse</a> takes the suck out of issue tracking. Simple interface. Works with your source control. Works with your BlackBerry. Features that just work. <a href="http://lighthouseapp.com/tour?utm_source=codinghorror&utm_medium=blogfooter&utm_campaign=codinghorror-nov08-fail">Plans start at $10/mo.</a>
+</td></tr>
+</table>
+<p>]]></description>         
+         <guid>http://www.codinghorror.com/blog/archives/001191.html</guid>
+         <pubDate>Tue, 25 Nov 2008 23:59:59 -0800</pubDate>
+      </item>
+      <item>
+         <title>Can You Really Rent a Coder?</title>
+         <dc:creator>Jeff Atwood</dc:creator>
+         <link>http://www.codinghorror.com/blog/archives/001190.html</link>
+         <description><![CDATA[<p>
+I've been a fan of Dan Appleman for about as long as I've been a professional programmer. He is one of my heroes. Unfortunately, Dan only <a href="http://www.danappleman.com/">blogs</a> rarely, so I was heartened to see a spate of recent blog updates from him. One of the entries asks a question I've often wondered myself: <a href="http://www.danappleman.com/?p=68">can you really rent a coder?</a>
+<p>
+<blockquote>
+Over the past year or two I've kept an eye on the various online consulting sites - <a href="http://www.elance.com/">Elance</a>, <a href="http://www.guru.com/">guru.com</a>, <a href="http://www.rentacoder.com/">RentACoder</a>, <a href="http://www.odesk.com/">oDesk</a>. I've actually used RentACoder once (as a buyer on a very small project) and was satisfied with the results -- though I suspect I spent more time writing the spec and managing the programmers than I would if I had done the work myself.
+</blockquote>
+<p>
+I'm surprised Dan opens with such a sunny outlook on these services, because I've heard almost universally negative things about them. As professional programmers, I think we're all naturally inclined to <b>see these sort of low-bid contract sites as cannibalizing and cheapening our craft.</b> It's roughly analogous to the <a href="http://www.no-spec.com/">No-Spec movement</a> for designers.
+<p>
+The odd thing is that, despite the sunny outlook, <a href="http://www.examiner.com/x-1652-Gadgets-Examiner~y2008m11d14-oDesk-Guru-Elance-and-RentACoder--Are-they-worth-it">the article Dan wrote on this topic</a> comes across as quite cautionary:
+<p>
+<blockquote>
+<ul>
+<li><b>You'll be competing with people around the world.</b> In fact, you'll be amazed at how little people in some parts of the world will bid. Thats because a few dollars an hour can work well in a country where the average wage is a couple of hundred dollars a month.<br/><br/>
+<li><b>Many of the projects posted are unrealistic</b>. For example, people asking for a clone of ebay for under $500. What ends up happening in these cases is that usually somebody ends up getting ripped off (either the client or the consultant who underbid or fails to deliver).<br/><br/>
+<li><b>A lot of projects go bad.</b> They get cancelled. Or the consultant who bid on the work never delivered, or delivered poor results. Or the client has unreasonable expectations, or doesnt actually know what he wants.
+</ul>
+</blockquote>
+<p>
+Maybe it's just my natural bias talking, but these sites seem awfully impractical to me.
+<p>
+Simply sorting out the DailyWTF project pitches from things you could actually deliver -- at ultra-competitive offshore programming rates, no less -- would require the patience of a saint and the endurance of an olympic athlete. Specification documents are hard enough to write when everyone involved is a coworker sitting in the same room. I can't even imagine the difficulty of <b>agreeing on what it is you're building</b> when the participants are thousands of miles away and have never met. But then <a href="http://www.codinghorror.com/blog/archives/000828.html">I thought Amazon's Mechanical Turk was a failure</a>, and it seems to be enjoying a moderate level of success.
+<p>
+Dan has a small chart <a href="http://thethriftygeek.com/2008/11/comparing-the-online-consulting-sites/">comparing the services of these online freelance/consulting sites</a>. It's too easy to write these sites off as an affront to software engineering. I guess they're <b>sort of like dating sites</b> -- they might be one way to find a client relationship, but I'd be highly suspicious of any professional developer who can't find a stable, long term relationship with a client eventually.
+<p>
+If nothing else, we should be looking at them for research purposes, as a baseline. Surely you can demonstrate better value to your employer than the random, anonymous programmers on <a href="http://www.elance.com/">Elance</a>, <a href="http://www.guru.com/">guru.com</a>, <a href="http://www.rentacoder.com/">RentACoder</a>, or <a href="http://www.odesk.com/">oDesk</a>. And I'd certainly hope that the projects you're working on are more sensible and rewarding (in both senses of the word) than the stuff that appears on those sites.
+<p>
+<table>
+<tr><td class="sidead">
+[advertisement] Make the switch that counts. Ditch your bloated issue tracker for Lighthouse.  Start resolving bugs instead of fighting with more software that doesn&rsquo;t work. Oh yeah &mdash; and save thousands of dollars doing it <a href="http://lighthouseapp.com/tour?utm_source=codinghorror&utm_medium=blogfooter&utm_campaign=codinghorror-nov08-save" rel="nofollow">Learn how Lighthouse helps you complete milestones faster</a>.
+</td></tr>
+</table>
+<p>]]></description>         
+         <guid>http://www.codinghorror.com/blog/archives/001190.html</guid>
+         <pubDate>Sun, 23 Nov 2008 23:59:59 -0800</pubDate>
+      </item>
+      <item>
+         <title>That's Not a Bug, It's a Feature Request</title>
+         <dc:creator>Jeff Atwood</dc:creator>
+         <link>http://www.codinghorror.com/blog/archives/001189.html</link>
+         <description><![CDATA[<p>
+For as long as I've been a software developer and used bug tracking systems, we have struggled with the same fundamental problem in every single project we've worked on: <b>how do you tell bugs from feature requests?</b> 
+<p>
+Sure, there are some obvious crashes that are clearly bugs. But that's maybe 10% of what you deal with on a daily basis, and the real killer showstopper bugs -- the ones that prevent normal usage of the system -- are eradicated quickly, lest the entire project fail. The rest of the entries in your bug tracking system, the vast majority, exist in an uncertain gray no-man's land. Did users report a bug? Not quite. Are users asking for a new or enhanced feature? Not quite. Well, which is it?
+<p>
+It's an insoluble problem. Furthermore, I think most bug tracking systems fail us because <i>they make us ask the wrong questions</i>. They force you to pick a side. <a href="http://www.straightdope.com/columns/read/2269/how-did-the-hatfield-mccoy-feud-end-anyway">Hatfields vs. McCoys</a>. Coke vs. Pepsi. Bug vs. Feature Request. It's a painful and arbitrary decision, because most of the time, it's <i>both</i>. <b>There's no difference between a bug and a feature request from the user's perspective.</b> If you want to do something with an application (or website) and you can't do it because that feature isn't implemented -- how is that any different than not being able to do something due to an error message?
+<p>
+Consider an example: <a href="http://weblogs.asp.net/KDente/archive/2005/03/13/394499.aspx">Visual Studio doesn't use the correct font when building Windows applications</a>. Is this a bug or a feature request? 
+<p>
+Personally, <b>I consider this a bug</b>. I guess Microsoft does too, at least in theory, because it's been <a href="http://connect.microsoft.com/VisualStudio/feedback/ViewFeedback.aspx?FeedbackID=115408">in Microsoft's Connect bug tracking system</a> for over four years now. When you build a Windows application, wouldn't you expect it to use the default font of the underlying operating system you're running it on, unless you've explicitly told it otherwise? Well, guess what happens when you create a new form in Visual Studio 2008 and instantiate a label control.
+<p>
+<img alt="Windows Forms, Visual Studio 2008 default font" src="http://www.codinghorror.com/blog/images/windows-forms-vs-2008-default-font.png" width="379" height="273" border="0" />
+<p>
+Party like it's 1996, folks, because you'll get MS Sans Serif, and <i>you'll like it</i>. That is the default for each new form. Never mind that every new application you build will look like -- let me put this as delicately as I can -- <i>ass</i>. 
+<p>
+Here's a comparison of a label with the default font, versus one that was explicitly set to the default GUI font.
+<p>
+<img alt="windows-forms-sans-serif-vs-segoe-ui.png" src="http://www.codinghorror.com/blog/images/windows-forms-sans-serif-vs-segoe-ui.png" width="342" height="136" border="0" />
+<p>
+Judging by the applications I've used, most Windows developers couldn't care less about design. That's bad. What's even worse is learning that same design carelessness has shipped in the box with every copy of Visual Studio since 2002. 
+<p>
+Of course, matters of design are so <i>subjective</i>. If only there were some definitive source we could refer to on the matter of proper Windows GUI font usage. Some sort of reference standard, as it were. Like, say, the <a href="http://msdn.microsoft.com/en-us/library/aa511327.aspx">top rules for Windows Vista User Experience</a> from Microsoft:
+<p>
+<ol>
+<li><a href="http://msdn.microsoft.com/en-us/library/aa511327.aspx#aero">Use the Aero Theme and System Font (Segoe UI)</a></li>
+<li><a href="http://msdn.microsoft.com/en-us/library/aa511327.aspx#controls">Use common controls and common dialogs</a></li>
+<li><a href="http://msdn.microsoft.com/en-us/library/aa511327.aspx#frames">Use the standard window frame, use glass judiciously</a></li>
+</ol>
+<p>
+There are 12 rules in total, but the rule I'm looking for is right at the top -- <b>applications should use the system font</b>.
+<p>
+The hilarity of this list is already sort of self evident, given that I've written an entire post <a href="http://www.codinghorror.com/blog/archives/001126.html">bemoaning the general lack of fit and finish in Windows Vista</a>. I couldn't help but laugh at rule number 12: <a href="http://msdn.microsoft.com/en-us/library/aa511327.aspx#fitandfinish">Reserve time for "fit and finish"!</a> Now <i>there's</i> a rule Microsoft should have taken to heart while developing Windows Vista. Understand this is all coming from a guy who <i>likes</i> Vista.
+<p>
+But I digress.
+<p>
+Despite the windows forms font behavior in Visual Studio 2008 contradicting <i>rule number one</i> of Microsoft's own design guidelines, this "bug" has gone unfixed for over four years. It has been silently reclassified as a "feature request" and effectively ignored. Nothing's broken, after all: using the wrong font hasn't caused any application crashes or lost productivity. On the other hand, imagine how many BigCorpCo apps have been built since then that <b>violate Microsoft's own design rules for their platform</b>. Either because the developers didn't realize that the app font didn't match the operating system, or because they didn't have the time to write the workaround code necessary to make it do the right thing. 
+<p>
+Yes, this is a small thing. And I'm sure fixing it wouldn't result in selling an additional umpteen thousand Visual Studio licenses to BigCorpCo, which is why it hasn't happened yet.
+<p>
+But the question remains: is this a bug, or a feature request?
+<p>
+One of my favorite things about <a href="http://uservoice.com/">UserVoice</a> -- which we use for Stack Overflow -- is the way it intentionally blurs the line between bugs and feature requests. Users never understand the difference anyway, and what's worse, developers tend to use that division as a wedge <i>against</i> users. Nudge things you don't want to do into that "feature request" bucket, and proceed to ignore them forever. Argue strongly and loudly enough that something reported as a "bug" clearly isn't, and you may not have to to do any work to fix it. Stop dividing the world into Bugs and Feature Requests, and both of these project pathologies go away.
+<p>
+I wish we could, as an industry, spend less time fighting tooth and nail over definitions, painstakingly placing feedback in the "bug" or "feature request" buckets -- and more time <b>doing something constructive with our users' feedback</b>. 
+<p>
+<table>
+<tr><td class="sidead">
+[advertisement] Tired of wrestling all day with JIRA? Lighthouse takes the suck out of issue tracking. All the features you need, none of the cruft to get in the way. <a href="http://lighthouseapp.com/jira?utm_source=codinghorror&utm_medium=blogfooter&utm_campaign=codinghorror-nov08-jira" rel="nofollow">Read 5 reasons Lighthouse helps you get more done than JIRA</a>.
+</td></tr>
+</table>
+<p>]]></description>         
+         <guid>http://www.codinghorror.com/blog/archives/001189.html</guid>
+         <pubDate>Wed, 19 Nov 2008 23:59:59 -0800</pubDate>
+      </item>
+      <item>
+         <title>We Are Typists First, Programmers Second</title>
+         <dc:creator>Jeff Atwood</dc:creator>
+         <link>http://www.codinghorror.com/blog/archives/001188.html</link>
+         <description><![CDATA[<p>
+Remember last week when I said <a href="http://www.codinghorror.com/blog/archives/001184.html">coding was just writing?</a> 
+<p>
+I was wrong. As one commenter noted, it's even simpler than that.
+<p>
+<blockquote>
+[This] reminds me of a true "Dilbert moment" a few years ago, when my (obviously non-technical) boss commented that he never understood why it took months to develop software. "After all", he said, "it's just typing." 
+</blockquote>
+<p>
+Like broken clocks, even pointy-haired managers are right once a day. <b>Coding is just typing.</b>
+<p>
+<img alt="keyright keyboard" src="http://www.codinghorror.com/blog/images/keyright-keyboard.jpg" width="500" height="180" border="0" />
+<p>
+So if you want to become a great programmer, start by becoming a great typist. <a href="http://steve-yegge.blogspot.com/2008/09/programmings-dirtiest-little-secret.html">Just ask Steve Yegge</a>.
+<p>
+<blockquote>
+I can't understand why professional programmers out there allow themselves to have a career without teaching themselves to type. It doesn't make any sense. It's like being, I dunno, an actor without knowing how to put your clothes on. It's showing up to the game unprepared. It's coming to a meeting without your slides. Going to class without your homework. Swimming in the Olympics wearing a pair of Eddie Bauer Adventurer Shorts.
+<p>
+Let's face it: it's <i>lazy</i>.
+<p>
+There's just no excuse for it. There are no excuses. I have a friend, John, who can only use one of his hands. He types 70 wpm. He invented his own technique for it. He's not making excuses; he's typing circles around people who are making excuses.
+</blockquote>
+<p>
+I had a brief email exchange with Steve back in March 2007, after I wrote <a href="http://www.codinghorror.com/blog/archives/000825.html">Put Down The Mouse</a>, where he laid that very same <a href="http://www.imdb.com/title/tt0105236/quotes">Reservoir Dogs quote</a> on me. Steve's <a href="http://steve-yegge.blogspot.com/2008/09/programmings-dirtiest-little-secret.html">followup blog post</a> was a very long time in coming. I hope Steve doesn't mind, but I'd like to pull two choice quotes directly from his email responses:
+<p>
+<blockquote>
+I was trying to figure out which is the most important computer science course a CS student could ever take, and eventually realized it's Typing 101.
+<p>
+The really great engineers I know, the ones who build great things, they can type.
+</blockquote>
+<p>
+Strong statements indeed. I concur. <b>We are typists first, and programmers second.</b> It's very difficult for me to take another programmer seriously when I see them using the <a href="http://en.wikipedia.org/wiki/Typing#Hunt_and_peck">hunt and peck typing techniques</a>. Like Steve, I've seen this far too often.
+<p>
+First, a bit of honesty is in order. Unlike Steve, I am a completely self-taught typist. I didn't take any typing classes in high school. Before I wrote this blog post, I realized I should check to make sure I'm not a total hypocrite. So I went to <a href="http://www.typeonline.co.uk/typingspeed.php">the first search result for typing test</a> and gave it a shot.
+<p>
+<a href="http://www.typeonline.co.uk/typingspeed.php"><img alt="typing test speed (WPM) results" src="http://www.codinghorror.com/blog/images/typing-speed-results.png" width="593" height="92" border="0" /></a>
+<p>
+I am by no means the world's fastest typist, though <a href="http://www.codinghorror.com/blog/archives/000372.html">I do play a mean game of Typing of the Dead</a>. Let me emphasize that <i>this isn't a typing contest</i>. I just wanted to make sure I wasn't full of crap before I posted this. I know, there's a first time for everything. Maybe this'll be the start of a trend. Doubtful, but you never know.
+<p>
+Steve and I believe there is nothing more fundamental in programming than the ability to efficiently express yourself through typing. Note that I said "efficiently" not "perfectly". This is about <b>reasonable competency at a core programming discipline</b>. 
+<p>
+Maybe you're not convinced that typing is a core programming discipline. I don't blame you, although I do reserve the right to wonder how you manage to program without using your keyboard.
+<p>
+Instead of answering directly, let me share one of my (many) personal foibles with you. At least four times a day, I walk into a room having <i>no idea</i> why I entered that room. I mean no idea whatsoever. It's as if I have somehow been teleported into that room by an alien civilization. Sadly, the truth is much less thrilling. Here's what happened: in the brief time it took for me to get up and move from point A to point B, I have totally forgetten whatever it was that motivated me to get up at all. Oh sure, I'll rack my brain for a bit, trying to remember what I needed to do in that room. Sometimes I remember, sometimes I don't. In the end, I usually end up making multiple trips back and forth, remembering something else I <i>should</i> have done while I was in that room after I've already left it.
+<p>
+It's all quite sad. Hopefully your brain has a more efficient task stack than mine. But I don't fault my brain -- I fault my body. It can't keep up. If I had arrived faster, I wouldn't have had time to forget. 
+<p>
+What I'm trying to say is this: <i>speed matters</i>. <b>When you're a fast, efficient typist, you spend less time between thinking that thought and expressing it in code.</b> Which means, if you're me at least, that you might actually get <i>some</i> of your ideas committed to screen before you completely lose your train of thought. Again.
+<p>
+Yes, you should think about what you're doing, obviously. Don't just type random gibberish as fast as you can on the screen, unless you're a Perl programmer. But all other things being equal -- and they never are -- the touch typist <i>will</i> have an advantage. The best way to become a touch typist is through typing, and lots of it. A little research and structured practice couldn't hurt either. Here are some links that might be of interest to the aspiring touch typist:
+<p>
+<ul>
+<li><a href="http://play.typeracer.com/">Type Racer</a>
+<li><a href="http://www.popcap.com/games/free/typershark">Typer Shark</a>
+<li><a href="http://haacked.com/archive/2007/06/05/dvorak-keyboard-layout-of-champions.aspx">Dvorak, Keyboard Layout of Champions</a>
+<li><a href="http://colemak.com/">Colemak keyboard layout</a>
+<li><a href="http://typera.tk/">TyperA</a>
+<li><a href="http://www.daskeyboard.com/">Das Keyboard</a> with blank keys
+<li><a href="http://en.wikipedia.org/wiki/The_Typing_of_the_Dead">The Typing of the Dead</a> (for PC)
+<li><a href="http://www.codinghorror.com/blog/archives/000825.html">Put Down That Mouse</a>. Seriously. It's a crutch.
+<li><a href="http://www.sightseekerstudio.com/yanmani/typingmania4.html">Typingmania</a> (warning, Japanophiles only)
+</ul>
+<p>
+(But this is a meager and incomplete list. What tools do <i>you</i> recommend for becoming a better typist?)
+<p>
+There's precious little a programmer can do without touching the keyboard; it is the primary tool of our trade. I believe in <a href="http://www.codinghorror.com/blog/archives/000954.html">practicing the fundamentals</a>, and <b>typing skills are as fundamental as it gets for programmers.</b>
+<p>
+Hail to the typists!
+<p>
+<table><tr><td class="sidead">
+[advertisement] <a href="http://lighthouseapp.com/?utm_source=codinghorror&utm_medium=blogfooter&utm_campaign=codinghorror-nov08" rel="nofollow">Lighthouse</a> &mdash; taking the suck out of issue tracking.  Developer API. Email integration. Github integration.  Used by thousands of developers and open source projects including Rails, MooTools, RSpec, and Sproutcore.  Free for Open Source projects.</td></tr>
+</table>
+<p>]]></description>         
+         <guid>http://www.codinghorror.com/blog/archives/001188.html</guid>
+         <pubDate>Mon, 17 Nov 2008 23:59:59 -0800</pubDate>
+      </item>
+      <item>
+         <title>Your Favorite NP-Complete Cheat</title>
+         <dc:creator>Jeff Atwood</dc:creator>
+         <link>http://www.codinghorror.com/blog/archives/001187.html</link>
+         <description><![CDATA[<p>
+Have you ever heard a software engineer refer to a problem as "NP-complete"? That's fancy computer science jargon <a href="http://en.wikipedia.org/wiki/NP-complete">shorthand for "incredibly hard"</a>:
+<p>
+<blockquote>
+The most notable characteristic of NP-complete problems is that no fast solution to them is known; that is, the time required to solve the problem using any currently known algorithm increases very quickly as the size of the problem grows. As a result, <b>the time required to solve even moderately large versions of many of these problems easily reaches into the billions or trillions of years</b>, using any amount of computing power available today. As a consequence, determining whether or not it is possible to solve these problems quickly is one of the principal unsolved problems in Computer Science today.
+<p>
+While a method for computing the solutions to NP-complete problems using a reasonable amount of time remains undiscovered, computer scientists and programmers still frequently encounter NP-complete problems. An expert programmer should be able to recognize an NP-complete problem so that he or she does not unknowingly waste time trying to solve a problem which so far has eluded generations of computer scientists.
+</blockquote>
+<p>
+You do want to be an <i>expert</i> programmer, don't you? Of course you do!
+<p>
+<s>NP-complete problems are like hardcore pornography. Nobody can define what makes a problem NP-complete, exactly, but <a href="http://en.wikipedia.org/wiki/I_know_it_when_I_see_it">you'll know it when you see it</a>. Just this once, I'll refrain from my usual practice of inserting images to illustrate my point.</s>
+<p>
+(<font color="red">Update:</font> I was shooting for a poetic allusion to the <a href="http://en.wikipedia.org/wiki/Complexity_classes_P_and_NP">P=NP problem</a> here but based on the comments this is confusing and arguably incorrect. So I'll redact this sentence. Instead, I point you to <a href="http://www.cs.umd.edu/~gasarch/papers/poll.pdf">this P=NP poll</a> (pdf); read the comments from CS professors (including Knuth) to get an idea of how realistic this might be.)
+<p>
+Instead, I'll recommend a book Anthony Scian recommended to me: <a href="http://www.amazon.com/dp/0716710455/?tag=codinghorror-20">Computers and Intractability: A Guide to the Theory of NP-Completeness</a>.
+<p>
+<a href="http://www.amazon.com/dp/0716710455/?tag=codinghorror-20"><img alt="Computers and Intractability: A Guide to the Theory of NP-Completeness" src="http://www.codinghorror.com/blog/images/computers-and-intractability.png" width="335" height="475" border="0" /></a>
+<p>
+Like all the software engineering books I recommend, this book has a timeless quality. It was originally published in 1979, a shining testament to smart people attacking truly difficult problems in computer science: <a href="http://max.cs.kzoo.edu/~kschultz/CS510/ClassPresentations/NPCartoons.html">"I can't find an efficient algorithm, but neither can all these famous people."</a>
+<p>
+So how many problems are NP-complete? <a href="http://en.wikipedia.org/wiki/List_of_NP-complete_problems">Lots</a>.
+<p>
+Even if you're a layman, you might have experienced NP-Completeness <a href="http://www.codinghorror.com/blog/archives/000936.html">in the form of Minesweeper</a>, as <a href="http://www.claymath.org/Popular_Lectures/Minesweeper/">Ian Stewart explains</a>. But for programmers, I'd argue the most well known NP-completeness problem is the <a href="http://en.wikipedia.org/wiki/Travelling_salesman_problem">travelling salesman problem</a>.
+<p>
+<blockquote>
+Given a number of cities and the costs of travelling from any city to any other city, what is the least-cost round-trip route that visits each city exactly once and then returns to the starting city?
+</blockquote>
+<p>
+The <a href="http://www.codinghorror.com/blog/archives/000986.html">brute-force solution</a> -- trying every possible permutation between the cities -- might work for a very small network of cities, but this quickly becomes untenable. Even if we were to use theoretical CPUs our children might own, or our children's children. What's worse, every other algorithm we come up with to find an optimal path for the salesman has the same problem. That's the common characteristic of NP-complete problems: they are <b>exercises in heuristics and approximation</b>, as illustrated by <a href="http://xkcd.com/399/">this xkcd cartoon</a>:
+<p>
+<a href="http://xkcd.com/399/"><img src="http://imgs.xkcd.com/comics/travelling_salesman_problem.png" width="640" height="283" alt="xkcd: Travelling Salesman Problem" border=0 /></a>
+<p>
+What do <i>expert</i> programmers do when faced by an intractable problem? <b>They cheat</b>. And so should you! Indeed, some of the <a href="http://en.wikipedia.org/wiki/Travelling_salesman_problem#Heuristics">modern approximations</a> for the Travelling Salesman Problem are <i>remarkably</i> effective.
+<p>
+<blockquote>
+Various approximation algorithms, which quickly yield good solutions with high probability, have been devised. Modern methods can find solutions for extremely large problems (millions of cities) within a reasonable time, with a high probability of being just 2-3% away from the optimal solution.
+</blockquote>
+<p>
+Unfortunately, not all NP-complete problems have good approximations. But for those that do, I have to wonder: if we can get so close to an optimal solution by cheating, does it really matter if there's no known algorithm to produce <i>the</i> optimal solution? If I've learned nothing else from NP-complete problems, I've learned this: <b>sometimes coming up with clever cheats can be more interesting than searching in vain for the perfect solution</b>.
+<p>
+Consider the <a href="http://en.wikipedia.org/wiki/Bin_packing_problem#Analysis_of_heuristic_algorithms">First Fit Decreasing</a> algorithm for the NP-complete <a href="http://www.ams.org/featurecolumn/archive/bins1.html">Bin Packing problem</a> . It's not perfect, but it's incredibly simple and fast. The algorithm is so simple, in fact, it is <a href="http://www.synergyinstituteonline.com/detail_article.php?artid=319">regularly demonstrated at time management seminars</a>. Oh, <i>and</i> it guarantees that you will get within 22% of the perfect solution every time. Not bad for a lousy cheat.
+<p>
+So what's <i>your</i> favorite NP-complete cheat?
+<p>
+<table><tr><td class="sidead">
+[advertisement] Peer code review without meetings, paperwork, or stopwatches?  No wonder <a href="http://smartbear.com/codecollab.php?chblog4">Code Collaborator</a> won the Jolt Award.
+</td></tr>
+</table>
+<p>]]></description>         
+         <guid>http://www.codinghorror.com/blog/archives/001187.html</guid>
+         <pubDate>Sat, 15 Nov 2008 05:05:36 -0800</pubDate>
+      </item>
+      <item>
+         <title>Stop Me If You Think You've Seen This Word Before</title>
+         <dc:creator>Jeff Atwood</dc:creator>
+         <link>http://www.codinghorror.com/blog/archives/001186.html</link>
+         <description><![CDATA[<p>
+If you've ever searched for anything, you've probably run into <a href="http://en.wikipedia.org/wiki/Stop_words">stop words</a>. <b>Stop words are words so common they are typically ignored for search purposes</b>. That is, if you type in a stop word as one of your search terms, the search engine will ignore that word (if it can). If you attempt to search using <i>nothing</i> but stop words, the search engine will throw up its hands and tell you to try again.
+<p>
+Seems straightforward enough. But there can be issues with stop words. Imagine, for example, you wanted to search for information on this band.
+<p>
+<a href="http://www.amazon.com/dp/B0000025Z4/?tag=codinghorror-20"><img alt="The The: Soul Mining" src="http://www.codinghorror.com/blog/images/the-the-soul-mining.jpg" width="400" height="400" border="0" /></a>
+<p>
+"The" is one of the most common words in the English language, so a <a href="http://www.google.com/search?q=the+the">naive search for "The The" rarely ends well</a>.
+<p>
+Let's consider some typical English stopword lists. 
+<p>
+<table>
+<tr>
+<td>
+<b>SQL Server stop words</b>
+</td>
+<td style="border-left: 1px solid silver; padding-left:10px; padding-right:10px;">
+<b>Oracle stop words</b>
+</td>
+</tr>
+
+<tr>
+<td>
+
+<table>
+<tr><td>1</td> <td>before</td> <td>these</td><td>	on</td><td>	him</td></tr>
+<tr><td>2</td> <td>being</td> <td>they</td><td>	only</td><td>	himself</td></tr>
+<tr><td>3</td> <td>between</td> <td>this</td><td>	or</td><td>	his	</td></tr>
+<tr><td>4</td> <td>both</td> <td>those</td><td>	other</td><td>	how</td></tr>	
+<tr><td>5</td> <td>but</td> <td>through</td><td>	our</td><td>	if</td></tr>	
+<tr><td>6</td> <td>by</td> <td>to</td><td>out</td><td>	in</td></tr>	
+<tr><td>7</td> <td>came</td> <td>too</td> <td>	over</td><td>	into</td></tr>	
+<tr><td>8</td> <td>can</td> <td>under</td> <td>	re</td><td>	is</td></tr>	
+<tr><td>9</td> <td>come</td> <td>up</td> <td>	said	</td><td>	it</td></tr>	
+<tr><td>0</td> <td>could</td> <td>use</td> <td>	same</td><td>	its</td></tr>	
+<tr><td>about</td> <td>did</td> <td>very</td> <td>	see</td><td>	just</td></tr>	
+<tr><td>after</td><td>do</td> <td>want</td> <td>	should</td><td>	like</td></tr>	
+<tr><td>all</td><td>does</td> <td>was</td> <td>	since</td><td>	make</td></tr>	
+<tr><td>also</td><td>each</td> <td>way</td> <td>		so</td><td>	many</td></tr>	
+<tr><td>an</td><td>	else	</td><td>we</td><td>	some</td><td>	me</td></tr>	
+<tr><td>and</td><td>	for</td><td>	well</td><td>	still</td><td>	might</td></tr>	
+<tr><td>another</td><td>	from</td><td>	were</td><td>	such</td><td>		more</td></tr>	
+<tr><td>any</td><td>	get</td><td>	what</td><td>	take</td><td>	most</td></tr>	
+<tr><td>are	</td><td>got	</td><td>when</td><td>	than</td><td>	much</td></tr>	
+<tr><td>as</td><td>	has</td><td>	where</td><td>	that</td><td>	must</td></tr>	
+<tr><td>at</td><td>	had</td><td>	which</td><td>	<font color="red">the</font></td><td>	my</td></tr>	
+<tr><td>be</td><td>	he</td><td>	while</td><td>	their</td><td>	never</td></tr>	
+<tr><td>$</td><td>	have</td><td>	who</td><td>	them</td><td>	no</td></tr>	
+<tr><td>because</td><td>	her</td><td>	will</td><td>	then</td><td>	now</td></tr>	
+<tr><td>been</td><td>	here</td><td>	with</td><td>	there</td><td>	of</td></tr>	
+<tr><td>would</td><td>you</td><td>your</td><td>&nbsp;</td><td>&nbsp;</td>	</tr>					
+<tr><td colspan="5" nowrap="nowrap">a b c d e f g h i j k l m n o p q r s t u v w x y z	</td>
+</tr>
+</table>
+
+</td>
+<td  style="border-left: 1px solid silver; padding-left:10px; padding-right:10px;" valign="top">
+
+<table>
+<td>a </td><td>he </td><td>out </td><td>up</td></tr><tr> 
+<td>be </td><td>more </td><td>their </td><td>at </td></tr><tr> 
+<td>had </td><td>one</td><td> will</td><td> from </td></tr><tr> 
+<td>it </td><td>than </td><td>and </td><td>is </td></tr><tr> 
+<td>only </td><td>when </td><td>corp </td><td>not </td></tr><tr> 
+<td>she </td><td>also </td><td>in</td><td> says</td></tr><tr> 
+<td>was </td><td>by </td><td>ms </td><td>to</td></tr><tr> 
+<td>about </td><td>her</td><td> over </td><td>&nbsp;</td></tr><tr> 
+<td>because</td><td> most</td><td> there </td><td>&nbsp;</td></tr><tr> 
+<td>has </td><td>or</td><td> with </td><td>&nbsp;</td></tr><tr> 
+<td>its </td><td>that </td><td>are </td><td>&nbsp;</td></tr><tr> 
+<td>of </td><td>which </td><td>could </td><td>&nbsp;</td></tr><tr> 
+<td>some </td><td>an </td><td>inc </td><td>&nbsp;</td></tr><tr> 
+<td>we </td><td>can </td><td>mz</td><td>&nbsp;</td></tr><tr> 
+<td>after</td><td> his </td><td>s </td><td>&nbsp;</td></tr><tr> 
+<td>been </td><td>mr </td><td>they</td><td>&nbsp;</td></tr><tr> 
+<td>have </td><td>other</td><td> would</td><td>&nbsp;</td></tr><tr> 
+<td>last </td><td><font color="red">the</font></td><td>as</td><td>&nbsp;</td></tr><tr> 
+<td>on </td><td>who </td><td>for</td><td>&nbsp;</td></tr><tr> 
+<td>such </td><td>any </td><td>into </td><td>&nbsp;</td></tr><tr> 
+<td>were </td><td>co</td><td> no </td><td>&nbsp;</td></tr><tr> 
+<td>all </td><td>if </td><td>so</td><td>&nbsp;</td></tr><tr> 
+<td>but </td><td>mrs </td><td>this </td><td>&nbsp;</td>
+</table>
+
+</td>
+</tr>
+</table>
+
+<p>
+You'd think a pure count of frequency, how often the word occurs, would be enough to make a common group of words "stop words", but apparently not everyone agrees. The default SQL Server stop word list is much larger than the Oracle stop word list. What makes <b>"many"</b> a stop word to Microsoft, but not to Oracle? Who knows. And I'm not even going to show the <a href="http://dev.mysql.com/doc/refman/5.0/en/fulltext-stopwords.html">MySQL full text search stop word list</a> here, because it's <i>enormous</i>, easily double the size of the SQL Server stop word list. 
+<p>
+These are just the default stop word lists; that doesn't mean you're stuck with them. You can edit the stop word list for any of these databases. Depending on what you're searching, you might decide to have different stop words entirely, or maybe no stop words at all.
+<p>
+Way back in 2004, I ran a little experiment with Google -- over a period of a week, <b>I searched for an entire dictionary of ~110k individual English words and recorded how many hits Google returned for each</b>. 
+<p>
+Yes, this is probably a massive violation of the Google terms of service, but I tried to keep it polite and low impact -- I used Gzip compressed HTTP requests, specified only 10 search results should be returned per query (as all I needed was the count of hits), and I added a healthy delay between queries so I wasn't querying too rapidly. I'm not sure this kind of experiment would fly against today's Google, but it worked in 2004. At any rate, I <b>ended up with a MySQL database of 110,000 English words and their frequency in Google as of late summer 2004</b>. Here are the top results:
+<p>
+<table>
+<tr>
+<td>
+<table cellpadding=4 cellspacing=4 width=200>
+<tr><td>the</td><td align="right">522,000,000</td></tr>
+<tr><td>of</td><td align="right">515,000,000</td></tr>
+<tr><td>and</td><td align="right">508,000,000</td></tr>
+<tr><td>to</td><td align="right">507,000,000</td></tr>
+<tr><td>in</td><td align="right">479,000,000</td></tr>
+<tr><td>for</td><td align="right">468,000,000</td></tr>
+<tr><td>internet</td><td align="right">429,000,000</td></tr>
+<tr><td>on</td><td align="right">401,000,000</td></tr>
+<tr><td>home</td><td align="right">370,000,000</td></tr>
+<tr><td>is</td><td align="right">368,000,000</td></tr>
+<tr><td>by</td><td align="right">366,000,000</td></tr>
+<tr><td>all</td><td align="right">352,000,000</td></tr>
+<tr><td>this</td><td align="right">341,000,000</td></tr>
+<tr><td>with</td><td align="right">338,000,000</td></tr>
+<tr><td>services</td><td align="right">329,000,000</td></tr>
+<tr><td>about</td><td align="right">319,000,000</td></tr>
+<tr><td>or</td><td align="right">317,000,000</td></tr>
+<tr><td>at</td><td align="right">316,000,000</td></tr>
+<tr><td>email</td><td align="right">311,000,000</td></tr>
+<tr><td>from</td><td align="right">308,000,000</td></tr>
+<tr><td>are</td><td align="right">306,000,000</td></tr>
+<tr><td>website</td><td align="right">302,000,000</td></tr>
+<tr><td>us</td><td align="right">301,000,000</td></tr>
+<tr><td>site</td><td align="right">283,000,000</td></tr>
+<tr><td>sites</td><td align="right">279,000,000</td></tr>
+<tr><td>you</td><td align="right">276,000,000</td></tr>
+</table>
+
+</td>
+<td style="padding-left:20px;">
+
+<table cellpadding=4 cellspacing=4 width=200>
+<tr><td>information</td><td align="right">276,000,000</td></tr>
+<tr><td>contact</td><td align="right">274,000,000</td></tr>
+<tr><td>more</td><td align="right">271,000,000</td></tr>
+<tr><td>an</td><td align="right">271,000,000</td></tr>
+<tr><td>search</td><td align="right">269,000,000</td></tr>
+<tr><td>new</td><td align="right">269,000,000</td></tr>
+<tr><td>that</td><td align="right">267,000,000</td></tr>
+<tr><td>your</td><td align="right">262,000,000</td></tr>
+<tr><td>it</td><td align="right">261,000,000</td></tr>
+<tr><td>be</td><td align="right">258,000,000</td></tr>
+<tr><td>prices</td><td align="right">258,000,000</td></tr>
+<tr><td>as</td><td align="right">255,000,000</td></tr>
+<tr><td>page</td><td align="right">246,000,000</td></tr>
+<tr><td>hotels</td><td align="right">240,000,000</td></tr>
+<tr><td>products</td><td align="right">234,000,000</td></tr>
+<tr><td>other</td><td align="right">222,000,000</td></tr>
+<tr><td>have</td><td align="right">219,000,000</td></tr>
+<tr><td>web</td><td align="right">219,000,000</td></tr>
+<tr><td>copyright</td><td align="right">218,000,000</td></tr>
+<tr><td>download</td><td align="right">218,000,000</td></tr>
+<tr><td>not</td><td align="right">214,000,000</td></tr>
+<tr><td>can</td><td align="right">209,000,000</td></tr>
+<tr><td>reviews</td><td align="right">209,000,000</td></tr>
+<tr><td>our</td><td align="right">206,000,000</td></tr>
+<tr><td>use</td><td align="right">205,000,000</td></tr>
+<tr><td>women</td><td align="right">200,000,000</td></tr>
+</table>
+</td>
+
+</table>
+
+<p>
+Again, a very different list than what we saw from SQL Server or Oracle. I'm not sure why the results are so strikingly different. Also, the web (or at least Google's index of the web) is much bigger now than it was in 2004; <a href="http://www.google.com/search?q=the">a search for "the"</a> returns 13.4 <i>billion</i> results -- that's 25 times larger than my 2004 result of 522 million.
+<p>
+On Stack Overflow, <b>we warn users via an AJAX callback when they enter a title composed entirely of stop words</b>. It's hard to imagine a good title consisting solely of stopwords, but maybe that's just because our technology stack isn't sufficiently advanced yet.
+<p>
+Google doesn't seem to use stop words any more, as you can see from <a href="http://www.google.com/search?q=to+be+or+not+to+be">this search for "to be or not to be"</a>.
+<p>
+<a href="http://www.google.com/search?q=to+be+or+not+to+be"><img alt="google search: to be or not to be" src="http://www.codinghorror.com/blog/images/google-search-to-be-or-not-to-be.png" width="550" height="251" border="0" /></a>
+<p>
+<b>Indeed, I wonder if classic search stop words are relevant in modern computing</b>; perhaps they're a relic of early 90's computing that we haven't quite left behind yet.  We have server farms and computers perfectly capable of handling the extremely large result sets from querying common English words. A <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=1&p=1&f=G&l=50&d=PTXT&S1=7,409,383.PN.&OS=pn/7,409,383&RS=PN/7,409,383">Google patent</a> filed in 2004 and granted in 2008 seems to <a href="http://www.seobythesea.com/?p=1109">argue against the use of stop words</a>.
+<p>
+<blockquote>
+Sometimes words and phrases that might be considered stopwords or stop-phrases may actually be meaningful or important. For example, the word "the" in the phrase "the matrix" could be considered a stopword, but someone searching for the term may be looking for information about the movie "The Matrix" instead of trying to find information about mathematical information contained in a table of rows and columns (a matrix).
+<p>
+A search for "show me the money" might be looking for a movie where the phrase was an important line, repeated a few times in the movie. Or a search for "show me the way" might be a request to find songs using that phrase as a title from Peter Frampton or from the band Styx.
+<p>
+A <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&u=%2Fnetahtml%2FPTO%2Fsearch-adv.htm&r=1&p=1&f=G&l=50&d=PTXT&S1=7,409,383.PN.&OS=pn/7,409,383&RS=PN/7,409,383">Google patent</a> granted this week explores how a search engine might look at queries that contain stopwords or stop-phrases, and determine whether or not the stopword or stop-phrase is meaningful enough to include in search results shown to a searcher. 
+</blockquote>
+<p>
+Apparently, at least to Google, stop word warnings are a thing of the past.
+<p>
+<table><tr><td class="sidead">
+[advertisement] Read the largest case study ever published about lightweight peer code review in <i><a href="http://smartbearsoftware.com/codecollab-code-review-book.php?howheard=Coding+Horror+Blog+3" rel="nofollow">Best Kept Secrets of Peer Code Review</a></i>.  Free book, free shipping.
+</td></tr>
+</table>
+<p>]]></description>         
+         <guid>http://www.codinghorror.com/blog/archives/001186.html</guid>
+         <pubDate>Wed, 12 Nov 2008 23:59:59 -0800</pubDate>
+      </item>
+      <item>
+         <title>Feeding My Graphics Card Addiction</title>
+         <dc:creator>Jeff Atwood</dc:creator>
+         <link>http://www.codinghorror.com/blog/archives/001185.html</link>
+         <description><![CDATA[<p>
+Hello, my name is Jeff Atwood, and I'm an addict.
+<p>
+<b>I'm addicted... to video cards.</b>
+<p>
+In fact, I've been addicted since 1996. Well, maybe a few years earlier than that if you count some of the classic 2D accelerators. But the true fascination didn't start until 1996, when the first consumer hardware 3D accelerators came to market. I followed their development avidly in newsgroups, and tried desperately to be the first kid on my block to own the first one. And boy did I ever succeed. Here's a partial list of what I remember owning in those early days:
+<p>
+<ul>
+<li>Rendition Verite V1000
+<li>3dfx Voodoo
+<li>3dfx Voodoo 2
+<li>ATI Rage Pro
+<li>NVIDIA Riva 128
+<li>Matrox G400
+<li>NVIDIA Riva TNT
+<li>NVIDIA GeForce 256
+</ul>
+<p>
+(This is only a partial list, ranging from about 1996 to 2001 -- I don't want to bore you. And believe me, I could. I mean more than I already am.)
+<p>
+These were heady times indeed for 3D graphics enthusiasts (read: PC gamers). I distinctly remember playing <b>the first DOS-based Tomb Raider on my 3dfx Voodoo</b> using the proprietary <a href="http://en.wikipedia.org/wiki/Glide_API">GLIDE API</a>. Sure, it's pathetic by today's standards, but the leap from software 3D to fast hardware 3D was quite dramatic from the trenches -- and far more graphically powerful than any console available.
+<p>
+This was a time when you could post a thread on a usenet newsgroup about a brand new 3D card, and one of the creators of the hardware would respond to you, <a href="http://groups.google.com/group/comp.sys.ibm.pc.hardware.video/browse_thread/thread/e5e1b52b75dc4921?hl=en&ie=UTF-8">as Gary Tarolli did to me</a>:
+<p>
+<blockquote>
+I first want to say how rewarding it is to read all your reviews after having worked on the design of Voodoo Graphics (the chipset on the Orchid Righteous 3D board) for over two years. <b>I am one of the founders of 3Dfx</b> and one of our goals was to deliver the highest quality graphics possible to the PC gamer. It was and still is a very risky proposition because of the cost sensitivity of the marketplace.  But your reviews help convince me that we did the right thing.
+<p>
+I thought I would share with you a little bit about what is inside the 3Dfx Voodoo Graphics chipset.  There are 2 chips on the graphics board.  Each is a custom designed ASIC containing approximately 1 million transistors.  Although this number of transistors is on the order of a 486, it is a lot more powerful. Why?  Because the logic is dedicated to graphics and there's a lot of logic to boot.  For example, bilinear filtering of texture maps requires reading four 16-bit texels per pixel (that's 400 Mbytes/sec at 50 Mpixels/sec) and then computing the equation <code>red_result = r0*w0+r1*w1+r2*w2+r3*w3</code> where <code>r0:3</code> are the four red values and <code>w0:3</code> are the four weights based on the where the pixel center lies with respect to the four texels.  This is performed for each color channel (red, green, blue, alpha) resulting in 16 multiples and 12 additions or 28 operations per pixel.  At 50 Mpixels per second that is 1,400 Mops/sec.  The way this is designed in hardware is you literally place 16 multipliers and 12 adders on the chip and hook them together.  And this is only a small part of one chip.  There are literally dozens of multipliers and dozens of adders on each of the two chips dedicated only to graphics.  Each chip performs around 4,000 million actual operations per second, of which around one third are integer multiplies.  These are real operations performed - if you were to try to do these on a CPU (or a DSP) you must also do things like load/store instructions and conditions. In my estimation it would take about a 10,000 Mip computer (peak) to do the same thing that one of our chips does.  This is about 20 of the fastest P5-200 or P6-200 chips per one of our chips.  Not exactly cost-effective.  <b>So if you want to brag, you can say your graphics card has approximately the same compute power as 40 P5-200 chips.</b>  Of course, these numbers are more fun than they are meaningful.  What is meaningful in graphics is what you see on the screen. 
+<p>
+Now of course, if you were <a href="http://www.codinghorror.com/blog/archives/000234.html">writing a software renderer</a> for a game, you wouldn't attempt to perform the same calculations we perform on our chip on a general purpose CPU.  You would take shortcuts, like using 8-bit color with lookup tables for blending, or performing perspective correction every (n) pixels. The image quality will depend on how many shortcuts you take and how clever you are. Voodoo Graphics takes no shortcuts and was designed to give you the highest quality image possible within the constraint of 2 chips.  As your reviews have shown, it is evident that you can see the difference in quality and performance. 
+</blockquote>
+<p>
+There's nothing quite like having a little chat on usenet with the founder of the company who created the 3D accelerator you just bought. Like I said, it was a simpler time.
+<p>
+Just <i>imagine</i> something with the power of forty Pentium-200 chips! Well, you don't have to. There's probably a CPU more powerful than that in your PC right now. But the relative <i>scale</i> of difference in computational power between the CPU and a GPU hasn't changed -- special purpose GPUs <a href="http://www.codinghorror.com/blog/archives/000732.html">really are that much more powerful than general purpose CPUs</a>.
+<p>
+After that first taste of hot, sweet GPU power, I was hooked. Every year since then I've made a regular pilgrimage to the temple of the GPU Gods, paying my tithe and bringing home whatever the latest, greatest, state-of-the art in 3D accelerators happens to be. What's amazing is how often, even now, performance doubles yearly.
+<p>
+This year, I chose the NVIDIA GTX 280. Specifically, the <a href="http://www.jdoqocy.com/click-2338938-10440897?url=http%3A%2F%2Fwww.newegg.com%2FProduct%2FProduct.aspx%3FItem%3DN82E16814127360%26nm_mc%3DAFC-C8Junction%26cm_mmc%3DAFC-C8Junction-_-Video%2BCards-_-MSI-_-14127360&cjsku=N82E16814127360" target="_top">MSI NVIDIA GTX 280 OC</a>, with 1 GB of memory, overclocked out of the box. I hate myself for succumbing to mail-in rebates, but they get me every time -- this card was $375 after rebate.
+<p>
+<a href="http://www.jdoqocy.com/click-2338938-10440897?url=http%3A%2F%2Fwww.newegg.com%2FProduct%2FProduct.aspx%3FItem%3DN82E16814127360%26nm_mc%3DAFC-C8Junction%26cm_mmc%3DAFC-C8Junction-_-Video%2BCards-_-MSI-_-14127360&cjsku=N82E16814127360" target="_top"><img alt="msi nvidia 280 gtx video card" src="http://www.codinghorror.com/blog/images/msi-280-gtx-video-card.jpg" width="526" height="331" border="0" /></a>
+<p>
+$375 is expensive, but this is still the fastest single card configuration available at the moment. It's also one heck of a lot cheaper than the <a href="http://techreport.com/articles.x/14934/17">comically expensive $650 MSRP</a> these cards were introduced at in June. Pity the poor rubes who bought these cards at launch! Hey, wait a second -- I've been one of those rubes for 10 years now. Never mind.
+<p>
+This is the perfect time to buy a new video card -- before Thanksgiving and running up to Christmas is prime game release season. All the biggest games hit right about now. Courtesy of my new video card and the <a href="http://www.amazon.com/gp/search?ie=UTF8&keywords=fallout%203&tag=codinghorror-20&index=videogames&linkCode=ur2&camp=1789&creative=9325">outstanding Fallout 3</a>, my productivity last week hit an all-time low. But oh, was it ever worth it. I'm a long time Fallout fan, even to the point that <a href="http://wumpus.homestead.com/">our wedding pre-invites had secret geek Fallout art on them</a>. Yes, that was approved by my wife, because <i>she is awesome</i>.
+<p>
+I must say that experiencing the wasteland at 60 frames per second, 1920 x 1200, in <a href="http://www.codinghorror.com/blog/archives/000324.html">high dynamic range lighting</a>, with every single bit of eye candy set to maximum, was <i>so</i> worth it. I dreamt of the wastelands. 
+<p>
+<a href="http://www.codinghorror.com/blog/images/fallout3-screenshot-large.html"><img alt="fallout 3 screenshot" src="http://www.codinghorror.com/blog/images/fallout3-screenshot-small.jpg" width="720" height="450" border="0" /></a>
+<p>
+In fact, even after reaching the end of the game, I'm still dreaming of them. I've heard some claim <a href="http://www.amazon.com/gp/search?ie=UTF8&keywords=fallout%203&tag=codinghorror-20&index=videogames&linkCode=ur2&camp=1789&creative=9325">Fallout 3</a> is just Oblivion with guns. To those people, I say this: <i>you say that like it's a bad thing</i>. The game is incredibly true to the Fallout mythos. It's harsh, gritty, almost oppressive in its presentation of the unforgiving post-apocalyptic wasteland -- and yet there's always an undercurrent of dark humor. There are legitimate good and evil paths to every quest, and an entirely open-ended world to discover.
+<p>
+No need to take my word for it, though. I later found some <a href="http://www.techspot.com/article/125-fallout3-performance/page4.html">hardware benchmark roundups</a> that confirmed my experience: the GTX 280 is <i>crazy</i> fast in Fallout 3.
+<p>
+<img alt="fallout 3 video card benchmarks" src="http://www.codinghorror.com/blog/images/fallout-3-benchmarks.png" width="475" height="465" border="0" />
+<p>
+Of course, we wouldn't be responsible PC owners if we didn't like to mod our hardware a bit. That's what <a href="http://www.codinghorror.com/blog/archives/000348.html">separates us from those knuckle-dragging Mac users: skill</a>. (I kid, I kid!) First, you'll want to download a copy of the <a href="http://www.techpowerup.com/gpuz/">amazing little GPU-Z application</a>, which will show you in real time what your video card is doing.
+<p>
+A little load testing is always a good idea, particularly since I got a bum card with my first order -- it would immediately shoot up to 105 C and throttle within a minute or two of doing anything remotely stressful in 3D. It <i>worked</i>, but the resulting stuttering was intolerable, and the fan noise was unpleasant as the card worked overtime to cool itself down. I'm not sure how I would have figured that out without the real time data and graphs that GPU-Z provides. I returned it for a replacement, and the replacement's behavior is much more sane; compare GPU-Z results at idle (left) and under <a href="http://www.daionet.gr.jp/~masa/rthdribl/">RTHDRIBL</a> load (right):
+<p>
+<table cellpadding=4>
+<tr>
+<td>
+<img alt="geforce gtx 280 idle graph" src="http://www.codinghorror.com/blog/images/geforce-gtx-280-idle-graph.png" width="357" height="184" border="0" />
+</td>
+<td>
+<img alt="geforce gtx 280 load graph" src="http://www.codinghorror.com/blog/images/geforce-gtx-280-load-graph.png" width="357" height="184" border="0" />
+</td>
+</tr>
+</table>
+<p>
+Fortunately, there's not much we need to do to improve things. The Nvidia 8800 and GTX series are equipped with outstanding integrated coolers which directly exhaust the GPU heat from the back of the PC. I'd much rather these high powered GPUs exhaust their heat outward instead of blowing it around inside the PC, so this is the preferred configuration out of the box. However, the default exhaust grille is <i>incredibly</i> restrictive. I cut half of the rear plate away with a dremel, which <b>immediately reduced fan speeds 20% (and thus, noise 20%)</b> due to the improvement in airflow.
+<p>
+<img alt="gtx rear plate, proposed cut" src="http://www.codinghorror.com/blog/images/gtx-rear-plate-cut.jpg" width="534" height="280" border="0" />
+<p>
+Just whip out your trusty dremel (you <i>do</i> own a dremel, right?) and cut along the red line. It's easy. If you're a completionist, you can <a href="http://userwww.sfsu.edu/~douglee/8800GTS/8800GTS.htm">apply better thermal paste to the rest of the card</a> to eke out a few more points of efficiency with the cooler.
+<p>
+Extreme? Maybe. But <a href="http://www.codinghorror.com/blog/archives/000665.html">I like my PCs powerful and quiet</a>. That's another thing that attracted me to the GTX 280 -- for a top of the line video card, it's <a href="http://techreport.com/articles.x/14934/16">amazingly efficient at idle</a>. And despite my gaming proclivities, it will be idle 98% of the time.
+<p>
+<a href="http://www.anandtech.com/video/showdoc.aspx?i=3341&p=22"><img alt="gtx 280 power consumption" src="http://www.codinghorror.com/blog/images/gtx-280-power-consumption-2.png" width="467" height="361" border="0" /></a>
+<p>
+I do love this new video card, but I say that every year. I try not to grow too attached. I'm sure this video card will be replaced in a year with something even better.
+<p>
+What else would you expect from an addict?
+<p>
+<table><tr><td class="sidead">
+[advertisement] Complimentary paperback book on lightweight peer code review.  10 essays from industry experts.  Free shipping.  <a href="http://smartbearsoftware.com/codecollab-code-review-book.php?howheard=Coding+Horror+Blog+2" rel="nofollow">Order <i>Best Kept Secrets of Peer Code Review</i></a>.
+</td></tr>
+</table>
+<p>]]></description>         
+         <guid>http://www.codinghorror.com/blog/archives/001185.html</guid>
+         <pubDate>Mon, 10 Nov 2008 23:59:59 -0800</pubDate>
+      </item>
+      <item>
+         <title>Coding: It's Just Writing</title>
+         <dc:creator>Jeff Atwood</dc:creator>
+         <link>http://www.codinghorror.com/blog/archives/001184.html</link>
+         <description><![CDATA[<p>
+In <a href="http://www.codingthewheel.com/archives/programming-aphorisms-of-strunk-and-white">The Programming Aphorisms of Strunk and White</a>, James Devlin does a typically excellent job of examining something I've been noticing myself over the last five years:
+<p>
+<b>The unexpected relationship between writing code and <i>writing</i>.</b>
+<p>
+There is perhaps no greater single reference on the topic of writing than Strunk and White's <a href="http://www.amazon.com/dp/020530902X/?tag=codinghorror-20">The Elements of Style</a>. It's one of those essential books you discover in high school or college, and then spend the rest of your life wondering why other textbooks waste your time with all those <i>unnecessary words</i> to get their point across. Like all truly great books, it permanently changes the way you view the world, just a little.
+<p>
+Wikipedia provides <a href="http://en.wikipedia.org/wiki/The_Elements_of_Style">a bit of history and context</a> for this timeless book:
+<p>
+<blockquote>
+[The Elements of Style] was originally written in 1918 and privately published by Cornell University professor William Strunk, Jr., and was first revised with the help of Edward A. Tenney in 1935. In 1957, it came to the attention of <a href="http://en.wikipedia.org/wiki/E._B._White">E. B. White</a> at The New Yorker. White had studied under Strunk in 1919 but had since forgotten the "little book" which he called a "forty-three-page summation of the case for cleanliness, accuracy, and brevity in the use of English."
+<p>
+<a href="http://www.amazon.com/dp/020530902X/?tag=codinghorror-20"><img alt="The Elements of Style" src="http://www.codinghorror.com/blog/images/the-elements-of-style.png" width="254" height="400" border="0" /></a>
+<p>
+A few weeks later, White wrote a piece for The New Yorker lauding Professor Strunk and his devotion to "lucid" English prose. The book's author having died in 1946, Macmillan and Company commissioned White to recast a new edition of The Elements of Style, published in 1959. In this revision, White independently expanded and modernized the 1918 work, creating the handbook now known to millions of writers and students as, simply, "Strunk and White". White's first edition sold some two million copies, with total sales of three editions surpassing ten million copies over a span of four decades.
+</blockquote>
+<p>
+This is all well and good if you plan to become a writer, but what's the connection between this timeless little book and writing a computer program?
+<p>
+Writing programs that the computer can understand is challenging, to be sure. That's why so few people, in the big scheme of things, <a href="http://www.codinghorror.com/blog/archives/000635.html">become competent programmers</a>. But writing paragraphs and sentences that your fellow humans can understand -- well, that's even <i>more</i> difficult. The longer you write programs and the older you get, eventually you come to realize that in order to truly succeed, <b>you have to write programs that can be understood by both the computer <i>and</i> your fellow programmers.</b> 
+<p>
+Of all the cruel tricks in software engineering, this has to be the cruelest. Most of us entered this field because <a href="http://www.codinghorror.com/blog/archives/000890.html">the machines are so much more logical than people</a>. And yet, even when you're writing code explicitly intended for the machine, you're still <i>writing</i>. For other people. Fallible, flawed, distracted human beings just like you. And that's the truly difficult part.
+<p>
+I think that's what Knuth was getting at with his concept of <a href="http://www.literateprogramming.com/knuthweb.pdf">Literate Programming</a> (pdf).
+<p>
+<blockquote>
+Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.
+<p>
+<b>The practitioner of literate programming can be regarded as an essayist, whose main concern is with exposition and excellence of style.</b> Such an author, with thesaurus in hand, chooses the names of variables carefully and explains what each variable means. He or she strives for a program that is comprehensible because its concepts have been introduced in an order that is best for human understanding, using a mixture of formal and informal methods that reinforce each other.
+</blockquote>
+<p>
+This is, of course, much easier said than done. <b>Most of us spend our entire lives learning how to write effectively.</b> A book like <a href="http://www.amazon.com/dp/020530902X/?tag=codinghorror-20">The Elements of Style</a> can provide helpful guideposts that translate almost wholesale to the process of coding. I want to highlight the one rule from Elements of Style that I keep coming back to, over and over, since originally discovering the book so many years ago.
+<p>
+<blockquote>
+<b>13. Omit needless words.</b>
+<p>
+Vigorous writing is concise. A sentence should contain no unnecessary words, a paragraph no unnecessary sentences, for the same reason that a drawing should have no unnecessary lines and a machine no unnecessary parts. This requires not that the writer make all his sentences short, or that he avoid all detail and treat his subjects only in outline, but that every word tell.
+</blockquote>
+<p>
+What does this say to you about your writing? About <a href="http://nedbatchelder.com/text/deleting-code.html">your code?</a> 
+<p>
+Coding, after all, is just writing. How hard can it be?
+<p>
+<table><tr><td class="sidead">
+[advertisement] Peer Code Review. No meetings. No busy-work. Customizable workflows and reports. Try Jolt Award-winning <a href="http://smartbear.com/codecollab.php?chblog1" rel="nofollow">Code Collaborator</a>.
+</td></tr>
+</table>
+<p>]]></description>         
+         <guid>http://www.codinghorror.com/blog/archives/001184.html</guid>
+         <pubDate>Sat, 08 Nov 2008 23:59:59 -0800</pubDate>
+      </item>
+      <item>
+         <title>Remembering the Dynabook</title>
+         <dc:creator>Jeff Atwood</dc:creator>
+         <link>http://www.codinghorror.com/blog/archives/001183.html</link>
+         <description><![CDATA[<p>
+My <a href="http://www.codinghorror.com/blog/archives/001179.html">recent post on netbooks</a> reminded me of <a href="http://en.wikipedia.org/wiki/Alan_Kay">Alan Kay's</a> original 1972 <a href="http://www.mprove.de/diplom/gui/Kay72a.pdf">Dynabook concept</a> (pdf).
+<p>
+<blockquote>
+We now have some reasons for wanting the DynaBook to exist. Can it be fabricated from currently invented technology in quantities large enough to
+bring a selling (or renting) price within reach of millions of potential users? The set of considerations which pertain to the more practical aspects of the device (such as size, cost, capability, etc.) are just as important as the more abstruse philosophy which prompted us in the first place. The next few pages discuss some of the tradeoffs involved, and will attempt to convince the reader that a target price of $500 is not totally outrageous. The current cost trends and size of the various components do offer considerable hope that the target can be reached. The analogy to color TVs which can be sold for under S500 is also important to keep in mind.
+<p>
+Now, what should the DynaBook be?
+<p>
+<img alt="original dynabook diagram" src="http://www.codinghorror.com/blog/images/original-dynabook-diagram-large.png" width="546" height="664" border="0" />
+<p>
+The size should be no larger than a notebook; weight less than 4 pounds. The visual display should be able to present at least 4000 printing quality characters with contrast ratios approaching that of a book. Dynamic graphics of reasonable quality should be possible; there should be removable local file storage of at
+least one million characters (about 500 ordinary book pages) traded off against several hours of audio (voice/music) files.
+<p>
+<img alt="dynabook prototype" src="http://www.codinghorror.com/blog/images/dynabook-prototype.jpg" width="307" height="230" border="0" />
+<p>
+The active interface should be a language which uses linguistic concepts not far removed from the owner of the device. The owner will be able to maintain and edit his own files of text and programs when and where he chooses. He can use
+his DynaBook as a terminal when at work (or as a connection to the library system when in school).
+<p>
+When he is done perusing and has discovered information that he wishes to abstract and take with him, it can rapidly be transferred to his local file storage. The umbilical connection will supply not only information but also extra power for any motors the device might have, allowing high bandwidth transmission of about 300K bits/sec to the file storage, or one 500-page-book in 1/2 minute. The batteries will also be automatically recharging during this connection.
+</blockquote>
+<p>
+A netbook with a 3G wireless / wifi internet connection is almost eerily close to Kay's original <a href="http://en.wikipedia.org/wiki/Dynabook">Dynabook</a> concept. <b>It only took, what, thirty-six years?</b>
+<p>
+Most netbooks have coalesced around these rough specs, as documented on the excellent <a href="http://www.liliputing.com/">netbook-centric website Liliputing</a>:
+<p>
+<ul>
+<li>1.6GHz Intel Atom CPU
+<li>9 or 10 inch, 1024 x 600 pixel display
+<li>high capacity hard drive or relatively small (and cheap/slow) solid state disk
+<li>802.11 b/g wireless
+<li>2.5 hour battery life with standard size battery
+<li>2 to 3 pounds
+<li>approximately $350 - $399
+</ul>
+<p>
+Do netbooks meet the criteria outlined in Kay's original 1972 Dynabook paper? To my eye, yes. They're far cheaper once you factor in inflation relative to his original $500 price point in 1972 dollars. I referred to netbooks as <a href="http://www.codinghorror.com/blog/archives/001179.html">portable web browsers</a> and I stilll believe that is in fact what they are -- inexpensive, ubiquitious, (mostly) full featured portals into the larger internet.
+<p>
+But Kay, in a recent <a href="http://blog.wired.com/gadgets/2008/11/museum-celebrat.html">interview with Wired</a>, isn't so sure this is a good thing:
+<p>
+<blockquote>
+<b>Wired.com:</b> What do you think of netbooks? They're lightweight and small -- pretty close to two pounds. Do they still need work before they can meet your definition of a Dynabook?
+<p>
+<b>Kay:</b> I'd like to think that they are finding a form factor and weight that fits human beings better, but I'm presuming that it is because many people use only a small part of what they could do on their larger machines, and much of what they do use computers for can be done through a browser or a few simple apps. So this would be somewhat similar to the limited uses of computing that fit into other even smaller devices such as phones and PDAs. If so, then this is more disappointing than something to be cheered about.
+<p>
+<b>I cringe every time I use a browser for many reasons.</b> The browser people had a chance to make a more integrated UI and functionality, but really did pretty much the opposite in almost all respects. But, because of the attraction, and even some real value of stuff on the internet, there is more pressure to do better. I would expect to see some real alternatives to the typical "bad defacto standard" browsers we've had to put up with.
+<p>
+There is much to be done here, and to even get back to a number of important integration and workflow ideas that were part of the PARC UI.
+</blockquote>
+<p>
+Apparently Kay doesn't think much of the current status quo, where you define the status quo as OS X, Windows, or Linux. I suspect much of Kay's objection to the web browser interface is the general passivity of browsing the web; bear in mind that Kay is an educator and originally intended Dynabooks as tools for children to create and explore with <a href="http://www.codinghorror.com/blog/archives/001026.html">something like Logo</a>.
+<p>
+Personally, my only objection to current netbook platforms is the stupidly huge power draw of the creaky old Intel 945 motherboard chipset they are <a href="http://techreport.com/articles.x/15204/9">typically built on</a>. 
+<p>
+<blockquote>
+Looking at these results, one can't help but think that <b>the Atom could be an astoundingly power-efficient processor when coupled with a chipset and platform with a lower power use floor.</b> Intel, of course, has such things in the works for other markets. 
+</blockquote>
+<p>
+This is why most <i>current</i> netbooks have mediocre 2 to 2.5 hour battery life -- unless you pick up the mongo extra-large extended batteries, which of course increase size and weight.
+<p>
+I hooked up my <a href="http://www.codinghorror.com/blog/archives/000353.html">trusty old kill-a-watt</a> to my wife's netbook and measured almost no difference at all in power consumption between idle and full Prime 95 load. <a href="http://www.anandtech.com/cpuchipsets/showdoc.aspx?i=3276">Intel's Atom CPU</a> is truly astonishingly efficient -- a feat all the more impressive when you realize that on most laptops <a href="http://www.codinghorror.com/blog/archives/001099.html">the CPU is, by far, the number one consumer of power</a>. On our netbook, <b>only 1 or 2 watts</b> of the total ~25 watt idle power draw is attributable to the CPU, a tiny fraction of the overall power consumption. I tried turning off wireless and dimming the screen, but I couldn't get the power draw floor below 18 watts -- that's all attributable to the chipset.
+<p>
+Intel did a <a href="http://www.anandtech.com/cpuchipsets/showdoc.aspx?i=3276">fantastic job on the Atom CPU</a>, but they completely phoned it in on the chipset. The next generation of netbooks with more power efficient chipsets should <i>easily</i> double battery life. No question.
+<p>
+<b>I think netbooks will be as revolutionary as Kay originally predicted with his DynaBook concept</b>. Though we have only seen the beginning of this trend, I'm not sure the big players really understand how much these early netbooks have <a href="http://blog.wired.com/gadgets/2008/09/netbooks-evolvi.html"><i>already</i> changed the game</a>. It'll probably take several more years for the rest of the market to catch on.
+<p>
+<table><tr><td class="sidead">
+[advertisement] Peer code review without meetings, paperwork, or stopwatches?  No wonder <a href="http://smartbear.com/codecollab.php?chblog4">Code Collaborator</a> won the Jolt Award.
+</td></tr>
+</table>
+<p>]]></description>         
+         <guid>http://www.codinghorror.com/blog/archives/001183.html</guid>
+         <pubDate>Tue, 04 Nov 2008 23:59:59 -0800</pubDate>
+      </item>
+      <item>
+         <title>HCI Remixed</title>
+         <dc:creator>Jeff Atwood</dc:creator>
+         <link>http://www.codinghorror.com/blog/archives/001182.html</link>
+         <description><![CDATA[<p>
+I like to take one or two books with me when I travel, and one of the books I chose for this trip is <a href="http://www.amazon.com/exec/obidos/ASIN/0262050889/codinghorror-20">HCI Remixed</a>. 
+<p>
+<a href="http://www.amazon.com/exec/obidos/ASIN/0262050889/codinghorror-20"><img alt="hci-remixed" src="http://www.codinghorror.com/blog/images/hci-remixed.jpg" width="371" height="475" border="0" /></a>
+<p>
+Sometimes the books I choose are a bust. Fortunately that didn't happen this time.
+<p>
+HCI Remixed covers all the major milestones in the field of human computer interaction. And when I say major, I mean it: things like <a href="http://www.youtube.com/watch?v=JfIgzSoTMOs">Douglas Engelbart's famous demonstration</a>, now referred to as <a href="http://en.wikipedia.org/wiki/The_Mother_of_All_Demos">The Mother of All Demos</a>:
+<p>
+<blockquote>
+On December 9, 1968, Douglas C. Engelbart and the group of 17 researchers working with him in the Augmentation Research Center at Stanford Research Institute in Menlo Park, CA, presented a 90-minute live public demonstration of the online system, NLS, they had been working on since 1962. The public presentation was a session in the Fall Joint Computer Conference held at the Convention Center in San Francisco, and it was attended by about 1,000 computer professionals. This was the <b>public debut of the computer mouse</b>. But the mouse was only one of many innovations demonstrated that day, including hypertext, object addressing and dynamic file linking, as well as shared-screen collaboration  involving two persons at different sites communicating over a network with audio and video interface. 
+</blockquote>
+<p>
+So, all those trappings of modern computing that we take for granted today? Engelbart demonstrated them all <i>two years before I was born</i>. It just took a while for the rest of the world to catch up to his vision.
+<p>
+That's the lesson of many of the groundbreaking HCI discoveries presented in this book. Some people see further. Engelbart was so far ahead of his time in 1968 that his demonstration wasn't taken seriously -- it seemed absurd and impractical. It really makes you wonder <b>which of today's HCI researchers we're ignoring but shouldn't be</b>.
+<p>
+The book also takes an interesting approach; it doesn't summarize the papers, instead, it presents the reflections of current working HCI professionals on the papers. It's a little bit meta. You're hearing the impact of these HCI discoveries -- some big, some small -- as related by young researchers who were heavily influenced by them. 
+<p>
+As a <b>primer and overview of the field of human computer interaction</b>, it's tough to beat. Reading this reminds me how far we've come, and yet how far we have to go.
+<p>
+<table><tr><td class="sidead">
+[advertisement] Read the largest case study ever published about lightweight peer code review in <i><a href="http://smartbearsoftware.com/codecollab-code-review-book.php?howheard=Coding+Horror+Blog+3" rel="nofollow">Best Kept Secrets of Peer Code Review</a></i>.  Free book, free shipping.
+</td></tr>
+</table>
+<p>]]></description>         
+         <guid>http://www.codinghorror.com/blog/archives/001182.html</guid>
+         <pubDate>Thu, 30 Oct 2008 23:22:58 -0800</pubDate>
+      </item>
+
+   <feedburner:awareness xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0">http://api.feedburner.com/awareness/1.0/GetFeedData?uri=codinghorror</feedburner:awareness></channel>
+</rss>

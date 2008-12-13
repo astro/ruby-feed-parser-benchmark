@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+
+<channel>
+	<title>Joel on Software</title> 
+	<link>http://www.joelonsoftware.com</link> 
+	<description>Painless Software Management</description> 
+
+	<language>en-us</language> 
+	<copyright>Copyright 1999-2008 Joel Spolsky.</copyright> 
+
+	<managingEditor>Joel Spolsky</managingEditor> 
+
+	<webMaster>webmaster@fogcreek.com</webMaster> 
+
+<image>
+	<title>Joel On Software</title> 
+	<url>http://www.joelonsoftware.com/RssJoelOnSoftware.jpg</url> 
+	<link>http://www.joelonsoftware.com</link> 
+	<width>144</width> 
+	<height>25</height> 
+	<description>Painless Software Management</description> 
+</image>
+
+<item>
+	<title>Amnesia</title>
+	<link>http://www.joelonsoftware.com/items/2008/12/10.html</link>
+	<author>Joel Spolsky</author>
+	<guid isPermaLink="true">http://www.joelonsoftware.com/items/2008/12/10.html</guid>
+	<pubDate>10 Dec 2008 00:06:50 EST</pubDate>
+	<description>
+<![CDATA[
+<a href="http://www.joelonsoftware.com/"><img src="http://www.joelonsoftware.com/i/rsshead.jpg" width="100" height="44" align="right" border="0" style="margin-left:10px; margin-bottom:10px;" ></a>
+<p>Mysteriously, about a week ago, Dan, the program manager designing most of the new features in FogBugz 7, came to ask me what features I thought should go in the timesheet reporting plug-in.</p>
+<p>The timesheet reporting plug-in? What’s that?</p>
+<p>It sounded dangerously close to a feature that could be used by managers to see reports on developers’ timesheets. Like, something a weak manager would use to figure out who is the best developer on the team or to make sure everybody is pounding away at the code at a suitable pace.</p>
+<p>We have a theory, here, that this is a bad idea. Using timesheets as a performance metric can lead to only one thing: bad data in timesheets.</p>
+<p><span class="side"><a href="http://www.joelonsoftware.com/items/2008/12/10desk.jpg"><img alt="" src="http://www.joelonsoftware.com/items/2008/12/10desk-thumbnail.jpg" /></a></span>The first time your boss comes into your office and gives you grief because it looks like you only did 7 hours of work yesterday, you’re going to make sure <em>that </em>never happens again. And then, suddenly, behold, the timesheets show everyone working 12 hour days, and all the data in the timesheets becomes instantly bogus. And <a href="http://www.joelonsoftware.com/items/2007/10/26.html">EBS</a>, our statistical technique for predicting ship dates, suddenly stops working, because you’re feeding it data that is meant to get your boss to stop bugging you, not accurate data.</p>
+<p>Now, this theory may be completely off the wall, but it is our theory, and until we hear something better, that’s the one we’re going with.</p>
+<p>So our policy has been that if you want to get the timesheet data, well, yes, you can, we’ll give you a way to get it in CSV format or XML format or something and then you can abuse it all you want... go ahead, hang yourself, but we’re sure as heck not going to make it easy for you with a pretty report all tied up with a bow that you might click on by accident, as you browse around, because thou shalt not put a stumbling block before the blind.</p>
+<p>Anyway, I said to Dan, “What the heck? Who on earth approved <em>that</em> feature?” and walked down the hall to the FogBugz team to beg them not to do it. Correction: I <em>razor-scootered</em> down the hall. It’s extremely undignified; I’m way too old for childish toys; but jeez it’s like a whole city block from my office to the FogBugz team’s office, so, OK, it’s pathetic, but razor scooting is the fastest way to get there.</p>
+<p>I am not sure what the FogBugz team will decide... it’s their call, not mine. Apparently nice people email us and ask for that exact feature and offer to give us little green rectangular things that can be exchanged for other goods and services if we do the feature. So it’s a dilemma, and I’m the one who knows the least about it, so I hope they won’t listen to me. Well, secretly, I hope they will, but don’t tell them that. Sometimes they do and sometimes they don’t.</p>
+<p>But anyway... that’s not the point of the story. The point of the story is that today I was reviewing some video footage to see if there was anything worth including in the next documentary <a href="http://www.boondogglefilms.com/">Lerone</a> is making about software development. And the footage I was reviewing was of a meeting several weeks ago to go over the final list of features for FogBugz 7 and make sure they all had the right priorities assigned to them.</p>
+<p>And there, on the video, I had to watch myself listening to Babak explaining the timesheet reporting plug-in, and the record shows that I appeared to understand what was being said to me, and, I’m afraid to admit, I appear to have given my tacit approval to the feature.</p>
+<p>AHEM.</p>
+<p>In short, I’m turning into one of those crazy bosses that approves things, and then gets upset when you do them. This keeps happening. I must be driving people <em>crazy</em>.</p>
+<p>In my defense, usually what happens is that the <em>thing</em> is described to me in general, vague terms and it sounds great, and I say, “sounds great!” and then I see the thing a little bit closer, and it’s awful, and by this time, I’ve forgotten about the time I said it sounds great. Just assume I have amnesia or something. I can’t form new memories. Did I tell you about the razor scooter yet? OH IT’S FUN.</p>
+<p>The solution, of course, is what I’ve been saying all along. STOP FRIGGIN’ LISTENING TO ME. I don’t know what I’m talking about. If you work for me, you’re welcome to get my advice, but you have to make your own decision because chances are you’ve thought MUCH MORE about the issue than I have and in fact we probably hired you because you’re smarter than I am.</p>
+<p>Not loving your job? Visit the <a href="http://jobs.joelonsoftware.com/">Joel on Software Job Board</a>: Great software jobs, great people.
+</p>
+]]>
+</description>
+</item>
+
+<item>
+	<title>Stack Overflow Podcast #32</title>
+	<link>http://www.joelonsoftware.com/items/2008/12/03.html</link>
+	<author>Joel Spolsky</author>
+	<guid isPermaLink="true">http://www.joelonsoftware.com/items/2008/12/03.html</guid>
+	<pubDate>03 Dec 2008 21:04:06 EST</pubDate>
+	<description>
+<![CDATA[
+<a href="http://www.joelonsoftware.com/"><img src="http://www.joelonsoftware.com/i/rsshead.jpg" width="100" height="44" align="right" border="0" style="margin-left:10px; margin-bottom:10px;" ></a>
+<!--p--><p><a href="http://blog.stackoverflow.com/2008/12/podcast-32/"><img style="MARGIN-LEFT: 5px" alt="" src="http://www.joelonsoftware.com/sidebar/StackOverflow.PNG" align="right" border="0" /></a>This week Jeff and I talk about software piracy, some performance improvements on the site, dealing with criticism, great programmer’s offices, and more, in <a href="http://blog.stackoverflow.com/2008/12/podcast-32/">Stack Overflow Podcast #32</a>.</p>
+<p>Not loving your job? Visit the <a href="http://jobs.joelonsoftware.com/">Joel on Software Job Board</a>: Great software jobs, great people.
+</p>
+]]>
+</description>
+</item>
+
+<item>
+	<title>My Style of Servant Leadership</title>
+	<link>http://www.joelonsoftware.com/items/2008/12/01.html</link>
+	<author>Joel Spolsky</author>
+	<guid isPermaLink="true">http://www.joelonsoftware.com/items/2008/12/01.html</guid>
+	<pubDate>01 Dec 2008 14:34:11 EST</pubDate>
+	<description>
+<![CDATA[
+<a href="http://www.joelonsoftware.com/"><img src="http://www.joelonsoftware.com/i/rsshead.jpg" width="100" height="44" align="right" border="0" style="margin-left:10px; margin-bottom:10px;" ></a>
+<p><a href="http://www.joelonsoftware.com/inc.html?15"><img style="MARGIN-LEFT: 5px" alt="" src="http://www.joelonsoftware.com/items/2008/08/26Inc.PNG" align="right" border="0" /></a>“As for the sergeant major’s job, it basically consisted of two main duties: being the chief disciplinary officer and maintaining the physical infrastructure of the base. As such, he was a terror to everyone in the battalion. Most people knew him only from the way he strutted around, conducting inspections, screaming at the top of his lungs, and demanding impossibly high standards of order and cleanliness in what was essentially a bunch of tents in the middle of the desert—tents that were alternately dust-choked or mud-choked, depending on the rain situation.”</p>
+<p>From my latest Inc. column: <a href="http://www.joelonsoftware.com/inc.html?15">My Style of Servant Leadership</a></p>
+<p>Not loving your job? Visit the <a href="http://jobs.joelonsoftware.com/">Joel on Software Job Board</a>: Great software jobs, great people.
+</p>
+]]>
+</description>
+</item>
+
+<item>
+	<title>Stack Overflow Podcast #31</title>
+	<link>http://www.joelonsoftware.com/items/2008/11/27.html</link>
+	<author>Joel Spolsky</author>
+	<guid isPermaLink="true">http://www.joelonsoftware.com/items/2008/11/27.html</guid>
+	<pubDate>27 Nov 2008 22:56:45 EST</pubDate>
+	<description>
+<![CDATA[
+<a href="http://www.joelonsoftware.com/"><img src="http://www.joelonsoftware.com/i/rsshead.jpg" width="100" height="44" align="right" border="0" style="margin-left:10px; margin-bottom:10px;" ></a>
+<!-- p --><p><a href="http://blog.stackoverflow.com/2008/11/podcast-31/"><img style="MARGIN-LEFT: 5px" alt="" src="http://www.joelonsoftware.com/sidebar/StackOverflow.PNG" align="right" border="0" /></a>In the Thanksgiving edition of the <a href="http://blog.stackoverflow.com/2008/11/podcast-31/">Stack Overflow podcast, episode 31</a>, Jeff and I discuss math, status reports, the economic downturn, the business case for nice office space, SQL parameters, programming “slumps,” and a whole lot more.</p>
+<p>Not loving your job? Visit the <a href="http://jobs.joelonsoftware.com/">Joel on Software Job Board</a>: Great software jobs, great people.
+</p>
+]]>
+</description>
+</item>
+
+<item>
+	<title>Exploding Offer Season</title>
+	<link>http://www.joelonsoftware.com/items/2008/11/26.html</link>
+	<author>Joel Spolsky</author>
+	<guid isPermaLink="true">http://www.joelonsoftware.com/items/2008/11/26.html</guid>
+	<pubDate>26 Nov 2008 11:13:49 EST</pubDate>
+	<description>
+<![CDATA[
+<a href="http://www.joelonsoftware.com/"><img src="http://www.joelonsoftware.com/i/rsshead.jpg" width="100" height="44" align="right" border="0" style="margin-left:10px; margin-bottom:10px;" ></a>
+<p>If you’re a college student applying for jobs or summer internships, you’re at something of a disadvantage when it comes to negotiation. That’s because the recruiter does these negotiations for a living, while you’re probably doing it for the first time.</p>
+<p><img style="MARGIN-LEFT: 5px" height="200" alt="" src="http://www.joelonsoftware.com/items/2008/11/26FogCreek01.jpg" width="300" align="right" border="0" />I want to warn you about one trick that’s very common with on-campus recruiters: the cynical “exploding offer.” </p>
+<p>Here’s what happens. You get invited to interview at a good company. There’s an on-campus interview; maybe you even fly off to the company HQ for another round of interviews and cocktails. You ace the interview, of course. They make you an offer.</p>
+<p>“That sounds great,” you say.</p>
+<p>“So, when can you let us know?”</p>
+<p>“Well,” you tell them, “I have another interview coming up in January. So I’ll let you know right after that.”</p>
+<p>“Oh,” they say. “That might be a problem. We really have to know by December 31st. Can you let us know by December 31st?”</p>
+<p>Tada! The magnificent “exploding offer.”</p>
+<p>Here’s what you’re thinking. You’re thinking, well, that’s a good company, not my first choice, but still a good offer, and I’d hate to lose this opportunity. And you don’t know for sure if your number one choice would even hire you. So you accept the offer at your second-choice company and never go to any other interviews.</p>
+<p>And now, you lost out. You’re going to spend several years of your life in some cold dark cubicle with a crazy boss who couldn’t program a twenty out of an ATM, while some recruiter somewhere gets a $1000 bonus because she was better at negotiating than you were.</p>
+<p><img style="MARGIN-LEFT: 5px" height="200" alt="" src="http://www.joelonsoftware.com/items/2008/11/26FogCreek02.jpg" width="300" align="right" border="0" />Career counselors know this, and almost universally prohibit it. Every campus recruiting center has rules requiring every company that recruits on campus to give students a reasonable amount of time to make a decision and consider other offers. </p>
+<p>The trouble is, the recruiters at the second-rate companies don’t give a shit. They know that you’re a college kid and you don’t want to mess things up with your first real job and you’re not going to call them on it. They know that they’re a second-rate company: good enough, but nobody’s dream job, and they know that they can’t get first-rate students unless they use pressure tactics like exploding offers.</p>
+<p>And the worst thing that career centers can do is kick them off campus. Big whoop. So they hold their recruiting sessions and interviews in a hotel next to the campus instead of at the career center.</p>
+<p>Here’s your strategy, as a student, to make sure you get the job you want.</p>
+<p><strong>1. Schedule your interviews as close together as possible.</strong></p>
+<p><strong>2. If you get an exploding offer from a company that’s not your first choice, push back.</strong> Say, “I’m sorry, I’m not going to be able to give you an answer until January 14th. I hope that’s OK.” Almost any company, when pressed, will give you a chance to compare offers. Don’t worry about burning bridges or pissing anyone off. Trust me on this one: there’s not a single hiring manager in the world who wants to hire you but would get mad just because you’re considering other offers. It actually works the other way. When they realize you’re in demand, they’ll want you <em>more</em>.</p>
+<p><strong><img style="MARGIN-LEFT: 5px" height="200" alt="" src="http://www.joelonsoftware.com/items/2008/11/26FogCreek03.jpg" width="300" align="right" border="0" />3. In the rare case that they don’t accept that, accept the exploding offer at the last minute, but go to the other interviews anyway.&nbsp;</strong>Don’t cash any signing bonus checks, don’t sign anything, just accept the offer verbally. If you get a better offer later, call back the slimy company and tell them you changed your mind. Look, Microsoft hires thousands of college kids every year. If one of them doesn’t show up I think they’ll survive. Anyway, since we instituted that 13th amendment thing, they can’t force you to work for them.</p>
+<p>If you do find yourself forced to renege on an offer, be classy about it. Don’t do this unless you are absolutely forced to because they literally refused to give you a chance to hear from your first choice company. And let them know right away you’re not going to take the offer, so they have a chance to fill the position with someone else.</p>
+<p>Campus recruiters count on student’s high ethical standards. Almost all students think, “gosh, I promised I’ll go work for them, and I’m going to keep my promise.” And that’s great, that’s a commendable attitude. Definitely. But unethical recruiters that don’t care about your future and don’t want you to compare different companies are going to take advantage of your ethics so they can get their bonus. And that’s just not fair.</p>
+<p>Not loving your job? Visit the <a href="http://jobs.joelonsoftware.com/">Joel on Software Job Board</a>: Great software jobs, great people.
+</p>
+]]>
+</description>
+</item>
+
+<item>
+	<title>Stack Overflow Podcast #30</title>
+	<link>http://www.joelonsoftware.com/items/2008/11/20.html</link>
+	<author>Joel Spolsky</author>
+	<guid isPermaLink="true">http://www.joelonsoftware.com/items/2008/11/20.html</guid>
+	<pubDate>20 Nov 2008 11:53:31 EST</pubDate>
+	<description>
+<![CDATA[
+<a href="http://www.joelonsoftware.com/"><img src="http://www.joelonsoftware.com/i/rsshead.jpg" width="100" height="44" align="right" border="0" style="margin-left:10px; margin-bottom:10px;" ></a>
+<!-- p --><p><a href="http://blog.stackoverflow.com/2008/11/podcast-30/"><img style="MARGIN-LEFT: 5px" alt="" src="http://www.joelonsoftware.com/sidebar/StackOverflow.PNG" align="right" border="0" />Stack Overflow Podcast episode 30</a> is up, with special guest Richard White of <a href="http://uservoice.com/">UserVoice</a>.</p>
+<p>Not loving your job? Visit the <a href="http://jobs.joelonsoftware.com/">Joel on Software Job Board</a>: Great software jobs, great people.
+</p>
+]]>
+</description>
+</item>
+
+<item>
+	<title>Anecdotes</title>
+	<link>http://www.joelonsoftware.com/items/2008/11/18.html</link>
+	<author>Joel Spolsky</author>
+	<guid isPermaLink="true">http://www.joelonsoftware.com/items/2008/11/18.html</guid>
+	<pubDate>18 Nov 2008 22:08:19 EST</pubDate>
+	<description>
+<![CDATA[
+<a href="http://www.joelonsoftware.com/"><img src="http://www.joelonsoftware.com/i/rsshead.jpg" width="100" height="44" align="right" border="0" style="margin-left:10px; margin-bottom:10px;" ></a>
+<p><a href="http://www.nytimes.com/2008/11/18/books/18kaku.html?_r=1">Michiko Kakutani reviews Malcolm Gladwell's latest book</a> in the New York Times: &#8220;Much of what Mr. Gladwell has to say about superstars is little more than common sense: that talent alone is not enough to ensure success, that opportunity, hard work, timing and luck play important roles as well. The problem is that he then tries to extrapolate these observations into broader hypotheses about success. These hypotheses not only rely heavily on suggestion and innuendo, but they also pivot deceptively around various anecdotes and studies that are selective in the extreme: the reader has no idea how representative such examples are, or how reliable — or dated — any particular study might be.&#8221;</p>
+<p>This review captures what's been driving me crazy over the last year... an unbelievable proliferation of anecdotes disguised as science, self-professed experts writing about things they actually know nothing about, and amusing stories disguised as metaphors for how the world works. Whether it's Thomas Friedman, who, it seems, cannot go a whole week without inventing a new fruit-based metaphor explaining everything about the entire modern world, all based on some random jibberish he misunderstood from a taxi driver in Kuala Lumpur, or Malcolm Gladwell with his weak theories on tipping points, crazy incorrect theories on first impressions, or utterly lunatic theories on experts, it all becomes insanely popular simply because the stories are fun and interesting and everybody wants to hear a good story. Spare me.</p>
+<p>Friedman and Gladwell's outsized, flat-world success has lead to a huge number of wannabes. I was really looking forward to reading <a href="http://Simplexity-Simple-Things-Become-Complex/dp/1401303013">Simplexity</a>, because it sounded like an interesting topic, until I settled down with it tonight and discovered that it was chock-full of all those amusing bedtime stories about the map of the cholera plague in London in 1854, which I've heard a million times, and then suddenly I noticed (shock!) that not only was the author a journalist, not a scientist, but he was actually an editor at Time Magazine, which has an editorial method in which editors write stories based on notes submitted by reporters (the reporters don't write their own stories), so it's practically <em>designed</em> to get everything wrong, to insure that, no matter how ignorant the reporters are on an issue, they'll find someone who knows <em>even less</em> to write the actual story. Panicking, I began to flip through the book at random. There's that story about Don Norman and complicated user interfaces. Here he is reading Nassim Taleb. I've heard all these anecdotes! Stop, already! I threw the book away in frustration.</p>
+<p>This is the third one of the day. My business partner Jeff Atwood was busy extracting himself from the flamewars he started by writing an article on, of all things, NP-completeness, which is, actually, something that it's possible to know something about, because it's not a vague sociological hypotheticoncept like simplexiflatness or blinkoutliers, it's actually a real, important result from Computer Science, with a rigorous definition and lots of published papers, and poor Jeff got himself in something of a pickle by writing a book review when he hadn't read the book, and fortunately, he has comments on his blog, so his readers called him out on it.</p>
+<p>Now, I am not one to throw stones. Heck, I practically invented the formula of "tell a funny story and then get all serious and show how this is amusing anecdote <em>just goes to show </em>that (one thing|the other) is a universal truth." And everybody is like, oh yes! how true! and they link to it with approval, and it zooms to the top of Slashdot. And six years later, a new king arises who did not know Joel, and he writes up another amusing anecdote, really, it's the same anecdote, and he uses it to prove <em>the exact opposite</em>, and everyone is like, oh yes! how true! and it zooms to the top of Reddit.</p>
+<p>This is not the way to move science forward. On Sunday Dave Winer [partially] <a href="http://www.scripting.com/stories/2008/11/16/threeExamplesOfGreatBloggi.html">defined</a> "great blogging" as "people talking about things they know about, not just expressing opinions about things they are not experts in (nothing wrong with that, of course)." Can we get some more of that, please? Thanks.</p>
+<p>Not loving your job? Visit the <a href="http://jobs.joelonsoftware.com/">Joel on Software Job Board</a>: Great software jobs, great people.
+</p>
+]]>
+</description>
+</item>
+
+</channel>
+</rss>

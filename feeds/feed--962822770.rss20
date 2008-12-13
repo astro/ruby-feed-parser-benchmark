@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- generator="wordpress/2.3.2" -->
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	>
+
+<channel>
+	<title>Leah Culver</title>
+	<link>http://leahculver.com</link>
+	<description>leahculver.com</description>
+	<pubDate>Wed, 26 Nov 2008 01:13:21 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.3.2</generator>
+	<language>en</language>
+			<item>
+		<title>CouchDB documents -&gt; Python objects</title>
+		<link>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/</link>
+		<comments>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/#comments</comments>
+		<pubDate>Tue, 25 Nov 2008 10:18:56 +0000</pubDate>
+		<dc:creator>Leah</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://leahculver.com/2008/11/25/couchdb-documents-python-objects/</guid>
+		<description><![CDATA[It&#8217;s getting late so I&#8217;ll keep this short.
+Lately, I&#8217;ve been working a bit with CouchDB and trying to fully grasp the whole schema-free thing. I&#8217;m actually fond of Python objects, so I really wanted a way to work with arbitrary database fields as if they were object properties.
+Here&#8217;s my intermediate class, CouchObject.
+The example here is [...]]]></description>
+			<content:encoded><![CDATA[<p>It&#8217;s getting late so I&#8217;ll keep this short.</p>
+<p>Lately, I&#8217;ve been working a bit with <a href="http://incubator.apache.org/couchdb/index.html" target="_blank">CouchDB</a> and trying to fully grasp the whole schema-free thing. I&#8217;m actually fond of Python objects, so I really wanted a way to work with arbitrary database fields as if they were object properties.</p>
+<p>Here&#8217;s my intermediate class, <a href="http://dpaste.com/hold/93627/" target="_blank">CouchObject</a>.</p>
+<p>The example here is particularly interesting because Item is actually two kinds of items: files and folders. They share many fields such as name, directory, and user_id. However, files have some additional fields: content_type and size. By using CouchObject, I can be cool and only store the fields necessary for the particular kind of Item in the CouchDB document.</p>
+<p>I could also later add another type of object (really, I only have one right now) and all I&#8217;d need to do is define different names for all_fields.</p>
+<p>Obviously it&#8217;s not perfect, but it&#8217;s 2 AM here and I wanted to share a little about what I&#8217;ve been doing in my free time. Feedback welcome.</p>
+<p>P.S.  I&#8217;m a little scared about using exec and especially without knowing what type of stuff is being passed in the dictionary. Eeek.</p>
+<p><strong>Update</strong>: Obviously I should not write code very late at night. I&#8217;m (*gasp*) actually a morning person. Thanks to everyone who pointed out that yes, exec is horrible when get/setattr would have done just fine. I&#8217;ve updated the code link accordingly. Thanks.</p>
+<p>I&#8217;m going to publish your comments anyways so I hope that&#8217;s okay. The quantity of responses is quite scary in itself since I don&#8217;t track how many people read my blog.</p>
+<p>After the <a href="http://uncov.com/2007/12/20/pownce-is-still-alive" target="_blank">whole</a> <a href="http://www.thedeal.com/techconfidential/behind-the-money/blog/behind-the-money/leah-culver-lead-developer-of.php#comment-198305" target="_blank">fuss</a> about <a href="http://leahculver.com/2007/04/19/star-ratings/" target="_blank">rounding numbers</a>, I was considering changing the blog post to make myself look a bit better. I decided against this for several reasons:</p>
+<p>1. My blog should reflect me and I do a lot of stupid things. For example, I regularly spill food on myself while eating. You would think that after 26 years of eating food, I&#8217;d be able to do that correctly. Obviously not.<br />
+2. It wasn&#8217;t a big change. Really, like 3 lines of code. I had the right idea, even at 2 AM. I also knew I was probably doing something wrong. So yeah, not that bad.<br />
+3. It&#8217;s good to be wrong sometimes. We all make mistakes. So now I&#8217;m declaring, yes, I wrote some stupid code and it&#8217;s okay. It&#8217;s okay for us all to write stupid code sometimes.*</p>
+<p>* My blog was originally titled &#8220;Leah Culver&#8217;s Stupid Blog&#8221; before I decided &#8220;Leah Culver&#8221; was more professional. I think I might change it back.</p>
+<p><strong>Update (part 2)</strong>: I forgot to mention that the couchdb lib I&#8217;m using is <a href="http://code.google.com/p/couchdb-python/" target="_blank">couchdb-python.</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://leahculver.com/2008/11/25/couchdb-documents-python-objects/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Book Meme</title>
+		<link>http://leahculver.com/2008/11/13/book-meme/</link>
+		<comments>http://leahculver.com/2008/11/13/book-meme/#comments</comments>
+		<pubDate>Thu, 13 Nov 2008 17:12:50 +0000</pubDate>
+		<dc:creator>Leah</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://leahculver.com/2008/11/13/book-meme/</guid>
+		<description><![CDATA[&#8220;September 22 or 23 is the moment in time of the autumnal equinox, or September equinox, when Earth&#8217;s orientation is such that the circle of illumination again passes through both poles so that all parts of the globe experience a 12-hour day and a 12-hour night.&#8221; - Geosystems, An Introduction to Physical Geography, by Robert [...]]]></description>
+			<content:encoded><![CDATA[<blockquote>&#8220;September 22 or 23 is the moment in time of the <strong>autumnal equinox</strong>, or <strong>September equinox</strong>, when Earth&#8217;s orientation is such that the circle of illumination again passes through both poles so that all parts of the globe experience a 12-hour day and a 12-hour night.&#8221; - Geosystems, An Introduction to Physical Geography, by Robert W. Christopherson</p></blockquote>
+<p>Book meme:</p>
+<p>- Grab the nearest book.<br />
+- Open it to page 56.<br />
+- Find the fifth sentence.<br />
+- Post the text of the sentence in your journal along with these instructions.<br />
+- Don&#8217;t dig for your favorite book, the cool book, or the intellectual one: pick the CLOSEST.</p>
+<p>via <a href="http://www.eflorenzano.com/blog/post/book-meme/" target="_blank">Eric Florenzano&#8217;s Blog</a></p>
+<p>The closest book was one from my very few elective classes in college and not a computer science-y one. See, University of Minnesota students are required to take one biology class so that we&#8217;re forced to learn about evolution (liberals!). I&#8217;m already sold on evolution (and I&#8217;m terribly uninterested in the subject) so I took biogeography to spite the system. All labs were computer-based (no animal cadavers) and I learned about <a href="http://en.wikipedia.org/wiki/Continentality" target="_blank">continentality</a>. Goodbye <a href="http://weather.uk.msn.com/monthly_averages.aspx?wealocations=wc:USMN0503" target="_blank">Minneapolis</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://leahculver.com/2008/11/13/book-meme/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Development Environment</title>
+		<link>http://leahculver.com/2008/11/11/development-environment/</link>
+		<comments>http://leahculver.com/2008/11/11/development-environment/#comments</comments>
+		<pubDate>Tue, 11 Nov 2008 23:40:32 +0000</pubDate>
+		<dc:creator>Leah</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://leahculver.com/2008/11/11/development-environment/</guid>
+		<description><![CDATA[Wow, I actually got a question from a reader:
+&#8220;Hey Leah,
+I just started following your django adventures as I&#8217;m wanting to get into it. Would you mind doing a post on your dev environment (machine, text editor, other favorite tools)? I&#8217;m basically looking for best of breed tools and figured I might as well go to [...]]]></description>
+			<content:encoded><![CDATA[<p>Wow, I actually got a question from a reader:</p>
+<blockquote><p>&#8220;Hey Leah,<br />
+I just started following your django adventures as I&#8217;m wanting to get into it. Would you mind doing a post on your dev environment (machine, text editor, other favorite tools)? I&#8217;m basically looking for best of breed tools and figured I might as well go to the source.</p>
+<p>Thanks. Keep on rockin.<br />
+Scotty&#8221;</p></blockquote>
+<p>While I&#8217;m tempted to do my best <a href="http://en.wikipedia.org/wiki/Strong_Bad" target="_blank">Strong Bad</a> impression here, the question is actually a good one. To be truthful, I often change tools and am always looking for cool new stuff. Comments welcome!</p>
+<p>The most important tool I use is <a href="http://subversion.tigris.org/" target="_blank">Subversion</a>. Actually, any version control tool would work and I&#8217;ve had a <a href="http://www.newartisans.com/blog_files/git.from.bottom.up.php" target="_blank">paper</a> on <a href="http://git.or.cz/" target="_blank">GIT</a> in my bathroom magazine rack for awhile. If you&#8217;re not using version control, DO IT. It doesn&#8217;t really matter what size project you&#8217;re working on either. I work solo on my side project and while it&#8217;s sad to see incremental revisions all by myself (although others DO have commit access cough, cough&#8230;), it&#8217;s nice to know that if my laptop were stolen or <strike>if I made a horrible mistake</strike> when I make a horrible mistake, I can easily get at my good code again. <a href="http://zigversion.com/" target="_blank">Zigversion</a> is my Subversion tool of choice, but <a href="http://tortoisesvn.tigris.org/" target="_blank">TortoiseSVN</a> is lovely too (and available for Windows).</p>
+<p>Moving on&#8230; I develop on a Mac laptop (yes, <a href="http://leahculver.com/laser-etched-laptop/" target="_blank">that one</a>) and mainly use <a href="http://www.panic.com/coda/" target="_blank">Coda</a> as my text editor. I was using <a href="http://www.codingmonkeys.de/subethaedit/" target="_blank">SubEthaEdit</a>, but the Pownce designer, <a href="http://pownce.com/dburka/" target="_blank">Daniel</a>, showed me Coda and I&#8217;m a sucker for pretty Mac things. I also <a href="http://daringfireball.net/linked/2008/11/11/coda-16" target="_blank">heard they just released an update today</a>.</p>
+<p>I use <a href="http://dev.mysql.com/doc/administrator/en/index.html" target="_blank">MySQL Administrator</a> to view and update Pownce&#8217;s MySQL database tables on my local machine and just the plain console for running queries or updating the production site. I&#8217;ve heard good things about <a href="http://www.phpmyadmin.net/home_page/index.php" target="_blank">phpMyAdmin</a> but I haven&#8217;t been motivated enough to check it out. For <a href="http://incubator.apache.org/couchdb/" target="_blank">CouchDB</a>, I love <a href="http://jan.prima.de/~jan/plok/archives/142-CouchDBX-Revival.html" target="_blank">CouchDBX for the Mac</a> and the <a href="http://aimee.mychores.co.uk/2008/09/08/post/323/" target="_blank">web interface</a>.</p>
+<p>I&#8217;m not sure what else I would call a development tool, but here&#8217;s some stuff I love on the Mac:</p>
+<p>- <a href="http://www.blacktree.com/" target="_blank">Quicksilver</a>, to get at my apps very quickly<br />
+- <a href="http://www.adiumx.com/" target="_blank">Adium</a>, for lots of chatty goodness across all my chat accounts<br />
+- <a href="http://people.no-distance.net/ol/software/s3/" target="_blank">S3 Browser</a>, desktop app for managing S3 accounts<br />
+- <a href="http://colloquy.info/" target="_blank">Colloquy</a>, more chatty IRC goodness<br />
+- <a href="http://www.sshkeychain.org/" target="_blank">SSHKeychain</a>, because I&#8217;m lazy and forgetful<br />
+- <a href="http://fetchsoftworks.com/" target="_blank">Fetch</a>, for ftp because I like watching the dog icon run<br />
+- <a href="http://www.parallels.com/" target="_blank">Parallels</a>, to test Pownce in IE</p>
+<p>I&#8217;m sure I&#8217;m forgetting something, but these are the ones I use almost daily. Let me know if I&#8217;m missing out on any more good stuff!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://leahculver.com/2008/11/11/development-environment/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Django URL goodness</title>
+		<link>http://leahculver.com/2008/11/06/django-url-goodness/</link>
+		<comments>http://leahculver.com/2008/11/06/django-url-goodness/#comments</comments>
+		<pubDate>Fri, 07 Nov 2008 00:29:49 +0000</pubDate>
+		<dc:creator>Leah</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://leahculver.com/2008/11/06/django-url-goodness/</guid>
+		<description><![CDATA[In my hurry to make Pownce (four months!), I didn&#8217;t really take the time to look into all the really nice features of Django.
+Anyways, I&#8217;ve been working on a side project in my spare time and since I&#8217;m not pressed to complete it, I&#8217;ve taken my sweet time to explore some of the niceties of [...]]]></description>
+			<content:encoded><![CDATA[<p>In my hurry to make <a href="http://pownce.com/">Pownce</a> (four months!), I didn&#8217;t really take the time to look into all the really nice features of <a href="http://www.djangoproject.com/" title="Django web framework">Django</a>.</p>
+<p>Anyways, I&#8217;ve been working on a side project in my spare time and since I&#8217;m not pressed to complete it, I&#8217;ve taken my sweet time to explore some of the niceties of the Django framework. One of my favorite such niceties is the <a href="http://docs.djangoproject.com/en/dev/ref/templates/builtins/#url" target="_blank">URL lookup template tags</a>.</p>
+<p>For my side project, code named Tilde, I&#8217;d like to have a series of settings pages for various user settings such as profile information, S3 account information, and the user&#8217;s password. I have a series of links like this:</p>
+<p><code>&lt;a href="/settings/profile/"&gt;Profile&lt;/a&gt;<br />
+&lt;a href="/settings/account/"&gt;Account&lt;/a&gt;<br />
+&lt;a href="/settings/password/"&gt;Password&lt;/a&gt;</code></p>
+<p>My urls.py contains the mapping of these URLs to my Django views for the settings pages like so:</p>
+<p><code>urlpatterns += patterns('tilde.account.views',<br />
+(r'^settings/profile/$', 'settings_profile'),<br />
+(r'^settings/account/$', 'settings_account'),<br />
+(r'^settings/password/$', 'settings_password'),<br />
+)</code></p>
+<p>This works just fine&#8230; except it violates one of Django&#8217;s design philosophies - <a href="http://docs.djangoproject.com/en/dev/misc/design-philosophies/#don-t-repeat-yourself-dry" target="_blank">Don&#8217;t repeat yourself (DRY)</a>. I really shouldn&#8217;t be hard-coding my URLs in my templates since I&#8217;ve already defined them in urls.py.</p>
+<p>Instead, Django provides a built-in template tag, <a href="http://docs.djangoproject.com/en/dev/ref/templates/builtins/#url">url</a>,  to lookup a URL for a particular view. So now my settings tab URLs look like this:</p>
+<p><code>&lt;a href="{% url tilde.account.views.settings_profile %}"&gt;Profile&lt;/a&gt;<br />
+&lt;a href="{% url tilde.account.views.settings_account %}"&gt;Account&lt;/a&gt;<br />
+&lt;a href="{% url tilde.account.views.settings_password %}"&gt;Password&lt;/a&gt;</code></p>
+<p>This generates the same HTML as my first attempt, without having to hard-code any URLs. I could actually change the URL to any of these views without worrying about breaking any links on my site. Not that it&#8217;s a good idea to change around URLs on a live website, but it&#8217;s handy for development.</p>
+<p>So let&#8217;s get a little bit more complex. I&#8217;m a big fan of re-using code so I&#8217;d like to re-use my views and forms from my S3 account settings page for my S3 account signup page.</p>
+<p>So in tilde.account.views.py I have a basic S3 account view:</p>
+<p><code>def account(request, template='signup_account.html'):<br />
+# code for S3 account form<br />
+...<br />
+return render_to_response(template, {<br />
+'form': form,<br />
+}, context_instance=RequestContext(request))</code></p>
+<p>And I have the following in my urls.py:</p>
+<p><code>urlpatterns += patterns('tilde.account.views',<br />
+(r'^signup/account/$', 'account'),<br />
+(r'^settings/profile/$', 'settings_profile'),<br />
+(r'^settings/account/$', 'account', {'template': 'settings/account.html'}),<br />
+(r'^settings/password/$', 'settings_password'),<br />
+)</code></p>
+<p>And my settings links look like:</p>
+<p><code>&lt;a href="{% url tilde.account.views.settings_profile %}"&gt;Profile&lt;/a&gt;<br />
+&lt;a href="{% url tilde.account.views.account %}"&gt;Account&lt;/a&gt;<br />
+&lt;a href="{% url tilde.account.views.settings_password %}"&gt;Password&lt;/a&gt;</code></p>
+<p>Which unfortunately renders as:</p>
+<p><code>&lt;a href="/settings/profile/"&gt;Profile&lt;/a&gt;<br />
+&lt;a href="/signup/account/"&gt;Account&lt;/a&gt;<br />
+&lt;a href="/settings/password/"&gt;Password&lt;/a&gt;</code></p>
+<p>Since I&#8217;ve mapped two URLs to the same view, when I request the corresponding URL for tilde.account.views.account I get the first one defined in urls.py (/signup/account/) which is not the one I&#8217;m looking for! I could just switch the order, but then I couldn&#8217;t use the url template tag for the signup url and really, that&#8217;s cheating.</p>
+<p>Thankfully, I can <a href="http://docs.djangoproject.com/en/dev/topics/http/urls/#naming-url-patterns">name my URLs</a> to distinguish between the one for signup and the one for settings.</p>
+<p><code>urlpatterns += patterns('tilde.account.views',<br />
+url(r'^signup/account/$', 'account', name='signup_account'),<br />
+url(r'^settings/profile/$', 'settings_profile', name='settings_profile'),<br />
+url(r'^settings/password/$', 'settings_password', name='settings_password'),<br />
+url(r'^settings/account/$', 'account', {'template': 'settings/account.html'}, name='settings_account'),<br />
+)</code></p>
+<p>I can then use these names in my template tags like so:<br />
+<code><br />
+&lt;a href="{% url settings_profile %}"&gt;Profile&lt;/a&gt;<br />
+&lt;a href="{% url settings_account %}"&gt;Account&lt;/a&gt;<br />
+&lt;a href="{% url settings_password %}"&gt;Password&lt;/a&gt;</code></p>
+<p>Purty!! My settings links are now awesome.</p>
+<p>However, I&#8217;d like to go just a bit further and make them a bit more tab-like. That is, when I&#8217;m on a particular settings page, I&#8217;d like to have it just display text instead of a link so I know which page I&#8217;m on. I know I can get the current page&#8217;s path with request.path, so I can do the following:</p>
+<p><code>{% ifequal request.path '/settings/profile/' %}<br />
+&lt;span&gt;Profile&lt;/span&gt;<br />
+{% else %}<br />
+&lt;a href="{% url settings_profile %}"&gt;Profile&lt;/a&gt;<br />
+{% endif %}<br />
+{% ifequal request.path '/settings/account/' %}<br />
+&lt;span&gt;Account&lt;/span&gt;<br />
+{% else %}<br />
+&lt;a href="{% url settings_account %}"&gt;Account&lt;/a&gt;<br />
+{% endif %}<br />
+{% ifequal request.path '/settings/password/' %}<br />
+&lt;span&gt;Password&lt;/span&gt;<br />
+{% else %}<br />
+&lt;a href="{% url settings_password %}"&gt;Password&lt;/a&gt;<br />
+{% endif %}</code></p>
+<p>Blech. Resorting back to hard-coding the URLs is not cool and there&#8217;s no way I can put the url template tag inside another template tag!  In Django 1.0 and later, I can actually store the result of the url template tag into a value like so:</p>
+<p><code>{% url settings_profile as url_profile %}</code></p>
+<p>I can then use that variable in other template tags. (This actually breaks from Django convention a bit and smells like PHP, but it&#8217;s awfully useful, so I&#8217;ll let that go.)</p>
+<p>My final settings links then look like this:</p>
+<p><code>{% url settings_profile as url_profile %}<br />
+{% url settings_account as url_account %}<br />
+{% url settings_password as url_password %}<br />
+{% ifequal request.path url_profile %}<br />
+&lt;span&gt;Profile&lt;/span&gt;<br />
+{% else %}<br />
+&lt;a href="{{ url_profile }}"&gt;Profile&lt;/a&gt;<br />
+{% endifequal %}<br />
+{% ifequal request.path url_account %}<br />
+&lt;span&gt;Account&lt;/span&gt;<br />
+{% else %}<br />
+&lt;a href="{{ url_account }}"&gt;Account&lt;/a&gt;<br />
+{% endifequal %}<br />
+{% ifequal request.path url_password %}<br />
+&lt;span&gt;Password&lt;/span&gt;<br />
+{% else %}<br />
+&lt;a href="{{ url_password }}"&gt;Password&lt;/a&gt;<br />
+{% endifequal %}</code></p>
+<p>Nice! For more details about Django URL mapping, check out the <a href="http://docs.djangoproject.com/en/dev/topics/http/urls/">URL dispatcher docs</a>.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://leahculver.com/2008/11/06/django-url-goodness/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>I want a Django pony</title>
+		<link>http://leahculver.com/2008/11/03/i-want-a-django-pony/</link>
+		<comments>http://leahculver.com/2008/11/03/i-want-a-django-pony/#comments</comments>
+		<pubDate>Tue, 04 Nov 2008 00:48:49 +0000</pubDate>
+		<dc:creator>Leah</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://leahculver.com/2008/11/03/i-want-a-django-pony/</guid>
+		<description><![CDATA[
+Here they are:
+- Basic Authentication middleware (contrib.auth.middleware?), http://code.djangoproject.com/ticket/3609
+- S3 file backend (in contrib.files?) , http://code.djangoproject.com/ticket/6390
+- Dictionary to xml support for building APIs. The serializers for Django are a mess but simplejson is lovely.
+- Context processors for the site name, site domain and url for use in templates. As defined by the project settings file and [...]]]></description>
+			<content:encoded><![CDATA[<p style="text-align: center"><a href="http://djangopony.com/" target="_blank"><img src="http://leahculver.com/images/django-pony.png" alt="django pony" height="226" width="300" /></a></p>
+<p>Here they are:</p>
+<p>- Basic Authentication middleware (contrib.auth.middleware?), <a href="http://code.djangoproject.com/ticket/3609">http://code.djangoproject.com/ticket/3609</a><br />
+- S3 file backend (in contrib.files?) , <a href="http://code.djangoproject.com/ticket/6390">http://code.djangoproject.com/ticket/6390</a><br />
+- Dictionary to xml support for building APIs. The serializers for Django are a mess but <a href="http://undefined.org/python/#simplejson">simplejson</a> is lovely.<br />
+- Context processors for the site name, site domain and url for use in templates. As defined by the project settings file and not contrib.sites (<a href="http://leahculver.com/2007/07/17/django-site-module/">which is my least favorite Django app</a>) please.</p>
+<p>I&#8217;ve custom built all these things for Pownce but now I&#8217;m working on a side project and am super annoyed that I need to port them over. Two apps with these custom features makes me think that they really should be in Django.</p>
+<p>On a positive note, the side project is almost done and it uses Django with <a href="http://incubator.apache.org/couchdb/" target="_blank">CouchDB</a>. More details soon!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://leahculver.com/2008/11/03/i-want-a-django-pony/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Flip-flops and an Apple product recall</title>
+		<link>http://leahculver.com/2008/09/20/flip-flops-and-an-apple-product-recall/</link>
+		<comments>http://leahculver.com/2008/09/20/flip-flops-and-an-apple-product-recall/#comments</comments>
+		<pubDate>Sat, 20 Sep 2008 17:04:52 +0000</pubDate>
+		<dc:creator>Leah</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://leahculver.com/2008/09/20/flip-flops-and-an-apple-product-recall/</guid>
+		<description><![CDATA[This is a story about an Apple product recall and some flip-flops.
+Last Sunday I tripped over my iPhone cord.
+All the outlets in my apartment are at floor level and I plug my iPhone into the wall outlet nearest my bed. As usual, I was wearing flip-flops (as many computer programmers do) and the cord got [...]]]></description>
+			<content:encoded><![CDATA[<p>This is a story about an Apple product recall and some flip-flops.</p>
+<p>Last Sunday I tripped over my iPhone cord.</p>
+<p>All the outlets in my apartment are at floor level and I plug my iPhone into the wall outlet nearest my bed. As usual, I was wearing flip-flops (as many computer programmers do) and the cord got caught between my toes and the sole.</p>
+<p>The result was that I pulled the adapter out of the wall, breaking off one of the prongs. I had a metal prong sticking out of the outlet!</p>
+<p><a href="http://pownce.com/leahculver/notes/3470359/" title="prong in outlet" target="_blank"></a></p>
+<p style="text-align: center"><a href="http://pownce.com/leahculver/notes/3470359/" title="prong in outlet" target="_blank"><img src="http://leahculver.com/images/adapter-1.png" border="0" height="379" width="504" /></a></p>
+<p>Freaked out about getting electricuted, I left it alone for a few days. The Pownce community offered <a href="http://pownce.com/leahculver/notes/3470359/">some practical and creative ways</a> for me to remove the prong, but having previous experiene with electric shocks (freshman physics class) I had no desire try my luck.</p>
+<p>I went out and bought a new adapter.</p>
+<p><a href="http://pownce.com/leahculver/notes/3475896/" target="_blank"></a></p>
+<p style="text-align: center"><a href="http://pownce.com/leahculver/notes/3475896/" target="_blank"><img src="http://leahculver.com/images/adapter-2.png" alt="new apple power adapter" border="0" height="498" width="500" /></a></p>
+<p>Then, Thursday during work, I tripped over a printer cable when it got caught in my flip-flop! Ethan from the podcast <a href="http://www.metacafe.com/watch/1698191/wsyk_25_sarah_palin/">What Should You Know</a>, works next to the printer so I told him the story of the iPhone adapter prong. Apparently he knows a lot (hence the podcast) and pointed out that one prong wouldn&#8217;t connect the circuit (duh) so I should just pull it out.</p>
+<p>When I got home I was feeling more confident and a bit silly. I got out a pair of rubber-handled pliers and gingerly touched the prong with the tip of the pliers. Nothing. Yay! I yanked out the lone prong and threw it away.</p>
+<p>I thought that would be the end of the story.</p>
+<p>Oh no&#8230; Yesterday, Apple <a href="http://www.apple.com/support/usbadapter/exchangeprogram/">recalled the particular adapter</a>, citing</p>
+<blockquote><p> &#8220;that under certain conditions the new ultracompact Apple USB power adapter&#8217;s metal prongs can break off and remain  					in a power outlet, creating a risk of electric shock.&#8221;</p></blockquote>
+<p>Whatever actually caused the recall, just let me keep thinking it was my flip-flops.</p>
+<p><a href="http://www.apple.com/support/usbadapter/exchangeprogram/" target="_blank">Apple Recall Notice</a><br />
+<a href="http://gizmodo.com/5052568/apple-recalls-ultracompact-usb-power-adapter-for-the-iphone-3g" target="_blank">Gizmodo Story</a></p>
+]]></content:encoded>
+			<wfw:commentRss>http://leahculver.com/2008/09/20/flip-flops-and-an-apple-product-recall/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Python dir() is my fav debugging thing ever</title>
+		<link>http://leahculver.com/2008/08/10/python-dir-is-the-best-debugging-tool-ever/</link>
+		<comments>http://leahculver.com/2008/08/10/python-dir-is-the-best-debugging-tool-ever/#comments</comments>
+		<pubDate>Sun, 10 Aug 2008 18:50:21 +0000</pubDate>
+		<dc:creator>Leah</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://leahculver.com/2008/08/10/python-dir-is-the-best-debugging-tool-ever/</guid>
+		<description><![CDATA[Want to find out what methods are in a particular class or module or whatever?
+
+Why did I bother to write a blog post about this? Apparently my blog has a ridiculous Google ranking so I&#8217;m just trying to help out.  Feel free to add more dirty debugging tips in comments. I&#8217;m also a fan [...]]]></description>
+			<content:encoded><![CDATA[<p>Want to find out what methods are in a particular class or module or whatever?</p>
+<p><img src="/images/python-dir-chat.png" /></p>
+<p>Why did I bother to write a blog post about this? Apparently my blog has a ridiculous Google ranking so I&#8217;m just trying to help out. <img src='http://leahculver.com/wp-includes/images/smilies/icon_biggrin.gif' alt=':D' class='wp-smiley' /> Feel free to add more dirty debugging tips in comments. I&#8217;m also a fan of  &#8216;print something.__class__&#8217;</p>
+]]></content:encoded>
+			<wfw:commentRss>http://leahculver.com/2008/08/10/python-dir-is-the-best-debugging-tool-ever/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Tiny URLs based on pk</title>
+		<link>http://leahculver.com/2008/06/17/tiny-urls-based-on-pk/</link>
+		<comments>http://leahculver.com/2008/06/17/tiny-urls-based-on-pk/#comments</comments>
+		<pubDate>Tue, 17 Jun 2008 18:59:29 +0000</pubDate>
+		<dc:creator>Leah</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://leahculver.com/2008/06/17/tiny-urls-based-on-pk/</guid>
+		<description><![CDATA[I&#8217;ve been wanting to make a short url for Pownce permalink pages for an upcoming project. Pownce note permalink pages on the website currently look like this: http://pownce.com/leahculver/notes/2477365/
+The generic form is:  http://pownce.com/&#60;sender username&#62;/note/&#60;note id&#62;/
+While these URLs are pretty descriptive and simple, they&#8217;re also a bit long. The note id is really the only piece [...]]]></description>
+			<content:encoded><![CDATA[<p>I&#8217;ve been wanting to make a <a href="http://en.wikipedia.org/wiki/TinyURL" target="_blank">short url</a> for Pownce permalink pages for an upcoming project. Pownce note permalink pages on the website currently look like this: <a href="http://pownce.com/leahculver/notes/2477365/">http://pownce.com/leahculver/notes/2477365/</a></p>
+<p>The generic form is:  http://pownce.com/&lt;sender username&gt;/note/&lt;note id&gt;/</p>
+<p>While these URLs are pretty descriptive and simple, they&#8217;re also a bit long. The note id is really the only piece of information we need from the URL, the sender username is just fluff. I&#8217;d like to have an alternate URL that is quite a lot shorter that redirects to the final (longer) URL.</p>
+<p>I think the following set of characters look pretty good in URLs:<br />
+23456789abcdefghijkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ<br />
+Basically, 0-9a-zA-Z minus the confusing characters: 01loIO.</p>
+<p>Now, it&#8217;s fairly simple to convert a base 10 note id to this strange base 56 set assuming that the character order (digit-lower-upper) is maintained. The (very freshman-like) <a href="http://dpaste.com/hold/57153/">code is here</a>.</p>
+<p>The result is something like http://pownce.com/~g7YF/ will redirect to <a href="http://pownce.com/leahculver/notes/2477365/">http://pownce.com/leahculver/notes/2477365/</a></p>
+<p>This works very well for finding a note page based off a note id. It&#8217;s also super handy for making a generic tiny-urlizing service. The only data that needs to be stored is the real URL and a numerical id - the unique primary key for the database row! I have no desire to run a tiny-urlizing service, but this would probably be how I&#8217;d do it.</p>
+<p>Note: Pownce user profile pages are in the form http://pownce.com/&lt;username&gt;/ so a non-username character, such as &#8216;~&#8217; can signify that this is a note permalink as oppose to a profile page. I like the tilde, it&#8217;s got style&#8230; a bit confusing for the Unix folks though. Since it&#8217;s the code isn&#8217;t in production yet, other character suggestions are welcome.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://leahculver.com/2008/06/17/tiny-urls-based-on-pk/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Announcing OEmbed - An Open Standard for Embedded Content</title>
+		<link>http://leahculver.com/2008/05/29/announcing-oembed-an-open-standard-for-embedded-content/</link>
+		<comments>http://leahculver.com/2008/05/29/announcing-oembed-an-open-standard-for-embedded-content/#comments</comments>
+		<pubDate>Thu, 29 May 2008 19:15:52 +0000</pubDate>
+		<dc:creator>Leah</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://leahculver.com/2008/05/29/announcing-oembed-an-open-standard-for-embedded-content/</guid>
+		<description><![CDATA[Pownce is the best way to share media with your friends online and one of the best parts of Pownce is the embedded images and video. When you post a link-type note with a URL to an image site such as Flickr, the Pownce website displays a thumbnail of that image. Video links display an [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://pownce.com" target="_blank">Pownce</a> is the best way to share media with your friends online and one of the best parts of Pownce is the embedded images and video. When you post a link-type note with a URL to an image site such as <a href="http://www.flickr.com/" target="_blank">Flickr</a>, the Pownce website displays a thumbnail of that image. Video links display an embedded video player for sites such as <a href="http://www.ustream.tv" target="_blank">Ustream</a>, <a href="http://qik.com" target="_blank">Qik</a>, or <a href="http://viddler.com" target="_blank">Viddler</a>.</p>
+<p><img src="http://leahculver.com/images/pownce-flickr.png" align="left" border="0" height="200" hspace="6" vspace="6" width="250" />At Pownce, we were adding these new video and photo service embeds on a case-by-case basis with custom code for each site. As we got more requests for supporting different services, we realized that we didn&#8217;t want to pick and choose which services we would implement. We want to support as many services as possible!</p>
+<p>While at dinner with <a href="http://www.iamcal.com/" target="_blank">Cal Henderson</a> (<a href="http://flickr.com/photos/bees" target="_blank">Flickr</a>), <a href="http://immike.net/" target="_blank">Mike Malone</a> (<a href="http://pownce.com/mmalone/" target="_blank">Pownce</a>), and <a href="http://rcrowley.org/" target="_blank">Richard Crowley</a> (OpenDNS), we chatted about this problem and chatted about creating an open standard for accessing embed code from a URL via an API endpoint. Cal drafted up the initial spec for this standard overnight and we named it <a href="http://oembed.com" target="_blank">OEmbed</a> (or oEmbed).</p>
+<p><a href="http://oembed.com" target="_blank">OEmbed</a> is an open web API standard for fetching embed code based on a URL. The spec is fairly simple and can be found at oembed.com.<img src="http://leahculver.com/images/pownce-viddler.png" align="right" border="0" height="237" hspace="6" vspace="6" width="250" /></p>
+<p>Since creating OEmbed, we&#8217;ve been working with various photo and video sites to implement this standard. OEmbed is currently supported by <a href="http://www.flickr.com/" target="_blank">Flickr</a>, <a href="http://www.viddler.com/" target="_blank">Viddler</a>, <a href="http://qik.com/" target="_blank">Qik</a>, <a href="http://pownce.com/" target="_blank">Pownce</a>, <a href="http://revision3.com/" target="_blank">Revision3</a> and <a href="http://www.hulu.com/" target="_blank">Hulu</a>. <a href="http://vimeo.com/" target="_blank">Vimeo</a> and <a href="http://blip.tv/" target="_blank">Blip.tv</a> are currently working on implementations. Pownce is the first consumer of OEmbed; we use these APIs to display inline images and video on the Pownce site. We&#8217;ve been working with <a href="http://digg.com" target="_blank">Digg</a> and <a href="http://www.facebook.com" target="_blank">Facebook</a> to use OEmbed for story and share embeds.</p>
+<p>We&#8217;re excited about gaining more support and feedback for OEmbed. If you work on a photo or video sharing site and are interested in adding OEmbed to your API or if you&#8217;d like to use OEmbed as a consumer, please join our <a href="http://groups.google.com/group/oembed" target="_blank">Google Group</a> - we&#8217;d love to hear from you.</p>
+<p>More press:</p>
+<ul>
+<li><a href="http://www.readwriteweb.com/archives/oembed_open_format.php" target="_blank">ReadWriteWeb</a></li>
+<li><a href="http://developer.yahoo.net/blog/archives/2008/05/oembed_embeddin.html">Yahoo! Developer Network</a></li>
+<li><a href="http://ajaxian.com/archives/oembed-makes-embedding-third-party-videos-and-images-a-breeze">ajaxian</a></li>
+<li><a href="http://blog.hulu.com/2008/5/27/sharing-is-easy" target="_blank">Hulu blog</a></li>
+<li><a href="http://qik.com/blog/124/qik-embraces-oembed-for-embedding-videos">Qik blog</a></li>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://leahculver.com/2008/05/29/announcing-oembed-an-open-standard-for-embedded-content/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Imaginary Dopplr Design Conversation</title>
+		<link>http://leahculver.com/2008/05/05/dopplr-takes-a-lesson-in-fail/</link>
+		<comments>http://leahculver.com/2008/05/05/dopplr-takes-a-lesson-in-fail/#comments</comments>
+		<pubDate>Mon, 05 May 2008 18:46:51 +0000</pubDate>
+		<dc:creator>Leah</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://leahculver.com/2008/05/05/dopplr-takes-a-lesson-in-fail/</guid>
+		<description><![CDATA[I receive a weekly email from travel social networking site Dopplr telling me all about people&#8217;s trips. Sadly, these are people (spam bots?) I don&#8217;t know or really care about. How did that happen?? Here&#8217;s how I imagine it happened&#8230;
+Dopplr-tard: &#8220;Let&#8217;s get rid of mutual friends.&#8221;
+Social Media Fanboy: &#8220;Like Twitter?&#8221;
+Dopplr-tard: &#8220;Twitter is so hot right [...]]]></description>
+			<content:encoded><![CDATA[<p>I receive a weekly email from travel social networking site <a href="http://www.dopplr.com/">Dopplr</a> telling me all about people&#8217;s trips. Sadly, these are people (spam bots?) I don&#8217;t know or really care about. How did that happen?? Here&#8217;s how I imagine it happened&#8230;</p>
+<p>Dopplr-tard: &#8220;Let&#8217;s get rid of mutual friends.&#8221;</p>
+<p>Social Media Fanboy: &#8220;Like <a href="http://twitter.com">Twitter</a>?&#8221;</p>
+<p>Dopplr-tard: &#8220;Twitter is so hot right now.&#8221;</p>
+<p>Social Media Fanboy: &#8220;But my location should be private unless I share it with someone else!&#8221;</p>
+<p>Dopplr-tard: &#8220;Well, how about the opposite? I choose to share trips with you! Then you can see anything I send you and we don&#8217;t need to be mutual friends.&#8221;</p>
+<p>Social Media Fanboy: &#8220;Brilliant! But what if I don&#8217;t want to see someone&#8217;s trips?&#8221;</p>
+<p>Dopplr-tard: &#8220;Then you can just &#8216;mute&#8217; them.&#8221;</p>
+<p>ON A ONE-BY-ONE BASIS.</p>
+<p>Useless and a complete waste of any Cute Girl&#8217;s time. I&#8217;d quit the service except that their Facebook app is pretty and I have some major carbon guilt.</p>
+<p>Update: Matt, I like Dopplr and you can do so much better than this. Please bring back mutual friends and friend requests.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://leahculver.com/2008/05/05/dopplr-takes-a-lesson-in-fail/feed/</wfw:commentRss>
+		</item>
+	</channel>
+</rss>

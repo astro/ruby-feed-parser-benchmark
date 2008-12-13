@@ -1,0 +1,1273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://web.resource.org/cc/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:laconica="http://laconi.ca/ont/" xmlns="http://purl.org/rss/1.0/">
+ <sioc:Site rdf:about="http://identi.ca/">
+  <sioc:name>Identi.ca</sioc:name>
+  <sioc:container_of>
+   <sioc:Container rdf:about="http://identi.ca/julien/all/rss"></sioc:Container>
+</sioc:container_of>
+</sioc:Site>
+ <channel rdf:about="http://identi.ca/julien/all/rss">
+  <title>julien and friends</title>
+  <link>http://identi.ca/julien/all</link>
+  <description>Feed for friends of julien</description>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <image rdf:resource="http://identi.ca/avatar/3429-96-20081029210551.png"></image>
+  <items>
+   <rdf:Seq>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1433300"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1432724"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1432465"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1432438"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1432420"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1432370"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1432351"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1432337"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1432326"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1432301"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1432141"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1430796"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1430539"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1430528"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1430480"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1428063"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1426242"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1426189"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1426171"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1426148"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1426078"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1426008"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1425997"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1425879"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1425810"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1425656"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1425641"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1425407"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1425327"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1424661"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1424653"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1422426"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1422339"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1422325"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1422272"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1422249"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1422239"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1422234"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1422180"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1422000"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1421912"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1421881"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1421576"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1421549"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1421433"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1421431"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1421419"></sioct:MicroblogPost>
+    <sioct:MicroblogPost rdf:resource="http://identi.ca/notice/1421394"></sioct:MicroblogPost>
+</rdf:Seq>
+</items>
+</channel>
+ <image rdf:about="http://identi.ca/avatar/3429-96-20081029210551.png">
+  <title>julien and friends</title>
+  <link>http://identi.ca/julien/all</link>
+  <url>http://identi.ca/avatar/3429-96-20081029210551.png</url>
+</image>
+ <item rdf:about="http://identi.ca/notice/1433300">
+  <title>evan: @markusmerz There's nothing I can do about that. That's how you put HTML into RSS 1.0 streams. If you know of a workaround, tell me.</title>
+  <link>http://identi.ca/notice/1433300</link>
+  <description>evan's status on Friday, 12-Dec-08 17:39:32 UTC</description>
+  <dc:date>2008-12-12T17:39:32+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/markusmerz&quot;&gt;markusmerz&lt;/a&gt;&lt;/span&gt; There's nothing I can do about that. That's how you put HTML into RSS 1.0 streams. If you know of a workaround, tell me.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@markusmerz There's nothing I can do about that. That's how you put HTML into RSS 1.0 streams. If you know of a workaround, tell me.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1432724">
+  <title>evan: @rjeffries my name for an @ notice that's not a reply. Like an open letter.</title>
+  <link>http://identi.ca/notice/1432724</link>
+  <description>evan's status on Friday, 12-Dec-08 16:58:38 UTC</description>
+  <dc:date>2008-12-12T16:58:38+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/rjeffries&quot;&gt;rjeffries&lt;/a&gt;&lt;/span&gt; my name for an @ notice that's not a reply. Like an open letter.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@rjeffries my name for an @ notice that's not a reply. Like an open letter.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1432465">
+  <title>evan: @bugabundo me either; thus the testing</title>
+  <link>http://identi.ca/notice/1432465</link>
+  <description>evan's status on Friday, 12-Dec-08 16:39:13 UTC</description>
+  <dc:date>2008-12-12T16:39:13+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/bugabundo&quot;&gt;bugabundo&lt;/a&gt;&lt;/span&gt; me either; thus the testing</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@bugabundo me either; thus the testing</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1432438">
+  <title>evan: @bugabundo I'm trying to track down this: http://fun.ohhh.no/notice/40647</title>
+  <link>http://identi.ca/notice/1432438</link>
+  <description>evan's status on Friday, 12-Dec-08 16:37:15 UTC</description>
+  <dc:date>2008-12-12T16:37:15+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/bugabundo&quot;&gt;bugabundo&lt;/a&gt;&lt;/span&gt; I'm trying to track down this: &lt;a href=&quot;http://fun.ohhh.no/notice/40647&quot; class=&quot;extlink&quot;&gt;http://fun.ohhh.no/notice/40647&lt;/a&gt;</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@bugabundo I'm trying to track down this: http://fun.ohhh.no/notice/40647</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1432420">
+  <title>evan: Testing sending an attn: notice @identica</title>
+  <link>http://identi.ca/notice/1432420</link>
+  <description>evan's status on Friday, 12-Dec-08 16:35:14 UTC</description>
+  <dc:date>2008-12-12T16:35:14+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+Testing sending an attn: notice @&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/identica&quot;&gt;identica&lt;/a&gt;&lt;/span&gt;</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+Testing sending an attn: notice @identica</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1432370">
+  <title>evan: @markusmerz Blog entry is here: http://controlyourself.ca/2008/12/12/laconica-064-news/ I'll try to answer all your 8 questions.</title>
+  <link>http://identi.ca/notice/1432370</link>
+  <description>evan's status on Friday, 12-Dec-08 16:32:33 UTC</description>
+  <dc:date>2008-12-12T16:32:33+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/markusmerz&quot;&gt;markusmerz&lt;/a&gt;&lt;/span&gt; Blog entry is here: &lt;a href=&quot;http://controlyourself.ca/2008/12/12/laconica-064-news/&quot; class=&quot;extlink&quot;&gt;http://controlyourself.ca/2008/12/12/laconica-064-news/&lt;/a&gt; I'll try to answer all your 8 questions.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@markusmerz Blog entry is here: http://controlyourself.ca/2008/12/12/laconica-064-news/ I'll try to answer all your 8 questions.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1432351">
+  <title>evan: @bugabundo No, that's not what I meant!</title>
+  <link>http://identi.ca/notice/1432351</link>
+  <description>evan's status on Friday, 12-Dec-08 16:30:37 UTC</description>
+  <dc:date>2008-12-12T16:30:37+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/bugabundo&quot;&gt;bugabundo&lt;/a&gt;&lt;/span&gt; No, that's not what I meant!</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@bugabundo No, that's not what I meant!</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1432337">
+  <title>evan: @slidetone I'm not sure I understand it fully. I guess it only happens if the notice would otherwise be over 140 chars. @millette?</title>
+  <link>http://identi.ca/notice/1432337</link>
+  <description>evan's status on Friday, 12-Dec-08 16:29:28 UTC</description>
+  <dc:date>2008-12-12T16:29:28+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/slidetone&quot;&gt;slidetone&lt;/a&gt;&lt;/span&gt; I'm not sure I understand it fully. I guess it only happens if the notice would otherwise be over 140 chars. @&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/millette&quot;&gt;millette&lt;/a&gt;&lt;/span&gt;?</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@slidetone I'm not sure I understand it fully. I guess it only happens if the notice would otherwise be over 140 chars. @millette?</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1432326">
+  <title>stpeter: in the home stretch with @remko and @kev on XMPP: The Definitive Guide</title>
+  <link>http://identi.ca/notice/1432326</link>
+  <description>stpeter's status on Friday, 12-Dec-08 16:28:31 UTC</description>
+  <dc:date>2008-12-12T16:28:31+00:00</dc:date>
+  <dc:creator>Peter Saint-Andre</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1850"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1850-96-20080702180800.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+in the home stretch with @&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/remko&quot;&gt;remko&lt;/a&gt;&lt;/span&gt; and @&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/kev&quot;&gt;kev&lt;/a&gt;&lt;/span&gt; on XMPP: The Definitive Guide</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+in the home stretch with @remko and @kev on XMPP: The Definitive Guide</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1432301">
+  <title>fsx: bin in feierlaune ;)</title>
+  <link>http://identi.ca/notice/1432301</link>
+  <description>fsx's status on Friday, 12-Dec-08 16:26:33 UTC</description>
+  <dc:date>2008-12-12T16:26:33+00:00</dc:date>
+  <dc:creator>Carsten Gørs</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/5470"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/5470-96-20081120154016.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+bin in feierlaune ;)</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+bin in feierlaune ;)</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1432141">
+  <title>mde: Meeting with our financial planner. Financial 'planning,' LOL.</title>
+  <link>http://identi.ca/notice/1432141</link>
+  <description>mde's status on Friday, 12-Dec-08 16:15:35 UTC</description>
+  <dc:date>2008-12-12T16:15:35+00:00</dc:date>
+  <dc:creator>Matthew Eernisse</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/542"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/542-original-20080702225838.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+Meeting with our financial planner. Financial 'planning,' LOL.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+Meeting with our financial planner. Financial 'planning,' LOL.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1430796">
+  <title>tychoish: new tychoish post: Ex-Mac http://tinyurl.com/67822m</title>
+  <link>http://identi.ca/notice/1430796</link>
+  <description>tychoish's status on Friday, 12-Dec-08 14:38:59 UTC</description>
+  <dc:date>2008-12-12T14:38:59+00:00</dc:date>
+  <dc:creator>tycho garen</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/2078"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/2078-96-20080702184338.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+new tychoish post: Ex-Mac &lt;a href=&quot;http://tinyurl.com/67822m&quot; class=&quot;extlink&quot;&gt;http://tinyurl.com/67822m&lt;/a&gt;</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+new tychoish post: Ex-Mac http://tinyurl.com/67822m</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1430539">
+  <title>tychoish: @tychoish the prospect of it making matters worse, because I'm not particularly aware of my typing. not scared of xmodemap. heh.</title>
+  <link>http://identi.ca/notice/1430539</link>
+  <description>tychoish's status on Friday, 12-Dec-08 14:20:34 UTC</description>
+  <dc:date>2008-12-12T14:20:34+00:00</dc:date>
+  <dc:creator>tycho garen</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/2078"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/2078-96-20080702184338.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/tychoish&quot;&gt;tychoish&lt;/a&gt;&lt;/span&gt; the prospect of it making matters worse, because I'm not particularly aware of my typing. not scared of xmodemap. heh.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@tychoish the prospect of it making matters worse, because I'm not particularly aware of my typing. not scared of xmodemap. heh.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1430528">
+  <title>tychoish: I'm thinking about remapping the right shift key as another Meta/Alt. (I'm really left handed) but I'm a little scared at the prospect.</title>
+  <link>http://identi.ca/notice/1430528</link>
+  <description>tychoish's status on Friday, 12-Dec-08 14:19:55 UTC</description>
+  <dc:date>2008-12-12T14:19:55+00:00</dc:date>
+  <dc:creator>tycho garen</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/2078"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/2078-96-20080702184338.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+I'm thinking about remapping the right shift key as another Meta/Alt. (I'm really left handed) but I'm a little scared at the prospect.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+I'm thinking about remapping the right shift key as another Meta/Alt. (I'm really left handed) but I'm a little scared at the prospect.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1430480">
+  <title>evan: @mricon Congratulations to you, Mama, and little LKR!</title>
+  <link>http://identi.ca/notice/1430480</link>
+  <description>evan's status on Friday, 12-Dec-08 14:16:30 UTC</description>
+  <dc:date>2008-12-12T14:16:30+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/mricon&quot;&gt;mricon&lt;/a&gt;&lt;/span&gt; Congratulations to you, Mama, and little LKR!</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@mricon Congratulations to you, Mama, and little LKR!</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1428063">
+  <title>fritzy: @remko that's hilarious</title>
+  <link>http://identi.ca/notice/1428063</link>
+  <description>fritzy's status on Friday, 12-Dec-08 09:55:05 UTC</description>
+  <dc:date>2008-12-12T09:55:05+00:00</dc:date>
+  <dc:creator>Nathan Fritz</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/628"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/628-96-20080724205024.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/remko&quot;&gt;remko&lt;/a&gt;&lt;/span&gt; that's hilarious</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@remko that's hilarious</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1426242">
+  <title>evan: @fritzy @gar hey, thanks for the awesome work on #XMPPHP! The new version is now in production, seems to be working well!</title>
+  <link>http://identi.ca/notice/1426242</link>
+  <description>evan's status on Friday, 12-Dec-08 06:45:25 UTC</description>
+  <dc:date>2008-12-12T06:45:25+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/fritzy&quot;&gt;fritzy&lt;/a&gt;&lt;/span&gt; @&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/gar&quot;&gt;gar&lt;/a&gt;&lt;/span&gt; hey, thanks for the awesome work on #&lt;a href=&quot;http://identi.ca/tag/xmpphp&quot; rel=&quot;tag&quot; class=&quot;hashlink&quot;&gt;XMPPHP&lt;/a&gt;! The new version is now in production, seems to be working well!</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@fritzy @gar hey, thanks for the awesome work on #XMPPHP! The new version is now in production, seems to be working well!</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1426189">
+  <title>evan: OK, I'm turning in. See you all in the morning (EST)!</title>
+  <link>http://identi.ca/notice/1426189</link>
+  <description>evan's status on Friday, 12-Dec-08 06:38:41 UTC</description>
+  <dc:date>2008-12-12T06:38:41+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+OK, I'm turning in. See you all in the morning (EST)!</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+OK, I'm turning in. See you all in the morning (EST)!</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1426171">
+  <title>evan: @stav That's right. We only short URLs now if they'd make the notice too long to fit.</title>
+  <link>http://identi.ca/notice/1426171</link>
+  <description>evan's status on Friday, 12-Dec-08 06:35:38 UTC</description>
+  <dc:date>2008-12-12T06:35:38+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/stav&quot;&gt;stav&lt;/a&gt;&lt;/span&gt; That's right. We only short URLs now if they'd make the notice too long to fit.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@stav That's right. We only short URLs now if they'd make the notice too long to fit.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1426148">
+  <title>evan: moin @lanu</title>
+  <link>http://identi.ca/notice/1426148</link>
+  <description>evan's status on Friday, 12-Dec-08 06:34:11 UTC</description>
+  <dc:date>2008-12-12T06:34:11+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+moin @&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/lanu&quot;&gt;lanu&lt;/a&gt;&lt;/span&gt;</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+moin @lanu</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1426078">
+  <title>evan: @exador23 No, you can block people from your &quot;subscribers&quot; page, even if they're on other sites.</title>
+  <link>http://identi.ca/notice/1426078</link>
+  <description>evan's status on Friday, 12-Dec-08 06:29:15 UTC</description>
+  <dc:date>2008-12-12T06:29:15+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/exador23&quot;&gt;exador23&lt;/a&gt;&lt;/span&gt; No, you can block people from your &amp;quot;subscribers&amp;quot; page, even if they're on other sites.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@exador23 No, you can block people from your &quot;subscribers&quot; page, even if they're on other sites.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1426008">
+  <title>evan: @crashsystems @markjaroski http://controlyourself.ca/2008/12/12/laconica-064-news/</title>
+  <link>http://identi.ca/notice/1426008</link>
+  <description>evan's status on Friday, 12-Dec-08 06:21:31 UTC</description>
+  <dc:date>2008-12-12T06:21:31+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/crashsystems&quot;&gt;crashsystems&lt;/a&gt;&lt;/span&gt; @&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/markjaroski&quot;&gt;markjaroski&lt;/a&gt;&lt;/span&gt; &lt;a href=&quot;http://controlyourself.ca/2008/12/12/laconica-064-news/&quot; class=&quot;extlink&quot;&gt;http://controlyourself.ca/2008/12/12/laconica-064-news/&lt;/a&gt;</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@crashsystems @markjaroski http://controlyourself.ca/2008/12/12/laconica-064-news/</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1425997">
+  <title>evan: @edythemighty That's what the SMS checkbox in &quot;subscriptions&quot; is for.</title>
+  <link>http://identi.ca/notice/1425997</link>
+  <description>evan's status on Friday, 12-Dec-08 06:20:53 UTC</description>
+  <dc:date>2008-12-12T06:20:53+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/edythemighty&quot;&gt;edythemighty&lt;/a&gt;&lt;/span&gt; That's what the SMS checkbox in &amp;quot;subscriptions&amp;quot; is for.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@edythemighty That's what the SMS checkbox in &quot;subscriptions&quot; is for.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1425879">
+  <title>evan: @exador23 You can read the news in the README file http://laconi.ca/darcs/README</title>
+  <link>http://identi.ca/notice/1425879</link>
+  <description>evan's status on Friday, 12-Dec-08 06:05:52 UTC</description>
+  <dc:date>2008-12-12T06:05:52+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/exador23&quot;&gt;exador23&lt;/a&gt;&lt;/span&gt; You can read the news in the README file &lt;a href=&quot;http://laconi.ca/darcs/README&quot; class=&quot;extlink&quot;&gt;http://laconi.ca/darcs/README&lt;/a&gt;</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@exador23 You can read the news in the README file http://laconi.ca/darcs/README</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1425810">
+  <title>evan: @markjaroski yes! But please try it.</title>
+  <link>http://identi.ca/notice/1425810</link>
+  <description>evan's status on Friday, 12-Dec-08 06:00:08 UTC</description>
+  <dc:date>2008-12-12T06:00:08+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/markjaroski&quot;&gt;markjaroski&lt;/a&gt;&lt;/span&gt; yes! But please try it.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@markjaroski yes! But please try it.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1425656">
+  <title>evan: @crashsystems No, I'll put up a blog post before I go to bed.</title>
+  <link>http://identi.ca/notice/1425656</link>
+  <description>evan's status on Friday, 12-Dec-08 05:46:03 UTC</description>
+  <dc:date>2008-12-12T05:46:03+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;fn nickname url atlink&quot; rel=&quot;reply&quot; href=&quot;http://identi.ca/crashsystems&quot;&gt;crashsystems&lt;/a&gt;&lt;/span&gt; No, I'll put up a blog post before I go to bed.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@crashsystems No, I'll put up a blog post before I go to bed.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1425641">
+  <title>evan: Hello! Looks like we're back!</title>
+  <link>http://identi.ca/notice/1425641</link>
+  <description>evan's status on Friday, 12-Dec-08 05:44:03 UTC</description>
+  <dc:date>2008-12-12T05:44:03+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+Hello! Looks like we're back!</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+Hello! Looks like we're back!</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1425407">
+  <title>evan: @exador23 that is disappointing! Because it's a bug! We're going to fix it! Thanks for the heads up.</title>
+  <link>http://identi.ca/notice/1425407</link>
+  <description>evan's status on Friday, 12-Dec-08 05:00:57 UTC</description>
+  <dc:date>2008-12-12T05:00:57+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;a href=&quot;http://identi.ca/exador23&quot; class=&quot;atlink&quot;&gt;exador23&lt;/a&gt; that is disappointing! Because it's a bug! We're going to fix it! Thanks for the heads up.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@exador23 that is disappointing! Because it's a bug! We're going to fix it! Thanks for the heads up.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1425327">
+  <title>mde: Doing TDD on Windmill's JavaScript test engine. Pretty meta.</title>
+  <link>http://identi.ca/notice/1425327</link>
+  <description>mde's status on Friday, 12-Dec-08 04:53:50 UTC</description>
+  <dc:date>2008-12-12T04:53:50+00:00</dc:date>
+  <dc:creator>Matthew Eernisse</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/542"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/542-original-20080702225838.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+Doing TDD on Windmill's JavaScript test engine. Pretty meta.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+Doing TDD on Windmill's JavaScript test engine. Pretty meta.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1424661">
+  <title>evan: @nikolai35 See, that's just the kind of talk that's going to have us drinking absinthe at Bily Kun. Remember the ruckus we caused there?</title>
+  <link>http://identi.ca/notice/1424661</link>
+  <description>evan's status on Friday, 12-Dec-08 03:20:06 UTC</description>
+  <dc:date>2008-12-12T03:20:06+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;a href=&quot;http://identi.ca/nikolai35&quot; class=&quot;atlink&quot;&gt;nikolai35&lt;/a&gt; See, that's just the kind of talk that's going to have us drinking absinthe at Bily Kun. Remember the ruckus we caused there?</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@nikolai35 See, that's just the kind of talk that's going to have us drinking absinthe at Bily Kun. Remember the ruckus we caused there?</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1424653">
+  <title>evan: @webmaven It'll probably be a few days, only importing from the export files, not a &quot;live&quot; import.</title>
+  <link>http://identi.ca/notice/1424653</link>
+  <description>evan's status on Friday, 12-Dec-08 03:19:12 UTC</description>
+  <dc:date>2008-12-12T03:19:12+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;a href=&quot;http://identi.ca/webmaven&quot; class=&quot;atlink&quot;&gt;webmaven&lt;/a&gt; It'll probably be a few days, only importing from the export files, not a &amp;quot;live&amp;quot; import.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@webmaven It'll probably be a few days, only importing from the export files, not a &quot;live&quot; import.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1422426">
+  <title>dustin: I just wrote an old screen saver from scratch because I couldn't find the source. The machine I was looking on (remotely) died. *sigh*</title>
+  <link>http://identi.ca/notice/1422426</link>
+  <description>dustin's status on Thursday, 11-Dec-08 23:43:56 UTC</description>
+  <dc:date>2008-12-11T23:43:56+00:00</dc:date>
+  <dc:creator>Dustin Sallings</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/13892"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/13892-96-20080730073147.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+I just wrote an old screen saver from scratch because I couldn't find the source. The machine I was looking on (remotely) died. *sigh*</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+I just wrote an old screen saver from scratch because I couldn't find the source. The machine I was looking on (remotely) died. *sigh*</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1422339">
+  <title>evan: @nikolai35 you always say that, and by 10 you're raring to go for more</title>
+  <link>http://identi.ca/notice/1422339</link>
+  <description>evan's status on Thursday, 11-Dec-08 23:34:33 UTC</description>
+  <dc:date>2008-12-11T23:34:33+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;a href=&quot;http://identi.ca/nikolai35&quot; class=&quot;atlink&quot;&gt;nikolai35&lt;/a&gt; you always say that, and by 10 you're raring to go for more</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@nikolai35 you always say that, and by 10 you're raring to go for more</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1422325">
+  <title>dustin: @bear sorry for the late reply.  I don't recognize that IP address.</title>
+  <link>http://identi.ca/notice/1422325</link>
+  <description>dustin's status on Thursday, 11-Dec-08 23:33:28 UTC</description>
+  <dc:date>2008-12-11T23:33:28+00:00</dc:date>
+  <dc:creator>Dustin Sallings</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/13892"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/13892-96-20080730073147.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;a href=&quot;http://identi.ca/bear&quot; class=&quot;atlink&quot;&gt;bear&lt;/a&gt; sorry for the late reply.  I don't recognize that IP address.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@bear sorry for the late reply.  I don't recognize that IP address.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1422272">
+  <title>evan: @majnoona leaving now</title>
+  <link>http://identi.ca/notice/1422272</link>
+  <description>evan's status on Thursday, 11-Dec-08 23:28:42 UTC</description>
+  <dc:date>2008-12-11T23:28:42+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;a href=&quot;http://identi.ca/majnoona&quot; class=&quot;atlink&quot;&gt;majnoona&lt;/a&gt; leaving now</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@majnoona leaving now</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1422249">
+  <title>evan: @elcario To scratch an itch. I used Twitter a lot, but I wanted a site that was compatible with the #Franklin_Street_Statement. #PMBUAA</title>
+  <link>http://identi.ca/notice/1422249</link>
+  <description>evan's status on Thursday, 11-Dec-08 23:27:08 UTC</description>
+  <dc:date>2008-12-11T23:27:08+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;a href=&quot;http://identi.ca/elcario&quot; class=&quot;atlink&quot;&gt;elcario&lt;/a&gt; To scratch an itch. I used Twitter a lot, but I wanted a site that was compatible with the #&lt;a href=&quot;http://identi.ca/tag/franklinstreetstatement&quot; rel=&quot;tag&quot; class=&quot;hashlink&quot;&gt;Franklin_Street_Statement.&lt;/a&gt; #&lt;a href=&quot;http://identi.ca/tag/pmbuaa&quot; rel=&quot;tag&quot; class=&quot;hashlink&quot;&gt;PMBUAA&lt;/a&gt;</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@elcario To scratch an itch. I used Twitter a lot, but I wanted a site that was compatible with the #Franklin_Street_Statement. #PMBUAA</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1422239">
+  <title>stpeter: hey @fritzy is there a discussion list or other venue for SleekXMPP?</title>
+  <link>http://identi.ca/notice/1422239</link>
+  <description>stpeter's status on Thursday, 11-Dec-08 23:25:31 UTC</description>
+  <dc:date>2008-12-11T23:25:31+00:00</dc:date>
+  <dc:creator>Peter Saint-Andre</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1850"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1850-96-20080702180800.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+hey @&lt;a href=&quot;http://identi.ca/fritzy&quot; class=&quot;atlink&quot;&gt;fritzy&lt;/a&gt; is there a discussion list or other venue for SleekXMPP?</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+hey @fritzy is there a discussion list or other venue for SleekXMPP?</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1422234">
+  <title>evan: @nikolai35 Awesome!</title>
+  <link>http://identi.ca/notice/1422234</link>
+  <description>evan's status on Thursday, 11-Dec-08 23:25:09 UTC</description>
+  <dc:date>2008-12-11T23:25:09+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;a href=&quot;http://identi.ca/nikolai35&quot; class=&quot;atlink&quot;&gt;nikolai35&lt;/a&gt; Awesome!</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@nikolai35 Awesome!</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1422180">
+  <title>evan: @elcario That's fine. So, I think you just asked for 2 pages of essentials on Identi.ca in 140-character chunks? Is that right? #PMBUAA</title>
+  <link>http://identi.ca/notice/1422180</link>
+  <description>evan's status on Thursday, 11-Dec-08 23:22:21 UTC</description>
+  <dc:date>2008-12-11T23:22:21+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;a href=&quot;http://identi.ca/elcario&quot; class=&quot;atlink&quot;&gt;elcario&lt;/a&gt; That's fine. So, I think you just asked for 2 pages of essentials on Identi.ca in 140-character chunks? Is that right? #&lt;a href=&quot;http://identi.ca/tag/pmbuaa&quot; rel=&quot;tag&quot; class=&quot;hashlink&quot;&gt;PMBUAA&lt;/a&gt;</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@elcario That's fine. So, I think you just asked for 2 pages of essentials on Identi.ca in 140-character chunks? Is that right? #PMBUAA</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1422000">
+  <title>evan: @mlinksva @nyergler I forgot to register for the tech summit. Am I SOL?</title>
+  <link>http://identi.ca/notice/1422000</link>
+  <description>evan's status on Thursday, 11-Dec-08 23:06:05 UTC</description>
+  <dc:date>2008-12-11T23:06:05+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;a href=&quot;http://identi.ca/mlinksva&quot; class=&quot;atlink&quot;&gt;mlinksva&lt;/a&gt; @&lt;a href=&quot;http://identi.ca/nyergler&quot; class=&quot;atlink&quot;&gt;nyergler&lt;/a&gt; I forgot to register for the tech summit. Am I SOL?</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@mlinksva @nyergler I forgot to register for the tech summit. Am I SOL?</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1421912">
+  <title>evan: @creativecommons I forgot to register for the #CC_Tech_Summit. Is it still possible to go?</title>
+  <link>http://identi.ca/notice/1421912</link>
+  <description>evan's status on Thursday, 11-Dec-08 23:00:07 UTC</description>
+  <dc:date>2008-12-11T23:00:07+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;a href=&quot;http://identi.ca/creativecommons&quot; class=&quot;atlink&quot;&gt;creativecommons&lt;/a&gt; I forgot to register for the #&lt;a href=&quot;http://identi.ca/tag/cctechsummit&quot; rel=&quot;tag&quot; class=&quot;hashlink&quot;&gt;CC_Tech_Summit.&lt;/a&gt; Is it still possible to go?</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@creativecommons I forgot to register for the #CC_Tech_Summit. Is it still possible to go?</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1421881">
+  <title>evan: @elcario Sure! Email, phone, what?</title>
+  <link>http://identi.ca/notice/1421881</link>
+  <description>evan's status on Thursday, 11-Dec-08 22:56:34 UTC</description>
+  <dc:date>2008-12-11T22:56:34+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;a href=&quot;http://identi.ca/elcario&quot; class=&quot;atlink&quot;&gt;elcario&lt;/a&gt; Sure! Email, phone, what?</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@elcario Sure! Email, phone, what?</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1421576">
+  <title>evan: Oh, sweet! http://ur1.ca/060d #Big_Country #Russia</title>
+  <link>http://identi.ca/notice/1421576</link>
+  <description>evan's status on Thursday, 11-Dec-08 22:27:51 UTC</description>
+  <dc:date>2008-12-11T22:27:51+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+Oh, sweet! &lt;a href=&quot;http://ur1.ca/060d&quot; title='http://bigcountry.ru/' class=&quot;extlink&quot;&gt;http://ur1.ca/060d&lt;/a&gt; #&lt;a href=&quot;http://identi.ca/tag/bigcountry&quot; rel=&quot;tag&quot; class=&quot;hashlink&quot;&gt;Big_Country&lt;/a&gt; #&lt;a href=&quot;http://identi.ca/tag/russia&quot; rel=&quot;tag&quot; class=&quot;hashlink&quot;&gt;Russia&lt;/a&gt;</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+Oh, sweet! http://ur1.ca/060d #Big_Country #Russia</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1421549">
+  <title>evan: @dashmybuttons Russia is #Big_Country but I have no idea if they like #Big_Country there. At all. Anybody.</title>
+  <link>http://identi.ca/notice/1421549</link>
+  <description>evan's status on Thursday, 11-Dec-08 22:25:35 UTC</description>
+  <dc:date>2008-12-11T22:25:35+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;a href=&quot;http://identi.ca/dashmybuttons&quot; class=&quot;atlink&quot;&gt;dashmybuttons&lt;/a&gt; Russia is #&lt;a href=&quot;http://identi.ca/tag/bigcountry&quot; rel=&quot;tag&quot; class=&quot;hashlink&quot;&gt;Big_Country&lt;/a&gt; but I have no idea if they like #&lt;a href=&quot;http://identi.ca/tag/bigcountry&quot; rel=&quot;tag&quot; class=&quot;hashlink&quot;&gt;Big_Country&lt;/a&gt; there. At all. Anybody.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@dashmybuttons Russia is #Big_Country but I have no idea if they like #Big_Country there. At all. Anybody.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1421433">
+  <title>evan: @majnoona I can stop and get @amitajune if you want.</title>
+  <link>http://identi.ca/notice/1421433</link>
+  <description>evan's status on Thursday, 11-Dec-08 22:13:37 UTC</description>
+  <dc:date>2008-12-11T22:13:37+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;a href=&quot;http://identi.ca/majnoona&quot; class=&quot;atlink&quot;&gt;majnoona&lt;/a&gt; I can stop and get @&lt;a href=&quot;http://identi.ca/amitajune&quot; class=&quot;atlink&quot;&gt;amitajune&lt;/a&gt; if you want.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@majnoona I can stop and get @amitajune if you want.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1421431">
+  <title>evan: @candrews Not tonight's release, but next week's.</title>
+  <link>http://identi.ca/notice/1421431</link>
+  <description>evan's status on Thursday, 11-Dec-08 22:13:18 UTC</description>
+  <dc:date>2008-12-11T22:13:18+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;a href=&quot;http://identi.ca/candrews&quot; class=&quot;atlink&quot;&gt;candrews&lt;/a&gt; Not tonight's release, but next week's.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@candrews Not tonight's release, but next week's.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1421419">
+  <title>evan: @nickwalker I'll have a blog post about it tomorrow morning.</title>
+  <link>http://identi.ca/notice/1421419</link>
+  <description>evan's status on Thursday, 11-Dec-08 22:12:32 UTC</description>
+  <dc:date>2008-12-11T22:12:32+00:00</dc:date>
+  <dc:creator>Evan Prodromou</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+@&lt;a href=&quot;http://identi.ca/nickwalker&quot; class=&quot;atlink&quot;&gt;nickwalker&lt;/a&gt; I'll have a blog post about it tomorrow morning.</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+@nickwalker I'll have a blog post about it tomorrow morning.</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <item rdf:about="http://identi.ca/notice/1421394">
+  <title>astro: #snow makes black #cats visible</title>
+  <link>http://identi.ca/notice/1421394</link>
+  <description>astro's status on Thursday, 11-Dec-08 22:11:02 UTC</description>
+  <dc:date>2008-12-11T22:11:02+00:00</dc:date>
+  <dc:creator>Astro</dc:creator>
+  <sioc:has_creator rdf:resource="http://identi.ca/user/1591"></sioc:has_creator>
+  <laconica:postIcon rdf:resource="http://avatar.identi.ca/1591-96-20080702172808.png"></laconica:postIcon>
+  <cc:licence rdf:resource="http://creativecommons.org/licenses/by/3.0/"></cc:licence>
+  <content:items>
+   <rdf:Bag>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.w3.org/1999/xhtml"></content:format>
+#&lt;a href=&quot;http://identi.ca/tag/snow&quot; rel=&quot;tag&quot; class=&quot;hashlink&quot;&gt;snow&lt;/a&gt; makes black #&lt;a href=&quot;http://identi.ca/tag/cats&quot; rel=&quot;tag&quot; class=&quot;hashlink&quot;&gt;cats&lt;/a&gt; visible</content:item>
+</rdf:li>
+    <rdf:li>
+     <content:item>
+      <content:format rdf:resource="http://www.isi.edu/in-notes/iana/assignments/media-types/text/plain"></content:format>
+#snow makes black #cats visible</content:item>
+</rdf:li>
+</rdf:Bag>
+</content:items>
+</item>
+ <sioc:User rdf:about="http://identi.ca/user/1">
+  <foaf:nick>evan</foaf:nick>
+  <foaf:name>Evan Prodromou</foaf:name>
+  <sioc:id>1</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/1-96-20081211155408.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/1850">
+  <foaf:nick>stpeter</foaf:nick>
+  <foaf:name>Peter Saint-Andre</foaf:name>
+  <sioc:id>1850</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/1850-96-20080702180800.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/5470">
+  <foaf:nick>fsx</foaf:nick>
+  <foaf:name>Carsten Gørs</foaf:name>
+  <sioc:id>5470</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/5470-96-20081120154016.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/542">
+  <foaf:nick>mde</foaf:nick>
+  <foaf:name>Matthew Eernisse</foaf:name>
+  <sioc:id>542</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/542-original-20080702225838.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/2078">
+  <foaf:nick>tychoish</foaf:nick>
+  <foaf:name>tycho garen</foaf:name>
+  <sioc:id>2078</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/2078-96-20080702184338.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/628">
+  <foaf:nick>fritzy</foaf:nick>
+  <foaf:name>Nathan Fritz</foaf:name>
+  <sioc:id>628</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/628-96-20080724205024.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/13892">
+  <foaf:nick>dustin</foaf:nick>
+  <foaf:name>Dustin Sallings</foaf:name>
+  <sioc:id>13892</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/13892-96-20080730073147.png"></sioc:avatar>
+</sioc:User>
+ <sioc:User rdf:about="http://identi.ca/user/1591">
+  <foaf:nick>astro</foaf:nick>
+  <foaf:name>Astro</foaf:name>
+  <sioc:id>1591</sioc:id>
+  <sioc:avatar rdf:resource="http://avatar.identi.ca/1591-96-20080702172808.png"></sioc:avatar>
+</sioc:User>
+</rdf:RDF>

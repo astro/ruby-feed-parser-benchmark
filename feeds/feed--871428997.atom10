@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule"
+>
+
+<channel>
+	<title>one small voice &#187; identity</title>
+	<atom:link href="http://stpeter.im/?feed=rss2&#038;cat=11" rel="self" type="application/rss+xml" />
+	<link>https://stpeter.im</link>
+	<description>stpeter's blog on jabber, technology, history, philosophy, language, music, et al.</description>
+	<pubDate>Tue, 09 Dec 2008 16:22:16 +0000</pubDate>
+	<generator>http://wordpress.org/?v=abc</generator>
+	<language>en</language>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+		<item>
+		<title>Wikipedia Redux</title>
+		<link>https://stpeter.im/?p=1927</link>
+		<comments>https://stpeter.im/?p=1927#comments</comments>
+		<pubDate>Thu, 14 Jun 2007 15:36:23 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1927</guid>
+		<description><![CDATA[Following up on my last post, I just updated my Wikipedia user page with the following screed:
+
+Name: Peter Saint-Andre
+Homepage: saint-andre.com
+Weblog: stpeter.im
+Role: Executive Director of the XMPP Standards Foundation
+Email: stpeter [at] jabber.org
+JabberID: stpeter [at] jabber.org
+Wikipedia does not support a concept of strong identity, so the foregoing information is a mere assertion as far as Wikipedia is [...]]]></description>
+			<content:encoded><![CDATA[<p>Following up on my <a href='http://stpeter.im/?p=1926'>last post</a>, I just updated my <a href='http://en.wikipedia.org/wiki/User:Stpeter'>Wikipedia user page</a> with the following screed:</p>
+<blockquote>
+<p>Name: <a href="http://www.xmpp.org/xsf/people/stpeter.shtml" class="external text" title="http://www.xmpp.org/xsf/people/stpeter.shtml" rel="nofollow">Peter Saint-Andre</a></p>
+<p>Homepage: <a href="http://www.saint-andre.com/" class="external text" title="http://www.saint-andre.com/" rel="nofollow">saint-andre.com</a></p>
+<p>Weblog: <a href="http://stpeter.im/" class="external text" title="http://stpeter.im/" rel="nofollow">stpeter.im</a></p>
+<p>Role: <a href="http://www.xmpp.org/xsf/director.shtml" class="external text" title="http://www.xmpp.org/xsf/director.shtml" rel="nofollow">Executive Director</a> of the <a href="http://www.xmpp.org/" class="external text" title="http://www.xmpp.org/" rel="nofollow">XMPP Standards Foundation</a></p>
+<p>Email: stpeter [at] jabber.org</p>
+<p>JabberID: stpeter [at] jabber.org</p>
+<p>Wikipedia <a href="http://stpeter.im/?p=1926" class="external text" title="http://stpeter.im/?p=1926" rel="nofollow">does not support</a> a concept of strong identity, so the foregoing information is a mere assertion as far as Wikipedia is concerned. In particular:</p>
+<ol>
+<li>I have no access to the META tags at this page, otherwise I would claim it using a <a href="http://microid.org" class="external text" title="http://microid.org" rel="nofollow">microid</a> generated and verified by <a href="http://claimid.com" class="external text" title="http://claimid.com/stpeter" rel="nofollow">ClaimID</a>.</li>
+<li>I have no access to the complete HTML for this page, otherwise I would sign it using my <a href="http://www.saint-andre.com/me/stpeter.cer" class="external text" title="http://www.saint-andre.com/me/stpeter.cer" rel="nofollow">X.509 certificate</a> (SHA1 fingerprint CFFC A717 0EAC 8051 58C4 224F 3CD5 C970 E495 30ED) or my <a href="http://www.saint-andre.com/me/stpeter.asc" class="external text" title="http://www.saint-andre.com/me/stpeter.asc" rel="nofollow">OpenPGP key</a> (SHA1 fingerprint 4781 0AEC D13E 7B9D 5A35 CCE6 FB34 F553 7BBD 0573).</li>
+<li>Wikipedia does not support certificate login, so I cannot log in using my X.509 certificate (in fact Wikipedia does not even offer SSL encryption, so my password could be sniffed by a man in the middle!).</li>
+<li>Wikipedia could run its own Certification Authority and give higher status to users who provide the kind of information that CAs traditionally require in order to obtain a Class 2 certificate (e.g., government-issued photo IDs and notarized documents).</li>
+<li>Wikipedia could regularly ask users to verify the content on their own user pages, taking a digitally signed or encrypted email response with verification as approval.</li>
+</ol>
+<p>Wikipedia could do any and all of these things. If they did, then Wikipedia could really know who is creating the content at Wikipedia. But it doesn&#8217;t. So instead, we don&#8217;t know who creates the content at Wikipedia, whether the people who run Wikipedia are who they claim to be, or whether Wikipedia has any reliability whatsoever.</p>
+<p>Welcome to the Age of Essjay.</p>
+</blockquote>
+<p>We&#8217;ll see if the page gets defaced&#8230;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1927</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>What Dogs the Net</title>
+		<link>https://stpeter.im/?p=1926</link>
+		<comments>https://stpeter.im/?p=1926#comments</comments>
+		<pubDate>Thu, 14 Jun 2007 03:46:24 +0000</pubDate>
+		<dc:creator>stpeter</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1926</guid>
+		<description><![CDATA[Information Week recently ran an article about the lack of credibility on the Internet. Credibility has two components: identity and reputation. Sure, it&#8217;s said that on the Internet, nobody knows you&#8217;re a dog, but we can know more if we care to.
+Here&#8217;s an example. During a dispute at Wikipedia earlier this year (about an entry [...]]]></description>
+			<content:encoded><![CDATA[<p>Information Week recently ran an article about the <a href='http://www.informationweek.com/shared/printableArticle.jhtml?articleID=199900170'>lack of credibility</a> on the Internet. Credibility has two components: identity and reputation. Sure, it&#8217;s said that <a href='http://www.lib.unb.ca/instruction/LILT/mod5/18-internet-dog.html'>on the Internet, nobody knows you&#8217;re a dog</a>, but we <em>can</em> know more if we care to.</p>
+<p>Here&#8217;s an example. During a <a href='http://en.wikipedia.org/wiki/Wikipedia:Articles_for_deletion/StartCom'>dispute</a> at <a href='http://www.wikipedia.org/'>Wikipedia</a> earlier this year (about an entry on the <a href='http://cert.startcom.org/'>StartCom Free Certification Authority</a>), I was both saddened and amused to see someone say:</p>
+<blockquote>
+<p>According to his <a href="http://en.wikipedia.org/wiki/User:Stpeter" title="User:Stpeter">user page</a>, Stpeter is Executive Director of the <a href="http://en.wikipedia.org/wiki/XMPP_Standards_Foundation" title="XMPP Standards Foundation">XMPP Standards Foundation</a>. &#8211;<a href="http://en.wikipedia.org/wiki/User:A._B." title="User:A. B.">A. B.</a> <a href="http://en.wikipedia.org/wiki/User_talk:A._B." title="User talk:A. B."><sup>(talk)</sup></a> 19:17, 5 April 2007 (UTC)</p>
+</blockquote>
+<p>This is silly, no? I mean, we have digital certificates &#8212; I sign my email with one. We have technologies like <a href='http://microid.org/'>MicroID</a> and <a href='http://www.claimid.com/'>ClaimID</a> (in fact I have <a href='http://claimid.com/stpeter'>claimed</a> the <a href='http://www.xmpp.org/xsf/people/stpeter.shtml'>page about me</a> at the XSF website). We have whois lookups (I am the administrative, billing, and technical contact for the xmpp.org domain). We have government-issued photo IDs (GIPIDs) such as driver&#8217;s licenses and passports, which certification authorities such as <a href='http://www.cacert.org/'>CAcert</a> and <a href='http://cert.startcom.org/'>Startcom</a> check before issuing a Class 2 certificate. We have webs of trust using PGP or plain old personal networks (heck, Wikipedia founder <a href='http://en.wikipedia.org/wiki/User:Jimbo_Wales'>Jimmy Wales</a> has known me since 1992 or so and we&#8217;ve met in person numerous times). We have real-world credentials such as business registrations (which I manage for the XSF), bank accounts (I have signing authority for the XSF account with Wells Fargo), and tax returns (which I sign for the XSF). We could tie a lot of this information together in order to show that the user Stpeter at Wikipedia is indeed me and that I am indeed the Executive Director of the XSF. Yet the best that folks at Wikipedia can do is say that the user Stpeter asserts that he is Executive Director of the XSF? Please. We can do better than that! And in the <a href='http://www.roughtype.com/archives/2007/03/head_wikipedian.php'>Age of Essjay</a>, it is incumbent on Wikipedia specifically to do better. (How about supporting MicroIDs and certificate login? How about doing some fact checking? Hell, how about using SSL encryption so that passwords aren&#8217;t sent in the clear?!?)</p>
+<p>Yes we need stronger credibility and stronger reputation on the &#8216;net. But the foundation of credibility and reputation is identity. And my friend Jimmy Wales should know that &#8212; after all, <a href='http://en.wikipedia.org/wiki/Objectivist_metaphysics'>existence is identity and consciousness is identification</a>, right Jimmy? Credibility and reputation are forms of evaluation, and evaluation is a form of human consciousness; but  consciousness without identity is meaningless &#8212; as the Wikipedians (and millions of others) are discovering every day in the increasingly low-trust environment we call the Internet.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1926</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Theseus Revisited</title>
+		<link>https://stpeter.im/?p=1778</link>
+		<comments>https://stpeter.im/?p=1778#comments</comments>
+		<pubDate>Mon, 01 Jan 2007 04:43:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1778</guid>
+		<description><![CDATA[
+        Identity persistence and Zooko&#8217;s triangle.
+        
+Bob Wyman suggests that it&#8217;s time to update Zooko&#8217;s triangle by adding a dimension of persistence vs. non-persistence to the existing dimensions of unique vs. non-unique, global vs. local, and memorable vs. non-memorable.
+First, it&#8217;s important [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        Identity persistence and Zooko&#8217;s triangle.<br />
+        </em></p>
+<p>Bob Wyman <a href="http://www.wyman.us/main/2006/12/the_persistence.html">suggests</a> that it&#8217;s time to update <a href="http://en.wikipedia.org/wiki/Zooko%27s_triangle">Zooko&#8217;s triangle</a> by adding a dimension of persistence vs. non-persistence to the existing dimensions of unique vs. non-unique, global vs. local, and memorable vs. non-memorable.</p>
+<p>First, it&#8217;s important to clearly understand the meaning and import of Zooko&#8217;s triangle (note well: the task is made harder by the fact that the property names at the above-referenced Wikipedia page are seriously confusing). Bob lays it out as follows:</p>
+<blockquote>
+<p>The argument made by Zooko&#8217;s Triangle is that no naming/identity scheme can provide all three of the attributes Zooko considers essential metrics of identity systems. For instance, while you might be able to build a &#8220;Secure and Global&#8221; naming system, in doing so, you would undoubtedly need to use identifiers that were not &#8220;memorable&#8221; &#8212; at least not by mere humans. The importance of these three system attributes and the difficulty of producing systems which provide all three is generally well accepted by those in the naming/identity business.</p>
+</blockquote>
+<p>As I wrote in <a href="http://www.xmpp.org/extensions/xep-0165.html">XEP-0165: Best Practices to Prevent JID Mimicking</a>, my understanding is that <em>no one scheme</em> can provide names that are simultaneously global, unique, and memorable (where a name could be an address, identifier, nickname, handle, etc.). However, certain <em>combinations</em> of names can together provide all three properties. Such combinations are commonly called petname systems. In XEP-0165, I use the following example:</p>
+<ol start="" type="">
+<li>
+<p>Let&#8217;s say my JabberID is &#8220;stpeter@jabber.org&#8221;. That ID is unique on the Jabber network (&#8221;stpeter&#8221; is unique at the domain jabber.org and the jabber.org domain is unique on the network because of DNS). It is also global (again because of our use of DNS). So &#8220;stpeter@jabber.org&#8221; is both global and unique, but it may or may not be memorable to regular old humans. If the JID were something more complicated like &#8220;j.peter.saint-andre@corp.jabber.com&#8221; or if we used an even less memorable ID such as &#8220;CFFC A717 0EAC 8051 58C4 224F 3CD5 C970 E495 30ED&#8221; (the fingerprint of my X.509 certificate) then it would be less memorable. As Meatloaf said, two out of three ain&#8217;t bad. But it doesn&#8217;t get us to a petname system.</p>
+</li>
+<li>
+<p>Let&#8217;s say I assert to all Jabber users that my nickname is &#8220;PSA&#8221;. That&#8217;s quite memorable, but it&#8217;s probably not unique (lots of folks could assert the same nickname). However, I want everyone to use that nickname for me, so in a sense it is global. I guess that&#8217;s one-and-a-half out of three (two out of three if you&#8217;re feeling generous).</p>
+</li>
+<li>
+<p>Let&#8217;s say when you add me to your contact list, you give me a &#8220;handle&#8221; of &#8220;that Jabber protocol dude&#8221; and you never assign the same handle to any other person in your contact list. This handle is quite memorable to you and it is unique within your personal context, but it is purely local. Here again, two out of three.</p>
+</li>
+</ol>
+<p>What happens when we put these three names together? We have a global+unique address, a global+memorable nickname, and a non-global+unique handle. If you talk about me with another person on the network, you can refer to me as stpeter@jabber.org + PSA (but you must never mention that your handle for me is &#8220;that Jabber protocol dude&#8221;). If you receive a message from stpeter@jabbber.org (note the third &#8220;b&#8221;), your client will warn you that the sender is not &#8220;that Jabber protocol dude&#8221;. Together this <em>combination</em> of names gets us closer to a system that provides the properties of global, unique, and memorable (GUM?). (Note: It&#8217;s even better if we associate a cryptographic key, or fingerprint thereof, with the address / nickname / handle, but we&#8217;ll look at that some other time.)</p>
+<p>Now to this &#8220;GUM&#8221; system, Bob Wyman suggests that we need to add &#8220;P&#8221; for persistence (GUMP?):</p>
+<blockquote>
+<p>To the three attributes or axes of Zooko&#8217;s Triangle, we need to add a fourth axis or dimension which is &#8220;Persistence&#8221; (i.e. that which relates to the difficult and controversial subject of Identity over Time). The result is a pyramid which allows us to better model constraints on the universe of achievable identity systems. For any of the three traditionally recognized attributes, we need to ask the question &#8220;For how long?&#8221; (e.g. For how long will an identifier be memorable? For how long will an identity system be secure? What determines the period of time during which a globally unique identifier can be considered &#8220;global?&#8221;)</p>
+<p>When Snow White met the dwarfs, the names &#8220;Sneezy,&#8221; &#8220;Sleepy&#8221;, and &#8220;Dopey&#8221; were highly memorable because those names were highly descriptive of the individuals identified by those names and because those individuals were constantly reinforcing the appropriateness of their names through very visible patterns of behavior. But, had Sneezy recovered from his allergies before meeting Snow White and had Sleepy previously learned to go to bed earlier, Snow White might have found their once memorable names to be less than memorable. (The memorability of the drawf&#8217;s names was limited to a specific period of time.) Similarly, we are all well aware that we simply don&#8217;t have the algorithms needed to build systems whose security is everlasting. Security is a temporal quality. No matter how &#8220;secure&#8221; you may intend your system to be, it is simply a matter of time and effort that is needed to break it.</p>
+</blockquote>
+<p>It&#8217;s true that all of the names I mention in my example could be non-persistent. Jer might forget to renew his registration for jabber.org and the domain might fall into the hands of someone who pulls the plug on the XMPP service there. I might decide to change my nickname from PSA to MaineBoy. You might decide to change your handle for me to &#8220;the guy who blogs at one small voice&#8221;. My X.509 certificate might be revoked and I might generate a new one through a provider other than <a href="http://cert.startcom.org/">StartCom</a>. I might get hit by a bus tomorrow and die on the way to the hospital, in which case my identity will become of only historical interest. Etc.</p>
+<p>Well, sure &#8212; everything is temporal (at least until the heat-death of the universe). I do think Bob&#8217;s right that we do need to take better account of persistence &#8212; or, more precisely, the lack of persistence &#8212; in our identity systems. But I&#8217;m not yet sure if we need to expand Zooko&#8217;s Triangle into Zooko&#8217;s Pyramid in order to do that. We seem to function OK in Internet-space without persistent identifiers, since we use social norms to solve the problem of non-persistence (&#8221;sorry, changed my email address again&#8221;; &#8220;I&#8217;m no longer blogging here, go there for my latest posts&#8221;; &#8220;my old cert expired, here&#8217;s my new cert&#8221;; &#8220;don&#8217;t call me PSA anymore, call me MaineBoy&#8221;). That said, most people do have a persistent identifer in meatspace (in America we call it a Social Security Number). Do we need such a persistent identifier on the Internet? (I <a href="http://www.saint-andre.com/blog/2004-12.html#2004-12-07T15:53">have</a> an <a href="http://2idi.com/contact/=stpeter">i-name</a>, but do I really need an i-number?) I&#8217;m not yet convinced, but I haven&#8217;t followed the argument very closely.</p>
+<p>If anything, I tend to think that identity persistence is an emergent property of a combination of names. My email address changes but my JabberID and domain name stay the same during the transition; then I get a new cert but my (new) email address, JabberID, and domain name persist through that transition. Etc. As long as I don&#8217;t change everything at once, we have as much identity persistence as <a href="http://en.wikipedia.org/wiki/Ship_of_Theseus">the ship of Theseus</a> did, which has enough persistence to provide a useful concept of identity for most people. Perfection (in this case, guaranteed persistence to the end of time) is not an option&#8230;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1778</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>New WoT</title>
+		<link>https://stpeter.im/?p=1710</link>
+		<comments>https://stpeter.im/?p=1710#comments</comments>
+		<pubDate>Thu, 14 Sep 2006 19:57:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1710</guid>
+		<description><![CDATA[
+        CA + WoT = Strong Digital Identity?
+        
+Some folks who are associated in one way or another with the StartCom CA (first noted here) are talking about starting a web of trust project that would help build a stronger sense [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        CA + WoT = Strong Digital Identity?<br />
+        </em></p>
+<p>Some folks who are associated in one way or another with the <a href="https://cert.startcom.org/">StartCom CA</a> (first noted <a href="http://www.saint-andre.com/blog/2006-05.html#2006-05-19T14:59">here</a>) are talking about starting a <a href="http://startssl.wordpress.com/2006/09/12/the-startcom-web-of-trust-project/">web of trust project</a> that would help build a <a href="http://startssl.wordpress.com/2006/09/13/identity-and-certificate-authorities/">stronger sense of digital identity</a>. Check out their blog <a href="http://startssl.wordpress.com/">here</a>. Though I like the general idea (since I like webs of trust) and I&#8217;ve left a few comments at the blog, I haven&#8217;t yet had a chance to grok the idea in fullness. Expect more posts about this in the future&#8230;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1710</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Micro This!</title>
+		<link>https://stpeter.im/?p=1663</link>
+		<comments>https://stpeter.im/?p=1663#comments</comments>
+		<pubDate>Thu, 13 Jul 2006 19:01:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1663</guid>
+		<description><![CDATA[
+        To ubuiquity and beyond.
+        
+Terrell Russell is encouraging various providers to starting using the MicroID technology to show page ownership on the &#8216;net. I&#8217;ll be contacting last.fm and LinkedIn. If y&#8217;all do your part, I know we can achieve ubuiquitous [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        To ubuiquity and beyond.<br />
+        </em></p>
+<p>Terrell Russell is <a href="http://weblog.terrellrussell.com/2006/07/microid-army-activate/">encouraging</a> various providers to starting using the <a href="http://microid.org/">MicroID</a> technology to show page ownership on the &#8216;net. I&#8217;ll be contacting <a href="http://www.last.fm/">last.fm</a> and <a href="http://www.linkedin.com/">LinkedIn</a>. If y&#8217;all do your part, I know we can achieve ubuiquitous deployment by, oh, next Thursday or so. ;-)</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1663</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>MicroIDs Ahoy!</title>
+		<link>https://stpeter.im/?p=1677</link>
+		<comments>https://stpeter.im/?p=1677#comments</comments>
+		<pubDate>Wed, 05 Jul 2006 20:51:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1677</guid>
+		<description><![CDATA[
+        More standards in the making.
+        
+In my copious spare time, I&#8217;ll soon be helping jer with standardization of MicroIDs, ably assisted by Fred Stutzman of ClaimID. Jer has posted more over at the MicroID blog.
+(Given my work last year with [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        More standards in the making.<br />
+        </em></p>
+<p>In my copious spare time, I&#8217;ll soon be helping <a href="http://jeremie.com/">jer</a> with standardization of <a href="http://microid.org/">MicroIDs</a>, ably assisted by <a href="http://chimprawk.blogspot.com/">Fred Stutzman</a> of <a href="http://claimid.com/">ClaimID</a>. Jer has <a href="http://microid.org/blog/?p=7">posted more</a> over at the <a href="http://microid.org/blog/">MicroID blog</a>.</p>
+<p>(Given my work last year with <a href="http://www.passel.org/planet/">Passel</a> and my ongoing work with <a href="http://www.cacert.org/">CAcert</a> and other certification authorities, it seems that digital identity is most definitely my second technical pursuit &#8212; after <a href="http://www.jabber.org/">Jabber</a>, naturally.)</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1677</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Got PKI?</title>
+		<link>https://stpeter.im/?p=1553</link>
+		<comments>https://stpeter.im/?p=1553#comments</comments>
+		<pubDate>Wed, 19 Apr 2006 21:21:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1553</guid>
+		<description><![CDATA[
+        Why digital signatures are not working.
+        
+Barry Leiba observes that the public key infrastructure (PKI) and related personal encryption technologies are simply not working. Sure, the cryptographers have figured out pretty secure hashing algorithms and all that, but the usability [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        Why digital signatures are not working.<br />
+        </em></p>
+<p>Barry Leiba observes that the <a href="http://www.pki-page.org/">public key infrastructure</a> (PKI) and related personal encryption technologies are <a href="http://staringatemptypages.blogspot.com/2006/04/pki-pki-pki.html">simply not working</a>. Sure, the cryptographers have figured out pretty secure hashing algorithms and all that, but the usability and logistics of encryption and digital signatures are challenging even to geeks, let alone <a href="http://catb.org/~esr/jargon/html/A/Aunt-Tillie.html">Aunt Tillie</a>. Bob Wyman argues that we <a href="http://bobwyman.pubsub.com/main/2006/04/peopleaggregato.html">don&#8217;t need PKI</a> in order to have digital identity, which is true up to a point, but personally I think that <a href="http://www.saint-andre.com/blog/2006-02.html#2006-02-27T22:13">strong digital identity is important</a> because many kinds of messages can be forged and in many contexts identity-based encryption is a good thing. But it&#8217;s not easy now and unfortunately it&#8217;s not getting any easier, because it&#8217;s hard to get it right (in part because the metaphors are not familiar to normal people). Barry says &#8220;we should be able to get certificates when we get a passports or driver&#8217;s licenses&#8221;; the folks in Estonia have <a href="http://www.id.ee/pages.php/030302">done that</a> (population ~1.3 million), but doing it in the USA (population ~300 million) or even one American state would be a challenge, I think.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1553</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Why Sign</title>
+		<link>https://stpeter.im/?p=1478</link>
+		<comments>https://stpeter.im/?p=1478#comments</comments>
+		<pubDate>Tue, 28 Feb 2006 05:13:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1478</guid>
+		<description><![CDATA[
+        Identity, digital signatures, and high-trust societies.
+        
+As mentioned recently, I digitally sign my email. Why? After all, by signing my email I vouch for what I say (no disowning it later) and I relinquish my anonymity. Wouldn&#8217;t it be better [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        Identity, digital signatures, and high-trust societies.<br />
+        </em></p>
+<p>As <a href="http://www.saint-andre.com/blog/2006-02.html#2006-02-09T22:29">mentioned</a> recently, I digitally sign my email. Why? After all, by signing my email I vouch for what I say (no disowning it later) and I relinquish my anonymity. Wouldn&#8217;t it be better to use some anonymizing service, not attach my name to what I say, not sign my mail, etc.?</p>
+<p>Well, no. Here&#8217;s why:</p>
+<ol start="" type="">
+<li>
+<p>Anonymity doesn&#8217;t matter. I&#8217;m proud of who I am, so I don&#8217;t feel the need to be some anonymous shmoo on the Internet. (If I lived in a repressive society, I might feel differently, but in free societies anonymity isn&#8217;t important, at least to me.)</p>
+</li>
+<li>
+<p>Trust matters. As Francis Fukuyama has <a href="http://isbn.nu/0029109760">argued</a>, societies with a high radius of trust (i.e., in which people readily associate with those far from their own kinship groups) are more successful. I want the Internet to be successful and to be a high-radius-of-trust extension of real life. One electronic marker of whether someone is trustworthy is whether they sign their email.</p>
+</li>
+<li>
+<p>Identity matters. To me, trust and identity go hand-in-hand. I don&#8217;t particularly trust anonymous people &#8212; I need to know who they are (or at least that they have a stable association with a key, a cert, a mailing list, a blog, a website, etc.). When I receive email from someone with only a nickname, I immediately discount what that person says. It goes all the way back to Aristotle&#8217;s <cite>Rhetoric</cite>: one is more likely to listen to or believe the argument of one who has a good reputation (and reputation is impossible without identity).</p>
+</li>
+</ol>
+<p>In the early days of the Internet (when it was almost solely an academic environment), access was tied to identity, users were not anonymous, and the medium was a high-trust microcosm of society. Today, Internet users have extremely weak identity (if any), email addresses are easily forged, no one knows who anyone is, and the result is a low-trust electronic slum. Use of digital signatures, server certificates, and the like is a way to help build a higher-trust Internet (or alternative community within the Internet). Those who use digital signatures today are like urban pioneers in a bad neighborhood. It&#8217;s not clear if we&#8217;re going to overcome the forces of darkness. But at least we&#8217;re trying.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1478</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Reputation</title>
+		<link>https://stpeter.im/?p=1427</link>
+		<comments>https://stpeter.im/?p=1427#comments</comments>
+		<pubDate>Sun, 29 Jan 2006 03:37:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1427</guid>
+		<description><![CDATA[
+        How information orders emerge.
+        
+One of the most important insights gained from scientific endeavor in the last hundred years or so is the centrality of information to the structure of life and human society. Consider:
+
+In the late 19th century, economists [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        How information orders emerge.<br />
+        </em></p>
+<p>One of the most important insights gained from scientific endeavor in the last hundred years or so is the centrality of information to the structure of life and human society. Consider:</p>
+<ul>
+<li>In the late 19th century, economists began to recognize that prices are a form of information about supply and demand.</li>
+<li>In the mid 20th century, biologists began to recognize that DNA is a form of information (indeed, probably the original form of information).</li>
+</ul>
+<p>Another key form of information, which enables a wide range of commercial and societal interations, is reputation. Because reputation is so important, care must be taken in correctly understanding its nature. Unfortunately, those who theorize about personal identity (especially digital identity) too often misunderstand the nature of reputation. A case in point is to be found in <a href="http:/ssrn.com/abstract=835924">Trademark Law and the Social Construction of Trust: Creating the Legal Framework for on-line Identity</a> by professor <a href="http://www.nyls.edu/bnoveck/">Beth Noveck</a> of New York Law School. Where Professor Noveck goes wrong can be gleaned from the very title of her paper, which argues that reputation is a &#8220;social construction&#8221; (explicitly created by, and therefore the property of, a group) rather than an emergent property of social interactions. Her thinking about reputation (which she considers one aspect of, or in large measure co-extensive with, identity) is deeply influenced by the metaphor of social construction. Here are some relevant phrases:</p>
+<ul>
+<li>&#8220;the way identity is constructed in online environments&#8221;</li>
+<li>&#8220;the positive construction of reputation&#8221;</li>
+<li>&#8220;in a social software environment &#8230; identity is socially constructed&#8221;</li>
+<li>&#8220;digital life is transforming identity and its construction&#8221;</li>
+<li>&#8220;it is important to make clear how the collective construction of reputation in social software actually works in practice&#8221;</li>
+<li>&#8220;the story we tell ourselves about identity and reputation does not make sense in a world of collaboratively-constructed reputation&#8221;</li>
+<li>&#8220;this narrative about how identity is constructed does not comport with the reality of identity being, not something that we only invest in as individuals, but something that is directly socially constructed by the group&#8221;</li>
+<li>&#8220;the fact that new social software transforms the construction of identity and reputation from an individual into an explicitly group process points the way towards trademark as the most apropos legal protection&#8221;</li>
+<li>&#8220;trademark theory gives us a way to make sense of the landscape of on-line identity because it, too, concerns the social and collective construction of &#8216;branding&#8217;&#8221;</li>
+<li>&#8220;the trademark theory of identity helps us to distinguish between representation, which is weak, thin, and individually authored and stronger, thick, and communal construction of reputation&#8221;</li>
+<li>&#8220;the public plays a role in constructing reputational identity&#8221;</li>
+<li>&#8220;it is the group or the community &#8230; that creates reputation&#8221;</li>
+<li>&#8220;identity &#8230; in not purely an individual construct &#8230; it is inherently the work of the group&#8221;</li>
+</ul>
+<p>We face here a false dichotomy: either reputation is purely an individual construct or it is inherently the work of the group. But recognizing that others play a role in reputational identity does imply that others actively construct one&#8217;s reputation. In particular, Noveck misses another possible explanation: that reputation is an emergent property of human interactions. Just as prices are not collectively created by economic actors in a market, so reputation is not collectively created by social actors in a community. Instead, reputation emerges; the fact that reputation seems orderly does not imply that this order was created or fixed by a group.</p>
+<p>The point may seem arcane, but it has practical consequences. Noveck&#8217;s argument for collective creation leads her, reasonably enough, to an argument for collective rights:</p>
+<ul>
+<li>&#8220;we lack the mechanisms to protect the rights of the communities in the reputations that they collectively create&#8221;</li>
+<li>&#8220;we need a view of identity that accouunts for the malleability of representation and the collaborative creation of reputation and that recognizes the interests of the collective as well as of the individual in the way identity is constructed in online environments&#8221;</li>
+<li>&#8220;this article proposes to re-center the doctrine of identity from one of individual rights to one that recognizes the group interest in the creation and use of reputation as a signalling mechanism for successful collective action&#8221;</li>
+<li>&#8220;my aim is to focus on the social ascriptions of identity that support group belonging and collective action on-line&#8221;</li>
+<li>&#8220;identity is a form of collective action&#8221;</li>
+</ul>
+<p>Call me paranoid if you will, but I get concerned when thinkers talk about collective rights and collective action (we had quite enough of that in the 20th century, thank you very much). It is true that all individuals who wish to productively interact within a community benefit from the existence of reputation as a signalling mechanism; but that does not mean that reputation is a matter of collective interest or group belonging. Reputational signals are used always by individuals within a community and make it easier for those individuals to decide with whom to interact. Thus the benefits of reputational effects are dispersed among all members of the community. But it is a serious error of reification to therefore conclude that the group or community or collective realizes benefits, possesses rights, or pursues actions.</p>
+<p>Consider again the analogy to prices. The emergence of prices from economic transactions between buyers and sellers benefits all members of the economic community that is concerned with the product or service at hand (and even members of economic communities concerned with other classes of goods and services, whose prices in turn are affected by the prices of goods and services in the first community). But prices are not therefore the property of all the economic actors in that community, they are not a collective creation of the community, and the group does not have rights to those prices. The same is true of reputation, and it is critically important to recognize the emergent nature of reputation if we are not to be led astray into notions of collective rights that will be inimical to individual participation in online communities.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1427</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Becoming a Citizen of the Internet</title>
+		<link>https://stpeter.im/?p=1463</link>
+		<comments>https://stpeter.im/?p=1463#comments</comments>
+		<pubDate>Fri, 13 Jan 2006 17:07:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1463</guid>
+		<description><![CDATA[
+        The significance of domain names.
+        
+While commenting just now on the proposed charter for the proposed Digital Identity Exchange working group at the IETF, Phillip Hallam-Baker observes:
+
+To control your name on the Internet you have to own the domain name [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        The significance of domain names.<br />
+        </em></p>
+<p>While <a href="http://www1.ietf.org/mail-archive/web/dix/current/msg00036.html">commenting</a> just now on the proposed charter for the proposed Digital Identity Exchange working group at the IETF, Phillip Hallam-Baker observes:</p>
+<blockquote>
+<p>To control your name on the Internet you have to own the domain name you rely on. If your web site is alice.blogsrus.com you are inevitably dependent on the continued terms of service of whoever owns the name blogsrus.com.</p>
+<p>To be an Internet citizen rather than a serf you have to own your own domain name.</p>
+</blockquote>
+<p>Truth.</p>
+<p>(A truth that Chinese blogger Zhao Jing recently <a href="http://www.saint-andre.com/blog/2006-01.html#2006-01-06T22:21">learned the hard way</a>.)</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1463</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>IDPCs</title>
+		<link>https://stpeter.im/?p=1473</link>
+		<comments>https://stpeter.im/?p=1473#comments</comments>
+		<pubDate>Sat, 07 Jan 2006 04:31:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1473</guid>
+		<description><![CDATA[
+        Identity rights agreements, revisited.
+        
+Back in August I introduced the concept of Identity Rights Agreements. Over the last few weeks, I&#8217;ve been chatting about the idea a bit more seriously with Dizzy and Jer. So in line with Jer&#8217;s post [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        Identity rights agreements, revisited.<br />
+        </em></p>
+<p>Back in August I introduced the concept of <a href="http://www.saint-andre.com/blog/2005-08.html#2005-08-05T14:51">Identity Rights Agreements</a>. Over the last few weeks, I&#8217;ve been chatting about the idea a bit more seriously with <a href="http://www.dizzyd.com/blog/">Dizzy</a> and <a href="http://jeremie.com/blog/">Jer</a>. So in line with Jer&#8217;s post on 2006 as <a href="http://jeremie.com/blog/index.php?entry=entry051229-000152">The Year of I</a>, I thought I&#8217;d provide some insight into our thinking.</p>
+<p>Recall the concept: I need the ability to specify how my information is to be used by online entities I interact with. But how? Ideally, someone would develop a way of tagging information so that I could, for example, tell an ecommerce site that my personal preferences are not to be shared with partners. Dizzy, Jer, and I have started to work on the concept in hopes of bringing it closer to reality. The basic idea is a kind of photographic negative of <a href="http://www.creativecommons.org/">Creative Commons</a>: rather than saying &#8220;here&#8217;s something I&#8217;ve created, feel free to do anything with you want with it <em>except</em> for X&#8221;, when it comes to my personally identifying information I want to say &#8220;here&#8217;s some information about me and you <em>must not</em> do anything with it except Y&#8221;. When that statement is instantiated in code (such as an HTML form I submit), we&#8217;re calling it an Identity Privacy Contract (IDPC).</p>
+<p>So what are the equivalent in IDPCs of the well-known Creative Commons licenses? We see two dimensions here: whether you can store my information, and whether (and with whom) you can share it. Boiling that down has yielded five options:</p>
+<ol start="" type="">
+<li>Don&#8217;t Store, Don&#8217;t Share</li>
+<li>Store, But Don&#8217;t Share</li>
+<li>Store, Share Internally</li>
+<li>Store, Share With Partners</li>
+<li>Store, Share With Anyone</li>
+</ol>
+<p>Let&#8217;s look at each of these in a bit more depth&#8230;</p>
+<ol start="" type="">
+<li>
+<p>&#8220;Don&#8217;t Store, Don&#8217;t Share&#8221; means I&#8217;m providing this information to you only for the length of this transaction, where the time to live (TTL) of this transaction is zero. I think of the stores that ask for my ZIP code when I complete a cash transation: they don&#8217;t store that information and they don&#8217;t share it with anyone, although in some computer system there&#8217;s a counter that&#8217;s incremented by one every time someone in my ZIP code buys something (conclusion: aggregation is OK). Similar functionality might be used by online polls and such. This ties your hands with regard to using my information, but sometimes that&#8217;s what I want.</p>
+</li>
+<li>
+<p>&#8220;Store, Don&#8217;t Share&#8221; means that you can keep a record of my information (e.g., in a database or cookie) and associate it with me (e.g., with my email address), but you can&#8217;t share it with anyone else, not even other subsidiaries of your company. Your hands are tied less tightly here (perhaps you need to store the information to provide me with a better user experience or whatever) but the potential damage is limited since you can&#8217;t share my information with anyone else. Note also that unlike &#8220;Don&#8217;t Store, Don&#8217;t Share&#8221;, there is something of a real contract here, which needs to be time-limited (you can store this data for 2 hours or 2 weeks or 2 years); finally a real-life use for TTLs on cookies!</p>
+</li>
+<li>
+<p>&#8220;Store, Share Internally&#8221; opens the door a little wider: now you can share the information with other subsidiaries. The data still has a TTL, but you can use it to offer a more seamless service (or blast me with marketing messages).</p>
+</li>
+<li>
+<p>&#8220;Store, Share With Partners&#8221; gives you even greater freedom (now you can make money by selling this information to your partners or doing some co-marketing). But we stipulate that you must name your partners (good for small partner networks, not good for big partner networks) or describe the network (e.g., &#8220;all companies in the VISA network, all members of this federation, all subscribers to this mailing list&#8221;). But those partners must not share my information &#8212; if they want to do anything with my information, they must negotiate directly with me.</p>
+</li>
+<li>
+<p>&#8220;Store, Share With Anyone&#8221; might seem strange &#8212; why would I let you share my personally identifying information with literally anyone? Yet I think there is precedent here: consider blog comments or forum posts, where I provide an email address or URL that is under my control and you link to it from your blog or forum. You&#8217;ve stored it and you&#8217;re sharing it with the world.</p>
+</li>
+</ol>
+<p>There is still much to work out here &#8212; definitions of &#8220;aggregation&#8221;, &#8220;transaction&#8221;, &#8220;partner&#8221;, &#8220;personally identifying information&#8221;, and even &#8220;store&#8221;, what counts as an address (required so that you can renegotiate with me or so that a partner can negotiate with me), and much more. But I think we&#8217;re on to something. Stay tuned for more details&#8230;</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1473</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Amphibious</title>
+		<link>https://stpeter.im/?p=1397</link>
+		<comments>https://stpeter.im/?p=1397#comments</comments>
+		<pubDate>Thu, 10 Nov 2005 19:27:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1397</guid>
+		<description><![CDATA[
+        More on expressing, sharing, managing, and controlling online identity.
+        
+I just took a walk with Dizzy, during which we chatted some more about online identity. One of the things I realized from our discussion is that most people don&#8217;t even [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        More on expressing, sharing, managing, and controlling online identity.<br />
+        </em></p>
+<p>I just took a walk with <a href="http://www.dizzyd.com/blog/">Dizzy</a>, during which we chatted some more about online identity. One of the things I realized from our discussion is that most people don&#8217;t even have an online identity that they might want to manage. Sure, there are freaks like me who&#8217;ve had large personal websites for ten years, and recently many more people have &#8220;gone amphibious&#8221; (leading a dual real/online life) with the emergence of blogging, but the vast majority of people do not express their identity online. However, as more people do more things online &#8212; comment at blogs, edit wiki pages, send messages to public email lists, post to forums, participate in logged chatrooms, sell things at Craigslist or Ebay, review books at Amazon, post photos to Flickr, keep a blog, etc. &#8212; they will leave enough traces to have an online identity whether they know/like it or not. At that point folks may realize that their online identity is something they probably want to consciously express, share, manage, and control. But not before.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1397</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>DIX</title>
+		<link>https://stpeter.im/?p=1398</link>
+		<comments>https://stpeter.im/?p=1398#comments</comments>
+		<pubDate>Thu, 10 Nov 2005 17:29:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1398</guid>
+		<description><![CDATA[
+        Expressing, sharing, managing, and controlling identity.
+        
+There&#8217;s an incipient effort at the IETF to work on digital identity (personally I prefer the term online identity). I just posted some thoughts to the DIX (Digital Identity Exchange) mailing list in reply [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        Expressing, sharing, managing, and controlling identity.<br />
+        </em></p>
+<p>There&#8217;s an incipient effort at the <a href="http://www.ietf.org/">IETF</a> to work on digital identity (personally I prefer the term online identity). I <a href="http://www.ietf.org/mail-archive/web/dix/current/msg00008.html">just posted</a> some thoughts to the DIX (Digital Identity Exchange) mailing list in reply to a <a href="http://www.ietf.org/mail-archive/web/dix/current/msg00007.html">kick-off message</a> from RL Bob Morgan. Here is some of what I wrote:</p>
+<blockquote>
+<p>People are increasingly &#8220;amphibious&#8221; &#8212; they&#8217;ve got one foot in the old world of real-life identity and one foot in the new world of online identity. As more identity moves online, we need to find ways to express, share, manage, and control it. SAML uses the term &#8220;assertion&#8221; and I think we&#8217;re talking about the same kind of idea in a personal context &#8212; who gets to make assertions about who I am online? Perhaps part of the frustration with existing identity systems is that they do not put the individual in control (no fault of the existing identity systems, since individuals didn&#8217;t have online identities back then).</p>
+<p>Expressing your identity online, sharing it with others, managing it, and controlling its canonical expressions are important parts of what&#8217;s happening. It seems to me that we need to really think about what each of these entails. For example:</p>
+<ol start="" type="">
+<li>Part of expressing online identity may involve formulating a common language or flexible structure for capturing such assertions (which is already happening from the bottom up through Flickr, FOAF, tagging, and the like).</li>
+<li>Part of sharing online identity may involve figuring out how one can assert ownership over the information one shares (what some are calling <a href="http://www.saint-andre.com/blog/2005-08.html#2005-08-05T14:51">identity rights agreements</a>, kind of a Creative Commons in reverse).</li>
+<li>Part of managing online identity may involve improving on the existing, informal process of registering with websites, known as &#8220;email based identification and authentication&#8221; (EBIA).</li>
+<li>Part of controlling online identity may involve explicitly tying assertions to individuals (PKI again?) and treating individuals as the canonical source of information about themselves (without implying that others cannot make assertions about individuals, naturally).</li>
+</ol>
+<p>In <a href="http://www.passel.org/">Passel</a> we mostly focused on #3, but the other aspects are of inherent interest as well. It&#8217;s not clear to me when standardization will happen in these areas, but if we adhere to the <a href="http://www.jfsowa.com/computer/standard.htm">law of standards</a> then I think we need to create some deployable technologies first, then formalize what works.</p>
+</blockquote>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1398</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>SSO Redux</title>
+		<link>https://stpeter.im/?p=1369</link>
+		<comments>https://stpeter.im/?p=1369#comments</comments>
+		<pubDate>Thu, 01 Sep 2005 16:17:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1369</guid>
+		<description><![CDATA[
+        Wired on identity again.
+        
+Wired magazine certainly likes to write about the prospect of single sign-on for the Internet. Last month it was a story about the GoingOn Network, today&#8217;s it&#8217;s a story about a company called Just1Key. Perhaps one [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        Wired on identity again.<br />
+        </em></p>
+<p>Wired magazine certainly likes to write about the prospect of single sign-on for the Internet. Last month it was a <a href="http://www.wired.com/news/privacy/0,1848,68329,00.html">story</a> about the GoingOn Network, today&#8217;s it&#8217;s a <a href="http://www.wired.com/news/privacy/0,1848,68694,00.html">story</a> about a company called Just1Key. Perhaps one of these days they&#8217;ll report on open technologies for SSO rather than centralized, closed-source solutions. <a href="http://www.passel.org/">Passel</a>, anyone?</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1369</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Splogging Along</title>
+		<link>https://stpeter.im/?p=1339</link>
+		<comments>https://stpeter.im/?p=1339#comments</comments>
+		<pubDate>Sat, 20 Aug 2005 03:17:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1339</guid>
+		<description><![CDATA[
+        Spim, spam, spit, splogs.
+        
+In the beginning there was spam. Then there was spim: spam over IM. Then there was spit: spam over Internet telephony. As Doc notes, now there are splogs: spam blogs. Mark Cuban observes:
+
+We are exploring a [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        Spim, spam, spit, splogs.<br />
+        </em></p>
+<p>In the beginning there was spam. Then there was spim: spam over IM. Then there was spit: spam over Internet telephony. As Doc <a href="http://doc.weblogs.com/2005/08/18#makeMoneyTheNewfashionedWayWithSplogs">notes</a>, now there are <a href="http://www.blogmaverick.com/entry/1234000870054492/">splogs</a>: spam blogs. Mark Cuban observes:</p>
+<blockquote>
+<p>We are exploring a variety of options. The blog hosts can obviously help, but I think the best solution will come from the pinging process that is used to let blog search engines know a new post has been added.  If blogging is supposed to be a personal medium, I dont know why we can&#8217;t use an email confirmation for blog posts.  We do it for comments to keep out comment spam. Why not do it for blog posts?</p>
+</blockquote>
+<p>Seems like we need a strong concept of identity here, eh? The blog hosts, for instance, could verify a person&#8217;s identity using a system like <a href="http://www.passel.org/">Passel</a> before allowing them to create a blog. As to blog pings, if folks used the <a href="http://www.xmpp.org/drafts/draft-saintandre-atompub-notify-04.html">Atom-over-XMPP</a> protocol then aggregators would have a verified identity for the poster; alternatively, aggregators could require that the poster push the update to an HTTP URL that requires sign-in using Passel. Granted, we could do all this using PKI if everyone had X.509 certificates or PGP keys, but that&#8217;s unlikely to happen anytime soon &#8212; it&#8217;s more likely that the much-ballyhoed &#8220;identity layer&#8221; for the Internet will emerge first (heck, even the Mozilla folks are <a href="http://off.net/~shaver/diary/archives/003693.html">getting into the act</a>).</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1339</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>IRAs</title>
+		<link>https://stpeter.im/?p=1349</link>
+		<comments>https://stpeter.im/?p=1349#comments</comments>
+		<pubDate>Fri, 05 Aug 2005 21:51:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1349</guid>
+		<description><![CDATA[
+        Identity Rights Agreements.
+        
+While riding on the MAX from OSCON 2005 out to PDX with Doc Searls, Phil Windley, and Dizzy, we got to talking about something Diz and I chatted about the other night: the need for some well-defined [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        Identity Rights Agreements.<br />
+        </em></p>
+<p>While riding on the <a href="http://www.trimet.org/max/">MAX</a> from <a href="http://conferences.oreillynet.com/os2005/">OSCON 2005</a> out to <a href="http://www.flypdx.com/">PDX</a> with <a href="http://doc.weblogs.com/">Doc Searls</a>, <a href="http://www.windley.com/">Phil Windley</a>, and <a href="http://www.dizzyd.com/blog/">Dizzy</a>, we got to talking about something Diz and I chatted about the other night: the need for some well-defined policies (analogous to <a href="http://creativecommons.org/">Creative Commons</a> licenses) regarding how my identity information can be shared when I release it to a website or other Internet service. Just as the CC licenses specify that you can do anything with what I create (except, depending on the license, that you must share and share alike, attribute it to me, etc.), when I release identity information to a website I&#8217;d love to stipulate that it may not do anything with it (except, depending on the identity rights agreement, that it may share it with its subsidiaries or partners, or even post it on their website if I so agree, such as at a blog or Wiki). Developing the vocabulary and straightforward set of ~5 options for identity rights agreements will require collaboration among technologists, lawyers, and other interested parties. So let&#8217;s get busy!</p>
+<p>Update: Phil Windley has <a href="http://www.windley.com/archives/2005/08/identity_rights.shtml">also posted</a> about our discussion.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1349</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Passelating in Portland</title>
+		<link>https://stpeter.im/?p=1351</link>
+		<comments>https://stpeter.im/?p=1351#comments</comments>
+		<pubDate>Thu, 04 Aug 2005 00:37:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1351</guid>
+		<description><![CDATA[
+        Identity. Remixed.
+        
+Dizzy gave his talk on Passel this morning at OSCON and did a fine job. I&#8217;d say there were about 30 people there, the room was nearly full, questions were good, discussion was productive. Unfortunately Diz ran out [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        Identity. Remixed.<br />
+        </em></p>
+<p><a href="http://www.dizzyd.com/blog/">Dizzy</a> gave his talk on <a href="http://www.passel.org/">Passel</a> this morning at <a href="http://conferences.oreillynet.com/os2005/">OSCON</a> and did a fine job. I&#8217;d say there were about 30 people there, the room was nearly full, questions were good, discussion was productive. Unfortunately Diz ran out of time and didn&#8217;t get a chance to demo Passel for the assembled throng. But we did have some good follow-on discussions after his talk.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1351</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>One Ring?</title>
+		<link>https://stpeter.im/?p=1353</link>
+		<comments>https://stpeter.im/?p=1353#comments</comments>
+		<pubDate>Tue, 02 Aug 2005 23:51:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1353</guid>
+		<description><![CDATA[
+        Going on about identity.
+        
+Wired speculates about the prospects for &#8220;one login to bind them all&#8221; as a result of a product announcement about the GoingOn Network. Well. I rather doubt that any one company is going to provide the [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        Going on about identity.<br />
+        </em></p>
+<p>Wired <a href="http://www.wired.com/news/privacy/0,1848,68329,00.html">speculates</a> about the prospects for &#8220;one login to bind them all&#8221; as a result of a product announcement about the GoingOn Network. Well. I rather doubt that any one company is going to provide the &#8220;one ring&#8221; in the identity space. Better to trust in open protocols like <a href="http://www.passel.org/">Passel</a>, create a truly decentralized network that puts the individual in control (no intermediaries unless you want them), and otherwise <a href="http://www.passel.org/">adhere</a> to the <a href="http://www.identityblog.com/stories/2004/12/09/thelaws.html">laws of identity</a>.</p>
+<p>(Oh, and by the way, with this post I inaugurate a new category for <a href="http://www.saint-andre.com/blog/identity.html">identity</a>.)</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1353</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Passel</title>
+		<link>https://stpeter.im/?p=1306</link>
+		<comments>https://stpeter.im/?p=1306#comments</comments>
+		<pubDate>Tue, 19 Jul 2005 20:23:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1306</guid>
+		<description><![CDATA[
+        Open identity.
+        
+While I was away over the weekend, Dizzy unveiled Passel, the open identity technology I&#8217;ve been hinting at for the last few months. It&#8217;s really Dizzy&#8217;s baby, I just helped out with the whitepaper (which has a few [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        Open identity.<br />
+        </em></p>
+<p>While I was away over the weekend, Dizzy <a href="http://www.dizzyd.com/blog/?p=57">unveiled Passel</a>, the open identity technology I&#8217;ve been <a href="http://www.saint-andre.com/blog/2005-05.html#2005-05-02T21:12">hinting at</a> for the last few months. It&#8217;s really Dizzy&#8217;s baby, I just helped out with the <a href="http://www.passel.org/whitepaper.html">whitepaper</a> (which has a few consistencies and needs to be beefed up in a few areas &#8212; will do that this week). More on Passel soon.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1306</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+		<item>
+		<title>Putting a Lid on the ID</title>
+		<link>https://stpeter.im/?p=1312</link>
+		<comments>https://stpeter.im/?p=1312#comments</comments>
+		<pubDate>Mon, 11 Jul 2005 22:23:00 +0000</pubDate>
+		<dc:creator>admin</dc:creator>
+		
+		<category><![CDATA[identity]]></category>
+
+		<guid isPermaLink="false">http://stpeter.im/?p=1312</guid>
+		<description><![CDATA[
+        On national ID schemes.
+        
+Over on the Crypotography list, Perry Metzger (with whom I had an enjoyable dinner at Vatan in NYC a few weeks ago) eloquently explains why so many Americans oppose the idea of a national ID card:
+
+I [...]]]></description>
+			<content:encoded><![CDATA[<p><em><br />
+        On national ID schemes.<br />
+        </em></p>
+<p>Over on the Crypotography list, <a href="http://www.piermont.com/">Perry Metzger</a> (with whom I had an enjoyable dinner at <a href="http://www.vatanny.com/">Vatan</a> in NYC a few weeks ago) <a href="http://www.mail-archive.com/cryptography@metzdowd.com/msg04258.html">eloquently explains</a> why so many Americans oppose the idea of a national ID card:</p>
+<blockquote>
+<p>I do not trust governments. I&#8217;ve inherited this perspective. My grandfather sent his children abroad from Speyer in Germany just after the ascension of Adolf Hitler in the early 1930s &#8212; his neighbors thought he was crazy, but few of them survived the coming events. My father was sent to Alsace, but he stayed too long in France and ended up being stuck there after the occupation. If it were not for forged papers, he would have died. (He had a most amusing story of working as an electrician rewiring a hotel used as office space by the Gestapo in Strasbourg &#8212; his forged papers were apparently good enough that no one noticed.)  Ultimately, he and other members of the family escaped France by &#8220;illegally&#8221; crossing the border into Switzerland. (I put &#8220;illegally&#8221; in quotes because I don&#8217;t believe one has any moral obligation to obey a &#8220;law&#8221; like that, especially since it would leave you dead if you obeyed.)</p>
+<p>Anyway, if the governments of the time had actually had access to modern anti-forgery techniques, I might never have been born.</p>
+<p>To you, ID cards are a nice way to keep things orderly. To me, they are a potential death sentence.</p>
+</blockquote>
+<p>Well said, Perry!</p>
+]]></content:encoded>
+			<wfw:commentRss>https://stpeter.im/?feed=rss2&amp;p=1312</wfw:commentRss>
+	<creativeCommons:license>http://creativecommons.org/licenses/publicdomain/</creativeCommons:license>
+	</item>
+	</channel>
+</rss>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
+<title>Sven Eckelmann&#039;s Notes</title>
+<link href="http://www-user.tu-chemnitz.de/~ecsv/" />
+<link href="http://www-user.tu-chemnitz.de/~ecsv/feed.atom" rel="self" />
+<author><name>Sven Eckelmann</name><email>sven.eckelmann@gmx.de</email></author>
+<id>http://www-user.tu-chemnitz.de/~ecsv/</id>
+<updated>2008-12-08T23:39:38Z</updated>
+<entry>
+<title>Testing linking behaviour</title>
+<updated>2008-12-08T23:39:38Z</updated>
+<published>2008-12-08T23:39:38Z</published>
+<link href="http://www-user.tu-chemnitz.de/~ecsv/2008/12/09/testing-linking-behaviour" />
+<id>http://www-user.tu-chemnitz.de/~ecsv/2008/12/09/testing-linking-behaviour</id>
+<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+	<p>While fixing linking problems of libg3d on windows I checked the binutils ld man page again after years and noticed that there are some useful parameter to check for linking misbehaviour on linux. In some rare situations it is a design decision of upstream and not a really &quot;bug&quot; but in most cases someone forgot to link against a library and his current system configuration hides the problem from him. So it isn't a good idea to insist on a bug in upstream or &quot;fixing&quot; it without listening to upstream - unless you liked the the <a href="http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-0166">infamous openssl random number genererator bug</a> in debian related distributions.</p>
+	<p>Most of the informations bellow is only correct on systems with lazy loading, lazy bindings and where vague symbols are allowed in shared objects. It is unknown to me how <code>-Bdirect</code> (<a href="http://blogs.sun.com/msw/date/20050614">direct binding on solaris</a>) affects it but all known patches to get this functionality in gnu binutils supported vague symbols which are the possible problems we want to detect.</p>
+	<p>I&quot;ve prepared <a href="http://www-user.tu-chemnitz.de/~ecsv//notes/20081209-libtest.tar.bz2">some examples</a> to make it easier to understand what the different graphs mean.</p>
+
+	<h2>Undefined symbol in library</h2>
+	<object data="http://www-user.tu-chemnitz.de/~ecsv//notes/20081209-no_undefined.svgz" style="width: 330pt; height: 74pt;" type="image/svg+xml"/>
+	<p>This was the problem I had under windows. Here we have a library which uses functionality from another one but doesn't link against it. We would only get a warning about unresolved symbols when we forget to specify the missing library during linking prog. The reason for that is the way the dynamic linker locates the symbols under linux - under windows the linker wants to know where a symbol comes from but under linux the dynamic linker searches for symbols in the current pool of functions in opened libraries. That way it is possible to use <var>LD_PRELOAD</var> to provide or override symbols for a program.</p>
+	<p>What the dynamic linker does to find a symbol should be equivalent to <code>dlsym(NULL, &quot;symbolname&quot;)</code> but this has different disadvantages like being not portable to systems with different dynamic linkers like windows or that prog's built system can easily break when the directly used library starts to use more libraries.</p>
+	<p>The easiest way to detect such problem is to use the parameter <code>--no-undefined</code> for ld or <code>-Wl,--no-undefined</code> when using ld via gcc - but prepare yourself for a big headache when your shared objects gets symbols from the prog (for example in a plugin system).</p>
+
+	<h2>Indirect linked library by unused library</h2>
+	<object data="http://www-user.tu-chemnitz.de/~ecsv//notes/20081209-as_needed.svgz" style="width: 362pt; height: 74pt;" type="image/svg+xml"/>
+	<p>A problem you definitely ran into when <del>using</del><ins>compiling</ins> gentoo in may 2004 with the newest guides from forums.gentoo.org was that many programs didn't linked. The fault of that problem was the promotion of <code>-Wl,--as-needed</code> as ultimative solution for faster startup of KDE applications and other programs with a big amount of libraries in their ELF <var>DT_NEEDED</var> header.</p>
+	<p>What it really does is to look at the supplied shared objects and check if they will be used by our program. If it is not true the library will not be added to <var>DT_NEEDED</var> which results in not loading the specified shared object on program startup.</p>
+	<p>In that example we have a libs3d which uses libg3d and prog which wants to use functions from libg3d but links against libs3d. The normal behaviour of the linker is to use DT_NEEDED of libs3d to load libg3d to provide libg3d's symbols for prog. When the build is run with <code>--as-needed</code> libs3d will be discarded because prog doesn't use any of the symbols provided by it. Even if this is a big problem for different distributions which really wants to use <code>AS_NEEDED()</code> in their linker script and Mandriva and Gentoo are working since years to fix it, it is just a side effect of <code>--as-needed</code> and will not provide a good test in most situations.</p>
+
+	<h2>Indirect linked, forgotten library</h2>
+	<object data="http://www-user.tu-chemnitz.de/~ecsv//notes/20081209-no_add_needed.svgz" style="width: 350pt; height: 74pt;" type="image/svg+xml"/>
+	<p>It is really easy to make <code>--as-needed</code> test useless by using a symbol of libs3d in our prog. The build of prog will fail if libs3d stops to use libg3d and so not providing libg3d's symbols for prog anymore.</p>
+	<p>A better way to test for indirectly linked shared objects is by appending <code>--no-add-needed</code> to ld. This will discard all via <var>DT_NEEDED</var> indirectly specified shared objects of directly specified shared objects. So we get (nearly) the same behaviour like using <code>--as-needed</code> in our previous example.</p>
+
+	<h2>Conclusion</h2>
+	<p>It is a good quick test to use <code>-Wl,--no-add-needed -Wl,--no-undefined</code> in your <var>LDFLAGS</var> when compiling your project but also <code>-Wl,--as-needed</code> can help to find useless linked shared objects. It needs a little more manual work with <code>scanelf -n</code> to find them but every package maintainer will thank you for reducing binary dependencies in their packages.</p>
+
+</div></content>
+</entry>
+<entry>
+<title>Shared ssh connections</title>
+<updated>2008-12-08T17:21:27Z</updated>
+<published>2008-12-08T17:21:27Z</published>
+<link href="http://www-user.tu-chemnitz.de/~ecsv/2008/12/08/shared-ssh-connections" />
+<id>http://www-user.tu-chemnitz.de/~ecsv/2008/12/08/shared-ssh-connections</id>
+<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+	<p>OpenSSH has some really nice unknown options which you find from time to time per accident. One of them is to share a connection between different sessions. It helps a lot when you are using multiple connections to a host or using zsh autocompletion over ssh and must wait until the connection was really established.</p>
+	<p>It can easily enabled by creating a folder ~/.ssh/sock and adding some configuration options to your ~/.ssh/config for a host you want to use it</p>
+	<pre><code>Host *
+	ControlPath ~/.ssh/sock/%r@%h:%p
+	ControlMaster auto
+	ServerAliveInterval 60</code></pre>
+	<p>I am little bit unsure about the security implications because it will not ask you again for your password when another connection to the same host, port and user was established.</p>
+</div></content>
+</entry>
+<entry>
+<title>Links for 2008-12-08</title>
+<updated>2008-12-08T08:52:14Z</updated>
+<published>2008-12-08T08:52:14Z</published>
+<link href="http://www-user.tu-chemnitz.de/~ecsv/2008/12/08/links-for-2008-12-08" />
+<id>http://www-user.tu-chemnitz.de/~ecsv/2008/12/08/links-for-2008-12-08</id>
+<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+<ul>
+<li><a href="http://www.survivetheoutbreak.com/">The Outbreak - Interactive Zombie Movie</a></li>
+<li><a href="http://www.codon.org.uk/~mjg59/power/good_practices.html">Good power management practices</a></li>
+<li><a href="http://www.flickr.com/groups/torontozombiewalk/pool/">Flickr: The toronto zombie walk</a></li>
+<li><a href="http://www.torontozombiewalk.ca/">Toronto Zombie Walk</a></li>
+</ul></div></content>
+</entry>
+<entry>
+<title>Links for 2008-12-01</title>
+<updated>2008-12-01T12:51:17Z</updated>
+<published>2008-12-01T12:51:17Z</published>
+<link href="http://www-user.tu-chemnitz.de/~ecsv/2008/12/01/links-for-2008-12-01" />
+<id>http://www-user.tu-chemnitz.de/~ecsv/2008/12/01/links-for-2008-12-01</id>
+<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+<ul>
+<li><a href="http://www.sachsen-fernsehen.de/default.aspx?ID=2168&amp;showGal=3657">Partyfotos &gt; Cube Club &gt; Double Trouble 29.11.08</a></li>
+<li><a href="http://www.boingboing.net/2006/07/30/hello-kitty-darth-va.html">Hello Kitty Darth Vader costume - Boing Boing</a></li>
+<li><a href="http://www.localorez.de/">Localorez - Die Tänzerinnen aus Chemnitz!!!</a></li>
+<li><a href="http://www.youtube.com/watch?v=BN2D5y-AxIY">BRAINIAC Science Abuse - John Tickle Walks On Custard</a></li>
+<li><a href="http://nimzer.de/">Nimzer Music</a></li>
+<li><a href="http://www.youtube.com/user/simonscat">Simon's Cat Comic Videos</a></li>
+</ul></div></content>
+</entry>
+<entry>
+<title>Settler 2 TNG under Wine</title>
+<updated>2008-11-28T15:58:44Z</updated>
+<published>2008-11-28T15:58:44Z</published>
+<link href="http://www-user.tu-chemnitz.de/~ecsv/2008/11/28/settler-2-tng-under-wine" />
+<id>http://www-user.tu-chemnitz.de/~ecsv/2008/11/28/settler-2-tng-under-wine</id>
+<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+<p>After porting some free software to an unfree operation system I've chosen to run some unfree software on a free operation system (ok, just wanted to play some kind of vikings godfather). An interesting target was &quot;The Settler 2: The Next Generation&quot; or in german &quot;Die Siedler 2: Die nächste Generation&quot; v1.11757 because I found some <a href="http://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=5833">positive comments inside wine's appdb</a> and Ubisoft is selling it at a cheap price at the moment.</p>
+	<p>To make it short: No, it won't run without problems. First thing are mysterious warnings about shaders, crashes before anything started and when you are able to load a level then there will everything be black (&quot;fog of war&quot; like or just black buildings and no landscape).</p>
+	<p>First thing you should check is that your X display runs at 24 bit rgb (maybe other settings are also ok, but I had problems with 16 bit rgb), your card supports &quot;shader 2.0&quot; and a recent X11 display driver is installed. My test system was a Debian Lenny with NVIDIA 173.14.09 using a GeForce FX Go5600 and wine was installed from experimental (1.1.5)</p>
+ <p>The shader warning can be solved by copying <a href="http://www.dll-files.com/dllindex/dll-files.shtml?d3dx9_29">d3dx9_29.dll</a>, <a href="http://www.dll-files.com/dllindex/dll-files.shtml?d3dx9_36">d3dx9_36.dll</a> and <a href="http://www.dll-files.com/dllindex/dll-files.shtml?msvcr71">msvcr71.dll</a> to $HOME/.wine/drive_c/windows/system32/. Which version of that dll you really need changes from version to version of wine. You can take a look at <a href="http://wiki.winehq.org/DirectX-D3DX9">the d3dx9 Wiki page</a> to see what the current version needs. But the display problems will not be gone that way. Let's prepare for some &quot;oldschool&quot; regedit hacking (yes, wine has a regedit helper program)... A good way to fix some graphical issues was to change following keys</p>
+ <pre>[HKEY_CURRENT_USER\Software\Wine\Direct3D]
+ &quot;OffscreenRenderingMode&quot;=&quot;fbo&quot;
+ &quot;PixelShaderMode&quot;=&quot;enabled&quot;
+ &quot;UseGLSL&quot;=&quot;enabled&quot;</pre>
+		 <p>The last step to get a playable game is to fix the &quot;black fog&quot; problem...  Changing Shader Details from &quot;Off&quot; to &quot;Low&quot; fixed it here but playing a little bit with the shadow values could help on other graphical glitches. The small overview map will not work as expected but this isn't a problem for me at the moment.</p>
+</div></content>
+</entry>
+<entry>
+<title>s3d under cygwin</title>
+<updated>2008-11-28T10:23:16Z</updated>
+<published>2008-11-28T10:23:16Z</published>
+<link href="http://www-user.tu-chemnitz.de/~ecsv/2008/11/28/s3d-under-cygwin" />
+<id>http://www-user.tu-chemnitz.de/~ecsv/2008/11/28/s3d-under-cygwin</id>
+<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+<p>After we <a href="http://www-user.tu-chemnitz.de/~ecsv//2008/11/23/libg3d-under-cygwin.xhtml">compiled and installed</a> libg3d under windows/cygwin, the next step would be to port something which needs it. An &quot;easy&quot; target was <a href="http://s3d.berlios.de/">s3d</a> because I have write permissions to all repositories and can fix problems very fast.</p>
+<p>I assume that you didn't remove anything after installing libg3d but we still need cmake, font-bitstream-vera-ttf and a <a href="http://www.libsdl.org/extras/win32/cygwin/README.txt">self compiled version of SDL</a> for cygwin.</p>
+ <p>Run cmake in your <a href="http://gitorious.org/projects/s3d/repos/mainline">s3d clone</a>/<a href="http://developer.berlios.de/svn/?group_id=5908">checkout</a> with `<code>cmake . -DHAVE_SHM=0 -DCMAKE_INSTALL_PREFIX=/usr/ &amp;&amp; make install</code>` to get a working s3d installation cygwin. We need to disable SHM to fix a &quot;bad syscall&quot; when there is no ipcserver running (and sun, moon, earth, .. aren't aligned).</p>
+
+ <p>If you get an error that _glEnd can not be found then remove libGL-devel or rename /usr/include/GL/gl.h to /usr/include/GL/gl.h.bak. We must use gl.h from /usr/include/w32api/GL/ because it uses another symbol mangling than the version from libGL-devel and we must use the native opengl32.dll to be compatible with SDL (which is a no-cygwin dll).</p>
+
+ <p>To proof that it works take a look at the <a href="http://www-user.tu-chemnitz.de/~ecsv//notes/20081128-1win.png">running cat example</a>.</p>
+
+</div></content>
+</entry>
+<entry>
+<title>s3d in debian (new queue)</title>
+<updated>2008-11-28T10:00:53Z</updated>
+<published>2008-11-28T10:00:53Z</published>
+<link href="http://www-user.tu-chemnitz.de/~ecsv/2008/11/28/s3d-in-debian-new-queue-" />
+<id>http://www-user.tu-chemnitz.de/~ecsv/2008/11/28/s3d-in-debian-new-queue-</id>
+<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+	<p>Hurray. <a href="http://layer-acht.org/">Holger Levsen</a> found some time during his <del>holiday</del><ins><a href="http://wiki.debian.org/DebianQAExtremadura2008">QA meeting in Extremadura</a></ins> to check and sponsor s3d-0.2.1-6. It is currently in ftpmasters new queue. Big thx to him :)</p>
+	<p>Now begins the time of waiting and the fear of being rejected.....</p>
+
+</div></content>
+</entry>
+<entry>
+<title>libg3d under cygwin</title>
+<updated>2008-11-23T16:05:34Z</updated>
+<published>2008-11-23T16:05:34Z</published>
+<link href="http://www-user.tu-chemnitz.de/~ecsv/2008/11/23/libg3d-under-cygwin" />
+<id>http://www-user.tu-chemnitz.de/~ecsv/2008/11/23/libg3d-under-cygwin</id>
+<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+<p>Recently I have submitted some patches to <a href="https://gna.org/mail/?group=libg3d">libg3d's ml</a> to fix some
+problems under cygwin. It is a little bit tricky to get a working libg3d
+installation but if all dependencies are fullfilled it is just the
+usual &quot;./configure ... &amp;&amp; make &amp;&amp; make install&quot; procedure.</p>
+
+<p>
+Just do a normal cygwin installation with some extra packages:</p>
+<ul>
+<li>pkg-config</li>
+<li>flex</li>
+<li>libxml2-devel</li>
+<li>gtk2-x11-devel</li>
+<li>glib2-devel</li>
+<li>gcc-core</li>
+<li>gcc-g++</li>
+<li>make</li>
+</ul>
+
+<p>I recommend to prepare a meal during the installation procedure. It took
+approximately 30 minutes over my 2mbit connection to download
+everything and another 15 minutes to run the (post)install.</p>
+
+<p>Afterwards get the <a href="http://download.gna.org/libg3d/libg3d-0.0.7.tar.gz">libg3d-0.0.7 release</a> or (if not released yet) a current svn snapshot from trunk
+but do the `<code>autogen.sh &amp;&amp; ./configure --enable-gtk-doc &amp;&amp; make &amp;&amp; make dist</code>` run
+under your favourite linux/unix system.</p>
+
+<p>Unpack everything inside a directory which cygwin can access (for
+example your cygwin-home directory) and run `<code>./configure LEXLIB=&quot;-lfl&quot; --prefix=/usr/ &amp;&amp; make install</code>` - without
+any doubt a good time to eat your meal. The build took around 40 minutes
+until it was finished.</p>
+
+<p>If anyone has a better idea to fix the vrml lex problem than
+including a static yywrap into the lex file then please sent me a
+mail.</p></div></content>
+</entry>
+<entry>
+<title>Links for 2008-11-16</title>
+<updated>2008-11-16T20:20:27Z</updated>
+<published>2008-11-16T20:20:27Z</published>
+<link href="http://www-user.tu-chemnitz.de/~ecsv/2008/11/16/links-for-2008-11-16" />
+<id>http://www-user.tu-chemnitz.de/~ecsv/2008/11/16/links-for-2008-11-16</id>
+<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+<ul>
+<li><a href="http://www.youtube.com/user/MontyPython">The Monty Python Youtube-Channel</a></li>
+<li><a href="http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=477454">#477454 - Insulting source code - Debian Bug report logs</a></li>
+</ul></div></content>
+</entry>
+<entry>
+<title>Book Meme</title>
+<updated>2008-11-14T22:19:35Z</updated>
+<published>2008-11-14T22:19:35Z</published>
+<link href="http://www-user.tu-chemnitz.de/~ecsv/2008/11/14/book-meme" />
+<id>http://www-user.tu-chemnitz.de/~ecsv/2008/11/14/book-meme</id>
+<content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml">
+<ul>
+<li>Grab the nearest book.</li>
+<li>Open it to page 56.</li>
+<li>Find the fifth sentence.</li>
+<li>Post the text of the sentence in your journal along with these instructions.</li>
+<li>Don’t dig for your favorite book, the cool book, or the intellectual one: pick the CLOSEST.</li>
+</ul>
+
+<blockquote>
+<p>
+Steh du nicht auf in der Nacht, außer du gehst auf Erkundung aus oder suchst dir draußen ein Örtchen auf
+</p>
+</blockquote>Die Reden and Loddfafnier, Poetic Edda.
+
+<p>
+It is quite hard to find the fifth sentence inside a poetic text. For people who cannot read german, this sentence means something like &quot;You should not stand up in the night, unless you go to a exploration or you are going to the bathroom&quot;. Ok, it's a bad translation, but amusing that it's fairly dark outside and I had to stand up to reach the book - is this a kind of exploration? I hope so.
+</p>
+</div></content>
+</entry>
+</feed>

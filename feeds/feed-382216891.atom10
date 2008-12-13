@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0" xml:lang="en">
+<title>Niall Kennedy&apos;s Weblog</title>
+<subtitle>Tracking how syndication and emerging new businesses are changing life on the Web.</subtitle>
+<id>http://www.niallkennedy.com/blog/</id>
+<link rel="alternate" type="text/html" href="http://www.niallkennedy.com/blog/" />
+<link rel="self" type="application/atom+xml" href="http://www.niallkennedy.com/blog/index.atom" />
+<author><name>Niall Kennedy</name><uri>http://www.niallkennedy.com/</uri><email>blog@niallkennedy.com</email></author>
+<rights>Creative Commons Attribution Non-Commercial 3.0 United States</rights>
+<link rel="license" type="application/rdf+xml" href="http://creativecommons.org/licenses/by-nc/3.0/us/rdf" />
+<generator uri="http://www.sixapart.com/movabletype/" version="4.23-en">Movable Type</generator>
+<icon>http://static.niallkennedy.com/favicon.ico</icon>
+<logo>http://static.niallkennedy.com/img/headshot.jpg</logo>
+<updated>2008-12-10T19:38:23Z</updated>
+<entry>
+<title>Looking to join smart, challenging team to change your Web</title>
+<summary>I have decided to once again seek full-time corporate employment. I miss being surrounded by smart people every day and the new synapses that light up in such an engaging environment. I have started talking to a few companies about working on difficult Web problems full-time as they strengthen their online business. What else is out there?</summary>
+<content type="html">&lt;p&gt;I have decided to once again seek full-time corporate employment. I miss being surrounded by smart people every day and the new synapses that light up in such an engaging environment. I have started talking to a few companies about working on difficult Web problems full-time as they strengthen their online business. It will be fun to fully invest in a single product once again in a specialized role.&lt;/p&gt;
+
+&lt;p&gt;I like to think of my work over the past two years as rethinking front-end development. In the social, distributed web our front-end exists beyond the borders of our own websites. It&apos;s inside web feeds, widgets, and specialized applications that deliver the right content at the right time to the right audience inside their consumption environment of choice. Web development is headed in this direction, causing us to rethink the differences between a website and a web application while delivering more context-specific experiences to our audiences. I have covered some of these changes at three &lt;a href=&quot;http://widgetsummit.com/&quot;&gt;Widget Summit&lt;/a&gt; conferences, taught computer science classes in China, rewired consumer electronics devices for the Web age, restructured large media companies to embrace syndication beyond their walls, and basically changed the way data is rendered and consumed. Fun stuff and I would like more challenges every single day. Many websites still need to better embrace the syndicated web and I&apos;d like to dedicate myself to that type of front-end excellence every day.&lt;/p&gt;
+
+&lt;p&gt;So that&apos;s what I&apos;m up to. You&apos;ll continue to see new product and demonstrative web &lt;abbr&gt;app&lt;/abbr&gt;s released here over the coming weeks. The quiet of the holidays typically yields interesting hacks such as &lt;a href=&quot;http://www.niallkennedy.com/blog/2008/02/browser-history-sniff.html&quot;&gt;creating visitor profiles based on browser history&lt;/a&gt;, &lt;a href=&quot;http://www.niallkennedy.com/blog/2006/12/google-phrase-analysis.html&quot;&gt;analyzing Google&apos;s new indexing techniques&lt;/a&gt;, or &lt;a href=&quot;http://www.niallkennedy.com/blog/2005/12/google-reader-api.html&quot;&gt;reverse-engineering Google Reader data formats&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I am looking for tough new challenges on a full-time basis among other bright, driven people. If you&apos;re building cool new things among a good group of people and we&apos;re not already talking &lt;a href=&quot;http://www.niallkennedy.com/about/contact.html&quot; title=&quot;contact Niall Kennedy&quot;&gt;contact me&lt;/a&gt; and perhaps we&apos;ll create some excellent products together. &lt;a href=&quot;http://www.niallkennedy.com/about/resume.html&quot;&gt;Official &lt;span xml:lang=&quot;fr&quot;&gt;résumé&lt;/span&gt;&lt;/a&gt; also available, with the concise bullet-point summaries such a document requires.&lt;/p&gt;</content>
+<category term="business/personal" scheme="http://www.niallkennedy.com/blog/" label="Personal" /><category term="software/social" scheme="http://www.niallkennedy.com/blog/" label="Social" /><category term="programming/web-services" scheme="http://www.niallkennedy.com/blog/" label="Web services" />
+<id>http://www.niallkennedy.com/blog/2008/12/new-challenges-wanted.html</id>
+<link rel="alternate" href="http://www.niallkennedy.com/blog/2008/12/new-challenges-wanted.html" type="text/html" hreflang="en" />
+<published>2008-12-10T19:30:00Z</published>
+<updated>2008-12-10T19:38:23Z</updated>
+<link rel="replies" type="application/atom+xml" href="http://www.niallkennedy.com/blog/2008/12/new-challenges-wanted.atom" thr:count="0" />
+</entry>
+
+<entry>
+<title>OpenSocial REST for social data interchange</title>
+<summary>Over the past few months the OpenSocial spec has grown to include JSON, Atom, and XML outputs over a RESTful interface. In this blog post I will provide a brief overview of OpenSocial RESTful protocols and its data implementation for any website interested in standardized descriptors of social data.</summary>
+<content type="html">&lt;p&gt;&lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;org fn&quot; href=&quot;http://www.opensocial.org/&quot;&gt;OpenSocial&lt;/a&gt;&lt;/span&gt; is best known for its social applications: canvas and profile views powered by JavaScript and Flash. Applications and widgets are just one part of the full OpenSocial offering. Over the past few months the OpenSocial &lt;abbr title=&quot;specification&quot;&gt;spec&lt;/abbr&gt; has grown to include &lt;abbr title=&quot;JavaScript Object Notation&quot;&gt;JSON&lt;/abbr&gt;, Atom, and &lt;abbr title=&quot;eXtensible Markup Language&quot;&gt;XML&lt;/abbr&gt; outputs over a &lt;abbr title=&quot;Representational state transfer&quot;&gt;REST&lt;/abbr&gt;ful interface. OpenSocial containers &lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;org fn&quot; href=&quot;http://developer.myspace.com/community/RestfulAPIs/resources.aspx&quot;&gt;MySpace&lt;/a&gt;&lt;/span&gt;, &lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;org fn&quot; href=&quot;http://opensocialapis.blogspot.com/2008/10/linkedin-launched-inapps-platform-with.html&quot;&gt;LinkedIn&lt;/a&gt;&lt;/span&gt;, and &lt;span class=&quot;vcard&quot;&gt;&lt;a class=&quot;org fn&quot; href=&quot;http://www.plaxo.com/api/portablecontacts&quot;&gt;Plaxo&lt;/a&gt;&lt;/span&gt; already expose social data over these protocols, with additional support from large networks such as &lt;span class=&quot;vcard&quot;&gt;&lt;span class=&quot;org fn&quot;&gt;51.com&lt;/span&gt;&lt;/span&gt; and &lt;span class=&quot;vcard&quot;&gt;&lt;span class=&quot;org fn&quot;&gt;Yahoo!&lt;/span&gt;&lt;/span&gt; expected in the near future.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;img alt=&quot;Sharing and Accessing Social Data in OpenSocial&quot; src=&quot;http://static.niallkennedy.com/blog/img/opensocial-clients.png&quot; width=&quot;279&quot; height=&quot;150&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;Exposing data over OpenSocial &lt;abbr&gt;REST&lt;/abbr&gt; foramts is not limited to widget containers. Social web &lt;abbr title=&quot;application&quot;&gt;app&lt;/abbr&gt;s such as &lt;span class=&quot;vcard&quot;&gt;&lt;span class=&quot;org fn&quot;&gt;Flickr&lt;/span&gt;&lt;/span&gt;, &lt;span class=&quot;vcard&quot;&gt;&lt;span class=&quot;org fn&quot;&gt;Twitter&lt;/span&gt;&lt;/span&gt;, or even &lt;span class=&quot;vcard&quot;&gt;&lt;span class=&quot;org fn&quot;&gt;Facebook&lt;/span&gt;&lt;/span&gt; could support OpenSocial data standards without ever adding OpenSocial application support to their web pages. Last week I turned &lt;a href=&quot;http://www.twitterfe.com/&quot;&gt;TwitterFE&lt;/a&gt; into an OpenSocial &lt;abbr title=&quot;Representational state transfer&quot;&gt;REST&lt;/abbr&gt;ful container, opening up Twitter data for OpenSocial clients. &lt;span class=&quot;vevent&quot;&gt;&lt;span class=&quot;summary&quot;&gt;OpenSocial 0.9&lt;/span&gt;, scheduled for release on &lt;abbr class=&quot;dtstart&quot; title=&quot;2008-12-19&quot;&gt;December 19&lt;/abbr&gt;, will help solidify these new protocols across containers (I found many &lt;span lang=&quot;la&quot;&gt;errata&lt;/span&gt; in 0.81 and I am pushing for changes in 0.9&lt;/span&gt;). In this blog post I will provide a brief overview of &lt;a href=&quot;http://www.opensocial.org/Technical-Resources/opensocial-spec-v081/restful-protocol&quot;&gt;OpenSocial RESTful protocols&lt;/a&gt; and its data implementation for any website interested in standardized descriptors of social data.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/12/opensocial-rest.html#os-background&quot;&gt;OpenSocial background&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/12/opensocial-rest.html#os-person&quot;&gt;People&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/12/opensocial-rest.html#os-activity&quot;&gt;Activities&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/12/opensocial-rest.html#os-discover&quot;&gt;Advertising OpenSocial support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/12/opensocial-rest.html#os-summary&quot;&gt;Summary&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;os-background&quot;&gt;OpenSocial background&lt;/h3&gt;
+
+&lt;p&gt;OpenSocial applications request and interpret applications via JavaScript requests. An application might request profile data on the logged-in member viewing the &lt;abbr title=&quot;application&quot;&gt;app&lt;/abbr&gt;, write a new story to a member&apos;s social news feed, or store custom data such as a member&apos;s favorite color. These data objects are called Person, Activity, and AppData respectively. Each of these data objects contain a minimal-set of required information and a long list of optional data that varies by implementation. Most social applications store a member &lt;abbr title=&quot;identifier&quot;&gt;ID&lt;/abbr&gt;, username, profile &lt;abbr title=&quot;photograph&quot;&gt;photo&lt;/abbr&gt;, and a profile &lt;acronym title=&quot;Uniform Resource Locator&quot;&gt;URL&lt;/acronym&gt;, for example, but specified views on romance or religion are less common.&lt;/p&gt;
+
+&lt;p&gt;Yet OpenSocial isn&apos;t just for widget containers. Social web &lt;abbr&gt;app&lt;/abbr&gt;s can export and import user data via anonymous and/or authenticated requests. You just have to speak the language of OpenSocial data to achieve fluid data interchange between servers. Data requests may occur with or without a login but additional data may be exposed to requesters with proper &lt;a href=&quot;http://oauth.net/&quot;&gt;OAuth&lt;/a&gt; credentials for a particular account.&lt;/p&gt;
+
+&lt;h3 id=&quot;os-person&quot;&gt;People&lt;/h3&gt;
+
+&lt;p&gt;People are the center of a social network experience, connecting us to new data and interactions. OpenSocial maps common profile components across containers including e-mail addresses, profile pictures, location, and member &lt;abbr title=&quot;biographies&quot;&gt;bios&lt;/abbr&gt;. Friends lists are a collection of people objects mapped to a particular owner.&lt;/p&gt;
+
+&lt;p&gt;The only required person data from a container are a display name and a container-specific identifier such as the numeric auto-increment &lt;code&gt;id&lt;/code&gt; you are storing in your users table. Websites need to stick to a &lt;a href=&quot;http://www.opensocial.org/Technical-Resources/opensocial-spec-v081/opensocial-reference#opensocial.Person.Field&quot;&gt;specific Person vocabulary&lt;/a&gt; to ensure compatibility across sites.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://portablecontacts.net/&quot;&gt;Portable Contacts&lt;/a&gt; and OpenSocial &lt;abbr&gt;REST&lt;/abbr&gt;ful Person objects are wire-compatible formats. The &lt;abbr&gt;spec&lt;/abbr&gt;s are currently aligned but you might hear either one used interchangeably in conversations.&lt;/p&gt;
+
+&lt;h4&gt;Example&lt;/h4&gt;
+
+&lt;pre&gt;&lt;samp&gt;&amp;lt;person xmlns=&quot;http://ns.opensocial.org/2008/opensocial&quot;&amp;gt;
+  &amp;lt;id&amp;gt;mysite.com:1234&amp;lt;/id&amp;gt;
+  &amp;lt;displayName&amp;gt;John Smith&amp;lt;/displayName&amp;gt;
+  &amp;lt;name&amp;gt;
+    &amp;lt;givenName&amp;gt;John&amp;lt;/givenName&amp;gt;
+    &amp;lt;familyName&amp;gt;Smith&amp;lt;/familyName&amp;gt;
+    &amp;lt;formatted&amp;gt;John Smith&amp;lt;/formatted&amp;gt;
+  &amp;lt;/name&amp;gt;
+  &amp;lt;gender&amp;gt;male&amp;lt;/gender&amp;gt;
+  &amp;lt;emails&amp;gt;
+    &amp;lt;primary&amp;gt;true&amp;lt;/primary&amp;gt;
+    &amp;lt;type&amp;gt;work&amp;lt;/type&amp;gt;
+    &amp;lt;value&amp;gt;john@example.org&amp;lt;/value&amp;gt;
+  &amp;lt;/emails&amp;gt;
+  &amp;lt;ims&amp;gt;
+    &amp;lt;primary&amp;gt;true&amp;lt;/primary&amp;gt;
+    &amp;lt;type&amp;gt;aim&amp;lt;/type&amp;gt;
+    &amp;lt;value&amp;gt;johnsmith&amp;lt;/value&amp;gt;
+  &amp;lt;/ims&amp;gt;
+  &amp;lt;account&amp;gt;
+    &amp;lt;domain&amp;gt;mysite.com&amp;lt;/domain&amp;gt;
+    &amp;lt;username&amp;gt;johnsmith&amp;lt;/username&amp;gt;
+    &amp;lt;userid&amp;gt;1234&amp;lt;/userid&amp;gt;
+  &amp;lt;/account&amp;gt;
+&amp;lt;/person&amp;gt;&lt;/samp&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the above example I&apos;ve defined some basic data about a fictional user of MySite.com using the OpenSocial Person vocabulary in an &lt;abbr&gt;XML&lt;/abbr&gt; format. Consuming agents can write a single interpreter for multiple OpenSocial containers and easily display, export, or annotate profile and friend data over this interface.&lt;/p&gt;
+
+
+&lt;h3 id=&quot;os-activity&quot;&gt;Activities&lt;/h3&gt;
+
+&lt;p&gt;Activities are small application updates usually posted to a social news feed. When a member adds an event, posts a status update, uploads a &lt;abbr title=&quot;photograph&quot;&gt;photo&lt;/abbr&gt;, or takes some other action websites usually write a new activity into the member&apos;s feed. These actions are normalized in the OpenSocial context into a &lt;a href=&quot;http://www.opensocial.org/Technical-Resources/opensocial-spec-v081/opensocial-reference#opensocial.Activity.Field&quot;&gt;specific Activity vocabulary&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4&gt;Example&gt;&lt;/h4&gt;
+
+&lt;pre&gt;&lt;samp&gt;&amp;lt;activity xmlns=&quot;http://ns.opensocial.org/2008/opensocial&quot;&amp;gt;
+  &amp;lt;title&amp;gt;Updating my MySite account&amp;lt;/title&amp;gt;
+  &amp;lt;url&amp;gt;http://mysite.com/johnsmith/status/123456789&amp;lt;/url&amp;gt;
+  &amp;lt;id&amp;gt;mysite.com:1234/activity:123456789&amp;lt;/id&amp;gt;
+  &amp;lt;userid&amp;gt;mysite.com:1234&amp;lt;/userid&amp;gt;
+&amp;lt;/activity&amp;gt;&lt;/samp&gt;&lt;/pre&gt;
+
+&lt;p&gt;The above example normalizes a text-based status update into an OpenSocial activity expressed in &lt;abbr&gt;XML&lt;/abbr&gt;. I can post this message into an OpenSocial activity stream, open up export capabilities for members, or interface with a wider array of applications (desktop, mobile, etc.) that already support activity stream display.&lt;/p&gt;
+
+&lt;h3 id=&quot;discover&quot;&gt;Advertising OpenSocial support&lt;/h3&gt;
+
+&lt;p&gt;OpenSocial &lt;abbr&gt;REST&lt;/abbr&gt;ful resources are described using &lt;a href=&quot;http://xrds-simple.net/core/1.0/&quot;&gt;&lt;abbr title=&quot;eXtensible Resource Descriptor Sequence&quot;&gt;XRDS&lt;/abbr&gt;-Simple&lt;/a&gt;. If you have used &lt;a href=&quot;http://openid.net/&quot;&gt;OpenID&lt;/a&gt; or OAuth you&apos;re likely already familiar with this markup and discovery process. Agents can probe possible supporting containers for &lt;code&gt;application/xrds+xml&lt;/code&gt; response support to receive a full descriptor set.&lt;/p&gt;
+
+&lt;p&gt;OpenSocial &lt;abbr&gt;REST&lt;/abbr&gt; containers advertise supported data objects by the object&apos;s name. A type of &lt;code&gt;http://ns.opensocial.org/&lt;/code&gt;&lt;var&gt;*&lt;/var&gt; advertises &lt;abbr&gt;REST&lt;/abbr&gt;ful support, data objects available (person, activity, etc.), possible query types, and a hint of &lt;abbr&gt;spec&lt;/abbr&gt;version (currently &quot;2008&quot;). You might choose to support some or all of the OpenSocial data objects and your &lt;abbr&gt;XRDS&lt;/abbr&gt; document will serve as the central discovery resource for such data.&lt;/p&gt;
+
+&lt;h3 id=&quot;os-summary&quot;&gt;Summary&lt;/h3&gt;
+
+&lt;p&gt;OpenSocial is about more than just widgets and applications rendered in a web browser. The project exposes standardized interfaces and object descriptors for social web components while offering interoperability with very large social networks around the world. Any social website can allow public and private access to member data using OpenSocial &lt;abbr&gt;REST&lt;/abbr&gt;ful protocols and responses. You will open up new &lt;acronym&gt;API&lt;/acronym&gt; opportunities, allow import and export of data between sites, and even expose more granular data to crawlers such as Google (if you choose). Interesting stuff that&apos;s just getting started.&lt;/p&gt;</content>
+<category term="software/social" scheme="http://www.niallkennedy.com/blog/" label="Social" /><category term="programming/web-services" scheme="http://www.niallkennedy.com/blog/" label="Web services" />
+<id>http://www.niallkennedy.com/blog/2008/12/opensocial-rest.html</id>
+<link rel="alternate" href="http://www.niallkennedy.com/blog/2008/12/opensocial-rest.html" type="text/html" hreflang="en" />
+<published>2008-12-09T22:45:00Z</published>
+<updated>2008-12-09T22:52:08Z</updated>
+<link rel="replies" type="application/atom+xml" href="http://www.niallkennedy.com/blog/2008/12/opensocial-rest.atom" thr:count="0" />
+</entry>
+
+<entry>
+<title>Rewriting Twitter for web best practices</title>
+<summary>Last week I decided to rewrite the Twitter.com front-end on Google App Engine to incorporate modern front-end programming best practices, exceptional performance, and establish a solid platform for further development. TwitterFE.com is a fully-functional read-only clone of Twitter.com designed to make your web browser sing. I created the site as an example of web development best practices anyone can integrate into their web presence.</summary>
+<content type="html">&lt;div style=&quot;text-style:center&quot;&gt;&lt;img alt=&quot;TwitterFE.com screenshot&quot; src=&quot;http://static.niallkennedy.com/blog/img/twitter-screen.png&quot; width=&quot;430&quot; height=&quot;179&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;Last week I decided to rewrite the Twitter.com front-end on Google App Engine to incorporate modern front-end programming best practices, exceptional performance, and establish a solid platform for further development. &lt;a href=&quot;http://www.twitterfe.com/&quot;&gt;TwitterFE.com&lt;/a&gt; is a fully-functional read-only clone of &lt;a href=&quot;http://twitter.com/&quot;&gt;Twitter.com&lt;/a&gt; designed to make your web browser sing. I created the site as an example of web development best practices anyone can integrate into their web presence.&lt;/p&gt;
+
+&lt;p&gt;The new web front-end on &lt;a href=&quot;http://www.twitterfe.com/&quot;&gt;TwitterFE.com&lt;/a&gt; features localized templates, expressive markup, distinct &lt;acronym title=&quot;Uniform Resource Locator&quot;&gt;URL&lt;/acronym&gt; structures, integrated site search, geo-distributed dynamic and static servers, and more available features than Twitter.com. In this post I will outline some of the changes I&apos;ve applied to the Twitter front-end reproduction as they apply to general front-end web development.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/11/twitter-front-end-rewrite.html#global&quot;&gt;Global audience&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/11/twitter-front-end-rewrite.html#uniqueuse&quot;&gt;Unique usage models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/11/twitter-front-end-rewrite.html#dupurls&quot;&gt;Consolidate &lt;acronym&gt;URL&lt;/acronym&gt;s&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/11/twitter-front-end-rewrite.html#markup&quot;&gt;Expressive markup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/11/twitter-front-end-rewrite.html#splitload&quot;&gt;Split the page load&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/11/twitter-front-end-rewrite.html#knowcache&quot;&gt;Know your cache settings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/11/twitter-front-end-rewrite.html#accesscontrol&quot;&gt;Review access controls&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/11/twitter-front-end-rewrite.html#addsitesearch&quot;&gt;Expose site search&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/11/twitter-front-end-rewrite.html#twitter-summary&quot; title=&quot;Twitter summary&quot;&gt;Summary&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;global&quot;&gt;Global audience&lt;/h3&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;http://trends.google.com/websites?q=twitter.com&amp;amp;geo=all&amp;amp;date=2008&quot; title=&quot;Twitter.com 2008 Google Trends&quot;&gt;&lt;img alt=&quot;Twitter.com top countries - Google Trends&quot; src=&quot;http://static.niallkennedy.com/blog/img/twitter-countries.png&quot; width=&quot;305&quot; height=&quot;251&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;I added a localization framework to the Twitter front-end to enable site content delivered in multiple languages. &lt;a href=&quot;http://trends.google.com/websites?q=twitter.com&amp;amp;geo=all&amp;amp;date=2008&quot;&gt;According to Google Trends&lt;/a&gt; Twitter&apos;s top regional languages are English, Portuguese, Japanese, Chinese, German, and Spanish speaking regions. I isolated the site&apos;s template strings and translated all key phrases into Spanish. Visitors with an &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.4&quot;&gt;&lt;code&gt;Accept-Language&lt;/code&gt;&lt;/a&gt; header of &lt;var&gt;es&lt;/var&gt; will receive template strings in Spanish.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;img alt=&quot;Twitter profile about box Spanish - Evan Williams&quot; src=&quot;http://static.niallkennedy.com/blog/img/twitter-spanish.png&quot; width=&quot;319&quot; height=&quot;249&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;The most difficult part of localization is isolating your template strings and choosing common wording across the site. Twitter uses the terms &quot;person,&quot; &quot;user,&quot; &quot;account,&quot; and more to reference a profile owner. Websites need to pick common concepts to explain their site interactions before requesting translations.&lt;/p&gt;
+
+&lt;p&gt;Modern websites rely on crowd-sourcing to translate a site into new languages. Porting a web application to your native language is a point of pride for many communities. Something as simple as &quot;&lt;span lang=&quot;en-uk&quot;&gt;favourites&lt;/span&gt;&quot; instead of &quot;favorites&quot; for the &lt;abbr title=&quot;British&quot;&gt;Brits&lt;/abbr&gt; could help create identity around a product in other countries. &lt;a href=&quot;http://www.facebook.com/translations/&quot;&gt;Facebook Translations&lt;/a&gt; and &lt;a href=&quot;http://www.google.com/transconsole/giyl/check/status&quot;&gt;Google in Your Language&lt;/a&gt; are just two examples of large localization efforts led by an engaged community.&lt;/p&gt;
+
+
+&lt;h3 id=&quot;uniqueuse&quot;&gt;Unique usage models&lt;/h3&gt;
+
+&lt;p&gt;Twitter.com has three main visitor interactions: anonymous visitor, annotator, and author. The current Twitter website loads resources for all possible interaction types, weighing down the page and interfering with the intended experience. I tore the site down and started from scratch, building up each interaction model starting with the anonymous visitor.&lt;/p&gt;
+
+&lt;h4&gt;Anonymous visitor&lt;/h4&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;img alt=&quot;Twitter logged out view - Evan Williams&quot; src=&quot;http://static.niallkennedy.com/blog/img/twitter-loggedout.png&quot; width=&quot;300&quot; height=&quot;106&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;The anonymous, public visitor is anyone browsing Twitter content in a non signed-in state. This audience typically makes up the majority of site traffic and includes both humans and search engines. Websites need to clearly and concisely communicate content to this new audience who is likely inexperienced with your site while quickly while smartly driving business objectives such as member signups or advertising.&lt;/p&gt;
+
+&lt;h4&gt;Annotator&lt;/h4&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;img alt=&quot;Twitter logged out view - Evan Williams&quot; src=&quot;http://static.niallkennedy.com/blog/img/twitter-annotate.png&quot; width=&quot;186&quot; height=&quot;61&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;The annotator is a logged-in member browsing site content with an opportunity for annotation. They may want to discover new social network friends, mark content as a favorite, or otherwise engage with an existing content. Annotations are typically short and asynchronous, posting new associations between an account holder and a unique content identifier. The majority of pages presented to logged-in users on Twitter.com follow this annotation interaction model.&lt;/p&gt;
+
+&lt;h4&gt;Author&lt;/h4&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;img alt=&quot;Twitter logged out view - Evan Williams&quot; src=&quot;http://static.niallkennedy.com/blog/img/twitter-update.png&quot; width=&quot;300&quot; height=&quot;83&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;Twitter is a message authoring platform. Logged-in users may publish new text updates from their homepage while browsing other subscribed content. Authors type into a text area and receive real-time feedback on authoring limitations while they type. The author commits new content to Twitter&apos;s servers after hitting a submit button, and the service responds with a confidence indicator for accepted updates.&lt;/p&gt;
+
+
+&lt;h3 id=&quot;dupurls&quot;&gt;Consolidate &lt;acronym&gt;URL&lt;/acronym&gt;s&lt;/h3&gt;
+
+&lt;p&gt;How many possible &lt;acronym title=&quot;Uniform Resource Locator&quot;&gt;URL&lt;/acronym&gt;s represent the same content on your website? Websites should &lt;a href=&quot;http://www.google.com/support/webmasters/bin/answer.py?answer=66359&quot;&gt;avoid duplicate content&lt;/a&gt; spread across multiple paths, subdomains, and protocols. There should be one strong public-facing match for your distinct content.&lt;/p&gt;
+
+&lt;p&gt;Which one of the following &lt;acronym&gt;URL&lt;/acronym&gt;s represents the profile page of Twitter &lt;acronym title=&quot;Chief Executive Officer&quot;&gt;CEO&lt;/acronym&gt; Evan Williams (username ev).&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;http://twitter.com/ev&lt;/li&gt;
+  &lt;li&gt;http://twitter.com/ev&lt;span style=&quot;font-weight:bold&quot;&gt;/&lt;/span&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;span style=&quot;font-weight:bold&quot;&gt;https&lt;/span&gt;://twitter.com/ev&lt;/li&gt;
+  &lt;li&gt;http://&lt;span style=&quot;font-weight:bold&quot;&gt;explore.&lt;/span&gt;twitter.com/ev&lt;/li&gt;
+  &lt;li&gt;http://&lt;span style=&quot;font-weight:bold&quot;&gt;m.&lt;/span&gt;twitter.com/ev&lt;/li&gt;
+  &lt;li&gt;and more...&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Websites need to pick a winner and funnel visits into that best representation of content. Search engines are crawling multiple versions of Twitter right now and splitting authority between many different options.&lt;/p&gt;
+
+&lt;p&gt;Be aware of &lt;acronym&gt;URL&lt;/acronym&gt; propagation when you introduce new subdomains and schemes with relative &lt;acronym&gt;URL&lt;/acronym&gt;s inherited from a common template. You might be buying new servers to keep up with a crawl load across your millions of pages as a result.&lt;/p&gt;
+
+
+&lt;h3 id=&quot;markup&quot;&gt;Expressive markup&lt;/h3&gt;
+
+&lt;p&gt;TwitterFE uses an &lt;abbr title=&quot;eXtensible Hypertext Markup Language&quot;&gt;xHTML&lt;/abbr&gt; vocabulary to express content, &lt;acronym title=&quot;Cascading Style Sheets&quot;&gt;CSS&lt;/acronym&gt; for positioning and styling, and JavaScript for progressive enhancement and interactions. Gone are the table-based layouts of Twitter.com and its heavy &lt;acronym title=&quot;Document Object Model&quot;&gt;DOM&lt;/acronym&gt; footprint. Resources are split into dynamic and static content and served from geographically-distributed datacenters for optimal performance. Twitter currently stores static assets such as profile pictures on Amazon S3 and does not use a distributed &lt;acronym title=&quot;Content Delivery Network&quot;&gt;CDN&lt;/acronym&gt; to address speed of light issues.&lt;/p&gt;
+
+&lt;p&gt;Comparing a user such as &lt;a href=&quot;http://www.twitterfe.com/algore/&quot;&gt;Al Gore on TwitterFE&lt;/a&gt; vs. &lt;a href=&quot;http://twitter.com/algore&quot;&gt;Al Gore on Twitter.com&lt;/a&gt; shows a 41% difference in required resources sent over the wire (89 vs. 152 &lt;abbr title=&quot;kilobytes&quot;&gt;KB&lt;/abbr&gt;). The new site also &lt;a href=&quot;http://developer.yahoo.com/performance/rules.html#min_dom&quot;&gt;reduces the total &lt;acronym&gt;DOM&lt;/acronym&gt; footprint&lt;/a&gt; for faster parsing, layout, rendering, and addressing.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://microformats.org/&quot;&gt;Microformats&lt;/a&gt; expose unique structured objects within each page such as people, relationships, and feed mappings. Search engines such as Yahoo! tap into microformat content to expose deeper information about a page. I cleaned up microformat support on Twitter pages and added support for &lt;a href=&quot;http://www.microsoft.com/windows/internet-explorer/beta/features/web-slices.aspx&quot;&gt;Internet Explorer 8 Web Slices&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Expressive markup helps web browsers and search engines better understand the content within your pages. Sites can fully utilize &lt;abbr&gt;xHTML&lt;/abbr&gt; vocabulary sets independent of default styling to best define the content and the rendered display of each page.&lt;/p&gt;
+
+
+&lt;h3 id=&quot;splitload&quot;&gt;Split the page load&lt;/h3&gt;
+
+&lt;p&gt;Web pages should respond quickly with progressive enhancement added after the main page content renders on the page. We might, for example, load a page and then apply search field listeners, autocomplete, or menu expansions as a second wave. Splitting our pages into &quot;must have&quot; and &quot;nice to have&quot; segments helps us deliver core content quickly while still providing the on-page interactions and magic sprinkles that thrill our visitors.&lt;/p&gt;
+
+&lt;p&gt;Twitter&apos;s profile pages load 36 of the profile owner&apos;s following list onto each page. That&apos;s 36 tiny little 700 byte profile images all waiting in line for a remote connection and display on page. I tripled the total number of displayed member &lt;abbr title=&quot;picture&quot;&gt;pic&lt;/abbr&gt;s but loaded the list asynchronously after the rest of the page finished loading. I can pre-fetch these components into cache on the original profile request and respond very quickly to the &lt;abbr title=&quot;asynchronous&quot;&gt;async&lt;/abbr&gt; request after page load.&lt;/p&gt;
+
+
+&lt;h3 id=&quot;knowcache&quot;&gt;Know your cache settings&lt;/h3&gt;
+
+&lt;p&gt;How long should browsers and other requesting agents hold on to a piece of content before requesting a fresh copy? A frequently changing profile page might expire its &lt;abbr title=&quot;Hypertext Markup Language&quot;&gt;HTML&lt;/abbr&gt; every 5 minutes or so while static assets such as a site logo or icon should be kept in browser cache for a long period of time instead of requested with each page. In some cases Twitter sets image &lt;code&gt;Expires&lt;/code&gt; headers 5 minutes into the future, slowing down pages and increasing bandwidth costs for the company and its visitors.&lt;/p&gt;
+
+
+&lt;h3 id=&quot;accesscontrol&quot;&gt;Review access controls&lt;/h3&gt;
+
+&lt;p&gt;Some sites split pages into public-facing and login-required access models. Twitter places pages such as a following list or a full-sized profile picture behind a login screen while exposing the same data over their &lt;acronym title=&quot;Application Programming Interface&quot;&gt;API&lt;/acronym&gt;s without such restrictions. Twitter.com is losing search engine exposure and logged-out user browsing capabilities due to these inconsistencies in implementation, not policy.&lt;/p&gt;
+
+
+&lt;h3 id=&quot;addsitesearch&quot;&gt;Expose site search&lt;/h3&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;img alt=&quot;Firefox OpenSearch Twitter&quot; src=&quot;http://static.niallkennedy.com/blog/img/twitter-opensearch.png&quot; width=&quot;215&quot; height=&quot;242&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://www.opensearch.org/&quot;&gt;OpenSearch&lt;/a&gt; format exposes site search options to web browsers and search engines alike. If your website offers site search you should be lighting up the browser chrome with new search options for the given page. &lt;a href=&quot;http://blog.twitter.com/2008/07/finding-perfect-match.html&quot;&gt;Twitter acquired a search company in July&lt;/a&gt; but has not exposed available search hooks in their main website&apos;s front-end. Think about how you might want to scope a search to the currently viewed user account as well as an expanded site-wide option.&lt;/p&gt;
+
+
+&lt;h3 id=&quot;twitter-summary&quot;&gt;Summary&lt;/h3&gt;
+
+&lt;p&gt;TwitterFE is a read-only clone of Twitter&apos;s front-end that fixes many of my frustrations with the site&apos;s front-end engineering and creates a new platform for future third-party development. Any site could roll these types of improvements back into their core services. Twitter &lt;acronym&gt;API&lt;/acronym&gt;s are full-featured enough I can clone the Twitter front-end without creating yet another stand-alone Twitter-like site.&lt;/p&gt;
+
+&lt;p&gt;There is a difference between a website or widget rendering in a browser and having the same site perform exceptionally well. Established web teams should revisit their web content to optimize experiences.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.twitterfe.com/&quot;&gt;TwitterFE.com&lt;/a&gt; is the result of one person working part-time for a week to re-write the front end of a website serving millions of monthly visitors. Similar lessons apply throughout the Web world.&lt;/p&gt;
+
+&lt;p&gt;I now have a new platform to develop features beyond what&apos;s currently offered on Twitter.com. If you&apos;re an iPhone developer in need of a headless Twitter &lt;acronym&gt;API&lt;/acronym&gt; proxy for push updates &lt;a href=&quot;http://www.niallkennedy.com/about/contact.html&quot; rel=&quot;nofollow&quot; title=&quot;Contact Niall Kennedy&quot;&gt;let me know&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;What other front-end features do you wish established websites would invest time and effort to improve?&lt;/p&gt;</content>
+<category term="software/social" scheme="http://www.niallkennedy.com/blog/" label="Social" /><category term="programming/web-services" scheme="http://www.niallkennedy.com/blog/" label="Web services" />
+<id>http://www.niallkennedy.com/blog/2008/11/twitter-front-end-rewrite.html</id>
+<link rel="alternate" href="http://www.niallkennedy.com/blog/2008/11/twitter-front-end-rewrite.html" type="text/html" hreflang="en" />
+<published>2008-11-19T23:45:00Z</published>
+<updated>2008-11-19T23:55:57Z</updated>
+<link rel="replies" type="application/atom+xml" href="http://www.niallkennedy.com/blog/2008/11/twitter-front-end-rewrite.atom" thr:count="9" thr:updated="2008-12-07T22:57:43Z" />
+</entry>
+
+<entry>
+<title>Syndication and Widgets Primer</title>
+<summary>Today&apos;s publishers need to think beyond the fixed location of their website and fully integrate with the large hubs of user activity on the desktop, mobile phone, social networks, blogs, and web pages at large. Syndication and widgets power new opportunities to carry content beyond the walls of a single site and into some of the largest brands in the world yet some publishers still haven&apos;t gotten the message. I recorded a 1-hour video presentation earlier this week to better explain the syndication and widget landscape to web publishers.</summary>
+<content type="html">&lt;p&gt;The publishing world is continuously evolving, creating new opportunities for plugged-in companies to reach new audiences like never before. Today&apos;s publishers need to think beyond the fixed location of their website and fully integrate with the large hubs of user activity on the desktop, mobile phone, social networks, blogs, and web pages at large. Syndication and widgets power new opportunities to carry content beyond the walls of a single site and into some of the largest brands in the world yet some publishers still haven&apos;t gotten the message. I recorded a 1-hour video presentation earlier this week to better explain the syndication and widget landscape to web publishers. This summary document helped shape the &lt;a href=&quot;http://widgetsummit.com/&quot;&gt;Widget Summit&lt;/a&gt; program and new publisher opportunities.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;
+&lt;object id=&quot;widgetsvideo&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; width=&quot;430&quot; height=&quot;324&quot;&gt;
+  &lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;
+  &lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;
+  &lt;param name=&quot;movie&quot; value=&quot;http://vimeo.com/moogaloop.swf&quot; /&gt;
+  &lt;param name=&quot;flashvars&quot; value=&quot;clip_id=2159749&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=00ADEF&amp;amp;fullscreen=1&quot; /&gt;
+&lt;!--[if !IE]&gt;--&gt;
+  &lt;object type=&quot;application/x-shockwave-flash&quot; data=&quot;http://vimeo.com/moogaloop.swf&quot; width=&quot;430&quot; height=&quot;324&quot;&gt;
+    &lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;
+    &lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;
+    &lt;param name=&quot;flashvars&quot; value=&quot;clip_id=2159749&amp;amp;server=vimeo.com&amp;amp;show_title=1&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=00ADEF&amp;amp;fullscreen=1&quot; /&gt;
+    &lt;object type=&quot;video/quicktime&quot; data=&quot;http://video.niallkennedy.com/presentations/2008/widgets.png&quot; width=&quot;430&quot; height=&quot;323&quot;&gt;
+      &lt;param name=&quot;controller&quot; value=&quot;false&quot; /&gt;
+      &lt;param name=&quot;src&quot; value=&quot;http://video.niallkennedy.com/presentations/2008/widgets.png&quot; /&gt;
+      &lt;param name=&quot;href&quot; value=&quot;http://video.niallkennedy.com/presentations/2008/widgets_sm.mov&quot; /&gt;
+      &lt;param name=&quot;target&quot; value=&quot;myself&quot; /&gt;
+&lt;!--&lt;![endif]--&gt;
+      &lt;img alt=&quot;Widgets and Syndication presentation capture&quot; src=&quot;http://video.niallkennedy.com/presentations/2008/widgets.png&quot; width=&quot;430&quot; height=&quot;323&quot; /&gt;
+&lt;!--[if !IE]&gt;--&gt;
+    &lt;/object&gt;
+  &lt;/object&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;/object&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://video.niallkennedy.com/presentations/2008/widgets.mov&quot; type=&quot;video/quicktime&quot; rel=&quot;alternate&quot; title=&quot;Syndication and Widgets (H.264, AAC)&quot;&gt;Download in high resolution&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://video.niallkennedy.com/presentations/2008/widgets.ogv&quot; type=&quot;video/ogg&quot; rel=&quot;alternate&quot; title=&quot;Syndication and Widgets (Ogg Theora)&quot;&gt;Download Ogg Theora version&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://vimeo.com/2159749&quot; title=&quot;Syndication and Widgets presentation on Vimeo&quot;&gt;Watch on Vimeo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;A widget in its simplest sense breaks apart a website into its essential components, broadcasts those components to anyone who will listen, and reassembles the content on a remote system while tapped into local resources. It&apos;s a bit like writing your website&apos;s front end in a remote location powered by local assembly methods, cached resources, and rich interactions. I compare syndication and widgets to television broadcasting and international shipping: we build our products to exact specifications to take advantage of new audiences and standardized transports.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;img alt=&quot;Reach larger audiences&quot; src=&quot;http://static.niallkennedy.com/blog/img/widget-audience.png&quot; width=&quot;430&quot; height=&quot;310&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;Widgets let publishers take their content to the audience instead of waiting for the audience to come to them. Throughout my presentation I used Twitter as an example. Twitter attracted approximately 2.3 million unique visitors in the &lt;acronym title=&quot;United States&quot;&gt;U.S.&lt;/acronym&gt; in September &lt;a href=&quot;http://nielsen-online.com/press.jsp?section=new_pr&amp;amp;theyear=2008&amp;amp;country=United%20States&amp;amp;themonth=9&quot;&gt;according to Nielsen Online&lt;/a&gt;. That&apos;s a pretty strong audience but it&apos;s tiny compared to the repeat daily activities of Facebook, MySpace, Google, or everyone reaching Windows Vista. We package up and redistribute our content to reach these larger audiences spending time away from our site instead of waiting for a new visit into a fixed domain.&lt;/p&gt;
+
+&lt;p&gt;In the presentation I broke syndication strategy into two major components: syndicate data using Atom and piece your data back together on major platforms of interest using widgets. I dive into a few example of major feed reading and widget platforms, and even spent some time on advanced topics such as contextual awareness.&lt;/p&gt;
+
+&lt;p&gt;I am still experimenting with creating presentations for online video distribution but I hope you enjoy these multimedia conversations.&lt;/p&gt;</content>
+<category term="software/feed-aggregators/atom" scheme="http://www.niallkennedy.com/blog/" label="Atom" /><category term="business" scheme="http://www.niallkennedy.com/blog/" label="Business" /><category term="enclosures" scheme="http://www.niallkennedy.com/blog/" label="Enclosures" /><category term="software/social/widgets" scheme="http://www.niallkennedy.com/blog/" label="Widgets" />
+<id>http://www.niallkennedy.com/blog/2008/11/syndication-widgets-strategy.html</id>
+<link rel="alternate" href="http://www.niallkennedy.com/blog/2008/11/syndication-widgets-strategy.html" type="text/html" hreflang="en" />
+<published>2008-11-06T23:30:00Z</published>
+<updated>2008-11-06T23:42:56Z</updated>
+<link rel="replies" type="application/atom+xml" href="http://www.niallkennedy.com/blog/2008/11/syndication-widgets-strategy.atom" thr:count="0" />
+<link rel="enclosure" type="video/quicktime" href="http://video.niallkennedy.com/presentations/2008/widgets.mov" title="Syndication and Widgets (H.264)" length="308700200"  />
+<link rel="enclosure" type="video/x-m4v" href="http://video.niallkennedy.com/presentations/2008/widgets.m4v" title="Syndication and Widgets (iPhone)" length="160046343"  />
+<link rel="enclosure" type="video/ogg" href="http://video.niallkennedy.com/presentations/2008/widgets.ogv" title="Syndication and Widgets (Ogg Theora)" length="392225076"  />
+</entry>
+
+<entry>
+<title>Yahoo! Open Strategy launch</title>
+<summary>On Tuesday Yahoo! launched its Open Strategy, exposing Yahoo! account data and social connections to third-party developers. Yahoo! Open Strategy is the third pillar of faith announced by CEO Jerry Yang last year during the company&apos;s rebirth. Y!OS is the new glue connecting the next versions of Yahoo!&apos;s own properties and will eventually power more relevant advertising across the network. In this post I will provide an overview of the new Yahoo! services and its impact on both Yahoo! and third-party developers. Yahoo! Open Strategy is one of the keynote presentations at Widget Summit next week.</summary>
+<content type="html">&lt;div style=&quot;text-align:center&quot;&gt;&lt;img alt=&quot;Yahoo! Open Strategy sign&quot; src=&quot;http://l.yimg.com/a/i/ydn/features/open-sign.jpg&quot; width=&quot;313&quot; height=&quot;206&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;On Tuesday &lt;a href=&quot;http://developer.yahoo.net/blog/archives/2008/10/yos_10_launch.html&quot;&gt;Yahoo! launched its Open Strategy&lt;/a&gt;, exposing Yahoo! account data and social connections to third-party developers. &lt;abbr title=&quot;Y!OS&quot;&gt;Yahoo! Open Strategy&lt;/abbr&gt; is the &lt;a href=&quot;http://ycorpblog.com/2007/10/16/where-does-yahoo-head-next/&quot;&gt;third pillar of faith announced by &lt;acronym title=&quot;Chief Executive Officer&quot;&gt;CEO&lt;/acronym&gt; Jerry Yang&lt;/a&gt; last year during the company&apos;s rebirth. &lt;abbr title=&quot;Yahoo! Open Strategy&quot;&gt;Y!OS&lt;/abbr&gt; is the new glue connecting the next versions of Yahoo!&apos;s own properties and will eventually power more relevant advertising across the network. In this post I will provide an overview of the new Yahoo! services and its impact on both Yahoo! and third-party developers. &lt;a href=&quot;http://widgetsummit.com/2008/sessions/yahoo-application-platform/&quot; title=&quot;Yahoo! Open Strategy Widget Summit&quot;&gt;Yahoo! Open Strategy is one of the keynote presentations&lt;/a&gt; at &lt;a href=&quot;http://widgetsummit.com/&quot;&gt;Widget Summit&lt;/a&gt; next week.&lt;/p&gt;
+
+&lt;p&gt;The Yahoo! Open Strategy first and foremost unites Yahoo!&apos;s own product fiefdoms into a common set of interchangeable components. The new platform ties together social features and rich content units across Yahoo! properties in much the same way as &lt;acronym title=&quot;Yahoo! User Interface&quot;&gt;YUI&lt;/acronym&gt; abstracts a common set of JavaScript and CSS interactions across Yahoo!. The company announced plans to integrate the Y!OS platform into a new version of My Yahoo! and Yahoo! Mail over the next year.&lt;/p&gt;
+
+&lt;p&gt;Yahoo!, like many portals, receives most of its user activity from mail and IM networks. These are the explicit social networks, tracking who we communicate with every day and at what frequency. Yahoo! Mail, Yahoo! Messenger, and Yahoo! Mail represent some of the largest front-doors on the Web across a very international audience. Yahoo! is building upon these established strong relationships to construct a social platform receiving new, relevant inputs every day. Y!OS is a partial answer to Yahoo!&apos;s build &lt;abbr title=&quot;versus&quot;&gt;vs.&lt;/abbr&gt; buy decision it faced in September 2006 when &lt;a href=&quot;http://online.wsj.com/public/article/SB116061595136390049.html&quot;&gt;Yahoo! reportedly offered to buy Facebook for $1 billion&lt;/a&gt; (about $400 million at today&apos;s share price).&lt;/p&gt;
+
+&lt;h3&gt;A new Yahoo! Profile&lt;/h3&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;img alt=&quot;Yahoo! Profile&quot; src=&quot;http://ycorpblog.com/wp-content/uploads/2008/10/profile-page.jpg&quot; width=&quot;300&quot; height=&quot;382&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://ycorpblog.com/2008/10/16/your-social-control-panel/&quot;&gt;The new Yahoo! profile pages&lt;/a&gt; collect more information on every Yahoo! user in an interface that is easy to discover and share. Yahoo! previously buried this data inside user account preferences and really didn&apos;t provide much motivation to keep profile data up-to-date. The new Yahoo! profile is at the center of the Yahoo! Social experience, motivating participating users to better describe themselves to connected friends and services.&lt;/p&gt;
+
+&lt;p&gt;Exposing this profile data across Yahoo! applications ultimately leads to richer &lt;abbr title=&quot;advertising&quot;&gt;ad&lt;/abbr&gt;-mining for Yahoo! and its partners.&lt;/p&gt;
+
+&lt;h3&gt;Social &lt;acronym title=&quot;Application Programming Interface&quot;&gt;API&lt;/acronym&gt;s&lt;/h3&gt;
+
+&lt;p&gt;Yahoo! tracks explicit and implicit user connections through its Contacts platform and Social Directory. Messenger buddies, address book entries, and direct communications all influence the Yahoo! social platform. Yahoo! social features are similar to what publishers have come to expect inside a Facebook social graph or combined news feed but adds live user presence (online/offline) to the mix.&lt;/p&gt;
+
+&lt;h3&gt;Yahoo! Application Platform&lt;/h3&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;img alt=&quot;Yahoo! Application Platform small view sample&quot; src=&quot;http://developer.yahoo.com/yap/guide/images/anatomy-small-view.jpg&quot; width=&quot;300&quot; height=&quot;300&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;The Yahoo! Application Platform (&lt;acronym title=&quot;Yahoo! Application Platform&quot;&gt;YAP&lt;/acronym&gt;) adds third-party content to Yahoo! properties through a full-page editing canvas and small widgets. The Yahoo! Application Platform is build on &lt;a href=&quot;http://www.opensocial.org/&quot;&gt;OpenSocial&lt;/a&gt; 0.8 JavaScript &lt;acronym&gt;API&lt;/acronym&gt;s combined with &lt;a href=&quot;http://developer.yahoo.com/yap/yml/&quot;&gt;Yahoo!&apos;s own markup language&lt;/a&gt; similar to a server-side include and &lt;abbr title=&quot;Facebook Markup Language&quot;&gt;FBML&lt;/abbr&gt;.&lt;/p&gt;
+
+&lt;p&gt;The &lt;acronym&gt;YAP&lt;/acronym&gt; widget view is restricted to static content for speed. Developers can&apos;t use JavaScript, PHP, or other languages within a Yahoo! widget and are not allowed to display any advertising or promotions. These heavy restrictions strip the widget down to its essentials for the sake of speed and scalability. The no-advertising and no-promotions clause may cause companies to rethink content monetization on the Yahoo! platform.&lt;/p&gt;
+
+&lt;h3&gt;Summary&lt;/h3&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;http://www.flickr.com/photos/niallkennedy/2850613453/&quot; title=&quot;Cody Simms and Neal Sample at Yahoo! Hack Day&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3089/2850613453_70cafb63af.jpg&quot; width=&quot;430&quot; height=&quot;286&quot; alt=&quot;Cody Simms and Neal Sample&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;The Yahoo! Open Strategy 1.0 release is just the beginning of Yahoo!&apos;s rewiring. The platform really gets interesting once Yahoo! flips on My Yahoo! and Yahoo! Mail support, enabling 500 million worldwide users to access new content. Yahoo! already owns a compelling notification platform in Messenger and Mail, which should drive the virality of applications through invitations and updates that actually reach their intended recipient. Yahoo! has assembled a small team of ex-BEA middleware experts behind the scenes to drive new Java-based platform &lt;acronym title=&quot;applications&quot;&gt;apps&lt;/acronym&gt; across the company and around the world. The Y!OS launch this week is a good start and I&apos;m looking forward to Yahoo! delivering on its vision.&lt;/p&gt;</content>
+<category term="software/social/widgets" scheme="http://www.niallkennedy.com/blog/" label="Widgets" /><category term="search/yahoo" scheme="http://www.niallkennedy.com/blog/" label="Yahoo!" />
+<id>http://www.niallkennedy.com/blog/2008/10/yahoo-open-strategy.html</id>
+<link rel="alternate" href="http://www.niallkennedy.com/blog/2008/10/yahoo-open-strategy.html" type="text/html" hreflang="en" />
+<published>2008-10-30T19:15:00Z</published>
+<updated>2008-10-30T19:21:04Z</updated>
+<link rel="replies" type="application/atom+xml" href="http://www.niallkennedy.com/blog/2008/10/yahoo-open-strategy.atom" thr:count="1" thr:updated="2008-10-31T04:54:03Z" />
+</entry>
+
+<entry>
+<title>Better Design Through Code</title>
+<summary>Every day our web applications ignore useful visitor data. We respond to single request based on a domain and a path without listening to the capabilities, location, preferences, and favorite interactions of our visitors and their requesting agent. A few weeks ago I challenged a room full of designers at PARC to rethink what&apos;s possible on the Web and rely on adaptive programming techniques to serve the right content to the right audience at the right time. I titled the 50-minute talk &quot;Better Design Through Code&quot; and walk through latent capabilities of servers and browsers ready and waiting to deliver personalized, adaptive content to unique Web visitors.</summary>
+<content type="html">&lt;p&gt;Every day our web applications ignore useful visitor data. We respond to single request based on a domain and a path without listening to the capabilities, location, preferences, and favorite interactions of our visitors and their requesting agent. A few weeks ago I challenged a room full of designers at &lt;acronym title=&quot;Palo Alto Research Center&quot;&gt;PARC&lt;/acronym&gt; to rethink what&apos;s possible on the Web and rely on adaptive programming techniques to serve the right content to the right audience at the right time. I titled the 50-minute talk &quot;Better Design Through Code&quot; and walk through latent capabilities of servers and browsers ready and waiting to deliver personalized, adaptive content to unique Web visitors.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;
+&lt;object id=&quot;baychivideo&quot; classid=&quot;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&quot; width=&quot;430&quot; height=&quot;324&quot;&gt;
+  &lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;
+  &lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;
+  &lt;param name=&quot;movie&quot; value=&quot;http://vimeo.com/moogaloop.swf&quot; /&gt;
+  &lt;param name=&quot;flashvars&quot; value=&quot;clip_id=2159196&amp;amp;server=vimeo.com&amp;amp;show_title=0&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=00ADEF&amp;amp;fullscreen=1&quot; /&gt;
+&lt;!--[if !IE]&gt;--&gt;
+  &lt;object type=&quot;application/x-shockwave-flash&quot; data=&quot;http://vimeo.com/moogaloop.swf&quot; width=&quot;430&quot; height=&quot;324&quot;&gt;
+    &lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;
+    &lt;param name=&quot;allowscriptaccess&quot; value=&quot;always&quot; /&gt;
+    &lt;param name=&quot;flashvars&quot; value=&quot;clip_id=2159196&amp;amp;server=vimeo.com&amp;amp;show_title=0&amp;amp;show_byline=1&amp;amp;show_portrait=0&amp;amp;color=00ADEF&amp;amp;fullscreen=1&quot; /&gt;
+    &lt;object type=&quot;video/quicktime&quot; data=&quot;http://static.niallkennedy.com/podcast/img/baychi.jpg&quot; width=&quot;430&quot; height=&quot;322&quot;&gt;
+      &lt;param name=&quot;controller&quot; value=&quot;false&quot; /&gt;
+      &lt;param name=&quot;src&quot; value=&quot;http://static.niallkennedy.com/podcast/img/baychi.jpg&quot; /&gt;
+      &lt;param name=&quot;href&quot; value=&quot;http://video.niallkennedy.com/presentations/2008/baychi_sm.mov&quot; /&gt;
+      &lt;param name=&quot;target&quot; value=&quot;myself&quot; /&gt;
+&lt;!--&lt;![endif]--&gt;
+      &lt;img alt=&quot;BayCHI presentation slide capture&quot; src=&quot;http://static.niallkennedy.com/podcast/img/baychi.jpg&quot; width=&quot;428&quot; height=&quot;337&quot; /&gt;
+&lt;!--[if !IE]&gt;--&gt;
+    &lt;/object&gt;
+  &lt;/object&gt;
+&lt;!--&lt;![endif]--&gt;
+&lt;/object&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://video.niallkennedy.com/presentations/2008/baychi.mov&quot; type=&quot;video/quicktime&quot; rel=&quot;alternate&quot; title=&quot;Better Design Through Code (H.264, AAC)&quot;&gt;Download in high resolution&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://video.niallkennedy.com/presentations/2008/baychi.ogv&quot; type=&quot;video/ogg&quot; rel=&quot;alternate&quot; title=&quot;Better Design Through Code (Ogg Theora)&quot;&gt;Download Ogg Theora version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I prefer recorded presentations to static shared slideshows. Each movie has &lt;abbr title=&quot;3rd Generation Partnership Project&quot;&gt;3GPP&lt;/abbr&gt; timed text chapters indexed by slide if you would like to jump ahead to a particular part of the presentation. The whole process is very experimental yet an interesting way to reach new audiences.&lt;/p&gt;
+
+&lt;h3 id=&quot;id-requests&quot;&gt;Classify incoming requests&lt;/h3&gt;
+
+&lt;p&gt;Incoming requests contain more than a domain and a path. Servers can listen to full request data and segment your audience based on key factors such as preferred language, browser capabilities, or requesting device such as a &lt;abbr title=&quot;television&quot;&gt;TV&lt;/abbr&gt; or mobile &lt;abbr title=&quot;telephone&quot;&gt;phone&lt;/abbr&gt;. Listening for key navigation clues reduces visitor input and delivers the best content possible quickly and easily.&lt;/p&gt;
+
+&lt;h3 id=&quot;location-filter&quot;&gt;Location filters&lt;/h3&gt;
+
+&lt;p&gt;Broad data options can be quickly narrowed through location-based targeting. Web sites can store simple lookup tables to identify the location of their audience at various confidence levels as broad as a home country or as specific as a postal code. New data-driven location services such as &lt;a href=&quot;http://code.google.com/apis/gears/api_geolocation.html&quot; title=&quot;Gears geolocation&quot;&gt;Gears&lt;/a&gt; or &lt;a href=&quot;http://loki.com/developers/documentation&quot; title=&quot;Loki API&quot;&gt;Loki&lt;/a&gt; offer even greater location precision by searching the local network for mapped devices on your local network, within radio range, or even receiving signals from &lt;acronym title=&quot;Global Positioning System&quot;&gt;GPS&lt;/acronym&gt; satellites.&lt;/p&gt;
+
+&lt;h3 id=&quot;software-detect&quot;&gt;Detecting installed software&lt;/h3&gt;
+
+&lt;p&gt;Software installed on our computers leave browser-addressable footprints in the form of &lt;acronym title=&quot;Multipart Internet Mail Extension&quot;&gt;MIME&lt;/acronym&gt; and &lt;acronym title=&quot;Uniform Resource Locator&quot;&gt;URL&lt;/acronym&gt; schemes meant to connect our browsers, webpage embeds, or downloaded files with the appropriate installed application. We can detect installed software on the requesting visitor&apos;s machine by testing these known &lt;acronym&gt;MIME&lt;/acronym&gt; footprints and establishing connections between our web application and the best possible handler on the client. Want to send a &lt;abbr title=&quot;photograph&quot;&gt;photo&lt;/abbr&gt; &lt;acronym title=&quot;Really Simple Syndication&quot;&gt;RSS&lt;/acronym&gt; feed to iPhoto without confusing your users with technical jargon? Test it. Need to communicate an physical address or seamlessly hand off a podcast subscription? Identify tethered &lt;acronym&gt;GPS&lt;/acronym&gt; or music players on your visitors&apos; machines and dynamically create links to desktop-addressable software from within your webpage.&lt;/p&gt;
+
+&lt;h3 id=&quot;website-detect&quot;&gt;Detect favorite websites&lt;/h3&gt;
+
+&lt;p&gt;The final part of my presentation focused on &lt;a href=&quot;http://www.niallkennedy.com/blog/2008/02/browser-history-sniff.html&quot;&gt;identifying the favorite websites and web services of a visiting user&lt;/a&gt; to improve site content. Browsers leave a history trail to help us quickly navigate to our favorite resources and identify previously viewed content. We can connect our audience to the web applications and services they care about by testing websites of interest against the current browser history and displaying the best activity prompts to each unique visitor.&lt;/p&gt;
+
+&lt;h3 id=&quot;baychi-summary&quot;&gt;Summary&lt;/h3&gt;
+
+&lt;p&gt;Every time a web page loads we throw out potentially useful data. With just a little effort we can thrill our users with custom, adaptive experiences based on their unique computing and personality profiles for increased engagement and conversions. This presentation outlines some of the reasonably easy methods of customization available to site owners seeking more intelligent methods of visitor interaction through smart server- and client-side applications.&lt;/p&gt;</content>
+<category term="programming" scheme="http://www.niallkennedy.com/blog/" label="Programming" /><category term="video" scheme="http://www.niallkennedy.com/blog/" label="Video" />
+<id>http://www.niallkennedy.com/blog/2008/10/better-design-through-code.html</id>
+<link rel="alternate" href="http://www.niallkennedy.com/blog/2008/10/better-design-through-code.html" type="text/html" hreflang="en" />
+<published>2008-10-04T01:00:00Z</published>
+<updated>2008-11-06T01:35:53Z</updated>
+<link rel="replies" type="application/atom+xml" href="http://www.niallkennedy.com/blog/2008/10/better-design-through-code.atom" thr:count="2" thr:updated="2008-10-30T07:01:14Z" />
+<link rel="enclosure" type="video/quicktime" href="http://video.niallkennedy.com/presentations/2008/baychi.mov" title="BayCHI presentation (H.264)" length="191231833"  />
+<link rel="enclosure" type="video/x-m4v" href="http://video.niallkennedy.com/presentations/2008/baychi.m4v" title="BayCHI presentation (iPhone)" length="137836999"  />
+<link rel="enclosure" type="video/ogg" href="http://video.niallkennedy.com/presentations/2008/baychi.ogv" title="BayCHI presentation (Ogg Theora)" length="207370670"  />
+</entry>
+
+<entry>
+<title>Inside the iPhone App Store acceptance process</title>
+<summary>Apple&apos;s relative secrecy regarding the iPhone platform and distribution policies have caused market uncertainties in need of some further clarity. In this post I will examine the iPhone OS 2.0 platform and the iPhone App Store from the point of view of Apple and other hosted storefront providers.</summary>
+<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.apple.com/iphone/appstore/&quot;&gt;Apple&apos;s iPhone &lt;acronym title=&quot;Operating System&quot;&gt;OS&lt;/acronym&gt; &lt;abbr title=&quot;Application&quot;&gt;App&lt;/abbr&gt; Store&lt;/a&gt; is a little over two months old and already the focus of both hype and fear among members of the press. &lt;a href=&quot;http://ifundvc.com/2008/09/15/launching-the-ifundvc-blog/&quot;&gt;&lt;acronym title=&quot;Kleiner Perkins Caufield and Byers&quot;&gt;KPCB&lt;/acronym&gt; has already invested more than $30 million&lt;/a&gt; through its iPhone-specific fund. Established companies are writing iPhone applications for the first time. A few applications have been banned, as expected with most platforms. Apple&apos;s relative secrecy regarding the iPhone platform and distribution policies have caused market uncertainties in need of some further clarity. In this post I will examine the iPhone &lt;acronym title=&quot;Operating System&quot;&gt;OS&lt;/acronym&gt; 2.0 platform and the iPhone &lt;abbr&gt;App&lt;/abbr&gt; Store from the point of view of Apple and other hosted storefront providers.&lt;/p&gt;
+
+&lt;p&gt;As I write this post there are over 3400 applications available from the iTunes &lt;abbr&gt;App&lt;/abbr&gt; Store. 90% of those &lt;abbr&gt;app&lt;/abbr&gt;s are available for both iPhone and iPod touch. 76% of &lt;abbr&gt;App&lt;/abbr&gt; Store listings require payment ($1 or more). Developers may distribute an iPhone &lt;acronym&gt;OS&lt;/acronym&gt; 2.0 application directly to handsets using their own infrastructure or distribute through Apple&apos;s App Store built-in to iTunes and iPhone &lt;acronym&gt;OS&lt;/acronym&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/09/iphone-app-store.html#appstore&quot;&gt;Inside the &lt;abbr&gt;App&lt;/abbr&gt; Store&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/09/iphone-app-store.html#podcaster&quot;&gt;Podcaster rejection&lt;/a&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/09/iphone-app-store.html#appstore-submit&quot;&gt;Submitting to &lt;abbr&gt;App&lt;/abbr&gt; Store&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/09/iphone-app-store.html#adhoc&quot;&gt;Ad-Hoc Distribution&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/09/iphone-app-store.html#appstore-summary&quot;&gt;Summary&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;appstore&quot;&gt;Inside the &lt;abbr&gt;App&lt;/abbr&gt; Store&lt;/h3&gt;
+
+&lt;p&gt;Apple&apos;s iPhone &lt;abbr title=&quot;application&quot;&gt;App&lt;/abbr&gt; Store connects developers large and small to millions of iPhone &lt;acronym&gt;OS&lt;/acronym&gt; devices around the world. Apple handles payment processing, international business licenses, distribution, marketing, and delivery of applications to iPhone and iPod Touch devices over WiFi, cellular data, and tethered experiences. &lt;abbr&gt;App&lt;/abbr&gt; developers may list items for sale in Apple&apos;s &lt;abbr&gt;App&lt;/abbr&gt; Store in exchange for a consignment fee of 30%.&lt;/p&gt;
+
+&lt;p&gt;Carrying third-party content inside your store and on your devices does carry some risk. Developers pay to access the iPhone developer program, sign their applications with unique keys, and assume some of the support burden for their applications. There are a few obvious reasons why a platform such as iPhone might choose not to carry an application in its storefront:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Chargeback&quot;&gt;Chargebacks&lt;/a&gt;. Buyers frequently return your product for reasons including buyer&apos;s remorse or just receiving a different product than they expected. The &quot;I Am Rich&quot; $1000 iPhone &lt;abbr&gt;app&lt;/abbr&gt; carries a heavy chargeback risk.&lt;/li&gt;
+&lt;li&gt;Insufficient differentiation. &lt;abbr&gt;App&lt;/abbr&gt; authors should be able to submit an application to &lt;abbr&gt;App&lt;/abbr&gt; Store and expect there won&apos;t be a knock-off product sold directly alongside. Open-source applications can swap out an application title and submit the &lt;abbr&gt;app&lt;/abbr&gt; as their own without adding new functionality.&lt;/li&gt;
+&lt;li&gt;Misleading marketing, including trademarks. Don&apos;t misrepresent yourself or your product or cause obvious confusion.&lt;/li&gt;
+&lt;li&gt;Horrible customer experience. &lt;a href=&quot;http://developer.apple.com/business/aida.html&quot;&gt;Apple will recommend interface designers&lt;/a&gt; who can assist you with visual aspects of your application. Long load times or heavy resource utilization might will make both you and the platform look bad.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;podcaster&quot;&gt;Podcaster rejection&lt;/h3&gt;
+
+&lt;p&gt;The Podcaster application was initially rejected for redistribution through Apple&apos;s iPhone &lt;abbr&gt;App&lt;/abbr&gt;. I downloaded a copy of the &lt;abbr&gt;app&lt;/abbr&gt;, version 1.0.9b, directly from the developer, installed it on my iPhone, and reviewed the &lt;abbr&gt;app&lt;/abbr&gt; from the point of view of the Apple based on existing publications and guidelines.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;img alt=&quot;Podcaster navigation screen&quot; src=&quot;http://static.niallkennedy.com/blog/img/podcaster_nav.png&quot; width=&quot;320&quot; height=&quot;459&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;Navigating the tab bar to content sections such as newest podcasts or featured podcasts brings up a splash advising &lt;strong&gt;3-5 minute wait times&lt;/strong&gt; before content is returned. &lt;span style=&quot;color:red&quot;&gt;Red flag.&lt;/span&gt; My previous search input does not disappear when I change navigation modes.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;img alt=&quot;Podcaster for iPhone add podcast confirmation&quot; src=&quot;http://static.niallkennedy.com/blog/img/podcaster_confirm.png&quot; width=&quot;320&quot; height=&quot;459&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;The developer used a single button action sheet with a vibration action to confirm each new podcast download. Apple adds a badge to the Downloads tab for a similar action in iTunes. The user has to dismiss a confirmation sheet for every new addition.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;http://static.niallkennedy.com/blog/img/podcaster_comparison.png&quot; type=&quot;image/png&quot;&gt;&lt;img alt=&quot;Podcaster 1.0.9 compared to iPod podcasts 2.1&quot; src=&quot;http://static.niallkennedy.com/blog/img/podcaster_comparison_430.png&quot; width=&quot;430&quot; height=&quot;308&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Pictured above is a view of the same podcast in Podcaster and iPod. Duplicate functionality when tethered but Podcaster does provide over-the-air updates direct from the handset. Podcaster has some obvious errors with text display in the regular table view but the display does work. Displaying the sound disclosure indicator on every row is a bit overkill: Apple only includes this disclosure indicator when the audio file is currently playing. Small fit and polish issue.&lt;/p&gt;
+
+&lt;h4 id=&quot;appstore-submit&quot;&gt;Submitting to &lt;abbr&gt;App&lt;/abbr&gt; Store&lt;/h4&gt;
+
+&lt;p&gt;Podcaster submitted the first release candidate of their iPhone application to &lt;a href=&quot;https://itunesconnect.apple.com/&quot;&gt;iTunes Connect&lt;/a&gt;, App Store&apos;s web-based management tool, &lt;a href=&quot;http://twitter.com/iPhonePodcaster/statuses/888084758&quot;&gt;on August 14&lt;/a&gt;. Application release notes are available through &lt;a href=&quot;http://twitter.com/iphonepodcaster&quot; title=&quot;iPhonePodcaster&quot;&gt;the developer&apos;s Twitter feed&lt;/a&gt;. The version submitted to Apple in mid-August had problems downloading and playing many podcasts including FeedBurner&apos;s redirect &lt;acronym title=&quot;Uniform Resource Locator&quot;&gt;URL&lt;/acronym&gt;s or large downloads (likely a &lt;a href=&quot;http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35&quot;&gt;Range&lt;/a&gt; issue). On September 12 Podcaster heard back from Apple regarding their App Store submission. The $4.95 application was not accepted for distribution through &lt;abbr&gt;App&lt;/abbr&gt; because it &lt;q cite=&quot;http://almerica.blogspot.com/2008/09/podcaster-rejeceted-because-it.html&quot;&gt;it duplicates the functionality of the Podcast section of iTunes.&lt;/q&gt;&lt;/p&gt;
+
+&lt;p&gt;The developers resubmitted Podcaster to iTunes Connect on September 13 with a new description before launching a media campaign and ad-hoc distribution.&lt;/p&gt;
+
+&lt;h3 id=&quot;adhoc&quot;&gt;Ad-Hoc Distribution&lt;/h3&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;img alt=&quot;iPhone application distribution&quot; src=&quot;http://static.niallkennedy.com/blog/img/iphone_codesign.png&quot; width=&quot;369&quot; height=&quot;199&quot; /&gt;&lt;/div&gt;
+
+&lt;p&gt;Apple designed &lt;a href=&quot;http://developer.apple.com/iphone/manage/distribution/distribution.action&quot; title=&quot;iPhone ad-hoc distribution&quot;&gt;Ad-Hoc distribution&lt;/a&gt; for direct distribution of iPhone &lt;acronym&gt;OS&lt;/acronym&gt; applications. Each application build is limited to 100 provisioned handsets. Ad-Hoc distribution is a primary distribution mechanism for beta testers, classrooms, workshops, or corporate environments that do not desire worldwide distribution through &lt;abbr&gt;App&lt;/abbr&gt; Store.&lt;/p&gt;
+
+&lt;p&gt;As of yesterday afternoon Podcaster had provisioned 1130 devices for distribution across &lt;a href=&quot;http://code.google.com/p/nativepodcaster/downloads/list&quot;&gt;12 different copies of the application hosted on Google Code&lt;/a&gt;. Each new uploaded build included up to new 100 authorized devices after the publisher received payment via PayPal. It&apos;s stretching the Ad-Hoc distribution model a bit but the application may have collected approximately $11,000 over the weekend through suggested donations of $10 per handset. At the time of writing Apple has not pulled the application or developer certificates from their central certificate authority.&lt;/p&gt;
+
+&lt;h3 id=&quot;appstore-summary&quot;&gt;Summary&lt;/h3&gt;
+
+&lt;p&gt;It&apos;s not always clear what Apple is up to but there are legitimate reasons to not carry an item for sale in your store. iPhone &lt;acronym&gt;OS&lt;/acronym&gt; will continue to be a popular development platform even if Apple is overwhelmed with interest and developer support. The best developer information comes from within the confines of &lt;acronym title=&quot;Apple Developer Connection&quot;&gt;ADC&lt;/acronym&gt;, &lt;abbr title=&quot;Apple Worldwide Developers Conference&quot;&gt;WWDC&lt;/abbr&gt;, and iPhone developer programs, and other privileged access forums restricted by Apple and its partners.&lt;/p&gt;</content>
+<category term="business" scheme="http://www.niallkennedy.com/blog/" label="Business" /><category term="software/mac" scheme="http://www.niallkennedy.com/blog/" label="Mac" />
+<id>http://www.niallkennedy.com/blog/2008/09/iphone-app-store.html</id>
+<link rel="alternate" href="http://www.niallkennedy.com/blog/2008/09/iphone-app-store.html" type="text/html" hreflang="en" />
+<published>2008-09-16T23:00:00Z</published>
+<updated>2008-09-17T00:12:31Z</updated>
+<link rel="replies" type="application/atom+xml" href="http://www.niallkennedy.com/blog/2008/09/iphone-app-store.atom" thr:count="9" thr:updated="2008-09-18T19:06:44Z" />
+</entry>
+
+<entry>
+<title>The story behind Google Chrome</title>
+<summary>Google released its second web browser yesterday afternoon, adding additional headroom for web applications stretching the limits of what it&apos;s possible to accomplish within a web browser. The Google Chrome team assembled domain experts in various fields over the past six years, both through direct hires and acquisitions, to create a new browser and its critical components from scratch. GMail and Google Maps pushed the Web to its limits, taking advantage of browser technologies invented in Redmond but left dormant for far too long. Contributing to Firefox&apos;s core, writing browser extensions, and championing HTML could only take the $150 billion company so far: they needed to own the full browser to push their Web efforts forward at full speed.</summary>
+<content type="html">&lt;div style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;http://flickr.com/photos/niallkennedy/2822210793/&quot;&gt;&lt;img alt=&quot;Ben Goodger and Google Chrome&quot; src=&quot;http://farm4.static.flickr.com/3017/2822210793_7270a7d96b.jpg&quot; width=&quot;430&quot; height=&quot;238&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Google released its second web browser yesterday afternoon, adding additional headroom for web applications stretching the limits of what it&apos;s possible to accomplish within a web browser. The &lt;a href=&quot;http://www.google.com/chrome&quot;&gt;Google Chrome&lt;/a&gt; team assembled domain experts in various fields over the past six years, both through direct hires and acquisitions, to create a new browser and its critical components from scratch. GMail and Google Maps pushed the Web to its limits, taking advantage of browser technologies invented in Redmond but left dormant for far too long. Contributing to Firefox&apos;s core, writing browser extensions, and championing &lt;abbr title=&quot;Hypertext Markup Language&quot;&gt;HTML&lt;/abbr&gt; could only take the $150 billion company so far: they needed to own the full browser to push their Web efforts forward at full speed.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;#frustrations&quot;&gt;Growing Frustrations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#acquisitions&quot;&gt;Acquisition Boost&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#scratch&quot;&gt;A New Browser from Scratch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#v8&quot;&gt;Rev your JavaScript Engines&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#team&quot;&gt;Meet the Team&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#chrome-summary&quot;&gt;Summary&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;frustrations&quot;&gt;Growing Frustrations&lt;/h3&gt;
+
+&lt;p&gt;Brian Rakowski joined Google in July 2002 as the company&apos;s first associate product manager. His first assignment? Launch GMail with features and responsiveness to rival desktop mail clients. Gmail tapped into relatively dormant browser features such as XMLHttpRequest, sockets, prefetch, and more to create a web applications stretching the limits of what was possible inside web browsers of 2004. Today&apos;s Gmail continues to run into a browser&apos;s limits, setting &lt;a href=&quot;http://gmailblog.blogspot.com/2007/10/code-changes-to-prepare-gmail-for.html&quot; title=&quot;Gmail 2.0 browsers&quot;&gt;minimum requirements of Internet Explorer 7+ and Firefox 2+&lt;/a&gt;. Google web &lt;abbr title=&quot;applications&quot;&gt;apps&lt;/abbr&gt; teams such as Maps and Mail continually bump their heads against the latest capabilities of web browsers and in some cases invent their own runtimes.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://ian.hixie.ch/&quot;&gt;Ian Hickson&lt;/a&gt; first learned the inner workings of web browsers while an intern at Netscape. After working on Opera for a few years and creating tests for Firefox Ian joined Google to continue his work on new browser features. &lt;a href=&quot;http://www.w3.org/html/wg/html5/&quot;&gt;HTML5&lt;/a&gt; and &lt;a href=&quot;http://www.acidtests.org/&quot;&gt;browser compliance &quot;acid&quot; tests&lt;/a&gt; are significant attempts by Ian and others to redefine Web browsers through &lt;abbr title=&quot;specifications&quot;&gt;specs&lt;/abbr&gt;, test, and implementations but until now Google could only offer development help and browser extensions such as Gears to accelerate browser capabilities.&lt;/p&gt;
+
+&lt;p&gt;Google extended what it could not immediately add to the browser core. &lt;a href=&quot;http://gears.google.com/&quot;&gt;Gears&lt;/a&gt; for new application functionality on multiple browsers. &lt;a href=&quot;http://www.google.com/tools/firefox/browsersync/&quot;&gt;Browser Sync&lt;/a&gt; to synchronize browser settings and data across multiple computers. &lt;a href=&quot;http://www.google.com/tools/firefox/safebrowsing/&quot;&gt;Safe Browsing&lt;/a&gt; to create more web trust. Teams from each of these extensions are now working on Google Chrome.&lt;/p&gt;
+
+&lt;h3 id=&quot;acquisitions&quot;&gt;Acquisition Boost&lt;/h3&gt;
+
+&lt;p&gt;Google released its first official Web browser on August 18, 2008 with &lt;a href=&quot;http://android-developers.blogspot.com/2008/08/announcing-beta-release-of-android-sdk.html&quot;&gt;the beta release of the Android mobile operating system&lt;/a&gt;. Google acquired Android in August 2005 to establish a foot-hold on the fastest growing computer (and Web) market: mobile handsets. Android highlights Google&apos;s web properties through its &lt;a href=&quot;http://webkit.org/&quot;&gt;WebKit&lt;/a&gt;-based browser and dependent applications. &lt;a href=&quot;http://www.financialpost.com/story.html?id=c4f6f084-d72f-43ea-8a82-affe38df3830&amp;amp;k=58579&quot;&gt;Google acquired Ottawa-based Reqwireless&lt;/a&gt; and its mobile web browser in the summer of 2005 to team up with the Android team on its web interface. Web views are an integral part of Android and Google Chrome shares much of Android&apos;s code, including its graphics engine.&lt;/p&gt;
+
+&lt;p&gt;Google Chrome and Android both take advantage of the Skia vector graphics library developed by a small company in North Carolina &lt;a href=&quot;http://localtechwire.com/business/local_tech_wire/news/story/1126258/&quot; title=&quot;Google Skia acquisition&quot;&gt;Google acquired in 2005&lt;/a&gt;. The Skia team formerly worked on Openwave&apos;s popular mobile browser&apos;s graphics engine. &lt;a href=&quot;http://src.chromium.org/viewvc/chrome/trunk/src/skia/&quot;&gt;Google Chrome browser includes Skia&lt;/a&gt; graphics engine ports for Windows, Mac, and Linux.&lt;/p&gt;
+
+&lt;p&gt;Google acquired application security company &lt;a href=&quot;http://www.greenborder.com/&quot;&gt;GreenBorder&lt;/a&gt; in May 2007. GreenBorder technology automatically sandboxes web code and network traffic by creating a bridge between applications. The GreenBorder technology isolated Internet Explorer or Firefox instances into a &quot;sandbox&quot; inside virtual machine instances. These sandboxes form the code isolation layers of Google Chrome, protecting other tabs and the parent operating system from the code executing on each web page.&lt;/p&gt;
+
+&lt;h3 id=&quot;scratch&quot;&gt;A New Browser from Scratch&lt;/h3&gt;
+
+&lt;p&gt;Ben Goodger, Google Chrome&apos;s &lt;abbr title=&quot;technology&quot;&gt;tech&lt;/abbr&gt; lead, is best known for assembling the &lt;a href=&quot;http://www.mozilla.com/firefox/&quot;&gt;Firefox web browser&lt;/a&gt; out of &lt;a href=&quot;http://www.seamonkey-project.org/&quot;&gt;Mozilla&apos;s SeaMonkey application suite&lt;/a&gt;. &lt;a href=&quot;http://bengoodger.com/work-resources/secretprojects/manticore/&quot;&gt;Manticore&lt;/a&gt;, &lt;a href=&quot;http://www.caminobrowser.org/&quot;&gt;Camino&lt;/a&gt;, and later Firefox were all &lt;a href=&quot;http://weblogs.mozillazine.org/ben/archives/009698.html&quot;&gt;attempts in 2001 to rethink the Web browser for the modern age&lt;/a&gt;. Browsing took center stage away from a communications suite, user interfaces reimagined for Web efficiency, and (some) legacy cruft tossed to the side. Google hired Ben in 2005 to strengthen its own browser contributions and eventually fully rearchitect a web browser for the modern Web.&lt;/p&gt;
+
+&lt;p&gt;Google hired top Firefox developers in 2005 and 2006 such as Darin Fisher, Pam Greene, and Brian Ryner. In Spring 2006 the team began work on a new browser prototype built on top of WebKit designed for broadband-connected, always-on, web applications such as Gmail or Google Maps. Could the browser experts give web apps some breathing room?&lt;/p&gt;
+
+&lt;p&gt;Modern computers feature multi-core multi-gigahertz &lt;acronym title=&quot;Central Processing Unit&quot;&gt;CPU&lt;/acronym&gt;s, gigabytes of memory, megabits of bandwidth, and bulky hard drives. Our web browsers should separate browser tabs into their own processes, multi-thread all communications with the operating system, boost cache sizes, and not be afraid to command more bandwidth when available. Internet Explorer 8, Firefox 3.1, and Apple Safari are taking fresh approaches to web browsers for modern machines but Google Chrome has the advantage of a fresh start to achieve some features not currently possible in other browser architectures.&lt;/p&gt;
+
+&lt;p&gt;Features such as tab-isolation and task monitoring are difficult tasks to add inside an existing browser architecture of shared run-times and window models (&lt;a href=&quot;http://ejohn.org/blog/google-chrome-process-manager/&quot;&gt;as John Resig mentioned&lt;/a&gt;). Internet Explorer 8&apos;s Loosely Coupled &lt;acronym title=&quot;Internet Explorer&quot;&gt;IE&lt;/acronym&gt; partially abstracts browser tab instances and the industry is generally headed in this direction.&lt;/p&gt;
+
+&lt;p&gt;Web application-specific resource monitoring should motivate more websites to reduce their browser bloat now that they&apos;ve been identified. Individual users can also compare web application resource usage directly with their desktop counterparts.&lt;/p&gt;
+
+&lt;h3 id=&quot;v8&quot;&gt;Rev your JavaScript Engines&lt;/h3&gt;
+
+&lt;p&gt;Lars Bak and his team in Århus, Denmark have spent many years writing virtual machines: the run-times that translate programming code into machine code. Lars wrote Sun&apos;s Java &lt;acronym title=&quot;Virtual Machine&quot;&gt;VM&lt;/acronym&gt;, HotSpot, and later slimmed down the &lt;acronym&gt;VM&lt;/acronym&gt; for &lt;abbr title=&quot;Java 2 Micro Edition&quot;&gt;J2ME&lt;/abbr&gt; (&lt;acronym title=&quot;Connected Limited Device Configuration&quot;&gt;CLDC&lt;/acronym&gt; &lt;acronym title=&quot;HotSpot Implementation&quot;&gt;HI&lt;/acronym&gt; &lt;a href=&quot;http://java.sun.com/products/cldc/wp/ProjectMontyWhitePaper.pdf&quot; type=&quot;application/pdf&quot; title=&quot;Sun CLDC HI project Monty&quot;&gt;project Monty&lt;/a&gt;). A few years ago Lars and his team in Denmark began work on a new interpreted JavaScript engine optimized for x86 and ARM architectures.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://code.google.com/apis/v8/design.html&quot;&gt;The V8 engine&lt;/a&gt; is specifically tuned for recursive JavaScript tasks, optimizing commonly used components of your application. V8 is multi-threaded, opening up new parallel processing on multiple computing cores. V8 guesses how you might use your JavaScript code, and backtracks over any faulty assumptions. It&apos;s just one of the new engines we&apos;ll see inside our web browsers by the end of 2008.&lt;/p&gt;
+
+&lt;p&gt;Google Chrome could have used the same JavaScript interpreter as its WebKit rendering engine (&lt;a href=&quot;http://webkit.org/projects/javascript/&quot;&gt;JavaScriptCore&lt;/a&gt;, &lt;a href=&quot;http://webkit.org/blog/189/announcing-squirrelfish/&quot;&gt;SquirrelFish&lt;/a&gt;) but the team had an opportunity, and the funding, to rewrite an interpreter from scratch for desktop and mobile runtimes.&lt;/p&gt;
+
+&lt;p&gt;The V8 engine enables new feature sets for Google&apos;s web applications such as Gmail and Google Maps. Web application developers avoid adding features that visibly slow down browsers or cause processing pauses in your application experience. New speed in new areas adds functionality to existing &lt;abbr&gt;apps&lt;/abbr&gt;. Google programmers should create more efficient code, tested against multiple interpreters, and optimized for modern computers as a result of V8. Even if Google Chrome gains no significant browser market share I still expect it will be the best single-site browser for Google web applications.&lt;/p&gt;
+
+&lt;p&gt;Google Chrome adds additional JavaScript functionality through &lt;a href=&quot;http://gears.google.com/&quot; title=&quot;Gears project&quot;&gt;Gears&lt;/a&gt;. Gears is bundled with every Chrome install, adding new features to the web browser faster than previous plugins. The Gears libraries include support for new local cache structures, local databases, location data, background tasks, and file handling. Chrome boosts the available Gears footprint for web developers, including Google&apos;s own &lt;abbr&gt;apps&lt;/abbr&gt; such as Google Reader and Google Docs (and my blog). The current Gears code included in Chrome replicates V8 and sqlite code already present in the browser, a bolt-on that will hopefully be integrated in the near future.&lt;/p&gt;
+
+&lt;p&gt;Chrome, V8, and Gears will be a new testing ground for Google&apos;s &lt;abbr&gt;HTML&lt;/abbr&gt;5 efforts, winning a new seat at the table as an implementor with upstream standards groups such as &lt;abbr title=&quot;World Wide Web Consortium&quot;&gt;W3C&lt;/abbr&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;team&quot;&gt;Meet the Team&lt;/h3&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;http://flickr.com/photos/niallkennedy/2823089966/&quot;&gt;&lt;img alt=&quot;Google Chrome team leads&quot; src=&quot;http://farm4.static.flickr.com/3067/2823089966_94be776a92.jpg&quot; width=&quot;430&quot; height=&quot;156&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;I am tracking at least 20 people involved in the Google Chrome project across Google. I&apos;m sure &lt;a href=&quot;http://code.google.com/chromium/&quot;&gt;Chromium&lt;/a&gt; commit logs will reveal even more (&lt;strong&gt;update:&lt;/strong&gt; &lt;a href=&quot;http://www.niallkennedy.com/blog/2008/09/google-chrome-team.html&quot; title=&quot;Google Chrome staff&quot;&gt;more complete list here&lt;/a&gt;), but below is a quick summary of Chrome staff.&lt;/p&gt;
+
+&lt;dl&gt;
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Brian Rakowski&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Lead Product Manager&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Brian was Google&apos;s first associate product manager in 2002, assigned to Gmail. He later worked on the &lt;a href=&quot;http://www.google.com/tools/firefox/browsersync/&quot;&gt;Google Browser Sync&lt;/a&gt; Firefox plugin.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Ben Goodger&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Ben is the former Firefox 1.0 project lead. He also authored the Firefox extensions system. He joined Google as 2005.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Mike Pinkerton&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Technical Lead&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Mike is one of the Google team members responsible for bringing Chrome to the Mac. Mike worked at Netscape and later on the Gecko-powered AOL client before co-founding the Camino project. Mike joined Google in September 2005 and continues to lead Camino development.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Darin Fisher&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Darin was a frequent contributor to the Firefox codebase. He specialized in network libraries, cookies and permissions, and the &lt;a href=&quot;http://www.mozilla.org/projects/nspr/&quot;&gt;Netscape Portable Runtime&lt;/a&gt;. Darin joined Google in 2005.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Lars Bak&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;, &lt;span class=&quot;organization-unit&quot;&gt;V8&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Lars was the core developer on Java HotSpot &lt;acronym&gt;VM&lt;/acronym&gt; and Monty &lt;acronym&gt;VM&lt;/acronym&gt; in &lt;abbr&gt;J2ME&lt;/abbr&gt; for Sun. He co-founded object-oriented VM companies for embedded devices before joining Google. Lars worked on V8 from a farm in Århus, Denmark before moving the team to university offices.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Kasper Lund&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;, &lt;span class=&quot;organization-unit&quot;&gt;V8&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Kasper shares a long history with Lars Bak working on virtual machines.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Brian Ryner&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Brian is a former contributor to Firefox where he added mousewheel support, tweaked the Gecko rendering engine core, password management, and Linux installers.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Pam Greene&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Pam is a long time Firefox contributor. She added OpenSearch to the browser and contributed to full-text search in Places/AwesomeBar.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Ian Fette&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Product Manager&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Ian is a former Firefox contributor who worked on anti-phishing, anti-malware, spelling correction, and the &lt;a href=&quot;http://code.google.com/apis/safebrowsing/&quot;&gt;Safe Browsing &lt;acronym&gt;API&lt;/acronym&gt;&lt;/a&gt;.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Arnaud Weber&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Arnaud is a former Director of Research and Development at Netscape and Borland before joining Google to work on a &quot;secret project&quot; in September 2006.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Brett Wilson&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Brett formerly worked on the Google Toolbar. He contributed to Firefox history and bookmarks functionality.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Mike Belshe&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Mike helped write an Outlook add-on called Chrome for Lookout Software before being acquired by Microsoft. Mike also formerly worked at Netscape and Good Technology.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Huan Ren&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Huan works on network flow control, negotiating browser interactions with network resources. Huan formerly worked at Microsoft.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Erik Kay&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Erik formerly worked on the &lt;a href=&quot;http://avantgo.com/&quot;&gt;AvantGo&lt;/a&gt; browser, &lt;a href=&quot;http://qurb.com/products/antispam.php&quot;&gt;Qurb anti-spam software&lt;/a&gt; for Outlook and Outlook Express.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Glen Murphy&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Glen specializes in user interface design. He previously worked on user interface. Firefox extensions. Google Browser Sync, Google Blog Search&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Evan Martin&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Evan writes automated testing tools for Chrome and the Web.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;John Abd-El-Malek&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;John is part of the Windows specialist team at Google bringing Google Desktop, Google Talk , and &lt;a href=&quot;http://code.google.com/p/google-breakpad/&quot;&gt;Breakpad&lt;/a&gt; onto Windows XP and Windows Vista.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Amanda Walker&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Amanda is one of the people responsible for Chrome&apos;s upcoming Mac version.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Mark Mentovai&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Mark was heavily involved in moving Firefox for Mac to its current Intel-based architecture. He has worked on the Breakpad project and many levels of Chrome&apos;s code.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Carlos Pizano&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Carlos formerly worked on GreenBorder and continues to work on Chrome sandboxing.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Mark Larson&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Program Manager&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Mark is also formerly of GreenBorder and its sandboxing specialties.&lt;/dd&gt;
+
+&lt;dt class=&quot;vcard&quot;&gt;&lt;span class=&quot;fn&quot;&gt;Aaron Boodman&lt;/span&gt;, &lt;span class=&quot;title&quot;&gt;Software Engineer&lt;/span&gt;, &lt;span class=&quot;organization-unit&quot;&gt;Gears&lt;/span&gt;&lt;/dt&gt;
+&lt;dd&gt;Aaron improves user experience with JavaScript. He&apos;s best known for his work on Gmail, &lt;a href=&quot;https://addons.mozilla.org/firefox/addon/748&quot;&gt;Greasemonkey&lt;/a&gt;, and &lt;a href=&quot;http://gears.google.com/&quot;&gt;Gears&lt;/a&gt;.&lt;/dd&gt;
+&lt;/dl&gt;
+
+
+&lt;h3 id=&quot;chrome-summary&quot;&gt;Summary&lt;/h3&gt;
+
+&lt;p&gt;&lt;img class=&quot;floatright&quot; alt=&quot;Google Chrome logo&quot; src=&quot;http://static.niallkennedy.com/blog/img/google-chrome.png&quot; width=&quot;128&quot; height=&quot;128&quot; /&gt; Google&apos;s business depends on the speed and availability of Web access to search, advertising, and applications. Chrome is Google&apos;s second attempt to better control the front-door to its content with full applications optimized for its heavy &lt;abbr&gt;apps&lt;/abbr&gt;. Google Chrome builds on top of the work of Android by adding individual applications to already popular operating systems. Google has flirted with the idea of its own web browser for many years but has only recently released working implementations of its own full browser applications.&lt;/p&gt;
+
+&lt;p&gt;Android, Chrome, and Gears will continue to grow in unison and extend individual pieces into established operating systems. Google is building a new suite of application extraction layers that should have strong leverage across Windows, Mac, and Linux to directly control the company&apos;s destiny on these platforms.&lt;/p&gt;
+
+&lt;p&gt;It&apos;s an exciting time for new browser technologies as Internet Explorer, Firefox, and WebKit each compete over standards implementations and performance. Officially adding Google Chrome to the browser space only strengthens Google&apos;s position strengthening the future web and delivers strong single site browsing experiences for their core web applications.&lt;/p&gt;</content>
+<category term="search/google" scheme="http://www.niallkennedy.com/blog/" label="Google" /><category term="software" scheme="http://www.niallkennedy.com/blog/" label="Software" /><category term="programming/web-services" scheme="http://www.niallkennedy.com/blog/" label="Web services" />
+<id>http://www.niallkennedy.com/blog/2008/09/google-chrome.html</id>
+<link rel="alternate" href="http://www.niallkennedy.com/blog/2008/09/google-chrome.html" type="text/html" hreflang="en" />
+<published>2008-09-03T22:02:22Z</published>
+<updated>2008-09-06T07:45:22Z</updated>
+<link rel="replies" type="application/atom+xml" href="http://www.niallkennedy.com/blog/2008/09/google-chrome.atom" thr:count="17" thr:updated="2008-09-29T04:17:43Z" />
+</entry>
+
+<entry>
+<title>Internet Explorer 8 Search Suggestions</title>
+<summary>Microsoft has extended the OpenSearch protocol with a new search suggestions data formats expressed XML or JSON. The new format will display real-time search results, summaries, images, and even search result classifications inside the browser chrome for any site owner supplying the appropriate format. In this post I&apos;ll teach you how to add search suggestions to your OpenSearch description document for instant search suggestions in IE8.</summary>
+<content type="html">&lt;p&gt;Microsoft released a second beta of its upcoming Internet Explorer 8 browser yesterday afternoon. The new browser will reach full release by the end of the year, changing the way most Windows users view the Web. There are many new features of &lt;acronym title=&quot;Internet Explorer&quot;&gt;IE&lt;/acronym&gt; 8 for web developers, including completely new ways to light up the browser chrome. Microsoft has extended the &lt;a href=&quot;http://www.opensearch.org/&quot;&gt;OpenSearch protocol&lt;/a&gt; with a new search suggestions data formats expressed &lt;abbr title=&quot;eXtensible Markup Language&quot;&gt;XML&lt;/abbr&gt; or &lt;abbr title=&quot;JavaScript Object Notation&quot;&gt;JSON&lt;/abbr&gt;. The new format will display real-time search results, summaries, images, and even search result classifications inside the browser chrome for any site owner supplying the appropriate format. In this post I&apos;ll teach you how to add search suggestions to your OpenSearch description document for &lt;a href=&quot;http://www.microsoft.com/windows/internet-explorer/beta/features/instant-search.aspx&quot;&gt;instant search suggestions in &lt;acronym&gt;IE&lt;/acronym&gt;8&lt;/a&gt;.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/08/ie8-search-suggestions.html#suggest-search&quot;&gt;Search Suggestions&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/08/ie8-search-suggestions.html#suggest-format&quot;&gt;Suggestions Format&lt;/a&gt;&lt;ol&gt;&lt;li&gt;&lt;a href=&quot;#suggest-elements&quot;&gt;Quick element definitions&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/08/ie8-search-suggestions.html#suggest-summary&quot;&gt;Summary&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;img alt=&quot;IE8 instant search Wikipedia&quot; src=&quot;http://static.niallkennedy.com/blog/img/ie8-instant-search.jpg&quot; width=&quot;400&quot; height=&quot;434&quot; /&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;suggest-search&quot;&gt;Search Suggestions&lt;/h3&gt;
+
+&lt;p&gt;Internet Explorer&apos;s Instant Search provides suggestions based on text already entered into the search box. The functionality is very similar to &lt;a href=&quot;http://www.google.com/webhp?complete=1&quot;&gt;Google Suggest&lt;/a&gt; and &lt;a href=&quot;http://www.google.com/complete/search?hl=en&amp;amp;qu=foo&quot; type=&quot;text/javascript&quot; title=&quot;Google Suggest JavaScript&quot; rel=&quot;nofollow&quot;&gt;its JavaScript feed&lt;/a&gt; expanded for multiple categories, graphics, and short descriptions.&lt;/p&gt;
+
+&lt;p&gt;The new format covers search &lt;em&gt;suggestions&lt;/em&gt; and not necessarily search &lt;em&gt;results&lt;/em&gt;. Syndicated search results should continue to be exposed as a &lt;code&gt;Url&lt;/code&gt; element of attribute &lt;code&gt;type&lt;/code&gt; of Atom or &lt;abbr title=&quot;Really Simple Syndication&quot;&gt;RSS&lt;/abbr&gt;.&lt;/p&gt;
+
+&lt;p&gt;Search suggestion data files are &lt;a href=&quot;http://msdn.microsoft.com/en-us/library/cc848862.aspx#dev_offersugg&quot;&gt;exposed through a new &lt;acronym title=&quot;Multipart Internet Mail Extension&quot;&gt;MIME&lt;/acronym&gt; type&lt;/a&gt; referenced in a OpenSearch descriptor&apos;s Url element: &lt;code&gt;application/x-suggestions+xml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;samp&gt;&amp;lt;Url type=&quot;application/x-suggestions+xml&quot; template=&quot;http://example.org/suggest?q={searchTerms}&quot; /&amp;gt;&lt;/samp&gt;
+
+&lt;p&gt;Suggestions &lt;acronym&gt;URL&lt;/acronym&gt;s &lt;strong&gt;should&lt;/strong&gt; follow the same fill-in-the-blank parameters defined by OpenSearch such as result count or language scope.&lt;/p&gt;
+
+&lt;h3 id=&quot;suggest-format&quot;&gt;Suggestions Format&lt;/h3&gt;
+
+&lt;p&gt;How do you make your site light up with pretty pictures in the search box? Just &lt;a href=&quot;http://msdn.microsoft.com/en-us/library/cc848863.aspx&quot; title=&quot;Internet Explorer 8 Site Suggestions XML format&quot;&gt;add &lt;abbr&gt;XML&lt;/abbr&gt; descriptors of possible intended searches&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;samp&gt;&amp;lt;?xml version=&quot;1.0&quot;?&amp;gt;
+&amp;lt;SearchSuggestion&amp;gt;
+  &amp;lt;Query&amp;gt;ajax&amp;lt;/Query&amp;gt;
+  &amp;lt;Section&amp;gt;
+    &amp;lt;Separator title=&quot;Web Development&quot;/&amp;gt;
+    &amp;lt;Item&amp;gt;
+      &amp;lt;Text&amp;gt;AJAX Developer Center&amp;lt;/Text&amp;gt;
+      &amp;lt;Description&amp;gt;Asynchronous JavaScript and XML&amp;lt;/Description&amp;gt;
+      &amp;lt;Url&amp;gt;http://developer.mozilla.org/En/AJAX&amp;lt;/Url&amp;gt;
+      &amp;lt;Image source=&quot;http://example.org/ajax.jpg&quot; alt=&quot;AJAX Web Development&quot;
+             height=&quot;50&quot; width=&quot;50&quot; align=&quot;middle&quot;/&amp;gt;
+    &amp;lt;/Item&amp;gt;
+    &amp;lt;Separator title=&quot;Soccer&quot;/&amp;gt;
+    &amp;lt;Item&amp;gt;
+      &amp;lt;Text&amp;gt;AFC Ajax&amp;lt;/Text&amp;gt;
+      &amp;lt;Description&amp;gt;Amsterdamsche Football Club Ajax&amp;lt;/Description&amp;gt;
+      &amp;lt;Url&amp;gt;http://english.ajax.nl/&amp;lt;/Url&amp;gt;
+      &amp;lt;Image source=&quot;http://example.org/afcajax.jpg&quot; alt=&quot;AFC Ajax&quot;
+             height=&quot;50&quot; width=&quot;50&quot; align=&quot;middle&quot;/&amp;gt;
+    &amp;lt;/Item&amp;gt;
+    ...
+  &amp;lt;/Section&amp;gt;
+&amp;lt;/SearchSuggestion&amp;gt;
+&lt;/samp&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the example above I provided search suggestions broken into two sections with &lt;code&gt;Separator&lt;/code&gt;s: web development and soccer. Each section has a list of &lt;code&gt;Item&lt;/code&gt;s defining title text, a short summary, and a related image.&lt;/p&gt;
+
+&lt;p&gt;Internet Explorer 8 also supports results in &lt;abbr&gt;JSON&lt;/abbr&gt; format if you prefer.&lt;/p&gt;
+
+&lt;h4 id=&quot;suggest-elements&quot;&gt;Quick element definitions&lt;/h4&gt;
+
+&lt;dl&gt;
+  &lt;dt&gt;Separator&lt;/dt&gt;
+  &lt;dd&gt;A distinct grouping of your search result set. Correlates well with site categories.&lt;/dd&gt;
+  &lt;dt&gt;Item&lt;/dt&gt;
+  &lt;dd&gt;An individual result wrapper.&lt;/dd&gt;
+  &lt;dt&gt;Text&lt;/dt&gt;
+  &lt;dd&gt;Your result title. Internet Explorer will highlight text in your result title matching the text entered in the search box.&lt;/dd&gt;
+  &lt;dt&gt;Description&lt;/dt&gt;
+  &lt;dd&gt;A short summary of the search result. Similar to a &lt;abbr title=&quot;Hypertext Markup Language&quot;&gt;HTML&lt;/abbr&gt; &lt;code&gt;meta&lt;/code&gt; &lt;var&gt;description&lt;/var&gt; or search result snippets.&lt;/dd&gt;
+  &lt;dt&gt;Image&lt;/dt&gt;
+  &lt;dd&gt;An image you would like to display alongside the search result. &lt;a href=&quot;http://msdn.microsoft.com/en-us/library/cc848862.aspx#dev_dimensions&quot;&gt;Internet Explorer 8 will pass along height and widths in the drop-down configuration&lt;/a&gt; -- max width, row height, and section height -- if you setup a few extra parameters in your OpenSearch description. The image should be relatively small to fit alongside a search result title and description (~75&lt;abbr title=&quot;pixels&quot;&gt;px&lt;/abbr&gt;).&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;h3 id=&quot;suggest-summary&quot;&gt;Summary&lt;/h3&gt;
+
+&lt;p&gt;Internet Explorer 8 opens up more of the browser chrome to user search customizations including instant search suggestions. Webmasters can enhance their search results for supporting web browsers with suggested terms or results served directly within prime browser real estate. Images, highlighted text, and short summary will help your results stand out and should drive increased search usage by loyal customers.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://googlewebmastercentral.blogspot.com/2008/04/crawling-through-html-forms.html&quot;&gt;Google crawls web forms&lt;/a&gt; and I expect their search team will look for signals described on the page such as OpenSearch or site suggest to make an educated guess about the best ways to probe your site for deep results. Adding search suggest markups to your site could also help machines discover deeper content within your site among popular keywords.&lt;/p&gt;
+
+&lt;p&gt;Internet Explorer 8 just released beta 2 and these features are not frozen. Search suggestion &lt;abbr&gt;XML&lt;/abbr&gt; are a good feature to track for sites with deep content and engaged users.&lt;/p&gt;</content>
+<category term="search" scheme="http://www.niallkennedy.com/blog/" label="Search" /><category term="programming/web-services" scheme="http://www.niallkennedy.com/blog/" label="Web services" />
+<id>http://www.niallkennedy.com/blog/2008/08/ie8-search-suggestions.html</id>
+<link rel="alternate" href="http://www.niallkennedy.com/blog/2008/08/ie8-search-suggestions.html" type="text/html" hreflang="en" />
+<published>2008-08-28T21:06:39Z</published>
+<updated>2008-08-29T00:12:48Z</updated>
+<link rel="replies" type="application/atom+xml" href="http://www.niallkennedy.com/blog/2008/08/ie8-search-suggestions.atom" thr:count="0" />
+</entry>
+
+<entry>
+<title>Intel and Yahoo! announce Widget Channel for HDTV</title>
+<summary>The Internet is coming to your TV, reclaiming your split attention span from the other gadgets around the house. Intel announced its latest effort to power your living room yesterday with new media processors, reference designs, and software stacks that may eventually find their way into the cable boxes, Blu-ray players, and home media centers of 2010. Intel partnered with Yahoo! to deliver Internet-connected widgets, advertising, and content to potential partners with a software stack branded The Widget Channel. What new opportunities are available inside the Widget Channel platform? When is the right time to implement?</summary>
+<content type="html">&lt;div style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;http://www.flickr.com/photos/niallkennedy/2782668813/&quot; title=&quot;Flickr on Widget Channel&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3040/2782668813_eacd8305de.jpg&quot; width=&quot;430&quot; height=&quot;285&quot; alt=&quot;Flickr on Widget Channel&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;The Internet is coming to your &lt;abbr&gt;TV&lt;/abbr&gt;, reclaiming your split attention span from the other gadgets around the house. Intel announced its latest effort to power your living room yesterday with new media processors, reference designs, and software stacks that may eventually find their way into the cable boxes, Blu-ray players, and home media centers of 2010. Intel partnered with Yahoo! to deliver Internet-connected widgets, advertising, and content to potential partners with a software stack branded The Widget Channel. Yahoo! spent about two years customizing &lt;a href=&quot;http://widgets.yahoo.com/&quot;&gt;Yahoo! Widget Engine&lt;/a&gt; for high-definition televisions and hardware-accelerated graphics displays. Yahoo! will pitch its widget engine for televisions, display advertising integration, and customizable widget gallery to cable operators, television manufacturers, and other major consumer electronics companies as Yahoo! seeks a prominent role in &lt;a href=&quot;http://connectedtv.yahoo.com/&quot;&gt;what it calls the &quot;Cinematic Internet.&quot;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I visited the Intel Developer Forum in San Francisco yesterday for a first-hand look at the new prototype widgets platform. I was lucky enough to bump into &lt;a href=&quot;http://www.intel.com/pressroom/kits/bios/kim.htm&quot;&gt;Eric Kim&lt;/a&gt;, Intel&apos;s &lt;acronym title=&quot;Senior Vice President&quot;&gt;SVP&lt;/acronym&gt; and General Manager of the Digital Home group, and recorded a &lt;a href=&quot;http://niall.blip.tv/file/1191199/&quot;&gt;8-minute overview of Widget Channel&lt;/a&gt;. I&apos;ve embedded the walk-through below. &lt;a href=&quot;http://flickr.com/photos/niallkennedy/tags/widgetchannel/&quot;&gt;High-resolution snapshots of individual Widget Channel widgets&lt;/a&gt; are available on my Flickr account.&lt;/p&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;object type=&quot;video/x-m4v&quot; width=&quot;430&quot; height=&quot;323&quot; data=&quot;http://blip.tv/file/get/Niall-IntelWidgetChannel208.m4v&quot; standby=&quot;Loading QuickTime video&quot;&gt;&lt;param name=&quot;controller&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;autoplay&quot; value=&quot;false&quot; /&gt;&lt;object type=&quot;application/x-shockwave-flash&quot; width=&quot;430&quot; height=&quot;343&quot; data=&quot;http://blip.tv/play/ga4dyYp7AA&quot; standby=&quot;Loading Flash Player&quot;&gt;&lt;param name=&quot;allowfullscreen&quot; value=&quot;true&quot; /&gt;This &lt;a href=&quot;http://niall.blip.tv/file/1191199/&quot;&gt;video walk-through of Intel Widget Channel&lt;/a&gt; requires QuickTime or Flash Player for playback.&lt;/object&gt;&lt;/object&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/08/intel-widget-channel.html#channel-yahoo&quot;&gt;Yahoo! Widgets on &lt;abbr title=&quot;television&quot;&gt;TV&lt;/abbr&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/08/intel-widget-channel.html#channel-reference&quot;&gt;From reference design to reality&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/08/intel-widget-channel.html#channel-pieces&quot;&gt;Picking apart the pieces&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.niallkennedy.com/blog/2008/08/intel-widget-channel.html#channel-summary&quot;&gt;Summary&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;channel-yahoo&quot;&gt;Yahoo! Widgets on TV&lt;/h3&gt;
+
+&lt;p&gt;Widget developers may be already familiar with the Yahoo! Widget Engine, also known as Konfabulator. This desktop engine started out on the Mac, ported to Windows, and now runs inside the Linux-based Intel &lt;abbr&gt;TV&lt;/abbr&gt; platform. The Widget Engine team is a part of Yahoo!&apos;s Connected Life division which also includes Yahoo! Mobile -- powered by &lt;a href=&quot;http://mobile.yahoo.com/developers&quot;&gt;Blueprint widgets&lt;/a&gt; -- and &lt;acronym title=&quot;Digital Video Recorder&quot;&gt;DVR&lt;/acronym&gt; acquisition Meedio. Yahoo! has tied its data &lt;acronym title=&quot;Application Programming Interface&quot;&gt;API&lt;/acronym&gt;s to TiVo and Windows Media Center in the past, accessible as a full-screen application after a deep dive through the device&apos;s navigation options. The Widget Channel and its alpha-blended snippet dock complementing the main viewing experience of your &lt;abbr&gt;TV&lt;/abbr&gt; is a radical departure from past Yahoo! partnerships in the space, an obvious result of designing an experience from the ground-up instead of bolting onto other vendor&apos;s solutions.&lt;/p&gt;
+
+&lt;p&gt;Widget developers can build new widgets for Widget Channel using most of the same resource bundles and runtimes used on the desktop Konfabulator engine. &lt;abbr title=&quot;eXtensible Markup Language&quot;&gt;XML&lt;/abbr&gt; manifest files define widget metadata, preferences, and screen &lt;acronym title=&quot;User Interface&quot;&gt;UI&lt;/acronym&gt;. JavaScript powers on-screen interactions and dynamic data. Yahoo! Widget Engine includes a WebKit run-time, which will hopefully be ported by Yahoo! and Intel to support hardware accelerated &lt;acronym title=&quot;Cascading Style Sheets&quot;&gt;CSS&lt;/acronym&gt; and other nice features on the new software stack.&lt;/p&gt;
+
+&lt;p&gt;Widgets written for the new Yahoo! Widget Engine for &lt;abbr&gt;TV&lt;/abbr&gt; must conform to four major &lt;acronym&gt;UI&lt;/acronym&gt; modes: snippet content on the bottom dock, sidebar content, full-screen display, and background processing. Docked snippets are more than just minimized widgets: viewers can cycle through multiple snippets inside a single widget such as weather in various cities or a sports scores. Most sidebar displays mocked-up by Yahoo! used an accordion design pattern to collapse multiple content sections inside a small space. Full-screen experiences match the full-screen designs of the Web. The demo widget for &lt;a href=&quot;http://blog.flickr.net/en/2008/08/20/new-slideshow/&quot;&gt;Flickr uses their newly redesigned Flash slideshow&lt;/a&gt; display for a familiar look and feel from desktop to living room.&lt;/p&gt;
+
+&lt;p&gt;I couldn&apos;t get a solid answer from Intel regarding how tightly Widget Channel was tied to Yahoo!&apos;s Widget Engine. Intel wants to sell its new consumer electronics system-on-a-chip, the media processor &lt;acronym title=&quot;consumer electronics&quot;&gt;CE&lt;/acronym&gt; 3100, far and wide with or without the Yahoo! engine. I expect the underlying platform contains a native widget layer and programming environment with tighter integration but more programming complexity than Yahoo!&apos;s engine in much the same way &lt;a href=&quot;http://www.nvidia.com//page/pp_preface.html&quot;&gt;NVIDIA Preface&lt;/a&gt; bolsters its platform offering with a &lt;a href=&quot;http://gallery.live.com/default.aspx?pl=7&quot;&gt;Windows Sideshow gadgets&lt;/a&gt; run-time.&lt;/p&gt;
+
+&lt;h3 id=&quot;channel-reference&quot;&gt;From reference design to reality&lt;/h3&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;http://www.flickr.com/photos/niallkennedy/2782744657/&quot; title=&quot;Gigabyte MD300 DVP rear&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3136/2782744657_b4cd306966.jpg&quot; width=&quot;430&quot; height=&quot;286&quot; alt=&quot;Gigabyte MD300 DVP rear&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Yesterday&apos;s announcement from Intel and Yahoo! is merely a reference design showing off what both companies hope is the future of Internet-enabled consumer electronics. The Yahoo! Widget Engine for &lt;abbr&gt;TV&lt;/abbr&gt; still needs a lot of work and there are currently no shipping products implementing the hardware and software stack demonstrated yesterday. Cable companies, television manufacturers, and other consumer electronics companies will evaluate the stack over the next year for possible inclusion in products shipping next decade.&lt;/p&gt;
+
+&lt;p&gt;Intel is trying to displace consumer electronics chipsets already in production from IBM and NVIDIA. Sony, Toshiba, and IBM worked together to create the Cell multiprocessor already powering the PlayStation 3 and built-in to the next generation of televisions. NVIDIA chipsets are inside cable boxes from Scientific Atlanta and others. The upcoming Java-based &lt;a href=&quot;http://tru2way.com/&quot;&gt;tru2way cable software platform&lt;/a&gt; is already under active development by consumer electronics companies and software vendors. Widget Channel could operate as an additional layer on top of tru2way, as &lt;a href=&quot;http://www.comcast.com/About/PressRelease/PressReleaseDetail.ashx?PRID=793&quot; title=&quot;Comcast Intel Widget Channel&quot;&gt;mentioned in Comcast&apos;s press release yesterday&lt;/a&gt;. The word &quot;Yahoo&quot; does not appear in the Comcast press release and Comcast has only announced their intent to evaluate the new reference design against their own Java-based offerings in 2009.&lt;/p&gt;
+
+&lt;h3 id=&quot;channel-pieces&quot;&gt;Picking apart the pieces&lt;/h3&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;http://static.niallkennedy.com/blog/img/intel-widgets.png&quot; type=&quot;image/png&quot;&gt;&lt;img alt=&quot;Intel Widget Channel stack&quot; src=&quot;http://static.niallkennedy.com/blog/img/intel-widgets.jpg&quot; width=&quot;430&quot; height=&quot;194&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;Widget Channel is a Linux-based operating system with platform software and middleware provided by channel partners. The Widget Engine is one of the available software options on the device. Carrier-specific back-end services including reporting, storage, security, and developer certificate verification reside within the carrier network with possible add-ons such as display advertising powered by Yahoo! or others. Each Widget Channel implementation can choose its own Widget Gallery service and white-listed widgets and possibly receive extra content from a compatible widget gallery offering served by Yahoo!.&lt;/p&gt;
+
+&lt;p&gt;Yahoo! has a good opportunity to serve display advertisements, sell premium widget placements and certifications, and promote its own content within each Widget Channel deployment. It may be possible for Yahoo! and Google to program their own compatible widget and advertising layers on top of the base Intel platform to replace or compete with Yahoo!. Major features such as contextual widgets and advertising layers have yet to be developed for the platform, leaving new opportunities for other Internet companies to step in with their own swappable components inside the software stack.&lt;/p&gt;
+
+&lt;h3 id=&quot;channel-summary&quot;&gt;Summary&lt;/h3&gt;
+
+&lt;div style=&quot;text-align:center&quot;&gt;&lt;a href=&quot;http://www.flickr.com/photos/niallkennedy/2783584578/&quot; title=&quot;Yahoo! Widget Gallery home screen&quot;&gt;&lt;img src=&quot;http://farm4.static.flickr.com/3219/2783584578_11218d7915_m.jpg&quot; width=&quot;150&quot; height=&quot;240&quot; alt=&quot;Yahoo! Widget Gallery home screen&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;The Intel Widget Channel provides a peek inside the connected future of our living rooms. Consumer electronics companies and large carriers from the cable and satellite industries want to participate in the premium content offerings available through Internet-connected electronics and new software stacks from chip vendors could help bootstrap new services. Intel wants to sell more chips, Yahoo! wants to serve more &lt;abbr title=&quot;advertisement&quot;&gt;ad&lt;/abbr&gt;s, and cable companies want to boost subscription revenues without major investments in new infrastructure.&lt;/p&gt;
+
+&lt;p&gt;Intel admits interactive services on the television has been a popular goal over the last 10 years but without measured success. &lt;q cite=&quot;http://www.intelconsumerelectronics.com/Consumer-Electronics-3.0/Widget-Channel-Overview.aspx#2&quot;&gt;[T]he rate of adoption has so far been disappointing, studies show that consumers remain receptive to the concept&lt;/q&gt;. New levels of broadband penetration combined with high-definition viewing could change consumer adoption but we are still a few years out from real adoptable implementations. We&apos;ll have to wait and see what hardware and services are announced in 2009 before spending too much development time against a reference design.&lt;/p&gt;</content>
+<category term="business" scheme="http://www.niallkennedy.com/blog/" label="Business" /><category term="software/social/widgets" scheme="http://www.niallkennedy.com/blog/" label="Widgets" />
+<id>http://www.niallkennedy.com/blog/2008/08/intel-widget-channel.html</id>
+<link rel="alternate" href="http://www.niallkennedy.com/blog/2008/08/intel-widget-channel.html" type="text/html" hreflang="en" />
+<published>2008-08-21T23:00:00Z</published>
+<updated>2008-08-22T00:49:49Z</updated>
+<link rel="replies" type="application/atom+xml" href="http://www.niallkennedy.com/blog/2008/08/intel-widget-channel.atom" thr:count="0" />
+</entry>
+
+</feed>

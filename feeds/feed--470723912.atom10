@@ -1,0 +1,1253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/atom10full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xml:lang="en-US">
+  <title>the { buckblogs :here } - Home</title>
+  <id>tag:weblog.jamisbuck.org,2008:mephisto/</id>
+  <generator uri="http://mephistoblog.com" version="0.8.0">Mephisto Drax</generator>
+  
+  <link href="http://weblog.jamisbuck.org/" rel="alternate" type="text/html" />
+  <updated>2008-12-07T05:22:40Z</updated>
+  <link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-nc-sa/2.0/" /><link rel="self" href="http://feeds.feedburner.com/buckblog" type="application/atom+xml" /><feedburner:browserFriendly>This is an XML content feed. It is intended to be viewed in a newsreader or syndicated to another site, subject to copyright and fair use.</feedburner:browserFriendly><entry xml:base="http://weblog.jamisbuck.org/">
+    <author>
+      <name>Jamis</name>
+    </author>
+    <id>tag:weblog.jamisbuck.org,2008-12-07:5632</id>
+    <published>2008-12-07T05:16:00Z</published>
+    <updated>2008-12-07T05:22:40Z</updated>
+    <category term="Projects" />
+    <category term="sqlite3-ruby" />
+    <link href="http://weblog.jamisbuck.org/2008/12/7/sqlite3-ruby-windows-builds" rel="alternate" type="text/html" />
+    <title>SQlite3-Ruby Windows Builds</title>
+<content type="html">
+            &lt;p&gt;So, I’ve got a new sqlite3-ruby release pending (just a minor bug fix, is all), but I’ve learned my lesson about releasing a new version without a windows version pre-built.&lt;/p&gt;
+
+
+	&lt;p&gt;The problem is, I’m not a Windows guy. My build environment for Windows is cobbled together and painful to use, when it works at all. I’ve decided that I won’t put myself through that pain anymore.&lt;/p&gt;
+
+
+	&lt;p&gt;If you are a developer on Windows, and you have a sqlite3 build environment, and would be willing to compile the sqlite3-ruby extension for me, please do the following:&lt;/p&gt;
+
+
+	&lt;ol&gt;
+	&lt;li&gt;Add a comment to this post, indicating your name, and what platform you would be willing to build for (cygwin, native windows, whatever. I don’t even know the right names.)&lt;/li&gt;
+		&lt;li&gt;Reload the page, and make sure no one commented before you, claiming those platforms.&lt;/li&gt;
+		&lt;li&gt;Grab the latest version of sqlite3-ruby here: &lt;a href="http://github.com/jamis/sqlite3-ruby/tree/master"&gt;http://github.com/jamis/sqlite3-ruby/tree/master&lt;/a&gt;.&lt;/li&gt;
+		&lt;li&gt;Build the extension, and email it to me at jamis at 37signals dot com.&lt;/li&gt;
+	&lt;/ol&gt;
+
+
+	&lt;p&gt;Once I have a build of sqlite3-ruby for windows, I’ll release the new gem. (It amazes me how painful Windows makes this process. Mac &lt;span class="caps"&gt;OS X&lt;/span&gt;, Linux, &lt;span class="caps"&gt;BSD&lt;/span&gt;, etc. —you just gem install and build the source. No such luck in the Windows realm, apparently.)&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://weblog.jamisbuck.org/">
+    <author>
+      <name>Jamis</name>
+    </author>
+    <id>tag:weblog.jamisbuck.org,2008-11-29:5601</id>
+    <published>2008-11-29T14:40:00Z</published>
+    <updated>2008-11-29T14:44:27Z</updated>
+    <category term="Redirect" />
+    <category term="copland" />
+    <category term="dependency-injection" />
+    <category term="java" />
+    <category term="needle" />
+    <category term="net-ssh" />
+    <category term="rubyconf" />
+    <link href="http://weblog.jamisbuck.org/2008/11/29/recovering-from-enterprise-video-available" rel="alternate" type="text/html" />
+    <title>"Recovering from Enterprise" video available</title>
+<content type="html">
+            &lt;p&gt;It appears that &lt;a href="http://www.confreaks.com"&gt;Confreaks&lt;/a&gt; has posted the video of my &lt;a href="http://rubyconf2008.confreaks.com/recovering-from-enterprise.html"&gt;‘Recovering from Enterprise’ talk from RubyConf 2008&lt;/a&gt;. As usual, Confreaks did a great job recording the talks at RubyConf.&lt;/p&gt;
+
+
+	&lt;p&gt;For those who missed it, I also posted an article version of my presentation, titled &lt;a href="http://weblog.jamisbuck.org/2008/11/9/legos-play-doh-and-programming"&gt;Legos, Play-doh, and Programming&lt;/a&gt;.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://weblog.jamisbuck.org/">
+    <author>
+      <name>Jamis</name>
+    </author>
+    <id>tag:weblog.jamisbuck.org,2008-11-17:5474</id>
+    <published>2008-11-17T19:09:00Z</published>
+    <updated>2008-11-17T23:25:35Z</updated>
+    <category term="Tips &amp; Tricks" />
+    <category term="vim" />
+    <link href="http://weblog.jamisbuck.org/2008/11/17/vim-follow-up" rel="alternate" type="text/html" />
+    <title>Vim Follow-up</title>
+<summary type="html">&lt;p&gt;So, it’s been over a month and a half since I &lt;a href="http://weblog.jamisbuck.org/2008/10/10/coming-home-to-vim"&gt;switched back to Vim&lt;/a&gt;, and I figured I’d post a bit about how things are going.&lt;/p&gt;
+
+
+	&lt;p&gt;I &lt;strong&gt;love&lt;/strong&gt; it. Though the future is notoriously difficult to foretell, I think it’s safe to say that I won’t be switching editors again anytime soon. Vim is where it’s at, for me.&lt;/p&gt;
+
+
+	&lt;p&gt;Here’s the combination of plugins and such that I’ve found work best for me.&lt;/p&gt;</summary><content type="html">
+            &lt;p&gt;So, it’s been over a month and a half since I &lt;a href="http://weblog.jamisbuck.org/2008/10/10/coming-home-to-vim"&gt;switched back to Vim&lt;/a&gt;, and I figured I’d post a bit about how things are going.&lt;/p&gt;
+
+
+	&lt;p&gt;I &lt;strong&gt;love&lt;/strong&gt; it. Though the future is notoriously difficult to foretell, I think it’s safe to say that I won’t be switching editors again anytime soon. Vim is where it’s at, for me.&lt;/p&gt;
+
+
+	&lt;p&gt;Here’s the combination of plugins and such that I’ve found work best for me.&lt;/p&gt;
+&lt;h2&gt;MacVim &lt;span class="caps"&gt;FTW&lt;/span&gt;&lt;/h2&gt;
+
+
+	&lt;p&gt;Any Vim will do, really, but if you’re on a Mac, you really ought to consider &lt;a href="http://code.google.com/p/macvim/"&gt;MacVim&lt;/a&gt;. Like any self-respecting Vim port, it does the command-line really well, but it also has a great &lt;span class="caps"&gt;OS X GUI&lt;/span&gt; interface.&lt;/p&gt;
+
+
+	&lt;h2&gt;Settings&lt;/h2&gt;
+
+
+	&lt;p&gt;I’ve got my &amp;lt;Leader&amp;gt; character (&lt;code&gt;:h mapleader&lt;/code&gt;) mapped to the comma (since it’s easier to reach than the backspace character).&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;let mapleader = &amp;quot;,&amp;quot;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;I’ve installed &lt;a href="http://petdance.com/ack"&gt;ack&lt;/a&gt; and have configured Vim to use ack for grep.&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;set grepprg=ack&lt;tt&gt;
+&lt;/tt&gt;set grepformat=%f:%l:%m&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;I’m a believer in spaces instead of tabs (let’s just agree not to go there), and I prefer a tab size of 2. I also like editors to try and guess the indentation level.&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;set tabstop=2&lt;tt&gt;
+&lt;/tt&gt;set smarttab&lt;tt&gt;
+&lt;/tt&gt;set shiftwidth=2&lt;tt&gt;
+&lt;/tt&gt;set autoindent&lt;tt&gt;
+&lt;/tt&gt;set expandtab&lt;tt&gt;
+&lt;/tt&gt;set backspace=start,indent&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;But, some file types really do require explicit tabs, and not spaces:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;autocmd FileType make     set noexpandtab&lt;tt&gt;
+&lt;/tt&gt;autocmd FileType python   set noexpandtab&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;(&lt;strong&gt;Update&lt;/strong&gt;: apparently, python can do tabs &lt;strong&gt;or&lt;/strong&gt; spaces. All my python vimming for the last 8 years has been read-only, so it never actually came up.)&lt;/p&gt;
+
+
+	&lt;p&gt;I like my lines numbered, syntax highlighting on, and highlighted searches:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;set number&lt;tt&gt;
+&lt;/tt&gt;set hlsearch&lt;tt&gt;
+&lt;/tt&gt;syntax on&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;I’ve got quite a few other things tweaked in my .vimrc, but those are the major biggest ones.&lt;/p&gt;
+
+
+	&lt;h2&gt;Plugins&lt;/h2&gt;
+
+
+	&lt;h3&gt;FuzzyFinder&lt;/h3&gt;
+
+
+	&lt;p&gt;The &lt;a href="http://www.vim.org/scripts/script.php?script_id=1984"&gt;FuzzyFinder&lt;/a&gt; and &lt;a href="http://github.com/jamis/fuzzyfinder_textmate/tree/master"&gt;FuzzyFinder TextMate&lt;/a&gt; plugins have become essential for me. For now, installation of the TextMate-like behavior is kind of painful, but I plan to get something up on the &lt;a href="http://www.vim.org/scripts/index.php"&gt;Vim scripts index&lt;/a&gt; in the nearish future.&lt;/p&gt;
+
+
+	&lt;p&gt;My settings for FuzzyFinder TextMate:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;let g:fuzzy_ignore = &amp;quot;*.log&amp;quot;&lt;tt&gt;
+&lt;/tt&gt;let g:fuzzy_matching_limit = 70&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;map &amp;lt;leader&amp;gt;t :FuzzyFinderTextMate&amp;lt;CR&amp;gt;&lt;tt&gt;
+&lt;/tt&gt;map &amp;lt;leader&amp;gt;b :FuzzyFinderBuffer&amp;lt;CR&amp;gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;h3&gt;&lt;span class="caps"&gt;NERD&lt;/span&gt;_tree&lt;/h3&gt;
+
+
+	&lt;p&gt;Thanks to all who recommended the &lt;a href="http://www.vim.org/scripts/script.php?script_id=1658"&gt;&lt;span class="caps"&gt;NERD&lt;/span&gt; tree plugin&lt;/a&gt; by Marty Grenfell. It really is fantastic, definitely the best-of-breed of &lt;span class="caps"&gt;VIM&lt;/span&gt; project/directory explorers. I especially like that it is easily toggled away. I usually keep it hidden, and toggle it open only when I need to browse to something. (Thanks to the fuzzyfinder stuff, my need for a project browser is pretty small, but when I need one, &lt;span class="caps"&gt;NERD&lt;/span&gt;_tree works great.)&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;map &amp;lt;leader&amp;gt;d :execute 'NERDTreeToggle ' . getcwd()&amp;lt;CR&amp;gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;h3&gt;rails.vim&lt;/h3&gt;
+
+
+	&lt;p&gt;The &lt;a href="http://www.vim.org/scripts/script.php?script_id=1567"&gt;rails.vim&lt;/a&gt; plugin is pretty extensive, and I’m currently only scratching the surface. I don’t use snippets at all (never did in TextMate, either), but the Rake integration is pretty handy, and I’ve used the migration generator pretty often lately.&lt;/p&gt;
+
+
+	&lt;p&gt;I need to spend some more time reading the docs for this one, and practicing some of the commands, since I’m sure it could turn into a real time-saver for programmers (like myself) who spend a good part of their day in Rails code.&lt;/p&gt;
+
+
+	&lt;h3&gt;scratch.vim&lt;/h3&gt;
+
+
+	&lt;p&gt;I’ve really come to love &lt;a href="http://www.vim.org/scripts/script.php?script_id=664"&gt;scratch.vim&lt;/a&gt;. Sometimes I just need to jot down some numbers, or paste the result of some query, or even take notes on a phone call. Writing any of that on a scrap of paper is a sure way to lose the info. The scratch plugin lets me take notes right where I am all day: in Vim. It doesn’t come with a way to toggle the scratch buffer (which is odd), so I wrote a quick one:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;function! ToggleScratch()&lt;tt&gt;
+&lt;/tt&gt;  if expand('%') == g:ScratchBufferName&lt;tt&gt;
+&lt;/tt&gt;    quit&lt;tt&gt;
+&lt;/tt&gt;  else&lt;tt&gt;
+&lt;/tt&gt;    Sscratch&lt;tt&gt;
+&lt;/tt&gt;  endif&lt;tt&gt;
+&lt;/tt&gt;endfunction&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;map &amp;lt;leader&amp;gt;s :call ToggleScratch()&amp;lt;CR&amp;gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;h3&gt;tComment&lt;/h3&gt;
+
+
+	&lt;p&gt;Maybe it’s just my own coding style, but I find myself commenting and uncommenting large blocks of code on a daily basis. The &lt;a href="http://www.vim.org/scripts/script.php?script_id=1173"&gt;tComment&lt;/a&gt; plugin from Tom Link is perfect for this. You can toggle comments by using the Vim motion operators, or just do a quick visual block followed by “gc”. Good stuff!&lt;/p&gt;
+
+
+	&lt;h3&gt;Others&lt;/h3&gt;
+
+
+	&lt;p&gt;There are a few other plugins I’m experimenting with (&lt;a href="http://www.vim.org/scripts/script.php?script_id=1697"&gt;surround.vim&lt;/a&gt;, &lt;a href="http://www.vim.org/scripts/script.php?script_id=90"&gt;vcscommand.vim&lt;/a&gt;), but which I use infrequently enough that they haven’t become muscle memory yet.&lt;/p&gt;
+
+
+	&lt;h2&gt;Workflow&lt;/h2&gt;
+
+
+	&lt;p&gt;Because I prefer the &lt;span class="caps"&gt;GUI&lt;/span&gt; version of MacVim, I typically have only one or two terminal windows open. I then type “mvim” to open vim from the root of whichever project(s) I’m working on, and then use ”,t” (my FuzzyFinder TextMate trigger) to search for and open files. I also use ”,b” (my FuzzyFinderBuffer trigger) to search my buffer list if I know the file is already open.&lt;/p&gt;
+
+
+	&lt;p&gt;Switching between buffers with the carat character ”^” is a huge time saver. I used to use :ls (to list open buffers) and :buffer (to jump to a buffer), but the FuzzyFinderBuffer has really taken the place of both of those.&lt;/p&gt;
+
+
+	&lt;p&gt;Ironically, split windows (which I missed most of all when I switched to TextMate) have taken me the longest to fit back into my workflow. TextMate trained them out of me. :) That said, I’m still trying to fit them back in, and when I remember to use them, I &lt;strong&gt;love&lt;/strong&gt; them.&lt;/p&gt;
+
+
+	&lt;h2&gt;You?&lt;/h2&gt;
+
+
+	&lt;p&gt;So, that’s me. How does Vim fit in your own workflow? What settings do you prefer, and why? And what customizations are you using in your own setup?&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://weblog.jamisbuck.org/">
+    <author>
+      <name>Jamis</name>
+    </author>
+    <id>tag:weblog.jamisbuck.org,2008-11-09:5391</id>
+    <published>2008-11-09T11:46:00Z</published>
+    <updated>2008-11-10T15:13:56Z</updated>
+    <category term="Essays and Rants" />
+    <category term="copland" />
+    <category term="dependency-injection" />
+    <category term="java" />
+    <category term="needle" />
+    <category term="net-ssh" />
+    <category term="rubyconf" />
+    <link href="http://weblog.jamisbuck.org/2008/11/9/legos-play-doh-and-programming" rel="alternate" type="text/html" />
+    <title>LEGOs, Play-Doh, and Programming</title>
+<summary type="html">&lt;p&gt;&lt;em&gt;This article is based on a talk I gave at the 2008 RubyConf in Orlando, Florida, entitled “Recovering from Enterprise: how to embrace Ruby’s idioms and say goodbye to bad habits”.&lt;/em&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;The other day I went to Target with my son. Like most kids, I think, he’s convinced that Target is a toy store, which just happens to sell towels and shoes and cleaning supplies, too, so in his eyes it’d be criminal to not walk through the bare handful of toy aisles.&lt;/p&gt;
+
+
+	&lt;p&gt;Besides, the toy section is across from the electronics section, which all geeks know is where the &lt;em&gt;real&lt;/em&gt; toys are.&lt;/p&gt;
+
+
+	&lt;p&gt;So, we went to the toy section and started browsing. I’ve always loved &lt;span class="caps"&gt;LEGO&lt;/span&gt; sets, and it’s a good thing they’re so expensive or I’d come home with a new box of bricks every time. At the Target near our home, they have half of an entire aisle devoted to boxes and boxes of &lt;span class="caps"&gt;LEGO&lt;/span&gt; sets. Need a battle-axe-wielding &lt;span class="caps"&gt;LEGO&lt;/span&gt; dwarf figure? &lt;span class="caps"&gt;A LEGO&lt;/span&gt; shark? How about a giant &lt;span class="caps"&gt;LEGO&lt;/span&gt; skull, a la Indiana Jones? And who could pass a &lt;span class="caps"&gt;LEGO&lt;/span&gt; Star Wars’ Star Destroyer model without a wistful thought or two?&lt;/p&gt;
+
+
+	&lt;p&gt;It struck me at that time, though, how incredibly &lt;em&gt;specific&lt;/em&gt; so many of these pieces are. With all of those sets in your possession, you could build a secret agent headquarters with a boulder trap that crushes angry battle-axe-wielding dwarves as they drive by in Martian exploration buggies. Which themelves are adorned with flower beds and creeper vines. And you could do all that in under 10 &lt;span class="caps"&gt;LEGO&lt;/span&gt; bricks! (Or, maybe a few more than that.)&lt;/p&gt;
+
+
+	&lt;p&gt;Did you know that &lt;span class="caps"&gt;LEGO&lt;/span&gt; currently produces over 900 distinct &lt;span class="caps"&gt;LEGO&lt;/span&gt; pieces, or “elements” as they call them? Over the course of their history, there have been almost 13,000 distinct elements created. Now, that number includes variations in color and material, but even if you exclude those permutations, you’re still left with a staggering 2,800 different elements in the &lt;span class="caps"&gt;LEGO&lt;/span&gt; line.&lt;/p&gt;
+
+
+	&lt;p&gt;It’s interesting that &lt;span class="caps"&gt;LEGO&lt;/span&gt; tends to encourage the use of specific pieces, rather than letting you build those pieces from more fundamental parts. It means that in order to master &lt;span class="caps"&gt;LEGO&lt;/span&gt; brick building, you have to know all of the pieces available to you, and have a good intuitive feel for how and when they should be used. That’s…a lot of information to keep tabs on. Myself, I just keep to the standard rectangular blocks and plug an exotic or two on as an afterthought when I see one that looks cool.&lt;/p&gt;
+
+
+	&lt;p&gt;Also, if you’ve built up a model, and decide later that you want to change or extend some part of the model, you’ll often have to dismantle part (or all!) of it in order to do so. Kind of a pain.&lt;/p&gt;
+
+
+	&lt;p&gt;Regardless, I still love building with &lt;span class="caps"&gt;LEGO&lt;/span&gt; bricks, and I suspect I always will.&lt;/p&gt;</summary><content type="html">
+            &lt;p&gt;&lt;em&gt;This article is based on a talk I gave at the 2008 RubyConf in Orlando, Florida, entitled “Recovering from Enterprise: how to embrace Ruby’s idioms and say goodbye to bad habits”.&lt;/em&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;The other day I went to Target with my son. Like most kids, I think, he’s convinced that Target is a toy store, which just happens to sell towels and shoes and cleaning supplies, too, so in his eyes it’d be criminal to not walk through the bare handful of toy aisles.&lt;/p&gt;
+
+
+	&lt;p&gt;Besides, the toy section is across from the electronics section, which all geeks know is where the &lt;em&gt;real&lt;/em&gt; toys are.&lt;/p&gt;
+
+
+	&lt;p&gt;So, we went to the toy section and started browsing. I’ve always loved &lt;span class="caps"&gt;LEGO&lt;/span&gt; sets, and it’s a good thing they’re so expensive or I’d come home with a new box of bricks every time. At the Target near our home, they have half of an entire aisle devoted to boxes and boxes of &lt;span class="caps"&gt;LEGO&lt;/span&gt; sets. Need a battle-axe-wielding &lt;span class="caps"&gt;LEGO&lt;/span&gt; dwarf figure? &lt;span class="caps"&gt;A LEGO&lt;/span&gt; shark? How about a giant &lt;span class="caps"&gt;LEGO&lt;/span&gt; skull, a la Indiana Jones? And who could pass a &lt;span class="caps"&gt;LEGO&lt;/span&gt; Star Wars’ Star Destroyer model without a wistful thought or two?&lt;/p&gt;
+
+
+	&lt;p&gt;It struck me at that time, though, how incredibly &lt;em&gt;specific&lt;/em&gt; so many of these pieces are. With all of those sets in your possession, you could build a secret agent headquarters with a boulder trap that crushes angry battle-axe-wielding dwarves as they drive by in Martian exploration buggies. Which themelves are adorned with flower beds and creeper vines. And you could do all that in under 10 &lt;span class="caps"&gt;LEGO&lt;/span&gt; bricks! (Or, maybe a few more than that.)&lt;/p&gt;
+
+
+	&lt;p&gt;Did you know that &lt;span class="caps"&gt;LEGO&lt;/span&gt; currently produces over 900 distinct &lt;span class="caps"&gt;LEGO&lt;/span&gt; pieces, or “elements” as they call them? Over the course of their history, there have been almost 13,000 distinct elements created. Now, that number includes variations in color and material, but even if you exclude those permutations, you’re still left with a staggering 2,800 different elements in the &lt;span class="caps"&gt;LEGO&lt;/span&gt; line.&lt;/p&gt;
+
+
+	&lt;p&gt;It’s interesting that &lt;span class="caps"&gt;LEGO&lt;/span&gt; tends to encourage the use of specific pieces, rather than letting you build those pieces from more fundamental parts. It means that in order to master &lt;span class="caps"&gt;LEGO&lt;/span&gt; brick building, you have to know all of the pieces available to you, and have a good intuitive feel for how and when they should be used. That’s…a lot of information to keep tabs on. Myself, I just keep to the standard rectangular blocks and plug an exotic or two on as an afterthought when I see one that looks cool.&lt;/p&gt;
+
+
+	&lt;p&gt;Also, if you’ve built up a model, and decide later that you want to change or extend some part of the model, you’ll often have to dismantle part (or all!) of it in order to do so. Kind of a pain.&lt;/p&gt;
+
+
+	&lt;p&gt;Regardless, I still love building with &lt;span class="caps"&gt;LEGO&lt;/span&gt; bricks, and I suspect I always will.&lt;/p&gt;
+&lt;h2&gt;Play-Doh&lt;/h2&gt;
+
+
+	&lt;p&gt;Now, my son being all of 6 years old, his attention span requires us to spend no more than a few minutes in any one toy aisle. So, long before I was ready to tear my eyes away from the &lt;span class="caps"&gt;LEGO&lt;/span&gt; sets, we found ourselves in the next aisle over. This was a much more colorful aisle, with bright pastels coloring various pre-school toys. My son, though, has nothing against pre-school toys, and was more than willing to drag me through them.&lt;/p&gt;
+
+
+	&lt;p&gt;My eyes caught on the Play-Doh section.&lt;/p&gt;
+
+
+	&lt;p&gt;The Play-Doh section at this Target is small, maybe 8 different hangers and a few square feet of shelf-space. You can get Play-Doh in as many as 50 different colors, but regardless of color, it’s all still the same thing: a bucket of malleable dough that you can pound, press, pinch, roll, and sculpt. (And rub into the carpet. And hair. And clothes. But we won’t get into that.)&lt;/p&gt;
+
+
+	&lt;p&gt;Honestly, Play-Doh has a bad rap as a pre-schooler toy. It’s remarkably fun to play with. You can do all kinds of things with Play-Doh that you just can’t do with &lt;span class="caps"&gt;LEGO&lt;/span&gt; bricks. For example, the other day I built an arch out of cubes of Play-Doh that were held together only by friction. (You may not be impressed, but my 6-year-old was.)&lt;/p&gt;
+
+
+	&lt;p&gt;The best part is that it doesn’t require so much memorization to become proficient in Play-Doh, though it might require more of an artistic streak than &lt;span class="caps"&gt;LEGO&lt;/span&gt; bricks do. Since I’m more engineer than artist, my Play-Doh creations tend to come out blocky and functional, rather than elegant and designed, but then, so do my &lt;span class="caps"&gt;LEGO&lt;/span&gt; creations.&lt;/p&gt;
+
+
+	&lt;p&gt;Also, where &lt;span class="caps"&gt;LEGO&lt;/span&gt; models require significant work to alter or extend, Play-Doh models are dead-simple. If you want to add something to the base of your model, just graft more Play-Doh onto it. Want to change the shape of the keystone of your arch? Just pinch and mold in place. Simple!&lt;/p&gt;
+
+
+	&lt;p&gt;Interestingly, I’ve found that while you can’t build with &lt;span class="caps"&gt;LEGO&lt;/span&gt; bricks using Play-Doh construction techniques, you &lt;em&gt;can&lt;/em&gt; build with Play-Doh using &lt;span class="caps"&gt;LEGO&lt;/span&gt; construction techniques. Just build bricks out of Play-Doh. It’s unwiedly and impractical, but it &lt;em&gt;can&lt;/em&gt; be done. The real question is: why would you want to? It’s pretty obvious that to build with Play-Doh, you should just embrace Play-Doh’s own strengths and run with it.&lt;/p&gt;
+
+
+	&lt;p&gt;As obvious as that may seem, the lesson didn’t click for me for a long time. It’s not that I went about building Indiana Jones sets out of Play-Doh, one brick at a time. Rather, I didn’t realize that the same lesson applied to programming languages.&lt;/p&gt;
+
+
+	&lt;h2&gt;Java and LEGOs&lt;/h2&gt;
+
+
+	&lt;p&gt;Consider Java. Most would consider it the poster child of “enterprise” environments (though .NET is giving it a run for its money). And would you believe, Java and &lt;span class="caps"&gt;LEGO&lt;/span&gt; bricks have several things in common?&lt;/p&gt;
+
+
+	&lt;p&gt;As of Java 1.6, there are well over 11,000 different classes and interfaces available to programmers in the standard library. (That’s not even counting the inner and anonymous classes that are usually not publicly documented.) Eleven. Thousand. Classes.&lt;/p&gt;
+
+
+	&lt;p&gt;This is readily apparent when you consider the set of collection implementations that Java ships with.&lt;/p&gt;
+
+
+Collection Interfaces:
+	&lt;ul&gt;
+	&lt;li&gt;Collection&lt;/li&gt;
+		&lt;li&gt;Set&lt;/li&gt;
+		&lt;li&gt;List&lt;/li&gt;
+		&lt;li&gt;Queue&lt;/li&gt;
+		&lt;li&gt;Deque&lt;/li&gt;
+		&lt;li&gt;Map&lt;/li&gt;
+		&lt;li&gt;SortedSet&lt;/li&gt;
+		&lt;li&gt;SortedMap&lt;/li&gt;
+		&lt;li&gt;NavigableSet&lt;/li&gt;
+		&lt;li&gt;NavigableMap&lt;/li&gt;
+		&lt;li&gt;BlockingQueue&lt;/li&gt;
+		&lt;li&gt;BlockingDeque&lt;/li&gt;
+		&lt;li&gt;ConcurrentMap&lt;/li&gt;
+		&lt;li&gt;ConcurrentNavigableMap&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+General-Purpose Collection Implementations: 
+	&lt;ul&gt;
+	&lt;li&gt;HashSet&lt;/li&gt;
+		&lt;li&gt;TreeSet&lt;/li&gt;
+		&lt;li&gt;LinkedHashSet&lt;/li&gt;
+		&lt;li&gt;ArrayList&lt;/li&gt;
+		&lt;li&gt;ArrayDeque&lt;/li&gt;
+		&lt;li&gt;LinkedList&lt;/li&gt;
+		&lt;li&gt;PriorityQueue&lt;/li&gt;
+		&lt;li&gt;HashMap&lt;/li&gt;
+		&lt;li&gt;TreeMap&lt;/li&gt;
+		&lt;li&gt;LinkedHashMap&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+Special-Purpose Collection Implementations:
+	&lt;ul&gt;
+	&lt;li&gt;WeakHashMap&lt;/li&gt;
+		&lt;li&gt;IdentityHashMap&lt;/li&gt;
+		&lt;li&gt;CopyOnWriteArrayList&lt;/li&gt;
+		&lt;li&gt;CopyOnWriteArraySet&lt;/li&gt;
+		&lt;li&gt;EnumSet&lt;/li&gt;
+		&lt;li&gt;EnumMap&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+Concurrent Collection Implementations:
+	&lt;ul&gt;
+	&lt;li&gt;ConcurrentLinkedQueue&lt;/li&gt;
+		&lt;li&gt;LinkedBlockingQueue&lt;/li&gt;
+		&lt;li&gt;ArrayBlockingQueue&lt;/li&gt;
+		&lt;li&gt;PriorityBlockingQueue&lt;/li&gt;
+		&lt;li&gt;DelayQueue&lt;/li&gt;
+		&lt;li&gt;SynchronousQueue&lt;/li&gt;
+		&lt;li&gt;LinkedBlockingDeque&lt;/li&gt;
+		&lt;li&gt;ConcurrentHashMap&lt;/li&gt;
+		&lt;li&gt;ConcurrentSkipListSet&lt;/li&gt;
+		&lt;li&gt;ConcurrentSkipListMap&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+Abstract Collection Implementations:
+	&lt;ul&gt;
+	&lt;li&gt;AbstractCollection&lt;/li&gt;
+		&lt;li&gt;AbstractSet&lt;/li&gt;
+		&lt;li&gt;AbstractList&lt;/li&gt;
+		&lt;li&gt;AbstractSequentialList&lt;/li&gt;
+		&lt;li&gt;AbstractQueue&lt;/li&gt;
+		&lt;li&gt;AbstractMap&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;Yes, that is &lt;span class="caps"&gt;FORTY&lt;/span&gt;-SIX different interfaces and implementations related to collections. Now, just like &lt;span class="caps"&gt;LEGO&lt;/span&gt; construction, having this volume of distinct elements on hand affects how you architect things. Writing software becomes more of a smorgasbord, where you pick and choose the specialized bricks you need, fitting them together just so. It also means that, in order to master Java, you need to have that intuitive grasp of how and when to use those thousands of classes. When do you use a HashSet versus a TreeSet? When would you use an ArrayDeque, and when would you want to subclass an AbstractQueue? It’s all part of the job.&lt;/p&gt;
+
+
+	&lt;p&gt;Also, &lt;span class="caps"&gt;IDE&lt;/span&gt;’s are popular with Java in part because of the pain of refactoring. If you want to extend or modify a Java application, it can involve (like &lt;span class="caps"&gt;LEGO&lt;/span&gt; models) a lot of dismantling and reassembling.&lt;/p&gt;
+
+
+	&lt;h2&gt;Ruby as Play-Doh&lt;/h2&gt;
+
+
+	&lt;p&gt;But if Java is the &lt;span class="caps"&gt;LEGO&lt;/span&gt; of programming languages, then it could be argued that Ruby is the Play-Doh. Just as Play-Doh has been typically considered a pre-school toy, so Ruby has had a bad rap as a “toy” language, not fit for the “real world”. Also, compared to Java’s library of 11,000 classes, Ruby’s meager 1,400 classes (which number &lt;em&gt;does&lt;/em&gt; include internal and anonymous ones, but not modules) seems paltry. And collections! Look what Ruby has to offer:&lt;/p&gt;
+
+
+	&lt;pre&gt;&lt;code&gt;Modules:
+  * Enumerable
+  * Comparable (for elements within a collection)&lt;/code&gt;&lt;/pre&gt;
+
+
+	&lt;pre&gt;&lt;code&gt;Classes:
+  * Hash
+  * Array
+  * Set
+  * SortedSet&lt;/code&gt;&lt;/pre&gt;
+
+
+	&lt;p&gt;Just 6 options, to Java’s 46. What if you need a queue? Well, Ruby’s Array class has a queue-like interface; you &lt;em&gt;could&lt;/em&gt; just use that. What about a sorted map? In that case, you might need to make do with a sorted set, or you could write your own, but it’s not hard. Most data structures are not rocket science, and for those that are, you can bet someone else has implemented it already.&lt;/p&gt;
+
+
+	&lt;p&gt;But when you need to extend or modify your application, Ruby is a dream. Like Play-Doh, you can often just “pinch and mold” in place, grafting new code on or pulling old code out.&lt;/p&gt;
+
+
+	&lt;p&gt;Ruby’s philosophy is like that of Play-Doh’s: provide a basic set of tools and make it relatively simple to build something complex with them. The very Ruby language itself is designed for this: closures, super-simple introspection of objects, runtime modification of existing objects, and the use of modules for extending classes and objects all tend to result in an environment that is simple, malleable, and extensible.&lt;/p&gt;
+
+
+	&lt;p&gt;And just as you cannot use Play-Doh construction techniques with &lt;span class="caps"&gt;LEGO&lt;/span&gt; bricks, you also really cannot use Ruby programming techniques with Java. Using closures for delayed execution, or iteration, is tricky (at best) in Java, when it’s possible at all. Extending objects at runtime typically requires bytecode modification. And Ruby’s use of modules to extend classes and objects, while similar to both inheritance and interfaces, is slightly different (and arguably more powerful) than either.&lt;/p&gt;
+
+
+	&lt;p&gt;You &lt;em&gt;can&lt;/em&gt; write Ruby programs using Java programming techniques, but just as using &lt;span class="caps"&gt;LEGO&lt;/span&gt; techniques with Play-Doh is unwieldy and overcomplicated, so is mimicking Java in Ruby.&lt;/p&gt;
+
+
+	&lt;p&gt;This is the lesson that I was slow to learn.&lt;/p&gt;
+
+
+	&lt;h2&gt;Copland&lt;/h2&gt;
+
+
+	&lt;p&gt;Consider exhibit A, from my &lt;a href="http://copland.rubyforge.org"&gt;Copland&lt;/a&gt; library.&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;15&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="c"&gt;# copland/configuration/loader.rb (collapsed)&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;module&lt;/span&gt; &lt;span class="cl"&gt;Copland&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;module&lt;/span&gt; &lt;span class="cl"&gt;Configuration&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;Loader&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      attr_reader &lt;span class="sy"&gt;:search_paths&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      attr_reader &lt;span class="sy"&gt;:loaders&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;initialize&lt;/span&gt;( search_paths=[] )&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;add_search_path&lt;/span&gt;( *paths )&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;add_loader&lt;/span&gt;( loader )&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;load&lt;/span&gt;( options={} )&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;load_path&lt;/span&gt;( path, options )&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;use_library&lt;/span&gt;( name )&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Copland was my first stab at a dependency injection (DI) framework, and is more-or-less a feature-for-feature port of the &lt;a href="http://hivemind.apache.org/"&gt;HiveMind&lt;/a&gt; project in Java. (Ironically, it was the subject of my first presentation at a Ruby conference, in 2004!)&lt;/p&gt;
+
+
+	&lt;p&gt;It was designed to automatically scan directories in the load path for &lt;span class="caps"&gt;YAML&lt;/span&gt; configuration files (I’ll mention those shortly), and load them up and parse them. The thing is, I imagined a case where someone might want to use &lt;span class="caps"&gt;XML&lt;/span&gt; instead of &lt;span class="caps"&gt;YAML&lt;/span&gt;. I couldn’t just leave these folks behind! So I made the whole configuration loading framework extendible. Want &lt;span class="caps"&gt;XML&lt;/span&gt; config files? Fine! Just implement an &lt;span class="caps"&gt;XML&lt;/span&gt; parser system and register it with the configuration loader framework, and you’re good to go!&lt;/p&gt;
+
+
+	&lt;p&gt;That’s just wrong on so many levels. Always, always, &lt;em&gt;always&lt;/em&gt; build just what you need, and only when you need it. You’re in Ruby, the Play-Doh of programming languages, and the cost of adding features later is really, really low. Remember &lt;a href="http://en.wikipedia.org/wiki/YAGNI"&gt;&lt;span class="caps"&gt;YAGNI&lt;/span&gt;&lt;/a&gt;! Obviously, this principle holds in Java, too, but it really seems like the opposite philosophy has become the standard among many Java projects. It’s too bad, because it has contributed to a bad reputation that Java probably doesn’t entirely deserve.&lt;/p&gt;
+
+
+	&lt;p&gt;Here’s a classic Java pattern that just really doesn’t translate to Ruby:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;15&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;20&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;21&lt;tt&gt;
+&lt;/tt&gt;22&lt;tt&gt;
+&lt;/tt&gt;23&lt;tt&gt;
+&lt;/tt&gt;24&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;25&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;26&lt;tt&gt;
+&lt;/tt&gt;27&lt;tt&gt;
+&lt;/tt&gt;28&lt;tt&gt;
+&lt;/tt&gt;29&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;30&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;31&lt;tt&gt;
+&lt;/tt&gt;32&lt;tt&gt;
+&lt;/tt&gt;33&lt;tt&gt;
+&lt;/tt&gt;34&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="c"&gt;# copland/class-factory.rb&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;module&lt;/span&gt; &lt;span class="cl"&gt;Copland&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;ClassFactory&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    include &lt;span class="co"&gt;Singleton&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;initialize&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class="iv"&gt;@pools&lt;/span&gt;, &lt;span class="iv"&gt;@constructors&lt;/span&gt; = &lt;span class="co"&gt;Hash&lt;/span&gt;.new, &lt;span class="co"&gt;Hash&lt;/span&gt;.new&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;create_pool&lt;/span&gt;( name, &amp;amp;block )&lt;tt&gt;
+&lt;/tt&gt;      block ||= proc { |k,*args| k.new( *args ) }&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class="iv"&gt;@pools&lt;/span&gt;[ name ] = &lt;span class="co"&gt;Hash&lt;/span&gt;.new&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class="iv"&gt;@constructors&lt;/span&gt;[ name ] = block&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;get_pool&lt;/span&gt;( name )&lt;tt&gt;
+&lt;/tt&gt;      pool = &lt;span class="iv"&gt;@pools&lt;/span&gt;[ name ] &lt;span class="r"&gt;or&lt;/span&gt; raise &lt;span class="co"&gt;NoSuchPoolException&lt;/span&gt;, name&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class="r"&gt;return&lt;/span&gt; pool&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;register&lt;/span&gt;( pool_name, name, klass )&lt;tt&gt;
+&lt;/tt&gt;      pool = get_pool( pool_name )&lt;tt&gt;
+&lt;/tt&gt;      pool[ name ] = klass&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;get&lt;/span&gt;( pool_name, name, *args )&lt;tt&gt;
+&lt;/tt&gt;      pool = get_pool( pool_name )&lt;tt&gt;
+&lt;/tt&gt;      klass = pool[ name ]&lt;tt&gt;
+&lt;/tt&gt;      raise &lt;span class="co"&gt;NoSuchRegisteredClassException&lt;/span&gt;, &lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="il"&gt;&lt;span class="dl"&gt;#{&lt;/span&gt;pool_name&lt;span class="dl"&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class="k"&gt;:&lt;/span&gt;&lt;span class="il"&gt;&lt;span class="dl"&gt;#{&lt;/span&gt;name&lt;span class="dl"&gt;}&lt;/span&gt;&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;span class="r"&gt;unless&lt;/span&gt; klass&lt;tt&gt;
+&lt;/tt&gt;      constructor = &lt;span class="iv"&gt;@constructors&lt;/span&gt;[ pool_name ]&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class="r"&gt;return&lt;/span&gt; constructor.call( klass, *args )&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;This is an implementation of a class factory. In Ruby. The HiveMind project had a class factory, so the Copland project needed one, too!&lt;/p&gt;
+
+
+	&lt;p&gt;But you know, class factories are absolutely pointless in Ruby. There are plenty of reasons for these in Java, but they just aren’t necessary in Ruby. Want a namespace? Declare the class in a module. Want the class to exist in multiple namespaces? Use constant assignment within whatever modules you desire. Need a dynamic lookup? Try #const_get. In the very worst case, just use a Hash if you need to map arbitrary strings to classes.&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;module&lt;/span&gt; &lt;span class="cl"&gt;A&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;B&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt; &lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# method #1, use const_get to dynamically look up classes&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;name = &lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;B&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; &lt;tt&gt;
+&lt;/tt&gt;klass = &lt;span class="co"&gt;A&lt;/span&gt;.const_get(name)&lt;tt&gt;
+&lt;/tt&gt;object = klass.new&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# method #2, use a hash to map arbitrary strings to classes&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;map = { &lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;bimpl&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt; =&amp;gt; &lt;span class="co"&gt;A&lt;/span&gt;::&lt;span class="co"&gt;B&lt;/span&gt; }&lt;tt&gt;
+&lt;/tt&gt;map[&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;bimpl&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;].new&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Seriously. You don’t need explicit class factories in Ruby, because anything can be a class factory, implicitly.&lt;/p&gt;
+
+
+	&lt;p&gt;I’ll mention one more painful Javaism that I ported to Copland. It’s so painful that I won’t even bother pasting it here—if you’re following along, look at examples/solitaire-cipher/lib/package.yml in the copland distribution.&lt;/p&gt;
+
+
+	&lt;p&gt;If you do, what you’ll see are 106 lines of &lt;span class="caps"&gt;YAML&lt;/span&gt; describing how different Ruby objects in a simple, 250-line program should be initialized and connected. Yes. 106 lines of &lt;span class="caps"&gt;YAML&lt;/span&gt;. For 250 lines of Ruby.&lt;/p&gt;
+
+
+	&lt;p&gt;Now, don’t get me wrong. &lt;span class="caps"&gt;YAML&lt;/span&gt; can be great for configuration. Rails, for instance, uses it for database connection information. The problem here, in Copland, was that I was using a static configuration for what would be better served with a block of code. Ruby reads elegantly; a &lt;span class="caps"&gt;YAML&lt;/span&gt; configuration file does not.&lt;/p&gt;
+
+
+	&lt;p&gt;Fortunately, those wiser than myself showed me the way.&lt;/p&gt;
+
+
+	&lt;h2&gt;RubyConf 2004&lt;/h2&gt;
+
+
+	&lt;p&gt;I still remember Rich Kilmer, sitting in the front row in the October 2004 RubyConf. As I wrapped up my presentation on Copland and dependency injection, I asked if there were any questions.&lt;/p&gt;
+
+
+	&lt;p&gt;Rich raised his hand. “Why didn’t you just use Ruby?”&lt;/p&gt;
+
+
+	&lt;p&gt;I was confused by his question, and he had to explain. Why did I use &lt;span class="caps"&gt;YAML&lt;/span&gt; instead of just doing the configuration in Ruby code?&lt;/p&gt;
+
+
+	&lt;p&gt;I think I mumbled something like “that would be a neat idea”. To me, it was a novel concept. I’d never heard of it before. You’d never see a Java program that was configured by writing Java code. That screams “hard coding”! But Ruby, you see, is different.&lt;/p&gt;
+
+
+	&lt;p&gt;Ruby lets you write these beautiful little mini-languages. You’ll hear them called “Domain Specific Languages”, or &lt;span class="caps"&gt;DSL&lt;/span&gt;’s. They are subsets of the Ruby language, and you’ll find them in Rake, Capistrano, rspec, shoulda, and more. They’re really everywhere in Ruby, to varying degrees.&lt;/p&gt;
+
+
+	&lt;p&gt;Although Rich tried to open my eyes, I think I would have continued to try and push Copland if it weren’t for Jim Weirich. Jim took the idea of a Ruby-ish &lt;span class="caps"&gt;DSL&lt;/span&gt; for dependency injection and made something concrete of it. A few days after the conference he forwarded me a draft of an &lt;a href="http://onestepback.org/index.cgi/Tech/Ruby/DependencyInjectionInRuby.rdoc"&gt;article he was writing&lt;/a&gt;, in which he described dependency injection and gave a very simple (and very elegant) implementation of a DI framework in Ruby. Instead of static configuration, he’d written a basic &lt;span class="caps"&gt;DSL&lt;/span&gt; for declaring how the dependencies related to each other.&lt;/p&gt;
+
+
+	&lt;p&gt;It was a moment of epiphany for me. Suddenly, I got it. I understood what &lt;span class="caps"&gt;DSL&lt;/span&gt;’s were about. I asked Jim for permission to take his simple implemention and build upon it.&lt;/p&gt;
+
+
+	&lt;p&gt;The result was &lt;a href="http://needle.rubyforge.org"&gt;Needle&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;h2&gt;Needle&lt;/h2&gt;
+
+
+	&lt;p&gt;Now, I’m much prouder of Needle than of Copland, because it is much closer to Ruby’s philosophy than Java. There are some pretty cool designs in there, too, though I use the term “cool” here to mean “neat without having any real practical application.”&lt;/p&gt;
+
+
+	&lt;p&gt;Needle, though better, was still far from the mark.&lt;/p&gt;
+
+
+	&lt;p&gt;As an example of why it misses the mark, consider Needle’s “pipeline” concept. Conceptually, it allowed you to specify a sequence of post-processors that operated on an object, allowing you to wrap code around it and mimicking (among other things) &lt;span class="caps"&gt;AOP&lt;/span&gt;-like operations. It also let me (as the author of the library) easily implement things like deferred instantiation, singleton services, and the like.&lt;/p&gt;
+
+
+	&lt;p&gt;For example, suppose you wanted to declare a “deferred singleton” service, that logged all accesses to one of the methods. Underneath, Needle will create a pipeline of processors that operate on the service, returning a proxy object. The first time the proxy is accessed, it will check to see if the object has been instantiated yet. If it hasn’t, it’ll instantiate it (and cache it). The instantiation, though, actually just hands control to the next element in the pipeline, which in this case checks to see that the “singleton” constraint is enforced (e.g., all requests for this service return the same object, rather than instantiating a new object). The next pipeline element in the chain will wrap the interceptor code around the method in question, and yet another pipeline element would perform the actual object instantiation.&lt;/p&gt;
+
+
+	&lt;p&gt;Pipelines really were pretty slick in Needle.&lt;/p&gt;
+
+
+	&lt;p&gt;The problem, though, is that instead of leaving them as an implementation detail, I advertised them as one of Needle’s features. “Implement your own service models!” I cried. But, how often, really, is that likely to happen? Instead of exposing only the bare minimum of Needle’s &lt;span class="caps"&gt;API&lt;/span&gt;, I exposed as much of it as I could, &lt;em&gt;because&lt;/em&gt; I could.&lt;/p&gt;
+
+
+	&lt;p&gt;That’s a bad idea. Expose only what you need. The rest can be there, available, but not formally exposed. Only when (and if) you discover a need to expose more, should you expose more. This helps for several reasons.&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;A smaller &lt;span class="caps"&gt;API&lt;/span&gt; is easier to describe, document, and support.&lt;/li&gt;
+		&lt;li&gt;A smaller &lt;span class="caps"&gt;API&lt;/span&gt; is easier for people to learn.&lt;/li&gt;
+		&lt;li&gt;A smaller &lt;span class="caps"&gt;API&lt;/span&gt; is easier for you to test.&lt;/li&gt;
+		&lt;li&gt;Extending a small &lt;span class="caps"&gt;API&lt;/span&gt; is much less onerous on your users than changing or restricting a larger &lt;span class="caps"&gt;API&lt;/span&gt;.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;h2&gt;Net::SSH 1.x&lt;/h2&gt;
+
+
+	&lt;p&gt;Now, I’ve since come to my senses, but at one time I was completely head-over-heels in love with dependency injection. Like any schoolboy crush, it embarrasses me now to think about it, but there’s no denying it. The proof is everywhere in my project history.&lt;/p&gt;
+
+
+	&lt;p&gt;Net::SSH, in particular.&lt;/p&gt;
+
+
+	&lt;p&gt;At the time, I was looking for a good demonstration of the flexibility and power of dependency injection, and since Net::SSH was another of my pet projects at the time, it seemed like the perfect candidate.&lt;/p&gt;
+
+
+	&lt;p&gt;I was still stuck in the “just in case” mindset, though, and Net::SSH 1.x reflected that. Badly. For instance, I isolated all the OpenSSL crypto interfaces into their own module, because “what if someone wanted to plug in a different crypto lib?” Nevermind that there &lt;em&gt;was&lt;/em&gt; no other crypto lib for Ruby (and still isn’t, 4 years later). But &lt;span class="caps"&gt;WHAT IF&lt;/span&gt;?!?&lt;/p&gt;
+
+
+	&lt;p&gt;Now, separation of concerns and modularity are good things, when used in moderation. But like any design pattern, it becomes evil when taken to extremes. Too much modularity and you wind up with component soup (and I hope you’re hungry, because you’re going to have a &lt;em&gt;lot&lt;/em&gt; of it). With lots of tiny components, the interactions between those components can become difficult to test.&lt;/p&gt;
+
+
+	&lt;p&gt;It also fuzzes the line between the public, documented &lt;span class="caps"&gt;API&lt;/span&gt; and the internal, private &lt;span class="caps"&gt;API&lt;/span&gt;. When you have two large components, it is very easy to say “A is public, and B is private”, but when you have two &lt;em&gt;hundred&lt;/em&gt; components, where do you draw the line? It’s far too easy to let the “public” boundary meander a bit further into “private” territory than it should.&lt;/p&gt;
+
+
+	&lt;p&gt;Even worse, when I added dependency injection to the mix, it became very, very difficult to follow the the flow of the program, and to understand the dependencies. Pull up Net::SSH 1.1.4, for instance, and find net/ssh.rb. Just &lt;em&gt;try&lt;/em&gt; and figure out how a connection session is instantiated. It’s a mess. Unless you’re familiar with Needle, it’ll probably take you a long time to discover that the actual services are configured in the various services.rb files, but even after you figure that out, you still have to figure out how the different services interrelate. It’s a mess.&lt;/p&gt;
+
+
+	&lt;p&gt;But, isn’t that the opposite of what DI is supposed to do? Isn’t DI supposed to improve the maintainability and testability of your code? Yeah. The problem, though, was three-fold.&lt;/p&gt;
+
+
+	&lt;p&gt;First, Net::SSH, though complex in its way, was not really complex enough to need a dependency injection &lt;em&gt;framework&lt;/em&gt;. DI itself adds complexity, and a framework for doing dependency injection adds even more, so before you go that route you need to be very sure that the trade-off in complexity is worth it. If your project is too small, you’ll actually &lt;em&gt;increase&lt;/em&gt; the complexity of your project by adding a framework for doing DI.&lt;/p&gt;
+
+
+	&lt;p&gt;Secondly, I was using a DI framework at a level that was really too granular. I was using the framework to wire together &lt;em&gt;everything&lt;/em&gt;. No component was too small! No object too insignificant! I was on the dependency injection horse, and riding it for all it was worth. If I’d taken the time to really understand the pattern, though, I would have learned that though the pattern itself may be applied at the micro level, using a framework to do so is like nuking a mosquito—it works, but it leaves a mess behind.&lt;/p&gt;
+
+
+	&lt;p&gt;Which leads to the last problem with Net::SSH’s use of Needle: it is really only appropriate for wiring together components of an &lt;em&gt;application&lt;/em&gt;. Very, very few (Ruby) libraries will ever be complex enough, in themselves, to justify adding a dependency injection framework to them. Rather, let the application wire the libraries together as (and when) it needs to. Any more granular than that, and you’ll run into the same quagmire I did, I promise you.&lt;/p&gt;
+
+
+	&lt;h2&gt;Dependency Injection in Ruby&lt;/h2&gt;
+
+
+	&lt;p&gt;So, is there no room for DI in Ruby? There definitely is. I use DI nearly every day in Ruby, but I do &lt;em&gt;not&lt;/em&gt; use a DI framework. Ruby itself has sufficient power to represent any day-to-day DI idioms you need. Consider this one:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;A&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;B&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;new_client&lt;/span&gt;(with=&lt;span class="co"&gt;A&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;    with.new&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Here, B declares a factory method for generating new client objects. Because Ruby lets you declare default values for method arguments, you can let the default client implementation be A, which is the common case. But for testing, you can easily inject a mock into that method by passing an explicit parameter.&lt;/p&gt;
+
+
+	&lt;p&gt;For cases where that doesn’t work, you can use a second factory method:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;A&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;B&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;new_client&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    client.new&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;client&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="co"&gt;A&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Then, in your tests, you can subclass B, overriding the &lt;code&gt;client&lt;/code&gt; method to return your mock client implementation. It’s dependency injection, Jim, but probably not as you’ve known it.&lt;/p&gt;
+
+
+	&lt;p&gt;Hashes, too, are your friend. You can allow optional arguments via hashes to specify implementation classes, defaulting to the standard implementation classes but allowing clients to inject their own implementations where needed:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;A&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;B&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;initialize&lt;/span&gt;(options={})&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="iv"&gt;@client_impl&lt;/span&gt; = options[&lt;span class="sy"&gt;:client&lt;/span&gt;] || &lt;span class="co"&gt;A&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;new_client&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="iv"&gt;@client_impl&lt;/span&gt;.new&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;“Loose coupling” and “high cohesion” are terms you’ll hear bandied about in defense of dependency injection, and those traits are certainly desirable. But strike a balance with pragmatism. There will be some who call me heretic for saying this, but don’t be afraid to introduce tighter coupling when it makes sense. Loose coupling &lt;em&gt;everywhere&lt;/em&gt; is what I had with Net::SSH 1.x, and the result was nearly unmaintainable.&lt;/p&gt;
+
+
+	&lt;p&gt;Be wise. You’re competent. Trust your instincts.&lt;/p&gt;
+
+
+	&lt;h2&gt;Lessons learned&lt;/h2&gt;
+
+
+	&lt;p&gt;If you read nothing else from this article, take to heart these bite-sized bullet-points:&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;strong&gt;Direct translations are rarely accurate.&lt;/strong&gt; Try using the &lt;a href="http://www.google.com/language_tools?hl=en"&gt;Google translator&lt;/a&gt; to translate a paragraph from English, to Italian, to Japanese, and back to English, and you’ll see what I mean. The same is true of programming languages. Each language has it’s own idioms, and trying to take what works well in one language and force it directly into another language is doomed to fail, more often than not.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;Use your environment efficiently.&lt;/strong&gt; Try as you might, you’ll never make a ball out of a &lt;span class="caps"&gt;LEGO&lt;/span&gt; brick by rolling it between your hands. You’ll just bloody your palms. Learn what your environment is capable of. Reading other people’s code is a great way to do this.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;&lt;span class="caps"&gt;DSL&lt;/span&gt;’s, not static configuration.&lt;/strong&gt; Ruby excels at representing &lt;span class="caps"&gt;DSL&lt;/span&gt;’s. Whenever you can, consider using a &lt;span class="caps"&gt;DSL&lt;/span&gt; instead of static configuration for your applications. You’ll find it will simplify a lot more than it complicates.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;DI frameworks are unnecessary.&lt;/strong&gt; In more rigid environments, they have value. In agile environments like Ruby, not so much. The patterns themselves may still be applicable, but beware of falling into the trap of thinking you need a special tool for everything. Ruby is Play-Doh, remember! Let’s keep it that way.&lt;/li&gt;
+		&lt;li&gt;&lt;strong&gt;Just in time. Not just in case.&lt;/strong&gt; Don’t play “what if” games when you’re coding. Practice discipline, and implement only what you need, when you need it. You’ll wind up with tighter, more testable code that is easier to maintain in the long run.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;Learning to program is a journey, and I’m still learning, myself. I’m not perfect at applying the rules above, but I’ve found that when I do, I’m much happier. I think you will be, too.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://weblog.jamisbuck.org/">
+    <author>
+      <name>Jamis</name>
+    </author>
+    <id>tag:weblog.jamisbuck.org,2008-10-10:4985</id>
+    <published>2008-10-10T16:16:00Z</published>
+    <updated>2008-10-10T23:04:20Z</updated>
+    <category term="Essays and Rants" />
+    <category term="textmate" />
+    <category term="vim" />
+    <link href="http://weblog.jamisbuck.org/2008/10/10/coming-home-to-vim" rel="alternate" type="text/html" />
+    <title>Coming home to Vim</title>
+<content type="html">
+            &lt;p&gt;Over three years ago, &lt;a href="http://weblog.jamisbuck.org/2005/4/10/text-editing-dilemma"&gt;I was faced with a dilemma&lt;/a&gt;. I had recently switched to the Mac (from Linux) and was still using my text editor of choice (&lt;a href="http://www.vim.org"&gt;vim&lt;/a&gt;), but at the time, vim’s “integration” with &lt;span class="caps"&gt;OS X&lt;/span&gt; was pretty minimal (and that’s putting it optimistically). I experimented with emacs, but it never clicked for me, and honestly, emacs on &lt;span class="caps"&gt;OS X&lt;/span&gt; wasn’t all that better than vim at the time. Sadly, reluctantly, I said good-bye to vim and switched to &lt;a href="http://www.macromates.com"&gt;TextMate&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;TextMate was (and certainly still is) a fantastic text editor. The project drawer was awesome, finding files via cmd-T was super powerful, and smarter auto-completion and snippets promised a new and faster way to pound code. After a couple of months of reteaching my fingers how to edit text, I was happy.&lt;/p&gt;
+
+
+	&lt;p&gt;Sometimes, though, late at night, I would think again of vim.&lt;/p&gt;
+
+
+	&lt;p&gt;Fast forward three years. The vim landscape is different now. There is actually a Mac-friendly &lt;span class="caps"&gt;GUI&lt;/span&gt; version of vim now, &lt;a href="http://code.google.com/p/macvim"&gt;MacVim&lt;/a&gt;, which actually looks like it belongs on &lt;span class="caps"&gt;OS X&lt;/span&gt;. Vim 7 supports UI tabs, and a much more powerful auto-completion mechanism than before. And plugins like &lt;a href="http://www.vim.org/scripts/script.php?script_id=1567"&gt;rails.vim&lt;/a&gt; and &lt;a href="http://www.vim.org/scripts/script.php?script_id=1984"&gt;fuzzyfinder.vim&lt;/a&gt; mean that TextMate no longer has a corner on powerful project navigation.&lt;/p&gt;
+
+
+	&lt;p&gt;For the last few weeks I’ve been toying with switching back to vim. TextMate’s “snippet” feature never clicked for me, and the only times I used it were by accident (when it annoyed me more than it helped me), but I really was hooked on the project browser, and cmd-T, and a few other things. I realized that, with a little work, perhaps a way could be found to reimplement most of the things I loved about TextMate, in vim.&lt;/p&gt;
+
+
+	&lt;p&gt;This last week I’ve worked exclusively in vim, to test that theory. It’s like coming home. As I said, TextMate is a powerful and wonderful editor, too, but &lt;em&gt;differently&lt;/em&gt; powerful and wonderful. Vim’s wonderfulness and power is the wonderfulness and power of git, or linux, where the learning curve is steep (ridiculously steep at times), but the rewards of mastery are sublime. I didn’t even realize I had missed a sane shift-J, or using the dot key to repeat the last command. Fix transposition typos with ‘xp’. Select a single word with ‘viw’. Drop bookmarks with ‘m’, and jump right back to them with single quote.&lt;/p&gt;
+
+
+	&lt;p&gt;If any of that makes your stomach roil, then vim is not for you. :) But to me, it’s like being embraced by a long-lost friend after years apart. And vim holds no grudges.&lt;/p&gt;
+
+
+	&lt;p&gt;There was still the issue of the TextMate features that I had particularly come to love. First to tackle was cmd-T, since my workflow had become so dependent on that for finding files. Takeshi &lt;span class="caps"&gt;NISHIDA&lt;/span&gt;’s &lt;a href="http://www.vim.org/scripts/script.php?script_id=1984"&gt;fuzzyfinder.vim&lt;/a&gt; script seemed like exactly what I wanted…at first. It’s definitely a powerful tool, but the fuzzy finder for files was not TextMate’s cmd-T, and my instinctive attempts to treat it so were causing me a lot of aggravation.&lt;/p&gt;
+
+
+	&lt;p&gt;So I took an evening and wrote &lt;a href="http://github.com/jamis/fuzzy_file_finder/tree/master"&gt;fuzzy_file_finder&lt;/a&gt;, a Ruby library that mimics (and improves on, if I do say so myself) TextMate’s cmd-T functionality. Then, I extended fuzzyfinder.vim with &lt;a href="http://github.com/jamis/fuzzyfinder_textmate/tree/master"&gt;fuzzyfinder_textmate&lt;/a&gt;, which bound the fuzzy_file_finder to vim. The result?&lt;/p&gt;
+
+
+	&lt;p&gt;See for yourself: &lt;a href="http://s3.amazonaws.com/buckblog/videos/fuzzyfinder_textmate.mov"&gt;http://s3.amazonaws.com/buckblog/videos/fuzzyfinder_textmate.mov&lt;/a&gt; (600K, QuickTime video).&lt;/p&gt;
+
+
+	&lt;p&gt;I’m still working on a solution for the project browser. Yes, I know there are several (“countless” might be a more accurate term) vim plugins that present a project drawer in a split window, but even before being spoiled by TextMate those didn’t feel right to me. I’m experimenting with a cocoa tree view that sends files to a specific vim server, and it mostly works, but I’m still not sure it’s the right solution. If I do come up with something, I’ll definitely open it up and share it. (On the other hand, if any of you out there in readerland already know of such a thing, please point me at it!)&lt;/p&gt;
+
+
+	&lt;p&gt;So, I’m still reacquaiting myself with all my old muscle memories, but here are some commands I wasn’t previously very familiar with which are proving useful in conquering my TextMate habits:&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;:e [file]. This is great if you don’t want to use fuzzy finding. Vim will even do tab completion to make things easier.&lt;/li&gt;
+		&lt;li&gt;:ls. Shows all of your buffers.&lt;/li&gt;
+		&lt;li&gt;:buffer [file]. Fantastic for quickly switching between buffers. You can give it just part of a file name and it will jump to the buffer that matches.&lt;/li&gt;
+		&lt;li&gt;The ctrl-6 (technically ctrl-caret) key is awesome for switching back and forth between two buffers. For instance, if I just need to quickly look at one buffer, I can jump right back to where I was with ctrl-caret.&lt;/li&gt;
+		&lt;li&gt;ctrl-W introduces a whole host of options for working with split windows.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;And lastly, can I just say that Vim is seriously the poster-child for documentation? I recommend spending 15-30 minutes, every day, in :help, just exploring. There is a &lt;span class="caps"&gt;LOT&lt;/span&gt; there, and all excellently documented.&lt;/p&gt;
+
+
+	&lt;p&gt;So, all you vimsters out there: what commands do &lt;em&gt;you&lt;/em&gt; frequently use? What features of vim are you so dependent on that you’d be useless without them? Do share!&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://weblog.jamisbuck.org/">
+    <author>
+      <name>Jamis</name>
+    </author>
+    <id>tag:weblog.jamisbuck.org,2008-08-29:4739</id>
+    <published>2008-08-29T03:11:00Z</published>
+    <updated>2008-08-29T03:12:38Z</updated>
+    <category term="Announcements" />
+    <category term="capistrano" />
+    <link href="http://weblog.jamisbuck.org/2008/8/29/capistrano-2-5-0-2" rel="alternate" type="text/html" />
+    <title>Capistrano 2.5.0</title>
+<content type="html">
+            &lt;p&gt;Capistrano 2.5.0 is now available! You can read the full release announcement on the &lt;a href="http://capify.org/2008/8/29/capistrano-2-5-0"&gt;capify.org news blog&lt;/a&gt;.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://weblog.jamisbuck.org/">
+    <author>
+      <name>Jamis</name>
+    </author>
+    <id>tag:weblog.jamisbuck.org,2008-08-27:4731</id>
+    <published>2008-08-27T15:11:00Z</published>
+    <updated>2008-08-27T15:17:53Z</updated>
+    <category term="Announcements" />
+    <category term="sqlite3-ruby" />
+    <link href="http://weblog.jamisbuck.org/2008/8/27/sqlite3-ruby-1-2-3" rel="alternate" type="text/html" />
+    <title>SQLite3-Ruby 1.2.3</title>
+<content type="html">
+            &lt;p&gt;&lt;a href="http://rubyforge.org/projects/sqlite-ruby"&gt;SQLite3-Ruby&lt;/a&gt; version 1.2.3 is now available. It is a maintenance release, fixing just a few things:&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;The permissions on the database.rb and translator.rb files in 1.2.2 were incorrect, resulting in broken sqlite3-ruby installations for many *nix users. This is now fixed.&lt;/li&gt;
+		&lt;li&gt;A few more Ruby 1.9 compatibility issues were patched.&lt;/li&gt;
+		&lt;li&gt;Some optimizations were applied to speed up iterating over result sets.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;To install or upgrade:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;  gem install sqlite3-ruby&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Thanks!&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://weblog.jamisbuck.org/">
+    <author>
+      <name>Jamis</name>
+    </author>
+    <id>tag:weblog.jamisbuck.org,2008-08-26:4715</id>
+    <published>2008-08-26T15:43:00Z</published>
+    <updated>2008-11-14T05:02:17Z</updated>
+    <category term="Projects" />
+    <category term="capistrano" />
+    <link href="http://weblog.jamisbuck.org/2008/8/26/cap-1-4-1-go-1-4-2-now" rel="alternate" type="text/html" />
+    <title>Cap 1.4.1? Go 1.4.2. Now.</title>
+<content type="html">
+            &lt;p&gt;Are you currently using Capistrano 1.4.1? If so, drop everything (I mean it, do this &lt;span class="caps"&gt;RIGHT NOW&lt;/span&gt;) and install Capistrano 1.4.2.&lt;/p&gt;
+
+
+	&lt;p&gt;Why, you ask?&lt;/p&gt;
+
+
+	&lt;p&gt;Capistrano 1.4.1 will work just fine, right up until you decide you want to experiment with Capistrano 2. When you do that, Cap 2.3+ will install net-ssh 2.x, which kills Capistrano 1.4.1 in all kinds of really obscure ways.&lt;/p&gt;
+
+
+	&lt;p&gt;The good news is that Cap 1.4.2 is completely compatible with Cap 1.4.1. It adds no new features. The only “bug” it fixes is that if you ever install net-ssh 2.x, Cap 1.4.2 will still happily continue to work.&lt;/p&gt;
+
+
+	&lt;p&gt;Ultimately, an upgrade to Cap 2 is recommended, but I understand it’s not feasible for everyone. So, if you’re one of those who can’t go cap2 yet, please please please &lt;span class="caps"&gt;PLEASE&lt;/span&gt; &lt;em&gt;&lt;span class="caps"&gt;PLEASE FOR THE LOVE OF ALL THAT IS HOLY&lt;/span&gt;&lt;/em&gt; upgrade to Cap 1.4.2. It’ll make your life easier, and it’ll make my life easier (because I won’t have to keep troubleshooting the same issues over and over). Thanks!&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://weblog.jamisbuck.org/">
+    <author>
+      <name>Jamis</name>
+    </author>
+    <id>tag:weblog.jamisbuck.org,2008-08-15:4665</id>
+    <published>2008-08-15T22:50:00Z</published>
+    <updated>2008-08-15T22:59:45Z</updated>
+    <category term="Tips &amp; Tricks" />
+    <category term="vmware ubuntu" />
+    <link href="http://weblog.jamisbuck.org/2008/8/15/cloning-ubuntu-hardy-image-in-vmware-fusion" rel="alternate" type="text/html" />
+    <title>Cloning Ubuntu Hardy image in VMWare Fusion</title>
+<content type="html">
+            &lt;p&gt;Having spent the better part of a day googling and struggling, I figured it would possibly benefit others if I took a minute to post the steps I took to clone a VMWare Fusion image. The image in question is of Ubuntu Server (Hardy). I’m using VMWare Fusion 2 (beta 2).&lt;/p&gt;
+
+
+	&lt;p&gt;Just find your “Virtual Machines” folder (should be in your Documents folder), and copy the image in question to a new location. (The images are actually folders; a simple “cp -R” worked fine for me.)&lt;/p&gt;
+
+
+	&lt;p&gt;Then, open the copied image in VMWare Fusion and boot it. VMWare Fusion will ask if you if you copied or moved the image—be sure to say you copied it (that let’s VMWare set up a new &lt;span class="caps"&gt;MAC&lt;/span&gt; address for your image).&lt;/p&gt;
+
+
+	&lt;p&gt;Go ahead and log in once the server boots. You’ll find networking is all hosed. To fix networking, this worked for me:&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;“sudo hostname blah”, to set the hostname. This doesn’t change it permanently, so you’ll also want to:&lt;/li&gt;
+		&lt;li&gt;“sudo vim /etc/hostname”. Change the contents of the file to the hostname you want. Then:&lt;/li&gt;
+		&lt;li&gt;“sudo vim /etc/hosts”. Replace all mentions of the old hostname with the new hostname.&lt;/li&gt;
+		&lt;li&gt;“sudo vim /etc/udev/rules.d/70-persistent-net.rules”. There will be two entries in this file. The first points eth0 at the old &lt;span class="caps"&gt;MAC&lt;/span&gt; address, and the second points eth1 at the new. Go ahead and delete the first entry, and change “eth1” to “eth0” in the second (and now only) entry.&lt;/li&gt;
+		&lt;li&gt;“sudo shutdown -r now” to restart your virtual machine.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;Once your machine comes back up, you should have a network again! Now, if only VMWare Fusion could bake all this in somehow… :/&lt;/p&gt;
+
+
+	&lt;p&gt;(Related: &lt;a href="http://www.gorillapond.com/2006/07/31/install-vmware-tools-on-ubuntu/"&gt;installing VMWare Tools on Ubuntu server&lt;/a&gt;. It’s from 2006, but it still worked well enough for me, though I followed the instructions for tweaking the network that the VMWare Tools install gave at the end, rather than what this gent said.)&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://weblog.jamisbuck.org/">
+    <author>
+      <name>Jamis</name>
+    </author>
+    <id>tag:weblog.jamisbuck.org,2008-08-14:4663</id>
+    <published>2008-08-14T20:33:00Z</published>
+    <updated>2008-08-14T21:07:05Z</updated>
+    <category term="Reviews" />
+    <category term="capistrano" />
+    <category term="tutorial" />
+    <link href="http://weblog.jamisbuck.org/2008/8/14/tutorial-2-recap" rel="alternate" type="text/html" />
+    <title>Tutorial #2: Recap</title>
+<content type="html">
+            &lt;p&gt;So, the second Capistrano tutorial session has come and gone. It was a great session, though it started pretty rough. (I was very unprepared for some windows-related configuration issues during the first half-hour. That won’t happen again.) I appreciate everyone’s patience who participated!&lt;/p&gt;
+
+
+	&lt;p&gt;I’m going to be quiet on the tutorial front for the next several weeks, but its not because I’ve given up on them. I’m going to be rethinking some aspects of them. I really want these to be opportunities for people to master capistrano, and while these first two tutorials have been very useful to those who attended (their words, not mine), I think they could be even better.&lt;/p&gt;
+
+
+	&lt;p&gt;Stay tuned!&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://weblog.jamisbuck.org/">
+    <author>
+      <name>Jamis</name>
+    </author>
+    <id>tag:weblog.jamisbuck.org,2008-08-04:4660</id>
+    <published>2008-08-04T16:14:00Z</published>
+    <updated>2008-08-04T16:30:11Z</updated>
+    <category term="Announcements" />
+    <category term="capistrano" />
+    <category term="tutorial" />
+    <link href="http://weblog.jamisbuck.org/2008/8/4/online-capistrano-tutorial-2" rel="alternate" type="text/html" />
+    <title>Online Capistrano Tutorial #2</title>
+<content type="html">
+            &lt;p&gt;The first online Capistrano tutorial session was very successful, thanks to everyone who participated. Now, it’s time to try again!&lt;/p&gt;
+
+
+	&lt;p&gt;The second online Capistrano tutorial session is now open for registration: &lt;a href="http://events.capify.org/events/2"&gt;http://events.capify.org/events/2&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;It is scheduled for Wednesday, August 13th, at 7pm (Mountain time), and will last two hours (plus up to an hour at the end for Q&amp;A). As before, this tutorial is targeted at &lt;em&gt;beginning&lt;/em&gt; Capistrano users, those will little or no prior experience. (If you’re looking for a session for more advanced users, keep watching this space—I’ll probably do one of those eventually, as soon as I can write a curriculum for it.)&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://weblog.jamisbuck.org/">
+    <author>
+      <name>Jamis</name>
+    </author>
+    <id>tag:weblog.jamisbuck.org,2008-07-10:4621</id>
+    <published>2008-07-10T16:22:00Z</published>
+    <updated>2008-07-10T16:24:24Z</updated>
+    <category term="Redirect" />
+    <category term="capistrano" />
+    <category term="documentation" />
+    <link href="http://weblog.jamisbuck.org/2008/7/10/call-for-capistrano-links" rel="alternate" type="text/html" />
+    <title>Call for (Capistrano) Links</title>
+<content type="html">
+            &lt;p&gt;Tyler Bird, the director of the Capistrano documentation effort, has begun collecting links about Capistrano, to build a centralized de.licio.us account that people can use to find cap-related info around the web. You can read more about it on the &lt;a href="http://capify.org/2008/7/10/capistrano-links-on-del-icio-us"&gt;capify.org/news&lt;/a&gt; site.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://weblog.jamisbuck.org/">
+    <author>
+      <name>Jamis</name>
+    </author>
+    <id>tag:weblog.jamisbuck.org,2008-07-07:4613</id>
+    <published>2008-07-07T14:28:00Z</published>
+    <updated>2008-07-07T14:30:51Z</updated>
+    <category term="Announcements" />
+    <category term="capistrano" />
+    <category term="tutorial" />
+    <link href="http://weblog.jamisbuck.org/2008/7/7/online-capistrano-tutorial-session" rel="alternate" type="text/html" />
+    <title>Online Capistrano Tutorial Session</title>
+<content type="html">
+            &lt;p&gt;Today I’m pleased to announce the first online Capistrano tutorial session. It will be held via &lt;a href="http://www.campfirenow.com"&gt;Campfire&lt;/a&gt; on July 15 at 7pm &lt;span class="caps"&gt;MDT&lt;/span&gt;, focusing on Capistrano basics for Rails deployment. The session will accomodate only ten people. For all details, read up at capify.org:&lt;/p&gt;
+
+
+	&lt;pre&gt;&lt;code&gt;&lt;a href="http://www.capify.org/2008/7/6/online-capistrano-tutorial-session"&gt;http://www.capify.org/2008/7/6/online-capistrano-tutorial-session&lt;/a&gt;&lt;/code&gt;&lt;/pre&gt;
+
+
+	&lt;p&gt;If this proves popular enough, and if the format works out well, I’ll consider hosting more of these on more advanced topics.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://weblog.jamisbuck.org/">
+    <author>
+      <name>Jamis</name>
+    </author>
+    <id>tag:weblog.jamisbuck.org,2008-06-28:4605</id>
+    <published>2008-06-28T15:15:00Z</published>
+    <updated>2008-06-28T15:20:12Z</updated>
+    <category term="Announcements" />
+    <category term="capistrano" />
+    <link href="http://weblog.jamisbuck.org/2008/6/28/capistrano-2-4-3" rel="alternate" type="text/html" />
+    <title>Capistrano 2.4.3</title>
+<content type="html">
+            &lt;p&gt;Capistrano 2.4.3 is now available!&lt;/p&gt;
+
+
+	&lt;blockquote&gt;
+		&lt;p&gt;gem install capistrano&lt;/p&gt;
+	&lt;/blockquote&gt;
+
+
+	&lt;p&gt;This is a maintenance release. The changes since 2.4.0 include:&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;In 2.4.0 and earlier, port settings in ssh_config files were not honored by Capistrano. 2.4.3 will now honor those settings.&lt;/li&gt;
+		&lt;li&gt;The capture() helper no longer raises an exception if stderr text is received, but instead emits a warning.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;Please report bugs to the Capistrano bug tracker at &lt;a href="http://www.lighthouseapp.com"&gt;Lighthouse&lt;/a&gt;:&lt;/p&gt;
+
+
+	&lt;blockquote&gt;
+		&lt;p&gt;&lt;a href="http://capistrano.lighthouseapp.com/projects/8716/tickets"&gt;http://capistrano.lighthouseapp.com/projects/8716/tickets&lt;/a&gt;&lt;/p&gt;
+	&lt;/blockquote&gt;
+
+
+	&lt;p&gt;Patches should be generated against the latest version of the code at &lt;a href="http://github.com"&gt;GitHub&lt;/a&gt;:&lt;/p&gt;
+
+
+	&lt;blockquote&gt;
+		&lt;p&gt;&lt;a href="http://github.com/jamis/capistrano"&gt;http://github.com/jamis/capistrano&lt;/a&gt;&lt;/p&gt;
+	&lt;/blockquote&gt;
+
+
+	&lt;p&gt;You may submit patches via email, as submissions to the Capistrano bug tracker, or as GitHub pull-requests.&lt;/p&gt;
+          </content>  </entry>
+  <entry xml:base="http://weblog.jamisbuck.org/">
+    <author>
+      <name>Jamis</name>
+    </author>
+    <id>tag:weblog.jamisbuck.org,2008-06-28:4603</id>
+    <published>2008-06-28T15:02:00Z</published>
+    <updated>2008-06-28T15:14:18Z</updated>
+    <category term="Announcements" />
+    <category term="net-ssh" />
+    <link href="http://weblog.jamisbuck.org/2008/6/28/net-ssh-2-0-3" rel="alternate" type="text/html" />
+    <title>Net::SSH 2.0.3</title>
+<content type="html">
+            &lt;p&gt;Net::SSH 2.0.3 is now available!&lt;/p&gt;
+
+
+	&lt;blockquote&gt;
+		&lt;p&gt;gem install net-ssh&lt;/p&gt;
+	&lt;/blockquote&gt;
+
+
+	&lt;p&gt;This is a maintenance release that fixes the following issues:&lt;/p&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;Net::SSH 2.0.2 and earlier wouldn’t work with Mocana &lt;span class="caps"&gt;SSH&lt;/span&gt; and a few other esoteric &lt;span class="caps"&gt;SSH&lt;/span&gt; servers commonly used on routers and other hardware. (Net::SSH truncated the server’s identity string at the first space, rather than at the end of the line as required by the specification, causing subsequent algorithm negotiations to fail.) 2.0.3 now preserves the entire identity string as reported by the remote server.&lt;/li&gt;
+		&lt;li&gt;Malformed entries in ssh_config files are silently ignored now.&lt;/li&gt;
+		&lt;li&gt;Entries in ssh_config files that are delimited with equals-signs are now parsed correctly.&lt;/li&gt;
+		&lt;li&gt;The NameError raised when a forwarded port request could not be satisfied now raises the correct exception.&lt;/li&gt;
+		&lt;li&gt;Net::SSH::Version is now Comparable, so you can test two version objects using comparison operators.&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;Please report bugs to the bug tracker for net-ssh on rubyforge:&lt;/p&gt;
+
+
+	&lt;blockquote&gt;
+		&lt;p&gt;&lt;a href="http://rubyforge.org/tracker/?atid=1123&amp;amp;#38;group_id=274&amp;amp;#38;func=browse"&gt;http://rubyforge.org/tracker/?atid=1123&amp;group_id=274&amp;func=browse&lt;/a&gt;&lt;/p&gt;
+	&lt;/blockquote&gt;
+
+
+	&lt;p&gt;If you have a patch you want to submit, please make sure to create it against the latest version of the code in the Net::SSH repository on &lt;a href="http://github.com"&gt;GitHub&lt;/a&gt;:&lt;/p&gt;
+
+
+	&lt;blockquote&gt;
+		&lt;p&gt;&lt;a href="http://github.com/jamis/net-ssh/commits/master"&gt;http://github.com/jamis/net-ssh/commits/master&lt;/a&gt;&lt;/p&gt;
+	&lt;/blockquote&gt;
+
+
+	&lt;p&gt;Patches may be submitted via email, as GitHub pull-requests, or as posts to the net-ssh tracker on rubyforge.&lt;/p&gt;
+          </content>  </entry>
+</feed>

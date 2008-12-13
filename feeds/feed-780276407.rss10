@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:admin="http://webns.net/mvcb/"
+>
+
+<channel rdf:about="http://use.perl.org/~Alias/journal/friends/">
+<title>Alias's Friends' Journals</title>
+<link>http://use.perl.org/~Alias/journal/friends/</link>
+<description>Alias's Friends' use Perl Journals</description>
+<dc:language>en-us</dc:language>
+<dc:rights>use Perl; is Copyright 1998-2006, Chris Nandor. Stories, comments, journals, and other submissions posted on use Perl; are Copyright their respective owners.</dc:rights>
+<dc:date>2008-12-12T17:55:45+00:00</dc:date>
+<dc:publisher>pudge</dc:publisher>
+<dc:creator>pudge@perl.org</dc:creator>
+<dc:subject>Technology</dc:subject>
+<syn:updatePeriod>hourly</syn:updatePeriod>
+<syn:updateFrequency>1</syn:updateFrequency>
+<syn:updateBase>1970-01-01T00:00+00:00</syn:updateBase>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/38054?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37981?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37934?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37864?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37819?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37796?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37717?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37684?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37566?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37541?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37510?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37360?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37322?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37289?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~merlyn/journal/37272?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37268?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37239?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37171?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37165?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/37117?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/36652?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/36613?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/36590?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/36577?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/36534?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/36511?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/36450?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/36439?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/36432?from=rss" />
+  <rdf:li rdf:resource="http://use.perl.org/~acme/journal/36419?from=rss" />
+ </rdf:Seq>
+</items>
+<image rdf:resource="http://use.perl.org/images/topics/useperl.gif" />
+</channel>
+
+<image rdf:about="http://use.perl.org/images/topics/useperl.gif">
+<title>Alias's Friends' Journals</title>
+<url>http://use.perl.org/images/topics/useperl.gif</url>
+<link>http://use.perl.org/~Alias/journal/friends/</link>
+</image>
+
+<item rdf:about="http://use.perl.org/~acme/journal/38054?from=rss">
+<title>Perl and Git</title>
+<link>http://use.perl.org/~acme/journal/38054?from=rss</link>
+<description>&lt;p&gt;&amp;quot;Like Perl, &lt;a href="http://git.or.cz/"&gt;Git&lt;/a&gt; has lots of flexibility, &lt;a href="http://www.perlfoundation.org/perl5/index.cgi?tmtowtdi"&gt;TMTOWTDI&lt;/a&gt;, and extensibility&amp;quot;, points out the &lt;a href="http://www.perlfoundation.org/perl5/index.cgi?git"&gt;Perl 5 Wiki page on Git&lt;/a&gt;. I&amp;#39;ve been looking at Git in somewhat detail recently. I even wrote &lt;a href="http://search.cpan.org/dist/Git-PurePerl/"&gt;Git::PurePerl&lt;/a&gt; to understand Git&amp;#39;s repository format in slightly more depth. I think Git is a very flexible way to develop and I particularly like &lt;a href="http://github.com/"&gt;github&lt;/a&gt; as a way to socially share repositories (and forks). See &lt;a href="http://github.com/acme/git-pureperl/tree/master"&gt;the Git::PurePerl repository&lt;/a&gt; for example.&lt;/p&gt;&lt;p&gt;Why should you look at Git now? Well, I &lt;a href="http://use.perl.org/~Alias/journal/38050"&gt;also&lt;/a&gt; have a secret...&lt;/p&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-12-09T16:04:07+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37981?from=rss">
+<title>London.pm Leader</title>
+<link>http://use.perl.org/~acme/journal/37981?from=rss</link>
+<description> &lt;div&gt;&lt;p&gt;The &lt;a href="http://conferences.yapceurope.org/lpw2008/"&gt;London Perl Workshop&lt;/a&gt; yesterday was a great success - lots of people turned up for three free tracks (and a tutorial track too). London.pm has a long history of leaders: Dave Cross,
+           Paul Mison, Mark Fowler, Simon Wistow and Greg McCarroll. At the last act of the day, Greg handed me the leadership of London.pm.&lt;br&gt; &lt;br&gt;Many thanks to Greg for a fantastic year. I&amp;#39;ll continue running London.pm as he has done and I have some wonderful plans for the next twelve months.&lt;/p&gt;&lt;p&gt;If there is anyone out there who still doubts that London.pm is a place
+where all things are possible; who still wonders if the dream of our
+founders is alive in our time; who still questions the power of our
+democracy, tonight is your answer. It&amp;#39;s the answer spoken by young and old, rich and poor, CPAN authors and CPAN users, developers, hackers, creators, designers, Londoners and out-of-Londoners - mongers who sent a message to
+the world that we have never been a collection of object-oriented programmers and procedural programmers: we are, and always will be, London Perl Mongers.&lt;/p&gt;&lt;/div&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-11-30T11:22:00+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37934?from=rss">
+<title>London Perl Workshop 2008</title>
+<link>http://use.perl.org/~acme/journal/37934?from=rss</link>
+<description> &lt;div&gt;&lt;p&gt;I&amp;#39;m really looking forward to the &lt;a href="http://conferences.yapceurope.org/lpw2008/"&gt;London Perl Workshop&lt;/a&gt; next weekend. It&amp;#39;s a free conference, so see you there&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;;-)&lt;/p&gt; &lt;/div&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-11-24T20:51:30+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37864?from=rss">
+<title>Perl 5.8.9 RC1 is out</title>
+<link>http://use.perl.org/~acme/journal/37864?from=rss</link>
+<description>&lt;a href="http://a3.vox.com/6a00c2251cf7cc549d010980b5deb3000b-500pi"&gt;[photo of Amelia]&lt;/a&gt;
+
+&lt;p&gt;As Nicholas &lt;a href="http://use.perl.org/article.pl?sid=08/11/11/1842248"&gt;pointed out on the front page&lt;/a&gt; of use.perl.org, Perl 5.8.9 Release Candidate 1 has been uploaded to CPAN. It contains a &lt;a href="http://search.cpan.org/~nwclark/perl-5.8.9-RC1/pod/perl589delta.pod"&gt;whole bunch of changes&lt;/a&gt; since Perl 5.8.8. We have tested it on our machines. We have tested it on build farms. We have tested it with as much of CPAN as we could. What we haven&amp;#39;t tested it with is the &lt;a href="http://www.perlfoundation.org/perl5/index.cgi?darkpan"&gt;DARKPAN&lt;/a&gt;: your code, your computer and servers, your work code, or any of your modules. &lt;a href="http://london.pm.org/pipermail/london.pm/Week-of-Mon-20081110/015655.html"&gt;Blame Transfer Protocol initiated&lt;/a&gt;, as Nicholas points out slightly more informally on the London.pm mailing list: we would be very generous indeed if you could test the release candidate all code that you have to hand, and especially with work code. Think of it as your civic duty, if you lived in the city of Perl.&lt;/p&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-11-12T14:24:13+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37819?from=rss">
+<title>Net::Amazon::S3</title>
+<link>http://use.perl.org/~acme/journal/37819?from=rss</link>
+<description>&lt;a href="http://a1.vox.com/6a00c2251cf7cc549d0109d0e8bc89000f-500pi"&gt;[A photo of a pony]&lt;/a&gt;
+&lt;div&gt;&lt;p&gt;&amp;quot;The Net::Amazon::S3 module was written when the Amazon S3 service had just come out and it is a light wrapper around the APIs. Some bad API decisions were also made. The Net::Amazon::S3::Client, Net::Amazon::S3::Client::Bucket and Net::Amazon::S3::Client::Object classes are designed after years of usage to be easy to use for common tasks.&amp;quot;&lt;br&gt; &lt;br&gt;... is what I say in the new, unreleased version of Net::Amazon::S3. I&amp;#39;ve moved it to Moose and I&amp;#39;ve added the new Net::Amazon::S3::Client classes to make it really easy to do the things you most want to do with S3. I need input on the new classes - does it do what you need it to do? If you use the module already for a task, could you look at the new classes and give me feedback? The code is &lt;a href="http://code.google.com/p/cpan-net-amazon-s3/"&gt;hosted by Google Code&lt;/a&gt;, so you can check it out and &lt;a href="http://code.google.com/p/cpan-net-amazon-s3/source/list"&gt;see all my recent hacking&lt;/a&gt;. Cheers!&lt;/p&gt; &lt;/div&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-11-06T15:50:49+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37796?from=rss">
+<title>2008Q4 TPF Grant Proposals</title>
+<link>http://use.perl.org/~acme/journal/37796?from=rss</link>
+<description>                &lt;a href="http://a2.vox.com/6a00c2251cf7cc549d010980b31932000b-500pi"&gt;[A photo of a sign]&lt;/a&gt;
+
+ &lt;div&gt;&lt;p&gt;Every quarter, the &lt;a href="http://www.perlfoundation.org/"&gt;Perl Foundation&lt;/a&gt; organises a round of grant proposals. Please read the &lt;a href="http://news.perlfoundation.org/2008/11/2008q4_grant_proposals.html"&gt;2008Q4 Grant Proposals&lt;/a&gt; and leave us comments so that we can decide which grants to fund.&lt;/p&gt; &lt;/div&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-11-03T16:33:47+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37717?from=rss">
+<title>Mosso CloudFiles</title>
+<link>http://use.perl.org/~acme/journal/37717?from=rss</link>
+<description>&lt;a href="http://a4.vox.com/6a00c2251cf7cc549d00fad6b6e61c0005-500pi"&gt;[cloud slide]&lt;/a&gt;
+
+ &lt;div&gt;&lt;p&gt;Yesterday &lt;a href="http://www.rackspace.com/blog/?p=106"&gt;Rackspace announced&lt;/a&gt; that it had acquired &lt;a href="http://www.slicehost.com/rackspace"&gt;Slicehost&lt;/a&gt; (one of the best VPS hosting services) and &lt;a href="http://www.jungledisk.com/RackspaceFAQ.aspx"&gt;Jungle Disk&lt;/a&gt; (a backup service that stores files on &lt;a href="http://www.amazon.com/s3/"&gt;Amazon S3.&lt;/a&gt; But that&amp;#39;s not all, it looks like they want to be the cloud provider of choice and have also launched &lt;a href="http://cloud.rackspace.com/"&gt;Rackspace Cloud services&lt;/a&gt;, including &lt;a href="http://cloud.rackspace.com/cloudfiles.jsp"&gt;Cloud Files&lt;/a&gt;: &amp;quot;Scalable, dynamic storage. Use as much or little as you want and only pay for what you use&amp;quot;. Rackspace have been hinting that they were working on this for a while, see &lt;a href="http://blog.racklabs.com/?p=77"&gt;How to Build a Storage System&lt;/a&gt; including the hint that this would be a good use for their older servers (looks like CloudFS has turned into Cloud Files).&lt;br&gt; &lt;br&gt;Now as the author of &lt;a href="http://search.cpan.org/dist/Net-Amazon-S3/"&gt;Net::Amazon::S3&lt;/a&gt; I was overjoyed. I&amp;#39;m in the middle of rewriting that module to make it more flexible and take full advantage of the S3 service. But there&amp;#39;s no point having backup in the cloud if there is only one place to back up, so I bought some chocolate and some Coke, hacked for an hour and released &lt;a href="http://search.cpan.org/dist/Net-Mosso-CloudFiles/"&gt;Net::Mosso::CloudFiles&lt;/a&gt; last night.&lt;br&gt; &lt;br&gt;The Cloud Files API is clearly based on the same ideas as the S3 API, but it&amp;#39;s slightly simpler: it is a clean REST design with plain text responses (instead of XML) and good use of HTTP response codes. The main difference I&amp;#39;ve found so far is that one of the great features of Amazon S3 is that listing a bucket (container) also gives you the ETags of the files. It looks like in CloudFiles you have to do a HEAD request on each file to get the same functionality at the moment. Otherwise, looks nice.&lt;/p&gt; &lt;/div&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-10-23T07:46:05+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37684?from=rss">
+<title>Tick My Boxes</title>
+<link>http://use.perl.org/~acme/journal/37684?from=rss</link>
+<description>                &lt;a href="http://a6.vox.com/6a00c2251cf7cc549d00fae8e77f96000b-500pi"&gt;[Book cover]&lt;/a&gt;
+&lt;p&gt;I&amp;#39;ve been so busy recently that I realise that I haven&amp;#39;t blogged about my book, &lt;a href="http://www.tickmyboxes.com/"&gt;Tick My Boxes&lt;/a&gt; &amp;quot;The web developers&amp;#39; checklist&amp;quot;. This was my most recent two-month project and I managed to get some great reviews of the beta version of the book from friends during YAPC::Europe - and even auction a couple of copies. The book is packed with useful advice on best practice web development techniques, so please buy a copy and tell me what you think. It has beautiful typography and is printed on demand.&lt;/p&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-10-17T08:13:21+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37566?from=rss">
+<title>JVM Language Summit</title>
+<link>http://use.perl.org/~acme/journal/37566?from=rss</link>
+<description>&lt;a href="http://a4.vox.com/6a00c2251cf7cc549d00fae8e2a6b4000b-500pi"&gt;[image of JVM languages]&lt;/a&gt;
+
+ &lt;div&gt;&lt;p&gt;The &lt;a href="http://openjdk.java.net/projects/mlvm/jvmlangsummit/"&gt;JVM Language Summit&lt;/a&gt; took place last week. It really shows off that many different languages are trying to target the JVM to take advantage of the years of optimisation knowledge that Sun has invested. If you want to see what projects are going on, they have kindly placed &lt;a href="http://wiki.jvmlangsummit.com/Presentations"&gt;most of the presentations&lt;/a&gt; online. It&amp;#39;s interesting to see &lt;a href="http://en.wikipedia.org/wiki/Metaobject_Protocol"&gt;Metaobject protocols&lt;/a&gt; (like &lt;a href="http://www.iinteractive.com/moose/"&gt;Moose&lt;/a&gt; and &lt;a href="http://code.google.com/p/joose-js/"&gt;Joose&lt;/a&gt;) coming into the limelight.&lt;/p&gt; &lt;/div&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-09-29T10:07:27+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37541?from=rss">
+<title>Typography</title>
+<link>http://use.perl.org/~acme/journal/37541?from=rss</link>
+<description>&lt;a href="http://a6.vox.com/6a00c2251cf7cc549d00fa969db41e0003-500pi"&gt;[image with ligatures]&lt;/a&gt;
+
+ &lt;div&gt;&lt;p&gt;Typography is such a simple thing. It&amp;#39;s the art of type, the design of making things as easy to read as possible. I&amp;#39;ve written about typography before, but I need to write again, because there is so much bad typography in the world. I&amp;#39;ve just finished reading the &lt;em&gt;His Dark Meterials&lt;/em&gt; trilogy by Philip Pullman. Now the books are quite exciting, but the typography in them is really poor, almost on par with Microsoft Word. A typical example is to check for a &lt;a href="http://en.wikipedia.org/wiki/Typographical_ligature"&gt;ligature&lt;/a&gt;, a new shape when two characters are close together. The typical one is an f followed by an i: fi. In most fonts, the f leans over the i and clashes with the dot (as it did in the trilogy). I&amp;#39;ve been spending a lot of time with typography recently as I&amp;#39;ve been putting the finishing touches to my book, &lt;a href="http://www.tickmyboxes.com/"&gt;Tick My Boxes&lt;/a&gt;, full of tips about web development.&lt;br&gt;The image above is from my book, notice the ff and fi ligatures, as well as small capitals for the abbreviation. Better typography for a better world!&lt;/p&gt; &lt;/div&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-09-25T14:26:10+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37510?from=rss">
+<title>London.pm technical meeting 9th October 2008</title>
+<link>http://use.perl.org/~acme/journal/37510?from=rss</link>
+<description>&lt;p&gt;London Perl Mongers is proud to announce a technical meeting on 9th October 2008.&lt;/p&gt;&lt;p&gt;London.pm organises technical meetings every two months. The technical meetings are a chance to find out what has been going on in the Perl community, what techniques people are using and how Perl integrates with other software.&lt;/p&gt;&lt;p&gt;The following speakers are planned:&lt;/p&gt;&lt;p&gt;Tara Andrews - 101011 manuscripts: Perl and the Chronicle of Matthew of Edessa&lt;br&gt;Leo Lapworth - Evolving Architecture - further&lt;br&gt;Dave Cross - Perl in RPM-Land&lt;br&gt;L&amp;#233;on Brocard - Searching CPAN offline&lt;br&gt;Ovid - Managing large-scale test suites&lt;/p&gt;&lt;p&gt;See more information and sign up (the venue has a limited size) at:&lt;/p&gt;&lt;p&gt;
+&amp;nbsp; &amp;nbsp; &lt;a href="http://londonpmtech.appspot.com/"&gt;http://londonpmtech.appspot.com/&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Regards, L&amp;#233;on&lt;/p&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-09-22T17:20:53+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37360?from=rss">
+<title>British Museum</title>
+<link>http://use.perl.org/~acme/journal/37360?from=rss</link>
+<description>            &lt;div&gt;&lt;p&gt;I went to the &lt;a href="http://www.britishmuseum.org/"&gt;British Museum&lt;/a&gt; yesterday to see &lt;a href="http://www.britishmuseum.org/whats_on/all_current_exhibitions/hadrian_empire_and_conflict.aspx"&gt;Hadrian: Empire and Conflict&lt;/a&gt;, which was pretty good. I booked online, and received the confirmation email below. I turned up at the museum, went to a self-checkin kiosk and it asked me for my order confirmation code. So what did I type in?&lt;/p&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt;
+
+
+                &lt;a href="http://acme.vox.com/library/photo/6a00c2251cf7cc549d00fa9697527c0002.html"&gt; &lt;/a&gt;&lt;/p&gt;
+
+            &lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;p&gt; &lt;a href="http://acme.vox.com/library/photo/6a00c2251cf7cc549d00fa9697527c0002.html"&gt;[Email confirmation image]&lt;/a&gt;&lt;/p&gt; &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;p&gt;Right, I type in the huge number next to &amp;quot;Order confirmation&amp;quot;. Unfortunately what it really wanted was the collection code, in small. It didn&amp;#39;t ask for that. It asked for the order confirmation code. The one not in the huge font. The one not in bold. No, I&amp;#39;m not sure why there are two codes either. It fell to one of the humans at the desk to tell us this. As I&amp;#39;m sure he has to do every few minutes every day of the week. Moral of this story: think careful about what you call things and make humans happier.&lt;/p&gt; &lt;/div&gt;&lt;/div&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-09-05T10:27:12+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37322?from=rss">
+<title>Moose</title>
+<link>http://use.perl.org/~acme/journal/37322?from=rss</link>
+<description>            &lt;div&gt;&lt;p&gt;I was going to write about how I have come to love &lt;a href="http://moose.perl.org/"&gt;Moose&lt;/a&gt;, but I can&amp;#39;t really beat how  John Napiorkowski &lt;a href="http://groups.google.com/group/perl-appengine/msg/7fa4714cf68b31bd"&gt;explained it&lt;/a&gt; on the &lt;a href="http://groups.google.com/group/perl-appengine/"&gt;perl-appengine list&lt;/a&gt;: &amp;quot;Without Moose, I&amp;#39;d probably have lost the faith and left Perl for
+another language...&amp;quot;&lt;/p&gt;&lt;/div&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-09-01T17:36:05+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37289?from=rss">
+<title>Which logging module?</title>
+<link>http://use.perl.org/~acme/journal/37289?from=rss</link>
+<description> &lt;div&gt;&lt;p&gt;One of Perl&amp;#39;s mottos is &amp;quot;there is more than one way to do it&amp;quot;. This is of course a great thing, except when there are two ways to do it and I can&amp;#39;t decide which is the better one or the most popular one. Such is it with logging modules - there are two stong candidates: &lt;a href="http://search.cpan.org/dist/Log-Dispatch/"&gt;Log::Dispatch&lt;/a&gt; and &lt;a href="http://search.cpan.org/dist/Log-Log4perl/"&gt;Log::Log4perl&lt;/a&gt;. Both do about the same thing, which makes it annoying to decide between the two. Which one do you use? Which one should become the best practice CPAN module for logging?&lt;/p&gt; &lt;/div&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-08-28T06:57:30+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~merlyn/journal/37272?from=rss">
+<title>Speaking to Atlanta Perl Mongers Thursday (before D*C)</title>
+<link>http://use.perl.org/~merlyn/journal/37272?from=rss</link>
+<description>&lt;p&gt;Join me for &lt;a href="http://atlanta.pm.org/schwartz-talk.html"&gt;A special night with Randal Schwartz&lt;/a&gt; where I'll be talking about "Perl second-best practices", which I describe as:&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt; &lt;i&gt;So, you don't have time to read Damian Conway's "Perl Best Practices" book, to understand his "256 guidelines on the art of coding to help you write better Perl code"? Hear Randal Schwartz provide the executive summary, including pointing out where Randal disagrees with Damian, and why. This high-speed overview will help you understand "code layout, naming conventions, choice of data and control structures, program decomposition, interface design and implementation, modularity, object orientation, error handling, testing, and debugging." But using shorter words.
+&lt;/i&gt;&lt;/p&gt;&lt;/div&gt; &lt;/blockquote&gt;&lt;p&gt;If everything goes well, I'll be recording this and putting it into &lt;a href="http://www.vimeo.com/merlyn/videos"&gt;my Vimeo feed&lt;/a&gt; in HD.&lt;/p&gt;</description>
+<dc:creator>merlyn</dc:creator>
+<dc:date>2008-08-25T21:16:05+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37268?from=rss">
+<title>IO</title>
+<link>http://use.perl.org/~acme/journal/37268?from=rss</link>
+<description>&lt;p&gt;I was microoptimising. I admit it. I was trying to get a little bit of code which read a part of a file going quickly, and I got slightly sidetracked. I noticed that &lt;a href="http://search.cpan.org/~rgarcia/perl-5.10.0/lib/PerlIO.pm"&gt;PerlIO&lt;/a&gt; had layers, so I played around with the layers and benchmarked things. I noticed that&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;:stdio was quite fast for my one test case, so I compiled a new Perl with&lt;nobr&gt; &lt;wbr&gt;&lt;/nobr&gt;./Configure -des -Uuseperlio -Dprefix=/home/acme/perl-5.10.0-stdio/ to ignore PerlIO and use stdio instead, then benchmarked things (didn&amp;#39;t really help). I eventually thought about using unbuffered IO, and noticed that it was much faster than all the others. Aha! I suddenly remember about buffered and unbuffered IO. Buffered IO using seek, read, and write is very handy when reading or writing the whole file. If you are actually doing random access in files then you should use sysseek, sysread and syswrite, doh!&lt;/p&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-08-25T16:05:13+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37239?from=rss">
+<title>Amazon EBS - Elastic Block Store</title>
+<link>http://use.perl.org/~acme/journal/37239?from=rss</link>
+<description>Amazon has finally launched its &lt;a href="http://www.allthingsdistributed.com/2008/08/amazon_ebs_elastic_block_store.html"&gt;Elastic Block Store&lt;/a&gt;, which is like a persistent network attached block device that is more reliable than a disk drive but less reliable than S3. It's an interesting compromise, and has compressed, incremental snapshots to S3.</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-08-21T07:50:42+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37171?from=rss">
+<title>YAPC::Europe Day 1</title>
+<link>http://use.perl.org/~acme/journal/37171?from=rss</link>
+<description>After a bit of hotel wrangling, I'm here in Copenhagen at &lt;a href="http://www.yapceurope2008.org/ye2008/"&gt;YAPC::Europe 2008&lt;/a&gt;. It's really sunny here, which is a nice surprise as the forecast for the week was rain, rain, rain. We even had lunch in the sun. The venue is the &lt;a href="http://www.cbs.dk/"&gt;Copenhagen Business School&lt;/a&gt; which is nice and large. The first order of the day was to announce that YAPC::Europe 2009 &lt;a href="http://www.yapceurope.org//news.html#20080813"&gt;would be in Lisbon&lt;/a&gt;. Then the conference proper started, with four tracks in parallel. All the talks are very interesting and as usual the best bit is the hallway track, chatting with friends old and new. Many thanks to the organizers!</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-08-13T13:55:44+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37165?from=rss">
+<title>Going to Copenhagen</title>
+<link>http://use.perl.org/~acme/journal/37165?from=rss</link>
+<description>I'm on my way to &lt;a href="http://www.yapceurope2008.org/ye2008/"&gt;YAPC::Europe 2008&lt;/a&gt; and I'm really looking forward to it. The &lt;a href="http://www.yapceurope2008.org/ye2008/schedule"&gt;schedule&lt;/a&gt; is amazing. See you there!</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-08-12T15:33:19+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/37117?from=rss">
+<title>CPAN::Mini::Webserver</title>
+<link>http://use.perl.org/~acme/journal/37117?from=rss</link>
+<description>&lt;div&gt;&lt;p&gt; &lt;a href="http://www.cpan.org/"&gt;CPAN&lt;/a&gt; is quite large at 4.9GB (&lt;a href="http://backpan.cpan.org/"&gt;BACKPAN&lt;/a&gt;, which holds everything ever uploaded to CPAN is even larger, at 11GB). This is why we have &lt;a href="http://search.cpan.org/dist//CPAN-Mini/"&gt;CPAN::Mini&lt;/a&gt;, which creates a minimal mirror of CPAN (&amp;quot;It contains only those files needed to install the newest version of every distribution&amp;quot;) which comes in at a very reasonable 872MB. The first time you run it, it takes a while, but updates run pretty quickly.&lt;br&gt; &lt;br&gt; &lt;a href="http://search.cpan.org/"&gt;search.cpan.org&lt;/a&gt; is a pretty useful website for searching CPAN. Unfortunately sometimes I am not online. Sometimes I am online but have very spotty access. You can&amp;#39;t run search.cpan.org locally as it is closed-source. I&amp;#39;ve been annoyed about this in the past, errr, seven years now, but haven&amp;#39;t quite figured out the proper solution. Now I have: let me announce to the world &lt;a href="http://search.cpan.org/dist/CPAN-Mini-Webserver/"&gt;CPAN::Mini::Webserver&lt;/a&gt;.&lt;br&gt; &lt;br&gt;You must create a minicpan with CPAN::Mini. Then install the module and simply run minicpan_webserver. This finds out where your minicpan lies, reads some indexes from it, and starts a web server. Through the web interface you can search for authors, distributions and packages, browse distributions by author, browse files in a distribution, see the documentation of any file and see syntax-highlighted Perl code. All while offline. Try it out now!&lt;br&gt; &lt;br&gt;It works well enough, but I have some more plans. Let&amp;#39;s have a BoF about it at &lt;a href="http://www.yapceurope2008.org/ye2008/"&gt;YAPC::Europe&lt;/a&gt; in Copenhagen. Tell me what you think, L&amp;#233;on.&lt;/p&gt; &lt;/div&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-08-07T06:46:22+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/36652?from=rss">
+<title>use.perl.org is slow or down</title>
+<link>http://use.perl.org/~acme/journal/36652?from=rss</link>
+<description>Very often use.perl.org is slow or down for me. It's also 1990s technology. My next few blog posts will be on &lt;a href="http://acme.vox.com/"&gt;my other blog&lt;/a&gt;. Let's see how it goes.</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-06-11T12:32:31+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/36613?from=rss">
+<title>London.pm Technical Meeting 29th May 2008 Photos</title>
+<link>http://use.perl.org/~acme/journal/36613?from=rss</link>
+<description>We had a London.pm &lt;a href="http://londonpmtech.appspot.com/"&gt;tech meet&lt;/a&gt; on 29th May 2008. Thanks to Dirk-Jan Koopman, who took &lt;a href="http://flickr.com/photos/acme/sets/72157605481220370/"&gt;some great photos&lt;/a&gt;.</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-06-07T17:46:26+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/36590?from=rss">
+<title>JavaOne 2008</title>
+<link>http://use.perl.org/~acme/journal/36590?from=rss</link>
+<description>&lt;p&gt;
+&lt;a href="http://java.sun.com/javaone/sf/index.jsp"&gt;JavaOne 2008&lt;/a&gt; happened last month and as always they have
+put the &lt;a href="http://developers.sun.com/learning/javaoneonline/j1online.jsp?track=coolstuff&amp;amp;yr=2008"&gt;slides online&lt;/a&gt; for the sessions.
+It's fun to explore, here are my picks:
+&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt; &lt;a href="http://developers.sun.com/learning/javaoneonline/j1sessn.jsp?sessn=TS-5581&amp;amp;yr=2008&amp;amp;track=javase"&gt; Upcoming Java Programming-Language Changes&lt;/a&gt; &lt;/li&gt;&lt;li&gt; &lt;a href="http://developers.sun.com/learning/javaoneonline/j1sessn.jsp?sessn=TS-5263&amp;amp;yr=2008&amp;amp;track=coolstuff"&gt;Jamming with Java Technology: Making Music with JFugue and JFrets&lt;/a&gt; &lt;/li&gt;&lt;li&gt; &lt;a href="http://developers.sun.com/learning/javaoneonline/j1sessn.jsp?sessn=TS-5841&amp;amp;yr=2008&amp;amp;track=coolstuff"&gt;Project Aura: Recommendation for the Rest of Us&lt;/a&gt; &lt;/li&gt;&lt;li&gt; &lt;a href="http://developers.sun.com/learning/javaoneonline/j1sessn.jsp?sessn=TS-6608&amp;amp;yr=2008&amp;amp;track=coolstuff"&gt;Mapping Mars&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-06-05T08:33:34+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/36577?from=rss">
+<title>SquirrelFish</title>
+<link>http://use.perl.org/~acme/journal/36577?from=rss</link>
+<description>Well you know I'm a sucker for new virtual machines, but &lt;a href="http://webkit.org/blog/189/announcing-squirrelfish/"&gt;SquirrelFish&lt;/a&gt;,  WebKit&amp;#8217;s new core JavaScript engine sounds very interesting indeed (also &lt;a href="http://webkit.org/specs/squirrelfish-bytecode.html"&gt;see its bytecodes&lt;/a&gt;).</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-06-03T12:02:12+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/36534?from=rss">
+<title>AJAX Libraries API</title>
+<link>http://use.perl.org/~acme/journal/36534?from=rss</link>
+<description>&lt;p&gt;
+What's really suprising is that it has taken so long for someone to do something like the &lt;a href="http://code.google.com/apis/ajaxlibs/"&gt;AJAX Libraries API&lt;/a&gt;. It is essentially Google hosting popular JavaScript libraries in a central place - like Yahoo! has been doing for YUI &lt;a href="http://yuiblog.com/blog/2007/02/22/free-yui-hosting"&gt;for more than one year&lt;/a&gt;. Well at least it'll speed websites up that switch to it...
+&lt;/p&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-05-28T06:32:05+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/36511?from=rss">
+<title>10 modules I haven't yet talked about</title>
+<link>http://use.perl.org/~acme/journal/36511?from=rss</link>
+<description>&lt;p&gt;
+Following a suggestion from miyagawa, I've just proposed the following talk at YAPC::Europe in Copenhagen, titled "10 modules I haven't yet talked about":
+&lt;/p&gt;&lt;blockquote&gt;&lt;div&gt;&lt;p&gt;I have more than 70 modules on the CPAN and I haven't yet given a talk about most of them. I'll pick 10 useful but less-known modules of mine and give 2 minute introduction to each of those.&lt;/p&gt;&lt;/div&gt;
+&lt;/blockquote&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-05-25T08:11:34+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/36450?from=rss">
+<title>YAPC::Asia 2008 Day 2</title>
+<link>http://use.perl.org/~acme/journal/36450?from=rss</link>
+<description>&lt;p&gt;
+I thought I was over my jetlag, but instead I woke up at 4am this morning.
+This was a perfect excuse to head over to Tsukiji for sushi for breakfast.
+So good!
+&lt;/p&gt;&lt;p&gt;
+First talk this morning Kang-min Liu "JavaScript::Writer fun".
+"my new toy". "You write Perl, Perl writes JavaScript".
+AUTOLOAD magic. "The stock price on Prototype.js is going down"
+&lt;/p&gt;&lt;p&gt;
+Daisuke Murase (typester) - "FormValidator::Assets", which looked
+interesting.
+&lt;/p&gt;&lt;p&gt;
+Hiroshi Sakai (ziguzagu) - "OpenSource TypePad Mobile" was all about
+hacking Atom and Movable Type open source including HTML::Split,
+teasing about HTML::MobileFilter, open emoticons,
+&lt;/p&gt;&lt;p&gt;
+Masahiro Nagano (kazeburo) - "memcached in mixi" gave general details
+about memcached use and then went into details at mixi: 94% cache hit rate,
+223 GB cache in total, maxing out at 15,000 requests per second at 400Mbps.
+Interesting they up the number of buckets in memcached's internal
+hash table from 16 to 25 as they have large objects.
+&lt;/p&gt;&lt;p&gt;
+Chia-liang Kao - "Branch Managment with SVK 2.2". Workflow for feature-based
+development - features or bugfixes handled in branches, then merged to RC
+(QA, testing) and then merged to trunk and live. There is a new
+svk branch command.
+&lt;/p&gt;&lt;p&gt;
+Tatsuhiko Miyagawa - 20 modules I haven't yet talked about". Renamed
+to 10 modules: HTTP::ProxyPAC (Spidermonkey, argh),
+pQuery ('no capitalization 'pQuery::DOM'),
+PHP::Session "I've actually never used it",
+autobox::DateTime::Duration,
+Time::Duration::Parse,
+Encode::DoubleEncodedUTF8 "useful and evil",
+URI::Find::UTF8,
+Lingua::JA::Hepburn::Passport,
+LWP::UserAgent::Keychain,
+XML::Liberal "People are stupid. Cloud is full of crap. Software can fix it".
+"I want to hear your version of this talk if you have &amp;gt;10 modules on CPAN".
+&lt;/p&gt;&lt;p&gt;
+We had a quick lunch - curry-don, mmm.
+&lt;/p&gt;&lt;p&gt;
+Jesse Vincent - Everything but the secret sauce
+Find bugs faster: TAP::Harness::Parallel,
+  TAP::Harness::Remote, TAP::Harness::Remote::EC2,
+  Carp::REPL.
+Build web apps: Template::Declare (soon: compile to JavaScript),
+  CSS::Squish.
+Ship software: App::ChangeLogger, Shipwright (build all dependencies,
+  everything above libc - platform neutral source distribution
+  or platform specific binary distribution).
+Get input from users: Date::Extract, the feedback box.
+Own the Inbox: Net::IMAP::Server, with.hm.
+&lt;/p&gt;&lt;p&gt;
+Then we ate Yahoo! Japan snacks. Really.
+&lt;/p&gt;&lt;p&gt;
+Casey West - "Build Domain Specific Languages with Perl"
+testing DSL along the lines of "Title should be {'Twitter'}".
+&lt;/p&gt;&lt;p&gt;
+Jeff Kim - "Gungo and cloud computing, a scalable crawling
+and processing framework" deployed on EC2 and S3 and a happy user.
+&lt;/p&gt;&lt;p&gt;
+Then the wrapup started - Jose Castro told us what he had learned
+in Tokyo (he can stop Japanese babies crying), Schwern told us
+that Perl is a zombie (oh no wait, it was really about
+decentralising and caring about people who aren't other
+programmers) and then it was over. Many thanks for an excellent
+conference!
+&lt;/p&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-05-17T07:22:06+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/36439?from=rss">
+<title>Comments in the Perl debugger</title>
+<link>http://use.perl.org/~acme/journal/36439?from=rss</link>
+<description>Jesse has just reminded me of one of my favourite journal entries: Enjoy &lt;a href="http://use.perl.org/~acme/journal/23905"&gt;Comments in the Perl debugger&lt;/a&gt;.</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-05-16T05:47:30+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/36432?from=rss">
+<title>YAPC::Asia 2008 Day 1</title>
+<link>http://use.perl.org/~acme/journal/36432?from=rss</link>
+<description>&lt;p&gt;
+Here follows quick writeups of the talks I attended.
+&lt;/p&gt;&lt;p&gt;
+Jose Castro gave a "less than 10 minutes" Perl Foundation talk.
+&lt;/p&gt;&lt;p&gt;
+Larry Wall "Standards are meant to be broken" - A typical Larry talk,
+this covered many things including names, names dispatch at compile time,
+short names and long names. Not about the language, but more about the parser.
+Perl6 grammar is flexible and Perl has no core, no operators, no language,
+"I've been working on a "longest token matcher" for the last year",
+JIT lexer per language. "Perl 6 is designed to extensible, so please
+embrace it and extend it".
+&lt;/p&gt;&lt;p&gt;
+Kang-min Liu "Continuous testing". Eclipse plugin for java that runs
+JUnit led Test::Continuous, which checks the files you have modified and
+runs the appropriate tests. CPANFTW: File::Modified,
+Module::ExtractUse,
+App::Prove,
+Log::Dispatch.
+&lt;/p&gt;&lt;p&gt;
+Jose Castro "Perl Black Magic - Obfuscation, Golfing and Secret Operators
+in Perl" is still a very amusing talk on how to scare people.
+&lt;/p&gt;&lt;p&gt;
+Lunch! Sandwiches were provided, but I escaped for katsu-don nearby. Tasty!
+&lt;/p&gt;&lt;p&gt;
+Ingy dot Net "JavaScript Love for Perl Hackers" covered many topics:
+vroom - vim love for perl hackers.
+pQuery - jQuery in Perl (has one thing that jQuery will never have - Perl!).
+something to learn Taiwanese.
+JS.pm - storing JavaScript in CPAN.
+&lt;/p&gt;&lt;p&gt;
+Leon Brocard "Working in the cloud". Hey, that's my talk, and I managed to
+pull it off with only one line of Perl code in the whole slide deck. &lt;a href="http://www.slideshare.net/acme/living-in-the-cloud/"&gt;See the slides&lt;/a&gt;.
+&lt;/p&gt;&lt;p&gt;
+Jesse Vincent "Step 3: Prophet - A peer to peer replicated property
+database" was a very interesting talk and a little bit of a reply to mine.
+Prophet is the cool part, and as an example application there is a p2p
+bug tracker called sd. The hard part is self-healing conflict resolution.
+"svk for bigtracking". "private social networking".
+"Jifty, Catalyst, Rails models in future".
+&lt;/p&gt;&lt;p&gt;
+Chia-liang Kao "Running Perlish Small Business with Perl" was great.
+He made individualised buttons for OSDC.tw in Cairo. "Mass customisation".
+Perl hacking to make businesses run.
+&lt;/p&gt;&lt;p&gt;
+Makoto Kuwata "The Fastest Template Engine in the Perl World". Tenjin.
+Compiles to Perl templates because the templates are Perl.
+&lt;/p&gt;&lt;p&gt;
+Lightning talks were very amusing (and harder to write up).
+&lt;/p&gt;&lt;p&gt;
+Jonathan Rockway "String::TT". String overloading. Excellent.
+&lt;/p&gt;&lt;p&gt;
+"i love money!" yapc asia finances
+finances over time, -2 million yen before yapc::asia last year.
+2008: positive all the time, up to 2 million yen before conference
+&lt;/p&gt;&lt;p&gt;
+Daisuke Murase "Open Fastladder with Plagger" -
+popular web-based rss reader on your computer
+&lt;/p&gt;&lt;p&gt;
+"How many cpan authors are there now?".
+Annual nipotan contest.
+Best kwalitee Japanese CPAN author.
+Acme::CPANAuthors
+&lt;/p&gt;&lt;p&gt;
+Takeu Inoue
+"Developing Amazon's dynamo in POE and Erlang"
+kai - yet aother amazon's dynamo
+obra: "Actually, writing a new database is totally the new
+writing a new VCS"
+&lt;/p&gt;&lt;p&gt;
+Perlmachine: Perl OS, including Perl floppy driver. He will write multitask
+version.
+&lt;/p&gt;&lt;p&gt;
+Text::MicroMason (::SafeServerPage)
+&lt;/p&gt;&lt;p&gt;
+yusukebe "WebService::Simple" - to return cute photos of cats
+&lt;/p&gt;&lt;p&gt;
+ingy: vroom -vroom Vroom::Vroom / zhong shell
+&lt;/p&gt;&lt;p&gt;
+clkao "Prototype::Signatures" - how hard could it be?
+B::Scared. Hacks the parser. Faster than normal sub!
+&lt;/p&gt;&lt;p&gt;
+takesake "HTML Binary Hacks - GIF98a Polyglot"
+Detecting browser by how it parses HTML without JavaScript or CSS hacks.
+JavaScript in GIF, Perl in GIF
+&lt;/p&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-05-15T19:19:23+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+<item rdf:about="http://use.perl.org/~acme/journal/36419?from=rss">
+<title>YAPC::Asia 2008 Day 1</title>
+<link>http://use.perl.org/~acme/journal/36419?from=rss</link>
+<description>&lt;p&gt;
+A quick onigiri for breakfast and the largest YAPC so far begins,
+with 435 attendees.
+&lt;/p&gt;&lt;p&gt;
+Follow the conference on
+&lt;a href="http://live.yapcasia.org/"&gt;live.yapcasia.org&lt;/a&gt;.
+&lt;/p&gt;</description>
+<dc:creator>acme</dc:creator>
+<dc:date>2008-05-15T01:11:58+00:00</dc:date>
+<dc:subject>journal</dc:subject>
+</item>
+
+</rdf:RDF>

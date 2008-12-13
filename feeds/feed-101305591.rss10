@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:content="http://purl.org/rss/1.0/modules/content/"
+ xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:syn="http://purl.org/rss/1.0/modules/syndication/"
+ xmlns:admin="http://webns.net/mvcb/"
+>
+
+<channel rdf:about="http://search.cpan.org/">
+<title>search.cpan.org</title>
+<link>http://search.cpan.org/</link>
+<description>The CPAN search site</description>
+<dc:date>2008-12-12T16:35+00:00</dc:date>
+<syn:updatePeriod>hourly</syn:updatePeriod>
+<syn:updateFrequency>1</syn:updateFrequency>
+<syn:updateBase>1901-01-01T00:00+00:00</syn:updateBase>
+<items>
+ <rdf:Seq>
+  <rdf:li rdf:resource="http://search.cpan.org/~marcel/Business-Address-POBox-0.09/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~oesi/GSAPI-0.5/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~azawawi/Syntax-Highlight-Perl6-0.01_01/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~tonyc/Imager-0.67/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~dexter/Test-Assert-0.03/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~pshangov/Parse-ErrorString-Perl-0.01/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~zoffix/WWW-Google-Time-0.0102/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~bobtfish/Catalyst-View-TT-XHTML-1.000/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~fayland/HTTP-Session-Store-DBI-0.02/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~cosimo/Protocol-Modbus-0.05/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~jkutej/Chart-OFC2-0.03_02/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~ingy/IO-All-0.39/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~rsavage/Image-Magick-Chart-1.03/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~derhaag/FramesReady-1.017/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~dagolden/App-CPAN-Mini-Visit-v0.2.0/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~davidrw/Advent-Bundles-0.02/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~bayashi/GD-Chord-Piano-0.0.5/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~perigrin/Task-Kensho-0.0.5/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~elliotjs/Perl-Critic-1.093_03/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~gwolf/Config-File-1.46/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~lichtkind/Kephra-0.4.0_4/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~tokuhirom/Crypt-OpenSSL-RC4-0.02/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~rdf/Clone-0.30/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~gwolf/Config-File-1.45/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~yusukebe/WWW-YourFileHost-0.05/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~gugod/Rubyish-0.31/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~ewilhelm/Module-Build-0.30_01/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~beppu/Squatting-On-HTTP-Engine-0.01/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~kerr/Omega-DP41-Data-Current-0.3.1/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~rsavage/CGI-Uploader-2.90_02/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~dmuey/IPC-Open3-Utils-0.3/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~bayashi/Music-Chord-Note-0.0.4/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~davidrw/Advent-Bundles-0.01/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~davidrw/Pod-Advent-0.14/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~arthur/Parse-Stallion-0.50/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~enell/WWW-Translate-Apertium-0.07/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~zoffix/App-ZofCMS-Plugin-YouTube-0.0101/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~kerr/Omega-DP41-Data-Current-0.3/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~mpultz/Net-fonolo-1.2/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~vvelox/FreeBSD-Pkgs-FindUpdates-0.0.0/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~apocal/POE-Component-SimpleDBI-1.23/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~karman/CatalystX-CRUD-Model-RDBO-0.18/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~azawawi/Syntax-Highlight-Perl6-0.01/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~marr/SysAdmin-0.11/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~dhunt/PDL-Graphics-PLplot-0.46/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~ambs/Lingua-Identify-0.20/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~enell/WWW-Translate-Apertium-0.06/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~maros/DBIx-Class-DeleteAction-1.02/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~karman/SWISH-Prog-0.23/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~yvesago/Apache2-AuthCASSimple-0.06/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~cjones/DBIx-Compare-1.6b/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~cjones/DBIx-Compare-1.6/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~mschilli/Log-Log4perl-1.20/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~nuffin/Template-Declare-Anon-0.03/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~casiano/Parse-Eyapp-1.135/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~flora/Devel-Declare-0.003004/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~awwaiid/Continuity-0.997/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~rjbs/Email-Abstract-3.001/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~markov/Log-Report-0.20/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~rjbs/Module-Install-ExtraTests-0.006/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~mthurn/RDF-Simple-0.403/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~markov/Mail-Box-2.086/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~markov/Mail-Box-2.085/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~alexmass/Dynamic-Loader-1.08/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~jrockway/Catalyst-Plugin-Session-Store-BerkeleyDB-0.01/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~wiml/Mac-Finder-DSStore-0.90/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~keichner/Term-Sprog-0.03/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~keichner/Term-Sprog-0.02b/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~keichner/Term-Sprog-0.02/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~keichner/Term-Sprog-0.01b/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~oyama/Crypt-RC4-XS-0.02/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~davidrw/Pod-Advent-0.13/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~dagolden/Tee-0.13_51/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~andya/Acme-6502-0.74/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~beppu/AnyEvent-CouchDB-1.05/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~yappo/HTTP-Engine-0.0.20/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~cpkois/Bluepay-Bluepay20Post-0.15/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~cpkois/Bluepay-Bluepay20DailyReport-0.20/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~kmcgrath/Rose-DBx-Object-Cached-FastMmap-0.01/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~kappa/Text-Hyphen-RU-0.1/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~johnd/Apache2-ASP-2.08/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~adamk/Module-Manifest-0.04/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~sfryer/Email-Template-0.01/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~bobtfish/Catalyst-Authentication-Credential-HTTP-1.008/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~gwolf/User-Simple-1.42/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~chisel/Template-Plugin-ForumCode-0.0.5/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~rpettett/GD-Sparkline-0.02/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~karman/SWISH-Prog-0.22/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~rsavage/HTML-Revelation-1.00/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~karman/Rose-DBx-Object-Indexed-0.002/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~semuelf/Data-ParseBinary-0.11/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~silasmonk/Math-StochasticProcess-0.02/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~nuffin/Template-Plugin-JSON-0.04/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~kerr/Omega-DP41-Data-Current-0.01/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~johnd/Apache2-ASP-2.07/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~simonw/XML-Feed-0.41/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~miker/NetAddr-IP-4.021/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~elisa/Net-sFlow-0.10/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~dhunt/PDL-Graphics-PLplot-0.45/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~beppu/AnyEvent-CouchDB-1.04/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~nejigane/Language-MinCaml-0.01/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~yanick/Pod-Manual-0.08_02/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~marcel/Text-Pipe-0.08/" />
+  <rdf:li rdf:resource="http://search.cpan.org/~rjbs/Email-Sender-0.000/" />
+ </rdf:Seq>
+</items>
+<image rdf:resource="http://search.cpan.org/s/img/cpanrdf.jpg" />
+</channel>
+
+<image rdf:about="http://search.cpan.org/s/img/cpanrdf.jpg">
+<title>search.cpan.org</title>
+<url>http://search.cpan.org/s/img/cpanrdf.jpg</url>
+<link>http://search.cpan.org</link>
+</image>
+
+<item rdf:about="http://search.cpan.org/~marcel/Business-Address-POBox-0.09/">
+<title>Business-Address-POBox-0.09</title>
+<link>http://search.cpan.org/~marcel/Business-Address-POBox-0.09/</link>
+<description>Check whether an address looks like a P.O.Box </description>
+<dc:creator>Marcel Gr&#xFC;nauer == hanekomu (&#x8DF3;&#x306D;&#x8FBC;&#x3080;)</dc:creator>
+<dc:date>2008-12-12T14:04+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~oesi/GSAPI-0.5/">
+<title>GSAPI-0.5</title>
+<link>http://search.cpan.org/~oesi/GSAPI-0.5/</link>
+<description>Perl extension for accessing GNU Ghostscript </description>
+<dc:creator>Stefan Traby</dc:creator>
+<dc:date>2008-12-12T13:21+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~azawawi/Syntax-Highlight-Perl6-0.01_01/">
+<title>Syntax-Highlight-Perl6-0.01_01</title>
+<link>http://search.cpan.org/~azawawi/Syntax-Highlight-Perl6-0.01_01/</link>
+<description>Perl 6 syntax highlighter </description>
+<dc:creator>Ahmad M. Zawawi</dc:creator>
+<dc:date>2008-12-12T12:43+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~tonyc/Imager-0.67/">
+<title>Imager-0.67</title>
+<link>http://search.cpan.org/~tonyc/Imager-0.67/</link>
+<description>Perl extension for Generating 24 bit Images </description>
+<dc:creator>Tony Cook</dc:creator>
+<dc:date>2008-12-12T11:57+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~dexter/Test-Assert-0.03/">
+<title>Test-Assert-0.03</title>
+<link>http://search.cpan.org/~dexter/Test-Assert-0.03/</link>
+<description>Assertion methods for those who like JUnit. </description>
+<dc:creator>Piotr Roszatycki</dc:creator>
+<dc:date>2008-12-12T11:10+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~pshangov/Parse-ErrorString-Perl-0.01/">
+<title>Parse-ErrorString-Perl-0.01</title>
+<link>http://search.cpan.org/~pshangov/Parse-ErrorString-Perl-0.01/</link>
+<description>Parse error messages from the perl interpreter </description>
+<dc:creator>Petar Shangov</dc:creator>
+<dc:date>2008-12-12T11:01+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~zoffix/WWW-Google-Time-0.0102/">
+<title>WWW-Google-Time-0.0102</title>
+<link>http://search.cpan.org/~zoffix/WWW-Google-Time-0.0102/</link>
+<description>get time for various locations via Google </description>
+<dc:creator>Zoffix Znet</dc:creator>
+<dc:date>2008-12-12T10:57+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~bobtfish/Catalyst-View-TT-XHTML-1.000/">
+<title>Catalyst-View-TT-XHTML-1.000</title>
+<link>http://search.cpan.org/~bobtfish/Catalyst-View-TT-XHTML-1.000/</link>
+<description>A sub-class of the standard TT view which serves application/xhtml+xml content if the browser accepts it. </description>
+<dc:creator>Tomas Doran</dc:creator>
+<dc:date>2008-12-12T10:46+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~fayland/HTTP-Session-Store-DBI-0.02/">
+<title>HTTP-Session-Store-DBI-0.02</title>
+<link>http://search.cpan.org/~fayland/HTTP-Session-Store-DBI-0.02/</link>
+<description>store session data in DBI for HTTP::Session </description>
+<dc:creator>Fayland &#x6797;</dc:creator>
+<dc:date>2008-12-12T10:37+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~cosimo/Protocol-Modbus-0.05/">
+<title>Protocol-Modbus-0.05</title>
+<link>http://search.cpan.org/~cosimo/Protocol-Modbus-0.05/</link>
+<description>Implements Modbus protocol message generation and parsing </description>
+<dc:creator>Cosimo Streppone</dc:creator>
+<dc:date>2008-12-12T10:13+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~jkutej/Chart-OFC2-0.03_02/">
+<title>Chart-OFC2-0.03_02</title>
+<link>http://search.cpan.org/~jkutej/Chart-OFC2-0.03_02/</link>
+<description>Generate html and data files for use with Open Flash Chart version 2 </description>
+<dc:creator>Jozef Kutej</dc:creator>
+<dc:date>2008-12-12T09:01+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~ingy/IO-All-0.39/">
+<title>IO-All-0.39</title>
+<link>http://search.cpan.org/~ingy/IO-All-0.39/</link>
+<description>IO::All of it to Graham and Damian! </description>
+<dc:creator>Ingy d&#xF6;t Net</dc:creator>
+<dc:date>2008-12-12T07:45+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~rsavage/Image-Magick-Chart-1.03/">
+<title>Image-Magick-Chart-1.03</title>
+<link>http://search.cpan.org/~rsavage/Image-Magick-Chart-1.03/</link>
+<description>Use Image::Magick to create charts. </description>
+<dc:creator>Ron Savage</dc:creator>
+<dc:date>2008-12-12T07:27+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~derhaag/FramesReady-1.017/">
+<title>FramesReady-1.017</title>
+<link>http://search.cpan.org/~derhaag/FramesReady-1.017/</link>
+<description>a frames-capable version of LWP::UserAgent </description>
+<dc:creator>Alan E Derhaag</dc:creator>
+<dc:date>2008-12-12T07:21+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~dagolden/App-CPAN-Mini-Visit-v0.2.0/">
+<title>App-CPAN-Mini-Visit-v0.2.0</title>
+<link>http://search.cpan.org/~dagolden/App-CPAN-Mini-Visit-v0.2.0/</link>
+<description>explore each distribution in a minicpan repository </description>
+<dc:creator>David Golden</dc:creator>
+<dc:date>2008-12-12T06:40+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~davidrw/Advent-Bundles-0.02/">
+<title>Advent-Bundles-0.02</title>
+<link>http://search.cpan.org/~davidrw/Advent-Bundles-0.02/</link>
+<description>Collection of year-by-year Bundles of the Perl Advent Calendar modules </description>
+<dc:creator>David Westbrook</dc:creator>
+<dc:date>2008-12-12T05:27+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~bayashi/GD-Chord-Piano-0.0.5/">
+<title>GD-Chord-Piano-0.0.5</title>
+<link>http://search.cpan.org/~bayashi/GD-Chord-Piano-0.0.5/</link>
+<description>Generate Chord Table of Piano </description>
+<dc:creator>Dai Okabayashi</dc:creator>
+<dc:date>2008-12-12T05:04+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~perigrin/Task-Kensho-0.0.5/">
+<title>Task-Kensho-0.0.5</title>
+<link>http://search.cpan.org/~perigrin/Task-Kensho-0.0.5/</link>
+<description>A Glimpse at an Enlightened Perl </description>
+<dc:creator>Chris Prather</dc:creator>
+<dc:date>2008-12-12T04:45+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~elliotjs/Perl-Critic-1.093_03/">
+<title>Perl-Critic-1.093_03</title>
+<link>http://search.cpan.org/~elliotjs/Perl-Critic-1.093_03/</link>
+<description>Critique Perl source code for best-practices. </description>
+<dc:creator>Elliot Shank</dc:creator>
+<dc:date>2008-12-12T04:32+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~gwolf/Config-File-1.46/">
+<title>Config-File-1.46</title>
+<link>http://search.cpan.org/~gwolf/Config-File-1.46/</link>
+<description>Parse a simple configuration file </description>
+<dc:creator>Gunnar Wolf</dc:creator>
+<dc:date>2008-12-12T04:10+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~lichtkind/Kephra-0.4.0_4/">
+<title>Kephra-0.4.0_4</title>
+<link>http://search.cpan.org/~lichtkind/Kephra-0.4.0_4/</link>
+<description>crossplatform, GUI-Texteditor along perllike Paradigms </description>
+<dc:creator>Herbert Breunung</dc:creator>
+<dc:date>2008-12-12T04:09+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~tokuhirom/Crypt-OpenSSL-RC4-0.02/">
+<title>Crypt-OpenSSL-RC4-0.02</title>
+<link>http://search.cpan.org/~tokuhirom/Crypt-OpenSSL-RC4-0.02/</link>
+<description>RC4 library based on OpenSSL </description>
+<dc:creator>MATSUNO&#x2605;Tokuhiro</dc:creator>
+<dc:date>2008-12-12T04:06+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~rdf/Clone-0.30/">
+<title>Clone-0.30</title>
+<link>http://search.cpan.org/~rdf/Clone-0.30/</link>
+<description>recursively copy Perl datatypes </description>
+<dc:creator>Ray Finch</dc:creator>
+<dc:date>2008-12-12T04:05+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~gwolf/Config-File-1.45/">
+<title>Config-File-1.45</title>
+<link>http://search.cpan.org/~gwolf/Config-File-1.45/</link>
+<description>Parse a simple configuration file </description>
+<dc:creator>Gunnar Wolf</dc:creator>
+<dc:date>2008-12-12T03:58+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~yusukebe/WWW-YourFileHost-0.05/">
+<title>WWW-YourFileHost-0.05</title>
+<link>http://search.cpan.org/~yusukebe/WWW-YourFileHost-0.05/</link>
+<description>Get video informations from YourFileHost </description>
+<dc:creator>Yusuke Wada</dc:creator>
+<dc:date>2008-12-12T03:07+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~gugod/Rubyish-0.31/">
+<title>Rubyish-0.31</title>
+<link>http://search.cpan.org/~gugod/Rubyish-0.31/</link>
+<description>Perl programming, the rubyish way. </description>
+<dc:creator>&#x5289;&#x5EB7;&#x6C11;</dc:creator>
+<dc:date>2008-12-12T02:43+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~ewilhelm/Module-Build-0.30_01/">
+<title>Module-Build-0.30_01</title>
+<link>http://search.cpan.org/~ewilhelm/Module-Build-0.30_01/</link>
+<description>Build and install Perl modules </description>
+<dc:creator>Eric Wilhelm</dc:creator>
+<dc:date>2008-12-12T02:33+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~beppu/Squatting-On-HTTP-Engine-0.01/">
+<title>Squatting-On-HTTP-Engine-0.01</title>
+<link>http://search.cpan.org/~beppu/Squatting-On-HTTP-Engine-0.01/</link>
+<description>run Squatting apps on top of HTTP::Engine </description>
+<dc:creator>John Beppu</dc:creator>
+<dc:date>2008-12-12T02:20+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~kerr/Omega-DP41-Data-Current-0.3.1/">
+<title>Omega-DP41-Data-Current-0.3.1</title>
+<link>http://search.cpan.org/~kerr/Omega-DP41-Data-Current-0.3.1/</link>
+<description></description>
+<dc:creator>S. Kerr</dc:creator>
+<dc:date>2008-12-12T02:13+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~rsavage/CGI-Uploader-2.90_02/">
+<title>CGI-Uploader-2.90_02</title>
+<link>http://search.cpan.org/~rsavage/CGI-Uploader-2.90_02/</link>
+<description>Manage CGI uploads using an SQL database </description>
+<dc:creator>Ron Savage</dc:creator>
+<dc:date>2008-12-12T02:09+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~dmuey/IPC-Open3-Utils-0.3/">
+<title>IPC-Open3-Utils-0.3</title>
+<link>http://search.cpan.org/~dmuey/IPC-Open3-Utils-0.3/</link>
+<description>Functions for facilitating some of the most common open3() uses </description>
+<dc:creator>Daniel Muey</dc:creator>
+<dc:date>2008-12-12T01:22+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~bayashi/Music-Chord-Note-0.0.4/">
+<title>Music-Chord-Note-0.0.4</title>
+<link>http://search.cpan.org/~bayashi/Music-Chord-Note-0.0.4/</link>
+<description>get Chord Tone List from Chord Name </description>
+<dc:creator>Dai Okabayashi</dc:creator>
+<dc:date>2008-12-12T00:48+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~davidrw/Advent-Bundles-0.01/">
+<title>Advent-Bundles-0.01</title>
+<link>http://search.cpan.org/~davidrw/Advent-Bundles-0.01/</link>
+<description>Collection of year-by-year Bundles of the Perl Advent Calendar modules </description>
+<dc:creator>David Westbrook</dc:creator>
+<dc:date>2008-12-12T00:32+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~davidrw/Pod-Advent-0.14/">
+<title>Pod-Advent-0.14</title>
+<link>http://search.cpan.org/~davidrw/Pod-Advent-0.14/</link>
+<description>POD Formatter for The Perl Advent Calendar </description>
+<dc:creator>David Westbrook</dc:creator>
+<dc:date>2008-12-12T00:32+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~arthur/Parse-Stallion-0.50/">
+<title>Parse-Stallion-0.50</title>
+<link>http://search.cpan.org/~arthur/Parse-Stallion-0.50/</link>
+<description>EBNF based regexp backtracking parser and tree evaluator. </description>
+<dc:creator>Arthur Goldstein</dc:creator>
+<dc:date>2008-12-12T00:24+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~enell/WWW-Translate-Apertium-0.07/">
+<title>WWW-Translate-Apertium-0.07</title>
+<link>http://search.cpan.org/~enell/WWW-Translate-Apertium-0.07/</link>
+<description>Open source machine translation </description>
+<dc:creator>Enrique Nell</dc:creator>
+<dc:date>2008-12-12T00:24+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~zoffix/App-ZofCMS-Plugin-YouTube-0.0101/">
+<title>App-ZofCMS-Plugin-YouTube-0.0101</title>
+<link>http://search.cpan.org/~zoffix/App-ZofCMS-Plugin-YouTube-0.0101/</link>
+<description>CRUD-type plugin to manage YouTube videos </description>
+<dc:creator>Zoffix Znet</dc:creator>
+<dc:date>2008-12-11T22:46+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~kerr/Omega-DP41-Data-Current-0.3/">
+<title>Omega-DP41-Data-Current-0.3</title>
+<link>http://search.cpan.org/~kerr/Omega-DP41-Data-Current-0.3/</link>
+<description></description>
+<dc:creator>S. Kerr</dc:creator>
+<dc:date>2008-12-11T22:42+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~mpultz/Net-fonolo-1.2/">
+<title>Net-fonolo-1.2</title>
+<link>http://search.cpan.org/~mpultz/Net-fonolo-1.2/</link>
+<description>Perl interface to fonolo (http://fonolo.com/developer) </description>
+<dc:creator>Mike Pultz</dc:creator>
+<dc:date>2008-12-11T22:33+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~vvelox/FreeBSD-Pkgs-FindUpdates-0.0.0/">
+<title>FreeBSD-Pkgs-FindUpdates-0.0.0</title>
+<link>http://search.cpan.org/~vvelox/FreeBSD-Pkgs-FindUpdates-0.0.0/</link>
+<description>Finds updates for FreeBSD pkgs by checking the ports index. </description>
+<dc:creator>Zane C. Bowers</dc:creator>
+<dc:date>2008-12-11T22:24+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~apocal/POE-Component-SimpleDBI-1.23/">
+<title>POE-Component-SimpleDBI-1.23</title>
+<link>http://search.cpan.org/~apocal/POE-Component-SimpleDBI-1.23/</link>
+<description>Asynchronous non-blocking DBI calls in POE made simple </description>
+<dc:creator>Apocalypse</dc:creator>
+<dc:date>2008-12-11T22:15+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~karman/CatalystX-CRUD-Model-RDBO-0.18/">
+<title>CatalystX-CRUD-Model-RDBO-0.18</title>
+<link>http://search.cpan.org/~karman/CatalystX-CRUD-Model-RDBO-0.18/</link>
+<description>Rose::DB::Object CRUD </description>
+<dc:creator>Peter Karman</dc:creator>
+<dc:date>2008-12-11T21:49+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~azawawi/Syntax-Highlight-Perl6-0.01/">
+<title>Syntax-Highlight-Perl6-0.01</title>
+<link>http://search.cpan.org/~azawawi/Syntax-Highlight-Perl6-0.01/</link>
+<description>Perl 6 source code highlighter </description>
+<dc:creator>Ahmad M. Zawawi</dc:creator>
+<dc:date>2008-12-11T21:43+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~marr/SysAdmin-0.11/">
+<title>SysAdmin-0.11</title>
+<link>http://search.cpan.org/~marr/SysAdmin-0.11/</link>
+<description>Parent class for SysAdmin wrapper modules. </description>
+<dc:creator>Miguel A. Rivera</dc:creator>
+<dc:date>2008-12-11T21:41+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~dhunt/PDL-Graphics-PLplot-0.46/">
+<title>PDL-Graphics-PLplot-0.46</title>
+<link>http://search.cpan.org/~dhunt/PDL-Graphics-PLplot-0.46/</link>
+<description>Object-oriented interface from perl/PDL to the PLPLOT plotting library </description>
+<dc:creator>Douglas Hunt</dc:creator>
+<dc:date>2008-12-11T20:23+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~ambs/Lingua-Identify-0.20/">
+<title>Lingua-Identify-0.20</title>
+<link>http://search.cpan.org/~ambs/Lingua-Identify-0.20/</link>
+<description>Language identification </description>
+<dc:creator>Alberto Manuel Brand&#xE3;o Sim&#xF5;es</dc:creator>
+<dc:date>2008-12-11T19:48+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~enell/WWW-Translate-Apertium-0.06/">
+<title>WWW-Translate-Apertium-0.06</title>
+<link>http://search.cpan.org/~enell/WWW-Translate-Apertium-0.06/</link>
+<description>Open source machine translation </description>
+<dc:creator>Enrique Nell</dc:creator>
+<dc:date>2008-12-11T19:42+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~maros/DBIx-Class-DeleteAction-1.02/">
+<title>DBIx-Class-DeleteAction-1.02</title>
+<link>http://search.cpan.org/~maros/DBIx-Class-DeleteAction-1.02/</link>
+<description>Define delete triggers </description>
+<dc:creator>Maro&#x161; Koll&#xE1;r</dc:creator>
+<dc:date>2008-12-11T17:51+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~karman/SWISH-Prog-0.23/">
+<title>SWISH-Prog-0.23</title>
+<link>http://search.cpan.org/~karman/SWISH-Prog-0.23/</link>
+<description>information retrieval application framework </description>
+<dc:creator>Peter Karman</dc:creator>
+<dc:date>2008-12-11T17:00+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~yvesago/Apache2-AuthCASSimple-0.06/">
+<title>Apache2-AuthCASSimple-0.06</title>
+<link>http://search.cpan.org/~yvesago/Apache2-AuthCASSimple-0.06/</link>
+<description>Apache2 module to authentificate trough a CAS server </description>
+<dc:creator>Yves Agostini</dc:creator>
+<dc:date>2008-12-11T16:46+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~cjones/DBIx-Compare-1.6b/">
+<title>DBIx-Compare-1.6b</title>
+<link>http://search.cpan.org/~cjones/DBIx-Compare-1.6b/</link>
+<description>Compare database content </description>
+<dc:creator>Christopher Jones</dc:creator>
+<dc:date>2008-12-11T16:45+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~cjones/DBIx-Compare-1.6/">
+<title>DBIx-Compare-1.6</title>
+<link>http://search.cpan.org/~cjones/DBIx-Compare-1.6/</link>
+<description>Compare database content </description>
+<dc:creator>Christopher Jones</dc:creator>
+<dc:date>2008-12-11T16:38+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~mschilli/Log-Log4perl-1.20/">
+<title>Log-Log4perl-1.20</title>
+<link>http://search.cpan.org/~mschilli/Log-Log4perl-1.20/</link>
+<description>Log4j implementation for Perl </description>
+<dc:creator>Michael Schilli</dc:creator>
+<dc:date>2008-12-11T16:12+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~nuffin/Template-Declare-Anon-0.03/">
+<title>Template-Declare-Anon-0.03</title>
+<link>http://search.cpan.org/~nuffin/Template-Declare-Anon-0.03/</link>
+<description>Deprecated Anonymous Template::Declare templates </description>
+<dc:creator>&#x5D9;&#x5D5;&#x5D1;&#x5DC; &#x5E7;&#x5D5;&#x5D2;&#x27;&#x5DE;&#x5DF; (Yuval Kogman)</dc:creator>
+<dc:date>2008-12-11T15:47+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~casiano/Parse-Eyapp-1.135/">
+<title>Parse-Eyapp-1.135</title>
+<link>http://search.cpan.org/~casiano/Parse-Eyapp-1.135/</link>
+<description>Extensions for Parse::Yapp </description>
+<dc:creator>Casiano Rodriguez-Leon</dc:creator>
+<dc:date>2008-12-11T14:58+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~flora/Devel-Declare-0.003004/">
+<title>Devel-Declare-0.003004</title>
+<link>http://search.cpan.org/~flora/Devel-Declare-0.003004/</link>
+<description>Adding keywords to perl, in perl </description>
+<dc:creator>Florian Ragwitz</dc:creator>
+<dc:date>2008-12-11T14:05+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~awwaiid/Continuity-0.997/">
+<title>Continuity-0.997</title>
+<link>http://search.cpan.org/~awwaiid/Continuity-0.997/</link>
+<description>Abstract away statelessness of HTTP, for stateful Web applications </description>
+<dc:creator>Brock Wilcox</dc:creator>
+<dc:date>2008-12-11T13:34+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~rjbs/Email-Abstract-3.001/">
+<title>Email-Abstract-3.001</title>
+<link>http://search.cpan.org/~rjbs/Email-Abstract-3.001/</link>
+<description>unified interface to mail representations </description>
+<dc:creator>Ricardo SIGNES</dc:creator>
+<dc:date>2008-12-11T13:20+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~markov/Log-Report-0.20/">
+<title>Log-Report-0.20</title>
+<link>http://search.cpan.org/~markov/Log-Report-0.20/</link>
+<description>report a problem, pluggable handlers and language support </description>
+<dc:creator>Mark Overmeer</dc:creator>
+<dc:date>2008-12-11T13:19+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~rjbs/Module-Install-ExtraTests-0.006/">
+<title>Module-Install-ExtraTests-0.006</title>
+<link>http://search.cpan.org/~rjbs/Module-Install-ExtraTests-0.006/</link>
+<description>contextual tests that the harness can ignore </description>
+<dc:creator>Ricardo SIGNES</dc:creator>
+<dc:date>2008-12-11T13:18+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~mthurn/RDF-Simple-0.403/">
+<title>RDF-Simple-0.403</title>
+<link>http://search.cpan.org/~mthurn/RDF-Simple-0.403/</link>
+<description>read and write RDF without complication </description>
+<dc:creator>Martin &#x27;Kingpin&#x27; Thurn</dc:creator>
+<dc:date>2008-12-11T11:30+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~markov/Mail-Box-2.086/">
+<title>Mail-Box-2.086</title>
+<link>http://search.cpan.org/~markov/Mail-Box-2.086/</link>
+<description>manage a mailbox, a folder with messages </description>
+<dc:creator>Mark Overmeer</dc:creator>
+<dc:date>2008-12-11T11:07+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~markov/Mail-Box-2.085/">
+<title>Mail-Box-2.085</title>
+<link>http://search.cpan.org/~markov/Mail-Box-2.085/</link>
+<description>manage a mailbox, a folder with messages </description>
+<dc:creator>Mark Overmeer</dc:creator>
+<dc:date>2008-12-11T10:54+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~alexmass/Dynamic-Loader-1.08/">
+<title>Dynamic-Loader-1.08</title>
+<link>http://search.cpan.org/~alexmass/Dynamic-Loader-1.08/</link>
+<description>call a script without to know where is his location. </description>
+<dc:creator>Alexandre Masselot</dc:creator>
+<dc:date>2008-12-11T10:44+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~jrockway/Catalyst-Plugin-Session-Store-BerkeleyDB-0.01/">
+<title>Catalyst-Plugin-Session-Store-BerkeleyDB-0.01</title>
+<link>http://search.cpan.org/~jrockway/Catalyst-Plugin-Session-Store-BerkeleyDB-0.01/</link>
+<description>store sessions in a berkeleydb </description>
+<dc:creator>Jonathan Rockway</dc:creator>
+<dc:date>2008-12-11T10:35+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~wiml/Mac-Finder-DSStore-0.90/">
+<title>Mac-Finder-DSStore-0.90</title>
+<link>http://search.cpan.org/~wiml/Mac-Finder-DSStore-0.90/</link>
+<description></description>
+<dc:creator>Wim Lewis</dc:creator>
+<dc:date>2008-12-11T10:28+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~keichner/Term-Sprog-0.03/">
+<title>Term-Sprog-0.03</title>
+<link>http://search.cpan.org/~keichner/Term-Sprog-0.03/</link>
+<description>Perl extension for displaying a progress indicator on a terminal. </description>
+<dc:creator>Klaus Eichner</dc:creator>
+<dc:date>2008-12-11T10:04+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~keichner/Term-Sprog-0.02b/">
+<title>Term-Sprog-0.02b</title>
+<link>http://search.cpan.org/~keichner/Term-Sprog-0.02b/</link>
+<description>Perl extension for displaying a progress indicator on a terminal. </description>
+<dc:creator>Klaus Eichner</dc:creator>
+<dc:date>2008-12-11T09:50+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~keichner/Term-Sprog-0.02/">
+<title>Term-Sprog-0.02</title>
+<link>http://search.cpan.org/~keichner/Term-Sprog-0.02/</link>
+<description>Perl extension for displaying a progress indicator on a terminal. </description>
+<dc:creator>Klaus Eichner</dc:creator>
+<dc:date>2008-12-11T09:32+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~keichner/Term-Sprog-0.01b/">
+<title>Term-Sprog-0.01b</title>
+<link>http://search.cpan.org/~keichner/Term-Sprog-0.01b/</link>
+<description>Perl extension for displaying a progress indicator on a terminal. </description>
+<dc:creator>Klaus Eichner</dc:creator>
+<dc:date>2008-12-11T07:58+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~oyama/Crypt-RC4-XS-0.02/">
+<title>Crypt-RC4-XS-0.02</title>
+<link>http://search.cpan.org/~oyama/Crypt-RC4-XS-0.02/</link>
+<description>Perl implementation of the RC4 encryption algorithm </description>
+<dc:creator>&#x5C0F;&#x5C71;&#x6D69;&#x4E4B;</dc:creator>
+<dc:date>2008-12-11T07:54+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~davidrw/Pod-Advent-0.13/">
+<title>Pod-Advent-0.13</title>
+<link>http://search.cpan.org/~davidrw/Pod-Advent-0.13/</link>
+<description>POD Formatter for The Perl Advent Calendar </description>
+<dc:creator>David Westbrook</dc:creator>
+<dc:date>2008-12-11T06:03+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~dagolden/Tee-0.13_51/">
+<title>Tee-0.13_51</title>
+<link>http://search.cpan.org/~dagolden/Tee-0.13_51/</link>
+<description>Pure Perl emulation of GNU tee </description>
+<dc:creator>David Golden</dc:creator>
+<dc:date>2008-12-11T05:49+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~andya/Acme-6502-0.74/">
+<title>Acme-6502-0.74</title>
+<link>http://search.cpan.org/~andya/Acme-6502-0.74/</link>
+<description>Pure Perl 65C02 simulator. </description>
+<dc:creator>Andy Armstrong</dc:creator>
+<dc:date>2008-12-11T04:41+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~beppu/AnyEvent-CouchDB-1.05/">
+<title>AnyEvent-CouchDB-1.05</title>
+<link>http://search.cpan.org/~beppu/AnyEvent-CouchDB-1.05/</link>
+<description>a non-blocking CouchDB client based on jquery.couch.js </description>
+<dc:creator>John Beppu</dc:creator>
+<dc:date>2008-12-11T03:32+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~yappo/HTTP-Engine-0.0.20/">
+<title>HTTP-Engine-0.0.20</title>
+<link>http://search.cpan.org/~yappo/HTTP-Engine-0.0.20/</link>
+<description>Web Server Gateway Interface and HTTP Server Engine Drivers (Yet Another Catalyst::Engine) </description>
+<dc:creator>Kazuhiro Osawa</dc:creator>
+<dc:date>2008-12-11T03:10+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~cpkois/Bluepay-Bluepay20Post-0.15/">
+<title>Bluepay-Bluepay20Post-0.15</title>
+<link>http://search.cpan.org/~cpkois/Bluepay-Bluepay20Post-0.15/</link>
+<description></description>
+<dc:creator>Christopher Kois</dc:creator>
+<dc:date>2008-12-11T03:04+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~cpkois/Bluepay-Bluepay20DailyReport-0.20/">
+<title>Bluepay-Bluepay20DailyReport-0.20</title>
+<link>http://search.cpan.org/~cpkois/Bluepay-Bluepay20DailyReport-0.20/</link>
+<description></description>
+<dc:creator>Christopher Kois</dc:creator>
+<dc:date>2008-12-11T03:04+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~kmcgrath/Rose-DBx-Object-Cached-FastMmap-0.01/">
+<title>Rose-DBx-Object-Cached-FastMmap-0.01</title>
+<link>http://search.cpan.org/~kmcgrath/Rose-DBx-Object-Cached-FastMmap-0.01/</link>
+<description>Rose::DB::Object Cache Cache::FastMmap </description>
+<dc:creator>Kevin C. McGrath</dc:creator>
+<dc:date>2008-12-11T01:08+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~kappa/Text-Hyphen-RU-0.1/">
+<title>Text-Hyphen-RU-0.1</title>
+<link>http://search.cpan.org/~kappa/Text-Hyphen-RU-0.1/</link>
+<description>determine positions for hyphens inside russian words </description>
+<dc:creator>&#x410;&#x43B;&#x435;&#x43A;&#x441;&#x435;&#x439; &#x41A;&#x430;&#x43F;&#x440;&#x430;&#x43D;&#x43E;&#x432;</dc:creator>
+<dc:date>2008-12-11T01:03+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~johnd/Apache2-ASP-2.08/">
+<title>Apache2-ASP-2.08</title>
+<link>http://search.cpan.org/~johnd/Apache2-ASP-2.08/</link>
+<description>ASP for Perl, reloaded. </description>
+<dc:creator>John Drago</dc:creator>
+<dc:date>2008-12-11T01:03+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~adamk/Module-Manifest-0.04/">
+<title>Module-Manifest-0.04</title>
+<link>http://search.cpan.org/~adamk/Module-Manifest-0.04/</link>
+<description>Parse and examine a Perl distribution MANIFEST file </description>
+<dc:creator>Adam Kennedy</dc:creator>
+<dc:date>2008-12-11T00:31+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~sfryer/Email-Template-0.01/">
+<title>Email-Template-0.01</title>
+<link>http://search.cpan.org/~sfryer/Email-Template-0.01/</link>
+<description>Send &#x22;multipart/alternative&#x22; (text &#x26; html) email from a Template </description>
+<dc:creator>Shaun Fryer</dc:creator>
+<dc:date>2008-12-11T00:14+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~bobtfish/Catalyst-Authentication-Credential-HTTP-1.008/">
+<title>Catalyst-Authentication-Credential-HTTP-1.008</title>
+<link>http://search.cpan.org/~bobtfish/Catalyst-Authentication-Credential-HTTP-1.008/</link>
+<description>HTTP Basic and Digest authentication for Catalyst. </description>
+<dc:creator>Tomas Doran</dc:creator>
+<dc:date>2008-12-10T23:58+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~gwolf/User-Simple-1.42/">
+<title>User-Simple-1.42</title>
+<link>http://search.cpan.org/~gwolf/User-Simple-1.42/</link>
+<description>Simple user sessions management </description>
+<dc:creator>Gunnar Wolf</dc:creator>
+<dc:date>2008-12-10T23:48+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~chisel/Template-Plugin-ForumCode-0.0.5/">
+<title>Template-Plugin-ForumCode-0.0.5</title>
+<link>http://search.cpan.org/~chisel/Template-Plugin-ForumCode-0.0.5/</link>
+<description>Template plugin for HTML::ForumCode </description>
+<dc:creator>Chisel Wright</dc:creator>
+<dc:date>2008-12-10T23:39+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~rpettett/GD-Sparkline-0.02/">
+<title>GD-Sparkline-0.02</title>
+<link>http://search.cpan.org/~rpettett/GD-Sparkline-0.02/</link>
+<description></description>
+<dc:creator>Roger Pettett</dc:creator>
+<dc:date>2008-12-10T23:20+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~karman/SWISH-Prog-0.22/">
+<title>SWISH-Prog-0.22</title>
+<link>http://search.cpan.org/~karman/SWISH-Prog-0.22/</link>
+<description>information retrieval application framework </description>
+<dc:creator>Peter Karman</dc:creator>
+<dc:date>2008-12-10T22:45+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~rsavage/HTML-Revelation-1.00/">
+<title>HTML-Revelation-1.00</title>
+<link>http://search.cpan.org/~rsavage/HTML-Revelation-1.00/</link>
+<description>Reveal HTML document structure in a myriad of colors </description>
+<dc:creator>Ron Savage</dc:creator>
+<dc:date>2008-12-10T22:41+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~karman/Rose-DBx-Object-Indexed-0.002/">
+<title>Rose-DBx-Object-Indexed-0.002</title>
+<link>http://search.cpan.org/~karman/Rose-DBx-Object-Indexed-0.002/</link>
+<description>full-text search for RDBO classes </description>
+<dc:creator>Peter Karman</dc:creator>
+<dc:date>2008-12-10T22:24+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~semuelf/Data-ParseBinary-0.11/">
+<title>Data-ParseBinary-0.11</title>
+<link>http://search.cpan.org/~semuelf/Data-ParseBinary-0.11/</link>
+<description>Yet Another parser for binary structures </description>
+<dc:creator>Shmuel Fomberg</dc:creator>
+<dc:date>2008-12-10T22:23+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~silasmonk/Math-StochasticProcess-0.02/">
+<title>Math-StochasticProcess-0.02</title>
+<link>http://search.cpan.org/~silasmonk/Math-StochasticProcess-0.02/</link>
+<description>Stochastic Process </description>
+<dc:creator>Nicholas Bamber</dc:creator>
+<dc:date>2008-12-10T21:44+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~nuffin/Template-Plugin-JSON-0.04/">
+<title>Template-Plugin-JSON-0.04</title>
+<link>http://search.cpan.org/~nuffin/Template-Plugin-JSON-0.04/</link>
+<description>Adds a .json vmethod for all TT values. </description>
+<dc:creator>&#x5D9;&#x5D5;&#x5D1;&#x5DC; &#x5E7;&#x5D5;&#x5D2;&#x27;&#x5DE;&#x5DF; (Yuval Kogman)</dc:creator>
+<dc:date>2008-12-10T21:13+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~kerr/Omega-DP41-Data-Current-0.01/">
+<title>Omega-DP41-Data-Current-0.01</title>
+<link>http://search.cpan.org/~kerr/Omega-DP41-Data-Current-0.01/</link>
+<description>The great new Omega::DP41::Data::Current! </description>
+<dc:creator>S. Kerr</dc:creator>
+<dc:date>2008-12-10T20:33+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~johnd/Apache2-ASP-2.07/">
+<title>Apache2-ASP-2.07</title>
+<link>http://search.cpan.org/~johnd/Apache2-ASP-2.07/</link>
+<description>ASP for Perl, reloaded. </description>
+<dc:creator>John Drago</dc:creator>
+<dc:date>2008-12-10T20:30+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~simonw/XML-Feed-0.41/">
+<title>XML-Feed-0.41</title>
+<link>http://search.cpan.org/~simonw/XML-Feed-0.41/</link>
+<description>Syndication feed parser and auto-discovery </description>
+<dc:creator>Simon Wistow</dc:creator>
+<dc:date>2008-12-10T20:29+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~miker/NetAddr-IP-4.021/">
+<title>NetAddr-IP-4.021</title>
+<link>http://search.cpan.org/~miker/NetAddr-IP-4.021/</link>
+<description>Manages IPv4 and IPv6 addresses and subnets </description>
+<dc:creator>Michael Robinton</dc:creator>
+<dc:date>2008-12-10T19:35+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~elisa/Net-sFlow-0.10/">
+<title>Net-sFlow-0.10</title>
+<link>http://search.cpan.org/~elisa/Net-sFlow-0.10/</link>
+<description>decode sFlow datagrams </description>
+<dc:creator>Elisa Jasinska</dc:creator>
+<dc:date>2008-12-10T19:24+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~dhunt/PDL-Graphics-PLplot-0.45/">
+<title>PDL-Graphics-PLplot-0.45</title>
+<link>http://search.cpan.org/~dhunt/PDL-Graphics-PLplot-0.45/</link>
+<description>Object-oriented interface from perl/PDL to the PLPLOT plotting library </description>
+<dc:creator>Douglas Hunt</dc:creator>
+<dc:date>2008-12-10T18:35+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~beppu/AnyEvent-CouchDB-1.04/">
+<title>AnyEvent-CouchDB-1.04</title>
+<link>http://search.cpan.org/~beppu/AnyEvent-CouchDB-1.04/</link>
+<description>a non-blocking CouchDB client based on jquery.couch.js </description>
+<dc:creator>John Beppu</dc:creator>
+<dc:date>2008-12-10T18:32+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~nejigane/Language-MinCaml-0.01/">
+<title>Language-MinCaml-0.01</title>
+<link>http://search.cpan.org/~nejigane/Language-MinCaml-0.01/</link>
+<description>MinCaml Interpreter </description>
+<dc:creator>Yu Nejigane</dc:creator>
+<dc:date>2008-12-10T18:03+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~yanick/Pod-Manual-0.08_02/">
+<title>Pod-Manual-0.08_02</title>
+<link>http://search.cpan.org/~yanick/Pod-Manual-0.08_02/</link>
+<description>Aggregates several PODs into a single manual </description>
+<dc:creator>Yanick Champoux</dc:creator>
+<dc:date>2008-12-10T16:56+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~marcel/Text-Pipe-0.08/">
+<title>Text-Pipe-0.08</title>
+<link>http://search.cpan.org/~marcel/Text-Pipe-0.08/</link>
+<description>Common text filter API </description>
+<dc:creator>Marcel Gr&#xFC;nauer == hanekomu (&#x8DF3;&#x306D;&#x8FBC;&#x3080;)</dc:creator>
+<dc:date>2008-12-10T16:42+00:00</dc:date>
+</item>
+
+<item rdf:about="http://search.cpan.org/~rjbs/Email-Sender-0.000/">
+<title>Email-Sender-0.000</title>
+<link>http://search.cpan.org/~rjbs/Email-Sender-0.000/</link>
+<description>a library for sending email </description>
+<dc:creator>Ricardo SIGNES</dc:creator>
+<dc:date>2008-12-10T16:40+00:00</dc:date>
+</item>
+
+</rdf:RDF>

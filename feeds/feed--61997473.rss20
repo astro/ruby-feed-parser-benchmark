@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Beau Smith</title>
+        <link>http://beausmith.com/</link>
+        <description>Find me...</description>
+        <language>en</language>
+        <copyright>Copyright 2008</copyright>
+        <lastBuildDate>Wed, 09 Apr 2008 18:16:49 -0800</lastBuildDate>
+        <generator>http://www.sixapart.com/movabletype/</generator>
+        <docs>http://www.rssboard.org/rss-specification</docs>
+        
+        <item>
+            <title>Data Detectors</title>
+            <description><![CDATA[<p>Data Detectors is the best feature from upgrading to Leopard 10.5.2 this week.</p>
+
+<p>Hover over an event, phone number, or address and you&#8217;ll have an option to add to Address Book or iCal.</p>
+
+<p>Watch this video to learn more:</p>
+
+<p><embed src="http://movies.apple.com/movies/us/apple/business/tips/apple_business_tips_maildatadetectors_r640-10cie.mov" width="640" height="416" controller="true" autoplay="false" showlogo="false" cache="true"></p>
+
+<p><a href="http://www.apple.com/business/theater/#maildatadetectors">Source</a></p>
+
+<p>Creating this post I learned:</p>
+
+<ul>
+<li>Quicktime controller has height of 16px which must be added to the movie&#8217;s actual height in the embed tag <code>height</code> attribute.</li>
+<li><code>autoplay</code> embed tag attribute is set in user Quicktime prefs, but can be overridden in embed tag. I&#8217;ve set autoplay to true so that you don&#8217;t have to click the video to get it to play.</li>
+<li><code>showlogo</code> embed tag attribute set to <code>false</code> will hide Quicktime logo while movie is loading.</li>
+</ul>
+]]></description>
+            <link>http://beausmith.com/2008/04/data-detectors.php</link>
+            <guid>http://beausmith.com/2008/04/data-detectors.php</guid>
+            
+            
+                <category domain="http://www.sixapart.com/ns/types#tag">apple</category>
+            
+                <category domain="http://www.sixapart.com/ns/types#tag">data detector</category>
+            
+                <category domain="http://www.sixapart.com/ns/types#tag">leopard</category>
+            
+                <category domain="http://www.sixapart.com/ns/types#tag">movie</category>
+            
+                <category domain="http://www.sixapart.com/ns/types#tag">tip</category>
+            
+            <pubDate>Wed, 09 Apr 2008 18:16:49 -0800</pubDate>
+        </item>
+        
+        <item>
+            <title>Alan Cooper - An Insurgency of Quality</title>
+            <description><![CDATA[<p>I was invited to join an <a href="http://www.ixda.org/">IxDA</a> event at <a href="http://www.hotstudio.com/">HotStudio</a> last night by some members whom I met at <a href="http://sxsw.org/">SXSW</a>. </p>
+
+<p>I wasn&#8217;t quite sure what to expect (and didn&#8217;t do my research about the speaker&#8230; Alan Cooper is the author of <a href="http://www.amazon.com/exec/obidos/ASIN/0672316498/">The Inmates Are Running the Asylum</a> and <a href="http://www.amazon.com/About-Face-Essentials-Interaction-Design/dp/0470084111/">About Face</a>), but I really wish that I&#8217;d invited my collegues to join as Alan&#8217;s speech was full of tips and concepts that we&#8217;ve been doing at Six Apart&#8230; having the process defined is very helpful.</p>
+
+<p>Here&#8217;s the video. It&#8217;s 40 minutes, but chock full of great insights about success in the digital age.</p>
+
+<p><embed src='http://www.brightcove.tv/playerswf' bgcolor='#FFFFFF' flashVars='initVideoId=1416866797&amp;servicesURL=http://www.brightcove.tv&amp;viewerSecureGatewayURL=https://www.brightcove.tv&amp;cdnURL=http://admin.brightcove.com&amp;autoStart=false' base='http://admin.brightcove.com' name='bcPlayer' width='486' height='412' allowFullScreen='true' allowScriptAccess='always' seamlesstabbing='false' type='application/x-shockwave-flash' swLiveConnect='true' pluginspage='http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash'></embed></p>
+]]></description>
+            <link>http://beausmith.com/2008/03/alan-cooper-an-insurgency-of-quality.php</link>
+            <guid>http://beausmith.com/2008/03/alan-cooper-an-insurgency-of-quality.php</guid>
+            
+            
+                <category domain="http://www.sixapart.com/ns/types#tag">alan cooper</category>
+            
+                <category domain="http://www.sixapart.com/ns/types#tag">design</category>
+            
+                <category domain="http://www.sixapart.com/ns/types#tag">design engineering</category>
+            
+                <category domain="http://www.sixapart.com/ns/types#tag">hot studio</category>
+            
+                <category domain="http://www.sixapart.com/ns/types#tag">interaction design</category>
+            
+                <category domain="http://www.sixapart.com/ns/types#tag">ixda</category>
+            
+                <category domain="http://www.sixapart.com/ns/types#tag">process</category>
+            
+                <category domain="http://www.sixapart.com/ns/types#tag">programming</category>
+            
+                <category domain="http://www.sixapart.com/ns/types#tag">six apart</category>
+            
+                <category domain="http://www.sixapart.com/ns/types#tag">video</category>
+            
+            <pubDate>Wed, 26 Mar 2008 17:04:20 -0800</pubDate>
+        </item>
+        
+    </channel>
+</rss>

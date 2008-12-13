@@ -1,0 +1,601 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>urn:uuid:591790a9d92e4cca8ecd0681eac2dae12a2768b0</id>
+  <title>Tamanegi - The state of the Onion</title>
+  <updated>2008-12-12T23:07:04+09:00</updated>
+  <link href="http://planet.zhekov.net/atom" rel="self" type="application/atom+xml"/>
+  <link href="http://planet.zhekov.net/" rel="alternate"/>
+  <author>
+    <name>Aggregated Feed</name>
+  </author>
+  <entry>
+    <title>Bopaboo Invites</title>
+    <id>urn:uuid:7daffa424ffbaae190918e152e9bf1bddffde111</id>
+    <updated>2008-12-12T23:07:04+09:00</updated>
+    <published>2008-12-12T23:07:04+09:00</published>
+    <link href="http://planet.zhekov.net/show/Bopaboo+Invites" rel="alternate"/>
+    <author>
+      <name>MashInvites</name>
+    </author>
+    <content type="html">[http://www.bopaboo.com]  Bopaboo is your place to buy and sell digital music </content>
+  </entry>
+  <entry>
+    <title>EventMachine MapReduce</title>
+    <id>urn:uuid:59af09aebb8773942f4e18bf19d51eeee0b17b73</id>
+    <updated>2008-12-12T19:37:06+09:00</updated>
+    <published>2008-12-12T19:37:06+09:00</published>
+    <link href="http://planet.zhekov.net/show/EventMachine+MapReduce" rel="alternate"/>
+    <author>
+      <name>Nutrun</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;a href="http://labs.google.com/papers/mapreduce.html" title="Google Research Publication: MapReduce"&gt;MapReduce&lt;/a&gt; is a parallel computation strategy useful for scaling large data set processing by distributing workload over multiple worker nodes. The distributed nature of MapReduce suggests network communication and, with that in mind, I thought I&amp;#8217;d put together a demonstration employing &lt;a href="http://rubyeventmachine.com/" title="Ruby / EventMachine - Trac"&gt;EventMachine&lt;/a&gt;, a library which makes efficient network programming relatively simple in Ruby.&lt;/p&gt;
+&lt;p&gt;Before going any further, I should mention that the code examples have not been optimized for production use, they only illustrate what&amp;#8217;s possible. Also, it&amp;#8217;s worth bringing up two established Ruby libraries for tackling similar problems, &lt;a href="http://rufy.com/starfish/doc/" title="Starfish - ridiculously easy distributed programming with Ruby"&gt;Starfish&lt;/a&gt; and &lt;a href="http://skynet.rubyforge.org/" title="space"&gt;Skynet&lt;/a&gt;. It&amp;#8217;s advisable that these existing options are investigated before delving into custom alternatives.&lt;/p&gt;
+&lt;p&gt;MapReduce essentially consists of two steps (although intermediate phases usually need be present for real world implementations), &lt;em&gt;map&lt;/em&gt; and &lt;em&gt;reduce&lt;/em&gt;. &lt;em&gt;map&lt;/em&gt; refers to the higher order function also known as &lt;em&gt;transform&lt;/em&gt; or &lt;em&gt;collect&lt;/em&gt; and is the operation that is typically distributed and involves a number of nodes performing the transformation of a data set into another set of data. &lt;em&gt;reduce&lt;/em&gt; refers to the higher order function, sometimes called &lt;em&gt;fold&lt;/em&gt;, &lt;em&gt;inject&lt;/em&gt; or other, which is in this case used for collecting the results of map to build a return value.&lt;/p&gt;
+&lt;p&gt;Counting the number of word occurrences in a large number of documents is one of the examples most commonly used for describing MapReduce. A number of distributed jobs is spawned, splitting document contents into words. The results of these operations are passed to a reduce process whose job is to sum its input.&lt;/p&gt;
+&lt;p&gt;Map processes can be EventMachine servers. We can have an arbitrary number of those running on a number of physical nodes.&lt;/p&gt;
+&lt;pre&gt;
+module Map
+  def receive_data(path)
+    document = File.read(path)
+    word_counts = document.split(' ').map { |word| [word, 1] }
+    send_data(Marshal.dump(word_counts))
+    close_connection_after_writing
+  end
+end
+
+EM.run {EM.start_server("localhost", 5555, Map)}
+&lt;/pre&gt;
+&lt;p&gt;A reduce process can send job requests to those servers, receive and process the results.&lt;/p&gt;
+&lt;pre&gt;
+class Reduce &amp;lt; EM::Connection
+  @@all = []
+
+  def initialize(*args)
+    super
+    @doc, @data = args[0], ''
+  end
+
+  def post_init
+    send_data(@doc)
+  end
+
+  def receive_data(data)
+    @data &amp;lt;&amp;lt; data
+  end
+
+  def unbind
+    Reduce.job_completed
+    @@all += Marshal.load(@data)
+    unless Reduce.pending_jobs?
+      groups = @@all.group_by {|word| word[0] }
+      groups.each { |g| p "#{g[0]} : #{g[1].size}" }
+      EM.stop
+    end
+  end
+
+  def self.send_map_job(port, doc)
+    @job_count ||= 0
+    increment_job_count
+    EM.connect("localhost", port, Reduce, doc)
+  end
+
+  def self.increment_job_count
+    @job_count += 1
+  end
+
+  def self.pending_jobs?
+    @job_count != 0
+  end
+
+  def self.job_completed
+    @job_count -= 1
+  end
+end
+
+EM.run do
+  {
+    5555 =&gt; 'docs/america.txt',
+    6666 =&gt; 'docs/da-vinci.txt'
+  }.each { |port, doc| Reduce.send_map_job(port, doc) }
+end
+&lt;/pre&gt;
+&lt;p&gt;The example lacks plumbing code which would make things flexible enough and, as you might have noticed, works on a single node (localhost), but hopefully illustrates a mechanism for distributing workload over a networked farm.&lt;/p&gt;
+&lt;img src="http://feeds.feedburner.com/~r/nutrun/feed/~4/388125294" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>Ocarina: This Contest Blows</title>
+    <id>urn:uuid:e776586476f6840efa29efbd5adc6f268794ee12</id>
+    <updated>2008-12-12T19:37:04+09:00</updated>
+    <published>2008-12-12T19:37:04+09:00</published>
+    <link href="http://planet.zhekov.net/show/Ocarina%3A+This+Contest+Blows" rel="alternate"/>
+    <author>
+      <name>ReadWriteWeb</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img alt="Smule" src="http://www.readwriteweb.com/imgSmule.jpg" width="150" height="73" /&gt;It's no secret that a few of us here at ReadWriteWeb are &lt;a href="http://twitter.com/rww/status/1012649805"&gt;big fans&lt;/a&gt; of &lt;a href="http://www.readwriteweb.com/archives/smule_ocarina_enigmatic_appeal.php"&gt;Ocarina&lt;/a&gt;, the iPhone app from &lt;a href="http://www.smule.com/"&gt;Smule&lt;/a&gt; that converts your iPhone into an ancient woodwind instrument. And we're not alone, thousands of users have paid $0.99 to purchase the application and try their hand at blowing timeless melodies through the iPhone.&lt;/p&gt;
+
+&lt;p&gt;Now, the creators of the app are offering $1000 US to each of the 10 best Ocarina players in the world as part of the "&lt;a href="http://ocarina.smule.com/contest/"&gt;This Contest Blows&lt;/a&gt;" contest.&lt;/p&gt;
+&lt;p align="right"&gt;&lt;em&gt;Sponsor&lt;/em&gt;&lt;br /&gt;&lt;a href='http://d.openx.org/ck.php?n=12943&amp;amp;cb=12943' target='_blank'&gt;&lt;img src='http://d.openx.org/avw.php?zoneid=861&amp;amp;cb=12943&amp;amp;n=12943' border='0' alt='' align="right" /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;center&gt;&lt;object width="560" height="345"&gt;&lt;param name="movie" value="http://www.youtube.com/v/8863gYtVaSc&amp;hl=en&amp;fs=1"&gt;&lt;/param&gt;&lt;param name="allowFullScreen" value="true"&gt;&lt;/param&gt;&lt;param name="allowscriptaccess" value="always"&gt;&lt;/param&gt;&lt;embed src="http://www.youtube.com/v/8863gYtVaSc&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="345"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/center&gt;
+
+&lt;p&gt;Striking a chord similar to that of the &lt;a href="http://www.readwriteweb.com/archives/youtube_global_symphony_carnegie_hall.php"&gt;YouTube Symphony Orchestra&lt;/a&gt;, the Ocarina contest is using YouTube as the place to gather the contest entrants. To participate, simply record a video of yourself showing off your Ocarina chops. Then, upload your inimitable Ocarina stylings to YouTube as a response to the "&lt;a href="http://www.youtube.com/watch?v=8863gYtVaSc"&gt;This Contest Blows" video&lt;/a&gt;, or post it in the &lt;a href="http://www.youtube.com/group/thiscontestblows"&gt;"This Contest Blows" group&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Not sure you can even play a song on Ocarina? Don't worry. There's even &lt;a href="http://ocarina.smule.com/forum/viewforum.php?f=5"&gt;sheet music&lt;/a&gt; for Ocarina, now.&lt;/p&gt;
+
+&lt;p&gt;Entries will be judged on a variety of factors, including number of ratings, average number of stars, and number of views. All submissions must be received by January 10, 2009.&lt;/p&gt;
+
+&lt;p&gt;Good luck! Here's hoping all those hours you've wiled away on Ocarina pay off.&lt;/p&gt;
+&lt;strong&gt;&lt;a href="http://www.readwriteweb.com/archives/ocarina_this_contest_blows.php#comments-open"&gt;Discuss&lt;/a&gt;&lt;/strong&gt;
+&lt;p&gt;&lt;a href="http://feedads.googleadservices.com/~at/wPh2INKWsxECM1U2FU2HYQ4KwGM/a"&gt;&lt;img src="http://feedads.googleadservices.com/~at/wPh2INKWsxECM1U2FU2HYQ4KwGM/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feedproxy.google.com/~f/readwriteweb?a=4nUpHUfK"&gt;&lt;img src="http://feedproxy.google.com/~f/readwriteweb?d=1035" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feedproxy.google.com/~f/readwriteweb?a=CYKCfNqX"&gt;&lt;img src="http://feedproxy.google.com/~f/readwriteweb?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feedproxy.google.com/~f/readwriteweb?a=9sOSxl4h"&gt;&lt;img src="http://feedproxy.google.com/~f/readwriteweb?i=9sOSxl4h" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feedproxy.google.com/~f/readwriteweb?a=0wUfMd7Y"&gt;&lt;img src="http://feedproxy.google.com/~f/readwriteweb?i=0wUfMd7Y" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feedproxy.google.com/~f/readwriteweb?a=XkDxFrGd"&gt;&lt;img src="http://feedproxy.google.com/~f/readwriteweb?i=XkDxFrGd" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feedproxy.google.com/~f/readwriteweb?a=NjEnOp0n"&gt;&lt;img src="http://feedproxy.google.com/~f/readwriteweb?d=52" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feedproxy.google.com/~f/readwriteweb?a=4qnttcP5"&gt;&lt;img src="http://feedproxy.google.com/~f/readwriteweb?d=1034" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/readwriteweb/~4/jxOjdJpNgag" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>USB Gadgets - The USB Heated Sheep Slippers</title>
+    <id>urn:uuid:07e5c7dd238593e28281845dac475b485de111e1</id>
+    <updated>2008-12-12T19:07:10+09:00</updated>
+    <published>2008-12-12T19:07:10+09:00</published>
+    <link href="http://planet.zhekov.net/show/USB+Gadgets+-+The+USB+Heated+Sheep+Slippers" rel="alternate"/>
+    <author>
+      <name>GeekyGadgets</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a href="http://feedads.googleadservices.com/~a/CKDi3ChEu6hYfmsSfyLeC1VzCTA/a"&gt;&lt;img src="http://feedads.googleadservices.com/~a/CKDi3ChEu6hYfmsSfyLeC1VzCTA/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;If you liked the &lt;a href="http://www.geeky-gadgets.com/?p=7596"&gt;USB Cow Heated Slippers&lt;/a&gt;, then check out these fun USB Heated Sheep Slippers.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/usb-sheep-slippers1.jpg"&gt;&lt;img class="size-full wp-image-7989 aligncenter" title="usb-sheep-slippers1" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/usb-sheep-slippers1.jpg" alt="USB Gadgets - The USB Heated Sheep Slippers" width="500" height="375" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;These fun slippers are powered by USB, a great way to keep your feet warm this winter.&lt;br /&gt;
+&lt;span id="more-7987"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/usb-sheep-slippers2.jpg"&gt;&lt;img class="size-full wp-image-7988 aligncenter" title="usb-sheep-slippers2" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/usb-sheep-slippers2.jpg" alt="USB Gadgets - The USB Heated Sheep Slippers" width="500" height="375" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here&amp;#8217;s the specs.&lt;/p&gt;
+&lt;li&gt;Cutie sheep design&lt;/li&gt;
+&lt;li&gt;Warm your feet&lt;/li&gt;
+&lt;li&gt;Powered by USB&lt;/li&gt;
+&lt;li&gt;Plug and play&lt;/li&gt;
+&lt;li&gt;Suitable max. feet length: 28cm (approx.)&lt;/li&gt;
+&lt;li&gt;Cable length: 130cm (approx.)&lt;/li&gt;
+&lt;li&gt;Size: 270*110*85mm&lt;/li&gt;
+&lt;li&gt;Weight: 260g&lt;/li&gt;
+&lt;p&gt;The USB Heated Sheep Slippers are available for $25 from &lt;a href="http://www.gadget4all.com/prod_detail.php?prod_id=00587"&gt;Gadget4all&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is a post from &lt;a title="Geek Gadgets" href="http://www.geeky-gadgets.com"&gt;Geeky Gadgets&lt;/a&gt;, who bring you the latest news on the coolest &lt;a href="http://www.geeky-gadgets.com"&gt;gadgets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.geeky-gadgets.com/?p=7987"&gt;USB Gadgets - The USB Heated Sheep Slippers&lt;/a&gt;&lt;/p&gt;
+&lt;img src="http://feedproxy.google.com/~r/geeky-gadgets/~4/Cqwk93KJ0wk" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>The Choiix 3-in-1 Laptop Case</title>
+    <id>urn:uuid:e7ec289dd7071036dd020c424c67916c312e5d36</id>
+    <updated>2008-12-12T18:37:12+09:00</updated>
+    <published>2008-12-12T18:37:12+09:00</published>
+    <link href="http://planet.zhekov.net/show/The+Choiix+3-in-1+Laptop+Case" rel="alternate"/>
+    <author>
+      <name>GeekyGadgets</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a href="http://feedads.googleadservices.com/~a/AN9us03XNhG6nLeFn1TZPIzsXrs/a"&gt;&lt;img src="http://feedads.googleadservices.com/~a/AN9us03XNhG6nLeFn1TZPIzsXrs/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Here&amp;#8217;s a useful accessory for your laptop, the Choiix 3-in-1 laptop case.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/choiix1.jpg"&gt;&lt;img class="size-full wp-image-7982 aligncenter" title="choiix1" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/choiix1.jpg" alt="choiix 3 in 1 laptop case" width="500" height="214" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;As well as being a case to carry your laptop around in, the Choiix 3-in-1 lapto case also doubles as a laptop stand and a cooler.&lt;br /&gt;
+&lt;span id="more-7981"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/choiix2.jpg"&gt;&lt;img class="size-full wp-image-7983 aligncenter" title="choiix2" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/choiix2.jpg" alt="choiix 3 in 1 laptop case" width="500" height="194" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;The Choiix 3-in-1 laptop case comes in three diffrent sizes, with the largest size at 14 inches.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/choiix3.jpg"&gt;&lt;img class="size-full wp-image-7984 aligncenter" title="choiix3" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/choiix3.jpg" alt="choiix 3 in 1 laptop case" width="500" height="167" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;The Choiix 3-in-1 Laptop Case is available for $39.99 from &lt;a href="http://jowow.com/Choiix-Ergonomic-Metal-Sleeve-Notebook-Carrying/M/B001G777ZM.htm"&gt;Jowow&lt;/a&gt;.&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;via &lt;a href="http://theawesomer.com/choiix-3-in-1-case/7444/"&gt;The Awesomer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a post from &lt;a title="Geek Gadgets" href="http://www.geeky-gadgets.com"&gt;Geeky Gadgets&lt;/a&gt;, who bring you the latest news on the coolest &lt;a href="http://www.geeky-gadgets.com"&gt;gadgets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.geeky-gadgets.com/?p=7981"&gt;The Choiix 3-in-1 Laptop Case&lt;/a&gt;&lt;/p&gt;
+&lt;img src="http://feedproxy.google.com/~r/geeky-gadgets/~4/NQ8VSkdslII" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>Green Gadgets - Sony&#x2019;s Solar Desk Lamp</title>
+    <id>urn:uuid:776032842c0ca5a18383b945564992ee8482b875</id>
+    <updated>2008-12-12T18:07:14+09:00</updated>
+    <published>2008-12-12T18:07:14+09:00</published>
+    <link href="http://planet.zhekov.net/show/Green+Gadgets+-+Sony%E2%80%99s+Solar+Desk+Lamp" rel="alternate"/>
+    <author>
+      <name>GeekyGadgets</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a href="http://feedads.googleadservices.com/~a/8kRmZaxnQwfBY84iHn4j59P_ODM/a"&gt;&lt;img src="http://feedads.googleadservices.com/~a/8kRmZaxnQwfBY84iHn4j59P_ODM/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Sony has shown off a new green gadget, which features dye-sensitized solar cells.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/sony-solar-lamp1.jpg"&gt;&lt;img class="size-full wp-image-7977 aligncenter" title="sony-solar-lamp1" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/sony-solar-lamp1.jpg" alt="Sony solar lamp" width="500" height="375" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The cool thing about this lamp is that the panels work in the same way as photosynthesis, they store energy in the thin membrane, in a low cost way.&lt;br /&gt;
+&lt;span id="more-7976"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/sony-solar-lamp2.jpg"&gt;&lt;img class="size-full wp-image-7978 aligncenter" title="sony-solar-lamp2" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/sony-solar-lamp2.jpg" alt="sony solar lamp" width="500" height="488" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There is no word on when we will see this technology in production, but it is expected to be used in commercial applications that could be used for renewable .&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://gadgets.boingboing.net/2008/12/11/prototype-sony-lamps.html"&gt;BB Gadgets&lt;/a&gt; via &lt;a href="http://www.techfresh.net/sony-solar-desk-lamp-prototype/"&gt;TechFresh&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a post from &lt;a title="Geek Gadgets" href="http://www.geeky-gadgets.com"&gt;Geeky Gadgets&lt;/a&gt;, who bring you the latest news on the coolest &lt;a href="http://www.geeky-gadgets.com"&gt;gadgets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.geeky-gadgets.com/?p=7976"&gt;Green Gadgets - Sony&amp;#8217;s Solar Desk Lamp&lt;/a&gt;&lt;/p&gt;
+&lt;img src="http://feedproxy.google.com/~r/geeky-gadgets/~4/K_hPjqFSo14" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>Holiday Gift Card Management Startup Leverage Goes Belly Up</title>
+    <id>urn:uuid:ffb356e1584e078c823b13f41cd51a5e9e354015</id>
+    <updated>2008-12-12T18:07:06+09:00</updated>
+    <published>2008-12-12T18:07:06+09:00</published>
+    <link href="http://planet.zhekov.net/show/Holiday+Gift+Card+Management+Startup+Leverage+Goes+Belly+Up" rel="alternate"/>
+    <author>
+      <name>Techcrunch</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img src="http://www.techcrunch.com/wp-content/uploads/2008/12/leverage.jpg" class="shot2"/&gt;&lt;/p&gt;
+&lt;p&gt;The idea behind &lt;a href="http://www.leveragecard.com/home.htm" onclick="javascript:pageTracker._trackPageview ('/outbound/www.leveragecard.com');"&gt;Leverage&lt;/a&gt; was simple and had some potential: it offered an advanced management system for gift cards, hugely popular worldwide especially this time of year, so you could register all of them and keep track of how much you have left or stored on each one. You were also able to buy gift cards, or swap them with others. The service also let you manage all of your loyalty reward programs, such as frequent-flyer or frequent-stay plans.&lt;/p&gt;
+&lt;p&gt;Leverage, which was founded in May 2005 and had raised $2 million in angel funding, planned to generate revenue by reselling gift cards (see our &lt;a href="http://www.techcrunch.com/2007/11/23/manage-those-holiday-gift-cards-with-leverage/"&gt;launch coverage&lt;/a&gt; for more). It turns out the business model wasn&amp;#8217;t solid enough to keep the company afloat during tough times. It appears the entire staff has been laid off (right before the holidays, which is supposed to be a key period for this type of company) last week.&lt;/p&gt;
+&lt;p&gt;From the &lt;a href="http://www.colleenrobledo.net/blog/archive/2008/12/09/08/56/09" onclick="javascript:pageTracker._trackPageview ('/outbound/www.colleenrobledo.net');"&gt;blog post&lt;/a&gt; by former web developer Colleen Robledo:&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;With VC funding freezing up and retail revenues down, the company can&amp;#8217;t afford to keep any of us on payroll. The owners are hoping this is just a temporary lay-off, that they will get funded again after the holidays, and be able to hire us all back.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;We&amp;#8217;re putting Leverage in the &lt;a href="http://www.techcrunch.com/tag/deadpool/"&gt;deadpool&lt;/a&gt;, because that last part was just wishful thinking.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Crunch Network&lt;/em&gt;&lt;/strong&gt;:  &lt;a href="http://www.crunchbase.com"&gt;CrunchBase&lt;/a&gt;&lt;em&gt; &lt;/em&gt;the free database of technology companies, people, and investors&lt;/p&gt;
+&lt;div&gt;&lt;a href='http://oa.techcrunch.com/openads/www/delivery/ck.php?n=ac653d85&amp;amp;cb=1745' target='_blank'&gt;&lt;img src='http://oa.techcrunch.com/openads/www/delivery/avw.php?zoneid=19&amp;amp;cb=759&amp;amp;n=ac653d85' border='0' alt='' /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://feedads.googleadservices.com/~at/we9LZzZqnuzZkchA9_u9WWEx6vk/a"&gt;&lt;img src="https://feedads.googleadservices.com/~at/we9LZzZqnuzZkchA9_u9WWEx6vk/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feedproxy.google.com/~f/Techcrunch?a=okHHjtBP"&gt;&lt;img src="http://feedproxy.google.com/~f/Techcrunch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feedproxy.google.com/~f/Techcrunch?a=yXIYeE14"&gt;&lt;img src="http://feedproxy.google.com/~f/Techcrunch?i=yXIYeE14" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feedproxy.google.com/~f/Techcrunch?a=nyqlcdxk"&gt;&lt;img src="http://feedproxy.google.com/~f/Techcrunch?d=50" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feedproxy.google.com/~f/Techcrunch?a=lrVPLFIb"&gt;&lt;img src="http://feedproxy.google.com/~f/Techcrunch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/Techcrunch/~4/tq75X3kgjEM" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>IGala Wi-Fi Linux Touchscreen Digital Photo Frame</title>
+    <id>urn:uuid:6df78e48ddba886229ee7265d2390b9ec353f8e2</id>
+    <updated>2008-12-12T17:37:13+09:00</updated>
+    <published>2008-12-12T17:37:13+09:00</published>
+    <link href="http://planet.zhekov.net/show/IGala+Wi-Fi+Linux+Touchscreen+Digital+Photo+Frame" rel="alternate"/>
+    <author>
+      <name>GeekyGadgets</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a href="http://feedads.googleadservices.com/~a/qQkySkuJByf5jCsd-mFP--V9BCo/a"&gt;&lt;img src="http://feedads.googleadservices.com/~a/qQkySkuJByf5jCsd-mFP--V9BCo/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Check out this cool digital phone frame, the iGala Wi-Fi Linux Touchscreen Digital Photo Frame.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/igala_wifi_linux_photoframe1.jpg"&gt;&lt;img class="size-full wp-image-7972 aligncenter" title="igala_wifi_linux_photoframe1" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/igala_wifi_linux_photoframe1.jpg" alt="igala digital photo frame" width="500" height="341" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This Wi-FI enabled photo frame features an 8 inch 800 x 600 touchscr4een LCD, and it can pull your photos directly from Flickr and Gmail.&lt;br /&gt;
+&lt;span id="more-7971"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/igala_wifi_linux_photoframe2.jpg"&gt;&lt;img class="aligncenter size-full wp-image-7973" title="igala_wifi_linux_photoframe2" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/igala_wifi_linux_photoframe2.jpg" alt="igala digital photo frame" width="500" height="388" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;It has 1GB of memory built in, which is enough to store 5,000 photos, and has a built in alarm clock function.&lt;/p&gt;
+&lt;p&gt;Here&amp;#8217;s the specs&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wi-Fi enabled photo frame can pull photos from Gmail and Flicker and has touch screen interface for network configuration&lt;/li&gt;
+&lt;li&gt;8&amp;#8243; 4:3 800X600 Digital LCD&lt;/li&gt;
+&lt;li&gt;No PC Needed for Setup, No Subscription Fees for Online Use&lt;/li&gt;
+&lt;li&gt;Full Screen Touchscreen Interface&lt;/li&gt;
+&lt;li&gt;No PC Needed for Setup&lt;/li&gt;
+&lt;li&gt;Linux based operating system&lt;/li&gt;
+&lt;li&gt;Wifi 802.11b/g with WEP, WPA and WPA2&lt;/li&gt;
+&lt;li&gt;1GB Internal Memory Stores over 5,000 images&lt;/li&gt;
+&lt;li&gt;Auto Synchronization with Flickr Photo Sets&lt;/li&gt;
+&lt;li&gt;Access to Flickr Private Photos&lt;/li&gt;
+&lt;li&gt;Email Photos to Frame&lt;/li&gt;
+&lt;li&gt;Windows Live FrameIt Support for Photos, News and Weather&lt;/li&gt;
+&lt;li&gt;Insert SD media card to display photos from the card&lt;/li&gt;
+&lt;li&gt;USB Mass Storage Connectivity&lt;/li&gt;
+&lt;li&gt;MP3 Support to Play Music&lt;/li&gt;
+&lt;li&gt;Auto Power Saving&lt;/li&gt;
+&lt;li&gt;110V/250V AC Adapter&lt;/li&gt;
+&lt;li&gt;Clock and Alarm Function&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The IGala Wi-Fi Linux Touchscreen Digital Photo Frame is available for $239.99 from &lt;a onmouseover="window.status='http://www.thinkgeek.com/';return true;" onmouseout="window.status=' ';return true;" href="http://www.anrdoezrs.net/o0104p-85-7NQVWSWSTNPORTURQS?sid=photo+frame&amp;amp;url=http%3A%2F%2Fwww.thinkgeek.com%2Felectronics%2Fdigital-photo-frames%2Fb425%2F" target="_top"&gt;Think Geek&lt;/a&gt;&lt;img src="http://www.ftjcfx.com/6677snrflj47CD9D9A4658AB879" border="0" alt="" width="1" height="1" /&gt;.&lt;/p&gt;
+&lt;p&gt;via &lt;a href="http://www.coolest-gadgets.com/20081211/igala-wi-fi-touch-screen-digital-photo-frame/"&gt;Coolest Gadgets&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a post from &lt;a title="Geek Gadgets" href="http://www.geeky-gadgets.com"&gt;Geeky Gadgets&lt;/a&gt;, who bring you the latest news on the coolest &lt;a href="http://www.geeky-gadgets.com"&gt;gadgets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.geeky-gadgets.com/?p=7971"&gt;IGala Wi-Fi Linux Touchscreen Digital Photo Frame&lt;/a&gt;&lt;/p&gt;
+&lt;img src="http://feedproxy.google.com/~r/geeky-gadgets/~4/mE43TBEWUpc" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>IT Factory&#x2019;s Bagger Super Sorry For The Massive Fraud</title>
+    <id>urn:uuid:32b5b8045a9a980d47e222beb7a14dba47a3d510</id>
+    <updated>2008-12-12T17:37:05+09:00</updated>
+    <published>2008-12-12T17:37:05+09:00</published>
+    <link href="http://planet.zhekov.net/show/IT+Factory%E2%80%99s+Bagger+Super+Sorry+For+The+Massive+Fraud" rel="alternate"/>
+    <author>
+      <name>Techcrunch</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img src="http://www.techcrunch.com/wp-content/uploads/2008/12/stein-bagger.jpg" class="shot2"/&gt;The beginning of what promises to be a fascinating story (and possibly a Hollywood movie) around the &lt;a href="http://www.techcrunch.com/2008/12/02/the-extraordinary-rise-and-fall-of-denmarks-it-factory/"&gt;rise and fall of Denmark&amp;#8217;s IT Factory&lt;/a&gt; is starting to emerge. In late November celebrated CEO Stein Bagger went missing in Dubai - it later turned out he abandoned his wife and child and fled to New York and the .&lt;/p&gt;
+&lt;p&gt;He then borrowed a friend&amp;#8217;s car and credit card and took embarked on quite a road trip to California, where he promptly &lt;a href="http://www.techcrunch.com/2008/12/06/it-factorys-bagger-arrested-in-california-after-worldwide-manhunt/"&gt;turned himself in to local police&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Danish media tracked him down for an &lt;a href="http://ekstrabladet.dk/nyheder/samfund/article1097057.ece" onclick="javascript:pageTracker._trackPageview ('/outbound/ekstrabladet.dk');"&gt;interview&lt;/a&gt; (translated version is &lt;a href="http://translate.google.com/translate?hl=en&amp;#038;u=http%3A%2F%2Fekstrabladet.dk%2Fnyheder%2Fsamfund%2Farticle1097057.ece&amp;#038;sl=da&amp;#038;tl=en" onclick="javascript:pageTracker._trackPageview ('/outbound/translate.google.com');"&gt;here&lt;/a&gt;). Among the first questions they asked: Why did you perpetuate a four year fraud that involved $170 million or so in fraudulent revenues (90% of IT Factory&amp;#8217;s revenues may have been nothing but lies)? &lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;I have been threatened on my own and my family&amp;#8217;s life, and I have been threatened with firearms between 25 and 30 times. He would not say who threatened him, but told that they would have money from him. &lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Everyone&amp;#8217;s always sorry after they get caught.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Crunch Network&lt;/em&gt;&lt;/strong&gt;:  &lt;a href="http://www.mobilecrunch.com/"&gt;MobileCrunch&lt;/a&gt;&lt;em&gt; &lt;/em&gt;Mobile Gadgets and Applications, Delivered Daily.&lt;/p&gt;
+&lt;div&gt;&lt;a href='http://oa.techcrunch.com/openads/www/delivery/ck.php?n=ac653d85&amp;amp;cb=590' target='_blank'&gt;&lt;img src='http://oa.techcrunch.com/openads/www/delivery/avw.php?zoneid=19&amp;amp;cb=1421&amp;amp;n=ac653d85' border='0' alt='' /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://feedads.googleadservices.com/~at/7ees41BE8pRpkG8DHq1E8L8upAA/a"&gt;&lt;img src="https://feedads.googleadservices.com/~at/7ees41BE8pRpkG8DHq1E8L8upAA/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feedproxy.google.com/~f/Techcrunch?a=XOEjzU9y"&gt;&lt;img src="http://feedproxy.google.com/~f/Techcrunch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feedproxy.google.com/~f/Techcrunch?a=cxNM9S8T"&gt;&lt;img src="http://feedproxy.google.com/~f/Techcrunch?i=cxNM9S8T" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feedproxy.google.com/~f/Techcrunch?a=3R6Vkzlw"&gt;&lt;img src="http://feedproxy.google.com/~f/Techcrunch?d=50" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feedproxy.google.com/~f/Techcrunch?a=SneNXQxu"&gt;&lt;img src="http://feedproxy.google.com/~f/Techcrunch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/Techcrunch/~4/qBEyj8wwGyY" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>Cool Mods - The Hemp Wii-Mote</title>
+    <id>urn:uuid:96469b6f454aacb86fb4d1ee5f13732d0246a798</id>
+    <updated>2008-12-12T16:37:15+09:00</updated>
+    <published>2008-12-12T16:37:15+09:00</published>
+    <link href="http://planet.zhekov.net/show/Cool+Mods+-+The+Hemp+Wii-Mote" rel="alternate"/>
+    <author>
+      <name>GeekyGadgets</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a href="http://feedads.googleadservices.com/~a/gtudS97A-92T6jSVp9Rf5iyH_2o/a"&gt;&lt;img src="http://feedads.googleadservices.com/~a/gtudS97A-92T6jSVp9Rf5iyH_2o/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Check out this cool Wii-Mote mode from modder &lt;a href="http://www.dhreck.com/2008/12/11/endtroducing-the-hemp-mote/"&gt;DHRECK&lt;/a&gt;, which is the first in a series of 6 Wii-Mote mods.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/hemp-mote-wiimote1.jpg"&gt;&lt;img class="size-full wp-image-7963 aligncenter" title="hemp-mote-wiimote1" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/hemp-mote-wiimote1.jpg" alt="hemp wii mote" width="500" height="333" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;
+&lt;p style="text-align: left;"&gt;DHRECK removed most of the hard plastic shells of the Wii-Mote and Nunchuk, and then re-built it using 3 different types of 100% natural hemp string.&lt;/p&gt;
+&lt;p&gt;&lt;span id="more-7959"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/hemp-mote-wiimote2.jpg"&gt;&lt;img class="size-full wp-image-7964 aligncenter" title="hemp-mote-wiimote2" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/hemp-mote-wiimote2.jpg" alt="hemp wii mote" width="500" height="333" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;I took out my ball of string and started with the largest areas. Unfortunately it is not enough to only wrap the string, I also needed to rather painstakingly glue it all into place to make sure nothing would unravel.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/hemp-mote-wiimote3.jpg"&gt;&lt;img class="size-full wp-image-7965 aligncenter" title="hemp-mote-wiimote3" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/hemp-mote-wiimote3.jpg" alt="hemp wii mote" width="500" height="333" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;The Hemp-Mote is absolutely playable, all buttons, accelerometers and the infrared camera accounted for.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/hemp-mote-wiimote4.jpg"&gt;&lt;img class="size-full wp-image-7966 aligncenter" title="hemp-mote-wiimote4" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/hemp-mote-wiimote4.jpg" alt="hemp wii mote" width="500" height="333" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is very cool, and it certainly looks like DHRECK put a lot of time and effort into built this cool mod.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/hemp-mote-wiimote5.jpg"&gt;&lt;img class="size-full wp-image-7967 aligncenter" title="hemp-mote-wiimote5" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/hemp-mote-wiimote5.jpg" alt="hemp wii mote" width="500" height="333" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;Head on over to &lt;a href="http://www.dhreck.com/2008/12/11/endtroducing-the-hemp-mote/"&gt;DHRECK.com&lt;/a&gt; for full details on this cool Hemp Wii-Mote, the first in a series of 6 cool Wii-Mote mods.&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;Thanks DHRECK for sending this in.&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;
+&lt;p&gt;This is a post from &lt;a title="Geek Gadgets" href="http://www.geeky-gadgets.com"&gt;Geeky Gadgets&lt;/a&gt;, who bring you the latest news on the coolest &lt;a href="http://www.geeky-gadgets.com"&gt;gadgets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.geeky-gadgets.com/?p=7959"&gt;Cool Mods - The Hemp Wii-Mote&lt;/a&gt;&lt;/p&gt;
+&lt;img src="http://feedproxy.google.com/~r/geeky-gadgets/~4/Z88yeYmS_gs" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>USB Gadgets - The 2-in-1 USB Hub with VOIP</title>
+    <id>urn:uuid:83c000fff99fb2f909da0d375cc6a1ff5a693089</id>
+    <updated>2008-12-12T16:37:15+09:00</updated>
+    <published>2008-12-12T16:37:15+09:00</published>
+    <link href="http://planet.zhekov.net/show/USB+Gadgets+-+The+2-in-1+USB+Hub+with+VOIP" rel="alternate"/>
+    <author>
+      <name>GeekyGadgets</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a href="http://feedads.googleadservices.com/~a/0UwZyW1Hn8Uy96WUNKiaBuvnEz8/a"&gt;&lt;img src="http://feedads.googleadservices.com/~a/0UwZyW1Hn8Uy96WUNKiaBuvnEz8/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Here&amp;#8217;s a useful USB gadget, the 2-in-1 USB Hub with VOIP.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img class="size-full wp-image-7954 aligncenter" title="usb-skype-hub1" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/usb-skype-hub1.jpg" alt="2-in-1 USB Hub with VOIP" width="500" height="375" /&gt;&lt;/p&gt;
+&lt;p&gt;The 2-in-1 USB Hub with VOIP, has 3 USB 2.0 ports, and built in VOIP (Skype) function so you don&amp;#8217;t need a sound card.&lt;br /&gt;
+&lt;span id="more-7952"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/usb-skype-hub2.jpg"&gt;&lt;img class="size-full wp-image-7953 aligncenter" title="usb-skype-hub2" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/usb-skype-hub2.jpg" alt="2-in-1 USB Hub with VOIP" width="500" height="375" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Here&amp;#8217;s the specs.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Provides 3 USB v.20 Hi-Speed Ports&lt;/li&gt;
+&lt;li&gt;Fully compliant with USB v2.0 Specifications&lt;/li&gt;
+&lt;li&gt;Supports data transfer rate at 1.5/12/480 Mbps&lt;/li&gt;
+&lt;li&gt;Provides up to 500mA port sufficient for deverse devices&lt;/li&gt;
+&lt;li&gt;Easy Installation: Plugs and Plays, eliminates the need of the traditional sound card&lt;/li&gt;
+&lt;li&gt;Multi-Channels Technique, achieves analog stereo effects&lt;/li&gt;
+&lt;li&gt;Cirtual Speaker Shifter&lt;/li&gt;
+&lt;li&gt;Freely set and switch the microphone mode or spaker mode&lt;/li&gt;
+&lt;li&gt;Record Function by microphone&lt;/li&gt;
+&lt;li&gt;Supports Windows 98, SE, 2000, ME, XP, Vista&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The 2-in-1 USB Hub with VOIP is available for $15.99 from &lt;a href="http://www.usbfever.com/index_eproduct_view.php?products_id=1032"&gt;USB Fever&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is a post from &lt;a title="Geek Gadgets" href="http://www.geeky-gadgets.com"&gt;Geeky Gadgets&lt;/a&gt;, who bring you the latest news on the coolest &lt;a href="http://www.geeky-gadgets.com"&gt;gadgets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.geeky-gadgets.com/?p=7952"&gt;USB Gadgets - The 2-in-1 USB Hub with VOIP&lt;/a&gt;&lt;/p&gt;
+&lt;img src="http://feedproxy.google.com/~r/geeky-gadgets/~4/X93Ykhih5WQ" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>Cool Mods - MS Pacman Mini Handheld</title>
+    <id>urn:uuid:8c3366aa60b7958db0731bba4f10e35afd0c6b0f</id>
+    <updated>2008-12-12T16:37:15+09:00</updated>
+    <published>2008-12-12T16:37:15+09:00</published>
+    <link href="http://planet.zhekov.net/show/Cool+Mods+-+MS+Pacman+Mini+Handheld" rel="alternate"/>
+    <author>
+      <name>GeekyGadgets</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a href="http://feedads.googleadservices.com/~a/oCdoHhx5akgQlmdu0MkqHS49NjA/a"&gt;&lt;img src="http://feedads.googleadservices.com/~a/oCdoHhx5akgQlmdu0MkqHS49NjA/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Check out this cool handheld Ms Pacman Mini.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img class="size-full wp-image-7949 aligncenter" title="ms-pacman-mini" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/ms-pacman-mini.jpg" alt="MS Pacman Mini Handheld" width="500" height="297" /&gt;&lt;/p&gt;
+&lt;p&gt;It was made by a modder called Ela, from the &lt;a href="http://forums.benheck.com/viewtopic.php?t=27251"&gt;Ben Heck Forums&lt;/a&gt;, using a 2.5 inch LCD screen, and the power brick from an old printer.&lt;br /&gt;
+&lt;span id="more-7948"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img class="size-full wp-image-7950 aligncenter" title="ms-pacman-mini2" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/ms-pacman-mini2.jpg" alt="MS Pacman Mini Handheld" width="500" height="292" /&gt;&lt;/p&gt;
+&lt;p&gt;Check out the full details over at &lt;a href="http://forums.benheck.com/viewtopic.php?t=27251"&gt;Ben Heck Forums&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;via &lt;a href="http://technabob.com/blog/2008/12/11/ms-pac-man-portable/"&gt;Technabob&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a post from &lt;a title="Geek Gadgets" href="http://www.geeky-gadgets.com"&gt;Geeky Gadgets&lt;/a&gt;, who bring you the latest news on the coolest &lt;a href="http://www.geeky-gadgets.com"&gt;gadgets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.geeky-gadgets.com/?p=7948"&gt;Cool Mods - MS Pacman Mini Handheld&lt;/a&gt;&lt;/p&gt;
+&lt;img src="http://feedproxy.google.com/~r/geeky-gadgets/~4/ritScGrIEC0" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>Dell Optiplex 160 Nettop</title>
+    <id>urn:uuid:3a37d58265213d61d63476a220484b58ea57fb35</id>
+    <updated>2008-12-12T16:37:15+09:00</updated>
+    <published>2008-12-12T16:37:15+09:00</published>
+    <link href="http://planet.zhekov.net/show/Dell+Optiplex+160+Nettop" rel="alternate"/>
+    <author>
+      <name>GeekyGadgets</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a href="http://feedads.googleadservices.com/~a/efb7Ze1pY878VnMfuhTXK-LRshE/a"&gt;&lt;img src="http://feedads.googleadservices.com/~a/efb7Ze1pY878VnMfuhTXK-LRshE/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/dell-optiplex-160-3.jpg"&gt;&lt;img class="size-full wp-image-7942 aligncenter" title="dell-optiplex-160-3" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/dell-optiplex-160-3.jpg" alt="dell optiplex 160" width="500" height="364" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Dell has launched a new tiny Nettop PC, the Dell Optiplex 160.&lt;br /&gt;
+&lt;span id="more-7939"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/dell-optiplex-160-2.jpg"&gt;&lt;img class="size-full wp-image-7941 aligncenter" title="dell-optiplex-160-2" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/dell-optiplex-160-2.jpg" alt="dell optiplex 160 " width="500" height="364" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/dell-optiplex-160-3.jpg"&gt;&lt;br /&gt;
+&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Optiplex 160 features an Atom processor, with a dual Intel Atom version available next year, up to 4GB of RAM and the choice of either a 2.5 inch 160GB HDD, a 20GB ultra performance HDD or a 64GB SSD.
+&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/dell-optiplex-160-1.jpg"&gt;&lt;img class="size-full wp-image-7940 aligncenter" title="dell-optiplex-160-1" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/dell-optiplex-160-1.jpg" alt="dell optiplex 160" width="500" height="362" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;Connectivity comes in the form of Ethernet, or optional 802.11 b/g WiFi via a mini PCIe card.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/dell-optiplex-160-4.jpg"&gt;&lt;img class="size-full wp-image-7943 aligncenter" title="dell-optiplex-160-4" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/dell-optiplex-160-4.jpg" alt="dell optiplex 160" width="500" height="365" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;Prices start at around $536 for the basic model.&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;&lt;a href="http://www.dell.com/content/products/productdetails.aspx/desktop-optiplex-160?c=us&amp;amp;cs=04&amp;amp;l=en&amp;amp;s=bsd"&gt;Dell&lt;/a&gt; via &lt;a href="http://www.crunchgear.com/2008/12/11/dell-intos-the-optiplex-160-tiny-desktop-computer-its-a-nettop/"&gt;Crunch Gear&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;
+&lt;p&gt;This is a post from &lt;a title="Geek Gadgets" href="http://www.geeky-gadgets.com"&gt;Geeky Gadgets&lt;/a&gt;, who bring you the latest news on the coolest &lt;a href="http://www.geeky-gadgets.com"&gt;gadgets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.geeky-gadgets.com/?p=7939"&gt;Dell Optiplex 160 Nettop&lt;/a&gt;&lt;/p&gt;
+&lt;img src="http://feedproxy.google.com/~r/geeky-gadgets/~4/RnbvHX_mITg" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>Fun Gadgets - The USB Dinosaur Webcam</title>
+    <id>urn:uuid:a6a61cfb398c3112eaa1ffcf3f35be1854b4dd2f</id>
+    <updated>2008-12-12T16:37:15+09:00</updated>
+    <published>2008-12-12T16:37:15+09:00</published>
+    <link href="http://planet.zhekov.net/show/Fun+Gadgets+-+The+USB+Dinosaur+Webcam" rel="alternate"/>
+    <author>
+      <name>GeekyGadgets</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a href="http://feedads.googleadservices.com/~a/F1cZLEL3sEToQxMuGEG_MIt28zY/a"&gt;&lt;img src="http://feedads.googleadservices.com/~a/F1cZLEL3sEToQxMuGEG_MIt28zY/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Here&amp;#8217;s a fun gadget which is bound to brighten up your desk, the USB Dinosaur Webcam.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/usb-dinosaur-webcam.jpg"&gt;&lt;img class="size-full wp-image-7937 aligncenter" title="usb-dinosaur-webcam" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/usb-dinosaur-webcam.jpg" alt="USB Dinosaur Webcam" width="500" height="241" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This fun USB gadget, features a 1.3 megapixel webcam, and the dinosaurs head can be rotated 360 degrees, which means you can use the webcam from any angle you want.&lt;br /&gt;
+&lt;span id="more-7936"&gt;&lt;/span&gt;&lt;br /&gt;
+Here&amp;#8217;s the specs.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;High detailed realistic dinosaur design with parts movable&lt;/li&gt;
+&lt;li&gt;Definition:1.3 Mega pixels(1280*960) via interpolation&lt;/li&gt;
+&lt;li&gt;Hi-resolving power: 160*120, 176*144, 320*240, 352*288, 640*480, 800*600, 1024*768,1280*960&lt;/li&gt;
+&lt;li&gt;Color: 24 true color (24bit RGB) or I420&lt;/li&gt;
+&lt;li&gt;Speed: 320 x 240 30fps; 1280*960 15fps&lt;/li&gt;
+&lt;li&gt;Focusing range: 0.5-infinity&lt;/li&gt;
+&lt;li&gt;Diameter of the lens: 6mm&lt;/li&gt;
+&lt;li&gt;S/N ration: &amp;gt;42dB&lt;/li&gt;
+&lt;li&gt;With built-in picture compress&lt;/li&gt;
+&lt;li&gt;White balance and color adjustable&lt;/li&gt;
+&lt;li&gt;USB interface, plug &amp;amp; play (driver-needed)&lt;/li&gt;
+&lt;li&gt;Manual focus&lt;/li&gt;
+&lt;li&gt;Support OS Windows 98/SE/ME/2000/XP operation system&lt;/li&gt;
+&lt;li&gt;Size: ~10 x 6 x 4cm (L*W*D)&lt;/li&gt;
+&lt;li&gt;Weight: 176.5g&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The USB Dinosaur Webcam is available for &#xA3;11.39 about $17 from &lt;a href="http://www.sourcingmap.com/360%C3%82%C2%B0-rotated-dinosaur-mega-usb-live-webcam-camera-p-12890.html"&gt;Sourcing Map&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is a post from &lt;a title="Geek Gadgets" href="http://www.geeky-gadgets.com"&gt;Geeky Gadgets&lt;/a&gt;, who bring you the latest news on the coolest &lt;a href="http://www.geeky-gadgets.com"&gt;gadgets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.geeky-gadgets.com/?p=7936"&gt;Fun Gadgets - The USB Dinosaur Webcam&lt;/a&gt;&lt;/p&gt;
+&lt;img src="http://feedproxy.google.com/~r/geeky-gadgets/~4/CBTtuUwelLY" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>Pictures - Star Wars Steampunk Art</title>
+    <id>urn:uuid:adee00bacbed11a4d20db3ef9acbdb0e5c5f9ba7</id>
+    <updated>2008-12-12T16:37:15+09:00</updated>
+    <published>2008-12-12T16:37:15+09:00</published>
+    <link href="http://planet.zhekov.net/show/Pictures+-+Star+Wars+Steampunk+Art" rel="alternate"/>
+    <author>
+      <name>GeekyGadgets</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a href="http://feedads.googleadservices.com/~a/xB2akjPI4JjTzxU4cNAAH6Qmu8I/a"&gt;&lt;img src="http://feedads.googleadservices.com/~a/xB2akjPI4JjTzxU4cNAAH6Qmu8I/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Check out these cool Star Wars Steampunk pictures which were created for a competition by the &lt;a href="http://forums.cgsociety.org/showthread.php?f=208&amp;amp;t=698837&amp;amp;page=1"&gt;Society of Digital Artists&lt;/a&gt;.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/steam-wars-steampunk1.jpg"&gt;&lt;img class="size-full wp-image-7923 aligncenter" title="steam-wars-steampunk1" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/steam-wars-steampunk1.jpg" alt="star wars steampunk" width="600" height="800" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;
+&lt;p&gt;&lt;span id="more-7922"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img class="size-full wp-image-7925 aligncenter" title="steam-wars-steampunk4" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/steam-wars-steampunk4.jpg" alt="star wars" width="600" height="866" /&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/steam-wars-steampunk2.jpg"&gt;&lt;img class="size-full wp-image-7927 aligncenter" title="steam-wars-steampunk2" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/steam-wars-steampunk2.jpg" alt="star wars" width="600" height="715" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img class="size-full wp-image-7928 aligncenter" title="star-wars-steampunk" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/star-wars-steampunk.jpg" alt="star wars" width="600" height="750" /&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/star-wars-steampunk2.jpg"&gt;&lt;img class="size-full wp-image-7930 aligncenter" title="star-wars-steampunk2" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/star-wars-steampunk2.jpg" alt="star wars" width="600" height="800" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/star-wars-3.jpg"&gt;&lt;img class="size-full wp-image-7932 aligncenter" title="star-wars-3" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/star-wars-3.jpg" alt="star wars" width="600" height="450" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;Head on over to &lt;a href="http://forums.cgsociety.org/showthread.php?f=208&amp;amp;t=698837&amp;amp;page=1"&gt;CGTalk&lt;/a&gt; to check out the rest.&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;&lt;a href="http://www.geekologie.com/2008/12/good_job_steampunkd_star_wars.php"&gt;Geekologie&lt;/a&gt; via &lt;a href="http://www.likecool.com/Star_Wars_Steampunk--Pic--Gear.html"&gt;Like Cool&lt;/a&gt;&lt;/p&gt;
+&lt;p style="text-align: left;"&gt;
+&lt;p style="text-align: left;"&gt;
+&lt;p&gt;This is a post from &lt;a title="Geek Gadgets" href="http://www.geeky-gadgets.com"&gt;Geeky Gadgets&lt;/a&gt;, who bring you the latest news on the coolest &lt;a href="http://www.geeky-gadgets.com"&gt;gadgets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.geeky-gadgets.com/?p=7922"&gt;Pictures - Star Wars Steampunk Art&lt;/a&gt;&lt;/p&gt;
+&lt;img src="http://feedproxy.google.com/~r/geeky-gadgets/~4/T0sLhfapeVM" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>OCZ launches Vertex 2.5 Inch SATA II SSDs</title>
+    <id>urn:uuid:38d2601945fcde65b649a664b620ff943f84145b</id>
+    <updated>2008-12-12T16:37:15+09:00</updated>
+    <published>2008-12-12T16:37:15+09:00</published>
+    <link href="http://planet.zhekov.net/show/OCZ+launches+Vertex+2.5+Inch+SATA+II+SSDs" rel="alternate"/>
+    <author>
+      <name>GeekyGadgets</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a href="http://feedads.googleadservices.com/~a/QNZP2XnvK8MPpMEVvW-jt7nKBgM/a"&gt;&lt;img src="http://feedads.googleadservices.com/~a/QNZP2XnvK8MPpMEVvW-jt7nKBgM/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;OCZ has launched a new range of&#xA0; 2.5 inch SATA II SSDs, the OCZ Vertex Series.&lt;/p&gt;
+&lt;p&gt;The OCZ Vertex Series of SSDs come in a variety of capacities from 30GB, 60GB, 120GB or 250GB.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/ocz-vertex1.jpg"&gt;&lt;img class="size-full wp-image-7920 aligncenter" title="ocz-vertex1" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/ocz-vertex1.jpg" alt="ocz vertex" width="500" height="407" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Vertex Series SSDs come with up to 64MB of on board cache, 160MB/sec write speeds and 200 MB/sec read speeds.&lt;br /&gt;
+&lt;span id="more-7918"&gt;&lt;/span&gt;&lt;br /&gt;
+Prices start a $129 for the 30GB version up to $869 for the 250GB version.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.ocztechnology.com/aboutocz/press/2008/320"&gt;OCZ&lt;/a&gt; via &lt;a href="http://www.engadget.com/2008/12/11/ocz-intros-vertex-line-of-2-5-inch-sata-ii-ssds/"&gt;Engadget&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a post from &lt;a title="Geek Gadgets" href="http://www.geeky-gadgets.com"&gt;Geeky Gadgets&lt;/a&gt;, who bring you the latest news on the coolest &lt;a href="http://www.geeky-gadgets.com"&gt;gadgets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.geeky-gadgets.com/?p=7918"&gt;OCZ launches Vertex 2.5 Inch SATA II SSDs&lt;/a&gt;&lt;/p&gt;
+&lt;img src="http://feedproxy.google.com/~r/geeky-gadgets/~4/YabVaTinim0" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>The World&#x2019;s Smallest Mouse - The Z-Nano Mouse</title>
+    <id>urn:uuid:8940c3f9b66a982c0ec36ef91a0ecd66b203a6f3</id>
+    <updated>2008-12-12T16:37:14+09:00</updated>
+    <published>2008-12-12T16:37:14+09:00</published>
+    <link href="http://planet.zhekov.net/show/The+World%E2%80%99s+Smallest+Mouse+-+The+Z-Nano+Mouse" rel="alternate"/>
+    <author>
+      <name>GeekyGadgets</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a href="http://feedads.googleadservices.com/~a/_sBQG0eNxUS0dUblb_crcnohhBk/a"&gt;&lt;img src="http://feedads.googleadservices.com/~a/_sBQG0eNxUS0dUblb_crcnohhBk/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Measuring in at 21mm x 17.65mm, the Z-Nano mouse is the World&amp;#8217;s smallest optical mouse.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/z-nano2.jpg"&gt;&lt;img class="size-full wp-image-7914 aligncenter" title="z-nano2" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/z-nano2.jpg" alt="z-nano mouse" width="500" height="187" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Z-Nano mouse is just a bit smaller than an average adult thumb, it features USB connectivity, an ultra bright LED and precise laser tracking.&lt;br /&gt;
+&lt;span id="more-7912"&gt;&lt;/span&gt;&lt;br /&gt;
+Here&amp;#8217;s a video of it in action.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="425" height="344" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"&gt;&lt;param name="allowFullScreen" value="true" /&gt;&lt;param name="allowscriptaccess" value="always" /&gt;&lt;param name="src" value="http://www.youtube.com/v/QphsD6jrwYk&amp;amp;hl=en&amp;amp;fs=1" /&gt;&lt;embed type="application/x-shockwave-flash" width="425" height="344" src="http://www.youtube.com/v/QphsD6jrwYk&amp;amp;hl=en&amp;amp;fs=1" allowscriptaccess="always" allowfullscreen="true"&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/p&gt;
+&lt;p&gt;The Z-Nano Mouse is available for $60 from &lt;a href="http://www.flipalbum.com/fahome/product/znano/index.php"&gt;Flip Album&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.techeblog.com/index.php/tech-gadget/feature-world-s-smallest-optical-mouse"&gt;Techeblog&lt;/a&gt; via &lt;a href="http://craziestgadgets.com/2008/12/10/z-nano-is-the-worlds-smallest-mouse/"&gt;Craziest gadgets&lt;/a&gt;, &lt;a href="http://nexus404.com/Blog/2008/12/11/z-nano-optical-mouse-worlds-smallest-mouse-thumb-sized-optical-mouse/"&gt;TFTS&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a post from &lt;a title="Geek Gadgets" href="http://www.geeky-gadgets.com"&gt;Geeky Gadgets&lt;/a&gt;, who bring you the latest news on the coolest &lt;a href="http://www.geeky-gadgets.com"&gt;gadgets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.geeky-gadgets.com/?p=7912"&gt;The World&amp;#8217;s Smallest Mouse - The Z-Nano Mouse&lt;/a&gt;&lt;/p&gt;
+&lt;img src="http://feedproxy.google.com/~r/geeky-gadgets/~4/7DIBBEcYo-o" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>Make your own LED Christmas Cards</title>
+    <id>urn:uuid:2d86ed6b83f8ac26d3a50cbe93c10f7e76f33b35</id>
+    <updated>2008-12-12T16:37:14+09:00</updated>
+    <published>2008-12-12T16:37:14+09:00</published>
+    <link href="http://planet.zhekov.net/show/Make+your+own+LED+Christmas+Cards" rel="alternate"/>
+    <author>
+      <name>GeekyGadgets</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a href="http://feedads.googleadservices.com/~a/z2qdw7LOGf1uee9VONcMYOseP-w/a"&gt;&lt;img src="http://feedads.googleadservices.com/~a/z2qdw7LOGf1uee9VONcMYOseP-w/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Fancy sending some geeky Christmas cards this year? The guys over at Evil Mad Scientist have put together a great guide on how to make your own LED Christmas Cards.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;img class="size-full wp-image-7909 aligncenter" title="led-christmas-cards1" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/led-christmas-cards1.jpg" alt="LED Christmas Cards" width="500" height="375" /&gt;&lt;/p&gt;
+&lt;p&gt;To make the LED Christmas cards, you will need some LEDs, plastic, paper, some batteries, and some electrical tape.&lt;br /&gt;
+&lt;span id="more-7908"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/led-christmas-cards2.jpg"&gt;&lt;img class="size-full wp-image-7910 aligncenter" title="led-christmas-cards2" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/led-christmas-cards2.jpg" alt="LED Christmas Cards" width="500" height="375" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Head on over to &lt;a href="http://www.evilmadscientist.com/article.php/edgelitcards"&gt;Evil Mad Scientist&lt;/a&gt; for full instructions on how to make these geeky Christmas Cards.&lt;/p&gt;
+&lt;p&gt;This is a post from &lt;a title="Geek Gadgets" href="http://www.geeky-gadgets.com"&gt;Geeky Gadgets&lt;/a&gt;, who bring you the latest news on the coolest &lt;a href="http://www.geeky-gadgets.com"&gt;gadgets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.geeky-gadgets.com/?p=7908"&gt;Make your own LED Christmas Cards&lt;/a&gt;&lt;/p&gt;
+&lt;img src="http://feedproxy.google.com/~r/geeky-gadgets/~4/xfvv8SXAuLc" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>Geeky Watches - The Casio Databank Watches</title>
+    <id>urn:uuid:17dfbcdf388110ab149093797f851ec76c250d9d</id>
+    <updated>2008-12-12T16:37:14+09:00</updated>
+    <published>2008-12-12T16:37:14+09:00</published>
+    <link href="http://planet.zhekov.net/show/Geeky+Watches+-+The+Casio+Databank+Watches" rel="alternate"/>
+    <author>
+      <name>GeekyGadgets</name>
+    </author>
+    <content type="html">
+&lt;p&gt;&lt;a href="http://feedads.googleadservices.com/~a/tN34-VEfc6e13alRPE52mzvErOU/a"&gt;&lt;img src="http://feedads.googleadservices.com/~a/tN34-VEfc6e13alRPE52mzvErOU/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;p&gt;Check out these geeky watches from Casio, the Casio Databank Watches.&lt;/p&gt;
+&lt;p&gt;These geeky watches come in five colours, black, white, yellow, green and black with gold.&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/casio-databank1.jpg"&gt;&lt;img class="size-full wp-image-7905 aligncenter" title="casio-databank1" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/casio-databank1.jpg" alt="Casio Databank" width="300" height="552" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The Casio Databank watches feature a 25 page databank, and 8 digit calculator and 5 multi function alarms.&lt;br /&gt;
+&lt;span id="more-7904"&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style="text-align: center;"&gt;&lt;a href="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/casio-databank2.jpg"&gt;&lt;img class="size-full wp-image-7906 aligncenter" title="casio-databank2" src="http://www.geeky-gadgets.com/wp-content/uploads/2008/12/casio-databank2.jpg" alt="Casio Databank" width="500" height="529" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Prices range for $59 up to $69.95 and they are available now from &lt;a href="http://www.casio.com/products/Timepiece/Databank/DBC32_Series/"&gt;Casio&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;via &lt;a href="http://www.coated.com/casio-databank-watches-are-the-rage-in-geek-fashion/"&gt;Coated&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is a post from &lt;a title="Geek Gadgets" href="http://www.geeky-gadgets.com"&gt;Geeky Gadgets&lt;/a&gt;, who bring you the latest news on the coolest &lt;a href="http://www.geeky-gadgets.com"&gt;gadgets&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.geeky-gadgets.com/?p=7904"&gt;Geeky Watches - The Casio Databank Watches&lt;/a&gt;&lt;/p&gt;
+&lt;img src="http://feedproxy.google.com/~r/geeky-gadgets/~4/8r35Xlu0njg" height="1" width="1"/&gt;</content>
+  </entry>
+  <entry>
+    <title>How Many Bodies Exactly Is CBS Interactive Trying To Hide?  Try &#x201C;275-ish.&#x201D;</title>
+    <id>urn:uuid:9e349c6e379ad6b0589906cf2a9c5dcc7159e584</id>
+    <updated>2008-12-12T16:37:06+09:00</updated>
+    <published>2008-12-12T16:37:06+09:00</published>
+    <link href="http://planet.zhekov.net/show/How+Many+Bodies+Exactly+Is+CBS+Interactive+Trying+To+Hide%3F++Try+%E2%80%9C275-ish.%E2%80%9D" rel="alternate"/>
+    <author>
+      <name>Techcrunch</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;img src="http://www.techcrunch.com/wp-content/uploads/2008/08/cbs-interactive-new.png" class="shot"/&gt;&lt;/p&gt;
+&lt;p&gt;The pink slips were passed out on Thursday throughout the various business duchies that make up &lt;a href="http://www.techcrunch.com/ http://www.cbs.com/sales/" onclick="javascript:pageTracker._trackPageview ('/outbound/www.cbs.com');"&gt;CBS Interactive&lt;/a&gt;&#x2014;CNET, CBS.com, CBSNews,com, CBSSports.com, BNET, GameSpot, TV.com, last.fm, and CHOW.  While CBS confirmed to me and other reporters that layoffs did happen across the board, it refused to talk about how many total people are losing their jobs.  That left us scrambling about gathering piecemeal information.  There were about &lt;a href="http://www.techcrunch.com/ http://www.techcrunch.com/2008/12/11/layoffs-at-lastfm-confirmed-where-else-are-heads-rolling-at-cbs/"&gt;20 layoffs at Last.fm&lt;/a&gt;; 8 editors, we hear, at CBSNews.com are out of a job; another set of &amp;#8220;redundancies&amp;#8221; were eliminated at CBSSports.com.  &lt;/p&gt;
+&lt;p&gt;But how big exactly were the layoffs, especially at Cnet, where most of the employees reside?  CBS, which is at heart a news organization, doesn&amp;#8217;t want the public to know how many layoffs just occurred at CBS Interactive.  As of this writing, Cnet &lt;a href="http://news.cnet.com/1770-5_3-0.html?query=cbs&amp;#038;tag=srch&amp;#038;searchtype=news" onclick="javascript:pageTracker._trackPageview ('/outbound/news.cnet.com');"&gt;didn&amp;#8217;t even report&lt;/a&gt; the fact that there were layoffs on Thursday.  Neither did &lt;a href="http://search.cbsnews.com/?source=cbs&amp;#038;q=cbs+interactive&amp;#038;x=0&amp;#038;y=0" onclick="javascript:pageTracker._trackPageview ('/outbound/search.cbsnews.com');"&gt;CBSNews.com&lt;/a&gt;.  And it&amp;#8217;s not because they didn&amp;#8217;t get the memo (from CBS Interactive CEO Quincy Smith, reprinted below).  &lt;/p&gt;
+&lt;p&gt;One rumor going around, which I heard as well, was that there were &lt;a href="http://gigaom.com/2008/12/11/cbs-interactive-cuts-as-much-as-20-percent/" onclick="javascript:pageTracker._trackPageview ('/outbound/gigaom.com');"&gt;20 percent cuts&lt;/a&gt; in all business units (which was in line with the cuts at Last.fm).  But that percentage turns out to be a bit high.  According to a source inside Cnet, the buzz is that the total number of employees asked to leave today was &amp;#8220;275-ish.&amp;#8221; A CBS spokesperson wouldn&amp;#8217;t confirm that number.  So take it as a rough estimate. &lt;/p&gt;
+&lt;p&gt;Don&amp;#8217;t expect a press release or even a footnote in CBS Corporation&amp;#8217;s SEC filings either.  CBS as a whole employed nearly 24,000 people at the end of 2007 (the last figure I can find), so 275 is barley one percent.  That is not material, and thus the company is not required to report it.  But for CBS Interactive, it is material&#x2014;about 10 percent or higher.  &lt;/p&gt;
+&lt;p&gt;Here&amp;#8217;s how I get at that figure.  The vast majority of employees are at Cnet, which if you look at the &lt;a href="http://www.techcrunch.com/ http://www.sec.gov/Archives/edgar/data/1015577/000119312508040260/d10k.htm" onclick="javascript:pageTracker._trackPageview ('/outbound/www.sec.gov');"&gt;last 10K&lt;/a&gt; it filed with the SEC, lists 2,700 employees at the end of 2007.  There was at least &lt;a href="http://www.techcrunch.com/2008/03/26/cnet-cuts-10-of-workforce-effective-immediately/"&gt;one round of layoffs&lt;/a&gt; at Cnet in March, 2008, which reduced headcount by 120.    And a CBS Interactive spokesperson told me today that before Cnet was acquired in July, 2008, it had 2,000 to 2,500 employees.  But that was more a guesstimate than a hard number.  Figure some more attrition, then give or take a few hundred employees at the other CBS properties, and that puts the total employee count back somewhere between 2,300 and 2,700.  Sticking with the 275 layoffs, that represents between 10 and 12 percent.  &lt;/p&gt;
+&lt;p&gt;We&amp;#8217;ve updated our &lt;a href="http://www.techcrunch.com/layoffs/"&gt;Layoff Tracker&lt;/a&gt; with this estimate.&lt;/p&gt;
+&lt;p&gt;Below is the memo Quincy Smith sent on Thursday afternoon to all CBS Interactive employees, delivering the layoff news in the vaguest terms as part of a progress report. Basically, everywhere he is combining business units (in sports, games, music, lifestyle, entertainment, news, marketing, and biz dev), people are losing jobs.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&lt;em&gt;From: Quincy and Neil&lt;br /&gt;
+Date: Thu, 11 Dec 2008 16:33:25 -0800&lt;br /&gt;
+Subject: CBS Interactive Update&lt;/p&gt;
+&lt;p&gt;Team,&lt;/p&gt;
+&lt;p&gt;As we come to the end of 2008, we have a lot to be proud of.  CBS Interactive is the best online content network for information and entertainment.  Our properties are expanding, advertisers are capitalizing on our properties and their scale, and we are positioned well to continue to grow.  As we prepare for 2009 and beyond, we&#x2019;d like to update you on this progress, announce some organizational changes and comment on the broader market environment and how it impacts CBS Interactive.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Progress&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;CBS Interactive is the 8th largest Internet network in the world.  Our combined traffic is up nearly 30% since we closed the merger this summer. CNET, CBSSports.com, BNET, GameSpot, TV.com, CBS.com, last.fm, and CHOW have each had record traffic within the past three months.  Our commitment to our users is paying off.&lt;/p&gt;
+&lt;p&gt;Advertisers have noticed.  We have recently signed and announced deals across several of our properties with Microsoft, AT&amp;#038;T, Intel, Bertolli, EA, and GM. In these challenging economic times, marketers are consolidating their efforts with their best partners.  Our properties, our audiences, our ideas and our insights will continue to differentiate us in the marketplace.&lt;/p&gt;
+&lt;p&gt;Finally, we have contributed to and benefited from the TV and Radio divisions of CBS.  We&#x2019;ve done nearly 1500 purpose-driven promotions to our properties on Broadcast TV, Radio and local TV Stations; CHOW and GameSpot content is running on the CBS Outernet; and CNET ran a major consumer campaign in markets like New York and San Francisco through CBS Outdoor. CBS Interactive is also a key partner to CBS Television Network for major broadcast events. In just the last week, we featured complementary content for events including The Victoria&#x2019;s Secret Fashion Show, the Grammy Nominations and the SEC Championship.&lt;/p&gt;
+&lt;p&gt;Moving forward, we have a lot to look forward to. Events like CES, The Grammys, and March Madness on Demand are all just around the corner.  Each represent huge cross-platform opportunities where CBS Interactive will again help complete the experience with coverage on air, online, and on mobile for our audiences.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Organizational Promotions and Changes&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As we enter 2009, we are making some changes to our organizational structure to capitalize on audience and advertiser overlaps.  We are also making some changes to key functions so that we can realize the benefits of our position in the marketplace.   These changes mark another significant milestone in our integration, as we fine-tune our organization to best take advantage of the power of our entire network.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sports, Games and Music&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We are combining our Sports, Games and Music properties into a single group led by Steve Snyder.  Steve has tremendous product and leadership experience and an enthusiasm for each of these categories.   In addition, Tom Jones will be moving over from CNET to head-up the sales efforts for this group.  Within the group, our talented senior leaders including Jason Kint, Rich Calacci, Jaci Hays, Kevin Menard, Felix Miller, Doug Schmidt and others will report to Steve and to Tom.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Entertainment &amp;#038; Lifestyle&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We are also moving our Lifestyle properties, CHOW and UrbanBaby, to the Entertainment group (TV.com, CBS.com, The CBS Audience Network and TheInsider.com) to capitalize on the similarities in audience and advertisers. This group will continue to be led by Anthony Soohoo with sales led by Ken Lagana.  We&#x2019;re excited to see the innovation that will come from this group in 2009.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Technology &amp;#038; News&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Under the continued leadership of Joe Gillespie, our Technology &amp;#038; News division will bring CBSNews.com and CNET News.com into a single CBS Interactive News Group.  Each site will maintain its own brand identity, while benefiting from shared resources in design, product and engineering to deliver deeper and more comprehensive coverage of major stories and events.  Led by Mark Larkin, with Dan Farber as Editor-in-Chief, CBS News.com and CNET News.com will also have the opportunity to share content and collaborate on stories for the benefit of their unique audiences.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CBS Interactive Marketing&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We are bringing together our key marketing functions into a new group called CBS Interactive Marketing led by Mickey Wilson.  The group brings together expertise from across the organization so that we can capitalize on our biggest opportunities, and elevate the company to be a strategic marketing partner whose products, consumer insights, and ad innovations are critical to our clients&#x2019; long-term success.  They will establish the company as the standard for premium content online, and define and evolve brand strategies to capture the biggest opportunities for audience and revenue growth through market planning, insights and execution.  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;CBS Interactive Business Development&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We are also bringing together all of our business development activities. This group will be led by Mike Marquez.  Mike and his team will be responsible for the development of all new partnerships, investments, and acquisitions.   They will be charged with taking advantage of knowledge sharing across the whole company to ensure that we are the strategic partner of choice for the industry.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Market Conditions&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As you know the general economic environment continues to be a challenge.  We have always been very aggressive about managing our costs, and that requirement is even more critical now than it has ever been.  We believe this new, more efficient organizational structure will produce better results for CBS Interactive, and also result in lower operating costs. It is always very difficult to make these kinds of reductions, but they come after a thorough review of how we are organized and how we operate, and what best serves our many users, advertisers and employees.&lt;/p&gt;
+&lt;p&gt;CBS Interactive is a special place because of you, and we thank each of you for what you have done, are doing, and will do to exceed the expectations of the tens of millions of people who come to our properties every day.&lt;/p&gt;
+&lt;p&gt;Today, we sit in a great position. People seek out our brands because we provide them with the information and entertainment they want and need, and marketers seek us out because of the powerful audiences we attract.  We are positioned to grow in 2009 and beyond.&lt;/p&gt;
+&lt;p&gt;Best,&lt;br /&gt;
+-q, NA&lt;/em&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Crunch Network&lt;/em&gt;&lt;/strong&gt;:  &lt;a href="http://www.crunchgear.com"&gt;CrunchGear&lt;/a&gt;&lt;em&gt; &lt;/em&gt;drool over the sexiest new gadgets and hardware.&lt;/p&gt;
+&lt;div&gt;&lt;a href='http://oa.techcrunch.com/openads/www/delivery/ck.php?n=ac653d85&amp;amp;cb=772' target='_blank'&gt;&lt;img src='http://oa.techcrunch.com/openads/www/delivery/avw.php?zoneid=19&amp;amp;cb=678&amp;amp;n=ac653d85' border='0' alt='' /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href="https://feedads.googleadservices.com/~at/f8RUATxQehNa4KC6kTDlCt7CtT8/a"&gt;&lt;img src="https://feedads.googleadservices.com/~at/f8RUATxQehNa4KC6kTDlCt7CtT8/i" border="0" ismap="true"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feedproxy.google.com/~f/Techcrunch?a=InraAxx6"&gt;&lt;img src="http://feedproxy.google.com/~f/Techcrunch?d=43" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feedproxy.google.com/~f/Techcrunch?a=Jsn3wOJQ"&gt;&lt;img src="http://feedproxy.google.com/~f/Techcrunch?i=Jsn3wOJQ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feedproxy.google.com/~f/Techcrunch?a=zN9DafT6"&gt;&lt;img src="http://feedproxy.google.com/~f/Techcrunch?d=50" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feedproxy.google.com/~f/Techcrunch?a=8Go4LPLJ"&gt;&lt;img src="http://feedproxy.google.com/~f/Techcrunch?d=41" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img src="http://feedproxy.google.com/~r/Techcrunch/~4/Y9uZpYPaCVY" height="1" width="1"/&gt;</content>
+  </entry>
+</feed>

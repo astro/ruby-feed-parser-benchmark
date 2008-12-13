@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	>
+
+<channel>
+	<title>Julien Lecomte's Blog</title>
+	<atom:link href="http://www.julienlecomte.net/blog/feed/" rel="self" type="application/rss+xml" />
+	<link>http://www.julienlecomte.net/blog</link>
+	<description>Web Development and Operating System Programming</description>
+	<pubDate>Wed, 03 Dec 2008 02:17:20 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.6</generator>
+	<language>en</language>
+			<item>
+		<title>The Moon-Venus-Jupiter Conjunction of December 01, 2008</title>
+		<link>http://www.julienlecomte.net/blog/2008/12/135/</link>
+		<comments>http://www.julienlecomte.net/blog/2008/12/135/#comments</comments>
+		<pubDate>Wed, 03 Dec 2008 02:16:38 +0000</pubDate>
+		<dc:creator>Julien Lecomte</dc:creator>
+		
+		<category><![CDATA[Astronomy]]></category>
+
+		<guid isPermaLink="false">http://www.julienlecomte.net/blog/?p=135</guid>
+		<description><![CDATA[
+Venus is on the left, Jupiter on the right. Notice the Earthshine, barely visible on this shot. Cheers!
+]]></description>
+			<content:encoded><![CDATA[<p><img src="/blogfiles/images/venus-jupiter-moon-conjunction-20081201.jpg" style="width:560px;height:375px;"></p>
+<p>Venus is on the left, Jupiter on the right. Notice the Earthshine, barely visible on this shot. Cheers!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.julienlecomte.net/blog/2008/12/135/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Stop Using GMT!</title>
+		<link>http://www.julienlecomte.net/blog/2008/10/115/</link>
+		<comments>http://www.julienlecomte.net/blog/2008/10/115/#comments</comments>
+		<pubDate>Mon, 27 Oct 2008 02:57:37 +0000</pubDate>
+		<dc:creator>Julien Lecomte</dc:creator>
+		
+		<category><![CDATA[Astronomy]]></category>
+
+		<guid isPermaLink="false">http://www.julienlecomte.net/blog/?p=115</guid>
+		<description><![CDATA[
+GMT, the famous Greenwich Mean Time, is used everywhere. However, we should all consider not using it. Universal Time (UT) &#8212; or even better, Coordinated Universal Time (UTC) &#8212; should be used instead. Why? In a given location, the real solar time is the time indicated by the Sun on a sundial. It is defined [...]]]></description>
+			<content:encoded><![CDATA[<p><img src="/blogfiles/images/time.png" style="width:100px;height:66px;float:left;margin-right:10px;"></p>
+<p>GMT, the famous <a href="http://en.wikipedia.org/wiki/Greenwich_Mean_Time">Greenwich Mean Time</a>, is used everywhere. However, we should all consider not using it. Universal Time (UT) &#8212; or even better, Coordinated Universal Time (UTC) &#8212; should be used instead. Why? In a given location, the <em>real solar time</em> is the time indicated by the Sun on a sundial. It is defined as the angle, expressed in hours, minutes and seconds of time &#8212; 1 hour corresponding to 15&deg; &#8212; between the sun and the local meridian. According to the definition, it is then 0h when the sun crosses the local meridian, which is noon local time, and not 12h! The <em>mean solar time</em> is the <em>real solar time</em> corrected by the <a href="http://en.wikipedia.org/wiki/Equation_of_time">equation of time</a>. The Greenwich Mean Time is the <em>mean solar time</em> at the <a href="http://en.wikipedia.org/wiki/Royal_Greenwich_Observatory">Royal Observatory in Greenwich, London</a>.</p>
+<p>As you can see, GMT refers to an astronomical day starting at noon, and is thus not designed for civil timekeeping. Universal Time is the Greenwich Mean Time adjusted to have a civil day starting at midnight.</p>
+<p>Universal Time (UT) is not a perfectly uniform timescale (the Earth&#8217;s rotation is not perfectly uniform) To compensate for this lack of accuracy, we now use Coordinated Universal Time (UTC), which is an atomic timescale (thus perfectly uniform) that approximates Universal Time (UT) by less than a second (remember hearing in the news that we need to add or remove a second to our clocks at the end of the year? Those are leap seconds to keep UTC in sync with the Earth&#8217;s rotation!)</p>
+<p>Do yourself a favor and stop using GMT. Look smart and start using UTC instead. Cheers!</p>
+<div style="clear:both;"></div>
+]]></content:encoded>
+			<wfw:commentRss>http://www.julienlecomte.net/blog/2008/10/115/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>YUI Compressor and Java Class Loader</title>
+		<link>http://www.julienlecomte.net/blog/2008/10/80/</link>
+		<comments>http://www.julienlecomte.net/blog/2008/10/80/#comments</comments>
+		<pubDate>Wed, 22 Oct 2008 00:16:32 +0000</pubDate>
+		<dc:creator>Julien Lecomte</dc:creator>
+		
+		<category><![CDATA[Web Development]]></category>
+
+		<guid isPermaLink="false">http://www.julienlecomte.net/blog/?p=80</guid>
+		<description><![CDATA[The YUI Compressor uses a slightly modified version of the parser used in the Rhino JavaScript engine. The reason for modifying the parser came from the need to support JScript conditional comments, unescaped forward slashes in regular expressions &#8212; which all browsers support and many people use &#8212; and a few micro optimizations. The problem [...]]]></description>
+			<content:encoded><![CDATA[<p>The <a href="http://www.julienlecomte.net/blog/2007/08/11/">YUI Compressor</a> uses a slightly modified version of the parser used in the <a href="http://www.mozilla.org/rhino/">Rhino</a> JavaScript engine. The reason for modifying the parser came from the need to support JScript conditional comments, unescaped forward slashes in regular expressions &#8212; which all browsers support and many people use &#8212; and a few micro optimizations. The problem is that many users had the original Rhino Jar file somewhere on their system, either in their classpath, or in their JRE extension directory (&lt;JRE_HOME&gt;/lib/ext) This caused many headaches because the wrong classes were being loaded, leading to many weird bugs.</p>
+<p>Today, I finally decided to do something about it. This meant writing a custom class loader to load the modified classes directly from the YUI Compressor Jar file. You can download the source and binary package here:</p>
+<p style="margin:30px 0;text-align:center;"><a href="/yuicompressor/" target="_blank" style="padding:8px;border:1px solid #bbb;font-weight:bold;text-decoration:underline;">Download version 2.4 of the YUI Compressor</a></p>
+<p>The skeleton of the custom class loader is pretty straightforward:</p>
+<pre class="prettyprint">
+package com.yahoo.platform.yui.compressor;
+
+public class JarClassLoader extends ClassLoader
+{
+    public Class loadClass(String name) throws ClassNotFoundException
+    {
+        // First check if the class is already loaded
+        Class c = findLoadedClass(name);
+        if (c == null) {
+            // Try to load the class ourselves
+            c = findClass(name);
+        }
+
+        if (c == null) {
+            // Fall back to the system class loader
+            c = ClassLoader.getSystemClassLoader().loadClass(name);
+        }
+
+        return c;
+    }
+
+    protected Class findClass(String name)
+    {
+        // Most of the heavy lifting takes place here
+    }
+}
+</pre>
+<p>The role of the <code>findClass</code> method is to first locate the YUI Compressor Jar file. To do that, we look in the classpath for a Jar file that contains the <code>com.yahoo.platform.yui.compressor.JarClassLoader</code> class:</p>
+<pre class="prettyprint">
+private static String jarPath;
+
+private static String getJarPath()
+{
+    if (jarPath != null) {
+        return jarPath;
+    }
+
+    String classname = JarClassLoader.class.getName().replace('.', '/') + ".class";
+    String classpath = System.getProperty("java.class.path");
+    String classpaths[] = classpath.split(System.getProperty("path.separator"));
+    for (int i = 0; i < classpaths.length; i++) {
+        String path = classpaths[i];
+        JarFile jarFile = new JarFile(path);
+        JarEntry jarEntry = findJarEntry(jarFile, classname);
+        if (jarEntry != null) {
+            jarPath = path;
+            break;
+        }
+    }
+
+    return jarPath;
+}
+
+private static JarEntry findJarEntry(JarFile jarFile, String entryName)
+{
+    Enumeration entries = jarFile.entries();
+    while (entries.hasMoreElements()) {
+        JarEntry entry = (JarEntry) entries.nextElement();
+        if (entry.getName().equals(entryName)) {
+            return entry;
+        }
+    }
+    return null;
+}
+</pre>
+<p>Once we know where the YUI Compressor Jar file is, we can load the appropriate class from that file. Note the need to define the package the class belongs to before calling <code>defineClass</code>!</p>
+<pre class="prettyprint">
+protected Class findClass(String name)
+{
+    Class c = null;
+    String jarPath = getJarPath();
+    if (jarPath != null) {
+        JarFile jarFile = new JarFile(jarPath);
+        c = loadClassData(jarFile, name);
+    }
+    return c;
+}
+
+private Class loadClassData(JarFile jarFile, String className)
+{
+    String entryName = className.replace('.', '/') + ".class";
+    JarEntry jarEntry = findJarEntry(jarFile, entryName);
+    if (jarEntry == null) {
+        return null;
+    }
+
+    // Create the necessary package if needed...
+    int index = className.lastIndexOf('.');
+    if (index >= 0) {
+        String packageName = className.substring(0, index);
+        if (getPackage(packageName) == null) {
+            definePackage(packageName, "", "", "", "", "", "", null);
+        }
+    }
+
+    // Read the Jar File entry and define the class...
+    InputStream is = jarFile.getInputStream(jarEntry);
+    ByteArrayOutputStream os = new ByteArrayOutputStream();
+    copy(is, os);
+    byte[] bytes = os.toByteArray();
+    return defineClass(className, bytes, 0, bytes.length);
+}
+
+private void copy(InputStream in, OutputStream out)
+{
+    byte[] buf = new byte[1024];
+    while (true) {
+        int len = in.read(buf);
+        if (len < 0) break;
+        out.write(buf, 0, len);
+    }
+}
+</pre>
+<p>The last thing we need to do is bootstrap the application. In order to do that, we simply load the main class (<code>YUICompressor</code>) using our new custom class loader. All the classes that will be needed at runtime will use the same class loader:</p>
+<pre class="prettyprint">
+package com.yahoo.platform.yui.compressor;
+
+public class Bootstrap
+{
+    public static void main(String args[]) throws Exception
+    {
+        ClassLoader loader = new JarClassLoader();
+        Thread.currentThread().setContextClassLoader(loader);
+        Class c = loader.loadClass(YUICompressor.class.getName());
+        Method main = c.getMethod("main", new Class[]{String[].class});
+        main.invoke(null, new Object[]{args});
+    }
+}
+</pre>
+<p>As you can see, it&#8217;s not terribly complicated to write a custom class loader. Note: I left out all the exception handling code and the import statements for clarity. The final code can be found in the downloadable archive. Cheers!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.julienlecomte.net/blog/2008/10/80/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>The Modern Moon: A Personal View</title>
+		<link>http://www.julienlecomte.net/blog/2008/10/66/</link>
+		<comments>http://www.julienlecomte.net/blog/2008/10/66/#comments</comments>
+		<pubDate>Wed, 15 Oct 2008 01:44:22 +0000</pubDate>
+		<dc:creator>Julien Lecomte</dc:creator>
+		
+		<category><![CDATA[Astronomy]]></category>
+
+		<guid isPermaLink="false">http://www.julienlecomte.net/blog/?p=66</guid>
+		<description><![CDATA[
+I just finished reading The Modern Moon: A Personal View by planetary geologist Charles A. Wood, and felt compelled to write a few lines about this genuinely brilliant book. I have been practicing amateur astronomy for the past 17 years, and have occasionally looked at the moon through various telescopes. But for some reason, our [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://www.amazon.com/Modern-Moon-Personal-View/dp/0933346999/"><img src="/blogfiles/images/the-modern-moon-a-personal-view.jpg" style="width:185px;height:239px;padding:0;border:none;float:left;margin-right:10px;" alt="The Modern Moon: A Personal View (book cover)"></a></p>
+<p>I just finished reading <a href="http://www.amazon.com/Modern-Moon-Personal-View/dp/0933346999/">The Modern Moon: A Personal View</a> by planetary geologist Charles A. Wood, and felt compelled to write a few lines about this genuinely brilliant book. I have been practicing amateur astronomy for the past 17 years, and have occasionally looked at the moon through various telescopes. But for some reason, our natural satellite has always failed to captivate my attention. I suppose you don&#8217;t take interest in what you fail to understand. Moreover, telescopic views of the moon are overwhelming with details, making it hard to decipher what you are looking at. Wood&#8217;s book brings order to chaos and does a great job at explaining the science behind some of the surface features of the moon. For this reason, I warmly recommend anybody even remotely interested in lunar geology to read this book. Observers will want to complement it with a good lunar atlas, such as Antonin Rukl&#8217;s Atlas of the Moon.</p>
+<div style="clear:both;"></div>
+]]></content:encoded>
+			<wfw:commentRss>http://www.julienlecomte.net/blog/2008/10/66/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Observing the Heavens at Lick Observatory</title>
+		<link>http://www.julienlecomte.net/blog/2008/07/52/</link>
+		<comments>http://www.julienlecomte.net/blog/2008/07/52/#comments</comments>
+		<pubDate>Sun, 27 Jul 2008 17:12:58 +0000</pubDate>
+		<dc:creator>Julien Lecomte</dc:creator>
+		
+		<category><![CDATA[Astronomy]]></category>
+
+		<guid isPermaLink="false">http://www.julienlecomte.net/blog/?p=52</guid>
+		<description><![CDATA[The Lick Observatory is an astronomical observatory, owned and operated by the University of California. It is situated on the summit of Mount Hamilton, in the Diablo Range just east of San Jose, California, USA. The observatory is managed from the University of California, Santa Cruz, where its scientific staff moved in the mid-1960s. (source: [...]]]></description>
+			<content:encoded><![CDATA[<blockquote><p><a href="http://www.ucolick.org/" target="_blank">The Lick Observatory</a> is an astronomical observatory, owned and operated by the <a href="http://en.wikipedia.org/wiki/University_of_California" target="_blank">University of California</a>. It is situated on the summit of <a href="http://en.wikipedia.org/wiki/Mount_Hamilton_(California)" target="_blank">Mount Hamilton</a>, in the <a href="http://en.wikipedia.org/wiki/Diablo_Range" target="_blank">Diablo Range</a> just east of <a href="http://en.wikipedia.org/wiki/San_Jose%2C_California" target="_blank">San Jose, California, USA</a>. The observatory is managed from the <a href="http://en.wikipedia.org/wiki/University_of_California%2C_Santa_Cruz" target="_blank">University of California, Santa Cruz</a>, where its scientific staff moved in the mid-1960s. (source: Wikipedia)</p></blockquote>
+<p>Every year, the Lick Observatory presents a summer concert series on Saturday nights to benefit the Lick Observatory Visitors Programs. Tickets are hard to come by, and the shows sell out soon after they go on sale. However, this year, I managed to purchase a couple of tickets, and last night, Brandi and I had the opportunity to spend the evening at the Lick Observatory.</p>
+<p>The evening began pleasantly with an observation of <a href="http://en.wikipedia.org/wiki/Solar_prominence" target="_blank">solar prominences</a>, shortly followed by an hour long string quartet concert. We then got to observe <a href="http://www.seds.org/messier/m/m017.html" target="_blank">Messier 17</a>, an emission nebula located approximately 6,000 light years away from us, through <a href="http://www.ucolick.org/public/telescopes/36-inch.html" target="_blank">the Great 36&quot; Lick refractor</a> (the 2nd largest in the world!) After that, the renowned <a href="http://en.wikipedia.org/wiki/Geoffrey_Marcy" target="_blank">Geoff Marcy</a> gave a lecture on &#8220;Searching for Earth-like Planets&#8221; [outside our solar system] Finally, we looked at a few deep sky objects, as well as Jupiter, through amateur telescopes stationed on the parking lot. Below are some photos of this wonderful event. Cheers!</p>
+<p><a href="/blogfiles/lick-observatory-2008/photos/IMG_1695.JPG" style="float:left;margin-right:10px;" target="_blank" title="Sunset at the Lick Observatory"><img src="/blogfiles/lick-observatory-2008/thumbs/IMG_1695.jpg" width="180" height="135" alt="Sunset at the Lick Observatory"></a></p>
+<p><a href="/blogfiles/lick-observatory-2008/photos/IMG_1693.JPG" style="float:left;margin-right:10px;" target="_blank" title="Looking back at the bay from Mount Hamilton"><img src="/blogfiles/lick-observatory-2008/thumbs/IMG_1693.jpg" width="180" height="135" alt="Looking back at the bay from Mount Hamilton"></a></p>
+<p><a href="/blogfiles/lick-observatory-2008/photos/IMG_1698.JPG" style="float:left;margin-right:10px;" target="_blank" title="A high quality, amateur-owned refractor outfitted with a special solar filter"><img src="/blogfiles/lick-observatory-2008/thumbs/IMG_1698.jpg" width="180" height="135" alt="A high quality, amateur-owned refractor outfitted with a special solar filter"></a></p>
+<div style="clear:both;"></div>
+<p><a href="/blogfiles/lick-observatory-2008/photos/IMG_1649.JPG" style="float:left;margin-right:10px;" target="_blank" title="The Great 36&quot; Lick refractor"><img src="/blogfiles/lick-observatory-2008/thumbs/IMG_1649.jpg" width="180" height="135" alt="The Great 36" Lick refractor"></a></p>
+<p><a href="/blogfiles/lick-observatory-2008/photos/IMG_1705.JPG" style="float:left;margin-right:10px;" target="_blank" title="String quartet concert"><img src="/blogfiles/lick-observatory-2008/thumbs/IMG_1705.jpg" width="180" height="135" alt="String quartet concert"></a></p>
+<p><a href="/blogfiles/lick-observatory-2008/photos/IMG_1708.JPG" style="float:left;margin-right:10px;" target="_blank" title="Looking back at San Jose"><img src="/blogfiles/lick-observatory-2008/thumbs/IMG_1708.jpg" width="180" height="135" alt="Looking back at San Jose"></a></p>
+<div style="clear:both;"></div>
+]]></content:encoded>
+			<wfw:commentRss>http://www.julienlecomte.net/blog/2008/07/52/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>An IDE Device Driver for Simplix</title>
+		<link>http://www.julienlecomte.net/blog/2008/07/51/</link>
+		<comments>http://www.julienlecomte.net/blog/2008/07/51/#comments</comments>
+		<pubDate>Tue, 08 Jul 2008 23:12:42 +0000</pubDate>
+		<dc:creator>Julien Lecomte</dc:creator>
+		
+		<category><![CDATA[System Programming]]></category>
+
+		<guid isPermaLink="false">http://www.julienlecomte.net/blog/?p=51</guid>
+		<description><![CDATA[Over the past couple of weeks, I have been working on an IDE hard disk driver for my hobby operating system Simplix. This driver probes for existing IDE controllers, identifies the IDE devices connected to these controllers, and allows for reading/writing contiguous sectors from/to these devices. It communicates with IDE devices in PIO mode (no [...]]]></description>
+			<content:encoded><![CDATA[<p>Over the past couple of weeks, I have been working on an IDE hard disk driver for my hobby operating system <a href="http://www.julienlecomte.net/blog/2007/09/10/">Simplix</a>. This driver probes for existing IDE controllers, identifies the IDE devices connected to these controllers, and allows for reading/writing contiguous sectors from/to these devices. It communicates with IDE devices in PIO mode (no DMA) and does not support ATAPI devices (i.e. it does not offer any support for CD-ROM or DVD-ROM drives) At the same time, I also wrote a RAM disk driver, a simple block device interface, and a test program in the form of a kernel thread. This test program reads the first sector of the master IDE device connected to the primary IDE controller, and displays the last two bytes of this sector. These are usually 0&#215;55aa (boot record signature)</p>
+<p>Go ahead and take a look at the <a href="http://www.julienlecomte.net/simplix/">source code</a> online. You can also <a href="http://www.julienlecomte.net/simplix/simplix.tar.gz">download</a> the Simplix distribution, compile it and run it either in Bochs/QEMU, or on a real PC. Below is a screen shot of Simplix running inside Bochs. Cheers!</p>
+<p><img src="/blogfiles/images/simplix-20080708-screenshot.png" style="width:560px;height:350px;border:none;"></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.julienlecomte.net/blog/2008/07/51/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Velocity Conference 2008</title>
+		<link>http://www.julienlecomte.net/blog/2008/06/50/</link>
+		<comments>http://www.julienlecomte.net/blog/2008/06/50/#comments</comments>
+		<pubDate>Sat, 21 Jun 2008 01:45:55 +0000</pubDate>
+		<dc:creator>Julien Lecomte</dc:creator>
+		
+		<category><![CDATA[Web Development]]></category>
+
+		<guid isPermaLink="false">http://www.julienlecomte.net/blog/?p=50</guid>
+		<description><![CDATA[
+I will be speaking at the Velocity Conference 2008 alongside my buddies and former co-workers Steve Souders and Bill Scott. The conference takes place on Monday, June 23 in Burlingame, CA. The topic of my presentation is High Performance Ajax Applications. I am also looking forward to attending all the other interesting talks.
+Hope to see [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://en.oreilly.com/velocity2008/public/content/home"><img src="/blogfiles/images/velocity-conference-2008.jpg" style="width:240px;height:161px;padding:0;border:none;float:left;" alt="Velocity Conference 2008 Logo"></a></p>
+<p>I will be speaking at the <a href="http://en.oreilly.com/velocity2008/public/content/home">Velocity Conference 2008</a> alongside my buddies and former co-workers <a href="http://www.souders.org/">Steve Souders</a> and <a href="http://looksgoodworkswell.blogspot.com/">Bill Scott</a>. The conference takes place on Monday, June 23 in Burlingame, CA. The topic of my presentation is <a href="http://en.oreilly.com/velocity2008/public/schedule/detail/1544">High Performance Ajax Applications</a>. I am also looking forward to attending all the other interesting talks.</p>
+<p>Hope to see you all there!</p>
+<div style="clear:both;"></div>
+]]></content:encoded>
+			<wfw:commentRss>http://www.julienlecomte.net/blog/2008/06/50/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>Simplix Running on Real Hardware</title>
+		<link>http://www.julienlecomte.net/blog/2008/06/49/</link>
+		<comments>http://www.julienlecomte.net/blog/2008/06/49/#comments</comments>
+		<pubDate>Wed, 18 Jun 2008 16:45:32 +0000</pubDate>
+		<dc:creator>Julien Lecomte</dc:creator>
+		
+		<category><![CDATA[System Programming]]></category>
+
+		<guid isPermaLink="false">http://www.julienlecomte.net/blog/?p=49</guid>
+		<description><![CDATA[This morning, as I was just finishing up the code responsible for detecting IDE devices (hard disks, CD-ROM drives, etc.) in Simplix, I felt like trying my operating system on real hardware. I have a 4 year old PC with a floppy drive at home, so I decided to give it a shot. The result [...]]]></description>
+			<content:encoded><![CDATA[<p>This morning, as I was just finishing up the code responsible for detecting IDE devices (hard disks, CD-ROM drives, etc.) in Simplix, I felt like trying my operating system on real hardware. I have a 4 year old PC with a floppy drive at home, so I decided to give it a shot. The result is pure geek pleasure. Cheers!</p>
+<p><img src="/blogfiles/simplix/simplix-real-hardware-screenshot.jpg" style="width:500px;height:276px;" alt="Screen shot of Simplix running on real hardware"></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.julienlecomte.net/blog/2008/06/49/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>New Version of Simplix, My Hobby Operating System</title>
+		<link>http://www.julienlecomte.net/blog/2008/05/47/</link>
+		<comments>http://www.julienlecomte.net/blog/2008/05/47/#comments</comments>
+		<pubDate>Tue, 27 May 2008 02:48:42 +0000</pubDate>
+		<dc:creator>Julien Lecomte</dc:creator>
+		
+		<category><![CDATA[System Programming]]></category>
+
+		<guid isPermaLink="false">http://www.julienlecomte.net/blog/?p=47</guid>
+		<description><![CDATA[
+Some of you may remember this post about Simplix, my hobby operating system. The first version, published in Sept. 2007, was not able to do much and was really buggy. Over the next 9 months, as I was studying the inner workings of modern operating systems, I also wanted to experiment with some of the [...]]]></description>
+			<content:encoded><![CDATA[<p><img src="/blogfiles/images/simplix.welcome-small.png" style="width:130px;height:100px;float:left;border:1px solid #bbb;padding:0;margin-right:10px;"></p>
+<p>Some of you may remember <a href="/blog/2007/09/10/" title="Introducing Simplix, an Operating System Anybody Can Understand">this post</a> about <a href="/simplix/" title="Simplix source code browser">Simplix</a>, my hobby operating system. The first version, published in Sept. 2007, was not able to do much and was really buggy. Over the next 9 months, as I was studying the inner workings of modern operating systems, I also wanted to experiment with some of the concepts and ideas I was learning. I decided to apply my newly acquired knowledge to a new version of Simplix I was secretly working on. This new version contains a lot of improvements:</p>
+<div style="clear:both;"></div>
+<ul>
+<li>Greatly improved the performance of the page allocator.</li>
+<li>New high performance memory allocator (<code>kmalloc</code>/<code>kfree</code>)</li>
+<li>Better handling of software exceptions: Kill the current process and display debug info.</li>
+<li>New system calls. Simplix now supports <code>exit</code>, <code>fork</code>, <code>waitpid</code>, <code>getpid</code>, <code>getppid</code>, <code>time</code>, <code>stime</code>, <code>sleep</code> and <code>brk</code>.</li>
+<li>New scheduling algorithm. This algorithm is ridiculously simple and not particularly efficient or elegant. It should however be fair to interactive jobs, while doing its best to accomodate CPU intensive tasks.</li>
+<li>Implemented a small set of user space libraries, including string manipulations (string.h) and a trivial implementation of <code>malloc</code> and <code>free</code> copied directly from the book &#8220;The C Programming Language&#8221; by Brian W. Kernighan and Dennis M. Ritchie.</li>
+<li>Much cleaner source tree, improved source code documentation, etc.</li>
+</ul>
+<p>As you have probably noticed by now, this new version of Simplix still does not provide any I/O facility for user space tasks. I/O is probably the most complex part of an operating system, so I decided to put it off for a little while longer. In this version however, I decided to write a few sample programs:</p>
+<ul>
+<li>A Unix time counter implemented as a kernel thread.</li>
+<li>Another kernel thread that finds and prints prime numbers.</li>
+<li>A user task that computes the first 10,000 decimals of the number PI.</li>
+<li>A kernel thread that prints live information about the system.</li>
+<li>A program that creates a lot of user space tasks, each of them sleeps for one second before exiting.</li>
+</ul>
+<p>You can already take a look at the <a href="/simplix/">complete and up-to-date source code</a>, and even <a href="/simplix/simplix.tar.gz">download it</a>. Compiling Simplix requires a not-too-ancient version of GCC, make, and a few basic command line tools available on almost all Unix systems (objcopy, dd, etc.) If you don&#8217;t feel like trying it out yourself, I put together a very short Flash video showing the system booting and running inside <a href="http://bochs.sourceforge.net/">Bochs</a>. You can also put the kernel binary on a floppy and try it on a real PC with a floppy drive. Cheers!</p>
+<p><strong>Note:</strong> If you can&#8217;t see the video below, it&#8217;s probably because you are reading this article using a news reader. If that&#8217;s the case, <a href="/blog/2008/05/47/">open this article in a web browser</a> to view the video.</p>
+<p><img src="http://www.julienlecomte.net/blog/wp-content/plugins/flash-video-player/default_video_player.gif" /></p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.julienlecomte.net/blog/2008/05/47/feed/</wfw:commentRss>
+		</item>
+		<item>
+		<title>gedit, An Awesome Text Editor</title>
+		<link>http://www.julienlecomte.net/blog/2008/04/46/</link>
+		<comments>http://www.julienlecomte.net/blog/2008/04/46/#comments</comments>
+		<pubDate>Wed, 23 Apr 2008 18:02:57 +0000</pubDate>
+		<dc:creator>Julien Lecomte</dc:creator>
+		
+		<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://www.julienlecomte.net/blog/?p=46</guid>
+		<description><![CDATA[
+TextMate has gained a lot of traction in the past few years, especially among web developers. Ruby developers swear by it for some reason. I don&#8217;t have MacOS X at home so I don&#8217;t use TextMate. Instead, my favorite text editor is gedit, the official text editor of the GNOME desktop environment. Unlike TextMate, gedit [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://www.gnome.org/projects/gedit/"><img src="/blogfiles/images/gedit-logo.png" style="width:76px;height:41px;padding:0;border:none;float:left;margin-right:10px;"></a></p>
+<p><a href="http://macromates.com/">TextMate</a> has gained a lot of traction in the past few years, especially among web developers. Ruby developers swear by it for some reason. I don&#8217;t have MacOS X at home so I don&#8217;t use TextMate. Instead, my favorite text editor is <a href="http://www.gnome.org/projects/gedit/">gedit</a>, the official text editor of the <a href="http://www.gnome.org/">GNOME</a> desktop environment. Unlike TextMate, gedit does not cost a thing, and is released under the <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License (GPL)</a>. It is extremely light weight and easily extensible via plugins, which can be written either in C or Python. On Ubuntu, the most popular plugins can be installed via the package gedit-plugins. Additional third party plugins can be downloaded <a href="http://live.gnome.org/Gedit/Plugins">here</a>. Some of my favorite plugins include the following:</p>
+<div style="clear:both;"></div>
+<ul>
+<li>File browser pane</li>
+<li>Find in documents</li>
+<li>Draw spaces</li>
+<li>Reopen tabs</li>
+<li>Save without trailing space</li>
+<li>Symbol browser</li>
+<li>Tab converter</li>
+</ul>
+<p>I also use the <a href="http://live.gnome.org/GtkSourceView/StyleSchemes">Darkmate</a> theme for syntax highlighting. Finally, TextMate aficionados will enjoy <a href="http://grigio.org/pimp_my_gedit_was_textmate_linux">this article</a> explaining how to configure gedit to look and behave just like their editor of choice. Now, if you really insist on spending $64 (that&#8217;s how much a single user license for TextMate costs as the time of this writing), I would recommend you donate this amount to <a href="http://www.stjude.org/">a charity of your choice</a>. They really need it. Cheers!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://www.julienlecomte.net/blog/2008/04/46/feed/</wfw:commentRss>
+		</item>
+	</channel>
+</rss>

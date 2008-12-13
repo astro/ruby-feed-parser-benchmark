@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/rss2full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><!-- generator="wordpress/2.3.3" --><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>Yahoo! User Interface Blog</title>
+	<link>http://yuiblog.com/blog</link>
+	<description>News and Articles about Designing and Developing wiht Yahoo! Libraries.</description>
+	<pubDate>Wed, 10 Dec 2008 17:53:19 +0000</pubDate>
+	<generator>http://wordpress.org/?v=2.3.3</generator>
+	<language>en</language>
+			<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://feeds.feedburner.com/YahooUserInterfaceBlog" type="application/rss+xml" /><item>
+		<title>YUI 3.0 PR2 Now Available: Widget and Plugin Infrastructure, Sample Widgets, and More</title>
+		<link>http://feeds.feedburner.com/~r/YahooUserInterfaceBlog/~3/480065793/</link>
+		<comments>http://yuiblog.com/blog/2008/12/09/yui3pr2-2/#comments</comments>
+		<pubDate>Wed, 10 Dec 2008 00:48:20 +0000</pubDate>
+		<dc:creator>Satyen Desai</dc:creator>
+		
+		<category><![CDATA[Development]]></category>
+
+		<guid isPermaLink="false">http://yuiblog.com/blog/2008/12/09/yui3pr2-2/</guid>
+		<description><![CDATA[
+We&#8217;re pleased today to announce the second preview release of the new YUI 3.x codeline. This release adds significantly to PR1, providing an all-new widget foundation, two sample widgets, a new plugin architecture, a new ultralight plugin for menu-style navigation, and enhancements throughout the library. We&#8217;ve ported YUI Test and Profiler from 2.6.0, moving two [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://developer.yahoo.com/yui/3/"><img src="http://yuiblog.com/assets/yui3arch-20081209-130759.jpg" alt="YUI 3.x" width="510" height="111"></a></p>
+<p>We&#8217;re pleased today to announce the second preview release of the new YUI 3.x codeline. This release adds significantly to PR1, providing an all-new widget foundation, two sample widgets, a new plugin architecture, a new ultralight plugin for menu-style navigation, and enhancements throughout the library. We&#8217;ve ported YUI Test and Profiler from 2.6.0, moving two steps closer to parity with the YUI 2.x core and utility platform. <a href="http://yuilibrary.com/downloads/">YUI 3.0 PR2 is available for download immediately from YUILibrary.com</a>; you can discuss the release with the YUI community <a href="http://tech.groups.yahoo.com/group/yui3/">in the YUI3 forum on Yahoo Groups</a>.</p>
+<p><img align="right" src="http://yuiblog.com/assets/terms-yui3-20081209-142330.png" alt="some key terms in YUI 3" />A key part of our focus in YUI 3.x is to provide more granularity so that you can fine-tune your implementation to include only the features that you&#8217;re actually using for a given component (<a href="http://video.yahoo.com/watch/3711767/10207432">watch the 3.x overview video for more on the larger goals for this codeline</a>). Each 3.x component ships with a small functional core, and advanced features are added in the form of plugins or optional submodules. The submodule pattern was illustrated in PR1. In PR2, we&#8217;re adding in the Widget infrastructure, designed to promote maximal modularity and code reuse, along with two reference widgets. We&#8217;re also debuting  the Plugin infrastructure. Plugins can be written to supplement a simple Node or to add features to a widget in a lightweight, <em>a la carte</em> fashion.</p>
+<p>Here are the highlights of PR2:</p>
+<ol>
+<li>
+  <strong>Widget Infrastructure: </strong>The biggest addition in PR2 is the debut of the Widget infrastructure. PR2 delivers <a href="http://developer.yahoo.com/yui/3/widget/">the base Widget class</a> for YUI 3.x, which will be the foundation class for all formal YUI widgets. (In 2.x, we  called these components &quot;controls&quot; in order to avoid confusion with Yahoo/Konfabulator widgets, but in 3.x we are standardizing on &quot;widgets.&quot;) The Widget class  extends <a href="http://developer.yahoo.com/yui/3/base">Base</a>, which was part of PR1. If you&#8217;re interested in exploring the Widget infrastructure, we recommend reviewing <a href="http://developer.yahoo.com/yui/3/node/">Node,</a> <a href="http://developer.yahoo.com/yui/3/event">Event</a>, <a href="http://developer.yahoo.com/yui/3/base/">Base</a>, <a href="http://developer.yahoo.com/yui/3/widget/">Widget</a>, and <a href="http://developer.yahoo.com/yui/3/overlay/">Overlay</a> (in that order) to get a sense how these pieces fit together.</li>
+<li><strong>Slider, Overlay, Console Widgets:</strong> <a href="http://developer.yahoo.com/yui/3/slider/">Slider</a>, <a href="http://developer.yahoo.com/yui/3/overlay/">Overlay</a> and <a href="http://developer.yahoo.com/yui/3/console/">Console</a> (what was LogReader in 2.x) are provided as the initial set of widget implementations for YUI 3.x, along with examples leveraging the Widget  infrastructure. Overlay will be of particular interest to those of you who want to study the inner workings of the modular Widget system. It is constructed by combining the core Widget module with  WidgetPosition (basic xy positioning), WidgetPositionExt (extended positioning: align, center), WidgetStdMod (standard module support) and WidgetStack (zIndex, shim support) extensions, which  can be mixed and matched as required to provide other custom  implementations. These initial widgets are meant to establish and confirm the concepts we&#8217;re promoting in 3.x with respect to granular, reusable code. The widgets are likely to change  as we move toward the GA for 3.x, but they should give you a good sense of how the library&#8217;s new core is performing.</li>
+<li>
+    <strong>Plugin Infrastructure: </strong><a href="http://developer.yahoo.com/yui/3/plugin/">Plugins</a> provide atomic pieces of functionality that can be mixed and matched with other plugins to modify or add functionality on an existing widget (or Node).  For example <code>overlay.plug({fn:StdModIOPlugin, cfg:pluginCfg})</code> instantiates the <a href="http://developer.yahoo.com/yui/3/examples/overlay/overlay-io-plugin.html">StdModIOPlugin</a> class and adds it to the host widget as the <code>io</code> property (the namespace defined by the plugin), adding input/output capabilities. In addition to adding completely new functionality, plugins may also modify existing functionality on the host by listening for events or by injecting code before or after the execution of methods on the host. For example, <a href="http://developer.yahoo.com/yui/3/examples/overlay/overlay-anim-plugin.html">an Animation plugin</a> might provide configurable animation effects that modify the base widget&#8217;s native <code>hide</code> and <code>show</code> methods.  </li>
+<li><a href="http://developer.yahoo.com/yui/3/node-menunav/"><img src="http://yuiblog.com/assets/nodemenunav-20081209-110123.jpg" width="271" height="237" align="right"></a><strong>Node Plugins: </strong><a href="http://developer.yahoo.com/yui/3/node-menunav/">The MenuNav Node Plugin</a> provides a lightweight but feature-rich navigation menu as a simple one-line plugin to Node, with content/functionality driven entirely through markup/CSS. MenuNav, and Node plugins in general, are ideal choices for light implementations that don&#8217;t need programmatic (API/event) access to the control once instantiated. MenuNav is the first such Node plugin implementation for YUI 3.x, and it replicates the most commonly used functionality from the YUI 2.x Menu Control in under 5KB (gzipped) JavaScript and CSS.</li>
+<li><strong>Event Updates:</strong> Event simulation (the ability to programatically fire events) has been moved into the <a href="http://developer.yahoo.com/yui/3/event/">Event utility</a> in 3.0PR2; event simulation was previously part of YUI Test. The <code>subscribe</code>/<code>publish</code> methods have been expanded to support subscribing to or publishing mutliple events in a single call. Supplementary global events (<code>available</code>, <code>contentready</code>, <code>focus</code>, <code>blur</code>) and keyboard event support has been added.</li>
+<li><strong>IO Updates:</strong> The <a href="http://developer.yahoo.com/yui/3/io/">IO utility</a> adds form-mining and file upload support, available as optional sub-modules. Existing queue and cross-domain request (XDR) support have been broken out into optional submodules to increase the granularity of the component. Now, users not interested in the advanced features (queuing, XDR, form-mining, file upload), can use the lighter io-base module.</li>
+<li><strong>Developer Tool Updates: </strong>The <a href="http://developer.yahoo.com/yui/3/yuitest/">YUI Test</a> framework, <a href="http://developer.yahoo.com/yui/3/profiler/">Profiler</a>, and the <a href="http://developer.yahoo.com/yui/3/console/">Console</a> widget are now available in the PR2 release. YUI Test adds support for mock objects. Mock objects allow you to isolate your tests from dependent code by defining objects that behave in predictable ways. Create mocks of XMLHttpRequest, document, or any other object on which your code depends without depending on the actual implementation.</li>
+</ol>
+<p>Again, we&#8217;re eager for your feedback and hope you enjoy checking out this second Preview Release.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=J6D1O"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=J6D1O" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=dE8MO"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=dE8MO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=Tgfpo"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=Tgfpo" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=p0gao"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=p0gao" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://yuiblog.com/blog/2008/12/09/yui3pr2-2/feed/</wfw:commentRss>
+		<feedburner:origLink>http://yuiblog.com/blog/2008/12/09/yui3pr2-2/</feedburner:origLink></item>
+		<item>
+		<title>YUI Doc: A New Tool for Generating JavaScript API Documentation</title>
+		<link>http://feeds.feedburner.com/~r/YahooUserInterfaceBlog/~3/478982690/</link>
+		<comments>http://yuiblog.com/blog/2008/12/08/yuidoc/#comments</comments>
+		<pubDate>Tue, 09 Dec 2008 00:11:57 +0000</pubDate>
+		<dc:creator>Eric Miraglia</dc:creator>
+		
+		<category><![CDATA[Development]]></category>
+
+		<guid isPermaLink="false">http://yuiblog.com/blog/2008/12/08/yuidoc/</guid>
+		<description><![CDATA[
+We&#8217;re pleased today to release the first public version of YUI Doc, a python-based documentation tool that generates API documentation for JavaScript code.  YUI Doc was developed by Adam Moore, one of the principal engineers on the YUI project since its inception, to support YUI&#8217;s API-level documentation.
+
+YUI Doc User&#8217;s Guide
+YUI Doc sample output (YUI [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://developer.yahoo.com/yui/yuidoc/"><img src="http://yuiblog.com/assets/yuidoc-20081205-153330.jpg"></a></p>
+<p>We&#8217;re pleased today to release the first public version of <a href="http://developer.yahoo.com/yui/yuidoc/">YUI Doc</a>, a python-based documentation tool that generates API documentation for JavaScript code.  YUI Doc was developed by Adam Moore, one of the principal engineers on the YUI project since its inception, to support YUI&#8217;s API-level documentation.</p>
+<ul>
+<li><a href="http://developer.yahoo.com/yui/yuidoc/">YUI Doc User&#8217;s Guide</a></li>
+<li><a href="http://developer.yahoo.com/yui/docs/">YUI Doc sample output (YUI API documentation)</a></li>
+<li><a href="http://yuilibrary.com/forum/viewforum.php?f=26">YUI Doc community forum</a></li>
+<li><a href="http://yuilibrary.com/downloads/">YUI Doc download</a></li>
+</ul>
+<p>Those familiar with JavaDoc, JSDoc, or the <a href="http://code.google.com/p/jsdoc-toolkit/">JsDoc Toolkit</a> (the latter superceded JSDoc, which no longer sees active development) will find YUI Doc&#8217;s conventions familiar.  It is a comment-driven system in which documentation is parsed from comment blocks that describe the structure of your code. Unlike some analagous systems, YUI Doc is designed to work purely from comments; as a result, there is no idiom or code pattern with which the tool is incompatible.</p>
+<p>YUI Doc&#8217;s principal organizational structures are these:</p>
+<ul>
+<li><strong>Project</strong>: The project is the top-level bucket into which a set of documentation is grouped.  In the case of YUI&#8217;s documetnation, YUI itself is the project.</li>
+<li><strong>Module</strong>: A module is used to group pieces of code that relate to a functional unit.  For example, in YUI the Drag and Drop Utility is a module; the AutoComplte Control is a module; etc.  Modules can depend on one another and can be further subdivided into submodules (in YUI 3, we make extensive use of submodule structures to deliver the smallest possible code payloads).</li>
+<li><strong>Class</strong>: Classes (and inner classes) are used to describe objects that function as instantiable or static classes in JavaScript.  YUI Doc also supports concepts like augmentation, allowing you to document the inheritance structures that characterize your object-oriented applications.</li>
+<li><strong>Methods</strong> and <strong>Properties</strong>: Methods and properties are used in the conventional sense to document class members.</li>
+<li><strong>Events</strong>: We&#8217;ve added the event construct to YUI Doc to support YUI&#8217;s Custom Event infrastructure.  Where you are building modules that publish events with well known parameters, YUI Doc can help you expose that information through this construct.  (As a simple example, when a date is selected in the YUI Calendar Control, the <code><a href="http://developer.yahoo.com/yui/docs/YAHOO.widget.Calendar.html#event_selectEvent">selectEvent</a></code> is fired.</li>
+</ul>
+<p>YUI Doc is most likely to be of interest to those who are building library-style code to be used by other developers.  Because it requires in-line documentation, it is only appropriate to use YUI Doc in combination with a minification tool (like Douglas Crockford&#8217;s <a href="http://www.crockford.com/javascript/jsmin.html">JSMin</a> or Julien Lecomte&#8217;s <a href="http://developer.yahoo.com/yui/compressor">YUI Compressor</a>).  A common scenario would be to incorporate YUI Doc into an existing continuous-build process to generate and publish documentation at build time; your code might be concatenated and version-stamped by Ant, verified by <a href="http://www.jslint.com/">JSLint</a>, documented by YUI Doc, and then minified by YUI Compressor.</p>
+<p><img align="right" src="http://yuiblog.com/assets/yui-git-by-davglass-20081208-135921.jpg" alt="YUI and Git; photo by Dav Glass">YUI Doc joins YUI Compressor in the portfolio of build-time processes that we&#8217;re making available as part of the YUI project.  We look forward to your feedback on this beta release.  <a href="http://github.com/yui">The source code for YUI Doc has been published on GitHub</a>; if you&#8217;d like to get involved in YUI Doc development, we invite you to check out the source (<a href="http://yuilibrary.com/gitfaq/">instructions here</a>), <a href="http://developer.yahoo.com/yui/community/contribute.html">sign a CLA</a>, and join us in making this the best documentation engine available for serious frontend engineers.</p>
+<p><strong>Footnote:</strong> We&#8217;re hard at work prepping the YUI 2.x and 3.x code repositories for GitHub deployment as well.  We&#8217;ll have more to share with you on that front in the near future.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=v79uO"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=v79uO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=yQReO"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=yQReO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=iSceo"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=iSceo" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=IcC3o"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=IcC3o" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://yuiblog.com/blog/2008/12/08/yuidoc/feed/</wfw:commentRss>
+		<feedburner:origLink>http://yuiblog.com/blog/2008/12/08/yuidoc/</feedburner:origLink></item>
+		<item>
+		<title>YUI Theater — Todd Kloots: “Developing Accessible Widgets with ARIA”</title>
+		<link>http://feeds.feedburner.com/~r/YahooUserInterfaceBlog/~3/478548486/</link>
+		<comments>http://yuiblog.com/blog/2008/12/08/video-kloots-aria/#comments</comments>
+		<pubDate>Mon, 08 Dec 2008 14:35:25 +0000</pubDate>
+		<dc:creator>Eric Miraglia</dc:creator>
+		
+		<category><![CDATA[YUI Theater]]></category>
+
+		<guid isPermaLink="false">http://yuiblog.com/blog/2008/12/08/video-kloots-aria/</guid>
+		<description><![CDATA[
+The Accessible Rich Interet Applications (ARIA) specification is in working-draft form in the W3C.  It provides a framework for implementating rich web-applications that convey improved semantics to screen reader software as a user interacts with a page.  ARIA is patterned after the more established desktop experience, but it also provides a set of [...]]]></description>
+			<content:encoded><![CDATA[<p><a href="http://video.yahoo.com/watch/4073211/10996186"><img src="http://yuiblog.com/assets/klootsaria-20081206-220516.jpg" alt="Todd Kloots about ARIA and accessibility at Yahoo on December 3, 2008." width="510" height="310"></a></p>
+<p>The <a href="http://www.w3.org/TR/wai-aria/">Accessible Rich Interet Applications</a> (ARIA) specification is in working-draft form in the W3C.  It provides a framework for implementating rich web-applications that convey improved semantics to screen reader software as a user interacts with a page.  ARIA is patterned after the more established desktop experience, but it also provides a set of tools that allows room for invention.</p>
+<p>In this talk, delivered at Yahoo! on December 3, 2008, YUI engineer and accessibility specialist Todd Kloots introduces you to ARIA and provides some insights gleaned from his work in <a href="http://yuiblog.com/blog/2008/10/02/yui-aria/">bringing ARIA support to a host of YUI widgets</a>.</p>
+<p><a href="http://yuiblog.com/assets/kloots-aria.zip">Slides for Todd&#8217;s talk can be downloaded here</a> (180MB ppt includes screencaptures of ARIA scenarios as experienced with a screen reader).</p>
+<p><object width="512" height="322">
+<param name="movie" value="http://d.yimg.com/static.video.yahoo.com/yep/YV_YEP.swf?ver=2.2.30" />
+<param name="allowFullScreen" value="true" />
+<param name="AllowScriptAccess" VALUE="always" />
+<param name="bgcolor" value="#000000" />
+<param name="flashVars" value="id=10996186&#038;vid=4073211&#038;lang=en-us&#038;intl=us&#038;thumbUrl=http%3A//us.i1.yimg.com/us.yimg.com/p/i/bcst/videosearch/6384/76312827.jpeg&#038;embed=1" /><embed src="http://d.yimg.com/static.video.yahoo.com/yep/YV_YEP.swf?ver=2.2.30" type="application/x-shockwave-flash" width="512" height="322" allowFullScreen="true" AllowScriptAccess="always" bgcolor="#000000" flashVars="id=10996186&#038;vid=4073211&#038;lang=en-us&#038;intl=us&#038;thumbUrl=http%3A//us.i1.yimg.com/us.yimg.com/p/i/bcst/videosearch/6384/76312827.jpeg&#038;embed=1" ></embed></object></p>
+<p><a href="http://video.yahoo.com/watch/4073211/10996186">Todd Kloots: &quot;Developing Accessible Widgets with ARIA&quot;</a> @ <a href="http://video.yahoo.com" >Yahoo! Video</a></p>
+<p><img src="http://us.i1.yimg.com/us.yimg.com/i/nt/ic/ut/bsc/vidcam12_1.gif" border="0" hspace="10"><a href="http://us.dl1.yimg.com/download.yahoo.com/dl/ydn/yui/theater/kloots-aria.m4v">download (m4v)</a></p>
+<h3>In Case You Missed&#8230;</h3>
+<p>Some other recent videos from the <a href="http://developer.yahoo.com/yui/theater/">YUI Theater series</a>:</p>
+<ul>
+<li><strong>Nicholas C. Zakas:</strong> &quot;Test-Driven Development with YUI Test&quot; (<a href="http://video.yahoo.com/watch/3737228/10267335">Yahoo! Video</a> | <a href="http://us.dl1.yimg.com/download.yahoo.com/dl/ydn/yui/theater/zakas-yuitest.m4v">.m4v download</a>)</li>
+<li><strong>Douglas Crockford:</strong> &quot;Web Forward&quot; (<a href="http://video.yahoo.com/watch/3730137/10250950">Yahoo! Video</a> | <a href="http://us.dl1.yimg.com/download.yahoo.com/dl/ydn/yui/theater/crockford-webforward.m4v">.m4v download</a>)</li>
+<li><strong>Eric Miraglia and Matt Sweeney:</strong> &quot;YUI3 &mdash; A Look Ahead&quot; (<a href="http://video.yahoo.com/watch/3711767/10207432">Yahoo! Video</a> | <a href="http://us.dl1.yimg.com/download.yahoo.com/dl/ydn/yui/theater/miraglia-yui3.m4v">.m4v download</a>)</li>
+<li><strong>Dav Glass:</strong> &#8220;Rich Text Editing with YUI&#8221; (<a href="http://video.yahoo.com/watch/2359450/7378948">Yahoo! Video</a> | <a href="http://us.dl1.yimg.com/download.yahoo.com/dl/ydn/yui/theater/glass-rte.m4v">.m4v download</a>)</li>
+</ul>
+<h3>Subscribing to YUI Theater:</h3>
+<ul>
+<li><a href="http://feeds.feedburner.com/yuiblog/yui-theater">YUI Theater RSS feed</a></li>
+<li><a href="http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=263846173&amp;s=143441">YUI Theater on iTunes</a></li>
+</ul>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=uS7EO"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=uS7EO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=wzmAO"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=wzmAO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=IFqko"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=IFqko" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=wRyko"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=wRyko" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://yuiblog.com/blog/2008/12/08/video-kloots-aria/feed/</wfw:commentRss>
+
+<enclosure url="http://us.dl1.yimg.com/download.yahoo.com/dl/ydn/yui/theater/glass-rte.m4v" length="176197747" type="video/x-m4v" />
+<enclosure url="http://us.dl1.yimg.com/download.yahoo.com/dl/ydn/yui/theater/zakas-yuitest.m4v" length="149378402" type="video/x-m4v" />
+<enclosure url="http://us.dl1.yimg.com/download.yahoo.com/dl/ydn/yui/theater/crockford-webforward.m4v" length="144845803" type="video/x-m4v" />
+<enclosure url="http://us.dl1.yimg.com/download.yahoo.com/dl/ydn/yui/theater/miraglia-yui3.m4v" length="113033117" type="video/x-m4v" />
+		<feedburner:origLink>http://yuiblog.com/blog/2008/12/08/video-kloots-aria/</feedburner:origLink><enclosure url="http://feeds.feedburner.com/~r/YahooUserInterfaceBlog/~5/479032773/kloots-aria.m4v" length="123775849" type="video/x-m4v" /><feedburner:origEnclosureLink>http://us.dl1.yimg.com/download.yahoo.com/dl/ydn/yui/theater/kloots-aria.m4v</feedburner:origEnclosureLink></item>
+		<item>
+		<title>Image Optimization, Part 5: AlphaImageLoader</title>
+		<link>http://feeds.feedburner.com/~r/YahooUserInterfaceBlog/~3/478476423/</link>
+		<comments>http://yuiblog.com/blog/2008/12/08/imageopt-5/#comments</comments>
+		<pubDate>Mon, 08 Dec 2008 13:48:09 +0000</pubDate>
+		<dc:creator>Stoyan Stefanov</dc:creator>
+		
+		<category><![CDATA[Development]]></category>
+
+		<category><![CDATA[Performance]]></category>
+
+		<guid isPermaLink="false">http://yuiblog.com/blog/2008/12/08/imageopt-5/</guid>
+		<description><![CDATA[
+
+About the Author: Stoyan Stefanov is a Yahoo! web developer working for the Exceptional Performance team and leading the development of the YSlow performance tool. He also an open-source contributor, conference speaker and technical writer: his latest book is called Object-Oriented JavaScript.
+
+
+This is part 5 in an ongoing series. You can read the other parts [...]]]></description>
+			<content:encoded><![CDATA[<div class="interview">
+<div class="intro">
+<p><img src="http://yuiblog.com/assets/stoyan.jpg" alt="Stoyan Stefanov." align="right" hspace="10" vspace="5"><em><strong>About the Author:</strong><a href="http://www.phpied.com"> Stoyan Stefanov</a> is a Yahoo! web developer working for the <a href="http://developer.yahoo.com/performance/">Exceptional Performance</a> team and leading the development of the <a href="http://developer.yahoo.com/yslow/">YSlow</a> performance tool. He also an open-source contributor, conference speaker and technical writer: his latest book is called <a href="http://www.packtpub.com/object-oriented-javascript-applications-libraries/book">Object-Oriented JavaScript</a>.</em></p>
+</div>
+</div>
+<p><em>This is part 5 in an ongoing series. You can read the other parts here:</em></p>
+<ul>
+<li><a href="http://yuiblog.com/blog/2008/10/29/imageopt-1/">Image Optimization Part 1: The Importance of Images</a></li>
+<li><a href="http://yuiblog.com/blog/2008/11/04/imageopt-2/">Image Optimization Part 2: Selecting the Right File Format</a></li>
+<li><a href="http://yuiblog.com/blog/2008/11/14/imageopt-3/">Image Optimization Part 3: Four Steps to File Size Reduction</a></li>
+<li><a href="http://yuiblog.com/blog/2008/12/05/imageopt-4/">Image Optimization Part 4: Progressive JPEG&#8230;Hot or Not?</a></li>
+</ul>
+<p>This installment of the image optimization series is about the IE-proprietary AlphaImageLoader CSS filter, which developers often use as a workaround to solve transparency issues with truecolor PNGs in IE. The problem with AlphaImageLoader is that it hurts page performance and, therefore, hurts user experience.  I argue that AlphaImageLoader should be avoided when at all possible.</p>
+<h3>Quick Refresher</h3>
+<p>As mentioned in a <a href="http://yuiblog.com/blog/2008/11/04/imageopt-2/">previous article</a>, <a href="http://en.wikipedia.org/wiki/Portable_Network_Graphics">PNGs</a> come in several different types but can roughly be divided into:</p>
+<ul>
+<li>Indexed (palette), also referred to as PNG8 which have up to 256 colors.</li>
+<li>Truecolor PNG, also referred to as PNG32 or PNG24.</li>
+</ul>
+<p>Both formats support alpha (variable) transparency and, while PNG8 images degrade to a GIF-like non-variable transparency in IE6 (<a href="http://yuiblog.com/assets/png8-transparency.png">example</a>, <a href="http://www.sitepoint.com/blogs/2007/09/18/png8-the-clear-winner/">source</a>), truecolor PNGs show an uglyish background in place of the transparent pixels (source <a href=""http://www.w3.org/Graphics/PNG/inline-alpha.html>W3C</a>).</p>
+<p><img src="http://yuiblog.com/assets/png-transparency.png" alt="truecolor PNG transparency problem in IE6" /></p>
+<h3>The AlphaImageLoader fix</h3>
+<p>IE6 (and older versions of IE) provides a solution to the problem through its proprietary <code>filter</code> CSS property. The following code will display the proper image cross-browser:</p>
+<pre>
+#some-element {
+    background: url(image.png);
+    _background: none;
+    _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='image.png', sizingMethod='crop');
+}
+</pre>
+<p>As you can see, the underscore CSS hack is used to target IE &lt; 7 and</p>
+<ol>
+<li>&#8220;undo&#8221; the background; and</li>
+<li>load the same image, using Microsoft&#8217;s AlphaImageLoader filter.</li>
+</ol>
+<p>The reason to target IE prior to version 7 is that IE7 supports the alpha transparency natively without the need for filters. (IE8 does too and it actually <a href="http://blogs.msdn.com/ie/archive/2008/09/08/microsoft-css-vendor-extensions.aspx">changes the filter syntax</a> completely.)</p>
+<p>
+It&#8217;s interesting to note that the filter doesn&#8217;t change the image; rather, it changes the HTML element this style is applied to. The other interesting thing is that each element is processed synchronously in a single UI thread. The process applying the filter takes some resources for each element and the more &#8220;filtered&#8221; elements you have, the worse it gets, even if you use the same image for all the elements.
+</p>
+<p>The question is: How does this affect the overall performance of the page?</p>
+<h3>Freeze! Side Effect #1</h3>
+<p>Here&#8217;s a simple experiment: Create a page that has a CSS filter and then simulate (and exaggerate) network latency by delaying the image used in the filter by ten seconds. The result? Not only is nothing rendered (blank page) for ten seconds, but the browser freezes, meaning you cannot interact with it, click its icons or menus, type in the URL&#8230;you can&#8217;t even close it.</p>
+<p><a href="http://yuiblog.com/assets/image-opt-tests/alphatest.html">Here&#8217;s a test example.</a></p>
+<p>In the example, I didn&#8217;t use the underscore hack so you can see the (d)effect in IE7 too, even in IE8 in &#8220;compatibility mode&#8221;.</p>
+<p>While the effect is exaggerated for demo purposes, network latencies are a fact of life and this is probably the worst user experience you can deliver: Someone comes to your page and their browser freezes.</p>
+<p>Note that parallel downloads are not blocked. The browser still downloads the other page components in the background, but there&#8217;s no progressive rendering. You can think of it this way &mdash; since IE will not render anything until the very last bit of CSS comes down the wire (<a href="http://www.phpied.com/rendering-styles/">more info</a>), and your because CSS has a dependency on a filtered image, the rendering is blocked until the dependency is satisfied.</p>
+<p>What if you have several AlphaImageLoader filters on the page? They are processed synchronously one after the other so the problem is multiplied. If you have 5 images, each delayed 2 seconds on the server, then the browser freezes for a total of 10 seconds.</p>
+<h3>Time and Memory &mdash; Side Effects #2 and #3</h3>
+<p>Another negative effect of using the AlphaImageLoader is the increase of the amount of memory required to process and apply the filters. These days we might be tempted to think our visitors&#8217; computers have a virtually indefinite supply of memory, but for older computers (those more likely to run IE6 and under) this may not be the case.</p>
+<p>And at the end of it, it&#8217;s the performance we&#8217;re most interested in, performance as measured by the time it takes for the page to load in the browser. Let&#8217;s do a test to measure how much time and memory is required by the filters.</p>
+<p>First, let&#8217;s have a baseline page &mdash; one that has a hundred &lt;div&gt;s with the same non-filtered background image. Then let&#8217;s have a second page with a filter applied to the divs (all 100 divs use the same). A hundred elements with filtered backgrounds is unlikely to be found in a normal page, but a little exaggeration will help with the measurements.</p>
+<p>The time is measured from the start of the page to the onload event of the page, after the images have been cached, thus eliminating the time required to download the page and the images. The memory consumption is measured with the help of the <a href="http://technet.microsoft.com/en-us/sysinternals/bb896653.aspx">ProcessExplorer</a> tool and given as the before/after delta of the private bytes measurement, showing the &#8220;price&#8221; of rendering the page.
+<p>Here are the median results from 10 runs in IE6 on a PC with a dual 2GHz CPU and 500M RAM. On a less powerful computer, the load times are likely to be even worse.</p>
+<style type="text/css">td.number{text-align:right}</style>
+<table border="1">
+<caption>AlphaImageLoader test results</caption>
+<tbody>
+<tr>
+<th>test page</th>
+<th>time, seconds</th>
+<th>memory, MB</th>
+</tr>
+<tr>
+<td><a href="alpha-no-filter-100.html">Test #1 - no filters</a></td>
+<td class="number">0.031</td>
+<td class="number">0.6</td>
+</tr>
+<tr>
+<td><a href="alpha-filter-100.html">Test #2 - with filters</a></td>
+<td class="number">0.844</td>
+<td class="number">46.8</td>
+</tr>
+</tbody>
+</table>
+<p>As you can see, the AlphaImageLoader effect is pretty bad &mdash; our test page loads 27 times slower and eats up 78 times more memory. These results are, of course, highly speculative &mdash; it&#8217;s just one image tested on just one PC (relatively powerful and underworked). With different images, applied to a different number of elements and on different machines, results may vary considerably, especially when there&#8217;s less RAM or CPU, or if you throw network latency (side effect #1) into the mix. But this example illustrates the important concepts:</p>
+<ul>
+<li>AlphaImageLoader is slow and requires more memory</li>
+<li>It&#8217;s applied per element, not per image</li>
+</ul>
+<p>If you have a sprite image and you use it for different elements (sprites with alpha filters are trickier, <a href="http://www.julienlecomte.net/blog/2007/07/4/">but doable</a>), you&#8217;ll pay the penalty for each element the sprite is used on.</p>
+<h3>Yahoo! Search Case Study</h3>
+<p>Using lab tests like the one above can give us some idea of the AlphaImageLoader &#8220;price,&#8221; and you might be tempted to test and calculate approximately how much you pay for each filtered element, but there&#8217;s nothing better than a real life test with millions of requests coming form different parts of the world with different browsers, computers and bandwidth.</p>
+<p><a href="http://search.yahoo.com/search?p=yahoo+search">Yahoo!&#8217;s search results page</a> used to have a truecolor PNG sprite and employed AlphaImageLoader to achieve the transparency (an <a href="http://us.js2.yimg.com/us.yimg.com/i/us/sch/el/ngsprt_srp_20071130.png">older version of the sprite</a> is still around if you&#8217;re curious). Replacing the truecolor PNG with a gracefully degrading PNG8 (<a href="http://yuiblog.com/blog/2008/11/04/imageopt-2/">discussed previously</a>) decreased the pageload time by 50-100ms for the users of IE 5 and 6. 100ms may not seem like much, but for a page that loads under a second, it&#8217;s at least 10%. Also, according to <a href="http://home.blarg.net/%7Eglinden/StanfordDataMining.2006-11-29.ppt">an Amazon study</a>, 100ms slower means 1% fewer sales (even for their content-heavy pages). Earning 1% more by just replacing an image doesn&#8217;t look like a bad deal at all.</p>
+<h3>So Now What?</h3>
+<p>The best thing would be to avoid AlphaImageLoader completely and, like Y!Search, take the time to create PNG8 images that degrade nicely in IE6 and look good in all other browsers. How do you create a gracefully degrading PNG8? Well, create a GIF-like image first, one that has only fully transparent or fully opaque pixels. After making sure it looks acceptable (it will look like this in IE6), proceed to enhancing the image with semi-transparent pixels which will smooth any rounded corners or other parts that would benefit from transparency. Unfortunately, as far as I know, Fireworks is currently the only image processing software capable of handling alpha transparency in PNG8. You can also try command line tools such as <a href="pngnq.sourceforge.net">pngnq</a> and <a href="http://www.libpng.org/pub/png/apps/pngquant.html">pngquant</a>, although automated truecolor-to-palette PNG conversion might not always yield satisfactory results and you might need to pick the fully opaque pixels manually.</p>
+<p>There might be cases when you won&#8217;t be able to get by with a PNG8 and absolutely need to use AlphaImageLoader &mdash; for example when most or all pixels are semi-transparent (imagine a &#8220;play&#8221; button over a video thumbnail). Dave Artz of AOL has some <a href="http://www.artzstudio.com/2008/07/png-alpha-transparency-no-clear-winner/">other cases</a> where PNG8 will not be good enough. In such cases (but only after you try your best to persuade the designer to reconsider the use of transparency), make sure you use the underscore hack (<code>_filter</code>) so that you don&#8217;t penalize IE7 users.</p>
+<p>Sometimes instead of PNG8 people use GIF for IE6 and truecolor PNG for the others, but that&#8217;s not necessary; with one PNG8 you achieve both binary and alpha transparency.</p>
+<p>Additional benefits from using a PNG8 are:</p>
+<ol>
+<li>PNG8 is usually smaller than truecolor PNG,</li>
+<li>only one image to maintain for all browsers</li>
+<li>cleaner CSS with no hacks, branches or proprietary tags</li>
+<li>ability to repeat background</li>
+</ol>
+<h3>Transparency with VML</h3>
+<p>Using VML is yet another option in IE to make a truecolor PNG transparent, and it solves several problems: alpha transparency, performance, and background repeat. Unfortunatelly, it comes with the price of extra non-standard markup (or dependency on JavaScript to generate it if you want your initial markup clean) and more propritary CSS. Here&#8217;s an example on how to implement it.</p>
+<p>If, for example, you have an empty div, you need to wrap it in one VML <code>:rect</code> (or <code>:shape</code>) and one <code>:fill</code> element, like this:</p>
+<pre>
+&lt;v:rect&gt;
+  &lt;v:fill type=&quot;tile&quot; src=&quot;alphatest.png&quot;&gt;
+    &lt;div&gt;&amp;nbsp;&lt;/div&gt;
+  &lt;/v:fill&gt;
+&lt;/v:rect&gt;
+</pre>
+<p>Somewhere in the markup before that you also need to declare a VML namespace:</p>
+<pre>
+&lt;xml:namespace ns=&quot;urn:schemas-microsoft-com:vml&quot; prefix=&quot;v&quot; /&gt;
+</pre>
+<p>And in your stylesheet you need:</p>
+<pre>
+v\:rect  {
+    behavior:url(#default#VML);
+    width: 100px;
+    height: 100px;
+    display: block;
+}
+
+v\:fill  {
+    behavior:url(#default#VML);
+}
+</pre>
+<p><a href="http://yuiblog.com/assets/image-opt-tests/vml.html">A test page</a> with 100 VML <code>rect</code> elements loads in 0.094 seconds (almost 10 times faster than using filters) and the memory usage is under 4Mb (10 times less than the filtered page).</p>
+<p>As you can see this solution adds more markup and proprietary CSS, but it&#8217;s still a solution and doesn&#8217;t have the penalties of the AlphaImageLoader.</p>
+<p>(Thanks go to <a href="http://dillerdesign.com/experiment/DD_roundies/">this post</a> by Drew Diller and also <a href="http://www.htmlremix.com/curved-corner-border-radius-cross-browser/">HTML Remix</a>, who accidentally found this side effect while working on another problem  &mdash; rounded corners with VML, via <a href="http://snook.ca/archives/html_and_css/ie-rounded/">snook.ca</a>)</p>
+<h3>P.S. &#8230;and What about Other Filters</h3>
+<p>AlphaImageLoader is not the only filter that exists. Another popular one is the opacity filter. </p>
+<p>For example, for 50% element opacity developers use the properties: </p>
+<ul>
+<li><code>opacity: 0.5</code> (standard),</li>
+<li><code>-moz-opacity: 0.5</code> (early Mozilla versions, before Firefox 0.9), and</li>
+<li>for IE, <code>filter: alpha(opacity=50)</code>.</li>
+</ul>
+<p>A quick test in IE6 shows that the opacity filter is not nearly as slow as the AlphaImageLoader, but it&#8217;s still making the page slower and takes the same amount of memory. This test uses color background, not an image, but even with an image the results are pretty much the same.</p>
+<table border="1">
+<caption>opacity filter test results</caption>
+<tbody>
+<tr>
+<th>test page</th>
+<th>time, seconds</th>
+<th>memory, MB</th>
+</tr>
+<tr>
+<td><a href="alpha-no-opacity-100.html">Test #3 - 100 divs, no opacity</a></td>
+<td class="number">0.016</td>
+<td class="number">0.2</td>
+</tr>
+<tr>
+<td><a href="alpha-opacity-100.html">Test #4 - 100 divs with opacity</a></td>
+<td class="number">0.093</td>
+<td class="number">46.7</td>
+</tr>
+</tbody>
+</table>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=U6L9O"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=U6L9O" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=HChrO"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=HChrO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=OdEao"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=OdEao" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=uxblo"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=uxblo" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://yuiblog.com/blog/2008/12/08/imageopt-5/feed/</wfw:commentRss>
+		<feedburner:origLink>http://yuiblog.com/blog/2008/12/08/imageopt-5/</feedburner:origLink></item>
+		<item>
+		<title>Image Optimization, Part 4: Progressive JPEG…Hot or Not?</title>
+		<link>http://feeds.feedburner.com/~r/YahooUserInterfaceBlog/~3/475831599/</link>
+		<comments>http://yuiblog.com/blog/2008/12/05/imageopt-4/#comments</comments>
+		<pubDate>Fri, 05 Dec 2008 16:23:54 +0000</pubDate>
+		<dc:creator>Stoyan Stefanov</dc:creator>
+		
+		<category><![CDATA[Design]]></category>
+
+		<category><![CDATA[Development]]></category>
+
+		<guid isPermaLink="false">http://yuiblog.com/blog/2008/12/05/imageopt-4/</guid>
+		<description><![CDATA[
+
+About the Author: Stoyan Stefanov is a Yahoo! web developer working for the Exceptional Performance team and leading the development of the YSlow performance tool. He also an open-source contributor, conference speaker and technical writer: his latest book is called Object-Oriented JavaScript.
+
+
+This is part 4 in an ongoing series. You can read the other parts [...]]]></description>
+			<content:encoded><![CDATA[<div class="interview">
+<div class="intro">
+<p><img src="http://yuiblog.com/assets/stoyan.jpg" alt="Stoyan Stefanov." align="right" hspace="10" vspace="5"><em><strong>About the Author:</strong><a href="http://www.phpied.com"> Stoyan Stefanov</a> is a Yahoo! web developer working for the <a href="http://developer.yahoo.com/performance/">Exceptional Performance</a> team and leading the development of the <a href="http://developer.yahoo.com/yslow/">YSlow</a> performance tool. He also an open-source contributor, conference speaker and technical writer: his latest book is called <a href="http://www.packtpub.com/object-oriented-javascript-applications-libraries/book">Object-Oriented JavaScript</a>.</em></p>
+</div>
+</div>
+<p><em>This is part 4 in an ongoing series. You can read the other parts here:</em></p>
+<ul>
+<li><a href="http://yuiblog.com/blog/2008/10/29/imageopt-1/">Image Optimization Part 1: The Importance of Images</a></li>
+<li><a href="http://yuiblog.com/blog/2008/11/04/imageopt-2/">Image Optimization Part 2: Selecting the Right File Format</a></li>
+<li><a href="http://yuiblog.com/blog/2008/11/14/imageopt-3/">Image Optimization Part 3: Four Steps to File Size Reduction</a></li>
+</ul>
+<p>In the <a href="http://yuiblog.com/blog/2008/11/14/imageopt-3/">previous article</a>, the progressive JPEGs were briefly mentioned as a possible option when optimizing JPEGs. This post now diggs into this option a little deeper with the results of an optimization experiment involving over 10,000 images.</p>
+<h3>Baseline vs. progressive JPEGs</h3>
+<p>Baseline are the &#8220;normal&#8221; JPEGs, the type of JPEG that all image programs write by default. The browsers load them top-to-bottom as more of the image information comes down the wire.</p>
+<p><a href="http://yuiblog.com/assets/5-base-example.jpg"><img src="http://yuiblog.com/assets/5-base-example-small.jpg" alt="Loading a baseline JPEG" /></a></p>
+<p>Loading a baseline JPEG, click to enlarge</p>
+<p>Progressive JPEGs are another type of JPEGs, they are rendered, as the name suggests, progressively. First you see a low quality version of the whole image. Then, as more of the image information arrives over the network, the quality gradually improves.</p>
+<p><a href="http://yuiblog.com/assets/4-prog-example.jpg"><img src="http://yuiblog.com/assets/4-prog-example-small.jpg" alt="Loading a baseline JPEG" /></a></p>
+<p>Loading a progressive JPEG, click to enlarge</p>
+<p>From usability perspective, progressive is usually good, because the user gets feedback that something is going on. Also if you&#8217;re on a slow connection, progressive JPEG is preferable because you don&#8217;t need to wait for the whole image to arrive in order to get an idea if it is what you wanted. If not, you can click away from the page or hit the back button, without waiting for the (potentially large) high quality image.</p>
+<p>A reason against progressive JPEGs I&#8217;ve heard is that they look a bit old school and that users might be underimpressed, if not irritated, by the progressive rendering. I am not aware of a user study that focuses on this issue, please comment if you have heard or conducted such a experiment.</p>
+<p>There is controversial information in blogs and books whether progressive JPEGs are bigger or smaller than the baseline JPEGs in terms of file size. So, as part of the never-ending quest for smaler file sizes and lossless optimization, here is an experiment that attempts to answer this question.</p>
+<h3>The experiment</h3>
+<p>One of the <a href="http://developer.yahoo.com/everything.html">many free APIs</a> that Yahoo! provides is the <a href="http://developer.yahoo.com/search/image/V1/imageSearch.html">image search API</a>. I used it to find images that match a number of queries, such as &#8220;kittens&#8221;, &#8220;puppies&#8221;, &#8220;monkeys&#8221;, &#8220;baby&#8221;, &#8220;flower&#8221;, &#8220;sunset&#8221;.. 12 queries in total. Once having the image URLs, I downloaded all the images and cleaned up 4xx and 5xx error responses and non-jpegs (turned out sometimes sites host PNGs or even BMPs renamed as .jpg). After the cleanup there were 10360 images to work with, images of all different dimensions and quality, and best of all, real life images from live web sites.</p>
+<p>Having the source images, I ran them through jpegtran twice with the following commands:</p>
+<p><code>&gt; jpegtran -copy none -optimize source.jpg result.jpg</code></p>
+<p>and</p>
+<p><code>&gt; jpegtran -copy none -progressive source.jpg result.jpg</code></p>
+<p>The first one optimizes the Huffman tables in the baseline JPEGs (details discussed in the previous article). The second command converts the source JPEGs into progressive ones.</p>
+<p>Let&#8217;s see what the result file sizes turn out to be.</p>
+<h3>Results</h3>
+<blockquote><p>The Census report, like most such surveys, had cost an awful lot of money and didn&#8217;t tell anybody anything they didn&#8217;t already know &mdash; except that every single person in the Galaxy had 2.4 legs and owned a hyena. Since this was clearly not true the whole thing had eventually to be scrapped.</p></blockquote>
+<p>Douglas Adams &mdash; &#8220;So Long, and Thanks for All the Fish&#8221;</p>
+<p>The median JPEG returned in this experiment was 52.07 Kb, which is probably not the most useful statistic. The important thing is that the median saving when using jpegtran to optimize the image losslessly as a <strong>baseline JPEG is 9.04%</strong> of the original (the median image becomes 47.36 Kb) and when using a <strong>progressive JPEG, it&#8217;s 11.45%</strong> (46.11 Kb median).</p>
+<p>So it looks like progressive JPEGs are smaller on average. But that&#8217;s only the average, it&#8217;s not a hard rule. In fact in more than 15% of the cases (1611 out of the 10360 images) the progressive JPEG versions were bigger. Since it&#8217;s difficult to predict when an image will be smaller as progressive by just looking at it (or for automated processing without even looking at it), an idea of how the image will perform based on its dimensions or file size would be really helpful.</p>
+<p>Looking for a relationship, I plotted all the results on a graph where:</p>
+<ul>
+<li>Y is the difference in the savings &#8220;baseline minus progressive&#8221;, so negative numbers will mean cases when baseline is smaller</p>
+<li>X is the file size of the original image</li>
+</ul>
+<p>The graph shows how the results are all over the place, but there seems to be a trend &mdash; the bigger the image, the better it is to save it as a progressive JPEG.</p>
+<p><img src="http://yuiblog.com/assets/1-progressive-jpeg-overview.png" alt="Progressive vs baseline JPEG" /></p>
+<p>&#8220;Zooming&#8221; into the area of smaller file sizes to see where progressive JPEGs get less effective, let&#8217;s only consider the images that are 30K and under. Then using the trendline feature of Excel, we can see where the line is drawn (for a clearer trendline mouse over or focus or click the image).</p>
+<p><a href="http://yuiblog.com/assets/3-progressive-jpeg.png"><img<br />
+    src="http://yuiblog.com/assets/2-progressive-jpeg.png"<br />
+    id="progressive-jpeg-chart"<br />
+    alt="Progressive vs baseline JPEG for smaller images"<br />
+/></a><br />
+<script type="text/javascript">
+(function(){
+new Image().src = \'http://yuiblog.com/assets/3-progressive-jpeg.png\';
+var i = document.getElementById(\'progressive-jpeg-chart\');
+var a = i.parentNode;
+a.onmouseover = a.onfocus = function() {i.src = \'http://yuiblog.com/assets/3-progressive-jpeg.png\';};
+a.onmouseout  = a.onblur  = function() {i.src = \'http://yuiblog.com/assets/2-progressive-jpeg.png\';};
+})();
+</script></p>
+<h3>Summary</h3>
+<p>The take-home messages after looking at the graphs above:</p>
+<ul>
+<li>when your JPEG image is under 10K, it&#8217;s better to be saved as baseline JPEG (estimated 75% chance it will be smaller)</li>
+<li>for files over 10K the progressive JPEG will give you a better compression (in 94% of the cases)</li>
+</ul>
+<p>So if your aim is to squeeze every byte (and consitency is not an issue), the best thing to do is to try both baseline and progressive and pick the smaller one.</p>
+<p>The other option is have all images smaller than 10K as baseline and the rest as progressive. Or simply use baseline for thumbs, progressive for everything else.</p>
+<h3>IE and progressive JPEGs</h3>
+<p>&#8220;Oh, not IE again!&#8221; is probably what you&#8217;re thinking, but it&#8217;s not so bad actually. It&#8217;s just that IE doesn&#8217;t render progresive JPEGs progressively. It displays the image just fine, but only when it arrives completely. So in IE, the baseline JPEGs display more progressively (top-to-bottom is still progress) than the progressive JPEGs.</p>
+<h3>A word on ImageMagick</h3>
+<p>ImageMagick is a an impressive set of command-line image tools, which you can also use to optimize files. Unlike most other image software, by default ImageMagick writes <strong>optimized</strong> baseline JPEGs (as if using the -optimize switch in jpegtran).</p>
+<p>ImageMagick can also strip meta data and write progressive JPEGs, so I repeated the experiment outlined above but using ImageMagick instead of jpegtran. The commands used were:</p>
+<pre>
+&gt;convert -strip source.jpg result.jpg // baseline JPG
+&gt;convert -strip -interlace Plane source.jpg result.jpg // progressive JPEG
+</pre>
+<p>Observations from the ImageMagick experiment:</p>
+<ul>
+<li>The baseline vs. progressive trendline is the same: images 10K or bigger are better optimized when using progressive encoding</li>
+<li>The overall compression is better: the median is <strong>10.85% optimization for baseline JPEGs</strong> (jpegtran saved 9.04%) and <strong>13.25% for progressive JPEGs</strong> (11.45% with jpegtran)</li>
+<li>There is some quality loss. ImageMagick doesn&#8217;t perform fully lossless operations. Inspecting random images visually I couldn&#8217;t tell any difference but using <a href="http://www.phpied.com/image-diff/">an image diff</a> utility shows that pixel information in the images has been modified.</li>
+</ul>
+<p>And the last set of stats gleaned from the experiment has to do with the speed of writing JPEGs. Here&#8217;s how jpegtran and ImageMagick performed while optimizing the 10k+ images on my laptop (Windows XP, 2GHz dual CPU, 500Mb RAM). From fastest to slowest:</p>
+<ol>
+<li>jpegtran baseline (11 images per second),</li>
+<li>jpegtran progressive (9 images/s),</li>
+<li>ImageMagick baseline (7 images/s),</li>
+<li>ImageMagick progressive (5.5 images/s)</li>
+</ol>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=DEqiO"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=DEqiO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=TuXsO"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=TuXsO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=NKUKo"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=NKUKo" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=mPlNo"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=mPlNo" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://yuiblog.com/blog/2008/12/05/imageopt-4/feed/</wfw:commentRss>
+		<feedburner:origLink>http://yuiblog.com/blog/2008/12/05/imageopt-4/</feedburner:origLink></item>
+		<item>
+		<title>Getting Started with JavaScript Unit Testing and YUI Test</title>
+		<link>http://feeds.feedburner.com/~r/YahooUserInterfaceBlog/~3/471469073/</link>
+		<comments>http://yuiblog.com/blog/2008/12/01/yuitest-getting-started/#comments</comments>
+		<pubDate>Mon, 01 Dec 2008 16:34:39 +0000</pubDate>
+		<dc:creator>Nicholas C. Zakas</dc:creator>
+		
+		<category><![CDATA[Development]]></category>
+
+		<guid isPermaLink="false">http://yuiblog.com/blog/2008/12/01/yuitest-getting-started/</guid>
+		<description><![CDATA[For a long time, the web has been a wild west of technology. It&#8217;s only been within the past five years that any sort of rigor has been applied to web development and technologies such as HTML, CSS and JavaScript. JavaScript development has been the most affected, bringing discipline from other types of programming into [...]]]></description>
+			<content:encoded><![CDATA[<p>For a long time, the web has been a wild west of technology. It&#8217;s only been within the past five years that any sort of rigor has been applied to web development and technologies such as HTML, CSS and JavaScript. JavaScript development has been the most affected, bringing discipline from other types of programming into what previously was a free-for-all of copy-paste code. Of the traditional programming techniques, unit testing has just started to make its way into JavaScript.</p>
+<p>The purpose of unit testing is to test an individual part of a program (a &quot;unit&quot;). Testing the smallest part of a program and ensuring that it works gives some indicating as to the overall correctness/completeness of the entire program. In object oriented programming, this typically means testing each method individually, ensuring that certain inputs result in certain outputs. Having a suite of tests to run whenever you make changes can give you a measure of confidence that the changes didn&#8217;t unintentionally introduce additional bugs or regressions.</p>
+<p>YUI Test is our framework for unit testing JavaScript. The goal of YUI Test is to make creating JavaScript unit tests fast and easy. We know from experience that developers&#8217; main complaint about unit testing is that it takes too long, so everything about YUI Test is designed to make this process easier. Here&#8217;s how you can get started:</p>
+<h2>Step 1: Create an HTML file and include required files</h2>
+<p>Add in the YUI Test required files. These are outlined in the <a href="http://developer.yahoo.com/yui/yuitest/#start">documentation</a>:</p>
+<pre>&lt;!--CSS--&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;
+href=&quot;http://yui.yahooapis.com/2.6.0/build/logger/assets/logger.css
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;
+href=&quot;http://yui.yahooapis.com/2.6.0/build/yuitest/assets/testlogger.css&quot;&gt;
+
+&lt;!-- Combo-handled YUI JS files: --&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://yui.yahooapis.com/combo?2.6.0/build/yahoo-dom-event/yahoo-dom-event.js&amp;2.6.0/build/logger/logger-min.js&amp;2.6.0/build/yuitest/yuitest-min.js&quot;&gt;&lt;/script&gt;</pre>
+<h2>Step 2: Include your JavaScript</h2>
+<p>After including the default YUI Test files, you&#8217;ll need to include the JavaScript that you want to test. The best approach is to include individual JavaScript files that encapsulate the functionality to test. If your JavaScript requires some markup or CSS on the page to work correctly, you may want to include those as well.</p>
+<h2>Step 3: Create a test case</h2>
+<p>Test cases are created via the <code>YAHOO.tool.TestCase</code> constructor. The constructor accepts a single argument, which is an object that has at least a <code>name</code> property and one or more methods. If a method begins with the word &quot;test&quot; (all in lowercase), then it is considered a test to be run; all other methods are considered to be helpers. </p>
+<p>To test your JavaScript, create one or more tests in the test case object. Each test should have at least one assertion. <a href="http://developer.yahoo.com/yui/yuitest/#assertions">Assertions</a> are used to indicate the expected result of an operation and are expressed as methods on <code>YAHOO.util.Assert</code>, <code>YAHOO.util.ArrayAssert</code>, <code>YAHOO.util.DateAssert</code>, and <code>YAHOO.util.ObjectAssert</code>. The most frequently used assertion is <code>YAHOO.util.Assert.areEqual()</code>, which is used to determine if two values are equivalent. The first argument is the expected value and the second is the value you&#8217;re testing. For example:</p>
+<pre>var testCase = new YAHOO.tool.TestCase({
+    name: "trim() Tests",
+
+    testTrimWithLeadingWhiteSpace: function(){
+        var result = trim("    Hello world!");
+        YAHOO.util.Assert.areEqual("Hello world!", result);
+    }
+});</pre>
+<p>This code tests a <span style='font-size:10.0pt;mso-bidi-font-size: 12.0pt;font-family:"Courier New";mso-bidi-font-family:"Courier New"'>trim()</span> function be sure that it removes leading white space from a string. A test string is passed through <span style='font-size:10.0pt;mso-bidi-font-size:12.0pt; font-family:"Courier New";mso-bidi-font-family:"Courier New"'>trim()</span> and then the actual result is compared against the expected result. If the two don&#8217;t match, then an assertion failure is thrown and <span style='font-size: 10.0pt;mso-bidi-font-size:12.0pt;font-family:"Courier New";mso-bidi-font-family: "Courier New"'>testTrimWithLeadingWhiteSpace()</span> is marked as failed. You can have multiple assertions in a single test if necessary, but it&#8217;s generally a good idea to keep the number of assertions small so that you&#8217;re not testing too much in a single test.</p>
+<p>Each test case must be added to the test runner before it can be executed, so each test case should be added like this:</p>
+<pre>YAHOO.tool.TestRunner.add(testCase);</pre>
+<p>Test cases are executed in the order in which they are added to the test runner.</p>
+<h2>Step 4: Execute tests</h2>
+<p>You can begin running tests once all of the test cases have been added to the test runner. This is generally done once the page has finished loading and so the <code>onload</code> event handler is a good place to begin:</p>
+<pre>window.onload = function(){
+
+    //create the logger
+    var logger = new YAHOO.tool.TestLogger("testLogger");
+
+    //run the tests
+    YAHOO.tool.TestRunner.run();
+};
+</pre>
+<p>This code creates a new instance of the TestLogger, which outputs the results of the tests, and then runs all of the tests. This snippet of code can be used verbatim in any file to begin execution of the tests. As tests execute, the results are displayed in the TestLogger, which passes displayed in green and fails displayed in red.</p>
+<p>All of this should be saved in a single HTML file. You need only load the file into your browser to see the results. For more, check out the <a href="http://developer.yahoo.com/yui/examples/yuitest/index.html">examples</a> or take a look in the <code>tests</code> directory of the <a href="http://developer.yahoo.com/yui/download/">YUI zip file</a>.</p>
+<h2>Wrap-up</h2>
+<p>That’s all it takes to get started writing unit tests for your JavaScript. Keep in mind that your JavaScript doesn&#8217;t need to use YUI at all to take advantage of unit testing with YUI Test. The framework can be used to test any JavaScript code. </p>
+<h2>More information</h2>
+<ul>
+<li><a      href="http://developer.yahoo.com/yui/yuitest/">YUI Test</a></li>
+<li><a      href="http://video.yahoo.com/watch/3737228/10267335">Test-Driven      Development with YUI Test</a></li>
+<li><a      href="http://www.vandamme.com/blog.aspx?id=1978&amp;blogid=194">YUI Test      &#8211; The New Kid on the Block</a></li>
+</ul>
+<h2>Video: Nicholas C. Zakas on Test-Driven Development and YUI Test:</h2>
+<p></p>
+<div><object width="512" height="322">
+<param name="movie" value="http://d.yimg.com/static.video.yahoo.com/yep/YV_YEP.swf?ver=2.2.30" />
+<param name="allowFullScreen" value="true" />
+<param name="AllowScriptAccess" VALUE="always" />
+<param name="bgcolor" value="#000000" />
+<param name="flashVars" value="id=10267335&#038;vid=3737228&#038;lang=en-us&#038;intl=us&#038;thumbUrl=http%3A//us.i1.yimg.com/us.yimg.com/p/i/bcst/videosearch/5631/73581987.jpeg&#038;embed=1" /><embed src="http://d.yimg.com/static.video.yahoo.com/yep/YV_YEP.swf?ver=2.2.30" type="application/x-shockwave-flash" width="512" height="322" allowFullScreen="true" AllowScriptAccess="always" bgcolor="#000000" flashVars="id=10267335&#038;vid=3737228&#038;lang=en-us&#038;intl=us&#038;thumbUrl=http%3A//us.i1.yimg.com/us.yimg.com/p/i/bcst/videosearch/5631/73581987.jpeg&#038;embed=1" ></embed></object>
+<p><a href="http://video.yahoo.com/watch/3737228/10267335">Nicholas C. Zakas: &quot;Test-Driven Development with YUI Test&quot;</a> @ <a href="http://video.yahoo.com" >Yahoo! Video</a></p>
+</div>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=DZGCO"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=DZGCO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=jhItO"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=jhItO" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=ItSSo"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=ItSSo" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=Mffgo"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=Mffgo" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://yuiblog.com/blog/2008/12/01/yuitest-getting-started/feed/</wfw:commentRss>
+		<feedburner:origLink>http://yuiblog.com/blog/2008/12/01/yuitest-getting-started/</feedburner:origLink></item>
+		<item>
+		<title>In the Wild for November 26, 2008</title>
+		<link>http://feeds.feedburner.com/~r/YahooUserInterfaceBlog/~3/466677481/</link>
+		<comments>http://yuiblog.com/blog/2008/11/26/wild-20081126/#comments</comments>
+		<pubDate>Wed, 26 Nov 2008 21:56:18 +0000</pubDate>
+		<dc:creator>YUI Team</dc:creator>
+		
+		<category><![CDATA[In the Wild]]></category>
+
+		<category><![CDATA[Ajax]]></category>
+
+		<category><![CDATA[configurator]]></category>
+
+		<category><![CDATA[content distribution network]]></category>
+
+		<category><![CDATA[design ethos]]></category>
+
+		<category><![CDATA[google]]></category>
+
+		<category><![CDATA[implementations]]></category>
+
+		<category><![CDATA[lava lamp]]></category>
+
+		<category><![CDATA[menu control]]></category>
+
+		<category><![CDATA[mouseover effect]]></category>
+
+		<category><![CDATA[nav menu]]></category>
+
+		<category><![CDATA[search api]]></category>
+
+		<category><![CDATA[singleton]]></category>
+
+		<category><![CDATA[widget]]></category>
+
+		<guid isPermaLink="false">http://yuiblog.com/blog/2008/11/26/wild-20081126/</guid>
+		<description><![CDATA[Needless to say, one thing all of us here at YUI headquarters are thankful for is the chance to work with all of you who have made the YUI community such a vibrant, challenging, inspiring place over the last three years.  So, thanks from us.  We hope your holidays are peaceful and full [...]]]></description>
+			<content:encoded><![CDATA[<p>Needless to say, one thing all of us here at YUI headquarters are thankful for is the chance to work with all of you who have made the YUI community such a vibrant, challenging, inspiring place over the last three years.  So, thanks from us.  We hope your holidays are peaceful and full of happiness.</p>
+<p>Here are some of the things we&#8217;ve seen in just the last week or so that have reminded us how much we love working on YUI:</p>
+<ul id="releaselist">
+<li id="yuiBlogWild-82"><strong><a href="http://mattsnider.com/languages/javascript/element-editor/">Matt Snider&#8217;s Element Editor Class</a>:</strong> <a href="http://mattsnider.com/languages/javascript/element-editor/">Writes Matt</a>: &#8220;The ultimate goal of the project is to develop a widget that can be used to dynamically update the content of any DOM node, by inserting an editable form field (input, textarea, select, etc.). In version 1, &#8216;Element Editor&#8217; can replace a DOM node with a textarea or an input, allowing a client to replace the text inside of the DOM node. The widget contains a singleton Custom Event (1 Custom Event shared by all ‘ElementEditor’ instances), which can be subscribed to, that fires each time a user changes the DOM node content.&#8221;<br /><a href="http://mattsnider.com/languages/javascript/element-editor/"><img src="http://yuiblog.com/assets/elementeditor.png" vspace="10"></a></li>
+<li id="yuiBlogWild-100"><strong><a href="http://nicora.net/projects/lavalamp/">YUI-based &#8220;Lava Lamp Menu&#8221; from Nicora.net</a>:</strong> This is a really nice implementation of a nav menu that may be appropriate for sites that are looking for a smooth, richly finished feel.&nbsp; Calling it a lava-lamp menu may be a little extreme &#8212; what it really does is animate the mouseover effect from one nav item to the next in a smooth, graceful way.&nbsp; Not right for every site, but a sweet addition to the YUI Menu Control for sites where this kind of animation suits your design ethos. (<a href="http://gallery.yahoo.com/apps/24003">Original source.</a>)<br /><a href="http://nicora.net/projects/lavalamp/"><img src="http://yuiblog.com/assets//lavalampmenu-20081126-123409.jpg" vspace="10"></a></li>
+<li id="yuiBlogWild-85"><strong><a href="http://googleajaxsearchapi.blogspot.com/2008/11/welcome-yui-scriptaculous-gets-fresh.html">Google Support for YUI on <code>ajax.googleapis.com</code></a>:</strong> <a href="http://yuiblog.com/blog/2008/11/19/yui-google/">As we announced on YUIBlog on November 19</a>, <a href="http://googleajaxsearchapi.blogspot.com/2008/11/welcome-yui-scriptaculous-gets-fresh.html/">Google is now hosting YUI files on its content distribution network (CDN)</a>, adding a second worldwide CDN from which to choose if you want to offload your YUI bandwidth and improve performance.&nbsp; Better still, Google&#8217;s CDN provides SSL support, which means those of you hosting your own YUI implementations to run in secure environments can now move to a CDN solution if you wish.&nbsp; Currently, combo-handling remains a Yahoo CDN-only optimization.&nbsp; Head over <a href="http://developer.yahoo.com/yui/articles/hosting/">to the Dependency Configurator</a> if you&#8217;d like to set up an implementation drawn from Google&#8217;s network, or check out the <a href="http://googleajaxsearchapi.blogspot.com/2008/11/welcome-yui-scriptaculous-gets-fresh.html">Google Ajax Search API Blog&#8217;s writeup</a>.  (<a href="http://www.ginside.com/2008/2343/google-hosting-yui-javascript-libraries/">The Google Inside blog has an upbeat take on this development as well</a>.)<br /><a href="http://googleajaxsearchapi.blogspot.com/2008/11/welcome-yui-scriptaculous-gets-fresh.html"><img src="http://yuiblog.com/assets//googlecdn-20081121-114140.png" vspace="10"></a></li>
+<li id="yuiBlogWild-87"><strong><a href="http://mattsnider.com/languages/javascript/simulating-events-using-yui/">Event Simulation Using YUI</a>:</strong> <a href="http://mattsnider.com/languages/javascript/simulating-events-using-yui/">More from Matt Snider</a>: &#8220;Some browsers have begun to support event emulation allowing engineers to trigger client events, but most are incomplete and there is no standard x-browser way to simulate events. Fortunately, JavaScript Frameworks have come to the rescue, allowing us to simulate client events. YUI has the <a href="http://developer.yahoo.com/yui/yuitest/">YUI Test Utility</a>, which allows for the emulation of 7 mouse events and 3 keyboard events: click, dblclick, mousemove, mousedown, mouseup, mouseover, mouseout, keydown, keyup, and keypress. So by using YUI there actually is a standard, x-browser way to emulate events.&#8221;<br /><a href="http://mattsnider.com/languages/javascript/simulating-events-using-yui/"><img src="http://yuiblog.com/assets/eventsim-20081125-102928.png" vspace="10"></a></li>
+<li id="yuiBlogWild-105"><strong><a href="http://www.globber.ro">YUI Sightings — Globber</a>:</strong> There&#8217;s not much we <em>don&#8217;t</em> like about Globber, which is a slick portlet based on YUI.&nbsp; It&#8217;s cute, well-designed, has sheep in the header, and shows a light-hearted, well-implemented take on the My Yahoo/Google IG genre.&nbsp; If you&#8217;re looking for some inspiration for your YUI Drag and Drop based app, here&#8217;s a good place to start.<br /><a href="http://www.globber.ro"><img src="http://yuiblog.com/assets/globber-20081126-133649.jpg" vspace="10"></a></li>
+<li id="yuiBlogWild-86"><a href="http://htmlblog.net/bubble-menu-javascript-or-playing-with-yuis-event-delegation/"><img src="http://yuiblog.com/assets/bubblemenu-20081124-090916.jpg" align="right" hspace="10" vspace="5"></a><strong><a href="http://htmlblog.net/bubble-menu-javascript-or-playing-with-yuis-event-delegation/">Asvin Balloo&#8217;s Event Delegation/Bubble Menu Exploration</a>:</strong> Asvin Balloo (on his newly redesigned HTML Blog) writes: &#8220;Event delegation refers to the use of a single event listener on a parent object to listen for events happening on its children (or deeper descendants). Event delegation allows developers to be sparse in their application of event listeners while still reacting to events as they happen on highly specific targets. This proves to be a key strategy for maintaining high performance in event-rich web projects, where the creation of hundreds of event listeners can quickly degrade performance.<span style="font-family: monospace;">&#8230;</span>This post illustrates the use of event delegation to create a &#8220;bubble&#8221; menu, inspired by <a href="http://nettuts.com/html-css-techniques/how-to-create-a-mootools-homepage-inspired-navigation-effect-using-jquery/">Bedrich Rios&#8217; post on Nettuts</a>.</li>
+<li id="yuiBlogWild-91"><strong><a href="http://miacms.org/index.php?option=com_content&amp;task=view&amp;id=46&amp;Itemid=1">YUI Carousel, Simple Pie for Blog Aggregation</a>:</strong> Veeru makes <a href="http://yuiblog.com/blog/2008/11/18/wild-20081118/#yuiBlogWild-74">another</a> &#8220;In the Wild&#8221; appearance with a nice implementation of <a href="http://gopalarathnam.com/weblog/">Gopal Venkatesan</a>&#8217;s YUI Carousel Control: &#8220;Recently was looking at aggregating a few blogs &#8212; basically the need is to show all the latest posts from a list of pre-defined blogs &#8212; mostly food related. I started with zero knowledge on this one, but fortunately was able to figure out how to do it. This is what I have used: <a href="http://developer.yahoo.com/yui/carousel/">YUI Carousel</a> to display the blog elements in a decent way, <a href="http://simplepie.org/">Simple Pie</a> to read contents from atom feeds and rss feeds.&#8221;&nbsp; <a href="http://myblog.darahlink.com/examples/blog_aggregator/">Check out the example here</a>.<br /><a href="http://miacms.org/index.php?option=com_content&amp;task=view&amp;id=46&amp;Itemid=1"><img src="http://yuiblog.com/assets/carousel-veeru-20081125-220249.jpg" vspace="10"></a></li>
+<li id="yuiBlogWild-94"><a href="http://www.dmxzone.com/showDetail.asp?TypeId=28&amp;NewsId=16279"><img src="http://yuiblog.com/assets/wellmancookie-20081126-093805.jpg" align="right" hspace="10" vspace="5"></a><strong><a href="http://www.dmxzone.com/showDetail.asp?TypeId=28&amp;NewsId=16279"> Fresh Baked Goodness with the YUI Cookie Utility</a>:</strong> <a href="http://www.danwellman.co.uk/">Dan Wellman</a> has posted another excellent tutorial on DMXZone, this one treating <a href="http://nczonline.net">Nicholas C. Zakas</a>&#8217;s <a href="http://developer.yahoo.com/yui/cookie/">YUI Cookie Utility</a>.&nbsp; Writes Dan: &#8220;The YUI provides us with an easy way of setting and getting cookie data, which abstracts away the strict syntax and dramatically shortens our scripts – which is a very good thing considering even the most basic functions for getting and setting cookie data are often in excess of 20 lines of plain-vanilla JavaScript, even without error checking that prevents an error being thrown if document.cookie is empty.&nbsp; Throughout this tutorial I’m going to be assuming that you’ve worked with cookies before the old fashioned way and understand the principles behind their use. Even if you’ve never worked directly with cookies before however you should still be able to use the YUI Cookie Utility without any difficulties.&#8221;&nbsp; <a href="http://www.dmxzone.com/showDetail.asp?TypeId=28&amp;NewsId=16279">You can download the full resource for $3.20 here</a>.</li>
+<li id="yuiBlogWild-102"><strong><a href="http://catalog.wsu.edu/Pullman/Courses/ByPrefix/A_S">YUI Sightings — Washginton State University Course Catalog</a>:</strong> Go Cougs!&nbsp; Jeff Craig, working among the beautiful rolling hills of Eastern Washington&#8217;s Palouse country in Pullman, Washington, has remade the WSU Catalog using YUI.&nbsp; You&#8217;ll find ten YUI components being leveraged in Jeff&#8217;s implementation.<br /><a href="http://catalog.wsu.edu/Pullman/Courses/ByPrefix/A_S"><img src="http://yuiblog.com/assets//wazzucatalog-20081126-130615.jpg" vspace="10"></a></li>
+<li id="yuiBlogWild-83"><strong><a href="http://www.artima.com/forums/flat.jsp?forum=270&amp;thread=243136">Sun Releases NetBeans 6.5 with Improved YUI Support</a>:</strong> From the <a href="http://www.artima.com/forums/flat.jsp?forum=270&amp;thread=243136">blog post</a>: &#8220;We did a lot of work in NetBeans 6.5 around formalizing how we include various community-supported JavaScript libraries and toolkits. We bundle many of the popular ones, including JQuery, YUI, script.aculo.us, and Dojo. Those are now easily consumable right form within the IDE: You can just start using those inside a project. If you have your own JavaScript library, it’s very easy to add that through the library manager to create a library reference, pointing to your library. Once you pull a library into a project, all of the JavaScript editor features become available to you.&#8221;</li>
+<li id="yuiBlogWild-89"><a href="http://consumerist.com"><img src="http://yuiblog.com/assets/consumerist-20081125-124554.jpg" align="right" hspace="10" vspace="5"></a><strong><a href="http://consumerist.com">YUI Sightings — The Consumerist</a>:</strong> We&#8217;ve mentioned before the <a href="http://yuiblog.com/blog/2008/11/07/wild-20081107/#yuiBlogWild-30">adoption YUI has seen among media sites</a>.&nbsp; It&#8217;s good to know in these difficult economic times that you can find YUI under the hood, too, at <a href="http://consumerist.com">The Consumerist</a>, so you can get some YUI goodness with your economic doom and gloom.</li>
+<li id="yuiBlogWild-92"><strong><a href="http://adevjournal.blogspot.com/2008/11/drap-drop-example-using-yui.html">A Drap &amp; Drop Example Using YUI Drag &amp; Drop&#8217;s Ineraction Groups</a>:</strong> Jorge at &#8220;A Developer&#8217;s Journal&#8221; writes: &#8220;I recently explored the drag-and-drop features of the YUI JavaScript library. I particularly liked the Interaction Groups example. While trying out the example, it occurred to me how perfectly suited it is for the user interface of a web-based board game. To test this idea, I created a proof of concept board game using YUI.&#8221; <a href="http://adevjournal.blogspot.com/2008/11/drap-drop-example-using-yui.html">Check out the code and the game on his blog</a>.</li>
+<li id="yuiBlogWild-93"><a href="http://sixrevisions.com/css/css-tips/css-tip-1-resetting-your-styles-with-css-reset/"><img src="http://yuiblog.com/assets/6rev-cssreset-20081125-221644.jpg" align="right" hspace="10" vspace="5"></a><strong><a href="http://sixrevisions.com/css/css-tips/css-tip-1-resetting-your-styles-with-css-reset/">CSS Tip #1: Resetting Your Styles with CSS Reset</a>:</strong> 6 Revisions, one of the most popular web-design blogs, has a detailed article out from Nov. 18 about the importance of CSS reset resources (like <a href="http://nate.koechley.com">Nate Koechley</a>&#8217;s <a href="http://developer.yahoo.com/yui/reset/">YUI Reset CSS</a>).&nbsp; <a href="http://sixrevisions.com/css/css-tips/css-tip-1-resetting-your-styles-with-css-reset/">Writes Jacob Gube</a>: &#8220;Resetting your styles, commonly referred to as CSS Reset or Reset CSS is the process of resetting (or more accurately - setting) the styles of all elements to a baseline value so that you avoid cross-browser differences due to their built-in default style settings. By resetting your styles, you avoid defaulting to the browser’s built-in styles, which differs from browser to browser.&#8221;</li>
+<li id="yuiBlogWild-103"><a href="http://tagz.in"><img src="http://yuiblog.com/assets/tagz-20081126-131150.jpg" align="right" hspace="10" vspace="5"></a><strong><a href="http://tagz.in">YUI Sightings — Tagz</a>:</strong> Tagz is a new social-bookmarking site from India which, according to its authors, &#8220;also borrows voting and commenting from social news sites. Tagz was inspired by delicious and reddit.&#8221;&nbsp; Major YUI usage can be found under the hood, including a dozen distinct components.</li>
+<li id="yuiBlogWild-104"><strong><a href="http://proplus.aptanacloud.com/ConPA/ConPA.html">YUI Sightings — ConPA Financial Tool</a>:</strong> ConPA is a nifty financial tool that is also a nice proof-of-concept of what you can do tying lots of YUI components together.&nbsp; This tool, which helps you optimize your portfolio balance based on a set of stocks, leverages DataTable, Charts, AutoComplete and more than a dozen other YUI components.<br /><a href="http://proplus.aptanacloud.com/ConPA/ConPA.html"><img src="http://yuiblog.com/assets/conpa-20081126-132851.jpg" vspace="10"></a></li>
+<li id="yuiBlogWild-88"><strong><a href="http://ericmiraglia.com/blog/?p=109">YUI Wrapper for Yahoo Search Term Extraction API</a>:</strong> Eric put together a simple 1KB script that, in combination with a server-side proxy, provides a JavaScript interface to the Yahoo! Search Term Extraction web service that pulls key terms out of any block of content.&nbsp; Check out <a href="http://ericmiraglia.com/blog/?p=109">the blog post</a>, the <a href="http://ericmiraglia.com/yui/demos/termextractor.php">functional example</a>, or <a href="http://ericmiraglia.com/yui/docs/YAHOO.api.TermExtractor.html">the API docs</a> for more details.<br /><a href="http://ericmiraglia.com/blog/?p=109"><img src="http://yuiblog.com/assets/termextractor-20081125-112240.png" vspace="10"></a></li>
+<li id="yuiBlogWild-90"><strong><a href="http://miacms.org/index.php?option=com_content&amp;task=view&amp;id=46&amp;Itemid=1">MiaCMS Updated with YUI 2.6.0 Support</a>:</strong> Chad Auld and the Mia team recently released MiaCMS 4.8 with support for the latest version of YUI (2.6.0). (<a href="http://twitter.com/chadauld/statuses/1024063594">Original source.</a>)</li>
+<li id="yuiBlogWild-95"><strong><a href="http://www.interfete-web-club.com/news.php">YUI Sightings — Interfete Web Club</a>:</strong> The Interfete Web Club is a new site based on the <a href="http://www.e107.org/news.php">e107 CMS</a> that makes heavy use of YUI CSS and JavaScript. (<a href="http://gallery.yahoo.com/apps/25526">Original source.</a>)</li>
+<li id="yuiBlogWild-96"><a href="http://www.iprotein.com/"><img src="http://yuiblog.com/assets//iprotein-20081126-105514.jpg" align="right" hspace="10" vspace="5"></a><strong><a href="http://www.iprotein.com/">YUI Sightings — IProtein</a>:</strong> The iProtein site makes beautiful use of Todd Kloots&#8217;s Menu Buttons, among many other YUI components, in its new interface. (<a href="http://gallery.yahoo.com/apps/25157">Original source.</a>)</li>
+<li id="yuiBlogWild-97"><a href="http://profile.myspace.com/index.cfm?fuseaction=user.viewprofile&amp;friendid=361568006"><img src="http://yuiblog.com/assets//myspacefootprints-20081126-110925.jpg" align="right" hspace="10" vspace="5"></a><strong><a href="http://profile.myspace.com/index.cfm?fuseaction=user.viewprofile&amp;friendid=361568006">YUI Sightings — Footprints MySpace App</a>:</strong> Navaneeth Krishnan&#8217;s Footprints is a collaborative geo-tagging application available on Myspace that makes use of <a href="http://developer.yahoo.com/yui/tabview/">YUI TabView</a> and other controls in a Google Maps mashup. (<a href="http://gallery.yahoo.com/apps/20552">Original source.</a>)</li>
+<li id="yuiBlogWild-98"><strong><a href="http://www.semmels.com/tipsvoortrips.html">YUI Sightings — Semmel, a YUI-based Interactive Community Engine</a>:</strong> Semmels are community spaces that are easy for community members to manipulate and customize.&nbsp; The richly interactive framework makes heavy use of YUI under the hood. (<a href="http://gallery.yahoo.com/apps/24208">Original source.</a>)</li>
+<li id="yuiBlogWild-99"><strong><a href="http://viewies.com/">YUI Sightings — Viewies.com and DuckDuckGo.com Search Engines</a>:</strong> Eric Powers contributed Viewies to the Yahoo! Gallery, combining YUI with the Yahoo Search APIs.&nbsp; Writes Eric: &#8220;viewies.com is a Web Search Portal with Instant Search Views. [You can] nstantly view search results as full pages.&#8221;&nbsp; This is a pretty cool take on one of the directions search interfaces can explore.  A more traditional take on search is <a href="http://duckduckgo.com/">DuckDuckGo.com</a>, a search engine that combines human edited results with search engine results in an attempt to improve the user interface.  DuckDuckGo uses several YUI components, inlcuding Matt Mlinac&#8217;s <a href="http://developer.yahoo.com/yui/imageloader/">YUI ImageLoader</a> to improve performance. (<a href="http://gallery.yahoo.com/apps/24016">Original source.</a>)<br /><a href="http://viewies.com/"><img src="http://yuiblog.com/assets//viewies-search-for-erics-name-20081126-122339.jpg" vspace="10"></a></li>
+<li id="yuiBlogWild-101"><a href="http://hometour.radcribs.com/home/34,176"><img src="http://yuiblog.com/assets//radcribs-20081126-125509.jpg" align="right" hspace="10" vspace="5"></a><strong><a href="http://hometour.radcribs.com/home/34,176">YUI Sightings — RadCribs.com Real Estate Tours</a>:</strong> RadCribs.com uses a variety of YUI components to provide in-page exploration of real-estate virtual tour information. (<a href="http://gallery.yahoo.com/apps/22960">Original source.</a>)</li>
+</ul>
+<p>That&#8217;s a lot, but we&#8217;re sure we missed some great YUI implementations and discussions &mdash; please let us know what we missed in the comments.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=93J3N"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=93J3N" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=dRmFN"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=dRmFN" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=VZfsn"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=VZfsn" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=aYmkn"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=aYmkn" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://yuiblog.com/blog/2008/11/26/wild-20081126/feed/</wfw:commentRss>
+		<feedburner:origLink>http://yuiblog.com/blog/2008/11/26/wild-20081126/</feedburner:origLink></item>
+		<item>
+		<title>Google Hosting YUI Files on ajax.googleapis.com</title>
+		<link>http://feeds.feedburner.com/~r/YahooUserInterfaceBlog/~3/459037149/</link>
+		<comments>http://yuiblog.com/blog/2008/11/19/yui-google/#comments</comments>
+		<pubDate>Thu, 20 Nov 2008 01:23:54 +0000</pubDate>
+		<dc:creator>Eric Miraglia</dc:creator>
+		
+		<category><![CDATA[Development]]></category>
+
+		<guid isPermaLink="false">http://yuiblog.com/blog/2008/11/19/yui-google/</guid>
+		<description><![CDATA[Update: It should be added that Google&#8217;s CDN provides SSL support whereas Yahoo&#8217;s does not.  If you were previously hosting your own set of YUI files to use in a secure environment, the Google CDN may be a way to offload that bandwidth and improve performance.
+
+Google has been hosting some of the popular AJAX [...]]]></description>
+			<content:encoded><![CDATA[<p><strong>Update:</strong> It should be added that Google&#8217;s CDN provides SSL support whereas Yahoo&#8217;s does not.  If you were previously hosting your own set of YUI files to use in a secure environment, the Google CDN may be a way to offload that bandwidth and improve performance.</p>
+<p><a href="http://developer.yahoo.com/yui/articles/hosting/?yuiloader-dom-event&amp;MIN&amp;nocombine&amp;basepath&amp;http://ajax.googleapis.com/ajax/libs/yui/2.6.0/build/&amp;google"><img src="http://yuiblog.com/assets/configurator-goog.png" width="520" height="384" /></a></p>
+<p>Google has been <a href="http://code.google.com/apis/ajaxlibs/documentation/">hosting some of the popular AJAX libraries</a> for awhile, and we&#8217;re pleased to announce that YUI has now been added to that roster. Now, you can choose between <code>yui.yahooapis.com</code> and <code>ajax.googleapis.com</code> when you evaluate your hosting options for YUI files. We&#8217;ve added Google as an option in the CDN section of the <a href="http://developer.yahoo.com/yui/articles/hosting/?yuiloader-dom-event&amp;MIN&amp;nocombine&amp;basepath&amp;http://ajax.googleapis.com/ajax/libs/yui/2.6.0/build/&amp;google">Dependency Configurator</a>; it&#8217;s easy to configure your implementation and switch the generated URLs from one source to the other.</p>
+<p>There are two things to keep in mind in working with the Google CDN, particularly if you&#8217;re currently using Yahoo&#8217;s CDN:</p>
+<ol>
+<li><strong>Combo-handling: </strong>Combo-handling (the on-the-fly aggregation of files to reduce HTTP requests) is supported on Yahoo&#8217;s CDN but not on Google&#8217;s;</li>
+<li><strong>Versions:</strong> Google&#8217;s CDN contains the current version of YUI (2.6.0) and will get future versions as they become available; legacy versions of YUI are not available from the Google CDN.</li>
+</ol>
+<p>If you&#8217;re using <a href="http://developer.yahoo.com/yui/yuiloader/">YUI Loader</a> to bring in your YUI files, it&#8217;s a simple thing to switch to Google&#8217;s servers using YUI Loader&#8217;s <code>base</code> configuration option.  Here&#8217;s what you would do to pull the <a href="http://developer.yahoo.com/yui/datatable/">YUI DataTable</a> and its dependencies from the Google CDN using YUI Loader:</p>
+<pre>&lt;!--Include YUI Loader: --&gt;
+&lt;script type=&quot;text/javascript&quot;
+src=&quot;http://ajax.googleapis.com/ajax/libs/yui/2.6.0/build/yuiloader/yuiloader-min.js&quot;&gt;
+&lt;/script&gt; 
+
+&lt;!--Use YUI Loader to bring in your other dependencies: --&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+// Instantiate and configure YUI Loader:
+(function() {
+var loader = new YAHOO.util.YUILoader({
+        base: &quot;http://ajax.googleapis.com/ajax/libs/yui/2.6.0/build/&quot;,
+        require: [&quot;datatable&quot;],
+        onSuccess: function() {
+            //instantiate your DataTable here...
+    }
+}); 
+
+// Load the files using the insert() method.
+loader.insert();
+})();
+&lt;/script&gt;</pre>
+<p>The Dependency Configurator will generate this script for you; simply <a href="http://developer.yahoo.com/yui/articles/hosting/?datatable&amp;MIN&amp;nocombine&amp;basepath&amp;http://ajax.googleapis.com/ajax/libs/yui/2.6.0/build/&amp;google">load this configuration</a> and switch to the &#8220;Dynamic Loading with YUI Loader&#8221; tab.</p>
+<p>Thanks to <a href="http://vadim.spivak.net/blog/">Vadim Spivak</a> at Google and <a href="http://almaer.com/blog/">Dion Almaer</a> (now at Mozilla) for helping to make this additional option available to the YUI developer community. We love that Google is supporting web developers in this way &mdash; grabbing YUI files from Google&#8217;s global infrastructure is a fantastic option to have.</p>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=sePeN"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=sePeN" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=2qPrN"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=2qPrN" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=5W2qn"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=5W2qn" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=jgdDn"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=jgdDn" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://yuiblog.com/blog/2008/11/19/yui-google/feed/</wfw:commentRss>
+		<feedburner:origLink>http://yuiblog.com/blog/2008/11/19/yui-google/</feedburner:origLink></item>
+		<item>
+		<title>YUI Presentation at FOSS.IN</title>
+		<link>http://feeds.feedburner.com/~r/YahooUserInterfaceBlog/~3/458688325/</link>
+		<comments>http://yuiblog.com/blog/2008/11/19/philip-foss/#comments</comments>
+		<pubDate>Wed, 19 Nov 2008 18:43:47 +0000</pubDate>
+		<dc:creator>Philip Tellis</dc:creator>
+		
+		<category><![CDATA[Development]]></category>
+
+		<guid isPermaLink="false">http://yuiblog.com/blog/2008/11/19/philip-foss/</guid>
+		<description><![CDATA[In a little over a week from now, I&#8217;ll be speaking at the FOSS.IN conference in Bangalore.  FOSS.IN is an annual conference in India with the aim of creating  more FOSS contributors, in particular from India.  My talk will cover what it takes to contribute to YUI.
+If you happen to be in [...]]]></description>
+			<content:encoded><![CDATA[<p>In a little over a week from now, I&#8217;ll be speaking at the <a href="http://foss.in/">FOSS.IN</a> conference in Bangalore.  FOSS.IN is an annual conference in India with the aim of creating  more FOSS contributors, in particular from India.  My talk will cover what it takes to <a href="http://foss.in/2008/register/speakers/talkdetailspub.php?talkid=646">contribute to YUI</a>.</p>
+<p>If you happen to be in Bangalore between November 25 and 29, drop in to the conference.  You can <a href="http://foss.in/register/delegate-registration">register online</a> to get 50% off on the conference fee.</p>
+<p>Hope to see some of you there.</p>
+<p class="tags">Tags: <a href="http://technorati.com/tag/FOSS.IN" title="See the Technorati tag page for 'FOSS.IN'." rel="tag">FOSS.IN</a>, <a href="http://technorati.com/tag/philiptellis" title="See the Technorati tag page for 'philiptellis'." rel="tag">philiptellis</a>, <a href="http://technorati.com/tag/yui" title="See the Technorati tag page for 'yui'." rel="tag">yui</a>, <a href="http://technorati.com/tag/presentation" title="See the Technorati tag page for 'presentation'." rel="tag">presentation</a></p><div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=jLyGN"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=jLyGN" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=pUkDN"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=pUkDN" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=foBbn"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=foBbn" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=ynryn"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=ynryn" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://yuiblog.com/blog/2008/11/19/philip-foss/feed/</wfw:commentRss>
+		<feedburner:origLink>http://yuiblog.com/blog/2008/11/19/philip-foss/</feedburner:origLink></item>
+		<item>
+		<title>In the Wild for November 18, 2008</title>
+		<link>http://feeds.feedburner.com/~r/YahooUserInterfaceBlog/~3/457667144/</link>
+		<comments>http://yuiblog.com/blog/2008/11/18/wild-20081118/#comments</comments>
+		<pubDate>Tue, 18 Nov 2008 21:49:40 +0000</pubDate>
+		<dc:creator>YUI Team</dc:creator>
+		
+		<category><![CDATA[Development]]></category>
+
+		<guid isPermaLink="false">http://yuiblog.com/blog/2008/11/18/wild-20081118/</guid>
+		<description><![CDATA[Here&#8217;s a snapshot of the last few weeks&#8217; worth of YUI Library news from around the web.  As always, please let us know in the comments section about what we&#8217;ve missed and we&#8217;ll make sure to include it in the next update.
+
+Yahoo Reinvents the Web Portal: There was a lot of coverage of Nicholas [...]]]></description>
+			<content:encoded><![CDATA[<p>Here&#8217;s a snapshot of the last few weeks&#8217; worth of YUI Library news from around the web.  As always, please let us know in the comments section about what we&#8217;ve missed and we&#8217;ll make sure to include it in the next update.</p>
+<ul id="releaselist">
+<li id="yuiBlogWild-72"><a href="http://mashable.com/2008/11/12/yahoos-portal/"><img src="http://yuiblog.com/assets/mashable.png" align="right" hspace="10" vspace="5"></a><strong><a href="http://mashable.com/2008/11/12/yahoos-portal/">Yahoo Reinvents the Web Portal</a>:</strong> There was a lot of coverage of <a href="http://yuiblog.com/blog/2008/11/11/frontpage-and-yui3/">Nicholas C. Zakas&#8217;s YUIBlog piece</a> in which he talked about working with us to make YUI 3 the foundation for the new Yahoo Front Page, which is currently in bucket testing.&nbsp; <a href="http://mashable.com/2008/11/12/yahoos-portal/">Stan Schroeder of Mashable writes</a>: &#8220;Want to know what the future for big web portals will look like? Yahoo&#8217;s developer team might just have an answer. Using&#8230;<a href="http://developer.yahoo.com/yui/">[a] YUI 3-based </a>framework, they&#8217;re working on a <a href="http://ycorpblog.com/2008/09/17/testing-testing-a-new-yahoo-com/">new front page</a> that will enable extensive customization for users; developers, on the other hand, will be able to create third party applications for the page.&#8221;&nbsp; <a href="http://ajaxian.com/archives/yahoo-home-page-and-yui-30">Dion Almaer of Ajaxian writes</a>: &#8220;They are currently testing the new home page out, but having it use the latest and greatest dogfood on a web page as trafficked as the Y! home page is a big deal. Save a few bytes here or there and you are talking serious benefits.&#8221;</li>
+<li id="yuiBlogWild-77"><strong><a href="http://www.webmonkey.com/tutorial/Create_Rich_Interfaces_With_the_YUI_Library"> WebMonkey Tutorial — Create Rich Interfaces With the YUI Library</a>:</strong> WebMonkey produced an outstanding introductory tutorial on YUI last week, <a href="http://www.webmonkey.com/tutorial/Create_Rich_Interfaces_With_the_YUI_Library">definitely worth checking out</a>.&nbsp; According to the Monkey: &#8220;The line between web and desktop applications is fading. Users now expect a richer experience. JavaScript can help provide interfaces and interactions that mimic the desktop. In this tutorial, I&#8217;ll introduce you to the JavaScript-based <a href="http://developer.yahoo.com/yui/">Yahoo User Interface Library</a>. We&#8217;ll use it to convert normal HTML into more interactive controls.&nbsp; Best of all, Yahoo&#8217;s library is open-source and has been released <a href="http://developer.yahoo.com/yui/license.html">under a BSD license</a>, so it&#8217;s free for all users.&#8221;<br /><a href="http://www.webmonkey.com/tutorial/Create_Rich_Interfaces_With_the_YUI_Library"><img src="http://yuiblog.com/assets/webmonkey-tutorial.png" vspace="10"></a></li>
+<li id="yuiBlogWild-69"><a href="http://www.yuiasp.net/"><img src="http://yuiblog.com/assets/asp.net.png" align="right" hspace="10" vspace="5"></a><strong><a href="http://www.yuiasp.net/">Welcome to YUIAsp.Net</a>:</strong> Reader raul writes in about a new project that marries YUI and Microsoft .NET: &#8220;YUIAsp.Net is the place to get the complete suite of YUIAsp.Net &#8212; Yahoo! UI Library(YUI) ASP NET controls for your web applications.&nbsp; As you [can] see from the <a href="http://www.yuiasp.net/free-aspnet-controls/docs/General_configuration.aspx">documentation</a> and from the <a href="http://www.yuiasp.net/LiveDemo/default.aspx">live demo</a>, they are extremely fast, flexible and easy to use. Just drag them from the toolbox, customize the behaviour, and you&#8217;re set to go.&nbsp; The next best thing about the YUIAsp.Net is that it&#8217;s FREE. You can choose to download just the binaries, you you can also get the sources for the controls, free of charge.&#8221; (<a href="http://yuiblog.com/blog/2008/11/07/wild-20081107/#comment-511047">Original source.</a>)</li>
+<li id="yuiBlogWild-71"><strong><a href="http://wonko.com/post/how-to-prevent-yui-get-race-conditions">How to Prevent Race Conditions when Loading CSS with the YUI Get Utility</a>:</strong> Yahoo! Search engineer <a href="http://wonko.com/post/how-to-prevent-yui-get-race-conditions">Ryan Grove writes on his personal blog</a>, wonko.com, about discerning when CSS files loaded with YUI&#8217;s Get Utility are fully loaded: &#8220;<a href="http://developer.yahoo.com/yui/get/">The YUI Get Utility</a> makes it easy to dynamically load CSS and JavaScript on demand, but there’s one tiny gotcha: Firefox, Safari, and other Gecko/WebKit-based browsers don’t provide a reliable way to tell when a CSS file has finished loading. As a result, when you load CSS in one of these browsers using the Get.css() method, the onSuccess callback is fired instantly.&nbsp; In many cases this isn’t a problem, but if you need to ensure that you don’t perform an action (such as appending HTML to the page) until after the CSS has loaded, this can cause a race condition. There’s no way for the Get Utility to automatically work around this problem, but with a little bit of extra effort on our part, we can work around it ourselves.&#8221;&nbsp; <a href="http://wonko.com/post/how-to-prevent-yui-get-race-conditions">Click through to read Ryan&#8217;s full solution</a>.</li>
+<li id="yuiBlogWild-76"><strong><a href="http://yuihelp.levycodev.com/demos/colorpicker/multi_colorpickers_on_a_page_help.php">Choosing Multiple Color Values Bound to Text Inputs Using a Single Color Picker Instance</a>:</strong> <a href="http://levycodev.com/">Bret Levy</a> has augmented his <a href="http://yuihelp.levycodev.com">YUIHelp</a> site with another nice tutorial, this time covering the <a href="http://developer.yahoo.com/yui/colorpicker/">YUI Color Picker Control</a>.&nbsp; <a href="http://yuihelp.levycodev.com/demos/colorpicker/multi_colorpickers_on_a_page_help.php">Writes Bret</a>: &#8220;What most people find they want to do is have multiple colorpicker popups on a page, and furthermore, have &#8216;linked&#8217; user input fields for each input (to show the current RGB color, for example). In doing so, it is important to consider the efficiency of the solution, specifically, it is desirable to have a single colorpicker &#8216;widget&#8217;.&#8221;<br /><a href="http://yuihelp.levycodev.com/demos/colorpicker/multi_colorpickers_on_a_page_help.php"><img src="http://yuiblog.com/assets/multicp.png" vspace="10"></a></li>
+<li id="yuiBlogWild-70"><strong><a href="http://925html.com/files/sheets/sheets.html">More &#8220;Sheets&#8221;-style Simple Dialogs</a>:</strong> Eric Ferraiuolo saw <a href="http://mattsnider.com/languages/javascript/animation-widget-slide-out-from-top-of-viewport/">Matt Snider&#8217;s sheets-style Dialogs</a> in <a href="http://yuiblog.com/blog/2008/11/07/wild-20081107/">the last &#8220;In the Wild&#8221; post</a> and wanted to follow up with a version that, he hoped, would be more similar to the OS X model (which wasn&#8217;t Matt&#8217;s specific goal).&nbsp; Here&#8217;s what Eric came up with &#8212; <a href="http://925html.com/files/sheets/sheets.html">a slick sheets implementation based on the YUI Simple Dialog</a>. (<a href="http://yuiblog.com/blog/2008/11/07/wild-20081107/#comment-511054">Original source.</a>)<br /><a href="http://925html.com/files/sheets/sheets.html"><img src="http://yuiblog.com/assets/sheets.png" vspace="10"></a></li>
+<li id="yuiBlogWild-73"><strong><a href="http://www.dmxzone.dmxzone.com/ShowDetail.asp?NewsId=16232"> Intelligent YUI Resource Loading with YUI Loader</a>:</strong> YUI author Dan Wellman has <a href="http://www.dmxzone.dmxzone.com/ShowDetail.asp?NewsId=16232">a new (pay-to-download) article up on DMXZone that treats Adam Moore&#8217;s YUI Loader Utlity</a>.&nbsp; This $3.20 resource follows up on <a href="http://www.dmxzone.dmxzone.com/showDetail.asp?TypeId=28&amp;NewsId=16174">his piece on YUI Get</a> and delves into the power of YUI Loader.&nbsp; Writes Dan: &#8220;<a href="http://developer.yahoo.com/yui/get/">YUI Get</a> will indiscriminately get the files you specify but the big difference with YUI loader is that it has been designed to specifically get YUI files. <a href="http://developer.yahoo.com/yui/yuiloader/">YUI Loader</a> is an intelligent utility that saves you having to include or specify all of the necessary individual files and dependencies for any component; you simply tell it the component(s) you wish to use and it looks at what YUI content exists on the page, and then adds anything else need to make the component work.&#8221;</li>
+<li id="yuiBlogWild-75"><strong><a href="http://bakery.cakephp.org/articles/view/paginating-data-with-cakephp-and-yahoo-user-interface-datatable">Paginating Data with CakePHP and Yahoo! User Interface DataTable</a>:</strong> CakePHP&#8217;s Bakery blog has <a href="http://bakery.cakephp.org/articles/view/paginating-data-with-cakephp-and-yahoo-user-interface-datatable">a fantastic new tutorial</a> on building paginated DataTables using CakePHP and <a href="http://developer.yahoo.com/yui/datatable/">YUI&#8217;s DataTable</a> and <a href="http://developer.yahoo.com/yui/paginator/">Paginator</a> controls.<br /><a href="http://bakery.cakephp.org/articles/view/paginating-data-with-cakephp-and-yahoo-user-interface-datatable"><img src="http://yuiblog.com/assets/bakery.png" vspace="10"></a></li>
+<li id="yuiBlogWild-68"><strong><a href="http://allmybrain.com/2008/11/06/example-yui-image-upload-with-yui-260/">Example YUI Image Upload with YUI 2.6.0</a>:</strong> <a href="http://allmybrain.com">All My Brain</a> has updated its image upload example for <a href="http://developer.yahoo.com/yui/editor/">YUI Rich Text Editor</a> to support RTE&#8217;s 2.6.0 GA release. This example shows you how to add an upload dialog into the RTE&#8217;s image properties palette. (<a href="http://allmybrain.com/2007/10/16/an-image-upload-extension-for-yui-rich-text-editor/">Original source.</a>)</li>
+<li id="yuiBlogWild-74"><strong><a href="http://myblog.darahlink.com/2008/10/31/using-yui-connection-manager/">Two New Connection Manager Tutorials from &#8220;Share As I Learn&#8221;</a>:</strong> Blogger Veeru has written two <a href="http://developer.yahoo.com/yui/connection/">Connection Manager</a> tutorials on his <a href="http://myblog.darahlink.com/">Share as I Learn</a> blog. (Connection Manager, written by YUI founder Thomas Sha, is YUI&#8217;s AJAX component.)&nbsp; The first tutorial is entitled &#8220;<a href="http://myblog.darahlink.com/2008/10/31/using-yui-connection-manager/">Using YUI Connection Manager</a>&#8220;; the second is &#8220;<a href="http://myblog.darahlink.com/2008/10/31/yui-connection-manager-with-json-for-dummies/">YUI Connection Manager with JSON for Dummies Like Me</a>.&#8221;</li>
+<li id="yuiBlogWild-80"><a href="http://bigtweet.com/"><img src="http://yuiblog.com/assets/bigtweet.png" align="right" hspace="10" vspace="5"></a><strong><a href="http://bigtweet.com/">BigTweet</a>:</strong> BigTweet is a bookmarklet that helps you post to Twitter.</li>
+<li id="yuiBlogWild-78"><strong><a href="http://www.lutsr.nl/yui/newsticker/">YUI-based Newsticker</a>:</strong> This is an old script, but we missed it when it came out and caught it via Snipplr&#8217;s repost — a YUI-based scrolling newsticker widget. (<a href="http://snipplr.com/view/9855/yui-newsticker/">Original source.</a>)</li>
+<li id="yuiBlogWild-81"><strong><a href="http://mtbcalendar.com/">YUI Sightings — MTBCalendar</a>:</strong> <a href="http://mtbcalendar.com/">MTBCalendar</a>,&nbsp; &#8220;a free service for discovering, organizing and sharing your mountain bike racing season,&#8221; has been updated to use <a href="http://developer.yahoo.com/yui/grids/">YUI CSS Grids</a>. (<a href="http://blog.mtbcalendar.com/?p=62">Original source.</a>)<br /><a href="http://mtbcalendar.com/"><img src="http://yuiblog.com/assets/mtbcalendar.png" vspace="10"></a></li>
+</ul>
+<div class="feedflare">
+<a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=oqduN"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=oqduN" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=9fP6N"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=9fP6N" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=fvs6n"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=fvs6n" border="0"></img></a> <a href="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?a=MuMYn"><img src="http://feeds.feedburner.com/~f/YahooUserInterfaceBlog?i=MuMYn" border="0"></img></a>
+</div>]]></content:encoded>
+			<wfw:commentRss>http://yuiblog.com/blog/2008/11/18/wild-20081118/feed/</wfw:commentRss>
+		<feedburner:origLink>http://yuiblog.com/blog/2008/11/18/wild-20081118/</feedburner:origLink></item>
+	</channel>
+</rss><!-- Dynamic Page Served (once) in 0.864 seconds --><!-- Cached page served by WP-Cache -->

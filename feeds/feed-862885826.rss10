@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="FeedCreator 1.7.2-ppt DokuWiki" -->
+<?xml-stylesheet href="http://wiki.nofxx.com/lib/exe/css.php?s=feed" type="text/css"?>
+<rdf:RDF
+    xmlns="http://purl.org/rss/1.0/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel rdf:about="http://wiki.nofxx.com/feed.php">
+        <title>A Contra Informação c/ DOOM</title>
+        <description></description>
+        <link>http://wiki.nofxx.com/</link>
+        <image rdf:resource="http://wiki.nofxx.com/lib/images/favicon.ico" />
+       <dc:date>2008-12-12T13:51:42-02:00</dc:date>
+        <items>
+            <rdf:Seq>
+                <rdf:li rdf:resource="http://wiki.nofxx.com/as:errors?rev=1229095938&amp;do=diff"/>
+                <rdf:li rdf:resource="http://wiki.nofxx.com/ruby?rev=1228041520&amp;do=diff"/>
+            </rdf:Seq>
+        </items>
+    </channel>
+    <image rdf:about="http://wiki.nofxx.com/lib/images/favicon.ico">
+        <title>A Contra Informação c/ DOOM</title>
+        <link>http://wiki.nofxx.com/</link>
+        <url>http://wiki.nofxx.com/lib/images/favicon.ico</url>
+    </image>
+    <item rdf:about="http://wiki.nofxx.com/as:errors?rev=1229095938&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2008-12-12T13:32:18-02:00</dc:date>
+        <title>as:errors - LzTOrIJCRQAbLD</title>
+        <link>http://wiki.nofxx.com/as:errors?rev=1229095938&amp;do=diff</link>
+        <description>&lt;http://nurnet511.freewhost.com/&gt; weather in chicago  &lt;http://teddy666.001webs.com/&gt; autocad drawing of the  &lt;http://tskad433.900megs.com/&gt; nicotine gum patch  &lt;http://nicero999.007sites.com/&gt; road map of midwest  &lt;http://alurre209.yourfreehosting.net/&gt; photoshop cs4 serial number  &lt;http://calder544.my50gb.com/&gt; sims 2 window downloads  &lt;http://lokij31.900megs.com/&gt; desperate housewives scripts  &lt;http://nurnet511.freewhost.com/chicago-weather-photos.html&gt; chicago weather sunday  &lt;http://teddy666…</description>
+    </item>
+    <item rdf:about="http://wiki.nofxx.com/ruby?rev=1228041520&amp;do=diff">
+        <dc:format>text/html</dc:format>
+        <dc:date>2008-11-30T08:38:40-02:00</dc:date>
+        <title>Ruby</title>
+        <link>http://wiki.nofxx.com/ruby?rev=1228041520&amp;do=diff</link>
+        <description>Docs
+gem server
+RoR on Linux
+
+Packets: zlib-devel openssl openssl-devel readlines readlines-devel   
+./configure --prefix=/usr/local --enable-pthread --enable-shared #   --with-readline-dir=/usr/local
+make  
+make install./configure --enable-shared --enable-pthread --prefix=/opt/ruby1.9
+...
+for binary in erb gem irb rake rdoc ri ruby; do     
+  ln -sf /opt/ruby1.9/bin/${binary} /usr/bin/${binary}19;   
+done
+SSL
+
+ Ruby source files (ruby-x.x.x/ext/openssl)</description>
+    </item>
+</rdf:RDF>

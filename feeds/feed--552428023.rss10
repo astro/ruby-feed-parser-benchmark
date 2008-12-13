@@ -1,0 +1,1472 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:admin="http://webns.net/mvcb/"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:cc="http://web.resource.org/cc/"
+  xmlns="http://purl.org/rss/1.0/">
+
+<channel rdf:about="http://www.omnimatter.com/">
+<title>Omnimatter</title>
+<link>http://www.omnimatter.com/</link>
+<description>A haphazard mish mash of geek, kitsch, science and philosophy</description>
+<dc:language>en-US</dc:language>
+<dc:creator></dc:creator>
+<dc:date>2007-12-29T21:17:21-08:00</dc:date>
+<admin:generatorAgent rdf:resource="http://www.typepad.com/?v=1.0" />
+
+
+<items>
+<rdf:Seq><rdf:li rdf:resource="http://www.omnimatter.com/2007/12/making-your-own.html" />
+<rdf:li rdf:resource="http://www.omnimatter.com/2007/11/unrealized-arch.html" />
+<rdf:li rdf:resource="http://www.omnimatter.com/2006/08/rediscover_pola.html" />
+<rdf:li rdf:resource="http://www.omnimatter.com/2006/02/happy_birthday_.html" />
+<rdf:li rdf:resource="http://www.omnimatter.com/2006/01/global_warming_.html" />
+<rdf:li rdf:resource="http://www.omnimatter.com/2005/05/a_brief_rundown.html" />
+<rdf:li rdf:resource="http://www.omnimatter.com/2004/11/audio_illusions.html" />
+<rdf:li rdf:resource="http://www.omnimatter.com/2004/11/the_soviet_expl.html" />
+<rdf:li rdf:resource="http://www.omnimatter.com/2004/10/tobacco_doesnt_.html" />
+<rdf:li rdf:resource="http://www.omnimatter.com/2004/10/truth_is_strang.html" />
+<rdf:li rdf:resource="http://www.omnimatter.com/2004/09/awake_during_su.html" />
+<rdf:li rdf:resource="http://www.omnimatter.com/2004/09/typos_in_the_bi.html" />
+<rdf:li rdf:resource="http://www.omnimatter.com/2004/09/the_smiley_face.html" />
+<rdf:li rdf:resource="http://www.omnimatter.com/2004/08/the_hidden_trea.html" />
+<rdf:li rdf:resource="http://www.omnimatter.com/2004/08/the_ivy_league_.html" />
+</rdf:Seq>
+</items>
+
+</channel>
+
+<item rdf:about="http://www.omnimatter.com/2007/12/making-your-own.html">
+<title>Making your own &quot;X-ray Photographs&quot;</title>
+<link>http://www.omnimatter.com/2007/12/making-your-own.html</link>
+<description>The discovery of invisible, penetrating rays in the 1890&#39;s ushered in a new era of scientific discovery and exploration. It opened the doors to nuclear medicine, non-invasive medical scanning, nuclear weapons, and much more. It began in 1895 with Wilhelm...</description>
+<content:encoded>&lt;p&gt;&lt;a href=&quot;http://coolstuff.typepad.com/.shared/image.html?/photos/uncategorized/2007/12/29/image001.jpg&quot; onclick=&quot;window.open(this.href, &#39;_blank&#39;, &#39;width=640,height=900,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot;&gt;&lt;img width=&quot;150&quot; hspace=&quot;10&quot; height=&quot;210&quot; border=&quot;0&quot; alt=&quot;Figure 1 - Roentgen&#39;s First X-Ray Photograph&quot; title=&quot;Figure 1 - Roentgen&#39;s First X-Ray Photograph&quot; src=&quot;http://www.omnimatter.com/images/2007/12/29/image001.jpg&quot; style=&quot;margin: 0px 0px 5px 5px; float: right;&quot; /&gt;&lt;/a&gt;
+The discovery of invisible, penetrating rays in the 1890&#39;s ushered in a new era of scientific discovery and exploration.&amp;nbsp; It opened the doors to nuclear medicine, non-invasive medical scanning, nuclear weapons, and much more.&lt;/p&gt;
+
+&lt;p&gt;It began in 1895 with Wilhelm Roentgen&#39;s discovery of the x-ray (&#39;x&#39; for unknown) and Henri Becquerel&#39;s accidental discovery of radioactivity one year later.&amp;nbsp; The first x-ray photograph was of Roentgen&#39;s wife&#39;s hand.&lt;/p&gt;
+
+&lt;p&gt;Mrs. Roentgen held her hand between an electrically powered x-ray tube and a photographic plate.&amp;nbsp; The result not only reveals her bone structure but also her wedding ring.&amp;nbsp; A year later, while performing experiments on polarized light, Becquerel stumbled upon natural radioactivity.&amp;nbsp; He had stored an unexposed photographic plate in a drawer near some Uranium salt samples.&amp;nbsp; Later when the plate was exposed and developed, he discovered that the film had been fogged by the salts even though they emitted no light and the plate had never come into actual physical contact with the Uranium.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 1.2em;&quot;&gt;&lt;strong&gt;Table of Contents&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;#project&quot;&gt;Project Idea&lt;/a&gt; &lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#initial&quot;&gt;Initial Results&lt;/a&gt; &lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#technical&quot;&gt;The Technical Challenges and the Legality of using Radioactive Material&lt;/a&gt; &lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#safety&quot;&gt;Safety Issues Regarding the use of Radon-Generating Materials&lt;/a&gt; &lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#seeing&quot;&gt;Seeing Through Things&lt;/a&gt; &lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#exposing&quot;&gt;Exposing Film Using Patients of Nuclear Medicine&lt;/a&gt; &lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;#appendix&quot;&gt;Appendix&lt;/a&gt; &lt;/li&gt;&lt;/ul&gt;
+&lt;p&gt;&lt;span style=&quot;font-size: 1.2em;&quot;&gt;&lt;strong&gt;&lt;a name=&quot;project&quot;&gt;Project Idea&lt;/a&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image003.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image003&quot; title=&quot;Image003&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image003.jpg&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+
+&lt;p align=&quot;center&quot;&gt;&lt;strong&gt;Figure 2 - Becquerel discovers an
+invisible radiation emanating from Uranium.&amp;nbsp; Note the Maltese cross
+placed between the lower sample and the film.&lt;/strong&gt;
+&lt;/p&gt;
+
+&lt;p&gt;For some time I&#39;ve been fascinated with the idea of
+reproducing these types of images in my home lab without great cost and with
+relative safety. As a collector of
+radioactive minerals and other ephemera, I decided that I wanted to use
+naturally radioactive materials as the source for my &#39;penetrating rays&#39; rather
+than an amateur electrical x-ray machine setup. Secondly, as a participant in the digital revolution, the whole concept
+of a darkroom with the necessary equipment and development chemicals seemed unwieldy. I knew a digital setup wouldn&#39;t provide any
+results but I didn&#39;t want to invest in a darkroom.&lt;/p&gt;&lt;o:p&gt;&lt;/o:p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;Then it occurred to me: Polaroid! Polaroid film is readily
+available and it develops itself. However, a workable technique needed to be developed. How to expose the film for hours or days
+without the need for absolute darkness? How
+would I develop the film reliably after an exposure was made?&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;p&gt;&lt;o:p&gt;&lt;/o:p&gt;The answer came from Kevin Clark of the Yahoo group,
+&amp;quot;GeigerCounterEnthusiasts&amp;quot;. Most
+of the conversation on this group surrounds the maintenance, repair and collection
+of old civil defense-era radiation detectors. However, there is some list activity on other radiation-related
+topics. It was here that &lt;st1:place w:st=&quot;on&quot;&gt;&lt;/st1:place&gt;Clark explained his simple, yet reliable, technique for
+creating inexpensive Polaradiographs.
+
+&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;strong&gt;Items you&#39;ll need:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+&lt;ol type=&quot;1&quot; start=&quot;1&quot; style=&quot;margin-top: 0in;&quot;&gt;&lt;li class=&quot;MsoNormal&quot;&gt;A
+Polaroid SX-70, Type 600, or Spectra camera&lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt;
+
+&lt;li class=&quot;MsoNormal&quot;&gt;A package
+of unexposed Type 600 or Spectra Polaroid film&lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt;
+
+&lt;li class=&quot;MsoNormal&quot;&gt;One
+metal cookie tin at least six inches in diameter&lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt;
+
+&lt;li class=&quot;MsoNormal&quot;&gt;A few
+sheets/roll of aluminum foil&lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt;
+
+&lt;li class=&quot;MsoNormal&quot;&gt;Radioactive material&lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt;&lt;/ol&gt;
+
+
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;Type 600 or Spectra Polaroid film is easy to find. SX-70 film is discontinued as of 2006 and it
+is also much less sensitive than Type 600 or Spectra. Type 600 is the traditional 3 1/4&amp;quot;
+square film area that everything thinks of when you say
+&amp;quot;Polaroid&amp;quot;. Spectra is a
+slightly larger format which is used in dentistry and law enforcement. You can purchase either type of camera and
+film in any drug store. Alternatively,
+most thrift shops will have an old Polaroid SX-70, Type 600, or Spectra camera
+lying around. If you prefer to shop from
+your home, eBay always has a fine selection. An SX-70 camera can accept Type 600 film with a minor modification.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image004.jpg&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image004.jpg&quot; title=&quot;Image004&quot; alt=&quot;Image004&quot; class=&quot;image-full&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot; class=&quot;MsoCaption&quot; style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Figure 3 – On an SX-70 camera, remove the clips on either
+side (or sometimes in the center) using a screwdriver. When forced, they should simply pop out of
+the plastic mount without being damaged or damaging the film loading area. Do not damage the battery contacts (often
+copper colored). Once removed, the SX-70
+will accept Polaroid Type 600 film. For
+photographic purposes, one must remember that Type 600 is 4 times as sensitive
+to light as SX-70. For this purpose,
+this difference is irrelevant.&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;By browsing the clearance rack in a photo store, you can
+purchase recently expired Polaroid film on the cheap for between $0.25 - $0.40
+per exposure. Very old Polaroid film is
+a bad idea but film expired in the past twelve months is generally fine.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;By the expensive route, you can spend $50 for a new camera and
+roll of film. The cheap route may take a
+little more time and effort, but you can get the job done for less than $5.&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;strong&gt;Setup:&lt;/strong&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;1. Open the Polaroid film and insert it into the camera. &lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;Once the film is inserted and the film door is closed, the
+camera will automatically feed the first item on the film holder through the
+camera. With a new film cartridge, this
+is the cardboard cover that protects the film from exposure to light during the
+loading process. However, it is this
+automatic feed behavior that we can exploit to allow the camera to
+automatically develop the Polaradiographs.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;2. Bring the camera, and the roll of aluminum foil into a
+completely dark room. Wait in this room for 2-3 minutes to allow your eyes to
+adjust. If you see any incoming light,
+use a towel, clothing, or perhaps some modeling clay to plug the hole. The film we are using is ISO 600; not
+ultra-sensitive but even small light leaks can fog the film.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;3. Take a piece of aluminum foil about 18&amp;quot; square and
+lay it on a working surface. Now, open
+the film door on the Polaroid camera and remove the film cartridge. With the cardboard cover removed, the surface
+at the top of the holder is unexposed film. With your fingers, slide each piece of film out of the holder and stack
+them upside-down on the aluminum foil. &lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;4. When you have removed the last piece of film you&#39;ll feel
+the metal spring that pushes the film up to the proper level for exposure. Take
+that last piece of film and remove it. Flip
+it upside-down, and re-insert it into the film holder. Be sure to insert it completely to the end or
+else light leaks will fog the exposure from a small cutout in the upper
+left-hand corner of the film holder.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;5. Use the aluminum foil to seal the remaining film (nine
+exposures) from the light. It is
+sometimes helpful to use a second layer of foil to ensure a perfect light seal. It is also helpful to remember by feel which
+side is film and which side is backing so you’ll be able to load more exposures
+into the film holder in complete darkness.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;margin-left: 0in; text-indent: 0in;&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;6.&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;Now, take another sheet of aluminum foil and wrap the
+film holder with the single exposure. Be
+careful as the aluminum foil tends to tear around the square corners of the
+film holder and you are aiming to achieve a perfect light seal. This allows you to avoid small light leaks
+that exist in the holder even when the film is upside down.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;margin-left: 0in; text-indent: 0in;&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;7. All your film is protected from light so you can open
+the doors or turn on some dim room lighting and get ready to prepare your
+exposure.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;p&gt;&lt;strong&gt;Making An Exposure&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we can prove that certain materials have radioactive
+properties. Here are some objects you
+might want to try:&lt;/p&gt;&lt;o:p&gt;&lt;/o:p&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;- Old,
+unused lantern mantles&lt;o:p&gt;&lt;/o:p&gt;&lt;br /&gt;- Salt
+substitute or certain rock salts (Potassium Chloride)&lt;o:p&gt;&lt;/o:p&gt;&lt;br /&gt;- Vaseline
+glass (plates, cups, or marbles)&lt;o:p&gt;&lt;/o:p&gt;&lt;br /&gt;- Fiestaware
+plates and dishes&lt;o:p&gt;&lt;/o:p&gt;&lt;br /&gt;- Welding rods&lt;o:p&gt;&lt;/o:p&gt;&lt;br /&gt;- Old
+camera lens or vintage prescription eyeglasses &lt;o:p&gt;&lt;/o:p&gt;(look for yellowed
+or browned optical glass)&lt;o:p&gt;&lt;/o:p&gt;&lt;br /&gt;- Uranium
+ores and minerals&lt;o:p&gt;&lt;/o:p&gt;&lt;br /&gt;- Exempt,
+unlicensed radioactive calibration sources&lt;o:p&gt;&lt;/o:p&gt;&lt;br /&gt;- Radium
+containing clocks, watch hands, compasses, dials, and gauges&lt;a href=&quot;#_ftn1&quot; name=&quot;_ftnref1&quot;&gt;&lt;span class=&quot;MsoFootnoteReference&quot;&gt;&lt;span class=&quot;MsoFootnoteReference&quot;&gt;&lt;span style=&quot;font-size: 12pt; font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;[1]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;br /&gt;- Tritium
+gunsights and keychain fobs&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;NOTE: All ionization type smoke detectors contain a tiny
+plating of the radioisotope Americium-241. It is against federal law to tamper with a smoke detector in an attempt
+to expose the radioactive source. No
+usable amount of radioactivity can be detected on film without tampering so
+cross this source off your list. The
+penalties for tampering are severe not to mention the danger you pose to
+yourself and others if you ‘tamper incorrectly’.&lt;o:p&gt;&lt;/o:p&gt;&lt;br /&gt;&lt;br /&gt;In a dark, dim or extremely poorly lit room, unwrap the film
+holder and place it, film side up in the cookie tin. Place your radioactive material directly onto
+the Polaroid film backing and carefully close the tin. Because the inside of the tin is sealed to
+all light, you can allow the film to accumulate a very long exposure without
+fear of fogging.&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a onclick=&quot;window.open(this.href, &#39;_blank&#39;, &#39;width=640,height=426,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot; href=&quot;http://coolstuff.typepad.com/.shared/image.html?/photos/uncategorized/2007/12/29/image006_2.jpg&quot;&gt;&lt;img width=&quot;300&quot; height=&quot;199&quot; border=&quot;0&quot; src=&quot;http://www.omnimatter.com/images/2007/12/29/image006_2.jpg&quot; title=&quot;Image006_2&quot; alt=&quot;Image006_2&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a onclick=&quot;window.open(this.href, &#39;_blank&#39;, &#39;width=640,height=426,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot; href=&quot;http://coolstuff.typepad.com/.shared/image.html?/photos/uncategorized/2007/12/29/image008.jpg&quot;&gt;&lt;img width=&quot;300&quot; height=&quot;199&quot; border=&quot;0&quot; src=&quot;http://www.omnimatter.com/images/2007/12/29/image008.jpg&quot; title=&quot;Image008&quot; alt=&quot;Image008&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;Use the photos in the rest of this article to guide you on
+proper exposure times as they may vary between five minutes, five days, or five
+months. After you’ve made your exposure,
+return to a dark or very dim place, open the cookie tin, remove the radioactive
+material and insert the film holder into the camera. Once the film door closes, the camera should
+feed your photo, upside-down through the development rollers. The camera thinks it is ejecting the
+protective cardboard sheet on a new roll of film when in fact it is ejecting
+and developing your upside-down Polaradiograph. &lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;Depending on your camera and how accurately you loaded the
+film, you will get a perfect or near-perfect development. You may notice subtle repeating dots, lines,
+or streaks which are caused by dirt or dust and the pressure of the rollers and
+rubber nubs as it develops the upside-down film. Bizarre streaks of white or yellowish fogging
+are a result of light leaking into the film cartridge from the upper left hand
+notch or the film’s entry/exit point.&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;p&gt;&lt;strong&gt;&lt;/strong&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 1.2em;&quot;&gt;&lt;a name=&quot;initial&quot;&gt;Initial
+Results&lt;/a&gt;&lt;/span&gt;&lt;/strong&gt;&lt;br /&gt;&lt;br /&gt;Clark and I tested various items. The photographs below also give you a good
+idea of the exposure times you’ll need to get results. In my photos, I was purposefully sloppy in
+shielding my film from fogging. This
+should give you an idea of the useable but imperfect results you’ll get if you
+have limited access to a truly dark space. Many of &lt;st1:place w:st=&quot;on&quot;&gt;&lt;/st1:place&gt;Clark’s photos are taken on
+smaller Polaroid iZone film. This film
+has the same sensitivity (ISO 600) as Type 600 and the exposure times are
+equivalent. Polaroid sheet film offers
+some advantages and disadvantages which you’ll see some on some of the exposures
+below. Polaroid pack film is significantly
+harder to work with than Polaroid Type 600 and offer little additional benefit.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;margin-left: 0.25in; text-indent: -0.25in;&quot;&gt;&lt;strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+
+
+&lt;p align=&quot;center&quot; class=&quot;MsoCaption&quot; style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image010.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image010&quot; title=&quot;Image010&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image010.jpg&quot; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;strong&gt;Figure 4 - Die with radioluminescent
+painted spots&lt;/strong&gt;&lt;strong&gt; / Kevin Clark&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;/p&gt;
+
+
+
+
+
+&lt;p align=&quot;center&quot; class=&quot;MsoCaption&quot; style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image011.jpg&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image011.jpg&quot; title=&quot;Image011&quot; alt=&quot;Image011&quot; class=&quot;image-full&quot; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;strong&gt;Figure 5 - 1 uCi Americium-241 source
+/ Kevin Clark&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image012.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image012&quot; title=&quot;Image012&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image012.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot; class=&quot;MsoCaption&quot; style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Figure 6 - Dice with radioluminescent
+paint on spots / Kevin Clark&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image013.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image013&quot; title=&quot;Image013&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image013.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot; class=&quot;MsoCaption&quot; style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Figure 7 - GE brand alarm clock with
+radium hands and face / Kevin Clark&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image014.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image014&quot; title=&quot;Image014&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image014.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot; class=&quot;MsoCaption&quot; style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Figure 8 - Apollo brand alarm clock
+with radium hands. Glass removed / Kevin
+Clark&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image015.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image015&quot; title=&quot;Image015&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image015.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot; class=&quot;MsoCaption&quot; style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Figure 9 - Thorium-doped gas lantern
+mantle. 7-day exposure / Kevin Clark&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image016.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image016&quot; title=&quot;Image016&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image016.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot; class=&quot;MsoCaption&quot; style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Figure 10 - Meter with radium-doped
+radioluminescent paint. Legend says
+&amp;quot;Setting&amp;quot; / Kevin Clark&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image017.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image017&quot; title=&quot;Image017&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image017.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;MsoCaption&quot;&gt;&lt;strong&gt;Figure 11 – Two strips of depleted
+uranium metal, a single radium watch hand, a Traser (tritium encased in a
+quartz ampule), and Thorium nitrate. Yellow is fogging from ambient light. Brown/white is from radiation exposure. The outline of the baggie containing the thorium nitrate has been
+traced. The baggie is not full and you
+can see the concentration of the nitrate at the bottom of the baggie. The Traser generates extremely weak beta rays
+which are unable to escape the quartz ampule. However, they interact with the quartz to generate more penetrating
+Bremsstrahllung (x-ray) radiation which exposes the film.&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image019.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image019&quot; title=&quot;Image019&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image019.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;strong&gt;Figure 12 - Polaroid 57 sheet
+film. Exposure time 48hr. From top to bottom, left to right: Tritium
+ampule (older), tritium ampule (newer), Vaseline glass marble, Radium tipped
+watch hand, &lt;st1:place w:st=&quot;on&quot;&gt;&lt;st1:placetype w:st=&quot;on&quot;&gt;&lt;/st1:placetype&gt;&lt;/st1:place&gt;&lt;br /&gt;square of Thorium metal,
+depleted Uranium strips.&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;
+
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image021.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image021&quot; title=&quot;Image021&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image021.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot; class=&quot;MsoCaption&quot; style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Figure 13 - Large piece of massive
+Autunite was placed on the surface of the Polaroid 57 film pouch. Exposure time was 48hr. Uranium concentrations not visible from the
+surface of the rock were clearly shown here.&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image023_2.jpg&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image023_2.jpg&quot; title=&quot;Image023_2&quot; alt=&quot;Image023_2&quot; class=&quot;image-full&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot; class=&quot;MsoCaption&quot; style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Figure 14 - Torbernite sample. 24hr exposure time.&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;margin-left: 0.25in; text-indent: -0.25in;&quot;&gt;&lt;strong&gt;&lt;/strong&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 1.2em;&quot;&gt;&lt;a name=&quot;technical&quot;&gt;The Technical Challenges and the Legality of using Radioactive Material&lt;/a&gt;&lt;/span&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/strong&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;While the photos in the previous section show us the power
+of radioactive material to expose film with their invisible rays, the next step
+is to use the radioactive material to penetrate regular objects and reveal
+their innards.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;Using radioactive material is more challenging than using an
+x-ray tube. Building a medium-power,
+home-brew, x-ray generator is fairly straightforward. It can be turned on and off and its energy
+can be directed into a beam. Also, the
+frequency of the radiation can be precisely calculated (which affects
+penetrating ability and film exposure) and the power level can be controlled
+electronically. &lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;Radioactive sources offer none of these advantages. We may only select from a short list of
+unlicensed or exempt (and thus legal to own) radioactive sources which have
+very little power. While a powerful
+x-ray generator can penetrate opaque plastic to reveal electrical components
+(like airport security scanner), unlicensed radiation sources offer less
+penetrating ability. Radioactive
+materials can never be turned off and they emit their radiation in all
+directions. The only way to increase power
+is to find a material with more radioactivity or increase the total amount of radioactive
+material. Lastly, most radioactive
+material emits energy at a variety of frequencies and particle types. Each of
+these varies in penetrating ability.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;It is also important to note that we are not using specialty
+x-ray film but standard Polaroid photo film. Because regular film is tuned to respond to visible light wavelengths
+rather than x-rays, it takes more radioactive energy to create an image. Also, x-ray film used in medical diagnostics
+is black &amp;amp; white and designed to be extremely fine grained so that it
+displays extreme detail and high contrast. Polaroid Type 600 is color film (which decreases resolution), and is not
+particularly sharp in general. This will
+affect the quality of the results when compared with medical x-rays.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;Lastly, we are making contact photographs made by placing an
+object directly onto the film. There are
+no corrective optics to focus the image.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;There are many materials in our daily environment which
+exhibit natural radioactivity and many examples can be found at the excellent
+&lt;a href=&quot;http://www.orau.org/ptp/museumdirectory.htm&quot;&gt;ORAU website&lt;/a&gt; and online museum.&lt;br /&gt;&lt;br /&gt;However, only these materials listed below have enough
+natural radioactivity to penetrate objects:&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt; - Unprocessed
+Uranium ore (autunite, uranitite, tobernite, carnotite and others)&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;- Thorium
+Nitrate, Uranyl Nitrate or other radioactive salts used in lab work&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;- Radium containing
+luminous materials (i.e. watch hands)&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p&gt;- A medical patient who has
+recently received a nuclear medicine procedure (i.e. a cardiac stress test).&lt;/p&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;p&gt;While United States law allows private individuals to
+possess NORM (Naturally Occurring Radioactive Material) and a variety of
+grandfathered items (radium clock faces and watch hands), it is important to
+remember that it is illegal to &lt;em&gt;process&lt;/em&gt;
+radioactive material in the United States without a license. Inquiries to the NRC (Nuclear Regulatory
+Commission) have made clear that &lt;em&gt;processing&lt;/em&gt;
+may mean alteration of the material. If
+you dissolve the paint on a radium watch hand to concentrate or reshape it,
+that is considered processing. If you
+burn old-style lantern mantles to concentrate the ash, that is considered
+processing. The penalties for processing
+nuclear materials without a license are, needless to say, non-trivial. Therefore, it is important to stay within the
+law if you chose to replicate these experiments. NRC regulations can been found &lt;a href=&quot;http://www.nrc.gov/reading-rm/doc-collections/cfr/&quot;&gt;here&lt;/a&gt;. The NRC is extremely conservative in their
+interpretation of these regulations. If
+there is a chance your activity is in violation, they will probably determine
+that it is.&amp;nbsp; If you have a question, simply pick up the phone and give them a call.&amp;nbsp; They can be quite helpful.&lt;/p&gt;&lt;o:p&gt;&lt;/o:p&gt;
+
+
+
+
+
+
+
+&lt;p&gt;&lt;o:p&gt;&lt;/o:p&gt;Given the above rules, a tiny baggie of radium watch hands
+is the most concentrated source of radioactivity that a &lt;st1:country-region w:st=&quot;on&quot;&gt;&lt;st1:place w:st=&quot;on&quot;&gt;&lt;/st1:place&gt;&lt;/st1:country-region&gt;United States resident
+may legally possess without a license. This is the source I use for most of my own Polaradiographs. However, since such a collection is getting
+harder and harder to obtain, one may also make photographs using Uranium ores
+and minerals.&lt;/p&gt; &lt;p&gt;&lt;span style=&quot;font-size: 1.2em;&quot;&gt;&lt;strong&gt;&lt;a name=&quot;safety&quot;&gt;Safety Issues Regarding the use of Radon-Generating Materials&lt;/a&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/strong&gt;&lt;/span&gt;
+
+
+
+&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;When working with radioactive material we want to take
+precautions so that the material is not inhaled or ingested. Often this can be assured by sealing the
+material behind a plastic or lacquer. However, Uranium, Thorium and Radium materials are Radon generating and
+pose unique difficulties.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;All Uranium mined from the Earth consists of three isotopes:
+U-234, U-235, and U-238. Uranium-238 makes up 99.27%. Uranium-235 which is used for nuclear power
+and weapons exists as only 0.72% of natural Uranium. This low percentage of fissile U-235 is why
+Uranium much be &lt;em&gt;enriched&lt;/em&gt; to be useful
+for those purposes. &lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;All three isotopes are radioactive and decay, through a long
+chain of intermediaries, into stable Lead. When Uranium is found in the earth, it exists in equilibrium with these
+intermediaries. When Uranium is mined,
+these intermediaries are removed.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt; &lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot;font-size: 12pt; font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;&lt;p&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image025.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image025&quot; title=&quot;Image025&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image025.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;&lt;/span&gt;
+
+&lt;/p&gt;
+
+&lt;p align=&quot;center&quot; class=&quot;MsoCaption&quot; style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Figure 15 - Decay chain of Uranium-238
+(includes Radium)&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;Radium is created as part of the Uranium decay chain shown in
+Figure 15. What makes it unique is that Radium
+decays to Radon which is a not a solid, but a gas. That gaseous form allows Uranium and Radium
+to spread their radioactivity in a way that other materials can’t. &lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;When a Radium atom decays into Radon gas, it is liberated
+from its surroundings. Whereas
+previously, it may have been bound to the surface of a watch hand, now it is
+able to migrate to the surface and float freely in the air. When this Radon decays, it becomes a
+non-gaseous radioactive material (an atom-sized dust particle) which falls out
+of the air.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;Thus, Radon creates a serious problem of radiation migration
+and contamination. Anything near Uranium
+ore (which contains radium) or Radium itself will become contaminated with a radioactive
+dust that settles out of the air. You
+can attempt to coat your Radium with plastic, lacquers, etc but it won&#39;t work. The Radon gas will, to some extent, find an escape. &lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;So, by staying legal, we are forced to use a material that
+will create some low-level radioactive contamination on work surfaces. Your
+film holders, camera innards, subject material, and even the film itself will
+be coated with very low-level radioactive dust.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;Disposable gloves should be used at all times and you should
+be mindful of cross contamination. If
+you touch any contaminated material, you need to change gloves before you screw
+a container shut or its surface may be contaminated through contact with your
+glove. I highly recommend the use of a
+sensitive alpha/beta/gamma radiation detector to confirm or rule-out suspected
+contamination of your work environment.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;Keep in mind that this level of contamination decreases
+rapidly with time. After the first 48
+hours, the levels of radioactivity in the contaminated materials are only 30%
+over background. By two weeks, they are
+almost undetectable. Nonetheless, the
+importance of cleanliness in the laboratory cannot be overstated. You probably aren’t going to kill yourself by
+being messy and reckless but a messy lab generates messy results.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;Obviously, these experiments should be performed away from
+your living space. The materials used
+should not be used for other purposes after the experiment is complete. Do not use your Polaroid camera for other
+purposes. Do not store food in your
+cookie tin.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;I use gloves to handle the Polaradiographs after they are
+developed. After two weeks, I wash them
+in soap and water to remove any residual dust. In my tests, that has reduced the photographs to background levels and
+made them safe to handle with bare skin. &lt;/p&gt;
+
+
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size: 1.2em;&quot;&gt;&lt;strong&gt;&lt;a name=&quot;seeing&quot;&gt;Seeing Through Things&lt;/a&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/strong&gt;&lt;/span&gt;&lt;br /&gt;&lt;br /&gt;Visibly opaque material which would be transparent to an
+airport x-ray machine are often still opaque to this method because of the
+low-power of the radioactive source. However,
+while materials like bone, rock, and metal will appear as opaque, other mostly
+organic materials such as paper, cardboard, and flesh will appear fairly
+transparent. &lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;To get a nice exposure that is more than a shadow photograph,
+you should focus on composite materials that combine opaque and transparent
+material.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image026.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image026&quot; title=&quot;Image026&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image026.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+
+
+&lt;p align=&quot;center&quot; class=&quot;MsoCaption&quot; style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Figure 16 - Matchbook w/Staple (top
+left), Paperclip (top right), and Lighter (bottom right). Yellow/orange splotches are fogging from ambient
+light. Radium Source placed directly on top of subject matter. Exposure of 16 hours.&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image028.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image028&quot; title=&quot;Image028&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image028.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p class=&quot;MsoCaption&quot;&gt;&lt;strong&gt;Figure 17 – Matchbook with an uneven
+number of matches remaining. Spots are
+from dust specks on the camera’s development rollers. Radium source was suspended 1” above subject
+matter. 1” distance sacrifices sharpness
+for improved even coverage of the entire film surface.&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image030.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image030&quot; title=&quot;Image030&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image030.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;MsoCaption&quot;&gt;&lt;strong&gt;Figure 18 - Keychain flashlight. The radium source was unable to significantly
+penetrate the plastic casing over a 90hr exposure. Source was suspended 1&amp;quot; above subject
+matter. Shadow can be seen lengthening
+away from center of image.&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image032.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image032&quot; title=&quot;Image032&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image032.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;MsoCaption&quot;&gt;&lt;strong&gt;Figure 19 - First attempt. Three dried goldfish with radium source
+1&amp;quot; over surface of subject matter. Eye socket and ribcage of center fish is clearly visible.&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image034.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image034&quot; title=&quot;Image034&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image034.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;MsoCaption&quot;&gt;&lt;strong&gt;Figure 20 – Second attempt. Reduced exposure time as first image was
+overexposed. Radium source was in place
+1” over the film surface. Ribcage, eye
+socket, and other internal features are clearly visible.&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image036.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image036&quot; title=&quot;Image036&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image036.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;p class=&quot;MsoCaption&quot;&gt;&lt;strong&gt;Figure 21 - &lt;/strong&gt;&lt;span style=&quot;color: black;&quot;&gt;&lt;strong&gt;Joseph
+Maria Eder and Eduard Valenta, &lt;em&gt;X-ray study of two goldfish and a saltwater
+fish, 1896. &lt;/em&gt;&lt;em&gt;&lt;span style=&quot;font-style: normal;&quot;&gt;This&lt;/span&gt; &lt;/em&gt;&lt;/strong&gt;&lt;em&gt;&lt;span style=&quot;font-style: normal;&quot;&gt;&lt;strong&gt;photo provides a useful
+comparison of professional work using x-rays to the methods described herein.&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/span&gt;&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image037.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image037&quot; title=&quot;Image037&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image037.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+
+
+&lt;p align=&quot;center&quot; class=&quot;MsoCaption&quot; style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Figure 22 - Mole killed and brought
+home by my cat Q-Tip. Placed on sealed
+film pouch with baggie of radium watch hands over top. Exposure time 48hr. The high water content of the mole prevented
+the radiation from significantly penetrating the mole’s body. No internal structures were revealed. Film is Polaroid 57.&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size: 1.2em;&quot;&gt;&lt;strong&gt;&lt;a name=&quot;exposing&quot;&gt;Exposing film using
+patients of nuclear medicine&lt;/a&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;There are a wide variety of nuclear medicine procedures that
+involve injecting patients with radioactive isotopes such that, after they
+return home, they remain radioactive for some time. This provides an opportunity for normal citizens
+to use patients of nuclear medicine as a radioactive source for exposing film
+and creating Polaradiographs.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;To date, I have attempted to create Polaradiographs using my
+own father who was injected with 44mCi of Tc-99m for a routine cardiac stress
+test. Tc-99m has a half-life of 6 hours
+and is a pure gamma emitter. The energy
+of the Tc-99m gamma is the same as that used in standard medical x-rays and so
+similar equipment can be used to detect Tc-99m’s emissions.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;Approximately 4 hours after his injection his body measured
+20mR/hr at 3ft using my CDV-700 with pancake probe. My Ludlum scintillometer measured 3.3 x 10^4
+counts per second at 3ft. &lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;I taped a Polaroid 57 film pouch to his chest with a
+paperclip, penny, flower, and a few other items between the film and his body.
+He wore this for 16 hours and the film was developed.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;/p&gt;
+
+&lt;p align=&quot;center&quot;&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image039.jpg&quot;&gt;&lt;img border=&quot;0&quot; class=&quot;image-full&quot; alt=&quot;Image039&quot; title=&quot;Image039&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2007/12/29/image039.jpg&quot; /&gt;&lt;/a&gt;
+&lt;/p&gt;
+
+
+
+&lt;p align=&quot;center&quot; class=&quot;MsoCaption&quot; style=&quot;text-align: center;&quot;&gt;&lt;strong&gt;Figure 23 - Scan of Polaroid 57 from
+my father with Photoshop enhanced contrast. The penny and paperclip shadow photographs are visible at the top left. The lower right shows the keychain
+flashlight. The other various shapes and
+images are a result of the film being bent and misshapen during normal body
+movements.&lt;/strong&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;The 16 hour exposure was obviously not enough as the film
+was barely developed. I placed a number
+of other items under his bed sheets and they received a full 8 hour exposure
+but nothing at all was visible on the developed film. &lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;Other isotopes from different tests might provide better
+results. Alternatively, specialized
+x-ray film might be required. More
+research in this area is indicated.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;span style=&quot;font-size: 1.2em;&quot;&gt;&lt;strong&gt;&lt;a name=&quot;appendix&quot;&gt;Appendix&lt;/a&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;margin-left: 101.25pt; text-indent: -47.25pt;&quot;&gt;a.&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;Polaroid 612 Type film – Until recently Polaroid
+manufactured an extremely fast B&amp;amp;W film for recording oscilloscope readings
+and other types of data. Rated at ISO
+20,000, this film has 32 times the sensitivity to light as Type 600. Theoretically, it would reduce and exposure
+time of 16 hours to 30 minutes. As this
+was a specialty film, it was always difficult to find. Even more so now that it has been
+discontinued. I did purchase a few packs
+that expired in May 1992 but they were dried up and did not work. It’s too bad as this would be the perfect
+film for these experiments.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;margin-left: 0.75in;&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;margin-left: 101.25pt; text-indent: -47.25pt;&quot;&gt;b.&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;One can also use an x-ray machine and Polaroid film to
+make Polaradiographs. X-ray usage has
+its own safety procedures, special requirements, and even amateur setups may be
+subject to state regulations. For
+example photos and description of a different technique, see &lt;a href=&quot;http://www.noah.org/science/x-ray/polaroid/index.html&quot;&gt;here&lt;/a&gt;. &lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;margin-left: 101.25pt; text-indent: -47.25pt;&quot;&gt;c.&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;Polaroid 4x5 sheet film is available in light-tight
+paper pouches that contain a single sheet of film. The radioactive material can be placed
+directly on the surface in bright daylight without a fear of light leaks or preparation
+in dark space. Polaroid Type 57 film is
+an ISO 3000 B&amp;amp;W film that provides a five times increased sensitivity to
+radiation over the ISO 600 films. It is
+expensive at around $3.00 per exposure and is only available for purchase in
+packs of 20 sheets. It also requires a
+Polaroid 545 film holder to process and develop the film. This holder can be purchased used on eBay for
+around $50. The film can be purchased
+from B&amp;amp;H Photo Video or other online camera retailer.&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&amp;nbsp;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;margin-left: 101.25pt; text-indent: -47.25pt;&quot;&gt;d.&lt;span style=&quot;font-family: &amp;quot;Times New Roman&amp;quot;; font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal;&quot;&gt;&amp;nbsp;&lt;/span&gt;I have no professional training in this area so I’m
+sure there are many improvements, ideas, and suggestions that I am
+missing. I welcome your ideas and
+input. Let me hear from you. Please email me at &lt;a href=&quot;mailto:aaron@muderick.com&quot;&gt;aaron@muderick.com&lt;/a&gt; and please use the word
+Polaradiograph in the subject line. Thanks!&lt;o:p&gt;&lt;/o:p&gt;&lt;o:p&gt;&lt;/o:p&gt; &lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;margin-left: 101.25pt; text-indent: -47.25pt;&quot;&gt;&lt;/p&gt;
+
+
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;div&gt;
+
+&lt;hr width=&quot;33%&quot; align=&quot;left&quot; style=&quot;font-size: 0.6em;&quot; /&gt;
+
+
+
+&lt;div id=&quot;ftn1&quot;&gt;
+
+
+
+&lt;p&gt;&lt;a href=&quot;#_ftnref1&quot; name=&quot;_ftn1&quot;&gt;&lt;span class=&quot;MsoFootnoteReference&quot;&gt;&lt;span class=&quot;MsoFootnoteReference&quot;&gt;&lt;span style=&quot;font-size: 10pt; font-family: &amp;quot;Times New Roman&amp;quot;;&quot;&gt;[1]&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/a&gt; As of
+2007, all of these items are exempt from licensing in the &lt;st1:country-region w:st=&quot;on&quot;&gt;&lt;st1:place w:st=&quot;on&quot;&gt;&lt;/st1:place&gt;&lt;/st1:country-region&gt;United States by the NRC (Nuclear Regulatory Commission) and may be possessed, sold, and
+transferred legally. However, new NRC
+guidelines being considered at the time of this writing propose to limit the
+ownership/transfer of certain quantities of these materials. Before engaging in the purchase or transfer
+of these items, please check all current laws and regulations for your
+jurisdiction (state and federal).&lt;o:p&gt;&lt;/o:p&gt;
+
+&lt;/p&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+
+&lt;p class=&quot;MsoNormal&quot; style=&quot;margin-left: 0in; text-indent: 0in;&quot;&gt; &lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+
+
+&lt;p class=&quot;MsoNormal&quot;&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+
+</content:encoded>
+
+<dc:subject>Science</dc:subject>
+
+<dc:creator>Aaron Muderick</dc:creator>
+<dc:date>2007-12-29T21:17:21-08:00</dc:date>
+</item>
+<item rdf:about="http://www.omnimatter.com/2007/11/unrealized-arch.html">
+<title>Unrealized Architecture and the Skyline of Tomorrow</title>
+<link>http://www.omnimatter.com/2007/11/unrealized-arch.html</link>
+<description>A city skyline captures the lives of millions on the back of a postcard. In the past, our structures symbolized, perhaps, an attempt to reach towards the heavens. Today, skyscrapers remind us of the massive egos of their builders. The...</description>
+<content:encoded>&lt;p&gt;&lt;a href=&quot;http://coolstuff.typepad.com/.shared/image.html?/photos/uncategorized/2007/11/08/speercapitol.jpg&quot; onclick=&quot;window.open(this.href, &#39;_blank&#39;, &#39;width=640,height=366,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot;&gt;&lt;img width=&quot;250&quot; hspace=&quot;10&quot; height=&quot;142&quot; border=&quot;0&quot; src=&quot;http://www.omnimatter.com/images/2007/11/08/speercapitol.jpg&quot; alt=&quot;Speercapitol&quot; title=&quot;Speercapitol&quot; style=&quot;margin: 0px 5px 5px 0px; float: left;&quot; /&gt;&lt;/a&gt; A city skyline captures the lives of millions on the back of a postcard. In the past, our structures symbolized, perhaps, an attempt to reach towards the heavens.&amp;nbsp; Today, skyscrapers remind us of the massive egos of their builders.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;The world&#39;s greatest buildings are instantly recognizable and so the development of a memorable skyline puts one&#39;s city on the world stage.&amp;nbsp; But, just as a skyline shows us what a civilization has accomplished, so its &lt;a href=&quot;http://archrecord.construction.com/innovation/2_Features/0411history.asp&quot;&gt;unrealized architecture&lt;/a&gt; shows us an ideological vision unfettered by reality.&lt;/p&gt;&lt;p&gt;The design of imaginary and fantastical structures is probably where every architect begins. They doodle and explore the possibilities of imagination.&amp;nbsp; Over time the designer accepts constraints: economics, safety, usability, and the laws of physics.&amp;nbsp; While a modern building&#39;s steel and glass are immensly flexible, they are not unbounded.&amp;nbsp; A real architect combines vision with craft and the skill of building real things.&amp;nbsp; Then, an architect learns to express his vision in terms of what people are willing to pay to build.&amp;nbsp; Perhaps after achieving professional success, the desire to be fantastical may again rear its head.&lt;/p&gt;
+
+&lt;p&gt;While the World Trade Center&#39;s twin towers in New York City were 1368 feet in height, Frank Lloyd Wright envisioned a truly monstrous structure. To be called &lt;a href=&quot;http://www.delmars.com/wright/flw7a.htm&quot;&gt;The Illinois&lt;/a&gt;, it was a mile-high skyscraper.&amp;nbsp; By design it would reach well above Chicago&#39;s clouds some 5280 feet into the air.&amp;nbsp; Completely feasible structurally, Wright envisioned 100,000 people working within the Illinois&#39;s 528 stories of aluminum, glass and steel.&amp;nbsp; Ultimately the concept was rejected for the same reason that other supertall structures have not be built: the amount of floorplan that would be needed for elevators quickly crowds out the usable space.&amp;nbsp; You would have a mile-high building comprised entirely of elevators and elevator support systems.&amp;nbsp; This problem remains unsolved.&amp;nbsp; Perhaps in the future someone will build The Illinois.&lt;/p&gt;
+
+&lt;p&gt;Totalitarian states with controlled economies offer unique opportunities to meld grandious architectural plans with strict political ideologies.&amp;nbsp; Perhaps most well known are the plans which Hitler directed &lt;a href=&quot;http://en.wikipedia.org/wiki/Albert_Speer&quot;&gt;Albert Speer&lt;/a&gt; to develop for Berlin after Germany&#39;s victory in the Second World War. His plans for the victorious capital of new Germania included the demolition of over 80,000 buildings to construct a parkway leading from the Brandenburg Gate to the &lt;a href=&quot;http://en.wikipedia.org/wiki/Volkshalle&quot;&gt;Volkshalle&lt;/a&gt;.&amp;nbsp; Housing an enormous dome modelled on the Roman Pantheon, it was designed to be 1000 feet high with a diameter of 800 feet. It would house a crowd of 180,000 listeners rapt with the Furher&#39;s oratory.&amp;nbsp; Of course, the Allies had other plans for Germany.&lt;/p&gt;
+
+&lt;p&gt;The Soviet Union also sought out massive architecture to showcase its ideology and power as a nation.&amp;nbsp; The &lt;a href=&quot;http://www.muar.ru/ve/2003/moscow/index_e.htm&quot;&gt;plans for Moscow&lt;/a&gt; included &lt;a href=&quot;http://en.wikipedia.org/wiki/Palace_of_Soviets&quot;&gt;The Palace of the Soviets&lt;/a&gt;.&amp;nbsp; To be constructed over a demolished church, this massive complex was designed to house over 20,000 spectators with a pinnacle reaching 1360 feet into the sky.&amp;nbsp; The tower was to act as a base for a 330 foot statue of Lenin.&amp;nbsp; Construction was well underway when World War II interfered.&amp;nbsp; As the war on the Eastern Front took its toll, the building was abandoned and then deconstructed to put its steel to use in bridges and industry.&lt;/p&gt;
+
+&lt;p&gt;Today, North Korea is a brutal totalitarian dictatorship and so it is no surprise it has unrealized architecture motivated by its political ideology.&amp;nbsp; Pyongyang&#39;s &lt;a href=&quot;http://theshapeofdays.com/2004/09/the_ryugyong_ho.html&quot;&gt;Ryugyong Hotel&lt;/a&gt; sits in a permanent &lt;a href=&quot;http://en.wikipedia.org/wiki/Ryugyong_Hotel&quot;&gt;state of incompletion&lt;/a&gt;.&amp;nbsp; Trapped in a purgatory between existence and imagination.&amp;nbsp; It sits frozen by political hubris, incompetent management of the country&#39;s economy, and engineering mayhem.&lt;/p&gt;
+
+&lt;p&gt;Despite these fantasies, massive architecture does exist and is often realized.&amp;nbsp; After a 30 year lull in the race to host the tallest, most magnificent skyscrapers, construction has begun anew.&amp;nbsp; And, whereas in the 20th century the prestigious towers were found in the United States, today they sprout on Arabian Peninsula and throughout Southeast Asia.&amp;nbsp; Countries, businessmen, and political leaders vye for status with incredible structures they&#39;ve asked their &lt;a href=&quot;http://skyscraperpage.com/diagrams/?2063133&quot;&gt;builders to realize&lt;/a&gt;.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;Which is more stimulating to the imagination, the unrealized structures of the past or the skyline of tomorrow?&lt;/p&gt;</content:encoded>
+
+<dc:subject>History</dc:subject>
+
+<dc:creator>Aaron Muderick</dc:creator>
+<dc:date>2007-11-08T18:33:27-08:00</dc:date>
+</item>
+<item rdf:about="http://www.omnimatter.com/2006/08/rediscover_pola.html">
+<title>Rediscover Polaroid</title>
+<link>http://www.omnimatter.com/2006/08/rediscover_pola.html</link>
+<description>In our era of five megapixel camera phones, ceaseless Kodak downsizing, and the discontinuation of most film cameras, it would seem that silver halide photography has taken up residence with typewriters as curiosities of the 20th century. For a photographer,...</description>
+<content:encoded>&lt;p&gt;&lt;a onclick=&quot;window.open(this.href, &#39;_blank&#39;, &#39;width=180,height=215,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot; href=&quot;http://coolstuff.typepad.com/.shared/image.html?/photos/uncategorized/wow_1.jpg&quot;&gt;&lt;img title=&quot;Wow_1&quot; height=&quot;215&quot; alt=&quot;Wow_1&quot; src=&quot;http://www.omnimatter.com/images/wow_1.jpg&quot; width=&quot;180&quot; border=&quot;0&quot; style=&quot;FLOAT: right; MARGIN: 0px 10px 5px&quot; /&gt;&lt;/a&gt; In our era of five megapixel &lt;a href=&quot;http://www.samsung.com/PressCenter/PressRelease/PressRelease.asp?seq=20041020_0000074352&quot;&gt;camera phones&lt;/a&gt;, ceaseless &lt;a href=&quot;http://news.com.com/Facing+digital+realities,+Kodak+to+trim+staff/2100-1047_3-5145259.html&quot;&gt;Kodak downsizing&lt;/a&gt;, and the &lt;a href=&quot;http://www.nikon.co.uk/press_room/releases/show.aspx?rid=201&quot;&gt;discontinuation&lt;/a&gt; of most film cameras, it would seem that silver halide photography has taken up residence with typewriters as curiosities of the 20th century.&amp;nbsp; For a photographer, the digital revolution opens possibilities of technique and experimentation unavailable to all but the most accomplished professional photographers of years past.&lt;/p&gt;
+
+&lt;p&gt;Yet, there is something missing in the perfection of digital images and the creative control of Adobe Photoshop.&amp;nbsp; When image processing was new, &#39;overprocessed&#39; was a style en vogue.&amp;nbsp; Like all new techniques, it had its hour of fashion.&amp;nbsp; Today, it is tiresome.&amp;nbsp; The image inside the picture has lost all nuance.&amp;nbsp; More often than not, digital photos are &#39;even better than the real thing&#39;.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;Within the photographic artist is the desire for subtle imperfection; the same desire that drives audiophiles towards vinyl records and &lt;a href=&quot;http://en.wikipedia.org/wiki/Valve_sound&quot;&gt;vacuum tube amplifiers&lt;/a&gt;.&amp;nbsp; Analog images enhance the human emotional experience because they accurately record the imperfection of the real world.&lt;/p&gt;
+
+&lt;p&gt;So, what is a photographer to do?&amp;nbsp; Shooting film offers a century of experiments in style, composition, technique, and &lt;a href=&quot;http://www.rit.edu/~andpph/text-coffee.html&quot;&gt;alternative chemistries&lt;/a&gt;. However, film has one big detraction; a downside that the digital revolution has steamrolled past in the 21st century: the turnaround between taking the picture and having it developed.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;Every film photographer will tell you about the shots they lost because the lens cap was on, the film was bad, the camera setting was incorrect, or their own technique was mistaken.&amp;nbsp; In the film era, one only found out about these critical mistakes days or weeks later when the film was developed and processed.&amp;nbsp; By this time, the shot was lost forever.&amp;nbsp; Digital changed all of this with the tiny video screen on the back of each camera.&lt;/p&gt;
+
+&lt;p&gt;However, the inventors of the digital camera were not the first to solve this problem of image turnaround.&amp;nbsp; In 1947, a Harvard dropout was driven to invent by the impatience of his three year old daughter: &amp;quot;Daddy, why can&#39;t I see my pictures NOW!&amp;quot;.&amp;nbsp; His name was &lt;a href=&quot;http://en.wikipedia.org/wiki/Edwin_Land&quot;&gt;Edwin Land&lt;/a&gt; and his company was &lt;a href=&quot;http://www.polaroid.com/us/index.jsp&quot;&gt;Polaroid&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Today most people think of Polaroid photos as a novelty item.&amp;nbsp; A Polaroid captures attention but many people consider its pictures to be of low quality.&amp;nbsp; This is unfortunate because, as a professional photographers know, the Polaroid product line extends well beyond the average film and low-quality cameras carried in the drugstore.&amp;nbsp; Few know that &lt;a href=&quot;http://www.polaroid.com/studio/exhibit/adams/index.html&quot;&gt;Ansel Adams&lt;/a&gt;, perhaps the most popular landscape photographer of the 20th century, used Polaroid film for many of his &lt;a href=&quot;http://www.allposters.com/gallery.asp?aid=627087&amp;amp;item=308655&quot;&gt;most famous shots&lt;/a&gt;.&amp;nbsp; In fact, Adams&#39; photography would not have been possible without a Polaroid film that gave him the ability to proof each shot in the field as it was taken.&amp;nbsp; Many &lt;a href=&quot;http://www.polaroid.com/studio/artists/index.html&quot;&gt;other artists&lt;/a&gt; used Polaroid exclusively for the its unique properties and singular quality. &lt;/p&gt;
+
+&lt;p&gt;The association of Polaroid with novelty is also unfortunate because gently used, very high quality cameras are available at low cost; often lower than the cost of a single pack of film.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;In the transition from digital back to film one becomes a better artist.&amp;nbsp; Being aware of film&#39;s per shot costs makes for a better photographer.&amp;nbsp; Instead of popping off bad shots, one after another, you begin to think, &amp;quot;Is this picture worth $0.50?&amp;nbsp; Am I taking the time to compose it properly?&amp;nbsp; Am I standing in the right place?&amp;nbsp; Am I waiting for the right moment?&amp;quot;&amp;nbsp; While you have something to lose, you also have something to gain.&lt;/p&gt;
+
+&lt;p&gt;Most Polaroids also offer something that has become rare in our commodified, digital world; something even traditional film cannot deliver: a &lt;a href=&quot;http://www.polanoir.net/&quot;&gt;one of a kind&lt;/a&gt; artifact.&amp;nbsp; A film negative can be printed again and again.&amp;nbsp; By definition, a copy of a digital photograph is identical to the original.&amp;nbsp; A Polaroid print is unique. The copy of a Polaroid is similar to a print of a lithograph, an imperfect reproduction.&lt;/p&gt;
+
+&lt;p&gt;Different Polaroid camera and films will excite a photographer depending on their particular &lt;a href=&quot;http://www.polanoid.net/&quot;&gt;style and interests&lt;/a&gt;.&amp;nbsp; Instant films are made by Polaroid and Fujifilm and fall into four basic types.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Basic Categories of Instant Film&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;B&amp;amp;W&lt;br /&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://www.flickr.com/search/?q=polaroid+667&amp;amp;m=text&quot;&gt;Polaroid 667, Fuji FP-3000B, Polaroid 57&lt;/a&gt;: This is a very high speed film (ISO 3000) without detractable grain and a nice tonal quality.&amp;nbsp; Because of its high speed, one can shoot in ambient light in almost any situation and not need to resort to flash photography.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://www.flickr.com/search/?q=polaroid+52&amp;amp;m=text&quot;&gt;Polaroid 52&lt;/a&gt;: A unique tonal response and very wide dynamic range makes this film unique.&amp;nbsp; It was a favorite of Ansel Adams and many other artists.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://www.polaroid.com/prophoto/sorter.jsp?FOLDER%3C%3Efolder_id=2534374302023765&amp;amp;bmUID=1156740985121&amp;amp;bmLocale=en_US&quot;&gt;Polaroid 665, 55&lt;/a&gt;: This film delivers both a print and a large format negative (though generally not at the same time).&amp;nbsp; This film is a favorite of Annie Leibovitz for its instant results and opportunities for extreme enlargement.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+
+&lt;ul&gt;&lt;li&gt;Sepia&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://www.polaroid.com/prophoto/sorter.jsp?FOLDER%3C%3Efolder_id=2534374302023769&amp;amp;PRODUCT%3C%3Eprd_id=845524441763751&amp;amp;bmUID=1156741083672&amp;amp;bmLocale=en_US&quot;&gt;Polaroid 56&lt;/a&gt;: Produces instant sepia-toned prints that provide a unique look.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+
+&lt;ul&gt;&lt;li&gt;Color&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://www.polaroid.com/prophoto/sorter.jsp?FOLDER%3C%3Efolder_id=2534374302023771&amp;amp;PRODUCT%3C%3Eprd_id=845524441763751&amp;amp;bmUID=1156741269862&amp;amp;bmLocale=en_US&quot;&gt;600, 779, and Spectra&lt;/a&gt;: The classic plastic encased Polaroid film.&amp;nbsp; The 779 and Spectra films provide a more vibrant and sharper image than the 600 film you&#39;ll find in the drug store.&amp;nbsp; All of the integral films can be used for &lt;a href=&quot;http://www.jbschilling.com/sx70.html&quot;&gt;image manipulation&lt;/a&gt;, i.e. using blunt objects to move the liquid film products around inside the plastic during development to create a very unique look.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://www.flickr.com/search/?q=polaroid+669&quot;&gt;Polaroid 669&lt;/a&gt;: A color film that is amenable to &lt;a href=&quot;http://www.polaroid.com/prophoto/sorter.jsp?FOLDER%3C%3Efolder_id=2534374302023764&amp;amp;PRODUCT%3C%3Eprd_id=845524441763751&amp;amp;bmUID=1156741474314&amp;amp;bmLocale=en_US&quot;&gt;image transfer&lt;/a&gt; and &lt;a href=&quot;http://www.polaroid.com/prophoto/sorter.jsp?FOLDER%3C%3Efolder_id=2534374302023766&amp;amp;PRODUCT%3C%3Eprd_id=845524441763751&amp;amp;bmUID=1156741298826&amp;amp;bmLocale=en_US&quot;&gt;emulsion lift&lt;/a&gt;, i.e. lifting the image off of the print and placing it onto metal, plastic, specialty papers or other surfaces.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://www.flickr.com/search/?q=polaroid+690&amp;amp;m=text&quot;&gt;Polaroid 690, Fuji FP100-C, etc&lt;/a&gt;: Very sharp and vivid instant color without the plastic of integral films.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://www.flickr.com/search/?q=instax&amp;amp;m=text&quot;&gt;Fuji Instax&lt;/a&gt; : Also known as Polaroid mio, this film is no longer available in the USA.&amp;nbsp; It can be purchased in Canada and online.&amp;nbsp; It is a color integral film like Type 600 but its prints are the size of a credit card and fit perfectly in any wallet.&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;The Packaging of Instant Film&lt;/strong&gt; &lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://shopus.polaroid.com/shop/public/search/dsp_quick_search_results.cfm?category_code_id=626&amp;amp;subcategory=B01&quot;&gt;Integral Film&lt;/a&gt; - This is the icon of Polaroid.&amp;nbsp; You press a button and a picture is ejected from the front of the camera.&amp;nbsp; The picture then develops before your eyes.&amp;nbsp; It has a white bar on the bottom and is encased in plastic.&amp;nbsp; The image size ranges from credit card size through 3.6&amp;quot; x 2.9&amp;quot;.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://shopus.polaroid.com/shop/public/search/dsp_quick_search_results.cfm?category_code_id=626&amp;amp;subcategory=B06&quot;&gt;Pack Film&lt;/a&gt; - This film type is also known as &#39;peel-apart&#39; instant film because one removes it from the camera, waits a specified development time, and then peels apart two sheets to retrieve the finished picture.&amp;nbsp; This type of film is not encased in plastic and the print is not immediately recognized as a Polaroid.&amp;nbsp; The image size is 3 1/4&amp;quot; x 4 1/4&amp;quot;.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://shopus.polaroid.com/shop/public/search/dsp_quick_search_results.cfm?category_code_id=626&amp;amp;subcategory=B04&quot;&gt;Sheet Film&lt;/a&gt; - This film type is very similar to the pack film in that it is &#39;peel-apart&#39;.&amp;nbsp; However, instead of coming in packs of 10 exposures, each sheet is loaded separately.&amp;nbsp; This allows a photographer to use removable back cameras and choose the film type (Polaroid, negative, slide, color, B&amp;amp;W) for each exposure.&amp;nbsp; The image size is either 4&amp;quot; x 5&amp;quot; or &lt;a href=&quot;http://shopus.polaroid.com/shop/public/search/dsp_quick_search_results.cfm?category_code_id=626&amp;amp;subcategory=B05&quot;&gt;8&amp;quot; x 10&amp;quot;&lt;/a&gt;.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://www.polaroid.com/studio/20x24/index.html&quot;&gt;Huge Sheet Film&lt;/a&gt; - This film is special order and you will never use it.&amp;nbsp; It is available in a number different sizes as large as &lt;a href=&quot;http://www.washingtonpost.com/wp-srv/photo/essays/vanRiper/011120.htm&quot;&gt;3.5 ft across by 9 ft high&lt;/a&gt;.&amp;nbsp; It is used in a few special cameras around the world for studio portraiture.&amp;nbsp; The print quality is pretty incredible and needs to be seen in person.&amp;nbsp; If you pay attention, you can find one at a traveling museum exhibit near you.&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;Whatever film you choose to use, expense is an issue.&amp;nbsp; Search online for the best prices.&amp;nbsp; Drug stores and local camera shops have the worst pricing.&amp;nbsp; However, you can check out local camera shops and ask for expired film.&amp;nbsp; Expired B&amp;amp;W film often shows no signs of aging.&amp;nbsp; Expired color film sometimes has shifts in the hue of developed prints.&amp;nbsp; Depending on your technique, this may or may not be desirable.&amp;nbsp; Generally you can purchase expired film at 60-70% off the retail price.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Recommended Cameras for Shooting Polaroid Film&lt;br /&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;http://www.rwhirled.com/landlist/landdcam-sx70.htm#SX70&quot;&gt;SX-70&lt;/a&gt;: This was the original integral film camera and it is still very popular today.&amp;nbsp; An original, leather bound SX-70 may cost between $50-100.&amp;nbsp; A later model, sans leather and sometimes with sonar autofocus, can cost as little as $5.&amp;nbsp; The original SX-70 film has been discontinued but for about $10 you can modify this camera to shoot the Type 600 Polaroid film found in most drug stores.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://www.rwhirled.com/landlist/landdcam-spec.htm#Spectra&quot;&gt;Spectra 1200 or Spectra Onyx&lt;/a&gt;: These are higher end cameras than the Type 600 models sold in most drug stores.&amp;nbsp; They were originally designed for law enforcement and medical documentation.&amp;nbsp; The film they use is sharper and more vibrant that Type 600 models.&amp;nbsp; Many drug stores do carry this film.&amp;nbsp; These cameras offer a number of creative options including control over exposure, flash, and focus.&amp;nbsp; Also there are a number of inexpensive accessories including a close-up kit (not macro), copy stand (1:1 macro), color and special effects filters.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://www.rwhirled.com/landlist/landdcam-pack.htm#360&quot;&gt;Polaroid 360&lt;/a&gt;: This camera shoots all Polaroid pack film including the recently discontinued Polaroid 8x square film format.&amp;nbsp; With a glass lens, leather bellows, integral electronic development timer and removeable electronic flash with exposure compensation, this camera was the top of the line when it was introduced in 1969.&amp;nbsp; In today&#39;s dollars it would have sold for $1000.&amp;nbsp; It can be purchased today for between $5 and $30 depending on condition and included accessories.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://www.polaroid.com/global/detail.jsp?PRODUCT%3C%3Eprd_id=845524441761656&amp;amp;FOLDER%3C%3Efolder_id=282574488338434&quot;&gt;Medium Format Camera&lt;/a&gt; : &lt;a href=&quot;http://www.bhphotovideo.com/bnh/controller/home?ci=1&amp;amp;sb=ps&amp;amp;pn=1&amp;amp;sq=desc&amp;amp;InitialSearch=yes&amp;amp;O=RootPage.jsp&amp;amp;A=search&amp;amp;Q=*&amp;amp;bhs=t&amp;amp;shs=polaroid+back&amp;amp;image.x=0&amp;amp;image.y=0&quot;&gt;Polaroid backs&lt;/a&gt; are available for most medium format cameras.&amp;nbsp; These allow you to shoot pack film as well as all of the 4 x 5 sheet film with your existing camera and lenses.&amp;nbsp; Also, if you are shooting medium format film, there are Polaroid films designed to match the response of B&amp;amp;W, color negative, and slide film.&amp;nbsp; Shoot Polaroid as your test shot, check it, and then load your traditional film and be assured the exposure, composition, and look of your shot is correct.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href=&quot;http://www.largeformatphotography.info/&quot;&gt;Large Format Camera&lt;/a&gt; : A 4 x 5 large format camera such as the &lt;a href=&quot;http://www.graflex.org/&quot;&gt;Graflex Graphic series&lt;/a&gt; allows you to use Polaroid sheet film.&amp;nbsp; Usable cameras can be found at $50 and up.&amp;nbsp; Being large format, these cameras generally offer &lt;a href=&quot;http://www.imagedancer.com/view_camera_movements.htm&quot;&gt;movements&lt;/a&gt;. This, in itself, is interesting and Polaroid film allows for a quick turnaround between exposure and print that are essential for learning to use this type of camera effectively.&lt;/li&gt;&lt;/ul&gt;
+
+&lt;p&gt;Instant photography provides the immediate results we expect in the digital age while offering all of the unique benefits that artists expect from traditional film media.&amp;nbsp; Give it a try.&amp;nbsp; You&#39;ll be hooked.&lt;/p&gt;</content:encoded>
+
+<dc:subject>Art</dc:subject>
+
+<dc:creator>Aaron Muderick</dc:creator>
+<dc:date>2006-08-27T22:22:37-07:00</dc:date>
+</item>
+<item rdf:about="http://www.omnimatter.com/2006/02/happy_birthday_.html">
+<title>Happy Birthday To You</title>
+<link>http://www.omnimatter.com/2006/02/happy_birthday_.html</link>
+<description>“Happy Birthday To You” is perhaps the most recognizable and well-known song across the English-speaking world. Many of us learned to sing this tune in different languages as children. In China, Japan, and Argentina, they sing Happy Birthday. If you...</description>
+<content:encoded>&lt;p&gt;&lt;span style=&quot;COLOR: black; FONT-FAMILY: &amp;quot;Trebuchet MS&amp;quot;&quot;&gt;&lt;a onclick=&quot;window.open(this.href, &#39;_blank&#39;, &#39;width=640,height=480,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot; href=&quot;http://coolstuff.typepad.com/.shared/image.html?/photos/uncategorized/birthday20cake.jpg&quot;&gt;&lt;img title=&quot;Birthday20cake&quot; height=&quot;112&quot; alt=&quot;Birthday20cake&quot; src=&quot;http://www.omnimatter.com/images/birthday20cake.jpg&quot; width=&quot;150&quot; border=&quot;0&quot; style=&quot;FLOAT: left; MARGIN: 0px 5px 5px 0px&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://12121.hostinguk.com/birthday.htm&quot;&gt; “Happy Birthday To You”&lt;/a&gt; is perhaps the most recognizable and well-known song across the English-speaking world.&lt;span style=&quot;mso-spacerun: yes&quot;&gt;&amp;nbsp; &lt;/span&gt;Many of us learned to sing this tune in different languages as children.&lt;span style=&quot;mso-spacerun: yes&quot;&gt;&amp;nbsp; In China, Japan, and Argentina, they sing Happy Birthday.&amp;nbsp; &lt;/span&gt;If you are connected to Western culture, even remotely, you’ve heard this song before.&amp;nbsp; Many musicologists consider it to be the most popular song in the world.&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;COLOR: black; FONT-FAMILY: &amp;quot;Trebuchet MS&amp;quot;&quot;&gt;If that&#39;s the case, why don&#39;t TV characters sing “Happy Birthday” like you would at home? Ever wonder why each chain restaurant makes up its own birthday tune?&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;COLOR: black; FONT-FAMILY: &amp;quot;Trebuchet MS&amp;quot;&quot;&gt;The reason is simple: though the song was written in 1893 it remains under copyright.&lt;span style=&quot;mso-spacerun: yes&quot;&gt;&amp;nbsp; All &lt;/span&gt;public performance or use in commerical entertainment requires the performer to pay a fee to the copyright owner.&lt;span style=&quot;mso-spacerun: yes&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;p&gt;“Happy Birthday To You” was written by Mildred J Hill and Patty Smith Hill, sisters from Louisville, Kentucky.&amp;nbsp; Patty was a kindergarten teacher and notable figure in education.&amp;nbsp; She taught students but also served on the faculty at Columbia University’s Teachers College.&amp;nbsp; Mildred, although also a school teacher, had considerable musical experience.&amp;nbsp; In 1893, Mildred was teaching kindergarten at the Louisville Experimental Kindergarten School where her sister, Patty, served as principal.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;After what must have been several nights burning the midnight oil in a creative fervor, the modest six-note melody had been completed.&amp;nbsp; Albeit, with alternate lyrics:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Good morning to you,&lt;br /&gt;Good morning to you,&lt;br /&gt;Good morning, dear children,&lt;br /&gt;Good morning to all.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Although written for teachers to sing to their students, the reverse seemed more popular.&amp;nbsp; The song became a modest success with children after having been published in the 1893 songbook, “Song Stories for the Kindergarten”.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;At some point between 1893 and 1924, an unknown individual wrote the modern lyrics to the song and then the tune began to really catch on.&amp;nbsp; In 1924, a songbook edited by Robert H Coleman put the Happy Birthday lyrics to paper for the first time.&amp;nbsp; By the mid-1930’s the song was etched into American culture.&amp;nbsp; It had become the popular song of birthday celebrations.&amp;nbsp; There is record of it appearing in Broadway musicals.&amp;nbsp; It was even used for Western Union’s first ‘singing telegram’.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;In 1934, Jessica Hill, sister of Mildred and Patty, decided to protect her family’s creation.&amp;nbsp; She presented evidence to the court that “Happy Birthday To You” used the melody her sisters had written for “Good Morning To All”.&amp;nbsp; The court agreed and a copyright was granted for the melody.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;By the law in force at the time, the copyright was to expire 56 years later.&amp;nbsp; In 1976, the entertainment industry feared that music, novels, and other creative works from the beginning of the century would enter the public domain.&amp;nbsp; In response, Congress passed the Copyright Act of 1976 which extended all copyrights.&amp;nbsp; Then in 1998, when the song, and other creative works of that era, were again to become public domain, Congress acted again.&amp;nbsp; The Copyright Act of 1998 extended the song’s protection through 2030.&lt;/p&gt;
+
+&lt;p&gt;If we leave arguments about an infinitely extendable copyright aside, we come to questions inquiring minds are asking.&amp;nbsp; How much money do the licensing rights for “Happy Birthday To You” generate?&amp;nbsp; How gets that money?&amp;nbsp; What it is used for?&lt;/p&gt;
+
+&lt;p&gt;Milred and Patty shared their copyright with a record label that eventually became Time-Warner music.&amp;nbsp; Mildred died in 1916 and Patty passed away in 1946.&amp;nbsp; Both were unmarried and childless so they bequeathed their copyright into a foundation and left its control to their nephew Archibald Hill.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;The song has been an incredible cash cow.&amp;nbsp; Its use in a single major motion picture can generate $50,000.&amp;nbsp; In 1996, Time-Warner Music estimated the song&#39;s revenue at $2 million a year.&lt;/p&gt;
+
+&lt;p&gt;Hill, the heir, was a linguistics professor who managed the income from the copyright through the Hill Foundation.&amp;nbsp; As his aunts had intended, most of the money went to education: either to enlarge the linguistics library at his university, support research into educational practices, or to grant scholarships to children.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;When he died in 1992, he willed ownership of his own personal assets to his nurse, Muriel Wright and control of the Hill Foundation to the Maryland-based non-profit, the Association for Childhood Education International.&amp;nbsp; Fourteen years later though, the Maryland-based foundation claims they have yet to receive any money for their share of the copyright.&amp;nbsp; Lawsuits have been filed and they aren&#39;t fighting over chump change.&amp;nbsp; The value of back payments could exceed $20 million.&lt;/p&gt;
+
+&lt;p&gt;As writer Bruce Anderson noted in his article about &amp;quot;Happy Birthday To You&amp;quot;:&lt;/p&gt;&lt;blockquote dir=&quot;ltr&quot; style=&quot;MARGIN-RIGHT: 0px&quot;&gt;&lt;p&gt;The next time you hear &amp;quot;Happy Birthday&amp;quot; in a movie — and now that you’re listening, it won’t be long — stay for the credits at the end of the movie. Think about how Hollywood would love the story of the Hill sisters, two Southern kindergarten teachers who write a song that they only hope will be a useful teacher’s aid. Instead, the song is a hit that never goes away. It is sung hundreds of millions of times each year, a musical juggernaut that tops the efforts of Tin Pan Alley’s best. Appropriately, then, film credits are the one place left where Mildred and Patty Hill still get their due. &lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;/p&gt;</content:encoded>
+
+<dc:subject>Politics</dc:subject>
+
+<dc:creator>Aaron Muderick</dc:creator>
+<dc:date>2006-02-09T20:44:00-08:00</dc:date>
+</item>
+<item rdf:about="http://www.omnimatter.com/2006/01/global_warming_.html">
+<title>Global Warming circa 10,000 BC</title>
+<link>http://www.omnimatter.com/2006/01/global_warming_.html</link>
+<description>With the advent of accurate mapping, high-resolution satellite imagery, and expensive beachfront property, we view the Earth&#39;s geography as static and unchanging. Sure, the continents looked very different when the dinosaurs roamed, but that was 100 million years ago. Today&#39;s...</description>
+<content:encoded>&lt;p&gt;&lt;a onclick=&quot;window.open(this.href, &#39;_blank&#39;, &#39;width=250,height=417,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot; href=&quot;http://coolstuff.typepad.com/.shared/image.html?/photos/uncategorized/pleistocene_north_ice_map.jpg&quot;&gt;&lt;img title=&quot;Pleistocene_north_ice_map&quot; height=&quot;250&quot; alt=&quot;Pleistocene_north_ice_map&quot; src=&quot;http://www.omnimatter.com/images/pleistocene_north_ice_map.jpg&quot; width=&quot;150&quot; border=&quot;0&quot; style=&quot;FLOAT: right; MARGIN: 0px 0px 5px 5px&quot; /&gt;&lt;/a&gt; With the advent of accurate mapping, high-resolution satellite imagery, and expensive beachfront property, we view the Earth&#39;s geography as static and unchanging.&amp;nbsp; Sure, the continents looked very different when the dinosaurs roamed, but that was 100 million years ago.&lt;/p&gt;
+
+&lt;p&gt;Today&#39;s landscape is a pre-printed game board.&amp;nbsp; The unchanging surface on which we, our children, and our children&#39;s children will live our lives.&amp;nbsp; When the size of a river delta grows or shrinks, people cry foul.&amp;nbsp; When a barrier island is ravaged by storm, people cry foul.&amp;nbsp; When a drought causes productive farmland to become arid, people cry foul.&amp;nbsp; Inevitably, the &lt;a href=&quot;http://www.usace.army.mil/who/&quot;&gt;Army Corp of Engineers&lt;/a&gt; is brought in to make things right.&lt;/p&gt;
+
+&lt;p&gt;Driven mainly by human urban and industrial activity, our planet is undergoing a rapid climate change.&amp;nbsp; The Earth is in transition from a moderate inter-glacial period into something hotter.&amp;nbsp; Our &lt;a href=&quot;http://www.umich.edu/~gs265/society/fossilfuels.htm&quot;&gt;use of fossil fuels&lt;/a&gt; and resultant &lt;a href=&quot;http://www.eia.doe.gov/oiaf/1605/ggccebro/chapter1.html&quot;&gt;greenhouse gases&lt;/a&gt; heat our planet.&amp;nbsp; Our cities create localized &lt;a href=&quot;http://www.epa.gov/heatisland/about/index.html&quot;&gt;heat islands&lt;/a&gt; of concrete, pavement, and glass.&amp;nbsp; Even without our influence, climate and geography are never fixed.&amp;nbsp; A beneficial climate may last for generations, but our Earth never stands still.&lt;/p&gt;
+
+&lt;p&gt;Many of us have seen maps of &lt;a href=&quot;http://www.clearlight.com/~mhieb/WVFossils/continents.html&quot;&gt;Pangea&lt;/a&gt;, the global supercontinent during the dinosaur age.&amp;nbsp; Although our imaginations can wander it&#39;s unknowable surface, it is very abstract to us.&amp;nbsp; No humans explored its mountains or shores.&amp;nbsp; No intelligent beings made maps and wondered &#39;Why is this here?&amp;quot; &lt;/p&gt;
+
+&lt;p&gt;The Earth at the end of the last ice age is more real because our ancestors lived it.&amp;nbsp; Pre-historic humans lived on and around the glaciers.&amp;nbsp; And, this ice retreated, our ancestors moved in.&amp;nbsp; What had once been buried by 2 mile thick sheets of ice became fertile farmland and hunting grounds.&amp;nbsp; As the weight of the ice was lifted, the land underneath rebounded, gaining in altitude.&amp;nbsp; As the ice melted, the seas rose.&amp;nbsp; Countless numbers of our ancestors died in catastrophic floods as rising temperatures caused natural ice dams to fail and release massive lakes of meltwater onto the landscape.&lt;/p&gt;
+
+&lt;p&gt;If an altered climate changed the world so drastically during recent glacial periods, how will the Earth be changed 2000 years from now.&amp;nbsp; How long will it take Mother Nature to wash away the impact of our industrial lifestyle?&lt;/p&gt;
+
+&lt;p&gt;The real question about global climate change isn&#39;t whether our Earth will survive our insults, but whether or not we are capable of living in the world we create.&lt;/p&gt;&lt;p&gt;The last ice age, the Wisconsinan, reached it peak around 18,000 years ago.&amp;nbsp; By 12,000 years ago, glacial melting was in full effect.&amp;nbsp; To understand the last ice age relative to human activity, one remembers that modern humans had settled Europe by at least 35,000 years ago.&amp;nbsp; These were the kind of people that lived in small communities, had calendars, buried their dead, created artwork, cared for their sick, and would hunt in well-coordinated groups.&amp;nbsp; These people had language, not animal grunts and noises.&amp;nbsp; These ice age people were no different from us. &lt;/p&gt;
+
+&lt;p&gt;The links below offer a selection of ice age geologic features across North America and Europe.&amp;nbsp; Learn how quickly larger-than-life landscapes can change on the whim of Earth&#39;s climate.&amp;nbsp; Try to imagine trying to survive in a time of such catastrophic change.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.glaciallakemissoula.org/virtualtour/&quot;&gt;Glacial Lake Missoula&lt;/a&gt; - The size of Lake Erie and Ontario combined, this glacial lake covered most of Montana&#39;s western edge.&amp;nbsp; It contained over 500 cubic miles of water.&amp;nbsp; When the dam of glacial ice failed, it released a catastrophic flood that released this entire quantity of water overnight across Idaho, Oregon, and Washington.&amp;nbsp; This massive torrent carved out Grand Canyon-sized features in the blink of an eye.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.newsday.com/community/guide/lihistory/ny-history-hs101a,0,4995000.story?coll=ny-lihistory-navigation&quot;&gt;Long Island&lt;/a&gt; - Over 4 million people live on Long Island.&amp;nbsp; Did you know that it&#39;s geological origins are fairly recent?&amp;nbsp; In fact, the earliest humans to arrive would have found an uninterrupted plain leading from Connecticut out to the Atlantic where the shoreline was 50 to 70 miles south of its present location.&amp;nbsp; Long Island Sound didn&#39;t even exist.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://merkel.zoneo.net/Topo/Applet/&quot;&gt;Coastlines and Sea Levels Around the World&lt;/a&gt; - At the height of the last ice age, sea levels were 100 meters (109 yards) lower than they are today.&amp;nbsp; As the ice age came to a close, the sea began to rise.&amp;nbsp; Each year of glacial melting released vast quantities of water into the Earth&#39;s oceans.&amp;nbsp; For decades, the sea level rose at least one foot per year.&amp;nbsp; In areas with gentle sloping land, this meant the sea could move inland by a mile or more in a single year.&amp;nbsp; And, it would continue to grow, year after year.&amp;nbsp; Considering man&#39;s ties to the sea and his dependence on it for food, it is no surprise that we don&#39;t find evidence of pre-historic settlements along the Earth&#39;s seashores.&amp;nbsp; They have long since drowned under the ocean.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Black_Sea_deluge_theory&quot;&gt;Black Sea Deluge&lt;/a&gt; - As the Earth&#39;s water increasingly became bound up as glacial ice, ocean levels dropped.&amp;nbsp; The Black Sea connects to the Mediterranean through the Bosporus, a thin silty channel.&amp;nbsp; With water levels low, the two bodies of water were separated and the Black Sea existed as a smaller, freshwater lake for thousands of years.&amp;nbsp; A new theory posits that around 7000 years ago, as the ice melted and the Mediterranean rose, it burst through the Bosporus in a sudden rush.&amp;nbsp; The volume of water at the break would have been greater than 200 times that of Niagara Falls.&amp;nbsp; Within a year&#39;s time over sixty thousand square miles of landscape were under water.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</content:encoded>
+
+<dc:subject>History</dc:subject>
+
+<dc:creator>Aaron Muderick</dc:creator>
+<dc:date>2006-01-22T23:00:00-08:00</dc:date>
+</item>
+<item rdf:about="http://www.omnimatter.com/2005/05/a_brief_rundown.html">
+<title>A Brief Rundown of Micro-Nations</title>
+<link>http://www.omnimatter.com/2005/05/a_brief_rundown.html</link>
+<description>What makes a nation? What is a country? Can one simply &#39;start your own country&#39; on unpopulated land? There are two legal schools of thought available to us. The Montevideo Convention asserts a nation need have only: a defined territory...</description>
+<content:encoded>&lt;p&gt;&lt;a onclick=&quot;window.open(this.href, &#39;_blank&#39;, &#39;width=208,height=138,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot; href=&quot;http://coolstuff.typepad.com/.shared/image.html?/photos/uncategorized/conchrepublic.gif&quot;&gt;&lt;img title=&quot;Conchrepublic&quot; height=&quot;84&quot; alt=&quot;Conchrepublic&quot; src=&quot;http://www.omnimatter.com/images/conchrepublic.gif&quot; width=&quot;128&quot; border=&quot;0&quot; style=&quot;FLOAT: left; MARGIN: 0px 10px 10px 0px&quot; /&gt;&lt;/a&gt; What makes a nation?&amp;nbsp; What is a country?&amp;nbsp; Can one simply &#39;start your own country&#39; on unpopulated land?&amp;nbsp; There are two legal schools of thought available to us.&amp;nbsp; The &lt;a href=&quot;http://www.molossia.org/montevideo.html&quot;&gt;Montevideo Convention&lt;/a&gt; asserts a nation need have only:&lt;/p&gt;
+
+&lt;ol&gt;&lt;li&gt;a defined territory&lt;/li&gt;
+
+&lt;li&gt;a permanent population&lt;/li&gt;
+
+&lt;li&gt;a government&lt;/li&gt;
+
+&lt;li&gt;the capacity to enter into relationships with other nations&lt;/li&gt;&lt;/ol&gt;
+
+&lt;p&gt;An alternate and also acceptable viewpoint is the constitutative theory of statehood.&amp;nbsp; It claims that a nation is only a nation when others agree.&amp;nbsp; If no one recognizes you, you don&#39;t exist.&amp;nbsp; But, do you need buy in from everyone or just a few?&lt;/p&gt;
+
+&lt;p&gt;Welcome to the world of micro-nations.&amp;nbsp; Tiny, often with a population of one, these &lt;em&gt;rogue states &lt;/em&gt;attempt to assert their independence against the enormous power of existing sovereign nations.&amp;nbsp; While they are often seen as wacky or frivilous, they cannot always be easily brushed aside.&amp;nbsp; &lt;/p&gt;&lt;p&gt;&lt;strong&gt;Micro-nations of the 20th Century&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;font-size: 0.6em;&quot;&gt;Rating system: The more coats of arms a micro-nation has the more serious its founders are about being a real nation.&amp;nbsp; They may have spent huge sums of money or risked life and limb to defend their claims.&amp;nbsp; Other micro-nations are for amusement, tourism, or indulging the egos of wealthy men of leisure.&lt;/span&gt;&lt;/p&gt;
+
+&lt;table width=&quot;100%&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;a onclick=&quot;window.open(this.href, &#39;_blank&#39;, &#39;width=323,height=216,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot; href=&quot;http://coolstuff.typepad.com/.shared/image.html?/photos/uncategorized/sealand.gif&quot;&gt;&lt;img title=&quot;Sealand&quot; height=&quot;85&quot; alt=&quot;Sealand&quot; src=&quot;http://www.omnimatter.com/images/sealand.gif&quot; width=&quot;128&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;/p&gt;&lt;/td&gt;
+
+&lt;td&gt;&lt;a href=&quot;http://www.sealandgov.com/&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 1.2em;&quot;&gt;Principality of Sealand&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+
+&lt;td align=&quot;right&quot;&gt;&lt;p&gt;&lt;img title=&quot;5shield&quot; alt=&quot;5shield&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/5shield.gif&quot; border=&quot;0&quot; /&gt; &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;SUMMARY:&lt;/strong&gt; Prince Roy occupied the previously abandoned 10,000 square foot radar platform in 1967 and declared it a sovereign nation.&amp;nbsp; Approximately 6 miles off the coast of England it had been built during WWII to provide protection from Axis aircraft.&amp;nbsp; At this time, radio in the United Kingdom prohibited commercial broadcasts.&amp;nbsp; Prince Roy set up a radio station on the platform sending music, talk, and advertisements to British consumers.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;This quickly drew the ire of the British government who tried to shut down the operation.&amp;nbsp; However British courts held that Sealand was located in international waters and therefore was outside government jurisdiction.&amp;nbsp; This legal victory was heralded as a great success and, to Prince Roy, confirmed that he was free to operate his own &amp;quot;nation&amp;quot;.&amp;nbsp; &amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;In 1978, a number of Dutch and German men came to Sealand on business. Shortly after their arrival, these men kidnapped Prince Roy&#39;s son Michael and took Sealand by force. When he returned from travel abroad, Prince Roy recaptured the island with a group of his own men and held the attackers as prisoners of war. In what Prince Roy considered an act of de facto recognition of his nation&#39;s sovereignty, Germany sent a diplomat directly to Sealand to negotiate for the release of their citizen. &lt;/p&gt;
+
+&lt;p&gt;Today Sealand hosts internet services for those who want their online activities to be beyond the reach of any national government.&amp;nbsp; Due to the high security requirements of this operation, visitors are not permitted to approach Sealand.&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&quot;color: #ff3300;&quot;&gt;Update&lt;/span&gt; &lt;span style=&quot;font-size: 0.6em;&quot;&gt;(July 1 2006)&lt;/span&gt;: On June 24th, 2006 a devastating fire ripped through Sealand destroying its internet services area and heavily damaging its living space.&amp;nbsp; The sole man onboard Sealand at the time was injured and evacuated.&amp;nbsp; Currently Sealand is unoccupied and though Prince Roy vows to rebuild, Sealand is now unoccupied, with no industry, and not surprisingly, without fire insurance.&lt;/p&gt;
+
+&lt;hr width=&quot;90%&quot; /&gt;
+
+&lt;table width=&quot;100%&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;img title=&quot;Conch&quot; alt=&quot;Conch&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/conch.gif&quot; width=&quot;128&quot; border=&quot;0&quot; /&gt; &lt;/p&gt;
+
+&lt;/td&gt;
+
+&lt;td&gt;&lt;a href=&quot;http://www.conchrepublic.com/&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 1.2em;&quot;&gt;The Conch Republic&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+
+&lt;td align=&quot;right&quot;&gt;&lt;p&gt;&lt;img title=&quot;2shield&quot; alt=&quot;2shield&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/2shield.gif&quot; border=&quot;0&quot; /&gt; &lt;/p&gt;
+
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;SUMMARY:&lt;/strong&gt; The Conch Republic was established on April 23, 1982 in response to a United States Border Patrol blockade of the Florida Keys. All traffic, including that of US Citizens was required to pass through customs to reach the Florida mainland.&amp;nbsp; Many people living on Key West were of the opinion that if the United States wanted to treat the Keys like a foreign country, Key West would become a foreign country.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;Key West Mayor Dennis Wardlow issued paperwork seceding from the Union.&amp;nbsp; They declared war on Washington, immediately surrendered, and requested foreign aid. The US Government never reacted to the secession.&amp;nbsp; In the opinion of many natives this established sovereignty for the Conch Republic.&lt;/p&gt;
+
+&lt;p&gt;Although the Conch Republic enjoys a modest dose of self deprecating humor, those in its government are dead serious about their sovereignty.&amp;nbsp; Conch Republic passports continue to be accepted at border crossings in over twenty nations.&amp;nbsp; Government representatives from the Conch Republic attended the Summit of the Americas meeting in Miami.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;The Conch Republic operates various government offices, embassies and consulates around the globe, a tourist shop, and an independence day celebration.&lt;/p&gt;
+
+&lt;p&gt;Despite this effort and independence claims, Key West continues to receive funding from the State of Florida and the federal government in Washington, DC.&amp;nbsp; Its citizens vote in US elections and enjoy representation in the US Congress.&lt;/p&gt;
+
+&lt;p&gt;Like Guantanamo Bay, Cuba, a major portion of The Conch Republic houses an operating US Naval Base.&lt;/p&gt;&lt;hr width=&quot;90%&quot; /&gt;&lt;p&gt;&lt;table width=&quot;100%&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/seborga.gif&quot;&gt;&lt;img title=&quot;Seborga&quot; height=&quot;62&quot; alt=&quot;Seborga&quot; src=&quot;http://www.omnimatter.com/images/seborga.gif&quot; width=&quot;128&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;/p&gt;&lt;/td&gt;
+
+&lt;td&gt;&lt;a href=&quot;http://princelyhouseofthornley.com/seborga.html&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 1.2em;&quot;&gt;Principality of Seborga&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+
+&lt;td align=&quot;right&quot;&gt;&lt;p&gt;&lt;img title=&quot;3shield&quot; alt=&quot;3shield&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/3shield.gif&quot; border=&quot;0&quot; /&gt; &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;SUMMARY:&lt;/strong&gt; The Principality of Seborga consists of approximately 14 square kilometers on the Italian Riviera near the French border. It has a population of about 362 citizens and 2000 other persons. Historically, its chief industry has been raising flowers. &lt;/p&gt;
+
+&lt;p&gt;It became a Principality in 1079.&amp;nbsp; In 1729 it was sold to the King of Sardinia. Failure to mention the principality in registration documents for the Republic of Genoa, the Viennese Congress of 1815, the Italian Act of Unification of 1861, or the paperwork forming the Italian Republic following World War II are the foundation of its claims to sovereignty.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;As tourism to the region has increased, so have efforts by the citizenry to increase recognition of their sovereign status.&amp;nbsp; Its citizens strongly consider themselves independent even if this independence is not recognized by its neighbors. Seborga has its own flag, coins, stamps, passports, and automobile license plates. &lt;/p&gt;
+
+&lt;hr width=&quot;90%&quot; /&gt;
+
+&lt;table width=&quot;100%&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/grandduchy.jpg&quot;&gt;&lt;img title=&quot;Grandduchy&quot; height=&quot;167&quot; alt=&quot;Grandduchy&quot; src=&quot;http://www.omnimatter.com/images/grandduchy.jpg&quot; width=&quot;128&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;/p&gt;&lt;/td&gt;
+
+&lt;td&gt;&lt;a href=&quot;http://www.grandduchy.org/&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 1.2em;&quot;&gt;The Grand Duchy of Avram&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+
+&lt;td align=&quot;right&quot;&gt;&lt;p&gt;&lt;img title=&quot;1shield_1&quot; alt=&quot;1shield_1&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/1shield_1.gif&quot; border=&quot;0&quot; /&gt; &lt;/p&gt;
+
+&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;SUMMARY:&lt;/strong&gt; His Grace, Prince John, (formerly known as John Charlton), The Grand Duke of Avram, Most Honorable Marquis of Martha, the Right Honorable Earl of Enoch, the Viscount Ulom, and possessor of too many noble titles to mention, got frustrated with the Australian banking and taxation system in 1980. As a man of noble title, he issued a Royal Charter and created the Royal Bank of Avram. Naturally the bank needed its own coins and currency. The coins, denominated in Ducals, feature multi-color enameled coat-of-arms. The paper currency features stunning portraitry of Prince John in his younger days.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;As might be expected, the Australian authorities did not care much for this new bank and its special currency and they took him to court.&amp;nbsp; After spending millions of dollars, Prince John was victorious.&amp;nbsp; To the prosecution&#39;s surprise Australia did not have any law against issuing one&#39;s own coins in one&#39;s own currency.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;In sense, it is a moot point.&amp;nbsp; The currency does not seem to have gained much acceptance beyond the confines of the bank, which is also a tourist shop in the small town of Sorell in Tasmania, Australia.&amp;nbsp; While Prince John was working to administer the Grand Duchy, he did find time to serve in the Tasmanian Provincial Parliament as an elected representative.&amp;nbsp; It seems rare that sovereign royalty would serve as a public servant inside an different country.&lt;/p&gt;
+
+&lt;p&gt;The Grand Duchy of Avram has a healthy interest in peerages, titles, heraldry, chivalry and a bizarre collusion of Christianity, the Kabbalah, and ancient Egyptian religion. &lt;/p&gt;
+
+&lt;hr width=&quot;90%&quot; /&gt;
+
+&lt;table width=&quot;100%&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/huttriver.gif&quot;&gt;&lt;img title=&quot;Huttriver&quot; height=&quot;85&quot; alt=&quot;Huttriver&quot; src=&quot;http://www.omnimatter.com/images/huttriver.gif&quot; width=&quot;128&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;/p&gt;&lt;/td&gt;
+
+&lt;td&gt;&lt;a href=&quot;http://www.huttriver.net/&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 1.2em;&quot;&gt;Hutt River Province Principality&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+
+&lt;td align=&quot;right&quot;&gt;&lt;p&gt;&lt;img title=&quot;5shield&quot; alt=&quot;5shield&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/5shield.gif&quot; border=&quot;0&quot; /&gt; &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;SUMMARY:&lt;/strong&gt; Born in 1970 during an argument between farmers and the Australian government over wheat quotas, this micro-nation is run by Prince Leonard.&amp;nbsp; Before becoming prince, Leonard George Casley adeptly maneuvered his newborn province through the legal system of British commonwealth nations.&amp;nbsp; Through error, ignorance, or oversight, the province was recognized as independent inside the commonwealth by the Queen of England.&amp;nbsp; Once this occurred, Mr. Casley had himself named prince by the citizenry.&amp;nbsp; Commonwealth laws applying to royalty thus protected the Hutt River Principality&#39;s provincial status.&lt;/p&gt;
+
+&lt;p&gt;As one of his first acts as prince, he renamed parts of the surrounding geography: Lake Beginning, Mount Succession, etc.&amp;nbsp; Between 1980 and 1995, the province participated in high profile recruitment of new citizens, fundraisers, sale of peerages, extensive production of coins and stamps, as well as plans to move the entire province to an uninhabited island in the South Pacific.&amp;nbsp; In 1995, the sudden death of Kevin Gale, a notable Hutt River citizen, put an end to most of these activities.&lt;/p&gt;
+
+&lt;p&gt;Over time, the industry has shifted from the farming of flowers to tourism.&amp;nbsp; The principality issues its own stamps, coins, passports, and peerages.&amp;nbsp; Recently the Hutt River has allowed the registration of corporations within its boundaries.&amp;nbsp; Whether the principality will be successful in the &#39;offshore corporation&#39; business remains to be seen.&lt;/p&gt;
+
+&lt;p&gt;Despite legal arguments nullifying the Hutt River Province&#39;s claims of independence, with its 35th anniversary approaching, it stands firmly as an accepted (though unrecognized) micro-nation.&lt;/p&gt;
+
+&lt;hr width=&quot;90%&quot; /&gt;
+
+&lt;table width=&quot;100%&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/minerva.gif&quot;&gt;&lt;img title=&quot;Minerva&quot; height=&quot;84&quot; alt=&quot;Minerva&quot; src=&quot;http://www.omnimatter.com/images/minerva.gif&quot; width=&quot;128&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;/p&gt;&lt;/td&gt;
+
+&lt;td&gt;&lt;a href=&quot;http://www.minervanet.org/&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 1.2em;&quot;&gt;Principality of Minerva&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+
+&lt;td align=&quot;right&quot;&gt;&lt;p&gt;&lt;img title=&quot;4shield_1&quot; alt=&quot;4shield_1&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/4shield_1.gif&quot; border=&quot;0&quot; /&gt; &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;SUMMARY:&lt;/strong&gt; The brainchild of Nevada businessman and millionaire Michael Oliver. In the early 1970s he announced plans to reclaim land from the Minervan Reefs in the South Pacific.&amp;nbsp; Located approximately 400 miles south of Fiji, the area was named for a whaling ship, Minerva, which had wrecked there in 1829.&lt;/p&gt;
+
+&lt;p&gt;In early 1971 barges laden with sand from Australia began to arrive along with construction crews tasked to develop island.&amp;nbsp; &amp;nbsp;A declaration of independence was issued to neighboring nations and monetary currency was issued.&amp;nbsp; A year later, in 1972, Morris C. Davis was elected as Provisional President.&lt;/p&gt;
+
+&lt;p&gt;Michael Oliver&#39;s stated goal was a libertarian-inspired city-state capable of sustaining a population of 30,000 persons.&amp;nbsp; There were extensive plans for a variety of light industries: fishing, tourism, and banking.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;Unlike most micro-nations which fail to gain recognition from any recognized state, the Principality of Minerva was recognized by the island nation of Tonga.&amp;nbsp; As its closest neighbor, Tonga did not appreciate the nascent nation taking root so close to its borders.&amp;nbsp; It sent a naval gunboat to clear the island.&amp;nbsp; On June 21, 1972, King Taufa&#39;ahau Tupou IV of Tonga arrived via row-boat to replace the Minervan flag with his own.&amp;nbsp; The king then formally annexed the Minervan islands.&lt;/p&gt;
+
+&lt;p&gt;With their nation annexed, the Principality of Minerva&#39;s plans fell into confusion and it took ten years for Oliver and Davis to mount a response.&amp;nbsp; In 1982, they attempted to retake the reefs only to be removed by Tongan troops three weeks later.&amp;nbsp; Perhaps Michael Oliver&#39;s access to capital (to pay for mercenaries) was not as great as Prince Roy&#39;s (of Sealand) had been.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;The Principality of Minerva continues to operate as a government in exile.&amp;nbsp; Its offices are in South Carolina, USA.&lt;/p&gt;
+
+&lt;hr width=&quot;90%&quot; /&gt;
+
+&lt;table width=&quot;100%&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/rose_island_x250.gif&quot;&gt;&lt;img title=&quot;Rose_island_x250&quot; height=&quot;91&quot; alt=&quot;Rose_island_x250&quot; src=&quot;http://www.omnimatter.com/images/rose_island_x250.gif&quot; width=&quot;128&quot; border=&quot;0&quot; /&gt;&lt;/a&gt; &lt;/p&gt;&lt;/td&gt;
+
+&lt;td&gt;&lt;a href=&quot;http://www.minervanet.org/&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-size: 1.2em;&quot;&gt;Republic of Rose Island&lt;/span&gt;&lt;/strong&gt;&lt;/a&gt;&lt;/td&gt;
+
+&lt;td align=&quot;right&quot;&gt;&lt;p&gt;&lt;img title=&quot;5shield&quot; alt=&quot;5shield&quot; src=&quot;http://coolstuff.typepad.com/photos/uncategorized/5shield.gif&quot; border=&quot;0&quot; /&gt; &lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;SUMMARY:&lt;/strong&gt; A short-lived new country project, Rose Island was a man-made platform in the Adriatic Sea four miles off the coast of Rimini, Italy. Constructed in 1967 by Italian engineer Giorgio Rosa, for whom the island was named, it was furnished with a restaurant, bar, nightclub, souvenir shop, post office and a radio station. At only 400 square meters in size, it was definitely close quarters.&lt;/p&gt;
+
+&lt;p&gt;Rose Island issued its declaration of independence on June 24, 1968. Flags, stamps, and currency were promptly issued. Rosa decreed that his nation&#39;s official language would be Esperanto. Thus, in it&#39;s native tongue, it was known as &lt;em&gt;Insulo de la Rozoj&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;As the island was an obvious ploy to collect tourist dollars without paying state taxes, the Italian government sent police and tax inspectors to take control of the island. The Rosan government protested the violation of its sovereignty through pseudo-diplomatic channels but this was to no avail. The government decided that the island was more trouble to secure than it was worth. In an act that no doubt establishes how seriously the establishment took affront to the status quo, the Italian Navy destroyed the facility with explosives.&lt;/p&gt;&lt;hr width=&quot;90%&quot; /&gt;&lt;p&gt;As the 1960&#39;s were a time of major social change, most of the micro-nations listed here were founded in that time period.&amp;nbsp; Not discussed here are the hundreds of 20th century &#39;new nation&#39; movements that operated in various countries around the world.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;Most movements died with the inaction of their founders.&amp;nbsp; Some went on to acheive legitimate sovereignty through military or diplomatic means.&amp;nbsp; A few, however, were able to organize people, funds, plans, and even criminal acts of independence before failing to actually acquire and defend their own territory.&amp;nbsp; Others acquired territory and, like the Hutt River Province, exist as quasi-sovereign states within established territories.&amp;nbsp; As the examples above have shown, to be a real nation is not as clear cut as it seems to be.&lt;/p&gt;</content:encoded>
+
+<dc:subject>Politics</dc:subject>
+
+<dc:creator>Aaron Muderick</dc:creator>
+<dc:date>2005-05-26T01:00:00-07:00</dc:date>
+</item>
+<item rdf:about="http://www.omnimatter.com/2004/11/audio_illusions.html">
+<title>Auditory Illusions</title>
+<link>http://www.omnimatter.com/2004/11/audio_illusions.html</link>
+<description>Optical Illusions are a popular topic for children&#39;s books. We&#39;re all familiar with the most famous ones. Until recently, they were viewed as mere curiosities. Today, they are studied by cognitive scientists as a path to reverse engineering the visual...</description>
+<content:encoded>&lt;p&gt;&lt;a onclick=&quot;window.open(this.href, &#39;_blank&#39;, &#39;width=300,height=314,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot; href=&quot;http://coolstuff.typepad.com/photos/uncategorized/istair.jpg&quot;&gt;&lt;img title=&quot;Istair&quot; height=&quot;209&quot; alt=&quot;Istair&quot; src=&quot;http://www.omnimatter.com/images/istair.jpg&quot; width=&quot;200&quot; border=&quot;0&quot; style=&quot;FLOAT: right; MARGIN: 0px 0px 5px 5px&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://frogstar.com/optical/index.asp&quot;&gt; Optical Illusions&lt;/a&gt; are a popular topic for children&#39;s books.&amp;nbsp; We&#39;re all familiar with the most &lt;a href=&quot;http://psylux.psych.tu-dresden.de/i1/kaw/diverses%20Material/www.illusionworks.com/html/impossible_triangle.html&quot;&gt;famous ones&lt;/a&gt;.&amp;nbsp; Until recently, they were viewed as mere curiosities.&amp;nbsp; Today, they are studied by cognitive scientists as a path to reverse engineering the visual processing centers of the brain.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.philomel.com/&quot;&gt;Auditory illusions&lt;/a&gt; are less familiar.&amp;nbsp; Sounds, groups of tones, and auditory patterns can form an equally &lt;a href=&quot;http://www.brl.ntt.co.jp/IllusionForum/basics/auditory/index-e.html&quot;&gt;boggling&lt;/a&gt; sensory experience.&lt;/p&gt;
+
+&lt;p&gt;Years of discovery, &lt;a href=&quot;http://www.kyushu-id.ac.jp/~ynhome/ENG/Demo/illusions2nd.html&quot;&gt;analysis&lt;/a&gt;, and reverse engineering of these illusions have born real fruit.&amp;nbsp; Through the field of &lt;a href=&quot;http://en.wikipedia.org/wiki/Psychoacoustics&quot;&gt;psychoacoustics&lt;/a&gt;, researchers created MP3, AAC, and other modern computer audio formats. They reduce the size of sound files by throwing away huge portions of it.&amp;nbsp; The computer knows that you won&#39;t notice the missing bits.&amp;nbsp; MP3 can discard up to 90% of the original sound before you&#39;ll start to hear the gaps.&lt;/p&gt;
+
+&lt;p&gt;Not all auditory illusions have been discovered in modern times.&amp;nbsp; &lt;a href=&quot;http://www.blackbeltguitar.com/GreenBeltIndex.php?subaction=showfull&amp;amp;id=1065827688&amp;amp;archive=&amp;amp;start_from=&amp;amp;ucat=13&amp;amp;&quot;&gt;The Devil&#39;s Tritone &lt;/a&gt;is a &lt;a href=&quot;http://www.philomel.com/oncd.html&quot;&gt;musical illusion&lt;/a&gt; where the listener has difficulty figuring out if one needs to move up or down to find the home base.&amp;nbsp; Documented by medieval composers, its use was prohibited in sacred music written for the church.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;In modern times, &lt;a href=&quot;http://psy.ucsd.edu/~ddeutsch/&quot;&gt;Diana Deutsch&lt;/a&gt; discovered that listeners in California and England resolve a similar paradox in opposite ways.&amp;nbsp; The perception of sound can be influenced by culture.&amp;nbsp; Other illusions are perceived differently by left handed vs. right handed people reflecting differences in the way our brains are organized.&lt;/p&gt;</content:encoded>
+
+<dc:subject>Science</dc:subject>
+
+<dc:creator>Aaron Muderick</dc:creator>
+<dc:date>2004-11-26T14:00:00-08:00</dc:date>
+</item>
+<item rdf:about="http://www.omnimatter.com/2004/11/the_soviet_expl.html">
+<title>The Soviet Exploration of Venus</title>
+<link>http://www.omnimatter.com/2004/11/the_soviet_expl.html</link>
+<description>The language barrier, the Iron Curtain, and a patriotic sense of American superiority have left most of us unaware of Soviet accomplishments in outer space during the cold war. From the beginning of the space age, Soviet rocket designs were...</description>
+<content:encoded>&lt;p&gt;&lt;a onclick=&quot;window.open(this.href, &#39;_blank&#39;, &#39;width=200,height=200,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot; href=&quot;http://coolstuff.typepad.com/photos/uncategorized/v_smallpennant.jpg&quot;&gt;&lt;img title=&quot;V_smallpennant&quot; height=&quot;150&quot; alt=&quot;V_smallpennant&quot; src=&quot;http://www.omnimatter.com/images/v_smallpennant.jpg&quot; width=&quot;150&quot; border=&quot;0&quot; style=&quot;FLOAT: left; MARGIN: 0px 5px 5px 0px&quot; /&gt;&lt;/a&gt; The language barrier, the &lt;a href=&quot;http://en.wikipedia.org/wiki/Iron_curtain&quot;&gt;Iron Curtain&lt;/a&gt;, and a patriotic sense of American superiority have left most of us unaware of &lt;a href=&quot;http://www.space.edu/projects/book/chapter20.html&quot;&gt;Soviet accomplishments &lt;/a&gt;in outer space during the cold war.&lt;/p&gt;
+
+&lt;p&gt;From the beginning of the space age, Soviet rocket designs were able to launch substantially &lt;a href=&quot;http://www.russianspaceweb.com/r7.html&quot;&gt;larger payloads&lt;/a&gt; into space.&amp;nbsp; United States rockets, by comparison, were limited in their lift capabilities.&lt;/p&gt;
+
+&lt;p&gt;While the &lt;a href=&quot;http://en.wikipedia.org/wiki/Exploration_of_Mars&quot;&gt;exploration of Mars&lt;/a&gt; was well accomplished by the Americans using lightweight spacecraft, the extreme temperatures and pressures discovered on Venus required heavy-duty construction not unlike that seen in &lt;a href=&quot;http://www.pbs.org/wgbh/nova/abyss/frontier/deepsea.html&quot;&gt;deep sea submersibles&lt;/a&gt;.&amp;nbsp; At this, the Soviets excelled.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;While the United States focused its exploration on the Moon and Mars, they explored &lt;a href=&quot;http://www.mentallandscape.com/V_Venus.htm&quot;&gt;Venus&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;What it meant for the Space Race&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In a sense, this initial success with heavy payloads led to later Soviet failure.&amp;nbsp; Because they were less concerned with the weight of their payloads, they had less incentive to miniaturize components, develop lightweight materials, and to design automated control systems which would remove levers, gears, and heavy flight control apparatus.&amp;nbsp; The United States, in contrast, kept a worried count of pounds and ounces. This lead US technology down a different path of development (microcomputers, plastics and new metal alloys, and fly by wire systems).&lt;/p&gt;
+
+&lt;p&gt;When it came time for the race to the moon, the Soviets were primed for failure.&amp;nbsp; Their N-1 rocket, while theoretically capable of lifting the required payload, failed to operate as designed.&amp;nbsp; Engineers were unable to overcome the crushing complexity of its enourmous design (over thirty rocket engines combined at the base to produce thrust).&lt;/p&gt;
+
+&lt;p&gt;The Saturn V rocket produced the needed 3,750 tons of thrust to send its American craft to the Moon.&amp;nbsp; By comparison, the Soviet N-1 rocket was designed to provide 7,500 tons of thrust.&amp;nbsp; They needed this unbelievably massive rocket because their payload was 18.5 metric tons heavier (about 25%) than the American version.&lt;/p&gt;</content:encoded>
+
+<dc:subject>Science</dc:subject>
+
+<dc:creator>Aaron Muderick</dc:creator>
+<dc:date>2004-11-25T21:56:00-08:00</dc:date>
+</item>
+<item rdf:about="http://www.omnimatter.com/2004/10/tobacco_doesnt_.html">
+<title>It Might Not Be The Tobacco Causing the Cancer</title>
+<link>http://www.omnimatter.com/2004/10/tobacco_doesnt_.html</link>
+<description>The mechanisms by which chemical carcinogens induce cancer have been well established. But, what if we could make smoking safer? Would it be a worthwhile goal? As a society should we work on a zero tolerance policy or, instead, pursue...</description>
+<content:encoded>&lt;p&gt;&lt;a onclick=&quot;window.open(this.href, &#39;_blank&#39;, &#39;width=400,height=400,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot; href=&quot;http://coolstuff.typepad.com/photos/uncategorized/polonium.jpg&quot;&gt;&lt;img width=&quot;160&quot; height=&quot;160&quot; border=&quot;0&quot; src=&quot;http://www.omnimatter.com/images/polonium.jpg&quot; title=&quot;Polonium&quot; alt=&quot;Polonium&quot; style=&quot;margin: 0px 0px 5px 5px; float: right;&quot; /&gt;&lt;/a&gt;The mechanisms by which chemical carcinogens induce cancer have been well established.&amp;nbsp; But, what if we could make smoking safer?&amp;nbsp; Would it be a worthwhile goal?&amp;nbsp; As a society should we work on a zero tolerance policy or, instead, pursue a harm reduction strategy?&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;Smoking is a dirty habit and there&#39;s no doubt that it&#39;s bad for you.&amp;nbsp; However, despite popular conception, all those chemical carcinogens in tobacco smoke aren&#39;t responsible for many smoking-induced lung cancers.&amp;nbsp; This isn&#39;t a&amp;nbsp; &lt;a href=&quot;http://www.usatoday.com/money/industries/2004-09-22-tobacco_x.htm&quot;&gt;conspiracy theory&lt;/a&gt;.&amp;nbsp; Public health officials, the tobacco industry, and informed doctors know it to be true.&lt;/p&gt;
+
+&lt;p&gt;Many researchers believe that a significant cause of lung cancer in smokers is from insoluble &lt;a href=&quot;http://www.ead.anl.gov/pub/doc/NaturalDecaySeries.pdf&quot;&gt;radioactive dust&lt;/a&gt; which sticks to the tobacco leaves when the fields are fertilized, is inhaled during smoking, and lodges (often permanently) in the lungs.&amp;nbsp; Once these particles find their home in your &lt;a href=&quot;http://oac.med.jhmi.edu/res_phys/Encyclopedia/Alveoli/Alveoli.HTML&quot;&gt;aveoli&lt;/a&gt; and &lt;a href=&quot;http://www.pnas.org/cgi/content/abstract/80/5/1285&quot;&gt;bronchial bifurcations&lt;/a&gt;, they decay, eliciting radiation burns to the surrounding tissue.&amp;nbsp; Like any burn, inflammation follows. This attracts more radioactive and carcinogenic particulates to the area, concentrating the toxins. Eventually the genetic damage leads to cancer.&lt;/p&gt;
+
+&lt;p&gt;So, what&#39;s the source of all this radioactive dust?&amp;nbsp; &lt;a href=&quot;http://www.scienceinafrica.co.za/2001/november/phosphate.htm&quot;&gt;Superphosphate fertilizer&lt;/a&gt; added to the fields by growers.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;The Story So Far&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In 1930, lung cancer was much less common (4 cases per 100,000 population per year).&amp;nbsp; By 1980, it was the number one cancer killer (72 cases per 100,000 population per year) in spite of an almost 20 percent reduction in smoking. During this period, the levels of radioactive material in American tobacco had tripled. &lt;/p&gt;
+
+&lt;p&gt;Why would the tobacco industry use a radioactive fertilizer on their crops?&amp;nbsp; &lt;a href=&quot;http://www.tobaccofreedom.org/issues/documents/landman/radioactive/rad1.gif&quot;&gt;Simple economics&lt;/a&gt;.&amp;nbsp; Documents released during the state&#39;s tobacco settlements indicated that cigarette makers were aware of the problem as early as 1966 (Lorillard Tobacco).&amp;nbsp; A memo from &lt;a href=&quot;http://www.tobacco.org/Documents/dd/ddradioactivecigs.html&quot;&gt;Phillip Morris&lt;/a&gt; in &lt;a href=&quot;http://www.pmdocs.com/getimg.asp?pgno=0&amp;amp;start=0&amp;amp;if=avpidx&amp;amp;bool=2012614804-4805&amp;amp;docid=2012614804/4805&amp;amp;docnum=1&amp;amp;summary=0&amp;amp;sel1=&quot;&gt;1975&lt;/a&gt; discusses the issue as an ongoing concern.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.sfntc.com/&quot;&gt;Organic tobacco&lt;/a&gt; uses a different, uncontaminated fertilizer and thus avoids the problem.&amp;nbsp; Organic brands used to claim they were healthier for you.&amp;nbsp; They&#39;re &lt;a href=&quot;http://www.ftc.gov/opa/2000/04/alt-cigs.htm&quot;&gt;not allowed&lt;/a&gt; to do that anymore but they are far less likely to kill you, and the government knows it.&amp;nbsp; &lt;/p&gt;
+
+&lt;p&gt;Tobacco consumption (and nicotine addiction) substantially increase the risk for other diseases (emphysema, heart attack, stroke, pneumonia, bronchitis, and asthma).&amp;nbsp; Only about half of the deaths attributable to smoking are from cancers.&amp;nbsp; Public health officials and anti-tobacco lobbyists figured, &amp;quot;why make things complicated?&amp;quot;.&amp;nbsp; Just give people the bottom line: &lt;strong&gt;Stop Smoking&lt;/strong&gt;.&amp;nbsp; Phillip Morris is legally forced to repeat this in its public service ads &amp;quot;There&#39;s no such thing as a safer cigarette&amp;quot;.&lt;/p&gt;
+
+&lt;p&gt;But, is there no such thing?&amp;nbsp; How many lives would a safer cigarette spare?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;A Safer Cigarette&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In this country we spend money to reduce the risk of death from all sorts of things.&amp;nbsp; The addition of seatbelts to school buses is costing taxpayers around $1 billion.&amp;nbsp; Net benefit: 11 lives saved per year on average.&amp;nbsp; What would be the taxpayer&#39;s cost to force tobacco companies to remove radioactive materials from cigarettes?&amp;nbsp; $0.&amp;nbsp; How many lives could be saved in the USA over the next twenty years?&lt;/p&gt;
+
+&lt;p&gt;It&#39;s a complex problem and depending on your initial assumptions, you could end up with a wide range of answers.&amp;nbsp; If polonium induced cancer is avoided, what&#39;s to say the subject wouldn&#39;t die from a pneumonia exacerbated by &lt;a href=&quot;http://www.nlm.nih.gov/cgi/medlineplus/leavemedplus.pl?theORG=%4E%48%4C%42%49&amp;amp;theURL=http%3A%2F%2Fwww%2Enhlbi%2Enih%2Egov%2Fhealth%2Fpublic%2Flung%2Fother%2Fcopd%5Ffact%2Epdf&quot;&gt;COPD&lt;/a&gt;?&amp;nbsp; Of course, you also should consider that the subject might have lived an extra five years before COPD set in, and another six years before complications claimed their lives.&amp;nbsp; How can we include the economics and quality of life issues for people who would have gotten lung cancer and then, through expensive medical treatment, survived?&lt;/p&gt;
+
+&lt;p&gt;In the USA, in 2003, roughly 171,900 people developed lung cancer and 157,200 died from the disease.&amp;nbsp; Best estimates from the American Cancer Society (&lt;a href=&quot;http://www.cancer.org&quot;&gt;ACS&lt;/a&gt;) allow that 82% of these cancers are caused by smoking tobacco.&amp;nbsp; Surgeon General C. Everett Koop stated that &lt;em&gt;&amp;quot;90% of smoking related lung cancers are caused by radiation&amp;quot;&lt;/em&gt;.&amp;nbsp; This means that in 2003, approximately 116,000 Americans would not have died from lung cancer if cigarettes had had their radioactive content removed.&amp;nbsp; Globally, perhaps 1 million lives would be spared each year.&lt;/p&gt;
+
+&lt;p&gt;In addition to the cancer risk to the lungs, polonium-210, the primary radioactive component of tobacco smoke, can become soluble and be circulated throughout the body to every tissue and cell. Chemical testing will find the element in the bones, organs, &lt;a href=&quot;http://www.hindu.com/thehindu/seta/2003/06/05/stories/2003060500020200.htm&quot;&gt;blood and urine&lt;/a&gt; of smokers. This circulating radioactive material has the potential to cause genetic damage and may instigate diseases such as liver and bladder cancer, leukemia, and cirrhosis of liver.&amp;nbsp; More research needs to be done in these areas.&lt;/p&gt;
+
+&lt;p&gt;Take a pessimist&#39;s view of these napkin statistics and imagine that the percentage of lung cancer deaths induced by radioactive material is 1% instead of 90%.&amp;nbsp; To remove this material would still save 1,289 lives in 2003.&amp;nbsp; Make it 0.1%.&amp;nbsp; You still save 128 lives each year.&amp;nbsp; Do you remember the cost to add seatbelts to schoolbuses?&lt;/p&gt;
+
+&lt;p&gt;Keep in mind that the initial savings would be small.&amp;nbsp; A man who has smoked for fifty years would only start smoking non-radioactive tobacco tomorrow.&amp;nbsp; There is still fifty years of radiation damage inside him.&amp;nbsp; But, with each passing year, the toll from death and disease will drop.&lt;/p&gt;
+
+&lt;p&gt;Since anti-smoking advocates have no qualms about increasing the cost of cigarettes (usually through revenue generating taxes), why not allow tobacco firms to pass these costs directly to the consumer?&amp;nbsp; Considering the &lt;a href=&quot;http://intapp.medscape.com/px/medlineapp/search?getcount=200&amp;amp;advanced=0&amp;amp;relevance=100&amp;amp;wordvars=on&amp;amp;getchunk=20&amp;amp;relevance_sort=on&amp;amp;concept_mapping=on&amp;amp;ray=on&amp;amp;searchstring=tobacco+polonium&amp;amp;searchlogic=fuzzy&amp;amp;authors=&amp;amp;journals=&amp;amp;earliestseg=UM98993X%2C1999&amp;amp;latestseg=UMA4A20X%2C2004&quot;&gt;extensive research&lt;/a&gt; done on this subject already, why has the National Institutes of Health (&lt;a href=&quot;http://www.nih.gov/&quot;&gt;NIH&lt;/a&gt;) not funded investigation into this area?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Postscript: The Drug War&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;There is another plant who&#39;s leaves are dried and then smoked: marijuana.&amp;nbsp; Despite desperate attempts&amp;nbsp; by the anti-drug forces in government and its political lobby to prove that marijuana smoke is a carcinogen, evidence is severely &lt;a href=&quot;http://my.webmd.com/content/article/23/1728_57309&quot;&gt;lacking&lt;/a&gt;.&amp;nbsp; Until recently, marijuana was not grown using superphosphate fertilizers and marijuana lacks the sticky hairs found on the underside of the tobacco leaf where radioactive particles accumulate.&lt;/p&gt;
+
+&lt;p&gt;Marijuana smoke does contain many of the same chemical carcinogens as tobacco.&amp;nbsp; Although it is difficult to compare tobacco and marijuana users in an apples to apples fashion, the absence of observed carcinogenic effects seems difficult to reconcile if the chemical carcinogen model (aka &#39;tar&#39;) is 100% complete.&lt;/p&gt;</content:encoded>
+
+<dc:subject>Politics</dc:subject>
+
+<dc:creator>Aaron Muderick</dc:creator>
+<dc:date>2004-10-25T01:05:00-07:00</dc:date>
+</item>
+<item rdf:about="http://www.omnimatter.com/2004/10/truth_is_strang.html">
+<title>Truth is Stranger than Fiction</title>
+<link>http://www.omnimatter.com/2004/10/truth_is_strang.html</link>
+<description>Cecil Adams of The Straight Dope famously quipped, &quot;These days there&#39;s no such thing as an urban legend. There&#39;s just stuff that reality hasn&#39;t caught up to yet.&quot; He was dead on. It&#39;s as if the zeitgeist takes our unrealized...</description>
+<content:encoded>&lt;p&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/sodatabs_1.jpg&quot; onclick=&quot;window.open(this.href, &#39;_blank&#39;, &#39;width=240,height=240,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot;&gt;&lt;img alt=&quot;Sodatabs_1&quot; title=&quot;Sodatabs_1&quot; src=&quot;http://www.omnimatter.com/images/sodatabs_1.jpg&quot; width=&quot;150&quot; height=&quot;150&quot; border=&quot;0&quot; style=&quot;float: left; margin: 0px 5px 5px 0px;&quot; /&gt;&lt;/a&gt;&lt;a href=&quot;http://www.straightdope.com/faq/officialfaq.html&quot;&gt;Cecil Adams&lt;/a&gt; of &lt;a href=&quot;http://www.straightdope.com/&quot;&gt;The Straight Dope&lt;/a&gt; famously quipped, &quot;These days there&#39;s no such thing as an urban legend.  There&#39;s just stuff that reality hasn&#39;t caught up to yet.&quot;  He was dead on.  It&#39;s as if the &lt;a href=&quot;http://www.google.com/press/zeitgeist.html&quot;&gt;zeitgeist&lt;/a&gt; takes our unrealized fears as a challenge.  From &lt;a href=&quot;http://www.straightdope.com/classics/a1_213.html&quot;&gt;babies in the microwave&lt;/a&gt; to &lt;a href=&quot;http://www.snopes.com/lost/kfc.htm&quot;&gt;Kentucky&#39;s famous&lt;/a&gt; &lt;a href=&quot;http://slate.msn.com/id/2099747/&quot;&gt;&lt;i&gt;Kitchen Fresh Chicken&lt;/i&gt;&lt;/a&gt; to &lt;a href=&quot;http://www.straightdope.com/classics/a3_077.html&quot;&gt;soda can tabs for kidney dialysis&lt;/a&gt;.&lt;br /&gt;
+&lt;br&gt;Where does it all lead?  Is our collective unconscious compelling someone to &lt;a href=&quot;http://www.snopes.com/horrors/poison/hallowee.htm&quot;&gt;tamper&lt;/a&gt; with &lt;a href=&quot;http://www.snopes.com/horrors/mayhem/needles.htm&quot;&gt;halloween candy&lt;/a&gt;?&lt;br /&gt;
+&lt;br clear=&quot;all&quot;&gt;Urban Legends often arise innocently enough.  But, they can be an effective tool for rumormongers to exact revenge or material gain.  &lt;blockquote&gt; Proctor and Gamble was once accused by Amway competitors of being run by devil worshippers who flaunted their satanic religion with a diabolical logo. The logo consisted of an old man&#39;s bearded face in the crescent moon, facing thirteen stars, all set within a circle. Some saw 666, the number of the Beast in Revelation (usually identified with Satan by the Christian watchdogs), lurking in the old man&#39;s beard and in the arrangement of the stars. Others saw a goat, surely a sign of the devil.&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; - &lt;i&gt;The Skeptic&#39;s Dictionary&lt;/i&gt;, Robert Todd Carroll&lt;br /&gt;
+&lt;/blockquote&gt;Before Google made it possible to quickly check on a rumor, one could forgive the &lt;a href=&quot;http://www.joeyskaggs.com/html/cat.html&quot;&gt;gullibility&lt;/a&gt; of its believers.  Look out though, some stories &lt;a href=&quot;http://tafkac.org/ulz/candy.html&quot;&gt;stoke&lt;/a&gt; our &lt;a href=&quot;http://en.wikipedia.org/wiki/The_Protocols_of_the_Elders_of_Zion&quot;&gt;fears&lt;/a&gt; so perfectly they unleash our worst behaviour: &lt;a href=&quot;http://en.wikipedia.org/wiki/Herd_behavior&quot;&gt;the herd mentality&lt;/a&gt;.&lt;br /&gt;
+&lt;/p&gt;</content:encoded>
+
+<dc:subject>History</dc:subject>
+
+<dc:creator>Aaron Muderick</dc:creator>
+<dc:date>2004-10-21T17:16:22-07:00</dc:date>
+</item>
+<item rdf:about="http://www.omnimatter.com/2004/09/awake_during_su.html">
+<title>Awake During Surgery</title>
+<link>http://www.omnimatter.com/2004/09/awake_during_su.html</link>
+<description>It sounds so horrible that you&#39;d think it was a relic of the 19th century. But, it happens more often than you&#39;d think. Where? In modern medical facilities in America and around the world. In about two cases per thousand,...</description>
+<content:encoded>&lt;p&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/surgeon.jpg&quot; onclick=&quot;window.open(this.href, &#39;_blank&#39;, &#39;width=200,height=150,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot;&gt;&lt;img alt=&quot;Surgeon&quot; title=&quot;Surgeon&quot; src=&quot;http://www.omnimatter.com/images/surgeon.jpg&quot; width=&quot;150&quot; height=&quot;112&quot; border=&quot;0&quot; style=&quot;float: right; margin: 0px 0px 10px 5px;&quot; /&gt;&lt;/a&gt;It sounds so &lt;a href=&quot;http://www.straightdope.com/classics/a990226.html&quot;&gt;horrible&lt;/a&gt; that you&#39;d think it was a relic of the 19th century.  But, it happens &lt;a href=&quot;http://www.aana.com/patients/aware/silenced_screams.asp&quot;&gt;more often&lt;/a&gt; than you&#39;d think.  &lt;A href=&quot;http://www.amazon.com/exec/obidos/ASIN/0970027931/aaronsotherwo-20&quot;&gt;Where?&lt;/a&gt;  In modern medical facilities in America and around the world.&lt;/p&gt;
+
+&lt;p&gt;In about two cases per thousand, general anesthesia doesn&#39;t work as planned.  Patients can be awake and feel pain but remain paralyzed, unable to communicate to the surgical staff.  Sometimes patients &lt;a href=&quot;http://archive.columbiatribune.com/2004/May/20040519News019.asp&quot;&gt;feel no pain&lt;/a&gt; but are aware of what is happening to them.  Other patients have no recollection of the surgery but, clearly, an implicit memory of the trauma exists.  These patients experience nightmares, flashbacks, and anxiety.  Remember, surgery can last for hours...an unbearable length of time to a paralyzed but conscious patient.&lt;/p&gt;
+
+&lt;p&gt;Given the failure rate of two per thousand, this nightmare occurs to about forty thousand patients per year in the United States alone.  Anesthesiologists are divided as to how best treat this problem.  Many are hesitant to do anything.  To begin with, general anesthesia is a tricky, dangerous thing.  Until the 1980&#39;s the death rate from general anesthesia was 1 in 10,000.  Although today, with the discovery of &lt;a href=&quot;http://www.uam.es/departamentos/medicina/anesnet/gtoa/hipertermia/dantrolene.html&quot;&gt;dantrolene sodium&lt;/a&gt; as an antidote to the most common &lt;a href=&quot;http://www.mhaus.org/index.cfm/fuseaction/OnlineBrochures.Display/BrochurePK/8AABF3FB-13B0-430F-BE20FB32516B02D6.cfm&quot;&gt;adverse reaction&lt;/a&gt;, the mortality rate has fallen to 1 in 250,000.&lt;/p&gt;
+
+&lt;p&gt;It seems though that &lt;a href=&quot;http://www.signonsandiego.com/uniontrib/20040310/news_1c10surgery.html&quot;&gt;awareness&lt;/a&gt; is on the rise and an effort is being made to &lt;a href=&quot;http://www.physweekly.com/article.asp?edition=2&amp;issueid=162&amp;articleid=1612&quot;&gt;reduce these occurences&lt;/a&gt; in the future.&lt;/p&gt;
+
+&lt;p&gt;  &lt;/p&gt;</content:encoded>
+
+<dc:subject>Science</dc:subject>
+
+<dc:creator>Aaron Muderick</dc:creator>
+<dc:date>2004-09-25T22:51:00-07:00</dc:date>
+</item>
+<item rdf:about="http://www.omnimatter.com/2004/09/typos_in_the_bi.html">
+<title>Typos in the Bible</title>
+<link>http://www.omnimatter.com/2004/09/typos_in_the_bi.html</link>
+<description>A tenet of religious fundamentalism is that the Bible is the actual word of God. In many cases, adherents believe it was transcribed from divine source letter by letter. This is a belief for many Jews, Christians, Muslims, and Mormons....</description>
+<content:encoded>&lt;p&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/morsmithtranslate.jpg&quot; onclick=&quot;window.open(this.href, &#39;_blank&#39;, &#39;width=149,height=202,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot;&gt;&lt;img alt=&quot;Morsmithtranslate&quot; title=&quot;Morsmithtranslate&quot; src=&quot;http://www.omnimatter.com/images/morsmithtranslate.jpg&quot; width=&quot;100&quot; height=&quot;135&quot; border=&quot;0&quot; style=&quot;float: left; margin: 0px 10px 5px 0px;&quot; /&gt;&lt;/a&gt;A tenet of religious fundamentalism is that the Bible is the actual word of God.  In many cases, adherents believe it was transcribed from divine source letter by letter.  This is a belief for many &lt;a href=&quot;http://en.wikipedia.org/wiki/Hasidic_Judaism&quot;&gt;Jews&lt;/a&gt;, &lt;a href=&quot;http://www.revneal.org/Writings/bible.htm&quot;&gt;Christians&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Wahhabism&quot;&gt;Muslims&lt;/a&gt;, and &lt;a href=&quot;http://www.bible.ca/mor-1830-changes.htm&quot;&gt;Mormons&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;One wrench in the works is that religious texts are often read in translation.  In some cases, translations of a translation.  And, yes, even translations of translations of a translation.  The idea that a divine source can maintain its integrity when put through this human process of language translation is troubling to many.  That certain &#39;books&#39; are included by some sects and excluded by others as &lt;a href=&quot;http://www.sacred-texts.com/bib/apo/index.htm&quot;&gt;apocryphal&lt;/a&gt; shows human &lt;a href=&quot;http://www.historicpages.com/texts/apocinfo.htm&quot;&gt;politics&lt;/a&gt; at play.  Apologists argue that the human translators and redactors are divinely inspired in their work.  Each sect claims its &#39;rightness&#39; in the face of God.&lt;/p&gt;
+
+&lt;p&gt;More troubling is the concept of &lt;a href=&quot;http://www.scionofzion.com/revisions.htm&quot;&gt;typos&lt;/a&gt;, changes to simple phrases, and &lt;a href=&quot;http://www.mediahistory.umn.edu/indextext/BibleWriting.html&quot;&gt;other errors&lt;/a&gt; which have clearly been integrated into the texts over the centuries.  Soon you realize that the Bible is fluid like any human document.  And, if this document represents a &#39;best effort&#39; to remain unchanged over time, imagine how many &lt;a href=&quot;http://www.nationmaster.com/encyclopedia/Samaritan&quot;&gt;versions&lt;/a&gt; of other ancient stories must have existed in the past.  Like biological evolution, survival has been a mysterious combination of fitness and chance.&lt;/p&gt;
+
+&lt;p&gt;Just like the errors which slowly accumulate in our DNA over millenia, so here, many &lt;a href=&quot;http://www.christianseparatist.org/sixth/errancy.html&quot;&gt;errors&lt;/a&gt; &lt;a href=&quot;http://students.cua.edu/16kalvesmaki/lxx/&quot;&gt;occurred&lt;/a&gt; over time.  Most went unnoticed until the development of &lt;a href=&quot;http://www.amazon.com/exec/obidos/ASIN/0060630353/aaronsotherwo-20&quot;&gt;scholarly religious analysis&lt;/a&gt; at the end of the 19th century.  Then, in the 20th century, &lt;a href=&quot;http://www.mfa.gov.il/mfa/history/early%20history%20-%20archaeology/cumulative%20table%20of%20contents%20-%20archeological%20sites&quot;&gt;archeological discoveries&lt;/a&gt; of texts written in ancient and classical time periods have elucidated when, where, and whom made many of the recorded changes.&lt;/p&gt;
+
+&lt;p&gt;Needless to say, all these modifications keep those concerned busy fighting, arguing, and disagreeing with each other well into the night.&lt;/p&gt;&lt;p&gt;&lt;b&gt;An Interesting Paradox in the Book of Mormon&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;The Church of Jesus Christ of Latter Day Saints (LDS Church) claims that the Book of Mormon is a divinely inspired translation of the &#39;Nephi Plates&#39;. These were golden plates written in ancient Egyptian, revealed to Joseph Smith and translated by him, and then returned to heaven.  According to the LDS Church, the Book of Mormon was written around 400 AD.  Yet, in translation, it contains numerous errors which seem to have been copied directly from the KJV (King James version) of the Bible written in 1611 AD.&lt;/p&gt;
+
+&lt;p&gt;Specifically, KVJ&#39;s Isaiah 3:17-26 is recognized to be a poor translation from the original Hebrew.  Archeological discovery of ancient Hebrew texts has clarified the exact meaning of the numerous nouns used in this section of the Bible.  This information, theoretically would have been available to an angel in 400 AD but was no longer known to English speakers in 1611 AD.  &lt;/p&gt;
+
+&lt;p&gt;By itself this is odd: That two translations done approximately 200 years (and 5000 miles) apart would be identical.  Of course, if you believe that the KJV translators and Joseph Smith were divinely inspired, you can explain the word for word similarities in the two books fairly easily.  Here however, it is obvious that the KJV is incorrect and that these errors appear verbatim in the Book of Mormon.&lt;/p&gt;
+
+&lt;p&gt;Below, nouns with different translations have been made bold for ease of reading.&lt;/p&gt;
+
+&lt;p&gt;KJV:&lt;/p&gt;
+
+&lt;p&gt;17: Therefore the LORD will smite with a scab the crown of the head of the daughters of Zion, and the LORD will discover their secret parts. &lt;br /&gt;
+18: In that day the Lord will take away the bravery of their tinkling ornaments about their feet, and their cauls, and their &lt;b&gt;round tires like the moon&lt;/b&gt;, &lt;br /&gt;
+19: The &lt;b&gt;chains&lt;/b&gt;, and the bracelets, and the mufflers, &lt;br /&gt;
+20: The bonnets, and the &lt;b&gt;ornaments of the legs&lt;/b&gt;, and the &lt;b&gt;headbands&lt;/b&gt;, and the &lt;b&gt;tablets&lt;/b&gt;, and the &lt;b&gt;earrings&lt;/b&gt;, &lt;br /&gt;
+21: The rings, and nose jewels, &lt;br /&gt;
+22: The changeable suits of apparel, and the mantles, and the &lt;b&gt;wimples&lt;/b&gt;, and the &lt;b&gt;crisping pins&lt;/b&gt;, &lt;br /&gt;
+23: The &lt;b&gt;glasses&lt;/b&gt;, and the fine linen, and the hoods, and the vails. &lt;br /&gt;
+24: And it shall come to pass, that instead of sweet smell there shall be stink; and instead of a &lt;b&gt;girdle &lt;/b&gt;a rent; and instead of well set hair baldness; and instead of a &lt;b&gt;stomacher&lt;/b&gt; a girding of sackcloth; and &lt;b&gt;burning&lt;/b&gt;instead of beauty. &lt;br /&gt;
+25: Thy men shall fall by the sword, and thy mighty in the war. &lt;br /&gt;
+26: And her gates shall lament and mourn; and she being desolate shall sit upon the ground. &lt;/p&gt;
+
+&lt;p&gt;Modern English (Harper Collins Study Bible 1989):&lt;/p&gt;
+
+&lt;p&gt;17: the LORD will afflict with scabs the heads of the daughters of Zion, and the LORD will lay bare their secret parts.&lt;br /&gt;
+18: In that day the LORD will take away the finery of the anklets, the headbands, and the &lt;b&gt;crescents&lt;/b&gt;;&lt;br /&gt;
+19: the &lt;b&gt;pendants&lt;/b&gt;, the bracelets, and the scarfs;&lt;br /&gt;
+20: the head-dresses, the &lt;b&gt;armlets&lt;/b&gt;, the &lt;b&gt;sashes&lt;/b&gt;, the &lt;b&gt;perfume boxes&lt;/b&gt;, and the &lt;b&gt;amulets&lt;/b&gt;;&lt;br /&gt;
+21: the signet rings and nose rings;&lt;br /&gt;
+22: the festal robes, the mantles, the &lt;b&gt;cloaks&lt;/b&gt;, and the &lt;b&gt;handbags&lt;/b&gt;;&lt;br /&gt;
+23: the &lt;b&gt;garments of gauze&lt;/b&gt;, the linen garments, the turbans, and the veils.&lt;br /&gt;
+24: Instead of perfume there will be a stench; and instead of a &lt;b&gt;sash&lt;/b&gt;, a rope; and instead of well-set hair, baldness; and instead of a &lt;b&gt;rich robe&lt;/b&gt;, a binding of sackcloth; instead of beauty, &lt;b&gt;shame&lt;/b&gt;.&lt;br /&gt;
+25: Your men shall fall by the sword and your warriors in battle.&lt;br /&gt;
+26: And her gates shall lament and mourn; ravaged, she shall sit upon the ground.&lt;/p&gt;
+
+&lt;p&gt;Book of Mormon:&lt;/p&gt;
+
+&lt;p&gt;17: Therefore the Lord will smite with a scab the crown of the head of the daughters of Zion, and the Lord will discover their secret parts. &lt;br /&gt;
+18: In that day the Lord will take away the bravery of their tinkling ornaments, and cauls, and round tires like the moon; &lt;br /&gt;
+19: The chains and the bracelets, and the mufflers; &lt;br /&gt;
+20: The bonnets, and the ornaments of the legs, and the headbands, and the tablets, and the ear-rings; &lt;br /&gt;
+21: The rings, and nose jewels; &lt;br /&gt;
+22: The changeable suits of apparel, and the mantles, and the wimples, and the crisping-pins; &lt;br /&gt;
+23: The glasses, and the fine linen, and hoods, and the veils. &lt;br /&gt;
+24: And it shall come to pass, instead of sweet smell there shall be stink; and instead of a girdle, a rent; and instead of well set hair, baldness; and instead of a stomacher, a girding of sackcloth; burning instead of beauty. &lt;br /&gt;
+25: Thy men shall fall by the sword and thy mighty in the war. &lt;br /&gt;
+26: And her gates shall lament and mourn; and she shall be desolate, and shall sit upon the ground. &lt;/p&gt;
+
+&lt;p&gt;&lt;!--&lt;b&gt;Differences between the Masoretic Old Testament and the Samaritan Old Testament&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;Samaritans are an ethnic group living in Israel today.  They are the descendants of people who lived in Samaria (in the West Bank) from a time before the Babylonian conquest through the Christian period.  Although today they are few in number (less than 1000 remain), their religion is representative of Temple-era Jewish practices (First Temple destroyed in 568 BC, Second Temple destroyed in 70 AD) and developed independently from the rest of Judaism.  Thus, their religious texts provide a &#39;alternate version&#39; of the Old Testament.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;b&gt;Today&#39;s Biblical Typo Catchers&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Amusing and/or Quickly Corrected Biblical Typos&lt;/b&gt;--&gt;&lt;/p&gt;</content:encoded>
+
+<dc:subject>Religion</dc:subject>
+
+<dc:creator>Aaron Muderick</dc:creator>
+<dc:date>2004-09-25T21:53:00-07:00</dc:date>
+</item>
+<item rdf:about="http://www.omnimatter.com/2004/09/the_smiley_face.html">
+<title>The Smiley Face Bomber</title>
+<link>http://www.omnimatter.com/2004/09/the_smiley_face.html</link>
+<description>If someone is willing to make &#39;the ultimate sacrifice&#39; for their cause, no amount of security will stop them. Until mindreading machines are perfected and we can peek inside to see the motivations of others, we&#39;re all at risk. Lucas...</description>
+<content:encoded>&lt;p&gt;&lt;a href=&quot;http://coolstuff.typepad.com/photos/uncategorized/lucas_helder_1.jpg&quot; onclick=&quot;window.open(this.href, &#39;_blank&#39;, &#39;width=222,height=180,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot;&gt;&lt;img alt=&quot;Lucas_helder_1&quot; src=&quot;http://www.omnimatter.com/images/lucas_helder_1.jpg&quot; width=&quot;222&quot; height=&quot;180&quot; border=&quot;0&quot; style=&quot;float: right; margin: 0px 0px 10px 5px;&quot; /&gt;&lt;/a&gt;If someone is willing to make &lt;a href=&quot;http://www.essex.ac.uk/armedcon/Countries/Asia/Texts/SriLanka011.htm&quot;&gt;&#39;the ultimate sacrifice&#39;&lt;/a&gt; for their cause, no amount of security will stop them.  Until &lt;a href=&quot;http://eserver.org/cyber/liedetec.html&quot;&gt;mindreading machines&lt;/a&gt; are &lt;a href=&quot;http://www.economist.com/science/displayStory.cfm?story_id=1143317&quot;&gt;perfected&lt;/a&gt; and we can peek inside to see the motivations of others, we&#39;re all at risk.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.cnn.com/interactive/us/0205/pipe.bomber.profile/intro.html&quot;&gt;Lucas Helder&lt;/a&gt; threw his life away.  Perhaps he figured that infamy was an honest trade for a life?  His &lt;a href=&quot;http://www.cnn.com/interactive/us/0205/pipe.bomb.terror/images/intro.map.gif&quot;&gt;goal&lt;/a&gt; was unique but I think he was tardy in action on his plans.  Before September 11th, Helder would have been the &lt;a href=&quot;http://www.cnn.com/2003/TECH/science/03/13/shark.study/&quot;&gt;&#39;story of the summer&#39;&lt;/a&gt; with his own motley crew of copycats.  In the 21st century however, his plan hardly made a blip.  Well, he was Time Magazine&#39;s &lt;a href=&quot;http://www.time.com/time/pow/article/0,8599,236525,00.html&quot;&gt;&#39;Person of the Week&#39;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Of course, what serial crime campaign could be complete without its own &lt;a href=&quot;http://www.thesmokinggun.com/archive/lhletter1.html&quot;&gt;manifesto&lt;/a&gt;?&lt;/p&gt;
+
+&lt;p&gt;By now you must be saying to yourself, &quot;What&#39;s wrong with this guy?  He must be &lt;a href=&quot;http://216.239.41.104/search?q=cache:PDzUkVTyvAcJ:wcbs880.com/national/MailboxBombs-aa/resources_news_html+lucas+helder+update&amp;hl=en&quot;&gt;ill&lt;/a&gt;.  I mean, this is really really &lt;a href=&quot;http://www.newschannel10.com/NewsHelderUpdate.html&quot;&gt;weird&lt;/a&gt;!&quot;  The &lt;a href=&quot;http://209.157.64.200/focus/f-news/1109692/posts&quot;&gt;judge&lt;/a&gt; agrees with you.  &lt;/p&gt;</content:encoded>
+
+<dc:subject>Travel</dc:subject>
+
+<dc:creator>Aaron Muderick</dc:creator>
+<dc:date>2004-09-19T20:28:50-07:00</dc:date>
+</item>
+<item rdf:about="http://www.omnimatter.com/2004/08/the_hidden_trea.html">
+<title>The Hidden Treasure of the Dead Sea Scrolls</title>
+<link>http://www.omnimatter.com/2004/08/the_hidden_trea.html</link>
+<description>The discovery of the Dead Sea Scrolls in Qumran is arguably the most significant archeology discovery of the 20th century. What doesn&#39;t get much mention are the Copper Scrolls discovered in a cave some distance from casks containing preserved documents....</description>
+<content:encoded>&lt;p&gt;&lt;a href=&quot;http://coolstuff.typepad.com/omnimatter/images/copperscroll1.html&quot; onclick=&quot;window.open(&#39;http://coolstuff.typepad.com/omnimatter/images/copperscroll1.html&#39;,&#39;popup&#39;,&#39;width=977,height=413,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot;&gt;&lt;img alt=&quot;copperscroll&quot; src=&quot;http://coolstuff.typepad.com/omnimatter/images/copperscroll-thumb.jpg&quot; width=&quot;200&quot; height=&quot;84&quot; border=&quot;0&quot; style=&quot;float: right; margin: 0px 0px 5px 5px;&quot; /&gt;&lt;/a&gt;The discovery of the &lt;a href=&quot;http://www.ibiblio.org/expo/deadsea.scrolls.exhibit/world.scrolls.html&quot;&gt;Dead Sea Scrolls&lt;/a&gt; in Qumran is arguably the most &lt;a href=&quot;http://biblicalstudies.info/top10/schoville.htm&quot;&gt;significant&lt;/a&gt; archeology &lt;a href=&quot;http://www.nationmaster.com/encyclopedia/List-of-famous-archaeological-discoveries&quot;&gt;discovery&lt;/a&gt; of the 20th century.&lt;/p&gt;
+
+&lt;p&gt;What doesn&#39;t get much mention are the &lt;a href=&quot;http://www.usc.edu/dept/LAS/wsrp/educational_site/dead_sea_scrolls/copperscroll.shtml&quot;&gt;Copper Scrolls &lt;/a&gt;discovered in a cave some distance from casks containing preserved documents.  It seems like this &quot;tantalizing evidence of long lost treasure&quot; would have gained more attention from the pop-science media.&lt;/p&gt;
+
+&lt;p&gt;The most recent &lt;a href=&quot;http://ccat.sas.upenn.edu/~humm/Resources/StudTxts/3Q15.html&quot;&gt;translation &lt;/a&gt; is quite tantalizing.&lt;/p&gt;
+
+&lt;p&gt;Religious and political complications have always hindered archeological research in the region. Perhaps academics have shyed away from the copper scrolls because of the difficulties in deciphering the locations  described? Even when a location is suspected, getting permission to excavate in those places may be well nigh impossible.  Lastly, which aspiring young researcher wants to be labeled with the negative stigma of a &quot;treasure hunter&quot; - a moniker sure to hinder future employment, grants, and credibility.  &lt;/p&gt;
+
+&lt;p&gt;Perhaps one day we&#39;ll get a clearer answer of whether these scrolls represent fact or fiction.&lt;/p&gt;&lt;p&gt;Here is an excerpt from Edmund Wilson&#39;s &lt;i&gt;Israel and the Dead Sea Scrolls&lt;/i&gt; regarding the Copper Scrolls.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;b&gt;Chapter VI&lt;/p&gt;
+
+&lt;p&gt;The Copper Scrolls&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;In March, 1952, two mysterious scrolls of copper were found, on on top of the other, in one of the Dead Sea caves.  They were evidently so brittle with oxidation that it was thought undesirable to try to unroll them.  But the characters had been incised so deeply that it was possible, in reverse,to make out the outermost layer.  Professor K. G. Kuhn of Gottinggen, having studied them, came to the conclusion that they contained instructions for finding the buried treasure of the Essene monastery.  Later on, one of these scrolls was sent to the Manchester College of Science and Technology in the hope that it might be possible to devise some method of opening them.  This was managed in 1955-56 by Dr. H. Wright Baker, Professor of Mechanical Engineering, who contrived a small circular saw which, cutting between the characters, sliced the scroll into strips that could be laid side by side and read.  The second scroll was not sent on, and the pair proved to be two sections of the same document.  This was deciphered by Mr. Allegro and turned out to be, indeed, directions for discovering a hidden treasure.  These directions were rather crudely written, as if in haste, and it would not have been easy to use a stylus on copper, but it was probably thought safer to leave the message on copper rather than parchment, since the chances of preservation were better.  Yet was it really the treasure of the monastery, whose inmates were supposed to have led so austere a life?  There was a good deal of money involved, and vessels of gold and silver.  These scrolls were found at some distance from fragments of broken jars, which suggests that they might have been deposited separately.  Allegro came to believe that the Essenes had nothing to do with these scrolls except, no doubt, to allow them to be hidden in a cave near the monastery, and that the treasure was that of the Temple in Jerusalem, which the priests there had taken the precaution of putting out of the reach of the plundering Roman invaders, just as the Essenes had hidden their library.&lt;/p&gt;
+
+&lt;p&gt;&lt;i&gt;... skipping the part that boringly details endless bickering between the academics involved...&lt;/i&gt;&lt;/p&gt;
+
+&lt;p&gt;In regard to the directions in the copper scrolls, Father Milik adheres firmly to what Allegro calls the &quot;party line&quot;, with which other scholars are inclined to disagree: that the treasure is imaginary, and that the scrolls are an attempt to add documentation to an oriental fantasy.  He cites a work of &quot;popular literature&quot; written in Egypt in Arabic, The Book of Buried Pearls and Precious Mysteries, which gives directions for locating these and which he says is typical of a genre, but he admits that the author of the Dead Sea directions &quot;has succeeded in creating a strong illusion of the real, thanks to the principles that he has adopted: the elimination of &#39;historical&#39; details and explanations of the origin of the caches, reduction of the information to the strict minimum of topographical and numerical data.&quot;  But Milik, like Allegro makes and effort to exactly determine these sites.  This is difficult because there are only a few place names - Mount Gerizim, the Vale of Achor - that are recognizable today; about the Tomb of Absalom, the Tomb and Garden of Zadok, and the Valley of Secacah, which is so often mentioned, one can only speculate.  The descriptions of the sites may be purposely puzzling, so as to be understood only by initiates.  I agree with Allegro that this list is too terse and particularized - in its way, too businesslike - not to indicate genuine treasures.  Allegro defends his conviction by reminding us of the three jugs containing five hundred silver coins that were found under the floor of the monastery, and the accusation brought by de Vaux of &quot;eviscerating its soil and walls&quot; refers to Allegro&#39;s attempt there to excavate further and find something more - an attempt which, as can easily be understood, very much distressed  the archeologist when, on visiting the ruins he had excavated, he discovered that, without his permission, someone else had been tampering with them.  Milik tries to insist that the value of the treatise is so enormous as to be incredible, but Allegro replies that we do not know how the talent was then valued.  The values assigned in the Old Testament and the later rabbinical literature would indeed give fantastic weights, and if the unjust steward of Matthew was dealing in Old Testament values, &quot;he could have held his own quite comfortable on Wall Street,&quot; and the &quot;good and faithful servant&quot; of the same gospel &quot;who speculated so successfully with his five talents would have needed a fair-sized wheelbarrow to bring his master the resultant four hundred weights of silver.&quot;&lt;/p&gt;
+
+&lt;p&gt;The translations by Allegro and by Milik of the text of the copper scrolls differ considerable from one another, and the former, in a second edition of his work, acknowledges Milik&#39;s contribution and defers it to some extent in making revisions of his own.  He regrets tha tthe recent controversy should have destroyed a pleasant relationship, which had been based partly on a common enthusiasm for the writings of P. G. Wodehouse.  Allegro&#39;s self-defense for publishing the text without permission of his colleagues is based on the complaint that I have already noted on the part of several scholars: that de Vaux had taken an unconscionably long time in publishing the other documents.  To this the team in Old Jerusalem reply that Allegro, as a member of the team, has violated the ethics of scholarship.  He justifies the expedition undertaken on his own initiative on the ground that the official group, since they regarded the treasure as imaginary, were not trying to do anything about it.  I was told in Jordanian Jerusalem that the official authorities of Jordan, who had undoubtably given some authorization to Allegro&#39;s expedition, had become rather cold, as he reports in his book, when he had failed to find anything of importance - a few coins merely and pieces of pottery.&lt;/p&gt;</content:encoded>
+
+<dc:subject>History</dc:subject>
+
+<dc:creator>Aaron Muderick</dc:creator>
+<dc:date>2004-08-17T17:03:00-07:00</dc:date>
+</item>
+<item rdf:about="http://www.omnimatter.com/2004/08/the_ivy_league_.html">
+<title>The Ivy League Nudes</title>
+<link>http://www.omnimatter.com/2004/08/the_ivy_league_.html</link>
+<description>Early 20th century eugenics is a bizarre collision of scientific fact, blatant pseudoscience, racism, authoritarianism, and cruelty. These ideas were criticized at the time, often with the &#39;slippery slope&#39; argument. Well, society definitely slipped (a la Auschwitz) and the philosophy...</description>
+<content:encoded>&lt;p&gt;&lt;a href=&quot;http://coolstuff.typepad.com/omnimatter/images/nudes1.html&quot; onclick=&quot;window.open(&#39;http://coolstuff.typepad.com/omnimatter/images/nudes1.html&#39;,&#39;popup&#39;,&#39;width=181,height=156,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0&#39;); return false&quot;&gt;&lt;img alt=&quot;nudes&quot; src=&quot;http://coolstuff.typepad.com/omnimatter/images/nudes-thumb.gif&quot; width=&quot;128&quot; height=&quot;110&quot; border=&quot;0&quot; style=&quot;float: left; margin: 0px 5px 5px 0px;&quot; /&gt;&lt;/a&gt;Early 20th century eugenics is a bizarre collision of scientific fact, blatant pseudoscience, racism, authoritarianism, and cruelty.  These ideas were criticized at the time, often with the &#39;slippery slope&#39; argument.  Well, society definitely slipped (a la Auschwitz) and the philosophy has become unacceptable today.&lt;br /&gt;
+&lt;blockquote&gt;&quot;A truly breathtaking missive. What Hersey seemed to be saying was that entire generations of America&#39;s ruling class had been unwitting guinea pigs in a vast eugenic experiment run by scientists with a master-race hidden agenda...to confer on some of the most overprivileged people in the world the one status distinction it seemed they&#39;d forever be denied -- victim.&quot;&lt;/blockquote&gt;The &lt;a href=&quot;http://tafkac.org/collegiate/ivy_league_nude_photos.html&quot;&gt;Ivy League Nudes&lt;/a&gt; combine the mystique of the ivory tower, sceret rituals of initiation, the air of celebrity, and a hint of scandalous sexual activity under the pretense &quot;for medical purposes only.&quot;&lt;/p&gt;</content:encoded>
+
+<dc:subject>History</dc:subject>
+
+<dc:creator>Aaron Muderick</dc:creator>
+<dc:date>2004-08-17T16:00:00-07:00</dc:date>
+</item>
+
+
+</rdf:RDF>
+<!-- ph=1 -->
+<!-- nhm:from_kauri -->

@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"  xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Adactio</title>
+		<description>The online journal of Jeremy Keith, an Irish web developer living and working in Brighton, England.</description>
+		<language>en</language>
+		<link>http://adactio.com/journal/</link>
+		<managingEditor>jeremy@adactio.com (Jeremy Keith)</managingEditor>
+		<webMaster>jeremy@adactio.com (Jeremy Keith)</webMaster>
+		<image>
+			<title>Adactio</title>
+			<link>http://adactio.com/journal/</link>
+			<url>http://adactio.com/images/rssbutton.gif</url>
+			<width>88</width>
+			<height>19</height>
+		</image>
+		<atom:link href="http://adactio.com/journal/rss" rel="self" type="application/rss+xml" />
+		<item>
+			<title>Shape shifting</title>
+			<link>http://adactio.com/journal/1532</link>
+			<description>
+<![CDATA[
+<p>I’ve been with the same <abbr title="Internet Service Provider">ISP</abbr> for years: <a href="http://www.eclipse.net.uk/">Eclipse Internet</a>. I never had any cause to complain until recently. I’ve been finding that certain types of requests simply weren’t completing; file uploads, some forms, Ajax requests…</p>
+
+<p>I started googling for any similar reports. I found quite a few forum posts, all of them expressing the same sentiment; that Eclipse used to be good but that since getting bought out by Kingston, service had really gone downhill. Most alarmingly of all, I read reports of <a href="http://en.wikipedia.org/wiki/Traffic_shaping" rel="tag">traffic shaping</a>.</p>
+
+<p>I called up technical support. They didn’t deny it. Instead, they tried to upsell me on a package that would give me an admin panel to allow more control over exactly <em>how</em> my packets were throttled.</p>
+
+<p>Screw. That.</p>
+
+<p>I started shopping around for a new ISP. When <a href="http://twitter.com/adactio/status/1028144138">I twittered what I was doing</a>, I received some good recommendations. Eventually, I was able to narrow my search down to two providers who both sounded good: <a href="http://www.zen.co.uk/">Zen</a> and <span class="vcard"><a class="fn org url" href="http://www.idnet.net/">IDNet</a></span>. With little else to distinguish between the two companies, their respective websites became the deciding factor. That settled it. IDNet was the clear winner. Not only is their site prettier, it also validates and even <a href="http://www.idnet.net/contact/">uses hCard</a>.</p>
+
+<p>To cancel my Eclipese account, I needed to call them to request a <a href="http://en.wikipedia.org/wiki/Migration_Authorisation_Code" rel="tag"><abbr title="Migration Authorisation Code">MAC</abbr></a>. Of course the reason why they make you call is so that they can try to persuade not to leave. Sure enough, the guy who took my call asked <q>And can you tell me why you’re moving away from Eclipse?</q></p>
+
+<p><q>Traffic shaping,</q> I responded.</p>
+
+<p><q>Ah right,</q> he said. <q>Technical reasons.</q></p>
+
+<p>I corrected him. <q>Moral reasons, actually.</q></p>
+
+<p>I got the info I needed. I ordered my new broadband service. Today I switched over.</p>
+
+<p>If you want to find out if your broadband provider is a filthy traffic-shaper, check to see if it’s listed on <a href="http://azureuswiki.com/index.php/Bad_ISPs" rel="tag">this wiki page of bad ISPs</a>.</p>
+
+<p>If you find yourself changing to a more ethical ISP, you too will probably be asked to explain why you’re jumping ship. Just tell them what you want:</p>
+
+<blockquote>
+  <p><a href="http://www.isen.com/blog/2006/01/my-oreilly-etel-talk.html">Fat Pipe, Always On, Get Out of the Way.</a></p>
+</blockquote>
+
+<hr />
+<p>
+Tagged with
+<a rel="tag" href="http://adactio.com/journal/tag/broadband">broadband</a>
+<a rel="tag" href="http://adactio.com/journal/tag/internet">internet</a>
+<a rel="tag" href="http://adactio.com/journal/tag/isp">isp</a>
+<a rel="tag" href="http://adactio.com/journal/tag/eclipse">eclipse</a>
+<a rel="tag" href="http://adactio.com/journal/tag/idnet">idnet</a>
+</p>
+]]>
+			</description>
+			<pubDate>Tue, 09 Dec 2008 23:40:56 GMT</pubDate>
+			<guid>http://adactio.com/journal/1532</guid>
+			<category>broadband</category>
+			<category>internet</category>
+			<category>isp</category>
+			<category>eclipse</category>
+			<category>idnet</category>
+		</item>
+		<item>
+			<title>Feedback loopy</title>
+			<link>http://adactio.com/journal/1531</link>
+			<description>
+<![CDATA[
+<p><a href="http://24ways.org/">24 Ways</a> is back again this year. Today’s article is a little something I penned called <a href="http://24ways.org/2008/the-ie6-equation"><cite>The <abbr title="Internet Explorer">IE</abbr>6 Equation</cite></a>. Share and enjoy!</p>
+
+<p>The design of 24 Ways has been refreshed for this festive season and it has prompted quite a varied reaction. That’s always a good sign. You might love it or you might hate it but you’re probably not ambivalent about it. <span class="vcard"><a href="http://www.duoh.com/" class="url" rel="friend met colleague"><abbr class="fn" title="Veerle Pieters">Veerle</abbr></a></span> has written more on this subject, provocatively asking <a href="http://www.duoh.com/news/article/do-you-innovate-or-opt-for-the-safe-route-in-web-design/"><cite>Do you innovate or opt for the safe route in web design?</cite></a></p>
+
+<p>The implementation prompted as much feedback as the design itself. Clearly, 24 Ways is a site with an immovable deadline. It’s an advent calendar so it <em>must</em> go live on December 1st. This year, that meant that some cross-browser issues weren’t sorted out on the first day. A few days after the site launched, everything was hunky-dory but in the interim, there was a clamour of <q>epic fail!</q> from indignant visitors to the site. I’m finding that <a href="http://waxy.org/2008/03/abort_retry_or/">Andy’s thoughts on this term of derision</a> has become the canonical document to <a href="http://flickr.com/photos/lachlanhardy/3072209801/#comment72157610543572190">point people to</a> for a healthy dose of perspective.</p>
+
+<p><cite class="vcard"><a href="http://www.merlinmann.com/" rel="url fn">Merlin Mann</a></cite>’s observation, delivered in fewer than 140 characters, deserves to be framed and mounted next to every input device:</p>
+
+<blockquote>
+  <p><a href="http://twitter.com/hotdogsladies/statuses/870670777">Some days, the web feels like 5 people trying to make something; 5k people turning it into a list; and 500MM people saying, “FAIL.”</a></p>
+</blockquote>
+
+<p>If you’ve ever created anything on the web—a story, a picture, a video or an application—then you’ll be familiar with <a href="http://www.youtube.com/watch?v=qXeTfDloDCU">the range of responses</a> that will result. I don’t just mean the laughably mindless babblings of the <a href="http://digg.com/movies/How_One_Guy_s_Flickr_Photo_Wound_Up_in_the_Iron_Man_Movie">Diggtards</a> and <a href="http://www.reddit.com/r/offbeat/comments/7gr0v/three_minutes_into_iron_man_there_was_my_photo/">Reddidiots</a>; I’m referring to that peculiar effect that sitting behind a monitor has on otherwise level-headed well-adjusted people. In the same way that some people undergo a Jekyll and Hyde transformation behind the wheel of a car, computer keyboards have a tendency to bring out the <a href="http://www.penny-arcade.com/comic/2004/03/19/">fuckwad</a> in many of us—I include myself amongst that group.</p>
+
+<p>The upshot of this effect is that criticism tends to be harsher online than if it were delivered in real life, which might just be due to the lack of <a href="http://en.wikipedia.org/wiki/Phatic" rel="tag">phatic communication</a>. Should you find yourself on the receiving end of some criticism, having built a labour of love, I’ve put together a hierarchy of verb tenses by which you can weigh the feedback you’re receiving:</p>
+
+<ol>
+<li><strong>Past</strong>. Advice from someone who has also built something is valuable. Their opinion is informed by experimental data.</li>
+<li><strong>Present</strong>. If someone else is also building something, it’s worth paying attention to what they have to say.</li>
+<li><strong>Conditional</strong>. This is the bottom of the pile. If someone describes what they “would” have done or what you “should” have done, it isn’t worth wasting your retinas on the photons of that feedback.</li>
+</ol>
+
+<p>Although this hierarchy of verb tenses was prompted by web-native creations, it probably works equally well for film-making, plumbing, literature, dentistry, music, or just about any endeavour of the human spirit.</p>
+
+<hr />
+<p>
+Tagged with
+<a rel="tag" href="http://adactio.com/journal/tag/24ways">24ways</a>
+<a rel="tag" href="http://adactio.com/journal/tag/criticism">criticism</a>
+<a rel="tag" href="http://adactio.com/journal/tag/language">language</a>
+</p>
+]]>
+			</description>
+			<pubDate>Mon, 08 Dec 2008 02:40:17 GMT</pubDate>
+			<guid>http://adactio.com/journal/1531</guid>
+			<category>24ways</category>
+			<category>criticism</category>
+			<category>language</category>
+		</item>
+		<item>
+			<title>Iron Man and me</title>
+			<link>http://adactio.com/journal/1530</link>
+			<description>
+<![CDATA[
+<p>All of <a href="http://flickr.com/photos/adactio/" rel="me">my Flickr pictures</a> are published under a <a href="http://creativecommons.org/licenses/by/2.0/deed.en_GB">Creative Commons attribution licence</a>. One of the reasons I switched over to using this licence was so that people didn’t have to write and ask me whenever they want to republish one of my photos. But I still get plenty of emails from people asking me if it would be okay to use one of my pictures. I’m very lax at responding to those requests. If and when I do respond, I point out that they don’t really need to ask; as long as they credit me—as either adactio or Jeremy Keith—then they can use my photos wherever and however they want.</p>
+
+<p>Back in March, right before I was setting out for Mix’08 in Vegas and South By Southwest in Austin, I received a typical request:</p>
+
+<blockquote>
+  <p>Is the photo <a href="http://flickr.com/photos/adactio/301112397"><cite>Andy in the VAB</cite></a> your image on flickr? If so can you please contact me with regard to possibly allowing us to use a part of this image in a feature film.</p>
+</blockquote>
+
+<p><a href="http://flickr.com/photos/adactio/301112397"><img src="http://farm1.static.flickr.com/106/301112397_33a4796a4b_m.jpg" alt="Andy in the VAB" title="" /></a></p>
+
+<p>I didn’t respond. I was too busy packing and gearing myself for a big showdown with Microsoft (this was right before they reversed their decision on <a href="http://adactio.com/articles/1436/">IE8’s default rendering</a>). I soon received a second email with more details:</p>
+
+<blockquote>
+  <p>The photograph would be cropped in a way where no people would be shown.  We are interested in using this image as a background to insert our main characters which would be included as part of a biography film on our main character which is shown at an award ceremony honoring him in the film.</p>
+</blockquote>
+
+<p>I thought it was an odd picture to be asking about. Let’s face it; it’s not a very good photo. It’s blurry and washed out. I guess it’s somewhat unusual in that it was shot inside the <a href="http://en.wikipedia.org/wiki/Vehicle_Assembly_Building" rel="tag">Vehicle Assembly Building</a> at Cape Canaveral. Usually members of the public aren’t allowed inside. Myself, <span class="vcard"><a href="http://andybudd.com/" rel="friend met co-worker" class="url"><abbr title="Andy Budd" class="fn">Andy</abbr></a></span> and <span class="vcard"><a href="http://boagworld.com/" rel="friend met colleague" class="url"><abbr title="Paul Boag" class="fn">Paul</abbr></a></span> were lucky enough to be part of <a href="http://adactio.com/journal/1208/">the first open day since 2001</a>. It was all thanks to an invitation from Benny, a bona fide rocket scientist at NASA—thanks again, Benny!</p>
+
+<p>I never got around to responding to the emails. I figured that, whoever it was, if they really wanted to use the picture, they would notice the licence and realise that they didn’t have to ask permission.</p>
+
+<p>I quickly forgot all about it. Other events were foremost in my mind. I got a call from Pete Le Page and Chris Wilson telling me that Internet Explorer 8 was going to render pages as if it were—get this—Internet Explorer 8. Now I was going to Vegas for a celebration instead of a battle.</p>
+
+<p>After a long trip across the Atlantic, I awoke in my hotel on the first morning of the conference, eager to hear the opening keynote. But before I could head downstairs, my mobile phone rang. I answered it and the woman on the other end said, “Hi. I sent you two emails about using a picture of yours…”</p>
+
+<p>“Ah, right!”, I said. I then launched into my usual spiel about Creative Commons licencing. I explained that she was free to use my picture. All she had to do was include a credit somewhere in her little movie.</p>
+
+<p>“Well”, she said, “the thing is, getting your name in the credits usually costs at least $1,500. That’s why we need you sign the license release form I sent.”</p>
+
+<p>“Wait a minute”, I said. “What is this for?”</p>
+
+<p>“It’s for a movie that’s currently in production called Iron Man, starring Robert Downey Jnr.”</p>
+
+<p>Holy crap! One of my photos was going to be in Iron Man? That certainly put a new spin on things.</p>
+
+<p>“So I guess you want to use the picture because it’s inside NASA’s Vehicle Assembly Building?” I asked.</p>
+
+<p>“No. We just thought it was a picture of some warehouse or something.”</p>
+
+<p>The woman on the other end of the phone—her name was <span class="vcard"><a href="http://clearedbyashley.com/" class="url"><abbr title="Ashley Kravitz" class="fn">Ashley</abbr></a></span>—said she could reimburse me for the use of my photo if I signed the form she sent. I thanked her, told her I didn’t need any reimbursement, and said I would print out and sign the form for her. Ashley made it clear that I would need to get the form faxed to her before the end of the day.</p>
+
+<p>There was a printer in my hotel room so I set about getting it connected up to my Macbook. That’s when disaster struck. My Macbook began making the dreaded ticking time bomb noise. Within seconds, my hard drive was dead, broken, kaput. Pining for the fjords, it had shuffled off this mortal coil and was an ex hard drive.</p>
+
+<p>Well aware of the irony of my Apple hardware failing while I was attending a Microsoft conference, I abandoned all hope of printing out the license release form and sat in on the opening keynote. This consisted of a few words from Ray Ozzie, a quick look at IE8 and about a billion hours of Silverlight demos. That’s what it felt like anyway.</p>
+
+<p>The next day, I made my way to Austin for South by Southwest. That turned out to be <a href="http://adactio.com/journal/1420/">quite an adventure</a>.</p>
+
+<p>Once I finally made it to Austin, I settled into a comfortable routine of geeking out, having fun and generally over-indulging. As I was making my way to the conference centre one morning, my mobile phone rang. It was Ashley.</p>
+
+<p>“Sorry I didn’t manage to get the form to you”, I said. “My laptop died on me. I know it’s too late now.”</p>
+
+<p>“Actually, there’s still time”, she responded.</p>
+
+<p>“Look”, I said. “Let’s cut out the computers completely. Can you fax the form to my hotel? I can sign it and fax it back to you straight away.”</p>
+
+<p>And that’s exactly what we did.</p>
+
+<p><a href="http://www.imdb.com/title/tt0371746/"><cite>Iron Man</cite></a> was released a few weeks later. I never got ‘round to seeing it in the cinema; I’m not a big fan of the whole <a href="http://adactio.com/journal/1493/">cinema-going experience</a>. But some time later I was travelling across the Atlantic yet again and one of the in-flight movie options was <cite>Iron Man</cite>. I fired it up, wondering if my picture had made it into the final cut and even if it had, whether I’d be able to spot it.</p>
+
+<p>Three minutes into the movie, there was my photo.</p>
+
+<p><a href="http://adactio.s3.amazonaws.com/images/IronMan.jpg"><img src="http://adactio.s3.amazonaws.com/images/IronMan-small.jpg" alt="Jeff Bridges and Robert Downey Jnr. in Iron Man" title="" /></a></p>
+
+<p>It fills the screen. The camera lingers over it while performing its best Ken Burns effect. Not only was Robert Downey Jnr. photoshopped onto the picture, Jeff Bridges was on there too! The Dude!! …On my picture!!!</p>
+
+<p>My Flickr pictures have been used in some pretty strange places but this must surely be the strangest …and the coolest.</p>
+
+<p><a href="http://flickr.com/photos/adactio/3073579891/"><img src="http://adactio.s3.amazonaws.com/images/IronMan-BeforeAfter-small.jpg" alt="Before and after" title="" /></a></p>
+
+<hr />
+<p>
+Tagged with
+<a rel="tag" href="http://adactio.com/journal/tag/ironman">ironman</a>
+<a rel="tag" href="http://adactio.com/journal/tag/flickr">flickr</a>
+<a rel="tag" href="http://adactio.com/journal/tag/photography">photography</a>
+<a rel="tag" href="http://adactio.com/journal/tag/film">film</a>
+<a rel="tag" href="http://adactio.com/journal/tag/movie">movie</a>
+<a rel="tag" href="http://adactio.com/journal/tag/mix08">mix08</a>
+<a rel="tag" href="http://adactio.com/journal/tag/sxsw08">sxsw08</a>
+<a rel="tag" href="http://adactio.com/journal/tag/sxswi08">sxswi08</a>
+<a rel="tag" href="http://adactio.com/journal/tag/sxsw">sxsw</a>
+</p>
+]]>
+			</description>
+			<pubDate>Mon, 01 Dec 2008 00:35:50 GMT</pubDate>
+			<guid>http://adactio.com/journal/1530</guid>
+			<category>ironman</category>
+			<category>flickr</category>
+			<category>photography</category>
+			<category>film</category>
+			<category>movie</category>
+			<category>mix08</category>
+			<category>sxsw08</category>
+			<category>sxswi08</category>
+			<category>sxsw</category>
+		</item>
+		<item>
+			<title>Preservation and design</title>
+			<link>http://adactio.com/journal/1529</link>
+			<description>
+<![CDATA[
+<p><cite class="vcard"><a href="http://jasonsantamaria.com/" class="url fn n nickname" rel="friend met colleague"><abbr title="Jason" class="given-name"><abbr title="Santa Maria" class="family-name">Stan</abbr></abbr></a></cite> is baring his soul and showing <a href="http://jasonsantamaria.com/articles/my-first-website/">his first website</a>. He explains his actions thusly:</p>
+
+<blockquote>
+  <p>As embarrassing as it might be, I’m putting <a href="http://v1.jasonsantamaria.com/">that old version</a> (as well as <a href="http://v2.jasonsantamaria.com/">my second site</a>) online because I believe in trying to preserve the things we make.</p>
+</blockquote>
+
+<p>He also says:</p>
+
+<blockquote>
+  <p>There are organizations like Archive.org/Wayback Machine that are doing a good job of capturing the web, but it’s still not quite there yet. For now, I don’t think it’s a bad idea for us to keep our own archives.</p>
+</blockquote>
+
+<p>That echoes something I said in my talk, <a href="http://adactio.com/articles/1522/"><cite>The Long Web</cite></a>:</p>
+
+<blockquote>
+  <p>Brewster Kahle’s Internet Archive is a magnificent undertaking. But the scale of the endeavour is monumental. Saving our culture is a task that will probably need to be crowdsourced if it is to succeed.</p>
+</blockquote>
+
+<p>You can <a href="http://adactio.com/articles/1522/">read the whole thing</a> if you&#8217;re interested in more of my thoughts on digital preservation but for now I&#8217;m going to follow Jason&#8217;s lead and show the first two versions of this site:</p>
+
+<ul>
+<li><a href="http://adactio.com/version1/">Adactio, version 1</a></li>
+<li><a href="http://adactio.com/version2/">Adactio, version 2</a></li>
+</ul>
+
+<p>As you&#8217;ll see, I was doing superfluous bloated JavaScript effects before they were fashionable. I&#8217;m very, very glad that I switched my site over its current shape <a href="http://adactio.com/journal/1">seven years ago</a>. As Jason says:</p>
+
+<blockquote>
+  <p>We all have the urge to redesign our websites every other month, but it’s heartbreaking to see old designs just vanish forever.</p>
+</blockquote>
+
+<p>But in my case I&#8217;m trying to have my cake and eat it too. Of course I get the urge to redesign my site but instead of <em>replacing</em> the existing design, I add the new design to the <a href="http://adactio.com/about/site.php#skinslist">list of options</a>. This approach is at once completely in agreement and utterly at odds with Jason&#8217;s claim:</p>
+
+<blockquote>
+  <p>The things we write are published with a specific design and context. When we change that, we break the context and alter the original qualities of that piece of work.</p>
+</blockquote>
+
+<p>I&#8217;m finding that on today&#8217;s web, content and design no longer have a one-to-one relationship. One piece of data can exist in many different contexts: a one-to-many relationship. A blog post appearing at a website URL or in an RSS reader is a fairly simplistic example. But think about, say, all the photos on Flickr and the myriad places where they might be viewed. Then there are services like <a href="http://fireeagle.yahoo.net/">Fire Eagle</a> and <a href="http://amee.cc/"><abbr title="Avoiding Mass Extinction Engine">AMEE</abbr></a> where the content has no visible home. It&#8217;s the data that matters.</p>
+
+<p>That&#8217;s not to say that design is no longer important. Far from it. With the proliferation of all this data, it&#8217;s more important than ever to present it in a way that makes sense and, in a best-case scenario, in a way that has an emotional impact. The difference with the web as the delivery mechanism is that the design can be tailored to the person consuming the data. That is both immensely liberating and unbelievably challenging.</p>
+
+<p>This is the kind of stuff that <span class="vcard"><a href="http://veen.com/jeff" class="fn url" rel="friend met colleague">Jeff Veen</a></span> has been talking about lately as <a href="http://huffduffer.com/adactio/9"><cite>Designing Our Way Through Data</cite></a>.</p>
+
+<hr />
+<p>
+Tagged with
+<a rel="tag" href="http://adactio.com/journal/tag/preservation">preservation</a>
+<a rel="tag" href="http://adactio.com/journal/tag/design">design</a>
+</p>
+]]>
+			</description>
+			<pubDate>Sun, 23 Nov 2008 13:46:34 GMT</pubDate>
+			<guid>http://adactio.com/journal/1529</guid>
+			<category>preservation</category>
+			<category>design</category>
+		</item>
+		<item>
+			<title>Danmaku</title>
+			<link>http://adactio.com/journal/1528</link>
+			<description>
+<![CDATA[
+<p>Here’s <a href="http://www.eurogamer.net/article.php?article_id=300227">an interview with the makers</a> of the game <a href="http://www.bizarrecreations.com/games/geometry_wars_retro_evolved/">Geometry Wars</a>, a game I find utterly fascinating for the way its very simple rule base quickly results in complex hallucinatory visions of beauty that are simultaneously mesmerising and baffling to watch.</p>
+
+<p>After reading the interview, I moved on to the next tab I had open in my browser courtesy of <span class="vcard"><a href="http://infovore.org/" rel="friend met colleague" class="url"><abbr title="Tom Armitage" class="fn">Tom</abbr></a></span>’s always excellent <a href="http://infovore.org/category/delicious/">links</a>. This was <a href="http://deflatermouse.vox.com/library/post/bang-bang-my-baby-shot-me-down.html">a post by Simon Wistow</a> describing <a href="http://casey.org.uk/ipod_rrootage/">the iPhone version of the game rRootage</a>. There I came across the word <cite lang="jp">弾幕</cite> or <cite class="jp">danmaku</cite> meaning <a href="http://en.wikipedia.org/wiki/Shoot_'em_up#Bullet_hell" rel="tag">bullet hell</a>:</p>
+
+<blockquote>
+  <p>&#8230;a sub-genre of shoot &#8216;em up video games in which the entire screen is often almost completely filled with enemy bullets.</p>
+</blockquote>
+
+<p>Next time I’m trying to describe Geometry Wars I think I’ll just say <q>It’s kind of danmaku.</q></p>
+
+<hr />
+<p>
+Tagged with
+<a rel="tag" href="http://adactio.com/journal/tag/games">games</a>
+<a rel="tag" href="http://adactio.com/journal/tag/gaming">gaming</a>
+<a rel="tag" href="http://adactio.com/journal/tag/danmaku">danmaku</a>
+</p>
+]]>
+			</description>
+			<pubDate>Sun, 23 Nov 2008 12:42:09 GMT</pubDate>
+			<guid>http://adactio.com/journal/1528</guid>
+			<category>games</category>
+			<category>gaming</category>
+			<category>danmaku</category>
+		</item>
+		<item>
+			<title>Rating and launching</title>
+			<link>http://adactio.com/journal/1527</link>
+			<description>
+<![CDATA[
+<p><a href="http://www.ratemyarea.com/">Rate My Area</a> describes itself as:</p>
+
+<blockquote>
+  <p>…the new and easy way to find, review, share and discuss all that’s good (and not so good!) in your area.</p>
+</blockquote>
+
+<p>The name is a little bit confusing. You don’t actually rate your area as such, you rate the businesses in your area. But <cite>Rate My Cafés, Pubs, Takeaways and Everything Else</cite> would be a very long-winded name.</p>
+
+<p>Anyway, the reason I mention the site is that <a href="http://clearleft.com/">Clearleft</a> had a hand in it: information architecture, visual design, and front-end build. That last part was where I was involved; markup, CSS and JavaScript. Although the site launched just this week, we finished our work on it finished quite a while back. We were beginning to wonder if it would ever see the light of day. Now that the site has finally launched, I can see where the time has gone: they’ve been seeding the site with oodles and oodles of good data. It makes quite a difference: instead of launching a ghost town, it feels like a vibrant, active place.</p>
+
+<p>I had another concern with the launch of Rate My Area: after all this time, would any of my markup have survived intact? I needn’t have worried. Although there’s been plenty of extra work done on top of the templates we provided, the attention to detail has remained consistently high. As most front-end developers will agree, it’s not often that you can proudly point to a final site without having to add disclaimers about late additions that messed with your nice, pristine markup. Rate My Area looks like being an exception. As well as maintaining <span class="vcard"><a href="http://paulannett.co.uk/" class="url" rel="friend met co-worker"><abbr class="fn" title="Paul Annett">Paul</abbr></a></span>’s beautiful and daring visual design, the site has a solid foundation of semantic markup stuffed full of microformats and enhanced with unobtrusive JavaScript.</p>
+
+<p>My congratulations (and thanks) go out to <span class="vcard"><a href="http://www.ratemyarea.com/people/mike-1" rel="acquaintance met" class="url"><abbr title="Mike Brennan" class="fn">Mike</abbr></a></span> and <span class="vcard"><a href="http://www.ratemyarea.com/people/rory-8" class="url" rel="acquaintance met"><abbr title="Rory Stones" class="fn">Rory</abbr></a></span>, the lads with the Rate My Area vision. Right now the site is confined to areas in Dublin but it will expand; the rest of Ireland, then the <abbr title="United Kingdon">UK</abbr>, and then …the world. Mwuhahaha!</p>
+
+<p>Oh, one more thing: the site has an iPod version (not Clearleft&#8217;s work). Alas, you are directed automatically if you visit www.RateMyArea.com on your iPhone/iPod. I much prefer a separate subdomain like <a href="http://m.twitter.com/">m.twitter.com</a> and <a href="http://m.pownce.com/">m.pownce.com</a>. Still, it&#8217;s one of the nicest iPhone sites I&#8217;ve seen.</p>
+
+<hr />
+<p>
+Tagged with
+<a rel="tag" href="http://adactio.com/journal/tag/markup">markup</a>
+<a rel="tag" href="http://adactio.com/journal/tag/ratemyarea">ratemyarea</a>
+<a rel="tag" href="http://adactio.com/journal/tag/clearleft">clearleft</a>
+</p>
+]]>
+			</description>
+			<pubDate>Thu, 20 Nov 2008 12:16:33 GMT</pubDate>
+			<guid>http://adactio.com/journal/1527</guid>
+			<category>markup</category>
+			<category>ratemyarea</category>
+			<category>clearleft</category>
+		</item>
+		<item>
+			<title>Big in Japan</title>
+			<link>http://adactio.com/journal/1526</link>
+			<description>
+<![CDATA[
+<p>I&#8217;m back from Japan. Thank you to everyone who took the time to <a href="http://adactio.com/journal/1525/#comment-container">give me some sightseeing tips</a>. I had a a great trip.</p>
+
+<p><a href="http://east08.webdirections.org/">Web Directions East</a> was really well organised. <span class="vcard"><a href="http://blogs.westciv.com/dog_or_higher/" class="url" rel="friend met colleague"><abbr title="John Allsopp" class="fn">John</abbr></a></span> and his team took really good care of me and all the other speakers. The only glitch was on my part and it was medical in nature.</p>
+
+<p>Maybe it was the long flight over, maybe it was lack of sleep, but my body protested its new-found surroundings by rebelling in the vocal department. As I was wrapping up my presentation on stage on the morning of the conference, I could feel my throat becoming raspier. An hour or two later, my voice was on its way out. I attempted some damage control by ducking back to the hotel for the afternoon which meant that sadly, I missed a whole bunch of undoubtedly excellent presentation while I tried resting up my body and throat. I still had a whole day of workshopping to do two days after the conference proper and I needed my voice for that.</p>
+
+<p>I spent the day before the workshop being somewhat antisocial by not speaking at all. That helped somewhat but on the day of the workshop itself, I still sounded like Tom Waits. From a medical standpoint, I probably shouldn&#8217;t have attempted to spend a whole day talking about Ajax but from a professional standpoint, I was determined to deliver what I had promised. I made it through &#8230;just. There were times when I thought I really wouldn&#8217;t be able to reach the end of the workshop but it somehow worked out. On the positive side, I really only had to make sure I was audible to one person: the simultaneous interpreter. The interpreters&#8217; voices were all working just fine so the workshop attendees received a translation of my words without an accompanying translation of my laryngitis.</p>
+
+<p>On reflection, it probably wasn&#8217;t the best idea to celebrate the successful conclusion of the workshop with an evening of merriment that culminated with karaoke. But hey, when in Japan, right?</p>
+
+<p>The rest of my time in Japan was spent soaking up as many sights, sounds and&#8212;most importantly&#8212;tastes as I possibly could. In brief&#8230;</p>
+
+<ul>
+<li>Everybody I met in Japan was friendly and helpful. This is a country where people don&#8217;t get into fights when they get drunk, they just get even more polite and friendly.</li>
+<li>Every subway stop in Tokyo has <a href="http://huffduffer.com/seanohagan/966">its own jingle</a>. This is, quite simply, awesome.</li>
+<li>Advertisements eschew telling you a domain name in favour of showing you <a href="http://www.cabel.name/2008/03/japan-urls-are-totally-out.html">what to search for</a>. They must be very confident of their search engine rankings.</li>
+<li><a href="http://www.flickr.com/photos/adactio/tags/shinjuku" rel="tag">Shinjuku</a> is <a href="http://search.japantimes.co.jp/cgi-bin/fv20070302kn.html">a great part of Tokyo</a>. Personally, I think it&#8217;s even cooler than <a href="http://www.flickr.com/photos/adactio/tags/shibuya" rel="tag">Shibuya</a>.</li>
+<li>A trip to <a href="http://www.flickr.com/photos/adactio/tags/akihabara" rel="tag">Akihabara</a> proved fruitful. I successfully acquired a <a href="http://www.flickr.com/photos/adactio/tags/tachikoma" rel="tag">tachikoma</a>.</li>
+<li>Getting up early to visit <a href="http://www.flickr.com/photos/adactio/tags/tsukiji/" rel="tag">Tsukiji fish market</a> was totally worth it. It&#8217;s a huge chaotic cathedral of seafood.</li>
+<li>Visiting the <a href="http://www.flickr.com/photos/adactio/tags/meiji+shrine" rel="tag">Meiji shrine</a> on a weekend was fortuitous. There was more than one wedding party to observe.</li>
+<li><a href="http://www.flickr.com/photos/adactio/tags/kyoto" rel="tag">Kyoto</a> is a beautiful place, perhaps one of the most beautiful places I have ever been. Staying in a <a href="http://www.flickr.com/photos/adactio/tags/ryokan" rel="tag">ryokan</a> heightened the experience.</li>
+<li><a href="http://www.flickr.com/photos/adactio/tags/osaka" rel="tag">Osaka</a>&#8212;or at least the <a href="http://en.wikipedia.org/wiki/D%C5%8Dtonbori" rel="tag">Dotonbori</a>&#8212; is crazier than Shinjuku and Shibuya combined. It&#8217;s an unimaginative cliché to say this but it really was like Bladerunner.</li>
+</ul>
+
+<p>Then there was the <a href="http://www.flickr.com/photos/adactio/tags/food,japan" rel="tag">food</a>: <a href="http://www.flickr.com/photos/adactio/tags/sushi,tokyo" rel="tag">sushi</a>, <a href="http://www.flickr.com/photos/adactio/tags/unagi,tokyo" rel="tag">unagi</a> and <a href="http://www.flickr.com/photos/adactio/tags/yakitori+alley" rel="tag">yakitori</a> in Tokyo, <a href="http://www.flickr.com/photos/adactio/tags/omen+nippon" rel="tag">udon in Kyoto</a>, <a href="http://www.flickr.com/photos/adactio/tags/okonomiyaki" rel="tag">okonomiyaki</a> and <a href="http://www.flickr.com/photos/adactio/tags/takoyaki" rel="tag">takoyaki</a> in Osaka &#8230;it was all wonderful.</p>
+
+<p>Diligent tourist that I am, I had my camera with me at all times. For your viewing pleasure I give you:</p>
+
+<ul>
+<li><a href="http://www.flickr.com/photos/adactio/sets/72157609202891438/">Over five hundred pictures I took on the entire trip</a>,</li>
+<li><a href="http://www.flickr.com/photos/adactio/sets/72157609004855662/">Over a hundred pictures of Kyoto alone</a> and</li>
+<li><a href="http://www.flickr.com/photos/adactio/sets/72157609004839274/">A morning&#8217;s worth of fish photography at the Tsukiji fish market</a>.</li>
+</ul>
+
+<hr />
+<p>
+Tagged with
+<a rel="tag" href="http://adactio.com/journal/tag/japan">japan</a>
+<a rel="tag" href="http://adactio.com/journal/tag/travel">travel</a>
+<a rel="tag" href="http://adactio.com/journal/tag/wde08">wde08</a>
+<a rel="tag" href="http://adactio.com/journal/tag/webdirections">webdirections</a>
+<a rel="tag" href="http://adactio.com/journal/tag/conference">conference</a>
+<a rel="tag" href="http://adactio.com/journal/tag/tokyo">tokyo</a>
+</p>
+]]>
+			</description>
+			<pubDate>Tue, 18 Nov 2008 10:13:52 GMT</pubDate>
+			<guid>http://adactio.com/journal/1526</guid>
+			<category>japan</category>
+			<category>travel</category>
+			<category>wde08</category>
+			<category>webdirections</category>
+			<category>conference</category>
+			<category>tokyo</category>
+		</item>
+		<item>
+			<title>Nihon</title>
+			<link>http://adactio.com/journal/1525</link>
+			<description>
+<![CDATA[
+<p>I&#8217;ve been doing <a href="http://www.dopplr.com/traveller/adactio/public/">a lot of travelling</a> this year. I intend to cut back (or attend more virtual conferences <a href="http://aralbalkan.com/1524">like Aral&#8217;s</a>). I&#8217;m worried that my carbon footprint will require a few forests to offset. I mean, I&#8217;ve got <a href="http://www.dopplr.com/traveller/adactio/public/velocity">the velocity of a squirrel</a>, for crying out loud.</p>
+
+<p>That said, there are certain opportunities that are just too good to pass up. Like, for example, when <span class="vcard"><a href="http://blogs.westciv.com/dog_or_higher/" rel="friend met colleague" class="url"><abbr title="John Allsopp" class="fn">John</abbr></a></span> asked me if I would speak at <span class="vevent"><a class="summary url" href="http://east08.webdirections.org/">Web Directions East</a> in <span class="location">Tokyo</span> <abbr class="dtstart" title="2008-11-07">next weekend</abbr></span>. Yes; Tokyo. A place I&#8217;ve always dreamt of visiting.</p>
+
+<p>Tomorrow I&#8217;ll fly from Heathrow to Narita and I still can hardly believe it&#8217;s really happening. While I&#8217;m extremely nervous about my presentation and workshop, I&#8217;m also unbelievably excited about visiting the land of sushi and manga. Even better, <span class="vcard"><a href="http://wordridden.com/" class="url" rel="sweetheart met co-resident"><abbr class="fn" title="Jessica Spengler">Jessica</abbr></a></span> is coming with me and, if anything, she&#8217;s even more excited.</p>
+
+<p>We&#8217;ll be in Tokyo for the best part of a week before heading on for a couple of days in Kyoto and a couple of days in Osaka. We don&#8217;t have much of an agenda apart from soaking up the atmosphere and&#8212;being <a href="http://principiagastronomica.com/">the foodies that we are</a>&#8212;eating everything in sight.</p>
+
+<p>If you have any hints or tips on what do in Japan, please share them. For my part, I can only promise lots of photographic documentation and maybe even a bit of blogging.</p>
+
+<hr />
+<p>
+Tagged with
+<a rel="tag" href="http://adactio.com/journal/tag/wde08">wde08</a>
+<a rel="tag" href="http://adactio.com/journal/tag/japan">japan</a>
+<a rel="tag" href="http://adactio.com/journal/tag/travel">travel</a>
+</p>
+]]>
+			</description>
+			<pubDate>Mon, 03 Nov 2008 23:06:17 GMT</pubDate>
+			<guid>http://adactio.com/journal/1525</guid>
+			<category>wde08</category>
+			<category>japan</category>
+			<category>travel</category>
+		</item>
+		<item>
+			<title>Audio ga-ga</title>
+			<link>http://adactio.com/journal/1524</link>
+			<description>
+<![CDATA[
+<p><a href="http://huffduffer.com/">Huffduffer</a> is written in <a href="http://www.w3.org/html/wg/html5/">HTML5</a>. For the most part, this is no different to writing in any other flavour of HTML, just with a simpler <code>DOCTYPE</code>.</p>
+
+<p>For the time being, I’m not using any of the new structural elements like <code>section</code>, <code>article</code> or <code>footer</code>. I am, however, making use of the <code>audio</code> element. Browsers that don’t understand this element—that would be most of them—aren&#8217;t left with nothing. Between the opening and closing <code>audio</code> tags, I’ve included an old-fashioned Flash movie for streaming the audio. This is exactly what is envisioned <a href="http://www.w3.org/html/wg/html5/#audio">in the spec</a>:</p>
+
+<blockquote>
+  <p>Content may be provided inside the <code>audio</code> element. User agents should not show this content to the user; it is intended for older Web browsers which do not support <code>audio</code>, so that legacy audio plugins can be tried.</p>
+</blockquote>
+
+<p>Right now, Safari is about the only browser that includes support for <code>audio</code>. Alas, the way it implements that support is flawed. Safari pre-loads the file referenced in the <code>src</code> attribute. That works fine as long as there’s only one or two <code>audio</code> elements on a page but as soon as you get above that—as you do on Huffduffer—then everything starts to drag and your internet connection takes a hammering as the browser tries to suck down every file.</p>
+
+<p>There appears to be no way of stopping this through the DOM. There’s a whole slew of properties that can be specified in the markup or manipulated with JavaScript:</p>
+
+<ul>
+<li>autoplay</li>
+<li>start</li>
+<li>loopstart</li>
+<li>loopend</li>
+<li>end</li>
+<li>playcount</li>
+<li>controls</li>
+</ul>
+
+<p>…but none of them can be used to instruct the browser not to pre-load audio (as far as I can tell). After <a href="http://www.w3.org/html/wg/html5/#loading-the-media-resource">trying to read the spec</a> I’m still not sure if Safari is implementing the “correct&#8221; behaviour. It might well be. But in this case, the correct behaviour is certainly not the desired behaviour. I downloaded <a href="http://nightly.webkit.org/">the nightly build of Webkit</a> and the behaviour hasn’t changed there.</p>
+
+<p>Support for the <code>audio</code> element is <a href="https://developer.mozilla.org/En/Using_audio_and_video_in_Firefox">on its way in Firefox 3.1</a>, albeit in a crippled <a href="http://www.vorbis.com/">Ogg</a>-only way. I sincerely hope it doesn’t follow Safari’s precedent with pre-loading.</p>
+
+<hr />
+<p>
+Tagged with
+<a rel="tag" href="http://adactio.com/journal/tag/html5">html5</a>
+<a rel="tag" href="http://adactio.com/journal/tag/huffduffer">huffduffer</a>
+<a rel="tag" href="http://adactio.com/journal/tag/audio">audio</a>
+<a rel="tag" href="http://adactio.com/journal/tag/safari">safari</a>
+</p>
+]]>
+			</description>
+			<pubDate>Tue, 28 Oct 2008 02:49:25 GMT</pubDate>
+			<guid>http://adactio.com/journal/1524</guid>
+			<category>html5</category>
+			<category>huffduffer</category>
+			<category>audio</category>
+			<category>safari</category>
+		</item>
+		<item>
+			<title>&lt;/head&gt;</title>
+			<link>http://adactio.com/journal/1523</link>
+			<description>
+<![CDATA[
+<p>The <a href="http://www.headconference.com/">&lt;head&gt; conference</a>—a title designed to screw up a thousand CMSs—has just wrapped up. It spanned three days and as many continents. It was a preposterously ambitious undertaking and, incredibly, it worked!</p>
+
+<p>While there were some meatspace hubs, the majority of the action took place in cyberspace. That means the carbon footprint of the attendees is considerably less than that amassed by travelling to a “regular” conference. It also means that the logistics involved were an order of magnitude greater. That <span class="vcard"><a href="http://aralbalkan.com/" class="url" rel="friend met colleague"><abbr class="fn" title="Aral Balkan">Aral</abbr></a></span> was able to organise it all is a testament to his dedication, enthusiasm and sheer bloody-mindedness.</p>
+
+<p>Ironically for a virtual conference, the London hub of &lt;head&gt; was one of the best <abbr title="In Real Life">IRL</abbr> geek gatherings I’ve been to. It was held in the salubrious surroundings of <a href="http://themagiccircle.co.uk/">The Magic Circle</a>. While there was no prestidigitation, Aral did manage to conjure up a great day.</p>
+
+<p>I kicked the day off with a short talk called <a href="http://adactio.com/articles/1522/"><cite>The Long Web</cite></a>. It covered some similar ground as <a href="http://adactio.com/articles/1450/">my keynote from Accessibility 2.0</a>—one passage was lifted verbatim—but the emphasis this time was very much on digital preservation and long-term thinking. The audio and video should be available before too long.</p>
+
+<p>After my talk, I had a very pleasant chat with Aral on the sofa on the stage. That was the template for the rest of the day: fifteen minute presentations followed by five minute follow-up questions. I took on the role of interviewer for some of the presenters, which was a real pleasure (I’ve made no secret of <a href="http://adactio.com/journal/1424/">my enjoyment</a> of this role).</p>
+
+<p>Not every slot followed the presentation+chat format. <span class="vcard"><a href="http://unadorned.org/" class="url" rel="friend met colleague"><abbr title="Stephanie Troeth" class="fn">Steph</abbr></a></span> and <span class="vcard"><a href="http://www.pixeldiva.co.uk/" class="url" rel="friend met colleague"><abbr title="Ann McMeekin" class="fn">Ann</abbr></a></span> had a slideless chat on the sofa, Smily Raymaker <a href="http://www.vimeo.com/2063174">sang a song</a>, and Tim O’Reilly finished off the day with a great informal chat with Aral. In between, there was <a href="http://www.headconference.com/hubs/london-uk/">a whole range of talks</a> covering a wide spread of topics: web security, Flash, digital identity, and tracking energy consumption. Though the mood of the day was always light-hearted and fun, there was an emergent consensus in the content of the talks of big-picture, long-term thinking. There was an echo of <a href="http://huffduffer.com/adactio/281">Jonathan Harris’s rallying cry</a> for the web community to put away childish things and attempt to tackle the challenges facing our species.</p>
+
+<p>It was a thought-provoking and enjoyable day out in London. And, from what I caught of the rest of the event, the whole conference had a very high standard indeed. Quite an achievement.</p>
+
+<p>Aral, my hat is off to you, my friend; I offer my heartfelt congratulations on a job well done.</p>
+
+<hr />
+<p>
+Tagged with
+<a rel="tag" href="http://adactio.com/journal/tag/headconference">headconference</a>
+<a rel="tag" href="http://adactio.com/journal/tag/head">head</a>
+<a rel="tag" href="http://adactio.com/journal/tag/conference">conference</a>
+</p>
+]]>
+			</description>
+			<pubDate>Sun, 26 Oct 2008 23:58:52 GMT</pubDate>
+			<guid>http://adactio.com/journal/1523</guid>
+			<category>headconference</category>
+			<category>head</category>
+			<category>conference</category>
+		</item>
+
+   </channel>
+</rss>

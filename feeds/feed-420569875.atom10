@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Test</title>
+    <link rel="alternate" type="text/html" href="http://sidablog.ch/test/" />
+    <link rel="self" type="application/atom+xml" href="http://sidablog.ch/test/atom.xml" />
+    <id>tag:sidablog.ch,2008-09-01:/test//4</id>
+    <updated>2008-12-09T14:05:06Z</updated>
+    
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type Commercial 4.21-en</generator>
+
+<entry>
+    <title>Testing Notifixious</title>
+    <link rel="alternate" type="text/html" href="http://sidablog.ch/test/2008/12/testing-notifixious.html" />
+    <id>tag:sidablog.ch,2008:/test//4.121</id>
+
+    <published>2008-12-09T14:04:38Z</published>
+    <updated>2008-12-09T14:05:06Z</updated>
+
+    <summary>hello world...</summary>
+    <author>
+        <name>David Roessli</name>
+        <uri>http://www.davidroessli.com/</uri>
+    </author>
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://sidablog.ch/test/">
+        hello world
+        
+    </content>
+</entry>
+
+<entry>
+    <title>New design launched using Movable Type</title>
+    <link rel="alternate" type="text/html" href="http://sidablog.ch/test/2008/09/new-design-launched-using-movable-type.html" />
+    <id>tag:sidablog.ch,2008:/test//4.40</id>
+
+    <published>2008-09-01T08:20:26Z</published>
+    <updated>2008-11-28T16:06:20Z</updated>
+
+    <summary> Our web site is sporting a new look and feel thanks to Movable Type and the Professional Template Set. The Professional Template Set makes it possible for just about anyone to get up and running with a new web...</summary>
+    <author>
+        <name>David Roessli</name>
+        <uri>http://www.davidroessli.com/</uri>
+    </author>
+    
+    <category term="awesome" label="awesome" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="design" label="design" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="movabletype" label="movable type" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="professional" label="professional" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="http://sidablog.ch/test/">
+        <![CDATA[
+<p>Our web site is sporting a new look and feel thanks to <a href="http://www.movabletype.com/">Movable Type</a> and the Professional Template Set. The Professional Template Set makes it possible for just about anyone to get up and running with a new web site using Movable Type. It is literally as easy as just a few clicks. Just pick a new for your web site, select the Professional Template Set and publish. Then viola! a new web site. Thank you Movable Type!</p>]]>
+        
+    </content>
+</entry>
+
+</feed>

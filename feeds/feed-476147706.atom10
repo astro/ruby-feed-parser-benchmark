@@ -1,0 +1,1647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/atom10full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><feed xmlns="http://www.w3.org/2005/Atom" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xml:lang="en-US">
+  <title>Ryan's Scraps - Blog</title>
+  <id>tag:ryandaigle.com,2008:mephisto/</id>
+  <generator uri="http://mephistoblog.com" version="0.7.3">Mephisto Noh-Varr</generator>
+  
+  <link href="http://ryandaigle.com/" rel="alternate" type="text/html" />
+  <updated>2008-11-13T14:24:06Z</updated>
+  <geo:lat>37.544746</geo:lat><geo:long>-77.400851</geo:long><link rel="self" href="http://feeds.feedburner.com/RyansScraps" type="application/atom+xml" /><feedburner:browserFriendly>This is an XML content feed. It is intended to be viewed in a newsreader or syndicated to another site, subject to copyright and fair use.</feedburner:browserFriendly><entry xml:base="http://ryandaigle.com/">
+    <author>
+      <name>ryan</name>
+    </author>
+    <id>tag:ryandaigle.com,2008-11-13:7962</id>
+    <published>2008-11-13T14:20:00Z</published>
+    <updated>2008-11-13T14:24:06Z</updated>
+    <link href="http://feeds.feedburner.com/~r/RyansScraps/~3/451847842/what-s-new-in-edge-rails-except-and-only-routing-options" rel="alternate" type="text/html" />
+    <title>What's New in Edge Rails: :except and :only Routing Options</title>
+<content type="html">
+            &lt;p&gt;Just added to Edge Rails is the &lt;a href="http://github.com/rails/rails/commit/44a3009ff068bf080de6764a8c884fbf0ceb920e"&gt;ability to exclude and include the default generated routes&lt;/a&gt; in your mapping configuration.  Previously, &lt;code&gt;map.resources :articles&lt;/code&gt; would generate routes to all seven default actions on the &lt;code&gt;ArticlesController&lt;/code&gt; (index, create, new, edit, show, update, destroy).  You can now tell your routes configuration to only generate a subset of those actions, or to exclude a subset of those actions:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Only generate the :index route of articles&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;map.resources &lt;span class="sy"&gt;:articles&lt;/span&gt;, &lt;span class="sy"&gt;:only&lt;/span&gt; =&amp;gt; &lt;span class="sy"&gt;:index&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Generate all but the destroy route of articles&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;map.resources &lt;span class="sy"&gt;:articles&lt;/span&gt;, &lt;span class="sy"&gt;:except&lt;/span&gt; =&amp;gt; &lt;span class="sy"&gt;:destroy&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Only generate the non-modifying routes of articles&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;map.resources &lt;span class="sy"&gt;:articles&lt;/span&gt;, &lt;span class="sy"&gt;:only&lt;/span&gt; =&amp;gt; [&lt;span class="sy"&gt;:index&lt;/span&gt;, &lt;span class="sy"&gt;:show&lt;/span&gt;]&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Note that you can use the &lt;code&gt;:all&lt;/code&gt; and &lt;code&gt;:none&lt;/code&gt; values to denote all or none of the default routes.&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Don't generate any default article routes, just the approve route&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;map.resources &lt;span class="sy"&gt;:articles&lt;/span&gt;, &lt;span class="sy"&gt;:except&lt;/span&gt; =&amp;gt; &lt;span class="sy"&gt;:all&lt;/span&gt;, &lt;span class="sy"&gt;:member&lt;/span&gt; =&amp;gt; { &lt;span class="sy"&gt;:approve&lt;/span&gt; =&amp;gt; &lt;span class="sy"&gt;:put&lt;/span&gt; }&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Same&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;map.resources &lt;span class="sy"&gt;:articles&lt;/span&gt;, &lt;span class="sy"&gt;:only&lt;/span&gt; =&amp;gt; &lt;span class="sy"&gt;:none&lt;/span&gt;, &lt;span class="sy"&gt;:member&lt;/span&gt; =&amp;gt; { &lt;span class="sy"&gt;:approve&lt;/span&gt; =&amp;gt; &lt;span class="sy"&gt;:put&lt;/span&gt; }&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;You should also note that these options will be inherited by nested resources that don’t override them.  For instance, in this example, comments would only have the &lt;code&gt;:index&lt;/code&gt; and &lt;code&gt;:show&lt;/code&gt; routes exposed:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Because comments are nested within articles, they too will only&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# have the index and show routes generated.&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;map.resources &lt;span class="sy"&gt;:articles&lt;/span&gt;, &lt;span class="sy"&gt;:only&lt;/span&gt; =&amp;gt; [&lt;span class="sy"&gt;:index&lt;/span&gt;, &lt;span class="sy"&gt;:show&lt;/span&gt;] &lt;span class="r"&gt;do&lt;/span&gt; |article|&lt;tt&gt;
+&lt;/tt&gt;  article.resources &lt;span class="sy"&gt;:comments&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Keep this inheritance behavior in mind when nesting routes as, in the current implementation, conflicting options may yield unexpected results.  Currently the &lt;code&gt;:only&lt;/code&gt; option takes precedence if you have conflicting &lt;code&gt;:only&lt;/code&gt; and &lt;code&gt;:except&lt;/code&gt; sets, including inherited values.  E.g. this routing will result in &lt;code&gt;comments&lt;/code&gt; having both &lt;code&gt;:index&lt;/code&gt; and &lt;code&gt;:show&lt;/code&gt; routed:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Since :only takes precedence, even in inherited options,&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# comments will have both index and show&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;map.resources &lt;span class="sy"&gt;:articles&lt;/span&gt;, &lt;span class="sy"&gt;:only&lt;/span&gt; =&amp;gt; [&lt;span class="sy"&gt;:index&lt;/span&gt;, &lt;span class="sy"&gt;:show&lt;/span&gt;] &lt;span class="r"&gt;do&lt;/span&gt; |article|&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# I will still have :index and :show because I've inherited&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# article's routing and its :only overrides my :except&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  article.resources &lt;span class="sy"&gt;:comments&lt;/span&gt;, &lt;span class="sy"&gt;:except&lt;/span&gt; =&amp;gt; &lt;span class="sy"&gt;:show&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;So be careful of conflicting options.  If you can’t void them, it will help to redefine both &lt;code&gt;:only&lt;/code&gt; and &lt;code&gt;:except&lt;/code&gt; so there are no unexpected routes.&lt;/p&gt;
+
+
+	&lt;p&gt;tags: &lt;a href="http://technorati.com/tag/ruby"&gt;ruby&lt;/a&gt;,
+&lt;a href="http://technorati.com/tag/rubyonrails"&gt;rubyonrails&lt;/a&gt;&lt;/p&gt;
+          
+&lt;p&gt;&lt;map name="google_ad_map_yRQc3flkWw14XOPeH0lOSV5uzE8_"&gt;&lt;area shape="rect" href="http://imageads.googleadservices.com/pagead/imgclick/yRQc3flkWw14XOPeH0lOSV5uzE8_?pos=0" coords="1,2,367,28"/&gt;&lt;area shape="rect" href="http://services.google.com/feedback/abg" coords="384,10,453,23"/&gt;&lt;/map&gt;&lt;img usemap="#google_ad_map_yRQc3flkWw14XOPeH0lOSV5uzE8_" border="0" src="http://imageads.googleadservices.com/pagead/ads?format=468x30_aff_img&amp;client=ca-pub-5311481257402216&amp;channel=7127926294&amp;output=png&amp;cuid=yRQc3flkWw14XOPeH0lOSV5uzE8_&amp;url=http%3A%2F%2Fryandaigle.com%2Farticles%2F2008%2F11%2F13%2Fwhat-s-new-in-edge-rails-except-and-only-routing-options"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feeds.feedburner.com/~a/RyansScraps?a=tm0jNM"&gt;&lt;img src="http://feeds.feedburner.com/~a/RyansScraps?i=tm0jNM" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=WghXN"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=WghXN" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=keBsN"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=keBsN" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=BaU8N"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=BaU8N" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=aOvnn"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=aOvnn" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</content>  <feedburner:origLink>http://ryandaigle.com/articles/2008/11/13/what-s-new-in-edge-rails-except-and-only-routing-options</feedburner:origLink></entry>
+  <entry xml:base="http://ryandaigle.com/">
+    <author>
+      <name>ryan</name>
+    </author>
+    <id>tag:ryandaigle.com,2008-11-10:7931</id>
+    <published>2008-11-10T21:27:00Z</published>
+    <updated>2008-11-11T12:12:31Z</updated>
+    <link href="http://feeds.feedburner.com/~r/RyansScraps/~3/448847551/implement-ruby-proxy-objects-with-roxy" rel="alternate" type="text/html" />
+    <title>Roxy: A Ruby Proxy-Object Library</title>
+<content type="html">
+            &lt;p&gt;Proxies are a powerful tool in software development, allowing you to transparently provide extra functionality or a slight abstraction to an underlying object.  One of the more visible uses of proxies is in ActiveRecord which uses a proxy to represent its many &lt;a href="http://api.rubyonrails.com/classes/ActiveRecord/Associations/ClassMethods.html"&gt;associations&lt;/a&gt;.  For instance, in the following article definition:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;Article&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActiveRecord&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  has_many &lt;span class="sy"&gt;:comments&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;when you call &lt;code&gt;article.comments&lt;/code&gt; what you get back is actually a proxy object that wraps the comments collection with some extra functionality like the &lt;code&gt;&amp;lt;&amp;lt;&lt;/code&gt; and &lt;code&gt;build&lt;/code&gt; methods.  Although it looks like a normal &lt;code&gt;Array&lt;/code&gt; when you directly access &lt;code&gt;comments&lt;/code&gt;, it’s really a proxy that’s marshaling method calls to an underlying collection or intercepting the method calls if it’s functionality it wants to handle itself.  &lt;a href="/articles/2008/3/24/what-s-new-in-edge-rails-has-finder-functionality"&gt;Named scopes&lt;/a&gt; also work in a similar manner.&lt;/p&gt;
+
+
+	&lt;p&gt;That’s great and all, but these proxies are tied very specifically to their implementations within ActiveRecord .. and that’s what Roxy is intended to address.  &lt;a href="http://github.com/yfactorial/roxy/tree/master"&gt;Roxy&lt;/a&gt; brings some serious moxie to your development with the ability to easily define and use proxies in your non ActiveRecord classes.&lt;/p&gt;
+
+
+	&lt;p&gt;Let’s take a look at an example: Suppose I have a &lt;code&gt;person&lt;/code&gt; object that has a list of &lt;code&gt;parents&lt;/code&gt; and &lt;code&gt;children&lt;/code&gt; (again, this is outside the scope of ActiveRecord or any other persistence framework where you might be able to do this with some other mechanism).&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;Person&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  attr_accessor &lt;span class="sy"&gt;:first&lt;/span&gt;, &lt;span class="sy"&gt;:last&lt;/span&gt;, &lt;span class="sy"&gt;:parents&lt;/span&gt;, &lt;span class="sy"&gt;:children&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;If you want add functionality to a person that determines if their parents are divorced, or if they have any stepchildren you could easily enough add that functionality directly to the &lt;code&gt;Person&lt;/code&gt; object:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;Person&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  attr_accessor &lt;span class="sy"&gt;:first&lt;/span&gt;, &lt;span class="sy"&gt;:last&lt;/span&gt;, &lt;span class="sy"&gt;:parents&lt;/span&gt;, &lt;span class="sy"&gt;:children&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;initialize&lt;/span&gt;(first, last)&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="iv"&gt;@first&lt;/span&gt;, &lt;span class="iv"&gt;@last&lt;/span&gt; = first, last&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# If my parents have different last names, then assume they're divorced&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;parents_divorced?&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      parents.size &amp;gt; &lt;span class="i"&gt;1&lt;/span&gt; &lt;span class="r"&gt;and&lt;/span&gt; parents.collect { |parent| parent.last }.uniq.size &amp;gt; &lt;span class="i"&gt;1&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# Any child with a different last name than mine is considered&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# a step-child.&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;step_children&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    children.select { |child| &lt;span class="pc"&gt;self&lt;/span&gt;.last != child.last }&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;but this approach has always seemed very obtuse, however.  If I am strictly modeling my domain to the real world, which is the approach I favor until it becomes unwieldy to do so, what I really want to do is ask a person’s parents if they’re divorced.  After all, their divorce status is a property of the parents, not the person itself.  With Roxy this structure is easy to model:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;20&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;21&lt;tt&gt;
+&lt;/tt&gt;22&lt;tt&gt;
+&lt;/tt&gt;23&lt;tt&gt;
+&lt;/tt&gt;24&lt;tt&gt;
+&lt;/tt&gt;25&lt;tt&gt;
+&lt;/tt&gt;26&lt;tt&gt;
+&lt;/tt&gt;27&lt;tt&gt;
+&lt;/tt&gt;28&lt;tt&gt;
+&lt;/tt&gt;29&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;30&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;31&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;require &lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;roxy&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;Person&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# Add in proxy ability&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  include &lt;span class="co"&gt;Roxy&lt;/span&gt;::&lt;span class="co"&gt;Moxie&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  attr_accessor &lt;span class="sy"&gt;:first&lt;/span&gt;, &lt;span class="sy"&gt;:last&lt;/span&gt;, &lt;span class="sy"&gt;:parents&lt;/span&gt;, &lt;span class="sy"&gt;:children&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# Add ability to ask the parents collection if they are divorced&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  proxy &lt;span class="sy"&gt;:parents&lt;/span&gt; &lt;span class="r"&gt;do&lt;/span&gt;    &lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;divorced?&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      proxy_target.size &amp;gt; &lt;span class="i"&gt;1&lt;/span&gt; &lt;span class="r"&gt;and&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;        proxy_target.collect { |parent| parent.last }.uniq.size &amp;gt; &lt;span class="i"&gt;1&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# Add ability to ask the children collection for only the step-children&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  proxy &lt;span class="sy"&gt;:children&lt;/span&gt; &lt;span class="r"&gt;do&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;step&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      proxy_target.select { |child| proxy_owner.last != child.last }&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;end&lt;/span&gt;    &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;    &lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;initialize&lt;/span&gt;(first, last)&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="iv"&gt;@first&lt;/span&gt;, &lt;span class="iv"&gt;@last&lt;/span&gt; = first, last&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Now the following is possible:&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;person.parents.divorced? &lt;span class="c"&gt;#=&amp;gt; true|false&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;person.children.step &lt;span class="c"&gt;#=&amp;gt; [&amp;lt;Person...&amp;gt;, &amp;lt;Person...&amp;gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Roxy allows you transparently adorn existing attributes and methods with added functionality, making a more realistic domain model.  This is very similar to &lt;a href="http://api.rubyonrails.org/classes/ActiveRecord/Associations/ClassMethods.html"&gt;rails’ association proxies&lt;/a&gt; except that you are now free to add functionality to all methods and objects.&lt;/p&gt;
+
+
+	&lt;p&gt;Proxy methods are defined in the block that is passed to the &lt;code&gt;proxy&lt;/code&gt; call.  Within each proxy method you can reference the object that owns the proxy (the &lt;code&gt;person&lt;/code&gt; instance here) as &lt;code&gt;proxy_owner&lt;/code&gt; and the thing that is being proxied (the &lt;code&gt;parents&lt;/code&gt; and &lt;code&gt;children&lt;/code&gt; collections here) as &lt;code&gt;proxy_target&lt;/code&gt;.&lt;/p&gt;
+
+
+	&lt;h2&gt;Advanced&lt;/h2&gt;
+
+
+	&lt;p&gt;You’re not limited to proxying existing methods, you can just as easily proxy to another object using the &lt;code&gt;:to&lt;/code&gt; option.&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;require &lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;roxy&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;Person&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# Add in proxy ability&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  include &lt;span class="co"&gt;Roxy&lt;/span&gt;::&lt;span class="co"&gt;Moxie&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  attr_accessor &lt;span class="sy"&gt;:address&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  proxy &lt;span class="sy"&gt;:shipping&lt;/span&gt;, &lt;span class="sy"&gt;:to&lt;/span&gt; =&amp;gt; &lt;span class="co"&gt;ShippingMethod&lt;/span&gt;.all &lt;span class="r"&gt;do&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;cheapest&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      proxy_target.min { |m| m.cost_from(proxy_owner.address) }&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Find the cheapest shipping method from all methods&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;person.shipping.cheapest &lt;span class="c"&gt;#=&amp;gt; &amp;lt;ShippingMethod...&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;If the value you want to proxy needs to be evaluated at runtime just pass in a proc.  The proc should accept a single argument which will be the proxy_owner instance:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;require &lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;roxy&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;Person&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# Add in proxy ability&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  include &lt;span class="co"&gt;Roxy&lt;/span&gt;::&lt;span class="co"&gt;Moxie&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  attr_accessor &lt;span class="sy"&gt;:address&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  proxy &lt;span class="sy"&gt;:shipping&lt;/span&gt;, &lt;span class="sy"&gt;:to&lt;/span&gt; =&amp;gt; proc { |person| &lt;span class="co"&gt;ShippingMethod&lt;/span&gt;.available_for(person) } &lt;span class="r"&gt;do&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;cheapest&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      proxy_target.min { |m| m.cost_from(proxy_owner.address) }&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Find the cheapest shipping method from the methods&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# only available to 'person'&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;person.shipping.cheapest &lt;span class="c"&gt;#=&amp;gt; &amp;lt;ShippingMethod...&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;You’ll notice that the best use of proxies is as a lightweight relationship between two things.  I.e. instead of creating a whole other object to represent the relationship between a person and the various shipping methods you can quickly add functionality directly to that object-relationship as a proxy method.&lt;/p&gt;
+
+
+	&lt;p&gt;A sign of abuse of this particular proxy pattern is when you reference only one of the &lt;code&gt;proxy_owner&lt;/code&gt; or &lt;code&gt;proxy_target&lt;/code&gt; and neither depends on the other in any way.  That is usually an indication that the functionality should live solely in the referenced proxy owner/target and not in the proxy itself.&lt;/p&gt;
+
+
+	&lt;p&gt;Proxy methods can also be defined as modules (as in Rails’ association extensions) for greater re-use between similar proxies with the &lt;code&gt;:extend&lt;/code&gt; option (which can take one or more modules):&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;20&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;21&lt;tt&gt;
+&lt;/tt&gt;22&lt;tt&gt;
+&lt;/tt&gt;23&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;require &lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;roxy&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;Person&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# Add in proxy ability&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  include &lt;span class="co"&gt;Roxy&lt;/span&gt;::&lt;span class="co"&gt;Moxie&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  attr_accessor &lt;span class="sy"&gt;:age&lt;/span&gt;, &lt;span class="sy"&gt;:children&lt;/span&gt;, &lt;span class="sy"&gt;:parents&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# Re-usable functionality to find the oldest person in a collection&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;module&lt;/span&gt; &lt;span class="cl"&gt;PersonCollection&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;oldest&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      proxy_target.max { |p| p.age }&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  proxy &lt;span class="sy"&gt;:children&lt;/span&gt;, &lt;span class="sy"&gt;:extend&lt;/span&gt; =&amp;gt; &lt;span class="co"&gt;PersonCollection&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  proxy &lt;span class="sy"&gt;:parents&lt;/span&gt;, &lt;span class="sy"&gt;:extend&lt;/span&gt; =&amp;gt; &lt;span class="co"&gt;PersonCollection&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Now the following is possible:&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;person.parents.oldest &lt;span class="c"&gt;#=&amp;gt; &amp;lt;Person...&amp;gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;person.children.oldest &lt;span class="c"&gt;#=&amp;gt; &amp;lt;Person...&amp;gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Once you grasp the beauty, simplicity and power of proxies you’ll likely find many uses for them.  They’re a great tool to have in your toolbox and Roxy would love it if she found a place in yours.&lt;/p&gt;
+
+
+	&lt;h2&gt;Installation&lt;/h2&gt;
+
+
+	&lt;p&gt;Installing is pretty simple…&lt;/p&gt;
+
+
+&lt;pre&gt;&lt;code&gt;sudo gem install yfactorial-roxy --source http://gems.github.com&lt;/code&gt;&lt;/pre&gt;
+
+	&lt;h2&gt;Teaser&lt;/h2&gt;
+
+
+	&lt;p&gt;I hope to have an extension library up soon that utilizes Roxy to provide ActiveRecord-like association definitions in ActiveResource.  Something like:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;require &lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;roxy&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;User&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActiveResource&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  include &lt;span class="co"&gt;Roxy&lt;/span&gt;::&lt;span class="co"&gt;Moxie&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  proxy &lt;span class="sy"&gt;:articles&lt;/span&gt;,&lt;tt&gt;
+&lt;/tt&gt;            &lt;span class="sy"&gt;:to&lt;/span&gt; =&amp;gt; proc { |u| &lt;span class="co"&gt;Article&lt;/span&gt;.find(&lt;span class="sy"&gt;:all&lt;/span&gt;, &lt;span class="sy"&gt;:params&lt;/span&gt; =&amp;gt; { &lt;span class="sy"&gt;:user_id&lt;/span&gt; =&amp;gt; u.id } } &lt;span class="r"&gt;do&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;destroy_all&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      proxy_target.each { |a| a.destroy }&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Now a remote user looks a lot like a first class active record object:&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;user.articles &lt;span class="c"&gt;#=&amp;gt; [&amp;lt;Article...&amp;gt;, &amp;lt;Article...&amp;gt;, ...]&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;user.articles.destroy_all&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Stay tuned for that, and let me know where you’ve found proxies to be a great tool to have around.  I’m always looking for better example scenarios.&lt;/p&gt;
+
+
+	&lt;p&gt;tags: &lt;a href="http://technorati.com/tag/ruby"&gt;ruby&lt;/a&gt;&lt;/p&gt;
+          
+&lt;p&gt;&lt;map name="google_ad_map_e8JwP1QhEd5hRmtv-n0447u1zIc_"&gt;&lt;area shape="rect" href="http://imageads.googleadservices.com/pagead/imgclick/e8JwP1QhEd5hRmtv-n0447u1zIc_?pos=0" coords="1,2,367,28"/&gt;&lt;area shape="rect" href="http://services.google.com/feedback/abg" coords="384,10,453,23"/&gt;&lt;/map&gt;&lt;img usemap="#google_ad_map_e8JwP1QhEd5hRmtv-n0447u1zIc_" border="0" src="http://imageads.googleadservices.com/pagead/ads?format=468x30_aff_img&amp;client=ca-pub-5311481257402216&amp;channel=7127926294&amp;output=png&amp;cuid=e8JwP1QhEd5hRmtv-n0447u1zIc_&amp;url=http%3A%2F%2Fryandaigle.com%2Farticles%2F2008%2F11%2F10%2Fimplement-ruby-proxy-objects-with-roxy"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feeds.feedburner.com/~a/RyansScraps?a=nhKqTZ"&gt;&lt;img src="http://feeds.feedburner.com/~a/RyansScraps?i=nhKqTZ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=E89uN"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=E89uN" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=OcdUN"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=OcdUN" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=bW2JN"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=bW2JN" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=Ebwwn"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=Ebwwn" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</content>  <feedburner:origLink>http://ryandaigle.com/articles/2008/11/10/implement-ruby-proxy-objects-with-roxy</feedburner:origLink></entry>
+  <entry xml:base="http://ryandaigle.com/">
+    <author>
+      <name>ryan</name>
+    </author>
+    <id>tag:ryandaigle.com,2008-10-25:7888</id>
+    <published>2008-10-25T01:13:00Z</published>
+    <updated>2008-10-25T01:15:17Z</updated>
+    <link href="http://feeds.feedburner.com/~r/RyansScraps/~3/431274547/what-s-new-in-edge-rails-even-better-conditional-get-support" rel="alternate" type="text/html" />
+    <title>What's New in Edge Rails: Even Better Conditional GET Support</title>
+<content type="html">
+            &lt;p&gt;We talked about the &lt;a href="/articles/2008/8/14/what-s-new-in-edge-rails-simpler-conditional-get-support-etags"&gt;new conditional &lt;span class="caps"&gt;GET&lt;/span&gt; support&lt;/a&gt; in rails a couple months ago. As some of the comments alluded, the feature was somewhat cumbersome to use – especially by Ruby standards.  Well, the feature has since been refined.  So, read the &lt;a href="/articles/2008/8/14/what-s-new-in-edge-rails-simpler-conditional-get-support-etags"&gt;original post&lt;/a&gt; to get the gist and come back here for the sugar.&lt;/p&gt;
+
+
+	&lt;p&gt;Instead of manually setting properties directly on the &lt;code&gt;response&lt;/code&gt; and querying the &lt;code&gt;request&lt;/code&gt; to see if it’s fresh we have some higher-level accessors we can use.  Observe (extending our &lt;a href="/articles/2008/8/14/what-s-new-in-edge-rails-simpler-conditional-get-support-etags"&gt;previous&lt;/a&gt; example):&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;ArticlesController&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ApplicationController&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;show&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="iv"&gt;@article&lt;/span&gt; = &lt;span class="co"&gt;Article&lt;/span&gt;.find(params[&lt;span class="sy"&gt;:id&lt;/span&gt;])&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="c"&gt;# If the request is stale according to the given timestamp and etag value&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="c"&gt;# (i.e. it needs to be processed again) then execute this block&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;if&lt;/span&gt; stale?(&lt;span class="sy"&gt;:last_modified&lt;/span&gt; =&amp;gt; &lt;span class="iv"&gt;@article&lt;/span&gt;.published_at.utc, &lt;span class="sy"&gt;:etag&lt;/span&gt; =&amp;gt; &lt;span class="iv"&gt;@article&lt;/span&gt;)&lt;tt&gt;
+&lt;/tt&gt;      respond_to &lt;span class="r"&gt;do&lt;/span&gt; |wants|&lt;tt&gt;
+&lt;/tt&gt;        &lt;span class="c"&gt;# ... normal response processing&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="c"&gt;# If the request is fresh (i.e. it's not modified) then you don't need to do&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="c"&gt;# anything. The default render checks for this using the parameters&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="c"&gt;# used in the previous call to stale? and will automatically send a&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="c"&gt;# :not_modified.  So that's it, you're done.&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;If you don’t have any special response processing and are using the default rendering mechanism (i.e. you’re not using &lt;code&gt;respond_to&lt;/code&gt; or calling &lt;code&gt;render&lt;/code&gt; yourself) then you’ve got an easy helper in &lt;code&gt;fresh_when&lt;/code&gt;:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;ArticlesController&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ApplicationController&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# This will automatically send back a :not_modified if the request is fresh, and&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# will render the default template (article.*) if it's stale.&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;show&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="iv"&gt;@article&lt;/span&gt; = &lt;span class="co"&gt;Article&lt;/span&gt;.find(params[&lt;span class="sy"&gt;:id&lt;/span&gt;])&lt;tt&gt;
+&lt;/tt&gt;    fresh_when &lt;span class="sy"&gt;:last_modified&lt;/span&gt; =&amp;gt; &lt;span class="iv"&gt;@article&lt;/span&gt;.published_at.utc, &lt;span class="sy"&gt;:etag&lt;/span&gt; =&amp;gt; &lt;span class="iv"&gt;@article&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;There you have it, the new and improved conditional &lt;span class="caps"&gt;GET&lt;/span&gt; support in Rails 2.2.&lt;/p&gt;
+
+
+	&lt;p&gt;tags: &lt;a href="http://technorati.com/tag/ruby"&gt;ruby&lt;/a&gt;,
+&lt;a href="http://technorati.com/tag/rubyonrails"&gt;rubyonrails&lt;/a&gt;&lt;/p&gt;
+          
+&lt;p&gt;&lt;map name="google_ad_map_vA4nEJYMFwjPIUHQbdcsfOqKIFI_"&gt;&lt;area shape="rect" href="http://imageads.googleadservices.com/pagead/imgclick/vA4nEJYMFwjPIUHQbdcsfOqKIFI_?pos=0" coords="1,2,367,28"/&gt;&lt;area shape="rect" href="http://services.google.com/feedback/abg" coords="384,10,453,23"/&gt;&lt;/map&gt;&lt;img usemap="#google_ad_map_vA4nEJYMFwjPIUHQbdcsfOqKIFI_" border="0" src="http://imageads.googleadservices.com/pagead/ads?format=468x30_aff_img&amp;client=ca-pub-5311481257402216&amp;channel=7127926294&amp;output=png&amp;cuid=vA4nEJYMFwjPIUHQbdcsfOqKIFI_&amp;url=http%3A%2F%2Fryandaigle.com%2Farticles%2F2008%2F10%2F25%2Fwhat-s-new-in-edge-rails-even-better-conditional-get-support"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feeds.feedburner.com/~a/RyansScraps?a=ub6ywH"&gt;&lt;img src="http://feeds.feedburner.com/~a/RyansScraps?i=ub6ywH" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=IsiIM"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=IsiIM" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=wnTGM"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=wnTGM" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=EfAeM"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=EfAeM" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=GDagm"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=GDagm" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</content>  <feedburner:origLink>http://ryandaigle.com/articles/2008/10/25/what-s-new-in-edge-rails-even-better-conditional-get-support</feedburner:origLink></entry>
+  <entry xml:base="http://ryandaigle.com/">
+    <author>
+      <name>ryan</name>
+    </author>
+    <id>tag:ryandaigle.com,2008-10-25:7685</id>
+    <published>2008-10-25T00:13:00Z</published>
+    <updated>2008-10-25T16:01:09Z</updated>
+    <link href="http://feeds.feedburner.com/~r/RyansScraps/~3/431241979/what-s-new-in-edge-rails-rails-2-2-released-summary-of-features" rel="alternate" type="text/html" />
+    <title>What's New in Edge Rails: Rails 2.2 Released - Summary of Features</title>
+<content type="html">
+            &lt;p&gt;Rails 2.2 (RC1) was just released, let’s take a peek at some of the major new features (as determined by yours truly – feel free to pipe up with features that I’ve missed).&lt;/p&gt;
+
+
+	&lt;h2&gt;Rails 2.2 Features&lt;/h2&gt;
+
+
+	&lt;ul&gt;
+	&lt;li&gt;&lt;a href="http://ryandaigle.com/articles/2008/9/7/what-s-new-in-edge-rails-connection-pools"&gt;Connection Pools&lt;/a&gt; (&lt;a href="http://weblog.rubyonrails.org/2008/8/16/josh-peek-officially-joins-the-rails-core"&gt;Rails 2.2 is thread-safe!&lt;/a&gt;)&lt;/li&gt;
+		&lt;li&gt;&lt;a href="http://ryandaigle.com/articles/2008/9/7/what-s-new-in-edge-rails-mailer-layouts"&gt;Mailer Layouts&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="http://ryandaigle.com/articles/2008/9/7/what-s-new-in-edge-rails-shallow-routes"&gt;Shallow Routes&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="http://ryandaigle.com/articles/2008/8/14/what-s-new-in-edge-rails-simpler-conditional-get-support-etags" title="ETags"&gt;Simpler Conditional Get Support&lt;/a&gt;, &lt;a href="/articles/2008/10/25/what-s-new-in-edge-rails-even-better-conditional-get-support"&gt;And Even Better Conditional &lt;span class="caps"&gt;GET&lt;/span&gt; Support&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="http://ryandaigle.com/articles/2008/7/22/what-s-new-in-edge-rails-standard-internationalization-framework"&gt;Standard Internationalization Framework&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="http://ryandaigle.com/articles/2008/7/19/what-s-new-in-edge-rails-get-ur-metaclass"&gt;Get Your Metaclass&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="http://ryandaigle.com/articles/2008/7/16/what-s-new-in-edge-rails-memoization"&gt;Easy Memoization&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="http://ryandaigle.com/articles/2008/7/7/what-s-new-in-edge-rails-easy-join-table-conditions"&gt;Easy Join Table Conditions&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="http://ryandaigle.com/articles/2008/7/7/what-s-new-in-edge-rails-custom-length-validation-tokenizer"&gt;Custom Length Validation Tokenizer&lt;/a&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href="http://ryandaigle.com/articles/2008/7/7/what-s-new-in-edge-rails-collection-partial-variable-naming"&gt;Collection Partial Variable Naming&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+
+
+	&lt;p&gt;&lt;em&gt;Note: The &lt;a href="http://ryandaigle.com/articles/2008/7/19/what-s-new-in-edge-rails-nested-models"&gt;nested model mass assignment&lt;/a&gt; feature previously discussed has &lt;a href="http://groups.google.com/group/rubyonrails-core/browse_thread/thread/3c61e00916c365e5"&gt;been delayed until after this 2.2 release&lt;/a&gt;.  Just needs a little more time in the oven, apparently.&lt;/em&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Enjoy, folks.&lt;/p&gt;
+
+
+	&lt;p&gt;tags: &lt;a href="http://technorati.com/tag/ruby"&gt;ruby&lt;/a&gt;,
+&lt;a href="http://technorati.com/tag/rubyonrails"&gt;rubyonrails&lt;/a&gt;&lt;/p&gt;
+          
+&lt;p&gt;&lt;map name="google_ad_map_gSsWvnG991-9ieTjnD-yoxrSb5Q_"&gt;&lt;area shape="rect" href="http://imageads.googleadservices.com/pagead/imgclick/gSsWvnG991-9ieTjnD-yoxrSb5Q_?pos=0" coords="1,2,367,28"/&gt;&lt;area shape="rect" href="http://services.google.com/feedback/abg" coords="384,10,453,23"/&gt;&lt;/map&gt;&lt;img usemap="#google_ad_map_gSsWvnG991-9ieTjnD-yoxrSb5Q_" border="0" src="http://imageads.googleadservices.com/pagead/ads?format=468x30_aff_img&amp;client=ca-pub-5311481257402216&amp;channel=7127926294&amp;output=png&amp;cuid=gSsWvnG991-9ieTjnD-yoxrSb5Q_&amp;url=http%3A%2F%2Fryandaigle.com%2Farticles%2F2008%2F10%2F25%2Fwhat-s-new-in-edge-rails-rails-2-2-released-summary-of-features"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feeds.feedburner.com/~a/RyansScraps?a=3Uuxuf"&gt;&lt;img src="http://feeds.feedburner.com/~a/RyansScraps?i=3Uuxuf" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=ry8dM"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=ry8dM" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=HypxM"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=HypxM" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=zKjfM"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=zKjfM" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=6Zscm"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=6Zscm" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</content>  <feedburner:origLink>http://ryandaigle.com/articles/2008/10/25/what-s-new-in-edge-rails-rails-2-2-released-summary-of-features</feedburner:origLink></entry>
+  <entry xml:base="http://ryandaigle.com/">
+    <author>
+      <name>ryan</name>
+    </author>
+    <id>tag:ryandaigle.com,2008-10-23:7885</id>
+    <published>2008-10-23T20:43:00Z</published>
+    <updated>2008-10-23T20:45:43Z</updated>
+    <link href="http://feeds.feedburner.com/~r/RyansScraps/~3/430017303/what-s-new-in-edge-rails-you-smell-that" rel="alternate" type="text/html" />
+    <title>What's New in Edge Rails: You Smell That?</title>
+<content type="html">
+            &lt;p&gt;... smells like &lt;a href="http://github.com/rails/rails/commit/57c31a380e0136607f3ce6ee568730ec1539e163"&gt;Rails v2.2&lt;/a&gt; is right around the corner…&lt;/p&gt;
+
+
+	&lt;p&gt;tags: &lt;a href="http://technorati.com/tag/ruby"&gt;ruby&lt;/a&gt;,
+&lt;a href="http://technorati.com/tag/rubyonrails"&gt;rubyonrails&lt;/a&gt;&lt;/p&gt;
+          
+&lt;p&gt;&lt;map name="google_ad_map_y-JkJgx6g60wcgz2kZl2un5Svn0_"&gt;&lt;area shape="rect" href="http://imageads.googleadservices.com/pagead/imgclick/y-JkJgx6g60wcgz2kZl2un5Svn0_?pos=0" coords="1,2,367,28"/&gt;&lt;area shape="rect" href="http://services.google.com/feedback/abg" coords="384,10,453,23"/&gt;&lt;/map&gt;&lt;img usemap="#google_ad_map_y-JkJgx6g60wcgz2kZl2un5Svn0_" border="0" src="http://imageads.googleadservices.com/pagead/ads?format=468x30_aff_img&amp;client=ca-pub-5311481257402216&amp;channel=7127926294&amp;output=png&amp;cuid=y-JkJgx6g60wcgz2kZl2un5Svn0_&amp;url=http%3A%2F%2Fryandaigle.com%2Farticles%2F2008%2F10%2F23%2Fwhat-s-new-in-edge-rails-you-smell-that"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feeds.feedburner.com/~a/RyansScraps?a=jDNUJT"&gt;&lt;img src="http://feeds.feedburner.com/~a/RyansScraps?i=jDNUJT" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=rq4IM"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=rq4IM" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=ewKsM"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=ewKsM" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=Uhr6M"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=Uhr6M" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=YvKCm"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=YvKCm" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</content>  <feedburner:origLink>http://ryandaigle.com/articles/2008/10/23/what-s-new-in-edge-rails-you-smell-that</feedburner:origLink></entry>
+  <entry xml:base="http://ryandaigle.com/">
+    <author>
+      <name>ryan</name>
+    </author>
+    <id>tag:ryandaigle.com,2008-09-07:7620</id>
+    <published>2008-09-07T21:32:00Z</published>
+    <updated>2008-10-25T16:01:21Z</updated>
+    <link href="http://feeds.feedburner.com/~r/RyansScraps/~3/386087305/what-s-new-in-edge-rails-connection-pools" rel="alternate" type="text/html" />
+    <title>What's New in Edge Rails: Connection Pools</title>
+<content type="html">
+            &lt;p&gt;With the &lt;a href="http://weblog.rubyonrails.org/2008/8/16/josh-peek-officially-joins-the-rails-core"&gt;upcoming thread-safety of Rails&lt;/a&gt; comes the necessity of &lt;a href="http://github.com/rails/rails/commit/6f932b4790371e548c0df9033da96b2cf8f51dcc"&gt;database connection pools&lt;/a&gt;.  While less a feature and more a hidden implementation detail, you do have the ability to adjust the max size of these new pools (default is 5).  In your database.yml configuration file just set the &lt;code&gt;pool&lt;/code&gt; key:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;development:&lt;tt&gt;
+&lt;/tt&gt;  adapter: mysql&lt;tt&gt;
+&lt;/tt&gt;  username: root&lt;tt&gt;
+&lt;/tt&gt;  database: myapp_dev&lt;tt&gt;
+&lt;/tt&gt;  pool: &lt;span class="i"&gt;10&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;So there ya go – connection pools.  That was easy…&lt;/p&gt;
+
+
+	&lt;p&gt;tags: &lt;a href="http://technorati.com/tag/ruby"&gt;ruby&lt;/a&gt;,
+&lt;a href="http://technorati.com/tag/rubyonrails"&gt;rubyonrails&lt;/a&gt;&lt;/p&gt;
+          
+&lt;p&gt;&lt;map name="google_ad_map_PMMhsOVr69PyoWDlpsNIVOrNwzE_"&gt;&lt;area shape="rect" href="http://imageads.googleadservices.com/pagead/imgclick/PMMhsOVr69PyoWDlpsNIVOrNwzE_?pos=0" coords="1,2,367,28"/&gt;&lt;area shape="rect" href="http://services.google.com/feedback/abg" coords="384,10,453,23"/&gt;&lt;/map&gt;&lt;img usemap="#google_ad_map_PMMhsOVr69PyoWDlpsNIVOrNwzE_" border="0" src="http://imageads.googleadservices.com/pagead/ads?format=468x30_aff_img&amp;client=ca-pub-5311481257402216&amp;channel=7127926294&amp;output=png&amp;cuid=PMMhsOVr69PyoWDlpsNIVOrNwzE_&amp;url=http%3A%2F%2Fryandaigle.com%2Farticles%2F2008%2F9%2F7%2Fwhat-s-new-in-edge-rails-connection-pools"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feeds.feedburner.com/~a/RyansScraps?a=GYuOlP"&gt;&lt;img src="http://feeds.feedburner.com/~a/RyansScraps?i=GYuOlP" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=rxPLL"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=rxPLL" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=RjHCL"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=RjHCL" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=wd4NL"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=wd4NL" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=SLUFl"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=SLUFl" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</content>  <feedburner:origLink>http://ryandaigle.com/articles/2008/9/7/what-s-new-in-edge-rails-connection-pools</feedburner:origLink></entry>
+  <entry xml:base="http://ryandaigle.com/">
+    <author>
+      <name>ryan</name>
+    </author>
+    <id>tag:ryandaigle.com,2008-09-07:7618</id>
+    <published>2008-09-07T21:10:00Z</published>
+    <updated>2008-10-25T16:01:40Z</updated>
+    <link href="http://feeds.feedburner.com/~r/RyansScraps/~3/386079761/what-s-new-in-edge-rails-mailer-layouts" rel="alternate" type="text/html" />
+    <title>What's New in Edge Rails: Mailer Layouts</title>
+<content type="html">
+            &lt;p&gt;Rails mailer templates &lt;a href="http://github.com/rails/rails/commit/e9a8e0053be3b293ab89fb584f1d660063f107aa"&gt;now have the ability to utilize layouts&lt;/a&gt; just like their view-template siblings.  The only caveat is that for a mailer layout to be automatically recognized it must end with &lt;code&gt;_mailer&lt;/code&gt;.  So this mailer:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;UserMailer&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActionMailer&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;registration&lt;/span&gt;(user)&lt;tt&gt;
+&lt;/tt&gt;    subject    &lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;You've registered&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    from       &lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;system@example.com&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;would need a layout at &lt;code&gt;layouts/user_mailer.html.erb&lt;/code&gt;.  If you explicitly specify the layout it doesn’t need the &lt;code&gt;_mailer&lt;/code&gt; suffix.  So, in this example, a layout at &lt;code&gt;layouts/email.html.erb&lt;/code&gt; would suffice:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;UserMailer&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActionMailer&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  layout &lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;email&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  ...&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Go forth and make your emails pretty.  You’ve got all the tools now…&lt;/p&gt;
+
+
+	&lt;p&gt;tags: &lt;a href="http://technorati.com/tag/ruby"&gt;ruby&lt;/a&gt;,
+&lt;a href="http://technorati.com/tag/rubyonrails"&gt;rubyonrails&lt;/a&gt;&lt;/p&gt;
+          
+&lt;p&gt;&lt;map name="google_ad_map_UntSDdCCZX66WzVg4DzlU6aUHlA_"&gt;&lt;area shape="rect" href="http://imageads.googleadservices.com/pagead/imgclick/UntSDdCCZX66WzVg4DzlU6aUHlA_?pos=0" coords="1,2,367,28"/&gt;&lt;area shape="rect" href="http://services.google.com/feedback/abg" coords="384,10,453,23"/&gt;&lt;/map&gt;&lt;img usemap="#google_ad_map_UntSDdCCZX66WzVg4DzlU6aUHlA_" border="0" src="http://imageads.googleadservices.com/pagead/ads?format=468x30_aff_img&amp;client=ca-pub-5311481257402216&amp;channel=7127926294&amp;output=png&amp;cuid=UntSDdCCZX66WzVg4DzlU6aUHlA_&amp;url=http%3A%2F%2Fryandaigle.com%2Farticles%2F2008%2F9%2F7%2Fwhat-s-new-in-edge-rails-mailer-layouts"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feeds.feedburner.com/~a/RyansScraps?a=yXy4bg"&gt;&lt;img src="http://feeds.feedburner.com/~a/RyansScraps?i=yXy4bg" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=OMqvL"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=OMqvL" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=ex2dL"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=ex2dL" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=LYkEL"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=LYkEL" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=kw6ol"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=kw6ol" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</content>  <feedburner:origLink>http://ryandaigle.com/articles/2008/9/7/what-s-new-in-edge-rails-mailer-layouts</feedburner:origLink></entry>
+  <entry xml:base="http://ryandaigle.com/">
+    <author>
+      <name>ryan</name>
+    </author>
+    <id>tag:ryandaigle.com,2008-09-07:7615</id>
+    <published>2008-09-07T20:32:00Z</published>
+    <updated>2008-10-25T15:58:46Z</updated>
+    <link href="http://feeds.feedburner.com/~r/RyansScraps/~3/386049038/what-s-new-in-edge-rails-shallow-routes" rel="alternate" type="text/html" />
+    <title>What's New in Edge Rails: Shallow Routes</title>
+<content type="html">
+            &lt;p&gt;Rails’ routing mechanism is pretty slick.  In a very intuitive way you’re able to describe the resources you want exposed at the &lt;span class="caps"&gt;URL&lt;/span&gt; level with this routing-DSL:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;map.resources &lt;span class="sy"&gt;:users&lt;/span&gt; &lt;span class="r"&gt;do&lt;/span&gt; |user|&lt;tt&gt;
+&lt;/tt&gt;  user.resources &lt;span class="sy"&gt;:articles&lt;/span&gt; &lt;span class="r"&gt;do&lt;/span&gt; |article|&lt;tt&gt;
+&lt;/tt&gt;    article.resources &lt;span class="sy"&gt;:comments&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;However, while this configuration makes an article available at &lt;code&gt;/users/1/articles/1&lt;/code&gt; and comments at &lt;code&gt; /users/1/articles/1/comments/1&lt;/code&gt; there are often times when you want to bypass the full nested hierarchy and directly access the resource in question.  Now, with the &lt;a href="http://github.com/rails/rails/commit/83c6ba18899a9f797d79726ca0078bdf618ec3d4"&gt;&lt;code&gt;shallow&lt;/code&gt; route option&lt;/a&gt;, you can.&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;map.resources &lt;span class="sy"&gt;:users&lt;/span&gt;, &lt;span class="sy"&gt;:shallow&lt;/span&gt; =&amp;gt; &lt;span class="pc"&gt;true&lt;/span&gt; &lt;span class="r"&gt;do&lt;/span&gt; |user|&lt;tt&gt;
+&lt;/tt&gt;  user.resources &lt;span class="sy"&gt;:articles&lt;/span&gt; &lt;span class="r"&gt;do&lt;/span&gt; |article|&lt;tt&gt;
+&lt;/tt&gt;    article.resources &lt;span class="sy"&gt;:comments&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;This configuration removes all nested member paths (like &lt;code&gt;/articles/1/comments/1&lt;/code&gt;) and makes them directly accessible (as &lt;code&gt;/comments/1&lt;/code&gt;).  Basically, routes are built only with the minimal amount of information that’s needed to uniquely identify the resource.&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;user_articles_path(&lt;span class="i"&gt;1&lt;/span&gt;) &lt;span class="c"&gt;#=&amp;gt; '/users/1/articles'&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;article_path(&lt;span class="i"&gt;2&lt;/span&gt;) &lt;span class="c"&gt;#=&amp;gt; '/articles/2'&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;article_comments_path(&lt;span class="i"&gt;3&lt;/span&gt;) &lt;span class="c"&gt;#=&amp;gt; '/articles/3/comments'&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;comment_path(&lt;span class="i"&gt;4&lt;/span&gt;) &lt;span class="c"&gt;#=&amp;gt; '/comments/4'&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;No longer do you need to wrestle with infinitely nested routes, the &lt;code&gt;:shallow&lt;/code&gt; option automatically makes all routes as concise as possible.&lt;/p&gt;
+
+
+	&lt;p&gt;tags: &lt;a href="http://technorati.com/tag/ruby"&gt;ruby&lt;/a&gt;,
+&lt;a href="http://technorati.com/tag/rubyonrails"&gt;rubyonrails&lt;/a&gt;&lt;/p&gt;
+          
+&lt;p&gt;&lt;map name="google_ad_map_aqeH1ogy4Pc5W5sTNpkegVaLF.M_"&gt;&lt;area shape="rect" href="http://imageads.googleadservices.com/pagead/imgclick/aqeH1ogy4Pc5W5sTNpkegVaLF.M_?pos=0" coords="1,2,367,28"/&gt;&lt;area shape="rect" href="http://services.google.com/feedback/abg" coords="384,10,453,23"/&gt;&lt;/map&gt;&lt;img usemap="#google_ad_map_aqeH1ogy4Pc5W5sTNpkegVaLF.M_" border="0" src="http://imageads.googleadservices.com/pagead/ads?format=468x30_aff_img&amp;client=ca-pub-5311481257402216&amp;channel=7127926294&amp;output=png&amp;cuid=aqeH1ogy4Pc5W5sTNpkegVaLF.M_&amp;url=http%3A%2F%2Fryandaigle.com%2Farticles%2F2008%2F9%2F7%2Fwhat-s-new-in-edge-rails-shallow-routes"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feeds.feedburner.com/~a/RyansScraps?a=U9csoE"&gt;&lt;img src="http://feeds.feedburner.com/~a/RyansScraps?i=U9csoE" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=Sr7ML"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=Sr7ML" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=Jl11L"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=Jl11L" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=N6uKL"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=N6uKL" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=Fq8Tl"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=Fq8Tl" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</content>  <feedburner:origLink>http://ryandaigle.com/articles/2008/9/7/what-s-new-in-edge-rails-shallow-routes</feedburner:origLink></entry>
+  <entry xml:base="http://ryandaigle.com/">
+    <author>
+      <name>ryan</name>
+    </author>
+    <id>tag:ryandaigle.com,2008-08-20:7467</id>
+    <published>2008-08-20T14:47:00Z</published>
+    <updated>2008-11-13T13:16:34Z</updated>
+    <link href="http://feeds.feedburner.com/~r/RyansScraps/~3/370044913/named-scope-it-s-not-just-for-conditions-ya-know" rel="alternate" type="text/html" />
+    <title>Named Scope: It's Not Just for Conditions, Ya Know?</title>
+<content type="html">
+            &lt;p&gt;&lt;a href="/articles/2008/3/24/what-s-new-in-edge-rails-has-finder-functionality"&gt;Named scopes in Rails are great&lt;/a&gt;, everybody knows that.  They’re usually used to create granular, chainable sets of &lt;span class="caps"&gt;SQL&lt;/span&gt; conditions that nicely encapsulate your domain query logic.  Here’s a simple example:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;Article&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActiveRecord&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# Get all articles that have been published&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  named_scope &lt;span class="sy"&gt;:published&lt;/span&gt;, &lt;span class="sy"&gt;:conditions&lt;/span&gt; =&amp;gt; [&lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;published = ?&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="pc"&gt;true&lt;/span&gt;]&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# Get all articles that were created recently&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  named_scope &lt;span class="sy"&gt;:recent&lt;/span&gt;, lambda { { &lt;span class="sy"&gt;:conditions&lt;/span&gt; =&amp;gt; [&lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;created_at &amp;gt;= ?&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="i"&gt;1&lt;/span&gt;.week.ago] } }&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Get all recently created articles that have been published&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="co"&gt;Article&lt;/span&gt;.published.recent &lt;span class="c"&gt;#=&amp;gt; [&amp;lt;Article id: ...&amp;gt;, &amp;lt;..&amp;gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;However, as much as I use &lt;code&gt;named_scope&lt;/code&gt; for this purpose, I also use it for some smaller and still useful functions.  For instance, I find that I often need to just fetch the first X number of results for any particular query.  Instead of having to call &lt;code&gt;find&lt;/code&gt; with the &lt;code&gt;:limit&lt;/code&gt; option you could create the following named_scope:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;Article&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActiveRecord&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# Only get the first X results&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  named_scope &lt;span class="sy"&gt;:limited&lt;/span&gt;, lambda { |num| { &lt;span class="sy"&gt;:limit&lt;/span&gt; =&amp;gt; num } }&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Get the first 5 articles - instead of Article.find(:all, :limit =&amp;gt; 5)&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="co"&gt;Article&lt;/span&gt;.limited(&lt;span class="i"&gt;5&lt;/span&gt;) &lt;span class="c"&gt;#=&amp;gt; [&amp;lt;Article id: ...&amp;gt;, &amp;lt;..&amp;gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Hey, any less typing I’ll take, and I find myself using this &lt;code&gt;limited&lt;/code&gt; named_scope a lot.  But let’s pimp it a little so that you don’t always have to supply the number, and make it default to the &lt;code&gt;per_page&lt;/code&gt; value that exists on the class if you’re using &lt;a href="http://github.com/mislav/will_paginate/tree/master"&gt;will_paginate&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;Article&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActiveRecord&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# Only get the first X results.  If no arg is given then try to&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# use the per_page value that will_paginate uses.  If that&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# doesn't exist then use 10&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  named_scope &lt;span class="sy"&gt;:limited&lt;/span&gt;, lambda { |*num|&lt;tt&gt;
+&lt;/tt&gt;    { &lt;span class="sy"&gt;:limit&lt;/span&gt; =&amp;gt; num.flatten.first || (&lt;span class="r"&gt;defined?&lt;/span&gt;(per_page) ? per_page : &lt;span class="i"&gt;10&lt;/span&gt;) }&lt;tt&gt;
+&lt;/tt&gt;  }&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;per_page&lt;/span&gt;; &lt;span class="i"&gt;15&lt;/span&gt;; &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Get the first 15 articles&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="co"&gt;Article&lt;/span&gt;.limited &lt;span class="c"&gt;#=&amp;gt; [&amp;lt;Article id: ...&amp;gt;, &amp;lt;..&amp;gt;]&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Get the first 5 articles&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="co"&gt;Article&lt;/span&gt;.limited(&lt;span class="i"&gt;5&lt;/span&gt;) &lt;span class="c"&gt;#=&amp;gt; [&amp;lt;Article id: ...&amp;gt;, &amp;lt;..&amp;gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Note that we have to use the variable length &lt;code&gt;*num&lt;/code&gt; argument in the &lt;code&gt;lambda&lt;/code&gt; to allow for no arguments.&lt;/p&gt;
+
+
+	&lt;p&gt;Cool, so we’ve got a handy little tool for our toolbox now.  Here’s another one I find myself using that isn’t strictly a conditional scope – &lt;code&gt;ordered&lt;/code&gt;:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;Article&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActiveRecord&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# Order the results by the given argument, or 'created_at DESC'&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# if no arg is given&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  named_scope &lt;span class="sy"&gt;:ordered&lt;/span&gt;, lambda { |*order|&lt;tt&gt;
+&lt;/tt&gt;    { &lt;span class="sy"&gt;:order&lt;/span&gt; =&amp;gt; order.flatten.first || &lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;created_at DESC&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt; }&lt;tt&gt;
+&lt;/tt&gt;  }&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Get all articles ordered by 'created_at DESC'&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="co"&gt;Article&lt;/span&gt;.ordered &lt;span class="c"&gt;#=&amp;gt; [&amp;lt;Article id: ...&amp;gt;, &amp;lt;..&amp;gt;]&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Get all articles ordered by 'updated_at DESC'&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="co"&gt;Article&lt;/span&gt;.ordered(&lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;updated_at DESC&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;) &lt;span class="c"&gt;#=&amp;gt; [&amp;lt;Article id: ...&amp;gt;, &amp;lt;..&amp;gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;&lt;em&gt;Be careful with this one, however, as &lt;code&gt;with_scope&lt;/code&gt; (which is really what is powering &lt;code&gt;named_scope&lt;/code&gt;) doesn’t know how to handle multiple &lt;code&gt;order&lt;/code&gt; clauses.  So, you can only used &lt;code&gt;ordered&lt;/code&gt; once per call chain.&lt;/em&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;I’ve bundled these scopes up into a “utility scopes:http://github.com/yfactorial/utility_scopes” plugin/gem if you think they look useful to you.  I’ve also added some class-level convenience initializers to let you override the default values (like the default limit and default order clause):&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;20&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;Article&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActiveRecord&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# This class's default ordering (if not specified&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# defaults to 'created_at DESC'&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  ordered_by &lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;published_at DESC&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# By default, return 15 results (if not specified&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# defaults to 10&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  default_limit &lt;span class="i"&gt;15&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Get the first 15 articles ordered by 'published_at DESC'&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="co"&gt;Article&lt;/span&gt;.ordered.limited &lt;span class="c"&gt;#=&amp;gt; [&amp;lt;Article id: ...&amp;gt;, &amp;lt;..&amp;gt;]&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Get the first 15 articles ordered by 'popularity ASC'&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="co"&gt;Article&lt;/span&gt;.ordered(&lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;popularity ASC&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;).limited &lt;span class="c"&gt;#=&amp;gt; [&amp;lt;Article id: ...&amp;gt;, &amp;lt;..&amp;gt;]&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Get the first 20 articles ordered by 'popularity ASC'&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="co"&gt;Article&lt;/span&gt;.ordered(&lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;popularity ASC&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;).limited(&lt;span class="i"&gt;20&lt;/span&gt;) &lt;span class="c"&gt;#=&amp;gt; [&amp;lt;Article id: ...&amp;gt;, &amp;lt;..&amp;gt;]&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Need a little something else?  How about this &lt;code&gt;with&lt;/code&gt; scope I’ve included which will eager load the specified associations:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;Article&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActiveRecord&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  has_many &lt;span class="sy"&gt;:comments&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  has_many &lt;span class="sy"&gt;:contributors&lt;/span&gt;, &lt;span class="sy"&gt;:class_name&lt;/span&gt; =&amp;gt; &lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;User&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Get the first 10 articles along with their comments, comment authors and article contributors&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# This is equivalent to&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Article.limit(10).find(:all, :include =&amp;gt; [{ :comments =&amp;gt; :author }, :contributors])&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="co"&gt;Article&lt;/span&gt;.limit(&lt;span class="i"&gt;10&lt;/span&gt;).with({ &lt;span class="sy"&gt;:comments&lt;/span&gt; =&amp;gt; &lt;span class="sy"&gt;:author&lt;/span&gt; }, &lt;span class="sy"&gt;:contributors&lt;/span&gt;)&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;You can get all these goodies yourself by doing the following in your Rails 2.1 app.  In &lt;code&gt;config/environment.rb&lt;/code&gt; specify the gem dependency:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="co"&gt;Rails&lt;/span&gt;::&lt;span class="co"&gt;Initializer&lt;/span&gt;.run &lt;span class="r"&gt;do&lt;/span&gt; |config|&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# ...&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  config.gem &lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;yfactorial-utility_scopes&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class="sy"&gt;:lib&lt;/span&gt; =&amp;gt; &lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;utility_scopes&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="sy"&gt;:source&lt;/span&gt; =&amp;gt; &lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;http://gems.github.com/&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;And then to get the &lt;code&gt;utility_scopes&lt;/code&gt; gem actually installed on your system:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;rake gems:install GEM=yfactorial-utility_scopes&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Or you can just install the gem as you normally would:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;sudo gem install yfactorial-utility_scopes -s http://gems.github.com&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Independent of whether or not you find these scopes useful, remember that &lt;code&gt;named_scope&lt;/code&gt; is all up in your queries’ bidness – not just your queries’ conditions&lt;/p&gt;
+
+
+	&lt;p&gt;Have some utility scopes you find to be indispensable?  Let me know here or send me a request on github (user is &lt;a href="http://github.com/yfactorial"&gt;yfactorial&lt;/a&gt;).&lt;/p&gt;
+
+
+	&lt;p&gt;tags: &lt;a href="http://technorati.com/tag/ruby"&gt;ruby&lt;/a&gt;,
+&lt;a href="http://technorati.com/tag/rubyonrails"&gt;rubyonrails&lt;/a&gt;&lt;/p&gt;
+          
+&lt;p&gt;&lt;map name="google_ad_map_x6XSFKB6OIKcAhg-8dcwMe-h4Y0_"&gt;&lt;area shape="rect" href="http://imageads.googleadservices.com/pagead/imgclick/x6XSFKB6OIKcAhg-8dcwMe-h4Y0_?pos=0" coords="1,2,367,28"/&gt;&lt;area shape="rect" href="http://services.google.com/feedback/abg" coords="384,10,453,23"/&gt;&lt;/map&gt;&lt;img usemap="#google_ad_map_x6XSFKB6OIKcAhg-8dcwMe-h4Y0_" border="0" src="http://imageads.googleadservices.com/pagead/ads?format=468x30_aff_img&amp;client=ca-pub-5311481257402216&amp;channel=7127926294&amp;output=png&amp;cuid=x6XSFKB6OIKcAhg-8dcwMe-h4Y0_&amp;url=http%3A%2F%2Fryandaigle.com%2Farticles%2F2008%2F8%2F20%2Fnamed-scope-it-s-not-just-for-conditions-ya-know"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feeds.feedburner.com/~a/RyansScraps?a=cflfpU"&gt;&lt;img src="http://feeds.feedburner.com/~a/RyansScraps?i=cflfpU" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=Rc7baK"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=Rc7baK" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=CimPpK"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=CimPpK" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=QLR9XK"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=QLR9XK" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=obOGRk"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=obOGRk" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</content>  <feedburner:origLink>http://ryandaigle.com/articles/2008/8/20/named-scope-it-s-not-just-for-conditions-ya-know</feedburner:origLink></entry>
+  <entry xml:base="http://ryandaigle.com/">
+    <author>
+      <name>ryan</name>
+    </author>
+    <id>tag:ryandaigle.com,2008-08-14:7345</id>
+    <published>2008-08-14T00:32:00Z</published>
+    <updated>2008-10-25T01:18:37Z</updated>
+    <link href="http://feeds.feedburner.com/~r/RyansScraps/~3/364348231/what-s-new-in-edge-rails-simpler-conditional-get-support-etags" rel="alternate" type="text/html" />
+    <title>What's New in Edge Rails: Simpler Conditional Get Support (ETags)</title>
+<content type="html">
+            &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; &lt;em&gt;This feature has been greatly improved since the writing of this article.  &lt;a href="/articles/2008/10/25/what-s-new-in-edge-rails-even-better-conditional-get-support"&gt;See here&lt;/a&gt; for the latest and greatest.&lt;/em&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;Conditional-gets are a facility of the &lt;span class="caps"&gt;HTTP&lt;/span&gt; spec that provide a way for web servers to tell browsers that the response to a &lt;code&gt;GET&lt;/code&gt; request hasn’t changed since the last request and can be safely pulled from the browser cache.&lt;/p&gt;
+
+
+	&lt;p&gt;They work by using the &lt;code&gt; HTTP_IF_NONE_MATCH&lt;/code&gt; and &lt;code&gt; HTTP_IF_MODIFIED_SINCE&lt;/code&gt; headers to pass back and forth both a unique content identifier and the timestamp of when the content was last changed.  If the browser makes a request where the content identifier (etag) or last modified since timestamp matches the server’s version then the server only needs to send back an empty response with a not modified status.&lt;/p&gt;
+
+
+	&lt;p&gt;It is the server’s (i.e. our) responsibility to look for a last modified timestamp and the if-none-match header and determine whether or not to send back the full response.  With &lt;a href="http://github.com/JackDanger/rails/commit/b7529ed1cc7cfd8df5fd1b069e2881d39d3d984c"&gt;this new conditional-get support in rails&lt;/a&gt; this is a pretty easy task:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;20&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;ArticlesController&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ApplicationController&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;show&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="iv"&gt;@article&lt;/span&gt; = &lt;span class="co"&gt;Article&lt;/span&gt;.find(params[&lt;span class="sy"&gt;:id&lt;/span&gt;])&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="c"&gt;# Set the response headers to accurately reflect the state of the&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="c"&gt;# requested object(s)&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    response.last_modified = &lt;span class="iv"&gt;@article&lt;/span&gt;.published_at.utc&lt;tt&gt;
+&lt;/tt&gt;    response.etag = &lt;span class="iv"&gt;@article&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="c"&gt;# If the request's state is the same as the server's state then we know&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="c"&gt;# we don't have to send back the whole body&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;if&lt;/span&gt; request.fresh?(response)&lt;tt&gt;
+&lt;/tt&gt;      head &lt;span class="sy"&gt;:not_modified&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;else&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      respond_to &lt;span class="r"&gt;do&lt;/span&gt; |wants|&lt;tt&gt;
+&lt;/tt&gt;        &lt;span class="c"&gt;# normal response processing&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;The etag value is calculated for you with the &lt;code&gt;etag=&lt;/code&gt; setter method.  All you have to do is provide a single object or array of objects that uniquely identify this request.  In this example the article itself contains all the information that uniquely identifies the state of this request.  However, you may need to use more than one key in your app.  For instance, if the request is user specific:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;response.etag = [&lt;span class="iv"&gt;@article&lt;/span&gt;, current_user]&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;The &lt;code&gt;request.fresh?(response)&lt;/code&gt; method is what will then tell you if the incoming request matches either the last-modified-since or if-none-match values of the outgoing response.  If it does you can avoid passing the full body of the response back and save some bandwidth.&lt;/p&gt;
+
+
+	&lt;p&gt;It’s also possible that you can avoid hitting the database all together if your application deals with completely static resources (though this is rare):&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;ArticlesController&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ApplicationController&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;show&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="c"&gt;# If articles don't change, the etag can be based solely&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="c"&gt;# on items we have in the request&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    response.etag = [&lt;span class="sy"&gt;:article&lt;/span&gt;, params[&lt;span class="sy"&gt;:id&lt;/span&gt;]]&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="c"&gt;# If the request's state is the same as the server's state then we can&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="c"&gt;# avoid the db call all together&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;if&lt;/span&gt; request.fresh?(response)&lt;tt&gt;
+&lt;/tt&gt;      head &lt;span class="sy"&gt;:not_modified&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;else&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class="iv"&gt;@article&lt;/span&gt; = &lt;span class="co"&gt;Article&lt;/span&gt;.find(params[&lt;span class="sy"&gt;:id&lt;/span&gt;])&lt;tt&gt;
+&lt;/tt&gt;      respond_to &lt;span class="r"&gt;do&lt;/span&gt; |wants|&lt;tt&gt;
+&lt;/tt&gt;        ...&lt;tt&gt;
+&lt;/tt&gt;      &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;So be a good citizen and make your requests conditional-get compatible.  It’s the right thing to do – and can make your apps more performant.&lt;/p&gt;
+
+
+	&lt;p&gt;tags: &lt;a href="http://technorati.com/tag/ruby"&gt;ruby&lt;/a&gt;,
+&lt;a href="http://technorati.com/tag/rubyonrails"&gt;rubyonrails&lt;/a&gt;&lt;/p&gt;
+          
+&lt;p&gt;&lt;map name="google_ad_map_fHm.qTjlWUWwEtXjJVyBRxns6zw_"&gt;&lt;area shape="rect" href="http://imageads.googleadservices.com/pagead/imgclick/fHm.qTjlWUWwEtXjJVyBRxns6zw_?pos=0" coords="1,2,367,28"/&gt;&lt;area shape="rect" href="http://services.google.com/feedback/abg" coords="384,10,453,23"/&gt;&lt;/map&gt;&lt;img usemap="#google_ad_map_fHm.qTjlWUWwEtXjJVyBRxns6zw_" border="0" src="http://imageads.googleadservices.com/pagead/ads?format=468x30_aff_img&amp;client=ca-pub-5311481257402216&amp;channel=7127926294&amp;output=png&amp;cuid=fHm.qTjlWUWwEtXjJVyBRxns6zw_&amp;url=http%3A%2F%2Fryandaigle.com%2Farticles%2F2008%2F8%2F14%2Fwhat-s-new-in-edge-rails-simpler-conditional-get-support-etags"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feeds.feedburner.com/~a/RyansScraps?a=yjN08u"&gt;&lt;img src="http://feeds.feedburner.com/~a/RyansScraps?i=yjN08u" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=GEZKdK"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=GEZKdK" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=ZGPETK"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=ZGPETK" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=7FhUtK"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=7FhUtK" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=Gfdzjk"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=Gfdzjk" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</content>  <feedburner:origLink>http://ryandaigle.com/articles/2008/8/14/what-s-new-in-edge-rails-simpler-conditional-get-support-etags</feedburner:origLink></entry>
+  <entry xml:base="http://ryandaigle.com/">
+    <author>
+      <name>ryan</name>
+    </author>
+    <id>tag:ryandaigle.com,2008-07-22:7129</id>
+    <published>2008-07-22T16:41:00Z</published>
+    <updated>2008-08-31T20:13:32Z</updated>
+    <link href="http://feeds.feedburner.com/~r/RyansScraps/~3/342716183/what-s-new-in-edge-rails-standard-internationalization-framework" rel="alternate" type="text/html" />
+    <title>What's New in Edge Rails: Standard Internationalization Framework</title>
+<content type="html">
+            &lt;p&gt;Internationalization (i18n) is a tough nut to crack and has long been handled in Rails by a variety of plugins.  Thanks to a concerted effort by the &lt;a href="http://groups.google.com/group/rails-i18n"&gt;Rails i18n team&lt;/a&gt; we now have a standardized framework for providing internationalization.&lt;/p&gt;
+
+
+	&lt;p&gt;Rather than rehash what’s already out there, head over to &lt;a href="http://www.artweb-design.de/2008/7/18/the-ruby-on-rails-i18n-core-api"&gt;Sven’s writeup of the new Rails Internationalization framework&lt;/a&gt; for the skinny.&lt;/p&gt;
+
+
+	&lt;p&gt;It’s important to note that this does not provide &lt;em&gt;actual language translations&lt;/em&gt; but merely a way for you to &lt;em&gt;plug in other translations and internationalization implementations&lt;/em&gt; into your app.&lt;/p&gt;
+
+
+	&lt;p&gt;tags: &lt;a href="http://technorati.com/tag/ruby"&gt;ruby&lt;/a&gt;,
+&lt;a href="http://technorati.com/tag/rubyonrails"&gt;rubyonrails&lt;/a&gt;&lt;/p&gt;
+          
+&lt;p&gt;&lt;map name="google_ad_map_CYOb7m59AilJEnHEHhBS6hfCeSA_"&gt;&lt;area shape="rect" href="http://imageads.googleadservices.com/pagead/imgclick/CYOb7m59AilJEnHEHhBS6hfCeSA_?pos=0" coords="1,2,367,28"/&gt;&lt;area shape="rect" href="http://services.google.com/feedback/abg" coords="384,10,453,23"/&gt;&lt;/map&gt;&lt;img usemap="#google_ad_map_CYOb7m59AilJEnHEHhBS6hfCeSA_" border="0" src="http://imageads.googleadservices.com/pagead/ads?format=468x30_aff_img&amp;client=ca-pub-5311481257402216&amp;channel=7127926294&amp;output=png&amp;cuid=CYOb7m59AilJEnHEHhBS6hfCeSA_&amp;url=http%3A%2F%2Fryandaigle.com%2Farticles%2F2008%2F7%2F22%2Fwhat-s-new-in-edge-rails-standard-internationalization-framework"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feeds.feedburner.com/~a/RyansScraps?a=JRhkCP"&gt;&lt;img src="http://feeds.feedburner.com/~a/RyansScraps?i=JRhkCP" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=1vfXjJ"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=1vfXjJ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=VrgkXJ"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=VrgkXJ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=gJtf8J"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=gJtf8J" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=P5aZOj"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=P5aZOj" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</content>  <feedburner:origLink>http://ryandaigle.com/articles/2008/7/22/what-s-new-in-edge-rails-standard-internationalization-framework</feedburner:origLink></entry>
+  <entry xml:base="http://ryandaigle.com/">
+    <author>
+      <name>ryan</name>
+    </author>
+    <id>tag:ryandaigle.com,2008-07-19:7113</id>
+    <published>2008-07-19T23:48:00Z</published>
+    <updated>2008-10-25T16:01:58Z</updated>
+    <link href="http://feeds.feedburner.com/~r/RyansScraps/~3/340234795/what-s-new-in-edge-rails-get-ur-metaclass" rel="alternate" type="text/html" />
+    <title>What's New in Edge Rails: Get Your Metaclass</title>
+<content type="html">
+            &lt;p&gt;The ActiveSupport library now has a little nugget worth mentioning – a &lt;a href="http://github.com/rails/rails/commit/f4f6e57e8c2a446a4a600576f0caf0fb8921ba13"&gt;metaclass accessor&lt;/a&gt; available everywhere as &lt;code&gt;metaclass&lt;/code&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;Not sure what a metaclass (or singleton class, or eigen class) is?  Let &lt;a href="http://ola-bini.blogspot.com/2006/09/ruby-singleton-class.html"&gt;Ola explain it to you&lt;/a&gt;.&lt;/p&gt;
+
+
+	&lt;p&gt;tags: &lt;a href="http://technorati.com/tag/ruby"&gt;ruby&lt;/a&gt;,
+&lt;a href="http://technorati.com/tag/rubyonrails"&gt;rubyonrails&lt;/a&gt;&lt;/p&gt;
+          
+&lt;p&gt;&lt;map name="google_ad_map_RjoVTI5ltffjNJyIYqb0j1YsU6s_"&gt;&lt;area shape="rect" href="http://imageads.googleadservices.com/pagead/imgclick/RjoVTI5ltffjNJyIYqb0j1YsU6s_?pos=0" coords="1,2,367,28"/&gt;&lt;area shape="rect" href="http://services.google.com/feedback/abg" coords="384,10,453,23"/&gt;&lt;/map&gt;&lt;img usemap="#google_ad_map_RjoVTI5ltffjNJyIYqb0j1YsU6s_" border="0" src="http://imageads.googleadservices.com/pagead/ads?format=468x30_aff_img&amp;client=ca-pub-5311481257402216&amp;channel=7127926294&amp;output=png&amp;cuid=RjoVTI5ltffjNJyIYqb0j1YsU6s_&amp;url=http%3A%2F%2Fryandaigle.com%2Farticles%2F2008%2F7%2F19%2Fwhat-s-new-in-edge-rails-get-ur-metaclass"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feeds.feedburner.com/~a/RyansScraps?a=mwDBJf"&gt;&lt;img src="http://feeds.feedburner.com/~a/RyansScraps?i=mwDBJf" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=tHV09J"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=tHV09J" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=cFsKGJ"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=cFsKGJ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=S5jPkJ"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=S5jPkJ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=bUVpdj"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=bUVpdj" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</content>  <feedburner:origLink>http://ryandaigle.com/articles/2008/7/19/what-s-new-in-edge-rails-get-ur-metaclass</feedburner:origLink></entry>
+  <entry xml:base="http://ryandaigle.com/">
+    <author>
+      <name>ryan</name>
+    </author>
+    <id>tag:ryandaigle.com,2008-07-19:7082</id>
+    <published>2008-07-19T23:30:00Z</published>
+    <updated>2008-09-24T11:33:23Z</updated>
+    <link href="http://feeds.feedburner.com/~r/RyansScraps/~3/340223570/what-s-new-in-edge-rails-nested-models" rel="alternate" type="text/html" />
+    <title>What's New in Edge Rails: Nested Model Mass Assignment</title>
+<content type="html">
+            &lt;p&gt;&lt;em&gt;Looks like this feature has been pulled from Edge Rails though it’s tentatively &lt;a href="http://groups.google.com/group/rubyonrails-core/browse_thread/thread/3c61e00916c365e5"&gt;scheduled to come back&lt;/a&gt; post the 2.2 release.&lt;/em&gt;&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;a href="http://railscasts.com/episodes/75"&gt;Nested models&lt;/a&gt; (nested forms by another name) describe the scenario when you want to create and modify values of nested attributes through a containing model.  For instance, if you have an user model with many phone numbers:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;User&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActiveRecord&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  validates_presence_of &lt;span class="sy"&gt;:login&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  has_many &lt;span class="sy"&gt;:phone_numbers&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;PhoneNumber&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActiveRecord&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  validates_presence_of &lt;span class="sy"&gt;:area_code&lt;/span&gt;, &lt;span class="sy"&gt;:number&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  belongs_to &lt;span class="sy"&gt;:user&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;you may want to be able to create the user and a group of phone numbers &lt;em&gt;at the same time&lt;/em&gt;.  This is what this looks like with the new &lt;a href="http://github.com/rails/rails/commit/e0750d6a5c7f621e4ca12205137c0b135cab444a"&gt;mass assignment&lt;/a&gt; functionality of Rails keyed off of the &lt;code&gt;:accessible&lt;/code&gt; option of the association declaration (&lt;code&gt;:phone_numbers&lt;/code&gt;, in this case).&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;User&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActiveRecord&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  validates_presence_of &lt;span class="sy"&gt;:login&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  has_many &lt;span class="sy"&gt;:phone_numbers&lt;/span&gt;, &lt;span class="sy"&gt;:accessible&lt;/span&gt; =&amp;gt; &lt;span class="pc"&gt;true&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;ryan = &lt;span class="co"&gt;User&lt;/span&gt;.create( {&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="sy"&gt;:login&lt;/span&gt; =&amp;gt; &lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;ryan&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;,&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="sy"&gt;:phone_numbers&lt;/span&gt; =&amp;gt; [&lt;tt&gt;
+&lt;/tt&gt;    { &lt;span class="sy"&gt;:area_code&lt;/span&gt; =&amp;gt; &lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;919&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="sy"&gt;:number&lt;/span&gt; =&amp;gt; &lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;123-4567&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt; },&lt;tt&gt;
+&lt;/tt&gt;    { &lt;span class="sy"&gt;:area_code&lt;/span&gt; =&amp;gt; &lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;920&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt;, &lt;span class="sy"&gt;:number&lt;/span&gt; =&amp;gt; &lt;span class="s"&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;span class="k"&gt;123-8901&lt;/span&gt;&lt;span class="dl"&gt;'&lt;/span&gt;&lt;/span&gt; }&lt;tt&gt;
+&lt;/tt&gt;  ]&lt;tt&gt;
+&lt;/tt&gt;})&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;ryan.phone_numbers.count &lt;span class="c"&gt;#=&amp;gt; 2&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;A single hash of values being sent to &lt;code&gt;User.create&lt;/code&gt; results in both a new user object and new associated phone numbers.  Previously, you would have had to manually create your own &lt;code&gt;phone_numbers=&lt;/code&gt; setter method on user to get this same functionality:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;User&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActiveRecord&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  ...&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;phone_numbers=&lt;/span&gt;(attrs_array)&lt;tt&gt;
+&lt;/tt&gt;    attrs_array.each &lt;span class="r"&gt;do&lt;/span&gt; |attrs|&lt;tt&gt;
+&lt;/tt&gt;      phone_numbers.create(attrs)&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Mass assignment now gives you this functionality for free.&lt;/p&gt;
+
+
+	&lt;p&gt;This may not look like much, but it is a step in the direction of letting you use nested forms.  Consider a user registration form where a user can enter their login name and their phone numbers in the same form (through the use of &lt;a href="http://api.rubyonrails.com/classes/ActionView/Helpers/FormHelper.html#M001738"&gt;&lt;code&gt;fields_for&lt;/code&gt;&lt;/a&gt; which will bundle nested model attributes into a single form):&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&amp;lt;% form_for &lt;span class="iv"&gt;@user&lt;/span&gt; &lt;span class="r"&gt;do&lt;/span&gt; |f| &lt;span class="s"&gt;&lt;span class="dl"&gt;%&amp;gt;&lt;/span&gt;&lt;span class="k"&gt;&lt;tt&gt;
+&lt;/tt&gt;  &amp;lt;%= f.text_field :login %&lt;/span&gt;&lt;span class="dl"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &amp;lt;% fields_for &lt;span class="sy"&gt;:phone_numbers&lt;/span&gt; &lt;span class="r"&gt;do&lt;/span&gt; |pn_f| &lt;span class="s"&gt;&lt;span class="dl"&gt;%&amp;gt;&lt;/span&gt;&lt;span class="k"&gt;&lt;tt&gt;
+&lt;/tt&gt;    &amp;lt;%= pn_f.text_field :area_code %&lt;/span&gt;&lt;span class="dl"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &amp;lt;%= pn_f.text_field &lt;span class="sy"&gt;:number&lt;/span&gt; &lt;span class="s"&gt;&lt;span class="dl"&gt;%&amp;gt;&lt;/span&gt;&lt;span class="k"&gt;&lt;tt&gt;
+&lt;/tt&gt;  &amp;lt;% end %&lt;/span&gt;&lt;span class="dl"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &amp;lt;%= submit_tag &lt;span class="s"&gt;&lt;span class="dl"&gt;%&amp;gt;&lt;/span&gt;&lt;span class="k"&gt;&lt;tt&gt;
+&lt;/tt&gt;&amp;lt;% end %&lt;/span&gt;&lt;span class="dl"&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;This form, when submitted to the following standard RESTful &lt;code&gt;UserController&lt;/code&gt;, will correctly create the user and its associated phone numbers through the beauty of mass assignment.&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;UserController&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ApplicationController&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# Create a new user and their phone numbers with mass assignment&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;new&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="iv"&gt;@user&lt;/span&gt; = &lt;span class="co"&gt;User&lt;/span&gt;.create(params[&lt;span class="sy"&gt;:user&lt;/span&gt;])&lt;tt&gt;
+&lt;/tt&gt;    respond_to &lt;span class="r"&gt;do&lt;/span&gt; |wants|&lt;tt&gt;
+&lt;/tt&gt;      ...&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Mass assignment can be used on all association types – &lt;code&gt;:belongs_to&lt;/code&gt;, &lt;code&gt;:has_one&lt;/code&gt;, :&lt;code&gt;has_many&lt;/code&gt; and &lt;code&gt;:has_and_belongs_to_many&lt;/code&gt; as long as the &lt;code&gt;:accessible =&amp;gt; true&lt;/code&gt; option is specified.&lt;/p&gt;
+
+
+	&lt;p&gt;This is a very convenient addition to ActiveRecord, but the real zinger will come with &lt;a href="http://groups.google.com/group/rubyonrails-core/browse_thread/thread/4049b4b313fa8be2"&gt;full nested form support&lt;/a&gt; when you can create, update and delete these nested models directly from what is pushed down in the parameter hash of a form submission.  This would allow for the functionality in this &lt;a href="http://railscasts.com/episodes/75"&gt;complex forms screencast&lt;/a&gt; with minimal hassle.  What a fine day that would be.&lt;/p&gt;
+
+
+	&lt;p&gt;tags: &lt;a href="http://technorati.com/tag/ruby"&gt;ruby&lt;/a&gt;,
+&lt;a href="http://technorati.com/tag/rubyonrails"&gt;rubyonrails&lt;/a&gt;&lt;/p&gt;
+          
+&lt;p&gt;&lt;map name="google_ad_map_RRwvVFJDsNUIICct1UBOH39wYV0_"&gt;&lt;area shape="rect" href="http://imageads.googleadservices.com/pagead/imgclick/RRwvVFJDsNUIICct1UBOH39wYV0_?pos=0" coords="1,2,367,28"/&gt;&lt;area shape="rect" href="http://services.google.com/feedback/abg" coords="384,10,453,23"/&gt;&lt;/map&gt;&lt;img usemap="#google_ad_map_RRwvVFJDsNUIICct1UBOH39wYV0_" border="0" src="http://imageads.googleadservices.com/pagead/ads?format=468x30_aff_img&amp;client=ca-pub-5311481257402216&amp;channel=7127926294&amp;output=png&amp;cuid=RRwvVFJDsNUIICct1UBOH39wYV0_&amp;url=http%3A%2F%2Fryandaigle.com%2Farticles%2F2008%2F7%2F19%2Fwhat-s-new-in-edge-rails-nested-models"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feeds.feedburner.com/~a/RyansScraps?a=0RObWJ"&gt;&lt;img src="http://feeds.feedburner.com/~a/RyansScraps?i=0RObWJ" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=UivQ4J"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=UivQ4J" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=uvgGhJ"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=uvgGhJ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=R2KCmJ"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=R2KCmJ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=T7T2Vj"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=T7T2Vj" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</content>  <feedburner:origLink>http://ryandaigle.com/articles/2008/7/19/what-s-new-in-edge-rails-nested-models</feedburner:origLink></entry>
+  <entry xml:base="http://ryandaigle.com/">
+    <author>
+      <name>ryan</name>
+    </author>
+    <id>tag:ryandaigle.com,2008-07-16:7081</id>
+    <published>2008-07-16T00:32:00Z</published>
+    <updated>2008-10-25T16:02:08Z</updated>
+    <link href="http://feeds.feedburner.com/~r/RyansScraps/~3/336589927/what-s-new-in-edge-rails-memoization" rel="alternate" type="text/html" />
+    <title>What's New in Edge Rails: Easy Memoization</title>
+<content type="html">
+            &lt;p&gt;Most people will recognize the pattern of memoization to provide a basic caching mechanism (that’s not a misspelling, it really doesn’t have an ‘r’) :&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;Person&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActiveRecord&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;social_security&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    &lt;span class="iv"&gt;@social_security&lt;/span&gt; ||= decrypt_social_security&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  ...&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;The big problem with this common type of memoization is that you’ve littered your method implementation with caching logic.  Caching is best applied in a transparent manner – and &lt;a href="http://github.com/rails/rails/commit/8a9934a9d9fc98b56c4566ae2e3fd4d83e505d3e"&gt;ActiveSupport now lets you easily insert memoization&lt;/a&gt; into your classes:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;12&lt;tt&gt;
+&lt;/tt&gt;13&lt;tt&gt;
+&lt;/tt&gt;14&lt;tt&gt;
+&lt;/tt&gt;15&lt;tt&gt;
+&lt;/tt&gt;16&lt;tt&gt;
+&lt;/tt&gt;17&lt;tt&gt;
+&lt;/tt&gt;18&lt;tt&gt;
+&lt;/tt&gt;19&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;Person&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActiveRecord&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;def&lt;/span&gt; &lt;span class="fu"&gt;social_security&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;    decrypt_social_security&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# Memoize the result of the social_security method after&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# its first evaluation (must be placed after the target&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# method definition).&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;#&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;# Can pass in multiple symbols:&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="c"&gt;#  memoize :social_security, :credit_card&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  memoize &lt;span class="sy"&gt;:social_security&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  ...&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="iv"&gt;@person&lt;/span&gt; = &lt;span class="co"&gt;Person&lt;/span&gt;.new&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="iv"&gt;@person&lt;/span&gt;.social_security  &lt;span class="c"&gt;# decrypt_social_security is invoked&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="iv"&gt;@person&lt;/span&gt;.social_security  &lt;span class="c"&gt;# decrypt_social_security is NOT invoked&lt;/span&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;&lt;code&gt;memoize&lt;/code&gt; transparently aliases the method and stores the value of your method’s first evaluation in an instance variable – giving you the same functionality of the unrefined &lt;code&gt;var ||= ...&lt;/code&gt; implementation with much less clutter.&lt;/p&gt;
+
+
+	&lt;p&gt;This implementation also handles the case where you freeze your &lt;code&gt;User&lt;/code&gt; object before ever calling the &lt;code&gt;social_security&lt;/code&gt; method.  Using conventional memoization, calls to &lt;code&gt;social_security&lt;/code&gt; would give you a &lt;code&gt;Can’t modify instance variable&lt;/code&gt; error instead of happily evaluating as you would want.&lt;/p&gt;
+
+
+	&lt;p&gt;This implementation also will not execute the target method more than once if the original execution resulted in &lt;code&gt;nil&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; – which is a flaw of the conventional pattern.  You can, however, &lt;a href="http://github.com/rails/rails/commit/e1f23da53cef20a60e4bf458d959fe2bfe7d52ea"&gt;force the target method to be invoked&lt;/a&gt; with the optional &lt;code&gt;reload&lt;/code&gt; parameter:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Force invocation of target method, i.e. &amp;quot;decrypt_social_security&amp;quot;&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# is invoked independent of there being a cached value&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="iv"&gt;@person&lt;/span&gt;.social_security(&lt;span class="pc"&gt;true&lt;/span&gt;)&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;So start giving &lt;code&gt;memoize&lt;/code&gt; some play – it’s just the right thing to do.&lt;/p&gt;
+
+
+	&lt;p&gt;&lt;em&gt;Update:&lt;/em&gt; You can &lt;a href="http://github.com/rails/rails/commit/3fc9a67c04bade858e7ac7eb8cd94eec6a63ec27"&gt;now&lt;/a&gt; use &lt;code&gt;unmemoize_all&lt;/code&gt; and &lt;code&gt;memoize_all&lt;/code&gt; to undo and redo your memoized properties.&lt;/p&gt;
+
+
+	&lt;p&gt;tags: &lt;a href="http://technorati.com/tag/ruby"&gt;ruby&lt;/a&gt;,
+&lt;a href="http://technorati.com/tag/rubyonrails"&gt;rubyonrails&lt;/a&gt;&lt;/p&gt;
+          
+&lt;p&gt;&lt;map name="google_ad_map_TxAfUlYUw.uxcLklRKJu5yanfrE_"&gt;&lt;area shape="rect" href="http://imageads.googleadservices.com/pagead/imgclick/TxAfUlYUw.uxcLklRKJu5yanfrE_?pos=0" coords="1,2,367,28"/&gt;&lt;area shape="rect" href="http://services.google.com/feedback/abg" coords="384,10,453,23"/&gt;&lt;/map&gt;&lt;img usemap="#google_ad_map_TxAfUlYUw.uxcLklRKJu5yanfrE_" border="0" src="http://imageads.googleadservices.com/pagead/ads?format=468x30_aff_img&amp;client=ca-pub-5311481257402216&amp;channel=7127926294&amp;output=png&amp;cuid=TxAfUlYUw.uxcLklRKJu5yanfrE_&amp;url=http%3A%2F%2Fryandaigle.com%2Farticles%2F2008%2F7%2F16%2Fwhat-s-new-in-edge-rails-memoization"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feeds.feedburner.com/~a/RyansScraps?a=55LfVO"&gt;&lt;img src="http://feeds.feedburner.com/~a/RyansScraps?i=55LfVO" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=5oj3EJ"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=5oj3EJ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=W1CfmJ"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=W1CfmJ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=j02HjJ"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=j02HjJ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=tJBrwj"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=tJBrwj" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</content>  <feedburner:origLink>http://ryandaigle.com/articles/2008/7/16/what-s-new-in-edge-rails-memoization</feedburner:origLink></entry>
+  <entry xml:base="http://ryandaigle.com/">
+    <author>
+      <name>ryan</name>
+    </author>
+    <id>tag:ryandaigle.com,2008-07-07:7062</id>
+    <published>2008-07-07T20:38:00Z</published>
+    <updated>2008-10-25T16:02:16Z</updated>
+    <link href="http://feeds.feedburner.com/~r/RyansScraps/~3/329182376/what-s-new-in-edge-rails-easy-join-table-conditions" rel="alternate" type="text/html" />
+    <title>What's New in Edge Rails: Easy Join Table Conditions</title>
+<content type="html">
+            &lt;p&gt;For an application with anything above a moderate level of domain complexity it’s quite likely that you’ve had to perform a query utilizing a join table:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;4&lt;tt&gt;
+&lt;/tt&gt;5&lt;tt&gt;
+&lt;/tt&gt;6&lt;tt&gt;
+&lt;/tt&gt;7&lt;tt&gt;
+&lt;/tt&gt;8&lt;tt&gt;
+&lt;/tt&gt;9&lt;tt&gt;
+&lt;/tt&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;tt&gt;
+&lt;/tt&gt;11&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;Article&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActiveRecord&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  belongs_to &lt;span class="sy"&gt;:user&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;class&lt;/span&gt; &lt;span class="cl"&gt;User&lt;/span&gt; &amp;lt; &lt;span class="co"&gt;ActiveRecord&lt;/span&gt;::&lt;span class="co"&gt;Base&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;  has_many &lt;span class="sy"&gt;:articles&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="r"&gt;end&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="c"&gt;# Get all the users that have published articles&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="co"&gt;User&lt;/span&gt;.find(&lt;span class="sy"&gt;:all&lt;/span&gt;, &lt;span class="sy"&gt;:joins&lt;/span&gt; =&amp;gt; &lt;span class="sy"&gt;:article&lt;/span&gt;,&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="sy"&gt;:conditions&lt;/span&gt; =&amp;gt; [&lt;span class="s"&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;articles.published = ?&lt;/span&gt;&lt;span class="dl"&gt;&amp;quot;&lt;/span&gt;&lt;/span&gt;, &lt;span class="pc"&gt;true&lt;/span&gt;])&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;It always makes me feel slightly embarrassed to have to resort to using &lt;code&gt;String&lt;/code&gt; snippets to specify my query logic, and this little bit is no exception.  Well, &lt;a href="http://github.com/rails/rails/commit/cd994eff9a343df376bfaec59de5b24a2ab51256"&gt;now we can specify conditions on a join table&lt;/a&gt; in a more concise manner:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Get all the users that have published articles&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="co"&gt;User&lt;/span&gt;.find(&lt;span class="sy"&gt;:all&lt;/span&gt;, &lt;span class="sy"&gt;:joins&lt;/span&gt; =&amp;gt; &lt;span class="sy"&gt;:article&lt;/span&gt;,&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="sy"&gt;:conditions&lt;/span&gt; =&amp;gt; { &lt;span class="sy"&gt;:articles&lt;/span&gt; =&amp;gt; { &lt;span class="sy"&gt;:published&lt;/span&gt; =&amp;gt; &lt;span class="pc"&gt;true&lt;/span&gt; } })&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;Note how you’re able to specify the join-table conditions as a hash whose key corresponds to the table or association name of the join table?  You can now let Rails worry about forming the correct &lt;span class="caps"&gt;SQL&lt;/span&gt; condition even across complex joins.&lt;/p&gt;
+
+
+	&lt;p&gt;However, don’t let the ease of this feature make you use it over a properly associated domain-model.  For instance, this join query:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;1&lt;tt&gt;
+&lt;/tt&gt;2&lt;tt&gt;
+&lt;/tt&gt;3&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="c"&gt;# Get all articles for a given user&lt;/span&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;span class="co"&gt;Article&lt;/span&gt;.find(&lt;span class="sy"&gt;:all&lt;/span&gt;, &lt;span class="sy"&gt;:joins&lt;/span&gt; =&amp;gt; &lt;span class="sy"&gt;:user&lt;/span&gt;,&lt;tt&gt;
+&lt;/tt&gt;  &lt;span class="sy"&gt;:conditions&lt;/span&gt; =&amp;gt; { &lt;span class="sy"&gt;:users&lt;/span&gt; =&amp;gt; { &lt;span class="sy"&gt;:id&lt;/span&gt; =&amp;gt; &lt;span class="iv"&gt;@user&lt;/span&gt;.id } })&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;is more appropriately represented as:&lt;/p&gt;
+
+
+&lt;table class="CodeRay"&gt;&lt;tr&gt;
+  &lt;td title="click to toggle" class="line_numbers"&gt;&lt;pre&gt;&lt;tt&gt;
+&lt;/tt&gt;&lt;/pre&gt;&lt;/td&gt;
+  &lt;td class="code"&gt;&lt;pre&gt;&lt;span class="iv"&gt;@user&lt;/span&gt;.articles&lt;/pre&gt;&lt;/td&gt;
+&lt;/tr&gt;&lt;/table&gt;
+
+
+	&lt;p&gt;tags: &lt;a href="http://technorati.com/tag/ruby"&gt;ruby&lt;/a&gt;,
+&lt;a href="http://technorati.com/tag/rubyonrails"&gt;rubyonrails&lt;/a&gt;&lt;/p&gt;
+          
+&lt;p&gt;&lt;map name="google_ad_map_iC.U5jycxFCzVGeOh5wbAakUToU_"&gt;&lt;area shape="rect" href="http://imageads.googleadservices.com/pagead/imgclick/iC.U5jycxFCzVGeOh5wbAakUToU_?pos=0" coords="1,2,367,28"/&gt;&lt;area shape="rect" href="http://services.google.com/feedback/abg" coords="384,10,453,23"/&gt;&lt;/map&gt;&lt;img usemap="#google_ad_map_iC.U5jycxFCzVGeOh5wbAakUToU_" border="0" src="http://imageads.googleadservices.com/pagead/ads?format=468x30_aff_img&amp;client=ca-pub-5311481257402216&amp;channel=7127926294&amp;output=png&amp;cuid=iC.U5jycxFCzVGeOh5wbAakUToU_&amp;url=http%3A%2F%2Fryandaigle.com%2Farticles%2F2008%2F7%2F7%2Fwhat-s-new-in-edge-rails-easy-join-table-conditions"/&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://feeds.feedburner.com/~a/RyansScraps?a=HXYmYP"&gt;&lt;img src="http://feeds.feedburner.com/~a/RyansScraps?i=HXYmYP" border="0"&gt;&lt;/img&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class="feedflare"&gt;
+&lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=hGAL4J"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=hGAL4J" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=Hbt0oJ"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=Hbt0oJ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=OHW9vJ"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=OHW9vJ" border="0"&gt;&lt;/img&gt;&lt;/a&gt; &lt;a href="http://feeds.feedburner.com/~f/RyansScraps?a=UtZ65j"&gt;&lt;img src="http://feeds.feedburner.com/~f/RyansScraps?i=UtZ65j" border="0"&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;/div&gt;</content>  <feedburner:origLink>http://ryandaigle.com/articles/2008/7/7/what-s-new-in-edge-rails-easy-join-table-conditions</feedburner:origLink></entry>
+<feedburner:awareness>http://api.feedburner.com/awareness/1.0/GetFeedData?uri=RyansScraps</feedburner:awareness></feed>

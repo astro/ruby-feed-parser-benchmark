@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://www.ejabberd.im"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>ejabberd Community Site</title>
+ <link>http://www.ejabberd.im</link>
+ <description>
+
+ejabberd is a 
+Jabber/XMPP instant messaging server, licensed under GPLv2 (Free and Open Source), written in Erlang/OTP. 
+Among other features, ejabberd is cross-platform, fault-tolerant, clusterable and modular.
+
+This ejabberd community site gathers people which share a common interest in the ejabberd project:
+
+News |
+Book |
+Forums |
+Mailing list |
+Chatroom |
+Bugzilla
+
+
+The ejabberd commercial site is also ejabberd official home page:
+
+News |
+Downloads |
+Guide |
+Bug tracker |
+Forge |
+ejabberd-modules
+
+
+</description>
+ <language>en</language>
+<item>
+ <title>Video: 6 years of ejabberd code in 3 minutes</title>
+ <link>http://www.ejabberd.im/birthday-6</link>
+ <description>&lt;p&gt;To celebrate that ejabberd turns 6 years old, I&#039;ve prepared a video that shows the history or ejabberd trunk SVN during those years: authors, acknowledgments, type of files, dates and releases. The video was built with &lt;a href=&quot;http://vis.cs.ucdavis.edu/~ogawa/codeswarm/&quot;&gt;code_swarm&lt;/a&gt;.&lt;/p&gt;
+
+Download ejabberd-6-years-code.avi (12.5 MB) from:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://rapidshare.com/files/164292935/ejabberd-6-years-code.avi&quot;&gt;RapidShare&lt;/a&gt;, click in &quot;Free user&quot; button, wait 50 seconds, then click in &quot;Download&quot; big button.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://ejabberd.jabber.ru/files/download/ejabberd-6-years-code.avi&quot;&gt;Jabber.ru direct download&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+Notes:
+&lt;p&gt;&lt;a href=&quot;http://www.ejabberd.im/birthday-6&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.ejabberd.im/birthday-6#comments</comments>
+ <category domain="http://www.ejabberd.im/taxonomy/term/25">Planet Jabber News</category>
+ <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://www.ejabberd.im/crss/node/3286</wfw:commentRss>
+ <pubDate>Sun, 16 Nov 2008 12:10:48 +0000</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">3286 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>Blog articles about ejabberd development</title>
+ <link>http://www.ejabberd.im/node/3196</link>
+ <description>&lt;p&gt;In the last weeks several people published articles about ejabberd development in their blogs. If you are interested in ejabberd development, and even Erlang/OTP development, check them:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://metajack.im/&quot;&gt;Jack Moffit (Metajack)&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://metajack.im/2008/08/28/writing-ejabberd-modules-presence-storms/&quot;&gt;Writing Ejabberd Modules: Presence Storms&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;http://metajack.im/2008/08/27/migrating-to-ejabberd-the-gory-details/&quot;&gt;Migrating To Ejabberd: The Gory Details&lt;/a&gt;&lt;br /&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;http://www.ejabberd.im/node/3196&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.ejabberd.im/node/3196#comments</comments>
+ <category domain="http://www.ejabberd.im/taxonomy/term/30">Documentation</category>
+ <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://www.ejabberd.im/crss/node/3196</wfw:commentRss>
+ <pubDate>Thu, 11 Sep 2008 12:26:17 +0000</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">3196 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>ejabberd 2.0.2 - Second bugfix release</title>
+ <link>http://www.ejabberd.im/ejabberd-2.0.2</link>
+ <description>&lt;p&gt;There is a new bugfix release in the 2.0.x line: &lt;a href=&quot;http://www.process-one.net/en/ejabberd/release_notes/release_note_ejabberd_202&quot;&gt;ejabberd 2.0.2&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In the last three months several bugs were found and fixed. As mentioned in the release notes, the main changes are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Anti-abuse feature: client blacklist support by IP.
+&lt;/li&gt;&lt;li&gt;Guide: new section Securing ejabberd; improved usability.
+&lt;/li&gt;&lt;li&gt;LDAP filter optimisation: ability to filter user in ejabberd and not LDAP.
+&lt;/li&gt;&lt;li&gt;MUC improvements: room options to restrict visitors; broadcast reasons.&lt;br /&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;http://www.ejabberd.im/ejabberd-2.0.2&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.ejabberd.im/ejabberd-2.0.2#comments</comments>
+ <category domain="http://www.ejabberd.im/taxonomy/term/27">Releases</category>
+ <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://www.ejabberd.im/crss/node/3187</wfw:commentRss>
+ <pubDate>Fri, 29 Aug 2008 17:52:13 +0000</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">3187 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>ejabberd 2.0.2-beta1 - source code package for beta testing</title>
+ <link>http://www.ejabberd.im/ejabberd-2.0.2-beta1</link>
+ <description>&lt;p&gt;&lt;a href=&quot;http://lists.jabber.ru/pipermail/ejabberd/2008-August/004028.html&quot;&gt;Announcement of ejabberd 2.0.2-beta1&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;After several months of fixing bugs in ejabberd 2.0.x, a new maintenance release is planned for the end of this month.&lt;/p&gt;
+&lt;p&gt;Until then, we still have time to beta test the ejabberd source code.  For this purpose ejabberd 2.0.2-beta1 is released.&lt;/p&gt;
+&lt;p&gt;Notice that this beta is only released as source code package, no binary installers are published now.&lt;/p&gt;
+&lt;p&gt;The download is: &lt;a href=&quot;http://download.process-one.net/ejabberd/ejabberd-2.0.2-beta1.tar.gz&quot; title=&quot;http://download.process-one.net/ejabberd/ejabberd-2.0.2-beta1.tar.gz&quot;&gt;http://download.process-one.net/ejabberd/ejabberd-2.0.2-beta1.tar.gz&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Finally, here are the release notes:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.ejabberd.im/ejabberd-2.0.2-beta1&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.ejabberd.im/ejabberd-2.0.2-beta1#comments</comments>
+ <category domain="http://www.ejabberd.im/taxonomy/term/27">Releases</category>
+ <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://www.ejabberd.im/crss/node/3166</wfw:commentRss>
+ <pubDate>Fri, 01 Aug 2008 18:23:04 +0000</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">3166 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>Call to translators for ejabberd 2.0.2</title>
+ <link>http://www.ejabberd.im/node/3161</link>
+ <description>&lt;p&gt;ejabberd 2.0.2 is planned to release soon. It will contain mostly bugfixes. A few of the changes since the previous version added new strings that can be translated to &lt;a href=&quot;/localization&quot;&gt;the 23 languages people have translated ejabberd&lt;/a&gt;. I tried to contact previous translators, but there are still some languages that need to be updated.&lt;/p&gt;
+&lt;p&gt;Those languages are complete thanks to those translators:&lt;/p&gt;
+&lt;pre&gt;
+ca.msg  0       Catalan (català)        Vicent Alberola Canet
+cs.msg  0       Czech (čeština)         Lukáš Polívka
+de.msg  0       German (deutsch)        Nikolaus Polak&lt;/pre&gt;&lt;p&gt;&lt;a href=&quot;http://www.ejabberd.im/node/3161&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.ejabberd.im/node/3161#comments</comments>
+ <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://www.ejabberd.im/crss/node/3161</wfw:commentRss>
+ <pubDate>Tue, 29 Jul 2008 00:17:49 +0000</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">3161 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>ejabberd-modules SVN repository: unavailable [fixed]</title>
+ <link>http://www.ejabberd.im/node/3158</link>
+ <description>&lt;p&gt;&lt;strong&gt;Update: the ejabberd-modules SVN repo works correctly now.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The ejabberd-modules SVN repository doesn&#039;t work since yesterday. The problem is not yet known.&lt;/p&gt;
+&lt;p&gt;As a temporary solution to download the latest versions of files, there are &lt;a href=&quot;http://git.process-one.net/ejabberd-modules/&quot;&gt;Git repositories&lt;/a&gt; of individual ejabberd-modules projects that seem to work correctly. Example usage:&lt;/p&gt;
+&lt;pre&gt;
+git clone &lt;a href=&quot;http://git.process-one.net/ejabberd-modules/ejabberd-dev.git&quot; title=&quot;http://git.process-one.net/ejabberd-modules/ejabberd-dev.git&quot;&gt;http://git.process-one.net/ejabberd-modules/ejabberd-dev.git&lt;/a&gt;
+git clone &lt;a href=&quot;http://git.process-one.net/ejabberd-modules/pgsql.git&quot; title=&quot;http://git.process-one.net/ejabberd-modules/pgsql.git&quot;&gt;http://git.process-one.net/ejabberd-modules/pgsql.git&lt;/a&gt;
+&lt;/pre&gt;&lt;p&gt;&lt;a href=&quot;http://www.ejabberd.im/node/3158&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.ejabberd.im/node/3158#comments</comments>
+ <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://www.ejabberd.im/crss/node/3158</wfw:commentRss>
+ <pubDate>Thu, 24 Jul 2008 10:52:55 +0000</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">3158 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>Updated  Drupal; fixing problems</title>
+ <link>http://www.ejabberd.im/node/3154</link>
+ <description>&lt;p&gt;This website has been updated to the latest version of Drupal.&lt;/p&gt;
+&lt;p&gt;There are a few known problems that will be solved in the next days:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Existing forum threads are not listed in the Forum pages.
+&lt;/li&gt;&lt;li&gt;Support to login with OpenID.
+&lt;/li&gt;&lt;li&gt;The page /xtracker does not exist, use /tracker instead.
+&lt;/li&gt;&lt;li&gt;FIXED: Need to update DB program, since there are small SQL error reports in several pages.
+&lt;/li&gt;&lt;li&gt;FIXED IN FILE language.inc: The Drupal messages are only in English, not translated like before.
+&lt;/li&gt;&lt;li&gt;DONE: Captcha required to create an account or the first time a comment is submitted.&lt;br /&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;a href=&quot;http://www.ejabberd.im/node/3154&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.ejabberd.im/node/3154#comments</comments>
+ <category domain="http://www.ejabberd.im/taxonomy/term/28">Website</category>
+ <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://www.ejabberd.im/crss/node/3154</wfw:commentRss>
+ <pubDate>Sun, 20 Jul 2008 21:32:23 +0000</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">3154 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>ejabberd 2.0.1 (rereleased) - Bugfixes, R12, PubSub, registration limit</title>
+ <link>http://www.ejabberd.im/ejabberd-2.0.1</link>
+ <description>&lt;blockquote&gt;&lt;b&gt;Update: &lt;/b&gt; the original release didn&#039;t include all the files. Make sure to download a file that includes the suffix &quot;_2&quot;: ejabberd-2.0.1_2&lt;/blockquote&gt;
+
+source package does not include the correct files. It will be fixed today and I&#039;ll update this newspost.
+
+&lt;p&gt;ejabberd 2.0.1 revision has been &lt;a href=&quot;http://www.process-one.net/en/ejabberd/release_notes/release_note_ejabberd_201&quot;&gt;released&lt;/a&gt;. It has been three months since the first release in the 2.0.x line.
+&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.ejabberd.im/ejabberd-2.0.1&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.ejabberd.im/ejabberd-2.0.1#comments</comments>
+ <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://www.ejabberd.im/crss/node/3056</wfw:commentRss>
+ <pubDate>Wed, 21 May 2008 23:36:48 +0000</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">3056 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>ejabberd 2.0.0: PubSub, PEP, Proxy65, HTTP-Bind...</title>
+ <link>http://www.ejabberd.im/ejabberd-2.0.0</link>
+ <description>&lt;p&gt;ejabberd 2.0.0 was finally released. Check the &lt;a href=&quot;http://www.process-one.net/en/news/article/ejabberd_200_has_been_released/&quot;&gt;announcement&lt;/a&gt; for details and download links.&lt;/p&gt;
+&lt;p&gt;It has been 15 months since the last ejabberd release that included new features or improvements. This means that ejabberd 2.0.0 includes a large number of new features, improvements and bugfixes. Just to name a few: more clustering features, updated Pub-Sub service with PEP support, file transfer proxy, integrated HTTP file server, HTTP binding, and PAM authentication.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.ejabberd.im/ejabberd-2.0.0&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.ejabberd.im/ejabberd-2.0.0#comments</comments>
+ <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://www.ejabberd.im/crss/node/2854</wfw:commentRss>
+ <pubDate>Wed, 20 Feb 2008 20:52:09 +0000</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">2854 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>Final call to translators for ejabberd 2.0.0</title>
+ <link>http://www.ejabberd.im/node/2846</link>
+ <description>&lt;p&gt;&lt;strong&gt;Update 2&lt;/strong&gt;: Updated the information about complete and uncomplete translations.&lt;br /&gt;
+&lt;strong&gt;Update&lt;/strong&gt;: There is also a &lt;a href=&quot;/files/ejabberd/ejabberd-langs-1190.zip&quot;&gt;zip with all .translate files&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Two months ago there was a call to translators to prepare ejabberd 2.0.0. Since then, ejabberd 2.0.0-beta1 and rc1 were published, with bug fixes and small improvements. Some of those changes also added, removed or modified translatable strings.&lt;/p&gt;
+&lt;p&gt;Now I call again to translators. The good news is that most languages only miss 5 or 10 strings :)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.ejabberd.im/node/2846&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.ejabberd.im/node/2846#comments</comments>
+ <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://www.ejabberd.im/crss/node/2846</wfw:commentRss>
+ <pubDate>Thu, 14 Feb 2008 12:50:48 +0000</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">2846 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>ejabberd 2.0.0-rc1 released</title>
+ <link>http://www.ejabberd.im/ejabberd-2.0.0-rc1</link>
+ <description>&lt;p&gt;ejabberd 2.0.0 has been in the works since more than a year ago. This release will include an impressive amount of new features, improvements and bug fixes. Just to name two: more clustering features and updated Pub-Sub service with PEP support.&lt;/p&gt;
+&lt;p&gt;Please read with detail the &lt;a href=&quot;http://svn.process-one.net/ejabberd/branches/ejabberd-2.0.x/doc/release_notes_2.0.0.txt&quot;&gt;Release Notes&lt;/a&gt; for a list of changes and important notes.&lt;/p&gt;
+&lt;p&gt;But the final release of ejabberd 2.0.0 is not ready yet. Right now it&#039;s time for Release Candidate 1.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.ejabberd.im/ejabberd-2.0.0-rc1&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.ejabberd.im/ejabberd-2.0.0-rc1#comments</comments>
+ <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://www.ejabberd.im/crss/node/2796</wfw:commentRss>
+ <pubDate>Fri, 18 Jan 2008 18:38:51 +0000</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">2796 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>ejabberd 2.0.0-beta1 released (updated)</title>
+ <link>http://www.ejabberd.im/ejabberd-2.0.0-beta1</link>
+ <description>&lt;p&gt;&lt;b&gt;Update (1 Jan)&lt;/b&gt;: &lt;a href=&quot;https://support.process-one.net/secure/IssueNavigator.jspa?reset=true&amp;&amp;pid=10011&amp;version=10180&amp;sorter/field=issuekey&amp;sorter/order=DESC&quot;&gt;Known bugs reported for 2.0.0-beta1&lt;/a&gt;. Some of them are:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/ejabberd-2.0.0-beta1#comment-51550&quot;&gt;Compiling ejabberd with Erlang R12B&lt;/a&gt;
+&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/node/2762&quot;&gt;Problem connecting to other Jabber servers: default port 5269&lt;/a&gt;
+&lt;/li&gt;&lt;/ul&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;b&gt;Update (26 Dec)&lt;/b&gt;: &lt;a href=&quot;http://www.process-one.net/en/blogs/article/ejabberd_200_beta_1_updated_packages/&quot;&gt;New installers&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.ejabberd.im/ejabberd-2.0.0-beta1&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.ejabberd.im/ejabberd-2.0.0-beta1#comments</comments>
+ <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://www.ejabberd.im/crss/node/2751</wfw:commentRss>
+ <pubDate>Mon, 24 Dec 2007 19:57:04 +0000</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">2751 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>Call to translators for ejabberd 2.0.0</title>
+ <link>http://www.ejabberd.im/node/2724</link>
+ <description>&lt;p&gt;The messages shown by ejabberd to the users and administrators are written in English. Many people have contributed translations for &lt;a href=&quot;/localization&quot;&gt;other 16 languages&lt;/a&gt;. A new version of ejabberd will be published in the following days, so it is time for a &lt;a href=&quot;http://www.process-one.net/en/blogs/article/ejabberd_20_beta_is_approaching_calling_for_translators/&quot;&gt;call to translators&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Those are the languages that still need an update, the lines that remain to be complete, and the state of the translation:&lt;/p&gt;
+&lt;pre&gt;ca.msg   0 -- translation completed by Vicent Alberola&lt;/pre&gt;&lt;p&gt;&lt;a href=&quot;http://www.ejabberd.im/node/2724&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.ejabberd.im/node/2724#comments</comments>
+ <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://www.ejabberd.im/crss/node/2724</wfw:commentRss>
+ <pubDate>Tue, 04 Dec 2007 22:23:10 +0000</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">2724 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>Happy 5 Birthday, ejabberd!</title>
+ <link>http://www.ejabberd.im/birthday-5</link>
+ <description>&lt;p&gt;Alexey Shchepin started ejabberd the 16th November of 2002. So, ejabberd is 5 years old. Happy birthday, ejabberd! :)&lt;/p&gt;
+
+&lt;p&gt;To celebrate the anniversary, I invite you to take a brief look back to ejabberd history for the last 5 years.&lt;/p&gt;
+
+&lt;br /&gt;
+&lt;h1&gt;ejabberd infancy&lt;/h1&gt;
+
+&lt;p&gt;The &lt;a href=&quot;https://forge.process-one.net/changelog/ejabberd/?cs=2&quot;&gt;first commit&lt;/a&gt; to ejabberd&#039;s CVS had only those files:
+&lt;pre&gt;/src/Makefile
+/src/ejabberd.hrl
+/src/ejabberd.erl
+/src/ejabberd_c2s.erl
+/src/ejabberd_listener.erl
+/src/expat_erl.c
+/src/xml_stream.erl
+&lt;/pre&gt;
+&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;http://www.ejabberd.im/birthday-5&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.ejabberd.im/birthday-5#comments</comments>
+ <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://www.ejabberd.im/crss/node/2707</wfw:commentRss>
+ <pubDate>Thu, 22 Nov 2007 22:32:04 +0000</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">2707 at http://www.ejabberd.im</guid>
+</item>
+<item>
+ <title>ejabberd&#039;s home page and Community Site</title>
+ <link>http://www.ejabberd.im/node/2616</link>
+ <description>&lt;p&gt;This website has served the ejabberd project since the late 2004.&lt;/p&gt;
+
+&lt;p&gt;I want to announce three important changes as of November 2007, explained in &lt;a href=&quot;http://www.ejabberd.im/evolution-home-page&quot;&gt;Evolution of ejabberd home page&lt;/a&gt;:
+&lt;ol&gt;
+&lt;li&gt;This site changes its address from ejabberd.jabber.ru to www.ejabberd.im.&lt;/li&gt;&lt;/ol&gt;&lt;/p&gt;
+&lt;li&gt;Since now, this website is no longer considered ejabberd home page. Instead, this site is the &lt;b&gt;ejabberd Community Site&lt;/b&gt;. 
+&lt;/li&gt;&lt;li&gt;The official ejabberd home page from now on is considered &lt;a href=&quot;http://www.process-one.net/en/ejabberd/&quot;&gt;http://www.process-one.net/en/ejabberd/&lt;/a&gt;.
+
+
+&lt;/li&gt;&lt;p&gt;&lt;a href=&quot;http://www.ejabberd.im/node/2616&quot; target=&quot;_blank&quot;&gt;read more&lt;/a&gt;&lt;/p&gt;</description>
+ <comments>http://www.ejabberd.im/node/2616#comments</comments>
+ <wfw:commentRss xmlns:wfw="http://wellformedweb.org/CommentAPI/">http://www.ejabberd.im/crss/node/2616</wfw:commentRss>
+ <pubDate>Wed, 19 Sep 2007 16:10:45 +0000</pubDate>
+ <dc:creator>badlop</dc:creator>
+ <guid isPermaLink="false">2616 at http://www.ejabberd.im</guid>
+</item>
+</channel>
+</rss>
