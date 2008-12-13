@@ -95,7 +95,7 @@ end
 file_names = Dir['feeds/*']
 results = Hash.new
 index = 0
-max = ARGV[0].to_i || 10000 # Maximum 10k feeds
+max = (ARGV[0] || 10000).to_i # Maximum 10k feeds
 puts "\"filename\", \"type\", \"rfeedparser\", \"syndication\",\"simplerss\", \"mrss\""
 file_names.each do |file_name|
   index = index + 1
